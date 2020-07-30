@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Árpád Horváth <horvatha4@googlemail.com>, 2018.
+# cefrebevalo <szmarci711@gmail.com>, 2020.
 # Gabor Csordas <gaborcsordas@yahoo.com>, 2018.
 # gergely87 <gergely87@gmail.com>, 2019.
 # JanosHorak <lyanos.horak@gmail.com>, 2019.
@@ -16,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-06 14:52+0200\n"
-"PO-Revision-Date: 2020-05-07 08:01+0000\n"
-"Last-Translator: József Orosz <jozsef.orosz542@gmail.com>\n"
+"PO-Revision-Date: 2020-07-23 02:44+0000\n"
+"Last-Translator: cefrebevalo <szmarci711@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -25,12 +26,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "Godot Dokumentáció – *master* ág"
+msgstr "Godot Dokumentáció – *3.2* ág"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -38,7 +38,7 @@ msgid ""
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
 "A Godot dokumentációja többféle nyelven és verzióban is elérhető. A lista "
-"megtekintéséhez nyissa le a az oldalsáv alján megjelenő \"Dokumentumok "
+"megtekintéséhez nyissa le az oldalsáv alján megjelenő \"Dokumentumok "
 "megtekintése\" panelt."
 
 #: ../../docs/index.rst:10
@@ -50,8 +50,10 @@ msgid ""
 "en/3.1>`_ branch."
 msgstr ""
 "Ez a dokumentáció a stabil 3.2-es verziójú ághoz tartozik. Az aktuális "
-"**stable** (stabil) ágat keresi? `Nézze meg itt <http://docs.godotengine.org/"
-"en/stable>`_."
+"**development** (fejlesztés alatt álló) ágat keresi? `Nézze meg itt<https://"
+"docs.godotengine.org/en/latest>`_. Az előző stabil ág (3.1) dokumentációját "
+"pedig itt találhatja: `stabil 3.1 dokumentáció <https://docs.godotengine.org/"
+"en/3.1>`."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -87,7 +89,6 @@ msgstr ""
 "ismertetésére is."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -95,11 +96,12 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Üdvözöljük a hivatalos Godot Engine dokumentációjában. A Godot egy ingyenes, "
-"nyílt forráskódú, közösségi alapú 2D-s és 3D-s játék motor! Amennyiben Ön "
-"most találkozik először ezzel a dokumentációval, akkor javasoljuk, hogy "
-"olvassa el a :ref:`introduction page <doc_about_intro>` oldalt, hogy "
-"áttekintést kaphasson a dokumentáció tartalmáról."
+"Üdvözöljük a `Godot Engine <https://godotengine.org>`__ hivatalos "
+"dokumentációjában! A Godot egy ingyenes, nyílt forráskódú, közössége által "
+"fönntartott, 2D-s és 3D-s játék motor. Amennyiben Ön most találkozik először "
+"ezzel a dokumentációval, akkor javasoljuk, hogy olvassa el a :ref:`Bevezető "
+"oldalt <doc_about_intro>` , hogy egy jobb képet kaphasson a dokumentáció "
+"tartalmáról."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -127,7 +129,6 @@ msgstr ""
 "velünk!"
 
 #: ../../docs/index.rst:48
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -136,10 +137,10 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Küldje el a problémát, vagy kérjen behúzást a `GitHub repository  <https://"
-"github.com/godotengine/godot-docs/issues> `_, segítsen nekünk `translate the "
-"documentation  <https://hosted.weblate.org/engage/godot-engine/> `_ az Ön "
-"nyelvére, vagy beszéljen velünk a ``# documentation`` csatornán a `Discord "
+"Probléma jelentése vagy behúzás kérése (Pull request) a`GitHub csomagtár-ba "
+"<https://github.com/godotengine/godot-docs/issues> `_, segítsen nekünk `a "
+"dokumentáció fordításában <https://hosted.weblate.org/engage/godot-engine/> "
+"`_ , vagy beszéljen velünk a ``# documentation`` csatornán a `Discord "
 "<https://discord.gg/zH7NUgz> `_, vagy az``# godotengine-doc`` irc-csatornán "
 "az `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
 "doc> `_oldalon!"
@@ -176,8 +177,9 @@ msgid "Community"
 msgstr "Közösség"
 
 #: ../../docs/index.rst:131
+#, fuzzy
 msgid "Class reference"
-msgstr ""
+msgstr "Class hivatkozás"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -304,11 +306,16 @@ msgstr ""
 "videó anyagot a szöveg alapú helyett, akkor megéri egy pillantást rávetnie."
 
 #: ../../docs/about/introduction.rst:27
+#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"Abban az esetben ha problémád akadna az egyik tutorial-al vagy a "
+"projekteddel, akkor a különböző :ref:`Közösségi "
+"csatornáinkon<doc_community_channels>` találhatsz segítséget, főképpen a "
+"Godot Discord közösségén, Q&A és az IRC csatornákon."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -520,7 +527,7 @@ msgstr "Jó olvasást és játékkészítést a Godot motorral!"
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "GYIK"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
@@ -588,6 +595,7 @@ msgstr ""
 "könyvtárak különböző licencekkel rendelkezhetnek."
 
 #: ../../docs/about/faq.rst:27
+#, fuzzy
 msgid ""
 "For full details, look at the `COPYRIGHT.txt <https://github.com/godotengine/"
 "godot/blob/master/COPYRIGHT.txt>`_ as well as the `LICENSE.txt <https://"
@@ -595,6 +603,11 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"A részletekért nézd át a `COPYRIGHT.txt <https://github.com/godotengine/"
+"godot/blob/master/COPYRIGHT.txt>`_ valamint a `LICENSE.txt <https://github."
+"com/godotengine/godot/blob/master/LICENSE.txt>`_ és a `LOGO_LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
+"fájlokat a Godot tárolójában."
 
 #: ../../docs/about/faq.rst:31
 msgid ""
@@ -688,25 +701,37 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Továbbá, zajlik néhány nem hivatalos, harmadik féltől származó munka is a "
+"konzolokra. Azonban, ezek közül semmit sem tartalmaznak az alap \"build "
+"script\"-ek vagy az \"export template\"-ek jelen állapotban."
 
 #: ../../docs/about/faq.rst:61
+#, fuzzy
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Erről bővebben az :ref:`exportálás <toc-learn-workflow-export>` és a :ref:"
+"`Godot kompilálása<toc-devel-compiling>` című fejezetben olvashatsz."
 
 #: ../../docs/about/faq.rst:65
+#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Milyen programozási nyelveket támogat a Godot?"
 
 #: ../../docs/about/faq.rst:67
+#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"A Godot hivatalosan támogatott nyelvei közé tartozik a GDScript, Visual "
+"Scripting, C#, és a C++. Lásd a nyelvek részkategóriáit a :ref:`szkriptelés "
+"<toc-learn-scripting>` fejezetben."
 
 #: ../../docs/about/faq.rst:71
+#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -715,8 +740,16 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Hogyha most kezdtél neki a Godotnak vagy úgy általában véve a "
+"játékfejlesztésnek élősszőr akkor érdemesebb GDScript nyelvet megtanulni és "
+"használni, hiszen ez a Godot sajátos programozási nyelve. Míg a szkript "
+"nyelvek gyakran lassabban futnak mint a gépközelibb társaik, hosszútávon a "
+"különböző prototípusokhoz, MVP-k (Minimum Viable Products) fejlesztéséhez, "
+"és TTM-re (Time-To-Market) fókuszáláshoz, GDScript egy gyors és barátságos "
+"módszert fog nyújtani."
 
 #: ../../docs/about/faq.rst:78
+#, fuzzy
 msgid ""
 "Note that C# support is still relatively new, and as such, you may encounter "
 "some issues along the way. Our friendly and hard-working development "
@@ -726,6 +759,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Érdemes figyelembe venni hogy a C# támogatottsága viszonylag új, és mint "
+"hasonlóval, gyakran ütközhetsz problémákba fejlesztés közben. Hiába van "
+"nekünk egy kedves és dolgos fejlesztői közösségünk, kik mindig készen állnak "
+"újabb problémák megoldására, mi azt javasoljuk legelőször végezz egy kis "
+"kutató munkát, hisz ez egy nyílt forráskódú program. Beszélgetések átnézése "
+"a `nyitott kérdések (open issues) <https://github.com/godotengine/godot/"
+"issues>`_ résznél egy jó irány a felmerült problémák megoldására."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -737,10 +777,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:93
+#, fuzzy
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Mi az a GDScript és miért kéne használnom?"
 
 #: ../../docs/about/faq.rst:95
+#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -750,14 +792,26 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript a Godot integrált szkriptnyelve, mely már az alapoktól úgy lett "
+"felépítve hogy maximálisan kihasználja Godot lehetőségeit úgy hogy a lehető "
+"legkevesebb kódot kelljen írni. Ezáltal a kezdő és \tprofesszionális "
+"fejlesztők egyaránt kitudják használni Godot erősségeit a lehető "
+"leggyorsabban. Ha már valaha is írtál olyan programozási nyelveken mint "
+"például a Python, biztos otthon fogod magad érezni. A GDScript képességeinek "
+"teljeskörű áttekintésért nézd át a :ref:`GDScript útmutatót <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Számos oka van annak hogy GDScriptet használj, főleg mikor prototípusokat "
+"írsz és a projekted még csak alfa vagy béta fázisban van, vagy nem is áll "
+"szándékodban AAA játékot csinálni, de talán a legfőbb érv mellette **a játék "
+"komplexitásának csökkentése.**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""

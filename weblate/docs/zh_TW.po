@@ -13,6 +13,7 @@
 # Kenneth Lo <closer.tw@gmail.com>, 2019.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
 # Matt <chchwy@gmail.com>, 2018.
+# MintSoda <lionlxh@qq.com>, 2020.
 # Otis Kao <momoslim@gmail.com>, 2019.
 # Qing <icinriiq@gmail.com>, 2018.
 # Y CHAN <yktmobile0040@gmail.com>, 2020.
@@ -23,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-06 14:52+0200\n"
-"PO-Revision-Date: 2020-07-06 12:38+0000\n"
-"Last-Translator: BinotaLIU <me@binota.org>\n"
+"PO-Revision-Date: 2020-07-29 18:02+0000\n"
+"Last-Translator: MintSoda <lionlxh@qq.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -65,8 +66,8 @@ msgid ""
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "這份文件係由社群成員在 `Weblate <https://hosted.weblate.org/projects/godot-"
-"engine/godot-docs>`_  上翻譯自 `原始英語文件 <https://docs.godotengine.org/"
-"en/latest>`_ 。"
+"engine/godot-docs>`_ 上翻譯自 `原始英文文件 <https://docs.godotengine.org/en/"
+"latest>`_ 。"
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -1178,7 +1179,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:293
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "可以把 Godot 當作函式庫來用嗎？"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1187,6 +1188,9 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot 是以使用編輯器為前提設計的。我們建議可以先試著用用編輯器，長期下來通常"
+"可以節省很多時間。目前沒有計劃要讓 Godot 能作為函式庫使用，因為這樣會讓引擎其"
+"他的功能變得很複雜，對一般的使用者來說難以使用。"
 
 #: ../../docs/about/faq.rst:300
 msgid ""
@@ -1195,6 +1199,8 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"若您是想用算繪引擎，建議改而使用其他正式的算繪引擎。請注意，算繪引擎的社群通"
+"常與 Godot 相比來得小。這樣會讓尋找問題答案變得比較困難。"
 
 #: ../../docs/about/faq.rst:306
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -3236,7 +3242,7 @@ msgid ""
 msgstr ""
 "Godot 使用了 `Mono <https://mono-project.com>`_ .NET 執行環境，理論上任一第三"
 "方 .NET 函式庫或框架都可以拿來在 Godot 裡使用。同樣的，理論上其他 CLI "
-"(Common Language Infrastructure，公用語言基礎建設) 相容的程式語言也都能使用，"
+"(Common Language Infrastructure，通用語言基礎結構) 相容的程式語言也都能使用，"
 "如 F#, Boo 或是 ClojureCLR。但 C# 是唯一官方支援的 .NET 選項。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
@@ -3277,7 +3283,7 @@ msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
-"還能通過 GDNative 的界面來支援更多語言，但請記得 Godot 對其他語言並無官方支"
+"還能通過 GDNative 的介面來支援更多語言，但請記得 Godot 對其他語言並無官方支"
 "援。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
@@ -3326,7 +3332,7 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"從場景分頁 (或是鍵盤 :kbd:`Ctrl + A`) 裡打開「新增子節點」視窗來建立下列架構"
+"從場景分頁 (或是鍵盤 :kbd:`Ctrl + A` ) 裡打開「新增子節點」視窗來建立下列架構"
 "的節點："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
@@ -3421,7 +3427,7 @@ msgid ""
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
 "這裡沒很多東西。節點及其所有子節點進入有效場景後會呼叫 ``_ready()`` 函式。 **"
-"請注意：** ``_ready()`` 不是建構子，建構子是 ``_init()`` 。"
+"請注意：** ``_ready()`` 不是建構函式，建構函式是 ``_init()`` 。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -3434,8 +3440,8 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
-"腳本可以增加節點的行為、用來控制節點的功能以及與其他節點（子節點、母節點、同"
-"級節點等）互動的方式。腳本的區域作用域 (Local Scope) 為節點。換句話說，腳本會"
+"腳本可以增加節點的行為、控制節點的功能以及與決定如何與其他節點互動 (子節點、"
+"母節點、同級節點等)。腳本的區域作用域 (Local Scope) 為節點。換句話說，腳本會"
 "繼承節點的功能。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:179
@@ -3449,9 +3455,9 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
-"當特定類型的動作發生後，會「發送」一個訊號，這樣就能通過訊號來連接到任何一個"
-"腳本實體的函式。訊號通常在 GUI 節點內使用，但其他節點也會有訊號。甚至可以在的"
-"腳本內自定訊號。"
+"當特定類型的動作發生後，會「發送」一個訊號，我們可以通過訊號來將這個動作與任"
+"何一個腳本實體函式連在一起。訊號通常在 GUI 節點內使用，但其他節點也會有訊號。"
+"甚至可以在腳本內自定訊號。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:186
 msgid ""
@@ -3460,24 +3466,24 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"在這個步驟，我們要把「按下 (Pressed)」訊號連接到自定義函式。第一個部分是組成"
-"連接，第二個部分則是要定義自定義函式。Godot 中有兩個方法可以建立連線，通過編"
-"輯器所提供的視覺化界面，或是通過程式碼。"
+"在這個步驟，我們要把「按下 (Pressed)」訊號連接到自定義函式。第一個部分是構成"
+"連接，第二個部分則是要定義函式。Godot 中有兩個方法可以建立連線，第一個方法是"
+"通過編輯器視覺化界面，第二個方法則是通過程式碼。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:191
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
-"雖然在這個教學中接下來的部分我們都會使用程式碼來建立連接，但這裡還是來介紹一"
-"下如何使用編輯器界面建立。"
+"雖然在這個教學中接下來的部分我們都會使用程式碼，但這裡還是來介紹一下要如何用"
+"編輯器界面來建立連接。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:194
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
-"從場景樹中選擇 Button (按鈕) 節點然後選擇 [節點] 分頁。接下來，確定選擇 [訊"
+"從場景樹中選擇 Button 節點，然後再按 [節點] 分頁。接下來，確定一下有選中 [訊"
 "號] 選項。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:199
@@ -3486,15 +3492,15 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"接下來選擇「BaseButton」下的「pressed()」，然後點擊右下角的 [連接…] 打開建立"
-"連接對話框。"
+"接下來選擇「BaseButton」底下的「pressed()」，然後點擊右下角的 [連接…] 打開建"
+"立連接對話框。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:204
 msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
 msgstr ""
-"對話框的頂部會顯示出場景上的節點列表，而觸發訊號的節點名稱則會以藍色顯示。這"
+"對話框的頂部會顯示出場景中的節點列表，而觸發訊號的節點名稱則會以藍色顯示。這"
 "裡先選擇「Panel」節點。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:207
@@ -3522,9 +3528,9 @@ msgid ""
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"為了手動建立連接，接下來我們要介紹一個可能是所有 Godot 程式設計師最常用的函"
-"式： :ref:`Node.get_node() <class_Node_method_get_node>` 。這個函式可以使用相"
-"對於腳本所在節點的路徑來取得場景中任何一個地方的節點。"
+"為了手動建立連接，接下來我們要介紹 :ref:`Node.get_node() "
+"<class_Node_method_get_node>` ，這個函式可能所有 Godot 程式設計師最常用的函"
+"式。Node.get_node() 可以使用相對於該腳本節點的路徑來取得場景中任一節點。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:220
 msgid ""
@@ -3540,12 +3546,12 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"由於 Button 與 Label 為腳本所附加之 Panel 節點的同級節點，所以可以通過在 "
-"``_ready()`` 函式下方輸入以下內容來取得 Button 節點："
+"由於 Button 與 Label 為腳本所附加之 Panel 節點的同級節點，所以可以在 "
+"``_ready()`` 函式中輸入以下內容來取得 Button 節點："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:240
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr "接下來，寫一個當按鈕按下後會被呼叫的函式："
+msgstr "接下來，寫一個按鈕按下後要呼叫的函式："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:255
 msgid ""
@@ -3576,13 +3582,12 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 "在這個教學中，很對人會誤解 ``get_node(path)`` 的使用方法。在一個節點中， "
-"``get_node(path)`` 會搜尋直接接在這個節點底下的子節點 (Immediate Children)。"
-"在上面的程式碼中，Button 必須是 Panel 的子節點。如果 Button 是 Label 的子節點"
-"的話，那麼程式碼要寫成這樣："
+"``get_node(path)`` 會搜尋該節點的直接子代。在上面的程式碼中，Button 必須是 "
+"Panel 的子節點。如果 Button 是 Label 的子節點的話，那麼程式碼要寫成這樣："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:330
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr "另外，也請記得節點是依照名稱來參照的，而不是型別。"
+msgstr "另外，也請記得參照的是節點名稱而不是型別。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid ""
@@ -3876,7 +3881,8 @@ msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"預先載入場景可能會更方便，因為這個過程會在解析時執行（僅限 GDScript）："
+"把場景預先載入進來可能會更方便，因為預載是在解析時執行的 (僅可用於 "
+"GDScript)："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
 msgid ""
@@ -3886,10 +3892,10 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"但 ``scene`` （場景）還不是一個節點。他是被打包在一個叫做 :ref:`PackedScene "
-"<class_PackedScene>` （打包場景）的特殊資源裡。要建立一個真正的節點，就必須要"
-"呼叫 :ref:`PackedScene.instance()` 函式。這個函式會回傳一個可以被新增到有效場"
-"景內的節點樹："
+"但 ``scene`` (場景) 還不是節點，目前還打包在一個叫做 :ref:`PackedScene "
+"<class_PackedScene>` (打包場景) 的特殊資源內。要真正建立節點，必須呼叫 :ref:"
+"`PackedScene.instance()` 函式。這個函式會回傳一個可以被新增到有效場景內的節點"
+"樹："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid ""
@@ -3898,9 +3904,9 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"這兩個步驟的優點是，打包場景一旦載入後就可以維持已經載入的狀態，隨時拿來使"
-"用。這樣一來我們就可以根據需要建立任意數量的實體。當需要在有效場景內快速實體"
-"化多個敵人、子彈、或是其他實體的時候很有用。"
+"拆成「載入 - 實體化」兩個步驟的優點是，載入過打包場景後就可以維持已載入的狀"
+"態，隨時拿來使用。這樣一來我們就可以根據需要建立任意數量的實體。特別適用於需"
+"要在有效場景內快速實體化多個敵人、子彈或是其他實體的情況。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
 msgid "Register scripts as classes"
@@ -3912,8 +3918,8 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot 有一個可以在編輯器內註冊個別腳本註冊的「腳本類別」功能。預設情況下，你"
-"只能通過直接載入檔案來存取未命名的腳本。"
+"Godot 有一個「腳本類別」功能，可以在編輯器內註冊個別腳本。預設情況下，要存取"
+"未命名的腳本，就只能直接載入檔案。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
 msgid ""
@@ -3922,9 +3928,9 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
-"可為一個腳本起名字後在編輯器裡把它註冊為型別，其名稱為 ``class_name`` 關鍵字"
-"後接上類別的名稱。也可以設定非必填的圖示，在名稱後接上逗號加一個圖像路徑。接"
-"著在節點或資源建立對話框裡面就可以找到這個新的型別。"
+"但我們可以為一個腳本起名字，就可以將腳本註冊成編輯器裡的型別，只需要寫上 "
+"``class_name`` 關鍵字，並在後方接上類別名稱。也可以選擇在名稱後接上逗號與圖片"
+"路徑來設定圖片。接著在建立節點或資源的對話框中就可以找到這個新型別。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
@@ -3963,9 +3969,9 @@ msgid ""
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
 "訊號是 Godot 版本的 **觀察者** (Observer) 設計模式。使用訊號可以讓一個節點送"
-"出訊息，並讓其他節點能夠對監聽該訊息並進行回應。舉例來說，不需要持續檢查同一"
-"個按鈕來確認按鈕有沒有被按下，而是通過讓按鈕送出一個訊號來通知其他人按鈕被按"
-"下了。"
+"出訊息，然後讓其他節點能監聽該訊息並進行回應。舉例來說，有了訊號就不需要一直"
+"重複檢查同一個按鈕來確認按鈕有沒有被按下，而可以通過讓按鈕送出訊號來通知其他"
+"人按鈕被按下了。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:17
 msgid ""
@@ -3982,15 +3988,15 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that all interested objects can subscribe to and respond to."
 msgstr ""
-"訊號是一個可以 **解耦** 遊戲物件的方法，可以更好地組織與管理程式碼。不需要強"
-"制讓某個遊戲物件去配合數個物件，而是讓物件發出訊號，所有需要反應的物件都可以"
-"訂閱並回應這個訊號。"
+"訊號是一種 **解耦** 遊戲物件的方法，可以更好地組織與管理程式碼。不需要強制讓"
+"某個遊戲物件去配合數個物件，而是讓物件發出訊號，所有需要反應的物件都可以訂閱"
+"訊號並進行回應。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
-msgstr "下方的例子說明了如何能在你的專案內使用訊號。"
+msgstr "下方的例子說明了如何能在專案內使用訊號。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:27
 msgid "Timer example"
@@ -4002,10 +4008,10 @@ msgid ""
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"要瞭解訊號如何運作，讓我們來試試看 :ref:`Timer <class_Timer>` （計時器）節"
-"點。先建立場景，並設定一個 Node2D 與兩個子節點：Timer 與 :ref:`Sprite "
-"<class_Sprite>` 。接著在場景 Dock 內把 Node2D 重命名為 TimerExample（計時器範"
-"例）。"
+"為了瞭解訊號怎麼運作的，來試試看 :ref:`Timer <class_Timer>` (計時器) 節點。先"
+"建立場景，並設定一個 Node2D 與兩個子節點：Timer 與 :ref:`Sprite "
+"<class_Sprite>` 。接著在場景 Dock 內把 Node2D 重命名為 TimerExample (計時器範"
+"例)。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:33
 msgid ""
@@ -4014,9 +4020,9 @@ msgid ""
 "down menu. Attach a script to the root node, but don't add any code to it "
 "yet."
 msgstr ""
-"你可以用 Godot 的圖示或其他你喜歡的圖片來設定 Sprite 的紋理貼圖。要設定紋理貼"
-"圖，請在 Sprite 的 Texture（紋理貼圖）下拉選單內選擇 ``載入`` 。之後在根節點"
-"上附加一個腳本，但我們在這裡先不要新增任何的程式碼。"
+"可以用 Godot 的圖示或其他喜歡的圖片來設定 Sprite 紋理貼圖。要設定紋理貼圖，請"
+"在 Sprite 的 Texture (紋理貼圖) 下拉選單內選擇 [載入] 。之後在根節點上附加腳"
+"本，但在這裡先不要新增任何程式碼。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:37
 msgid "Your scene tree should look like this:"
@@ -4028,9 +4034,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"來看看 Timer 節點的屬性，先把 **Autostart** （自動開始）旁邊的「On」（開啟）"
-"勾選框打勾。這樣會讓計時器在場景執行的時候自動開始。而 **Wait Time** （等待時"
-"間）可以保持 1 秒的設定。"
+"來看看 Timer 節點的屬性，先把 **Autostart** (自動開始) 旁邊的 [開啟] 勾選框打"
+"勾。這樣會讓計時器在場景執行的時候自動開始。而 **Wait Time** (等待時間) 可以"
+"保持預設的 1 秒。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
@@ -4039,9 +4045,9 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
-"在屬性面板分頁旁邊有一個叫做「節點」的分頁。點開這個分頁，你會看到目前選擇節"
-"點的所有可以送出的訊號。在這個 Timer 節點的例子當中，我們需要使用的是"
-"「timeout」訊號。這個訊號會在 Timer 數到 0 的時候送出。"
+"在屬性面板分頁旁邊有一個叫做 [節點] 的分頁。點開這個分頁，會看到目前選擇節點"
+"可送出的所有訊號。在本例中，我們需要的是「timeout」訊號。這個訊號會在 Timer "
+"倒數到 0 的時候送出。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:52
 msgid ""
@@ -4049,8 +4055,8 @@ msgid ""
 "the signals panel. You'll see the following window, where you can define how "
 "you want to connect the signal:"
 msgstr ""
-"點擊「timeout()」訊號然後選擇訊號面板下方的「連接...」。接下來你會看到下面這"
-"個視窗，這裡可以設定要如何連接訊號："
+"點擊「timeout()」訊號，然後選擇訊號面板下方的 [連接...]。接下來會看到下面這個"
+"視窗，可以設定要如何連接訊號："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:58
 msgid ""
@@ -4059,15 +4065,14 @@ msgid ""
 "blue, this is a visual indication that it's the node that is emitting the "
 "signal. Select the root node."
 msgstr ""
-"在這個視窗左邊的是場景中的節點，可以選擇一個節點來「監聽」訊號。請注意，"
-"Timer 節點顯示為藍色的，這是因為這個節點就是送出訊號的節點。在這裡，我們選擇"
-"根節點。"
+"視窗左邊是場景中的節點，可以選擇一個節點來「監聽」訊號。請注意，Timer 節點顯"
+"示為藍色的，這代表 Timer 是送出訊號的節點。這裡先選擇根節點。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:63
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
-msgstr "目標節點 **必須** 要有附加腳本，不然會顯示錯誤訊息。"
+msgstr "目標節點 **必須有** 附加腳本，不然會顯示錯誤訊息。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
@@ -4077,9 +4082,9 @@ msgid ""
 "method, as each signal propagation will result in different values for those "
 "extra call arguments."
 msgstr ""
-"如果你打開了「進階」選單，右邊可以讓你選擇要綁定的引數的數量以及這些引數（可"
-"以使用）的型別。當同一個方法連接了多個不同的訊號時這個功能很有用，因為每個訊"
-"號在傳遞的時候都會依據這裡設定的額外呼叫引數來代入不同的值。"
+"如果打開「進階」選單，就可以看到右邊能選擇要綁定的引數數量以及引數 (可用) 的"
+"型別。這個功能適用於同一個方法連接多個不同訊號的情況，因為每個訊號在傳遞時都"
+"會依據這裡設定的額外呼叫引數來代入不同的值。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""
@@ -4088,31 +4093,31 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"視窗底下有一個叫做「Receiver 方法」的欄位。這個欄位表示在目標節點的腳本中所要"
-"使用的函式的名稱。預設情況下，Godot 會使用 ``_on_<節點名稱>_<訊號名稱>`` 這樣"
-"的命名格式，但你你也可以自己修改 Receiver 方法的名稱。"
+"視窗底下有一個 [Receiver 方法] 欄位，這個欄位表示目標節點腳本中的接收函式名"
+"稱。預設 Godot 會使用 ``_on_<節點名稱>_<訊號名稱>`` 這樣的命名格式，但也可以"
+"自己修改 Receiver 方法名稱。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr "點擊「連接」後，就可以看到腳本中建立了函式："
+msgstr "點擊 [連接] 後，就可以看到腳本中建立了函式："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:96
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
-"現在我們可以把預設代入的程式碼改成收到訊號後我們想要執行的程式。這裡我們來讓 "
-"Sprite 閃爍一下："
+"現在我們可以把預設代入的程式碼改成收到訊號後要執行的程式。來讓 Sprite 閃爍一"
+"下："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
-"執行場景後你可以看到 Sprite 每秒都會閃爍。你可以修改 Timer 的 **Wait Time** "
-"（等待時間）屬性來更改這個頻率。"
+"執行場景後就看到 Sprite 一秒閃爍一次。可以修改 Timer 的 **Wait Time** (等待時"
+"間) 屬性來更改頻率。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
@@ -4124,17 +4129,16 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
-"除了使用編輯器的界面來建立訊號連接，你也可以使用程式碼來實現。如果你使用程式"
-"碼來實體化節點的話通常也必須使用程式碼來建立訊號連接，因為這種情況下沒辦法用"
-"編輯器界面。"
+"除了使用編輯器界面，也可以使用程式碼來建立訊號連接。如果用程式碼來實體化節點"
+"的話，通常也必須使用程式碼來建立訊號連接，因為這種情況下沒辦法用編輯器界面。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:131
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
-"首先，我們先把 Timer 的訊號斷開。先選擇 Timer 節點然後打開「節點」分頁，選擇"
-"連接後點擊中斷。"
+"首先，要先把 Timer 的訊號斷開。選擇 Timer 節點後，打開 [節點] 分頁，選擇連接"
+"並點擊 [中斷]。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:136
 msgid ""
@@ -4144,10 +4148,10 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
-"要使用程式碼建立連接，可以使用 ``connect`` 函式。我們把它放在 ``_ready()`` 函"
-"式內，這樣一來連接就會在執行的時候建立。這個函式的語法是 ``<來源節點>."
-"connect(<訊號名稱>, <目標節點>, <目標函式名稱>)`` 。這裡是建立本例子中 Timer "
-"連接的程式碼："
+"要使用程式碼建立連接，可以使用 ``connect`` 函式。我們寫在 ``_ready()`` 函式"
+"內，這樣一來連接就會在執行的時候建立。這個函式的語法是 ``<來源節點>.connect(<"
+"訊號名稱>, <目標節點>, <目標函式名稱>)`` 。下列程式碼會建立本例中的 Timer 連"
+"接："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
 msgid "Custom signals"
@@ -4155,15 +4159,14 @@ msgstr "自定訊號"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
-msgstr "在 Godot 中可以聲明自定義的訊號："
+msgstr "Godot 中可以宣告自定訊號："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:192
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"一旦聲明之後，自定訊號會出現在屬性面板上，並可以用與內建訊號相同的方式建立連"
-"接。"
+"宣告後，自定訊號會出現在屬性面板上，並可以用與內建訊號相同的方式建立連接。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
@@ -4173,7 +4176,7 @@ msgstr "使用 ``emit_signal`` 函式來通過程式碼送出訊號："
 msgid ""
 "A signal can also optionally declare one or more arguments. Specify the "
 "argument names between parentheses:"
-msgstr "訊號也可以聲明一個或多個引數。在括號中指定引數的名稱："
+msgstr "訊號也可以宣告一個或多個引數。在括號中指定引數的名稱："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
 msgid ""
@@ -4183,15 +4186,13 @@ msgid ""
 "correct values."
 msgstr ""
 "訊號的引數會顯示在編輯器的節點 Dock 中。Godot 會使用訊號引數來產生回呼函式。"
-"但在送出訊號的時候一樣可以送出任意數量的引數。所以你可以決定要不要送出正確的"
-"數量。"
+"但送出訊號時一樣可以送出任意數量的引數，可自行決定是否要送出正確的數量。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr ""
-"如果需要傳遞數值的話，可以把數值放在 ``emit_signal`` 函式的第二個引數內："
+msgstr "若需要傳遞數值，可將數值放在 ``emit_signal`` 函式的第二個引數內："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:278
 msgid ""
@@ -4200,9 +4201,9 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
-"許多 Godot 內建的型別都提供各種可用來偵測事件的訊號。例如，當一個代表硬幣的 :"
-"ref:`Area2D <class_Area2D>` 物件送出 ``body_entered`` 訊號即表示玩家的物理形"
-"體進入了硬幣的碰撞區域，這樣就能代表玩家蒐集到了硬幣。"
+"許多 Godot 內建的型別都提供各種訊號可用來偵測事件。例如，當金幣 :ref:`Area2D "
+"<class_Area2D>` 物件送出 ``body_entered`` 訊號，就表示玩家物理形體進入了金幣"
+"的碰撞區域，代表玩家蒐集到金幣。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""
@@ -4229,8 +4230,8 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"本篇教學會教你製作出你的第一個 Godot 專案。你將會學習 Godot 是如何運作的、如"
-"何組織一個專案、以及如何製作一個 2D 遊戲。"
+"本篇教學會帶領你製作出第一個 Godot 專案。在本篇教學中，會學習 Godot 是如何運"
+"作的、如何組織一個專案以及如何製作一個 2D 遊戲。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -4239,14 +4240,14 @@ msgid ""
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
 "這個專案是用來介紹 Godot 引擎的。在這裡我們會假設你已經有一些程式設計的經驗。"
-"如果你完全沒有寫程式的經驗的話，你應該從 :ref:`doc_scripting` 開始。"
+"如果完全沒有寫程式的經驗，請從 :ref:`doc_scripting` 開始。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
-"這個遊戲叫做「Dodge the Creeps! 」。玩家角色必須不斷移動來儘可能地一直閃躲敵"
+"這個遊戲叫做「Dodge the Creeps! 」。玩家角色必須不斷移動，儘可能地一直閃躲敵"
 "人。最終成果會長這樣："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
@@ -4255,8 +4256,8 @@ msgid ""
 "2D until you have a good understanding of the game development process and "
 "how to use Godot."
 msgstr ""
-"**為什麼是 2D？** 3D 遊戲比 2D 來得複雜多了。你應該先學 2D，知道你完整掌握了"
-"遊戲開發的流程以及 Godot 的使用方法。"
+"**為什麼是 2D？** 3D 遊戲比 2D 來得複雜多了。直到完整掌握了遊戲開發流程以及 "
+"Godot 使用方法，都應該先以 2D 為主。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:29
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
@@ -4282,9 +4283,8 @@ msgid ""
 "you haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation "
 "of setting up a project and using the editor."
 msgstr ""
-"在這篇教學中，我們假設你已經熟悉了 Godot 編輯器。如果你還沒讀過 :ref:"
-"`doc_scenes_and_nodes` ，你現在應該先去讀一下，裡面有解釋了如何設定專案以及編"
-"輯器的使用方法。"
+"在這篇教學中，我們假設你已經熟悉 Godot 編輯器了。如果還沒讀過 :ref:"
+"`doc_scenes_and_nodes` ，請先閱讀，裡面有解釋如何設定專案以及編輯器使用方法。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:40
 msgid ""
@@ -4292,9 +4292,9 @@ msgid ""
 "the game window. Click on Project -> Project Settings -> Display -> Window "
 "and set \"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"這個遊戲的畫面設計成了垂直顯示，我們需要調整遊戲視窗的大小。點擊 專案 -> 專案"
-"設定 -> Display（顯示）-> Window（視窗），接著把「Width」（寬度）設為 "
-"``480`` ，「Height」（高度）設為 ``720``。"
+"這個遊戲的畫面設計成了垂直顯示，我們需要調整遊戲視窗的大小。點擊 [專案] -> "
+"[專案設定] -> [Display] (顯示) -> [Window] (視窗)，接著把 [Width] (寬度) 設"
+"為 ``480`` ，[Height] (高度) 設為 ``720`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:44
 msgid ""
@@ -4302,9 +4302,9 @@ msgid ""
 "and ``Aspect`` to \"keep\". This ensures that the game scales consistently "
 "on different sized screens."
 msgstr ""
-"另外，在同一個地方，將「Stretch」（拉伸）選項中的 ``Mode`` （模式）設為"
-"「2d」，將 ``Aspect`` （比例）設為「keep」（保持）。這樣以來就能確保遊戲在不"
-"同大小的螢幕上會保持相同的比例。"
+"另外，在同一個地方，將 [Stretch] (拉伸) 選項中的 ``Mode`` (模式) 設為「2d」，"
+"將 [Aspect] (比例) 設為「keep」(保持)。這樣就能確保遊戲在不同大小的螢幕上會保"
+"持相同的比例。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:49
 msgid "Organizing the project"
@@ -4319,11 +4319,11 @@ msgid ""
 "and scripts in the project's root folder, identified by ``res://``.  You can "
 "see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"在這個專案中，我們會使用三個獨立的場景： ``Player`` （玩家）、 ``Mob`` （怪"
-"物）、與 ``HUD`` ，我們會把這三個場景組合進遊戲的 ``Main`` （主要）場景。在大"
-"型專案中，或許開一些資料夾來儲存不同的場景與其對應的腳本會比較好，但對於相對"
-"小型的遊戲，你可以把場景跟腳本都保存在專案的根目錄下，也就是 ``res://`` 。你"
-"可以在左下角的檔案系統 Dock 中看到你的專案資料夾："
+"在這個專案中，我們會使用三個獨立的場景： ``Player`` (玩家)、 ``Mob`` (怪物) "
+"與 ``HUD`` ，我們會把這三個場景組合進遊戲的 ``Main`` (主要) 場景。在大型專案"
+"中，或許開一些資料夾來儲存不同的場景與其對應的腳本會比較好，但對於相對小型的"
+"遊戲，可以把場景跟腳本都保存在專案的根目錄下，也就是 ``res://`` 。可以在左下"
+"角的檔案系統 Dock 中看到專案資料夾："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:62
 msgid "Player scene"
@@ -4335,8 +4335,8 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"第一個場景，我們要來定義 ``Player`` 物件。把玩家做成獨立的一個場景的好處是："
-"就算其他遊戲的其他部分還沒做好，也可以獨立測試單一場景。"
+"第一個場景，我們要來定義 ``Player`` 物件。把玩家做成獨立場景的好處是：就算遊"
+"戲其他部分還沒做好，也可以獨立測試單一場景。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -4350,16 +4350,15 @@ msgid ""
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
 "首先，我們需要選擇玩家物件的根節點。一般來說，場景的根節點通常對應了物件所需"
-"要的功能——也就是物件 **是什麼**。點擊「其他節點」按鈕，並將 :ref:`Area2D "
-"<class_Area2D>` 節點新增至場景中。"
+"要的功能——也就是物件 **是什麼**。點擊 [其他節點] 按鈕，並新增 :ref:`Area2D "
+"<class_Area2D>` 節點至場景中。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
 "Godot will display a warning icon next to the node in the scene tree. You "
 "can ignore it for now. We will address it later."
 msgstr ""
-"Godot 會在場景樹中的節點旁邊顯示一個警告圖示。我們可以暫時忽略他，之後再來處"
-"理。"
+"Godot 會在場景樹中的節點旁邊顯示一個警告圖示。可以暫時忽略，之後再來處理。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
@@ -4368,9 +4367,9 @@ msgid ""
 "we've set the scene's root node, we can add additional nodes to give it more "
 "functionality."
 msgstr ""
-"有了 ``Area2D`` 節點，我們就能偵測跑到了玩家範圍內物件。我們先在節點上點兩"
-"下，把節點名稱改成 ``Player`` 。現在我們已經設定好了場景的根節點，接著來設定"
-"更多的節點來新增更多的功能。"
+"有了 ``Area2D`` 節點，我們就能偵測跑到了玩家範圍內物件。我們先點兩下節點，把"
+"節點名稱改成 ``Player`` 。現在，場景根節點已經設定好了，接著來設定更多節點，"
+"新增更多功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
@@ -4379,30 +4378,30 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
-"在我們給 ``Player`` 新增任何子節點前，我們需要先確保不會因為點到 Player 物件"
-"而移動到他或改變他的大小。我們先選擇 Player 節點，然後點擊鎖頭右邊的圖示，滑"
-"鼠移到圖示上方的時候會顯示提示「確保物件的子級項目無法被選擇。」"
+"在我們給 ``Player`` 新增任何子節點前，需要先確保不會因為點到 Player 物件而移"
+"動到 Player 或改變到大小。先選擇 Player 節點，然後點擊鎖頭右邊的圖示，滑鼠移"
+"到圖示上方的時候會顯示提示「確保物件的子級項目無法被選擇。」"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"接著保存場景。選擇 場景 -> 保存，或是在 Windows/Linux 上按鍵盤上的 :kbd:"
+"接著保存場景。選擇 [場景] -> [保存]，或是在 Windows/Linux 上按鍵盤 :kbd:"
 "`Ctrl + S` ，在 macOS 上則是 :kbd:`Cmd + S` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr "在這個專案中，我們會遵守 Godot 的命名規則。"
+msgstr "在這個專案中，我們會遵守 Godot 的命名慣例。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"**GDScript** ：類別（節點）使用大駝峰法 (PascalCase)，變數與函式名稱使用蛇形"
-"法 (snake_case)，常數則使用全大寫 (ALL_CAPS)（詳細請參考 :ref:"
-"`doc_gdscript_styleguide`）。"
+"**GDScript** ：類別 (節點) 使用大駝峰法 (PascalCase)，變數與函式名稱使用蛇形"
+"法 (snake_case)，常數則使用全大寫 (ALL_CAPS) (詳細請參考 :ref:"
+"`doc_gdscript_styleguide`)。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:101
 msgid ""
@@ -4411,9 +4410,9 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
-"**C#** ：類別與匯出的變數與方法使用大駝峰法 (PascalCase)，Private 欄位使用 "
-"_camelCase（底線加小駝峰），區域變數與參數使用小駝峰法 (camelCase)（請參考 :"
-"ref:`doc_c_sharp_styleguide` ）。在連接訊號的時候請特別注意不要打錯方法名稱。"
+"**C#** ：類別與匯出的變數與方法使用大駝峰法 (PascalCase)，Private 欄位使用底"
+"線加小駝峰 (_camelCase)，區域變數與參數使用小駝峰法 (camelCase) (請參考 :ref:"
+"`doc_c_sharp_styleguide` )。在連接訊號的時候請特別注意不要打錯方法名稱。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
 msgid "Sprite animation"
@@ -4431,12 +4430,11 @@ msgid ""
 "\"SpriteFrames\" panel:"
 msgstr ""
 "點擊 ``Player`` 節點然後新增一個 :ref:`AnimatedSprite "
-"<class_AnimatedSprite>` （動畫化 Sprite）子節點。這個 ``AnimatedSprite`` 會負"
-"責處理玩家的外觀與動畫效果。我們可以注意到節點的旁邊有一個警告圖示。所有 "
-"``AnimatedSprite`` 都必須要有 :ref:`SpriteFrames <class_SpriteFrames>` 資源，"
-"裡面包含了所有能顯示的動畫。我們可以從屬性面板中的 ``Frames`` （影格）屬性中"
-"點選「[空]」->「新增 SpriteFrames」來建立 SpriteFrames。接著再點擊一次就能打"
-"開「SpriteFrames」面板："
+"<class_AnimatedSprite>` 子節點。這個 ``AnimatedSprite`` 會負責處理玩家的外觀"
+"與動畫效果。可以注意到節點旁邊有一個警告圖示。所有 ``AnimatedSprite`` 都必須"
+"要有 :ref:`SpriteFrames <class_SpriteFrames>` 資源，裡面包含了所有能顯示的動"
+"畫。可以在屬性面板中 ``Frames`` (影格) 屬性上點選 [空] ->[新增 SpriteFrames] "
+"來建立 SpriteFrames。再點擊一次就能打開 [SpriteFrames] 面板："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
 msgid ""
@@ -4448,11 +4446,11 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"左側顯示的是動畫列表。點擊「default」（預設）並重新命名為「walk」（走路）。接"
-"著點擊「新增動畫」按鈕來建立第二個動畫，將其命名為「up」（上移）。接著到「檔"
-"案系統」頁籤中找到玩家圖片——應該放在你稍早解壓縮出來的 ``art`` 資料夾內。在動"
-"畫列表上選擇對應的動畫，並把圖片 ``playerGrey_up[1/2]`` 以及 "
-"``playerGrey_walk[1/2]`` 拖移到「動畫影格」那裡 ："
+"左側顯示的是動畫列表。點擊「default」(預設) 並重新命名為「walk」(走路)。接著"
+"點擊 [新增動畫] 按鈕來建立第二個動畫，將其命名為「up」(上移)。接著到 [檔案系"
+"統] 頁籤中找到玩家圖片——應該放在稍早解壓縮出來的 ``art`` 資料夾內。在動畫列表"
+"上選擇對應的動畫，並把圖片 ``playerGrey_up[1/2]`` 以及 "
+"``playerGrey_walk[1/2]`` 拖移到 [動畫影格] 那裡 ："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -4462,8 +4460,8 @@ msgid ""
 "``Node2D`` heading."
 msgstr ""
 "對於遊戲視窗來說，這些玩家圖片看起來有點大，所以我們需要把圖片縮小。點擊 "
-"``AnimatedSprite`` 節點，然後把 ``Scale`` （縮放）屬性設為 ``(0.5, 0.5)`` 。"
-"這個屬性位在屬性面板中 ``Node2D`` 標題底下。"
+"``AnimatedSprite`` 節點，然後把 ``Scale`` (縮放) 屬性設為 ``(0.5, 0.5)`` 。這"
+"個屬性位在屬性面板中 ``Node2D`` 標題底下。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:137
 msgid ""
@@ -4476,9 +4474,9 @@ msgid ""
 msgstr ""
 "最後，在 ``Player`` 節點下新增一個 :ref:`CollisionShape2D "
 "<class_CollisionShape2D>` 子節點。這個節點是用來判斷玩家的「碰撞區域 (Hitbox "
-"或 Collision Area)」的。在這個角色上很適合使用 ``CapsuleShape2D`` 節點，所以"
-"我們可以到屬性面板中的「Shape」（形狀），點擊「[空]」 -> 「新增 "
-"CapsuleShape2D」。使用兩個控制尺寸的圓點來把大小調整至覆蓋 Sprite："
+"或 Collision Area)」。在這個角色上很適合使用 ``CapsuleShape2D`` 節點，所以我"
+"們可以到屬性面板中的 [Shape] (形狀)，點擊 [空] -> [新增 CapsuleShape2D]。使用"
+"兩個控制尺寸的圓點來把大小調整至覆蓋 Sprite："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:146
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -4499,28 +4497,27 @@ msgid ""
 "\"Attach Script\" button:"
 msgstr ""
 "現在我們需要一個內建節點沒有提供的功能，所以需要自己寫腳本了。點擊 "
-"``Player`` 節點然後點擊「附加腳本」按鈕："
+"``Player`` 節點，然後點擊 [附加腳本] 按鈕："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:161
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
-msgstr "腳本設定視窗內的設定可以保持預設值。直接點擊「建立」就好："
+msgstr "腳本設定視窗內的設定可以保持預設值。直接點擊 [建立] 就好："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:164
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
-"如果要建立 C# 腳本或其他語言的腳本，在點擊建立前記得在「語言」下拉選單內選擇"
+"如果要建立 C# 腳本或其他語言的腳本，在點擊建立前記得在 [語言] 下拉選單內選擇"
 "語言。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:169
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
-msgstr ""
-"如果你第一個接觸 GDScript，建議你在繼續前先閱讀 :ref:`doc_scripting` 。"
+msgstr "若是第一次接觸 GDScript，建議在繼續前先閱讀 :ref:`doc_scripting` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid "Start by declaring the member variables this object will need:"
@@ -4536,9 +4533,10 @@ msgid ""
 "here, it will override the value written in the script."
 msgstr ""
 "在第一個變數 ``speed`` 上使用 ``export`` 關鍵字可以讓我們稍後在屬性面板中指"
-"定 speed 的值。當你想要跟節點內建的屬性一樣可以稍後調整的話就能使用這個功能。"
-"點擊 ``Player`` 節點，就可以在「Script Variables」（腳本變數）內看到這個屬"
-"性。但請記得，如果在屬性面板中修改了數值，會覆蓋掉腳本內所指定的值。"
+"定 speed 的值。當希望讓成員變數與節點內建屬性一樣可以在屬性面板中調整的話，就"
+"可以用這個功能。點擊 ``Player`` 節點，就可以在 [Script Variables] (腳本變數) "
+"內看到這個屬性。但請記得，如果在屬性面板中修改了數值，會覆蓋掉腳本內所指定的"
+"值。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:200
 msgid ""
@@ -4547,17 +4545,17 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
-"使用 C# 時若要看到新匯出的變數或訊號就需要（重新）建構專案。要重新建構專案可"
-"以手動點擊編輯器視窗底部的「Mono」文字來打開 Mono 面板，然後點擊「建構專案」"
-"按鈕。"
+"使用 C# 時，若要看到新匯出的變數或訊號，就需要建構或重新建構專案。要重新建構"
+"專案可以手動點擊編輯器視窗底部的 [Mono] 文字來打開 Mono 面板，然後點擊 [建構"
+"專案] 按鈕。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:208
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
 msgstr ""
-"``_ready()`` 函式是當節點進入場景樹後會呼叫的函式，正是取得遊戲視窗大小的好時"
-"機："
+"``_ready()`` 函式是當節點進入場景樹後會呼叫的函式，這裡正是取得遊戲視窗大小的"
+"好時機："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:224
 msgid ""
@@ -4592,17 +4590,17 @@ msgid ""
 "keyboard."
 msgstr ""
 "首先，我們需要檢查輸入——玩家有按按鍵嗎？在這個遊戲中，我們需要檢查四個方向的"
-"輸入。輸入操作是在專案設定中的「Input Map」（輸入映射）裡設定的。在這裡我們可"
-"以定義自定事件，並給事件指定不同的按鍵、滑鼠事件、或其他輸入。在這個展示遊戲"
-"中，我們會使用分配到鍵盤上方向鍵的預設事件。"
+"輸入。輸入操作是在專案設定中的 [輸入映射] 裡設定的。可以在輸入映射中定義自定"
+"事件，並給事件指定不同的按鍵、滑鼠事件或其他輸入。在這個示範遊戲中，我們會使"
+"用預設事件，這些事件是被分配到鍵盤上的方向鍵。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:240
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it's pressed or ``false`` if it isn't."
 msgstr ""
-"我們可以用 ``Input.is_action_pressed()`` 來偵測按鍵是否被按下。這個函式在按鍵"
-"被按下時會回傳 ``true`` ，否則回傳 ``false`` 。"
+"可以用 ``Input.is_action_pressed()`` 來偵測按鍵是否被按下。這個函式會在按鍵被"
+"按下時回傳 ``true`` ，若沒按下則會回傳 ``false`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
 msgid ""
@@ -4614,11 +4612,11 @@ msgid ""
 "movement, the player would move *faster* diagonally than if it just moved "
 "horizontally."
 msgstr ""
-"我們先從設定 ``velocity`` （速率）開始，設定成 ``(0, 0)`` ——這表示在預設情況"
-"下，玩家應該不會移動。接著依據不同的輸入來增加／減少 ``velocity`` 來移動各個"
-"不同的方向。例如，如果同時按住 ``右`` 與 ``下`` 方向鍵，最終的 ``velocity`` "
-"向量值應該是 ``(1, 1)`` 。由於在這個情況下我們同時增加了水平與垂直方向的移動"
-"距離，所以玩家的移動速度應該比只在水平方向上移動 **還要快** 。"
+"我們先從設定 ``velocity`` (速率) 開始，設定成 ``(0, 0)`` ——這表示在預設情況"
+"下，玩家應該不會移動。接著依據不同的輸入來增加／減少 ``velocity`` 來往不同方"
+"向移動。例如，如果同時按住 ``右`` 與 ``下`` 方向鍵，最終的 ``velocity`` 向量"
+"值應該是 ``(1, 1)`` 。因為這個情況下我們同時增加了水平與垂直方向的移動距離，"
+"所以玩家的移動速度應該比只在水平方向上移動 **還要快** 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -4626,7 +4624,7 @@ msgid ""
 "*length* to ``1``, then multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
-"我們可以通過 **正規化** (Normalize) 速率來防止這種情況，也就使要把移動的 **距"
+"我們可以通過 **正規化** (Normalize) 速率來防止這種情況，也就是要把移動的 **距"
 "離** 設定為 ``1`` ，接著乘以需要的速度。這表示在對角線上移動不會比水平移動還"
 "要快了。"
 
@@ -4636,17 +4634,17 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
-"如果你從來沒學習過向量數學運算或是需要複習的話，你可以參考這篇 :ref:"
+"如果你從來沒學習過向量數學運算或是需要複習的話，可以參考這篇 :ref:"
 "`doc_vector_math` 瞭解 Godot 中是如何使用向量的。雖然對於這篇本篇教學剩下的部"
-"分不是必要的，但若你能瞭解 Godot 中的向量的話是最好不過的了。"
+"分來說不必要，但若能瞭解 Godot 中的向量是最好不過的了。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:317
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
 msgstr ""
-"我們同時也需要檢查玩家有沒有在移動，這樣才能呼叫 AnimatedSprite 上的 "
-"``play()`` 跟 ``stop()`` 。"
+"同時也需要檢查玩家有沒有在移動，這樣才能呼叫 AnimatedSprite 上的 ``play()`` "
+"跟 ``stop()`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid ""
@@ -4664,7 +4662,7 @@ msgid ""
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
 "在 GDScript 中， ``$`` 會回傳與目前節點相對路徑上的節點，若找不到則會回傳 "
-"``null`` 。由於 AnimatedSprite 是目前節點的子節點，所以我們可以使用 ``"
+"``null`` 。由於 AnimatedSprite 是目前節點的子節點，所以可以寫成 ``"
 "$AnimatedSprite`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:326
@@ -4675,10 +4673,10 @@ msgid ""
 "to the bottom of the ``_process`` function (make sure it's not indented "
 "under the `else`):"
 msgstr ""
-"現在我們的玩家會面向不同方向了，我們可以接著更新玩家的位置了。同時我們可以使"
-"用 ``clamp()`` （箝制）來防止 Player 物件跑出畫面外。箝制一個值代表把值限制在"
-"一個給定的範圍內。將下列程式碼放到 ``_process`` 函式的末尾（記得確定不要放到 "
-"`else` 縮排下了）："
+"現在玩家會面向不同方向了，可以接著來更新玩家的位置。還可以使用 ``clamp()`` "
+"(箝制) 來防止 Player 物件跑出畫面外。**箝制** 一個值，就代表把值限制在一個給"
+"定的範圍內。將下列程式碼放到 ``_process`` 函式的末尾 (記得確定不要放到 "
+"`else` 縮排下了)："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:347
 msgid ""
@@ -4687,15 +4685,15 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
-"`_process()` 函式的 `delta` 參數是代表了 **影格長度** ——即是自從上一個影格到"
-"現在這個影格所花費的時間。通過這個數值可以確保即使幀率發生變化，移動的距離也"
-"能保持不變。"
+"**_process()** 函式的 **delta** 參數代表了 **影格時長** ——即是自從上一個影格"
+"到現在這個影格所花費的時間。通過這個數值可以確保即使幀率發生變化，移動的距離"
+"也能保持不變。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:352
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
-msgstr "點擊「執行場景」（ ``F6`` ）並確定玩家能夠移動到任何一個方向。"
+msgstr "點擊 [執行場景] (``F6``) 並測試玩家能否夠移動到任何一個方向。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
@@ -4707,7 +4705,7 @@ msgid ""
 "instance``"
 msgstr ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
-"instance`` （嘗試在基礎型別為「null 實體」的 null 實體上呼叫「play」函式）"
+"instance`` (嘗試在基礎型別為「null 實體」的 null 實體上呼叫「play」函式)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 msgid ""
@@ -4715,8 +4713,8 @@ msgid ""
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
 "in the scene tree."
 msgstr ""
-"通常這代表你把 AnimatedSprite 節點的名稱拼錯了。節點的名稱有區分大小寫，而且 "
-"``$NodeName`` 這個格式中的名稱必須與場景樹裡能看到的節點名稱一致。"
+"通常這代表程式中的 AnimatedSprite 節點名稱拼錯了。節點名稱有區分大小寫，而且 "
+"``$NodeName`` 這種語法中的名稱必須與場景樹裡能看到的節點名稱一致。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
 msgid "Choosing animations"
@@ -4733,9 +4731,9 @@ msgid ""
 "the end of the ``_process()`` function:"
 msgstr ""
 "現在玩家可以移動了，現在讓我們來根據移動的方向改變播放的 AnimatedSprite。"
-"「walk」動畫會讓玩家看起來朝右邊行走，當朝左邊行走時我們需要使用 ``flip_h`` "
-"屬性來水平翻轉動畫。另一個動畫是「up」，朝下行走的時候需要使用 ``flip_v`` 來"
-"垂直翻轉。我們來把程式碼放到 ``_process()`` 函式的尾端："
+"「walk」動畫會讓玩家看起來朝右邊行走，朝左邊行走時使用 ``flip_h`` 屬性來水平"
+"翻轉動畫。另一個動畫是「up」，朝下行走時使用 ``flip_v`` 來垂直翻轉。來把程式"
+"碼放到 ``_process()`` 函式的尾端："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:401
 msgid ""
@@ -4744,15 +4742,15 @@ msgid ""
 "*assigning* a boolean value, we can do both at the same time. Consider this "
 "code versus the one-line boolean assignment above:"
 msgstr ""
-"在這段程式碼中的布林賦值是程式設計師常用的一種簡寫方式。因為我們做了數值比較"
-"（會得到布林值）後也需要將這個布林值 **賦值** 到變數上，所以我們可以把這兩件"
-"事合在一起做。你可以比較看看下面這段程式碼跟上方範例中單行布林賦值的程式："
+"在這段程式碼中的布林賦值是程式設計師常用的一種簡寫方式。因為做了數值比較 (會"
+"得到布林值) 後也需要將這個布林值 **賦值** 到變數上，所以我們可以把這兩件事合"
+"在一起做。可以比較看看下面這段程式碼跟上方範例中單行布林賦值的程式："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:425
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions."
-msgstr "再次執行這個場景，然後看看各個方向的動畫是否正確。"
+msgstr "再執行一次場景來看看各個方向的動畫是否正確。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
 msgid ""
@@ -4761,16 +4759,16 @@ msgid ""
 "code. If you named the animation ``\"Walk\"``, you must also use a capital "
 "\"W\" in the code."
 msgstr ""
-"很多人在這裡會把動畫名稱打錯。SpriteFrames 面板上的動畫名稱必須與程式碼中所輸"
-"入的名稱一致。如果動畫名稱為 ``「Walk」`` ，則程式碼中也必須使用大寫的「W」。"
+"很多人會在這裡打錯動畫名稱。SpriteFrames 面板上的動畫名稱必須與程式碼中輸入的"
+"名稱一致。如果動畫名稱為 ``「Walk」`` ，則程式碼中也必須使用大寫的「W」。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 msgid ""
 "When you're sure the movement is working correctly, add this line to "
 "``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"確保能正常移動後，讓我們來把下面這行程式碼加到 ``_ready()`` 裡。如此一來玩家"
-"在遊戲開始的時候會隱藏起來："
+"確保能正常移動後，來把下面這行程式碼加到 ``_ready()`` 裡。如此一來在遊戲開始"
+"的時候玩家會隱藏起來："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:446
 msgid "Preparing for collisions"
@@ -4782,8 +4780,8 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
-"我們希望 ``Player`` 能偵測被敵人撞到，但我們還沒做好敵人！但沒關係，因為這個"
-"功能我們要使用 Godot 的 **訊號** 來做。"
+"我們希望 ``Player`` 被敵人撞到時能偵測到，但我們還沒做好敵人！沒關係，因為我"
+"們會用 Godot 的 **訊號** 來做這個功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
 msgid "Add the following at the top of the script, after ``extends Area2D``:"
@@ -4797,8 +4795,8 @@ msgid ""
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
 "這段程式碼定義了一個叫做「hit」的自定訊號，稍後我們會讓玩家在碰撞到敵人的時候"
-"送出這個訊號。我們會使用 ``Area2D`` 來偵測碰撞。先選擇 ``Player`` 節點然後點"
-"擊屬性面板旁邊的「節點」分頁來看看所有玩家能送出的訊號："
+"送出這個訊號。我們會使用 ``Area2D`` 來偵測碰撞。先選擇 ``Player`` 節點，然後"
+"點擊屬性面板旁邊的 [節點] 分頁來看看所有 Player 能送出的訊號："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
 msgid ""
@@ -4809,18 +4807,18 @@ msgid ""
 "change any of these settings so click \"Connect\" again. Godot will "
 "automatically create a function in your player's script."
 msgstr ""
-"可以看到我們自定的「hit」訊號出現在這裡了！由於敵人會使用 ``RigidBody2D`` 節"
+"可以看到我們自定的「hit」訊號出現在這裡了！由於敵人使用 ``RigidBody2D`` 節"
 "點，所以我們會需要 ``body_entered(body: Node)`` 訊號。這個訊號會在敵人的形體 "
-"(Body) 接觸到玩家的時候送出。點擊「連接...」後會出現「連接訊號」視窗。我們先"
-"不動這裡的設定，點擊「連接」。Godot 會自動在玩家腳本內建立一個函式。"
+"(Body) 接觸到玩家時送出。點擊 [連接...] 後會出現「連接訊號」視窗。我們先不動"
+"這裡的設定，點擊 [連接]。Godot 會自動在玩家腳本內建立一個函式。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
 msgstr ""
-"可以注意一下有一個綠色的圖示，這代表訊號連接到了這個函式。將這段程式碼加到函"
-"式中："
+"可以注意到，出現了一個綠色圖示。這個圖示代表有訊號連到這個函式上。將這段程式"
+"碼加到函式中："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:502
 msgid ""
@@ -4838,17 +4836,17 @@ msgid ""
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 "如果在引擎處理碰撞過程中間禁用碰撞區域可能會發生錯誤。所以我們需要使用 "
-"``set_deferred()`` 來讓 Godot 等待到能安全禁用碰撞區域後再禁用。"
+"``set_deferred()`` 來讓 Godot 等到能安全禁用碰撞區域後再禁用。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 msgid ""
 "The last piece is to add a function we can call to reset the player when "
 "starting a new game."
-msgstr "最後我們要做的就是新增一個函式，當開始新遊戲的時候可以用來重設玩家。"
+msgstr "最後我們要做的，就是新增一個函式，用來在開始新遊戲時重設玩家。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:531
 msgid "Enemy scene"
-msgstr "Enemy（敵人）場景"
+msgstr "Enemy (敵人) 場景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:533
 msgid ""
@@ -4856,7 +4854,7 @@ msgid ""
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
 "the screen, choose a random direction, and move in a straight line."
 msgstr ""
-"是時候來做一些讓玩家閃躲的敵人了。這些敵人的行為不會很複雜：關於會隨機在螢幕"
+"是時候來做一些讓玩家閃躲的敵人了。這些敵人的行為不會很複雜：怪物會隨機在螢幕"
 "的邊緣產生，接著隨機選一個方向來直線移動。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:537
@@ -4864,12 +4862,12 @@ msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"我們來建立一個 ``Mob`` （怪物）場景。我們可以在這個場景中 **實體化** 多個獨立"
-"的怪物。"
+"我們來建立一個 ``Mob`` (怪物) 場景，我們利用這個場景來在遊戲中 **實體化** 多"
+"個獨立的怪物。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:540
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr "有關實體化，請參考 :ref:`doc_instancing` 瞭解詳情。"
+msgstr "請參考 :ref:`doc_instancing` 以瞭解更多有關實體化的資訊。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid "Node setup"
@@ -4877,11 +4875,11 @@ msgstr "設定節點"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Click Scene -> New Scene and add the following nodes:"
-msgstr "點擊 場景 -> 新增場景，然後新增下列節點："
+msgstr "點擊 [場景] -> [新增場景]，然後新增下列節點："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` （設定名稱為 ``Mob`` ）"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (設定名稱為 ``Mob`` )"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:549
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
@@ -4899,7 +4897,7 @@ msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
-msgstr "別忘了把子節點設定成無法選擇，就像稍早我們在 Player 場景中做的。"
+msgstr "別忘了把子節點設定成無法選擇，跟剛剛在 Player 場景中一樣。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:556
 msgid ""
@@ -4908,9 +4906,9 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
-"將 :ref:`RigidBody2D <class_RigidBody2D>` 的 ``Gravity Scale`` （重力量級）設"
-"為 ``0`` ，這可以讓怪物不會下墜。另外，在 ``PhysicsBody2D`` 中，點擊 "
-"``Mask`` （遮罩）屬性並取消選擇第一個勾選框。這樣就可以確保怪物不會互相碰撞。"
+"將 :ref:`RigidBody2D <class_RigidBody2D>` 的 ``Gravity Scale`` (重力量級) 設"
+"為 ``0`` ，讓怪物不會下墜。另外，在 ``PhysicsBody2D`` 中，點擊 ``Mask`` (遮"
+"罩) 屬性並取消選擇第一個勾選框，就可以確保怪物不會互相碰撞。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:563
 msgid ""
@@ -4919,8 +4917,8 @@ msgid ""
 "There are two images for each animation in the art folder."
 msgstr ""
 "接著像剛才設定玩家那樣，設定 :ref:`AnimatedSprite <class_AnimatedSprite>` 。"
-"這一次我們有三種動畫： ``fly`` （飛行）、 ``swim`` （游泳）、與 ``walk`` （行"
-"走）。每個動畫都有兩個圖片，放在 art 資料夾中。"
+"這次有三種動畫： ``fly`` (飛行)、 ``swim`` (游泳) 與 ``walk`` (行走)。每個動"
+"畫都有兩個圖片，放在 art 資料夾中。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
@@ -4928,7 +4926,7 @@ msgstr "將所有動畫的「速度 (FPS)」調整為 ``3`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr "在屬性面板中勾選 ``Playing`` （播放）屬性為「開啟」。"
+msgstr "在屬性面板中勾選 ``Playing`` (播放) 屬性為「開啟」。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -4943,7 +4941,7 @@ msgid ""
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "就像玩家的圖片一樣，這些怪物的圖片也需要縮小。將 ``AnimatedSprite`` 的 "
-"``Scale`` （縮放）屬性設為 ``(0.75, 0.75)`` 。"
+"``Scale`` (縮放) 屬性設為 ``(0.75, 0.75)`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:578
 msgid ""
@@ -5195,16 +5193,14 @@ msgid ""
 msgstr "點擊「[空]」旁邊的下拉箭頭，並選擇「載入」。接著選擇 ``Mob.tscn`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-#, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
 msgstr ""
-"從場景樹中選擇 Button (按鈕) 節點然後選擇 [節點] 分頁。接下來，確定選擇 [訊"
-"號] 選項。"
+"接著，從場景 Dock 中選擇 ``Player`` 節點，然後前往側欄的節點 Dock 中。節選選"
+"擇節點 Dock 中的 [訊號] 分頁。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:785
-#, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -5215,10 +5211,11 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"接下來，點擊玩家並連接 ``hit`` 訊號。這裡我們把新函式命名為 ``game_over`` ，"
-"這個函式會複雜處理遊戲結束要做的事情。在「連接訊號」視窗中的「Receiver 方法」"
-"內輸入「game_over」，並點擊「連接」。將下列程式碼加到新建立的函式當中，並新增"
-"一個 ``new_game`` 函式，負責在遊戲開始的時候搞定一切："
+"接著應該可以看到所有 ``Player`` 節點的訊號。點兩下列表中的 ``hit`` 訊號 (或是"
+"右鍵點擊然後選擇 [連接...])。這樣便可以打開訊號連接對話框。這裡我們要把新函式"
+"命名為 ``game_over`` ，這個函式會負責處理遊戲結束時要做的事。在 [連接訊號] 視"
+"窗中的 [Receiver 方法] 內輸入「game_over」，並點擊 [連接]。將下列程式碼加到新"
+"建立的函式當中，接著新增一個 ``new_game`` 函式，負責在遊戲開始時搞定一切："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
@@ -9887,7 +9884,7 @@ msgstr ""
 "我們需要在兩個色彩間 Tween，起始值為 Alpha 為 ``1`` （即完全不透明）的白色，"
 "終止值則為 Alpha 值為 ``0`` （即完全透明）的白色。來在 ``_on_Player_died`` 方"
 "法最上面新增兩個變數，名為 ``start_color`` 與 ``end_color`` 。使用 "
-"``Color()`` 建構子來建立兩個 ``Color`` 值。"
+"``Color()`` 建構函式來建立兩個 ``Color`` 值。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
 msgid ""
@@ -12731,6 +12728,8 @@ msgid ""
 "`External editors are currently incompatible with Godot's \"Sync Script "
 "Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
 msgstr ""
+"`外部編輯器目前與 Godot 的「同步腳本更改」功能不相容 (英文) <https://github."
+"com/godotengine/godot/issues/10946>`__"
 
 #: ../../docs/getting_started/editor/external_editor.rst:10
 msgid ""
@@ -16829,6 +16828,8 @@ msgid ""
 "still be modified afterwards. They can't be reassigned with another value "
 "though."
 msgstr ""
+"由於陣列與字典是以參照來傳遞的，因此常數為「扁平」的。這表示當宣告常數型陣列"
+"或字典，之後依然可以修改其內容。只是這個常數之後不能指派為其他值而已。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:649
 msgid "Enums"
@@ -17004,16 +17005,15 @@ msgstr ""
 "用 ``continue`` 來繼續："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
-#, fuzzy
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
 "loop variable. When iterating over a dictionary, the *key* is stored in the "
 "loop variable."
 msgstr ""
-"要在一段範圍內迭代，如在陣列或 Table 中，可以使用 **for** 迴圈。當在陣列中迭"
-"代時，目前的陣列元素會儲存於迴圈變數中。當於字典中迭代時，則是 **索引** 會保"
-"存於迴圈變數內。"
+"要在如陣列或表格中的一段範圍內迭代，可以使用 **for** 迴圈。當在陣列中迭代時，"
+"目前的陣列元素會儲存於迴圈變數中。當於字典中迭代時，保存在迴圈變數內的則會是 "
+"**索引** 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:844
 msgid ""
@@ -17297,7 +17297,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
 msgid "Class Constructor"
-msgstr "類別建構子"
+msgstr "類別建構函式"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
 msgid ""
@@ -17306,8 +17306,8 @@ msgid ""
 "automatically when inheriting a class. So, there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"類別建構子 ``_init`` 會在類別實體化時呼叫。如同剛才提到的，繼承的類別會自動呼"
-"叫母類別建構子，所以通常不需要明確呼叫 ``._init()`` 。"
+"類別建構函式 ``_init`` 會在類別實體化時呼叫。如同剛才提到的，繼承的類別會自動"
+"呼叫母類別建構函式，所以通常不需要明確呼叫 ``._init()`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1105
 msgid ""
@@ -17315,8 +17315,8 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this::"
 msgstr ""
-"上方的 ``.some_func`` 例子中可以看到與呼叫一般函式不同，若繼承類別的建構子有"
-"引數，則會這樣傳遞："
+"上方的 ``.some_func`` 例子中可以看到與呼叫一般函式不同，若繼承類別的建構函式"
+"有引數，則會這樣傳遞："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1112
 msgid "This is better explained through examples. Consider this scenario::"
@@ -17333,7 +17333,7 @@ msgid ""
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``."
 msgstr ""
-"若被繼承類別 (``State.gd``) 定義了需要引數的建構子 ``_init`` (此例中為 "
+"若被繼承類別 (``State.gd``) 定義了需要引數的建構函式 ``_init`` (此例中為 "
 "``e``) ，則繼承類別 (``Idle.gd``) **必須** 也定義 ``_init`` 並將適當的參數傳"
 "遞從 ``State.gd`` 中傳遞給 ``_init`` 。"
 
@@ -17348,7 +17348,7 @@ msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
 msgstr ""
-"在上方的例子中，傳遞給 ``State.gd`` 建構子的 ``e`` 與傳遞給 ``Idle.gd`` 之 "
+"在上方的例子中，傳遞給 ``State.gd`` 建構函式的 ``e`` 與傳遞給 ``Idle.gd`` 之 "
 "``e`` 相同。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
@@ -17358,9 +17358,9 @@ msgid ""
 "This brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. eg.::"
 msgstr ""
-"若 ``Idle.gd`` 中的 ``_init`` 建構子只接受 0 個引數，則即使沒有效果，依然需要"
-"傳入數值給 ``State.gd`` 母類別。也就是說，不只可將變數傳給母類別的建構子，也"
-"可傳遞字面值，如下："
+"若 ``Idle.gd`` 中的 ``_init`` 建構函式只接受 0 個引數，則即使沒有效果，依然需"
+"要傳入數值給 ``State.gd`` 母類別。也就是說，不只可將變數傳給母類別的建構函"
+"式，也可傳遞字面值，如下："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
 msgid "Inner classes"
@@ -17733,14 +17733,13 @@ msgstr ""
 "yield 條件為 ``completed`` 訊號："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1579
-#, fuzzy
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
 "``while`` would be redundant here as the ``completed`` signal is only "
 "emitted when the function didn't yield anymore."
 msgstr ""
-"這樣一來變確保該函式會回傳應該要回傳的值而不管內部是否有協同程式。請注意，不"
+"這樣一來便確保該函式會回傳應該要回傳的值而不管內部是否有協同程式。請注意，不"
 "需要使用 ``while`` ，因為 ``completed`` 訊號只會在函式不再 yield 後才送出。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1585
@@ -21125,7 +21124,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr "Constructors 建構子"
+msgstr "Constructors 建構函式"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -21134,18 +21133,19 @@ msgid ""
 "be used."
 msgstr ""
 "這些節點是用來建立 Godot 基礎資料型別的所有函式。例如，當需要從三個浮點數建立"
-"一個 Vector3，就必須使用建構子。"
+"一個 Vector3，就必須使用建構函式。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:425
 msgid "Destructor"
-msgstr "Destructor 結構子"
+msgstr "Destructor 解構函式"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
-"結構子與 Contructor 建構子相反，用來將基礎型別 (如 Vector3) 分離為子元素。"
+"解構函式與 Contructor 建構函式相反，用來將基礎型別 (如 Vector3) 分離為子元"
+"素。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
@@ -21263,7 +21263,7 @@ msgid ""
 "``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
 "使用大部分 GDScript 中現有的內建函式，如 ``sin()``, ``cos()``, ``print()`` 與"
-"建構子，如 ``Vector3(x, y, z)``, ``Rect2(...)`` …等："
+"建構函式，如 ``Vector3(x, y, z)``, ``Rect2(...)`` …等："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
@@ -21326,7 +21326,7 @@ msgid ""
 "The ``outputs`` parameter is an array where the indices represent the output "
 "port ids. It can be modified to set the values of the output ports."
 msgstr ""
-"``outputs`` 參數為一個陣列，其中的索引值代表輸入的連接埠 ID。可以修改 "
+"``outputs`` 參數為一個陣列，其中的索引值代表輸出的連接埠 ID。可以修改 "
 "outputs 來設定輸出連接埠的值。"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:23
@@ -21348,8 +21348,9 @@ msgid ""
 "return the id of the sequence port which should be called next. If your "
 "custom node doesn't have any, just return 0."
 msgstr ""
-"若想拋出錯誤，如輸入值不正確時，可以回傳字串格式的錯誤訊息。若沒問題的話，則"
-"回傳下一個要呼叫的序列埠 ID。若自定節點沒有下一個要呼叫的節點的話，則回傳 0。"
+"若想拋出錯誤，如輸入類型不正確時，可以回傳字串格式的錯誤訊息。若沒問題的話，"
+"則回傳下一個要呼叫的序列埠 ID。若自定節點沒有下一個要呼叫的節點的話，則回傳 "
+"0。"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:31
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
@@ -22184,7 +22185,6 @@ msgstr ""
 "依據目前架構是 64 位元還是 32 位元，會有定義 ``GODOT_64`` 或 ``GODOT_32`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
-#, fuzzy
 msgid ""
 "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, "
 "``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. "
@@ -22193,9 +22193,9 @@ msgid ""
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
 "依據作業系統，會定義 ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, "
-"``GODOT_ANDROID``, ``GODOT_HTML5``, or ``GODOT_SERVER`` 其中一個。這些名稱可"
-"能在未來會有所不同。這些定義是從 :ref:``OS <class_OS>`` 單例中的 "
-"``get_name()`` 建立來的，但並非所有該方法回傳的作業系統都是 Godot 與 Mono 能"
+"``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5`` 或 ``GODOT_SERVER`` 中其中"
+"一個。這些名稱未來可能會更改。這幾個名稱是從 :ref:``OS <class_OS>`` 單例中的 "
+"``get_name()`` 定義來的，但並非所有該方法回傳的作業系統都是 Godot 與 Mono 能"
 "執行的平台。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
@@ -22221,22 +22221,18 @@ msgstr ""
 "一個。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
-#, fuzzy
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
-msgstr ""
-"在 Android 上會依據架構定義 ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` 其中"
-"一個。"
+msgstr "在 iOS 上會依據架構定義 ``GODOT_ARM64`` or ``GODOT_ARMV7`` 其中一個。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
-#, fuzzy
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"依據紋理貼圖壓縮類型，會定義 ``GODOT_S3TC``, ``GODOT_ETC`` 或 ``GODOT_ETC2`` "
-"其中一個。"
+"依據紋理貼圖壓縮類型，會定義 ``GODOT_S3TC``, ``GODOT_ETC`` 或 "
+"``GODOT_ETC2``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
@@ -22247,13 +22243,12 @@ msgstr ""
 "``GODOT_FOO`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"除了這份說明文件，你可能也會想看看 `Godot Demo 專案 <https://github.com/"
-"godotengine/godot-demo-projects>`_ 。"
+"若欲檢視範例專案，請參考作業系統示範專案： https://github.com/godotengine/"
+"godot-demo-projects/tree/master/misc/os_test"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
@@ -22511,8 +22506,9 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
-"在 C# 中，結構為無參數的建構子。因此 ``new Basis()`` 會初始化所有原始成員並設"
-"為預設值。使用 ``Basis.Identity`` 與 GDScript 與 C++ 中的 ``Basis()`` 等效。"
+"在 C# 中，結構為無參數的建構函式。因此 ``new Basis()`` 會初始化所有原始成員並"
+"設為預設值。使用 ``Basis.Identity`` 與 GDScript 與 C++ 中的 ``Basis()`` 等"
+"效。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
@@ -22540,8 +22536,8 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
-"在 C# 中，結構為無參數的建構子。因此，``new Transform2D()`` 會初始化所有原始"
-"成員並設為預設值。請使用 ``Transform2D.Identity`` 來達成與 GDScript 或 C++ "
+"在 C# 中，結構為無參數的建構函式。因此，``new Transform2D()`` 會初始化所有原"
+"始成員並設為預設值。請使用 ``Transform2D.Identity`` 來達成與 GDScript 或 C++ "
 "中 ``Transform2D()`` 同等的效果。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
@@ -22612,9 +22608,9 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
-"在 C# 中，結構為無參數的建構子。因此，``new Quat()`` 會初始化所有原始成員並設"
-"為預設值。請使用 ``Quat.Identity`` 來達到與 GDScript 或 C++ 中 ``Quat()`` 同"
-"等的效果。"
+"在 C# 中，結構為無參數的建構函式。因此，``new Quat()`` 會初始化所有原始成員並"
+"設為預設值。請使用 ``Quat.Identity`` 來達到與 GDScript 或 C++ 中 ``Quat()`` "
+"同等的效果。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:257
 msgid ""
@@ -22715,8 +22711,8 @@ msgid ""
 "Array)`` constructor to create one."
 msgstr ""
 "``Godot.Collections.Array<T>`` 為類別安全版的 ``Godot.Collections.Array`` 封"
-"裝。可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 建構子來建"
-"立。"
+"裝。可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 建構函式來"
+"建立。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 msgid "Use ``Godot.Collections.Dictionary``."
@@ -22730,7 +22726,7 @@ msgid ""
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` 是型別安全版的 ``Godot.Collections."
 "Dictionary`` 封裝。使用 ``Godot.Collections.Dictionary<T>(Godot.Collections."
-"Dictionary)`` 建構子來建立。"
+"Dictionary)`` 建構函式來建立。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
@@ -28191,6 +28187,9 @@ msgid ""
 "This requires support for `WebAssembly <https://webassembly.org/>`__ and "
 "`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
 msgstr ""
+"匯出 HTML5 可以將 Godot Engine 做的遊戲發佈在瀏覽器上。該功能需要使用者瀏覽器"
+"有支援 `WebAssembly <https://webassembly.org/>`__ 與 `WebGL <https://www."
+"khronos.org/webgl/>`__ 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
 msgid ""
@@ -28198,6 +28197,8 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"使用整合在瀏覽器內的開發者主控台 (通常可以按 :kbd:`F12` 打開)，即可檢視如 "
+"JavaScript、引擎與 WebGL 錯誤之類的 **除錯資訊** 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -28205,6 +28206,8 @@ msgid ""
 "exported projects when **opened locally** per ``file://`` protocol. To get "
 "around this, use a local server."
 msgstr ""
+"包含 Firefox 與基於 Chromium 的瀏覽器在內，都無法以 ``file:`` 協定在 **本機"
+"** 開啟匯出的專案。要解決這個問題，請使用本機伺服器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
@@ -28212,6 +28215,8 @@ msgid ""
 "server`` with Python 3 to serve the current working directory at ``http://"
 "localhost:8000``."
 msgstr ""
+"Python 中有可以輕鬆執行本機伺服器的方法。可以在 Python3 上使用 ``python -m "
+"http.server`` 來將目前的工作目錄放在 ``http://localhost:8000`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:23
 msgid ""
@@ -28221,22 +28226,27 @@ msgid ""
 "<doc_exporting_for_ios>` instead, as it will also result in better "
 "performance."
 msgstr ""
+"`在 iOS 上執行 HTML5 專案有個重大 Bug <https://github.com/godotengine/godot/"
+"issues/26554>`__ (不論哪個瀏覽器)。我們建議改用 :ref:`iOS 的原生匯出功能 "
+"<doc_exporting_for_ios>` ，以獲得最佳結果。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
 msgid "WebGL 2"
-msgstr ""
+msgstr "\\ WebGL 2"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
+"直到 Godot 將 **OpenGL ES 3** 轉譯器刪除並改用 **Vulkan** 之前，HTML5 匯出都"
+"在選擇 **GLES3** 時使用 **WebGL 2** 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
-msgstr ""
+msgstr "由於未來 Godot 會將 WebGL 2 移除，且不會有替換方案，所以不建議使用。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid ""
@@ -28245,15 +28255,18 @@ msgid ""
 "**Edge** do not work. On **iOS**, all browsers are based on WebKit (i.e. "
 "Safari), so they will also not work."
 msgstr ""
+"並非所有瀏覽器都支援 WebGL 2。 **Firefox** 與 **Chromium** (Chrome, Opera) 為"
+"支援的瀏覽器中最受歡迎的，而 **Safari** 與 **Edge** 則不支援。 **iOS** 上所有"
+"的瀏覽器都是基於 WebKit 的 (即 Safari)，所以全部都不支援。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
-msgstr ""
+msgstr "Godot 的 WebGL 2 轉譯器有一些 3D 問題，而且已停止維護。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid "Limitations"
-msgstr ""
+msgstr "限制"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
 msgid ""
@@ -28262,10 +28275,12 @@ msgid ""
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"由於安全性與隱私權問題，要將許多在原生平台上能輕鬆運作的功能放到 Web 平台上會"
+"很複雜。以下列出了一些在將 Godot 遊戲移植到網頁時應注意的限制。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
 msgid "Using cookies for data persistence"
-msgstr ""
+msgstr "使用 Cookie 來保留資料"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:54
 msgid ""
@@ -28274,6 +28289,9 @@ msgid ""
 "``iframe``, **third-party** cookies must also be enabled. Incognito/private "
 "browsing mode also prevents persistence."
 msgstr ""
+"若要保留 ``user://`` 檔案系統中的資料，則使用者必須要 **允許 Cookie** (尤其"
+"是 IndexedDB)。若在 ``iframe`` 內玩遊戲的話，則必須同時啟用 **第三方** "
+"Cookie。隱私模式也會防止保留資料。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
 msgid ""
@@ -28281,10 +28299,12 @@ msgid ""
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
+"``OS.is_userfs_persistent()`` 方法可以用來檢查 ``user://`` 檔案系統是否會被保"
+"留，但有時候檢查結果不會是正確的。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:64
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "全螢幕與滑鼠截取"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:66
 msgid ""
@@ -28295,6 +28315,10 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
+"瀏覽器不允許任意 **進入全螢幕** 模式。同樣地，也不允許隨時 **截取滑鼠遊標"
+"** 。這些操作必須要改為用 JavaScript 輸入事件來處理。這代表，在 Godot 中必須"
+"要在按鍵輸入事件回呼 (如 ``_input`` 或 ``_unhandled_input``) 中才能進入全螢"
+"幕。用 :ref:``class_Input``單例來查詢還不夠，必須要啟用相關的輸入事件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:73
 msgid ""
@@ -28302,16 +28326,19 @@ msgid ""
 "engine is started from within a valid input event handler. This requires :"
 "ref:`customization of the HTML page <doc_customizing_html5_shell>`."
 msgstr ""
+"出於相同原因，除非引擎是從有效的輸入事件處理常式中開始的，否則無法使用全螢幕"
+"專案設定。要設定則需要 :ref:`自定 HTML 頁面 <doc_customizing_html5_shell>` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:78
 msgid "Audio autoplay"
-msgstr ""
+msgstr "音訊自動播放"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:80
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
+"Chrome 會顯示網站能否播放音訊。可能有需要玩家點擊、輕觸或按按鍵來啟用音訊。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:83
 msgid ""
@@ -28319,45 +28346,49 @@ msgid ""
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
 "autoplay>`__."
 msgstr ""
+"Google 有提供關於 `網頁音訊自動播放政策 (英文) <https://sites.google.com/a/"
+"chromium.org/dev/audio-video/autoplay>`__ 的額外資訊。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` 與 :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
-msgstr ""
+msgstr "在 HTML5 平台上，HTTP 類別有一些限制："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "無法存取或更改 ``StreamPeer``"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid "Threaded/Blocking mode is not available"
-msgstr ""
+msgstr "無法使用 Threaded/Blocking 模式"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
-msgstr ""
+msgstr "每幀無法處理多次，因此在迴圈內輪詢會導致程式凍結"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "No chunked responses"
-msgstr ""
+msgstr "無法區塊回覆"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "無法禁用主機驗證"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
+"必須遵守 `同源政策 (Same-origin policy) <https://developer.mozilla.org/en-US/"
+"docs/Web/Security/Same-origin_policy>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "匯出的 ``.html`` 檔案無法重複使用"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
@@ -28367,10 +28398,14 @@ msgid ""
 "file** will be lost in future exports. To customize the generated file, see :"
 "ref:`doc_customizing_html5_shell`."
 msgstr ""
+"每個專案都會產生自己的 HTML 檔案。匯出時，**產生的 HTML 檔案** 中的各個預留位"
+"置都會依據給定的匯出選項取代。若直接修改 **產生的 HTML 檔案** ，則未來匯出的"
+"時候都會遺失這些修改。若要自定產生的檔案，請參考 :ref:"
+"`doc_customizing_html5_shell` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:105
 msgid "Boot splash is not displayed"
-msgstr ""
+msgstr "不會顯示啟動畫面"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
 msgid ""
@@ -28378,10 +28413,12 @@ msgid ""
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
 "<doc_customizing_html5_shell>` can display it."
 msgstr ""
+"預設 HTML 頁面不會在載入時顯示啟動畫面。但，圖片是匯出為 PNG 檔案，所以 :ref:"
+"`自定 HTML 頁面 <doc_customizing_html5_shell>` 可以顯示圖片。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
 msgid "Shader language limitations"
-msgstr ""
+msgstr "著色器語言限制"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:376
@@ -28389,21 +28426,23 @@ msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
+"當匯出 GLES2 專案為 HTML5 時會使用 WebGL 1.0。WebGL 1.0 不支援動態循環，因此"
+"使用動態循環的著色器將不會運作。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:118
 msgid "Unimplemented functionality"
-msgstr ""
+msgstr "未實作的功能"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
-msgstr ""
+msgstr "下列功能目前不在 HTML5 上支援："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:7
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "執行緒"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
@@ -28412,13 +28451,14 @@ msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Clipboard synchronization between engine and operating system"
-msgstr ""
+msgstr "在引擎與作業系統間的剪貼簿同步"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
+"除了 :ref:`class_HTTPClient` 與 :ref:`class_WebSocketClient` 之外的網路"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
@@ -28427,10 +28467,13 @@ msgid ""
 "if the functionality you're interested in has an issue yet. If not, open one "
 "to communicate your interest."
 msgstr ""
+"請瀏覽 `GitHub 上的 HTML5 問題列表 <https://github.com/godotengine/godot/"
+"issues?q=is:open+is:issue+label:platform:html5>`__ 以瞭解您有興趣的功能目前是"
+"否有問題。若列表上沒有，可以開啟 Issue 來與大家交流。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid "Serving the files"
-msgstr ""
+msgstr "提供檔案"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
@@ -28438,6 +28481,9 @@ msgid ""
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"匯出網頁會產生多個用來在網頁伺服器上提供的檔案，其中包含一個用來顯示的預設 "
+"HTML 頁面。可以使用自定 HTML 檔案，請參考 :ref:"
+"`doc_customizing_html5_shell` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
 msgid ""
@@ -28445,6 +28491,8 @@ msgid ""
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"產生的 ``.html`` 可以用來在 Apache 伺服器中的 ``DirectoryIndex`` 功能中使用，"
+"並且可以隨時重命名為如 ``index.html`` 之類的名稱。預設情況下不會依賴其檔名。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
@@ -28452,6 +28500,8 @@ msgid ""
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
 "common on most web game hosting sites."
 msgstr ""
+"HTML 頁面會以瀏覽器視窗的最大尺寸來繪製遊戲。這樣便可將其插入在遊戲大小的 "
+"``<iframe>`` 中，大多數遊戲在託管網頁中都是這麼做。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
@@ -28463,6 +28513,11 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"除了 ``.html`` 外其他的檔案都是以原本的樣子來提供，名稱不變。 ``.wasm`` 檔案"
+"為實作引擎的二進位 WebAssembly 模組。 ``.pck`` 檔案則是包含遊戲的 Godot 主要"
+"套件。 ``.js`` 檔案包含了由 ``.html`` 檔案用來存取引擎的啟動程式碼。 ``."
+"png`` 檔案包含了啟動畫面，預設的 HTML 頁面不會使用到，但可以用 :ref:`自定 "
+"HTML 頁面 <doc_customizing_html5_shell>` 來顯示。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -28470,12 +28525,16 @@ msgid ""
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
 "`application/wasm`."
 msgstr ""
+"``.pck`` 檔案為二進位形式，通常會以 MIME 類型 :mimetype:`application/octet-"
+"strem` 來傳送。 ``.wasm`` 則是 :mimetype:`application/wasm` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:160
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
+"使用 :mimetype:`application/wasm` 之外的 MIME 類型來傳遞 WebAssembly 模組 "
+"(``.wasm`) 可以防止一些啟動最佳化。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
@@ -28484,10 +28543,13 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"建議以伺服器端壓縮來傳送這些檔案，特別是 ``.pck`` 與 ``.wasm`` ，這兩種檔案大"
+"小通常很大。WebAssembly 模組特別適合壓縮，使用 gzip 通常能壓縮到小於原本的四"
+"分之一。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
-msgstr ""
+msgstr "匯出選項"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
@@ -28495,12 +28557,16 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"若有可執行的網頁匯出樣板，則在編輯器上 **[停止場景]** 與 **[執行編輯的場"
+"景]** 按鈕中間會多一個按鈕，可以用來在預設瀏覽器中快速開啟遊戲來測試。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"若有設定 **預設 HTML Shell** 檔案，則會用這個檔案而非預設 HTML 頁面。請參考 :"
+"ref:doc_customizing_html5_shell` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
@@ -28508,10 +28574,13 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Head Include** 會被加到產生的 HTML 頁面中 ``<head>`` 元素的尾端。這樣便可以"
+"達成如載入 Webfont 或第三方 JavaScript API、加上 CSS 或執行 JavaScript 等功"
+"能。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "從腳本中呼叫 JavaScript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:188
 msgid ""
@@ -28521,34 +28590,42 @@ msgid ""
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
+"在網頁建構中有實作 ``JavaScript`` 單例。該單例只提供了一個名為 ``eval`` 的方"
+"法，類似 JavaScript 中相同名稱的函式。該方法接受單一字串引數，會將該字串作為 "
+"JavaScript 程式碼來執行。這樣便可用 Godot 整合腳本中無法實現的方法來與瀏覽器"
+"互動。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"特定情況下，最後一個 JavaScript 陳述式的回傳值會轉換為 GDScript 值，並由 "
+"``eval()`` 回傳："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
-msgstr ""
+msgstr "JavaScript ``number`` 型會以 GDScript :ref:`class_float` 回傳"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
-msgstr ""
+msgstr "JavaScript ``bool`` 型會以 GDScript :ref:`class_bool` 回傳"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
-msgstr ""
+msgstr "JavaScript ``string`` 型會以 GDScript :ref:`class_String` 回傳"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"JavaScript ``ArrayBuffer``, ``TypedArray`` 與 ``DataView`` 型會以 GDScript :"
+"ref:`class_PoolByteArray` 回傳"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "其他的 JavaScript 值則會回傳為 ``null`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
@@ -28557,12 +28634,17 @@ msgid ""
 "eval`` will also return ``null``.  The availability of the singleton can be "
 "checked with the ``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
+"建構的 HTML5 匯出樣板也有可能不支援該單例。這種樣板在 HTML5 之外的平台上呼叫 "
+"``JavaScript.eval`` 也會回傳 ``null`` 。可以通過 ``JavaScript`` :ref:`功能標"
+"籤` 來檢查是否可使用該單例："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:229
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"GDScript 的多行字串是由三個引號 ``\"\"\"`` 來包圍，如同上方 ``my_func3()`` 中"
+"的範例，適用於讓 JavaScript 更容易閱讀。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:232
 msgid ""
@@ -28570,11 +28652,13 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"``eval`` 方法也接受第二個可選的布林引數，可以用來指定是否要在全域執行上下文中"
+"執行程式碼。預設值為 ``false`` ，以防止汙染全域命名空間："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
 msgid "Exporting for dedicated servers"
-msgstr ""
+msgstr "為專用伺服器匯出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:6
 msgid ""
@@ -28582,10 +28666,12 @@ msgid ""
 "doesn't have a GPU or display server available, you'll need to use a server "
 "build of Godot."
 msgstr ""
+"若想以獨立伺服器的模式在沒有 GPU 或顯示伺服器的機器上執行專案，則必須要使用伺"
+"服器建構版本的 Godot。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
 msgid "Platform support"
-msgstr ""
+msgstr "支援平台"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -28593,12 +28679,17 @@ msgid ""
 "org/download/server>`__. To compile a server binary from source, follow "
 "instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
+"**Linux：** `下載官方 Linux 伺服器二進位檔 <https://godotengine.org/download/"
+"server>`__ 。若要從原始碼編輯二進位檔，請參考 :ref:`doc_compiling_for_x11` 中"
+"的說明。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
 msgid ""
 "**macOS:** :ref:`Compile a server binary from source for macOS "
 "<doc_compiling_for_osx>`."
 msgstr ""
+"**macOS：** :ref:`為 macOS 平台從原始碼編譯伺服器二進位檔 "
+"<doc_compiling_for_osx>` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
 msgid ""
@@ -28606,27 +28697,33 @@ msgid ""
 "alternative, you can use the ``--no-window`` command-line argument to "
 "prevent Godot from spawning a window."
 msgstr ""
+"**Windows：** 目前還沒有用於 Windows 的專用伺服器建置。可以使用 ``--no-"
+"window`` 命令行引數來防止 Godot 產生視窗。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:20
 msgid ""
 "If your project uses C#, you'll have to use a Mono-enabled server binary."
-msgstr ""
+msgstr "若專案使用 C#，則必須使用有啟用 Mono 的伺服器二進位檔。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:23
 msgid "\"Headless\" versus \"server\" binaries"
-msgstr ""
+msgstr "「無周邊」vs「伺服器」二進位檔"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:25
 msgid ""
 "The `server download page <https://godotengine.org/download/server>`__ "
 "offers two kinds of binaries with several differences."
 msgstr ""
+"`伺服器下載頁面 <https://godotengine.org/download/server>`__ 提供了兩種二進位"
+"檔，這兩種二進位檔有一些不同的地方。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:28
 msgid ""
 "**Server:** Use this one for running dedicated servers. It does not contain "
 "editor functionality, and is therefore smaller and more optimized."
 msgstr ""
+"**Server (伺服器)：** 用於在專用伺服器上執行。不包含編輯器的功能，因此比較"
+"小，也更最佳化。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:31
 msgid ""
@@ -28634,10 +28731,13 @@ msgid ""
 "be used for exporting projects. This binary *can* be used to run dedicated "
 "servers, but it's not recommended as it's larger and less optimized."
 msgstr ""
+"**Headless (無週邊)：** 包含編輯器功能的二進位檔，目的是用來匯出專案。該二進"
+"位檔 **可以** 用來執行專用伺服器，但因為檔案比較大，也比較沒最佳化，所以不建"
+"議這樣用。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:36
 msgid "Exporting a PCK file"
-msgstr ""
+msgstr "匯出 PCK 檔"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:38
 msgid ""
@@ -28646,16 +28746,21 @@ msgid ""
 "preset for this purpose. After creating the export preset, click **Export "
 "PCK/ZIP** at the bottom of the Export dialog then choose a destination path."
 msgstr ""
+"下載好伺服器二進位檔後，則需要匯出包含專案資料的 PCK 檔。建議為此建立一個 "
+"Linux 匯出預設。建立好匯出預設後，點擊 [匯出] 對話框下方的 **[匯出 PCK/"
+"ZIP]** 並選擇目標路徑。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid ""
 "The **Export With Debug** checkbox in the file dialog has no bearing on the "
 "final PCK file, so you can leave it as-is."
 msgstr ""
+"檔案對話框中的 **[以偵錯模式匯出]** 勾選框不會影響最終的 PCK 檔，所以可以保留"
+"不動。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:46
 msgid "See :ref:`doc_exporting_projects` for more information."
-msgstr ""
+msgstr "更多資訊請參考 :ref:`doc_exporting_projects` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:50
 msgid ""
@@ -28664,6 +28769,9 @@ msgid ""
 "possibly be. Support for stripping unneeded resources from a PCK for server "
 "usage is planned in a future Godot release."
 msgstr ""
+"PCK 檔案會包含一些在伺服器上通常不需要的資源，如紋理與聲音檔。這表示，PCK 檔"
+"可能比實際可能的大小還要大。從 PCK 檔中將伺服器不需要使用的資源移除的功能已計"
+"劃於未來的 Godot 版本中提供。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:55
 msgid ""
@@ -28671,11 +28779,12 @@ msgid ""
 "client and dedicated server build. This can be useful if you want to ship a "
 "single archive that can be used both as a client and dedicated server."
 msgstr ""
+"往好處想，這樣依賴就可以在用戶端與專屬伺服器建構中使用同一個 PCK 檔。這樣也適"
+"用於在用戶端與專用伺服器上使用同一個壓縮檔的情況。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:60
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "創建內容"
+msgstr "準備伺服器發佈"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:62
 msgid ""
@@ -28686,11 +28795,15 @@ msgid ""
 "with a PCK that has a different name, you can specify the path to the PCK "
 "file using the ``--main-pack`` command-line argument::"
 msgstr ""
+"下載或編譯伺服器二進位後，應將其放置於與匯出的 PCK 檔相同的資料夾中。伺服器二"
+"進位檔的檔名應與 PCK 檔相同 (除了副檔名)。這樣一來 Godot 才能自動偵測要使用"
+"的 PCK。若想用以不同名稱的 PCK 檔來啟動伺服器，則可以使用 ``--main-pack`` 命"
+"令行引數來指定 PCK 檔的路徑："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:72
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:849
 msgid "Next steps"
-msgstr ""
+msgstr "下一步"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
 msgid ""
@@ -28700,6 +28813,10 @@ msgid ""
 "view server logs in a more convenient fashion, with automatic log rotation "
 "provided by systemd."
 msgstr ""
+"在 Linux 中，請確保專用伺服器會在當機或系統重開機的時候重新啟動，可以 `建立 "
+"systemd 服務 (英文) <https://medium.com/@benmorel/creating-a-linux-service-"
+"with-systemd-611b5c8b91d6>`__ 。這樣也可以更方便地檢視伺服器日誌，並且 "
+"systemd 會提供自動日誌切割 (log rotatioin)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:80
 msgid ""
@@ -28708,14 +28825,17 @@ msgid ""
 "This way, it can be used more easily in an automatic scaling setup (which is "
 "outside the scope of this tutorial)."
 msgstr ""
+"若有 Container 的使用經驗，也可以試試將專屬伺服器包裝在 `Docker <https://www."
+"docker.com/>`__ Container 中。這樣一來要設定自動縮放就更簡單了 (但這不在本教"
+"學的討論範圍內)。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "單鍵部署"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "聽起來不錯，那是什麼？"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -28725,6 +28845,9 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
+"這個功能會在有正確配置平台且將支援的裝置連接到電腦上後彈出。由於很多地方都有"
+"可能出問題 (平台可能未正確設定、可能沒正確安裝 SDK、裝置可能為正確設定…等)，"
+"所以讓使用者知道有單鍵部署這功能存在也不錯。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
 msgid ""
@@ -28733,36 +28856,41 @@ msgid ""
 "export, install and run the project (in debug mode) on the device. This "
 "feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
+"有些平台 (在本文撰寫時，只有 Android) 可以在 USB 裝置連接到電腦上時自動偵測，"
+"並提供使用者在該裝置上自動匯出、安裝與 (以除錯模式) 執行專案的功能，用業界的"
+"流行語來說，就是「單鍵部署」。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "單鍵部署步驟"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."
-msgstr ""
+msgstr "設定目標平台。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
 msgid ""
 "Configure device (make sure it's in developer mode, likes the computer, USB "
 "cable is plugged, USB is recognized, etc.)."
 msgstr ""
+"設定裝置 (請確定裝置有在開發者模式中，電腦也一樣，要插入 USB 線、有偵測到 "
+"USB…等)。"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid "Connect the device..."
-msgstr ""
+msgstr "連接裝置..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
-msgstr ""
+msgstr "水哦！"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid "Click once... and deploy!"
-msgstr ""
+msgstr "點一下... 然後就部署了！"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr ""
+msgstr "為 Android 平台自定建構"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -28772,43 +28900,48 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot 中有可以使用自定 Android 樣板的選項。不是使用 Godot 附帶的預編譯樣板，"
+"而是將真正的 Android Java 專案安裝到專案資料夾中。Godot 接著會建構該 Java 專"
+"案，並使用建構結果來在每次匯出專案是作為匯出樣板使用。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
 msgid "There are some reasons why you may want to do this:"
-msgstr ""
+msgstr "有幾個原因會需要這麼做："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
-msgstr ""
+msgstr "要在建構前修改專案。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr ""
+msgstr "建構專案時要加上外部 SDK。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
 "Configuring the custom build is a more or less straightforward process, but "
 "it may take a while to get used to how the Android SDK works."
 msgstr ""
+"設定自定建構不一定是個簡單的過程，可能需要花點時間才能習慣 Android SDK 的使用"
+"方法。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:19
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
-msgstr ""
+msgstr "我們儘量提供該過程的詳細說明。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Set up the custom build environment"
-msgstr ""
+msgstr "設定自定建構環境"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:24
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr ""
+msgstr "前往 [專案]，然後安裝 **自定建構** 樣板："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
 "download them."
-msgstr ""
+msgstr "請確定有下載匯出樣板。若沒下載的話，該選單會協助下載。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid ""
@@ -28818,10 +28951,14 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
+"安裝後會在 ``res://android/build`` 中建立一個基於 Grandle 的 Android 專案，並"
+"在 ``res://android`` 中加上 ``.gdignore`` 來讓 Godot 檔案系統忽略該資料夾。除"
+"非想要 :ref:`建立自己的增益集` 或是真的有需要修改專案，否則沒有必要修改這些檔"
+"案。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:37
 msgid "Install the Android SDK (command-line version)"
-msgstr ""
+msgstr "安裝 Android SDK (命令行版本)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:39
 msgid ""
@@ -28831,10 +28968,13 @@ msgid ""
 "easier, but it requires downloading and installing Android Studio (which may "
 "require more than 1 GB of storage)."
 msgstr ""
+"下面為使用命令行安裝 Android SDK 的步驟。這種做法的好處是比較簡單，而且下載／"
+"安裝的檔案也比較小。雖然可能比較有挑戰性。用 Android Studio 的方法比較簡單，"
+"但會需要下載並安裝 Android Studio (然後可能會需要至少 1 GB 的儲存空間)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid "Install a JDK"
-msgstr ""
+msgstr "安裝 JDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
 msgid ""
@@ -28843,10 +28983,13 @@ msgid ""
 "`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
 "versions won't work."
 msgstr ""
+"Android SDK 沒有附帶 Java，所以會需要手動安裝。需要安裝 Java SDK (**不只是** "
+"執行環境或 JRE)。需要使用 `OpenJDK 8 <https://adoptopenjdk.net/index."
+"html>`__ ，不支援更新的版本。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid "Download the command-line tools"
-msgstr ""
+msgstr "下載命令行工具"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
@@ -28854,36 +28997,44 @@ msgid ""
 "studio/#command-tools>`_. To save disk space, you don't want the full IDE, "
 "so don't download it."
 msgstr ""
+"前往 `Android Studio 下載頁面 <https://developer.android.com/studio/#command-"
+"tools>`_ 。為了節省空間，我們不想下載完整 IDE，所以不要下載。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:61
 msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
+"如果真的想用 Android Studio 的話，請往下閱讀以瞭解如何用 Android Studio 來達"
+"成相同目的。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
 "are listed under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
+"找到該頁面中的 **Command line tools only** (僅命令行工具) 段落。目前，這個段"
+"落列在 **Download Options** (下載選項) 中。稍微往下滾動一點來找。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
 msgid ""
 "Download the ZIP file for your platform, there will be a single ``tools`` "
 "folder inside:"
-msgstr ""
+msgstr "下載使用平台的 ZIP 檔案。該 ZIP 中包含了單一 ``tools`` 資料夾："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
-msgstr ""
+msgstr "接著看起來可能有點容易搞混，但請確實小心遵守下列步驟："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
 msgid ""
 "Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
 "an empty directory). On Windows, the following path is usually good enough:"
 msgstr ""
+"在任意地方建立一個新資料夾，並命名為 ``android-sdk`` (這個資料夾 **必須** 為"
+"空資料夾)。在 Windows 上，通常使用下列路徑就夠了："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid ""
@@ -28891,6 +29042,8 @@ msgid ""
 "%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
 "empty ``android-sdk`` folder."
 msgstr ""
+"若已經有 android-sdk 資料夾的 (通常在 ``%LOCALAPPDATA%\\Android\\Sdk`` )，那"
+"就用這個資料夾就好，不用建立空 ``android-sdk`` 資料夾。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
 msgid ""
@@ -28900,23 +29053,27 @@ msgid ""
 "place ``latest`` into it. Your final directory structure should look like "
 "this :"
 msgstr ""
+"將 Android SDK ZIP 檔解壓縮到 ``android-sdk`` 資料夾中。該資料夾目前應該包含"
+"解壓縮後的資料夾， ``tools`` 。將 ``tools`` 重命名為 ``latest`` 。最後，建立"
+"一個名為 ``cmdline-tools`` 的資料夾，並將 ``latest`` 放到裡面。最終的資料夾架"
+"構應該看起來像這樣："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
+"需要像這樣建立資料夾結構，這樣 sdkmanager (在 bin 資料夾內) 才能正常使用。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
-#, fuzzy
 msgid "Accepting the licenses"
-msgstr "創建內容"
+msgstr "同意授權條款"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 msgid ""
 "To be able to use the Android SDK tools, Google requires you to accept its "
 "licenses."
-msgstr ""
+msgstr "Google 要求要同意授權條款才能使用 Android SDK。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
@@ -28925,25 +29082,30 @@ msgid ""
 "folder (instructions provided for Windows users, as Linux and macOS users "
 "are expected to understand how command line navigation works):"
 msgstr ""
+"要同意授權條款，必須先從命令行中使用特別的引數來執行 ``sdkmanager`` 。前往 "
+"SDK 資料夾中的 ``tools/bin`` 資料夾 (下列解釋了 Windows 中的步驟，我們假設 "
+"Linux 與 macOS 使用者已經瞭解如何在命令行中移動目錄)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:114
 msgid "Then open a command line window:"
-msgstr ""
+msgstr "接著打開命令行視窗："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:118
 msgid "In there, run ``sdkmanager --licenses``:"
-msgstr ""
+msgstr "在此處執行 ``sdkmanager --licenses`` ："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:122
 msgid ""
 "This will ask you to accept several licenses, just write ``y`` and press :"
 "kbd:`Enter` on every of them until it's done."
 msgstr ""
+"接著會要求你同意數個授權條款，請在每次授權條款出現後按 ``y`` 然後點擊 :kbd:"
+"`Enter` 直到完成。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 msgid ""
 "Afterwards, install the platform tools (this is required to install ``adb``):"
-msgstr ""
+msgstr "接著，安裝平台工具 (在安裝 ``adb`` 前必要的步驟)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 msgid ""
@@ -28952,28 +29114,35 @@ msgid ""
 "sdk_root=../../ platform-tools``. These must be executed inside the ``/tools/"
 "bin/`` folder because the path for ``--sdk_root`` is relative."
 msgstr ""
+"如果遇到 ``Warning: Could not create settings`` 錯誤，請試試 ``./sdkmanager "
+"--sdk_root=../../ --licenses`` 或 ``./sdkmanager --sdk_root=../../ platform-"
+"tools`` 。這兩個指令必須在 ``/tools/bin/`` 資料夾中執行，因為 ``--sdk_root`` "
+"的路徑是相對路徑。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
-#, fuzzy
 msgid "Generating the keystore"
-msgstr "創建內容"
+msgstr "產生金鑰儲存區"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
 msgid ""
 "Once the *platform tools* are installed, the last step is to generate a "
 "debug keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
+"**平台工具** 安裝完成後，最後一個步驟就是產生除錯用金鑰儲存區了 (需要有這個才"
+"能建構)。通過下列指令來前往上兩層資料夾："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:141
 msgid "(or open a new shell in the ``android-sdk`` folder)."
-msgstr ""
+msgstr "(或是在 ``android-sdk`` 資料夾中開啟新 Shell)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid ""
 "And you need to input the following line (on Linux and macOS, this should "
 "work out of the box, for Windows there are further instructions below):"
 msgstr ""
+"接著需要輸入下列這行指令 (Linux 與 macOS 中該指令應該可以直接執行，而 "
+"Windows 的話，則請參考更下方的使用步驟)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:150
 msgid ""
@@ -28981,6 +29150,8 @@ msgid ""
 "at the beginning of the line if you use PowerShell; it's not needed for the "
 "regular ``cmd.exe`` console."
 msgstr ""
+"在 Windows 上，必須要提供完整的 Java 路徑。如果使用 PowerShell 的話則必須在這"
+"行開頭加上 ``&`` ，而普通的 ``cmd.exe`` 主控台則不需要。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:154
 msgid ""
@@ -28988,18 +29159,21 @@ msgid ""
 "(by adding ``&`` and the full Java path before ``keytool.exe``). Again, keep "
 "in mind that you need Java installed:"
 msgstr ""
+"再講得清除一點，下列為該如何在 PowerShell 中執行該指令的截圖 (即有加上 ``&`` "
+"以及在 ``keytool.exe`` 前面加上完整的 Java 路徑)。再強調一次，必須要先安裝 "
+"Java："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:171
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:243
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:254
 msgid "(right-click and open the image in a new tab if this appears too small)"
-msgstr ""
+msgstr "(如果圖片太小的話，可以右鍵點擊圖片並選擇在 [新分頁中開啟圖片])"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:164
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:247
 msgid "Setting up Godot"
-msgstr ""
+msgstr "設定 Godot"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:249
@@ -29007,6 +29181,8 @@ msgid ""
 "Go to the **Editor Settings** and set up a few fields in **Export > "
 "Android**. Make sure they look like the following:"
 msgstr ""
+"前往 **[編輯器設定]** 並在 **[Export] > [Android]** 中設定一些欄位。請確保要"
+"像下圖這樣設定："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:173
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:256
@@ -29015,15 +29191,18 @@ msgid ""
 "you originally created, or inside the Java install. For Linux and macOS "
 "users, ``jarsigner`` is often located in ``/usr/bin``."
 msgstr ""
+"就像上圖看到的這樣，大多數的路徑不是在剛才建立的 ``android-sdk`` 資料夾中就是"
+"在 Java 的安裝路徑中。而 Linux 與 macOS 使用者的話，``jarsigner`` 通常會放在 "
+"``/usr/bin`` 中。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:177
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:260
 msgid "With this, you should be all set."
-msgstr ""
+msgstr "這樣一來，應該就準備完畢了。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:181
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "安裝 Android SDK (Android Studio)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
 msgid ""
@@ -29032,55 +29211,65 @@ msgid ""
 "it takes up more disk space. It's also useful if you plan to develop Godot "
 "for Android (modify the Java source code) or if you plan to develop add-ons."
 msgstr ""
+"如果已經通過命令行來完成安裝，則可以直接跳過本段。用 Android Studio 的方法比"
+"較簡單，但會花比較多硬碟空間。這種方法也比較適合有需要為 Android 開發 Godot "
+"的情況 (修改 Java 原始碼) 或有計劃要開發增益集。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
 msgid "Download and install Android Studio"
-msgstr ""
+msgstr "下載與安裝 Android Studio"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:191
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
+"下載最新版本的 Android Studio。安裝是，請注意 **android-sdk`` 資料夾是建立在"
+"哪裡。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"很有趣的部分是，Android 預設建議的安裝路徑包含了空格 (而且不會報錯)。必須修改"
+"該路徑。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
-msgstr ""
+msgstr "無論如何，最好要選擇使用者資料夾內的其他路徑。建議的路徑通常是："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"將 **yourname** 取代為實際的使用者名稱。設定好了之後，在同一個畫面中勾選下表"
+"中的項目："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr "\\ Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "\\ Android SDK Platform"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
+"剩下的都不需要，因為建置系統會自動取得所需要的東西。選擇好了之後，繼續安裝。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
 msgid ""
 "Go to the folder where you installed ``android-sdk`` in the previous step, "
 "use File Explorer and open a command line tool there:"
 msgstr ""
+"前往上一部安裝 ``android-sdk`` 的資料夾。打開檔案總管，並在此處開啟命令行："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
 msgid ""
@@ -29088,6 +29277,8 @@ msgid ""
 "should work out of the box, but on Windows, it needs additional details "
 "(keep reading afterwards)."
 msgstr ""
+"實際要使用的指令列如下。在 Linux 與 macOS 中，應該可以直接使用，但 Windows 則"
+"有細節需注意 (請繼續閱讀)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
 msgid ""
@@ -29096,6 +29287,9 @@ msgid ""
 "for the regular ``cmd.exe`` console). Don't worry, at least by using Android "
 "Studio on Windows, Java comes bundled with it."
 msgstr ""
+"在 Windows 上必須提供完整的 Java 路徑 (而如果是用 PowerShell，則必須在開頭加"
+"上 ``&`` ，一般的 ``cmd.exe`` 主控台則不需要) 。別擔心，如果是用 Windows 上"
+"的 SDK 的話，有附帶 Java。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
 msgid ""
@@ -29104,16 +29298,21 @@ msgid ""
 "remove ``&`` if you use ``cmd.exe``). It uses a path to the Java version "
 "that comes with Android Studio:"
 msgstr ""
+"講得更清楚一點，下圖為在 PowerShell 中使用該指令的截圖 (在前面加上了 ``&`` 並"
+"在 ``keytool.exe`` 前面使用了完整的 Java 路徑。若使用 ``cmd.exe`` 則不要加上 "
+"``&``)。下圖中使用了 Android Studio 附帶的 Java 路徑："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
 msgid "Enabling the custom build and exporting"
-msgstr ""
+msgstr "啟用自定建構與匯出"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
+"在 **[專案] > [匯出]** 中設定好 Android 專案後，也需要啟用 **Custom Build** "
+"："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
 msgid ""
@@ -29121,16 +29320,18 @@ msgid ""
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
+"接著，只要匯出專案或單鍵部署時，就會呼叫 ``Gradle <https://gradle.org/>`_ 建"
+"構系統，並產生新的樣板 (該視窗每次都會出現)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
-msgstr ""
+msgstr "接著會自動使用樣板建構，不需要進一步設定。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
-msgstr ""
+msgstr "為 Windows 更改應用程式圖示"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -29138,36 +29339,40 @@ msgid ""
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
+"預設情況下，匯出專案的圖示會是 Godot 圖示。通常我們會想為專案更改圖示。在 "
+"Windows 有兩種類型的圖示可以更改：檔案圖示與工作列圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "更改工作列圖示"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
-msgstr ""
+msgstr "工作列圖示即為專案執行時顯示在工作列上的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Icon**. Click on the folder icon and select your desired icon."
 msgstr ""
+"要更改工作列圖示，請前往 **[專案] → [專案設定] → [Application] → [Config] → "
+"[Icon]** 。點擊資料夾圖示並選擇想要的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "This is also the icon that gets displayed in the Godot project list."
-msgstr ""
+msgstr "該圖示也是用來顯示在 Godot 專案列表的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
 msgid "Changing the file icon"
-msgstr ""
+msgstr "更改檔案圖示"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
-msgstr ""
+msgstr "檔案圖示即為啟動專案時點擊的執行檔的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
 msgid ""
@@ -29175,6 +29380,8 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
+"與匯出選項中選擇圖示前，還必須要安裝一個名為 **rcedit** 的額外工具。可以在 `"
+"此處 <https://github.com/electron/rcedit/releases>`_ 下載。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid ""
@@ -29183,12 +29390,17 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the rcedit executable."
 msgstr ""
+"下載後，需要讓 Godot 知道電腦上的 rcedit 執行檔路徑。前往 **[編輯器] → [編輯"
+"器設定] → [Editor] → [Windows]** 。點擊 **rcedit** 欄位的資料夾圖示。前往並選"
+"擇 rcedit 執行檔。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
 msgstr ""
+"Linux 與 macOS 使用者還需要安裝 `WINE <https://www.winehq.org/>`_ 來使用 "
+"rcedit。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
 msgid ""
@@ -29197,6 +29409,9 @@ msgid ""
 "Export**. Assuming you have already created a Windows Desktop preset, select "
 "your icon in ICO format in the **Application → Icon** field."
 msgstr ""
+"現在已經準備好所有更改檔案圖示所需的準備了。要更改檔案圖示，需要在匯出時指定"
+"圖示。前往 **[專案] → [匯出]** 。這裡我們假設已有 Windows 桌面預設設定。在 "
+"**[Application] → [Icon]** 欄位中選擇 ICO 格式的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
 msgid ""
@@ -29204,19 +29419,21 @@ msgid ""
 "information, please refer to `this tutorial <http://skyboygames.com/easily-"
 "create-a-windows-app-icon-with-gimp/>`_."
 msgstr ""
+"也可以使用如 GIMP 之類的軟體來匯出 ICO 圖片。更多資訊請參考 `這篇教學 (英文) "
+"<http://skyboygames.com/easily-create-a-windows-app-icon-with-gimp/>`_ 。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid "Testing the result"
-msgstr ""
+msgstr "測試結果"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
-msgstr ""
+msgstr "現在可以匯出專案了。若一切正常，應該可以看到這個結果："
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
 msgid "ICO file requirements"
-msgstr ""
+msgstr "ICO 檔案需求"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
 msgid ""
@@ -29224,6 +29441,8 @@ msgid ""
 "wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
+"無論是使用哪個程式來建立 `ICO 檔案 <https://zh.wikipedia.org/zh-tw/ICO>`_ ，"
+"都需要確保有符合一些需求，才能讓圖示 (與執行檔) 能在 Windows 上使用。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
 msgid ""
@@ -29231,12 +29450,15 @@ msgid ""
 "threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
 "stackoverflow.com/q/40749785/>`_."
 msgstr ""
+"就像下列的 Stack Overflow 討論串中說的一樣，搞這個有點麻煩：`討論串一 (英文) "
+"<https://stackoverflow.com/q/3236115/>`_ 、 `討論串二 (英文) <https://"
+"stackoverflow.com/q/40749785/>`_ 。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
 msgid ""
 "Your ICO file should at least contain icons in the following resolutions: "
 "16×16, 48×48 and 256×256."
-msgstr ""
+msgstr "ICO 當應至少包含下列解析圖的圖示：16×16, 48×48 與 256×256。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
@@ -29244,18 +29466,23 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
+"若要完全支援高 DPI 螢幕，則下列大小為要在 Windows 10 上支援的完整列表：10: "
+"16, 20, 24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, 63, 84 以及一個大於 255 "
+"像素的圖示 (如 256, 512 或 1024)。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
+"也可以使用這個 `ImageMagick <https://www.imagemagick.org/>`_ 指令來將 PNG 圖"
+"片轉換為對 hiDPI 友善的 ICO 檔案："
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:6
 msgid ""
 "This series is a collection of best practices to help you work efficiently "
 "with Godot."
-msgstr ""
+msgstr "本系列是一些可以協助你更有效率地使用 Godot 的最佳實踐。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:9
 msgid ""
@@ -29264,12 +29491,16 @@ msgid ""
 "pros and cons, and they can be hard to weigh until you've worked with the "
 "engine for long enough."
 msgstr ""
+"Godot 中對於要如何組織程式架構以及將程式分解為小場景中有賦予了極大的彈性。每"
+"種方法都各有其利弊，因此在長期使用 Godot 前，很難衡量要使用哪種組織方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:13
 msgid ""
 "There are always many ways to structure your code and solve specific "
 "programming problems. It would be impossible to cover them all here."
 msgstr ""
+"這種能解決特定程式設計問題的組織程式碼方法有很多。因此沒辦法全部都在這裡介"
+"紹。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:16
 msgid ""
@@ -29278,6 +29509,9 @@ msgid ""
 "pros and cons of each option, and highlight the best course of action for "
 "the problem at hand."
 msgstr ""
+"這也是為什麼這裡的教學都是從現實世界中的例子開始介紹的。我們會將各種問題分解"
+"為基本的問題，並提出建議解決方案，然後分析各個選項的利弊，並強調出該問題的最"
+"佳解法。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:20
 msgid ""
@@ -29286,6 +29520,9 @@ msgid ""
 "Oriented programming languages. It will help you make sense of the rest of "
 "the series."
 msgstr ""
+"建議先閱讀 :ref:`doc_what_are_godot_classes` 。該文章解釋了 Godot 中的節點與"
+"場景與其他物件導向程式語言中的類別與物件有何關係。閱讀該文章有助於瞭解本系列"
+"剩下的部分。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:26
 msgid ""
@@ -29294,10 +29531,15 @@ msgid ""
 "Single_responsibility_principle>`_ principle and `encapsulation <https://en."
 "wikipedia.org/wiki/Encapsulation_(computer_programming)>`_."
 msgstr ""
+"Godot 中的最佳實踐仰賴於物件導向設計原則。我們使用如 `單一職責 <https://zh."
+"wikipedia.org/zh-tw/%E5%8D%95%E4%B8%80%E5%8A%9F%E8%83%BD%E5%8E%9F"
+"%E5%88%99>`_ 原則與 `封裝 <https://zh.wikipedia.org/wiki/"
+"%E5%B0%81%E8%A3%9D_(%E7%89%A9%E4%BB%B6%E5%B0%8E%E5%90%91%E7%A8%8B%E5%BC%8F"
+"%E8%A8%AD%E8%A8%88)>`_ 之類的工具。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "Godot scenes and scripts are classes"
-msgstr ""
+msgstr "Godot 中的場景與物件都是類別"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
@@ -29307,6 +29549,10 @@ msgid ""
 "while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
 "Imperative_programming>`_."
 msgstr ""
+"在 Godot 中，腳本與場景都可以等同於物件導向程式設計語言中的類別。主要的不同"
+"是，場景是 `宣告型程式碼 <https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%91%8A"
+"%E5%BC%8F%E7%B7%A8%E7%A8%8B>`_ ，而腳本可以包含 `指令式程式碼 <https://zh."
+"wikipedia.org/zh-tw/%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B>`_ 。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
 msgid ""
@@ -29314,6 +29560,8 @@ msgid ""
 "Oriented design principles to the scenes, nodes, or scripts that make up "
 "your game."
 msgstr ""
+"因此，在 Godot 中的許多最佳實踐都就只是將物件導向設計原則套用在構成遊戲的場"
+"景、節點與腳本上而已。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
 msgid ""
@@ -29321,10 +29569,12 @@ msgid ""
 "help you get a sense of how Godot works under the hood, and to help you "
 "better understand where some of this series' best practices come from."
 msgstr ""
+"本指南解釋了腳本與場景在引擎核心中是如何運作的，來協助你瞭解 Godot 實際是怎麼"
+"運作的，並幫助你更好地理解本系列中的一些最佳實踐是怎麼來的。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
 msgid "Making sense of classes in Godot"
-msgstr ""
+msgstr "瞭解 Godot 中的類別"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
 msgid ""
@@ -29333,6 +29583,9 @@ msgid ""
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
+"Godot Engine 提供了一些如 :ref:`Node <class_Node>` 之類的內建類別。使用者建立"
+"的型別理論上不是類別，而是用來告訴引擎要在內建類別上進行一系列初始化操作的資"
+"源。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
 msgid ""
@@ -29340,24 +29593,25 @@ msgid ""
 "ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
 "class information. ``ClassDB`` contains information about classes like:"
 msgstr ""
+"Godot 的內部類別有一些向 :ref:`ClassDB <class_ClassDB>` 註冊類別資料的方法。"
+"通過 ClassDB 這個資料庫便能在執行時存取類別資訊。``ClassDB`` 包含了如下類別資"
+"訊："
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
 msgid "properties"
-msgstr ""
+msgstr "屬性"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
 msgid "methods"
-msgstr ""
+msgstr "方法"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
-#, fuzzy
 msgid "constants"
-msgstr "定數"
+msgstr "常數"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-#, fuzzy
 msgid "signals"
-msgstr "信號"
+msgstr "訊號"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
 msgid ""
@@ -29366,6 +29620,9 @@ msgid ""
 "database's records and the records of the Object's base types to see if the "
 "Object supports the operation."
 msgstr ""
+"``ClassDB`` 即為物件在執行如存取屬性或呼叫方法等特定操作時用來檢查的地方。"
+"``ClassDB`` 會檢查資料庫記錄與物件的基礎型別，來確認該物件是否支援要執行的操"
+"作。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
 msgid ""
@@ -29375,6 +29632,10 @@ msgid ""
 "signals available from the ``ClassDB`` by attaching a :ref:`Script "
 "<class_Script>` to your node."
 msgstr ""
+"在引擎方面，所有類別都定義了一個靜態 ``_bind_methods()`` 函式，用來描述該類別"
+"要將什麼 C++ 內容註冊到資料庫裡，以及該如何向資料庫註冊。當在使用引擎時，可以"
+"通過附加 :ref:`Script <class_Script>` 到節點上來擴充 ``ClassDB`` 內可用的方"
+"法、屬性與訊號。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
 msgid ""
@@ -29384,6 +29645,9 @@ msgid ""
 "properties the Object fetches from the ClassDB. The same is true for other "
 "declarative code."
 msgstr ""
+"物件會先檢查附加在自己身上的腳本然後再檢查資料庫。因此腳本可以覆寫內建函式。"
+"若腳本有定義 ``_get_property_list()`` 方法，則 Godot 會將該方法回傳的列表附加"
+"到該物件從 ClassDB 取得的列表後面。其他宣告型程式碼也一樣。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -29393,16 +29657,21 @@ msgid ""
 "Object to defer to the script's content where the engine logic deems "
 "appropriate."
 msgstr ""
+"即時腳本不是從內建型別繼承來的，即不以 ``extends 關鍵字開始的腳本，也會隱含性"
+"地自動繼承引擎的基礎 :ref:`Reference <class_Reference>` 類別。這樣一來便能讓"
+"該類別在引擎覺得合邏輯的地方來遵守腳本內容。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid ""
 "As a result, you can instance scripts without the ``extends`` keyword from "
 "code, but you cannot attach them to a :ref:`Node <class_Node>`"
 msgstr ""
+"因此，可以在程式碼中實體化沒有 ``extends`` 關鍵字的腳本，但無法將這個腳本附加"
+"到 :ref:`節點 <class_Node>` 上"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "Scripting performances and PackedScene"
-msgstr ""
+msgstr "腳本效能與 PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
 msgid ""
@@ -29410,6 +29679,8 @@ msgid ""
 "grows much, much larger. Creating node hierarchies demonstrates this. Each "
 "individual Node's logic could be several hundred lines of code in length."
 msgstr ""
+"隨著物件的大小增長，要建立物件所需的腳本也變得越來越大。建立節點階層即可重現"
+"此狀況。個別節點的邏輯可為數百行程式碼。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
@@ -29418,6 +29689,10 @@ msgid ""
 "sets its future parent as its owner so it gets saved to disk along with it, "
 "and finally adds it as a child of the ``Main`` node:"
 msgstr ""
+"來看看一個建立 ``Node`` 子節點的簡單範例。下列程式碼會建立一個新的 ``Node`` "
+"節點、更改名稱、為該節點指派腳本、然後將新節點的母節點設為目前節點，這樣一來"
+"該節點才會跟著一起保存到硬碟上，然後最後才將 ``Main`` 節點作為目前節點的腳本"
+"保存："
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
 msgid ""
@@ -29425,6 +29700,8 @@ msgid ""
 "makes a separate call to the scripting API which leads to many \"look-ups\" "
 "on the back-end to find the logic to execute."
 msgstr ""
+"像這樣的程式碼會比引擎端 C++ 程式碼還要慢很多。每個改動都會需要額外的腳本 "
+"API 呼叫來向後端「查詢」要執行什麼邏輯。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
 msgid ""
@@ -29433,10 +29710,13 @@ msgid ""
 "that use serialized data to create objects. The engine can process scenes in "
 "batches on the back-end and provide much better performance than scripts."
 msgstr ""
+"場景系統可以避免這種效能問題。 :ref:`PackedScene <class_PackedScene>` ，即，"
+"場景繼承的基礎型別，是一種資源，可以用來序列化資料並建立物件。引擎可以在後端"
+"批次處理場景，並可提供比腳本好很多的效能。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
 msgid "Scenes and scripts are objects"
-msgstr ""
+msgstr "場景與腳本是物件"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
 msgid ""
@@ -29445,47 +29725,52 @@ msgid ""
 "the sub-nodes. This means that the scene is often an extension of the "
 "script's declarative code."
 msgstr ""
+"為什麼這些東西對場景組織來說有這麼重要？因為場景 **是** 物件。大家通常會將場"
+"景與有腳本的根節點一起使用，然後用根節點上的腳本來使用子節點。這表示，場景通"
+"常算是腳本中宣告型程式碼的延伸。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
 msgid "The content of a scene helps to define:"
-msgstr ""
+msgstr "場景的內容可以協助定義："
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
 msgid "What nodes are available to the script"
-msgstr ""
+msgstr "腳本中可以使用哪些節點"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
 msgid "How they are organized"
-msgstr ""
+msgstr "節點如何組織"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
 msgid "How they are initialized"
-msgstr ""
+msgstr "節點如何初始化"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
 msgid "What signal connections they have with each other"
-msgstr ""
+msgstr "節點之間有用什麼訊號連接"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
 msgid ""
 "Many Object-Oriented principles which apply to written code *also* apply to "
 "scenes."
-msgstr ""
+msgstr "許多用於撰寫程式碼的物件導向原則 **也** 適用於場景中。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
 msgid ""
 "The scene is *always an extension of the script attached to its root node*. "
 "You can see all the nodes it contains as part of a single class."
 msgstr ""
+"場景 **永遠是附加到場景根節點的腳本的延伸** 。可以將場景中包含的所有節點視為"
+"單一類別的一部分。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
 msgid ""
 "Most of the tips and techniques explained in this series will build on this."
-msgstr ""
+msgstr "本系列中的許多提示與技術解釋都以此為基礎。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
 msgid "Scene organization"
-msgstr ""
+msgstr "場景組織"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -29493,16 +29778,18 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"本文章討論與如何有效率地組織場景內容有關的主題。應該使用哪個節點？要將這些節"
+"點放到哪裡？各個節點要如何互動？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "如何有效地建立關係"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
-msgstr ""
+msgstr "當 Godot 使用者開始製作自己的場景時，通常會遇到下列問題："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -29514,6 +29801,10 @@ msgid ""
 "because the node paths do not find their targets and signal connections "
 "established in the editor break."
 msgstr ""
+"建立好第一個場景並往場景中加上內容，最後會開始覺得場景逐漸變得複雜，應該要把"
+"東西都切割成小塊，所以就將場景中的各個分支都保存為獨立的場景。但是，接著就會"
+"發現之前在腳本裡直接引用其他節點的方法不能用了。在多個地方重複使用場景也會出"
+"問題，因為沒辦法用節點路徑找到目標，然後在編輯器中建的訊號連接也會斷開。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -29522,6 +29813,8 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"要解決這些問題，就必須要讓子場景的實體化與子場景所在環境的詳細資訊無關。使用"
+"者必須要能確定子場景建立時不會因為使用子場景的方式不同而壞掉。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -29530,12 +29823,16 @@ msgid ""
 "Loose_coupling>`_ to other parts of the codebase. This keeps the size of "
 "objects small (for maintainability) and improves their reusability."
 msgstr ""
+"OOP 中要考慮的最重要的一點就是要維持一個專注且單一目的的類別，並與程式碼中其"
+"他部分 `鬆散耦合 <https://zh.wikipedia.org/zh-tw/%E6%9D%BE"
+"%E8%80%A6%E5%90%88>`_ 。這樣可以讓物件的大小維持得比較小 (為了可維護性) 並提"
+"高類別的可用性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:35
 msgid ""
 "These OOP best practices have *several* implications for best practices in "
 "scene structure and script usage."
-msgstr ""
+msgstr "這些 OOP 最佳實踐在場景結構與腳本使用上實際是 **數種** 最佳實踐。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:38
 msgid ""
@@ -29543,6 +29840,8 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**在設計場景時，應該儘可能地讓場景沒有其他相依性。** 也就是說，建立的場景應該"
+"要將所有所需的東西都包含在場景內部。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:42
 msgid ""
@@ -29553,12 +29852,16 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"若場景必須要與外部的東西互動，則有經驗的工程師推薦使用 `依賴注入 <https://zh."
+"wikipedia.org/zh-tw/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5>`_ 。這個技術是使用"
+"高等 API 來提動低等 API 的相依性。為什麼要這麼做？因為仰賴外部環境的類別可能"
+"會不小心觸發 Bug 或未預期的行為。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:49
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
-msgstr ""
+msgstr "為此，必須將資料公開並讓這些類別通過母級上下文來初始化："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
 msgid ""
@@ -29566,24 +29869,29 @@ msgid ""
 "to behavior, not start it. Note that signal names are usually past-tense "
 "verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"連接訊號。非常安全，但訊號應該只用來「回覆」一個行為，而不是執行行為。請注"
+"意，訊號名稱通常使用過去式動詞，如「entered」、「skill_activated」或"
+"「item_collected」。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:73
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "呼叫方法。用於開始一個行為。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:92
 msgid ""
 "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
 "ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
+"初始化 :ref:`FuncRef <class_FuncRef>` 屬性。比使用方法來得安全，因為不需在意"
+"方法的所有權。用來開始行為。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:112
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "初始化 Node 或其他 Object 參照。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:131
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "初始化 NodePath。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
 msgid ""
@@ -29591,6 +29899,9 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"通過上面幾個步驟，便能將來自子節點的存取點隱藏起來。這樣便可以確保子節點對環"
+"境來說是 **鬆散耦合** 的。開發人員便可以在其他的地方重複使用子節點，而無需修"
+"改子節點的 API。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:156
 msgid ""
@@ -29599,6 +29910,9 @@ msgid ""
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"雖然上述的例子中只表示了母子關係，但同樣的原則也可以用在所有物件關係上。有同"
+"級節點的節點應該只需要注意層級結構，因為祖先節點會居中協調這些節點間的通訊與"
+"參照。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:203
 msgid ""
@@ -29606,6 +29920,8 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"同樣的原則也可套用在與其他物件有相依性關係的非節點 (Node) 物件。無論那個節點"
+"實際上擁有這些節點，都應該負責管理這些節點間的關係。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:209
 msgid ""
@@ -29618,6 +29934,11 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"建議應儘量將資料保存在內部 (場景內部)，雖然將相依性放在外部脈絡上一樣代表這個"
+"節點需要依賴環境中的某些東西，就算依賴的這個外部脈絡是鬆散耦合的也一樣。專案"
+"的設計理念應該避免這種狀況發生。若不避免的話，則程式碼的繼承關係也會強迫開發"
+"人員使用說明文件來追蹤物件在微觀尺度上的關係。這也可以稱為是開發地獄。撰寫需"
+"要依賴外部文件才能安全使用的程式碼很容易就會發生錯誤。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:218
 msgid ""
@@ -29632,6 +29953,13 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"要避免建立與維護這種文件，則必須要將相依性節點 (上面稱的「節點」) 轉換為實"
+"作 :ref:`_get_configuration_warning() "
+"<class_Node_method__get_configuration_warning>` 的工具腳本。從這個函式中回傳"
+"非空字串就能讓場景 Dock 產生一個警告圖示，並將該字串顯示為工具提示。這個圖示"
+"也是如 :ref:`Area2D <class_Area2D>` 節點沒有定義子級 :ref:"
+"`CollisionShape2D<class_CollisionShape2D>` 節點顯示的警告圖示。編輯器接著就通"
+"過腳本程式碼來讓場景自己說明自己。不需要通過文件來複製內容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:229
 msgid ""
@@ -29641,6 +29969,9 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"像這樣的 GUI 可以更好的通知專案使用者有關節點的重要訊息。節點有外部相依性嗎？"
+"相依性有滿足嗎？其他的程式設計師，尤其是設計師與作家，會需要更清楚的指示來瞭"
+"解如何正確設定這些節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:234
 msgid ""
@@ -29653,32 +29984,44 @@ msgid ""
 "indirection is to avoid ending up in a situation where changing one class "
 "results in adversely effecting other classes."
 msgstr ""
+"那麼，為什麼還要搞得這麼複雜呢？這個嘛，因為場景在獨自運作的時候效果最好。若"
+"沒辦法獨自運作的話，則匿名地與其他場景運作則是次要最好的 (通過最小限度的硬參"
+"照，即鬆散耦合)。當然，當這些改動會導致類別與其他場景以無法預期的方式互動時就"
+"不可避免地會需要對類別做出修改，那麼接下來事情便開始崩潰。用這些拐彎抹角的方"
+"式的重點就是要避免造成這種狀況，也就是一個類別負面地影響了其他類別。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
 msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"節點與場景，作為引擎類別的延伸，應該要能套用 **所有** OOP 原則。這些原則的例"
+"子包含..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 msgstr ""
+"`SOLID <https://zh.wikipedia.org/zh-tw/SOLID_(%E9%9D%A2%E5%90%91%E5%AF"
+"%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1)>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 msgstr ""
+"`DRY <https://zh.wikipedia.org/zh-tw/%E4%B8%80%E6%AC%A1%E4%B8%94%E4%BB"
+"%85%E4%B8%80%E6%AC%A1>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS <https://zh.wikipedia.org/zh-tw/KISS%E5%8E%9F%E5%88%99>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:249
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
+"`YAGNI (英文) <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
 msgid "Choosing a node tree structure"
-msgstr ""
+msgstr "選擇一種節點樹架構"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:254
 msgid ""
@@ -29689,6 +30032,10 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"好的，所以開發人員開始開發遊戲，然後因為巨大的問題而止步不前。開發人員可能知"
+"道自己想做什麼，以及想要什麼系統，但要把這些東西都放在 **哪裡** 呢？呃... 人"
+"要怎麼做遊戲取決於自己。我們有無數種建構節點樹的方法，但，如果你不確定的話，"
+"這篇有用的教學提供了一個結構良好又簡單的架構來起手。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
 msgid ""
@@ -29699,17 +30046,21 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"遊戲應該都要以某種「進入點」。進入點就是開發人員可以瞭若指掌地追蹤各種東西從"
+"哪裡來的地方，這樣便能追蹤邏輯跑去哪裡。這裡也是提供能俯瞰程式中所有其他資料"
+"與邏輯的地方。在傳統的應用程式中，進入點會是「main」函式。而在本例中，則是 "
+"Main 節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Node「Main」(main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:269
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
-msgstr ""
+msgstr "``main.gd`` 節點是遊戲的主要控制器。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:272
 msgid ""
@@ -29717,14 +30068,16 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"接著我們會需要遊戲中真正的「世界」(2D 或 3D 世界)。可以是 Main 的子節點。另"
+"外，我們還需要遊戲的主 GUI 來管理專案所需的各種選單與小工具。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial「World」(game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Control「GUI」(gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:280
 msgid ""
@@ -29732,30 +30085,33 @@ msgid ""
 "node. :ref:`Changing scenes manually <doc_change_scenes_manually>` gives "
 "users full control over how their game world transitions."
 msgstr ""
+"當改變關卡時，我們就可以把「World」節點的子節點換掉。通過 :ref:`手動更改場景 "
+"<doc_change_scenes_manually>` 就能提供能完整控制遊戲世界過場的方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:284
 msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
-msgstr ""
+msgstr "下一步就是要想想專案需要的遊戲系統是怎麼樣的。如果需要這樣一個系統..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "能在內部追蹤所有的資料"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should be globally accessible"
-msgstr ""
+msgstr "可以在所有地方存取"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:289
 msgid "should exist in isolation"
-msgstr ""
+msgstr "獨立存在"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:291
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"... 則應該要建立一個 :ref:`Autoload「單例」節點 <doc_singletons_autoload>` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:295
 msgid ""
@@ -29765,6 +30121,9 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"對於比較小的遊戲，有另一種控制比較少東西的替代方案為用一個只呼叫 :ref:"
+"`SceneTree.change_scene() <class_SceneTree_method_change_scene>` 的「Game」單"
+"例來切換主要場景的內容。這種結構或多或少將「World」場景作為主要遊戲節點保留。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
 msgid ""
@@ -29772,6 +30131,8 @@ msgid ""
 "\"World\"; or be manually added as a direct child of the root. Otherwise, "
 "the GUI nodes would also delete themselves during scene transitions."
 msgstr ""
+"所有的 GUI 也都需要是單例。要嘛是會臨時放在「World」中的一部分，要嘛就是手動"
+"新增為根節點的子節點。否則，GUI 節點就必須在場景轉場時將自己刪除。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
 msgid ""
@@ -29780,6 +30141,9 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"如果專案中的系統會修改其他系統資料，則必須要將這些系統定義為自己的腳本或場"
+"景，而不是使用 Autoload。更多有關這麼做的原因，請參考 :ref:`《Autoload vs. 內"
+"部節點》 <doc_autoloads_versus_internal_nodes>` 文件。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:312
 msgid ""
@@ -29790,6 +30154,9 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"遊戲中的每個子系統也都應該在 SceneTree 中有自己的段落。開發人員應該使只在節點"
+"是對其母節點有效果時才使用子母關係。在移除母節點時就代表應該合理地移除子節點"
+"嗎？如果不應該的話，則應該在層級關係中使用同級節點或其他的關係。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:320
 msgid ""
@@ -29801,17 +30168,22 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"在某些情況下，我們會需要這些分離的節點來 **同時** 讓這些節點互相關聯。可以為"
+"此目的使用 :ref:`RemoteTransform <class_RemoteTransform>` / :ref:"
+"`RemoteTransform2D <class_RemoteTransform2D>` 節點。這兩個類別能讓目標節點通"
+"過指定條件來從 Remote\\* 節點中繼承選定的變換節點。要指派 ``目標`` :ref:"
+"`NodePath <class_NodePath>` ，請使用下列其中一種方法："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
-msgstr ""
+msgstr "可信的第三方，可能是母節點，來居中分配。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:329
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
-msgstr ""
+msgstr "用群組，來輕鬆地取得到目標節點的參照 (假設只會有一個目標)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
 msgid ""
@@ -29819,49 +30191,52 @@ msgid ""
 "one must micro-manage when a node must move around the SceneTree to preserve "
 "itself. For example..."
 msgstr ""
+"那麼什麼時候該這麼做呢？嗯... 這就很主觀了。當節點必須在 SceneTree 場景中到處"
+"移動來保留自己時，出現必須要管理的細小部分就會遇到兩難。如..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "將「玩家」節點加到「房間」中。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid "Need to change rooms, so one must delete the current room."
-msgstr ""
+msgstr "要換房間，所以必須要刪除目前的房間。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:338
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
-msgstr ""
+msgstr "在房間刪除之前，必須先保留與／或移動玩家。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:340
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "需要注意記憶體嗎？"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:342
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"若不用的話，可以直接建立兩個房間，然後移動玩家，然後刪除舊房間。沒問題。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "如果要注意記憶體使用的話，則..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "將玩家移動到樹狀結構中其他地方。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Delete the room."
-msgstr ""
+msgstr "刪除房間。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "實體化並建立新的房間。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:350
 msgid "Re-add the player."
-msgstr ""
+msgstr "重新加回玩家。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:352
 msgid ""
@@ -29872,32 +30247,39 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"問題是，玩家在這裡是個「特例」，這個特例是開發人員必須要 **知道** 在專案中要"
+"這樣處理玩家。因此，要在團隊中可靠地分享這個情報的方法就只有 **寫在文件** 裡"
+"了。一直在文件裡寫細節是很危險的。這麼做會造成可維護性降低，並減少程式碼的可"
+"讀性，然後讓專案所需的知識不必要地成長。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
+"在有更大型素材的更複雜的遊戲中，最好就一直將玩家放在 SceneTree 中一個完全不同"
+"的地方。這樣一來："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "More consistency."
-msgstr ""
+msgstr "一致性更高。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid "No \"special cases\" that must be documented and maintained somewhere."
-msgstr ""
+msgstr "沒有必須要寫成文件並在其他地方維護的「特例」。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:364
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "不會因為沒有注意到細節而有發生錯誤的機會。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:367
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"相較而來，若有需要一個 **不繼承** 轉換過的母節點的子節點，則有下列方法："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:370
 msgid ""
@@ -29905,6 +30287,8 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**宣告型** 解法：在這兩個節點間放一個 :ref:`Node <class_Node>` 。由於節點沒有"
+"變換，所以 Node 不會將這個資訊傳送給子節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:373
 msgid ""
@@ -29913,6 +30297,10 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**指令式** 解法：在 :ref:`CanvasItem "
+"<class_CanvasItem_method_set_as_toplevel>` 或 :ref:`Spatial "
+"<class_Spatial_method_set_as_toplevel>` 上使用 ``set_as_toplover`` Setter。這"
+"樣一來便可讓節點忽略其繼承的變換。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:380
 msgid ""
@@ -29923,6 +30311,10 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"在製作網路遊戲時，請注意哪些節點與遊戲系統是關係到所有玩家的，以及哪些節點與"
+"遊戲系統只與權威伺服器有關。例如，使用者不需要有每個玩家的"
+"「PlayerController」邏輯副本，而只需要自己的。因此，將這些東西從「World」中分"
+"開來在獨立的分支中有助於簡化管理遊戲連線以及之類的東西。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:387
 msgid ""
@@ -29932,6 +30324,10 @@ msgid ""
 "they are dependent, then it stands to reason that they should be children of "
 "that parent (and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"場景組織的關鍵就是要以關聯的方式來考量 SceneTree 而不是用空間性來考量。節點是"
+"否會仰賴母節點的存在？若不仰賴，則節點可以就完全可以在別的地方活得好好的。若"
+"有依賴母節點，則這種依賴關係就是子節點要是母節點的子節點的原因 (而且，顯然必"
+"須是母節點的場景中的一部分，如果還不是母節點的場景中的一部分的話)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:393
 msgid ""
@@ -29940,16 +30336,21 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"這代表節點自己就是元件嗎？絕對不是。Godot 的節點樹構成了一種聚合關係，而不是"
+"組合關係。但，由於我們還是有能到處移動節點的靈活性，所以預設情況下這種移動是"
+"不必要的。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:4
 msgid "When to use scenes versus scripts"
-msgstr ""
+msgstr "何時使用場景 v.s. 腳本"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:6
 msgid ""
 "We've already covered how scenes and scripts are different. Scripts define "
 "an engine class extension with imperative code, scenes with declarative code."
 msgstr ""
+"我們已經解釋了場景與腳本有什麼不同。腳本通過了指令式程式碼定義了引擎類別的延"
+"伸，而場景則是用宣告性程式碼定義。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:10
 msgid ""
@@ -29958,10 +30359,13 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"因此，每個系統的能力都不同。場景可以定義要如何擴充類別初始化，而不是類別實際"
+"的行為。場景通常與腳本一起結合使用，這樣場景就可以作為腳本中宣告性程式碼的擴"
+"充來使用。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
-msgstr ""
+msgstr "匿名型別"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:18
 msgid ""
@@ -29969,6 +30373,8 @@ msgid ""
 "alone. This is, in essence, what the Godot Editor does, only in the C++ "
 "constructor of its objects."
 msgstr ""
+"完全 **可以** 只使用腳本來定義場景。從本質上來說，這就是 Godot Editor 做的，"
+"只是是使用物件的 C++ 建構函式而已。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:22
 msgid ""
@@ -29976,6 +30382,8 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"但是，選擇要使用哪種方法可能很難決定。建立腳本實體就與建立引擎內類別相同，而"
+"處理場景則需修改 API："
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -29983,10 +30391,12 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"另外，使用腳本也會比場景慢一點，這就是引擎與腳本程式碼速度的不同。越大與越複"
+"雜的節點，就更應該使用場景來建立。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 msgid "Named types"
-msgstr ""
+msgstr "有名稱的型別"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:66
 msgid ""
@@ -29995,48 +30405,51 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"有些情況下，使用者可以在編輯器中將腳本註冊為新型別。這樣在節點或資源建立視窗"
+"中就可以顯示該腳本為新型別，並帶有一個可選的圖示。這些時候，使用者能對腳本做"
+"的事就更流暢了。而不需要..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "知道要使用哪個腳本的基本型別。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 msgid "Create an instance of that base type."
-msgstr ""
+msgstr "建立該基礎型別的實體。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
 msgid "Add the script to the node."
-msgstr ""
+msgstr "將腳本附加到節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(拖放方法)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 msgid "Find the script in the FileSystem dock."
-msgstr ""
+msgstr "在檔案系統 Dock 中找到腳本。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:81
 msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr ""
+msgstr "將腳本拖放到場景 Dock 中的節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(屬性方法)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
-msgstr ""
+msgstr "下拉到屬性面板底部，並找到 ``script`` 屬性並選擇。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "從下拉選單中點擊 [讀取]。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 msgid "Select the script from the file dialog."
-msgstr ""
+msgstr "從檔案對話框中選擇腳本。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:91
 msgid ""
@@ -30045,83 +30458,88 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"使用已註冊的腳本，則腳本型別就會與其他系統內的節點與資源一樣變成建立選項。我"
+"們就不需要再進行上述步驟了。建立對話框中甚至還有一個搜尋框可以按名稱搜尋型"
+"別。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 msgid "There are two systems for registering types..."
-msgstr ""
+msgstr "有兩種系統可以註冊型別..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:98
 msgid ":ref:`Custom Types <doc_making_plugins>`"
-msgstr ""
+msgstr ":ref:`自定型別 <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "限編輯器。型別名稱在執行時無法存取。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "不支援繼承自定型別。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
-msgstr ""
+msgstr "初始設定式工具。以腳本建立節點。就這樣。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
-msgstr ""
+msgstr "編輯器不會偵測腳本的型別或其與其他引擎型別或腳本的關係。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "使用者可以定義圖示。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
-msgstr ""
+msgstr "適用於所有腳本語言，因為該腳本是以抽象方法處理 Script 資源。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"使用 :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>` 設定。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
-msgstr ""
+msgstr ":ref:`腳本類別 <doc_scripting_continued_class_name>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:117
 msgid "Editor and runtime accessible."
-msgstr ""
+msgstr "編輯器與執行環境都可存取。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:119
 msgid "Displays inheritance relationships in full."
-msgstr ""
+msgstr "顯示完整的繼承關係。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:121
 msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
-msgstr ""
+msgstr "使用腳本建立節點，但也可以在編輯器中更改型別或繼承型別。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
-msgstr ""
+msgstr "編輯器可以知道腳本、腳本類別與引擎 C++ 類別間的繼承關係。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
-msgstr ""
+msgstr "引擎開發人員必須為語言手動新增支援 (名稱暴露與執行時的可存取型)。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "限適用於 Godot 3.1+ 版。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -30129,6 +30547,8 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"編輯器會掃描專案資料夾並註冊所有腳本語言中所有暴露的名稱。每個腳本語言都必須"
+"要實作對這種暴露資訊的支援。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -30137,6 +30557,8 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"這兩種方法都會在建立視窗中加上名稱，但特別是腳本類別，還允許使用者在不載入腳"
+"本資源時存取型別名稱。在任何地方都可以建立實體與存取常數或靜態方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -30145,15 +30567,17 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"有了這樣的功能，因為很容易使用，於是我們便會想將型別做成無需場景的腳本。開發"
+"外掛或製作給設計師用的內部工具的開發人員也可以通過這種方法來省事。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
-msgstr ""
+msgstr "但缺點是，這也代表必須要使用大量的指令式程式。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid "In the end, the best approach is to consider the following:"
-msgstr ""
+msgstr "最後，最好的方法就是要考慮下列事項："
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -30163,6 +30587,9 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"如果想製作會在不同專案間重複使用，並且所有程度的人 (包含不把自己成為「程式設"
+"計師」的人) 都能使用的基礎工具，那麼這個工具很有可能會是腳本，並且有自定名稱"
+"／圖示。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
 msgid ""
@@ -30170,6 +30597,8 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"如果想建立專屬於自己的遊戲的概念，則應該使用場景。場景比較好追蹤與編輯，並且"
+"比起腳本提供更多安全性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
 msgid ""
@@ -30177,10 +30606,12 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"如果想為場景起名，則還是可以在 3.1 版中通過宣告腳本類別並以常數來指定場景來實"
+"現類似的目的。該腳本就有了命名空間的效果："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus regular nodes"
-msgstr ""
+msgstr "Autoload v.s. 一般節點"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -30190,16 +30621,22 @@ msgid ""
 "freed when you change the scene from code with :ref:`SceneTree.change_scene "
 "<class_SceneTree_method_change_scene>`."
 msgstr ""
+"Godot 提供了一個能自動在專案根節點上載入的功能。這些自動載入的節點能夠在所有"
+"地方存取，並且能充當單例： :ref:`doc_singletons_autoload` 的角色。這些自動在"
+"如的節點不會在從程式碼中用 :ref:`SceneTree.change_scene "
+"<class_SceneTree_method_change_scene>` 時被釋放。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
 "In this guide, you will learn when to use the Autoload feature, and "
 "techniques you can use to avoid it."
 msgstr ""
+"在本篇指南中，我們將學習如何使用 Autoload 功能，以及可以避免使用 Autoload 的"
+"一些技巧。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
 msgid "The cutting audio issue"
-msgstr ""
+msgstr "音訊截斷問題"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
 msgid ""
@@ -30208,6 +30645,8 @@ msgid ""
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
+"其他的引擎鼓勵使用 Manager 類別，即一種用來管理許多全域存取物件功能的單例。託"
+"節點樹與訊號的福，Godot 中提供了許多方法來避免全域狀態。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
 msgid ""
@@ -30217,6 +30656,10 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
+"舉例來說，假設我們正在做平台遊戲，並且想在蒐集到金幣時播放音效。有可以播放音"
+"效的節點： :ref:`AudioStreamPlayer <class_AudioStremPlayer>` 。但如果我們在 "
+"``AudioStreamPlayer`` 正在播放聲音的時候呼叫，新的音效就會中斷之前播放的音"
+"效。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
 msgid ""
@@ -30227,6 +30670,11 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
+"有一種解決方法是撰寫一個全域且自動載入的音訊管理員類別。這個類別要產生一個 "
+"``AudioStreamPlayer`` 節點集區，然後在遇到音效播放要求的時候照順序讓每一個 "
+"``AudioStreamPlayer`` 來播放。假設我們管這個類別叫 ``Sound`` ，則我們在專案任"
+"何一個地方都可以通過呼叫 ``Sound.play(\"coin_pickup.ogg\")`` 來使用。這樣一來"
+"便在短期內解決了問題，但接著會引發更多的問題："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
 msgid ""
@@ -30234,12 +30682,16 @@ msgid ""
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
+"**全域狀態** ：現在，有一個物件必須要負責所有物件的資料。若 ``Sound`` 類別發"
+"生錯誤，或是沒有可用的 AudioStreamPlayer，則所有呼叫 Sound 的節點都會壞掉。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
+"**全域存取** ：現在所有物件都能從任何地方呼叫 ``Sound.play(sound_path)`` ，所"
+"以要找到 Bug 的原因變得更加困難了。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -30247,6 +30699,8 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**全域資源分配** ：現在從一開始就有一個 ``AudioStreamPlayer`` 節點集區，如果"
+"數量太少的話便會遇到 Bug，而數量太多的話則會佔用過多的記憶體。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -30254,44 +30708,53 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"有關全域存取，問題在於，在本例中，任何地方的「所有」程式碼都有可能將錯誤的資"
+"料傳給 ``Sound`` Autoload。因此，發生問題時要尋找的範圍就變成了整個專案。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
-msgstr ""
+msgstr "如果將程式碼保留在場景中，則只有一兩個程式碼可能會與音訊有關。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
+"相較之下，如果每個場景都在自己內部保佑必要數量的 ``AudioStreamPlayer`` 的話，"
+"則這些所有的問題便解決了："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"每個場景都管理自己的狀態資訊，所以當資料由問題的時候，就只會影響到單一場景。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"每個場景都只存取自己的節點。所以當現在出現 Bug 時，就很容易找出是哪個節點的"
+"錯。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "每個場景都只分配到所需數量的資源。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "管理共用功能或資料"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"另一個使用 Autoload 的理由是這樣就可以在不同的場景間重複使用相同的方法或資"
+"料。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -30299,29 +30762,34 @@ msgid ""
 "provides that feature for an individual scene using the :ref:`class_name "
 "<doc_scripting_continued_class_name>` keyword in GDScript."
 msgstr ""
+"如果用函式的話，可以建立一個新型的 ``Node`` ，然後通過 GDScript 中的 :ref:"
+"`class_name <doc_scripting_continued_class_name>` 關鍵字來為個別場景提供功"
+"能。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "但遇到要處理資料的時候，就必須選擇："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
-msgstr ""
+msgstr "建立一個新型的 :ref:`Resource <class_Resource>` 來共享資料。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"將資料儲存在每個節點都能存取的一個物件當中，比如說使用 ``owner`` 屬性來存取場"
+"景的根節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
 msgid "When you should use an Autoload"
-msgstr ""
+msgstr "什麼時候該用 Autoload"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
-msgstr ""
+msgstr "自動載入的節點在某些情況下可以簡化程式碼："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""
@@ -30329,12 +30797,14 @@ msgid ""
 "database, then an autoload can be a good tool. There is no scripting API in "
 "Godot to create and manage static data otherwise."
 msgstr ""
+"**靜態資料** ：若需要的資料只有一個類別會用到，如資料庫，則用 Autoload 是個不"
+"錯的選擇。目前在 Godot 中沒有腳本 API 可以建立與管理靜態資料。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:89
 msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
-msgstr ""
+msgstr "**靜態函式** ：建立一個函式庫，只回傳數值。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
 msgid ""
@@ -30343,6 +30813,8 @@ msgid ""
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
+"**作用域更廣的系統** ：若單例管理自己的資訊，且不會存取到其他物件的資料，則建"
+"立一個處理廣域資料的系統也不錯。例如，任務或對話系統。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""
@@ -30352,6 +30824,10 @@ msgid ""
 "``class_name`` keyword instead to get auto-completion for a type in your "
 "entire project."
 msgstr ""
+"直到 Godot 3.1 版以前，另一個方便的做法是：每個 Autoload 都有一個由 GDScript "
+"以其名稱產生的全域變數，這個全域變數可以用來在專案中的任何腳本呼叫 Autoload。"
+"但現在，必須使用 ``class_name`` 關鍵字來代替，才能在整個專案中享有型別的自動"
+"補全。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:103
 msgid ""
@@ -30360,16 +30836,21 @@ msgid ""
 "automatically as a child of the root of your scene tree, regardless of your "
 "game's node structure or which scene you run, e.g. by pressing :kbd:`F6` key."
 msgstr ""
+"Autoload 並不完全同等與單例 (Singleton)。在 Autoload 中沒有方法可以防止再次實"
+"體化一個 Autoload 的節點。只能算是一種能不考慮遊戲節點架構以及目前執行的節點"
+"是什麼，就讓節點作為場景樹子節點自動載入的方法，例如，按 :kbd:`F6` 鍵。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:108
 msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
+"然後，就能取得自動載入的節點，例如有一個叫 ``Sound`` 的 Autoload，則可以呼叫 "
+"``get_node(\"/root/Sound\")`` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
 msgid "When and how to avoid using nodes for everything"
-msgstr ""
+msgstr "該避免一直使用節點的情況與如何避免"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
 msgid ""
@@ -30378,6 +30859,8 @@ msgid ""
 "behavior though, the larger the strain each one adds to a project's "
 "performance."
 msgstr ""
+"建立節點成本低，但建立節點有其限制。一個專案中可能有數以千計的節點，各司其"
+"職。當這些節點的行為越複雜，每個節點對專案效能造成的壓力就越大。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
 msgid ""
@@ -30385,6 +30868,8 @@ msgid ""
 "Be sure to keep these in mind as options when designing how you wish to "
 "build your project's features."
 msgstr ""
+"Godot 有一些更輕量的物件，這些物件可以用來建立 API，並讓節點使用。在設計如何"
+"製作專案功能時，請務必記得有這個選項。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
 msgid ""
@@ -30393,6 +30878,9 @@ msgid ""
 "difficult to create one's own custom data structures, even node structures, "
 "that are also lighter than the :ref:`Node <class_Node>` class."
 msgstr ""
+":ref:`Object <class_Object>` ：終極輕量物件，原始的 Object。必須要使用手動記"
+"憶體管理。也就是說，要建立自己的自定資料結構甚至節點結構並不困難，而且也比 :"
+"ref:`Node <class_Node>` 還要輕量。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:21
 msgid ""
@@ -30401,6 +30889,9 @@ msgid ""
 "columns. The data that it uses to generate its visualization though is "
 "actually a tree of :ref:`TreeItem <class_TreeItem>` Objects."
 msgstr ""
+"**範例：** 請參考 :ref:`Tree<class_Tree>` 節點。該節點可為有任意行列的目錄進"
+"行高度客製化。用來產生視覺化的資料實際上是通過一個樹狀 :ref:`TreeItem "
+"<class_TreeItem>` 物件。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:26
 msgid ""
@@ -30409,6 +30900,9 @@ msgid ""
 "the entire Node library, one creates an abbreviated set of Objects from "
 "which a node can generate and manage the appropriate sub-nodes."
 msgstr ""
+"**優點：** 簡化 API 至更小作用域的物件有助於提升存取性，並改進迭代時間。比起"
+"使用整個 Node 函式庫，不如用一組簡短的 Object 來建立子節點，讓節點可產生與管"
+"理適當的子節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:31
 msgid ""
@@ -30417,6 +30911,9 @@ msgid ""
 "example, if the object's creator decides to delete it out of nowhere, this "
 "would trigger an error state when one next accesses it."
 msgstr ""
+"在處理這些節點時要注意。我們可以將 Object 存到變數中，但這個參照可能會在沒有"
+"警告的情況下失效。舉例來說，若物件的建立者刪除了物件，則下次存取物件的時候便"
+"會觸發警告。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:36
 msgid ""
@@ -30425,16 +30922,21 @@ msgid ""
 "further references to themselves exist. These are useful in the majority of "
 "cases where one needs data in a custom class."
 msgstr ""
+":ref:`Reference <class_Reference>` ：只稍微比 Object 複雜一點。Reference 會追"
+"蹤自己的參照，然後只在沒有任何參照到自己時才刪除載入的記憶體。這種類別適用於"
+"大多數自定類別中需要資料的情況。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
 msgid ""
 "**Example:** See the :ref:`File <class_File>` object. It functions just like "
 "a regular Object except that one need not delete it themselves."
 msgstr ""
+"**範例：** 請參考 :ref:`File <class_File>` 物件。該物件的功能除了不需要手動刪"
+"除以外，就像一般的 Object 一樣。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
 msgid "**Advantages:** same as the Object."
-msgstr ""
+msgstr "**優點：** 與 Object 一樣。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:46
 msgid ""
@@ -30442,6 +30944,9 @@ msgid ""
 "They have the innate ability to serialize/deserialize (i.e. save and load) "
 "their object properties to/from Godot resource files."
 msgstr ""
+":ref:`Resource <class_Resource>` ：只比 Reference 複雜一點。Resource 自帶將自"
+"身物件屬性序列化到 Godot 資源檔案中，以及反過來從資源檔案中反序列化的能力 (即"
+"保存與載入功能)。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:50
 msgid ""
@@ -30449,6 +30954,9 @@ msgid ""
 "each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these "
 "can be save and loaded, therefore they extend from Resource."
 msgstr ""
+"**範例：** Script, PackedScene (用於場景檔案) 與其他如各個 :ref:`AudioEffec "
+"<class_AudioEffect>` 類別之類的型別。這些類別都可以載入與保存，因此都是從 "
+"Resource 繼承來的。"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:54
 msgid ""
@@ -30461,32 +30969,39 @@ msgid ""
 "usability front, but also improve performance if one plans to have many such "
 "Resources/Nodes in their scenes."
 msgstr ""
+"**優點：** 關於 :ref:`Resource <class_Resource>` 比傳統資料儲存方法相比， :"
+"ref:`已經討論過 <doc_resources>` 很多了。在使用 Resource 而不是 Node 的脈絡"
+"下，主要的優點就是與屬性面板的相容性。雖然輕量程度相當於 Object 與 "
+"Reference，但 Resource 還可以在屬性面板中顯示與匯出屬性。這樣便可讓 Resource "
+"在可用性方面來說填補子節點，也可於沒有在計劃場景中使用太多 Resource 與 Node "
+"時提升效能。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
 msgid "Godot interfaces"
-msgstr ""
+msgstr "Godot 介面"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
 msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"我們常常會需要為了一些功能而讓腳本仰賴其他物件。這個過程可以分為兩個部分："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
-msgstr ""
+msgstr "取得可能有該功能的物件之參照。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "從該物件存取資料或邏輯。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
-msgstr ""
+msgstr "本篇教學接下來的部分將介紹各種達成此目的的方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
 msgid "Acquiring object references"
-msgstr ""
+msgstr "取得物件參照"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
 msgid ""
@@ -30494,6 +31009,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"對於所有 :ref:`Object <class_Object` ，取得現有物件參照最基礎的方法，就是從另"
+"一個已經取得的實體來取得。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -30501,25 +31018,28 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+"相同的原則也可以用在 :ref:`Reference <class_Reference>` 物件上。雖然使用者通"
+"常會用這種方式來存取 :ref:`Node <class_Node>` 與 :ref:`Resource "
+"<class_Resource>` ，但也有另一種方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
-msgstr ""
+msgstr "除了存取屬性或方法，也可以通過 load 存取來取得 Resource。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
 msgid "Note the following:"
-msgstr ""
+msgstr "請注意下列事項："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
-msgstr ""
+msgstr "在一種語言當中，有許多載入這種 Resource 的方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
 msgid ""
 "When designing how objects will access data, don't forget that one can pass "
 "resources around as references as well."
-msgstr ""
+msgstr "在設計物件如何存取資料時，請不要忘記，我們也可用參照來傳遞資源。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
 msgid ""
@@ -30528,14 +31048,17 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
+"請記得，載入資源會載入由引擎快取的資源實體。若要取得新物件，則必須要 :ref:`複"
+"製 <class_Resource_method_duplicate>` 現有參照，或用 ``new()`` 來重新實體化資"
+"源。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
-msgstr ""
+msgstr "Node 也有另一個替代的存取點：SceneTree 場景樹。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid "Accessing data or logic from an object"
-msgstr ""
+msgstr "從物件中存取資料或邏輯"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
 msgid ""
@@ -30544,6 +31067,8 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
+"Godot 的腳本 API 是鴨子型別的。這代表，當腳本執行某樣操作時，Godot 不會用 **"
+"型別** 來驗證該物件是否支援該操作，而是檢查該物件是否有 **實作** 個別方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
 msgid ""
@@ -30553,6 +31078,10 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
+"舉例來說， :ref:`CanvasItem <class_CanvasItem>` 類別有一個 ``visible`` 屬性。"
+"所有暴露在腳本 API 中的屬性，事實上都是繫結在名稱上的 Setter 與 Getter 配對。"
+"當我們嘗試存取 :ref:`CanvasItem.visible <class_CanvasItem_property_visible>` "
+"時，Godot 會照順序進行下列檢查："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
 msgid ""
@@ -30561,6 +31090,8 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
+"若物件有附加腳本，則會嘗試在腳本中設定屬性。這樣就能讓腳本覆寫該屬性的 "
+"Setter 方法，讓腳本有覆寫基礎物件中定義的屬性的機會。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
 msgid ""
@@ -30570,12 +31101,15 @@ msgid ""
 "getter. For more information about HashMaps, see the :ref:`data preferences "
 "<doc_data_preferences>` docs."
 msgstr ""
+"若腳本沒有該屬性，則會在 ClassDB 中通過 HashMap 查詢來找到 CanvasItem 類別與"
+"其繼承的所有型別中的「visible」屬性。若有找到，則會繫結 Setter 與 Getter。更"
+"多有關 HashMaps 的資訊，請參考 :ref:`資料偏好 <doc_data_preferences>` 文件。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:267
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
-msgstr ""
+msgstr "若找不到，則會明確地檢查使用者要存取的是不是「script」或「meta」屬性。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
 msgid ""
@@ -30584,6 +31118,9 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
+"若不是的話，則會檢查 CanvasItem 與其繼承的型別中是否有實作 ``_set`` 與 "
+"``_get`` (依據存取類型的不同)。這兩個方法可以執行一組邏輯，讓該物件看起來有這"
+"個屬性。同樣地，有 ``_get_property_list`` 方法也是這樣。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
 msgid ""
@@ -30592,6 +31129,9 @@ msgid ""
 "the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
 "<class_TileSet_method_tile_get_name>`."
 msgstr ""
+"請注意，在非法符號名稱時也會發生這個檢查，像是在 :ref:`TileSet "
+"<class_TileSet>` 的「1/tile_name」屬性。這個屬性代表名稱為 ID 1 的圖塊，即 :"
+"ref:`TileSet.tile_get_name(1) <class_TileSet_method_tile_get_name>` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
 msgid ""
@@ -30599,18 +31139,22 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
+"最後，這個鴨子型別系統可以在腳本、物件類別或任何物件繼承的類別中找到屬性，但"
+"只適用於繼承了 Object 的物件中。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
-msgstr ""
+msgstr "Godot 提供了各種能在執行階段執行這些檢查的方法："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
+"鴨子型別屬性存取。這種方法會進行屬性檢查 (如上所示)。若物件不支援該操作，則會"
+"終止執行。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
 msgid ""
@@ -30618,6 +31162,8 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
+"方法檢查。在 :ref:`CanvasItem.visible <class_CanvasItem_property_visible>` 的"
+"情況下，我們可以像其他方法一樣存取 ``set_visible`` 與 ``is_visible`` 方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
 msgid ""
@@ -30625,16 +31171,20 @@ msgid ""
 "useful in cases where one needs the max level of freedom from dependencies. "
 "In this case, one relies on an external context to setup the method."
 msgstr ""
+"將存取外包給 :ref:`FuncRef <class_FuncRef>` 。這些方法適用於我們需要最大限度"
+"地跳脫相依性。這時，便需要仰賴外部脈絡來設定方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."
 msgstr ""
+"多虧這些策略，Godot 才有靈活的設計。有了這些策略，使用者便有了豐富的工具來滿"
+"足特殊需求。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:4
 msgid "Godot notifications"
-msgstr ""
+msgstr "Godot 通知"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:6
 msgid ""
@@ -30644,50 +31194,57 @@ msgid ""
 "it. For example, if the engine tells a :ref:`CanvasItem <class_CanvasItem>` "
 "to \"draw\", it will call ``_notification(NOTIFICATION_DRAW)``."
 msgstr ""
+"Godot 中每個物件都實作了一個 :ref:`_notification "
+"<class_Object_method__notification>` 。這個方法的目的是要讓 Object 物件能回應"
+"各種來自引擎層級，與該物件有關的回呼。舉例來說，若引擎告要叫 :ref:"
+"`CanvasItem <class_CanvasItem>` 進行「繪製 (draw)」，則引擎就會呼叫 "
+"``_notification(NOTIFICATION_DRAW)`` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:13
 msgid ""
 "Some of these notifications, like draw, are useful to override in scripts. "
 "So much so that Godot exposes many of them with dedicated functions:"
 msgstr ""
+"這些通知中，如 draw 之類的通知，很適合在腳本中覆寫。這些適合覆寫的通知多到 "
+"Godot 特地將這些通知暴露成專屬函式："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
 msgid "``_ready()`` : NOTIFICATION_READY"
-msgstr ""
+msgstr "\\ ``_ready()`` : NOTIFICATION_READY"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:18
 msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
-msgstr ""
+msgstr "\\ ``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:20
 msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
-msgstr ""
+msgstr "\\ ``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:22
 msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
-msgstr ""
+msgstr "\\ ``_process(delta)`` : NOTIFICATION_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:24
 msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
-msgstr ""
+msgstr "\\ ``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:26
 msgid "``_input()`` : NOTIFICATION_INPUT"
-msgstr ""
+msgstr "\\ ``_input()`` : NOTIFICATION_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
 msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-msgstr ""
+msgstr "\\ ``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
 msgid "``_draw()`` : NOTIFICATION_DRAW"
-msgstr ""
+msgstr "\\ ``_draw()`` : NOTIFICATION_DRAW"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone:"
-msgstr ""
+msgstr "使用者可能 **沒注意到** ，除了 Node 之外其他型別的節點也有通知："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
 msgid ""
@@ -30695,6 +31252,9 @@ msgid ""
 "<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: a callback that "
 "triggers during object initialization. Not accessible to scripts."
 msgstr ""
+":ref:`Object::NOTIFICATION_POSTINITIALIZE "
+"<class_Object_constant_NOTIFICATION_POSTINITIALIZE>` ：會在物件初始化時觸發的"
+"回呼。腳本無法存取。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:38
 msgid ""
@@ -30702,6 +31262,9 @@ msgid ""
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: a callback that triggers "
 "before the engine deletes an Object, i.e. a 'destructor'."
 msgstr ""
+":ref:`Object::NOTIFICATION_PREDELETE "
+"<class_Object_constant_NOTIFICATION_PREDELETE>` ：會在引擎刪除 Object 時觸發"
+"的回呼，即「解構函式」。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
 msgid ""
@@ -30710,12 +31273,17 @@ msgid ""
 "triggers when the mouse enters the window in the operating system that "
 "displays the game content."
 msgstr ""
+":ref:`MainLoop::NOTIFICATION_WM_MOUSE_ENTER "
+"<class_MainLoop_constant_NOTIFICATION_WM_MOUSE_ENTER>` ：會在滑鼠進入作業系統"
+"中顯示遊戲內容的視窗時觸發的回呼。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:46
 msgid ""
 "And many of the callbacks that *do* exist in Nodes don't have any dedicated "
 "methods, but are still quite useful."
 msgstr ""
+"而且，Node 節點中許多 **真實存在** 的回呼都沒有專屬的方法，但這些回呼還是很實"
+"用。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:49
 msgid ""
@@ -30723,6 +31291,9 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers "
 "anytime one adds a child node to another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>` ：會在每次將子節點加入另一個節點"
+"時觸發的回呼。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
 msgid ""
@@ -30730,6 +31301,9 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers "
 "anytime one removes a child node from another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_UNPARENTED "
+"<class_Node_constant_NOTIFICATION_UNPARENTED>` ：會在每次子節點從另一個節點中"
+"移除時觸發的回呼。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:56
 msgid ""
@@ -30738,18 +31312,22 @@ msgid ""
 "after a Popup node completes any ``popup*`` method. Note the difference from "
 "its ``about_to_show`` signal which triggers *before* its appearance."
 msgstr ""
+":ref:`Popup::NOTIFICATION_POST_POPUP "
+"<class_Popup_constant_NOTIFICATION_POST_POPUP>` ：會在 Popup 節點完成任何 "
+"``popup*`` 方法後觸發的回呼。請注意這個回呼與 Popup 的 ``about_to_show`` 訊號"
+"不同，該訊號時在 Popup 出現 **之前** 觸發的。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
-msgstr ""
+msgstr "我們可以通過通用的 ``_notification`` 方法來存取這些自定通知。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
-msgstr ""
+msgstr "在說明文件中標記為「虛擬」的方法都是為了讓腳本覆寫而存在的。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
 msgid ""
@@ -30757,16 +31335,19 @@ msgid ""
 "Object. While it has no ``NOTIFICATION_*`` equivalent, the engine still "
 "calls the method. Most languages (except C#) rely on it as a constructor."
 msgstr ""
+"典型的例子就是 Object 物件中的 :ref:`_init <class_Object_method__init>` 方"
+"法。雖然沒有等效的 ``NOTIFICATION_*`` 通知，但引擎還是會呼叫這個方法。大多數"
+"語言 (除了 C#) 都依賴這個方法來當作建構函式。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:73
 msgid ""
 "So, in which situation should one use each of these notifications or virtual "
 "functions?"
-msgstr ""
+msgstr "那麼，各種通知與虛擬函數都應該分別在什麼狀況下使用呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
 msgid "_process vs. _physics_process vs. \\*_input"
-msgstr ""
+msgstr "\\ _process vs. _physics_process vs. \\*_input"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
 msgid ""
@@ -30777,6 +31358,10 @@ msgid ""
 "the evaluations to update. If they don't need to execute every frame, then "
 "implementing a Timer-yield-timeout loop is another option."
 msgstr ""
+"當我們需要處理各幀之間與 FPS 有關的 delta 時，就用 ``_process`` 。若更新物件"
+"資料的程式碼需要儘可能頻繁更新，就適合在 ``_process`` 中處理。我們也通常會把"
+"重複性的邏輯檢查以及資料快取放在這裡執行，但還是得取決於是否有需要頻繁地計"
+"算。若不需要每一幀都執行的化，則可以實作一個 Timer-Yield-Timeout 循環來代替。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:97
 msgid ""
@@ -30785,6 +31370,9 @@ msgid ""
 "how fast or slow time advances, this is the right place. Recurring kinematic "
 "and object transform operations should execute here."
 msgstr ""
+"當需要的操作跟每幀之間的 delta 時間無關時，就可以用 ``_physics_process`` 。如"
+"果程式碼需要不管時間快還是慢，都隨著時間持續更新的話，就適合用 "
+"``_physics_process``。重複的動力學與物件變換操作應該在這個函式內執行。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:102
 msgid ""
@@ -30794,6 +31382,10 @@ msgid ""
 "by default). In contrast, ``*_input`` callbacks will trigger only on frames "
 "in which the engine has actually detected the input."
 msgstr ""
+"雖然可以在這些回呼中檢查輸入，但為了獲得最佳效能，應該避免這麼做。 "
+"``_process`` 與 ``_physics_process`` 一有機會機會觸發 (預設情況下這些回呼都不"
+"「休息」)。相反地， ``*_input`` 回呼則只會在引擎實際偵測到輸入的幀上才會呼"
+"叫。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:108
 msgid ""
@@ -30801,10 +31393,12 @@ msgid ""
 "one wants to use delta time, one can fetch it from the related deltatime "
 "methods as needed."
 msgstr ""
+"我們也可以在輸入回呼裡做一樣的輸入操作檢查。如果需要使用 delta 時間的話，則可"
+"以從相關的 delta 時間方法中取得。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
-msgstr ""
+msgstr "_init vs. 初始化 vs. 匯出"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
 msgid ""
@@ -30813,18 +31407,21 @@ msgid ""
 "should also run here. This triggers before ``_ready`` or ``_enter_tree``, "
 "but after a script creates and initializes its properties."
 msgstr ""
+"如果腳本會初始化自己的節點子樹而不依賴場景的話，那麼程式碼應該在 _init 中執"
+"行。其他屬性或是與 SceneTreee 無關的初始化行為也都應該在這裡執行。這個回呼會"
+"在 ``_ready`` 與 ``_enter_tree`` 之前、腳本建立與初始化其屬性後觸發。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:163
 msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
-msgstr ""
+msgstr "在初始化期間，腳本可以有三種類型的屬性賦值："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
-msgstr ""
+msgstr "在初始化場景時，屬性值會依據下列順序來設定："
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
@@ -30832,6 +31429,8 @@ msgid ""
 "initialization value or the init assignment value. Init assignments take "
 "priority over initialization values."
 msgstr ""
+"**初始值賦值：** 實體化會賦予初始化值或是 Init 賦值的值。Init 賦值的優先度高"
+"於初始化值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
@@ -30839,16 +31438,20 @@ msgid ""
 "script, Godot will assign the exported value to replace the initial value "
 "defined in the script."
 msgstr ""
+"**匯出值賦值：** 若是從場景中實體化而非腳本，則 Godot 會將匯出的值賦值來取代"
+"腳本中定義的初始值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:221
 msgid ""
 "As a result, instantiating a script versus a scene will affect both the "
 "initialization *and* the number of times the engine calls the setter."
 msgstr ""
+"結果，實體化腳本對比場景來說，會 **一起** 影響初始化值 **以及** 引擎呼叫 "
+"Setter 的次數。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr ""
+msgstr "\\ _ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""
@@ -30859,6 +31462,11 @@ msgid ""
 "will call this method once all child nodes have finished calling theirs. "
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
+"當實體化一個連接到首次執行場景的場景時，Godot 會在場景樹中向下實體化 (呼叫 "
+"``_init`` ) 並一直從根節點往深層建構。因為這樣，所以 ``_enter_tree`` 就是在場"
+"景樹中由頂層往深層級呼叫的。建構完整棵樹後，葉上的節點就會呼叫 ``_ready`` 。"
+"節點會在所有自節點都呼叫完 ``_ready`` 後才呼叫自己的 ``_ready`` ，因此在呼叫"
+"的時候就是反過來從樹最深層往回呼叫到根節點。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
 msgid ""
@@ -30866,6 +31474,8 @@ msgid ""
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
 "Instead, only the ``_init`` and later ``_ready`` calls occur."
 msgstr ""
+"當實體化腳本或獨立的場景時，節點並不會在建立時被加到 SceneTree 上，所以不會觸"
+"發 ``_enter_tree`` 回呼，而只會有 ``_init`` 以及之後的 ``_ready`` 呼叫。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
 msgid ""
@@ -30876,16 +31486,23 @@ msgid ""
 "to a custom signal on the parent node without failing. Useful on data-"
 "centric nodes that one might create at runtime."
 msgstr ""
+"如果有需要觸發作為另一個節點的母節點來發生的行為，而不管是否是作為母節點／有"
+"效場景的一部分發生，可以使用 :ref:`PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>` 通知。舉例來說，下列是一段能確保"
+"能在不失敗的情況下將節點的方法連接至母節點中自定訊號的程式碼片段。適合用於在"
+"執行階段建立且以資料為中心的節點上。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:4
 msgid "Data preferences"
-msgstr ""
+msgstr "資料偏好"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:6
 msgid ""
 "Ever wondered whether one should approach problem X with data structure Y or "
 "Z? This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"有沒有煩惱過問題 X 應該要用資料結構 Y 還是 Z 來處理？本篇文章將圍繞這種困擾來"
+"展開。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:11
 msgid ""
@@ -30893,34 +31510,38 @@ msgid ""
 "terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
 "net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 msgstr ""
+"本文中參考使用了「[什麼什麼]-時間」格式。該術語來自演算法分析中的 `大 O 符號 "
+"(英文) <https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/"
+">`_ 。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
 msgid ""
 "Long-story short, it describes the worst-case scenario of runtime length. In "
 "laymen's terms:"
 msgstr ""
+"長話短說，這種方式是用來表示最糟情況下所需要的執行事件。用業餘的方式來說："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
 msgid ""
 "\"As the size of a problem domain increases, the runtime length of the "
 "algorithm...\""
-msgstr ""
+msgstr "「隨著問題領域變大，演算法的執行時間長度…」"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr ""
+msgstr "常數時間， ``O(1)`` ：「…不會增加。」"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr ""
+msgstr "對數時間， ``O(log n)`` ：「…緩慢增加。」"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
-msgstr ""
+msgstr "線性時間， ``O(n)`` ：「…等速增加。」"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
 msgid "Etc."
-msgstr ""
+msgstr "…等。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:26
 msgid ""
@@ -30930,6 +31551,9 @@ msgid ""
 "time allotted. In comparison, using a constant-time algorithm could handle "
 "the operation without issue."
 msgstr ""
+"試想一下需要在每幀處理 300 萬筆資料點的情況。這時候就沒辦法使用線性時間演算"
+"法，因為隨著資料大小的增加，執行時間也會大幅增加。相較之下，使用常數時間演算"
+"法來處理就沒有問題。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:32
 msgid ""
@@ -30940,10 +31564,14 @@ msgid ""
 "algorithm / data structure for the job is part of what makes programmers' "
 "skills valuable."
 msgstr ""
+"大致上來說，開發人員總是希望能儘可能避免使用線性時間操作。但，若只保持小規模"
+"的線性時間操作，且不需要常常有這類操作，則還算可接受。在需求間找到平衡點，並"
+"依據正在進行的任務選擇正確的演算法與資料型別即是使程式設計師技術有價值的部"
+"分。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:40
 msgid "Array vs. Dictionary vs. Object"
-msgstr ""
+msgstr "陣列 vs. 字典 vs. 物件"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:42
 msgid ""
@@ -30953,6 +31581,9 @@ msgid ""
 "<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
 "`Object <class_Object>` s."
 msgstr ""
+"Godot 將腳本 API 中所有的變數都保存在 :ref:`Variant <doc_variant_class>` 類別"
+"內。Variant 可以保存 Variant 相容的資料結構，如 :ref:`Array <class_Array>` "
+"與 :ref:`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -30960,6 +31591,8 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
+"Godot 以 ``Vector<Variant>`` 來實作陣列。引擎會將陣列的內容儲存在一段連續的記"
+"憶體當中。也就是說，陣列的元素是相鄰的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -30969,62 +31602,68 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
+"對不熟悉 C++ 的人來說，Vector 是在傳統 C++ 函式庫中陣列物件的名稱，是一種「樣"
+"板化 (Templated)」型別。這代表，Vector 內的記錄只能包含特定型別 (在角括號內標"
+"示)。因此，舉例來說， :ref:`PoolStringArray <class_PoolStringArray>` 就是類"
+"似 **Vector<String>** 之類的東西。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"
-msgstr ""
+msgstr "連續記憶體儲存，也就代表了下列操作效能："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr ""
+msgstr "**迭代：** 最快。最適合迴圈。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
 msgid "Op: All it does is increment a counter to get to the next record."
-msgstr ""
+msgstr "操作：迭代要做的就是增加計數器來移動到下一筆資料。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
-msgstr ""
+msgstr "**插入、移除、移動：** 取決於位置。普通慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
 msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
 "(to make room / fill space)."
-msgstr ""
+msgstr "操作：新增／移除／移動會需要移動相鄰的記錄 (才能騰出空間／填補空間)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
 msgid "Fast add/remove *from the end*."
-msgstr ""
+msgstr "**從結尾** 新增／移除 - 快速。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr ""
+msgstr "**從任意位置** 新增／移除 - 慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
 msgid "Slowest add/remove *from the front*."
-msgstr ""
+msgstr "**從最前面** 新增／移除 - 最慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
 msgid "If doing many inserts/removals *from the front*, then..."
-msgstr ""
+msgstr "若 **從前面** 進行插入／移除多筆資料，則..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
 msgid "invert the array."
-msgstr ""
+msgstr "反轉陣列。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr ""
+msgstr "執行從陣列 **結尾** 更改的迴圈。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
 msgid "re-invert the array."
-msgstr ""
+msgstr "重新反轉陣列。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:85
 msgid ""
 "This makes only 2 copies of the array (still constant time, but slow) versus "
 "copying roughly 1/2 of the array, on average, N times (linear time)."
 msgstr ""
+"這樣一來，比起平均要複製 N 次大約 1/2 個陣列 (線性時間)， 就只會產生 2 個陣列"
+"的副本 (一樣是常數時間，但比較慢)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
 msgid ""

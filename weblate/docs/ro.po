@@ -6,16 +6,18 @@
 # arydevy <arydev7@gmail.com>, 2020.
 # Calin Sopterean <csopterean@gmail.com>, 2018.
 # EVOKZH <avip.ady@gmail.com>, 2020.
+# f0roots <f0rootss@gmail.com>, 2020.
 # Grigore Antoniuc <grisa181@gmail.com>, 2018.
 # Marincia Cătălin <catalinmarincia@gmail.com>, 2020.
+# Teodor <teo.virghi@yahoo.ro>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-06 14:52+0200\n"
-"PO-Revision-Date: 2020-07-02 02:59+0000\n"
-"Last-Translator: EVOKZH <avip.ady@gmail.com>\n"
+"PO-Revision-Date: 2020-07-19 01:27+0000\n"
+"Last-Translator: f0roots <f0rootss@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ro/>\n"
 "Language: ro\n"
@@ -123,7 +125,6 @@ msgstr ""
 "în documentație, ajută-ne să facem documentația mai bună anunțându-ne!"
 
 #: ../../docs/index.rst:48
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -132,12 +133,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Trimiteți o problemă sau un pull request în `depozitul GitHub <https://"
-"github.com/godotengine/godot-docs/issues>`_, ajută-ne `să traducem "
-"documentația <https://hosted.weblate.org/engage/godot-engine/>`_ în limba "
-"ta, sau discută cu noi fie pe canalul ``#documentation`` de pe `Discord "
-"<https://discord.gg/zH7NUgz>`_, fie pe canalul ``#godotengine-doc`` de pe "
-"`irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"Trimiteți o problemă sau trageți o solicitare în 'repertoriul Github "
+"<https://github.com/godotengine/godot-docs/issues>'_, ajutați-ne 'traduceți "
+"documentația <https://hosted.weblate.org/engage/godot-engine/>'_ în limba "
+"dvs., sau să ne vorbiți fie pe canalul ''#documentation'' de pe 'Discord "
+"<https://discord.gg/zH7Nugz''_, fie pe canalul ''#godotengine-doc'' de pe "
+"'irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>'_!"
 
 #: ../../docs/index.rst:58
 msgid "weblate_widget"
@@ -309,16 +310,15 @@ msgid "About Godot Engine"
 msgstr "Despre Godot Engine"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Un motor grafic este o unealtă complexă, deci este foarte dificil să "
-"prezinți Godot în doar câteva cuvinte. Totuși aici este prezentarea noastră "
-"de PR, pe care o poți refolosi fără restricții dacă ai nevoie de câteva "
-"notițe rapide despre Godot Engine."
+"Un motor de joc este un instrument complex, și, prin urmare, este dificil să "
+"prezinți Godot în câteva cuvinte. Iată un sinopsis rapid, pe care sunteți "
+"liber să reutilizați dacă aveți nevoie de o notare rapidă despre Godot "
+"Engine."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -329,13 +329,13 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine este plin de caracteristici și este un motor grafic  cross-"
-"platform pentru a putea crea jocuri 2D sau 3D într-o interfață comună. Godot "
-"pune la dispoziție un set cuprinzător de unelte des întâlnite, pentru ca "
-"userii să se poată concentra pe a face jocuri fără să fie nevoiți să "
-"reinventeze roata. Jocurile pot fi exportate dintr-un singur click pe mai "
-"multe platforme, incluzând platformele majore de pe desktop (Linux, macOS, "
-"Windows) precum și pe mobil (Android, iOS) și pe web (HTML5)."
+"Godot Engine este un motor de joc plin de caracteristici, motorul de joc "
+"multiplatformă pentru a crea jocuri 2D și 3D dintr-o interfață unificată. "
+"Acesta oferă un set cuprinzător de instrumente comune, astfel încât "
+"utilizatorii se pot concentra pe a face jocuri fără a fi nevoie să "
+"reinventeze roata. Jocurile pot fi exportate cu un singur clic pe mai multe "
+"platforme, inclusiv pe marile platforme desktop (Linux, macOS, Windows), "
+"precum și pe platforme mobile (Android, iOS) și web (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -359,9 +359,9 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"Pentru o analiză mai amănuțită a engine-ului, te încurajăm să continui "
-"citirea acestei documentații, în special tutorialul :ref:`Step by step <toc-"
-"learn-step_by_step>`"
+"Pentru o vizualizare mai detaliată a motorului, sunteți încurajați să citiți "
+"această documentație în continuare, în special tutorialul :ref:\"Pas cu pas "
+"<toc-learn-step_by_step>\"."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
@@ -376,12 +376,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Documentația de fața este intr-o continuă scriere,corectare,editare și "
-"rescriere de membrii comunitații Godot .Aceasta este editată prin "
-"intermediul fișierelor text aflate în  limbajul `reStructuredText <http://"
-"www.sphinx-doc.org/en/stable/rest.html>`_markup si este pe urma compilat "
-"intr-un site static/document offline folosind uneltele open-source `Sphinx "
-"<http://www.sphinx-doc.org>`_ și `ReadTheDocs <https://readthedocs.org/>`_ ."
+"Această documentație este scrisă, corectată, editată și revizuită în mod "
+"continuu de către membrii comunității Godot Engine. Acesta este editat prin "
+"intermediul fișierelor text în 'reStructuratedText <http://www.sphinx-doc."
+"org/en/stable/rest.html>'_ limbaj de marcare și apoi compilate într-un site "
+"web static/ document offline folosind open source 'Sphinx <http://www.sphinx-"
+"doc.org>'_ și 'ReadTheDocs <https://readthedocs.org/>'_ instrumente."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -11183,9 +11183,8 @@ msgid "``editor/quit_to_project_list``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
-#, fuzzy
 msgid "Take Screenshot"
-msgstr "Captură de ecran"
+msgstr "Salvează captură de ecran"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -80937,7 +80936,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "Stabilește"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
