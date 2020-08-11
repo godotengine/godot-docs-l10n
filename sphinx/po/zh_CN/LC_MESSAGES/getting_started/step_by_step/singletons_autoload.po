@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,12 +59,13 @@ msgstr ""
 "加载数据很麻烦并且可能很慢。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
+#, fuzzy
 msgid ""
-"The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
+"The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
-"persistent information between scenes. In our case it is possible re-use the "
-"same scene or class for multiple singletons, so long as they have different "
-"names."
+"persistent information between scenes. In our case, it's possible to reuse "
+"the same scene or class for multiple singletons as long as they have "
+"different names."
 msgstr ""
 "`单例模式 <https://en.wikipedia.org/wiki/Singleton_pattern>`_ 是解决需要在场"
 "景之间存储持久性信息的常见用例的有用工具。在我们的示例中，可以将同一个场景或"
@@ -75,51 +76,69 @@ msgid "Using this concept, you can create objects that:"
 msgstr "使用此概念，您可以创建对象："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-msgid "Are always loaded, no matter which scene is currently running"
+#, fuzzy
+msgid "Are always loaded, no matter which scene is currently running."
 msgstr "始终加载，无论当前正在运行哪个场景"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-msgid "Can store global variables, such as player information"
+#, fuzzy
+msgid "Can store global variables such as player information."
 msgstr "可以存储全局变量，例如 ``player`` 信息"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-msgid "Can handle switching scenes and between-scene transitions"
+#, fuzzy
+msgid "Can handle switching scenes and between-scene transitions."
 msgstr "可以处理切换场景和场景间的过渡"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
+#, fuzzy
 msgid ""
-"Act like a singleton, since GDScript does not support global variables by "
-"design"
+"*Act* like a singleton, since GDScript does not support global variables by "
+"design."
 msgstr "表现得像一个单例对象，因为GDScript在设计上不支持全局变量"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr "自动加载的节点和脚本可以为我们提供这些特征。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
+msgid ""
+"Godot won't make an AutoLoad a \"true\" singleton as per the singleton "
+"design pattern. It may still be instanced more than once by the user if "
+"desired."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
 msgstr "自动加载"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
-"You can use AutoLoad to load a scene or a script that inherits from :ref:"
-"`Node <class_Node>`. Note: when autoloading a script, a Node will be created "
-"and the script will be attached to it. This node will be added to the root "
-"viewport before any other scenes are loaded."
+"You can create an AutoLoad to load a scene or a script that inherits from :"
+"ref:`class_Node`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
+#, fuzzy
+msgid ""
+"When autoloading a script, a :ref:`class_Node` will be created and the "
+"script will be attached to it. This node will be added to the root viewport "
+"before any other scenes are loaded."
 msgstr ""
 "您可以使用 ``自动加载（AutoLoad）`` 加载继承自 :ref:`Node <class_Node>` 的场"
 "景或脚本。注意：自动加载脚本时，将创建一个节点并将脚本附加到该节点。在加载任"
 "何其他场景之前，此节点将添加到根视图。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
+#, fuzzy
 msgid ""
-"To autoload a scene or script, select ``Project -> Project Settings`` from "
-"the menu and switch to the \"AutoLoad\" tab."
+"To autoload a scene or script, select **Project > Project Settings** from "
+"the menu and switch to the **AutoLoad** tab."
 msgstr ""
 "要自动加载场景或脚本，请从菜单中选择 ``项目 -> 项目设置（Project -> Project "
 "Settings）``，然后切换到 ``自动加载（AutoLoad）`` 选项卡。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -130,21 +149,22 @@ msgstr ""
 "被分配为节点的 ``name`` 属性。使用向上/向下箭头键可以操纵将条目添加到全局场景"
 "树时的顺序。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
 "这意味着任何节点都可以通过以下方式访问名为 ``PlayerVariables`` 的单例："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
+#, fuzzy
 msgid ""
-"If the \"Enable\" column is checked (default ``true``) then the singleton "
-"can simply be accessed directly:"
+"If the **Enable** column is checked (which is the default), then the "
+"singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
 "如果勾选 ``启用（Enable）`` 列（默认为 ``true``），则可以直接访问单例："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
 "Note that autoload objects (scripts and/or scenes) are accessed just like "
 "any other node in the scene tree. In fact, if you look at the running scene "
@@ -153,14 +173,15 @@ msgstr ""
 "请注意，就像场景树中的任何其他节点一样，访问自动加载对象（脚本和/或场景）的方"
 "式也是如此。实际上，如果查看正在运行的场景树，则会看到自动加载的节点出现："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid "Custom scene switcher"
 msgstr "自定义场景切换器"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
+#, fuzzy
 msgid ""
-"This tutorial will demonstrate building a scene switcher using autoload. For "
-"basic scene switching, you can use the :ref:`SceneTree.change_scene() "
+"This tutorial will demonstrate building a scene switcher using autoloads. "
+"For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
 "<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree` for "
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
@@ -170,7 +191,7 @@ msgstr ""
 "参见 :ref:`doc_scene_tree` ）用于基本的场景切换。但是，如果在更改场景时需要更"
 "复杂的行为，则此方法可提供更多功能。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
@@ -178,7 +199,7 @@ msgstr ""
 "首先，请从 :download:`autoload.zip <files/autoload.zip>` 下载模板并在Godot中"
 "将其打开。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:113
 msgid ""
 "The project contains two scenes: ``Scene1.tscn`` and ``Scene2.tscn``. Each "
 "scene contains a label displaying the scene name and a button with its "
@@ -189,48 +210,51 @@ msgstr ""
 "示场景名称的标签和一个连接了 ``pressed()`` 信号的按钮。当您运行该项目时，它将"
 "从 ``Scene1.tscn`` 开始。但是，按下按钮不会执行任何操作。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
 msgid "Global.gd"
 msgstr "Global.gd"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
+#, fuzzy
 msgid ""
-"Switch to the \"Script\" tab and create a new script called Global.gd. Make "
-"sure it inherits from ``Node``:"
+"Switch to the **Script** tab and create a new script called ``Global.gd``. "
+"Make sure it inherits from ``Node``:"
 msgstr ""
 "切换到 ``脚本（Script）`` 选项卡，并创建一个名为 ``Global.gd`` 的新脚本。确保"
 "它从 ``Node`` 继承："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
+#, fuzzy
 msgid ""
-"The next step is to add this script to the autoLoad list. Open ``Project > "
-"Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
+"The next step is to add this script to the autoLoad list. Open **Project > "
+"Project Settings** from the menu, switch to the **AutoLoad** tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
-"gd``. Press \"Add\" to add it to the autoload list:"
+"gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 "下一步是将此脚本添加到自动加载列表中。从菜单中打开 ``项目 > 项目设置"
 "（Project > Project Settings）``，切换到 ``自动加载（AutoLoad）`` 选项卡，然"
 "后单击 ``..`` 按钮或键入其路径：``res://Global.gd``。按 ``添加（Add）`` 将其"
 "添加到自动加载列表："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr "现在，无论何时在项目中运行任何场景，该脚本都将始终加载。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
+#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
-"``global.gd`` are children of root, but autoloaded nodes are always first. "
+"``Global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
 "返回到脚本，它需要在 ``_ready()`` 函数中获取当前场景。当前场景（带有按钮的场"
 "景）和 ``global.gd`` 都是 ``root`` 的子代，但是自动加载的节点始终是第一个。这"
 "意味着 ``root`` 的最后一个子项始终是加载的场景。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
@@ -238,7 +262,7 @@ msgstr ""
 "现在我们需要一个用于更改场景的函数。此函数需要释放当前场景，并将其替换为请求"
 "的场景。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:236
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
@@ -249,28 +273,38 @@ msgstr ""
 "个函数将仅在当前场景中的所有代码完成后运行。因此，当前场景在仍在使用（即其代"
 "码仍在运行）时不会被删除。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:241
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr "最后，我们需要在两个场景中填充空的回调函数："
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:261
 msgid "and"
 msgstr "以及"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:281
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr "运行该项目，并测试您可以通过按下按钮来切换场景。"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
+#, fuzzy
 msgid ""
-"Note: When scenes are small, the transition is instantaneous. However, if "
-"your scenes are more complex, they may take a noticeable amount of time to "
+"When scenes are small, the transition is instantaneous. However, if your "
+"scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
-"`doc_background_loading`"
+"`doc_background_loading`."
 msgstr ""
 "注意：当场景较小时，过渡是瞬时的。但是，如果您的场景比较复杂，则可能需要花费"
 "相当长的时间才能显示出来。要了解如何处理此问题，请参阅下一个教程： :ref:"
 "`doc_background_loading`"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
+msgid ""
+"Alternatively, if the loading time is relatively short (less than 3 seconds "
+"or so), you can display a \"loading plaque\" by showing some kind of 2D "
+"element just before changing the scene. You can then hide it just after the "
+"scene is changed. This can be used to indicate to the player that a scene is "
+"being loaded."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "自定义功能"
+msgstr "功能特性列表"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
-msgstr ""
+msgstr "这个页面旨在列出当前Godot引擎所支持的所有特性。"
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -33,6 +32,8 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"这个页面列出了当前稳定版本的Godot (3.2)所支持的特性。更多的特性可以在最新的开"
+"发版本(4.0)中查阅。"
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
@@ -45,48 +46,49 @@ msgstr "**平台：**"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**可以运行编辑器以及导出的项目。**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 以及更新的系统版本（64位和32位）。"
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 以及更新的系统版本（64位，x86, 以及ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 #, fuzzy
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr "平台体系结构（64位或32位，x86或ARM）。"
+msgstr "Linux（64位和32位，x86和ARM）。"
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"二进制文件是静态链接的，并且如果在足够旧的基本发行版上进行编译，则可以在任何"
+"发行版上运行。"
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "官方二进制文件是在Ubuntu 14.04上编译的。"
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "**Runs exported projects:**"
-msgstr "导出项目"
+msgstr "**运行导出的项目：**"
 
 #: ../../docs/about/list_of_features.rst:31
-#, fuzzy
 msgid "Android 4.4 and later."
-msgstr "Android SDK 平台工具"
+msgstr "安卓4.4及以上版本。"
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0及更高版本。"
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
 msgstr ""
+"通过WebAssembly (火狐浏览器，谷歌浏览器，Edge浏览器，Opera浏览器) 的HMTL5."
 
 #: ../../docs/about/list_of_features.rst:34
 #, fuzzy
@@ -97,7 +99,7 @@ msgstr ":ref:`bool <class_bool>`"
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
-msgstr ""
+msgstr "Godot的目标是尽可能地独立于平台，并且可以相对轻松地移植到新平台。"
 
 #: ../../docs/about/list_of_features.rst:40
 msgid "Editor"
@@ -111,9 +113,8 @@ msgid "**Features:**"
 msgstr "**功能标签**"
 
 #: ../../docs/about/list_of_features.rst:44
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "场景树"
+msgstr "场景树编辑器."
 
 #: ../../docs/about/list_of_features.rst:45
 #, fuzzy
@@ -125,14 +126,17 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"支持:ref:`external script editors <doc_external_editor>`例如 Visual Studio 或"
+"者 VIM 代码。"
 
 #: ../../docs/about/list_of_features.rst:48
+#, fuzzy
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "尚不支持在线程中调试。"
 
 #: ../../docs/about/list_of_features.rst:50
 #, fuzzy
@@ -153,7 +157,7 @@ msgstr "使用场景继承"
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
-msgstr ""
+msgstr "更改会在编辑器中生效并且会在关闭当前项目后保留。"
 
 #: ../../docs/about/list_of_features.rst:54
 #, fuzzy
@@ -164,20 +168,19 @@ msgstr "远程场景树"
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
-msgstr ""
+msgstr "在关闭正在运行的项目后，更改不会被反映在编辑器中，也不会被保留。"
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "摄像机动画"
+msgstr "实时摄像机复制。"
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "移动编辑器中的摄像头，并在正在运行的项目中查看结果。"
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "使用由社区贡献的支持数十种语言的编辑器。"
 
 #: ../../docs/about/list_of_features.rst:60
 #, fuzzy
@@ -185,55 +188,58 @@ msgid "**Plugins:**"
 msgstr "插件"
 
 #: ../../docs/about/list_of_features.rst:62
+#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"编辑器插件可以从:ref:`asset library <doc_what_is_assetlib>`下载，以扩展编辑器"
+"功能。"
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
-msgstr ""
+msgstr "使用 GDScript 创建您自己的插件，以添加新功能或加快工作流程。"
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
-msgstr ""
+msgstr "从项目管理器中的资产库下载项目，然后直接导入。"
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "2D图形"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**有两个渲染器可用：**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 3.0 渲染器（在桌面平台上使用 OpenGL 3.3）。"
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "高端的视觉效果。推荐在桌面平台上使用。"
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 2.0 渲染器（在桌面平台上使用 OpenGL 2.1）。"
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "推荐在移动和 Web 平台上使用。"
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "精灵，多边形和线条渲染。"
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
@@ -245,66 +251,64 @@ msgid "AnimatedSprite as a helper for creating animated sprites."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:82
-#, fuzzy
 msgid "Parallax layers."
-msgstr "Canvas Layers(画布层)"
+msgstr "视差层。"
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "通过自动多次复制同一个图层来支持伪三维。"
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "带法线贴图的 2D 照明。"
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "硬阴影或软阴影。"
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"使用位图（位图字体）的字体呈现或使用 FreeType （动态字体） 进行栅格化。"
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "位图字体可以通过例如 BMFont 的工具被导出。"
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
-msgstr ""
+msgstr "动态字体支持单色字体和彩色字体。支持的格式是 TTF 和 OTF。"
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
-msgstr ""
+msgstr "动态字体支持具有可调整宽度和颜色的可选字体轮廓。"
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
-msgstr ""
+msgstr "支持字体超采样，以在更高的分辨率下保持字体的清晰度。"
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "支持自定义粒子着色器的基于GPU的粒子。"
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "粒子"
+msgstr "基于CPU的粒子。"
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "tool"
+msgstr "2维工具"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "内置平滑和拖动边距的2D相机。"
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Path2D node to represent a path in 2D space."

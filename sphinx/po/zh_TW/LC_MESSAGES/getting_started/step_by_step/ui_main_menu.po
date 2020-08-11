@@ -1,0 +1,616 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
+msgid "Design a title screen"
+msgstr "設計標題畫面"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
+msgid ""
+"In the next two tutorials, you will build two responsive UI (user interface) "
+"scenes step-by-step using the engine's UI system:"
+msgstr ""
+"在接下來的兩個教學中，我們將使用 Godot 的 UI 系統來一步一步製作兩個回應式 UI "
+"界面："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
+msgid "A main menu."
+msgstr "主選單。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
+msgid "A game UI with a health bar, energy bar, bomb and money counters."
+msgstr "有血槽、精力槽、炸彈數與金錢量的遊戲 UI。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
+msgid ""
+"You will learn how to design game UIs efficiently, and how to use Godot's "
+"Control nodes. This page focuses on the visual part: everything you do from "
+"the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
+msgstr ""
+"接著我們將學習如何有效率地設計遊戲 UI，以及如何使用 Godot 的 Control 節點。這"
+"一頁將著重於視覺部分：所有在編輯器上做的事。要瞭解如何以程式碼編寫血槽，請參"
+"考 :doc:`ui_code_a_life_bar` 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
+msgid "The GUI you're going to create."
+msgstr "接著要做的 GUI。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
+msgid ""
+"Download the project files: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
+"project in Godot to follow this tutorial. The ``end/`` folder contains the "
+"final result. You'll find all the sprites in the ``start/assets/main_menu`` "
+"folder."
+msgstr ""
+"先下載專案檔： :download:`ui_main_menu_design.zip <files/ui_main_menu_design."
+"zip>` 並解壓縮。將 ``start/`` 專案匯入至 Godot 並繼續這個教學。 ``end`` 資料"
+"夾包含了最後的成果。所有的 Sprite 都放置於 ``start/assets/main_menu`` 資料夾"
+"中。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
+msgid ""
+"Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
+"UI system works."
+msgstr ""
+"請先閱讀 :doc:`ui_introduction_to_the_ui_system` 以瞭解 Godot 的 UI 系統如何"
+"運作。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
+msgid "How to design your game UI"
+msgstr "如何設計遊戲 UI"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:36
+msgid ""
+"To design a good UI, you want to come up with a rough mockup first: a plain "
+"drawing version that focuses on the placement of your UI components, their "
+"size, and user interaction. Pen and paper is all you need. You shouldn't use "
+"fancy and final graphics at this stage. Then, you only need simple "
+"placeholder sprites and you're good to jump into Godot. You want to make "
+"sure the players can find their way around the interface using those "
+"placeholders."
+msgstr ""
+"在設計 UI 前，通常會先進行粗略地打樣。打樣的重點在於 UI 元件擺放的位置、元件"
+"的大小、以及與使用者互動的方式。只需要使用紙筆就好了，請避免在這個階段做出完"
+"整的視覺圖。只需要一些預留位置用的 Sprite 來給各個元件用就好了，接著便可以到 "
+"Godot 裡開始做。這個階段只需要確保使用者能知道這些預留位置的 Sprite 是用來做"
+"什麼的就好了。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
+msgid "The UI's rough plan or mockup"
+msgstr "粗略的 UI 計劃或打樣"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:48
+msgid ""
+"Placeholder doesn't have to mean ugly, but you should keep the graphics "
+"simple and clean. Avoid special effects, animation, and detailed "
+"illustration before you have players playtest your UI. Otherwise:"
+msgstr ""
+"預留位置 (Placeholder) 不一定要很醜，但應該儘量讓視覺圖簡單並清楚。在玩家開始"
+"測試 UI 前應避免特殊效果、動畫、與太多的細節，否則："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
+msgid ""
+"The graphics might skew the players' perception of the experience and you'll "
+"miss out on valuable feedback."
+msgstr "視覺圖可能會讓玩家有錯誤的期待，並可能讓你錯過了寶貴的回饋。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
+msgid "If the User Experience doesn't work, you'll have to redo some sprites."
+msgstr "若使用者經驗 (UX) 不好時，則可能需要重新設計一些 Sprite。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
+msgid ""
+"Always try to make the interface work with simple text and boxes first. It's "
+"easy to replace the textures later. Professional UX designers often work "
+"with plain outlines and boxes in greyscale. When you take colors and fancy "
+"visuals away, it's a lot easier to size and place UI elements properly. It "
+"helps you refine the design foundation you'll build upon."
+msgstr ""
+"儘量先在界面上使用簡單的文字與框框，之後也很容易以紋理貼圖來替換掉。專業的 "
+"UX 設計師通常只會使用灰階的框線來繪製。一旦忽略顏色與視覺上的細節，便比較能專"
+"注於好好地擺放 UI 的位置與調整大小。這樣一來可以幫助你打好接下來要設計的基"
+"礎。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
+msgid "There are two ways to design your UI in Godot. You can:"
+msgstr "在 Godot 中設計 UI 有兩種方法。你可以："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
+msgid ""
+"Build it all in a single scene, and eventually save some branches as "
+"reusable scenes."
+msgstr ""
+"將所有東西都做在同一個場景內，最後再將其中一些東西分出來變成可以重複使用的場"
+"景。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
+msgid ""
+"Build template scenes for reusable components and create specific components "
+"that inherit from your base scenes."
+msgstr "為可以重複使用的元件建立樣板場景，並以基礎場景來繼承出特定用途的元件。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
+msgid ""
+"We will use the first approach, because the first version of your UI may not "
+"work as well as you'd like. You're likely to throw parts away and redesign "
+"components as you go. When you're sure everything works, it's easy to make "
+"some parts reusable, as you'll see below."
+msgstr ""
+"這裡我們會使用第一種方法，因為初版的 UI 通常會與你所與其的樣子有所落差，會有"
+"一些部分是你想扔掉並重新設計的。當確定所有東西都做好了以後，便能輕鬆整理出可"
+"重複使用的部分。這點我們稍後會看到。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
+msgid ""
+"The files you'll find in Godot. The graphics look cleaner than on the rough "
+"design, but they're still placeholders."
+msgstr ""
+"在 Godot 中可以看到的檔案。這些圖片看起來比粗略的設計還要簡潔，但依然算是預留"
+"位置用的。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
+msgid "Design the main menu"
+msgstr "設計主選單"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:85
+msgid ""
+"Before we jump into the editor, we want to plan how we'll nest containers "
+"based on our mockup image."
+msgstr "在我們進入編輯器以前，必須先依據打樣圖來計劃如何嵌套容器。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
+msgid "Break down the UI mockup"
+msgstr "進一步分解 UI 打樣圖"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
+msgid "Here are my three rules of thumb to find the right containers:"
+msgstr "可以通過下列三條經驗法則來選擇適合的容器："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
+msgid ""
+"Break down the UI into nested boxes, from the largest that contains "
+"everything, to the smallest ones, that encompass one widget, like a bar with "
+"its label, a panel or a button."
+msgstr ""
+"將 UI 拆解成互相嵌套的框框。最大的框框包含所有東西，而最小框框的則放置一些如"
+"帶有標籤的進度條或有按鈕的面板之類的單一界面元素。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
+msgid "If there's some padding around an area, use a ``MarginContainer``."
+msgstr "如果框框的周圍有內邊距，則使用 ``MarginContainer`` 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
+msgid ""
+"If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
+"``VBoxContainer``."
+msgstr ""
+"如果元素是使用行或列來排列的，則使用 ``HBoxContainer`` 或 "
+"``VBoxContainer`` 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
+msgid ""
+"These rules are enough to get us started, and work well for simple "
+"interfaces."
+msgstr "有了這些規則就足夠我們入門了，而且也適用於簡單的界面。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:103
+msgid ""
+"For the main menu, the largest box is the entire game window. There's "
+"padding between the edges of the window and the first components: this "
+"should be a ``MarginContainer``. Then, the screen is split into two columns, "
+"so we'll use an ``HBoxContainer``. In the left column, we'll manage the rows "
+"with a ``VBoxContainer``. And in the right column, we'll center the "
+"illustration with a ``CenterContainer``."
+msgstr ""
+"在主選單中，最大的框框就是整個遊戲視窗。在視窗的邊緣與第一個元素中間有留白，"
+"所以這裡要使用 ``MarginContainer`` 。接著，畫面分隔成兩列，所以我們要用 "
+"``HBoxContainer`` 。左邊的那一列中我們使用 ``VBoxContainer`` 來處理多行排列。"
+"而右邊的那一列則使用 ``CenterContainer`` 來把插圖置中。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
+msgid "Interface building blocks, broken down using the three rules of thumb."
+msgstr "界面的各個區塊。依據上面提到的三個原則來分解。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
+msgid ""
+"Containers adapt to the window's resolution and width-to-height ratio. "
+"Although we could place UI elements by hand, containers are faster, more "
+"precise, and **responsive**."
+msgstr ""
+"容器會依據視窗的解析度與長寬比自動調整。雖然也可以手動來擺放 UI 元素，但使用 "
+"Container 更快、更精準，且使用 Container 是 **回應式** (Responsive) 的。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
+msgid "Prepare the Main Menu scene"
+msgstr "準備主選單場景"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
+msgid ""
+"This tutorial is based on a window size of 1366×768. To change the project's "
+"base window size, open **Project > Project Settings** at the top of the "
+"editor then change **Display > Window > Size > Width** to ``1366`` and "
+"**Display > Window > Size > Height** to ``768``."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+msgid ""
+"If you forget to change the window size, anchors and containers may not "
+"behave as expected."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
+msgid ""
+"Let's create the main menu. We'll build it in a single scene. To create an "
+"empty scene, click on **Scene > New Scene**."
+msgstr ""
+"接著來製作主選單。我們先在單一場景內製作。點擊 **場景 > 新增場景** 來建立一個"
+"空白場景。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
+msgid ""
+"We have to add a root node before we can save the scene. Your UI's root "
+"should be the outermost container or element. In this case it's a "
+"``MarginContainer``. ``MarginContainer`` is a good starting point for most "
+"interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:"
+"kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
+msgstr ""
+"在保存場景前要先新增一個根節點。UI 的根節點應該是最外層的 Container 或元素。"
+"在這個例子中則是 ``MarginContainer`` 。對於大多數的界面來說都可以用 "
+"``MarginContainer`` ，因為 UI 的周圍通常都需要留白。按 :kbd:`Ctrl + S` （或"
+"是 macOS 上 :kbd:`Cmd + S` ）來將場景保存至硬碟上。將其命名為 **主場景** 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
+msgid ""
+"Select the ``MarginContainer`` again, and head to the inspector to define "
+"the margins' size. Scroll down the ``Control`` class, to the ``Custom "
+"Constants`` section. Unfold it. Set the margins as such:"
+msgstr ""
+"再次選擇 ``MarginContainer`` ，並到屬性面板中設定外邊距 (Margin) 的大小。向下"
+"滾動 ``Control`` 類別至 ``Custom Constants`` （自定常數）段落。展開 Custom "
+"Constants 並設定外邊距如下："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
+msgid "Margin Right: *120*"
+msgstr "Margin Right（右外邊距）：120"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
+msgid "Margin Top: *80*"
+msgstr "Margin Top（上外邊距）：80"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
+msgid "Margin Left: *120*"
+msgstr "Margin Left（左外邊距）：120"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
+msgid "Margin Bottom: *80*"
+msgstr "Margin Bottom（下外邊距）：80"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
+msgid ""
+"We want the container to fit the window. In the toolbar above the Viewport, "
+"open the **Layout** menu and select the last option, **Full Rect**."
+msgstr ""
+"接著我們讓 Container 填滿視窗。在檢視區上方的工具列中點開 **畫面配置** 選單並"
+"選擇最後一個選項： **全矩形** 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
+msgid "Add the UI sprites"
+msgstr "新增 UI Sprite"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
+msgid ""
+"Select the ``MarginContainer``, and create the UI elements as "
+"``TextureRect`` nodes. We need:"
+msgstr ""
+"選擇 ``MarginContainer`` ，並建立如 ``TextureRect`` 的 UI 元素節點。我們需"
+"要："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
+msgid "the title or logo,"
+msgstr "標題或 LOGO，"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
+msgid "the three text options as individual nodes,"
+msgstr "三個文字選項，每個都是單獨的節點，"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
+msgid "the version note,"
+msgstr "版本註解，"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
+msgid "and the main menu's illustration."
+msgstr "以及主選單的插圖。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
+msgid ""
+"Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
+"macOS) on your keyboard. Start to type ``TextureRect`` to find the "
+"corresponding node and press enter. With the new node selected, press :kbd:"
+"`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
+"``TextureRect`` instances."
+msgstr ""
+"點擊 **新增節點** 按鈕或是使用鍵盤快捷鍵 :kbd:`Ctrl + A` （或是 macOS 上 :"
+"kbd:`Cmd + A` ）。輸入 ``TextureRect`` 來搜尋對應的節點並按 Enter 鍵。選擇新"
+"增的節點後，按 :kbd:`Ctrl + D` （或是 macOS 上 :kbd:`Cmd + D` ）五次來建立另"
+"外五個 ``TextureRect`` 實體。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
+msgid ""
+"Click each of the nodes to select it. In the inspector, find the **Texture** "
+"property and click **[empty] > Load**. A file browser opens and lets you "
+"pick a sprite to load into the texture slot."
+msgstr ""
+"分別點擊來選中各個節點。在屬性面板中找到 **Texture** （紋理貼圖），並點擊 "
+"**[空] > 載入** 。接著會顯示檔案瀏覽器，可以選擇要載入進紋理貼圖欄位用的 "
+"Sprite。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
+msgid "The file browser lets you find and load textures."
+msgstr "可以在檔案瀏覽器內找到並載入紋理貼圖。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
+msgid ""
+"Repeat the operation for all ``TextureRect`` nodes. You should have the "
+"logo, the illustration, the three menu options and the version note, each as "
+"a separate node. Then, double click on each of the nodes in the Scene tab to "
+"rename them. Nothing has been placed in containers yet so this should look "
+"messy."
+msgstr ""
+"在每個 ``TextureRect`` 節點上重複這個步驟。現在我們應該有了 Logo、插圖、三個"
+"選單的選項、以及版本節點。這幾個項目應該都是各自獨立的節點。接著，在場景分頁"
+"中的各個節點上點兩下並重新命名。我們還沒把東西放在 Container 內，所以現在看起"
+"來應該亂亂的。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
+msgid "The six nodes with textures loaded."
+msgstr "六個有設定好紋理貼圖的節點。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
+msgid ""
+"If you want to support localization in your game, use ``Labels`` for menu "
+"options instead of ``TextureRect``."
+msgstr ""
+"如果想在遊戲中支援多語言，可以在選單項目上使用 ``Label`` 來代替 "
+"``TextureRect`` 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
+msgid "Add containers to place UI elements automatically"
+msgstr "新增容器來自動擺放 UI 元素"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
+msgid ""
+"Our main menu has some margin around the edges of the screen. It is split in "
+"two parts: on the left, you have the logo and the menu options. On the "
+"right, you have the characters. We can use one of two containers to achieve "
+"this: ``HSplitContainer`` or ``HBoxContainer``. Split containers split the "
+"area into two: a left and a right side or a top and a bottom side. They also "
+"allow the user to resize the left and right areas using an interactive bar. "
+"On the other hand, ``HBoxContainer`` just splits itself into as many columns "
+"as it has children. Although you can deactivate the split container's resize "
+"behavior, I recommend to favor box containers."
+msgstr ""
+"主選單的周圍有留白，中間則分成兩個部分：左邊有 Logo 與選單項目，右邊有 "
+"Characters。我們可以使用 ``HSplitContainer`` 或 ``HBoxContainer`` 的其中一"
+"個。SplitContainer 會將區塊分隔成左右兩邊或上下兩邊。SplitContainer 也可以讓"
+"使用者使用可互動的伸縮條來調整左右區塊的大小。另外， ``HBoxContainer`` 則是有"
+"幾個子節點就分割成幾列。雖然 SplitContainer 的縮放功能可以關閉，但我還是建議"
+"使用 Box Container。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
+msgid ""
+"Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
+"two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
+"the menu options on the left, and a ``CenterContainer`` for the illustration "
+"on the right."
+msgstr ""
+"選擇 ``MarginContainer`` 並新增一個 ``HboxContainer`` 。接著，我們需要為 "
+"``HBoxContainer`` 新增兩個子容器：左側選單項目用的 ``VBoxContainer`` 以及右側"
+"插圖用的 ``CenterContainer`` 。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
+msgid ""
+"You should have four nested containers and the TextureRect nodes sitting "
+"aside from it."
+msgstr "現在應該有四個嵌套的容器以及其中的各個 TextureRect。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
+msgid ""
+"In the node tree, select all the ``TextureRect`` nodes that should go on the "
+"left side: the logo, the menu options (Continue, NewGame, Options), and the "
+"version note. Drag and drop them into the ``VBoxContainer``. The nodes "
+"should position automatically."
+msgstr ""
+"在節點樹中選擇所有要放在左邊的 ``TextRect`` ：Logo、選單項目（繼續、新遊戲、"
+"選項），以及版本備註。將這幾個節點拖曳到 ``VBoxContainer`` 中。接著這些節點應"
+"該會自動排列好。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
+msgid "Containers automatically place and resize textures"
+msgstr "容器自動排放與縮放紋理貼圖"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
+msgid "We're left with two problems to solve:"
+msgstr "接著我們還有兩個問題要解決："
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
+msgid "The characters on the right aren't centered."
+msgstr "右邊的 Characters 沒有置中。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
+msgid "There's no space between the logo and the other UI elements."
+msgstr "Logo 與其他 UI 元素間沒有空格。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
+msgid ""
+"To center the characters on the right, first select the ``CenterContainer``. "
+"Then in the Inspector, scroll down to the **Size Flags** category and click "
+"on the field to the right of the **Vertical** property, and check **Expand** "
+"in addition to **Fill**. Do the same for the **Horizontal** property. This "
+"makes the ``CenterContainer`` expand into all available space while "
+"respecting its neighbour ``VBoxContainer``. Finally, drag and drop the "
+"Characters node into the ``CenterContainer``. The Characters element will "
+"center automatically."
+msgstr ""
+"接下來我們要把右邊的 Characters 置中。先選擇 ``CenterContainer`` ，然後在屬性"
+"面板中找到 **Size Flags** （大小旗標）分類，並點擊 **Vertical** （垂直）屬性"
+"右邊的欄位，並將 **Fill** （填充）與 **Expand** （延展）打勾。接著在 "
+"**Horizontal** （水平）上做相同的設定。這樣一來 ``CenterContainer`` 就會在不"
+"擠壓相鄰的 ``BoxContainer`` 節點的情況下同時填滿所有可用空間。最後，將 "
+"Characters 節點拖曳到 ``CenterContainer`` 裡，Characters 元素會自動置中。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
+msgid ""
+"The character node centers inside the right half of the screen as soon as "
+"you place it inside the CenterContainer."
+msgstr "在畫面右半邊的 Characters 節點會在放入 CenterContainer 後立刻置中。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
+msgid ""
+"To space out the menu options and the logo on the left, we'll use one final "
+"container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
+"`Ctrl + A` (:kbd:`Cmd + A` on macOS) to add a new node inside it. Add a "
+"second ``VBoxContainer`` and name it *MenuOptions*. Select all three menu "
+"options, ``Continue``, ``NewGame`` and ``Options``, and drag and drop them "
+"inside the new ``VBoxContainer``. The UI's layout should barely change, if "
+"at all."
+msgstr ""
+"要為左邊的選單選項與 Logo 加上間隙，我們需要再使用一個容器，並設定大小旗標。"
+"選擇 ``VBoxContainer`` 並按鍵盤 :kbd:`Ctrl + A` （或是 macOS 上 :kbd:`Cmd + "
+"A` ）來在 VBoxContainer 內新增節點。接著再新增第二個 ``VBoxCOntainer`` 並命名"
+"為 **MenuOptions** （選單項目）。選擇所有選單項目： ``Continue`` 、 "
+"``NewGame`` 、與 ``Options`` ，並將這幾個選項拖曳至剛才新建的 "
+"``VBoxContainer`` 中。界面的畫面配置大致看起來應該還跟剛才差不多。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
+msgid ""
+"Place the new container between the other two nodes to retain the UI's "
+"layout."
+msgstr "在其他兩個節點中間放置一個新的容器來維持 UI 的畫面配置。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
+msgid ""
+"Now we grouped the menu options together, we can tell their container to "
+"expand to take as much vertical space as possible. Select the "
+"``MenuOptions`` node. In the Inspector, scroll down to the **Size Flags** "
+"category. Click on the field to the right of the **Vertical** property, and "
+"check **Expand** in addition to **Fill**. The container expands to take all "
+"the available vertical space while respecting its neighbors, the ``Logo`` "
+"and ``Version`` elements."
+msgstr ""
+"我們現在已經把所有選單選項都放在同一個群組內了，接著我們要讓這個選單選項的容"
+"器來儘可能在垂直方向伸展，佔掉所有可用的空間。選擇 ``MenuOptions`` 節點，並在"
+"屬性面板中往下滾動找到 **Size Flags** 分類。點擊 **Vertical** 屬性右邊的欄位"
+"並勾選 **Fill** 與 **Expand** 。接著容器應該會佔滿縱向所有可用的空間，但同時"
+"不會去擠壓到同級節點的 ``Logo`` 與 ``Version`` 元素。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
+msgid ""
+"To center the nodes in the ``VBoxContainer``, scroll to the top of the "
+"Inspector and change the **Alignment** property to **Center**."
+msgstr ""
+"要將 ``VBoxContainer`` 容器中的節點置中，在屬性面板內滾動到最上面，並將 "
+"**Alignment** （對齊）屬性設為 **Center** （中央）。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
+msgid "The menu options should center vertically in the UI's left column."
+msgstr "現在 UI 左側的選單選項應該垂直置中了。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
+msgid ""
+"To wrap things up, let's add some separation between the menu options. "
+"Expand the **Custom Constants** category below **Size Flags**, and click the "
+"field next to the **Separation** parameter. Set it to 30. Once you press "
+"enter, the **Separation** property becomes active and Godot adds 30 pixels "
+"between menu options."
+msgstr ""
+"最後，讓我們來在選單項目中間加點空白。展開 **Size Flags** 底下的 **Custom "
+"Constants** 分類，接著點擊 **Separation** （分隔）參數旁邊的欄位並設為 30。按"
+"下 Enter 之後， **Separation** 屬性變會變為有效狀態，而 Godot 會自動在選單項"
+"目間加上 30px 的空白。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
+msgid "The final interface."
+msgstr "最終界面。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
+msgid ""
+"Without a single line of code, we have a precise and responsive main menu."
+msgstr "連一行程式碼都不用寫，我們就做好了精準排放的回應式主選單。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
+msgid ""
+"Congratulations for getting there! You can download the final menu :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
+"your own. In the next tutorial, you'll create a Game User Interface with "
+"bars and item counters."
+msgstr ""
+"恭喜完成！你可以下載最後的成品 :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` 並與你自己完成的結果比較一下。下一個教學我們會接著"
+"製作有血槽與道具計數器的遊戲的界面。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
+msgid ""
+"A responsive User Interface is all about making sure our UIs scale well on "
+"all screen types. TV screens and computer displays have different sizes and "
+"ratios. In Godot, we use containers to control the position and the size of "
+"UI elements."
+msgstr ""
+"製作回應式使用者界面的重點就在於確保 UI 能在各種螢幕類型間正確縮放。電影螢幕"
+"與電腦的顯示器有不同的大小與長寬比。在 Godot 中，我們使用 Container 來控制 "
+"UI 元素的位置與大小。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
+msgid ""
+"The order in which you nest matters. To see if your UI adapts nicely to "
+"different screen ratios, select the root node, press :kbd:`Q` to activate "
+"the Select Mode, select the container and click and drag on one of the "
+"container's corners to resize it. The UI components should flow inside of it."
+msgstr ""
+"嵌套的順序很重要。如果要看看你做出來的 UI 有沒有正確反映在不同的螢幕長寬比"
+"上，可以先選擇根節點，然後按鍵盤 :kbd:`Q` 來開啟選擇模式 (Select Mode)，接著"
+"選擇 Container 並拖曳 Container 的角落來縮放。UI 元素應該會在 Container 當中"
+"流暢移動。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
+msgid ""
+"You'll notice that although containers move sprites around, they don't scale "
+"them. This is normal. We want the UI system to handle different screen "
+"ratios, but we also need the entire game to adapt to different screen "
+"resolutions. To do this, Godot scales the entire window up and down."
+msgstr ""
+"你可能有發現，雖然 Container 會移動 Sprite，但是並不會對 Sprite 進行縮放。這"
+"很正常，因為我們除了要讓 UI 系統可以處理不同的螢幕比率，還需要讓整個遊戲都能"
+"配合不同的螢幕解析度。為此，Godot 會將整個視窗進行縮放。"
+
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
+msgid ""
+"You can change the scale mode in the project settings: click **Project > "
+"Project Settings** in the top menu. In the window's left column, look for "
+"the **Display** category. Click on the **Window** sub-category. On the right "
+"side of the window, you'll find a **Stretch** section. The three settings, "
+"**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
+"information, see :ref:`doc_multiple_resolutions`."
+msgstr ""
+"你可以在專案設定中修改縮放模式：在頂部選單中點擊 **專案 > 專案設定** 。在視窗"
+"左邊找到 **Display（顯示）** 分類，點擊 **Window（視窗）** 子分類。再來可以在"
+"視窗的右邊找到 **Stretch（拉伸）** 段落。其中的三個設定： **Mode（模式）"
+"** 、 **Aspect（比率）** 、與 **Shrink（延展）** 可以控制螢幕的大小。詳細資訊"
+"請參考 :ref:`doc_multiple_resolutions` 。"

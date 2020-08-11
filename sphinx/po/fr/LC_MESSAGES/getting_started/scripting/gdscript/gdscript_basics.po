@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -833,119 +833,113 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
 "Une séquence de caractères au `format Unicode <https://en.wikipedia.org/wiki/"
-"Unicode>`. Les chaînes de caractère peuvent contenir `des séquences "
-"d'échappement C standard <https://en.wikipedia.org/wiki/"
-"Escape_sequences_in_C>`_. GDScript prend également en charge :ref:"
-"`doc_gdscript_printf`."
+"Unicode>`. Les chaînes de caractère peuvent contenir les séquences "
+"d'échappement suivante :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
-#, fuzzy
 msgid "**Escape sequence**"
-msgstr "Séquence d'échappement"
+msgstr "**Séquence d'échappement**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
 msgid "**Expands to**"
-msgstr ""
+msgstr "**S’étend à**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:362
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:362
 msgid "Newline (line feed)"
-msgstr ""
+msgstr "Nouvelle ligne (line feed)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid "Horizontal tab character"
-msgstr ""
+msgstr "Caractère de tabulation horizontale"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
 msgid "Carriage return"
-msgstr ""
+msgstr "Retour chariot"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
 msgid "Alert (beep/bell)"
-msgstr ""
+msgstr "Alerte (bip/cloche)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "Backspace"
-msgstr ""
+msgstr "Retour en arrière"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "Formfeed page break"
-msgstr ""
+msgstr "Saut de page Formfeed"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
-#, fuzzy
 msgid "Vertical tab character"
-msgstr "Personnage cinématique (2D)"
+msgstr "Caractère de tabulation verticale"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Double quote"
-msgstr ""
+msgstr "Guillemet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
-#, fuzzy
 msgid "Single quote"
-msgstr "Singletons"
+msgstr "Citation unique"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Backslash"
-msgstr ""
+msgstr "Antislash"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
+msgstr "Point de code Unicode ``XXXX`` (hexadécimal, non sensible à la casse)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
-msgstr ""
+msgstr "GDScript prend également en charge :ref:`doc_gdscript_printf`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid "Vector built-in types"
@@ -2162,14 +2156,15 @@ msgid "Memory management"
 msgstr "Gestion de la mémoire"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1314
+#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
 "counting. By default, all classes that don't define inheritance extend "
 "**Reference**. If this is not desired, then a class must inherit :ref:"
-"`class_Object` manually and must call instance.free(). To avoid reference "
-"cycles that can't be freed, a ``weakref`` function is provided for creating "
-"weak references."
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a ``weakref`` function is provided for "
+"creating weak references."
 msgstr ""
 "Si une classe hérite de :ref:`class_Reference`, les instances seront "
 "libérées lorsqu'elles ne seront plus utilisées. Il n'y a pas de Garbage "

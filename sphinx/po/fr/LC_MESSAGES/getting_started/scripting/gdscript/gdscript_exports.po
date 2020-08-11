@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,29 +89,28 @@ msgid "Exporting bit flags"
 msgstr "Exportation bit flags"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
 "Les nombres entiers utilisés comme bit flags peuvent stocker plusieurs "
-"valeurs ```true``/``false`` (booléen) dans une propriété. En utilisant "
-"l'indication d'exportation ``int, FLAGS``, ils peuvent être réglés depuis "
-"l'éditeur :"
+"valeurs ``true``/``false`` (booléen) dans une propriété. En utilisant "
+"l'indication d'exportation ``int, FLAGS, ...``, ils peuvent être réglés "
+"depuis l'éditeur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"Dans cet exemple, ``Feu`` a la valeur 1, ``Eau`` a la valeur 2, ``Terre`` a "
-"la valeur 4 et ``Vent`` correspond à la valeur 8. Généralement, les "
-"constantes doivent être définies en conséquence (p. ex. ``const ELEMENT_VENT "
-"= 8`` et ainsi de suite)."
+"Vous devez fournir une description sous forme de chaîne de caractère pour "
+"chaque flag. Dans cet exemple, ``Feu`` a la valeur 1, ``Eau`` a la valeur 2, "
+"``Terre`` a la valeur 4 et ``Vent`` correspond à la valeur 8. Généralement, "
+"les constantes doivent être définies en conséquence (p. ex. ``const "
+"ELEMENT_VENT = 8`` et ainsi de suite)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
@@ -122,14 +121,13 @@ msgstr ""
 "et de rendu définies dans les paramètres du projet :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
 "L'utilisation de bit flags nécessite une certaine compréhension des "
-"opérations sur les bits. En cas de doute, des variables booléennes doivent "
-"être exportées à la place."
+"opérations sur les bits. En cas de doute, utilisez des variables booléennes "
+"à la place."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
@@ -139,6 +137,8 @@ msgstr "Exportation de tableaux"
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Les arrays exportés peuvent avoir des initialisateurs, mais ils doivent être "
+"des expressions constantes."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""

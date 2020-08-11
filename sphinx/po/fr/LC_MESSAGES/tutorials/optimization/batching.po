@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/batching.rst:4
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "Optimisations en utilisant des MultiMeshes"
+msgstr "Optimisation à l'aide de traitement par lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:7
 msgid "Introduction"
@@ -33,6 +32,10 @@ msgid ""
 "instructions, called APIs (Application Programming Interfaces), examples of "
 "which are OpenGL, OpenGL ES, and Vulkan."
 msgstr ""
+"Les moteurs de jeu doivent envoyer un ensemble d'instructions au GPU afin de "
+"lui dire quoi et où dessiner. Ces instructions sont envoyées à l'aide "
+"d'instructions communes, appelées API (Application Programming Interfaces), "
+"dont les exemples sont OpenGL, OpenGL ES et Vulkan."
 
 #: ../../docs/tutorials/optimization/batching.rst:14
 msgid ""
@@ -41,11 +44,14 @@ msgid ""
 "draw calls. As a result, applications can often be sped up by reducing the "
 "number of draw calls."
 msgstr ""
+"Différentes API entraînent des coûts différents lors du dessin des objets. "
+"OpenGL gère beaucoup de travail pour l'utilisateur dans le pilote GPU, au "
+"prix de draw calls plus coûteux. Par conséquent, il est souvent possible "
+"d'accélérer les applications en réduisant le nombre dedraw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:20
-#, fuzzy
 msgid "Draw calls"
-msgstr "Inconvénients"
+msgstr "Draw calls"
 
 #: ../../docs/tutorials/optimization/batching.rst:22
 msgid ""
@@ -55,6 +61,12 @@ msgid ""
 "texture used, the material, the position, size, etc. then saying \"Draw!"
 "\" (this is called a draw call)."
 msgstr ""
+"En 2D, nous devons indiquer au GPU de rendre une série de primitives "
+"(rectangles, lignes, polygones, etc.). La technique la plus évidente "
+"consiste à dire au GPU de rendre une primitive à la fois, en lui donnant "
+"certaines informations telles que la texture utilisée, le matériau, la "
+"position, la taille, etc. puis en disant \"Dessine !\" (c'est ce qu'on "
+"appelle un draw call)."
 
 #: ../../docs/tutorials/optimization/batching.rst:28
 msgid ""
@@ -64,12 +76,21 @@ msgid ""
 "them to draw a number of similar primitives all in one draw call, which we "
 "will call a \"batch\"."
 msgstr ""
+"Il s'avère que, bien que cela soit conceptuellement simple du côté du "
+"moteur, les GPU fonctionnent très lentement lorsqu'ils sont utilisés de "
+"cette manière. Les GPU fonctionnent beaucoup plus efficacement si, au lieu "
+"de leur dire de dessiner une seule primitive, vous leur dites de dessiner un "
+"certain nombre de primitives similaires en un seul draw call, que nous "
+"appellerons \"batch\" (lot)."
 
 #: ../../docs/tutorials/optimization/batching.rst:33
 msgid ""
 "And it turns out that they don't just work a bit faster when used in this "
 "manner, they work a *lot* faster."
 msgstr ""
+"Et il s'avère qu'ils ne travaillent pas seulement un peu plus vite "
+"lorsqu'ils sont utilisés de cette manière, ils travaillent *beaucoup* plus "
+"vite."
 
 #: ../../docs/tutorials/optimization/batching.rst:36
 msgid ""
@@ -81,11 +102,18 @@ msgid ""
 "send these batches on to the GPU. This can give an increase in rendering "
 "performance while requiring few, if any, changes to your Godot project."
 msgstr ""
+"Comme Godot est conçu pour être un moteur polyvalent, les primitives entrant "
+"dans le moteur de rendu de Godot peuvent être dans n'importe quel ordre, "
+"parfois similaires, parfois dissemblables. Afin de faire correspondre la "
+"nature généraliste de Godot avec les préférences de traitement par lots des "
+"GPU, Godot comporte une couche intermédiaire qui peut automatiquement "
+"regrouper les primitives lorsque cela est possible, et envoyer ces lots sur "
+"le GPU. Cela peut augmenter les performances de rendu tout en n'exigeant que "
+"peu ou pas de modifications de votre projet Godot."
 
 #: ../../docs/tutorials/optimization/batching.rst:45
-#, fuzzy
 msgid "How it works"
-msgstr "Comment ça marche ?"
+msgstr "Comment ça marche"
 
 #: ../../docs/tutorials/optimization/batching.rst:47
 msgid ""
@@ -97,23 +125,34 @@ msgid ""
 "respectively). Others, such as sprites, may only contain a single command "
 "(rectangle)."
 msgstr ""
+"Les instructions arrivent dans le moteur de rendu de votre jeu sous la forme "
+"d'une série d'objets, chacun pouvant contenir une ou plusieurs commandes. "
+"Les objets correspondent à des nœuds dans l'arbre des scènes, et les "
+"commandes correspondent à des primitives telles que des rectangles ou des "
+"polygones. Certains objets, comme les tilemaps et le texte, peuvent contenir "
+"un grand nombre de commandes (respectivement des tuiles et des lettres). "
+"D'autres, tels que les sprites, peuvent ne contenir qu'une seule commande "
+"(rectangle)."
 
 #: ../../docs/tutorials/optimization/batching.rst:54
 msgid "The batcher uses two main techniques to group together primitives:"
 msgstr ""
+"Le traitement par lots utilise deux techniques principales pour regrouper "
+"les primitives :"
 
 #: ../../docs/tutorials/optimization/batching.rst:56
 msgid "Consecutive items can be joined together"
-msgstr ""
+msgstr "Les éléments consécutifs peuvent être réunis ensemble"
 
 #: ../../docs/tutorials/optimization/batching.rst:57
 msgid "Consecutive commands within an item can be joined to form a batch"
 msgstr ""
+"Les commandes consécutives dans un élément peuvent être jointes pour former "
+"un lot"
 
 #: ../../docs/tutorials/optimization/batching.rst:60
-#, fuzzy
 msgid "Breaking batching"
-msgstr "Les Branches"
+msgstr "Rupture de traitement par lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:62
 msgid ""
@@ -122,6 +161,10 @@ msgid ""
 "prevent the formation of a contiguous batch, this is referred to as "
 "'breaking batching'."
 msgstr ""
+"Les lots ne peuvent avoir lieu que si les éléments ou les commandes sont "
+"suffisamment similaires pour être rendus en un draw call. Certaines "
+"modifications (ou techniques) empêchent par nécessité la formation d'un lot "
+"contigu, c'est ce qu'on appelle le 'breaking batching'."
 
 #: ../../docs/tutorials/optimization/batching.rst:66
 msgid ""
@@ -129,17 +172,21 @@ msgid ""
 "Change of material * Change of primitive type (say going from rectangles to "
 "lines)"
 msgstr ""
+"Le traitement par lots sera cassé par (entre autres) : * Changement de "
+"texture * Changement de matériau * Changement de type primitif (par exemple, "
+"passer de rectangles à des lignes)"
 
 #: ../../docs/tutorials/optimization/batching.rst:73
 msgid ""
 "If for example, you draw a series of sprites each with a different texture, "
 "there is no way they can be batched."
 msgstr ""
+"Si, par exemple, vous dessinez une série de sprites ayant chacun une texture "
+"différente, il n'y a aucune possibilité de les regrouper."
 
 #: ../../docs/tutorials/optimization/batching.rst:77
-#, fuzzy
 msgid "Render order"
-msgstr "Mode de rendu"
+msgstr "Ordre de rendu"
 
 #: ../../docs/tutorials/optimization/batching.rst:79
 msgid ""
@@ -147,6 +194,9 @@ msgid ""
 "why don't we look through all the items in a scene, group together all the "
 "similar items, and draw them together?"
 msgstr ""
+"La question se pose : si seuls des objets similaires peuvent être rassemblés "
+"dans un lot, pourquoi ne pas examiner tous les objets d'une scène, regrouper "
+"tous les objets similaires et les dessiner ensemble ?"
 
 #: ../../docs/tutorials/optimization/batching.rst:83
 msgid ""
@@ -154,6 +204,11 @@ msgid ""
 "are drawn in 'painter's order', from back to front. This ensures that items "
 "at the front are drawn on top of earlier items, when they overlap."
 msgstr ""
+"En 3D, c'est souvent exactement comme cela que les moteurs fonctionnent. "
+"Cependant, dans Godot 2D, les objets sont dessinés dans 'l'ordre du "
+"peintre', de l'arrière vers l'avant. Cela permet de s'assurer que les "
+"éléments à l'avant sont dessinés par-dessus les éléments précédents, "
+"lorsqu'ils se chevauchent."
 
 #: ../../docs/tutorials/optimization/batching.rst:87
 msgid ""
@@ -161,12 +216,18 @@ msgid ""
 "texture, then this painter's order may break and objects will be drawn in "
 "the wrong order."
 msgstr ""
+"Cela signifie également que si nous essayons de dessiner des objets dans "
+"l'ordre, par exemple, de texture, l'ordre de peintre peut casser et les "
+"objets seront dessinés dans le mauvais ordre."
 
 #: ../../docs/tutorials/optimization/batching.rst:91
 msgid ""
 "In Godot this back to front order is determined by: * The order of objects "
 "in the scene tree * The Z index of objects * The canvas layer * Y sort nodes"
 msgstr ""
+"Dans Godot, cet ordre de l'arrière vers l'avant est déterminé par : *L'ordre "
+"des objets dans l'arbre de la scène* L'indice Z des objets *La couche de "
+"canvas* Les nœuds Y sort"
 
 #: ../../docs/tutorials/optimization/batching.rst:99
 msgid ""
@@ -175,11 +236,15 @@ msgid ""
 "can improve performance in some cases. See the diagnostics section in order "
 "to help you make this decision."
 msgstr ""
+"Vous pouvez regrouper des objets similaires pour faciliter le traitement par "
+"lot. Bien que cela ne soit pas une obligation de votre part, considérez que "
+"c'est une approche optionnelle qui peut améliorer les performances dans "
+"certains cas. Consultez la section diagnostique pour vous aider à prendre "
+"cette décision."
 
 #: ../../docs/tutorials/optimization/batching.rst:105
-#, fuzzy
 msgid "A trick"
-msgstr "Les briques"
+msgstr "Une astuce"
 
 #: ../../docs/tutorials/optimization/batching.rst:107
 msgid ""
@@ -187,16 +252,22 @@ msgid ""
 "objects are rendered from back to front, consider 3 objects A, B and C, that "
 "contain 2 different textures, grass and wood."
 msgstr ""
+"Et maintenant un tour de passe-passe. Bien que l'idée de l'ordre du peintre "
+"soit que les objets sont rendus de l'arrière vers l'avant, considérez 3 "
+"objets A, B et C, qui contiennent 2 textures différentes, de l'herbe et du "
+"bois."
 
 #: ../../docs/tutorials/optimization/batching.rst:113
 msgid "In painter's order they are ordered:"
-msgstr ""
+msgstr "Dans l'ordre du peintre, ils sont ordonnés :"
 
 #: ../../docs/tutorials/optimization/batching.rst:121
 msgid ""
 "Because the texture changes, they cannot be batched, and will be rendered in "
 "3 draw calls."
 msgstr ""
+"Comme la texture change, ils ne peuvent pas être mis en lots et seront "
+"rendus en 3 draw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:124
 msgid ""
@@ -206,10 +277,15 @@ msgid ""
 "order. The rendered result will be the same. What if we could take advantage "
 "of this?"
 msgstr ""
+"Cependant, l'ordre du peintre n'est nécessaire que dans l'hypothèse où ils "
+"seront dessinés *sur le dessus* les uns des autres. Si nous assouplissons "
+"cette hypothèse, c'est-à-dire si aucun de ces trois objets ne se "
+"chevauchent, il n'est *pas nécessaire* de préserver l'ordre du peintre. Le "
+"résultat rendu sera le même. Et si nous pouvions en tirer profit ?"
 
 #: ../../docs/tutorials/optimization/batching.rst:130
 msgid "Item reordering"
-msgstr ""
+msgstr "Réorganisation des éléments"
 
 #: ../../docs/tutorials/optimization/batching.rst:134
 msgid ""
@@ -221,12 +297,23 @@ msgid ""
 "number of items to lookahead for reordering can be set in project settings "
 "(see below), in order to balance the costs and benefits in your project."
 msgstr ""
+"Il s'avère que nous pouvons réorganiser les éléments. Toutefois, nous ne "
+"pouvons le faire que si les éléments remplissent les conditions d'un test de "
+"chevauchement, afin de garantir que le résultat final sera le même que s'ils "
+"n'étaient pas réorganisés. Le test de chevauchement est très bon marché en "
+"termes de performance, mais il n'est pas absolument gratuit, de sorte qu'il "
+"y a un léger coût à tester pour décider si les éléments peuvent être "
+"réorganisés. Le nombre d'éléments à tester pour réorganisation peut être "
+"défini dans les paramètres du projet (voir ci-dessous), afin d'équilibrer "
+"les coûts et les bénéfices dans votre projet."
 
 #: ../../docs/tutorials/optimization/batching.rst:148
 msgid ""
 "Because the texture only changes once, we can render the above in only 2 "
 "draw calls."
 msgstr ""
+"Comme la texture ne change qu'une seule fois, nous pouvons rendre ce qui "
+"précède en seulement 2 draw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:152
 msgid "Lights"
@@ -241,6 +328,13 @@ msgid ""
 "lights they would be batched together and drawn in one draw call. But with 3 "
 "lights, they would be drawn as follows, each line a draw call:"
 msgstr ""
+"Bien que le travail du système de traitement par lots soit normalement assez "
+"simple, il devient considérablement plus complexe lorsque des lumières 2D "
+"sont utilisées, car les lumières sont dessinées à l'aide de passes "
+"supplémentaires, une pour chaque lumière affectant la primitive. Considérez "
+"2 sprites A et B, avec une texture et un matériau identiques. Sans lumières, "
+"ils seraient regroupés et dessiné en un seul appel. Mais avec 3 lumières, "
+"ils seraient dessinés comme suit, chaque ligne un draw call :"
 
 #: ../../docs/tutorials/optimization/batching.rst:174
 msgid ""
@@ -249,43 +343,55 @@ msgid ""
 "and performance suffers. This is partly why lights have the potential to "
 "drastically slow down 2D."
 msgstr ""
+"Cela fait beaucoup draw calls, 8 pour seulement 2 sprites. Si l'on considère "
+"que nous dessinons 1000 sprites, le nombre de draw calls devient rapidement "
+"astronomique, et les performances en souffrent. C'est en partie pour cette "
+"raison que les lumières ont le potentiel de ralentir considérablement la 2D."
 
 #: ../../docs/tutorials/optimization/batching.rst:179
 msgid ""
 "However, if you remember our magician's trick from item reordering, it turns "
 "out we can use the same trick to get around painter's order for lights!"
 msgstr ""
+"Cependant, si vous vous souvenez de notre astuce de magicien lors de la "
+"réorganisation des objets, il s'avère que nous pouvons utiliser la même "
+"astuce pour contourner l'ordre du peintre pour les lumières !"
 
 #: ../../docs/tutorials/optimization/batching.rst:182
 msgid ""
 "If A and B are not overlapping, we can render them together in a batch, so "
 "the draw process is as follows:"
 msgstr ""
+"Si A et B ne se chevauchent pas, nous pouvons les rendre ensemble dans un "
+"lot, le processus de dessin est donc le suivant :"
 
 #: ../../docs/tutorials/optimization/batching.rst:195
 msgid ""
 "That is 4 draw calls. Not bad, that is a 50% improvement. However consider "
 "that in a real game, you might be drawing closer to 1000 sprites."
 msgstr ""
+"Cela fait 4 draw calls. Pas mal, c'est une amélioration de 50%. Cependant, "
+"considérez que dans un jeu réel, vous pourriez dessiner prés de 1000 sprites."
 
 #: ../../docs/tutorials/optimization/batching.rst:198
 msgid "Before: 1000 * 4 = 4000 draw calls."
-msgstr ""
+msgstr "Avant : 1000 * 4 = 4000 draw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:199
 msgid "After: 1 * 4 = 4 draw calls."
-msgstr ""
+msgstr "Après : 1 * 4 = 4 draw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:201
 msgid ""
 "That is 1000x decrease in draw calls, and should give a huge increase in "
 "performance."
 msgstr ""
+"C'est une diminution de 1000 fois des draw calls, et cela devrait donner une "
+"énorme augmentation des performances."
 
 #: ../../docs/tutorials/optimization/batching.rst:205
-#, fuzzy
 msgid "Overlap test"
-msgstr "Détection de chevauchement"
+msgstr "Test de chevauchement"
 
 #: ../../docs/tutorials/optimization/batching.rst:207
 msgid ""
@@ -296,6 +402,13 @@ msgid ""
 "benefits against the cost. Usually with lights the benefits far outweigh the "
 "costs."
 msgstr ""
+"Cependant, comme pour la réorganisation des éléments, les choses ne sont pas "
+"si simples, nous devons d'abord effectuer le test de chevauchement pour "
+"déterminer si nous pouvons joindre ces primitives, et le test de "
+"chevauchement a un faible coût. Encore une fois, vous pouvez choisir le "
+"nombre de primitives à rechercher dans le test de chevauchement pour "
+"équilibrer les avantages par rapport au coût. Habituellement, avec les "
+"lumières, les avantages l'emportent largement sur les coûts."
 
 #: ../../docs/tutorials/optimization/batching.rst:213
 msgid ""
@@ -305,11 +418,16 @@ msgid ""
 "calls may be less dramatic than the perfect situation of no overlap. However "
 "performance is usually far higher than without this lighting optimization."
 msgstr ""
+"Considérez également que selon la disposition des primitives dans le "
+"viewport, le test de chevauchement échouera parfois (parce que les "
+"primitives se chevauchent et ne doivent donc pas être jointes). Ainsi, en "
+"pratique, la diminution des draw calls peut être moins dramatique que la "
+"situation parfaite sans chevauchement. Cependant, les performances sont "
+"généralement bien plus élevées sans cette optimisation de l'éclairage."
 
 #: ../../docs/tutorials/optimization/batching.rst:220
-#, fuzzy
 msgid "Light Scissoring"
-msgstr "Processeur de lumière"
+msgstr "Light Scissoring"
 
 #: ../../docs/tutorials/optimization/batching.rst:222
 msgid ""
@@ -319,6 +437,11 @@ msgid ""
 "pixels are colored, it is another potential bottleneck unrelated to draw "
 "calls."
 msgstr ""
+"Le traitement par lots peut rendre plus difficile l'occlusion des objets qui "
+"ne sont pas ou partiellement affectés par une lumière. Cela peut augmenter "
+"considérablement le taux de remplissage requis et ralentir le rendu. Le taux "
+"de remplissage est la vitesse à laquelle les pixels sont colorés, c'est un "
+"autre goulot d'étranglement potentiel sans rapport avec les draw calls."
 
 #: ../../docs/tutorials/optimization/batching.rst:227
 msgid ""
@@ -329,6 +452,13 @@ msgid ""
 "identifying the intersection area between a light and a primitive, and limit "
 "rendering the light to *that area only*."
 msgstr ""
+"Pour contrer ce problème (et accélérer l'éclairage en général), le "
+"traitement par lot introduit le light scissoring. Cela permet l'utilisation "
+"de la commande OpenGL ``glScissor()``, qui identifie une zone, en dehors de "
+"laquelle, le GPU ne rendra aucun pixel. Nous pouvons ainsi optimiser "
+"considérablement le taux de remplissage en identifiant la zone "
+"d'intersection entre une lumière et une primitive, et limiter le rendu de la "
+"lumière à *cette zone seulement*."
 
 #: ../../docs/tutorials/optimization/batching.rst:234
 msgid ""
@@ -340,6 +470,14 @@ msgid ""
 "cost to scissoring on some hardware. Generally though, when you are using "
 "lighting, it should result in some performance gains."
 msgstr ""
+"Le light scissoring est contrôlé avec le paramètre de projet :ref:"
+"`scissor_area_threshold <class_ProjectSettings_property_rendering/batching/"
+"lights/scissor_area_threshold>`. Cette valeur est comprise entre 1.0 et 0.0, "
+"1.0 étant désactivé (pas de scissoring), et 0.0 étant le scissoring dans "
+"toutes les circonstances. La raison de ce réglage est que le scissoring peut "
+"coûter un peu plus cher sur certains hardware. Cependant, en règle générale, "
+"lorsque vous utilisez un éclairage, il devrait permettre d'améliorer les "
+"performances."
 
 #: ../../docs/tutorials/optimization/batching.rst:242
 msgid ""
@@ -351,35 +489,51 @@ msgid ""
 "are bunched towards zero, as only a small percentage of pixels need to be "
 "saved for the operation to be useful."
 msgstr ""
+"La relation entre le seuil et le fait qu'une opération de scissoring ait "
+"lieu n'est pas tout à fait simple, mais elle représente généralement la zone "
+"de pixels potentiellement 'sauvegardée' par une opération de scissoring "
+"(c'est-à-dire la vitesse de remplissage sauvegardée). À 1.0, il faudrait "
+"sauvegarder tous les pixels de l'écran, ce qui n'arrive que rarement, voire "
+"jamais, et c'est pourquoi il est désactivé. En pratique, les valeurs utiles "
+"sont regroupées vers zéro, car seul un petit pourcentage de pixels doit être "
+"sauvegardé pour que l'opération soit utile."
 
 #: ../../docs/tutorials/optimization/batching.rst:250
 msgid ""
 "The exact relationship is probably not necessary for users to worry about, "
 "but out of interest is included in the appendix."
 msgstr ""
+"La relation exacte n'est probablement pas nécessaire aux les utilisateurs, "
+"mais pour la curiosité, elle est inclus dans l'annexe."
 
 #: ../../docs/tutorials/optimization/batching.rst:255
 msgid ""
 "*Bottom right is a light, the red area is the pixels saved by the scissoring "
 "operation. Only the intersection needs to be rendered.*"
 msgstr ""
+"*En bas à droite se trouve une lumière, la zone rouge correspond aux pixels "
+"sauvegardés par l'opération de scissoring. Seule l'intersection doit être "
+"rendue.*"
 
 #: ../../docs/tutorials/optimization/batching.rst:259
-#, fuzzy
 msgid "Vertex baking"
-msgstr "Éclairage de sommet"
+msgstr "Pré-calcul de sommet"
 
 #: ../../docs/tutorials/optimization/batching.rst:261
 msgid "The GPU shader receives instructions on what to draw in 2 main ways:"
 msgstr ""
+"Le shader GPU reçoit des instructions sur ce qu'il faut dessiner de 2 "
+"manières principales :"
 
 #: ../../docs/tutorials/optimization/batching.rst:263
 msgid "Shader uniforms (e.g. modulate color, item transform)"
 msgstr ""
+"Shader uniforms (par exemple, modulation de la couleur, transformation d'un "
+"objet)"
 
 #: ../../docs/tutorials/optimization/batching.rst:264
 msgid "Vertex attributes (vertex color, local transform)"
-msgstr ""
+msgstr "Attributs de sommet (couleur de sommet, transformation locale)"
 
 #: ../../docs/tutorials/optimization/batching.rst:266
 msgid ""
@@ -389,24 +543,36 @@ msgid ""
 "awful lot of cases. Sprites for instance typically are individual nodes with "
 "their own item transform, and they may have their own color modulate."
 msgstr ""
+"Cependant, dans un seul draw call (batch), nous ne pouvons pas changer les "
+"uniforms. Cela signifie que naïvement, nous ne serions pas en mesure de "
+"regrouper des éléments ou des commandes qui changent final_modulate ou item "
+"transform. Malheureusement, c'est un très grand nombre de cas. Les sprites, "
+"par exemple, sont généralement des nœuds individuels avec leur propre "
+"transformation, et ils peuvent avoir leur propre module de couleur."
 
 #: ../../docs/tutorials/optimization/batching.rst:272
 msgid ""
 "To get around this problem, the batching can \"bake\" some of the uniforms "
 "into the vertex attributes."
 msgstr ""
+"Pour contourner ce problème, le traitement par lots peut \"pré-calculer\" "
+"certaines des uniforms dans les attributs de vertex."
 
 #: ../../docs/tutorials/optimization/batching.rst:275
 msgid ""
 "The item transform can be combined with the local transform and sent in a "
 "vertex attribute."
 msgstr ""
+"La transformation d'élément peut être combinée avec la transformation locale "
+"et envoyée dans un attribut de sommet."
 
 #: ../../docs/tutorials/optimization/batching.rst:278
 msgid ""
 "The final modulate color can be combined with the vertex colors, and sent in "
 "a vertex attribute."
 msgstr ""
+"La couleur modulée finale peut être combinée avec les couleurs des vertex, "
+"et envoyée dans un attribut de vertex."
 
 #: ../../docs/tutorials/optimization/batching.rst:281
 msgid ""
@@ -414,11 +580,13 @@ msgid ""
 "expects these values to be available individually, rather than combined. "
 "This can happen in custom shaders."
 msgstr ""
+"Dans la plupart des cas, cela fonctionne bien, mais ce raccourci casse si un "
+"shader s'attend à ce que ces valeurs soient disponibles individuellement, "
+"plutôt que combinées. Cela peut se produire dans les shaders personnalisés."
 
 #: ../../docs/tutorials/optimization/batching.rst:286
-#, fuzzy
 msgid "Custom Shaders"
-msgstr "Maillages personnalisés"
+msgstr "Shaders personnalisés"
 
 #: ../../docs/tutorials/optimization/batching.rst:288
 msgid ""
@@ -426,20 +594,26 @@ msgid ""
 "thus decrease the potential for batching. While we are working to decrease "
 "these cases, currently the following conditions apply:"
 msgstr ""
+"Par conséquent, certaines opérations dans les shaders personnalisés "
+"empêcheront le pré-calcul, et réduiront ainsi le potentiel de traitement par "
+"lots. Bien que nous nous efforcions de réduire ces cas, les conditions "
+"suivantes s'appliquent actuellement :"
 
 #: ../../docs/tutorials/optimization/batching.rst:292
 msgid ""
 "Reading or writing ``COLOR`` or ``MODULATE`` - disables vertex color baking"
 msgstr ""
+"La lecture ou l'écriture de ``COLOR`` ou ``MODULATE`` - désactive le pré-"
+"cacul des couleurs de sommet"
 
 #: ../../docs/tutorials/optimization/batching.rst:293
 msgid "Reading ``VERTEX`` - disables vertex position baking"
 msgstr ""
+"La lecture de ``VERTEX`` - désactive le pré-calcul de la position du sommet"
 
 #: ../../docs/tutorials/optimization/batching.rst:296
-#, fuzzy
 msgid "Project Settings"
-msgstr "Mise en place du projet"
+msgstr "Paramètres du projet"
 
 #: ../../docs/tutorials/optimization/batching.rst:298
 msgid ""
@@ -450,23 +624,33 @@ msgid ""
 "gain, for very little effort. See the tooltips in the project settings for "
 "more info."
 msgstr ""
+"Afin d'affiner le traitement par lots, un certain nombre de paramètres de "
+"projet sont disponibles. Vous pouvez généralement les laisser par défaut "
+"pendant le développement, mais il est bon d'expérimenter pour vous assurer "
+"que vous obtenez les performances maximales. Passer un peu de temps à régler "
+"les paramètres peut souvent donner un gain de performance considérable, pour "
+"très peu d'efforts. Pour plus d'informations, consultez les infobulles dans "
+"les paramètres du projet."
 
 #: ../../docs/tutorials/optimization/batching.rst:305
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "Options d’animation"
+msgstr "rendu/traitement par lots/options"
 
 #: ../../docs/tutorials/optimization/batching.rst:307
 msgid ""
 ":ref:`use_batching <class_ProjectSettings_property_rendering/batching/"
 "options/use_batching>` - Turns batching on and off"
 msgstr ""
+":ref:`use_batching <class_ProjectSettings_property_rendering/batching/"
+"options/use_batching>` - Activation et désactivation du traitement par lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:311
 msgid ""
 ":ref:`use_batching_in_editor <class_ProjectSettings_property_rendering/"
 "batching/options/use_batching_in_editor>`"
 msgstr ""
+":ref:`use_batching_in_editor <class_ProjectSettings_property_rendering/"
+"batching/options/use_batching_in_editor>`"
 
 #: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
@@ -475,11 +659,15 @@ msgid ""
 "unbatchable rectangles, however it may lead to flicker on some hardware so "
 "is not recommended"
 msgstr ""
+":ref:`single_rect_fallback <class_ProjectSettings_property_rendering/"
+"batching/options/single_rect_fallback>` - C'est un moyen plus rapide de "
+"dessiner des rectangles ne pouvant être regroupés en lots, mais il peut "
+"entraîner un scintillement sur certains hardware, il n'est donc pas "
+"recommandé"
 
 #: ../../docs/tutorials/optimization/batching.rst:320
-#, fuzzy
 msgid "rendering/batching/parameters"
-msgstr "Paramètres de dessin"
+msgstr "rendu/traitement par lots/paramètres"
 
 #: ../../docs/tutorials/optimization/batching.rst:322
 msgid ""
@@ -492,6 +680,15 @@ msgid ""
 "command, and items with a large number of commands are not worth joining, so "
 "the best value may be project dependent."
 msgstr ""
+":ref:`max_join_item_commands <class_ProjectSettings_property_rendering/"
+"batching/parameters/max_join_item_commands>` - L'une des façons les plus "
+"importantes de réaliser le traitement par lots est de joindre ensemble des "
+"éléments adjacents appropriés (nœuds), cependant ils ne peuvent être joints "
+"que si les commandes qu'ils contiennent sont compatibles. Le système doit "
+"donc faire une recherche parmi les commandes d'un élément pour déterminer "
+"s'il peut être joint. Le coût par commande est faible, et les éléments "
+"comportant un grand nombre de commandes ne valent pas la peine d'être "
+"joints, de sorte que la meilleure valeur peut dépendre du projet."
 
 #: ../../docs/tutorials/optimization/batching.rst:331
 msgid ""
@@ -503,6 +700,14 @@ msgid ""
 "represents the proportion of commands containing color changes / the total "
 "commands, above which it switches to baked colors."
 msgstr ""
+":ref:`colored_vertex_format_threshold "
+"<class_ProjectSettings_property_rendering/batching/parameters/"
+"colored_vertex_format_threshold>` - Pré-calculer les couleurs dans les "
+"sommets donne un format de sommet plus grand. Cela ne vaut pas "
+"nécessairement la peine d'être fait, à moins qu'il y ait beaucoup de "
+"changements de couleur dans un élément joint. Ce paramètre représente la "
+"proportion de commandes contenant des changements de couleur / le total des "
+"commandes, au-dessus duquel il passe aux couleurs pré-calculées."
 
 #: ../../docs/tutorials/optimization/batching.rst:339
 msgid ""
@@ -511,6 +716,10 @@ msgid ""
 "batch, it doesn't have a huge effect on performance but can be worth "
 "decreasing for mobile if RAM is at a premium."
 msgstr ""
+":ref:`batch_buffer_size <class_ProjectSettings_property_rendering/batching/"
+"parameters/batch_buffer_size>` - Cela détermine la taille maximale d'un lot, "
+"cela n'a pas d'effet énorme sur les performances mais peut valoir la peine "
+"d'être diminuer pour les mobiles si la RAM une préoccupation."
 
 #: ../../docs/tutorials/optimization/batching.rst:344
 msgid ""
@@ -520,16 +729,23 @@ msgid ""
 "for the overlap test has a small cost, so the best value may change per "
 "project."
 msgstr ""
+":ref:`item_reordering_lookahead <class_ProjectSettings_property_rendering/"
+"batching/parameters/item_reordering_lookahead>` - La réorganisation des "
+"éléments peut aider, en particulier pour les sprites entrelacés utilisant "
+"des textures différentes. Le lookahead pour le test de chevauchement a un "
+"faible coût, donc la meilleure valeur peut changer selon le projet."
 
 #: ../../docs/tutorials/optimization/batching.rst:351
 msgid "rendering/batching/lights"
-msgstr ""
+msgstr "rendu/traitement par lots/lumières"
 
 #: ../../docs/tutorials/optimization/batching.rst:353
 msgid ""
 ":ref:`scissor_area_threshold <class_ProjectSettings_property_rendering/"
 "batching/lights/scissor_area_threshold>` - See light scissoring."
 msgstr ""
+":ref:`scissor_area_threshold <class_ProjectSettings_property_rendering/"
+"batching/lights/scissor_area_threshold>` - Voir light scissoring."
 
 #: ../../docs/tutorials/optimization/batching.rst:357
 msgid ""
@@ -539,10 +755,16 @@ msgid ""
 "so the costs and benefits may be project dependent, and hence the best value "
 "to use here."
 msgstr ""
+":ref:`max_join_items <class_ProjectSettings_property_rendering/batching/"
+"lights/max_join_items>` - Le fait de joindre des éléments avant l'éclairage "
+"peut augmenter considérablement les performances. Cela nécessite un test de "
+"chevauchement, dont le coût est faible, de sorte que les coûts et les "
+"avantages peuvent dépendre du projet, et donc de la meilleure valeur à "
+"utiliser ici."
 
 #: ../../docs/tutorials/optimization/batching.rst:365
 msgid "rendering/batching/debug"
-msgstr ""
+msgstr "rendu/traitement par lots/débogage"
 
 #: ../../docs/tutorials/optimization/batching.rst:367
 msgid ""
@@ -553,6 +775,12 @@ msgid ""
 "This will decrease performance, and should not be used for your final "
 "export, only for testing."
 msgstr ""
+":ref:`flash_batching <class_ProjectSettings_property_rendering/batching/"
+"debug/flash_batching>` - Il s'agit d'une fonction de débogage qui permet "
+"d'identifier les régressions entre le rendu par lots et l'ancien rendu. "
+"Lorsqu'elle est activée, le rendus par lots et l'ancien rendu sont utilisés "
+"alternativement sur chaque trame. Cela diminue les performances et ne doit "
+"pas être utilisé pour l'exportation finale, mais uniquement pour les tests."
 
 #: ../../docs/tutorials/optimization/batching.rst:374
 msgid ""
@@ -560,10 +788,13 @@ msgid ""
 "debug/diagnose_frame>`  - This will periodically print a diagnostic batching "
 "log to the Godot IDE / console."
 msgstr ""
+":ref:`diagnose_frame <class_ProjectSettings_property_rendering/batching/"
+"debug/diagnose_frame>` - Cela permettra d'imprimer périodiquement un journal "
+"de diagnostic des lots sur IDE / console de Godot."
 
 #: ../../docs/tutorials/optimization/batching.rst:380
 msgid "rendering/batching/precision"
-msgstr ""
+msgstr "rendu/traitement par lots/précision"
 
 #: ../../docs/tutorials/optimization/batching.rst:382
 msgid ""
@@ -574,6 +805,13 @@ msgid ""
 "problem, try enabling uv contract. This makes a small contraction in the UV "
 "coordinates to compensate for precision errors on devices."
 msgstr ""
+":ref:`uv_contract <class_ProjectSettings_property_rendering/batching/"
+"precision/uv_contract>` - Sur certains matériels (notamment certains "
+"appareils Android), il a été signalé que des tuiles de tilemap dessinaient "
+"légèrement en dehors de leur plage d'UV, entraînant des artefacts de bord "
+"tels que des lignes autour des tuiles. Si vous constatez ce problème, "
+"essayez d'activer contrat uv. Cela provoque une petite contraction des "
+"coordonnées UV pour compenser les erreurs de précision des appareils."
 
 #: ../../docs/tutorials/optimization/batching.rst:390
 msgid ""
@@ -581,10 +819,14 @@ msgid ""
 "precision/uv_contract_amount>` - Hopefully the default amount should cure "
 "artifacts on most devices, but just in case, this value is editable."
 msgstr ""
+":ref:`uv_contract_amount <class_ProjectSettings_property_rendering/batching/"
+"precision/uv_contract_amount>` - Il est espérer que le montant par défaut "
+"devrait permettre de régler les artefacts sur la plupart des appareils, mais "
+"juste au cas où, cette valeur est modifiable."
 
 #: ../../docs/tutorials/optimization/batching.rst:396
 msgid "Diagnostics"
-msgstr ""
+msgstr "Diagnostiques"
 
 #: ../../docs/tutorials/optimization/batching.rst:398
 msgid ""
@@ -596,14 +838,22 @@ msgid ""
 "not occurring as intended, and help you to fix them, in order to get the "
 "best possible performance."
 msgstr ""
+"Bien que vous puissiez modifier les paramètres et examiner l'effet sur la "
+"fréquence d'image, vous pouvez avoir l'impression de travailler à "
+"l'aveuglette, sans avoir la moindre idée de ce qui se passe sous le capot. "
+"Pour vous aider, le traitement par lots offre un mode diagnostique, qui "
+"imprimera périodiquement (dans l'IDE ou dans la console) une liste des lots "
+"en cours de traitement. Cela peut aider à repérer les situations où le "
+"traitement par lots ne se déroule pas comme prévu et à les corriger, afin "
+"d'obtenir les meilleures performances possibles."
 
 #: ../../docs/tutorials/optimization/batching.rst:407
 msgid "Reading a diagnostic"
-msgstr ""
+msgstr "Lecture d'un diagnostique"
 
 #: ../../docs/tutorials/optimization/batching.rst:432
 msgid "This is a typical diagnostic."
-msgstr ""
+msgstr "Ceci est un diagnostique typique."
 
 #: ../../docs/tutorials/optimization/batching.rst:434
 msgid ""
@@ -613,6 +863,11 @@ msgid ""
 "will be determined by their contents and compatibility with the previous "
 "item."
 msgstr ""
+"**joined_item** - Un élément joint peut contenir une ou plusieurs références "
+"à des éléments (nœuds). En général, les joined_items contenant de nombreuses "
+"références sont préférables à de nombreux joined_items contenant une seule "
+"référence. La possibilité de joindre des éléments sera déterminée par leur "
+"contenu et leur compatibilité avec l'élément précédent."
 
 #: ../../docs/tutorials/optimization/batching.rst:439
 msgid ""
@@ -622,29 +877,40 @@ msgid ""
 "one rect, MULTI is added to the line to make it easy to identify. Seeing "
 "MULTI is good, because this indicates successful batching."
 msgstr ""
+"**batch R** - un lot contenant des rectangles. Le deuxième chiffre est le "
+"nombre de rects. Le deuxième nombre entre crochets est l'ID de texture "
+"Godot, et les nombres entre accolades est la couleur. Si le lot contient "
+"plusieurs rectangles, MULTI est ajouté à la ligne pour faciliter "
+"l'identification. Il est bon de voir MULTI, car cela indique que le lot a "
+"réussi."
 
 #: ../../docs/tutorials/optimization/batching.rst:444
 msgid ""
 "**batch D** - a default batch, containing everything else that is not "
 "currently batched."
 msgstr ""
+"**lot D** - un lot par défaut, contenant tout le reste qui n'est pas encore "
+"en lot."
 
 #: ../../docs/tutorials/optimization/batching.rst:448
-#, fuzzy
 msgid "Default Batches"
-msgstr "Fonctionnalités par défaut"
+msgstr "Lots par défaut"
 
 #: ../../docs/tutorials/optimization/batching.rst:450
 msgid ""
 "The second number following default batches is the number of commands in the "
 "batch, and it is followed by a brief summary of the contents:"
 msgstr ""
+"Le deuxième chiffre qui suit les lots par défaut est le nombre de commandes "
+"dans le lot, et il est suivi d'un bref résumé du contenu :"
 
 #: ../../docs/tutorials/optimization/batching.rst:468
 msgid ""
 "You may see \"dummy\" default batches containing no commands, you can ignore "
 "these."
 msgstr ""
+"Vous pouvez voir des lots par défaut \"dummy\" ne contenant aucune commande, "
+"vous pouvez les ignorer."
 
 #: ../../docs/tutorials/optimization/batching.rst:472
 msgid "FAQ"
@@ -653,29 +919,36 @@ msgstr "FAQ"
 #: ../../docs/tutorials/optimization/batching.rst:475
 msgid "I don't get a large performance increase from switching on batching"
 msgstr ""
+"Je n'obtiens pas une grande augmentation de performance en utilisant le "
+"traitement par lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:477
 msgid ""
 "Try the diagnostics, see how much batching is occurring, and whether it can "
 "be improved"
 msgstr ""
+"Essayez les diagnostiques, voyez dans quelle mesure le traitement par lots "
+"se fait, et si il peut être amélioré"
 
 #: ../../docs/tutorials/optimization/batching.rst:479
-#, fuzzy
 msgid "Try changing parameters"
-msgstr "Paramètres de dessin"
+msgstr "Essayez de modifier les paramètres"
 
 #: ../../docs/tutorials/optimization/batching.rst:480
 msgid "Consider that batching may not be your bottleneck (see bottlenecks)"
 msgstr ""
+"Considérez que le traitement par lots n'est peut-être pas votre goulot "
+"d'étranglement (voir goulots d'étranglement)"
 
 #: ../../docs/tutorials/optimization/batching.rst:483
 msgid "I get a decrease in performance with batching"
-msgstr ""
+msgstr "J'obtiens une diminution de performance avec le traitement par lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:485
 msgid "Try steps to increase batching given above"
 msgstr ""
+"Essayez les mesures d'augmentation de lu traitement par lots indiquées ci-"
+"dessus"
 
 #: ../../docs/tutorials/optimization/batching.rst:486
 msgid ""
@@ -683,6 +956,9 @@ msgid ""
 "<class_ProjectSettings_property_rendering/batching/options/"
 "single_rect_fallback>` to on"
 msgstr ""
+"Essayez de régler sur on :ref:`single_rect_fallback "
+"<class_ProjectSettings_property_rendering/batching/options/"
+"single_rect_fallback>`"
 
 #: ../../docs/tutorials/optimization/batching.rst:489
 msgid ""
@@ -690,26 +966,36 @@ msgid ""
 "is approximately twice as fast, however it can result in flicker on some "
 "hardware, so its use is discouraged"
 msgstr ""
+"La méthode de repli à rectangle unique est la méthode par défaut utilisée "
+"sans traitement par lots, et elle est environ deux fois plus rapide, mais "
+"elle peut entraîner un scintillement sur certains matériels, son utilisation "
+"est donc déconseillée"
 
 #: ../../docs/tutorials/optimization/batching.rst:492
 msgid ""
 "After trying the above, if your scene is still performing worse, consider "
 "turning off batching."
 msgstr ""
+"Après avoir essayé ce qui précède, si votre scène se déroule toujours moins "
+"bien, envisagez d'arrêter le traitement par lots."
 
 #: ../../docs/tutorials/optimization/batching.rst:496
 msgid "I use custom shaders and the items are not batching"
 msgstr ""
+"J'utilise des shaders personnalisés et les éléments ne sont pas traiter par "
+"lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:498
 msgid ""
 "Custom shaders can be problematic for batching, see the custom shaders "
 "section"
 msgstr ""
+"Les shaders personnalisés peuvent poser des problèmes pour la mise en lots, "
+"voir la section sur les shaders personnalisés"
 
 #: ../../docs/tutorials/optimization/batching.rst:501
 msgid "I am seeing line artifacts appear on certain hardware"
-msgstr ""
+msgstr "Je vois des artefacts de lignes apparaître sur certains hardware"
 
 #: ../../docs/tutorials/optimization/batching.rst:503
 msgid ""
@@ -717,24 +1003,32 @@ msgid ""
 "precision/uv_contract>` project setting which can be used to solve this "
 "problem."
 msgstr ""
+"Voir le paramétrage du projet :ref:`uv_contract "
+"<class_ProjectSettings_property_rendering/batching/precision/uv_contract>` "
+"qui peut être utilisé pour résoudre ce problème."
 
 #: ../../docs/tutorials/optimization/batching.rst:508
 msgid "I use a large number of textures, so few items are being batched"
 msgstr ""
+"J'utilise un grand nombre de textures, donc peu d'éléments sont traité par "
+"lots"
 
 #: ../../docs/tutorials/optimization/batching.rst:510
 msgid ""
 "Consider the use of texture atlases. As well as allowing batching, these "
 "reduce the need for state changes associated with changing texture."
 msgstr ""
+"Envisagez l'utilisation d'atlas de textures. En plus de permettre le "
+"traitement par lots, ceux-ci réduisent le besoin de changements d'état "
+"associés à un changement de texture."
 
 #: ../../docs/tutorials/optimization/batching.rst:514
 msgid "Appendix"
-msgstr ""
+msgstr "Annexe"
 
 #: ../../docs/tutorials/optimization/batching.rst:517
 msgid "Light scissoring threshold calculation"
-msgstr ""
+msgstr "Calcul du seuil de light scissoring"
 
 #: ../../docs/tutorials/optimization/batching.rst:519
 msgid ""
@@ -742,19 +1036,24 @@ msgid ""
 "`scissor_area_threshold <class_ProjectSettings_property_rendering/batching/"
 "lights/scissor_area_threshold>` value to the power of 4."
 msgstr ""
+"La proportion réelle de la zone de pixels de l'écran utilisée comme seuil "
+"est la valeur :ref:`scissor_area_threshold "
+"<class_ProjectSettings_property_rendering/batching/lights/"
+"scissor_area_threshold>` à la puissance 4."
 
 #: ../../docs/tutorials/optimization/batching.rst:524
 msgid ""
 "For example, on a screen size ``1920 x 1080`` there are ``2,073,600`` pixels."
 msgstr ""
+"Par exemple, sur un écran de ``1920 x 1080`` il y a ``2,073,600`` pixels."
 
 #: ../../docs/tutorials/optimization/batching.rst:526
 msgid "At a threshold of ``1000`` pixels, the proportion would be:"
-msgstr ""
+msgstr "A un seuil de ``1000`` pixels, la proportion serait de :"
 
 #: ../../docs/tutorials/optimization/batching.rst:533
 msgid "The power of 0.25 is the opposite of power of 4)."
-msgstr ""
+msgstr "La puissance de 0,25 est l'opposé de la puissance de 4)."
 
 #: ../../docs/tutorials/optimization/batching.rst:535
 msgid ""
@@ -762,6 +1061,9 @@ msgid ""
 "batching/lights/scissor_area_threshold>` of 0.15 would be a reasonable value "
 "to try."
 msgstr ""
+"Ainsi, un :ref:`scissor_area_threshold "
+"<class_ProjectSettings_property_rendering/batching/lights/"
+"scissor_area_threshold>` de 0,15 serait une valeur raisonnable à essayer."
 
 #: ../../docs/tutorials/optimization/batching.rst:539
 msgid ""
@@ -769,9 +1071,14 @@ msgid ""
 "<class_ProjectSettings_property_rendering/batching/lights/"
 "scissor_area_threshold>` of ``0.5``:"
 msgstr ""
+"À l'inverse, par exemple avec un :ref:`scissor_area_threshold "
+"<class_ProjectSettings_property_rendering/batching/lights/"
+"scissor_area_threshold>` de ``0.5`` :"
 
 #: ../../docs/tutorials/optimization/batching.rst:548
 msgid ""
 "If the number of pixels saved is more than this threshold, the scissor is "
 "activated."
 msgstr ""
+"Si le nombre de pixels sauvegardés est supérieur à ce seuil, le light "
+"scissoring est activé."

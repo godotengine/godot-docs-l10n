@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,14 +109,35 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:55
-msgid ""
-"There are several methods of measuring performance, including : * Putting a "
-"start / stop timer around code of interest * Using the Godot profiler * "
-"Using external third party profilers * Using GPU profilers / debuggers * "
-"Checking the frame rate (with vsync disabled)"
+#, fuzzy
+msgid "There are several methods of measuring performance, including:"
+msgstr ""
+"目的のアプリケーションに応じて、リジットボディの動きを制御する方法がいくつか"
+"あります。"
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:57
+msgid "Putting a start / stop timer around code of interest"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:62
+#: ../../docs/tutorials/optimization/general_optimization.rst:58
+#, fuzzy
+msgid "Using the Godot profiler"
+msgstr "モジュールの使用"
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:59
+#, fuzzy
+msgid "Using external third party profilers"
+msgstr "外部ファイル(External Files)"
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:60
+msgid "Using GPU profilers / debuggers"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:61
+msgid "Checking the frame rate (with vsync disabled)"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:63
 msgid ""
 "Be very aware that the relative performance of different areas can vary on "
 "different hardware. Often it is a good idea to make timings on more than one "
@@ -124,88 +145,88 @@ msgid ""
 "mobile."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:68
+#: ../../docs/tutorials/optimization/general_optimization.rst:69
 msgid "Limitations"
 msgstr "制限事項"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:70
+#: ../../docs/tutorials/optimization/general_optimization.rst:71
 msgid ""
 "CPU Profilers are often the 'go to' method for measuring performance, "
 "however they don't always tell the whole story."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:73
+#: ../../docs/tutorials/optimization/general_optimization.rst:74
 msgid ""
 "Bottlenecks are often on the GPU, `as a result` of instructions given by the "
 "CPU"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:75
+#: ../../docs/tutorials/optimization/general_optimization.rst:76
 msgid ""
 "Spikes can occur in the Operating System processes (outside of Godot) `as a "
 "result` of instructions used in Godot (for example dynamic memory allocation)"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:77
+#: ../../docs/tutorials/optimization/general_optimization.rst:78
 msgid "You may not be able to profile e.g. a mobile phone"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:78
+#: ../../docs/tutorials/optimization/general_optimization.rst:79
 msgid ""
 "You may have to solve performance problems that occur on hardware you don't "
 "have access to"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:81
+#: ../../docs/tutorials/optimization/general_optimization.rst:82
 msgid ""
 "As a result of these limitations, you often need to use detective work to "
 "find out where bottlenecks are."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:85
+#: ../../docs/tutorials/optimization/general_optimization.rst:86
 #, fuzzy
 msgid "Detective work"
 msgstr "3Dの検出(Detect 3d)"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:87
+#: ../../docs/tutorials/optimization/general_optimization.rst:88
 msgid ""
 "Detective work is a crucial skill for developers (both in terms of "
 "performance, and also in terms of bug fixing). This can include hypothesis "
 "testing, and binary search."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:92
+#: ../../docs/tutorials/optimization/general_optimization.rst:93
 #, fuzzy
 msgid "Hypothesis testing"
 msgstr "テストする"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:94
+#: ../../docs/tutorials/optimization/general_optimization.rst:95
 msgid ""
 "Say for example you believe that sprites are slowing down your game. You can "
 "test this hypothesis for example by:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:97
+#: ../../docs/tutorials/optimization/general_optimization.rst:98
 msgid "Measuring the performance when you add more sprites, or take some away."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:99
+#: ../../docs/tutorials/optimization/general_optimization.rst:100
 msgid ""
 "This may lead to a further hypothesis - does the size of the sprite "
 "determine the performance drop?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:102
+#: ../../docs/tutorials/optimization/general_optimization.rst:103
 msgid ""
 "You can test this by keeping everything the same, but changing the sprite "
 "size, and measuring performance"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:106
+#: ../../docs/tutorials/optimization/general_optimization.rst:107
 msgid "Binary search"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:108
+#: ../../docs/tutorials/optimization/general_optimization.rst:109
 msgid ""
 "Say you know that frames are taking much longer than they should, but you "
 "are not sure where the bottleneck lies. You could begin by commenting out "
@@ -213,25 +234,25 @@ msgid ""
 "performance improved more or less than expected?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:113
+#: ../../docs/tutorials/optimization/general_optimization.rst:114
 msgid ""
 "Once you know which of the two halves contains the bottleneck, you can then "
 "repeat this process, until you have pinned down the problematic area."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:117
+#: ../../docs/tutorials/optimization/general_optimization.rst:118
 #, fuzzy
 msgid "Profilers"
 msgstr "プロファイラー"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:119
+#: ../../docs/tutorials/optimization/general_optimization.rst:120
 msgid ""
 "Profilers allow you to time your program while running it. Profilers then "
 "provide results telling you what percentage of time was spent in different "
 "functions and areas, and how often functions were called."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:123
+#: ../../docs/tutorials/optimization/general_optimization.rst:124
 msgid ""
 "This can be very useful both to identify bottlenecks and to measure the "
 "results of your improvements. Sometimes attempts to improve performance can "
@@ -239,7 +260,7 @@ msgid ""
 "to guide your efforts."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:128
+#: ../../docs/tutorials/optimization/general_optimization.rst:129
 #, fuzzy
 msgid ""
 "For more info about using the profiler within Godot see :ref:"
@@ -248,15 +269,15 @@ msgstr ""
 "Godotでの一時停止の詳細については、\\ :ref:`doc_pausing_games` を参照してくだ"
 "さい"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:132
+#: ../../docs/tutorials/optimization/general_optimization.rst:133
 msgid "Principles"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:134
+#: ../../docs/tutorials/optimization/general_optimization.rst:135
 msgid "Donald Knuth:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:136
+#: ../../docs/tutorials/optimization/general_optimization.rst:137
 msgid ""
 "*Programmers waste enormous amounts of time thinking about, or worrying "
 "about, the speed of noncritical parts of their programs, and these attempts "
@@ -266,32 +287,32 @@ msgid ""
 "we should not pass up our opportunities in that critical 3%.*"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:143
+#: ../../docs/tutorials/optimization/general_optimization.rst:144
 msgid "The messages are very important:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:145
+#: ../../docs/tutorials/optimization/general_optimization.rst:146
 msgid ""
 "Programmer / Developer time is limited. Instead of blindly trying to speed "
 "up all aspects of a program we should concentrate our efforts on the aspects "
 "that really matter."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:148
+#: ../../docs/tutorials/optimization/general_optimization.rst:149
 msgid ""
 "Efforts at optimization often end up with code that is harder to read and "
 "debug than non-optimized code. It is in our interests to limit this to areas "
 "that will really benefit."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:152
+#: ../../docs/tutorials/optimization/general_optimization.rst:153
 msgid ""
 "Just because we `can` optimize a particular bit of code, it doesn't "
 "necessarily mean that we should. Knowing when, and when not to optimize is a "
 "great skill to develop."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:156
+#: ../../docs/tutorials/optimization/general_optimization.rst:157
 msgid ""
 "One misleading aspect of the quote is that people tend to focus on the "
 "subquote \"premature optimization is the root of all evil\". While "
@@ -299,12 +320,12 @@ msgid ""
 "is the result of performant design."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:162
+#: ../../docs/tutorials/optimization/general_optimization.rst:163
 #, fuzzy
 msgid "Performant design"
 msgstr "パフォーマンス"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:164
+#: ../../docs/tutorials/optimization/general_optimization.rst:165
 msgid ""
 "The danger with encouraging people to ignore optimization until necessary, "
 "is that it conveniently ignores that the most important time to consider "
@@ -314,7 +335,7 @@ msgid ""
 "it will never run as fast as a program designed for performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:171
+#: ../../docs/tutorials/optimization/general_optimization.rst:172
 msgid ""
 "This tends to be far more important in game / graphics programming than in "
 "general programming. A performant design, even without low level "
@@ -322,12 +343,12 @@ msgid ""
 "low level optimization."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:177
+#: ../../docs/tutorials/optimization/general_optimization.rst:178
 #, fuzzy
 msgid "Incremental design"
 msgstr "段階的なアップデート / パッチ"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:179
+#: ../../docs/tutorials/optimization/general_optimization.rst:180
 msgid ""
 "Of course, in practice, unless you have prior knowledge, you are unlikely to "
 "come up with the best design first time. So you will often make a series of "
@@ -337,7 +358,7 @@ msgid ""
 "the overall design, otherwise much of your work will be thrown out."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:186
+#: ../../docs/tutorials/optimization/general_optimization.rst:187
 msgid ""
 "It is difficult to give general guidelines for performant design because "
 "this is so dependent on the problem. One point worth mentioning though, on "
@@ -347,55 +368,55 @@ msgid ""
 "linear access, rather than jumping around in memory."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:194
+#: ../../docs/tutorials/optimization/general_optimization.rst:195
 #, fuzzy
 msgid "The optimization process"
 msgstr "最適化"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:196
+#: ../../docs/tutorials/optimization/general_optimization.rst:197
 msgid ""
 "Assuming we have a reasonable design, and taking our lessons from Knuth, our "
 "first step in optimization should be to identify the biggest bottlenecks - "
 "the slowest functions, the low hanging fruit."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:200
+#: ../../docs/tutorials/optimization/general_optimization.rst:201
 msgid ""
 "Once we have successfully improved the speed of the slowest area, it may no "
 "longer be the bottleneck. So we should test / profile again, and find the "
 "next bottleneck on which to focus."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:204
+#: ../../docs/tutorials/optimization/general_optimization.rst:205
 #, fuzzy
 msgid "The process is thus:"
 msgstr "その理由は次のとおりです:"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:206
+#: ../../docs/tutorials/optimization/general_optimization.rst:207
 msgid "Profile / Identify bottleneck"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:207
+#: ../../docs/tutorials/optimization/general_optimization.rst:208
 msgid "Optimize bottleneck"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:208
+#: ../../docs/tutorials/optimization/general_optimization.rst:209
 #, fuzzy
 msgid "Return to step 1"
 msgstr "戻り値"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:211
+#: ../../docs/tutorials/optimization/general_optimization.rst:212
 #, fuzzy
 msgid "Optimizing bottlenecks"
 msgstr "APKサイズの最適化"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:213
+#: ../../docs/tutorials/optimization/general_optimization.rst:214
 msgid ""
 "Some profilers will even tell you which part of a function (which data "
 "accesses, calculations) are slowing things down."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:216
+#: ../../docs/tutorials/optimization/general_optimization.rst:217
 msgid ""
 "As with design you should concentrate your efforts first on making sure the "
 "algorithms and data structures are the best they can be. Data access should "
@@ -405,14 +426,14 @@ msgid ""
 "loading precalculated data files)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:223
+#: ../../docs/tutorials/optimization/general_optimization.rst:224
 msgid ""
 "Once algorithms and data are good, you can often make small changes in "
 "routines which improve performance, things like moving calculations outside "
 "of loops."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:226
+#: ../../docs/tutorials/optimization/general_optimization.rst:227
 msgid ""
 "Always retest your timing / bottlenecks after making each change. Some "
 "changes will increase speed, others may have a negative effect. Sometimes a "
@@ -420,15 +441,15 @@ msgid ""
 "code, and you may choose to leave out that optimization."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:232
+#: ../../docs/tutorials/optimization/general_optimization.rst:233
 msgid "Appendix"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:235
+#: ../../docs/tutorials/optimization/general_optimization.rst:236
 msgid "Bottleneck math"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:237
+#: ../../docs/tutorials/optimization/general_optimization.rst:238
 msgid ""
 "The proverb \"a chain is only as strong as its weakest link\" applies "
 "directly to performance optimization. If your project is spending 90% of the "
@@ -436,32 +457,32 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:253
+#: ../../docs/tutorials/optimization/general_optimization.rst:254
 msgid ""
 "So in this example improving this bottleneck A by a factor of 9x, decreases "
 "overall frame time by 5x, and increases frames per second by 5x."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:256
+#: ../../docs/tutorials/optimization/general_optimization.rst:257
 msgid ""
 "If however, something else is running slowly and also bottlenecking your "
 "project, then the same improvement can lead to less dramatic gains:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:271
+#: ../../docs/tutorials/optimization/general_optimization.rst:272
 msgid ""
 "So in this example, even though we have hugely optimized functionality A, "
 "the actual gain in terms of frame rate is quite small."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:274
+#: ../../docs/tutorials/optimization/general_optimization.rst:275
 msgid ""
 "In games, things become even more complicated because the CPU and GPU run "
 "independently of one another. Your total frame time is determined by the "
 "slower of the two."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:290
+#: ../../docs/tutorials/optimization/general_optimization.rst:291
 msgid ""
 "In this example, we optimized the CPU hugely again, but the frame time did "
 "not improve, because we are GPU-bottlenecked."

@@ -1,0 +1,409 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
+msgid "Using a Viewport as a texture"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:7
+msgid "Introduction"
+msgstr "簡介"
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:9
+msgid ""
+"This tutorial will introduce you to using the :ref:`Viewport "
+"<class_Viewport>` as a texture that can be applied to 3D objects. In order "
+"to do so, it will walk you through the process of making a procedural planet "
+"like the one below:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:15
+msgid ""
+"This tutorial does not cover how to code a dynamic atmosphere like the one "
+"this planet has."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:17
+msgid ""
+"This tutorial assumes you are familiar with how to set up a basic scene "
+"including: a :ref:`Camera <class_Camera>`, a :ref:`light source "
+"<class_OmniLight>`, a :ref:`Mesh Instance <class_MeshInstance>` with a :ref:"
+"`Primitive Mesh <class_PrimitiveMesh>`, and applying a :ref:`SpatialMaterial "
+"<class_SpatialMaterial>` to the mesh. The focus will be on using the :ref:"
+"`Viewport <class_Viewport>` to dynamically create textures that can be "
+"applied to the mesh."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
+msgid "In this tutorial, we'll cover the following topics:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
+msgid "How to use a :ref:`Viewport <class_Viewport>` as a render texture"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:26
+msgid "Mapping a texture to a sphere with equirectangular mapping"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:27
+msgid "Fragment shader techniques for procedural planets"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:28
+msgid ""
+"Setting a Roughness map from a :ref:`Viewport Texture "
+"<class_ViewportTexture>`"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:31
+msgid "Setting up the Viewport"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:33
+msgid "First, add a :ref:`Viewport <class_Viewport>` to the scene."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:35
+msgid ""
+"Next, set the size of the :ref:`Viewport <class_Viewport>` to ``(1024, "
+"512)``. The :ref:`Viewport <class_Viewport>` can actually be any size so "
+"long as the width is double the height. The width needs to be double the "
+"height so that the image will accurately map onto the sphere, as we will be "
+"using equirectangular projection, but more on that later."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:42
+msgid ""
+"Next, disable HDR and disable 3D. We don't need HDR because our planet's "
+"surface will not be especially bright, so values between ``0`` and ``1`` "
+"will be fine. And we will be using a :ref:`ColorRect <class_ColorRect>` to "
+"render the surface, so we don't need 3D either."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:46
+msgid ""
+"Select the Viewport and add a :ref:`ColorRect <class_ColorRect>` as a child."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:48
+msgid ""
+"Set the anchors \"Right\" and \"Bottom\" to ``1``, then make sure all the "
+"margins are set to ``0``. This will ensure that the :ref:`ColorRect "
+"<class_ColorRect>` takes up the entire :ref:`Viewport <class_Viewport>`."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:53
+msgid ""
+"Next, we add a :ref:`Shader Material <class_ShaderMaterial>` to the :ref:"
+"`ColorRect <class_ColorRect>` (ColorRect > CanvasItem > Material > Material "
+"> ``New ShaderMaterial``)."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:55
+msgid ""
+"Basic familiarity with shading is recommended for this tutorial. However, "
+"even if you are new to shaders, all the code will be provided, so you should "
+"have no problem following along."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:58
+msgid ""
+"ColorRect > CanvasItem > Material > Material > click / Edit > ShaderMaterial "
+"> Shader > ``New Shader`` > click / Edit:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:68
+msgid "The above code renders a gradient like the one below."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:72
+msgid ""
+"Now we have the basics of a :ref:`Viewport <class_Viewport>` that we render "
+"to and we have a unique image that we can apply to the sphere."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:76
+msgid "Applying the texture"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:78
+msgid ""
+"MeshInstance > GeometryInstance > Geometry > Material Override > ``New "
+"SpatialMaterial``:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
+msgid ""
+"Now we go into the :ref:`Mesh Instance <class_MeshInstance>` and add a :ref:"
+"`SpatialMaterial <class_SpatialMaterial>` to it. No need for a special :ref:"
+"`Shader Material <class_ShaderMaterial>` (although that would be a good idea "
+"for more advanced effects, like the atmosphere in the example above)."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:84
+msgid ""
+"MeshInstance > GeometryInstance > Geometry > Material Override > ``click`` / "
+"``Edit``:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
+msgid ""
+"Open the newly created :ref:`SpatialMaterial <class_SpatialMaterial>` and "
+"scroll down to the \"Albedo\" section and click beside the \"Texture\" "
+"property to add an Albedo Texture. Here we will apply the texture we made. "
+"Choose \"New ViewportTexture\""
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:92
+msgid ""
+"Then, from the menu that pops up, select the Viewport that we rendered to "
+"earlier."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:96
+msgid ""
+"Your sphere should now be colored in with the colors we rendered to the "
+"Viewport."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:100
+msgid ""
+"Notice the ugly seam that forms where the texture wraps around? This is "
+"because we are picking a color based on UV coordinates and UV coordinates do "
+"not wrap around the texture. This is a classic problem in 2D map projection. "
+"Game developers often have a 2-dimensional map they want to project onto a "
+"sphere, but when it wraps around, it has large seams. There is an elegant "
+"workaround for this problem that we will illustrate in the next section."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:107
+msgid "Making the planet texture"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:109
+msgid ""
+"So now, when we render to our :ref:`Viewport <class_Viewport>`, it appears "
+"magically on the sphere. But there is an ugly seam created by our texture "
+"coordinates. So how do we get a range of coordinates that wrap around the "
+"sphere in a nice way? One solution is to use a function that repeats on the "
+"domain of our texture. ``sin`` and ``cos`` are two such functions. Let's "
+"apply them to the texture and see what happens."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:120
+msgid ""
+"Not too bad. If you look around, you can see that the seam has now "
+"disappeared, but in its place, we have pinching at the poles. This pinching "
+"is due to the way Godot maps textures to spheres in its :ref:"
+"`SpatialMaterial <class_SpatialMaterial>`. It uses a projection technique "
+"called equirectangular projection, which translates a spherical map onto a "
+"2D plane."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:125
+msgid ""
+"If you are interested in a little extra information on the technique, we "
+"will be converting from spherical coordinates into Cartesian coordinates. "
+"Spherical coordinates map the longitude and latitude of the sphere, while "
+"Cartesian coordinates are, for all intents and purposes, a vector from the "
+"center of the sphere to the point."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:130
+msgid ""
+"For each pixel, we will calculate its 3D position on the sphere. From that, "
+"we will use 3D noise to determine a color value. By calculating the noise in "
+"3D, we solve the problem of the pinching at the poles. To understand why, "
+"picture the noise being calculated across the surface of the sphere instead "
+"of across the 2D plane. When you calculate across the surface of the sphere, "
+"you never hit an edge, and hence you never create a seam or a pinch point on "
+"the pole. The following code converts the ``UVs`` into Cartesian coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:149
+msgid "And if we use ``unit`` as an output ``COLOR`` value, we get:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:153
+msgid ""
+"Now that we can calculate the 3D position of the surface of the sphere, we "
+"can use 3D noise to make the planet. We will be using this noise function "
+"directly from a `Shadertoy <https://www.shadertoy.com/view/Xsl3Dl>`_:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:181
+msgid ""
+"All credit goes to the author, Inigo Quilez. It is published under the "
+"``MIT`` licence."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:183
+msgid ""
+"Now to use ``noise``, add the following to the    ``fragment`` function:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:192
+msgid "In order to highlight the texture, we set the material to unshaded."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:194
+msgid ""
+"You can see now that the noise indeed wraps seamlessly around the sphere. "
+"Although this looks nothing like the planet you were promised. So let's move "
+"onto something more colorful."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:198
+msgid "Coloring the planet"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:200
+msgid ""
+"Now to make the planet colors. While there are many ways to do this, for "
+"now, we will stick with a gradient between water and land."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:203
+msgid ""
+"To make a gradient in GLSL, we use the ``mix`` function. ``mix`` takes two "
+"values to interpolate between and a third argument to choose how much to "
+"interpolate between them; in essence, it *mixes* the two values together. In "
+"other APIs, this function is often called ``lerp``. However, ``lerp`` is "
+"typically reserved for mixing two floats together; ``mix`` can take any "
+"values whether it be floats or vector types."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:213
+msgid ""
+"The first color is blue for the ocean. The second color is a kind of reddish "
+"color (because all alien planets need red terrain). And finally, they are "
+"mixed together by ``n * 0.5 + 0.5``. ``n`` smoothly varies between ``-1`` "
+"and ``1``. So we map it into the ``0-1`` range that ``mix`` expects. Now you "
+"can see that the colors change between blue and red."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:220
+msgid ""
+"That is a little more blurry than we want. Planets typically have a "
+"relatively clear separation between land and sea. In order to do that, we "
+"will change the last term to ``smoothstep(-0.1, 0.0, n)``. And thus the "
+"whole line becomes:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:228
+msgid ""
+"What ``smoothstep`` does is return ``0`` if the third argument is below the "
+"first and ``1`` if the third argument is larger than the second and smoothly "
+"blends between ``0`` and ``1`` if the third number is between the first and "
+"the second. So in this line, ``smoothstep`` returns ``0`` whenever ``n`` is "
+"less than ``-0.1`` and it returns ``1`` whenever ``n`` is above ``0``."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:235
+msgid ""
+"One more thing to make this a little more planet-y. The land shouldn't be so "
+"blobby; let's make the edges a little rougher. A trick that is often used in "
+"shaders to make rough looking terrain with noise is to layer levels of noise "
+"over one another at various frequencies. We use one layer to make the "
+"overall blobby structure of the continents. Then another layer breaks up the "
+"edges a bit, and then another, and so on. What we will do is calculate ``n`` "
+"with four lines of shader code instead of just one. ``n`` becomes:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:249
+msgid "And now the planet looks like:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:253
+msgid "And with shading turned back on, it looks like:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:258
+msgid "Making an ocean"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:260
+msgid ""
+"One final thing to make this look more like a planet. The ocean and the land "
+"reflect light differently. So we want the ocean to shine a little more than "
+"the land. We can do this by passing a fourth value into the ``alpha`` "
+"channel of our output ``COLOR`` and using it as a Roughness map."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:268
+msgid ""
+"This line returns ``0.3`` for water and ``1.0`` for land. This means that "
+"the land is going to be quite rough, while the water will be quite smooth."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:271
+msgid ""
+"And then, in the material, under the \"Metallic\" section, make sure "
+"``Metallic`` is set to ``0`` and ``Specular`` is set to ``1``. The reason "
+"for this is the water reflects light really well, but isn't metallic. These "
+"values are not physically accurate, but they are good enough for this demo."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:275
+msgid ""
+"Next, under the \"Roughness\" section, set ``Roughness`` to ``1`` and set "
+"the roughness texture to a :ref:`Viewport Texture <class_ViewportTexture>` "
+"pointing to our planet texture :ref:`Viewport <class_Viewport>`. Finally, "
+"set the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use "
+"the ``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:282
+msgid ""
+"You'll notice that very little changes except that the planet is no longer "
+"reflecting the sky. This is happening because, by default, when something is "
+"rendered with an alpha value, it gets drawn as a transparent object over the "
+"background. And since the default background of the :ref:`Viewport "
+"<class_Viewport>` is opaque, the ``alpha`` channel of the :ref:`Viewport "
+"Texture <class_ViewportTexture>` is ``1``, resulting in the planet texture "
+"being drawn with slightly fainter colors and a ``Roughness`` value of ``1`` "
+"everywhere. To correct this, we go into the :ref:`Viewport <class_Viewport>` "
+"and enable the \"Transparent Bg\" property. Since we are now rendering one "
+"transparent object on top of another, we want to enable "
+"``blend_premul_alpha``:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:295
+msgid ""
+"This pre-multiplies the colors by the ``alpha`` value and then blends them "
+"correctly together. Typically, when blending one transparent color on top of "
+"another, even if the background has an ``alpha`` of ``0`` (as it does in "
+"this case), you end up with weird color bleed issues. Setting "
+"``blend_premul_alpha`` fixes that."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
+msgid ""
+"Now the planet should look like it is reflecting light on the ocean but not "
+"the land. If you haven't done so already, add an :ref:`OmniLight "
+"<class_OmniLight>` to the scene so you can move it around and see the effect "
+"of the reflections on the ocean."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:305
+msgid ""
+"And there you have it. A procedural planet generated using a :ref:`Viewport "
+"<class_Viewport>`."
+msgstr ""

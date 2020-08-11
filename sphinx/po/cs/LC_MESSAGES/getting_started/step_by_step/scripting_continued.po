@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
+msgid "Scripting (continued)"
+msgstr "Skriptování (pokračování)"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
+msgid "Processing"
+msgstr "Zpracování procesů"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
+msgid ""
+"Several actions in Godot are triggered by callbacks or virtual functions, so "
+"there is no need to write code that runs all the time."
+msgstr ""
+"Některé z akci Godota jsou spouštěny tzv. callbacky (funkce předana jako "
+"parametr jiné funkci) nebo virtuálními funkcemi (funkce vybíraná za běhu "
+"programu podle volajícího objektu), proto není třeba psát kód, který běží "
+"neustále."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
+msgid ""
+"However, it is still common to need a script to be processed on every frame. "
+"There are two types of processing: idle processing and physics processing."
+msgstr ""
+"Nicméně, stále potřebuje skript, který bude zpracováván v každém framu. "
+"Existují dva druhy tohoto zpracování: \"volnoběžné\" zpracování a zpracování "
+"fyziky."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+msgid ""
+"Idle processing is activated when the method :ref:`Node._process() "
+"<class_Node_method__process>` is found in a script. It can be turned off and "
+"on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
+"function."
+msgstr ""
+"Volnoběžné zpracování je aktivováno, když je ve skriptu nalezena metoda: "
+"ref: `Node._process () <class_Node_method__process>`. Lze jej vypnout a "
+"zapnout pomocí funkce: ref: `Node.set_process () "
+"<class_Node_method_set_process>`."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
+msgid "This method will be called every time a frame is drawn:"
+msgstr "Tato metoda bude volaná vždy když je vykreslen snímek (frame):"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
+msgid ""
+"It's important to bear in mind that the frequency with which ``_process()`` "
+"will be called depends on how many frames per second (FPS) your application "
+"is running at. This rate can vary over time and devices."
+msgstr ""
+"Je důležité mít na paměti, že frekvence, se kterou bude `` _process () `` "
+"vyvolávána, závisí na tom, na jakém FPS (snímky za sekundu) vaše aplikace "
+"běží. Tato rychlost může kolísat jak v průběhu času tak vzhledem k "
+"rozdílnému výkonu jednotlivých zařízení."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+msgid ""
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
+"``_process()``."
+msgstr ""
+"Aby bylo možno ošetřit tuto variabilitu, je k dispozici ``delta`` parametr "
+"typu float, který vyjadřuje čas uběhlý od předchozího volání ``_process()``."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
+msgid ""
+"This parameter can be used to make sure things always take the same amount "
+"of time, regardless of the game's FPS."
+msgstr ""
+"Tento parametr lze použít k zajištění toho, aby věci vždy zabíraly stejné "
+"množství času, bez ohledu na FPS hry."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+msgid ""
+"For example, movement is often multiplied with a time delta to make movement "
+"speed both constant and independent of the frame rate."
+msgstr ""
+"Například pohyb(vektor rychlosti) je často násoben touto časovou deltou, aby "
+"byla rychlost pohybu konstantní a nezávislá na obnovovací frekvenci."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
+msgid ""
+"Physics processing with ``_physics_process()`` is similar, but it should be "
+"used for processes that must happen before each physics step, such as "
+"controlling a character. It always runs before a physics step and it is "
+"called at fixed time intervals: 60 times per second by default. You can "
+"change the interval from the Project Settings, under Physics -> Common -> "
+"Physics Fps."
+msgstr ""
+"Zpracování fyziky pomocí `` _physics_process () `` je podobné, ale mělo by "
+"být použito pro akce, které musí nastat před každým fyzikálním krokem, jako "
+"je například ovládání postavy. Vždy běží před zpracováním kroku fyziky a je "
+"volán ve fixních časových intervalech: standardně 60krát za sekundu. "
+"Interval můžete změnit z Nastavení projektu v části Fyzika -> Společné -> "
+"Fyzika Fps."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
+msgid ""
+"The function ``_process()``, however, is not synced with physics. Its frame "
+"rate is not constant and is dependent on hardware and game optimization. Its "
+"execution is done after the physics step on single-threaded games."
+msgstr ""
+"Funkce `_process ()` `však není synchronizována s fyzikou. Její obnovovací "
+"frekvence není konstantní a závisí na hardwaru a optimalizaci hry. U "
+"jednovláknových her je spouštěna až po dokončení fyzikálního kroku."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
+msgid ""
+"A simple way to see the ``_process()`` function at work is to create a scene "
+"with a single Label node, with the following script:"
+msgstr ""
+"Jednoduchý způsob, jak vidět funkci `_process()` při práci je vytvořit scénu "
+"s jediným Label uzlem s následujícím skriptem:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
+msgid "Which will show a counter increasing each frame."
+msgstr ""
+"Ukáže nám to počítadlo, které se s každým dalším framem (snímkem) zvyšuje."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
+msgid "Groups"
+msgstr "Skupiny"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
+msgid ""
+"Groups in Godot work like tags you might have come across in other software. "
+"A node can be added to as many groups as desired. This is a useful feature "
+"for organizing large scenes. There are two ways to add nodes to groups. The "
+"first is from the UI, using the Groups button under the Node panel:"
+msgstr ""
+"Skupiny v Godotu pracují jako štítky(tagy), s nimiž jste se mohli setkat v "
+"jiném softwaru. Uzel lze přidat do libovolného počtu skupin. Toto je "
+"užitečná vlastnost pro organizování velkých scén. Existují dva způsoby, jak "
+"přidat uzly do skupin. První je pomocí uživatelského rozhraní pomocí "
+"tlačítka Skupiny na panelu Uzel:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
+msgid ""
+"And the second way is from code. The following script would add the current "
+"node to the ``enemies`` group as soon as it appeared in the scene tree."
+msgstr ""
+"A druhý způsob je pomocí kódu. Následující skript by přidal aktuální uzel do "
+"skupiny `` nepřátelé ', jakmile se objeví ve stromu scény."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
+msgid ""
+"This way, if the player is discovered sneaking into a secret base, all "
+"enemies can be notified about its alarm sounding by using :ref:`SceneTree."
+"call_group() <class_SceneTree_method_call_group>`:"
+msgstr ""
+"Například, pokud je hráč objeven, jak se plíží do tajné základny, všichni "
+"nepřátelé mohou být najednou upozorněni na jeho přítomnost pomocí: ref: "
+"`SceneTree.call_group () <class_SceneTree_method_call_group>`:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
+msgid ""
+"The above code calls the function ``player_was_discovered`` on every member "
+"of the group ``enemies``."
+msgstr ""
+"Výše uvedený kód volá funkci \"player_was_discovered\" pro každého člena "
+"skupiny ''nepřátelé''."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
+msgid ""
+"It is also possible to get the full list of ``enemies`` nodes by calling :"
+"ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
+msgstr ""
+"Je také možné získat úplný seznam uzlů `` nepřátel 'voláním: ref: `SceneTree."
+"get_nodes_in_group () <class_SceneTree_method_get_nodes_in_group>`:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
+msgid ""
+"The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
+"like interacting with scenes, their node hierarchy and groups of nodes. It "
+"allows you to easily switch scenes or reload them, to quit the game or pause "
+"and unpause it. It even comes with interesting signals. So check it out if "
+"you have some time!"
+msgstr ""
+"Třída: ref: `SceneTree <class_SceneTree>` poskytuje mnoho užitečných metod "
+"pro například interakci se scénami, jejich hierarchii uzlů a skupinami uzlů. "
+"To vám umožní snadno přepínat nebo znovu načíst scény, ukončit nebo "
+"pozastavit či zrušit pozastavení hry. Dodává se dokonce se zajímavými "
+"signály. Takže se podívejte do dokumentace, jestli máte truchu času!"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
+msgid "Notifications"
+msgstr "Oznámení"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
+msgid ""
+"Godot has a system of notifications. These are usually not needed for "
+"scripting, as it's too low-level and virtual functions are provided for most "
+"of them. It's just good to know they exist. For example, you may add an :ref:"
+"`Object._notification() <class_Object_method__notification>` function in "
+"your script:"
+msgstr ""
+"Godot má systém oznámení. Obvykle nejsou pro skriptování zapotřebí, protože "
+"jsou příliš zanořeny do systému a pro většinu z nich jsou k dispozici "
+"virtuální funkce. Je prostě dobré vědět, že existují. Například můžete do "
+"skriptu přidat funkci: ref: `Object._notification () "
+"<class_Object_method__notification>`:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+msgid ""
+"The documentation of each class in the :ref:`Class Reference <toc-class-"
+"ref>` shows the notifications it can receive. However, in most cases "
+"GDScript provides simpler overridable functions."
+msgstr ""
+"Dokumentace každé třídy v: ref: `Class Reference <toc-class-ref>` zobrazuje "
+"oznámení, která může třída přijímat. Ve většině případů však GDScript "
+"poskytuje jednodušší přetěžovatelné funkce."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
+msgid "Overridable functions"
+msgstr "Přetěžovatelné (overridable) funkce"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
+msgid ""
+"Such overridable functions, which are described as follows, can be applied "
+"to nodes:"
+msgstr ""
+"Takové přetěžovatelné funkce, které může uzel využívat, jsou popsány dále:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
+msgid ""
+"As mentioned before, it's better to use these functions instead of the "
+"notification system."
+msgstr ""
+"Jak již bylo zmíněno dříve, je lepší použít tyto funkce místo oznamovacího "
+"systému."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
+msgid "Creating nodes"
+msgstr "Vytváření uzlů"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
+msgid ""
+"To create a node from code, call the ``.new()`` method, like for any other "
+"class-based datatype. For example:"
+msgstr ""
+"Chcete-li vytvořit uzel v kódu, volejte metodu `` .new () ``, tak jako pro "
+"jakýkoli jiný datový typ třídy. Například:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
+msgid ""
+"To delete a node, be it inside or outside the scene, ``free()`` must be used:"
+msgstr ""
+"Pro smazání uzlu, ať už uvnitř nebo vně scény, musí být použito `` free () "
+"``:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
+msgid ""
+"When a node is freed, it also frees all its child nodes. Because of this, "
+"manually deleting nodes is much simpler than it appears. Free the base node "
+"and everything else in the subtree goes away with it."
+msgstr ""
+"Když je uzel uvolněn, uvolní také všechny jeho podřízené uzly. Z tohoto "
+"důvodu je ruční mazání uzlů mnohem jednodušší, než se zdá. Uvolněte základní "
+"uzel a všechno ostatní v podstromu zmizí spolu s ním."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+msgid ""
+"A situation might occur where we want to delete a node that is currently "
+"\"blocked\", because it is emitting a signal or calling a function. This "
+"will crash the game. Running Godot with the debugger will often catch this "
+"case and warn you about it."
+msgstr ""
+"Může nastat situace, kdy chceme odstranit uzel, který je aktuálně "
+"„blokován“, protože vysílá signál nebo volá funkci. Tím dojde ke zhroucení "
+"hry. Spuštění Godota s debuggerem tento případ často zachytí a upozorní vás "
+"na to."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
+msgid ""
+"The safest way to delete a node is by using :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>`. This erases the node safely during idle."
+msgstr ""
+"Nejbezpečnější způsob, jak odstranit uzel, je pomocí: ref: `Node.queue_free "
+"() <class_Node_method_queue_free>`. Toto bezpečně vymaže uzel během jeho "
+"nečinnosti."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
+msgid "Instancing scenes"
+msgstr "Vytvoření instance scény"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
+msgid ""
+"Instancing a scene from code is done in two steps. The first one is to load "
+"the scene from your hard drive:"
+msgstr ""
+"Instalace scény z kódu se provádí ve dvou krocích. Prvním je načtení scény z "
+"pevného disku:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
+msgid ""
+"Preloading it can be more convenient, as it happens at parse time (GDScript "
+"only):"
+msgstr ""
+"Předběžné načtení může být pohodlnější, protože k tomu dochází v době "
+"parsování (přípravy)skriptu(pouze GDScript):"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
+msgid ""
+"But ``scene`` is not yet a node. It's packed in a special resource called :"
+"ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
+"function :ref:`PackedScene.instance() <class_PackedScene_method_instance>` "
+"must be called. This will return the tree of nodes that can be added to the "
+"active scene:"
+msgstr ""
+"Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem: "
+"ref: `PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
+"třeba zavolat funkci: ref: `PackedScene.instance () "
+"<class_PackedScene_method_instance>`. Ta vrátí strom uzlů, který lze přidat "
+"k aktivní scéně:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+msgid ""
+"The advantage of this two-step process is that a packed scene may be kept "
+"loaded and ready to use so that you can create as many instances as desired. "
+"This is especially useful to quickly instance several enemies, bullets, and "
+"other entities in the active scene."
+msgstr ""
+"Výhodou tohoto dvoustupňového procesu je, že zabalená scéna může být nahrána "
+"a připravena k použití, takže jste schopni vytvořit libovolný počet "
+"instancí. To je užitečné zejména při rychlém nasazení několika nepřátel, "
+"kulek a dalších entit do aktivní scény."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
+msgid "Register scripts as classes"
+msgstr "Registrace skriptu jako třídy"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
+msgid ""
+"Godot has a \"Script Class\" feature to register individual scripts with the "
+"Editor. By default, you can only access unnamed scripts by loading the file "
+"directly."
+msgstr ""
+"Godot má vlastnost \"ScriptClass\" pro registraci jednotlivých skriptů v "
+"Editoru. Ve výchozím nastavení máte přístup pouze k nepojmenovaným skriptům "
+"po přímém načtení souboru."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
+msgid ""
+"You can name a script and register it as a type in the editor with the "
+"``class_name`` keyword followed by the class's name. You may add a comma and "
+"an optional path to an image to use as an icon. You will then find your new "
+"type in the Node or Resource creation dialog."
+msgstr ""
+"Můžete pojmenovat skript a zaregistrovat jej jako typ v editoru pomocí "
+"klíčového slova `class_name`` následovaného názvem třídy. Můžete přidat "
+"čárku a volitelnou cestu k obrázku, který lze použít jako ikonu. Poté "
+"najdete svůj nový typ v dialogu pro vytvoření uzlu nebo prostředků."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
+msgid "In Godot 3.1:"
+msgstr "V Godotu 3.1:"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
+msgid ""
+"Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
+"languages, can register scripts."
+msgstr ""
+"Skripty mohou registrovat pouze GDScript a NativeScript, tj. C ++ a další "
+"jazyky podporované GDNative."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
+msgid "Only GDScript creates global variables for each named script."
+msgstr "Pouze GDScript vytváří globální proměnné pro každý pojmenovaný skript."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -172,11 +172,17 @@ msgid ""
 "``collision_mask`` member variable:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:226
+#: ../../docs/tutorials/physics/ray-casting.rst:224
+msgid ""
+"See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
+"on how to set the collision mask."
+msgstr ""
+
+#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:228
+#: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "
@@ -185,7 +191,7 @@ msgid ""
 "here's how."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:234
+#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -194,11 +200,11 @@ msgid ""
 "perspective mode:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:242
+#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:270
+#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."

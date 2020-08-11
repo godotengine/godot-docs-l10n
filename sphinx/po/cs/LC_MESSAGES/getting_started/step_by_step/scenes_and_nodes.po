@@ -1,0 +1,455 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
+msgid "Scenes and nodes"
+msgstr "Scény a uzly"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
+msgid "Introduction"
+msgstr "Představení"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
+msgid ""
+"Imagine for a second that you are not a game developer anymore. Instead, "
+"you're a chef! Change your hipster outfit for a toque and a double breasted "
+"jacket. Now, instead of making games, you create new and delicious recipes "
+"for your guests."
+msgstr ""
+"Představ si na chvilku, že nejsi herní vývojář. Jsi prostě kuchař! Vyměň jsi "
+"svůj hipsterský obječek za chuchařský čepec a dvouřadé sako. Teď, místo "
+"vytváření her, tvoříš nové a chutné recpty pro své hosty."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
+msgid ""
+"So, how does a chef create a recipe? Recipes are divided into two sections: "
+"the first is the ingredients and the second is the instructions to prepare "
+"it. This way, anyone can follow the recipe and savor your magnificent "
+"creation."
+msgstr ""
+"Tak, jak kuchař vytváří předpis? Předpisy jsou rozděleny do dvou částí: v "
+"první jsou přísady a ve druhé postup jak pokrm připravit. Takhle může "
+"kdokoliv postupovat podle receptu a kochat se tvým velkolepým výkonem."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
+msgid ""
+"Making games in Godot feels pretty much the same way. Using the engine feels "
+"like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
+"full of fresh ingredients with which to cook."
+msgstr ""
+"Vytváření her v Godotu je nemlich to samé. Používání enginu je jako být v "
+"kuchyni. V této kuchyni jsou \"uzly\" jako lednička plná čerstvých přísad ze "
+"kterých se vaří."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
+msgid ""
+"There are many types of nodes. Some show images, others play sound, other "
+"nodes display 3D models, etc. There are dozens of them."
+msgstr ""
+"Existuje mnoho typů uzlů. Některé zobrazí obrázky jiné přehrávají zvuky, "
+"další uzly zobrazují 3D modely atd. Jsou jich mraky."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
+msgid "Nodes"
+msgstr "Uzly"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
+msgid ""
+"But let's start with the basics. Nodes are fundamental building blocks for "
+"creating a game. As mentioned above, a node can perform a variety of "
+"specialized functions. However, any given node always has the following "
+"attributes:"
+msgstr ""
+"Ale začněme od Adama. Uzly jsou základní stavební bloky pro vytvoření hry. "
+"Tak jak už bylo řečeno, uzel může vykonávat velké množství speciálních "
+"funkcí. Avšak libovolný uzel má vždycky následůjící vlastnosti (atributy):"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
+msgid "It has a name."
+msgstr "Má jméno."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
+msgid "It has editable properties."
+msgstr "Má editovatelné vlastnosti."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
+msgid "It can receive a callback to process every frame."
+msgstr "Může obdržet pokyn (callback), aby zpracoval každý snímek (frame)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
+msgid "It can be extended (to have more functions)."
+msgstr "Může být rozšířen o další funkce."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
+msgid "It can be added to another node as a child."
+msgstr "Může být přidán do dalšího uzlu jako jeho potomek."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
+msgid ""
+"The last one is important. Nodes can have other nodes as children. When "
+"arranged in this way, the nodes become a **tree**."
+msgstr ""
+"Ta poslední vlastnost (dědičnost) je obzvlášť důležitá. Uzly mohou mít jiné "
+"uzly jako potomky. Takové uspořádání uzlů nazýváme \"stromem\"."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
+msgid ""
+"In Godot, the ability to arrange nodes in this way creates a powerful tool "
+"for organizing projects. Since different nodes have different functions, "
+"combining them allows for the creation of more complex functions."
+msgstr ""
+"V Godotu představuje možnost seskupovat uzly do stromů mocný nástroj pro "
+"organizování herního projektu. Protože ruzné uzly umí různé funkce, jejich "
+"kombinováním můžeme vytvořit komplexnější chování a nakonec celou hru."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
+msgid ""
+"Don't worry if this doesn't click yet. We will continue to explore this over "
+"the next few sections. The most important fact to remember for now is that "
+"nodes exist and can be arranged this way."
+msgstr ""
+"Jestli ti to teď nedává zrovínka dvakrát smysl, nic si s toho nedělej. "
+"Nejdůležitější je si uvědomit, že v Godotu existují uzly a že se dají "
+"seskupovat (do stromů)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
+msgid "Scenes"
+msgstr "Scény"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
+msgid ""
+"Now that the concept of nodes has been defined, the next logical step is to "
+"explain what a Scene is."
+msgstr ""
+"Teď, když jsme si definovali koncept uzlů, můžeme vysvětlit co je to vlastně "
+"scéna."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
+msgid ""
+"A scene is composed of a group of nodes organized hierarchically (in tree "
+"fashion). Furthermore, a scene:"
+msgstr ""
+"Scéna se skládá ze skupiny uzlů seřazených hiearchicky (do stromové "
+"struktury). Mimoto scéna:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
+msgid "always has one root node."
+msgstr "má vždycky jeden kořenový uzel."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
+msgid "can be saved to disk and loaded back."
+msgstr "může být uložena na disk a nahrána zpět."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
+msgid "can be *instanced* (more on that later)."
+msgstr "může být vytvořena její instance (bude vysvětleno později)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
+msgid ""
+"Running a game means running a scene. A project can contain several scenes, "
+"but for the game to start, one of them must be selected as the main scene."
+msgstr ""
+"Běh hry znamená běh scény. Projekt může obsahovat několik scén, ale aby "
+"mohla být hra spuštěna, jedna ze scén musí být označena jako tzv. hlavní "
+"scéna."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
+msgid ""
+"Basically, the Godot editor is a **scene editor**. It has plenty of tools "
+"for editing 2D and 3D scenes as well as user interfaces, but the editor is "
+"based on the concept of editing a scene and the nodes that compose it."
+msgstr ""
+"V podstatě je editor Godotu ** editorem scén **. Má spoustu nástrojů pro "
+"editaci 2D a 3D scén a uživatelských rozhraní, ale editor sám je založen na "
+"konceptu úpravy scény a uzlů, které tu scénu tvoří."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
+msgid "Editor"
+msgstr "Editor"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
+msgid ""
+"Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
+"create a new one. This will open the Godot editor:"
+msgstr ""
+"Otevřete projekt, ve kterém jste vytvořili: ref: "
+"`doc_intro_to_the_editor_interface`, nebo vytvořte nový. Otevře se editor "
+"Godot:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
+msgid ""
+"As mentioned before, making games in Godot feels like being in a kitchen, so "
+"let's open the refrigerator and add some fresh nodes to the project. We'll "
+"begin with a \"Hello World\" message that we'll put on the screen."
+msgstr ""
+"Jak již bylo zmíněno, dělat hry v Godotu je jako připravovat jídlo v "
+"kuchyni, takže pojďme otevřít chladničku a přidat do projektu nějaké ty "
+"čerstvé voňavoučké uzly. Začneme zprávou „Hello World“, kterou umístíme na "
+"obrazovku."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
+msgid ""
+"To do this we need to add a Label node. Press the \"Add Child Node\" button "
+"at the top left of the scene dock (the icon represents a plus symbol). This "
+"button is the main way to add new nodes to a scene, and will always add the "
+"chosen node as a child of the currently selected node (or, in an empty "
+"scene, as the \"root\" node)."
+msgstr ""
+"K tomu musíme přidat uzel Label. Stiskněte tlačítko „Přidat podřízený uzel“ "
+"vlevo nahoře v doku scény (ikona představuje symbol plus). Toto tlačítko je "
+"hlavním způsobem přidání nových uzlů do scény a vždy přidá vybraný uzel jako "
+"podřízený aktuálně vybraného uzlu (nebo v prázdné scéně jako „kořenový“ "
+"uzel)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
+#, fuzzy
+msgid ""
+"In an empty scene (without root node), the scene dock shows several options "
+"to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
+"\"3D Scene\" adds a Spatial node, \"User Interface\" adds a Control node, "
+"and \"Other Node\" which lets you select any node (so it is equivalent to "
+"pressing the \"Add Child Node\" button). You can also press the star-shaped "
+"icon to toggle the display of your favorited nodes."
+msgstr ""
+"V prázdné scéně (bez kořenového uzlu) dok scény zobrazuje několik možností, "
+"jak rychle přidat do scény kořenový uzel . „2D scéna“ přidá uzel Node2D, „3D "
+"scéna“ přidá prostorový uzel, „Uživatelské rozhraní“ přidá řídící uzel a "
+"„Vlastní uzel“, který vám umožní vybrat jakýkoli uzel (takže je ekvivalentní "
+"stisknutí tlačítka „Přidat podřízený uzel“ ). Můžete také stisknout ikonu ve "
+"tvaru hvězdy a přepnout zobrazení oblíbených uzlů."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
+msgid ""
+"Note that these presets are here for convenience and are not mandatory for "
+"the different types of scenes. Not every 3D scene needs a Spatial node as "
+"its root node, likewise not every GUI or 2D scene needs a Control node or "
+"Node2D as their root node."
+msgstr ""
+"Tyto předvolby jsou zde pro lepší přehlednost a nejsou povinné pro různé "
+"typy scén. Ne každá 3D scéna potřebuje jako svůj kořenový uzel prostorový "
+"uzel, stejně jako ne každá GUI nebo 2D scéna potřebuje jako svůj kořenový "
+"uzel řídicí uzel nebo Node2D."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
+#, fuzzy
+msgid ""
+"Now, to add a label node to this scene you can click on the Other Node "
+"button or the Add Node button at the top. In scenes that aren't empty you "
+"use the add node button to create every child node."
+msgstr ""
+"Nyní, pokud chcete do této scény přidat uzel popisu, můžete kliknout na "
+"tlačítko Vlastní uzel nebo na tlačítko Přidat uzel nahoře. Ve scénách, které "
+"nejsou prázdné, pomocí tlačítka Přidat uzel vytvoříte libovolný podřízený "
+"uzel."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
+msgid ""
+"This will open the Create Node dialog, showing the long list of nodes that "
+"can be created:"
+msgstr ""
+"Otevře se dialog Vytvořit uzel, kde se zobrazí dlouhý seznam uzlů, které lze "
+"vytvořit:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
+msgid ""
+"From there, select the \"Label\" node first. Searching for it is probably "
+"the fastest way:"
+msgstr ""
+"Odtud nejprve vyberte uzel „Popisek“. Hledání je pravděpodobně nejrychlejším "
+"způsobem:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
+msgid "And finally, create the Label! A lot happens when Create is pressed:"
+msgstr ""
+"A konečně vytvořte Popisek! Stane se toho opravdu hodně, když stisknete "
+"tlačítko Vytvořit:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
+msgid ""
+"First of all, the scene changes to the 2D editor (because Label is a 2D Node "
+"type), and the Label appears, selected, at the top left corner of the "
+"viewport."
+msgstr ""
+"Nejprve se scéna změní na 2D editor (protože Popisek je typ 2D uzlu) a v "
+"levém horním rohu výřezu se zobrazí vybraný popisek."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+msgid ""
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
+msgstr ""
+"Uzel se zobrazí v editoru stromu scény v doku Scény a vlastnosti popisku se "
+"zobrazí v doku Inspektoru."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
+msgid ""
+"The next step will be to change the \"Text\" Property of the label. Let's "
+"change it to \"Hello World\":"
+msgstr ""
+"Dalším krokem bude změna vlastnosti „Text“ popisku. Pojďme to změnit na "
+"„Hello World“:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+msgid ""
+"Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
+"top bar (or hit :kbd:`F6`):"
+msgstr ""
+"Dobře, všechno je připraveno na spuštění scény! Stiskněte tlačítko Přehrát "
+"scénu na horním panelu (nebo stiskněte: kbd: `F6`):"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
+msgid "Aaaand... Oops."
+msgstr "Aaaand ... Jejda."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
+msgid ""
+"Scenes need to be saved to be run, so save the scene to something like Hello."
+"tscn in Scene -> Save:"
+msgstr ""
+"Scény je třeba uložit, aby mohly být spuštěny, takže scénu uložte na něco "
+"jako Hello.tscn ve scéně -> Uložit:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
+msgid ""
+"And here's when something funny happens. The file dialog is a special file "
+"dialog, and only allows you to save inside the project. The project root is "
+"``res://`` which means \"resource path\". This means that files can only be "
+"saved inside the project. For the future, when doing file operations in "
+"Godot, remember that ``res://`` is the resource path, and no matter the "
+"platform or install location, it is the way to locate where resource files "
+"are from inside the game."
+msgstr ""
+"A tady je, když se stane něco zábavného. Dialogové okno souboru je speciální "
+"soborový dialog a umožňuje pouze uložení v rámci projektu. Kořenový adresář "
+"projektu je `` res: // ``, což znamená \"cesta pro zdroje\". Tzn. , že "
+"soubory lze ukládat pouze uvnitř projektu. Do budoucna při práci se soubory "
+"v Godotu, mějte na paměti, že `res: //` `je cesta ke zdroji, a to bez ohledu "
+"na platformu či umístění instalace. Je to prostě způsob, odkazovat na "
+"zdrojové soubory z prostředí hry samotné."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
+msgid ""
+"After saving the scene and pressing run scene again, the \"Hello World\" "
+"demo should finally execute:"
+msgstr ""
+"Po uložení scény a opětovném stisknutí spouštěcí scény by se mělo demo Hello "
+"Worldkonečně spustit:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+msgid "Success!"
+msgstr "Úspěch!"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+"Pokud to nefunguje okamžitě a máte hiDPI displej alespoň na jednom z vašich "
+"monitorů, přejděte na ** Projekt → Nastavení projektu → Displej → Okno ** a "
+"poté povolte ** Povolit Hidpi ** pod ** Dpi **."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
+msgid "Configuring the project"
+msgstr "Konfigurace projektu"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
+msgid ""
+"Ok, it's time to configure the project. Right now, the only way to run "
+"something is to execute the current scene. Projects, however, may have "
+"several scenes, so one of them must be set as the main scene. This is the "
+"scene that will be loaded any time the project is run."
+msgstr ""
+"Ok, je čas na konfiguraci projektu. Jediným způsobem, jak něco spustit, je "
+"právě provedení aktuální scény. Projekty však mohou mít několik scén, takže "
+"jedna z nich musí být nastavena jako hlavní scéna. Toto je scéna, která se "
+"načte při každém spuštění projektu."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
+msgid ""
+"These settings are all stored in a project.godot file, which is a plaintext "
+"file in win.ini format (for easy editing). There are dozens of settings that "
+"you can change in this file to alter how a project executes. To simplify "
+"this process, Godot provides a project settings dialog, which acts as a sort "
+"of frontend to editing a project.godot file."
+msgstr ""
+"Všechna tato nastavení jsou uložena v souboru project.godot, což je prostý "
+"text ve formátu win.ini (pro snadnou editaci). Existují desítky nastavení, "
+"která můžete v tomto souboru změnit a změnit tak provádění projektu. Pro "
+"zjednodušení tohoto procesu poskytuje Godot dialog nastavení projektu, který "
+"slouží jako jakési rozhraní pro editaci souboru project.godot."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
+msgid "To access that dialog, select Project -> Project Settings. Try it now."
+msgstr ""
+"Pro přístup do tohoto dialogu vyberte Projekt -> Nastavení projektu. Zkus to "
+"nyní."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
+msgid ""
+"Once the window opens, let's select a main scene. Locate the `Application/"
+"Run/Main Scene` property and click on it to select 'Hello.tscn'."
+msgstr ""
+"Po otevření okna vybereme hlavní scénu. Vyhledejte vlastnost `Aplikace / "
+"Spustit / Hlavní scéna` a kliknutím na ni vyberte 'Hello.tscn'."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+msgid ""
+"Now, with this change, when you press the regular Play button (or F5), this "
+"scene will run, no matter which scene is actively being edited."
+msgstr ""
+"Nyní s touto změnou, vždy když stisknete tlačítko Přehrát (nebo F5), bude "
+"spuštěna tato hlavní scéna, bez ohledu na to, která ze scén je právě "
+"editována."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
+msgid ""
+"The project settings dialog provides a lot of options that can be saved to a "
+"project.godot file and shows their default values. If you change a value, a "
+"tick is marked to the left of its name. This means that the property will be "
+"saved to the project.godot file and remembered."
+msgstr ""
+"Dialogové okno nastavení projektu poskytuje mnoho možností, které lze uložit "
+"do souboru project.godot a zobrazuje jejich výchozí hodnoty. Pokud změníte "
+"hodnotu, vlevo od jejího názvu je označena fajfka. To znamená, že vlastnost "
+"bude uložena do souboru project.godot a zapamatována."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
+msgid ""
+"As a side note, it is also possible to add custom configuration options and "
+"read them in at run-time using the :ref:`ProjectSettings "
+"<class_ProjectSettings>` singleton."
+msgstr ""
+"Jako vedlejší poznámku je také možné přidat vlastní možnosti konfigurace a "
+"přečíst je za běhu pomocí: ref: `ProjectSettings <class_ProjectSettings>` "
+"singleton."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
+msgid "To be continued..."
+msgstr "Pokračování příště..."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
+msgid ""
+"This tutorial talked about \"scenes and nodes\", but so far there has been "
+"only *one* scene and *one* node! Don't worry, the next tutorial will expand "
+"on that..."
+msgstr ""
+"Tento tutoriál vyprávěl o „scénách a uzlech“, ale zatím existovala v našem "
+"projektu pouze * jedna * scéna a * jeden * uzel! Nebojte se, další tutoriál "
+"to rozvede ..."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,11 +33,19 @@ msgstr ""
 "**Projektinhallinta, telakat ja työtilat** sekä kaikki mitä sinun tarvitsee "
 "tietää voidaksesi aloittaa pelimoottorin parissa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
+#, fuzzy
+msgid ""
+"You can `download Godot Engine here <https://godotengine.org/download/>`_."
+msgstr ""
+"Jos käytät Blenderiä, vilkaise omaa `Better Collada Exporter <https://"
+"godotengine.org/download>`_ vientityökaluamme."
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
 msgstr "Projektinhallinta"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
 #, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
@@ -48,7 +56,7 @@ msgstr ""
 "Projektinhallinta. Se antaa sinun luoda, poistaa, tuoda tai pelata "
 "peliprojekteja."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #, fuzzy
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
@@ -58,7 +66,7 @@ msgstr ""
 "Projektinhallinta. Se antaa sinun luoda, poistaa, tuoda tai pelata "
 "peliprojekteja."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
@@ -67,7 +75,7 @@ msgstr ""
 "Oikeasta yläkulmasta löydät alasvetovalikon editorissa käytettävän kielen "
 "vaihtamiseksi."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 #, fuzzy
 msgid ""
 "From the **Templates** tab you can download open source project templates "
@@ -79,11 +87,11 @@ msgstr ""
 "**Mallit** välilehdellä voit ladata avoimen lähdekoodin projektipohjia ja "
 "esimerkkejä päästäksesi nopeammin alkuun."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
 msgstr "Luo tai tuo projekti"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
 #, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
@@ -94,7 +102,7 @@ msgstr ""
 "painiketta. Anna sille nimi ja valitse tietokoneeltasi tyhjä hakemisto, "
 "jonne se tallennetaan."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
@@ -103,7 +111,7 @@ msgstr ""
 "Napsauta Selaa-painiketta avataksesi Godotin tiedostoselaimen ja valitse "
 "sijainti, tai kirjoita kansion polku Projektin polku -kenttään."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:53
 #, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
@@ -115,7 +123,7 @@ msgstr ""
 "tunnistettu tyhjäksi ja voit napsauttaa ``Luo ja muokkaa``. Godot luo "
 "sinulle projektin ja avaa sen editoriin."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -124,7 +132,7 @@ msgid ""
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 #, fuzzy
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
@@ -134,7 +142,7 @@ msgstr ""
 "tunnistettu tyhjäksi ja voit napsauttaa ``Luo ja muokkaa``. Godot luo "
 "sinulle projektin ja avaa sen editoriin."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
 #, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
@@ -143,7 +151,7 @@ msgstr ""
 "Seuraavan kerran kun avaat Godotin, näet uuden projektisi luettelossa. "
 "Kaksoisnapsauta sitä avataksesi sen editoriin."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
 "You can import existing projects in a similar way, using the Import button. "
 "Locate the folder that contains the project or the ``project.godot`` file to "
@@ -153,16 +161,16 @@ msgstr ""
 "painiketta. Etsi kansio, joka sisältää projektin tai ``project.godot`` "
 "tiedoston, tuodaksesi projektin ja muokataksesi sitä."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:75
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Kun projektin polku on oikein, näet vihreän oikein-merkin."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #, fuzzy
 msgid "Your first look at Godot's editor"
 msgstr "Ensimmäinen katsauksesi Godotin editoriin"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
 #, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
@@ -174,7 +182,7 @@ msgstr ""
 "nykyistä työtilaa käyttöliittymän ylälaidasta. Napsauta 2D vaihtaaksesi 2D-"
 "työtilaan."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
@@ -182,7 +190,7 @@ msgstr ""
 "Ylhäällä, vasemmalta oikealle luettuna, voit nähdä **valikot (main menus)**, "
 "**työtilat (workspaces)** ja **pelitestauspainikkeet (playtest buttons)**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 #, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
@@ -190,7 +198,7 @@ msgstr ""
 "Vasemmassa laidassa on **Tiedostojärjestelmän telakka (FileSystem dock)**, "
 "jossa voit hallinnoida projektisi tiedostoja ja varoja."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 #, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
@@ -200,7 +208,7 @@ msgstr ""
 "aktiivisen skenen sisällön, ja oikeasta alakulmasta **Tarkastelun "
 "(Inspector)**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 #, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
@@ -211,7 +219,7 @@ msgstr ""
 "työkaluja siirtämiseen, koon muuttamiseen ja skenesi objektien "
 "lukitsemiseen. Sen sisältö vaihtuu, kun hypit työtilasta toiseen."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 #, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
@@ -222,17 +230,17 @@ msgstr ""
 "varten. Ne ovat leveitä ja vievät arvokasta tilaa. Sen vuoksi ne ovat aluksi "
 "suljettuna."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "The workspaces"
 msgstr "Työtilat"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
 "Ylhäällä näet painikkeet neljälle työtilalle: 2D, 3D, Script ja AssetLib."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 #, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
@@ -243,7 +251,7 @@ msgstr ""
 "lisäksi rakennat siinä myös pelisi käyttöliittymät. Paina F1 päästäksesi "
 "tilaan."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 #, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
@@ -252,7 +260,7 @@ msgstr ""
 "**3D-työtilassa** voit työskennellä meshien, valojen ja kenttäsuunnittelun "
 "parissa. Paina F2 mennäksesi siihen."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 #, fuzzy
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
@@ -261,12 +269,12 @@ msgstr ""
 "Huomaa myös teksti [Perspektiivi] työpalkin alla; se on painike, joka avaa "
 "luettelon 3D-ikkunaan liittyviä vaihtoehtoja."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 #, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
@@ -277,7 +285,7 @@ msgstr ""
 "automaattitäydennyksellä ja sisäänrakennetulla koodin lähdeaineistolla "
 "varustettuna. Paina F3 mennäksesi siihen, ja F4 hakeaksesi lähdeaineistosta."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
 "To search for information about a class, method, property, constant, or "
 "signal in the engine while you are writing a script, press the \"Search Help"
@@ -287,13 +295,13 @@ msgstr ""
 "signaalista pelimoottorissa paina \"Search help\" painiketta oikeassa "
 "yläkulmassa skripti työtilaa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr "Uusi ikkuna pulpahtaa. Etsi kohdetta josta haluat saada lisätietoa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
@@ -301,7 +309,7 @@ msgstr ""
 "Napsauta kohdetta jota etsit ja paina avaa. Dokumentaatio kohteelle näkyy "
 "skripti työtilassa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 #, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
@@ -310,11 +318,11 @@ msgstr ""
 "Lopulta, **AssetLib** on kirjasto vapaita lisäosia, skriptejä ja assetteja, "
 "joita voit käyttää projekteissasi."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 msgid "Modify the interface"
 msgstr "Muokkaa käyttöliittymää"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:166
 #, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
@@ -325,11 +333,11 @@ msgstr ""
 "näytöille, vaikkakin voit työskennellä ulkoisen koodieditorin, kuten "
 "esimerkiksi Atomin tai Visual Studion, kanssa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid "Move and resize docks"
 msgstr "Telakoiden siirtäminen ja koon muuttaminen"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:173
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -337,14 +345,14 @@ msgstr ""
 "Napsauta ja vedä minkä tahansa telakan tai paneelin reunasta muuttaaksesi "
 "sen kokoa vaaka- tai pystysuunnassa."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:176
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:178
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "Napsauta minkä tahansa telakan ylälaidassa olevaa kolmipisteistä kuvaketta "
 "muuttaaksesi sen sijoittelua."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:181
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:183
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

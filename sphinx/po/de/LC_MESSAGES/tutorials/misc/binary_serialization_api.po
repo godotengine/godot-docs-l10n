@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -809,7 +809,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:221
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr ""
+msgstr "11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:236
 msgid "Z size"
@@ -889,48 +889,50 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:296
 msgid "14: :ref:`Color<class_color>`"
-msgstr ""
+msgstr "14: :ref:`Color<class_color>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "Rot (normalerweise 0..1, kann über 1 sein für überstrahlende Farben)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "Green (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "Grün (normalerweise 0..1, kann über 1 sein für überstrahlende Farben)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "Blau (normalerweise 0..1, kann über 1 sein für überstrahlende Farben)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "Alpha (0..1)"
-msgstr ""
+msgstr "Alpha (0..1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:311
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr ""
+msgstr "15: :ref:`NodePath<class_nodepath>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
+"Zeichenketten Länge, oder neues Format (val&0x80000000!=0 und "
+"NameCount=val&0x7FFFFFFF)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:320
 msgid "For old format:"
-msgstr ""
+msgstr "für altes Format:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:328
 msgid "Padded to 4 bytes."
-msgstr ""
+msgstr "aufgefüllt auf 4 Byte."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:331
 msgid "For new format:"
-msgstr ""
+msgstr "für neues Format:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:336
 msgid "Sub-name count"
@@ -938,7 +940,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr ""
+msgstr "Flags (absolut: val&1 != 0 )"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:341
 msgid "For each Name and Sub-Name"
@@ -951,9 +953,8 @@ msgstr "X+0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:346
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
-#, fuzzy
 msgid "String length"
-msgstr "Vektor"
+msgstr "Zeichenketten Länge"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:434
@@ -966,20 +967,20 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:354
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr ""
+msgstr "16: :ref:`RID<class_rid>` (nicht unterstützt)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:357
 msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr ""
+msgstr "17: :ref:`Object<class_object>` (nicht unterstützt)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:360
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr ""
+msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:365
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:377
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
-msgstr ""
+msgstr "val&0x7FFFFFFF = Elemente, val&0x80000000 = shared (Bool)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:368
 msgid ""
@@ -989,7 +990,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:372
 msgid "19: :ref:`Array<class_array>`"
-msgstr ""
+msgstr "19: :ref:`Feld<class_array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid ""
@@ -999,15 +1000,15 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:384
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:389
 msgid "Array length (Bytes)"
-msgstr ""
+msgstr "Feld Länge (Bytes)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "8..8+length"
-msgstr ""
+msgstr "8..8+Länge"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "Byte"
@@ -1015,108 +1016,107 @@ msgstr "Byte"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "Byte (0..255)"
-msgstr ""
+msgstr "Byte (0..255)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:394
 msgid "The array data is padded to 4 bytes."
-msgstr ""
+msgstr "Die Felddaten werden auf 4 Byte aufgefüllt."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:397
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:402
 msgid "Array length (Integers)"
-msgstr ""
+msgstr "Feld Länge (Integer)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:404
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "8..8+length\\*4"
-msgstr ""
+msgstr "8..8+Länge\\*4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:404
 msgid "32-bit signed integer"
-msgstr ""
+msgstr "32-bit signed integer (Vorzeichen behaftet)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:408
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr ""
+msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:413
 msgid "Array length (Floats)"
-msgstr ""
+msgstr "Feld Länge (Fließkomma)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "32-bits IEEE 754 float"
-msgstr ""
+msgstr "32-bit IEEE 754 Fließkomma"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
-msgstr ""
+msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:424
 msgid "Array length (Strings)"
-msgstr ""
+msgstr "Feld Länge (Zeichenketten)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:427
 msgid "For each String:"
-msgstr ""
+msgstr "für jede Zeichenkette:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:437
 msgid "Every string is padded to 4 bytes."
-msgstr ""
+msgstr "Jede Zeichenkette wird auf 4 Bytes aufgefüllt."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:440
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
-#, fuzzy
 msgid "Array length"
-msgstr "Kettenskulptur"
+msgstr "Feld Länge"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "8..8+length\\*8"
-msgstr ""
+msgstr "8..8+Länge\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:449
 msgid "8..12+length\\*8"
-msgstr ""
+msgstr "8..12+Länge\\*8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:453
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "8..8+length\\*12"
-msgstr ""
+msgstr "8..8+Länge\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:462
 msgid "8..12+length\\*12"
-msgstr ""
+msgstr "8..12+Länge\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:464
 msgid "8..16+length\\*12"
-msgstr ""
+msgstr "8..16+Länge\\*12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:468
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "8..8+length\\*16"
-msgstr ""
+msgstr "8..8+Länge\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "8..12+length\\*16"
-msgstr ""
+msgstr "8..12+Länge\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 msgid "8..16+length\\*16"
-msgstr ""
+msgstr "8..16+Länge\\*16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "8..20+length\\*16"
-msgstr ""
+msgstr "8..20+Länge\\*16"

@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:4
+msgid "Exporting for PC"
+msgstr "為 PC 匯出"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:6
+msgid ""
+"The simplest way to distribute a game for PC is to copy the executables "
+"(``godot.exe`` on Windows, ``godot`` on the rest), compress the folder and "
+"send it to someone else. However, this is often not desired."
+msgstr ""
+"要為 PC 發佈遊戲最簡單的方法就是複製可執行檔 (Windows 上為 ``godot.exe`` ，其"
+"餘為 ``godot``)，壓縮資料夾並將壓縮檔傳送給其他人。但我們通常不想這麼做。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:10
+msgid ""
+"Godot offers a more elegant approach for PC distribution when using the "
+"export system. When exporting for PC (Linux, Windows, macOS), the exporter "
+"takes all the project files and creates a ``data.pck`` file. This file is "
+"bundled with a specially optimized binary that is smaller, faster and does "
+"not contain the editor and debugger."
+msgstr ""
+"通過匯出系統，Godot 提供一種更優雅的方法來在 PC 平台上發佈。為 PC 平台匯出時 "
+"(Linux, Windows, macOS)，匯出工具會以所有的專案檔案建立成一個 ``data.pck`` 檔"
+"案。該檔案會內涵一個特別最佳化過的二進位，這個二進位檔更小、更快，而且不包含"
+"編輯器與除錯工具。"

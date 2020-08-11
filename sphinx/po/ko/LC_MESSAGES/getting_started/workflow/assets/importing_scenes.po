@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,17 +147,17 @@ msgid ""
 "glTF binary files are fine."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
-"uses one it must be brought in separately."
+"uses one, it must be brought in separately."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid "Exporting DAE files from Blender"
 msgstr "블렌더에서 DAE 파일 가져오기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
 #, fuzzy
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 "블렌더도 내장 COLLADA 지원을 갖고 있지만, 역시 고장나고 사용해서는 안됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
 #, fuzzy
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
@@ -176,11 +176,11 @@ msgstr ""
 "Godot는 `파이썬 플러그인 <https://github.com/godotengine/collada-exporter>`__"
 "\\ 을 지원하며 씬을 가져오는 작업이 훨씬 더 좋을 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "Exporting ESCN files from Blender"
 msgstr "블렌더에서 ESCN 파일 가져오기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 #, fuzzy
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
@@ -194,7 +194,7 @@ msgstr ""
 "일 (Godot 씬 파일)의 다른 이름의 일종입니다; 가능한 한 많은 정보를 블렌더 씬"
 "에서 유지해줍니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
@@ -202,11 +202,11 @@ msgstr ""
 "ESCN 내보내기는 기능과 사용법을 설명하는 세부적인 `문서 <escn_exporter/index."
 "html>`__\\ 를 갖고 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
 msgid "Import workflows"
 msgstr "가져오기 워크플로"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:82
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
@@ -214,7 +214,7 @@ msgstr ""
 "Godot 씬 가져오기 어떻게 데이터를 가져오는 지에 따라 다른 워크플로가 있습니"
 "다. 많은 설정에 따라, 다음으로 씬을 가져올 수 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:88
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
@@ -222,7 +222,7 @@ msgstr ""
 "외부 머티리얼 (기본 값): 각 머티리얼은 파일 리소스에 저장됩니다. 모디파이어"
 "는 유지됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
@@ -230,7 +230,7 @@ msgstr ""
 "외부 메시: 각 메시는 다른 파일로 저장됩니다. 많은 사용자는 메시를 직접 처리하"
 "는 것을 선호합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
@@ -238,17 +238,17 @@ msgstr ""
 "외부 애니메이션: 원본이 변경될 때 저장된 애니메이션을 수정하고 병합할 수 있도"
 "록 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:88
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
 msgstr "외부 씬: 가져온 씬의 각 루트 노드를 별도의 씬으로 저장합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:92
 msgid "Single scene: A single scene file with everything built in."
 msgstr "단일 씬: 모든 것이 내장된 하나의 씬 파일입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
@@ -256,23 +256,23 @@ msgstr ""
 "다른 개발자가 다른 요구가 있듯이, 이 가져오기 처리는 많이 커스터마이징 할 수 "
 "있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:99
 msgid "Import options"
 msgstr "설정 가져오기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:98
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
 msgid "The importer has several options, which will be discussed below:"
 msgstr "가져오기는 여러 설정이 있고, 밑에서 설명합니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 msgid "Nodes"
 msgstr "노드(Node)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid "Root Type"
 msgstr "Root Type(루트 타입)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:108
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
@@ -280,29 +280,29 @@ msgstr ""
 "기본적으로, 가져온 씬의 루트 노드 타입은 \"Spatial\"이지만, 수정될 수 있습니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:114
 msgid "Root Name"
 msgstr "Root Name(루트 이름)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
 msgid "Allows setting a specific name to the generated root node."
 msgstr "생성된 루트 노드에 특정 이름을 설정할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:119
 #, fuzzy
 msgid "Root Scale"
 msgstr "Root Name(루트 이름)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:118
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 #, fuzzy
 msgid "The scale of the root node."
 msgstr "스크립트의 역할"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid "Custom Script"
 msgstr "Custom Script(맞춤 스크립트)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:123
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
@@ -311,11 +311,11 @@ msgstr ""
 "특수 스크립트로 가져오기 후 전체 씬을 처리하기 위해 제공할 수 있습니다. 후처"
 "리, 머티리얼 변경, 아니면 기하학으로 하는 재미있는 짓 등에 좋습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:130
 msgid "Create a script like this:"
 msgstr "다음과 같은 스크립트를 만드세요:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:139
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
 msgid ""
 "The ``post_import`` function takes the imported scene as argument (the "
 "parameter is actually the root node of the scene). The scene that will "
@@ -325,14 +325,14 @@ msgstr ""
 "트 노드입니다). 마지막으로 사용되는 씬은 반환되어야 합니다. 다른 것이 될 수 "
 "있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:163
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:218
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid "Storage"
 msgstr "Storage(저장소)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
 "nodes below the root will each be a separate scene and instanced into the "
@@ -341,21 +341,21 @@ msgstr ""
 "기본적으로, Godot은 하나의 씬을 가져옵니다. 이 설정으로 루트 아래의 노드들을 "
 "각자의 씬으로 만들고 가져온 것을 인스턴스 하도록 지정할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
 msgstr "물론 다른 곳에서 가져온 씬을 인스턴스 하는 것도 수동으로는 작동합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid "Materials"
 msgstr "머티리얼(Materials)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid "Location"
 msgstr "Location(위치)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
@@ -363,7 +363,7 @@ msgstr ""
 "Godot는 메시나 노드에서 머티리얼을 지원합니다. 기본적으로, 머티리얼은 각 노드"
 "에 들어갑니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
 msgid ""
 "Materials can be stored within the scene or in external files. By default, "
 "they are stored in external files so editing them is possible. This is "
@@ -374,7 +374,7 @@ msgstr ""
 "저장되므로 편집하는 것이 가능합니다. 대부분의 3D DCC가 Godot와 같은 머티리얼 "
 "설정을 갖고 있지 않기 때문입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:169
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
@@ -382,11 +382,11 @@ msgstr ""
 "머티리얼이 내장된 상태일 때, 원본 씬을 수정하고 다시 가져올 때마다 사라질 것"
 "입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
 msgid "Keep On Reimport"
 msgstr "Keep On Reimport(다시 가져오기 유지)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:175
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -396,26 +396,26 @@ msgstr ""
 "유지하고 원본 씬에서 오는 것은 무시합니다. 이 설정은 머티리얼이 파일로 저장"
 "된 경우에만 존재합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid "Meshes"
 msgstr "Meshes(메시)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Compress"
 msgstr "Compress(압축)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr ""
 "공간을 절약하기 위해 메시의 여러 측면에 덜 정확한 수치를 사용하도록 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid "These are:"
 msgstr "이렇게 됩니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:189
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
@@ -423,7 +423,7 @@ msgstr ""
 "Transform Matrix (Location, rotation, and scale)             : 32비트 실수에"
 "서 16비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
@@ -431,7 +431,7 @@ msgstr ""
 "Vertices                                                     : 32비트 실수에"
 "서 16비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:191
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
@@ -439,7 +439,7 @@ msgstr ""
 "Normals                                                      : 32비트 실수에"
 "서 32비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
@@ -447,7 +447,7 @@ msgstr ""
 "Tangents                                                     : 32비트 실수에"
 "서 32비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
@@ -455,7 +455,7 @@ msgstr ""
 "Vertex Colors                                                : 32비트 실수에"
 "서 32비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
@@ -463,7 +463,7 @@ msgstr ""
 "UV                                                           : 32비트 실수에"
 "서 32비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
@@ -471,7 +471,7 @@ msgstr ""
 "UV2                                                          : 32비트 실수에"
 "서 32비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
@@ -479,7 +479,7 @@ msgstr ""
 "Vertex weights                                               : 32비트 실수에"
 "서 16비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
@@ -487,7 +487,7 @@ msgstr ""
 "Armature bones                                               : 32비트 실수에"
 "서 16비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
@@ -495,16 +495,16 @@ msgstr ""
 "Array index                                                  : 얼마나 많은 원"
 "소가 있는 지에 따라 32비트나 16비트 부호 있는 정수로."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid "Additional info:"
 msgstr "추가 정보:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr "UV2 = 세부적인 텍스처와 베이크된 텍스처를 위한 두 번째 UV 채널."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
@@ -512,7 +512,7 @@ msgstr ""
 "Array index = 위 배열의 각 요소에 순서를 매기는 배열; 즉, 꼭짓점과 노말에 순"
 "서를 매깁니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -525,11 +525,11 @@ msgstr ""
 "의 가져오기를 압축하는 것으로 기하학이나 꼭짓점이 있어야 할 자리에 없을 수도 "
 "있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:213
 msgid "Ensure Tangents"
 msgstr "Ensure Tangents(탄젠트 보장)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -540,7 +540,7 @@ msgstr ""
 "으로 원본 씬에서 탄젠트 배열이 없다면 생성하게 해줍니다. Godot는 Mikktspace"
 "를 사용하지만, 가져오기에서 생성하는 것이 항상 더 좋습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:220
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
@@ -549,7 +549,7 @@ msgstr ""
 "메시는 내장 대신 별개의 파일 (리소스)로 저장될 수 있습니다. 직접 객체를 짓는 "
 "것이 아니라면 이것은 꽤 실용적인 사용을 갖지는 않습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
@@ -557,38 +557,38 @@ msgstr ""
 "이 설정은 씬 대신 메시로 직접 작업하기를 선호하는 사람들을 돕기 위해 제공됩니"
 "다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
 msgid "Light Baking"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:229
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid "**Enable:** The mesh is used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 #, fuzzy
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr "더 자세한 내용은, :ref:`doc_c_sharp_differences` 페이지를 참고하세요."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
 msgid "External Files"
 msgstr "External Files(외부 파일)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
@@ -596,11 +596,11 @@ msgstr ""
 "생성된 메시와 머티리얼은 하위 디렉토리에 씬의 이름을 가지면서 선택적으로 저장"
 "될 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
 msgid "Animation options"
 msgstr "애니메이션 설정"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -612,15 +612,15 @@ msgstr ""
 "다. 3DS Max나 Maya와 같은 것은 같은 타임라인에 많은 애니메이션을 넣어야 하거"
 "나, 최악의 경우, 애니메이션을 별도의 파일에 넣어야 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
 msgid "Import of animations is enabled by default."
 msgstr "애니메이션 가져오기는 기본적으로 활성화되어 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid "FPS"
 msgstr "초당 프레임"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:258
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -631,11 +631,11 @@ msgstr ""
 "합니다. 애니메이션을 가능한 한 충실하게 가져오기 위해선, 편집에 사용된 초 당 "
 "프레임을 지정하세요. 이를 잘못하면 부들거리는 애니메이션을 만들게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid "Filter Script"
 msgstr "Filter Script(필터 스크립트)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 #, fuzzy
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -644,7 +644,7 @@ msgstr ""
 "어떤 애니메이션에서 트랙을 유지할 지 결정하기 위한 특수 문법에 filter script"
 "를 지정할 수 있습니다. (@TODO 이것은 문서가 필요합니다)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -654,7 +654,7 @@ msgid ""
 "under the hood)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:274
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
@@ -662,7 +662,7 @@ msgid ""
 "\"``::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:280
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
 "Similarly, additional patterns can be added to the same line, separated by "
 "commas. Here is a modified example to additionally *include* all animations "
@@ -670,7 +670,7 @@ msgid ""
 "animations which have names ending in ``\"Attack\"``::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
 msgid ""
 "Following the animation selection filter statement, we add track filtering "
 "patterns to indicate which animation tracks should be kept or discarded. If "
@@ -678,7 +678,7 @@ msgid ""
 "animations will be discarded!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:290
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
 "It's important to note that track filter statements are applied in order for "
 "each track within the animation, this means that one line may include a "
@@ -687,26 +687,26 @@ msgid ""
 "in the filter script."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:298
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
 "Arm_Left_Control\"`` would be retained."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:315
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
@@ -716,11 +716,11 @@ msgstr ""
 "할 수 있습니다. 이렇게 하면 맞춤 트랙을 애니메이션에 추가하고 다시 가져온 후"
 "에도 이를 유지할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:316
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
 msgid "Optimizer"
 msgstr "Optimizer(최적화 도구)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:318
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:321
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -730,11 +730,11 @@ msgstr ""
 "당히 줄어듭니다. 일반적으로, 애니메이션이 활성화되어 있기 때문에 애니메이션"
 "이 손상되었다고 의심되는 상황이 아니라면 항상 켜져 있어야 합니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid "Clips"
 msgstr "Clips(클립)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:327
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. For this to work, the model must have only one animation that is "
@@ -743,11 +743,11 @@ msgid ""
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
 msgid "Scene inheritance"
 msgstr "씬 상속"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
 #, fuzzy
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
@@ -759,7 +759,7 @@ msgstr ""
 "뀌기 때문에 그렇게 할 수는 없고 (3D 모델링 앱에서 다시 가져온 원본 .dae, ."
 "gltf, .obj 파일), Godot는 전체 씬을 다시 가져올 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:341
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -768,15 +768,15 @@ msgstr ""
 "하지만, *씬 상속*\\ 을 사용하면 지역 수정을 만드는 것이 가능합니다. 가져온 씬"
 "을 열면 다음 대화 상자가 나타납니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:343
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr "상속된 씬에서, 수정에 대한 유일한 제한은 다음과 같습니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:345
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr "노드는 삭제될 수 없습니다 (하지만 어디에나 추가될 수 있습니다)."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:349
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
@@ -784,109 +784,128 @@ msgstr ""
 "하위 리소스를 편집할 수 없습니다 (이를 위해선 위에서 설명했듯 외부로 저장해"
 "야 합니다)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
 msgid "Other than that, everything is allowed!"
 msgstr "그 외에는 모든 것이 허용됩니다!"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:354
 msgid "Import hints"
 msgstr "가져오기 힌트"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
 msgstr "여러번 씬을 편집할 때, 내보낸 후 해야 하는 일반적인 작업이 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:355
-msgid "Adding collision detection to objects"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
+#, fuzzy
+msgid "Adding collision detection to objects."
 msgstr "객체에 충돌 감지를 추가하기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
-msgid "Setting objects as navigation meshes"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
+#, fuzzy
+msgid "Setting objects as navigation meshes."
 msgstr "객체를 내비게이션 메시로 설정하기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:357
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
+#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
-"used for modelling)"
+"used for modelling)."
 msgstr ""
 "(모델링에 사용되는 특정 빛과 같이) 게임 엔진에 사용되는 않는 노드 지우기"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
+#, fuzzy
 msgid ""
-"To simplify this workflow, Godot offers a few suffixes that can be added to "
-"the names of the objects in your 3D modelling software. When imported, Godot "
-"will detect them and perform actions automatically:"
+"To simplify this workflow, Godot offers several suffixes that can be added "
+"to the names of the objects in your 3D modelling software. When imported, "
+"Godot will detect suffixes in object names and will perform actions "
+"automatically."
 msgstr ""
 "이 워크플로를 간단히 하기 위해, Godot는 3D 모델링 소프트웨어에서 객체의 이름"
 "에 붙일 수 있는 일부 접미사를 제공합니다. 가져올 때, Godot는 이를 감지하고 자"
 "동으로 동작을 수행합니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:364
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
+msgid "All the suffixes described below are *case-sensitive*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 msgid "Remove nodes (-noimp)"
 msgstr "노드 삭제 (-noimp)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
+#, fuzzy
 msgid ""
-"Node names that have this suffix will be removed at import time, no matter "
-"what their type is. They will not appear in the imported scene."
+"Objects that have the ``-noimp`` suffix will be removed at import-time no "
+"matter what their type is. They will not appear in the imported scene."
 msgstr ""
 "이 접미사를 갖고 있는 이름의 노드는 가져오는 순간 삭제될 것이며, 이는 타입과 "
 "관계없습니다. 가져온 씬에서는 나타나지 않습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 #, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr "충돌 생성 (-col, -colonly, -convcolonly)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:379
 msgid ""
-"Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
-"static collision node will be added, using the same geometry as the mesh."
+"The option ``-col`` will work only for Mesh objects. If it is detected, a "
+"child static collision node will be added, using the same geometry as the "
+"mesh. This will create a triangle mesh collision shape, which is a slow, but "
+"accurate option for collision detection. This option is usually what you "
+"want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
-"\"-col\" 설정은 오직 Mesh 노드에만 작동할 것입니다. 이것이 감지되면, 메시와 "
-"같은 기하학을 사용하여 자식 정적 충돌 노드가 추가될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
+msgid ""
+"The option ``-convcol`` will create a :ref:`class_convexpolygonshape` "
+"instead of a :ref:`class_concavepolygonshape`. Unlike triangle meshes which "
+"can be concave, a convex shape can only accurately represent a shape that "
+"doesn't have any concave angles (a pyramid is convex, but a hollow box is "
+"concave). Due to this, convex collision shapes are generally not suited for "
+"level geometry. When representing simple enough meshes, convex collision "
+"shapes can result in better performance compared to a triangle collision "
+"shape. This option is ideal for simple or dynamic objects that require "
+"mostly-accurate collision detection."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
 #, fuzzy
 msgid ""
-"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
-"a :ref:`class_concavepolygonshape`."
-msgstr ""
-"\"-convcolonly\" 설정은 :ref:`class_concavepolygonshape` 대신 :ref:"
-"`class_convexpolygonshape`\\ 를 만들 것입니다."
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
-msgid ""
-"However, it is often the case that the visual geometry is too complex or too "
-"un-smooth for collisions, which ends up not working well."
+"However, in both cases, the visual geometry may be too complex or not smooth "
+"enough for collisions. This can create physics glitches and slow down the "
+"engine unneccesarily."
 msgstr ""
 "하지만, 시각적인 기하학이 너무 복잡하거나 충돌에 너무 부드럽지 않은 경우, 잘 "
 "작업되지 않을 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
+#, fuzzy
 msgid ""
-"To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
-"upon import and create a :ref:`class_staticbody` collision instead. This "
-"helps the visual mesh and actual collision to be separated."
+"To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
+"upon importing and will create a :ref:`class_staticbody` collision instead. "
+"This helps the visual mesh and actual collision to be separated."
 msgstr ""
 "이를 해결하기 위해, \"-colonly\" 모디파이어가 존재합니다, 가져오면 메시는 제"
 "거되고 :ref:`class_staticbody` 충돌이 대신 생성됩니다. 이렇게 하면 시각적 메"
 "시와 실제 충돌을 분리할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
 #, fuzzy
 msgid ""
-"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
 "\"-convcolonly\" 설정은 :ref:`class_concavepolygonshape` 대신 :ref:"
 "`class_convexpolygonshape`\\ 를 만들 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
+#, fuzzy
 msgid ""
-"Option \"-colonly\" can also be used with Blender's empty objects. On "
+"The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
@@ -896,97 +915,120 @@ msgstr ""
 "노드는 미리 정의된 모양 중 하나를 가지며, 블렌더의 Empty 형태 타입에 따라 다"
 "릅니다:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
-msgid "Single arrow will create a :ref:`class_rayshape`"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+#, fuzzy
+msgid "Single arrow will create a :ref:`class_rayshape`."
 msgstr "Single arrow는 :ref:`class_rayshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
-msgid "Cube will create a :ref:`class_boxshape`"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
+#, fuzzy
+msgid "Cube will create a :ref:`class_boxshape`."
 msgstr "Cube는 :ref:`class_boxshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
-msgid "Image will create a :ref:`class_planeshape`"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#, fuzzy
+msgid "Image will create a :ref:`class_planeshape`."
 msgstr "Image는 :ref:`class_planeshape`\\ 를 만들 것입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
+#, fuzzy
 msgid ""
-"Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
+"Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
 "Sphere (그리고 나열되지 않은 나머지)는 :ref:`class_sphereshape`\\ 를 만들 것"
 "입니다"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
-"For better visibility in Blender's editor, the user can set \"X-Ray\" option "
-"on collision empties and set some distinct color for them in User "
-"Preferences / Themes / 3D View / Empty."
+"When possible, **try to use a few primitive collision shapes** instead of "
+"triangle mesh or convex shapes. Primitive shapes often have the best "
+"performance and reliability."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:422
+#, fuzzy
+msgid ""
+"For better visibility in Blender's editor, you can set the \"X-Ray\" option "
+"on collision empties and set some distinct color for them in Blender's "
+"**User Preferences > Themes > 3D View > Empty**."
 msgstr ""
 "블렌더의 편집기에서 더 좋은 가시성을 위해, 충돌 Empty에 \"X-Ray\"를 설정하고 "
 "User Preferences / Themes / 3D View / Empty에서 뚜렷한 색상을 설정할 수 있습"
 "니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid "Create navigation (-navmesh)"
 msgstr "내비게이션 생성 (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
+#, fuzzy
 msgid ""
-"A mesh node with this suffix will be converted to a navigation mesh. "
-"Original Mesh node will be removed."
+"A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
+"mesh. The original Mesh object will be removed at import-time."
 msgstr ""
 "이 접미사를 가진 메시 노드는 내비게이션 메시로 변환될 것입니다. 기존 메시 노"
 "드는 삭제될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "VehicleBody 만들기 (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:435
+#, fuzzy
 msgid ""
-"A mesh node with this suffix will be imported as a child to a :ref:"
-"`VehicleBody <class_VehicleBody>` node."
+"A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
+"ref:`class_VehicleBody` node."
 msgstr ""
 "이 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` 노드의 자"
 "식으로 가져오게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "VehicleWheel 만들기 (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:441
+#, fuzzy
 msgid ""
-"A mesh node with this suffix will be imported as a child to a :ref:"
-"`VehicleWheel <class_VehicleWheel>` node."
+"A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
+"`class_VehicleWheel` node."
 msgstr ""
 "이 접미사를 가진 메시 노드는 :ref:`VehicleWheel <class_VehicleWheel>` 노드의 "
 "자식으로 가져오게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
 msgid "Rigid Body (-rigid)"
 msgstr "리지드 바디 (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
-msgid "Creates a rigid body from this mesh."
-msgstr "이 메시에서 리지드 바디를 만듭니다."
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:447
+#, fuzzy
+msgid ""
+"A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
+"`class_RigidBody`."
+msgstr ""
+"이 접미사를 가진 메시 노드는 :ref:`VehicleBody <class_VehicleBody>` 노드의 자"
+"식으로 가져오게 됩니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Animation loop (-loop, -cycle)"
 msgstr "애니메이션 루프 (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
+#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
-"\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
-"flag set. This is case-sensitive and does not require a hyphen."
+"``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
+"flag set. **Unlike the other suffixes described above, this does not require "
+"a hyphen.**"
 msgstr ""
 "시작과 끝에 \"loop\"나 \"cycle\" 표시가 있는 COLLADA 문서에서 애니메이션 클립"
 "은 루프 플래그가 설정된 Godot 애니메이션을 가져올 것입니다. 대소문자를 구분하"
 "고 하이픈(-)이 필요하지 않습니다."
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
+#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
-"the \"loop\" or \"cycle\" prefix or suffix."
+"the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 "블렌더에서, 이를 위해 NLA 편집기를 사용하여 Action 이름에 \"loop\"나 \"cycle"
 "\" 접두사 혹은 접미사를 붙여야 합니다."

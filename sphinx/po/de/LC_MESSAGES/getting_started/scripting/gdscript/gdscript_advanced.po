@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr ""
+msgstr "Eigenschaften dynamischer Programmiersprachen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
@@ -97,7 +97,6 @@ msgid "Less performance than statically typed languages."
 msgstr "Weniger Leistung als statische Programmiersprachen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
-#, fuzzy
 msgid "More difficult to refactor (symbols can't be traced)"
 msgstr ""
 "Strukturverbesserungen sind schwieriger (Symbole können nicht verfolgt "
@@ -115,6 +114,8 @@ msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
 msgstr ""
+"Weniger flexibel zur Code-Vervollständigung (einige Variablentypen sind erst "
+"zur Laufzeit bekannt)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -207,7 +208,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr "Arrays"
+msgstr "Felder (Arrays)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -215,6 +216,10 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"Felder in dynamischen Programmiersprachen können viele verschiedene "
+"Datentypen enthalten und sind immer dynamisch (können also jederzeit in der "
+"Größe verändert werden). Vergleichen wir hierzu Felder in statischen "
+"Programmiersprachen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
@@ -228,7 +233,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "Oder unsortierte Sets:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
@@ -286,7 +291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr ""
+msgstr "Dies ist normalerweise stark vereinfacht in dynamischen Sprachen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
@@ -359,7 +364,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
-msgstr "Duck typing"
+msgstr "Duck-Typing"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -369,8 +374,8 @@ msgid ""
 "how it works."
 msgstr ""
 "Eines der am schwersten zu erfassenden Konzepte, wenn man von einer statisch "
-"typisierten zu einer dynamisch typisierten Sprache wechselt, ist duck "
-"typing. Duck typing macht allgemeines Code-Design viel leichter und "
+"typisierten zu einer dynamisch typisierten Sprache wechselt, ist Duck-"
+"Typing. Duck-Typing macht allgemeines Code-Design viel leichter und "
 "unkomplizierter zu schreiben, aber es ist vielleicht nicht gleich "
 "ersichtlich, wie es funktioniert."
 
@@ -404,7 +409,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
-#, fuzzy
 msgid ""
 "And that's it. If the object that hit the big rock has a smash() method, it "
 "will be called. No need for inheritance or polymorphism. Dynamically typed "
@@ -416,7 +420,7 @@ msgstr ""
 "eine smash() Methode hat, wird diese aufgerufen. Vererbung oder Polymorphie "
 "ist nicht nötig. Dynamischen Programmiersprachen ist es nur wichtig, dass "
 "die Instanz die gewünschte Methode oder Member hat, nicht was sie vererbt "
-"oder deren Klassentyp. Die Definition von \"Duck Typing\" (Konzept der "
+"oder deren Klassentyp. Die Definition von \"Duck-Typing\" (Konzept der "
 "objektorientierten Programmierung) macht das deutlicher:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
@@ -440,7 +444,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr ""
+msgstr "Ja, vielleicht sollte man es nach Hulk benennen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""

@@ -1,0 +1,210 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:4
+msgid "Instancing"
+msgstr "實體化"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:7
+msgid "Introduction"
+msgstr "簡介"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:9
+msgid ""
+"Creating a single scene and adding nodes into it might work for small "
+"projects, but as a project grows in size and complexity, the number of nodes "
+"can quickly become unmanageable. To address this, Godot allows a project to "
+"be separated into any number of scenes. This provides you with a powerful "
+"tool that helps you organize the different components of your game."
+msgstr ""
+"對於小型的專案來說，建立單一場景然後把各個節點都加到同一個場景下可能沒關係。"
+"但當專案的大小與複雜度都成長後，節點的數量很快就會變得難以管理。為了解決這個"
+"問題，Godot 中可以將專案拆分成任意數量的場景，進而將遊戲整理成各個不同的模"
+"組。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:15
+msgid ""
+"In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
+"nodes organized in a tree structure, with a single node as the tree root."
+msgstr ""
+"我們已經在 :ref:`doc_scenes_and_nodes` 裡學過，場景就是由依據樹狀組織的節點所"
+"構成的，而其中會有一個節點作為樹的根節點。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:20
+msgid ""
+"You can create as many scenes as you like and save them to disk. Scenes "
+"saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
+"filename extension."
+msgstr ""
+"可以建立任意數量的場景並保存在硬碟上。場景會用一種叫做「打包場景 (Packed "
+"Scenes)」的形式保存，副檔名為 ``.tscn``。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:26
+msgid ""
+"Once a scene has been saved, it can be instanced into another scene as if it "
+"were any other node."
+msgstr "場景儲存後就能像其他節點一樣實體化到另一個場景內。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:31
+msgid "In the above picture, Scene B was added to Scene A as an instance."
+msgstr "在上面的圖片中，場景 B 被新增到場景 A 中作為實體。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:34
+msgid "Instancing by example"
+msgstr "實體化的例子"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:36
+msgid ""
+"To learn how instancing works, let's start by downloading a sample project: :"
+"download:`instancing.zip <files/instancing.zip>`."
+msgstr ""
+"讓我們先下載一個範例專案來瞭解實體化是怎麼運作的： :download:`instancing.zip "
+"<files/instancing.zip>` 。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:39
+msgid ""
+"Unzip this project anywhere you like. Then open Godot and add this project "
+"to the project manager using the 'Import' button:"
+msgstr ""
+"解壓縮到任意處，然後打開 Godot 並在專案管理員裡點擊 [匯入] 按鈕來新增該專案："
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:44
+msgid ""
+"Browse to the folder you extracted and open the \"project.godot\" file you "
+"can find inside it. After doing this, the new project will appear on the "
+"list of projects. Edit the project by pressing the 'Edit' button."
+msgstr ""
+"可以在解壓縮後的資料夾裡找到一個「project.godot」檔案，打開這個檔案。之後專案"
+"列表就會顯示出新的專案。按 [編輯] 來編輯專案。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:48
+msgid ""
+"This project contains two scenes: \"Ball.tscn\" and \"Main.tscn\". The ball "
+"scene uses a :ref:`RigidBody2D <class_RigidBody2D>` to provide physics "
+"behavior while the main scene has a set of obstacles for the ball to collide "
+"with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
+msgstr ""
+"這個專案包含了兩個場景：「Ball.tscn」與「Main.tscn」。Ball 場景使用了 :ref:"
+"`RigidBody2D <class_RigidBody2D>` 來做物理行為。而主場景則有一組用來讓球碰撞"
+"的障礙物 (使用了 :ref:`StaticBody2D <class_StaticBody2D>` )。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:57
+msgid "Open the ``Main`` scene, and then select the root node:"
+msgstr "打開 ``Main`` 場景，然後選擇根節點："
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:61
+msgid ""
+"We want to add an instance of the ``Ball`` scene as a child of ``Main``. "
+"Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
+"file as a Node.\") and select the ``Ball.tscn`` file."
+msgstr ""
+"我們想要把 ``Ball`` 的實體新增到 ``Main`` 場景作為子節點。點擊「鎖鏈」形狀的"
+"按鈕 (滑鼠移上去會顯示「實體化場景檔案作為節點。」)。然後選擇 ``Ball.tscn`` "
+"檔案。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:67
+msgid ""
+"The ball will be placed at the top-left corner of the screen area (this is "
+"``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
+"the top-center of the scene:"
+msgstr ""
+"球會被放到螢幕區域的左上角 (也就是螢幕座標的 ``(0, 0)``)。點擊並把那顆球拖到"
+"靠近場景中間上方的地方："
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:73
+msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
+msgstr "按下 [執行] 按鈕，就可以看到球落到畫面的底部："
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:78
+msgid "Multiple instances"
+msgstr "多個實體"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:80
+msgid ""
+"You can add as many instances as you like to a scene, either by using the "
+"\"Instance\" button again, or by clicking on the ball instance and pressing :"
+"kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
+msgstr ""
+"我們可以往場景裡新增任意多個的實體，可以用剛才的 [實體] 按鈕，或是點擊已經有"
+"的球的實體然後按 :kbd:`Ctrl + D` (或 macOS 上 :kbd:`Cmd+D`) 來拷貝："
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:86
+msgid "Run the scene again and all of the balls will fall."
+msgstr "再執行一次場景，然後看看所有球掉下來的樣子。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:91
+msgid "Editing instances"
+msgstr "編輯實體"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:93
+msgid ""
+"Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
+"and set the ``Bounce`` property to ``1``."
+msgstr ""
+"打開 ``Ball`` 場景，點擊 ``PhysicsMaterial`` 來展開，然後將 ``Bounce`` 屬性設"
+"為 ``1`` 。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
+msgid ""
+"Press \"Play\" and notice that all of the instanced balls are now much more "
+"bouncy. Because the instanced balls are based on the saved scene, changes to "
+"that scene will affect all instances."
+msgstr ""
+"按 [執行]，然後就能注意到所有球的實體都變得更有彈性了。這是因為實體化的球是由"
+"剛才保存的場景所產生，所以我們對那個場景的改動都會反映到實體上。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:102
+msgid ""
+"You can also adjust individual instances. Set the bounce value back to ``0`` "
+"and then in the ``Main`` scene, select one of the instanced balls. Resources "
+"like ``PhysicsMaterial`` are shared between instances by default, so we need "
+"to make it unique. Click on the down arrow and select \"Make Unique\". Set "
+"its ``Bounce`` to ``1`` and press \"Play\"."
+msgstr ""
+"也可以調整個別的實體。我們先把反彈值跳回 ``0`` ，然後回到 ``Main`` 場景選擇其"
+"中一個球的實體。由於一些如 ``PhysicsMaterial`` 的資源在各個實體之間是共用的，"
+"所以我們要讓這個實體變成獨立的。點擊下拉箭頭，然後選擇 [獨立化]。再來把 "
+"``Bounce`` 改成 ``1`` 然後按 [執行]。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:110
+msgid ""
+"Notice that a grey \"revert\" button appears next to the adjusted property. "
+"When this button is present, it means you modified a property in the "
+"instanced scene to override its value in the saved scene. Even if that "
+"property is modified in the original scene, the custom value will remain. "
+"Pressing the revert button will restore the property to the value in the "
+"saved scene."
+msgstr ""
+"可以注意到在已經調整的屬性旁邊會出現一個灰色的 [還原] 按鈕。如果出現了這個按"
+"鈕就代表修改了實體化的場景，而且這個節點的數值覆蓋了原始場景的值。就算再次修"
+"改原本的場景，這裡自定的數值還是會保留。點擊 [還原] 按鈕就能把屬性還原成原始"
+"場景的值。"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:118
+msgid "Conclusion"
+msgstr "結論"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:120
+msgid ""
+"Instancing can be useful when you want to create many copies of the same "
+"object. It is also possible to create instances in code by using GDScript, "
+"see :ref:`doc_instancing_continued`."
+msgstr ""
+"如果要複製很多個物件的話，實體化應該很有用。也可以通過 GDScript 來用程式建立"
+"實體，詳細請參考 :ref:`doc_instancing_continued` 。"

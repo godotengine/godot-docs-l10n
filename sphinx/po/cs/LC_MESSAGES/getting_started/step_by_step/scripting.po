@@ -1,0 +1,584 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:4
+msgid "Scripting"
+msgstr "Skriptování"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:7
+msgid "Introduction"
+msgstr "Představení"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:9
+msgid ""
+"Before Godot 3.0, the only choice for scripting a game was to use :ref:"
+"`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
+"languages and the ability to add extra scripting languages dynamically!"
+msgstr ""
+"Před Godotem 3.0 byl jedinou volbou pro skriptování hry: ref: `GDScript "
+"<doc_gdscript>`. V současné době podporuje Godot čtyři (ano, čtyři!) "
+"programovací jazyky a schopnost dynamicky přidávat další!"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:13
+msgid ""
+"This is great, mostly due to the large amount of flexibility provided, but "
+"it also makes our work supporting languages more difficult."
+msgstr ""
+"To je skvělé, většinou kvůli velké flexibilitě, ale na druhou stranu to "
+"ztěžuje naši práci při podpoře jazyků."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:16
+msgid ""
+"The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
+"main reason to choose them is their level of integration with Godot, as this "
+"makes the experience smoother; both have slick editor integration, while C# "
+"and C++ need to be edited in a separate IDE. If you are a big fan of "
+"statically typed languages, go with C# and C++ instead."
+msgstr ""
+"„Hlavní“ jazyky v Godotu jsou však GDScript a VisualScript. Důvodem proč si "
+"tyto dva jazyky vybrat je jejich bezproblémová integrace s Godotem a jeho "
+"editorem skriptů, zatímco C# a C++ je třeba upravovat v samostatném IDE. "
+"Pokud jste velkým fanouškem staticky psaných jazyků, použijte však raději C# "
+"či C++."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:22
+msgid "GDScript"
+msgstr "GDScript"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:24
+msgid ""
+":ref:`GDScript<doc_gdscript>` is, as mentioned above, the main language used "
+"in Godot. Using it has some positive points compared to other languages due "
+"to its high integration with Godot:"
+msgstr ""
+": ref: `GDScript <doc_gdscript>` je, jak bylo uvedeno výše, hlavní jazyk "
+"Godota. Jeho použití má, vzhledem k jeho vysoké integraci s enginem, ve "
+"srovnání s ostaními jazyky několik plusových bodů:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:28
+msgid ""
+"It's simple, elegant, and designed to be familiar for users of other "
+"languages such as Lua, Python, Squirrel, etc."
+msgstr ""
+"Je jednoduchý, elegantní a navržený tak, aby se v něm uživatelé jazyků jako "
+"je např. Lua, Python, Squirrel ... cítili jako doma."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:29
+msgid "Loads and compiles blazingly fast."
+msgstr "Nahrává se a kompiluje opravdu velmi rychle."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:30
+msgid ""
+"The editor integration is a pleasure to work with, with code completion for "
+"nodes, signals, and many other items pertaining to the scene being edited."
+msgstr ""
+"Díky integrovanému editoru je potěšením pracovat s automatickým dokončováním "
+"kódu pro uzly, signály a ostaní prvky právě editované scény."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:31
+msgid ""
+"Has vector types built-in (such as Vectors, transforms, etc.), making it "
+"efficient for heavy use of linear algebra."
+msgstr ""
+"Má vestavěné vektorové typy (například vektory, transformace atd.), Díky "
+"čemuž je efektivní pro náročné použití lineární algebry."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:32
+msgid ""
+"Supports multiple threads as efficiently as statically typed languages - one "
+"of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
+msgstr ""
+"Podporuje více vláken stejně efektivně jako staticky psané jazyky - jedno z "
+"omezení, díky kterému jsme se vyhnuli jazykům, jako je Lua, Squirrel atd."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:33
+msgid ""
+"Uses no garbage collector, so it trades a small bit of automation (most "
+"objects are reference counted anyway), by determinism."
+msgstr ""
+"Nepoužívá automatickou garbage collector (způsob automatické správy paměti,) "
+"takže principielně nahrazuje tu trochu automatizace (většina objektů je "
+"stejně řízena počítáním referencí) determinismem."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:34
+msgid ""
+"Its dynamic nature makes it easy to optimize sections of code in C++ (via "
+"GDNative) if more performance is required, all without recompiling the "
+"engine."
+msgstr ""
+"Jeho dynamická povaha usnadňuje optimalizaci částí kódu v C ++ "
+"(prostřednictvím GDNative), pokud je vyžadován větší výkon, a to vše bez "
+"nové kompilace enginu."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:36
+msgid ""
+"If you're undecided and have experience with programming, especially "
+"dynamically typed languages, go for GDScript!"
+msgstr ""
+"Pokud jste nerozhodnutí a máte zkušenosti s programováním, zejména s "
+"dynamicky typovanými jazyky, jděte do GDScriptu!"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:40
+msgid "VisualScript"
+msgstr "VisualSkript"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:42
+msgid ""
+"Beginning with 3.0, Godot offers :ref:`Visual "
+"Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
+"\"blocks and connections\" language, but adapted to how Godot works."
+msgstr ""
+"Počínaje verzí 3.0, Godot nabízí: ref: `Visual Scripting "
+"<doc_what_is_visual_script>`. Je to typická implementace jazyka „bloků a "
+"spojení“, ale přizpůsobená architektuře Godotu.."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:46
+msgid ""
+"Visual scripting is a great tool for non-programmers, or even for "
+"experienced developers who want to make parts of the code more accessible to "
+"others, like game designers or artists."
+msgstr ""
+"Vizuální skriptování je skvělý nástroj pro neprogramátory nebo dokonce i pro "
+"zkušené vývojáře, kteří chtějí zpřístupnit části kódu ostatním, například "
+"návrhářům her nebo umělcům."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:50
+msgid ""
+"It can also be used by programmers to build state machines or custom visual "
+"node workflows - for example, a dialogue system."
+msgstr ""
+"Programátoři jej také mohou použít k vytváření stavových strojů nebo "
+"vlastních postupů pro obrazové uzly - například systému pro dialogy."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:55
+msgid ".NET / C#"
+msgstr ".NET / C #"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:57
+msgid ""
+"As Microsoft's C# is a favorite amongst game developers, we have added "
+"official support for it. C# is a mature language with tons of code written "
+"for it, and support was added thanks to a generous donation from Microsoft."
+msgstr ""
+"Protože Microsoft C # je mezi vývojáři her oblíbený, přidali jsme pro něj "
+"oficiální podporu. C # je vyspělý jazyk ve kterém jsou napsány tuny aplikaci "
+"a podpora byla přidána díky štědrému daru od společnosti Microsoft."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:62
+msgid ""
+"It has an excellent tradeoff between performance and ease of use, although "
+"one must be aware of its garbage collector."
+msgstr ""
+"Představuje vynikající kompromis mezi výkonem a jednoduchostí použití, "
+"přesto si však člověk musí být vědom jeho automatické správy paměti."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:65
+msgid ""
+"Since Godot uses the `Mono <https://mono-project.com>`_ .NET runtime, in "
+"theory any third-party .NET library or framework can be used for scripting "
+"in Godot, as well as any Common Language Infrastructure-compliant "
+"programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
+"is the only officially supported .NET option."
+msgstr ""
+"Protože Godot používá runtime „Mono <https://mono-project.com>` _ .NET, "
+"teoreticky lze pro skriptování v Godot i jakoukoli běžnou jazykovou "
+"infrastrukturu použít jakoukoli knihovnu nebo framework .NET od třetích "
+"stran. kompatibilní programovací jazyk, jako je F #, Boo nebo ClojureCLR. V "
+"praxi je však C # jedinou oficiálně podporovanou volbou .NET."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:71
+msgid "GDNative / C++"
+msgstr "GDNative / C ++"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:73
+msgid ""
+"Finally, one of our brightest additions for the 3.0 release: GDNative allows "
+"scripting in C++ without needing to recompile (or even restart) Godot."
+msgstr ""
+"A konečně, jeden z našich nejzářivějších přídavků pro verzi 3.0: GDNative "
+"umožňuje skriptování v C ++, aniž by bylo nutné překompilovat (nebo dokonce "
+"restartovat) Godota."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:77
+msgid ""
+"Any C++ version can be used, and mixing compiler brands and versions for the "
+"generated shared libraries works perfectly, thanks to our use of an internal "
+"C API Bridge."
+msgstr ""
+"Lze použít libovolnou verzi C ++ a mix kompilátorů či verzí pro vygenerované "
+"sdílené knihovny funguje perfektně díky našemu použití interního C API."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:81
+msgid ""
+"This language is the best choice for performance and does not need to be "
+"used throughout an entire game, as other parts can be written in GDScript or "
+"Visual Script. However, the API is clear and easy to use as it resembles, "
+"mostly, Godot's actual C++ API."
+msgstr ""
+"Tento jazyk je nejlepší volbou pro výkon a nemusí být používán v celé hře, "
+"další části lze psát v GDScriptu nebo Visual Scriptu. Nicméně, API je čisté "
+"a snadno se používá, většinou se totiž podobá Godotovu skutečnému C ++ API."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:86
+msgid ""
+"More languages can be made available through the GDNative interface, but "
+"keep in mind we don't have official support for them."
+msgstr ""
+"Prostřednictvím rozhraní GDNative lze zpřístupnit více jazyků, ale mějte na "
+"paměti, že pro ně nemáme oficiální podporu."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:90
+msgid "Scripting a scene"
+msgstr "Skriptování scény"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:92
+msgid ""
+"For the rest of this tutorial we'll set up a GUI scene consisting of a "
+"button and a label, where pressing the button will update the label. This "
+"will demonstrate:"
+msgstr ""
+"Po zbytek tohoto tutoriálu vytvoříme scénu GUI, která se skládá z tlačítka a "
+"popisku, kde stisknutím tlačítka aktualizuje popisek. To nám ukáže:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:96
+msgid "Writing a script and attaching it to a node."
+msgstr "Psaní skriptu a jeho připojení k uzlu."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:97
+msgid "Hooking up UI elements via signals."
+msgstr "Zapojení prvků uživatelského rozhraní pomocí signálů."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:98
+msgid "Writing a script that can access other nodes in the scene."
+msgstr "Psaní skriptu, který má přístup k dalším uzlům ve scéně."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:100
+#, fuzzy
+msgid ""
+"Before continuing, make sure to skim and bookmark the :ref:"
+"`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
+"and the reference is structured into sections to make it easier to get an "
+"overview of the concepts."
+msgstr ""
+"Před pokračováním si přečtěte dokumentaci: ref: `GDScript <doc_gdscript>`. "
+"Jde o jazyk navržený tak, aby byl jednoduchý, a dokumentace je krátká, takže "
+"získání přehledu nebude trvat déle než několik minut."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:105
+msgid "Scene setup"
+msgstr "Nastavení scény"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:107
+msgid ""
+"Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
+"pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
+msgstr ""
+"Pomocí dialogu „Přidat podřízený uzel“, který je přístupný z karty Scéna "
+"(nebo stisknutím: kbd: `Ctrl + A`), vytvořte hierarchii s následujícími uzly:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:110
+msgid "Panel"
+msgstr "Panel"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:112
+msgid "Label"
+msgstr "Label"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:113
+msgid "Button"
+msgstr "Button"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:115
+msgid "The scene tree should look like this:"
+msgstr "Strom scény by měl vypadat takto:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:119
+msgid ""
+"Use the 2D editor to position and resize the Button and Label so that they "
+"look like the image below. You can set the text from the Inspector tab."
+msgstr ""
+"Pomocí 2D editoru umístěte a změňte velikost Tlačítka(Button) a "
+"Popisku(Label) tak, aby vypadaly jako na obrázku níže. Text můžete nastavit "
+"na kartě Inspektor."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:124
+msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
+msgstr "Nakonec scénu uložte pod názvem `` sayhello.tscn``."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:129
+msgid "Adding a script"
+msgstr "Přidání skriptu"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:131
+msgid ""
+"Right click on the Panel node, then select \"Attach Script\" from the "
+"context menu:"
+msgstr ""
+"Klikněte pravým tlačítkem myši na uzel Panel, pak vyberte \"Připojit Skript"
+"\" z kontextového menu:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:136
+msgid ""
+"The script creation dialog will pop up. This dialog allows you to set the "
+"script's language, class name, and other relevant options."
+msgstr ""
+"Otevře se dialogové okno pro vytvoření skriptu. Toto dialogové okno umožňuje "
+"nastavit jazyk skriptu, název třídy a další relevantní možnosti."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:139
+msgid ""
+"In GDScript, the file itself represents the class, so the class name field "
+"is not editable."
+msgstr ""
+"V GDScript představuje samotný soubor třídu, takže pole názvu třídy nelze "
+"upravovat."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:142
+msgid ""
+"The node we're attaching the script to is a panel, so the Inherits field "
+"will automatically be filled in with \"Panel\". This is what we want, as the "
+"script's goal is to extend the functionality of our panel node."
+msgstr ""
+"Uzel, ke kterému připojujeme skript, je Panel, takže pole Dědí z bude "
+"automaticky vyplněno „Panel“. To chceme, protože cílem skriptu je rozšířit "
+"funkčnost našeho uzlu Panel."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:146
+msgid "Finally, enter a path name for the script and select Create:"
+msgstr "Nakonec zadejte cestu ke skriptu a vyberte Vytvořit:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:150
+msgid ""
+"The script will then be created and added to the node. You can see this as "
+"an \"Open script\" icon next to the node in the Scene tab, as well as in the "
+"script property under Inspector:"
+msgstr ""
+"Skript bude poté vytvořen a přidán do uzlu. Můžete to vidět jako ikonu "
+"„Otevřít skript“ vedle uzlu na kartě Scéna a také ve vlastnosti skriptu v "
+"Inspektoru:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:156
+msgid ""
+"To edit the script, select either of these buttons, both of which are "
+"highlighted in the above image. This will bring you to the script editor, "
+"where a default template will be included:"
+msgstr ""
+"Chcete-li skript upravit, vyberte některá z těchto tlačítek, která jsou "
+"zvýrazněna na obrázku výše. Tím se dostanete do editoru skriptů, kde bude "
+"zahrnuta výchozí šablona:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:161
+msgid ""
+"There's not much there. The ``_ready()`` function is called when the node, "
+"and all its children, enters the active scene. **Note:** ``_ready()`` is not "
+"the constructor; the constructor is instead ``_init()``."
+msgstr ""
+"Není toho moc. Funkce `_ready ()` `se volá, když uzel a všechny jeho potomci "
+"vstoupí do aktivní scény. ** Poznámka: ** `` _ready () `` není konstruktor; "
+"konstruktorem je místo toho `` _init () ``."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:166
+msgid "The role of the script"
+msgstr "Role skriptu"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:168
+msgid ""
+"A script adds behavior to a node. It is used to control how the node "
+"functions as well as how it interacts with other nodes: children, parent, "
+"siblings, and so on. The local scope of the script is the node. In other "
+"words, the script inherits the functions provided by that node."
+msgstr ""
+"Skript přidává do uzlu chování. Používá se k ovládání toho, jak uzel funguje "
+"a jak interaguje s jinými uzly: potomky, rodiči, sourozenci atd. Lokálním "
+"rozsahem skriptu je uzel. Jinými slovy, skript zdědí funkce poskytované "
+"tímto uzlem."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:179
+msgid "Handling a signal"
+msgstr "Obsluha signálu"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:181
+msgid ""
+"Signals are \"emitted\" when some specific kind of action happens, and they "
+"can be connected to any function of any script instance. Signals are used "
+"mostly in GUI nodes, although other nodes have them too, and you can even "
+"define custom signals in your own scripts."
+msgstr ""
+"Signály jsou „vysílány“, když nastane nějaký konkrétní druh akce, a mohou "
+"být spojeny s funkcí jakékoliv skriptu libovolné instance. Signály se "
+"používají většinou v uzlech GUI, i když je mají i jiné uzly, a dokonce "
+"můžete definovat vlastní signály ve vlastních skriptech."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:186
+msgid ""
+"In this step, we'll connect the \"pressed\" signal to a custom function. "
+"Forming connections is the first part and defining the custom function is "
+"the second part. For the first part, Godot provides two ways to create "
+"connections: through a visual interface the editor provides or through code."
+msgstr ""
+"V tomto kroku propojíme „pressed“ signál s uživatelskou funkcí. První část "
+"je vytvoření spojení a druhá část pak definování vlastní funkce. Pro první "
+"část Godot poskytuje dva způsoby vytvoření připojení: prostřednictvím "
+"vizuálního rozhraní, které editor poskytuje, nebo pomocí kódu."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:191
+msgid ""
+"While we will use the code method for the remainder of this tutorial series, "
+"let's cover how the editor interface works for future reference."
+msgstr ""
+"I když pro zbytek této série tutoriálů použijeme metodu kódu, pojďme se "
+"nejprve podívat, jak funguje rozhraní editoru."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:194
+msgid ""
+"Select the Button node in the scene tree and then select the \"Node\" tab. "
+"Next, make sure that you have \"Signals\" selected."
+msgstr ""
+"Vyberte uzel Button ve stromové struktuře scény a poté zvolte kartu „Uzel“. "
+"Dále se ujistěte, že máte vybranou možnost „Signály“."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:199
+msgid ""
+"If you then select \"pressed()\" under \"BaseButton\" and click the "
+"\"Connect...\" button in the bottom right, you'll open up the connection "
+"creation dialogue."
+msgstr ""
+"Pokud poté v části „BaseButton“ vyberete „pressed()“ a klikněte na tlačítko "
+"„Připojit ...“ v pravém dolním rohu, otevře se dialog pro vytvoření "
+"připojení."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:204
+msgid ""
+"The top of the dialogue displays a list of your scene's nodes with the "
+"emitting node's name highlighted in blue. Select the \"Panel\" node here."
+msgstr ""
+"V horní části dialogu je zobrazen seznam uzlů vaší scény s modrým názvem "
+"vysílajícího uzlu. Zde vyberte uzel „Panel“."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:207
+msgid ""
+"The bottom of the dialogue shows the name of the method that will be "
+"created. By default, the method name will contain the emitting node's name "
+"(\"Button\" in this case), resulting in ``_on_[EmitterNode]_[signal_name]``."
+msgstr ""
+"Ve spodní části dialogu je uveden název metody, která bude vytvořena. Ve "
+"výchozím nastavení bude název metody obsahovat název emitujícího uzlu (v "
+"tomto případě „Button“), což bude mít za následek `` _ __ [EmitterNode] _ "
+"[signal_name] ``."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:211
+msgid ""
+"And that concludes the guide on how to use the visual interface. However, "
+"this is a scripting tutorial, so for the sake of learning, let's dive into "
+"the manual process!"
+msgstr ""
+"A tím se uzavírá průvodce užívání vizuálního rozhraní. Jsme zde hlavně ve "
+"skriptovacím tutoriálu, takže se v zájmu učení ponořme do manuálního procesu!"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:215
+msgid ""
+"To accomplish this, we will introduce a function that is probably the most "
+"used by Godot programmers: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. This function uses paths to fetch nodes "
+"anywhere in the scene, relative to the node that owns the script."
+msgstr ""
+"Abychom toho dosáhli, představíme si funkci, která je pravděpodobně nejvíce "
+"používána programátory Godotu:: ref: `Node.get_node () "
+"<class_Node_method_get_node>`. Tato funkce používá relativní cestu vzhledem "
+"k uzlu, ve kterém se script nachází, k načtení libovolného uzlu této scény ."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:220
+msgid ""
+"For the sake of convenience, delete everything underneath ``extends Panel``. "
+"You will fill out the rest of the script manually."
+msgstr ""
+"Pro větší pohodlí smažte vše pod `` extends Panel``. Zbytek skriptu vyplníte "
+"ručně."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:223
+msgid ""
+"Because the Button and Label are siblings under the Panel where the script "
+"is attached, you can fetch the Button by typing the following underneath the "
+"``_ready()`` function:"
+msgstr ""
+"Protože Button a Label jsou sourozenci v Panel, ke kterému je skript "
+"připojen, můžete Button načíst zadáním následujícího pod funkci `` _ready () "
+"``:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:240
+msgid "Next, write a function which will be called when the button is pressed:"
+msgstr "Dále napište funkci, která bude vyvolána po stisknutí tlačítka:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:255
+msgid ""
+"Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
+"by using :ref:`Object.connect() <class_Object_method_connect>`."
+msgstr ""
+"Nakonec připojte \"pressed\" signál tlačítka k `` _on_Button_pressed () `` "
+"pomocí: ref: `Object.connect () <class_Object_method_connect>`."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:271
+msgid "The final script should look like this:"
+msgstr "Výsledný skript by měl vypadat takto:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:304
+msgid ""
+"Run the scene and press the button. You should get the following result:"
+msgstr ""
+"Spusťte scénu a stiskněte tlačítko. Měli byste získat následující výsledek:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:308
+msgid "Why, hello there! Congratulations on scripting your first scene."
+msgstr "Ahoj, ahoj! Gratulujeme k skriptování vaší první scény."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:312
+msgid ""
+"A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
+"works. For a given node, ``get_node(path)`` searches its immediate children. "
+"In the above code, this means that Button must be a child of Panel. If "
+"Button were instead a child of Label, the code to obtain it would be:"
+msgstr ""
+"Častým nedorozuměním ohledně tohoto tutoriálu je to, jak funguje `get_node "
+"(cesta)` `. Pro daný uzel prochází `get_node (cesta)` `jeho bezprostřední "
+"potomky. Ve výše uvedeném kódu to znamená, že Button musí být potomkem "
+"Panel. Pokud by Button byl místo toho podřízeným Label, kód pro jeho získání "
+"by byl:"
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:330
+msgid "Also, remember that nodes are referenced by name, not by type."
+msgstr "Nezapomeňte také, že na uzly se odkazuje jejich jménem, nikoli typem."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:334
+msgid ""
+"The 'advanced' panel of the connect dialogue is for binding specific values "
+"to the connected function's parameters. You can add and remove values of "
+"different types."
+msgstr ""
+"Panel „Advanced“ v dialogu Connect slouží k vazbě specifických hodnot na "
+"parametry připojené funkce. Můžete přidávat a odebírat hodnoty různých typů."
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:338
+msgid ""
+"The code approach also enables this with a 4th ``Array`` parameter that is "
+"empty by default. Feel free to read up on the ``Object.connect`` method for "
+"more information."
+msgstr ""
+"Skriptovací přístup toto také umožňuje pomocí 4. parametru `Array``, který "
+"je ve výchozím nastavení prázdný. Pro více informací si přečtěte o metodě "
+"`Object.connect``."

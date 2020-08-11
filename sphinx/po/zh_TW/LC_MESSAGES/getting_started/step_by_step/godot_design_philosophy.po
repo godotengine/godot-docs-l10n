@@ -1,0 +1,372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
+msgid "Godot's design philosophy"
+msgstr "Godot 的設計理念"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
+msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
+msgstr "現在你已經逐漸上手了，讓我們來瞭解一下 Godot 的設計。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
+msgid ""
+"**Every game engine is different and fits different needs.** Not only do "
+"they offer a range of features, but the design of each engine is unique. "
+"This leads to different workflows and different ways to form your games' "
+"structures. This all stems from their respective design philosophies."
+msgstr ""
+"**所有的遊戲引擎都是不同的，而且適用於不同的需求。** 不同遊戲引擎不僅提供了不"
+"同的功能，他們各自的設計也有所不同。這就造成了工作流程的不同與不同的遊戲架構"
+"組織方式。而這都要歸咎於他們各自的設計理念。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
+msgid ""
+"This page is here to help you understand how Godot works, starting with some "
+"of its core pillars. It is not a list of available features, nor is it an "
+"engine comparison. To know if any engine can be a good fit for your project, "
+"you need to try it out for yourself and understand its design and "
+"limitations."
+msgstr ""
+"這個頁面會幫助你瞭解 Godot 的運作原理，會先一些核心概念開始。這裡不是要介紹 "
+"Godot 包含的功能，也不是要比較各個引擎。如果要知道哪一種引擎適合你的專案，需"
+"要自己嘗試並瞭解各個引擎的設計與其限制。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:19
+msgid ""
+"Please watch `Discover Godot 3, the Free game engine <https://youtu."
+"be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
+msgstr ""
+"如果你想瞭解的是引擎功能的概覽，請觀看 `Discover Godot 3, the Free game "
+"engine <https://youtu.be/4v3qge-3CqQ>`_ （英語）。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
+msgid "Object-oriented design and composition"
+msgstr "物件導向的設計與組合"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:25
+msgid ""
+"Godot embraces object-oriented design at its core with its flexible scene "
+"system and Node hierarchy. It tries to stay away from strict programming "
+"patterns to offer an intuitive way to structure your game."
+msgstr ""
+"Godot 通過靈活的場景系統與節點結構，在核心設計上就貫徹了物件導向設計。Godot "
+"避免強制規定程式設計模式來讓你用更直觀的方式組織遊戲。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:29
+msgid ""
+"For one, Godot lets you **compose or aggregate** scenes. It's like nested "
+"prefabs: you can create a BlinkingLight scene and a BrokenLantern scene that "
+"uses the BlinkingLight. Then, create a city filled with BrokenLanterns. "
+"Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
+"city will update instantly."
+msgstr ""
+"首先，Godot 讓你可以 **組合或聚合** 場景。這樣的做法就像巢狀架構的 Prefab 一"
+"樣：可以建立一個「BlinkingLight」（閃燈）場景與一個使用 BlingkingLight 的"
+"「BrokenLantern」（壞掉的路燈）場景。接著，製作一個使用 BrokenLantern 填滿的"
+"城市。一旦修改了 BlinkingLight 的色彩，城市裡所有的 BrokenLantern 都會馬上跟"
+"著一起變。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
+msgid "On top of that, you can **inherit** from any scene."
+msgstr "重點是，場景可以 **繼承** 。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
+msgid ""
+"A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
+"of a level… anything you'd like. It works like a class in pure code, except "
+"you're free to design it by using the editor, using only the code, or mixing "
+"and matching the two."
+msgstr ""
+"Godot 的場景可以是一個武器、或是一個角色、是一件物品、一扇門、一道關卡、或是"
+"一道關卡的一部分……等任何你能想像的東西。在程式碼中場景就以物件的形式存在，但"
+"你也可以使用編輯器來設計場景，也可以只用程式碼來設計出場景，或是同時用編輯器"
+"與程式碼來設計場景。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
+msgid ""
+"It's different from prefabs you find in several 3D engines, as you can then "
+"inherit from and extend those scenes. You may create a Magician that extends "
+"your Character. Modify the Character in the editor and the Magician will "
+"update as well. It helps you build your projects so that their structure "
+"matches the game's design."
+msgstr ""
+"但 Godot 的場景與其他各種 3D 引擎的 Prefab 不同，因為在 Godot 中，可以對場景"
+"繼承來進行擴充。你可以建立一個繼承自 Character （角色）場景的 Magician（魔術"
+"師）場景，並在編輯器中修改 Character，接著 Magician 便會隨之更新。這樣的設計"
+"可以幫助你在建立專案時，這些架構都能符合遊戲的設計。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
+msgid "|image0|"
+msgstr "\\ |image0|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
+msgid ""
+"Also note that Godot offers many different types of objects called nodes, "
+"each with a specific purpose. Nodes are part of a tree and always inherit "
+"from their parents up to the Node class. Although the engine does feature "
+"components like collision shapes, they're the exception, not the norm."
+msgstr ""
+"另外，Godot 也提供成各種不同型別的物件，稱為節點。不同的節點都有不同的功能。"
+"節點是樹狀結構下的一員，且繼承自其母節點，而繼承樹的最上層則為 Node 類別。雖"
+"然 Godot 引擎也提供了如碰撞區域這類的組件，但這類組件屬於特例。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
+msgid "|image1|"
+msgstr "\\ |image1|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
+msgid ""
+"Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
+"features of its three parent classes, like transforms or the ability to draw "
+"custom shapes and render with a custom shader."
+msgstr ""
+"Sprite 繼承自 Node2D、CanvasItem、與 Node 型別。Sprite 有這些母類別上所有的屬"
+"性與功能如變換、繪製自定形狀、使用自定著色器算繪等。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
+msgid "All-inclusive package"
+msgstr "一條龍服務的套裝軟體"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
+msgid ""
+"Godot tries to provide its own tools to answer most common needs. It has a "
+"dedicated scripting workspace, an animation editor, a tilemap editor, a "
+"shader editor, a debugger, a profiler, the ability to hot-reload locally and "
+"on remote devices, etc."
+msgstr ""
+"Godot 竭力自主提供一般情況下會用到的工具。我們有專用的腳本工作區、有動畫編輯"
+"器、有圖塊編輯器、有著色器編輯器、有除錯工具、有分析工具、還有可以在本機與遠"
+"端裝置上熱重載 (Hot-Reload) 的功能…等。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
+msgid "|image2|"
+msgstr "\\ |image2|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:73
+msgid ""
+"The goal is to offer a full package to create games and a continuous user "
+"experience. You can still work with external programs as long as there is an "
+"import plugin for it. Or you can create one, like the `Tiled Map Importer "
+"<https://github.com/vnen/godot-tiled-importer>`__."
+msgstr ""
+"我們的目標就是要提供一個製作遊戲的完整套裝軟體，同時還擁有一致的使用者經驗"
+"（User Experience，或譯作使用者體驗）。你也可以同時使用外部程式來配合，只要這"
+"個外部程式有匯入工具可以將成品匯入至 Godot。如果沒有的話你甚至也可以自己做一"
+"個，如 `Tiled Map Importer <https://github.com/vnen/godot-tiled-importer>`__ "
+"就是個例子。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
+msgid ""
+"That is also partly why Godot offers its own programming languages GDscript "
+"and VisualScript, along with C#. They're designed for the needs of game "
+"developers and game designers, and they're tightly integrated in the engine "
+"and the editor."
+msgstr ""
+"這也是 Godot 除了 C# 以外，有自己的程式語言 GDScript 與視覺腳本 "
+"(VisualScript) 一部分的原因。這些語言是源自遊戲開發者與設計師的需求所設計的，"
+"而且也與引擎及編輯器高度整合。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
+msgid ""
+"GDscript lets you write simple code using Python-like syntax, yet it detects "
+"types and offers a static language's quality of auto-completion. It is also "
+"optimized for gameplay code with built-in types like Vectors and Colors."
+msgstr ""
+"GDScript 讓你可以使用類似 Python 的格式來撰寫簡單的程式碼，但同時也會偵測型"
+"別，並提供媲美靜態語言品質的自動補全功能。而且 GDScript 還提供了如 Vector 與 "
+"Color 這樣的內建型別來最佳化遊戲執行。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
+msgid ""
+"Note that with GDNative, you can write high-performance code using compiled "
+"languages like C, C++, Rust, or Python (using the Cython compiler) without "
+"recompiling the engine."
+msgstr ""
+"值得注意的是，使用 GDNative 的話，你也可以使用如 C、C++、Rust、與（使用 "
+"Cython 編譯器的）Python 這類的編譯語言而毋須重新編譯整個引擎。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
+msgid "|image3|"
+msgstr "\\ |image3|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:93
+msgid ""
+"*VisualScript is a node-based programming language that integrates well in "
+"the editor. You can drag and drop nodes or resources into the graph to "
+"create new code blocks.*"
+msgstr ""
+"> VisualScript 是基於節點的程式語言，且與 Godot 編輯器整合地很好。你可以將節"
+"點或資源拖曳到圖形上來建立新的程式碼區塊。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
+msgid ""
+"Note that the 3D workspace doesn't feature as many tools as the 2D "
+"workspace. You'll need external programs or add-ons to edit terrains, "
+"animate complex characters, and so on. Godot provides a complete API to "
+"extend the editor's functionality using game code. See `The Godot editor is "
+"a Godot game`_ below."
+msgstr ""
+"請注意，3D 工作區沒有提供如 2D 工作區這麼多的工具。你會需要使用外部程式或擴充"
+"套件來編輯地形、複雜的動態角色等。Godot 提供了能用遊戲程式碼來擴充編輯器功能"
+"的完整 API。詳細請參考下方的 `Godot 編輯器就是一個 Godot 遊戲`_ 。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
+msgid "|image4|"
+msgstr "\\ |image4|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
+msgid ""
+"*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
+"states and transitions visually.*"
+msgstr ""
+"> Godot 2 中的狀態機 (State Machine) 編輯器外掛，作者為 kubecz3k。這個外掛提"
+"供視覺化的狀態管理與轉換界面。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
+msgid "Open source"
+msgstr "開放原始碼"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
+msgid ""
+"Godot offers a fully open source codebase under the **MIT license**. This "
+"means all the technologies that ship with it have to be Free (as in freedom) "
+"as well. For the most part, they're developed from the ground up by "
+"contributors."
+msgstr ""
+"Godot 所有的程式碼皆使用 **MIT 授權** 開放原始碼。這表示 Godot 所包含的所有技"
+"術都能自由使用。而且大部分的程式都是由許多貢獻者從頭開始開發的。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
+msgid ""
+"Anyone can plug in proprietary tools for the needs of their projects — they "
+"just won't ship with the engine. This may include Google AdMob, or FMOD. Any "
+"of these can come as third-party plugins instead."
+msgstr ""
+"任何人都可以根據各自的需求來在自己的專案內插入專屬軟體，這些工具只是不會跟著"
+"引擎一起提供給你而已。例如 Google AdMob、或 FMOD。這些專屬軟體工具都作為第三"
+"方外掛來提供。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
+msgid ""
+"On the other hand, an open codebase means you can **learn from and extend "
+"the engine** to your heart's content. You can also debug games easily, as "
+"Godot will print errors with a stack trace, even if they come from the "
+"engine itself."
+msgstr ""
+"另一方面，開放原始碼代表你可以根據你的需求 **一邊擴充引擎一邊學習** 。而你也"
+"可以更輕鬆地來除錯遊戲，因為 Godot 在印出錯誤提示時，就算錯誤是來自引擎內部也"
+"會包含在堆疊回溯中 。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
+msgid ""
+"This **does not affect the work you do with Godot** in any way: there's no "
+"strings attached to the engine or anything you make with it."
+msgstr ""
+"開放原始碼不管在各種方面都 **不會影響到你使用 Godot 製作的作品** ：Godot 引擎"
+"與所有你通過 Godot 製作的東西都不會帶有附加條件。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
+msgid "Community-driven"
+msgstr "社群驅動"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
+msgid ""
+"**Godot is made by its community, for the community, and for all game "
+"creators out there.** It's the needs of the users and open discussions that "
+"drive the core updates. New features from the core developers often focus on "
+"what will benefit the most users first."
+msgstr ""
+"**Godot 是由社群製作，也是為社群以及世界上所有遊戲創作者所製作的。** 重大的更"
+"新都是由使用者的需求與開放的討論而來的。核心開發者製作的新功能通常是優先是為"
+"了大多數使用者的利益來考慮。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
+msgid ""
+"That said, although a handful of core developers work on it full-time, the "
+"project has over 600 contributors at the time of writing. Benevolent "
+"programmers work on features they may need themselves, so you'll see "
+"improvements in all corners of the engine at the same time in every major "
+"release."
+msgstr ""
+"話雖如此，雖然 Godot 只有少數全職的核心開發者，但本文撰寫時本專案有超過 600 "
+"位貢獻者。這些佛心的工程師都是在處理各自的需求，所以 Godot 每次主要更新都包含"
+"了各方面的改進。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
+msgid "The Godot editor is a Godot game"
+msgstr "Godot 編輯器就是一個 Godot 遊戲"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
+msgid ""
+"The Godot editor runs on the game engine. It uses the engine's own UI "
+"system, it can hot-reload code and scenes when you test your projects, or "
+"run game code in the editor. This means you can **use the same code** and "
+"scenes for your games, or **build plugins and extend the editor.**"
+msgstr ""
+"Godot 編輯器是在遊戲引擎上執行的。編輯器使用了 Godot 引擎自己的 UI 系統，能夠"
+"在測試專案時熱重載程式碼與場景，或是在編輯器中執行遊戲程式碼。這表示 **同一個"
+"程式碼** 可以用在場景，也可以 **製作成外掛並擴充編輯器功能** 。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
+msgid ""
+"This leads to a reliable and flexible UI system, as it powers the editor "
+"itself. With the ``tool`` keyword, you can run any game code in the editor."
+msgstr ""
+"誠如編輯器也仰賴於統一套系統，也讓我們有了可靠與靈活的 UI 系統。使用 "
+"``tool`` 關鍵字，就能在編輯器中執行任何遊戲程式碼。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
+msgid "|image5|"
+msgstr "\\ |image5|"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
+msgid ""
+"*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
+"tools for its node-based programming system and for the rest of the "
+"interface.*"
+msgstr ""
+"> *RPG in a Box* 是一個使用 Godot 2 開發的 Voxel RPG 編輯器。他使用 Godot 的 "
+"UI 工具來製作他的基於節點的程式語言系統以及其他界面。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
+msgid ""
+"Put the ``tool`` keyword at the top of any GDScript file and it will run in "
+"the editor. This lets you import and export plugins, create plugins like "
+"custom level editors, or create scripts with the same nodes and API you use "
+"in your projects."
+msgstr ""
+"將 ``tool`` 關鍵字放在任何 GDScript 檔案的最上方就可以在編輯器中使用。這就讓"
+"你可以匯入與匯出外掛、可以建立如自定關卡的編輯器、或是可以使用與專案相同的節"
+"點與 API 來建立腳本。"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
+msgid "Separate 2D and 3D engines"
+msgstr "互相獨立的 2D 與 3D 引擎"
+
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
+msgid ""
+"Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
+"unit for 2D scenes is pixels.** Even though the engines are separate, you "
+"can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
+"your 3D world."
+msgstr ""
+"Godot 提供了互相獨立的 2D 與 3D 算繪引擎。所以 **2D 場景的基本單位是像素** 。"
+"雖然引擎是分開的，但你可以在 3D 中使用 2D、在 2D 中使用 3D 、或是在 3D 世界中"
+"使用 2D Sprite 或界面。"

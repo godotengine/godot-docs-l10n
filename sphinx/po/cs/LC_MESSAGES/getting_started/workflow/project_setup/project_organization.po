@@ -1,0 +1,177 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
+msgid "Project organization"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
+msgid "Introduction"
+msgstr "Představení"
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
+msgid ""
+"Since Godot has no restrictions on project structure or filesystem usage, "
+"organizing files when learning the engine can seem challenging. This "
+"tutorial suggests a workflow which should be a good starting point. We will "
+"also cover using version control with Godot."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
+msgid "Organization"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:17
+msgid ""
+"Godot is scene-based in nature, and uses the filesystem as-is, without "
+"metadata or an asset database."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
+msgid ""
+"Unlike other engines, many resources are contained within the scene itself, "
+"so the amount of files in the filesystem is considerably lower."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
+msgid ""
+"Considering that, the most common approach is to group assets as close to "
+"scenes as possible; when a project grows, it makes it more maintainable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
+msgid ""
+"As an example, one can usually place into a single folder their basic "
+"assets, such as sprite images, 3D model meshes, materials, and music, etc. "
+"They can then use a separate folder to store built levels that use them."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
+msgid "Style guide"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
+msgid ""
+"For consistency across projects, we recommend following these guidelines:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
+msgid ""
+"Use **snake_case** for folder and file names (with the exception of C# "
+"scripts). This sidesteps case sensitivity issues that can crop up after "
+"exporting a project on Windows. C# scripts are an exception to this rule, as "
+"the convention is to name them after the class name which should be in "
+"PascalCase."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
+msgid ""
+"Use **PascalCase** for node names, as this matches built-in node casing."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
+msgid ""
+"In general, keep third-party resources in a top-level ``addons/`` folder, "
+"even if they aren't editor plugins. This makes it easier to track which "
+"files are third-party. There are some exceptions to this rule; for instance, "
+"if you use third-party game assets for a character, it makes more sense to "
+"include them within the same folder as the character scenes and scripts."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
+msgid "Importing"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
+msgid ""
+"Godot versions prior to 3.0 did the import process from files outside the "
+"project. While this can be useful in large projects, it resulted in an "
+"organization hassle for most developers."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
+msgid ""
+"Because of this, assets are now transparently imported from within the "
+"project folder."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
+msgid "Ignoring specific folders"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
+msgid ""
+"To prevent Godot from importing files contained in a specific folder, create "
+"an empty file called ``.gdignore`` in the folder (the leading ``.`` is "
+"required). This can be useful to speed up the initial project importing."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:83
+msgid ""
+"To create a file whose name starts with a dot on Windows, you can use a text "
+"editor such as Notepad++ or use the following command in a command prompt: "
+"``type nul > .gdignore``"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:87
+msgid ""
+"Once the folder is ignored, resources in that folder can't be loaded anymore "
+"using the ``load()`` and ``preload()`` methods."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:90
+msgid ""
+"Ignoring a folder will also automatically hide it from the FileSystem dock, "
+"which can be useful to reduce clutter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:94
+msgid "Case sensitivity"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
+msgid ""
+"Windows and recent macOS versions use case-insensitive filesystems by "
+"default, whereas Linux distributions use a case-sensitive filesystem by "
+"default. This can cause issues after exporting a project, since Godot's PCK "
+"virtual filesystem is case-sensitive. To avoid this, it's recommended to "
+"stick to ``snake_case`` naming for all files in the project (and lowercase "
+"characters in general)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:105
+msgid ""
+"You can break this rule when style guides say otherwise (such as the C# "
+"style guide). Still, be consistent to avoid mistakes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
+msgid ""
+"On Windows 10, to further avoid mistakes related to case sensitivity, you "
+"can also make the project folder case-sensitive. After enabling the Windows "
+"Subsystem for Linux feature, run the following command in a PowerShell "
+"window::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/project_setup/project_organization.rst:118
+msgid ""
+"If you haven't enabled the Windows Subsystem for Linux, you can enter the "
+"following line in a PowerShell window *running as Administrator* then reboot "
+"when asked::"
+msgstr ""

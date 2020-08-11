@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
+msgid "Scripting (continued)"
+msgstr "撰寫程式 (續)"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
+msgid "Processing"
+msgstr "處理"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
+msgid ""
+"Several actions in Godot are triggered by callbacks or virtual functions, so "
+"there is no need to write code that runs all the time."
+msgstr ""
+"在 Godot 中有許多行為是通過回呼函式 (Callback) 或虛擬函式 (Virtual Function) "
+"觸發的，所以不需要撰寫要持續執行的程式碼。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
+msgid ""
+"However, it is still common to need a script to be processed on every frame. "
+"There are two types of processing: idle processing and physics processing."
+msgstr ""
+"但是，會需要在每一幀上都執行的腳本還是很常見。有兩種處理方法：閒置處理 (Idle "
+"Processing) 與物理處理 (Physics Processing)。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+msgid ""
+"Idle processing is activated when the method :ref:`Node._process() "
+"<class_Node_method__process>` is found in a script. It can be turned off and "
+"on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
+"function."
+msgstr ""
+"閒置處理會在腳本中有 :ref:`Node._process() <class_Node_method__process>`方法"
+"時候啟動。可以通過 :ref:`Node.set_process() <class_Node_method_set_process>` "
+"方法來開啟或關閉閒置處理。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
+msgid "This method will be called every time a frame is drawn:"
+msgstr "該方法會在繪製每一幀時呼叫："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:36
+msgid ""
+"It's important to bear in mind that the frequency with which ``_process()`` "
+"will be called depends on how many frames per second (FPS) your application "
+"is running at. This rate can vary over time and devices."
+msgstr ""
+"有一點很重要的是， ``_process()`` 的呼叫頻率會依據應用程式在執行時的 FPS "
+"(Frames Per Second，每秒幀數) 而定。這個頻率在不同設備下可能會不同。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+msgid ""
+"To help manage this variability, the ``delta`` parameter contains the time "
+"elapsed in seconds as a floating-point number since the previous call to "
+"``_process()``."
+msgstr ""
+"為了解決各裝置上 FPS 不同的問題，可以使用 ``delta`` (時間差) 參數。該參數會包"
+"含上次呼叫 ``_process()`` 到目前為止的時間，單位為浮點數的秒。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
+msgid ""
+"This parameter can be used to make sure things always take the same amount "
+"of time, regardless of the game's FPS."
+msgstr "delte 參數可以用來確保一些東西花費的時間不會因為 FPS 而有所不同。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+msgid ""
+"For example, movement is often multiplied with a time delta to make movement "
+"speed both constant and independent of the frame rate."
+msgstr ""
+"舉例來說，移動的距離通常會使用 Delta 來計算，這樣可以確保移動速度相同，而且也"
+"不會因為幀率而變化。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:49
+msgid ""
+"Physics processing with ``_physics_process()`` is similar, but it should be "
+"used for processes that must happen before each physics step, such as "
+"controlling a character. It always runs before a physics step and it is "
+"called at fixed time intervals: 60 times per second by default. You can "
+"change the interval from the Project Settings, under Physics -> Common -> "
+"Physics Fps."
+msgstr ""
+"使用 ``_physics_process()`` 來進行物理處理，但物理處理是在每個物理步驟前使用"
+"的，如控制角色。物理處理永遠都在物理步驟之前執行，而且會以相同的間隔呼叫，預"
+"設為每秒 60 次。可以在專案設定中的 [Physics] -> [Common] -> [Physics FPS] 來"
+"更改這個間隔。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
+msgid ""
+"The function ``_process()``, however, is not synced with physics. Its frame "
+"rate is not constant and is dependent on hardware and game optimization. Its "
+"execution is done after the physics step on single-threaded games."
+msgstr ""
+"然而，``_process()`` 函式並不與物理處理同步。_process() 的幀率並不固定，且會"
+"根據硬體與遊戲的最佳化而有所不同。在單一執行緒的遊戲上，_process() 會在物理步"
+"驟後才被執行。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:58
+msgid ""
+"A simple way to see the ``_process()`` function at work is to create a scene "
+"with a single Label node, with the following script:"
+msgstr ""
+"有一個簡單的方法可以讓我們瞭解 ``_process()``。先建立一個有 Label 節點的場"
+"景，然後使用下列腳本："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
+msgid "Which will show a counter increasing each frame."
+msgstr "這樣就會顯示一個每一幀都會增加的計數器。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
+msgid "Groups"
+msgstr "群組"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
+msgid ""
+"Groups in Godot work like tags you might have come across in other software. "
+"A node can be added to as many groups as desired. This is a useful feature "
+"for organizing large scenes. There are two ways to add nodes to groups. The "
+"first is from the UI, using the Groups button under the Node panel:"
+msgstr ""
+"Godot 中的群組就類似其他軟體中的標籤 (Tag)。一個節點可以被新增到多個群組裡"
+"面。群組功能對於管理大型場景很實用。把節點新增進群組有兩種方法。第一種方法是"
+"通過圖形界面，使用節點面板中的 [群組] 按鈕："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:97
+msgid ""
+"And the second way is from code. The following script would add the current "
+"node to the ``enemies`` group as soon as it appeared in the scene tree."
+msgstr ""
+"第二種方法則是使用程式碼。下面這個腳本會在目前節點一進入場景樹後立刻把它新增"
+"到 ``enemies`` (敵人) 群組中。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
+msgid ""
+"This way, if the player is discovered sneaking into a secret base, all "
+"enemies can be notified about its alarm sounding by using :ref:`SceneTree."
+"call_group() <class_SceneTree_method_call_group>`:"
+msgstr ""
+"這樣一來，一旦玩家潛入祕密基地被發現，就能通過 :ref:`SceneTree.call_group() "
+"<class_SceneTree_method_call_group>` 來讓所有敵人聽到警報聲："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
+msgid ""
+"The above code calls the function ``player_was_discovered`` on every member "
+"of the group ``enemies``."
+msgstr ""
+"上面的程式碼會呼叫群組 ``enemies`` 裡所有成員的 ``player_was_discovered`` 方"
+"法。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
+msgid ""
+"It is also possible to get the full list of ``enemies`` nodes by calling :"
+"ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
+msgstr ""
+"另外，也可以通過呼叫 :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>` 來取得所有 ``enemies`` 群組下的"
+"節點："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
+msgid ""
+"The :ref:`SceneTree <class_SceneTree>` class provides many useful methods, "
+"like interacting with scenes, their node hierarchy and groups of nodes. It "
+"allows you to easily switch scenes or reload them, to quit the game or pause "
+"and unpause it. It even comes with interesting signals. So check it out if "
+"you have some time!"
+msgstr ""
+":ref:`SceneTree <class_SceneTree>` 類別還提供了很多實用的方法，例如與場景、節"
+"點架構、群組等互動。也可以使用 SceneTree 來輕鬆切換場景、重新載入場景、結束遊"
+"戲、暫停以及取消暫停。SceneTree 甚至有一些很有趣的訊號。有空的話記得去看看 "
+"SceneTree 的手冊！"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:156
+msgid "Notifications"
+msgstr "通知"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:158
+msgid ""
+"Godot has a system of notifications. These are usually not needed for "
+"scripting, as it's too low-level and virtual functions are provided for most "
+"of them. It's just good to know they exist. For example, you may add an :ref:"
+"`Object._notification() <class_Object_method__notification>` function in "
+"your script:"
+msgstr ""
+"Godot 中有通知系統。雖然因為這個功能太底層，而且通知的大部分功能都可以在虛擬"
+"函式中找到，所以這個功能通常在編寫腳本時用不到。但知道有通知這東西還是好處"
+"的。例如，可以為腳本新增一個 :ref:`Object._notification() "
+"<class_Object_method__notification>` 函式："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
+msgid ""
+"The documentation of each class in the :ref:`Class Reference <toc-class-"
+"ref>` shows the notifications it can receive. However, in most cases "
+"GDScript provides simpler overridable functions."
+msgstr ""
+":ref:`類別參考手冊 <toc-class-ref>` 中有寫出各個類別能接收什麼通知。然而，大"
+"部分情況下 GDScript 都提供了更簡單的可複寫函式。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:198
+msgid "Overridable functions"
+msgstr "可複寫函式"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:200
+msgid ""
+"Such overridable functions, which are described as follows, can be applied "
+"to nodes:"
+msgstr "下列可複寫函式可用於節點："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:272
+msgid ""
+"As mentioned before, it's better to use these functions instead of the "
+"notification system."
+msgstr "如同稍早提到的，建議使用這些函式來代替通知系統。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:276
+msgid "Creating nodes"
+msgstr "建立節點"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:278
+msgid ""
+"To create a node from code, call the ``.new()`` method, like for any other "
+"class-based datatype. For example:"
+msgstr ""
+"與其他以類別為基礎的資料型別一樣，可以呼叫 ``.new()`` 方法來用程式碼建立節"
+"點。例如："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
+msgid ""
+"To delete a node, be it inside or outside the scene, ``free()`` must be used:"
+msgstr "不論是在節點的場景內還是場景外刪除節點都要使用 ``free()`` ："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
+msgid ""
+"When a node is freed, it also frees all its child nodes. Because of this, "
+"manually deleting nodes is much simpler than it appears. Free the base node "
+"and everything else in the subtree goes away with it."
+msgstr ""
+"釋放節點後，也會把該節點的所有子節點都釋放。由此可知刪除節點其實很簡單。只要"
+"刪除一個節點，在樹狀結構下的所有子節點也都會一起被刪除。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+msgid ""
+"A situation might occur where we want to delete a node that is currently "
+"\"blocked\", because it is emitting a signal or calling a function. This "
+"will crash the game. Running Godot with the debugger will often catch this "
+"case and warn you about it."
+msgstr ""
+"但有可能會發生一個狀況，就是我們要刪除的節點可能會被「封鎖 (Block)」，因為這"
+"個節點可能正在傳送訊號或是呼叫函式。如果把這個節點刪除了遊戲可能會當掉。而當"
+"有開啟 Godot 的除錯工具時通常會偵測到此一情況，並且會顯示相關警告。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:327
+msgid ""
+"The safest way to delete a node is by using :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>`. This erases the node safely during idle."
+msgstr ""
+"要刪除一個節點最安全的方法是使用 :ref:`Node.queue_free() "
+"<class_Node_method_queue_free>` 。這個方法會在閒置的時候安全地刪除節點。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:345
+msgid "Instancing scenes"
+msgstr "實體化場景"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:347
+msgid ""
+"Instancing a scene from code is done in two steps. The first one is to load "
+"the scene from your hard drive:"
+msgstr "使用程式碼來建立節點可以區分為兩個步驟。第一個步驟是從硬碟中載入場景："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:360
+msgid ""
+"Preloading it can be more convenient, as it happens at parse time (GDScript "
+"only):"
+msgstr ""
+"把場景預先載入進來可能會更方便，因為預載是在解析時執行的 (僅可用於 "
+"GDScript)："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:368
+msgid ""
+"But ``scene`` is not yet a node. It's packed in a special resource called :"
+"ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
+"function :ref:`PackedScene.instance() <class_PackedScene_method_instance>` "
+"must be called. This will return the tree of nodes that can be added to the "
+"active scene:"
+msgstr ""
+"但 ``scene`` (場景) 還不是節點，目前還打包在一個叫做 :ref:`PackedScene "
+"<class_PackedScene>` (打包場景) 的特殊資源內。要真正建立節點，必須呼叫 :ref:"
+"`PackedScene.instance()` 函式。這個函式會回傳一個可以被新增到有效場景內的節點"
+"樹："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+msgid ""
+"The advantage of this two-step process is that a packed scene may be kept "
+"loaded and ready to use so that you can create as many instances as desired. "
+"This is especially useful to quickly instance several enemies, bullets, and "
+"other entities in the active scene."
+msgstr ""
+"拆成「載入 - 實體化」兩個步驟的優點是，載入過打包場景後就可以維持已載入的狀"
+"態，隨時拿來使用。這樣一來我們就可以根據需要建立任意數量的實體。特別適用於需"
+"要在有效場景內快速實體化多個敵人、子彈或是其他實體的情況。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:394
+msgid "Register scripts as classes"
+msgstr "將腳本註冊為類別"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:396
+msgid ""
+"Godot has a \"Script Class\" feature to register individual scripts with the "
+"Editor. By default, you can only access unnamed scripts by loading the file "
+"directly."
+msgstr ""
+"Godot 有一個「腳本類別」功能，可以在編輯器內註冊個別腳本。預設情況下，要存取"
+"未命名的腳本，就只能直接載入檔案。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:400
+msgid ""
+"You can name a script and register it as a type in the editor with the "
+"``class_name`` keyword followed by the class's name. You may add a comma and "
+"an optional path to an image to use as an icon. You will then find your new "
+"type in the Node or Resource creation dialog."
+msgstr ""
+"但我們可以為一個腳本起名字，就可以將腳本註冊成編輯器裡的型別，只需要寫上 "
+"``class_name`` 關鍵字，並在後方接上類別名稱。也可以選擇在名稱後接上逗號與圖片"
+"路徑來設定圖片。接著在建立節點或資源的對話框中就可以找到這個新型別。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
+msgid "In Godot 3.1:"
+msgstr "在 Godot 3.1 中："
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
+msgid ""
+"Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
+"languages, can register scripts."
+msgstr ""
+"只有 GDScript 與 NativeScript 如 C++ 等使用 GDNative 的語言可以註冊腳本。"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:425
+msgid "Only GDScript creates global variables for each named script."
+msgstr "只有 GDScript 才會為每個已命名的腳本建立全域變數。"

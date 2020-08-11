@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Нетипові можливості"
+msgstr "Список особливостей"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Ця сторінка створена щоб показати всі особливості, що підтримуються рушієм "
+"на даний момент."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -33,70 +34,73 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Ця сторінка показує список особливостей які підтримує поточна, стабільна "
+"версія Godot(3.2)`Більше особливостей<https://docs.godotengine.org/en/latest/"
+"about/list_of_features.html>`__Наявні в найновішій версії(4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
 msgstr "Можливості"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
 msgstr "Платформи"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**Можливо запустити як редактор так і експортовані проекти :**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 або новіша (64-біт або 32-біт)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 або новіша (64-біт, x86 і ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
-#, fuzzy
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr "Архітектура платформи (64-розрядна, або 32-бітна, x86, або ARM)."
+msgstr "Linux (64-бітна та 32-бітна, x86 та ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Бінарні файли статично пов’язані і можуть працювати на будь-якому "
+"дистрибутиві, якщо вони складені на досить старій базі."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Офіційні двійкові файли скомпільовані на Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "**Runs exported projects:**"
-msgstr "Експортування проектів"
+msgstr "**Запускає експортовані проекти:**"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 або новіша."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 або новіша."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 через WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`bool <class_bool>` (логічні)"
+msgstr ":док:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot прагне бути максимально незалежним від платформи і може бути відноснох "
+"легко перенесений на нові платформ."
 
 #: ../../docs/about/list_of_features.rst:40
 msgid "Editor"
@@ -105,187 +109,212 @@ msgstr "Редактор"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Fedora**"
+msgstr "**Особливості:**"
 
 #: ../../docs/about/list_of_features.rst:44
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "Дерево сцени"
+msgstr "Дерево сцени."
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "Редактор скриптів"
+msgstr "Редактор скриптів."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Підтримка для :ref:`external script editors <doc_external_editor>` таких як "
+"Visual Studio Code або Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Поки без підтримки дебагінгу в потоках."
 
 #: ../../docs/about/list_of_features.rst:50
-#, fuzzy
 msgid "Performance monitoring tools."
-msgstr "Продуктивність C# у Godot"
+msgstr "Інструменти для контролю продуктивності."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "Live script reloading."
-msgstr ""
+msgstr "Миттєве перезавантаженя скриптів."
 
 #: ../../docs/about/list_of_features.rst:52
-#, fuzzy
 msgid "Live scene editing."
-msgstr "Використовувати наслідування сцен"
+msgstr "Редагування сцени в реальному часі."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Зміни одразу відобразяться в редакторі і збережуться після закриття проекту."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
-msgstr ""
+msgstr "Дистанційний інспектор."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Зміни не відобразяться в редакторі і не збережуться після закриття робочого "
+"проекту."
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "Перейменувати анімацію"
+msgstr "Реплікація камери в реальному часі."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Перемістіть камеру в редакторі та перегляньте зміни в робочому проекті."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Використовуйте редактор на десятках мов, що надаються спільнотою."
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Плаґіни (додатки)"
+msgstr "**Плагіни (додатки):**"
 
 #: ../../docs/about/list_of_features.rst:62
+#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Плагіни редактора можна завантажити з: ref: `бібліотека активів "
+"<doc_what_is_assetlib>` для розширення функціональності редактора."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Створіть власні плагіни за допомогою GDScript, щоб додати нові функції або "
+"прискорити ваш робочий процес."
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Завантажте проекти з бібліотеки об’єктів в менеджері проектів та імпортуйте "
+"їх безпосередньо."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "2D графіка"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "** Доступно два рендери:**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"OpenGL ES 3.0 рендер (використовуйте OpenGL 3.3 на настільних платформах)."
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
 msgstr ""
+"Високоякісні візуальні ефекти. Рекомендується на настільних платформах."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"Рендер з OpenGL Es 2.0 (використовує OpenGL 2.1 на настільних платформах)."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Рекомендується на мобільних і веб-платформах."
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Рендер спрайтів, полігонів і ліній."
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Інструменти високого рівня для малювання ліній та багатокутників, таких як "
+"Polygon2D та Line2D."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite як помічник для створення анімованих спрайтів."
 
 #: ../../docs/about/list_of_features.rst:82
+#, fuzzy
 msgid "Parallax layers."
-msgstr ""
+msgstr "Шари паралакса."
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "Псевдо-3D підтримка шляхом автоматичного дублювання шару кілька разів."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "2D освітлення з картами нормалей."
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Різкі або м'які тіні."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Відображення шрифту за допомогою растрових зображень (BitmapFont) або "
+"растерізація за допомогою FreeType (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:87
+#, fuzzy
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
+"Шрифти растрових зображень можна експортувати за допомогою таких "
+"інструментів, як BMFont."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont підтримує однотонні шрифти, а також кольорові шрифти. "
+"Підтримувані формати - TTF і OTF."
 
 #: ../../docs/about/list_of_features.rst:90
+#, fuzzy
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont підтримує додаткові контури шрифту з регульованою шириною та "
+"кольором."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Підтримка масштабування шрифтів для збереження їх чіткості при високій "
+"роздільній здатності."
 
 #: ../../docs/about/list_of_features.rst:92
+#, fuzzy
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "Частинки на основі GPU з підтримкою користувацьких шейдерів."
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
@@ -299,29 +328,33 @@ msgid "2D tools"
 msgstr "tool"
 
 #: ../../docs/about/list_of_features.rst:98
+#, fuzzy
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2D-камера з вбудованим рівнем згладжування та перетягування"
 
 #: ../../docs/about/list_of_features.rst:100
+#, fuzzy
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Шлях2d нода для демонстрації шляху у 2d просторі."
 
 #: ../../docs/about/list_of_features.rst:100
 #: ../../docs/about/list_of_features.rst:233
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Може бути намальовано в редакторі або згенеровано процедурно."
 
 #: ../../docs/about/list_of_features.rst:101
+#, fuzzy
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "Вузол PathFollow2D, щоб змусити вузли слідувати Path2D."
 
 #: ../../docs/about/list_of_features.rst:102
+#, fuzzy
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "Клас що допомогає з 2d геометрією."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Line2D нода для малювання текстурованих 2d ліній."
 
 #: ../../docs/about/list_of_features.rst:106
 #, fuzzy
@@ -330,9 +363,8 @@ msgstr "Фізика"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "Фізичні властивості"
+msgstr "**Фізичні тіла:**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
@@ -343,22 +375,27 @@ msgstr "Статичні функції"
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Тверді тіла."
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
+#, fuzzy
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Кінематичні тіла."
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
+#, fuzzy
 msgid "Joints."
-msgstr ""
+msgstr "Суглоби."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:249
+#, fuzzy
 msgid "Areas to detect bodies entering or leaving it."
 msgstr ""
+"Області створені для виявлення тіл, що рухаються всередину або за межі цих "
+"областей."
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
@@ -368,31 +405,35 @@ msgstr "Зіткнення"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Вбудовані фігури: лінія, квадрат, коло, капсула."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Полігони зіткнення (можна намалювати вручну або нагенерувати з спрайта в "
+"редакторі)."
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "3D graphics"
-msgstr ""
+msgstr "3D графіка"
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "HDR рендер з sRGB."
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "LDR рендер для більшої сумісності."
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Не всі функції доступні. Функції, доступні лише при використанні рендерера "
+"OpenGL ES 3.0, позначені нижче як * GLES3 *."
 
 #: ../../docs/about/list_of_features.rst:135
 #, fuzzy
@@ -400,65 +441,74 @@ msgid "**Camera:**"
 msgstr "Категорії"
 
 #: ../../docs/about/list_of_features.rst:137
+#, fuzzy
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Перспективні, ортографічні та офсетні камери."
 
 #: ../../docs/about/list_of_features.rst:139
+#, fuzzy
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Фізично достовірний рендер:**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Наслідує PBR модель Діснея."
 
 #: ../../docs/about/list_of_features.rst:142
+#, fuzzy
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"Використовує шорткісно-металічний робочий процес із підтримкою ORM-текстур."
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Normal Map (Карта нормалей)"
+msgstr "Normal Map (Карта нормалей)."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"* GLES3: * Паралакс / рельєфне відображення з автоматичним рівнем "
+"деталізації на основі відстані."
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "* GLES3: * Розсіювання та підповерхневе пропускання."
 
 #: ../../docs/about/list_of_features.rst:146
+#, fuzzy
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "* GLES3: * Ближнє затухання (м'які частинки)."
 
 #: ../../docs/about/list_of_features.rst:147
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Затухання з відстаню, яке може використовувати альфа-змішування або "
+"відтіняння, щоб уникнути проходження прозорого трубопроводу."
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Освітлення в режимі реального часу:**"
 
 #: ../../docs/about/list_of_features.rst:153
+#, fuzzy
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Спрямовані джерела світла (сонце / місяць). До 4 на сцену."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Всенаправлене світло."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Точкове світло з регульованим кутом конуса і загасанням."
 
 #: ../../docs/about/list_of_features.rst:157
 #, fuzzy
@@ -466,16 +516,22 @@ msgid "**Shadow mapping:**"
 msgstr "Затінювання"
 
 #: ../../docs/about/list_of_features.rst:159
+#, fuzzy
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"* DirectionalLight: * Ортогональний (найшвидший), PSSM 2-split та 4-split. "
+"Підтримується змішування між розщепленнями."
 
 #: ../../docs/about/list_of_features.rst:161
 msgid ""
 "*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"* Всенаправлене світло: * Подвійний параболід (швидкий) або кубічна карта "
+"(повільніше, але точніше). Підтримує кольорові текстури проектора у вигляді "
+"панорам."
 
 #: ../../docs/about/list_of_features.rst:163
 #, fuzzy
@@ -484,15 +540,17 @@ msgstr "Імпортування текстур"
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "** Глобальне освітлення з непрямим світлом: **"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
+"Запечені світлові карти (швидко, але не можуть бути оновлені в режимі "
+"реального часу)."
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Карти освітлення запечені на CPU."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
@@ -927,9 +985,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Import"
-msgstr "Імпортування"
+msgstr "Імпортувати"
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -1036,9 +1093,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "Режим навігації"
+msgstr "Навігація"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."

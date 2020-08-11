@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:4
 msgid "Editor and docs localization"
-msgstr ""
+msgstr "Localisation de l'éditeur et de la documentation"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:8
 msgid ""
@@ -28,29 +28,31 @@ msgid ""
 "to make the most important resources available in many languages, thanks to "
 "the translation effort of the community."
 msgstr ""
+"Godot vise à rendre le développement de jeux accessible à tous, y compris "
+"aux personnes qui ne connaissent pas ou ne sont pas à l'aise avec l'anglais. "
+"C'est pourquoi nous faisons de notre mieux pour mettre à disposition les "
+"ressources les plus importantes dans de nombreuses langues, grâce à l'effort "
+"de traduction de la communauté."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:13
-#, fuzzy
 msgid "These resources include:"
-msgstr "Autres mots clés valides inclus :"
+msgstr "Ces ressources comprennent :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:15
-#, fuzzy
 msgid ""
 "The `Godot editor's interface <https://hosted.weblate.org/projects/godot-"
 "engine/godot/>`__ (ca. 15,000 words)."
 msgstr ""
-"La documentation peut être traduite dans n'importe quelle langue sur `Hosted "
-"Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
+"`L'interface de l'éditeur Godot <https://hosted.weblate.org/projects/godot-"
+"engine/godot/>`__ (environ 15 000 mots)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:17
-#, fuzzy
 msgid ""
 "The `online documentation <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/>`__ (editor manual and tutorials, ca. 300,000 words)."
 msgstr ""
-"La documentation peut être traduite dans n'importe quelle langue sur `Hosted "
-"Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
+"La `documentation en ligne <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/>`__ (manuel de l'éditeur et tutoriels, environ 300 000 mots)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:19
 msgid ""
@@ -58,6 +60,9 @@ msgid ""
 "class-reference/>`__, available both online and in the editor (ca. 200,000 "
 "words)."
 msgstr ""
+"La `class reference <https://hosted.weblate.org/projects/godot-engine/godot-"
+"class-reference/>`__, disponible en ligne et dans l'éditeur (environ 200 000 "
+"mots)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:22
 msgid ""
@@ -67,6 +72,12 @@ msgid ""
 "the translation for the various components, and keep them up to date. Click "
 "the bold links above to access each resource on Weblate."
 msgstr ""
+"Pour gérer les traductions, nous utilisons le format de fichier GNU gettext "
+"(fichiers ``PO``), et la plateforme de localisation web open source `Weblate "
+"<https://weblate.org>`__, qui permet une collaboration facile de nombreux "
+"contributeurs pour compléter la traduction des différents composants, et les "
+"maintenir à jour. Cliquez sur les liens en gras ci-dessus pour accéder à "
+"chaque ressource sur Weblate."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:28
 msgid ""
@@ -74,6 +85,9 @@ msgid ""
 "and some resource-specific instructions on e.g. how to handle some keywords "
 "or the localization of images."
 msgstr ""
+"Cette page donne un aperçu du processus général de traduction sur Weblate, "
+"ainsi que des instructions spécifiques à la ressource, par exemple sur la "
+"manière de traiter certains mots clés ou la localisation d'images."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:34
 msgid ""
@@ -82,11 +96,16 @@ msgid ""
 "interface, then the online documentation, and eventually the class reference "
 "if there are enough translators to keep up with updates."
 msgstr ""
+"La traduction de l'ensemble du contenu officiel de Godot est une entreprise "
+"de grande envergure, c'est pourquoi nous conseillons de classer les "
+"ressources par ordre de priorité comme elles sont énumérées ci-dessus : "
+"d'abord l'interface de l'éditeur, puis la documentation en ligne, et enfin "
+"la référence de la classe s'il y a suffisamment de traducteurs pour suivre "
+"les mises à jour."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:40
-#, fuzzy
 msgid "Using Weblate for translations"
-msgstr "Configuration de la traduction importée"
+msgstr "Utilisation de Weblate pour les traductions"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:42
 msgid ""
@@ -96,12 +115,19 @@ msgid ""
 "not accepted. Translations are synced manually between Weblate and the Godot "
 "repositories by maintainers."
 msgstr ""
+"Bien que nos traductions résident au final dans les dépôts Git du moteur "
+"Godot et de sa documentation, toutes les mises à jour des traductions sont "
+"gérées par Weblate, et donc les demandes directes de téléchargement vers les "
+"dépôts Git ne sont pas acceptées. Les traductions sont synchronisées "
+"manuellement entre Weblate et les dépôts Godot par les mainteneurs."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:48
 msgid ""
 "You should therefore `register on Weblate <https://hosted.weblate.org/"
 "accounts/register/>`__ to contribute to Godot's translations."
 msgstr ""
+"Vous devez donc vous `enregistrer sur Weblate <https://hosted.weblate.org/"
+"accounts/register/>`__ pour contribuer aux traductions de Godot."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:51
 msgid ""
@@ -110,6 +136,10 @@ msgid ""
 "org/projects/godot-engine/godot/>`__ as an example) to find the list of all "
 "languages:"
 msgstr ""
+"Une fois connecté, naviguez vers la ressource Godot à laquelle vous "
+"souhaitez contribuer (dans cette page, nous utiliserons la `traduction de "
+"l'éditeur <https://hosted.weblate.org/projects/godot-engine/godot/>`__ comme "
+"exemple) pour trouver la liste de toutes les langues :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:59
 msgid ""
@@ -117,17 +147,21 @@ msgid ""
 "workflow <https://docs.weblate.org/en/latest/user/translating.html>`__ for "
 "more details."
 msgstr ""
+"N'hésitez pas à consulter la documentation de Weblate sur le `flux de "
+"travail de traduction <https://docs.weblate.org/en/latest/user/translating."
+"html>`__ pour plus de détails."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:64
-#, fuzzy
 msgid "Adding a new language"
-msgstr "Langue de shading"
+msgstr "Ajouter une nouvelle langue"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:66
 msgid ""
 "If your language is already listed, click on its name to access the "
 "overview, and skip the rest of this section."
 msgstr ""
+"Si votre langue figure déjà dans la liste, cliquez sur son nom pour accéder "
+"à la vue d'ensemble, et passez le reste de cette section."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:69
 msgid ""
@@ -135,6 +169,10 @@ msgid ""
 "languages and click the \"Start new translation\" button, and select the "
 "language you want to translate to:"
 msgstr ""
+"Si votre langue ne figure pas dans la liste, faites défiler jusqu'au bas de "
+"la liste des langues et cliquez sur le bouton \"Commencer une nouvelle "
+"traduction\", puis sélectionnez la langue dans laquelle vous souhaitez "
+"traduire :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:77
 msgid ""
@@ -143,6 +181,11 @@ msgid ""
 "for French) instead of a regional variant (e.g. ``fr_FR`` for French "
 "(France), ``fr_CA`` for French (Canada), or ``fr_DZ`` for French (Algeria))."
 msgstr ""
+"Si votre langue est parlée dans plusieurs pays avec seulement des variations "
+"régionales limitées, veuillez envisager de l'ajouter avec sa variante "
+"générique (par exemple ``fr`` pour le français) au lieu d'une variante "
+"régionale (par exemple ``fr_FR`` pour le français (France), ``fr_CA`` pour "
+"le français (Canada), ou ``fr_DZ`` pour le français (Algérie))."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:82
 msgid ""
@@ -152,6 +195,12 @@ msgid ""
 "regional variant, it will only be available automatically for users located "
 "in this region (or having their system language configured for this region)."
 msgstr ""
+"Godot a une énorme quantité de contenu à traduire, donc la duplication du "
+"travail pour les variantes régionales ne devrait être faite que si les "
+"variations linguistiques sont suffisamment importantes. En outre, si une "
+"traduction est effectuée pour une variante régionale, elle ne sera "
+"disponible automatiquement que pour les utilisateurs situés dans cette "
+"région (ou dont la langue du système est configurée pour cette région)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:88
 msgid ""
@@ -162,11 +211,18 @@ msgid ""
 "g. Spanish (work on ``es`` first, then duplicate it to ``es_AR``, ``es_ES``, "
 "``es_MX``, etc. if necessary) or Portuguese (``pt_BR`` vs ``pt_PT``)."
 msgstr ""
+"Lorsque les variations régionales sont suffisamment importantes pour "
+"justifier des traductions séparées, nous conseillons de se concentrer sur la "
+"réalisation d'une variante générique en premier si possible, puis de "
+"reproduire la traduction complète pour les variantes régionales et "
+"d'effectuer les révisions nécessaires. C'est généralement une bonne "
+"stratégie pour l'espagnol par exemple (travailler d'abord sur ``es``, puis "
+"le dupliquer sur ``es_AR``, ``es_ES``, ``es_MX``, etc. si nécessaire) ou le "
+"portugais (``pt_BR`` contre ``pt_PT``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:97
-#, fuzzy
 msgid "Translation interface"
-msgstr "TranslationServer"
+msgstr "Interface de traduction"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:99
 msgid ""
@@ -176,16 +232,23 @@ msgid ""
 "corresponding list. You can also click the \"Translate\" button to get "
 "started on the list of strings needing action."
 msgstr ""
+"Une fois qu'une langue a été sélectionnée, vous verrez un aperçu de l'état "
+"de la traduction, y compris le nombre de strings qui restent à traduire ou à "
+"réviser. Chaque élément peut être cliqué et utilisé pour parcourir la liste "
+"correspondante. Vous pouvez également cliquer sur le bouton \"Traduire\" "
+"pour commencer sur la liste des chaînes nécessitant une action."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:107
 msgid ""
 "After selecting a list of clicking \"Translate\", you will see the main "
 "translation interface where all the work happens:"
 msgstr ""
+"Après avoir sélectionné une liste en cliquer sur \"Traduire\", vous verrez "
+"l'interface de traduction principale où tout le travail se fait :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:112
 msgid "On that page, you have:"
-msgstr ""
+msgstr "Sur cette page, vous avez :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
@@ -193,6 +256,10 @@ msgid ""
 "to another pre-defined list or do a custom search, etc. There is also a \"Zen"
 "\" editing mode with a simplified interface."
 msgstr ""
+"Une barre d'outils qui vous permet de parcourir les strings de la liste "
+"actuelle, de passer à une autre liste prédéfinie ou de faire une recherche "
+"personnalisée, etc. Il existe également un mode d'édition \"Zen\" avec une "
+"interface simplifiée."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
 msgid ""
@@ -207,6 +274,18 @@ msgid ""
 "(in PO jargon, these are so-called \"fuzzy\" strings). Such strings won't be "
 "used in the translation until fixed."
 msgstr ""
+"La chaîne réelles sur lequel vous travaillez dans le panneau \"Traduction\". "
+"Par défaut, il devrait y avoir la chaîne source en anglais et une zone "
+"d'édition pour votre langue. Si vous êtes familier avec d'autres langues, "
+"vous pouvez les ajouter dans vos paramètres utilisateur pour vous donner "
+"plus de contexte pour la traduction. Une fois que vous avez fini d'éditer la "
+"chaîne actuelle, appuyez sur \"Enregistrer\" pour confirmer les changements "
+"et passer à la chaîne suivante. Vous pouvez également utiliser le bouton "
+"\"Suivant\" pour passer à la chaîne suivante. La case à cocher \"À vérifier"
+"\" signifie que la chaîne originale a été mise à jour et que la traduction "
+"doit donc être révisée pour tenir compte de ces changements (dans le jargon "
+"de PO, il s'agit de chaînes dites \"floues\"). Ces chaînes ne seront pas "
+"utilisées dans la traduction tant qu'ils n'auront pas été corrigés."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:127
 msgid ""
@@ -216,6 +295,12 @@ msgid ""
 "other translators, machine translations, and a list of all other existing "
 "translations for that string."
 msgstr ""
+"Le panneau du bas comporte divers outils qui peuvent aider à la traduction, "
+"comme le contexte des chaînes voisines (généralement issues du même outil de "
+"l'éditeur ou de la même page de documentation, de sorte qu'elles peuvent "
+"utiliser des termes similaires), les commentaires d'autres traducteurs, les "
+"traductions automatiques et une liste de toutes les autres traductions "
+"existantes pour cet chaîne."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:132
 msgid ""
@@ -225,6 +310,12 @@ msgid ""
 "\"node\" term in Godot, you can add it to the glossary to ensure that other "
 "translators use the same convention."
 msgstr ""
+"En haut à droite, le glossaire indique les termes pour lesquels une entrée a "
+"été ajoutée précédemment et qui sont inclus dans la chaîne actuelle. Par "
+"exemple, si vous avez décidé avec des collègues traducteurs d'utiliser une "
+"traduction spécifique pour le terme \"node\" dans Godot, vous pouvez "
+"l'ajouter au glossaire pour vous assurer que les autres traducteurs "
+"utilisent la même convention."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:137
 msgid ""
@@ -233,11 +324,14 @@ msgid ""
 "original string on GitHub. You may need to search for the string in the page "
 "to locate it and its surrounding context."
 msgstr ""
+"Le panneau inférieur droit contient des informations sur la chaîne source. "
+"L'élément le plus pertinent est l'\"emplacement de la chaîne source\", qui "
+"vous relie à la chaîne originale sur GitHub. Vous pouvez avoir besoin de "
+"rechercher la chaîne dans la page pour la localiser."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:143
-#, fuzzy
 msgid "Locating original content"
-msgstr "Création de contenu 3D"
+msgstr "Localisation du contenu original"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:145
 msgid ""
@@ -247,6 +341,11 @@ msgid ""
 "organized in the PO files to help you locate the original content and use it "
 "as a reference when translating."
 msgstr ""
+"Les fichiers PO sont une liste ordonnée de chaînes sources (``msgid``) et de "
+"leur traduction (``msgstr``), et par défaut, Weblate présentera les chaînes "
+"dans cet ordre. Il peut donc être utile de comprendre comment le contenu est "
+"organisé dans les fichiers PO pour vous aider à localiser le contenu "
+"original et l'utiliser comme référence lors de la traduction."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:153
 msgid ""
@@ -257,6 +356,14 @@ msgid ""
 "context also makes the translation effort much easier and more enjoyable, as "
 "you can see directly if the translation you wrote will make sense in context."
 msgstr ""
+"Il est primordial d'utiliser le contexte original comme référence lors de la "
+"traduction, car de nombreux mots ont plusieurs traductions possibles selon "
+"le contexte. L'utilisation d'une mauvaise traduction peut en fait être "
+"préjudiciable à l'utilisateur et rendre les choses plus difficiles à "
+"comprendre que si elles restaient en anglais. L'utilisation du contexte rend "
+"également l'effort de traduction beaucoup plus facile et agréable, car vous "
+"pouvez voir directement si la traduction que vous avez rédigée aura un sens "
+"dans le contexte."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
@@ -267,6 +374,13 @@ msgid ""
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
 "thereby related to the code editors in Godot (GDScript, shaders)."
 msgstr ""
+"Le modèle de traduction de l'interface de l'éditeur est généré en analysant "
+"tout le code source C++ dans **l'ordre alphabétique**, de sorte que toutes "
+"les chaînes définies dans un fichier donné seront regroupées. Par exemple, "
+"si l'\"emplacement de la chaîne source\" indique ``editor/code_editor.cpp``, "
+"la chaîne actuelle (et les chaînes voisines) est définie dans le fichier de "
+"code ``editor/code_editor.cpp``, et est donc liée aux éditeurs de code dans "
+"Godot (GDScript, shaders)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:167
 msgid ""
@@ -280,6 +394,16 @@ msgid ""
 "``getting_started/step_by_step/scenes_and_nodes.rst`` for the page :ref:"
 "`doc_scenes_and_nodes`."
 msgstr ""
+"Le modèle de traduction de la documentation en ligne est généré à partir des "
+"fichiers RST sources dans le même ordre que celui de la **table des "
+"matières**, de sorte que, par exemple, les premières chaînes proviennent de "
+"la première page de la documentation. Le flux de travail recommandé consiste "
+"donc à trouver une chaîne unique correspondant à une page que vous souhaitez "
+"traduire, puis à traduire toutes les chaînes ayant le même emplacement de "
+"chaîne source tout en comparant avec la version en ligne de cette page en "
+"anglais. Un exemple d'emplacement de la chaîne source pourrait être "
+"``getting_started/step_by_step/scenes_and_nodes.rst`` pour la page :ref:"
+"`doc_scenes_and_nodes`."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:176
 msgid ""
@@ -292,6 +416,15 @@ msgid ""
 "descriptions for the :ref:`class_Node2D` class would have the source string "
 "location ``doc/classes/Node2D.xml``."
 msgstr ""
+"Le modèle de traduction de la référence de classe est généré à partir des "
+"fichiers XML source dans **l'ordre alphabétique**, qui est également le même "
+"que l'ordre de la table des matières pour la version en ligne. Vous pouvez "
+"donc localiser la chaîne source correspondant à la brève description d'une "
+"classe donnée pour trouver la première chaîne à traduire et toutes les "
+"autres descriptions de cette classe doivent se trouver dans les chaînes "
+"suivantes sur Weblate. Par exemple, les descriptions de la classe :ref:"
+"`class_Node2D` auraient comme emplacement de la chaîne source ``doc/classes/"
+"Node2D.xml``."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:185
 msgid ""
@@ -300,6 +433,10 @@ msgid ""
 "also be used with the ``location:`` token, e.g. ``location:scenes_and_nodes."
 "rst``):"
 msgstr ""
+"Un outil pratique pour localiser des pages/classes spécifiques consiste à "
+"utiliser la fonction de recherche avancée de Weblate, et notamment la "
+"requête \"localisation de chaînes\" (qui peut également être utilisée avec "
+"le jeton ``location:``, par exemple ``location:scenes_and_nodes.rst``) :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:195
 msgid ""
@@ -312,11 +449,19 @@ msgid ""
 "happen that a given paragraph or section title is not at the location you'd "
 "expect it when reading the online version of a page."
 msgstr ""
+"Lorsqu'une chaîne source donnée est utilisée dans plusieurs endroits, elles "
+"seront toutes concaténées en une seule. Par exemple, la requête ``location:"
+"scenes_and_nodes.rst`` ci-dessus aboutira d'abord sur la chaîne source "
+"\"Introduction\" qui est utilisée dans des dizaines de pages, y compris "
+"certaines qui précèdent ``scenes_and_nodes.rst`` dans le modèle. En cliquant "
+"sur le bouton \"Suivant\", nous arrivons ensuite à la chaîne de titre "
+"\"Scene and nodes\" affichée ci-dessus. Il peut donc arriver qu'un titre de "
+"paragraphe ou de section donné ne se trouve pas à l'endroit où vous "
+"l'attendez en lisant une page de la version en ligne."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:206
-#, fuzzy
 msgid "Respecting the markup syntax"
-msgstr "Tester le résultat"
+msgstr "Respect de la syntaxe de balisage"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:208
 msgid ""
@@ -324,15 +469,20 @@ msgid ""
 "and having some notions on the markup language used for each resource is "
 "important to avoid creating syntax errors in your translations."
 msgstr ""
+"Chaque ressource de traduction provient d'un format de code source "
+"différent, et il est important d'avoir quelques notions sur le langage de "
+"balisage utilisé pour chaque ressource afin d'éviter de créer des erreurs de "
+"syntaxe dans vos traductions."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:213
-#, fuzzy
 msgid "Editor interface (C++)"
-msgstr "Interfaces de Godot"
+msgstr "Interface de l'éditeur (C++)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:215
 msgid "The editor translations originate from C++ strings, and may use:"
 msgstr ""
+"Les traductions de l'éditeur proviennent de chaînes C++, et peuvent être "
+"utilisées :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:217
 msgid ""
@@ -344,6 +494,14 @@ msgid ""
 "the sentence. Example (``%s``  will be substituted with a file name or "
 "path)::"
 msgstr ""
+"**les spécificateurs de format C** tels que ``%s`` (un string) ou ``%d`` (un "
+"nombre). Ces spécificateurs sont remplacés par le contenu au moment de "
+"l'exécution, et doivent être préservés et placés dans votre traduction où "
+"cela est nécessaire pour qu'il soit significatif après la substitution. Vous "
+"pouvez avoir besoin de vous référer à l'emplacement de la chaîne source pour "
+"comprendre quel type de contenu sera substitué si la phrase n'est pas "
+"claire. Exemple (``%s`` sera substitué par un nom de fichier ou un chemin "
+"d'accès) :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:230
 msgid ""
@@ -355,11 +513,19 @@ msgid ""
 "used for vertical spacing, or manual wrapping of long lines which would "
 "otherwise be too long especially in the editor translation). Example::"
 msgstr ""
+"**caractères d'échappement C** tels que ``\\n`` (saut de ligne) ou ``\\t`` "
+"(tabulation). Dans l'éditeur Weblate, les caractères ``\\n`` sont remplacés "
+"par ``↵`` (retour) et ``\\t`` par ``↹``. Les tabulations ne sont pas très "
+"utilisées, mais vous devez vous assurer d'utiliser les sauts de ligne de la "
+"même manière que pour la chaîne originale en anglais (Weblate émettra un "
+"avertissement si vous ne le faites pas). Les sauts de ligne peuvent parfois "
+"être utilisés pour l'espacement vertical, ou le retour à la ligne manuel de "
+"longues lignes qui seraient autrement trop longues, en particulier dans la "
+"traduction de l'éditeur). Exemple :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:247
-#, fuzzy
 msgid "Online documentation (RST)"
-msgstr "Organisation de la documentation"
+msgstr "Documentation en ligne (RST)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:249
 msgid ""
@@ -367,6 +533,10 @@ msgid ""
 "which also use their own markup syntax to style text, create internal and "
 "external links, etc. Here are some examples::"
 msgstr ""
+"Les traductions de la documentation proviennent de fichiers reStructuredText "
+"(RST), qui utilisent également leur propre syntaxe de balisage pour styliser "
+"le texte, créer des liens internes et externes, etc. Voici quelques "
+"exemples :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:291
 msgid ""
@@ -376,17 +546,24 @@ msgid ""
 "inline markup (bold, italics, inline code) and the internal and external "
 "hyperlink markup."
 msgstr ""
+"Voir `reStructured Text primer <https://www.sphinx-doc.org/en/master/usage/"
+"restructuredtext/basics.html>`__ de Sphinx pour un aperçu rapide du langage "
+"de balisage que vous pouvez trouver dans les chaînes sources. Vous pouvez "
+"rencontrer en particulier le balisage dans la ligne (gras, italique, code "
+"dans la ligne) et le balisage interne et externe des hyperliens."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:297
-#, fuzzy
 msgid "Class reference (BBCode)"
-msgstr "Référence des Classes"
+msgstr "Référence de classe (BBCode)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:299
 msgid ""
 "The class reference is documented in the main Godot repository using XML "
 "files, and with BBCode-like markup for styling and internal references."
 msgstr ""
+"La référence de classe est documentée dans le dépôt principal de Godot à "
+"l'aide de fichiers XML, et avec un balisage de type BBCode pour le style et "
+"les références internes."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:302
 msgid ""
@@ -396,6 +573,13 @@ msgid ""
 "another class (e.g. ``[Node2D]``) or to a property in a given class (e.g. "
 "``[member Node2D.position]``), or for multiline code blocks. Example::"
 msgstr ""
+"Certaines des balises utilisées sont issues du BBCode original (par exemple "
+"``[b]Bold[/b]`` and ``[i]Italics[/i]``), tandis que d'autres sont "
+"spécifiques à Godot et utilisées pour des fonctionnalités avancées telles "
+"que le code dans la ligne (e.``[code]true[/code]``), la liaison à une autre "
+"classe (par exemple, ``[Node2D]``) ou à une propriété d'une classe donnée "
+"(par exemple, ``[member Node2D.position]``), ou pour des blocs de code "
+"multilignes. Exemple :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:314
 msgid ""
@@ -407,12 +591,22 @@ msgid ""
 "you can translate the name of the variable which holds the result (``red "
 "= ...``)."
 msgstr ""
+"Dans l'exemple ci-dessus, ``[code]name[/code]``, ``[code]alpha[/code]``, et "
+"``[Color]`` ne doivent pas être traduits, car ils font référence "
+"respectivement à des noms d'arguments et à une classe de l'API Godot. De "
+"même, le contenu du ``[codeblock]`` ne doit pas être traduit, car ``ColorN`` "
+"est une fonction de l'API Godot et ``\"red\"`` est l'une des couleurs "
+"nommées qu'elle supporte. Tout au plus, vous pouvez traduire le nom de la "
+"variable qui contient le résultat (``red = ...``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:321
 msgid ""
 "Note also that in the XML, each line is a paragraph, so you should not add "
 "line breaks if they are not part of the original translation."
 msgstr ""
+"Notez également que dans le XML, chaque ligne est un paragraphe, vous ne "
+"devez donc pas ajouter de sauts de ligne s'ils ne font pas partie de la "
+"traduction originale."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:326
 msgid ""
@@ -420,11 +614,14 @@ msgid ""
 "BBCode-like tags <doc_updating_the_class_reference_bbcode>` which are used "
 "throughout the class reference."
 msgstr ""
+"Consultez notre documentation pour les auteurs de références de classe pour "
+"la :ref:`liste des balises de type BBCode "
+"<doc_updating_the_class_reference_bbcode>` qui sont utilisées dans toute la "
+"référence de classe."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:331
-#, fuzzy
 msgid "Offline translation and testing"
-msgstr "Internationaliser une chaîne de caractère(string)"
+msgstr "Traduction et tests hors ligne"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:333
 msgid ""
@@ -433,12 +630,20 @@ msgid ""
 "your preferred PO editing application, such as `Poedit <https://poedit.net/"
 ">`__ or `Lokalize <https://userbase.kde.org/Lokalize>`__."
 msgstr ""
+"Nous vous conseillons d'utiliser l'interface Weblate pour rédiger les "
+"traductions, mais vous avez également la possibilité de télécharger le "
+"fichier PO en local pour le traduire avec votre application d'édition PO "
+"préférée, telle que `Poedit <https://poedit.net/>`__ ou `Lokalize <https://"
+"userbase.kde.org/Lokalize>`__."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:338
 msgid ""
 "To download the PO file locally, browse to the translation overview for your "
 "language, and select the first item in the \"Files\" menu:"
 msgstr ""
+"Pour télécharger le fichier PO en local, consultez l'aperçu des traductions "
+"pour votre langue et sélectionnez le premier élément dans le menu \"Fichiers"
+"\" :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:343
 msgid ""
@@ -446,6 +651,10 @@ msgid ""
 "item in that same menu and select your file. Choose \"Add as translation\" "
 "for the file upload mode."
 msgstr ""
+"Une fois que vous avez terminé une série de modifications, utilisez "
+"l'élément \"Téléverser la traduction\" dans ce même menu et sélectionnez "
+"votre fichier. Choisissez \"Ajouter comme traduction\" pour le mode de "
+"téléchargement du fichier."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:349
 msgid ""
@@ -455,6 +664,11 @@ msgid ""
 "advise to use the online interface so that you always work on the latest "
 "version."
 msgstr ""
+"Si un laps de temps important s'est écoulé entre le téléchargement du "
+"fichier PO et le téléversement de la version éditée, il existe un risque "
+"d'écraser les traductions rédigées par d'autres contributeurs dans "
+"l'intervalle. C'est pourquoi nous vous conseillons d'utiliser l'interface en "
+"ligne afin de toujours travailler sur la dernière version."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:355
 msgid ""
@@ -462,6 +676,9 @@ msgid ""
 "you can use the downloaded PO file and :ref:`compile Godot from source <toc-"
 "devel-compiling>`."
 msgstr ""
+"Si vous voulez tester les changements localement (en particulier pour la "
+"traduction de l'éditeur), vous pouvez utiliser le fichier PO téléchargé et :"
+"ref:`compiler Godot à partir de la source <toc-devel-compiling>`."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:358
 msgid ""
@@ -469,22 +686,25 @@ msgid ""
 "Esperanto) and place it in the ``editor/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/editor/translations>`__)."
 msgstr ""
+"Renommez le fichier PO de traduction de l'éditeur en ``<lang>.po`` (par "
+"exemple ``eo.po`` pour l'espéranto) et placez-le dans le dossier ``editor/"
+"translations/`` (`GitHub <https://github.com/godotengine/godot/tree/master/"
+"editor/translations>`__)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:362
-#, fuzzy
 msgid ""
 "You can also test class reference changes the same way by renaming the PO "
 "file similarly and placing it in the ``doc/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/doc/translations>`__)."
 msgstr ""
-"La référence de classe se trouve dans les fichiers XML suivants, dans le "
-"dépôt GitHub de Godot : `doc/classes/ <https://github.com/godotengine/godot/"
-"tree/master/doc/classes>`_."
+"Vous pouvez également tester les changements de référence de classe de la "
+"même manière en renommant le fichier PO de la même façon et en le plaçant "
+"dans le dossier ``doc/translations/`` (`GitHub <https://github.com/"
+"godotengine/godot/tree/master/doc/translations>`__)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:367
-#, fuzzy
 msgid "Localizing documentation images"
-msgstr "Mise à jour du modèle de documentation"
+msgstr "Localisation des images de la documentation"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:369
 msgid ""
@@ -493,17 +713,20 @@ msgid ""
 "Some of it includes text and might thus be relevant to localize in your "
 "language."
 msgstr ""
+"La documentation en ligne comprend de nombreuses images, qui peuvent être "
+"des captures d'écran de l'éditeur Godot, des graphismes personnalisés, ou "
+"tout autre type de contenu visuel. Certaines d'entre elles comprennent du "
+"texte et peuvent donc être pertinentes à localiser dans votre langue."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:373
-#, fuzzy
 msgid ""
 "This part is not handled via Weblate, but directly on the `godot-docs-l10n "
 "<https://github.com/godotengine/godot-docs-l10n>`_ Git repository where the "
 "documentation translations are synced from Weblate."
 msgstr ""
-"Les chaînes traduites sont synchronisées manuellement par les responsables "
-"de la documentation dans le dossier `godot-docs-l10n <https://github.com/"
-"godotengine/godot-docs-l10n>`__."
+"Cette partie n'est pas gérée via Weblate, mais directement sur le dépôt Git "
+"`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`_ où les "
+"traductions de la documentation sont synchronisées à partir de Weblate."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:379
 msgid ""
@@ -511,6 +734,10 @@ msgid ""
 "Git. We plan to work on a simplified Web tool which could be used to manage "
 "image localization in a convenient way, abstracting away these steps."
 msgstr ""
+"Le flux de travail n'est pas des plus simples et nécessite une certaine "
+"connaissance de Git. Nous prévoyons de travailler sur un outil Web simplifié "
+"qui pourrait être utilisé pour gérer la localisation des images de manière "
+"pratique, en faisant abstraction de ces étapes."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:383
 msgid ""
@@ -519,6 +746,11 @@ msgid ""
 "`doc_intro_to_the_editor_interface`. Click the \"Edit on GitHub\" link in "
 "the top right corner:"
 msgstr ""
+"Pour traduire une image, vous devez d'abord la localiser dans la "
+"documentation originale en anglais. Pour ce faire, consultez la page "
+"correspondante dans la documentation, par exemple :ref:"
+"`doc_intro_to_the_editor_interface`. Cliquez sur le lien \"Edit on GitHub\" "
+"dans le coin supérieur droit :"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:390
 msgid ""
@@ -527,6 +759,11 @@ msgid ""
 "Note the full path to the image as it will be needed further down (here "
 "``getting_started/step_by_step/img/project_manager_first_open.png``)."
 msgstr ""
+"Sur GitHub, cliquez sur l'image que vous souhaitez traduire. Le cas échéant, "
+"cliquez sur \"Download\" pour la télécharger localement et l'éditer avec un "
+"outil d'édition d'images. Notez le chemin complet vers l'image car il sera "
+"nécessaire plus bas (ici ``getting_started/step_by_step/img/"
+"project_manager_first_open.png``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:397
 msgid ""
@@ -536,6 +773,12 @@ msgid ""
 "format, so you can browse the ``img/`` folder which contains them to check "
 "for that."
 msgstr ""
+"Créez votre version localisée de l'image, soit en éditant la version "
+"anglaise, soit en prenant une capture d'écran de l'éditeur dans votre "
+"langue, s'il s'agit d'une capture d'écran de l'éditeur. Certaines images "
+"peuvent également avoir des fichiers sources disponibles au format SVG, vous "
+"pouvez donc parcourir le dossier ``img/`` qui les contient pour vérifier "
+"cela."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:402
 msgid ""
@@ -543,6 +786,10 @@ msgid ""
 "added before the extension, e.g. ``project_manager_first_open.png`` would "
 "become ``project_manager_first_open.fr.png`` for the French localization."
 msgstr ""
+"Nommez votre image localisée comme l'image originale, mais en ajoutant le "
+"code de la langue avant l'extension, par exemple "
+"``project_manager_first_open.png`` deviendrait ``project_manager_first_open."
+"fr.png`` pour la localisation française."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:406
 msgid ""
@@ -552,9 +799,16 @@ msgid ""
 "translated image there. In our example, the end result should be ``images/"
 "getting_started/step_by_step/img/project_manager_first_open.fr.png``."
 msgstr ""
+"Enfin, dans godot-docs-l10n_, recréer la même structure de dossier que pour "
+"l'image originale dans le sous-dossier ``images`` (`GitHub <https://github."
+"com/godotengine/godot-docs-l10n/tree/master/images>`_), et placer y votre "
+"image traduite. Dans notre exemple, le résultat final devrait être ``images/"
+"getting_started/step_by_step/img/project_manager_first_open.fr.png``."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:412
 msgid ""
 "Repeat this for other images and :ref:`make a Pull Request "
 "<doc_pr_workflow>`."
 msgstr ""
+"Répétez ceci pour les autres images et :ref:`faites un Pull Request "
+"<doc_pr_workflow>`."

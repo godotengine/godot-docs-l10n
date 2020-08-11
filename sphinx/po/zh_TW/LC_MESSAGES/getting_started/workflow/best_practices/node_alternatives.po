@@ -1,0 +1,146 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
+msgid "When and how to avoid using nodes for everything"
+msgstr "該避免一直使用節點的情況與如何避免"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
+msgid ""
+"Nodes are cheap to produce, but even they have their limits. A project may "
+"have tens of thousands of nodes all doing things. The more complex their "
+"behavior though, the larger the strain each one adds to a project's "
+"performance."
+msgstr ""
+"建立節點成本低，但建立節點有其限制。一個專案中可能有數以千計的節點，各司其"
+"職。當這些節點的行為越複雜，每個節點對專案效能造成的壓力就越大。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
+msgid ""
+"Godot provides more lightweight objects for creating APIs which nodes use. "
+"Be sure to keep these in mind as options when designing how you wish to "
+"build your project's features."
+msgstr ""
+"Godot 有一些更輕量的物件，這些物件可以用來建立 API，並讓節點使用。在設計如何"
+"製作專案功能時，請務必記得有這個選項。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
+msgid ""
+":ref:`Object <class_Object>`: The ultimate lightweight object, the original "
+"Object must use manual memory management. With that said, it isn't too "
+"difficult to create one's own custom data structures, even node structures, "
+"that are also lighter than the :ref:`Node <class_Node>` class."
+msgstr ""
+":ref:`Object <class_Object>` ：終極輕量物件，原始的 Object。必須要使用手動記"
+"憶體管理。也就是說，要建立自己的自定資料結構甚至節點結構並不困難，而且也比 :"
+"ref:`Node <class_Node>` 還要輕量。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:21
+msgid ""
+"**Example:** See the :ref:`Tree <class_Tree>` node. It supports a high level "
+"of customization for a table of content with an arbitrary number of rows and "
+"columns. The data that it uses to generate its visualization though is "
+"actually a tree of :ref:`TreeItem <class_TreeItem>` Objects."
+msgstr ""
+"**範例：** 請參考 :ref:`Tree<class_Tree>` 節點。該節點可為有任意行列的目錄進"
+"行高度客製化。用來產生視覺化的資料實際上是通過一個樹狀 :ref:`TreeItem "
+"<class_TreeItem>` 物件。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:26
+msgid ""
+"**Advantages:** Simplifying one's API to smaller scoped objects helps "
+"improve its accessibility improve iteration time. Rather than working with "
+"the entire Node library, one creates an abbreviated set of Objects from "
+"which a node can generate and manage the appropriate sub-nodes."
+msgstr ""
+"**優點：** 簡化 API 至更小作用域的物件有助於提升存取性，並改進迭代時間。比起"
+"使用整個 Node 函式庫，不如用一組簡短的 Object 來建立子節點，讓節點可產生與管"
+"理適當的子節點。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:31
+msgid ""
+"One should be careful when handling them. One can store an Object into a "
+"variable, but these references can become invalid without warning. For "
+"example, if the object's creator decides to delete it out of nowhere, this "
+"would trigger an error state when one next accesses it."
+msgstr ""
+"在處理這些節點時要注意。我們可以將 Object 存到變數中，但這個參照可能會在沒有"
+"警告的情況下失效。舉例來說，若物件的建立者刪除了物件，則下次存取物件的時候便"
+"會觸發警告。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:36
+msgid ""
+":ref:`Reference <class_Reference>`: Only a little more complex than Object. "
+"They track references to themselves, only deleting loaded memory when no "
+"further references to themselves exist. These are useful in the majority of "
+"cases where one needs data in a custom class."
+msgstr ""
+":ref:`Reference <class_Reference>` ：只稍微比 Object 複雜一點。Reference 會追"
+"蹤自己的參照，然後只在沒有任何參照到自己時才刪除載入的記憶體。這種類別適用於"
+"大多數自定類別中需要資料的情況。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:41
+msgid ""
+"**Example:** See the :ref:`File <class_File>` object. It functions just like "
+"a regular Object except that one need not delete it themselves."
+msgstr ""
+"**範例：** 請參考 :ref:`File <class_File>` 物件。該物件的功能除了不需要手動刪"
+"除以外，就像一般的 Object 一樣。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
+msgid "**Advantages:** same as the Object."
+msgstr "**優點：** 與 Object 一樣。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:46
+msgid ""
+":ref:`Resource <class_Resource>`: Only slightly more complex than Reference. "
+"They have the innate ability to serialize/deserialize (i.e. save and load) "
+"their object properties to/from Godot resource files."
+msgstr ""
+":ref:`Resource <class_Resource>` ：只比 Reference 複雜一點。Resource 自帶將自"
+"身物件屬性序列化到 Godot 資源檔案中，以及反過來從資源檔案中反序列化的能力 (即"
+"保存與載入功能)。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:50
+msgid ""
+"**Example:** Scripts, PackedScene (for scene files), and other types like "
+"each of the :ref:`AudioEffect <class_AudioEffect>` classes. Each of these "
+"can be save and loaded, therefore they extend from Resource."
+msgstr ""
+"**範例：** Script, PackedScene (用於場景檔案) 與其他如各個 :ref:`AudioEffec "
+"<class_AudioEffect>` 類別之類的型別。這些類別都可以載入與保存，因此都是從 "
+"Resource 繼承來的。"
+
+#: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:54
+msgid ""
+"**Advantages:** Much has :ref:`already been said <doc_resources>` on :ref:"
+"`Resource <class_Resource>`'s advantages over traditional data storage "
+"methods. In the context of using Resources over Nodes though, their main "
+"advantage is in Inspector-compatibility. While nearly as lightweight as "
+"Object/Reference, they can still display and export properties in the "
+"Inspector. This allows them to fulfill a purpose much like sub-Nodes on the "
+"usability front, but also improve performance if one plans to have many such "
+"Resources/Nodes in their scenes."
+msgstr ""
+"**優點：** 關於 :ref:`Resource <class_Resource>` 比傳統資料儲存方法相比， :"
+"ref:`已經討論過 <doc_resources>` 很多了。在使用 Resource 而不是 Node 的脈絡"
+"下，主要的優點就是與屬性面板的相容性。雖然輕量程度相當於 Object 與 "
+"Reference，但 Resource 還可以在屬性面板中顯示與匯出屬性。這樣便可讓 Resource "
+"在可用性方面來說填補子節點，也可於沒有在計劃場景中使用太多 Resource 與 Node "
+"時提升效能。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,33 +79,30 @@ msgid "project.godot"
 msgstr "project.godotファイル"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"project.godotファイルはプロジェクト記述ファイルであり、常にプロジェクトのルー"
-"トにあります。実際、その場所はルートの場所を定義します。これは、プロジェクト"
-"を開くときにGodotが検索する最初のファイルです。"
+"``project.godot`` ファイルはプロジェクト記述ファイルであり、常にプロジェクト"
+"のルートにあります。というより、これが置かれた場所にルートが設定されます。こ"
+"れは、プロジェクトを開くときにGodotが検索する最初のファイルです。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
 "このファイルには、win.ini形式を使用したプロジェクト構成がプレーンテキストで含"
-"まれています。空のproject.godotでも、空白のプロジェクトの基本的な定義として機"
-"能します。"
+"まれています。空の ``project.godot`` であっても、空白のプロジェクトの基本的な"
+"定義として機能します。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
 msgstr "パス区切り文字"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
-#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
@@ -113,9 +110,9 @@ msgid ""
 "godot``."
 msgstr ""
 "Godotでは、パスの区切り文字として ``/`` だけを使用できます。これは移植性のた"
-"めに行われます。Windowsでも、すべてのオペレーティングシステムがこれをサポート"
-"しているため、 ``c:\\project\\project.godot`` などのパスを ``c:/project/"
-"project.godot`` と入力する必要があります。"
+"めです。Windowsを含め、すべてのオペレーティングシステムがこれをサポートしてい"
+"るため、パスは ``C:\\project\\project.godot`` ではなく ``C:/project/project."
+"godot`` と入力する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
@@ -132,13 +129,12 @@ msgstr ""
 "``res://`` が作成されました。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
-"パス ``res://`` は常にプロジェクトルートを指します(project.godotがある場所な"
-"ので、 ``res://project.godot`` は常に有効です)。"
+"パス ``res://`` は常にプロジェクトルートを指します (``project.godot`` がある"
+"場所なので、 ``res://project.godot`` は常に有効です)。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -157,7 +153,6 @@ msgid "User path"
 msgstr "ユーザー・パス"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -166,8 +161,10 @@ msgid ""
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 "ゲームの状態の保存やコンテンツパックのダウンロードなどのタスクには、ディスク"
-"への書き込みが引き続き必要です。このために、エンジンは何時でも書き込みが出来"
-"る特別なパス ``user://`` があることを確認します。"
+"への書き込みが引き続き必要です。このため、エンジンには特別なパス ``user://`` "
+"があり、いつでも書き込みが出来ることを確保しています。このパスの解決方法は、"
+"プロジェクトが実行されているOSによって異なります。ローカルパスの解決について"
+"は、\\ :ref:`doc_data_paths`\\ で詳しく説明しています。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"

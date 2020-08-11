@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU Optimizations"
-msgstr "Optimisation"
+msgstr "Optimisations GPU"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:7
 msgid "Introduction"
@@ -35,12 +34,23 @@ msgid ""
 "which sorts instructions to pass to the GPU, and in the transfer of these "
 "instructions. And finally bottlenecks also occur on the GPU itself."
 msgstr ""
+"La demande de nouvelles fonctionnalités graphiques et de progrès garantit "
+"presque que vous rencontrerez des goulots d'étranglement graphiques. "
+"Certains d'entre eux peuvent être du côté du CPU, par exemple dans les "
+"calculs à l'intérieur du moteur Godot pour préparer les objets pour le "
+"rendu. Des goulots d'étranglement peuvent également se produire dans le CPU "
+"dans le pilote graphique, qui trie les instructions à transmettre au GPU, et "
+"dans le transfert de ces instructions. Et enfin, des goulots d'étranglement "
+"se produisent également sur le GPU lui-même."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:16
 msgid ""
 "Where bottlenecks occur in rendering is highly hardware specific. Mobile "
 "GPUs in particular may struggle with scenes that run easily on desktop."
 msgstr ""
+"Les goulets d'étranglement dans le rendu sont très spécifiques au matériel. "
+"Les GPU mobiles, en particulier, peuvent avoir du mal à rendre des scènes "
+"qui s'exécutent facilement sur un ordinateur de bureau."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:19
 msgid ""
@@ -50,16 +60,25 @@ msgid ""
 "more difficult to take measurements. Often the only way of measuring "
 "performance is by examining changes in frame rate."
 msgstr ""
+"La compréhension et l'étude des goulets d'étranglement du GPU sont "
+"légèrement différentes de la situation sur le CPU, car souvent vous ne "
+"pouvez modifier les performances qu'indirectement, en changeant les "
+"instructions que vous donnez au GPU, et il peut être plus difficile de "
+"prendre des mesures. Souvent, la seule façon de mesurer les performances est "
+"d'examiner les changements de fréquence d'images."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:26
 msgid "Drawcalls, state changes, and APIs"
-msgstr ""
+msgstr "Drawcalls, les changements d'état et APIs"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:28
 msgid ""
 "The following section is not relevant to end-users, but is useful to provide "
 "background information that is relevant in later sections."
 msgstr ""
+"La section suivante ne concerne pas les utilisateurs finaux, mais elle est "
+"utile pour fournir des informations générales qui seront utiles dans les "
+"sections suivantes."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:31
 msgid ""
@@ -68,6 +87,11 @@ msgid ""
 "costly, especially in OpenGL. If we can provide these instructions in a way "
 "that is preferred by the driver and GPU, we can greatly increase performance."
 msgstr ""
+"Godot envoie des instructions au GPU via une API graphique (OpenGL, GLES2, "
+"GLES3, Vulkan). La communication et l'activité du pilote qui en découle "
+"peuvent être assez coûteuses, surtout dans OpenGL. Si nous pouvons fournir "
+"ces instructions de la manière préférée par le pilote et le GPU, nous "
+"pouvons considérablement augmenter les performances."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:36
 msgid ""
@@ -78,11 +102,17 @@ msgid ""
 "together similar objects as much as possible so they can be rendered "
 "together, or with the minimum number of these expensive state changes."
 msgstr ""
+"Presque chaque commande API dans OpenGL nécessite une certaine quantité de "
+"validation, pour s'assurer que le GPU est dans le bon état. Même des "
+"commandes apparemment simples peuvent entraîner une avalanche de tâches "
+"internes en coulisses. C'est pourquoi le jeu est de réduire ces instructions "
+"au strict minimum, et de regrouper autant que possible les objets similaires "
+"afin qu'ils puissent être rendus ensemble, ou avec le minimum de ces coûteux "
+"changements d'état."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:44
-#, fuzzy
 msgid "2D batching"
-msgstr "Recherche"
+msgstr "Traitement 2D par lots"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:46
 msgid ""
@@ -93,18 +123,23 @@ msgid ""
 "In addition this means that state changes, material and texture changes can "
 "be kept to a minimum."
 msgstr ""
+"En 2d, les coûts de traitement de chaque élément individuellement peuvent "
+"être prohibitifs - il peut facilement y en avoir des milliers à l'écran. "
+"C'est la raison pour laquelle le traitement par lots en 2d est utilisé : "
+"plusieurs éléments similaires sont regroupés et rendus en un lot, par un "
+"seul drawcall, plutôt que de faire un drawcall distinct pour chaque élément. "
+"En outre, cela signifie que les changements d'état, de matériau et de "
+"texture peuvent être réduits au minimum."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:53
-#, fuzzy
 msgid "For more information on 2D batching see :ref:`doc_batching`."
 msgstr ""
-"Pour plus d'informations sur le pré-calcul de lumière voir :ref:"
-"`doc_baked_lightmaps`."
+"Pour plus d'informations sur le traitement 2D par lots, voir :ref:"
+"`doc_batching`."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:56
-#, fuzzy
 msgid "3D batching"
-msgstr "Recherche"
+msgstr "Traitement 3D par lots"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:58
 msgid ""
@@ -117,6 +152,15 @@ msgid ""
 "meshes in relation to each other). This can either be done by artists, or "
 "programmatically within Godot."
 msgstr ""
+"En 3d, nous visons toujours à minimiser les draw calls et les changements "
+"d'état, cependant, il peut être plus difficile de regrouper plusieurs objets "
+"en un seul draw call. Les maillages 3d ont tendance à comprendre des "
+"centaines ou des milliers de triangles, et combiner de grands maillages à "
+"l'exécution est d'un coût prohibitif. Le coût de leur assemblage dépasse "
+"rapidement les avantages éventuels, car le nombre de triangles par maille "
+"augmente. Une bien meilleure solution consiste à joindre les mailles à "
+"l'avance (mailles statiques les unes par rapport aux autres). Cela peut être "
+"fait soit par les artistes, soit de manière logiciel dans Godot."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:66
 msgid ""
@@ -128,23 +172,28 @@ msgid ""
 "of joining static objects often outweigh other considerations, especially "
 "for large numbers of low poly objects."
 msgstr ""
+"Le traitement par lots d'objets en 3d a également un coût. Plusieurs objets "
+"rendus comme un seul ne peuvent pas être occultés individuellement. Une "
+"ville entière qui est hors écran sera quand même rendue si elle est jointe à "
+"un seul brin d'herbe qui est à l'écran. Pour tenter de regrouper des objets "
+"en 3D, il faut donc tenir compte de leur emplacement et de leur effet sur "
+"l'occlusion. Malgré cela, les avantages de joindre des objets statiques "
+"l'emportent souvent sur d'autres considérations, en particulier pour un "
+"grand nombre d'objets à peu de polygones."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:74
-#, fuzzy
 msgid ""
 "For more information on 3D specific optimizations, see :ref:"
 "`doc_optimizing_3d_performance`."
 msgstr ""
-"Pour plus d'informations sur la pause dans Godot, voir :ref:"
-"`doc_pausing_games`"
+"Pour plus d'informations sur les optimisations spécifiques à la 3D, voir :"
+"ref:`doc_optimizing_3d_performance`."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:78
-#, fuzzy
 msgid "Reuse Shaders and Materials"
-msgstr "Réutilisation des shaders et des matériaux"
+msgstr "Réutilisation des Shaders et des Materials"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:80
-#, fuzzy
 msgid ""
 "The Godot renderer is a little different to what is out there. It's designed "
 "to minimize GPU state changes as much as possible. :ref:`SpatialMaterial "
@@ -152,12 +201,12 @@ msgid ""
 "similar shaders but, if custom shaders are used, make sure to reuse them as "
 "much as possible. Godot's priorities are:"
 msgstr ""
-"Le moteur de rendu Godot est un peu différent de ce qu'y existe ailleurs. Il "
-"est conçu pour minimiser autant que possible les changements d'état du GPU. :"
-"ref:`class_SpatialMaterial` fait un bon travail pour réutiliser les "
-"matériaux qui nécessitent des shaders similaires mais, si des shaders "
-"personnalisés sont utilisés, assurez-vous de les réutiliser autant que "
-"possible. Les priorités de Godot seront comme cela :"
+"Le moteur de rendu de Godot est un peu différent de ce qu'y existe ailleurs. "
+"Il est conçu pour minimiser autant que possible les changements d'état du "
+"GPU. :ref:`SpatialMaterial <class_SpatialMaterial>` fait un bon travail pour "
+"réutiliser les matériaux qui nécessitent des shaders similaires mais, si des "
+"shaders personnalisés sont utilisés, assurez-vous de les réutiliser autant "
+"que possible. Les priorités de Godot sont :"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:86
 msgid ""
@@ -182,39 +231,38 @@ msgstr ""
 "paramètres différents mais avec la même configuration)."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:94
-#, fuzzy
 msgid ""
 "If a scene has, for example, ``20,000`` objects with ``20,000`` different "
 "materials each, rendering will be slow. If the same scene has ``20,000`` "
 "objects, but only uses ``100`` materials, rendering will be much faster."
 msgstr ""
-"Si une scène a, par exemple, 20.000 objets avec 20.000 matériaux différents "
-"chacun, le rendu sera lent. Si la même scène contient 20.000 objets, mais "
-"n'utilise que 100 matériaux, le rendu sera d'une rapidité fulgurante."
+"Si une scène a, par exemple, ``20,000`` objets avec ``20,000`` matériaux "
+"différents chacun, le rendu sera lent. Si la même scène contient ``20,000`` "
+"objets, mais n'utilise que ``100`` matériaux, le rendu sera beaucoup plus "
+"rapide."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:99
 msgid "Pixel cost vs vertex cost"
 msgstr "Coût en pixel contre coût en sommet"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:101
-#, fuzzy
 msgid ""
 "You may have heard that the lower the number of polygons in a model, the "
 "faster it will be rendered. This is *really* relative and depends on many "
 "factors."
 msgstr ""
-"Il est communément admis que plus le nombre de polygones d'un modèle est "
-"faible, plus il sera rendu rapidement. Ceci est *vraiment* relatif et dépend "
-"de nombreux facteurs."
+"Vous avez peut-être entendu dire que plus le nombre de polygones dans un "
+"modèle est faible, plus le rendu est rapide. C'est *vraiment* relatif et "
+"cela dépend de nombreux facteurs."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:104
-#, fuzzy
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles, so every frame all the vertices:"
 msgstr ""
-"Sur un PC et une console modernes, le coût du sommet est faible. A "
-"l'origine, les GPU ne rendaient que des triangles, donc tous les sommets :"
+"Sur un PC et une console modernes, le coût du sommet est faible. À "
+"l'origine, les GPU ne rendaient que les triangles, donc chaque image tous "
+"les sommets :"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:107
 msgid "Had to be transformed by the CPU (including clipping)."
@@ -225,7 +273,6 @@ msgid "Had to be sent to the GPU memory from the main RAM."
 msgstr "Doit être envoyé à la mémoire du GPU depuis la RAM principale."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:111
-#, fuzzy
 msgid ""
 "Now all this is handled inside the GPU, so the performance is much higher. "
 "3D artists usually have the wrong feeling about polycount performance "
@@ -236,11 +283,11 @@ msgid ""
 msgstr ""
 "De nos jours, tout cela est géré à l'intérieur du GPU, donc les performances "
 "sont extrêmement élevées. Les artistes 3D ont généralement le mauvais "
-"sentiment au sujet de la performance polycount parce que les DCC 3D (tels "
-"que Blender, Max, etc.) ont besoin de garder la géométrie dans la mémoire "
-"CPU pour qu'elle puisse être éditée, réduisant ainsi la performance réelle. "
-"La vérité est qu'un modèle rendu par un moteur 3D est beaucoup plus optimal "
-"que la façon dont les DCC 3D les affichent."
+"sentiment au sujet de la performance du nombre de polygone parce que les DCC "
+"3D (tels que Blender, Max, etc.) ont besoin de garder la géométrie dans la "
+"mémoire CPU pour qu'elle puisse être éditée, réduisant ainsi la performance "
+"réelle. Les moteurs de jeu font davantage appel au GPU, ce qui leur permet "
+"de rendre de nombreux triangles de manière beaucoup plus efficace."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:117
 msgid ""
@@ -256,7 +303,6 @@ msgstr ""
 "énergie."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:122
-#, fuzzy
 msgid ""
 "To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, "
 "the same pixel on the screen being rendered more than once. Imagine a town "
@@ -267,17 +313,16 @@ msgid ""
 "increase performance (but this also increases power consumption)."
 msgstr ""
 "Pour être plus efficaces, les GPU mobiles tentent d'éviter les *overdraw*. "
-"Cela signifie que le même pixel à l'écran est rendu plus d'une fois (comme "
-"avec le calcul de l'éclairage, etc.). Imaginez une ville avec plusieurs "
-"bâtiments, les GPU ne savent pas ce qui est visible et ce qui est caché "
-"jusqu'à ce qu'ils le dessinent. Une maison peut être dessinée, puis une "
-"autre maison devant elle (le rendu a eu lieu deux fois pour le même "
-"pixel !). Les GPU PC ne s'en soucient normalement pas beaucoup et se "
-"contentent d'ajouter des processeurs de pixels au hardware pour augmenter "
-"les performances (mais cela augmente aussi la consommation d'énergie)."
+"Cela signifie que le même pixel à l'écran est rendu plus d'une fois. "
+"Imaginez une ville avec plusieurs bâtiments, les GPU ne savent pas ce qui "
+"est visible et ce qui est caché jusqu'à ce qu'ils le dessinent. Une maison "
+"peut être dessinée, puis une autre maison devant elle (le rendu a eu lieu "
+"deux fois pour le même pixel !). Les GPU PC ne s'en soucient normalement pas "
+"beaucoup et se contentent d'ajouter des processeurs de pixels au hardware "
+"pour augmenter les performances (mais cela augmente aussi la consommation "
+"d'énergie)."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:130
-#, fuzzy
 msgid ""
 "Using more power is not an option on mobile so mobile devices use a "
 "technique called \"Tile Based Rendering\" which divides the screen into a "
@@ -287,16 +332,14 @@ msgid ""
 "result, fewer vertices and triangles can be processed for drawing."
 msgstr ""
 "Sur mobile, tirer plus de puissance n'est pas une option, donc une technique "
-"appelée \"Tile Based Rendering\" est utilisée (presque chaque hardware "
-"mobile en utilise une variante), qui divise l'écran en grille. Chaque "
-"cellule conserve la liste des triangles qui y sont dessinés et les trie par "
-"profondeur pour minimiser l'*overdraw*. Cette technique améliore les "
-"performances et réduit la consommation d'énergie, mais a un impact sur les "
-"performances des sommets. Par conséquent, moins de sommets et de triangles "
-"peuvent être traités pour le dessin."
+"appelée \"Tile Based Rendering\" est utilisée, qui divise l'écran en grille. "
+"Chaque cellule conserve la liste des triangles qui y sont dessinés et les "
+"trie par profondeur pour minimiser l'*overdraw*. Cette technique améliore "
+"les performances et réduit la consommation d'énergie, mais a un impact sur "
+"les performances des sommets. Par conséquent, moins de sommets et de "
+"triangles peuvent être traités pour le dessin."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:137
-#, fuzzy
 msgid ""
 "Additionally, Tile Based Rendering struggles when there are small objects "
 "with a lot of geometry within a small portion of the screen. This forces "
@@ -304,30 +347,31 @@ msgid ""
 "considerably decreases performance as all the other cells must wait for it "
 "to complete in order to display the frame."
 msgstr ""
-"Généralement, ce n'est pas si mal, mais il y a un cas important sur mobile "
-"qui doit être évité, qui est d'avoir de petits objets avec beaucoup de "
-"géométrie dans une petite partie de l'écran. Cela oblige les GPU mobiles à "
-"mettre beaucoup de pression sur une seule cellule de l'écran, ce qui diminue "
-"considérablement les performances (car toutes les autres cellules doivent "
-"attendre qu'elle soit terminée pour pouvoir afficher la trame)."
+"De plus, le Tile Based Rendering a des difficultés quand il y a de petits "
+"objets avec beaucoup de géométrie dans une petite partie de l'écran. Cela "
+"oblige les GPU mobiles à mettre beaucoup de pression sur une seule cellule "
+"de l'écran, ce qui diminue considérablement les performances car toutes les "
+"autres cellules doivent attendre qu'elle soit terminée pour pouvoir afficher "
+"l'image."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:143
-#, fuzzy
 msgid ""
 "In summary, do not worry about vertex count on mobile, but avoid "
 "concentration of vertices in small parts of the screen. If a character, NPC, "
 "vehicle, etc. is far away (so it looks tiny), use a smaller level of detail "
 "(LOD) model."
 msgstr ""
-"Pour faire court, ne vous inquiétez pas trop des sommets sur mobile, mais "
-"évitez de concentrer les sommets sur de petites parties de l'écran. Si, par "
-"exemple, un personnage, un PNJ, un véhicule, etc. est éloigné (donc il "
+"Pour faire court, ne vous inquiétez pas trop du nombre de sommet sur mobile, "
+"mais évitez de concentrer les sommets sur de petites parties de l'écran. Si, "
+"par exemple, un personnage, un PNJ, un véhicule, etc. est éloigné (donc il "
 "semble minuscule), utilisez plutôt un modèle à plus petit niveau de détail "
 "(LOD)."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:147
 msgid "Pay attention to the additional vertex processing required when using:"
 msgstr ""
+"Faites attention au traitement supplémentaire des vertex requis lors de "
+"l'utilisation :"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:149
 msgid "Skinning (skeletal animation)"
@@ -338,13 +382,12 @@ msgid "Morphs (shape keys)"
 msgstr "Morphs (clés de forme)"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:151
-#, fuzzy
 msgid "Vertex-lit objects (common on mobile)"
 msgstr "Objets éclairés par les sommets (communs sur mobile)"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:154
 msgid "Pixel / fragment shaders - fill rate"
-msgstr ""
+msgstr "Pixel / fragment shaders - taux de remplissage"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:156
 msgid ""
@@ -355,6 +398,13 @@ msgid ""
 "of fragment shaders has exploded. Physically based rendering requires "
 "complex calculations for each fragment."
 msgstr ""
+"Contrairement au traitement des sommets, le coût des sahders de fragments a "
+"augmenté de façon spectaculaire au fil des ans. Les résolutions d'écran ont "
+"augmenté (la surface d'un écran 4K est de ``8,294,400`` pixels, contre "
+"``307,200`` pixels pour un ancien écran VGA ``640x480``, soit 27 fois la "
+"surface), mais la complexité des shaders de fragments a également explosé. "
+"Le rendu basé sur la physique nécessite des calculs complexes pour chaque "
+"fragment."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:163
 msgid ""
@@ -367,6 +417,17 @@ msgid ""
 "limited. If on the other hand there is little to no increase in fps, then "
 "your bottleneck lies elsewhere."
 msgstr ""
+"Vous pouvez vérifier assez facilement si un projet est limité en termes de "
+"taux de remplissage. Désactivez vsync pour éviter de limiter le nombre "
+"d'images par seconde, puis comparez les images par seconde lorsque vous "
+"utilisez une grande fenêtre, à celles d'une fenêtre de la taille d'un timbre-"
+"poste (vous pouvez également réduire de la même manière la taille de votre "
+"carte des ombres si vous utilisez des ombres). En général, vous constaterez "
+"que le nombre d'images par seconde augmente considérablement lorsque vous "
+"utilisez une petite fenêtre, ce qui indique que votre taux de remplissage "
+"est limité dans une certaine mesure. Si, en revanche, le nombre d'images par "
+"seconde augmente peu ou pas du tout, alors votre goulot d'étranglement est "
+"ailleurs."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:172
 msgid ""
@@ -375,15 +436,20 @@ msgid ""
 "(perhaps turn off expensive options if you are using a :ref:`SpatialMaterial "
 "<class_SpatialMaterial>`), or reducing the number and size of textures used."
 msgstr ""
+"Vous pouvez augmenter les performances dans un projet avec taux de "
+"remplissage limité en réduisant la quantité de travail que le GPU doit "
+"effectuer. Vous pouvez le faire en simplifiant le shader (peut-être en "
+"désactivant les options coûteuses si vous utilisez un :ref:`SpatialMaterial "
+"<class_SpatialMaterial>`), ou en réduisant le nombre et la taille des "
+"textures utilisées."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:177
 msgid "Consider shipping simpler shaders for mobile."
-msgstr ""
+msgstr "Envisagez d'utiliser des shaders plus simples pour les mobiles."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:180
-#, fuzzy
 msgid "Reading textures"
-msgstr "Rendu de textures dynamiques"
+msgstr "Lecture des textures"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:182
 msgid ""
@@ -394,22 +460,28 @@ msgid ""
 "Reading textures is also expensive in power terms, which is a big issue on "
 "mobiles."
 msgstr ""
+"L'autre facteur qui intervient dans les shaders de fragments est le coût de "
+"la lecture des textures. La lecture des textures est une opération coûteuse "
+"(en particulier la lecture de plusieurs textures dans un seul fragment "
+"shader), et il faut également tenir compte du fait que le filtrage peut "
+"ajouter des frais à cette opération (filtrage trilinéaire entre les mipmaps, "
+"et calcul de moyenne). La lecture des textures est également coûteuse en "
+"termes de puissance, ce qui est un gros problème sur les mobiles."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:189
 msgid "Texture compression"
 msgstr "Compression de texture"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:191
-#, fuzzy
 msgid ""
 "Godot compresses textures of 3D models when imported (VRAM compression) by "
 "default. Video RAM compression is not as efficient in size as PNG or JPG "
 "when stored, but increases performance enormously when drawing."
 msgstr ""
-"Godot propose de compresser les textures des modèles 3D lors de "
-"l'importation (compression VRAM). La compression de la RAM vidéo n'est pas "
-"aussi efficace en taille que le PNG ou le JPG lorsqu'elle est stockée, mais "
-"augmente considérablement les performances lors du dessin."
+"Godot compresse les textures des modèles 3D lorsqu'il sont (compression "
+"VRAM) par défaut. La compression Video RAM n'est pas aussi efficace en "
+"taille que PNG ou JPG lorsqu'elle est stockée, mais augmente "
+"considérablement les performances lors du dessin."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:195
 msgid ""
@@ -441,9 +513,8 @@ msgstr ""
 "(seulement opaque), gardez ceci à l'esprit."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:207
-#, fuzzy
 msgid "Post processing / shadows"
-msgstr "Arrêts de traitement."
+msgstr "Post-traitement / ombres"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:209
 msgid ""
@@ -451,17 +522,21 @@ msgid ""
 "fragment shading activity. Always test the impact of these on different "
 "hardware."
 msgstr ""
+"Les effets de post-traitement et les ombres peuvent également être coûteux "
+"en termes d'activité des shaders de fragments. Testez toujours l'impact de "
+"ces effets sur différents matériels."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:212
 msgid ""
 "Reducing the size of shadow maps can increase performance, both in terms of "
 "writing, and reading the maps."
 msgstr ""
+"La réduction de la taille des cartes des ombres peut améliorer les "
+"performances, tant en termes d'écriture que de lecture des cartes."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:216
-#, fuzzy
 msgid "Transparency / blending"
-msgstr "Tri par transparence"
+msgstr "Transparence / mélange"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:218
 msgid ""
@@ -472,12 +547,22 @@ msgid ""
 "rely on the Z-buffer and must be rendered in \"painter's order\" (i.e. from "
 "back to front) in order to look correct."
 msgstr ""
+"Les éléments transparents posent des problèmes particuliers d'efficacité de "
+"rendu. Les objets opaques (surtout en 3d) peuvent être rendus dans n'importe "
+"quel ordre et le tampon Z garantit que seuls les objets les plus visibles "
+"sont traité par un shader. Les objets transparents ou mélangés sont "
+"différents - dans la plupart des cas, ils ne peuvent pas compter sur le "
+"tampon Z et doivent être rendus dans \"l'ordre du peintre\" (c'est-à-dire de "
+"l'arrière vers l'avant) pour avoir une apparence correcte."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:225
 msgid ""
 "The transparent items are also particularly bad for fill rate, because every "
 "item has to be drawn, even if later transparent items will be drawn on top."
 msgstr ""
+"Les éléments transparents sont aussi particulièrement mauvais pour le taux "
+"de remplissage, car chaque élément doit être dessiné, même si plus tard des "
+"éléments transparents seront dessinés par-dessus."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:228
 msgid ""
@@ -486,6 +571,10 @@ msgid ""
 "fragment shader on the 'winning' fragment, the item that is at the front at "
 "a particular pixel."
 msgstr ""
+"Les objets opaques n'ont pas à faire cela. Ils peuvent généralement tirer "
+"parti du tampon Z en écrivant d'abord dans le tampon Z, puis en exécutant le "
+"shader de fragment sur le fragment 'gagnant', l'élément qui se trouve à "
+"l'avant d'un pixel particulier."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:233
 msgid ""
@@ -496,11 +585,17 @@ msgid ""
 "more complex opaque geometry can end up being faster than using transparency "
 "to \"cheat\"."
 msgstr ""
+"La transparence est particulièrement coûteuse lorsque plusieurs éléments "
+"transparents se chevauchent. Il est généralement préférable d'utiliser une "
+"zone transparente aussi petite que possible afin de minimiser ces exigences "
+"de taux de remplissage, en particulier sur les téléphones portables, où le "
+"taux de remplissage est très coûteux. En effet, dans de nombreuses "
+"situations, rendre une géométrie opaque plus complexe peut s'avérer plus "
+"rapide que d'utiliser la transparence pour \"tricher\"."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:240
-#, fuzzy
 msgid "Multi-Platform Advice"
-msgstr "Jeux multi-plateformes"
+msgstr "Conseil multi-plateforme"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:242
 msgid ""
@@ -509,6 +604,10 @@ msgid ""
 "desktop but attempting to port to mobile at the last minute is a recipe for "
 "disaster."
 msgstr ""
+"Si vous avez l'intention de publier sur plusieurs plates-formes, testez `au "
+"début` et `souvent` sur toutes vos plates-formes, en particulier mobiles. "
+"Développer un jeu sur un ordinateur de bureau puis essayer de le porter sur "
+"le mobile à la dernière minute est une recette pour le désastre."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:246
 msgid ""
@@ -517,10 +616,15 @@ msgid ""
 "may want to use the GLES2 backend for both desktop and mobile platforms "
 "where you target both."
 msgstr ""
+"En général, vous devez concevoir votre jeu pour le plus petit dénominateur "
+"commun, puis ajouter des améliorations optionnelles pour des plates-formes "
+"plus puissantes. Par exemple, vous pouvez vouloir utiliser le backend GLES2 "
+"pour les plateformes de bureau et les plateformes mobiles dans le cas où "
+"vous ciblez les deux."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:252
 msgid "Mobile / tile renderers"
-msgstr ""
+msgstr "Rendus mobile / tuile"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:254
 msgid ""
@@ -529,6 +633,12 @@ msgid ""
 "screen into regular sized tiles that fit into super fast cache memory, and "
 "reduce the reads and writes to main memory."
 msgstr ""
+"Les GPU des appareils mobiles fonctionnent de manière radicalement "
+"différente des GPU des ordinateurs de bureau. La plupart des appareils "
+"mobiles utilisent des rendus de tuiles. Ces derniers divisent l'écran en "
+"tuiles de taille normale qui s'intègrent dans une mémoire cache super rapide "
+"et réduisent les opérations de lecture et d'écriture dans la mémoire "
+"principale."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:259
 msgid ""
@@ -538,3 +648,9 @@ msgid ""
 "preserved can be very slow. Be very careful to test the performance of "
 "shaders, viewport textures and post processing."
 msgstr ""
+"Il y a cependant quelques inconvénients, car certaines techniques peuvent "
+"être beaucoup plus compliquées et coûteuses à mettre en œuvre. Les tuiles "
+"qui reposent sur les résultats du rendu de différentes tuiles ou sur la "
+"préservation des résultats d'opérations antérieures peuvent être très "
+"lentes. Soyez très attentifs à tester les performances des shaders, des "
+"textures de viewport et du post-traitement."

@@ -1,0 +1,193 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/io/data_paths.rst:4
+msgid "Data paths"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:7
+msgid "Path separators"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:9
+msgid ""
+"For the sake of supporting as many platforms as possible, Godot only accepts "
+"UNIX-style path separators (``/``). These work on all platforms, including "
+"Windows."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:13
+msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:16
+msgid "Resource path"
+msgstr "資源路徑"
+
+#: ../../docs/tutorials/io/data_paths.rst:18
+msgid ""
+"As mentioned in the :ref:`doc_command_line_tutorial`, Godot considers that a "
+"project exists in any given folder that contains a ``project.godot`` text "
+"file, even if such file is empty."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:22
+msgid ""
+"Accessing project files can be done by opening any path with ``res://`` as a "
+"base. For example, a texture located in the root of the project folder may "
+"be opened from the following path: ``res://some_texture.png``."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:27
+msgid "User path (persistent data)"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:29
+msgid ""
+"While the project is running, it is a common scenario that the resource path "
+"will be read-only, due to it being inside a package, self-contained "
+"executable, or system-wide install location."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:33
+msgid ""
+"Storing persistent files in such scenarios should be done by using the "
+"``user://`` prefix, for example: ``user://game_save.txt``."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:36
+msgid ""
+"On some devices (for example, mobile and consoles), this path is unique to "
+"the project. On desktop operating systems, the engine uses the typical ``~/."
+"local/share/godot/app_userdata/Name`` on macOS and Linux, and ``%APPDATA%/"
+"Name`` on Windows. ``Name`` is taken from the application name defined in "
+"the Project Settings, but it can be overridden on a per-platform basis "
+"using :ref:`feature tags <doc_feature_tags>`."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:45
+msgid "Editor data paths"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:47
+msgid ""
+"The editor uses different paths for user data, user settings and cache "
+"depending on the platform. By default, these paths are:"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+msgid "Type"
+msgstr "型別"
+
+#: ../../docs/tutorials/io/data_paths.rst:51
+msgid "Location"
+msgstr "Location - 位置"
+
+#: ../../docs/tutorials/io/data_paths.rst:53
+msgid "User data"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:53
+#: ../../docs/tutorials/io/data_paths.rst:57
+msgid "Windows: ``%APPDATA%\\Godot\\``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:54
+#: ../../docs/tutorials/io/data_paths.rst:58
+msgid "macOS: ``~/Library/Application Support/Godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:55
+msgid "Linux: ``~/.local/share/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:57
+#, fuzzy
+msgid "User settings"
+msgstr "測試"
+
+#: ../../docs/tutorials/io/data_paths.rst:59
+msgid "Linux: ``~/.config/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:61
+msgid "Cache"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:61
+msgid "Windows: ``%TEMP%\\Godot\\``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:62
+msgid "macOS: ``~/Library/Caches/Godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:63
+msgid "Linux: ``~/.cache/godot/``"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:66
+msgid "**User data** contains export templates and project-specific data."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:67
+msgid ""
+"**User settings** contains editor settings, text editor themes, script "
+"templates, etc."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:69
+msgid ""
+"**Cache** contains temporary data. It can safely be removed when Godot is "
+"closed."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:72
+msgid ""
+"Godot complies with the `XDG Base Directory Specification <https://"
+"specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html>`__ on "
+"all platforms. Environment variables can be overridden as per the "
+"specification to change the editor (and project) data paths."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:77
+msgid ""
+"If you use `Godot packaged as a Flatpak <https://flathub.org/apps/details/"
+"org.godotengine.Godot>`__, the editor data paths will be located in "
+"subfolders in ``~/.var/app/org.godotengine.Godot/``."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:85
+msgid "Self-contained mode"
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:87
+msgid ""
+"If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
+"the editor binary, Godot will enable *self-contained mode*. This will make "
+"Godot write all user data to a directory named ``editor_data/`` in the same "
+"directory as the editor binary. This is useful to create a \"portable\" "
+"installation, which can then be placed on an USB drive."
+msgstr ""
+
+#: ../../docs/tutorials/io/data_paths.rst:93
+msgid ""
+"The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
+"uses self-contained mode by default."
+msgstr ""

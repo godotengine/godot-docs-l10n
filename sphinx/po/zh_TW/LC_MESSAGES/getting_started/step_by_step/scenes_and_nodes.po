@@ -1,0 +1,417 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
+msgid "Scenes and nodes"
+msgstr "場景與節點"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
+msgid "Introduction"
+msgstr "簡介"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
+msgid ""
+"Imagine for a second that you are not a game developer anymore. Instead, "
+"you're a chef! Change your hipster outfit for a toque and a double breasted "
+"jacket. Now, instead of making games, you create new and delicious recipes "
+"for your guests."
+msgstr ""
+"稍微想像一下自己不再是遊戲開發者，而成為一名廚師了！把時髦的穿著換成廚師帽跟"
+"雙釦夾克。現在，不做遊戲了，來為客人們設計一道全新的美味料理食譜。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
+msgid ""
+"So, how does a chef create a recipe? Recipes are divided into two sections: "
+"the first is the ingredients and the second is the instructions to prepare "
+"it. This way, anyone can follow the recipe and savor your magnificent "
+"creation."
+msgstr ""
+"那麼，廚師是怎麼想出食譜的呢？食譜可以分成兩個部分：首先是材料，再來是說明如"
+"何處理食材。這樣一來，人人都能照著食譜來做出這道卓越的料理。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
+msgid ""
+"Making games in Godot feels pretty much the same way. Using the engine feels "
+"like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
+"full of fresh ingredients with which to cook."
+msgstr ""
+"在 Godot 裡製作遊戲也很像做菜。使用 Godot 就像在廚房裡一樣。而這個廚房裡， **"
+"節點** 就像是一台冰箱，裝滿了新鮮食材準備好要進行料理。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
+msgid ""
+"There are many types of nodes. Some show images, others play sound, other "
+"nodes display 3D models, etc. There are dozens of them."
+msgstr ""
+"節點有很多種，有的節點顯示圖片，有的節點播放聲音，還有的節點顯示 3D 模型，總"
+"共還有幾十種的節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
+msgid "Nodes"
+msgstr "節點"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
+msgid ""
+"But let's start with the basics. Nodes are fundamental building blocks for "
+"creating a game. As mentioned above, a node can perform a variety of "
+"specialized functions. However, any given node always has the following "
+"attributes:"
+msgstr ""
+"但，讓我們先從基本的開始。節點就是用來創作遊戲的基本元素。就像剛才提到的，節"
+"點可以展現各種各樣特定的功能。然而，任何一個節點都有下列屬性："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
+msgid "It has a name."
+msgstr "節點有名稱。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
+msgid "It has editable properties."
+msgstr "節點有可編輯的屬性。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
+msgid "It can receive a callback to process every frame."
+msgstr "節點能接收用來處理每一幀的回呼。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
+msgid "It can be extended (to have more functions)."
+msgstr "可以擴充節點（讓節點有更多功能）。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
+msgid "It can be added to another node as a child."
+msgstr "可以新增節點到另一個節點，變成另一個節點的子節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
+msgid ""
+"The last one is important. Nodes can have other nodes as children. When "
+"arranged in this way, the nodes become a **tree**."
+msgstr ""
+"最後一點很重要：節點可以有其他節點作為子節點。用這種方式編排的時候，節點就變"
+"成了 **樹狀** 的。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
+msgid ""
+"In Godot, the ability to arrange nodes in this way creates a powerful tool "
+"for organizing projects. Since different nodes have different functions, "
+"combining them allows for the creation of more complex functions."
+msgstr ""
+"在 Godot 中以樹狀形式編排節點就是組織專案的強力道具。因為不同的節點有不同的功"
+"能，將這些節點組合起來就能創造出更複雜的功能。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
+msgid ""
+"Don't worry if this doesn't click yet. We will continue to explore this over "
+"the next few sections. The most important fact to remember for now is that "
+"nodes exist and can be arranged this way."
+msgstr ""
+"如果你還不懂，別擔心，接下來幾個章節我們會繼續深入瞭解。只要記得最重要的是："
+"有個東西叫節點，然後能用樹狀形式排列這些節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
+msgid "Scenes"
+msgstr "場景"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
+msgid ""
+"Now that the concept of nodes has been defined, the next logical step is to "
+"explain what a Scene is."
+msgstr "現在我們已經知道節點的概念了，那麼下一個該說明的就是場景了。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
+msgid ""
+"A scene is composed of a group of nodes organized hierarchically (in tree "
+"fashion). Furthermore, a scene:"
+msgstr ""
+"場景是有一組由一組節點所組成的，這些節點以樹狀結構排列。然後，場景還…："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
+msgid "always has one root node."
+msgstr "場景永遠都有一個根節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
+msgid "can be saved to disk and loaded back."
+msgstr "場景可以保存在硬碟上，之後可以再讀取進來。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
+msgid "can be *instanced* (more on that later)."
+msgstr "場景可以被 **實體化** (稍後會再說明)。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
+msgid ""
+"Running a game means running a scene. A project can contain several scenes, "
+"but for the game to start, one of them must be selected as the main scene."
+msgstr ""
+"執行遊戲，就是執行場景。一個專案可以有多個場景，但要開始遊戲則必須要先把其中"
+"一個場景設為主場景。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
+msgid ""
+"Basically, the Godot editor is a **scene editor**. It has plenty of tools "
+"for editing 2D and 3D scenes as well as user interfaces, but the editor is "
+"based on the concept of editing a scene and the nodes that compose it."
+msgstr ""
+"基本上來說，Godot 編輯器就是一個 **場景編輯器**，有著各種能夠編輯 2D 與 3D 場"
+"景以及使用者介面的工具。但編輯器基本上就只是用來編輯場景以及編輯構成場景的節"
+"點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
+msgid "Editor"
+msgstr "編輯器"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
+msgid ""
+"Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
+"create a new one. This will open the Godot editor:"
+msgstr ""
+"打開在 :ref:`doc_intro_to_the_editor_interface` 建立的專案或是建立一個新專"
+"案。這樣一來就會打開 Godot 編輯器："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:84
+msgid ""
+"As mentioned before, making games in Godot feels like being in a kitchen, so "
+"let's open the refrigerator and add some fresh nodes to the project. We'll "
+"begin with a \"Hello World\" message that we'll put on the screen."
+msgstr ""
+"就像剛才說的，在 Godot 製作遊戲就像在廚房裡一樣。讓我們打開冰箱往專案裡加一點"
+"新鮮的節點吧！我們先從在螢幕上顯示「Hellow World」開始。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:89
+msgid ""
+"To do this we need to add a Label node. Press the \"Add Child Node\" button "
+"at the top left of the scene dock (the icon represents a plus symbol). This "
+"button is the main way to add new nodes to a scene, and will always add the "
+"chosen node as a child of the currently selected node (or, in an empty "
+"scene, as the \"root\" node)."
+msgstr ""
+"我們需要 Label (標籤) 節點。點擊場景 Dock 左上角的 [新增子節點] 按鈕 (加號圖"
+"示)。這個按鈕是往場景裡新增節點的主要方法，這個按鈕會把選擇的節點新增成目前節"
+"點的子節點，在空白的場景中則會新增為「根」節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
+#, fuzzy
+msgid ""
+"In an empty scene (without root node), the scene dock shows several options "
+"to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
+"\"3D Scene\" adds a Spatial node, \"User Interface\" adds a Control node, "
+"and \"Other Node\" which lets you select any node (so it is equivalent to "
+"pressing the \"Add Child Node\" button). You can also press the star-shaped "
+"icon to toggle the display of your favorited nodes."
+msgstr ""
+"在空白的場景中 (也就是沒有根節點的場景)，場景 Dock 會顯示好幾個選項，用來快速"
+"新增根節點到場景中。[2D 場景] 可以新增 Node2D 節點，[3D 場景] 可以新增 "
+"Spatial 節點，[使用者介面] 會新增 Control 節點，[自定節點] 可以選擇任何一種節"
+"點 (就跟點擊「新增子節點」的效果一樣)。也可以點擊星形的圖示來顯示或關閉我的最"
+"愛裡的節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
+msgid ""
+"Note that these presets are here for convenience and are not mandatory for "
+"the different types of scenes. Not every 3D scene needs a Spatial node as "
+"its root node, likewise not every GUI or 2D scene needs a Control node or "
+"Node2D as their root node."
+msgstr ""
+"這些預設選項只是為了方便而存在的，並非各類場景強制要求的：並不是所有 3D 場景"
+"都需要以 Spatial 作為根節點。同樣地，並不是所有圖形界面或 2D 節點都需要以 "
+"Control 或 Node2D 作為根節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
+#, fuzzy
+msgid ""
+"Now, to add a label node to this scene you can click on the Other Node "
+"button or the Add Node button at the top. In scenes that aren't empty you "
+"use the add node button to create every child node."
+msgstr ""
+"現在，我們可以點擊 [自定節點] 按鈕或畫面上方的 [新增節點] 按鈕來新增 Label 節"
+"點。如果場景不是空白的話，就得用新增節點按鈕來新增子節點。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
+msgid ""
+"This will open the Create Node dialog, showing the long list of nodes that "
+"can be created:"
+msgstr ""
+"如此一來會打開新增節點對話框，會顯示一串長長的列表，包含了所有可以建立的節"
+"點："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:121
+msgid ""
+"From there, select the \"Label\" node first. Searching for it is probably "
+"the fastest way:"
+msgstr "這裡我們先選擇「Label」節點。最快的方法大概就是直接用搜尋的："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
+msgid "And finally, create the Label! A lot happens when Create is pressed:"
+msgstr "最後，建立 Label！當按下 [建立] 按鈕的時候會發生許多事情："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
+msgid ""
+"First of all, the scene changes to the 2D editor (because Label is a 2D Node "
+"type), and the Label appears, selected, at the top left corner of the "
+"viewport."
+msgstr ""
+"首先，場景變成了 2D 編輯器 (因為 Label 是 2D 節點型別)，然後 Label 以選中的狀"
+"態出現在畫面檢視區的左上角。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
+msgid ""
+"The node appears in the scene tree editor in the Scene dock, and the label "
+"properties appear in the Inspector dock."
+msgstr ""
+"節點會顯示在場景 Dock 中的場景樹編輯器中，Label 的屬性會顯示在屬性面板 Dock "
+"裡。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
+msgid ""
+"The next step will be to change the \"Text\" Property of the label. Let's "
+"change it to \"Hello World\":"
+msgstr "下一步我們要修改標籤的「Text (文字)」屬性。來把它改成「Hello World」："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+msgid ""
+"Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
+"top bar (or hit :kbd:`F6`):"
+msgstr ""
+"好了，現在可以執行場景了！點擊上方工具列的 **播放場景** 按鈕 (或是按 :kbd:"
+"`F6`)："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:146
+msgid "Aaaand... Oops."
+msgstr "然後…… 哎呀。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
+msgid ""
+"Scenes need to be saved to be run, so save the scene to something like Hello."
+"tscn in Scene -> Save:"
+msgstr ""
+"場景必須先保存才能執行，所以先到 [場景] -> [保存] 把場景保存成 Hello.tscn 之"
+"類的檔案："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:155
+msgid ""
+"And here's when something funny happens. The file dialog is a special file "
+"dialog, and only allows you to save inside the project. The project root is "
+"``res://`` which means \"resource path\". This means that files can only be "
+"saved inside the project. For the future, when doing file operations in "
+"Godot, remember that ``res://`` is the resource path, and no matter the "
+"platform or install location, it is the way to locate where resource files "
+"are from inside the game."
+msgstr ""
+"這裡就是有趣的部分了。檔案對話框是一種特別的對話框，只能把東西保存在專案裡"
+"面。專案的根目錄是 ``res://``，代表「資源路徑 (Resource Path)」。這表示檔案只"
+"能被保存在專案裡面。當以後要在 Godot 裡進行檔案操作的時候，請記得 ``res://`` "
+"就代表資源路徑，而不需要管平台或安裝的位置，這也是在遊戲裡找到資源檔案的方"
+"法。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
+msgid ""
+"After saving the scene and pressing run scene again, the \"Hello World\" "
+"demo should finally execute:"
+msgstr "保存場景後再點擊一次執行場景，「Hello World」範例應該終於執行了："
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+msgid "Success!"
+msgstr "成功！"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
+msgid ""
+"If this doesn't immediately work and you have a hiDPI display on at least "
+"one of your monitors, go to **Project → Project Settings → Display → "
+"Window** then enable **Allow Hidpi** under **Dpi**."
+msgstr ""
+"如果沒有馬上運作，而且至少有一部 hiDPI 顯示器時，請前往 **[專案] → [專案設"
+"定] → [Display] → [Window]** 然後啟用 **Dpi** 底下的 **Allow Hidpi**。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
+msgid "Configuring the project"
+msgstr "設定專案"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
+msgid ""
+"Ok, it's time to configure the project. Right now, the only way to run "
+"something is to execute the current scene. Projects, however, may have "
+"several scenes, so one of them must be set as the main scene. This is the "
+"scene that will be loaded any time the project is run."
+msgstr ""
+"好了，該來設定專案了。目前，要執行某樣東西的唯一方法就是執行場景。然而，專案"
+"可能有很多個場景，所以我們必須先將其中一個場景設為主場景。這個場景會在每次執"
+"行專案的時候載入。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
+msgid ""
+"These settings are all stored in a project.godot file, which is a plaintext "
+"file in win.ini format (for easy editing). There are dozens of settings that "
+"you can change in this file to alter how a project executes. To simplify "
+"this process, Godot provides a project settings dialog, which acts as a sort "
+"of frontend to editing a project.godot file."
+msgstr ""
+"這些設定都會保存於 project.godot 檔案中，該檔案為 win.ini 格式的純文字檔 (才"
+"能輕鬆編輯他)。這裡面有很多設定可以修改，可以用來改變專案執行的方式。為了簡化"
+"編輯 project.godot 的流程，Godot 提供了一個專案設定對話框，就是編輯 project."
+"godot 檔案的前端。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
+msgid "To access that dialog, select Project -> Project Settings. Try it now."
+msgstr "選擇 [專案] -> [專案設定] 來打開這個對話框。現在就試試吧。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
+msgid ""
+"Once the window opens, let's select a main scene. Locate the `Application/"
+"Run/Main Scene` property and click on it to select 'Hello.tscn'."
+msgstr ""
+"視窗打開以後，先來選擇主場景。到 **Application/Run/Main Scene** 屬性，然後點"
+"擊並選擇「Hello.tscn」。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+msgid ""
+"Now, with this change, when you press the regular Play button (or F5), this "
+"scene will run, no matter which scene is actively being edited."
+msgstr ""
+"改了設定之後，只要按下平常使用的執行按鈕 (或是 F5)，不論現在正在編輯哪個場"
+"景，都會執行剛才設定的主場景。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:203
+msgid ""
+"The project settings dialog provides a lot of options that can be saved to a "
+"project.godot file and shows their default values. If you change a value, a "
+"tick is marked to the left of its name. This means that the property will be "
+"saved to the project.godot file and remembered."
+msgstr ""
+"專案設定對話框提供了許多可以被保存為 project.godot 的選項，對話框裡面也會顯示"
+"預設值。如果你更改了其中一個數值的話，名稱左邊會有一個勾勾，表示選項會被保存"
+"到 project.godot 並被記住。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:208
+msgid ""
+"As a side note, it is also possible to add custom configuration options and "
+"read them in at run-time using the :ref:`ProjectSettings "
+"<class_ProjectSettings>` singleton."
+msgstr ""
+"另外，也可以新增自定組態設定選項，然後在執行的時候使用 :ref:`ProjectSettings "
+"<class_ProjectSettings>` 單例讀取出來。"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
+msgid "To be continued..."
+msgstr "下回待續…"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:214
+msgid ""
+"This tutorial talked about \"scenes and nodes\", but so far there has been "
+"only *one* scene and *one* node! Don't worry, the next tutorial will expand "
+"on that..."
+msgstr ""
+"本教學討論了有關「場景與節點」的部分，但目前我們還只有 **一個** 節點與 **一個"
+"** 場景！別擔心，下一個章節會繼續增加的…"

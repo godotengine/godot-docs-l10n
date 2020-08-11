@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,18 +245,16 @@ msgid "Implemented in ``platform/iphone/game_center.mm``."
 msgstr "Implémenté dans ``platform/iphone/game_center.mm``."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:178
-#, fuzzy
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has 9 methods:"
 msgstr ""
 "L'API du Game Center est disponible via le singleton \"GameCenter\". Elle "
-"comporte 8 méthodes :"
+"comporte 9 méthodes :"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
-#, fuzzy
 msgid "``Error authenticate();``"
-msgstr "``bool is_authenticated();``"
+msgstr "``Error authenticate();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:182
 msgid "``bool is_authenticated();``"
@@ -295,13 +293,12 @@ msgid "plus the standard pending event interface."
 msgstr "plus l'interface standard d'événement en attente."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:194
-#, fuzzy
 msgid "authenticate"
-msgstr "``bool is_authenticated();``"
+msgstr "authentifier"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:196
 msgid "Authenticates a user in Game Center."
-msgstr ""
+msgstr "Authentifie un utilisateur dans le Game Center."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:225
 msgid "post_score"

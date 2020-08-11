@@ -1,0 +1,127 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
+msgid "Visual Studio"
+msgstr "Visual Studio"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
+msgid ""
+"`Visual Studio Community <https://visualstudio.microsoft.com>`__ is a "
+"Windows-only IDE by `Microsoft <https://microsoft.com>`_ that's free for non-"
+"commercial use. It has many useful features, such as memory view, "
+"performance view, source control and more."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
+msgid "Importing the project"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:14
+msgid ""
+"Visual Studio requires a solution file to work on a project. While Godot "
+"does not come with the solution file, it can be generated using SCons."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:17
+msgid ""
+"Navigate to the Godot root folder and open a Command Prompt or PowerShell "
+"window."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:18
+msgid "Run ``scons platform=windows vsproj=yes`` to generate the solution."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:19
+msgid ""
+"You can now open the project by double-clicking on the ``godot.sln`` in the "
+"project root or by using the **Open a project or solution** option inside of "
+"the Visual Studio."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:21
+msgid "Use the **Build** top menu to build the project."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:23
+msgid ""
+"Visual Studio must be configured with the C++ package. It can be selected in "
+"the intaller:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
+msgid "Debugging the project"
+msgstr "Ladění projektu"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:32
+msgid ""
+"Visual Studio features a powerful debugger. This allows the user to examine "
+"Godot's source code, stop at specific points in the code, inspect the "
+"current execution context, and make live changes to the codebase."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:36
+msgid ""
+"You can launch the project with the debugger attached using the **Debug > "
+"Start Debugging** option from the top menu. However, unless you want to "
+"debug the project manager specifically, you'd need to configure debugging "
+"options first. This is due to the fact that when the Godot project manager "
+"opens a project, the initial process is terminated and the debugger gets "
+"detached."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:41
+msgid ""
+"To configure the launch options to use with the debugger use **Project > "
+"Properties** from the top menu:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:47
+msgid ""
+"Open the **Debugging** section and under **Command Arguments** add two new "
+"arguments: the ``-e`` flag opens the editor instead of the project manager, "
+"and the ``--path`` argument tells the executable to open the specified "
+"project (must be provided as an *absolute* path to the project root, not the "
+"``project.godot`` file)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
+msgid ""
+"To learn more about command line arguments, refer to the :ref:`command line "
+"tutorial <doc_command_line_tutorial>`."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:58
+msgid ""
+"Even if you start the project without a debugger attached it can still be "
+"connected to the running process using **Debug > Attach to Process...** menu."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:61
+msgid ""
+"To check that everything is working, put a breakpoint in ``main.cpp`` and "
+"press :kbd:`F5` to start debugging."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""

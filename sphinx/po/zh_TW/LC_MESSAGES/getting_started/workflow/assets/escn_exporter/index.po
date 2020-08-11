@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
+msgid "Blender ESCN exporter"
+msgstr "Blender ESCN 匯出工具"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
+msgid ""
+"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
+"\", which can be downloaded here: https://github.com/godotengine/godot-"
+"blender-exporter"
+msgstr ""
+"本章節設計「Godot Blender Exporter」Blender 外掛，可於此處下載： https://"
+"github.com/godotengine/godot-blender-exporter"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
+msgid ""
+"This plugin can be used to export Blender scenes in a Godot-specific scene "
+"format called ESCN, which is similar to TSCN (text format) but will be "
+"imported as binary SCN for performance."
+msgstr ""
+"該外掛可用來匯出 Blender 場景至 Godot 專有的場景格式，ESCN。該格式與 TSCN (文"
+"字格式) 類似，但會以二進位 SCN 匯入，以提高效能。"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
+msgid "Details on exporting"
+msgstr "匯入詳情"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
+msgid "Disabling specific objects"
+msgstr "禁用特定物件"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
+msgid ""
+"Sometimes you don't want some objects exported (e.g. high-res models used "
+"for baking). An object will not be exported if it is not rendered in the "
+"scene. This can be set in the outliner:"
+msgstr ""
+"有時會需要不讓某些物件匯出 (如用於烘焙的高解析模型)。若物件未於場景中算繪則不"
+"會匯出。可於大綱管理器中設定："
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
+msgid ""
+"Objects hidden in the viewport will be exported, but will be hidden in the "
+"Godot scene."
+msgstr "於視接口中隱藏的物件也會被匯出，但會於 Godot 中場景中隱藏。"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
+msgid "Build pipeline integration"
+msgstr "建構管線整合"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
+msgid ""
+"If you have hundreds of model files, you don't want your artists to waste "
+"time manually exporting their blend files. To combat this, the exporter "
+"provides a python function ``io_scene_godot.export(out_file_path)`` that can "
+"be called to export a file. This allows easy integration with other build "
+"systems. An example Makefile and python script that exports all the blends "
+"in a directory are present in the Godot-Blender-exporter repository."
+msgstr ""
+"若有數百個模型檔時，我們會需要避免讓藝術家浪費時間在匯出 Blend 檔案。為此，匯"
+"出工具中有一個 Python 函式 ``io_scene_godot.export(輸出檔案路徑)`` 可用於呼叫"
+"來匯出檔案。該函式能用來與其他建構系統整合。Godot-Blender-exporter 儲存庫中有"
+"提供一個範例 Makefile 與 python 腳本，可匯出一資料夾中所有的 Blend 檔案。"

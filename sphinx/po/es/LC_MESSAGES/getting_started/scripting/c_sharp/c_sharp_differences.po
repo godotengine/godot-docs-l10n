@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,7 +233,8 @@ msgstr ""
 "definición de nombre será usado para identificar la señal."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-msgid "See also: :ref:`c_sharp_signals`"
+#, fuzzy
+msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr "Ver también: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
@@ -356,10 +357,10 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
-"Las estructuras no pueden tener constructores sin parámetros en C#, por lo "
-"tanto ``new Transform2D()`` inicializa todos los miembros originales a su "
-"valor por defecto. Por favor, utilice ``Transform2D.Identity`` para el "
-"equivalente a ``Transform2D()`` en GDScript y C++."
+"Las estructuras no pueden tener constructores sin parámetros en C#. Por lo "
+"tanto, ``new Transform2D()`` inicializa todos los miembros primitivos a su "
+"valor por defecto. Por favor, usa ``Transform2D.Identity`` para el "
+"equivalente de ``Transform2D()`` en GDScript y C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
 msgid ""

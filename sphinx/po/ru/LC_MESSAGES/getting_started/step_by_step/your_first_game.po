@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1204,11 +1204,11 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
-"Финальная часть нашей игры - UI: интерфейс для отображения таких элементов, "
-"как игровой счет, сообщение \"игра окончена\" и кнопка перезапуска. Создайте "
-"новую сцену и добавьте :ref:`Canvas Layer <Class_canvas Layer>` узел с "
-"именем``HUD``. \"HUD\" означает \"heads-up display\", информационный "
-"дисплей, отображающийся поверх игры."
+"Последняя часть, в которой нуждается наша игра, - это UI: интерфейс для "
+"отображения таких вещей, как игровой счет, сообщение \"игра окончена\" и "
+"кнопка перезапуска. Создайте новую сцену и добавьте узел :ref:`CanvasLayer "
+"<class_CanvasLayer>` с именем ``HUD``. \"HUD\" означает \"heads-up display"
+"\", информационный дисплей, отображающийся поверх игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid ""
@@ -1216,9 +1216,10 @@ msgid ""
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
-"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам изображать "
-"элементы UI поверх всей игры. Это значит, что отображаемая информация не "
-"перекрывается никакими игровыми элементами, такими как игрок или мобы."
+"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам прорисовывать "
+"элементы нашего UI на слое поверх всей остальной игры, поэтому отображаемая "
+"информация не перекрывается никакими игровыми элементами, такими как игрок "
+"или мобы."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "The HUD needs to display the following information:"
@@ -1234,7 +1235,7 @@ msgstr "Сообщение, например \"Game Over\" или \"Get Ready!\"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:959
 msgid "A \"Start\" button to begin the game."
-msgstr "Кнопка \"Start\" чтобы начать игру."
+msgstr "Кнопка \"Start\", чтобы начать игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 msgid ""
@@ -1242,30 +1243,29 @@ msgid ""
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
-"Основной узел для элементов пользовательского интерфейса :ref:`Control "
-"<class_Control>`. Чтобы создать UI, мы будем использовать два вида :ref:"
-"`Control <class_Control>` nodes: :ref:`Label <class_Label>` и :ref:`Button "
-"<class_Button>`."
+"Основной узел для элементов UI — это :ref:`Control <class_Control>`. Чтобы "
+"создать наш UI, мы будем использовать два типа узлов :ref:`Control "
+"<class_Control>`: :ref:`Label <class_Label>` и :ref:`Button <class_Button>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr "Создайте следующее в качестве потомка узла '' HUD'':"
+msgstr "Создайте следующие узлы в качестве потомков узла '' HUD'':"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
-msgstr ":ref:`Label<class_Label>` названный ``ScoreLabel``."
+msgstr ":ref:`Label <class_Label>` с именем ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ":ref:`Label <class_Label>` named ``Message``."
-msgstr ":ref:`Label <class_Label>` названный ``Message``."
+msgstr ":ref:`Label <class_Label>` с именем ``Message``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ":ref:`Кнопка <class_Button>` с именем ``StartButton``."
+msgstr ":ref:`Button <class_Button>` с именем ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
-msgstr ":ref:`Timer <class_Timer>` названный ``MessageTimer``."
+msgstr ":ref:`Timer <class_Timer>` с именем ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ""
@@ -1274,15 +1274,14 @@ msgid ""
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
-"Нажмите на ``ScoreLabel`` и введите число в поле ``Text`` в Инспекторе "
-"(Inspector). Стандартный шрифт для узлов ``Control`` мал и плохо "
-"масштабируется. Существует файл шрифта, включенный в игровые ресурсы под "
-"названием \"Xolonium-Regular.ttf\". Чтобы использовать этот шрифт, выполните "
-"следующие действия:"
+"Нажмите на ``ScoreLabel`` и введите число в поле ``Text`` в Инспекторе. "
+"Стандартный шрифт для узлов ``Control`` мал и плохо масштабируется. В "
+"ресурсы игры включен файл шрифта под названием \"Xolonium-Regular.ttf\". "
+"Чтобы использовать этот шрифт, сделайте следующее:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:977
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
-msgstr "Под \"Custom Fonts\", выберите \"New DynamicFont\""
+msgstr "Под \"Custom Fonts\" выберите \"Новый DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:981
 msgid ""
@@ -1290,9 +1289,9 @@ msgid ""
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
-"Нажмите на только что добавленный \"DynamicFont\", и в разделе \"Font/Font "
-"Data\", выберите \"Load\" и выберите файл \"Xolonium-Regular.ttf\" . "
-"Необходимо также установить размер шрифта ``Size``. Значение ``64`` хорошо "
+"Нажмите на только что добавленный \"DynamicFont\" и в разделе \"Font/Font "
+"Data\" выберите \"Загрузить\" и выберите файл \"Xolonium-Regular.ttf\" . "
+"Также вы должны установить размер шрифта ``Size``. Значение ``64`` хорошо "
 "подходит."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:987
@@ -1301,9 +1300,9 @@ msgid ""
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
-"Как только вы проделали это с ``ScoreLabel``, вы можете нажать стрелку вниз "
-"рядом со свойством DynamicFont, выбрать \"Copy\", а затем выбрать \"Paste\" "
-"его в том же месте на двух других узлах Control."
+"Как только вы проделали это с ``ScoreLabel``, можете нажать стрелку вниз "
+"рядом со свойством DynamicFont и выбрать \"Копировать\", а затем \"Вставить"
+"\" его в том же месте на двух других узлах Control."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:991
 msgid ""
@@ -1314,29 +1313,28 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
-"**Якоря и поля:** Узлы ``Control`` имеют не только положение и размер, но "
-"также привязки(якоря) и поля. Якоря определяют начало координат - опорную "
-"точку для ребер узла. Поля обновляются автоматически при перемещении или "
-"изменении размера узла управления. Они представляют расстояние от краев "
-"``Control`` - узла до его якоря. См.: ref: "
-"`doc_design_interfaces_with_the_control_nodes` для получения более подробной "
-"информации."
+"**Якоря и Отступы:** Узлы ``Control`` имеют не только положение и размер, но "
+"также якоря и отступы. Якоря определяют начало координат - опорную точку для "
+"краев узла. Отступы обновляются автоматически при перемещении или изменении "
+"размера узла управления. Они представляют расстояние от краев ``Control``-"
+"узла до его якоря. См. :ref:`doc_design_interfaces_with_the_control_nodes` "
+"для получения более подробной информации."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:998
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"Организуйте узлы, как показано ниже. Нажмите кнопку \"Layout (Макет)\", "
-"чтобы задать макет для узла Control :"
+"Организуйте узлы, как показано ниже. Нажмите кнопку \"Макет\", чтобы задать "
+"макет для узла Control:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1003
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr ""
-"Можно перетаскивать узлы, чтобы разместить их вручную, или для более точного "
-"размещения, используйте следующие параметры:"
+"Вы можете перетаскивать узлы, размещая их вручную, либо используйте "
+"следующие параметры для более точного размещения:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1007
 msgid "ScoreLabel"
@@ -1344,7 +1342,7 @@ msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"Top Wide\""
-msgstr "*Макет* : \"Top Wide (Вверху вшырь)\""
+msgstr "*Макет* : \"Сверху по всей ширине\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
 msgid "*Text* : ``0``"
@@ -1353,23 +1351,23 @@ msgstr "*Text* : ``0``"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Align* : \"Center\""
-msgstr "*Выравнивание* : \"Центр\""
+msgstr "*Align* : \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
 msgid "Message"
-msgstr "Сообщение"
+msgstr "Message"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "``Макет``: \"HCenter Wide\""
+msgstr "*Макет*: \"По центру по всей ширине\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "Text: ``Уворачивайся от крипов!``"
+msgstr "*Text*: ``Уворачивайся от крипов!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Autowrap* : \"On\""
-msgstr "*Авто-перенос* : \"Включить\""
+msgstr "*Autowrap* : \"Вкл\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "StartButton"
@@ -1377,31 +1375,31 @@ msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "*Text* : ``Start``"
-msgstr "*Текст* : ``Start``"
+msgstr "*Text* : ``Старт``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid "*Layout* : \"Center Bottom\""
-msgstr "``Слой``: \"Center Bottom\""
+msgstr "*Макет*: \"Внизу посередине\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Margin* :"
-msgstr "*Отступ* :"
+msgstr "*Margin* :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid "Top: ``-200``"
-msgstr "Cверху: ``- 200``"
+msgstr "Top: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
 msgid "Bottom: ``-100``"
-msgstr "Внизу: ``-100``"
+msgstr "Bottom: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
 msgstr ""
-"В ``MessageTimer``установите параметр ``Wait Time`` на ``2``, а параметр "
-"``One Shot`` на значение \"On\"."
+"В ``MessageTimer`` установите параметр ``Wait Time`` на ``2``, а параметр "
+"``One Shot`` на значение \"Вкл\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid "Now add this script to ``HUD``:"
@@ -1418,8 +1416,8 @@ msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
 msgstr ""
-"Эта функция вызывается, когда мы хотим временно отобразить сообщение, "
-"например \"Get Ready\"."
+"Эта функция вызывается, когда мы хотим временно отобразить сообщение, такое "
+"как \"Приготовьтесь\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
 msgid ""
@@ -1427,9 +1425,9 @@ msgid ""
 "for 2 seconds, then return to the title screen and, after a brief pause, "
 "show the \"Start\" button."
 msgstr ""
-"Эта функция вызывается, когда игрок проигрывает. Она будет показывать "
-"надпись \"Game Over\" на 2 секунды, затем будет происходить возврат к "
-"основному экрану и появится кнопка \"Start\"."
+"Эта функция вызывается, когда игрок проигрывает. Она покажет надпись \"Game "
+"Over\" на 2 секунды, затем произойдет возврат к основному экрану, и после "
+"короткой паузы появится кнопка \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
 msgid ""
@@ -1439,10 +1437,10 @@ msgid ""
 "time before showing the \"Start\" button."
 msgstr ""
 "Если вам нужно сделать паузу на короткое время, то альтернативой "
-"использованию узла Timer является использование функции SceneTree's "
-"``create_timer()``. Это может быть очень полезно для задержки, как, "
-"например, в вышеприведенном коде, где мы хотим подождать немного времени, "
-"прежде чем показать кнопку \"Start\"."
+"использованию узла Timer является использование функции SceneTree "
+"``create_timer()``. Может быть очень полезно добавлять задержки наподобие "
+"таких, как в вышеприведенном коде, где нам хотелось бы подождать немного "
+"времени, прежде чем показывать кнопку \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -1455,12 +1453,12 @@ msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
-"Соедините \"timeout()\" сигнал из \"MessageTimer\" и сигнал \"pressed()\" из "
-"\"StartButton\":"
+"Присоедините сигнал ``timeout()`` из ``MessageTimer`` и сигнал ``pressed()`` "
+"из ``StartButton`` и добавьте следующий код к новым функциям:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid "Connecting HUD to Main"
-msgstr "Подключение к главной HUD"
+msgstr "Подключение HUD к Main"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
 msgid ""
@@ -1468,17 +1466,18 @@ msgid ""
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
-"Закончив создание ``HUD`` сцены, сохраните её и вернитесь к ``Main``.``HUD`` "
-"сцену поместите в нижнюю часть дерева ``Main``. Дерево должно выглядеть так, "
-"поэтому убедитесь, что вы ничего не пропустили:"
+"Теперь, когда мы закончили создание сцены ``HUD``, вернитесь к ``Main``. "
+"Инстанцируйте сцену ``HUD`` в ``Main`` подобно тому, как вы это делали со "
+"сценой ``Player``. Дерево сцены должно выглядеть так, поэтому убедитесь, что "
+"вы ничего не упустили:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
-"Теперь нам нужно подключить ``HUD`` функцию для ``Main`` скрипта. Для этого "
-"требуется несколько дополнений к ``Main`` сцены:"
+"Теперь нам нужно подключить функционал ``HUD`` в наш ``Main``-скрипт. Для "
+"этого потребуются некоторые дополнения к сцене ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1172
 msgid ""
@@ -1487,17 +1486,17 @@ msgid ""
 "\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
-"Во вкладке \"Узел\", соедините сигнал HUD-а ``start_game`` к функции "
-"главного узла ``new_game()`` введя \"new_game\" в поле \"Метод-приёмник\" в "
-"окне \"Подключить сигнал к методу\" . Убедитесь что рядом с функцией ``func "
-"new_game()`` теперь есть зелёная иконка подключения."
+"Во вкладке \"Узел\" присоедините сигнал HUD ``start_game`` к функции узла "
+"Main ``new_game()``, введя \"new_game\" в поле \"Метод-приёмник\" в окне "
+"\"Подключить сигнал к методу\" . Убедитесь, что в скрипте рядом с функцией "
+"``func new_game()`` теперь появилась зелёная иконка подключения."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1177
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
-"В ``new_game()``, обновит счет дисплея и покажет сообщение \"Get Ready\":"
+"В ``new_game()`` обновим отображение счёта и выведем сообщение \"Get Ready\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
@@ -1508,16 +1507,16 @@ msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
-"Наконец добавьте в ``_on_ScoreTimer_timeout()`` для синхронизации "
-"отображения с меняющемся очками:"
+"Наконец добавьте это в ``_on_ScoreTimer_timeout()``, чтобы синхронизировать "
+"отображение с изменением количества очков:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1215
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
-"Теперь вы готовы к игре! Нажмите на кнопку \"Запустить проект\" или F5. Вам "
-"будет предложено выбрать основную сцену, выбирайте ``Main.tscn``."
+"Теперь вы готовы к игре! Нажмите на кнопку \"Запустить проект\". Вам будет "
+"предложено выбрать основную сцену - выбирайте ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid "Removing old creeps"

@@ -1,0 +1,2808 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:4
+msgid "Default editor shortcuts"
+msgstr "預設編輯器快捷鍵"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:5
+msgid ""
+"Many of Godot Editor functions can be executed with keyboard shortcuts. This "
+"page lists functions which have associated shortcuts by default, but many "
+"others are available for customization in editor settings as well. To change "
+"keys associated with these and other actions navigate to ``Editor -> Editor "
+"Settings -> Shortcuts``."
+msgstr ""
+"Godot 編輯器中的許多功能都可以使用鍵盤快捷鍵來執行。本頁列出了預設有快捷鍵的"
+"功能，但還有許多其他的功能可以在編輯器設定中自定。欲修改這些功能設定的按鍵以"
+"及其他操作，請至 ``編輯器 -> 編輯器設定 -> Shortcuts（快捷鍵）`` 。"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:10
+msgid ""
+"While some actions are universal, a lot of shortcuts are specific to "
+"individual tools. For this reason it is possible for some key combinations "
+"to be assigned to more than one function. The correct action will be "
+"performed depending on the context."
+msgstr ""
+"雖然有部分功能是通用的，但許多快捷鍵都是各個工具特定的。因此有些按鍵組合可能"
+"被分配給超過一個的功能。依照不同情況會執行正確的操作。"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:15
+msgid ""
+"While Windows and Linux builds of the editor share most of the default "
+"settings, some shortcuts may differ for macOS version. This is done for "
+"better integration of the editor into macOS ecosystem. Users fluent with "
+"standard shortcuts on that OS should find Godot Editor's default key mapping "
+"intuitive."
+msgstr ""
+"Windows 與 Linux 的編輯器建構通常的預設設定大多都相同，但 macOS 版本可能有些"
+"快捷鍵不同。這是為了讓編輯器可以與 macOS 生態系統整合地更好。熟悉作業系統的標"
+"準快捷鍵的使用者應該能直覺地找到 Godot 編輯器的預設按鍵映射。"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:21
+msgid "General Editor Actions"
+msgstr "通用編輯器操作"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+msgid "Action name"
+msgstr "操作名稱"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+msgid "Windows, Linux"
+msgstr "Windows、Linux"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+msgid "macOS"
+msgstr "macOS"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:24
+#: ../../docs/getting_started/editor/default_key_mapping.rst:89
+#: ../../docs/getting_started/editor/default_key_mapping.rst:142
+#: ../../docs/getting_started/editor/default_key_mapping.rst:217
+#: ../../docs/getting_started/editor/default_key_mapping.rst:298
+#: ../../docs/getting_started/editor/default_key_mapping.rst:345
+#: ../../docs/getting_started/editor/default_key_mapping.rst:370
+#: ../../docs/getting_started/editor/default_key_mapping.rst:381
+#: ../../docs/getting_started/editor/default_key_mapping.rst:394
+#: ../../docs/getting_started/editor/default_key_mapping.rst:425
+#: ../../docs/getting_started/editor/default_key_mapping.rst:438
+#: ../../docs/getting_started/editor/default_key_mapping.rst:461
+#: ../../docs/getting_started/editor/default_key_mapping.rst:478
+#: ../../docs/getting_started/editor/default_key_mapping.rst:513
+msgid "Editor setting"
+msgstr "編輯器設定"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid "Open 2D Editor"
+msgstr "開啟 2D 編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid ":kbd:`F1`"
+msgstr "\\ :kbd:`F1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid ":kbd:`Alt + 1`"
+msgstr "\\ :kbd:`Alt + 1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:26
+msgid "``editor/editor_2d``"
+msgstr "\\ ``editor/editor_2d``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid "Open 3D Editor"
+msgstr "開啟 3D 編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid ":kbd:`F2`"
+msgstr "\\ :kbd:`F2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid ":kbd:`Alt + 2`"
+msgstr "\\ :kbd:`Alt + 2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:28
+msgid "``editor/editor_3d``"
+msgstr "\\ ``editor/editor_3d``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid "Open Script Editor"
+msgstr "開啟腳本編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid ":kbd:`F3`"
+msgstr "\\ :kbd:`F3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid ":kbd:`Alt + 3`"
+msgstr "\\ :kbd:`Alt + 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:30
+msgid "``editor/editor_script``"
+msgstr "\\ ``editor/editor_script``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid "Search Help"
+msgstr "搜尋說明"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid ":kbd:`Shift + F1`"
+msgstr "\\ :kbd:`Shift + F1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid ":kbd:`Alt + Space`"
+msgstr "\\ :kbd:`Alt + 空白鍵`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:32
+msgid "``editor/editor_help``"
+msgstr "\\ ``editor/editor_help``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid "Distraction Free Mode"
+msgstr "專注模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid ":kbd:`Ctrl + Shift + F11`"
+msgstr "\\ :kbd:`Ctrl + Shift + F11`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid ":kbd:`Cmd + Ctrl + D`"
+msgstr "\\ :kbd:`Cmd + Ctrl + D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:34
+msgid "``editor/distraction_free_mode``"
+msgstr "\\ ``editor/distraction_free_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid "Next tab"
+msgstr "下一個分頁"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid ":kbd:`Ctrl + Tab`"
+msgstr "\\ :kbd:`Ctrl + Tab`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid ":kbd:`Cmd + Tab`"
+msgstr "\\ :kbd:`Cmd + Tab`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:36
+msgid "``editor/next_tab``"
+msgstr "\\ ``editor/next_tab``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid "Previous tab"
+msgstr "上一個分頁"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid ":kbd:`Ctrl + Shift + Tab`"
+msgstr "\\ :kbd:`Ctrl + Shift + Tab`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid ":kbd:`Cmd + Shift + Tab`"
+msgstr "\\ :kbd:`Cmd + Shift + Tab`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:38
+msgid "``editor/prev_tab``"
+msgstr "\\ ``editor/prev_tab``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid "Filter Files"
+msgstr "過濾檔案"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid ":kbd:`Ctrl + Alt + P`"
+msgstr "\\ :kbd:`Ctrl + Alt + P`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid ":kbd:`Cmd + Alt + P`"
+msgstr "\\ :kbd:`Cmd + Alt + P`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:40
+msgid "``editor/filter_files``"
+msgstr "\\ ``editor/filter_files``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid "Open Scene"
+msgstr "開啟場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid ":kbd:`Ctrl + O`"
+msgstr "\\ :kbd:`Ctrl + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid ":kbd:`Cmd + O`"
+msgstr "\\ :kbd:`Cmd + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:42
+msgid "``editor/open_scene``"
+msgstr "\\ ``editor/open_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid "Close Scene"
+msgstr "關閉場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid ":kbd:`Ctrl + Shift + W`"
+msgstr "\\ :kbd:`Ctrl + Shift + W`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid ":kbd:`Cmd + Shift + W`"
+msgstr "\\ :kbd:`Cmd + Shift + W`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:44
+msgid "``editor/close_scene``"
+msgstr "\\ ``editor/close_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+msgid "Reopen Closed Scene"
+msgstr "重新開啟已關閉的場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid ":kbd:`Ctrl + Shift + T`"
+msgstr "\\ :kbd:`Ctrl + Shift + T`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid ":kbd:`Cmd + Shift + T`"
+msgstr "\\ :kbd:`Cmd + Shift + T`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:46
+msgid "``editor/reopen_closed_scene``"
+msgstr "\\ ``editor/reopen_closed_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid "Save Scene"
+msgstr "保存場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid ":kbd:`Ctrl + S`"
+msgstr "\\ :kbd:`Ctrl + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid ":kbd:`Cmd + S`"
+msgstr "\\ :kbd:`Cmd + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:48
+msgid "``editor/save_scene``"
+msgstr "\\ ``editor/save_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid "Save Scene As"
+msgstr "另存場景為"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid ":kbd:`Ctrl + Shift + S`"
+msgstr "\\ :kbd:`Ctrl + Shift + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid ":kbd:`Cmd + Shift + S`"
+msgstr "\\ :kbd:`Cmd + Shift + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:50
+msgid "``editor/save_scene_as``"
+msgstr "\\ ``editor/save_scene_as``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+msgid "Save All Scenes"
+msgstr "保存所有場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid ":kbd:`Ctrl + Shift + Alt + S`"
+msgstr "\\ :kbd:`Ctrl + Shift + Alt + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid ":kbd:`Cmd + Shift + Alt + S`"
+msgstr "\\ :kbd:`Cmd + Shift + Alt + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:52
+msgid "``editor/save_all_scenes``"
+msgstr "\\ ``editor/save_all_scenes``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid "Quick Open"
+msgstr "快速開啟"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid ":kbd:`Shift + Alt + O`"
+msgstr "\\ :kbd:`Shift + Alt + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:54
+msgid "``editor/quick_open``"
+msgstr "\\ ``editor/quick_open``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid "Quick Open Scene"
+msgstr "快速開啟場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid ":kbd:`Ctrl + Shift + O`"
+msgstr "\\ :kbd:`Ctrl + Shift + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid ":kbd:`Cmd + Shift + O`"
+msgstr "\\ :kbd:`Cmd + Shift + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:56
+msgid "``editor/quick_open_scene``"
+msgstr "\\ ``editor/quick_open_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid "Quick Open Script"
+msgstr "快速開啟場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid ":kbd:`Ctrl + Alt + O`"
+msgstr "\\ :kbd:`Ctrl + Alt + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid ":kbd:`Cmd + Alt + O`"
+msgstr "\\ :kbd:`Cmd + Alt + O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:58
+msgid "``editor/quick_open_script``"
+msgstr "\\ ``editor/quick_open_script``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid "Undo"
+msgstr "復原"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid ":kbd:`Ctrl + Z`"
+msgstr "\\ :kbd:`Ctrl + Z`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid ":kbd:`Cmd + Z`"
+msgstr "\\ :kbd:`Cmd + Z`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:60
+msgid "``editor/undo``"
+msgstr "\\ ``editor/undo``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid "Redo"
+msgstr "取消復原"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid ":kbd:`Ctrl + Shift + Z`"
+msgstr "\\ :kbd:`Ctrl + Shift + Z`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid ":kbd:`Cmd + Shift + Z`"
+msgstr "\\ :kbd:`Cmd + Shift + Z`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:62
+msgid "``editor/redo``"
+msgstr "\\ ``editor/redo``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid "Quit"
+msgstr "離開"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid ":kbd:`Ctrl + Q`"
+msgstr "\\ :kbd:`Ctrl + Q`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid ":kbd:`Cmd + Q`"
+msgstr "\\ :kbd:`Cmd + Q`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:64
+msgid "``editor/file_quit``"
+msgstr "\\ ``editor/file_quit``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid "Quit to Project List"
+msgstr "退出到專案列表"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid ":kbd:`Ctrl + Shift + Q`"
+msgstr "\\ :kbd:`Ctrl + Shift + Q`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid ":kbd:`Shift + Alt + Q`"
+msgstr "\\ :kbd:`Shift + Alt + Q`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:66
+msgid "``editor/quit_to_project_list``"
+msgstr "\\ ``editor/quit_to_project_list``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid "Take Screenshot"
+msgstr "螢幕截圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid ":kbd:`Ctrl + F12`"
+msgstr "\\ :kbd:`Ctrl + F12`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid ":kbd:`Cmd + F12`"
+msgstr "\\ :kbd:`Cmd + F12`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:68
+msgid "``editor/take_screenshot``"
+msgstr "\\ ``editor/take_screenshot``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid "Toggle Fullscreen"
+msgstr "開啟／取消全螢幕顯示"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid ":kbd:`Shift + F11`"
+msgstr "\\ :kbd:`Shift + F11`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid ":kbd:`Cmd + Ctrl + F`"
+msgstr "\\ :kbd:`Cmd + Ctrl + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:70
+msgid "``editor/fullscreen_mode``"
+msgstr "\\ ``editor/fullscreen_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+msgid "Play"
+msgstr "執行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid ":kbd:`F5`"
+msgstr "\\ :kbd:`F5`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid ":kbd:`Cmd + B`"
+msgstr "\\ :kbd:`Cmd + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:72
+msgid "``editor/play``"
+msgstr "\\ ``editor/play``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid "Pause Scene"
+msgstr "暫停場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid ":kbd:`F7`"
+msgstr "\\ :kbd:`F7`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid ":kbd:`Cmd + Ctrl + Y`"
+msgstr "\\ :kbd:`Cmd + Ctrl + Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:74
+msgid "``editor/pause_scene``"
+msgstr "\\ ``editor/pause_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid "Stop"
+msgstr "停止"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid ":kbd:`F8`"
+msgstr "\\ :kbd:`F8`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid ":kbd:`Cmd + .`"
+msgstr "\\ :kbd:`Cmd + .`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:76
+msgid "``editor/stop``"
+msgstr "\\ ``editor/stop``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+msgid "Play Scene"
+msgstr "執行場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+msgid ":kbd:`F6`"
+msgstr "\\ :kbd:`F6`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid ":kbd:`Cmd + R`"
+msgstr "\\ :kbd:`Cmd + R`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:78
+msgid "``editor/play_scene``"
+msgstr "\\ ``editor/play_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+msgid "Play Custom Scene"
+msgstr "執行自定義場景"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+msgid ":kbd:`Ctrl + Shift + F5`"
+msgstr "\\ :kbd:`Ctrl + Shift + F5`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid ":kbd:`Cmd + Shift + R`"
+msgstr "\\ :kbd:`Cmd + Shift + R`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:80
+msgid "``editor/play_custom_scene``"
+msgstr "\\ ``editor/play_custom_scene``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid "Expand Bottom Panel"
+msgstr "展開底部面板"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid ":kbd:`Shift + F12`"
+msgstr "\\ :kbd:`Shift + F12`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:82
+msgid "``editor/bottom_panel_expand``"
+msgstr "\\ ``editor/bottom_panel_expand``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:86
+msgid "2D / Canvas Item Editor"
+msgstr "2D / Canvas 項目編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid "Zoom In"
+msgstr "放大"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid ":kbd:`Ctrl + =`"
+msgstr "\\ :kbd:`Ctrl + =`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid ":kbd:`Cmd + =`"
+msgstr "\\ :kbd:`Cmd + =`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:91
+msgid "``canvas_item_editor/zoom_plus``"
+msgstr "\\ ``canvas_item_editor/zoom_plus``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid "Zoom Out"
+msgstr "縮小"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid ":kbd:`Ctrl + -`"
+msgstr "\\ :kbd:`Ctrl + -`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid ":kbd:`Cmd + -`"
+msgstr "\\ :kbd:`Cmd + -`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:93
+msgid "``canvas_item_editor/zoom_minus``"
+msgstr "\\ ``canvas_item_editor/zoom_minus``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+msgid "Zoom Reset"
+msgstr "重設縮放"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid ":kbd:`Ctrl + 0`"
+msgstr "\\ :kbd:`Ctrl + 0`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid ":kbd:`Cmd + 0`"
+msgstr "\\ :kbd:`Cmd + 0`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:95
+msgid "``canvas_item_editor/zoom_reset``"
+msgstr "\\ ``canvas_item_editor/zoom_reset``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid "Pan View"
+msgstr "平移檢視"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid ":kbd:`Space`"
+msgstr ":kbd:`空白鍵`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:97
+msgid "``canvas_item_editor/pan_view``"
+msgstr "\\ ``canvas_item_editor/pan_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid "Select Mode"
+msgstr "選擇模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid ":kbd:`Q`"
+msgstr "\\ :kbd:`Q`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:99
+msgid "``canvas_item_editor/select_mode``"
+msgstr "\\ ``canvas_item_editor/select_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+msgid "Move Mode"
+msgstr "移動模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+msgid ":kbd:`W`"
+msgstr "\\ :kbd:`W`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:101
+msgid "``canvas_item_editor/move_mode``"
+msgstr "\\ ``canvas_item_editor/move_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+msgid "Rotate Mode"
+msgstr "旋轉模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+msgid ":kbd:`E`"
+msgstr "\\ :kbd:`E`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:103
+msgid "``canvas_item_editor/rotate_mode``"
+msgstr "\\ ``canvas_item_editor/rotate_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+msgid "Scale Mode"
+msgstr "縮放模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+msgid ":kbd:`S`"
+msgstr "\\ :kbd:`S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:105
+msgid "``canvas_item_editor/scale_mode``"
+msgstr "\\ ``canvas_item_editor/scale_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+msgid "Ruler Mode"
+msgstr "尺規模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+msgid ":kbd:`R`"
+msgstr "\\ :kbd:`R`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:107
+msgid "``canvas_item_editor/ruler_mode``"
+msgstr "\\ ``canvas_item_editor/ruler_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid "Use Smart Snap"
+msgstr "使用智慧型吸附"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid ":kbd:`Shift + S`"
+msgstr "\\ :kbd:`Shift + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:109
+msgid "``canvas_item_editor/use_smart_snap``"
+msgstr "\\ ``canvas_item_editor/use_smart_snap``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid "Use Grid Snap"
+msgstr "使用網格吸附"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid ":kbd:`Shift + G`"
+msgstr "\\ :kbd:`Shift + G`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:111
+msgid "``canvas_item_editor/use_grid_snap``"
+msgstr "\\ ``canvas_item_editor/use_grid_snap``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid "Multiply grid step by 2"
+msgstr "將網格步數乘以 2"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid ":kbd:`Num *`"
+msgstr "\\ :kbd:`Num *`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:113
+msgid "``canvas_item_editor/multiply_grid_step``"
+msgstr "\\ ``canvas_item_editor/multiply_grid_step``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid "Divide grid step by 2"
+msgstr "將網格步數除以 2"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid ":kbd:`Num /`"
+msgstr "\\ :kbd:`Num /`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:115
+msgid "``canvas_item_editor/divide_grid_step``"
+msgstr "\\ ``canvas_item_editor/divide_grid_step``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+msgid "Always Show Grid"
+msgstr "永遠顯示網格"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid ":kbd:`G`"
+msgstr "\\ :kbd:`G`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:117
+msgid "``canvas_item_editor/show_grid``"
+msgstr "\\ ``canvas_item_editor/show_grid``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid "Show Helpers"
+msgstr "顯示輔助資訊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid ":kbd:`H`"
+msgstr "\\ :kbd:`H`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:119
+msgid "``canvas_item_editor/show_helpers``"
+msgstr "\\ ``canvas_item_editor/show_helpers``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+msgid "Show Guides"
+msgstr "顯示參考線"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid ":kbd:`Y`"
+msgstr "\\ :kbd:`Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:121
+msgid "``canvas_item_editor/show_guides``"
+msgstr "\\ ``canvas_item_editor/show_guides``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+msgid "Center Selection"
+msgstr "置中所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid ":kbd:`F`"
+msgstr "\\ :kbd:`F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:123
+msgid "``canvas_item_editor/center_selection``"
+msgstr "\\ ``canvas_item_editor/center_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+msgid "Frame Selection"
+msgstr "完整顯示所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid ":kbd:`Shift + F`"
+msgstr "\\ :kbd:`Shift + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:125
+msgid "``canvas_item_editor/frame_selection``"
+msgstr "\\ ``canvas_item_editor/frame_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid "Preview Canvas Scale"
+msgstr "預覽畫布比例"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid ":kbd:`Ctrl + Shift + P`"
+msgstr "\\ :kbd:`Ctrl + Shift + P`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid ":kbd:`Cmd + Shift + P`"
+msgstr "\\ :kbd:`Cmd + Shift + P`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:127
+msgid "``canvas_item_editor/preview_canvas_scale``"
+msgstr "\\ ``canvas_item_editor/preview_canvas_scale``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+msgid "Insert Key"
+msgstr "插入關鍵畫格"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+msgid ":kbd:`Ins`"
+msgstr "\\ :kbd:`Ins`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:129
+msgid "``canvas_item_editor/anim_insert_key``"
+msgstr "\\ ``canvas_item_editor/anim_insert_key``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid "Insert Key (Existing Tracks)"
+msgstr "插入關鍵影格（於現有軌道）"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid ":kbd:`Ctrl + Ins`"
+msgstr "\\ :kbd:`Ctrl + Ins`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid ":kbd:`Cmd + Ins`"
+msgstr "\\ :kbd:`Cmd + Ins`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:131
+msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
+msgstr "\\ ``canvas_item_editor/anim_insert_key_existing_tracks``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+msgid "Make Custom Bones from Nodes"
+msgstr "自節點建立自定骨骼"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid ":kbd:`Ctrl + Shift + B`"
+msgstr "\\ :kbd:`Ctrl + Shift + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+msgid ":kbd:`Cmd + Shift + B`"
+msgstr "\\ :kbd:`Cmd + Shift + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:133
+msgid "``canvas_item_editor/skeleton_make_bones``"
+msgstr "\\ ``canvas_item_editor/skeleton_make_bones``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid "Clear Pose"
+msgstr "清除姿勢"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid ":kbd:`Shift + K`"
+msgstr "\\ :kbd:`Shift + K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:135
+msgid "``canvas_item_editor/anim_clear_pose``"
+msgstr "\\ ``canvas_item_editor/anim_clear_pose``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:139
+msgid "3D / Spatial Editor"
+msgstr "3D / Spatial 編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid "Toggle Freelook"
+msgstr "開啟／關閉自由視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:144
+msgid "``spatial_editor/freelook_toggle``"
+msgstr "\\ ``spatial_editor/freelook_toggle``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+msgid "Freelook Left"
+msgstr "自由視圖 左"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid ":kbd:`A`"
+msgstr "\\ :kbd:`A`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:146
+msgid "``spatial_editor/freelook_left``"
+msgstr "\\ ``spatial_editor/freelook_left``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid "Freelook Right"
+msgstr "自由視圖 右"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid ":kbd:`D`"
+msgstr "\\ :kbd:`D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:148
+msgid "``spatial_editor/freelook_right``"
+msgstr "\\ ``spatial_editor/freelook_right``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+msgid "Freelook Forward"
+msgstr "自由視圖 前"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:150
+msgid "``spatial_editor/freelook_forward``"
+msgstr "\\ ``spatial_editor/freelook_forward``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+msgid "Freelook Backwards"
+msgstr "自由視圖 後"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:152
+msgid "``spatial_editor/freelook_backwards``"
+msgstr "\\ ``spatial_editor/freelook_backwards``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+msgid "Freelook Up"
+msgstr "自由視圖 上"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:154
+msgid "``spatial_editor/freelook_up``"
+msgstr "\\ ``spatial_editor/freelook_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+msgid "Freelook Down"
+msgstr "自由視圖 下"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:156
+msgid "``spatial_editor/freelook_down``"
+msgstr "\\ ``spatial_editor/freelook_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid "Freelook Speed Modifier"
+msgstr "加速自由視圖速度"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid ":kbd:`Shift`"
+msgstr "\\ :kbd:`Shift`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:158
+msgid "``spatial_editor/freelook_speed_modifier``"
+msgstr "\\ ``spatial_editor/freelook_speed_modifier``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid "Freelook Slow Modifier"
+msgstr "放慢自由視圖速度"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid ":kbd:`Alt`"
+msgstr "\\ :kbd:`Alt`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:160
+msgid "``spatial_editor/freelook_slow_modifier``"
+msgstr "\\ ``spatial_editor/freelook_slow_modifier``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:162
+msgid "``spatial_editor/tool_select``"
+msgstr "\\ ``spatial_editor/tool_select``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:164
+msgid "``spatial_editor/tool_move``"
+msgstr "\\ ``spatial_editor/tool_move``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:166
+msgid "``spatial_editor/tool_rotate``"
+msgstr "\\ ``spatial_editor/tool_rotate``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:168
+msgid "``spatial_editor/tool_scale``"
+msgstr "\\ ``spatial_editor/tool_scale``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+msgid "Use Local Space"
+msgstr "使用本機空間"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+msgid ":kbd:`T`"
+msgstr "\\ :kbd:`T`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:170
+msgid "``spatial_editor/local_coords``"
+msgstr "\\ ``spatial_editor/local_coords``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid "Use Snap"
+msgstr "使用吸附"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:172
+msgid "``spatial_editor/snap``"
+msgstr "\\ ``spatial_editor/snap``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+msgid "Snap Object to Floor"
+msgstr "吸附物件至地板"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid ":kbd:`PgDown`"
+msgstr "\\ :kbd:`PgDown`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:174
+msgid "``spatial_editor/snap_to_floor``"
+msgstr "\\ ``spatial_editor/snap_to_floor``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid "Top View"
+msgstr "俯視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid ":kbd:`Num 7`"
+msgstr "\\ :kbd:`Num 7`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:176
+msgid "``spatial_editor/top_view``"
+msgstr "\\ ``spatial_editor/top_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid "Bottom View"
+msgstr "仰視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid ":kbd:`Alt + Num 7`"
+msgstr "\\ :kbd:`Alt + Num 7`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:178
+msgid "``spatial_editor/bottom_view``"
+msgstr "\\ ``spatial_editor/bottom_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid "Front View"
+msgstr "前視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid ":kbd:`Num 1`"
+msgstr "\\ :kbd:`Num 1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:180
+msgid "``spatial_editor/front_view``"
+msgstr "\\ ``spatial_editor/front_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid "Rear View"
+msgstr "後視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid ":kbd:`Alt + Num 1`"
+msgstr "\\ :kbd:`Alt + Num 1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:182
+msgid "``spatial_editor/rear_view``"
+msgstr "\\ ``spatial_editor/rear_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid "Right View"
+msgstr "右視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid ":kbd:`Num 3`"
+msgstr "\\ :kbd:`Num 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:184
+msgid "``spatial_editor/right_view``"
+msgstr "\\ ``spatial_editor/right_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid "Left View"
+msgstr "左視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid ":kbd:`Alt + Num 3`"
+msgstr "\\ :kbd:`Alt + Num 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:186
+msgid "``spatial_editor/left_view``"
+msgstr "\\ ``spatial_editor/left_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid "Switch Perspective/Orthogonal View"
+msgstr "切換投影或正交視圖"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid ":kbd:`Num 5`"
+msgstr "\\ :kbd:`Num 5`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:188
+msgid "``spatial_editor/switch_perspective_orthogonal``"
+msgstr "\\ ``spatial_editor/switch_perspective_orthogonal``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+msgid "Insert Animation Key"
+msgstr "插入動畫關鍵影格"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+msgid ":kbd:`K`"
+msgstr "\\ :kbd:`K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:190
+msgid "``spatial_editor/insert_anim_key``"
+msgstr "\\ ``spatial_editor/insert_anim_key``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+msgid "Focus Origin"
+msgstr "聚焦原點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+msgid ":kbd:`O`"
+msgstr "\\ :kbd:`O`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:192
+msgid "``spatial_editor/focus_origin``"
+msgstr "\\ ``spatial_editor/focus_origin``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid "Focus Selection"
+msgstr "聚焦所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:194
+msgid "``spatial_editor/focus_selection``"
+msgstr "\\ ``spatial_editor/focus_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid "Align Transform with View"
+msgstr "將變換與視圖對齊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid ":kbd:`Ctrl + Alt + M`"
+msgstr "\\ :kbd:`Ctrl + Alt + M`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid ":kbd:`Cmd + Alt + M`"
+msgstr "\\ :kbd:`Cmd + Alt + M`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:196
+msgid "``spatial_editor/align_transform_with_view``"
+msgstr "\\ ``spatial_editor/align_transform_with_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid "Align Rotation with View"
+msgstr "將旋轉與視圖對齊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid ":kbd:`Ctrl + Alt + F`"
+msgstr "\\ :kbd:`Ctrl + Alt + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid ":kbd:`Cmd + Alt + F`"
+msgstr "\\ :kbd:`Cmd + Alt + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:198
+msgid "``spatial_editor/align_rotation_with_view``"
+msgstr "\\ ``spatial_editor/align_rotation_with_view``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid "1 Viewport"
+msgstr "1 個檢視區"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid ":kbd:`Ctrl + 1`"
+msgstr "\\ :kbd:`Ctrl + 1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid ":kbd:`Cmd + 1`"
+msgstr "\\ :kbd:`Cmd + 1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:200
+msgid "``spatial_editor/1_viewport``"
+msgstr "\\ ``spatial_editor/1_viewport``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid "2 Viewports"
+msgstr "2 個檢視區"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid ":kbd:`Ctrl + 2`"
+msgstr "\\ :kbd:`Ctrl + 2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid ":kbd:`Cmd + 2`"
+msgstr "\\ :kbd:`Cmd + 2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:202
+msgid "``spatial_editor/2_viewports``"
+msgstr "\\ ``spatial_editor/2_viewports``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid "2 Viewports (Alt)"
+msgstr "2 個檢視區（替代）"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid ":kbd:`Ctrl + Alt + 2`"
+msgstr "\\ :kbd:`Ctrl + Alt + 2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid ":kbd:`Cmd + Alt + 2`"
+msgstr "\\ :kbd:`Cmd + Alt + 2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:204
+msgid "``spatial_editor/2_viewports_alt``"
+msgstr "\\ ``spatial_editor/2_viewports_alt``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid "3 Viewports"
+msgstr "3 個檢視區"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid ":kbd:`Ctrl + 3`"
+msgstr "\\ :kbd:`Ctrl + 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid ":kbd:`Cmd + 3`"
+msgstr "\\ :kbd:`Cmd + 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:206
+msgid "``spatial_editor/3_viewports``"
+msgstr "\\ ``spatial_editor/3_viewports``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid "3 Viewports (Alt)"
+msgstr "3 個檢視區（替代）"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid ":kbd:`Ctrl + Alt + 3`"
+msgstr "\\ :kbd:`Ctrl + Alt + 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid ":kbd:`Cmd + Alt + 3`"
+msgstr "\\ :kbd:`Cmd + Alt + 3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:208
+msgid "``spatial_editor/3_viewports_alt``"
+msgstr "\\ ``spatial_editor/3_viewports_alt``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid "4 Viewports"
+msgstr "4 個檢視區"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid ":kbd:`Ctrl + 4`"
+msgstr "\\ :kbd:`Ctrl + 4`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid ":kbd:`Cmd + 4`"
+msgstr "\\ :kbd:`Cmd + 4`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:210
+msgid "``spatial_editor/4_viewports``"
+msgstr "\\ ``spatial_editor/4_viewports``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:214
+msgid "Text Editor"
+msgstr "文字編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+msgid "Cut"
+msgstr "剪下"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid ":kbd:`Ctrl + X`"
+msgstr "\\ :kbd:`Ctrl + X`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid ":kbd:`Cmd + X`"
+msgstr "\\ :kbd:`Cmd + X`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:219
+msgid "``script_text_editor/cut``"
+msgstr "\\ ``script_text_editor/cut``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+msgid "Copy"
+msgstr "複製"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid ":kbd:`Ctrl + C`"
+msgstr "\\ :kbd:`Ctrl + C`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid ":kbd:`Cmd + C`"
+msgstr "\\ :kbd:`Cmd + C`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:221
+msgid "``script_text_editor/copy``"
+msgstr "\\ ``script_text_editor/copy``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+msgid "Paste"
+msgstr "貼上"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid ":kbd:`Ctrl + V`"
+msgstr "\\ :kbd:`Ctrl + V`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid ":kbd:`Cmd + V`"
+msgstr "\\ :kbd:`Cmd + V`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:223
+msgid "``script_text_editor/paste``"
+msgstr "\\ ``script_text_editor/paste``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+msgid "Select All"
+msgstr "全部選擇"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid ":kbd:`Ctrl + A`"
+msgstr "\\ :kbd:`Ctrl + A`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid ":kbd:`Cmd + A`"
+msgstr "\\ :kbd:`Cmd + A`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:225
+msgid "``script_text_editor/select_all``"
+msgstr "\\ ``script_text_editor/select_all``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+msgid "Find"
+msgstr "尋找"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid ":kbd:`Ctrl + F`"
+msgstr "\\ :kbd:`Ctrl + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid ":kbd:`Cmd + F`"
+msgstr "\\ :kbd:`Cmd + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:227
+msgid "``script_text_editor/find``"
+msgstr "\\ ``script_text_editor/find``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid "Find Next"
+msgstr "尋找下一個"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid ":kbd:`Cmd + G`"
+msgstr "\\ :kbd:`Cmd + G`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
+msgid "``script_text_editor/find_next``"
+msgstr "\\ ``script_text_editor/find_next``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid "Find Previous"
+msgstr "尋找上一個"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid ":kbd:`Shift + F3`"
+msgstr "\\ :kbd:`Shift + F3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+msgid ":kbd:`Cmd + Shift + G`"
+msgstr "\\ :kbd:`Cmd + Shift + G`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:231
+msgid "``script_text_editor/find_previous``"
+msgstr "\\ ``script_text_editor/find_previous``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid "Find in Files"
+msgstr "在檔案中搜尋"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid ":kbd:`Ctrl + Shift + F`"
+msgstr "\\ :kbd:`Ctrl + Shift + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid ":kbd:`Cmd + Shift + F`"
+msgstr "\\ :kbd:`Cmd + Shift + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:233
+msgid "``script_text_editor/find_in_files``"
+msgstr "\\ ``script_text_editor/find_in_files``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid "Replace"
+msgstr "取代"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid ":kbd:`Ctrl + R`"
+msgstr "\\ :kbd:`Ctrl + R`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid ":kbd:`Alt + Cmd + F`"
+msgstr "\\ :kbd:`Alt + Cmd + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:235
+msgid "``script_text_editor/replace``"
+msgstr "\\ ``script_text_editor/replace``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+msgid "Replace in Files"
+msgstr "在檔案中取代"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid ":kbd:`Ctrl + Shift + R`"
+msgstr "\\ :kbd:`Ctrl + Shift + R`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:237
+msgid "``script_text_editor/replace_in_files``"
+msgstr "\\ ``script_text_editor/replace_in_files``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:239
+msgid "``script_text_editor/undo``"
+msgstr "\\ ``script_text_editor/undo``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid ":kbd:`Ctrl + Y`"
+msgstr "\\ :kbd:`Ctrl + Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid ":kbd:`Cmd + Y`"
+msgstr "\\ :kbd:`Cmd + Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:241
+msgid "``script_text_editor/redo``"
+msgstr "\\ ``script_text_editor/redo``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid "Move Up"
+msgstr "上移"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid ":kbd:`Alt + Up Arrow`"
+msgstr ":kbd:`Alt + 方向鍵上`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:243
+msgid "``script_text_editor/move_up``"
+msgstr "\\ ``script_text_editor/move_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid "Move Down"
+msgstr "下移"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+msgid ":kbd:`Alt + Down Arrow`"
+msgstr ":kbd:`Alt + 方向鍵下`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:245
+msgid "``script_text_editor/move_down``"
+msgstr "\\ ``script_text_editor/move_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+msgid "Delete Line"
+msgstr "删除行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid ":kbd:`Ctrl + Shift + K`"
+msgstr "\\ :kbd:`Ctrl + Shift + K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid ":kbd:`Cmd + Shift + K`"
+msgstr "\\ :kbd:`Cmd + Shift + K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:247
+msgid "``script_text_editor/delete_line``"
+msgstr "\\ ``script_text_editor/delete_line``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid "Toggle Comment"
+msgstr "註解／取消註解"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid ":kbd:`Ctrl + K`"
+msgstr "\\ :kbd:`Ctrl + K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid ":kbd:`Cmd + K`"
+msgstr "\\ :kbd:`Cmd + K`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:249
+msgid "``script_text_editor/toggle_comment``"
+msgstr "\\ ``script_text_editor/toggle_comment``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+msgid "Fold/Unfold Line"
+msgstr "展開／收起行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid ":kbd:`Alt + F`"
+msgstr "\\ :kbd:`Alt + F`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:251
+msgid "``script_text_editor/toggle_fold_line``"
+msgstr "\\ ``script_text_editor/toggle_fold_line``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid "Clone Down"
+msgstr "複製到下一行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid ":kbd:`Ctrl + D`"
+msgstr "\\ :kbd:`Ctrl + D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid ":kbd:`Cmd + Shift + C`"
+msgstr "\\ :kbd:`Cmd + Shift + C`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:253
+msgid "``script_text_editor/clone_down``"
+msgstr "\\ ``script_text_editor/clone_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid "Complete Symbol"
+msgstr "補全符號"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid ":kbd:`Ctrl + Space`"
+msgstr ":kbd:`Ctrl + 空白鍵`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:255
+msgid "``script_text_editor/complete_symbol``"
+msgstr "\\ ``script_text_editor/complete_symbol``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid "Evaluate Selection"
+msgstr "取值所選內容"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid ":kbd:`Ctrl + Shift + E`"
+msgstr "\\ :kbd:`Ctrl + Shift + E`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid ":kbd:`Cmd + Shift + E`"
+msgstr "\\ :kbd:`Cmd + Shift + E`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:257
+msgid "``script_text_editor/evaluate_selection``"
+msgstr "\\ ``script_text_editor/evaluate_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid "Trim Trailing Whitespace"
+msgstr "移除後方空白字元"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid ":kbd:`Ctrl + Alt + T`"
+msgstr "\\ :kbd:`Ctrl + Alt + T`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid ":kbd:`Cmd + Alt + T`"
+msgstr "\\ :kbd:`Cmd + Alt + T`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:259
+msgid "``script_text_editor/trim_trailing_whitespace``"
+msgstr "\\ ``script_text_editor/trim_trailing_whitespace``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+msgid "Uppercase"
+msgstr "大寫"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+msgid ":kbd:`Shift + F4`"
+msgstr "\\ :kbd:`Shift + F4`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:261
+msgid "``script_text_editor/convert_to_uppercase``"
+msgstr "\\ ``script_text_editor/convert_to_uppercase``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+msgid "Lowercase"
+msgstr "小寫"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+msgid ":kbd:`Shift + F5`"
+msgstr "\\ :kbd:`Shift + F5`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:263
+msgid "``script_text_editor/convert_to_lowercase``"
+msgstr "\\ ``script_text_editor/convert_to_lowercase``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid "Capitalize"
+msgstr "首字母大寫"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid ":kbd:`Shift + F6`"
+msgstr "\\ :kbd:`Shift + F6`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:265
+msgid "``script_text_editor/capitalize``"
+msgstr "\\ ``script_text_editor/capitalize``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid "Convert Indent to Spaces"
+msgstr "轉換縮排為空白"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid ":kbd:`Ctrl + Shift + Y`"
+msgstr "\\ :kbd:`Ctrl + Shift + Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid ":kbd:`Cmd + Shift + Y`"
+msgstr "\\ :kbd:`Cmd + Shift + Y`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:267
+msgid "``script_text_editor/convert_indent_to_spaces``"
+msgstr "\\ ``script_text_editor/convert_indent_to_spaces``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid "Convert Indent to Tabs"
+msgstr "轉換縮排為 Tab"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid ":kbd:`Ctrl + Shift + I`"
+msgstr "\\ :kbd:`Ctrl + Shift + I`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid ":kbd:`Cmd + Shift + I`"
+msgstr "\\ :kbd:`Cmd + Shift + I`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:269
+msgid "``script_text_editor/convert_indent_to_tabs``"
+msgstr "\\ ``script_text_editor/convert_indent_to_tabs``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid "Auto Indent"
+msgstr "自動縮排"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid ":kbd:`Ctrl + I`"
+msgstr "\\ :kbd:`Ctrl + I`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid ":kbd:`Cmd + I`"
+msgstr "\\ :kbd:`Cmd + I`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:271
+msgid "``script_text_editor/auto_indent``"
+msgstr "\\ ``script_text_editor/auto_indent``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid "Toggle Bookmark"
+msgstr "新增／移除書籤"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid ":kbd:`Ctrl + Alt + B`"
+msgstr "\\ :kbd:`Ctrl + Alt + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid ":kbd:`Cmd + Alt + B`"
+msgstr "\\ :kbd:`Cmd + Alt + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:273
+msgid "``script_text_editor/toggle_bookmark``"
+msgstr "\\ ``script_text_editor/toggle_bookmark``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid "Go to Next Bookmark"
+msgstr "跳至下一個書籤"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid ":kbd:`Ctrl + B`"
+msgstr "\\ :kbd:`Ctrl + B`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:275
+msgid "``script_text_editor/goto_next_bookmark``"
+msgstr "\\ ``script_text_editor/goto_next_bookmark``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid "Go to Previous Bookmark"
+msgstr "跳至上一個書籤"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:277
+msgid "``script_text_editor/goto_previous_bookmark``"
+msgstr "\\ ``script_text_editor/goto_previous_bookmark``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid "Go to Function"
+msgstr "跳至函式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid ":kbd:`Ctrl + Cmd + J`"
+msgstr "\\ :kbd:`Ctrl + Cmd + J`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:279
+msgid "``script_text_editor/goto_function``"
+msgstr "\\ ``script_text_editor/goto_function``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid "Go to Line"
+msgstr "跳至第 ... 行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid ":kbd:`Ctrl + L`"
+msgstr "\\ :kbd:`Ctrl + L`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid ":kbd:`Cmd + L`"
+msgstr "\\ :kbd:`Cmd + L`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:281
+msgid "``script_text_editor/goto_line``"
+msgstr "\\ ``script_text_editor/goto_line``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+msgid "Toggle Breakpoint"
+msgstr "設定／移除中斷點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+msgid ":kbd:`F9`"
+msgstr "\\ :kbd:`F9`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:283
+msgid "``script_text_editor/toggle_breakpoint``"
+msgstr "\\ ``script_text_editor/toggle_breakpoint``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid "Remove All Breakpoints"
+msgstr "移除所有中斷點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid ":kbd:`Ctrl + Shift + F9`"
+msgstr "\\ :kbd:`Ctrl + Shift + F9`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid ":kbd:`Cmd + Shift + F9`"
+msgstr "\\ :kbd:`Cmd + Shift + F9`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:285
+msgid "``script_text_editor/remove_all_breakpoints``"
+msgstr "\\ ``script_text_editor/remove_all_breakpoints``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid "Go to Next Breakpoint"
+msgstr "跳至下一個中斷點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid ":kbd:`Ctrl + .`"
+msgstr "\\ :kbd:`Ctrl + .`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:287
+msgid "``script_text_editor/goto_next_breakpoint``"
+msgstr "\\ ``script_text_editor/goto_next_breakpoint``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid "Go to Previous Breakpoint"
+msgstr "跳至上一個中斷點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid ":kbd:`Ctrl + ,`"
+msgstr "\\ :kbd:`Ctrl + ,`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid ":kbd:`Cmd + ,`"
+msgstr "\\ :kbd:`Cmd + ,`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:289
+msgid "``script_text_editor/goto_previous_breakpoint``"
+msgstr "\\ ``script_text_editor/goto_previous_breakpoint``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid "Contextual Help"
+msgstr "上下文說明"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid ":kbd:`Alt + F1`"
+msgstr "\\ :kbd:`Alt + F1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid ":kbd:`Alt + Shift + Space`"
+msgstr ":kbd:`Alt + Shift + 空白鍵`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:291
+msgid "``script_text_editor/contextual_help``"
+msgstr "\\ ``script_text_editor/contextual_help``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:295
+msgid "Script Editor"
+msgstr "腳本編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:300
+msgid "``script_editor/find``"
+msgstr "\\ ``script_editor/find``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid "``script_editor/find_next``"
+msgstr "\\ ``script_editor/find_next``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:304
+msgid "``script_editor/find_previous``"
+msgstr "\\ ``script_editor/find_previous``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:306
+msgid "``script_editor/find_in_files``"
+msgstr "\\ ``script_editor/find_in_files``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+msgid ":kbd:`Shift + Alt + Up Arrow`"
+msgstr ":kbd:`Shift + Alt + 方向鍵上`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:308
+msgid "``script_editor/window_move_up``"
+msgstr "\\ ``script_editor/window_move_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+msgid ":kbd:`Shift + Alt + Down Arrow`"
+msgstr ":kbd:`Shift + Alt + 方向鍵下`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:310
+msgid "``script_editor/window_move_down``"
+msgstr "\\ ``script_editor/window_move_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid "Next Script"
+msgstr "下一個腳本"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid ":kbd:`Ctrl + Shift + .`"
+msgstr "\\ :kbd:`Ctrl + Shift + .`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid ":kbd:`Cmd + Shift + .`"
+msgstr "\\ :kbd:`Cmd + Shift + .`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:312
+msgid "``script_editor/next_script``"
+msgstr "\\ ``script_editor/next_script``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid "Previous Script"
+msgstr "上一個腳本"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid ":kbd:`Ctrl + Shift + ,`"
+msgstr "\\ :kbd:`Ctrl + Shift + ,`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid ":kbd:`Cmd + Shift + ,`"
+msgstr "\\ :kbd:`Cmd + Shift + ,`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:314
+msgid "``script_editor/prev_script``"
+msgstr "\\ ``script_editor/prev_script``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid "Reopen Closed Script"
+msgstr "重新打開關閉的腳本"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:316
+msgid "``script_editor/reopen_closed_script``"
+msgstr "\\ ``script_editor/reopen_closed_script``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid "Save"
+msgstr "保存"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid ":kbd:`Ctrl + Alt + S`"
+msgstr "\\ :kbd:`Ctrl + Alt + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid ":kbd:`Cmd + Alt + S`"
+msgstr "\\ :kbd:`Cmd + Alt + S`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:318
+msgid "``script_editor/save``"
+msgstr "\\ ``script_editor/save``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid "Save All"
+msgstr "全部保存"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:320
+msgid "``script_editor/save_all``"
+msgstr "\\ ``script_editor/save_all``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid "Soft Reload Script"
+msgstr "軟重新載入腳本"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:322
+msgid "``script_editor/reload_script_soft``"
+msgstr "\\ ``script_editor/reload_script_soft``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+msgid "History Previous"
+msgstr "上一個歷史記錄"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid ":kbd:`Alt + Left Arrow`"
+msgstr ":kbd:`Alt + 方向鍵左`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:324
+msgid "``script_editor/history_previous``"
+msgstr "\\ ``script_editor/history_previous``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+msgid "History Next"
+msgstr "下一個歷史記錄"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid ":kbd:`Alt + Right Arrow`"
+msgstr ":kbd:`Alt + 方向鍵右`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:326
+msgid "``script_editor/history_next``"
+msgstr "\\ ``script_editor/history_next``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid "Close"
+msgstr "關閉"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid ":kbd:`Ctrl + W`"
+msgstr "\\ :kbd:`Ctrl + W`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid ":kbd:`Cmd + W`"
+msgstr "\\ :kbd:`Cmd + W`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:328
+msgid "``script_editor/close_file``"
+msgstr "\\ ``script_editor/close_file``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid "Run"
+msgstr "執行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid ":kbd:`Ctrl + Shift + X`"
+msgstr "\\ :kbd:`Ctrl + Shift + X`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid ":kbd:`Cmd + Shift + X`"
+msgstr "\\ :kbd:`Cmd + Shift + X`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:330
+msgid "``script_editor/run_file``"
+msgstr "\\ ``script_editor/run_file``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid "Toggle Scripts Panel"
+msgstr "開啟／關閉腳本面板"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid ":kbd:`Ctrl + \\\\`"
+msgstr "\\ :kbd:`Ctrl + \\\\`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid ":kbd:`Cmd + \\\\`"
+msgstr "\\ :kbd:`Cmd + \\\\`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:332
+msgid "``script_editor/toggle_scripts_panel``"
+msgstr "\\ ``script_editor/toggle_scripts_panel``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:334
+msgid "``script_editor/zoom_in``"
+msgstr "\\ ``script_editor/zoom_in``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:336
+msgid "``script_editor/zoom_out``"
+msgstr "\\ ``script_editor/zoom_out``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid "Reset Zoom"
+msgstr "重設縮放大小"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:338
+msgid "``script_editor/reset_zoom``"
+msgstr "\\ ``script_editor/reset_zoom``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:342
+msgid "Visual Script Editor"
+msgstr "視覺腳本 (VisualScript) 編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+msgid "Find Node Type"
+msgstr "尋找節點型別"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:347
+msgid "``visual_script_editor/find_node_type``"
+msgstr "\\ ``visual_script_editor/find_node_type``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+msgid "Copy Nodes"
+msgstr "複製節點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:349
+msgid "``visual_script_editor/copy_nodes``"
+msgstr "\\ ``visual_script_editor/copy_nodes``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+msgid "Cut Nodes"
+msgstr "剪下節點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:351
+msgid "``visual_script_editor/cut_nodes``"
+msgstr "\\ ``visual_script_editor/cut_nodes``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid "Paste Nodes"
+msgstr "貼上節點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:353
+msgid "``visual_script_editor/paste_nodes``"
+msgstr "\\ ``visual_script_editor/paste_nodes``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+msgid "Delete Selected"
+msgstr "刪除所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid ":kbd:`Del`"
+msgstr "\\ :kbd:`Del`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid ":kbd:`Cmd + BkSp`"
+msgstr ":kbd:`Cmd + 退格鍵`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:355
+msgid "``visual_script_editor/delete_selected``"
+msgstr "\\ ``visual_script_editor/delete_selected``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid "Make Function"
+msgstr "產生函式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid ":kbd:`Ctrl + G`"
+msgstr "\\ :kbd:`Ctrl + G`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:357
+msgid "``visual_script_editor/create_function``"
+msgstr "\\ ``visual_script_editor/create_function``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid "Edit Member"
+msgstr "編輯成員"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid ":kbd:`Ctrl + E`"
+msgstr "\\ :kbd:`Ctrl + E`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid ":kbd:`Cmd + E`"
+msgstr "\\ :kbd:`Cmd + E`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:359
+msgid "``visual_script_editor/edit_member``"
+msgstr "\\ ``visual_script_editor/edit_member``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid "Refresh Graph"
+msgstr "重新整理圖表"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:361
+msgid "``visual_script_editor/refresh_nodes``"
+msgstr "\\ ``visual_script_editor/refresh_nodes``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:363
+msgid "``visual_script_editor/toggle_breakpoint``"
+msgstr "\\ ``visual_script_editor/toggle_breakpoint``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:367
+msgid "Editor Output"
+msgstr "編輯器輸出"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid "Copy Selection"
+msgstr "複製所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:372
+msgid "``editor/copy_output``"
+msgstr "\\ ``editor/copy_output``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid "Clear Output"
+msgstr "清除輸出"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:374
+msgid "``editor/clear_output``"
+msgstr "\\ ``editor/clear_output``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:378
+msgid "Debugger"
+msgstr "除錯工具"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid "Step Into"
+msgstr "逐步執行"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid ":kbd:`F11`"
+msgstr "\\ :kbd:`F11`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:383
+msgid "``debugger/step_into``"
+msgstr "\\ ``debugger/step_into``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid "Step Over"
+msgstr "不進入函式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid ":kbd:`F10`"
+msgstr "\\ :kbd:`F10`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:385
+msgid "``debugger/step_over``"
+msgstr "\\ ``debugger/step_over``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+msgid "Continue"
+msgstr "繼續"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+msgid ":kbd:`F12`"
+msgstr "\\ :kbd:`F12`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:387
+msgid "``debugger/continue``"
+msgstr "\\ ``debugger/continue``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:391
+msgid "File Dialog"
+msgstr "檔案對話框"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid "Go Back"
+msgstr "上一頁"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:396
+msgid "``file_dialog/go_back``"
+msgstr "\\ ``file_dialog/go_back``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid "Go Forward"
+msgstr "下一頁"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:398
+msgid "``file_dialog/go_forward``"
+msgstr "\\ ``file_dialog/go_forward``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid "Go Up"
+msgstr "上一層"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:400
+msgid "``file_dialog/go_up``"
+msgstr "\\ ``file_dialog/go_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid "Refresh"
+msgstr "重新整理"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:402
+msgid "``file_dialog/refresh``"
+msgstr "\\ ``file_dialog/refresh``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid "Toggle Hidden Files"
+msgstr "顯示／隱藏隱藏檔案"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid ":kbd:`Ctrl + H`"
+msgstr "\\ :kbd:`Ctrl + H`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid ":kbd:`Cmd + H`"
+msgstr "\\ :kbd:`Cmd + H`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:404
+msgid "``file_dialog/toggle_hidden_files``"
+msgstr "\\ ``file_dialog/toggle_hidden_files``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid "Toggle Favorite"
+msgstr "新增／取消我的最愛"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:406
+msgid "``file_dialog/toggle_favorite``"
+msgstr "\\ ``file_dialog/toggle_favorite``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid "Toggle Mode"
+msgstr "切換模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid ":kbd:`Alt + V`"
+msgstr "\\ :kbd:`Alt + V`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:408
+msgid "``file_dialog/toggle_mode``"
+msgstr "\\ ``file_dialog/toggle_mode``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid "Create Folder"
+msgstr "建立資料夾"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid ":kbd:`Ctrl + N`"
+msgstr "\\ :kbd:`Ctrl + N`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid ":kbd:`Cmd + N`"
+msgstr "\\ :kbd:`Cmd + N`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:410
+msgid "``file_dialog/create_folder``"
+msgstr "\\ ``file_dialog/create_folder``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+msgid "Delete"
+msgstr "刪除"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:412
+msgid "``file_dialog/delete``"
+msgstr "\\ ``file_dialog/delete``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+msgid "Focus Path"
+msgstr "聚焦路徑"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid ":kbd:`Cmd + D`"
+msgstr "\\ :kbd:`Cmd + D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:414
+msgid "``file_dialog/focus_path``"
+msgstr "\\ ``file_dialog/focus_path``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+msgid "Move Favorite Up"
+msgstr "向上移動我的最愛"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid ":kbd:`Ctrl + Up Arrow`"
+msgstr ":kbd:`Ctrl + 方向鍵上`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid ":kbd:`Cmd + Up Arrow`"
+msgstr ":kbd:`Cmd + 方向鍵上`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:416
+msgid "``file_dialog/move_favorite_up``"
+msgstr "\\ ``file_dialog/move_favorite_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+msgid "Move Favorite Down"
+msgstr "向下移動我的最愛"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid ":kbd:`Ctrl + Down Arrow`"
+msgstr ":kbd:`Ctrl + 方向鍵下`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid ":kbd:`Cmd + Down Arrow`"
+msgstr ":kbd:`Cmd + 方向鍵下`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:418
+msgid "``file_dialog/move_favorite_down``"
+msgstr "\\ ``file_dialog/move_favorite_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:422
+msgid "FileSystem Dock"
+msgstr "檔案系統 Dock"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+msgid "Copy Path"
+msgstr "複製路徑"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:427
+msgid "``filesystem_dock/copy_path``"
+msgstr "\\ ``filesystem_dock/copy_path``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+msgid "Duplicate"
+msgstr "重複"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:429
+msgid "``filesystem_dock/duplicate``"
+msgstr "\\ ``filesystem_dock/duplicate``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:431
+msgid "``filesystem_dock/delete``"
+msgstr "\\ ``filesystem_dock/delete``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:435
+msgid "Scene Tree Dock"
+msgstr "場景樹 Dock"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid "Add Child Node"
+msgstr "新增子節點"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:440
+msgid "``scene_tree/add_child_node``"
+msgstr "\\ ``scene_tree/add_child_node``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid "Batch Rename"
+msgstr "批次重新命名"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Ctrl + F2`"
+msgstr "\\ :kbd:`Ctrl + F2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Cmd + F2`"
+msgstr "\\ :kbd:`Cmd + F2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid "``scene_tree/batch_rename``"
+msgstr "\\ ``scene_tree/batch_rename``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+msgid "Copy Node Path"
+msgstr "複製節點路徑"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:444
+msgid "``scene_tree/copy_node_path``"
+msgstr "\\ ``scene_tree/copy_node_path``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:446
+msgid "``scene_tree/delete``"
+msgstr "\\ ``scene_tree/delete``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid "Force Delete"
+msgstr "強制刪除"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid ":kbd:`Shift + Del`"
+msgstr "\\ :kbd:`Shift + Del`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:448
+msgid "``scene_tree/delete_no_confirm``"
+msgstr "\\ ``scene_tree/delete_no_confirm``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:450
+msgid "``scene_tree/duplicate``"
+msgstr "\\ ``scene_tree/duplicate``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:452
+msgid "``scene_tree/move_up``"
+msgstr "\\ ``scene_tree/move_up``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:454
+msgid "``scene_tree/move_down``"
+msgstr "\\ ``scene_tree/move_down``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:458
+msgid "Animation Track Editor"
+msgstr "動畫軌編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid "Duplicate Selection"
+msgstr "重複所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:463
+msgid "``animation_editor/duplicate_selection``"
+msgstr "\\ ``animation_editor/duplicate_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid "Duplicate Transposed"
+msgstr "轉置並重複"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr "\\ :kbd:`Ctrl + Shift + D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid ":kbd:`Cmd + Shift + D`"
+msgstr "\\ :kbd:`Cmd + Shift + D`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:465
+msgid "``animation_editor/duplicate_selection_transposed``"
+msgstr "\\ ``animation_editor/duplicate_selection_transposed``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+msgid "Delete Selection"
+msgstr "刪除所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:467
+msgid "``animation_editor/delete_selection``"
+msgstr "\\ ``animation_editor/delete_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid "Go to Next Step"
+msgstr "跳至下一步"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid ":kbd:`Ctrl + Right Arrow`"
+msgstr ":kbd:`Ctrl + 方向鍵右`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid ":kbd:`Cmd + Right Arrow`"
+msgstr ":kbd:`Cmd + 方向鍵右`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:469
+msgid "``animation_editor/goto_next_step``"
+msgstr "\\ ``animation_editor/goto_next_step``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid "Go to Previous Step"
+msgstr "跳至上一步"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid ":kbd:`Ctrl + Left Arrow`"
+msgstr ":kbd:`Ctrl + 方向鍵左`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid ":kbd:`Cmd + Left Arrow`"
+msgstr ":kbd:`Cmd + 方向鍵左`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:471
+msgid "``animation_editor/goto_prev_step``"
+msgstr "\\ ``animation_editor/goto_prev_step``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:475
+msgid "Tile Map Editor"
+msgstr "圖塊地圖編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid "Find Tile"
+msgstr "搜尋圖塊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:480
+msgid "``tile_map_editor/find_tile``"
+msgstr "\\ ``tile_map_editor/find_tile``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid "Pick Tile"
+msgstr "選擇圖塊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid ":kbd:`I`"
+msgstr "\\ :kbd:`I`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:482
+msgid "``tile_map_editor/pick_tile``"
+msgstr "\\ ``tile_map_editor/pick_tile``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid "Paint Tile"
+msgstr "繪製圖塊"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid ":kbd:`P`"
+msgstr "\\ :kbd:`P`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:484
+msgid "``tile_map_editor/paint_tile``"
+msgstr "\\ ``tile_map_editor/paint_tile``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid "Bucket Fill"
+msgstr "油漆桶填滿"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:486
+msgid "``tile_map_editor/bucket_fill``"
+msgstr "\\ ``tile_map_editor/bucket_fill``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+msgid "Transpose"
+msgstr "切換行列（縱橫）顯示"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:488
+msgid "``tile_map_editor/transpose``"
+msgstr "\\ ``tile_map_editor/transpose``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid "Flip Horizontally"
+msgstr "水平翻轉"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid ":kbd:`X`"
+msgstr "\\ :kbd:`X`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:490
+msgid "``tile_map_editor/flip_horizontal``"
+msgstr "\\ ``tile_map_editor/flip_horizontal``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid "Flip Vertically"
+msgstr "垂直翻轉"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid ":kbd:`Z`"
+msgstr "\\ :kbd:`Z`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:492
+msgid "``tile_map_editor/flip_vertical``"
+msgstr "\\ ``tile_map_editor/flip_vertical``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid "Rotate Left"
+msgstr "向左旋轉"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:494
+msgid "``tile_map_editor/rotate_left``"
+msgstr "\\ ``tile_map_editor/rotate_left``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+msgid "Rotate Right"
+msgstr "向右旋轉"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:496
+msgid "``tile_map_editor/rotate_right``"
+msgstr "\\ ``tile_map_editor/rotate_right``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+msgid "Clear Transform"
+msgstr "清除變換"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:498
+msgid "``tile_map_editor/clear_transform``"
+msgstr "\\ ``tile_map_editor/clear_transform``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid "Select"
+msgstr "選擇"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid ":kbd:`M`"
+msgstr "\\ :kbd:`M`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:500
+msgid "``tile_map_editor/select``"
+msgstr "\\ ``tile_map_editor/select``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid "Cut Selection"
+msgstr "剪下所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:502
+msgid "``tile_map_editor/cut_selection``"
+msgstr "\\ ``tile_map_editor/cut_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:504
+msgid "``tile_map_editor/copy_selection``"
+msgstr "\\ ``tile_map_editor/copy_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid "Erase Selection"
+msgstr "清除所選"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:506
+msgid "``tile_map_editor/erase_selection``"
+msgstr "\\ ``tile_map_editor/erase_selection``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:510
+msgid "Tileset Editor"
+msgstr "圖塊集編輯器"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid "Next Coordinate"
+msgstr "下一個座標"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:515
+msgid "``tileset_editor/next_shape``"
+msgstr "\\ ``tileset_editor/next_shape``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid "Previous Coordinate"
+msgstr "上一個座標"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid ":kbd:`PgUp`"
+msgstr "\\ :kbd:`PgUp`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:517
+msgid "``tileset_editor/previous_shape``"
+msgstr "\\ ``tileset_editor/previous_shape``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+msgid "Region Mode"
+msgstr "區域模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+msgid ":kbd:`1`"
+msgstr "\\ :kbd:`1`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:519
+msgid "``tileset_editor/editmode_region``"
+msgstr "\\ ``tileset_editor/editmode_region``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+msgid "Collision Mode"
+msgstr "碰撞模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+msgid ":kbd:`2`"
+msgstr "\\ :kbd:`2`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:521
+msgid "``tileset_editor/editmode_collision``"
+msgstr "\\ ``tileset_editor/editmode_collision``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+msgid "Occlusion Mode"
+msgstr "遮擋模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+msgid ":kbd:`3`"
+msgstr "\\ :kbd:`3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:523
+msgid "``tileset_editor/editmode_occlusion``"
+msgstr "\\ ``tileset_editor/editmode_occlusion``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+msgid "Navigation Mode"
+msgstr "導航模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+msgid ":kbd:`4`"
+msgstr "\\ :kbd:`4`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:525
+msgid "``tileset_editor/editmode_navigation``"
+msgstr "\\ ``tileset_editor/editmode_navigation``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+msgid "Bitmask Mode"
+msgstr "優先模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+msgid ":kbd:`5`"
+msgstr "\\ :kbd:`5`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:527
+msgid "``tileset_editor/editmode_bitmask``"
+msgstr "\\ ``tileset_editor/editmode_bitmask``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid "Priority Mode"
+msgstr "優先模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid ":kbd:`6`"
+msgstr "\\ :kbd:`6`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:529
+msgid "``tileset_editor/editmode_priority``"
+msgstr "\\ ``tileset_editor/editmode_priority``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+msgid "Icon Mode"
+msgstr "圖示模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+msgid ":kbd:`7`"
+msgstr "\\ :kbd:`7`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:531
+msgid "``tileset_editor/editmode_icon``"
+msgstr "\\ ``tileset_editor/editmode_icon``"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid "Z Index Mode"
+msgstr "Z 索引模式"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid ":kbd:`8`"
+msgstr "\\ :kbd:`8`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:533
+msgid "``tileset_editor/editmode_z_index``"
+msgstr "\\ ``tileset_editor/editmode_z_index``"

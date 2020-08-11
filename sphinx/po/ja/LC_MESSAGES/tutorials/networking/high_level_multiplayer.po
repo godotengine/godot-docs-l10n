@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -666,7 +666,7 @@ msgstr ""
 "という名前を付けるだけです。このように、それらはすべてのピアで同じになり、RPC"
 "はうまく機能します！次に例を示します:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:297
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:298
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
 "any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
@@ -678,11 +678,11 @@ msgstr ""
 "``call_deferred()`` を介して遅延されるように ``add_child()`` への呼び出しを変"
 "更する必要がある場合があります。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid "Synchronizing game start"
 msgstr "ゲームの開始を同期する"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:303
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:304
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
 "to lag, different hardware, or other reasons. To make sure the game will "
@@ -694,7 +694,7 @@ msgstr ""
 "ゲームが実際に開始されるようにするには、すべてのプレイヤーの準備が整うまで"
 "ゲームを一時停止すると便利です:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:312
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:313
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
@@ -702,11 +702,11 @@ msgstr ""
 "サーバーは、すべてのピアからOKを取得すると、たとえば次のように開始するように"
 "指示できます:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:333
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
 msgstr "ゲームの同期"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:335
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
@@ -718,11 +718,11 @@ msgstr ""
 "トの実装を提供することに加えて、Godotはネットワークマスターの概念を追加しま"
 "す。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "Network master"
 msgstr "ネットワークマスター"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
@@ -730,7 +730,7 @@ msgstr ""
 "ノードのネットワークマスターは、そのノードに対する最終的な権限を持つピアで"
 "す。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
 "node, which if not changed, is always going to be the server (ID 1). Thus "
@@ -740,7 +740,7 @@ msgstr ""
 "いない場合は常にサーバー(ID 1)になります。したがって、サーバーにはデフォルト"
 "ですべてのノードに対する権限があります。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
@@ -752,7 +752,7 @@ msgstr ""
 "フォルトでは再帰は ``true`` で、ネットワークマスターは同様にノードのすべての"
 "子ノードに再帰的に設定されます)。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
@@ -764,7 +764,7 @@ msgstr ""
 "ノードのネットワークマスターであることを確認できます。これは、サーバーで実行"
 "されると ``true`` を返し、すべてのクライアントピアで ``false`` を返します。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
 "noticed that each peer was set to have network master authority for their "
@@ -774,7 +774,7 @@ msgstr ""
 "ド)のネットワークマスター権限を持つように設定されていることに気付くかもしれま"
 "せん:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:370
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:374
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
@@ -784,7 +784,7 @@ msgstr ""
 "になり、他のすべてのノードはサーバがネットワーク マスターである Puppet として"
 "残ります。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:372
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:376
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
@@ -794,11 +794,11 @@ msgstr ""
 "demo-projects/tree/master/networking/multiplayer_bomber>`_ でどのように見える"
 "かの例を示します:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:379
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
 msgid "Master and puppet keywords"
 msgstr "マスターとパペットのキーワード"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:387
 msgid ""
 "The real advantage of this model is when used with the ``master``/``puppet`` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
@@ -808,50 +808,88 @@ msgstr ""
 "C#とVisual Scriptの同等のキーワード)で使用する場合です。\\ ``remote`` キー"
 "ワードと同様に、関数にもそれらのタグを付けることができます:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:390
 msgid "Example bomb code:"
 msgstr "爆弾のコード例:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:394
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:398
 msgid "Example player code:"
 msgstr "プレイヤーのコード例:"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:408
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:415
+#, fuzzy
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
-"is master). The bomb knows the bodies in the area, so it checks them and "
-"checks that they contain an ``exploded`` function."
+"is the master of this bomb-node, e.g. the host). The bomb knows the bodies "
+"(player nodes) in the area, so it checks that they contain an ``exploded`` "
+"method before calling it."
 msgstr ""
 "上記の例では、爆弾がどこかで爆発します(おそらく、マスターである人によって管理"
 "されます)。爆弾はそのエリアの死体を知っているので、彼らはそれらをチェックし、"
 "それらが ``exploded`` 関数を含んでいることをチェックします。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:418
 msgid ""
-"If they do, the bomb calls ``exploded`` on it. However, the ``exploded`` "
-"method in the player has a ``master`` keyword. This means that only the "
-"player who is master for that instance will actually get the function."
+"Recall that each peer has a complete set of instances of player nodes, one "
+"instance for each peer (including itself and the host). Each peer has set "
+"itself as the master of the instance corresponding to itself, and it has set "
+"a different peer as the master for each of the other instances."
 msgstr ""
-"そうした場合、爆弾は ``爆発(exploded)`` します。ただし、プレイヤーの "
-"``exploded`` メソッドには ``master`` キーワードがあります。これは、そのインス"
-"タンスのマスターであるプレイヤーのみが実際に関数を取得することを意味します。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
-"This instance, then, calls the ``stun`` method in the same instances of that "
-"same player (but in different peers), and only those which are set as "
-"puppet, making the player look stunned in all the peers (as well as the "
-"current, master one)."
+"Now, going back to the call to the ``exploded`` method, the bomb on the host "
+"has called it remotely on all bodies in the area that have the method. "
+"However, this method is in a player node and has a ``master`` keyword."
 msgstr ""
-"次に、このインスタンスは、同じプレイヤーの同じインスタンス(ただし、異なるピ"
-"ア)で ``stun`` メソッドを呼び出し、puppetとして設定されているインスタンスのみ"
-"を呼び出して、すべてのピアでプレイヤーを驚かせます(および現在のマスターも)。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
+msgid ""
+"The ``master`` keyword on the ``exploded`` method in the player node means "
+"two things for how this call is made. Firstly, from the perspective of the "
+"calling peer (the host), the calling peer will only attempt to remotely call "
+"the method on the peer that it has set as the network master of the player "
+"node in question. Secondly, from the perspective of the peer the host is "
+"sending the call to, the peer will only accept the call if it set itself as "
+"the network master of the player node with the method being called (which "
+"has the ``master`` keyword). This works well as long as all peers agree on "
+"who is the master of what."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:432
+msgid ""
+"The above setup means that only the peer who owns the affected body will be "
+"responsible for telling all the other peers that its body was stunned, after "
+"being remotely instructed to do so by the host's bomb. The owning peer "
+"therefore (still in the ``exploded`` method) tells all the other peers that "
+"its player node was stunned. The peer does this by remotely calling the "
+"``stun`` method on all instances of that player node (on the other peers). "
+"Because the ``stun`` method has the ``puppet`` keyword, only peers who did "
+"not set themselves as the network master of the node will call it (in other "
+"words, those peers are set as puppets for that node by virtue of not being "
+"the network master of it)."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
+msgid ""
+"The result of this call to ``stun`` is to make the player look stunned on "
+"the screen of all the peers, including the current network master peer (due "
+"to the local call to ``stun`` after ``rpc(\"stun\")``)."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:442
+msgid ""
+"The master of the bomb (the host) repeats the above steps for each of the "
+"bodies in the area, such that all the instances of any player in the bomb "
+"area get stunned on the screens of all the peers."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
+#, fuzzy
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
-"make much sense for an area-of-effect case like the bomb, but in other "
+"make much sense for an area-of-effect case like the bomb, but might in other "
 "cases, like single target damage."
 msgstr ""
 "``rpc_id(<id>, \"exploded\", bomb_owner)`` を使用して、特定のプレイヤーにの"
@@ -859,22 +897,33 @@ msgstr ""
 "囲の場合にはあまり意味をなさないかもしれませんが、他の場合では、単一のター"
 "ゲットにダメージを与えるなどに使えます。"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
 #, fuzzy
 msgid "Exporting for dedicated servers"
 msgstr "Webのエクスポート"
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:427
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:455
 msgid ""
 "Once you've made a multiplayer game, you may want to export it to run it on "
 "a dedicated server with no GPU available. See :ref:"
 "`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:433
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:461
 msgid ""
 "The code samples on this page aren't designed to run on a dedicated server. "
 "You'll have to modify them so the server isn't considered to be a player. "
 "You'll also have to modify the game starting mechanism so that the first "
 "player who joins can start the game."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
+msgid ""
+"The bomberman example here is largely for illustrational purposes, and does "
+"not do anything on the host-side to handle the case where a peer uses a "
+"custom client to cheat by for example refusing to to stun itself. In the "
+"current implementation such cheating is perfectly possible because each "
+"client is the network master of its own player, and the network master of a "
+"player is the one which decides whether to call the I-was-stunned method "
+"(``stun``) on all of the other peers and itself."
 msgstr ""

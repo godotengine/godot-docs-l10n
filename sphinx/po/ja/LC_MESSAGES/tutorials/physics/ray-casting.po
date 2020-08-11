@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,11 +219,17 @@ msgstr ""
 "ば、親ボディと同じマスクを使用するには、\\ ``collision_mask`` メンバー変数を"
 "使用します:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:226
+#: ../../docs/tutorials/physics/ray-casting.rst:224
+msgid ""
+"See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
+"on how to set the collision mask."
+msgstr ""
+
+#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
 msgstr "画面からの3Dレイキャスティング"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:228
+#: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "
@@ -236,7 +242,7 @@ msgstr ""
 "クリックされたときに通知されるため、これを行う必要はあまりありませんが、手動"
 "で行う場合は次のようにします。"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:234
+#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -250,11 +256,11 @@ msgstr ""
 "す。 これは、\\ ``orgin`` が直交法モードで変化し、\\ ``bormal`` が遠近法モー"
 "ドで変化するためです:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:242
+#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr "カメラを使用して取得するには、次のコードを使用できます:"
 
-#: ../../docs/tutorials/physics/ray-casting.rst:270
+#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."

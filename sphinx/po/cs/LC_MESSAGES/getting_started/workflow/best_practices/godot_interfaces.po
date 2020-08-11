@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:4
+msgid "Godot interfaces"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:6
+msgid ""
+"Often one needs scripts that rely on other objects for features. There are 2 "
+"parts to this process:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
+msgid "Acquiring a reference to the object that presumably has the features."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
+msgid "Accessing the data or logic from the object."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
+msgid "The rest of this tutorial outlines the various ways of doing all this."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
+msgid "Acquiring object references"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:18
+msgid ""
+"For all :ref:`Object <class_Object>`\\s, the most basic way of referencing "
+"them is to get a reference to an existing object from another acquired "
+"instance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
+msgid ""
+"The same principle applies for :ref:`Reference <class_Reference>` objects. "
+"While users often access :ref:`Node <class_Node>` and :ref:`Resource "
+"<class_Resource>` this way, alternative measures are available."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
+msgid ""
+"Instead of property or method access, one can get Resources by load access."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
+msgid "Note the following:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
+msgid "There are many ways in which a language can load such resources."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
+msgid ""
+"When designing how objects will access data, don't forget that one can pass "
+"resources around as references as well."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
+msgid ""
+"Keep in mind that loading a resource fetches the cached resource instance "
+"maintained by the engine. To get a new object, one must :ref:`duplicate "
+"<class_Resource_method_duplicate>` an existing reference or instantiate one "
+"from scratch with ``new()``."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
+msgid "Nodes likewise have an alternative access point: the SceneTree."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
+msgid "Accessing data or logic from an object"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
+msgid ""
+"Godot's scripting API is duck-typed. This means that if a script executes an "
+"operation, Godot doesn't validate that it supports the operation by "
+"**type**. It instead checks that the object **implements** the individual "
+"method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
+msgid ""
+"For example, the :ref:`CanvasItem <class_CanvasItem>` class has a "
+"``visible`` property. All properties exposed to the scripting API are in "
+"fact a setter and getter pair bound to a name. If one tried to access :ref:"
+"`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
+"do the following checks, in order:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
+msgid ""
+"If the object has a script attached, it will attempt to set the property "
+"through the script. This leaves open the opportunity for scripts to override "
+"a property defined on a base object by overriding the setter method for the "
+"property."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
+msgid ""
+"If the script does not have the property, it performs a HashMap lookup in "
+"the ClassDB for the \"visible\" property against the CanvasItem class and "
+"all of its inherited types. If found, it will call the bound setter or "
+"getter. For more information about HashMaps, see the :ref:`data preferences "
+"<doc_data_preferences>` docs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:267
+msgid ""
+"If not found, it does an explicit check to see if the user wants to access "
+"the \"script\" or \"meta\" properties."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
+msgid ""
+"If not, it checks for a ``_set``/``_get`` implementation (depending on type "
+"of access) in the CanvasItem and its inherited types. These methods can "
+"execute logic that gives the impression that the Object has a property. This "
+"is also the case with the ``_get_property_list`` method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
+msgid ""
+"Note that this happens even for non-legal symbol names such as in the case "
+"of :ref:`TileSet <class_TileSet>`'s \"1/tile_name\" property. This refers to "
+"the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
+"<class_TileSet_method_tile_get_name>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
+msgid ""
+"As a result, this duck-typed system can locate a property either in the "
+"script, the object's class, or any class that object inherits, but only for "
+"things which extend Object."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
+msgid ""
+"Godot provides a variety of options for performing runtime checks on these "
+"accesses:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
+msgid ""
+"A duck-typed property access. These will property check (as described "
+"above). If the operation isn't supported by the object, execution will halt."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
+msgid ""
+"A method check. In the case of :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>`, one can access the methods, "
+"``set_visible`` and ``is_visible`` like any other method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
+msgid ""
+"Outsource the access to a :ref:`FuncRef <class_FuncRef>`. These may be "
+"useful in cases where one needs the max level of freedom from dependencies. "
+"In this case, one relies on an external context to setup the method."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
+msgid ""
+"These strategies contribute to Godot's flexible design. Between them, users "
+"have a breadth of tools to meet their specific needs."
+msgstr ""

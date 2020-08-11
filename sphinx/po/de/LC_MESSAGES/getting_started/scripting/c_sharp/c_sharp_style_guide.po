@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language specification"
-msgstr ""
+msgstr "Sprachspezifisch"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
 msgid ""
@@ -67,18 +67,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-#, fuzzy
 msgid "Formatting"
-msgstr "Format"
+msgstr "Formatierung"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
-#, fuzzy
 msgid "General guidelines"
-msgstr "Richtlinien Dokumentation"
+msgstr "Generelle Richtlinien"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
-msgstr ""
+msgstr "Nutze Line Feed (**LF**) zum Zeilenumbruch, nicht CRLF oder CR."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
 msgid ""
@@ -122,14 +120,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
 msgid "However, you may choose to omit line breaks inside brackets:"
 msgstr ""
+"Wie auch immer, es sollten Zeilenumbrüche innerhalb von Klammern vermieden "
+"werden:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
 msgid "For simple property accessors."
-msgstr ""
+msgstr "Für einfache Zugriffsfunktionen (Property Accessors)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
-msgstr ""
+msgstr "Für einfache Objekte, Felder oder Collection Initializer."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
 msgid "Insert a blank line:"
-msgstr ""
+msgstr "eine leere Zeile einfügen:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 msgid "After a list of ``using`` statements."
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "At the end of each file."
-msgstr ""
+msgstr "Am Ende jeder Datei."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid ""
@@ -160,23 +160,23 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
 msgid "Avoid inserting a blank line:"
-msgstr ""
+msgstr "Vermeide Leerzeilen einzufügen:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
 msgid "After ``{``, the opening brace."
-msgstr ""
+msgstr "Nach ``{``, der öffnenden Klammer."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
 msgid "Before ``}``, the closing brace."
-msgstr ""
+msgstr "Vor ``}``, der schließenden Klammer."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
 msgid "After a comment block or a single-line comment."
-msgstr ""
+msgstr "Nach einem Kommentar-Block oder einem einzeiligem Kommentar."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
 msgid "Adjacent to another blank line."
-msgstr ""
+msgstr "Angrenzend an eine weitere Leerzeile."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Using spaces"
@@ -184,17 +184,19 @@ msgstr "Verwendung von Leerzeichen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "Insert a space:"
-msgstr ""
+msgstr "Leerzeichen einfügen:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "Around a binary and tertiary operator."
-msgstr ""
+msgstr "Um binäre und tertiäre Operatoren."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
 "``while``, ``lock`` or ``using`` keywords."
 msgstr ""
+"Zwischen einer öffnenden Klammer und ``if``, ``for``, ``foreach``, "
+"``catch``, ``while``, ``lock`` oder ``using`` Schlüsselwörtern."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "Before and within a single line accessor block."
@@ -206,33 +208,35 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
 msgid "After a comma which is not at the end of a line."
-msgstr ""
+msgstr "Nach einem Komma das nicht am Ende der Zeile steht."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 msgid "After a semicolon in a ``for`` statement."
-msgstr ""
+msgstr "Nach einem Semikolon in einer ``for`` Statement."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
 msgid "After a colon in a single line ``case`` statement."
-msgstr ""
+msgstr "Nach einem Doppelpunkt in einem einzelnen ``case`` Statement."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "Around a colon in a type declaration."
-msgstr ""
+msgstr "Um einem Doppelpunkt in einer Typ Deklaration."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
 msgid "Around a lambda arrow."
-msgstr ""
+msgstr "Um den Lambda Pfeil."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
 msgstr ""
+"Nach einem einzeiligem Kommentar-Symbol (``//``) und bevor es am Ende einer "
+"Zeile genutzt wird."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
 msgid "Do not use a space:"
-msgstr ""
+msgstr "Nutze kein Leerzeichen:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
 msgid "After type cast parentheses."
@@ -301,9 +305,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
-#, fuzzy
 msgid "Rather than:"
-msgstr "Andere Chats"
+msgstr "besser als:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
 #, fuzzy
@@ -318,9 +321,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
-#, fuzzy
 msgid "Local variables"
-msgstr "Lokale Koordinaten"
+msgstr "Lokale Variablen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
 msgid ""
@@ -342,7 +344,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
 msgid "Other considerations"
-msgstr ""
+msgstr "Andere Überlegungen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:316
 msgid "Use explicit access modifiers."

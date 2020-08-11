@@ -1,0 +1,536 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
+msgid "GDScript format strings"
+msgstr "GDScript 格式化字串"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
+msgid ""
+"GDScript offers a feature called *format strings*, which allows reusing text "
+"templates to succinctly create different but similar strings."
+msgstr ""
+"GDScript 提供了 **格式化字串** 功能，通過格式化字串能重複使用一個文字樣板，並"
+"尷尬地建立類似但不同的字串。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
+msgid ""
+"Format strings are just like normal strings, except they contain certain "
+"placeholder character-sequences. These placeholders can then easily be "
+"replaced by parameters handed to the format string."
+msgstr ""
+"格式化字串就像普通的字串，但格式化字串包含了特定的預留位置字元順序。這些預留"
+"位置能夠通過將參數傳遞給格式化字串來替換掉。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
+msgid ""
+"As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
+"how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
+"Notice the placeholder is in the middle of the string; modifying it without "
+"format strings could be cumbersome."
+msgstr ""
+"例如，若使用 ``%s`` 作為預留位置，格式化字串 ``\"你好 %s，你吃飽沒？\"`` 就能"
+"簡單地換成 ``\"你好 世界，你吃飽沒？\"`` 。可以注意到，預留位置在字串的中間，"
+"若不使用格式化字串來處理就會變得很麻煩。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
+msgid "Usage in GDScript"
+msgstr "在 GDScript 中使用"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
+msgid "Examine this concrete GDScript example:"
+msgstr "來看看這個實際的 GDScript 例子："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
+msgid ""
+"Placeholders always start with a ``%``, but the next character or "
+"characters, the *format specifier*, determines how the given value is "
+"converted to a string."
+msgstr ""
+"預留位置都以 ``%`` 開頭，而接下來的字元 —— **格式規範** —— 則用來判斷給定的數"
+"值要如何轉換為字串。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
+msgid ""
+"The ``%s`` seen in the example above is the simplest placeholder and works "
+"for most use cases: it converts the value by the same method by which an "
+"implicit String conversion or ``str()`` would convert it. Strings remain "
+"unchanged, Booleans turn into either ``\"True\"`` or ``\"False\"``, an "
+"integral or real number becomes a decimal, other types usually return their "
+"data in a human-readable string."
+msgstr ""
+"在剛才的例子中， ``%s`` 是最簡單的預留位置，適用於大部分的情況。 ``%s`` 會以"
+"與 ``str()`` 轉換字串相同的方法將數值轉換為字串。若數值為字串則會保持相同，布"
+"林會轉為 ``\"True\"`` 或 ``\"False\"`` ，整數或實數則會轉為十進位值，其餘型別"
+"則通常會將資料轉換為人類看得懂的字串。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
+msgid ""
+"There is also another way to format text in GDScript, namely the ``String."
+"format()`` method. It replaces all occurrences of a key in the string with "
+"the corresponding value. The method can handle arrays or dictionaries for "
+"the key/value pairs."
+msgstr ""
+"GDScript 中還有另一個格式化文字的方法，即 ``String.format()`` 方法。``String."
+"format()`` 會將字串中出現的所有索引鍵都取代為對應的值。此方法能處理陣列或索引"
+"鍵／值組的字典。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
+msgid ""
+"Arrays can be used as key, index, or mixed style (see below examples). Order "
+"only matters when the index or mixed style of Array is used."
+msgstr ""
+"陣列可以作為索引鍵、索引、或混合樣式來使用（見下方範例）。只有在使用陣列的混"
+"合樣式時才需要注意順序。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
+msgid "A quick example in GDScript:"
+msgstr "GDScript 中的簡單範例："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
+msgid ""
+"There are other `format specifiers`_, but they are only applicable when "
+"using the ``%`` operator."
+msgstr "還有其他的 `格式規範`_ ，但其他格式規範只有 ``%`` 運算元才可以用。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
+msgid "Multiple placeholders"
+msgstr "多預留位置"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
+msgid ""
+"Format strings may contain multiple placeholders. In such a case, the values "
+"are handed in the form of an array, one value per placeholder (unless using "
+"a format specifier with ``*``, see `dynamic padding`_):"
+msgstr ""
+"格式化字串可以包含多個預留位置。這時，數值必須以陣列形式來傳遞，一個數值一個"
+"預留位置 (除非使用 ``*`` 格式規範，請參見 `動態填充`_ )："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
+msgid ""
+"Note the values are inserted in order. Remember all placeholders must be "
+"replaced at once, so there must be an appropriate number of values."
+msgstr ""
+"請注意，數值為按照順序插入。請記得所有的預留位置都必須同時取代，所以必須傳入"
+"正確數量的值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
+msgid "Format specifiers"
+msgstr "格式規範"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
+msgid ""
+"There are format specifiers other than ``s`` that can be used in "
+"placeholders. They consist of one or more characters. Some of them work by "
+"themselves like ``s``, some appear before other characters, some only work "
+"with certain values or characters."
+msgstr ""
+"除了 ``s`` 之外還能在預留位置上使用其他格式規範。這些格式規範都由一個或多個字"
+"元組成。有的格式規範與 ``s`` 一樣只需要填寫格式規範就好，有的格式規範則必須在"
+"其他字元前使用，還有的格式規範只能使用於特定的數值或字元。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
+msgid "Placeholder types"
+msgstr "預留位置型"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
+msgid ""
+"One and only one of these must always appear as the last character in a "
+"format specifier. Apart from ``s``, these require certain types of "
+"parameters."
+msgstr ""
+"下表當中必須選擇一個 (且至多選擇一個) 作為格式規範的最後一個字元。除了 ``s`` "
+"外，其他的格式規範還需要特定類型的參數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
+msgid "``s``"
+msgstr "``s``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
+msgid ""
+"**Simple** conversion to String by the same method as implicit String "
+"conversion."
+msgstr "使用與字串轉換方式相同的方法， **單純** 將數值轉為字串。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
+msgid "``c``"
+msgstr "``c``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
+msgid ""
+"A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
+"for a code point or a single-character string."
+msgstr ""
+"單一 **Unicode 字元** 。需要輸入無號 8 位元整數 (0-255) 作為字碼指標或單一字"
+"元字串。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
+msgid "``d``"
+msgstr "``d``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
+msgid ""
+"A **decimal integral** number. Expects an integral or real number (will be "
+"floored)."
+msgstr "**十進位整數** 數字。需要輸入一個整數或實數 (實數將無條件捨去)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
+msgid "``o``"
+msgstr "``o``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
+msgid ""
+"An **octal integral** number. Expects an integral or real number (will be "
+"floored)."
+msgstr "**八進位整數** 數字。需要輸入一個整數或實數 (實數將無條件捨去)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
+msgid "``x``"
+msgstr "``x``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
+msgid ""
+"A **hexadecimal integral** number with **lower-case** letters. Expects an "
+"integral or real number (will be floored)."
+msgstr ""
+"使用 **小寫字母** 的 **十六進位整數** 數字。需要輸入一個整數或實數 (實數將無"
+"條件捨去)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
+msgid "``X``"
+msgstr "``X``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
+msgid ""
+"A **hexadecimal integral** number with **upper-case** letters. Expects an "
+"integral or real number (will be floored)."
+msgstr ""
+"使用 **大寫字母** 的 **十進位整數** 數字。需要輸入一個整數或實數 (實數將無條"
+"件捨去)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
+msgid "``f``"
+msgstr "``f``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
+msgid "A **decimal real** number. Expects an integral or real number."
+msgstr "**十進位實數** 。需要輸入一個整數或實數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
+msgid "Placeholder modifiers"
+msgstr "預留位置修飾元"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
+msgid ""
+"These characters appear before the above. Some of them work only under "
+"certain conditions."
+msgstr "這些字元放置於上表中字串的前面。有部分修飾元只能在特定情況下使用。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
+msgid "``+``"
+msgstr "``+``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
+msgid "In number specifiers, **show + sign** if positive."
+msgstr "在數字格式規範中，若為正數則 **顯示 + 號** 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
+msgid "Integer"
+msgstr "整數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
+msgid ""
+"Set **padding**. Padded with spaces or with zeroes if integer starts with "
+"``0`` in an integer placeholder. When used after ``.``, see ``.``."
+msgstr ""
+"設定 **填充**。若該整數以 ``0`` 開頭則以 0 填充，否則以空白填充。若在 ``.`` "
+"後使用，請參見 ``.`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
+msgid "``.``"
+msgstr "``.``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
+msgid ""
+"Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
+"numbers to change. Padded with zeroes."
+msgstr ""
+"在 ``f`` 之前使用，將小數點 **精度** 設到 0 小數位。可以在後方加上數字來更改"
+"精度。以 0 填充。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
+msgid "``-``"
+msgstr "``-``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
+msgid "**Pad to the right** rather than the left."
+msgstr "**向右填充** ，而非向左。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
+msgid "``*``"
+msgstr "``*``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
+msgid ""
+"**Dynamic padding**, expect additional integral parameter to set padding or "
+"precision after ``.``, see `dynamic padding`_."
+msgstr ""
+"**動態填充** ，需要配合額外的整數參數來設定 ``.`` 後的填充或精度，請參見 `動"
+"態填充`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
+msgid "Padding"
+msgstr "填充"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
+msgid ""
+"The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
+"``9``) characters are used for padding. This allows printing several values "
+"aligned vertically as if in a column, provided a fixed-width font is used."
+msgstr ""
+"``.`` (**點**), ``*`` (**星號**), ``-`` (**減號**) 與數字 (``0``-``9``) 可以"
+"用來填充。配合等寬字體使用可以在印出多個值時垂直對齊。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
+msgid "To pad a string to a minimum length, add an integer to the specifier:"
+msgstr "若要將字串填充至最小長度，可在規範字元前加上一個整數："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
+msgid ""
+"If the integer starts with ``0``, integral values are padded with zeroes "
+"instead of white space:"
+msgstr "若整數以 ``0`` 開始，則整數值將以 0 來填充，而非以空白填充："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
+msgid ""
+"Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
+"an integer following it. With no integer after ``.``, a precision of 0 is "
+"used, rounding to integral value. The integer to use for padding must appear "
+"before the dot."
+msgstr ""
+"對於實數，也可以通過加上 ``.`` (**點**) 與整數來指定精度。若 ``.`` 後沒有整"
+"數，則會使用精度 0，並無條件捨去至整數。用於填充的整數必須寫在點之後。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
+msgid ""
+"The ``-`` character will cause padding to the right rather than the left, "
+"useful for right text alignment:"
+msgstr "使用 ``-`` 字元會讓填充改為向右填充而非向左填充，適合用在右對齊："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
+msgid "Dynamic padding"
+msgstr "動態填充"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
+msgid ""
+"By using the ``*`` (*asterisk*) character, the padding or precision can be "
+"set without modifying the format string. It is used in place of an integer "
+"in the format specifier. The values for padding and precision are then "
+"passed when formatting:"
+msgstr ""
+"若使用 ``*`` (**星號**) 字元，則可以不修改格式化字串來設定填充或精度。用來代"
+"替格式規範中的整數。用於填充與設定精度的值則在格式化時傳入："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
+msgid ""
+"It is still possible to pad with zeroes in integer placeholders by adding "
+"``0`` before ``*``:"
+msgstr "通過在 ``*`` 之前加上 ``0`` 則也可以使用 0  來填充整數預留位置："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
+msgid "Escape sequence"
+msgstr "逸出序列"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
+msgid ""
+"To insert a literal ``%`` character into a format string, it must be escaped "
+"to avoid reading it as a placeholder. This is done by doubling the character:"
+msgstr ""
+"若要將字面值 ``%`` 字元插入格式化字串，則必須跳脫 ``%`` 來避免程式將其視為預"
+"留位置。可以重複一次 ``%`` 來跳脫："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
+msgid "Format method examples"
+msgstr "格式化方法範例"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
+msgid ""
+"The following are some examples of how to use the various invocations of the "
+"``String.format``  method."
+msgstr "下列為各種呼叫 ``String.format`` 方法的範例。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+msgid "**Type**"
+msgstr "**型別**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+msgid "**Style**"
+msgstr "**樣式**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
+msgid "**Example**"
+msgstr "**範例**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
+msgid "**Result**"
+msgstr "**結果**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+msgid "Dictionary"
+msgstr "字典"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+msgid "key"
+msgstr "索引鍵"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+msgid ""
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+msgstr ""
+"``\"你好，{name} v{version}！\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+msgid "Hi, Godette v3.0!"
+msgstr "你好，Godette v3.0！"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+msgid "index"
+msgstr "索引"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+msgstr "``\"你好，{0} v{1}！\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+msgid "mix"
+msgstr "混合"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+msgid ""
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
+msgstr ""
+"``\"你好，{0} v{version}！\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+msgid "Array"
+msgstr "陣列"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+msgid ""
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+msgstr ""
+"``\"你好，{name} v{version}！\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
+msgstr "``\"你好，{0} v{1}！\".format([\"Godette\",\"3.0\"])``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
+msgstr "``\"你好，{name} v{0}！\".format([3.0, [\"name\",\"Godette\"]])``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+msgid "no index"
+msgstr "無索引"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
+msgstr "``\"你好，{} v{}！\".format([\"Godette\", 3.0], \"{}\")``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
+msgid ""
+"Placeholders can also be customized when using ``String.format``, here's "
+"some examples of that functionality."
+msgstr ""
+"也可以在使用 ``String.format`` 時自定預留位置，下列為使用本功能的範例。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+msgid "Infix (default)"
+msgstr "中置 (預設)"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+msgstr "``\"你好，{0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
+msgid "Hi, Godette v3.0"
+msgstr "你好，Godette v3.0"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+msgid "Postfix"
+msgstr "後置"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+msgstr "``\"你好，0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
+msgid "Prefix"
+msgstr "前置"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
+msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+msgstr "``\"你好，%0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
+msgid ""
+"Combining both the ``String.format`` method and the ``%`` operator could be "
+"useful, as ``String.format`` does not have a way to manipulate the "
+"representation of numbers."
+msgstr ""
+"也許組合使用 ``String.format`` 與 ``%`` 也不錯，因為 ``String.format`` 無法控"
+"制如何顯示數字。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
+msgid ""
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+msgstr ""
+"``\"你好，{0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
+msgid "Hi, Godette v3.11"
+msgstr "你好，Godette v3.11"

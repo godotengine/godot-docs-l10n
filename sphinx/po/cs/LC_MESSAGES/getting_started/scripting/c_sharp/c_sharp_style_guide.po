@@ -1,0 +1,377 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
+msgid "C# style guide"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:6
+msgid ""
+"Having well-defined and consistent coding conventions is important for every "
+"project, and Godot is no exception to this rule."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
+msgid ""
+"This page contains a coding style guide, which is followed by developers of "
+"and contributors to Godot itself. As such, it is mainly intended for those "
+"who want to contribute to the project, but since the conventions and "
+"guidelines mentioned in this article are those most widely adopted by the "
+"users of the language, we encourage you to do the same, especially if you do "
+"not have such a guide yet."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
+msgid ""
+"This article is by no means an exhaustive guide on how to follow the "
+"standard coding conventions or best practices. If you feel unsure of an "
+"aspect which is not covered here, please refer to more comprehensive "
+"documentation, such as `C# Coding Conventions <https://docs.microsoft.com/en-"
+"us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ or "
+"`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
+"standard/design-guidelines/naming-guidelines>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
+msgid "Language specification"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
+msgid ""
+"Godot currently uses **C# version 7.0** in its engine and example source "
+"code. So, before we move to a newer version, care must be taken to avoid "
+"mixing language features only available in C# 7.1 or later."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
+msgid ""
+"For detailed information on C# features in different versions, please see "
+"`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
+">`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
+msgid "Formatting"
+msgstr "Formátování"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
+msgid "General guidelines"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
+msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:37
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:39
+msgid ""
+"Use **4 spaces** instead of tabs for indentation (which is referred to as "
+"\"soft tabs\")."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
+msgid ""
+"Consider breaking a line into several if it's longer than 100 characters."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:44
+msgid "Line breaks and blank lines"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:46
+msgid ""
+"For a general indentation rule, follow `the \"Allman Style\" <https://en."
+"wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
+"placing the brace associated with a control statement on the next line, "
+"indented to the same level:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:63
+msgid "However, you may choose to omit line breaks inside brackets:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
+msgid "For simple property accessors."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
+msgid "For simple object, array, or collection initializers."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
+msgid "For abstract auto property, indexer, or event declarations."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:89
+msgid "Insert a blank line:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
+msgid "After a list of ``using`` statements."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
+msgid "Between method, properties, and inner type declarations."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
+msgid "At the end of each file."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
+msgid ""
+"Field and constant declarations can be grouped together according to "
+"relevance. In that case, consider inserting a blank line between the groups "
+"for easier reading."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:98
+msgid "Avoid inserting a blank line:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:100
+msgid "After ``{``, the opening brace."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:101
+msgid "Before ``}``, the closing brace."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:102
+msgid "After a comment block or a single-line comment."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:103
+msgid "Adjacent to another blank line."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
+msgid "Using spaces"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
+msgid "Insert a space:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
+msgid "Around a binary and tertiary operator."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
+msgid ""
+"Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
+"``while``, ``lock`` or ``using`` keywords."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
+msgid "Before and within a single line accessor block."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
+msgid "Between accessors in a single line accessor block."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
+msgid "After a comma which is not at the end of a line."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
+msgid "After a semicolon in a ``for`` statement."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:152
+msgid "After a colon in a single line ``case`` statement."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
+msgid "Around a colon in a type declaration."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:154
+msgid "Around a lambda arrow."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
+msgid ""
+"After a single-line comment symbol (``//``), and before it if used at the "
+"end of a line."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:157
+msgid "Do not use a space:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:159
+msgid "After type cast parentheses."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:160
+msgid "Within single line initializer braces."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:162
+msgid ""
+"The following example shows a proper use of spaces, according to some of the "
+"above mentioned conventions:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
+msgid "Naming conventions"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:199
+msgid ""
+"Use **PascalCase** for all namespaces, type names and member level "
+"identifiers (i.e. methods, properties, constants, events), except for "
+"private fields:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:220
+msgid ""
+"Use **camelCase** for all other identifiers (i.e. local variables, method "
+"arguments), and use an underscore (``_``) as a prefix for private fields "
+"(but not for methods or properties, as explained above):"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:234
+msgid ""
+"There's an exception with acronyms which consist of two letters, like "
+"``UI``, which should be written in uppercase letters where PascalCase would "
+"be expected, and in lowercase letters otherwise."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:237
+msgid ""
+"Note that ``id`` is **not** an acronym, so it should be treated as a normal "
+"identifier:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
+msgid ""
+"It is generally discouraged to use a type name as a prefix of an identifier, "
+"like ``string strText`` or ``float fPower``, for example. An exception is "
+"made, however, for interfaces, which **should**, in fact, have an uppercase "
+"letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
+"``IDamageable``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:252
+msgid ""
+"Lastly, consider choosing descriptive names and do not try to shorten them "
+"too much if it affects readability."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:255
+msgid ""
+"For instance, if you want to write code to find a nearby enemy and hit it "
+"with a weapon, prefer:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:261
+msgid "Rather than:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
+msgid "Member variables"
+msgstr "Členské proměnné"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
+msgid "Local variables"
+msgstr "Lokální proměnné"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
+msgid "Implicitly typed local variables"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:284
+msgid ""
+"Consider using implicitly typing (``var``) for declaration of a local "
+"variable, but do so **only when the type is evident** from the right side of "
+"the assignment:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:314
+msgid "Other considerations"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:316
+msgid "Use explicit access modifiers."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:317
+msgid "Use properties instead of non-private fields."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:318
+msgid ""
+"Use modifiers in this order: ``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
+"``readonly``."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:320
+msgid ""
+"Avoid using fully-qualified names or ``this.`` prefix for members when it's "
+"not necessary."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:321
+msgid "Remove unused ``using`` statements and unnecessary parentheses."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:322
+msgid "Consider omitting the default initial value for a type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:323
+msgid ""
+"Consider using null-conditional operators or type initializers to make the "
+"code more compact."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:324
+msgid ""
+"Use safe cast when there is a possibility of the value being a different "
+"type, and use direct cast otherwise."
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -563,7 +563,7 @@ msgstr "Sottrazione"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "Bit shifting"
@@ -652,7 +652,7 @@ msgstr "Testing"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Assignment (lowest priority)"
@@ -688,7 +688,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 2 (binary) integer"
@@ -696,7 +696,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Floating-point number (real)"
@@ -1847,9 +1847,9 @@ msgid ""
 "freed when no longer in use. No garbage collector exists, just reference "
 "counting. By default, all classes that don't define inheritance extend "
 "**Reference**. If this is not desired, then a class must inherit :ref:"
-"`class_Object` manually and must call instance.free(). To avoid reference "
-"cycles that can't be freed, a ``weakref`` function is provided for creating "
-"weak references."
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a ``weakref`` function is provided for "
+"creating weak references."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1322

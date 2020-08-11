@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -858,8 +858,9 @@ msgstr ""
 "全从代码中投射光线，而不必使用 :ref:`Raycast <class_Raycast>` 节点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:524
+#, fuzzy
 msgid ""
-"see :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
+"See :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
 "in Godot."
 msgstr ""
 "请参阅 :ref:`Ray-casting <doc_ray-casting>` 了解有关Godot的光线投射的更多信"
@@ -925,13 +926,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:542
 msgid ""
+"See :ref:`Physics introduction "
+"<doc_physics_introduction_collision_layer_code_example>` for more "
+"information on Godot collision masks."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
+msgid ""
 "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:"
 "`RigidBody <class_RigidBody>` the player is holding."
 msgstr ""
 "如果 ``grabbed_object`` 不是 ``null`` ，那么我们需要抛出游戏角色持有的 :ref:"
 "`RigidBody <class_RigidBody>。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
 #, fuzzy
 msgid ""
 "We first set the mode of the :ref:`RigidBody <class_RigidBody>` we are "
@@ -940,7 +948,7 @@ msgstr ""
 "我们首先设置 :ref:`RigidBody <class_RigidBody>` 我们保持模式为 "
 "``MODE_RIGID`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:546
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:551
 msgid ""
 "This is making a rather large assumption that all the rigid bodies will be "
 "using ``MODE_RIGID``. While that is the case for this tutorial series, that "
@@ -949,7 +957,7 @@ msgstr ""
 "这是一个相当大的假设，即所有刚体都将使用“MODE_RIGID”。 虽然本教程系列就是这种"
 "情况，但在其他项目中可能并非如此。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
 #, fuzzy
 msgid ""
 "If you have rigid bodies with different modes, you may need to store the "
@@ -961,7 +969,7 @@ msgstr ""
 "ref:`RigidBody <class_RigidBody>的模式您已经选择了一个类变量，所以您可以把它"
 "改回来 在您拿起它之前的模式。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:552
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:557
 msgid ""
 "Then we apply an impulse to send it flying forward. We send it flying in the "
 "direction the camera is facing, using the force we set in the "
@@ -970,7 +978,7 @@ msgstr ""
 "然后我们施加冲动将它向前飞。 我们使用我们在 ``OBJECT_THROW_FORCE`` 变量中设置"
 "的力将它发送到相机朝向的方向。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
 msgid ""
 "We then set the grabbed :ref:`RigidBody <class_RigidBody>`'s collision layer "
 "and mask to ``1``, so it can collide with anything on layer ``1`` again."
@@ -978,7 +986,7 @@ msgstr ""
 "然后我们将抓取的 :ref:`RigidBody <class_RigidBody>的碰撞层和掩码设置为 "
 "``1`` ，这样它就可以再次与层“1”上的任何东西碰撞。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:556
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:561
 msgid ""
 "This is, once again, making a rather large assumption that all the rigid "
 "bodies will be only on collision layer ``1``, and all collision masks will "
@@ -993,7 +1001,7 @@ msgstr ""
 "`RigidBody <class_RigidBody>` 的碰撞图层/掩码，然后将它们更改为“0”，这样您就"
 "可以 在您反转过程时为其设置的原始碰撞图层/蒙版。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:564
 msgid ""
 "Finally, we set ``grabbed_object`` to ``null`` since the player has "
 "successfully thrown the held object."
@@ -1001,7 +1009,7 @@ msgstr ""
 "最后，我们将 ``grabbed_object`` 设置为 ``null`` ，因为游戏角色已经成功抛出了"
 "被保持的对象。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:563
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
 "The last thing we do is check to see whether or not ``grabbed_object`` is "
 "equal to ``null``, outside all of the grabbing/throwing related code."
@@ -1009,7 +1017,7 @@ msgstr ""
 "我们做的最后一件事是在所有抓取/投掷相关代码之外检查 ``grabbed_object`` 是否等"
 "于 ``null`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:565
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:570
 msgid ""
 "While technically not input related, it's easy enough to place the code "
 "moving the grabbed object here because it's only two lines, and then all of "
@@ -1018,7 +1026,7 @@ msgstr ""
 "虽然技术上没有输入相关，但是将代码移动到此处的代码很容易，因为它只有两行，然"
 "后所有的抓取/抛出代码都在一个地方"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:573
 msgid ""
 "If the player is holding an object, we set its global position to the "
 "camera's position plus ``OBJECT_GRAB_DISTANCE`` in the direction the camera "
@@ -1027,7 +1035,7 @@ msgstr ""
 "如果游戏角色持有一个物体，我们将其全局位置设置为相机的位置以及相机朝向的方向"
 "上的“OBJECT_GRAB_DISTANCE”。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:572
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:577
 msgid ""
 "Before we test this, we need to change something in ``_physics_process``. "
 "While the player is holding an object, we do not want the player to be able "
@@ -1037,31 +1045,31 @@ msgstr ""
 "有一个物体时，我们不希望游戏角色能够更换武器或重装，所以将 "
 "``_physics_process`` 改为:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:589
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
 msgid "Now the player cannot change weapons or reload while holding an object."
 msgstr "现在游戏角色在拿着物体时无法改变武器或重装。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:591
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
 msgid ""
 "Now you can grab and throw RigidBody nodes while you're in the ``UNARMED`` "
 "state! Go give it a try!"
 msgstr ""
 "现在，当您处于“UNARMED”状态时，您可以抓住并抛出RigidBody节点！ 去尝试吧！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:599
 msgid "Adding a turret"
 msgstr "添加一个炮塔"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
 msgid "Next, let's make a turret to shoot the player!"
 msgstr "接下来，让我们制作一个炮塔射击游戏角色！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:598
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:603
 msgid ""
 "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
 msgstr "打开 ``Turret.tscn`` 。 如果尚未展开，请展开 ``Turret`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:600
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
 #, fuzzy
 msgid ""
 "Notice how the turret is broken up into several parts: ``Base``, ``Head``, "
@@ -1070,7 +1078,7 @@ msgstr ""
 "注意炮塔如何分成几个部分。 我们有一个 ``Base`` ， ``Head`` ， "
 "``Vision_Area`` 和一个``Smoke`` :ref:`Particles <class_Particles>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:602
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:607
 #, fuzzy
 msgid ""
 "Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` "
@@ -1082,7 +1090,7 @@ msgstr ""
 "打开 ``Head`` 您会发现有几个网格，a :ref:`StaticBody <class_StaticBody>` 和"
 "a :ref:`Raycast <class_Raycast>` 节点。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
 msgid ""
 "One thing to note with the ``Head`` is that the raycast will be where the "
 "turret's bullets will fire from if we are using raycasting. We also have two "
@@ -1093,7 +1101,7 @@ msgstr ""
 "们还有两个网格叫做 ``Flash`` 和 ``Flash_2`` 。 这些将是枪口闪光，简要显示炮塔"
 "开火时。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:608
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:613
 msgid ""
 "``Vision_Area`` is an :ref:`Area <class_Area>` we'll use as the turret's "
 "ability to see. When something enters ``Vision_Area``, we'll assume the "
@@ -1102,7 +1110,7 @@ msgstr ""
 "``Vision_Area``是 :ref:`Area <class_Area>` 我们将用作炮塔的能力。 当某些东西"
 "进入“Vision_Area”时，我们会认为炮塔可以看到它。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:615
 msgid ""
 "``Smoke`` is a :ref:`Particles <class_Particles>` node that will play when "
 "the turret is destroyed and repairing."
@@ -1110,7 +1118,7 @@ msgstr ""
 "``Smoke``是一个 :ref:`Particles <class_Particles>` 节点将在炮塔被摧毁和修复时"
 "播放。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:619
 msgid ""
 "Now that we've looked at how the scene is set up, lets start writing the "
 "code for the turret. Select ``Turret`` and create a new script called "
@@ -1119,13 +1127,13 @@ msgstr ""
 "现在我们已经了解了如何设置场景，让我们开始编写炮塔的代码。 选择 ``Turret`` 并"
 "创建一个名为 ``Turret.gd`` 的新脚本。 将以下内容添加到``Turret.gd``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:780
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
 msgid ""
 "This is quite a bit of code, so let's break it down function by function. "
 "Let's first look at the class variables:"
 msgstr "这是相当多的代码，所以让我们按功能分解它。 我们先来看一下类变量:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:782
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 #, fuzzy
 msgid ""
 "``use_raycast``: An exported boolean so we can change whether the turret "
@@ -1134,12 +1142,12 @@ msgstr ""
 "``use_raycast``:一个导出的布尔值，这样我们可以改变炮塔是使用物体还是射线投射"
 "子弹。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:783
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``TURRET_DAMAGE_BULLET``: The amount of damage a single bullet scene does."
 msgstr "``TURRET_DAMAGE_BULLET``:单个子弹场景造成的伤害量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:784
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
@@ -1147,33 +1155,33 @@ msgstr ""
 "``TURRET_DAMAGE_RAYCAST``:单个损坏的数量 :ref:`Raycast <class_Raycast>` "
 "bullet。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``FLASH_TIME``: The amount of time (in seconds) the muzzle flash meshes are "
 "visible."
 msgstr "``FLASH_TIME``:枪口闪光网格的可见时间(以秒为单位)。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:786
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
 msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
 msgstr "``flash_timer``:一个变量，用于跟踪枪口闪光网格的可见时间。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
 msgstr "``FIRE_TIME``:发射子弹所需的时间(以秒为单位)。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
 msgstr "``fire_timer``:一个变量，用于跟踪炮塔上次射击后经过的时间。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
 msgstr "``node_turret_head``:一个用于保存 ``Head`` 节点的变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
@@ -1181,7 +1189,7 @@ msgstr ""
 "``node_raycast``:一个变量，用于保存附加到炮塔头部的 :ref:`Raycast "
 "<class_Raycast>` 节点。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
@@ -1189,7 +1197,7 @@ msgstr ""
 "``node_flash_one``:一个用于保存第一个枪口flash的变量 :ref:`MeshInstance "
 "<class_MeshInstance>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
@@ -1197,80 +1205,80 @@ msgstr ""
 "``node_flash_two``:一个用于保存第二个枪口flash的变量 :ref:`MeshInstance "
 "<class_MeshInstance>`。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
 msgstr "``ammo_in_turret``:目前炮塔中的弹药数量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
 msgstr "``AMMO_IN_FULL_TURRET``:完整炮塔中的弹药数量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
 msgstr "``AMMO_RELOAD_TIME``:炮塔重装的时间。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
 msgstr "``ammo_reload_timer``:一个变量，用于跟踪炮塔重装的时间。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``current_target``: The turret's current target."
 msgstr "``current_target``:炮塔的当前目标。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
 msgstr "``is_active``:用于跟踪炮塔是否能够射向目标的变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
 msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
 msgstr "``PLAYER_HEIGHT``:我们添加到目标的高度，所以我们不会在它的脚下射击。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
 msgstr "``smoke_particles``:用于保存烟雾粒子节点的变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:806
 msgid "``turret_health``: The amount of health the turret currently has."
 msgstr "``turret_health``:炮塔目前的健康状况。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
 msgstr "``MAX_TURRET_HEALTH``:完全愈合的炮塔的健康量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:808
 msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
 msgstr "``DESTROYED_TIME``:被毁坏的炮塔修复自己所花费的时间(以秒为单位)。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:809
 msgid ""
 "``destroyed_timer``: A variable for tracking the amount of time a turret has "
 "been destroyed."
 msgstr "``destroyed_timer``:一个变量，用于跟踪炮塔被摧毁的时间。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:810
 msgid ""
 "``bullet_scene``: The bullet scene the turret fires (same scene as the "
 "player's pistol)"
 msgstr "``bullet_scene``:炮塔射击的子弹场景(与游戏角色的手枪相同的场景)"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:812
 #, fuzzy
 msgid "Whew, that's quite a few class variables!"
 msgstr "Phew，这是几个类变量！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:811
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
 msgstr "接下来我们来看看`_ready``。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:813
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:818
 #, fuzzy
 msgid ""
 "Firstly, we get the vision area and connect the ``body_entered`` and "
@@ -1280,13 +1288,13 @@ msgstr ""
 "首先，我们得到视觉区域，并分别将 ``body_entered`` 和 ``body_exited`` 信号连接"
 "到 ``body_entered_vision`` 和 ``body_exited_vision`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:815
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:820
 #, fuzzy
 msgid ""
 "We then get all the nodes and assign them to their respective variables."
 msgstr "然后，我们获取所有节点并将它们分配给各自的变量。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:817
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:822
 #, fuzzy
 msgid ""
 "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
@@ -1294,14 +1302,14 @@ msgid ""
 msgstr ""
 "接下来我们添加一些例外 :ref:`Raycast <class_Raycast>` 所以炮塔不会伤害自己。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:819
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
 msgid ""
 "Then we make both flash meshes invisible at start, since we are not going to "
 "be firing during ``_ready``."
 msgstr ""
 "然后我们在开始时使两个闪存网格都不可见，因为我们不会在“_ready”期间触发。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:821
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:826
 #, fuzzy
 msgid ""
 "We then get the smoke particles node and assign it to the "
@@ -1311,18 +1319,18 @@ msgstr ""
 "然后我们得到烟雾粒子节点并将其分配给 ``smoke_particles`` 节点。 我们还将 "
 "``emit`` 设置为 ``false`` 以确保粒子在炮塔断裂之前不会发射。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:829
 msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
 msgstr ""
 "最后，我们将炮塔的生命值设置为“MAX_TURRET_HEALTH”，以便从完全健康状态开始。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:828
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
 msgstr "现在让我们来看看`_physics_process``。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:830
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:835
 #, fuzzy
 msgid ""
 "Firstly, we check whether the turret is active. If the turret is active, we "
@@ -1330,7 +1338,7 @@ msgid ""
 msgstr ""
 "首先，我们检查炮塔是否有效。 如果炮塔处于活动状态，我们希望处理射击代码。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:832
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:837
 #, fuzzy
 msgid ""
 "Next, if ``flash_timer`` is greater than zero, meaning the flash meshes are "
@@ -1342,7 +1350,7 @@ msgstr ""
 "从 ``flash_timer`` 中删除delta。 如果在我们减去“delta”之后 ``flash_timer`` 变"
 "为零或更小，我们想要隐藏两个闪存网格。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:836
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
 #, fuzzy
 msgid ""
 "Next, we check whether the turret has a target. If the turret has a target, "
@@ -1352,7 +1360,7 @@ msgstr ""
 "接下来我们检查炮塔是否有目标。 如果炮塔有目标，我们让炮塔头看它，加"
 "上“PLAYER_HEIGHT”，这样它就不会瞄准游戏角色的脚。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:839
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
 #, fuzzy
 msgid ""
 "We then check whether the turret's health is greater than zero. If it is, we "
@@ -1360,7 +1368,7 @@ msgid ""
 msgstr ""
 "然后我们检查炮塔的健康状况是否大于零。 如果是，我们然后检查炮塔中是否有弹药。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:846
 #, fuzzy
 msgid ""
 "If there is, we then check whether ``fire_timer`` is greater than zero. If "
@@ -1373,7 +1381,7 @@ msgstr ""
 "``fire_timer`` 等于或小于零，炮塔可以发射子弹，所以我们称之为 "
 "``fire_bullet`` 函数。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:849
 #, fuzzy
 msgid ""
 "If there isn't any ammo in the turret, we check whether "
@@ -1388,7 +1396,7 @@ msgstr ""
 "``ammo_in_turret`` 设置为 ``AMMO_IN_FULL_TURRET`` ，因为炮塔已等待足够长的时"
 "间来重新填充弹药。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:848
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:853
 #, fuzzy
 msgid ""
 "Next, we check whether the turret's health is less than or equal to ``0`` "
@@ -1400,7 +1408,7 @@ msgstr ""
 "康状况为零或更低，我们会检查 ``destroyed_timer`` 是否大于零。 如果被破坏的计"
 "时器大于零，我们从 ``destroyed_timer`` 中减去 ``delta`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:851
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
 msgid ""
 "If ``destroyed_timer`` is less than or equal to zero, we set "
 "``turret_health`` to ``MAX_TURRET_HEALTH`` and stop emitting smoke particles "
@@ -1410,16 +1418,16 @@ msgstr ""
 "``MAX_TURRET_HEALTH`` 并通过将 ``smoke_particles.emitting`` 设置为 ``false`` "
 "来停止冒烟。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:861
 msgid "Next let's go through ``fire_bullet``."
 msgstr "接下来让我们来看看 ``fire_bullet`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:858
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 #, fuzzy
 msgid "Firstly, we check whether the turret is using a raycast."
 msgstr "首先，我们检查炮塔是否正在使用光线投射。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:860
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:865
 #, fuzzy
 msgid ""
 "The code for using a raycast is almost entirely the same as the code in the "
@@ -1429,7 +1437,7 @@ msgstr ""
 "使用光线投射的代码几乎完全与步枪中的代码相同 :ref:"
 "`doc_fps_tutorial_part_two`，所以我只是简单地介绍它。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
 #, fuzzy
 msgid ""
 "We first make the raycast look at the target, ensuring the raycast will hit "
@@ -1446,7 +1454,7 @@ msgstr ""
 "有“bullet_hit”功能。 如果确实如此，我们称之为并传递一个光线投射子弹与光线投射"
 "变换一起造成的伤害。 然后我们从 ``ammo_in_turret`` 中删除 ``1`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:873
 msgid ""
 "If the turret is not using a raycast, we spawn a bullet object instead. This "
 "code is almost entirely the same as the code in the pistol from :ref:"
@@ -1457,7 +1465,7 @@ msgstr ""
 "代码相同 :ref:`doc_fps_tutorial_part_two`，所以与光线播放代码一样，我只是简单"
 "地介绍一下。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:871
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:876
 #, fuzzy
 msgid ""
 "We first make a bullet clone and assign it to ``clone``. We then add that as "
@@ -1470,7 +1478,7 @@ msgstr ""
 "子节点。 我们将子弹的全局变换设置为桶端，由于它太小而将其放大，并使用炮塔的常"
 "量类变量设置它的伤害和速度。 然后我们从 ``ammo_in_turret`` 中删除 ``1`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:875
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:880
 #, fuzzy
 msgid ""
 "Then, regardless of which bullet method we used, we make both of the muzzle "
@@ -1485,13 +1493,13 @@ msgstr ""
 "用了最后一个子弹，我们将 ``ammo_reload_timer`` 设置为 ``AMMO_RELOAD_TIME`` ，"
 "以便炮塔重新加载。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:881
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
 msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
 msgstr "让我们看看接下来的 ``body_entered_vision`` ，谢天谢地，它很短。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:883
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
 #, fuzzy
 msgid ""
 "We first check whether the turret currently has a target by checking if "
@@ -1503,7 +1511,7 @@ msgstr ""
 "标。 如果炮塔没有目标，我们检查刚刚进入视觉的物体 :ref:`Area <class_Area>` "
 "是 :ref:`KinematicBody <class_KinematicBody>"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:891
 #, fuzzy
 msgid ""
 "We're assuming the turret should only fire at :ref:`KinematicBody "
@@ -1512,7 +1520,7 @@ msgstr ""
 "我们假设炮塔只应在以下地方开火 :ref:`KinematicBody <class_KinematicBody>` 节"
 "点，因为那是游戏角色正在使用的。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
 msgid ""
 "If the body that just entered the vision :ref:`Area <class_Area>` is a :ref:"
 "`KinematicBody <class_KinematicBody>`, we set ``current_target`` to the "
@@ -1522,11 +1530,11 @@ msgstr ""
 "<class_KinematicBody>`，我们将 ``current_target`` 设置为body，并将 "
 "``is_active`` 设置为 ``true`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
 msgid "Now let's look at ``body_exited_vision``."
 msgstr "现在让我们来看看 ``body_exited_vision`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:895
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:900
 #, fuzzy
 msgid ""
 "Firstly, we check whether the turret has a target. If it does, we then check "
@@ -1536,7 +1544,7 @@ msgstr ""
 "首先，我们检查炮塔是否有目标。 如果炮塔有目标，我们检查刚刚离开炮塔视线的物"
 "体 :ref:`Area <class_Area>` 是炮塔的目标。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
 #, fuzzy
 msgid ""
 "If the body that has just left the vision :ref:`Area <class_Area>` is the "
@@ -1548,18 +1556,18 @@ msgstr ""
 "``current_target`` 设置为 ``null`` ，将 ``is_active`` 设置为 ``false`` ， 并"
 "重置所有与发射炮塔有关的变量，因为炮塔不再有射击目标。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:908
 msgid "Finally, let's look at ``bullet_hit``."
 msgstr "最后，让我们看一下 ``bullet_hit`` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:905
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:910
 #, fuzzy
 msgid ""
 "We first subtract however much damage the bullet causes from the turret's "
 "health."
 msgstr "我们首先从炮塔的健康状况中移除子弹造成的大量伤害。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:907
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
 #, fuzzy
 msgid ""
 "Then, we check whether the turret has been destroyed (health being zero or "
@@ -1571,7 +1579,7 @@ msgstr ""
 "烟雾颗粒，并将“destroyed_timer”设置为“DESTROYED_TIME”，因此炮塔必须等待才能修"
 "复。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:917
 #, fuzzy
 msgid ""
 "Whew, with all of that done and coded, we only have one last thing to do "
@@ -1586,11 +1594,11 @@ msgstr ""
 "`StaticBody <class_StaticBody>` 节点。 创建一个名为 ``TurretBodies.gd`` 的新"
 "脚本，并将其附加到以下任何一个 :ref:`StaticBody <class_StaticBody>` 。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:916
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:921
 msgid "Add the following code to ``TurretBodies.gd``:"
 msgstr "将以下代码添加到``TurretBodies.gd``:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:931
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:936
 #, fuzzy
 msgid ""
 "All this code does is call ``bullet_hit`` on whatever node to which "
@@ -1600,7 +1608,7 @@ msgstr ""
 "所有这些代码都在 ``path_to_turret_root`` 导致的节点上调用 ``bullet_hit`` 。 "
 "返回编辑器并将 :ref:`NodePath <class_NodePath>` 分配给 ``Turret`` 节点。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:934
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
 msgid ""
 "Now select the other :ref:`StaticBody <class_StaticBody>` node (either in "
 "``Body`` or ``Head``) and assign ``TurretBodies.gd`` script to it. Once the "
@@ -1611,7 +1619,7 @@ msgstr ""
 "``Head`` 中)并为其指定 ``TurretBodies.gd`` 脚本。 附加脚本后，再次将 :ref:"
 "`NodePath <class_NodePath>` 分配给 ``Turret`` 节点。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:944
 #, fuzzy
 msgid ""
 "The last thing we need to do is add a way for the player to be hurt. Since "
@@ -1621,11 +1629,11 @@ msgstr ""
 "我们需要做的最后一件事是为游戏角色增添一种伤害方式。 由于所有子弹都使用 "
 "``bullet_hit`` 函数，我们需要将该函数添加到游戏角色。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:941
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:946
 msgid "Open ``Player.gd`` and add the following:"
 msgstr "打开 ``Player.gd`` 并添加以下内容:"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:948
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:953
 msgid ""
 "With all that done, you should have fully operational turrets! Go place a "
 "few in one/both/all of the scenes and give them a try!"
@@ -1633,11 +1641,11 @@ msgstr ""
 "完成所有这些后，您应该拥有完全可操作的炮塔！ 在一个/两个/所有场景中进行几次尝"
 "试！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 msgid "Final notes"
 msgstr "最后的笔记"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:955
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
 msgid ""
 "Now you can pick up :ref:`RigidBody <class_RigidBody>` nodes and throw "
 "grenades. We now also have turrets to fire at the player."
@@ -1645,7 +1653,7 @@ msgstr ""
 "现在您可以拿起 :ref:`RigidBody <class_RigidBody>` 节点并投掷手榴弹。 我们现在"
 "也有炮塔射击游戏角色。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:957
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
 msgid ""
 "In :ref:`doc_fps_tutorial_part_six`, we're going to add a main menu and a "
 "pause menu, add a respawn system for the player, and change/move the sound "
@@ -1655,11 +1663,11 @@ msgstr ""
 "游戏角色添加重新生成的系统，以及更改/移动声音系统，以便我们可以从任何脚本中使"
 "用它。"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:965
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr "如果您迷路了，请务必再次阅读代码！"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:967
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_5.zip <files/Godot_FPS_Part_5.zip>`"

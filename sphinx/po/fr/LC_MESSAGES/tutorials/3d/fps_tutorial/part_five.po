@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -942,8 +942,9 @@ msgstr ""
 "au lieu d'avoir à utiliser un nœud :ref:`Raycast <class_Raycast>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:524
+#, fuzzy
 msgid ""
-"see :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
+"See :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
 "in Godot."
 msgstr ""
 "voir :ref:`Ray-casting <doc_ray-casting>` pour plus d'informations sur le "
@@ -1017,13 +1018,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:542
 msgid ""
+"See :ref:`Physics introduction "
+"<doc_physics_introduction_collision_layer_code_example>` for more "
+"information on Godot collision masks."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
+msgid ""
 "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:"
 "`RigidBody <class_RigidBody>` the player is holding."
 msgstr ""
 "Si ``grabbed_object`` n'est pas ``null``, nous devons alors lancer le :ref:"
 "`RigidBody <class_RigidBody>` que le joueur tient."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
 msgid ""
 "We first set the mode of the :ref:`RigidBody <class_RigidBody>` we are "
 "holding to ``MODE_RIGID``."
@@ -1031,7 +1039,7 @@ msgstr ""
 "Nous définissons d'abord le mode du :ref:`RigidBody <class_RigidBody>` que "
 "nous mettons sur ``MODE_RIGID``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:546
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:551
 msgid ""
 "This is making a rather large assumption that all the rigid bodies will be "
 "using ``MODE_RIGID``. While that is the case for this tutorial series, that "
@@ -1041,7 +1049,7 @@ msgstr ""
 "``MODE_RIGID``. Bien que ce soit le cas pour cette série de tutoriels, cela "
 "ne sera pas forcément le cas dans d'autres projets."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
 msgid ""
 "If you have rigid bodies with different modes, you may need to store the "
 "mode of the :ref:`RigidBody <class_RigidBody>` you have picked up into a "
@@ -1053,7 +1061,7 @@ msgstr ""
 "dans une variable de classe afin de lui rétablir son mode au moment où vous "
 "l'avez ramassé."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:552
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:557
 msgid ""
 "Then we apply an impulse to send it flying forward. We send it flying in the "
 "direction the camera is facing, using the force we set in the "
@@ -1063,7 +1071,7 @@ msgstr ""
 "faisons voelr dans la direction où la caméra fait face, en utilisant la "
 "force que nous avons assigné à la variable ``OBJECT_THROW_FORCE``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
 msgid ""
 "We then set the grabbed :ref:`RigidBody <class_RigidBody>`'s collision layer "
 "and mask to ``1``, so it can collide with anything on layer ``1`` again."
@@ -1072,7 +1080,7 @@ msgstr ""
 "<class_RigidBody>` attrapé, afin qu'il puisse rentre en collision avec "
 "d'autres objets à nouveau."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:556
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:561
 msgid ""
 "This is, once again, making a rather large assumption that all the rigid "
 "bodies will be only on collision layer ``1``, and all collision masks will "
@@ -1089,7 +1097,7 @@ msgstr ""
 "attrapés dans une variables avant de les changer à ``0``, de façon à leur "
 "rendre leur valeur initiale une fois lâchés."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:564
 msgid ""
 "Finally, we set ``grabbed_object`` to ``null`` since the player has "
 "successfully thrown the held object."
@@ -1097,7 +1105,7 @@ msgstr ""
 "Enfin, on assigne ``null`` au ``grabbed_object`` car le joueur a lancé avec "
 "succès l'objet."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:563
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
 "The last thing we do is check to see whether or not ``grabbed_object`` is "
 "equal to ``null``, outside all of the grabbing/throwing related code."
@@ -1106,7 +1114,7 @@ msgstr ""
 "``grabbed_object`` est égal à ``null`` en dehors du code relatif à attraper/"
 "jeter un objet."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:565
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:570
 msgid ""
 "While technically not input related, it's easy enough to place the code "
 "moving the grabbed object here because it's only two lines, and then all of "
@@ -1117,7 +1125,7 @@ msgstr ""
 "deux lignes et que tout le code pour attraper/lancer un objet se trouve au "
 "même endroit"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:573
 msgid ""
 "If the player is holding an object, we set its global position to the "
 "camera's position plus ``OBJECT_GRAB_DISTANCE`` in the direction the camera "
@@ -1127,7 +1135,7 @@ msgstr ""
 "position de la caméra + ``OBJECT_GRAB_DISTANCE`` dans la direction où la "
 "caméra fait face."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:572
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:577
 msgid ""
 "Before we test this, we need to change something in ``_physics_process``. "
 "While the player is holding an object, we do not want the player to be able "
@@ -1138,13 +1146,13 @@ msgstr ""
 "que le joueur puisse changer d'armes ou recharger. Changez "
 "``_physics_process`` à ce qui suit :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:589
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
 msgid "Now the player cannot change weapons or reload while holding an object."
 msgstr ""
 "Maintenant, le joueur ne peut pas changer d'arme ou recharger tant qu'il "
 "tient un objet."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:591
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
 msgid ""
 "Now you can grab and throw RigidBody nodes while you're in the ``UNARMED`` "
 "state! Go give it a try!"
@@ -1152,21 +1160,21 @@ msgstr ""
 "Vous êtes désormais capable d'attraper et lancer des nœuds RigidBody tant "
 "que vous êtes dans l'état ``UNARMED`` ! Faites un essai !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:599
 msgid "Adding a turret"
 msgstr "Ajouter une tourelle"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
 msgid "Next, let's make a turret to shoot the player!"
 msgstr "Créons une tourelle capable de tirer sur le joueur !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:598
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:603
 msgid ""
 "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
 msgstr ""
 "Ouvrez ``Turret.tscn``. Développez ``Turret`` si ce n'est pas encore le cas."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:600
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
 msgid ""
 "Notice how the turret is broken up into several parts: ``Base``, ``Head``, "
 "``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>` node."
@@ -1175,7 +1183,7 @@ msgstr ""
 "``Head``, ``Vision_Area``, et un nœud de :ref:`Particles <class_Particles>` "
 "``Smoke``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:602
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:607
 msgid ""
 "Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` "
 "and a mesh. Open up ``Head`` and you'll find there are several meshes, a :"
@@ -1186,7 +1194,7 @@ msgstr ""
 "et son mesh. Ouvrez ``Head`` et vous y trouverez plusieurs mesh, un :ref:"
 "`StaticBody <class_StaticBody>` et un nœud :ref:`Raycast <class_Raycast>`."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
 msgid ""
 "One thing to note with the ``Head`` is that the raycast will be where the "
 "turret's bullets will fire from if we are using raycasting. We also have two "
@@ -1198,7 +1206,7 @@ msgstr ""
 "également deux mesh appelés ``Flash`` et ``Flash_2``. Il y aura un effet de "
 "lumière sur le bout du canon qui va apparaître lorsque la tourelle tire."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:608
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:613
 msgid ""
 "``Vision_Area`` is an :ref:`Area <class_Area>` we'll use as the turret's "
 "ability to see. When something enters ``Vision_Area``, we'll assume the "
@@ -1208,7 +1216,7 @@ msgstr ""
 "pour donner une vision à la tourelle. Quand quelque chose entre la "
 "``Vision_Area``, on suppose que la tourelle pourra le voir."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:615
 msgid ""
 "``Smoke`` is a :ref:`Particles <class_Particles>` node that will play when "
 "the turret is destroyed and repairing."
@@ -1216,7 +1224,7 @@ msgstr ""
 "``Smoke`` est un nœud :ref:`Particles <class_Particles>` qui va se jouer "
 "quand la tourelle est détruite et en cours de réparation."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:619
 msgid ""
 "Now that we've looked at how the scene is set up, lets start writing the "
 "code for the turret. Select ``Turret`` and create a new script called "
@@ -1226,7 +1234,7 @@ msgstr ""
 "à écrire le code pour la tourelle. Sélectionnez ``Turret`` et créez un "
 "nouveau script appelé ``Turret.gd``. Ajoutez ce qui suit dans ce script :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:780
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
 msgid ""
 "This is quite a bit of code, so let's break it down function by function. "
 "Let's first look at the class variables:"
@@ -1234,7 +1242,7 @@ msgstr ""
 "C'est pas mal de code, alors nous allons décomposer le script fonction par "
 "fonction. Jetons d'abord un œil aux variables de classe :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:782
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 msgid ""
 "``use_raycast``: An exported boolean so we can change whether the turret "
 "uses objects or raycasting for bullets."
@@ -1242,13 +1250,13 @@ msgstr ""
 "``use_raycast`` : Un booléen exporté que nous allons pouvoir changer quand "
 "la tourelle utilise des objets ou tire des rayons pour des balles."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:783
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``TURRET_DAMAGE_BULLET``: The amount of damage a single bullet scene does."
 msgstr ""
 "``TURRET_DAMAGE_BULLET`` : Le montant de dégâts d'une seule scène de balle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:784
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
@@ -1256,7 +1264,7 @@ msgstr ""
 "``TURRET_DAMAGE_RAYCAST`` : Le montant de dégâts qu'une seule balle :ref:"
 "`Raycast <class_Raycast>` fait."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``FLASH_TIME``: The amount of time (in seconds) the muzzle flash meshes are "
 "visible."
@@ -1264,7 +1272,7 @@ msgstr ""
 "``FLASH_TIME`` : La durée (en seconde) pendant laquelle le flash sur le "
 "canon est visible."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:786
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
 msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
@@ -1272,12 +1280,12 @@ msgstr ""
 "``flash_timer`` : Une variable utilisée pour savoir combien de temps a passé "
 "depuis qu'on a rendu visible le flash du canon."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
 msgstr ""
 "``FIRE_TIME`` : Le temps nécessaire (en secondes) pour tirer une balle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
@@ -1285,12 +1293,12 @@ msgstr ""
 "``fire_timer`` : Une variable utilisée pour savoir combien de temps a passé "
 "depuis qu'une balle a été tirée."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
 msgstr ""
 "``node_turret_head`` : Une variable utilisée pour stocker le nœud ``Head``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
@@ -1298,7 +1306,7 @@ msgstr ""
 "``node_raycast`` : Une variable nous permettant de stocker le nœud :ref:"
 "`Raycast <class_Raycast>` attaché à la tête de la tourelle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
@@ -1306,7 +1314,7 @@ msgstr ""
 "``node_flash_one`` : Une variable utilisée pour stocker le premier :ref:"
 "`MeshInstance <class_MeshInstance>` du flash du canon."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
@@ -1314,24 +1322,24 @@ msgstr ""
 "``node_flash_two`` : Une variable utilisée pour stocker le second :ref:"
 "`MeshInstance <class_MeshInstance>` du flash du canon."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
 msgstr ""
 "``ammo_in_turret`` : Le nombre de balles dont la tourelle dispose "
 "actuellement."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
 msgstr ""
 "``AMMO_IN_FULL_TURRET`` : Le nombre de balle dont une tourelle pleine "
 "dispose."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
 msgstr ""
 "``AMMO_RELOAD_TIME`` : Le temps qu'il faut pour qu'une tourelle recharge."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
@@ -1339,11 +1347,11 @@ msgstr ""
 "``ammo_reload_timer`` : Une variable utilisée pour le temps qu'a passer une "
 "tourelle a recharger."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``current_target``: The turret's current target."
 msgstr "``current_target`` : La cible courante de la tourelle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
@@ -1351,7 +1359,7 @@ msgstr ""
 "``is_active`` : Une variable pour savoir si la tourelle peut tirer sur la "
 "cible ou non."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
 msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
@@ -1359,23 +1367,23 @@ msgstr ""
 "``PLAYER_HEIGHT`` : La hauteur que nous ajoutons afin que la tourelle ne "
 "tire pas sur les pieds de la cible."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
 msgstr ""
 "``smoke_particles`` : Une variable pour stocker les nœuds de particule de "
 "fumée."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:806
 msgid "``turret_health``: The amount of health the turret currently has."
 msgstr "``turret_health`` : La santé actuelle de la tourelle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
 msgstr ""
 "``MAX_TURRET_HEALTH`` : La quantité de santé dont une tourelle intacte "
 "dispose."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:808
 msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
@@ -1383,7 +1391,7 @@ msgstr ""
 "``DESTROYED_TIME`` : Le temps qu'il faut (en seconde) pour une tourelle "
 "détruite pour se réparer elle-même."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:809
 msgid ""
 "``destroyed_timer``: A variable for tracking the amount of time a turret has "
 "been destroyed."
@@ -1391,7 +1399,7 @@ msgstr ""
 "``destroyed_timer`` : Une variable pour suivre le temps pendant lequel une "
 "tourelle a été détruite."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:810
 msgid ""
 "``bullet_scene``: The bullet scene the turret fires (same scene as the "
 "player's pistol)"
@@ -1399,15 +1407,15 @@ msgstr ""
 "``bullet_scene`` : La scène de la balle que doit tirer la tourelle (même "
 "scène que celle pour le pistolet du joueur)"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:812
 msgid "Whew, that's quite a few class variables!"
 msgstr "Hé bien, ça fait pas mal de variables de classes !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:811
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
 msgstr "Passons en revue ``_ready`` maintenant."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:813
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:818
 msgid ""
 "Firstly, we get the vision area and connect the ``body_entered`` and "
 "``body_exited`` signals to ``body_entered_vision`` and "
@@ -1417,14 +1425,14 @@ msgstr ""
 "signaux ``body_entered`` et ``body_exited`` à ``body_entered_vision`` et "
 "``body_exited_vision``, respectivement."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:815
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:820
 msgid ""
 "We then get all the nodes and assign them to their respective variables."
 msgstr ""
 "Nous récupérons ensuite tous les nœuds et nous les assignons à leur "
 "variables respectives."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:817
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:822
 msgid ""
 "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
 "turret cannot hurt itself."
@@ -1432,7 +1440,7 @@ msgstr ""
 "Ensuite, nous ajoutons quelques exceptions au :ref:`Raycast <class_Raycast>` "
 "de façon à ce que la tourelle ne puisse pas se faire de dégâts."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:819
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
 msgid ""
 "Then we make both flash meshes invisible at start, since we are not going to "
 "be firing during ``_ready``."
@@ -1440,7 +1448,7 @@ msgstr ""
 "Nous rendons ensuite les deux mesh de flash invisible au début car nous "
 "n'allons pas tirer pendant ``_ready``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:821
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:826
 msgid ""
 "We then get the smoke particles node and assign it to the "
 "``smoke_particles`` variable. We also set ``emitting`` to ``false`` to "
@@ -1451,7 +1459,7 @@ msgstr ""
 "pour s'assurer que les particules ne s'émettent pas tant que la tourelle "
 "n'est pas détruite."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:829
 msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
@@ -1459,11 +1467,11 @@ msgstr ""
 "Enfin, nous assignons ``MAX_TURRET_HEALTH`` à la vie de la tourelle afin "
 "qu'elle commence avec toute sa vie."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:828
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
 msgstr "Regardons maintenant ``_physics_process``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:830
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:835
 msgid ""
 "Firstly, we check whether the turret is active. If the turret is active, we "
 "want to process the firing code."
@@ -1471,7 +1479,7 @@ msgstr ""
 "Premièrement, nous vérifions si la tourelle est active. Si c'est le cas, "
 "nous voulons activer le code de tir."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:832
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:837
 msgid ""
 "Next, if ``flash_timer`` is greater than zero, meaning the flash meshes are "
 "visible, we want to remove delta from ``flash_timer``. If ``flash_timer`` "
@@ -1483,7 +1491,7 @@ msgstr ""
 "``flash_timer``. Si ``flash_timer`` atteint zéro ou moins après avoir "
 "soustrait ``delta``, nous voulons cacher les deux mesh de flash."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:836
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
 msgid ""
 "Next, we check whether the turret has a target. If the turret has a target, "
 "we make the turret head look at it, adding ``PLAYER_HEIGHT`` so it is not "
@@ -1493,7 +1501,7 @@ msgstr ""
 "faisons en sorte que le tourelle la regarde en lui ajoutant "
 "``PLAYER_HEIGHT`` de façon à ce qu'elle ne fixe pas les pieds du joueur."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:839
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
 msgid ""
 "We then check whether the turret's health is greater than zero. If it is, we "
 "then check whether there is ammo in the turret."
@@ -1501,7 +1509,7 @@ msgstr ""
 "Nous vérifions ensuite si la santé de la tourelle est supérieur à zéro. Si "
 "c'est le cas, nous vérifions si la tourelle a encore des munitions."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:846
 msgid ""
 "If there is, we then check whether ``fire_timer`` is greater than zero. If "
 "it is, the turret cannot fire and we need to remove ``delta`` from "
@@ -1514,7 +1522,7 @@ msgstr ""
 "la tourelle peut alors tirer une balle, nous appelons donc la fonction "
 "``fire_bullet``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:849
 msgid ""
 "If there isn't any ammo in the turret, we check whether "
 "``ammo_reload_timer`` is greater than zero. If it is, we subtract ``delta`` "
@@ -1529,7 +1537,7 @@ msgstr ""
 "``AMMO_IN_FULL_TURRET`` car la tourelle a attendu suffisamment longtemps "
 "pour se réapprovisionner en munitions."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:848
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:853
 msgid ""
 "Next, we check whether the turret's health is less than or equal to ``0`` "
 "outside of whether it is active or not. If the turret's health is zero or "
@@ -1541,7 +1549,7 @@ msgstr ""
 "zéro ou moins, nous vérifions alors si ``destroyed_timer`` est supérieur à "
 "zéro. Si c'est le cas, nous soustrayons ``delta`` de ``destroyed_timer``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:851
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
 msgid ""
 "If ``destroyed_timer`` is less than or equal to zero, we set "
 "``turret_health`` to ``MAX_TURRET_HEALTH`` and stop emitting smoke particles "
@@ -1551,15 +1559,15 @@ msgstr ""
 "``turret_health`` à ``MAX_TURRET_HEALTH`` et on stoppe les émissions de "
 "particules de fumée en assignant ``false`` à ``smoke_particles.emitting``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:861
 msgid "Next let's go through ``fire_bullet``."
 msgstr "Regardons maintenant ``fire_bullet``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:858
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 msgid "Firstly, we check whether the turret is using a raycast."
 msgstr "Tout d'abord, nous vérifions si la tourelle utilise un raycast."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:860
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:865
 msgid ""
 "The code for using a raycast is almost entirely the same as the code in the "
 "rifle from :ref:`doc_fps_tutorial_part_two`, so I'm only going to go over it "
@@ -1569,7 +1577,7 @@ msgstr ""
 "le fusil de la :ref:`doc_fps_tutorial_part_two`, je vais donc passer dessus "
 "très brièvement."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
 msgid ""
 "We first make the raycast look at the target, ensuring the raycast will hit "
 "the target if nothing is in the way. We then force the raycast to update so "
@@ -1588,7 +1596,7 @@ msgstr ""
 "passe les dommages qu'inflige un simple raycast de balle ainsi que le "
 "Transform du raycast. On soustrait ensuite ``1`` de ``ammo_in_turret``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:873
 msgid ""
 "If the turret is not using a raycast, we spawn a bullet object instead. This "
 "code is almost entirely the same as the code in the pistol from :ref:"
@@ -1600,7 +1608,7 @@ msgstr ""
 "`doc_fps_tutorial_part_two`, donc comme pour le code du raycast, je vais le "
 "passer en revue rapidement."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:871
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:876
 msgid ""
 "We first make a bullet clone and assign it to ``clone``. We then add that as "
 "a child of the root node. We set the bullet's global transform to the barrel "
@@ -1615,7 +1623,7 @@ msgstr ""
 "utilisant les variables de classe constantes de la tourelle. On soustrait "
 "ensuite ``1`` de ``ammo_in_turret``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:875
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:880
 msgid ""
 "Then, regardless of which bullet method we used, we make both of the muzzle "
 "flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to "
@@ -1629,7 +1637,7 @@ msgstr ""
 "sa dernière balle. Si c'est le cas, on affecte ``AMMO_RELOAD_TIME`` à "
 "``ammo_reload_timer`` de façon à ce que la tourelle recharge."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:881
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
 msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
@@ -1637,7 +1645,7 @@ msgstr ""
 "Regardons maintenant ``body_entered_vision``, et heureusement, c'est "
 "relativement court."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:883
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
 msgid ""
 "We first check whether the turret currently has a target by checking if "
 "``current_target`` is equal to ``null``. If the turret does not have a "
@@ -1649,7 +1657,7 @@ msgstr ""
 "vérifie alors si le corps qui est entré dans le :ref:`Area <class_Area>` de "
 "vision est un :ref:`KinematicBody <class_KinematicBody>`."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:891
 msgid ""
 "We're assuming the turret should only fire at :ref:`KinematicBody "
 "<class_KinematicBody>` nodes since that is what the player is using."
@@ -1658,7 +1666,7 @@ msgstr ""
 "`KinematicBody <class_KinematicBody>` puisque que le joueur utilise ces "
 "nœuds."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
 msgid ""
 "If the body that just entered the vision :ref:`Area <class_Area>` is a :ref:"
 "`KinematicBody <class_KinematicBody>`, we set ``current_target`` to the "
@@ -1668,11 +1676,11 @@ msgstr ""
 "un :ref:`KinematicBody <class_KinematicBody>`, on assigne le corps à "
 "``current_target``, et on met ``is_active`` à ``true``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
 msgid "Now let's look at ``body_exited_vision``."
 msgstr "Regardons maintenant ``body_exited_vision``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:895
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:900
 msgid ""
 "Firstly, we check whether the turret has a target. If it does, we then check "
 "whether the body that has just left the turret's vision :ref:`Area "
@@ -1682,7 +1690,7 @@ msgstr ""
 "vérifie alors si le corps qui vient de sortir de la vision de la tourelle :"
 "ref:`Area <class_Area>` est la cible de la tourelle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
 msgid ""
 "If the body that has just left the vision :ref:`Area <class_Area>` is the "
 "turret's current target, we set ``current_target`` to ``null``, set "
@@ -1694,11 +1702,11 @@ msgstr ""
 "``is_active`` et on ré-initialise toutes les variables liées au tir de la "
 "tourelle puisque la tourelle n'a plus de cibles sur laquelle tirer."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:908
 msgid "Finally, let's look at ``bullet_hit``."
 msgstr "Terminons par un coup d’œil à ``bullet_hit``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:905
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:910
 msgid ""
 "We first subtract however much damage the bullet causes from the turret's "
 "health."
@@ -1706,7 +1714,7 @@ msgstr ""
 "Nous soustrayons d'abord les dommages que cause la balle à la santé de la "
 "tourelle."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:907
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
 msgid ""
 "Then, we check whether the turret has been destroyed (health being zero or "
 "less). If the turret is destroyed, we start emitting the smoke particles and "
@@ -1718,7 +1726,7 @@ msgstr ""
 "d'émission des particules de fumée et on assigne ``DESTROYED_TIME`` à "
 "``destroyed_timer`` afin que la tourelle attende pour être réparée."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:917
 msgid ""
 "Whew, with all of that done and coded, we only have one last thing to do "
 "before the turret is ready for use. Open up ``Turret.tscn`` if it's not "
@@ -1734,11 +1742,11 @@ msgstr ""
 "nouveau script appelé ``TurretBodies.gd`` et attacher n'importe quel :ref:"
 "`StaticBody <class_StaticBody>` que vous avez sélectionné."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:916
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:921
 msgid "Add the following code to ``TurretBodies.gd``:"
 msgstr "Ajoutez le code suivant à ``TurretBodies.gd`` :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:931
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:936
 msgid ""
 "All this code does is call ``bullet_hit`` on whatever node to which "
 "``path_to_turret_root`` leads. Go back to the editor and assign the :ref:"
@@ -1748,7 +1756,7 @@ msgstr ""
 "nœud où mène ``path_to_turret_root``. Revenez à l'éditeur et assignez le :"
 "ref:`NodePath <class_NodePath>` au nœud ``Turret``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:934
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
 msgid ""
 "Now select the other :ref:`StaticBody <class_StaticBody>` node (either in "
 "``Body`` or ``Head``) and assign ``TurretBodies.gd`` script to it. Once the "
@@ -1760,7 +1768,7 @@ msgstr ""
 "lui le script ``TurretBodies.gd``. Une fois le script attaché, assignez de "
 "nouveau le :ref:`NodePath <class_NodePath>` au nœud ``Turret``."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:944
 msgid ""
 "The last thing we need to do is add a way for the player to be hurt. Since "
 "all the bullets use the ``bullet_hit`` function, we need to add that "
@@ -1770,11 +1778,11 @@ msgstr ""
 "d'être blessé. Puisque toutes les balles utilisent la fonction "
 "``bullet_hit``, nous devons ajouter cette fonction au joueur."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:941
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:946
 msgid "Open ``Player.gd`` and add the following:"
 msgstr "Ouvrez ``Player.gd`` et ajoutez ce qui suit :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:948
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:953
 msgid ""
 "With all that done, you should have fully operational turrets! Go place a "
 "few in one/both/all of the scenes and give them a try!"
@@ -1783,11 +1791,11 @@ msgstr ""
 "opérationnelles ! Allez en placer quelques unes dans un/deux ou toutes les "
 "scènes et essayez par vous-même !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 msgid "Final notes"
 msgstr "Notes finales"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:955
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
 msgid ""
 "Now you can pick up :ref:`RigidBody <class_RigidBody>` nodes and throw "
 "grenades. We now also have turrets to fire at the player."
@@ -1796,7 +1804,7 @@ msgstr ""
 "<class_RigidBody>` et lancer des grenades. Nous avons également des "
 "tourelles qui tirent sur le joueur."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:957
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
 msgid ""
 "In :ref:`doc_fps_tutorial_part_six`, we're going to add a main menu and a "
 "pause menu, add a respawn system for the player, and change/move the sound "
@@ -1807,11 +1815,11 @@ msgstr ""
 "déplacer le système de son de façon à pouvoir l'utiliser dans n'importe quel "
 "script."
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:965
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr "Si jamais vous vous perdez, n'oubliez pas de relire le code !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:967
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_5.zip <files/Godot_FPS_Part_5.zip>`"

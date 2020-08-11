@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:4
+msgid "Visual Studio Code"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
+msgid ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
+"platform IDE by `Microsoft <https://microsoft.com>`_ (not to be confused "
+"with :ref:`doc_configuring_an_ide_vs`)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
+msgid "Importing the project"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:12
+msgid ""
+"Make sure the C/C++ extension is installed. You can find instructions in the "
+"`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
+msgid ""
+"From the Visual Studio Code's main screen open the Godot root folder with "
+"**File > Open Folder...**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
+msgid ""
+"Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
+"*Configure Task*."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
+msgid "Select the **Create tasks.json file from template** option."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
+msgid "Then select **Others**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
+msgid ""
+"Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
+"section to it:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
+msgid "An example of a filled out ``tasks.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
+msgid ""
+"Arguments can be different based on your own setup and needs. See :ref:"
+"`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
+msgid "Debugging the project"
+msgstr "Ladění projektu"
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
+msgid ""
+"To run and debug the project you need to create a new configuration in the "
+"``launch.json`` file."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:62
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
+msgid ""
+"If ``launch.json`` file is missing you will be prompted to create a new one."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
+msgid ""
+"Select **C++ (GDB/LLDB)**. There may be another platform specific option "
+"here. If selected, adjust the configuration example provided accordingly."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
+msgid ""
+"Within the ``launch.json`` file find the ``\"configurations\"`` array and "
+"add a new section to it:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+msgid "An example of a filled out ``launch.json``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:104
+msgid ""
+"The name under ``program`` depends on your build configuration, e.g. ``godot."
+"x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""

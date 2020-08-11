@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 "Formatierungswerkzeugen ankurbeln."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:11
-#, fuzzy
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
@@ -70,9 +69,8 @@ msgid "Here is a complete class example based on these guidelines:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
-#, fuzzy
 msgid "Formatting"
-msgstr "Format"
+msgstr "Formatierung"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:97
 #, fuzzy
@@ -173,11 +171,10 @@ msgid "Blank lines"
 msgstr "Leere Zeilen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
-#, fuzzy
 msgid "Surround functions and class definitions with two blank lines:"
 msgstr ""
-"Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
-"sein."
+"Vor und nach einer Funktion- bzw. Klassendefinition sollten zwei Leerzeilen "
+"sein:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
@@ -205,14 +202,12 @@ msgid "One statement per line"
 msgstr "Eine Anweisung pro Zeile"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:269
-#, fuzzy
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
 msgstr ""
 "Schreibe niemals mehrere Anweisungen in einer Zeile. Nein, liebe C "
-"Programmierer, auch keine einzeiligen bedingten Anweisungen (außer der "
-"Ternäroperator)!"
+"Programmierer, auch keine einzeiligen bedingten Anweisungen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
@@ -231,9 +226,8 @@ msgstr ""
 "Reihenfolgen zu bestimmen, sie verringern nur die Lesbarkeit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
-#, fuzzy
 msgid "Boolean operators"
-msgstr "Boolsches ODER"
+msgstr "Boolesche Operatoren"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
@@ -242,14 +236,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
-#, fuzzy
 msgid "Use ``and`` instead of ``&&``."
-msgstr "``and`` ``&&``"
+msgstr "nutze ``and`` anstelle von ``&&``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
-#, fuzzy
 msgid "Use ``or`` instead of ``||``."
-msgstr "``or`` ``||``"
+msgstr "nutze ``or`` anstelle von ``||``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
@@ -354,9 +346,8 @@ msgid "Functions and variables"
 msgstr "Funktionen und Variablen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:468
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "Funktionen und Variablen"
+msgstr "Nutze snake\\_case um Funktionen und Variablen zu benennen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:475
 #, fuzzy
@@ -373,14 +364,12 @@ msgid "Signals"
 msgstr "Signale"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:486
-#, fuzzy
 msgid "Use the past tense to name signals:"
-msgstr "Vergangenheitsform benutzen:"
+msgstr "Nutze die Vergangenheitsform um Signale zu benennen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:494
-#, fuzzy
 msgid "Constants and enums"
-msgstr "Konstantes Schema"
+msgstr "Konstanten und Aufzählungen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:496
 msgid ""
@@ -469,9 +458,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:582
-#, fuzzy
 msgid "Signals and properties"
-msgstr "Node-Eigenschaften"
+msgstr "Signale und Eigenschaften"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:584
 msgid ""
@@ -512,9 +500,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:628
-#, fuzzy
 msgid "Local variables"
-msgstr "Lokale Koordinaten"
+msgstr "Lokale Variablen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:630
 msgid ""
@@ -524,9 +511,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:635
-#, fuzzy
 msgid "Methods and static functions"
-msgstr "Statische Funktionen"
+msgstr "Methoden und statische Funktionen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid "After the class's properties come the methods."
@@ -541,7 +527,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
-"These function should come first because they show how the object is "
+"These functions should come first because they show how the object is "
 "initialized."
 msgstr ""
 
@@ -570,9 +556,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:692
-#, fuzzy
 msgid "Type hints"
-msgstr "Typen"
+msgstr "Tipps für Typen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:694
 msgid ""

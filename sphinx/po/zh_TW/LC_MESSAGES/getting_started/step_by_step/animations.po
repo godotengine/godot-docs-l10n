@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:4
+msgid "Animations"
+msgstr "動畫"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:7
+msgid "Introduction"
+msgstr "簡介"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:9
+msgid "Godot's animation system is extremely powerful and flexible."
+msgstr "Godot 的動畫系統極為強大且靈活。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:11
+msgid ""
+"To begin, let's use the scene from the previous tutorial (:ref:"
+"`doc_splash_screen`). The goal is to add a \"fade-in\" animation to the "
+"splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
+"robisplash.zip>`."
+msgstr ""
+"首先我們要使用前一個教學（ :ref:`doc_splash_screen` ）的場景。這篇教學的目的"
+"是要給啟動畫面加上「淡入」動畫效果。以防萬一，這裡也有一份檔案： :download:"
+"`robisplash.zip <files/robisplash.zip>` 。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:16
+msgid "Add an animation player"
+msgstr "新增一個動畫播放器"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:18
+msgid ""
+"First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
+"the scene as a child of \"background\" (the root node):"
+msgstr ""
+"首先，新增一個 :ref:`AnimationPlayer <class_AnimationPlayer>` 節點作為"
+"「background」（根節點）的子節點："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:23
+msgid ""
+"When a node of this type is selected, the animation editor panel will appear:"
+msgstr "當這種類型的節點被選中後會顯示動畫編輯器面板："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:28
+msgid "The animation editor panel stays visible until manually hidden."
+msgstr "動畫編輯器面板會保持顯示，直到手動隱藏。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:31
+msgid "Creating the animation"
+msgstr "建立動畫"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:33
+msgid ""
+"It's time to create a new animation! Press the Animation button then select "
+"new from the menu. Name the animation \"intro\" when the dialog appears."
+msgstr ""
+"該來建立新動畫了！按動畫按鈕並在選單中選擇新增。對話框出現後將動畫名稱設為"
+"「intro」。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:40
+msgid ""
+"Now that we have an animation, the property editor enters \"animation editing"
+"\" mode. In this mode, a key icon appears next to every property of the "
+"property editor. In Godot, any property of an object can be animated:"
+msgstr ""
+"現在有動畫了，屬性編輯器會進入「動畫編輯」模式。在這個模式下，屬性編輯器中的"
+"所有屬性旁邊都會出現一個鑰匙圖示。在 Godot 中，物件的任何屬性都可以被動畫化："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:48
+msgid "Editing the animation"
+msgstr "編輯動畫"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:50
+msgid "The logo will appear from the top of the screen."
+msgstr "Logo 會顯示在螢幕的最上方。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:52
+msgid ""
+"With the animation editor panel open, select the \"logo\" node and set the "
+"\"Rect / Position\" property to ``(118, -400)`` and press the key button "
+"next to the property to add a keyframe:"
+msgstr ""
+"在動畫編輯器開啟的狀態下選擇「logo」節點，並將「Rect / Position」屬性設為 "
+"``(118, -400)`` ，然後點擊屬性旁邊的鑰匙按鈕來新增一個關鍵影格："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:58
+msgid "When the dialog appears, confirm that you are creating a new track."
+msgstr "對話框跳出後，代表正在建立新的軌道。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:60
+msgid "The keyframe will be added in the animation player editor:"
+msgstr "動畫編輯器中會新增一個關鍵影格："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:64
+msgid "Move the editor cursor forward in time by clicking here:"
+msgstr "點擊這裡將編輯器的遊標時間往後移動："
+
+#: ../../docs/getting_started/step_by_step/animations.rst:68
+msgid ""
+"Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
+"keyframes with different values, the animation happens."
+msgstr ""
+"將 logo 的位置更改為 ``(118, 0)`` 並再新增一個關鍵影格。有了兩個有不同數值的"
+"關鍵影格，即可產生動畫。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:73
+msgid ""
+"Pressing \"Play selected animation from start\" button on the animation "
+"panel (or :kbd:`Shift + D` on keyboard) will make the logo descend."
+msgstr ""
+"點擊動畫面板上的「從頭播放所選動畫」（或是按鍵盤 :kbd:`Shift + D` ）來讓 "
+"logo 降下。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:78
+msgid ""
+"Click the \"Autoplay on Load\" button to set the animation to start "
+"automatically when the scene starts."
+msgstr "點擊「載入後自動播放」按鈕來將動畫設為在場景開始時自動播放。"
+
+#: ../../docs/getting_started/step_by_step/animations.rst:83
+msgid ""
+"And finally, when running the scene, the animation should look like this:"
+msgstr "最後，當場景開始執行時動畫應該會長這樣："

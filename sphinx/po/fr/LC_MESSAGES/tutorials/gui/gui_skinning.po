@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,6 +114,12 @@ msgid ""
 "automatically. To get correct theming in the editor for instanced scenes, "
 "you can apply the theme resource to the instanced scene's root node as well."
 msgstr ""
+"N'utilisez pas l'option de thème personnalisé dans les paramètres du projet, "
+"car il existe des bogues connus de propagation des thèmes. Appliquez plutôt "
+"votre thème à la propriété Theme du nœud de contrôle racine. Il se propagera "
+"automatiquement aux scènes instanciées. Pour obtenir une thématisation "
+"correcte dans l'éditeur pour les scènes instanciées, vous pouvez également "
+"appliquer la ressource de thème au nœud racine de la scèneinstanciée."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:55
 msgid "Theme options"
@@ -183,15 +189,14 @@ msgid "An example usage:"
 msgstr "Un exemple d'utilisation :"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:95
-#, fuzzy
 msgid ""
 "In the example above, a new theme is created. The \"font_color\" option is "
 "changed and then applied to a label. Therefore, the label's text (and all "
 "children and grandchildren labels) will be red."
 msgstr ""
 "Dans l'exemple ci-dessus, un nouveau thème est créé. L'option \"font_color\" "
-"est modifiée puis appliquée à un label (étiquette). Par conséquent, le label "
-"(et touts les labels enfants et petits-enfants) utilisera cette couleur."
+"est modifiée puis appliquée à un label. Par conséquent, le label (et touts "
+"les labels enfants et petits-enfants) utilisera cette couleur."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:99
 msgid ""
@@ -205,7 +210,6 @@ msgstr ""
 "<class_Control_method_add_color_override>` :"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:114
-#, fuzzy
 msgid ""
 "In the inline help of Godot (in the Script tab), you can check which theme "
 "options are overridable, or check the :ref:`Control <class_Control>` class "
@@ -295,7 +299,6 @@ msgstr ""
 "l'éditeur de propriétés, où elles peuvent être éditées :"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:161
-#, fuzzy
 msgid ""
 "From ``Styles``, open the \"Normal\" drop-down menu next to where it "
 "probably says \"null\" and create a \"New StyleBoxTexture\", then edit it. A "
@@ -307,7 +310,8 @@ msgstr ""
 "l'endroit où il est probablement écrit \"null\" et créez un \"New "
 "StyleBoxTexture\", puis éditez-le. Une stylebox de texture contient "
 "essentiellement une texture et la taille des marges qui ne s'étireront pas "
-"lorsque la texture est étirée. C'est ce qu'on appelle l'étirement \"3x3\" :"
+"lorsque la texture est étirée. Cela s'appelle nine-patch ou étirement "
+"\"3x3\" :"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:169
 msgid ""

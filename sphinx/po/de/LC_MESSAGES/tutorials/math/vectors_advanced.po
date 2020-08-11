@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,11 +74,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "Dies erlaubt uns zu sagen, auf welcher Seite der Ebene ein Punkt ist."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr "Weg vom Ursprung"
+msgstr "Wegbewegen vom Ursprung"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
@@ -86,6 +86,9 @@ msgid ""
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"Ich weiß was du denkst! Schön und gut, aber *echte* Ebenen sind überall im "
+"Raum und nicht nur den Ursprung durchquerend. Du willst echte *Ebenen* und "
+"du möchtest sie *jetzt*."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
@@ -93,6 +96,10 @@ msgid ""
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"Bedenke dass Ebenen nicht nur den Raum teilen, sie haben auch eine "
+"*Polarität*. Das bedeutet, es können zwei perfekt überlappende Ebenen "
+"vorhanden sein, aber deren positiven und negativen Halb-Räume sind "
+"vertauscht."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
@@ -100,12 +107,17 @@ msgid ""
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"Mit diesem Wissen können wir nun eine komplette Ebene als **normale** *N* "
+"und eine **Distanz vom Ursprung** Skalar *D* bezeichnen. Somit wird unsere "
+"Ebene mittels N und D repräsentiert, zum Beispiel:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"Für 3D Mathematik bietet Godot einen eingebauten Typ :ref:`Plane "
+"<class_Plane>` der dies handhabt."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""

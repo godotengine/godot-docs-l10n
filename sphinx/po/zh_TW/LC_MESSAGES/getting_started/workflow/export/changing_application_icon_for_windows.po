@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
+msgid "Changing application icon for Windows"
+msgstr "為 Windows 更改應用程式圖示"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
+msgid ""
+"By default, the exported project's icon will be the Godot icon. You will "
+"most likely want to change that for your project. There are two types of "
+"icons that can be changed on Windows: the file icon and the taskbar icon."
+msgstr ""
+"預設情況下，匯出專案的圖示會是 Godot 圖示。通常我們會想為專案更改圖示。在 "
+"Windows 有兩種類型的圖示可以更改：檔案圖示與工作列圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
+msgid "Changing the taskbar icon"
+msgstr "更改工作列圖示"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
+msgid ""
+"The taskbar icon is the icon that shows up on the taskbar when your project "
+"is running."
+msgstr "工作列圖示即為專案執行時顯示在工作列上的圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
+msgid ""
+"To change the taskbar icon, go to **Project → Project Settings → Application "
+"→ Config → Icon**. Click on the folder icon and select your desired icon."
+msgstr ""
+"要更改工作列圖示，請前往 **[專案] → [專案設定] → [Application] → [Config] → "
+"[Icon]** 。點擊資料夾圖示並選擇想要的圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
+msgid "This is also the icon that gets displayed in the Godot project list."
+msgstr "該圖示也是用來顯示在 Godot 專案列表的圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:27
+msgid "Changing the file icon"
+msgstr "更改檔案圖示"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:29
+msgid ""
+"The file icon is the icon of the executable that you click on to start the "
+"project."
+msgstr "檔案圖示即為啟動專案時點擊的執行檔的圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
+msgid ""
+"Before selecting it in the export options, you will need to install an extra "
+"tool called **rcedit**. You can download it `here <https://github.com/"
+"electron/rcedit/releases>`_."
+msgstr ""
+"與匯出選項中選擇圖示前，還必須要安裝一個名為 **rcedit** 的額外工具。可以在 `"
+"此處 <https://github.com/electron/rcedit/releases>`_ 下載。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
+msgid ""
+"After downloading, you need to tell Godot the path to the rcedit executable "
+"on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
+"Click on the folder icon for the **rcedit** entry. Navigate to and select "
+"the rcedit executable."
+msgstr ""
+"下載後，需要讓 Godot 知道電腦上的 rcedit 執行檔路徑。前往 **[編輯器] → [編輯"
+"器設定] → [Editor] → [Windows]** 。點擊 **rcedit** 欄位的資料夾圖示。前往並選"
+"擇 rcedit 執行檔。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:44
+msgid ""
+"Linux and macOS users will also need to install `WINE <https://www.winehq."
+"org/>`_ to use rcedit."
+msgstr ""
+"Linux 與 macOS 使用者還需要安裝 `WINE <https://www.winehq.org/>`_ 來使用 "
+"rcedit。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:49
+msgid ""
+"You should now have everything in place to change the file icon. To do that, "
+"you will need to specify the icon when exporting. Go to **Project → "
+"Export**. Assuming you have already created a Windows Desktop preset, select "
+"your icon in ICO format in the **Application → Icon** field."
+msgstr ""
+"現在已經準備好所有更改檔案圖示所需的準備了。要更改檔案圖示，需要在匯出時指定"
+"圖示。前往 **[專案] → [匯出]** 。這裡我們假設已有 Windows 桌面預設設定。在 "
+"**[Application] → [Icon]** 欄位中選擇 ICO 格式的圖示。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:55
+msgid ""
+"You can use software such as GIMP to export an ICO image. For more "
+"information, please refer to `this tutorial <http://skyboygames.com/easily-"
+"create-a-windows-app-icon-with-gimp/>`_."
+msgstr ""
+"也可以使用如 GIMP 之類的軟體來匯出 ICO 圖片。更多資訊請參考 `這篇教學 (英文) "
+"<http://skyboygames.com/easily-create-a-windows-app-icon-with-gimp/>`_ 。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+msgid "Testing the result"
+msgstr "測試結果"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
+msgid ""
+"You can now export the project. If it worked correctly, you should see this:"
+msgstr "現在可以匯出專案了。若一切正常，應該可以看到這個結果："
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
+msgid "ICO file requirements"
+msgstr "ICO 檔案需求"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:71
+msgid ""
+"Regardless of which program you use to create your `ICO file <https://en."
+"wikipedia.org/wiki/ICO_(file_format)>`_, there are some requirements to "
+"ensure the icon (and your executable) works on Windows."
+msgstr ""
+"無論是使用哪個程式來建立 `ICO 檔案 <https://zh.wikipedia.org/zh-tw/ICO>`_ ，"
+"都需要確保有符合一些需求，才能讓圖示 (與執行檔) 能在 Windows 上使用。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
+msgid ""
+"This is a bit tricky, as can be seen in the following Stack Overflow "
+"threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
+"stackoverflow.com/q/40749785/>`_."
+msgstr ""
+"就像下列的 Stack Overflow 討論串中說的一樣，搞這個有點麻煩：`討論串一 (英文) "
+"<https://stackoverflow.com/q/3236115/>`_ 、 `討論串二 (英文) <https://"
+"stackoverflow.com/q/40749785/>`_ 。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+msgid ""
+"Your ICO file should at least contain icons in the following resolutions: "
+"16×16, 48×48 and 256×256."
+msgstr "ICO 當應至少包含下列解析圖的圖示：16×16, 48×48 與 256×256。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
+msgid ""
+"If you want to fully support high-DPI screens, this is the full list of "
+"supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
+"48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
+msgstr ""
+"若要完全支援高 DPI 螢幕，則下列大小為要在 Windows 10 上支援的完整列表：10: "
+"16, 20, 24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, 63, 84 以及一個大於 255 "
+"像素的圖示 (如 256, 512 或 1024)。"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
+msgid ""
+"It is also possible to convert a PNG image to an hiDPI-friendly ICO file "
+"using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
+msgstr ""
+"也可以使用這個 `ImageMagick <https://www.imagemagick.org/>`_ 指令來將 PNG 圖"
+"片轉換為對 hiDPI 友善的 ICO 檔案："

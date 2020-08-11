@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,11 +186,11 @@ msgid ""
 "physics update rate or if the player's device can't keep up."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:99
+#: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid "Collision layers and masks"
 msgstr "Törmäyskerrokset ja -maskit"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:101
+#: ../../docs/tutorials/physics/physics_introduction.rst:103
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -199,49 +199,50 @@ msgid ""
 "can interact with."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:107
+#: ../../docs/tutorials/physics/physics_introduction.rst:109
 msgid "Let's look at each of the properties in turn:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:111
+#: ../../docs/tutorials/physics/physics_introduction.rst:113
 msgid "collision_layer"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:110
+#: ../../docs/tutorials/physics/physics_introduction.rst:112
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:116
+#: ../../docs/tutorials/physics/physics_introduction.rst:118
 msgid "collision_mask"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:114
+#: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid ""
 "This describes what layers the body will **scan** for collisions. If an "
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:118
+#: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:120
+#: ../../docs/tutorials/physics/physics_introduction.rst:122
 msgid ""
 "Keeping track of what you're using each layer for can be difficult, so you "
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:126
-msgid "**Example:**"
-msgstr ""
+#: ../../docs/tutorials/physics/physics_introduction.rst:129
+#, fuzzy
+msgid "GUI example"
+msgstr "Syöte-esimerkkejä"
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:128
+#: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
 "Player and Enemy should collide with Walls. The Player node should detect "
@@ -249,7 +250,7 @@ msgid ""
 "other."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:133
+#: ../../docs/tutorials/physics/physics_introduction.rst:136
 msgid ""
 "Start by naming layers 1-4 \"walls\", \"player\", \"enemies\", and \"coins\" "
 "and place each node type in its respective layer using the \"Layer\" "
@@ -258,11 +259,30 @@ msgid ""
 "this:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:142
+#: ../../docs/tutorials/physics/physics_introduction.rst:147
+#, fuzzy
+msgid "Code example"
+msgstr "Ajastin-esimerkki"
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:149
+msgid ""
+"In function calls, layers are specified as a bitmask. Where a function "
+"enables all layers by default, the layer mask will be given as "
+"``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
+"for layer masks, depending on your preference."
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:154
+msgid ""
+"The code equivalent of the above example where layers 1, 3 and 4 were "
+"enabled would be as follows::"
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:144
+#: ../../docs/tutorials/physics/physics_introduction.rst:176
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
@@ -270,33 +290,33 @@ msgid ""
 "defined area."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:149
+#: ../../docs/tutorials/physics/physics_introduction.rst:181
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:151
+#: ../../docs/tutorials/physics/physics_introduction.rst:183
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:153
+#: ../../docs/tutorials/physics/physics_introduction.rst:185
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:155
+#: ../../docs/tutorials/physics/physics_introduction.rst:187
 msgid "Checking other areas for overlap."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:157
+#: ../../docs/tutorials/physics/physics_introduction.rst:189
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:160
+#: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid "StaticBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:162
+#: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -305,33 +325,33 @@ msgid ""
 "``constant_angular_velocity`` properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:167
+#: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:170
+#: ../../docs/tutorials/physics/physics_introduction.rst:202
 msgid "Example uses for ``StaticBody2D``:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:172
+#: ../../docs/tutorials/physics/physics_introduction.rst:204
 msgid "Platforms (including moving platforms)"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:173
+#: ../../docs/tutorials/physics/physics_introduction.rst:205
 msgid "Conveyor belts"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:174
+#: ../../docs/tutorials/physics/physics_introduction.rst:206
 msgid "Walls and other obstacles"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:177
+#: ../../docs/tutorials/physics/physics_introduction.rst:209
 msgid "RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:179
+#: ../../docs/tutorials/physics/physics_introduction.rst:211
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -340,20 +360,20 @@ msgid ""
 "rotating, etc."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:185
+#: ../../docs/tutorials/physics/physics_introduction.rst:217
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:188
+#: ../../docs/tutorials/physics/physics_introduction.rst:220
 msgid ""
 "The body's behavior is also affected by the world's properties, as set in "
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:192
+#: ../../docs/tutorials/physics/physics_introduction.rst:224
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -361,41 +381,41 @@ msgid ""
 "by a collision or via code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:198
+#: ../../docs/tutorials/physics/physics_introduction.rst:230
 msgid "Rigid body modes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:200
+#: ../../docs/tutorials/physics/physics_introduction.rst:232
 msgid "A rigid body can be set to one of four modes:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:202
+#: ../../docs/tutorials/physics/physics_introduction.rst:234
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:203
+#: ../../docs/tutorials/physics/physics_introduction.rst:235
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:204
+#: ../../docs/tutorials/physics/physics_introduction.rst:236
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:205
+#: ../../docs/tutorials/physics/physics_introduction.rst:237
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:208
+#: ../../docs/tutorials/physics/physics_introduction.rst:240
 msgid "Using RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:210
+#: ../../docs/tutorials/physics/physics_introduction.rst:242
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "
 "had \"for free\" without writing any code. For example, if you were making "
@@ -404,7 +424,7 @@ msgid ""
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:216
+#: ../../docs/tutorials/physics/physics_introduction.rst:248
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
@@ -417,18 +437,18 @@ msgid ""
 "physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:225
+#: ../../docs/tutorials/physics/physics_introduction.rst:257
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:270
+#: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
 "Note that we are not setting the ``linear_velocity`` or ``angular_velocity`` "
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:274
+#: ../../docs/tutorials/physics/physics_introduction.rst:306
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -437,11 +457,11 @@ msgid ""
 "that this can have a negative effect on performance."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:281
+#: ../../docs/tutorials/physics/physics_introduction.rst:313
 msgid "Contact reporting"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:283
+#: ../../docs/tutorials/physics/physics_introduction.rst:315
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
@@ -453,18 +473,18 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:290
+#: ../../docs/tutorials/physics/physics_introduction.rst:322
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:295
+#: ../../docs/tutorials/physics/physics_introduction.rst:327
 msgid "KinematicBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:297
+#: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
 ":ref:`KinematicBody2D <class_KinematicBody2D>` bodies detect collisions with "
 "other bodies, but are not affected by physics properties like gravity or "
@@ -472,7 +492,7 @@ msgid ""
 "engine will not move a kinematic body."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:302
+#: ../../docs/tutorials/physics/physics_introduction.rst:334
 msgid ""
 "When moving a kinematic body, you should not set its ``position`` directly. "
 "Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` methods. "
@@ -481,11 +501,11 @@ msgid ""
 "any collision response must be coded manually."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:309
+#: ../../docs/tutorials/physics/physics_introduction.rst:341
 msgid "Kinematic collision response"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:311
+#: ../../docs/tutorials/physics/physics_introduction.rst:343
 msgid ""
 "After a collision, you may want the body to bounce, to slide along a wall, "
 "or to alter the properties of the object it hit. The way you handle "
@@ -493,11 +513,11 @@ msgid ""
 "KinematicBody2D."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:316
+#: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:318
+#: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` object, which contains "
@@ -505,21 +525,21 @@ msgid ""
 "information to determine the response."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:323
+#: ../../docs/tutorials/physics/physics_introduction.rst:355
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:354
+#: ../../docs/tutorials/physics/physics_introduction.rst:386
 msgid "Or to bounce off of the colliding object:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:383
+#: ../../docs/tutorials/physics/physics_introduction.rst:415
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:385
+#: ../../docs/tutorials/physics/physics_introduction.rst:417
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
 "in a top-down game or running up and down slopes in a platformer. While it's "
@@ -528,19 +548,19 @@ msgid ""
 "without writing much code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:391
+#: ../../docs/tutorials/physics/physics_introduction.rst:423
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:395
+#: ../../docs/tutorials/physics/physics_introduction.rst:427
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:462
+#: ../../docs/tutorials/physics/physics_introduction.rst:494
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."

@@ -1,0 +1,2275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
+msgid "GDScript basics"
+msgstr "GDScript 基礎"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
+msgid "Introduction"
+msgstr "簡介"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
+msgid ""
+"*GDScript* is a high-level, dynamically typed programming language used to "
+"create content. It uses a syntax similar to `Python <https://en.wikipedia."
+"org/wiki/Python_%28programming_language%29>`_ (blocks are indent-based and "
+"many keywords are similar). Its goal is to be optimized for and tightly "
+"integrated with Godot Engine, allowing great flexibility for content "
+"creation and integration."
+msgstr ""
+"*GDScript* 是一個動態型別的高級語言，用於進行內容創作。語法類似於 `Python "
+"<https://zh.wikipedia.org/zh-tw/Python>`_ （如區塊都是基於縮排來判斷，以及很"
+"多關鍵字都相同）。GDScript 的目標是要做一個對 Godot Engine 最佳化的語言，並且"
+"能緊密地與引擎整合，進而讓我們更有彈性地製作內容與整合功能。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
+msgid "History"
+msgstr "歷史"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
+msgid ""
+"Documentation about GDScript's history has been moved to the :ref:"
+"`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
+msgstr ""
+"關於 GDScript 歷史的文件移到了 :ref:`常見問題 <doc_faq_what_is_gdscript>` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
+msgid "Example of GDScript"
+msgstr "GDScript 範例"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:27
+msgid ""
+"Some people can learn better by taking a look at the syntax, so here's a "
+"simple example of how GDScript looks."
+msgstr "有些人瞭解語法後可以學得更好，所以以下是簡單的 GDScript 例子。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:110
+msgid ""
+"If you have previous experience with statically typed languages such as C, C+"
+"+, or C# but never used a dynamically typed one before, it is advised you "
+"read this tutorial: :ref:`doc_gdscript_more_efficiently`."
+msgstr ""
+"如果你曾經有使用如 C、C++、或 C# 等靜態型別語言的經驗卻沒用過動態型別的話，建"
+"議你閱讀這個教學： :ref:`doc_gdscript_more_efficiently` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:115
+msgid "Language"
+msgstr "語言"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:117
+msgid ""
+"In the following, an overview is given to GDScript. Details, such as which "
+"methods are available to arrays or other objects, should be looked up in the "
+"linked class descriptions."
+msgstr ""
+"接下來是 GDScript 的概要說明。關於陣列或其他物件有哪些方法可以用之類的詳細說"
+"明，請參考相關連結裡的類別介紹。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:122
+msgid "Identifiers"
+msgstr "識別項"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:124
+msgid ""
+"Any string that restricts itself to alphabetic characters (``a`` to ``z`` "
+"and ``A`` to ``Z``), digits (``0`` to ``9``) and ``_`` qualifies as an "
+"identifier. Additionally, identifiers must not begin with a digit. "
+"Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
+msgstr ""
+"所有只包含英文字元（ ``a`` 到 ``z`` 與 ``A`` 到 ``Z`` ）、數字（ ``0`` 到 "
+"``9`` ）、與 ``_`` 的字串都算是一個識別項。另外，識別項不可以以數字開頭。識別"
+"項的大小寫有別（ ``foo`` 與 ``FOO`` 是不同的）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
+msgid "Keywords"
+msgstr "關鍵字"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
+msgid ""
+"The following is the list of keywords supported by the language. Since "
+"keywords are reserved words (tokens), they can't be used as identifiers. "
+"Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
+"types as listed in the following sections are also reserved."
+msgstr ""
+"下面是 GDScript 所支援的關鍵字列表。這些單字是保留字（符記，Token），所以不能"
+"當作識別項來用。有些運算子（如 ``in`` 、 ``not`` 、 ``and`` 、或是 ``or`` ）"
+"與下一個章節會提到的內建型別的名稱也是保留字。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:137
+msgid ""
+"Keywords are defined in the `GDScript tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
+"case you want to take a look under the hood."
+msgstr ""
+"如果你想瞭解一下的話，關鍵字定義在 `GDScript Tokenizer <https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ 裡。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
+msgid "Keyword"
+msgstr "關鍵字"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
+msgid "Description"
+msgstr "說明"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
+msgid "if"
+msgstr "if"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
+msgid "See `if/else/elif`_."
+msgstr "請參考 `if/else/elif`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
+msgid "elif"
+msgstr "elif"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
+msgid "else"
+msgstr "else"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:834
+msgid "for"
+msgstr "for"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
+msgid "See for_."
+msgstr "請參考 `for`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
+msgid "while"
+msgstr "while"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
+msgid "See while_."
+msgstr "請參考 `while`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
+msgid "match"
+msgstr "match"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
+msgid "See match_."
+msgstr "請參考 `match`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
+msgid "break"
+msgstr "break"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
+msgid "Exits the execution of the current ``for`` or ``while`` loop."
+msgstr "跳出目前的 ``for`` 或是 ``while`` 迴圈。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
+msgid "continue"
+msgstr "continue"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
+msgid ""
+"Immediately skips to the next iteration of the ``for`` or ``while`` loop."
+msgstr "馬上跳至 ``for`` 或 ``while`` 迴圈的下一個迭代。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
+msgid "pass"
+msgstr "pass"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
+msgid ""
+"Used where a statement is required syntactically but execution of code is "
+"undesired, e.g. in empty functions."
+msgstr "當語法上需要有敘述句但不需要執行任何東西的時候可以使用。如：空函式。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
+msgid "return"
+msgstr "\\ return"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
+msgid "Returns a value from a function."
+msgstr "從函式裡回傳數值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
+msgid "class"
+msgstr "\\ class"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
+msgid "Defines a class."
+msgstr "定義一個類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
+msgid "extends"
+msgstr "\\ extends"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
+msgid "Defines what class to extend with the current class."
+msgstr "定義目前類別所要繼承的類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
+msgid "is"
+msgstr "\\ is"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
+msgid ""
+"Tests whether a variable extends a given class, or is of a given built-in "
+"type."
+msgstr "測試一個變數是否為繼承自給定的類別，或判斷其是否為指定的內建型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
+msgid "as"
+msgstr "\\ as"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
+msgid "Cast the value to a given type if possible."
+msgstr "嘗試轉換為指定型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:171
+msgid "self"
+msgstr "\\ self"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:171
+msgid "Refers to current class instance."
+msgstr "參照目前的類別實體。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:173
+msgid "tool"
+msgstr "\\ tool"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:173
+msgid "Executes the script in the editor."
+msgstr "在編輯器中執行腳本。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
+msgid "signal"
+msgstr "\\ signal"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
+msgid "Defines a signal."
+msgstr "定義一個訊號。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
+msgid "func"
+msgstr "\\ func"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
+msgid "Defines a function."
+msgstr "定義一個函式。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
+msgid "static"
+msgstr "\\ static"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
+msgid "Defines a static function. Static member variables are not allowed."
+msgstr "定義一個靜態函式。不能用來定義靜態成員變數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
+msgid "const"
+msgstr "\\ const"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
+msgid "Defines a constant."
+msgstr "定義一個常數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
+msgid "enum"
+msgstr "\\ enum"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
+msgid "Defines an enum."
+msgstr "定義一個 Enum（列舉型）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
+msgid "var"
+msgstr "\\ var"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
+msgid "Defines a variable."
+msgstr "定義一個變數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
+msgid "onready"
+msgstr "\\ onready"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
+msgid ""
+"Initializes a variable once the Node the script is attached to and its "
+"children are part of the scene tree."
+msgstr "一旦腳本所附加的節點以及其子節點成為場景樹的一部分後，初始化變數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
+msgid "export"
+msgstr "\\ export"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
+msgid ""
+"Saves a variable along with the resource it's attached to and makes it "
+"visible and modifiable in the editor."
+msgstr "將變數與變數所附加的資源一起保存，並令其在編輯器中可見與可修改。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
+msgid "setget"
+msgstr "\\ setget"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
+msgid "Defines setter and getter functions for a variable."
+msgstr "為變數定義 Setter 與 Getter 函式。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
+msgid "breakpoint"
+msgstr "\\ breakpoint"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
+msgid "Editor helper for debugger breakpoints."
+msgstr "編輯器輔助功能，除錯工具中斷點。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
+msgid "preload"
+msgstr "\\ preload"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
+msgid "Preloads a class or variable. See `Classes as resources`_."
+msgstr "預先載入一個類別或變數。請參閱 `以類別作為資源`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:197
+msgid "yield"
+msgstr "\\ yield"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:197
+msgid "Coroutine support. See `Coroutines with yield`_."
+msgstr "協同程式 (Coroutine) 支援。請參考 `使用 yield 撰寫協同程式`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:199
+msgid "assert"
+msgstr "\\ assert"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:199
+msgid ""
+"Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
+"`Assert keyword`_."
+msgstr ""
+"判定一個條件，當判定失敗的時候記錄錯誤。在非除錯用建構中會忽略。請參考 "
+"`Assert 關鍵字`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:201
+msgid "remote"
+msgstr "\\ remote"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:201
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:203
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:205
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:207
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:209
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:211
+msgid ""
+"Networking RPC annotation. See :ref:`high-level multiplayer docs "
+"<doc_high_level_multiplayer>`."
+msgstr ""
+"網路 RPC 註解。請參考 :ref:`高級多玩家說明文件 "
+"<doc_high_level_multiplayer>` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:203
+msgid "master"
+msgstr "\\ master"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:205
+msgid "puppet"
+msgstr "\\ puppet"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:207
+msgid "remotesync"
+msgstr "\\ remotesync"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:209
+msgid "mastersync"
+msgstr "\\ mastersync"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:211
+msgid "puppetsync"
+msgstr "\\ puppetsync"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:213
+msgid "PI"
+msgstr "\\ PI"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:213
+msgid "PI constant."
+msgstr "PI（圓周率）常數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:215
+msgid "TAU"
+msgstr "\\ TAU"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:215
+msgid "TAU constant."
+msgstr "TAU 常數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:217
+msgid "INF"
+msgstr "\\ INF"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:217
+msgid "Infinity constant. Used for comparisons."
+msgstr "無窮大常數。用於比較。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:219
+msgid "NAN"
+msgstr "\\ NAN"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:219
+msgid "NAN (not a number) constant. Used for comparisons."
+msgstr "NAN（Not a Number，不是數字）常數。用於比較。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:223
+msgid "Operators"
+msgstr "運算子"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:225
+msgid "The following is the list of supported operators and their precedence."
+msgstr "下面是支援的運算子與其優先度。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
+msgid "**Operator**"
+msgstr "**運算子**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
+msgid "**Description**"
+msgstr "**描述**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
+msgid "``x[index]``"
+msgstr "``x[index]``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
+msgid "Subscription (highest priority)"
+msgstr "陣列索引（最高優先度）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
+msgid "``x.attribute``"
+msgstr "``x.attribute``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
+msgid "Attribute reference"
+msgstr "屬性參照"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
+msgid "``foo()``"
+msgstr "\\ ``foo()``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
+msgid "Function call"
+msgstr "呼叫函式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
+msgid "``is``"
+msgstr "``is``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
+msgid "Instance type checker"
+msgstr "檢查實體型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
+msgid "``~``"
+msgstr "``~``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
+msgid "Bitwise NOT"
+msgstr "按位元 (Bitwise) NOT（非）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
+msgid "``-x``"
+msgstr "``-x``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
+msgid "Negative / Unary negation"
+msgstr "負／一元否定"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
+msgid "``*`` ``/`` ``%``"
+msgstr "``*`` ``/`` ``%``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
+msgid "Multiplication / Division / Remainder"
+msgstr "乘法／除法／餘數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
+msgid ""
+"These operators have the same behavior as C++. Integer division is truncated "
+"rather than returning a fractional number, and the % operator is only "
+"available for ints (\"fmod\" for floats)"
+msgstr ""
+"這些運算子的行為與 C++ 中一樣。整數的除法會被截斷而不是回傳小數，而 % 運算子"
+"只可用於整數（浮點數用「fmod」）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:250
+msgid "``+``"
+msgstr "``+``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:250
+msgid "Addition / Concatenation of arrays"
+msgstr "加法／陣列的串聯"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
+msgid "``-``"
+msgstr "``-``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
+msgid "Subtraction"
+msgstr "減法"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
+msgid "``<<`` ``>>``"
+msgstr "``<<`` ``>>``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
+msgid "Bit shifting"
+msgstr "位元移位"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
+msgid "``&``"
+msgstr "``&``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
+msgid "Bitwise AND"
+msgstr "按位元 AND（與）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
+msgid "``^``"
+msgstr "``^``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
+msgid "Bitwise XOR"
+msgstr "按位元 XOR （互斥或）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
+msgid "``|``"
+msgstr "``|``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
+msgid "Bitwise OR"
+msgstr "按位元 OR（或）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
+msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
+msgid "Comparisons"
+msgstr "比較"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
+msgid "``in``"
+msgstr "``in``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
+msgid "Content test"
+msgstr "檢查內容"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
+msgid "``!`` ``not``"
+msgstr "``!`` ``not``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
+msgid "Boolean NOT"
+msgstr "布林 NOT"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
+msgid "``and`` ``&&``"
+msgstr "``and`` ``&&``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
+msgid "Boolean AND"
+msgstr "布林 AND"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
+msgid "``or`` ``||``"
+msgstr "``or`` ``||``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
+msgid "Boolean OR"
+msgstr "布林 OR"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
+msgid "``if x else``"
+msgstr "``if x else``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
+msgid "Ternary if/else"
+msgstr "三元 if/else"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+msgid "``as``"
+msgstr "``as``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
+msgid "Type casting"
+msgstr "型別轉換"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
+msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
+msgid "Assignment (lowest priority)"
+msgstr "賦值（最低優先度）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
+msgid "Literals"
+msgstr "字面值"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
+msgid "**Literal**"
+msgstr "**字面值**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
+msgid "**Type**"
+msgstr "**型別**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+msgid "``45``"
+msgstr "``45``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
+msgid "Base 10 integer"
+msgstr "10 進位整數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+msgid "``0x8F51``"
+msgstr "``0x8F51``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
+msgid "Base 16 (hexadecimal) integer"
+msgstr "16 進位整數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+msgid "``0b101010``"
+msgstr "``0b101010``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
+msgid "Base 2 (binary) integer"
+msgstr "2 進位整數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+msgid "``3.14``, ``58.1e-10``"
+msgstr "``3.14`` 、 ``58.1e-10``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
+msgid "Floating-point number (real)"
+msgstr "浮點數（實數）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+msgid "``\"Hello\"``, ``\"Hi\"``"
+msgstr "``\"Hello\"`` 、 ``\"Hi\"``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+msgid "Strings"
+msgstr "字串"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+msgid "``\"\"\"Hello\"\"\"``"
+msgstr "``\"\"\"Hello\"\"\"``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+msgid "Multiline string"
+msgstr "多行字串"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+msgid "``@\"Node/Label\"``"
+msgstr "``@\"Node/Label\"``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+msgid ":ref:`class_NodePath` or StringName"
+msgstr ":ref:`class_NodePath` 或 StringName"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
+msgid "``$NodePath``"
+msgstr "``$NodePath``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
+msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "``get_node(\"NodePath\")`` 的簡寫"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
+msgid "Comments"
+msgstr "註解"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:305
+msgid ""
+"Anything from a ``#`` to the end of the line is ignored and is considered a "
+"comment."
+msgstr "從 ``#`` 開始到行未的所有東西都會被忽略並當作註解。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
+msgid "Built-in types"
+msgstr "內建型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:317
+msgid ""
+"Built-in types are stack-allocated. They are passed as values. This means a "
+"copy is created on each assignment or when passing them as arguments to "
+"functions. The only exceptions are ``Array``\\ s and ``Dictionaries``, which "
+"are passed by reference so they are shared. (Pooled arrays such as "
+"``PoolByteArray`` are still passed as values.)"
+msgstr ""
+"內建型別按堆疊配置 (Stack-allocated) 。傳遞時只傳遞值。也就是說每次賦值或作為"
+"參數傳給函式的時候都會建立一份複製。唯一的例外是 ``Array`` （陣列）與 "
+"``Dictionary`` （字典），這兩種型別是以參照傳遞的，所以內容共用的。（如 "
+"``PoolByteArray`` 等的 Pooled Array 仍以值傳遞。）"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:324
+msgid "Basic built-in types"
+msgstr "基礎內建型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:326
+msgid "A variable in GDScript can be assigned to several built-in types."
+msgstr "GDScript 的變數可以被指派為多種內建型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:329
+msgid "null"
+msgstr "null"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:331
+msgid ""
+"``null`` is an empty data type that contains no information and can not be "
+"assigned any other value."
+msgstr "``null`` 是一個沒有包含任何資訊的空資料型別，不能指派為其他任何的值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:335
+msgid ":ref:`bool <class_bool>`"
+msgstr ":ref:`bool <class_bool>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:337
+msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
+msgstr "「布林 (Boolean)」的縮寫，只會是 ``true`` 或 ``false`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
+msgid ":ref:`int <class_int>`"
+msgstr ":ref:`int <class_int>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:342
+msgid ""
+"Short for \"integer\", it stores whole numbers (positive and negative). It "
+"is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
+msgstr ""
+"「整數 (Interger)」的縮寫。可以保存整數（正數與負數）。可以儲存 64 位元的值，"
+"相當於 C++ 的「int64_t」。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
+msgid ":ref:`float <class_float>`"
+msgstr ":ref:`float <class_float>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:348
+msgid ""
+"Stores real numbers, including decimals, using floating-point values. It is "
+"stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
+"data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
+"single-precision \"float\" values."
+msgstr ""
+"使用浮點數值，儲存包含小數的實數。保存為 64 位元的數值，相當於 C++ 中的「倍精"
+"確 (double)」型別。注意：目前，如 Vector2、Vector3、與 PoolRealArray 資料結構"
+"都儲存 32 位元的單精確「float（浮點）」值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
+msgid ":ref:`String <class_String>`"
+msgstr ":ref:`String <class_String>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
+#, fuzzy
+msgid ""
+"A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
+"Unicode>`_. Strings can contain the following escape sequences:"
+msgstr ""
+"`Unicode 格式 <https://zh.wikipedia.org/zh-tw/Unicode>`_ 的字串。字串可以包"
+"含 `標準 C 語言逸出順序（英語） <https://en.wikipedia.org/wiki/"
+"Escape_sequences_in_C>`_ 。GDScript 也支援 :ref:`doc_gdscript_printf`。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
+#, fuzzy
+msgid "**Escape sequence**"
+msgstr "逸出序列"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
+msgid "**Expands to**"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:362
+msgid "``\\n``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:362
+msgid "Newline (line feed)"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
+msgid "``\\t``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
+msgid "Horizontal tab character"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
+msgid "``\\r``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
+msgid "Carriage return"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
+msgid "``\\a``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
+msgid "Alert (beep/bell)"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
+msgid "``\\b``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
+msgid "Backspace"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
+msgid "``\\f``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
+msgid "Formfeed page break"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
+msgid "``\\v``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
+msgid "Vertical tab character"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
+msgid "``\\\"``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
+msgid "Double quote"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
+msgid "``\\'``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
+#, fuzzy
+msgid "Single quote"
+msgstr "單例"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
+msgid "``\\\\``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
+msgid "Backslash"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
+msgid "``\\uXXXX``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
+msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
+msgid "GDScript also supports :ref:`doc_gdscript_printf`."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
+msgid "Vector built-in types"
+msgstr "內建向量型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
+msgid ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
+msgid ""
+"2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
+"array."
+msgstr "2D 向量包含 ``x`` 與 ``y`` 欄位。也能用與陣列一樣的方式存取。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
+msgid ":ref:`Rect2 <class_Rect2>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
+msgid ""
+"2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
+"Also contains an ``end`` field which is ``position + size``."
+msgstr ""
+"2D 矩形包含兩個向量欄位 ``position`` （位置）與 ``size`` （大小）。也包含了一"
+"個 ``end`` 欄位，為 ``position + size`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
+msgid ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
+msgid ""
+"3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
+"accessed as an array."
+msgstr ""
+"3D 向量包含 ``x`` 、 ``y`` 、與 ``z`` 欄位。也能用與陣列一樣的方式存取。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
+msgid ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:412
+msgid "3×2 matrix used for 2D transforms."
+msgstr "用於 2D 幾何變換的 3×2 矩陣。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:415
+msgid ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:417
+msgid ""
+"3D Plane type in normalized form that contains a ``normal`` vector field and "
+"a ``d`` scalar distance."
+msgstr "包含 ``normal`` 向量欄位與 ``d`` 常量距離的標準形式的 3D 平面型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
+msgid ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quat <class_Quat>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
+msgid ""
+"Quaternion is a datatype used for representing a 3D rotation. It's useful "
+"for interpolating rotations."
+msgstr ""
+"四元數 (Quaternion) 是一種用於表示 3D 旋轉的資料型別。進行內插旋轉時很有用。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
+msgid ":ref:`AABB <class_AABB>`"
+msgstr ":ref:`AABB <class_AABB>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:429
+msgid ""
+"Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
+"``position`` and ``size``. Also contains an ``end`` field which is "
+"``position + size``."
+msgstr ""
+"座標軸對齊定界框 (AABB, Axis-aligned Bounding Box)，或稱為 3D 框 (3D Box)，包"
+"含了兩個向量欄位： ``position`` （位置）與 ``size`` （大小）。也包含了一個 "
+"``end`` 欄位，即為 ``position + size`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:434
+msgid ":ref:`Basis <class_Basis>`"
+msgstr ":ref:`Basis <class_Basis>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:436
+msgid ""
+"3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
+"(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
+msgstr ""
+"用於 3D 旋轉與縮放的 3x3 矩陣。包含了三個向量欄位（ ``x`` 、 ``y`` 、與 "
+"``z`` ），一樣可以視為 3D 向量的陣列的來存取。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
+msgid ":ref:`Transform <class_Transform>`"
+msgstr ":ref:`Transform <class_Transform>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:443
+msgid ""
+"3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
+msgstr ""
+"3D 變換包含了一個 Basis 欄位 ``basis`` 以及一個 Vector3 欄位 ``origin`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:447
+msgid "Engine built-in types"
+msgstr "引擎內建型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
+msgid ":ref:`Color <class_Color>`"
+msgstr ":ref:`Color <class_Color>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
+msgid ""
+"Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
+"be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
+msgstr ""
+"色彩資料型別包含 ``r`` 、 ``g`` 、 ``b`` 、與 ``a`` 欄位。也可以存取 "
+"``h`` 、 ``s`` 、與 ``v`` ，代表色相 (Hue) ／飽和度 (Saturation)／明度 "
+"(Value)。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:458
+msgid ""
+"Compiled path to a node used mainly in the scene system. It can be easily "
+"assigned to, and from, a String."
+msgstr ""
+"主要用於場景系統中，代表到一個節點的已編譯路徑。也可以賦值為陣列或是從陣列轉"
+"換過來。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
+msgid ":ref:`RID <class_RID>`"
+msgstr ":ref:`RID <class_RID>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:464
+msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
+msgstr "資源 ID (RID, Resource ID)。伺服器使用通用 RID 來參照不透明資料。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:467
+msgid ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
+msgid "Base class for anything that is not a built-in type."
+msgstr "所有非內建型別的基礎類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
+msgid "Container built-in types"
+msgstr "內建容器型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:475
+msgid ":ref:`Array <class_Array>`"
+msgstr ":ref:`Array <class_Array>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
+msgid ""
+"Generic sequence of arbitrary object types, including other arrays or "
+"dictionaries (see below). The array can resize dynamically. Arrays are "
+"indexed starting from index ``0``. Negative indices count from the end."
+msgstr ""
+"可包含任意物件型別，也包含其他陣列或字典型別（詳見下方）。陣列的大小可以動態"
+"調整。陣列的索引從 ``0`` 開始。若使用負數索引則自尾端開始。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:491
+msgid ""
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
+"fragmentation. If this is a concern, special types of arrays are available. "
+"These only accept a single data type. They avoid memory fragmentation and "
+"use less memory, but are atomic and tend to run slower than generic arrays. "
+"They are therefore only recommended to use for large data sets:"
+msgstr ""
+"為求速度，GDScript 的陣列在記憶體中只會以線性進行分配。對於大型陣列（超過數萬"
+"元素），可能會導致記憶體片段化。若有需要考慮這類情況，可以使用其他特殊類型的"
+"陣列。這類型別只能存放單一資料型別、能避免記憶體片段化且使用更少記憶體。但這"
+"些型別具原子性且速度比通用陣列還來的慢。所以只推薦用於有大量資料的情況："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:498
+msgid ""
+":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
+"0 to 255)."
+msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>` ：位元組的陣列（0 至 255 的整"
+"數）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:499
+msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>` ： 整數陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:500
+msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>` ：浮點數陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
+msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>` ：字串陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:502
+msgid ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
+"<class_Vector2>` objects."
+msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>` ： :ref:`Vector2 "
+"<class_Vector2>` 物件的陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:503
+msgid ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
+"<class_Vector3>` objects."
+msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>` ： :ref:`Vector3 "
+"<class_Vector3>` 物件的陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:504
+msgid ""
+":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
+"<class_Color>` objects."
+msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>` ： :ref:`Color <class_Color>` 物"
+"件的陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
+msgid ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Dictionary <class_Dictionary>`"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
+msgid "Associative container which contains values referenced by unique keys."
+msgstr "可以包含以獨立 Key 參照數值的關聯式容器。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:522
+msgid ""
+"Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
+"`` and doesn't use quotes to mark string keys (making for slightly less to "
+"write). However, keys written in this form can't start with a digit (like "
+"any GDScript identifier)."
+msgstr ""
+"也支援 Lua 風格的 Table 語法。Lua 風格使用 ``=`` 而非 ``:`` ，字串 Key 不需要"
+"使用引號（可以少寫一點）。但這種寫法的 Key 不能以數字開頭（就像 GDScript 的識"
+"別項）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:536
+msgid ""
+"To add a key to an existing dictionary, access it like an existing key and "
+"assign to it::"
+msgstr "要往現有字典新增 Key，只需要像存取現有 Key 一樣存取，然後賦值："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:552
+msgid ""
+"The bracket syntax can be used to access properties of any :ref:"
+"`class_Object`, not just Dictionaries. Keep in mind it will cause a script "
+"error when attempting to index a non-existing property. To avoid this, use "
+"the :ref:`Object.get() <class_Object_method_get>` and :ref:`Object.set() "
+"<class_Object_method_set>` methods instead."
+msgstr ""
+"方括號語法不僅可用於 Dictionary，也可用來存取任何 :ref:`class_Object` 的屬"
+"性。請記得當嘗試存取不存在的屬性時會導致腳本錯誤。要避免錯誤，請使用 :ref:"
+"`Object.get() <class_Object_method_get>` 與 :ref:`Object.set() "
+"<class_Object_method_set>` 替代。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:559
+msgid "Data"
+msgstr "資料"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
+msgid "Variables"
+msgstr "變數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:564
+msgid ""
+"Variables can exist as class members or local to functions. They are created "
+"with the ``var`` keyword and may, optionally, be assigned a value upon "
+"initialization."
+msgstr ""
+"變數可以作為類別成員或函式的區域變數存在。變數使用 ``var`` 關鍵字建立，並且可"
+"選擇性地在初始化時賦值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:575
+msgid ""
+"Variables can optionally have a type specification. When a type is "
+"specified, the variable will be forced to have always that same type, and "
+"trying to assign an incompatible value will raise an error."
+msgstr ""
+"變數也可選擇性地指定型別。當指定型別，變數將強制必須維持相同型別，當試著指派"
+"不相容的型別會造成錯誤。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
+msgid ""
+"Types are specified in the variable declaration using a ``:`` (colon) symbol "
+"after the variable name, followed by the type."
+msgstr "在變數宣告時在變數名稱後使用 ``:`` （冒號）接上型別來執行型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:587
+msgid ""
+"If the variable is initialized within the declaration, the type can be "
+"inferred, so it's possible to omit the type name::"
+msgstr "若變數在宣告時即進行初始化，則型別會自動推定，故可省略型別名稱："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:593
+msgid ""
+"Type inference is only possible if the assigned value has a defined type, "
+"otherwise it will raise an error."
+msgstr "型別推定僅可於指派的值有定義型別時發生，否則將發生錯誤。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:596
+msgid "Valid types are:"
+msgstr "有效的型別為："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:598
+msgid "Built-in types (Array, Vector2, int, String, etc.)."
+msgstr "內建型別（Array、Vector2、int、String…等）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:599
+msgid "Engine classes (Node, Resource, Reference, etc.)."
+msgstr "引擎類別（Node、Resource、Reference…等）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:600
+msgid ""
+"Constant names if they contain a script resource (``MyScript`` if you "
+"declared ``const MyScript = preload(\"res://my_script.gd\")``)."
+msgstr ""
+"常數名稱，若該常數包含腳本資源（若宣告 ``const MyScript = preload(\"res://"
+"my_script.gd\")`` 則可使用 ``MyScript`` ）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:601
+msgid ""
+"Other classes in the same script, respecting scope (``InnerClass."
+"NestedClass`` if you declared ``class NestedClass`` inside the ``class "
+"InnerClass`` in the same scope)."
+msgstr ""
+"在相同腳本內的其他類別，尊重作用域（ ``InnerClass.NestedClass`` 若在 ``class "
+"InnerClass`` 內宣告 ``class NextedClass`` 則為相同作用域）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:602
+msgid "Script classes declared with the ``class_name`` keyword."
+msgstr "使用 ``class_name`` 關鍵字宣告的腳本類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:605
+msgid "Casting"
+msgstr "型別轉換"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:607
+msgid ""
+"Values assigned to typed variables must have a compatible type. If it's "
+"needed to coerce a value to be of a certain type, in particular for object "
+"types, you can use the casting operator ``as``."
+msgstr ""
+"當指派值給有型別的變數時，該值必須有相容的型別。若有需要強制轉換值為特定型"
+"別，特別是物件型別時，可以使用型別轉換運算子 ``as`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:611
+msgid ""
+"Casting between object types results in the same object if the value is of "
+"the same type or a subtype of the cast type."
+msgstr ""
+"在物件型別間進行型別轉換時，若值為相同型別或該轉換型別的子型別時，取得的結果"
+"將為相同型別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
+msgid ""
+"If the value is not a subtype, the casting operation will result in a "
+"``null`` value."
+msgstr "若該值非子型別，則轉換操作會導致 ``null`` 值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:626
+msgid ""
+"For built-in types, they will be forcibly converted if possible, otherwise "
+"the engine will raise an error."
+msgstr "對於內建型別，若可能的話將強制轉換，否則引擎將產生錯誤。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:635
+msgid ""
+"Casting is also useful to have better type-safe variables when interacting "
+"with the scene tree::"
+msgstr ""
+"當與場景樹互動時，型別轉換對於取得更加的型別安全 (Type-Safe) 變數也很有用："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:645
+msgid "Constants"
+msgstr "常數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:647
+msgid ""
+"Constants are similar to variables, but must be constants or constant "
+"expressions and must be assigned on initialization."
+msgstr "常數與變數很像，但必須為常數或常數運算式，且必須於初始化時賦值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:661
+msgid ""
+"Although the type of constants is inferred from the assigned value, it's "
+"also possible to add explicit type specification::"
+msgstr "雖然常數的型別時依據指派的值來推定的，但也可以加上明確的型別指定："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:667
+msgid "Assigning a value of an incompatible type will raise an error."
+msgstr "當指派的值的型別不相容時將產生錯誤。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:671
+msgid ""
+"Since arrays and dictionaries are passed by reference, constants are \"flat"
+"\". This means that if you declare a constant array or dictionary, it can "
+"still be modified afterwards. They can't be reassigned with another value "
+"though."
+msgstr ""
+"由於陣列與字典是以參照來傳遞的，因此常數為「扁平」的。這表示當宣告常數型陣列"
+"或字典，之後依然可以修改其內容。只是這個常數之後不能指派為其他值而已。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:676
+msgid "Enums"
+msgstr "Enum 列舉類型"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:678
+msgid ""
+"Enums are basically a shorthand for constants, and are pretty useful if you "
+"want to assign consecutive integers to some constant."
+msgstr "Enum 基本上是常數的簡寫，當需要給一些常數指派連續的整數時滿有用的。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:681
+msgid ""
+"If you pass a name to the enum, it will put all the keys inside a constant "
+"dictionary of that name."
+msgstr "若給 Enum 指派名稱，則會將所有的鍵都放入以該名稱為名的字典常數內。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
+msgid ""
+"In Godot 3.1 and later, keys in a named enum are not registered as global "
+"constants. They should be accessed prefixed by the enum's name (``Name."
+"KEY``); see an example below."
+msgstr ""
+"在 Godot 3.1 與之後的版本中，在有名稱的 Enum 中的鍵並不會註冊為全域常數。存取"
+"時必須要在前面加上 Enum 的名稱（ ``Name.KEY`` ）。請參考下方範例。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:704
+msgid "Functions"
+msgstr "函式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:706
+msgid ""
+"Functions always belong to a `class <Classes_>`_. The scope priority for "
+"variable look-up is: local → class member → global. The ``self`` variable is "
+"always available and is provided as an option for accessing class members, "
+"but is not always required (and should *not* be sent as the function's first "
+"argument, unlike Python)."
+msgstr ""
+"函式必須屬於一個 `方法 <Classes_>`_ 。尋找變數的作用域優先度如下：區域 -> 類"
+"別成員 -> 全域。 ``self`` 變數永遠可用，為一個用來存取類別成員的選項，但並非"
+"強制必須使用（且與 Python 不同，GDScript 裡 **不可** 傳送為函式的第一個引"
+"數）。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:719
+msgid ""
+"A function can ``return`` at any point. The default return value is ``null``."
+msgstr "函式可以於任何時機 ``return`` 。預設的回傳值為 ``null`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:721
+msgid ""
+"Functions can also have type specification for the arguments and for the "
+"return value. Types for arguments can be added in a similar way to "
+"variables::"
+msgstr "函式也可以給引數與回傳值指定型別。引數的型別可用與變數類似的方法指定："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:727
+msgid ""
+"If a function argument has a default value, it's possible to infer the type::"
+msgstr "若函式引數有預設值，則可推斷型別："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:732
+msgid ""
+"The return type of the function can be specified after the arguments list "
+"using the arrow token (``->``)::"
+msgstr "函式的回傳值可在引數列表後以箭頭符記 (``->``) 來指定："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:738
+msgid ""
+"Functions that have a return type **must** return a proper value. Setting "
+"the type as ``void`` means the function doesn't return anything. Void "
+"functions can return early with the ``return`` keyword, but they can't "
+"return any value."
+msgstr ""
+"有回傳型別的函式 **必須** 回傳適當的值。將型別設為 ``void`` 則表示函式不回傳"
+"任何東西。Void 函式可以使用 ``return`` 關鍵字來提早回傳，但無法回傳任何值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:747
+msgid ""
+"Non-void functions must **always** return a value, so if your code has "
+"branching statements (such as an ``if``/``else`` construct), all the "
+"possible paths must have a return. E.g., if you have a ``return`` inside an "
+"``if`` block but not after it, the editor will raise an error because if the "
+"block is not executed, the function won't have a valid value to return."
+msgstr ""
+"非 Void 函式必須 **總是** 回傳一個值。若程式碼中有分歧陳述式（如 ``if``/"
+"``else`` 結構），則所有可能的路徑都必須要有 return。如，若在 ``if`` 內有 "
+"``return`` 但 ``if`` 後卻沒有，則編輯器會產生錯誤，因為若區塊程式碼未被執行，"
+"則該函式將不會有有效的回傳值。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:755
+msgid "Referencing functions"
+msgstr "函數參照"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:757
+msgid ""
+"Contrary to Python, functions are *not* first-class objects in GDScript. "
+"This means they cannot be stored in variables, passed as an argument to "
+"another function or be returned from other functions. This is for "
+"performance reasons."
+msgstr ""
+"與 Python 相反，GDScript 中的函式 **不是** 一級物件。這表示函式無法儲存於變數"
+"內、作為引數傳遞給另一個函式、或是從其他函式中回傳。這是由於考量到效能。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:761
+msgid ""
+"To reference a function by name at run-time, (e.g. to store it in a "
+"variable, or pass it to another function as an argument) one must use the "
+"``call`` or ``funcref`` helpers::"
+msgstr ""
+"要在執行時以名稱參照函式（如：儲存於變數、或作為引數傳遞給另一個函式），則必"
+"須使用 ``call`` 或 ``funcref`` Helper："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
+msgid "Static functions"
+msgstr "靜態函式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:777
+msgid ""
+"A function can be declared static. When a function is static, it has no "
+"access to the instance member variables or ``self``. This is mainly useful "
+"to make libraries of helper functions::"
+msgstr ""
+"函式可以宣告為靜態。當函式被宣告為靜態，將無法存取實體的成員變數或 "
+"``self`` 。主要適用於製作函式庫或 Helper 函式："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:786
+msgid "Statements and control flow"
+msgstr "稱述句與流程控制"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:788
+msgid ""
+"Statements are standard and can be assignments, function calls, control flow "
+"structures, etc (see below). ``;`` as a statement separator is entirely "
+"optional."
+msgstr ""
+"稱述句為標準，可以為複製、函式呼叫、流程結構…等（相見下方）。 作為稱述句分隔"
+"字元的 ``;`` 是完全可選的。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:793
+msgid "if/else/elif"
+msgstr "\\ if/else/elif"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:795
+msgid ""
+"Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
+"Parenthesis around conditions are allowed, but not required. Given the "
+"nature of the tab-based indentation, ``elif`` can be used instead of "
+"``else``/``if`` to maintain a level of indentation."
+msgstr ""
+"簡單的條件判斷可以使用 ``if``/``else``/``elif`` 語法來建立。可以在條件周圍加"
+"上括號，但並非必要。由於基於 Tab 排版的性質，可以使用 ``elif`` 代替 ``else``/"
+"``if`` 來維持縮排的等級。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
+msgid "Short statements can be written on the same line as the condition::"
+msgstr "較短的陳述式可以與條件寫在同一行內："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:816
+msgid ""
+"Sometimes, you might want to assign a different initial value based on a "
+"boolean expression. In this case, ternary-if expressions come in handy::"
+msgstr ""
+"有時候我們會想依據布林表達式來指派不同的初始值。這時候可以使用三元表達式："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:825
+msgid ""
+"Simple loops are created by using ``while`` syntax. Loops can be broken "
+"using ``break`` or continued using ``continue``:"
+msgstr ""
+"可以使用 ``while`` 語法來建立簡單的迴圈。迴圈可以使用 ``break`` 來中斷或是使"
+"用 ``continue`` 來繼續："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:836
+msgid ""
+"To iterate through a range, such as an array or table, a *for* loop is used. "
+"When iterating over an array, the current array element is stored in the "
+"loop variable. When iterating over a dictionary, the *key* is stored in the "
+"loop variable."
+msgstr ""
+"要在如陣列或表格中的一段範圍內迭代，可以使用 **for** 迴圈。當在陣列中迭代時，"
+"目前的陣列元素會儲存於迴圈變數中。當於字典中迭代時，保存在迴圈變數內的則會是 "
+"**索引** 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:871
+msgid ""
+"A ``match`` statement is used to branch execution of a program. It's the "
+"equivalent of the ``switch`` statement found in many other languages, but "
+"offers some additional features."
+msgstr ""
+"``match`` 陳述式用於在程式內分歧執行。與其他許多語言內的 ``switch`` 表達式相"
+"同，但有些額外的功能。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
+msgid "Basic syntax::"
+msgstr "基本語法："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:885
+msgid "**Crash-course for people who are familiar with switch statements**:"
+msgstr "**給熟悉 switch 陳述式的人的速成課程** ："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:887
+msgid "Replace ``switch`` with ``match``."
+msgstr "將 ``switch`` 取代為 ``match`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:888
+msgid "Remove ``case``."
+msgstr "移除 ``case`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:889
+msgid ""
+"Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
+"use ``continue`` for a fallthrough."
+msgstr ""
+"移除所有的 ``break`` 。若不想預設使用 ``break`` ，可以使用 ``continue`` 來往"
+"下執行。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:890
+msgid "Change ``default`` to a single underscore."
+msgstr "將 ``default`` 改為底線。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:893
+msgid "**Control flow**:"
+msgstr "**流程控制** ："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:895
+msgid ""
+"The patterns are matched from top to bottom. If a pattern matches, the first "
+"corresponding block will be executed. After that, the execution continues "
+"below the ``match`` statement. You can use ``continue`` to stop execution in "
+"the current block and check for an additional match in the patterns below it."
+msgstr ""
+"搜尋模式會按照由上到下的順序來配對。若與搜尋模式相符，則會執行第一個對應的區"
+"塊。之後會繼續執行 ``match`` 陳述式下方的程式。若想往下執行，可以使用 "
+"``continue`` 來停止執行目前的區塊，並往下搜尋其他符合的搜尋模式。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:899
+msgid "There are 6 pattern types:"
+msgstr "有六種搜尋模式："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:911
+msgid "Constant pattern"
+msgstr "常數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:902
+msgid "Constant primitives, like numbers and strings::"
+msgstr "基本常數型別，如數字與字串："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:923
+msgid "Variable pattern"
+msgstr "變數"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:914
+msgid "Matches the contents of a variable/enum::"
+msgstr "尋找與變數或列舉類型 (Enum) 相符合的內容："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
+msgid "Wildcard pattern"
+msgstr "萬用字元"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:926
+msgid "This pattern matches everything. It's written as a single underscore."
+msgstr "尋找所有東西。寫成一個底線。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
+msgid ""
+"It can be used as the equivalent of the ``default`` in a ``switch`` "
+"statement in other languages::"
+msgstr "用法與其他語言中 ``switch`` 的 ``default`` 相同："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:950
+msgid "Binding pattern"
+msgstr "繫結"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
+msgid ""
+"A binding pattern introduces a new variable. Like the wildcard pattern, it "
+"matches everything - and also gives that value a name. It's especially "
+"useful in array and dictionary patterns::"
+msgstr ""
+"繫結搜尋模式使用一個新變數。與萬用字元模式一樣會配對到所有東西，同時將該值指"
+"派給一個變數。對於陣列或字典模式很有用："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:971
+msgid "Array pattern"
+msgstr "陣列"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:953
+msgid ""
+"Matches an array. Every single element of the array pattern is a pattern "
+"itself, so you can nest them."
+msgstr "搜尋陣列。陣列中的每一個元素也都是搜尋模式，可以嵌套使用。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:955
+msgid ""
+"The length of the array is tested first, it has to be the same size as the "
+"pattern, otherwise the pattern doesn't match."
+msgstr "會先檢查陣列的長度，長度必須與搜尋模式相同，否則將不會視為相符。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
+msgid ""
+"**Open-ended array**: An array can be bigger than the pattern by making the "
+"last subpattern ``..``."
+msgstr ""
+"**開放結尾陣列** ：通過將最後一個子搜尋模式設為 ``..`` 可配對大於模式的陣列。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
+msgid "Every subpattern has to be comma-separated."
+msgstr "所有子搜尋模式都以逗號分隔。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
+msgid "Dictionary pattern"
+msgstr "字典"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:974
+msgid ""
+"Works in the same way as the array pattern. Every key has to be a constant "
+"pattern."
+msgstr "與陣列模式相同。所有索引鍵都必須為常數搜尋模式。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:976
+msgid ""
+"The size of the dictionary is tested first, it has to be the same size as "
+"the pattern, otherwise the pattern doesn't match."
+msgstr "會先檢查字典的大小，必須與搜尋模式相同，否則將不會視為相符。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:978
+msgid ""
+"**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
+"making the last subpattern ``..``."
+msgstr ""
+"**開放結尾字典** ：通過將最後一個子搜尋模式設為 ``..`` 可允許配對大於搜尋模式"
+"的字典。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:980
+msgid "Every subpattern has to be comma separated."
+msgstr "所有子模式都必須以逗號分隔。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:982
+msgid ""
+"If you don't specify a value, then only the existence of the key is checked."
+msgstr "若不指定值，則只會檢查索引鍵是否存在。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
+msgid "A value pattern is separated from the key pattern with a ``:``."
+msgstr "值搜尋模式使用 ``:`` 來與索引值搜尋模式區分。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1011
+msgid "Multiple patterns"
+msgstr "多重搜尋模式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1001
+msgid ""
+"You can also specify multiple patterns separated by a comma. These patterns "
+"aren't allowed to have any bindings in them."
+msgstr "也可以逗號區分來指定多個搜尋模式。這些搜尋模式中不允許有任何繫結。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1014
+msgid "Classes"
+msgstr "類別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1016
+msgid ""
+"By default, all script files are unnamed classes. In this case, you can only "
+"reference them using the file's path, using either a relative or an absolute "
+"path. For example, if you name a script file ``character.gd``::"
+msgstr ""
+"預設情況下，所有的腳本檔案都是沒有命名的類別。此時，要參照這些類別的唯一方法"
+"就是使用相對路徑或絕對路徑的檔案位置。如，若腳本檔案命名為 ``character.gd`` "
+"："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1029
+msgid ""
+"Instead, you can give your class a name to register it as a new type in "
+"Godot's editor. For that, you use the ``class_name`` keyword. You can add an "
+"optional comma followed by a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
+msgstr ""
+"但也可以設定類別名稱，並將該類別註冊為 Godot 編輯器中的新型別。使用 "
+"``class_name`` 來設定類別名稱。也可以選擇性地在後方加上逗號與一個圖片路徑，該"
+"圖片會用作圖示。新定義的類別與圖示會在編輯器中顯示："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1041
+msgid "Here's a class file example:"
+msgstr "下列為類別檔案範例："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1063
+msgid ""
+"Godot's class syntax is compact: it can only contain member variables or "
+"functions. You can use static functions, but not static member variables. In "
+"the same way, the engine initializes variables every time you create an "
+"instance, and this includes arrays and dictionaries. This is in the spirit "
+"of thread safety, since scripts can be initialized in separate threads "
+"without the user knowing."
+msgstr ""
+"Godot 的類別語法很簡短，類別中只有成員變數與成員函式。函式可以為靜態函式，但"
+"變數則不可定義為靜態。同樣地，Godot 會在每次實體化時都初始化變數，包含陣列與"
+"字典。這樣一來能讓腳本在使用者不知情的情況下於不同的執行續中初始化，這正是執"
+"行緒安全的精神。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1071
+msgid "Inheritance"
+msgstr "繼承"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1073
+msgid "A class (stored as a file) can inherit from:"
+msgstr "類別 (儲存為檔案) 可以繼承自:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1075
+msgid "A global class."
+msgstr "全域類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
+msgid "Another class file."
+msgstr "另一個類別檔案。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1077
+msgid "An inner class inside another class file."
+msgstr "在另一個類別檔案中的內部類別。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1079
+msgid "Multiple inheritance is not allowed."
+msgstr "無法多重繼承。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1081
+msgid "Inheritance uses the ``extends`` keyword::"
+msgstr "使用 ``extends`` 關鍵字來繼承："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1093
+msgid ""
+"To check if a given instance inherits from a given class, the ``is`` keyword "
+"can be used::"
+msgstr "可使用 ``is`` 關鍵字來檢查某個類別是否繼承了指定的實體："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1105
+msgid ""
+"To call a function in a *parent class* (i.e. one ``extend``-ed in your "
+"current class), prepend ``.`` to the function name::"
+msgstr ""
+"若要呼叫 **母類別** 中的函式 (也就是目前類別 ``extend`` 的類別)，可在函式名稱"
+"前加上 ``.`` ："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1110
+msgid ""
+"This is especially useful because functions in extending classes replace "
+"functions with the same name in their parent classes. If you still want to "
+"call them, you can prefix them with ``.`` (like the ``super`` keyword in "
+"other languages)::"
+msgstr ""
+"當目前類別定義了與母類別中相同名稱的函式時此方法特別適用。若想呼叫母類別中的"
+"方法則可在前面加上 ``.`` (類似其他語言中的 ``super`` 關鍵字)："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1118
+msgid ""
+"Default functions like  ``_init``, and most notifications such as "
+"``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
+"are called in all parent classes automatically. There is no need to call "
+"them explicitly when overloading them."
+msgstr ""
+"如 ``_init`` 等預設函式、以及大多數的通知如 ``_enter_tree``, ``_exit_tree``, "
+"``_process``, ``_physics_process`` …等都會自動呼叫母類別中的函式。當多載這些"
+"函式時不需要明確呼叫。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1125
+msgid "Class Constructor"
+msgstr "類別建構函式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1127
+msgid ""
+"The class constructor, called on class instantiation, is named ``_init``. As "
+"mentioned earlier, the constructors of parent classes are called "
+"automatically when inheriting a class. So, there is usually no need to call "
+"``._init()`` explicitly."
+msgstr ""
+"類別建構函式 ``_init`` 會在類別實體化時呼叫。如同剛才提到的，繼承的類別會自動"
+"呼叫母類別建構函式，所以通常不需要明確呼叫 ``._init()`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
+msgid ""
+"Unlike the call of a regular function, like in the above example with ``."
+"some_func``, if the constructor from the inherited class takes arguments, "
+"they are passed like this::"
+msgstr ""
+"上方的 ``.some_func`` 例子中可以看到與呼叫一般函式不同，若繼承類別的建構函式"
+"有引數，則會這樣傳遞："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
+msgid "This is better explained through examples. Consider this scenario::"
+msgstr "通過範例能更好理解，來看看下面這個情況："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1162
+msgid "There are a few things to keep in mind here:"
+msgstr "還有幾件事需要注意："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1164
+msgid ""
+"If the inherited class (``State.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``Idle."
+"gd``) *must* define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``State.gd``."
+msgstr ""
+"若被繼承類別 (``State.gd``) 定義了需要引數的建構函式 ``_init`` (此例中為 "
+"``e``) ，則繼承類別 (``Idle.gd``) **必須** 也定義 ``_init`` 並將適當的參數傳"
+"遞從 ``State.gd`` 中傳遞給 ``_init`` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
+msgid ""
+"``Idle.gd`` can have a different number of arguments than the parent class "
+"``State.gd``."
+msgstr "``Idle.gd`` 的引數數量可與母類別 ``State.gd`` 不同。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1168
+msgid ""
+"In the example above, ``e`` passed to the ``State.gd`` constructor is the "
+"same ``e`` passed in to ``Idle.gd``."
+msgstr ""
+"在上方的例子中，傳遞給 ``State.gd`` 建構函式的 ``e`` 與傳遞給 ``Idle.gd`` 之 "
+"``e`` 相同。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1170
+msgid ""
+"If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``State.gd`` parent class, even if it does nothing. "
+"This brings us to the fact that you can pass literals in the base "
+"constructor as well, not just variables. eg.::"
+msgstr ""
+"若 ``Idle.gd`` 中的 ``_init`` 建構函式只接受 0 個引數，則即使沒有效果，依然需"
+"要傳入數值給 ``State.gd`` 母類別。也就是說，不只可將變數傳給母類別的建構函"
+"式，也可傳遞字面值，如下："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1180
+msgid "Inner classes"
+msgstr "內類別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1182
+msgid ""
+"A class file can contain inner classes. Inner classes are defined using the "
+"``class`` keyword. They are instanced using the ``ClassName.new()`` function."
+msgstr ""
+"類別檔可以再包含內類別。內類別使用 ``class`` 關鍵字來定義。這些內部類別使用 "
+"``類別名稱.new()`` 函式來實體化。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1207
+msgid "Classes as resources"
+msgstr "以類別當作資源"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1209
+msgid ""
+"Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
+"They must be loaded from disk to access them in other classes. This is done "
+"using either the ``load`` or ``preload`` functions (see below). Instancing "
+"of a loaded class resource is done by calling the ``new`` function on the "
+"class object::"
+msgstr ""
+"保存為檔案的類別可視為 :ref:`資源 <class_GDScript>` 。這些類別必須從硬碟中載"
+"入後才可在其他類別中存取。可使用 ``load`` 或 ``preload`` 函式來載入（詳見下"
+"方）。通過呼叫類別物件上的 ``new`` 方法來實體化載入的類別："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
+msgid "Exports"
+msgstr "匯出"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
+msgid ""
+"Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
+msgstr "有關匯出的說明文件已移至 :ref:`doc_gdscript_exports` 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1233
+msgid "Setters/getters"
+msgstr "Setter 與 Getter"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1235
+msgid ""
+"It is often useful to know when a class' member variable changes for "
+"whatever reason. It may also be desired to encapsulate its access in some "
+"way."
+msgstr ""
+"若能知道類別成員變數何時更改與為何更改可能很有用，我們也可能會希望以某種方法"
+"來封裝成員變數的存取。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1238
+msgid ""
+"For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
+"keyword. It is used directly after a variable definition:"
+msgstr ""
+"為此，GDScript 內提供了使用 ``setget`` 關鍵字的 **setter/getter** 語法。 "
+"``setget`` 的使用方法為直接接在變數定義之後："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1245
+msgid ""
+"Whenever the value of ``variable`` is modified by an *external* source (i.e. "
+"not from local usage in the class), the *setter* function (``setterfunc`` "
+"above) will be called. This happens *before* the value is changed. The "
+"*setter* must decide what to do with the new value. Vice versa, when "
+"``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
+"``return`` the desired value. Below is an example::"
+msgstr ""
+"一旦 ``variable`` 的值被 **外部** 的來源更改 (指非類別內部)，則會呼叫 "
+"**setter** 函式 (上方例子中為 ``setterfunc`` )。setter 函式是在數值變更 **之"
+"前** 呼叫的。 **setter** 方法必須決定要如何處理新的值。同樣地，存取 "
+"``variable`` 值時， **getter** 函式 (上方例子中為 ``getterfunc``) 必須決定要 "
+"``return`` 什麼值。範例如下："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1261
+msgid "Either of the *setter* or *getter* functions can be omitted::"
+msgstr "**setter** 或 **getter** 方法可省略："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
+msgid ""
+"Setters and getters are useful when :ref:`exporting variables "
+"<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
+"validating input."
+msgstr ""
+"Setter 與 Getter 對於在工具腳本或插件中 :ref:`匯出變數 "
+"<doc_gdscript_exports>` 時檢查輸入很有用。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1271
+msgid ""
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
+"illustration of this:"
+msgstr ""
+"如同剛才提到的， **區域** 存取 **不會** 觸發 setter 與 getter。說明如下："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1288
+msgid "Tool mode"
+msgstr "工具模式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1290
+msgid ""
+"By default, scripts don't run inside the editor and only the exported "
+"properties can be changed. In some cases, it is desired that they do run "
+"inside the editor (as long as they don't execute game code or manually avoid "
+"doing so). For this, the ``tool`` keyword exists and must be placed at the "
+"top of the file::"
+msgstr ""
+"預設情況下，腳本並不會在編輯器中執行，且只能更改匯出的屬性。而某些情況下，我"
+"們會想在編輯器中執行腳本（只要這些腳本不會執行遊戲程式碼或手動避免執行遊戲腳"
+"本即可）。為此，可在腳本檔案的頂部加上 ``tool`` 關鍵字："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+msgid "See :ref:`doc_running_code_in_the_editor` for more information."
+msgstr "請參考 :ref:`doc_running_code_in_the_editor` 以瞭解詳情。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
+msgid ""
+"Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
+"script (especially the script's owner itself). As tool scripts run their "
+"code in the editor, misusing them may lead to crashing the editor."
+msgstr ""
+"在工具腳本中以 ``queue_free()`` 或 ``free()`` 釋放節點時請特別謹慎（特別是該"
+"節點為腳本擁有者時）。由於工具腳本會在編輯器中執行程式碼，若錯誤使用這些方法"
+"可能會使編輯器當掉。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1312
+msgid "Memory management"
+msgstr "記憶體管理"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1314
+#, fuzzy
+msgid ""
+"If a class inherits from :ref:`class_Reference`, then instances will be "
+"freed when no longer in use. No garbage collector exists, just reference "
+"counting. By default, all classes that don't define inheritance extend "
+"**Reference**. If this is not desired, then a class must inherit :ref:"
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a ``weakref`` function is provided for "
+"creating weak references."
+msgstr ""
+"若類別繼承自 :ref:`class_reference` ，則類別的實體會在不再被使用時釋放。"
+"GDScript 中沒有記憶體回收行程，而只使用參照計數。預設情況下，所有未定義繼承的"
+"類別都會繼承 **Reference** 。若不想繼承 Reference，則類別必須手動繼承 :ref:"
+"`class_Object` 並呼叫 instance.free() 。要避免無法被釋放的參照循環，可使用 "
+"``weakref`` 方法來建立弱參照。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1322
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+"或者，不適用參照時，亦可使用 ``is_instance_valid(實體)`` 來判斷一個物件是否已"
+"被釋放。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1329
+msgid "Signals"
+msgstr "訊號"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1331
+msgid ""
+"Signals are a tool to emit messages from an object that other objects can "
+"react to. To create custom signals for a class, use the ``signal`` keyword."
+msgstr ""
+"訊號是用來從物件發送可讓其他物件做出反應的一項工具。若要為類別建立自定訊號，"
+"請使用 ``signal`` 關鍵字。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1344
+msgid ""
+"Signals are a `Callback <https://en.wikipedia.org/wiki/"
+"Callback_(computer_programming)>`_ mechanism. They also fill the role of "
+"Observers, a common programming pattern. For more information, read the "
+"`Observer tutorial <https://gameprogrammingpatterns.com/observer.html>`_ in "
+"the Game Programming Patterns ebook."
+msgstr ""
+"訊號是一種 `回呼 <https://zh.wikipedia.org/zh-tw/%E5%9B%9E%E8%B0%83%E5%87%BD"
+"%E6%95%B0>`_ 機制。訊號也充當了 Observer 角色 (一種常見的程式設計模式)。更多"
+"資訊請參考 Game Programming Patterns 電子書中的 `Observer tutorial (英語) "
+"<https://gameprogrammingpatterns.com/observer.html>`_ 。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1351
+msgid ""
+"You can connect these signals to methods the same way you connect built-in "
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
+msgstr ""
+"可通過與內建節點訊號 (如 :ref:`class_Button` 或 :ref:`class_RigidBody` ) 相同"
+"的方法來將自定訊號連接至方法。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1354
+msgid ""
+"In the example below, we connect the ``health_depleted`` signal from a "
+"``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
+"signal, the game node's ``_on_Character_health_depleted`` is called::"
+msgstr ""
+"在下方的例子中，我們將將 ``health_depleted`` 訊號從 ``Character`` 節點連接至 "
+"``Game`` 節點。當 ``Character`` 節點送出訊號時會呼叫 Game 節點的 "
+"``_on_Character_health_depleted`` ："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
+msgid "You can emit as many arguments as you want along with a signal."
+msgstr "也可以與訊號一起送出任意數量的引數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1370
+msgid ""
+"Here is an example where this is useful. Let's say we want a life bar on "
+"screen to react to health changes with an animation, but we want to keep the "
+"user interface separate from the player in our scene tree."
+msgstr ""
+"下列範例說明了如何有效使用這個功能。假設螢幕上有一個血槽，可以動畫顯示生命值"
+"的改變，但同時我們也想在場景樹中將使用者界面與玩家分開來。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
+msgid ""
+"In our ``Character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
+"and from a ``Game`` node higher up our scene tree, we connect it to the "
+"``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
+"method::"
+msgstr ""
+"在 ``Character.gd`` 腳本中，我們定義了 ``health_changed`` 訊號，並使用 :ref:"
+"`Object.emit_signal() <class_Object_method_emit_signal>` 送出訊號。而在場景樹"
+"中更高的 ``Game`` 節點中，我們使用 :ref:`Object.connect() "
+"<class_OBject_method_connect>` 方法來將訊號與 ``LifeBar`` 連接起來："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
+msgid ""
+"To use signals, your class has to extend the ``Object`` class or any type "
+"extending it like ``Node``, ``KinematicBody``, ``Control``..."
+msgstr ""
+"要使用訊號，則類別必須繼承 ``Object`` 或是任何繼承了 ``Object`` 的型別，如 "
+"``Node``, ``KinematicBody``, ``Control`` …等。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+msgid ""
+"In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
+"then connect the character, that emits the signal, to the receiver, the "
+"``Lifebar`` node in this case."
+msgstr ""
+"我們在 ``Game`` 中同時取得了 ``Character`` 與 ``Lifebar`` 節點，然後將送出訊"
+"號的 Characeter 連接到接收器，也就使本例中的 ``Lifebar`` 節點。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
+msgid ""
+"This allows the ``Lifebar`` to react to health changes without coupling it "
+"to the ``Character`` node."
+msgstr ""
+"這樣一來便能讓 ``Lifebar`` 對生命值的更改做出反應而無需與 ``Character`` 節點"
+"耦合。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1435
+msgid ""
+"You can write optional argument names in parentheses after the signal's "
+"definition::"
+msgstr "可於訊號定義後方的括號中填寫可選的引數名稱："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1441
+msgid ""
+"These arguments show up in the editor's node dock, and Godot can use them to "
+"generate callback functions for you. However, you can still emit any number "
+"of arguments when you emit signals; it's up to you to emit the correct "
+"values."
+msgstr ""
+"這些引數會在編輯器的節點 Dock 中顯示，Godot 會使用這些引數來產生回呼函式。"
+"但，送出訊號時還是可以送出任意數量的引數，可自行決定是否要送出正確數量的引"
+"數。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1447
+msgid ""
+"GDScript can bind an array of values to connections between a signal and a "
+"method. When the signal is emitted, the callback method receives the bound "
+"values. These bound arguments are unique to each connection, and the values "
+"will stay the same."
+msgstr ""
+"在 GDScript 中可繫結陣列來連接訊號與方法。訊號送出後，回呼函式會收到綁定的"
+"值。每個連線繫結的引數都是獨立的，引數值則會保持不變。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1452
+msgid ""
+"You can use this array of values to add extra constant information to the "
+"connection if the emitted signal itself doesn't give you access to all the "
+"data that you need."
+msgstr ""
+"當無法在送出的訊號中取得所有需要的資料時，可以使用這個陣列來為連接加上額外的"
+"常數資訊。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1456
+msgid ""
+"Building on the example above, let's say we want to display a log of the "
+"damage taken by each character on the screen, like ``Player1 took 22 damage."
+"``. The ``health_changed`` signal doesn't give us the name of the character "
+"that took damage. So when we connect the signal to the in-game console, we "
+"can add the character's name in the binds array argument::"
+msgstr ""
+"以上方的範例為基礎，假設我們需要在螢幕上顯示各個角色收到傷害的記錄，如 "
+"``Player1 受到了 22 點傷害`` 之類的。 ``health_changed`` 訊號並未提供收到傷害"
+"的角色名稱，所以我們可以在連接訊號至遊戲界面時將角色名稱放在繫結的陣列引數"
+"上："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
+msgid ""
+"Our ``BattleLog`` node receives each element in the binds array as an extra "
+"argument::"
+msgstr "``BattleLog`` 節點會接收繫結陣列中的所有元素作為額外引數："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1483
+msgid "Coroutines with yield"
+msgstr "使用 yield 撰寫協同程式"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1485
+msgid ""
+"GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
+"Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
+"function. Calling ``yield()`` will immediately return from the current "
+"function, with the current frozen state of the same function as the return "
+"value. Calling ``resume()`` on this resulting object will continue execution "
+"and return whatever the function returns. Once resumed, the state object "
+"becomes invalid. Here is an example::"
+msgstr ""
+"GDScript 中可通過 :ref:`yield<class_@GDScript_method_yield>` 內建函式來支援 `"
+"協同程式 (英文) <https://en.wikipedia.org/wiki/Coroutine>` 。呼叫 "
+"``yield()`` 會馬上從目前的函式回傳，並將目前函式的狀態凍結來作為回傳值。在回"
+"傳的物件上呼叫 ``resume()`` 則會繼續執行函式並回傳函式的回傳值。繼續執行後，"
+"狀態物件即變為無效。範例如下："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1506
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1527
+msgid "Will print::"
+msgstr "將印出："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1512
+msgid ""
+"It is also possible to pass values between ``yield()`` and ``resume()``, for "
+"example::"
+msgstr "也可以在 ``yield()`` 與 ``resume()`` 間傳遞數值，例如："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1533
+msgid ""
+"Remember to save the new function state, when using multiple ``yield``\\s::"
+msgstr "使用多個 ``yield`` 時請記得保存新函式的狀態："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1548
+msgid "Coroutines & signals"
+msgstr "協同程式與訊號"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1550
+msgid ""
+"The real strength of using ``yield`` is when combined with signals. "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
+"is received, execution will recommence. Here are some examples::"
+msgstr ""
+"當與訊號一起使用時才可發揮 ``yield`` 真正的實力。 ``yield`` 可接受兩個引數，"
+"一個物件與一個訊號。當收到訊號後，即會繼續開始執行。請參考下列例子："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1563
+msgid ""
+"Coroutines themselves use the ``completed`` signal when they transition into "
+"an invalid state, for example::"
+msgstr "協同程式會在自己轉變為無效狀態後發出 ``completed`` 訊號，如："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1575
+msgid ""
+"``my_func`` will only continue execution once both buttons have been pressed."
+msgstr "``my_func`` 只會在兩個按鈕都按下後才繼續執行。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
+msgid "You can also get the signal's argument once it's emitted by an object:"
+msgstr "也可以在物件送出訊號後取得訊號的引數："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1584
+msgid ""
+"If you're unsure whether a function may yield or not, or whether it may "
+"yield multiple times, you can yield to the ``completed`` signal "
+"conditionally:"
+msgstr ""
+"若不確定某個函式會不會 yield，或是某個函式是否會 yield 多次，則可以設定 "
+"yield 條件為 ``completed`` 訊號："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1606
+msgid ""
+"This ensures that the function returns whatever it was supposed to return "
+"regardless of whether coroutines were used internally. Note that using "
+"``while`` would be redundant here as the ``completed`` signal is only "
+"emitted when the function didn't yield anymore."
+msgstr ""
+"這樣一來便確保該函式會回傳應該要回傳的值而不管內部是否有協同程式。請注意，不"
+"需要使用 ``while`` ，因為 ``completed`` 訊號只會在函式不再 yield 後才送出。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
+msgid "Onready keyword"
+msgstr "Onready 關鍵字"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1614
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"使用節點時，我們通常會想以變數來參照到場景的某個部分。由於場景只有在進入有效"
+"場景樹後才能保證有正確配置，所以在 ``Node._ready()`` 呼叫後才能取得子節點。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1627
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``onready`` keyword, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"這麼做優點麻煩，特別是當節點與外部參照很多時。為此，GDScript 中有 "
+"``onready`` 關鍵字，會推遲成員變數的初始化，直到 ``_ready()`` 呼叫後。我們可"
+"以將上述代碼用這樣一行程式碼來取代："
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1635
+msgid "Assert keyword"
+msgstr "Assert 關鍵字"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
+msgid ""
+"The ``assert`` keyword can be used to check conditions in debug builds. "
+"These assertions are ignored in non-debug builds. This means that the "
+"expression passed as argument won't be evaluated in a project exported in "
+"release mode. Due to this, assertions must **not** contain expressions that "
+"have side effects. Otherwise, the behavior of the script would vary "
+"depending on whether the project is run in a debug build."
+msgstr ""
+"``assert`` 關鍵字可以用來在除錯建構中檢查條件。這些斷言會在非除錯建構中忽略。"
+"這表示作為引數傳遞的運算式在以發行模式匯出的專案中將不會被計算。因此，斷言 **"
+"不可** 包含有副作用的運算式。否則，腳本會因為專案是否於除錯建構中而有不同的行"
+"為。"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+msgid ""
+"When running a project from the editor, the project will be paused if an "
+"assertion error occurs."
+msgstr "若從編輯器中執行專案，則專案會在斷言發生錯誤時暫停。"

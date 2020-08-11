@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "カスタム機能"
+msgstr "機能一覧"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"このページでは、Godotが現在サポートしているすべての機能をリストアップすること"
+"を目的としています。"
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -33,32 +34,34 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"このページでは、現在の安定版である Godot (3.2) でサポートされている機能の一覧"
+"を示します。最新の開発バージョン (4.0) では、\\ `より多くの機能 <https://"
+"docs.godotengine.org/ja/latest/about/list_of_features.html>`__\\ が利用可能で"
+"す。"
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
 msgstr "特徴"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "**プラットフォーム:**"
+msgstr "プラットフォーム"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**エディタとエクスポートしたプロジェクトの両方を実行できます。**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7以降（64ビットと32ビット）。"
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:27
-#, fuzzy
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr "プラットフォームアーキテクチャ(64ビットまたは32ビット、x86またはARM)。"
+msgstr "Linux (64ビットと32ビット、x86とARM)。"
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
@@ -71,14 +74,12 @@ msgid "Official binaries are compiled on Ubuntu 14.04."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "**Runs exported projects:**"
-msgstr "プロジェクトのエクスポート"
+msgstr "**エクスポートされたプロジェクトの実行:**"
 
 #: ../../docs/about/list_of_features.rst:31
-#, fuzzy
 msgid "Android 4.4 and later."
-msgstr "\\ Android SDK Platform"
+msgstr "Android 4.4 以降。"
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
@@ -89,9 +90,8 @@ msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr "\\ :ref:`bool <class_bool>`"
+msgstr ":ref:`コンソール <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
@@ -106,19 +106,16 @@ msgstr "エディタ"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**フィーチャータグ**"
+msgstr "**機能:**"
 
 #: ../../docs/about/list_of_features.rst:44
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "シーンツリー"
+msgstr "シーンツリー エディタ。"
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "スクリプトエディタ"
+msgstr "スクリプト エディタ。"
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
@@ -135,19 +132,16 @@ msgid "No support for debugging in threads yet."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:50
-#, fuzzy
 msgid "Performance monitoring tools."
-msgstr "GodotにおけるC#のパフォーマンス"
+msgstr "パフォーマンス計測ツール。"
 
 #: ../../docs/about/list_of_features.rst:51
-#, fuzzy
 msgid "Live script reloading."
-msgstr "ロード(load) 対 プリロード(preload)"
+msgstr "実行時スクリプト再読み込み。"
 
 #: ../../docs/about/list_of_features.rst:52
-#, fuzzy
 msgid "Live scene editing."
-msgstr "シーンの継承を使用する"
+msgstr "実行時シーン編集。"
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
@@ -156,9 +150,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:54
-#, fuzzy
 msgid "Remote inspector."
-msgstr "シーンドックのリモート"
+msgstr "リモート インスペクタ。"
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
@@ -167,9 +160,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "カメラのアニメーション"
+msgstr "実行時カメラ複製。"
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
@@ -180,9 +172,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "プラグイン"
+msgstr "**プラグイン:**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
@@ -245,9 +236,8 @@ msgid "AnimatedSprite as a helper for creating animated sprites."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:82
-#, fuzzy
 msgid "Parallax layers."
-msgstr "キャンバス・レイヤー"
+msgstr "視差レイヤー。"
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
@@ -293,14 +283,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "パーティクル"
+msgstr "CPUベースのパーティクル。"
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "\\ tool"
+msgstr "2Dツール"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
@@ -328,33 +316,28 @@ msgid "Line2D node to draw textured 2D lines."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "物理"
+msgstr "2D物理演算"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "物理演算のプロパティ"
+msgstr "**物理ボディ:**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
-#, fuzzy
 msgid "Static bodies."
-msgstr "静的関数"
+msgstr "静的ボディ。"
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
-#, fuzzy
 msgid "Rigid bodies."
-msgstr "リジッドボディのモード"
+msgstr "リジッドボディ。"
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
-#, fuzzy
 msgid "Kinematic bodies."
-msgstr "\\ KinematicBody2D"
+msgstr "キネマティックボディ。"
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
@@ -368,9 +351,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "3Dでの衝突検出"
+msgstr "**衝突検出:**"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
@@ -387,14 +369,12 @@ msgid "3D graphics"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:128
-#, fuzzy
 msgid "HDR rendering with sRGB."
-msgstr "3Dのパフォーマンスと制限"
+msgstr "sRGBでHDRレンダリング。"
 
 #: ../../docs/about/list_of_features.rst:131
-#, fuzzy
 msgid "LDR rendering for greater compatibility."
-msgstr "スペキュラーをフォンに(互換性が高い)。"
+msgstr "互換性を高めるためのLDRレンダリング。"
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
@@ -403,9 +383,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:135
-#, fuzzy
 msgid "**Camera:**"
-msgstr "**カテゴリ:**"
+msgstr "**カメラ:**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -424,9 +403,8 @@ msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Normalmap(法線マップ)"
+msgstr "法線マップ。"
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
@@ -453,27 +431,24 @@ msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:151
-#, fuzzy
 msgid "**Real-time lighting:**"
-msgstr "\\ **vertex_lighting**"
+msgstr "**リアルタイム照明:**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:154
-#, fuzzy
 msgid "Omnidirectional lights."
-msgstr "指向性(Directional)ライト"
+msgstr "全方位ライト。"
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:157
-#, fuzzy
 msgid "**Shadow mapping:**"
-msgstr "シャドウマッピング"
+msgstr "**シャドウマッピング:**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
@@ -488,9 +463,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:163
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "ライトテクスチャのUV。"
+msgstr "*スポットライト:* 単一テクスチャ。"
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
@@ -509,9 +483,8 @@ msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:171
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "反射"
+msgstr "**反射:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -524,9 +497,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:176
-#, fuzzy
 msgid "*GLES3:* Screen-space reflections."
-msgstr "スクリーンスペースリフレクション"
+msgstr "*GLES3:* スクリーンスペース リフレクション。"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Reflection techniques can be mixed together for greater accuracy."
@@ -541,9 +513,8 @@ msgid "Panorama sky (using an HDRI)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:182
-#, fuzzy
 msgid "Procedural sky."
-msgstr "手続き型ジオメトリ(幾何)"
+msgstr "プロシージャルな空。"
 
 #: ../../docs/about/list_of_features.rst:184
 msgid "**Fog:**"
@@ -568,25 +539,20 @@ msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:192
-#, fuzzy
 msgid "**Particles:**"
-msgstr "パーティクル"
+msgstr "**パーティクル:**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:197
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "カスタムポストプロセッシング"
+msgstr "**ポストプロセッシング:**"
 
 #: ../../docs/about/list_of_features.rst:199
-#, fuzzy
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
-"**Mode:** トーンマッピングモード、Linear、Reindhart、Filmic、またはAcesのいず"
-"れかです。"
+msgstr "トーンマッピング (Linear、Reinhard、Filmic、ACES)。"
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
@@ -597,9 +563,8 @@ msgid "*GLES3:* Near and far depth of field."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:202
-#, fuzzy
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "スクリーンスペースアンビエントオクルージョン"
+msgstr "*GLES3:* スクリーンスペース アンビエントオクルージョン"
 
 #: ../../docs/about/list_of_features.rst:203
 msgid ""
@@ -616,18 +581,16 @@ msgid "Brightness, contrast and saturation adjustments."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:208
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**フィーチャータグ**"
+msgstr "**テクスチャ フィルタリング:**"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "テクスチャ圧縮"
+msgstr "**テクスチャ圧縮:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
@@ -650,9 +613,8 @@ msgid "**Anti-aliasing:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:221
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "複数のインスタンス"
+msgstr "マルチサンプル アンチエイリアシング (MSAA)。"
 
 #: ../../docs/about/list_of_features.rst:223
 msgid ""
@@ -661,19 +623,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:227
-#, fuzzy
 msgid "3D tools"
-msgstr "\\ tool"
+msgstr "3Dツール"
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr "\\ :ref:`手続き型ジオメトリ <toc-procedural_geometry>`"
+msgstr ":ref:`手続き型ジオメトリ生成 <toc-procedural_geometry>` 用ツール。"
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
@@ -694,23 +654,20 @@ msgid "3D geometry helper class."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:238
-#, fuzzy
 msgid "3D physics"
-msgstr "物理"
+msgstr "3D物理"
 
 #: ../../docs/about/list_of_features.rst:245
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "Soft bodies."
-msgstr "\\ SoftBody"
+msgstr "ソフトボディ。"
 
 #: ../../docs/about/list_of_features.rst:248
-#, fuzzy
 msgid "Ragdolls."
-msgstr "ラグドールシステム"
+msgstr "ラグドール。"
 
 #: ../../docs/about/list_of_features.rst:253
 msgid ""
@@ -746,28 +703,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "ビジュアルシェーダーエディタの使用"
+msgstr "ビジュアルシェーダーエディタ。"
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "ビジュアルシェーダープラグイン"
+msgstr "ビジュアルシェーダープラグイン。"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Scripting"
 msgstr "スクリプト"
 
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "**General:**"
-msgstr "一般"
+msgstr "**全般:**"
 
 #: ../../docs/about/list_of_features.rst:271
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "オブジェクト指向の設計と構成"
+msgstr "スクリプトがノードを拡張する、オブジェクト指向デザインパターン。"
 
 #: ../../docs/about/list_of_features.rst:272
 msgid "Signals and groups for communicating between scripts."
@@ -788,12 +741,12 @@ msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:278
-#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
-"Godot 3.1から、GDScriptはオプショナルな静的型付けをサポートしています。"
+":ref:`オプションでの静的型付け <doc_gdscript_static_typing>` が可能な `高水準"
+"インタプリタ言語 <doc_gdscript>`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Syntax inspired by Python."
@@ -826,9 +779,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "サポートされている画像形式"
+msgstr "すべてのプラットフォームをサポート。"
 
 #: ../../docs/about/list_of_features.rst:291
 msgid ""
@@ -902,9 +854,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:317
-#, fuzzy
 msgid "Dozens of effects included."
-msgstr "例に含まれるのは……"
+msgstr "数十のエフェクトを内蔵。"
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ""
@@ -916,9 +867,8 @@ msgid "Audio input to record microphones."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:321
-#, fuzzy
 msgid "MIDI input."
-msgstr "入力"
+msgstr "MIDI 入力。"
 
 #: ../../docs/about/list_of_features.rst:321
 msgid "No support for MIDI output yet."
@@ -929,9 +879,8 @@ msgid "**APIs used:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:325
-#, fuzzy
 msgid "*Windows:* WASAPI."
-msgstr "\\ **Windows**"
+msgstr "*Windows:* WASAPI。"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid "*macOS:* CoreAudio."
@@ -942,28 +891,24 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Import"
 msgstr "インポート"
 
 #: ../../docs/about/list_of_features.rst:332
-#, fuzzy
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ":ref:`カスタム型<doc_making_plugins>`"
+msgstr ":ref:`カスタムのインポート用プラグイン <doc_import_plugins>` に対応。"
 
 #: ../../docs/about/list_of_features.rst:334
-#, fuzzy
 msgid "**Formats:**"
-msgstr "**プラットフォーム:**"
+msgstr "**フォーマット:**"
 
 #: ../../docs/about/list_of_features.rst:336
 msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:338
-#, fuzzy
 msgid "*Audio:*"
-msgstr "オーディオ"
+msgstr "*オーディオ:*"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "WAV with optional IMA-ADPCM compression."
@@ -974,20 +919,20 @@ msgid "Ogg Vorbis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:346
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "シーン"
+msgstr "*3Dシーン:*"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "glTF 2.0 *(recommended)*."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:342
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "\\ https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (Blenderから"
+"直接エクスポート)。"
 
 #: ../../docs/about/list_of_features.rst:344
 msgid "FBX (experimental)."
@@ -1022,14 +967,12 @@ msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:354
-#, fuzzy
 msgid "Keyboard input."
-msgstr "キーボードイベント"
+msgstr "キーボード入力。"
 
 #: ../../docs/about/list_of_features.rst:357
-#, fuzzy
 msgid "Mouse input."
-msgstr "マウスイベント"
+msgstr "マウス入力。"
 
 #: ../../docs/about/list_of_features.rst:356
 msgid ""
@@ -1052,18 +995,16 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "ナビゲーションモード"
+msgstr "ナビゲーション"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "ナビゲーションモード"
+msgstr "ナビゲーションメッシュ。"
 
 #: ../../docs/about/list_of_features.rst:367
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -1098,9 +1039,8 @@ msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:379
-#, fuzzy
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr "高レベルのマルチプレイヤー"
+msgstr "UDP および ENet を使う高レベルのマルチプレイヤーAPI。"
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "Automatic replication using remote procedure calls (RPCs)."
@@ -1158,9 +1098,8 @@ msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:400
-#, fuzzy
 msgid "Change the window title and icon."
-msgstr "ファイル・アイコンの変更"
+msgstr "ウィンドウのタイトルおよびアイコンの変更。"
 
 #: ../../docs/about/list_of_features.rst:401
 msgid ""
@@ -1168,9 +1107,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:403
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "全画面表示モードを指定します。"
+msgstr "全画面表示モード。"
 
 #: ../../docs/about/list_of_features.rst:403
 msgid ""
@@ -1205,19 +1143,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:411
-#, fuzzy
 msgid "Parse custom command line arguments."
-msgstr "コマンドライン引数。"
+msgstr "カスタムのコマンドライン引数をパース。"
 
 #: ../../docs/about/list_of_features.rst:414
-#, fuzzy
 msgid "Mobile"
-msgstr "モバイル上"
+msgstr "モバイル"
 
 #: ../../docs/about/list_of_features.rst:416
-#, fuzzy
 msgid "In-app purchases on Android and iOS."
-msgstr "アプリ内購入"
+msgstr "Android および iOS でのアプリ内購入。"
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Support for advertisements using third-party modules."
@@ -1242,9 +1177,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:427
-#, fuzzy
 msgid "GUI system"
-msgstr "ファイルシステム"
+msgstr "GUIシステム"
 
 #: ../../docs/about/list_of_features.rst:429
 msgid ""
@@ -1253,14 +1187,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:432
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "ノード"
+msgstr "**ノード:**"
 
 #: ../../docs/about/list_of_features.rst:434
-#, fuzzy
 msgid "Buttons."
-msgstr "Button"
+msgstr "ボタン。"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Checkboxes, check buttons, radio buttons."
@@ -1275,14 +1207,12 @@ msgid "Dropdown menus using PopupMenu and OptionButton."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:438
-#, fuzzy
 msgid "Scrollbars."
-msgstr "スクロールコンテナ"
+msgstr "スクロールバー。"
 
 #: ../../docs/about/list_of_features.rst:439
-#, fuzzy
 msgid "Labels."
-msgstr "ラベル"
+msgstr "ラベル。"
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
@@ -1305,28 +1235,24 @@ msgid "Controls can be rotated and scaled."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:445
-#, fuzzy
 msgid "**Sizing:**"
-msgstr "サイズ変更"
+msgstr "**サイズ変更:**"
 
 #: ../../docs/about/list_of_features.rst:447
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:452
-#, fuzzy
 msgid "Containers to place GUI elements automatically following certain rules."
-msgstr "UI要素を自動的に配置するコンテナを追加する"
+msgstr "特定のルールに従ってUI要素を自動配置するコンテナ。"
 
 #: ../../docs/about/list_of_features.rst:449
-#, fuzzy
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr "\\ :ref:`String <class_String>`"
+msgstr ":ref:`スタック <class_BoxContainer>`\\ レイアウト。"
 
 #: ../../docs/about/list_of_features.rst:450
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr "\\ :ref:`Sprite <class_Sprite>`"
+msgstr ":ref:`グリッド <class_GridContainer>`\\ レイアウト。"
 
 #: ../../docs/about/list_of_features.rst:451
 msgid ""
@@ -1353,9 +1279,8 @@ msgid "**Theming:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:459
-#, fuzzy
 msgid "Built-in theme editor."
-msgstr "エディタの実行"
+msgstr "内蔵テーマエディタ。"
 
 #: ../../docs/about/list_of_features.rst:460
 msgid "Generate a theme based on the current editor theme settings."
@@ -1404,7 +1329,6 @@ msgid "Support for Bézier curves in animation."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:478
-#, fuzzy
 msgid "Formats"
 msgstr "フォーマット"
 
@@ -1472,22 +1396,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:501
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "コマンドライン引数。"
+msgstr "自動化のためのコマンドライン用インターフェイス。"
 
 #: ../../docs/about/list_of_features.rst:500
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:501
-#, fuzzy
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`エディタ/アイコン <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"Bash、zsh、fish 用の\\ `自動補完スクリプト <https://github.com/godotengine/"
+"godot/tree/master/misc/dist/shell>`__\\ あり。"
 
 #: ../../docs/about/list_of_features.rst:503
 msgid ""
@@ -1500,13 +1422,12 @@ msgid "Engine and editor written in C++03."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:506
-#, fuzzy
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
-"GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
-"`ui_introduction_to_the_ui_system`\\ を見て下さい。"
+"GCC、Clang および MSVC を使用して\\ :ref:`コンパイル "
+"<doc_introduction_to_the_buildsystem>`\\ 可能。MinGWにも対応。"
 
 #: ../../docs/about/list_of_features.rst:508
 msgid ""
@@ -1535,6 +1456,6 @@ msgid ""
 "documents features that have been agreed upon and may be implemented in "
 "future Godot releases."
 msgstr ""
-"ロードマップ <https://github.com/godotengine/godot-roadmap>`__ リポジトリに"
-"は、合意された機能や、今後の Godot リリースで実装される可能性のある機能が記載"
-"されています。"
+"`ロードマップ <https://github.com/godotengine/godot-roadmap>`__ リポジトリに"
+"は、合意されて今後の Godot リリースで実装される可能性のある機能が記載されてい"
+"ます。"

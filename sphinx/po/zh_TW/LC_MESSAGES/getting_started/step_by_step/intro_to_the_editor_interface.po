@@ -1,0 +1,306 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
+msgid "Introduction to Godot's editor"
+msgstr "Godot 編輯器簡介"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
+msgid ""
+"This tutorial will run you through Godot's interface. We're going to look at "
+"the **Project Manager, docks, workspaces** and everything you need to know "
+"to get started with the engine."
+msgstr ""
+"本教學將簡介 Godot 界面。我們將會看到 **專案管理員、Dock、工作空間** 以及所有"
+"入門 Godot 所需要的東西。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
+#, fuzzy
+msgid ""
+"You can `download Godot Engine here <https://godotengine.org/download/>`_."
+msgstr ""
+"如果您使用的是Blender，請查看我們自己的`Better Collada Exporter <https://"
+"godotengine.org/download>`_。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+msgid "Project manager"
+msgstr "專案管理員"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
+msgid ""
+"When you launch Godot, the first window you'll see is the Project Manager. "
+"Since you have no projects there will be a popup asking if you want to open "
+"the asset library, just click cancel, we'll look at it later."
+msgstr ""
+"啟動 Godot 後看到的第一個視窗就是專案管理員了。由於目前還沒有專案，所以會出現"
+"一個彈窗詢問是否開啟素材庫，這裡先點 [取消]，我們晚點再回來看。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
+msgid ""
+"Now you should see the project manager. It lets you create, remove, import "
+"or play game projects."
+msgstr ""
+"現在應該可以看到專案管理員了。這裡可以建立、移除、匯入或是執行遊戲專案。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
+msgid ""
+"In the top-right corner you'll find a drop-down menu to change the editor's "
+"language."
+msgstr "右上角可以找到切換編輯器語言的選單。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
+msgid ""
+"From the **Templates** tab you can download open source project templates "
+"and demos from the Asset Library to help you get started faster. Just select "
+"the template or demo you want, click download, once it's finished "
+"downloading click install and choose where you want the project to go. You "
+"can learn more about it in :ref:`doc_what_is_assetlib`."
+msgstr ""
+"**[樣板]** 標籤內可以從素材庫中下載開放原始碼專案樣板與範例專案，讓你能快速入"
+"門。只需要選擇想要的樣板或範例，點擊 [下載]，等待下載完成後再點擊 [安裝] 並選"
+"擇專案放置的位置。可以在 :ref:`doc_what_is_assetlib` 瞭解更多。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
+msgid "Create or import a project"
+msgstr "建立或匯入專案"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
+msgid ""
+"To create a new project, click the ``New Project`` button on the right. Here "
+"you give it a name, choose an empty folder on your computer to save it to, "
+"and choose a renderer."
+msgstr ""
+"要建立新的專案，請點擊右邊的 ``[新增專案]`` 按鈕。接著設定專案名稱、選擇電腦"
+"上的空白資料夾，然後選擇算繪器。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
+msgid ""
+"Click the Browse button to open Godot's file browser and pick a location or "
+"type the folder's path in the Project Path field."
+msgstr ""
+"點擊 [瀏覽] 按鈕來打開 Godot 檔案瀏覽器，再選擇位置或是直接在 [專案位置] 一欄"
+"輸入資料夾路徑。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:53
+msgid ""
+"When you see the green tick on the right, it means the engine detects an "
+"empty folder. You can also click the ``Create Folder`` button next to your "
+"project name and an empty folder will be created with that name for the "
+"project."
+msgstr ""
+"如果右邊出現綠色勾勾，就代表 Godot 偵測到資料夾是空的。也可以點擊專案名稱旁邊"
+"的 ``[建立資料夾]`` 按鈕，Godot 會根據專案名稱建立資料夾。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
+msgid ""
+"Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
+"ES 2.0). The advantages and disadvantages of each are listed to help you "
+"choose, and you can refer to :ref:`doc_gles2_gles3_differences` for more "
+"details. Note that you can change the backend from the project settings if "
+"you change your mind later on. For this tutorial either backend is fine."
+msgstr ""
+"最後，需要選擇要使用哪個算繪器（OpenGL ES 3.0 或 OpenGL ES 2.0）。我們列出了"
+"這兩種算繪器各自的優缺點來讓你自己選擇，也可以參考 :ref:"
+"`doc_gles2_gles3_differences` 瞭解更多詳細資訊。而就算之後改變心意了也可以從 "
+"[專案設定] 裡更改。本篇教學可適用於兩種算繪器。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
+msgid ""
+"Once you are done click ``Create & Edit``. Godot will create the project for "
+"you and open it in the editor."
+msgstr "好了之後點擊 ``建立並編輯``，Godot 會建立專案並在編輯器打開。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
+msgid ""
+"The next time you open the project manager, you'll see your new project in "
+"the list. Double click on it to open it in the editor."
+msgstr ""
+"下次打開專案管理員的時候就會在清單上看到新專案了。點兩下就能在編輯器中打開。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
+msgid ""
+"You can import existing projects in a similar way, using the Import button. "
+"Locate the folder that contains the project or the ``project.godot`` file to "
+"import and edit it."
+msgstr ""
+"也可以用類似的方法來匯入現有的專案。按 [匯入] 按鈕，找到專案所在的資料夾或是 "
+"``project.godot`` 檔案來匯入或編輯。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
+msgid "When the folder path is correct, you'll see a green checkmark."
+msgstr "如果資料夾路徑正確，就會看到一個綠色勾勾。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+msgid "Your first look at Godot's editor"
+msgstr "初步認識 Godot 編輯器"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
+msgid ""
+"Welcome to Godot! With your project open, you should see the editor's "
+"interface with menus along the top of the interface and docks along the far "
+"extremes of the interface on either side of the viewport."
+msgstr ""
+"歡迎來到 Godot！打開專案後應該就能看到編輯器界面。選單在畫面的上方，而 Dock "
+"則在檢視區的兩側。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
+msgid ""
+"At the top, from left to right, you can see the **main menus**, the "
+"**workspaces**, and the **playtest buttons**."
+msgstr "上方從左到右分別是 **主選單**、**工作區**、以及 **執行測試按鈕**。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
+msgid ""
+"The **FileSystem dock** is where you'll manage your project files and assets."
+msgstr "**檔案系統 Dock** 是用來管理專案檔案與素材的地方。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
+msgid ""
+"The **Scene dock** lists the active scene's content and the **Inspector** "
+"allows for the management of the properties of a scene's content."
+msgstr ""
+"**場景 Dock** 列出了開啟的場景的內容，**屬性面板** 則可以控制場景內容的屬性。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
+msgid ""
+"In the center, you have the **Toolbar** at the top, where you'll find tools "
+"to move, scale or lock your scene's objects. It changes as you jump to "
+"different workspaces."
+msgstr ""
+"畫面的中間上方有 **工具列**，其中有用來移動、縮放或是鎖定場景中物件的工具。這"
+"裡的工具會依據所在工作區的不同而改變。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
+msgid ""
+"The **Bottom Panel** is the host for the debug console, the animation "
+"editor, the audio mixer… They are wide and can take precious space. That's "
+"why they're folded by default."
+msgstr ""
+"**底部面板** 裡有除錯主控台、動畫編輯器、音效混合器…等。這些東西很多且佔用很"
+"多空間，所以預設會摺疊起來。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
+msgid "The workspaces"
+msgstr "工作區"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
+msgid ""
+"You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
+msgstr "上方有四個工作區按鈕：[2D]、[3D]、[腳本]、[素材庫] 等。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
+msgid ""
+"You'll use the **2D workspace** for all types of games. In addition to 2D "
+"games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
+"`F1` (or :kbd:`Alt + 1` on macOS) to access it."
+msgstr ""
+"所有類型的遊戲都會用到 **2D 工作區**。而 2D 工作區除了製作 2D 遊戲以外，也用"
+"來製作界面。按 :kbd:`F1` (或是 macOS 上 :kbd:`Alt + 1`) 來打開。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
+msgid ""
+"In the **3D workspace**, you can work with meshes, lights, and design levels "
+"for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
+msgstr ""
+"**3D 工作區** 可以建立網格、光照以及設計 3D 遊戲的關卡。按 :kbd:`F2` (或 "
+"macOS 上 :kbd:`Alt + 2`) 來打開。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
+msgid ""
+"Notice the perspective button under the toolbar, it opens a list of options "
+"related to the 3D viewport."
+msgstr ""
+"另外請注意工具列下方的 [透視] 按鈕，可以打開與 3D 檢視區相關的選項列表。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
+msgid ""
+"Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
+msgstr "關於 **3D 工作區** 的詳細介紹請參考 :ref:`doc_introduction_to_3d`。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
+msgid ""
+"The **Script** workspace is a complete code editor with a debugger, rich "
+"auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
+"+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
+msgstr ""
+"**腳本** 工作區是一個完整的程式碼編輯器，有除錯工具、完整的自動補全、以及內建"
+"的程式碼參照功能。按 :kbd:`F3` (或 macOS 上 :kbd:`Alt + 3` ) 來打開，:kbd:"
+"`F4` 可以搜尋參照。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
+msgid ""
+"To search for information about a class, method, property, constant, or "
+"signal in the engine while you are writing a script, press the \"Search Help"
+"\" button at the top right of the Script workspace."
+msgstr ""
+"撰寫腳本時若要在引擎內搜尋有關類別、方法、屬性、常數或訊號的資訊，請點擊腳本"
+"工作區右上角的 [搜尋說明] 按鈕。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
+msgid ""
+"A new window will pop up. Search for the item that you want to find "
+"information about."
+msgstr "接著會開啟新視窗，請搜尋想瞭解的項目。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
+msgid ""
+"Click on the item you are looking for and press open. The documentation for "
+"the item will be displayed in the script workspace."
+msgstr "搜尋在尋找的項目並點擊 [開啟]。接著會在腳本工作區顯示相應的文件。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
+msgid ""
+"Finally, the **AssetLib** is a library of free and open source add-ons, "
+"scripts and assets to use in your projects."
+msgstr ""
+"最後，**素材庫** 內提供自由開源的擴充套件、腳本與素材，可以在專案中使用。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+msgid "Modify the interface"
+msgstr "調整界面"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:166
+msgid ""
+"Godot's interface lives in a single window. You cannot split it across "
+"multiple screens although you can work with an external code editor like "
+"Atom or Visual Studio Code for instance."
+msgstr ""
+"Godot 的界面都在單一視窗內，沒辦法拆分開來顯示在不同螢幕上。但可以使用如 "
+"Atom 或 Visual Studio Code 等外部編輯器。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
+msgid "Move and resize docks"
+msgstr "移動與調整 Dock 大小"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:173
+msgid ""
+"Click and drag on the edge of any dock or panel to resize it horizontally or "
+"vertically."
+msgstr "點擊並拖移任意 Dock 或面板的邊緣來水平或垂直地縮放大小。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:178
+msgid ""
+"Click the three-dotted icon at the top of any dock to change its location."
+msgstr "點擊任意 Dock 上方的三個點的按鈕來更改位置。"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:183
+msgid ""
+"Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
+"feel of the editor."
+msgstr "前往 ``[編輯器]`` 選單並選擇 ``[編輯器設定]`` 可微調編輯器的外觀。"

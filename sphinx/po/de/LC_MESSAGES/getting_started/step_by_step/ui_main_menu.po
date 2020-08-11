@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,13 +71,12 @@ msgstr ""
 "main_menu``` Ordner."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
-"Lesen Sie zuerst das :doc:`ui_introduction_to_the_ui_system`, um zu "
-"erfahren, wie das UI-System von Godot funktioniert."
+"Lesen Sie :doc:`ui_introduction_to_the_ui_system`, um zu erfahren, wie das "
+"UI-System von Godot funktioniert."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -377,7 +376,6 @@ msgid "the version note,"
 msgstr "Die Versionsangabe"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
-#, fuzzy
 msgid "and the main menu's illustration."
 msgstr "Und die Darstellung des Hauptmenüs."
 
@@ -441,7 +439,6 @@ msgid "Add containers to place UI elements automatically"
 msgstr "Füge Container ein, um UI-Elemente automatisch zu platzieren"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
-#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -454,15 +451,15 @@ msgid ""
 "behavior, I recommend to favor box containers."
 msgstr ""
 "Unser Hauptmenü hat einen gewissen Abstand zum Bildschirmrand. Es unterteilt "
-"sich in zwei Bereiche: links das Logo und die Menüpunkte. Rechts die "
+"sich in zwei Bereiche: links das Logo und die Menüpunkte, rechts die "
 "Charaktere. Wir können einen der beiden Container benutzen, um das zu "
 "erreichen: ``HSplitContainer`` oder ``HBoxContainer``. Split Container "
-"unterteilen den Bereich entzwei: eine linke und eine rechte Seite oder eine "
-"obere und eine untere Seite. Sie erlauben es dem Benutzer auch, die Größen "
-"der linken und rechten Bereiche über eine interaktive Leiste einzustellen. "
+"teilen den Bereich entzwei: eine linke und eine rechte Seite oder eine obere "
+"und eine untere Seite. Sie erlauben es dem Benutzer auch, die Größen der "
+"linken und rechten Bereiche über eine interaktive Leiste einzustellen. "
 "Andererseits spaltet sich ein ``HBoxContainer``einfach in so viele Spalten "
 "wie er Kinder hat. Obwohl die Variable Größe des Split Containers "
-"abgeschaltet werden kann, empfehle ich den Gebrauch der Box Containers."
+"abgeschaltet werden kann, empfehle ich den Gebrauch von Box Container."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""

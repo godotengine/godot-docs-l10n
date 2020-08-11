@@ -1,0 +1,249 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
+msgid "Godot scenes and scripts are classes"
+msgstr "Godot 中的場景與物件都是類別"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
+msgid ""
+"In Godot, scripts and scenes can both be the equivalent of classes in an "
+"Object-Oriented programming language. The main difference is that scenes are "
+"`declarative code <https://en.wikipedia.org/wiki/Declarative_programming>`_, "
+"while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
+"Imperative_programming>`_."
+msgstr ""
+"在 Godot 中，腳本與場景都可以等同於物件導向程式設計語言中的類別。主要的不同"
+"是，場景是 `宣告型程式碼 <https://zh.wikipedia.org/wiki/%E5%AE%A3%E5%91%8A"
+"%E5%BC%8F%E7%B7%A8%E7%A8%8B>`_ ，而腳本可以包含 `指令式程式碼 <https://zh."
+"wikipedia.org/zh-tw/%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B>`_ 。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
+msgid ""
+"As a result, many best practices in Godot boil down to applying Object-"
+"Oriented design principles to the scenes, nodes, or scripts that make up "
+"your game."
+msgstr ""
+"因此，在 Godot 中的許多最佳實踐都就只是將物件導向設計原則套用在構成遊戲的場"
+"景、節點與腳本上而已。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
+msgid ""
+"This guide explains how scripts and scenes work in the engine's core, to "
+"help you get a sense of how Godot works under the hood, and to help you "
+"better understand where some of this series' best practices come from."
+msgstr ""
+"本指南解釋了腳本與場景在引擎核心中是如何運作的，來協助你瞭解 Godot 實際是怎麼"
+"運作的，並幫助你更好地理解本系列中的一些最佳實踐是怎麼來的。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
+msgid "Making sense of classes in Godot"
+msgstr "瞭解 Godot 中的類別"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
+msgid ""
+"Godot Engine provides built-in classes like :ref:`Node <class_Node>`. User-"
+"created types are not technically classes. Instead, they are resources that "
+"tell the engine a sequence of initializations to perform on one of the "
+"engine's built-in classes."
+msgstr ""
+"Godot Engine 提供了一些如 :ref:`Node <class_Node>` 之類的內建類別。使用者建立"
+"的型別理論上不是類別，而是用來告訴引擎要在內建類別上進行一系列初始化操作的資"
+"源。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
+msgid ""
+"Godot's internal classes have methods that register a class's data with a :"
+"ref:`ClassDB <class_ClassDB>`. This database provides runtime access to "
+"class information. ``ClassDB`` contains information about classes like:"
+msgstr ""
+"Godot 的內部類別有一些向 :ref:`ClassDB <class_ClassDB>` 註冊類別資料的方法。"
+"通過 ClassDB 這個資料庫便能在執行時存取類別資訊。``ClassDB`` 包含了如下類別資"
+"訊："
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
+msgid "properties"
+msgstr "屬性"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
+msgid "methods"
+msgstr "方法"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
+msgid "constants"
+msgstr "常數"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
+msgid "signals"
+msgstr "訊號"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
+msgid ""
+"This ``ClassDB`` is what Objects check against when performing an operation "
+"like accessing a property or calling a method. ``ClassDB`` checks the "
+"database's records and the records of the Object's base types to see if the "
+"Object supports the operation."
+msgstr ""
+"``ClassDB`` 即為物件在執行如存取屬性或呼叫方法等特定操作時用來檢查的地方。"
+"``ClassDB`` 會檢查資料庫記錄與物件的基礎型別，來確認該物件是否支援要執行的操"
+"作。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
+msgid ""
+"On the engine's side, every class defines a static ``_bind_methods()`` "
+"function that describes what C++ content it registers to the database and "
+"how. When you use the engine, you can extend the methods, properties, and "
+"signals available from the ``ClassDB`` by attaching a :ref:`Script "
+"<class_Script>` to your node."
+msgstr ""
+"在引擎方面，所有類別都定義了一個靜態 ``_bind_methods()`` 函式，用來描述該類別"
+"要將什麼 C++ 內容註冊到資料庫裡，以及該如何向資料庫註冊。當在使用引擎時，可以"
+"通過附加 :ref:`Script <class_Script>` 到節點上來擴充 ``ClassDB`` 內可用的方"
+"法、屬性與訊號。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
+msgid ""
+"Objects check their attached script before the database. This is why scripts "
+"can override built-in methods. If a script defines a "
+"``_get_property_list()`` method, Godot appends that data to the list of "
+"properties the Object fetches from the ClassDB. The same is true for other "
+"declarative code."
+msgstr ""
+"物件會先檢查附加在自己身上的腳本然後再檢查資料庫。因此腳本可以覆寫內建函式。"
+"若腳本有定義 ``_get_property_list()`` 方法，則 Godot 會將該方法回傳的列表附加"
+"到該物件從 ClassDB 取得的列表後面。其他宣告型程式碼也一樣。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
+msgid ""
+"Even scripts that don't inherit from a built-in type, i.e. scripts that "
+"don't start with the ``extends`` keyword, implicitly inherit from the "
+"engine's base :ref:`Reference <class_Reference>` class. This allows the "
+"Object to defer to the script's content where the engine logic deems "
+"appropriate."
+msgstr ""
+"即時腳本不是從內建型別繼承來的，即不以 ``extends 關鍵字開始的腳本，也會隱含性"
+"地自動繼承引擎的基礎 :ref:`Reference <class_Reference>` 類別。這樣一來便能讓"
+"該類別在引擎覺得合邏輯的地方來遵守腳本內容。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
+msgid ""
+"As a result, you can instance scripts without the ``extends`` keyword from "
+"code, but you cannot attach them to a :ref:`Node <class_Node>`"
+msgstr ""
+"因此，可以在程式碼中實體化沒有 ``extends`` 關鍵字的腳本，但無法將這個腳本附加"
+"到 :ref:`節點 <class_Node>` 上"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
+msgid "Scripting performances and PackedScene"
+msgstr "腳本效能與 PackedScene"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
+msgid ""
+"As the size of Objects increases, the scripts' necessary size to create them "
+"grows much, much larger. Creating node hierarchies demonstrates this. Each "
+"individual Node's logic could be several hundred lines of code in length."
+msgstr ""
+"隨著物件的大小增長，要建立物件所需的腳本也變得越來越大。建立節點階層即可重現"
+"此狀況。個別節點的邏輯可為數百行程式碼。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
+msgid ""
+"Let's see a simple example of creating a single ``Node`` as a child. The "
+"code below creates a new ``Node``, changes its name, assigns a script to it, "
+"sets its future parent as its owner so it gets saved to disk along with it, "
+"and finally adds it as a child of the ``Main`` node:"
+msgstr ""
+"來看看一個建立 ``Node`` 子節點的簡單範例。下列程式碼會建立一個新的 ``Node`` "
+"節點、更改名稱、為該節點指派腳本、然後將新節點的母節點設為目前節點，這樣一來"
+"該節點才會跟著一起保存到硬碟上，然後最後才將 ``Main`` 節點作為目前節點的腳本"
+"保存："
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
+msgid ""
+"Script code like this is much slower than engine-side C++ code. Each change "
+"makes a separate call to the scripting API which leads to many \"look-ups\" "
+"on the back-end to find the logic to execute."
+msgstr ""
+"像這樣的程式碼會比引擎端 C++ 程式碼還要慢很多。每個改動都會需要額外的腳本 "
+"API 呼叫來向後端「查詢」要執行什麼邏輯。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
+msgid ""
+"Scenes help to avoid this performance issue. :ref:`PackedScene "
+"<class_PackedScene>`, the base type that scenes inherit from, are resources "
+"that use serialized data to create objects. The engine can process scenes in "
+"batches on the back-end and provide much better performance than scripts."
+msgstr ""
+"場景系統可以避免這種效能問題。 :ref:`PackedScene <class_PackedScene>` ，即，"
+"場景繼承的基礎型別，是一種資源，可以用來序列化資料並建立物件。引擎可以在後端"
+"批次處理場景，並可提供比腳本好很多的效能。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
+msgid "Scenes and scripts are objects"
+msgstr "場景與腳本是物件"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
+msgid ""
+"Why is any of this important to scene organization? Because scenes *are* "
+"objects. One often pairs a scene with a scripted root node that makes use of "
+"the sub-nodes. This means that the scene is often an extension of the "
+"script's declarative code."
+msgstr ""
+"為什麼這些東西對場景組織來說有這麼重要？因為場景 **是** 物件。大家通常會將場"
+"景與有腳本的根節點一起使用，然後用根節點上的腳本來使用子節點。這表示，場景通"
+"常算是腳本中宣告型程式碼的延伸。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
+msgid "The content of a scene helps to define:"
+msgstr "場景的內容可以協助定義："
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
+msgid "What nodes are available to the script"
+msgstr "腳本中可以使用哪些節點"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+msgid "How they are organized"
+msgstr "節點如何組織"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
+msgid "How they are initialized"
+msgstr "節點如何初始化"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
+msgid "What signal connections they have with each other"
+msgstr "節點之間有用什麼訊號連接"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
+msgid ""
+"Many Object-Oriented principles which apply to written code *also* apply to "
+"scenes."
+msgstr "許多用於撰寫程式碼的物件導向原則 **也** 適用於場景中。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
+msgid ""
+"The scene is *always an extension of the script attached to its root node*. "
+"You can see all the nodes it contains as part of a single class."
+msgstr ""
+"場景 **永遠是附加到場景根節點的腳本的延伸** 。可以將場景中包含的所有節點視為"
+"單一類別的一部分。"
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
+msgid ""
+"Most of the tips and techniques explained in this series will build on this."
+msgstr "本系列中的許多提示與技術解釋都以此為基礎。"

@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
+msgid "Custom builds for Android"
+msgstr "為 Android 平台自定建構"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
+msgid ""
+"Godot provides the option to use custom build Android templates. Instead of "
+"using the already pre-built template that ships with Godot, an actual "
+"Android Java project gets installed into your project folder. Godot will "
+"then build it and use it as an export template every time you export the "
+"project."
+msgstr ""
+"Godot 中有可以使用自定 Android 樣板的選項。不是使用 Godot 附帶的預編譯樣板，"
+"而是將真正的 Android Java 專案安裝到專案資料夾中。Godot 接著會建構該 Java 專"
+"案，並使用建構結果來在每次匯出專案是作為匯出樣板使用。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
+msgid "There are some reasons why you may want to do this:"
+msgstr "有幾個原因會需要這麼做："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
+msgid "Modify the project before it's built."
+msgstr "要在建構前修改專案。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
+msgid "Add external SDKs that build with your project."
+msgstr "建構專案時要加上外部 SDK。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
+msgid ""
+"Configuring the custom build is a more or less straightforward process, but "
+"it may take a while to get used to how the Android SDK works."
+msgstr ""
+"設定自定建構不一定是個簡單的過程，可能需要花點時間才能習慣 Android SDK 的使用"
+"方法。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:19
+msgid ""
+"Instructions will be provided as detailed as possible to do this process."
+msgstr "我們儘量提供該過程的詳細說明。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
+msgid "Set up the custom build environment"
+msgstr "設定自定建構環境"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:24
+msgid "Go to the Project menu, and install the *Custom Build* template:"
+msgstr "前往 [專案]，然後安裝 **自定建構** 樣板："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
+msgid ""
+"Make sure export templates are downloaded. If not, this menu will help you "
+"download them."
+msgstr "請確定有下載匯出樣板。若沒下載的話，該選單會協助下載。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
+msgid ""
+"This will create an Gradle-based Android project in ``res://android/build`` "
+"and place a ``.gdignore`` file in ``res://android`` so the Godot filesystem "
+"ignores this folder. Editing these files is not needed unless you want to :"
+"ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
+"modify the project."
+msgstr ""
+"安裝後會在 ``res://android/build`` 中建立一個基於 Grandle 的 Android 專案，並"
+"在 ``res://android`` 中加上 ``.gdignore`` 來讓 Godot 檔案系統忽略該資料夾。除"
+"非想要 :ref:`建立自己的增益集` 或是真的有需要修改專案，否則沒有必要修改這些檔"
+"案。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:37
+msgid "Install the Android SDK (command-line version)"
+msgstr "安裝 Android SDK (命令行版本)"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:39
+msgid ""
+"These are the steps for installing the Android SDK using command line. The "
+"advantage of this approach is the simplicity and small download/install "
+"size. It can be more challenging though. The Android Studio approach is "
+"easier, but it requires downloading and installing Android Studio (which may "
+"require more than 1 GB of storage)."
+msgstr ""
+"下面為使用命令行安裝 Android SDK 的步驟。這種做法的好處是比較簡單，而且下載／"
+"安裝的檔案也比較小。雖然可能比較有挑戰性。用 Android Studio 的方法比較簡單，"
+"但會需要下載並安裝 Android Studio (然後可能會需要至少 1 GB 的儲存空間)。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
+msgid "Install a JDK"
+msgstr "安裝 JDK"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
+msgid ""
+"The Android SDK doesn't come with Java, so it needs to be installed "
+"manually. You need to install a Java SDK (**not** just the runtime or JRE). "
+"`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
+"versions won't work."
+msgstr ""
+"Android SDK 沒有附帶 Java，所以會需要手動安裝。需要安裝 Java SDK (**不只是** "
+"執行環境或 JRE)。需要使用 `OpenJDK 8 <https://adoptopenjdk.net/index."
+"html>`__ ，不支援更新的版本。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
+msgid "Download the command-line tools"
+msgstr "下載命令行工具"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
+msgid ""
+"Go to the `Android Studio download page <https://developer.android.com/"
+"studio/#command-tools>`_. To save disk space, you don't want the full IDE, "
+"so don't download it."
+msgstr ""
+"前往 `Android Studio 下載頁面 <https://developer.android.com/studio/#command-"
+"tools>`_ 。為了節省空間，我們不想下載完整 IDE，所以不要下載。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:61
+msgid ""
+"If you do want Android Studio, read further down for instructions for doing "
+"the same using Android Studio."
+msgstr ""
+"如果真的想用 Android Studio 的話，請往下閱讀以瞭解如何用 Android Studio 來達"
+"成相同目的。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
+msgid ""
+"Look on that page for the *Command line tools only* section. Currently, they "
+"are listed under *Download Options*. Scroll down a bit until you see them."
+msgstr ""
+"找到該頁面中的 **Command line tools only** (僅命令行工具) 段落。目前，這個段"
+"落列在 **Download Options** (下載選項) 中。稍微往下滾動一點來找。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
+msgid ""
+"Download the ZIP file for your platform, there will be a single ``tools`` "
+"folder inside:"
+msgstr "下載使用平台的 ZIP 檔案。該 ZIP 中包含了單一 ``tools`` 資料夾："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
+msgid ""
+"This may appear a little confusing, but be sure to follow these instructions "
+"carefully:"
+msgstr "接著看起來可能有點容易搞混，但請確實小心遵守下列步驟："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
+msgid ""
+"Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
+"an empty directory). On Windows, the following path is usually good enough:"
+msgstr ""
+"在任意地方建立一個新資料夾，並命名為 ``android-sdk`` (這個資料夾 **必須** 為"
+"空資料夾)。在 Windows 上，通常使用下列路徑就夠了："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
+msgid ""
+"If you already have an android-sdk folder, normally located in ``"
+"%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
+"empty ``android-sdk`` folder."
+msgstr ""
+"若已經有 android-sdk 資料夾的 (通常在 ``%LOCALAPPDATA%\\Android\\Sdk`` )，那"
+"就用這個資料夾就好，不用建立空 ``android-sdk`` 資料夾。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
+msgid ""
+"Unzip the Android SDK ZIP file into the ``android-sdk`` folder. This folder "
+"should now contain the unzipped folder called ``tools``. Rename ``tools`` to "
+"``latest``. Finally, create an empty folder named ``cmdline-tools`` and "
+"place ``latest`` into it. Your final directory structure should look like "
+"this :"
+msgstr ""
+"將 Android SDK ZIP 檔解壓縮到 ``android-sdk`` 資料夾中。該資料夾目前應該包含"
+"解壓縮後的資料夾， ``tools`` 。將 ``tools`` 重命名為 ``latest`` 。最後，建立"
+"一個名為 ``cmdline-tools`` 的資料夾，並將 ``latest`` 放到裡面。最終的資料夾架"
+"構應該看起來像這樣："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
+msgid ""
+"We need to setup the directory structure this way for the sdkmanager (inside "
+"the bin folder) to work."
+msgstr ""
+"需要像這樣建立資料夾結構，這樣 sdkmanager (在 bin 資料夾內) 才能正常使用。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
+msgid "Accepting the licenses"
+msgstr "同意授權條款"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
+msgid ""
+"To be able to use the Android SDK tools, Google requires you to accept its "
+"licenses."
+msgstr "Google 要求要同意授權條款才能使用 Android SDK。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
+msgid ""
+"To do this, the ``sdkmanager`` must be executed from the command line with a "
+"special argument. Navigate to the ``tools/bin`` directory inside the SDK "
+"folder (instructions provided for Windows users, as Linux and macOS users "
+"are expected to understand how command line navigation works):"
+msgstr ""
+"要同意授權條款，必須先從命令行中使用特別的引數來執行 ``sdkmanager`` 。前往 "
+"SDK 資料夾中的 ``tools/bin`` 資料夾 (下列解釋了 Windows 中的步驟，我們假設 "
+"Linux 與 macOS 使用者已經瞭解如何在命令行中移動目錄)："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:114
+msgid "Then open a command line window:"
+msgstr "接著打開命令行視窗："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:118
+msgid "In there, run ``sdkmanager --licenses``:"
+msgstr "在此處執行 ``sdkmanager --licenses`` ："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:122
+msgid ""
+"This will ask you to accept several licenses, just write ``y`` and press :"
+"kbd:`Enter` on every of them until it's done."
+msgstr ""
+"接著會要求你同意數個授權條款，請在每次授權條款出現後按 ``y`` 然後點擊 :kbd:"
+"`Enter` 直到完成。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
+msgid ""
+"Afterwards, install the platform tools (this is required to install ``adb``):"
+msgstr "接著，安裝平台工具 (在安裝 ``adb`` 前必要的步驟)："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
+msgid ""
+"If you get an error saying ``Warning: Could not create settings``, try ``./"
+"sdkmanager --sdk_root=../../ --licenses`` or ``./sdkmanager --"
+"sdk_root=../../ platform-tools``. These must be executed inside the ``/tools/"
+"bin/`` folder because the path for ``--sdk_root`` is relative."
+msgstr ""
+"如果遇到 ``Warning: Could not create settings`` 錯誤，請試試 ``./sdkmanager "
+"--sdk_root=../../ --licenses`` 或 ``./sdkmanager --sdk_root=../../ platform-"
+"tools`` 。這兩個指令必須在 ``/tools/bin/`` 資料夾中執行，因為 ``--sdk_root`` "
+"的路徑是相對路徑。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
+msgid "Generating the keystore"
+msgstr "產生金鑰儲存區"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:134
+msgid ""
+"Once the *platform tools* are installed, the last step is to generate a "
+"debug keystore (this is needed to build). Go up two folders by writing:"
+msgstr ""
+"**平台工具** 安裝完成後，最後一個步驟就是產生除錯用金鑰儲存區了 (需要有這個才"
+"能建構)。通過下列指令來前往上兩層資料夾："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:141
+msgid "(or open a new shell in the ``android-sdk`` folder)."
+msgstr "(或是在 ``android-sdk`` 資料夾中開啟新 Shell)。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
+msgid ""
+"And you need to input the following line (on Linux and macOS, this should "
+"work out of the box, for Windows there are further instructions below):"
+msgstr ""
+"接著需要輸入下列這行指令 (Linux 與 macOS 中該指令應該可以直接執行，而 "
+"Windows 的話，則請參考更下方的使用步驟)："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:150
+msgid ""
+"On Windows, the full path to Java should be provided. You need to add ``&`` "
+"at the beginning of the line if you use PowerShell; it's not needed for the "
+"regular ``cmd.exe`` console."
+msgstr ""
+"在 Windows 上，必須要提供完整的 Java 路徑。如果使用 PowerShell 的話則必須在這"
+"行開頭加上 ``&`` ，而普通的 ``cmd.exe`` 主控台則不需要。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:154
+msgid ""
+"To make it clearer, here is an capture of a line that works on PowerShell "
+"(by adding ``&`` and the full Java path before ``keytool.exe``). Again, keep "
+"in mind that you need Java installed:"
+msgstr ""
+"再講得清除一點，下列為該如何在 PowerShell 中執行該指令的截圖 (即有加上 ``&`` "
+"以及在 ``keytool.exe`` 前面加上完整的 Java 路徑)。再強調一次，必須要先安裝 "
+"Java："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:171
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:243
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:254
+msgid "(right-click and open the image in a new tab if this appears too small)"
+msgstr "(如果圖片太小的話，可以右鍵點擊圖片並選擇在 [新分頁中開啟圖片])"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:164
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:247
+msgid "Setting up Godot"
+msgstr "設定 Godot"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:166
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:249
+msgid ""
+"Go to the **Editor Settings** and set up a few fields in **Export > "
+"Android**. Make sure they look like the following:"
+msgstr ""
+"前往 **[編輯器設定]** 並在 **[Export] > [Android]** 中設定一些欄位。請確保要"
+"像下圖這樣設定："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:173
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:256
+msgid ""
+"As it can be seen, most paths are inside either the ``android-sdk`` folder "
+"you originally created, or inside the Java install. For Linux and macOS "
+"users, ``jarsigner`` is often located in ``/usr/bin``."
+msgstr ""
+"就像上圖看到的這樣，大多數的路徑不是在剛才建立的 ``android-sdk`` 資料夾中就是"
+"在 Java 的安裝路徑中。而 Linux 與 macOS 使用者的話，``jarsigner`` 通常會放在 "
+"``/usr/bin`` 中。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:177
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:260
+msgid "With this, you should be all set."
+msgstr "這樣一來，應該就準備完畢了。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:181
+msgid "Install the Android SDK (Android Studio)"
+msgstr "安裝 Android SDK (Android Studio)"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
+msgid ""
+"If you just finished installing the SDK via the command-line tools, feel "
+"free to skip this section entirely. The Android Studio path is easier, but "
+"it takes up more disk space. It's also useful if you plan to develop Godot "
+"for Android (modify the Java source code) or if you plan to develop add-ons."
+msgstr ""
+"如果已經通過命令行來完成安裝，則可以直接跳過本段。用 Android Studio 的方法比"
+"較簡單，但會花比較多硬碟空間。這種方法也比較適合有需要為 Android 開發 Godot "
+"的情況 (修改 Java 原始碼) 或有計劃要開發增益集。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
+msgid "Download and install Android Studio"
+msgstr "下載與安裝 Android Studio"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:191
+msgid ""
+"Download the latest version of Android Studio. When installing, pay "
+"attention to where the *android-sdk* directory is created."
+msgstr ""
+"下載最新版本的 Android Studio。安裝是，請注意 **android-sdk`` 資料夾是建立在"
+"哪裡。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
+msgid ""
+"This is funny, the path it proposes by default contains whitespace (and "
+"complains about it). It must be changed."
+msgstr ""
+"很有趣的部分是，Android 預設建議的安裝路徑包含了空格 (而且不會報錯)。必須修改"
+"該路徑。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
+msgid ""
+"In any case, it's better to select a different path inside your user "
+"folders. The recommended one is usually:"
+msgstr "無論如何，最好要選擇使用者資料夾內的其他路徑。建議的路徑通常是："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
+msgid ""
+"Replace *yourusername* by your actual user name. Once it's correct, select "
+"from the list above in the same screen:"
+msgstr ""
+"將 **yourname** 取代為實際的使用者名稱。設定好了之後，在同一個畫面中勾選下表"
+"中的項目："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
+msgid "Android SDK"
+msgstr "\\ Android SDK"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
+msgid "Android SDK Platform"
+msgstr "\\ Android SDK Platform"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
+msgid ""
+"The rest are not needed, because the build system will fetch them itself. "
+"After selecting them, go on with the installation."
+msgstr ""
+"剩下的都不需要，因為建置系統會自動取得所需要的東西。選擇好了之後，繼續安裝。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
+msgid ""
+"Go to the folder where you installed ``android-sdk`` in the previous step, "
+"use File Explorer and open a command line tool there:"
+msgstr ""
+"前往上一部安裝 ``android-sdk`` 的資料夾。打開檔案總管，並在此處開啟命令行："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
+msgid ""
+"The actual command line to type is the following. On Linux and macOS, it "
+"should work out of the box, but on Windows, it needs additional details "
+"(keep reading afterwards)."
+msgstr ""
+"實際要使用的指令列如下。在 Linux 與 macOS 中，應該可以直接使用，但 Windows 則"
+"有細節需注意 (請繼續閱讀)。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
+msgid ""
+"On Windows, the full path to Java should be provided (and ``&`` needs to be "
+"added at the beginning on the line if you use PowerShell, it's not needed "
+"for the regular ``cmd.exe`` console). Don't worry, at least by using Android "
+"Studio on Windows, Java comes bundled with it."
+msgstr ""
+"在 Windows 上必須提供完整的 Java 路徑 (而如果是用 PowerShell，則必須在開頭加"
+"上 ``&`` ，一般的 ``cmd.exe`` 主控台則不需要) 。別擔心，如果是用 Windows 上"
+"的 SDK 的話，有附帶 Java。"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
+msgid ""
+"To make it clearer, here is a screen capture of a line that works on "
+"PowerShell (by adding ``&`` and the full Java Path to ``keytool.exe``; "
+"remove ``&`` if you use ``cmd.exe``). It uses a path to the Java version "
+"that comes with Android Studio:"
+msgstr ""
+"講得更清楚一點，下圖為在 PowerShell 中使用該指令的截圖 (在前面加上了 ``&`` 並"
+"在 ``keytool.exe`` 前面使用了完整的 Java 路徑。若使用 ``cmd.exe`` 則不要加上 "
+"``&``)。下圖中使用了 Android Studio 附帶的 Java 路徑："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
+msgid "Enabling the custom build and exporting"
+msgstr "啟用自定建構與匯出"
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
+msgid ""
+"When setting up the Android project in the **Project > Export** dialog, "
+"**Custom Build** needs to be enabled:"
+msgstr ""
+"在 **[專案] > [匯出]** 中設定好 Android 專案後，也需要啟用 **Custom Build** "
+"："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
+msgid ""
+"From now on, attempting to export the project or one-click deploy will call "
+"the `Gradle <https://gradle.org/>`__ build system to generate fresh "
+"templates (this window will appear every time):"
+msgstr ""
+"接著，只要匯出專案或單鍵部署時，就會呼叫 ``Gradle <https://gradle.org/>`_ 建"
+"構系統，並產生新的樣板 (該視窗每次都會出現)："
+
+#: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
+msgid ""
+"The templates built will be used automatically afterwards, so no further "
+"configuration is needed."
+msgstr "接著會自動使用樣板建構，不需要進一步設定。"

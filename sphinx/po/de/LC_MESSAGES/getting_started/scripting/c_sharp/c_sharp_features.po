@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "Funktionen"
+msgstr "C# Merkmale"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -36,12 +35,16 @@ msgstr ""
 msgid ""
 "C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
+"C# ist eine statische Programmiersprache, daher ist dies hier nicht möglich:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:21
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
+"Die Methode ``GetNode()`` liefert eine ``Node`` Instance. Diese muss nun in "
+"den gewünschten abgeleiteten Typ konvertiert werden , ``Sprite`` in diesem "
+"Fall."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "For this, you have various options in C#."
@@ -60,17 +63,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid "**Using the AS operator**"
-msgstr ""
+msgstr "**Nutzen des AS Operators**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:38
 msgid ""
 "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, "
 "and for that reason, it cannot be used with value types."
 msgstr ""
+"Der ``as`` Operator liefert ``null`` falls der Node nicht als Sprite genutzt "
+"werden kann, daher kann es nicht mit Wert Typen genutzt werden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid "**Using the generic methods**"
-msgstr ""
+msgstr "**Nutzen der allgemeinen Methoden**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""

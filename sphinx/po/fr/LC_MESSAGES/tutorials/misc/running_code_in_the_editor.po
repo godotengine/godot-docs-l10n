@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,6 @@ msgstr ""
 "qui sont difficiles à prévoir nous-mêmes. Voici quelques cas d'utilisation :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
-#, fuzzy
 msgid ""
 "If you have a cannon that shoots cannonballs affected by physics (gravity), "
 "you can draw the cannonball's trajectory in the editor, making level design "
@@ -101,7 +100,6 @@ msgid "How to use it"
 msgstr "Comment l'utiliser"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
-#, fuzzy
 msgid ""
 "To turn a script into a tool, add the keyword ``tool`` at the top of your "
 "code."
@@ -117,14 +115,12 @@ msgstr ""
 "editor_hint``."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
-#, fuzzy
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr ""
 "Par exemple, si vous souhaitez exécuter du code uniquement dans l'éditeur, "
 "utilisez :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
-#, fuzzy
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
@@ -133,7 +129,6 @@ msgstr ""
 "suffit d'utiliser la négation de l'expression précédente :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
-#, fuzzy
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
 "editor and in-game."
@@ -142,21 +137,19 @@ msgstr ""
 "seront exécutés à la fois dans l'éditeur et dans le jeu."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
-#, fuzzy
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr ""
 "Voici à quoi une fonction ``_process()`` pourrait ressembler pour vous :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
-#, fuzzy
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
 "when we remove the script, the node will keep its rotation. Be careful to "
 "avoid making unwanted modifications."
 msgstr ""
 "Les modifications dans l'éditeur sont permanentes. Dans notre cas, lorsque "
-"nous supprimons le script, le nœud conserve son sens de rotation. Faites "
-"attention à ne pas faire de modifications non souhaitées."
+"nous supprimons le script, le nœud conserve sa rotation. Faites attention à "
+"ne pas faire de modifications non souhaitées."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
 msgid "Try it out"
@@ -256,7 +249,6 @@ msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr "Si vous utilisez :ref:`EditorScript<class_EditorScript>` :"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
-#, fuzzy
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

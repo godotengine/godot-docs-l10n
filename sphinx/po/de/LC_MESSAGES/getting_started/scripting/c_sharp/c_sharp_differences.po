@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,15 +19,17 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
-msgstr ""
+msgstr "C# API Unterschiede zu GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
 msgstr ""
+"Dies ist eine (unvollständige) Liste von API Unterschieden zwischen C# und "
+"GDScript."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
 msgid "General differences"
-msgstr ""
+msgstr "Allgemeine Unterschiede"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:11
 msgid ""
@@ -37,7 +39,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
-msgstr ""
+msgstr "Globaler Bereich"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:17
 msgid ""
@@ -88,27 +90,27 @@ msgstr "C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``SPKEY``"
-msgstr ""
+msgstr "``SPKEY``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:32
 msgid "``GD.SpKey``"
-msgstr ""
+msgstr "``GD.SpKey``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``TYPE_*``"
-msgstr ""
+msgstr "``TYPE_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "``Variant.Type`` enum"
-msgstr ""
+msgstr "``Variant.Type`` Aufzählung"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``OP_*``"
-msgstr ""
+msgstr "``OP_*``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:34
 msgid "``Variant.Operator`` enum"
-msgstr ""
+msgstr "``Variant.Operator`` Aufzählung"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
 msgid "Math functions"
@@ -120,6 +122,9 @@ msgid ""
 "``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
+"Globale Mathefunktionen wie ``abs``, ``acos``, ``asin``, ``atan`` und "
+"``atan2`` liegen unter ``Mathf`` als ``Abs``, ``Acos``, ``Asin``, ``Atan`` "
+"und ``Atan2``. Die ``PI`` Konstante findet man unter ``Mathf.Pi``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 msgid "Random functions"
@@ -130,6 +135,8 @@ msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
+"Globale Zufallsfunktionen wie ``rand_range`` und ``rand_seed`` liegen unter "
+"``GD``. Beispiel: ``GD.RandRange`` und ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
 msgid "Other functions"
@@ -140,6 +147,8 @@ msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
+"Viele andere globale Funktionen wie ``print`` und ``var2str`` liegen unter "
+"``GD``. Beispiel: ``GD.Print`` und ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
 msgid "Exceptions:"
@@ -183,7 +192,7 @@ msgstr "Beispiel:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
-msgstr ""
+msgstr "Exportiere Schlüsselwort"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:88
 msgid ""
@@ -195,7 +204,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
-msgstr ""
+msgstr "Signal Schlüsselwörter"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 msgid ""
@@ -205,8 +214,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-msgid "See also: :ref:`c_sharp_signals`"
-msgstr ""
+#, fuzzy
+msgid "See also: :ref:`doc_c_sharp_signals`."
+msgstr "Siehe auch: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -285,12 +295,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``get_scale()``"
-msgstr ""
+msgstr "``get_scale()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
 msgid "``Scale``"
-msgstr ""
+msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:205
 msgid "Transform2D"
@@ -330,11 +340,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``center()``"
-msgstr ""
+msgstr "``center()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``Center``"
-msgstr ""
+msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:232
 msgid "Rect2"
@@ -348,19 +358,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``end``"
-msgstr ""
+msgstr "``end``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``End``"
-msgstr ""
+msgstr "``End``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``get_area()``"
-msgstr ""
+msgstr "``get_area()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:247
 msgid "``Area``"
-msgstr ""
+msgstr "``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
@@ -380,19 +390,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``length()``"
-msgstr ""
+msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``Length``"
-msgstr "``Länge``"
+msgstr "``Length``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
-msgstr ""
+msgstr "``length_squared()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``LengthSquared``"
-msgstr ""
+msgstr "``LengthSquared``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
@@ -410,11 +420,11 @@ msgstr "``Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Godot.Collections.Array``"
-msgstr ""
+msgstr "``Godot.Collections.Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``PoolIntArray``"
-msgstr ""
+msgstr "``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid "``int[]``"
@@ -422,15 +432,15 @@ msgstr "``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``PoolByteArray``"
-msgstr ""
+msgstr "``PoolByteArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``byte[]``"
-msgstr ""
+msgstr "``byte[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``PoolFloatArray``"
-msgstr ""
+msgstr "``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
 msgid "``float[]``"
@@ -438,7 +448,7 @@ msgstr "``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``PoolStringArray``"
-msgstr ""
+msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``String[]``"
@@ -446,27 +456,27 @@ msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``PoolColorArray``"
-msgstr ""
+msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``Color[]``"
-msgstr "``Farbe[]``"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
-msgstr ""
+msgstr "``PoolVector2Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``Vector2[]``"
-msgstr ""
+msgstr "``Vector2[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``PoolVector3Array``"
-msgstr ""
+msgstr "``PoolVector3Array``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:281
 msgid "``Vector3[]``"
-msgstr ""
+msgstr "``Vector3[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
 msgid ""
@@ -481,7 +491,7 @@ msgstr "Wörterbuch"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:290
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr ""
+msgstr "Nutze ``Godot.Collections.Dictionary``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:292
 msgid ""
@@ -539,11 +549,11 @@ msgstr "andere Unterschiede:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color8``"
-msgstr "``Farbe8``"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
-msgstr ""
+msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``is_inf``"
@@ -551,7 +561,7 @@ msgstr "``ist_inf``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``float.IsInfinity``"
-msgstr ""
+msgstr "``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``is_nan``"
@@ -559,16 +569,16 @@ msgstr "``is_nan``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``float.IsNaN``"
-msgstr ""
+msgstr "``float.IsNaN``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 msgid "``dict2inst``"
-msgstr ""
+msgstr "``dict2inst``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:334
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "TODO"
-msgstr ""
+msgstr "TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "``inst2dict``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -823,15 +823,13 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
-"Una secuencia de caracteres en formato `Unicode <https://en.wikipedia.org/"
-"wiki/Unicode>` _. Las cadenas pueden contener `secuencias de escape C "
-"estándar <https://en.wikipedia.org/wiki/Escape_sequences_in_C>` _. GDScript "
-"también admite: ref: `doc_gdscript_printf`."
+"Una secuencia de caracteres en `formato Unicode` <https://en.wikipedia.org/"
+"wiki/Unicode>`_. Las cadenas pueden contener las siguientes secuencias de "
+"escape:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:360
 #, fuzzy
@@ -2133,14 +2131,15 @@ msgid "Memory management"
 msgstr "Gestión de la memoria"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1314
+#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
 "counting. By default, all classes that don't define inheritance extend "
 "**Reference**. If this is not desired, then a class must inherit :ref:"
-"`class_Object` manually and must call instance.free(). To avoid reference "
-"cycles that can't be freed, a ``weakref`` function is provided for creating "
-"weak references."
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a ``weakref`` function is provided for "
+"creating weak references."
 msgstr ""
 "Si una clase hereda de :ref:`class_Reference`, entonces las instancias serán "
 "liberadas cuando ya no estén en uso. No existe ningún recolector de basura, "

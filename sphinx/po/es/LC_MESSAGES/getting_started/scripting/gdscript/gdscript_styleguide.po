@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,14 +102,14 @@ msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
-"Utilice la codificación UTF-8 sin `byte order mark <https://en.wikipedia.org/"
-"wiki/Byte_order_mark>`_. *(por defecto del editor)*"
+"Usa la codificación **UTF-8** sin `Marca de orden de bytes <https://es."
+"wikipedia.org/wiki/Marca_de_orden_de_bytes>`_. *( por defecto del editor) *"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
-"Utilice tabuladores en lugar de espacios para la indentación. *(por defecto "
-"del editor)*"
+"Usa **Tabs** en lugar de espacios para la indentación. *(por defecto del "
+"editor) *"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
@@ -377,7 +377,7 @@ msgstr "Utiliza PascalCase para nombres de clases y nodos:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:459
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
 msgstr ""
-"También utilice PascalCase cuando se carga una clase en una constante o "
+"También usa el PascalCase al cargar una clase en una constante o una "
 "variable:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:466
@@ -602,8 +602,9 @@ msgstr ""
 "llama cuando un nodo es agregado al árbol de escena."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
+#, fuzzy
 msgid ""
-"These function should come first because they show how the object is "
+"These functions should come first because they show how the object is "
 "initialized."
 msgstr ""
 "Esas funciones van primero porque muestran cómo es inicializado el objeto."

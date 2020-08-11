@@ -1,0 +1,783 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
+msgid "Design interfaces with the Control nodes"
+msgstr "Design rozhraní pmocí uzlů typu Control"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+msgid ""
+"Computer displays, mobile phones, and TV screens come in all shapes and "
+"sizes. To ship a game, you'll need to support different screen ratios and "
+"resolutions. It can be hard to build responsive interfaces that adapt to all "
+"platforms. Thankfully, Godot comes with robust tools to design and manage a "
+"responsive User Interface."
+msgstr ""
+"Počítačové displeje, mobilní telefony a televizní obrazovky se objevují ve "
+"všech tvarech a velikostech. Chcete-li distribuovat hru, musíte podporovat "
+"různé poměry obrazovky i rozlišení. Může být obtížné vytvořit responzivní "
+"rozhraní, která se přizpůsobí všem platformám. Naštěstí Godot přichází s "
+"robustními nástroji pro návrh a správu responzivního uživatelského rozhraní."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
+msgid "Godot's editor is made with the engine's UI framework"
+msgstr "Godotův editor je vytvořen knihovnou uživatelského rozhraní enginu"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
+msgid "This guide will get you started with UI design. You will learn:"
+msgstr "Tato příručka vás provede návrhem uživatelského rozhraní. Dozvíte se:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
+msgid "The five most useful control nodes to build your games' interface"
+msgstr ""
+"Pět nejužitečnějších řídících uzlů (typu Control) pro vytvoření rozhraní "
+"vašich her"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
+msgid "How to work with the anchor of UI elements"
+msgstr "Jak pracovat s kotvou prvků uživatelského rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
+msgid ""
+"How to efficiently place and arrange your user interface using containers"
+msgstr ""
+"Jak efektivně umístit a uspořádat své uživatelské rozhraní pomocí kontejnerů"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
+msgid ""
+"The five most common containers (you can learn more about containers in the :"
+"ref:`GUI Containers <doc_gui_containers>` documentation page)."
+msgstr ""
+"Pět nejběžnějších kontejnerů (další informace o kontejnerech se dozvíte na "
+"stránce: ref: `GUI Containers <doc_gui_containers>` document page)."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
+msgid ""
+"To learn how to control the interface and connect it to other scripts, read :"
+"ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
+msgstr ""
+"Chcete-li se naučit, jak ovládat rozhraní a připojit jej k jiným skriptům, "
+"přečtěte si: ref: `Vytvořte své první uživatelské rozhraní hry v Godot "
+"<doc_ui_game_user_interface>`."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
+msgid ""
+"To design your UI, you'll use the Control nodes. These are the nodes with "
+"green icons in the editor. There are dozens of them, for creating anything "
+"from life bars to complex applications. Godot's editor itself is built using "
+"Control nodes."
+msgstr ""
+"K návrhu uživatelského rozhraní použijete uzly typu Control. Jedná se o uzly "
+"se zelenými ikonami v editoru. Jsou jich desítky, pro vytváření všeho od "
+"ukazatelů života po komplexní prvky. Sám Godotův editor je vytvořen pomocí "
+"řídících uzlů."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
+msgid ""
+"Control nodes have unique properties that allow them to work well with one "
+"another. Other visual nodes, like Node2D and Sprite don't have these "
+"capabilities. So to make your life easier use Control nodes wherever "
+"possible when building your UIs."
+msgstr ""
+"Řídicí uzly mají jedinečné vlastnosti, které jim umožňují navzájem dobře "
+"spolupracovat. Ostatní vizuální uzly, jako například Node2D či Sprite, tyto "
+"schopnosti nemají. Pro snažší život při vytváření uživatelských rozhraní "
+"používejte řídicí uzly, kdykoli je to možné."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:36
+msgid "All control nodes share the same main properties:"
+msgstr "Všechny řídicí uzly sdílejí stejné hlavní vlastnosti:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:38
+msgid "Anchor"
+msgstr "Kotva"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
+msgid "Bounding rectangle"
+msgstr "Bounding rectangle (Ohraničující obdélník)"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
+msgid "Focus and focus neighbor"
+msgstr "Fokus a fokus souseda"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
+msgid "Size flags"
+msgstr "Size flags (Příznaky velikosti)"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
+msgid "Margin"
+msgstr "Margin (Okraj)"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
+msgid "The optional UI theme"
+msgstr "Volitelné téma uživatelského rozhraní (UI)"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:45
+msgid ""
+"Once you understand the basics of the Control node, it will take you less "
+"time to learn all the nodes that derive from it."
+msgstr ""
+"Jakmile pochopíte základy řídicího uzlu, rychleji pochopíte a ovládnete uzly "
+"na němn založené."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
+msgid "The 5 most common UI elements"
+msgstr "5 nejčastějších prvků uživatelského rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
+msgid ""
+"Godot ships with dozens of Control nodes. A lot of them are here to help you "
+"build editor plugins and applications."
+msgstr ""
+"Godot se dodává s desítkami řídících uzlů. Mnoho z nich je tady proto, aby "
+"vám pomohly vytvořit doplňky pro editor či přímo vlastní aplikace."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
+msgid ""
+"For most games, you'll only need five types of UI elements, and a few "
+"Containers. These five Control nodes are:"
+msgstr ""
+"Pro většinu her budete potřebovat pouze pět typů prvků uživatelského "
+"rozhraní a několik kontejnerů. Těchto pět řídících uzlů je:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
+msgid "Label: for displaying text"
+msgstr "Label: pro zobrazení textu"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
+msgid ""
+"TextureRect: used mostly for backgrounds, or everything that should be a "
+"static image"
+msgstr ""
+"TextureRect: používá se většinou na pozadí nebo na všechno, co by mělo být "
+"statickým obrázkem"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:61
+msgid ""
+"TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
+msgstr ""
+"TextureProgress: pro ukazatele života, ukazatele průběhu, svislé, vodorovné "
+"nebo kruhové"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:63
+msgid "NinePatchRect: for scalable panels"
+msgstr "NinePatchRect: pro škálovatelné panely"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
+msgid "TextureButton: to create buttons"
+msgstr "TextureButton: pro vytvoření tlačítek"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
+msgid "The 5 most common Control nodes for UI design"
+msgstr "5 nejběžnějších řídících uzlů pro návrh uživatelského rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
+msgid "TextureRect"
+msgstr "TextureRect"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
+msgid ""
+"**TextureRect** displays a texture or image inside a UI. It seems similar to "
+"the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
+"property to change its behavior:"
+msgstr ""
+"** TextureRect ** zobrazuje texturu nebo obrázek uvnitř uživatelského "
+"rozhraní. Zdá se podobný uzlu Sprite, ale nabízí několik režimů škálování. "
+"Pro jejich změnu nastavte vlastnost Stretch Mode:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
+msgid ""
+"``Scale On Expand (compat)`` scales the texture to fit the node's bounding "
+"rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
+"like ``Keep`` mode. Default mode for backwards compatibility."
+msgstr ""
+"''Scale On Expand (compat)'' změní měřítko textury tak, aby se vešla do "
+"ohraničovacího obdélníku uzlu, pouze pokud je vlastnost ''expand'' ''true''; "
+"v opačném případě se chová jako režim \"Keep\". Výchozí režim pro zpětnou "
+"kompatibilitu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
+msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
+msgstr ""
+"`` Scale`` upraví texturu tak, aby odpovídala ohraničujícímu obdélníku uzlu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
+msgid "``Tile`` makes the texture repeat, but it won't scale."
+msgstr "`` Tile`` způsobí opakování textury, ale nezmění měřítko."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
+msgid ""
+"``Keep`` and ``Keep Centered`` force the texture to remain at its original "
+"size, in the top left corner or the center of the frame respectively."
+msgstr ""
+"`` Keep`` a `` Keep centrered`` ponechá texturu v původní velikosti, v levém "
+"horním rohu, respektive středu rámu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
+msgid ""
+"``Keep Aspect`` and ``Keep Aspect Centered`` scales the texture but force it "
+"to remain its original aspect ratio, in the top left corner or the center of "
+"the frame respectively."
+msgstr ""
+"`` Keep Aspect``` a `` Keep Aspect Centered`` upraví měřítko textury, ale "
+"vynutí, aby zůstal zachován původní poměr stran, v levém horním rohu, "
+"respektive středu rámu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+msgid ""
+"``Keep Aspect Covered`` works just like ``Keep Aspect Centered`` but the "
+"shorter side fits the bounding rectangle and the other one clips to the "
+"node's limits."
+msgstr ""
+"`` Keep Aspect Covered`` funguje stejně jako `` Keep Aspect Centered`` ', "
+"ale kratší strana odpovídá ohraničujícímu obdélníku a delší je připnuta k "
+"ohraničení uzlu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
+msgid ""
+"As with Sprite nodes, you can modulate the TextureRect's color. Click the "
+"``Modulate`` property and use the color picker."
+msgstr ""
+"Stejně jako u Sprite uzlů můžete modulovat barvu TextureRect. Klikněte na "
+"vlastnost ``Modulate`` a použijte výběr barvy."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
+msgid "TextureRect modulated with a red color"
+msgstr "TextureRect modulovaný červenou barvou"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
+msgid "TextureButton"
+msgstr "TextureButton"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
+msgid ""
+"**TextureButton** is like TextureRect, except it has 5 texture slots: one "
+"for each of the button's states. Most of the time, you'll use the Normal, "
+"Pressed, and Hover textures. Focused is useful if your interface listens to "
+"the keyboard's input. The sixth image slot, the Click Mask, lets you define "
+"the clickable area using a 1-bit, pure black and white image."
+msgstr ""
+"** TextureButton ** je jako TextureRect, kromě toho, že má 5 slotů na "
+"texturu: jeden pro každý ze stavů tlačítka. Většinou budete používat textury "
+"Normal, Pressed a Hover. Focused je užitečné, pokud vaše rozhraní poslouchá "
+"vstup z klávesnice. Šestý slot obrázku, Click Mask, umožňuje definovat "
+"oblast, na kterou lze kliknout, pomocí jednobitového čistě černobílého "
+"obrazu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
+msgid ""
+"In the Base Button section, you'll find a few checkboxes that change how the "
+"button behaves. When ``Toggle Mode`` is on, the button will toggle between "
+"active and normal states when you press it. ``Disabled`` makes it disabled "
+"by default, in which case it will use the ``Disabled`` texture. "
+"TextureButton shares a few properties with the texture frame: it has a "
+"``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
+"modes to change its scale behavior."
+msgstr ""
+"V části Base Button najdete několik zaškrtávacích políček, která mění "
+"chování tlačítka. Když je zapnut ``Toggle Mode``, stiskuní tlačítka "
+"způsobuje přechod mezi aktivním a normálním stavem. ``Disabled`` implicitně "
+"deaktivuje, v takovém případě použije texturu ``Disabled``. TextureButton "
+"sdílí několik vlastností s rámečkem textury: má vlastnost ``Modulate`` pro "
+"změnu barvy a režimy` Resize`` a `Stretch`` pro změnu škálování."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
+msgid "TextureButton and its 5 texture slots"
+msgstr "TextureButton a jeho 5 slotů pro textury"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
+msgid "TextureProgress"
+msgstr "TextureProgress"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
+msgid ""
+"**TextureProgress** layers up to 3 sprites to create a progress bar. The "
+"Under and Over textures sandwich the Progress one, which displays the bar's "
+"value."
+msgstr ""
+"** TextureProgress ** vrství až 3 textury pro vytvoření ukazatele průběhu. "
+"Textury Under and Over zapouzdřují texturu Progress, která zobrazuje hodnotu "
+"pruběhu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
+msgid ""
+"The ``Mode`` property controls the direction in which the bar grows: "
+"horizontally, vertically, or radially. If you set it to radial, the "
+"``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
+"the gauge."
+msgstr ""
+"Vlastnost `` Mode`` řídí směr, ve kterém pruh roste: horizontally "
+"(vodorovně), vertically (svisle) nebo radially (radiálně). Pokud ji "
+"nastavíte na radiální, vlastnosti `` Initial Angle`` a `` Fill Degrees`` vám "
+"umožní omezit rozsah měřidla."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
+msgid ""
+"To animate the bar, you'll want to look at the Range section. Set the "
+"``Min`` and ``Max`` properties to define the range of the gauge. For "
+"instance, to represent a character's life, you'll want to set ``Min`` to ``0,"
+"`` and ``Max`` to the character's maximum life. Change the ``Value`` "
+"property to update the bar. If you leave the ``Min`` and ``Max`` values to "
+"the default of ``0`` and ``100,`` and set the ``Value`` property to ``40``, "
+"40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
+msgstr ""
+"Chcete-li lištu animovat, budete se chtít podívat na sekci Range. Nastavte "
+"vlastnosti `` Min`` a `` Max`` pro definování rozsahu měřidla. Například pro "
+"zobrazení života postavy přepište `` Min`` na `` 0, `` a `` Max`` na "
+"maximální život postavy. Změňte vlastnost `` Value`` a aktualizujte panel. "
+"Pokud ponecháte hodnoty `` Min`` a `` Max`` na výchozích hodnotách `` 0`` a "
+"`` 100, `` a nastavíte vlastnost `` Value`` na `` 40``, 40% textury `` "
+"Progress`` se objeví a 60% z toho zůstane skryté."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
+msgid "TextureProgress bar, two thirds filled"
+msgstr "Pruh TextureProgress, vyplněné dvě třetiny"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:144
+msgid "Label"
+msgstr "Label"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:146
+msgid ""
+"**Label** prints text to the screen. You'll find all its properties in the "
+"Label section, in the Inspector. Write the text in the ``Text`` property, "
+"and check Autowrap if you want it to respect the textbox's size. If Autowrap "
+"is off, you won't be able to scale the node. You can align the text "
+"horizontally and vertically with Align and Valign, respectively."
+msgstr ""
+"** Label** vytiskne text na obrazovku. Všechny jeho vlastnosti najdete v "
+"sekci Label v Inspektoru. Napište text do vlastnosti `` Text`` a zaškrtněte "
+"Autowrap, pokud chcete respektovat velikost textového pole. Pokud je "
+"Autowrap vypnutý, nebudete moci změnit měřítko uzlu. Text můžete zarovnat "
+"vodorovně a svisle s Align a Valign."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
+msgid "Picture of a Label"
+msgstr "Obrázek uzlu typu Label"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
+msgid "NinePatchRect"
+msgstr "NinePatchRect"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
+msgid ""
+"**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
+"and the sides tile when you scale the texture, but it never scales the "
+"corners. It is useful to build panels, dialog boxes and scalable backgrounds "
+"for your UI."
+msgstr ""
+"** NinePatchRect ** provede rozdělení textury do 3 řádků a 3 sloupců. Při "
+"změně měřítka textury se změní střed a dlaždice po stranách ale nikdy se "
+"nezmění rohy. Je užitečný pro vytváření panelů, dialogových oken a "
+"škálovatelného pozadí pro vaše uživatelské rozhraní."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
+msgid "NinePatchRect scaled with the min\\_size property"
+msgstr "Měřítko NinePatchRect se škálovalo vlastností min \\ _size"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:170
+msgid "There are two workflows to build responsive UIs"
+msgstr ""
+"K dispozici jsou dva pracovní postupy pro vytváření responzivních "
+"uživatelskéch rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
+msgid ""
+"There are two workflows to build scalable and flexible interfaces in Godot:"
+msgstr ""
+"Existují dva postupy jak vybudovat škálovatelné a flexibilní rozhraní v "
+"Godotu:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+msgid ""
+"You have many container nodes at your disposal that scale and place UI "
+"elements for you. They take control over their children."
+msgstr ""
+"Máte k dispozici mnoho kontejnerových uzlů, které škálují a umisťují prvky "
+"uživatelského rozhraní. Přebírají také kontrolu nad podřízenými uzly (svými "
+"dětmi)."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
+msgid ""
+"On the other side, you have the layout menu. It helps you to anchor, place "
+"and resize a UI element within its parent."
+msgstr ""
+"Na druhé straně máte nabídku rozložení. Pomáhá vám ukotvit, umístit a změnit "
+"velikost prvku uživatelského rozhraní v rámci jeho nadřazené(rodičovské) "
+"jednotky."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
+msgid ""
+"The two approaches are not always compatible. Because a container controls "
+"its children, you cannot use the layout menu on them. Each container has a "
+"specific effect, so you may need to nest several of them to get a working "
+"interface. With the layout approach you work from the bottom up, on the "
+"children. As you don't insert extra containers in the scene it can make for "
+"cleaner hierarchies, but it's harder to arrange items in a row, column, "
+"grid, etc."
+msgstr ""
+"Oba přístupy nejsou vždy kompatibilní. Protože kontejner řídí svoje "
+"podřízené (děti), nemůžete na ně použít nabídku Rozložení. Každý kontejner "
+"má specifický efekt, takže možná budete muset několik kontejnerů vnořit, "
+"abyste získali funkční rozhraní. S přístupem Rozložení pracujete zdola "
+"nahoru, na dětech. Protože do scény nevkládáte další kontejnery, může to "
+"znamenat jednodužší hierarchii, ale je obtížnější uspořádat položky do řady, "
+"sloupce, mřížky atd."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
+msgid ""
+"As you create UIs for your games and tools, you'll develop a sense for what "
+"fits best in each situation."
+msgstr ""
+"Při vytváření uživatelského rozhraní pro své hry a nástroje si postupně "
+"vytvoříte smysl pro to, co by se v každé situaci nejlépe hodílo."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
+msgid "Place UI elements precisely with anchors"
+msgstr "Umístěte prvky uživatelského rozhraní přesně pomocí kotev"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
+msgid ""
+"Control nodes have a position and size, but they also have anchors and "
+"margins. Anchors define the origin, or the reference point, for the Left, "
+"Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
+"change the reference point of the margins."
+msgstr ""
+"Řídicí uzly mají polohu a velikost, ale mají také kotvy a okraje. Kotvy "
+"definují počátek nebo referenční bod pro levý, horní, pravý a dolní okraj "
+"uzlu. Změňte některou ze čtyř kotev, abyste změnili referenční bod okrajů."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
+msgid "The anchor property"
+msgstr "Vlastnost Kotva"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
+msgid "How to change the anchor"
+msgstr "Jak změnit kotvu"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:197
+msgid ""
+"Like any properties, you can edit the 4 anchor points in the Inspector, but "
+"this is not the most convenient way. When you select a control node, the "
+"layout menu appears above the viewport, in the toolbar. It gives you a list "
+"of icons to set all 4 anchors with a single click, instead of using the "
+"inspector's 4 properties. The layout menu will only show up when you select "
+"a control node."
+msgstr ""
+"Stejně jako všechny vlastnosti můžete v Inspektoru upravit 4 kotevní body, "
+"ale nejedná se o nejpohodlnější způsob. Když vyberete řídicí uzel, na panelu "
+"nástrojů se nad výřezem zobrazí nabídka Rozložení. Poskytuje vám seznam ikon "
+"pro nastavení všech 4 kotev jediným kliknutím namísto použití 4 vlastností "
+"Inspektoru. Nabídka Rozložení se zobrazí, pouze pokud vyberete řídicí uzel."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
+msgid "The layout menu in the viewport"
+msgstr "Nabídka Rozložení ve výřezu"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
+msgid "Anchors are relative to the parent container"
+msgstr "Kotvy jsou relativní k nadřazenému (rodičovskému) kontejneru"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
+msgid ""
+"Each anchor is a value between 0 and 1. For the left and top anchors, a "
+"value of 0 means that without any margin, the node's edges will align with "
+"the left and top edges of its parent. For the right and bottom edges, a "
+"value of 1 means they'll align with the parent container's right and bottom "
+"edges. On the other hand, margins represent a distance to the anchor "
+"position in pixels, while anchors are relative to the parent container's "
+"size."
+msgstr ""
+"Každá kotva představuje hodnotu mezi 0 a 1. U levé a horní kotvy hodnota 0 "
+"znamená, že hrany uzlu budou bez okraje zarovnány s levým a horním okrajem "
+"nadřazeného kontejneru. U pravého a dolního okraje hodnota 1 znamená, že "
+"budou zarovnány s pravým a dolním okrajem nadřazeného kontejneru. A naopak "
+"okraje představují vzdálenost k pozici kotvy v obrazových bodech, zatímco "
+"kotvy jsou relativní vzhledem k rozměrům nadřazeného kontejneru."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
+msgid ""
+"Margins are relative to the anchor position, which is relative to the "
+"anchors. In practice, you'll often let the container update margins for you"
+msgstr ""
+"Okraje jsou relativní k poloze kotvy, která je určena kotvami. V praxi často "
+"ponecháte na kontejneru, aby aktualizoval okraje za vás"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:226
+msgid "Margins change with the anchor"
+msgstr "Okraje se mění s kotvou"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
+msgid ""
+"Margins update automatically when you move or resize a control node. They "
+"represent the distance from the control node's edges to its anchor, which is "
+"relative to the parent control node or container. That's why your control "
+"nodes should always be inside a container, as we'll see in a moment. If "
+"there's no parent, the margins will be relative to the node's own bounding "
+"Rectangle, set in the Rect section, in the inspector."
+msgstr ""
+"Okraje se aktualizují automaticky, když přesunete nebo změníte velikost "
+"řídicího uzlu. Představují vzdálenost od okrajů řídicího uzlu k jeho kotvě, "
+"která je relativní k nadřazenému řídícímu uzlu nebo kontejneru. Proto by "
+"vaše řídicí uzly měly být vždy uvnitř kontejneru, jak uvidíme za chvíli. "
+"Pokud neexistuje žádný rodič, budou okraje relativní k vlastnímu "
+"ohraničujícímu obdélníku uzlu, nastavenému v Inspektoru v sekci Rekt."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
+msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
+msgstr "Okraje proCenterContainer nastaveny na kotvu „Full Rect“"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:240
+msgid ""
+"Try to change the anchors or nest your Control nodes inside Containers: the "
+"margins will update. You'll rarely need to edit the margins manually. Always "
+"try to find a container to help you first; Godot comes with nodes to solve "
+"all the common cases for you. Need to add space between a lifebar and the "
+"border of the screen? Use the MarginContainer. Want to build a vertical "
+"menu? Use the VBoxContainer. More on these below."
+msgstr ""
+"Zkuste změnit kotvy nebo vnořit řídicí uzly uvnitř kontejnerů: okraje se "
+"aktualizují. Zřídkakdy budete muset okraje upravovat ručně. Vždy se nejprve "
+"pokuste najít kontejner, který by vám by vám mohl pomoci; Godot přichází s "
+"uzly pro všechny běžné případy. Potřebujete přidat mezeru mezi ukazatel "
+"života a okraj obrazovky? Použijte MarginContainer. Chcete vytvořit "
+"vertikální menu? Použijte VBoxContainer. Více k těmto níže."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
+msgid "Use size tags to change how UI elements fill the available space"
+msgstr ""
+"Pomocí značek velikosti změňte, jak prvky uživatelského rozhraní zaplňují "
+"dostupné místo"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:251
+msgid ""
+"Every control node has Size Flags. They tell containers how the UI elements "
+"should scale. If you add the \"Fill\" flag to the Horizontal or Vertical "
+"property, the node's bounding box will take all the space it can, but it'll "
+"respect its siblings and retain its size. If there are 3 TextureRect nodes "
+"in an HBoxContainer, with the \"Fill\" flags on both axes, they'll each take "
+"up to a third of the available space, but no more. The container will take "
+"over the node and resize it automatically."
+msgstr ""
+"Každý řídicí uzel má příznaky velikosti. Říkají kontejnerům, jak by se měly "
+"k podřízeným prvkům ui chovat. Pokud přidáte příznak \"Fill\" do Horizontal "
+"nebo Vertical vlastnosti, ohraničovací rámeček uzlu zabere veškerý prostor, "
+"který může, ale bude respektovat své sourozence a zachová si svou velikost. "
+"Pokud jsou v HBoxContainer 3 uzly TextureRect s příznaky „Fill“ na obou "
+"osách, zabere každý z nich až třetinu dostupného prostoru, ale nic víc. "
+"Kontejner přebírá uzel a automaticky jeho mění velikost."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
+msgid "3 UI elements in an HBoxContainer, they align horizontally"
+msgstr "3 prvky uživatelského rozhraní v HBoxContainer zarovnané vodorovně"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:263
+msgid ""
+"The \"Expand\" flag lets the UI element take all the space it can, and push "
+"against its siblings. Its bounding rectangle will grow against the edges of "
+"its parent, or until it's blocked by another UI node."
+msgstr ""
+"Příznak „Expand“ umožňuje prvku uživatelského rozhraní zabrat veškerý "
+"dostupný prostor a zatlačit proti svým sourozencům. Jeho ohraničující "
+"obdélník poroste proti okrajům jeho nadřazeného uzlu nebo dokud nebude "
+"zablokován jiným uzlem uživatelského rozhraní."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
+msgid ""
+"The same example as above, but the center node has the \"Expand\" size flag"
+msgstr ""
+"Stejný příklad jako výše, ale středový uzel má příznak velikosti \"Expand\""
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
+msgid ""
+"You'll need some practice to understand the size tags, as their effect can "
+"change quite a bit depending on how you set up your interface."
+msgstr ""
+"Budete potřebovat určitou praxi, abyste porozuměli značkám velikosti, "
+"protože jejich vliv se může trochu lišit v závislosti na tom, jak vytvoříte "
+"své rozhraní."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
+msgid "Arrange control nodes automatically with containers"
+msgstr "Automatické uspořádání řídicích uzlů pomocí kontejnerů"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
+msgid ""
+"Containers automatically arrange all children Control nodes including other "
+"containers in rows, columns, and more. Use them to add padding around your "
+"interface or center nodes in their bounding rectangles. All built-in "
+"containers update in the editor, so you can see the effect instantly."
+msgstr ""
+"Kontejnery automaticky uspořádají všechny podřízené řídicí uzly včetně "
+"dalších kontejnerů do řádků, sloupců či jinak. Použijte je k přidání výplně "
+"kolem rozhraní nebo středových uzlů v jejich ohraničujících obdélnících. "
+"Všechny vestavěné kontejnery se v editoru aktualizují, takže efekt můžete "
+"vidět okamžitě."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
+msgid ""
+"Containers have a few special properties to control how they arrange UI "
+"elements. To change them, navigate down to the Custom Constants section in "
+"the Inspector."
+msgstr ""
+"Kontejnery mají několik speciálních vlastností, které řídí, jak uspořádavají "
+"podřízené prvky uživatelského rozhraní. Chcete-li je změnit, přejděte v "
+"Inspektoru dolů do části Custom constants."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
+msgid "The 5 most useful containers"
+msgstr "5 nejužitečnějších kontejnerů"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
+msgid ""
+"If you build tools, you might need all of the containers. But for most "
+"games, a handful will be enough:"
+msgstr ""
+"Pokud stavíte nástroje, možná budete potřebovat všechny kontejnery. Ale pro "
+"většinu her postačí jenom hrstka:"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
+msgid "MarginContainer, to add margins around part of the UI"
+msgstr "MarginContainer, přidá okraje kolem části uživatelského rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
+msgid "CenterContainer, to center its children in its bounding box"
+msgstr ""
+"CenterContainer, vycentruje svoje podřízené uzly uprostřed svého obrysu"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:296
+msgid ""
+"VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
+msgstr ""
+"VboxContainer a HboxContainer uspořádá prvky uživatelského rozhraní do řádků "
+"nebo sloupců"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
+msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
+msgstr "GridContainer, uspořádá řídicí uzly do mřížky"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
+msgid ""
+"CenterContainer centers all its children inside of its bounding rectangle. "
+"It's one you typically use for title screens, if you want the options to "
+"stay in the center of the viewport. As it centers everything, you'll often "
+"want a single container nested inside it. If you use textures and buttons "
+"instead, they'll stack up."
+msgstr ""
+"CenterContainer vystředí všechny podřízené uzly v rámci svého ohraničujícího "
+"obdélníku. Je to ten kontejner, který obvykle používáte pro titulní "
+"obrazovky, když chcete, aby položky zůstaly uprostřed. Protože vysředí "
+"všechno, budete do něho často chtít vnořit další kontejner. Pokud místo něho "
+"použijete textury a tlačítka, budou se hromadit."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
+msgid ""
+"CenterContainer in action. The life bar centers inside its parent container."
+msgstr ""
+"CenterContainer v akci. Ukazatel života je vystředěn uvnitř nadřazeného "
+"kontejneru."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:311
+msgid ""
+"The MarginContainer adds a margin on any side of the child nodes. Add a "
+"MarginContainer that encompasses the entire viewport to add a separation "
+"between the edge of the window and the UI. You can set a margin on the top, "
+"left, right, or bottom side of the container. No need to tick the checkbox: "
+"click the corresponding value box and type any number. It will activate "
+"automatically."
+msgstr ""
+"MarginContainer přidává okraj na libovolnou stranu podřízených uzlů. "
+"Přidejte MarginContainer, který obklopuje celý výřez pro oddělení okraje "
+"okna od zbytku uživatelského rozhraní. Okraj můžete nastavit na horní, "
+"levou, pravou nebo spodní stranu kontejneru. Zaškrtávací políčko není třeba "
+"zaškrtávat: stačí kliknout na odpovídající pole a zadat libovolné číslo. Vše "
+"se aktivuje automaticky."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
+msgid "The MarginContainer adds a 40px margin around the Game User Interface"
+msgstr ""
+"MarginContainer přidává kolem herního uživatelského rozhraní okraj 40 pixelů"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:322
+msgid ""
+"There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
+"the BoxContainer node itself, as it is a helper class, but you can use "
+"vertical and horizontal box containers. They arrange nodes either in rows or "
+"columns. Use them to line up items in a shop, or to build complex grids with "
+"rows and columns of different sizes, as you can nest them to your heart's "
+"content."
+msgstr ""
+"Existují dva BoxContainers: VBoxContainer a HBoxContainer. Nelze použít "
+"samotný uzel BoxContainer, protože se jedná o pomocnou třídu, ale můžete "
+"využít svislé a vodorovné kontejnery. Uspořádají podřízené uzly do řádků "
+"nebo sloupců. Používejte je k seřazení položek v obchodě nebo k vytváření "
+"komplexních mřížek s řádky a sloupci různých velikostí, protože je můžete "
+"vzájemně vnořovat co hrdo ráčí."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
+msgid "The HBoxContainer horizontally aligns UI elements"
+msgstr "HBoxContainer vodorovně zarovná prvky uživatelského rozhraní"
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:333
+msgid ""
+"VBoxContainer automatically arranges its children into a column. It puts "
+"them one after the other. If you use the separation parameter, it will leave "
+"a gap between its children. HBoxContainer arranges UI elements in a row. "
+"It's similar to the VBoxContainer, with an extra ``add_spacer`` method to "
+"add a spacer control node before its first child or after its last child, "
+"from a script."
+msgstr ""
+"VBoxContainer automaticky uspořádá svoje potomky do sloupce. Naštosuje je "
+"jednoho po druhém. Pokud použijete oddělovací parametr,zanechá mezi nimi "
+"určitý prostor. HBoxContainer uspořádá prvky uživatelského rozhraní do řady. "
+"Je to podobné jako u VBoxContainer, s extra `` add_spacer`` metodou pro "
+"přidání uzlu spacer před prvním nebo posledním potomkem pomocí skriptu."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
+msgid ""
+"The GridContainer lets you arrange UI elements in a grid-like pattern. You "
+"can only control the number of columns it has, and it will set the number of "
+"rows by itself, based on its children's count. If you have nine children and "
+"three columns, you will have 9÷3 = 3 rows. Add three more children and "
+"you'll have four rows. In other words, it will create new rows as you add "
+"more textures and buttons. Like the box containers, it has two properties to "
+"set the vertical and horizontal separation between the rows and columns "
+"respectively."
+msgstr ""
+"GridContainer umožňuje uspořádat prvky uživatelského rozhraní do mřížky. "
+"Můžete řídit pouze počet jeho sloupců a on sám si na základě počtu svých "
+"dětí nastaví počet řádků. Pokud má devět dětí a tři sloupce, bude mít 9 ÷ 3 "
+"= 3 řádky. Přidejte další tři děti a bude mít čtyři řádky. Jinými slovy, při "
+"přidávání dalších textur a tlačítek se vytvoří nové řádky. Stejně jako box "
+"kontejnery má dvě vlastnosti pro nastavení svislého a vodorovného oddělení "
+"řádků a sloupců."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
+msgid "A GridContainer with 2 columns. It sizes each column automatically."
+msgstr "GridContainer se 2 sloupci. Automaticky mění velikost každého sloupce."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:353
+msgid ""
+"Godot's UI system is complex, and has a lot more to offer. To learn how to "
+"design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
+"features-gui>` of the docs."
+msgstr ""
+"Systém pro vytváření UI v Godotu je komplexní a nabízí toho daleko víc. "
+"Chcete-li se dozvědět, jak navrhnout složitější rozhraní, přejděte k části: "
+"ref: `GUI section <toc-learn-features-gui>` v dokumentech."

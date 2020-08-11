@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:4
+msgid "Splash screen"
+msgstr "啟動畫面"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:7
+msgid "Tutorial"
+msgstr "教學"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:9
+msgid ""
+"This is a simple tutorial to establish the basic idea of how the GUI "
+"subsystem works. The goal is to create a simple, static splash screen."
+msgstr ""
+"這是一個很簡單的教學，用來讓你理解 GUI 子系統運作的基本概念。教學的目標就是要"
+"製作一個簡單的靜態啟動畫面。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:15
+msgid ""
+"Following is a file with the assets that will be used. The extracted files "
+"can be placed directly in your project folder and Godot will import them "
+"automatically."
+msgstr ""
+"下面這個檔案包含了所有要用到的資源。解壓縮後的檔案可以直接放在專案資料夾內，"
+"Godot 會自動匯入。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:18
+msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
+msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>` 。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:21
+msgid "Setting up"
+msgstr "設定"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:23
+msgid ""
+"Set the display resolution to 800x450 in Project Settings, and set up a new "
+"scene like this:"
+msgstr "在專案設定中將螢幕解析度設為 800x450，並如下設定一個新場景："
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:27
+msgid ""
+"The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
+"<class_TextureRect>` type. To display an image, drag the corresponding asset "
+"to the texture property."
+msgstr ""
+"節點「background」與「logo」為 :ref:`TextureRect <class_TextureRect>` 型別。"
+"要顯示圖片，將對應的圖片資源拖移至 texture 屬性內。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:32
+msgid ""
+"The node \"start\" is a :ref:`TextureButton <class_TextureButton>`. It takes "
+"several images for different states, but only the normal and pressed will be "
+"supplied in this example:"
+msgstr ""
+"節點「start」為 :ref:`TextureButton <class_TextureButton>` 。這個節點每個不同"
+"的狀態需要不同的圖片，但在這個教學中只用到 normal 與 pressed："
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:38
+msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
+msgstr "最後，「copyright」節點為 :ref:`Label <class_Label>` 。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:40
+msgid "Your final scene should look something like this."
+msgstr "最後場景應該長這樣。"
+
+#: ../../docs/getting_started/step_by_step/splash_screen.rst:44
+msgid ""
+"Go ahead and run the project.  If you're satisfied with the results, "
+"continue to the next tutorial."
+msgstr "接著執行專案。如果你覺得結果不錯的話，請繼續下一個教學。"

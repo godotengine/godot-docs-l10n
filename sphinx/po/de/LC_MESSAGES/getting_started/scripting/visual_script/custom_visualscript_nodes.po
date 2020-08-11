@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:4
-#, fuzzy
 msgid "Custom VisualScript nodes"
-msgstr "VisualScript"
+msgstr "Eigene VisualScript Nodes"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:6
 msgid ""
 "Custom nodes are written in GDScript and can then be used in VisualScript. "
 "This is useful for offloading complex code to GDScript and reusing it."
 msgstr ""
+"Eigene Nodes werden in GDScript geschrieben und können dann in VisualScript "
+"genutzt werden. Dies ist nützlich um komplexen Code nach GDScript "
+"auszulagern und mehrfach zu nutzen."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
-#, fuzzy
 msgid "Creating a custom node"
-msgstr "Erstellen einer Schlafpose"
+msgstr "Erstellen eines eigenen Nodes"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:12
 msgid ""
@@ -53,10 +54,12 @@ msgid ""
 "The most important part of a custom node is the ``_step`` function. The "
 "logic of the node is defined there."
 msgstr ""
+"Der wichtigste Teil eines eigenen Nodes die ``_step`` Funktion. Die Logik "
+"des Nodes wird dort definiert."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:19
 msgid "The ``inputs`` parameter holds the value of the input ports."
-msgstr ""
+msgstr "Der ``inputs`` Parameter beinhaltet den Wert der Eingabe-Ports."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:21
 msgid ""

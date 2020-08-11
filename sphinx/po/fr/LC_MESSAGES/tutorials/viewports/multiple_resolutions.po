@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -473,14 +473,13 @@ msgid "From scripts"
 msgstr "Depuis les scripts"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
-#, fuzzy
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` method (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
-"Pour configurer l'étirement à l'exécution d'un script, utilisez la fonction "
-"``get_tree().set_screen_stretch()`` (voir :ref:`SceneTree."
+"Pour configurer l'étirement à l'exécution d'un script, utilisez la méthode "
+"`get_tree().set_screen_stretch()`` (voir :ref:`SceneTree."
 "set_screen_stretch() <class_SceneTree_method_set_screen_stretch>`)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:238
@@ -488,7 +487,6 @@ msgid "Reducing aliasing on downsampling"
 msgstr "Réduction de l'aliasing lors du sous-échantillonnage"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:240
-#, fuzzy
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -553,6 +551,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:270
 msgid "Scaling 2D and 3D elements differently using Viewports"
 msgstr ""
+"Mettre à l'échelle différemment des éléments 2D et 3D à l'aide de Viewports"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:272
 msgid ""
@@ -562,6 +561,11 @@ msgid ""
 "improve performance significantly while keeping the HUD and other 2D "
 "elements crisp."
 msgstr ""
+"En utilisant plusieurs nœuds Viewport, vous pouvez avoir différentes "
+"échelles pour divers éléments. Par exemple, vous pouvez utiliser cela pour "
+"rendre le monde en 3D à une faible résolution tout en gardant les éléments "
+"en 2D à la résolution native. Cela peut améliorer considérablement les "
+"performances tout en conservant la netteté du HUD et des autres éléments 2D."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
 msgid ""
@@ -572,13 +576,19 @@ msgid ""
 "ViewportContainer is that it allows enable linear filtering. This makes "
 "scaled 3D viewports look better in many cases."
 msgstr ""
+"Pour ce faire, on utilise le nœud Viewport racine uniquement pour les "
+"éléments 2D, puis on crée un nœud Viewport pour afficher le monde 3D et on "
+"l'affiche à l'aide d'un nœud ViewportContainer ou TextureRect. Le projet "
+"final comprendra en fait deux viewports. L'un des avantages de l'utilisation "
+"de TextureRect par rapport à ViewportContainer est qu'elle permet d'activer "
+"le filtrage linéaire. Dans de nombreux cas, cela permet d'améliorer l'aspect "
+"des viewports 3D mis à l'échelle."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Pour voir un projet d’exemple, voyez la démo de système d’exploitation de "
-"test : https://github.com/godotengine/godot-demo-projects/tree/master/misc/"
-"os_test"
+"Voir la `démo de mise à l'échelle du viewport 3D <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/viewport/3d_scaling>`__ pour des "
+"exemples."

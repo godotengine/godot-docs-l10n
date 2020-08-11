@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:4
+msgid "Size and anchors"
+msgstr "Velikost a kotvy"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:6
+msgid ""
+"If a game was always going to be run on the same device and at the same "
+"resolution, positioning controls would be a simple matter of setting the "
+"position and size of each one of them. Unfortunately, that is rarely the "
+"case."
+msgstr ""
+"Pokud by hra byla vždy spuštěna na stejném zařízení a se stejným rozlišením, "
+"rozmístění ovládacích prvků bylo jednoduchou záležitostí nastavení polohy a "
+"velikosti každého z nich. Bohužel je tomu tak zřídka."
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:11
+msgid ""
+"Only TVs nowadays have a standard resolution and aspect ratio. Everything "
+"else, from computer monitors to tablets, portable consoles and mobile phones "
+"have different resolutions and aspect ratios."
+msgstr ""
+"Standardní rozlišení a poměr stran mají dnes pouze televizory. Vše od "
+"počítačových monitorů po tablety, přenosné konzole a mobilní telefony ma "
+"různá rozlišení a poměry stran."
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:15
+msgid ""
+"There are several ways to handle this, but for now, let's just imagine that "
+"the screen resolution has changed and the controls need to be re-positioned. "
+"Some will need to follow the bottom of the screen, others the top of the "
+"screen, or maybe the right or left margins."
+msgstr ""
+"Existuje několik způsobů, jak to zvládnout, ale prozatím si představme, že "
+"se změnilo rozlišení obrazovky a je třeba změnit umístění ovládacích prvků. "
+"Některé budou muset následovat spodní část obrazovky, jiní horní část "
+"obrazovky nebo možná pravý nebo levý okraj."
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:22
+msgid ""
+"This is done by editing the *margin* properties of controls. Each control "
+"has four margins: left, right, bottom and top. By default, all of them "
+"represent a distance in pixels relative to the top-left corner of the parent "
+"control or (in case there is no parent control) the viewport."
+msgstr ""
+"To se provádí úpravou vlastností * margin * ovládacích prvků. Každý ovládací "
+"prvek má čtyři okraje: levý, pravý, dolní a horní. Ve výchozím nastavení "
+"všechny představují vzdálenost v pixelech vzhledem k levému hornímu rohu "
+"nadřazeného ovládacího prvku nebo (v případě, že nadřazený ovládací prvek "
+"neexistuje), výřezu."
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:29
+msgid ""
+"When horizontal (left, right) and/or vertical (top, bottom) anchors are "
+"changed to 1, the margin values become relative to the bottom-right corner "
+"of the parent control or viewport."
+msgstr ""
+"Když se horizontální (vlevo, vpravo) a / nebo vertikální (horní, dolní) "
+"kotvy změní na 1, hodnoty okrajů se stanou relativními k pravému dolnímu "
+"rohu nadřazeného ovládacího prvku nebo výřezu."
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:35
+msgid ""
+"Here, the control is set to expand its bottom-right corner with that of the "
+"parent, so when re-sizing the parent, the control will always cover it, "
+"leaving a 20 pixel margin:"
+msgstr ""
+"Zde je ovládací prvek nastaven tak, aby rozšiřoval svůj pravý dolní roh "
+"společně s rohem nadřazeného prvku, takže při změně velikosti nadřazeného "
+"prvku jej ovládací prvek vždy pokryje tak, aby ponechal okraj 20 pixelů:"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:42
+msgid "Centering a control"
+msgstr "Centrování ovládacího prvku"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:44
+msgid ""
+"To center a control in its parent, set its anchors to 0.5 and each margin to "
+"half of its relevant dimension. For example, the code below shows how a "
+"TextureRect can be centered in its parent:"
+msgstr ""
+"Chcete-li vycentrovat ovládací prvek v nadřazeném uzlu, nastavte jeho kotvy "
+"na 0,5 a každý okraj na polovinu jeho příslušného rozměru. Například níže "
+"uvedený kód ukazuje, jak může být TextureRect vystředěn na ve svém "
+"rodičovském uzlu:"
+
+#: ../../docs/tutorials/gui/size_and_anchors.rst:63
+msgid ""
+"Setting each anchor to 0.5 moves the reference point for the margins to the "
+"center of its parent. From there, we set negative margins so that the "
+"control gets its natural size."
+msgstr ""
+"Nastavení každé kotvy na 0,5 posune referenční bod pro okraje do středu jeho "
+"nadřazeného uzlu. Odtud jsme nastavili záporné okraje tak, aby ovládací "
+"prvek získal svoji přirozenou velikost."

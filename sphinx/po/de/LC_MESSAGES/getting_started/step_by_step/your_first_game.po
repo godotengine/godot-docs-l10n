@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -734,7 +734,7 @@ msgid ""
 "the screen, choose a random direction, and move in a straight line."
 msgstr ""
 "Jetzt ist es an der Zeit die Feinde zu erstellen, denen der Spieler "
-"ausweichen muss. Ihr Verhalten wird nicht allzu komplex sein: Mobs werden "
+"ausweichen muss. Ihr Verhalten wird nicht allzu komplex sein: Gegner werden "
 "zufällig an den Rändern des Bildschirms erscheinen und sich in einer "
 "zufälligen Richtung in einer geraden Linie fortbewegen, um danach geradeaus "
 "weiterzugehen."
@@ -744,8 +744,8 @@ msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"Wir werden dies in eine ``Mob`` -Szene einbauen, die wir dann "
-"*instanziieren* um beliebig viele unabhängige Mobs im Spiel erstellen zu "
+"Wir werden dies in eine ``Gegner``-Szene einbauen, die wir dann "
+"*instanziieren* um beliebig viele unabhängige Gegner im Spiel erstellen zu "
 "können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:540
@@ -796,10 +796,10 @@ msgid ""
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
 "Stelle in den :ref:`RigidBody2D <class_RigidBody2D>` Eigenschaften ``Gravity "
-"Scale`` auf ``0``, damit der Mob nicht nach unten fällt. Klicke außerdem "
+"Scale`` auf ``0``, damit der Gegner nicht nach unten fällt. Klicke außerdem "
 "unter dem Abschnitt ``PhysicsBody2D`` auf die Eigenschaft ``Mask`` und "
 "deaktiviere das erste Kontrollkästchen. Dadurch wird sichergestellt, dass "
-"die Mobs nicht miteinander kollidieren."
+"die Gegner nicht miteinander kollidieren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:563
 msgid ""
@@ -825,7 +825,7 @@ msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
 "some variety."
 msgstr ""
-"Wir werden eine der Animationen zufällig auswählen, sodass die mobs eine "
+"Wir werden eine der Animationen zufällig auswählen, sodass die Gegner eine "
 "gewisse Vielfalt haben."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:575
@@ -833,7 +833,7 @@ msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
-"Wie die Spieler-Bilder müssen auch diese Mob-Bilder verkleinert werden. "
+"Wie die Spieler-Bilder müssen auch diese Gegner-Bilder verkleinert werden. "
 "Setze die ``Scale`` Eigenschaft von ``AnimatedSprite`` auf ``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:578
@@ -849,7 +849,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
 msgid "Save the scene."
-msgstr "Speichere die Szene."
+msgstr "Speicher die Szene."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -857,9 +857,7 @@ msgstr "Feind-Skript"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid "Add a script to the ``Mob`` and add the following member variables:"
-msgstr ""
-"Füge ein Skript zum ``Mob`` hinzu und füge die folgenden Member-Variablen "
-"hinzu:"
+msgstr "Füge ein Skript zum ``Gegner`` und folgende Member-Variablen hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:611
 msgid ""
@@ -868,9 +866,9 @@ msgid ""
 "were all moving at the same speed)."
 msgstr ""
 "Wir wählen mit einem Zufallswert zwischen ``min_speed`` und ``max_speed``, "
-"wie schnell sich jeder Mob bewegen wird (es wäre trivial, würden sich alle "
-"mit der selben Geschwindigkeit fortbewegen). Stelle sie im Inspektor auf "
-"``150`` und ``250``. Wir haben auch einen Array mit den Namen der drei "
+"wie schnell sich jeder Gegner bewegen wird (es wäre trivial, würden sich "
+"alle mit der selben Geschwindigkeit fortbewegen). Stelle sie im Inspektor "
+"auf ``150`` und ``250``. Wir haben auch einen Array mit den Namen der drei "
 "Animationen, mit dessen Hilfe wir eine Zufällige auswählen können."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
@@ -920,14 +918,14 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the "
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
-"Das Letzte was getan werden muss ist die Mobs dazu zu bringen, sich selbst "
+"Das Letzte was getan werden muss ist die Gegner dazu zu bringen, sich selbst "
 "zu löschen, sobald sie den Bildschirm verlassen. Verbinde das Signal "
 "``screen_exited()`` vom Node ``VisibilityNotifier2D`` und füge diesen Code "
 "hinzu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
 msgid "This completes the `Mob` scene."
-msgstr "Damit ist die Szene des `Mob` fertig."
+msgstr "Damit ist die Szene des `Gegners` fertig."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:669
 msgid "Main scene"
@@ -957,7 +955,7 @@ msgid ""
 "spawn"
 msgstr ""
 ":ref:`Timer <class_Timer>` (genannt ``MobTimer``) - um zu steuern, wie oft "
-"Mobs spawnen"
+"Gegner erscheinen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
@@ -1012,7 +1010,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:696
 msgid "Spawning mobs"
-msgstr "Mobs spawnen"
+msgstr "Gegner (Mobs) erzeugen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:698
 msgid ""
@@ -1021,7 +1019,7 @@ msgid ""
 "<class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you "
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
-"Der Haupt-Node wird neue Mobs hervorbringen, und wir möchten, dass sie an "
+"Der Haupt-Node wird neue Gegner hervorbringen, und wir möchten, dass sie an "
 "einer beliebigen Stelle am Rande des Bildschirms erscheinen. Füge einen :ref:"
 "`Path2D <class_Path2D>`Node namens ``MobPath`` als Unterobjekt von ``Main`` "
 "hinzu. Wenn Du ``Path2D`` auswählst, siehst du oben im Editor einige neue "
@@ -1046,8 +1044,8 @@ msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
-"Zeichne den Pfad in *Uhrzeigersinn*-Reihenfolge, sonst spawnen deine Mobs "
-"*nach außen* statt *nach innen*!"
+"Zeichne den Pfad im *Uhrzeigersinn*, sonst erscheinen deine Gegner *nach "
+"außen* statt *nach innen*!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:717
 msgid ""
@@ -1076,7 +1074,7 @@ msgstr "Die Szene sollte so aussehen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:730
 msgid "Main script"
-msgstr "Main Skript"
+msgstr "Haupt-Skript"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid ""
@@ -1084,15 +1082,15 @@ msgid ""
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Füge ein Skript zu ``Main`` hinzu. Am Anfang des Skripts verwenden wir "
-"``export (PackedScene)``, damit wir die Mob-Szene auswählen können, die wir "
-"als Instanz verwenden wollen."
+"``export (PackedScene)``, damit wir die Gegner-Szene auswählen können, die "
+"wir als Instanz verwenden wollen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Klicke auf die ``Main`` Node und man wird eine ``Mob`` Eigenschaft im "
+"Klicke auf die ``Main`` Node und man wird eine ``Gegner`` Eigenschaft im "
 "Inspector unter \"Script Variables\" erkennen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
@@ -1140,8 +1138,8 @@ msgstr ""
 "wollen eine neue Funktion namen ``game_over`` erstellen, welche angeben "
 "wird, was passieren muss, wenn das Spiel beendet wurde. Schreib \"game_over"
 "\" in die \"Reciever Method\"-Box unten im Fenster und klicke auf \"Connect"
-"\".  Füge dann sowohl den folgenden Code zur neuen Funkion, als auch eine "
-"``new_game``-Funktion, die alles für ein neues Spiel einstellen wird."
+"\". Füge dann sowohl den folgenden Code zur neuen Funkion, als auch eine "
+"``new_game``-Funktion, die alles für ein neues Spiel einstellen wird:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
@@ -1162,11 +1160,11 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"In ``_on_MobTimer_timeout ()`` erstellen wir eine Mob-Instanz, wähle einen "
-"zufälligen Startpunkt entlang des ``Path2D`` aus und setze den Mob in "
-"Bewegung. Der ``PathFollow2D``-Node dreht sich automatisch, wenn er dem Pfad "
-"folgt. Wir verwenden diesen, um die Richtung des Mobs sowie dessen Position "
-"auszuwählen."
+"In ``_on_MobTimer_timeout ()`` erstellen wir eine Gegner-Instanz, wähle "
+"einen zufälligen Startpunkt entlang des ``Path2D`` aus und setze den Gegner "
+"in Bewegung. Der ``PathFollow2D``-Node dreht sich automatisch, wenn er dem "
+"Pfad folgt. Wir verwenden diesen, um die Richtung des Gegners sowie dessen "
+"Position auszuwählen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
@@ -1213,9 +1211,9 @@ msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
-"Es sollte jetzt möglich sein, den Spieler zu bewegen, siehe die "
-"erscheinenden mobs, und sehe, wie der Spieler verschwindet, wenn er einen "
-"mob erwischt."
+"Es sollte jetzt möglich sein den Spieler zu bewegen, erscheinende Gegner zu "
+"sehen, und den Spieler verschwinden zu sehen, wenn er von einem Gegner "
+"getroffen wird."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid ""
@@ -1253,7 +1251,7 @@ msgstr ""
 "Mit dem Node :ref:`CanvasLayer <class_CanvasLayer>` können wir unsere "
 "Oberflächenelemente auf einer Ebene über dem Rest des Spiels zeichnen, so "
 "dass die angezeigten Informationen nicht durch irgendwelche Spielelemente "
-"wie den Spieler oder Mobs verdeckt werden."
+"wie den Spieler oder Gegner verdeckt werden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "The HUD needs to display the following information:"
@@ -1392,9 +1390,8 @@ msgid "*Align* : \"Center\""
 msgstr "*Align* : \"Mittig\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
-#, fuzzy
 msgid "Message"
-msgstr "MessageLabel (Nachrichten)"
+msgstr "Nachricht"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 msgid "*Layout* : \"HCenter Wide\""
@@ -1433,15 +1430,12 @@ msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
-#, fuzzy
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
 msgstr ""
-"Diese Funktion wird aufgerufen, wenn wir eine Nachricht vorübergehend "
-"anzeigen möchten, z.B. \"Get Ready\". Stellen Sie im ``MessageTimer`` die "
-"``Wartezeit`` auf ``2``` und stellen Sie die ``Einmalige Aufnahme`` "
-"Eigenschaft auf \"Ein\"."
+"Stellen Sie im ``MessageTimer`` die ``Wartezeit`` auf ``2``` und stellen Sie "
+"die ``Einmalige Aufnahme`` Eigenschaft auf \"Ein\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid "Now add this script to ``HUD``:"
@@ -1456,15 +1450,12 @@ msgstr ""
 "gedrückt wurde."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1075
-#, fuzzy
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
 msgstr ""
 "Diese Funktion wird aufgerufen, wenn wir eine Nachricht vorübergehend "
-"anzeigen möchten, z.B. \"Get Ready\". Stellen Sie im ``MessageTimer`` die "
-"``Wartezeit`` auf ``2``` und stellen Sie die ``Einmalige Aufnahme`` "
-"Eigenschaft auf \"Ein\"."
+"anzeigen möchten, z.B. \"Get Ready\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
 msgid ""
@@ -1509,16 +1500,15 @@ msgid "Connecting HUD to Main"
 msgstr "Verbinde das HUD mit Main"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
-#, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
-"Jetzt, da wir die ``HUD``-Szene erstellt haben, speichere sie und gehe "
-"zurück zu ``Main``. Platziere die ``HUD``-Szene in ``Main`` genauso wie die "
-"``Player``-Szene und platziere sie unten im Baum. Der gesamte Baum sollte so "
-"aussehen, also stelle sicher, dass das nichts fehlt:"
+"Jetzt, da wir die ``HUD``-Szene erstellt haben, gehe zurück zu ``Main`` und "
+"platziere die ``HUD``-Szene in ``Main`` genauso wie die ``Player``-Szene. "
+"Der gesamte Szenenbaum sollte so aussehen, also stelle sicher, dass nichts "
+"fehlt:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
@@ -1573,10 +1563,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid "Removing old creeps"
-msgstr "Entfernen von alten Monstern"
+msgstr "Alten Gegner entfernen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
-#, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -1585,8 +1574,10 @@ msgid ""
 "feature."
 msgstr ""
 "Wenn du bis zum \"Game Over\" spielst und dann ein neues Spiel startest, "
-"befinden sich die Monster des vorherigen Spiel noch auf dem Bildschirm. Es "
-"wäre besser, wenn diese beim Start eines neuen Spiels verschwinden würden."
+"befinden sich die Gegner des vorherigen Spiel noch auf dem Bildschirm. Es "
+"wäre besser, wenn diese beim Start eines neuen Spiels verschwinden würden. "
+"Wir benötigen einen Weg um *alle* Gegner zu entfernen und dies geschieht mit "
+"der \"Gruppen\" Funktion."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1226
 msgid ""
@@ -1606,7 +1597,7 @@ msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
-"Nun werden alle Mobs in der Gruppe \"Mobs\" sein. Wir können dann die "
+"Nun werden alle Gegner in der Gruppe \"Mobs\" sein. Wir können dann die "
 "folgende Zeile zur Funktion ``game_over()`` in ``Main`` hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1245
@@ -1615,8 +1606,8 @@ msgid ""
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
 "Die Funktion ``call_group()`` ruft die benannte Funktion auf jedem Knoten in "
-"einer Gruppe auf - in diesem Fall sagen wir jedem Mob, dass er sich selbst "
-"löschen soll."
+"einer Gruppe auf - in diesem Fall sagen wir jedem Gegner, dass er sich "
+"selbst löschen soll."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1249
 msgid "Finishing up"
@@ -1638,7 +1629,6 @@ msgid "Background"
 msgstr "Hintergrund"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
-#, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1655,13 +1645,12 @@ msgstr ""
 "und ziehe die Größe des ``ColorRect`` so, dass es den Bildschirm abdeckt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1264
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
-"Wenn Du ein Hintergrundbild hast, kannst Du auch einen ``Sprite``-Node "
-"hinzufügen."
+"Wenn Du ein Hintergrundbild hast, kannst Du dies stattdessen mittels "
+"``TextureRect`` Node hinzufügen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1268
 msgid "Sound effects"
@@ -1706,21 +1695,19 @@ msgstr ""
 "hinzu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1286
-#, fuzzy
 msgid "Keyboard shortcut"
 msgstr "Tastenkürzel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
-#, fuzzy
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
 "this with the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
-"Da das Spiel mit Tastatursteuerungen gespielt wird, wäre es praktisch, wenn "
-"wir das Spiel auch durch Drücken einer Taste auf der Tastatur starten "
-"könnten. Eine Möglichkeit hierzu ist die Verwendung der „Shortcut“ -"
-"Eigenschaft des ``Button``-Nodes."
+"Da das Spiel mit Tastatur gesteuert wird, wäre es praktisch, wenn wir das "
+"Spiel auch durch Drücken einer Taste auf der Tastatur starten könnten. Eine "
+"Möglichkeit hierzu ist die Verwendung der „Shortcut“ -Eigenschaft des "
+"``Button``-Nodes."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1292
 #, fuzzy

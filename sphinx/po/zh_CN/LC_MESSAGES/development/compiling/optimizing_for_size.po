@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,18 +45,26 @@ msgstr ""
 "本教程旨在概述创建较小二进制文件的不同方法。在继续之前，建议阅读之前有关为每"
 "个平台编译Godot的教程。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:21
+#: ../../docs/development/compiling/optimizing_for_size.rst:22
+msgid ""
+"You can use the online `Godot build options generator <https://godot-build-"
+"options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
+"SCons options. You can then save this file and place it at the root of your "
+"Godot source directory."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
 msgstr "禁用3D"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:23
+#: ../../docs/development/compiling/optimizing_for_size.rst:30
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
 "对于2D游戏，拥有整个3D引擎通常没有任何意义。因此，有一个构建标志来禁用它："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:29
+#: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
 "Tools must be disabled in order to use this flag, as the editor is not "
 "designed to operate without 3D support. Without it, the binary size can be "
@@ -65,29 +73,30 @@ msgstr ""
 "必须禁用工具才能使用此标志，因为编辑器不能在没有3D支持的情况下运行。没有它，"
 "二进制大小可以减少大约15％。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:34
+#: ../../docs/development/compiling/optimizing_for_size.rst:41
 msgid "Disabling advanced GUI nodes"
 msgstr "禁用高级GUI节点"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:36
+#: ../../docs/development/compiling/optimizing_for_size.rst:43
+#, fuzzy
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
-"TextEditor or GraphEdit. They can be disabled using a build flag:"
+"TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
 "大多数小游戏不需要复杂的GUI控件，如Tree、ItemList、TextEditor或GraphEdit。可"
 "以使用构建标志禁用它们："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:44
+#: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
 msgstr "禁用不需要的模块"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:46
+#: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr "许多Godot的功能都作为模块提供。您可以使用以下命令查看模块列表："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:53
+#: ../../docs/development/compiling/optimizing_for_size.rst:60
 msgid ""
 "The list of modules that can be disabled will appear, together with all "
 "build options. If you are working on a simple 2D game, you could disable a "
@@ -96,7 +105,7 @@ msgstr ""
 "将显示可以禁用的模块列表以及所有构建选项。如果您正在开发简单的2D游戏，则可以"
 "禁用其中的许多功能："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:61
+#: ../../docs/development/compiling/optimizing_for_size.rst:68
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
@@ -104,23 +113,23 @@ msgid ""
 "to play videos)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:66
+#: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid ""
 "Alternatively, you can supply a list of disabled modules by creating "
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#: ../../docs/development/compiling/optimizing_for_size.rst:117
 #, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_gui_containers`"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:113
+#: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
 msgstr "针对大小而不是速度优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:115
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 #, fuzzy
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
@@ -129,15 +138,15 @@ msgstr ""
 "Godot 3.1以后允许使用尺寸优化选项进行编译。要启用它，只需将 ``optimize`` 标志"
 "设置为 ``size``："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:129
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr "某些平台如WebAssembly默认情况下已使用此模式。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:125
+#: ../../docs/development/compiling/optimizing_for_size.rst:132
 msgid "Compiling with link-time optimization"
 msgstr "编译时使用连接时间优化"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:127
+#: ../../docs/development/compiling/optimizing_for_size.rst:134
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -147,26 +156,26 @@ msgstr ""
 "启用链接时优化可以在性能和文件大小方面生成更高效的二进制文件。它通过消除重复"
 "的模板功能和未使用的代码来工作。目前，它可以与GCC和MSVC编译器一起使用："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:136
+#: ../../docs/development/compiling/optimizing_for_size.rst:143
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr "使用此选项，链接变得慢得多，因此它应该仅用于发布版本。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:140
+#: ../../docs/development/compiling/optimizing_for_size.rst:147
 msgid "Stripping binaries"
 msgstr "剥离二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:142
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr "如果从源代码构建，请记住从二进制文件中剥离调试符号："
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:156
 msgid "Using UPX to compress binaries"
 msgstr "使用UPX压缩二进制文件"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:151
+#: ../../docs/development/compiling/optimizing_for_size.rst:158
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
@@ -174,7 +183,7 @@ msgstr ""
 "如果您的目标是桌面平台，可以使用 `UPX <https://upx.github.io/>`_ 压缩器。这可"
 "以大大减少二进制大小。"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:155
+#: ../../docs/development/compiling/optimizing_for_size.rst:162
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
+msgid "Xcode"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
+msgid ""
+"`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
+"can download it from the Mac App Store."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
+msgid "Importing the project"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:12
+msgid ""
+"From Xcode's main screen create a new project using the **Other > External "
+"Build System** template."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
+msgid ""
+"Open your build targets from the **Targets** section and select the **Info** "
+"tab."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
+msgid "Fill out the form with the following settings:"
+msgstr "Vyplňte formulář s následujícím nastavením:"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "Build Tool"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
+msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
+msgid "Arguments"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+msgid "Directory"
+msgstr "Adresář"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
+msgid "A full path to the Godot root folder"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:33
+msgid ""
+"Add a Command Line Tool target which will be used for indexing the project "
+"by choosing **File > New > Target...**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
+msgid "Select **OS X > Application > Command Line Tool**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
+msgid ""
+"Name it something so you know not to compile with this target (e.g. "
+"``GodotXcodeIndex``)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
+msgid ""
+"For this target open the **Build Settings** tab and look for **Header Search "
+"Paths**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
+msgid ""
+"Set **Header Search Paths** to the absolute path to the Godot root folder. "
+"You need to include subdirectories as well. To achieve that, add two two "
+"asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
+"source/**``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
+msgid ""
+"Add the Godot source to the project by dragging and dropping it into the "
+"project file browser."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
+msgid "Uncheck **Create external build system project**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
+msgid ""
+"Next select **Create groups** for the **Added folders** option and check "
+"*only* your command line indexing target in the **Add to targets** section."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
+msgid "Xcode will now index the files. This may take a few minutes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
+msgid ""
+"Once Xcode is done indexing, you should have jump-to-definition, "
+"autocompletion, and full syntax highlighting."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
+msgid "Debugging the project"
+msgstr "Ladění projektu"
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
+msgid ""
+"To enable debugging support you need to edit the external build target's "
+"build and run schemes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
+msgid "Open the scheme editor of the external build target."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
+msgid "Locate the **Build > Post Actions** section."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
+msgid "Add a new script run action"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
+msgid ""
+"Under **Provide build settings from** select your project. This allows to "
+"reference the project directory within the script."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
+msgid ""
+"Create a script that will give the binary a name that Xcode can recognize, e."
+"g.:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
+msgid "Build the external build target."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
+msgid "Open the scheme editor again and select **Run**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
+msgid ""
+"Set the **Executable** to the file you linked in your post-build action "
+"script."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
+msgid "Check **Debug executable**."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
+msgid ""
+"You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
+"the editor instead of the project manager, and the ``--path`` argument tells "
+"the executable to open the specified project (must be provided as an "
+"*absolute* path to the project root, not the ``project.godot`` file)."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
+msgid ""
+"To check that everything is working, put a breakpoint in ``platform/osx/"
+"godot_main_osx.mm`` and run the project."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""

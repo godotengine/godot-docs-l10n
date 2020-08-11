@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU Optimizations"
-msgstr "Optimisation"
+msgstr "Optimisations CPU"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:7
-#, fuzzy
 msgid "Measuring performance"
-msgstr "Performance de la lumière"
+msgstr "Mesure des performances"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:9
 msgid ""
@@ -36,22 +34,33 @@ msgid ""
 "instead of spending a lot of time optimizing functions that will lead to "
 "small performance improvements."
 msgstr ""
+"Pour savoir comment accélérer notre programme, nous devons savoir où se "
+"trouvent les \"goulets d'étranglement\". Les goulets d'étranglement sont les "
+"parties les plus lentes du programme qui limitent la vitesse à laquelle tout "
+"peut progresser. Cela nous permet de concentrer nos efforts sur "
+"l'optimisation des domaines qui nous donneront la plus grande amélioration "
+"de la vitesse, au lieu de passer beaucoup de temps à optimiser des fonctions "
+"qui conduiront à de petites améliorations des performances."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:16
 msgid ""
 "For the CPU, the easiest way to identify bottlenecks is to use a profiler."
 msgstr ""
+"Pour le CPU, le moyen le plus simple d'identifier les goulets d'étranglement "
+"est d'utiliser un profileur."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:19
-#, fuzzy
 msgid "CPU profilers"
-msgstr "Profileur"
+msgstr "CPU profileurs"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:21
 msgid ""
 "Profilers run alongside your program and take timing measurements to work "
 "out what proportion of time is spent in each function."
 msgstr ""
+"Les profileurs fonctionnent en parallèle de votre programme et prennent des "
+"mesures de temps pour déterminer la proportion de temps passé dans chaque "
+"fonction."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:24
 msgid ""
@@ -60,20 +69,28 @@ msgid ""
 "is because, in common with most profilers, recording these timing "
 "measurements can slow down your project significantly."
 msgstr ""
+"L'IDE Godot dispose d'un profileur intégré. Il ne fonctionne pas à chaque "
+"fois que vous démarrez votre projet, et doit être démarré et arrêté "
+"manuellement. En effet, comme pour la plupart des profileurs, "
+"l'enregistrement de ces mesures de temps peut ralentir considérablement "
+"votre projet."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:29
 msgid "After profiling, you can look back at the results for a frame."
 msgstr ""
+"Après le profilage, vous pouvez consulter les résultats pour une image."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:33
 msgid "`These are the results of a profile of one of the demo projects.`"
-msgstr ""
+msgstr "`Voici les résultats d'un profil d'un des projets de démonstration.`"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:35
 msgid ""
 "We can see the cost of built-in processes such as physics and audio, as well "
 "as seeing the cost of our own scripting functions at the bottom."
 msgstr ""
+"Nous pouvons voir le coût des processus intégrés tels que la physique et "
+"l'audio, ainsi que le coût de nos propres fonctions de script en bas."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:39
 msgid ""
@@ -81,20 +98,22 @@ msgid ""
 "process taking a lot more time than others. This is your primary bottleneck, "
 "and you can usually increase speed by optimizing this area."
 msgstr ""
+"Lorsqu'un projet se déroule lentement, vous verrez souvent une fonction ou "
+"un processus évident prendre beaucoup plus de temps que d'autres. C'est "
+"votre principal goulot d'étranglement, et vous pouvez généralement augmenter "
+"la vitesse en optimisant cette partie."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:43
-#, fuzzy
 msgid ""
 "For more info about using the profiler within Godot see :ref:"
 "`doc_debugger_panel`."
 msgstr ""
-"Pour plus d'informations sur la pause dans Godot, voir :ref:"
-"`doc_pausing_games`"
+"Pour plus d'informations sur l'utilisation du profileur dans Godot, voir :"
+"ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:47
-#, fuzzy
 msgid "External profilers"
-msgstr "Fichiers externes"
+msgstr "Profileurs externes"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:49
 msgid ""
@@ -102,12 +121,17 @@ msgid ""
 "need more power, and the ability to profile the Godot engine source code "
 "itself."
 msgstr ""
+"Bien que le profileur de l'IDE Godot soit très pratique et utile, il faut "
+"parfois plus de puissance et la capacité de profiler le code source du "
+"moteur Godot lui-même."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:52
 msgid ""
 "You can use a number of third party profilers to do this including Valgrind, "
 "VerySleepy, Visual Studio and Intel VTune."
 msgstr ""
+"Pour ce faire, vous pouvez utiliser un certain nombre de profileurs tiers, "
+"notamment Valgrind, VerySleepy, Visual Studio et Intel VTune."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:55
 msgid ""
@@ -118,10 +142,21 @@ msgid ""
 "optimized. Bottlenecks are often in a different place in debug builds, so "
 "you should profile release builds wherever possible."
 msgstr ""
+"Vous devrez peut-être compiler Godot à partir des sources pour utiliser un "
+"profileur tiers afin de disposer des informations de la base de données du "
+"programme. Vous pouvez également utiliser une compilation de débogage, "
+"cependant, notez que les résultats du profilage d'une compilation de "
+"débogage seront différents de ceux d'une compilation de version, car les "
+"compilations de débogage sont moins optimisées. Les goulots d'étranglement "
+"se trouvent souvent à un endroit différent dans les versions de débogage, "
+"c'est pourquoi vous devez profiler les versions de publication chaque fois "
+"que cela est possible."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:65
 msgid "`These are example results from Callgrind, part of Valgrind, on Linux.`"
 msgstr ""
+"`Voici des exemples de résultats de Callgrind, qui fait partie de Valgrind, "
+"sur Linux.`"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:67
 msgid ""
@@ -130,6 +165,11 @@ msgid ""
 "function itself, excluding child functions (Self), the number of times the "
 "function is called, the function name, and the file or module."
 msgstr ""
+"De gauche à droite, Callgrind indique le pourcentage de temps passé dans une "
+"fonction et ses enfants (Inclusive), le pourcentage de temps passé dans la "
+"fonction elle-même, à l'exclusion des fonctions enfants (Self), le nombre de "
+"fois que la fonction est appelée, le nom de la fonction et le fichier ou "
+"module."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:72
 msgid ""
@@ -143,6 +183,15 @@ msgid ""
 "driver). This tells us the a large proportion of CPU time is being spent in "
 "the graphics driver."
 msgstr ""
+"Dans cet exemple, nous pouvons voir que presque tout le temps est passé sous "
+"la fonction `Main::iteration()`, c'est la fonction maître du code source "
+"Godot qui est appelée de façon répétée, et qui provoque le dessin de trames, "
+"la simulation des tics physiques, et la mise à jour de nœuds et de scripts. "
+"Une grande partie du temps est consacrée aux fonctions de rendu d'un canevas "
+"(66%), car cet exemple utilise un benchmark 2d. En dessous, nous voyons que "
+"presque 50% du temps est passé en dehors du code Godot dans `libglapi`, et "
+"`i965_dri` (le pilote graphique). Cela nous indique qu'une grande partie du "
+"temps CPU est passé dans le pilote graphique."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:82
 msgid ""
@@ -152,11 +201,16 @@ msgid ""
 "being done in the graphics API. This profiling lead to the development of 2d "
 "batching, which greatly speeds up 2d by reducing bottlenecks in this area."
 msgstr ""
+"C'est en fait un excellent exemple car dans un monde idéal, seule une très "
+"petite partie du temps serait consacrée au pilote graphique, et cela indique "
+"qu'il y a un problème trop de communication et de trop travail fait dans "
+"l'API graphique. Ce profilage a conduit au développement du traitement par "
+"lot 2d, qui accélère considérablement la 2d en réduisant les goulots "
+"d'étranglement dans ce domaine."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:89
-#, fuzzy
 msgid "Manually timing functions"
-msgstr "Fonctions intégrées"
+msgstr "Chronométrer manuellement des fonctions"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:91
 msgid ""
@@ -165,6 +219,10 @@ msgid ""
 "specifics vary according to language, but in GDScript, you would do the "
 "following:"
 msgstr ""
+"Une autre technique pratique, surtout lorsque vous avez identifié le goulot "
+"d'étranglement à l'aide d'un profileur, consiste à chronométrer manuellement "
+"la fonction ou la zone testée. Les spécificités varient selon le langage, "
+"mais en GDScript, vous feriez ce qui suit :"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:107
 msgid ""
@@ -173,6 +231,10 @@ msgid ""
 "<class_OS_method_get_system_time_secs>` if the function will take many "
 "seconds."
 msgstr ""
+"Vous pouvez envisager d'utiliser d'autres fonctions pour le temps si une "
+"autre unité de temps est plus appropriée, par exemple :ref:`OS."
+"get_system_time_secs <class_OS_method_get_system_time_secs>` si la fonction "
+"prendra plusieurs secondes."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:111
 msgid ""
@@ -183,6 +245,13 @@ msgid ""
 "a haphazard manner, so an average over a series of runs is more accurate "
 "than a single measurement."
 msgstr ""
+"Lorsque vous chronométrez manuellement des fonctions, il est généralement "
+"judicieux d'exécuter la fonction plusieurs fois (disons ``1000`` ou plus), "
+"au lieu d'une seule fois (à moins qu'il ne s'agisse d'une fonction très "
+"lente). Cela s'explique en grande partie par le fait que les chronomètres "
+"ont souvent une précision limitée, et que les CPU organisent les processus "
+"de manière aléatoire, de sorte qu'une moyenne sur une série d'exécutions est "
+"plus précise qu'une mesure unique."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:117
 msgid ""
@@ -190,11 +259,13 @@ msgid ""
 "or time them as you go. This will give you crucial feedback as to whether "
 "the optimization is working (or not)."
 msgstr ""
+"Lorsque vous essayez d'optimiser les fonctions, veillez à les profiler ou à "
+"les chronométrer au fur et à mesure. Cela vous permettra d'obtenir un retour "
+"d'information crucial pour savoir si l'optimisation fonctionne (ou non)."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:122
-#, fuzzy
 msgid "Caches"
-msgstr "Cache"
+msgstr "Caches"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:124
 msgid ""
@@ -209,6 +280,20 @@ msgid ""
 "in some data. This delay can result in the CPU sitting around idle for a "
 "long time, and is referred to as a \"cache miss\"."
 msgstr ""
+"Il faut également être particulièrement attentif, notamment lorsque l'on "
+"compare les résultats de chronométrage de deux versions différentes d'une "
+"fonction, au fait que les résultats peuvent être très dépendants du fait que "
+"les données se trouvent ou non dans le cache de l'unité centrale. Les CPU ne "
+"chargent pas les données directement à partir de la mémoire principale, car "
+"bien que la mémoire principale puisse être énorme (plusieurs Go), elle est "
+"très lente à accéder. Les CPU chargent plutôt des données à partir d'une "
+"banque de mémoire plus petite et plus rapide, appelée cache. Le chargement "
+"de données à partir de la mémoire cache est super rapide, mais chaque fois "
+"que vous essayez de charger une adresse mémoire qui n'est pas stockée dans "
+"la mémoire cache, la mémoire cache doit faire un voyage vers la mémoire "
+"principale et charger lentement certaines données. Ce retard peut faire que "
+"l'unité centrale reste inactive pendant un long moment, ce que l'on appelle "
+"un \"cache miss\"."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:135
 msgid ""
@@ -217,6 +302,11 @@ msgid ""
 "much faster because the data is in cache. So always use averages when "
 "timing, and be aware of the effects of cache."
 msgstr ""
+"Cela signifie que la première fois que vous exécutez une fonction, elle peut "
+"être lente, car les données ne sont pas en mémoire cache. La deuxième fois "
+"et les suivantes, elle peut s'exécuter beaucoup plus rapidement parce que "
+"les données sont en mémoire cache. Il faut donc toujours utiliser des "
+"moyennes lors du chronométrage, et être conscient des effets de cache."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:140
 msgid ""
@@ -228,6 +318,16 @@ msgid ""
 "access memory in a linear fashion (like a continuous list), then the cache "
 "will work optimally and the CPU will be able to work as fast as possible."
 msgstr ""
+"La compréhension de la mise en cache est également cruciale pour "
+"l'optimisation CPU. Si vous disposez d'un algorithme (routine) qui charge de "
+"petits morceaux de données à partir de zones de la mémoire principale "
+"réparties de manière aléatoire, cela peut entraîner de nombreux cache "
+"misses, la plupart du temps, le CPU attendra des données au lieu d'effectuer "
+"un travail quelconque. Au lieu de cela, si vous pouvez faire en sorte que "
+"vos accès aux données soient localisés, ou mieux encore, si vous accédez à "
+"la mémoire de manière linéaire (comme une liste continue), alors le cache "
+"fonctionnera de manière optimale et le CPU pourra travailler aussi vite que "
+"possible."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:148
 msgid ""
@@ -236,11 +336,15 @@ msgid ""
 "rendering and physics. But you should be especially aware of caching when "
 "using GDNative."
 msgstr ""
+"Godot s'occupe généralement de ces détails de bas niveau pour vous. Par "
+"exemple, les API du serveur s'assurent que les données sont déjà optimisées "
+"pour la mise en cache pour des choses comme le rendu et la physique. Mais "
+"vous devez être particulièrement attentif à la mise en cache lorsque vous "
+"utilisez GDNative."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:154
-#, fuzzy
 msgid "Languages"
-msgstr "Langage"
+msgstr "Langages"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:156
 msgid ""
@@ -249,6 +353,10 @@ msgid ""
 "ease of use, at the cost of speed, and others are faster but more difficult "
 "to work with."
 msgstr ""
+"Godot prend en charge un certain nombre de langues différentes, et il "
+"convient de garder à l'esprit qu'il y a des compromis à faire : certains "
+"langages sont conçues pour être faciles à utiliser, au prix de la rapidité, "
+"et d'autres sont plus rapides mais plus difficiles à utiliser."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:161
 msgid ""
@@ -256,6 +364,10 @@ msgid ""
 "language you choose. If your project is making a lot of calculations in its "
 "own code, consider moving those calculations to a faster language."
 msgstr ""
+"Les fonctions intégrées du moteur fonctionnent à la même vitesse, quel que "
+"soit le langage de script que vous choisissez. Si votre projet effectue "
+"beaucoup de calculs dans son propre code, envisagez de déplacer ces calculs "
+"vers un langage plus rapide."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:166
 msgid "GDScript"
@@ -268,6 +380,11 @@ msgid ""
 "performance, so if you need to make heavy calculations, consider moving some "
 "of your project to one of the other languages."
 msgstr ""
+"Le GDScript est conçu pour être facile à utiliser et à itérer, et est idéal "
+"pour réaliser de nombreux types de jeux. Toutefois, la facilité "
+"d'utilisation est considérée comme plus importante que la performance, donc "
+"si vous devez faire des calculs lourds, pensez à déplacer une partie de "
+"votre projet vers l'un des autres langages."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:174
 msgid "C#"
@@ -278,11 +395,12 @@ msgid ""
 "C# is popular and has first class support in Godot. It offers a good "
 "compromise between speed and ease of use."
 msgstr ""
+"Le C# est populaire et bénéficie d'un soutien de premier ordre dans Godot. "
+"Il offre un bon compromis entre vitesse et facilité d'utilisation."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:180
-#, fuzzy
 msgid "Other languages"
-msgstr "Langage de conception"
+msgstr "Autres langages"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:182
 msgid ""
@@ -290,11 +408,13 @@ msgid ""
 "<https://github.com/godot-rust/godot-rust>`_ and `Javascript <https://github."
 "com/GodotExplorer/ECMAScript>`_."
 msgstr ""
+"Des tiers fournissent un support pour plusieurs autres langages, notamment "
+"`Rust <https://github.com/godot-rust/godot-rust>`_ et `Javascript <https://"
+"github.com/GodotExplorer/ECMAScript>`_."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:187
-#, fuzzy
 msgid "C++"
-msgstr "C++ :"
+msgstr "C++"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:189
 msgid ""
@@ -303,6 +423,11 @@ msgid ""
 "users' machines on different platforms. Options for using C++ include "
 "GDNative, and custom modules."
 msgstr ""
+"Godot est écrit en C++. L'utilisation du C++ permet généralement d'obtenir "
+"le code le plus rapide, mais d'un point de vue pratique, il est le plus "
+"difficile à déployer sur les machines des utilisateurs finaux sur "
+"différentes plateformes. Les options d'utilisation du C++ comprennent "
+"GDNative et les modules personnalisés."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:195
 msgid "Threads"
@@ -315,6 +440,11 @@ msgid ""
 "of doing a limited amount of work. By spreading work over multiple threads "
 "you can move further towards peak CPU efficiency."
 msgstr ""
+"Pensez à utiliser des threads lorsque vous effectuez de nombreux calculs qui "
+"peuvent être parallèles les uns aux autres. Les CPU modernes ont plusieurs "
+"cœurs, chacun capable d'effectuer une quantité de travail limitée. En "
+"répartissant le travail sur plusieurs threads, vous pouvez aller plus loin "
+"vers une efficacité maximale du CPU."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:202
 msgid ""
@@ -324,13 +454,18 @@ msgid ""
 "another is writing. Before you use threads make sure you understand the "
 "dangers and how to try and prevent these race conditions."
 msgstr ""
+"L'inconvénient des threads est qu'il faut être incroyablement prudent. Comme "
+"chaque cœur de CPU fonctionne indépendamment, ils peuvent finir par essayer "
+"d'accéder à la même mémoire en même temps. Un thread peut lire une variable "
+"alors qu'un autre est en train d'écrire. Avant d'utiliser les threads, "
+"assurez-vous de bien comprendre les dangers et comment essayer de prévenir "
+"ces conditions de concurrence."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:208
-#, fuzzy
 msgid "For more information on threads see :ref:`doc_using_multiple_threads`."
 msgstr ""
-"Pour plus d'informations sur la pause dans Godot, voir :ref:"
-"`doc_pausing_games`"
+"Pour plus d'informations sur les threads, voir :ref:"
+"`doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:211
 msgid "SceneTree"
@@ -343,12 +478,20 @@ msgid ""
 "`_physics_process()` propagate through the tree. This housekeeping can "
 "reduce performance when you have very large numbers of nodes."
 msgstr ""
+"Bien que les nœuds soient un concept incroyablement puissant et polyvalent, "
+"sachez que chaque nœud a un coût. Des fonctions intégrées telles que "
+"`_processus()` et `_processus_physique()` se propagent dans l'arbre. Cette "
+"gestion interne peut réduire les performances lorsque vous avez un très "
+"grand nombre de nœuds."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:218
 msgid ""
 "Each node is handled individually in the Godot renderer so sometimes a "
 "smaller number of nodes with more in each can lead to better performance."
 msgstr ""
+"Chaque nœud est traité individuellement dans le moteur de rendu Godot, de "
+"sorte que parfois un nombre plus petit de nœuds avec plus dans chacun peut "
+"conduire à une meilleure performance."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:221
 msgid ""
@@ -359,12 +502,21 @@ msgid ""
 "scene tree, then reattach it later. This can be very useful for adding and "
 "removing areas from a game for example."
 msgstr ""
+"L'une des bizarreries de :ref:`SceneTree <class_SceneTree>` est que vous "
+"pouvez parfois obtenir de bien meilleures performances en enlevant des nœuds "
+"de l'arbre de scène, plutôt qu'en les mettant en pause ou en les cachant. "
+"Vous n'avez pas besoin de supprimer un noeud détaché. Vous pouvez par "
+"exemple conserver une référence à un nœud, le détacher de l'arbre des "
+"scènes, puis le rattacher plus tard. Cela peut être très utile pour ajouter "
+"et supprimer des zones d'un jeu par exemple."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:228
 msgid ""
 "You can avoid the SceneTree altogether by using Server APIs. For more "
 "information, see :ref:`doc_using_servers`."
 msgstr ""
+"Vous pouvez éviter complètement SceneTree en utilisant les API serveur. Pour "
+"plus d'informations, voir :ref:`doc_using_servers`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:232
 msgid "Physics"
@@ -375,16 +527,22 @@ msgid ""
 "In some situations physics can end up becoming a bottleneck, particularly "
 "with complex worlds, and large numbers of physics objects."
 msgstr ""
+"Dans certaines situations, la physique peut finir par devenir un goulot "
+"d'étranglement, en particulier avec des mondes complexes et un grand nombre "
+"d'objets physiques."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:237
 msgid "Some techniques to speed up physics:"
-msgstr ""
+msgstr "Quelques techniques pour accélérer la physique :"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:239
 msgid ""
 "Try using simplified versions of your rendered geometry for physics. Often "
 "this won't be noticeable for end users, but can greatly increase performance."
 msgstr ""
+"Essayez d'utiliser des versions simplifiées de votre géométrie rendue pour "
+"la physique. Souvent, les utilisateurs finaux ne s'en apercevront pas, mais "
+"cela peut améliorer considérablement les performances."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:241
 msgid ""
@@ -392,6 +550,10 @@ msgid ""
 "current area, or reusing physics objects (maybe you allow 8 monsters per "
 "area, for example, and reuse these)."
 msgstr ""
+"Essayez de retirer des objets de la physique lorsqu'ils sont hors de vue / "
+"en dehors de la zone actuelle, ou de réutiliser des objets de la physique "
+"(peut-être que vous autorisez 8 monstres par zone, par exemple, et que vous "
+"les réutilisez)."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:245
 msgid ""
@@ -400,12 +562,22 @@ msgid ""
 "physics 60 times per second, you may update it at 20, or even 10 ticks per "
 "second. This can greatly reduce the CPU load."
 msgstr ""
+"Un autre aspect crucial de la physique est le taux de taux de "
+"rafraîchissement de la physique. Dans certains jeux, vous pouvez réduire "
+"considérablement le taux de taux de rafraîchissement, et au lieu, par "
+"exemple, de mettre à jour la physique 60 fois par seconde, vous pouvez la "
+"mettre à jour à 20, voire 10 fois par seconde. Cela peut réduire "
+"considérablement la charge du CPU."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:250
 msgid ""
 "The downside of changing physics tick rate is you can get jerky movement or "
 "jitter when the physics update rate does not match the frames rendered."
 msgstr ""
+"L'inconvénient de la modification du taux de rafraîchissement de la physique "
+"est que vous pouvez obtenir un mouvement saccadé ou du jitter lorsque le "
+"taux de rafraîchissement de la physique ne correspond pas à celui du rendu "
+"des images."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
 msgid ""
@@ -416,3 +588,10 @@ msgid ""
 "compared to running a physics tick, orders of magnitude faster, so this can "
 "be a significant win, as well as reducing jitter."
 msgstr ""
+"La solution à ce problème est la 'fixed timestep interpolation', qui "
+"consiste à lisser les positions et les rotations rendues sur plusieurs "
+"trames pour qu'elles correspondent à la physique. Vous pouvez soit "
+"l'implémenter vous-même, soit utiliser un addon tiers. L'interpolation est "
+"une opération très peu coûteuse, en termes de performances, par rapport au "
+"rafraîchissement de la physique, des ordres de grandeur plus rapides, donc "
+"cela peut être un gain important, ainsi que la réduction du jitter."
