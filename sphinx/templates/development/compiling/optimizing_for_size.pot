@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,91 +32,95 @@ msgstr ""
 msgid "This tutorial aims to give an overview on different methods to create a smaller binary. Before continuing, it is recommended to read the previous tutorials on compiling Godot for each platform."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:21
+#: ../../docs/development/compiling/optimizing_for_size.rst:22
+msgid "You can use the online `Godot build options generator <https://godot-build-options-generator.github.io/>`__ to generate a ``custom.py`` file containing SCons options. You can then save this file and place it at the root of your Godot source directory."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:23
+#: ../../docs/development/compiling/optimizing_for_size.rst:30
 msgid "For 2D games, having the whole 3D engine available usually makes no sense. Because of this, there is a build flag to disable it:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:29
+#: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid "Tools must be disabled in order to use this flag, as the editor is not designed to operate without 3D support. Without it, the binary size can be reduced by about 15%."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:34
+#: ../../docs/development/compiling/optimizing_for_size.rst:41
 msgid "Disabling advanced GUI nodes"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:36
-msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEditor or GraphEdit. They can be disabled using a build flag:"
+#: ../../docs/development/compiling/optimizing_for_size.rst:43
+msgid "Most small games don't require complex GUI controls such as Tree, ItemList, TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:44
+#: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:46
+#: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid "A lot of Godot's functions are offered as modules. You can see a list of modules with the following command:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:53
+#: ../../docs/development/compiling/optimizing_for_size.rst:60
 msgid "The list of modules that can be disabled will appear, together with all build options. If you are working on a simple 2D game, you could disable a lot of them:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:61
+#: ../../docs/development/compiling/optimizing_for_size.rst:68
 msgid "If this proves not to work for your use case, you should review the list of modules and see which ones you actually still need for your game (e.g. you might want to keep networking-related modules, regex support, or theora/webm to play videos)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:66
+#: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid "Alternatively, you can supply a list of disabled modules by creating ``custom.py`` at the root of the source, with the contents similar to the following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#: ../../docs/development/compiling/optimizing_for_size.rst:117
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:113
+#: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:115
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid "Godot 3.1 onwards allows compiling using size optimizations (instead of speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:129
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:125
+#: ../../docs/development/compiling/optimizing_for_size.rst:132
 msgid "Compiling with link-time optimization"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:127
+#: ../../docs/development/compiling/optimizing_for_size.rst:134
 msgid "Enabling link-time optimization produces more efficient binaries, both in terms of performance and file size. It works by eliminating duplicate template functions and unused code. It can currently be used with the GCC and MSVC compilers:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:136
+#: ../../docs/development/compiling/optimizing_for_size.rst:143
 msgid "Linking becomes much slower with this option, so it should be used only for release builds."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:140
+#: ../../docs/development/compiling/optimizing_for_size.rst:147
 msgid "Stripping binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:142
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:156
 msgid "Using UPX to compress binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:151
+#: ../../docs/development/compiling/optimizing_for_size.rst:158
 msgid "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ compressor can be used. This can reduce binary size considerably."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:155
+#: ../../docs/development/compiling/optimizing_for_size.rst:162
 msgid "However, keep in mind that some antivirus programs may detect UPX-packed binaries as a virus. Therefore, if you are releasing a commercial game, make sure to sign your binaries or use a platform that will distribute them."
 msgstr ""
 
