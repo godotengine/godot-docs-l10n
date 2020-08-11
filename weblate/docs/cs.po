@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Daniel Kříž <Daniel.kriz@protonmail.com>, 2020.
 # David Husička <davidek251@seznam.cz>, 2020.
 # David Kubeš <kubesdavid@email.cz>, 2019.
 # Jakub Smetana <kubiceks76@gmail.com>, 2018.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-30 19:14+0200\n"
-"PO-Revision-Date: 2020-07-30 12:27+0000\n"
-"Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
+"PO-Revision-Date: 2020-08-11 11:34+0000\n"
+"Last-Translator: Daniel Kříž <Daniel.kriz@protonmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -1472,13 +1473,14 @@ msgstr ""
 "contact> `_."
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "C# vlastnosti"
+msgstr "Seznam vlastností"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Tato stránka si klade za cíl vypsat všechny funkce, které Godot v současné "
+"době podporuje."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1487,69 +1489,74 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Na této stránce jsou uvedeny funkce podporované aktuální stabilní verzí "
+"Godota (3.2). `Další funkce <https://docs.godotengine.org/en/latest/about/"
+"list_of_features.html>` __ jsou k dispozici v nejnovější vývojové verzi "
+"(4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "C# vlastnosti"
+msgstr "Vlastnosti"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Podpora platformy"
+msgstr "Platformy"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "** Může spouštět jak editor, tak exportované projekty: **"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 a novější (64bitový a 32bitový)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 a novější (64-bit, x86 a ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64bitový a 32bitový, x86 a ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Binární soubory jsou staticky propojeny a mohou být spuštěny na jakékoli "
+"distribuci, pokud jsou kompilovány na dostatečně staré základní distribuci."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Oficiální binární soubory jsou kompilovány na Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "** Spustí exportované projekty: **"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 a novější."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 a novější."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 přes WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ": ref: `doc_csg_tools`"
+msgstr ": ref: `Konzole <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot si klade za cíl být co nejvíce nezávislý na platformě a může být "
+"relativně snadno portován na nové platformy."
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1562,626 +1569,667 @@ msgstr "Editor"
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
 msgid "**Features:**"
-msgstr ""
+msgstr "**Vlastnosti:**"
 
 #: ../../docs/about/list_of_features.rst:44
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Editor stromů scény."
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "Editor skriptů"
+msgstr "Editor skriptů."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Podpora pro :ref:'externí editory skriptů <doc_external_editor>', jako je "
+"Visual Studio Code nebo Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript: ref: `debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Zatím neexistuje podpora pro ladění ve vláknech."
 
 #: ../../docs/about/list_of_features.rst:50
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "Nástroje pro sledování výkonu."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "Live script reloading."
-msgstr ""
+msgstr "Načtení skiptu za chodu."
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Live scene editing."
-msgstr ""
+msgstr "Živé úpravy scény."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Změny se projeví v editoru a budou zachovány i po ukončení běžícího projektu."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
-msgstr ""
+msgstr "Vzdálený inspektor."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Změny se neprojeví v editoru a po ukončení běžícího projektu nebudou "
+"zachovány."
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "animace kamery"
+msgstr "Animace kamery."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Přesuňte kameru v editoru a podívejte se na výsledek probíhajícího projektu."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Použijte editor v desítkách jazyků připravených komunitou."
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Pluginy"
+msgstr "** Pluginy: **"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Pluginy pro rozšíření funkcí editoru lze stáhnout z: ref: `library library "
+"<doc_what_is_assetlib>`."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Vytvořte si vlastní pluginy pomocí GDScript a přidejte nové funkce nebo "
+"urychlete pracovní postup."
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Stáhněte si projekty z knihovny zdroju ve Správci projektů a obratem je "
+"importujte."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "2D grafika"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "** K dispozici dva vykreslovače: **"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "Renderer OpenGL ES 3.0 (používá OpenGL 3.3 na stolních platformách)."
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Špičkové vizuální prvky. Doporučeno pro stolní platformy."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "Renderer OpenGL ES 2.0 (používá OpenGL 2.1 na stolních platformách)."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Doporučeno pro mobilní a webové platformy."
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Vykreslování spritů, polygonů a čar."
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Nástroje na vysoké úrovni pro kreslení čar a mnohoúhelníků, jako je "
+"Polygon2D a Line2D."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite jako pomocník při vytváření animovaných spritů."
 
 #: ../../docs/about/list_of_features.rst:82
 msgid "Parallax layers."
-msgstr ""
+msgstr "Paralaxní vrstvy."
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "Podpora Pseudo-3D automatickým několikanásobným duplikováním vrstvy."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "2D osvětlení s normálními mapami."
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Tvrdé nebo měkké stíny."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Vykreslování písem pomocí bitmapy (BitmapFont) nebo rasterizace pomocí "
+"FreeType (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "Bitmapová písma lze exportovat pomocí nástrojů, jako je BMFont."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont podporuje monochromatická i barevná písma. Podporované formáty "
+"jsou TTF a OTF."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont podporuje volitelné obrysy písma s nastavitelnou šířkou a barvou."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Podpora nadměrného vzorkování fontů (oversampling), aby byla písma ve "
+"vyšších rozlišeních ostrá."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "Částice generované GPU s podporou pro vlastní částicové shadery."
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Částice"
+msgstr "Částice generované CPU."
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "Nástroje"
+msgstr "2D nástroje"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2D kamera s vestavěným vyhlazováním a okraji tažení."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Uzel Path2D reprezentující cestu ve 2D prostoru."
 
 #: ../../docs/about/list_of_features.rst:100
 #: ../../docs/about/list_of_features.rst:233
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Lze nakreslit v editoru nebo generovat procedurálně."
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "PathFollow2D node to make nodes follow a Path2D."
 msgstr ""
+"Uzel PathFollow2D, pro přidání vlastnosti následovat Path2D do nadřazeného "
+"uzlu."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "Pomocná třída 2D geometrie."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Uzel Line2D pro nakreslení texturovaných 2D čar."
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "Fyzika"
+msgstr "2D fyzika"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
 msgid "**Physics bodies:**"
-msgstr ""
+msgstr "** Fyzikální tělesa: **"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
 msgid "Static bodies."
-msgstr ""
+msgstr "Statická tělesa."
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Tuhá tělesa."
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Kinematická tělesa."
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
 msgid "Joints."
-msgstr ""
+msgstr "Spojení."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:249
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Oblasti pro detekci těles, která do něj vstupují nebo opouštějí."
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Kolizní objekty"
+msgstr "**Detekce kolize:**"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Vestavěné tvary: linie, box, kruh, kapsle."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Kolizní polygony (lze je kreslit ručně nebo generovat ze sprite v editoru)."
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "3D graphics"
-msgstr ""
+msgstr "3D grafika"
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "HDR vykreslování s sRGB."
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "LDR vykreslování pro větší kompatibilitu."
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Ne všechny funkce jsou k dispozici. Funkce dostupné pouze při použití "
+"vykreslovacího modulu OpenGL ES 3.0 jsou níže označeny * GLES3 *."
 
 #: ../../docs/about/list_of_features.rst:135
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Kamera:**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Perspektivní, ortografické a komutované kamery."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "** Vykreslování založené na fyzice **"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Následuje model Disney PBR."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "Používá roughness-metallic postup s podporou ORM textury."
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Formátování řetězce"
+msgstr "Normální mapování."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"* GLES3: * Parallax / reliéfní mapování s automatickou úrovní detailů na "
+"základě vzdálenosti."
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "* GLES3: * Podpovrchový rozptyl a propustnost."
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "* GLES3: * Blízké vyblednutí (měkké částice)."
 
 #: ../../docs/about/list_of_features.rst:147
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Ztráta vzdálenosti, která může používat alfa míchání nebo rozklad barev, aby "
+"se zabránilo průchodu přez pipeline průhlednosti."
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr ""
+"Dithering lze určit na základě počtu pixelů nebo na základě jednotlivých "
+"objektů."
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "** Osvětlení v reálném čase: **"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Směrová světla (slunce / měsíc). Až 4 na scénu."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Všesměrová světla."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Bodová světla s nastavitelným úhlem kužele a útlumem."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "** Mapování stínů: **"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"* DirectionalLight: * Orthogonal (nejrychlejší), PSSM 2-split and 4-split. "
+"Podporuje prolnutí mezer."
 
 #: ../../docs/about/list_of_features.rst:161
 msgid ""
 "*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"* OmniLight: * Duální parabolid (rychlý) nebo cubemap (pomalejší, ale "
+"přesnější). Podporuje barevné textury projektorů ve formě panoramat."
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "* SpotLight: * Jedna textura."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "** Globální iluminace s nepřímým osvětlením: **"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "Baked lightmapy (rychlé, ale nelze je aktualizovat za běhu)."
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Světelné mapy se připravované na CPU."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr ""
+msgstr "* GLES3: * GI sondy (pomalejší, v reálném čase). Podporuje odrazy."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "**Reflections:**"
-msgstr ""
+msgstr "**Odrazy:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "* GLES3: * Odrazy založené na Voxelu (při použití sond GI)."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"Rychle vytvořené odrazy nebo pomalé odrazy v reálném čase pomocí "
+"ReflectionProbe. Korekci paralaxe lze volitelně povolit."
 
 #: ../../docs/about/list_of_features.rst:176
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* Odrazy místa na obrazovce."
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Reflection techniques can be mixed together for greater accuracy."
-msgstr ""
+msgstr "Odrazové techniky lze pro větší přesnost kombinovat."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Obloha:**"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Panoramatická obloha (pomocí HDRI)."
 
 #: ../../docs/about/list_of_features.rst:182
-#, fuzzy
 msgid "Procedural sky."
-msgstr "Procedurální geometrie"
+msgstr "Procedurální obloha."
 
 #: ../../docs/about/list_of_features.rst:184
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Mlha:**"
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Hloubková mlha s nastavitelnou křivkou útlumu."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "Výšková mlha (podlaha nebo strop) s nastavitelným útlumem."
 
 #: ../../docs/about/list_of_features.rst:188
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Podpora automatické hloubkové barvy mlhy v závislosti na směru kamery (podle "
+"barvy slunce)."
 
 #: ../../docs/about/list_of_features.rst:190
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "Volitelná propustnost pro zviditelnění světel v mlze."
 
 #: ../../docs/about/list_of_features.rst:192
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Částice"
+msgstr "** Částice: **"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "Částice generované GPU s podporou pro vlastní částicové shadery."
 
 #: ../../docs/about/list_of_features.rst:197
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "Zpracování procesů"
+msgstr "**Následné zpracování:**"
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Tonemapování (lineární, Reinhard, filmový, ACES)."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
+msgstr "* GLES3: * Automatické úpravy expozice na základě jasu výřezu."
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "* GLES3: * Blízká a velká hloubka ostrosti."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "* GLES3: * Okolní okluze obrazovky."
 
 #: ../../docs/about/list_of_features.rst:203
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"GLow/bloom s volitelným bikubickým upscalingem a několika dostupnými režimy "
+"prolnutí: Obrazovka, Měkké světlo, Přidat, Nahradit."
 
 #: ../../docs/about/list_of_features.rst:205
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Korekce barev pomocí jednorozměrné rampy."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Nastavení jasu, kontrastu a sytosti."
 
 #: ../../docs/about/list_of_features.rst:208
 msgid "**Texture filtering:**"
-msgstr ""
+msgstr "**Filtrování textur:**"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Nejbližší, bilineární, trilineární nebo anizotropní filtrování."
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "TextureProgress"
+msgstr "** Komprese textur: **"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
+"* GLES3: * BPTC pro vysoce kvalitní kompresi (není podporováno v systému "
+"MacOS)."
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "* GLES3: * ETC2 (není podporováno v systému MacOS)."
 
 #: ../../docs/about/list_of_features.rst:216
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (doporučeno při použití vykreslovacího modulu GLES2)."
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "* GLES3: * S3TC (není podporován na mobilních / webových platformách)."
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Anti aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr ""
+msgstr "Vícenásobné vyhlazování (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:223
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"Většina z těchto efektů může být upravena pro lepší výkon nebo pro další "
+"zlepšení kvality. To může být užitečné při použití Godota pro offline "
+"vykreslování."
 
 #: ../../docs/about/list_of_features.rst:227
-#, fuzzy
 msgid "3D tools"
-msgstr "Nástroje"
+msgstr "3D nástroje"
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
+"Vestavěná oka: kostka, válec / kužel, (hemi) koule, hranol, rovina, "
+"čtyřúhelník."
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ":ref:`Proceduralní geometrie <toc-procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+": ref: `Konstrukční pevná geometrie <doc_csg_tools>` (určená pro "
+"prototypování)."
 
 #: ../../docs/about/list_of_features.rst:233
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Uzel Path3D reprezentující cestu ve 3D prostoru."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "Uzel PathFollow3D, aby uzly sledovaly Path3D."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Pomocná třída 3D geometrie."
 
 #: ../../docs/about/list_of_features.rst:238
-#, fuzzy
 msgid "3D physics"
-msgstr "Fyzika"
+msgstr "3D fyzika"
 
 #: ../../docs/about/list_of_features.rst:245
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Karoserie vozidel (určené pro arkádovou fyziku, nikoli pro simulaci)."
 
 #: ../../docs/about/list_of_features.rst:247
 msgid "Soft bodies."
-msgstr ""
+msgstr "Měkká tělesa."
 
 #: ../../docs/about/list_of_features.rst:248
 msgid "Ragdolls."
-msgstr ""
+msgstr "Ragdoll."
 
 #: ../../docs/about/list_of_features.rst:253
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
-msgstr ""
+msgstr "Vestavěné tvary: kvádr, koule, kapsle, válec (pouze s fyzikou Bullet)."
 
 #: ../../docs/about/list_of_features.rst:254
 msgid "Generate triangle collision shapes for any mesh from the editor."
 msgstr ""
+"Generujte trojúhelníkové kolizní tvary pro libovolnou síť vyrvořenou "
+"editorem."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
+"Vygenerujte jeden nebo několik konvexních kolizních tvarů pro libovolnou síť "
+"z editoru."
 
 #: ../../docs/about/list_of_features.rst:258
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shadery"
 
 #: ../../docs/about/list_of_features.rst:260
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "*2D:* Vlastní vertex, fragmentové a světelné shadery."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
 msgstr ""
+"* 3D: * Vlastní vertex , fragmentové, světelné shadery a shadery oblohy."
 
 #: ../../docs/about/list_of_features.rst:262
 msgid ""
 "Text-based shaders using a `shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"Textové shadery používající `shader jazyk inspirovaný GLSL "
+"<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Vizuální Shader uzly"
+msgstr "Vizuální editor shaderů."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Doplňky pro Visual Shadery"
+msgstr "Podpora doplňků vizuálních shaderu."
 
 #: ../../docs/about/list_of_features.rst:267
 #: ../../docs/about/docs_changelog.rst:113
@@ -2192,123 +2240,136 @@ msgid "Scripting"
 msgstr "Skriptování"
 
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "**General:**"
-msgstr "Všeobecné"
+msgstr "**Všeobecné:**"
 
 #: ../../docs/about/list_of_features.rst:271
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "Objektově orientovaný návrh a kompozice"
+msgstr "Objektově orientovaný návrhový vzor se skripty rozšiřujícími uzly."
 
 #: ../../docs/about/list_of_features.rst:272
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "Signály a skupiny pro komunikaci mezi skripty."
 
 #: ../../docs/about/list_of_features.rst:273
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
+"Podpora pro: ref: `cross-language scripting <doc_cross_language_scripting>`."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
 msgstr ""
+"Mnoho typů pro 2D a 3D lineární algebru, jako jsou vektory a transformace."
 
 #: ../../docs/about/list_of_features.rst:276
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ": ref: `GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:278
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
+": ref: `Interpretovaný high-level jazyk i <doc_gdscript>` s: ref: `volitelné "
+"statické typy<doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Syntaxe inspirovaná Pythonem."
 
 #: ../../docs/about/list_of_features.rst:281
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "Zvýraznění syntaxe je k dispozici na GitHubu."
 
 #: ../../docs/about/list_of_features.rst:282
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+": ref: `Použít vlákna <doc_using_multiple_threads>` k provádění "
+"asynchronních akcí nebo k využití více jader procesorů."
 
 #: ../../docs/about/list_of_features.rst:285
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ": ref: `C #: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:287
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
+"Baleno v samostatném binárním formátu, aby se snížila velikost souborů a "
+"počet závislostí."
 
 #: ../../docs/about/list_of_features.rst:288
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Používá Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:289
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Plná podpora syntaxe a funkcí C # 7.0."
 
 #: ../../docs/about/list_of_features.rst:290
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Podporované formáty obrázků"
+msgstr "Podporuje všechny platformy."
 
 #: ../../docs/about/list_of_features.rst:291
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
 msgstr ""
+"Doporučujeme používat externí editor, abyste mohli využívat funkce IDE."
 
 #: ../../docs/about/list_of_features.rst:293
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ": ref: `VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
+": ref: `Grafický vizuální skriptovací jazyk <doc_what_is_visual_script>`."
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"Funguje nejlépe, když je použit pro specifické účely (jako je logika "
+"specifická pro levely), spíše než jako jazyk pro vytváření celých projektů."
 
 #: ../../docs/about/list_of_features.rst:299
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "** GDNative (C, C ++, Rust, D, ...): **"
 
 #: ../../docs/about/list_of_features.rst:302
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"Pokud to potřebujete pro vyšší výkon integrujte nativní knihovny a hotová "
+"řešení třetích stran."
 
 #: ../../docs/about/list_of_features.rst:302
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"Pro skriptování herní logiky se doporučuje GDScript nebo C #, pokud na to "
+"jejich výkon stačí."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "Oficiální binding pro C a C ++."
 
 #: ../../docs/about/list_of_features.rst:305
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "Použijte systém sestavení a jazyk , který vám bude vyhovovat."
 
 #: ../../docs/about/list_of_features.rst:306
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
-msgstr ""
+msgstr "Komunita poskytuje integraci pro D, Kotlin, Python, Nim a Rust."
 
 #: ../../docs/about/list_of_features.rst:309
 #: ../../docs/about/docs_changelog.rst:28
@@ -2318,117 +2379,113 @@ msgstr "Zvuk"
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "Mono, stereo, 5.1 a 7.1 výstup."
 
 #: ../../docs/about/list_of_features.rst:314
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "Nepoziční a poziční přehrávání ve 2D a 3D."
 
 #: ../../docs/about/list_of_features.rst:315
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "Volitelný Dopplerův efekt ve 2D a 3D."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects."
-msgstr ""
+msgstr "Podpora re-routable: ref: `audio bus <doc_audio_buses>` a efekty."
 
 #: ../../docs/about/list_of_features.rst:317
 msgid "Dozens of effects included."
-msgstr ""
+msgstr "Včetně desítek efektů."
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
-msgstr ""
+msgstr "Uzel Listener3D k poslechu z jiné polohy než kamera ve 3D."
 
 #: ../../docs/about/list_of_features.rst:319
 msgid "Audio input to record microphones."
-msgstr ""
+msgstr "Zvukový vstup pro záznam mikrofonů."
 
 #: ../../docs/about/list_of_features.rst:321
-#, fuzzy
 msgid "MIDI input."
-msgstr "Vstup"
+msgstr "Vstup MIDI."
 
 #: ../../docs/about/list_of_features.rst:321
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "Zatím žádná podpora pro výstup MIDI."
 
 #: ../../docs/about/list_of_features.rst:323
 msgid "**APIs used:**"
-msgstr ""
+msgstr "** použité API: **"
 
 #: ../../docs/about/list_of_features.rst:325
 msgid "*Windows:* WASAPI."
-msgstr ""
+msgstr "* Windows: * WASAPI."
 
 #: ../../docs/about/list_of_features.rst:326
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "* macOS: * CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:327
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "* Linux: * PulseAudio nebo ALSA."
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Import"
-msgstr "Exportovat"
+msgstr "Importovat"
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ""
+msgstr "Podpora pro: ref: `custom import plugins <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:334
-#, fuzzy
 msgid "**Formats:**"
-msgstr "Formát"
+msgstr "** Formáty: **"
 
 #: ../../docs/about/list_of_features.rst:336
 msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
-msgstr ""
+msgstr "* Obrázky: * Viz: odkaz: `doc_importing_images_supported_formats`."
 
 #: ../../docs/about/list_of_features.rst:338
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Zvuk"
+msgstr "*Zvuk:*"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "WAV s volitelnou kompresí IMA-ADPCM."
 
 #: ../../docs/about/list_of_features.rst:339
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:346
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "scény"
+msgstr "* 3D scény: *"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2,0 * (doporučeno) *."
 
 #: ../../docs/about/list_of_features.rst:342
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>` __ (přímý "
+"export z Blenderu)."
 
 #: ../../docs/about/list_of_features.rst:344
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (experimentální)."
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (dae)."
 
 #: ../../docs/about/list_of_features.rst:346
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
-msgstr ""
+msgstr "Wavefront OBJ (pouze statické scény, lze načíst přímo jako síť)."
 
 #: ../../docs/about/list_of_features.rst:349
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
@@ -2441,68 +2498,71 @@ msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
 msgstr ""
+"Systém mapování vstupů využívající pevně zakódované vstupní události nebo "
+"namapované vstupní akce."
 
 #: ../../docs/about/list_of_features.rst:352
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"Hodnoty os lze mapovat na dvě různé akce pomocí konfigurovatelného mrtvého "
+"pásma."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "Použijte stejný kód pro podporu klávesnice i gamepadů."
 
 #: ../../docs/about/list_of_features.rst:354
-#, fuzzy
 msgid "Keyboard input."
-msgstr "Klávesová zkratka"
+msgstr "Vstup z klávesnice."
 
 #: ../../docs/about/list_of_features.rst:357
-#, fuzzy
 msgid "Mouse input."
-msgstr "Pohyb myši"
+msgstr "Vstup myši."
 
 #: ../../docs/about/list_of_features.rst:356
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"Kurzor myši může být viditelný, skrytý, zachycený nebo uzavřený v okně."
 
 #: ../../docs/about/list_of_features.rst:357
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"Při zachycení bude nezpracovaný vstup použit v systémech Windows a Linux, "
+"aby se vyhnul nastavení akcelerace myši operačního systému."
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "Gamepad input (up to 8 simulatenous controllers)."
-msgstr ""
+msgstr "Vstup pro gamepad (až 8 současně připojených ovladačů)."
 
 #: ../../docs/about/list_of_features.rst:360
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "Vstup pera / tabletu s tlakovou podporou."
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "Navigační režim"
+msgstr "Navigace"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "A* algoritmus ve 2D a 3D."
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Navigační režim"
+msgstr "Navigační sítě."
 
 #: ../../docs/about/list_of_features.rst:367
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr ""
+msgstr "V Godot 4.0 je plánována podpora dynamického vyhýbání se překážkám."
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "Generování navigačních sítí z editoru."
 
 #: ../../docs/about/list_of_features.rst:371
 #: ../../docs/about/docs_changelog.rst:60
@@ -2512,49 +2572,51 @@ msgstr "Sítě"
 
 #: ../../docs/about/list_of_features.rst:373
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "Nízkoúrovňové sítě TCP pomocí StreamPeer a TCP_Server."
 
 #: ../../docs/about/list_of_features.rst:374
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "Nízkoúrovňové sítě UDP pomocí PacketPeer a UDPServer."
 
 #: ../../docs/about/list_of_features.rst:375
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "Požadavky HTTP nízké úrovně pomocí HTTPClient."
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "Požadavky HTTP vysoké úrovně pomocí HTTPRequest."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "Podporuje HTTPS nativně pomocí přiložených certifikátů."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr ""
+msgstr "High-level multiplayer API pomocí UDP a ENet."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "Automatická replikace pomocí vzdáleného volání procedur (RPC)."
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "Podporuje nespolehlivé, spolehlivé a objednané přenosy."
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "Klient a server WebSocket, k dispozici na všech platformách."
 
 #: ../../docs/about/list_of_features.rst:382
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "WebRTC klient a server, k dispozici na všech platformách."
 
 #: ../../docs/about/list_of_features.rst:383
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
 msgstr ""
+"Podpora UPnP pro obcházení požadavku předávání portů při hostování serveru "
+"za NAT."
 
 #: ../../docs/about/list_of_features.rst:387
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
@@ -2563,245 +2625,273 @@ msgstr "Internacionalizace"
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "Plná podpora unicode včetně emoji."
 
 #: ../../docs/about/list_of_features.rst:390
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
+"Uložte lokalizační řetězce pomocí: ref: `CSV <doc_internationalizing_games>` "
+"nebo: ref: `gettext <doc_localization_using_gettext>`."
 
 #: ../../docs/about/list_of_features.rst:392
 msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
 msgstr ""
+"Použijte lokalizované řetězce v projektu automaticky v prvcích GUI nebo "
+"pomocí funkce `` tr () ``."
 
 #: ../../docs/about/list_of_features.rst:394
 msgid ""
 "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
 msgstr ""
+"Podpora pro sazbu zprava doleva a tvarování textu plánovaná v Godot 4.0."
 
 #: ../../docs/about/list_of_features.rst:397
 msgid "Windowing and OS integration"
-msgstr ""
+msgstr "Integrace oken a operačního systému"
 
 #: ../../docs/about/list_of_features.rst:399
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr ""
+"Přesuňte, změňte velikost, minimalizujte a maximalizujte okno vytvořené "
+"projektem."
 
 #: ../../docs/about/list_of_features.rst:400
 msgid "Change the window title and icon."
-msgstr ""
+msgstr "Změňte název a ikonu okna."
 
 #: ../../docs/about/list_of_features.rst:401
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
+"Vyžádejte si pozornost (způsobí, že na většině platforem bliká záhlaví)."
 
 #: ../../docs/about/list_of_features.rst:403
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Přepnout celou obrazovku"
+msgstr "Režim celé obrazovky."
 
 #: ../../docs/about/list_of_features.rst:403
 msgid ""
 "Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
 "this way. Use a Viewport with a different resolution instead."
 msgstr ""
+"Nepoužívá exkluzivně celou obrazovku, takže rozlišení obrazovky nelze tímto "
+"způsobem změnit. Místo toho použijte výřez s jiným rozlišením."
 
 #: ../../docs/about/list_of_features.rst:405
 msgid "Borderless window (fullscreen or non-fullscreen)."
-msgstr ""
+msgstr "Okno bez okrajů (na celou obrazovku nebo ne)."
 
 #: ../../docs/about/list_of_features.rst:406
 msgid "Ability to keep the window always on top."
-msgstr ""
+msgstr "Schopnost udržet okno vždy nahoře."
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "Transparent window with per-pixel transparency."
-msgstr ""
+msgstr "Průhledné okno s průhledností na pixel."
 
 #: ../../docs/about/list_of_features.rst:408
 msgid "Global menu integration on macOS."
-msgstr ""
+msgstr "Globální integrace menu v systému MacOS."
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Execute commands in a blocking or non-blocking manner."
-msgstr ""
+msgstr "Provádět příkazy blokujícím nebo neblokujícím způsobem."
 
 #: ../../docs/about/list_of_features.rst:410
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
 "registered on the system)."
 msgstr ""
+"Otevřete cesty k souborům a adresy URL pomocí výchozích nebo vlastních "
+"obslužných rutin protokolu (pokud jsou registrovány v systému)."
 
 #: ../../docs/about/list_of_features.rst:411
-#, fuzzy
 msgid "Parse custom command line arguments."
-msgstr "Argument příkazové řádky."
+msgstr "Analyzujte vlastní argumenty příkazového řádku."
 
 #: ../../docs/about/list_of_features.rst:414
 msgid "Mobile"
-msgstr ""
+msgstr "Mobilní systémy"
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "Nákupy v aplikacích pro Android a iOS."
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Support for advertisements using third-party modules."
-msgstr ""
+msgstr "Podpora reklam pomocí modulů třetích stran."
 
 #: ../../docs/about/list_of_features.rst:420
 msgid "XR support (AR and VR)"
-msgstr ""
+msgstr "Podpora XR (AR a VR)"
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "Support for ARKit on iOS out of the box."
-msgstr ""
+msgstr "Podpora pro ARKit v systému iOS ihned po instalaci Godota."
 
 #: ../../docs/about/list_of_features.rst:423
 msgid "Support for the OpenXR and OpenVR APIs."
-msgstr ""
+msgstr "Podpora rozhraní OpenXR a OpenVR API."
 
 #: ../../docs/about/list_of_features.rst:424
 msgid ""
 "Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
 "to plugins."
 msgstr ""
+"Populární náhlavní soupravy VR jako Oculus Quest a HTC Vive jsou podporovány "
+"díky zásuvným modulům."
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "GUI system"
-msgstr ""
+msgstr "GUI systém"
 
 #: ../../docs/about/list_of_features.rst:429
 msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
+"Grafické uživatelské rozhraní Godota je vytvořeno pomocí stejných řídicích "
+"uzlů, které jsou použivány při vytváření her v Godotu. Uživatelské rozhraní "
+"editoru lze snadno rozšířit mnoha způsoby pomocí doplňků."
 
 #: ../../docs/about/list_of_features.rst:432
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "Uzly"
+msgstr "** Uzly: **"
 
 #: ../../docs/about/list_of_features.rst:434
-#, fuzzy
 msgid "Buttons."
-msgstr "Button"
+msgstr "Buttons (Tlačítka)."
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Checkboxes, check buttons, radio buttons."
 msgstr ""
+"Checkboxes (zaškrtávací políčka), check buttons (zaškrtávací tlačítka), "
+"radio buttons (přepínací tlačítka)."
 
 #: ../../docs/about/list_of_features.rst:436
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
-msgstr ""
+msgstr "Zadávání textu pomocí LineEdit (jeden řádek) a TextEdit (více řádků)."
 
 #: ../../docs/about/list_of_features.rst:437
 msgid "Dropdown menus using PopupMenu and OptionButton."
-msgstr ""
+msgstr "Rozbalovací nabídky pomocí PopupMenu a OptionButton."
 
 #: ../../docs/about/list_of_features.rst:438
 msgid "Scrollbars."
-msgstr ""
+msgstr "Scrollbars (Skrolovací lišty)."
 
 #: ../../docs/about/list_of_features.rst:439
-#, fuzzy
 msgid "Labels."
-msgstr "Label"
+msgstr "Labels (Popisky)."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+"RichTextLabel pro: ref: `text formátovaný pomocí BBCode "
+"<doc_bbcode_in_richtextlabel>`."
 
 #: ../../docs/about/list_of_features.rst:441
 msgid "Trees (can also be used to represent tables)."
-msgstr ""
+msgstr "Trees (Stromy) (mohou být také použity k reprezentaci tabulky)."
 
 #: ../../docs/about/list_of_features.rst:442
 msgid ""
 "Containers (horizontal, vertical, grid, center, margin, draggable "
 "splitter, ...)."
 msgstr ""
+"Kontejnery (vodorovné, svislé, mřížkové, středové, okrajové, tahové "
+"rozdělovače, ...)."
 
 #: ../../docs/about/list_of_features.rst:443
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "Ovládací prvky lze otáčet a měnit jejich měřítko."
 
 #: ../../docs/about/list_of_features.rst:445
 msgid "**Sizing:**"
-msgstr ""
+msgstr "Změna velikosti (dimenzování)"
 
 #: ../../docs/about/list_of_features.rst:447
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
+"Kotvy (Anchors) pro udržení prvků GUI v určitém rohu, u konkrétní hrany nebo "
+"na středu."
 
 #: ../../docs/about/list_of_features.rst:452
 msgid "Containers to place GUI elements automatically following certain rules."
 msgstr ""
+"Kontejnery pro umístění prvků grafického uživatelského rozhraní podle "
+"určitých pravidel."
 
 #: ../../docs/about/list_of_features.rst:449
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ""
+msgstr ": ref: `Krabicové <class_BoxContainer>` rozložení."
 
 #: ../../docs/about/list_of_features.rst:450
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`int <class_int>`"
+msgstr ": ref: `Mřížkové <class_GridContainer>` rozložení."
 
 #: ../../docs/about/list_of_features.rst:451
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 msgstr ""
+":ref:`Rozložení podle okrajů<class_MarginContainer>` and :ref:`centrované "
+"<class_CenterContainer>` rozložení."
 
 #: ../../docs/about/list_of_features.rst:453
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
-msgstr ""
+msgstr ":ref:` Rozložení s tahovým rozdělovačem <class_SplitContainer>` ."
 
 #: ../../docs/about/list_of_features.rst:454
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
 msgstr ""
+"Pomocí roztahovacích režimů \"2d\" nebo \"výřez\" můžete škálovat do více "
+"rozlišení."
 
 #: ../../docs/about/list_of_features.rst:455
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
+"Podporujte jakýkoli poměr stran pomocí kotev a aspektu roztažení `` expand``."
 
 #: ../../docs/about/list_of_features.rst:457
 msgid "**Theming:**"
-msgstr ""
+msgstr "**Motivy vzhledu:**"
 
 #: ../../docs/about/list_of_features.rst:459
 msgid "Built-in theme editor."
-msgstr ""
+msgstr "Vestavěný editor motivů."
 
 #: ../../docs/about/list_of_features.rst:460
 msgid "Generate a theme based on the current editor theme settings."
-msgstr ""
+msgstr "Vygenerujte motiv na základě aktuálního nastavení motivu editoru."
 
 #: ../../docs/about/list_of_features.rst:461
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
-msgstr ""
+msgstr "Procedurální vektorové tematizace pomocí: ref: `class_StyleBoxFlat`."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
-msgstr ""
+msgstr "Podporuje zaoblené / zkosené rohy, vržené stíny a šířku okraje."
 
 #: ../../docs/about/list_of_features.rst:463
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr ""
+msgstr "Motivy vytvořené z textur pomocí: ref: `class_StyleBoxTexture`."
 
 #: ../../docs/about/list_of_features.rst:465
 msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
 msgstr ""
+"Godotova malá distribuční velikost z něj činí vhodnou alternativu k "
+"frameworkům jako Electron nebo Qt."
 
 #: ../../docs/about/list_of_features.rst:469
 #: ../../docs/about/docs_changelog.rst:153
@@ -2813,68 +2903,74 @@ msgstr "Animace"
 
 #: ../../docs/about/list_of_features.rst:471
 msgid "Direct kinematics and inverse kinematics."
-msgstr ""
+msgstr "Přímá kinematika a inverzní kinematika."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid "Support for animating any property with customizable interpolation."
-msgstr ""
+msgstr "Podpora animace libovolnévlastnosti s přizpůsobitelnou interpolací."
 
 #: ../../docs/about/list_of_features.rst:473
 msgid "Support for calling methods in animation tracks."
-msgstr ""
+msgstr "Podpora pro volání metod v animačních stopách."
 
 #: ../../docs/about/list_of_features.rst:474
 msgid "Support for playing sounds in animation tracks."
-msgstr ""
+msgstr "Podpora přehrávání zvuků v animačních stopách."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "Support for Bézier curves in animation."
-msgstr ""
+msgstr "Podpora Bézierových křivek v animaci."
 
 #: ../../docs/about/list_of_features.rst:478
-#, fuzzy
 msgid "Formats"
-msgstr "Formát"
+msgstr "Formáty"
 
 #: ../../docs/about/list_of_features.rst:481
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
 msgstr ""
+"Scény a herní zdroje lze uložit pomocí: ref: `textově založeného "
+"<doc_tscn_file_format>` nebo binárního formátu."
 
 #: ../../docs/about/list_of_features.rst:481
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
-msgstr ""
+msgstr "Textové formáty jsou čitelné pro člověka a přátelské k řízení verzí."
 
 #: ../../docs/about/list_of_features.rst:482
 msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""
+"Binární formáty se pro velké scény / zdroje rychleji ukládají / načítají."
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Read and write text or binary files using :ref:`class_File`."
 msgstr ""
+"Čtení a zápis textových nebo binárních souborů pomocí: ref: `class_File`."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Can optionally be compressed or encrypted."
-msgstr ""
+msgstr "Lze volitelně komprimovat nebo šifrovat."
 
 #: ../../docs/about/list_of_features.rst:485
 msgid "Read and write :ref:`class_JSON` files."
-msgstr ""
+msgstr "Čtení a zápis: ref: `class_JSON` souborů."
 
 #: ../../docs/about/list_of_features.rst:486
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
+"Čtení a zápis konfiguračních souborů ve stylu INI pomocí :"
+"ref:'class_ConfigFile'."
 
 #: ../../docs/about/list_of_features.rst:487
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
 msgstr ""
+"Může (de) serializovat jakýkoli datový typ Godota, včetně Vector, Color, ..."
 
 #: ../../docs/about/list_of_features.rst:488
 msgid "Read XML files using :ref:`class_XMLParser`."
-msgstr ""
+msgstr "Čtení souborů XML pomocí: ref: `class_XMLParser`."
 
 #: ../../docs/about/list_of_features.rst:489
 msgid ""
@@ -2882,12 +2978,17 @@ msgid ""
 "into a ZIP archive, or directly into the executable for single-file "
 "distribution."
 msgstr ""
+"Zabalte herní data do souboru PCK (vlastní formát optimalizovaný pro rychlé "
+"vyhledávání), do archivu ZIP nebo přímo do jednoho spustitelného souboru pro "
+"distribuci."
 
 #: ../../docs/about/list_of_features.rst:491
 msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
+": ref: `Exportovat další soubory PCK <doc_exporting_pcks>`, které lze číst "
+"enginempro podporu modů a DLC."
 
 #: ../../docs/about/list_of_features.rst:495
 #: ../../docs/about/docs_changelog.rst:206
@@ -2900,37 +3001,44 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
+": ref: `Nízkoúrovňový přístup k serverům <doc_using_servers>`, který "
+"umožňuje obejít režii stromu scény, když je to potřeba."
 
 #: ../../docs/about/list_of_features.rst:501
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "Argument příkazové řádky."
+msgstr "Rozhraní příkazového řádku pro automatizaci."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid "Export and deploy projects using continuous integration platforms."
-msgstr ""
+msgstr "Export a nasazení projekty pomocí platforem kontinuální integrace."
 
 #: ../../docs/about/list_of_features.rst:501
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
+"`Skripty pro dokončení <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>` __ jsou k dispozici pro Bash, zsh a fish."
 
 #: ../../docs/about/list_of_features.rst:503
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
+"Podpora pro: ref: `C ++ moduly <doc_custom_modules_in_c ++>` staticky "
+"linkovanédo binárního modulu enginu."
 
 #: ../../docs/about/list_of_features.rst:510
 msgid "Engine and editor written in C++03."
-msgstr ""
+msgstr "Engine a editor napsaný v C ++ 03."
 
 #: ../../docs/about/list_of_features.rst:506
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
+"Může být: ref: `zkompilován <doc_introduction_to_the_buildsystem>` pomocí "
+"GCC, Clang a MSVC. Podporováno je také MinGW."
 
 #: ../../docs/about/list_of_features.rst:508
 msgid ""
@@ -2938,20 +3046,24 @@ msgid ""
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
+"Přátelský k balíčkovačům: ve většině případů lze místo knihoven "
+"poskytovaných Godotem použít systémové knihovny. Systém pro sestavení nic "
+"nestáhuje. Sestavení mohou být plně reprodukovatelné."
 
 #: ../../docs/about/list_of_features.rst:511
 msgid "Godot 4.0 will be written in C++17."
-msgstr ""
+msgstr "Godot 4.0 bude napsán v C ++ 17."
 
 #: ../../docs/about/list_of_features.rst:513
 msgid "Licensed under the permissive MIT license."
-msgstr ""
+msgstr "Licencováno pod tolerantní licencí MIT."
 
 #: ../../docs/about/list_of_features.rst:513
 msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
 msgstr ""
+"Otevřený proces vývoje s :ref:'příspěvky vítány <doc_ways_to_contribute>'."
 
 #: ../../docs/about/list_of_features.rst:517
 #: ../../docs/about/release_policy.rst:82
@@ -5309,14 +5421,13 @@ msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "Nezapomeňte také, že na uzly se odkazuje jejich jménem, nikoli typem."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"Pravý panel dialogu Připojit je určen pro vložení specifických hodnot do "
-"parametrůpřipojené funkce. Můžete přidávat a odebírat hodnoty různých typů."
+"Panel „Advanced“ v dialogu Connect slouží k vazbě specifických hodnot na "
+"parametry připojené funkce. Můžete přidávat a odebírat hodnoty různých typů."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:338
 msgid ""
@@ -9267,21 +9378,23 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "Navrhněte titulní obrazovku"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"V dalších dvou kurzech vytvoříte krok za krokem dvě responzivní scény UI "
+"(uživatelského rozhraní) pomocí UI Godota:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu."
-msgstr ""
+msgstr "Hlavní menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
-msgstr ""
+msgstr "Herní UI s ukazatelem zdraví, energie a počítadly bomb a peněz."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -9289,10 +9402,14 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
+"Naučíte se, jak efektivně navrhovat uživatelské rozhraní hry a jak používat "
+"řídicí uzly Godota. Tato stránka se zaměřuje na vizuální část: vše vytváříte "
+"v editoru. Chcete-li se naučit, jak vytvořit ukazatel života scriptem, "
+"přečtěte si: doc: `ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create."
-msgstr ""
+msgstr "GUI, které vytvoříte."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -9302,16 +9419,23 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu`` "
 "folder."
 msgstr ""
+"Stáhněte si soubory projektu:: download: `ui_main_menu_design.zip <files / "
+"ui_main_menu_design.zip>` a rozbalte archiv. Importujte `` start / `` "
+"projekt v Godotu a postupujte podle tohoto tutoriálu. Složka `end /` "
+"`obsahuje konečný výsledek. Ve složce `` start / asset / main_menu`` najdete "
+"všechny sprite."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
+"Nejprve si přečtěte: doc: `ui_introduction_to_the_ui_system`, abyste "
+"zjistili, jak funguje systém UI Godota."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
-msgstr ""
+msgstr "Jak navrhnout uživatelské rozhraní hry"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:36
 msgid ""
@@ -9323,10 +9447,17 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Chcete-li navrhnout dobré uživatelské rozhraní, musíte nejprve vytvořit "
+"hrubou návrh: prostou verzi výkresu, která se zaměřuje na umístění komponent "
+"uživatelského rozhraní, jejich velikost a interakci s uživatelem. Tužka a "
+"papír je vše, co potřebujete. V této fázi byste neměli používat vymazlenouou "
+"či finální grafiku. Pak už potřebujete jen jednoduché schematické sprity a "
+"můžete na první dobrou skočit do Godota. Chcete se ujistit, že se hráči v "
+"tomto schematickém rozhraní neztratí."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Hrubý plán(model) uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:48
 msgid ""
@@ -9334,16 +9465,21 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
+"Schematický nemusí znamenat ošklivý, ale grafiku byste měli udržet "
+"jednoduchou a úplnou. Vyvarujte se speciálních efektů, animace a podrobných "
+"ilustrací, než hráči toto rozhraní vyzkouší. V opačném případě:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
+"Grafika by mohla skreslit vnímání hráčů a vy příjdete o cennou zpětnou vazbu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
 msgstr ""
+"Pokud uživatelská zkušenost nefunguje, budete muset některé sprity předělat."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:58
 msgid ""
@@ -20486,7 +20622,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Odsazení"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -57222,11 +57358,11 @@ msgstr "Typy kontejnerů"
 msgid ""
 "Godot provides several container types out of the box as they serve "
 "different purposes:"
-msgstr ""
+msgstr "Godot sám poskytuje několik typů kontejnerů pro různé účely:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:65
 msgid "Box Containers"
-msgstr ""
+msgstr "Krabicové kontejnery"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:67
 msgid ""
@@ -57235,16 +57371,22 @@ msgid ""
 "the opposite of the designated direction (as in, vertical for an horizontal "
 "container), it just expands the children."
 msgstr ""
+"Uspořádá podřízené ovládací prvky vodorovně nebo svisle (prostřednictvím: "
+"ref: `HBoxContainer <class_HBoxContainer>` a: ref: `VBoxContainer "
+"<class_VBoxContainer>`). Ve směru opačném k zarovnání (tzn. ve svislém směru "
+"pro vodorovný kontejner), podřízené uzly pouze rozšiřuje."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:73
 msgid ""
 "These containers make use of the *Ratio* property for children with the "
 "*Expand* flag set."
 msgstr ""
+"Tyto kontejnery využívají vlastnost *Ratio* pro podřízené uzly s nastaveným "
+"příznakem *Expand*."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:76
 msgid "Grid Container"
-msgstr ""
+msgstr "Mřížkový kontejner"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:78
 msgid ""
@@ -57252,10 +57394,13 @@ msgid ""
 "<class_GridContainer>`, amount of columns must be specified). Uses both the "
 "vertical and horizontal expand flags."
 msgstr ""
+"Uspořádá podřízené ovládací prvky v rozvržení mřížky (prostřednictvím: ref: "
+"`GridContainer <class_GridContainer>`, musí být zadáno množství sloupců). "
+"Používá příznaky vertikální i horizontální roztažení."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:84
 msgid "Margin Container"
-msgstr ""
+msgstr "Kontejner pro okraje"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:86
 msgid ""
@@ -57263,16 +57408,22 @@ msgid ""
 "`MarginContainer <class_MarginContainer>`). Padding will be added on the "
 "margins depending on the theme configuration."
 msgstr ""
+"Podřízené ovládací prvky jsou rozšířeny směrem k hranicím tohoto ovládacího "
+"prvku (prostřednictvím: ref: `MarginContainer <class_MarginContainer>`). "
+"Vnitřní okraje (padding) budou přidány v závislosti na konfiguraci motivu."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
 msgid ""
 "Again, keep in mind that the margins are a *Theme* value, so they need to be "
 "edited from the constants overrides section of each control:"
 msgstr ""
+"Opět mějte na paměti, že vnější okraje(margins) jsou hodnotou * Theme *, "
+"takže je třeba je upravovat v sekci potlačení konstant každého ovládacího "
+"prvku:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
 msgid "Tab Container"
-msgstr ""
+msgstr "Karta (Tab) Kontejner"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:100
 msgid ""
@@ -57280,28 +57431,37 @@ msgid ""
 "(via :ref:`TabContainer <class_TabContainer>`), with only the *current* one "
 "visible."
 msgstr ""
+"Umožňuje naskládat několik podřízených ovládacích prvků na sebe (pomocí: "
+"ref:'TabContainer <class_TabContainer>'), přičemž je zobrazen pouze ten "
+"*aktuální* ."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:105
 msgid ""
 "Changing the *current* one is done via tabs located at the top of the "
 "container, via clicking:"
 msgstr ""
+"Změna * aktuálního * se provádí pomocí karet umístěných v horní části "
+"kontejneru kliknutím na:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:109
 msgid ""
 "The titles are generated from the node names by default (although they can "
 "be overridden via *TabContainer* API)."
 msgstr ""
+"Názvy jsou ve výchozím nastavení generovány z názvů uzlů (i když je lze "
+"přepsat pomocí * TabContainer * API)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:111
 msgid ""
 "Settings such as tab placement and *StyleBox* can be modified in the "
 "*TabContainer* theme overrides."
 msgstr ""
+"Nastavení, jako je umístění karet a * StyleBox *, lze změnit ve vlastnotech "
+"motivů pro * TabContainer *."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:114
 msgid "Split Container"
-msgstr ""
+msgstr "Rozdělovací kontejner"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:116
 msgid ""
@@ -57310,16 +57470,22 @@ msgid ""
 "`VSplitContainer <class_VSplitContainer>`). Respects both horizontal and "
 "vertical flags, as well as *Ratio*."
 msgstr ""
+"Přijme pouze jeden nebo dva podřízené ovládací prvky a poté mezi ně umístí "
+"oddělovač (prostřednictvím:ref:'HSplitContainer <class_HSplitContainer>' "
+"nebo :ref:'VSplitContainer <class_VSplitContainer>'). Respektuje "
+"horizontální i vertikální příznaky, stejně jako *Ratio*."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:122
 msgid ""
 "The divisor can be dragged around to change the size relation between both "
 "children:"
 msgstr ""
+"Oddělovač lze přetáhnout a změnit poměr velikostí mezi oběma podřízenými "
+"uzly:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:128
 msgid "PanelContainer"
-msgstr ""
+msgstr "PanelContainer"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:130
 msgid ""
@@ -57327,16 +57493,22 @@ msgid ""
 "whole area (via :ref:`PanelContainer <class_PanelContainer>`, respecting the "
 "*StyleBox* margins). It respects both the horizontal and vertical size flags."
 msgstr ""
+"Jednoduchý kontejner, který nakreslí *StyleBox*, pak rozšíří podřízené "
+"položky tak, aby pokrývaly celou jeho oblast (pomocí:ref:'PanelContainer "
+"<class_PanelContainer>', s ohledem na okraje *StyleBox*). Respektuje "
+"horizontální i vertikální příznaky velikosti."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:136
 msgid ""
 "This container is useful as top-level, or just to add custom backgrounds to "
 "sections of a layout."
 msgstr ""
+"Tento kontejner je užitečný jako nejvyšší úroveň uživatelského rozhraní nebo "
+"pouze pro přidání vlastního pozadí pro určitou sekci."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:139
 msgid "ScrollContainer"
-msgstr ""
+msgstr "Kontejner pro scrolování"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:141
 msgid ""
@@ -57346,22 +57518,32 @@ msgid ""
 "size flags are respected, and the behavior can be turned on or off per axis "
 "in the properties."
 msgstr ""
+"Přijímá jeden podřízený uzel. Pokud je tento uzel větší než kontejner, budou "
+"přidány posuvníky, které umožňují posouvání viditelné části po uzlu (pomocí:"
+"ref:'ScrollContainer <class_ScrollContainer>'). Jsou respektovány příznaky "
+"pro svislou i vodorovnou velikost a chování lze zapnout nebo vypnout ve "
+"vlastnostech kontejneru i pro jednotlivé osy."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:148
 msgid ""
 "Mouse wheel and touch drag (when touch is available) are also valid ways to "
 "pan the child control around."
 msgstr ""
+"Kolečko myši a tažení dotykem (pokud je k dispozici dotyk) jsou také platné "
+"způsoby, jak posouvat podřízených prvkem."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:152
 msgid ""
 "As in the example above, one of the most common ways to use this container "
 "is together with a *VBoxContainer* as child."
 msgstr ""
+"Stejně jako ve výše uvedeném příkladě je jedním z nejčastějších způsobů "
+"použivání tohoto kontejneru společně podřízeným * VBoxContainer * "
+"kontejnerem."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:156
 msgid "ViewportContainer"
-msgstr ""
+msgstr "Kontejener pro výřez"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:158
 msgid ""
@@ -57369,6 +57551,9 @@ msgid ""
 "child, and it will display it as if it was an image (via :ref:"
 "`ViewportContainer <class_ViewportContainer>`)."
 msgstr ""
+"Toto je speciální ovládací prvek, který přijíma jako podřízeného pouze jeden "
+"uzel * Viewport * a zobrazí jej, jako by to byl obrázek (prostřednictvím: "
+"ref: `ViewportContainer <class_ViewportContainer>`)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
 msgid "Creating custom Containers"
@@ -57379,6 +57564,8 @@ msgid ""
 "It is possible to easily create a custom container using script. Here is an "
 "example of a simple container that fits children to its rect size:"
 msgstr ""
+"Je možné snadno vytvořit vlastní kontejner pomocí skriptu. Zde je příklad "
+"jednoduchého kontejneru, který zarovnává podřízené uzly v rámci svého tvaru:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:4
 msgid "BBCode in RichTextLabel"
@@ -58711,13 +58898,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Příklad projektu najdete v ukázce testování OS: https://github.com/"
-"godotengine/godot-demo-projects/tree/master/misc/os_test"
+"Podívejte se na __příklady zde `Ukázka úpravy měřítka 3D výřezu <https://"
+"github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_scaling> "
+"`."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
 msgid "Using a Viewport as a texture"
@@ -74108,7 +74295,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
-#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
@@ -76487,23 +76673,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "Komunita"
+msgstr "Společný"
 
 #: ../../docs/tutorials/optimization/index.rst:51
 msgid "CPU"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:60
-#, fuzzy
 msgid "GPU"
-msgstr "GUI"
+msgstr "GPU"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
-#, fuzzy
 msgid "General optimization tips"
-msgstr "Optimalizace"
+msgstr "Obecné tipy pro optimalizaci"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:9
 msgid ""
@@ -76531,9 +76714,8 @@ msgid "And preferably, we will use a blend of the two."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:25
-#, fuzzy
 msgid "Smoke and Mirrors"
-msgstr "Velikost a kotvy"
+msgstr "Kouř a zrcadla"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:27
 msgid ""
@@ -76649,9 +76831,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:92
-#, fuzzy
 msgid "Hypothesis testing"
-msgstr "Přetypování"
+msgstr "Testování hypotéz"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:94
 msgid ""
@@ -76694,7 +76875,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:117
-#, fuzzy
 msgid "Profilers"
 msgstr "Profiler"
 
@@ -76818,9 +76998,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:194
-#, fuzzy
 msgid "The optimization process"
-msgstr "Optimalizace"
+msgstr "Proces optimalizace"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:196
 msgid ""
@@ -76849,9 +77028,8 @@ msgid "Optimize bottleneck"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:208
-#, fuzzy
 msgid "Return to step 1"
-msgstr "Vrací"
+msgstr "Vraťte se ke kroku 1"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:211
 msgid "Optimizing bottlenecks"
@@ -77196,9 +77374,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU Optimizations"
-msgstr "Optimalizace"
+msgstr "Optimalizace CPU"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:9
 msgid ""
@@ -77216,9 +77393,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:19
-#, fuzzy
 msgid "CPU profilers"
-msgstr "Profiler"
+msgstr "Profilovací nástroje CPU"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:21
 msgid ""
@@ -77399,9 +77575,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:154
-#, fuzzy
 msgid "Languages"
-msgstr "Jazyk"
+msgstr "Jazyky"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:156
 msgid ""
@@ -77433,9 +77608,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:180
-#, fuzzy
 msgid "Other languages"
-msgstr "Jazyk pro návrh hry"
+msgstr "Jiné jazyky"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:182
 msgid ""
@@ -77474,9 +77648,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:208
-#, fuzzy
 msgid "For more information on threads see :ref:`doc_using_multiple_threads`."
-msgstr ":ref:`doc_using_multiple_threads`"
+msgstr "Další informace o vláknech viz: ref: `doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:213
 msgid ""
@@ -77556,9 +77729,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU Optimizations"
-msgstr "Optimalizace"
+msgstr "Optimalizace GPU"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:9
 msgid ""
@@ -77835,9 +78007,8 @@ msgid "Consider shipping simpler shaders for mobile."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:180
-#, fuzzy
 msgid "Reading textures"
-msgstr "Vytváření řadičů"
+msgstr "Čtení textur"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:182
 msgid ""
@@ -77978,9 +78149,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:4
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "Optimalizace"
+msgstr "Optimalizace pomocí dávkování"
 
 #: ../../docs/tutorials/optimization/batching.rst:9
 msgid ""
@@ -78360,9 +78530,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:286
-#, fuzzy
 msgid "Custom Shaders"
-msgstr "Vlastní sítě"
+msgstr "Vlastní shadery"
 
 #: ../../docs/tutorials/optimization/batching.rst:288
 msgid ""
@@ -78381,9 +78550,8 @@ msgid "Reading ``VERTEX`` - disables vertex position baking"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:296
-#, fuzzy
 msgid "Project Settings"
-msgstr "Nastavení projektu ladění"
+msgstr "Nastavení projektu"
 
 #: ../../docs/tutorials/optimization/batching.rst:298
 msgid ""
@@ -78396,9 +78564,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:305
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "Možnosti animace"
+msgstr "vykreslování/dávkování/možnosti"
 
 #: ../../docs/tutorials/optimization/batching.rst:307
 msgid ""
@@ -78718,9 +78885,8 @@ msgid "Optimizing 3D performance"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:10
-#, fuzzy
 msgid "Culling"
-msgstr "Kompilace"
+msgstr "Eliminace části scén"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:12
 msgid ""
@@ -78898,9 +79064,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
-#, fuzzy
 msgid "Animation / Skinning"
-msgstr "Možnosti animace"
+msgstr "Animace / Skinování"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:126
 msgid ""
@@ -79985,9 +80150,8 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:346
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
-#, fuzzy
 msgid "String length"
-msgstr "Délka vektoru"
+msgstr "Délka řetězce"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:434
@@ -80107,9 +80271,8 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
-#, fuzzy
 msgid "Array length"
-msgstr "Délka vektoru"
+msgstr "Délka pole"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "8..8+length\\*8"
@@ -88789,9 +88952,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:195
-#, fuzzy
 msgid "Contributing translations"
-msgstr "Ovládání animace"
+msgstr "Přispějte k překladu"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:197
 msgid ""
@@ -91376,9 +91538,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
-#, fuzzy
 msgid "Contributing to the class reference"
-msgstr "Dokumentace tříd"
+msgstr "Přispějte k dokumentaci tříd"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
 msgid ""
@@ -92070,9 +92231,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:64
-#, fuzzy
 msgid "Adding a new language"
-msgstr "Jazyk pro návrh hry"
+msgstr "Přidání nového jazyka"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:66
 msgid ""
@@ -92185,9 +92345,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:143
-#, fuzzy
 msgid "Locating original content"
-msgstr "Vytváření obsahu"
+msgstr "Vyhledání původního obsahu"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:145
 msgid ""
@@ -92275,9 +92434,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:213
-#, fuzzy
 msgid "Editor interface (C++)"
-msgstr "Úprava rozhraní"
+msgstr "Rozhraní editoru (C ++)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:215
 msgid "The editor translations originate from C++ strings, and may use:"
@@ -92306,9 +92464,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:247
-#, fuzzy
 msgid "Online documentation (RST)"
-msgstr "Organizace této dokumentace"
+msgstr "Online dokumentace (RST)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:249
 msgid ""
@@ -92327,9 +92484,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:297
-#, fuzzy
 msgid "Class reference (BBCode)"
-msgstr "Dokumentace tříd"
+msgstr "Dokumentace tříd (BBCode)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:299
 msgid ""
@@ -92371,9 +92527,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:331
-#, fuzzy
 msgid "Offline translation and testing"
-msgstr "Internacionalizace řetězce"
+msgstr "Offline překlad a testování"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:333
 msgid ""

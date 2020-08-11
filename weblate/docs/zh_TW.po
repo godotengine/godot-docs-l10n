@@ -8,7 +8,7 @@
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
 # cnieFIT <dtotncq@gmail.com>, 2019.
 # Daniel Liu <lbtdata314@gmail.com>, 2019.
-# Eric K <eric900601@gmail.com>, 2019.
+# Eric K <eric900601@gmail.com>, 2019-2020.
 # ken l <macauhome@gmail.com>, 2018.
 # Kenneth Lo <closer.tw@gmail.com>, 2019.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
@@ -24,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-30 19:14+0200\n"
-"PO-Revision-Date: 2020-07-29 18:02+0000\n"
-"Last-Translator: MintSoda <lionlxh@qq.com>\n"
+"PO-Revision-Date: 2020-08-07 18:01+0000\n"
+"Last-Translator: BinotaLIU <me@binota.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -1355,13 +1355,12 @@ msgstr ""
 "請參考 `Godot 網站 (英文) <https://godotengine.org/contact>`_ 上相應的頁面。"
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "自定功能"
+msgstr "功能清單"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
-msgstr ""
+msgstr "本頁列出了目前 Godot 所支援的所有功能。"
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1370,72 +1369,71 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"本頁列出了目前 Godot 穩定版 (3.2) 中所支援的功能。 最新的開發版 (4.0) 中還有 "
+"`更多功能 <https://docs.godotengine.org/zh_TW/latest/about/list_of_features."
+"html>`__ 。"
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "功能標籤"
+msgstr "功能"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
 msgstr "支援平台"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "** 在編輯器與匯出的專案中均可執行： **"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 及更新版本 (64 位元與 32 位元)。"
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 及更新版本 (64 位元、x86 與 ARM)。"
 
 #: ../../docs/about/list_of_features.rst:27
-#, fuzzy
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr "平台架構 (64 位元或 32 位元，x86 或 ARM)。"
+msgstr "Linux (64 位元或 32 位元，x86 或 ARM)"
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"二進位檔使用靜態連結，並且若在一定舊的基礎發行版上編譯，則可在任意發行版上執"
+"行。"
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "官方二進位執行檔使用 Ubuntu 14.04 編譯。"
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "**Runs exported projects:**"
-msgstr "匯出專案"
+msgstr "**匯出並執行專案：**"
 
 #: ../../docs/about/list_of_features.rst:31
-#, fuzzy
 msgid "Android 4.4 and later."
-msgstr "\\ Android SDK Platform"
+msgstr "Android 4.4 以上版本"
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 及更新版本。"
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "通過 WebAssembly 的 HTML5 (Firefox, Chrome, Edge, Opera)。"
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`bool <class_bool>`"
+msgstr ":ref:`主控台 <doc_consoles>` 。"
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
-msgstr ""
+msgstr "Godot 儘可能獨立於個別平台，並能相對輕鬆地移植至新平台。"
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1447,17 +1445,14 @@ msgstr "編輯器"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**功能標籤**"
+msgstr "**功能：**"
 
 #: ../../docs/about/list_of_features.rst:44
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "場景樹"
+msgstr "場景樹編輯器。"
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
 msgstr "腳本編輯器"
 
@@ -1466,159 +1461,161 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"支援如 Visual Studio Code 或 Vim 的 :ref:`外部腳本編輯器 "
+"<doc_external_editor>` 。"
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`除錯工具 <doc_debugger_panel>` 。"
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "尚未支援對執行緒進行除錯。"
 
 #: ../../docs/about/list_of_features.rst:50
-#, fuzzy
 msgid "Performance monitoring tools."
-msgstr "Godot 中的 C# 效能"
+msgstr "執行效能檢測"
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "Live script reloading."
-msgstr ""
+msgstr "即時腳本重載。"
 
 #: ../../docs/about/list_of_features.rst:52
-#, fuzzy
 msgid "Live scene editing."
-msgstr "使用場景的繼承功能"
+msgstr "即時場景編輯。"
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
-msgstr ""
+msgstr "更改將反應到編輯器上，並會在正在執行的專案關閉後保留。"
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
-msgstr ""
+msgstr "遠端屬性面板。"
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
-msgstr ""
+msgstr "更改將不會反應到編輯器上，且關閉正在執行的專案後將不會保留。"
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "攝影機動畫"
+msgstr "即時相機複製。"
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "在編輯器中使用數十種由社群支援的語言。"
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "外掛"
+msgstr "**外掛：**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"可以從 :ref:`素材庫 <doc_what_is_assetlib>` 中下載編輯器外掛來擴充編輯器的功"
+"能。"
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
-msgstr ""
+msgstr "使用 GDScript 來自行建立外掛，以增加新功能或加速你的工作流程。"
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
-msgstr ""
+msgstr "在專案管理員中從素材庫中下載專案，並直接匯入。"
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "2D 圖像"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**兩種可用的轉譯器：**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 3.0 轉譯器 (在桌面平台上使用 OpenGL 3.3)。"
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "高階視覺效果。建議用於桌面平台。"
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 2.0 轉譯器 (在桌面平台上使用 OpenGL 2.1)。"
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "建議用於行動裝置與網頁平台。"
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Sprite、多邊形與線條轉譯器。"
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
-msgstr ""
+msgstr "用於繪製如 Polygon2D 與 Line2D 的線條與多邊形之高階工具。"
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "使用 AnimatedSprite 協助建立動畫化的 Sprite。"
 
 #: ../../docs/about/list_of_features.rst:82
 msgid "Parallax layers."
-msgstr ""
+msgstr "視差圖層。"
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "通過自動複製多次圖層來產生假 3D 效果 (Psuedo-3D)。"
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "使用一般映射的 2D 光照。"
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "硬或軟陰影。"
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"使用點陣圖來進行字體算繪 (BitmapFont) 或使用 FreeType 來點陣化 "
+"(DynamicFont)。"
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "點陣圖字體可使用如 BMFont 等工具來匯出。"
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
-msgstr ""
+msgstr "DynamicFont 支援單色字體與彩色字體。支援的格式有 TTF 與 OTF。"
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
-msgstr ""
+msgstr "Dynamicfont 支援可選的字體描邊與可調整的寬度與色彩。"
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""

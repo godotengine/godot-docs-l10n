@@ -32,6 +32,7 @@
 # J. Lavoie <j.lavoie@net-c.ca>, 2020.
 # Katia Piazza <gydey@ridiculousglitch.com>, 2019.
 # Leonardo Calamita <linkindayd@gmail.com>, 2020.
+# Lorenzo Cerqua <lorenzocerqua@tutanota.com>, 2020.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
@@ -72,8 +73,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-07-30 19:14+0200\n"
-"PO-Revision-Date: 2020-07-26 22:51+0000\n"
-"Last-Translator: Leonardo Calamita <linkindayd@gmail.com>\n"
+"PO-Revision-Date: 2020-08-04 06:43+0000\n"
+"Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -1579,7 +1580,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
 msgstr "Funzionalità"
 
@@ -1660,9 +1660,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "Editor script"
+msgstr "Editor script."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
@@ -2379,7 +2378,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:299
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:302
 msgid ""
@@ -2487,9 +2486,8 @@ msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:338
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Audio"
+msgstr "*Audio:*"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2785,7 +2783,7 @@ msgstr "Nodi"
 #: ../../docs/about/list_of_features.rst:434
 #, fuzzy
 msgid "Buttons."
-msgstr "Pulsante"
+msgstr "Pulsanti."
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Checkboxes, check buttons, radio buttons."
@@ -9030,12 +9028,13 @@ msgstr ""
 "aggancia ai limiti del nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
+#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
 "Come per i nodi Sprite, è possibile modulare il colore di TextureRect. Fai "
-"clic sulla proprietà `` Modula '' e utilizza il selettore colore.\n"
+"clic sulla proprietà ``Modula`` e utilizza il selettore colore."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
@@ -9046,6 +9045,7 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
+#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 5 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -9061,6 +9061,7 @@ msgstr ""
 "utilizzando un'immagine in bianco e nero a 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
+#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -12202,7 +12203,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -12776,7 +12777,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
-msgstr ""
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
@@ -14234,11 +14235,11 @@ msgstr "Apri Editor 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
-msgstr ""
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
@@ -14250,11 +14251,11 @@ msgstr "Apri editor 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
-msgstr ""
+msgstr ":kbd:`F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
@@ -14268,11 +14269,11 @@ msgstr "Apri editor degli script"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid ":kbd:`F3`"
-msgstr ""
+msgstr ":kbd:`F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
@@ -14284,11 +14285,11 @@ msgstr "Cerca aiuto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
-msgstr ""
+msgstr ":kbd:`Shift + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
-msgstr ""
+msgstr ":kbd: `Alt + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
@@ -14300,11 +14301,11 @@ msgstr "Modalità senza distrazioni"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Cmd + Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "``editor/distraction_free_mode``"
@@ -14316,11 +14317,11 @@ msgstr "Scheda successiva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Cmd + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "``editor/next_tab``"
@@ -14332,11 +14333,11 @@ msgstr "Scheda precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Cmd + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "``editor/prev_tab``"
@@ -14348,11 +14349,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Ctrl + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Cmd + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "``editor/filter_files``"
@@ -14364,11 +14365,11 @@ msgstr "Apri scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Cmd + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "``editor/open_scene``"
@@ -14380,11 +14381,11 @@ msgstr "Chiudi scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Cmd + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "``editor/close_scene``"
@@ -14397,12 +14398,12 @@ msgstr "Riapri la scena chiusa"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Ctrl + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Cmd + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "``editor/reopen_closed_scene``"
@@ -14414,11 +14415,11 @@ msgstr "Salva Scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Cmd + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "``editor/save_scene``"
@@ -14431,11 +14432,11 @@ msgstr "Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Ctrl + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Cmd + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid "``editor/save_scene_as``"
@@ -14448,12 +14449,12 @@ msgstr "Salva tutte le scene"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Cmd + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "``editor/save_all_scenes``"
@@ -14465,7 +14466,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid ":kbd:`Shift + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "``editor/quick_open``"
@@ -14477,11 +14478,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Ctrl + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Cmd + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "``editor/quick_open_scene``"
@@ -14493,11 +14494,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Ctrl + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Cmd + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid "``editor/quick_open_script``"
@@ -14511,12 +14512,12 @@ msgstr "Annulla"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid ":kbd:`Ctrl + Z`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid ":kbd:`Cmd + Z`"
-msgstr ""
+msgstr ":kbd:`Cmd + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 msgid "``editor/undo``"
@@ -14529,11 +14530,11 @@ msgstr "Rifai"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Cmd + Shift + Z`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid "``editor/redo``"
@@ -14545,11 +14546,11 @@ msgstr "Esci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Cmd + Q`"
-msgstr ""
+msgstr ":kbd:`Cmd + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "``editor/file_quit``"
@@ -14561,11 +14562,11 @@ msgstr "Esci e torna alla lista progetti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Shift + Alt + Q`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "``editor/quit_to_project_list``"
@@ -14577,11 +14578,11 @@ msgstr "Acquisisci una schermata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Cmd + F12`"
-msgstr ""
+msgstr ":kbd:`Cmd + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "``editor/take_screenshot``"
@@ -14593,11 +14594,11 @@ msgstr "Abilita/Disabilita modalità a schermo intero"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Cmd + Ctrl + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "``editor/fullscreen_mode``"
@@ -14610,12 +14611,12 @@ msgstr "Esegui"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid ":kbd:`F5`"
-msgstr ""
+msgstr ":kbd:`F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Cmd + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "``editor/play``"
@@ -14627,11 +14628,11 @@ msgstr "Pausa scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
-msgstr ""
+msgstr ":kbd:`F7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`Cmd + Ctrl + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "``editor/pause_scene``"
@@ -14643,12 +14644,12 @@ msgstr "Ferma"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
-msgstr ""
+msgstr ":kbd:`F8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Cmd + .`"
-msgstr ""
+msgstr ":kbd:`Cmd + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "``editor/stop``"
@@ -14660,12 +14661,12 @@ msgstr "Avvia Scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
-msgstr ""
+msgstr ":kbd:`F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid ":kbd:`Cmd + R`"
-msgstr ""
+msgstr ":kbd:`Cmd + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "``editor/play_scene``"
@@ -14677,13 +14678,13 @@ msgstr "Avvia Scena Personalizzata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid ":kbd:`Cmd + Shift + R`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "``editor/play_custom_scene``"
@@ -14695,7 +14696,7 @@ msgstr "Espandi Pannello Inferiore"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
-msgstr ""
+msgstr ":kbd:`Shift + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "``editor/bottom_panel_expand``"
@@ -14713,12 +14714,12 @@ msgstr "Ingrandisci"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid ":kbd:`Ctrl + =`"
-msgstr ""
+msgstr ":kbd:`Ctrl + =`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid ":kbd:`Cmd + =`"
-msgstr ""
+msgstr ":kbd:`Cmd + =`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 msgid "``canvas_item_editor/zoom_plus``"
@@ -14732,12 +14733,12 @@ msgstr "Rimpicciolisci"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid ":kbd:`Ctrl + -`"
-msgstr ""
+msgstr ":kbd:`Ctrl + -`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid ":kbd:`Cmd + -`"
-msgstr ""
+msgstr ":kbd:`Cmd + -`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 msgid "``canvas_item_editor/zoom_minus``"
@@ -14750,12 +14751,12 @@ msgstr "Ripristina ingrandimento"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Ctrl + 0`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Cmd + 0`"
-msgstr ""
+msgstr ":kbd:`Cmd + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "``canvas_item_editor/zoom_reset``"
@@ -14767,7 +14768,7 @@ msgstr "Trasla Visuale"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
-msgstr ""
+msgstr ":kbd:`Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "``canvas_item_editor/pan_view``"
@@ -14782,7 +14783,7 @@ msgstr "Modalità di selezione"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid ":kbd:`Q`"
-msgstr ""
+msgstr ":kbd:`Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 msgid "``canvas_item_editor/select_mode``"
@@ -14798,7 +14799,7 @@ msgstr "Modalità spostamento"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid ":kbd:`W`"
-msgstr ""
+msgstr ":kbd:`W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 msgid "``canvas_item_editor/move_mode``"
@@ -14813,7 +14814,7 @@ msgstr "Modalità rotazione"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid ":kbd:`E`"
-msgstr ""
+msgstr ":kbd:`E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 msgid "``canvas_item_editor/rotate_mode``"
@@ -14828,7 +14829,7 @@ msgstr "Modalità scala"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid ":kbd:`S`"
-msgstr ""
+msgstr ":kbd:`S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 msgid "``canvas_item_editor/scale_mode``"
@@ -14841,7 +14842,7 @@ msgstr "Modalità righello"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid ":kbd:`R`"
-msgstr ""
+msgstr ":kbd:`R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "``canvas_item_editor/ruler_mode``"
@@ -14853,7 +14854,7 @@ msgstr "Usa lo Snap intelligente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
-msgstr ""
+msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "``canvas_item_editor/use_smart_snap``"
@@ -14865,7 +14866,7 @@ msgstr "Usa Griglia Magnetica"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
-msgstr ""
+msgstr ":kbd:`Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "``canvas_item_editor/use_grid_snap``"
@@ -14877,7 +14878,7 @@ msgstr "Moltiplica per 2 il passo della griglia"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
-msgstr ""
+msgstr ":kbd:`Num *`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "``canvas_item_editor/multiply_grid_step``"
@@ -14889,7 +14890,7 @@ msgstr "Dividi per 2 il passo della griglia"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
-msgstr ""
+msgstr ":kbd:`Num /`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "``canvas_item_editor/divide_grid_step``"
@@ -14902,7 +14903,7 @@ msgstr "Mostra Sempre Griglia"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid ":kbd:`G`"
-msgstr ""
+msgstr ":kbd:`G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "``canvas_item_editor/show_grid``"
@@ -14914,7 +14915,7 @@ msgstr "Mostra guide"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
-msgstr ""
+msgstr ":kbd:`H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "``canvas_item_editor/show_helpers``"
@@ -14927,7 +14928,7 @@ msgstr "Mostra Guide"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid ":kbd:`Y`"
-msgstr ""
+msgstr ":kbd:`Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "``canvas_item_editor/show_guides``"
@@ -14940,7 +14941,7 @@ msgstr "Centra selezione"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid ":kbd:`F`"
-msgstr ""
+msgstr ":kbd:`F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "``canvas_item_editor/center_selection``"
@@ -14953,7 +14954,7 @@ msgstr "Selezione frame"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid ":kbd:`Shift + F`"
-msgstr ""
+msgstr ":kbd:`Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "``canvas_item_editor/frame_selection``"
@@ -14965,11 +14966,11 @@ msgstr "Anteprima Dimensione Canvas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Cmd + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "``canvas_item_editor/preview_canvas_scale``"
@@ -14981,7 +14982,7 @@ msgstr "Inserisci chiave"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
-msgstr ""
+msgstr ":kbd:`Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "``canvas_item_editor/anim_insert_key``"
@@ -14993,11 +14994,11 @@ msgstr "Inserisci chiave (tracce esistenti)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Cmd + Ins`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
@@ -15010,13 +15011,13 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid ":kbd:`Ctrl + Shift + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid ":kbd:`Cmd + Shift + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 msgid "``canvas_item_editor/skeleton_make_bones``"
@@ -15028,7 +15029,7 @@ msgstr "Azzera posa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
-msgstr ""
+msgstr ":kbd:`Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "``canvas_item_editor/anim_clear_pose``"
@@ -15053,7 +15054,7 @@ msgstr "Vista Libera Sinistra"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid ":kbd:`A`"
-msgstr ""
+msgstr ":kbd:`A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "``spatial_editor/freelook_left``"
@@ -15065,7 +15066,7 @@ msgstr "Vista Libera Destra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
-msgstr ""
+msgstr ":kbd:`D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "``spatial_editor/freelook_right``"
@@ -15109,7 +15110,7 @@ msgstr "Modificatore Velocità Vista Libera"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
-msgstr ""
+msgstr ":kbd:`Shift`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "``spatial_editor/freelook_speed_modifier``"
@@ -15121,7 +15122,7 @@ msgstr "Modificatore Vista Libera Velocità Lenta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
-msgstr ""
+msgstr ":kbd:`Alt`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "``spatial_editor/freelook_slow_modifier``"
@@ -15150,7 +15151,7 @@ msgstr "Usa Spazio Locale"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid ":kbd:`T`"
-msgstr ""
+msgstr ":kbd:`T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "``spatial_editor/local_coords``"
@@ -15171,7 +15172,7 @@ msgstr "Posa l'oggetto sul suolo"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid ":kbd:`PgDown`"
-msgstr ""
+msgstr ":kbd:`PgDown`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "``spatial_editor/snap_to_floor``"
@@ -15183,7 +15184,7 @@ msgstr "Vista dall'alto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
-msgstr ""
+msgstr ":kbd:`Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "``spatial_editor/top_view``"
@@ -15195,7 +15196,7 @@ msgstr "Vista dal basso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "``spatial_editor/bottom_view``"
@@ -15207,7 +15208,7 @@ msgstr "Vista frontale"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
-msgstr ""
+msgstr ":kbd:`Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "``spatial_editor/front_view``"
@@ -15219,7 +15220,7 @@ msgstr "Vista dal retro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "``spatial_editor/rear_view``"
@@ -15231,7 +15232,7 @@ msgstr "Vista laterale destra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
-msgstr ""
+msgstr ":kbd:`Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "``spatial_editor/right_view``"
@@ -15243,7 +15244,7 @@ msgstr "Vista laterale sinistra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "``spatial_editor/left_view``"
@@ -15255,7 +15256,7 @@ msgstr "Cambia tra vista prospettica/ortogonale"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
-msgstr ""
+msgstr ":kbd:`Num 5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "``spatial_editor/switch_perspective_orthogonal``"
@@ -15267,7 +15268,7 @@ msgstr "Inserisci chiave animazione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
-msgstr ""
+msgstr ":kbd:`K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid "``spatial_editor/insert_anim_key``"
@@ -15279,7 +15280,7 @@ msgstr "Centra Origine"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
-msgstr ""
+msgstr ":kbd:`O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "``spatial_editor/focus_origin``"
@@ -15299,11 +15300,11 @@ msgstr "Allinea trasformazione con la vista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Cmd + Alt + M`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "``spatial_editor/align_transform_with_view``"
@@ -15316,11 +15317,11 @@ msgstr "Allinea rotazione con la vista"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Alt + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid ":kbd:`Cmd + Alt + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "``spatial_editor/align_rotation_with_view``"
@@ -15332,11 +15333,11 @@ msgstr "1 Vista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Cmd + 1`"
-msgstr ""
+msgstr ":kbd:`Cmd + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "``spatial_editor/1_viewport``"
@@ -15348,11 +15349,11 @@ msgstr "2 Viste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Cmd + 2`"
-msgstr ""
+msgstr ":kbd:`Cmd + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "``spatial_editor/2_viewports``"
@@ -15364,11 +15365,11 @@ msgstr "2 Viste (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Cmd + Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "``spatial_editor/2_viewports_alt``"
@@ -15380,11 +15381,11 @@ msgstr "3 Viste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Cmd + 3`"
-msgstr ""
+msgstr ":kbd:`Cmd + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "``spatial_editor/3_viewports``"
@@ -15396,11 +15397,11 @@ msgstr "3 Viste (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Cmd + Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "``spatial_editor/3_viewports_alt``"
@@ -15412,11 +15413,11 @@ msgstr "4 Viste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Cmd + 4`"
-msgstr ""
+msgstr ":kbd:`Cmd + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "``spatial_editor/4_viewports``"
@@ -15435,13 +15436,13 @@ msgstr "Taglia"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid ":kbd:`Ctrl + X`"
-msgstr ""
+msgstr ":kbd:`Ctrl + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid ":kbd:`Cmd + X`"
-msgstr ""
+msgstr ":kbd:`Cmd + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "``script_text_editor/cut``"
@@ -15458,7 +15459,7 @@ msgstr "Copia"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid ":kbd:`Ctrl + C`"
-msgstr ""
+msgstr ":kbd:`Ctrl + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -15467,7 +15468,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid ":kbd:`Cmd + C`"
-msgstr ""
+msgstr ":kbd:`Cmd + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "``script_text_editor/copy``"
@@ -15480,12 +15481,12 @@ msgstr "Incolla"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid ":kbd:`Ctrl + V`"
-msgstr ""
+msgstr ":kbd:`Ctrl + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid ":kbd:`Cmd + V`"
-msgstr ""
+msgstr ":kbd:`Cmd + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "``script_text_editor/paste``"
@@ -15498,12 +15499,12 @@ msgstr "Seleziona tutto"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid ":kbd:`Ctrl + A`"
-msgstr ""
+msgstr ":kbd:`Ctrl + A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid ":kbd:`Cmd + A`"
-msgstr ""
+msgstr ":kbd:`Cmd + A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "``script_text_editor/select_all``"
@@ -15512,21 +15513,21 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "Find"
-msgstr ""
+msgstr "Trova"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid ":kbd:`Ctrl + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid ":kbd:`Cmd + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 msgid "``script_text_editor/find``"
@@ -15540,7 +15541,7 @@ msgstr "Trova successivo"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Cmd + G`"
-msgstr ""
+msgstr ":kbd:`Cmd + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 msgid "``script_text_editor/find_next``"
@@ -15554,11 +15555,11 @@ msgstr "Trova precedente"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid ":kbd:`Shift + F3`"
-msgstr ""
+msgstr ":kbd:`Shift + F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid ":kbd:`Cmd + Shift + G`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid "``script_text_editor/find_previous``"
@@ -15572,12 +15573,12 @@ msgstr "Trova nei file"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid ":kbd:`Ctrl + Shift + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid ":kbd:`Cmd + Shift + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 msgid "``script_text_editor/find_in_files``"
@@ -15590,11 +15591,11 @@ msgstr "Sostituisci"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid ":kbd:`Ctrl + R`"
-msgstr ""
+msgstr ":kbd:`Ctrl + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid ":kbd:`Alt + Cmd + F`"
-msgstr ""
+msgstr ":kbd:`Alt + Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "``script_text_editor/replace``"
@@ -15607,7 +15608,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid ":kbd:`Ctrl + Shift + R`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 msgid "``script_text_editor/replace_in_files``"
@@ -15619,11 +15620,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid ":kbd:`Ctrl + Y`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid ":kbd:`Cmd + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "``script_text_editor/redo``"
@@ -15665,12 +15666,12 @@ msgstr "Elimina linea"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid ":kbd:`Ctrl + Shift + K`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid ":kbd:`Cmd + Shift + K`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "``script_text_editor/delete_line``"
@@ -15682,11 +15683,11 @@ msgstr "Commuta commento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
-msgstr ""
+msgstr ":kbd:`Ctrl + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Cmd + K`"
-msgstr ""
+msgstr ":kbd:`Cmd + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "``script_text_editor/toggle_comment``"
@@ -15699,7 +15700,7 @@ msgstr "Espandi/comprimi linea"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid ":kbd:`Alt + F`"
-msgstr ""
+msgstr ":kbd:`Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "``script_text_editor/toggle_fold_line``"
@@ -15715,11 +15716,11 @@ msgstr "Clona sotto"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid ":kbd:`Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid ":kbd:`Cmd + Shift + C`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "``script_text_editor/clone_down``"
@@ -15731,7 +15732,7 @@ msgstr "Completa simbolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
-msgstr ""
+msgstr ":kbd: `Ctrl + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "``script_text_editor/complete_symbol``"
@@ -15743,11 +15744,11 @@ msgstr "Valuta selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Cmd + Shift + E`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "``script_text_editor/evaluate_selection``"
@@ -15759,11 +15760,11 @@ msgstr "Taglia spazi in coda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Cmd + Alt + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "``script_text_editor/trim_trailing_whitespace``"
@@ -15775,7 +15776,7 @@ msgstr "Maiuscolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
-msgstr ""
+msgstr ":kbd:`Shift + F4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "``script_text_editor/convert_to_uppercase``"
@@ -15787,7 +15788,7 @@ msgstr "Minuscolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "``script_text_editor/convert_to_lowercase``"
@@ -15799,7 +15800,7 @@ msgstr "Rendi prima lettera maiuscola"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
-msgstr ""
+msgstr ":kbd:`Shift + F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "``script_text_editor/capitalize``"
@@ -15811,11 +15812,11 @@ msgstr "Converti l'indentazione in spazi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Cmd + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "``script_text_editor/convert_indent_to_spaces``"
@@ -15827,11 +15828,11 @@ msgstr "Converti l'indentazione in tabulazioni"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Cmd + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "``script_text_editor/convert_indent_to_tabs``"
@@ -15843,11 +15844,11 @@ msgstr "Indenta automaticamente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Cmd + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "``script_text_editor/auto_indent``"
@@ -15859,11 +15860,11 @@ msgstr "Abilita/Disabilita segnalibri"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Cmd + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "``script_text_editor/toggle_bookmark``"
@@ -15875,7 +15876,7 @@ msgstr "Va' al segnalibro successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "``script_text_editor/goto_next_bookmark``"
@@ -15895,7 +15896,7 @@ msgstr "Va' alla funzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Cmd + J`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "``script_text_editor/goto_function``"
@@ -15907,11 +15908,11 @@ msgstr "Va' alla linea"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
-msgstr ""
+msgstr ":kbd:`Ctrl + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Cmd + L`"
-msgstr ""
+msgstr ":kbd:`Cmd + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "``script_text_editor/goto_line``"
@@ -15925,7 +15926,7 @@ msgstr "Commuta breakpoint"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid ":kbd:`F9`"
-msgstr ""
+msgstr ":kbd:`F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid "``script_text_editor/toggle_breakpoint``"
@@ -15937,11 +15938,11 @@ msgstr "Rimuovi tutti i breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Cmd + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "``script_text_editor/remove_all_breakpoints``"
@@ -15953,7 +15954,7 @@ msgstr "Vai al breakpoint successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "``script_text_editor/goto_next_breakpoint``"
@@ -15965,11 +15966,11 @@ msgstr "Vai al breakpoint precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Cmd + ,`"
-msgstr ""
+msgstr ":kbd:`Cmd + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "``script_text_editor/goto_previous_breakpoint``"
@@ -15981,11 +15982,11 @@ msgstr "Aiuto contestuale"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
-msgstr ""
+msgstr ":kbd:`Alt + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + Shift + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Shift + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "``script_text_editor/contextual_help``"
@@ -16013,7 +16014,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid ":kbd:`Shift + Alt + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Freccia Su`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid "``script_editor/window_move_up``"
@@ -16021,7 +16022,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid ":kbd:`Shift + Alt + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Freccia Giù`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid "``script_editor/window_move_down``"
@@ -16034,11 +16035,11 @@ msgstr "GDScript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Cmd + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid "``script_editor/next_script``"
@@ -16050,11 +16051,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Ctrl + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Cmd + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "``script_editor/prev_script``"
@@ -16074,11 +16075,11 @@ msgstr "Salva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Cmd + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "``script_editor/save``"
@@ -16132,11 +16133,11 @@ msgstr "Chiudi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Cmd + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "``script_editor/close_file``"
@@ -16149,11 +16150,11 @@ msgstr "Esegui"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Ctrl + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Cmd + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid "``script_editor/run_file``"
@@ -16165,11 +16166,11 @@ msgstr "Commuta pannello degli script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
-msgstr ""
+msgstr ":kbd:`Ctrl + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Cmd + \\\\`"
-msgstr ""
+msgstr ":kbd:`Cmd + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "``script_editor/toggle_scripts_panel``"
@@ -16239,7 +16240,7 @@ msgstr "Elimina Selezionati"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid ":kbd:`Del`"
-msgstr ""
+msgstr ":kbd:`Del`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -16248,7 +16249,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid ":kbd:`Cmd + BkSp`"
-msgstr ""
+msgstr ":kbd:`Cmd + BkSp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "``visual_script_editor/delete_selected``"
@@ -16260,7 +16261,7 @@ msgstr "Crea funzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
-msgstr ""
+msgstr ":kbd:`Ctrl + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "``visual_script_editor/create_function``"
@@ -16272,11 +16273,11 @@ msgstr "Modifica membro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
-msgstr ""
+msgstr ":kbd:`Ctrl + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Cmd + E`"
-msgstr ""
+msgstr ":kbd:`Cmd + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "``visual_script_editor/edit_member``"
@@ -16327,7 +16328,7 @@ msgstr "Passo dentro all'istruzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
-msgstr ""
+msgstr ":kbd:`F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "``debugger/step_into``"
@@ -16339,7 +16340,7 @@ msgstr "Passo successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
-msgstr ""
+msgstr ":kbd:`F10`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "``debugger/step_over``"
@@ -16351,7 +16352,7 @@ msgstr "Continua"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
-msgstr ""
+msgstr ":kbd:`F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "``debugger/continue``"
@@ -16399,11 +16400,11 @@ msgstr "Mostra/nascondi file nascosti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
-msgstr ""
+msgstr ":kbd:`Ctrl + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Cmd + H`"
-msgstr ""
+msgstr ":kbd:`Cmd + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "``file_dialog/toggle_hidden_files``"
@@ -16419,11 +16420,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr "Modalità di Attivazione/Disattivazione"
+msgstr "Commuta Modalità"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
-msgstr ""
+msgstr ":kbd:`Alt + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "``file_dialog/toggle_mode``"
@@ -16435,11 +16436,11 @@ msgstr "Crea cartella"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
-msgstr ""
+msgstr ":kbd:`Ctrl + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Cmd + N`"
-msgstr ""
+msgstr ":kbd:`Cmd + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "``file_dialog/create_folder``"
@@ -16464,7 +16465,7 @@ msgstr "Metti a fuoco il percorso"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid ":kbd:`Cmd + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "``file_dialog/focus_path``"
@@ -16549,11 +16550,11 @@ msgstr "Rinomina in blocco"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Cmd + F2`"
-msgstr ""
+msgstr ":kbd:`Cmd + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "``scene_tree/batch_rename``"
@@ -16577,7 +16578,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid ":kbd:`Shift + Del`"
-msgstr ""
+msgstr ":kbd:`Shift + Del`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid "``scene_tree/delete_no_confirm``"
@@ -16614,11 +16615,11 @@ msgstr "Duplica trasposto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Cmd + Shift + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "``animation_editor/duplicate_selection_transposed``"
@@ -16682,7 +16683,7 @@ msgstr "Preleva tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
-msgstr ""
+msgstr ":kbd:`I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "``tile_map_editor/pick_tile``"
@@ -16694,7 +16695,7 @@ msgstr "Disegna tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
-msgstr ""
+msgstr ":kbd:`P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "``tile_map_editor/paint_tile``"
@@ -16722,7 +16723,7 @@ msgstr "Ribalta orizzontalmente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
-msgstr ""
+msgstr ":kbd:`X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "``tile_map_editor/flip_horizontal``"
@@ -16734,7 +16735,7 @@ msgstr "Ribalta verticalmente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
-msgstr ""
+msgstr ":kbd:`Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "``tile_map_editor/flip_vertical``"
@@ -16770,7 +16771,7 @@ msgstr "Seleziona"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
-msgstr ""
+msgstr ":kbd:`M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "``tile_map_editor/select``"
@@ -16815,7 +16816,7 @@ msgstr "Coordinata precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
-msgstr ""
+msgstr ":kbd:`PgUp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "``tileset_editor/previous_shape``"
@@ -16827,7 +16828,7 @@ msgstr "Modalità Regione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
-msgstr ""
+msgstr ":kbd:`1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "``tileset_editor/editmode_region``"
@@ -16839,7 +16840,7 @@ msgstr "Modalità di collisione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
-msgstr ""
+msgstr ":kbd:`2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "``tileset_editor/editmode_collision``"
@@ -16851,7 +16852,7 @@ msgstr "Modalità Occlusione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
-msgstr ""
+msgstr ":kbd:`3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "``tileset_editor/editmode_occlusion``"
@@ -16863,7 +16864,7 @@ msgstr "Modalità Navigazione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
-msgstr ""
+msgstr ":kbd:`4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "``tileset_editor/editmode_navigation``"
@@ -16875,7 +16876,7 @@ msgstr "Modalità Bitmask"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
-msgstr ""
+msgstr ":kbd:`5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "``tileset_editor/editmode_bitmask``"
@@ -16887,7 +16888,7 @@ msgstr "Modalità Prioritaria"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
-msgstr ""
+msgstr ":kbd:`6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "``tileset_editor/editmode_priority``"
@@ -16899,7 +16900,7 @@ msgstr "Modalità Icona"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
-msgstr ""
+msgstr ":kbd:`7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "``tileset_editor/editmode_icon``"
@@ -17462,7 +17463,7 @@ msgstr "Sottrazione"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 msgid "Bit shifting"
@@ -17551,7 +17552,7 @@ msgstr "Testing"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Assignment (lowest priority)"
@@ -17589,7 +17590,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 2 (binary) integer"
@@ -17597,7 +17598,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Floating-point number (real)"
@@ -21016,7 +21017,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "Ciao, Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -21085,7 +21086,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "Ciao, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
@@ -21118,7 +21119,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "Ciao, Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
@@ -22321,7 +22322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
 msgid "Visual Studio 2019"
-msgstr ""
+msgstr "Visual Studio 2019"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:109
 msgid "MonoDevelop"
@@ -25404,7 +25405,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:180
 msgid "SRGB"
-msgstr ""
+msgstr "SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:182
 msgid ""
@@ -25523,7 +25524,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 msgid "WAV 16-bit, 44 kHz, mono"
@@ -25531,7 +25532,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
 msgid "WAV 16-bit, IMA-ADPCM, mono"
@@ -25547,7 +25548,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "Ogg Vorbis 96 Kb/s, stereo"
@@ -25700,19 +25701,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
@@ -25723,11 +25724,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid ""
@@ -25769,7 +25770,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
@@ -25785,7 +25786,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
@@ -25797,11 +25798,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "QUOTE"
@@ -27149,7 +27150,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "**Android**"
-msgstr ""
+msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
@@ -27157,7 +27158,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
-msgstr ""
+msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
@@ -27165,7 +27166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
-msgstr ""
+msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
@@ -27173,7 +27174,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
-msgstr ""
+msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
@@ -27181,7 +27182,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "**iOS**"
-msgstr ""
+msgstr "**iOS**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "Running on iOS"
@@ -27189,7 +27190,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
-msgstr ""
+msgstr "**UWP**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
@@ -27197,7 +27198,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "**Windows**"
-msgstr ""
+msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
@@ -27205,7 +27206,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
@@ -27253,7 +27254,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
@@ -27261,7 +27262,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
@@ -27269,7 +27270,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
-msgstr ""
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
@@ -27277,7 +27278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
@@ -27285,7 +27286,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
-msgstr ""
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
@@ -27325,7 +27326,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
-msgstr ""
+msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
@@ -27333,7 +27334,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
-msgstr ""
+msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
@@ -27341,7 +27342,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
@@ -29589,19 +29590,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
-msgstr ""
+msgstr "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
-msgstr ""
+msgstr "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:249
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
-msgstr ""
+msgstr "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
 msgid "Choosing a node tree structure"
@@ -30048,7 +30049,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "Solo Godot 3.1+."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -46579,7 +46580,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "EQ6, EQ10, EQ21"
-msgstr ""
+msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid ""
@@ -46827,7 +46828,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:50
 msgid "AudioStreamPlayer2D"
-msgstr ""
+msgstr "AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:52
 msgid ""
@@ -46846,7 +46847,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:66
 msgid "AudioStreamPlayer3D"
-msgstr ""
+msgstr "AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:68
 msgid ""
@@ -47379,7 +47380,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:142
 msgid "Area2D"
-msgstr ""
+msgstr "Area2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:144
 msgid ""
@@ -47413,7 +47414,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:160
 msgid "StaticBody2D"
-msgstr ""
+msgstr "StaticBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:162
 msgid ""
@@ -47448,7 +47449,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:177
 msgid "RigidBody2D"
-msgstr ""
+msgstr "RigidBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
@@ -47581,7 +47582,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:295
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:297
 msgid ""
@@ -50357,15 +50358,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -52410,7 +52411,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:136
 msgid "BlendSpace1D"
-msgstr ""
+msgstr "BlendSpace1D"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:138
 msgid ""
@@ -60432,7 +60433,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:305
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:305
 msgid "unary"
@@ -60440,12 +60441,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:305
 msgid "**+, -, !, ~**"
-msgstr ""
+msgstr "**+, -, !, ~**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:307
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:307
 msgid "multiplicative"
@@ -60541,7 +60542,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:309
 msgid "additive"
@@ -60549,12 +60550,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:309
 msgid "**+, -**"
-msgstr ""
+msgstr "**+, -**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:311
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:311
 msgid "bit-wise shift"
@@ -60567,7 +60568,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:313
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:313
 msgid "relational"
@@ -60580,7 +60581,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:315
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:315
 msgid "equality"
@@ -60607,7 +60608,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:325
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:317
 msgid "bit-wise AND"
@@ -60620,7 +60621,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:319
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:319
 msgid "bit-wise exclusive OR"
@@ -60633,7 +60634,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:321
 msgid "bit-wise inclusive OR"
@@ -60646,7 +60647,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:323
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:323
 msgid "logical AND"
@@ -66981,7 +66982,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/websocket.rst:7
 msgid "HTML5 and WebSocket"
-msgstr ""
+msgstr "HTML5 e WebSocket"
 
 #: ../../docs/tutorials/networking/websocket.rst:9
 msgid ""
@@ -67074,7 +67075,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/webrtc.rst:7
 msgid "HTML5, WebSocket, WebRTC"
-msgstr ""
+msgstr "HTML5, WebSocket, WebRTC"
 
 #: ../../docs/tutorials/networking/webrtc.rst:9
 msgid ""
@@ -67474,7 +67475,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:99
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:101
 msgid ""
@@ -74178,7 +74179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:836
 msgid "NativeScript 1.1 vs NativeScript 1.0"
-msgstr ""
+msgstr "NativeScript 1.1 vs NativeScript 1.0"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:838
 msgid ""
@@ -75125,9 +75126,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/platform_html5.rst:4
-#, fuzzy
 msgid "HTML5"
-msgstr "HTML5 (web)"
+msgstr "HTML5"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
 msgid "HTML5 shell class reference"
@@ -76895,7 +76895,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -76980,7 +76980,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -77046,9 +77046,8 @@ msgid "CPU"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:60
-#, fuzzy
 msgid "GPU"
-msgstr "GUI"
+msgstr "GPU"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
 #, fuzzy
@@ -78000,9 +77999,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:187
-#, fuzzy
 msgid "C++"
-msgstr "C++:"
+msgstr "C++"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:189
 msgid ""
@@ -79897,12 +79895,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "integer"
@@ -79947,7 +79945,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "basis"
@@ -79955,7 +79953,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
@@ -79963,7 +79961,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
@@ -79971,7 +79969,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "node path"
@@ -79987,7 +79985,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
@@ -79995,7 +79993,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "object"
@@ -80003,7 +80001,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "dictionary"
@@ -80011,7 +80009,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
@@ -80023,7 +80021,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "raw array"
@@ -80031,7 +80029,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "int array"
@@ -80039,7 +80037,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "real array"
@@ -80047,7 +80045,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "string array"
@@ -80059,7 +80057,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "vector2 array"
@@ -80067,7 +80065,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "vector3 array"
@@ -80075,7 +80073,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "color array"
@@ -80083,7 +80081,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "max"
@@ -80104,8 +80102,9 @@ msgid "0: null"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:93
+#, fuzzy
 msgid "1: :ref:`bool<class_bool>`"
-msgstr ""
+msgstr "1: :ref:`bool<class_bool>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:105
@@ -80396,8 +80395,9 @@ msgid "Distance"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:206
+#, fuzzy
 msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+msgstr "10: :ref:`Quat<class_quat>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 msgid "Imaginary X"
@@ -80416,8 +80416,9 @@ msgid "Real W"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:221
+#, fuzzy
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr ""
+msgstr "11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:236
 msgid "Z size"
@@ -80440,7 +80441,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 msgid "28"
-msgstr ""
+msgstr "28"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
@@ -80450,7 +80451,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:259
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 msgid "32"
-msgstr ""
+msgstr "32"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:259
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
@@ -80460,7 +80461,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 msgid "36"
-msgstr ""
+msgstr "36"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
@@ -80473,7 +80474,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "40"
-msgstr ""
+msgstr "40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "The X component of the origin vector, accessed via [3][0]"
@@ -80481,7 +80482,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "44"
-msgstr ""
+msgstr "44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "The Y component of the origin vector, accessed via [3][1]"
@@ -80489,7 +80490,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "48"
-msgstr ""
+msgstr "48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "The Z component of the origin vector, accessed via [3][2]"
@@ -80555,7 +80556,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:346
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
 msgid "X+0"
-msgstr ""
+msgstr "X+0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:346
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:432
@@ -80566,7 +80567,7 @@ msgstr "Vettore"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:434
 msgid "X+4"
-msgstr ""
+msgstr "X+4"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:351
 msgid "Every name string is padded to 4 bytes."
@@ -82335,7 +82336,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""
@@ -82851,7 +82852,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:19
 msgid "`Python 3.5+ <https://www.python.org/downloads/windows/>`_."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org/downloads/windows/>`_."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:20
 msgid ""
@@ -83126,7 +83127,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:190
 msgid "**macOS**"
-msgstr ""
+msgstr "**macOS**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:194
 #: ../../docs/development/compiling/compiling_for_x11.rst:67
@@ -83218,7 +83219,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
 msgid "Python 3.5+."
-msgstr ""
+msgstr "Python 3.5+."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:16
 msgid ""
@@ -83444,7 +83445,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:13
 msgid "`Python 3.5+ <https://www.python.org>`_."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org>`_."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
@@ -83586,7 +83587,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:24
 msgid "`Python 3.5+ <https://www.python.org/downloads/>`_."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:25
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
@@ -84328,11 +84329,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid "`Emscripten 1.39.0+ <https://emscripten.org>`__."
-msgstr ""
+msgstr "`Emscripten 1.39.0+ <https://emscripten.org>`__."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:14
 msgid "`Python 3.5+ <https://www.python.org/>`__."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org/>`__."
 
 #: ../../docs/development/compiling/compiling_for_web.rst:15
 msgid "`SCons 3.0+ <https://www.scons.org>`__ build system."
@@ -85989,7 +85990,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
@@ -87174,7 +87175,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:20
 msgid "Node2D"
-msgstr ""
+msgstr "Node2D"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:25
 msgid "Spatial"
@@ -87947,13 +87948,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
-msgstr ""
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:306
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 msgstr ""
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
 #, fuzzy
@@ -93287,25 +93290,31 @@ msgstr ""
 msgid ""
 "Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 msgstr ""
+"Portoghese brasiliano: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>` "
+"_"
 
 #: ../../docs/community/channels.rst:38
 msgid ""
 "French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
+"Francese: `Godot Francophone Officiel (Discord) <https://discord."
+"gg/3jvf3XN>` _"
 
 #: ../../docs/community/channels.rst:39
 msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
-msgstr ""
+msgstr "Francese: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>` _"
 
 #: ../../docs/community/channels.rst:40
 msgid ""
 "German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
+"Tedesco: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>` _"
 
 #: ../../docs/community/channels.rst:41
 msgid ""
 "Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
+"Svedese: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>` _"
 
 #: ../../docs/community/channels.rst:44
 msgid "Social networks"
@@ -93475,6 +93484,8 @@ msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`__ (2D and 3D, GDScript and VisualScript)."
 msgstr ""
+"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
+"playlists>`__ (2D e 3D, GDScript e VisualScript)."
 
 #: ../../docs/community/tutorials.rst:30
 msgid ""
@@ -93513,24 +93524,32 @@ msgid ""
 "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__ (2D, "
 "GDScript and VisualScript)."
 msgstr ""
+"`Steincodes <https://www.youtube.com/c/steincodes/playlists>`__ (2D, "
+"GDScript e VisualScript)."
 
 #: ../../docs/community/tutorials.rst:35
 msgid ""
 "`TheBuffED <https://www.youtube.com/watch?"
 "v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 msgstr ""
+"`TheBuffED <https://www.youtube.com/watch?"
+"v=ygGaN1EOQEA&list=PLvN5Z3tTxXEDfQkt4Frg6ALirespSwZd7>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:36
 msgid ""
 "`Code with Tom <https://www.youtube.com/playlist?"
 "list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_ (2D and 3D, GDScript)."
 msgstr ""
+"`Code with Tom <https://www.youtube.com/playlist?"
+"list=PLiUQR4U_J9ec0k91iHPme_qtfS1nrWF3W>`_ (2D e 3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:37
 msgid ""
 "`BornCG <https://www.youtube.com/playlist?"
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 msgstr ""
+"`BornCG <https://www.youtube.com/playlist?"
+"list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:38
 msgid ""
