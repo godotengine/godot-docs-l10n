@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-07-30 19:14+0200\n"
+"POT-Creation-Date: 2020-08-11 13:45+0200\n"
 "PO-Revision-Date: 2020-06-14 13:40+0000\n"
 "Last-Translator: Richard Urban <redasuio1@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/godot-engine/"
@@ -3557,11 +3557,17 @@ msgstr ""
 "**Manažéra Projektov, dokumenty, pracovné plochy** a všetko čo potrebujete "
 "vedieť na to aby ste mohli začať z enginom."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
+#, fuzzy
+msgid ""
+"You can `download Godot Engine here <https://godotengine.org/download/>`_."
+msgstr "Na stránke `Godot website <https://godotengine.org/contact>`_."
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
 msgstr "Manažér projektov"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
 #, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
@@ -3572,7 +3578,7 @@ msgstr ""
 "žiadne projekty vyskočí vám tam okienko ktoré sa váš opitá či chcete otvoriť "
 "asset library, kliknite na cancel, na to sa pozrieme neskôr."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:19
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid ""
 "Now you should see the project manager. It lets you create, remove, import "
 "or play game projects."
@@ -3580,14 +3586,14 @@ msgstr ""
 "Teraz by ste mali vidieť manažéra projektov. Môžete v ňom vytvárať, "
 "odstraňovať, importovať alebo hrať hrať herné projekty."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:24
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
 msgstr "V pravom-hornom rohu nájdete drop-down menu na zmenu jazyku editora."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos from the Asset Library to help you get started faster. Just select "
@@ -3601,11 +3607,11 @@ msgstr ""
 "install a vyberte kde ho chcete uložiť. Viac sa naučíte na :ref: "
 "`doc_čo_je_assetlib`."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:38
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
 msgstr "Vytorte alebo importujte projekt"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
@@ -3615,7 +3621,7 @@ msgstr ""
 "mu môžete dať meno, vyberte prázdny priečinok vo svojom počítači aby ste ho "
 "uložili, a stlačťe renderer."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:46
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #, fuzzy
 msgid ""
 "Click the Browse button to open Godot's file browser and pick a location or "
@@ -3624,7 +3630,7 @@ msgstr ""
 "Kliknite tlačidlo Browse aby ste otvorili Godotov file browser a vyberte "
 "lokáciu alebo napíšte priečinkovu path v Project Path field."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:51
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:53
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder. You can also click the ``Create Folder`` button next to your "
@@ -3635,7 +3641,7 @@ msgstr ""
 "Môžete ešte kliknúť na ``Create Folder``to tlačidlo vedľa názvu projekta a "
 "spraví sa vám prázdny priečinok z názvom projektu."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:55
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
 msgid ""
 "Finally, you need to choose which renderer to use (OpenGL ES 3.0 or OpenGL "
 "ES 2.0). The advantages and disadvantages of each are listed to help you "
@@ -3648,7 +3654,7 @@ msgstr ""
 "sa a všetko to nájdete tu :ref:`doc_rozdiely_medzy_gles2_a_gles3`. Poznámka "
 "toto môžete zmeniť v `project settings` ak si to v budúcnosti rozmyslíte."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
@@ -3656,7 +3662,7 @@ msgstr ""
 "Keď máte hotovo kliknite``Create & Edit``. Godot vytvorí  a otvorí projekt "
 "za vás."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:64
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
 #, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
@@ -3665,7 +3671,7 @@ msgstr ""
 "Keď nabudúce otvoríte manažéra projektov, uvidíte svoj projekt v tabuľke. "
 "Dvojitým kliknutím otvoríte editor."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:69
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
 "You can import existing projects in a similar way, using the Import button. "
 "Locate the folder that contains the project or the ``project.godot`` file to "
@@ -3675,16 +3681,16 @@ msgstr ""
 "Import. Nájdite priečinok z projektom alebo priečinok ``project.godot`` na "
 "import a edit."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:75
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Ak ste všetko spravili správne, mali by ste tam mať zelené svetielko."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 #, fuzzy
 msgid "Your first look at Godot's editor"
 msgstr "Váš prvý pohľad na Godotov editor"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
 #, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
@@ -3695,7 +3701,7 @@ msgstr ""
 "editora z menu(množ. číslo) na vrchu rozhrania a docks pozdĺž extrémnych "
 "extrémov rozhrania na oboch stranách."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:88
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
@@ -3703,13 +3709,13 @@ msgstr ""
 "Na vrchu, zľava do prava, môžete vidieť **hlavné menu(v množnom č.)**, "
 "**pracovné plochy**, a **tlačidlá playtest**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 #, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr "**FileSystem dock** je to kde spravujete veci v priečinku projekta."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:95
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 #, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
@@ -3718,7 +3724,7 @@ msgstr ""
 "**Scene dock** vám ukáže list obsahu scén a **Inspector** povoľuje "
 "upravovanie vlastností obsahu scén."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 #, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
@@ -3729,7 +3735,7 @@ msgstr ""
 "zmenšenie alebo zamknutie objektov. Zmení sa keď pôjdete do inej pracovnej "
 "plochy."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:106
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 #, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
@@ -3739,18 +3745,18 @@ msgstr ""
 "**Spodný panel**je host pre konzolu debug, editor animácii, audio mixer... "
 "Sú široké a môžu zabrať vzácny priestor. Preto sú štandardne zložené."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid "The workspaces"
 msgstr "Pracovné plochy"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
 "Hore Môžete vidieť štyri tlačidlá pracovnej plochy: 2D, 3D, Script a "
 "AssetLib."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 #, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
@@ -3761,7 +3767,7 @@ msgstr ""
 "hry, 2D pracovné plochy je kde vytvárate vaše rozhranie. Stlačťe :kbd:`F1` "
 "(alebo :kbd:`Alt + 1` na macOS) aby ste to sprístupnili."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
@@ -3770,7 +3776,7 @@ msgstr ""
 "levelou pre 3D hry. Stlačťe :kbd:`F2` (alebo :kbd:`Alt + 2` na macOS) aby "
 "ste ju sprístupnili."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:129
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
 "Notice the perspective button under the toolbar, it opens a list of options "
 "related to the 3D viewport."
@@ -3778,14 +3784,14 @@ msgstr ""
 "Oznamenie: tlačidlo perspektívy pod toolbarom, otvára list operácií príbuzný "
 "3D  viewportu."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:134
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
 "Prečítajte si :ref:`doc_úvod_do_3d` pre viac detailov o **3D pracovnej "
 "ploche**."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:136
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 #, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
@@ -3797,26 +3803,26 @@ msgstr ""
 "`Alt + 3` na macOS) aby ste ho povolili, a :kbd:`F4` na vyhľadanie "
 "referencie."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
 "To search for information about a class, method, property, constant, or "
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "A new window will pop up. Search for the item that you want to find "
 "information about."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:153
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:155
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:158
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
 #, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
@@ -3825,11 +3831,11 @@ msgstr ""
 "A konečne **AssetLib** je library add-onov Zadarmo, scripty a veci na "
 "použitie do projektu."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:162
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 msgid "Modify the interface"
 msgstr "Úprava rozhrania"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:166
 #, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
@@ -3839,11 +3845,11 @@ msgstr ""
 "Rozhrnie Godota ja v jednom okne. Nemôžete ho rozdeliť na dve obrazovky síce "
 "z externým editorom kódu môžete narábať ako z Atom alebo Visual Studio Code."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:169
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
 msgid "Move and resize docks"
 msgstr "Presúvanie a zväčšenie dockou"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:171
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:173
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -3851,14 +3857,14 @@ msgstr ""
 "Kliknite a potiahnite za hranu hocijakého docku alebo panelu aby ste ho "
 "zväčšili horizontálne alebo vertikálne."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:176
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:178
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "Kliknite na ikonku troch bodiek na vrchu každého docku aby ste zmenili jeho "
 "lokáciu."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:181
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:183
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
@@ -3911,7 +3917,7 @@ msgstr ""
 "ostatné nodey zobrazujú 3D modely, atď. Je tu ich tu veľa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:103
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:28
 msgid "Nodes"
@@ -4063,11 +4069,12 @@ msgstr ""
 "\" node)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
+#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
 "\"3D Scene\" adds a Spatial node, \"User Interface\" adds a Control node, "
-"and \"Custom Node\" which lets you select any node (so it is equivalent to "
+"and \"Other Node\" which lets you select any node (so it is equivalent to "
 "pressing the \"Add Child Node\" button). You can also press the star-shaped "
 "icon to toggle the display of your favorited nodes."
 msgstr ""
@@ -4091,8 +4098,9 @@ msgstr ""
 "uzol riadiaci node alebo Node2D."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
+#, fuzzy
 msgid ""
-"Now, to add a label node to this scene you can click on the Custom Node "
+"Now, to add a label node to this scene you can click on the Other Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
@@ -4778,10 +4786,10 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid ""
-"Before continuing, please make sure to read the :ref:"
+"Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
-"and the reference is short, so it will not take more than a few minutes to "
-"get an overview of the concepts."
+"and the reference is structured into sections to make it easier to get an "
+"overview of the concepts."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
@@ -10975,11 +10983,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
-"The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
+"The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
-"persistent information between scenes. In our case it is possible re-use the "
-"same scene or class for multiple singletons, so long as they have different "
-"names."
+"persistent information between scenes. In our case, it's possible to reuse "
+"the same scene or class for multiple singletons as long as they have "
+"different names."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
@@ -10987,46 +10995,58 @@ msgid "Using this concept, you can create objects that:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-msgid "Are always loaded, no matter which scene is currently running"
+msgid "Are always loaded, no matter which scene is currently running."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-msgid "Can store global variables, such as player information"
+msgid "Can store global variables such as player information."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-msgid "Can handle switching scenes and between-scene transitions"
+msgid "Can handle switching scenes and between-scene transitions."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
-"Act like a singleton, since GDScript does not support global variables by "
-"design"
+"*Act* like a singleton, since GDScript does not support global variables by "
+"design."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
+msgid ""
+"Godot won't make an AutoLoad a \"true\" singleton as per the singleton "
+"design pattern. It may still be instanced more than once by the user if "
+"desired."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
-"You can use AutoLoad to load a scene or a script that inherits from :ref:"
-"`Node <class_Node>`. Note: when autoloading a script, a Node will be created "
-"and the script will be attached to it. This node will be added to the root "
-"viewport before any other scenes are loaded."
+"You can create an AutoLoad to load a scene or a script that inherits from :"
+"ref:`class_Node`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
 msgid ""
-"To autoload a scene or script, select ``Project -> Project Settings`` from "
-"the menu and switch to the \"AutoLoad\" tab."
+"When autoloading a script, a :ref:`class_Node` will be created and the "
+"script will be attached to it. This node will be added to the root viewport "
+"before any other scenes are loaded."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
+msgid ""
+"To autoload a scene or script, select **Project > Project Settings** from "
+"the menu and switch to the **AutoLoad** tab."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -11034,45 +11054,45 @@ msgid ""
 "manipulated using the up/down arrow keys."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
 msgid ""
-"If the \"Enable\" column is checked (default ``true``) then the singleton "
-"can simply be accessed directly:"
+"If the **Enable** column is checked (which is the default), then the "
+"singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
 "Note that autoload objects (scripts and/or scenes) are accessed just like "
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid "Custom scene switcher"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
-"This tutorial will demonstrate building a scene switcher using autoload. For "
-"basic scene switching, you can use the :ref:`SceneTree.change_scene() "
+"This tutorial will demonstrate building a scene switcher using autoloads. "
+"For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
 "<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree` for "
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:113
 msgid ""
 "The project contains two scenes: ``Scene1.tscn`` and ``Scene2.tscn``. Each "
 "scene contains a label displaying the scene name and a button with its "
@@ -11080,45 +11100,45 @@ msgid ""
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
 msgid "Global.gd"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
 msgid ""
-"Switch to the \"Script\" tab and create a new script called Global.gd. Make "
-"sure it inherits from ``Node``:"
+"Switch to the **Script** tab and create a new script called ``Global.gd``. "
+"Make sure it inherits from ``Node``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
-"The next step is to add this script to the autoLoad list. Open ``Project > "
-"Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
+"The next step is to add this script to the autoLoad list. Open **Project > "
+"Project Settings** from the menu, switch to the **AutoLoad** tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
-"gd``. Press \"Add\" to add it to the autoload list:"
+"gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
-"``global.gd`` are children of root, but autoloaded nodes are always first. "
+"``Global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:236
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
@@ -11126,28 +11146,37 @@ msgid ""
 "being used (i.e. its code is still running)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:232
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:241
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:252
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:261
 #: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:272
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:281
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:275
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
 msgid ""
-"Note: When scenes are small, the transition is instantaneous. However, if "
-"your scenes are more complex, they may take a noticeable amount of time to "
+"When scenes are small, the transition is instantaneous. However, if your "
+"scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
-"`doc_background_loading`"
+"`doc_background_loading`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
+msgid ""
+"Alternatively, if the loading time is relatively short (less than 3 seconds "
+"or so), you can display a \"loading plaque\" by showing some kind of 2D "
+"element just before changing the scene. You can then hide it just after the "
+"scene is changed. This can be used to indicate to the player that a scene is "
+"being loaded."
 msgstr ""
 
 #: ../../docs/getting_started/editor/index.rst:2
@@ -17125,9 +17154,9 @@ msgid ""
 "freed when no longer in use. No garbage collector exists, just reference "
 "counting. By default, all classes that don't define inheritance extend "
 "**Reference**. If this is not desired, then a class must inherit :ref:"
-"`class_Object` manually and must call instance.free(). To avoid reference "
-"cycles that can't be freed, a ``weakref`` function is provided for creating "
-"weak references."
+"`class_Object` manually and must call ``instance.free()``. To avoid "
+"reference cycles that can't be freed, a ``weakref`` function is provided for "
+"creating weak references."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1322
@@ -18464,7 +18493,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:643
 msgid ""
-"These function should come first because they show how the object is "
+"These functions should come first because they show how the object is "
 "initialized."
 msgstr ""
 
@@ -18787,9 +18816,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But I "
-"recommended to stick to either style for consistency in your codebase, and "
-"for your peers. It's easier for everyone to work together if you follow the "
-"same guidelines, and faster to read and understand other people's code."
+"recommend to stick to either style for consistency in your codebase, and for "
+"your peers. It's easier for everyone to work together if you follow the same "
+"guidelines, and faster to read and understand other people's code."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
@@ -20539,15 +20568,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-msgid "In Godot:"
-msgstr ""
+#, fuzzy
+msgid "In Godot's Editor Settings:"
+msgstr "Editor"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
-msgid "Mono External Editor to JetBrains Rider"
+msgid "Set **Mono External Editor** to **JetBrains Rider**."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-msgid "Mono Build Tool to JetBrains Mono."
+msgid "set **Mono Build Tool** to **JetBrains Mono**."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
@@ -20555,11 +20585,12 @@ msgid "In Rider:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-msgid "Set ``MSBuild version`` to either bundled with Rider or .NET Core."
+msgid ""
+"Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-msgid "Install **Godot support** plugin."
+msgid "Install the **Godot support** plugin."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:70
@@ -20627,31 +20658,31 @@ msgstr "Vývoj"
 msgid "Visual Studio for Mac"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:113
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:115
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
-"in the \"Configure VS2019 for Debugging\" section below."
+"in the `:ref:doc_c_sharp_configuring_vs_2019_for_debugging` section below."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "Creating a C# script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:124
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
-"option when selecting ``Attach script`` in the context menu of a node in "
+"option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:129
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
 "using C# for scripting. If you're new to Godot, you may want to follow the "
@@ -20660,11 +20691,11 @@ msgid ""
 "easily from GDScript."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:140
 msgid "Project setup and workflow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -20676,18 +20707,18 @@ msgid ""
 "let it regenerate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:148
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:150
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:181
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` class which is part of the "
@@ -20696,7 +20727,7 @@ msgid ""
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:184
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:188
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
@@ -20704,11 +20735,11 @@ msgid ""
 "res://XXX.cs\"*"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:190
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:194
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:192
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:196
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -20716,15 +20747,29 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:196
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:199
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+msgid ""
+"You need to (re)build the project assemblies whenever you want to see new "
+"exported variables or signals in the editor. This build can be manually "
+"triggered by clicking the word **Mono** at the bottom of the editor window "
+"to reveal the Mono panel, then clicking the **Build Project** button."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
+msgid ""
+"You will also need to rebuild the project assemblies to apply changes in "
+"\"tool\" scripts."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:201
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:215
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
 "that need to be ironed out. Below is a list of the most important issues you "
@@ -20733,24 +20778,24 @@ msgid ""
 "godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:207
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:221
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:208
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:210
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:224
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:212
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -20760,18 +20805,18 @@ msgid ""
 "can use any custom properties or methods without this limitation."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:234
 msgid ""
 "As of Godot 3.2.2, exporting Mono projects is supported for desktop "
 "platforms (Linux, Windows and macOS), Android, HTML5, and iOS. The only "
 "platform not supported yet is UWP."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:225
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:239
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:227
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:241
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, the performance of C# in Godot — while generally in the same "
@@ -20782,11 +20827,11 @@ msgid ""
 "when talking to Godot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:235
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
 msgid "Using NuGet packages in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:237
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:251
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
 "Godot, as with any C# project. Many IDEs are able to add packages directly. "
@@ -20794,7 +20839,7 @@ msgid ""
 "csproj`` file located in the project root:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:254
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:268
 msgid ""
 "By default, tools like NuGet put ``Version`` as an attribute of the "
 "```PackageReference``` Node. **You must manually create a Version node as "
@@ -20802,36 +20847,36 @@ msgid ""
 "(This will be fixed in Godot 4.0.)"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:256
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:270
 msgid ""
 "Whenever packages are added or modified, run ``nuget restore`` (*not* "
 "``dotnet restore``) in the root of the project directory. To ensure that "
 "NuGet packages will be available for msbuild to use, run:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:265
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:279
 msgid "Profiling your C# code"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:281
 msgid ""
 "`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
 "profiler/>`_ is available for Linux and macOS. Due to a Mono change, it does "
 "not work on Windows currently."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:268
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:282
 msgid ""
 "External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
 "godot/pull/34382>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
 msgid "Configuring VS 2019 for debugging"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
 msgid ""
 "Godot has built-in support for workflows involving several popular C# IDEs. "
 "Built-in support for Visual Studio will be including in future versions, but "
@@ -20839,66 +20884,66 @@ msgid ""
 "Godot C# projects."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:280
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:296
 msgid ""
 "Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
 "with C++`` workloads selected."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:281
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:297
 msgid ""
 "**Ensure that you do not have Xamarin installed.** Do not choose the "
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
 "MonoDebugger, which breaks debugging."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:282
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:298
 msgid ""
 "Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:283
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:299
 msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:285
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:301
 msgid "Select ``Debug/Deploy to local Windows``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:286
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:302
 msgid "Leave ``Local Deploy Path`` blank."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:303
 msgid ""
 "Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
 "Settings --> Mono --> Debugger Agent."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:288
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:304
 msgid ""
 "Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
 "Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:306
 msgid ""
 "Run the game in Godot. It should hang at the Godot splash screen while it "
 "waits for your debugger to attach."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:307
 msgid ""
 "In VS 2019, open your project and choose Extensions --> Mono --> Attach to "
 "Mono Debugger."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:294
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:310
 msgid "Configuring Visual Studio Code for debugging"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:296
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:312
 msgid ""
 "To configure debugging, open Visual Studio Code and download the Mono Debug "
 "extension from Microsoft and the Godot extension by Ignacio. Then open the "
@@ -21299,8 +21344,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-msgid "See also: :ref:`c_sharp_signals`"
-msgstr ""
+#, fuzzy
+msgid "See also: :ref:`doc_c_sharp_signals`."
+msgstr ":ref:`doc_signály`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -22615,7 +22661,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
 msgstr ""
@@ -24214,23 +24260,23 @@ msgid ""
 "glTF binary files are fine."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
-"uses one it must be brought in separately."
+"uses one, it must be brought in separately."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid "Exporting DAE files from Blender"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
 msgid ""
 "Blender has built-in COLLADA support, but it does not work properly for the "
 "needs of game engines and should not be used as is."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
 msgid ""
 "Godot provides a `Blender plugin <https://github.com/godotengine/collada-"
 "exporter>`_ that will correctly export COLLADA scenes for use in Godot. It "
@@ -24238,11 +24284,11 @@ msgid ""
 "the future."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:68
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "Exporting ESCN files from Blender"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 msgid ""
 "The most powerful one, called `godot-blender-exporter <https://github.com/"
 "godotengine/godot-blender-exporter>`__. It uses a .escn file, which is kind "
@@ -24251,144 +24297,144 @@ msgid ""
 "experimental."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid ""
 "The ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
 msgid "Import workflows"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:82
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:88
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:88
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:92
 msgid "Single scene: A single scene file with everything built in."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:96
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:99
 msgid "Import options"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:98
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:101
 msgid "The importer has several options, which will be discussed below:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid "Root Type"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:108
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:114
 msgid "Root Name"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
 msgid "Allows setting a specific name to the generated root node."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:116
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:119
 msgid "Root Scale"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:118
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 msgid "The scale of the root node."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid "Custom Script"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:123
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:127
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:130
 msgid "Create a script like this:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:139
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
 msgid ""
 "The ``post_import`` function takes the imported scene as argument (the "
 "parameter is actually the root node of the scene). The scene that will "
 "finally be used must be returned. It can be a different one."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:144
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:163
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:218
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid "Storage"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:146
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:150
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Location"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
 msgid ""
 "Materials can be stored within the scene or in external files. By default, "
 "they are stored in external files so editing them is possible. This is "
@@ -24396,117 +24442,117 @@ msgid ""
 "in Godot."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:169
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
 msgid "Keep On Reimport"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:175
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid "Meshes"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Compress"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid "These are:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:189
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:191
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid "Additional info:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -24515,11 +24561,11 @@ msgid ""
 "exactly where they should be."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:213
 msgid "Ensure Tangents"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -24527,60 +24573,60 @@ msgid ""
 "them generated in the exporter."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:220
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
 "directly."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
 msgid "Light Baking"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:229
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
 msgid "**Enable:** The mesh is used in baked lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
 msgid "External Files"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
 msgid "Animation options"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -24588,15 +24634,15 @@ msgid ""
 "timeline or, at worst, put each animation in a separate file."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
 msgid "Import of animations is enabled by default."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid "FPS"
 msgstr "FPS"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:258
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -24604,17 +24650,17 @@ msgid ""
 "result in shaky animations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:263
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid "Filter Script"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -24624,7 +24670,7 @@ msgid ""
 "under the hood)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:274
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
@@ -24632,7 +24678,7 @@ msgid ""
 "\"``::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:280
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
 "Similarly, additional patterns can be added to the same line, separated by "
 "commas. Here is a modified example to additionally *include* all animations "
@@ -24640,7 +24686,7 @@ msgid ""
 "animations which have names ending in ``\"Attack\"``::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
 msgid ""
 "Following the animation selection filter statement, we add track filtering "
 "patterns to indicate which animation tracks should be kept or discarded. If "
@@ -24648,7 +24694,7 @@ msgid ""
 "animations will be discarded!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:290
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
 "It's important to note that track filter statements are applied in order for "
 "each track within the animation, this means that one line may include a "
@@ -24657,48 +24703,48 @@ msgid ""
 "in the filter script."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:298
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
 "Arm_Left_Control\"`` would be retained."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:312
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:315
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
 "keeping them after a reimport."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:316
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
 msgid "Optimizer"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:318
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:321
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
 "unless you suspect that an animation might be broken due to it being enabled."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid "Clips"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:327
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. For this to work, the model must have only one animation that is "
@@ -24707,11 +24753,11 @@ msgid ""
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
 msgid "Scene inheritance"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -24719,192 +24765,220 @@ msgid ""
 "app), Godot will re-import the whole scene."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:341
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
 "appear:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:343
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:345
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:349
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
 msgid "Other than that, everything is allowed!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:354
 msgid "Import hints"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:353
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:355
-msgid "Adding collision detection to objects"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
-msgid "Setting objects as navigation meshes"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:357
-msgid ""
-"Deleting nodes that are not used in the game engine (like specific lights "
-"used for modelling)"
-msgstr ""
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
+#, fuzzy
+msgid "Adding collision detection to objects."
+msgstr "Konfigurácia projektu"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
+#, fuzzy
+msgid "Setting objects as navigation meshes."
+msgstr "Viditeľná Navigácia"
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
 msgid ""
-"To simplify this workflow, Godot offers a few suffixes that can be added to "
-"the names of the objects in your 3D modelling software. When imported, Godot "
-"will detect them and perform actions automatically:"
+"Deleting nodes that are not used in the game engine (like specific lights "
+"used for modelling)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:364
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
+msgid ""
+"To simplify this workflow, Godot offers several suffixes that can be added "
+"to the names of the objects in your 3D modelling software. When imported, "
+"Godot will detect suffixes in object names and will perform actions "
+"automatically."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
+msgid "All the suffixes described below are *case-sensitive*."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 msgid "Remove nodes (-noimp)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
 msgid ""
-"Node names that have this suffix will be removed at import time, no matter "
-"what their type is. They will not appear in the imported scene."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
-msgid ""
-"Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
-"static collision node will be added, using the same geometry as the mesh."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:375
-msgid ""
-"Option \"-convcol\" will create a :ref:`class_convexpolygonshape` instead of "
-"a :ref:`class_concavepolygonshape`."
+"Objects that have the ``-noimp`` suffix will be removed at import-time no "
+"matter what their type is. They will not appear in the imported scene."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
-msgid ""
-"However, it is often the case that the visual geometry is too complex or too "
-"un-smooth for collisions, which ends up not working well."
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:379
 msgid ""
-"To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
-"upon import and create a :ref:`class_staticbody` collision instead. This "
-"helps the visual mesh and actual collision to be separated."
+"The option ``-col`` will work only for Mesh objects. If it is detected, a "
+"child static collision node will be added, using the same geometry as the "
+"mesh. This will create a triangle mesh collision shape, which is a slow, but "
+"accurate option for collision detection. This option is usually what you "
+"want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:384
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
 msgid ""
-"Option \"-convcolonly\" works in a similar way but will create a :ref:"
+"The option ``-convcol`` will create a :ref:`class_convexpolygonshape` "
+"instead of a :ref:`class_concavepolygonshape`. Unlike triangle meshes which "
+"can be concave, a convex shape can only accurately represent a shape that "
+"doesn't have any concave angles (a pyramid is convex, but a hollow box is "
+"concave). Due to this, convex collision shapes are generally not suited for "
+"level geometry. When representing simple enough meshes, convex collision "
+"shapes can result in better performance compared to a triangle collision "
+"shape. This option is ideal for simple or dynamic objects that require "
+"mostly-accurate collision detection."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
+msgid ""
+"However, in both cases, the visual geometry may be too complex or not smooth "
+"enough for collisions. This can create physics glitches and slow down the "
+"engine unneccesarily."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
+msgid ""
+"To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
+"upon importing and will create a :ref:`class_staticbody` collision instead. "
+"This helps the visual mesh and actual collision to be separated."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
+msgid ""
+"The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:386
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
 msgid ""
-"Option \"-colonly\" can also be used with Blender's empty objects. On "
+"The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:393
-msgid "Single arrow will create a :ref:`class_rayshape`"
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
+msgid "Single arrow will create a :ref:`class_rayshape`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
-msgid "Cube will create a :ref:`class_boxshape`"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:395
-msgid "Image will create a :ref:`class_planeshape`"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:396
-msgid ""
-"Sphere (and the others not listed) will create a :ref:`class_sphereshape`"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
-msgid ""
-"For better visibility in Blender's editor, the user can set \"X-Ray\" option "
-"on collision empties and set some distinct color for them in User "
-"Preferences / Themes / 3D View / Empty."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
-msgid "Create navigation (-navmesh)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
-msgid ""
-"A mesh node with this suffix will be converted to a navigation mesh. "
-"Original Mesh node will be removed."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
-msgid "Create a VehicleBody (-vehicle)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
-msgid ""
-"A mesh node with this suffix will be imported as a child to a :ref:"
-"`VehicleBody <class_VehicleBody>` node."
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
+msgid "Cube will create a :ref:`class_boxshape`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-msgid "Create a VehicleWheel (-wheel)"
+msgid "Image will create a :ref:`class_planeshape`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:415
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
 msgid ""
-"A mesh node with this suffix will be imported as a child to a :ref:"
-"`VehicleWheel <class_VehicleWheel>` node."
+"Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:418
-msgid "Rigid Body (-rigid)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:420
-msgid "Creates a rigid body from this mesh."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
-msgid "Animation loop (-loop, -cycle)"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
-"Animation clips in the COLLADA document that start or end with the token "
-"\"loop\" or \"cycle\" will be imported as a Godot Animation with the loop "
-"flag set. This is case-sensitive and does not require a hyphen."
+"When possible, **try to use a few primitive collision shapes** instead of "
+"triangle mesh or convex shapes. Primitive shapes often have the best "
+"performance and reliability."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:422
+msgid ""
+"For better visibility in Blender's editor, you can set the \"X-Ray\" option "
+"on collision empties and set some distinct color for them in Blender's "
+"**User Preferences > Themes > 3D View > Empty**."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+msgid "Create navigation (-navmesh)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
 msgid ""
+"A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
+"mesh. The original Mesh object will be removed at import-time."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
+msgid "Create a VehicleBody (-vehicle)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:435
+msgid ""
+"A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
+"ref:`class_VehicleBody` node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
+msgid "Create a VehicleWheel (-wheel)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:441
+msgid ""
+"A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
+"`class_VehicleWheel` node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
+msgid "Rigid Body (-rigid)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:447
+msgid ""
+"A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
+"`class_RigidBody`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
+msgid "Animation loop (-loop, -cycle)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
+msgid ""
+"Animation clips in the COLLADA document that start or end with the token "
+"``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
+"flag set. **Unlike the other suffixes described above, this does not require "
+"a hyphen.**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
+msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
-"the \"loop\" or \"cycle\" prefix or suffix."
+"the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
@@ -26348,8 +26422,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m http."
-"server`` with Python 3 to serve the current working directory at ``http://"
-"localhost:8000``."
+"server 8000 --bind 127.0.0.1`` with Python 3 to serve the current working "
+"directory at ``http://localhost:8000``."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:23
@@ -26391,7 +26465,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
-#: ../../docs/tutorials/optimization/general_optimization.rst:68
+#: ../../docs/tutorials/optimization/general_optimization.rst:69
 msgid "Limitations"
 msgstr ""
 
@@ -26713,7 +26787,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
 msgid "Exporting for dedicated servers"
 msgstr ""
 
@@ -26746,62 +26820,64 @@ msgstr ""
 msgid ""
 "**Windows:** There is no dedicated server build for Windows yet. As an "
 "alternative, you can use the ``--no-window`` command-line argument to "
-"prevent Godot from spawning a window."
+"prevent Godot from spawning a window. Note that even with the ``--no-"
+"window`` command-line argument, you'll need to have OpenGL support available "
+"on the Windows machine."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:20
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
 msgid ""
 "If your project uses C#, you'll have to use a Mono-enabled server binary."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:23
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:24
 msgid "\"Headless\" versus \"server\" binaries"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:25
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:26
 msgid ""
 "The `server download page <https://godotengine.org/download/server>`__ "
 "offers two kinds of binaries with several differences."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:28
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:29
 msgid ""
 "**Server:** Use this one for running dedicated servers. It does not contain "
 "editor functionality, and is therefore smaller and more optimized."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:31
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:32
 msgid ""
 "**Headless:** This binary contains editor functionality and is intended to "
 "be used for exporting projects. This binary *can* be used to run dedicated "
 "servers, but it's not recommended as it's larger and less optimized."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:36
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:37
 msgid "Exporting a PCK file"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
 msgid "There are two ways to export a project for a server:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:40
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:42
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:44
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:47
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
 msgid ""
 "Once you've downloaded a server binary, you should export a PCK file "
 "containing your project data. After creating the export preset, click "
@@ -26810,18 +26886,18 @@ msgid ""
 "no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:53
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
 msgid "See :ref:`doc_exporting_projects` for more information."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:57
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:58
 msgid ""
 "If you're exporting the project from a headless editor, call the headless "
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:63
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
 "The PCK file will include resources not normally needed by the server, such "
 "as textures and sounds. This means the PCK file will be larger than it could "
@@ -26829,18 +26905,18 @@ msgid ""
 "usage is planned in a future Godot release."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:68
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:69
 msgid ""
 "On the bright side, this allows the same PCK file to be used both by a "
 "client and dedicated server build. This can be useful if you want to ship a "
 "single archive that can be used both as a client and dedicated server."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
 msgid "Preparing the server distribution"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:75
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:76
 msgid ""
 "After downloading or compiling a server binary, you should now place it in "
 "the same folder as the PCK file you've exported. The server binary should "
@@ -26850,12 +26926,12 @@ msgid ""
 "file using the ``--main-pack`` command-line argument::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:849
 msgid "Next steps"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
 "On Linux, to make your dedicated server restart after a crash or system "
 "reboot, you can `create a systemd service <https://medium.com/@benmorel/"
@@ -26864,7 +26940,7 @@ msgid ""
 "provided by systemd."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:94
 msgid ""
 "If you have experience with containers, you could also look into wrapping "
 "your dedicated server in a `Docker <https://www.docker.com/>`__ container. "
@@ -33976,8 +34052,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
-msgid "Lights and shadows"
-msgstr ""
+#, fuzzy
+msgid "3D lights and shadows"
+msgstr ":ref:`doc_2d_svetlá_and_tieňe`"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
 msgid ""
@@ -37748,7 +37825,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:951
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1137
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1025
@@ -37784,7 +37861,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:965
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
@@ -41259,7 +41336,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:746
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:908
 msgid "Finally, let's look at ``bullet_hit``."
 msgstr ""
 
@@ -41991,7 +42068,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:524
 msgid ""
-"see :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
+"See :ref:`Ray-casting <doc_ray-casting>` for more information on raycasting "
 "in Godot."
 msgstr ""
 
@@ -42039,24 +42116,31 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:542
 msgid ""
+"See :ref:`Physics introduction "
+"<doc_physics_introduction_collision_layer_code_example>` for more "
+"information on Godot collision masks."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
+msgid ""
 "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:"
 "`RigidBody <class_RigidBody>` the player is holding."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:544
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
 msgid ""
 "We first set the mode of the :ref:`RigidBody <class_RigidBody>` we are "
 "holding to ``MODE_RIGID``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:546
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:551
 msgid ""
 "This is making a rather large assumption that all the rigid bodies will be "
 "using ``MODE_RIGID``. While that is the case for this tutorial series, that "
 "may not be the case in other projects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
 msgid ""
 "If you have rigid bodies with different modes, you may need to store the "
 "mode of the :ref:`RigidBody <class_RigidBody>` you have picked up into a "
@@ -42064,20 +42148,20 @@ msgid ""
 "picked it up."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:552
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:557
 msgid ""
 "Then we apply an impulse to send it flying forward. We send it flying in the "
 "direction the camera is facing, using the force we set in the "
 "``OBJECT_THROW_FORCE`` variable."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:554
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
 msgid ""
 "We then set the grabbed :ref:`RigidBody <class_RigidBody>`'s collision layer "
 "and mask to ``1``, so it can collide with anything on layer ``1`` again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:556
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:561
 msgid ""
 "This is, once again, making a rather large assumption that all the rigid "
 "bodies will be only on collision layer ``1``, and all collision masks will "
@@ -42088,69 +42172,69 @@ msgid ""
 "reversing the process."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:559
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:564
 msgid ""
 "Finally, we set ``grabbed_object`` to ``null`` since the player has "
 "successfully thrown the held object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:563
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
 "The last thing we do is check to see whether or not ``grabbed_object`` is "
 "equal to ``null``, outside all of the grabbing/throwing related code."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:565
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:570
 msgid ""
 "While technically not input related, it's easy enough to place the code "
 "moving the grabbed object here because it's only two lines, and then all of "
 "the grabbing/throwing code is in one place"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:573
 msgid ""
 "If the player is holding an object, we set its global position to the "
 "camera's position plus ``OBJECT_GRAB_DISTANCE`` in the direction the camera "
 "is facing."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:572
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:577
 msgid ""
 "Before we test this, we need to change something in ``_physics_process``. "
 "While the player is holding an object, we do not want the player to be able "
 "to change weapons or reload, so change ``_physics_process`` to the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:589
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
 msgid "Now the player cannot change weapons or reload while holding an object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:591
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
 msgid ""
 "Now you can grab and throw RigidBody nodes while you're in the ``UNARMED`` "
 "state! Go give it a try!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:599
 msgid "Adding a turret"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
 msgid "Next, let's make a turret to shoot the player!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:598
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:603
 msgid ""
 "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:600
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
 msgid ""
 "Notice how the turret is broken up into several parts: ``Base``, ``Head``, "
 "``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:602
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:607
 msgid ""
 "Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` "
 "and a mesh. Open up ``Head`` and you'll find there are several meshes, a :"
@@ -42158,7 +42242,7 @@ msgid ""
 "node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
 msgid ""
 "One thing to note with the ``Head`` is that the raycast will be where the "
 "turret's bullets will fire from if we are using raycasting. We also have two "
@@ -42166,213 +42250,213 @@ msgid ""
 "briefly shows when the turret fires."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:608
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:613
 msgid ""
 "``Vision_Area`` is an :ref:`Area <class_Area>` we'll use as the turret's "
 "ability to see. When something enters ``Vision_Area``, we'll assume the "
 "turret can see it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:615
 msgid ""
 "``Smoke`` is a :ref:`Particles <class_Particles>` node that will play when "
 "the turret is destroyed and repairing."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:619
 msgid ""
 "Now that we've looked at how the scene is set up, lets start writing the "
 "code for the turret. Select ``Turret`` and create a new script called "
 "``Turret.gd``. Add the following to ``Turret.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:780
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
 msgid ""
 "This is quite a bit of code, so let's break it down function by function. "
 "Let's first look at the class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:782
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
 msgid ""
 "``use_raycast``: An exported boolean so we can change whether the turret "
 "uses objects or raycasting for bullets."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:783
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
 msgid ""
 "``TURRET_DAMAGE_BULLET``: The amount of damage a single bullet scene does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:784
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
 msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:785
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
 "``FLASH_TIME``: The amount of time (in seconds) the muzzle flash meshes are "
 "visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:786
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
 msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:787
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:788
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
 msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:789
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:791
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
 msgid "``AMMO_IN_FULL_TURRET``: The amount of ammo in a full turret."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
 msgid "``AMMO_RELOAD_TIME``: The amount of time it takes the turret to reload."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
 msgid ""
 "``ammo_reload_timer``: A variable for tracking how long the turret has been "
 "reloading."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
 msgid "``current_target``: The turret's current target."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
 msgid ""
 "``is_active``: A variable for tracking whether the turret is able to fire at "
 "the target."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:799
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
 msgid ""
 "``PLAYER_HEIGHT``: The amount of height we're adding to the target so we're "
 "not shooting at its feet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:800
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
 msgid "``smoke_particles``: A variable to hold the smoke particles node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:801
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:806
 msgid "``turret_health``: The amount of health the turret currently has."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:802
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
 msgid "``MAX_TURRET_HEALTH``: The amount of health a fully healed turret has."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:803
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:808
 msgid ""
 "``DESTROYED_TIME``: The amount of time (in seconds) it takes for a destroyed "
 "turret to repair itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:804
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:809
 msgid ""
 "``destroyed_timer``: A variable for tracking the amount of time a turret has "
 "been destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:805
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:810
 msgid ""
 "``bullet_scene``: The bullet scene the turret fires (same scene as the "
 "player's pistol)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:812
 msgid "Whew, that's quite a few class variables!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:811
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:813
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:818
 msgid ""
 "Firstly, we get the vision area and connect the ``body_entered`` and "
 "``body_exited`` signals to ``body_entered_vision`` and "
 "``body_exited_vision``, respectively."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:815
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:820
 msgid ""
 "We then get all the nodes and assign them to their respective variables."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:817
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:822
 msgid ""
 "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
 "turret cannot hurt itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:819
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
 msgid ""
 "Then we make both flash meshes invisible at start, since we are not going to "
 "be firing during ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:821
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:826
 msgid ""
 "We then get the smoke particles node and assign it to the "
 "``smoke_particles`` variable. We also set ``emitting`` to ``false`` to "
 "ensure the particles are not emitting until the turret is broken."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:829
 msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:828
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:830
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:835
 msgid ""
 "Firstly, we check whether the turret is active. If the turret is active, we "
 "want to process the firing code."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:832
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:837
 msgid ""
 "Next, if ``flash_timer`` is greater than zero, meaning the flash meshes are "
 "visible, we want to remove delta from ``flash_timer``. If ``flash_timer`` "
@@ -42380,20 +42464,20 @@ msgid ""
 "of the flash meshes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:836
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
 msgid ""
 "Next, we check whether the turret has a target. If the turret has a target, "
 "we make the turret head look at it, adding ``PLAYER_HEIGHT`` so it is not "
 "aiming at the player's feet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:839
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
 msgid ""
 "We then check whether the turret's health is greater than zero. If it is, we "
 "then check whether there is ammo in the turret."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:846
 msgid ""
 "If there is, we then check whether ``fire_timer`` is greater than zero. If "
 "it is, the turret cannot fire and we need to remove ``delta`` from "
@@ -42401,7 +42485,7 @@ msgid ""
 "can fire a bullet, so we call the ``fire_bullet`` function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:849
 msgid ""
 "If there isn't any ammo in the turret, we check whether "
 "``ammo_reload_timer`` is greater than zero. If it is, we subtract ``delta`` "
@@ -42410,7 +42494,7 @@ msgid ""
 "turret has waited long enough to refill its ammo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:848
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:853
 msgid ""
 "Next, we check whether the turret's health is less than or equal to ``0`` "
 "outside of whether it is active or not. If the turret's health is zero or "
@@ -42418,29 +42502,29 @@ msgid ""
 "is, we subtract ``delta`` from ``destroyed_timer``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:851
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
 msgid ""
 "If ``destroyed_timer`` is less than or equal to zero, we set "
 "``turret_health`` to ``MAX_TURRET_HEALTH`` and stop emitting smoke particles "
 "by setting ``smoke_particles.emitting`` to ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:856
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:861
 msgid "Next let's go through ``fire_bullet``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:858
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 msgid "Firstly, we check whether the turret is using a raycast."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:860
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:865
 msgid ""
 "The code for using a raycast is almost entirely the same as the code in the "
 "rifle from :ref:`doc_fps_tutorial_part_two`, so I'm only going to go over it "
 "briefly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
 msgid ""
 "We first make the raycast look at the target, ensuring the raycast will hit "
 "the target if nothing is in the way. We then force the raycast to update so "
@@ -42451,7 +42535,7 @@ msgid ""
 "then subtract ``1`` from ``ammo_in_turret``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:873
 msgid ""
 "If the turret is not using a raycast, we spawn a bullet object instead. This "
 "code is almost entirely the same as the code in the pistol from :ref:"
@@ -42459,7 +42543,7 @@ msgid ""
 "to go over it briefly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:871
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:876
 msgid ""
 "We first make a bullet clone and assign it to ``clone``. We then add that as "
 "a child of the root node. We set the bullet's global transform to the barrel "
@@ -42468,7 +42552,7 @@ msgid ""
 "``ammo_in_turret``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:875
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:880
 msgid ""
 "Then, regardless of which bullet method we used, we make both of the muzzle "
 "flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to "
@@ -42477,13 +42561,13 @@ msgid ""
 "``ammo_reload_timer`` to ``AMMO_RELOAD_TIME`` so the turret reloads."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:881
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
 msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:883
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
 msgid ""
 "We first check whether the turret currently has a target by checking if "
 "``current_target`` is equal to ``null``. If the turret does not have a "
@@ -42491,31 +42575,31 @@ msgid ""
 "`Area <class_Area>` is a :ref:`KinematicBody <class_KinematicBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:891
 msgid ""
 "We're assuming the turret should only fire at :ref:`KinematicBody "
 "<class_KinematicBody>` nodes since that is what the player is using."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
 msgid ""
 "If the body that just entered the vision :ref:`Area <class_Area>` is a :ref:"
 "`KinematicBody <class_KinematicBody>`, we set ``current_target`` to the "
 "body, and set ``is_active`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:893
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
 msgid "Now let's look at ``body_exited_vision``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:895
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:900
 msgid ""
 "Firstly, we check whether the turret has a target. If it does, we then check "
 "whether the body that has just left the turret's vision :ref:`Area "
 "<class_Area>` is the turret's target."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
 msgid ""
 "If the body that has just left the vision :ref:`Area <class_Area>` is the "
 "turret's current target, we set ``current_target`` to ``null``, set "
@@ -42523,13 +42607,13 @@ msgid ""
 "the turret since the turret no longer has a target to fire at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:905
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:910
 msgid ""
 "We first subtract however much damage the bullet causes from the turret's "
 "health."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:907
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
 msgid ""
 "Then, we check whether the turret has been destroyed (health being zero or "
 "less). If the turret is destroyed, we start emitting the smoke particles and "
@@ -42537,7 +42621,7 @@ msgid ""
 "before being repaired."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:917
 msgid ""
 "Whew, with all of that done and coded, we only have one last thing to do "
 "before the turret is ready for use. Open up ``Turret.tscn`` if it's not "
@@ -42547,18 +42631,18 @@ msgid ""
 "<class_StaticBody>` you have selected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:916
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:921
 msgid "Add the following code to ``TurretBodies.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:931
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:936
 msgid ""
 "All this code does is call ``bullet_hit`` on whatever node to which "
 "``path_to_turret_root`` leads. Go back to the editor and assign the :ref:"
 "`NodePath <class_NodePath>` to the ``Turret`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:934
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
 msgid ""
 "Now select the other :ref:`StaticBody <class_StaticBody>` node (either in "
 "``Body`` or ``Head``) and assign ``TurretBodies.gd`` script to it. Once the "
@@ -42566,37 +42650,37 @@ msgid ""
 "``Turret`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:944
 msgid ""
 "The last thing we need to do is add a way for the player to be hurt. Since "
 "all the bullets use the ``bullet_hit`` function, we need to add that "
 "function to the player."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:941
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:946
 msgid "Open ``Player.gd`` and add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:948
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:953
 msgid ""
 "With all that done, you should have fully operational turrets! Go place a "
 "few in one/both/all of the scenes and give them a try!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:955
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:960
 msgid ""
 "Now you can pick up :ref:`RigidBody <class_RigidBody>` nodes and throw "
 "grenades. We now also have turrets to fire at the player."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:957
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
 msgid ""
 "In :ref:`doc_fps_tutorial_part_six`, we're going to add a main menu and a "
 "pause menu, add a respawn system for the player, and change/move the sound "
 "system so we can use it from any script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:962
+#: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:967
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_5.zip <files/Godot_FPS_Part_5.zip>`"
@@ -45486,11 +45570,11 @@ msgid ""
 "physics update rate or if the player's device can't keep up."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:99
+#: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid "Collision layers and masks"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:101
+#: ../../docs/tutorials/physics/physics_introduction.rst:103
 msgid ""
 "One of the most powerful, but frequently misunderstood, collision features "
 "is the collision layer system. This system allows you to build up complex "
@@ -45499,49 +45583,49 @@ msgid ""
 "can interact with."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:107
+#: ../../docs/tutorials/physics/physics_introduction.rst:109
 msgid "Let's look at each of the properties in turn:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:111
+#: ../../docs/tutorials/physics/physics_introduction.rst:113
 msgid "collision_layer"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:110
+#: ../../docs/tutorials/physics/physics_introduction.rst:112
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:116
+#: ../../docs/tutorials/physics/physics_introduction.rst:118
 msgid "collision_mask"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:114
+#: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid ""
 "This describes what layers the body will **scan** for collisions. If an "
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:118
+#: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:120
+#: ../../docs/tutorials/physics/physics_introduction.rst:122
 msgid ""
 "Keeping track of what you're using each layer for can be difficult, so you "
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:126
-msgid "**Example:**"
+#: ../../docs/tutorials/physics/physics_introduction.rst:129
+msgid "GUI example"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:128
+#: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
 "Player and Enemy should collide with Walls. The Player node should detect "
@@ -45549,7 +45633,7 @@ msgid ""
 "other."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:133
+#: ../../docs/tutorials/physics/physics_introduction.rst:136
 msgid ""
 "Start by naming layers 1-4 \"walls\", \"player\", \"enemies\", and \"coins\" "
 "and place each node type in its respective layer using the \"Layer\" "
@@ -45558,11 +45642,30 @@ msgid ""
 "this:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:142
+#: ../../docs/tutorials/physics/physics_introduction.rst:147
+#, fuzzy
+msgid "Code example"
+msgstr "Windows"
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:149
+msgid ""
+"In function calls, layers are specified as a bitmask. Where a function "
+"enables all layers by default, the layer mask will be given as "
+"``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
+"for layer masks, depending on your preference."
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:154
+msgid ""
+"The code equivalent of the above example where layers 1, 3 and 4 were "
+"enabled would be as follows::"
+msgstr ""
+
+#: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:144
+#: ../../docs/tutorials/physics/physics_introduction.rst:176
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
@@ -45570,33 +45673,33 @@ msgid ""
 "defined area."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:149
+#: ../../docs/tutorials/physics/physics_introduction.rst:181
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:151
+#: ../../docs/tutorials/physics/physics_introduction.rst:183
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:153
+#: ../../docs/tutorials/physics/physics_introduction.rst:185
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:155
+#: ../../docs/tutorials/physics/physics_introduction.rst:187
 msgid "Checking other areas for overlap."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:157
+#: ../../docs/tutorials/physics/physics_introduction.rst:189
 msgid "By default, areas also receive mouse and touchscreen input."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:160
+#: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid "StaticBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:162
+#: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid ""
 "A static body is one that is not moved by the physics engine. It "
 "participates in collision detection, but does not move in response to the "
@@ -45605,33 +45708,33 @@ msgid ""
 "``constant_angular_velocity`` properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:167
+#: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:170
+#: ../../docs/tutorials/physics/physics_introduction.rst:202
 msgid "Example uses for ``StaticBody2D``:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:172
+#: ../../docs/tutorials/physics/physics_introduction.rst:204
 msgid "Platforms (including moving platforms)"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:173
+#: ../../docs/tutorials/physics/physics_introduction.rst:205
 msgid "Conveyor belts"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:174
+#: ../../docs/tutorials/physics/physics_introduction.rst:206
 msgid "Walls and other obstacles"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:177
+#: ../../docs/tutorials/physics/physics_introduction.rst:209
 msgid "RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:179
+#: ../../docs/tutorials/physics/physics_introduction.rst:211
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -45640,20 +45743,20 @@ msgid ""
 "rotating, etc."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:185
+#: ../../docs/tutorials/physics/physics_introduction.rst:217
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:188
+#: ../../docs/tutorials/physics/physics_introduction.rst:220
 msgid ""
 "The body's behavior is also affected by the world's properties, as set in "
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:192
+#: ../../docs/tutorials/physics/physics_introduction.rst:224
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -45661,41 +45764,41 @@ msgid ""
 "by a collision or via code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:198
+#: ../../docs/tutorials/physics/physics_introduction.rst:230
 msgid "Rigid body modes"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:200
+#: ../../docs/tutorials/physics/physics_introduction.rst:232
 msgid "A rigid body can be set to one of four modes:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:202
+#: ../../docs/tutorials/physics/physics_introduction.rst:234
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:203
+#: ../../docs/tutorials/physics/physics_introduction.rst:235
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:204
+#: ../../docs/tutorials/physics/physics_introduction.rst:236
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:205
+#: ../../docs/tutorials/physics/physics_introduction.rst:237
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:208
+#: ../../docs/tutorials/physics/physics_introduction.rst:240
 msgid "Using RigidBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:210
+#: ../../docs/tutorials/physics/physics_introduction.rst:242
 msgid ""
 "One of the benefits of using a rigid body is that a lot of behavior can be "
 "had \"for free\" without writing any code. For example, if you were making "
@@ -45704,7 +45807,7 @@ msgid ""
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:216
+#: ../../docs/tutorials/physics/physics_introduction.rst:248
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
@@ -45717,18 +45820,18 @@ msgid ""
 "physics engine."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:225
+#: ../../docs/tutorials/physics/physics_introduction.rst:257
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:270
+#: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
 "Note that we are not setting the ``linear_velocity`` or ``angular_velocity`` "
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:274
+#: ../../docs/tutorials/physics/physics_introduction.rst:306
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -45737,11 +45840,11 @@ msgid ""
 "that this can have a negative effect on performance."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:281
+#: ../../docs/tutorials/physics/physics_introduction.rst:313
 msgid "Contact reporting"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:283
+#: ../../docs/tutorials/physics/physics_introduction.rst:315
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
@@ -45753,18 +45856,18 @@ msgid ""
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:290
+#: ../../docs/tutorials/physics/physics_introduction.rst:322
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:295
+#: ../../docs/tutorials/physics/physics_introduction.rst:327
 msgid "KinematicBody2D"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:297
+#: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
 ":ref:`KinematicBody2D <class_KinematicBody2D>` bodies detect collisions with "
 "other bodies, but are not affected by physics properties like gravity or "
@@ -45772,7 +45875,7 @@ msgid ""
 "engine will not move a kinematic body."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:302
+#: ../../docs/tutorials/physics/physics_introduction.rst:334
 msgid ""
 "When moving a kinematic body, you should not set its ``position`` directly. "
 "Instead, you use the ``move_and_collide()`` or ``move_and_slide()`` methods. "
@@ -45781,11 +45884,11 @@ msgid ""
 "any collision response must be coded manually."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:309
+#: ../../docs/tutorials/physics/physics_introduction.rst:341
 msgid "Kinematic collision response"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:311
+#: ../../docs/tutorials/physics/physics_introduction.rst:343
 msgid ""
 "After a collision, you may want the body to bounce, to slide along a wall, "
 "or to alter the properties of the object it hit. The way you handle "
@@ -45793,11 +45896,11 @@ msgid ""
 "KinematicBody2D."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:316
+#: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:318
+#: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
 "`KinematicCollision2D <class_KinematicCollision2D>` object, which contains "
@@ -45805,21 +45908,21 @@ msgid ""
 "information to determine the response."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:323
+#: ../../docs/tutorials/physics/physics_introduction.rst:355
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:354
+#: ../../docs/tutorials/physics/physics_introduction.rst:386
 msgid "Or to bounce off of the colliding object:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:383
+#: ../../docs/tutorials/physics/physics_introduction.rst:415
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:385
+#: ../../docs/tutorials/physics/physics_introduction.rst:417
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
 "in a top-down game or running up and down slopes in a platformer. While it's "
@@ -45828,19 +45931,19 @@ msgid ""
 "without writing much code."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:391
+#: ../../docs/tutorials/physics/physics_introduction.rst:423
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:395
+#: ../../docs/tutorials/physics/physics_introduction.rst:427
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/physics_introduction.rst:462
+#: ../../docs/tutorials/physics/physics_introduction.rst:494
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
@@ -46727,11 +46830,17 @@ msgid ""
 "``collision_mask`` member variable:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:226
+#: ../../docs/tutorials/physics/ray-casting.rst:224
+msgid ""
+"See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
+"on how to set the collision mask."
+msgstr ""
+
+#: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:228
+#: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
 "There is not much need to do this because :ref:`CollisionObject "
@@ -46740,7 +46849,7 @@ msgid ""
 "here's how."
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:234
+#: ../../docs/tutorials/physics/ray-casting.rst:235
 msgid ""
 "To cast a ray from the screen, you need a :ref:`Camera <class_Camera>` node. "
 "A ``Camera`` can be in two projection modes: perspective and orthogonal. "
@@ -46749,11 +46858,11 @@ msgid ""
 "perspective mode:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:242
+#: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr ""
 
-#: ../../docs/tutorials/physics/ray-casting.rst:270
+#: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
@@ -46905,8 +47014,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-msgid "For more information, read :ref:`doc_physics_introduction`"
-msgstr ""
+#, fuzzy
+msgid ""
+"For more information, read :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."
+msgstr ":ref:`doc_použitie_multiple_threads`"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -64749,7 +64861,7 @@ msgid ""
 "and RPC will work great! Here is an example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:297
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:298
 msgid ""
 "Depending on when you execute pre_configure_game(), you may need to change "
 "any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
@@ -64757,11 +64869,11 @@ msgid ""
 "is being called)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid "Synchronizing game start"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:303
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:304
 msgid ""
 "Setting up players might take different amounts of time for every peer due "
 "to lag, different hardware, or other reasons. To make sure the game will "
@@ -64769,17 +64881,17 @@ msgid ""
 "are ready can be useful:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:312
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:313
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:333
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:335
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
 "In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
@@ -64787,24 +64899,24 @@ msgid ""
 "masters."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "Network master"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:341
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid ""
 "When not explicitly set, the network master is inherited from the parent "
 "node, which if not changed, is always going to be the server (ID 1). Thus "
 "the server has authority over all nodes by default."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
@@ -64812,7 +64924,7 @@ msgid ""
 "recursively set on all child nodes of the node as well)."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:348
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
@@ -64820,89 +64932,142 @@ msgid ""
 "``true`` when executed on the server and ``false`` on all client peers."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:350
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
 "noticed that each peer was set to have network master authority for their "
 "own player (Node) instead of the server:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:370
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:374
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
 "master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:372
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:376
 msgid ""
 "To clarify, here is an example of how this looks in the `bomber demo "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:379
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
 msgid "Master and puppet keywords"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:387
 msgid ""
 "The real advantage of this model is when used with the ``master``/``puppet`` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the ``remote`` keyword, functions can also be tagged with them:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:390
 msgid "Example bomb code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:394
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:398
 msgid "Example player code:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:408
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:415
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
-"is master). The bomb knows the bodies in the area, so it checks them and "
-"checks that they contain an ``exploded`` function."
+"is the master of this bomb-node, e.g. the host). The bomb knows the bodies "
+"(player nodes) in the area, so it checks that they contain an ``exploded`` "
+"method before calling it."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:418
 msgid ""
-"If they do, the bomb calls ``exploded`` on it. However, the ``exploded`` "
-"method in the player has a ``master`` keyword. This means that only the "
-"player who is master for that instance will actually get the function."
+"Recall that each peer has a complete set of instances of player nodes, one "
+"instance for each peer (including itself and the host). Each peer has set "
+"itself as the master of the instance corresponding to itself, and it has set "
+"a different peer as the master for each of the other instances."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
-"This instance, then, calls the ``stun`` method in the same instances of that "
-"same player (but in different peers), and only those which are set as "
-"puppet, making the player look stunned in all the peers (as well as the "
-"current, master one)."
+"Now, going back to the call to the ``exploded`` method, the bomb on the host "
+"has called it remotely on all bodies in the area that have the method. "
+"However, this method is in a player node and has a ``master`` keyword."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
+msgid ""
+"The ``master`` keyword on the ``exploded`` method in the player node means "
+"two things for how this call is made. Firstly, from the perspective of the "
+"calling peer (the host), the calling peer will only attempt to remotely call "
+"the method on the peer that it has set as the network master of the player "
+"node in question. Secondly, from the perspective of the peer the host is "
+"sending the call to, the peer will only accept the call if it set itself as "
+"the network master of the player node with the method being called (which "
+"has the ``master`` keyword). This works well as long as all peers agree on "
+"who is the master of what."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:432
+msgid ""
+"The above setup means that only the peer who owns the affected body will be "
+"responsible for telling all the other peers that its body was stunned, after "
+"being remotely instructed to do so by the host's bomb. The owning peer "
+"therefore (still in the ``exploded`` method) tells all the other peers that "
+"its player node was stunned. The peer does this by remotely calling the "
+"``stun`` method on all instances of that player node (on the other peers). "
+"Because the ``stun`` method has the ``puppet`` keyword, only peers who did "
+"not set themselves as the network master of the node will call it (in other "
+"words, those peers are set as puppets for that node by virtue of not being "
+"the network master of it)."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
+msgid ""
+"The result of this call to ``stun`` is to make the player look stunned on "
+"the screen of all the peers, including the current network master peer (due "
+"to the local call to ``stun`` after ``rpc(\"stun\")``)."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:442
+msgid ""
+"The master of the bomb (the host) repeats the above steps for each of the "
+"bodies in the area, such that all the instances of any player in the bomb "
+"area get stunned on the screens of all the peers."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
-"make much sense for an area-of-effect case like the bomb, but in other "
+"make much sense for an area-of-effect case like the bomb, but might in other "
 "cases, like single target damage."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:427
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:455
 msgid ""
 "Once you've made a multiplayer game, you may want to export it to run it on "
 "a dedicated server with no GPU available. See :ref:"
 "`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/networking/high_level_multiplayer.rst:433
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:461
 msgid ""
 "The code samples on this page aren't designed to run on a dedicated server. "
 "You'll have to modify them so the server isn't considered to be a player. "
 "You'll also have to modify the game starting mechanism so that the first "
 "player who joins can start the game."
+msgstr ""
+
+#: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
+msgid ""
+"The bomberman example here is largely for illustrational purposes, and does "
+"not do anything on the host-side to handle the case where a peer uses a "
+"custom client to cheat by for example refusing to to stun itself. In the "
+"current implementation such cheating is perfectly possible because each "
+"client is the network master of its own player, and the network master of a "
+"player is the one which decides whether to call the I-was-stunned method "
+"(``stun``) on all of the other peers and itself."
 msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:4
@@ -75246,14 +75411,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:55
-msgid ""
-"There are several methods of measuring performance, including : * Putting a "
-"start / stop timer around code of interest * Using the Godot profiler * "
-"Using external third party profilers * Using GPU profilers / debuggers * "
-"Checking the frame rate (with vsync disabled)"
+msgid "There are several methods of measuring performance, including:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:62
+#: ../../docs/tutorials/optimization/general_optimization.rst:57
+msgid "Putting a start / stop timer around code of interest"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:58
+msgid "Using the Godot profiler"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:59
+msgid "Using external third party profilers"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:60
+msgid "Using GPU profilers / debuggers"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:61
+msgid "Checking the frame rate (with vsync disabled)"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/general_optimization.rst:63
 msgid ""
 "Be very aware that the relative performance of different areas can vary on "
 "different hardware. Often it is a good idea to make timings on more than one "
@@ -75261,82 +75442,82 @@ msgid ""
 "mobile."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:70
+#: ../../docs/tutorials/optimization/general_optimization.rst:71
 msgid ""
 "CPU Profilers are often the 'go to' method for measuring performance, "
 "however they don't always tell the whole story."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:73
+#: ../../docs/tutorials/optimization/general_optimization.rst:74
 msgid ""
 "Bottlenecks are often on the GPU, `as a result` of instructions given by the "
 "CPU"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:75
+#: ../../docs/tutorials/optimization/general_optimization.rst:76
 msgid ""
 "Spikes can occur in the Operating System processes (outside of Godot) `as a "
 "result` of instructions used in Godot (for example dynamic memory allocation)"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:77
+#: ../../docs/tutorials/optimization/general_optimization.rst:78
 msgid "You may not be able to profile e.g. a mobile phone"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:78
+#: ../../docs/tutorials/optimization/general_optimization.rst:79
 msgid ""
 "You may have to solve performance problems that occur on hardware you don't "
 "have access to"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:81
+#: ../../docs/tutorials/optimization/general_optimization.rst:82
 msgid ""
 "As a result of these limitations, you often need to use detective work to "
 "find out where bottlenecks are."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:85
+#: ../../docs/tutorials/optimization/general_optimization.rst:86
 msgid "Detective work"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:87
+#: ../../docs/tutorials/optimization/general_optimization.rst:88
 msgid ""
 "Detective work is a crucial skill for developers (both in terms of "
 "performance, and also in terms of bug fixing). This can include hypothesis "
 "testing, and binary search."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:92
+#: ../../docs/tutorials/optimization/general_optimization.rst:93
 msgid "Hypothesis testing"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:94
+#: ../../docs/tutorials/optimization/general_optimization.rst:95
 msgid ""
 "Say for example you believe that sprites are slowing down your game. You can "
 "test this hypothesis for example by:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:97
+#: ../../docs/tutorials/optimization/general_optimization.rst:98
 msgid "Measuring the performance when you add more sprites, or take some away."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:99
+#: ../../docs/tutorials/optimization/general_optimization.rst:100
 msgid ""
 "This may lead to a further hypothesis - does the size of the sprite "
 "determine the performance drop?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:102
+#: ../../docs/tutorials/optimization/general_optimization.rst:103
 msgid ""
 "You can test this by keeping everything the same, but changing the sprite "
 "size, and measuring performance"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:106
+#: ../../docs/tutorials/optimization/general_optimization.rst:107
 msgid "Binary search"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:108
+#: ../../docs/tutorials/optimization/general_optimization.rst:109
 msgid ""
 "Say you know that frames are taking much longer than they should, but you "
 "are not sure where the bottleneck lies. You could begin by commenting out "
@@ -75344,24 +75525,24 @@ msgid ""
 "performance improved more or less than expected?"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:113
+#: ../../docs/tutorials/optimization/general_optimization.rst:114
 msgid ""
 "Once you know which of the two halves contains the bottleneck, you can then "
 "repeat this process, until you have pinned down the problematic area."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:117
+#: ../../docs/tutorials/optimization/general_optimization.rst:118
 msgid "Profilers"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:119
+#: ../../docs/tutorials/optimization/general_optimization.rst:120
 msgid ""
 "Profilers allow you to time your program while running it. Profilers then "
 "provide results telling you what percentage of time was spent in different "
 "functions and areas, and how often functions were called."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:123
+#: ../../docs/tutorials/optimization/general_optimization.rst:124
 msgid ""
 "This can be very useful both to identify bottlenecks and to measure the "
 "results of your improvements. Sometimes attempts to improve performance can "
@@ -75369,22 +75550,22 @@ msgid ""
 "to guide your efforts."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:128
+#: ../../docs/tutorials/optimization/general_optimization.rst:129
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:43
 msgid ""
 "For more info about using the profiler within Godot see :ref:"
 "`doc_debugger_panel`."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:132
+#: ../../docs/tutorials/optimization/general_optimization.rst:133
 msgid "Principles"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:134
+#: ../../docs/tutorials/optimization/general_optimization.rst:135
 msgid "Donald Knuth:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:136
+#: ../../docs/tutorials/optimization/general_optimization.rst:137
 msgid ""
 "*Programmers waste enormous amounts of time thinking about, or worrying "
 "about, the speed of noncritical parts of their programs, and these attempts "
@@ -75394,32 +75575,32 @@ msgid ""
 "we should not pass up our opportunities in that critical 3%.*"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:143
+#: ../../docs/tutorials/optimization/general_optimization.rst:144
 msgid "The messages are very important:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:145
+#: ../../docs/tutorials/optimization/general_optimization.rst:146
 msgid ""
 "Programmer / Developer time is limited. Instead of blindly trying to speed "
 "up all aspects of a program we should concentrate our efforts on the aspects "
 "that really matter."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:148
+#: ../../docs/tutorials/optimization/general_optimization.rst:149
 msgid ""
 "Efforts at optimization often end up with code that is harder to read and "
 "debug than non-optimized code. It is in our interests to limit this to areas "
 "that will really benefit."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:152
+#: ../../docs/tutorials/optimization/general_optimization.rst:153
 msgid ""
 "Just because we `can` optimize a particular bit of code, it doesn't "
 "necessarily mean that we should. Knowing when, and when not to optimize is a "
 "great skill to develop."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:156
+#: ../../docs/tutorials/optimization/general_optimization.rst:157
 msgid ""
 "One misleading aspect of the quote is that people tend to focus on the "
 "subquote \"premature optimization is the root of all evil\". While "
@@ -75427,11 +75608,11 @@ msgid ""
 "is the result of performant design."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:162
+#: ../../docs/tutorials/optimization/general_optimization.rst:163
 msgid "Performant design"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:164
+#: ../../docs/tutorials/optimization/general_optimization.rst:165
 msgid ""
 "The danger with encouraging people to ignore optimization until necessary, "
 "is that it conveniently ignores that the most important time to consider "
@@ -75441,7 +75622,7 @@ msgid ""
 "it will never run as fast as a program designed for performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:171
+#: ../../docs/tutorials/optimization/general_optimization.rst:172
 msgid ""
 "This tends to be far more important in game / graphics programming than in "
 "general programming. A performant design, even without low level "
@@ -75449,11 +75630,11 @@ msgid ""
 "low level optimization."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:177
+#: ../../docs/tutorials/optimization/general_optimization.rst:178
 msgid "Incremental design"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:179
+#: ../../docs/tutorials/optimization/general_optimization.rst:180
 msgid ""
 "Of course, in practice, unless you have prior knowledge, you are unlikely to "
 "come up with the best design first time. So you will often make a series of "
@@ -75463,7 +75644,7 @@ msgid ""
 "the overall design, otherwise much of your work will be thrown out."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:186
+#: ../../docs/tutorials/optimization/general_optimization.rst:187
 msgid ""
 "It is difficult to give general guidelines for performant design because "
 "this is so dependent on the problem. One point worth mentioning though, on "
@@ -75473,52 +75654,52 @@ msgid ""
 "linear access, rather than jumping around in memory."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:194
+#: ../../docs/tutorials/optimization/general_optimization.rst:195
 #, fuzzy
 msgid "The optimization process"
 msgstr "Optimalizácia"
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:196
+#: ../../docs/tutorials/optimization/general_optimization.rst:197
 msgid ""
 "Assuming we have a reasonable design, and taking our lessons from Knuth, our "
 "first step in optimization should be to identify the biggest bottlenecks - "
 "the slowest functions, the low hanging fruit."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:200
+#: ../../docs/tutorials/optimization/general_optimization.rst:201
 msgid ""
 "Once we have successfully improved the speed of the slowest area, it may no "
 "longer be the bottleneck. So we should test / profile again, and find the "
 "next bottleneck on which to focus."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:204
+#: ../../docs/tutorials/optimization/general_optimization.rst:205
 msgid "The process is thus:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:206
+#: ../../docs/tutorials/optimization/general_optimization.rst:207
 msgid "Profile / Identify bottleneck"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:207
+#: ../../docs/tutorials/optimization/general_optimization.rst:208
 msgid "Optimize bottleneck"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:208
+#: ../../docs/tutorials/optimization/general_optimization.rst:209
 msgid "Return to step 1"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:211
+#: ../../docs/tutorials/optimization/general_optimization.rst:212
 msgid "Optimizing bottlenecks"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:213
+#: ../../docs/tutorials/optimization/general_optimization.rst:214
 msgid ""
 "Some profilers will even tell you which part of a function (which data "
 "accesses, calculations) are slowing things down."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:216
+#: ../../docs/tutorials/optimization/general_optimization.rst:217
 msgid ""
 "As with design you should concentrate your efforts first on making sure the "
 "algorithms and data structures are the best they can be. Data access should "
@@ -75528,14 +75709,14 @@ msgid ""
 "loading precalculated data files)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:223
+#: ../../docs/tutorials/optimization/general_optimization.rst:224
 msgid ""
 "Once algorithms and data are good, you can often make small changes in "
 "routines which improve performance, things like moving calculations outside "
 "of loops."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:226
+#: ../../docs/tutorials/optimization/general_optimization.rst:227
 msgid ""
 "Always retest your timing / bottlenecks after making each change. Some "
 "changes will increase speed, others may have a negative effect. Sometimes a "
@@ -75543,16 +75724,16 @@ msgid ""
 "code, and you may choose to leave out that optimization."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:232
+#: ../../docs/tutorials/optimization/general_optimization.rst:233
 #: ../../docs/tutorials/optimization/batching.rst:514
 msgid "Appendix"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:235
+#: ../../docs/tutorials/optimization/general_optimization.rst:236
 msgid "Bottleneck math"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:237
+#: ../../docs/tutorials/optimization/general_optimization.rst:238
 msgid ""
 "The proverb \"a chain is only as strong as its weakest link\" applies "
 "directly to performance optimization. If your project is spending 90% of the "
@@ -75560,32 +75741,32 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:253
+#: ../../docs/tutorials/optimization/general_optimization.rst:254
 msgid ""
 "So in this example improving this bottleneck A by a factor of 9x, decreases "
 "overall frame time by 5x, and increases frames per second by 5x."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:256
+#: ../../docs/tutorials/optimization/general_optimization.rst:257
 msgid ""
 "If however, something else is running slowly and also bottlenecking your "
 "project, then the same improvement can lead to less dramatic gains:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:271
+#: ../../docs/tutorials/optimization/general_optimization.rst:272
 msgid ""
 "So in this example, even though we have hugely optimized functionality A, "
 "the actual gain in terms of frame rate is quite small."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:274
+#: ../../docs/tutorials/optimization/general_optimization.rst:275
 msgid ""
 "In games, things become even more complicated because the CPU and GPU run "
 "independently of one another. Your total frame time is determined by the "
 "slower of the two."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/general_optimization.rst:290
+#: ../../docs/tutorials/optimization/general_optimization.rst:291
 msgid ""
 "In this example, we optimized the CPU hugely again, but the frame time did "
 "not improve, because we are GPU-bottlenecked."
@@ -77635,10 +77816,9 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:35
 msgid ""
-"This is generally not a problem, given that refresh rates higher than 60 Hz "
-"are barely visible to the human eye, and starting with Godot 3.1, a frame "
-"timer was introduced that tries to synchronize with refresh as well as "
-"possible."
+"This is generally not a problem, given that most monitors are 60 Hz, and "
+"starting with Godot 3.1, a frame timer was introduced that tries to "
+"synchronize with refresh as well as possible."
 msgstr ""
 
 #: ../../docs/tutorials/misc/jitter_stutter.rst:38
@@ -83067,51 +83247,59 @@ msgid ""
 "tutorials on compiling Godot for each platform."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:21
+#: ../../docs/development/compiling/optimizing_for_size.rst:22
+msgid ""
+"You can use the online `Godot build options generator <https://godot-build-"
+"options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
+"SCons options. You can then save this file and place it at the root of your "
+"Godot source directory."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:23
+#: ../../docs/development/compiling/optimizing_for_size.rst:30
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:29
+#: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
 "Tools must be disabled in order to use this flag, as the editor is not "
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:34
+#: ../../docs/development/compiling/optimizing_for_size.rst:41
 msgid "Disabling advanced GUI nodes"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:36
+#: ../../docs/development/compiling/optimizing_for_size.rst:43
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
-"TextEditor or GraphEdit. They can be disabled using a build flag:"
+"TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:44
+#: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:46
+#: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:53
+#: ../../docs/development/compiling/optimizing_for_size.rst:60
 msgid ""
 "The list of modules that can be disabled will appear, together with all "
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:61
+#: ../../docs/development/compiling/optimizing_for_size.rst:68
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
@@ -83119,37 +83307,37 @@ msgid ""
 "to play videos)."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:66
+#: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid ""
 "Alternatively, you can supply a list of disabled modules by creating "
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:110
+#: ../../docs/development/compiling/optimizing_for_size.rst:117
 #, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_gui_containers`"
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:113
+#: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:115
+#: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:122
+#: ../../docs/development/compiling/optimizing_for_size.rst:129
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:125
+#: ../../docs/development/compiling/optimizing_for_size.rst:132
 msgid "Compiling with link-time optimization"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:127
+#: ../../docs/development/compiling/optimizing_for_size.rst:134
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
 "terms of performance and file size. It works by eliminating duplicate "
@@ -83157,32 +83345,32 @@ msgid ""
 "and MSVC compilers:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:136
+#: ../../docs/development/compiling/optimizing_for_size.rst:143
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:140
+#: ../../docs/development/compiling/optimizing_for_size.rst:147
 msgid "Stripping binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:142
+#: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:149
+#: ../../docs/development/compiling/optimizing_for_size.rst:156
 msgid "Using UPX to compress binaries"
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:151
+#: ../../docs/development/compiling/optimizing_for_size.rst:158
 msgid ""
 "If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
 "compressor can be used. This can reduce binary size considerably."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:155
+#: ../../docs/development/compiling/optimizing_for_size.rst:162
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "
