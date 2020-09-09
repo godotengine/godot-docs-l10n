@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Abid Febriansyah <abid.febri027@gmail.com>, 2020.
 # Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020.
 # Alficiro <alfiboy2003@gmail.com>, 2019.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
@@ -12,7 +13,7 @@
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
-# MonsterGila <fikrirazor@outlook.co.id>, 2019.
+# MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
 # Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
@@ -25,8 +26,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-06-03 20:09+0000\n"
-"Last-Translator: Sofyan Sugianto <sofyanartem@gmail.com>\n"
+"PO-Revision-Date: 2020-08-20 15:20+0000\n"
+"Last-Translator: Abid Febriansyah <abid.febri027@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -34,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -902,56 +903,51 @@ msgstr ""
 "thread (Lua, Python, Squirrel, JS, AS, dsb.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
 "Lemahnya dukungan class-extending dalam sebagian besar script VM, dan "
-"penyesuaian dengan cara kerja Godot sangatlah tidak effisien (Lua, Python, "
+"penyesuaian dengan cara kerja Godot sangatlah tidak efisien (Lua, Python, "
 "JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Banyak bahasa yg ada mempunyai antarmuka yang buruk untuk binding ke C++, "
-"menghasilkan kode yang terlalu banyak, bugs, hambatan, dan ketidakefisienan "
-"umum yang lain (Lua, Python, Squirrel, JS, etc.) Kami ingin fokus ke enjin "
-"yang hebat, bukan banyaknya integrasi."
+"Banyak bahasa pemrograman yang ada mempunyai antarmuka yang buruk untuk "
+"binding ke C++, menghasilkan kode yang terlalu banyak, bugs, hambatan, dan "
+"ketidakefisienan umum yang lain (Lua, Python, Squirrel, JS, etc.) Kami ingin "
+"fokus ke enjin yang hebat, bukan banyaknya integrasi."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
 "Tidak ada tipe-tipe vector bawaan (vector3, matrix4, dsb.), menyebabkan "
-"penurunan performa yang besar ketika menggunakan tipe-tipe kustom (Lua, "
+"penurunan performa yang besar ketika menggunakan tipe-tipe khusus (Lua, "
 "Python, Squirrel, JS, AS, dsb.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Koleksi sampah menyebabkan kemacetan atau penggunaan memori yang banyak "
+"Garbage Collector menyebabkan kemacetan atau penggunaan memori yang banyak "
 "secara sia-sia (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Sulitnya untuk megintegrasikan kode editor agar menyediakan kode completion, "
-"live editing, dll (semuanya itu). Ini didukung baik oleh GDScript."
+"Sulitnya untuk megintegrasikan code editor agar menyediakan code completion, "
+"live editing, dll (semuanya itu). Hal ini didukung dengan baik oleh GDScript"
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -1320,8 +1316,9 @@ msgstr ""
 "atau contoh projects(jika bisa diterapkan)."
 
 #: ../../docs/about/faq.rst:293
+#, fuzzy
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "Apakah mungkin menggunakan Godot sebagai pustaka (library)?"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1508,13 +1505,14 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Fitur"
+msgstr "Daftar fitur"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Halaman ini bertujuan untuk mendaftar semua fitur yang saat ini didukung "
+"oleh Godot."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1540,15 +1538,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 dan lebih baru (64-bit dan 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 dan lebih baru (64-bit, x86 dan ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit dan 32-bit, x86 dan ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
@@ -1566,26 +1564,27 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 dan lebih baru."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 dan lebih baru."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 melalui WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`doc_csg_tools`"
+msgstr ":ref:`Konsol <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot bertujuan untuk menjadi platform-independen sebisa mungkin dan dapat "
+"di-porting ke platform baru dengan relatif mudah."
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1598,26 +1597,30 @@ msgstr "Editor"
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
 msgid "**Features:**"
-msgstr ""
+msgstr "**Fitur:**"
 
 #: ../../docs/about/list_of_features.rst:44
+#, fuzzy
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Editor pohon adegan."
 
 #: ../../docs/about/list_of_features.rst:45
 #, fuzzy
 msgid "Script editor."
-msgstr "Scripting"
+msgstr "Editor skrip."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Dukungan untuk :ref:`editor skrip luar <doc_external_editor>` seperti Visual "
+"Studio Code atau Vim."
 
 #: ../../docs/about/list_of_features.rst:48
+#, fuzzy
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
@@ -92017,7 +92020,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:51
 msgid "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
-msgstr ""
+msgstr "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:52
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"

@@ -7,7 +7,9 @@
 # Ido Dana <idodana01@gmail.com>, 2019.
 # RaikaRakka <shaiyatta@gmail.com>, 2018.
 # shai sinai <lemun420il@gmail.com>, 2019.
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2018-2019.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2018-2020.
+# Ziv D <wizdavid@gmail.com>, 2020.
+# חן אשחר <eshcharc@gmail.com>, 2020.
 # יובל הרמן <nhajeho1@gmail.com>, 2019.
 #
 msgid ""
@@ -15,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2019-09-07 13:53+0000\n"
-"Last-Translator: Ido Dana <idodana01@gmail.com>\n"
+"PO-Revision-Date: 2020-08-28 13:09+0000\n"
+"Last-Translator: Ziv D <wizdavid@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/he/>\n"
 "Language: he\n"
@@ -25,12 +27,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 3.9-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.2* branch"
-msgstr "תיעוד גודוט - ענף ראשי"
+msgstr "מסמכי גודוט - ענף *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -41,7 +42,6 @@ msgstr ""
 "הימני למטה."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.2 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -49,8 +49,9 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"זה התיעוד לענף הפיתוח. כדי לעבור לתיעוד לענף הנוכחי **יציב** `לחץ כאן "
-"<https://docs.godotengine.org/en/stable>`_."
+"זה התיעוד לענף היציב 3.2. לתיעוד של סניף **פיתוח** הנוכחי `תסתכל כאן "
+"<https://docs.godotengine.org/en/latest>` _. תוכל גם לגלוש בתיעוד לענף היציב "
+"הקודם `3.1 <https://docs.godotengine.org/en/3.1>` _."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -173,7 +174,7 @@ msgstr ""
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "על"
+msgstr "על אודות"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -281,7 +282,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "לפני שאת\\ה מתחיל\\ה"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -466,6 +467,8 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"בנוסף לתיעוד זה, ייתכן ותרצה לבחון את `המיזמים לדוגמא של גודו <https://"
+"github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
@@ -506,6 +509,7 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"אתה רשאי להוריד ולהשתמש בגודו לכל מטרה, אישית, ללא-רווח, מסחרית, או אחרת."
 
 #: ../../docs/about/faq.rst:17
 #, fuzzy
@@ -4888,9 +4892,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "אותות"
+msgstr "אות"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1329
@@ -12313,7 +12316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "חיפוש בעזרה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -12328,9 +12331,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "אנימציות"
+msgstr "מצב ללא הסחות דעת"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -12346,7 +12348,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "הלשונית הבאה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -12362,7 +12364,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "הלשונית הקודמת"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -12394,7 +12396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr ""
+msgstr "פתיחת סצנה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -12410,7 +12412,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr ""
+msgstr "סגירת סצנה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -12426,7 +12428,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "פתיחה מחדש של סצנה סגורה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -12444,7 +12446,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr ""
+msgstr "שמירת סצנה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12476,7 +12478,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "שמירת כל הסצנות"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -12539,7 +12541,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "ביטול"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -12558,7 +12560,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "ביצוע חוזר"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12574,7 +12576,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "יציאה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -12590,7 +12592,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr ""
+msgstr "יציאה לרשימת מיזמים"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -12606,7 +12608,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "שמירת צילום מסך"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12622,7 +12624,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "הפעלת/ביטול מסך מלא"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12638,7 +12640,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "הרצה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12656,7 +12658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr ""
+msgstr "השהיית סצנה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12672,7 +12674,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "עצירה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12689,7 +12691,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr ""
+msgstr "הרצת הסצנה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12705,9 +12707,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "אותות"
+msgstr "הרצת סצנה בהתאמה אישית"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12725,7 +12726,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "הרחבת פאנל תחתון"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -13011,7 +13012,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "הכנס מפתח"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -13484,7 +13485,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "העתק"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13621,7 +13622,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "החלף"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13940,7 +13941,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "מעבר לשורה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -14108,7 +14109,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "שמירה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -14235,7 +14236,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "איתור סוג המפרק"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -14243,7 +14244,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr ""
+msgstr "העתקת מפרקים"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -14251,7 +14252,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
-msgstr ""
+msgstr "גזירת מפרקים"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
@@ -14267,7 +14268,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "מחיקת הנבחר"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -14293,7 +14294,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
-msgstr ""
+msgstr "יצירת פונקציה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -14304,9 +14305,8 @@ msgid "``visual_script_editor/create_function``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
-#, fuzzy
 msgid "Edit Member"
-msgstr "חברים"
+msgstr "עריכת שדה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -14322,7 +14322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "רענון תרשים"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -14340,7 +14340,7 @@ msgstr "עורך"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "העתקת בחירה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -14348,7 +14348,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "ניקוי פלט"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -14401,7 +14401,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "מעבר אחורה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -14409,7 +14409,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "מעבר קדימה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -14417,7 +14417,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "מעבר מעלה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -14425,7 +14425,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "רענון"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -14433,7 +14433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "הצג/הסתר קבצים מוסתרים"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14449,7 +14449,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "הוספת/ביטול מועדף"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14457,7 +14457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "שינוי מצב"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -14495,7 +14495,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr ""
+msgstr "מיקוד נתיב"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14510,7 +14510,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "העברת מועדף מעלה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -14528,7 +14528,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "העברת מועדף מטה"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -14549,9 +14549,8 @@ msgid "FileSystem Dock"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "נתיב"
+msgstr "העתקת נתיב"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -24264,7 +24263,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
 msgid ""
@@ -58369,7 +58368,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:301
 msgid "Class"
-msgstr ""
+msgstr "מחלקה"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:301
 msgid "Operator"
@@ -79787,7 +79786,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "צורות התנגשות גלויים"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
@@ -84513,7 +84512,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "קבע"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"

@@ -32,6 +32,7 @@
 # Danilo Castro <danilo.moreira94@gmail.com>, 2018.
 # Danilo Mendonça de Oliveira <danilo.mo@live.com>, 2020.
 # Danyllo Viana <danyllospik@yahoo.com.br>, 2020.
+# Davi Josoé Wollmann Souza <davi.wollmann.s@gmail.com>, 2020.
 # Davi <wokep.ma.wavid@gmail.com>, 2019.
 # DeeJayLSP <djlsplays@gmail.com>, 2020.
 # Deyvid Lopes <deyvidyury@yahoo.com.br>, 2019.
@@ -49,6 +50,7 @@
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
 # Fupi Brazil <fupicat@gmail.com>, 2020.
+# GabiiFernandes <gabrielelfernandes2001@gmail.com>, 2020.
 # Gabriela Araújo <Gabirin@outlook.com.br>, 2020.
 # Gabriel Andrade <gabrielandrade@poli.ufrj.br>, 2019.
 # Gabriel Carvalho <billlmaster@gmail.com>, 2018-2019.
@@ -63,6 +65,7 @@
 # Guilherme Rodrigues Ribeiro <keybpr@gmail.com>, 2018.
 # GUILHERME SOUZA REIS DE MELO LOPES <guilhermesrml@unipam.edu.br>, 2020.
 # Gustavo da Silva Santos <gustavo94.rb@gmail.com>, 2019.
+# Gustavo Maciel <gustamaciel2012@hotmail.com>, 2020.
 # Gustavo Oliveira <gulopbr@gmail.com>, 2018.
 # Gustavo Pinheiro <gstvdm@gmail.com>, 2020.
 # Heitor de Oliveira Fonseca <heitorofonseca@gmail.com>, 2020.
@@ -133,6 +136,7 @@
 # Pedro Pacheco <pedroxixipa@hotmail.com>, 2020.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Pietro Benati Carrara <piticarrara@gmail.com>, 2019.
+# Rafael Henrique Capati <rhcapati@gmail.com>, 2020.
 # Rafael Pontes <rafaelgpontes1@gmail.com>, 2019.
 # Rafael Roque <rafael.roquec@gmail.com>, 2019.
 # Rafael Silveira <res883@gmail.com>, 2019.
@@ -176,8 +180,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-11 11:34+0000\n"
-"Last-Translator: Jairo Tuboi <tuboi.jairo@gmail.com>\n"
+"PO-Revision-Date: 2020-09-07 21:32+0000\n"
+"Last-Translator: Gustavo Maciel <gustamaciel2012@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -185,7 +189,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -208,9 +212,9 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"Esta é a documentação para a branch estável (3.2). Procurando pela "
-"documentação da atual branch de **desenvolvimento**? `Dê uma olhada aqui "
-"<https://docs.godotengine.org/en/latest>`_. Você também pode ver a "
+"Esta é a documentação para a versão estável 3.2. Procurando pela "
+"documentação da versão mais atual de **desenvolvimento**? `Dê uma olhada "
+"aqui <https://docs.godotengine.org/en/latest>`_. Você também pode ver a "
 "documentação da versão estável anterior `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 
@@ -242,8 +246,8 @@ msgid ""
 "stable Godot releases nevertheless."
 msgstr ""
 "Por enquanto, as traduções localizadas estão disponíveis apenas para a "
-"branch \"latest\" (desenvolvimento), mas devem ser adequadas para aprender "
-"como usar versões estáveis de Godot."
+"versão mais\"recente\" (de desenvolvimento), mas devem ser adequadas para "
+"aprender como usar versões estáveis de Godot."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -1708,7 +1712,7 @@ msgid ""
 msgstr ""
 "Aquivos binarios são estatisticamente vinculados e poderam ser executados em "
 "qualquer distribuição se compilados apartir de uma distribuição base mais "
-"antiga"
+"antiga."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
@@ -1716,7 +1720,7 @@ msgstr "Binários oficiais são compilados em Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
 msgid "**Runs exported projects:**"
-msgstr "Execute projetos exportados:"
+msgstr "**Execute projetos exportados:**"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
@@ -1769,11 +1773,11 @@ msgid ""
 "Visual Studio Code or Vim."
 msgstr ""
 "Suporte a :ref:`external script editors <doc_external_editor>` como Visual "
-"Studio Code ou Vim"
+"Studio Code ou Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
@@ -1789,7 +1793,7 @@ msgstr "Carregando cenas."
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Live scene editing."
-msgstr "Edição de cena em tempo real"
+msgstr "Edição de cena em tempo real."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
@@ -1797,7 +1801,7 @@ msgid ""
 "running project."
 msgstr ""
 "Alterações serão refletidas no editor e se manteram mesmo após fechar o "
-"projeto em execução"
+"projeto em execução."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
@@ -1813,7 +1817,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:56
 msgid "Live camera replication."
-msgstr "Replicação de câmera em tempo real"
+msgstr "Replicação de câmera em tempo real."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
@@ -1854,7 +1858,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "Gráficos 2D"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
@@ -2067,202 +2071,222 @@ msgstr "**Câmera:**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Câmeras em perspectiva, ortográfica e deslocamento de tronco."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Renderização baseada em física:**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Segue o modelo Disney PBR."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"Utiliza o fluxo de trabalho roughness-metallic com suporte para texturas ORM."
 
 #: ../../docs/about/list_of_features.rst:143
 msgid "Normal mapping."
-msgstr "Mapa Normal."
+msgstr "Mapeamento Normal."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3:* Mapeamento de Paralaxe/Relevo com níveis de detalhamento automático "
+"baseado na distancia."
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "*GLES3:* Dispersão e transmissão da sub-superfície."
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:* Desvanecimento de proximidade (partículas suaves)."
 
 #: ../../docs/about/list_of_features.rst:147
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Desvanecimento de distância que pode usar alpha blending ou dithering para "
+"evitar passar pelo pipeline transparente."
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "O pontilhamento pode ser determinado por pixel ou por objeto."
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Iluminação em tempo real:**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Luzes direcionadas (sol/lua). Até 4 por cena."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Luzes unidirecionais."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Focos de luz com ajuste de angulo por cone e atenuação."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**Mapeamento de sombras:**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*Luz Direcional:* Ortagonal (mais rápida), PSSM 2 divisões e 4 divisões. "
+"Suporta mesclagem entre divisões."
 
 #: ../../docs/about/list_of_features.rst:161
 msgid ""
 "*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* Dual parabolid (rápido) ou cubemap (mais lento, mas mais "
+"preciso ). Suporta texturas de projeção de cores no formato de panoramas."
 
 #: ../../docs/about/list_of_features.rst:163
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "Importando Texturas"
+msgstr "*Destaque:* Testura única."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Iluminação global por luzes indiretas:**"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
+"Mapa de luz pré-gerado ou Baked lightmaps (rápido, mas não pode ser "
+"atualizado durante a execução)."
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Mapas de luz (Lightmaps) são gerados pela CPU."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr ""
+msgstr "*GLES3:* GI probes (mais lento, semi-tempo real). Suporta reflexões."
 
 #: ../../docs/about/list_of_features.rst:171
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "**Opções de execução**"
+msgstr "**Opções de execução:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "*GLES3:* Reflexões baseadas em Voxel (ao utilizar GI probes)."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"Reflexões rápidas ou reflexões lentas em tempo real usando ReflectionProbe. "
+"A correção de paralaxe pode ser ativada opcionalmente."
 
 #: ../../docs/about/list_of_features.rst:176
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* Reflexões de Screen-space."
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Reflection techniques can be mixed together for greater accuracy."
-msgstr ""
+msgstr "Técnicas de reflexão podem ser combinadas para maior precisão."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Céu:**"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Céu de Panorama (utilizando HDRI)."
 
 #: ../../docs/about/list_of_features.rst:182
-#, fuzzy
 msgid "Procedural sky."
-msgstr ":ref:`Sombreamento de partículas <doc_shading_language>`"
+msgstr "Céu procedural."
 
 #: ../../docs/about/list_of_features.rst:184
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Neblina:**"
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Profundidade da neblina com ajuste de curva de atenuação."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "Altura da neblina (Chão ou teto) com ajuste de atenuação."
 
 #: ../../docs/about/list_of_features.rst:188
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Suporte para auto coloração de neblina a depender da direção da câmera (para "
+"se ajustar de acordo com a cor do sol)."
 
 #: ../../docs/about/list_of_features.rst:190
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
+"Transmissão opcional para fazer com que as luzes sejam mais visíveis quando "
+"com neblina."
 
 #: ../../docs/about/list_of_features.rst:192
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Partículas"
+msgstr "**Partículas:**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
+"*GLES3:* Partículas baseados em GPU com suporte para shaders de partículas "
+"personalizado."
 
 #: ../../docs/about/list_of_features.rst:197
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "Funções e Variáveis"
+msgstr "**Processamento-póstumo:**"
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
+"*GLES3:* Ajustes de exposição automáticos baseado no brilho da janela de "
+"visualização."
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Profundidade de campo próxima e distante."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* Screen-space ambient occlusion."
 msgstr ""
+"*GLES3:* Screen-space ambient occlusion (SSAO - Oclusão de ambiente do "
+"espaço da tela)."
 
 #: ../../docs/about/list_of_features.rst:203
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"Brilho/Bloom com escala bicúbica opcional e vários modos de combinação "
+"disponíveis: Tela, Luz Suave, Subexposição Linear, Substituir."
 
 #: ../../docs/about/list_of_features.rst:205
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Correção de cor de rampa unidimensional."
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Ajustes de brilho, contraste e saturação."
 
 #: ../../docs/about/list_of_features.rst:208
 #, fuzzy
@@ -2271,7 +2295,7 @@ msgstr "Funcionalidades"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Filtragem mais próxima, bilinear, trilinear ou anisotrópica."
 
 #: ../../docs/about/list_of_features.rst:212
 #, fuzzy
@@ -2281,22 +2305,23 @@ msgstr "TextureProgress"
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
+"*GLES3:* BPTC para compressão de alta qualidade (não é compatível com macOS)."
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (não é compatível com macOS)."
 
 #: ../../docs/about/list_of_features.rst:216
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (recomendado ao utilizar o renderizador GLES2)."
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "*GLES3:* S3TC (não é compatível com as plataformas móveis/Web)."
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Anti-aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:221
 #, fuzzy
@@ -2308,39 +2333,45 @@ msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"A maioria desses efeitos pode ser ajustada para melhor desempenho ou para "
+"melhorar ainda mais a qualidade. Isso pode ser útil ao usar o Godot para "
+"renderização offline."
 
 #: ../../docs/about/list_of_features.rst:227
-#, fuzzy
 msgid "3D tools"
-msgstr "tool"
+msgstr "Ferramentas 3D"
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
+"Malhas integradas: cubo, cilindro/cone, (hemi) esfera, prisma, plano, quad."
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Geometria procedural <toc-procedural_geometry>`"
+msgstr ""
+"Ferramentas para :ref:`geração de geometria procedural "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+":ref:`Geometria sólida construtiva <doc_csg_tools>` (destinado para criação "
+"de protótipos)."
 
 #: ../../docs/about/list_of_features.rst:233
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Nó Path3D para representar um caminho no espaço 3D."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "Nó PathFollow3D para fazer com que os nós sigam um Path3D."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Classe auxiliar de geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:238
 #, fuzzy
@@ -2350,11 +2381,11 @@ msgstr "Física"
 #: ../../docs/about/list_of_features.rst:245
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
 msgstr ""
+"Corpos de veículos (destinado para físicas arcade, não para simulação)."
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "Soft bodies."
-msgstr "StaticBody2D"
+msgstr "Corpos macios."
 
 #: ../../docs/about/list_of_features.rst:248
 #, fuzzy
@@ -2414,9 +2445,8 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "**General:**"
-msgstr "Geral"
+msgstr "**Geral:**"
 
 #: ../../docs/about/list_of_features.rst:271
 #, fuzzy
@@ -2710,9 +2740,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "Modo Navegação"
+msgstr "Navegação"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."
@@ -25717,8 +25746,8 @@ msgid ""
 "Run the game in Godot. It should hang at the Godot splash screen while it "
 "waits for your debugger to attach."
 msgstr ""
-"Execute o jogo em Godot. Godot apresentará a splash screen enquanto espera "
-"que seu depurador se conecte."
+"Execute o jogo no Godot. A tela de inicialização do Godot será apresentada "
+"enquanto espera que seu depurador se conecte."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:307
 msgid ""
@@ -32505,6 +32534,9 @@ msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__, newer versions do not work."
 msgstr ""
+"Baixe e instale o  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vai "
+"funcionar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 #, fuzzy
@@ -33039,11 +33071,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "No chunked responses"
-msgstr ""
+msgstr "Sem respostas fragmentadas"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "A verificação de host não pode ser desativada"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
@@ -33113,12 +33145,14 @@ msgstr "GDNative"
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Clipboard synchronization between engine and operating system"
 msgstr ""
+"Sincronização da área de transferência entre a engine e o sistema operacional"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
+"Redes diferentes de :ref:`class_HTTPClient` e :ref:`class_WebSocketClient`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 #, fuzzy
@@ -33175,6 +33209,14 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"Os outros arquivos exportados são servidos como estão, próximos do arquivo "
+"``.html``, com seus nomes inalterados. O arquivo ``.wasm`` é um módulo "
+"binário WebAssembly que implementa a engine. O arquivo ``.pck`` é o pacote "
+"principal do Godot que contém seu jogo. O arquivo ``.js`` contém códigos de "
+"inicialização e é utilizado pelo arquivo ``.html`` para acessar a engine. O "
+"arquivo ``.png`` contém a imagem inicial de inicialização. Não é utilizado "
+"na página HTML padrão, mas é incluído para :ref:`páginas HTML personalizadas "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -33196,6 +33238,10 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"Hospedar os arquivos com compressão no lado do servidor é recomendada "
+"principalmente pelos arquivos ``.pck`` e ``.wasm``, que geralmente são "
+"arquivos grandes. O módulo WebAssembly comprime muito bem, até cerca de um "
+"quarto do seu tamanho original com compressão gzip."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
@@ -33217,6 +33263,9 @@ msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Se um caminho para o arquivo **Página HTML personalizado** for especificado, "
+"ele será utilizado ao invés da página HTML padrão. Veja :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
@@ -33224,6 +33273,9 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Incluído no Cabeçalho** é inserido no elemento ``<head>`` da página HTML "
+"gerada. Isso permite, por exemplo, carregar webfonts e APIs JavaScript, "
+"incluindo CSS, ou executar código JavaScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 #, fuzzy
@@ -33244,28 +33296,37 @@ msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"O valor da última instrução do JavaScript é convertido para um valor "
+"GDScript e retornado por ``eval()`` sob certas circunstâncias:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
+"Um ``número`` do JavaScript é retornado como GDScript :ref:`class_float`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
+"O valor ``booleano`` do JavaScript é retornado como GDScript :ref:"
+"`class_bool`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
+"O valor do tipo ``string`` no JavaScript é retornado como GDScript :ref:"
+"`class_String`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"No JavaScript os valores do tipo ``ArrayBuffer``, ``TypedArray`` e "
+"``DataView`` são retornados como GDScript :ref:`class_PoolByteArray`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "Qualquer outro valor no JavaScript é retornado como ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
@@ -33287,6 +33348,9 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"O método``eval`` também aceita um segundo argumento do tipo ``Booleano`` que "
+"determina se o código deve ser executado no contexto global, padrão "
+"``falso``para prevenir poluir o espaço de nome global::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
@@ -54529,6 +54593,10 @@ msgid ""
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
+"Este tutorial **não** é um livro formal sobre álgebra linear. Veremos apenas "
+"como os vetores são aplicados no desenvolvimento de jogos. Para uma visão "
+"mais ampla sobre matemática, veja https://www.khanacademy.org/math/linear-"
+"algebra"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
@@ -55211,6 +55279,9 @@ msgid ""
 "understand the :ref:`doc_vector_math` tutorial, as this tutorial requires a "
 "knowledge of vectors."
 msgstr ""
+"Antes de ler este tutorial, recomendamos que você leia o tutorial e entenda "
+"tudo sobre :ref:`doc_vector_math`, pois este tutorial requer conhecimento de "
+"vetores."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:13
 msgid ""
@@ -55219,6 +55290,10 @@ msgid ""
 "are most of the time applied as translation, rotation, and scale, so we will "
 "focus on how to represent those with matrices."
 msgstr ""
+"Este tutorial é sobre *transformações* e como são representados no Godot "
+"utilizando matrizes. Este não é um guia completo sobre matrizes. As "
+"transformações geralmente são aplicadas na translação, rotação e escala, "
+"portanto, vamos nos concentrar em como representá-las com matrizes."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:18
 msgid ""
@@ -81464,6 +81539,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:244
 msgid "Files are delivered with server-side compression on Chromium"
 msgstr ""
+"Os arquivos são entregues com compactação do lado do servidor no Chromium"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:245
 #, fuzzy
@@ -91441,7 +91517,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Introdução ao desenvolvimento do Godot"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -91449,10 +91525,13 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"Esta página tem como objetivo apresentar a organização global do código "
+"fonte do Godot Engine, e fornecer dicas úteis para expandir/corrigir a "
+"engine no lado do código C++."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagrama de Arquitetura"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -91460,10 +91539,13 @@ msgid ""
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"O diagrama a seguir descreve a arquitetura usada pelo Godot, desde os "
+"componentes principais até os drivers abstratos, por meio da estrutura da "
+"cena e dos servidores."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "Depurando o Editor com gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -91474,14 +91556,20 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Se você está escrevendo ou corrigindo bugs que afetam o editor do Godot "
+"Engine, lembre-se que o binário por padrão vai executar primeiro o "
+"gerenciador de projetos, e então o editor é apenas executado em outro "
+"processo quando você selecionar um projeto. Para executar um projeto "
+"diretamente, você precisa executar o binário do Godot Engine utilizado o "
+"argumento ``-e`` a partir do diretório do seu projeto. Tipicamente:"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "Ou:"
 
 #: ../../docs/development/cpp/configuring_an_ide/index.rst:2
 msgid "Configuring an IDE"
-msgstr ""
+msgstr "Configurando uma IDE"
 
 #: ../../docs/development/cpp/configuring_an_ide/index.rst:4
 msgid ""
@@ -91502,9 +91590,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:4
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android"
+msgstr "Android Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
 msgid ""
@@ -91522,7 +91609,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
 msgid "Importing the project"
-msgstr ""
+msgstr "Importando o projeto"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 msgid ""
@@ -91531,25 +91618,28 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Android"
+msgstr "Janela de boas-vindas do Android Studio."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
 "``settings.gradle`` file."
 msgstr ""
+"Navegue para``<Diretório raíz do Godot>/platform/android/java`` e selecione "
+"o arquivo ``settings.gradle``."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."
-msgstr ""
+msgstr "O Android Studio vai importar e indexar o projeto."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:25
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
 msgstr ""
+"Para compilar o projeto, siga as instruções de compilação :ref:` <toc-devel-"
+"compiling>`."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:27
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:43
@@ -91558,23 +91648,24 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Veja a página correspondente na `página do Godot <https://godotengine.org/"
-"contact>`_."
+"Se você se deparar com qualquer problema, peça ajuda em um dos `canais da "
+"comunidade do Godot <https://godotengine.org/community>`__."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:4
 msgid "CLion"
-msgstr ""
+msgstr "CLion"
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:6
 msgid ""
 "`CLion <https://www.jetbrains.com/clion/>`_ is a commercial `JetBrains "
 "<https://www.jetbrains.com/>`_ IDE for C++."
 msgstr ""
+"`CLion <https://www.jetbrains.com/clion/>`_ é uma IDE comercial desenvolvida "
+"pela `JetBrains <https://www.jetbrains.com/>`_ para programação em C++."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:12
 msgid ""
@@ -91584,6 +91675,11 @@ msgid ""
 "`Android Studio <doc_configuring_an_ide_android_studio>` which can also be "
 "used by CLion."
 msgstr ""
+"O CLion requer um arquivo ``CMakeLists.txt`` como arquivo de projeto, que é "
+"um problema pelo Godot porque usa o SCons buildsystem ao invés do CMake. "
+"Porém, existe uma configuração do ``CMakeLists.txt`` para o :ref:`Android "
+"Studio <doc_configuring_an_ide_android_studio>` que também pode ser usado "
+"pelo CLion."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:17
 msgid ""
@@ -92217,7 +92313,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
@@ -92659,7 +92755,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_audiostreams.rst:348
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
-msgstr ""
+msgstr "Referências:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
@@ -93423,12 +93519,12 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
-msgstr ""
+msgstr "Módulos personalizados no C++"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Módulos"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -93437,6 +93533,10 @@ msgid ""
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
+"O Godot permite estender a engine de uma forma modular. Novos módulos podem "
+"ser criados e então habilitado/desativado. Isto permite adicionar novas "
+"funcionalidades no mesmo nível da engine sem modificá-la, que pode ser "
+"separada para uso e reutilização em diferentes módulos."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
 msgid ""
@@ -93446,13 +93546,19 @@ msgid ""
 "and others. As many new modules as desired can be created and combined. The "
 "SCons build system will take care of it transparently."
 msgstr ""
+"Módulos são localizados no subdiretório ``modules/`` do sistema de "
+"compilação. Por padrão, dezenas de módulos são habilitados, como GDScript "
+"(que, sim, não faz parte da engine básica), o tempo de execução (runtime) do "
+"Mono, um módulo de expressões regulares, dentre outros. Podem ser criados e "
+"combinados quantos módulos novos desejar. O sistema de compilação SCons vai "
+"cuidar disso de forma transparente."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 #: ../../docs/development/cpp/custom_audiostreams.rst:29
 #: ../../docs/development/cpp/custom_godot_servers.rst:26
 msgid "What for?"
-msgstr ""
+msgstr "Para que serve?"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
@@ -93460,36 +93566,42 @@ msgid ""
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
 "++ modules can be useful in the following scenarios:"
 msgstr ""
+"Embora seja recomendado que a maior parte do jogo seja escrito em script (já "
+"que economiza muito tempo), é perfeitamente possível usar C ++ em seu lugar. "
+"Adicionar módulos C ++ pode ser útil nos seguintes cenários:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr ""
+msgstr "Vinculando uma biblioteca externa no Godot (tipo PhysX, FMOD, etc)."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
-msgstr ""
+msgstr "Otimize as partes principais de um jogo."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
-msgstr ""
+msgstr "Adicionando novas funcionalidades para a engine e/ou editor."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
-msgstr ""
+msgstr "Portando um jogo existente."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
 msgstr ""
+"Escreva um novo jogo completo em C ++ porque você não pode viver sem C ++."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr ""
+msgstr "Criando um novo módulo"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 msgid ""
 "Before creating a module, make sure to download the source code of Godot and "
 "manage to compile it. There are tutorials in the documentation for this."
 msgstr ""
+"Antes de criar um módulo, certifique-se de baixar o código fonte do Godot e "
+"conseguir compilá-lo. Existem tutoriais na documentação para isso."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -93497,6 +93609,9 @@ msgid ""
 "``modules/``. If you want to maintain the module separately, you can "
 "checkout a different VCS into modules and use it."
 msgstr ""
+"Para criar um módulo, a primeira etapa é criar um diretório dentro de "
+"``modules/``. Se você deseja manter o módulo separado, você pode criar um "
+"checkout de um VCS diferente em ``modules/`` e usá-lo."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
 msgid ""
@@ -93518,6 +93633,8 @@ msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
 msgstr ""
+"Então, a nova classe precisa ser registrada de alguma forma, então mais dois "
+"arquivos precisam ser criados:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:123
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:79
@@ -93537,6 +93654,8 @@ msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
+"Em seguida, precisamos criar um arquivo``SCsub`` para que o sistema de "
+"compilação compile o módulo:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:164
 msgid ""
@@ -94066,6 +94185,11 @@ msgid ""
 "again, the previous loaded Resource will be referenced. Naturally, loaded "
 "resources must be stateless."
 msgstr ""
+"ResourceFormatLoader é uma interface de criação para carregamento de "
+"recursos. Os Recursos são contêineres primários. Quando o carregamento é "
+"chamado novamente no mesmo caminho de arquivo, o Recurso carregado "
+"anteriormente será referenciado. Naturalmente, os recursos carregados devem "
+"ser sem estado (stateless)."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
 msgid ""
@@ -94075,7 +94199,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
@@ -94088,31 +94212,31 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
-msgstr ""
+msgstr "Adicionando novo suporte para muitos formatos de arquivo"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
-msgstr ""
+msgstr "Formatos de Áudio"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
-msgstr ""
+msgstr "Formatos de Vídeo"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
-msgstr ""
+msgstr "Modelos de aprendizado de máquina"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:32
 msgid "What not?"
-msgstr ""
+msgstr "Para que não serve?"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:34
 msgid "Raster images"
-msgstr ""
+msgstr "Imagens Rasterizadas"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:36
 msgid "ImageFormatLoader should be used to load images."
-msgstr ""
+msgstr "ImageFormatLoader deve ser utilizado para carregar imagens."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
 msgid ""
@@ -94124,12 +94248,14 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
-msgstr ""
+msgstr "Criando um ResourceFormatLoader"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:47
 msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr ""
+"Cada formato de arquivo consiste de um contêiner de dados e um "
+"``ResourceFormatLoader``."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
 msgid ""
@@ -94137,6 +94263,9 @@ msgid ""
 "necessary metadata for supporting new extensions in Godot. The class must "
 "the return the format name and the extension string."
 msgstr ""
+"ResourceFormatLoaders geralmente são classes simples que retorna todos os "
+"metadados necessários para suportar extensões no Godot. A classe precisa "
+"retornar o nome do formato e a string da extensão."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:53
 msgid ""
@@ -94144,6 +94273,9 @@ msgid ""
 "with the ``load`` function. To load a resource, ``load`` must read and "
 "handle data serialization."
 msgstr ""
+"Além disso, ResourceFormatLoaders deve converter os caminhos de arquivo em "
+"recursos com a função ``load``. Para carregar um recurso, a função ``load`` "
+"deve ler e manipular a serialização de dados."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
 #, fuzzy
@@ -94167,6 +94299,10 @@ msgid ""
 "managed resources. Godot needs a new registered data type to understand "
 "additional binary formats such as machine learning models."
 msgstr ""
+"Godot pode não ter um substituto adequado de :ref:`doc_core_types` ou "
+"recursos gerenciados. Godot precisa de um novo tipo de dados registrado para "
+"reconhecer formatos binários adicionais, como modelos de aprendizado de "
+"máquina."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
 #, fuzzy
@@ -94175,7 +94311,7 @@ msgstr "Segue abaixo um exemplo de arquivo de uma classe."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
-msgstr ""
+msgstr "Considerações"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
@@ -94188,6 +94324,8 @@ msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
 msgstr ""
+"Por exemplo, aqui está o código para traduzir chamadas de ``FileAccess`` em "
+"``std::istream``."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
@@ -94218,10 +94356,13 @@ msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
 msgstr ""
+"O Godot registra um ``ResourcesFormatLoader`` com um identificador (handler) "
+"do tipo``ResourceLoader``. O handler seleciona o carregamento apropriado "
+"automaticamente quando a função ``load`` é chamada."
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:361
 msgid "Loading it on GDScript"
-msgstr ""
+msgstr "Carregando no GDScript"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:363
 msgid ""
@@ -99724,7 +99865,7 @@ msgid ""
 "playlists>`_ are well-regarded in the community and often recommended as a "
 "gentle introduction to beginners."
 msgstr ""
-"Videos de tutoriais de Godot por `GDQuest <https://www.youtube.com/channel/"
+"Vídeos tutoriais de Godot por `GDQuest <https://www.youtube.com/channel/"
 "UCxboW7x0jZqFdvMdCFKTMsQ/playlists>`_, `Game from Scratch <https://www."
 "youtube.com/watch?v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_ e "
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
@@ -99741,17 +99882,16 @@ msgstr ""
 "olhada."
 
 #: ../../docs/community/tutorials.rst:17
-#, fuzzy
 msgid ""
 "Some tutorials mentioned below provide more advanced tutorials, e.g. on 3D "
 "or shaders."
 msgstr ""
-"Alguns dos outros mencionados abaixo fornecem tutoriais mais avançados, por "
+"Alguns tutoriais mencionados abaixo fornecem conteúdos mais avançados, por "
 "exemplo, em 3D ou shaders."
 
 #: ../../docs/community/tutorials.rst:20
 msgid "Video tutorials"
-msgstr "Videos Tutoriais"
+msgstr "Vídeos tutoriais"
 
 #: ../../docs/community/tutorials.rst:22
 msgid ""
@@ -99759,7 +99899,7 @@ msgid ""
 "GDScript and VisualScript)."
 msgstr ""
 "`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
-"GDScript and VisualScript)."
+"GDScript e VisualScript)."
 
 #: ../../docs/community/tutorials.rst:23
 msgid ""
@@ -99809,7 +99949,7 @@ msgid ""
 "(2D and 3D, GDScript, VisualScript and C#)."
 msgstr ""
 "`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
-"(2D and 3D, GDScript, VisualScript and C#)."
+"(2D e 3D, GDScript, VisualScript e C#)."
 
 #: ../../docs/community/tutorials.rst:29
 msgid ""
@@ -99884,35 +100024,30 @@ msgstr ""
 "list=PLda3VoSoc_TSBBOBYwcmlamF1UrjVtccZ>`_ (3D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:38
-#, fuzzy
 msgid ""
 "`Gonkee <https://www.youtube.com/channel/UCJqCPFHdbc6443G3Sz6VYDw>`_ (2D, "
 "3D, GDScript, Shaders)."
 msgstr ""
-"`Emilio <https://www.youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ (2D, "
-"GDScript and VisualScript)."
+"`Gonkee <https://www.youtube.com/channel/UCJqCPFHdbc6443G3Sz6VYDw>`_ (2D, "
+"3D, GDScript, Shaders)."
 
 #: ../../docs/community/tutorials.rst:41
-#, fuzzy
 msgid "Text tutorials"
-msgstr "Tutoriais"
+msgstr "Tutoriais em texto"
 
 #: ../../docs/community/tutorials.rst:43
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
 msgstr "`Godot Recipes por KidsCanCode <http://godotrecipes.com/>`__"
 
 #: ../../docs/community/tutorials.rst:44
-#, fuzzy
 msgid "`Steincodes <https://steincodes.tumblr.com>`__"
-msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>'_"
+msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:47
-#, fuzzy
 msgid "Devlogs"
 msgstr "Registros de desenvolvimento"
 
 #: ../../docs/community/tutorials.rst:49
-#, fuzzy
 msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
@@ -99921,7 +100056,6 @@ msgstr ""
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:50
-#, fuzzy
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"

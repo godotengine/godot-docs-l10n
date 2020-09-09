@@ -6,6 +6,7 @@
 # Adam Jagoda <kontakt@lukasz.xyz>, 2020.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018-2019.
 # Adam Jankowski <adamjankowski1000@gmail.com>, 2019.
+# Aleksandra Granacka <agranacka96@gmail.com>, 2020.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Antek Karaś <antos.karas@gmail.com>, 2019-2020.
 # Arczi Moti <gonzo115@gmail.com>, 2020.
@@ -47,6 +48,7 @@
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
 # Rafał Wyszomirski <rawyszo@gmail.com>, 2019-2020.
 # RM <synaptykq@gmail.com>, 2018-2019.
+# Roman Skiba <romanskiba0@gmail.com>, 2020.
 # Saran <saran@op.pl>, 2018.
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2020.
 # silicius <silicius42@gmail.com>, 2018.
@@ -61,9 +63,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-07-23 02:43+0000\n"
-"Last-Translator: Pixel Zone - Godot Engine Tutorials "
-"<karoltomaszewskimusic@gmail.com>\n"
+"PO-Revision-Date: 2020-09-01 18:42+0000\n"
+"Last-Translator: Aleksandra Granacka <agranacka96@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -72,7 +73,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -427,7 +428,7 @@ msgid ""
 msgstr ""
 "Poniższa dokumentacja jest cały czas uzupełniana, poprawiana, edytowana i "
 "reorganizowana przez członków społeczności z użyciem plików tekstowych w "
-"języku  `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_, "
+"języku `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_, "
 "a następnie kompilowana do statycznej strony internetowej lub dokumentu "
 "offline przy pomocy narzędzi open source`Sphinx <http://www.sphinx-doc."
 "org>`_ oraz `ReadTheDocs <https://readthedocs.org/>`_ ."
@@ -1530,13 +1531,14 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Funkcjonalności"
+msgstr "Lista funkcji"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Ta strona ma na celu wyszczególnienie wszystkich funkcji aktualnie "
+"obsługiwanych przez Godot."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1545,71 +1547,74 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Ta strona zawiera listę funkcji wspieranych przez obecną stabilną wersję "
+"Godota (3.2). `Więcej funkcji <https://docs.godotengine.org/en/latest/about/"
+"list_of_features.html>`__ jest dostępnych w najnowszej wersji deweloperskiej "
+"(4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
 msgstr "Funkcje"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "**Platformy:**"
+msgstr "Platformy"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**Można uruchomić zarówno edytor jak i wyeksportowane projekty:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 lub nowszy (64-bit i 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 lub nowszy (64-bit, x86 i ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit i 32-bit, x86 i ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Pliki binarne są połączone statycznie i mogą działać na każdej dystrybucji, "
+"jeśli zostały skompilowane na wystarczająco starej dystrybucji bazowej."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Oficjalne pliki binarne są kompilowane na Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
-#, fuzzy
 msgid "**Runs exported projects:**"
-msgstr "Eksportowanie projektów"
+msgstr "**Uruchamia wyeksportowane projekty:**"
 
 #: ../../docs/about/list_of_features.rst:31
-#, fuzzy
 msgid "Android 4.4 and later."
-msgstr "Android NDK r13 lub późniejszy"
+msgstr "Android 4.4 lub późniejszy."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 lub późniejszy."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 przez WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr "1: :ref:`bool<class_bool>`"
+msgstr "1: :ref:`Konsole<doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot ma na celu jak największą niezależność od platform i może być "
+"względnie prosto przeniesiony na nowe."
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1621,324 +1626,336 @@ msgstr "Edytor"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Fedora**"
+msgstr "**Funkcje**"
 
 #: ../../docs/about/list_of_features.rst:44
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "Uruchamianie edytora"
+msgstr "Edytor edytor hierarchii węzłów."
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "Edytor skryptów"
+msgstr "Edytor skryptów."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Wsparcie dla :ref:`zewnętrznych edytorów kodu <doc_external_editor>` takich "
+"jak Visual Studio Code lub Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Obecnie brak wsparcia dla debugowania w wątkach."
 
 #: ../../docs/about/list_of_features.rst:50
-#, fuzzy
 msgid "Performance monitoring tools."
-msgstr "Wydajność C# w Godot"
+msgstr "Narzędzia monitorowania wydajności."
 
 #: ../../docs/about/list_of_features.rst:51
-#, fuzzy
 msgid "Live script reloading."
-msgstr "Ładowanie scen"
+msgstr "Zmiana skryptu podczas działania programu."
 
 #: ../../docs/about/list_of_features.rst:52
-#, fuzzy
 msgid "Live scene editing."
-msgstr "Używać dziedziczenia scen"
+msgstr "Edycja scen podczas działania programu."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Zmiany zostaną odzwierciedlone w edytorze i zostaną zachowane po zamknięciu "
+"uruchomionego projektu."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
-msgstr ""
+msgstr "Zdalny inspektor."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Zmiany nie zostaną odzwierciedlone w edytorze i nie zostaną zapisane po "
+"zamknięciu uruchomionego projektu."
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "Zmień nazwę animacji"
+msgstr "Przejęcie kontroli nad kamerą."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "Ruszanie kamerą w edytorze wpływa na kamerę w uruchomionym projekcie."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Używaj edytora w dziesiątkach języków dodanych przez społeczność."
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Wtyczki"
+msgstr "**Wtyczki:**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Wtyczki edytora można pobrać z :ref:'biblioteki zasobów "
+"<doc_what_is_assetlib>', aby rozszerzyć funkcjonalność edytora."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Twórz własne wtyczki używając GDScript, aby dodać nowe funkcje lub "
+"przyspieszyć przepływ pracy."
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Pobieraj projekty z biblioteki zasobów w menadżerze projektów i importuj je "
+"bezpośrednio."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "Grafika 2D"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Dwa dostępne moduły renderowania:**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 3.0 (na platformach desktopowych wykorzystuje OpenGL 3.3)."
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Wysokiej jakości efekty wizualne. Polecane dla platform desktopowych."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "OpenGL ES 2.0 (na platformach desktopowych wykorzystuje OpenGL 2.1)."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Polecane na urządzeniach mobilnych i platformach sieciowych."
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Renderowanie duszków, wielokątów i linii."
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Wysokopoziomowe narzędzia do rysowania linii i wielokątów takie jak "
+"Polygon2D i Line2D."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "AnimatedSprite as a helper for creating animated sprites."
 msgstr ""
+"AnimatedSprite jako pomoc przy tworzeniu animowanych duszków (Sprites)."
 
 #: ../../docs/about/list_of_features.rst:82
-#, fuzzy
 msgid "Parallax layers."
-msgstr "Płótno"
+msgstr "Płótna."
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "Wsparcie dla pseudo-3D dzięki automatycznemu powielaniu warstwy."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "Oświetlenie 2D z mapowaniem normalnych."
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Twarde lub miękkie cienie."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Renderowanie czcionek przy użyciu map bitowych (BitmapFont) lub rasteryzacji "
+"używając freetype (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
+"Czcionki bitmapowe mogą zostać wyeksportowane przy użyciu narzędzi takich "
+"jak BMFont."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont obsługuje zarówno czcionki monochromatyczne, jak i kolorowe. "
+"Obsługiwane formaty to TTF i OTF."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont obsługuje opcjonalne kontury z regulowaną szerokością i kolorem."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Obsługa nadpróbkowania czcionek w celu utrzymania ostrości przy wyższych "
+"rozdzielczościach."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "Cząsteczki oparte na GPU z obsługą własnych shaderów cząstek."
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Cząsteczki"
+msgstr "Cząsteczki oparte na CPU."
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "tool"
+msgstr "Narzędzia 2D"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "Kamera 2D z wbudowanym wygładzaniem i marginesami przeciągania."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Węzeł Path2D reprezentujący ścieżkę w przestrzeni 2D."
 
 #: ../../docs/about/list_of_features.rst:100
 #: ../../docs/about/list_of_features.rst:233
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Może być narysowany w edytorze lub wygenerowany proceduralnie."
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "Węzeł PathFollow2D pozwalający węzłom podążać za Path2D."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "Klasa pomocnicza dla obliczeń geometrycznych 2D."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Węzeł Line2D pozwalający rysować teksturowane linie 2D."
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "Fizyka"
+msgstr "Fizyka 2D"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "Właściwości fizyki"
+msgstr "**Obiekty fizyczne:**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
-#, fuzzy
 msgid "Static bodies."
-msgstr "Funkcje statyczne"
+msgstr "Obiekty statyczne."
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
-#, fuzzy
 msgid "Rigid bodies."
-msgstr "Ciało sztywne"
+msgstr "Obiekty sztywne."
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Obiekty kinematyczne."
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
 msgid "Joints."
-msgstr ""
+msgstr "Połączenia."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:249
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Obszary wykrywające wchodzące lub opuszczające obiekty."
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Obiekty kolizyjne"
+msgstr "**Detekcja kolizji:**"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Wbudowane kształty: linia, prostokąt, koło, kapsuła."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Wielokąty (mogą być narysowane manualnie lub wygenerowane z duszka w "
+"edytorze)."
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "3D graphics"
-msgstr ""
+msgstr "Grafika 3D"
 
 #: ../../docs/about/list_of_features.rst:128
-#, fuzzy
 msgid "HDR rendering with sRGB."
-msgstr "Wydajność 3D i ograniczenia"
+msgstr "Renderowanie HDR z sRGB."
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "Renderowanie LDR dla większej kompatybilności."
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Nie wszystkie funkcje są dostępne. Funkcje dostępne tylko przy użyciu modułu "
+"renderowania OpenGL ES 3.0 są poniżej oznaczone *GLES3*."
 
 #: ../../docs/about/list_of_features.rst:135
-#, fuzzy
 msgid "**Camera:**"
-msgstr "**Kategorie:**"
+msgstr "**Kamera:**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr ""
+"Kamery perspektywiczne, ortograficzne oraz z przesuniętą bryłą widzenia."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Renderowanie oparte na fizyce:**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Naśladuje model PBR Disneya."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"Wykorzystuje przepływ pracy zbudowany wokół skali metaliczność-chropowatość "
+"z obsługą tekstur ORM."
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Normal Map"
+msgstr "Mapowanie normalnych."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
@@ -1965,13 +1982,12 @@ msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:151
-#, fuzzy
 msgid "**Real-time lighting:**"
-msgstr "Wypal światło"
+msgstr "**Oświetlenie w czasie rzeczywistym:**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Światła kierunkowe (słońce/księżyc). Do 4 na scenę."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."

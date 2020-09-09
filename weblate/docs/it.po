@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Alby90 <alberto_formica@hotmail.com>, 2020.
 # Alessandro Tomarchio <Alessandro.tomarchio01@gmail.com>, 2019.
 # Alessandro Zoppi <alessandro.zoppi@live.it>, 2019.
 # Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
@@ -73,7 +74,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-04 06:43+0000\n"
+"PO-Revision-Date: 2020-09-09 08:35+0000\n"
 "Last-Translator: Mirko <miknsop@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -82,7 +83,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1563,13 +1564,14 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Funzionalità"
+msgstr "Elenco delle funzionalità"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Questa pagina ha lo scopo di elencare tutte le funzionalità attualmente "
+"supportate da Godot."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1578,68 +1580,75 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Questa pagina elenca le funzionalità supportate dall'attuale versione "
+"stabile di Godot (3.2). `Altre funzionalità <https://docs.godotengine.org/en/"
+"latest/about/list_of_features.html>` __ sono disponibili nell'ultima "
+"versione in sviluppo (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
 msgstr "Funzionalità"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "**Piattaforme:**"
+msgstr "Piattaforme"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "**Può eseguire sia i progetti in editor che quelli esportati**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 e successivi (64-bit e 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 e successivi (64-bit, x86 e ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit e 32-bit, x86 e ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"I file binari sono collegati in modo statico e possono essere eseguiti su "
+"qualsiasi distribuzione se compilati in una distribuzione base "
+"sufficientemente vecchia."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "I file binari ufficiali sono compilati su Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Esegue progetti esportati:**"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 e successivi."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 e successivi."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 tramite WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:` Strumenti CSG <doc_csg_tools>`"
+msgstr ":ref:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godot mira ad essere il più possibile platform-indipendent e può essere "
+"portato su diverse piattaforme con relativa semplicità."
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1651,13 +1660,12 @@ msgstr "Editor"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Piattaforme:**"
+msgstr "**Funzionalità:**"
 
 #: ../../docs/about/list_of_features.rst:44
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Editor dell'albero delle scene."
 
 #: ../../docs/about/list_of_features.rst:45
 msgid "Script editor."
@@ -1668,297 +1676,330 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Supporto per :ref:`external script editors <doc_external_editor>` come "
+"Visual Studio Code o Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Ancora nessun supporto per il debugging nei thread."
 
 #: ../../docs/about/list_of_features.rst:50
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "Strumenti di monitoraggio delle prestazioni."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "Live script reloading."
-msgstr ""
+msgstr "Ricaricamento dello script in tempo reale."
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Live scene editing."
-msgstr ""
+msgstr "Modifica della scena in tempo reale."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Le modifiche si rifletteranno nell'editor e verranno mantenute dopo la "
+"chiusura del progetto in esecuzione."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
-msgstr ""
+msgstr "Inspector remoto."
 
 #: ../../docs/about/list_of_features.rst:55
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Le modifiche non si rifletteranno nell'editor e non verranno mantenute dopo "
+"la chiusura del progetto in esecuzione."
 
 #: ../../docs/about/list_of_features.rst:56
 msgid "Live camera replication."
-msgstr ""
+msgstr "Replica della telecamera in tempo reale."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Spostare la telecamera dell'editor e vedi il risultato nel progetto in "
+"esecuzione."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Usa l'editor in svariate lingue fornite dalla community."
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Plugins"
+msgstr "**Plugins:**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"I plug-in dell'editor possono essere scaricati da: ref: `asset library "
+"<doc_what_is_assetlib>` per estenderne le funzionalità."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Crea i tuoi plugin usando GDScript per aggiungere nuove funzionalità o "
+"velocizzare il tuo flusso di lavoro."
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Scarica i progetti dalla libreria di risorse nel project manager e importali "
+"direttamente."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "Grafica 2D"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Due modalità di rendering disponibili:**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"Modalità di Rendering OpenGL ES 3.0 (utilizza OpenGL 3.3 su piattaforme "
+"desktop)."
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Grafica di alta qualità. Consigliato su piattaforme desktop."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"Modalità di Rendering OpenGL ES 2.0 (utilizza OpenGL 2.1 su piattaforme "
+"desktop)."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Consigliato su mobile e piattaforme Web."
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Rendering di Sprite, poligoni e linee ."
 
 #: ../../docs/about/list_of_features.rst:80
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Strumenti di alto livello per disegnare linee e poligoni come Polygon2D e "
+"Line2D."
 
 #: ../../docs/about/list_of_features.rst:81
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite come supporto per la creazione di sprite animate."
 
 #: ../../docs/about/list_of_features.rst:82
 msgid "Parallax layers."
-msgstr ""
+msgstr "Livelli di parallasse."
 
 #: ../../docs/about/list_of_features.rst:83
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
 msgstr ""
+"Supporto del Pseudo-3D mediante la duplicazione automatica di un livello più "
+"volte."
 
 #: ../../docs/about/list_of_features.rst:84
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "Illuminazione 2D con normal maps."
 
 #: ../../docs/about/list_of_features.rst:85
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Ombre dure o morbide."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Rendering dei caratteri mediante bitmap (BitmapFont) o rasterizzazione "
+"tramite FreeType (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
+"I caratteri bitmap possono essere esportati utilizzando strumenti come "
+"BMFont."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont supporta sia font monocromatici che colorati. I formati "
+"supportati sono TTF e OTF."
 
 #: ../../docs/about/list_of_features.rst:90
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont supporta i contorni opzionali per i caratteri, con larghezza e "
+"colore regolabili."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Supporto per il sovracampionamento dei caratteri per mantenerli nitidi a "
+"risoluzioni più elevate."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
+"Particelle calcolate tramite GPU con supporto per shader di particelle "
+"personalizzati."
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Particelle"
+msgstr "Particelle generate dalla CPU."
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "tool"
+msgstr "Strumenti 2D"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "Camera 2D con movimento fluido integrato e margini di scorrimento."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Nodo Path2D per rappresentare un percorso nello spazio 2D."
 
 #: ../../docs/about/list_of_features.rst:100
 #: ../../docs/about/list_of_features.rst:233
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Può essere disegnato nell'editor o generato proceduralmente."
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "Nodo PathFollow2D per fare in modo che i nodi seguano un Path2D."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "Classe di supporto per la geometria 2D."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Nodo Line2D per disegnare linee 2D con texture."
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "Fisica"
+msgstr "Fisica 2D"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "Proprietà fisiche"
+msgstr "**Corpi fisici:**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
-#, fuzzy
 msgid "Static bodies."
-msgstr "Creare nodi"
+msgstr "Corpi statici."
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Corpi rigidi."
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Corpi cinematici."
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
 msgid "Joints."
-msgstr ""
+msgstr "Giunti."
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:249
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Aree per rilevare i corpi che entrano o escono."
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Modalità di collisione"
+msgstr "** Rilevamento delle collisioni: **"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Forme già integrate: linea, scatola, cerchio, capsula."
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Poligoni di collisione (possono essere disegnati manualmente o generati da "
+"uno sprite nell'editor)."
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "3D graphics"
-msgstr ""
+msgstr "Grafica 3D"
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "Rendering HDR con sRGB."
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "Rendering LDR per una maggiore compatibilità."
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Non tutte le funzionalità sono disponibili. Quelle disponibili solo quando "
+"si utilizza il renderer OpenGL ES 3.0 sono contrassegnate con * GLES3 * di "
+"seguito."
 
 #: ../../docs/about/list_of_features.rst:135
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Telecamera:**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Telecamere prospettiche, ortografiche e troncoconiche."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Rendering basato sulla fisica:**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Segue il modello Disney PBR."
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"Utilizza il flusso di lavoro roughness-metallic con supporto per le texture "
+"ORM."
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Formato"
+msgstr "Normal mapping."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
@@ -1986,19 +2027,19 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Illuminazione in tempo reale:**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Luci direzionali (sole/luna). Fino a 4 per scena."
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Luci omnidirezionali."
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Faretti con angolo del cono e attenuazione regolabili."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Shadow mapping:**"
@@ -2022,7 +2063,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Illuminazione globale con illuminazione indiretta:**"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
@@ -2037,9 +2078,8 @@ msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:171
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "**Descrizione**"
+msgstr "**Riflessi:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -2061,20 +2101,19 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Cielo:**"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "Panorama sky (using an HDRI)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:182
-#, fuzzy
 msgid "Procedural sky."
-msgstr "'Procedural geometry'"
+msgstr "Cielo procedurale."
 
 #: ../../docs/about/list_of_features.rst:184
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Nebbia:**"
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "Depth fog with an adjustable attenuation curve."
@@ -2310,7 +2349,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:276
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:278
 #, fuzzy
@@ -2337,7 +2376,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:287
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2352,9 +2391,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Esportazione per piattaforma"
+msgstr "Supporta tutte le piattaforme."
 
 #: ../../docs/about/list_of_features.rst:291
 msgid ""
@@ -2363,7 +2401,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:293
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid ""
@@ -2468,9 +2506,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Import"
-msgstr "Importazione"
+msgstr "Importare"
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2498,13 +2535,12 @@ msgid "Ogg Vorbis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:346
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "Scene"
+msgstr "*Scene 3D:*"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(consigliato)*."
 
 #: ../../docs/about/list_of_features.rst:342
 #, fuzzy
@@ -2519,7 +2555,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)."
 
 #: ../../docs/about/list_of_features.rst:346
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
@@ -2577,9 +2613,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "Modalità Navigazione"
+msgstr "Navigazione"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."
@@ -2601,6 +2636,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:371
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
+#, fuzzy
 msgid "Networking"
 msgstr "'Networking'"
 
@@ -3119,7 +3155,7 @@ msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ":ref:`documentazione_sincronizzazione_con_l'audio`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
@@ -3127,11 +3163,11 @@ msgstr "Matematica"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ":ref:`documentazione_beziers_e_curves`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_interpolation`"
-msgstr ":ref:`documentazione_interpolazione`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -3140,7 +3176,7 @@ msgstr "Input"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid ":ref:`doc_input_examples`"
-msgstr ":ref:`documentazione_esempi_di_input`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
@@ -3174,11 +3210,11 @@ msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`doc_visual_shaders`"
-msgstr ":ref:`<doc_visual_shaders>`"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
-msgstr ":ref:`documentazione_webrtc`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
@@ -3200,7 +3236,7 @@ msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
-msgstr ":ref:`documentazione_plugin_android`"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
 msgid ":ref:`doc_inspector_plugins`"
@@ -3218,7 +3254,7 @@ msgstr "Il Multi-threading"
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ":ref:`documentazione_usando_threads_multipli`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
@@ -3236,7 +3272,7 @@ msgstr "ref:`Geometria procedurale <toc-geometria_procedurale>``"
 
 #: ../../docs/about/docs_changelog.rst:87
 msgid ":ref:`doc_arraymesh`"
-msgstr ":ref:`documentazione_arraymesh`"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid ":ref:`doc_surfacetool`"
@@ -3257,7 +3293,7 @@ msgstr "Ottimizzazione"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
-msgstr ":ref:`documentazione_usando_le_multimesh`"
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:96
 msgid ":ref:`doc_using_servers`"
@@ -3285,7 +3321,7 @@ msgstr "Passo passo"
 
 #: ../../docs/about/docs_changelog.rst:109
 msgid ":ref:`doc_signals`"
-msgstr ":ref:`Segnali <doc_signals>`"
+msgstr ":ref:`doc_signals`"
 
 #: ../../docs/about/docs_changelog.rst:110
 msgid ":ref:`doc_exporting`"
@@ -3397,6 +3433,7 @@ msgstr ":ref:`doc_gui_containers`"
 #: ../../docs/about/docs_changelog.rst:164
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
+#, fuzzy
 msgid "Viewports"
 msgstr "Viewports"
 
@@ -3434,7 +3471,7 @@ msgstr ":ref:`doc_shading_language`"
 
 #: ../../docs/about/docs_changelog.rst:180
 msgid ":ref:`doc_spatial_shader`"
-msgstr ":ref:`Shaders <doc_shaders>`"
+msgstr ":ref:`doc_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:181
 msgid ":ref:`doc_canvas_item_shader`"
@@ -3442,7 +3479,7 @@ msgstr ":ref:`doc_canvas_item_shader`"
 
 #: ../../docs/about/docs_changelog.rst:182
 msgid ":ref:`doc_particle_shader`"
-msgstr ":ref:`Shaders <doc_shaders>`"
+msgstr ":ref:`doc_particle_shader`"
 
 #: ../../docs/about/docs_changelog.rst:187
 msgid ":ref:`doc_making_main_screen_plugins`"
@@ -3455,7 +3492,7 @@ msgstr ":ref:`doc_spatial_gizmo_plugins`"
 #: ../../docs/about/docs_changelog.rst:191
 #: ../../docs/tutorials/platform/index.rst:2
 msgid "Platform-specific"
-msgstr "Piattaforma specifica"
+msgstr "Specifico per la piattaforma"
 
 #: ../../docs/about/docs_changelog.rst:193
 msgid ":ref:`doc_customizing_html5_shell`"
@@ -3714,11 +3751,11 @@ msgid ""
 "only have new patch releases once an important security or platform support "
 "fix has been merged."
 msgstr ""
-"Il rilascio di patch è fatto molto più frequentemente rispetto ad una nuova "
-"versione completa, tipicamente tra i 2-6 mesi da quando una versione è "
-"completamente e correttamente supportata. Le release che sono parzialmente "
-"supportate verranno aggiornate solo dopo che verranno sistemate falle di "
-"sicurezza o incompatibilità con i vari sistemi."
+"I rilasci di patch sono resi disponibili con maggiore frequenza, tipicamente "
+"ogni 2-6 mesi da quando una versione è completamente e correttamente "
+"supportata. Le release che sono parzialmente supportate verranno aggiornate "
+"solo dopo che verranno sistemate falle di sicurezza o incompatibilità con i "
+"vari sistemi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot's editor"
@@ -5450,6 +5487,7 @@ msgstr ""
 "Esegui la scena e premi il pulsante. Dovresti avere il seguente risultato:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
+#, fuzzy
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "Hey! Congratulazioni nel codificare la tua prima scena."
 
@@ -6692,7 +6730,7 @@ msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
 msgstr ""
-"Clicca su \"Avvia Scena\" (``F6``) e conferma di poter muovere il giocatore "
+"Clicca su \"Avvia Scena\" (``F6``) e verifica di poter muovere il giocatore "
 "sullo schermo in tutte le direzioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
@@ -6957,7 +6995,7 @@ msgstr "Regolare \"Speed (FPS)\" su ```3`` per tutte le animazioni."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr "Impostare la proprietà ```Playing``` nell' \"Inspector\" su \"On\"."
+msgstr "Imposta la proprietà ``Playing`` nell' Inspector su \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -7372,10 +7410,10 @@ msgid ""
 "overlay on top of the game view."
 msgstr ""
 "L'ultimo pezzo di cui il nostro gioco ha bisogno è un'interfaccia utente: "
-"un'interfaccia per visualizzare cose come il punteggio, un messaggio \"game "
-"over\" e un pulsante di riavvio. Creare una nuova scena e aggiungere un "
-"nodo :ref:'CanvasLayer <class_CanvasLayer>' denominato ''HUD''. \"HUD\" sta "
-"per \"heads-up display\", un display informativo che appare come una "
+"qualcosa per visualizzare il punteggio, un messaggio \"game over\" e un "
+"pulsante di riavvio. Creare una nuova scena e aggiungere un nodo :"
+"ref:'CanvasLayer <class_CanvasLayer>' denominato ''HUD''. Esso sta per "
+"\"heads-up display\", un display informativo che appare come una "
 "sovrapposizione sulla parte superiore della vista di gioco."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:951
@@ -7544,7 +7582,7 @@ msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "StartButton"
-msgstr "Pulsante Start"
+msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "*Text* : ``Start``"
@@ -9072,7 +9110,6 @@ msgstr ""
 "utilizzando un'immagine in bianco e nero a 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
-#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -9082,13 +9119,13 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
-"Nella sezione  Base Button, troverai alcune caselle di controllo che "
-"cambiano il comportamento del pulsante. Quando `` Toggle Mode '' è attivo, "
-"il pulsante commuta tra gli stati attivo e normale quando lo si preme. `` "
-"Disabled`` lo disabilita di default, nel qual caso utilizzerà la texture `` "
-"Disabled``. TextureButton condivide alcune proprietà con il frame texture: "
-"ha una proprietà `` modulate``, per cambiarne il colore, e `` Resize`` e `` "
-"Stretch`` per cambiare il suo comportamento in scala."
+"Nella sezione Base Button, troverai alcune caselle di controllo che cambiano "
+"il comportamento del pulsante. Quando ``Toggle Mode`` è attivo, il pulsante "
+"commuta tra gli stati attivo e normale quando lo si preme. `` Disabled`` lo "
+"disabilita di default, nel qual caso utilizzerà la texture ``Disabled``. "
+"TextureButton condivide alcune proprietà con il frame texture: ha una "
+"proprietà ``modulate``, per cambiarne il colore, e ``Resize`` e ``Stretch`` "
+"per cambiare il suo comportamento in scala."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
@@ -10955,9 +10992,8 @@ msgid ":doc:`ui_main_menu`"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr ":ref:` Interfacce di Godot <doc_godot_interfaces>`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -11673,7 +11709,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
@@ -11736,7 +11772,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
-msgstr ""
+msgstr "Animazioni"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
@@ -12188,7 +12224,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "Implementazione"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -12295,7 +12331,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "Svantaggi"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -12752,7 +12788,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:261
 #: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
-msgstr ""
+msgstr "e"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:281
 msgid ""
@@ -12801,11 +12837,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
-msgstr ""
+msgstr "Differenze"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Godot"
@@ -13407,9 +13443,8 @@ msgid "Command line reference"
 msgstr "Riferimenti allo Shading:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid "**General options**"
-msgstr "Proprietà generali"
+msgstr "**Opzioni generali**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -16948,7 +16983,7 @@ msgstr ":kbd:`8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "``tileset_editor/editmode_z_index``"
-msgstr ""
+msgstr "``tileset_editor/editmode_z_index``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 msgid "GDScript basics"
@@ -17530,8 +17565,9 @@ msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
+#, fuzzy
 msgid "Comparisons"
-msgstr ""
+msgstr "Confronti"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "``in``"
@@ -17543,7 +17579,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Boolean NOT"
@@ -17551,7 +17587,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "Boolean AND"
@@ -17559,7 +17595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "Boolean OR"
@@ -17575,7 +17611,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``as``"
-msgstr ""
+msgstr "``as``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 #, fuzzy
@@ -17638,15 +17674,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"Ciao\"``, ``\"Salve\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
+#, fuzzy
 msgid "Strings"
-msgstr ""
+msgstr "Stringhe"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr ""
+msgstr "``\"\"\"Ciao\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Multiline string"
@@ -17662,7 +17699,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``$NodePath``"
-msgstr ""
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -17711,18 +17748,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:335
-#, fuzzy
 msgid ":ref:`bool <class_bool>`"
-msgstr ":ref:` Strumenti CSG <doc_csg_tools>`"
+msgstr ":ref:`bool <class_bool>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:337
 msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
-#, fuzzy
 msgid ":ref:`int <class_int>`"
-msgstr ":ref:`documentazione_interpolazione`"
+msgstr ":ref:`int <class_int>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:342
 msgid ""
@@ -17732,7 +17767,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
 msgid ":ref:`float <class_float>`"
-msgstr ""
+msgstr ":ref:`float <class_float>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:348
 msgid ""
@@ -17744,7 +17779,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid ":ref:`String <class_String>`"
-msgstr ""
+msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
 msgid ""
@@ -17858,7 +17893,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ""
+msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid ""
@@ -17868,7 +17903,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ""
+msgstr ":ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
 msgid ""
@@ -17878,7 +17913,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ""
+msgstr ":ref:`Vector3 <class_Vector3>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid ""
@@ -17888,7 +17923,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ""
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:412
 msgid "3×2 matrix used for 2D transforms."
@@ -17896,7 +17931,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:415
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ""
+msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:417
 msgid ""
@@ -17906,7 +17941,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ""
+msgstr ":ref:`Quat <class_Quat>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
 msgid ""
@@ -17916,7 +17951,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ""
+msgstr ":ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:429
 msgid ""
@@ -17927,7 +17962,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:434
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ""
+msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:436
 msgid ""
@@ -17937,7 +17972,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ""
+msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:443
 msgid ""
@@ -17950,7 +17985,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ":ref:`Color <class_Color>`"
-msgstr ""
+msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ""
@@ -17960,7 +17995,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ""
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:458
 msgid ""
@@ -17970,7 +18005,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
 msgid ":ref:`RID <class_RID>`"
-msgstr ""
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:464
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
@@ -17978,7 +18013,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:467
 msgid ":ref:`Object <class_Object>`"
-msgstr ""
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:469
 msgid "Base class for anything that is not a built-in type."
@@ -17990,7 +18025,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:475
 msgid ":ref:`Array <class_Array>`"
-msgstr ""
+msgstr ":ref:`Array <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
 msgid ""
@@ -18047,7 +18082,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ""
+msgstr ":ref:`Dictionary <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
 msgid "Associative container which contains values referenced by unique keys."
@@ -18711,8 +18746,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1226
+#, fuzzy
 msgid "Exports"
-msgstr ""
+msgstr "Esportazioni"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
 msgid ""
@@ -19142,12 +19178,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "Statico:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "Dinamico:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
@@ -19706,8 +19742,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
+#, fuzzy
 msgid "Indentation"
-msgstr ""
+msgstr "Indentazione"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
@@ -20360,7 +20397,7 @@ msgstr "Al momento puoi usare tre tipologie di... tipi:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ""
+msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:108
 msgid ""
@@ -20903,7 +20940,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Integer"
-msgstr ""
+msgstr "Numero intero"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
@@ -21122,8 +21159,9 @@ msgid "Hi, Godette v3.0"
 msgstr "Ciao, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+#, fuzzy
 msgid "Postfix"
-msgstr ""
+msgstr "Suffisso"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
@@ -23065,8 +23103,9 @@ msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr ":ref:`Segnali <doc_signals>`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
+#, fuzzy
 msgid "Singletons"
-msgstr ""
+msgstr "Singletons"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -23769,9 +23808,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
-#, fuzzy
 msgid "Instantiating nodes"
-msgstr "Instanziare  scene"
+msgstr "Istanziare nodi"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
 msgid ""
@@ -24388,7 +24426,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
-msgstr ""
+msgstr "Materiali"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
@@ -25817,11 +25855,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hola, amigo!"
-msgstr ""
+msgstr "Hola, amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
@@ -25833,11 +25871,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
-msgstr ""
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
@@ -25849,7 +25887,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Goodbye"
-msgstr ""
+msgstr "Goodbye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
@@ -25865,15 +25903,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Hello\" said the man."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 msgid ""
@@ -27305,7 +27343,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
-msgstr ""
+msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
@@ -27313,7 +27351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
-msgstr ""
+msgstr "**release**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
@@ -27385,7 +27423,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
-msgstr ""
+msgstr "**mobile**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
@@ -27393,7 +27431,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
-msgstr ""
+msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
@@ -27401,7 +27439,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
-msgstr ""
+msgstr "**web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
@@ -27536,7 +27574,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_web.rst:9
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 msgid "Requirements"
-msgstr ""
+msgstr "Requisiti"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
@@ -31822,7 +31860,7 @@ msgstr "Trasforma"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
-msgstr ""
+msgstr "CanvasItem"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid ""
@@ -31832,7 +31870,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
-msgstr ""
+msgstr "CanvasLayer"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid ""
@@ -31849,6 +31887,8 @@ msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
+":ref:`CanvasItem.get_viewport_transform() "
+"<class_CanvasItem_method_get_viewport_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""
@@ -33079,19 +33119,19 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
-msgstr ""
+msgstr ":ref:`CanvasModulate <class_CanvasModulate>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:50
 msgid ":ref:`Sprite <class_Sprite>`"
-msgstr ""
+msgstr ":ref:`Sprite <class_Sprite>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:51
 msgid ":ref:`Light2D <class_Light2D>`"
-msgstr ""
+msgstr ":ref:`Light2D <class_Light2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid ":ref:`LightOccluder2D <class_LightOccluder2D>`"
-msgstr ""
+msgstr ":ref:`LightOccluder2D <class_LightOccluder2D>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:54
 msgid ""
@@ -38245,7 +38285,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:32
 msgid ":ref:`CSGBox <class_CSGBox>`"
-msgstr ""
+msgstr ":ref:`CSGBox <class_CSGBox>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:33
 msgid ":ref:`CSGCylinder <class_CSGCylinder>` (also supports cone)"
@@ -38253,23 +38293,23 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:34
 msgid ":ref:`CSGSphere <class_CSGSphere>`"
-msgstr ""
+msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:35
 msgid ":ref:`CSGTorus <class_CSGTorus>`"
-msgstr ""
+msgstr ":ref:`CSGTorus <class_CSGTorus>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:36
 msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
-msgstr ""
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:37
 msgid ":ref:`CSGMesh <class_CSGMesh>`"
-msgstr ""
+msgstr ":ref:`CSGMesh <class_CSGMesh>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:38
 msgid ":ref:`CSGCombiner <class_CSGcombiner>`"
-msgstr ""
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:45
 msgid "CSG tools features"
@@ -38644,7 +38684,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Parte 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
@@ -39702,7 +39742,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:4
 msgid "Part 2"
-msgstr ""
+msgstr "Parte 2"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
@@ -41429,7 +41469,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:4
 msgid "Part 3"
-msgstr ""
+msgstr "Parte 3"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:9
 msgid ""
@@ -42224,7 +42264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:4
 msgid "Part 4"
-msgstr ""
+msgstr "Parte 4"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:9
 msgid ""
@@ -43262,7 +43302,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:4
 msgid "Part 5"
-msgstr ""
+msgstr "Parte 5"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:9
 msgid ""
@@ -44517,7 +44557,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:4
 msgid "Part 6"
-msgstr ""
+msgstr "Parte 6"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:9
 msgid ""
@@ -47011,7 +47051,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:4
 msgid "Sync the gameplay with audio and music"
-msgstr ""
+msgstr "Sincronizza il gameplay con l'audio e la musica"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:9
 msgid ""
@@ -47186,9 +47226,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:14
-#, fuzzy
 msgid "The structure of the demo"
-msgstr "La gerarchia del nodo root."
+msgstr "La struttura della demo"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:16
 msgid ""
@@ -47290,7 +47329,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
-msgstr ""
+msgstr ":ref:`Area2D <class_Area2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:32
 msgid ""
@@ -47307,7 +47346,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
-msgstr ""
+msgstr ":ref:`StaticBody2D <class_StaticBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:40
 msgid ""
@@ -47319,7 +47358,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
@@ -47331,7 +47370,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
-msgstr ""
+msgstr ":ref:`KinematicBody2D <class_KinematicBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:51
 msgid ""
@@ -47730,6 +47769,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
+":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
@@ -47751,7 +47791,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:415
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
-msgstr ""
+msgstr ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:417
 msgid ""
@@ -48155,7 +48195,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:47
 msgid "``move_and_collide``"
-msgstr ""
+msgstr "``move_and_collide``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:49
 msgid ""
@@ -48176,7 +48216,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:60
 msgid "``move_and_slide``"
-msgstr ""
+msgstr "``move_and_slide``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:62
 msgid ""
@@ -48256,7 +48296,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:100
 msgid "``move_and_slide_with_snap``"
-msgstr ""
+msgstr "``move_and_slide_with_snap``"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:102
 msgid ""
@@ -49517,12 +49557,12 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:415
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 #: ../../docs/tutorials/math/vector_math.rst:416
 #: ../../docs/tutorials/math/vectors_advanced.rst:593
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced vector math"
@@ -52278,7 +52318,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr "AnimazioneAlbero"
+msgstr "AnimationTree"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -52893,7 +52933,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid ":ref:`InputEvent <class_InputEvent>`"
-msgstr ""
+msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid "NONE"
@@ -52905,7 +52945,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
-msgstr ""
+msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "KEY"
@@ -52917,7 +52957,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid "MOUSE_BUTTON"
@@ -52929,7 +52969,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid "MOUSE_MOTION"
@@ -52942,7 +52982,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid "JOYSTICK_MOTION"
@@ -52954,7 +52994,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid "JOYSTICK_BUTTON"
@@ -52966,7 +53006,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid "SCREEN_TOUCH"
@@ -52980,7 +53020,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid "SCREEN_DRAG"
@@ -52993,7 +53033,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
-msgstr ""
+msgstr ":ref:`InputEventAction <class_InputEventAction>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
 msgid "SCREEN_ACTION"
@@ -53956,6 +53996,7 @@ msgid "Encrypting save games"
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:12
+#, fuzzy
 msgid ""
 "Because the world today is not the world of yesterday. A capitalist "
 "oligarchy runs the world and forces us to consume in order to keep the gears "
@@ -53969,6 +54010,18 @@ msgid ""
 "spending money on them to extend their experience, and their preferred way "
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
+"Perché il mondo di oggi non è il mondo di ieri. Un'oligarchia capitalista "
+"governa il mondo e ci costringe a consumare per mantenere in pista gli "
+"ingranaggi di questa società marcia. In quanto tale, il più grande mercato "
+"per il consumo di videogiochi ad oggi è quello mobile. È un mercato di "
+"povere anime costrette a consumare compulsivamente contenuti digitali per "
+"dimenticare la miseria della loro vita quotidiana, i loro spostamenti da "
+"pendolari o qualsiasi altro breve momento libero che non usano per produrre "
+"beni o servizi per la classe dirigente. Queste persone devono continuare a "
+"concentrarsi sui loro videogiochi (perché non farlo li riempirà di un'enorme "
+"angoscia esistenziale), quindi arrivano fino a spendere soldi per estendere "
+"la loro esperienza, e il loro modo preferito di farlo è attraverso acquisti "
+"nelle app e di valuta virtuale."
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:25
 msgid ""
@@ -58380,9 +58433,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:129
-#, fuzzy
 msgid "Animation effects"
-msgstr "Suggerimenti per l'animazione"
+msgstr "Effetti d'animazione"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
 msgid ""
@@ -61044,7 +61096,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:559
 msgid "**Color**"
-msgstr "**Colore**"
+msgstr "**Color**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:561
 msgid "**Transform**"
@@ -61090,24 +61142,23 @@ msgstr "Funzione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "vec_type **radians** (vec_type degrees)"
-msgstr ""
+msgstr "vec_type **radians** (vec_type degrees)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:590
 msgid "Convert degrees to radians"
 msgstr "Converte da gradi a radianti"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
-#, fuzzy
 msgid "vec_type **degrees** (vec_type radians)"
-msgstr "Converte  da gradi a radianti"
+msgstr "vec_type **degrees** (vec_type radians)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:592
 msgid "Convert radians to degrees"
-msgstr ""
+msgstr "Converte da radianti a gradi"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 msgid "vec_type **sin** (vec_type x)"
-msgstr ""
+msgstr "vec_type **sin** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:594
 msgid "Sine"
@@ -61115,7 +61166,7 @@ msgstr "Seno"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 msgid "vec_type **cos** (vec_type x)"
-msgstr ""
+msgstr "vec_type **cos** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:596
 msgid "Cosine"
@@ -61123,7 +61174,7 @@ msgstr "Coseno"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 msgid "vec_type **tan** (vec_type x)"
-msgstr ""
+msgstr "vec_type **tan** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:598
 msgid "Tangent"
@@ -61131,7 +61182,7 @@ msgstr "Tangente"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 msgid "vec_type **asin** (vec_type x)"
-msgstr ""
+msgstr "vec_type **asin** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:600
 msgid "Arcsine"
@@ -61139,7 +61190,7 @@ msgstr "Arcoseno"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 msgid "vec_type **acos** (vec_type x)"
-msgstr ""
+msgstr "vec_type **acos** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:602
 msgid "Arccosine"
@@ -61147,7 +61198,7 @@ msgstr "Arcocoseno"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "vec_type **atan** (vec_type y_over_x)"
-msgstr ""
+msgstr "vec_type **atan** (vec_type y_over_x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:604
 msgid "Arctangent"
@@ -61155,63 +61206,63 @@ msgstr "Arcotangente"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 msgid "vec_type **atan** (vec_type y, vec_type x)"
-msgstr ""
+msgstr "vec_type **atan** (vec_type y, vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:606
 msgid "Arctangent to convert vector to angle"
-msgstr ""
+msgstr "Arcotangente per convertire il vettore in angolo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "vec_type **sinh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **sinh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:608
 msgid "Hyperbolic sine"
-msgstr ""
+msgstr "Seno iperbolico"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
 msgid "vec_type **cosh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **cosh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:610
 msgid "Hyperbolic cosine"
-msgstr ""
+msgstr "Coseno iperbolico"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:612
 msgid "vec_type **tanh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **tanh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:612
 msgid "Hyperbolic tangent"
-msgstr ""
+msgstr "Tangente iperbolica"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:614
 msgid "vec_type **asinh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **asinh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:614
 msgid "Inverse hyperbolic sine"
-msgstr ""
+msgstr "Seno iperbolico inverso"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:616
 msgid "vec_type **acosh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **acosh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:616
 msgid "Inverse hyperbolic cosine"
-msgstr ""
+msgstr "Coseno iperbolico inverso"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:618
 msgid "vec_type **atanh** (vec_type x)"
-msgstr ""
+msgstr "vec_type **atanh** (vec_type x)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:618
 msgid "Inverse hyperbolic tangent"
-msgstr ""
+msgstr "Tangente iperbolica inversa"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:620
 msgid "vec_type **pow** (vec_type x, vec_type y)"
-msgstr ""
+msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:620
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
@@ -65584,7 +65635,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
@@ -65620,7 +65671,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "FRONT_FACING"
@@ -68362,6 +68413,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:151
+#, fuzzy
 msgid ""
 "The first are our units. In normal 3D games, you don't have to think a lot "
 "about units. As long as everything is at the same scale, a box sized 1 unit "
@@ -68377,6 +68429,20 @@ msgid ""
 "scale. For instance, setting this to a value of 10 changes our coordinate "
 "system so 10 units = 1 meter."
 msgstr ""
+"Le prime sono le nostre unità. Nei normali giochi 3D, non devi pensare molto "
+"alle unità. Finché tutto è alla stessa scala, una scatola di 1 unità per 1 "
+"unità per 1 unità può avere qualsiasi dimensione da un cucciolo che puoi "
+"tenere in mano fino a qualcosa delle dimensioni di un edificio. In AR e VR, "
+"questo cambia perché le cose nel tuo mondo virtuale sono mappate a cose nel "
+"mondo reale. Se fai un passo avanti di 1 metro nel mondo reale, ma ti muovi "
+"solo di 1 cm nel tuo mondo virtuale, hai un problema. Lo stesso con la "
+"posizione dei controller; se non compaiono nel giusto spazio relativo, "
+"rompono l'immersione per il giocatore. La maggior parte delle piattaforme "
+"VR, incluso il nostro server AR / VR, presuppone che 1 unità = 1 metro. Il "
+"server AR / VR, tuttavia, ha una proprietà che, per comodità, è anche "
+"esposta sul nodo ARVROrigin chiamato scala del mondo. Ad esempio, "
+"impostandolo su un valore di 10 cambia il nostro sistema di coordinate in "
+"modo che 10 unità = 1 metro."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:162
 msgid ""
@@ -74428,7 +74494,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:19
 msgid "Ads"
-msgstr ""
+msgstr "Annunci"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:20
 msgid "Video ads"
@@ -75405,7 +75471,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 #, fuzzy
 msgid "Instance Methods"
-msgstr "Instanziare  scene"
+msgstr "Instanziare scene"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
 msgid "`Engine <#Engine>`__ **(** **)**"
@@ -79171,6 +79237,8 @@ msgid ""
 ":ref:`use_batching_in_editor <class_ProjectSettings_property_rendering/"
 "batching/options/use_batching_in_editor>`"
 msgstr ""
+":ref:`use_batching_in_editor <class_ProjectSettings_property_rendering/"
+"batching/options/use_batching_in_editor>`"
 
 #: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
@@ -80297,7 +80365,6 @@ msgid "0: null"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:93
-#, fuzzy
 msgid "1: :ref:`bool<class_bool>`"
 msgstr "1: :ref:`bool<class_bool>`"
 
@@ -80369,16 +80436,15 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:102
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "2: :ref:`int<class_int>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:107
 msgid "64-bit signed integer"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:111
-#, fuzzy
 msgid "3: :ref:`float<class_float>`"
-msgstr ":ref:`documentazione_interpolazione`"
+msgstr "3: :ref:`float<class_float>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
@@ -80453,7 +80519,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:120
 msgid "4: :ref:`String<class_string>`"
-msgstr ""
+msgstr "4: :ref:`String<class_string>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:125
 msgid "String length (in bytes)"
@@ -80486,7 +80552,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:133
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "5: :ref:`Vector2<class_vector2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:149
@@ -80510,7 +80576,7 @@ msgstr "Coordinata successiva"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr ""
+msgstr "6: :ref:`Rect2<class_rect2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:153
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:232
@@ -80524,7 +80590,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:159
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr ""
+msgstr "7: :ref:`Vector3<class_vector3>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:168
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:230
@@ -80535,7 +80601,7 @@ msgstr "Coordinata successiva"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:172
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr ""
+msgstr "8: :ref:`Transform2D<class_transform2d>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:177
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:245
@@ -80571,7 +80637,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:191
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr ""
+msgstr "9: :ref:`Plane<class_plane>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 msgid "Normal X"
@@ -80590,7 +80656,6 @@ msgid "Distance"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:206
-#, fuzzy
 msgid "10: :ref:`Quat<class_quat>`"
 msgstr "10: :ref:`Quat<class_quat>`"
 
@@ -80611,7 +80676,6 @@ msgid "Real W"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:221
-#, fuzzy
 msgid "11: :ref:`AABB<class_aabb>`"
 msgstr "11: :ref:`AABB<class_aabb>`"
 
@@ -80621,7 +80685,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:240
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr ""
+msgstr "12: :ref:`Basis<class_basis>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
@@ -80665,7 +80729,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:265
 msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+msgstr "13: :ref:`Transform<class_transform>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "40"
@@ -80693,7 +80757,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:296
 msgid "14: :ref:`Color<class_color>`"
-msgstr ""
+msgstr "14: :ref:`Color<class_color>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
@@ -80717,7 +80781,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:311
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr ""
+msgstr "15: :ref:`NodePath<class_nodepath>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid ""
@@ -80778,7 +80842,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:360
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr ""
+msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:365
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:377
@@ -80793,7 +80857,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:372
 msgid "19: :ref:`Array<class_array>`"
-msgstr ""
+msgstr "19: :ref:`Array<class_array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid ""
@@ -80803,7 +80867,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:384
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:389
 msgid "Array length (Bytes)"
@@ -80827,7 +80891,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:397
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:402
 msgid "Array length (Integers)"
@@ -80844,7 +80908,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:408
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr ""
+msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:413
 msgid "Array length (Floats)"
@@ -80856,7 +80920,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:419
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
-msgstr ""
+msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:424
 msgid "Array length (Strings)"
@@ -80872,7 +80936,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:440
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:445
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
@@ -80891,7 +80955,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:453
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
 msgid "8..8+length\\*12"
@@ -80907,7 +80971,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:468
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "8..8+length\\*16"
@@ -82626,7 +82690,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
-msgstr ""
+msgstr "SCons"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:11
 msgid ""
@@ -82882,9 +82946,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr ":ref:`Post-processing personalizzato <doc_custom_postprocessing>`"
+msgstr ":ref:`doc_custom_modules_in_c++`"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
 #, fuzzy
@@ -83318,7 +83381,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_windows.rst:185
 #: ../../docs/development/compiling/compiling_for_x11.rst:50
 msgid "**Fedora**"
-msgstr ""
+msgstr "**Fedora**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:190
 msgid "**macOS**"
@@ -83327,7 +83390,7 @@ msgstr "**macOS**"
 #: ../../docs/development/compiling/compiling_for_windows.rst:194
 #: ../../docs/development/compiling/compiling_for_x11.rst:67
 msgid "**Mageia**"
-msgstr ""
+msgstr "**Mageia**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:202
 msgid ""
@@ -83410,7 +83473,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:14
 msgid "GCC 7+ or Clang 6+."
-msgstr ""
+msgstr "GCC 7+ o Clang 6+."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:15
 msgid "Python 3.5+."
@@ -83463,23 +83526,23 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**FreeBSD**"
-msgstr ""
+msgstr "**FreeBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**Gentoo**"
-msgstr ""
+msgstr "**Gentoo**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:73
 msgid "**OpenBSD**"
-msgstr ""
+msgstr "**OpenBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:77
 msgid "**openSUSE**"
-msgstr ""
+msgstr "**openSUSE**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:82
 msgid "**Solus**"
-msgstr ""
+msgstr "**Solus**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:91
 msgid ""
@@ -84624,7 +84687,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:12
 msgid "MSBuild"
-msgstr ""
+msgstr "MSBuild"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:13
 msgid "NuGet"
@@ -85284,9 +85347,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr ":ref:`Interfacce di Godot <doc_godot_interfaces>`"
+msgstr ":ref:`doc_overriding_build_options`."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -85455,7 +85517,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "Oppure:"
 
 #: ../../docs/development/cpp/configuring_an_ide/index.rst:2
 msgid "Configuring an IDE"
@@ -85738,9 +85800,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
-#, fuzzy
 msgid "Adding files to the project"
-msgstr "Aggiungi questo codice alla funzione:"
+msgstr "Aggiungere dei file al progetto"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
@@ -86015,9 +86076,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
-#, fuzzy
 msgid "Visual Studio"
-msgstr "VisualScript"
+msgstr "Visual Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
@@ -86134,9 +86194,8 @@ msgid "Select the **Create tasks.json file from template** option."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
-#, fuzzy
 msgid "Then select **Others**."
-msgstr "Scegli \"Crea Gruppi\""
+msgstr "Quindi seleziona **Altri**."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
@@ -86579,8 +86638,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:13
+#, fuzzy
 msgid "Definitions"
-msgstr ""
+msgstr "Definizioni"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -86634,13 +86694,15 @@ msgstr ""
 #: ../../docs/development/cpp/custom_audiostreams.rst:348
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
-msgstr ""
+msgstr "Riferimenti:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
 "typedefs.h>`__"
 msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
@@ -86753,12 +86815,16 @@ msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
 "pool_vector.cpp>`__"
 msgstr ""
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
@@ -86809,22 +86875,28 @@ msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
 "h>`__"
 msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
 "h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:176
 msgid ""
@@ -86839,10 +86911,12 @@ msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
 "ustring.h>`__"
 msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
+"ustring.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -86863,6 +86937,8 @@ msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
+"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
@@ -86877,11 +86953,12 @@ msgstr ""
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 #: ../../docs/development/file_formats/tscn.rst:136
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
@@ -86894,6 +86971,8 @@ msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
 "node_path.h>`__"
 msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
@@ -86911,6 +86990,7 @@ msgstr ""
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
@@ -86986,6 +87066,8 @@ msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
@@ -87015,12 +87097,16 @@ msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
 "h>`__"
 msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
@@ -87053,6 +87139,8 @@ msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
@@ -87122,6 +87210,8 @@ msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
@@ -87293,6 +87383,8 @@ msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
@@ -87316,6 +87408,8 @@ msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
@@ -87341,6 +87435,8 @@ msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid "Resource saving"
@@ -87363,6 +87459,8 @@ msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"
 msgstr ""
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_saver.h>`__"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:2
 msgid "Inheritance class tree"
@@ -87781,9 +87879,8 @@ msgid "Example output::"
 msgstr "Esempio di GDScript"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "Riguardo la documentazione"
+msgstr "Ora possiamo generare la documentazione:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -88035,17 +88132,16 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
@@ -88076,13 +88172,12 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
-#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -88135,7 +88230,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
-msgstr ""
+msgstr "Considerazioni"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
@@ -88162,13 +88257,12 @@ msgstr ""
 "kw=streambuf>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
-#, fuzzy
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 msgid "Registering the new file format"
@@ -88227,6 +88321,8 @@ msgid ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
 msgstr ""
+"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:26
 #: ../../docs/development/cpp/custom_audiostreams.rst:351
@@ -88234,6 +88330,8 @@ msgid ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
 msgstr ""
+"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
@@ -88307,6 +88405,8 @@ msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
 "core/math/audio_frame.h>`__"
 msgstr ""
+"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
+"core/math/audio_frame.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
 msgid "Custom Godot servers"
@@ -88389,7 +88489,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:318
 msgid ":ref:`RID<class_rid>`"
-msgstr ""
+msgstr ":ref:`RID<class_rid>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid "Registering the class in GDScript"
@@ -88421,6 +88521,8 @@ msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
@@ -88461,6 +88563,8 @@ msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
+"core/message_queue.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:480
 msgid "Summing it up"
@@ -89303,7 +89407,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:398
 msgid "``transform``"
-msgstr "``Transforma``"
+msgstr "``transform``"
 
 #: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
@@ -89794,9 +89898,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
-#, fuzzy
 msgid "The complexity of the problem"
-msgstr "La gerarchia del nodo root."
+msgstr "La complessità del problema"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:90
 msgid "The frequency the problem"
@@ -91063,7 +91166,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
-msgstr ""
+msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:121
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
@@ -91394,7 +91497,7 @@ msgstr "**Piattaforme:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
-msgstr ""
+msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:112
 msgid ""
@@ -92633,8 +92736,9 @@ msgid "Move the [Sprite]."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
+#, fuzzy
 msgid "Move the :ref:`class_sprite`."
-msgstr ""
+msgstr "Sposta lo :ref:`class_sprite`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "[method methodname]"
@@ -92798,7 +92902,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "*See below.*"
-msgstr ""
+msgstr "*Vedi sotto.*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:265
 msgid ""
@@ -92820,6 +92924,9 @@ msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Nessun problema. Lascialo da parte, ed elenca i metodi che hai saltato "
+"quando richiedi un pull delle tue modifiche. Un altro contributore se ne "
+"occuperà."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:289
 msgid ""
@@ -92837,6 +92944,8 @@ msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"La documentazione può essere tradotta in qualsiasi lingua su `Hosted Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>` __."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:298
 msgid ""
@@ -92844,6 +92953,9 @@ msgid ""
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
+"Le stringhe tradotte sono sincronizzate manualmente dai manutentori della "
+"documentazione nel repository `godot-docs-l10n <https://github.com/"
+"godotengine/godot-docs-l10n>`__."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:302
 msgid ""
@@ -93152,9 +93264,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:213
-#, fuzzy
 msgid "Editor interface (C++)"
-msgstr "Interfacce Godot"
+msgstr "Interfaccia dell'editor (C++)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:215
 msgid "The editor translations originate from C++ strings, and may use:"
@@ -93385,12 +93496,16 @@ msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Quindi, dov'è la comunità di Godot e dove puoi porre domande e chiedere "
+"aiuto?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
+"Tieni presente che alcuni di questi canali sono gestiti e moderati da membri "
+"della comunità di Godot o da terzi."
 
 #: ../../docs/community/channels.rst:10
 msgid ""
@@ -93406,7 +93521,7 @@ msgstr "Domande e risposte"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
-msgstr ""
+msgstr "`Domande & Risposte ufficiale di Godot <https://godotengine.org/qa/>`_"
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
@@ -93475,9 +93590,8 @@ msgid "Other chats"
 msgstr "Altre chat"
 
 #: ../../docs/community/channels.rst:31
-#, fuzzy
 msgid "`Discord <https://discord.gg/4JBkykG>`_"
-msgstr "`Server Discord <https://discordapp.com/invite/zH7NUgz>`_"
+msgstr "`Discord <https://discord.gg/4JBkykG>`_"
 
 #: ../../docs/community/channels.rst:32
 msgid ""
@@ -93487,7 +93601,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:35
 msgid "Language-based communities"
-msgstr ""
+msgstr "Comunità basate sulla lingua"
 
 #: ../../docs/community/channels.rst:37
 msgid ""
@@ -93532,11 +93646,12 @@ msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
 msgstr "`Gruppo Facebook <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:48
-#, fuzzy
 msgid ""
 "`Twitter <https://twitter.com/godotengine>`_ (see also the `#GodotEngine "
 "<https://twitter.com/hashtag/GodotEngine>`_ hashtag)"
-msgstr "`Twitter (anche, #godotengine) <https://twitter.com/godotengine>`_"
+msgstr ""
+"`Twitter <https://twitter.com/godotengine>`_ (vedi anche l'hashtag "
+"`#GodotEngine <https://twitter.com/hashtag/GodotEngine>`_)"
 
 #: ../../docs/community/channels.rst:50
 msgid "`Reddit <https://www.reddit.com/r/godot>`_"
@@ -93555,9 +93670,8 @@ msgid "Forum"
 msgstr "Forum"
 
 #: ../../docs/community/channels.rst:57
-#, fuzzy
 msgid "`Godot Forums <https://godotforums.org/>`_"
-msgstr "`Forum (godotforums.org) <https://godotforums.org/>`_"
+msgstr "`Forum di Godot <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
 msgid "Tutorials and resources"
@@ -93612,12 +93726,11 @@ msgstr ""
 "youtube.com/channel/UC9DR22-qohBDtZ74R3FxOZg>`_ potrebbe essere interessante."
 
 #: ../../docs/community/tutorials.rst:17
-#, fuzzy
 msgid ""
 "Some tutorials mentioned below provide more advanced tutorials, e.g. on 3D "
 "or shaders."
 msgstr ""
-"Alcuni degli altri menzionati di seguito forniscono tutorial più avanzati , "
+"Alcuni dei tutorial menzionati di seguito riguardano argomenti più avanzati, "
 "ad esempio sul 3D o gli shaders."
 
 #: ../../docs/community/tutorials.rst:20
@@ -93803,13 +93916,12 @@ msgstr ""
 "Calinou/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:56
-#, fuzzy
 msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
-"`awesome-godot: Un accurato elenco di risorse creato da Andre Schmitz "
-"<https://github.com/Calinou/awesome-godot>`_"
+"`Zeef Godot Engine: una directory di risorse curata da Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #, fuzzy
 #~ msgid "In Godot:"

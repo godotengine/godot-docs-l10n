@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-07 18:01+0000\n"
+"PO-Revision-Date: 2020-09-07 18:05+0000\n"
 "Last-Translator: BinotaLIU <me@binota.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -76,8 +76,8 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
-"根據翻譯的完成度，您可能會發現有些段落或整個頁面依然是英語。您可以通過在 "
-"Weblate 上提供新的翻譯或校正現有的翻譯來協助社群。"
+"根據翻譯的完成度，有些段落或整個頁面可能依然是英語。歡迎你通過 Weblate 提供新"
+"的翻譯或校正現有的翻譯來協助社群。"
 
 #: ../../docs/index.rst:27
 msgid ""
@@ -1383,7 +1383,7 @@ msgstr "支援平台"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr "** 在編輯器與匯出的專案中均可執行： **"
+msgstr "**在編輯器與匯出的專案中均可執行： **"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -1620,411 +1620,405 @@ msgstr "Dynamicfont 支援可選的字體描邊與可調整的寬度與色彩。
 #: ../../docs/about/list_of_features.rst:91
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
-msgstr ""
+msgstr "支援字體過取樣，以在高解析度下保持字體清晰可見。"
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "基於 GPU 的粒子支援自定粒子著色器。"
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "粒子"
+msgstr "基於 CPU 的粒子。"
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "\\ tool"
+msgstr "2D 工具"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "具有內建平滑與拖移邊距的 2D 相機。"
 
 #: ../../docs/about/list_of_features.rst:100
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "用於在 2D 空間中表示路徑的 Path2D 節點。"
 
 #: ../../docs/about/list_of_features.rst:100
 #: ../../docs/about/list_of_features.rst:233
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "可在編輯器中繪製或以程式產生。"
 
 #: ../../docs/about/list_of_features.rst:101
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "可用於使節點跟著 Path2D 路徑的 PathFollow2D 節點。"
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2D 幾何 Helper 類別。"
 
 #: ../../docs/about/list_of_features.rst:103
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "用於繪製紋理 2D 線條的 Line2D 節點。"
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "物理"
+msgstr "2D 物理"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
-#, fuzzy
 msgid "**Physics bodies:**"
-msgstr "物理屬性"
+msgstr "**物理形體：**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
-#, fuzzy
 msgid "Static bodies."
-msgstr "靜態函式"
+msgstr "靜態形體。"
 
 #: ../../docs/about/list_of_features.rst:111
 #: ../../docs/about/list_of_features.rst:243
 msgid "Rigid bodies."
-msgstr ""
+msgstr "剛體。"
 
 #: ../../docs/about/list_of_features.rst:112
 #: ../../docs/about/list_of_features.rst:244
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "動力學形體。"
 
 #: ../../docs/about/list_of_features.rst:113
 #: ../../docs/about/list_of_features.rst:246
 msgid "Joints."
-msgstr ""
+msgstr "關節。"
 
 #: ../../docs/about/list_of_features.rst:114
 #: ../../docs/about/list_of_features.rst:249
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "用於偵測形體進入或離開的區域。"
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "僅幾何碰撞"
+msgstr "**碰撞偵測：**"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "內建形狀：線、框、圈、橢圓。"
 
 #: ../../docs/about/list_of_features.rst:119
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
-msgstr ""
+msgstr "碰撞幾何 (可手動繪製或從編輯器中自 Sprite 產生)。"
 
 #: ../../docs/about/list_of_features.rst:122
 msgid "3D graphics"
-msgstr ""
+msgstr "3D 圖形"
 
 #: ../../docs/about/list_of_features.rst:128
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "以 sRGB 進行 HDR 算繪。"
 
 #: ../../docs/about/list_of_features.rst:131
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "為提供最佳相容性，以 LDR 進行算繪。"
 
 #: ../../docs/about/list_of_features.rst:132
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"並非所有功能都可用。當使用 OpenGL ES 3.0 轉譯器時，僅在下方標示 **GLES3** 時"
+"才可用。"
 
 #: ../../docs/about/list_of_features.rst:135
 msgid "**Camera:**"
-msgstr ""
+msgstr "**相機：**"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "透視法、正視投影與錐臺偏移相機。"
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**基於物理的算繪：**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "依照 Disney PBR 模型。"
 
 #: ../../docs/about/list_of_features.rst:142
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "使用支援 ORM 紋理的粗糙金屬 (Roughness-metallic) 工作流程。"
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "法線映射"
+msgstr "法線映射。"
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
-msgstr ""
+msgstr "**GLES3:** 依據距離自動判斷精細等級的視差/浮雕映射。"
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "**GLES3:** 次表面散射與透射。"
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "**GLES3:** 臨近淡化 (軟粒子)。"
 
 #: ../../docs/about/list_of_features.rst:147
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
-msgstr ""
+msgstr "距離淡化可使用 Alpha 混合或晃動以避免穿過透明管線。"
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "晃動可依像素級別或物件級別來判斷。"
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**即時光照：**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "有向光照 (太陽/月亮)。每個場景最多可有 4 個。"
 
 #: ../../docs/about/list_of_features.rst:154
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "全向光照。"
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "有可調整圓錐角與衰減的聚光。"
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**陰影映射：**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"**DirectionalLight:** 正交 (最快), PSSM 2-Split 與 4-Split。支援在 Split (切"
+"割) 間混合。"
 
 #: ../../docs/about/list_of_features.rst:161
 msgid ""
 "*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"**OmniLight:** Dual Parabolid (較快) 或 Cubemap (較慢但較精確)。支援 "
+"Panoramas 格式的色彩透射紋理 (Colored Projector Texture)。"
 
 #: ../../docs/about/list_of_features.rst:163
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "匯入紋理"
+msgstr "**SpotLight:** 單一紋理。"
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**以間接光照進行全域照明：**"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "烘焙光照圖 (較快，但無法在執行時更新)。"
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "以 CPU 烘焙光照圖。"
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr ""
+msgstr "**GLES3:** GI 探查 (較慢，半即時)。支援反射。"
 
 #: ../../docs/about/list_of_features.rst:171
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "**執行選項**"
+msgstr "**反射：**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "**GLES3:** 基於 Voxel 的反射 (使用 GI 探查時)。"
 
 #: ../../docs/about/list_of_features.rst:174
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"使用 ReflectionProbe 來快速烘焙反射或較慢的即時反射。可選擇性開啟平行矯正。"
 
 #: ../../docs/about/list_of_features.rst:176
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "**GLES3:** 螢幕空間反射。"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid "Reflection techniques can be mixed together for greater accuracy."
-msgstr ""
+msgstr "可混合使用多個反射技術以取得更高的精確度。"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid "**Sky:**"
-msgstr ""
+msgstr "**天空:**"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "全景天空 (使用 HDRI)。"
 
 #: ../../docs/about/list_of_features.rst:182
 msgid "Procedural sky."
-msgstr ""
+msgstr "程序性天空。"
 
 #: ../../docs/about/list_of_features.rst:184
 msgid "**Fog:**"
-msgstr ""
+msgstr "**霧：**"
 
 #: ../../docs/about/list_of_features.rst:186
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "有可調整衰減曲線的深度霧。"
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "有可調整衰減的高度霧 (地面或天花板)。"
 
 #: ../../docs/about/list_of_features.rst:188
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
-msgstr ""
+msgstr "支援依照相機角度自動調整深度霧色彩 (以配合陽光的色彩)。"
 
 #: ../../docs/about/list_of_features.rst:190
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "可選擇開啟透射以讓光照在霧中提高能見度。"
 
 #: ../../docs/about/list_of_features.rst:192
-#, fuzzy
 msgid "**Particles:**"
-msgstr "粒子"
+msgstr "**粒子：**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "**GLES3:** 支援自定粒子著色器之基於 CPU 的粒子。"
 
 #: ../../docs/about/list_of_features.rst:197
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "處理"
+msgstr "**後處理：**"
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "色調映射 (線性, Reinhard, Filmic, ACES)。"
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
+msgstr "**GLES3:** 基於檢視區亮度自動調整曝光。"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "**GLES3:** 近景深或遠景深。"
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "**GLES3:** 螢幕空間週遭遮擋。"
 
 #: ../../docs/about/list_of_features.rst:203
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"以可選的雙立方放大發光，並有多種可用的混合模式：螢幕、軟廣、新增、取代。"
 
 #: ../../docs/about/list_of_features.rst:205
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "使用單維漸變進行色彩校正。"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "亮度、對比度與飽和度調整。"
 
 #: ../../docs/about/list_of_features.rst:208
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**功能標籤**"
+msgstr "**紋理過濾：**"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "最近、雙線性、三線性或各向異性過濾。"
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "\\ TextureProgress"
+msgstr "**紋理壓縮：**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
+msgstr "**GLES3:** BPTC 以獲得高品質壓縮 (在 macOS 上不支援)。"
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "**GLES3:** ETC2 (在 macOS 上不支援)。"
 
 #: ../../docs/about/list_of_features.rst:216
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (使用 GLES2 轉譯器時建議使用)。"
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "**GLES3:** S3TC (在行動裝置與網頁平台上不支援)。"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**抗鋸齒：**"
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr ""
+msgstr "多取樣抗鋸齒 (MSAA)。"
 
 #: ../../docs/about/list_of_features.rst:223
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"這些效果中大多數都可以調整為更佳效能或進一步提升品質。這些調整有助於在離線算"
+"繪下使用 Godot。"
 
 #: ../../docs/about/list_of_features.rst:227
-#, fuzzy
 msgid "3D tools"
-msgstr "\\ tool"
+msgstr "3D 工具"
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
-msgstr ""
+msgstr "內建網格：立方體、圓柱體／錐體、(半)球體、稜柱體、平面、四邊形。"
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`程序性幾何 <toc-procedural_geometry>`"
+msgstr "用於 :ref:`產生集合 <doc_procedural_geometry>` 的工具。"
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
-msgstr ""
+msgstr ":ref:`建構實體集合 <doc_csg_tools>` (用於製作 Prototype)。"
 
 #: ../../docs/about/list_of_features.rst:233
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "在 3D 空間中表示路徑的 Path3D 節點。"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "使用 PathFollow3D 節點來使節點跟隨 Path3D。"
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "3D 集合 Helper 類別。"
 
 #: ../../docs/about/list_of_features.rst:238
-#, fuzzy
 msgid "3D physics"
-msgstr "物理"
+msgstr "3D 物理"
 
 #: ../../docs/about/list_of_features.rst:245
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Vehicle 形體 (用於處理 Arcade 物理而非模擬）。"
 
 #: ../../docs/about/list_of_features.rst:247
 msgid "Soft bodies."
-msgstr ""
+msgstr "軟體。"
 
 #: ../../docs/about/list_of_features.rst:248
 msgid "Ragdolls."

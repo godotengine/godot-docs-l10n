@@ -5,6 +5,7 @@
 # agrocs <apittakis@csd.auth.gr>, 2019.
 # Ahilleas Balaktsis <ahibala@gmail.com>, 2019.
 # Andy <bookoftrust@gmail.com>, 2018.
+# Dabs Yt <dabsgt1@gmail.com>, 2020.
 # Eternal Death <eternaldeath0001@gmail.com>, 2019.
 # George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2020.
 # Konstantinos Poulopoulos <aatyrael@gmail.com>, 2018.
@@ -18,8 +19,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-11 11:34+0000\n"
-"Last-Translator: George Tsiamasiotis <gtsiam@windowslive.com>\n"
+"PO-Revision-Date: 2020-09-09 08:35+0000\n"
+"Last-Translator: KostasMSC <kargyris@athtech.gr>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
 "Language: el\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1325,6 +1326,10 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Το Godot προβλέπεται για χρήση με τον επεξεργαστή κώδικά του. Προτείνουμε να "
+"τον δοκιμάσετε καθώς πιθανότατα θα σας εξοικονομήσει χρόνο μακροπρόθεσμα. "
+"Δεν υπάρχουν σχέδια για τη χρήση του Godot ως βιβλιοθήκη, καθώς θα έκανε την "
+"υπόλοιπη μηχανή περίπλοκη και δύσκολη για κανονικούς χρήστες."
 
 #: ../../docs/about/faq.rst:300
 msgid ""
@@ -1353,6 +1358,9 @@ msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
+"Το πρότυπο STL δημιουργεί πολύ μεγάλα σύμβολα, τα οποία προκύπτουν σε "
+"τεράστια διόρθωση εντοπισμού σφαλμάτων. Εμείς αντιθέτως, χρησιμοποιούμε "
+"ελάχιστα πρότυπα χρησιμοποιώντας πολύ μικρά ονόματα."
 
 #: ../../docs/about/faq.rst:313
 msgid ""
@@ -1493,13 +1501,14 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Δυνατότητες C#"
+msgstr "Λίστα χαρακτηριστικών"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
+"Αυτή η σελίδα στοχεύει να απαριθμήσει όλες τις λειτουργίες που "
+"υποστηρίζονται επί του παρόντος από τη Godot."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1508,68 +1517,76 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Σε αυτήν τη σελίδα παρατίθενται χαρακτηριστικά που υποστηρίζονται από την "
+"τρέχουσα σταθερή έκδοση της Godot (3.2). `Περισσότερες λειτουργίες <https://"
+"docs.godotengine.org/en/latest/about/list_of_features.html>`__ είναι "
+"διαθέσιμες στην τελευταία έκδοση ανάπτυξης (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
 msgstr "Δυνατότητες"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Υποστήριξη πλατφόρμας"
+msgstr "Πλατφόρμες"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
 msgstr ""
+"**Μπορεί να εκτελέσει τόσο το πρόγραμμα επεξεργασίας όσο και τα εξαγόμενα "
+"έργα:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 και νεότερες εκδόσεις (64-bit και 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 και μεταγενέστερες εκδόσεις (64-bit, x86 και ARM)."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit and 32-bit, x86 and ARM)."
 
 #: ../../docs/about/list_of_features.rst:25
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Τα δυαδικά αρχεία είναι συνδεδεμένα στατικά και μπορούν να εκτελεστούν σε "
+"οποιαδήποτε διανομή, εάν μεταγλωττιστούν σε αρκετά παλιά κατανομή βάσης."
 
 #: ../../docs/about/list_of_features.rst:27
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Τα επίσημα δυαδικά αρχεία συντάσσονται στο Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Εκτελεί εξαγόμενα έργα:**"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 και μεταγενέστερες εκδόσεις."
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 και μεταγενέστερες εκδόσεις."
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "HTML5 μέσω WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`doc_csg_tools`"
+msgstr ":ref:`Consoles <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Η Godot στοχεύει να είναι όσο το δυνατόν πιο ανεξάρτητη από την εκόστοτε "
+"πλατφόρμα και να μπορεί να μεταφερθεί σε νέες πλατφόρμες με σχετική ευκολία."
 
 #: ../../docs/about/list_of_features.rst:40
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1581,50 +1598,52 @@ msgstr "Επεξεργαστής"
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
-#, fuzzy
 msgid "**Features:**"
-msgstr "**Ετικέτα χαρακτηριστικών**"
+msgstr "**Χαρακτηριστικά:**"
 
 #: ../../docs/about/list_of_features.rst:44
 msgid "Scene tree editor."
-msgstr ""
+msgstr "Πρόγραμμα επεξεργασίας δέντρων σκηνής."
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Script editor."
-msgstr "Επεξεργαστής Δεσμών Ενεργειών"
+msgstr "Επεξεργαστής Δεσμών Ενεργειών."
 
 #: ../../docs/about/list_of_features.rst:46
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Υποστήριξη για :ref:`εξωτερικά προγράμματα επεξεργασίας "
+"<doc_external_editor>` όπως Visual Studio Code ή Vim."
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr ""
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Δεν υπάρχει υποστήριξη για εντοπισμό σφαλμάτων σε νήματα ακόμη."
 
 #: ../../docs/about/list_of_features.rst:50
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "Εργαλεία παρακολούθησης της απόδοσης."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "Live script reloading."
-msgstr ""
+msgstr "Επί τόπου επαναφόρτωση δέσμης ενεργειών."
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Live scene editing."
-msgstr ""
+msgstr "Επί τόπου επεξεργασία σκηνής."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Οι αλλαγές θα εμφανίζονται στο πρόγραμμα επεξεργασίας και θα διατηρηθούν "
+"μετά το κλείσιμο του έργου που εκτελείται."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Remote inspector."
@@ -1635,71 +1654,87 @@ msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Οι αλλαγές δεν θα αντικατοπτρίζονται στο πρόγραμμα επεξεργασίας και δεν θα "
+"διατηρηθούν μετά το κλείσιμο του έργου που εκτελείται."
 
 #: ../../docs/about/list_of_features.rst:56
-#, fuzzy
 msgid "Live camera replication."
-msgstr "Κίνηση"
+msgstr "Αναπαραγωγή ζωντανής κάμερας."
 
 #: ../../docs/about/list_of_features.rst:57
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Μετακινήστε την κάμερα επεξεργασίας και δείτε το αποτέλεσμα στο έργο που "
+"εκτελείται."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
+"Χρησιμοποιήστε το πρόγραμμα επεξεργασίας σε δεκάδες γλώσσες που συνεισφέρει "
+"η κοινότητα."
 
 #: ../../docs/about/list_of_features.rst:60
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Πρόσθετα"
+msgstr "**Πρόσθετα:**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Μπορείτε να κατεβάσετε τα πρόσθετα του προγράμματος επεξεργασίας από το :ref:"
+"`library library <doc_what_is_assetlib>` για να επεκτείνετε τη "
+"λειτουργικότητα του προγράμματος επεξεργασίας."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Δημιουργήστε τα δικά σας πρόσθετα χρησιμοποιώντας το GDScript για να "
+"προσθέσετε νέες δυνατότητες ή να επιταχύνετε τη ροή εργασίας σας."
 
 #: ../../docs/about/list_of_features.rst:65
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Πραγματοποιήστε λήψη έργων από τη βιβλιοθήκη στοιχείων στον διαχειριστή "
+"έργου και εισαγάγετέ τα απευθείας."
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "2D graphics"
-msgstr ""
+msgstr "2D γραφικά"
 
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Δύο διαθέσιμα προγράμματα απόδοσης:**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"Απόδοση OpenGL ES 3.0 (χρησιμοποιεί το OpenGL 3.3 σε πλατφόρμες επιτραπέζιων "
+"υπολογιστών)."
 
 #: ../../docs/about/list_of_features.rst:73
 #: ../../docs/about/list_of_features.rst:127
 msgid "High-end visuals. Recommended on desktop platforms."
 msgstr ""
+"Υψηλής ποιότητας εικόνες. Συνιστάται σε πλατφόρμες επιτραπέζιων υπολογιστών."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:133
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"Απόδοση OpenGL ES 2.0 (χρησιμοποιεί το OpenGL 2.1 σε πλατφόρμες επιτραπέζιων "
+"υπολογιστών)."
 
 #: ../../docs/about/list_of_features.rst:75
 #: ../../docs/about/list_of_features.rst:130
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Συνιστάται σε κινητές και διαδικτυακές πλατφόρμες."
 
 #: ../../docs/about/list_of_features.rst:79
 msgid "Sprite, polygon and line rendering."
@@ -1762,14 +1797,12 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:93
 #: ../../docs/about/list_of_features.rst:195
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Σωματίδια"
+msgstr "Σωματίδια με βάση CPU."
 
 #: ../../docs/about/list_of_features.rst:96
-#, fuzzy
 msgid "2D tools"
-msgstr "Εργαλεία"
+msgstr "2D εργαλεία"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "2D camera with built-in smoothing and drag margins."
@@ -1797,9 +1830,8 @@ msgid "Line2D node to draw textured 2D lines."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:106
-#, fuzzy
 msgid "2D physics"
-msgstr "Φυσική"
+msgstr "2D φυσική"
 
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
@@ -1833,9 +1865,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:116
 #: ../../docs/about/list_of_features.rst:251
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Αντικείμενα σύγκρουσης"
+msgstr "**Ανίχνευση σύγκρουσης:**"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "Built-in shapes: line, box, circle, capsule."
@@ -1886,9 +1917,8 @@ msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:143
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Μορφή"
+msgstr "Κανονική χαρτογράφηση."
 
 #: ../../docs/about/list_of_features.rst:144
 msgid ""
@@ -2024,9 +2054,8 @@ msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:192
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Σωματίδια"
+msgstr "**Σωματίδια:**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2068,9 +2097,8 @@ msgid "Brightness, contrast and saturation adjustments."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:208
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**Ετικέτα χαρακτηριστικών**"
+msgstr "**Φιλτράρισμα υφής:**"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
@@ -2111,19 +2139,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:227
-#, fuzzy
 msgid "3D tools"
-msgstr "Εργαλεία"
+msgstr "3D Εργαλεία"
 
 #: ../../docs/about/list_of_features.rst:229
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:230
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ""
+"Εργαλεία για :ref:`διαδικαστική παραγωγή γεωμετρίας "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:231
 msgid ""
@@ -2144,9 +2172,8 @@ msgid "3D geometry helper class."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:238
-#, fuzzy
 msgid "3D physics"
-msgstr "Φυσική"
+msgstr "3D Φυσική"
 
 #: ../../docs/about/list_of_features.rst:245
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -2195,14 +2222,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Κόμβοι Visual Shader"
+msgstr "Επεξεργαστής οπτικής σκίασης."
 
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr "Υποστήριξη για προσθήκες οπτικής σκίασης."
 
 #: ../../docs/about/list_of_features.rst:267
 #: ../../docs/about/docs_changelog.rst:113
@@ -2213,9 +2238,8 @@ msgid "Scripting"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "**General:**"
-msgstr "Γενικά"
+msgstr "**Γενικά:**"
 
 #: ../../docs/about/list_of_features.rst:271
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2276,9 +2300,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Υποστηριζόμενες μορφές εικόνας"
+msgstr "Υποστηρίζει όλες τις πλατφόρμες."
 
 #: ../../docs/about/list_of_features.rst:291
 msgid ""
@@ -2367,9 +2390,8 @@ msgid "Audio input to record microphones."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:321
-#, fuzzy
 msgid "MIDI input."
-msgstr "Είσοδος"
+msgstr "Είσοδος MIDI"
 
 #: ../../docs/about/list_of_features.rst:321
 msgid "No support for MIDI output yet."
@@ -2400,18 +2422,16 @@ msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:334
-#, fuzzy
 msgid "**Formats:**"
-msgstr "Μορφή"
+msgstr "**Μορφές:**"
 
 #: ../../docs/about/list_of_features.rst:336
 msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:338
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Ήχος"
+msgstr "*Ήχος:*"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2422,9 +2442,8 @@ msgid "Ogg Vorbis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:346
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "σκηνές"
+msgstr "*3D σκηνές:*"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "glTF 2.0 *(recommended)*."
@@ -2471,14 +2490,12 @@ msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:354
-#, fuzzy
 msgid "Keyboard input."
-msgstr "Ελέγξτε για είσοδο."
+msgstr "Είσοδος πληκτρολογίου."
 
 #: ../../docs/about/list_of_features.rst:357
-#, fuzzy
 msgid "Mouse input."
-msgstr "Κίνηση ποντικιού"
+msgstr "Είσοδος ποντικιού."
 
 #: ../../docs/about/list_of_features.rst:356
 msgid ""
@@ -2617,9 +2634,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:403
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Εναλλαγή πλήρους οθόνης"
+msgstr "Λειτουργία Πλήρους Οθόνης."
 
 #: ../../docs/about/list_of_features.rst:403
 msgid ""
@@ -2703,9 +2719,8 @@ msgid "**Nodes:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:434
-#, fuzzy
 msgid "Buttons."
-msgstr "Κουμπί"
+msgstr "Κουμπιά."
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Checkboxes, check buttons, radio buttons."
@@ -2724,9 +2739,8 @@ msgid "Scrollbars."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:439
-#, fuzzy
 msgid "Labels."
-msgstr "Επιγραφή"
+msgstr "Επιγραφές."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
@@ -2765,9 +2779,8 @@ msgid ":ref:`Stack <class_BoxContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:450
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`int <class_int>`"
+msgstr ":ref: `Πλέγμα <class_GridContainer>` διατάξεις."
 
 #: ../../docs/about/list_of_features.rst:451
 msgid ""
@@ -2848,9 +2861,8 @@ msgid "Support for Bézier curves in animation."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:478
-#, fuzzy
 msgid "Formats"
-msgstr "Μορφή"
+msgstr "Μορφές"
 
 #: ../../docs/about/list_of_features.rst:481
 msgid ""
@@ -2918,9 +2930,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:501
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "Όρισμα γραμμής εντολών."
+msgstr "Διεπαφή γραμμής εντολών για αυτοματοποίηση."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid "Export and deploy projects using continuous integration platforms."
@@ -3651,27 +3662,26 @@ msgstr ""
 "ξέρετε για να ξεκινήσετε με την μηχανή."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
-#, fuzzy
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
 msgstr ""
-"Εάν χρησιμοποιήτε το Blender, ρίξτε μία ματιά στο δικό μας `Better Collada "
-"Exporter <https://godotengine.org/download>`_."
+"Μπορείτε να `κατεβάσετε τη Godot Engine εδώ <https://godotengine.org/"
+"download/>`_."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
 msgstr "Διαχειριστή πρότζεκτ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you'll see is the Project Manager. "
 "Since you have no projects there will be a popup asking if you want to open "
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
-"Όταν ξεκινάτε τη Godot, το πρώτο παράθυρο που θα δείτε είναι ο Διαχειριστής "
-"Πρότζεκτ. Σας επιτρέπει να δημιουργήσετε, να αφαιρέσετε, να εισαγάγετε ή να "
-"παίξετε παιχνίδια πρότζεκτ."
+"Όταν ξεκινάτε τη Godot, το πρώτο παράθυρο που θα δείτε είναι η Διαχείρηση "
+"Έργου. Δεδομένου ότι δεν έχετε έργα, θα εμφανιστεί ένα αναδυόμενο μήνυμα που "
+"θα σας ρωτάει εάν θέλετε να ανοίξετε τη βιβλιοθήκη στοιχείων. Kάντε κλικ "
+"στην ακύρωση καθώς θα το εξετάσουμε αργότερα."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid ""
@@ -3682,13 +3692,12 @@ msgstr ""
 "δημιουργήσετε, να καταργήσετε, να εισαγάγετε ή να παίξετε έργα παιχνιδιών."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
-#, fuzzy
 msgid ""
 "In the top-right corner you'll find a drop-down menu to change the editor's "
 "language."
 msgstr ""
-"Στην άνω-δεξιά γωνία θα βρείτε το αναπτυσσόμενο μενού για να αλλάξετε τη "
-"γλώσσα του επεξεργαστή."
+"Στην επάνω δεξιά γωνία θα βρείτε ένα αναπτυσσόμενο μενού για να αλλάξετε τη "
+"γλώσσα του προγράμματος επεξεργασίας."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 #, fuzzy
@@ -3707,15 +3716,14 @@ msgid "Create or import a project"
 msgstr "Δημιουργήστε ή εισαγάγετε ένα πρότζεκτ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
-#, fuzzy
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Here "
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"Για να δημιουργήσετε ένα καινούργιο πρότζεκτ, κάντε κλικ στο κουμπί "
-"``Καινούργιο Πρότζεκτ`` στα δεξιά. Δώστε το όνομα της επιλογής σας και "
-"διαλέξετε ένα κενό φάκελο στον υπολογιστή σας για να το αποθηκεύσετε."
+"Για να δημιουργήσετε ένα νέο έργο, κάντε κλικ στο κουμπί ``Νέο έργο`` στα "
+"δεξιά. Εδώ ονομάστε το έργο, επιλέξτε έναν κενό φάκελο στον υπολογιστή σας "
+"για να τον αποθηκεύσετε και επιλέξτε ένα πρόγραμμα απόδοσης."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid ""
@@ -3789,16 +3797,14 @@ msgid "Your first look at Godot's editor"
 msgstr "Η πρώτη σας ματιά στον επεξεργαστή της Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Καλωσορίσατε στη Godot! Με το πρότζεκτ σας ανοιχτό, θα πρέπει να βλέπετε τη "
-"διεπαφή του επεξεργαστή με την 3D προβολή ενεργή. Μπορείτε να αλλάξετε την "
-"τωρινή επιφάνεια εργασίας στην κορυφή της διεπαφής. Κάντε κλικ στο 2D για να "
-"αλλάξετε στη 2D επιφάνεια εργασίας."
+"Καλώς ήλθατε στη Godot! Με το έργο σας ανοιχτό, θα πρέπει να βλέπετε τη "
+"διεπαφή του επεξεργαστή με μενού στο πάνω μέρος της διεπαφής και πλατφόρμες "
+"κατά μήκος των άκρων της διεπαφής και στις δύο πλευρές της θύρας προβολής."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
@@ -3809,12 +3815,11 @@ msgstr ""
 "μενού**, τις **επιφάνειες εργασίας**, και τα **κουμπία playtest**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Στην αριστερή πλευρά, έχετε το **FileSystem dock**, όπου μπορείτε να "
-"διαχειριστείτε τα πρότζεκτ σας και τα στοιχεία σας."
+"Η **Πλατφόρμα Συστήματος Αρχείων** είναι το σημείο όπου θα διαχειρίζεστε τα "
+"αρχεία και τα στοιχεία του έργου σας."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 #, fuzzy
@@ -6376,7 +6381,6 @@ msgid "This completes the `Mob` scene."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:669
-#, fuzzy
 msgid "Main scene"
 msgstr "Κύρια σκηνή"
 
@@ -12842,9 +12846,8 @@ msgstr "Επεξεργαστής"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Action name"
-msgstr "Ενέργεια"
+msgstr "Όνομα Ενέργειας"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -14678,9 +14681,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "Περιγραφή"
+msgstr "Επόμενη Δέσμη Ενεργειών"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -15446,9 +15448,8 @@ msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "Επεξεργαστής"
+msgstr "Πρόγραμμα επεξεργασίας πλακιδίων"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
@@ -19737,9 +19738,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "Δημιουργία περιεχομένου"
+msgstr "Δημιουργία Δέσμης Ενεργειών"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -21549,9 +21549,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr ":ref:`doc_signals`"
+msgstr "Δείτε επίσης: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"

@@ -14,14 +14,16 @@
 # Богдан Матвіїв <bomtvv@gmail.com>, 2019-2020.
 # Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 # Микола Тимошенко <9081@ukr.net>, 2020.
+# Роман Корпан <kanjiruhito@gmail.com>, 2020.
+# Юрій Яновський <lytvyn349@ukr.net>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-04 06:42+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2020-08-28 13:09+0000\n"
+"Last-Translator: Роман Корпан <kanjiruhito@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -30,7 +32,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1664,7 +1666,6 @@ msgid "**Plugins:**"
 msgstr "**Плагіни (додатки):**"
 
 #: ../../docs/about/list_of_features.rst:62
-#, fuzzy
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
@@ -1736,7 +1737,6 @@ msgid "AnimatedSprite as a helper for creating animated sprites."
 msgstr "AnimatedSprite як помічник для створення анімованих спрайтів."
 
 #: ../../docs/about/list_of_features.rst:82
-#, fuzzy
 msgid "Parallax layers."
 msgstr "Шари паралакса."
 
@@ -1761,11 +1761,10 @@ msgstr ""
 "растерізація за допомогою FreeType (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:87
-#, fuzzy
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
-"Шрифти растрових зображень можна експортувати за допомогою таких "
-"інструментів, як BMFont."
+"Растрові шрифти можна експортувати за допомогою таких інструментів, як "
+"BMFont."
 
 #: ../../docs/about/list_of_features.rst:88
 msgid ""
@@ -3739,16 +3738,16 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"Це керівництво проведе вас через інтерфейс Godot. Ми розглянемо ** Менеджер "
-"проектів, доки, робочі області ** і все, що вам потрібно знати, щоб почати "
+"Це керівництво проведе вас через інтерфейс Godot. Ми розглянемо **Менеджер "
+"проектів, доки, робочі області** і все, що вам потрібно знати, щоб почати "
 "роботу з движком."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
-#, fuzzy
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
 msgstr ""
-"`Офіційні питання і відповіді щодо Godot <https://godotengine.org/qa/>`_"
+"Ви можете `завантажити Godot Engine тут <https://godotengine.org/download/"
+">`_."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -3794,7 +3793,7 @@ msgstr ""
 "розпочати роботу. Просто виберіть потрібний шаблон, або демонстрацію, "
 "натисніть кнопку \"Завантажити\", після закінчення завантаження натисніть "
 "\"Встановити\" і виберіть, куди ви хочете встановити проект. Ви можете "
-"дізнатися більше про це у: ref: `doc_what_is_assetlib`."
+"дізнатися більше про це у :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
@@ -3827,7 +3826,7 @@ msgid ""
 "project."
 msgstr ""
 "Якщо ви бачите зелену позначку праворуч, значить редактор виявив порожню "
-"теку. Ви також можете натиснути кнопку `` Створити теку`` поруч із назвою "
+"теку. Ви також можете натиснути кнопку ``Створити теку`` поруч із назвою "
 "проєкту і тоді, для проєкту буде створена порожня тека з назвою проєкту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
@@ -3901,16 +3900,16 @@ msgstr ""
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"У док-панелі ** FileSystem ** (Файлова система) ви можете керувати файлами "
-"та ресурсами вашого проекту."
+"У док-панелі **FileSystem** (Файлова система) ви можете керувати файлами та "
+"ресурсами вашого проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Док-панель ** Scene ** (Сцена) включає в себе перелік вмісту поточної сцени, "
-"в той час як ** Inspector ** (Інспектор) дозволяє управляти властивостями її "
+"Док-панель **Scene** (Сцена) включає в себе перелік вмісту поточної сцени, в "
+"той час як **Inspector** (Інспектор) дозволяє управляти властивостями її "
 "вмісту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
@@ -3919,10 +3918,9 @@ msgid ""
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"У центрі зверху у вас є ** панель інструментів **, де ви знайдете "
-"інструменти для переміщення, масштабування або блокування ваших об'єктів "
-"сцени. Вона змінюється, коли ви переключаєтеся між різними робочими "
-"областями."
+"У центрі зверху у вас є **панель інструментів**, де ви знайдете інструменти "
+"для переміщення, масштабування або блокування ваших об'єктів сцени. Вона "
+"змінюється, коли ви переключаєтеся між різними робочими областями."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
 msgid ""
@@ -3930,8 +3928,8 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That's "
 "why they're folded by default."
 msgstr ""
-"** Нижня панель ** включає в себе консоль налагодження, редактор анімації, "
-"аудиомикшер ... Вони широкі і можуть займати багато дорогоцінного простору, "
+"**Нижня панель** включає в себе консоль налагодження, редактор анімації, "
+"аудіомікшер... Вони широкі і можуть займати багато дорогоцінного простору, "
 "тому за замовчуванням вони згорнуті."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
@@ -3953,7 +3951,7 @@ msgid ""
 msgstr ""
 "Ви будете використовувати **2D робочий простір** для всіх типів ігор. Окрім "
 "ігор 2D, в цьому просторі ви будете створювати ваші інтерфейси. Натисніть :"
-"kbd:`F1`(або :kbd:`Alt + 1` на macOS), щоб отримати доступ до нього."
+"kbd:`F1` (або :kbd:`Alt + 1` на macOS), щоб отримати доступ до нього."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 msgid ""
@@ -3985,9 +3983,10 @@ msgid ""
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
-"Робочий простір ** Script ** є повний редактор коду з отладчиком, розширеним "
-"автозаповненням і вбудованою довідкою. Натисніть: kbd: `F3` (або: kbd:` Alt "
-"+ 3`в macOS) для доступу до нього і: kbd: `Shift + F1` для пошуку по довідці."
+"Робочий простір **Script** є повний редактор коду з відлагоджувачем, "
+"розширеним автозаповненням і вбудованою довідкою. Натисніть : kbd:`F3` "
+"(або : kbd:` Alt + 3`в macOS) для доступу до нього і :kbd:`Shift + F1` для "
+"пошуку по довідці."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
@@ -4020,7 +4019,7 @@ msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
 msgstr ""
-"Нарешті, ** AssetLib ** - це бібліотека безкоштовних додатків, скриптів та "
+"Нарешті, **AssetLib** - це бібліотека безкоштовних додатків, скриптів та "
 "ресурсів, для використання у ваших проектах."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
@@ -4262,7 +4261,6 @@ msgstr ""
 "(або, як \"кореневий\", в порожній сцені)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
-#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -4276,7 +4274,7 @@ msgstr ""
 "вузол Node2D (Вузол 2D), \"Просторова сцена\" додає просторовий вузол, "
 "\"Інтерфейс користувача\" додає вузол керування та \"Інший вузол\", який "
 "дозволяє вибрати будь-який вузол (його вибір еквівалентний натисканню "
-"\"Додати вузол нащадок\" \"). Ви також можете натиснути піктограму у формі "
+"\"Додати вузол нащадок\"). Ви також можете натиснути піктограму у формі "
 "зірки, щоб увімкнути показ вибраних вузлів."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
@@ -21054,7 +21052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1548
 msgid "Coroutines & signals"
-msgstr ""
+msgstr "Cпівпроцедури та сигнали"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1550
 msgid ""
@@ -21384,10 +21382,12 @@ msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"В динамічних мовах, масиви функціонують так само, як і інші типи даних , "
+"такі яка списки:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "Або не впорядковані множини:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
@@ -21616,6 +21616,7 @@ msgstr "У цьому випадку це означає:"
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
+"*\"Якщо об'єкт може бути розбитий, не важливо що це, просто розбийте його.\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
@@ -21711,7 +21712,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
-msgstr ""
+msgstr "Експорт бітових прапорців"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 msgid ""
@@ -23455,6 +23456,8 @@ msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
+"**Динамічний відступ**, очікує додатковий інтегральний параметр, що "
+"встановлює відступ або точність після ``.``, дивись `динамічний відступ`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
@@ -23508,7 +23511,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "Динамічний відступ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -23526,7 +23529,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "Керуюча (Escape) послідовність"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
@@ -23536,13 +23539,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "Приклади методів форматування"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"Далі слідують кілька прикладів використання різних застосувань методу "
+"``String.format``  ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
@@ -23565,12 +23570,12 @@ msgstr "**Результат**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
-msgstr ""
+msgstr "Словник"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "ключ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -23591,7 +23596,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "індекс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
@@ -23613,7 +23618,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
-msgstr ""
+msgstr "Масив"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
@@ -23642,10 +23647,12 @@ msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"Заповнювачі також можуть бути налаштовані при використанні ``String."
+"format``. Далі кілька прикладів цього функціоналу."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr ""
+msgstr "Інфікс (за замовчанням)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
@@ -23655,7 +23662,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "Привіт, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
@@ -23688,7 +23695,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "Привіт, Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
@@ -24449,7 +24456,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr ""
+msgstr "Синглтон двигуна"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -24490,6 +24497,8 @@ msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced getter (setting requires a sequence port)."
 msgstr ""
+"Як вказано вище доступні два вузли: Простий гетер та послідовний гетер "
+"(налаштування вимагає послідовного порту)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
@@ -25708,7 +25717,7 @@ msgstr "Для цього у вас є різні варіанти в C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
-msgstr ""
+msgstr "**Приведення та перевірка типу**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
@@ -25766,6 +25775,8 @@ msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
+"Більш просунуту перевірку типу ви можете подивитись у `Відповідність "
+"шаблонів <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 msgid "C# signals"
@@ -26150,7 +26161,7 @@ msgstr "Дивіться також: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
-msgstr ""
+msgstr "Сінглтони"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 #, fuzzy
@@ -26230,7 +26241,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
-msgstr ""
+msgstr "Основа"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
@@ -32587,9 +32598,8 @@ msgid "Exporting a PCK file"
 msgstr "Експорт для ПК"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Тут слід зазначити таке:"
+msgstr "Є два способи експорту проекту на сервер:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -32682,11 +32692,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "Розміщення в один клік"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "Звучить добре, що це?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -32696,6 +32706,11 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
+"Ця опція пропонується автоматично, якщо платформа сконфігурована правильно "
+"та підтримуваний пристрій приєднано до комп'ютера. Оскільки багато чого може "
+"піти не так на різних рівнях (платформа може бути сконфігурована не "
+"правильно, SDK не коректно встановлений, пристрій не вірно сконфігурований і "
+"т.і.), добре повідомити користувачу про таку можливість."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
 msgid ""
@@ -32704,32 +32719,40 @@ msgid ""
 "export, install and run the project (in debug mode) on the device. This "
 "feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
+"Деякі платформи (на даний момент лише Android) можуть виявити, коли USB-"
+"пристрій підключено до комп'ютера, і пропонувати користувачеві автоматично "
+"експортувати, встановлювати та запускати проект (у режимі налагодження) на "
+"пристрої. У галузевих термінах ця функція називається \"Розміщення в один "
+"клік\"."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "Послідовність кроків для розміщення в один клік"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."
-msgstr ""
+msgstr "Сконфігурувати цільову платформу."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
+#, fuzzy
 msgid ""
 "Configure device (make sure it's in developer mode, likes the computer, USB "
 "cable is plugged, USB is recognized, etc.)."
 msgstr ""
+"Сконфігурувати пристрій (впевніться, що він знаходиться в режимі "
+"розробника,  USB-кабель підключений, розпізнається USB тощо )"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid "Connect the device..."
-msgstr ""
+msgstr "Підключіть пристрій..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
-msgstr ""
+msgstr "І все!"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid "Click once... and deploy!"
-msgstr ""
+msgstr "Один клік... і розміщено!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
@@ -69799,7 +69822,7 @@ msgstr "Розмір крапки"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
@@ -69849,9 +69872,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:110
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:184
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:232
-#, fuzzy
 msgid "Coordinates"
-msgstr "Координата X"
+msgstr "Координати"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:112
 msgid ""
@@ -69890,9 +69912,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:133
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:200
-#, fuzzy
 msgid "Types"
-msgstr "Тип"
+msgstr "Типи"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:135
 msgid ""
@@ -79797,9 +79818,8 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:59
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:61
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
-#, fuzzy
 msgid "Arguments"
-msgstr "Коригування"
+msgstr "Аргументи"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:78
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:129
@@ -90156,9 +90176,8 @@ msgstr ""
 "contact>`_."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
-#, fuzzy
 msgid "KDevelop"
-msgstr "Kdevelop"
+msgstr "KDevelop"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:6
 msgid ""

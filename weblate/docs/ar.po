@@ -12,6 +12,7 @@
 # Ibraheem Tawfik <tawfikibraheem@gmail.com>, 2019.
 # Mohamed El-Baz <albaz2000eg@gmail.com>, 2018.
 # Moustafa Sedick <moustafa.sedick@gmail.com>, 2020.
+# Moustapha Oumar <mito0o.852@gmail.com>, 2020.
 # Musab Alasaifer <mousablasefer@gmail.com>, 2020.
 # Nabeel20 <nabeelandnizam@gmail.com>, 2020.
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018-2019.
@@ -21,6 +22,7 @@
 # spiderx0x <legendofdarks@gmail.com>, 2019.
 # Takai Eddine Kennouche <takai.kenn@gmail.com>, 2018.
 # Xester <Zyruva@gmail.com>, 2019.
+# Yassine Oudjana <y.oudjana@protonmail.com>, 2020.
 # أحمد مصطفى الطبراني <eltabaraniahmed@gmail.com>, 2020.
 #
 msgid ""
@@ -28,8 +30,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-11 11:34+0000\n"
-"Last-Translator: Musab Alasaifer <mousablasefer@gmail.com>\n"
+"PO-Revision-Date: 2020-09-09 11:12+0000\n"
+"Last-Translator: Yassine Oudjana <y.oudjana@protonmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -38,7 +40,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -96,7 +98,6 @@ msgstr ""
 "يجب أن تكون مناسبة لتعلم كيفية استخدام إصدارات غودو المستقرة مع ذلك."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -104,8 +105,8 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"مرحبا إلى المستندات الرّسمية لمحرك غودو، محرّك الألعاب للمنظور ثلاثي وثنائي "
-"الأبعاد المجّاني والمفتوح المصدر للمجتمع! إذا كنت جديدًا مع هذا المستند، ننصح "
+"مرحبا إلى المستندات الرّسمية لمحرك غودوت، محرّك الألعاب للمنظور ثلاثي وثنائي "
+"الأبعاد المجّاني والمفتوح المصدر للمجتمع! إذا كنت جديدًا في هذا المستند، ننصح "
 "أن تقرأ :ref:`صفحة المقدمة <doc_about_intro>` للحصول على فكرة عامّة عن ما في "
 "هذا المستند."
 
@@ -169,7 +170,7 @@ msgstr "من أين أبدء"
 
 #: ../../docs/index.rst:80
 msgid "Tutorials"
-msgstr "الدروس التعليمية"
+msgstr "دورات تعليمية"
 
 #: ../../docs/index.rst:110
 msgid "Development"
@@ -188,7 +189,7 @@ msgstr "مرجعية الظلال"
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "عن"
+msgstr "عن هذا التطبيق"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -878,18 +879,16 @@ msgstr ""
 "الطريقة التي يعمل بها غودوت وسيلة غير فعالة (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"العديد من اللغات البرمجية الحالية لديها واجهة مستخم شنيعة للتعامل والتضفير "
-"مع لغة البرمجة C++، الأمر الذي ينتج عنه كمية كبيرة من الأسطر البرمجية "
-"والكبوات، والاختناقات في الأداء وكذلك نقص الفعالية العام (لغات البرمجة مثل "
-"Lua أو Python أو Squirrel إلخ) لذا أردنا التركيز على محرك عظيم وجبّار وليس "
-"مقدار هائل من الإضافات والمُداخلات."
+"العديد من اللغات البرمجية الحالية (Lua ,Python, Squirrel, إلخ) لديها واجهات "
+"سيّئة للرّبط بC++, ممّا يؤدّي إلى كمية كبيرة من الأسطر البرمجية والكبوات "
+"والاختناقات في الأداء, وكذلك نقص الفعالية بشكل عام. لذا أردنا التركيز على "
+"محرّك ممتاز, وليس عدد كبير من الإضافات والمُداخلات."
 
 #: ../../docs/about/faq.rst:144
 #, fuzzy
@@ -1277,7 +1276,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:293
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "هل من الممكن استخدام غودوت كمكتبة؟"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
@@ -1371,8 +1370,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:330
+#, fuzzy
 msgid "Why does Godot not enforce RTTI?"
-msgstr ""
+msgstr "لماذا غودوت لا تجبر RTTI؟"
 
 #: ../../docs/about/faq.rst:332
 msgid ""
@@ -1447,8 +1447,9 @@ msgid "List of features"
 msgstr "المزايا"
 
 #: ../../docs/about/list_of_features.rst:6
+#, fuzzy
 msgid "This page aims to list all features currently supported by Godot."
-msgstr ""
+msgstr "تهدف هذه الصفحة إلى عرض كافة الميزات التي يدعمها غودوت حاليًا."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -1473,8 +1474,9 @@ msgid "**Can run both the editor and exported projects:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:22
+#, fuzzy
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "ويندوز 7 و الاحدث منه(64-بت و 32-بت)"
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
@@ -1525,13 +1527,13 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
-msgstr "المُعدل"
+msgstr "المحرّر"
 
 #: ../../docs/about/list_of_features.rst:42
 #: ../../docs/about/list_of_features.rst:77
 #: ../../docs/about/list_of_features.rst:311
 msgid "**Features:**"
-msgstr ""
+msgstr "**مميزات.**"
 
 #: ../../docs/about/list_of_features.rst:44
 msgid "Scene tree editor."
@@ -2339,9 +2341,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Import"
-msgstr "تصدير"
+msgstr "إستيراد"
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2447,9 +2448,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:363
-#, fuzzy
 msgid "Navigation"
-msgstr "وضع التصفح"
+msgstr "التنقل"
 
 #: ../../docs/about/list_of_features.rst:365
 msgid "A* algorithm in 2D and 3D."
@@ -2772,7 +2772,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:377
 msgid "Animation"
-msgstr "صورة متحركة"
+msgstr "الرسم المتحرك"
 
 #: ../../docs/about/list_of_features.rst:471
 msgid "Direct kinematics and inverse kinematics."
@@ -13438,7 +13438,7 @@ msgstr "المُعدل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "Open 2D Editor"
-msgstr "فتح المُعدل 2D"
+msgstr "فتح المُحرر 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -13454,7 +13454,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "Open 3D Editor"
-msgstr "فتح المُعدل 3D"
+msgstr "فتح المُحرر 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -13470,7 +13470,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr "فتح مُعدل الكود"
+msgstr "فتح محرر النص البرمجي"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -13765,7 +13765,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr "غادر إلى قائمه المشاريع"
+msgstr "العودة إلى قائمة المشاريع"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -13797,7 +13797,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr "إلغاء/تفعيل وضع الشاشة الكاملة"
+msgstr "تفعيل/إلغاء وضع الشاشة الكاملة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -13831,7 +13831,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr "إيقاف مؤقت للمشهد"
+msgstr "إيقاف مؤقّت للمشهد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -15463,9 +15463,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "الوظائف البرمجية"
+msgstr "عمل دالة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -15476,9 +15475,8 @@ msgid "``visual_script_editor/create_function``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
-#, fuzzy
 msgid "Edit Member"
-msgstr "الأعضاء"
+msgstr "تعديل العضو"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -15494,7 +15492,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "تحديث الرسم البياني"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -15812,7 +15810,7 @@ msgstr "مسارات  التحريك"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "تكرير المحدد"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -15820,7 +15818,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "نقل مكرر"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -15880,7 +15878,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "جد البلاطة"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -16033,7 +16031,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
-msgstr "وضع الأقليم Region"
+msgstr "وضع الأقليم"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -16057,7 +16055,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
-msgstr "وضع الإطباق Occlusion"
+msgstr "وضع الإطباق"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -16069,7 +16067,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "Navigation Mode"
-msgstr "وضع التصفح"
+msgstr "وضع التنقل"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -16081,7 +16079,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
-msgstr "وضع Bitmask"
+msgstr "وضع قناع-البِت"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -16093,7 +16091,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr "وضع التفاضل Priority"
+msgstr "وضع الأولية"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -16117,7 +16115,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr "وضع Z Index"
+msgstr "وضع ترتيبية المحور Z"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -25926,17 +25924,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "أضف هذا النص إلى الوظيفة البرمجية:"
+msgstr "تصدير جميع الموارد في المشروع"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
+msgstr "تصدير المشاهد المُختارة (وتبعاتها)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export selected resources (and dependencies)"
-msgstr ""
+msgstr "تصدير الموارد المُختارة (وتبعياتها)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
@@ -32781,7 +32778,7 @@ msgstr ""
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
-msgstr "ادوات"
+msgstr "أدوات"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
@@ -73835,7 +73832,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
-msgstr ""
+msgstr "التغيرات"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -81259,7 +81256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid "Video RAM"
-msgstr ""
+msgstr "الذاكرة العشوائية للفيديو"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:91
 msgid ""
@@ -84807,7 +84804,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "تفعيل"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"

@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2020-08-11 11:34+0000\n"
-"Last-Translator: Daniel Kříž <Daniel.kriz@protonmail.com>\n"
+"PO-Revision-Date: 2020-09-01 10:38+0000\n"
+"Last-Translator: Zbyněk <zbynek.fiala@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -36,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.2.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -313,7 +313,7 @@ msgid ""
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
 "V případě, že máte problémy s nějakým tutoriálem nebo přímo s vaším "
-"projektem, najdete nápovědu na různých: ref: `Komunitních kanálech "
+"projektem, najdete nápovědu na různých :ref:`Komunitních kanálech "
 "<doc_community_channels>`, zejména v komunitě Godot Discord, Q&A a IRC."
 
 #: ../../docs/about/introduction.rst:32
@@ -610,7 +610,7 @@ msgstr "Které platformy podporuje Godot?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "** Pro editora: **"
+msgstr "**Pro editora:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
@@ -642,7 +642,7 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "** Pro export vašich her: **"
+msgstr "**Pro export vašich her:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
@@ -760,7 +760,7 @@ msgstr ""
 "Pokud jde o nové jazyky, podpora je možná prostřednictvím třetích stran "
 "pomocí infrastruktury GDNative / NativeScript / PluginScript. (Viz otázka o "
 "pluginech níže.) V současné době probíhají práce na neoficiální podpoře "
-"`Pythonu <https://github.com/touilleMan/godot-python>` _ a `Nimu <https: // "
+"`Pythonu <https://github.com/touilleMan/godot-python>`_ a`Nimu <https: // "
 "github.com/pragmagic/godot-nim>`_ pro skriptování v Godotu."
 
 #: ../../docs/about/faq.rst:93
@@ -782,7 +782,7 @@ msgstr ""
 "kódu. To umožňuje jak začínajícím, tak i pokročilým vývojářům co nejrychleji "
 "ovládnout silné stránky Godota. Pokud jste někdy napsali něco v jazyce jako "
 "Python, budete se zde cítit jako doma. Příklady, historie a úplný přehled "
-"možností, které vám GDScript nabízí, najdete v: ref: `skriptovací příručka "
+"možností, které vám GDScript nabízí, najdete v :ref:`skriptovací příručka "
 "GDScript <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
@@ -794,7 +794,7 @@ msgid ""
 msgstr ""
 "Existuje několik důvodů, proč používat GDScript - zejména když "
 "prototypujete, ve fázích alfa / beta vašeho projektu nebo nevytváříte další "
-"titul AAA -, ale nejdůležitějším důvodem je celkové ** snížení složitosti. **"
+"titul AAA -, ale nejdůležitějším důvodem je celkové **snížení složitosti.**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -835,9 +835,9 @@ msgstr ""
 "zejména pokud by podpora těchto známých jazyků vedla k horšímu zkušenosti. "
 "Chápeme, že byste v Godotu raději používali jiný jazyk (viz výše uvedený "
 "seznam podporovaných možností). Jak již bylo řečeno, pokud jste nezkoušeli "
-"GDScript, zkuste to na ** tři dny **. Stejně jako Godot, jakmile uvidíte, "
-"jak silný je a jak rychle se váš vývoj postupuje, myslíme si, že GDScript si "
-"vás získá."
+"GDScript, zkuste to na **tři dny**. Stejně jako Godot, jakmile uvidíte, jak "
+"silný je a jak rychle se váš vývoj postupuje, myslíme si, že GDScript si vás "
+"získá."
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -846,7 +846,7 @@ msgid ""
 "tutorial."
 msgstr ""
 "Více informací o pohodlném používání GDScriptu nebo dynamicky jazyků najdete "
-"v tutoriálu: ref: `doc_gdscript_more_efffully`."
+"v tutoriálu :ref:`doc_gdscript_more_efffully`."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
@@ -1073,7 +1073,7 @@ msgid ""
 "achieve this."
 msgstr ""
 "Použijte možnosti roztažení v Godot; 2D roztažení při zachování poměru stran "
-"funguje nejlépe. Podívejte se na návod: ref: `doc_multiple_resolutions`, jak "
+"funguje nejlépe. Podívejte se na návod :ref:`doc_multiple_resolutions`, jak "
 "toho dosáhnout."
 
 #: ../../docs/about/faq.rst:213
@@ -1086,7 +1086,7 @@ msgstr ""
 "Určete minimální rozlišení a poté se rozhodněte, zda chcete, aby se vaše hra "
 "natahovala svisle nebo vodorovně pro různé poměry stran, nebo zda existuje "
 "jeden poměr stran a chcete, aby se místo toho zobrazovaly černé pruhy. To je "
-"také vysvětleno v: ref: `doc_multiple_resolutions`."
+"také vysvětleno v :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:218
 msgid ""
@@ -1094,7 +1094,7 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"U uživatelských rozhraní použijte: ref: `kotvení <doc_size_and_anchors>`, "
+"U uživatelských rozhraní použijte :ref:`kotvení <doc_size_and_anchors>`, "
 "abyste určili, kde by měly ovládací prvky zůstat a kam by se měly případně "
 "pohybovat. Pokud jsou uživatelská rozhraní komplexnější, zvažte poučení o "
 "kontejnerech."
@@ -1126,7 +1126,7 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Chcete-li rozšířit Godot, například vytvořit pluginy editoru Godot nebo "
-"přidat podporu pro další jazyky, podívejte se na: ref: `EditorPlugins "
+"přidat podporu pro další jazyky, podívejte se na :ref:`EditorPlugins "
 "<doc_making_plugins>` a skripty nástrojů."
 
 #: ../../docs/about/faq.rst:236
@@ -1143,7 +1143,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative je tady! <https://godotengine.org/article/dlscript-here> `_"
+msgstr "`GDNative je tady! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -1458,7 +1458,7 @@ msgstr "Jak mohu podpořit Godotův rozvoj nebo přispět?"
 
 #: ../../docs/about/faq.rst:360
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr "Viz: ref: `doc_ways_to_contribute`."
+msgstr "Viz :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"
@@ -1504,7 +1504,7 @@ msgstr "Platformy"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr "** Může spouštět jak editor, tak exportované projekty: **"
+msgstr "**Může spouštět jak editor, tak exportované projekty:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -1532,7 +1532,7 @@ msgstr "Oficiální binární soubory jsou kompilovány na Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:29
 msgid "**Runs exported projects:**"
-msgstr "** Spustí exportované projekty: **"
+msgstr "**Spustí exportované projekty:**"
 
 #: ../../docs/about/list_of_features.rst:31
 msgid "Android 4.4 and later."
@@ -1548,7 +1548,7 @@ msgstr "HTML5 přes WebAssembly (Firefox, Chrome, Edge, Opera)."
 
 #: ../../docs/about/list_of_features.rst:34
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ": ref: `Konzole <doc_consoles>`."
+msgstr ":ref:`Konzole <doc_consoles>`."
 
 #: ../../docs/about/list_of_features.rst:36
 msgid ""
@@ -1589,7 +1589,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:48
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr "GDScript: ref: `debugger <doc_debugger_panel>`."
+msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "No support for debugging in threads yet."
@@ -1641,14 +1641,14 @@ msgstr "Použijte editor v desítkách jazyků připravených komunitou."
 
 #: ../../docs/about/list_of_features.rst:60
 msgid "**Plugins:**"
-msgstr "** Pluginy: **"
+msgstr "**Pluginy:**"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
-"Pluginy pro rozšíření funkcí editoru lze stáhnout z: ref: `library library "
+"Pluginy pro rozšíření funkcí editoru lze stáhnout z :ref:`library library "
 "<doc_what_is_assetlib>`."
 
 #: ../../docs/about/list_of_features.rst:64
@@ -1674,7 +1674,7 @@ msgstr "2D grafika"
 #: ../../docs/about/list_of_features.rst:70
 #: ../../docs/about/list_of_features.rst:124
 msgid "**Two renderers available:**"
-msgstr "** K dispozici dva vykreslovače: **"
+msgstr "**K dispozici dva vykreslovače:**"
 
 #: ../../docs/about/list_of_features.rst:72
 #: ../../docs/about/list_of_features.rst:127
@@ -1807,7 +1807,7 @@ msgstr "2D fyzika"
 #: ../../docs/about/list_of_features.rst:108
 #: ../../docs/about/list_of_features.rst:240
 msgid "**Physics bodies:**"
-msgstr "** Fyzikální tělesa: **"
+msgstr "**Fyzikální tělesa:**"
 
 #: ../../docs/about/list_of_features.rst:110
 #: ../../docs/about/list_of_features.rst:242
@@ -1868,7 +1868,7 @@ msgid ""
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
 "Ne všechny funkce jsou k dispozici. Funkce dostupné pouze při použití "
-"vykreslovacího modulu OpenGL ES 3.0 jsou níže označeny * GLES3 *."
+"vykreslovacího modulu OpenGL ES 3.0 jsou níže označeny *GLES3*."
 
 #: ../../docs/about/list_of_features.rst:135
 msgid "**Camera:**"
@@ -1880,7 +1880,7 @@ msgstr "Perspektivní, ortografické a komutované kamery."
 
 #: ../../docs/about/list_of_features.rst:139
 msgid "**Physically-based rendering:**"
-msgstr "** Vykreslování založené na fyzice **"
+msgstr "**Vykreslování založené na fyzice**"
 
 #: ../../docs/about/list_of_features.rst:141
 msgid "Follows the Disney PBR model."
@@ -1899,16 +1899,16 @@ msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
-"* GLES3: * Parallax / reliéfní mapování s automatickou úrovní detailů na "
+"*GLES3:* Parallax / reliéfní mapování s automatickou úrovní detailů na "
 "základě vzdálenosti."
 
 #: ../../docs/about/list_of_features.rst:145
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr "* GLES3: * Podpovrchový rozptyl a propustnost."
+msgstr "*GLES3:* Podpovrchový rozptyl a propustnost."
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr "* GLES3: * Blízké vyblednutí (měkké částice)."
+msgstr "*GLES3:* Blízké vyblednutí (měkké částice)."
 
 #: ../../docs/about/list_of_features.rst:147
 msgid ""
@@ -1926,7 +1926,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:151
 msgid "**Real-time lighting:**"
-msgstr "** Osvětlení v reálném čase: **"
+msgstr "**Osvětlení v reálném čase:**"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "Directional lights (sun/moon). Up to 4 per scene."
@@ -1942,14 +1942,14 @@ msgstr "Bodová světla s nastavitelným úhlem kužele a útlumem."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Shadow mapping:**"
-msgstr "** Mapování stínů: **"
+msgstr "**Mapování stínů:**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
-"* DirectionalLight: * Orthogonal (nejrychlejší), PSSM 2-split and 4-split. "
+"*DirectionalLight:* Orthogonal (nejrychlejší), PSSM 2-split and 4-split. "
 "Podporuje prolnutí mezer."
 
 #: ../../docs/about/list_of_features.rst:161
@@ -1957,16 +1957,16 @@ msgid ""
 "*OmniLight:* Dual parabolid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"* OmniLight: * Duální parabolid (rychlý) nebo cubemap (pomalejší, ale "
+"*OmniLight:* Duální parabolid (rychlý) nebo cubemap (pomalejší, ale "
 "přesnější). Podporuje barevné textury projektorů ve formě panoramat."
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*SpotLight:* Single texture."
-msgstr "* SpotLight: * Jedna textura."
+msgstr "*SpotLight:* Jedna textura."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid "**Global illumination with indirect lighting:**"
-msgstr "** Globální iluminace s nepřímým osvětlením: **"
+msgstr "**Globální iluminace s nepřímým osvětlením:**"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
@@ -1978,7 +1978,7 @@ msgstr "Světelné mapy se připravované na CPU."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr "* GLES3: * GI sondy (pomalejší, v reálném čase). Podporuje odrazy."
+msgstr "*GLES3:* GI sondy (pomalejší, v reálném čase). Podporuje odrazy."
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "**Reflections:**"
@@ -1986,7 +1986,7 @@ msgstr "**Odrazy:**"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr "* GLES3: * Odrazy založené na Voxelu (při použití sond GI)."
+msgstr "*GLES3:* Odrazy založené na Voxelu (při použití sond GI)."
 
 #: ../../docs/about/list_of_features.rst:174
 msgid ""
@@ -2042,7 +2042,7 @@ msgstr "Volitelná propustnost pro zviditelnění světel v mlze."
 
 #: ../../docs/about/list_of_features.rst:192
 msgid "**Particles:**"
-msgstr "** Částice: **"
+msgstr "**Částice:**"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2058,15 +2058,15 @@ msgstr "Tonemapování (lineární, Reinhard, filmový, ACES)."
 
 #: ../../docs/about/list_of_features.rst:200
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr "* GLES3: * Automatické úpravy expozice na základě jasu výřezu."
+msgstr "*GLES3:* Automatické úpravy expozice na základě jasu výřezu."
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "*GLES3:* Near and far depth of field."
-msgstr "* GLES3: * Blízká a velká hloubka ostrosti."
+msgstr "*GLES3:* Blízká a velká hloubka ostrosti."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "* GLES3: * Okolní okluze obrazovky."
+msgstr "*GLES3:* Okolní okluze obrazovky."
 
 #: ../../docs/about/list_of_features.rst:203
 msgid ""
@@ -2094,17 +2094,17 @@ msgstr "Nejbližší, bilineární, trilineární nebo anizotropní filtrování
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Texture compression:**"
-msgstr "** Komprese textur: **"
+msgstr "**Komprese textur:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
-"* GLES3: * BPTC pro vysoce kvalitní kompresi (není podporováno v systému "
+"*GLES3:* BPTC pro vysoce kvalitní kompresi (není podporováno v systému "
 "MacOS)."
 
 #: ../../docs/about/list_of_features.rst:215
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr "* GLES3: * ETC2 (není podporováno v systému MacOS)."
+msgstr "*GLES3:* ETC2 (není podporováno v systému MacOS)."
 
 #: ../../docs/about/list_of_features.rst:216
 msgid "ETC1 (recommended when using the GLES2 renderer)."
@@ -2112,7 +2112,7 @@ msgstr "ETC1 (doporučeno při použití vykreslovacího modulu GLES2)."
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr "* GLES3: * S3TC (není podporován na mobilních / webových platformách)."
+msgstr "*GLES3:* S3TC (není podporován na mobilních / webových platformách)."
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "**Anti-aliasing:**"
@@ -2151,7 +2151,7 @@ msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
-": ref: `Konstrukční pevná geometrie <doc_csg_tools>` (určená pro "
+":ref:`Konstrukční pevná geometrie <doc_csg_tools>` (určená pro "
 "prototypování)."
 
 #: ../../docs/about/list_of_features.rst:233
@@ -2212,8 +2212,7 @@ msgstr "*2D:* Vlastní vertex, fragmentové a světelné shadery."
 
 #: ../../docs/about/list_of_features.rst:261
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
-"* 3D: * Vlastní vertex , fragmentové, světelné shadery a shadery oblohy."
+msgstr "*3D:* Vlastní vertex , fragmentové, světelné shadery a shadery oblohy."
 
 #: ../../docs/about/list_of_features.rst:262
 msgid ""
@@ -2255,7 +2254,7 @@ msgstr "Signály a skupiny pro komunikaci mezi skripty."
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
-"Podpora pro: ref: `cross-language scripting <doc_cross_language_scripting>`."
+"Podpora pro :ref:`cross-language scripting <doc_cross_language_scripting>`."
 
 #: ../../docs/about/list_of_features.rst:274
 msgid ""
@@ -2265,14 +2264,14 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:276
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ": ref: `GDScript: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:278
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
-": ref: `Interpretovaný high-level jazyk i <doc_gdscript>` s: ref: `volitelné "
+":ref:`Interpretovaný high-level jazyk i <doc_gdscript>` s :ref:`volitelné "
 "statické typy<doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:280
@@ -2288,12 +2287,12 @@ msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
-": ref: `Použít vlákna <doc_using_multiple_threads>` k provádění "
-"asynchronních akcí nebo k využití více jader procesorů."
+":ref:`Použít vlákna <doc_using_multiple_threads>` k provádění asynchronních "
+"akcí nebo k využití více jader procesorů."
 
 #: ../../docs/about/list_of_features.rst:285
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ": ref: `C #: <toc-learn-scripting-gdscript>`"
+msgstr ":ref:`C #: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:287
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
@@ -2321,13 +2320,13 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:293
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ": ref: `VisualScript: <toc-learn-scripting-visual_script>`"
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
-": ref: `Grafický vizuální skriptovací jazyk <doc_what_is_visual_script>`."
+":ref:`Grafický vizuální skriptovací jazyk <doc_what_is_visual_script>`."
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
@@ -2339,7 +2338,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:299
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr "** GDNative (C, C ++, Rust, D, ...): **"
+msgstr "**GDNative (C, C ++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:302
 msgid ""
@@ -2392,7 +2391,7 @@ msgstr "Volitelný Dopplerův efekt ve 2D a 3D."
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects."
-msgstr "Podpora re-routable: ref: `audio bus <doc_audio_buses>` a efekty."
+msgstr "Podpora re-routable :ref:`audio bus <doc_audio_buses>` a efekty."
 
 #: ../../docs/about/list_of_features.rst:317
 msgid "Dozens of effects included."
@@ -2417,19 +2416,19 @@ msgstr "Zatím žádná podpora pro výstup MIDI."
 
 #: ../../docs/about/list_of_features.rst:323
 msgid "**APIs used:**"
-msgstr "** použité API: **"
+msgstr "**použité API:**"
 
 #: ../../docs/about/list_of_features.rst:325
 msgid "*Windows:* WASAPI."
-msgstr "* Windows: * WASAPI."
+msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:326
 msgid "*macOS:* CoreAudio."
-msgstr "* macOS: * CoreAudio."
+msgstr "*macOS:* CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:327
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr "* Linux: * PulseAudio nebo ALSA."
+msgstr "*Linux:* PulseAudio nebo ALSA."
 
 #: ../../docs/about/list_of_features.rst:330
 msgid "Import"
@@ -2437,15 +2436,15 @@ msgstr "Importovat"
 
 #: ../../docs/about/list_of_features.rst:332
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr "Podpora pro: ref: `custom import plugins <doc_import_plugins>`."
+msgstr "Podpora pro :ref:`custom import plugins <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:334
 msgid "**Formats:**"
-msgstr "** Formáty: **"
+msgstr "**Formáty:**"
 
 #: ../../docs/about/list_of_features.rst:336
 msgid "*Images:* See :ref:`doc_importing_images_supported_formats`."
-msgstr "* Obrázky: * Viz: odkaz: `doc_importing_images_supported_formats`."
+msgstr "*Obrázky:* Viz: odkaz: `doc_importing_images_supported_formats`."
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "*Audio:*"
@@ -2461,11 +2460,11 @@ msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:346
 msgid "*3D scenes:*"
-msgstr "* 3D scény: *"
+msgstr "*3D scény:*"
 
 #: ../../docs/about/list_of_features.rst:341
 msgid "glTF 2.0 *(recommended)*."
-msgstr "glTF 2,0 * (doporučeno) *."
+msgstr "glTF 2,0 *(doporučeno)*."
 
 #: ../../docs/about/list_of_features.rst:342
 msgid ""
@@ -2632,8 +2631,8 @@ msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
-"Uložte lokalizační řetězce pomocí: ref: `CSV <doc_internationalizing_games>` "
-"nebo: ref: `gettext <doc_localization_using_gettext>`."
+"Uložte lokalizační řetězce pomocí :ref:`CSV <doc_internationalizing_games>` "
+"nebo :ref:`gettext <doc_localization_using_gettext>`."
 
 #: ../../docs/about/list_of_features.rst:392
 msgid ""
@@ -2641,7 +2640,7 @@ msgid ""
 "using the ``tr()`` function."
 msgstr ""
 "Použijte lokalizované řetězce v projektu automaticky v prvcích GUI nebo "
-"pomocí funkce `` tr () ``."
+"pomocí funkce ``tr ()``."
 
 #: ../../docs/about/list_of_features.rst:394
 msgid ""
@@ -2760,7 +2759,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:432
 msgid "**Nodes:**"
-msgstr "** Uzly: **"
+msgstr "**Uzly:**"
 
 #: ../../docs/about/list_of_features.rst:434
 msgid "Buttons."
@@ -2793,7 +2792,7 @@ msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
-"RichTextLabel pro: ref: `text formátovaný pomocí BBCode "
+"RichTextLabel pro :ref:`text formátovaný pomocí BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 
 #: ../../docs/about/list_of_features.rst:441
@@ -2830,11 +2829,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:449
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ": ref: `Krabicové <class_BoxContainer>` rozložení."
+msgstr ":ref:`Krabicové <class_BoxContainer>` rozložení."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ": ref: `Mřížkové <class_GridContainer>` rozložení."
+msgstr ":ref:`Mřížkové <class_GridContainer>` rozložení."
 
 #: ../../docs/about/list_of_features.rst:451
 msgid ""
@@ -2846,7 +2845,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:453
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
-msgstr ":ref:` Rozložení s tahovým rozdělovačem <class_SplitContainer>` ."
+msgstr ":ref:`Rozložení s tahovým rozdělovačem <class_SplitContainer>` ."
 
 #: ../../docs/about/list_of_features.rst:454
 msgid ""
@@ -2859,7 +2858,7 @@ msgstr ""
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
-"Podporujte jakýkoli poměr stran pomocí kotev a aspektu roztažení `` expand``."
+"Podporujte jakýkoli poměr stran pomocí kotev a aspektu roztažení ``expand``."
 
 #: ../../docs/about/list_of_features.rst:457
 msgid "**Theming:**"
@@ -2875,7 +2874,7 @@ msgstr "Vygenerujte motiv na základě aktuálního nastavení motivu editoru."
 
 #: ../../docs/about/list_of_features.rst:461
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
-msgstr "Procedurální vektorové tematizace pomocí: ref: `class_StyleBoxFlat`."
+msgstr "Procedurální vektorové tematizace pomocí :ref:`class_StyleBoxFlat`."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
@@ -2883,7 +2882,7 @@ msgstr "Podporuje zaoblené / zkosené rohy, vržené stíny a šířku okraje."
 
 #: ../../docs/about/list_of_features.rst:463
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr "Motivy vytvořené z textur pomocí: ref: `class_StyleBoxTexture`."
+msgstr "Motivy vytvořené z textur pomocí :ref:`class_StyleBoxTexture`."
 
 #: ../../docs/about/list_of_features.rst:465
 msgid ""
@@ -2930,7 +2929,7 @@ msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
 msgstr ""
-"Scény a herní zdroje lze uložit pomocí: ref: `textově založeného "
+"Scény a herní zdroje lze uložit pomocí :ref:`textově založeného "
 "<doc_tscn_file_format>` nebo binárního formátu."
 
 #: ../../docs/about/list_of_features.rst:481
@@ -2946,7 +2945,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:483
 msgid "Read and write text or binary files using :ref:`class_File`."
 msgstr ""
-"Čtení a zápis textových nebo binárních souborů pomocí: ref: `class_File`."
+"Čtení a zápis textových nebo binárních souborů pomocí :ref:`class_File`."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Can optionally be compressed or encrypted."
@@ -2954,7 +2953,7 @@ msgstr "Lze volitelně komprimovat nebo šifrovat."
 
 #: ../../docs/about/list_of_features.rst:485
 msgid "Read and write :ref:`class_JSON` files."
-msgstr "Čtení a zápis: ref: `class_JSON` souborů."
+msgstr "Čtení a zápis :ref:`class_JSON` souborů."
 
 #: ../../docs/about/list_of_features.rst:486
 msgid ""
@@ -2970,7 +2969,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:488
 msgid "Read XML files using :ref:`class_XMLParser`."
-msgstr "Čtení souborů XML pomocí: ref: `class_XMLParser`."
+msgstr "Čtení souborů XML pomocí :ref:`class_XMLParser`."
 
 #: ../../docs/about/list_of_features.rst:489
 msgid ""
@@ -2987,7 +2986,7 @@ msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
-": ref: `Exportovat další soubory PCK <doc_exporting_pcks>`, které lze číst "
+":ref:`Exportovat další soubory PCK <doc_exporting_pcks>`, které lze číst "
 "enginempro podporu modů a DLC."
 
 #: ../../docs/about/list_of_features.rst:495
@@ -3001,8 +3000,8 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
-": ref: `Nízkoúrovňový přístup k serverům <doc_using_servers>`, který "
-"umožňuje obejít režii stromu scény, když je to potřeba."
+":ref:`Nízkoúrovňový přístup k serverům <doc_using_servers>`, který umožňuje "
+"obejít režii stromu scény, když je to potřeba."
 
 #: ../../docs/about/list_of_features.rst:501
 msgid "Command line interface for automation."
@@ -3025,7 +3024,7 @@ msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
-"Podpora pro: ref: `C ++ moduly <doc_custom_modules_in_c ++>` staticky "
+"Podpora pro :ref:`C ++ moduly <doc_custom_modules_in_c ++>` staticky "
 "linkovanédo binárního modulu enginu."
 
 #: ../../docs/about/list_of_features.rst:510
@@ -3037,7 +3036,7 @@ msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
-"Může být: ref: `zkompilován <doc_introduction_to_the_buildsystem>` pomocí "
+"Může být :ref:`zkompilován <doc_introduction_to_the_buildsystem>` pomocí "
 "GCC, Clang a MSVC. Podporováno je také MinGW."
 
 #: ../../docs/about/list_of_features.rst:508
@@ -3089,7 +3088,7 @@ msgid ""
 msgstr ""
 "Dokumentace se neustále vylepšuje. Vydání verze 3.2 obsahuje mnoho nových "
 "výukových programů, mnoho oprav a aktualizací starých výukových programů a "
-"mnoho aktualizací: ref: `reference třídy <toc-class-ref>`. Níže je uveden "
+"mnoho aktualizací :ref:`reference třídy <toc-class-ref>`. Níže je uveden "
 "seznam nových tutoriálů přidaných od verze 3.1."
 
 #: ../../docs/about/docs_changelog.rst:11
@@ -3114,7 +3113,7 @@ msgstr "Pracovní postup projektu"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ": ref: `doc_android_custom_build`"
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
@@ -3124,11 +3123,11 @@ msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ":ref:'doc_2d_sprite_animation'"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ": ref: `doc_recording_with_microphone`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
@@ -3140,11 +3139,11 @@ msgstr "Matematika"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ": ref: `doc_beziers_and_curves`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_interpolation`"
-msgstr ": ref: `doc_interpolation`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -3153,11 +3152,11 @@ msgstr "Vstupy"
 
 #: ../../docs/about/docs_changelog.rst:42
 msgid ":ref:`doc_input_examples`"
-msgstr ": ref: `doc_input_examples`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ": ref: `doc_localization_using_gettext`"
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
@@ -3171,19 +3170,19 @@ msgstr "Vaše první Shader série :"
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ": ref: `doc_what_are_shaders`"
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ": ref: `doc_your_first_canvasitem_shader`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ": ref: `doc_your_first_canvasitem_shader`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:56
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ": ref: `doc_your_first_canvasitem_shader`"
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`doc_visual_shaders`"
@@ -3270,11 +3269,11 @@ msgstr "Optimalizace"
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
-msgstr ": ref: `doc_using_multimesh`"
+msgstr ":ref:`doc_using_multimesh`"
 
 #: ../../docs/about/docs_changelog.rst:96
 msgid ":ref:`doc_using_servers`"
-msgstr ": ref: `doc_using_servers`"
+msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:99
 #: ../../docs/tutorials/legal/index.rst:2
@@ -3283,7 +3282,7 @@ msgstr "Legislativa"
 
 #: ../../docs/about/docs_changelog.rst:101
 msgid ":ref:`doc_complying_with_licenses`"
-msgstr ": ref: `doc_complying_with_licenses`"
+msgstr ":ref:`doc_complying_with_licenses`"
 
 #: ../../docs/about/docs_changelog.rst:104
 msgid "New tutorials since version 3.0"
@@ -3346,19 +3345,19 @@ msgstr ":ref:`doc_godot_notifications`"
 
 #: ../../docs/about/docs_changelog.rst:130
 msgid ":ref:`doc_data_preferences`"
-msgstr ": ref: `doc_data_preferences`"
+msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:131
 msgid ":ref:`doc_logic_preferences`"
-msgstr ": ref: `doc_data_preferences`"
+msgstr ":ref:`doc_data_preferences`"
 
 #: ../../docs/about/docs_changelog.rst:136
 msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ": ref: `doc_2d_lights_and_shadows`"
+msgstr ":ref:`doc_2d_lights_and_shadows`"
 
 #: ../../docs/about/docs_changelog.rst:137
 msgid ":ref:`doc_2d_meshes`"
-msgstr ": ref: `doc_2d_meshes`"
+msgstr ":ref:`doc_2d_meshes`"
 
 #: ../../docs/about/docs_changelog.rst:140 ../../docs/tutorials/3d/index.rst:2
 #: ../../docs/tutorials/optimization/index.rst:79
@@ -3367,15 +3366,15 @@ msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
-msgstr ": ref: `doc_csg_tools`"
+msgstr ":ref:`doc_csg_tools`"
 
 #: ../../docs/about/docs_changelog.rst:143
 msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ": ref: `doc_animating_thousands_of_fish`"
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:144
 msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ": ref: `doc_animating_thousands_of_fish`"
+msgstr ":ref:`doc_animating_thousands_of_fish`"
 
 #: ../../docs/about/docs_changelog.rst:147
 #: ../../docs/tutorials/physics/index.rst:2
@@ -3385,19 +3384,19 @@ msgstr "Fyzika"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ": ref: `doc_ragdoll_system`"
+msgstr ":ref:`doc_ragdoll_system`"
 
 #: ../../docs/about/docs_changelog.rst:150
 msgid ":ref:`doc_soft_body`"
-msgstr ": ref: `doc_soft_body`"
+msgstr ":ref:`doc_soft_body`"
 
 #: ../../docs/about/docs_changelog.rst:155
 msgid ":ref:`doc_2d_skeletons`"
-msgstr ": ref: `doc_2d_skeletons`"
+msgstr ":ref:`doc_2d_skeletons`"
 
 #: ../../docs/about/docs_changelog.rst:156
 msgid ":ref:`doc_animation_tree`"
-msgstr ": ref: `doc_animation_tree`"
+msgstr ":ref:`doc_animation_tree`"
 
 #: ../../docs/about/docs_changelog.rst:159 ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
@@ -3405,7 +3404,7 @@ msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:161
 msgid ":ref:`doc_gui_containers`"
-msgstr ": ref: `doc_gui_containers`"
+msgstr ":ref:`doc_gui_containers`"
 
 #: ../../docs/about/docs_changelog.rst:164
 #: ../../docs/tutorials/viewports/index.rst:2
@@ -3415,23 +3414,23 @@ msgstr "Viewporty"
 
 #: ../../docs/about/docs_changelog.rst:166
 msgid ":ref:`doc_viewport_as_texture`"
-msgstr ": ref: `doc_viewport_as_texture`"
+msgstr ":ref:`doc_viewport_as_texture`"
 
 #: ../../docs/about/docs_changelog.rst:167
 msgid ":ref:`doc_custom_postprocessing`"
-msgstr ": ref: `doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:172
 msgid ":ref:`doc_intro_to_shaders_water_workshop`"
-msgstr ": ref: `doc_intro_to_shaders_water_workshop`"
+msgstr ":ref:`doc_intro_to_shaders_water_workshop`"
 
 #: ../../docs/about/docs_changelog.rst:173
 msgid ":ref:`doc_migrating_to_godot_shader_language`"
-msgstr ": ref: `doc_migrating_to_godot_shader_language`"
+msgstr ":ref:`doc_migrating_to_godot_shader_language`"
 
 #: ../../docs/about/docs_changelog.rst:174
 msgid ":ref:`doc_advanced_postprocessing`"
-msgstr ": ref: `doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:176
 msgid "Shading Reference:"
@@ -3439,11 +3438,11 @@ msgstr "Stínování Reference:"
 
 #: ../../docs/about/docs_changelog.rst:178
 msgid ":ref:`doc_shaders`"
-msgstr ": ref: `doc_shaders`"
+msgstr ":ref:`doc_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:179
 msgid ":ref:`doc_shading_language`"
-msgstr ": ref: `doc_shading_language`"
+msgstr ":ref:`doc_shading_language`"
 
 #: ../../docs/about/docs_changelog.rst:180
 msgid ":ref:`doc_spatial_shader`"
@@ -3451,7 +3450,7 @@ msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:181
 msgid ":ref:`doc_canvas_item_shader`"
-msgstr ": ref: `doc_canvas_item_shader`"
+msgstr ":ref:`doc_canvas_item_shader`"
 
 #: ../../docs/about/docs_changelog.rst:182
 msgid ":ref:`doc_particle_shader`"
@@ -3476,7 +3475,7 @@ msgstr ":ref:'doc_customizing_html5_shell'"
 
 #: ../../docs/about/docs_changelog.rst:198
 msgid ":ref:`doc_thread_safe_apis`"
-msgstr ": ref: `doc_thread_safe_apis`"
+msgstr ":ref:`doc_thread_safe_apis`"
 
 #: ../../docs/about/docs_changelog.rst:203
 msgid ":ref:`doc_making_trees`"
@@ -3511,7 +3510,7 @@ msgstr "Kompilace"
 
 #: ../../docs/about/docs_changelog.rst:216
 msgid ":ref:`doc_optimizing_for_size`"
-msgstr ": ref: `doc_optimizing_for_size`"
+msgstr ":ref:`doc_optimizing_for_size`"
 
 #: ../../docs/about/docs_changelog.rst:217
 msgid ":ref:`doc_compiling_with_script_encryption_key`"
@@ -3542,10 +3541,10 @@ msgid ""
 "3.2) will most likely introduce breaking changes. Still, there won't be as "
 "many breaking changes as a \"semver-major\" version bump such as 3.2 -> 4.0."
 msgstr ""
-"Godot používá `` major.minor.patch`` číslování verzí. Neřídí se však "
-"striktně podle `Sémantického verzování <https://semver.org/>` __. To "
-"znamená, že vydání, která jsou podle této normy považována za „semver-"
-"minor“ (například 3.1 -> 3.2), s největší pravděpodobností přinesou zlomové "
+"Godot používá ``major.minor.patch`` číslování verzí. Neřídí se však striktně "
+"podle `Sémantického verzování <https://semver.org/>` __. To znamená, že "
+"vydání, která jsou podle této normy považována za \"semver-minor"
+"\" (například 3.1 -> 3.2), s největší pravděpodobností přinesou zlomové "
 "změny. Stále však nedojde k tolika zlomovým změnám jako u verze „semver-"
 "major“, jako je 3.2 -> 4.0."
 
@@ -3568,7 +3567,7 @@ msgid ""
 "not ``3.2.0``."
 msgstr ""
 "První vydání v řadě hlavních / vedlejších vydání nekončí koncovou nulou. "
-"Například první verze v řadě 3.2 je `` 3.2``, nikoli `` 3.2.0``."
+"Například první verze v řadě 3.2 je ``3.2``, nikoli ``3.2.0``."
 
 #: ../../docs/about/release_policy.rst:27
 msgid "Release support timeline"
@@ -3594,7 +3593,7 @@ msgstr "**Datum vydání**"
 
 #: ../../docs/about/release_policy.rst:34
 msgid "**Support level**"
-msgstr "** Úroveň podpory **"
+msgstr "**Úroveň podpory**"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "Godot 4.0"
@@ -3606,7 +3605,7 @@ msgstr "~ 2021 (viz níže)"
 
 #: ../../docs/about/release_policy.rst:36
 msgid "|unstable| *Current focus of development (unstable).*"
-msgstr "|unstable| * Aktuální zaměření vývoje (nestabilní). *"
+msgstr "|unstable| *Aktuální zaměření vývoje (nestabilní).*"
 
 #: ../../docs/about/release_policy.rst:38
 msgid "Godot 3.2"
@@ -3712,7 +3711,7 @@ msgid ""
 msgstr ""
 "Přestože vývojáři Godota nefungují v žádných termínech, obvykle je "
 "každoročně k dispozici hlavní nebo menší vydání Godota.Podle tohoto trendu "
-"to znamená, že Godot 4.0 bude s největší pravděpodobností vydán v ** 2021 **."
+"to znamená, že Godot 4.0 bude s největší pravděpodobností vydán v **2021**."
 
 #: ../../docs/about/release_policy.rst:75
 msgid ""
@@ -3740,12 +3739,10 @@ msgstr ""
 "začít s enginem."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
-#, fuzzy
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
 msgstr ""
-"Podívejte se na příslušnou stránku na webu Godot <https://godotengine.org/"
-"contact> `_."
+"Můžete si stáhnout Godot Engine zde <https://godotengine.org/download/> `_."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -3785,10 +3782,10 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"Pro rychlejší začátek si můžete na kartě ** Šablony ** stáhnout open-source "
+"Pro rychlejší začátek si můžete na kartě **Šablony** stáhnout open-source "
 "šablony a dema z Knihovny zdrojů. Stačí vybrat požadovanou šablonu nebo "
 "ukázku, kliknout na stažení, po dokončení stahování, zvolte nainstalovat a "
-"vyberte, kam chcete projekt uložit. Více se můžete dozvědět v: ref: "
+"vyberte, kam chcete projekt uložit. Více se můžete dozvědět v :ref:"
 "`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
@@ -3821,7 +3818,7 @@ msgid ""
 "project."
 msgstr ""
 "Když uvidíte zelenou fajku napravo, znamená to, že engine detekoval prázdnou "
-"složku. Můžete také kliknout na tlačítko `` Vytvořit složku`` vedle názvu "
+"složku. Můžete také kliknout na tlačítko ``Vytvořit složku`` vedle názvu "
 "projektu a vytvoří se prázdná složka s tímto názvem pro projekt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
@@ -3834,7 +3831,7 @@ msgid ""
 msgstr ""
 "Nakonec je třeba zvolit, který vykreslovací modul se má použít (OpenGL ES "
 "3.0 nebo OpenGL ES 2.0). Pro usnadnění výběru jsou zde rovnou uvedeny výhody "
-"a nevýhody každého z nich .Více informací najdete na: ref: "
+"a nevýhody každého z nich .Více informací najdete na :ref:"
 "`doc_gles2_gles3_differences` . Pokud později změníte názor, můžete změnit "
 "backend z nastavení projektu. Pro tento tutoriál se nemůžete splést ani s "
 "jedním z nich."
@@ -3844,7 +3841,7 @@ msgid ""
 "Once you are done click ``Create & Edit``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"Po dokončení klikněte na `` Vytvořit a editovat``. Godot pro vás vytvoří "
+"Po dokončení klikněte na ``Vytvořit a editovat``. Godot pro vás vytvoří "
 "projekt a otevře jej v editoru."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
@@ -3863,7 +3860,7 @@ msgid ""
 msgstr ""
 "Existující projekty můžete načíst podobným způsobem pomocí tlačítka Import. "
 "Pro otevření a editaci vyhledejte složku, která obsahuje projekt nebo soubor "
-"`` project.godot``."
+"``project.godot``."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid "When the folder path is correct, you'll see a green checkmark."
@@ -3887,14 +3884,14 @@ msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
-"V horní části zleva doprava jsou zobrazeny ** hlavní nabídky **, ** pracovní "
-"plochy ** a ** tlačítka pro spouštění projektu **."
+"V horní části zleva doprava jsou zobrazeny **hlavní nabídky**, ** pracovní "
+"plochy **a** tlačítka pro spouštění projektu **."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
-"Dok ** Souborový systém ** je místo, kde budete spravovat soubory a zdroje "
+"Dok **Souborový systém** je místo, kde budete spravovat soubory a zdroje "
 "projektu."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
@@ -3902,8 +3899,8 @@ msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
 msgstr ""
-"Dok ** Scéna ** ukazuje složení aktivní scény a ** Inspektor ** umožňuje "
-"editaci vlastností položek scény."
+"Dok **Scéna** ukazuje složení aktivní scény a **Inspektor** umožňuje editaci "
+"vlastností položek scény."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
@@ -3921,7 +3918,7 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That's "
 "why they're folded by default."
 msgstr ""
-"** Dolní Panel ** je hostitelem pro ladicí konzole, editor animace, audio "
+"**Dolní Panel** je hostitelem pro ladicí konzole, editor animace, audio "
 "mixer ... Tyto panely sou široké a mohou zabírat drahocenný prostor. To je "
 "důvod, proč jsou ve výchozím nastavení složeny."
 
@@ -3942,17 +3939,17 @@ msgid ""
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"Pracovní plochu ** 2D ** budete používat pro všechny typy her. Kromě 2D her "
-"je 2D pracoviště také místem, kde budete vytvářet uživatelské rozhraní pro "
-"vaše hry. Pro rychlý přístup stiskněte klávesy: kbd: `F1` (nebo: kbd:` Alt + "
-"1` v systému MacOS) ."
+"Pracovní plochu **2D** budete používat pro všechny typy her. Kromě 2D her je "
+"2D pracoviště také místem, kde budete vytvářet uživatelské rozhraní pro vaše "
+"hry. Pro rychlý přístup stiskněte klávesy: kbd: `F1` (nebo: kbd:`Alt + 1` v "
+"systému MacOS) ."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"Na ** 3D ** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
+"Na **3D** pracovní ploše můžete pracovat s mřížkou a osvětlením při návrhu "
 "úrovní pro 3D hry. Otevřete ji stisknutím klávesy: kbd: `F2` (nebo: kbd:` "
 "Alt + 2` v systému MacOS) ."
 
@@ -3968,7 +3965,7 @@ msgstr ""
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
-"Přečtěte si: ref: `doc_introduction_to_3d` pro více informací o ** 3D "
+"Přečtěte si :ref:`doc_introduction_to_3d` pro více informací o ** 3D "
 "pracovní ploše **."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
@@ -3977,7 +3974,7 @@ msgid ""
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
-"Pracovní plocha ** Skript ** je kompletní editor kódu s debuggerem, bohatým "
+"Pracovní plocha **Skript** je kompletní editor kódu s debuggerem, bohatým "
 "automatickým dokončováním a vestavěnou referenční dokumentací Stiskněte: "
 "kbd: `F3` (nebo: kbd:` Alt + 3` v systému MacOS) pro přístup na plochu a: "
 "kbd: `Alt + F1` pro hledání v referenční dokumentaci."
@@ -4012,7 +4009,7 @@ msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
 msgstr ""
-"A konečně, ** AssetLib ** je knihovna bezplatných a otevřených doplňků, "
+"A konečně, **AssetLib** je knihovna bezplatných a otevřených doplňků, "
 "skriptů a zdrojů, které lze použít ve vašich projektech."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
@@ -4053,8 +4050,8 @@ msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"Přejděte do nabídky `` Editor`` a `` Nastavení editoru `` pro doladění "
-"vzhledu a přívětivosti editoru."
+"Přejděte do nabídky ``Editor`` a ``Nastavení editoru`` pro doladění vzhledu "
+"a přívětivosti editoru."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
@@ -4068,8 +4065,8 @@ msgid ""
 "for your guests."
 msgstr ""
 "Představ si na chvilku, že nejsi herní vývojář. Jsi prostě kuchař! Vyměň jsi "
-"svůj hipsterský obječek za chuchařský čepec a dvouřadé sako. Teď, místo "
-"vytváření her, tvoříš nové a chutné recpty pro své hosty."
+"svůj hipsterský obleček za kuchařský čepec a dvouřadé sako. Teď, místo "
+"vytváření her, tvoříš nové a chutné recepty pro své hosty."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -4213,7 +4210,7 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
-"V podstatě je editor Godotu ** editorem scén **. Má spoustu nástrojů pro "
+"V podstatě je editor Godotu **editorem scén**. Má spoustu nástrojů pro "
 "editaci 2D a 3D scén a uživatelských rozhraní, ale editor sám je založen na "
 "konceptu úpravy scény a uzlů, které tu scénu tvoří."
 
@@ -4222,7 +4219,7 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
-"Otevřete projekt, ve kterém jste vytvořili: ref: "
+"Otevřete projekt, ve kterém jste vytvořili :ref:"
 "`doc_intro_to_the_editor_interface`, nebo vytvořte nový. Otevře se editor "
 "Godot:"
 
@@ -4252,7 +4249,6 @@ msgstr ""
 "uzel)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
-#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -4281,16 +4277,15 @@ msgstr ""
 "uzel řídicí uzel nebo Node2D."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
-#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Other Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
-"Nyní, pokud chcete do této scény přidat uzel popisu, můžete kliknout na "
-"tlačítko Vlastní uzel nebo na tlačítko Přidat uzel nahoře. Ve scénách, které "
-"nejsou prázdné, pomocí tlačítka Přidat uzel vytvoříte libovolný podřízený "
-"uzel."
+"Nyní, pokud chcete do této scény přidat uzel popisu (Label), můžete kliknout "
+"na tlačítko Vlastní uzel nebo na tlačítko Přidat uzel nahoře. Ve scénách, "
+"které nejsou prázdné, pomocí tlačítka Přidat uzel vytvoříte libovolný "
+"podřízený uzel."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
@@ -4371,9 +4366,9 @@ msgid ""
 msgstr ""
 "A tady je, když se stane něco zábavného. Dialogové okno souboru je speciální "
 "soborový dialog a umožňuje pouze uložení v rámci projektu. Kořenový adresář "
-"projektu je `` res: // ``, což znamená \"cesta pro zdroje\". Tzn. , že "
-"soubory lze ukládat pouze uvnitř projektu. Do budoucna při práci se soubory "
-"v Godotu, mějte na paměti, že `res: //` `je cesta ke zdroji, a to bez ohledu "
+"projektu je ``res: //``, což znamená \"cesta pro zdroje\". Tzn. , že soubory "
+"lze ukládat pouze uvnitř projektu. Do budoucna při práci se soubory v "
+"Godotu, mějte na paměti, že `res: //` `je cesta ke zdroji, a to bez ohledu "
 "na platformu či umístění instalace. Je to prostě způsob, odkazovat na "
 "zdrojové soubory z prostředí hry samotné."
 
@@ -4471,7 +4466,7 @@ msgid ""
 "<class_ProjectSettings>` singleton."
 msgstr ""
 "Jako vedlejší poznámku je také možné přidat vlastní možnosti konfigurace a "
-"přečíst je za běhu pomocí: ref: `ProjectSettings <class_ProjectSettings>` "
+"přečíst je za běhu pomocí :ref:`ProjectSettings <class_ProjectSettings>` "
 "singleton."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
@@ -4485,8 +4480,8 @@ msgid ""
 "on that..."
 msgstr ""
 "Tento tutoriál vyprávěl o „scénách a uzlech“, ale zatím existovala v našem "
-"projektu pouze * jedna * scéna a * jeden * uzel! Nebojte se, další tutoriál "
-"to rozvede ..."
+"projektu pouze *jedna* scéna a *jeden* uzel! Nebojte se, další tutoriál to "
+"rozvede ..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -4511,7 +4506,7 @@ msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
-"V: ref: `doc_scenes_and_nodes` jste se dozvěděli, že scéna je skupina uzlů "
+"V:ref:`doc_scenes_and_nodes` jste se dozvěděli, že scéna je skupina uzlů "
 "uspořádaných ve stromové struktuře s jediným uzlem kořenovým."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
@@ -4574,13 +4569,13 @@ msgid ""
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
 "Tento projekt obsahuje dvě scény: „Ball.tscn“ a „Main.tscn“. Scéna míčku "
-"používá: ref: `RigidBody2D <class_RigidBody2D>` k zajištění fyzikálního "
+"používá :ref:`RigidBody2D <class_RigidBody2D>` k zajištění fyzikálního "
 "chování, zatímco hlavní scéna obsahuje řadu překážek, s nimiž se může míč "
-"srazit (pomocí: ref: `StaticBody2D <class_StaticBody2D>`)."
+"srazit (pomocí :ref:`StaticBody2D <class_StaticBody2D>`)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr "Otevřete scénu `` Main`` a vyberte kořenový uzel:"
+msgstr "Otevřete scénu ``Main`` a vyberte kořenový uzel:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -4588,9 +4583,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
-"Chceme přidat instanci scény `` Ball`` jako potomka `` Main``. Klikněte na "
+"Chceme přidat instanci scény ``Ball`` jako potomka ``Main``. Klikněte na "
 "tlačítko ve tvaru linku (jeho bublinková nápověda říká \"Vytvoř instanci "
-"souboru scény jako uzel.\") A vyberte soubor `` Ball.tscn``."
+"souboru scény jako uzel.\") A vyberte soubor ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -4598,7 +4593,7 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
-"Míč bude umístěn v levém horním rohu obrazovky (to je `` (0, 0) `` v "
+"Míč bude umístěn v levém horním rohu obrazovky (to je ``(0, 0)`` v "
 "souřadnicích obrazovky). Klikněte a přetáhněte míč někam blízko středu scény:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
@@ -4619,7 +4614,7 @@ msgid ""
 msgstr ""
 "Do scény můžete přidat libovolný počet instancí, buď opětovným použitím "
 "tlačítka „Instance“ nebo kliknutím na instanci míčku a stisknutím: kbd: "
-"`Ctrl + D` (: kbd:` Cmd + D` on MacOS) pro duplikování:"
+"`Ctrl + D`(: kbd:` Cmd + D` on MacOS) pro duplikování:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -4635,7 +4630,7 @@ msgid ""
 "and set the ``Bounce`` property to ``1``."
 msgstr ""
 "Otevřete scénu ``Ball`` poté rozbalte ``PhysicsMaterial`` kliknutím na něj a "
-"nastavte vlastnost `` Bounce`` na `` 1``."
+"nastavte vlastnost ``Bounce`` na ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -4656,10 +4651,10 @@ msgid ""
 "its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
 "Můžete také upravit jednotlivé instance zvlášť. Nastavte hodnotu Bounce zpět "
-"na `` 0`` a poté ve scéně `` Main`` vyberte jednu z instancí balónku. Zdroje "
-"jako `` PhysicsMaterial`` jsou primárně sdíleny mezi instancemi, takže je "
+"na ``0`` a poté ve scéně ``Main`` vyberte jednu z instancí balónku. Zdroje "
+"jako ``PhysicsMaterial`` jsou primárně sdíleny mezi instancemi, takže je "
 "potřeba, udělat tento zdroj jedinečným. Klikněte na šipku dolů a vyberte "
-"„Vytvoři unikátní“. Nastavte `` Bounce`` na `` 1`` a stiskněte \"Hrát\"."
+"„Vytvoři unikátní“. Nastavte ``Bounce`` na ``1`` a stiskněte \"Hrát\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:110
 msgid ""
@@ -4692,7 +4687,7 @@ msgid ""
 msgstr ""
 "Vytváření instanci může být velice užitečné pokud chcete vytvořit mnoho "
 "kopií stejného objektu. Instance je také možné vytvořit v kódu pomocí "
-"GDScriptu, viz: ref: `doc_instancing_continued`."
+"GDScriptu, viz :ref:`doc_instancing_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -4881,7 +4876,7 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Před Godotem 3.0 byl jedinou volbou pro skriptování hry: ref: `GDScript "
+"Před Godotem 3.0 byl jedinou volbou pro skriptování hry :ref:`GDScript "
 "<doc_gdscript>`. V současné době podporuje Godot čtyři (ano, čtyři!) "
 "programovací jazyky a schopnost dynamicky přidávat další!"
 
@@ -4930,7 +4925,7 @@ msgid ""
 "in Godot. Using it has some positive points compared to other languages due "
 "to its high integration with Godot:"
 msgstr ""
-": ref: `GDScript <doc_gdscript>` je, jak bylo uvedeno výše, hlavní jazyk "
+":ref:`GDScript <doc_gdscript>` je, jak bylo uvedeno výše, hlavní jazyk "
 "Godota. Jeho použití má, vzhledem k jeho vysoké integraci s enginem, ve "
 "srovnání s ostaními jazyky několik plusových bodů:"
 
@@ -5008,7 +5003,7 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
-"Počínaje verzí 3.0, Godot nabízí: ref: `Visual Scripting "
+"Počínaje verzí 3.0, Godot nabízí :ref:`Visual Scripting "
 "<doc_what_is_visual_script>`. Je to typická implementace jazyka „bloků a "
 "spojení“, ale přizpůsobená architektuře Godotu.."
 
@@ -5133,16 +5128,16 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Psaní skriptu, který má přístup k dalším uzlům ve scéně."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"Před pokračováním si přečtěte dokumentaci: ref: `GDScript <doc_gdscript>`. "
-"Jde o jazyk navržený tak, aby byl jednoduchý, a dokumentace je krátká, takže "
-"získání přehledu nebude trvat déle než několik minut."
+"Než budete pokračovat, nezapomeňte přejít na záložku :ref:`GDScript "
+"<doc_gdscript>` reference. Je to jazyk navržený tak, aby byl jednoduchý, a "
+"dokumentace je strukturována do sekcí, aby bylo snazší získat přehled o "
+"jednotlivých pojmech."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -5186,7 +5181,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr "Nakonec scénu uložte pod názvem `` sayhello.tscn``."
+msgstr "Nakonec scénu uložte pod názvem ``sayhello.tscn``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:129
 msgid "Adding a script"
@@ -5257,8 +5252,8 @@ msgid ""
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
 "Není toho moc. Funkce `_ready ()` `se volá, když uzel a všechny jeho potomci "
-"vstoupí do aktivní scény. ** Poznámka: ** `` _ready () `` není konstruktor; "
-"konstruktorem je místo toho `` _init () ``."
+"vstoupí do aktivní scény. **Poznámka:** ``_ready ()`` není konstruktor; "
+"konstruktorem je místo toho ``_init ()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -5366,7 +5361,7 @@ msgid ""
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
 "Abychom toho dosáhli, představíme si funkci, která je pravděpodobně nejvíce "
-"používána programátory Godotu:: ref: `Node.get_node () "
+"používána programátory Godotu: :ref:`Node.get_node () "
 "<class_Node_method_get_node>`. Tato funkce používá relativní cestu vzhledem "
 "k uzlu, ve kterém se script nachází, k načtení libovolného uzlu této scény ."
 
@@ -5375,7 +5370,7 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"Pro větší pohodlí smažte vše pod `` extends Panel``. Zbytek skriptu vyplníte "
+"Pro větší pohodlí smažte vše pod ``extends Panel``. Zbytek skriptu vyplníte "
 "ručně."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
@@ -5397,8 +5392,8 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Nakonec připojte \"pressed\" signál tlačítka k `` _on_Button_pressed () `` "
-"pomocí: ref: `Object.connect () <class_Object_method_connect>`."
+"Nakonec připojte \"pressed\" signál tlačítka k ``_on_Button_pressed ()`` "
+"pomocí :ref:`Object.connect () <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:271
 msgid "The final script should look like this:"
@@ -5422,7 +5417,7 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 "Častým nedorozuměním ohledně tohoto tutoriálu je to, jak funguje `get_node "
-"(cesta)` `. Pro daný uzel prochází `get_node (cesta)` `jeho bezprostřední "
+"(cesta)``. Pro daný uzel prochází `get_node (cesta)` `jeho bezprostřední "
 "potomky. Ve výše uvedeném kódu to znamená, že Button musí být potomkem "
 "Panel. Pokud by Button byl místo toho podřízeným Label, kód pro jeho získání "
 "by byl:"
@@ -5486,7 +5481,7 @@ msgid ""
 msgstr ""
 "Volnoběžné zpracování je aktivováno, když je ve skriptu nalezena metoda: "
 "ref: `Node._process () <class_Node_method__process>`. Lze jej vypnout a "
-"zapnout pomocí funkce: ref: `Node.set_process () "
+"zapnout pomocí funkce :ref:`Node.set_process () "
 "<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
@@ -5499,7 +5494,7 @@ msgid ""
 "will be called depends on how many frames per second (FPS) your application "
 "is running at. This rate can vary over time and devices."
 msgstr ""
-"Je důležité mít na paměti, že frekvence, se kterou bude `` _process () `` "
+"Je důležité mít na paměti, že frekvence, se kterou bude ``_process ()`` "
 "vyvolávána, závisí na tom, na jakém FPS (snímky za sekundu) vaše aplikace "
 "běží. Tato rychlost může kolísat jak v průběhu času tak vzhledem k "
 "rozdílnému výkonu jednotlivých zařízení."
@@ -5538,9 +5533,9 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"Zpracování fyziky pomocí `` _physics_process () `` je podobné, ale mělo by "
-"být použito pro akce, které musí nastat před každým fyzikálním krokem, jako "
-"je například ovládání postavy. Vždy běží před zpracováním kroku fyziky a je "
+"Zpracování fyziky pomocí ``_physics_process ()`` je podobné, ale mělo by být "
+"použito pro akce, které musí nastat před každým fyzikálním krokem, jako je "
+"například ovládání postavy. Vždy běží před zpracováním kroku fyziky a je "
 "volán ve fixních časových intervalech: standardně 60krát za sekundu. "
 "Interval můžete změnit z Nastavení projektu v části Fyzika -> Společné -> "
 "Fyzika Fps."
@@ -5600,7 +5595,7 @@ msgid ""
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
 "Například, pokud je hráč objeven, jak se plíží do tajné základny, všichni "
-"nepřátelé mohou být najednou upozorněni na jeho přítomnost pomocí: ref: "
+"nepřátelé mohou být najednou upozorněni na jeho přítomnost pomocí :ref:"
 "`SceneTree.call_group () <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:132
@@ -5617,7 +5612,7 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"Je také možné získat úplný seznam uzlů `` nepřátel 'voláním: ref: `SceneTree."
+"Je také možné získat úplný seznam uzlů `` nepřátel 'voláním :ref:`SceneTree."
 "get_nodes_in_group () <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
@@ -5628,7 +5623,7 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you have some time!"
 msgstr ""
-"Třída: ref: `SceneTree <class_SceneTree>` poskytuje mnoho užitečných metod "
+"Třída :ref:`SceneTree <class_SceneTree>` poskytuje mnoho užitečných metod "
 "pro například interakci se scénami, jejich hierarchii uzlů a skupinami uzlů. "
 "To vám umožní snadno přepínat nebo znovu načíst scény, ukončit nebo "
 "pozastavit či zrušit pozastavení hry. Dodává se dokonce se zajímavými "
@@ -5650,7 +5645,7 @@ msgstr ""
 "Godot má systém oznámení. Obvykle nejsou pro skriptování zapotřebí, protože "
 "jsou příliš zanořeny do systému a pro většinu z nich jsou k dispozici "
 "virtuální funkce. Je prostě dobré vědět, že existují. Například můžete do "
-"skriptu přidat funkci: ref: `Object._notification () "
+"skriptu přidat funkci :ref:`Object._notification () "
 "<class_Object_method__notification>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
@@ -5659,7 +5654,7 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overridable functions."
 msgstr ""
-"Dokumentace každé třídy v: ref: `Class Reference <toc-class-ref>` zobrazuje "
+"Dokumentace každé třídy v :ref:`Class Reference <toc-class-ref>` zobrazuje "
 "oznámení, která může třída přijímat. Ve většině případů však GDScript "
 "poskytuje jednodušší přetěžovatelné funkce."
 
@@ -5691,7 +5686,7 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"Chcete-li vytvořit uzel v kódu, volejte metodu `` .new () ``, tak jako pro "
+"Chcete-li vytvořit uzel v kódu, volejte metodu ``.new ()``, tak jako pro "
 "jakýkoli jiný datový typ třídy. Například:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:302
@@ -5728,7 +5723,7 @@ msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
-"Nejbezpečnější způsob, jak odstranit uzel, je pomocí: ref: `Node.queue_free "
+"Nejbezpečnější způsob, jak odstranit uzel, je pomocí :ref:`Node.queue_free "
 "() <class_Node_method_queue_free>`. Toto bezpečně vymaže uzel během jeho "
 "nečinnosti."
 
@@ -5763,7 +5758,7 @@ msgid ""
 msgstr ""
 "Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem: "
 "ref: `PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
-"třeba zavolat funkci: ref: `PackedScene.instance () "
+"třeba zavolat funkci :ref:`PackedScene.instance () "
 "<class_PackedScene_method_instance>`. Ta vrátí strom uzlů, který lze přidat "
 "k aktivní scéně:"
 
@@ -5842,7 +5837,7 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Signály jsou Godotova verze návrhového vzoru * observer * . Umožňují uzlu "
+"Signály jsou Godotova verze návrhového vzoru *observer* . Umožňují uzlu "
 "odeslat zprávu, kterou ostatní uzly slyší a na kterou mohou reagovat. "
 "Například místo toho, aby tlačítko nepřetržitě kontrolovalo, zda je "
 "stisknuto, může při stisknutí vyslat signál."
@@ -5886,8 +5881,8 @@ msgid ""
 "Create a new scene with a Node2D and two children: a Timer and a :ref:"
 "`Sprite <class_Sprite>`. In the Scene dock, rename Node2D to TimerExample."
 msgstr ""
-"Abychom viděli, jak signály fungují, zkusme použít uzel: ref: `Timer "
-"<class_Timer>`. Vytvořte novou scénu s Node2D a dvěma dětmi: Timer a a: ref: "
+"Abychom viděli, jak signály fungují, zkusme použít uzel :ref:`Timer "
+"<class_Timer>`. Vytvořte novou scénu s Node2D a dvěma dětmi: Timer a a :ref:"
 "`Sprite <class_Sprite>`. V doku Scéna přejmenujte Node2D na TimerExample."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:33
@@ -5898,7 +5893,7 @@ msgid ""
 "yet."
 msgstr ""
 "Pro texturu Sprite můžete použít ikonu Godotu nebo jakýkoli jiný obrázek, "
-"který se vám líbí. Toto provedete výběrem `` Load`` v rozbalovací nabídce "
+"který se vám líbí. Toto provedete výběrem ``Load`` v rozbalovací nabídce "
 "atributu Sprite's Texture. Připojte skript ke kořenovému uzlu, ale zatím k "
 "němu nepřidávejte žádný kód."
 
@@ -5913,7 +5908,7 @@ msgid ""
 "can leave the *Wait Time* at 1 second."
 msgstr ""
 "Ve vlastnostech uzlu Timer zaškrtněte políčko „On“ vedle položky * Autostart "
-"*. To způsobí automatické spuštění časovače při spuštění scény. Čas čekání * "
+"*. To způsobí automatické spuštění časovače při spuštění scény. Čas čekání* "
 "můžete nechat 1 sekundu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:45
@@ -5954,7 +5949,7 @@ msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"Cílový uzel * musí * mít připojený skript, jinak se zobrazí chybová zpráva."
+"Cílový uzel *musí* mít připojený skript, jinak se zobrazí chybová zpráva."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
 msgid ""
@@ -6002,7 +5997,7 @@ msgid ""
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
 "Spusťte scénu a každou sekundu uvidíte jak Sprite blikne. Chcete-li prodlevu "
-"změnit, změňte vlastnost časovače * Čekací doba *."
+"změnit, změňte vlastnost časovače *Čekací doba*."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:125
 msgid "Connecting signals in code"
@@ -6035,8 +6030,8 @@ msgid ""
 "connection:"
 msgstr ""
 "Pro navázání spojení v kódu použijeme funkci ``connect``. Vložíme ji do `` "
-"_ready () ``, aby se spojení navázalo při spuštění. Syntaxe funkce je "
-"``<source_node> .connect (<signal_name>, <target_node>, "
+"_ready () ``, aby se spojení navázalo při spuštění. Syntaxe funkce "
+"je``<source_node> .connect (<signal_name>, <target_node>, "
 "<target_function_name>)``. Zde je kód pro naše připojení časovače:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
@@ -6095,8 +6090,8 @@ msgid ""
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Mnoho vestavěných typů uzlů Godota poskytuje signály, které můžete použít "
-"pro detekci událostí. Například: ref: `Area2D <class_Area2D>` představující "
-"minci vydává signál `` body_entered``, kdykoli tělo hráče (uzel Physicsbody) "
+"pro detekci událostí. Například :ref:`Area2D <class_Area2D>` představující "
+"minci vydává signál ``body_entered``, kdykoli tělo hráče (uzel Physicsbody) "
 "vstoupí do jejího kolizního tvaru, což vám umožní zaznamenat okamžik, kdy "
 "hráč minci sebere."
 
@@ -6105,8 +6100,8 @@ msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
-"V následující sekci: ref: `doc_your_first_game` vytvoříte kompletní hru,"
-"která ukáže využití signálů pro vzájené spojení různých herních komponent."
+"V následující sekci :ref:`doc_your_first_game` vytvoříte kompletní hru,která "
+"ukáže využití signálů pro vzájené spojení různých herních komponent."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -6137,7 +6132,7 @@ msgid ""
 msgstr ""
 "Tento projekt je úvodem k enginu Godot. Předpokládá se, že už máte nějaké "
 "zkušenosti s programováním. Pokud je pro vás programování \"španělská vesnice"
-"\", měli byste začít zde:: ref: `doc_scripting`."
+"\", měli byste začít zde: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
@@ -6153,7 +6148,7 @@ msgid ""
 "2D until you have a good understanding of the game development process and "
 "how to use Godot."
 msgstr ""
-"** Proč 2D? ** 3D hry jsou mnohem složitější než hry 2D. Měli byste se držet "
+"**Proč 2D?** 3D hry jsou mnohem složitější než hry 2D. Měli byste se držet "
 "2D, dokud nebudete dobře rozumět procesu vývoje hry a tomu jak používat "
 "Godot."
 
@@ -6183,7 +6178,7 @@ msgid ""
 "of setting up a project and using the editor."
 msgstr ""
 "V tomto tutoriálu předpokládáme, že jste obeznámeni s editorem Godot. Pokud "
-"jste nečetli: ref: `doc_scenes_and_nodes`, udělejte to nyní pro vysvětlení "
+"jste nečetli :ref:`doc_scenes_and_nodes`, udělejte to nyní pro vysvětlení "
 "nastavení projektu a použití editoru."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:40
@@ -6194,7 +6189,7 @@ msgid ""
 msgstr ""
 "Tato hra je navržena pro režim na výšku, takže musíme upravit velikost okna "
 "hry. Klikněte na Projekt -> Nastavení projektu -> Displej -> Okno a nastavte "
-"\"Šířka\" na `` 480`` a \"Výška\" na `` 720``."
+"\"Šířka\" na ``480`` a \"Výška\" na ``720``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:44
 msgid ""
@@ -6219,12 +6214,12 @@ msgid ""
 "and scripts in the project's root folder, identified by ``res://``.  You can "
 "see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"V tomto projektu vytvoříme 3 nezávislé scény: `` Player``, `` Mob`` a `` "
-"HUD``, které zkombinujeme do hlavní scény hry: `` Main`` . Ve větším "
-"projektu může být užitečné vytvořit složky, pro každkou scénu a její skript "
-"zvlášť, ale pro tuto relativně malou hru můžete ukládat své scény a skripty "
-"do kořenového adresáře projektu identifikovaného pomocí `` res: //` `. "
-"Složky projektu můžete vidět v doku Souborový systém v levém dolním rohu:"
+"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a `` "
+"HUD``, které zkombinujeme do hlavní scény hry:`` Main`` . Ve větším projektu "
+"může být užitečné vytvořit složky, pro každkou scénu a její skript zvlášť, "
+"ale pro tuto relativně malou hru můžete ukládat své scény a skripty do "
+"kořenového adresáře projektu identifikovaného pomocí `` res: //``. Složky "
+"projektu můžete vidět v doku Souborový systém v levém dolním rohu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:62
 msgid "Player scene"
@@ -6236,7 +6231,7 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"První scéna, kterou vytvoříme, definuje objekt `` Player``. Jednou z výhod "
+"První scéna, kterou vytvoříme, definuje objekt ``Player``. Jednou z výhod "
 "vytvoření samostatné hráčské scény je to, že ji můžeme testovat samostatně, "
 "dokonce ještě předtím, než vytvoříme další části hry."
 
@@ -6252,9 +6247,8 @@ msgid ""
 "`Area2D <class_Area2D>` node to the scene."
 msgstr ""
 "Nejprve musíme vybrat kořenový uzel pro objekt hráče. Obecně by kořen scény "
-"měl odrážet požadovanou funkčnost objektu - to čím objekt * je *. Klikněte "
-"na tlačítko \"Jiný uzel\" a do scény přidejte uzel: ref: `Area2D "
-"<class_Area2D>."
+"měl odrážet požadovanou funkčnost objektu - to čím objekt *je*. Klikněte na "
+"tlačítko \"Jiný uzel\" a do scény přidejte uzel :ref:`Area2D <class_Area2D>."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:78
 msgid ""
@@ -6271,10 +6265,10 @@ msgid ""
 "we've set the scene's root node, we can add additional nodes to give it more "
 "functionality."
 msgstr ""
-"Pomocí `` Area2D`` můžeme detekovat objekty, které se překrývají nebo naráží "
-"do hráče. Změňte název uzlu na `` Player`` poklepáním na něj. Nyní, když "
-"jsme nastavili kořen scény hráče, můžeme do něho přidat další podřízené "
-"uzly, abychom mu rozšířili funkčnost a poskytli více vlastností."
+"Pomocí ``Area2D`` můžeme detekovat objekty, které se překrývají nebo naráží "
+"do hráče. Změňte název uzlu na ``Player`` poklepáním na něj. Nyní, když jsme "
+"nastavili kořen scény hráče, můžeme do něho přidat další podřízené uzly, "
+"abychom mu rozšířili funkčnost a poskytli více vlastností."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
@@ -6294,7 +6288,7 @@ msgid ""
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
 "Uložte scénu. Klikněte na Scéna -> Uložit nebo stiskněte: kbd: `Ctrl + S` v "
-"systému Windows / Linux nebo: kbd:` Cmd + S` v systému MacOS."
+"systému Windows / Linux nebo: kbd:`Cmd + S` v systému MacOS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
@@ -6306,8 +6300,8 @@ msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"** GDScript **: Třídy (uzly) používají PascalCase, proměnné a funkce "
-"používají snake_case a konstanty používají ALL_CAPS (viz: ref: "
+"**GDScript**: Třídy (uzly) používají PascalCase, proměnné a funkce používají "
+"snake_case a konstanty používají ALL_CAPS (viz :ref:"
 "`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:101
@@ -6317,10 +6311,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
-"** C # **: Třídy, exportované proměnné a metody používají PascalCase, "
-"soukromá pole používají _camelCase, lokální proměnné a parametry používají "
-"camelCase (viz: ref: `doc_c_sharp_styleguide`). Při připojování signálů "
-"buďte opatrní, abyste přesně zadali názvy metod."
+"**C #**: Třídy, exportované proměnné a metody používají PascalCase, soukromá "
+"pole používají _camelCase, lokální proměnné a parametry používají camelCase "
+"(viz :ref:`doc_c_sharp_styleguide`). Při připojování signálů buďte opatrní, "
+"abyste přesně zadali názvy metod."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
 msgid "Sprite animation"
@@ -6340,7 +6334,7 @@ msgstr ""
 "Klikněte na uzel `` Player`` a jako podřízený uzel přidejte ref: "
 "`AnimatedSprite <class_AnimatedSprite>. `` AnimatedSprite`` bude "
 "zabezpečovat vzhled a animace našeho hráče. Všimněte si, že vedle uzlu je "
-"varovný symbol. `` AnimatedSprite`` vyžaduje zdroj: ref: `SpriteFrames "
+"varovný symbol. `` AnimatedSprite`` vyžaduje zdroj :ref:`SpriteFrames "
 "<class_SpriteFrames>`, což je seznam animací, které je schopen zobrazit. "
 "Chcete-li jej vytvořit, najděte v inspektoru vlastnost `` Frames`` a "
 "klikněte na \"[empty]\" -> \"New SpriteFrames\". Opětovným kliknutím "
@@ -6360,9 +6354,8 @@ msgstr ""
 "\". Poté klikněte na tlačítko „Nová animace“ a vytvořte druhou animaci s "
 "názvem \"up\". Vyhledejte obrázky přehrávače na kartě \"Souborový systém\" - "
 "jsou ve složce ``art`` kterou jste dříve rozbalili. Přetáhněte dva obrázky "
-"pro každou animaci, pojmenované `` playerGrey_up [1/2] `` a `` "
-"playerGrey_walk [1/2] ``, na stranu \"Animation Frames\" na panelu pro "
-"příslušnou animaci:"
+"pro každou animaci, pojmenované ``playerGrey_up [1/2]`` a `` playerGrey_walk "
+"[1/2] ``, na stranu \"Animation Frames\" na panelu pro příslušnou animaci:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -6372,8 +6365,8 @@ msgid ""
 "``Node2D`` heading."
 msgstr ""
 "Obrázky hráče jsou pro okno hry příliš velké, takže je musíme zmenšit. "
-"Klikněte na uzel `` AnimatedSprite`` a nastavte vlastnost ``Scale`` na "
-"``(0.5, 0.5)``. Najdete ji v Inspektoru pod hlavičkou ``Node2D``."
+"Klikněte na uzel ``AnimatedSprite`` a nastavte vlastnost ``Scale`` na "
+"``(0.5, 0.5)``. Najdete ji v Inspektoru pod hlavičkou``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:137
 msgid ""
@@ -6384,16 +6377,16 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"Nakonec přidejte: ref: `CollisionShape2D <class_CollisionShape2D>` jako "
-"potomka `` Player``. Tím se určí hráčův \"hitbox\" neboli hranice jeho "
-"kolizní oblasti. Pro tuto postavu je uzel `` CapsuleShape2D`` nejvhodnější, "
+"Nakonec přidejte :ref:`CollisionShape2D <class_CollisionShape2D>` jako "
+"potomka ``Player``. Tím se určí hráčův \"hitbox\" neboli hranice jeho "
+"kolizní oblasti. Pro tuto postavu je uzel ``CapsuleShape2D`` nejvhodnější, "
 "takže v Inspektoru vedle \"Shape\" klikněte na „[empty]“ -> „New "
 "CapsuleShape2D“. Pomocí dvou úchytů velikosti změňte tvar tak, aby pokryl "
 "celý sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:146
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr "Až skončíte, měla by vaše `` Player`` scéna vypadat takto:"
+msgstr "Až skončíte, měla by vaše ``Player`` scéna vypadat takto:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid "Make sure to save the scene again after these changes."
@@ -6410,7 +6403,7 @@ msgid ""
 "\"Attach Script\" button:"
 msgstr ""
 "Nyní musíme přidat některé funkce, které nám připravený uzel neposkytuje, "
-"proto je naprogramujeme pomocí skriptu. Klikněte na uzel `` Player`` a dále "
+"proto je naprogramujeme pomocí skriptu. Klikněte na uzel ``Player`` a dále "
 "na tlačítko \"Připojit skript\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:161
@@ -6434,7 +6427,7 @@ msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
-"Pokud se poprvé setkáváte s GDScriptem, přečtěte si prosím: ref: "
+"Pokud se poprvé setkáváte s GDScriptem, přečtěte si prosím :ref:"
 "`doc_scripting`, než budete pokračovat."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
@@ -6486,10 +6479,10 @@ msgid ""
 "of our game, which we expect will change often. For the player, we need to "
 "do the following:"
 msgstr ""
-"Nyní můžeme pomocí funkce `` _process () `` definovat, co bude hráč dělat. "
-"`` _process () `` se volá v každém framu(snímku) takže tuto funkci použijeme "
-"k aktualizaci takových prvků naší hry, které se často změní. Pro hráče "
-"musíme udělat následující:"
+"Nyní můžeme pomocí funkce ``_process ()`` definovat, co bude hráč dělat. `` "
+"_process () `` se volá v každém framu(snímku) takže tuto funkci použijeme k "
+"aktualizaci takových prvků naší hry, které se často změní. Pro hráče musíme "
+"udělat následující:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:229
 msgid "Check for input."
@@ -6525,8 +6518,8 @@ msgid ""
 "which returns ``true`` if it's pressed or ``false`` if it isn't."
 msgstr ""
 "Zda je klávesa stisknuta můžete zjistit pomocí funkce `` Input."
-"is_action_pressed () ``, která vrací `` true``, pokud je stisknuta, nebo `` "
-"false``, pokud není."
+"is_action_pressed () ``, která vrací`` true``, pokud je stisknuta, nebo "
+"``false``, pokud není."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
 msgid ""
@@ -6538,12 +6531,12 @@ msgid ""
 "movement, the player would move *faster* diagonally than if it just moved "
 "horizontally."
 msgstr ""
-"Začneme nastavením `` velocity`` na `` (0, 0) `` - ve výchozím nastavení by "
-"se hráč neměl pohybovat. Pak zkontrolujeme každý vstup a přidáme / odečteme "
-"z \"velocity\", abychom získali celkový směr. Například pokud podržíte `` "
-"right`` a `` down`` současně, bude výsledný vektor `` velocity `` (1, 1) ``. "
-"V tomto případě, protože přidáváme vodorovný a svislý pohyb, by se hráč "
-"pohyboval * rychleji * diagonálně, než kdyby se pohyboval vodorovně."
+"Začneme nastavením ``velocity`` na ``(0, 0)`` - ve výchozím nastavení by se "
+"hráč neměl pohybovat. Pak zkontrolujeme každý vstup a přidáme / odečteme z "
+"\"velocity\", abychom získali celkový směr. Například pokud podržíte `` "
+"right``a`` down``současně, bude výsledný vektor`` velocity ``(1, 1)``. V "
+"tomto případě, protože přidáváme vodorovný a svislý pohyb, by se hráč "
+"pohyboval *rychleji* diagonálně, než kdyby se pohyboval vodorovně."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
@@ -6551,9 +6544,9 @@ msgid ""
 "*length* to ``1``, then multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
-"Můžeme tomu zabránit, pokud * normalizujeme * vektor rychlosti, což znamená, "
-"že nastavíme jeho * velikost * na `` 1``, a vynásobíme jej velikostí "
-"požadované rychlostí. To znamená, už žádné rychlé diagonální pohyby."
+"Můžeme tomu zabránit, pokud *normalizujeme* vektor rychlosti, což znamená, "
+"že nastavíme jeho *velikost* na ``1``, a vynásobíme jej velikostí požadované "
+"rychlostí. To znamená, už žádné rychlé diagonální pohyby."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:313
 msgid ""
@@ -6562,7 +6555,7 @@ msgid ""
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
 "Pokud jste nikdy předtím nepoužívali vektorovou matematiku, nebo potřebujete "
-"málé opáčko, používání vektorů v Godotu najdete na: ref: `doc_vector_math`. "
+"málé opáčko, používání vektorů v Godotu najdete na :ref:`doc_vector_math`. "
 "Je dobré vektory znát, ale po zbytek tohoto tutoriálu to nebude nutné."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:317
@@ -6570,8 +6563,8 @@ msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
 msgstr ""
-"Také ověříme zda se hráč pohybuje, takže na můžeme volat metody `` play () "
-"`` nebo `` stop () `` uzlu AnimatedSprite."
+"Také ověříme zda se hráč pohybuje, takže na můžeme volat metody ``play ()`` "
+"nebo ``stop ()`` uzlu AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid ""
@@ -6579,9 +6572,9 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"`` $ `` je zkratka pro ``get_node ()``. Takže ve výše uvedeném kódu je `` $ "
-"AnimatedSprite.play () `` stejný jako `` get_node (\" AnimatedSprite \"). "
-"Play ()``."
+"``$`` je zkratka pro ``get_node ()``. Takže ve výše uvedeném kódu je `` $ "
+"AnimatedSprite.play () ``stejný jako`` get_node (\" AnimatedSprite \"). Play "
+"()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:323
 msgid ""
@@ -6589,9 +6582,9 @@ msgid ""
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"V GDScript, `` $ `` vrací relativní cestu uzlu vzhledem k uzlu aktuálnímu, "
-"anebo `` null``, pokud uzel nebyl nalezen. Protože AnimatedSprite je "
-"potomkem aktuálního uzlu, můžeme použít `` $ AnimatedSprite``."
+"V GDScript, ``$`` vrací relativní cestu uzlu vzhledem k uzlu aktuálnímu, "
+"anebo ``null``, pokud uzel nebyl nalezen. Protože AnimatedSprite je potomkem "
+"aktuálního uzlu, můžeme použít ``$ AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:326
 msgid ""
@@ -6602,10 +6595,9 @@ msgid ""
 "under the `else`):"
 msgstr ""
 "Nyní, když máme směr pohybu, můžeme aktualizovat pozici hráče. Můžeme také "
-"použít `` clamp () ``, abychom zabránili opuštění obrazovky. * Clamp * "
-"hodnotu znamená omezit ji na určitý rozsah. Na konec funkce ``_process`` "
-"přidejte následující (ujistěte se, že není odsazeno jako pokračování větve "
-"`else`):"
+"použít ``clamp ()``, abychom zabránili opuštění obrazovky. *Clamp* hodnotu "
+"znamená omezit ji na určitý rozsah. Na konec funkce ``_process`` přidejte "
+"následující (ujistěte se, že není odsazeno jako pokračování větve `else`):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:347
 msgid ""
@@ -6614,7 +6606,7 @@ msgid ""
 "this value ensures that your movement will remain consistent even if the "
 "frame rate changes."
 msgstr ""
-"Parametr `delta` ve funkci` _process () `označuje délku * snímku * - dobu, "
+"Parametr `delta` ve funkci`_process ()`označuje délku *snímku* - dobu, "
 "kterou předchozí snímek potřeboval k dokončení. Použitím této hodnoty "
 "zajistíte, že pohyb zůstane konzistentní, i když se změní snímková frekvence."
 
@@ -6623,7 +6615,7 @@ msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
 msgstr ""
-"Klikněte na \"Přehrát scénu\" (`` F6``) a ujistěte se, že můžete hráčem "
+"Klikněte na \"Přehrát scénu\" (``F6``) a ujistěte se, že můžete hráčem "
 "posunovat po obrazovce ve všech směrech."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
@@ -6635,7 +6627,7 @@ msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 msgstr ""
-"`` Pokus o volání funkce 'play' v základní 'null instance' na null instance``"
+"``Pokus o volání funkce 'play' v základní 'null instance' na null instance``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 msgid ""
@@ -6644,7 +6636,7 @@ msgid ""
 "in the scene tree."
 msgstr ""
 "to pravděpodobně znamená, že jste špatně zadali název uzlu AnimatedSprite. "
-"Názvy uzlů rozlišují velká a malá písmena a `` $ NodeName`` musí odpovídat "
+"Názvy uzlů rozlišují velká a malá písmena a ``$ NodeName`` musí odpovídat "
 "jménu, které vidíte ve stromu scény."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
@@ -6665,8 +6657,8 @@ msgstr ""
 "animaci, kterou AnimatedSprite přehrává. Máme animaci „chůze“, která ukazuje "
 "pohyb hráče doprava, Tato animace by se měla vodorovně převrátit pomocí "
 "vlastnosti `flip_h`` pro pohyb doleva. Máme také animaci \"nahoru\", která "
-"by měla být svisle převrácená s `` flip_v`` pro pohyb dolů. Umístíme tento "
-"kód na konec funkce `` _process () ``:"
+"by měla být svisle převrácená s ``flip_v`` pro pohyb dolů. Umístíme tento "
+"kód na konec funkce ``_process ()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:401
 msgid ""
@@ -6676,7 +6668,7 @@ msgid ""
 "code versus the one-line boolean assignment above:"
 msgstr ""
 "Booleovská přiřazení ve výše uvedeném kódu jsou běžnými zkratkami při "
-"programování. Protože provádíme porovnání (booleovsky) a pak * přiřazujeme * "
+"programování. Protože provádíme porovnání (booleovsky) a pak *přiřazujeme* "
 "booleovskou hodnotu, můžeme oba kroky provést současně. Porovnejte tento kód "
 "s jednořádkovým přiřazením výše:"
 
@@ -6717,13 +6709,13 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
-"Chceme, aby `` Player`` detekoval, když je zasažen nepřítelem, ale zatím "
-"jsme žádného nepřítele nevytvořili! To je v pořádku, protože zde použijeme "
-"Gotovi * signály *."
+"Chceme, aby ``Player`` detekoval, když je zasažen nepřítelem, ale zatím jsme "
+"žádného nepřítele nevytvořili! To je v pořádku, protože zde použijeme Gotovi "
+"*signály*."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
 msgid "Add the following at the top of the script, after ``extends Area2D``:"
-msgstr "Po `` extends Area2D`` přidejte na začátek skriptu následující kód:"
+msgstr "Po ``extends Area2D`` přidejte na začátek skriptu následující kód:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:466
 msgid ""
@@ -6733,7 +6725,7 @@ msgid ""
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
 "Toto definuje vlastní signál zvaný \"hit\", který bude hráč vysílat při "
-"srážce s nepřítelem. K detekci kolize použijeme `` Area2D``. Vyberte uzel `` "
+"srážce s nepřítelem. K detekci kolize použijeme ``Area2D``. Vyberte uzel `` "
 "Player`` a klikněte na záložku \"Uzel\" vedle záložky Inspektor, aby se "
 "zobrazil seznam signálů, které může hráč vyslat:"
 
@@ -6747,7 +6739,7 @@ msgid ""
 "automatically create a function in your player's script."
 msgstr ""
 "Všimněte si, že je k dispozici i náš vlastní signál \"hit\"! Protože naši "
-"nepřátelé budou uzly `` RigidBody2D``, chceme signál `` body_entered (body: "
+"nepřátelé budou uzly ``RigidBody2D``, chceme signál `` body_entered (body: "
 "Node) ``. Tento signál bude vydán, když se body dotkne hráče. Klikněte na "
 "„Připojit ...“ a objeví se okno „Připojit signál“. Nemusíme měnit žádné z "
 "těchto nastavení, takže znovu klikněte na Připojit. Godot automaticky "
@@ -6777,7 +6769,7 @@ msgid ""
 "Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 "Zakázání kolizního tvaru uzlu může způsobit chybu, pokud k tomu dojde "
-"uprostřed zpracovávání kolize enginem. Pomocí `` set_deferred () `` řekneme "
+"uprostřed zpracovávání kolize enginem. Pomocí ``set_deferred ()`` řekneme "
 "Godotovi, aby počkal, s vypnutím kolizního tvaru, dokud to nebude bezpečné."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:510
@@ -6807,13 +6799,12 @@ msgid ""
 "We'll create a ``Mob`` scene, which we can then *instance* to create any "
 "number of independent mobs in the game."
 msgstr ""
-"Vytvoříme scénu `` Mob``, pomocí jejích * instancí * pak stvoříme ve hře "
+"Vytvoříme scénu ``Mob``, pomocí jejích *instancí* pak stvoříme ve hře "
 "libovolný počet nezávislých nepřátel."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:540
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr ""
-"Další informace o vytváření instancí najdete na: ref: `doc_instancing`."
+msgstr "Další informace o vytváření instancí najdete na :ref:`doc_instancing`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid "Node setup"
@@ -6825,15 +6816,15 @@ msgstr "Klikněte na Scéna -> Nová scéna a přidejte následující uzly:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ": ref: `RigidBody2D <class_RigidBody2D>` (pojmenovaný `` Mob``)"
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (pojmenovaný ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:549
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ": ref: `AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:550
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ": ref: `CollisionShape2D <class_CollisionShape2D>`"
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
@@ -6854,7 +6845,7 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
-"Ve vlastnostech: ref: `RigidBody2D <class_RigidBody2D>` nastavte `` Gravity "
+"Ve vlastnostech :ref:`RigidBody2D <class_RigidBody2D>` nastavte `` Gravity "
 "Scale`` na `` 0``, takže nepřítel nebude klesat dolů. Kromě toho v sekci `` "
 "PhysicsBody2D`` klikněte na vlastnost `Maska`` a zrušte zaškrtnutí prvního "
 "políčka. Tím bude zajištěno, že nepřátelé nebudou navzájem kolidovat."
@@ -6865,17 +6856,17 @@ msgid ""
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
 "There are two images for each animation in the art folder."
 msgstr ""
-"Nastavte: ref: `AnimatedSprite <class_AnimatedSprite>` tak jako pro hráče. "
-"Tentokrát máme 3 animace: `` fly``, `` swim`` a `` walk``. Pro každou "
+"Nastavte :ref:`AnimatedSprite <class_AnimatedSprite>` tak jako pro hráče. "
+"Tentokrát máme 3 animace: ``fly``, ``swim`` a ``walk``. Pro každou "
 "animacijsou ve složce art dva obrázky."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:567
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr "Nastavte \"Speed(FPS)\" na `` 3`` pro všechny animace."
+msgstr "Nastavte \"Speed(FPS)\" na ``3`` pro všechny animace."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid "Set the ``Playing`` property in the Inspector to “On”."
-msgstr "V inspektoru nastavte vlastnost `` Playing`` na „On“."
+msgstr "V inspektoru nastavte vlastnost ``Playing`` na „On“."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -6891,7 +6882,7 @@ msgid ""
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "Stejně jako u obrázků hráčů musí být tyto obrázky zmenšeny. Nastavte "
-"vlastnost `` Měřítko`` uzlu `` AnimatedSprite`` na `` (0.75, 0.75) ``."
+"vlastnost ``Měřítko`` uzlu ``AnimatedSprite`` na ``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:578
 msgid ""
@@ -6899,9 +6890,9 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` (under \"Transform\" in the Inspector)."
 msgstr ""
-"Stejně jako tak jako ve scéně `` Player`` přidejte pro kolizi `` "
+"Stejně jako tak jako ve scéně ``Player`` přidejte pro kolizi `` "
 "CapsuleShape2D``. Chcete-li zarovnat tvar s obrázkem, musíte nastavit "
-"vlastnost `` Rotation Degrees`` na `` 90`` (v Inspektoru pod \"Transform\")."
+"vlastnost ``Rotation Degrees`` na ``90`` (v Inspektoru pod \"Transform\")."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
 msgid "Save the scene."
@@ -6930,8 +6921,8 @@ msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
-"Nyní se podívejme na zbytek skriptu. V `` _ready () `` náhodně vybereme "
-"jeden ze tří typů animací:"
+"Nyní se podívejme na zbytek skriptu. V ``_ready ()`` náhodně vybereme jeden "
+"ze tří typů animací:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:637
 msgid ""
@@ -6949,9 +6940,9 @@ msgid ""
 "of these names from the list (array indices start at ``0``). ``randi() % n`` "
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
-"Potom musíme vybrat náhodné číslo mezi `` 0`` a `` 2``, abychom vybrali "
-"jedno z těchto jmen ze seznamu (indexy pole začínají `` 0``). `` randi ()% "
-"n`` vybere náhodné celé číslo mezi `` 0`` a `` n-1``."
+"Potom musíme vybrat náhodné číslo mezi ``0`` a ``2``, abychom vybrali jedno "
+"z těchto jmen ze seznamu (indexy pole začínají ``0``). `` randi ()% "
+"n``vybere náhodné celé číslo mezi`` 0``a`` n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
@@ -6959,9 +6950,9 @@ msgid ""
 "to be different every time you run the scene. We're going to use "
 "``randomize()`` in our ``Main`` scene, so we won't need it here."
 msgstr ""
-"Musíte použít `` randomize () ``, pokud chcete, aby se vaše sekvence "
+"Musíte použít ``randomize ()``, pokud chcete, aby se vaše sekvence "
 "\"náhodných\" čísel lišila pokaždé, když spustíte scénu. Budeme používat `` "
-"randomize () `` v naší `` Main`` scéně, takže to zde nebudeme potřebovat."
+"randomize () ``v naší`` Main`` scéně, takže to zde nebudeme potřebovat."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:649
 msgid ""
@@ -6970,7 +6961,7 @@ msgid ""
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
 "Posledním kouskem kódu je,smazat nepřítele, když opustí obrazovku. Připojte "
-"signál `` screen_exited () `` uzlu 'VisibilityNotifier2D`` a přidejte tento "
+"signál ``screen_exited ()`` uzlu 'VisibilityNotifier2D`` a přidejte tento "
 "kód:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
@@ -6987,7 +6978,7 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
-"Nyní je čas to všechno spojit. Vytvořte novou scénu a přidejte: ref: "
+"Nyní je čas to všechno spojit. Vytvořte novou scénu a přidejte :ref:"
 "`Node<class_Node>` s názvem `` Main``. Klikněte na tlačítko \"Instance\" a "
 "vyberte uložený soubor `` Player.tscn``."
 
@@ -6996,7 +6987,7 @@ msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"Nyní přidejte následující uzly jako potomky `` Main`` a pojmenujte je podle "
+"Nyní přidejte následující uzly jako potomky ``Main`` a pojmenujte je podle "
 "obrázku (hodnoty jsou v sekundách):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:680
@@ -7004,7 +6995,7 @@ msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
 msgstr ""
-": ref: `Timer <class_Timer>` (pojmenovaný `` MobTimer``) - pro ovládání času "
+":ref:`Timer <class_Timer>` (pojmenovaný ``MobTimer``) - pro ovládání času "
 "generování nepřátel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:681
@@ -7012,41 +7003,41 @@ msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ""
-": ref: `Timer <class_Timer>` (pojmenovaný `` ScoreTimer``) - pro zvýšení "
-"skóre za každou sekundu bez srážky"
+":ref:`Timer <class_Timer>` (pojmenovaný ``ScoreTimer``) - pro zvýšení skóre "
+"za každou sekundu bez srážky"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
-": ref: `Timer <class_Timer>` (pojmenovaný `` StartTimer``) - pro zpoždění "
-"před spuštěním"
+":ref:`Timer <class_Timer>` (pojmenovaný ``StartTimer``) - pro zpoždění před "
+"spuštěním"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
-": ref: `Position2D <class_Position2D>` (pojmenovaný `` StartPosition``) - "
-"pro označení počáteční pozice hráče"
+":ref:`Position2D <class_Position2D>` (pojmenovaný ``StartPosition``) - pro "
+"označení počáteční pozice hráče"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:685
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
-msgstr "Nastavte vlastnost `Wait Time`` každého z uzlů` `Timer`` takto:"
+msgstr "Nastavte vlastnost `Wait Time``každého z uzlů` `Timer`` takto:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:688
 msgid "``MobTimer``: ``0.5``"
-msgstr "`` MobTimer``: `` 0.5``"
+msgstr "``MobTimer``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``ScoreTimer``: ``1``"
-msgstr "`` ScoreTimer``: `` 1``"
+msgstr "``ScoreTimer``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "``StartTimer``: ``2``"
-msgstr "`` StartTimer``: `` 2``"
+msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:692
 msgid ""
@@ -7068,9 +7059,9 @@ msgid ""
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
 "Main uzel bude vytvářet nové nepřátele a chceme, aby se objevili na náhodné "
-"místě při okraji obrazovky. Přidejte a: ref: `Path2D <class_Path2D>` uzel s "
-"názvem `` MobPath`` jako potomka `` Main``. Když vyberete `` Path2D``, "
-"uvidíte v horní části editoru některá nová tlačítka:"
+"místě při okraji obrazovky. Přidejte a :ref:`Path2D <class_Path2D>` uzel s "
+"názvem ``MobPath`` jako potomka ``Main``. Když vyberete ``Path2D``, uvidíte "
+"v horní části editoru některá nová tlačítka:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:705
 msgid ""
@@ -7090,8 +7081,8 @@ msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
-"Nakreslete cestu * ve směru hodinových ručiček *, jinak budou vaši nepřátelé "
-"natočení * směrem ven * místo * dovnitř *!"
+"Nakreslete cestu *ve směru hodinových ručiček*, jinak budou vaši nepřátelé "
+"natočení *směrem ven* místo *dovnitř*!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:717
 msgid ""
@@ -7108,8 +7099,8 @@ msgid ""
 "will automatically rotate and follow the path as it moves, so we can use it "
 "to select a random position and direction along the path."
 msgstr ""
-"Nyní, když je cesta definována, přidejte uzel: ref: `PathFollow2D "
-"<class_PathFollow2D>` jako podřízený uzel `` MobPath`` a pojmenujte jej "
+"Nyní, když je cesta definována, přidejte uzel :ref:`PathFollow2D "
+"<class_PathFollow2D>`jako podřízený uzel``MobPath`` a pojmenujte jej "
 "`MobSpawnLocation``. Tento uzel se bude automaticky otáčet a sledovat cestu, "
 "jak se pohybuje, takže ji můžeme použít k výběru náhodné polohy a směru "
 "podél cesty."
@@ -7127,7 +7118,7 @@ msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"Přidejte do `` Main`` skript. V horní části skriptu používáme `` export "
+"Přidejte do ``Main`` skript. V horní části skriptu používáme `` export "
 "(PackedScene) ``, abychom nám mohli vybrat scénu Mob, pro kterou chceme "
 "vytvořit instanci."
 
@@ -7136,7 +7127,7 @@ msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Klikněte na uzel `` Main`` a uvidíte vlastnost `` Mob`` v Inspektoru pod "
+"Klikněte na uzel ``Main`` a uvidíte vlastnost ``Mob`` v Inspektoru pod "
 "\"Proměnné skriptu\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:775
@@ -7147,7 +7138,7 @@ msgstr "Hodnotu této vlastnosti můžete přiřadit dvěma způsoby:"
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
-msgstr "Přetáhněte `` Mob.tscn`` z panelu \"FileSystem\" do vlastnosti `Mob``."
+msgstr "Přetáhněte ``Mob.tscn`` z panelu \"FileSystem\" do vlastnosti `Mob``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:779
 msgid ""
@@ -7176,14 +7167,14 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"Měli byste vidět seznam signálů pro uzel `` Player``. Vyhledejte a "
-"poklepejte na signál `` hit`` v seznamu (nebo na něj klikněte pravým "
-"tlačítkem a vyberte \"Připojit ...\"). Otevře se dialogové okno pro "
-"připojení signálu. Chceme vytvořit novou funkci s názvem `game_over``, která "
-"se postará o to, co se musí stát, až hra skončí. Do pole „Metoda příjemce“ "
-"ve spodní části dialogového okna pro připojení signálu zadejte „game_over“ a "
-"klikněte na „Připojit“. K nové funkci přidejte následující kód a také funkci "
-"`` new_game``, která nastaví vše pro novou hru:"
+"Měli byste vidět seznam signálů pro uzel ``Player``. Vyhledejte a poklepejte "
+"na signál ``hit`` v seznamu (nebo na něj klikněte pravým tlačítkem a vyberte "
+"\"Připojit ...\"). Otevře se dialogové okno pro připojení signálu. Chceme "
+"vytvořit novou funkci s názvem `game_over``, která se postará o to, co se "
+"musí stát, až hra skončí. Do pole „Metoda příjemce“ ve spodní části "
+"dialogového okna pro připojení signálu zadejte „game_over“ a klikněte na "
+"„Připojit“. K nové funkci přidejte následující kód a také funkci "
+"``new_game``, která nastaví vše pro novou hru:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:826
 msgid ""
@@ -7192,9 +7183,9 @@ msgid ""
 "``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
 "increment the score by 1."
 msgstr ""
-"Nyní připojte signál `` timeout () `` každého z uzlů časovače (`` "
-"StartTimer``, `` ScoreTimer`` a `` MobTimer``) do hlavního skriptu. `` "
-"StartTimer`` spustí další dva časovače. `` ScoreTimer`` zvýší skóre o 1."
+"Nyní připojte signál ``timeout ()`` každého z uzlů časovače (`` StartTimer``,"
+"`` ScoreTimer``a`` MobTimer``) do hlavního skriptu.`` StartTimer``spustí "
+"další dva časovače.`` ScoreTimer`` zvýší skóre o 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:853
 msgid ""
@@ -7203,8 +7194,8 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"V `` _on_MobTimer_timeout () `` vytvoříme instanci nepřítele, vybereme "
-"náhodné počáteční místo podél ``Path2D`` a dáme nepřítele do pohybu. Uzel "
+"V ``_on_MobTimer_timeout ()`` vytvoříme instanci nepřítele, vybereme náhodné "
+"počáteční místo podél ``Path2D`` a dáme nepřítele do pohybu. Uzel "
 "``PathFollow2D`` se bude automaticky otáčet, jak následuje cestu, takže ji "
 "použijeme k výběru směru a polohy nepřátel."
 
@@ -7221,9 +7212,9 @@ msgid ""
 "degrees. If you're more comfortable working with degrees, you'll need to use "
 "the ``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
-"Proč `` PI``? Ve funkcích vyžadujících úhly používá GDScript * radiany *, "
+"Proč ``PI``? Ve funkcích vyžadujících úhly používá GDScript *radiany*, "
 "nikoli stupně. Pokud se vám pracuje pohodlněji se stupni, budete muset "
-"použít převodní funkce `` deg2rad () `` a `` rad2deg () ``."
+"použít převodní funkce ``deg2rad ()`` a ``rad2deg ()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Testing the scene"
@@ -7245,7 +7236,7 @@ msgid ""
 msgstr ""
 "Pojďme také přiřadit „Main“ jako „Hlavní scénu“ - ta, která se spustí "
 "automaticky při spuštění hry. Stiskněte tlačítko \"Play\" a po zobrazení "
-"výzvy vyberte `` Main.tscn``."
+"výzvy vyberte ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:936
 msgid ""
@@ -7260,7 +7251,7 @@ msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
-"Pokud jste si jisti, že vše funguje, odeberte volání `` new_game () `` z `` "
+"Pokud jste si jisti, že vše funguje, odeberte volání ``new_game ()`` z `` "
 "_ready () ``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:943
@@ -7275,12 +7266,11 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
-"Posledním kouskem, který naše hra potřebuje, je uživatelské rozhraní: "
-"rozhraní pro zobrazování věcí, jako je skóre, zpráva „konec hry“ a tlačítko "
-"restartu. Vytvořte novou scénu a přidejte uzel s názvem `HUD``: ref:` "
-"CanvasLayer <class_CanvasLayer>. „HUD“ znamená „heads-up display“, "
-"informační displej, který se zobrazuje jako překryv v horní části herní "
-"obrazovky."
+"Posledním kouskem, který naše hra potřebuje, je UI: rozhraní pro zobrazování "
+"věcí, jako je skóre, zpráva „konec hry“ a tlačítko restartu. Vytvořte novou "
+"scénu a přidejte uzel s názvem `HUD``: ref:` CanvasLayer "
+"<class_CanvasLayer>. „HUD“ znamená „heads-up display“, informační displej, "
+"který se zobrazuje jako překryv v horní části herní obrazovky."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:951
 msgid ""
@@ -7288,7 +7278,7 @@ msgid ""
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
-"Uzel: ref: `CanvasLayer <class_CanvasLayer>` umožňuje nakreslit naše prvky "
+"Uzel :ref:`CanvasLayer <class_CanvasLayer>` umožňuje nakreslit naše prvky "
 "uživatelského rozhraní do vrstvy nad zbytkem hry, takže informace, které "
 "zobrazuje, nejsou zakryty žádnými herními prvky, jako je hráč nebo nepřátelé."
 
@@ -7298,7 +7288,7 @@ msgstr "HUD musí zobrazit následující informace:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:957
 msgid "Score, changed by ``ScoreTimer``."
-msgstr "Skóre, změněno uzlem `` ScoreTimer``."
+msgstr "Skóre, změněno uzlem ``ScoreTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:958
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
@@ -7314,30 +7304,30 @@ msgid ""
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
-"Základní uzel pro prvky uživatelského rozhraní je: ref: `Control "
+"Základní uzel pro prvky uživatelského rozhraní je :ref:`Control "
 "<class_Control>`. K vytvoření našeho uživatelského rozhraní použijeme dva "
-"typy: ref: `Control <class_Control>` nodes:: ref: `Label <class_Label>` a: "
+"typy :ref:`Control <class_Control>` nodes: :ref:`Label <class_Label>` a: "
 "ref: `Button <class_Button>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr "Jako podřízené uzlu `` HUD`` vytvořte následující:"
+msgstr "Jako podřízené uzlu ``HUD`` vytvořte následující:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
-msgstr ": ref: `Label <class_Label>` s názvem `` ScoreLabel``."
+msgstr ":ref:`Label <class_Label>` s názvem ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ":ref:`Label <class_Label>` named ``Message``."
-msgstr ": ref: `Label <class_Label>` pojmenovaný `` Message``."
+msgstr ":ref:`Label <class_Label>` pojmenovaný ``Message``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ": ref: `Button <class_Button>` s názvem `` StartButton``."
+msgstr ":ref:`Button <class_Button>` s názvem ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
-msgstr ": ref: `Timer <class_Timer>` s názvem `` MessageTimer``."
+msgstr ":ref:`Timer <class_Timer>` s názvem ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ""
@@ -7346,8 +7336,8 @@ msgid ""
 "well. There is a font file included in the game assets called \"Xolonium-"
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
-"Klikněte na `` ScoreLabel`` a zadejte číslo do pole `` Text`` v Inspektoru. "
-"Výchozí písmo pro uzly `` Control`` je malé a neškáluje se dobře. Ve "
+"Klikněte na ``ScoreLabel`` a zadejte číslo do pole ``Text`` v Inspektoru. "
+"Výchozí písmo pro uzly ``Control`` je malé a neškáluje se dobře. Ve "
 "herníchzdrojích je obsažen soubor s názvem „Xolonium-Regular.ttf“. Chcete-li "
 "použít toto písmo, proveďte následující:"
 
@@ -7363,7 +7353,7 @@ msgid ""
 msgstr ""
 "Klikněte na \"DynamicFont\", který jste přidali, a pod \"Font / Font Data\", "
 "zvolte \"Načíst\" a vyberte soubor \"Xolonium-Regular.ttf\". Musíte také "
-"nastavit písmo `` Velikost``. Nastavení \"64\" funguje dobře."
+"nastavit písmo ``Velikost``. Nastavení \"64\" funguje dobře."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:987
 msgid ""
@@ -7371,7 +7361,7 @@ msgid ""
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
-"Jakmile to uděláte v `` ScoreLabel``, můžete kliknout na šipku dolů vedle "
+"Jakmile to uděláte v ``ScoreLabel``, můžete kliknout na šipku dolů vedle "
 "vlastnosti DynamicFont a zvolit \"Kopírovat\", pak \"Vložit\" na stejné "
 "místo na ostatních dvou řídících uzlech."
 
@@ -7384,11 +7374,11 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
-"** Kotvy (Anchors) a okraje(Margins): ** Uzly `Control`` mají polohu a "
+"**Kotvy (Anchors) a okraje(Margins):** Uzly `Control`` mají polohu a "
 "velikost, ale mají také kotvy a okraje. Kotvy definují počátek - referenční "
 "bod pro okraje uzlu. Okraje se aktualizují automaticky, když přesunete nebo "
 "změníte velikost řídicího uzlu. Představují vzdálenost od okrajů řídicího "
-"uzlu k jeho kotvě. Viz: ref: `doc_design_interfaces_with_the_control_nodes` "
+"uzlu k jeho kotvě. Viz :ref:`doc_design_interfaces_with_the_control_nodes` "
 "pro více informací."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:998
@@ -7413,11 +7403,11 @@ msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "*Layout* : \"Top Wide\""
-msgstr "* Layout *: \"Top Wide\""
+msgstr "*Layout*: \"Top Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
 msgid "*Text* : ``0``"
-msgstr "* Text *: `` 0``"
+msgstr "*Text*: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
@@ -7430,15 +7420,15 @@ msgstr "Zpráva"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 msgid "*Layout* : \"HCenter Wide\""
-msgstr "* Rozložení *: \"HCenter Wide\""
+msgstr "*Rozložení*: \"HCenter Wide\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "*Text* : ``Dodge the Creeps!``"
-msgstr "* Text *: `` Dodge the Creeps! ``"
+msgstr "*Text*: ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Autowrap* : \"On\""
-msgstr "* Autowrap * : \"On\""
+msgstr "*Autowrap* : \"On\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1022
 msgid "StartButton"
@@ -7446,11 +7436,11 @@ msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "*Text* : ``Start``"
-msgstr "* Text *: `` Start``"
+msgstr "*Text*: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
 msgid "*Layout* : \"Center Bottom\""
-msgstr "* Layout *: \"Center Bottom\""
+msgstr "*Layout*: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Margin* :"
@@ -7469,19 +7459,19 @@ msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
 msgstr ""
-"V `` MessageTimer`` nastavte `` Wait Time`` na `` 2`` a nastavte vlastnost "
-"`One Shot`` na\" On \"."
+"V ``MessageTimer`` nastavte ``Wait Time`` na ``2`` a nastavte vlastnost `One "
+"Shot`` na\" On \"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid "Now add this script to ``HUD``:"
-msgstr "Nyní přidejte tento skript do `` HUD``:"
+msgstr "Nyní přidejte tento skript do ``HUD``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1053
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr ""
-"Signál `` start_game`` oznamuje uzlu `` Main``, že bylo tlačítko stisknuto."
+"Signál ``start_game`` oznamuje uzlu ``Main``, že bylo tlačítko stisknuto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1075
 msgid ""
@@ -7509,13 +7499,13 @@ msgid ""
 "time before showing the \"Start\" button."
 msgstr ""
 "Pokud potřebujete pozastavit na krátkou dobu, alternativou k použití uzlu "
-"Timer je použití funkce `` create_timer () `` třídy SceneTree. To může být "
+"Timer je použití funkce ``create_timer ()`` třídy SceneTree. To může být "
 "velmi užitečné pro přidání zpoždění, jako například ve výše uvedeném kódu, "
 "kdy chceme počkat, než se zobrazí tlačítko „Start“."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Tatu funkci volá uzel `` Main``, kdykoli se skóre změní."
+msgstr "Tatu funkci volá uzel ``Main``, kdykoli se skóre změní."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid ""
@@ -7535,8 +7525,8 @@ msgid ""
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
-"Nyní, když jsme dokončili scénu `` HUD``, vraťte se ke scéně `` Main``. "
-"Vytvořte instanci scény `HUD`` ve` `Main``, jak jste to udělali se scénou "
+"Nyní, když jsme dokončili scénu ``HUD``, vraťte se ke scéně ``Main``. "
+"Vytvořte instanci scény `HUD``ve` `Main``, jak jste to udělali se scénou "
 "``Player``. Strom scény by měl vypadat takto, takže se ujistětě, že vám něco "
 "neuniklo:"
 
@@ -7545,8 +7535,8 @@ msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
-"Nyní musíme propojit funkcionalitu `HUD`` se skriptem` `Main``. To vyžaduje "
-"několik přídavků ke scéně `` Main``:"
+"Nyní musíme propojit funkcionalitu `HUD``se skriptem` `Main``. To vyžaduje "
+"několik přídavků ke scéně ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1172
 msgid ""
@@ -7555,7 +7545,7 @@ msgid ""
 "\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
-"Na kartě Uzel připojte signál `` start_game`` scény HUD k funkci ``new_game "
+"Na kartě Uzel připojte signál ``start_game`` scény HUD k funkci ``new_game "
 "()`` Main uzlu zadáním\" new_game \"v\" Metoda příjemce \"v okně\" Připojit "
 "signál \". Ověřte, že zelená ikonka připojení se nyní objeví ve skriptu "
 "vedle ``func new_game ()``."
@@ -7565,19 +7555,19 @@ msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
-"V `` new_game () `` aktualizujte zobrazení skóre a zobrazte zprávu "
-"„Připravte se“:"
+"V ``new_game ()`` aktualizujte zobrazení skóre a zobrazte zprávu „Připravte "
+"se“:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
-msgstr "V `` game_over () `` musíme zavolat odpovídající `HUD`` funkci:"
+msgstr "V ``game_over ()`` musíme zavolat odpovídající `HUD`` funkci:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1203
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
-"Nakonec přidejte toto do `` _on_ScoreTimer_timeout () ``, aby byl displej "
+"Nakonec přidejte toto do ``_on_ScoreTimer_timeout ()``, aby byl displej "
 "synchronizován s měnícím se skóre:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1215
@@ -7586,7 +7576,7 @@ msgid ""
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
 "Nyní jste připraveni hrát! Klikněte na tlačítko „Přehrát projekt“. Budete "
-"vyzváni k výběru hlavní scény, takže zvolte `` Main.tscn``."
+"vyzváni k výběru hlavní scény, takže zvolte ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1219
 msgid "Removing old creeps"
@@ -7623,7 +7613,7 @@ msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
-"Nyní budou všechny davy ve skupině „mobs“. K funkci `` game_over () `` v `` "
+"Nyní budou všechny davy ve skupině „mobs“. K funkci ``game_over ()`` v `` "
 "Main`` pak můžeme přidat následující řádek:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1245
@@ -7663,9 +7653,9 @@ msgid ""
 "screen."
 msgstr ""
 "Výchozí šedé pozadí není příliš přitažlivé, změňte tedy jeho barvu. Jedním "
-"ze způsobů, jak toho dosáhnout, je použít uzel: ref: `ColorRect "
-"<class_ColorRect>. Je to první uzel pod `` Main``, takže bude nakreslen za "
-"ostatními uzly. `` ColorRect`` má pouze jednu vlastnost: `` Color``. Vyberte "
+"ze způsobů, jak toho dosáhnout, je použít uzel :ref:`ColorRect "
+"<class_ColorRect>. Je to první uzel pod ``Main``, takže bude nakreslen za "
+"ostatními uzly. ``ColorRect`` má pouze jednu vlastnost: ``Color``. Vyberte "
 "barvu, která se vám líbí, a vyberte \"Rozložení\" -> \"Úplný obdélník\" tak, "
 "aby pokrýval celou obrazovku."
 
@@ -7709,13 +7699,12 @@ msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
-"Chcete-li přehrát hudbu, přidejte `` $ Music.play () `` do funkce `` "
-"new_game () `` a `` $ Music.stop () `` do funkce `` game_over () ``."
+"Chcete-li přehrát hudbu, přidejte ``$ Music.play ()`` do funkce `` new_game "
+"() ``a`` $ Music.stop () ``do funkce`` game_over () ``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1283
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
-msgstr ""
-"Nakonec přidejte do funkce `` game_over () `` `` $ DeathSound.play () ``."
+msgstr "Nakonec přidejte do funkce ``game_over ()`` ``$ DeathSound.play ()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1286
 msgid "Keyboard shortcut"
@@ -7729,7 +7718,7 @@ msgid ""
 msgstr ""
 "Protože se hra ovládá pomocí klávesnice, bylo by vhodné, kdybychom ji mohli "
 "také spustit stisknutím klávesy na klávesnici. Můžeme to udělat pomocí "
-"vlastnosti \"Shortcut\" v uzlu `` Button``."
+"vlastnosti \"Shortcut\" v uzlu ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1292
 msgid ""
@@ -7740,12 +7729,11 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"Ve scéně `HUD`` vyberte` `StartButton`` a najděte jeho vlastnost * Shortcut "
-"* v Inspektoru. Vyberte „New shortcut“ a klikněte na položku „Shortcut“. "
-"Zobrazí se druhá vlastnost * Shortcut *. Vyberte „Nový InputEventAction“ a "
-"klikněte na nový „InputEventAction“. Nakonec do vlastnosti * Action * "
-"zadejte název `` ui_select``. Toto je výchozí vstupní událost spojená s "
-"mezerníkem."
+"Ve scéně `HUD``vyberte` `StartButton`` a najděte jeho vlastnost *Shortcut* v "
+"Inspektoru. Vyberte „New shortcut“ a klikněte na položku „Shortcut“. Zobrazí "
+"se druhá vlastnost *Shortcut*. Vyberte „Nový InputEventAction“ a klikněte na "
+"nový „InputEventAction“. Nakonec do vlastnosti *Action* zadejte název "
+"``ui_select``. Toto je výchozí vstupní událost spojená s mezerníkem."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1300
 msgid ""
@@ -7785,7 +7773,7 @@ msgid ""
 msgstr ""
 "Nyní, když máte hotovou hru, budete pravděpodobně chtít sdílet svůj úspěch s "
 "ostatními. Není však praktické požádat přátele o stáhnutí Godota, aby mohli "
-"otevřít váš projekt. Místo toho můžete svůj projekt * exportovat * a převést "
+"otevřít váš projekt. Místo toho můžete svůj projekt *exportovat* a převést "
 "jej na \"balíček\", který může spustit kdokoli."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
@@ -7839,7 +7827,7 @@ msgstr ""
 "dotek. Godot může také emulovat dotykový vstup z klikání myší, což bude "
 "potřeba, abychom mohli pokračovat v hraní naší hry na počítači i po přepnutí "
 "na dotykový vstup. V části „Nastavení projektu“ pod položkami * Input "
-"Devices * and * Pointing * nastavte * Emulate Touch From Mouse * na „On“."
+"Devices *and* Pointing *nastavte* Emulate Touch From Mouse * na „On“."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
 msgid ""
@@ -7848,17 +7836,17 @@ msgid ""
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
 "Chceme také zajistit, aby hra odpovídala původnímu měřítku na obrazovkách "
-"různých velikostí, takže v nastavení projektu přejděte na * Display *, poté "
-"klikněte na * Window *. V možnostech * Stretch * nastavte * Mode * na \"2d\" "
-"a * Aspect * na \"keep\"."
+"různých velikostí, takže v nastavení projektu přejděte na *Display*, poté "
+"klikněte na *Window*. V možnostech *Stretch* nastavte *Mode* na \"2d\" a "
+"*Aspect* na \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
-"Protože jsme již v nastavení * Window *, měli bychom také nastavit v položce "
-"* Handheld * the * Orientation * na \"portrait\"."
+"Protože jsme již v nastavení *Window*, měli bychom také nastavit v položce "
+"*Handheld* the *Orientation* na \"portrait\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -7866,9 +7854,9 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"Dále musíme ve skriptu `` Player.gd`` změnit metodu vstupu. Odstraníme "
-"vstupy kláves a přimějeme hráče, aby se posunul směrem k „cíli“, který je "
-"nastaven událostí dotyku (nebo kliknutí)."
+"Dále musíme ve skriptu ``Player.gd`` změnit metodu vstupu. Odstraníme vstupy "
+"kláves a přimějeme hráče, aby se posunul směrem k „cíli“, který je nastaven "
+"událostí dotyku (nebo kliknutí)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:52
 msgid ""
@@ -7904,10 +7892,10 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
-"Chcete-li exportovat, musíte si stáhnout * exportní šablony * z http://"
+"Chcete-li exportovat, musíte si stáhnout *exportní šablony* z http://"
 "godotengine.org/download. Tyto šablony jsou optimalizované verze enginu bez "
 "editoru předkompilované pro každou platformu. Můžete si je také stáhnout v "
-"Godotu kliknutím na * Editor -> Spravovat exportní šablony *:"
+"Godotu kliknutím na *Editor -> Spravovat exportní šablony*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:256
 msgid ""
@@ -7961,7 +7949,7 @@ msgid ""
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
 "Druhé tlačítko „Exportovat projekt“ vytvoří kompletní spustitelnou verzi "
-"vaší hry, například `.apk` pro Android nebo` .exe` pro Windows."
+"vaší hry, například `.apk` pro Android nebo`.exe` pro Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
 msgid ""
@@ -7997,7 +7985,7 @@ msgstr ""
 "Export PC platforem funguje napříč třemi podporovanými operačními systémy. "
 "Otevřete exportní okno a klikněte na \"Přidat ..\" pro vytvoření vámi "
 "požadovaných předvoleb. Poté klikněte na „Exportovat projekt“ a vyberte "
-"název a cílovou složku. Vyberte umístění * mimo * složky projektu."
+"název a cílovou složku. Vyberte umístění *mimo* složky projektu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:298
 msgid "Click \"Save\" and the engine will build the export files."
@@ -8011,7 +7999,7 @@ msgid ""
 "click and run."
 msgstr ""
 "Při exportu pro MacOS, pokud exportujete na počítači s MacOSem, výsledkem je "
-"soubor `.dmg`, zatímco při použití Linuxu nebo Windows vytvoříte` .zip`. V "
+"soubor `.dmg`, zatímco při použití Linuxu nebo Windows vytvoříte`.zip`. V "
 "obou případech komprimovaný soubor obsahuje macOS .app, které můžete "
 "poklepáním spustit."
 
@@ -8022,7 +8010,7 @@ msgid ""
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
 "Ve Windows pokud chcete, aby exportovaný spustitelný soubor obsahoval jinou "
-"ikonu než je výchozí, musíte ji změnit ručně. Viz:: ref: "
+"ikonu než je výchozí, musíte ji změnit ručně. Viz: :ref:"
 "`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:312
@@ -8083,7 +8071,7 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"Klikněte na * Editor -> Nastavení editoru * v Godotu a vyberte sekci * "
+"Klikněte na *Editor -> Nastavení editoru* v Godotu a vyberte sekci * "
 "Export / Android *. Zde musíte nastavit cesty k aplikacím Android SDK ve "
 "vašem systému a umístění úložiště klíčů, které jste právě vytvořili."
 
@@ -8093,10 +8081,10 @@ msgid ""
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
-"Nyní jste připraveni exportovat. Klikněte na * Projekt -> Exportovat * a "
+"Nyní jste připraveni exportovat. Klikněte na *Projekt -> Exportovat* a "
 "přidejte předvolbu pro Android (viz výše). Vyberte předvolby Android a v "
-"části * Možnosti * přejděte na * Obrazovku * a nastavte * Orientace * na "
-"\"Portrait\"."
+"části *Možnosti* přejděte na *Obrazovku* a nastavte *Orientace* na \"Portrait"
+"\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:345
 msgid ""
@@ -8112,7 +8100,7 @@ msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
-"Vaše zařízení může potřebovat být v * vývojářském režimu *. Podrobnosti "
+"Vaše zařízení může potřebovat být v *vývojářském režimu*. Podrobnosti "
 "naleznete v dokumentaci k zařízení."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:355
@@ -8257,10 +8245,10 @@ msgid ""
 "This leads to different workflows and different ways to form your games' "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
-"** Každý herní engine je jiný a vyhovuje různým potřebám. ** Nejenže "
-"nabízejí celou řadu funkcí, ale i design každého enginu je unikátní. To vede "
-"k různým pracovním postupům a různým způsobům tvorby struktury vašich her. "
-"Vše tedy vychází z příslušné filozofie návrhu enginu."
+"**Každý herní engine je jiný a vyhovuje různým potřebám.** Nejenže nabízejí "
+"celou řadu funkcí, ale i design každého enginu je unikátní. To vede k různým "
+"pracovním postupům a různým způsobům tvorby struktury vašich her. Vše tedy "
+"vychází z příslušné filozofie návrhu enginu."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
@@ -8305,7 +8293,7 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
-"Pro jednu, Godot vám umožňuje ** komponovat nebo agregovat ** scény. Je to "
+"Pro jednu, Godot vám umožňuje **komponovat nebo agregovat** scény. Je to "
 "jako vnořené montované panely: můžete vytvořit scénu BlinkingLight a scénu "
 "BrokenLantern, která používá BlinkingLight. Poté vytvořte město plné "
 "BrokenLanterns. Změňte barvu, uložte BlinkingLight a všechny BrokenLanterns "
@@ -8492,9 +8480,9 @@ msgid ""
 "as well. For the most part, they're developed from the ground up by "
 "contributors."
 msgstr ""
-"Godot nabízí plně otevřený zdrojový kód pod licencí ** MIT **. To znamená, "
-"že všechny technologie, které se s ním dodávají, musí být také zdarma (jako "
-"ve svobodě). Z velké části jsou vyvíjeny od základu přispěvateli."
+"Godot nabízí plně otevřený zdrojový kód pod licencí **MIT**. To znamená, že "
+"všechny technologie, které se s ním dodávají, musí být také zdarma (jako ve "
+"svobodě). Z velké části jsou vyvíjeny od základu přispěvateli."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
 msgid ""
@@ -8523,9 +8511,8 @@ msgid ""
 "This **does not affect the work you do with Godot** in any way: there's no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
-"To ** nijak neovlivňuje práci, kterou provádíte s Godotem **: k enginu "
-"nejsou připojeny žádné další podmínky a omezení a ani nic, co s ním "
-"vytvoříte."
+"To **nijak neovlivňuje práci, kterou provádíte s Godotem**: k enginu nejsou "
+"připojeny žádné další podmínky a omezení a ani nic, co s ním vytvoříte."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
@@ -8570,8 +8557,8 @@ msgid ""
 msgstr ""
 "Editor Godot běží na herním enginu. Využívá vlastní systém uživatelského "
 "rozhraní enginu, může při testování projektů znovu načíst kód a scény, nebo "
-"spustit kód hry v editoru. To znamená, že můžete ** použít stejný kód ** a "
-"scény pro své hry, nebo ** vytvořit doplňky a rozšířit editor. **"
+"spustit kód hry v editoru. To znamená, že můžete **použít stejný kód** a "
+"scény pro své hry, nebo **vytvořit doplňky a rozšířit editor.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 msgid ""
@@ -8579,7 +8566,7 @@ msgid ""
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
 "To vede k spolehlivému a flexibilnímu systému uživatelského rozhraní, "
-"protože to pohání editor samotný. Pomocí klíčového slova `` tool`` můžete v "
+"protože to pohání editor samotný. Pomocí klíčového slova ``tool`` můžete v "
 "editoru spustit libovolný herní kód."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
@@ -8604,7 +8591,7 @@ msgid ""
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"Umístěte klíčové slovo `` tool`` na začátek jakéhokoli souboru GDScript a "
+"Umístěte klíčové slovo ``tool`` na začátek jakéhokoli souboru GDScript a "
 "bude spuštěn v editoru. To vám umožní importovat a exportovat pluginy, "
 "vytvářet pluginy jako editory na vlastních úrovni nebo vytvářet skripty se "
 "stejnými uzly a API, jaké používáte ve svých projektech."
@@ -8673,7 +8660,7 @@ msgid ""
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
 "Pět nejběžnějších kontejnerů (další informace o kontejnerech se dozvíte na "
-"stránce: ref: `GUI Containers <doc_gui_containers>` document page)."
+"stránce :ref:`GUI Containers <doc_gui_containers>` document page)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -8681,7 +8668,7 @@ msgid ""
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
 "Chcete-li se naučit, jak ovládat rozhraní a připojit jej k jiným skriptům, "
-"přečtěte si: ref: `Vytvořte své první uživatelské rozhraní hry v Godot "
+"přečtěte si :ref:`Vytvořte své první uživatelské rozhraní hry v Godot "
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
@@ -8806,7 +8793,7 @@ msgid ""
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
-"** TextureRect ** zobrazuje texturu nebo obrázek uvnitř uživatelského "
+"**TextureRect** zobrazuje texturu nebo obrázek uvnitř uživatelského "
 "rozhraní. Zdá se podobný uzlu Sprite, ale nabízí několik režimů škálování. "
 "Pro jejich změnu nastavte vlastnost Stretch Mode:"
 
@@ -8824,18 +8811,18 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"`` Scale`` upraví texturu tak, aby odpovídala ohraničujícímu obdélníku uzlu."
+"``Scale`` upraví texturu tak, aby odpovídala ohraničujícímu obdélníku uzlu."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
-msgstr "`` Tile`` způsobí opakování textury, ale nezmění měřítko."
+msgstr "``Tile`` způsobí opakování textury, ale nezmění měřítko."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:82
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively."
 msgstr ""
-"`` Keep`` a `` Keep centrered`` ponechá texturu v původní velikosti, v levém "
+"``Keep`` a ``Keep centrered`` ponechá texturu v původní velikosti, v levém "
 "horním rohu, respektive středu rámu."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
@@ -8844,7 +8831,7 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively."
 msgstr ""
-"`` Keep Aspect``` a `` Keep Aspect Centered`` upraví měřítko textury, ale "
+"``Keep Aspect```a``Keep Aspect Centered`` upraví měřítko textury, ale "
 "vynutí, aby zůstal zachován původní poměr stran, v levém horním rohu, "
 "respektive středu rámu."
 
@@ -8854,8 +8841,8 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"`` Keep Aspect Covered`` funguje stejně jako `` Keep Aspect Centered`` ', "
-"ale kratší strana odpovídá ohraničujícímu obdélníku a delší je připnuta k "
+"``Keep Aspect Covered`` funguje stejně jako ``Keep Aspect Centered`` ', ale "
+"kratší strana odpovídá ohraničujícímu obdélníku a delší je připnuta k "
 "ohraničení uzlu."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
@@ -8882,12 +8869,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"** TextureButton ** je jako TextureRect, kromě toho, že má 5 slotů na "
-"texturu: jeden pro každý ze stavů tlačítka. Většinou budete používat textury "
-"Normal, Pressed a Hover. Focused je užitečné, pokud vaše rozhraní poslouchá "
-"vstup z klávesnice. Šestý slot obrázku, Click Mask, umožňuje definovat "
-"oblast, na kterou lze kliknout, pomocí jednobitového čistě černobílého "
-"obrazu."
+"**TextureButton** je jako TextureRect, kromě toho, že má 5 slotů na texturu: "
+"jeden pro každý ze stavů tlačítka. Většinou budete používat textury Normal, "
+"Pressed a Hover. Focused je užitečné, pokud vaše rozhraní poslouchá vstup z "
+"klávesnice. Šestý slot obrázku, Click Mask, umožňuje definovat oblast, na "
+"kterou lze kliknout, pomocí jednobitového čistě černobílého obrazu."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -8904,7 +8890,7 @@ msgstr ""
 "způsobuje přechod mezi aktivním a normálním stavem. ``Disabled`` implicitně "
 "deaktivuje, v takovém případě použije texturu ``Disabled``. TextureButton "
 "sdílí několik vlastností s rámečkem textury: má vlastnost ``Modulate`` pro "
-"změnu barvy a režimy` Resize`` a `Stretch`` pro změnu škálování."
+"změnu barvy a režimy`Resize``a`Stretch`` pro změnu škálování."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureButton and its 5 texture slots"
@@ -8920,7 +8906,7 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
-"** TextureProgress ** vrství až 3 textury pro vytvoření ukazatele průběhu. "
+"**TextureProgress** vrství až 3 textury pro vytvoření ukazatele průběhu. "
 "Textury Under and Over zapouzdřují texturu Progress, která zobrazuje hodnotu "
 "pruběhu."
 
@@ -8947,12 +8933,12 @@ msgid ""
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
 "Chcete-li lištu animovat, budete se chtít podívat na sekci Range. Nastavte "
-"vlastnosti `` Min`` a `` Max`` pro definování rozsahu měřidla. Například pro "
-"zobrazení života postavy přepište `` Min`` na `` 0, `` a `` Max`` na "
-"maximální život postavy. Změňte vlastnost `` Value`` a aktualizujte panel. "
-"Pokud ponecháte hodnoty `` Min`` a `` Max`` na výchozích hodnotách `` 0`` a "
-"`` 100, `` a nastavíte vlastnost `` Value`` na `` 40``, 40% textury `` "
-"Progress`` se objeví a 60% z toho zůstane skryté."
+"vlastnosti ``Min`` a ``Max`` pro definování rozsahu měřidla. Například pro "
+"zobrazení života postavy přepište ``Min`` na ``0,`` a ``Max`` na maximální "
+"život postavy. Změňte vlastnost ``Value`` a aktualizujte panel. Pokud "
+"ponecháte hodnoty ``Min`` a ``Max`` na výchozích hodnotách ``0`` a ``100,`` "
+"a nastavíte vlastnost ``Value`` na ``40``, 40% textury `` Progress`` se "
+"objeví a 60% z toho zůstane skryté."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -8966,8 +8952,8 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"** Label** vytiskne text na obrazovku. Všechny jeho vlastnosti najdete v "
-"sekci Label v Inspektoru. Napište text do vlastnosti `` Text`` a zaškrtněte "
+"**Label** vytiskne text na obrazovku. Všechny jeho vlastnosti najdete v "
+"sekci Label v Inspektoru. Napište text do vlastnosti ``Text`` a zaškrtněte "
 "Autowrap, pokud chcete respektovat velikost textového pole. Pokud je "
 "Autowrap vypnutý, nebudete moci změnit měřítko uzlu. Text můžete zarovnat "
 "vodorovně a svisle s Align a Valign."
@@ -8987,7 +8973,7 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"** NinePatchRect ** provede rozdělení textury do 3 řádků a 3 sloupců. Při "
+"**NinePatchRect** provede rozdělení textury do 3 řádků a 3 sloupců. Při "
 "změně měřítka textury se změní střed a dlaždice po stranách ale nikdy se "
 "nezmění rohy. Je užitečný pro vytváření panelů, dialogových oken a "
 "škálovatelného pozadí pro vaše uživatelské rozhraní."
@@ -9351,7 +9337,7 @@ msgstr ""
 "VBoxContainer automaticky uspořádá svoje potomky do sloupce. Naštosuje je "
 "jednoho po druhém. Pokud použijete oddělovací parametr,zanechá mezi nimi "
 "určitý prostor. HBoxContainer uspořádá prvky uživatelského rozhraní do řady. "
-"Je to podobné jako u VBoxContainer, s extra `` add_spacer`` metodou pro "
+"Je to podobné jako u VBoxContainer, s extra ``add_spacer`` metodou pro "
 "přidání uzlu spacer před prvním nebo posledním potomkem pomocí skriptu."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
@@ -9459,12 +9445,12 @@ msgid ""
 "placeholders."
 msgstr ""
 "Chcete-li navrhnout dobré uživatelské rozhraní, musíte nejprve vytvořit "
-"hrubou návrh: prostou verzi výkresu, která se zaměřuje na umístění komponent "
-"uživatelského rozhraní, jejich velikost a interakci s uživatelem. Tužka a "
-"papír je vše, co potřebujete. V této fázi byste neměli používat vymazlenouou "
-"či finální grafiku. Pak už potřebujete jen jednoduché schematické sprity a "
-"můžete na první dobrou skočit do Godota. Chcete se ujistit, že se hráči v "
-"tomto schematickém rozhraní neztratí."
+"hrubý návrh: jednoduchý nákres, která se zaměří na umístění komponent "
+"uživatelského rozhraní, jejich velikost a interakci s uživatelem. Stačí na "
+"to tužka a papír. V této fázi byste neměli používat vymazlenouou či finální "
+"grafiku. Pak už potřebujete jen jednoduché schematické sprity a můžete na "
+"první dobrou skočit do Godota. Chcete se ujistit, že se hráči v tomto "
+"schematickém rozhraní neztratí."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
 msgid "The UI's rough plan or mockup"
@@ -9500,22 +9486,35 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Vždy se pokuste, aby rozhraní fungovalo nejprve s jednoduchým textem a "
+"rámečky. Je snadné vyměnit textury později. Profesionální návrháři UX často "
+"pracují s jednoduchými obrysy a boxy v odstínech šedé. Když odeberete barvy "
+"a načančané vizuální prvky, je mnohem snazší navrhout optimální velikost a "
+"správné rozmístění prvků uživatelského rozhraní. Pomáhá vám to vytvořit "
+"bytelné základy návrhu na kterých budete později stavět."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
 msgid "There are two ways to design your UI in Godot. You can:"
 msgstr ""
+"Existují dva způsoby, jak navrhnout vaše uživatelské rozhraní v Godotu. "
+"Můžete:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
+"Vytvoříte vše v jedné scéně a nakonec uložíte některé části jako znovu "
+"použitelné scény."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
+"Vytvářejte šablony scén pro opakovaně použitelné komponenty UI a pro "
+"konkrétní součásti vytvořte specifické komponenty, které dědí ze základních "
+"scén."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -9524,31 +9523,40 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"Použijeme první přístup, protože první verze vašeho uživatelského rozhraní "
+"nemusí fungovat od začátku tak, jak byste chtěli. Pravděpodobně při tvorbě "
+"někteé části zahodíte a jiné upravíte. Když jste si jistí, že všechno "
+"funguje, tak jak jste zamýšleli, je snadné použít některé části znovu, "
+"ukážeme si to níže."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
+"Soubory, které najdete v Godotu. Grafika vypadá čistěji než v hrubém "
+"designu, ale stále jsou to zástupné symboly."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
-msgstr ""
+msgstr "Navrhněte hlavní menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:85
 msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"Než skočíme do editoru, naplánujeme si podle našeho nákresu, jak budeme "
+"zanořovat jednotlivé kontejnery."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "Rozbor návrhu uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "Zde jsou moje tři základní pravidla pro nalezení vhodných kontejnerů:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
 msgid ""
@@ -9556,22 +9564,30 @@ msgid ""
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
+"Rozdělte uživatelské rozhraní do vnořených polí, od největšího, který "
+"obsahuje vše, po nejmenší, které zahrnuje jeden widget, jako je např. panel "
+"s popiskem, panel nebo tlačítko."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
+"Pokud má oblast nějaký vnitřní okraj (padding), použijte ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
+"Pokud jsou prvky uspořádány do řádků nebo sloupců, použijte "
+"``HBoxContainer`` nebo ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Tato pravidla jsou dostatečná, abychom mohli začít, a dobře fungují pro "
+"jednoduchá rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:103
 msgid ""
@@ -9582,10 +9598,16 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"V hlavní nabídce je největším oknem celé herní okno. Mezi okraji okna a "
+"prvními komponenty je výplň (padding - vnitřní okraj): to by měl zajistit "
+"``MarginContainer``. Dále je obrazovka rozdělena do dvou sloupců, takže "
+"použijeme ``HBoxContainer``. V levém sloupci spravujeme řádky pomocí "
+"``VBoxContainer``. A v pravém sloupci vycentrujeme obrázek pomocí "
+"``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr ""
+msgstr "Stavební bloky rozhraní, rozdělené podle tří základních pravidel."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -9593,10 +9615,13 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
+"Kontejnery se přizpůsobí rozlišení okna a poměru šířka k výšce. Ačkoli "
+"bychom mohli prvky UI umisťovat ručně, kontejnery jsou rychlejší, přesnější "
+"a **vnímavější (responzivní)**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Příprava scény hlavního menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -9605,18 +9630,26 @@ msgid ""
 "editor then change **Display > Window > Size > Width** to ``1366`` and "
 "**Display > Window > Size > Height** to ``768``."
 msgstr ""
+"Tento tutoriál je založen na velikosti okna 1366 × 768. Chcete-li změnit "
+"velikost základního okna projektu, otevřete **Projekt> Nastavení projektu** "
+"v horní části editoru a poté změňte **Displej> Okno> Velikost> Šířka** na "
+"``1366`` a **Displej> Okno> Velikost > Výška** na ``768``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Pokud zapomenete změnit velikost okna, kotvy a kontejnery se nemusí chovat "
+"podle očekávání."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
+"Vytvořme hlavní nabídku. Postavíme ji v jedné scéně. Chcete-li vytvořit "
+"prázdnou scénu, klikněte na **Scéna > Nová scéna**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
@@ -9626,6 +9659,12 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:"
 "kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
+"Před uložením scény musíme přidat kořenový uzel. Kořen vašeho uživatelského "
+"rozhraní by měl být od středu nejvzdálenější kontejner nebo prvek. V tomto "
+"případě je to ``MarginContainer``. ``MarginContainer`` je dobrým výchozím "
+"bodem pro většinu rozhraní, protože často potřebujete čalounění kolem "
+"uživatelského rozhraní. Stisknutím: kbd: `Ctrl + S` (: kbd:` Cmd + S` v "
+"systému MacOS) uložte scénu na disk. Pojmenujte ji *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
@@ -9633,54 +9672,61 @@ msgid ""
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
 "Constants`` section. Unfold it. Set the margins as such:"
 msgstr ""
+"Znovu vyberte ``MarginContainer`` a zamiřte do Inspektorova, abyste "
+"stanovili velikost okrajů. Přejděte dolů do třídy ``Control`` do sekce "
+"``Custom Constants``. Rozklikněte ji. Nastavte okraje takto:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid "Margin Right: *120*"
-msgstr ""
+msgstr "Margin Right: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
 msgid "Margin Top: *80*"
-msgstr ""
+msgstr "Margin Topj: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
 msgid "Margin Left: *120*"
-msgstr ""
+msgstr "Margin Left: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "Margin Bottom: *80*"
-msgstr ""
+msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
+"Chceme, aby kontejner pokryl celé okno. Na panelu nástrojů nad výřezem "
+"otevřete nabídku **Rozvržení** a vyberte poslední možnost, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Přidání spritů uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Vyberte ``MarginContainer`` a vytvořte prvky uživatelského rozhraní jako "
+"uzly ``TextureRect``. Potřebujeme:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
-msgstr ""
+msgstr "název nebo logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr ""
+msgstr "tři možnosti textu jako jednotlivé uzly,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
-msgstr ""
+msgstr "poznámku k verzi,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 msgid "and the main menu's illustration."
-msgstr ""
+msgstr "a ilustraci hlavního menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid ""
@@ -9690,6 +9736,11 @@ msgid ""
 "`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
+"Klikněte na tlačítko **Přidat uzel** nebo stiskněte: kbd: `Ctrl + A` (: kbd:"
+"`Cmd + A` na MacOS) na klávesnici. Začněte psát ``TextureRect`` a najděte "
+"odpovídající uzel a stiskněte enter. S vybraným novým uzlem stiskněte "
+"pětkrát: kbd: `Ctrl + D` (: kbd:`Cmd + D` v systému MacOS) a vytvořte pět "
+"dalších instancí ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
@@ -9697,10 +9748,13 @@ msgid ""
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
+"Klepnutím na jednotlivé uzly jej vyberte. V Inspektoru najděte vlastnost "
+"**Texture** a klikněte na **[prázdný]> Načíst**. Otevře se prohlížeč souborů "
+"a umožní vám vybrat sprite pro načtení textury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 msgid "The file browser lets you find and load textures."
-msgstr ""
+msgstr "Prohlížeč souborů umožňí najít a načíst textury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
@@ -9710,20 +9764,27 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
+"Opakujte operaci pro všechny uzly ``TextureRect``. Měli byste mít logo, "
+"obrázek, tři možnosti nabídky a poznámku k verzi, vše jako samostatný uzel. "
+"Poté poklepejte na každý z uzlů na kartě Scéna a přejmenujte je. Do "
+"kontejnerů zatím nebylo nic umístěno, takže vše vypadá krapet chaoticky."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid "The six nodes with textures loaded."
-msgstr ""
+msgstr "Šest uzlů s načtenými texturami."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"Pokud chcete ve vaší hře podporovat lokalizaci, použijte ``Labels`` pro "
+"možnosti nabídky namísto ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
 msgid "Add containers to place UI elements automatically"
 msgstr ""
+"Přidání kontejnerů pro automatickému umístění prvků uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
@@ -9737,6 +9798,16 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behavior, I recommend to favor box containers."
 msgstr ""
+"Naše hlavní menu má určitý odstup od okrajů obrazovky (tzv. padding). Je "
+"rozděleno na dvě části: vlevo máme logo a možnosti menu. Na pravé straně, "
+"máme znaky. K dosažení tohoto cíle můžeme použít jeden ze dvou kontejnerů: "
+"''HSplitContainer'' nebo ''HBoxContainer''. Split kontejnery rozdělují na "
+"dvě části: levou a pravou stranu nebo horní a dolní stranu. Umožňují také "
+"uživatelsky změnit velikost levé a pravé oblasti pomocí interaktivního "
+"panelu. Na druhou stranu, ''HBoxContainer'' se jenom rozdělí na tolik "
+"sloupců, kolik má podřízených uzlů. I když můžete deaktivovat uživatelskou "
+"změnu velikosti rozdělelovacího kontejneru, doporučuji upřednostňovat box "
+"kontejnery."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
@@ -9745,12 +9816,15 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
+"Vyberte ''MarginContainer'' a přidejte ''HBoxContainer''. Poté potřebujeme "
+"dva kontejnery jako podřízené položky našeho ''HBoxContainer''' pro možnosti "
+"nabídky vlevo a ''CenterContainer'' pro ilustraci vpravo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
-msgstr ""
+msgstr "Měli byste mít čtyři vnořené kontejnery a vedle nich uzly TextureRect."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid ""
@@ -9759,22 +9833,27 @@ msgid ""
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
+"Ve stromu uzlů vyberte všechny uzly ''TextureRect'', které by měly být na "
+"levé straně: logo, možnosti nabídky (Pokračovat, NewGame, Možnosti) a "
+"poznámku k verzi. Přetáhněte je do ''VBoxContainer''. Uzly by měly být "
+"umístěny automaticky."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
 msgid "Containers automatically place and resize textures"
-msgstr ""
+msgstr "Kontejnery textury automaticky umisťují a zároveň mění jejich velikost"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "Zbývá nám vyřešit dva problémy:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid "The characters on the right aren't centered."
-msgstr ""
+msgstr "Znaky napravo nejsou vycentrovány."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid "There's no space between the logo and the other UI elements."
 msgstr ""
+"Mezi logem a ostatními prvky uživatelského rozhraní není žádný prostor."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
@@ -9787,12 +9866,21 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
+"Chcete-li vystředět znaky vpravo, vyberte nejprve ''CenterContainer''. Pak v "
+"Inspectoru přejděte dolů do kategorie **Size Flags** a klikněte na pole "
+"vpravo od vlastnosti **Vertical** a zaškrtněte kromě **Fill** také "
+"**Expand** . Totéž pro **Horizontal** vlastnost. Díky tomu se "
+"''CenterContainer'' rozšíří do celého dostupného prostoru a zároveň "
+"respektuje svého souseda ''VBoxContainer''. Nakonec přetáhněte uzel Znaky do "
+"''CenterContainer''. Prvek Znaky se automaticky vystředí."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
+"Uzel znaku se vystředí uvnitř pravé poloviny obrazovky, jakmile jej umístíte "
+"do CenterContaineru."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -9804,12 +9892,21 @@ msgid ""
 "inside the new ``VBoxContainer``. The UI's layout should barely change, if "
 "at all."
 msgstr ""
+"Pro rozmístění nabídky možnosti a loga nalevo, použijeme dálší kontejner a "
+"příznaky jeho velikosti. Vyberte ''VBoxContainer'' a stisknutím klávesy :"
+"kbd:'Ctrl + A' (:kbd:'Cmd + A' v systému macOS) do něj přidejte nový uzel. "
+"Konkrétně druhý ''VBoxContainer'' a pojmenujte jej *MenuOptions*. Vyberte "
+"všechny tři možnosti nabídky, ''Pokračovat'', ''NewGame'' a ''Možnosti'' a "
+"přetáhněte je do nového ''VBoxContainer''. Rozložení uživatelského rozhraní "
+"by se téměř nemělo změnit."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
+"Umístěte nový kontejner mezi další dva uzly, abyste zachovali rozložení "
+"uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
@@ -9821,16 +9918,27 @@ msgid ""
 "the available vertical space while respecting its neighbors, the ``Logo`` "
 "and ``Version`` elements."
 msgstr ""
+"Nyní, když jsme seskupili možnosti nabídky do jednoho kontejneru, můžeme mu "
+"říci, aby se rozbalil tak, aby zabral co nejvíce vertikálního prostoru. "
+"Vyberte uzel ``MenuOptions``. V Inspektoru přejděte dolů do kategorie **Size "
+"flags**. Klikněte na pole vpravo od vlastnosti **Vertical** a zaškrtněte "
+"kromě **Fill** také **Expand** . Kontejner se rozbalí tak, aby zabral "
+"veškerý dostupný vertikální prostor při respektování svých sousedů, prvků "
+"``Logo`` a ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
+"Abychom vycentrovaly uzly v ''VBoxContainer'', přejděte na začátek "
+"Inspektoru a změňte vlastnost **Alignment** na **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
+"Možnosti nabídky by se měly vertikálně vycentrovat v levém sloupci "
+"uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
@@ -9840,15 +9948,22 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
+"Abychom to dokončili, přidejme určitý prostor mezi možnosti nabídky. "
+"Rozbalte kategorii **Custom constants** pod **Size Flags** a klikněte na "
+"pole vedle parametru **Separation**. Nastavte jej na 30. Jakmile stisknete "
+"klávesu Enter, vlastnost **Separation** se aktivuje a Godot přidá mezi "
+"možnosti nabídky 30 pixelů."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid "The final interface."
-msgstr ""
+msgstr "Finální rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
+"Bez jediného řádku kódu máme do puntíku přesné a zároveň responzivní hlavní "
+"menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
@@ -9857,6 +9972,10 @@ msgid ""
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
+"Gratulujeme, že jste se dostali až sem! Můžete si stáhnout finální menu :"
+"download:`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` k "
+"porovnání s vlastní verzí. V dalším tutoriálu vytvoříte uživatelské rozhraní "
+"hry s ukazately a čítači položek."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""
@@ -9865,6 +9984,10 @@ msgid ""
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
+"Responzivní uživatelské rozhraní je o tom, že se naše uživatelská rozhraní "
+"budou dobře škálovat na všech typech obrazovky. Televizní obrazovky a "
+"počítačové displeje mají různé velikosti a poměry stran. V Godotu používáme "
+"kontejnery k ovládání polohy a velikosti prvků uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 msgid ""
@@ -9873,6 +9996,11 @@ msgid ""
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
+"Na pořadí, ve kterém zanořujete, záleží. Chcete-li zjistit, zda se vaše "
+"uživatelská rozhraní pěkně přizpůsobí různým poměrům obrazovky, vyberte "
+"kořenový uzel, stisknutím :kbd:`Q` aktivujte režim výběru, vyberte kontejner "
+"a kliknutím a tažením jednoho z rohů kontejneru jej změňte. Komponenty "
+"uživatelského rozhraní by měly uvnitř měnit polohu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
@@ -9881,6 +10009,10 @@ msgid ""
 "ratios, but we also need the entire game to adapt to different screen "
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
+"Všimněte si, že ačkoli kontejnery přemisťují sprity, nemění je. To je "
+"normální chování. Chceme totiž, aby systém UI zvládal různé poměry "
+"obrazovky, ale také potřebujeme, aby se celá hra přizpůsobila různým "
+"rozlišením obrazovky. Za tímto účelem Godot škáluje celé okno nahoru a dolů."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
 msgid ""
@@ -9891,10 +10023,16 @@ msgid ""
 "**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Režim pro chování měřítka můžete změnit v nastavení projektu: v horní "
+"nabídce klikněte na **Projekt > Nastavení projektu**. V levém sloupci okna "
+"vyhledejte kategorii **Display**. Klikněte na podkategorii **Okno**. Na "
+"pravé straně okna najdete sekci **Stretch**. Tři nastavení, **Mode**, "
+"**Aspect**, a **Shrink**, řídí velikost obrazovky. Další informace naleznete "
+"v tématu :ref:'doc_multiple_resolutions'."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr ""
+msgstr "Návrh grafického uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -9903,27 +10041,32 @@ msgid ""
 "energy bar, and bomb and emerald counters. By the end of this tutorial, "
 "you'll have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"Nyní, když jste si upevnili základy, ukážeme si, jak postavit herní Grafické "
+"uživatelské rozhraní (GUI) s univerzálně použitelnými komponentami "
+"uživatelského rozhraní: ukazatele zdraví, energie a počítadla bomb a "
+"smaragdů. Na konci tohoto tutoriálu budete mít herní GUI, připravené k "
+"ovládání pomocí GDscriptu nebo VisualScriptu:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
-msgstr ""
+msgstr "Konečný výsledek"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "Také se naučíte:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "Vytvořte flexibilní komponenty uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "Používat dědění scén"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr ""
+msgstr "Vytvořit komplexní UI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -9931,16 +10074,21 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"Stáhněte si soubory projektu: :download:`ui_gui_design.zip <files/"
+"ui_gui_design.zip>` a rozbalte archiv. Importujte projekt `start/` do Godota "
+"a postupujte podle tohoto návodu. Složka `end/` obsahuje konečný výsledek."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"Tento výukový program můžete sledovat jako `video na YouTube <https://www."
+"youtube.com/watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "Rozborka uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
 msgid ""
@@ -9948,29 +10096,34 @@ msgid ""
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"Pojďme si rozebrat finální UI a naplánovat jaké kontejnery použijeme. Stejně "
+"jako v :doc:`ui_main_menu`, začíná ``MarginContainer`` . Pak můžeme vidět až "
+"tři sloupce:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "Počitadla života a energie vlevo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "Lišty pro energie a život"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and emerald counters on the right"
-msgstr ""
+msgstr "Počítadla bomb a smaragdů napravo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"Štítek lišty a měřidlo jsou však dvě části stejného prvku uživatelského "
+"rozhraní. Takže máme vlastně sloupce dva:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "Lišty životy a energie nalevo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
 msgid ""
@@ -9981,10 +10134,15 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
+"To usnadňuje vnořování kontejnerů: na okraje kolem obrazovky použijeme "
+"''MarginContainer'', následovaný ''HBoxContainer'' pro správu našich dvou "
+"sloupců. V levém sloupci poskádáme oba dva pruhy uvnitř ''VBoxContainer''. A "
+"budeme potřebovat poslední ''HBoxContainer'' v pravém sloupci, abychom "
+"umístili počítadla bomb a smaragdů vedle sebe."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
-msgstr ""
+msgstr "Dostáváme čisté rozložení UI a to pouze se 4 kontejnery"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
 msgid ""
@@ -9992,10 +10150,13 @@ msgid ""
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"Budeme ještě potřebovat další kontejnery uvnitř jednotlivých UI komponent, "
+"ale tady máme strukturu hlavní scény celého GUI. Díky tomu můžeme přeskočit "
+"do Godota a začít vytvářek naše GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
-msgstr ""
+msgstr "Vytvoření základu pro GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
 msgid ""
@@ -10006,16 +10167,24 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"Existují dva možné přístupy k GUI: můžeme navrhnout prvky v samostatných "
+"scénách a pak je dát dohromady, nebo prototypovat vše v jedné scéně a "
+"rozdělit ji později. Doporučuji pracovat s jednou scénou, protože takto se "
+"rychleji dostanete k hrátkám s umístěním a proporcemi vašeho uživatelského "
+"rozhraní. Jakmile to začne vypadat dobře, můžete jednoduše uložit celé sekce "
+"ze stromu uzlů jako opakovaně použitelné dílčí scény."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "Prozatím začněme několika kontejnery."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
+"Vytvořte novou scénu a přidejte ``MarginContainer``. Vyberte uzel a "
+"pojmenujte ho ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -10025,10 +10194,16 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Chceme, aby se naše rozhraní ukotvilo k horní části obrazovky. Vyberte uzel "
+"``GUI`` a klikněte na tlačítko Rozložení v horní části výřezu. Vyberte volbu "
+"``Top Wide``. Uzel ``GUI`` se ukotví k hornímu okraji svojí nadřízené "
+"jednotky, ve výchozím nastavení je to výřez. Automaticky pak mění velikost "
+"na svislé ose, tak aby vytvořil prostor pro své podřízené komponenty "
+"uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
-msgstr ""
+msgstr "Uložte scénu jako ``GUI.tscn``. Vložíme do ní celé GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -10038,6 +10213,11 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"S vybranou ``MarginContainer``, přejděte do Inspektora dolů do sekce custom "
+"constant. Rozbalte je a klikněte na pole vedle každé z vlastností "
+"``Margin``. Nastavte je na ``20`` pixelů. Dále přidejte uzel "
+"``HBoxContainer``. Bude obsahovat naše dva ukazatele vlevo a oddělí je od "
+"dvou čítačů napravo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 msgid ""
@@ -10047,10 +10227,15 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"Chceme naskládat pruhy svisle dovnitř ``HBoxContainer``. Přidejte "
+"``VBoxContainer`` jako dítě ``HBoxContainer`` a pojmenujte ho ``Bars``. "
+"Znovu vyberte rodičovský ``HBoxContainer`` a tentokrát přidejte jako jeho "
+"dítě další '`HBoxContainer``. Říkejme mu ``Counters``. S těmito čtyřmi "
+"kontejnery máme základ pro naši grafickou scénu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "Měli byste získat 4 kontejnery, které vypadají takto"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -21989,9 +22174,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "** Špatné: ** * Nastavení editoru *"
+msgstr "V nastavení editoru Godota:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -22173,17 +22357,16 @@ msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
 "triggered by clicking the word **Mono** at the bottom of the editor window "
 "to reveal the Mono panel, then clicking the **Build Project** button."
 msgstr ""
-"Pokud používáte C#, musíte (znovu) sestavit projekt, kdykoli chcete vidět "
-"nově exportované proměnné nebo signály. Toto sestavení lze spustit ručně "
-"kliknutím na slovo „Mono“ v dolní části okna editoru, čímž se odhalí panel "
-"Mono, a poté kliknutím na tlačítko „Build Project“."
+"Je třeba (znovu) sestavit projektu, kdykoli chcete vidět nové exportované "
+"proměnné nebo signály v editoru. Toto sestavení lze spustit ručně kliknutím "
+"na slovo **Mono** v dolní části okna editoru, abyste odkryli panel Mono, "
+"poté klikněte na tlačítko **Vybrat projekt**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
@@ -22768,9 +22951,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr ":ref:`doc_signals`"
+msgstr "Viz také: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -22881,7 +23063,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``Rotation``"
-msgstr "`` Rotace``"
+msgstr "``Rotace``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
@@ -22949,7 +23131,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``Length``"
-msgstr "`` Délka``"
+msgstr "``Délka``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
@@ -23011,7 +23193,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``Color[]``"
-msgstr "`` Barva [] ``"
+msgstr "``Barva []``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
@@ -23092,7 +23274,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color8``"
-msgstr "`` Color8``"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
@@ -26220,14 +26402,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Přidávání souborů do projektu"
+msgstr "Přidání detekce kolizí k objektům."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Navigační sítě."
+msgstr "Nastavení objektů jako navigačních sítí."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
 msgid ""
@@ -35469,9 +35649,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
-#, fuzzy
 msgid "3D lights and shadows"
-msgstr ": ref: `doc_2d_lights_and_shadows`"
+msgstr "3D světla a stíny"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
 msgid ""
@@ -47039,9 +47218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
-#, fuzzy
 msgid "GUI example"
-msgstr "Příklad časovače"
+msgstr "Příklad grafického uživatelského rozhraní"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
@@ -47061,9 +47239,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Příklad časovače"
+msgstr "Příklad kódu"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -48432,11 +48609,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "Další informace o vláknech viz: ref: `doc_using_multiple_threads`."
+msgstr ""
+"Další informace naleznete v dokumentu :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -57265,7 +57443,7 @@ msgid ""
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
-"To se provádí úpravou vlastností * margin * ovládacích prvků. Každý ovládací "
+"To se provádí úpravou vlastností *margin* ovládacích prvků. Každý ovládací "
 "prvek má čtyři okraje: levý, pravý, dolní a horní. Ve výchozím nastavení "
 "všechny představují vzdálenost v pixelech vzhledem k levému hornímu rohu "
 "nadřazeného ovládacího prvku nebo (v případě, že nadřazený ovládací prvek "
@@ -57326,8 +57504,8 @@ msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
 "different aspect ratios for basic multiple resolution handling in GUIs,"
 msgstr ""
-": ref: `Kotvy <doc_size_and_anchors>` jsou efektivní způsob, jak se "
-"vypořádat s různými poměry stran pro několik základních rozlišení v GUI,"
+":ref:`Kotvy <doc_size_and_anchors>` jsou efektivní způsob, jak se vypořádat "
+"s různými poměry stran pro několik základních rozlišení v GUI,"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:9
 msgid "For more complex user interfaces, they can become difficult to use."
@@ -57351,7 +57529,7 @@ msgid ""
 "<class_container>` are more useful."
 msgstr ""
 "Všechny tyto situace vyžadují mocnější uživatelské rozhraní podobné OS, s "
-"pokročilým rozvržením a formátováním. Zde jsou užitečnější: ref: `Kontejnery "
+"pokročilým rozvržením a formátováním. Zde jsou užitečnější :ref:`Kontejnery "
 "<class_container>`."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:18
@@ -57374,11 +57552,11 @@ msgid ""
 "attempt to manually alter these nodes will be either ignored or invalidated "
 "the next time their parent is resized."
 msgstr ""
-"Když je použit uzel odvozený z: ref: `Container <class_Container>`, vzdají "
-"se všechny podřízené uzly: ref: `Control <class_Control>` svých vlastních "
-"polohovacích možností. To znamená, že * Container * bude řídit jejich "
-"umístění a jakýkoliv pokus o ruční změnu těchto uzlů bude při příští změně "
-"velikosti jejich rodičů ignorován nebo zneplatněn."
+"Když je použit uzel odvozený z :ref:`Container <class_Container>`, vzdají se "
+"všechny podřízené uzly :ref:`Control <class_Control>` svých vlastních "
+"polohovacích možností. To znamená, že *Container* bude řídit jejich umístění "
+"a jakýkoliv pokus o ruční změnu těchto uzlů bude při příští změně velikosti "
+"jejich rodičů ignorován nebo zneplatněn."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:28
 msgid ""
@@ -57386,13 +57564,13 @@ msgid ""
 "be re-positioned according to it, with a behavior based on the type of "
 "container used:"
 msgstr ""
-"A podobně, jakmile se změní velikost uzlu odvozeného z * Container *, budou "
+"A podobně, jakmile se změní velikost uzlu odvozeného z *Container*, budou "
 "všechny jeho podřízené uzly přemístěny podle chování použitého typu "
 "kontejneru:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:33
 msgid "Example of *HBoxContainer* resizing children buttons."
-msgstr "Příklad toho jak * HBoxContainer * mění velikost podřízených uzlů."
+msgstr "Příklad toho jak *HBoxContainer* mění velikost podřízených uzlů."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:35
 msgid ""
@@ -57410,7 +57588,7 @@ msgid ""
 "any control that is a child of a *Container*."
 msgstr ""
 "Při přidávání uzlu do kontejneru závisí způsob, jakým kontejner zachází s "
-"tímto uzlem především na jeho příznacích tzv. * size flags *. Tyto příznaky "
+"tímto uzlem především na jeho příznacích tzv. *size flags*. Tyto příznaky "
 "lze najít pro libovolný ovládací prvek, který je podřízený kontejneru * "
 "Container * v Inspektoru."
 
@@ -57428,9 +57606,9 @@ msgid ""
 "container. No matter if a control *expands* or not (see below), it will only "
 "*fill* the designated area when this is toggled on (it is by default)."
 msgstr ""
-"** Fill**: Zajišťuje, že prvek * vyplní * určenou oblast v kontejneru. Bez "
-"ohledu na to, zda se ovládací prvek * rozšiřuje - expands * nebo ne (viz "
-"níže), * vyplní * pouze určenou oblast (ve výchozím stavu zapnuto)."
+"**Fill**: Zajišťuje, že prvek *vyplní* určenou oblast v kontejneru. Bez "
+"ohledu na to, zda se ovládací prvek *rozšiřuje - expands* nebo ne (viz "
+"níže), *vyplní* pouze určenou oblast (ve výchozím stavu zapnuto)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:49
 msgid ""
@@ -57439,19 +57617,19 @@ msgid ""
 "those that do. Between expanding controls, the amount of space they take "
 "from each other is determined by the *Ratio* (see below)."
 msgstr ""
-"** Expand **: Pokouší se využít co nejvíce místa v nadřazeném kontejneru (v "
+"**Expand**: Pokouší se využít co nejvíce místa v nadřazeném kontejneru (v "
 "každé ose). Ovládací prvky, které se nerozšiřují, budou vytlačeny těmi, "
 "které se rozšiřují. Množství prostoru, které si mezi sebou rozdělí "
-"expandující prvky je určeno vlastností * Ratio * (viz. níže)."
+"expandující prvky je určeno vlastností *Ratio* (viz. níže)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:52
 msgid ""
 "**Shrink Center** When expanding (and if not filling), try to remain at the "
 "center of the expanded area (by default it remains at the left or top)."
 msgstr ""
-"** Smršťovací centrum ** když se prvek rozšiřuje (a zároveň nevyplňuje), "
-"zkusí zůstat ve středu rozšířené oblasti (ve výchozím nastavení zůstává "
-"vlevo nebo nahoře)."
+"**Smršťovací centrum** když se prvek rozšiřuje (a zároveň nevyplňuje), zkusí "
+"zůstat ve středu rozšířené oblasti (ve výchozím nastavení zůstává vlevo nebo "
+"nahoře)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:54
 msgid ""
@@ -57459,7 +57637,7 @@ msgid ""
 "space in relation to each other. A control with \"2\", will take up twice as "
 "much available space as one with \"1\"."
 msgstr ""
-"** Ratio** Jednoduchý poměr toho, jak rozšířené ovládací prvky zabírají "
+"**Ratio** Jednoduchý poměr toho, jak rozšířené ovládací prvky zabírají "
 "dostupné místo ve vztahu k sobě navzájem. Ovládací prvek s „2“ zabírá "
 "dvakrát více z místa, které je k dispozici, než prvek s hodnotou „1“."
 
@@ -57493,7 +57671,7 @@ msgid ""
 "container), it just expands the children."
 msgstr ""
 "Uspořádá podřízené ovládací prvky vodorovně nebo svisle (prostřednictvím: "
-"ref: `HBoxContainer <class_HBoxContainer>` a: ref: `VBoxContainer "
+"ref: `HBoxContainer <class_HBoxContainer>` a :ref:`VBoxContainer "
 "<class_VBoxContainer>`). Ve směru opačném k zarovnání (tzn. ve svislém směru "
 "pro vodorovný kontejner), podřízené uzly pouze rozšiřuje."
 
@@ -57515,7 +57693,7 @@ msgid ""
 "<class_GridContainer>`, amount of columns must be specified). Uses both the "
 "vertical and horizontal expand flags."
 msgstr ""
-"Uspořádá podřízené ovládací prvky v rozvržení mřížky (prostřednictvím: ref: "
+"Uspořádá podřízené ovládací prvky v rozvržení mřížky (prostřednictvím :ref:"
 "`GridContainer <class_GridContainer>`, musí být zadáno množství sloupců). "
 "Používá příznaky vertikální i horizontální roztažení."
 
@@ -57530,7 +57708,7 @@ msgid ""
 "margins depending on the theme configuration."
 msgstr ""
 "Podřízené ovládací prvky jsou rozšířeny směrem k hranicím tohoto ovládacího "
-"prvku (prostřednictvím: ref: `MarginContainer <class_MarginContainer>`). "
+"prvku (prostřednictvím :ref:`MarginContainer <class_MarginContainer>`). "
 "Vnitřní okraje (padding) budou přidány v závislosti na konfiguraci motivu."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
@@ -57538,9 +57716,8 @@ msgid ""
 "Again, keep in mind that the margins are a *Theme* value, so they need to be "
 "edited from the constants overrides section of each control:"
 msgstr ""
-"Opět mějte na paměti, že vnější okraje(margins) jsou hodnotou * Theme *, "
-"takže je třeba je upravovat v sekci potlačení konstant každého ovládacího "
-"prvku:"
+"Opět mějte na paměti, že vnější okraje(margins) jsou hodnotou *Theme*, takže "
+"je třeba je upravovat v sekci potlačení konstant každého ovládacího prvku:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
 msgid "Tab Container"
@@ -57561,7 +57738,7 @@ msgid ""
 "Changing the *current* one is done via tabs located at the top of the "
 "container, via clicking:"
 msgstr ""
-"Změna * aktuálního * se provádí pomocí karet umístěných v horní části "
+"Změna *aktuálního* se provádí pomocí karet umístěných v horní části "
 "kontejneru kliknutím na:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:109
@@ -57570,15 +57747,15 @@ msgid ""
 "be overridden via *TabContainer* API)."
 msgstr ""
 "Názvy jsou ve výchozím nastavení generovány z názvů uzlů (i když je lze "
-"přepsat pomocí * TabContainer * API)."
+"přepsat pomocí *TabContainer* API)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:111
 msgid ""
 "Settings such as tab placement and *StyleBox* can be modified in the "
 "*TabContainer* theme overrides."
 msgstr ""
-"Nastavení, jako je umístění karet a * StyleBox *, lze změnit ve vlastnotech "
-"motivů pro * TabContainer *."
+"Nastavení, jako je umístění karet a *StyleBox*, lze změnit ve vlastnotech "
+"motivů pro *TabContainer*."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:114
 msgid "Split Container"
@@ -57659,8 +57836,7 @@ msgid ""
 "is together with a *VBoxContainer* as child."
 msgstr ""
 "Stejně jako ve výše uvedeném příkladě je jedním z nejčastějších způsobů "
-"použivání tohoto kontejneru společně podřízeným * VBoxContainer * "
-"kontejnerem."
+"použivání tohoto kontejneru společně podřízeným *VBoxContainer* kontejnerem."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:156
 msgid "ViewportContainer"
@@ -57673,8 +57849,8 @@ msgid ""
 "`ViewportContainer <class_ViewportContainer>`)."
 msgstr ""
 "Toto je speciální ovládací prvek, který přijíma jako podřízeného pouze jeden "
-"uzel * Viewport * a zobrazí jej, jako by to byl obrázek (prostřednictvím: "
-"ref: `ViewportContainer <class_ViewportContainer>`)."
+"uzel *Viewport* a zobrazí jej, jako by to byl obrázek (prostřednictvím: ref: "
+"`ViewportContainer <class_ViewportContainer>`)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
 msgid "Creating custom Containers"
@@ -66187,7 +66363,7 @@ msgstr "\"connected_to_server\""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
 msgid "``connection_failed``"
-msgstr "`` connection_failed``"
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 msgid "``server_disconnected``"
@@ -67081,7 +67257,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr "Otevřít knihovnu assetů"
+msgstr "Knihovna zdrojů (AssetLib)"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -76952,9 +77128,8 @@ msgid "Putting a start / stop timer around code of interest"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler"
-msgstr "Vytváření řadičů"
+msgstr "Použití profileru Godota"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
 msgid "Using external third party profilers"
@@ -77840,7 +78015,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:208
 msgid "For more information on threads see :ref:`doc_using_multiple_threads`."
-msgstr "Další informace o vláknech viz: ref: `doc_using_multiple_threads`."
+msgstr "Další informace o vláknech viz :ref:`doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:213
 msgid ""
@@ -84432,7 +84607,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:203
 msgid "``Tools``"
-msgstr "`` Nástroje``"
+msgstr "``Nástroje``"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:205
 msgid ""
@@ -84839,7 +85014,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
 msgid ":ref:`doc_overriding_build_options`."
-msgstr ": ref: `doc_overriding_build_options`."
+msgstr ":ref:`doc_overriding_build_options`."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -88223,7 +88398,7 @@ msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
 msgid "**Bad:** *Editor Settings*"
-msgstr "** Špatné: ** * Nastavení editoru *"
+msgstr "**Špatné:** *Nastavení editoru*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
 msgid "Inspector sections"
@@ -88448,7 +88623,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:54
 msgid "``connection``"
-msgstr "`` připojení``"
+msgstr "``připojení``"
 
 #: ../../docs/development/file_formats/tscn.rst:56
 msgid ""
@@ -88490,7 +88665,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:79
 msgid "``groups``"
-msgstr "`` skupiny``"
+msgstr "``skupiny``"
 
 #: ../../docs/development/file_formats/tscn.rst:81
 msgid ""
@@ -88774,7 +88949,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:388
 msgid "``path``"
-msgstr "`` cesta``"
+msgstr "``cesta``"
 
 #: ../../docs/development/file_formats/tscn.rst:389
 msgid "``interp``"
@@ -88804,7 +88979,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
-msgstr "`` hodnota``"
+msgstr "``hodnota``"
 
 #: ../../docs/development/file_formats/tscn.rst:400
 msgid "``method``"
@@ -88825,7 +89000,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:409
 msgid "``0`` (constant)"
-msgstr "`` 0`` (konstanta)"
+msgstr "``0`` (konstanta)"
 
 #: ../../docs/development/file_formats/tscn.rst:410
 msgid "``1`` (linear)"

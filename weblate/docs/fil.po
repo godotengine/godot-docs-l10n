@@ -4,6 +4,7 @@
 #
 # Bakainkorp <Ryan.Bautista86@myhunter.cuny.edu>, 2019.
 # Daris C. Mondigo <mondigodc@gmail.com>, 2018.
+# Jethro Parker <lionbearjet@hotmail.com>, 2020.
 # Joshua Dela Cruz <onihaegaming@gmail.com>, 2019.
 # Marco Santos <enum.scima@gmail.com>, 2019.
 # Prince Merluza <zero.bash@gmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-08-11 13:45+0200\n"
-"PO-Revision-Date: 2019-11-21 14:24+0000\n"
-"Last-Translator: Bakainkorp <Ryan.Bautista86@myhunter.cuny.edu>\n"
+"PO-Revision-Date: 2020-08-13 14:54+0000\n"
+"Last-Translator: Jethro Parker <lionbearjet@hotmail.com>\n"
 "Language-Team: Filipino <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fil/>\n"
 "Language: fil\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1 && n != 2 && n != 3 && (n % 10 == 4 "
 "|| n % 10 == 6 || n % 10 == 9);\n"
-"X-Generator: Weblate 3.10-dev\n"
+"X-Generator: Weblate 4.2-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -116,6 +117,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Ang Godot Engine ay isang open source na proyekto na binuo ng komunidad ng "
+"mga volunteer. Ang pangkat ng documentation ay maaring mangailangan ng "
+"inyong puna at tulong para mapabuti ang mga tutorial at class reference. "
+"Kung may hindi ka maintindihan, o may hindi ka mahanap sa docs, maari mo "
+"kaming tulungan na gawing mas mabuti ang documentation sa pagpapaalam sa "
+"amin!"
 
 #: ../../docs/index.rst:48
 msgid ""
@@ -135,6 +142,7 @@ msgstr ""
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
+"Ang mga documentation para sa site ay nakaayos sa mga sumusunod na bahagi:"
 
 #: ../../docs/index.rst:61
 msgid "General"
@@ -144,19 +152,19 @@ msgstr ""
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
 msgid "Getting started"
-msgstr ""
+msgstr "Magsimula"
 
 #: ../../docs/index.rst:80
 msgid "Tutorials"
-msgstr ""
+msgstr "Mga tutorial"
 
 #: ../../docs/index.rst:110
 msgid "Development"
-msgstr ""
+msgstr "Pagbuo"
 
 #: ../../docs/index.rst:121
 msgid "Community"
-msgstr ""
+msgstr "Komunidad"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
@@ -167,7 +175,7 @@ msgstr ""
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "Tungkol"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -258,6 +266,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
+"Maligayang pagdating sa opisyal na documentation ng Godot Engine, ang libre "
+"at open source na 2D at 3D engine na hinihimok ng komunidad! Matatagpuan mo "
+"dito ang isa sa mga mabisa ngunit user-friendly na kagamitan na maari mong "
+"gamitin na pang-develop ng kahit anong laro, para sa kahit anong platform na "
+"walang hadlang sa pag-gamit."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -265,10 +278,14 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
+"Ang pahina na ito ay magbibigay ng mas malawak na paglalahad ng engine at "
+"ang nilalaman ng documentation na ito upang malamak mo kung saan magsisimula "
+"kung ikaw ay baguhan or kung nangangailangan ka ng sanggunian para sa isang "
+"feature."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr ""
+msgstr "Bago ka magsimula"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -286,7 +303,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr ""
+msgstr "Tungkol sa Godot Engine"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -294,6 +311,9 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
+"Ang game engine ay isang kumplikadong bagay, kaya mahirap ipakita ang Godot "
+"sa iilang salita. Ito ang synopsis na maaari mong gamitin kung "
+"nangagailangan ka ng writeup tungkol sa Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -11331,7 +11351,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
-msgstr ""
+msgstr "Paglalarawan"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
