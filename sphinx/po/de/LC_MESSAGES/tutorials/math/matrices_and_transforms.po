@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,12 +42,20 @@ msgid ""
 "are most of the time applied as translation, rotation, and scale, so we will "
 "focus on how to represent those with matrices."
 msgstr ""
+"In dieser Anleitung geht es um *Transformationen* und wie wir sie in Godot "
+"mithilfe von Matrizen darstellen. Es ist keine ausführliche Anleitung zu "
+"Matrizen. Transformationen werden meistens als Translation, Rotation und "
+"Skalierung angewendet, daher konzentrieren wir uns darauf, wie diese mit "
+"Matrizen dargestellt werden."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:18
 msgid ""
 "Most of this guide focuses on 2D, using :ref:`class_Transform2D` and :ref:"
 "`class_Vector2`, but the way things work in 3D is very similar."
 msgstr ""
+"Der größte Teil dieses Handbuchs konzentriert sich auf 2D und verwendet :ref:"
+"`class_Transform2D` und :ref:`class_Vector2`, aber die Funktionsweise in 3D "
+"ist sehr ähnlich."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
@@ -55,6 +63,10 @@ msgid ""
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
 "schools teach linear algebra, with the Y axis pointing up."
 msgstr ""
+"Wie in der vorherigen Anleitung erwähnt, ist es wichtig sich daran zu "
+"erinnern, dass in Godot die Y-Achse in 2D *nach unten* zeigt. Dies ist das "
+"Gegenteil davon, wie die meisten Schulen lineare Algebra unterrichten, wobei "
+"die Y-Achse nach oben zeigt."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -62,10 +74,14 @@ msgid ""
 "axis is blue. This tutorial is color-coded to match these conventions, but "
 "we will also represent the origin vector with a blue color."
 msgstr ""
+"Die Konvention ist, dass die X-Achse rot ist, die Y-Achse grün und die Z-"
+"Achse blau ist. Diese Anleitung ist farbcodiert, um diesen Konventionen zu "
+"entsprechen. Wir werden jedoch auch den Ursprungsvektor mit einer blauen "
+"Farbe darstellen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:32
 msgid "Matrix components and the Identity matrix"
-msgstr ""
+msgstr "Matrixkomponenten und die Identitätsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:34
 msgid ""
@@ -73,12 +89,17 @@ msgid ""
 "and no scale. Let's start by looking at the identity matrix and how its "
 "components relate to how it visually appears."
 msgstr ""
+"Die Identitätsmatrix repräsentiert eine Transformation ohne Translation, "
+"ohne Rotation und ohne Skalierung. Betrachten wir zunächst die "
+"Identitätsmatrix und ihre Beziehung zu ihrer visuellen Darstellung."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "Matrices have rows and columns, and a transformation matrix has specific "
 "conventions on what each does."
 msgstr ""
+"Matrizen haben Zeilen und Spalten, und eine Transformationsmatrix hat "
+"spezifische Konventionen wofür jede zuständig ist."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid ""
@@ -87,6 +108,11 @@ msgid ""
 "by the second column. A change to the columns will change these vectors. We "
 "will see how they can be manipulated in the next few examples."
 msgstr ""
+"Im obigen Bild sehen wir, dass der rote X-Vektor durch die erste Spalte der "
+"Matrix dargestellt wird und der grüne Y-Vektor gleichfalls durch die zweite "
+"Spalte dargestellt wird. Durch eine Änderung der Spalten werden diese "
+"Vektoren geändert. Wir werden in den nächsten Beispielen sehen, wie sie "
+"manipuliert werden können."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:49
 msgid ""
@@ -94,6 +120,10 @@ msgid ""
 "with columns. However, you can think of the rows of the matrix as showing "
 "which vectors contribute to moving in a given direction."
 msgstr ""
+"Sie sollten sich nicht darum kümmern, Zeilen direkt zu bearbeiten, da wir "
+"normalerweise mit Spalten arbeiten. Sie können sich jedoch vorstellen, dass "
+"die Zeilen der Matrix zeigen, welche Vektoren dazu beitragen, sich in eine "
+"bestimmte Richtung zu bewegen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:53
 msgid ""
@@ -104,9 +134,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:59
-#, fuzzy
 msgid "Scaling the transformation matrix"
-msgstr "Erstellen einer Animation"
+msgstr "Skalieren einer Transformationsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:61
 msgid ""
@@ -145,9 +174,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
-#, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "Erstellen einer Animation"
+msgstr "Drehen einer Transformationsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
@@ -218,6 +246,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:156
 msgid "Here's how that would be done in code (place the script on a Node2D):"
 msgstr ""
+"So würde das im Code gemacht (platzieren Sie das Skript auf einem Node2D):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:178
 msgid ""
@@ -263,9 +292,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:208
-#, fuzzy
 msgid "Translating the transformation matrix"
-msgstr "Erstellen einer Animation"
+msgstr "Übersetzen der Transformationsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:210
 msgid ""
@@ -280,12 +308,17 @@ msgid ""
 "the identity transform like last time, except we will keep track of the "
 "origin vector this time."
 msgstr ""
+"Lassen Sie uns ein Beispiel durcharbeiten, um dies zu verstehen. Wir werden "
+"wie beim letzten Mal mit der Identitätstransformation beginnen, außer dass "
+"wir diesmal den Ursprungsvektor verfolgen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid ""
 "If we want the object to move to a position of (1, 2), we simply need to set "
 "its `origin` vector to (1, 2):"
 msgstr ""
+"Wenn sich das Objekt an eine Position von (1, 2) bewegen soll, müssen wir "
+"einfach seinen `Ursprung` auf (1, 2) setzen:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid ""
@@ -303,9 +336,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:235
-#, fuzzy
 msgid "Putting it all together"
-msgstr "Auf ein Ziel richten"
+msgstr "Fügen wir alles zusammen"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:237
 msgid ""
@@ -313,6 +345,9 @@ msgid ""
 "follow along, create a simple project with a Sprite node and use the Godot "
 "logo for the texture resource."
 msgstr ""
+"Wir werden alles, was wir bisher erwähnt haben, auf eine Transformation "
+"anwenden. Erstellen Sie anschließend ein einfaches Projekt mit einem Sprite-"
+"Node und verwenden Sie das Godot-Logo für die Texturressource."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid ""
@@ -323,7 +358,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:280
 msgid "Shearing the transformation matrix (advanced)"
-msgstr ""
+msgstr "Abschneiden der Transformationsmatrix (fortgeschritten)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:282
 msgid ""
@@ -332,6 +367,10 @@ msgid ""
 "used aspect of transformation matrices for the purpose of building an "
 "understanding of them."
 msgstr ""
+"Wenn Sie nur nach der Verwendung von Transformationsmatrizen suchen, können "
+"Sie diesen Abschnitt der Anleitung überspringen. In diesem Abschnitt wird "
+"ein ungewöhnlich verwendeter Aspekt von Transformationsmatrizen untersucht, "
+"um ein Verständnis für sie aufzubauen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
@@ -348,12 +387,18 @@ msgid ""
 "However, shearing can be useful in some situations, and understanding "
 "shearing helps you understand how transforms work."
 msgstr ""
+"Normalerweise sind die Basisvektoren immer senkrecht zueinander, in einigen "
+"Situationen kann das Abschneiden jedoch hilfreich sein. Wenn Sie das "
+"Abschneiden verstehen, wird auch verständlicher wie Transformationen "
+"funktionieren."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:297
 msgid ""
 "To show you visually how it will look, let's overlay a grid onto the Godot "
 "logo:"
 msgstr ""
+"Um Ihnen visuell zu zeigen, wie es aussehen wird, überlagern wir das Godot-"
+"Logo mit einem Raster:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:302
 msgid ""
@@ -430,7 +475,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:365
 msgid "Practical applications of transforms"
-msgstr ""
+msgstr "Praktische Anwendungen von Transformationen"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:367
 msgid ""
@@ -448,7 +493,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:376
 msgid "Converting positions between transforms"
-msgstr ""
+msgstr "Positionen zwischen Transformationen konvertieren"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:378
 msgid ""
@@ -479,7 +524,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:416
 msgid "Moving an object relative to itself"
-msgstr ""
+msgstr "Verschieben eines Objekts relativ zu sich selbst"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:418
 msgid ""
@@ -497,11 +542,12 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:426
 msgid "This code moves an object 100 units to its own right:"
-msgstr ""
+msgstr "Dieser Code verschiebt ein Objekt um 100 Einheiten nach rechts:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:439
 msgid "For moving in 3D, you would need to replace \"x\" with \"basis.x\"."
 msgstr ""
+"Um sich in 3D zu bewegen, müssten Sie \"x\" durch \"basis.x\" ersetzen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid ""
@@ -511,7 +557,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:445
 msgid "Applying transforms onto transforms"
-msgstr ""
+msgstr "Anwenden von Transformationen auf Transformationen"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:447
 msgid ""
@@ -519,6 +565,10 @@ msgid ""
 "several of them together. A parent node's transform affects all of its "
 "children. Let's dissect an example."
 msgstr ""
+"Eines der wichtigsten Dinge, die Sie über Transformationen wissen sollten "
+"ist, wie Sie mehrere davon zusammen verwenden können. Die Transformation "
+"eines übergeordneten Nodes wirkt sich auf alle untergeordneten Nodes aus. "
+"Lassen Sie uns ein Beispiel analysieren."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:451
 msgid ""
@@ -562,6 +612,8 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:532
 msgid "When multiplying matrices, order matters! Don't mix them up."
 msgstr ""
+"Beim Multiplizieren von Matrizen kommt es auf die Reihenfolge an! Verwechsle "
+"sie nicht."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:534
 msgid "Lastly, applying the identity transform will always do nothing."
@@ -576,7 +628,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:541
 msgid "Inverting a transformation matrix"
-msgstr ""
+msgstr "Invertieren einer Transformationsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:543
 msgid ""
@@ -584,12 +636,18 @@ msgid ""
 "previous transform. This can be useful in some situations, but it's easier "
 "to just provide a few examples."
 msgstr ""
+"Die Funktion \"affine_inverse\" gibt eine Transformation zurück, die die "
+"vorherige Transformation \"rückgängig macht\". Dies kann in einigen "
+"Situationen nützlich sein, einige Beispiele erläutern dies auf einfachere "
+"Weise."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:547
 msgid ""
 "Multiplying an inverse transform by the normal transform undoes all "
 "transformations:"
 msgstr ""
+"Das Multiplizieren einer inversen Transformation mit der normalen "
+"Transformation macht alle Transformationen rückgängig:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:563
 msgid ""
@@ -599,7 +657,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:582
 msgid "How does it all work in 3D?"
-msgstr ""
+msgstr "Wie funktioniert das alles in 3D?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:584
 msgid ""
@@ -652,13 +710,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:620
 msgid "Representing rotation in 3D (advanced)"
-msgstr ""
+msgstr "Darstellung der Rotation in 3D (fortgeschritten)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:622
 msgid ""
 "The biggest difference between 2D and 3D transformation matrices is how you "
 "represent rotation by itself without the basis vectors."
 msgstr ""
+"Der größte Unterschied zwischen 2D- und 3D-Transformationsmatrizen besteht "
+"darin, wie Sie die Rotation selbst ohne die Basisvektoren darstellen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:625
 msgid ""
@@ -683,17 +743,17 @@ msgid ""
 "However, if you really must know how it works, here are some great "
 "resources, which you can follow in order:"
 msgstr ""
+"Wenn Sie jedoch wirklich wissen müssen, wie es funktioniert, finden Sie hier "
+"einige großartige Ressourcen, die Sie durchgehen können:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr "`Wasser in 3D <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr "`Wasser in 3D <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"

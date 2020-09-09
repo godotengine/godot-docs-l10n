@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
-msgstr "Кросс-языковые сценарии"
+msgstr "Меж-языковые сценарии (скрипты)"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
-#, fuzzy
 msgid ""
 "Godot allows you to mix and match scripting languages to suit your needs. "
 "This means a single project can define nodes in both C# and GDScript. This "
@@ -45,7 +43,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:66
 #, fuzzy
 msgid "Instantiating nodes"
-msgstr "Инстанцирование сцен"
+msgstr "Создание экземпляров узлов"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:68
 msgid ""
@@ -58,10 +56,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:72
 #, fuzzy
 msgid "Instantiating C# nodes from GDScript"
-msgstr "Использование в GDScript"
+msgstr "Создание экземпляров узлов C# из GDScript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:74
-#, fuzzy
 msgid ""
 "Using C# from GDScript doesn't need much work. Once loaded (see :ref:"
 "`doc_gdscript_classes_as_resources`), the script can be instantiated with :"
@@ -72,30 +69,28 @@ msgstr ""
 "помощью :ref:`new() <class_CSharpScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:86
-#, fuzzy
 msgid ""
 "When creating ``.cs`` scripts, you should always keep in mind that the class "
 "Godot will use is the one named like the ``.cs`` file itself. If that class "
 "does not exist in the file, you'll see the following error: ``Invalid call. "
 "Nonexistent function `new` in base``."
 msgstr ""
-"При создании сценариев .cs вы всегда должны помнить, что класс, который "
-"будет использовать Godot, называется так же, как и сам файл .cs. Если этот "
-"класс не существует в файле, вы увидите следующую ошибку: ``Invalid call. "
-"Nonexistent function `new` in base``."
+"При создании сценариев`` .cs`` вы всегда должны помнить, что класс, который "
+"будет использовать Godot, называется так же, как и сам файл ``.cs``. Если "
+"этот класс не существует в файле, вы увидите следующую ошибку: ``Invalid "
+"call. Nonexistent function `new` in base``."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:91
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
 msgstr "Например, MyCoolNode.cs должен содержать класс с именем MyCoolNode."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:93
-#, fuzzy
 msgid ""
 "You also need to check your ``.cs`` file is referenced in the project's ``."
 "csproj`` file. Otherwise, the same error will occur."
 msgstr ""
-"Вам также необходимо проверить, что ваш файл .cs указан в файле проекта ."
-"csproj. В противном случае произойдет та же ошибка."
+"Вам также необходимо проверить, что ваш файл ``.cs`` указан в файле проекта "
+"``.csproj``. В противном случае произойдет та же ошибка."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:97
 msgid "Instantiating GDScript nodes from C#"
@@ -110,7 +105,6 @@ msgstr ""
 "создан с помощью :ref:`GDScript.New() <class_GDScript_method_new>`."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:107
-#, fuzzy
 msgid ""
 "Here we are using an :ref:`class_Object`, but you can use type conversion "
 "like explained in :ref:`doc_c_sharp_features_type_conversion_and_casting`."
@@ -134,7 +128,6 @@ msgid ""
 msgstr "Доступ к полям C# из GDScript прост, вам не о чем беспокоиться."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:128
-#, fuzzy
 msgid ""
 "Note that it doesn't matter if the field is defined as a property or an "
 "attribute. However, trying to set a value on a property that does not define "
@@ -175,15 +168,13 @@ msgstr ""
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:153
 #, fuzzy
 msgid "Calling methods"
-msgstr "Создание узлов"
+msgstr "Методы вызова"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:156
-#, fuzzy
 msgid "Calling C# methods from GDScript"
-msgstr "Использование в GDScript"
+msgstr "Вызов C# методов из GDScript"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
-#, fuzzy
 msgid ""
 "Again, calling C# methods from GDScript should be straightforward. The "
 "marshalling process will do its best to cast your the arguments to match "
@@ -200,7 +191,6 @@ msgid "Calling GDScript methods from C#"
 msgstr "Вызов методов GDScript из C#"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:176
-#, fuzzy
 msgid ""
 "To call GDScript methods from C# you'll need to use :ref:`Object.Call() "
 "<class_Object_method_call>`. The first argument is the name of the method "
@@ -211,14 +201,13 @@ msgstr ""
 "вызвать. Следующие аргументы будут переданы указанному методу."
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:198
-#, fuzzy
 msgid ""
 "As you can see, if the first argument of the called method is an array, "
 "you'll need to cast it as ``object``. Otherwise, each element of your array "
 "will be treated as a single argument and the function signature won't match."
 msgstr ""
 "Как вы можете видеть, если первый аргумент вызываемого метода является "
-"массивом, вам нужно привести его как ``object``. В противном случае каждый "
+"массивом, вам нужно привести его как ``объект``. В противном случае каждый "
 "элемент вашего массива будет рассматриваться как один аргумент, и сигнатура "
 "функции не будет совпадать."
 

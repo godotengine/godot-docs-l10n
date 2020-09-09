@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
-msgstr ""
+msgstr "Verwenden von MultiMesh-Instanzen"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
@@ -36,6 +36,15 @@ msgid ""
 "conducive to rapid iterations. :ref:`MultiMeshInstance "
 "<class_MultiMeshInstance>` is one of the possible solutions to this problem."
 msgstr ""
+"In einem normalen Szenario würden Sie einen Node :ref:`MeshInstance "
+"<class_MeshInstance>` verwenden, um ein 3D-Mesh wie ein menschliches Modell "
+"für die Hauptfigur anzuzeigen. In einigen Fällen möchten Sie jedoch mehrere "
+"Instanzen desselben Meshs in einer Szene erstellen. Sie können denselben "
+"Mesh mehrmals duplizieren und die Transformationen manuell anpassen. Dies "
+"kann ein langwieriger Prozess sein und das Ergebnis kann mechanisch "
+"aussehen. Diese Methode ist auch für schnelle Iterationen nicht förderlich. :"
+"ref:`MultiMeshInstance <class_MultiMeshInstance>` ist eine der möglichen "
+"Lösungen für dieses Problem."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
@@ -44,38 +53,53 @@ msgid ""
 "tree mesh populate a landscape mesh with trees of random scales and "
 "orientations."
 msgstr ""
+"Wie der Name schon sagt erstellt MultiMeshInstance mehrere Kopien einer "
+"MeshInstance über einer Oberfläche eines bestimmten Meshs. Ein Beispiel wäre "
+"ein Landschafts-Mesh mit Bäumen aus einem Baum-Mesh in zufälligen Maßstäben "
+"und Ausrichtungen zu füllen."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
-msgstr ""
+msgstr "Einrichten der Nodes"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
 msgstr ""
+"Die Grundeinstellung erfordert drei Nodes: den MultiMeshInstance-Node und "
+"zwei MeshInstance-Nodes."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
 msgstr ""
+"Ein Node wird als Ziel verwendet: das Mesh, auf dem Sie mehrere Meshes "
+"platzieren möchten. Im Baumbeispiel wäre dies die Landschaft."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
 msgstr ""
+"Der andere Node wird als Quelle verwendet: das Mesh, das Sie duplizieren "
+"möchten. Im Baumfall wäre dies der Baum selbst."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
 msgstr ""
+"In unserem Beispiel würden wir einen :ref:`Spatial <class_Spatial>`-Node als "
+"Wurzel-Node der Szene verwenden. Ihr Szenenbaum würde folgendermaßen "
+"aussehen:"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
 msgstr ""
+"In dieser Anleitung werden der Einfachheit halber integrierte Grundelemente "
+"verwendet."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
@@ -84,6 +108,11 @@ msgid ""
 "``View``. Click it and select *Populate surface* in the dropdown menu. A new "
 "window titled *Populate MultiMesh* will pop up."
 msgstr ""
+"Jetzt ist alles soweit vorbereitet. Wählen Sie den Node MultiMeshInstance "
+"aus und sehen Sie in der Symbolleiste eine zusätzliche Schaltfläche mit dem "
+"Namen ``MultiMesh`` neben ``Ansicht``. Klicken Sie darauf und wählen Sie im "
+"Auswahlmenü die Option *Oberfläche füllen*. Ein neues Fenster mit dem Titel "
+"*MultiMesh füllen* wird geöffnet."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
 msgid "MultiMesh settings"
@@ -91,57 +120,59 @@ msgstr "MultiMesh-Einstellungen"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
-msgstr ""
+msgstr "Nachfolgend finden Sie Beschreibungen der Optionen."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
-msgstr ""
+msgstr "Ziel-Oberfläche"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
 msgstr ""
+"Das Mesh, das als Ziel-Oberfläche für das Platzieren von Kopien Ihres Quell-"
+"Mesh verwendet wird."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
-msgstr ""
+msgstr "Quell-Mesh"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 msgid "The mesh you want duplicated on the target surface."
-msgstr ""
+msgstr "Das Mesh, das Sie auf der Ziel-Oberfläche duplizieren möchten."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:67
 msgid "Mesh Up Axis"
-msgstr ""
+msgstr "Aufwärts-Achse des Meshs"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "The axis used as the up axis of the source mesh."
-msgstr ""
+msgstr "Die Achse, die als Aufwärts-Achse des Quellen-Mesh verwendet wird."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:72
 msgid "Random Rotation"
-msgstr ""
+msgstr "Zufällige Rotation"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the rotation around the up axis of the source mesh."
-msgstr ""
+msgstr "Zufällige Drehung um die obere Achse des Quell-Mesh."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
-msgstr ""
+msgstr "Zufälliges Kippen"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:79
 msgid "Randomizing the overall rotation of the source mesh."
-msgstr ""
+msgstr "Zufällige Gesamtrotation des Quell-Mesh."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid "Random Scale"
-msgstr ""
+msgstr "Zufälliges Skalieren"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:84
 msgid "Randomizing the scale of the source mesh."
-msgstr ""
+msgstr "Zufällige Skalierung des Quell-Mesh."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
@@ -151,14 +182,15 @@ msgstr "Maßstab"
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
 msgstr ""
+"Die Skalierung des Quell-Mesh, das über der Ziel-Oberfläche platziert wird."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:92
 msgid "Amount"
-msgstr ""
+msgstr "Menge"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The amount of mesh instances placed over the target surface."
-msgstr ""
+msgstr "Die Anzahl der über der Ziel-Oberfläche platzierten Mesh-Instanzen."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:96
 msgid ""
@@ -168,12 +200,20 @@ msgid ""
 "source mesh will be placed over the target mesh. If you are satisfied with "
 "the result, you can delete the mesh instance used as the source mesh."
 msgstr ""
+"Wählen Sie die Zielfläche aus. Im Baumfall sollte dies der Landschafts-Node "
+"sein. Das Quell-Mesh sollte der Baum-Node sein. Passen Sie die anderen "
+"Parameter nach Ihren Wünschen an. Drücken Sie ``Füllen`` und mehrere Kopien "
+"des Quell-Mesh werden über dem Ziel-Mesh platziert. Wenn Sie mit dem "
+"Ergebnis zufrieden sind, können Sie die als Quell-Mesh verwendete Mesh-"
+"Instanz löschen."
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:102
 msgid "The end result should look like this:"
-msgstr ""
+msgstr "Das Endergebnis sollte folgendermaßen aussehen:"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr ""
+"Um das Ergebnis zu ändern wiederholen Sie die vorherigen Schritte mit "
+"verschiedenen Parametern."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -334,8 +334,9 @@ msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
-msgid "UV."
-msgstr "UV."
+#, fuzzy
+msgid "Texture coordinates."
+msgstr "Coordonnée suivante"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
@@ -438,8 +439,8 @@ msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr ""
-"Configure les cartes normales destinées à la 3D pour une utilisation en 2D. "
-"S'il est utilisé, remplace **NORMAL**."
+"Configure les normal maps (cartes de normales) destinées à la 3D pour une "
+"utilisation en 2D. S'il est utilisé, remplace **NORMAL**."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "inout float **NORMALMAP_DEPTH**"

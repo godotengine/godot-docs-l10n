@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:4
 msgid "Part 6"
-msgstr ""
+msgstr "Teil 6"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
 msgid "Part overview"
@@ -31,6 +31,9 @@ msgid ""
 "system for the player, and change/move the sound system so we can use it "
 "from any script."
 msgstr ""
+"In diesem Teil werden wir ein Hauptmenü und ein Pausenmenü hinzufügen, ein "
+"Respawn-System für den Player hinzufügen und das Soundsystem so ändern bzw. "
+"verschieben, dass wir es von jedem Skript aus verwenden können."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:12
 msgid ""
@@ -47,11 +50,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:19
 msgid "Let's get started!"
-msgstr ""
+msgstr "Lassen Sie uns anfangen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:22
 msgid "Adding the main menu"
-msgstr ""
+msgstr "Hauptmenü hinzufügen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:24
 msgid ""
@@ -146,7 +149,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:140
 msgid "Now let's go over ``_ready``"
-msgstr ""
+msgstr "Lassen Sie uns nun ``_ready`` durchgehen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:142
 msgid ""
@@ -270,7 +273,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:196
 msgid "Add the following to ``Globals.gd``."
-msgstr ""
+msgstr "Fügen Sie Folgendes zu ``Globals.gd`` hinzu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:211
 msgid ""
@@ -364,7 +367,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:245
 msgid "Adding the debug menu"
-msgstr ""
+msgstr "Hinzufügen des Debug-Menüs"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:247
 msgid ""
@@ -450,6 +453,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
 msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
 msgstr ""
+"``DEBUG_DISPLAY``: Die Debug-Anzeigeszene, an der wir zuvor gearbeitet haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:316
 msgid ""
@@ -540,7 +544,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:374
 msgid "Adding a pause menu"
-msgstr ""
+msgstr "Hinzufügen eines Pausenmenüs"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:376
 msgid ""
@@ -580,15 +584,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:399
 msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
-msgstr ""
+msgstr "``MAIN_MENU_PATH``: Der Pfad zur Hauptmenüszene."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:400
 msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
-msgstr ""
+msgstr "``POPUP_SCENE``: Die Pop-up-Szene, die wir uns früher angesehen haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:401
 msgid "``popup``: A variable to hold the pop up scene."
-msgstr ""
+msgstr "``popup``: Eine Variable zum Halten der Popup-Szene."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:403
 msgid ""
@@ -598,7 +602,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:424
 msgid "Let's go over what's happening here."
-msgstr ""
+msgstr "Lassen Sie uns noch einmal durchgehen was hier passiert."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:428
 msgid ""
@@ -664,12 +668,16 @@ msgstr ""
 msgid ""
 "``popup_closed`` will resume the game and destroy the pop-up if there is one."
 msgstr ""
+"``popup_closed`` setzt das Spiel fort und zerstört das Popup, falls es eines "
+"gibt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:464
 msgid ""
 "``popup_quit`` is similar, but we're also making sure the mouse is visible "
 "and changing scenes to the title screen."
 msgstr ""
+"``popup_quit`` ist ähnlich, aber wir stellen auch sicher, dass die Maus "
+"sichtbar ist und ändern Szenen auf den Titelbildschirm."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:481
 msgid ""
@@ -696,7 +704,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:501
 msgid "You will leave only:"
-msgstr ""
+msgstr "Sie werden nur übrig lassen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:509
 msgid ""
@@ -739,6 +747,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:526
 msgid "Open up ``Player.gd`` and add the following class variables:"
 msgstr ""
+"Öffnen Sie ``Player.gd`` und fügen Sie die folgenden Klassenvariablen hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
@@ -747,15 +756,19 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:537
 msgid "``dead_time``: A variable to track how long the player has been dead."
 msgstr ""
+"``dead_time``: Eine Variable um zu verfolgen, wie lange der Spieler tot war."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:538
 msgid ""
 "``is_dead``: A variable to track whether or not the player is currently dead."
 msgstr ""
+"``is_dead``: Eine Variable um zu verfolgen, ob der Spieler gerade tot ist "
+"oder nicht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:539
 msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
 msgstr ""
+"``globals``: Eine Variable um das ``Globals.gd`` Singleton aufzunehmen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:543
 msgid ""
@@ -1169,7 +1182,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
-msgstr ""
+msgstr "``SIMPLE_AUDIO_PLAYER_SCENE``: Die einfache Audio-Player-Szene."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:909
 msgid ""
@@ -1303,7 +1316,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
 msgid "Final notes"
-msgstr ""
+msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
 msgid "Now you have a fully working single player FPS!"
@@ -1317,6 +1330,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
+"Wenn Sie jemals die Orientierung verlieren, lesen Sie den Code unbedingt "
+"noch einmal durch!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1006
 msgid ""

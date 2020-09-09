@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Exportieren für das Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
@@ -120,7 +120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:64
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "Aufnahme des gesamten Bildschirms und der Maus"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:66
 msgid ""
@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:87
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ""
+msgstr ":ref:`class_HTTPClient` und :ref:`class_HTTPRequest`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:89
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
@@ -166,34 +166,40 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "Der Zugriff auf den ``StreamPeer`` ist nicht möglich"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid "Threaded/Blocking mode is not available"
-msgstr ""
+msgstr "Threaded/Blocking-Modus ist nicht verfügbar"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
+"Der Fortschritt kann nicht mehr als einmal pro Frame ausgeführt werden, "
+"sodass die Abfrage in einer Schleife einfriert"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
+#, fuzzy
 msgid "No chunked responses"
-msgstr ""
+msgstr "Keine verteilten Antworten"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "Die Host-Verifizierung kann nicht deaktiviert werden"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#, fuzzy
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
 msgstr ""
+"Vorbehaltlich der `same-origin policy <https://developer.mozilla.org/en-US/"
+"docs/Web/Security/Same-origin_policy>`__"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "Exportierte ``.html`` Datei darf nicht wiederverwendet werden"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
@@ -216,9 +222,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
-#, fuzzy
 msgid "Shader language limitations"
-msgstr "Kamera-Animation"
+msgstr "Einschränkungen der Shader-Sprache"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:114
 msgid ""
@@ -237,7 +242,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid "Threads"
-msgstr ""
+msgstr "Threads"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 msgid "GDNative"
@@ -256,6 +261,7 @@ msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
+"andere Netzwerke als :ref:`class_HTTPClient` and :ref:`class_WebSocketClient`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
@@ -332,6 +338,10 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"Wenn eine ausführbare Web-Exportvorlage verfügbar ist, wird im Editor eine "
+"Schaltfläche zwischen den Schaltflächen *Szene stoppen* und *Bearbeitete "
+"Szene abspielen* angezeigt, um das Spiel schnell im Standardbrowser zum "
+"Testen zu öffnen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:176
 msgid ""
@@ -348,7 +358,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "Aufruf von JavaScript aus dem Skript"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:188
 msgid ""
@@ -358,16 +368,24 @@ msgid ""
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
+"In Webbuilds ist der JavaScript-Singleton implementiert. Es bietet eine "
+"einzige Methode namens \"eval\", die ähnlich wie die gleichnamige JavaScript-"
+"Funktion funktioniert. Es nimmt eine Zeichenfolge als Argument und führt sie "
+"als JavaScript-Code aus. Dies ermöglicht die Interaktion mit dem Browser auf "
+"eine Weise, die mit in Godot integrierten Skriptsprachen nicht möglich ist."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"Der Wert der letzten JavaScript-Anweisung wird in einen GDScript-Wert "
+"konvertiert und unter bestimmten Umständen von `` eval () `` zurückgegeben:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
+"JavaScript `` Nummer`` wird als GDScript zurückgegeben: ref: `class_float`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"

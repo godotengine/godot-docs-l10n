@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -428,7 +428,8 @@ msgstr ""
 "型ヒントを、コロンで追加したりキャストしたり\\ **しないで**\\ ください:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:301
-msgid "**Do** write constants variables with dynamic typing:"
+#, fuzzy
+msgid "**Do** write constants and variables with dynamic typing:"
 msgstr "動的型付けを\\ **使用して**\\ 定数変数を記述します:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:311
@@ -745,21 +746,30 @@ msgstr ""
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:520
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
-"button or option, use a 2 pixel thick outline without a bevel."
+"button or option, use a 2 pixel-thick yellow outline without a bevel. If the "
+"outline is on a dark background, the outline should be yellow so it can be "
+"easily seen by colorblind people. Please do not use red as it won't be "
+"visible for some users."
 msgstr ""
-"ボタンやオプションなど、何かを表示するためにエディタの領域を強調表示する必要"
-"がある場合は、ベベルのない2ピクセルの太さのアウトラインを使用します。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:523
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:526
+#, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
-"run through a PNG compressor to save size. The built in lossless compressor "
-"in programs like Krita or Photoshop should be enough. For heavier images, "
-"also look into using a lossy compressor, such as `pngquant <https://pngquant."
-"org/>`_ where almost no image quality is lost during compression."
+"run through a PNG compressor to save size. You can use the lossless OxiPNG "
+"compressor included in `Squoosh <https://squoosh.app/>`__ for this purpose. "
+"For heavier images, consider using a lossy compressor like `pngquant "
+"<https://pngquant.org/>`_. With it, almost no image quality is lost during "
+"compression."
 msgstr ""
 "ドキュメントで画像を追加または置換する前に、サイズを節約するためにPNGコンプ"
 "レッサーを介して画像を実行する必要があります。 KritaやPhotoshopなどのプログラ"
 "ムに組み込まれたロスレスコンプレッサーで十分です。より重い画像については、圧"
 "縮中に画像品質がほとんど失われない `pngquant <https://pngquant.org/>`_ などの"
 "損失の多いコンプレッサーの使用も検討してください。"
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:535
+msgid ""
+"The program pngquant must be installed locally as it's not available in "
+"Squoosh."
+msgstr ""

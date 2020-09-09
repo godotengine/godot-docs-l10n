@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,11 +180,11 @@ msgstr ""
 "使用Git <doc_getting_source>`获取Godot的源代码。完成此操作后，在终端窗口中，"
 "使用cd进入Godot存储库文件夹并输入以下命令："
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:102
+#: ../../docs/community/contributing/bisecting_regressions.rst:104
 msgid "Compile Godot. This assumes you've set up a build environment:"
 msgstr "编译Godot。这假定您已设置一个生成环境："
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:110
+#: ../../docs/community/contributing/bisecting_regressions.rst:112
 msgid ""
 "Since building Godot takes a while, you want to dedicate as many CPU threads "
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
@@ -193,20 +193,20 @@ msgstr ""
 "由于构建Godot需要一些时间，因此您希望为任务分配尽可能多的CPU线程。这就是-j参"
 "数的作用。在此，该命令分配4个CPU线程来编译Godot。"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:114
+#: ../../docs/community/contributing/bisecting_regressions.rst:116
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
 msgstr "运行位于``bin /``文件夹中的二进制文件并尝试重现该错误。"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:116
+#: ../../docs/community/contributing/bisecting_regressions.rst:118
 msgid "If the build **still** exhibits the bug, run the following command:"
 msgstr "如果构建“仍然”显示错误，请运行以下命令："
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:122
+#: ../../docs/community/contributing/bisecting_regressions.rst:124
 msgid "If the build **does not** exhibit the bug, run the following command:"
 msgstr "如果构建**没有**显示错误，请运行以下命令："
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:128
+#: ../../docs/community/contributing/bisecting_regressions.rst:130
 msgid ""
 "After entering one of the commands above, Git will switch to a different "
 "commit. You should now build Godot again, try to reproduce the bug, then "
@@ -221,7 +221,7 @@ msgstr ""
 "交范围越长，所需的步骤就越多。5 到 10 个步骤通常足以查找大多数回归;Git 将提醒"
 "您剩余步骤数（在最坏的情况下）。"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:135
+#: ../../docs/community/contributing/bisecting_regressions.rst:137
 msgid ""
 "Once you've completed enough steps, Git will display the commit hash where "
 "the regression appeared. Write this commit hash as a comment to the GitHub "
@@ -231,7 +231,7 @@ msgstr ""
 "完成足够的步骤后，Git将在出现回归的位置显示提交哈希。将此提交哈希值写成对一分"
 "为二的GitHub问题的评论。这将有助于解决问题。再次感谢您对Godot的贡献：）"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:142
+#: ../../docs/community/contributing/bisecting_regressions.rst:144
 msgid ""
 "You can read the full documentation on ``git bisect`` `here <https://git-scm."
 "com/docs/git-bisect>`__."

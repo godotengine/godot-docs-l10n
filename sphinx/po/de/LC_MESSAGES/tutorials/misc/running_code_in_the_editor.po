@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Code im Editor ausführen"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:7
 msgid "What is ``tool``?"
-msgstr ""
+msgstr "Was ist ``tool``?"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:9
 msgid ""
@@ -31,6 +31,10 @@ msgid ""
 "script, makes it execute in the editor. You can also decide which parts of "
 "the script execute in the editor, which in game, and which in both."
 msgstr ""
+"``tool`` ist eine leistungsstarke Codezeile, die im Editor ausgeführt wird, "
+"wenn man sie oben im Skript hinzufügt. Sie können auch entscheiden, welche "
+"Teile des Skripts im Editor ausgeführt werden, welche im Spiel und welche in "
+"beiden."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:11
 msgid ""
@@ -38,6 +42,9 @@ msgid ""
 "design for visually presenting things that are hard to predict ourselves. "
 "Here are some use cases:"
 msgstr ""
+"Sie können es für viele Dinge verwenden, aber es ist vor allem im Level-"
+"Design nützlich, um Dinge visuell darzustellen, die selbst schwer "
+"vorherzusagen sind. Hier sind einige Anwendungsfälle:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
 msgid ""
@@ -45,6 +52,9 @@ msgid ""
 "you can draw the cannonball's trajectory in the editor, making level design "
 "a lot easier."
 msgstr ""
+"Wenn Sie eine Kanone haben, die physikalisch (Schwerkraft) korrekte "
+"Kanonenkugeln abschießt, können Sie die Flugbahn der Kanonenkugel im Editor "
+"zeichnen, was das Level-Design erheblich vereinfacht."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:14
 msgid ""
@@ -52,12 +62,18 @@ msgid ""
 "jump height a player would reach if it jumped on one, also making level "
 "design easier."
 msgstr ""
+"Wenn Sie auf Ihrem Joypad Sprungtasten mit unterschiedlichen Sprunghöhen "
+"haben, können Sie die maximale Sprunghöhe zeichnen die ein Spieler erreichen "
+"würde, was auch das Level-Design erleichtert."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:15
 msgid ""
 "If your player doesn't use a sprite, but draws itself using code, you can "
 "make that drawing code execute in the editor to see your player."
 msgstr ""
+"Wenn Ihr Spieler kein Sprite verwendet, sondern durch Code gezeichnet wird, "
+"können Sie diesen Zeichencode im Editor ausführen lassen, um Ihren Spieler "
+"anzuzeigen."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:19
 msgid ""
@@ -72,93 +88,120 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:28
 msgid "How to use it"
-msgstr ""
+msgstr "Wie man es benutzt"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:30
 msgid ""
 "To turn a script into a tool, add the keyword ``tool`` at the top of your "
 "code."
 msgstr ""
+"Um ein Skript in ein Tool zu verwandeln, fügen Sie das Schlüsselwort "
+"``tool`` oben in Ihren Code ein."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "To check if you are currently in the editor, use: ``Engine.editor_hint``."
 msgstr ""
+"Um zu überprüfen ob Sie sich gerade im Editor befinden, verwenden Sie: "
+"``Engine.editor_hint``."
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:34
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr ""
+"Wenn Sie beispielsweise Code nur im Editor ausführen möchten, verwenden Sie:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:49
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
 msgstr ""
+"Wenn Sie dagegen Code nur im Spiel ausführen möchten, negieren Sie einfach "
+"dieselbe Aussage:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:64
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
 "editor and in-game."
 msgstr ""
+"Code-Teile, die keine der beiden oben genannten Bedingungen haben, werden "
+"sowohl im Editor als auch im Spiel ausgeführt."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
-#, fuzzy
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "Hier sieht man wie eine ``_process()`` Funktion aussehen könnte:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:97
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
 "when we remove the script, the node will keep its rotation. Be careful to "
 "avoid making unwanted modifications."
 msgstr ""
+"Änderungen im Editor sind dauerhaft. Wenn wir beispielsweise im folgenden "
+"Fall das Skript entfernen, behält der Node seine Rotation bei. Vermeiden Sie "
+"unerwünschte Änderungen."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:100
 msgid "Try it out"
-msgstr "Probier es aus"
+msgstr "Probieren Sie es aus"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
 msgstr ""
+"Fügen Sie Ihrer Szene einen ``Sprite``-Node hinzu und setzen Sie die Textur "
+"auf das Godot-Symbol. Hängen Sie ein Skript an, öffnen Sie es und ändern Sie "
+"es in Folgendes:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:127
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
+"Speichern Sie das Skript und kehren Sie zum Editor zurück. Sie sollten jetzt "
+"sehen wie sich Ihr Objekt dreht. Wenn Sie das Spiel ausführen dreht es sich "
+"ebenfalls."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:131
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
+"Wenn Sie die Änderungen nicht sehen, laden Sie die Szene neu (schließen Sie "
+"sie und öffnen sie erneut)."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:133
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr ""
+"Wählen wir nun aus welcher Code wann ausgeführt wird. Ändern Sie Ihre "
+"``_process () `` Funktion so ab:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:158
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
 msgstr ""
+"Speichern Sie das Skript. Jetzt dreht sich das Objekt im Editor im "
+"Uhrzeigersinn, aber wenn Sie das Spiel ausführen, dreht es sich gegen den "
+"Uhrzeigersinn."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
-#, fuzzy
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
 msgid "Editing variables"
-msgstr "Instanzen bearbeiten"
+msgstr "Variablen bearbeiten"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
 "Add and export a variable speed to the script. The function set_speed after "
 "\"setget\" is executed with your input to change the variable. Modify  "
 "``_process()`` to include the rotation speed."
 msgstr ""
+"Fügen Sie dem Skript eine variable Geschwindigkeit hinzu und exportieren Sie "
+"sie. Die Funktion set_speed nach \"setget\" wird mit Ihrer Eingabe "
+"ausgeführt um die Variable zu ändern. Ändern Sie ``_process()`` um die "
+"Drehzahl aufzunehmen."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:213
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -166,28 +209,38 @@ msgid ""
 "to run in the editor too. AutoLoad nodes cannot be accessed in the editor at "
 "all."
 msgstr ""
+"Code von anderen Nodes wird nicht im Editor ausgeführt. Ihr Zugriff auf "
+"andere Nodes ist eingeschränkt, Sie können damit auf den Baum und die Nodes "
+"sowie deren Standardeigenschaften zugreifen, jedoch nicht auf "
+"Benutzervariablen. Wenn Sie dies möchten, müssen auch andere Nodes im Editor "
+"ausgeführt werden. Auf AutoLoad-Nodes kann im Editor überhaupt nicht "
+"zugegriffen werden."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:216
 msgid "Instancing scenes"
 msgstr "Szenen in­s­tan­zi­ie­ren"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:218
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "
 "currently opened in the editor. Be sure to set the scene root as the owner "
 "of all the nodes created this way or the nodes won't be visible in the "
 "editor."
 msgstr ""
+"Sie können gepackte Szenen normal instanziieren und zu der aktuell im Editor "
+"geöffneten Szene hinzufügen. Stellen Sie sicher, dass Sie die Szenenwurzel "
+"als Eigentümer aller auf diese Weise erstellten Nodes festlegen, da sonst "
+"die Nodes im Editor nicht sichtbar sind."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:220
 msgid "If you are using ``tool``:"
-msgstr ""
+msgstr "Wenn Sie ``tool`` verwenden:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:239
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
-msgstr ""
+msgstr "Wenn Sie :ref:`EditorScript <class_EditorScript>` verwenden:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:260
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Introdução ao desenvolvimento do Godot"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -27,10 +27,13 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"Esta página tem como objetivo apresentar a organização global do código "
+"fonte do Godot Engine, e fornecer dicas úteis para expandir/corrigir a "
+"engine no lado do código C++."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagrama de Arquitetura"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -38,10 +41,13 @@ msgid ""
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"O diagrama a seguir descreve a arquitetura usada pelo Godot, desde os "
+"componentes principais até os drivers abstratos, por meio da estrutura da "
+"cena e dos servidores."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "Depurando o Editor com gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -52,7 +58,13 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Se você está escrevendo ou corrigindo bugs que afetam o editor do Godot "
+"Engine, lembre-se que o binário por padrão vai executar primeiro o "
+"gerenciador de projetos, e então o editor é apenas executado em outro "
+"processo quando você selecionar um projeto. Para executar um projeto "
+"diretamente, você precisa executar o binário do Godot Engine utilizado o "
+"argumento ``-e`` a partir do diretório do seu projeto. Tipicamente:"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "Ou:"

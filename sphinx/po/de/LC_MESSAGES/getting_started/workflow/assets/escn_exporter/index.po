@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
-msgstr ""
+msgstr "Blender ESCN Exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"Dieses Kapitel bezieht sich auf das Blender-Plugin \"Godot Blender Exporter"
+"\", das hier heruntergeladen werden kann: https://github.com/godotengine/"
+"godot-blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
 msgid ""
@@ -34,14 +37,18 @@ msgid ""
 "format called ESCN, which is similar to TSCN (text format) but will be "
 "imported as binary SCN for performance."
 msgstr ""
+"Dieses Plugin kann zum Exportieren von Blender-Szenen in ein Godot-"
+"spezifisches Szenenformat namens ESCN verwendet werden, das TSCN "
+"(Textformat) ähnelt, jedoch aus Gründen der Leistung als binäres SCN "
+"importiert wird."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
-msgstr ""
+msgstr "Details zum Exportieren"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "Bestimmte Objekte deaktivieren"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -49,16 +56,22 @@ msgid ""
 "for baking). An object will not be exported if it is not rendered in the "
 "scene. This can be set in the outliner:"
 msgstr ""
+"Manchmal möchten Sie nicht, dass einige Objekte exportiert werden (z.B. "
+"hochauflösende Modelle zum brennen). Ein Objekt wird nicht exportiert, wenn "
+"es nicht in der Szene gerendert wird. Dies kann im Outliner eingestellt "
+"werden:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Im Ansichtsfenster ausgeblendete Objekte werden exportiert, jedoch in der "
+"Godot-Szene ausgeblendet."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"
-msgstr ""
+msgstr "Eine Pipeline-Integration erstellen"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 msgid ""

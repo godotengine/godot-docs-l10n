@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "Организация проекта"
+msgstr "Организация сцены"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -28,18 +27,25 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"Эта статья охватывает темы связанные с эффективной организацией содержания "
+"сцены. Какие узлы вам стоит использовать? Как их стоит располагать? Как они "
+"должны взаимодействовать?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
+#, fuzzy
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "Как эффективно строить отношения"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
 msgstr ""
+"Когда пользователи Godot начинают создавать собственные сцены, они часто "
+"приходят к подобной проблеме:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
+#, fuzzy
 msgid ""
 "They create their first scene and fill it with content only to eventually "
 "end up saving branches of their scene into separate scenes as the nagging "
@@ -49,6 +55,14 @@ msgid ""
 "because the node paths do not find their targets and signal connections "
 "established in the editor break."
 msgstr ""
+"Они создают свою первую сцену и наполняют её содержанием только для того, "
+"чтобы со временем остановиться на том, что сохраняют ветви своей сцены в "
+"отдельные сцены только из-за того, что у них начинает накапливаться ноющее "
+"чувство насчет разделения чего-нибудь из содержания на части. Однако, потом "
+"они замечают что сложные ссылки на которые они могли полагаться раньше "
+"больше не возможны. Пере-использование сцены в нескольких местах создает "
+"проблему потому что пути узлов не находят свои цели и сигнальные связи, "
+"которые установились в редакторе, ломаются."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -57,29 +71,48 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"Чтобы исправить эти проблемы, необходимо создать экземпляры подсцены, не "
+"требуя подробностей об их среде. Нужно быть уверенным в том, что подсцена "
+"создаст сама себя, не придавая значения тому, как её использовать."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
+#, fuzzy
 msgid ""
 "One of the biggest things to consider in OOP is maintaining focused, "
 "singular-purpose classes with `loose coupling <https://en.wikipedia.org/wiki/"
 "Loose_coupling>`_ to other parts of the codebase. This keeps the size of "
 "objects small (for maintainability) and improves their reusability."
 msgstr ""
+"Одна из важнейших вещей для рассмотрения в ООП это сфокусированные на "
+"поддержке, классы с единственной целью с `слабой связью <https://ru."
+"wikipedia.org/wiki/%D0%97%D0%B0%D1%86%D0%B5%D0%BF%D0%BB%D0%B5%D0%BD"
+"%D0%B8%D0%B5_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC"
+"%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)>`_ с другими частями "
+"кодовой базы. Это оставляет размер объектов маленьким (для поддержки) и "
+"улучшает их возможности повторного использования."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:35
+#, fuzzy
 msgid ""
 "These OOP best practices have *several* implications for best practices in "
 "scene structure and script usage."
 msgstr ""
+"Эти лучшие порядки ООП имеют *некоторые* пересечения с лучшими порядками в "
+"структуре сцены и использовании сценариев (скриптов)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:38
+#, fuzzy
 msgid ""
 "**If at all possible, one should design scenes to have no dependencies.** "
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**Если в целом это возможно, вам стоит создавать сцены так чтобы они не "
+"имели зависимостей.** То есть, вам стоит создавать сцены которые содержат "
+"все что им нужно в пределах самих себя."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:42
+#, fuzzy
 msgid ""
 "If a scene must interact with an external context, experienced developers "
 "recommend the use of `Dependency Injection <https://en.wikipedia.org/wiki/"
@@ -88,52 +121,84 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"Если сцена должна взаимодействовать с внешним содержанием, опытные "
+"разработчики рекомендуют использовать `Внедрение Зависимости <https://ru."
+"wikipedia.org/wiki/%D0%92%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5_"
+"%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8>`_. Эта "
+"техника включает в себя наличие высокоуровневого API, который предоставит "
+"зависимости для низкоуровневого API. Почему так стоит делать? Потому что "
+"классы которые полагаются на внешнее окружение могут ненароком вызвать баги "
+"и неожиданное поведение."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:49
+#, fuzzy
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
 msgstr ""
+"Чтобы это сделать, вам стоит раскрыть данные и затем положиться на "
+"родительскую связь чтобы все это инициализировать:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
+#, fuzzy
 msgid ""
 "Connect to a signal. Extremely safe, but should be used only to \"respond\" "
 "to behavior, not start it. Note that signal names are usually past-tense "
 "verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"Подключитесь к сигналу. Очень безопасно, но стоит использовать только для "
+"\"ответа\" на поведение, не для его запуска. Имейте ввиду что названия "
+"сигналов обычно глаголы в прошедшем времени, вроде \"entered\" (\"вошел\"), "
+"\"skill_activated\"(\"способность_активирована\"), или \"item_collected"
+"\"(предмет_получен)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:73
+#, fuzzy
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "Вызовите метод. Используется для старта поведения."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:92
+#, fuzzy
 msgid ""
 "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
 "ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
+"Инициализируйте свойство :ref:`FuncRef <class_FuncRef>`. Безопасней чем "
+"метод так как владение методом не требуется. Используется для старта "
+"поведения."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:112
+#, fuzzy
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "Инициализируйте Узел или другую ссылку Объекта."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:131
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "Инициализируйте NodePath (\"Путь узла\")."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
+#, fuzzy
 msgid ""
 "These options hide the points of access from the child node. This in turn "
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"Эти опции прячут точки доступа от узла-ребенка. Этот ход оставляет ребенка "
+"**слабо связанным** со своим окружением. Вы можете использовать это в другом "
+"контексте без дополнительных изменений в его API."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:156
+#, fuzzy
 msgid ""
 "Although the examples above illustrate parent-child relationships, the same "
 "principles apply towards all object relations. Nodes which are siblings "
 "should only be aware of their hierarchies while an ancestor mediates their "
 "communications and references."
 msgstr ""
+"Хотя примеры выше иллюстрируют отношения родитель-ребенок, идентичные "
+"принципы применимы ко всем связям объектов. Узлы которые являются братьями и "
+"сестрами должны знать свои иерархии только когда предок посредничает в их "
+"коммуникациях и ссылках."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:203
 msgid ""
@@ -141,6 +206,9 @@ msgid ""
 "dependencies on other objects. Whichever object actually owns the objects "
 "should manage the relationships between them."
 msgstr ""
+"Те же принципы применимы и к объектам, не относящимся к Node, которые "
+"поддерживают зависимости от других объектов. Какому бы объекту ни "
+"принадлежали объекты, он должен управлять отношениями между ними."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:209
 msgid ""
@@ -153,6 +221,16 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
+"Следует отдавать предпочтение хранению данных внутри дома (внутри сцены), "
+"хотя, поскольку установка зависимости от внешнего контекста, даже "
+"слабосвязанного, по-прежнему означает, что узел будет ожидать, что что-то в "
+"его среде будет истинным. Философия дизайна проекта должна предотвратить "
+"это. В противном случае присущие коду обязательства заставят разработчиков "
+"использовать документацию для отслеживания объектных отношений в "
+"микроскопическом масштабе; это иначе известно как `Производственный ад "
+"<https://ru.wikipedia.org/wiki/Производственный_ад>`_. Написание кода, "
+"который полагается на внешнюю документацию для его безопасного "
+"использования, по умолчанию подвержено ошибкам."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:218
 msgid ""
@@ -167,6 +245,17 @@ msgid ""
 "then self-documents the scene through the script code. No content "
 "duplication via documentation is necessary."
 msgstr ""
+"Чтобы избежать создания и поддержки такой документации, нужно преобразовать "
+"зависимый узел (\"дочерний\" выше) в инструментальный скрипт, который "
+"реализует :ref:`_get_configuration_warning() "
+"<class_Node_method__get_configuration_warning>`. Возврат из него непустой "
+"строки заставит док-станцию Scene сгенерировать значок предупреждения со "
+"строкой в качестве всплывающей подсказки для узла. Это тот же значок, "
+"который отображается для таких узлов, как узел :ref:`Area2D <class_Area2D>`, "
+"когда он не имеет дочерних узлов: :ref:`CollisionShape2D "
+"<class_CollisionShape2D>`, определенных. Затем редактор самостоятельно "
+"документирует сцену с помощью кода сценария. Никакого дублирования контента "
+"через документацию не требуется."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:229
 msgid ""
@@ -176,6 +265,11 @@ msgid ""
 "will need clear instructions in the messages telling them what to do to "
 "configure it."
 msgstr ""
+"Подобный графический интерфейс может лучше информировать пользователей "
+"проекта о важной информации об узлах. Есть ли у него внешние зависимости? "
+"Удовлетворены ли эти зависимости? Другим программистам, особенно дизайнерам "
+"и писателям, потребуются чёткие инструкции в сообщениях, говорящие им, что "
+"делать, чтобы настроить его."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:234
 msgid ""
@@ -188,12 +282,23 @@ msgid ""
 "indirection is to avoid ending up in a situation where changing one class "
 "results in adversely effecting other classes."
 msgstr ""
+"Итак, почему всё это сложное переключение работает? Ну, потому что сцены "
+"работают лучше всего, когда они работают в одиночку. Если вы не можете "
+"работать в одиночку, то лучше всего будет работать с другими анонимно (с "
+"минимальными жёсткими зависимостями, т.е. слабой связью). Неизбежно может "
+"потребоваться внести изменения в класс, и если эти изменения заставят его "
+"непредвиденным образом взаимодействовать с другими сценами, то все начнёт "
+"ломаться. Весь смысл всего этого косвенного обращения состоит в том, чтобы "
+"избежать ситуации, когда изменение одного класса приводит к неблагоприятному "
+"воздействию на другие классы."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
 msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"Скрипты и сцены, как расширения классов движков, должны соответствовать "
+"*всем* принципам ООП. Примеры включают..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
@@ -225,6 +330,12 @@ msgid ""
 "But, for those who are unsure, this helpful guide can give them a sample of "
 "a decent structure to start with."
 msgstr ""
+"Итак, разработчик начинает работу над игрой только для того, чтобы "
+"остановиться на огромных возможностях, которые перед ним открываются. Он "
+"может знать, что он хочет делать, какие системы он хочет иметь, но где их "
+"все разместить? Что ж, как делать свою игру, всегда зависит от него. Дерево "
+"узлов можно построить множеством способов. Но для тех, кто не уверен, это "
+"полезное руководство может дать им образец достойной структуры для начала."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
 msgid ""
@@ -235,17 +346,23 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
+"В игре всегда должна быть своего рода \"точка входа\"; где-то разработчик "
+"может окончательно отследить, где что-то начинается, чтобы он мог следовать "
+"логике, как она продолжается в другом месте. Это место также служит для "
+"обзора всех остальных данных и логики программы с высоты птичьего полета. "
+"Для традиционных приложений это будет \"главная\" функция. В данном случае "
+"это будет главный узел (Main)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Узел \"Main\" (main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:269
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
-msgstr ""
+msgstr "Сценарий ``main.gd`` будет тогда служить основным контроллером игры."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:272
 msgid ""
@@ -253,6 +370,10 @@ msgid ""
 "child of Main. In addition, one will need a primary GUI for their game that "
 "manages the various menus and widgets the project needs."
 msgstr ""
+"Затем есть свой настоящий игровой \"Мир\" (World) (2D или 3D). Это может "
+"быть дочерний элемент Main. Кроме того, для игры потребуется основной "
+"графический интерфейс, который управляет различными меню и виджетами, "
+"которые необходимы проекту."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
@@ -260,7 +381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Управление \"GUI\" (gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:280
 msgid ""
@@ -308,6 +429,11 @@ msgid ""
 "content. This structure more or less keeps the \"World\" as the main game "
 "node."
 msgstr ""
+"Для небольших игр более простой альтернативой с меньшим контролем было бы "
+"иметь синглтон \"Game\", который просто вызывает метод :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` для замены содержимого "
+"основной сцены. Эта структура более или менее сохраняет \"World\" как "
+"главный игровой узел."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
 msgid ""
@@ -315,6 +441,10 @@ msgid ""
 "\"World\"; or be manually added as a direct child of the root. Otherwise, "
 "the GUI nodes would also delete themselves during scene transitions."
 msgstr ""
+"Любой графический интерфейс также должен быть одноэлементным; быть "
+"преходящей частью \"World\"; или быть добавленным вручную как прямой потомок "
+"корня. В противном случае узлы GUI также удалялись бы при переходе между "
+"сценами."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
 msgid ""
@@ -323,6 +453,11 @@ msgid ""
 "on the reasons, please see the :ref:`'Autoloads vs. Internal Nodes' "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
+"Если у вас есть системы, которые изменяют данные других систем, следует "
+"определять их как свои собственные сценарии или сцены, а не как "
+"автозагрузки. Дополнительные сведения о причинах см. в документации :ref: "
+"`'Автозагрузки против внутренних узлов' "
+"<doc_autoloads_versus_internal_nodes>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:312
 msgid ""
@@ -333,6 +468,12 @@ msgid ""
 "should have its own place in the hierarchy as a sibling or some other "
 "relation."
 msgstr ""
+"Каждая подсистема в игре должна иметь свой собственный раздел в SceneTree "
+"(дерево сцены). Отношения родитель-потомок следует использовать только в тех "
+"случаях, когда узлы фактически являются элементами своих родителей. Означает "
+"ли удаление родителя разумно, что нужно удалить и детей? Если нет, то он "
+"должен иметь свое собственное место в иерархии в качестве родного брата или "
+"другого родственника."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:320
 msgid ""
@@ -344,17 +485,28 @@ msgid ""
 "node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of "
 "the following:"
 msgstr ""
+"В некоторых случаях требуется, чтобы эти отдельные узлы *также* "
+"располагались относительно друг друга. Для этой цели можно использовать "
+"узлы :ref:`RemoteTransform <class_RemoteTransform>` / :ref:"
+"`RemoteTransform2D <class_RemoteTransform2D>`. Они позволят целевому узлу "
+"условно наследовать выбранные элементы преобразования из удалённого узла. "
+"Чтобы назначить ``цель`` :ref:`NodePath <class_NodePath>`, используйте одно "
+"из следующего:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:328
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
 msgstr ""
+"Надёжная третья сторона, вероятно, родительский узел, для посредничества при "
+"назначении."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:329
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
 msgstr ""
+"Группа, чтобы легко получить ссылку на желаемый узел (при условии, что когда-"
+"либо будет только одна из целей)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
 msgid ""
@@ -362,45 +514,53 @@ msgid ""
 "one must micro-manage when a node must move around the SceneTree to preserve "
 "itself. For example..."
 msgstr ""
+"Когда нужно это делать? Ну это субъективно. Дилемма возникает, когда нужно "
+"микроуправление, когда узел должен перемещаться по дереву сцены, чтобы "
+"сохранить себя. Например..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "Добавьте узел \"player\" в \"room\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid "Need to change rooms, so one must delete the current room."
 msgstr ""
+"Необходимо изменить комнаты, поэтому необходимо удалить текущую комнату."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:338
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
 msgstr ""
+"Прежде чем комнату можно будет удалить, нужно сохранить и/или переместить "
+"игрока."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:340
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "Память - это проблема?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:342
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"Если нет, можно просто создать две комнаты, переместить игрока и удалить "
+"старую. Нет проблем."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 msgid "If so, one will need to..."
-msgstr ""
+msgstr "Если да, то нужно..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "Переместите игрока в другое место в дереве."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Delete the room."
-msgstr ""
+msgstr "Удалить комнату."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:349
 msgid "Instantiate and add the new room."
-msgstr ""
+msgstr "Создать и добавить новую комнату."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:350
 msgid "Re-add the player."
@@ -415,32 +575,45 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"Проблема в том, что игрок здесь является \"особым случаем\"; тот, где "
+"разработчики должны *знать*, что им нужно обращаться с игроком таким образом "
+"для проекта. Таким образом, единственный способ надёжно поделиться этой "
+"информацией в команде - это *задокументировать* её. Однако хранить детали "
+"реализации в документации опасно. Это бремя обслуживания затрудняет "
+"читаемость кода и без надобности раздувает интеллектуальное содержание "
+"проекта."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
 msgid ""
 "In a more complex game with larger assets, it can be a better idea to simply "
 "keep the player somewhere else in the SceneTree entirely. This results in:"
 msgstr ""
+"В более сложной игре с более крупными ассетами может быть лучшей идеей "
+"просто полностью оставить игрока где-нибудь в другом месте в дереве сцены. "
+"Это приводит к:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:362
 msgid "More consistency."
-msgstr ""
+msgstr "Большей согласованности."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:363
 msgid "No \"special cases\" that must be documented and maintained somewhere."
 msgstr ""
+"Нет \"особых случаев\", которые нужно где-то документировать и поддерживать."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:364
 msgid ""
 "No opportunity for errors to occur because these details are not accounted "
 "for."
-msgstr ""
+msgstr "Нет возможности допустить ошибку, так как эти детали не учитываются."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:367
 msgid ""
 "In contrast, if one ever needs to have a child node that does *not* inherit "
 "the transform of their parent, one has the following options:"
 msgstr ""
+"Напротив, если кому-то когда-либо понадобится дочерний узел, который *не* "
+"наследует преобразование своего родителя, у него есть следующие варианты:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:370
 msgid ""
@@ -448,6 +621,9 @@ msgid ""
 "them. As nodes with no transform, Nodes will not pass along such information "
 "to their children."
 msgstr ""
+"**Декларативное** решение: поместите между ними :ref:`Node <class_Node>`. "
+"Как узлы без преобразования, узлы не будут передавать такую информацию своим "
+"потомкам."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:373
 msgid ""
@@ -456,6 +632,10 @@ msgid ""
 "<class_Spatial_method_set_as_toplevel>` node. This will make the node ignore "
 "its inherited transform."
 msgstr ""
+"**Императивное** решение: используйте сеттер ``set_as_toplevel`` для узла :"
+"ref:`CanvasItem <class_CanvasItem_method_set_as_toplevel>` или :ref:`Spatial "
+"<class_Spatial_method_set_as_toplevel> `. Это заставит узел игнорировать "
+"унаследованное преобразование."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:380
 msgid ""
@@ -466,6 +646,12 @@ msgid ""
 "keeping these in a separate branch from the \"world\" can help simplify the "
 "management of game connections and the like."
 msgstr ""
+"При создании сетевой игры имейте в виду, какие узлы и системы игрового "
+"процесса относятся ко всем игрокам, а не только к авторитетному серверу. "
+"Например, не всем пользователям нужно иметь копию логики \"PlayerController"
+"\" каждого игрока. Вместо этого им нужны только свои. Таким образом, их "
+"хранение в отдельной ветке от \"world\" может помочь упростить управление "
+"игровыми подключениями и т.п."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:387
 msgid ""
@@ -475,6 +661,12 @@ msgid ""
 "they are dependent, then it stands to reason that they should be children of "
 "that parent (and likely part of that parent's scene if they aren't already)."
 msgstr ""
+"Ключ к организации сцены - рассматривать дерево сцены в реляционных "
+"терминах, а не в пространственных терминах. Зависимы ли узлы от "
+"существования их родителей? Если нет, то они могут развиваться сами по себе "
+"где-нибудь ещё. Если они зависимы, то логично предположить, что они должны "
+"быть потомками этого родителя (и, вероятно, частью сцены этого родителя, "
+"если они ещё не являются таковыми)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:393
 msgid ""
@@ -483,3 +675,7 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"Означает ли это, что сами узлы являются компонентами? Конечно, нет. Деревья "
+"узлов Godot формируют отношения агрегирования, а не композиции. Но несмотря "
+"на то, что у вас по прежнему есть возможность перемещать узлы, лучше всего, "
+"когда такие перемещения, по умолчанию, не нужны."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr "Project Organization"
+msgstr "Projekt Organisation"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
 msgid "Introduction"
@@ -32,6 +32,11 @@ msgid ""
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
+"Da Godot keine Einschränkungen hinsichtlich der Projektstruktur oder der "
+"Verwendung des Dateisystems hat, kann das Organisieren von Dateien beim "
+"Erlernen der Engine eine Herausforderung darstellen. Diese Anleitung schlägt "
+"einen Arbeitsablauf vor, der ein guter Ausgangspunkt sein sollte. Wir werden "
+"auch die Versionskontrolle mit Godot behandeln."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
@@ -42,18 +47,26 @@ msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot ist szenenbasiert und verwendet das Dateisystem unverändert ohne "
+"Metadaten oder eine Asset-Datenbank."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"Im Gegensatz zu anderen Engines sind viele Ressourcen in der Szene selbst "
+"enthalten, sodass die Anzahl der Dateien im Dateisystem erheblich geringer "
+"ist."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
+"In Anbetracht dessen besteht der gängigste Ansatz darin, Assets so nah wie "
+"möglich an Szenen zu gruppieren. Wenn ein Projekt wächst, wird es einfacher "
+"zu warten."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
 msgid ""
@@ -61,6 +74,10 @@ msgid ""
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
+"Beispielsweise kann man normalerweise seine grundlegenden Elemente wie "
+"Sprite-Bilder, 3D-Model-Meshes, Materialien und Musik usw. in einem "
+"einzelnen Ordner ablegen. Anschließend können sie in einem separaten Ordner "
+"erstellte Levels speichern, in denen sie verwendet werden."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
 msgid "Style guide"
@@ -70,6 +87,8 @@ msgstr "Style guide"
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
+"Aus Gründen der Projektkonsistenz empfehlen wir, die folgenden Richtlinien "
+"zu befolgen:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -104,6 +123,9 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Godot-Versionen vor 3.0 haben den Importvorgang aus Dateien außerhalb des "
+"Projekts durchgeführt. Während dies in großen Projekten nützlich sein kann, "
+"führte dies für die meisten Entwickler zu Organisationsproblemen."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
 msgid ""
@@ -112,9 +134,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Formatbezeichner"
+msgstr "Bestimmte Ordner ignorieren"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
 msgid ""
@@ -141,10 +162,12 @@ msgid ""
 "Ignoring a folder will also automatically hide it from the FileSystem dock, "
 "which can be useful to reduce clutter."
 msgstr ""
+"Wenn Sie einen Ordner ignorieren, wird er automatisch im Dateisystem-Dock "
+"ausgeblendet. Dies kann hilfreich sein, um Unordnung zu vermeiden."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:94
 msgid "Case sensitivity"
-msgstr ""
+msgstr "Groß- und Kleinschreibung beachten"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid ""
@@ -155,12 +178,22 @@ msgid ""
 "stick to ``snake_case`` naming for all files in the project (and lowercase "
 "characters in general)."
 msgstr ""
+"Windows und neuere MacOS-Versionen verwenden standardmäßig Dateisysteme, bei "
+"denen die Groß- und Kleinschreibung nicht berücksichtigt wird, während Linux-"
+"Distributionen standardmäßig ein Dateisystem verwenden, bei dem die Groß- "
+"und Kleinschreibung berücksichtigt wird. Dies kann nach dem Exportieren "
+"eines Projekts zu Problemen führen, da das virtuelle PCK-Dateisystem von "
+"Godot zwischen Groß- und Kleinschreibung unterscheidet. Um dies zu vermeiden "
+"wird empfohlen, bei allen Dateien im Projekt (und bei Kleinbuchstaben im "
+"Allgemeinen) die Bezeichnung \"snake_case\" beizubehalten."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:105
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
+"Sie können diese Regel brechen, wenn Styleguides etwas anderes sagen (z.B. "
+"der C# Stilguide). Seien Sie dennoch konsequent, um Fehler zu vermeiden."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:108
 msgid ""
@@ -169,6 +202,11 @@ msgid ""
 "Subsystem for Linux feature, run the following command in a PowerShell "
 "window::"
 msgstr ""
+"Unter Windows 10 können Sie den Projektordner auch zwischen Groß- und "
+"Kleinschreibung unterscheiden lassen, um Fehler im Zusammenhang mit der "
+"Groß- und Kleinschreibung zu vermeiden. Führen Sie nach dem Aktivieren der "
+"Windows-Subsystem für Linux-Funktion den folgenden Befehl in einem "
+"PowerShell-Fenster aus:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:118
 msgid ""
@@ -176,3 +214,7 @@ msgid ""
 "following line in a PowerShell window *running as Administrator* then reboot "
 "when asked::"
 msgstr ""
+"Wenn Sie das Windows-Subsystem für Linux nicht aktiviert haben, können Sie "
+"die folgende Zeile in ein PowerShell-Fenster eingeben, das *als "
+"Administrator ausgeführt* wird und dann neu starten, wenn Sie dazu "
+"aufgefordert werden:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:4
-#, fuzzy
 msgid "VisualShaders"
-msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr "VisualShaders"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:6
 msgid ""
@@ -45,9 +44,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:22
-#, fuzzy
 msgid "Creating a VisualShader"
-msgstr "Erstellen eines Baums"
+msgstr "Erstellen eines VisualShader"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:24
 msgid ""
@@ -83,17 +81,23 @@ msgid ""
 "The drop-down menu is the shader type: Vertex, Fragment and Light. Like for "
 "script shaders, it defines what built-in nodes will be available."
 msgstr ""
+"Das Aufklappmenü ist der Shader-Typ: Vertex, Fragment und Licht. Wie bei "
+"Skript-Shadern definiert es, welche eingebauten Nodes verfügbar sein werden."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:45
 msgid ""
 "The following buttons and number input control the zooming level, grid "
 "snapping and distance between grid lines (in pixels)."
 msgstr ""
+"Die folgenden Schaltflächen und die Zahleneingabe steuern die Zoomstufe, das "
+"Einrasten des Gitters und den Abstand zwischen den Gitterlinien (in Pixel)."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:47
 msgid ""
 "The last icon shows the generated shader code corresponding to your graph."
 msgstr ""
+"Das letzte Symbol zeigt den generierten Shader-Code, der dem Diagramm "
+"entspricht."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:51
 msgid ""
@@ -101,20 +105,29 @@ msgid ""
 "script shaders. It is advised to learn the basics of both to have a good "
 "understanding of the shading pipeline."
 msgstr ""
+"Obwohl VisualShaders kein Coding erfordern, teilen sie dieselbe Logik mit "
+"Skript-Shadern. Es wird empfohlen, die Grundlagen von beiden zu erlernen, um "
+"ein gutes Verständnis der Shading-Pipeline zu haben."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:55
+#, fuzzy
 msgid ""
 "The visual shader graph is converted to a script shader behind the scene, "
 "and you can see this code by pressing the last button in the toolbar. This "
 "can be convenient to understand what a given node does and how to reproduce "
 "it in scripts."
 msgstr ""
+"Das visuelle Shader-Diagramm wird im Hintergrund in einen Skript-Shader "
+"umgewandelt. Du kannst diesen Code sehen, indem du en letzten Knopf in der "
+"Symbolleiste drückst. Dies kann praktisch sein, um zu verstehen, was ein "
+"bestimmtes Node tut und wie man ihn in Skripten reproduzieren kann."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:61
 msgid "Using the Visual Shader Editor"
-msgstr ""
+msgstr "Verwendung des visuellen Shader-Editors"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:63
+#, fuzzy
 msgid ""
 "By default, every new ``VisualShader`` will have an output node. Every node "
 "connection ends at one of the output node's sockets. A node is the basic "
@@ -122,11 +135,16 @@ msgid ""
 "button on the upper left corner or right click on any empty location in the "
 "graph, and a menu will pop up."
 msgstr ""
+"Standardmäßig wird jeder neue ``VisualShader`` ein Ausgabeknode haben. Jede "
+"Nodeverbindung endet an einem der Socket des Ausgangsnodes. Ein Node ist die "
+"Basiseinheit zur Erstellung eines Shaders. Um ein neues Node hinzuzufügen, "
+"klicke auf die Schaltfläche ``Add Node`` in der oberen linken Ecke oder "
+"klicke mit der rechten Maustaste auf eine beliebige leere Stelle im Graphen "
+"und ein Menü öffnet sich."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:71
-#, fuzzy
 msgid "This popup has the following properties:"
-msgstr "Das HUD zeigt die folgenden Informationen an:"
+msgstr "Das Popup zeigt die folgenden Eigenschaften an:"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:73
 msgid ""
@@ -134,6 +152,10 @@ msgid ""
 "position and the created node, in that case, will also be placed under that "
 "position; otherwise, it will be created at the graph's center."
 msgstr ""
+"Wenn Sie mit der rechten Maustaste auf den Graphen klicken, wird dieses Menü "
+"an der Cursorposition aufgerufen und das erzeugte Node wird in diesem Fall "
+"ebenfalls unter dieser Position platziert; andernfalls wird es in der Mitte "
+"des Graphen platziert."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:76
 msgid ""
@@ -142,51 +164,68 @@ msgid ""
 "so if you suddenly closed the popup you can easily restore its previous "
 "state."
 msgstr ""
+"Es kann horizontal und vertikal in der Größe verändert werden, so dass mehr "
+"Inhalte angezeigt werden können. Die Größentransformation und die Position "
+"des Bauminhalts werden zwischen den Aufrufen gespeichert. Wenn also das "
+"Popup plötzlich geschlossen wird, kann man den vorherigen Zustand leicht "
+"wiederherstellen."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:79
 msgid ""
 "The ``Expand All`` and ``Collapse All`` options in the drop-down option menu "
 "can be used to easily list the available nodes."
 msgstr ""
+"Die Optionen ``Expand All`` und ``Collapse All`` im Aufklappmenü können "
+"verwendet werden, um die verfügbaren Nodes einfach aufzulisten."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:81
 msgid "You can also drag and drop nodes from the popup onto the graph."
-msgstr ""
+msgstr "Du kannst auch Nodes aus dem Popup auf den Graphen ziehen."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:83
+#, fuzzy
 msgid ""
 "While the popup has nodes sorted in categories, it can seem overwhelming at "
 "first. Try to add some of the nodes, plug them in the output socket and "
 "observe what happens."
 msgstr ""
+"Obwohl im Popup Nodes in Kategorien sortiert ist, kann es auf den ersten "
+"Blick überwältigend erscheinen. Versuche, einige der Nodes hinzuzufügen, "
+"stecke sie in den Ausgangssocket und beobachte, was passiert."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:87
 msgid ""
 "When connecting any ``scalar`` output to a ``vector`` input, all components "
 "of the vector will take the value of the scalar."
 msgstr ""
+"Wenn ein beliebiger ``scalar`` Ausgang mit einem ``vector`` Eingang "
+"verbunden wird, nehmen alle Komponenten des Vektors den Wert des Skalars an."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:90
 msgid ""
 "When connecting any ``vector`` output to a ``scalar`` input, the value of "
 "the scalar will be the average of the vector's components."
 msgstr ""
+"Wenn ein beliebiger ``vector`` Ausgang mit einem ``scalar`` Eingang "
+"verbunden wird, ist der Wert des Skalars der Mittelwert der Komponenten des "
+"Vektors."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:94
-#, fuzzy
 msgid "Visual Shader nodes"
-msgstr ":ref:`Spatial gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr "Visual Shader Nodes"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
 "Below are some special nodes that are worth knowing about. The list is not "
 "exhaustive and might be expanded with more nodes and examples."
 msgstr ""
+"Nachfolgend sind einige spezielle Nodes aufgeführt, die wissenswert sind. "
+"Die Liste ist nicht ultimativ und könnte mit weiteren Nodes und Beispielen "
+"erweitert werden."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:100
-#, fuzzy
 msgid "Expression node"
-msgstr "Ablaufsteuerung"
+msgstr "Expression-Node"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:102
 msgid ""
@@ -208,9 +247,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:120
-#, fuzzy
 msgid "Fresnel node"
-msgstr "Nodes erstellen"
+msgstr "Fresnel-Node"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
@@ -219,11 +257,15 @@ msgid ""
 "Additionally, you can setup the inversion and the power of equation. The "
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
+"Der ``Fresnel`` -Node ist so ausgelegt, dass er Normal- und Ansichtsvektoren "
+"akzeptiert und einen Skalar erzeugt, der das gesättigte Skalarprodukt "
+"zwischen ihnen ist. Zusätzlich können Sie die Inversion und die Potenz der "
+"Gleichung einstellen. Der ``Fresnel``-Node eignet sich hervorragend, um "
+"Objekten einen randartigen Lichteffekt zu verleihen."
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:130
-#, fuzzy
 msgid "Boolean node"
-msgstr "Boolsches ODER"
+msgstr "Boolescher Node"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:132
 msgid ""
@@ -247,9 +289,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:150
-#, fuzzy
 msgid "Switch node"
-msgstr "Switch"
+msgstr "Switch-Node"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:152
 msgid ""

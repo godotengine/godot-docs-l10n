@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,6 @@ msgstr ""
 "является громоздкой и может быть медленной."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -72,41 +71,37 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"`Шаблон Одиночка (Синглтон) <https://ru.wikipedia.org/wiki/"
-"Одиночка_(шаблон_проектирования)>`_ - это инструмент для решения проблемы, "
-"когда необходимо хранить постоянную информацию между сценами. В нашем случае "
-"можно повторно использовать одну и ту же сцену или класс для нескольких "
-"синглотнов, при условии, что они имеют разные названия."
+"`Шаблон Singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`_ - "
+"полезный инструмент для решения распространенного варианта использования, "
+"когда вам необходимо хранить постоянную информацию между сценами. В нашем "
+"случае можно повторно использовать одну и ту же сцену или класс для "
+"нескольких синглтонов, если они имеют разные имена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr "Используя эту концепцию, вы можете создавать такие объекты:"
+msgstr "Используя эту концепцию, вы можете создавать объекты, которые:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
 msgstr ""
-"Всегда загружены, независимо от того, какая сцена в данный момент запущена"
+"Всегда загружаются, независимо от того, какая сцена в данный момент запущена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "Может хранить глобальные переменные, такие как информация об игроке"
+msgstr "Могут хранить глобальные переменные, такие как информация об игроке."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
 msgstr ""
-"Возможность переключения между сценами и переходами от одной сцены к другой"
+"Могут обрабатывать переключения между сценами и переходы между сценами."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
-"Действуйте как **одиночка**, так как GDScript не поддерживает глобальные "
-"переменные по дизайну"
+"*Действуют* как синглтон, так как GDScript не поддерживает глобальные "
+"переменные по дизайну."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -119,6 +114,9 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot не сделает AutoLoad \"истинным\" синглтоном в соответствии с шаблоном "
+"проектирования синглтона. При желании он может быть использован "
+"пользователем более одного раза."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -129,27 +127,26 @@ msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
 msgstr ""
+"Вы можете создать AutoLoad для загрузки сцены или скрипта, унаследованного "
+"от :ref:`class_Node`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-"Вы можете использовать Автозагрузку для загрузки сцены или скрипта, "
-"унаследованного от :ref:`Node <class_Node>`. Примечание: при автозагрузке "
-"скрипта будет создан узел и к нему будет прикреплен скрипт. Этот узел будет "
-"добавлен в корневое окно(Viewport) перед загрузкой любых других сцен."
+"При автозагрузке скрипта будет создан :ref:`class_Node`, и скрипт будет "
+"прикреплен к нему. Этот узел будет добавлен к корневому окну просмотра перед "
+"загрузкой любых других сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"Чтобы автоматически загрузить сцену или скрипт, выберите в меню ``Проект -> "
-"Настройки проекта`` и перейдите на вкладку \"Автозагрузка\"."
+"Чтобы автоматически загрузить сцену или скрипт, выберите **Project > Project "
+"Settings** в меню и перейдите на вкладку **AutoLoad**."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
@@ -172,13 +169,12 @@ msgstr ""
 "\"PlayerVariables\":"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"Если установлен флажок \"Enable\" (по умолчанию ``true``), то к синглтону "
-"можно просто получить прямой доступ:"
+"Если столбец **Enable** отмечен (по умолчанию), то к синглтону можно "
+"получить доступ напрямую, не требуя ``get_node()``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -196,7 +192,6 @@ msgid "Custom scene switcher"
 msgstr "Пользовательский переключатель сцены"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -204,11 +199,12 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
-"В данном руководстве будет продемонстрировано создание переключателя сцен с "
-"помощью автозагрузки. В основном для переключения сцены можно использовать "
-"метод :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` "
-"(подробнее см. :ref:`doc_scene_tree`). Однако, если вам нужно более сложное "
-"поведение при смене сцен, этот метод обеспечивает большую функциональность."
+"В этом руководстве будет продемонстрировано создание переключателя сцен с "
+"использованием автозагрузки. Для базового переключения сцен вы можете "
+"использовать метод :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` (подробности см. в :ref:"
+"`doc_scene_tree`). Однако, если вам нужно более сложное поведение при смене "
+"сцен, этот метод предоставляет больше функциональных возможностей."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
@@ -235,16 +231,14 @@ msgid "Global.gd"
 msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"Перейдите на вкладку \"Script\" и создайте новый скрипт под названием Global."
-"gd. Убедитесь, что он унаследован от ``Node``:"
+"Перейдите на вкладку **Script** и создайте новый скрипт под названием "
+"``Global.gd``. Убедитесь, что он унаследован от ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
@@ -252,9 +246,10 @@ msgid ""
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 "Следующим шагом будет добавление этого скрипта в список автозагрузки. "
-"Откройте ``Проект > Настройки проекта``, перейдите на вкладку \"Автозагрузка"
-"\" и выберите скрипт, нажав на кнопку ``..`` или напечатав его путь: ``res://"
-"Global.gd``. Нажмите \"Добавить\", чтобы добавить его в список автозагрузки:"
+"Откройте из меню **Project > Project Settings**, перейдите на вкладку "
+"**AutoLoad** и выберите скрипт, нажав на кнопку ``..`` или напечатав его "
+"путь: ``res://Global.gd``. Нажмите **Add**, чтобы добавить его в список "
+"автозагрузки:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -265,7 +260,6 @@ msgstr ""
 "скрипт всегда будет загружен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
@@ -274,9 +268,8 @@ msgid ""
 msgstr ""
 "Возвращаясь к скрипту, он должен получить текущую сцену в функции "
 "`_ready()`. Как текущая сцена (сцена с кнопкой), так и сцена ``global.gd`` "
-"являются детьми корня, но узлы автозагрузки всегда загружаются первыми. Это "
-"означает, что последним дочерним ребенком корня всегда будет загруженная "
-"сцена."
+"являются дочерними корня, но узлы автозагрузки всегда загружаются первыми. "
+"Это означает, что последним дочерним корня всегда будет загруженная сцена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""
@@ -318,17 +311,16 @@ msgstr ""
 "нажав кнопку."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`."
 msgstr ""
-"Примечание: Если сцены маленькие, переход происходит мгновенно. Однако, если "
-"ваши сцены более сложные, на их появление может уйти заметное количество "
-"времени. Чтобы узнать, как с этим справиться, см. следующее руководство: :"
-"ref:`doc_background_load`"
+"Когда сцены маленькие, переход происходит мгновенно. Однако, если ваши сцены "
+"более сложные, для их отображения может потребоваться значительное время. "
+"Чтобы узнать, как с этим справиться, см. следующий учебник::ref:"
+"`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -338,3 +330,8 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"В качестве альтернативы, если время загрузки относительно невелико (менее 3 "
+"секунд или около того), вы можете отобразить \"табличку загрузки\", показав "
+"какой-либо 2D-элемент непосредственно перед изменением сцены. Затем вы "
+"можете скрыть его сразу после изменения сцены. Это можно использовать, чтобы "
+"указать игроку, что сцена загружается."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU Optimizations"
-msgstr "Optimierungen"
+msgstr "GPU Optimierungen"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:7
 msgid "Introduction"
@@ -80,9 +79,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:44
-#, fuzzy
 msgid "2D batching"
-msgstr "Suchen"
+msgstr "2D Stapelverarbeitung"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:46
 msgid ""
@@ -95,16 +93,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:53
-#, fuzzy
 msgid "For more information on 2D batching see :ref:`doc_batching`."
 msgstr ""
-"Für weitere Informationen zu Singletons bzw. Autoload-Skripten, siehe :ref:"
-"`doc_singletons_autoload`."
+"Für weitere Informationen zu 2D Stapelverarbeitung siehe :ref:`doc_batching`."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:56
-#, fuzzy
 msgid "3D batching"
-msgstr "Suchen"
+msgstr "3D Stapelverarbeitung"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:58
 msgid ""
@@ -128,19 +123,27 @@ msgid ""
 "of joining static objects often outweigh other considerations, especially "
 "for large numbers of low poly objects."
 msgstr ""
+"Das Zusammenfügen von Objekten in 3D ist ebenfalls mit Kosten verbunden. "
+"Mehrere als ein einzelnes gerendertes Objekt können nicht einzeln ausgewählt "
+"werden. Eine ganze Stadt außerhalb des Bildschirms wird weiterhin gerendert, "
+"wenn sie mit einem einzelnen Grashalm verbunden wird, der sich auf dem "
+"Bildschirm befindet. Der Versuch, 3D-Objekte zusammenzufassen, sollte daher "
+"deren Position und Auswirkung auf diese Auswahl berücksichtigen. Trotzdem "
+"überwiegen die Vorteile des Verbindens statischer Objekte häufig andere "
+"Überlegungen, insbesondere bei einer großen Anzahl von Objekten mit "
+"niedrigem Polygongehalt."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:74
-#, fuzzy
 msgid ""
 "For more information on 3D specific optimizations, see :ref:"
 "`doc_optimizing_3d_performance`."
 msgstr ""
-"Für weitere Informationen zu Singletons bzw. Autoload-Skripten, siehe :ref:"
-"`doc_singletons_autoload`."
+"Für weitere Informationen zu 3D-spezifische Optimierungen, siehe :ref:"
+"`doc_optimizing_3d_performance`."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:78
 msgid "Reuse Shaders and Materials"
-msgstr ""
+msgstr "Shader und Materialien erneut nutzen"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:80
 msgid ""
@@ -150,6 +153,12 @@ msgid ""
 "similar shaders but, if custom shaders are used, make sure to reuse them as "
 "much as possible. Godot's priorities are:"
 msgstr ""
+"Der Godot-Renderer unterscheidet sich ein wenig von dem, was da draußen ist. "
+"Es wurde entwickelt, um Änderungen des GPU-Status so gering wie möglich zu "
+"halten. :ref:`SpatialMaterial <class_SpatialMaterial>` leistet gute Arbeit "
+"bei der Wiederverwendung von Materialien, die ähnliche Shader benötigen, "
+"jedoch wenn benutzerdefinierte Shader verwendet werden, stellen Sie sicher, "
+"dass Sie diese so oft wie möglich wiederverwenden. Godots Prioritäten sind:"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:86
 msgid ""
@@ -165,6 +174,10 @@ msgid ""
 "shaders (or SpatialMaterials with different parameters but the same "
 "configuration)."
 msgstr ""
+"**Wiederverwenden von Shadern**: Wenn Materialien nicht wiederverwendet "
+"werden können, versuchen Sie zumindest, Shader (oder SpatialMaterials mit "
+"unterschiedlichen Parametern, aber derselben Konfiguration) "
+"wiederzuverwenden."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:94
 msgid ""
@@ -309,9 +322,8 @@ msgid "Consider shipping simpler shaders for mobile."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:180
-#, fuzzy
 msgid "Reading textures"
-msgstr "Texturen importieren"
+msgstr "Texturen einlesen"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:182
 msgid ""
@@ -355,9 +367,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:207
-#, fuzzy
 msgid "Post processing / shadows"
-msgstr "Abarbeitung hält an."
+msgstr "Nachbearbeitung / Schatten"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:209
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,27 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:4
 msgid "Services for iOS"
-msgstr ""
+msgstr "Dienste für IOS"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:6
 msgid ""
 "At the moment, there are two iOS APIs partially implemented, GameCenter and "
 "Storekit. Both use the same model of asynchronous calls explained below."
 msgstr ""
+"Derzeit sind zwei iOS APIs teilweise implementiert, GameCenter und Storekit. "
+"Beide verwenden dasselbe Modell für asynchrone Aufrufe, das unten erläutert "
+"wird."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:11
 msgid "Asynchronous methods"
-msgstr ""
+msgstr "Asynchrone Methoden"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:13
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
 msgstr ""
+"Wenn Sie eine asynchrone Operation anfordern, sieht die Methode "
+"folgendermaßen aus:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:20
 msgid ""
@@ -59,22 +64,27 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:53
 msgid "The pending event interface consists of two methods:"
 msgstr ""
+"Die Schnittstelle für ausstehende Ereignisse besteht aus zwei Methoden:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:55
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
 msgstr ""
+"``get_pending_event_count ()`` gibt die Anzahl der ausstehenden Ereignisse "
+"in der Warteschlange zurück."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:58
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
 msgstr ""
+"``Variant pop_pending_event ()`` löscht das erste Ereignis aus der "
+"Warteschlange und gibt es zurück."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:62
 msgid "Store Kit"
-msgstr ""
+msgstr "Store Kit"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:64
 msgid "Implemented in ``platform/iphone/in_app_store.mm``."
@@ -89,27 +99,27 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:70
 msgid "``Error purchase(Variant p_params);``"
-msgstr ""
+msgstr "``Error purchase(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:71
 msgid "``Error request_product_info(Variant p_params);``"
-msgstr ""
+msgstr "``Error request_product_info(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:72
 msgid "``Error restore_purchases();``"
-msgstr ""
+msgstr "``Error restore_purchases();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:74
 msgid "and the pending_event interface"
-msgstr ""
+msgstr "und die Schnittstelle pending_event"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:82
 msgid "purchase"
-msgstr ""
+msgstr "Kauf"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:84
 msgid "Purchases a product id through the Store Kit API."
-msgstr ""
+msgstr "Kauf einer Produkt-ID über die Store Kit API."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:87
 #: ../../docs/tutorials/platform/services_for_ios.rst:127
@@ -136,7 +146,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:382
 #: ../../docs/tutorials/platform/services_for_ios.rst:439
 msgid "Response event"
-msgstr ""
+msgstr "Antwortereignis"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:99
 #: ../../docs/tutorials/platform/services_for_ios.rst:139
@@ -148,7 +158,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:384
 #: ../../docs/tutorials/platform/services_for_ios.rst:441
 msgid "The response event will be a dictionary with the following fields:"
-msgstr ""
+msgstr "Das Antwortereignis ist ein Wörterbuch mit den folgenden Feldern:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:101
 #: ../../docs/tutorials/platform/services_for_ios.rst:203
@@ -168,7 +178,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:364
 #: ../../docs/tutorials/platform/services_for_ios.rst:396
 msgid "On success:"
-msgstr ""
+msgstr "bei Erfolg:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:122
 msgid "request_product_info"
@@ -201,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:174
 msgid "Game Center"
-msgstr ""
+msgstr "Game Center"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:176
 msgid "Implemented in ``platform/iphone/game_center.mm``."
@@ -215,39 +225,39 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
 msgid "``Error authenticate();``"
-msgstr ""
+msgstr "``Error authenticate();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:182
 msgid "``bool is_authenticated();``"
-msgstr ""
+msgstr "``bool is_authenticated();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:183
 msgid "``Error post_score(Variant p_score);``"
-msgstr ""
+msgstr "``Error post_score(Variant p_score);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:184
 msgid "``Error award_achievement(Variant p_params);``"
-msgstr ""
+msgstr "``Error award_achievement(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:185
 msgid "``void reset_achievements();``"
-msgstr ""
+msgstr "``void reset_achievements();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:186
 msgid "``void request_achievements();``"
-msgstr ""
+msgstr "``void request_achievements();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:187
 msgid "``void request_achievement_descriptions();``"
-msgstr ""
+msgstr "``void request_achievement_descriptions();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:188
 msgid "``Error show_game_center(Variant p_params);``"
-msgstr ""
+msgstr "``Error show_game_center(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:189
 msgid "``Error request_identity_verification_signature();``"
-msgstr ""
+msgstr "``Error request_identity_verification_signature();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:191
 msgid "plus the standard pending event interface."
@@ -255,15 +265,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:194
 msgid "authenticate"
-msgstr ""
+msgstr "authentifizieren"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:196
 msgid "Authenticates a user in Game Center."
-msgstr ""
+msgstr "Authentifiziert einen Benutzer im Game Center."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:225
 msgid "post_score"
-msgstr ""
+msgstr "post_score"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:227
 msgid "Posts a score to a Game Center leaderboard."
@@ -272,15 +282,15 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:232
 #: ../../docs/tutorials/platform/services_for_ios.rst:421
 msgid "Takes a Dictionary as a parameter, with two fields:"
-msgstr ""
+msgstr "Nimmt ein Wörterbuch als Parameter mit zwei Feldern:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:234
 msgid "``score`` a float number"
-msgstr ""
+msgstr "``score`` eine Kleitkommazahl"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:235
 msgid "``category`` a string with the category name"
-msgstr ""
+msgstr "``category`` eine Zeichenfolge mit dem Kategorienamen"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:237
 #: ../../docs/tutorials/platform/services_for_ios.rst:284
@@ -289,15 +299,15 @@ msgstr "Beispiel:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:269
 msgid "award_achievement"
-msgstr ""
+msgstr "award_achievement"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:271
 msgid "Modifies the progress of a Game Center achievement."
-msgstr ""
+msgstr "Ändert den Fortschritt eines Game Center-Erfolgs."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:276
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
-msgstr ""
+msgstr "Nimmt ein Wörterbuch als Parameter mit 3 Feldern:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:278
 msgid "``name`` (string) the achievement name"
@@ -317,7 +327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:315
 msgid "reset_achievements"
-msgstr ""
+msgstr "reset_achievements"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:317
 msgid "Clears all Game Center achievements. The function takes no parameters."
@@ -325,7 +335,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:344
 msgid "request_achievements"
-msgstr ""
+msgstr "request_achievements"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:346
 msgid ""
@@ -335,7 +345,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:376
 msgid "request_achievement_descriptions"
-msgstr ""
+msgstr "request_achievement_descriptions"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:378
 msgid ""
@@ -345,7 +355,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:413
 msgid "show_game_center"
-msgstr ""
+msgstr "show_game_center"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:415
 msgid ""
@@ -374,11 +384,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:443
 msgid "On close:"
-msgstr ""
+msgstr "beim beenden:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:453
 msgid "Multi-platform games"
-msgstr ""
+msgstr "Multi-Plattform Spiele"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:455
 msgid ""
@@ -389,3 +399,11 @@ msgid ""
 "block, you need to also define them as valid identifiers (local variable or "
 "class member). This is an example of how to work around this in a class:"
 msgstr ""
+"Wenn Sie an einem Spiel mit Unterstützung für mehrere Plattformen arbeiten, "
+"steht Ihnen nicht immer der Singleton \"GameCenter\" zur Verfügung (z.B. auf "
+"einem PC oder Android). Da der GDScript-Compiler die Singletons zur "
+"Kompilierungszeit nachschaut, können Sie die Singletons nicht einfach "
+"abfragen, um den Inhalt eines bedingten Blocks zu sehen und zu verwenden. "
+"Sie müssen diese auch als gültige Bezeichner (lokale Variable oder "
+"Klassenmitglied) definieren. Dies ist ein Beispiel dafür, wie Sie dies in "
+"einer Klasse umgehen können:"

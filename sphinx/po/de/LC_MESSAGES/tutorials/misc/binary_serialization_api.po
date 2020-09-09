@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:4
 msgid "Binary serialization API"
-msgstr ""
+msgstr "Binäre Serialisierungs-API"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:7
 msgid "Introduction"
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
 msgid "Packet specification"
-msgstr ""
+msgstr "Paketspezifikation"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:18
 msgid ""
@@ -44,6 +44,10 @@ msgid ""
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data:"
 msgstr ""
+"Das Paket ist so konzipiert, dass es immer auf 4 Bytes aufgefüllt wird. Alle "
+"Werte sind Little-Endian-codiert (kleinstwertige Byte zuerst). Alle Pakete "
+"haben einen 4-Byte-Header, der eine Ganzzahl darstellt und den Datentyp "
+"angibt:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
@@ -219,7 +223,7 @@ msgstr "6"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "rect2"
-msgstr ""
+msgstr "rect2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
@@ -249,7 +253,7 @@ msgstr "8"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
 msgid "transform2d"
-msgstr ""
+msgstr "transform2d"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
@@ -273,7 +277,7 @@ msgstr "11"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "aabb"
-msgstr ""
+msgstr "aabb"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:153
@@ -330,7 +334,7 @@ msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
-msgstr ""
+msgstr "rid"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
@@ -354,7 +358,7 @@ msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:185
@@ -437,14 +441,21 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
+"Darauf folgt der tatsächliche Paketinhalt, der für jeden Pakettyp "
+"unterschiedlich ist. Beachten Sie, dass dies voraussetzt, dass Godot mit "
+"Fließkommzahlen einfacher Genauigkeit kompiliert wird. Dies ist die "
+"Standardeinstellung. Wenn Godot mit Fließkommzahlen doppelter Genauigkeit "
+"kompiliert wurde, sollte die Länge der \"Float\"-Felder in Datenstrukturen 8 "
+"und der Offset ``(offset - 4) * 2 + 4`` betragen. Der Typ \"float\" selbst "
+"verwendet immer die doppelte Genauigkeit."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:90
 msgid "0: null"
-msgstr ""
+msgstr "0: null"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:93
 msgid "1: :ref:`bool<class_bool>`"
-msgstr ""
+msgstr "1: :ref:`bool<class_bool>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:105
@@ -475,7 +486,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:105
@@ -563,20 +574,19 @@ msgstr "Ganze Zahl"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:98
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 für \"False\", 1 für \"True\""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:102
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "2: :ref:`int<class_int>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:107
 msgid "64-bit signed integer"
-msgstr ""
+msgstr "64-Bit-Ganzzahl mit Vorzeichen"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:111
-#, fuzzy
 msgid "3: :ref:`float<class_float>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr "3: :ref:`float<class_float>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
@@ -643,19 +653,19 @@ msgstr ":ref:`Quat <class_Quat>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "Float"
-msgstr ""
+msgstr "Fliesskommazahl"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 msgid "IEE 754 32-Bits Float"
-msgstr ""
+msgstr "IEE 754 32-Bit Fliesskommazahl"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:120
 msgid "4: :ref:`String<class_string>`"
-msgstr ""
+msgstr "4: :ref:`String<class_string>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:125
 msgid "String length (in bytes)"
-msgstr ""
+msgstr "String Länge (in Bytes)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:127
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:325
@@ -676,15 +686,15 @@ msgstr "Bytes"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:434
 msgid "UTF-8 encoded string"
-msgstr ""
+msgstr "UTF-8-codierte Zeichenfolge"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:130
 msgid "This field is padded to 4 bytes."
-msgstr ""
+msgstr "Dieses Feld wird auf 4 Bytes aufgefüllt."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:133
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "5: :ref:`Vector2<class_vector2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:149
@@ -692,9 +702,8 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:460
-#, fuzzy
 msgid "X coordinate"
-msgstr "Nächste Koordinate"
+msgstr "X Koordinate"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:140
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:151
@@ -702,110 +711,112 @@ msgstr "Nächste Koordinate"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:228
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:449
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:462
-#, fuzzy
 msgid "Y coordinate"
-msgstr "Nächste Koordinate"
+msgstr "Y Koordinate"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:144
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr ""
+msgstr "6: :ref:`Rect2<class_rect2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:153
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:232
 msgid "X size"
-msgstr ""
+msgstr "X Größe"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:155
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:234
 msgid "Y size"
-msgstr ""
+msgstr "Y Größe"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:159
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr ""
+msgstr "7: :ref:`Vector3<class_vector3>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:168
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:230
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:464
-#, fuzzy
 msgid "Z coordinate"
-msgstr "Nächste Koordinate"
+msgstr "Z Koordinate"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:172
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr ""
+msgstr "8: :ref:`Transform2D<class_transform2d>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:177
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:245
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:270
 msgid "The X component of the X column vector, accessed via [0][0]"
 msgstr ""
+"Die X-Komponente des X-Spaltenvektors, auf die über [0][0] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:179
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:247
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:272
 msgid "The Y component of the X column vector, accessed via [0][1]"
 msgstr ""
+"Die Y-Komponente des X-Spaltenvektors, auf die über [0][1] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:251
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 msgid "The X component of the Y column vector, accessed via [1][0]"
 msgstr ""
+"Die X-Komponente des Y-Spaltenvektors, auf die über [1][0] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:183
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "The Y component of the Y column vector, accessed via [1][1]"
 msgstr ""
+"Die Y-Komponente des Y-Spaltenvektors, auf die über [1][1] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:185
 msgid "The X component of the origin vector, accessed via [2][0]"
-msgstr ""
+msgstr "Die X Komponente des Ursprungsvektors, Zugriff über [2][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
 msgid "The Y component of the origin vector, accessed via [2][1]"
-msgstr ""
+msgstr "Die Y Komponente des Ursprungsvektors, Zugriff über [2][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:191
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr ""
+msgstr "9: :ref:`Plane<class_plane>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:196
 msgid "Normal X"
-msgstr ""
+msgstr "Normal X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:198
 msgid "Normal Y"
-msgstr ""
+msgstr "Normal Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:200
 msgid "Normal Z"
-msgstr ""
+msgstr "Normal Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:202
 msgid "Distance"
-msgstr ""
+msgstr "Entfernung"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:206
 msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+msgstr "10: :ref:`Quat<class_quat>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:211
 msgid "Imaginary X"
-msgstr ""
+msgstr "Imaginäres X"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:213
 msgid "Imaginary Y"
-msgstr ""
+msgstr "Imaginäres Y"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:215
 msgid "Imaginary Z"
-msgstr ""
+msgstr "Imaginäres Z"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:217
 msgid "Real W"
-msgstr ""
+msgstr "tatsächliches W"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:221
 msgid "11: :ref:`AABB<class_aabb>`"
@@ -813,21 +824,23 @@ msgstr "11: :ref:`AABB<class_aabb>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:236
 msgid "Z size"
-msgstr ""
+msgstr "Z Größe"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:240
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr ""
+msgstr "12: :ref:`Basis<class_basis>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 msgid "The Z component of the X column vector, accessed via [0][2]"
 msgstr ""
+"Die Z-Komponente des X-Spaltenvektors, auf die über [0][2] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr ""
+"Die Z-Komponente des Y-Spaltenvektors, auf die über [1][2] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
@@ -838,6 +851,7 @@ msgstr "28"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr ""
+"Die X-Komponente des Z-Spaltenvektors, auf die über [2][0] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:259
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
@@ -848,6 +862,7 @@ msgstr "32"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
 msgid "The Y component of the Z column vector, accessed via [2][1]"
 msgstr ""
+"Die Y-Komponente des Z-Spaltenvektors, auf die über [2][1] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
@@ -858,10 +873,11 @@ msgstr "36"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
+"Die Z-Komponente des Z-Spaltenvektors, auf die über [2][2] zugegriffen wird"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:265
 msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+msgstr "13: :ref:`Transform<class_transform>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "40"
@@ -869,7 +885,7 @@ msgstr "40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
 msgid "The X component of the origin vector, accessed via [3][0]"
-msgstr ""
+msgstr "Die X Komponente des Ursprungsvektors, Zugriff über [3][0]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "44"
@@ -877,7 +893,7 @@ msgstr "44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "The Y component of the origin vector, accessed via [3][1]"
-msgstr ""
+msgstr "Die Y Komponente des Ursprungsvektors. Zugriff über [3][1]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "48"
@@ -885,7 +901,7 @@ msgstr "48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "The Z component of the origin vector, accessed via [3][2]"
-msgstr ""
+msgstr "Die Z Komponente des Ursprungsvektors, Zugriff über [3][2]"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:296
 msgid "14: :ref:`Color<class_color>`"
@@ -936,7 +952,7 @@ msgstr "für neues Format:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:336
 msgid "Sub-name count"
-msgstr ""
+msgstr "Anzahl der Unternamen"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "Flags (absolute: val&1 != 0 )"
@@ -990,7 +1006,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:372
 msgid "19: :ref:`Array<class_array>`"
-msgstr "19: :ref:`Feld<class_array>`"
+msgstr "19: :ref:`Array<class_array>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:380
 msgid ""
@@ -1020,7 +1036,7 @@ msgstr "Byte (0..255)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:394
 msgid "The array data is padded to 4 bytes."
-msgstr "Die Felddaten werden auf 4 Byte aufgefüllt."
+msgstr "Die Array-Daten werden auf 4 Byte aufgefüllt."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:397
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
@@ -1045,7 +1061,7 @@ msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:413
 msgid "Array length (Floats)"
-msgstr "Feld Länge (Fließkomma)"
+msgstr "Array Länge (Fließkomma)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:415
 msgid "32-bits IEEE 754 float"
@@ -1075,7 +1091,7 @@ msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Array length"
-msgstr "Feld Länge"
+msgstr "Array Länge"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:447
 msgid "8..8+length\\*8"

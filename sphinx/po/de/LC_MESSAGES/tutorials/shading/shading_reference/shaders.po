@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr "Shaders (Schattierer)"
+msgstr "Shader (Schattierer)"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:7
 msgid "Introduction"
@@ -35,6 +35,14 @@ msgid ""
 "they output a final color to the screen and then move on. Accordingly, there "
 "is no way of accessing the color output from the last run of the shader."
 msgstr ""
+"Shader (Schattierer) sind eigenständige Programme die auf der GPU laufen. "
+"Sie werden genutzt um die Mesh-Daten (Vertex Positionen, Farben, Normals, "
+"usw.) auszuwerten und auf dem Bildschirm zu zeichnen. Shader verarbeiten "
+"Daten nicht auf die gleiche Weise wie ein normales Programm, da sie auf der "
+"GPU laufen und dafür optimiert wurden. Ein Konsequenz daraus ist, dass "
+"Shader ihre Daten nach dem Durchlauf verlieren; sie geben eine Farbe auf dem "
+"Bildschirm aus und fahren fort. Demzufolge gibt es keinen Weg auf diese "
+"Farbausgabe vom letzten Shaderdurchlauf zuzugreifen."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:16
 msgid ""
@@ -54,6 +62,9 @@ msgid ""
 "Godot. For a detailed reference of the shading language in Godot see the :"
 "ref:`Godot shading language doc<doc_shading_language>`."
 msgstr ""
+"Dieses Dokument bietet dir einige Information über Shader, speziell in "
+"Godot. Für eine detaillierte Referenz der Shader-Sprache in Godot siehe :ref:"
+"`Godot Shader-Sprache<doc_shading_language>`."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
 msgid "Shader types"
@@ -72,6 +83,8 @@ msgid ""
 "All shaders need to specify their type in the first line, in the following "
 "format:"
 msgstr ""
+"Alle Shader müssen ihren Typ in der ersten Zeile spezifizieren, im folgenden "
+"Format:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
@@ -79,21 +92,23 @@ msgstr "gültige Typen sind:"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:41
 msgid ":ref:`spatial <doc_spatial_shader>`: For 3D rendering."
-msgstr ""
+msgstr ":ref:`Spatial-Shader <doc_spatial_shader>`: für 3D Rendering."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:42
 msgid ":ref:`canvas_item <doc_canvas_item_shader>`: For 2D rendering."
-msgstr ""
+msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: für 2D Rendering."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:43
 msgid ":ref:`particles <doc_particle_shader>`: For particle systems."
-msgstr ""
+msgstr ":ref:`particles <doc_particle_shader>`: für Partikelsysteme."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:45
 msgid ""
 "For detailed information on each shading type, see the corresponding "
 "reference document."
 msgstr ""
+"Für detaillierte Informationen über jeden Shader Typ, siehe in das "
+"zugehörige Referenzdokument."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:48
 msgid "Render modes"
@@ -132,7 +147,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:73
 msgid "Vertex processor"
-msgstr "Eckpunkt-Prozessor"
+msgstr "Vertex-Prozessor"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:75
 msgid ""
@@ -159,7 +174,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:87
 msgid "Fragment processor"
-msgstr ""
+msgstr "Fragment-Prozessor"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:89
 msgid ""
@@ -186,7 +201,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
 msgid "Light processor"
-msgstr ""
+msgstr "Beleuchtungs-Prozessor"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:105
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
-#, fuzzy
 msgid "Using 3D transforms"
-msgstr "Преобразование"
+msgstr "Использование 3D-трансформаций"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:7
 msgid "Introduction"
@@ -33,26 +32,30 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Если вы никогда раньше не делали 3D-игр, то работа с вращением в трёх "
+"измерениях может сначала сбить с толку. Выходя из 2D, естественный образ "
+"мышления лежит по линии *\"О, это как вращение в 2D, за исключением того, "
+"что теперь вращения происходят в X, Y и Z \"*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
-#, fuzzy
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
-"Для несложных игр такой способ мышления может показаться вполне подходящим. "
-"К сожалению, на самом деле это не так."
+"Для простых игр такой способ мышления может показаться вполне подходящим. К "
+"сожалению, на самом деле это не так."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
-msgstr ""
+msgstr "Углы в трёх измерениях чаще всего называют «углами Эйлера»."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Углы Эйлера были описаны математиком Леонардом Эйлером в начале 1700-х годов."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -62,20 +65,28 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
+"Такой способ представления трехмерных вращений был новаторским в то время, "
+"но у него есть несколько недостатков при использовании в разработке игр "
+"(чего и следовало ожидать от парня в забавной шляпе). Идея этого документа "
+"состоит в том, чтобы объяснить почему, а также в общих чертах изложить "
+"передовые методы работы с преобразованиями при программировании 3D-игр."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
-msgstr ""
+msgstr "Проблемы углов Эйлера"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Хотя может показаться интуитивно понятным, что каждая ось вращается, на "
+"самом деле это просто непрактично."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
+#, fuzzy
 msgid "Axis order"
-msgstr ""
+msgstr "Порядок осей"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:35
 msgid ""
@@ -85,6 +96,11 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"Основная причина этого в том, что не существует *уникального* способа "
+"построения ориентации по углам. Не существует стандартной математической "
+"функции, которая складывала бы все углы вместе и производила бы фактическое "
+"трехмерное вращение. Единственный способ получить ориентацию по углам - это "
+"повернуть объект на угол в *произвольном порядке*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -95,6 +111,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Это можно сделать, сначала повернув *X*, затем *Y*, а затем *Z*. В качестве "
+"альтернативы вы можете сначала повернуть по *Y*, затем по *Z* и, наконец, по "
+"*X*. Все работает, но в зависимости от порядка окончательная ориентация "
+"объекта *не обязательно будет одинаковой*. Это означает, что есть несколько "
+"способов построить ориентацию с 3 разных углов, в зависимости от *порядка "
+"поворотов*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -102,11 +124,16 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
+"Ниже представлена визуализация осей вращения (в порядке X, Y, Z) в подвесе "
+"(из Википедии). Как видите, ориентация каждой оси зависит от поворота "
+"предыдущей:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"Вам может быть интересно, как это на вас влияет. Давайте посмотрим на "
+"практический пример:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -114,6 +141,10 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"Представьте, что вы работаете над контроллером от первого лица (например, "
+"над игрой FPS). Перемещение мыши влево и вправо управляет углом обзора "
+"параллельно земле, а перемещение её вверх и вниз перемещает взгляд игрока "
+"вверх и вниз."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -121,12 +152,17 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"В этом случае для достижения желаемого эффекта сначала необходимо применить "
+"вращение по оси *Y* (в данном случае \"вверх\", поскольку Godot использует "
+"ориентацию \"Y-вверх\"), а затем - по оси *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Если бы мы сначала применили вращение по оси *X*, а затем по *Y*, эффект был "
+"бы нежелательным:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -134,6 +170,10 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"В зависимости от типа игры или желаемого эффекта порядок, в котором вы "
+"хотите применить вращение оси, может отличаться. Следовательно, применения "
+"вращения по осям X, Y и Z недостаточно: вам также понадобится *порядок "
+"вращения*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -146,18 +186,23 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Еще одна проблема с использованием углов Эйлера - интерполяция. Представьте, "
+"что вы хотите переключаться между двумя разными позициями камеры или врага "
+"(включая поворот). Один из логических способов приблизиться к этому - "
+"интерполировать углы от одного положения к другому. Можно было бы ожидать, "
+"что это будет выглядеть так:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
-msgstr ""
+msgstr "Но это не всегда дает ожидаемый эффект при использовании углов:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "На самом деле камера вращалась в противоположном направлении!"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "Это может произойти по нескольким причинам:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -166,6 +211,10 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Повороты не отображаются линейно на ориентацию, поэтому их интерполяция не "
+"всегда приводит к кратчайшему пути (т.е. Переход от ``270`` к ``0`` градусов "
+"- не то же самое, что переход от ``270`` к ``360``, даже если углы "
+"эквивалентны)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -173,10 +222,13 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
+"Блокировка подвеса (первая и последняя повернутые оси совпадают, поэтому "
+"степень свободы теряется). См. страницу `Википедии о Gimbal Lock <https://en."
+"wikipedia.org/wiki/Gimbal_lock>`_ для подробного объяснения этой проблемы."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
-msgstr ""
+msgstr "Скажи нет углам Эйлера"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:82
 msgid ""
@@ -186,14 +238,19 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"В результате вы **не должны** использовать **свойство ``rotation`` узлов :"
+"ref:`class_Spatial` в Godot для игр. Он предназначен в основном для "
+"использования в редакторе для согласования с 2D-движком и для простых "
+"вращений (обычно только одна ось или даже две в ограниченных случаях). Как "
+"ни соблазнительно, не используйте его."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr ""
+msgstr "Есть более удобный способ решения проблемы с поворотом."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
-msgstr ""
+msgstr "Введение в трансформации"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:89
 msgid ""
@@ -201,12 +258,18 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
+"Godot использует тип данных :ref:`class_Transform` для ориентации. Каждый "
+"узел :ref:`class_Spatial` имеет свойство ``transform``, которое "
+"отсчитывается от родительской трансформации, если родительский тип является "
+"производным от Spatial."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"Также возможно получить доступ к трансформациям в мировых координатах через "
+"свойство ``global_transform``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
 msgid ""
@@ -219,20 +282,30 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
+"Преобразование имеет :ref:`class_Basis` (подсвойство transform.basis), "
+"которое состоит из трех векторов :ref:`class_Vector3`. К ним можно получить "
+"доступ через свойство ``transform.basis``, либо напрямую к каждой оси через "
+"``transform.basis.x``, ``transform.basis.y`` и ``transform.basis.z``. Каждый "
+"вектор указывает направление вращения его оси, поэтому они эффективно "
+"описывают полное вращение узла. Масштаб (если он однородный) также можно "
+"определить по длине осей. *Базис* также можно интерпретировать как матрицу "
+"3x3 и использовать как ``transform.basis[x][y]``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "Базис по умолчанию (без изменений) похож на:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
 msgid "This is also an analog of a 3x3 identity matrix."
-msgstr ""
+msgstr "Это также аналог единичной матрицы 3x3."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
+"По соглашениям, принятым в OpenGL, ``X`` - это ось *вправо*, ``Y`` - ось "
+"*вверх*, а ``Z`` - ось *вперёд*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:127
 msgid ""
@@ -241,12 +314,19 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
+"Вместе с *базисом* преобразование также имеет *точку опоры*. Это *Vector3*, "
+"определяющий, насколько далеко от фактической точки опоры ``(0, 0, 0)`` "
+"находится это преобразование. Комбинируя *базис* с *точкой опоры*, "
+"*преобразование* эффективно представляет собой уникальный перенос, поворот и "
+"масштаб в пространстве."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
 "One way to visualize a transform is to look at an object's 3D gizmo while in "
 "\"local space\" mode."
 msgstr ""
+"Один из способов визуализировать преобразование - это посмотреть на "
+"трехмерный гизмо объекта в режиме \"локального пространства\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
 msgid ""
@@ -254,47 +334,57 @@ msgid ""
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
+"Стрелки гизмо показывают оси ``X``, ``Y`` и ``Z`` (красным, зелёным и синим "
+"цветом соответственно) основы, а центр гизмо находится в точке опоры объекта."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
+"Для получения дополнительной информации о математике векторов и "
+"преобразований, пожалуйста, прочтите руководства :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
-#, fuzzy
 msgid "Manipulating transforms"
-msgstr "Вычисление Нормалей"
+msgstr "Управление преобразованиями"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:145
 msgid ""
 "Of course, transforms are not as straightforward to manipulate as angles and "
 "have problems of their own."
 msgstr ""
+"Конечно, преобразованиями не так просто манипулировать, как углами, и у них "
+"есть свои собственные проблемы."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:147
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
 msgstr ""
+"Можно повернуть преобразование либо путем умножения его базиса на другой "
+"(это называется накоплением), либо с помощью методов поворота."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
+#, fuzzy
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "Метод в Spatial упрощает это:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "Таким образом поворачивается узел относительно родительского узла."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
+"Для поворота относительно пространства объекта (собственное преобразование "
+"узла) используйте следующее:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
-msgstr ""
+msgstr "Ошибки точности"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:199
 msgid ""
@@ -303,12 +393,18 @@ msgid ""
 "be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
 "other."
 msgstr ""
+"Выполнение последовательных операций с преобразованиями приведет к потере "
+"точности из-за ошибок вычислений с плавающей запятой. Это означает, что "
+"масштаб каждой оси больше не может быть строго ``1.0``, и они могут не быть "
+"повёрнуты строго на ``90`` градусов относительно друг от друга."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:201
 msgid ""
 "If a transform is rotated every frame, it will eventually start deforming "
 "over time. This is unavoidable."
 msgstr ""
+"Если поворот осуществляется каждый кадр, со временем накапливается ошибка "
+"точности. Это неизбежно."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:203
 msgid ""
@@ -316,12 +412,18 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
+"Есть два разных способа справиться с этим. Первый - *ортонормировать* "
+"преобразование через некоторое время (возможно, один раз за кадр, если вы "
+"изменяете его каждый кадр):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
+"В результате все оси снова будут иметь длину ``1.0`` и будут повёрнуты на "
+"``90`` градусов друг относительно друга. Однако любой масштаб, примененный к "
+"преобразованию, будет утерян."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
 msgid ""
@@ -329,10 +431,13 @@ msgid ""
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
+"Рекомендуется не масштабировать узлы, которыми будут манипулировать; вместо "
+"этого масштабируйте их дочерние узлы (например, MeshInstance). Если вам "
+"абсолютно необходимо масштабировать узел, повторно примените его в конце:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
-msgstr ""
+msgstr "Получение информации"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -340,35 +445,43 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
+"В этот момент вы можете подумать: **\"Хорошо, но как мне получить углы при "
+"трансформации?\"**. И снова ответ: вам это не нужно. Вы должны любыми "
+"способами избегать мыслей об углах."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
+"Представьте, что вам нужно выстрелить в направлении, в котором смотрит ваш "
+"игрок. Просто используйте ось, направленную вперёд (обычно ``Z`` или ``-Z``)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:247
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
+"Враг смотрит на игрока? Используйте для этого скалярное произведение (см. "
+"Руководство :ref:`doc_vector_math` для объяснения скалярного произведения):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr ""
+msgstr "Атака слева:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
-msgstr ""
+msgstr "Прыжок:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:302
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
+"Всё обычное поведение и логику можно реализовать с помощью одних только "
+"векторов."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:305
-#, fuzzy
 msgid "Setting information"
-msgstr "Смотрите также"
+msgstr "Установка информации"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
@@ -377,6 +490,11 @@ msgid ""
 "definitely done using angles, because you *do want* the transforms to happen "
 "in a specific order."
 msgstr ""
+"Конечно, есть случаи, когда вы хотите установить информацию для "
+"преобразования. Представьте себе контроллер от первого лица или движущуюся "
+"по орбите камеру. Это определенно делается с использованием углов, потому "
+"что вы *действительно хотите*, чтобы преобразования происходили в "
+"определенном порядке."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
@@ -384,21 +502,26 @@ msgid ""
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
+"В таких случаях сохраняйте углы и повороты *вне* преобразования и "
+"устанавливайте их каждый кадр. Не пытайтесь получить и повторно использовать "
+"их, потому что преобразование не предназначено для использования таким "
+"образом."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "Пример осмотра вокруг в стиле FPS:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
+"Как видите, в таких случаях ещё проще сохранить вращение снаружи, а затем "
+"использовать преобразование в качестве *окончательной* ориентации."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:356
-#, fuzzy
 msgid "Interpolating with quaternions"
-msgstr "Локализация"
+msgstr "Интерполяция с кватернионами"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
 msgid ""
@@ -409,10 +532,17 @@ msgid ""
 "interpolation. As in, if you have two rotations, a quaternion will smoothly "
 "allow interpolation between them using the closest axis."
 msgstr ""
+"Интерполяция между двумя преобразованиями может эффективно выполняться с "
+"помощью кватернионов. Более подробную информацию о том, как работают "
+"кватернионы, можно найти в других местах в Интернете. Для практического "
+"использования достаточно понять, что в основном они используются для "
+"интерполяции кратчайшего пути. Например, если у вас есть два поворота, "
+"кватернион плавно выполнит интерполяцию между ними с использованием "
+"ближайшей оси."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "Преобразовать вращение в кватернион несложно."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
 msgid ""
@@ -422,16 +552,24 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized. Otherwise, "
 "they will also suffer from numerical precision errors."
 msgstr ""
+"В документации :ref:`class_Quat` содержится дополнительная информация об "
+"этом типе данных (он также может выполнять накопление преобразований, точки "
+"преобразования и т.д., хотя это используется реже). Если вы много раз "
+"интерполируете или применяете операции к кватернионам, имейте в виду, что "
+"они должны быть в конечном итоге нормализованы. В противном случае они также "
+"будут иметь ошибки числовой точности."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
 msgstr ""
+"Кватернионы полезны при выполнении интерполяции камеры, пути и т.д., так как "
+"результат всегда будет правильным и плавным."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"
-msgstr ""
+msgstr "Трансформации - твои друзья"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
@@ -439,6 +577,9 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
+"Для большинства новичков привыкание к работе с преобразованиями может занять "
+"некоторое время. Однако, как только вы к ним привыкнете, вы оцените их "
+"простоту и мощность."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:396
 msgid ""
@@ -446,3 +587,6 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
+"Не стесняйтесь обращаться за помощью по этой теме в любое из `онлайн-"
+"сообществ Godot <https://godotengine.org/community>`_ и, как только вы "
+"станете достаточно уверенными в теме, пожалуйста, помогите другим!"

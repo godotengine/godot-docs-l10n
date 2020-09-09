@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -297,17 +297,23 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
 msgid ""
+"`get_slide_count()` only counts times the body has collided and changed "
+"direction."
+msgstr ""
+
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:135
+msgid ""
 "See :ref:`KinematicCollision2D <class_KinematicCollision2D>` for details on "
 "what collision data is returned."
 msgstr ""
 "Mira :ref:`KinematicCollision2D <class_KinematicCollision2D>` para más "
 "detalles sobre que datos de colisión son retornados."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:137
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
 msgid "Which movement method to use?"
 msgstr "¿Cuál método de movimiento hay que usar?"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:141
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
 "movement function to use?\" Often, the response is to use "
@@ -324,7 +330,7 @@ msgstr ""
 "los siguientes dos fragmentos de código producen la misma respuesta a "
 "colisiones:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:170
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:172
 msgid ""
 "Anything you do with ``move_and_slide()`` can also be done with "
 "``move_and_collide()``, but it might take a little more code. However, as "
@@ -336,7 +342,7 @@ msgstr ""
 "embargo, como veremos en los siguientes ejemplos, hay casos en los que "
 "``move_and_slide()`` no provee la respuesta deseada."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:174
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:176
 msgid ""
 "In the example above, we assign the velocity that ``move_and_slide()`` "
 "returns back into the ``velocity`` variable. This is because when the "
@@ -348,7 +354,7 @@ msgstr ""
 "el personaje colisiona con el entorno, la función internamente vuelve a "
 "calcular la velocidad para reflejar la desaceleración."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:179
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:181
 msgid ""
 "For example, if your character fell on the floor, you don't want it to "
 "accumulate vertical speed due to the effect of gravity. Instead, you want "
@@ -358,7 +364,7 @@ msgstr ""
 "velocidad vertical por efecto de la gravedad. En vez de eso, quieres que su "
 "velocidad vertical sea restablecida a cero."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:183
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:185
 msgid ""
 "``move_and_slide()`` may also recalculate the kinematic body's velocity "
 "several times in a loop as, to produce a smooth motion, it moves the "
@@ -373,11 +379,11 @@ msgstr ""
 "podemos almacenar en nuestra variable ``velocity``, y usarla en el siguiente "
 "frame."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:190
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
 msgid "Examples"
 msgstr "Ejemplos"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:194
 msgid ""
 "To see these examples in action, download the sample project: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
@@ -385,11 +391,11 @@ msgstr ""
 "Para ver estos ejemplos en funcionamiento, descarga el proyecto: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:196
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
 msgid "Movement and walls"
 msgstr "Movimiento y paredes"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
 msgid ""
 "If you've downloaded the sample project, this example is in \"BasicMovement."
 "tscn\"."
@@ -397,7 +403,7 @@ msgstr ""
 "Si has descargado el proyecto, este ejemplo está en la escena "
 "\"BasicMovement.tscn\"."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:202
 msgid ""
 "For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
@@ -412,18 +418,18 @@ msgstr ""
 "selecciona \"Nuevo RectangleShape2D\" y redimensiona el rectángulo para que "
 "quepa sobre la imagen del sprite."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:206
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr ""
 "Ver :ref:`doc_2d_movement` para más ejemplos de técnicas para implementar "
 "movimiento en 2D."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:210
 msgid "Attach a script to the KinematicBody2D and add the following code:"
 msgstr "Anexa un script al KinematicBody2D y agrega el siguiente código:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:271
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:273
 msgid ""
 "Run this scene and you'll see that ``move_and_collide()`` works as expected, "
 "moving the body along the velocity vector. Now let's see what happens when "
@@ -438,7 +444,7 @@ msgstr ""
 "rectangular. Para visualizarlo puedes utilizar un Sprite, un Polygon2D o "
 "activa la opción \"Ver Formas de Colisión\" del menú \"Depurar\"."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:277
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:279
 msgid ""
 "Run the scene again and try moving into the obstacle. You'll see that the "
 "``KinematicBody2D`` can't penetrate the obstacle. However, try moving into "
@@ -450,7 +456,7 @@ msgstr ""
 "un obstáculo con la superficie en ángulo y verás que se \"adhiere\" en el "
 "obstáculo, como si estuviese atascado."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:281
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:283
 msgid ""
 "This happens because there is no *collision response*. "
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
@@ -460,7 +466,7 @@ msgstr ""
 "detiene el movimiento cuando ocurre una colisión. Tenemos que programar la "
 "respuesta que queremos cuando eso sucede."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:285
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:287
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
 "Note that we removed ``delta`` from the velocity calculation."
@@ -469,7 +475,7 @@ msgstr ""
 "nuevamente. Notar que se ha quitado ``delta`` del cálculo del parámetro "
 "velocity."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:288
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:290
 msgid ""
 "``move_and_slide()`` provides a default collision response of sliding the "
 "body along the collision object. This is useful for a great many game types, "
@@ -480,11 +486,11 @@ msgstr ""
 "muchos tipos de juegos y puede que sea todo lo necesario para obtener el "
 "comportamiento deseado."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:293
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
 msgid "Bouncing/reflecting"
 msgstr "Rebote/reflejo"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:297
 msgid ""
 "What if you don't want a sliding collision response? For this example "
 "(\"BounceandCollide.tscn\" in the sample project), we have a character "
@@ -495,7 +501,7 @@ msgstr ""
 "personaje disparando balas y queremos que las balas reboten al golpear las "
 "paredes."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:299
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:301
 msgid ""
 "This example uses three scenes. The main scene contains the Player and "
 "Walls. The Bullet and Wall are separate scenes so that they can be instanced."
@@ -504,7 +510,7 @@ msgstr ""
 "(jugador) y las Walls (paredes), las Bullet (balas) y paredes son escenas "
 "separadas que pueden ser instanciadas."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:302
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:304
 msgid ""
 "The Player is controlled by the `w` and `s` keys for forward and back. "
 "Aiming uses the mouse pointer. Here is the code for the Player, using "
@@ -514,11 +520,11 @@ msgstr ""
 "hacia atrás, se apunta con el puntero del ratón. Este es el código de "
 "Player, usando ``move_and_slide()``:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:389
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:391
 msgid "And the code for the Bullet:"
 msgstr "Y el código para Bullet:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:451
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:453
 msgid ""
 "The action happens in ``_physics_process()``. After using "
 "``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
@@ -528,7 +534,7 @@ msgstr ""
 "de utilizar ``move_and_collide()``, la función retornará un objeto "
 "``KinematicCollision2D`` (de otro modo retornará ``null``)."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:455
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:457
 msgid ""
 "If there is a returned collision, we use the ``normal`` of the collision to "
 "reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
@@ -536,7 +542,7 @@ msgstr ""
 "Si retorna un objeto, usaremos la ``normal`` de la colisión para reflejar la "
 "``velocity`` de Bullet con le método ``Vector2.bounce()``."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:458
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:460
 msgid ""
 "If the colliding object (``collider``) has a ``hit`` method, we also call "
 "it. In the example project, we've added a flashing color effect to the Wall "
@@ -546,11 +552,11 @@ msgstr ""
 "el proyecto agregamos un efecto de destello de color a Wall para demostrar "
 "esto."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:465
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
 msgid "Platformer movement"
 msgstr "Movimiento de juego de plataformas"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:469
 msgid ""
 "Let's try one more popular example: the 2D platformer. ``move_and_slide()`` "
 "is ideal for quickly getting a functional character controller up and "
@@ -562,7 +568,7 @@ msgstr ""
 "personaje funcional. Si has descargado el proyecto de ejemplo, lo podrás "
 "encontrar en \"Platformer.tscn\"."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:471
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:473
 msgid ""
 "For this example, we'll assume you have a level made of ``StaticBody2D`` "
 "objects. They can be any shape and size. In the sample project, we're using :"
@@ -573,11 +579,11 @@ msgstr ""
 "proyecto utilizamos :ref:`Polygon2D <class_Polygon2D>` para crear las "
 "figuras de las plataformas."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:475
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:477
 msgid "Here's the code for the player body:"
 msgstr "Este es el código para el jugador:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:556
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:558
 msgid ""
 "When using ``move_and_slide()``, the function returns a vector representing "
 "the movement that remained after the slide collision occurred. Setting that "
@@ -591,7 +597,7 @@ msgstr ""
 "personaje nos permite un movimiento suave hacia arriba y hacia abajo en las "
 "pendientes. Prueba quitar ``velocity =`` y observa lo que sucede."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:561
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:563
 msgid ""
 "Also note that we've added ``Vector2(0, -1)`` as the floor normal. This "
 "vector points straight upward. As a result, if the character collides with "
@@ -602,7 +608,7 @@ msgstr ""
 "personaje colisiona con un objeto que tiene esta normal, será considerado "
 "como suelo."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:565
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:567
 msgid ""
 "Using the floor normal allows us to make jumping work, using "
 "``is_on_floor()``. This function will only return ``true`` after a "
@@ -617,7 +623,7 @@ msgstr ""
 "suelo. Puedes controlar el ángulo máximo estableciendo un "
 "``floor_max_angle``."
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:570
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:572
 msgid ""
 "This angle also allows you to implement other features like wall jumps using "
 "``is_on_wall()``, for example."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,12 +89,12 @@ msgid ""
 "placeholders."
 msgstr ""
 "Chcete-li navrhnout dobré uživatelské rozhraní, musíte nejprve vytvořit "
-"hrubou návrh: prostou verzi výkresu, která se zaměřuje na umístění komponent "
-"uživatelského rozhraní, jejich velikost a interakci s uživatelem. Tužka a "
-"papír je vše, co potřebujete. V této fázi byste neměli používat vymazlenouou "
-"či finální grafiku. Pak už potřebujete jen jednoduché schematické sprity a "
-"můžete na první dobrou skočit do Godota. Chcete se ujistit, že se hráči v "
-"tomto schematickém rozhraní neztratí."
+"hrubý návrh: jednoduchý nákres, která se zaměří na umístění komponent "
+"uživatelského rozhraní, jejich velikost a interakci s uživatelem. Stačí na "
+"to tužka a papír. V této fázi byste neměli používat vymazlenouou či finální "
+"grafiku. Pak už potřebujete jen jednoduché schematické sprity a můžete na "
+"první dobrou skočit do Godota. Chcete se ujistit, že se hráči v tomto "
+"schematickém rozhraní neztratí."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
 msgid "The UI's rough plan or mockup"
@@ -130,22 +130,35 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Vždy se pokuste, aby rozhraní fungovalo nejprve s jednoduchým textem a "
+"rámečky. Je snadné vyměnit textury později. Profesionální návrháři UX často "
+"pracují s jednoduchými obrysy a boxy v odstínech šedé. Když odeberete barvy "
+"a načančané vizuální prvky, je mnohem snazší navrhout optimální velikost a "
+"správné rozmístění prvků uživatelského rozhraní. Pomáhá vám to vytvořit "
+"bytelné základy návrhu na kterých budete později stavět."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
 msgid "There are two ways to design your UI in Godot. You can:"
 msgstr ""
+"Existují dva způsoby, jak navrhnout vaše uživatelské rozhraní v Godotu. "
+"Můžete:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:67
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
+"Vytvoříte vše v jedné scéně a nakonec uložíte některé části jako znovu "
+"použitelné scény."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
+"Vytvářejte šablony scén pro opakovaně použitelné komponenty UI a pro "
+"konkrétní součásti vytvořte specifické komponenty, které dědí ze základních "
+"scén."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -154,31 +167,40 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"Použijeme první přístup, protože první verze vašeho uživatelského rozhraní "
+"nemusí fungovat od začátku tak, jak byste chtěli. Pravděpodobně při tvorbě "
+"někteé části zahodíte a jiné upravíte. Když jste si jistí, že všechno "
+"funguje, tak jak jste zamýšleli, je snadné použít některé části znovu, "
+"ukážeme si to níže."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
+"Soubory, které najdete v Godotu. Grafika vypadá čistěji než v hrubém "
+"designu, ale stále jsou to zástupné symboly."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
-msgstr ""
+msgstr "Navrhněte hlavní menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:85
 msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"Než skočíme do editoru, naplánujeme si podle našeho nákresu, jak budeme "
+"zanořovat jednotlivé kontejnery."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "Rozbor návrhu uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "Zde jsou moje tři základní pravidla pro nalezení vhodných kontejnerů:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
 msgid ""
@@ -186,22 +208,30 @@ msgid ""
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
+"Rozdělte uživatelské rozhraní do vnořených polí, od největšího, který "
+"obsahuje vše, po nejmenší, které zahrnuje jeden widget, jako je např. panel "
+"s popiskem, panel nebo tlačítko."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
+"Pokud má oblast nějaký vnitřní okraj (padding), použijte ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
+"Pokud jsou prvky uspořádány do řádků nebo sloupců, použijte "
+"``HBoxContainer`` nebo ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Tato pravidla jsou dostatečná, abychom mohli začít, a dobře fungují pro "
+"jednoduchá rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:103
 msgid ""
@@ -212,10 +242,16 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"V hlavní nabídce je největším oknem celé herní okno. Mezi okraji okna a "
+"prvními komponenty je výplň (padding - vnitřní okraj): to by měl zajistit "
+"``MarginContainer``. Dále je obrazovka rozdělena do dvou sloupců, takže "
+"použijeme ``HBoxContainer``. V levém sloupci spravujeme řádky pomocí "
+"``VBoxContainer``. A v pravém sloupci vycentrujeme obrázek pomocí "
+"``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr ""
+msgstr "Stavební bloky rozhraní, rozdělené podle tří základních pravidel."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -223,10 +259,13 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
+"Kontejnery se přizpůsobí rozlišení okna a poměru šířka k výšce. Ačkoli "
+"bychom mohli prvky UI umisťovat ručně, kontejnery jsou rychlejší, přesnější "
+"a **vnímavější (responzivní)**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Příprava scény hlavního menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -235,18 +274,26 @@ msgid ""
 "editor then change **Display > Window > Size > Width** to ``1366`` and "
 "**Display > Window > Size > Height** to ``768``."
 msgstr ""
+"Tento tutoriál je založen na velikosti okna 1366 × 768. Chcete-li změnit "
+"velikost základního okna projektu, otevřete **Projekt> Nastavení projektu** "
+"v horní části editoru a poté změňte **Displej> Okno> Velikost> Šířka** na "
+"``1366`` a **Displej> Okno> Velikost > Výška** na ``768``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Pokud zapomenete změnit velikost okna, kotvy a kontejnery se nemusí chovat "
+"podle očekávání."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
+"Vytvořme hlavní nabídku. Postavíme ji v jedné scéně. Chcete-li vytvořit "
+"prázdnou scénu, klikněte na **Scéna > Nová scéna**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
@@ -256,6 +303,12 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press :kbd:`Ctrl + S` (:"
 "kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
+"Před uložením scény musíme přidat kořenový uzel. Kořen vašeho uživatelského "
+"rozhraní by měl být od středu nejvzdálenější kontejner nebo prvek. V tomto "
+"případě je to ``MarginContainer``. ``MarginContainer`` je dobrým výchozím "
+"bodem pro většinu rozhraní, protože často potřebujete čalounění kolem "
+"uživatelského rozhraní. Stisknutím: kbd: `Ctrl + S` (: kbd:` Cmd + S` v "
+"systému MacOS) uložte scénu na disk. Pojmenujte ji *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
@@ -263,54 +316,61 @@ msgid ""
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
 "Constants`` section. Unfold it. Set the margins as such:"
 msgstr ""
+"Znovu vyberte ``MarginContainer`` a zamiřte do Inspektorova, abyste "
+"stanovili velikost okrajů. Přejděte dolů do třídy ``Control`` do sekce "
+"``Custom Constants``. Rozklikněte ji. Nastavte okraje takto:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid "Margin Right: *120*"
-msgstr ""
+msgstr "Margin Right: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:147
 msgid "Margin Top: *80*"
-msgstr ""
+msgstr "Margin Topj: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:148
 msgid "Margin Left: *120*"
-msgstr ""
+msgstr "Margin Left: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "Margin Bottom: *80*"
-msgstr ""
+msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
 msgstr ""
+"Chceme, aby kontejner pokryl celé okno. Na panelu nástrojů nad výřezem "
+"otevřete nabídku **Rozvržení** a vyberte poslední možnost, **Full Rect**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Přidání spritů uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Vyberte ``MarginContainer`` a vytvořte prvky uživatelského rozhraní jako "
+"uzly ``TextureRect``. Potřebujeme:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
-msgstr ""
+msgstr "název nebo logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr ""
+msgstr "tři možnosti textu jako jednotlivé uzly,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
-msgstr ""
+msgstr "poznámku k verzi,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 msgid "and the main menu's illustration."
-msgstr ""
+msgstr "a ilustraci hlavního menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid ""
@@ -320,6 +380,11 @@ msgid ""
 "`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
+"Klikněte na tlačítko **Přidat uzel** nebo stiskněte: kbd: `Ctrl + A` (: kbd:"
+"`Cmd + A` na MacOS) na klávesnici. Začněte psát ``TextureRect`` a najděte "
+"odpovídající uzel a stiskněte enter. S vybraným novým uzlem stiskněte "
+"pětkrát: kbd: `Ctrl + D` (: kbd:`Cmd + D` v systému MacOS) a vytvořte pět "
+"dalších instancí ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
@@ -327,10 +392,13 @@ msgid ""
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
+"Klepnutím na jednotlivé uzly jej vyberte. V Inspektoru najděte vlastnost "
+"**Texture** a klikněte na **[prázdný]> Načíst**. Otevře se prohlížeč souborů "
+"a umožní vám vybrat sprite pro načtení textury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
 msgid "The file browser lets you find and load textures."
-msgstr ""
+msgstr "Prohlížeč souborů umožňí najít a načíst textury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
@@ -340,20 +408,27 @@ msgid ""
 "rename them. Nothing has been placed in containers yet so this should look "
 "messy."
 msgstr ""
+"Opakujte operaci pro všechny uzly ``TextureRect``. Měli byste mít logo, "
+"obrázek, tři možnosti nabídky a poznámku k verzi, vše jako samostatný uzel. "
+"Poté poklepejte na každý z uzlů na kartě Scéna a přejmenujte je. Do "
+"kontejnerů zatím nebylo nic umístěno, takže vše vypadá krapet chaoticky."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid "The six nodes with textures loaded."
-msgstr ""
+msgstr "Šest uzlů s načtenými texturami."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"Pokud chcete ve vaší hře podporovat lokalizaci, použijte ``Labels`` pro "
+"možnosti nabídky namísto ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:194
 msgid "Add containers to place UI elements automatically"
 msgstr ""
+"Přidání kontejnerů pro automatickému umístění prvků uživatelského rozhraní"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
 msgid ""
@@ -367,6 +442,16 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behavior, I recommend to favor box containers."
 msgstr ""
+"Naše hlavní menu má určitý odstup od okrajů obrazovky (tzv. padding). Je "
+"rozděleno na dvě části: vlevo máme logo a možnosti menu. Na pravé straně, "
+"máme znaky. K dosažení tohoto cíle můžeme použít jeden ze dvou kontejnerů: "
+"''HSplitContainer'' nebo ''HBoxContainer''. Split kontejnery rozdělují na "
+"dvě části: levou a pravou stranu nebo horní a dolní stranu. Umožňují také "
+"uživatelsky změnit velikost levé a pravé oblasti pomocí interaktivního "
+"panelu. Na druhou stranu, ''HBoxContainer'' se jenom rozdělí na tolik "
+"sloupců, kolik má podřízených uzlů. I když můžete deaktivovat uživatelskou "
+"změnu velikosti rozdělelovacího kontejneru, doporučuji upřednostňovat box "
+"kontejnery."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
@@ -375,12 +460,15 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
+"Vyberte ''MarginContainer'' a přidejte ''HBoxContainer''. Poté potřebujeme "
+"dva kontejnery jako podřízené položky našeho ''HBoxContainer''' pro možnosti "
+"nabídky vlevo a ''CenterContainer'' pro ilustraci vpravo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
-msgstr ""
+msgstr "Měli byste mít čtyři vnořené kontejnery a vedle nich uzly TextureRect."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid ""
@@ -389,22 +477,27 @@ msgid ""
 "version note. Drag and drop them into the ``VBoxContainer``. The nodes "
 "should position automatically."
 msgstr ""
+"Ve stromu uzlů vyberte všechny uzly ''TextureRect'', které by měly být na "
+"levé straně: logo, možnosti nabídky (Pokračovat, NewGame, Možnosti) a "
+"poznámku k verzi. Přetáhněte je do ''VBoxContainer''. Uzly by měly být "
+"umístěny automaticky."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:224
 msgid "Containers automatically place and resize textures"
-msgstr ""
+msgstr "Kontejnery textury automaticky umisťují a zároveň mění jejich velikost"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:226
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "Zbývá nám vyřešit dva problémy:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid "The characters on the right aren't centered."
-msgstr ""
+msgstr "Znaky napravo nejsou vycentrovány."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
 msgid "There's no space between the logo and the other UI elements."
 msgstr ""
+"Mezi logem a ostatními prvky uživatelského rozhraní není žádný prostor."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
@@ -417,12 +510,21 @@ msgid ""
 "Characters node into the ``CenterContainer``. The Characters element will "
 "center automatically."
 msgstr ""
+"Chcete-li vystředět znaky vpravo, vyberte nejprve ''CenterContainer''. Pak v "
+"Inspectoru přejděte dolů do kategorie **Size Flags** a klikněte na pole "
+"vpravo od vlastnosti **Vertical** a zaškrtněte kromě **Fill** také "
+"**Expand** . Totéž pro **Horizontal** vlastnost. Díky tomu se "
+"''CenterContainer'' rozšíří do celého dostupného prostoru a zároveň "
+"respektuje svého souseda ''VBoxContainer''. Nakonec přetáhněte uzel Znaky do "
+"''CenterContainer''. Prvek Znaky se automaticky vystředí."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
+"Uzel znaku se vystředí uvnitř pravé poloviny obrazovky, jakmile jej umístíte "
+"do CenterContaineru."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -434,12 +536,21 @@ msgid ""
 "inside the new ``VBoxContainer``. The UI's layout should barely change, if "
 "at all."
 msgstr ""
+"Pro rozmístění nabídky možnosti a loga nalevo, použijeme dálší kontejner a "
+"příznaky jeho velikosti. Vyberte ''VBoxContainer'' a stisknutím klávesy :"
+"kbd:'Ctrl + A' (:kbd:'Cmd + A' v systému macOS) do něj přidejte nový uzel. "
+"Konkrétně druhý ''VBoxContainer'' a pojmenujte jej *MenuOptions*. Vyberte "
+"všechny tři možnosti nabídky, ''Pokračovat'', ''NewGame'' a ''Možnosti'' a "
+"přetáhněte je do nového ''VBoxContainer''. Rozložení uživatelského rozhraní "
+"by se téměř nemělo změnit."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
+"Umístěte nový kontejner mezi další dva uzly, abyste zachovali rozložení "
+"uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
@@ -451,16 +562,27 @@ msgid ""
 "the available vertical space while respecting its neighbors, the ``Logo`` "
 "and ``Version`` elements."
 msgstr ""
+"Nyní, když jsme seskupili možnosti nabídky do jednoho kontejneru, můžeme mu "
+"říci, aby se rozbalil tak, aby zabral co nejvíce vertikálního prostoru. "
+"Vyberte uzel ``MenuOptions``. V Inspektoru přejděte dolů do kategorie **Size "
+"flags**. Klikněte na pole vpravo od vlastnosti **Vertical** a zaškrtněte "
+"kromě **Fill** také **Expand** . Kontejner se rozbalí tak, aby zabral "
+"veškerý dostupný vertikální prostor při respektování svých sousedů, prvků "
+"``Logo`` a ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
+"Abychom vycentrovaly uzly v ''VBoxContainer'', přejděte na začátek "
+"Inspektoru a změňte vlastnost **Alignment** na **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
+"Možnosti nabídky by se měly vertikálně vycentrovat v levém sloupci "
+"uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
@@ -470,15 +592,22 @@ msgid ""
 "enter, the **Separation** property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
+"Abychom to dokončili, přidejme určitý prostor mezi možnosti nabídky. "
+"Rozbalte kategorii **Custom constants** pod **Size Flags** a klikněte na "
+"pole vedle parametru **Separation**. Nastavte jej na 30. Jakmile stisknete "
+"klávesu Enter, vlastnost **Separation** se aktivuje a Godot přidá mezi "
+"možnosti nabídky 30 pixelů."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
 msgid "The final interface."
-msgstr ""
+msgstr "Finální rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
+"Bez jediného řádku kódu máme do puntíku přesné a zároveň responzivní hlavní "
+"menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
 msgid ""
@@ -487,6 +616,10 @@ msgid ""
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
+"Gratulujeme, že jste se dostali až sem! Můžete si stáhnout finální menu :"
+"download:`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` k "
+"porovnání s vlastní verzí. V dalším tutoriálu vytvoříte uživatelské rozhraní "
+"hry s ukazately a čítači položek."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""
@@ -495,6 +628,10 @@ msgid ""
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
+"Responzivní uživatelské rozhraní je o tom, že se naše uživatelská rozhraní "
+"budou dobře škálovat na všech typech obrazovky. Televizní obrazovky a "
+"počítačové displeje mají různé velikosti a poměry stran. V Godotu používáme "
+"kontejnery k ovládání polohy a velikosti prvků uživatelského rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
 msgid ""
@@ -503,6 +640,11 @@ msgid ""
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
+"Na pořadí, ve kterém zanořujete, záleží. Chcete-li zjistit, zda se vaše "
+"uživatelská rozhraní pěkně přizpůsobí různým poměrům obrazovky, vyberte "
+"kořenový uzel, stisknutím :kbd:`Q` aktivujte režim výběru, vyberte kontejner "
+"a kliknutím a tažením jednoho z rohů kontejneru jej změňte. Komponenty "
+"uživatelského rozhraní by měly uvnitř měnit polohu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""
@@ -511,6 +653,10 @@ msgid ""
 "ratios, but we also need the entire game to adapt to different screen "
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
+"Všimněte si, že ačkoli kontejnery přemisťují sprity, nemění je. To je "
+"normální chování. Chceme totiž, aby systém UI zvládal různé poměry "
+"obrazovky, ale také potřebujeme, aby se celá hra přizpůsobila různým "
+"rozlišením obrazovky. Za tímto účelem Godot škáluje celé okno nahoru a dolů."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:311
 msgid ""
@@ -521,3 +667,9 @@ msgid ""
 "**Mode**, **Aspect**, and **Shrink**, control the screen size. For more "
 "information, see :ref:`doc_multiple_resolutions`."
 msgstr ""
+"Režim pro chování měřítka můžete změnit v nastavení projektu: v horní "
+"nabídce klikněte na **Projekt > Nastavení projektu**. V levém sloupci okna "
+"vyhledejte kategorii **Display**. Klikněte na podkategorii **Okno**. Na "
+"pravé straně okna najdete sekci **Stretch**. Tři nastavení, **Mode**, "
+"**Aspect**, a **Shrink**, řídí velikost obrazovky. Další informace naleznete "
+"v tématu :ref:'doc_multiple_resolutions'."

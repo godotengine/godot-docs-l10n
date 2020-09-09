@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,16 +284,16 @@ msgid "Normalization"
 msgstr "Нормализация"
 
 #: ../../docs/tutorials/math/vector_math.rst:189
-#, fuzzy
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
 "its direction. This is done by dividing each of its components by its "
 "magnitude. Because this is such a common operation, ``Vector2`` and "
 "``Vector3`` provide a method for normalizing:"
 msgstr ""
-"Под **нормализацией** вектора подразумевается уменьшения его длины до ``1`` "
-"с сохранением его направления. Это может быть достигнуто делением каждого из "
-"его компонентов на длину:"
+"**Нормализация** вектора означает приведение его длины к ``1`` с сохранением "
+"его направления. Это делается путем деления каждого из его компонентов на "
+"длину. Поскольку это такая распространенная операция, ``Vector2`` и "
+"``Vector3`` предоставляют метод нормализации:"
 
 #: ../../docs/tutorials/math/vector_math.rst:204
 msgid ""
@@ -338,12 +338,12 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
-"Нормаль поверхности имеет значение ``(0, -1)`` потому что это горизонтальная "
-"поверхность. Когда шар сталкивается , мы берём оставшийся момент движения "
-"(количество оставшихся шагов когда он ударяется об плоскость) и отражаем его "
-"используя нормаль. В Godot, класс :ref:`Vector2 <class_Vector2>` имеет метод "
-"``bounce()`` для вычисления этого. Приведём пример диаграммы показанной выше "
-"на GDScript используя :ref:`KinematicBody2D <class_KinematicBody2D>`:"
+"Нормаль поверхности имеет значение ``(0, -1)``, потому что это "
+"горизонтальная поверхность. Когда шар сталкивается, мы берём его оставшееся "
+"движение (количество, оставшееся, когда он касается поверхности) и отражаем "
+"его, используя нормаль. В Godot класс :ref:`Vector2 <class_Vector2>` имеет "
+"метод ``bounce()`` для обработки этого. Вот пример GDScript приведённой выше "
+"диаграммы с использованием :ref:`KinematicBody2D <class_KinematicBody2D>`:"
 
 #: ../../docs/tutorials/math/vector_math.rst:251
 msgid "Dot product"
@@ -412,7 +412,6 @@ msgstr ""
 "угол обзора равен **180°** ?"
 
 #: ../../docs/tutorials/math/vector_math.rst:298
-#, fuzzy
 msgid ""
 "The green arrows ``fA`` and ``fB`` are **unit vectors** representing the "
 "zombies' facing directions and the blue semicircle represents its field of "
@@ -423,9 +422,10 @@ msgid ""
 msgstr ""
 "Зелёные стрелки ``fA`` и ``fB`` это **единичные векторы** представляющие "
 "направление взгляда зомби, а синий полукруг представляет их поле обзора. Для "
-"зомби ``A``, мы находим направление вектора ``AP`` направленного на игрока "
-"использующего ``P - A`` и нормализующего его. Если угол между этим вектором "
-"и вектором взгляда меньше 90°, то зомби увидит игрока."
+"зомби ``A``, мы находим направление вектора ``AP`` указывающего на игрока с "
+"помошью ``P - A`` и нормализуем его, однако, Godot имеет вспомогательный "
+"метод для этого, называемый ``direction_to``. Если угол между этим вектором "
+"и вектором взгляда меньше 90°, то зомби может увидеть игрока."
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "In code it would look like this:"
@@ -521,8 +521,8 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:415
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 #: ../../docs/tutorials/math/vector_math.rst:416
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"

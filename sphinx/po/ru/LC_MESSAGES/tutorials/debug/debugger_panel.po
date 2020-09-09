@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,39 +85,46 @@ msgstr ""
 msgid "**Continue**. This button resumes the game after a breakpoint or pause."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:36
+#: ../../docs/tutorials/debug/debugger_panel.rst:37
+msgid ""
+"Breakpoints won't break on code if it's :ref:`running in a thread "
+"<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
+"debugger."
+msgstr ""
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
 msgstr "Ошибки"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:38
+#: ../../docs/tutorials/debug/debugger_panel.rst:44
 msgid ""
 "This is where error and warning messages are printed while running the game."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:40
+#: ../../docs/tutorials/debug/debugger_panel.rst:46
 msgid ""
 "You can disable specific warnings in **Project Settings > Debug > GDScript**."
 msgstr ""
 "Вы можете отключить определенные предупреждения в **Project Settings > Debug "
 "> GDScript**."
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:43
+#: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
 msgstr "Профайлер"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:45
+#: ../../docs/tutorials/debug/debugger_panel.rst:51
 msgid ""
 "The debugger comes with three profilers for your processor, network "
 "operations, and video memory."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:48
+#: ../../docs/tutorials/debug/debugger_panel.rst:54
 msgid ""
 "The profiler is used to show why individual frames take as long as they do "
 "to process and render."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:51
+#: ../../docs/tutorials/debug/debugger_panel.rst:57
 msgid ""
 "Unlike other debugging tools, the profiler does not start automatically. It "
 "can be started at any time during gameplay by pressing the start button. You "
@@ -128,7 +135,7 @@ msgid ""
 "and start the profiler again."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:59
+#: ../../docs/tutorials/debug/debugger_panel.rst:65
 msgid ""
 "After starting and stopping the profiler, you should see things being kept "
 "track of on the left and a graph on the right. The items listed on the left "
@@ -136,25 +143,25 @@ msgid ""
 "value for time and calls for the current frame you are looking at."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:64
+#: ../../docs/tutorials/debug/debugger_panel.rst:70
 msgid ""
 "The frame number in the top right tells you which frame you are currently "
 "looking at. You can change this by using the up or down arrows, typing in "
 "the frame number, or clicking on the graph."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:68
+#: ../../docs/tutorials/debug/debugger_panel.rst:74
 msgid ""
 "If you want to add something to your graph or think it looks too cluttered, "
 "you can check and uncheck the box next to an item to add or remove it from "
 "the graph."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:73
+#: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
 msgstr "Сетевой профайлер"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:75
+#: ../../docs/tutorials/debug/debugger_panel.rst:81
 msgid ""
 "The Network Profiler contains a list of all the nodes that communicate over "
 "the multiplayer API and, for each one, some counters on the amount of "
@@ -162,11 +169,11 @@ msgid ""
 "meter that displays the total bandwidth usage at any given moment."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:81
+#: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
 msgstr "Мониторинг"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:83
+#: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
 "The monitors are graphs of several aspects of the game while its running "
 "such as FPS, memory usage, how many nodes are in a scene and more. All "
@@ -175,11 +182,11 @@ msgid ""
 "changed."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:89
+#: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
 msgstr "Видеопамять"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:91
+#: ../../docs/tutorials/debug/debugger_panel.rst:97
 msgid ""
 "The **Video RAM** tab shows the video RAM usage of the game while it is "
 "running. It provides a list of every resource using video RAM by resource "
@@ -188,21 +195,21 @@ msgid ""
 "the top right of the panel."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:99
+#: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
 msgstr "Прочее"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:101
+#: ../../docs/tutorials/debug/debugger_panel.rst:107
 msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:104
+#: ../../docs/tutorials/debug/debugger_panel.rst:110
 msgid ""
 "**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:105
+#: ../../docs/tutorials/debug/debugger_panel.rst:111
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
 msgstr ""

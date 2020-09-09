@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "3D-Szenen importieren"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot scene importer"
-msgstr ""
+msgstr "Godot Szenen Importer"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
@@ -259,7 +259,7 @@ msgstr "Die Rolle des Wurzel Node."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid "Custom Script"
-msgstr "eigenes Skript"
+msgstr "benutzerdefiniertes Skript"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid "Materials"
-msgstr ""
+msgstr "Materialien"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid "Location"
@@ -340,7 +340,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
 msgid "Meshes"
-msgstr ""
+msgstr "Meshes"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Compress"
@@ -488,11 +488,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
-#, fuzzy
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr ""
-"Für weitere Informationen zu Singletons bzw. Autoload-Skripten, siehe :ref:"
-"`doc_singletons_autoload`."
+"Für weitere Informationen zu Light Baking siehe :ref:`doc_baked_lightmaps`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
 msgid "External Files"
@@ -624,7 +622,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid "Clips"
-msgstr ""
+msgstr "Clips"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:327
 msgid ""
@@ -685,23 +683,20 @@ msgstr ""
 "dem Exportieren zu erledigen:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Kollisionserkennung zu Objekten hinzufügen"
+msgstr "Kollisionserkennung zu Objekten hinzufügen."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Objekte als Navigations-Netze setzen"
+msgstr "Objekte als Navigations-Meshes setzen."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
 "Nodes löschen, die in der Spiele-Engine nicht genutzt werden (wie bestimmte "
-"Lichter die zum Modellieren genutzt wurden)"
+"Lichter die zum Modellieren genutzt wurden)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
 msgid ""
@@ -782,25 +777,21 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
 #, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr ""
-"Sphäre (und andere nicht gelistete) erzeugen ein :ref:`class_sphereshape`"
+msgstr "Ein einzelner Pfeil erzeugt eine :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
 msgid "Cube will create a :ref:`class_boxshape`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr ""
-"Sphäre (und andere nicht gelistete) erzeugen ein :ref:`class_sphereshape`"
+msgstr "Das Bild erstellt eine :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
-"Sphäre (und andere nicht gelistete) erzeugen ein :ref:`class_sphereshape`"
+"Sphäre (und andere nicht gelistete) erzeugen ein :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
@@ -825,6 +816,9 @@ msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
 msgstr ""
+"Ein Mesh Node mit dem Suffix ``-navmesh`` wird in ein Navigations mesh "
+"umgewandelt. Das ursprüngliche Mesh-Objekt wird zum Zeitpunkt des Imports "
+"entfernt."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid "Create a VehicleBody (-vehicle)"
@@ -835,6 +829,8 @@ msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
+"Ein mesh node mit dem Suffix ``-vehicle`` wird als Kind eines :ref:"
+"`class_VehicleBody` -Nodes importiert."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
 msgid "Create a VehicleWheel (-wheel)"
@@ -845,6 +841,8 @@ msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
+"Ein mesh node mit dem Suffix ``-wheel`` wird als Kind zu einem :ref:"
+"`class_VehicleWheel` Node importiert."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
 msgid "Rigid Body (-rigid)"
@@ -855,6 +853,8 @@ msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
+"Ein mesh node mit dem Suffix ``-rigid`` wird als ein :ref:`class_RigidBody` "
+"importiert."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Animation loop (-loop, -cycle)"
@@ -867,9 +867,15 @@ msgid ""
 "flag set. **Unlike the other suffixes described above, this does not require "
 "a hyphen.**"
 msgstr ""
+"Animationsclips im COLLADA-Dokument, die mit dem Token ``loop`` oder "
+"``cycle`` beginnen oder enden, werden als Godot-Animation mit gesetztem Loop-"
+"Flag importiert. **Im Gegensatz zu den anderen oben beschriebenen Suffixen "
+"ist hier kein Bindestrich erforderlich.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
+"In Blender erfordert dies die Verwendung des NLA-Editors und die Benennung "
+"der Aktion mit dem Präfix oder Suffix ``loop`` oder ``cycle``."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,44 +19,54 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "Exportieren für Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Das Exportieren für Android stellt weniger Anforderungen als das Kompilieren "
+"von Godot. In den folgenden Schritten wird detailliert beschrieben, was zum "
+"Einrichten des SDK und der Engine erforderlich ist."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "Android-SDK herunterladen"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"Lade Android SDK herunten und installiere es: `developer.android.com "
+"<https://developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
+"Wenn du Android Studio installierst, musst du es einmal ausführen, um das "
+"SDK-Setup abzuschließen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid "Install OpenJDK 8"
-msgstr ""
+msgstr "OpenJDK 8 installieren"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__, newer versions do not work."
 msgstr ""
+"Lade `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__ herunter und installiere es, neuere "
+"Versionen funktionieren nicht."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
+#, fuzzy
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "Erstellen eines debug.keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
@@ -65,12 +75,19 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"Android benötigt eine Debug-Keystore-Datei zur Installation auf Geräten und "
+"zur Verteilung von nicht freigegebenen APKs. Wenn du das SDK schon einmal "
+"benutzt und Projekte gebaut hast, hat ant oder eclipse wahrscheinlich eines "
+"für dich generiert (unter Linux und MacOS findest du es im Verzeichnis ``~/."
+"android``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:31
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
+"Wenn du diese nicht finden kannst oder eine solche generieren musst, kann "
+"der Befehl keytool aus dem JDK dafür verwendet werden::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid ""
@@ -80,10 +97,16 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
+"Dies wird eine ``debug.keystore`` Datei in deinem aktuellen Verzeichnis "
+"erzeugen. Du solltest sie an einen einprägsamen Ort wie z.B. ``%USERPROFILE%"
+"\\.android\\`` verschieben, da du ihren Speicherort in einem späteren "
+"Schritt benötigen wirst. Weitere Informationen über die Verwendung von "
+"``keytool`` findest du in `diesem Q&A-Artikel <https://godotengine.org/"
+"qa/21349/jdk-android-file-missing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:39
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "Stelle sicher, dass du adb hast"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:41
 msgid ""
@@ -92,30 +115,42 @@ msgid ""
 "install one (any) of the Android API levels for it to be installed in the "
 "SDK directory."
 msgstr ""
+"Android Debug Bridge (``adb``) ist das Kommandozeilen-Werkzeug, das zur "
+"Kommunikation mit Android-Geräten verwendet wird. Es wird mit dem SDK "
+"installiert, aber du musst möglicherweise eine (beliebige) der Android-API-"
+"Ebenen installieren, damit es im SDK-Verzeichnis installiert wird."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:46
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "Einrichtung in Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
 msgstr ""
+"Rufe die Editoreinstellungen auf. Dieses Fenster enthält die Editor-"
+"Einstellungen für das Benutzerkonto im Computer (es ist unabhängig vom "
+"Projekt)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:54
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr ""
+"Scrolle nach unten zu dem Abschnitt, in dem sich die Android-Einstellungen "
+"befinden:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "In diesem Fenster muss der Pfad zu 3 Dateien eingestellt werden:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
 msgid ""
 "The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
 "``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
 msgstr ""
+"Die ``adb`` ausführbare Datei (``adb.exe`` unter Windows) - Sie kann "
+"normalerweise unter ``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb."
+"exe`` gefunden werden."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:63
 msgid ""
@@ -125,12 +160,20 @@ msgid ""
 "bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
 "you've installed and your machine's operating system."
 msgstr ""
+"Die ausführbare Datei ``jarsigner`` (ab JDK 6 oder 8) - Unter Windows wird "
+"OpenJDK in ein Verzeichnis wie ``%PROGRAMFILES%\\AdoptOpenJDK"
+"\\jdk-8.0.252.09-hotspot\\bin`` installiert. Unter Linux wird es "
+"normalerweise in ein Verzeichnis wie ``/usr/bin/jarsigner`` installiert. Der "
+"genaue Pfad kann je nach installiertem OpenJDK-Update und dem Betriebssystem "
+"deines Rechners variieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
+"Die Debug-Datei ``.keystore``` - Du findest sie in dem Ordner, in dem du die "
+"``debug.keystore`` Datei abgelegt hast, die du oben erstellt hast."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:69
 msgid "Once that is configured, everything is ready to export to Android!"
@@ -149,10 +192,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr ""
-"Es gibt zwei Wege deine Benutzeroberfläche in Godot zu gestalten. Du kannst:"
+msgstr "Godot benötigt zwei Arten von Symbolen:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
@@ -295,3 +336,6 @@ msgid ""
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
 "information."
 msgstr ""
+"Sie können die Größe weiter optimieren, indem Sie eine Android-Exportvorlage "
+"mit nur den Funktionen erstellen, die Sie benötigen. Weitere Informationen "
+"finden Sie unter: ref: `doc_optimizing_for_size`."

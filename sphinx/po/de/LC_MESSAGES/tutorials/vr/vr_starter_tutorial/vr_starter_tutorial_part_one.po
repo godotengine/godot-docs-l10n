@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "Anleitung für Einsteiger - VR"
+msgstr "VR - Anleitung für Einsteiger - Teil 1"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:7
 msgid "Introduction"
@@ -30,6 +29,8 @@ msgstr "Einführung"
 msgid ""
 "This tutorial will show you how to make a beginner VR game project in Godot."
 msgstr ""
+"Dieses Anleitung zeigt Ihnen, wie Sie ein Anfänger-VR-Spielprojekt in Godot "
+"erstellen."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:13
 msgid ""
@@ -44,6 +45,9 @@ msgid ""
 "In VR, 1 unit is typically considered 1 meter. If you design your assets "
 "around that standard, you can save yourself a lot of headache."
 msgstr ""
+"In VR wird 1 Einheit normalerweise als 1 Meter betrachtet. Wenn Sie Ihre "
+"Assets nach diesem Standard gestalten, können Sie sich viel Kopfschmerzen "
+"ersparen."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:17
 msgid ""
@@ -51,6 +55,10 @@ msgid ""
 "world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
+"Überprüfen Sie in Ihrem 3D-Modellierungsprogramm, ob es eine Möglichkeit "
+"gibt Entfernungen in der realen Welt zu messen und zu verwenden. In Blender "
+"können Sie das MeasureIt-Add-On verwenden; in Maya können Sie das "
+"Messwerkzeug verwenden."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:18
 msgid ""
@@ -66,7 +74,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:21
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr ""
+msgstr "Während des Kurses in dieser Anleitung werden wir dies hier behandeln:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:23
 msgid "How to tell Godot to run in VR."
@@ -76,12 +84,16 @@ msgstr "Wie man Godot mitteilt VR zu nutzen."
 msgid ""
 "How to make a teleportation locomotion system that uses the VR controllers."
 msgstr ""
+"So erstellen Sie ein Teleportations-Fortbewegungssystem, das die VR-"
+"Controller verwendet."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:25
 msgid ""
 "How to make a artificial movement locomotion system that uses the VR "
 "controllers."
 msgstr ""
+"Wie man ein künstliches Bewegungssystem erstellt unter Verwendung der VR-"
+"Controller."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:26
 msgid ""
@@ -92,13 +104,15 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:27
 msgid "How to create simple destroyable target."
-msgstr ""
+msgstr "Wie man ein einfaches zerstörbares Ziel erstellt."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:28
 msgid ""
 "How to create some special :ref:`RigidBody <class_RigidBody>`-based objects "
 "that can destroy the targets."
 msgstr ""
+"So erstellen Sie einige spezielle :ref:`RigidBody <class_RigidBody>`-"
+"basierte Objekte, die die Ziele zerstören können."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:30
 msgid ""
@@ -106,6 +120,9 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development."
 msgstr ""
+"Diese Anleitung kann zwar von Anfängern genutzt werden, es wird jedoch "
+"dringend empfohlen vorher :ref:`doc_your_first_game` zu lesen, wenn Sie neu "
+"in der Godot- oder Spieleentwicklung sind."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:34
 msgid ""
@@ -114,6 +131,11 @@ msgid ""
 "Godot editor, GDScript, and basic 3D game development. A OpenVR-ready "
 "headset and two OpenVR-ready controllers are required."
 msgstr ""
+"Vor dem Durchgehen dieses Anleitungteils sind **einige Erfahrungen mit der "
+"Erstellung von 3D-Spielen erforderlich**. In dieser Anleitung wird davon "
+"ausgegangen, dass Sie Erfahrung mit dem Godot-Editor, GDScript und der "
+"grundlegenden Entwicklung von 3D-Spielen haben. Ein OpenVR-fähiges Headset "
+"und zwei OpenVR-fähige Controller sind erforderlich."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:38
 msgid ""
@@ -121,6 +143,10 @@ msgid ""
 "and controllers. This project has also been tested on the HTC Vive. Code "
 "adjustments may be required for other VR Headsets, such as the Oculus Rift."
 msgstr ""
+"Diese Anleitung wurde für einen Windows Mixed Reality-Headset und Controller "
+"geschrieben und getestet. Dieses Projekt wurde auch auf dem HTC Vive "
+"getestet. Für andere VR-Headsets wie z.B. den Oculus Rift sind "
+"möglicherweise Code-Anpassungen erforderlich."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:41
 msgid ""
@@ -133,21 +159,24 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:44
 msgid "**Credits for the assets provided**:"
-msgstr ""
+msgstr "**Credits für die zur Verfügung gestellten Assets**:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:46
 msgid ""
 "The sky panorama was created by `CGTuts <https://cgi.tutsplus.com/articles/"
 "freebie-8-awesome-ocean-hdris--cg-5684>`_."
 msgstr ""
+"Das Himmelspanorama wurde von `CGTuts <https://cgi.tutsplus.com/articles/"
+"freebie-8-awesome-ocean-hdris--cg-5684>`_ erstellt."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:48
 msgid "The font used is Titillium-Regular"
-msgstr ""
+msgstr "Die verwendete Schriftart ist Titillium-Regular"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:49
 msgid "The font is licensed under the SIL Open Font License, Version 1.1"
 msgstr ""
+"Die Schriftart ist unter der SIL Open Font License, Version 1.1, lizenziert"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:51
 msgid ""
@@ -155,12 +184,17 @@ msgid ""
 "Sonniss #GameAudioGDC Bundle (`License PDF <https://sonniss.com/gdc-bundle-"
 "license/>`_)"
 msgstr ""
+"Das verwendete Audio stammt aus verschiedenen Quellen, die alle aus dem "
+"Sonniss # GameAudioGDC-Bundle heruntergeladen wurden (`License PDF <https://"
+"sonniss.com/gdc-bundle-license/>`_)"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:52
 msgid ""
 "The folders where the audio files are stored have the same name as folders "
 "in the Sonniss audio bundle."
 msgstr ""
+"Die Ordner in denen die Audiodateien gespeichert sind haben denselben Namen "
+"wie die Ordner im Sonniss-Audiopaket."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:54
 msgid ""
@@ -171,6 +205,13 @@ msgid ""
 "asset>`_. *3rd party code and libraries used in the OpenVR addon may be "
 "under a different license.*"
 msgstr ""
+"Das OpenVR-Addon wurde von `Bastiaan Olij <https://github.com/"
+"BastiaanOlij>`_ erstellt und wird unter der MIT-Lizenz veröffentlicht. Es "
+"befindet sich sowohl in der Godot Bestandsbibliothek <https://godotengine."
+"org/asset-library/asset/150> als auch in GitHub <https://github.com/GodotVR/"
+"godot-openvr-asset > `_. *Code und Bibliotheken von Drittanbietern, die im "
+"OpenVR-Addon verwendet werden, unterliegen möglicherweise einer anderen "
+"Lizenz.*"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:56
 msgid ""
@@ -179,13 +220,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"eine Kopie des `godot-cpp-Repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`_."
+"Sie finden das fertige Projekt im `OpenVR GitHub Repository <https://github."
+"com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
@@ -236,13 +276,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:85
-#, fuzzy
 msgid ""
 "Before we jump into the tutorial, let's take a moment to talk about how the "
 "nodes used for VR work."
 msgstr ""
-"Bevor wir in den Editor einsteigen, wollen wir planen, wie wir Container "
-"nach unserer Vorlage verschachteln werden."
+"Bevor wir mit der Anleitung beginnen nehmen wir uns einen Moment Zeit, um "
+"darüber zu sprechen, wie die für VR verwendeten Nodes funktionieren."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:87
 msgid ""
@@ -294,12 +333,16 @@ msgid ""
 "The :ref:`ARVRCamera <class_ARVRCamera>` is the player's VR headset and view "
 "into the scene."
 msgstr ""
+"Die :ref:`ARVRCamera <class_ARVRCamera>` ist des Spielers VR Headset und "
+"schaut in die Szene."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:107
 msgid ""
 "The :ref:`ARVRCamera <class_ARVRCamera>` node is offset on the Y axis by the "
 "user's height."
 msgstr ""
+"Der :ref:`ARVRCamera <class_ARVRCamera>` Node ist ein Offset auf die Y Achse "
+"für die Größe des Spielers."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:109
 msgid ""
@@ -390,9 +433,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:186
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Polygone erstellen"
+msgstr "Controller erzeugen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:190
 msgid ""
@@ -510,7 +552,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:235
 msgid "The code for the VR controllers"
-msgstr ""
+msgstr "Der Code für die VR Controller"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:237
 msgid ""
@@ -525,6 +567,8 @@ msgid ""
 "You can copy and paste the code from this page directly into the script "
 "editor."
 msgstr ""
+"Der Code von dieser Seite kann ausgeschnitten und direkt im Skript Editor "
+"eingefügt werden."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:242
 msgid ""
@@ -547,24 +591,27 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:538
 msgid "Explaining the VR controller code"
-msgstr ""
+msgstr "Erklärung des VR-Controller-Codes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:540
-#, fuzzy
 msgid "First, let's go through all the class variables in the script:"
-msgstr "Gehen wir diese globalen Variablen einmal durch."
+msgstr "Als erstes gehen wir all die Klassenvariablen im Skript durch:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:542
 msgid ""
 "``controller_velocity``: A variable to hold a rough approximation of the VR "
 "controller's velocity."
 msgstr ""
+"``controller_velocity``: Eine Variable die eine grobe Annäherung an die "
+"Geschwindigkeit des VR-Controllers enthält."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:543
 msgid ""
 "``prior_controller_position``: A variable to hold the VR controller's last "
 "position in 3D space."
 msgstr ""
+"``prior_controller_position``: Eine Variable um die letzte Position des VR-"
+"Controllers im 3D-Raum zu halten."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:544
 msgid ""
@@ -638,6 +685,8 @@ msgid ""
 "``teleport_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node used to show where the player is teleporting to."
 msgstr ""
+"``teleport_mesh``: Eine Variable für den Node :ref:`MeshInstance "
+"<class_MeshInstance>` mit der angezeigt wird, wohin der Player teleportiert."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:555
 msgid ""
@@ -671,6 +720,8 @@ msgid ""
 "``CONTROLLER_RUMBLE_FADE_SPEED``: A constant to define how fast the VR "
 "controller rumble fades."
 msgstr ""
+"``CONTROLLER_RUMBLE_FADE_SPEED``: Eine Konstante um zu definieren, wie "
+"schnell das Rumpeln des VR-Controllers abklingt."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:560
 msgid ""
@@ -701,7 +752,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:573
 msgid "``_ready`` function step-by-step explanation"
-msgstr ""
+msgstr "``_ready`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:575
 msgid ""
@@ -773,7 +824,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:601
 msgid "``_physics_process`` function step-by-step explanation"
-msgstr ""
+msgstr "``_physics_process`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:603
 msgid ""
@@ -909,14 +960,16 @@ msgid ""
 "``_physics_process_update_controller_velocity`` function step-by-step "
 "explanation"
 msgstr ""
+"``_physics_process_update_controller_velocity`` Funktion Schritt-für-Schritt "
+"erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:658
-#, fuzzy
 msgid ""
 "First this function resets the ``controller_velocity`` variable to zero :ref:"
 "`Vector3 <class_Vector3>`."
 msgstr ""
-"Erst weisen wir ``dir`` einen leeren :ref:`Vector3 <class_Vector3>` zu."
+"Zuerst setzt diese Funktion die Variable ``controller_velocity`` auf Null "
+"zurück :ref:`Vector3 <class_Vector3>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:662
 msgid ""
@@ -992,6 +1045,8 @@ msgstr ""
 msgid ""
 "``_physics_process_directional_movement`` function step-by-step explanation"
 msgstr ""
+"``_physics_process_directional_movement`` Funktion Schritt-für-Schritt "
+"erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:695
 msgid ""
@@ -1095,10 +1150,14 @@ msgid ""
 "headset, so if the player pushes forward and turns their head to the left, "
 "they will move to the left."
 msgstr ""
+"Diese Funktion übernimmt letztendlich die Eingabe vom Trackpad und Joystick "
+"des VR-Controllers und bewegt den Spieler in die jeweils gedrückte Richtung. "
+"Die Bewegung ist relativ zur Drehung des VR-Headsets. Wenn der Spieler also "
+"nach vorne drückt und den Kopf nach links dreht, bewegt er sich nach links."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:739
 msgid "``button_pressed`` function step-by-step explanation"
-msgstr ""
+msgstr "``button_pressed`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:741
 msgid ""
@@ -1113,6 +1172,8 @@ msgid ""
 "There are only three buttons we are looking for in this project: the trigger "
 "button, the grab/grip button, and the menu button."
 msgstr ""
+"In diesem Projekt suchen wir nur nach drei Schaltflächen: der Auslösetaste, "
+"der Greif-/Griff-Taste und der Menü-Taste."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:746
 msgid ""
@@ -1120,6 +1181,9 @@ msgid ""
 "and controller. The inputs in this tutorial are the index values of a "
 "Windows Mixed Reality headset."
 msgstr ""
+"Je nach VR-Headset und Controller müssen Sie diese Tastenindexwerte "
+"möglicherweise neu zuordnen. Die Eingaben in dieser Anleitung sind die "
+"Indexwerte eines Windows Mixed Reality-Headsets."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:749
 msgid ""
@@ -1144,7 +1208,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:758
 msgid "``_on_button_pressed_trigger`` function step-by-step explanation"
-msgstr ""
+msgstr "``_on_button_pressed_trigger`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:760
 msgid ""
@@ -1197,7 +1261,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:782
 msgid "``_on_button_pressed_grab`` function step-by-step explanation"
-msgstr ""
+msgstr "``_on_button_pressed_grab`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:784
 msgid ""
@@ -1223,7 +1287,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:794
 msgid "``_pickup_rigidbody`` function step-by-step explanation"
-msgstr ""
+msgstr "``_pickup_rigidbody`` Funktionserklärung Schritt für Schritt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:796
 msgid ""
@@ -1375,7 +1439,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:858
 msgid "``_throw_rigidbody`` function step-by-step explanation"
-msgstr ""
+msgstr "``_throw_rigidbody`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:860
 msgid ""
@@ -1434,7 +1498,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:885
 msgid "``_on_button_pressed_menu`` function step-by-step explanation"
-msgstr ""
+msgstr "``_on_button_pressed_menu`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:887
 msgid ""
@@ -1467,7 +1531,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:900
 msgid "``button_released`` function step-by-step explanation"
-msgstr ""
+msgstr "``button_released`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:902
 msgid ""
@@ -1487,7 +1551,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:909
 msgid "``_on_button_released_trigger`` function step-by-step explanation"
-msgstr ""
+msgstr "``_on_button_released_trigger`` Funktionserklärung Schritt für Schritt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:911
 msgid ""
@@ -1557,7 +1621,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:935
 msgid "``sleep_area_entered`` function step-by-step explanation"
-msgstr ""
+msgstr "``sleep_area_entered`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:937
 msgid ""
@@ -1579,7 +1643,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:946
 msgid "``sleep_area_exited`` function step-by-step explanation"
-msgstr ""
+msgstr "``sleep_area_exited`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:948
 msgid ""
@@ -1632,9 +1696,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:997
-#, fuzzy
 msgid "Let's quickly go through what this script."
-msgstr "Gehen wir das Skript durch:"
+msgstr "Gehen wir das Skript durch."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1001
 msgid ""
@@ -1715,7 +1778,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1034
 msgid "Reducing motion sickness"
-msgstr ""
+msgstr "Übelkeit bei Bewegungen reduzieren"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1036
 msgid ""
@@ -1843,7 +1906,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1137
 msgid "Final notes"
-msgstr ""
+msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1141
 msgid ""

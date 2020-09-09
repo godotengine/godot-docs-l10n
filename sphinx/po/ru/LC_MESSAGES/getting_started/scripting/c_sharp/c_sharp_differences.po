@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
-#, fuzzy
 msgid "C# API differences to GDScript"
-msgstr "API различия с GDScript"
+msgstr "API различия С# и GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
@@ -119,9 +118,8 @@ msgid "``Variant.Operator`` enum"
 msgstr "``Variant.Operator`` перечисление"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:38
-#, fuzzy
 msgid "Math functions"
-msgstr "Статические функции"
+msgstr "Математические функции"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:40
 msgid ""
@@ -135,9 +133,8 @@ msgstr ""
 "Pi``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
-#, fuzzy
 msgid "Random functions"
-msgstr "Статические функции"
+msgstr "Случайные функции"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:47
 msgid ""
@@ -148,9 +145,8 @@ msgstr ""
 "расположены под ``GD``. Пример: ``GD.RandRange`` и ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
-#, fuzzy
 msgid "Other functions"
-msgstr "Статические функции"
+msgstr "Другие функции"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:53
 msgid ""
@@ -235,9 +231,8 @@ msgstr ""
 "`делегата`, чья подпись имени будет использоваться для определения сигнала."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr "См. также: :ref:`c_sharp_signals`"
+msgstr "См. также: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -281,9 +276,8 @@ msgstr ""
 "методов расширения."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "Здесь есть несколько вещей, который необходимо держать в голове:"
+msgstr "Здесь есть несколько различий:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -375,9 +369,8 @@ msgid "``get_rotation()``"
 msgstr "``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Векторные Операции"
+msgstr "``Вращение``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:221
 msgid "Plane"
@@ -449,9 +442,8 @@ msgid "``length()``"
 msgstr "``length()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``Length``"
-msgstr "Путь ресурса"
+msgstr "``Длина``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
@@ -474,9 +466,8 @@ msgstr ""
 "было пользоваться так как было задумано. *"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
-#, fuzzy
 msgid "``Array``"
-msgstr "Массив"
+msgstr "``Массив``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Godot.Collections.Array``"
@@ -487,9 +478,8 @@ msgid "``PoolIntArray``"
 msgstr "``PoolIntArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
-#, fuzzy
 msgid "``int[]``"
-msgstr "``in``"
+msgstr "``int[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:276
 msgid "``PoolByteArray``"
@@ -504,27 +494,24 @@ msgid "``PoolFloatArray``"
 msgstr "``PoolFloatArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:277
-#, fuzzy
 msgid "``float[]``"
-msgstr "float"
+msgstr "``float[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
 msgid "``PoolStringArray``"
 msgstr "``PoolStringArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:278
-#, fuzzy
 msgid "``String[]``"
-msgstr "Строки"
+msgstr "``String[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid "``PoolColorArray``"
 msgstr "``PoolColorArray``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
-#, fuzzy
 msgid "``Color[]``"
-msgstr "Цвет"
+msgstr "``Color[]``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:280
 msgid "``PoolVector2Array``"
@@ -625,27 +612,24 @@ msgid "Other differences:"
 msgstr "Другие отличия:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
-#, fuzzy
 msgid "``Color8``"
-msgstr "Цвет"
+msgstr "``Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:331
 msgid "``Color.Color8``"
 msgstr "``Color.Color8``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
-#, fuzzy
 msgid "``is_inf``"
-msgstr "``is``"
+msgstr "``is_inf``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:332
 msgid "``float.IsInfinity``"
 msgstr "``float.IsInfinity``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
-#, fuzzy
 msgid "``is_nan``"
-msgstr "``is``"
+msgstr "``is_nan``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid "``float.IsNaN``"
@@ -661,6 +645,5 @@ msgid "TODO"
 msgstr "TODO"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
-#, fuzzy
 msgid "``inst2dict``"
-msgstr "``in``"
+msgstr "``inst2dict``"

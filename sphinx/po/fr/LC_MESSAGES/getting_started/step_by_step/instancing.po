@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -192,12 +192,14 @@ msgstr ""
 "affecteront toutes les instances."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
+#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
 "like ``PhysicsMaterial`` are shared between instances by default, so we need "
-"to make it unique. Click on the down arrow and select \"Make Unique\". Set "
-"its ``Bounce`` to ``1`` and press \"Play\"."
+"to make it unique. Click on the tools button in the top-right of the "
+"Inspector dock and select \"Make Sub-Resources Unique\". Set its ``Bounce`` "
+"to ``1`` and press \"Play\"."
 msgstr ""
 "Vous pouvez également ajuster individuellement les instances. Remettez la "
 "valeur de rebond sur ``0``. Puis dans la scène ``Main``, sélectionnez l'une "
@@ -206,7 +208,7 @@ msgstr ""
 "unique. Cliquez sur la flèche vers le bas et sélectionnez \"Rendre Unique\". "
 "Réglez son ``Bounce`` sur ``1`` et appuyez sur \"Jouer\"."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:110
+#: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -223,11 +225,11 @@ msgstr ""
 "retour en arrière pour rétablir la propriété à la valeur de la scène "
 "sauvegardée."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:118
+#: ../../docs/getting_started/step_by_step/instancing.rst:119
 msgid "Conclusion"
 msgstr "Conclusion"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:120
+#: ../../docs/getting_started/step_by_step/instancing.rst:121
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

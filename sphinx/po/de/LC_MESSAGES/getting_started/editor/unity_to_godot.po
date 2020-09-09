@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,6 +62,8 @@ msgstr "Lizenz"
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr ""
+"Proprietäre, geschlossene, kostenlose Lizenz mit Umsatzobergrenzen und "
+"Nutzungsbeschränkungen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "MIT license, free and fully open source without any restriction"
@@ -74,11 +76,11 @@ msgstr "Betriebsystem (Editor)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, Linux"
-msgstr "Windows, macOS, Linux"
+msgstr "Windows, MacOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
+msgstr "Windows, MacOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
@@ -86,7 +88,7 @@ msgstr "OS (export)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr "**Desktop:** Windows, macOS, Linux"
+msgstr "**Desktop:** Windows, MacOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
@@ -114,7 +116,7 @@ msgstr "**TV:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr "**Desktop:** Windows, macOS, X11"
+msgstr "**Desktop:** Windows, MacOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**Mobile:** Android, iOS"
@@ -126,7 +128,7 @@ msgstr "**Web:** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr "**Konsolen:** See :ref:`doc_consoles`"
+msgstr "**Konsolen:** Siehe :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
@@ -354,10 +356,10 @@ msgid ""
 msgstr ""
 "Godot's Szenensystem ist von der Oberfläche her Unity sehr ähnlich. Ein "
 "'Level' besteht aus einer Sammlung von Nodes, jedes mit seinem eigenen "
-"Nutzen: Spites, Meshes, Lights et cetera. Wie dem auch sei, in Godot sind "
-"Nodes in 'Trees' arrangiert. Jedes Node kann mehrere Kinder-Nodes haben, die "
-"dann eine Subszene aus der Hauptszene heraus bilden. Dies hat zur Folge dass "
-"es durchaus möglich ist, eine ganze Szene mit verschiedenen Szenen "
+"Nutzen: Sprites, Meshes, Lights, usw. Wie dem auch sei, in Godot sind Nodes "
+"in einer Baumstruktur aufgebaut. Jedes Node kann mehrere Unter-Nodes haben, "
+"die dann eine Subszene aus der Hauptszene heraus bilden. Dies hat zur Folge "
+"dass es durchaus möglich ist, eine ganze Szene mit verschiedenen Szenen "
 "zusammenzusetzen, dabei können nämlich Szenen auch in einzelne Dateien "
 "gespeichert werden."
 
@@ -538,7 +540,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid "Project organization"
-msgstr "Project Organization"
+msgstr "Projekt Organisation"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:149
 msgid ""
@@ -582,6 +584,10 @@ msgid ""
 "existence of its own, but all of them have the same properties as defined by "
 "the prefab."
 msgstr ""
+"Als 'Prefrab' bezeichnet man, genau wie in Unity, eine Art 'Vorlage' der "
+"Szene. Es ist wiederverwendbar und jedes dieser Templates, dass sich in der "
+"Szene befindet, steht alleine, jedoch haben alle dieselben Eigenschaften wie "
+"das Original."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:166
 msgid ""
@@ -612,10 +618,20 @@ msgid ""
 "add new children to every instance of your 'template' scene, then you should "
 "add them in the 'template' scene."
 msgstr ""
+"Um genau zu sein, können Sie die Parameter einer Instanz in der "
+"Inspektorleiste ändern. Die Nodes, aus denen diese Instanz besteht, sind "
+"zunächst gesperrt. Sie können sie bei Bedarf entsperren, indem Sie mit der "
+"rechten Maustaste auf die Instanz im Szenenbaum klicken und im Menü "
+"\"Bearbeitbare untergeordnete Elemente\" auswählen. Sie müssen dies nicht "
+"tun, um diesem Node *neue* untergeordnete Nodes hinzuzufügen. Denken Sie "
+"daran, dass alle neuen untergeordneten Elemente zur Instanz gehören und "
+"nicht zur \"Vorlagenszene\" auf der Festplatte. Wenn Sie jeder Instanz Ihrer "
+"\"Vorlagenszene\" neue untergeordnete Elemente hinzufügen möchten, sollten "
+"Sie diese in der \"Vorlagenszene\" hinzufügen."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:183
 msgid "Glossary correspondence"
-msgstr ""
+msgstr "Glossar Korrespondenz"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
 msgid "GameObject -> Node"
@@ -777,6 +793,12 @@ msgid ""
 "`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
 "the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
+"Godot liefert ebenfalls ein eingebautes Skript-Serialisations-System, aber "
+"das funktioniert nur explizit. Jeder serialisierbare Typ (:ref:`built-in and "
+"various engine types <doc_binary_serialization_api>`, unter anderem :ref:"
+"`class_Array` und :ref:`class_Dictionary`) kann uter Benutzung des Keywords "
+"``export`` serialisiert werden. Mehr Details stehen in der :ref:`exports "
+"documentation <doc_gdscript_exports>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:242
 msgid ""
@@ -786,6 +808,13 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
+"Unity besitzt ebenfalls einen Datentyp namens ``ScriptableObject``, welcher "
+"zur Serialisierung von benutzerdefinierten Asset-Objekten dient. Das "
+"Äquivalent in Godot ist die Basisklasse für alle Ressourcen: :ref:"
+"`class_Resource`. Das Erzeugen eines Skripts, dass von :ref:`class_Resource` "
+"erbt, erlaubt das Erstellen von benutzerdefinierten, serialisierbaren "
+"Objekte. Weitere Informationen über Ressourcen können :ref:`hier "
+"<doc_resources>` gefunden werden."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid "Using Godot in C++"

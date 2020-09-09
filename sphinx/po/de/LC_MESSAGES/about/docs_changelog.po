@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgid ""
 "of new tutorials added since version 3.1."
 msgstr ""
 "Die Dokumentation wird stetig verbessert. Version 3.2 beinhaltet viele neue "
-"Tutorials, Fehlerbehebungen sowie Updates für alte Tutorials und viele "
+"Anleitungen, Fehlerbehebungen sowie Updates für alte Anleitungen und viele "
 "Aktualisierungen bei der Klassen-Referenz. Anbei ist eine Liste aller neuen "
-"Tutorials die seit Version 3.1 hinzugefügt wurden."
+"Anleitungen die seit Version 3.1 hinzugefügt wurden."
 
 #: ../../docs/about/docs_changelog.rst:11
 msgid ""
@@ -39,18 +39,18 @@ msgid ""
 "many tutorials have been substantially updated but are not reflected in this "
 "document."
 msgstr ""
-"Dieses Dokument enthält nur neue Tutorials, dadurch werden nicht alle "
-"Änderungen angezeigt. Viele Tutorials wurden überarbeitet werden aber nicht "
-"in diesem Dokument angezeigt."
+"Dieses Dokument enthält nur neue Anleitungen, dadurch werden nicht alle "
+"Änderungen angezeigt. Viele Anleitungen wurden überarbeitet werden aber "
+"nicht in diesem Dokument angezeigt."
 
 #: ../../docs/about/docs_changelog.rst:15
 msgid "New tutorials since version 3.1"
-msgstr "Neue Tutorials seit Version 3.1"
+msgstr "Neue Anleitungen seit Version 3.1"
 
 #: ../../docs/about/docs_changelog.rst:18
 #: ../../docs/about/docs_changelog.rst:118
 msgid "Project workflow"
-msgstr "Projekt-Workflow"
+msgstr "Projekt-Arbeitsablauf"
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
@@ -137,7 +137,7 @@ msgstr ":ref:`Visuelle Shader Plugins <doc_visual_shader_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:60
 msgid "Networking"
-msgstr "Networking"
+msgstr "Netzwerke"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
@@ -145,7 +145,7 @@ msgstr ":ref:`Exportieren <doc_webrtc>`"
 
 #: ../../docs/about/docs_changelog.rst:65
 msgid "VR"
-msgstr "VR"
+msgstr "Virtuelle Realität"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
@@ -167,7 +167,7 @@ msgstr ":ref:`Android-Plugins erstellen <doc_android_plugin>`"
 
 #: ../../docs/about/docs_changelog.rst:74
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ":ref:`Räumlich Dinge -Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`Räumlich Dinge -Plugins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ":ref:`doc_visual_shader_plugins`"
@@ -230,11 +230,11 @@ msgstr "Rechtliches"
 #: ../../docs/about/docs_changelog.rst:101
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ""
-":ref:`Einhalten von Lizenzen beim Kommpelieren <doc_complying_with_licenses>`"
+":ref:`Einhalten von Lizenzen beim Kompilieren <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:104
 msgid "New tutorials since version 3.0"
-msgstr "Neue Tutorials seit Version 3.0"
+msgstr "Neue Anleitungen seit Version 3.0"
 
 #: ../../docs/about/docs_changelog.rst:107
 msgid "Step by step"
@@ -250,7 +250,7 @@ msgstr ":ref:`Exportieren <doc_exporting>`"
 
 #: ../../docs/about/docs_changelog.rst:113
 msgid "Scripting"
-msgstr "Scripting"
+msgstr "Skripten"
 
 #: ../../docs/about/docs_changelog.rst:115
 msgid ":ref:`doc_gdscript_static_typing`"
@@ -332,7 +332,7 @@ msgstr "Physik"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
-msgstr ":ref:`Ragdoll (Stoffpupen) System <doc_ragdoll_system>`"
+msgstr ":ref:`Ragdoll System <doc_ragdoll_system>`"
 
 #: ../../docs/about/docs_changelog.rst:150
 msgid ":ref:`doc_soft_body`"
@@ -352,11 +352,11 @@ msgstr ":ref:`Animationsbaum <doc_animation_tree>`"
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid "GUI"
-msgstr "GUI"
+msgstr "Grafische Benutzeroberfächen (GUI)"
 
 #: ../../docs/about/docs_changelog.rst:161
 msgid ":ref:`doc_gui_containers`"
-msgstr ":ref:`Behälterr<doc_gui_containers>`"
+msgstr ":ref:`Container<doc_gui_containers>`"
 
 #: ../../docs/about/docs_changelog.rst:164
 msgid "Viewports"
@@ -389,7 +389,7 @@ msgstr ":ref:`Fortgeschrittene Nachbearbeitung<doc_advanced_postprocessing>`"
 
 #: ../../docs/about/docs_changelog.rst:176
 msgid "Shading Reference:"
-msgstr "Shading Referenz:"
+msgstr "Shader Referenz:"
 
 #: ../../docs/about/docs_changelog.rst:178
 msgid ":ref:`doc_shaders`"
@@ -414,12 +414,12 @@ msgstr ":ref:`Partikelshader <doc_particle_shader>`"
 #: ../../docs/about/docs_changelog.rst:187
 msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ""
-":ref:`Plug-Ins für den Hauptbildschirm erstellen "
+":ref:`Plugins für den Hauptbildschirm erstellen "
 "<doc_making_main_screen_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
-msgstr ":ref:`Räumliche gizmo Plug-Ins <doc_spatial_gizmo_plugins>`"
+msgstr ":ref:`Räumliche gizmo Plugins <doc_spatial_gizmo_plugins>`"
 
 #: ../../docs/about/docs_changelog.rst:191
 msgid "Platform-specific"
@@ -451,7 +451,7 @@ msgstr ":ref:`Code im Editor ausführen <doc_running_code_in_the_editor>`"
 
 #: ../../docs/about/docs_changelog.rst:210
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ":ref:`Scenen manuell wechseln <doc_change_scenes_manually>`"
+msgstr ":ref:`Szenen manuell wechseln <doc_change_scenes_manually>`"
 
 #: ../../docs/about/docs_changelog.rst:211
 msgid ":ref:`doc_gles2_gles3_differences`"

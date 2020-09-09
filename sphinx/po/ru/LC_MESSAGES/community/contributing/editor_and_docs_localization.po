@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:40
 msgid "Using Weblate for translations"
-msgstr ""
+msgstr "Использование Weblate для переводов"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:42
 msgid ""
@@ -94,12 +94,19 @@ msgid ""
 "not accepted. Translations are synced manually between Weblate and the Godot "
 "repositories by maintainers."
 msgstr ""
+"Хотя наши переводы в конечном итоге находятся в репозиториях Git движка "
+"Godot и его документации, все обновления переводов обрабатываются через "
+"Weblate, и поэтому прямые пулл-реквесты в репозитории Git не принимаются. "
+"Переводы между Weblate и репозиториями Godot синхронизируются вручную "
+"сопровождающими (мэйнтейнерами)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:48
 msgid ""
 "You should therefore `register on Weblate <https://hosted.weblate.org/"
 "accounts/register/>`__ to contribute to Godot's translations."
 msgstr ""
+"Вам следует `зарегистрироваться на Weblate<https://hosted.weblate.org/"
+"accounts/register/>`__, чтобы вносить свой вклад в переводы Godot."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:51
 msgid ""
@@ -108,6 +115,10 @@ msgid ""
 "org/projects/godot-engine/godot/>`__ as an example) to find the list of all "
 "languages:"
 msgstr ""
+"После входа в систему перейдите к ресурсу Godot, в который вы хотите внести "
+"свой вклад (на этой странице мы будем использовать `перевод редактора "
+"<https://hosted.weblate.org/projects/godot-engine/godot/>`__ в качестве "
+"примера), чтобы найти список всех языков:"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:59
 msgid ""
@@ -115,17 +126,21 @@ msgid ""
 "workflow <https://docs.weblate.org/en/latest/user/translating.html>`__ for "
 "more details."
 msgstr ""
+"Не стесняйтесь обращаться к собственной документации Weblate по `рабочему "
+"процессу перевода<https://docs.weblate.org/en/latest/user/translating."
+"html>`__ для получения дополнительных сведений."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:64
-#, fuzzy
 msgid "Adding a new language"
-msgstr "Язык шейдеров"
+msgstr "Добавление нового языка"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:66
 msgid ""
 "If your language is already listed, click on its name to access the "
 "overview, and skip the rest of this section."
 msgstr ""
+"Если ваш язык уже существует в списке, щёлкните по нему, чтобы получить "
+"доступ к обзору, и пропустите оставшуюся часть этого раздела."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:69
 msgid ""
@@ -133,6 +148,9 @@ msgid ""
 "languages and click the \"Start new translation\" button, and select the "
 "language you want to translate to:"
 msgstr ""
+"Если вашего языка нет в списке, прокрутите список языков до конца, нажмите "
+"кнопку \"Начать новый перевод\" и выберите язык, на который вы хотите "
+"перевести:"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:77
 msgid ""
@@ -141,6 +159,11 @@ msgid ""
 "for French) instead of a regional variant (e.g. ``fr_FR`` for French "
 "(France), ``fr_CA`` for French (Canada), or ``fr_DZ`` for French (Algeria))."
 msgstr ""
+"Если на вашем языке говорят в нескольких странах с ограниченными "
+"региональными вариациями, рассмотрите возможность добавления его с его общим "
+"вариантом (например, ``fr`` для французского) вместо регионального варианта "
+"(например, ``fr_FR`` для французского (Франция), fr_CA для французского "
+"(Канада) или fr_DZ для французского (Алжир))."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:82
 msgid ""
@@ -150,6 +173,12 @@ msgid ""
 "regional variant, it will only be available automatically for users located "
 "in this region (or having their system language configured for this region)."
 msgstr ""
+"Godot имеет огромное количество контента для перевода, поэтому дублировать "
+"работу для региональных вариантов следует только в том случае, если языковые "
+"вариации достаточно значительны. Кроме того, если перевод выполняется для "
+"регионального варианта, он будет автоматически доступен только для "
+"пользователей, находящихся в этом регионе (или у которых язык системы "
+"настроен для этого региона)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:88
 msgid ""
@@ -160,11 +189,18 @@ msgid ""
 "g. Spanish (work on ``es`` first, then duplicate it to ``es_AR``, ``es_ES``, "
 "``es_MX``, etc. if necessary) or Portuguese (``pt_BR`` vs ``pt_PT``)."
 msgstr ""
+"Когда региональные различия достаточно значительны, чтобы гарантировать "
+"отдельные переводы, мы советуем сосредоточиться на завершении общего "
+"варианта, если это возможно, затем продублировать полностью завершенный "
+"перевод для региональных вариантов и внести соответствующие изменения. "
+"Обычно это хорошая стратегия для таких языков как например, испанский "
+"(сначала проработайте ``es``, затем дублируйте его на ``es_AR``, ``es_ES``, "
+"``es_MX`` и т.д., если это необходимо) или португальский (``pt_BR`` и "
+"``pt_PT``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:97
-#, fuzzy
 msgid "Translation interface"
-msgstr "TranslationServer"
+msgstr "Интерфейс перевода"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:99
 msgid ""
@@ -174,16 +210,23 @@ msgid ""
 "corresponding list. You can also click the \"Translate\" button to get "
 "started on the list of strings needing action."
 msgstr ""
+"После выбора языка вы увидите обзор статуса перевода, включая количество "
+"строк, оставшихся для перевода или проверки. Каждый элемент можно щёлкнуть и "
+"использовать для просмотра соответствующего списка. Вы также можете нажать "
+"кнопку \"Перевести\", чтобы начать работу со списком строк, требующих "
+"действий."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:107
 msgid ""
 "After selecting a list of clicking \"Translate\", you will see the main "
 "translation interface where all the work happens:"
 msgstr ""
+"Выбрав список и нажав \"Перевести\", вы увидите основной интерфейс перевода, "
+"в котором происходит вся работа:"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:112
 msgid "On that page, you have:"
-msgstr ""
+msgstr "На этой странице у вас есть:"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
@@ -191,6 +234,10 @@ msgid ""
 "to another pre-defined list or do a custom search, etc. There is also a \"Zen"
 "\" editing mode with a simplified interface."
 msgstr ""
+"Панель инструментов, которая позволяет вам циклически перемещаться по "
+"строкам текущего списка, переходить к другому заранее определенному списку "
+"или выполнять пользовательский поиск и т.д. Существует также режим "
+"редактирования \"Дзен\" с упрощённым интерфейсом."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
 msgid ""
@@ -205,6 +252,17 @@ msgid ""
 "(in PO jargon, these are so-called \"fuzzy\" strings). Such strings won't be "
 "used in the translation until fixed."
 msgstr ""
+"Основное поле для работы находится в блоке \"Перевод\". По умолчанию должна "
+"быть исходная строка на английском языке и поле редактирования на вашем "
+"языке. Если вы знаете другие языки, вы можете добавить их в свои "
+"пользовательские настройки, чтобы получить больше контекста для перевода. "
+"Как только вы закончите редактирование текущей строки, нажмите \"Сохранить"
+"\", чтобы подтвердить изменения и перейти к следующей записи. Или "
+"используйте кнопку \"Пропустить\", чтобы пропустить её. Флажок \"На правку\" "
+"означает, что исходная строка была обновлена, и поэтому перевод нуждается в "
+"проверке, чтобы учесть эти изменения (на жаргоне PO это так называемые "
+"\"нечеткие\" строки). Такие строки не будут использоваться в переводе, пока "
+"не будут исправлены."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:127
 msgid ""
@@ -214,6 +272,11 @@ msgid ""
 "other translators, machine translations, and a list of all other existing "
 "translations for that string."
 msgstr ""
+"На нижней панели есть различные инструменты, которые могут помочь с "
+"переводом, такие как контекст из соседних строк (обычно из того же "
+"инструмента редактора или страницы документации, поэтому они могут "
+"использовать похожие термины), комментарии других переводчиков, машинные "
+"переводы и список всех других существующих переводов для этой строки."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:132
 msgid ""
@@ -223,6 +286,11 @@ msgid ""
 "\"node\" term in Godot, you can add it to the glossary to ensure that other "
 "translators use the same convention."
 msgstr ""
+"Вверху справа в глоссарии показаны термины, для которых ранее была добавлена "
+"запись и которые включены в текущую строку. Например, если вы вместе с "
+"другими переводчиками решили использовать определенный перевод для термина "
+"\"узел\" в Godot, вы можете добавить его в глоссарий, чтобы другие "
+"переводчики использовали то же соглашение."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:137
 msgid ""

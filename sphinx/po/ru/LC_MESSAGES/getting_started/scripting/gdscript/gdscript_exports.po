@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,30 +18,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
-#, fuzzy
 msgid "GDScript exports"
-msgstr "GDScript"
+msgstr "Экспортирование в GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
 msgid "Introduction to exports"
 msgstr "Введение в экспорт"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
-"Члены класса (переменные и тд) могут быть экспортированы. Это означает, что "
-"их значение сохраняется вместе с ресурсом (например, :ref:`сцена "
-"<class_PackedScene>`), к которому они прикреплены. Они также будут доступны "
-"для редактирования свойств в редакторе (инспекторе). Экспорт осуществляется "
-"с помощью ключевого слова ``export``::"
+"В Godot, члены класса (переменные и т.д.) могут быть экспортированы. Это "
+"означает, что их значение сохраняется вместе с ресурсом (например, :ref:"
+"`сцена <class_PackedScene>`), к которому они прикреплены. Они также будут "
+"доступны для редактирования редакторе свойств. Экспорт осуществляется с "
+"помощью ключевого слова ``export``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:18
-#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the ``export`` keyword (see the "
@@ -49,7 +46,7 @@ msgid ""
 msgstr ""
 "Экспортируемая переменная должна быть инициализирована в постоянное "
 "выражение (Константу) или иметь подсказку на экспорт в виде аргумента к "
-"ключевому слову экспорта (см. ниже)."
+"ключевому слову ``export`` (см. ниже секцию *Примеры*)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:22
 msgid ""
@@ -77,22 +74,21 @@ msgid "Examples"
 msgstr "Примеры"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:136
-#, fuzzy
 msgid ""
 "It must be noted that even if the script is not being run while in the "
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 "Следует отметить, что даже если во время работы в редакторе скрипт не "
-"выполняется, экспортируемые свойства все равно можно редактировать (см. ниже "
-"слово \"tool\")."
+"выполняется, экспортируемые свойства все равно можно редактировать. Это "
+"можно использовать в сочетании с :ref:`режимом \"инструмента\": "
+"<doc_gdscript_tool_mode>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
 msgstr "Экспорт битовых флагов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
@@ -103,16 +99,16 @@ msgstr ""
 "экспорта ``int, FLAGS``, их можно настроить в редакторе:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"В этом примере у ``Fire`` значение 1, у ``Water`` - 2, у ``Earth`` - 4 и у "
-"``Wind`` - 8. Обычно константы должны быть определены соответствующим "
-"образом (например, ``const ELEMENT_WIND = 8`` и так далее)."
+"Вы должны предоставить строчное описание каждому флагу. В этом примере у "
+"``Fire`` значение 1, у ``Water`` - 2, у ``Earth`` - 4 и у ``Wind`` - 8. "
+"Обычно константы должны быть определены соответствующим образом (например, "
+"``const ELEMENT_WIND = 8`` и так далее)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
@@ -140,6 +136,8 @@ msgstr "Экспорт массивов"
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Экспортируемые массивы могут иметь инициализаторы, но они должны быть "
+"постоянными выражениями."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""

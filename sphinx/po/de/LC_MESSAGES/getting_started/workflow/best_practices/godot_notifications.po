@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,44 +35,49 @@ msgid ""
 "Some of these notifications, like draw, are useful to override in scripts. "
 "So much so that Godot exposes many of them with dedicated functions:"
 msgstr ""
+"Einige dieser Benachrichtigungen, wie z.B. Zeichnen, sind nützlich um sie an "
+"Skripten zu überschreiben. Godot hat viele von ihnen mit speziellen "
+"Funktionen ausstattet:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
 msgid "``_ready()`` : NOTIFICATION_READY"
-msgstr ""
+msgstr "``_ready()`` : NOTIFICATION_READY"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:18
 msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
-msgstr ""
+msgstr "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:20
 msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
-msgstr ""
+msgstr "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:22
 msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
-msgstr ""
+msgstr "``_process(delta)`` : NOTIFICATION_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:24
 msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
-msgstr ""
+msgstr "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:26
 msgid "``_input()`` : NOTIFICATION_INPUT"
-msgstr ""
+msgstr "``_input()`` : NOTIFICATION_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
 msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-msgstr ""
+msgstr "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
 msgid "``_draw()`` : NOTIFICATION_DRAW"
-msgstr ""
+msgstr "``_draw()`` : NOTIFICATION_DRAW"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone:"
 msgstr ""
+"Was Benutzer möglicherweise *nicht* erkennen, ist, dass Benachrichtigungen "
+"nicht nur für Nodes sondern auch andere Typen existieren:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:35
 msgid ""
@@ -148,10 +153,12 @@ msgid ""
 "So, in which situation should one use each of these notifications or virtual "
 "functions?"
 msgstr ""
+"In welcher Situation sollte man also jede dieser Benachrichtigungen oder "
+"virtuellen Funktionen verwenden?"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
 msgid "_process vs. _physics_process vs. \\*_input"
-msgstr ""
+msgstr "Gegenüberstellung: _process oder _physics_process oder \\*_input"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
 msgid ""

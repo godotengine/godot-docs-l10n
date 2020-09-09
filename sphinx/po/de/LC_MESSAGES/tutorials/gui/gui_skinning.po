@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:4
 msgid "GUI skinning"
-msgstr "GUI Abbild"
+msgstr "GUI Aussehen"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
 msgid "Oh, beautiful GUI!"
@@ -32,6 +32,11 @@ msgid ""
 "<class_Label>`, :ref:`TextureRect <class_TextureRect>`, :ref:`TextureButton "
 "<class_TextureButton>` and :ref:`TextureProgress <class_TextureProgress>`."
 msgstr ""
+"In dieser Anleitung geht es um das erweiterte Aussehen einer "
+"Benutzeroberfläche. Die meisten Spiele benötigen dies im Allgemeinen nicht, "
+"da sie sich nur auf Folgendes verlassen :ref:`Label <class_Label>`, :ref:"
+"`TextureRect <class_TextureRect>`, :ref:`TextureButton "
+"<class_TextureButton>` und :ref:`TextureProgress <class_TextureProgress>`."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:15
 msgid ""
@@ -40,16 +45,24 @@ msgid ""
 "also common in some games that include editors to create content, or "
 "interfaces for network connectivity."
 msgstr ""
+"Viele Arten von Spielen benötigen jedoch häufig komplexe "
+"Benutzeroberflächen, wie MMOs, traditionelle Rollenspiele, Simulationen, "
+"Strategiespiele usw. Diese Arten von Schnittstellen sind auch in einigen "
+"Spielen üblich, wie Editoren zum Erstellen von Inhalten oder Schnittstellen "
+"für die Netzwerkverbindung."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:20
 msgid ""
 "Godot's user interface uses these kinds of control with the default theme, "
 "but they can be skinned to resemble pretty much any kind of user interface."
 msgstr ""
+"Die Benutzeroberfläche von Godot verwendet diese Art der Steuerung mit dem "
+"Standardthema, sie kann jedoch so gestaltet werden, dass sie so ziemlich "
+"jeder Art von Benutzeroberfläche ähnelt."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr "Theme"
+msgstr "Designvorlagen (Thema)"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -64,6 +77,17 @@ msgid ""
 "rest of this document will explain the different tools used to customize the "
 "theme."
 msgstr ""
+"Das Aussehen der GUI wird durch die Ressource :ref:`Theme <class_Theme>` "
+"bestimmt. Diese Designvorlage (Thema) enthält alle Informationen, die "
+"erforderlich sind, um das gesamte visuelle Design aller Steuerelemente zu "
+"ändern. Die Themen-Optionen sind benannt, daher ist es nicht offensichtlich, "
+"welcher Name was ändert (besondere im Code), es werden jedoch mehrere Tools "
+"hierfür bereitgestellt. Der ultimative Ort, um zu sehen, welche Themen-"
+"Optionen wofür zuständig sind, ist die Datei `scene/resources/default_theme/"
+"default_theme.cpp <https://github.com/godotengine/godot/blob/master/scene/"
+"resources/default_theme/default_theme.cpp>`__ (diese ist auch immer "
+"aktueller als jede Dokumentation). Im weiteren werden die verschiedenen "
+"Tools zum Anpassen des Themas erklärt."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:38
 msgid ""
@@ -74,6 +98,13 @@ msgid ""
 "towards the root. If nothing was found, the default theme is used. This "
 "system allows for flexible overriding of themes in complex user interfaces."
 msgstr ""
+"Ein Thema kann auf jedes Steuerelement in der Szene angewendet werden. "
+"Infolgedessen verwenden auch alle untergeordneten Steuerelemente dasselbe "
+"Thema (es sei denn, ein anderes Thema wird weiter unten im Baum angegeben). "
+"Wenn ein Wert in einem Thema nicht gefunden wird, wird in Themen weiter oben "
+"in der Hierarchie in Richtung der Wurzel gesucht. Wenn nichts gefunden "
+"wurde, wird das Standardthema verwendet. Dieses System ermöglicht das "
+"flexible Überschreiben von Themen in komplexen Benutzeroberflächen."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:48
 msgid ""
@@ -83,26 +114,38 @@ msgid ""
 "automatically. To get correct theming in the editor for instanced scenes, "
 "you can apply the theme resource to the instanced scene's root node as well."
 msgstr ""
+"Verwenden Sie die benutzerdefinierte Themen-Option nicht in den "
+"Projekteinstellungen, da Fehler bei der Weitergabe von Themen bekannt sind. "
+"Wenden Sie Ihr Thema stattdessen auf die Thema-Eigenschaft des Wurzel-"
+"Kontroll-Nodes an. Es wird automatisch auf instanziierte Szenen übertragen. "
+"Um korrekte Themen im Editor für instanziierte Szenen zu erhalten, können "
+"Sie die Themenressource auch auf den Wurzel-Node der instanziierten Szene "
+"anwenden."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:55
 msgid "Theme options"
-msgstr ""
+msgstr "Themen-Optionen"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:57
 msgid "Each kind of option in a theme can be:"
-msgstr ""
+msgstr "Ein Thema bietet folgende Optionen:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:59
 msgid ""
 "**An integer constant**: A single numerical constant. Generally used to "
 "define spacing between components or alignment."
 msgstr ""
+"** Eine ganzzahlige Konstante **: Eine einzelne numerische Konstante. Wird "
+"im Allgemeinen verwendet, um den Abstand zwischen Komponenten oder die "
+"Ausrichtung zu definieren."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:61
 msgid ""
 "**A Color**: A single color, with or without transparency. Colors are "
 "usually applied to fonts and icons."
 msgstr ""
+"** Eine Farbe **: Eine einzelne Farbe mit oder ohne Transparenz. Farben "
+"werden normalerweise auf Schriftarten und Symbole angewendet."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:63
 msgid ""
@@ -110,18 +153,26 @@ msgid ""
 "are, they represent handles to pick or icons in a complex control (such as a "
 "file dialog)."
 msgstr ""
+"** Eine Textur **: Ein einzelnes Bild. Texturen werden nicht oft verwendet, "
+"aber wenn dies der Fall ist, stellen sie zu wählende Handles oder Symbole in "
+"einem komplexen Steuerelement (z. B. einem Dateidialog) dar."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:66
 msgid ""
 "**A Font**: Every control that uses text can be assigned the fonts used to "
 "draw strings."
 msgstr ""
+"** Eine Schriftart **: Jedem Steuerelement, das Text verwendet, können die "
+"zum Zeichnen von Zeichenfolgen verwendeten Schriftarten zugewiesen werden."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:68
 msgid ""
 "**A StyleBox**: Stylebox is a resource that defines how to draw a panel in "
 "varying sizes (more information on them later)."
 msgstr ""
+"** Eine StyleBox **: Stylebox ist eine Ressource, die definiert, wie ein "
+"Bedienfeld in verschiedenen Größen gezeichnet wird (weitere Informationen "
+"dazu später)."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:71
 msgid "Every option is associated with:"
@@ -145,6 +196,9 @@ msgid ""
 "changed and then applied to a label. Therefore, the label's text (and all "
 "children and grandchildren labels) will be red."
 msgstr ""
+"Im obigen Beispiel wird ein neues Thema erstellt. Die Option \"font_color\" "
+"wird geändert und dann auf ein Label angewendet. Daher ist der Text des "
+"Labels (und aller untergeordneten Elemente) rot."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:99
 msgid ""
@@ -152,6 +206,10 @@ msgid ""
 "and only for a specific control, by using the override API in :ref:`Control."
 "add_color_override() <class_Control_method_add_color_override>`:"
 msgstr ""
+"Es ist möglich, diese Optionen zu überschreiben, ohne das Thema direkt und "
+"auch nur für ein bestimmtes Steuerelement zu verwenden, indem Sie die "
+"Überschreibungs-API verwenden in :ref:`Control.add_color_override() "
+"<class_Control_method_add_color_override>`:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:114
 msgid ""
@@ -159,10 +217,13 @@ msgid ""
 "options are overridable, or check the :ref:`Control <class_Control>` class "
 "reference."
 msgstr ""
+"In der Inline-Hilfe von Godot (auf der Registerkarte \"Skript\") können Sie "
+"überprüfen, welche Themen-Optionen überschrieben werden können, oder sehen "
+"Sie in der Klassenreferenz :ref:`Control <class_Control>` nach."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:118
 msgid "Customizing a control"
-msgstr ""
+msgstr "Anpassen eines Steuerelements"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:120
 msgid ""
@@ -170,6 +231,10 @@ msgid ""
 "create a new theme. Controls offer their theme options as special kinds of "
 "properties. If checked, overriding will take place:"
 msgstr ""
+"Wenn nur wenige Steuerelemente entworfen werden müssen, ist es häufig nicht "
+"erforderlich, ein neues Thema zu erstellen. Steuerelemente bieten ihre "
+"Themen-Optionen als spezielle Arten von Eigenschaften an. Wenn diese Option "
+"aktiviert ist, wird Folgendes überschrieben:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:126
 msgid ""
@@ -177,10 +242,13 @@ msgid ""
 "checked, they can be used to override the value of the theme just for that "
 "control."
 msgstr ""
+"Wie im obigen Bild zu sehen ist, haben Themen-Optionen kleine "
+"Kontrollkästchen. Wenn diese Option aktiviert ist, können sie verwendet "
+"werden, um den Wert des Themas nur für dieses Steuerelement zu überschreiben."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:131
 msgid "Creating a theme"
-msgstr ""
+msgstr "Ein Thema erstellen"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:133
 msgid ""
@@ -188,16 +256,22 @@ msgid ""
 "Theme from the resource menu; the editor will appear immediately. After "
 "that, save it (for example, with the name mytheme.theme):"
 msgstr ""
+"Der einfachste Weg, ein Thema zu erstellen, besteht darin, eine Themen-"
+"Ressource zu bearbeiten. Erstellen Sie ein Thema aus dem Ressourcenmenü; der "
+"Editor wird sofort angezeigt. Speichern Sie es anschließend (z.B. mit dem "
+"Namen mytheme.theme):"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:139
 msgid ""
 "This will create an empty theme that can later be loaded and assigned to "
 "controls."
 msgstr ""
+"Dadurch wird ein leeres Thema erstellt, das später geladen und "
+"Steuerelementen zugewiesen werden kann."
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:143
 msgid "Example: theming a button"
-msgstr ""
+msgstr "Beispiel: eine Schaltfäche entwerfen"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:145
 msgid ""
@@ -205,18 +279,26 @@ msgid ""
 "and add them to your project. Open the theme editor, click on \"Edit Theme\" "
 "and select \"Add Class Items\":"
 msgstr ""
+"Laden Sie diese Assets herunter (:download:`skin_assets.zip <files/"
+"skin_assets.zip>`) und fügen Sie sie Ihrem Projekt hinzu. Öffnen Sie den "
+"Themen-Editor, klicken Sie auf \"Thema bearbeiten\" und wählen Sie "
+"\"Klassenelemente hinzufügen\":"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:151
 msgid ""
 "A menu will appear prompting the type of control to create. Select \"Button"
 "\":"
 msgstr ""
+"Ein Menü wird angezeigt, in dem Sie aufgefordert werden, welche Art von "
+"Steuerelement erstellt werden soll. Wähle \"Schaltfläche\":"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:156
 msgid ""
 "Immediately, all button theme options will appear in the property editor, "
 "where they can be edited:"
 msgstr ""
+"Sofort werden alle Optionen für Schaltflächendesigns im Eigenschafteneditor "
+"angezeigt, wo sie bearbeitet werden können:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:161
 msgid ""
@@ -226,6 +308,12 @@ msgid ""
 "not stretch when the texture is stretched. This is called nine-patch or "
 "\"3x3\" stretching:"
 msgstr ""
+"Öffnen Sie unter ``Styles`` das Dropdown-Menü \"Normal\" neben der Stelle, "
+"an der wahrscheinlich \"null\" steht, und erstellen Sie eine \"Neue "
+"StyleBoxTexture\", die Sie dann bearbeiten können. Eine Textur-Stylebox "
+"enthält eine Textur und die Größe der Ränder, die beim Strecken der Textur "
+"nicht gedehnt werden. Dies wird als Neuner-Muster oder \"3x3\"-Dehnung "
+"bezeichnet:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:169
 msgid ""
@@ -234,19 +322,32 @@ msgid ""
 "supplied font as the button font and change the font color to black. Soon, "
 "your button will look different and retro:"
 msgstr ""
+"Wiederholen Sie die Schritte und fügen Sie die anderen Assets hinzu. In den "
+"Beispieldateien befindet sich kein schwebendes oder deaktiviertes Bild. "
+"Verwenden Sie daher dieselbe Stylebox wie im Normalfall. Stellen Sie die "
+"mitgelieferte Schriftart als Schaltflächenschriftart ein und ändern Sie die "
+"Schriftfarbe in Schwarz. Bald wird Ihre Schaltfläche anders und retro "
+"aussehen:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:176
 msgid ""
 "Save this theme to the .theme file. Go to the 2D editor and create a few "
 "buttons:"
 msgstr ""
+"Speichern Sie dieses Thema in der .theme Datei. Gehen Sie zum 2D-Editor und "
+"erstellen Sie einige Schaltflächen:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:181
 msgid ""
 "Now, go to the root node of the scene and locate the \"theme\" property, "
 "replace it with the theme that was just created. It should look like this:"
 msgstr ""
+"Gehen Sie nun zum Wurzel-Node der Szene und suchen Sie die Eigenschaft "
+"\"theme\". Ersetzen Sie sie durch das gerade erstellte Thema. Es sollte so "
+"aussehen:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:186
 msgid "Congratulations! You have created a reusable GUI Theme!"
 msgstr ""
+"Herzliche Glückwünsche! Sie haben ein wiederverwendbare GUI-Designvorlage "
+"bzw. GUI-Thema erstellt!"

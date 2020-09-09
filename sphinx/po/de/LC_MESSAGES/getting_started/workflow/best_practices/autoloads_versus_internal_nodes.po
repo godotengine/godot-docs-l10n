@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
 msgid "Autoloads versus regular nodes"
-msgstr ""
+msgstr "Autoloads im Vergleich zu reguläre Nodes"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -100,38 +100,49 @@ msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
 msgstr ""
+"Wenn Sie Code in einer Szene behalten, sind möglicherweise nur ein oder zwei "
+"Skripte an der Audioausgabe beteiligt."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
+"Vergleichen Sie dies damit, dass jede Szene so viele ``AudioStreamPlayer``-"
+"Nodes enthält wie sie selbst benötigt und all diese Probleme verschwinden:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""
 "Each scene manages its own state information. If there is a problem with the "
 "data, it will only cause issues in that one scene."
 msgstr ""
+"Jede Szene verwaltet ihre eigenen Statusinformationen. Wenn es ein Problem "
+"mit den Daten gibt, tauchen dies nur in dieser einen Szene auf."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:58
 msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"Jede Szene greift nur auf ihre eigenen Nodes zu. Wenn es nun einen Fehler "
+"gibt, ist es leicht diesen fehlerhaften Node zu finden."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "Jede Szene weist genau die Menge an Ressourcen zu, die sie benötigt."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "Gemeinsame Funktionen oder Daten verwalten"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"Ein weiterer Grund für die Verwendung eines Autoloads kann sein, dass Sie "
+"dieselbe Methode oder dieselben Daten für viele Szenen wiederverwenden "
+"möchten."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -142,26 +153,32 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "Wenn es um Daten geht, können Sie entweder:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
 msgstr ""
+"einen neuen Typ :ref:`Resource <class_Resource>` erstellen, um die Daten "
+"gemeinsam zu nutzen."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"die Daten in einem Objekt speichern, auf das jeder Node Zugriff hat, z.B. "
+"mithilfe der Eigenschaft ``owner``, um auf den Stamm-Node der Szene "
+"zuzugreifen."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
 msgid "When you should use an Autoload"
-msgstr ""
+msgstr "Wann Sie ein Autoload verwenden sollten"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
 msgstr ""
+"Automatisch geladene Nodes können Ihren Code in einigen Fällen vereinfachen:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""

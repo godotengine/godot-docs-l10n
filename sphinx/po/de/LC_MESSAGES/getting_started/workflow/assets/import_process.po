@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Assets in Godot 3.0+ importieren"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
-"In Godot 3.0, we use a more modern approach to importing: Simply drop your "
+"In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
@@ -43,60 +43,96 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
-msgid "This allows changing all the import parameters transparently."
+msgid ""
+"This means that when trying to access imported assets through code you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`File <class_File>` class it "
+"will work in the editor, but break in the exported project."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:23
+#: ../../docs/getting_started/workflow/assets/import_process.rst:26
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
+"imported files, only the :ref:`File <class_File>` class can."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:25
+#: ../../docs/getting_started/workflow/assets/import_process.rst:32
 msgid ""
-"Changing the import parameters of an asset in Godot (again, keep in mind "
-"import parameters are only present in non-native Godot resource types) is "
-"easy. Select the relevant resource in the filesystem dock:"
+"To change the import parameters of an asset in Godot (again, keep in mind "
+"import parameters are only present in non-native Godot resource types) "
+"select the relevant resource in the filesystem dock:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:39
+#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#, fuzzy
+msgid "Reimporting multiple assets"
+msgstr "Bilder importieren"
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:56
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:41
+#: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
 "When the MD5 checksum of the source asset changes, Godot will perform an "
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
-msgstr ""
+msgstr "erzeugte Dateien"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+#: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Beim Importieren wird eine zusätzliche <asset>.import Datei hinzugefügt, "
+"welche die Importkonfiguration enthält. Stellen Sie sicher, dass Sie diese "
+"auf Ihr Versionskontrollsystem übertragen!"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:53
+#: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -105,21 +141,21 @@ msgid ""
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:64
+#: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:66
+#: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:74
+#: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
 "Different types of games might require different defaults. Changing the "
 "defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
@@ -127,18 +163,22 @@ msgid ""
 "cleared too:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:84
+#: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "Einfachheit ist der Schlüssel!"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:86
+#: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"Dies ist ein sehr einfacher Arbeitsablauf, an den man sich sehr schnell "
+"gewöhnt. Es erzwingt auch einen korrekteren Umgang mit Ressourcen."
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:89
+#: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"Es gibt viele Arten von Nutzerinhalten die importiert werden können. Lesen "
+"Sie also weiter um zu verstehen, wie Sie mit allen arbeiten können!"

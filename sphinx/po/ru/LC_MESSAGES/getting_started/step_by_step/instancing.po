@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr "Instancing (создание экземпляра)"
+msgstr "Интегрирование"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -63,7 +63,7 @@ msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
-"Как только сцена была сохранена, ее можно инстанцировать в другую сцену, как "
+"Как только сцена была сохранена, ее можно интегрировать в другую сцену, как "
 "если бы это был любой другой узел."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
@@ -73,15 +73,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr "Пример создания экземпляра"
+msgstr "Интегрирование на примере"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Чтобы узнать, как работает инстанцирование, давайте начнем с загрузки "
-"примера проекта: :download:`instancing.zip <files/instancing.zip>`."
+"Чтобы узнать, как работает интегрирование, давайте начнем с загрузки примера "
+"проекта: :download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
@@ -123,9 +123,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
-"Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего элемента "
-"``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке сказано: "
-"\"Добавить файл сцены как Узел.\") и выберите файл ``Ball.tscn``."
+"Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего "
+"узла``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке "
+"сказано: \"Добавить файл сцены как узел.\") и выберите файл ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -182,12 +182,14 @@ msgstr ""
 "этой сцены подействуют на другие экземпляры шаров."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
+#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
 "like ``PhysicsMaterial`` are shared between instances by default, so we need "
-"to make it unique. Click on the down arrow and select \"Make Unique\". Set "
-"its ``Bounce`` to ``1`` and press \"Play\"."
+"to make it unique. Click on the tools button in the top-right of the "
+"Inspector dock and select \"Make Sub-Resources Unique\". Set its ``Bounce`` "
+"to ``1`` and press \"Play\"."
 msgstr ""
 "Вы также можете настроить отдельные экземпляры. Установите значение отскока "
 "обратно на ``0``, а затем в сцене ``Main`` выберите один из экземпляров "
@@ -196,7 +198,7 @@ msgstr ""
 "на стрелку вниз и выберите пункт \"Сделать Уникальным (Make Unique)\". "
 "Установите для параметра``Bounce`` значение ``1`` и нажмите \"Играть\"."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:110
+#: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""
 "Notice that a grey \"revert\" button appears next to the adjusted property. "
 "When this button is present, it means you modified a property in the "
@@ -212,11 +214,11 @@ msgstr ""
 "значение останется. Нажатие кнопки возврата восстановит старое значение "
 "свойства, как в сохраненной сцене."
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:118
+#: ../../docs/getting_started/step_by_step/instancing.rst:119
 msgid "Conclusion"
 msgstr "Вывод"
 
-#: ../../docs/getting_started/step_by_step/instancing.rst:120
+#: ../../docs/getting_started/step_by_step/instancing.rst:121
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "

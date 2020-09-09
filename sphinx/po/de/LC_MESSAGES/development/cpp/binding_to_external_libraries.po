@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Verknüpfung mit externen Bibliotheken"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Module"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 msgid ""
@@ -60,9 +60,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:82
-#, fuzzy
 msgid "These files should contain the following:"
-msgstr "Dieser Code führt zu folgendem Ergebnis:"
+msgstr "Diese Dateien sollten Folgendes enthalten:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
@@ -116,6 +115,8 @@ msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
+"Um Include-Verzeichnisse hinzuzufügen, die der Compiler anzeigen kann, "
+"können Sie sie an die Pfade der Umgebung anhängen:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
@@ -130,11 +131,11 @@ msgstr "Des endgültige Modul sollte wie folgt aussehen:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:214
 msgid "Using the module"
-msgstr ""
+msgstr "Modul verwenden"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "You can now use your newly created module from any script:"
-msgstr ""
+msgstr "Sie können Ihr neu erstelltes Modul jetzt in jedem Skript verwenden:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:225
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."

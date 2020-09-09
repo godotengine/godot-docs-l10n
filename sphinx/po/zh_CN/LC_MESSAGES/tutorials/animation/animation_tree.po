@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgid ""
 "flexibility."
 msgstr ""
 ":参考: '动画树<类_动画树> '是Godot 3.1版本中引入的新节点，用于处理高级转换。"
-"它取代了古老的“动画树播放器”，同时添加了大量功能和灵活性。"
+"它取代了古老的“AnimationTreePlayer”，同时添加了大量功能和灵活性。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
 msgid "Creating an AnimationTree"
@@ -67,8 +67,8 @@ msgid ""
 "them from a 3D scene) as usual and then use this extra node to control the "
 "playback."
 msgstr ""
-"首先，必须明确``AnimationTree`` 节点不包含它自己的动画。相反，它使用包含在"
-"``AnimationPlayer``节点中的动画。通过这种形式，您可以像往常一样编辑动画(或从"
+"首先，必须明确 ``AnimationTree`` 节点不包含它自己的动画。相反，它使用包含在 "
+"``AnimationPlayer`` 节点中的动画。通过这种形式，您可以像往常一样编辑动画(或从"
 "3D场景导入动画)，然后使用这个额外节点来控制播放。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:25
@@ -79,9 +79,9 @@ msgid ""
 "import). At the end, the imported Godot scene will contain the animations in "
 "a ``AnimationPlayer`` node."
 msgstr ""
-"在3D场景中经常使用``AnimationTree``。当从3D交换格式导入场景时，它们通常自带动"
-"画(要么是多个，要么是在导入时从一个大的动画中拆分出来)。最后，导入的Godot场景"
-"在``AnimationPlayer``节点中包含动画。"
+"在3D场景中经常使用 ``AnimationTree`` 。当从3D交换格式导入场景时，它们通常自带"
+"动画(要么是多个，要么是在导入时从一个大的动画中拆分出来)。最后，导入的Godot场"
+"景在 ``AnimationPlayer`` 节点中包含动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:29
 msgid ""
@@ -91,9 +91,9 @@ msgid ""
 "``AnimationTree`` node to the ``AnimationPlayer`` that was created in the "
 "imported scene."
 msgstr ""
-"很少在Godot中直接使用导入的场景(它们要么实例化，要么来自继承)，您可以将"
-"``AnimationTree``节点放置在包含导入的新场景中。然后,将``AnimationTree``节点指"
-"向导入场景内创建的``AnimationPlayer``节点。"
+"很少在Godot中直接使用导入的场景(它们要么实例化，要么来自继承)，您可以将 "
+"``AnimationTree`` 节点放置在包含导入的新场景中。然后，将 ``AnimationTree`` 节"
+"点指向导入场景内创建的 ``AnimationPlayer`` 节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:32
 msgid ""
@@ -109,8 +109,8 @@ msgid ""
 "Inside this scene, the original ``.dae`` (Collada) file was instantiated and "
 "an ``AnimationTree`` node was created."
 msgstr ""
-"为玩家创建了一个以“动力学物体”为根节点的新场景。在这个场景中,已实例化原来的“."
-"dae”(Collada)文件，并创建“动画树”节点。"
+"为玩家创建了一个以 ``KinematicBody`` 为根节点的新场景。在这个场景中,已实例化"
+"原来的 ``.dae`` (Collada)文件，并创建 ``AnimationTree`` 节点。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
 msgid "Creating a tree"
@@ -119,13 +119,13 @@ msgstr "创建树"
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
 "There are three main types of nodes that can be used in ``AnimationTree``:"
-msgstr "可以在“动画树”中使用三种主要节点类型:"
+msgstr "可以在 ``AnimationTree`` 中使用三种主要节点类型:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:44
 msgid ""
 "Animation nodes, which reference an animation from the linked "
 "``AnimationTree``."
-msgstr "动画节点，从链接的“动画树”中引用动画。"
+msgstr "动画节点，从链接的 ``AnimationTree`` 中引用动画。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:45
 msgid "Animation Root nodes, which are used to blend sub-nodes."
@@ -140,7 +140,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
-msgstr "在“动画树”中设置根节点，如下几种类型可供选择:"
+msgstr "在 ``AnimationTree`` 中设置根节点，如下几种类型可供选择:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:52
 msgid ""
@@ -207,7 +207,8 @@ msgstr "测试此功能最简单的方法是直接连接一个“动画”节点
 msgid ""
 "This will simply play back the animation. Make sure that the "
 "``AnimationTree`` is active for something to actually happen."
-msgstr "这会简单地回放动画。确保“动画树”节点对实际发生的事情是激活的。"
+msgstr ""
+"这会简单地回放动画。确保 ``AnimationTree`` 节点对实际发生的事情是激活的。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:73
 msgid "Following is a short description of available nodes:"
@@ -256,7 +257,8 @@ msgstr "查找"
 msgid ""
 "This node can be used to cause a seek command to happen to any sub-children "
 "of the graph. After setting the time, this value returns to -1."
-msgstr "此节点可用于执行对图中任何子节点的查找命令。设置时间后，该值返回-1。"
+msgstr ""
+"此节点可用于在图中的任意子节点中引发一个seek指令。设置时间后，该值变回-1。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:102
 msgid "TimeScale"
@@ -447,7 +449,9 @@ msgstr ""
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
-msgstr "然后，实际运动可以通过:参考:`动画树<类_动画树>`API作为转换："
+msgstr ""
+"然后，实际运动可以通过 :ref:`AnimationTree <class_AnimationTree>`API作为转"
+"换："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:191
 msgid ""
@@ -486,9 +490,10 @@ msgid ""
 "your animation tree, or reuse nodes with a complex layout (such as a state "
 "machine or blend space) in different animation trees."
 msgstr ""
-"请记住动画节点只是资源，因此，它们之间共享所有实例。节点中的设定值会直接影响"
-"使用此“动画树”场景的所有实例。有一些很酷的用例，例如你可以复制、粘贴你的动画"
-"树部分，或在不同的动画树中重用具有复杂布局(例如状态机或混合空间)的节点。"
+"要注意动画节点就是资源，并且因此他们在所有实例之间共享。直接修改节点中的值，"
+"将会影响到场景中所有使用这个 ``AnimationTree`` 的实例。不过这也有一些不错的用"
+"法，比如你可以复制粘贴你的动画树的一部分，或者在不同的动画树中复用具有复杂布"
+"局的节点（例如状态机和混合树）。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:209
 msgid ""
@@ -497,8 +502,8 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
-"实际的动画数据包含在“动画树”节点中，并通过属性访问。检查“动画树”节点的“参"
-"数”部分，查看所有可以实时修改的参数："
+"实际的动画数据包含在 ``AnimationTree`` 节点中，并通过属性访问。检查 "
+"``AnimationTree`` 节点的“参数”部分，查看所有可以实时修改的参数："
 
 #: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
@@ -506,8 +511,8 @@ msgid ""
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realization of very complex animation logic."
 msgstr ""
-"这很方便，因为它可以通过``AnimationPlayer``获得动画效果，甚至是"
-"``AnimationTree``本身，允许实现非常复杂的动画逻辑。"
+"这很方便，因为它可以通过 ``AnimationPlayer`` 获得动画效果，甚至是 "
+"``AnimationTree`` 本身，允许实现非常复杂的动画逻辑。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:217
 msgid ""
@@ -542,8 +547,9 @@ msgid ""
 "<class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` "
 "node (it is exported as a property)."
 msgstr ""
-"要使用行程能力，您应该首先从“动画树”节点中检索:参考:`动画节点状态机回放<类_动"
-"画节点状态机回放>`对象(导出为一个属性)。"
+"要使用行程能力，您应该首先从 ``AnimationTree`` 节点中检索 :ref:"
+"`AnimationNodeStateMachinePlayback "
+"<class_AnimationNodeStateMachinePlayback>` 对象（其被导出为一个属性）。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
 msgid "HTML5 shell class reference"
-msgstr ""
+msgstr "HTML5 Shell Klassenreferenz"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:6
 msgid ""
@@ -36,7 +36,6 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
-#, fuzzy
 msgid "Engine"
 msgstr "Über die Godot Engine"
 
@@ -49,9 +48,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
-#, fuzzy
 msgid "Static Methods"
-msgstr "Statische Funktionen"
+msgstr "Statische Methoden"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:45
@@ -59,11 +57,11 @@ msgstr "Statische Funktionen"
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid "Promise"
-msgstr ""
+msgstr "Promise"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 msgid "`Engine.load <#Engine.load>`__ **(** string basePath **)**"
-msgstr ""
+msgstr "`Engine.load <#Engine.load>`__ **(** string basePath **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:29
@@ -76,11 +74,11 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:65
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:67
 msgid "void"
-msgstr ""
+msgstr "void"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 msgid "`Engine.unload <#Engine.unload>`__ **(** **)**"
-msgstr ""
+msgstr "`Engine.unload <#Engine.unload>`__ **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 msgid "boolean"
@@ -91,111 +89,132 @@ msgid ""
 "`Engine.isWebGLAvailable <#Engine.isWebGLAvailable>`__ **(** *[ number "
 "majorVersion=1 ]* **)**"
 msgstr ""
+"`Engine.isWebGLAvailable <#Engine.isWebGLAvailable>`__ **(** *[ number "
+"majorVersion=1 ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:29
 msgid ""
 "`Engine.setWebAssemblyFilenameExtension <#Engine."
 "setWebAssemblyFilenameExtension>`__ **(** string extension **)**"
 msgstr ""
+"`Engine.setWebAssemblyFilenameExtension <#Engine."
+"setWebAssemblyFilenameExtension>`__ **(** string extension **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:33
-#, fuzzy
 msgid "Instance Properties"
-msgstr "Node-Eigenschaften"
+msgstr "Instanzeigenschaften"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
 msgid "Emscripten ``Module``"
-msgstr ""
+msgstr "Emscripten ``Module``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
 msgid "`engine.rtenv <#engine.rtenv>`__"
-msgstr ""
+msgstr "`engine.rtenv <#engine.rtenv>`__"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
-#, fuzzy
 msgid "Instance Methods"
-msgstr "Szenen in­s­tan­zi­ie­ren"
+msgstr "Instanzmethoden"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
 msgid "`Engine <#Engine>`__ **(** **)**"
-msgstr ""
+msgstr "`Engine <#Engine>`__ **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:45
 msgid "`engine.init <#engine.init>`__ **(** *[ string basePath ]* **)**"
-msgstr ""
+msgstr "`engine.init <#engine.init>`__ **(** *[ string basePath ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:47
 msgid ""
 "`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
 "*[, string path ]* **)**"
 msgstr ""
+"`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
+"*[, string path ]* **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 msgid ""
 "`engine.start <#engine.start>`__ **(** *[ string arg1, string arg2, … ]* "
 "**)**"
 msgstr ""
+"`engine.start <#engine.start>`__ **(** *[ string arg1, string arg2, … ]* "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid ""
 "`engine.startGame <#engine.startGame>`__ **(** string execName, string "
 "mainPack **)**"
 msgstr ""
+"`engine.startGame <#engine.startGame>`__ **(** string execName, string "
+"mainPack **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:53
 msgid ""
 "`engine.setUnloadAfterInit <#engine.setUnloadAfterInit>`__ **(** boolean "
 "enabled **)**"
 msgstr ""
+"`engine.setUnloadAfterInit <#engine.setUnloadAfterInit>`__ **(** boolean "
+"enabled **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:55
 msgid ""
 "`engine.setCanvas <#engine.setCanvas>`__ **(** HTMLCanvasElement canvasElem "
 "**)**"
 msgstr ""
+"`engine.setCanvas <#engine.setCanvas>`__ **(** HTMLCanvasElement canvasElem "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:57
 msgid ""
 "`engine.setCanvasResizedOnStart <#engine.setCanvasResizedOnStart>`__ **(** "
 "boolean enabled **)**"
 msgstr ""
+"`engine.setCanvasResizedOnStart <#engine.setCanvasResizedOnStart>`__ **(** "
+"boolean enabled **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:59
 msgid "`engine.setLocale <#engine.setLocale>`__ **(** string locale **)**"
-msgstr ""
+msgstr "`engine.setLocale <#engine.setLocale>`__ **(** string locale **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:61
 msgid ""
 "`engine.setExecutableName <#engine.setExecutableName>`__ **(** string "
 "execName **)**"
 msgstr ""
+"`engine.setExecutableName <#engine.setExecutableName>`__ **(** string "
+"execName **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:63
 msgid ""
 "`engine.setProgressFunc <#engine.setProgressFunc>`__ **(** function callback "
 "**)**"
 msgstr ""
+"`engine.setProgressFunc <#engine.setProgressFunc>`__ **(** function callback "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:65
 msgid ""
 "`engine.setStdoutFunc <#engine.setStdoutFunc>`__ **(** function callback "
 "**)**"
 msgstr ""
+"`engine.setStdoutFunc <#engine.setStdoutFunc>`__ **(** function callback "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:67
 msgid ""
 "`engine.setStderrFunc <#engine.setStderrFunc>`__ **(** function callback "
 "**)**"
 msgstr ""
+"`engine.setStderrFunc <#engine.setStderrFunc>`__ **(** function callback "
+"**)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:72
-#, fuzzy
 msgid "Static Method Descriptions"
-msgstr "Statische Funktionen"
+msgstr "Statische Methoden"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:76
 msgid "Load the engine from the specified base path."
-msgstr ""
+msgstr "Laden Sie die Engine vom angegebenen Basispfad."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 #: ../../docs/<rst_epilog>:0
@@ -332,7 +351,6 @@ msgid "Fails if a canvas cannot be found on the page."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:165
-#, fuzzy
 msgid "Command line argument."
 msgstr "Kommandozeilenparameter."
 
@@ -410,9 +428,8 @@ msgid "Complete list of :ref:`supported locales <doc_locales>`."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:221
-#, fuzzy
 msgid "Language code."
-msgstr "Sprache"
+msgstr "Sprachcode."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:226
 msgid ""

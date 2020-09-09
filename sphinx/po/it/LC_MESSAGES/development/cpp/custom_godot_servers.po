@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,10 @@ msgstr "Introduzione"
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
 "Godot implements multi-threading as servers. Servers are daemons which "
-"manages data, processes, and pushes the result. Servers implement the "
-"mediator pattern which interprets resource ID and process data for the "
-"engine and other modules. In addition, the server claims ownership for its "
-"RID allocations."
+"manage data, process it, and push the result. Servers implement the mediator "
+"pattern which interprets resource ID and process data for the engine and "
+"other modules. In addition, the server claims ownership for its RID "
+"allocations."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:15
@@ -111,12 +111,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:318
 msgid ":ref:`RID<class_rid>`"
-msgstr ""
+msgstr ":ref:`RID<class_rid>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:319
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid "Registering the class in GDScript"
@@ -148,6 +149,8 @@ msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
@@ -185,13 +188,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
-msgstr ""
+msgstr "Riferimenti:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:477
 msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
+"core/message_queue.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:480
 msgid "Summing it up"

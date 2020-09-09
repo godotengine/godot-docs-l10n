@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,11 @@ msgid ""
 "less straightforward, as most screen aspect ratios are 16:9 and resolutions "
 "are standard (720p, 1080p, 1440p, 4K, …)."
 msgstr ""
+"Entwickler haben oft Probleme zu verstehen, wie sie mehrere Auflösungen in "
+"ihren Spielen am besten unterstützen können. Bei Desktop- und "
+"Konsolenspielen ist dies mehr oder weniger einfach, da die meisten "
+"Seitenverhältnisse auf dem Bildschirm 16: 9 betragen und die Auflösungen "
+"Standard sind (720p, 1080p, 1440p, 4K,…)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:14
 msgid ""
@@ -40,6 +45,10 @@ msgid ""
 "the pixel density; most developers had to supply assets in default and "
 "double resolutions."
 msgstr ""
+"Für Handyspiele war es zunächst einfach. Das iPhone und das iPad verwendeten "
+"viele Jahre lang dieselbe Auflösung. Bei der Implementierung von *Retina* "
+"wurde die Pixeldichte nur verdoppelt. Die meisten Entwickler mussten nun "
+"Inhalte in Standard und doppelter Auflösung bereitstellen."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:19
 msgid ""
@@ -47,6 +56,9 @@ msgid ""
 "screen sizes, densities, and aspect ratios. Non-conventional sizes are also "
 "becoming increasingly popular, such as ultrawide displays."
 msgstr ""
+"Heutzutage ist dies nicht mehr der Fall, da es viele verschiedene "
+"Bildschirmgrößen, Dichten und Seitenverhältnisse gibt. Auch unkonventionelle "
+"Größen wie Ultrawide-Displays werden immer beliebter."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:23
 msgid ""
@@ -56,12 +68,21 @@ msgid ""
 "reason one may want to support this, in this case, is for *performance* "
 "reasons (running in lower resolution to increase frames per second)."
 msgstr ""
+"Bei 3D Spielen besteht keine große Notwendigkeit, mehrere Auflösungen zu "
+"unterstützen (aus ästhetischer Sicht). Die 3D-Geometrie füllt den Bildschirm "
+"nur basierend auf dem Sichtfeld aus, ohne das Seitenverhältnis zu "
+"berücksichtigen. Der Hauptgrund, warum dies unterstützt werden soll, ist in "
+"diesem Fall aus *Leistungsgründen* (Ausführen mit niedrigerer Auflösung, um "
+"die Anzahl der Bilder pro Sekunde zu erhöhen)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:29
 msgid ""
 "For 2D and game UIs, this is a different matter, as art needs to be created "
 "using specific pixel sizes in software such as Photoshop, GIMP or Krita."
 msgstr ""
+"Für 2D und Spiel-Benutzeroberflächen ist dies eine andere Sache, da Grafiken "
+"mit bestimmten Pixelgrößen in Software wie Photoshop, GIMP oder Krita "
+"erstellt werden muss."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:32
 msgid ""
@@ -69,6 +90,10 @@ msgid ""
 "much, it is no longer possible to design UIs for every specific screen. "
 "Another method must be used."
 msgstr ""
+"Da sich Layouts, Seitenverhältnisse, Auflösungen und Pixeldichten so stark "
+"ändern können, ist es nicht mehr möglich, Benutzeroberflächen für jeden "
+"bestimmten Bildschirm zu entwerfen. Eine andere Methode muss verwendet "
+"werden."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:37
 msgid "One size fits all"
@@ -82,6 +107,12 @@ msgid ""
 "<https://developer.android.com/about/dashboards>`_ online, and for desktop, "
 "Steam `also does <https://store.steampowered.com/hwsurvey/>`_."
 msgstr ""
+"Der gebräuchlichste Ansatz besteht darin, eine einzelne *Basis* -Auflösung "
+"zu verwenden und diese dann an alles andere anzupassen. Mit dieser Auflösung "
+"wird von den meisten Spielern erwartet, dass sie das Spiel spielen (aufgrund "
+"ihrer Hardware). Für Handys hat Google nützliche `Statistiken <https://"
+"developer.android.com/about/dashboards>`_ online, genauso bietet Steam dies "
+"auch für Desktops <https://store.steampowered.com/hwsurvey/>_."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:45
 msgid ""
@@ -89,20 +120,27 @@ msgid ""
 "is 1920×1080, so a sensible approach is to develop a game for this "
 "resolution, then handle scaling for different sizes and aspect ratios."
 msgstr ""
+"Steam zeigt beispielsweise, dass die häufigste *primäre Anzeigeauflösung* "
+"1920 × 1080 ist. Daher ist es sinnvoll, ein Spiel für diese Auflösung zu "
+"entwickeln und dann die Skalierung für verschiedene Größen und "
+"Seitenverhältnisse durchzuführen."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:49
 msgid "Godot provides several useful tools to do this easily."
 msgstr ""
+"Godot bietet verschiedene nützliche Werkzeuge, um dies einfach zu erledigen."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:52
 msgid "Base size"
-msgstr ""
+msgstr "Basisgröße"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:54
 msgid ""
 "A base size for the window can be specified in the Project Settings under "
 "**Display → Window**."
 msgstr ""
+"Eine Basisgröße für das Fenster kann in den Projekteinstellungen unter "
+"**Anzeige → Fenster** angegeben werden."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:59
 msgid ""
@@ -112,6 +150,11 @@ msgid ""
 "in the editor. This setting corresponds directly to the size of the blue "
 "rectangle in the 2D editor."
 msgstr ""
+"Was es tut, ist jedoch nicht ganz offensichtlich; Die Engine wird *nicht* "
+"versuchen, den Monitor auf diese Auflösung umzuschalten. Stellen Sie sich "
+"diese Einstellung vielmehr als \"Entwurfsgröße\" vor, d.h. als Größe des "
+"Bereichs, mit dem Sie im Editor arbeiten. Diese Einstellung entspricht "
+"direkt der Größe des blauen Rechtecks im 2D-Editor."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:65
 msgid ""
@@ -119,10 +162,14 @@ msgid ""
 "are different from this base size. Godot offers many ways to control how the "
 "viewport will be resized and stretched to different screen sizes."
 msgstr ""
+"Es besteht häufig die Notwendigkeit, Geräte mit Bildschirm- und "
+"Fenstergrößen zu unterstützen, die sich von dieser Basisgröße unterscheiden. "
+"Godot bietet viele Möglichkeiten wie die Größe des Ansichtsfensters geändert "
+"und auf verschiedene Bildschirmgrößen ausgedehnt werden kann."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:71
 msgid "Resizing"
-msgstr ""
+msgstr "Größenänderung"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:73
 msgid ""
@@ -142,26 +189,34 @@ msgid ""
 "guessing, so Godot provides a simple set of parameters in the project "
 "settings to handle multiple resolutions."
 msgstr ""
+"In jedem Fall ist das Ändern der Wurzel-Viewport-Parameter wahrscheinlich "
+"die flexibelste Methode um das Problem zu lösen. Es kann jedoch viel Arbeit, "
+"Code und Raten bedeuten. Daher bietet Godot in den Projekteinstellungen "
+"einen einfachen Parametersatz, um mehrere Auflösungen zu verarbeiten ."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:88
 msgid "Stretch settings"
-msgstr ""
+msgstr "Dehnungs-Einstellungen"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:90
 msgid ""
 "Stretch settings are located in the project settings and provide several "
 "options:"
 msgstr ""
+"Die Dehnungseinstellungen befinden sich in den Projekteinstellungen und "
+"bieten verschiedene Optionen:"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:95
 msgid "Stretch Mode"
-msgstr ""
+msgstr "Dehnungsmodus"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:97
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
 msgstr ""
+"Die Einstellung **Dehnungsmodus** definiert, wie die Basisgröße gedehnt "
+"wird, um der Auflösung des Fensters oder Bildschirms zu entsprechen."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:102
 msgid ""
@@ -271,6 +326,9 @@ msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
 msgstr ""
+"Dies ist normalerweise die beste Option zum Erstellen von skalierbaren GUIs "
+"oder HUDs, sodass einige Steuerelemente unten verankert werden können (:ref:"
+"`doc_size_and_anchors`)."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:192
 msgid ""
@@ -326,7 +384,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:231
 msgid "From scripts"
-msgstr ""
+msgstr "aus Skripten"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
 msgid ""
@@ -350,7 +408,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:249
 msgid "Handling aspect ratios"
-msgstr "Mit einem Signal (Seitenverhältnis) umgehen"
+msgstr "Umgang mit Seitenverhältnissen"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:251
 msgid ""
@@ -362,7 +420,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:257
 msgid "Field of view scaling"
-msgstr ""
+msgstr "Skalierung des Sichtfelds"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:259
 msgid ""
@@ -382,7 +440,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:270
 msgid "Scaling 2D and 3D elements differently using Viewports"
-msgstr ""
+msgstr "Skalieren von 2D und 3D Elementen in Ansichtsfenstern"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:272
 msgid ""
@@ -392,6 +450,12 @@ msgid ""
 "improve performance significantly while keeping the HUD and other 2D "
 "elements crisp."
 msgstr ""
+"Wenn Sie mehrere Ansichtsfenster-Nodes verwenden, können Sie für "
+"verschiedene Elemente unterschiedliche Maßstäbe festlegen. Sie können dies "
+"beispielsweise verwenden, um die 3D Welt mit einer niedrigen Auflösung zu "
+"rendern und gleichzeitig die native Auflösung von 2D Elementen "
+"beizubehalten. Dies kann die Leistung erheblich verbessern, während das HUD "
+"und andere 2D Elemente scharf bleiben."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
 msgid ""
@@ -402,13 +466,19 @@ msgid ""
 "ViewportContainer is that it allows enable linear filtering. This makes "
 "scaled 3D viewports look better in many cases."
 msgstr ""
+"Dazu wird der Wurzel-Viewport-Node nur für 2D-Elemente verwendet. "
+"Anschließend wird ein Viewport-Node zum Anzeigen der 3D Welt erstellt und "
+"mithilfe eines ViewportContainer oder TextureRect-Nodes angezeigt. Das "
+"endgültige Projekt wird effektiv zwei Viewports enthalten. Ein Vorteil der "
+"Verwendung von TextureRect über ViewportContainer besteht darin, dass die "
+"lineare Filterung aktiviert werden kann. Dadurch sehen skalierte 3D "
+"Ansichtsfenster in vielen Fällen besser aus."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Zusätzlich zu dieser Dokumentation möchtest Du vielleicht auch einen Blick "
-"auf die verschieden `Godot Demoprojekte <https://github.com/godotengine/"
-"godot-demo-projects>`_ werfen."
+"Beispiele finden Sie unter `3D-Ansichtsfenstern Skalierungs-Demo <https://"
+"github.com/godotengine/godot-demo-projects/tree/master/"
+"viewport/3d_scaling>`__."

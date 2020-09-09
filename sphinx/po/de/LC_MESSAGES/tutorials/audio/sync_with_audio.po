@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:4
 msgid "Sync the gameplay with audio and music"
-msgstr ""
+msgstr "Gameplay mit Audio und Musik synchronisieren"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:7
 msgid "Introduction"
@@ -33,6 +33,12 @@ msgid ""
 "called. For music this does not matter as in most games it does not interact "
 "with the gameplay."
 msgstr ""
+"In jeder Anwendung oder jedem Spiel verzögert sich die Ton- und "
+"Musikwiedergabe geringfügig. Bei Spielen ist diese Verzögerung oft so "
+"gering, dass sie vernachlässigbar ist. Soundeffekte werden einige "
+"Millisekunden nach dem Aufrufen einer play () Funktion ausgegeben. Für Musik "
+"spielt dies keine Rolle, da sie in den meisten Spielen nicht mit dem "
+"Gameplay interagiert."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:11
 msgid ""
@@ -41,30 +47,43 @@ msgid ""
 "sync with the BPM). For this, having more precise timing information for an "
 "exact playback position is useful."
 msgstr ""
+"Bei einigen Spielen (hauptsächlich Rhythmus-Spielen) kann es jedoch "
+"erforderlich sein, Spieleraktionen mit etwas zu synchronisieren, das in "
+"einem Song passiert (normalerweise synchron mit dem BPM). Zu diesem Zweck "
+"ist es nützlich, genauere Timing-Informationen für eine genaue "
+"Wiedergabeposition zu haben."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:13
 msgid ""
 "Achieving very low playback timing precision is difficult. This is because "
 "many factors are at play during audio playback:"
 msgstr ""
+"Es ist schwierig, eine sehr geringe Zeitgenauigkeit der Wiedergabe zu "
+"erreichen. Dies liegt daran, dass während der Audiowiedergabe viele Faktoren "
+"eine Rolle spielen:"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:15
 msgid ""
 "Audio is mixed in chunks (not continuously), depending on the size of audio "
 "buffers used (check latency in project settings)."
 msgstr ""
+"Audio wird in Blöcken gemischt (nicht kontinuierlich), abhängig von der "
+"Größe der verwendeten Audiopuffer (überprüfen Sie die Latenz in den "
+"Projekteinstellungen)."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:16
 msgid "Mixed chunks of audio are not played immediately."
-msgstr ""
+msgstr "Gemischte Audiostücke werden nicht sofort abgespielt."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:17
 msgid "Graphics APIs display two or three frames late."
-msgstr ""
+msgstr "Grafik-APIs zeigen zwei oder drei Frames zu spät an."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:18
 msgid "When playing on TVs, some delay may be added due to image processing."
 msgstr ""
+"Bei der Wiedergabe auf Fernsehgeräten kann es aufgrund der Bildverarbeitung "
+"zu Verzögerungen kommen."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:20
 msgid ""
@@ -74,12 +93,20 @@ msgid ""
 "This increases the risk of skipping (a crack in sound because a mix callback "
 "was lost)."
 msgstr ""
+"Die häufigste Methode zum Reduzieren der Latenz besteht darin, die "
+"Audiopuffer zu verkleinern (wiederum durch Bearbeiten der "
+"Latenzzeiteinstellung in den Projekteinstellungen). Das Problem ist, dass "
+"bei zu geringer Latenz für das Mischen von Sounds erheblich mehr CPU "
+"erforderlich ist. Dies erhöht das Risiko des Überspringens (ein Riss im "
+"Sound, weil ein Mix-Rückruf verloren gegangen ist)."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:22
 msgid ""
 "This is a common tradeoff, so Godot ships with sensible defaults that should "
 "not need to be altered."
 msgstr ""
+"Dies ist ein häufiger Kompromiss, daher wird Godot mit vernünftigen "
+"Standardeinstellungen geliefert, die nicht geändert werden müssen."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:24
 msgid ""
@@ -87,6 +114,10 @@ msgid ""
 "and audio for games that require it. Beginning with Godot 3.2, some helpers "
 "were added to obtain more precise playback timing."
 msgstr ""
+"Das Problem ist letztendlich nicht diese leichte Verzögerung, sondern die "
+"Synchronisierung von Grafik und Audio für Spiele, die dies erfordern. "
+"Beginnend mit Godot 3.2 wurden einige Hilfen hinzugefügt, um ein genaueres "
+"Wiedergabe-Timing zu erhalten."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:27
 msgid "Using the system clock to sync"
@@ -118,12 +149,16 @@ msgid ""
 "Add these two and it's possible to guess almost exactly when sound or music "
 "will begin playing in the speakers during *_process()*:"
 msgstr ""
+"Wenn Sie diese beiden hinzufügen, können Sie fast genau erraten, wann "
+"während *_process ()* Ton oder Musik in den Lautsprechern abgespielt werden:"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:60
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
 "sync with the system clock, the timing information will slowly drift away."
 msgstr ""
+"Auf lange Sicht werden die Timing-Informationen jedoch langsam verschwinden, "
+"da die Sound-Hardware-Uhr nie genau mit der Systemuhr synchronisiert ist."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:62
 msgid ""
@@ -132,10 +167,14 @@ msgid ""
 "playback can last a much longer time, the game will eventually go out of "
 "sync and a different approach is needed."
 msgstr ""
+"Für ein Rhythmus-Spiel, bei dem ein Song nach einigen Minuten beginnt und "
+"endet, ist dieser Ansatz in Ordnung (und auch empfohlen). Für ein Spiel, bei "
+"dem die Wiedergabe viel länger dauern kann, ist das Spiel möglicherweise "
+"nicht mehr synchron und es ist ein anderer Ansatz erforderlich."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:65
 msgid "Using the sound hardware clock to sync"
-msgstr ""
+msgstr "Verwenden der Sound-Hardware-Uhr zum Synchronisieren"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:67
 msgid ""
@@ -147,6 +186,13 @@ msgid ""
 "Added to this, the value will be out of sync with the speakers too because "
 "of the previously mentioned reasons."
 msgstr ""
+"Verwende :ref:`AudioStreamPlayer.get_playback_position () "
+"<class_AudioStreamPlayer_method_get_playback_position>` um die aktuelle "
+"Position des Songs zu erhalten, bei der das Lied ideal klingt. Dies ist aber "
+"nicht so nützlich wie es sich anhört. Dieser Wert wird in Blöcken erhöht "
+"(jedes Mal, wenn der Audio-Rückruf einen Tonblock mischt), sodass viele "
+"Aufrufe denselben Wert zurückgeben können. Hinzu kommt, dass der Wert aus "
+"den zuvor genannten Gründen auch nicht mit den Lautsprechern synchron ist."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:69
 msgid ""
@@ -160,12 +206,16 @@ msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
 msgstr ""
+"Das Hinzufügen des Rückgabewerts dieser Funktion zu *get_playback_position "
+"()* erhöht die Genauigkeit:"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:79
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
 msgstr ""
+"Um die Genauigkeit zu erhöhen, subtrahieren Sie die Latenzinformationen (wie "
+"viel Zeit benötigt wird, um das Audio nach dem Mischen zu hören):"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid ""
@@ -175,7 +225,13 @@ msgid ""
 "for songs of any length, or synchronizing anything (sound effects, as an "
 "example) to music."
 msgstr ""
+"Das Ergebnis kann aufgrund der Funktionsweise mehrerer Threads etwas "
+"verzerrt sein. Überprüfen Sie einfach, ob der Wert nicht kleiner als im "
+"vorherigen Frame ist (verwerfen Sie ihn gegebenenfalls). Dies ist auch ein "
+"weniger präziser Ansatz als der vorherige, funktioniert jedoch für Songs "
+"beliebiger Länge oder zum Synchronisieren von Elementen (z.B. Soundeffekte) "
+"mit Musik."
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:88
 msgid "Here is the same code as before using this approach:"
-msgstr ""
+msgstr "Hier ist derselbe Code wie vor diesem Ansatz:"

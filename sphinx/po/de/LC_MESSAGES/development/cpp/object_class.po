@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,20 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
-msgstr ""
+msgstr "Objekt Klasse"
 
 #: ../../docs/development/cpp/object_class.rst:8
 msgid ""
 "This page describes the C++ implementation of objects in Godot. Looking for "
 "the Object class reference? :ref:`Have a look here. <class_Object>`"
 msgstr ""
+"Diese Seite beschreibt die C++ - Implementierung von Objekten in Godot. "
+"Suchen Sie nach der Objektklassenreferenz? :ref:`Have a look here. "
+"<class_Object>`"
 
 #: ../../docs/development/cpp/object_class.rst:12
 msgid "General definition"
-msgstr ""
+msgstr "Allgemeine Definition"
 
 #: ../../docs/development/cpp/object_class.rst:14
 msgid ""
@@ -41,7 +44,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:26
 msgid "This makes Objects gain a lot of functionality, like for example"
-msgstr ""
+msgstr "Dadurch erhalten Objekte viele Funktionen, wie zum Beispiel"
 
 #: ../../docs/development/cpp/object_class.rst:36
 #: ../../docs/development/cpp/object_class.rst:94
@@ -50,17 +53,19 @@ msgstr ""
 #: ../../docs/development/cpp/object_class.rst:296
 #: ../../docs/development/cpp/object_class.rst:315
 msgid "References:"
-msgstr ""
+msgstr "Referenzen:"
 
 #: ../../docs/development/cpp/object_class.rst:38
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
-msgstr ""
+msgstr "Ein Objekt registrieren"
 
 #: ../../docs/development/cpp/object_class.rst:43
 msgid ""
@@ -126,6 +131,8 @@ msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
@@ -169,7 +176,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:139
 msgid "For example:"
-msgstr ""
+msgstr "Zum Beispiel:"
 
 #: ../../docs/development/cpp/object_class.rst:145
 msgid ""
@@ -180,7 +187,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:149
 msgid "Another example:"
-msgstr ""
+msgstr "ein weiteres Beispiel:"
 
 #: ../../docs/development/cpp/object_class.rst:155
 msgid ""
@@ -298,6 +305,8 @@ msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
@@ -314,21 +323,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resources without a path are fine too."
-msgstr ""
+msgstr "Ressourcen ohne Pfad sind ebenfalls in Ordnung."
 
 #: ../../docs/development/cpp/object_class.rst:277
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
-msgstr ""
+msgstr "Ressourcen laden"
 
 #: ../../docs/development/cpp/object_class.rst:282
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
-msgstr ""
+msgstr "Ressourcen können mit der ResourceLoader-API wie folgt geladen werden:"
 
 #: ../../docs/development/cpp/object_class.rst:288
 msgid ""
@@ -346,14 +357,17 @@ msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid "Resource saving"
-msgstr ""
+msgstr "Ressourcen speichern"
 
 #: ../../docs/development/cpp/object_class.rst:303
 msgid "Saving a resource can be done with the resource saver API:"
 msgstr ""
+"Das Speichern einer Ressource kann mit der RessourcenSpeicher-API erfolgen:"
 
 #: ../../docs/development/cpp/object_class.rst:309
 msgid ""
@@ -368,3 +382,5 @@ msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"
 msgstr ""
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_saver.h>`__"

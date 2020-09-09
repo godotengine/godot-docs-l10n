@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,10 @@ msgstr "Einführung"
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
 "Godot implements multi-threading as servers. Servers are daemons which "
-"manages data, processes, and pushes the result. Servers implement the "
-"mediator pattern which interprets resource ID and process data for the "
-"engine and other modules. In addition, the server claims ownership for its "
-"RID allocations."
+"manage data, process it, and push the result. Servers implement the mediator "
+"pattern which interprets resource ID and process data for the engine and "
+"other modules. In addition, the server claims ownership for its RID "
+"allocations."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:15
@@ -54,26 +54,27 @@ msgstr ""
 #: ../../docs/development/cpp/custom_godot_servers.rst:22
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 msgstr ""
+"`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:23
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
-msgstr ""
+msgstr "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:26
 msgid "What for?"
-msgstr ""
+msgstr "Wofür?"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "Adding artificial intelligence."
-msgstr ""
+msgstr "Künstliche Intelligenz hinzufügen."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:29
 msgid "Adding custom asynchronous threads."
-msgstr ""
+msgstr "Hinzufügen von benutzerdefinierten asynchronen Threads."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:30
 msgid "Adding support for a new input device."
-msgstr ""
+msgstr "Unterstützung für ein neues Eingabegerät hinzufügen."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
 msgid "Adding writing threads."
@@ -81,11 +82,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
 msgid "Adding a custom VoIP protocol."
-msgstr ""
+msgstr "Hinzufügen eines benutzerdefinierten VoIP-Protokolls."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
 msgid "And more..."
-msgstr ""
+msgstr "und vieles mehr..."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:36
 msgid "Creating a Godot server"
@@ -117,6 +118,7 @@ msgstr ":ref:`RID<class_rid>` (ref)"
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid "Registering the class in GDScript"
@@ -148,6 +150,8 @@ msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
@@ -185,17 +189,19 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
-msgstr ""
+msgstr "Referenzen:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:477
 msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
+"core/message_queue.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:480
 msgid "Summing it up"
-msgstr ""
+msgstr "Fassen wir zusammen"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:482
 msgid "Here is the GDScript sample code:"
@@ -203,7 +209,7 @@ msgstr "Hier ist der GDScript-Beispiel-Code:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
-msgstr ""
+msgstr "Anmerkungen"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:508
 msgid ""

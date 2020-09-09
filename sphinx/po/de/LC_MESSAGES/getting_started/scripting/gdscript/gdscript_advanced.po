@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
-msgstr "Weniger Codezeilen bedeuten weniger mögliche Fehler ."
+msgstr "Weniger geschriebener Code bedeutet weniger mögliche Fehler ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
@@ -86,7 +86,7 @@ msgstr "Laufzeit ist gering."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "Standardmäßig Duck-Typing und polymorph."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
@@ -108,6 +108,9 @@ msgid ""
 "typed languages only appear while running the code (because expression "
 "parsing is more strict)."
 msgstr ""
+"Einige Fehler, die normalerweise zur Kompilierungszeit in statisch "
+"typisierten Sprachen erkannt werden, erscheinen nur während der Ausführung "
+"des Codes (da die Analyse von Ausdrücken strenger ist)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
@@ -127,6 +130,14 @@ msgid ""
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
 msgstr ""
+"In der Realität bedeutet dies, dass Godot + GDScript eine Kombination ist, "
+"mit der Spiele schnell und effizient erstellt werden können. Für Spiele, die "
+"sehr rechenintensiv sind und nicht von den in der Engine integrierten Tools "
+"(wie den Vektortypen, der Physik-Engine, der Mathematikbibliothek usw.) "
+"profitieren können, besteht auch die Möglichkeit, C ++ zu verwenden. Auf "
+"diese Weise können Sie den größten Teil des Spiels weiterhin in GDScript "
+"erstellen und in den Bereichen, in denen eine Leistungssteigerung "
+"erforderlich ist, kleine Teile von C ++ hinzufügen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -161,7 +172,7 @@ msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
-"Funktionen sind ebenfalls von dynamisch, dass bedeutet sie können mit "
+"Funktionen sind ebenfalls dynamisch, dass bedeutet sie können mit "
 "unterschiedlichen Argumenten aufgerufen werden, zum Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
@@ -175,6 +186,10 @@ msgid ""
 "variable. The latter allows the object to be modified by other functions by "
 "passing a reference to the original one."
 msgstr ""
+"In statischen Sprachen wie C oder C++ (und einige weitere wie Java und C#), "
+"gibt es einen Unterschied zwischen einer Variablen und einem Zeiger bzw. "
+"Referenz auf eine Variable. Dies erlaubt dem Objekt durch andere Funktionen "
+"verändert zu werden, durch Übergabe einer Referenz auf das Original."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -183,6 +198,11 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model, too. Some Examples:"
 msgstr ""
+"In C# oder Java ist alles was kein eingebauter Typ ist ((int, float, "
+"manchmal String) immer ein Zeiger oder eine Referenz. Referenzen werden auch "
+"automatisch speicherbereinigt, das bedeutet sie werden gelöscht wenn nicht "
+"mehr benötigt. Dynamische Sprachen bieten meistens ebenfalls dieses Model. "
+"Hier einige Beispiele:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
@@ -205,10 +225,17 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"In GDScript werden nur Basistypen (int, float, string und die Vektortypen) "
+"als Wert an Funktionen übergeben (Wert wird kopiert). Alles andere "
+"(Instanzen, Arrays, Wörterbücher usw.) wird als Referenz übergeben. Klassen, "
+"die erben :ref:`class_Reference` (die Standardeinstellung, wenn nichts "
+"angegeben ist), werden freigegeben, wenn sie nicht verwendet werden. Die "
+"manuelle Speicherverwaltung ist jedoch auch zulässig, wenn sie manuell von :"
+"ref:`class_Object` erbt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr "Felder (Arrays)"
+msgstr "Arrays (Felder)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -216,9 +243,9 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
-"Felder in dynamischen Programmiersprachen können viele verschiedene "
+"Arrays in dynamischen Programmiersprachen können viele verschiedene "
 "Datentypen enthalten und sind immer dynamisch (können also jederzeit in der "
-"Größe verändert werden). Vergleichen wir hierzu Felder in statischen "
+"Größe verändert werden). Vergleichen wir hierzu Arrays in statischen "
 "Programmiersprachen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
@@ -230,6 +257,8 @@ msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
 msgstr ""
+"In dynamisch typisierten Sprachen können Arrays auch als andere Datentypen "
+"wie Listen verwendet werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
@@ -247,6 +276,11 @@ msgid ""
 "This datatype is generally not present in such languages (or only in limited "
 "form)."
 msgstr ""
+"Wörterbücher sind ein leistungsstarkes Werkzeug in dynamisch typisierten "
+"Sprachen. Die meisten Programmierer, die aus statisch typisierten Sprachen "
+"(wie C++ oder C#) stammen, ignorieren ihre Existenz und erschweren ihr Leben "
+"unnötig. Dieser Datentyp ist in solchen Sprachen im Allgemeinen nicht (oder "
+"nur in begrenzter Form) vorhanden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -256,6 +290,11 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"Wörterbücher können jeden Wert jedem anderen Wert zuordnen, wobei es völlig "
+"egal ist, ob der Datentyp als Schlüssel oder Wert genutzt wird. Entgegen der "
+"landläufigen Meinung sind sie effizient, da sie mit Hash-Tabellen "
+"implementiert werden können. Sie sind in der Tat so effizient, dass einige "
+"Sprachen sogar Arrays als Wörterbücher implementieren."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
@@ -266,12 +305,17 @@ msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
 msgstr ""
+"Wörterbücher sind auch dynamisch, Schlüssel können jederzeit mit geringen "
+"Aufwand hinzugefügt oder entfernt werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"In den meisten Fällen können zweidimensionale Arrays häufig einfacher mit "
+"Wörterbüchern implementiert werden. Hier ist ein einfaches Beispiel für ein "
+"\"Schiffe versenken\" Spiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -280,6 +324,10 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
+"Wörterbücher können auch als Datenmarkup oder schnelle Strukturen verwendet "
+"werden. Während die Wörterbücher von GDScript Python-Wörterbüchern ähneln, "
+"unterstützt es auch die Syntax und Indizierung im Lua-Stil, was es nützlich "
+"macht, Anfangszustände und schnelle Strukturen zu schreiben:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:319
 msgid "For & while"
@@ -288,20 +336,26 @@ msgstr "For & while"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:321
 msgid "Iterating in some statically typed languages can be quite complex:"
 msgstr ""
+"Wiederholen in einigen statisch typisierten Sprachen kann ziemlich komplex "
+"sein:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr "Dies ist normalerweise stark vereinfacht in dynamischen Sprachen:"
+msgstr ""
+"Dies ist normalerweise stark vereinfacht in dynamisch typisierten Sprachen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
+"Container Datentypen (Arrays und Dictionaries) sind iterierbar, können also "
+"auch die Werte der Reihe nach durchgehen. Dictionaries erlauben die "
+"Iteration des Schlüssels:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
-msgstr ""
+msgstr "Wiederholen mit Indexen ist ebenso möglich:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
@@ -309,7 +363,7 @@ msgstr "Die range() Funktion nimmt bis zu 3 Argumente an:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some statically typed programming language examples:"
-msgstr ""
+msgstr "Hier einige Beispiele statischer Programmiersprachen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
@@ -318,7 +372,7 @@ msgstr "Sind gleichbedeutend mit:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
 msgstr ""
-"Rückwärts durch die Schleife iterieren kann man mit einem negativen Zähler:"
+"Rückwärts durch die Schleife wiederholen kann man mit einem negativen Zähler:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
@@ -345,9 +399,9 @@ msgid ""
 msgstr ""
 "Du kannst benutzerdefinierte Iteratoren generieren, wenn die vorgegebenen "
 "nicht ganz deinen Anforderungen entsprechen, indem du die ``_iter_init``, "
-"``_iter_next``, und ``_iter_get`` Funktionen der <<Variant class?>> "
-"überschreibst.\n"
-"Es folgt eine Implementierung für einen Vorwärts-Iterator:"
+"``_iter_next``, und ``_iter_get`` Funktionen der Variant Klasse "
+"überschreibst. Hier ist ein Beispiel einer Implementierung für einen "
+"Vorwärts-Iterator:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
@@ -400,6 +454,14 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
+"Auf diese Weise müsste alles, was von einem Stein zerschlagen werden kann, "
+"Smashable erben. Wenn ein Charakter, ein Feind, ein Möbelstück oder ein "
+"kleiner Stein zerschmettert werden könnten, müssten sie von der Klasse "
+"Smashable erben, was möglicherweise eine Mehrfachvererbung erfordert. Wenn "
+"Mehrfachvererbung unerwünscht ist, müssten sie eine gemeinsame Klasse wie "
+"Entity erben. Es wäre jedoch nicht sehr elegant, Entity nur dann eine "
+"virtuelle Methode ``smash()`` hinzuzufügen, wenn einige von ihnen "
+"zerschlagen werden können."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -407,6 +469,10 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
+"Bei dynamischen Programmiersprachen ist dies kein Problem. Duck-Typing "
+"stellt sicher, dass man nur an benötigter Stelle eine ``smash ()``-Funktion "
+"definieren muss, und das war's. Vererbung, Basisklassen usw. müssen nicht "
+"berücksichtigt werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -453,6 +519,11 @@ msgid ""
 "exist (like Objective C), but GDScript is stricter, so checking if the "
 "function exists is desirable:"
 msgstr ""
+"Es ist möglich, dass das getroffene Objekt keine smash () -Funktion hat. "
+"Einige dynamisch typisierte Sprachen ignorieren einen Methodenaufruf "
+"einfach, wenn er nicht vorhanden ist (wie die Objektive Programmiersprache "
+"C), aber GDScript ist strenger. Daher ist es wünschenswert, zu überprüfen, "
+"ob die Funktion vorhanden ist:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""

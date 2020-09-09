@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,18 +27,23 @@ msgid ""
 "Often one needs scripts that rely on other objects for features. There are 2 "
 "parts to this process:"
 msgstr ""
+"Часто требуются скрипты, которые полагаются на другие объекты для работы с "
+"функциями. Этот процесс состоит из 2-х частей:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:9
 msgid "Acquiring a reference to the object that presumably has the features."
 msgstr ""
+"Получение ссылки на объект, который предположительно имеет характеристики."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:11
 msgid "Accessing the data or logic from the object."
-msgstr ""
+msgstr "Доступ к данным или логике из объекта."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:13
 msgid "The rest of this tutorial outlines the various ways of doing all this."
 msgstr ""
+"В оставшейся части этого руководства описаны различные способы сделать всё "
+"это."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:16
 #, fuzzy
@@ -51,6 +56,8 @@ msgid ""
 "them is to get a reference to an existing object from another acquired "
 "instance."
 msgstr ""
+"Для всех :ref:`Object <class_Object>`, самый простой способ ссылки на них - "
+"это получить ссылку на существующий объект из другого полученного экземпляра."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:32
 msgid ""
@@ -58,11 +65,16 @@ msgid ""
 "While users often access :ref:`Node <class_Node>` and :ref:`Resource "
 "<class_Resource>` this way, alternative measures are available."
 msgstr ""
+"Тот же принцип применяется к объектам :ref:`Reference <class_Reference>`. "
+"Хотя пользователи часто обращаются к :ref:`Node <class_Node>` и :ref:"
+"`Resource <class_Resource>` таким образом, доступны альтернативные меры."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:36
 msgid ""
 "Instead of property or method access, one can get Resources by load access."
 msgstr ""
+"Вместо доступа к свойствам или методам, можно получить доступ к ресурсам по "
+"загрузке."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:115
 #, fuzzy
@@ -72,12 +84,15 @@ msgstr "Добавьте следующий код:"
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:117
 msgid "There are many ways in which a language can load such resources."
 msgstr ""
+"Существует множество способов, которыми язык может загружать такие ресурсы."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:119
 msgid ""
 "When designing how objects will access data, don't forget that one can pass "
 "resources around as references as well."
 msgstr ""
+"При проектировании того, как объекты будут получать доступ к данным, не "
+"забывайте, что можно передавать ресурсы и в виде ссылок."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:122
 msgid ""
@@ -86,14 +101,19 @@ msgid ""
 "<class_Resource_method_duplicate>` an existing reference or instantiate one "
 "from scratch with ``new()``."
 msgstr ""
+"Имейте в виду, что загрузка ресурса извлекает кэшированный экземпляр "
+"ресурса, обслуживаемый движком. Чтобы получить новый объект, необходимо :ref:"
+"`дублировать <class_Resource_method_duplicate>` существующую ссылку или "
+"создать её экземпляр с нуля с помощью ``new()``."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:127
 msgid "Nodes likewise have an alternative access point: the SceneTree."
 msgstr ""
+"Узлы также имеют альтернативную точку доступа: Дерево cцены (SceneTree)."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
 msgid "Accessing data or logic from an object"
-msgstr ""
+msgstr "Доступ к данным или логике из объекта"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
 msgid ""
@@ -102,6 +122,10 @@ msgid ""
 "**type**. It instead checks that the object **implements** the individual "
 "method."
 msgstr ""
+"Скриптовый API движка Godot является \"утиной типизацией\". Это означает, "
+"что если скрипт выполняет операцию, Godot не проверяет, поддерживает ли он "
+"операцию по **типу**. Вместо этого он проверяет, **реализует ли объект** "
+"отдельный метод."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
 msgid ""
@@ -111,6 +135,12 @@ msgid ""
 "`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would "
 "do the following checks, in order:"
 msgstr ""
+"Например, класс :ref:`CanvasItem <class_CanvasItem>` имеет свойство "
+"``visible`` (видимый). Все свойства, предоставляемые скриптовому API, на "
+"самом деле являются парой установщика и получателя, привязанной к имени. "
+"Если кто-то попытается получить доступ к :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>`, тогда Godot выполнит следующие "
+"проверки в следующем порядке:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
 msgid ""
@@ -119,6 +149,10 @@ msgid ""
 "a property defined on a base object by overriding the setter method for the "
 "property."
 msgstr ""
+"Если к объекту прикреплён сценарий, он попытается установить свойство через "
+"сценарий. Это оставляет открытой возможность для сценариев переопределить "
+"свойство, определённое для базового объекта, путем переопределения метода "
+"установки для свойства."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
 msgid ""
@@ -134,6 +168,8 @@ msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
 msgstr ""
+"Если не найдено, то производится явная проверка, хочет ли пользователь "
+"получить доступ к свойствам \"скрипта\" или \"мета\"."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
 msgid ""
@@ -142,6 +178,10 @@ msgid ""
 "execute logic that gives the impression that the Object has a property. This "
 "is also the case with the ``_get_property_list`` method."
 msgstr ""
+"Если нет, то проверяется реализация ``_set``/``_get`` (в зависимости от типа "
+"доступа) в CanvasItem и его унаследованных типах. Эти методы могут выполнять "
+"логику, создающую впечатление, что у Объекта есть свойство. Это также "
+"относится и к методу ``_get_property_list``."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
 msgid ""
@@ -150,6 +190,10 @@ msgid ""
 "the name of the tile with ID 1, i.e. :ref:`TileSet.tile_get_name(1) "
 "<class_TileSet_method_tile_get_name>`."
 msgstr ""
+"Обратите внимание, что это происходит даже с недопустимыми именами символов, "
+"например, в случае свойства :ref:`TileSet <class_TileSet>`\"1/tile_name\". "
+"Это относится к имени плитки с ID 1, то есть :ref:`TileSet.tile_get_name(1) "
+"<class_TileSet_method_tile_get_name>`."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
 msgid ""
@@ -157,18 +201,26 @@ msgid ""
 "script, the object's class, or any class that object inherits, but only for "
 "things which extend Object."
 msgstr ""
+"В результате эта система с утиной типизацией может найти свойство либо в "
+"скрипте, либо в классе объекта, либо в любом классе, который наследует "
+"объект, но только для вещей, которые расширяют Object."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
 msgstr ""
+"Godot предоставляет различные возможности для выполнения проверки времени "
+"выполнения этих обращений:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
+"Доступ к свойствам утиной типизации. Это будет проверка свойств (как описано "
+"выше). Если операция не поддерживается объектом, выполнение будет "
+"остановлено."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
 msgid ""
@@ -176,6 +228,9 @@ msgid ""
 "<class_CanvasItem_property_visible>`, one can access the methods, "
 "``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
+"Проверка метода. В случае :ref:`CanvasItem.visible "
+"<class_CanvasItem_property_visible>`, можно получить доступ к методам "
+"``set_visible`` и ``is_visible``, как и к любому другому методу."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
 msgid ""
@@ -183,9 +238,15 @@ msgid ""
 "useful in cases where one needs the max level of freedom from dependencies. "
 "In this case, one relies on an external context to setup the method."
 msgstr ""
+"Внешний доступ к :ref:`FuncRef <class_FuncRef>`. Это может быть полезно в "
+"тех случаях, когда нужен максимальный уровень свободы от зависимостей. В "
+"этом случае для настройки метода необходимо использовать внешний контекст."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."
 msgstr ""
+"Эти стратегии способствуют гибкости дизайна Godot. Вместе с тем у "
+"пользователей есть широкий спектр инструментов для удовлетворения их "
+"конкретных потребностей."

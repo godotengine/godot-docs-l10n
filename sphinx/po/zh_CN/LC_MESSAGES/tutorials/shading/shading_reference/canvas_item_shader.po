@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,8 +322,9 @@ msgid "inout vec2 **UV**"
 msgstr "out vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
-msgid "UV."
-msgstr "UV."
+#, fuzzy
+msgid "Texture coordinates."
+msgstr "下一个坐标"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
@@ -403,6 +404,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"像素中心的坐标。在屏幕空间中。如果“DEPTH”未被使用，则“xy”指定窗口中的位"
+"置，“z”表示片段深度。原点在左下角。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
 #, fuzzy
@@ -410,9 +413,8 @@ msgid "inout vec3 **NORMAL**"
 msgstr "out vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
-#, fuzzy
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
-msgstr "sampler2D **NORMAL_TEXTURE**"
+msgstr "从** NORMAL_TEXTURE **中正常读取。可写的。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:169
 msgid "out vec3 **NORMALMAP**"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,28 +105,35 @@ msgstr ""
 "**実行を継続**\\ 。このボタンは、ブレークポイントまたは一時停止後にゲームを再"
 "開します。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:36
+#: ../../docs/tutorials/debug/debugger_panel.rst:37
+msgid ""
+"Breakpoints won't break on code if it's :ref:`running in a thread "
+"<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
+"debugger."
+msgstr ""
+
+#: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
 msgstr "エラー"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:38
+#: ../../docs/tutorials/debug/debugger_panel.rst:44
 #, fuzzy
 msgid ""
 "This is where error and warning messages are printed while running the game."
 msgstr "これは、ゲームの実行中にエラーと警告メッセージが出力される場所です。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:40
+#: ../../docs/tutorials/debug/debugger_panel.rst:46
 #, fuzzy
 msgid ""
 "You can disable specific warnings in **Project Settings > Debug > GDScript**."
 msgstr ""
 "プロジェクト設定 の ``GDScript`` という新しいセクションで警告を設定できます:"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:43
+#: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
 msgstr "プロファイラー"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:45
+#: ../../docs/tutorials/debug/debugger_panel.rst:51
 msgid ""
 "The debugger comes with three profilers for your processor, network "
 "operations, and video memory."
@@ -134,7 +141,7 @@ msgstr ""
 "デバッガには、プロセッサ、ネットワーク操作、およびビデオメモリ用の3つのプロ"
 "ファイラが付属しています。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:48
+#: ../../docs/tutorials/debug/debugger_panel.rst:54
 msgid ""
 "The profiler is used to show why individual frames take as long as they do "
 "to process and render."
@@ -142,7 +149,7 @@ msgstr ""
 "プロファイラーは、個々のフレームが処理とレンダリングにかかる時間を示すために"
 "使用されます。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:51
+#: ../../docs/tutorials/debug/debugger_panel.rst:57
 msgid ""
 "Unlike other debugging tools, the profiler does not start automatically. It "
 "can be started at any time during gameplay by pressing the start button. You "
@@ -159,7 +166,7 @@ msgstr ""
 "とができます。クリアをクリックするか、ゲームを閉じて再度開き、プロファイラー"
 "を再起動しない限り、記録された情報は消えません。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:59
+#: ../../docs/tutorials/debug/debugger_panel.rst:65
 #, fuzzy
 msgid ""
 "After starting and stopping the profiler, you should see things being kept "
@@ -172,7 +179,7 @@ msgstr ""
 "のであり、また、それぞれに時間の値がを持ち、現在のフレームを呼び出している必"
 "要があります。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:64
+#: ../../docs/tutorials/debug/debugger_panel.rst:70
 msgid ""
 "The frame number in the top right tells you which frame you are currently "
 "looking at. You can change this by using the up or down arrows, typing in "
@@ -182,7 +189,7 @@ msgstr ""
 "矢印または下矢印を使用するか、フレーム番号を入力するか、グラフをクリックしま"
 "す。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:68
+#: ../../docs/tutorials/debug/debugger_panel.rst:74
 #, fuzzy
 msgid ""
 "If you want to add something to your graph or think it looks too cluttered, "
@@ -193,11 +200,11 @@ msgstr ""
 "テムの横にあるチェックボックスをオンまたはオフにして、グラフに追加または削除"
 "できます。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:73
+#: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
 msgstr "ネットワークプロファイラー"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:75
+#: ../../docs/tutorials/debug/debugger_panel.rst:81
 msgid ""
 "The Network Profiler contains a list of all the nodes that communicate over "
 "the multiplayer API and, for each one, some counters on the amount of "
@@ -209,11 +216,11 @@ msgstr ""
 "ンの量に関するカウンターが含まれています。また、任意の時点での総帯域幅使用量"
 "を表示する帯域幅メーターも備えています。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:81
+#: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
 msgstr "モニター"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:83
+#: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
 "The monitors are graphs of several aspects of the game while its running "
 "such as FPS, memory usage, how many nodes are in a scene and more. All "
@@ -226,11 +233,11 @@ msgstr ""
 "跡するため、ゲームの実行中にモニターを1つも開いていなくても、後で開いて値の変"
 "化を確認できます。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:89
+#: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
 msgstr "ビデオRAM"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:91
+#: ../../docs/tutorials/debug/debugger_panel.rst:97
 msgid ""
 "The **Video RAM** tab shows the video RAM usage of the game while it is "
 "running. It provides a list of every resource using video RAM by resource "
@@ -239,11 +246,11 @@ msgid ""
 "the top right of the panel."
 msgstr ""
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:99
+#: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
 msgstr "その他"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:101
+#: ../../docs/tutorials/debug/debugger_panel.rst:107
 msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
@@ -251,13 +258,13 @@ msgstr ""
 "[**その他**]タブには、実行時にクリックしているコントロールノードを識別する"
 "ツールが含まれています:"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:104
+#: ../../docs/tutorials/debug/debugger_panel.rst:110
 msgid ""
 "**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
 "**クリックされたコントロール** は、クリックされたノードがシーンツリーのどこに"
 "あるかを示します。"
 
-#: ../../docs/tutorials/debug/debugger_panel.rst:105
+#: ../../docs/tutorials/debug/debugger_panel.rst:111
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
 msgstr "**Clicked Control Type** は、クリックしたノードのタイプを示します。"

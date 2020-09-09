@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,19 @@ msgid ""
 "can be used to create interesting effects that run incredibly fast. You have "
 "also likely heard that they are terrifying. Both are true."
 msgstr ""
+"Sie haben sich also entschlossen, Shader auszuprobieren. Sie haben "
+"wahrscheinlich gehört, dass sie verwendet werden können, um interessante "
+"Effekte zu erzielen, die unglaublich schnell laufen. Sie haben "
+"wahrscheinlich auch gehört, dass sie erschreckend sind. Beides ist wahr."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:13
 msgid ""
 "Shaders can be used to create a wide range of effects (in fact everything "
 "drawn in a modern rendering engine is done with shaders)."
 msgstr ""
+"Shader können verwendet werden, um eine Vielzahl von Effekten zu erzeugen "
+"(tatsächlich wird alles, was in einer modernen Rendering-Engine gezeichnet "
+"wird, mit Shadern ausgeführt)."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:16
 msgid ""
@@ -47,10 +54,17 @@ msgid ""
 "still unintuitive and restricting, especially for users who are used to "
 "GDScript."
 msgstr ""
+"Das Schreiben von Shadern kann auch für Personen, die mit ihnen nicht "
+"vertraut sind, sehr schwierig sein. Godot versucht, das Schreiben von "
+"Shadern ein wenig zu vereinfachen, indem es viele nützliche integrierte "
+"Funktionen bereitstellt und einige der Initialisierungsarbeiten auf "
+"unterster Ebene für Sie erledigt. GLSL (die von Godot verwendete OpenGL "
+"Shading Language) ist jedoch immer noch einschränkend und nicht intuitiv, "
+"insbesondere für Benutzer, die an GDScript gewöhnt sind."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:22
 msgid "But what are they?"
-msgstr ""
+msgstr "Aber was sind sie?"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:24
 msgid ""
@@ -61,6 +75,12 @@ msgid ""
 "rendering because they are optimized for running thousands of instructions "
 "in parallel."
 msgstr ""
+"Shader sind eine spezielle Art von Programm, das auf Grafikprozessoren "
+"(GPUs) ausgeführt wird. Die meisten Computer verfügen über eine GPU, "
+"entweder eine in die CPU integrierte oder eine diskrete (also eine separate "
+"Hardwarekomponente, z.B. die typische Grafikkarte). GPUs sind besonders "
+"nützlich für das Rendern, da sie für die parallele Ausführung von Tausenden "
+"von Anweisungen optimiert sind."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:29
 msgid ""
@@ -72,24 +92,38 @@ msgid ""
 "or corner of a Sprite) goes and the fragment shader decides what color "
 "individual pixels receive."
 msgstr ""
+"Die Ausgabe des Shaders sind normalerweise die farbigen Pixel des Objekts, "
+"das in das Ansichtsfenster gezeichnet wird. Einige Shader ermöglichen jedoch "
+"spezielle Ausgaben (dies gilt insbesondere für APIs wie Vulkan). Shader "
+"arbeiten innerhalb der Shader-Pipeline. Der Standardprozess ist die Vertex -"
+"> Fragment Shader Pipeline. Der Vertex-Shader wird verwendet, um zu "
+"entscheiden, wohin jeder Vertex (Punkt in einem 3D-Modell oder Ecke eines "
+"Sprites) geht, und der Fragment-Shader entscheidet, welche Farbe einzelne "
+"Pixel erhalten."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:35
 msgid ""
 "Suppose you want to update all the pixels in a texture to a given color, on "
 "the CPU you would write:"
 msgstr ""
+"Angenommen, Sie möchten alle Pixel in einer Textur einer bestimmten Farbe "
+"zuweisen, so würde man dies auf der CPU so schreiben:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:43
 msgid ""
 "In a shader you are given access only to the inside of the loop so what you "
 "write looks like this:"
 msgstr ""
+"In einem Shader erhalten Sie nur Zugriff auf das Innere der Schleife. Das, "
+"was Sie schreiben, sieht also folgendermaßen aus:"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:52
 msgid ""
 "You have no control over how this function is called. So you have to design "
 "your shaders differently from how you would design programs on the CPU."
 msgstr ""
+"Sie haben keine Kontrolle darüber, wie diese Funktion aufgerufen wird. Sie "
+"müssen Ihre Shader also anders gestalten als Programme auf der CPU."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:55
 msgid ""
@@ -100,46 +134,55 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
+"Eine Konsequenz der Shader-Pipeline ist, dass Sie nicht auf die Ergebnisse "
+"eines vorherigen Shader-Laufs zugreifen können, nicht auf andere Pixel des "
+"gezeichneten Pixels zugreifen können und nicht außerhalb des aktuell "
+"gezeichneten Pixels schreiben können. Dadurch kann die GPU den Shader für "
+"verschiedene Pixel parallel ausführen, da diese nicht voneinander abhängig "
+"sind. Dieser Mangel an Flexibilität wurde für die Arbeit mit der GPU "
+"entwickelt, wodurch Shader unglaublich schnell arbeiten können."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"
-msgstr ""
+msgstr "Was können Sie machen"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:64
 msgid "position vertices very fast"
-msgstr ""
+msgstr "Eckpunkte sehr schnell positionieren"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:65
 msgid "compute color very fast"
-msgstr ""
+msgstr "Farbe sehr schnell berechnen"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:66
 msgid "compute lighting very fast"
-msgstr ""
+msgstr "Beleuchtung sehr schnell berechnen"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:67
 msgid "lots and lots of math"
-msgstr ""
+msgstr "viel, viel Mathematik"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:70
 msgid "What can't they do"
-msgstr ""
+msgstr "Was sie nicht können"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:72
 msgid "draw outside mesh"
-msgstr ""
+msgstr "außerhalb des Mesh (Drahtgitters) zeichnen"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:73
 msgid "access other pixels from current pixel (or vertices)"
-msgstr ""
+msgstr "auf andere Pixel von aktuellen Pixeln aus (oder Eckpunkten) zugreifen"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:74
 msgid "store previous iterations"
-msgstr ""
+msgstr "frühere Iterationen speichern"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:75
 msgid "update on the fly (they can, but they need to be compiled)"
 msgstr ""
+"Update während einer Berechnung (sie können, aber sie müssen kompiliert "
+"werden)"
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:78
 msgid "Structure of a shader"
@@ -172,13 +215,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:93
-#, fuzzy
 msgid ""
 "For more information about how shaders operate specifically in Godot, see "
 "the :ref:`Shaders <doc_shaders>` doc."
 msgstr ""
-"Für mehr Informationen zur Arbeitsweise von ``Viewport``-Nodes, siehe dazu "
-"die :ref:`Viewports<doc_viewports>`-Anleitung."
+"Weitere Informationen zur Funktionsweise von Shadern in Godot finden Sie im "
+"Dokument :ref:`Shaders <doc_shaders>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:97
 msgid ""
@@ -215,6 +257,16 @@ msgid ""
 "rest (due to excessive branching), the entire block will be slowed down, "
 "resulting in massively slower render times."
 msgstr ""
+"Hier kommen Shader ins Spiel. Die GPU ruft den Shader einige Male "
+"gleichzeitig auf und bearbeitet dann verschiedene Datenbits (Eckpunkte oder "
+"Pixel). Diese Datenbündel werden oft als Wellenfronten bezeichnet. Ein "
+"Shader wird für jeden Thread in der Wellenfront gleich ausgeführt. Wenn eine "
+"bestimmte GPU beispielsweise 100 Threads pro Wellenfront verarbeiten kann, "
+"wird eine Wellenfront auf einem 10 × 10-Pixelblock zusammen ausgeführt. Es "
+"wird weiterhin für alle Pixel in dieser Wellenfront ausgeführt, bis sie "
+"vollständig sind. Wenn Sie also ein Pixel langsamer als der Rest ist "
+"(aufgrund übermäßiger Verzweigung), wird der gesamte Block verlangsamt, was "
+"zu massiv langsameren Renderzeiten führt."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:119
 msgid ""

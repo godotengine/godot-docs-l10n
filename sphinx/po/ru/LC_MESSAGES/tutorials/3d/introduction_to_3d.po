@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,6 @@ msgstr ""
 "использует :ref:`Spatial <class_Spatial>` для всего 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
-#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -74,11 +73,11 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
-"Spatial узлы имеют локальную трансформацию, относительно родительского узла "
-"(пока родительский узел также наследуется от типа Spatial). Эта "
-"трансформация может быть доступна как 4x3 :ref:`Transform "
-"<class_Transform>`, или как 3 :ref:`Vector3 <class_Vector3>` члена "
-"представляющие позицию, вращение по Эйлеру (x, y и z углы) и масштаб."
+"Узлы Spatial имеют локальную трансформацию относительно родительского узла "
+"(если родительский узел также **наследует** тип Spatial). Эта трансформация "
+"может быть доступна как 4x3 :ref:`Transform <class_Transform>`, или как 3 :"
+"ref:`Vector3 <class_Vector3>` члена представляющие позицию, вращение по "
+"Эйлеру (углы поворота относительно осей X, Y и Z) и масштабирование."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -92,6 +91,11 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"В отличие от 2D, где загрузка содержимого изображения и рисование просты, в "
+"3D всё немного сложнее. Контент должен быть создан с помощью специальных 3D-"
+"инструментов (обычно называемых DCC) и экспортирован в формат файла обмена, "
+"чтобы быть импортированным в Godot (3D-форматы не так стандартизированы, как "
+"изображения)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
@@ -104,6 +108,10 @@ msgid ""
 "entire scenes (just as they look in the DCC), including animation, skeletal "
 "rigs, blend shapes, etc."
 msgstr ""
+"В Godot есть два способа импорта 3D-моделей. Первый и наиболее "
+"распространенный - :ref:`doc_importing_3d_scenes`, который позволяет вам "
+"импортировать целые сцены (так же, как они выглядят в DCC), включая "
+"анимацию, скелетные риги, смешанные формы и т.д."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
@@ -111,6 +119,9 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
+"Второй способ заключается в импорте простых файлов .OBJ в качестве ресурсов "
+"сетки, которые затем можно поместить в узел :ref:`MeshInstance "
+"<class_MeshInstance>` для отображения."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
@@ -147,7 +158,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "Непосредственная геометрия"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
@@ -156,6 +167,10 @@ msgid ""
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"Если существует потребность в создании простой геометрии, которая будет "
+"часто обновляться, в Godot есть специальный узел :ref:`ImmediateGeometry "
+"<class_ImmediateGeometry>`, который предоставляет API непосредственного "
+"режима в стиле OpenGL 1.x для создания точек, линий, треугольников и т. д."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
@@ -170,6 +185,12 @@ msgid ""
 "that take advantage of mixing with 3D backgrounds, more realistic parallax, "
 "lighting/shadow effects, etc."
 msgstr ""
+"Хотя Godot обладает мощным 2D-движком, во многих играх 2D используется в 3D-"
+"среде. Используя фиксированную камеру (ортогональную или перспективную), "
+"которая не вращается, такие узлы как :ref:`Sprite3D <class_Sprite3D>` и :ref:"
+"`AnimatedSprite3D <class_AnimatedSprite3D>`, могут использоваться для "
+"создания 2D-игр, в которых плоские фигуры сочетаются с 3D-фоном, более "
+"реалистичным параллаксом, эффектами освещения / тенями и т. д."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
@@ -177,6 +198,9 @@ msgid ""
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
+"Недостатком, конечно же, является увеличение сложности и снижение "
+"производительности по сравнению с обычным 2D, а также отсутствие привязки к "
+"работе в пикселях."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"
@@ -190,16 +214,23 @@ msgid ""
 "several types of built-in post-processing effects. Environments can also be "
 "overridden in the Camera."
 msgstr ""
+"Помимо редактирования сцены, частенько требуется редактировать окружение. "
+"Godot предоставляет узел :ref:`WorldEnvironment <class_WorldEnvironment>`, "
+"который позволяет изменять цвет фона, режим (например, можно установить "
+"скайбокс) и применять несколько типов встроенных эффектов постобработки. "
+"Окружения также можно переопределить в камере."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
-msgstr ""
+msgstr "Окно просмотра 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
 msgstr ""
+"Редактирование 3D-сцен выполняется во вкладке 3D. Эту вкладку можно выбрать "
+"вручную, либо она будет автоматически включена при выборе узла Spatial."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:118
 msgid ""
@@ -208,6 +239,11 @@ msgid ""
 "included to customize mouse buttons and behavior to be similar to other "
 "tools in the Editor Settings:"
 msgstr ""
+"Элементы управления навигацией по трехмерной сцене по умолчанию аналогичны "
+"Blender (стремясь обеспечить некоторую согласованность в конвейере "
+"бесплатного программного обеспечения...), но включены параметры для "
+"настройки кнопок и поведения мыши, чтобы они были похожи на другие "
+"инструменты в настройках редактора:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid "Coordinate system"
@@ -221,8 +257,8 @@ msgid ""
 "what you are doing)."
 msgstr ""
 "Godot использует `метрическую<https://en.wikipedia.org/wiki/"
-"Metric_system>`__ систему для всего. 3D Физика и прочие области настроены на "
-"нее, так что попытка использовать другую размерность обычно плохая идея "
+"Metric_system>`__ систему для всего. 3D-физика и прочие области настроены на "
+"неё, так что попытка использовать другую размерность обычно плохая идея "
 "(если вы точно не уверены что делаете)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
@@ -249,10 +285,10 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
-"Координата Y используется как \"вверх\", тогда как для многих объектов "
+"Координата Y указывает направление \"вверх\", тогда как для многих объектов "
 "которые нуждаются в выравнивании (таких как свет, камеры, капсульный "
-"коллайдер, машина, итд.), ось Z используется как \"указатель на\" "
-"направление. Это соглашение примерно означает что:"
+"коллайдер, машина, и т.д.), ось Z используется как \"указатель на направление"
+"\". Это соглашение примерно означает что:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**X** is sides"
@@ -268,7 +304,7 @@ msgstr "**Z** это вперед/назад"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
-msgstr ""
+msgstr "Пространство и гизмо манипуляции"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:152
 msgid ""
@@ -278,49 +314,59 @@ msgid ""
 "also to the shader language, ordering of components for Vector3, Color, "
 "etc.)."
 msgstr ""
+"Перемещение объектов в 3D-виде осуществляется с помощью манипуляторов гизмо. "
+"Каждая ось представлена цветом: красный, зеленый, синий представляют X, Y, Z "
+"соответственно. Это соглашение применяется также к сетке и другим гизмо (а "
+"также к языку шейдеров, порядку компонентов для Vector3, Color и т.д.)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
-msgstr ""
+msgstr "Некоторые полезные сочетания клавиш:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
 msgstr ""
+"Чтобы привязать расположение или поворот, нажмите :kbd:`Ctrl` при "
+"перемещении, масштабировании или повороте."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
 msgid "To center the view on the selected object, press :kbd:`F`."
-msgstr ""
+msgstr "Чтобы центрировать вид на выбранном объекте, нажмите :kbd:`F`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
-msgstr ""
+msgstr "Меню \"Обзор\""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr ""
+"Параметры просмотра контролируются меню \"Обзор\" на панели инструментов "
+"области просмотра."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
-msgstr ""
+msgstr "Вы можете скрыть гизмо в 3D-виде редактора через это меню:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
-msgstr ""
+msgstr "Чтобы скрыть определенные типы гизмо, отключите их в меню \"Обзор\"."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
-msgstr ""
+msgstr "Окружение по умолчанию"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
+"При создании из Менеджера проектов в 3D окружении по умолчанию установлено "
+"небо."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:188
 msgid ""
@@ -328,10 +374,13 @@ msgid ""
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
+"Учитывая, как работает физический рендеринг, рекомендуется всегда стараться "
+"работать с окружением по умолчанию, чтобы обеспечить непрямой и отраженный "
+"свет вашим объектам."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid "Cameras"
-msgstr ""
+msgstr "Камеры"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:195
 msgid ""
@@ -339,6 +388,10 @@ msgid ""
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
+"Независимо от того, сколько объектов размещено в трехмерном пространстве, "
+"ничего не будет отображаться, если в сцену не добавлена :ref:`Камера "
+"<class_Camera>`. Камеры могут работать как в ортогональной, так и в "
+"перспективной проекциях:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:202
 msgid ""
@@ -348,12 +401,19 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
+"Камеры связаны с родительским окном просмотра и отображают только его. "
+"Поскольку корнем дерева сцены является область просмотра, камеры будут "
+"отображаться на ней по умолчанию, но если требуются дополнительные области "
+"просмотра (либо в качестве цели рендеринга, либо в качестве изображения в "
+"картинке), для отображения им нужны их собственные дочерние камеры."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
 msgstr ""
+"При работе с несколькими камерами для каждого окна просмотра применяются "
+"следующие правила:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:213
 msgid ""
@@ -361,6 +421,9 @@ msgid ""
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"Если в дереве сцены нет камер, то первая, которая войдет в него, станет "
+"активной камерой. Дальнейшие камеры, входящие в сцену, будут игнорироваться "
+"(если они не установлены как *текущие*)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
@@ -368,12 +431,17 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"Если для камеры установлено свойство \"*текущая*\", она будет использоваться "
+"независимо от любой другой камеры в сцене. Если свойство установлено, камера "
+"станет активной, заменив предыдущую камеру."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:219
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
+"Если активная камера покидает дерево сцены, её место займет первая камера в "
+"древовидной структуре."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
@@ -384,3 +452,5 @@ msgid ""
 "There is no limitation on the number of lights, nor of types of lights, in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr ""
+"В Godot нет ограничений ни на количество источников света, ни на их типы. "
+"Можно добавить столько, сколько нужно (если достаточно производительности)."

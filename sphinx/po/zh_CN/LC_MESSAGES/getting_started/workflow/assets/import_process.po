@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,9 @@ msgstr ""
 "做，就无法指定如何转换和更改纹理、音频文件、场景等的导入标志。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
-"In Godot 3.0, we use a more modern approach to importing: Simply drop your "
+"In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
@@ -48,23 +49,35 @@ msgstr ""
 "将自动在内部导入这些文件，并将导入的素材隐藏在 ``res://.import`` 文件夹中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
-msgid "This allows changing all the import parameters transparently."
-msgstr "这允许透明地更改所有导入参数。"
+msgid ""
+"This means that when trying to access imported assets through code you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`File <class_File>` class it "
+"will work in the editor, but break in the exported project."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:23
+#: ../../docs/getting_started/workflow/assets/import_process.rst:26
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
+"imported files, only the :ref:`File <class_File>` class can."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "更改导入参数"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:25
+#: ../../docs/getting_started/workflow/assets/import_process.rst:32
+#, fuzzy
 msgid ""
-"Changing the import parameters of an asset in Godot (again, keep in mind "
-"import parameters are only present in non-native Godot resource types) is "
-"easy. Select the relevant resource in the filesystem dock:"
+"To change the import parameters of an asset in Godot (again, keep in mind "
+"import parameters are only present in non-native Godot resource types) "
+"select the relevant resource in the filesystem dock:"
 msgstr ""
 "在Godot中更改素材的导入参数（再次记住，导入参数仅存在于非本地的 Godot 素材类"
 "型中）很容易。只需在文件系统停靠面板中选择相关素材即可："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
@@ -72,7 +85,7 @@ msgstr ""
 "并且，在调整参数后，按下 ``重新导入``。这些参数将仅用于此素材和将来的重新导"
 "入。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
@@ -81,11 +94,33 @@ msgstr ""
 "同时更改多个素材的导入参数也是可能的。只需在资源停靠面板中一起选择所有这些素"
 "材，当重新导入时，所暴露的参数将应用于它们。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:39
+#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#, fuzzy
+msgid "Reimporting multiple assets"
+msgstr "使用多个线程"
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:56
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
 msgstr "自动重新导入"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:41
+#: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
 "When the MD5 checksum of the source asset changes, Godot will perform an "
 "automatic reimport of it, applying the preset configured for that specific "
@@ -94,11 +129,11 @@ msgstr ""
 "当源素材的 MD5 校验发生变化时，Godot 将执行自动重新导入，应用为该特定素材配置"
 "的预设。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
 msgstr "生成的文件"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+#: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
@@ -106,12 +141,12 @@ msgstr ""
 "导入将添加一个额外的 ``<asset>.import`` 文件，其中包含导入配置。确保将这些提"
 "交到您的版本控制系统！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:53
+#: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr "此外，额外的素材将预设在隐藏的 ``res://.import`` 文件夹中："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -123,11 +158,11 @@ msgstr ""
 "将此文件夹提交给版本控制系统是可选的。当检出到另一台计算机上时，它可以节省重"
 "新导入的时间，但需要相当多的空间和传输时间。请自己决定！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:64
+#: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
 msgstr "更改导入资源类型"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:66
+#: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
@@ -135,11 +170,11 @@ msgstr ""
 "一些源素材可以作为不同类型的资源被导入。为此，选择所需资源的相关类型，然后按 "
 "``重新导入`` 即可："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:74
+#: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
 msgstr "更改默认导入参数"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
 "Different types of games might require different defaults. Changing the "
 "defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
@@ -150,11 +185,11 @@ msgstr ""
 "更改每个项目的默认值。除了某些提供预设的素材类型外，还可以保存和清除默认设"
 "置："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:84
+#: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
 msgstr "简单是关键！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:86
+#: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
@@ -162,7 +197,7 @@ msgstr ""
 "这是一个非常简单的工作流程，只需很短的时间来习惯。它还能以更加正确的方式来处"
 "理资源。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:89
+#: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"

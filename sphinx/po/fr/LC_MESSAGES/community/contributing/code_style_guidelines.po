@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,6 +149,7 @@ msgstr ""
 "du code actuel."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
+#: ../../docs/community/contributing/code_style_guidelines.rst:261
 msgid "Installation"
 msgstr "Installation"
 
@@ -192,6 +193,7 @@ msgstr ""
 "vos modifications :"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:77
+#: ../../docs/community/contributing/code_style_guidelines.rst:273
 msgid "Manual usage"
 msgstr "Utilisation manuelle"
 
@@ -226,6 +228,7 @@ msgstr ""
 "Il vaut donc mieux utiliser ``core/*.{cpp,h}`` que ``core/*``."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:94
+#: ../../docs/community/contributing/code_style_guidelines.rst:288
 msgid "Pre-commit hook"
 msgstr "Crochet de pré commit"
 
@@ -425,13 +428,90 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:251
 msgid ""
-"For those, we follow the `PEP-8 style guide <https://www.python.org/dev/peps/"
-"pep-0008/>`__, this is however not as strongly enforced as for the C++ code. "
-"If you are so inclined, you can check and format your Python changes using "
-"`autopep8 <https://pypi.org/project/autopep8/>`__."
+"For those, we follow the `Black style guide <https://github.com/psf/"
+"black#the-black-code-style>`__. Blacken your Python changes using `Black "
+"<https://pypi.org/project/black/>`__."
 msgstr ""
-"Pour ces derniers, nous suivons le guide de style `PEP-8 <https://www.python."
-"org/dev/peps/pep-0008/>`__, qui n'est cependant pas aussi fortement appliqué "
-"que pour le code C++. Si vous le souhaitez, vous pouvez vérifier et formater "
-"vos modifications Python en utilisant `autopep8 <https://pypi.org/project/"
-"autopep8/>`__."
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:255
+#, fuzzy
+msgid "Using black locally"
+msgstr "Utiliser clang-format localement"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:257
+msgid ""
+"First of all, you will need to install black. Black requires Python 3.6.0+ "
+"to run."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:263
+#, fuzzy
+msgid "Here's how to install black:"
+msgstr "Voici comment installer clang-format :"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:270
+#, fuzzy
+msgid "You then have different possibilities to apply black to your changes:"
+msgstr ""
+"Vous avez alors différentes possibilités pour appliquer le clang-format à "
+"vos modifications :"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:275
+#, fuzzy
+msgid ""
+"You can apply ``black`` manually to one or more files with the following "
+"command:"
+msgstr ""
+"Vous pouvez appliquer manuellement clang-format à un ou plusieurs fichiers "
+"avec la commande suivante :"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:282
+msgid ""
+"``-l 120`` means that the allowed number of characters per line is 120. This "
+"number was agreed upon by the developers."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:284
+msgid ""
+"The path can point to several files, either one after the other or using "
+"wildcards like in a typical Unix shell."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:290
+#, fuzzy
+msgid ""
+"For ease of use, we provide a pre-commit hook for Git that will run black "
+"automatically on all your commits to check them, and let you apply its "
+"changes in the final commit."
+msgstr ""
+"Pour faciliter l'utilisation, nous fournissons un crochet de pré-commission "
+"pour Git qui s'exécutera automatiquement au format clang sur tous vos "
+"commits pour les vérifier, et vous permettra d'appliquer ses changements "
+"dans le commit final."
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:294
+#, fuzzy
+msgid ""
+"This \"hook\" is a script which can be found in ``misc/hooks``. Refer to "
+"that folder's ``README.md`` for installation instructions."
+msgstr ""
+"Ce \"crochet\" est un script qui peut être trouvé dans ``misc/hooks``, "
+"reportez-vous au fichier README.md de ce dossier pour les instructions "
+"d'installation."
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:299
+#, fuzzy
+msgid "Editor integration"
+msgstr "Interpolation vectorielle"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:301
+#, fuzzy
+msgid ""
+"Many IDEs or code editors have beautifier plugins that can be configured to "
+"run black automatically, for example each time you save a file. For details "
+"you can check `Black editor integration <https://github.com/psf/black#editor-"
+"integration>`__."
+msgstr ""
+"La plupart des IDE ou des éditeurs de code disposent de plugins "
+"d'embellissement qui peuvent être configurés pour exécuter automatiquement "
+"clang, par exemple chaque fois que vous enregistrez un fichier."

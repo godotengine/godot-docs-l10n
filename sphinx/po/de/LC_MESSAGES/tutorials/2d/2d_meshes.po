@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,18 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"In 3D werden Meshes verwendet um die Welt anzuzeigen. In 2D sind sie selten, "
+"da häufiger Bilder verwendet werden. Die 2D-Engine von Godot ist eine reine "
+"zweidimensionale Engine, sodass 3D-Meshes nicht direkt angezeigt werden "
+"können (obwohl dies über ``Viewport`` und ``ViewportTexture`` möglich ist)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"Wenn Sie 3D-Meshes in einem 2D-Ansichtsfenster anzeigen möchten, lesen Sie "
+"die Anleitung :ref:`doc_viewport_as_texture`."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -45,23 +51,35 @@ msgid ""
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
+"2D-Meshes enthalten anstelle von 3D eine zweidimensionale Geometrie (Z kann "
+"weggelassen oder ignoriert werden). Sie können ausprobieren selbst welche "
+"mittels ``SurfaceTool`` aus Code zu erstellen und in einem "
+"``MeshInstance2D``-Knoten anzeigen."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"Derzeit besteht die einzige Möglichkeit ein 2D-Mesh im Editor zu generieren "
+"darin, entweder eine OBJ-Datei als Mesh zu importieren oder sie aus einem "
+"Sprite zu konvertieren."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "gezeichnete Pixel optimieren"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
+#, fuzzy
 msgid ""
 "This workflow is useful for optimizing 2D drawing in some situations. When "
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"Dieser Arbeitsablauf ist in einigen Situationen nützlich um das 2D-Zeichnen "
+"zu optimieren. Wenn Sie große transparente Bilder zeichnen, zeichnet Godot "
+"das gesamte Quad auf den Bildschirm. Die großen transparenten Bereiche "
+"werden weiterhin gezeichnet."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -79,7 +97,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
 msgid "Converting Sprites to 2D meshes"
-msgstr ""
+msgstr "Konvertieren von Sprites in 2D-Meshes"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
@@ -95,16 +113,20 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
-msgstr ""
+msgstr "Ein Dialogfeld wird angezeigt mit einer Vorschau des 2D-Mesh:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"Die Standardwerte sind für viele Fälle gut genug, aber Sie können Wachstum "
+"und Vereinfachung entsprechend Ihren Anforderungen ändern:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
 msgstr ""
+"Drücken Sie abschließend die Schaltfläche ``2D-Mesh konvertieren`` und Ihr "
+"Sprite wird ersetzt:"

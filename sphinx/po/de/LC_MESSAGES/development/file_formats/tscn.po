@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,22 +116,24 @@ msgid ""
 "A heading looks like ``[<resource_type> key=value key=value key=value ...]`` "
 "where resource_type is one of:"
 msgstr ""
+"Eine Überschrift sieht so aus ``[<resource_type> key=value key=value "
+"key=value ...]``, wobei resource_type einer der folgenden ist:"
 
 #: ../../docs/development/file_formats/tscn.rst:51
 msgid "``ext_resource``"
-msgstr ""
+msgstr "``ext_resource``"
 
 #: ../../docs/development/file_formats/tscn.rst:52
 msgid "``sub_resource``"
-msgstr ""
+msgstr "``sub_resource``"
 
 #: ../../docs/development/file_formats/tscn.rst:53
 msgid "``node``"
-msgstr ""
+msgstr "``node``"
 
 #: ../../docs/development/file_formats/tscn.rst:54
 msgid "``connection``"
-msgstr "``Verbindung``"
+msgstr "``connection``"
 
 #: ../../docs/development/file_formats/tscn.rst:56
 msgid ""
@@ -164,19 +166,19 @@ msgstr "``instance``"
 
 #: ../../docs/development/file_formats/tscn.rst:76
 msgid "``instance_placeholder``"
-msgstr "``instance_Platzhalter``"
+msgstr "``instance_placeholder``"
 
 #: ../../docs/development/file_formats/tscn.rst:77
 msgid "``owner``"
-msgstr "``Eigentümer``"
+msgstr "``owner``"
 
 #: ../../docs/development/file_formats/tscn.rst:78
 msgid "``index`` (if two nodes have the same name)"
-msgstr ""
+msgstr "``index`` (falls zwei Nodes den gleichen Namen haben)"
 
 #: ../../docs/development/file_formats/tscn.rst:79
 msgid "``groups``"
-msgstr "``Gruppen``"
+msgstr "``groups``"
 
 #: ../../docs/development/file_formats/tscn.rst:81
 msgid ""
@@ -219,35 +221,38 @@ msgid ""
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
+"Der Skelett-Node erbt den Spatial-Node, kann aber auch eine Liste von "
+"Knochen haben, die in Schlüssel-Wert-Paaren im Format ``bones/Id/"
+"Attribute=Value`` beschrieben sind. Die Knochenattribute bestehen aus:"
 
 #: ../../docs/development/file_formats/tscn.rst:169
 msgid "``name``"
-msgstr ""
+msgstr "``name``"
 
 #: ../../docs/development/file_formats/tscn.rst:170
 msgid "``parent``"
-msgstr ""
+msgstr "``parent``"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 msgid "``rest``"
-msgstr ""
+msgstr "``rest``"
 
 #: ../../docs/development/file_formats/tscn.rst:172
 msgid "``pose``"
-msgstr ""
+msgstr "``pose``"
 
 #: ../../docs/development/file_formats/tscn.rst:173
 #: ../../docs/development/file_formats/tscn.rst:393
 msgid "``enabled``"
-msgstr ""
+msgstr "``enabled``"
 
 #: ../../docs/development/file_formats/tscn.rst:174
 msgid "``bound_children``"
-msgstr ""
+msgstr "``bound_children``"
 
 #: ../../docs/development/file_formats/tscn.rst:176
 msgid "``name`` must be the first attribute of each bone."
-msgstr ""
+msgstr "``name`` muss das erste Attribut eines jeden Knochens sein."
 
 #: ../../docs/development/file_formats/tscn.rst:177
 msgid ""
@@ -258,10 +263,12 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:179
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr ""
+"``rest`` ist die Transformationsmatrix des Knochens in seiner \"Ruhe\" -"
+"Position."
 
 #: ../../docs/development/file_formats/tscn.rst:180
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
-msgstr ""
+msgstr "`` Pose`` ist die Posenmatrix; Verwenden Sie ``rest`` als Basis."
 
 #: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
@@ -270,9 +277,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:184
-#, fuzzy
 msgid "Here's an example of a skeleton node with two bones:"
-msgstr "Unterhalb ist ein Beispiel einer Klassen-Datei."
+msgstr "Hier ist ein Beispiel für einen Skelett-Node mit zwei Knochen:"
 
 #: ../../docs/development/file_formats/tscn.rst:205
 msgid "BoneAttachment"
@@ -382,7 +388,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "ArrayMesh"
-msgstr "Kettenskulptur"
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:325
 msgid ""
@@ -392,19 +398,19 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:328
 msgid "TSCN files support two surface formats:"
-msgstr ""
+msgstr "TSCN-Dateien unterstützen zwei Oberflächenformate:"
 
 #: ../../docs/development/file_formats/tscn.rst:330
 msgid "For the old format, each surface has three essential keys:"
-msgstr ""
+msgstr "Für das alte Format hat jede Oberfläche drei wesentliche Schlüssel:"
 
 #: ../../docs/development/file_formats/tscn.rst:332
 msgid "``primitive``"
-msgstr ""
+msgstr "``primitive``"
 
 #: ../../docs/development/file_formats/tscn.rst:333
 msgid "``arrays``"
-msgstr "``Felder``"
+msgstr "``arrays``"
 
 #: ../../docs/development/file_formats/tscn.rst:334
 msgid "``morph_arrays``"
@@ -418,36 +424,35 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:339
 msgid "``arrays`` is a two-dimensional array, it contains:"
-msgstr ""
+msgstr "``arrays`` ist ein zweidimensionales Array, es enthält:"
 
 #: ../../docs/development/file_formats/tscn.rst:341
-#, fuzzy
 msgid "Vertex positions array"
-msgstr "``x.attribute``"
+msgstr "Scheitelpunktpositionen Array"
 
 #: ../../docs/development/file_formats/tscn.rst:342
 msgid "Tangents array"
-msgstr ""
+msgstr "Tangenten-Array"
 
 #: ../../docs/development/file_formats/tscn.rst:343
 msgid "Vertex colors array"
-msgstr ""
+msgstr "Scheitelpunktfarben-Array"
 
 #: ../../docs/development/file_formats/tscn.rst:344
 msgid "UV array 1"
-msgstr ""
+msgstr "UV Array 1"
 
 #: ../../docs/development/file_formats/tscn.rst:345
 msgid "UV array 2"
-msgstr ""
+msgstr "UV Array 2"
 
 #: ../../docs/development/file_formats/tscn.rst:346
 msgid "Bone indexes array"
-msgstr ""
+msgstr "Knochenindex-Array"
 
 #: ../../docs/development/file_formats/tscn.rst:347
 msgid "Bone weights array"
-msgstr ""
+msgstr "Knochengewichts-Array"
 
 #: ../../docs/development/file_formats/tscn.rst:348
 msgid "Vertex indexes array"
@@ -461,7 +466,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:353
 msgid "An example of ArrayMesh:"
-msgstr ""
+msgstr "Beispiel eines ArrayMesh:"
 
 #: ../../docs/development/file_formats/tscn.rst:377
 msgid "Animation"
@@ -475,7 +480,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "``length`` and ``step`` are both durations in seconds."
-msgstr ""
+msgstr "``length`` und ``step`` sind beides Zeitdauern in Sekunden."
 
 #: ../../docs/development/file_formats/tscn.rst:384
 msgid ""
@@ -485,28 +490,27 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:387
 msgid "``type``"
-msgstr ""
+msgstr "``type``"
 
 #: ../../docs/development/file_formats/tscn.rst:388
 msgid "``path``"
-msgstr "``Pfad``"
+msgstr "``path``"
 
 #: ../../docs/development/file_formats/tscn.rst:389
-#, fuzzy
 msgid "``interp``"
-msgstr "``in``"
+msgstr "``interp``"
 
 #: ../../docs/development/file_formats/tscn.rst:390
 msgid "``keys``"
-msgstr ""
+msgstr "``keys``"
 
 #: ../../docs/development/file_formats/tscn.rst:391
 msgid "``loop_wrap``"
-msgstr ""
+msgstr "``loop_wrap``"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "``imported``"
-msgstr ""
+msgstr "``imported``"
 
 #: ../../docs/development/file_formats/tscn.rst:395
 msgid ""
@@ -516,15 +520,15 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:398
 msgid "``transform``"
-msgstr "``Transformation``"
+msgstr "``transform``"
 
 #: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
-msgstr "``Wert``"
+msgstr "``value``"
 
 #: ../../docs/development/file_formats/tscn.rst:400
 msgid "``method``"
-msgstr ""
+msgstr "``method``"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid ""
@@ -540,17 +544,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:409
-#, fuzzy
 msgid "``0`` (constant)"
-msgstr "0 (konstant)"
+msgstr "``0`` (konstant)"
 
 #: ../../docs/development/file_formats/tscn.rst:410
 msgid "``1`` (linear)"
-msgstr ""
+msgstr "``1`` (linear)"
 
 #: ../../docs/development/file_formats/tscn.rst:411
 msgid "``2`` (cubic)"
-msgstr ""
+msgstr "``2`` (kubisch)"
 
 #: ../../docs/development/file_formats/tscn.rst:413
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,38 +18,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:4
-#, fuzzy
 msgid "GDScript warning system"
-msgstr "Система предупреждений"
+msgstr "Система предупреждений GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:6
-#, fuzzy
 msgid ""
 "The GDScript warning system complements :ref:`static typing "
 "<doc_gdscript_static_typing>` (but it can work without static typing too). "
 "It's here to help you avoid mistakes that are hard to spot during "
 "development, and that may lead to runtime errors."
 msgstr ""
-"Система предупреждений дополняет типизированный GDScript. Она здесь, чтобы "
-"помочь вам избежать ошибок, которые трудно обнаружить во время разработки и "
-"которые могут привести к ошибкам во время выполнения."
+"Система предупреждений GDScript дополняет :ref:` строго типизированный "
+"GDScript <doc_gdscript_static_typing>`(но она также не может работать без "
+"строгой типизации). Она здесь, чтобы помочь вам избежать ошибок, которые "
+"трудно обнаружить во время разработки и которые могут привести к ошибкам во "
+"время выполнения."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:11
-#, fuzzy
 msgid ""
 "You can configure warnings in the Project Settings under the section called "
 "**Gdscript**:"
 msgstr ""
 "Вы можете настроить предупреждения в Настройках Проекта, в новом разделе под "
-"названием ``GDScript``:"
+"названием **GDScript**:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
-msgstr "Подготовка проекта"
+msgstr "Настройка системы предупреждений в проекте"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
-#, fuzzy
 msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor's status bar. The example below has 3 warnings:"
@@ -59,12 +56,10 @@ msgstr ""
 "предупреждения:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:25
-#, fuzzy
 msgid "Warning system example"
-msgstr "Пример создания экземпляра"
+msgstr "Пример системы предупреждений"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:27
-#, fuzzy
 msgid ""
 "To ignore specific warnings in one file, insert a special comment of the "
 "form ``# warning-ignore:warning-id``, or click on the ignore link to the "
@@ -74,14 +69,13 @@ msgid ""
 msgstr ""
 "Чтобы игнорировать определенные предупреждения в одном файле, вставьте "
 "специальный комментарий в форме ``#warning-ignore:warning-id`` или нажмите "
-"на ссылку игнорирования справа от описания предупреждения. Godot добавит "
-"комментарий над соответствующей строкой, и код больше не будет вызывать "
-"соответствующее предупреждение:"
+"на ссылку справа от описания предупреждения. Godot добавит комментарий над "
+"соответствующей строкой, и код больше не будет вызывать соответствующее "
+"предупреждение:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:36
-#, fuzzy
 msgid "Warning system ignore example"
-msgstr "Пример создания экземпляра"
+msgstr "Пример игнорирования системы предупреждений"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:38
 msgid ""
@@ -95,7 +89,6 @@ msgstr ""
 "комментарий ``# warnings-disable``."
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:42
-#, fuzzy
 msgid ""
 "Warnings won't prevent the game from running, but you can turn them into "
 "errors if you'd like. This way your game won't compile unless you fix all "
@@ -110,6 +103,5 @@ msgstr ""
 "предыдущем примере, с предупреждениями которые интерпретируются как ошибки:"
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:51
-#, fuzzy
 msgid "Warnings as errors"
-msgstr "предупреждения как ошибки"
+msgstr "Предупреждения как ошибки"

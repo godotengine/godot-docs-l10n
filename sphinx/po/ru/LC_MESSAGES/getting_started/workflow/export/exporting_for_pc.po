@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:4
 msgid "Exporting for PC"
-msgstr ""
+msgstr "Экспорт для ПК"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "(``godot.exe`` on Windows, ``godot`` on the rest), compress the folder and "
 "send it to someone else. However, this is often not desired."
 msgstr ""
+"Самый простой способ распространить игру для ПК - скопировать исполняемые "
+"файлы (``godot.exe`` в Windows, ``godot`` в остальных ОС), сжать папку и "
+"отправить её кому-то другому. Однако, часто, это нежелательно."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:10
 msgid ""
@@ -35,4 +38,15 @@ msgid ""
 "takes all the project files and creates a ``data.pck`` file. This file is "
 "bundled with a specially optimized binary that is smaller, faster and does "
 "not contain the editor and debugger."
+msgstr ""
+"Godot предлагает более элегантный подход к распространению на ПК при "
+"использовании системы экспорта. При экспорте для ПК (Linux, Windows, macOS) "
+"экспортёр берёт все файлы проекта и создаёт файл data.pck. Этот файл связан "
+"со специально оптимизированным двоичным файлом, который меньше, быстрее и не "
+"содержит редактора и отладчика."
+
+#: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:18
+msgid ""
+"If you export for Windows with embedded PCK files, you will not be able to "
+"sign the program, it will break."
 msgstr ""

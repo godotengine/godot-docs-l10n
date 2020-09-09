@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,14 +113,14 @@ msgstr ""
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr "たとえば、エディタでのみコードを実行する場合は、次を使用します:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:49
 #, fuzzy
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
 msgstr "一方、ゲームでのみコードを実行する場合は、前の表現を単純に否定します:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:64
 #, fuzzy
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
@@ -129,12 +129,12 @@ msgstr ""
 "上記の2つの条件のいずれにも該当しないコードは、エディタとゲームの両方で実行さ"
 "れます。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 #, fuzzy
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "以下は ``_process()`` 関数がどのように見えるかです:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:97
 #, fuzzy
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
@@ -144,11 +144,11 @@ msgstr ""
 "エディタでの変更は永続的です。この場合、スクリプトを削除すると、ノードは回転"
 "方向を維持します。不要な変更を加えないように注意してください。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:100
 msgid "Try it out"
 msgstr "やってみましょう"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
@@ -156,7 +156,7 @@ msgstr ""
 "シーンに ``Sprite`` ノードを追加し、テクスチャをGodotアイコンに設定します。ス"
 "クリプトをアタッチして開き、次の手順に変更します:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:127
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
@@ -164,14 +164,14 @@ msgstr ""
 "スクリプトを保存して、エディタに戻ります。これで、オブジェクトが回転するのが"
 "見えるはずです。ゲームを実行すると、ゲームも回転します。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:131
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 "変更が表示されない場合は、シーンをリロードします(閉じてからもう一度開きま"
 "す)。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:133
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
@@ -179,7 +179,7 @@ msgstr ""
 "次に、どのコードがいつ実行されるのかを選択しましょう。\\ ``_process()`` 関数"
 "を次のように変更します:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:158
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
@@ -187,19 +187,19 @@ msgstr ""
 "スクリプトを保存します。これで、オブジェクトはエディタでは時計回りに回転しま"
 "すが、ゲームを実行すると、反時計回りに回転します。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
 #, fuzzy
 msgid "Editing variables"
 msgstr "インスタンスの編集"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
 "Add and export a variable speed to the script. The function set_speed after "
 "\"setget\" is executed with your input to change the variable. Modify  "
 "``_process()`` to include the rotation speed."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:213
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -213,11 +213,11 @@ msgstr ""
 "ノードもエディタで実行する必要があります。 AutoLoadノードにはエディタではまっ"
 "たくアクセスできません。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:216
 msgid "Instancing scenes"
 msgstr "シーンのインスタンス化"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:218
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "
 "currently opened in the editor. Be sure to set the scene root as the owner "
@@ -225,15 +225,15 @@ msgid ""
 "editor."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:220
 msgid "If you are using ``tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:239
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:260
 #, fuzzy
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "

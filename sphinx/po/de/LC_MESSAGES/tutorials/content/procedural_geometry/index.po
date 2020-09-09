@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 "benefits and drawbacks, so it is best to understand each one and how it can "
 "be useful in a given situation."
 msgstr ""
+"Es gibt viele Möglichkeiten, Geometrie in Godot prozedural zu generieren. In "
+"dieser Anleitung werden wir einige davon untersuchen. Jede Technik hat ihre "
+"eigenen Vor- und Nachteile. Daher ist es am besten jede zu verstehen und zu "
+"wissen wie sie in einer bestimmten Situation nützlich sein kann."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:20
 msgid "What is geometry?"
@@ -39,10 +43,14 @@ msgid ""
 "typically represented by an array of positions called \"vertices\". In "
 "Godot, geometry is represented by Meshes."
 msgstr ""
+"Geometrie ist eine ausgefallene Art, Form zu sagen. In der Computergrafik "
+"wird die Geometrie typischerweise durch ein Array von Positionen "
+"dargestellt, die als \"Eckpunkte\" bezeichnet werden. In Godot wird die "
+"Geometrie durch Meshes (Gitternetze) dargestellt."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:26
 msgid "What is a Mesh?"
-msgstr "Was ist ein Netz?"
+msgstr "Was ist ein Mesh?"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:28
 msgid ""
@@ -76,7 +84,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:46
 msgid "What a Mesh is"
-msgstr "Was ein Netz ist"
+msgstr "Was ein Mesh ist"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:48
 msgid ""
@@ -101,7 +109,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:60
 msgid "Surface array"
-msgstr ""
+msgstr "Oberflächen-Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:62
 msgid ""
@@ -137,7 +145,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:81
 msgid "ArrayMesh"
-msgstr "Kettenskulptur"
+msgstr "ArrayMesh"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:83
 msgid ""
@@ -145,6 +153,9 @@ msgid ""
 "functions, and most importantly, the ability to construct a Mesh surface "
 "through scripting."
 msgstr ""
+"Die ArrayMesh-Ressource erweitert Mesh um einige verschiedene Funktionen zur "
+"Verbesserung der Lebensqualität und vor allem um die Möglichkeit, eine Mesh-"
+"Oberfläche durch Skripterstellung zu erstellen."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:86
 msgid ""
@@ -156,22 +167,24 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:89
 msgid "MeshDataTool"
-msgstr ""
+msgstr "MeshDataTool"
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:91
 msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
 "vertices, faces, and edges that can be modified at runtime."
 msgstr ""
+"Das MeshDataTool ist eine Ressource, die Mesh-Daten in Arrays von "
+"Scheitelpunkten, Flächen und Kanten konvertiert, die zur Laufzeit geändert "
+"werden können."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:94
-#, fuzzy
 msgid ""
 "For more information about the MeshDataTool, please see the :ref:"
 "`MeshDataTool tutorial <doc_meshdatatool>`."
 msgstr ""
-"Genauere Informationen über Godots Shading Language gibt es im eigenen "
-"Artikel: :ref:`Shading Language <doc_shading_language>`."
+"Weitere Informationen zum MeshDataTool finden Sie in der :ref:`MeshDataTool-"
+"Anleitung<doc_meshdatatool>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:97
 msgid "SurfaceTool"
@@ -184,13 +197,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:101
-#, fuzzy
 msgid ""
 "For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
 "tutorial <doc_surfacetool>`."
 msgstr ""
-"Für weitere Informationen dazu, wie Godot Eingaben verarbeitet, siehe :ref:"
-"`InputEvent Tutorial<doc_inputevent>`."
+"Weitere Informationen zum SurfaceTool finden Sie in der :ref:`SurfaceTool-"
+"Anleitung <doc_surfacetool>`."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:104
 msgid "ImmediateGeometry"
@@ -230,12 +242,17 @@ msgid ""
 "Which method you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
 msgstr ""
+"Welche Methode Sie verwenden hängt davon ab, was Sie versuchen und mit "
+"welcher Art von Verfahren Sie vertraut sind."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:122
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
 "(meshes) that don't change over time."
 msgstr ""
+"Sowohl SurfaceTool als auch ArrayMesh eignen sich hervorragend zum "
+"Generieren statischer Geometrie (Meshes), die sich im Laufe der Zeit nicht "
+"ändern."
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:124
 msgid ""

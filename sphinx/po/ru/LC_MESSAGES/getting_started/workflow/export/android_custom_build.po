@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr ""
+msgstr "Пользовательские сборки для Android"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -29,43 +29,52 @@ msgid ""
 "then build it and use it as an export template every time you export the "
 "project."
 msgstr ""
+"Godot предоставляет возможность использовать собственные шаблоны сборки "
+"Android. Вместо использования уже готового шаблона, поставляемого с Godot, в "
+"папку вашего проекта устанавливается настоящий Java-проект Android. Затем "
+"Godot построит его и будет использовать в качестве шаблона экспорта каждый "
+"раз, когда вы экспортируете проект."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
 msgid "There are some reasons why you may want to do this:"
-msgstr ""
+msgstr "Есть несколько причин, по которым вы можете захотеть это сделать:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
-msgstr ""
+msgstr "Измените проект до его создания."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr ""
+msgstr "Добавьте внешние SDK, которые собираются вместе с вашим проектом."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
 "Configuring the custom build is a more or less straightforward process, but "
 "it may take a while to get used to how the Android SDK works."
 msgstr ""
+"Настройка пользовательской сборки - более или менее простой процесс, но "
+"может потребоваться время, чтобы привыкнуть к тому, как работает Android SDK."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:19
 msgid ""
 "Instructions will be provided as detailed as possible to do this process."
-msgstr ""
+msgstr "Для этого будут даны как можно более подробные инструкции."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Set up the custom build environment"
-msgstr ""
+msgstr "Настройка пользовательской среды сборки"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:24
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr ""
+msgstr "Перейдите в меню **Project** и установите шаблон *Custom Build*:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
 "Make sure export templates are downloaded. If not, this menu will help you "
 "download them."
 msgstr ""
+"Убедитесь, что шаблоны экспорта загружены. Если нет, то это меню поможет вам "
+"их скачать."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
 msgid ""
@@ -75,10 +84,15 @@ msgid ""
 "ref:`create your own add-ons<doc_android_plugin>`, or you really need to "
 "modify the project."
 msgstr ""
+"Это создаст проект Android на основе Gradle в ``res://android/build`` и "
+"поместит файл ``.gdignore`` в ``res://android``, чтобы файловая система "
+"Godot игнорировала эту папку. Редактировать эти файлы не нужно, если вы не "
+"хотите :ref:`создавать свои собственные надстройки <doc_android_plugin>`, "
+"или вам действительно нужно изменить проект."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:37
 msgid "Install the Android SDK (command-line version)"
-msgstr ""
+msgstr "Установка Android SDK (версия для командной строки)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:39
 msgid ""
@@ -88,10 +102,14 @@ msgid ""
 "easier, but it requires downloading and installing Android Studio (which may "
 "require more than 1 GB of storage)."
 msgstr ""
+"Это шаги для установки Android SDK с помощью командной строки. Преимущество "
+"такого подхода - простота и небольшой размер загрузки/установки. Хотя, это "
+"может быть сложнее. Подход Android Studio проще, но он требует загрузки и "
+"установки Android Studio (для чего может потребоваться более 1 ГБ памяти)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid "Install a JDK"
-msgstr ""
+msgstr "Установка JDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
 msgid ""
@@ -100,10 +118,14 @@ msgid ""
 "`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
 "versions won't work."
 msgstr ""
+"Android SDK не поставляется с Java, поэтому его необходимо установить "
+"вручную. Вам необходимо установить Java SDK (**не** только среду выполнения "
+"или JRE). Требуется `OpenJDK 8 <https://adoptopenjdk.net/index.html>`__, "
+"более новые версии работать не будут."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:54
 msgid "Download the command-line tools"
-msgstr ""
+msgstr "Загрузите инструменты командной строки"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
 msgid ""
@@ -120,30 +142,40 @@ msgid ""
 "If you do want Android Studio, read further down for instructions for doing "
 "the same using Android Studio."
 msgstr ""
+"Если вам действительно нужна Android Studio, прочтите инструкции, как "
+"сделать то же самое с Android Studio."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:64
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
 "are listed under *Download Options*. Scroll down a bit until you see them."
 msgstr ""
+"Найдите на этой странице раздел *Только инструменты командной строки*. В "
+"настоящее время они перечислены в разделе *Параметры загрузки*. Прокрутите "
+"немного вниз, пока не увидите их."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
 msgid ""
 "Download the ZIP file for your platform, there will be a single ``tools`` "
 "folder inside:"
 msgstr ""
+"Загрузите ZIP-файл для своей платформы, внутри будет одна папка ``tools``:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:72
 msgid ""
 "This may appear a little confusing, but be sure to follow these instructions "
 "carefully:"
 msgstr ""
+"Это может показаться немного запутанным, но обязательно внимательно следуйте "
+"этим инструкциям:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:75
 msgid ""
 "Create a new folder anywhere you want named ``android-sdk`` (it **must** be "
 "an empty directory). On Windows, the following path is usually good enough:"
 msgstr ""
+"Создайте новую папку в любом месте с именем ``android-sdk`` (это **должен** "
+"быть пустой каталог). В Windows обычно достаточно следующего пути:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:84
 msgid ""
@@ -151,6 +183,9 @@ msgid ""
 "%LOCALAPPDATA%\\Android\\Sdk``, then use this folder instead of creating an "
 "empty ``android-sdk`` folder."
 msgstr ""
+"Если у вас уже есть папка android-sdk, обычно расположенная в ``%LOCALAPPDATA"
+"%\\Android\\Sdk``, используйте эту папку вместо создания пустой папки "
+"``android-sdk``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:87
 msgid ""
@@ -160,12 +195,19 @@ msgid ""
 "place ``latest`` into it. Your final directory structure should look like "
 "this :"
 msgstr ""
+"Распакуйте ZIP-файл Android SDK в папку ``android-sdk``. Теперь в этой папке "
+"должна находиться распакованная папка под названием ``tools``. Переименуйте "
+"``tools`` в ``latest``. Наконец, создайте пустую папку с именем ``cmdline-"
+"tools`` и поместите в неё папку ``latest``. Ваша окончательная структура "
+"каталогов должна выглядеть так:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:99
 msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
+"Нам нужно настроить структуру каталогов таким образом, чтобы sdkmanager "
+"(внутри папки bin) работал."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:102
 #, fuzzy
@@ -177,6 +219,8 @@ msgid ""
 "To be able to use the Android SDK tools, Google requires you to accept its "
 "licenses."
 msgstr ""
+"Чтобы использовать инструменты Android SDK, Google требует, чтобы вы приняли "
+"его лицензии."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid ""
@@ -185,25 +229,33 @@ msgid ""
 "folder (instructions provided for Windows users, as Linux and macOS users "
 "are expected to understand how command line navigation works):"
 msgstr ""
+"Для этого sdkmanager должен быть запущен из командной строки со специальным "
+"аргументом. Перейдите в каталог ``tools/bin`` внутри папки SDK (инструкции "
+"предназначены для пользователей Windows, поскольку пользователи Linux и "
+"macOS должны понимать, как работает навигация по командной строке):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:114
 msgid "Then open a command line window:"
-msgstr ""
+msgstr "Затем откройте окно командной строки:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:118
 msgid "In there, run ``sdkmanager --licenses``:"
-msgstr ""
+msgstr "Там запустите ``sdkmanager --licenses``:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:122
 msgid ""
 "This will ask you to accept several licenses, just write ``y`` and press :"
 "kbd:`Enter` on every of them until it's done."
 msgstr ""
+"Вам будет предложено принять несколько лицензий, просто вводите ``y`` и "
+"нажимайте :kbd:`Enter` на каждой из них, пока это не будет сделано."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:125
 msgid ""
 "Afterwards, install the platform tools (this is required to install ``adb``):"
 msgstr ""
+"После этого установите инструменты платформы (это необходимо для установки "
+"``adb``):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:129
 msgid ""
@@ -212,6 +264,11 @@ msgid ""
 "sdk_root=../../ platform-tools``. These must be executed inside the ``/tools/"
 "bin/`` folder because the path for ``--sdk_root`` is relative."
 msgstr ""
+"Если вы получаете сообщение об ошибке ``Warning: Could not create settings`` "
+"(Предупреждение: не удалось создать настройки), попробуйте ``./sdkmanager --"
+"sdk_root=../../ --licenses`` или ``./sdkmanager --sdk_root=../../ platform-"
+"tools``. Они должны выполняться внутри папки ``/tools/bin/``, поскольку путь "
+"для ``--sdk_root`` является относительным."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
@@ -224,16 +281,21 @@ msgid ""
 "Once the *platform tools* are installed, the last step is to generate a "
 "debug keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
+"После установки *инструментов платформы* последним шагом будет создание "
+"хранилища ключей отладки (это необходимо для сборки). Поднимитесь на две "
+"папки вверх, написав:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:141
 msgid "(or open a new shell in the ``android-sdk`` folder)."
-msgstr ""
+msgstr "(или откройте новую оболочку в папке ``android-sdk``)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:143
 msgid ""
 "And you need to input the following line (on Linux and macOS, this should "
 "work out of the box, for Windows there are further instructions below):"
 msgstr ""
+"И вам нужно ввести следующую строку (в Linux и macOS это должно работать из "
+"коробки, для Windows дальнейшие инструкции приведены ниже):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:150
 msgid ""
@@ -241,6 +303,9 @@ msgid ""
 "at the beginning of the line if you use PowerShell; it's not needed for the "
 "regular ``cmd.exe`` console."
 msgstr ""
+"В Windows необходимо указать полный путь к Java. Вам нужно добавить ``&`` в "
+"начале строки, если вы используете PowerShell; для обычной консоли cmd.exe "
+"он не нужен."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:154
 msgid ""
@@ -248,6 +313,9 @@ msgid ""
 "(by adding ``&`` and the full Java path before ``keytool.exe``). Again, keep "
 "in mind that you need Java installed:"
 msgstr ""
+"Чтобы было понятнее, вот запись строки, которая работает в PowerShell "
+"(добавив ``&`` и полный путь к Java перед ``keytool.exe``). Опять же, имейте "
+"в виду, что вам необходимо установить Java:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:171
@@ -255,6 +323,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:254
 msgid "(right-click and open the image in a new tab if this appears too small)"
 msgstr ""
+"(щёлкните правой кнопкой мыши и откройте изображение в новой вкладке, если "
+"оно кажется слишком маленьким)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:164
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:247
@@ -268,6 +338,8 @@ msgid ""
 "Go to the **Editor Settings** and set up a few fields in **Export > "
 "Android**. Make sure they look like the following:"
 msgstr ""
+"Перейдите в **Настройки редактора** и настройте несколько полей в **Export > "
+"Android**. Убедитесь, что они выглядят следующим образом:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:173
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:256
@@ -276,6 +348,9 @@ msgid ""
 "you originally created, or inside the Java install. For Linux and macOS "
 "users, ``jarsigner`` is often located in ``/usr/bin``."
 msgstr ""
+"Как можно видеть, большинство путей находятся либо внутри папки ``android-"
+"sdk``, которую вы изначально создали, либо внутри установки Java. Для "
+"пользователей Linux и macOS ``jarsigner`` часто находится в ``/usr/bin``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:177
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:260
@@ -284,7 +359,7 @@ msgstr "С этим у вас должно быть всё готово."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:181
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "Установка Android SDK (Android Studio)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:183
 msgid ""
@@ -293,34 +368,47 @@ msgid ""
 "it takes up more disk space. It's also useful if you plan to develop Godot "
 "for Android (modify the Java source code) or if you plan to develop add-ons."
 msgstr ""
+"Если вы только что завершили установку SDK с помощью инструментов командной "
+"строки, можете полностью пропустить этот раздел. Путь к Android Studio "
+"проще, но он занимает больше места на диске. Это также полезно, если вы "
+"планируете разрабатывать Godot для Android (изменять исходный код Java) или "
+"если вы планируете разрабатывать дополнения."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
 msgid "Download and install Android Studio"
-msgstr ""
+msgstr "Скачайте и установите Android Studio"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:191
 msgid ""
 "Download the latest version of Android Studio. When installing, pay "
 "attention to where the *android-sdk* directory is created."
 msgstr ""
+"Загрузите последнюю версию Android Studio. При установке обратите внимание "
+"на то, где создается каталог *android-sdk*."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:196
 msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"Это забавно: путь, который он предлагает по умолчанию, содержит пробелы (и "
+"жалуется на это). Это нужно изменить."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
 msgstr ""
+"В любом случае лучше выбрать другой путь внутри ваших пользовательских "
+"папок. Обычно, рекомендуемый вариант:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"Замените *yourusername* своим фактическим именем пользователя. Если всё "
+"будет правильно, выберите из списка выше на том же экране:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
 #, fuzzy
@@ -329,19 +417,23 @@ msgstr "Android"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "Платформа Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
+"Остальные не нужны, потому что система сборки сама их загрузит. Выбрав их, "
+"продолжайте установку."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
 msgid ""
 "Go to the folder where you installed ``android-sdk`` in the previous step, "
 "use File Explorer and open a command line tool there:"
 msgstr ""
+"Перейдите в папку, в которую вы установили ``android-sdk`` на предыдущем "
+"шаге, используйте проводник и откройте там инструмент командной строки:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
 msgid ""
@@ -349,6 +441,9 @@ msgid ""
 "should work out of the box, but on Windows, it needs additional details "
 "(keep reading afterwards)."
 msgstr ""
+"Фактическая командная строка для ввода следующая. В Linux и macOS он должен "
+"работать из коробки, но в Windows требуются дополнительные сведения "
+"(продолжайте читать позже)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
 msgid ""
@@ -357,6 +452,10 @@ msgid ""
 "for the regular ``cmd.exe`` console). Don't worry, at least by using Android "
 "Studio on Windows, Java comes bundled with it."
 msgstr ""
+"В Windows должен быть указан полный путь к Java (и в начале строки "
+"необходимо добавить символ ``&``, если вы используете PowerShell, это не "
+"требуется для обычной консоли ``cmd.exe``). Не волнуйтесь, по крайней мере, "
+"при использовании Android Studio в Windows, Java идёт в комплекте."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
 msgid ""
@@ -365,16 +464,22 @@ msgid ""
 "remove ``&`` if you use ``cmd.exe``). It uses a path to the Java version "
 "that comes with Android Studio:"
 msgstr ""
+"Чтобы было понятнее, вот скриншот строки, которая работает в PowerShell "
+"(добавив ``&`` и полный путь Java к ``keytool.exe``; удалите ``&``', если вы "
+"используете ``cmd.exe``). Он использует путь к версии Java, которая "
+"поставляется с Android Studio:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
 msgid "Enabling the custom build and exporting"
-msgstr ""
+msgstr "Включение пользовательской сборки и экспорт"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
+"При настройке проекта Android в диалоговом окне **Project> Export** "
+"необходимо включить **Custom Build** (Пользовательская сборка):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
 msgid ""
@@ -382,9 +487,14 @@ msgid ""
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
+"С этого момента попытка экспорта проекта или развёртывания в один клик "
+"вызовет систему сборки `Gradle <https://gradle.org/>`__ для создания новых "
+"шаблонов (это окно будет появляться каждый раз):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
 msgstr ""
+"Созданные шаблоны будут впоследствии использоваться автоматически, поэтому "
+"дальнейшая настройка не потребуется."

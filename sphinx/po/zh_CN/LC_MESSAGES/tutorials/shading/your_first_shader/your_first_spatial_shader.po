@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,10 @@ msgid ""
 "these concepts it is best to get a gentle introduction from `The Book of "
 "Shaders <https://thebookofshaders.com>`_ before completing this tutorial."
 msgstr ""
+"这个教程假定你对着色器有一些基本的了解，例如类型（ ``vec2`` 、 ``float`` 、 "
+"``sampler2D`` ），和函数。如果你对这些概念摸不着头脑，那么你在完成这个教程之"
+"前，最好先从 `The Book of Shaders <https://thebookofshaders.com>` 获取一些基"
+"本知识。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:30
 msgid "Where to assign my material"
@@ -321,14 +325,17 @@ msgid ""
 "Now, access the noise texture using the ``texture()`` function. "
 "``texture()`` takes a texture as the first argument and a ``vec2`` for the "
 "position on the texture as the second argument. We use the ``x`` and ``z`` "
-"channels of ``VERTEX`` to determine where on the texture to look up. "
-"``texture()`` returns a ``vec4`` of the ``r, g, b, a`` channels at the "
-"position. Since the noise texture is grayscale, all of the values are the "
-"same, so we can use any one of the channels as the height. In this case "
-"we'll use the ``r``, or ``x`` channel."
+"channels of ``VERTEX`` to determine where on the texture to look up. Note "
+"that the PlaneMesh coordinates are within the [-1,1] range (for a size of "
+"2), while the texture coordinates are within [0,1], so to normalize we "
+"divide by the size of the PlaneMesh 2.0 and add 0.5. ``texture()`` returns a "
+"``vec4`` of the ``r, g, b, a`` channels at the position. Since the noise "
+"texture is grayscale, all of the values are the same, so we can use any one "
+"of the channels as the height. In this case we'll use the ``r``, or ``x`` "
+"channel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:181
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:183
 msgid ""
 "Note: ``xyzw`` is the same as ``rgba`` in GLSL, so instead of ``texture()."
 "x`` above, we could use ``texture().r``. See the `OpenGL documentation "
@@ -336,11 +343,11 @@ msgid ""
 "details."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:184
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:186
 msgid "Using this code you can see the texture creates random looking hills."
 msgstr "使用此代码，您可以看到纹理创建了随机外观的山峰。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:188
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:190
 #, fuzzy
 msgid ""
 "Right now it is too spiky, we want to soften the hills a bit. To do that, we "
@@ -350,11 +357,11 @@ msgstr ""
 "现在它太尖锐了，我们想让山峰变得柔和一点。为此，我们将使用制服值。你已经使用"
 "了上面的制服值来传入噪点纹理，现在让我们来学习它们是如何工作的。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:192
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
 msgid "Uniforms"
 msgstr "制服"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:196
 #, fuzzy
 msgid ""
 "Uniform variables allow you to pass data from the game into the shader. They "
@@ -366,12 +373,12 @@ msgstr ""
 "服几乎可以是着色器中可以使用的任何数据类型。 要使用制服，请使用关键字 "
 "``uniform`` 在 :ref:`Shader <class_Shader>` 中声明它。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:199
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:201
 #, fuzzy
 msgid "Let's make a uniform that changes the height of the terrain."
 msgstr "让我们制作一个改变地形高度的制服。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:206
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:208
 #, fuzzy
 msgid ""
 "Godot lets you initialize a uniform with a value; here, ``height_scale`` is "
@@ -384,7 +391,7 @@ msgstr ""
 "通过在与着色器对应的材质上调用函数 ``set_shader_param`` 来设置gdscript中的制"
 "服。 从gdscript传递的值优先于用于在着色器中初始化它的值。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:216
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:218
 #, fuzzy
 msgid ""
 "Changing uniforms in Spatial-based nodes is different from CanvasItem-based "
@@ -398,7 +405,7 @@ msgstr ""
 "用“surface_get_material()”来访问材质。而在网格实例中，您将使"
 "用“get_surface_material()”或“material_override”访问材料。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:222
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:224
 #, fuzzy
 msgid ""
 "Remember that the string passed into ``set_shader_param()`` must match the "
@@ -412,11 +419,11 @@ msgstr ""
 "<class_Shader>` 中的任何位置使用统一变量。 在这里，我们将使用它来设置高度值，"
 "而不是任意乘以“0.5”。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:231
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:233
 msgid "Now it looks  much better."
 msgstr "现在看起来好多了。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:235
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:237
 #, fuzzy
 msgid ""
 "Using uniforms, we can even change the value every frame to animate the "
@@ -426,11 +433,11 @@ msgstr ""
 "使用制服我们甚至可以改变每帧的值来设置地形的高度。 结合 :ref:`Tweens "
 "<class_Tween>` 这对简单的动画特别有用。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:239
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:241
 msgid "Interacting with light"
 msgstr "与光交互"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:241
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:243
 msgid ""
 "First, turn wireframe off. To do so, click in the upper-left of the Viewport "
 "again, where it says \"Perspective\", and select \"Display Normal\"."
@@ -438,19 +445,19 @@ msgstr ""
 "首先，关闭线框显示。若恢复显示，再次点击视窗左上方的“透视”按钮，选择“正常显"
 "示”。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:246
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:248
 msgid ""
 "Note how the mesh color goes flat. This is because the lighting on it is "
 "flat. Let's add a light!"
 msgstr ""
 "注意网格颜色是如何变得平滑的。这是因为它的光线是平滑的。让我们加一盏灯吧!"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:248
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:250
 #, fuzzy
 msgid "First, we will add an :ref:`OmniLight<class_OmniLight>` to the scene."
 msgstr "首先，在场景中添加 :ref:`Viewport <class_Viewport>` 。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:252
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:254
 msgid ""
 "You can see the light affecting the terrain, but it looks odd. The problem "
 "is the light is affecting the terrain as if it were a flat plane. This is "
@@ -460,7 +467,7 @@ msgstr ""
 "你会看到光线影响了地形，但这看起来很奇怪。问题是光线对地形的影响就像在平面上"
 "一样。这是因为光着色器使用:ref:`网格 <class_mesh>`中的法线来计算光。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:256
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:258
 msgid ""
 "The normals are stored in the Mesh, but we are changing the shape of the "
 "Mesh in the shader, so the normals are no longer correct. To fix this, we "
@@ -471,7 +478,7 @@ msgstr ""
 "决这个问题，我们可以在着色器中重新计算法线，或者使用与我们的噪声相对应的法线"
 "纹理。Godot让这一切变得很简单。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:260
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:262
 msgid ""
 "You can calculate the new normal manually in the vertex function and then "
 "just set ``NORMAL``. With ``NORMAL`` set, Godot will do all the difficult "
@@ -482,14 +489,14 @@ msgstr ""
 "为我们完成所有困难的光照计算。我们将在本教程的下一部分介绍这种方法，现在我们"
 "将从纹理中读取法线。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:264
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:266
 msgid ""
 "Instead we will rely on the NoiseTexture again to calculate normals for us. "
 "We do that by passing in a second noise texture."
 msgstr ""
 "相反，我们将再次依靠噪声来计算法线。我们通过传入第二个噪声纹理来做到这一点。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:271
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:273
 msgid ""
 "Set this second uniform texture to another NoiseTexture with another "
 "OpenSimplexNoise. But this time, check off \"As Normalmap\"."
@@ -497,7 +504,7 @@ msgstr ""
 "使用另一个开放式简单噪声将第二个均匀纹理设置为另一个噪声纹理。但这一次，勾"
 "选“作为法线贴图”。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:276
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:278
 #, fuzzy
 msgid ""
 "Now, because this is a normalmap and not a per-vertex normal, we are going "
@@ -507,7 +514,7 @@ msgstr ""
 "因为这是一个法线映射而不是每个顶点的法线。我们将在“fragment()”函数中分配"
 "它。“fragment()”函数将在本教程的下一部分详细解释。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:284
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:286
 msgid ""
 "When we have normals that correspond to a specific vertex we set ``NORMAL``, "
 "but if you have a normalmap that comes from a texture, set the normal using "
@@ -517,7 +524,7 @@ msgstr ""
 "当我们有法线对应于一个特定顶点时，我们设置“法线”，但如果你有一个来自纹理的法"
 "线贴图，要使用“法线贴图”设置法线。这样，Godot将自动处理环绕网格的纹理。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:288
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:290
 msgid ""
 "Lastly, in order to ensure that we are reading from the same places on the "
 "noise texture and the normalmap texture, we are going to pass the ``VERTEX."
@@ -527,32 +534,33 @@ msgstr ""
 "最后，为了确保我们从相同的地方读取噪声纹理和法线贴图纹理，我们要通过“VERTEX."
 "xz”从“vertex()”函数到“fragment()”函数的位置。我们用偏差值来做。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:292
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:294
+#, fuzzy
 msgid ""
-"Above the ``vertex()`` define a ``vec2`` called ``vertex_position``. And "
-"inside the ``vertex()`` function assign ``VERTEX.xz`` to ``vertex_position``."
+"Above the ``vertex()`` define a ``vec2`` called ``tex_position``. And inside "
+"the ``vertex()`` function assign ``VERTEX.xz`` to ``tex_position``."
 msgstr ""
 "在``vertex()``上定义一个叫做``vertex_position``的``vec2``。并且在 "
 "``vertex()`` 函数内分配``VERTEX.xz``到``vertex_position``。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:304
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:308
 msgid ""
 "And now we can access ``vertex_position`` from the ``fragment()`` function."
 msgstr "现在我们可以从“fragment()”函数中访问“顶点_位置”。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:312
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
 msgid ""
 "With the normals in place the light now reacts to the height of the mesh "
 "dynamically."
 msgstr "法线就位后，光线就会对网格的高度做出动态反应。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:320
 #, fuzzy
 msgid ""
 "We can even drag the light around and the lighting will update automatically."
 msgstr "现在我们可以拖动灯光，灯光会自动更新。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:320
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:324
 msgid ""
 "Here is the full code for this tutorial. You can see it is not very long as "
 "Godot handles most of the difficult stuff for you."
@@ -560,7 +568,7 @@ msgstr ""
 "以下是本教程的完整代码。您可以看到，Godot会为您处理大多数繁琐的事情，本教程篇"
 "幅不会太长。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:343
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:347
 msgid ""
 "That is everything for this part. Hopefully, you now understand the basics "
 "of vertex shaders in Godot. In the next part of this tutorial we will write "

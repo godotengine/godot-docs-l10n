@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "Konstantes Schema"
+msgstr "Entwurfsmuster von Zuständen"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:7
 msgid "Introduction"
@@ -33,28 +32,41 @@ msgid ""
 "creating a state machine within the player's control script, it would make "
 "development simpler if the states were separated out into different classes."
 msgstr ""
+"Das Erstellen von Skripten für ein Spiel kann schwierig sein wenn viele "
+"Zustände verarbeitet werden müssen, jedoch jeweils nur ein Skript an einen "
+"Node angehängt werden kann. Anstatt eine Zustandsmaschine im Kontrollskript "
+"des Spielers zu erstellen, würden diese Zustände in verschiedene "
+"Klassenunterteilungen die Entwicklung vereinfachen."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:14
 msgid ""
 "There are many ways to implement a state machine with Godot, and some other "
 "methods are below:"
 msgstr ""
+"Es gibt viele Möglichkeiten eine Zustandsmaschine mit Godot zu "
+"implementieren, und einige andere Methoden sind unten aufgeführt:"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:16
 msgid ""
 "The player can have a child node for each state, which are called when "
 "utilized."
 msgstr ""
+"Der Spieler kann für jeden Zustand einen untergeordneten Node haben, der bei "
+"Verwendung aufgerufen wird."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:17
 msgid "Enums can be used in conjunction with a match statement."
 msgstr ""
+"Aufzählungen können in Verbindung mit einer Übereinstimmungsanweisung "
+"verwendet werden."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:18
 msgid ""
 "The state scripts themselves could be swapped out from a node dynamically at "
 "run-time."
 msgstr ""
+"Die Statusskripte selbst könnten zur Laufzeit dynamisch von einem Node "
+"ausgelagert werden."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:20
 msgid ""
@@ -62,20 +74,21 @@ msgid ""
 "state script attached. Each state script will be an implementation of a "
 "different state."
 msgstr ""
+"Diese Anleitung konzentriert sich nur auf das Hinzufügen und Entfernen von "
+"Nodes, an die ein Statusskript angehängt ist. Jedes Statusskript ist eine "
+"Implementierung eines anderen Status."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:24
-#, fuzzy
 msgid ""
 "There is a great resource explaining the concept of the state design pattern "
 "here: https://gameprogrammingpatterns.com/state.html"
 msgstr ""
-"Weitere Informationen zum Beobachtermuster findest Du hier: http://"
-"gameprogrammingpatterns.com/observer.html"
+"Weitere Informationen zum Entwurfsmuster von Zuständen findest Du hier: "
+"http://gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "GDScript-Typ"
+msgstr "Skript Konfiguration"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -88,6 +101,8 @@ msgstr ""
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
 msgstr ""
+"Unten finden Sie den generischen Status, von dem alle anderen Stati erben "
+"werden."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:66
 msgid ""
@@ -137,6 +152,8 @@ msgid ""
 "So, now that there is a base state, the two states discussed earlier can be "
 "implemented."
 msgstr ""
+"Nun da es einen Basiszustand gibt, können die beiden zuvor diskutierten "
+"Zustände implementiert werden."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
 msgid ""
@@ -155,11 +172,15 @@ msgid ""
 "There is a round-about method for obtaining a state instance. A state "
 "factory can be used."
 msgstr ""
+"Es gibt eine Rundum-Methode zum Abrufen einer Statusinstanz. Eine Status-"
+"Fabrik kann genutzt werden."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
 msgid ""
 "This will look for states in a dictionary and return the state if found."
 msgstr ""
+"Diese sucht nach Stati in einem Wörterbuch und gibt den Status falls "
+"gefunden zurück."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:186
 msgid ""

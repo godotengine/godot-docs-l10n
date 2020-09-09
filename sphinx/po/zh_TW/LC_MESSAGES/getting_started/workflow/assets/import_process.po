@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,9 @@ msgstr ""
 "做，則無法指定如何轉換及修改紋理、音訊檔、場景的匯入旗標。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
-"In Godot 3.0, we use a more modern approach to importing: Simply drop your "
+"In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
@@ -48,23 +49,35 @@ msgstr ""
 "內部匯入這些檔案， 並將匯入的資源保存在 ``res://.import`` 資料夾中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
-msgid "This allows changing all the import parameters transparently."
-msgstr "這麼做就能透明地更改所有匯入參數。"
+msgid ""
+"This means that when trying to access imported assets through code you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`File <class_File>` class it "
+"will work in the editor, but break in the exported project."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:23
+#: ../../docs/getting_started/workflow/assets/import_process.rst:26
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
+"imported files, only the :ref:`File <class_File>` class can."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "更改匯入參數"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:25
+#: ../../docs/getting_started/workflow/assets/import_process.rst:32
+#, fuzzy
 msgid ""
-"Changing the import parameters of an asset in Godot (again, keep in mind "
-"import parameters are only present in non-native Godot resource types) is "
-"easy. Select the relevant resource in the filesystem dock:"
+"To change the import parameters of an asset in Godot (again, keep in mind "
+"import parameters are only present in non-native Godot resource types) "
+"select the relevant resource in the filesystem dock:"
 msgstr ""
 "在 Godot 中更改素材的匯入參數也很容易 (但請記得只有非原生 Godot 資源類型有匯"
 "入參數)。於檔案系統 Dock 中選擇相應的資源即可："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
@@ -72,7 +85,7 @@ msgstr ""
 "接著，調整參數後，按下 [重新匯入]。這些參數只對該素材或之後重新匯入時才有作"
 "用。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
@@ -81,11 +94,33 @@ msgstr ""
 "也可以同時更改多個素材的匯入參數。只需要在資源 Dock 中一次選擇所有要修改的資"
 "源，重新匯入時，參數將套用在這些資源上。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:39
+#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#, fuzzy
+msgid "Reimporting multiple assets"
+msgstr "匯入圖片"
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:56
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
 msgstr "自動重新匯入"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:41
+#: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
 "When the MD5 checksum of the source asset changes, Godot will perform an "
 "automatic reimport of it, applying the preset configured for that specific "
@@ -94,11 +129,11 @@ msgstr ""
 "若原始素材的 MD5 檢查碼發生變化時，Godot 會自動重新匯入該素材，並將預設設定套"
 "用至特定素材上。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
 msgstr "產生的檔案"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+#: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
@@ -106,12 +141,12 @@ msgstr ""
 "匯入過程會產生一個額外的 <asset>.import 檔案，其中包含了匯入組態設定。請確認"
 "有在版本控制系統中簽入這些檔案！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:53
+#: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr "另外，``res://.import`` 隱藏資料夾中也包含了額外的素材："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -123,11 +158,11 @@ msgstr ""
 "將該資料夾簽入版本控制系統中。有該資料夾可加速在其他電腦上簽出專案後重新匯入"
 "的時間，但就需要更多空間與傳輸時間。可自行選擇！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:64
+#: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
 msgstr "更改匯入資源類型"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:66
+#: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
@@ -135,11 +170,11 @@ msgstr ""
 "有些素材可以匯入為不同類型的資源。若要匯入為不同類型，選擇需要的資源類型並點"
 "擊 [重新匯入]："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:74
+#: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
 msgstr "更改預設匯入參數"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
 "Different types of games might require different defaults. Changing the "
 "defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
@@ -149,11 +184,11 @@ msgstr ""
 "依據遊戲類型的不同可能需要不同預設值。可以使用 [預設設定...] 選單來設定各專案"
 "的預設值。除了某些預設提供的資源類型，也可以保存或清除預設設定："
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:84
+#: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
 msgstr "簡單是關鍵！"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:86
+#: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
@@ -161,7 +196,7 @@ msgstr ""
 "這個工作流程很簡短，要習慣應該不需要花上太多時間。此外，本工作流程也能強制以"
 "更正確的方式來處理資源。"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:89
+#: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"

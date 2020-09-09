@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,49 +52,57 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:20
 msgid "``ARRAY_VERTEX`` = 0 | PoolVector3Array or PoolVector2Array"
-msgstr ""
+msgstr "``ARRAY_VERTEX`` = 0 | PoolVector3Array oder PoolVector2Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:21
 msgid "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_NORMAL`` = 1 | PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:22
 msgid ""
 "``ARRAY_TANGENT`` = 2 | PoolRealArray of groups of 4 floats. first 3 floats "
 "determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
+"``ARRAY_TANGENT`` = 2 | PoolRealArray aus Gruppen von 4 Fließkommazahlen. "
+"Die ersten 3 Fließkommazahlen bestimmen die Tangente und die letzte die "
+"binormale Richtung als -1 oder 1."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:24
 msgid "``ARRAY_COLOR`` = 3 | PoolColorArray"
-msgstr ""
+msgstr "``ARRAY_COLOR`` = 3 | PoolColorArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:25
 msgid "``ARRAY_TEX_UV`` = 4 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV`` = 4 | PoolVector2Array oder PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:26
 msgid "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array or PoolVector3Array"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2`` = 5 | PoolVector2Array oder PoolVector3Array"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:27
 msgid ""
 "``ARRAY_BONES`` = 6 | PoolRealArray of groups of 4 floats or PoolIntArray of "
 "groups of 4 ints"
 msgstr ""
+"``ARRAY_BONES`` = 6 | PoolRealArray aus Gruppen mit 4 Fließkommazahlen oder "
+"PoolIntArray aus Gruppen mit 4 Ganzzahlen"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:28
 msgid "``ARRAY_WEIGHTS`` = 7 | PoolRealArray of groups of 4 floats"
 msgstr ""
+"``ARRAY_WEIGHTS`` = 7 | PoolRealArray aus Gruppen von 4 Fließkommazahlen"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:29
 msgid "``ARRAY_INDEX`` = 8 | PoolIntArray"
-msgstr ""
+msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:31
 msgid ""
 "The Array of vertices is always required. All the others are optional and "
 "will only be used if included."
 msgstr ""
+"Das Array von Eckpunkten ist immer erforderlich. Alle anderen sind optional "
+"und werden nur verwendet, wenn sie enthalten sind."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:33
 msgid ""
@@ -128,10 +136,12 @@ msgid ""
 "For normal usage you will find it is best to leave the last two parameters "
 "empty."
 msgstr ""
+"Für den normalen Gebrauch ist es am besten die letzten beiden Parameter leer "
+"zu lassen."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:48
 msgid "ArrayMesh"
-msgstr "Kettenskulptur"
+msgstr "ArrayMesh"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:50
 msgid ""
@@ -141,13 +151,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:54
-#, fuzzy
 msgid "Next, add a script to the MeshInstance."
-msgstr "Füge das Skript zum Node hinzu."
+msgstr "Fügen Sie als Nächstes der MeshInstance ein Skript hinzu."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:56
 msgid "Under ``_ready()``, create a new Array."
-msgstr ""
+msgstr "Unter ``_ready()`` erzeugen wir ein neues Array."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:63
 msgid ""
@@ -175,13 +184,15 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:99
 msgid "Put together the full code looks like:"
-msgstr ""
+msgstr "Zusammenfassend sieht der vollständige Code so aus:"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:130
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code that could go in the middle."
 msgstr ""
+"Der Code in der Mitte kann beliebig sein. Im Folgenden werden wir einen "
+"Beispielcode präsentieren, der in die Mitte stehen könnte."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:134
 msgid "Generating geometry"
@@ -210,7 +221,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:209
 msgid "Saving"
-msgstr ""
+msgstr "Speichern"
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:211
 msgid ""

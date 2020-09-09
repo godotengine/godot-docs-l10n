@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:4
 msgid "Version Control Systems"
-msgstr ""
+msgstr "Versionskontrollsysteme"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:7
 msgid "Introduction"
@@ -33,6 +33,12 @@ msgid ""
 "you are using. VCS can be setup or shut down in the editor under **Project > "
 "Version Control**."
 msgstr ""
+"Godot ist bestrebt VCS-freundlich zu sein und meist lesbare und "
+"zusammenführbare Dateien zu generieren. Godot unterstützt auch die "
+"Verwendung von Versionskontrollsystemen im Editor selbst. Für VCS im Editor "
+"ist jedoch ein Plugin für das von Ihnen verwendete VCS erforderlich. VCS "
+"kann im Editor unter **Projekt> Versionskontrolle** eingerichtet oder "
+"abgeschaltet werden."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:17
 msgid "Official Git plugin"
@@ -49,23 +55,29 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:27
 msgid "Files to exclude from VCS"
-msgstr ""
+msgstr "Dateien, die von VCS ausgeschlossen werden sollen"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:29
 msgid "There are some folders Godot creates you should have your VCS ignore:"
 msgstr ""
+"Es gibt einige Ordner die Godot erstellt und die Ihr VCS ignorieren sollte:"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:31
 msgid ""
 "``.import/``: This folder stores all the files it imports automatically "
 "based on your source assets and their import flags."
 msgstr ""
+"``.import/``: In diesem Ordner werden alle Dateien gespeichert, die "
+"automatisch importiert werden, basierend auf Ihren Quell-Assets und ihren "
+"Import-Flags."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:33
 msgid ""
 "``*.translation``: These files are binary imported translations generated "
 "from CSV files."
 msgstr ""
+"``*.translation``: Diese Dateien sind binär importierte Übersetzungen, die "
+"aus CSV-Dateien generiert wurden."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:34
 msgid ""
@@ -73,9 +85,28 @@ msgid ""
 "project, including sensitive information such as Android keystore "
 "credentials."
 msgstr ""
+"``export_presets.cfg``: Diese Datei enthält alle Exportvoreinstellungen für "
+"das Projekt, einschließlich vertraulicher Informationen wie "
+"Anmeldeinformationen für den Android-Keystore."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:36
 msgid ""
 "``.mono/``: This folder stores automatically-generated Mono files. It only "
 "exists in projects that use the Mono version of Godot."
+msgstr ""
+"``.mono/``: In diesem Ordner werden automatisch generierte Mono-Dateien "
+"gespeichert. Es existiert nur in Projekten, die die Mono-Version von Godot "
+"verwenden."
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
+#, fuzzy
+msgid "Working with Git on Windows"
+msgstr "Auf Windows laufen lassen"
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
+msgid ""
+"Most Git for Windows clients are configured with the ``core.autocrlf`` set "
+"to ``true``. This can lead to files unnecessarily being marked as modified "
+"by Git due to their line endings being converted automatically. It is better "
+"to set this option as::"
 msgstr ""

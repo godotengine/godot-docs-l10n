@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,10 +44,10 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"И так же, как именно шеф-повар создает рецепт? Каждый рецепт разделён на две "
-"части: в первой приведён список ингридиентов, а во второй – "
+"Итак, как именно шеф-повар создает рецепт? Каждый рецепт разделён на две "
+"части: в первой приведён список ингредиентов, а во второй – "
 "последовательность их приготовления. Таким образом, каждый имеет возможность "
-"приготовить блюдо по созданому рецепту и насладиться вашим великолепным "
+"приготовить блюдо по созданному рецепту и насладиться вашим великолепным "
 "творением."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
@@ -65,8 +65,8 @@ msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
-"Существует множество типов узлов. Некоторые показывают изображения, другие "
-"воспроизводят звук, другие узлы отображают 3D модели и т.д. Их десятки."
+"Существует множество типов узлов. Одни показывают изображения, другие "
+"воспроизводят звук, третьи отображают 3D-модели и т.д. Их десятки."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
@@ -159,11 +159,11 @@ msgstr "всегда имеет только один корневой нод."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr "могут быть сохранены на диск и загружены обратно."
+msgstr "может быть сохранена на диск и загружена обратно."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "могут быть *интегрированы* (подробнее об этом позже)."
+msgstr "может быть *интегрирована* (подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -222,7 +222,6 @@ msgstr ""
 "случае пустой сцены, в качестве \"корневого\" узла - \"root\")."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
-#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -232,12 +231,12 @@ msgid ""
 "icon to toggle the display of your favorited nodes."
 msgstr ""
 "В пустой сцене (без корневого узла) панель сцены содержит несколько способов "
-"быстрого добавления корневого узла в сцену. \"2D Сцена\" добавит узел "
-"Node2D, \"3D Сцена\" добавит Пространственный (Spatial) узел, \"Интерфейс "
-"Пользователя\" добавит Контрольный узел, а \"Настраиваемый Узел\" допускает "
-"выбор вами любого узла (так что он эквивалентен нажатию кнопки \"Добавить "
-"Дочерний Узел\"). Вы также можете нажать на значок-звёздочку, чтобы "
-"переключить отображение на экране ваших избранных узлов."
+"быстрого добавления корневого узла в сцену. \"2D Scene\" добавит узел "
+"Node2D, \"3D Scene\" добавит узел Spatial, \"User Interface\" добавит узел "
+"Control, а \"Other Node\" допускает выбор вами любого узла (так что он "
+"эквивалентен нажатию кнопки \"Add Child Node\" (Добавить дочерний узел). Вы "
+"также можете нажать на значок-звёздочку, чтобы переключить отображение на "
+"экране ваших избранных узлов."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:105
 msgid ""
@@ -253,16 +252,15 @@ msgstr ""
 "node (узел управления) или Node2D в качестве корневого узла."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
-#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Other Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
 "use the add node button to create every child node."
 msgstr ""
-"Теперь, чтобы добавить ноду надписи в эту сцену, вы можете нажать на кнопку "
-"Custom Node или кнопку Add Node вверху. В сценах, которые не являются "
-"пустыми, вы можете использовать кнопку добавления ноды, чтобы создать каждый "
-"дочернюю ноду."
+"Теперь, чтобы добавить узел метки в эту сцену, вы можете нажать на кнопку "
+"\"Other Node\" (Другой узел) или кнопку \"Add Node\" (Добавить узел) в "
+"верхней части. В непустых сценах используется кнопка \"Add Node\" (Добавить "
+"узел) для создания каждого дочернего узла."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:116
 msgid ""
@@ -277,12 +275,13 @@ msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"Здесь выберите ноду «Label». Найти его через поиск, вероятно, самый быстрый "
-"способ:"
+"Здесь выберите узел \"Label\". Найти его через поиск, вероятно, самый "
+"быстрый способ:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:126
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
-msgstr "Выберите \"Label\" и нажмите кнопку «Создать»:"
+msgstr ""
+"И наконец, создайте Label! Многое происходит, при нажатии кнопки \"Создать\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:130
 msgid ""
@@ -291,15 +290,15 @@ msgid ""
 "viewport."
 msgstr ""
 "В первую очередь, сцена меняется на 2D-редактор (потому что Label является "
-"2D Узлом) и в верхнем левом углу окна просмотра появляется Ярлык."
+"2D Узлом) и в верхнем левом углу окна просмотра появляется Label."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
 "The node appears in the scene tree editor in the Scene dock, and the label "
 "properties appear in the Inspector dock."
 msgstr ""
-"Узел появляется в редакторе узлов сцены (вкладка \"Сцена\"), а свойства узла "
-"\"Label\" отобразятся в \"Инспекторе\"."
+"Узел появляется в редакторе дерева сцены в панели \"Сцена\", а свойства узла "
+"\"Label\" отобразятся в панели \"Инспектор\"."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -344,7 +343,7 @@ msgstr ""
 "означает \"путь ресурса\". Это означает, что файлы могут быть сохранены "
 "только внутри проекта. В будущем, при выполнении файловых операций в Godot, "
 "помните, что \"res: //\" - это путь к ресурсам, вне зависимости от платформы "
-"или места установки, это способ найти, файлы ресурсов которые находятся "
+"или места установки, это способ найти файлы ресурсов которые находятся "
 "внутри игры."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
@@ -404,8 +403,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
-"Чтобы открыть это окно, выберите «Проект -> Настройки проекта». Попробуй "
-"сейчас."
+"Чтобы открыть это окно, выберите «Проект -> Настройки проекта» (Project -> "
+"Project Settings). Попробуйте сделать это сейчас."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
 msgid ""
@@ -443,9 +442,9 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
-"В качестве примечания, также можно добавить пользовательские параметры "
-"конфигурации и прочитать их во время выполнения, используя одиночку "
-"(singleton) :ref:`ProjectSettings <class_ProjectSettings>`."
+"В качестве примечания, также можно добавлять пользовательские параметры "
+"конфигурации и считывать их во время выполнения, используя синглтон :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:212
 msgid "To be continued..."

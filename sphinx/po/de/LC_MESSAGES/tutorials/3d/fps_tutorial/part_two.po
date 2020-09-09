@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:4
 msgid "Part 2"
-msgstr ""
+msgstr "Teil 2"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
 msgid "Part overview"
@@ -27,7 +27,7 @@ msgstr "Teilübersicht"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
-msgstr ""
+msgstr "In diesem Teil geben wir unseren Spielern Waffen zum Spielen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:13
 msgid ""
@@ -36,6 +36,10 @@ msgid ""
 "with transitions, and the weapons will interact with objects in the "
 "environment."
 msgstr ""
+"Am Ende dieses Teils haben Sie einen Spieler, der eine Pistole und ein "
+"Gewehr abfeuern, sowie einen Angriff mit einem Messer ausführen kann. Der "
+"Spieler hat jetzt auch Animationen mit Übergängen und die Waffen "
+"interagieren mit Objekten in der Umgebung."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:17
 msgid ""
@@ -43,14 +47,18 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_one` will be the starting project for part 2"
 msgstr ""
+"Es wird davon ausgegangen, dass Sie Folgendes abgeschlossen haben :ref:"
+"`doc_fps_tutorial_part_one`, bevor Sie mit diesem Teil der Anleitung "
+"fortfahren. Das fertige Projekt von :ref:`doc_fps_tutorial_part_one` ist das "
+"Startprojekt für diesen Teil 2"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:20
 msgid "Let's get started!"
-msgstr ""
+msgstr "Lassen Sie uns anfangen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:23
 msgid "Making a system to handle animations"
-msgstr ""
+msgstr "Erstellen eines Systems zur Verarbeitung von Animationen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:25
 msgid ""
@@ -71,35 +79,43 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:152
 msgid "Lets go over what this script is doing:"
-msgstr ""
+msgstr "Gehen wir noch einmal durch, was dieses Skript tut:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:156
 msgid "Lets start with this script's class variables:"
-msgstr ""
+msgstr "Beginnen wir mit den Klassenvariablen dieses Skripts:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:158
 msgid ""
 "``states``: A dictionary for holding our animation states. (Further "
 "explanation below)"
 msgstr ""
+"``states``: Ein Wörterbuch zum Speichern unserer Animationszustände. "
+"(Weitere Erklärung unten)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:159
 msgid ""
 "``animation_speeds``: A dictionary for holding all the speeds at which we "
 "want to play our animations."
 msgstr ""
+"``animation_speeds``: Ein Wörterbuch zum Speichern aller Geschwindigkeiten, "
+"mit denen wir unsere Animationen abspielen möchten."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:160
 msgid ""
 "``current_state``: A variable for holding the name of the animation state we "
 "are currently in."
 msgstr ""
+"``current_state``: Eine Variable zum Speichern des Namens des "
+"Animationsstatus, in dem wir uns gerade befinden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:161
 msgid ""
 "``callback_function``: A variable for holding the callback function. "
 "(Further explanation below)"
 msgstr ""
+"``callback_function``: Eine Variable zum Halten der Rückruffunktion. "
+"(Weitere Erklärung unten)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:163
 msgid ""
@@ -107,6 +123,10 @@ msgid ""
 "``states`` is structured like a basic state machine. Here is roughly how "
 "``states`` is set up:"
 msgstr ""
+"Wenn Sie mit Zustandsautomaten (State Machines) vertraut sind, haben Sie "
+"möglicherweise bemerkt, dass ``Zustände`` wie eine grundlegende "
+"Zustandsmaschine aufgebaut sind. Hier sehen Sie ungefähr, wie ``Zustände`` "
+"eingerichtet ist:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:166
 msgid ""
@@ -138,16 +158,20 @@ msgid ""
 "(Python example) https://dev.to/karn/building-a-simple-state-machine-in-"
 "python"
 msgstr ""
+"(Python-Beispiel) https://dev.to/karn/building-a-simple-state-machine-in-"
+"python"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:180
 msgid ""
 "(C# example) https://www.codeproject.com/Articles/489136/"
 "UnderstandingplusandplusImplementingplusStateplusP"
 msgstr ""
+"(C# Beispiel) https://www.codeproject.com/Articles/489136/"
+"UnderstandingplusandplusImplementingplusStateplusP"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:181
 msgid "(Wiki article) https://en.wikipedia.org/wiki/Finite-state_machine"
-msgstr ""
+msgstr "(Wiki Artikel) https://en.wikipedia.org/wiki/Finite-state_machine"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:183
 msgid ""
@@ -161,12 +185,16 @@ msgid ""
 "Notice that all of the firing animations are faster than their normal speed. "
 "Remember this for later!"
 msgstr ""
+"Beachten Sie, dass alle Schussanimationen schneller als ihre normale "
+"Geschwindigkeit sind. Denken Sie daran für später!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:188
 msgid ""
 "``current_state`` will hold the name of the animation state we are currently "
 "in."
 msgstr ""
+"``current_state`` enthält den Namen des Animationsstatus, in dem wir uns "
+"gerade befinden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:190
 msgid ""
@@ -179,7 +207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:196
 msgid "Now let's look at ``_ready``."
-msgstr ""
+msgstr "Schauen wir uns nun ``_ready`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:198
 msgid ""
@@ -196,7 +224,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:206
 msgid "Lets look at ``set_animation`` next."
-msgstr ""
+msgstr "Schauen wir uns als nächstes ``set_animation`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:208
 msgid ""
@@ -205,6 +233,11 @@ msgid ""
 "animation state we are currently in has the passed in animation state name "
 "in ``states``, then we will change to that animation."
 msgstr ""
+"``set_animation`` ändert die Animation in die Animation mit dem Namen "
+"``animation_name`` *wenn* wir darauf übergehen können. Mit anderen Worten, "
+"wenn der Animationsstatus, in dem wir uns gerade befinden, den Namen des "
+"Animationsstatus in ``Zustände`` übergeben hat, werden wir zu dieser "
+"Animation wechseln."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:212
 msgid ""
@@ -212,6 +245,9 @@ msgid ""
 "animation currently playing. If they are the same, then we write a warning "
 "to the console and return ``true``."
 msgstr ""
+"Zunächst prüfen wir, ob der übergebene Animationsname mit dem Namen der "
+"aktuell wiedergegebenen Animation übereinstimmt. Wenn sie gleich sind, "
+"schreiben wir eine Warnung an die Konsole und geben ``true`` zurück."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:215
 msgid ""
@@ -237,6 +273,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:224
 msgid "Blend time is how long to blend/mix the two animations together."
 msgstr ""
+"Die Übergangszeit gibt an, wie lange die beiden Animationen ineinander "
+"übergehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:226
 msgid ""
@@ -258,10 +296,12 @@ msgid ""
 "We set the blend time to ``-1`` because we want to instantly change "
 "animations."
 msgstr ""
+"Wir setzen die Übergangszeit auf \"-1\", weil wir die Animationen sofort "
+"ändern möchten."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:236
 msgid "Now lets look at ``animation_ended``."
-msgstr ""
+msgstr "Schauen wir uns nun ``animation_ended`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:238
 msgid ""
@@ -269,6 +309,9 @@ msgid ""
 "`AnimationPlayer <class_AnimationPlayer>` when it's done playing an "
 "animation."
 msgstr ""
+"``animation_ended`` ist die Funktion die aufgerufen wird von :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` wenn eine Animation zu Ende "
+"abgespielt wurde."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:241
 msgid ""
@@ -276,6 +319,10 @@ msgid ""
 "when it's finished. To handle this, we check for every possible animation "
 "state. If we need to, we will transition into another state."
 msgstr ""
+"Für bestimmte Animationszustände müssen wir möglicherweise in einen anderen "
+"Zustand übergehen, wenn dieser abgeschlossen ist. Um dies zu handhaben, "
+"prüfen wir jeden möglichen Animationsstatus. Wenn wir müssen, werden wir in "
+"einen anderen Zustand übergehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:244
 msgid ""
@@ -310,7 +357,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:262
 msgid "Getting the animations ready"
-msgstr ""
+msgstr "Vorbereitung der Animationen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:264
 msgid ""
@@ -318,6 +365,9 @@ msgid ""
 "player script. Before that, though, we need to set some animation callback "
 "tracks in our firing animations."
 msgstr ""
+"Jetzt, da wir einen funktionierenden Animationsmanager haben, müssen wir ihn "
+"über unser Player-Skript aufrufen. Vorher müssen wir jedoch einige "
+"Animationsrückrufspuren in unseren Feueranimationen festlegen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:267
 msgid ""
@@ -361,6 +411,9 @@ msgid ""
 "The timeline is the window where all the points in our animation are stored. "
 "Each of the little points represents a point of animation data."
 msgstr ""
+"Die Zeitleiste ist das Fenster, in dem alle Punkte in unserer Animation "
+"gespeichert sind. Jeder der kleinen Punkte repräsentiert einen Punkt mit "
+"Animationsdaten."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:291
 msgid ""
@@ -411,6 +464,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:318
 msgid "Let's repeat the process for the rifle and knife firing animations!"
 msgstr ""
+"Wiederholen wir den Vorgang für die Schuß-Animationen von Gewehren und "
+"Messern!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:320
 msgid ""
@@ -459,7 +514,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:339
 msgid "Be sure to save your work!"
-msgstr ""
+msgstr "Speichern Sie unbedingt Ihre Arbeit!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
 msgid ""
@@ -467,10 +522,13 @@ msgid ""
 "our player script! We need to set up one last scene: The scene for our "
 "bullet object."
 msgstr ""
+"Damit sind wir fast bereit, unserem Player-Skript die Möglichkeit zum Feuern "
+"hinzuzufügen! Wir müssen eine letzte Szene einrichten: Die Szene für unser "
+"Geschoss-Objekt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
 msgid "Creating the bullet scene"
-msgstr ""
+msgstr "Erstellen der Geschoss-Szene"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:347
 msgid ""
@@ -573,13 +631,15 @@ msgstr ""
 msgid ""
 "The other way of handling bullet collisions we will be looking at is "
 "raycasting."
-msgstr ""
+msgstr "Die andere Art mit Geschosskollisionen umzugehen, ist das Raycasting."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:389
 msgid ""
 "This method is extremely common in guns that have fast moving bullets that "
 "rarely change trajectory over time."
 msgstr ""
+"Diese Methode ist bei Waffen mit sich schnell bewegenden Geschossen, die die "
+"Flugbahn im Laufe der Zeit selten ändern, äußerst verbreitet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
 msgid ""
@@ -712,17 +772,19 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:479
 msgid "``BULLET_SPEED``: The speed at which the bullet travels."
-msgstr ""
+msgstr "``BULLET_SPEED``: Die Geschwindigkeit, mit der sich die Kugel bewegt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:480
 msgid ""
 "``BULLET_DAMAGE``: The damage the bullet will cause to anything with which "
 "it collides."
 msgstr ""
+"``BULLET_DAMAGE``: Der Schaden, den die Kugel an allem verursacht, mit dem "
+"sie kollidiert."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:481
 msgid "``KILL_TIMER``: How long the bullet can last without hitting anything."
-msgstr ""
+msgstr "``KILL_TIMER``: Wie lange die Kugel fliegt, ohne etwas zu treffen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:482
 msgid "``timer``: A float for tracking how long the bullet has been alive."
@@ -732,6 +794,8 @@ msgstr ""
 msgid ""
 "``hit_something``: A boolean for tracking whether or not we've hit something."
 msgstr ""
+"``hit_something``: Ein Boolescher Wert zum Verfolgen, ob wir etwas getroffen "
+"haben oder nicht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:485
 msgid ""
@@ -946,29 +1010,32 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:652
 msgid "``DAMAGE``: The amount of damage a single bullet does."
-msgstr ""
+msgstr "``DAMAGE``: Die Menge an Schaden, die eine einzelne Kugel anrichtet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:653
 msgid "``IDLE_ANIM_NAME``: The name of the pistol's idle animation."
-msgstr ""
+msgstr "``IDLE_ANIM_NAME``: Der Name der Leerlaufanimation (Idle) der Pistole."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:654
 msgid "``FIRE_ANIM_NAME``: The name of the pistol's fire animation."
-msgstr ""
+msgstr "``FIRE_ANIM_NAME``: Der Name der Feueranimation der Pistole."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:655
 msgid ""
 "``is_weapon_enabled``: A variable for checking whether this weapon is in use/"
 "enabled."
 msgstr ""
+"``is_weapon_enabled``: Eine Variable zum Überprüfen, ob diese Waffe "
+"verwendet bzw. aktiviert wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:656
 msgid "``bullet_scene``: The bullet scene we worked on earlier."
 msgstr ""
+"``bullet_scene``: Die Geschoss-Szene, an der wir früher gearbeitet haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:657
 msgid "``player_node``: A variable to hold ``Player.gd``."
-msgstr ""
+msgstr "``player_node``: Eine Variable um ``Player.gd`` aufzunehmen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:659
 msgid ""
@@ -1298,7 +1365,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:893
 msgid "Making the weapons work"
-msgstr ""
+msgstr "Damit die Waffen funktionieren"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:895
 msgid "Let's start making the weapons work in ``Player.gd``."
@@ -1327,7 +1394,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:919
 msgid "``weapons``: A dictionary that will hold all the weapon nodes."
-msgstr ""
+msgstr "``weapons``: Ein Wörterbuch, das alle Waffen-Nodes enthält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:920
 msgid ""
@@ -1346,10 +1413,12 @@ msgid ""
 "``changing_weapon``: A boolean to track whether or not we are changing guns/"
 "weapons."
 msgstr ""
+"``changing_weapon``: Ein Boolescher Wert, um zu verfolgen, ob wir Waffen "
+"wechseln oder nicht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:923
 msgid "``changing_weapon_name``: The name of the weapon we want to change to."
-msgstr ""
+msgstr "``changing_weapon_name``: Der Name der Waffe, die wir ändern möchten."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:924
 msgid ""
@@ -1371,7 +1440,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:961
 msgid "Let's go over what's changed."
-msgstr ""
+msgstr "Lassen Sie uns die Änderungen durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:963
 msgid ""
@@ -1724,7 +1793,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
 msgid "Final notes"
-msgstr ""
+msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
 msgid ""
@@ -1747,6 +1816,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
+"Wenn Sie jemals die Orientierung verlieren, lesen Sie den Code unbedingt "
+"noch einmal durch!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
 msgid ""

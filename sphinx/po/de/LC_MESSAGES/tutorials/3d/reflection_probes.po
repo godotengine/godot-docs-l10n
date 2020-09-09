@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:4
 msgid "Reflection probes"
-msgstr ""
+msgstr "Reflexions-Probes"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:7
 msgid "Introduction"
@@ -31,6 +31,10 @@ msgid ""
 "diffuse light. Reflection probes are used as a source of reflected and "
 "ambient light for objects inside their area of influence."
 msgstr ""
+"Wie in :ref:`doc_spatial_material` angegeben, können Objekte reflektiertes "
+"oder diffuses Licht zeigen. Reflexions-Probes werden als Quelle für "
+"reflektiertes Licht und Umgebungslicht für Objekte in ihrem Einflussbereich "
+"verwendet."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:12
 msgid ""
@@ -38,24 +42,35 @@ msgid ""
 "image), and stores versions of it with increasing levels of *blur*. This is "
 "used to simulate roughness in materials, as well as ambient lighting."
 msgstr ""
+"Eine Tester (Probe) dieses Typs erfasst die Umgebung (als eine Art 360 Grad "
+"Bild) und speichert Versionen davon mit zunehmendem Grad an *Unschärfe*. "
+"Dies wird verwendet um die Rauheit von Materialien sowie die "
+"Umgebungsbeleuchtung zu simulieren."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:15
 msgid ""
 "While these probes are an efficient way of storing reflections, they have a "
 "few shortcomings:"
 msgstr ""
+"Diese Probs sind zwar eine effiziente Methode zum Speichern von Reflexionen, "
+"weisen jedoch einige Mängel auf:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
 msgid ""
 "They are efficient to render, but expensive to compute. This leads to a "
 "default behavior where they only capture on scene load."
 msgstr ""
+"Sie sind effizient zu rendern, aber teuer zu berechnen. Dies führt zu einem "
+"Standardverhalten, bei dem sie nur beim Laden der Szene erfasst werden."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
 "They work best for rectangular shaped rooms or places, otherwise the "
 "reflections shown are not as faithful (especially when roughness is 0)."
 msgstr ""
+"Sie eignen sich am besten für rechteckig geformte Räume oder Orte, da sonst "
+"die gezeigten Reflexionen nicht so genau sind (insbesondere wenn die Rauheit "
+"0 ist)."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:21
 msgid "Setting up"
@@ -66,12 +81,16 @@ msgid ""
 "Create a ReflectionProbe node and wrap it around the area where you want to "
 "have reflections:"
 msgstr ""
+"Erstellen Sie einen ReflectionProbe-Node und wickeln Sie ihn um den Bereich, "
+"in dem Sie Reflexionen haben möchten:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:27
 msgid ""
 "This should result in immediate local reflections. If you are using a Sky "
 "texture, reflections are by default blended with it."
 msgstr ""
+"Dies sollte zu sofortigen lokalen Reflexionen führen. Wenn Sie eine Himmels-"
+"Textur verwenden, werden Reflexionen standardmäßig damit gemischt."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:30
 msgid ""
@@ -79,18 +98,25 @@ msgid ""
 "consistence. In this scenario, make sure to tick the *\"Box Correct\"* "
 "property."
 msgstr ""
+"Standardmäßig scheinen Reflexionen in Innenräumen nicht sehr konsistent zu "
+"sein. Stellen Sie in diesem Szenario sicher, dass Sie die Eigenschaft *\"Box "
+"Correct\"* ankreuzen."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:36
 msgid ""
 "This setting changes the reflection from an infinite skybox to reflecting a "
 "box the size of the probe:"
 msgstr ""
+"Diese Einstellung ändert die Reflexion von einer unendlichen Himmelsbox in "
+"eine Box von der Größe des Probes:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:41
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look best in box shaped rooms."
 msgstr ""
+"Das Anpassen der Boxenwände kann dazu beitragen die Reflexion ein wenig zu "
+"verbessern, sieht jedoch in rechteckigen Räumen immer am besten aus."
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""

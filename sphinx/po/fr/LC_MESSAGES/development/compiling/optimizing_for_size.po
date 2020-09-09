@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,11 @@ msgid ""
 "SCons options. You can then save this file and place it at the root of your "
 "Godot source directory."
 msgstr ""
+"Vous pouvez utiliser le `générateur d'options de compilation de Godot en "
+"ligne <https://godot-build-options-generator.github.io/>`__ pour générer un "
+"fichier ``custom.py`` contenant les options SCons. Vous pouvez ensuite "
+"enregistrer ce fichier et le placer à la racine de votre répertoire source "
+"Godot."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
@@ -85,7 +90,6 @@ msgid "Disabling advanced GUI nodes"
 msgstr "Désactiver les nœuds GUI avancés"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:43
-#, fuzzy
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
@@ -211,7 +215,11 @@ msgstr ""
 "github.io/>`_ peut être utilisé. Cela peut réduire considérablement la "
 "taille des binaires."
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:162
+#: ../../docs/development/compiling/optimizing_for_size.rst:164
+msgid "You cannot use embedded PCK files with UPX compression."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:166
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

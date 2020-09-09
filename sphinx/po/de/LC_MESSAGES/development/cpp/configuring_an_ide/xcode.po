@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,9 +44,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
-#, fuzzy
 msgid "Fill out the form with the following settings:"
-msgstr "Es wird die folgende Bewegung produzieren:"
+msgstr "Füllen Sie das Formular mit den folgenden Einstellungen aus:"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "Build Tool"
@@ -61,17 +60,15 @@ msgid "Arguments"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
-#, fuzzy
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
-"Lesen Sie zuerst das :doc:`ui_introduction_to_the_ui_system`, um zu "
-"erfahren, wie das UI-System von Godot funktioniert."
+"Siehe :ref:`doc_introduction_to_the_buildsystem` für eine komplette Liste "
+"aller Argumente."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
-#, fuzzy
 msgid "Directory"
-msgstr "Vektor"
+msgstr "Verzeichnis"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:26
 msgid "A full path to the Godot root folder"
@@ -108,11 +105,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
-#, fuzzy
 msgid ""
 "Add the Godot source to the project by dragging and dropping it into the "
 "project file browser."
-msgstr "Benutze Drag and Drop, um das Skript in das Szenenpanel zu bringen."
+msgstr ""
+"Fügen Sie die Godot-Quelle zum Projekt hinzu, indem Sie sie in den "
+"Projektdateibrowser ziehen und dort ablegen."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
 msgid "Uncheck **Create external build system project**."
@@ -135,9 +133,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
-#, fuzzy
 msgid "Debugging the project"
-msgstr "Vorbereitung des Projekts"
+msgstr "Debuggen des Projekts"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:74
 msgid ""
@@ -147,35 +144,39 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
-msgstr ""
+msgstr "Öffnen Sie den Schema-Editor des externen Build-Ziels."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
 msgid "Locate the **Build > Post Actions** section."
-msgstr ""
+msgstr "Suchen Sie den Abschnitt **Build > Post Actions**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
 msgid "Add a new script run action"
-msgstr ""
+msgstr "Fügen Sie eine neue Skriptausführungsaktion hinzu"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:79
 msgid ""
 "Under **Provide build settings from** select your project. This allows to "
 "reference the project directory within the script."
 msgstr ""
+"Wählen Sie unter **Provide build settings from** Ihr Projekt aus. Dadurch "
+"kann auf das Projektverzeichnis im Skript verwiesen werden."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
 msgstr ""
+"Erstellen Sie ein Skript, das der Binärdatei einen Namen gibt, der von Xcode "
+"erkannt werden kann, z.B.:"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
 msgid "Build the external build target."
-msgstr ""
+msgstr "Erstellen Sie das externe Build-Ziel."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
 msgid "Open the scheme editor again and select **Run**."
-msgstr ""
+msgstr "Öffnen Sie den Schema-Editor erneut und wählen Sie **Ausführen**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
 msgid ""
@@ -202,10 +203,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Eine kurze Übersicht über diese Kanäle ist hier erhältlich `Godots "
-"Webauftritt <https://godotengine.org/community>`_."
+"Wenn Sie auf Probleme stoßen, bitten Sie um Hilfe in einem von `Godots "
+"Community-Kanälen <https://godotengine.org/community>`__."

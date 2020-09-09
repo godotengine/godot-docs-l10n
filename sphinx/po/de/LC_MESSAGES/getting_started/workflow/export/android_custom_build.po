@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr ""
+msgstr "Benutzerdefinierte Builds für Android"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr ""
+msgstr "Füge externe SDKs die mit Ihrem Projekt verarbeitet werden."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:46
 msgid "Install a JDK"
-msgstr ""
+msgstr "Installation eines JDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:48
 msgid ""
@@ -211,7 +211,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:132
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:216
-#, fuzzy
 msgid "Generating the keystore"
 msgstr "Einen Keystore (Schlüsselwert) generieren"
 
@@ -304,18 +303,24 @@ msgid ""
 "This is funny, the path it proposes by default contains whitespace (and "
 "complains about it). It must be changed."
 msgstr ""
+"Das ist lustig. Der Pfad, den es standardmäßig vorschlägt enthält "
+"Leerzeichen (und beschwert sich darüber). Er muss geändert werden."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:198
 msgid ""
 "In any case, it's better to select a different path inside your user "
 "folders. The recommended one is usually:"
 msgstr ""
+"In jedem Fall ist es besser, einen anderen Pfad innerhalb des "
+"Benutzerverzeichnisses zu wählen. Der empfohlene ist in der Regel:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:205
 msgid ""
 "Replace *yourusername* by your actual user name. Once it's correct, select "
 "from the list above in the same screen:"
 msgstr ""
+"Ersetze *yourusername* durch deinen tatsächlichen Benutzernamen. Sobald er "
+"korrekt ist, wähle aus der Liste oben im selben Bildschirm aus:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:208
 msgid "Android SDK"
@@ -323,26 +328,34 @@ msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:209
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "Android SDK Platform"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:211
 msgid ""
 "The rest are not needed, because the build system will fetch them itself. "
 "After selecting them, go on with the installation."
 msgstr ""
+"Der Rest wird nicht benötigt, da das Build-System sie selbst abruft. Fahre "
+"mit der Installation fort, nachdem du sie ausgewählt hast."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:218
 msgid ""
 "Go to the folder where you installed ``android-sdk`` in the previous step, "
 "use File Explorer and open a command line tool there:"
 msgstr ""
+"Gehe zum Ordner, wo du ``Android-Sdk`` im vorigen Schritt installiert hast, "
+"benutze den Datei-Explorer und öffne dort eine Eingabeaufforderung:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:223
+#, fuzzy
 msgid ""
 "The actual command line to type is the following. On Linux and macOS, it "
 "should work out of the box, but on Windows, it needs additional details "
 "(keep reading afterwards)."
 msgstr ""
+"Die tatsächlich einzugebende Befehl lautet wie folgt. Unter Linux und MacOS "
+"sollte es sofort funktionieren, aber unter Windows benötigt sie zusätzliche "
+"Details (lesen Sie danach weiter)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:231
 msgid ""
@@ -351,6 +364,10 @@ msgid ""
 "for the regular ``cmd.exe`` console). Don't worry, at least by using Android "
 "Studio on Windows, Java comes bundled with it."
 msgstr ""
+"Unter Windows sollte der vollständige Pfad zu Java angegeben werden (und "
+"``&`` muss am Anfang der Zeile hinzugefügt werden, wenn PowerShell verwendet "
+"wird, für die reguläre ``cmd.exe`` Konsole wird dies nicht benötigt). Keine "
+"Sorge, bei Verwendung von Android Studio unter Windows ist Java mitgeliefert."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:236
 msgid ""
@@ -359,26 +376,40 @@ msgid ""
 "remove ``&`` if you use ``cmd.exe``). It uses a path to the Java version "
 "that comes with Android Studio:"
 msgstr ""
+"Um es klarer zu machen ist hier ein Screenshot einer Zeile, die auf der "
+"PowerShell funktioniert (durch Hinzufügen von ``&`` und dem vollständigen "
+"Java-Pfad zu ``keytool.exe``; entferne ``&``, wenn du ``cmd.exe`` "
+"verwendest). Es wird ein Pfad zur Java-Version verwendet, die mit Android "
+"Studio geliefert wird:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:264
 msgid "Enabling the custom build and exporting"
-msgstr ""
+msgstr "Aktivieren der benutzerdefinierten Builds und Exports"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:266
 msgid ""
 "When setting up the Android project in the **Project > Export** dialog, "
 "**Custom Build** needs to be enabled:"
 msgstr ""
+"Wenn Sie das Android-Projekt im Dialogfeld **Projekt > Exportieren** "
+"einrichten, muss **Custom Build** aktiviert sein:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:271
+#, fuzzy
 msgid ""
 "From now on, attempting to export the project or one-click deploy will call "
 "the `Gradle <https://gradle.org/>`__ build system to generate fresh "
 "templates (this window will appear every time):"
 msgstr ""
+"Von nun an wird bei dem Versuch, das Projekt zu exportieren oder mit einem "
+"Klick zu deployen, das `Gradle <https://gradle.org/>`__ Build-System "
+"aufgerufen, um neue Vorlagen zu generieren (dieses Fenster erscheint jedes "
+"Mal):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:277
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
 msgstr ""
+"Die erstellten Vorlagen werden anschließend automatisch verwendet, sodass "
+"keine weitere Konfiguration erforderlich ist."

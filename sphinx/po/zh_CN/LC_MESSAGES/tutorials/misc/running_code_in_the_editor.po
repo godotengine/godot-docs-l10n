@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,26 +103,26 @@ msgstr "要检查您当前是否在编辑器中，请使用 : ``Engine.editor_hi
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr "例如，如果只想在编辑器中执行某些代码，请使用:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:49
 #, fuzzy
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
 msgstr "另一方面，如果您只想在游戏中执行代码，只需否定先前的表达式:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:64
 #, fuzzy
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
 "editor and in-game."
 msgstr "没有上述任何条件的代码片段将在编辑器和游戏中运行。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 #, fuzzy
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr "以下是 ``_process()`` 函数的示例:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:97
 #, fuzzy
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
@@ -132,11 +132,11 @@ msgstr ""
 "编辑器中的修改是永久性的。 在我们的示例中，当我们删除脚本时，节点将保持其旋转"
 "方向。 请注意不要进行不必要的修改。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:100
 msgid "Try it out"
 msgstr "试试看"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
@@ -144,7 +144,7 @@ msgstr ""
 "在场景中添加一个 ``Sprite`` 节点，并将纹理设置为Godot图标。 添加并打开脚本，"
 "并将其更改为:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:127
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
@@ -152,18 +152,18 @@ msgstr ""
 "保存脚本并返回编辑器。 现在您应该看到您的对象在旋转。 如果您运行游戏，它也会"
 "旋转。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:131
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr "如果您没有看到变化，请重新加载场景(关闭它并再次打开)。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:133
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr "现在让我们选择何时运行代码。 将 ``_process()`` 函数修改为:"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:158
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
@@ -171,19 +171,19 @@ msgstr ""
 "保存脚本。 现在，对象将在编辑器中顺时针旋转，但如果您运行游戏，它将逆时针旋"
 "转。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
 #, fuzzy
 msgid "Editing variables"
 msgstr "编辑实例"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
 "Add and export a variable speed to the script. The function set_speed after "
 "\"setget\" is executed with your input to change the variable. Modify  "
 "``_process()`` to include the rotation speed."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:213
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -195,11 +195,11 @@ msgstr ""
 "问树和节点及其默认属性，但无法访问用户变量。 如果要这样做，其他节点也必须在编"
 "辑器中运行。 AutoLoad节点时无法在编辑器中访问的。"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:216
 msgid "Instancing scenes"
 msgstr "实例化场景"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:218
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "
 "currently opened in the editor. Be sure to set the scene root as the owner "
@@ -207,15 +207,15 @@ msgid ""
 "editor."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:220
 msgid "If you are using ``tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:239
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:260
 #, fuzzy
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "

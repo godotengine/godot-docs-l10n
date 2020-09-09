@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,12 +29,12 @@ msgstr "Einführung"
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
 msgstr ""
-"Dieses Tutorial zeigt dir, wie man einen Singleplayer First-Person-Shooter "
+"Diese Anleitung zeigt dir, wie man einen Singleplayer First-Person-Shooter "
 "erstellt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr "In diesem Kurs der Tutorialreihe werden wir folgende Themen behandeln:"
+msgstr "In diesem Kurs der Reihe werden wir folgende Themen behandeln:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
@@ -149,10 +149,10 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
-"Obwohl dieses Tutorial von Anfängern abgeschlossen werden kann, empfehlen "
+"Obwohl diese Anleitung von Anfängern abgeschlossen werden kann, empfehlen "
 "wir zuerst :ref:`doc_your_first_game` abzuschließen. Wenn du noch neu in der "
-"Godot Engine oder mit Game Development allgemein bist wird dringlichst "
-"empfohlen das eben genannte Tutorial **zuerst** abzuschließen."
+"Godot Engine oder mit Game Development allgemein bist, wird dringlichst "
+"empfohlen die eben genannte Anleitung **zuerst** durchzulesen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
@@ -169,7 +169,7 @@ msgid ""
 "basic programming experience in GDScript, and basic experience in game "
 "development."
 msgstr ""
-"Dieses Tutorial erwartet das du bereits Erfahrung mit dem Godot Editor, "
+"Diese Anleitung erwartet das du bereits Erfahrung mit dem Godot Editor, "
 "programmieren mit GDScript und grundsätzliche Game Development Erfahrung "
 "hast."
 
@@ -178,7 +178,7 @@ msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
-"Du kannst die Assets für den Start dieses Tutorials hier herunterladen: :"
+"Du kannst die Inhalte für den Start dieser Anleitung hier herunterladen: :"
 "download:`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
@@ -219,6 +219,8 @@ msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
 msgstr ""
+"Das fertige Projekt für jeden Teil finden Sie unten auf der Seite jedes "
+"Abschnitts"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 msgid "Part overview"
@@ -229,6 +231,8 @@ msgid ""
 "In this part we will be making a first person player that can move around "
 "the environment."
 msgstr ""
+"In diesem Teil werden wir einen Ego-Spieler erstellen, der sich in der "
+"Umgebung bewegen kann."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
 msgid ""
@@ -290,7 +294,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:104
 msgid "Making the FPS movement logic"
-msgstr ""
+msgstr "Erstellen der FPS-Bewegungslogik"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:106
 msgid ""
@@ -399,7 +403,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:395
 msgid "``GRAVITY``: How strong gravity pulls us down."
-msgstr ""
+msgstr "``GRAVITY``: wie stark die Gravitation nach unten zieht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:396
 msgid "``vel``: Our :ref:`KinematicBody <class_KinematicBody>`'s velocity."
@@ -410,16 +414,21 @@ msgid ""
 "``MAX_SPEED``: The fastest speed we can reach. Once we hit this speed, we "
 "will not go any faster."
 msgstr ""
+"``MAX_SPEED``: Die schnellste Geschwindigkeit die wir erreichen können. "
+"Sobald wir diese Geschwindigkeit erreicht haben, werden wir nicht schneller "
+"fahren."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:398
 msgid "``JUMP_SPEED``: How high we can jump."
-msgstr ""
+msgstr "``JUMP_SPEED``: wie hoch man springen kann."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:399
 msgid ""
 "``ACCEL``: How quickly we accelerate. The higher the value, the sooner we "
 "get to max speed."
 msgstr ""
+"``ACCEL``: Wie schnell wir beschleunigen. Je höher der Wert, desto eher "
+"erreichen wir die Höchstgeschwindigkeit."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:400
 msgid ""
@@ -435,7 +444,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:402
 msgid "``camera``: The :ref:`Camera <class_Camera>` node."
-msgstr ""
+msgstr "``camera``: Der :ref:`Kamera <class_Camera>` Node."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:403
 msgid ""
@@ -837,6 +846,10 @@ msgid ""
 "meaning we are only checking if the player is moving forwards, backwards, "
 "left, or right."
 msgstr ""
+"Wir nehmen dann das Skalarprodukt von ``hvel`` um zu sehen, ob sich der "
+"Spieler gemäß ``hvel`` bewegt. Denken Sie daran, dass ``hvel`` keine ``Y`` "
+"Geschwindigkeit hat, was bedeutet, dass wir nur prüfen, ob sich der Spieler "
+"vorwärts, rückwärts, links oder rechts bewegt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:639
 msgid ""
@@ -1050,28 +1063,37 @@ msgid ""
 "Go try it out! You can change the sprint-related class variables to make the "
 "player faster or slower when sprinting!"
 msgstr ""
+"Probieren Sie es aus! Sie können die sprintbezogenen Klassenvariablen "
+"ändern, um den Spieler beim Sprinten schneller oder langsamer zu machen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:837
 msgid "Final notes"
-msgstr ""
+msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:841
 msgid ""
 "Whew! That was a lot of work. Now you have a fully working first person "
 "character!"
 msgstr ""
+"Uff! Das war viel Arbeit. Jetzt hast du einen voll funktionsfähigen Ego-"
+"Charakter!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:843
 msgid ""
 "In :ref:`doc_fps_tutorial_part_two` we will add some guns to our player "
 "character."
 msgstr ""
+"In :ref:`doc_fps_tutorial_part_two` werden wir unserem Spielercharakter "
+"einige Waffen hinzufügen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:845
 msgid ""
 "At this point we've recreated the Kinematic character demo from first person "
 "perspective with sprinting and a flash light!"
 msgstr ""
+"Zu diesem Zeitpunkt haben wir die Kinematic-Charakterdemo aus der "
+"Perspektive der eigenen Person (First Person) mit Sprint und Blitzlicht neu "
+"erstellt!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:847
 msgid ""
@@ -1079,13 +1101,20 @@ msgid ""
 "of first person games. For example: Horror games, platformer games, "
 "adventure games, and more!"
 msgstr ""
+"Derzeit befindet sich das Spieler-Skript in einem idealen Zustand für alle "
+"Arten von Ego-Spielen. Zum Beispiel: Horrorspiele, Plattformspiele, "
+"Abenteuerspiele und mehr!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:850
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
+"Wenn Sie jemals die Orientierung verlieren, lesen Sie den Code unbedingt "
+"noch einmal durch!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:852
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_1.zip <files/Godot_FPS_Part_1.zip>`"
 msgstr ""
+"Sie können das fertige Projekt für diesen Teil hier herunterladen: :"
+"download: `Godot_FPS_Part_1.zip <files / Godot_FPS_Part_1.zip>`"

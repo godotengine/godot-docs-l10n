@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU Optimizations"
-msgstr "Optimierungen"
+msgstr "CPU-Optimierungen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:7
-#, fuzzy
 msgid "Measuring performance"
-msgstr "Leistung"
+msgstr "Leistung messen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:9
 msgid ""
@@ -43,9 +41,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:19
-#, fuzzy
 msgid "CPU profilers"
-msgstr "Profiler"
+msgstr "CPU Profiler"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:21
 msgid ""
@@ -83,18 +80,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:43
-#, fuzzy
 msgid ""
 "For more info about using the profiler within Godot see :ref:"
 "`doc_debugger_panel`."
 msgstr ""
-"Für mehr Informationen zur Arbeitsweise von ``Viewport``-Nodes, siehe dazu "
-"die :ref:`Viewports<doc_viewports>`-Anleitung."
+"Weitere Informationen zur Verwendung des Profilers in Godot finden Sie "
+"unter :ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:47
-#, fuzzy
 msgid "External profilers"
-msgstr "Externe Quellen"
+msgstr "Externe Profiler"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:49
 msgid ""
@@ -143,6 +138,16 @@ msgid ""
 "driver). This tells us the a large proportion of CPU time is being spent in "
 "the graphics driver."
 msgstr ""
+"In diesem Beispiel können wir sehen, dass fast die gesamte Zeit mit der "
+"Funktion `Main::iteration()` verbracht wird. Dies ist die Master-Funktion im "
+"Godot-Quellcode, die ständig wiederholt aufgerufen wird und dazu führt, dass "
+"Frames gezeichnet, Physik-Ticks simuliert und Nodes und Skripte aktualisiert "
+"werden. Ein großer Teil der Zeit wird für das Rendern einer Zeichenfläche in "
+"den Funktionen aufgewendet (66%), da in diesem Beispiel ein 2D-Benchmark "
+"verwendet wird. Darunter sehen wir, dass fast 50% der Zeit außerhalb von "
+"Godot-Code in `libglapi` und `i965_dri` (dem Grafiktreiber) verbracht wird. "
+"Dies zeigt uns, dass ein großer Teil der CPU-Zeit im Grafiktreiber verbracht "
+"wird."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:82
 msgid ""
@@ -154,9 +159,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:89
-#, fuzzy
 msgid "Manually timing functions"
-msgstr "Standardfunktionen"
+msgstr "Manuell zeitgesteuerte Funktionen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:91
 msgid ""
@@ -208,6 +212,18 @@ msgid ""
 "in some data. This delay can result in the CPU sitting around idle for a "
 "long time, and is referred to as a \"cache miss\"."
 msgstr ""
+"Besonders beim Vergleich von Timing-Ergebnissen zweier verschiedener "
+"Versionen einer Funktion ist zu beachten, dass die Ergebnisse stark davon "
+"abhängen können, ob sich die Daten im CPU-Cache befinden oder nicht. CPUs "
+"laden keine Daten direkt aus dem Hauptspeicher, da der Hauptspeicher zwar "
+"sehr groß sein kann (viele GB), der Zugriff jedoch sehr langsam ist. "
+"Stattdessen laden CPUs Daten aus einer kleineren Speicherbank mit höherer "
+"Geschwindigkeit, die als Cache bezeichnet wird. Das Laden von Daten aus dem "
+"Cache ist sehr schnell, aber jedes Mal wenn Sie versuchen eine "
+"Speicheradresse zu laden, die nicht im Cache gespeichert ist, muss der Cache "
+"im Hauptspeicher nachsehen und die Daten von dort langsam laden. Diese "
+"Verzögerung kann dazu führen, dass die CPU lange Zeit im Leerlauf bleibt und "
+"dies wird als \"Cache-Fehler\" bezeichnet."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:135
 msgid ""
@@ -237,9 +253,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:154
-#, fuzzy
 msgid "Languages"
-msgstr "Sprache"
+msgstr "Sprachen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:156
 msgid ""
@@ -279,9 +294,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:180
-#, fuzzy
 msgid "Other languages"
-msgstr "Designsprache"
+msgstr "Andere Sprachen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:182
 msgid ""
@@ -291,9 +305,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:187
-#, fuzzy
 msgid "C++"
-msgstr "C++:"
+msgstr "C++"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:189
 msgid ""
@@ -305,7 +318,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:195
 msgid "Threads"
-msgstr ""
+msgstr "Threads"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:197
 msgid ""
@@ -325,15 +338,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:208
-#, fuzzy
 msgid "For more information on threads see :ref:`doc_using_multiple_threads`."
 msgstr ""
-"Für weitere Informationen zu Singletons bzw. Autoload-Skripten, siehe :ref:"
-"`doc_singletons_autoload`."
+"Für weitere Informationen zu Threads siehe :ref:`doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:211
 msgid "SceneTree"
-msgstr "Szenen-Baum (SceneTree)"
+msgstr "Szenen-Baum"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:213
 msgid ""

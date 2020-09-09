@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgstr "Které platformy podporuje Godot?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "** Pro editora: **"
+msgstr "**Pro editora:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
@@ -129,7 +129,7 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "** Pro export vašich her: **"
+msgstr "**Pro export vašich her:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
@@ -241,7 +241,7 @@ msgstr ""
 "Pokud jde o nové jazyky, podpora je možná prostřednictvím třetích stran "
 "pomocí infrastruktury GDNative / NativeScript / PluginScript. (Viz otázka o "
 "pluginech níže.) V současné době probíhají práce na neoficiální podpoře "
-"`Pythonu <https://github.com/touilleMan/godot-python>` _ a `Nimu <https: // "
+"`Pythonu <https://github.com/touilleMan/godot-python>`_ a`Nimu <https: // "
 "github.com/pragmagic/godot-nim>`_ pro skriptování v Godotu."
 
 #: ../../docs/about/faq.rst:93
@@ -263,7 +263,7 @@ msgstr ""
 "kódu. To umožňuje jak začínajícím, tak i pokročilým vývojářům co nejrychleji "
 "ovládnout silné stránky Godota. Pokud jste někdy napsali něco v jazyce jako "
 "Python, budete se zde cítit jako doma. Příklady, historie a úplný přehled "
-"možností, které vám GDScript nabízí, najdete v: ref: `skriptovací příručka "
+"možností, které vám GDScript nabízí, najdete v :ref:`skriptovací příručka "
 "GDScript <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
@@ -275,7 +275,7 @@ msgid ""
 msgstr ""
 "Existuje několik důvodů, proč používat GDScript - zejména když "
 "prototypujete, ve fázích alfa / beta vašeho projektu nebo nevytváříte další "
-"titul AAA -, ale nejdůležitějším důvodem je celkové ** snížení složitosti. **"
+"titul AAA -, ale nejdůležitějším důvodem je celkové **snížení složitosti.**"
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -316,9 +316,9 @@ msgstr ""
 "zejména pokud by podpora těchto známých jazyků vedla k horšímu zkušenosti. "
 "Chápeme, že byste v Godotu raději používali jiný jazyk (viz výše uvedený "
 "seznam podporovaných možností). Jak již bylo řečeno, pokud jste nezkoušeli "
-"GDScript, zkuste to na ** tři dny **. Stejně jako Godot, jakmile uvidíte, "
-"jak silný je a jak rychle se váš vývoj postupuje, myslíme si, že GDScript si "
-"vás získá."
+"GDScript, zkuste to na **tři dny**. Stejně jako Godot, jakmile uvidíte, jak "
+"silný je a jak rychle se váš vývoj postupuje, myslíme si, že GDScript si vás "
+"získá."
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -327,7 +327,7 @@ msgid ""
 "tutorial."
 msgstr ""
 "Více informací o pohodlném používání GDScriptu nebo dynamicky jazyků najdete "
-"v tutoriálu: ref: `doc_gdscript_more_efffully`."
+"v tutoriálu :ref:`doc_gdscript_more_efffully`."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
@@ -554,7 +554,7 @@ msgid ""
 "achieve this."
 msgstr ""
 "Použijte možnosti roztažení v Godot; 2D roztažení při zachování poměru stran "
-"funguje nejlépe. Podívejte se na návod: ref: `doc_multiple_resolutions`, jak "
+"funguje nejlépe. Podívejte se na návod :ref:`doc_multiple_resolutions`, jak "
 "toho dosáhnout."
 
 #: ../../docs/about/faq.rst:213
@@ -567,7 +567,7 @@ msgstr ""
 "Určete minimální rozlišení a poté se rozhodněte, zda chcete, aby se vaše hra "
 "natahovala svisle nebo vodorovně pro různé poměry stran, nebo zda existuje "
 "jeden poměr stran a chcete, aby se místo toho zobrazovaly černé pruhy. To je "
-"také vysvětleno v: ref: `doc_multiple_resolutions`."
+"také vysvětleno v :ref:`doc_multiple_resolutions`."
 
 #: ../../docs/about/faq.rst:218
 msgid ""
@@ -575,7 +575,7 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"U uživatelských rozhraní použijte: ref: `kotvení <doc_size_and_anchors>`, "
+"U uživatelských rozhraní použijte :ref:`kotvení <doc_size_and_anchors>`, "
 "abyste určili, kde by měly ovládací prvky zůstat a kam by se měly případně "
 "pohybovat. Pokud jsou uživatelská rozhraní komplexnější, zvažte poučení o "
 "kontejnerech."
@@ -607,7 +607,7 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Chcete-li rozšířit Godot, například vytvořit pluginy editoru Godot nebo "
-"přidat podporu pro další jazyky, podívejte se na: ref: `EditorPlugins "
+"přidat podporu pro další jazyky, podívejte se na :ref:`EditorPlugins "
 "<doc_making_plugins>` a skripty nástrojů."
 
 #: ../../docs/about/faq.rst:236
@@ -624,7 +624,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative je tady! <https://godotengine.org/article/dlscript-here> `_"
+msgstr "`GDNative je tady! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -939,7 +939,7 @@ msgstr "Jak mohu podpořit Godotův rozvoj nebo přispět?"
 
 #: ../../docs/about/faq.rst:360
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr "Viz: ref: `doc_ways_to_contribute`."
+msgstr "Viz :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:363
 msgid "Who is working on Godot? How can I contact you?"

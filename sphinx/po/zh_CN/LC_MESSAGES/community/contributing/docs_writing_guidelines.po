@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -409,7 +409,8 @@ msgid "**Don't** add a type hint with a colon or by casting:"
 msgstr "**不要**用冒号或强制转换添加类型提示："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:301
-msgid "**Do** write constants variables with dynamic typing:"
+#, fuzzy
+msgid "**Do** write constants and variables with dynamic typing:"
 msgstr "[Do] 使用动态类型编写常量变量："
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:311
@@ -708,20 +709,28 @@ msgstr "屏幕截图大小不应超过1920x1080。"
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:520
 msgid ""
 "When you need to highlight an area of the editor to show something, like a "
-"button or option, use a 2 pixel thick outline without a bevel."
+"button or option, use a 2 pixel-thick yellow outline without a bevel. If the "
+"outline is on a dark background, the outline should be yellow so it can be "
+"easily seen by colorblind people. Please do not use red as it won't be "
+"visible for some users."
 msgstr ""
-"当您需要突出显示编辑器的某个区域以显示某些内容，如按钮或选项时，请使用不带斜"
-"角的2像素粗轮廓。"
 
-#: ../../docs/community/contributing/docs_writing_guidelines.rst:523
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:526
 #, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
-"run through a PNG compressor to save size. The built in lossless compressor "
-"in programs like Krita or Photoshop should be enough. For heavier images, "
-"also look into using a lossy compressor, such as `pngquant <https://pngquant."
-"org/>`_ where almost no image quality is lost during compression."
+"run through a PNG compressor to save size. You can use the lossless OxiPNG "
+"compressor included in `Squoosh <https://squoosh.app/>`__ for this purpose. "
+"For heavier images, consider using a lossy compressor like `pngquant "
+"<https://pngquant.org/>`_. With it, almost no image quality is lost during "
+"compression."
 msgstr ""
 "在添加或替换文档中的任何图像之前，应通过png压缩器运行它们以节省大小。应该使用"
 "在Krita或Photoshop等程序中内置的无损压缩器。但是您也可以使用有损的压缩器，例"
 "如 `pngquant <https://pngquant.org/>`_ ，在压缩过程中几乎不会丢失图像质量。"
+
+#: ../../docs/community/contributing/docs_writing_guidelines.rst:535
+msgid ""
+"The program pngquant must be installed locally as it's not available in "
+"Squoosh."
+msgstr ""

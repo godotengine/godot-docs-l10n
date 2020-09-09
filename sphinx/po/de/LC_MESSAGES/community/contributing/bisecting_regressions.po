@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:4
 msgid "Bisecting regressions"
-msgstr ""
+msgstr "Halbierender Rückschritt"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:8
 msgid ""
@@ -29,10 +29,18 @@ msgid ""
 "possible for contributors to fix bugs faster, as they can know in advance "
 "which commit caused the regression. Your effort will be widely appreciated :)"
 msgstr ""
+"Halbierung ist ein Weg, um Rückschritte in Software zu finden. Nachdem Sie "
+"einen Fehler im `Godot repository on GitHub <https://github.com/godotengine/"
+"godot>`__ gemeldet haben, werden Sie möglicherweise von einem Mitwirkenden "
+"gebeten, das Problem zu *halbieren*. Durch die Halbierung können Mitwirkende "
+"Fehler schneller beheben, da sie im Voraus wissen, welches Commit den "
+"Rückschritt verursacht hat. Ihre Bemühungen werden allgemein geschätzt :)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:14
 msgid "The guide below explains how to find a regression by bisecting."
 msgstr ""
+"In der folgenden Anleitung wird erläutert, wie Sie einen Rückschritt durch "
+"Halbieren finden."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:17
 msgid "What is bisecting?"
@@ -47,6 +55,13 @@ msgid ""
 "it's typically used for bugs, it can also be used to find other kinds of "
 "unexpected changes such as performance regressions."
 msgstr ""
+"Godot-Entwickler verwenden das Versionskontrollsystem `Git <https://git-scm."
+"com/>`__. Im Kontext von Git ist die Halbierung der Prozess der Durchführung "
+"für eine manuelle `binäre Suche <https://en.wikipedia.org/wiki/"
+"Binary_search_algorithm>`__ , um festzustellen, wann ein Rückschritt "
+"aufgetreten ist. Während es normalerweise für Fehler verwendet wird, können "
+"damit auch andere Arten unerwarteter Änderungen gefunden werden, z.B. "
+"Leistungsrückschritte."
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:27
 msgid "Using official builds to speed up bisecting"
@@ -142,31 +157,35 @@ msgid ""
 "folder and enter the following command:"
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:102
+#: ../../docs/community/contributing/bisecting_regressions.rst:104
 msgid "Compile Godot. This assumes you've set up a build environment:"
 msgstr ""
+"Kompiliere Godot. Dies setzt voraus, dass Sie eine Build-Umgebung "
+"eingerichtet haben:"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:110
+#: ../../docs/community/contributing/bisecting_regressions.rst:112
 msgid ""
 "Since building Godot takes a while, you want to dedicate as many CPU threads "
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
 "command assigns 4 CPU threads to compiling Godot."
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:114
+#: ../../docs/community/contributing/bisecting_regressions.rst:116
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:116
+#: ../../docs/community/contributing/bisecting_regressions.rst:118
 msgid "If the build **still** exhibits the bug, run the following command:"
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:122
+#: ../../docs/community/contributing/bisecting_regressions.rst:124
 msgid "If the build **does not** exhibit the bug, run the following command:"
 msgstr ""
+"Wenn der Build den Fehler **nicht** aufweist, führen Sie den folgenden "
+"Befehl aus:"
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:128
+#: ../../docs/community/contributing/bisecting_regressions.rst:130
 msgid ""
 "After entering one of the commands above, Git will switch to a different "
 "commit. You should now build Godot again, try to reproduce the bug, then "
@@ -177,7 +196,7 @@ msgid ""
 "the worst case scenario)."
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:135
+#: ../../docs/community/contributing/bisecting_regressions.rst:137
 msgid ""
 "Once you've completed enough steps, Git will display the commit hash where "
 "the regression appeared. Write this commit hash as a comment to the GitHub "
@@ -185,7 +204,7 @@ msgid ""
 "contributing to Godot :)"
 msgstr ""
 
-#: ../../docs/community/contributing/bisecting_regressions.rst:142
+#: ../../docs/community/contributing/bisecting_regressions.rst:144
 msgid ""
 "You can read the full documentation on ``git bisect`` `here <https://git-scm."
 "com/docs/git-bisect>`__."

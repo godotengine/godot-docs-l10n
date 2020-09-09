@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,9 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
+"Globale Funktionen und einige Konstanten mussten in Klassen verschoben "
+"werden, da C# es nicht erlaubt sie in Namespaces zu deklarieren. Die meisten "
+"globalen Konstanten wurden in ihre eigenen Aufzählungen verschoben."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -57,6 +60,8 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
+"Globale Konstanten wurden in ihre eigenen Aufzählungen verschoben. Zum "
+"Beispiel wurden ``ERR_* `` Konstanten in die ``Error`` Aufzählung verschoben."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
@@ -214,13 +219,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr "Siehe auch: :ref:`c_sharp_signals`"
+msgstr "Siehe auch: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
-msgstr "Singletons (Entwurfsmuster/Einzelstück)"
+msgstr "Singletons (Entwurfsmuster)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -228,6 +232,9 @@ msgid ""
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
+"Singletons sind als statische Klassen verfügbar, anstatt das Singleton-"
+"Muster zu verwenden. Dies dient dazu den Code weniger ausführlich zu machen "
+"als bei einer ``Instance``-Eigenschaft."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:138
 msgid ""
@@ -319,10 +326,12 @@ msgid ""
 "The following methods were converted to properties with their respective "
 "names changed:"
 msgstr ""
+"Die folgenden Methoden wurden in Eigenschaften konvertiert, deren jeweilige "
+"Namen geändert wurden:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``get_rotation()``"
-msgstr ""
+msgstr "``get_rotation()``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:216
 msgid "``Rotation``"
@@ -506,15 +515,16 @@ msgstr "Variante"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:298
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
-msgstr ""
+msgstr "``System.Object`` (``object``) wird genutzt anstelle von ``Variant``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:301
 msgid "Communicating with other scripting languages"
-msgstr ""
+msgstr "Kommunikation mit anderen Skriptsprachen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:303
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr ""
+"Dies wird detailliert beschrieben in :ref:`doc_cross_language_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"

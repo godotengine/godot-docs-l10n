@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,60 +169,67 @@ msgid ""
 "your game with an external editor."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:95
+msgid ""
+"Breakpoints won't break on code if it's :ref:`running in a thread "
+"<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
+"debugger."
+msgstr ""
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
 #, fuzzy
 msgid "Debug project settings"
 msgstr "Używanie ustawień projektu"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
 #, fuzzy
 msgid "Settings"
 msgstr "Ciągi tekstowe"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "GDScript"
 msgstr "GDScript"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
 msgid "Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
 msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:125
 msgid "Remote in scene dock"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
 "inspect or change the nodes' parameters in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."

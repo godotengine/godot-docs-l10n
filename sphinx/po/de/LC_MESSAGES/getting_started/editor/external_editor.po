@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "`External editors are currently incompatible with Godot's \"Sync Script "
 "Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
 msgstr ""
+"`Externe Editoren sind derzeit nicht mit Godots Funktion \" Skriptänderungen "
+"synchronisieren\" kompatibel. <https://github.com/godotengine/godot/"
+"issues/10946>`__"
 
 #: ../../docs/getting_started/editor/external_editor.rst:10
 msgid ""
@@ -45,10 +48,14 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
+"Es gibt zwei Felder: den ausführbaren Pfad und die Befehlszeilenflags. Mit "
+"den Flags können Sie den Editor in Godot integrieren und ihm den Dateipfad "
+"zum Öffnen und andere relevante Argumente übergeben. Godot ersetzt die "
+"folgenden Platzhalter in der Flags-Zeichenfolge:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Felder in den Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Is replaced with"
@@ -88,7 +95,7 @@ msgstr "Die Zeilennummer des Fehlers"
 
 #: ../../docs/getting_started/editor/external_editor.rst:33
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Einige Beispiele für Exec-Flags für verschiedene Editoren sind:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Editor"
@@ -96,7 +103,7 @@ msgstr "Editor"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Exec Flags"
-msgstr ""
+msgstr "Exec-Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "Geany/Kate"
@@ -108,7 +115,7 @@ msgstr "``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Atom/Sublime Text"
-msgstr ""
+msgstr "Atom/Sublime Text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{file}:{line}``"
@@ -141,3 +148,4 @@ msgstr "``\"+call cursor({line}, {col})\" {file}``"
 #: ../../docs/getting_started/editor/external_editor.rst:49
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
 msgstr ""
+"Für Visual Studio Code müssen Sie auf die Datei ``code.cmd`` verweisen."

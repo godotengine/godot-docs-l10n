@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
-msgstr ""
+msgstr "Benutzerdefinierte Module in C++"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Module"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -32,6 +32,11 @@ msgid ""
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
+"Godot ermöglicht den modularen Ausbau der Engine. Neue Module können "
+"erstellt und dann aktiviert bzw. deaktiviert werden. Dies ermöglicht das "
+"Hinzufügen neuer Enginefunktionen auf jeder Ebene ohne den Kern zu ändern, "
+"der zur Verwendung und Wiederverwendung in verschiedenen Modulen aufgeteilt "
+"werden kann."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
 msgid ""
@@ -41,10 +46,15 @@ msgid ""
 "and others. As many new modules as desired can be created and combined. The "
 "SCons build system will take care of it transparently."
 msgstr ""
+"Module befinden sich im Unterverzeichnis ``modules/`` des Build-Systems. "
+"Standardmäßig sind Dutzende von Modulen aktiviert, z.B. GDScript (das ja "
+"nicht Teil der Basis-Engine ist), die Mono-Laufzeit, ein Modul für reguläre "
+"Ausdrücke und andere. Es können beliebig viele neue Module erstellt und "
+"kombiniert werden. Das SCons-Build-System kümmert sich transparent darum."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 msgid "What for?"
-msgstr ""
+msgstr "Wofür?"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
@@ -52,36 +62,45 @@ msgid ""
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
 "++ modules can be useful in the following scenarios:"
 msgstr ""
+"Es wird zwar empfohlen den größten Teil eines Spiels in Skripten zu "
+"schreiben (da dies eine enorme Zeitersparnis bedeutet), es ist jedoch "
+"durchaus möglich stattdessen C++ zu verwenden. Das Hinzufügen von C++ - "
+"Modulen kann in den folgenden Szenarien hilfreich sein:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr ""
+msgstr "Binden einer externen Bibliothek an Godot (wie PhysX, FMOD usw.)."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
-msgstr ""
+msgstr "Optimieren kritischer Teile eines Spiels."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
-msgstr ""
+msgstr "Hinzufügen neuer Funktionen zur Engine oder zum Editor."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
-msgstr ""
+msgstr "Portieren eines vorhandenen Spiels."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
 msgstr ""
+"Schreiben eines ganz neuen Spiels in C++, weil Sie ohne C++ nicht leben "
+"können."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr ""
+msgstr "Neues Modul erstellen"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 msgid ""
 "Before creating a module, make sure to download the source code of Godot and "
 "manage to compile it. There are tutorials in the documentation for this."
 msgstr ""
+"Stellen Sie vor dem Erstellen eines Moduls sicher, dass Sie den Quellcode "
+"von Godot herunterladen und kompilieren. In der Dokumentation dazu finden "
+"Sie Anleitungen."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -89,6 +108,9 @@ msgid ""
 "``modules/``. If you want to maintain the module separately, you can "
 "checkout a different VCS into modules and use it."
 msgstr ""
+"Um ein neues Modul zu erstellen müssen Sie zunächst ein Verzeichnis in "
+"``modules/`` erstellen. Wenn Sie das Modul separat warten möchten, können "
+"Sie ein anderes VCS in Module auschecken und verwenden."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
 msgid ""
@@ -96,20 +118,24 @@ msgid ""
 "Godot source tree (``C:\\godot`` refers to wherever the Godot sources are "
 "located):"
 msgstr ""
+"Das Beispielmodul heißt \"summator\" und befindet sich im Godot-Quellbaum "
+"(``C:\\godot`` zeigt auf diese Godot-Quellen):"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:55
 msgid "Inside we will create a simple summator class:"
-msgstr ""
+msgstr "Im Inneren erstellen wir eine einfache Summator-Klasse:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:84
 msgid "And then the cpp file."
-msgstr ""
+msgstr "Und dann die cpp Datei."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:114
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
 msgstr ""
+"Dann muss die neue Klasse irgendwie registriert werden, sodass zwei weitere "
+"Dateien erstellt werden müssen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:123
 msgid ""
@@ -118,9 +144,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:126
-#, fuzzy
 msgid "These files should contain the following:"
-msgstr "Dieser Code führt zu folgendem Ergebnis:"
+msgstr "Diese Dateien sollten Folgendes enthalten:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:153
 msgid ""
@@ -133,6 +158,8 @@ msgid ""
 "With multiple sources, you can also add each file individually to a Python "
 "string list:"
 msgstr ""
+"Bei mehreren Quellen können Sie jede Datei auch einzeln zu einer Python-"
+"Zeichenfolgenliste hinzufügen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:172
 msgid ""
@@ -140,12 +167,17 @@ msgid ""
 "list using loops and logic statements. Look at some modules that ship with "
 "Godot by default for examples."
 msgstr ""
+"Dies erlaubt leistungsstarke Möglichkeiten mit Python, die Dateiliste "
+"mithilfe von Schleifen und logischen Anweisungen zu erstellen. Schauen Sie "
+"sich einige Module an, die standardmäßig mit Godot geliefert werden."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:176
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
 msgstr ""
+"Um Include-Verzeichnisse hinzuzufügen, die der Compiler anzeigen kann, "
+"können Sie sie an die Pfade der Umgebung anhängen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:184
 msgid ""
@@ -171,6 +203,8 @@ msgid ""
 "And that's it. Hope it was not too complex! Your module should look like "
 "this:"
 msgstr ""
+"Und das ist es, hoffentlich war es nicht zu komplex. Ihr Modul sollte "
+"folgendermaßen aussehen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:227
 msgid ""
@@ -178,6 +212,9 @@ msgid ""
 "for every platform (instructions in the previous sections), your module will "
 "be included."
 msgstr ""
+"Sie können es dann komprimieren und das Modul mit allen anderen teilen. Beim "
+"Erstellen für jede Plattform (Anweisungen in den vorherigen Abschnitten) "
+"wird Ihr Modul einbezogen."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:231
 msgid ""
@@ -188,15 +225,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:236
 msgid "Using the module"
-msgstr ""
+msgstr "Modul verwenden"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:238
 msgid "You can now use your newly created module from any script:"
-msgstr ""
+msgstr "Sie können Ihr neu erstelltes Modul jetzt in jedem Skript verwenden:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:249
 msgid "The output will be ``60``."
-msgstr ""
+msgstr "Die Ausgabe wird ``60`` sein."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:251
 msgid ""
@@ -218,7 +255,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:265
 msgid "Compiling a module externally"
-msgstr ""
+msgstr "Ein Modul extern kompilieren"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:267
 msgid ""
@@ -283,19 +320,25 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:316
 msgid "Improving the build system for development"
-msgstr ""
+msgstr "Verbesserung des Build-Systems für die Entwicklung"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:318
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
+"Bisher haben wir einen sauberen und einfachen SCsub definiert mit dem wir "
+"die Quellen unseres neuen Moduls als Teil der Godot-Binärdatei hinzufügen "
+"können."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:321
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
+"Dieser statische Ansatz ist in Ordnung, wenn wir eine Release-Version "
+"unseres Spiels erstellen möchten, in der alle Module in einer einzigen "
+"Binärdatei sind."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:324
 msgid ""
@@ -344,10 +387,12 @@ msgid ""
 "Finally, you can even speed up the build further by explicitly specifying "
 "your shared module as target in the SCons command:"
 msgstr ""
+"Schließlich können Sie den Build sogar noch weiter beschleunigen, indem Sie "
+"Ihr freigegebenes Modul im Befehl SCons explizit als Ziel angeben:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:427
 msgid "Writing custom documentation"
-msgstr ""
+msgstr "Benutzerdefinierte Dokumentation schreiben"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:429
 msgid ""
@@ -361,6 +406,8 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:435
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
+"Es gibt mehrere Schritte, um benutzerdefinierte Dokumente für das Modul "
+"einzurichten:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:437
 msgid ""
@@ -368,10 +415,15 @@ msgid ""
 "anything, but we'll be using the ``doc_classes`` name throughout this "
 "section."
 msgstr ""
+"Erstellen Sie ein neues Verzeichnis im Stammverzeichnis des Moduls. Der "
+"Verzeichnisname kann beliebig sein, aber wir werden in diesem Abschnitt den "
+"Namen ``doc_classes`` verwenden."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:440
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
 msgstr ""
+"Jetzt müssen wir ``config.py`` bearbeiten und das folgende Schnipsel "
+"hinzufügen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:452
 msgid ""
@@ -396,14 +448,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:470
-#, fuzzy
 msgid "Example output::"
-msgstr "Beispielprojekt"
+msgstr "Beispielausgabe::"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "Über die Dokumentation"
+msgstr "Jetzt können wir die Dokumentation erstellen:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -420,7 +470,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
 msgid "Run command:"
-msgstr ""
+msgstr "Führen Sie den Befehl aus:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:496
 msgid ""
@@ -462,9 +512,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
-#, fuzzy
 msgid "Adding custom editor icons"
-msgstr "Füge Kontrollpunkte hinzu"
+msgstr "Hinzufügen von benutzerdefinierten Editor-Symbolen"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:527
 msgid ""

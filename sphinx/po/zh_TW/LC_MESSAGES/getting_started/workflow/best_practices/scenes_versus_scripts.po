@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,14 +253,70 @@ msgid ""
 msgstr "但缺點是，這也代表必須要使用大量的指令式程式。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
+#, fuzzy
+msgid "Performance of Script vs PackedScene"
+msgstr "腳本效能與 PackedScene"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
+msgid ""
+"One last aspect to consider when choosing scenes and scripts is execution "
+"speed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
+#, fuzzy
+msgid ""
+"As the size of objects increases, the scripts' necessary size to create and "
+"initialize them grows much larger. Creating node hierarchies demonstrates "
+"this. Each Node's logic could be several hundred lines of code in length."
+msgstr ""
+"隨著物件的大小增長，要建立物件所需的腳本也變得越來越大。建立節點階層即可重現"
+"此狀況。個別節點的邏輯可為數百行程式碼。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
+#, fuzzy
+msgid ""
+"The code example below creates a new ``Node``, changes its name, assigns a "
+"script to it, sets its future parent as its owner so it gets saved to disk "
+"along with it, and finally adds it as a child of the ``Main`` node:"
+msgstr ""
+"來看看一個建立 ``Node`` 子節點的簡單範例。下列程式碼會建立一個新的 ``Node`` "
+"節點、更改名稱、為該節點指派腳本、然後將新節點的母節點設為目前節點，這樣一來"
+"該節點才會跟著一起保存到硬碟上，然後最後才將 ``Main`` 節點作為目前節點的腳本"
+"保存："
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
+#, fuzzy
+msgid ""
+"Script code like this is much slower than engine-side C++ code. Each "
+"instruction makes a call to the scripting API which leads to many \"lookups"
+"\" on the back-end to find the logic to execute."
+msgstr ""
+"像這樣的程式碼會比引擎端 C++ 程式碼還要慢很多。每個改動都會需要額外的腳本 "
+"API 呼叫來向後端「查詢」要執行什麼邏輯。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
+#, fuzzy
+msgid ""
+"Scenes help to avoid this performance issue. :ref:`PackedScene "
+"<class_PackedScene>`, the base type that scenes inherit from, defines "
+"resources that use serialized data to create objects. The engine can process "
+"scenes in batches on the back-end and provide much better performance than "
+"scripts."
+msgstr ""
+"場景系統可以避免這種效能問題。 :ref:`PackedScene <class_PackedScene>` ，即，"
+"場景繼承的基礎型別，是一種資源，可以用來序列化資料並建立物件。引擎可以在後端"
+"批次處理場景，並可提供比腳本好很多的效能。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"
 msgstr "結論"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:207
 msgid "In the end, the best approach is to consider the following:"
 msgstr "最後，最好的方法就是要考慮下列事項："
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:209
 msgid ""
 "If one wishes to create a basic tool that is going to be re-used in several "
 "different projects and which people of all skill levels will likely use "
@@ -272,7 +328,7 @@ msgstr ""
 "計師」的人) 都能使用的基礎工具，那麼這個工具很有可能會是腳本，並且有自定名稱"
 "／圖示。"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:214
 msgid ""
 "If one wishes to create a concept that is particular to their game, then it "
 "should always be a scene. Scenes are easier to track/edit and provide more "
@@ -281,7 +337,7 @@ msgstr ""
 "如果想建立專屬於自己的遊戲的概念，則應該使用場景。場景比較好追蹤與編輯，並且"
 "比起腳本提供更多安全性。"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:218
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "

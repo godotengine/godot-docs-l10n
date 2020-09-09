@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,9 @@ msgid ""
 "a ``tool`` keyword at the top. This is needed for the script to run in the "
 "editor."
 msgstr ""
+"Erstellen Sie ein neues Skript, das :ref:`class_VisualScriptCustomNode` "
+"erweitert und setzen Sie oben ein` `tool``-Schlüsselwort ein. Dies ist "
+"erforderlich, damit das Skript im Editor ausgeführt werden kann."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:14
 msgid ""
@@ -72,12 +75,16 @@ msgid ""
 "``start_mode`` can be checked to see if it is the first time ``_step`` is "
 "called."
 msgstr ""
+"``start_mode`` hiermit kann überprüft werden, ob ``_step`` das erste Mal "
+"aufgerufen wird."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:25
 msgid ""
 "``working_mem`` is persistent each ``_step`` call. It can be used to store "
 "information."
 msgstr ""
+"``working_mem`` bleibt bei jedem ``_step`` Aufruf bestehen. Es kann zum "
+"Speichern von Informationen verwendet werden."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:27
 msgid ""
@@ -93,7 +100,7 @@ msgstr "Beispiel:"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:94
 msgid "Using a custom node"
-msgstr "ein eigenes Node nutzen"
+msgstr "Einen benutzerdefinierten Node nutzen"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:96
 msgid ""

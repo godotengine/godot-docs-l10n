@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -479,8 +479,7 @@ msgstr ""
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr ""
-"다양한 해상도와 화면 비율에 맞도록 하려면 어떻게 애셋을 만들어야 할까요?"
+msgstr "다양한 해상도와 화면 비율에 맞는 에셋을 만드는 방법"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -492,12 +491,12 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
-"이 질문은 자주 나타났습니다. 다행이라면 애플이 기기의 해상도를 원래 두 배로 "
-"했기 때문에 나온 오해에서 비롯되었습니다. 이 때문에 사람들이 같은 애셋을 다"
-"른 해상도로 만드는 것이 좋은 생각으로 여기고, 많은 사람들이 그렇게 했습니다. "
-"이 작업은 원래 애플 기기에 초점을 맞췄습니다. 하지만 다양한 해상도와 화면 비"
-"율을 가진 여러 안드로이드와 애플 기기가 만들어졌습니다. 그들은 매우 넓은 화면"
-"과 DPI를 갖고 있었죠."
+"이런 고민은 아마도 Apple사가 언젠가 자사 제품의 해상도를 두 배로 늘렸을 때 생"
+"긴 오해 때문인 것으로 보입니다. 이 때문에 사람들은 다양한 해상도의 같은 에셋"
+"을 갖는 것이 좋은 아이디어라 생각하게 되었습니다. 그런데 이런 통념은 짧은 기"
+"간 Apple 제품에 한에서는 적용이 되었지만, 얼마 지나지 않아 다양한 해상도와 화"
+"면 비율, DPI 를 갖는 Android 기기들과 Apple 기기들이 시장에 나오면서 이제는 "
+"불필요한 일이 되었습니다."
 
 #: ../../docs/about/faq.rst:197
 msgid ""
@@ -506,9 +505,9 @@ msgid ""
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"가장 일반적이고 적합한 방법은 게임을 위한 하나의 기본 해상도를 사용하고 가로 "
-"세로 비율 만을 다르게 하는 것입니다. 2D라면 이 작업이 필요하겠지만, 3D에서는 "
-"카메라 X시야나 Y시야의 단순한 문제입니다."
+"이제 다양한 기기에 대응할 수 있는 가장 일반적이고 적절한 방법은 2D 게임의 경"
+"우 한 해상도에 다양한 화면 비율을 지원해주는 것입니다. 3D 게임에서는 단순히 "
+"카메라의 XFov나 YFov를 조절하는 것으로 해결할 수 있습니다."
 
 #: ../../docs/about/faq.rst:201
 msgid ""
@@ -573,7 +572,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:230
 msgid "How can I extend Godot?"
-msgstr "어떻게 Godot을 확장할 수 있나요?"
+msgstr "Godot의 확장기능"
 
 #: ../../docs/about/faq.rst:232
 msgid ""
@@ -859,7 +858,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:337
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
-msgstr "왜 Godot은 사용자에게 DoD(데이터 지향 디자인) 구현을 강요하지 않나요?"
+msgstr "Godot이 DoD(데이터 지향 디자인) 구현을 강제하지 않는 이유"
 
 #: ../../docs/about/faq.rst:339
 msgid ""

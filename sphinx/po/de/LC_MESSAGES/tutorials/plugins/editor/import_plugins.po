@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,10 @@ msgid ""
 "doubt, refer to the :ref:`doc_making_plugins` page. This also assumes you "
 "are acquainted with Godot's import system."
 msgstr ""
+"In dieser Anleitung wird davon ausgegangen, dass Sie bereits wissen wie man "
+"generische Plugins erstellt. Im Zweifelsfall lesen Sie bitte die Seite :ref:"
+"`doc_making_plugins`. Dies setzt auch voraus, dass Sie mit dem Importsystem "
+"von Godot vertraut sind."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:11
 msgid "Introduction"
@@ -40,6 +44,11 @@ msgid ""
 "common resources like PNG images, Collada and glTF models, Ogg Vorbis "
 "sounds, and many more."
 msgstr ""
+"Ein Import-Plugin ist eine spezielle Art von Editor-Tool, mit dem "
+"benutzerdefinierte Ressourcen von Godot importiert und als erstklassige "
+"Ressourcen behandelt werden können. Der Editor selbst wird mit vielen Import-"
+"Plugins geliefert, die die gängigen Ressourcen wie PNG Bilder, Collada und "
+"glTF Modelle, Ogg Vorbis Sounds und vieles mehr verarbeiten."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:18
 msgid ""
@@ -50,6 +59,12 @@ msgid ""
 "the imported material. In this example it will contain the pure blue color "
 "(zero red, zero green, and full blue):"
 msgstr ""
+"Diese Anleitung zeigt Ihnen, wie Sie ein einfaches Import-Plugin erstellen, "
+"um eine benutzerdefinierte Textdatei als Materialressource zu laden. Diese "
+"Textdatei enthält drei durch Komma getrennte numerische Werte, die die drei "
+"Kanäle einer Farbe darstellen. Die resultierende Farbe wird als Albedo "
+"(Hauptfarbe) des importierten Materials verwendet. In diesem Beispiel "
+"enthält es die reine blaue Farbe (null Rot, null Grün und volles Blau):"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:30
 msgid "Configuration"
@@ -181,7 +196,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:168
 msgid "Options and presets"
-msgstr ""
+msgstr "Optionen und Voreinstellungen"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:170
 msgid ""
@@ -233,6 +248,9 @@ msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
 msgstr ""
+"Wenn Sie nur eine Voreinstellung haben, können Sie den Namen einfach direkt "
+"zurückgeben. Wenn Sie dies jedoch tun müssen Sie beim hinzufügen mehrerer "
+"Voreinstellungen vorsichtig sein."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:239
 msgid ""
@@ -242,10 +260,15 @@ msgid ""
 "that are checked to customize the option as its shown to the user. The "
 "following table shows the possible keys:"
 msgstr ""
+"Dies ist die Methode, die die verfügbaren Optionen definiert. :ref:"
+"`get_import_options () <class_EditorImportPlugin_method_get_import_options>` "
+"gibt ein Array von Wörterbüchern zurück, und jedes Wörterbuch enthält einige "
+"Schlüssel, die überprüft werden, um die Option so anzupassen, wie sie dem "
+"Benutzer angezeigt wird. Die folgende Tabelle zeigt die möglichen Schlüssel:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Key"
-msgstr "Schlüsselbild"
+msgstr "Schlüssel"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Type"
@@ -257,7 +280,7 @@ msgstr "Beschreibung"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``name``"
-msgstr ""
+msgstr "``name``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
@@ -269,59 +292,69 @@ msgid ""
 "The name of the option. When showed, underscores become spaces and first "
 "letters are capitalized."
 msgstr ""
+"Der Name der Option. Unterstriche werden zu Leerzeichen und "
+"Anfangsbuchstaben werden groß geschrieben."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "``default_value``"
-msgstr ""
+msgstr "``default_value``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "Any"
-msgstr ""
+msgstr "beliebig"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:250
 msgid "The default value of the option for this preset."
-msgstr ""
+msgstr "Der Standardwert der Option für diese Voreinstellung."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid "``property_hint``"
-msgstr ""
+msgstr "``property_hint``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid "Enum value"
-msgstr ""
+msgstr "Aufzählungswert"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:252
 msgid ""
 "One of the :ref:`PropertyHint <enum_@GlobalScope_PropertyHint>` values to "
 "use as hint."
 msgstr ""
+"Einer der :ref:`PropertyHint <enum_ @ GlobalScope_PropertyHint>` Werte, der "
+"als Hinweis verwendet werden soll."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 msgid "``hint_string``"
-msgstr ""
+msgstr "``hint_string``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:254
 msgid ""
 "The hint text of the property. The same as you'd add in the ``export`` "
 "statement in GDScript."
 msgstr ""
+"Der Hinweistext der Eigenschaft. Das gleiche, wie Sie es in der Anweisung "
+"``export`` in GDScript hinzufügen würden."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid "``usage``"
-msgstr ""
+msgstr "``usage``"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:256
 msgid ""
 "One of the :ref:`PropertyUsageFlags <enum_@GlobalScope_PropertyUsageFlags>` "
 "values to define the usage."
 msgstr ""
+"Einer der :ref:`PropertyUsageFlags <enum_ @ GlobalScope_PropertyUsageFlags>` "
+"Werte, um die Verwendung zu definieren."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:259
 msgid ""
 "The ``name`` and ``default_value`` keys are **mandatory**, the rest are "
 "optional."
 msgstr ""
+"Die Schlüssel ``name`` und ``default_value`` **müssen** angegeben werden, "
+"der Rest ist optional."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:261
 msgid ""
@@ -352,10 +385,13 @@ msgid ""
 "If you need to make certain option visible only if another is set with a "
 "certain value, you can add the logic in this method."
 msgstr ""
+"Wenn Sie eine bestimmte Option nur sichtbar machen müssen, wenn eine andere "
+"mit einem bestimmten Wert belegt ist, können Sie die Logik in dieser Methode "
+"hinzufügen."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:286
 msgid "The ``import`` method"
-msgstr ""
+msgstr "Die ``import`` Methode"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:288
 msgid ""
@@ -398,6 +434,10 @@ msgid ""
 "the imported resource. We create a new instance of it and then set its "
 "albedo color as the value we got before."
 msgstr ""
+"Dieser Teil erstellt ein neues :ref:`SpatialMaterial "
+"<class_SpatialMaterial>`, als importierte Ressource. Wir erstellen eine neue "
+"Instanz davon und setzen dann die Albedofarbe als den Wert, den wir zuvor "
+"erhalten haben."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:344
 msgid ""
@@ -418,7 +458,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:356
 msgid "Platform variants and generated files"
-msgstr ""
+msgstr "Plattformvarianten und generierte Dateien"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:358
 msgid ""
@@ -450,6 +490,8 @@ msgid ""
 "For example, let's say we save a different material for a mobile platform. "
 "We would need to do something like the following:"
 msgstr ""
+"Angenommen wir speichern ein anderes Material für eine mobile Plattform. Wir "
+"müssten so etwas tun:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:380
 msgid ""
@@ -465,10 +507,13 @@ msgid ""
 "save. As an example, let's create another material for the next pass and "
 "save it in a different file:"
 msgstr ""
+"Dies ist auch ein Array und sollte mit vollständigen Pfaden der von Ihnen "
+"gespeicherten Dateien gefüllt sein. Als Beispiel erstellen wir ein anderes "
+"Material für den nächsten Durchgang und speichern es in einer anderen Datei:"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:401
 msgid "Trying the plugin"
-msgstr ""
+msgstr "Das Plugin ausprobieren"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:403
 msgid ""

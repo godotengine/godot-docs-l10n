@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "3D Einführung"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -31,6 +31,14 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"Das Erstellen eines 3D-Spiels kann eine Herausforderung sein. Durch diese "
+"zusätzliche Z-Koordinate funktionieren viele der gängigen Techniken nicht "
+"mehr, die dazu beigetragen haben, dass 2D-Spiele einfach zu erstellen sind. "
+"Um diesen Übergang zu erleichtern, ist es erwähnenswert, dass Godot ähnliche "
+"APIs für 2D und 3D verwendet. Die meisten Nodes sind gleich und stehen "
+"sowohl in 2D- als auch in 3D-Versionen zur Verfügung. In der Tat lohnt es "
+"sich, die 3D Plattformer Anleitung oder die 3D Anleitungen für kinematische "
+"Charaktere zu lesen, die fast identisch mit ihren 2D Gegenstücken sind."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -39,10 +47,14 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way for you "
 "to develop 3D games efficiently."
 msgstr ""
+"In 3D ist Mathematik etwas komplexer als in 2D. Wenn Sie also den Eintrag :"
+"ref:`doc_vector_math` im Wiki ansehen (der speziell für Spieleentwickler "
+"erstellt wurde, nicht für Mathematiker oder Ingenieure), ebnen Sie sich den "
+"Weg zur effizienten 3D-Spiele Entwicklung."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Spatial-Node (Raum-Node)"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -51,6 +63,10 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+":ref:`Node2D <class_Node2D>` ist der Basis-Node für 2D und :ref:`Control "
+"<class_Control>` ist der Basis-Node für die gesamte grafische "
+"Benutzeroberfläche. Nach dieser Überlegung verwendet die 3D-Engine für alles "
+"in 3D den Node :ref:`Spatial <class_Spatial>`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -60,6 +76,12 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
+"Spatial-Nodes haben eine lokale Transformation, die relativ zum "
+"übergeordneten Node ist (solange der übergeordnete Node ebenfalls vom **oder "
+"erbt von** Spatial-Typ ist). Auf diese Transformation kann als 4×3 :ref:"
+"`Transform <class_Transform>` oder als 3 :ref:`Vector3 <class_Vector3>` "
+"Elemente zugegriffen werden, die für Position, Euler-Rotation (X, Y und Z "
+"Winkel) und Skalierung stehen."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -73,10 +95,15 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"Im Gegensatz zu 2D wo das Laden von Bildinhalten und Zeichnen einfach ist, "
+"ist 3D etwas schwieriger. Der Inhalt muss mit speziellen 3D-Werkzeugen "
+"(normalerweise als DCCs bezeichnet) erstellt und in ein Austauschdateiformat "
+"exportiert werden, um in Godot importiert zu werden (3D-Formate sind nicht "
+"so standardisiert wie Bilder)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "DCC erzeugte Modelle"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:53
 msgid ""
@@ -85,6 +112,10 @@ msgid ""
 "entire scenes (just as they look in the DCC), including animation, skeletal "
 "rigs, blend shapes, etc."
 msgstr ""
+"Es gibt zwei Möglichkeiten zum Importieren von 3D-Modellen in Godot. Die "
+"erste und häufigste ist :ref:`doc_importing_3d_scenes` mit der Sie ganze "
+"Szenen (so wie sie im DCC aussehen) importieren können, einschließlich "
+"Animationen, Skelett-Rigs, Mischformen usw."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:58
 msgid ""
@@ -92,6 +123,9 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
+"Die zweite Möglichkeit besteht aus dem Importieren einfacher .OBJ-Dateien "
+"als Mesh-Ressourcen, die dann zur Anzeige in einen :ref:`MeshInstance "
+"<class_MeshInstance>` Node eingefügt werden können."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid "Generated geometry"
@@ -117,7 +151,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
-msgstr ""
+msgstr "Unmittelbare Geometrie"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:79
 msgid ""
@@ -163,7 +197,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid "3D viewport"
-msgstr ""
+msgstr "3D Ansichtsfenster"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:112
 msgid ""
@@ -245,15 +279,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
-#, fuzzy
 msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
-"Zum Zentrieren der Ansicht auf das selektierte Objekt, die \"f\" Taste "
-"drücken."
+"Zum Zentrieren der Ansicht auf das ausgewählte Objekt, drücke :kbd:`F`."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
-msgstr ""
+msgstr "Ansicht-Menü"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:169
 msgid ""
@@ -337,7 +369,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid "Lights"
-msgstr ""
+msgstr "Lichter"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:225
 msgid ""

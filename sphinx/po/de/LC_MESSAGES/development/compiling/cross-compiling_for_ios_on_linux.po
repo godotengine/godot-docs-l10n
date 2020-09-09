@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:4
 msgid "Cross-compiling for iOS on Linux"
-msgstr ""
+msgstr "Cross-Compiling für iOS unter Linux"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:8
 msgid ""
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:13
 msgid "Disclaimer"
-msgstr ""
+msgstr "Haftungsausschluss"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:15
 msgid ""
@@ -94,35 +94,35 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:50
 msgid "Configuring the environment"
-msgstr ""
+msgstr "Umgebung konfigurieren"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:53
 msgid "darling-dmg"
-msgstr ""
+msgstr "darling-dmg"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:55
 msgid "Clone the repository on your machine:"
-msgstr ""
+msgstr "Klonen Sie das Repository auf Ihrem Computer:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:61
 msgid "Build it:"
-msgstr ""
+msgstr "Baue es:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:73
 msgid "Preparing the SDK"
-msgstr ""
+msgstr "SDK vorbereiten"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:75
 msgid "Mount the XCode image:"
-msgstr ""
+msgstr "Einbinden des XCode image:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:84
 msgid "Extract the iOS SDK:"
-msgstr ""
+msgstr "Extrahieren des iOS SDK:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:93
 msgid "Pack the SDK:"
-msgstr ""
+msgstr "SDK packen:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:101
 msgid "Toolchain"
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:103
 msgid "Build cctools:"
-msgstr ""
+msgstr "cctools bauen:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:111
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:125
 msgid "Compiling Godot for iPhone"
-msgstr ""
+msgstr "Godot für iPhone kompilieren"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:127
 msgid ""
@@ -157,22 +157,31 @@ msgid ""
 "stay anywhere you want since you have to provide their paths to the SCons "
 "build command."
 msgstr ""
+"Sobald Sie die oben genannten Schritte ausgeführt haben, sollten Sie zwei "
+"Dinge in Ihrer Umgebung behalten: die erstellte Toolchain und das iPhoneOS "
+"SDK-Verzeichnis. Diese können überall bleiben, da Sie ihre Pfade zum SCons-"
+"Build-Befehl angeben müssen."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:132
 msgid ""
 "For the iPhone platform to be detected, you need the ``OSXCROSS_IOS`` "
 "environment variable defined to anything."
 msgstr ""
+"Damit die iPhone-Plattform erkannt werden kann, muss die Umgebungsvariable "
+"``OSXCROSS_IOS`` für alles definiert sein."
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:139
 msgid ""
 "Now you can compile for iPhone using SCons like the standard Godot way, with "
 "some additional arguments to provide the correct paths:"
 msgstr ""
+"Jetzt können Sie mit SCons für das iPhone nach dem Standard-Godot-Weg "
+"kompilieren, mit einigen zusätzlichen Argumenten, um die richtigen Pfade "
+"anzugeben:"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:148
 msgid "Producing fat binaries"
-msgstr ""
+msgstr "Fette Binärdateien produzieren"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:150
 msgid ""

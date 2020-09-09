@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:4
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:51
 msgid "Your first CanvasItem shader"
-msgstr "Ihr erster CanvasItem-Shader"
+msgstr "Dein erster CanvasItem-Shader"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:7
 msgid "Introduction"
@@ -50,7 +50,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
 msgid "Setup"
-msgstr ""
+msgstr "Aufbau"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:23
 msgid ""
@@ -58,6 +58,9 @@ msgid ""
 "objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
 "to draw all 3D objects."
 msgstr ""
+":ref:`CanvasItem <doc_canvas_item_shader>` Shader werden zum Zeichnen aller "
+"2D-Objekte in Godot verwendet, während :ref:`Spatial <doc_spatial_shader>` "
+"Shader zum Zeichnen aller 3D-Objekte verwendet werden."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:26
 msgid ""
@@ -99,6 +102,12 @@ msgid ""
 "previews the output of spatial shaders. So what you are seeing is the output "
 "of the default Spatial Shader."
 msgstr ""
+"Schauen Sie im Inspektor nach unten im Abschnitt CanvasItem, klicken Sie "
+"neben \"Material\" und wählen Sie \"Neues ShaderMaterial\". Dadurch wird "
+"eine neue Materialressource erstellt. Klicken Sie auf die erscheinende "
+"Kugel. Godot weiß derzeit nicht, ob Sie einen CanvasItem-Shader oder einen "
+"Spatial-Shader schreiben, und zeigt eine Vorschau der Ausgabe von räumlichen "
+"Shadern an. Was Sie also sehen, ist die Ausgabe des Standard Spatial-Shaders."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:47
 msgid ""
@@ -192,6 +201,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:102
 msgid "``UV`` varies between 0-1 from left-right and from top-bottom."
 msgstr ""
+"``UV`` variiert zwischen 0-1 von links nach rechts und von oben nach unten."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:115
 msgid "Using ``TEXTURE`` built-in"
@@ -268,7 +278,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:185
 msgid "Your first vertex function"
-msgstr ""
+msgstr "Ihre erste Vertex Funktion"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:187
 msgid "Now that we have a fragment function, let's write a vertex function."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,28 @@ msgstr ""
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:4
 msgid "Thread-safe APIs"
-msgstr ""
+msgstr "Thread-sichere APIs"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "Threads"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:9
 msgid ""
 "Threads are used to balance processing power across CPUs and cores. Godot "
 "supports multithreading, but not in the whole engine."
 msgstr ""
+"Threads werden verwendet, um die Verarbeitungsleistung zwischen CPUs und "
+"Kernen zu verteilen. Godot unterstützt Multithreading, jedoch nicht in der "
+"gesamten Engine."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:12
 msgid ""
 "Below is a list of ways multithreading can be used in different areas of "
 "Godot."
 msgstr ""
+"Nachfolgend finden Sie eine Liste der Möglichkeiten, wie Multithreading in "
+"verschiedenen Bereichen von Godot verwendet werden kann."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
 msgid "Global scope"
@@ -55,6 +60,9 @@ msgid ""
 "in servers and controls them from threads. Of course, it requires a bit more "
 "code, as this is used directly and not within the scene tree."
 msgstr ""
+"Dies macht sie ideal für Code, der Zig-Tausende von Instanzen auf Servern "
+"erstellt und sie über Threads steuert. Natürlich erfordert es etwas mehr "
+"Code, da dieser direkt und nicht im Szenenbaum verwendet wird."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:22
 msgid "Scene tree"
@@ -66,6 +74,10 @@ msgid ""
 "use mutexes when sending data between threads. If you want to call functions "
 "from a thread, the *call_deferred* function may be used:"
 msgstr ""
+"Die Interaktion mit dem aktiven Szenenbaum ist **NICHT** threadsicher. "
+"Stellen Sie sicher, dass Sie Mutexe verwenden, wenn Sie Daten zwischen "
+"Threads senden. Wenn Sie Funktionen von einem Thread aus aufrufen möchten, "
+"kann die Funktion *call_deferred* verwendet werden:"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:33
 msgid ""
@@ -100,6 +112,9 @@ msgid ""
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
+"In GDScript ist das Lesen und Schreiben von Elementen aus mehreren Threads "
+"in Ordnung, aber alles was die Containergröße ändert (Größe ändern, Elemente "
+"hinzufügen oder entfernen), erfordert das Sperren eines Mutex."
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:58
 msgid "Resources"

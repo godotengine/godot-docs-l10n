@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,7 +344,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:258
 msgid "The formula for dot product takes two common forms:"
-msgstr ""
+msgstr "Die Formel für das Skalarprodukt hat zwei übliche Formen:"
 
 #: ../../docs/tutorials/math/vector_math.rst:262
 msgid "and"
@@ -355,6 +355,9 @@ msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"In den meisten Fällen ist es jedoch am einfachsten, die integrierte Methode "
+"zu verwenden. Beachten Sie, dass die Reihenfolge der beiden Vektoren keine "
+"Rolle spielt:"
 
 #: ../../docs/tutorials/math/vector_math.rst:280
 msgid ""
@@ -362,16 +365,22 @@ msgid ""
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
+"Das Skalarprodukt ist am nützlichsten, wenn es mit Einheitsvektoren "
+"verwendet wird, wodurch die erste Formel auf nur ``cosθ`` reduziert wird. "
+"Dies bedeutet, dass wir das Skalarprodukt verwenden können, um etwas über "
+"den Winkel zwischen zwei Vektoren zu sagen:"
 
 #: ../../docs/tutorials/math/vector_math.rst:286
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
+"Bei Verwendung von Einheitsvektoren liegt das Ergebnis immer zwischen ``-1`` "
+"(180°) und ``1`` (0°)."
 
 #: ../../docs/tutorials/math/vector_math.rst:290
 msgid "Facing"
-msgstr ""
+msgstr "Blickrichtung"
 
 #: ../../docs/tutorials/math/vector_math.rst:292
 msgid ""
@@ -380,6 +389,10 @@ msgid ""
 "zombies ``A`` and ``B``. Assuming a zombie's field of view is **180°**, can "
 "they see the player?"
 msgstr ""
+"Wir können diese Tatsache nutzen, um festzustellen, ob ein Objekt einem "
+"anderen Objekt zugewandt ist. In der folgenden Abbildung versucht der "
+"Spieler ``P``, den Zombies ``A`` und ``B`` auszuweichen. Angenommen, das "
+"Sichtfeld eines Zombies ist **180° **, können sie den Spieler sehen?"
 
 #: ../../docs/tutorials/math/vector_math.rst:298
 msgid ""
@@ -390,6 +403,14 @@ msgid ""
 "to do this called ``direction_to``. If the angle between this vector and the "
 "facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
+"Die grünen Pfeile `fA`` und ``fB`` sind **Einheitsvektoren**, die die "
+"Blickrichtungen der Zombies darstellen, und der blaue Halbkreis "
+"repräsentiert sein Sichtfeld. Für Zombie ``A`` finden wir den "
+"Richtungsvektor ``AP``, der mit ``P - A`` auf den Spieler zeigt, und "
+"normalisieren ihn. Godot hat jedoch eine Hilfsmethode, um dies zu tun, "
+"genannt ``direction_to`` . Wenn der Winkel zwischen diesem Vektor und dem "
+"zugewandten Vektor weniger als 90 ° beträgt, kann der Zombie den Spieler "
+"sehen."
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "In code it would look like this:"
@@ -407,14 +428,19 @@ msgid ""
 "two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
+"Wie das Skalarprodukt ist das Kreuzprodukt eine Operation mit zwei Vektoren. "
+"Das Ergebnis des Kreuzprodukts ist jedoch ein Vektor mit einer Richtung, die "
+"senkrecht zu beiden ist. Ihre Größe hängt von ihrem relativen Winkel ab. "
+"Wenn zwei Vektoren parallel sind, ist das Ergebnis ihres Kreuzprodukts ein "
+"Nullvektor."
 
 #: ../../docs/tutorials/math/vector_math.rst:335
 msgid "The cross product is calculated like this:"
-msgstr ""
+msgstr "Das Kreuzprodukt wird wie folgt berechnet:"
 
 #: ../../docs/tutorials/math/vector_math.rst:354
 msgid "With Godot, you can use the built-in method:"
-msgstr ""
+msgstr "Mit Godot können Sie die integrierte Methode verwenden:"
 
 #: ../../docs/tutorials/math/vector_math.rst:365
 msgid ""
@@ -422,6 +448,9 @@ msgid ""
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
+"Im Kreuzprodukt ist die Reihenfolge wichtig. ``a.cross(b)`` liefert nicht "
+"das gleiche Ergebnis wie ``b.cross(a)``. Die resultierenden Vektoren zeigen "
+"in **entgegengesetzte** Richtungen."
 
 #: ../../docs/tutorials/math/vector_math.rst:370
 msgid "Calculating normals"
@@ -457,6 +486,12 @@ msgid ""
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
+"Im obigen Skalarproduktabschnitt haben wir gesehen, wie damit der Winkel "
+"zwischen zwei Vektoren ermittelt werden kann. In 3D reichen diese "
+"Informationen jedoch nicht aus. Wir müssen auch wissen, um welche Achse wir "
+"uns drehen müssen. Wir können dies feststellen, indem wir das Kreuzprodukt "
+"der aktuellen Blickrichtung und der Zielrichtung berechnen. Der "
+"resultierende senkrechte Vektor ist die Rotationsachse."
 
 #: ../../docs/tutorials/math/vector_math.rst:411
 msgid "More information"

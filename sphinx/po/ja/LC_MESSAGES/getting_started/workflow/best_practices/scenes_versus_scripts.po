@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,14 +279,74 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
+#, fuzzy
+msgid "Performance of Script vs PackedScene"
+msgstr "スクリプトのパフォーマンスとPackedScene"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
+msgid ""
+"One last aspect to consider when choosing scenes and scripts is execution "
+"speed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
+#, fuzzy
+msgid ""
+"As the size of objects increases, the scripts' necessary size to create and "
+"initialize them grows much larger. Creating node hierarchies demonstrates "
+"this. Each Node's logic could be several hundred lines of code in length."
+msgstr ""
+"オブジェクトのサイズが大きくなるにつれて、作成に必要なスクリプトのサイズがど"
+"んどん大きくなります。ノード階層を作成すると、これが実証されます。個々のノー"
+"ドのロジックは、長さが数百行のコードになる可能性があります。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
+#, fuzzy
+msgid ""
+"The code example below creates a new ``Node``, changes its name, assigns a "
+"script to it, sets its future parent as its owner so it gets saved to disk "
+"along with it, and finally adds it as a child of the ``Main`` node:"
+msgstr ""
+"単一の ``Node`` を子として作成する簡単な例を見てみましょう。以下のコードは、"
+"新しい ``Node`` を作成し、その名前を変更し、スクリプトをそれに割り当て、将来"
+"の親(``Main``)を所有者として設定し、それとともにディスクに保存され、最後に "
+"``Main``ノードの子として追加します:"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
+#, fuzzy
+msgid ""
+"Script code like this is much slower than engine-side C++ code. Each "
+"instruction makes a call to the scripting API which leads to many \"lookups"
+"\" on the back-end to find the logic to execute."
+msgstr ""
+"このようなスクリプト コードは、エンジン側の C++コードよりもはるかに低速です。"
+"各変更は、実行するロジックを見つけるためにバックエンドで多くの「ルックアッ"
+"プ」につながるスクリプトAPIを個別に呼び出します。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
+#, fuzzy
+msgid ""
+"Scenes help to avoid this performance issue. :ref:`PackedScene "
+"<class_PackedScene>`, the base type that scenes inherit from, defines "
+"resources that use serialized data to create objects. The engine can process "
+"scenes in batches on the back-end and provide much better performance than "
+"scripts."
+msgstr ""
+"シーンは、このパフォーマンスの問題を回避するのに役立ちます。\\ :ref:"
+"`PackedScene <class_PackedScene>` は、シーンが継承する基本型であり、シリアル"
+"化されたデータを使用してオブジェクトを作成するリソースです。エンジンは、バッ"
+"クエンドでシーンをバッチ処理し、スクリプトよりもはるかに優れたパフォーマンス"
+"を提供できます。"
+
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"
 msgstr "結論"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:207
 msgid "In the end, the best approach is to consider the following:"
 msgstr "最後に、最善のアプローチは次のことを考慮することです。"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:209
 msgid ""
 "If one wishes to create a basic tool that is going to be re-used in several "
 "different projects and which people of all skill levels will likely use "
@@ -299,7 +359,7 @@ msgstr ""
 "ツールを作成したい場合、それは良い機会であり、おそらくスクリプトで作成する必"
 "要があります。また、カスタム名/アイコンが付いたものでなければなりません。"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:160
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:214
 msgid ""
 "If one wishes to create a concept that is particular to their game, then it "
 "should always be a scene. Scenes are easier to track/edit and provide more "
@@ -309,7 +369,7 @@ msgstr ""
 "ります。シーンは追跡/編集が容易で、スクリプトよりもセキュリティが強化されま"
 "す。"
 
-#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:164
+#: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:218
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "

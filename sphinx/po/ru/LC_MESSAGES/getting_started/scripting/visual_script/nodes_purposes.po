@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,6 @@ msgstr ""
 "вызова:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-#, fuzzy
 msgid "Adding nodes"
 msgstr "Создание узлов"
 
@@ -209,7 +208,6 @@ msgid "Accessing scene nodes"
 msgstr "Доступ к узлам сцены"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
-#, fuzzy
 msgid ""
 "One of the most common tasks is accessing Scene Tree Nodes (again, not to "
 "mistake with *Visual Script Nodes*). Dragging from the Scene Tree and "
@@ -218,8 +216,8 @@ msgid ""
 msgstr ""
 "Одной из наиболее распространенных задач является доступ к узлам дерева сцен "
 "(опять же, не путать с *Visual Script Nodes* (\"Узлами Визуального Скрипта"
-"\")). Перетаскивание узла из дерева сцен на канву приведет к просьбе "
-"*вызвать метод* (иногда называемый *функцией-членом*) в этом узле."
+"\")). Перетаскивание узла из дерева сцен на канву попросит вас *вызвать "
+"метод* (иногда называемый *функцией-членом*) в этом узле."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
 msgid ""
@@ -236,7 +234,6 @@ msgstr ""
 "осуществляется с помощью метода *queue_free*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
-#, fuzzy
 msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
@@ -271,13 +268,13 @@ msgstr ""
 "записи в *Data Port* (\"Порт данных\")."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
-#, fuzzy
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "Если вместо этого требуется чтение этого значения, перетащите узел еще раз, "
-"но удерживайте клавишу *Control* (или Command на Mac). Это создаст геттер:"
+"но удерживайте клавишу `Ctrl` (или :kbd: `Cmd` на macOS). Это создаст "
+"\"производитель\"(\"getter\"):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
@@ -327,19 +324,18 @@ msgstr ""
 "других сценариев с помощью метода, описанного в предыдущем шаге."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
-#, fuzzy
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
-"Чтобы использовать переменную в скрипте, просто перетащите ее на "
-"холст(canvas), чтобы создать геттер:"
+"Чтобы использовать переменную в скрипте, просто перетащите ее на канву, "
+"чтобы создать геттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-#, fuzzy
 msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr ""
-"Аналогично, удерживайте *Control* (*Command* на Mac), чтобы получился сеттер:"
+"Аналогично, удерживайте `Ctrl` (или :kbd: `Cmd` на macOS), чтобы получился "
+"сеттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -400,14 +396,14 @@ msgstr ""
 "существует список всех доступных типов узлов:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
-#, fuzzy
 msgid ""
 "Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
 "the list."
-msgstr "Ctrl-F (Command-F на Mac) позволит осуществить поиск в списке."
+msgstr ""
+"Нажатие :kbd: `Ctrl + F` ( или :kbd: `Cmd + F` на macOS) позволит "
+"осуществить поиск в списке."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
-#, fuzzy
 msgid ""
 "Any of them can be dragged to the scene. Unlike nodes (e.g. dragging a "
 "property from the Inspector sets the context to the node being edited "
@@ -516,12 +512,10 @@ msgstr ""
 "«move_right» (переместить_вправо)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
-#, fuzzy
 msgid "Engine Singleton"
 msgstr "Синглтон движка"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
-#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
 "without a reference; unlike Scene Nodes, they are always available). They "
@@ -531,10 +525,10 @@ msgstr ""
 "Синглтоны это глобальные интерфейсы (т.е. к ним можно получить доступ без "
 "использования ссылок; кроме Scene Nodes (Узлов Сцены) - к ним всегда "
 "необходимо обращаться по ссылке). Синглтоны выполняют разные задачи, но "
-"наибольшую пользу они приносят при низкоуровневой или нативной разработке."
+"наибольшую пользу они приносят при низкоуровневой или нативной для ОС "
+"разработке."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
-#, fuzzy
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
@@ -560,7 +554,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
-"a sequenced getter (setting requires a sequence port)."
+"a sequenced setter (setting requires a sequence port)."
 msgstr ""
 "Как видно выше, доступны два узла: простой геттер и секвенированный геттер "
 "(для настройки требуется последовательный порт)."
@@ -584,7 +578,6 @@ msgid "Self"
 msgstr "Субъект"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
-#, fuzzy
 msgid ""
 "In some rare occasions, it may be desired to pass this Scene Node as "
 "argument. It can be used to call functions and set/get properties, or drag "
@@ -594,14 +587,13 @@ msgstr ""
 "В некоторых редких случаях может быть желательно передать этот Узел Сцены в "
 "качестве аргумента. Это может использоваться для вызова функций и установки/"
 "получения свойств, или перетаскивания узлов (или события самого узла, у "
-"которого есть сценарий) из дерева сцен на холст для этого."
+"которого есть сценарий) из дерева сцен на канву для этого."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
 msgstr "Дерево сцены"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -628,7 +620,6 @@ msgid "Preload"
 msgstr "Предварительная загрузка"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
-#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
@@ -637,7 +628,7 @@ msgstr ""
 "Это выполняет ту же функцию, что и preload() в GDScript. Он поддерживает "
 "этот ресурс загруженным и готовым к использованию. Вместо создания "
 "экземпляра узла проще перетащить нужный ресурс из дока файловой системы на "
-"холст."
+"канву."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -672,31 +663,30 @@ msgid "Flow Control"
 msgstr "Управление потоком"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
-#, fuzzy
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
-"Узлы контроля потоков позволяют разделять выполнение кода, обычно зависящего "
-"от выполнения каких-либо условий."
+"Узлы контроля потоков позволяют разделение выполнения кода на различные "
+"ветви, обычно зависящее от выполнения каких-либо условий."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
 msgstr "Условие"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
 "the \"true\" sequence port. If ``false``, the second. After going for either "
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
-"Это простой узел, который проверяет порт bool. Если условие выполняется "
-"(истина), он будет проходить через «истинный» (первый) последовательный "
-"порт. В противном случае - через второй. После перехода к любому из них он "
-"проходит через «done» (работающий) порт. Оставлять последовательные порты "
-"отключенными - это нормально, если не все из них используются."
+"Это простой узел, который проверяет булевый (bool) порт. Если условие "
+"``выполняется (истина)``, он будет проходить через «истинный» (первый) "
+"последовательный порт. ``В противном случае`` - через второй. После перехода "
+"к любому из них он проходит через «done» (работающий) порт. Оставлять "
+"последовательные порты отключенными - это нормально, если не все из них "
+"используются."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -713,7 +703,6 @@ msgstr ""
 "такого типа состоит."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
-#, fuzzy
 msgid ""
 "The Iterator node goes through all elements and, for each of them, it goes "
 "via the \"each\" sequence port, making the element available in the \"elem\" "
@@ -732,14 +721,13 @@ msgid "Return"
 msgstr "Возвращение"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
-#, fuzzy
 msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
 "Некоторые функции могут возвращать значения. В общем случае для виртуальных "
-"функций Godot будет добавлять для вас узел Возврат. Узел Возврат "
-"принудительно завершает функцию."
+"функций Godot будет добавлять для вас узел Возврата (Return). Узел Возврата "
+"(Return) принудительно завершает функцию."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
@@ -768,7 +756,6 @@ msgstr ""
 "можете даже перетащить вывод объекта, чтобы получить полное завершение."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
-#, fuzzy
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
@@ -818,23 +805,22 @@ msgid "Built-In"
 msgstr "Встроенный"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from :ref:`GDScript<class_@GDScript>`. Most of them are mathematical "
 "functions, but others can be useful helpers. Make sure to take a look at the "
 "list at some point."
 msgstr ""
-"Существует целый ряд встроенных вспомогательных функций. Они полностью "
-"идентичны тем, что используются в GDScript. Большинство из них представляют "
-"из себя математические функции. Обязательно взгляните на них."
+"Существует целый ряд встроенных вспомогательных функций. Они почти идентичны "
+"тем, что используются в :ref:`GDScript<class_@GDScript>`. Большинство из них "
+"представляют из себя математические функции, но другие могут быть полезными "
+"помощниками. Обязательно взгляните на них когда-нибудь."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
 msgstr "По типу"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
-#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -1009,15 +995,14 @@ msgid "Access local variables or properties:"
 msgstr "Доступ к локальным переменным или свойствам:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
-#, fuzzy
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
 "such as ``sin()``, ``cos()``, ``print()``, as well as constructors, such as "
 "``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
-"Используйте большинство существующих встроенных функций, доступных для "
-"GDScript, таких как sin (), cos (), print (), а также конструкторы, такие "
-"как Vector3(x, y, z), Rect2(..) , и так далее.:"
+"Используйте множество встроенных функций, доступных для GDScript, таких как "
+"``sin()``, ``cos()``, ``print()``, а также конструкторы, такие как "
+"``Vector3(x, y, z)``, ``Rect2(...)`` , и так далее:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"

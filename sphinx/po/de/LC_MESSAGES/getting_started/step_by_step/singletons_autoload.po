@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "Singletons (Entwurfsmuster/Einzelstück) - (AutoLoad)"
+msgstr "Singletons (Entwurfsmuster) - AutoLoad"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -66,7 +66,6 @@ msgstr ""
 "aus und kann die Anwendung verlangsamen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -86,29 +85,25 @@ msgstr ""
 "instanziieren die:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
 msgstr ""
-"Werden immer geladen, unabhängig davon welche Szene gerade abgespielt wird"
+"immer geladen werden, unabhängig davon welche Szene gerade abgespielt wird."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "Können globale Variablen, wie z.B. Spielerinformationen abspeichern"
+msgstr "Globale Variablen abspeichern können, wie z.B. Spielerinformationen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "Zum umschalten von Szenen und wechseln zwischen Szenen"
+msgstr "Zum umschalten von Szenen und wechseln zwischen Szenen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
 "verhält sich wie ein Singleton, da GDScript keine globalen Variablen "
-"unterstützt"
+"unterstützt."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -121,6 +116,9 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot macht ein AutoLoad nicht zu einem \"echten\" Singleton gemäß dem "
+"Singleton-Entwurfsmuster. Falls gewünscht, kann es vom Benutzer immer noch "
+"mehrmals instanziiert werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -131,28 +129,27 @@ msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
 msgstr ""
+"Sie können ein AutoLoad erstellen, um eine Szene oder ein Skript zu laden, "
+"das von :ref:`class_Node` erbt."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-"Du kannst AutoLoad verwenden um eine Szene oder ein Skript zu laden dieses "
-"von :ref:`Node <class_Node>` vererbt wurde. Notiz: Bei des Autoloadens des "
-"Skripts wird ein Node erstellt und ein Skript wird daran angehängt. Dieses "
-"Node wird zum 'Root-Viewport' hinzugefügt und zwar noch bevor andere Szenen "
-"geladen werden."
+"Beim automatischen Laden eines Skripts wird ein :ref:'class_Node' erstellt "
+"und das Skript daran angefügt. Dieses Node wird dem Stammansichtsfenster "
+"hinzugefügt, bevor weitere Szenen geladen werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"Um eine Szene oder ein Skript zu autoloaden, wähle ``Projekt -> "
-"Projekteinstellungen``aus dem Menü und wechsle auf den \"AutoLoad\"-Reiter."
+"Um eine Szene oder ein Skript zu autoloaden, wähle **Projekt > "
+"Projekteinstellungen** aus dem Menü aus und wechsle auf den **AutoLoad**-"
+"Reiter."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
@@ -175,13 +172,13 @@ msgstr ""
 "zugreifen kann mit:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"Falls die \"Aktiviert\" Spalte angehakt ist (Standardmäßig ``wahr``), dann "
-"kann das Singleton direkt angesprochen werden:"
+"Wenn die Spalte **Enable** markiert ist (was die Voreinstellung ist), dann "
+"kann auf das Singleton direkt zugegriffen werden, ohne dass ``get_node()`` "
+"erforderlich ist:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -199,7 +196,6 @@ msgid "Custom scene switcher"
 msgstr "Szenenwechsler"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -207,11 +203,12 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
-"Diese Anleitung zeigt wie man einen Szenenwechler mittels AutoLoad baut. Für "
-"grundlegende Szenenwechsler kann man :ref:`SceneTree.change_scene() "
-"<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree`für "
-"Details) nutzen. Falls ein komplexeres Verhalten beim Szenenwechsel benötigt "
-"wird, bietet diese Methode mehr Flexibilität."
+"Diese Anleitung zeigt das Erstellen eines Szenenumschalters mithilfe von "
+"Autoloads. Für das grundlegende Wechseln der Szene kann man die Methode :ref:"
+"`SceneTree.change_scene() <class_SceneTree_method_change_scene>` verwenden "
+"(siehe :ref:`doc_scene_tree` for mehr Details). Wenn du jedoch beim Ändern "
+"von Szenen ein komplexeres Verhalten benötigen, bietet diese Methode mehr "
+"Funktionen."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
@@ -237,16 +234,14 @@ msgid "Global.gd"
 msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"Wechsle zum \"Skript\"-Reiter und erstelle ein neues Skript genannt Global."
-"gd. Stelle sicher dass es sich von ``Node`` ableitet:"
+"Wechsel zum **Script** Reiter und erstelle ein neues Skript namens ``Global."
+"gd``. Stelle sicher, dass es von ``Node`` erbt:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
@@ -254,10 +249,10 @@ msgid ""
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 "Der nächste Schritt ist, dieses Skript zur Autoloader-Liste hinzuzufügen. "
-"Öffne die ``Projekt > Projekteinstellungen`` aus dem Menü, wechsle zum "
-"\"AutoLoad\"-Reiter und wähle das Skript aus durch das klicken des \"Suchen"
+"Öffne **Projekt > Projekteinstellungen** aus dem Menü, wechsle zum "
+"**AutoLoad**-Reiter und wähle das Skript aus durch das Klicken des \"Suchen"
 "\"-Knopfes, oder gebe den folgenden Pfad ein: ``res://Global.gd``. Drücke "
-"\"Hinzufügen\" um es der AutoLoader-Liste beizufügen:"
+"**Hinzufügen** um es der AutoLoader-Liste beizufügen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -268,18 +263,17 @@ msgstr ""
 "werden."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
 "``Global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
-"Zurück zum Skript, es muss sich die aktuelle Szene aus der `_ready()` "
-"Funktion holen. Sowohl die aktuelle Szene (die mit dem Button) und ``global."
-"gd`` sind Unterobjekte des Stammverzeichnisses, aber automatisch geladene "
-"Nodes kommen immer zuerst. Das bedeutet, dass das letzte Unterobjekt des "
-"Stammverzeichnisses immer die geladene Szene ist."
+"Um zum Skript zurückzukehren, muss es die aktuelle Szene in der Funktion "
+"`_ready()` abrufen. Sowohl die aktuelle Szene (die mit der Schaltfläche) als "
+"auch ``Global.gd`` sind Kinder von root, aber automatisch geladene Nodes "
+"sind immer zuerst. Das bedeutet, dass das letzte Kind von root immer die "
+"geladene Szene ist."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""
@@ -323,7 +317,6 @@ msgstr ""
 "her springen kannst durch die Betätigung des Knopfes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
@@ -333,7 +326,7 @@ msgstr ""
 "Beachte: Wenn Szenen kurz sind, ist der Wechsel unverzüglich. Bei "
 "komplexeren Szenen, gibt es möglicherweise einen merkbaren Zeitverzug bis "
 "zum erscheinen. Wie dies gehandhabt wird ist nachfolgend erklärt: :ref:"
-"`doc_background_loading`"
+"`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -343,3 +336,8 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"Wenn die Ladezeit relativ kurz ist (weniger als 3 Sekunden oder so), können "
+"Sie alternativ eine \"Ladeplakette\" anzeigen, indem Sie kurz vor dem Ändern "
+"der Szene eine Art 2D-Element anzeigen. Sie können es dann direkt nach dem "
+"Ändern der Szene ausblenden. Dies kann verwendet werden, um dem Spieler "
+"anzuzeigen, dass eine Szene geladen wird."

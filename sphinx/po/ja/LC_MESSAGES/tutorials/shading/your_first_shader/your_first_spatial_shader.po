@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -367,15 +367,19 @@ msgid "Once you set it up and should look like this."
 msgstr "設定すると、次のようになります。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:170
+#, fuzzy
 msgid ""
 "Now, access the noise texture using the ``texture()`` function. "
 "``texture()`` takes a texture as the first argument and a ``vec2`` for the "
 "position on the texture as the second argument. We use the ``x`` and ``z`` "
-"channels of ``VERTEX`` to determine where on the texture to look up. "
-"``texture()`` returns a ``vec4`` of the ``r, g, b, a`` channels at the "
-"position. Since the noise texture is grayscale, all of the values are the "
-"same, so we can use any one of the channels as the height. In this case "
-"we'll use the ``r``, or ``x`` channel."
+"channels of ``VERTEX`` to determine where on the texture to look up. Note "
+"that the PlaneMesh coordinates are within the [-1,1] range (for a size of "
+"2), while the texture coordinates are within [0,1], so to normalize we "
+"divide by the size of the PlaneMesh 2.0 and add 0.5. ``texture()`` returns a "
+"``vec4`` of the ``r, g, b, a`` channels at the position. Since the noise "
+"texture is grayscale, all of the values are the same, so we can use any one "
+"of the channels as the height. In this case we'll use the ``r``, or ``x`` "
+"channel."
 msgstr ""
 "次に、 ``texture()`` 関数を使用してノイズテクスチャにアクセスします。\\ "
 "``texture()`` は最初の引数としてテクスチャーを取り、2番目の引数としてテクス"
@@ -386,7 +390,7 @@ msgstr ""
 "を高さとして使用できます。この場合、\\ ``r`` または ``x`` チャンネルを使用し"
 "ます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:181
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:183
 msgid ""
 "Note: ``xyzw`` is the same as ``rgba`` in GLSL, so instead of ``texture()."
 "x`` above, we could use ``texture().r``. See the `OpenGL documentation "
@@ -398,13 +402,13 @@ msgstr ""
 "<https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)#Vectors>`_ を参照してく"
 "ださい。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:184
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:186
 msgid "Using this code you can see the texture creates random looking hills."
 msgstr ""
 "このコードを使用すると、テクスチャがランダムに見える丘を作成することがわかり"
 "ます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:188
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:190
 #, fuzzy
 msgid ""
 "Right now it is too spiky, we want to soften the hills a bit. To do that, we "
@@ -415,11 +419,11 @@ msgstr ""
 "用します。既に上記のユニフォームを使用してノイズテクスチャを渡しました。次"
 "に、それらがどのように機能するかを学びましょう。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:192
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
 msgid "Uniforms"
 msgstr "Uniform(ユニフォーム)"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:196
 msgid ""
 "Uniform variables allow you to pass data from the game into the shader. They "
 "are very useful for controlling shader effects. Uniforms can be almost any "
@@ -431,11 +435,11 @@ msgstr ""
 "きるほぼすべてのデータ型です。Uniformを使用するには、キーワード ``uniform`` "
 "を使用して :ref:`Shader <class_Shader>` で宣言します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:199
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:201
 msgid "Let's make a uniform that changes the height of the terrain."
 msgstr "地形の高さを変えるユニフォームを作りましょう。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:206
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:208
 msgid ""
 "Godot lets you initialize a uniform with a value; here, ``height_scale`` is "
 "set to ``0.5``. You can set uniforms from GDScript by calling the function "
@@ -449,7 +453,7 @@ msgstr ""
 "GDScriptから渡される値は、シェーダーで初期化するために使用される値よりも優先"
 "されます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:216
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:218
 #, fuzzy
 msgid ""
 "Changing uniforms in Spatial-based nodes is different from CanvasItem-based "
@@ -464,7 +468,7 @@ msgstr ""
 "要があります。 MeshInstanceで ``get_surface_material()`` または "
 "``material_override`` を使用してマテリアルにアクセスします。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:222
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:224
 msgid ""
 "Remember that the string passed into ``set_shader_param()`` must match the "
 "name of the uniform variable in the :ref:`Shader<class_Shader>`. You can use "
@@ -477,11 +481,11 @@ msgstr ""
 "`Shader <class_Shader>` 内のどこでもUniform変数を使用できます。ここでは、"
 "``0.5`` を任意に乗算する代わりに、これを使用して高さの値を設定します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:231
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:233
 msgid "Now it looks  much better."
 msgstr "今ではずっと良く見えます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:235
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:237
 msgid ""
 "Using uniforms, we can even change the value every frame to animate the "
 "height of the terrain. Combined with :ref:`Tweens <class_Tween>`, this can "
@@ -491,11 +495,11 @@ msgstr ""
 "することもできます。\\ :ref:`Tween <class_Tween>` と組み合わせると、単純なア"
 "ニメーションに特に役立ちます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:239
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:241
 msgid "Interacting with light"
 msgstr "ライトとの相互作用"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:241
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:243
 msgid ""
 "First, turn wireframe off. To do so, click in the upper-left of the Viewport "
 "again, where it says \"Perspective\", and select \"Display Normal\"."
@@ -503,7 +507,7 @@ msgstr ""
 "まず、ワイヤーフレームをオフにします。これを行うには、ビューポートの左上にあ"
 "る[透視投影]と表示された場所をもう一度クリックし、[通常表示]を選択します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:246
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:248
 msgid ""
 "Note how the mesh color goes flat. This is because the lighting on it is "
 "flat. Let's add a light!"
@@ -511,13 +515,13 @@ msgstr ""
 "メッシュの色が平坦になることに注意してください。これは、照明が平坦だからで"
 "す。ライトを追加しましょう！"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:248
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:250
 msgid "First, we will add an :ref:`OmniLight<class_OmniLight>` to the scene."
 msgstr ""
 "最初に、シーンに :ref:`OmniLight <class_OmniLight>` を追加します。(訳注: 追加"
 "後に少し上に持ち上げると説明画像と同じようになります)。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:252
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:254
 msgid ""
 "You can see the light affecting the terrain, but it looks odd. The problem "
 "is the light is affecting the terrain as if it were a flat plane. This is "
@@ -528,7 +532,7 @@ msgstr ""
 "イトが平面であるかのように地形に影響していることです。これは、ライトシェー"
 "ダーが :ref:`Mesh <class_mesh>` の法線を使用してライトを計算するためです。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:256
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:258
 msgid ""
 "The normals are stored in the Mesh, but we are changing the shape of the "
 "Mesh in the shader, so the normals are no longer correct. To fix this, we "
@@ -540,7 +544,7 @@ msgstr ""
 "か、ノイズに対応する法線テクスチャを使用します。 Godotは両方を簡単におこなえ"
 "ます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:260
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:262
 msgid ""
 "You can calculate the new normal manually in the vertex function and then "
 "just set ``NORMAL``. With ``NORMAL`` set, Godot will do all the difficult "
@@ -552,7 +556,7 @@ msgstr ""
 "法については、このチュートリアルの次の部分で説明しますが、今はテクスチャから"
 "法線を読み取ります。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:264
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:266
 msgid ""
 "Instead we will rely on the NoiseTexture again to calculate normals for us. "
 "We do that by passing in a second noise texture."
@@ -560,7 +564,7 @@ msgstr ""
 "その代わりに、再びNoiseTextureを利用して法線を計算します。これを行うために、2"
 "番目のノイズテクスチャで値を渡します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:271
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:273
 msgid ""
 "Set this second uniform texture to another NoiseTexture with another "
 "OpenSimplexNoise. But this time, check off \"As Normalmap\"."
@@ -569,7 +573,7 @@ msgstr ""
 "NoiseTextureに設定します。ただし、今回は[As Normalmap]をチェックしてくださ"
 "い。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:276
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:278
 msgid ""
 "Now, because this is a normalmap and not a per-vertex normal, we are going "
 "to assign it in the ``fragment()`` function. The ``fragment()`` function "
@@ -579,7 +583,7 @@ msgstr ""
 "割り当てます。\\ ``fragment()`` 関数については、このチュートリアルの次のパー"
 "トで詳しく説明します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:284
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:286
 msgid ""
 "When we have normals that correspond to a specific vertex we set ``NORMAL``, "
 "but if you have a normalmap that comes from a texture, set the normal using "
@@ -590,7 +594,7 @@ msgstr ""
 "からの法線マップがある場合は、\\ ``NORMALMAP`` を使用して法線を設定します。こ"
 "の方法で、Godotはメッシュの周りのテクスチャのラッピングを自動的に処理します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:288
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:290
 msgid ""
 "Lastly, in order to ensure that we are reading from the same places on the "
 "noise texture and the normalmap texture, we are going to pass the ``VERTEX."
@@ -601,34 +605,35 @@ msgstr ""
 "めに、\\ ``vertex()`` 関数から ``fragment()`` 関数に ``VERTEX.xz``の位置を渡"
 "します。varyingを使ってそれを行います。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:292
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:294
+#, fuzzy
 msgid ""
-"Above the ``vertex()`` define a ``vec2`` called ``vertex_position``. And "
-"inside the ``vertex()`` function assign ``VERTEX.xz`` to ``vertex_position``."
+"Above the ``vertex()`` define a ``vec2`` called ``tex_position``. And inside "
+"the ``vertex()`` function assign ``VERTEX.xz`` to ``tex_position``."
 msgstr ""
 "``vertex()`` の上に ``vertex_position`` と呼ばれる ``vec2`` を定義します。そ"
 "して、\\ ``vertex()`` 関数内で ``VERTEX.xz`` を ``vertex_position`` に割り当"
 "てます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:304
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:308
 msgid ""
 "And now we can access ``vertex_position`` from the ``fragment()`` function."
 msgstr ""
 "そして、\\ ``fragment()`` 関数から ``vertex_position`` にアクセスできるように"
 "なりました。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:312
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
 msgid ""
 "With the normals in place the light now reacts to the height of the mesh "
 "dynamically."
 msgstr "法線を設定すると、ライトはメッシュの高さに動的に反応します。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:320
 msgid ""
 "We can even drag the light around and the lighting will update automatically."
 msgstr "ライトをドラッグすることもでき、照明の状態が自動的に更新されます。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:320
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:324
 msgid ""
 "Here is the full code for this tutorial. You can see it is not very long as "
 "Godot handles most of the difficult stuff for you."
@@ -636,7 +641,7 @@ msgstr ""
 "このチュートリアルの完全なコードは次のとおりです。 Godotが面倒な部分のほとん"
 "どを処理するので、それほど長くないことがわかります。"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:343
+#: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:347
 msgid ""
 "That is everything for this part. Hopefully, you now understand the basics "
 "of vertex shaders in Godot. In the next part of this tutorial we will write "

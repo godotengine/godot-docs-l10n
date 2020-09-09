@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Скелет"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "Начальная позиция Скелета"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
@@ -40,6 +40,10 @@ msgid ""
 "Blender, so that the exported bone transform be consistent between Blender "
 "and Godot"
 msgstr ""
+"Три флажка :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:`Local "
+"Location` (окрашены красным) должны быть отмечены при построении арматуры в "
+"Blender, чтобы экспортируемое преобразование кости было согласованным между "
+"Blender и Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:18
 msgid ""
@@ -47,10 +51,12 @@ msgid ""
 "Blender. Make sure that the skeleton is reset to its T-pose or default rest "
 "pose."
 msgstr ""
+"Важно, чтобы сетка не деформировалась костями при экспорте в Blender. "
+"Убедитесь, что скелет сброшен в Т-образную позу или позу покоя по умолчанию."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:22
 msgid "Bone Weights"
-msgstr ""
+msgstr "Вес костей"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:24
 msgid ""
@@ -59,10 +65,14 @@ msgid ""
 "the mesh deformed. Therefore, the exporter would raise an error for any "
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
+"Blender поместил обработанные вершины меша, у которых нет веса костей, в его "
+"исходное положение, но эти вершины будут помещены в (0, 0, 0) в Godot, "
+"деформируя меш. Следовательно, экспортер вызовет ошибку для любой вершины, в "
+"которой вес костей не обнаружен в оснащенной сетке."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:30
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "Не деформируемая кость"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:32
 msgid ""
@@ -70,13 +80,19 @@ msgid ""
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
 "picture."
 msgstr ""
+"Обратите внимание, что недеформированную кость можно настроить как "
+"неэкспортируемую, включив :code:`Exclude Control Bones`; флажок "
+"деформирования кости показан на рисунке."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:38
+#, fuzzy
 msgid "Bone Attachment"
-msgstr ""
+msgstr "Присоединение кости"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:39
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "
 "as a BoneAttachment node in the Godot scene."
 msgstr ""
+"Кость может быть родительским элементом объекта в Blender; это отношение "
+"экспортируется как узел BoneAttachment в сцене Godot."

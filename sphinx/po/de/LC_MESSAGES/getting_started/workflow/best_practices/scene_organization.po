@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,22 +193,24 @@ msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
 "OOP principles. Examples include..."
 msgstr ""
+"Skripte und Szenen als Erweiterungen von Engine-Klassen sollten *allen* OOP-"
+"Prinzipien entsprechen. Beispiele beinhalten..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
-msgstr ""
+msgstr "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
-msgstr ""
+msgstr "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
-msgstr ""
+msgstr "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:249
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
-msgstr ""
+msgstr "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
 msgid "Choosing a node tree structure"
@@ -237,13 +239,15 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Node \"Main\" (main.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:269
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
 "game."
 msgstr ""
+"Das ``main.gd`` Skript würde dann als primärer Controller des eigenen Spiels "
+"dienen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:272
 msgid ""
@@ -254,11 +258,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:277
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial \"World\" (game_world.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Control \"GUI\" (gui.gd)"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:280
 msgid ""
@@ -272,24 +276,28 @@ msgid ""
 "The next step is to consider what gameplay systems one's project requires. "
 "If one has a system that..."
 msgstr ""
+"Der nächste Schritt besteht darin zu überlegen, welche Gameplay-Systeme für "
+"ein Projekt erforderlich sind. Wenn man ein System hat, das ..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:287
 msgid "tracks all of its data internally"
-msgstr ""
+msgstr "alle seine Daten intern verfolgt"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:288
 msgid "should be globally accessible"
-msgstr ""
+msgstr "global zugänglich sein sollte"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:289
 msgid "should exist in isolation"
-msgstr ""
+msgstr "isoliert existieren sollte"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:291
 msgid ""
 "... then one should create an :ref:`autoload 'singleton' node "
 "<doc_singletons_autoload>`."
 msgstr ""
+"... dann sollte man einen :ref:`autoload 'singleton' Node "
+"<doc_singletons_autoload>` erstellen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:295
 msgid ""
@@ -340,12 +348,16 @@ msgstr ""
 msgid ""
 "A reliable third party, likely a parent node, to mediate the assignment."
 msgstr ""
+"Ein zuverlässiger Drittanbieter, wahrscheinlich ein übergeordneter Node, der "
+"die Zuweisung vermittelt."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:329
 msgid ""
 "A group, to easily pull a reference to the desired node (assuming there will "
 "only ever be one of the targets)."
 msgstr ""
+"Eine Gruppe um einfach einen Verweis auf den gewünschten Node zu ziehen "
+"(vorausgesetzt es wird immer nur eines der Ziele geben)."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
 msgid ""
@@ -353,29 +365,37 @@ msgid ""
 "one must micro-manage when a node must move around the SceneTree to preserve "
 "itself. For example..."
 msgstr ""
+"Wann sollte man das tun? Das ist subjektiv. Das Dilemma entsteht, wenn man "
+"sich beim bewegen eines Nodes um den SceneTree zum Selbsterhalt mit "
+"Kleinigkeiten aufhalten muss. Beispielsweise..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Add a \"player\" node to a \"room\"."
-msgstr ""
+msgstr "Fügen Sie einem \"Raum\" einen \"Spieler\"-Node hinzu."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:337
 msgid "Need to change rooms, so one must delete the current room."
 msgstr ""
+"Wenn Sie den Raum wechseln müssen, müssen Sie den aktuellen Raum löschen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:338
 msgid ""
 "Before the room can be deleted, one must preserve and/or move the player."
 msgstr ""
+"Bevor der Raum gelöscht werden kann, muss der Spieler erhalten oder bewegt "
+"werden."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:340
 msgid "Is memory a concern?"
-msgstr ""
+msgstr "Ist der Hauptspeicher ein Problem?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:342
 msgid ""
 "If not, one can just create the two rooms, move the player and delete the "
 "old one. No problem."
 msgstr ""
+"Wenn nicht kann man einfach die beiden Räume erstellen, den Spieler bewegen "
+"und den alten löschen. Kein Problem."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:345
 msgid "If so, one will need to..."
@@ -383,7 +403,7 @@ msgstr "Falls ja, muss man..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:347
 msgid "Move the player somewhere else in the tree."
-msgstr ""
+msgstr "Bewegen Sie den Spieler an eine andere Stelle im Baum."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:348
 msgid "Delete the room."
@@ -406,6 +426,13 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
+"Das Problem ist, dass der Spieler hier ein \"Sonderfall\" ist; Einer, bei "
+"dem die Entwickler *wissen* müssen, dass sie den Spieler für das Projekt so "
+"handhaben müssen. Daher besteht die einzige Möglichkeit diese Informationen "
+"als Team zuverlässig weiterzugeben darin, sie zu dokumentieren. Es ist "
+"jedoch gefährlich, Implementierungsdetails in der Dokumentation zu behalten. "
+"Dies ist eine Wartungslast, die die Lesbarkeit des Codes beeinträchtigt und "
+"den intellektuellen Inhalt eines Projekts unnötig aufbläht."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
 msgid ""

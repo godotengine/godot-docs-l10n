@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:4
 msgid "When and how to avoid using nodes for everything"
-msgstr ""
+msgstr "Wann und wie vermeidet man die Verwendung von Nodes für alles"
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:7
 msgid ""
@@ -28,6 +28,10 @@ msgid ""
 "behavior though, the larger the strain each one adds to a project's "
 "performance."
 msgstr ""
+"Nodes sind billig zu produzieren, aber selbst sie haben ihre Grenzen. Ein "
+"Projekt kann Zehntausende von Nodes haben, die alle irgendetwas tun. Je "
+"komplexer ihr Verhalten ist, desto größer ist die Belastung, da jeder "
+"einzelne zur Leistung eines Projekts beiträgt."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:12
 msgid ""
@@ -35,6 +39,9 @@ msgid ""
 "Be sure to keep these in mind as options when designing how you wish to "
 "build your project's features."
 msgstr ""
+"Godot bietet leichtere Objekte zum Erstellen von APIs, die von Nodes "
+"verwendet werden. Behalten Sie dies als Möglichkeit im Hinterkopf, wenn Sie "
+"festlegen wie Sie die Funktionen Ihres Projekts erstellen möchten."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:16
 msgid ""
@@ -84,7 +91,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:44
 msgid "**Advantages:** same as the Object."
-msgstr ""
+msgstr "**Vorteile:** die Gleichen wie das Objekt."
 
 #: ../../docs/getting_started/workflow/best_practices/node_alternatives.rst:46
 msgid ""

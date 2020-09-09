@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/soft_body.rst:4
 msgid "SoftBody"
-msgstr ""
+msgstr "weiche Körper (SoftBody)"
 
 #: ../../docs/tutorials/physics/soft_body.rst:6
 msgid ""
@@ -27,6 +27,10 @@ msgid ""
 "other physical properties of deformable objects. This can for example be "
 "used to simulate cloth or to create more realistic characters."
 msgstr ""
+"Weiche Körper (oder *Weichkörperdynamik*) simulieren Bewegungen, "
+"Formänderungen und andere physikalische Eigenschaften verformbarer Objekte. "
+"Dies kann zum Beispiel verwendet werden, um Stoff zu simulieren oder "
+"realistischere Charaktere zu erstellen."
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
 msgid "Basic set-up"
@@ -36,10 +40,14 @@ msgstr "Grundlegende Einrichtung"
 msgid ""
 "A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
 msgstr ""
+"Ein :ref:`SoftBody <class_SoftBody>` Node wird verwendet zur Simulations "
+"weicher Körper."
 
 #: ../../docs/tutorials/physics/soft_body.rst:14
 msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
 msgstr ""
+"Wir werden einen Hüpfwürfel erstellen, um die Einrichtung eines weichen "
+"Körpers zu demonstrieren."
 
 #: ../../docs/tutorials/physics/soft_body.rst:16
 msgid ""
@@ -47,12 +55,19 @@ msgid ""
 "``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
 "in the inspector and increase the subdivision of the mesh for simulation."
 msgstr ""
+"Erstellen Sie eine neue Szene mit einem ``Spatial``-Node als Wurzel. "
+"Erstellen Sie dann einen ``Softbody``-Node. Fügen Sie ein ``CubeMesh`` in "
+"die Eigenschaft ``mesh`` des Nodes im Inspektor ein und vergrößern Sie die "
+"Unterteilung des Mesh für die Simulation."
 
 #: ../../docs/tutorials/physics/soft_body.rst:20
 msgid ""
 "Set the parameters to obtain the type of soft body you aim for. Try to keep "
 "the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
 msgstr ""
+"Stellen Sie die Parameter ein, um den gewünschten weichen Körpertyp zu "
+"erhalten. Versuchen Sie, die ``Simulationsgenauigkeit`` über 5 zu halten, da "
+"sonst der weiche Körper zusammenbrechen kann."
 
 #: ../../docs/tutorials/physics/soft_body.rst:24
 msgid ""
@@ -61,6 +76,10 @@ msgid ""
 "more than 0, the softbody will fly around like a plastic bag under strong "
 "wind."
 msgstr ""
+"Gehen Sie vorsichtig mit einigen Parametern um, da gewisse Werte zu "
+"seltsamen Ergebnissen führen können. Wenn beispielsweise die Form nicht "
+"vollständig geschlossen ist und Sie den Druck auf mehr als 0 einstellen, "
+"fliegt der Softbody bei starkem Wind wie eine Plastiktüte herum."
 
 #: ../../docs/tutorials/physics/soft_body.rst:26
 msgid "Play the scene to view the simulation."
@@ -71,14 +90,17 @@ msgid ""
 "To improve the simulation's result, increase the ``Simulation Precision``, "
 "this will give significant improvement at the cost of performance."
 msgstr ""
+"Um das Simulationsergebnis zu verbessern, erhöhen Sie die "
+"``Simulationsgenauigkeit``. Dies führt zu einer signifikanten Verbesserung "
+"der Leistung."
 
 #: ../../docs/tutorials/physics/soft_body.rst:31
 msgid "Cloak simulation"
-msgstr ""
+msgstr "Umhangsimulation"
 
 #: ../../docs/tutorials/physics/soft_body.rst:33
 msgid "Let's make a cloak in the Platformer3D demo."
-msgstr ""
+msgstr "Machen wir einen Umhang in der Platformer3D Demo."
 
 #: ../../docs/tutorials/physics/soft_body.rst:35
 msgid ""

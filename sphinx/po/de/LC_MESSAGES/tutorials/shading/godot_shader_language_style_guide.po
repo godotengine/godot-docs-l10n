@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Godot shader language style guide"
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
-#, fuzzy
 msgid ""
 "This style guide lists conventions to write elegant shaders. The goal is to "
 "encourage writing clean, readable code and promote consistency across "
@@ -31,7 +30,7 @@ msgid ""
 msgstr ""
 "Dieser Style Guide listet Konventionen zum Schreiben von elegantem GDScript. "
 "Das Ziel ist, einen dazu zu ermutigen, sauberen und lesbaren Code zu "
-"schreiben und die Konsistenz aller Projekte, Diskussionen und Tutorials zu "
+"schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen zu "
 "fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
 "Formatierungswerkzeugen ankurbeln."
 
@@ -49,21 +48,26 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
+"Styleguides sind nicht als harte Regelbücher gedacht. Manchmal können Sie "
+"einige der folgenden Richtlinien möglicherweise nicht anwenden. In diesem "
+"Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie andere "
+"Entwickler nach Erkenntnissen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:20
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
 msgstr ""
+"Im Allgemeinen ist es wichtiger, Ihren Code in Ihren Projekten und in Ihrem "
+"Team konsistent zu halten, als diesem Leitfaden blind zu folgen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:23
-#, fuzzy
 msgid ""
 "Godot's built-in shader editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
-"Godot's integrierter Skripteditor verwendet standardmäßig einige dieser "
-"Konventionen."
+"Der in Godot integrierte Shader-Editor verwendet standardmäßig viele dieser "
+"Konventionen. Nutzen Sie ihn."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:26
 msgid "Here is a complete shader example based on these guidelines:"
@@ -74,40 +78,45 @@ msgid "Formatting"
 msgstr "Formatierung"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:53
-#, fuzzy
 msgid "Encoding and special characters"
-msgstr "Mit einem Signal (Seitenverhältnis) umgehen"
+msgstr "Kodierung und Sonderzeichen"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:55
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
+"Benutze Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
+"*(Standardeinstellung im Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
+"Benutze ein Line Feed am Ende jeder Datei. *(Standardeinstellung im Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
+"Verwenden Sie die **UTF-8**-Codierung ohne ein `byte order mark <https://en."
+"wikipedia.org/wiki/Byte_order_mark>`_. *(Editor Standard)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
+"Benutze **Tabs** anstelle von Leerzeichen für Einrückungen. "
+"*(Standardeinstellung im Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
 msgstr "Einrückungen"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:63
-#, fuzzy
 msgid ""
 "Each indent level should be one tab greater than the block containing it."
 msgstr ""
-"Jede Einrückungsebene sollte um eins größer sein als die des umgebenden "
+"Jede Einrückungsstufe sollte um eins größer sein als die des umgebenden "
 "Blocks."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:65
@@ -159,28 +168,26 @@ msgid "Blank lines"
 msgstr "Leere Zeilen"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
-#, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
 msgstr ""
 "Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
-"sein."
+"sein (und nur eine):"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
-#, fuzzy
 msgid ""
 "Use one (and only one) blank line inside functions to separate logical "
 "sections."
 msgstr ""
-"Verwende eine Leerzeile um logische Abschnitte innerhalb einer Funktion zu "
-"separieren."
+"Verwenden Sie eine (und nur eine) Leerzeile innerhalb von Funktionen, um "
+"logische Abschnitte zu trennen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
 msgid "Line length"
-msgstr ""
+msgstr "Zeilenlänge"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:151
 msgid "Keep individual lines of code under 100 characters."
-msgstr ""
+msgstr "Halten Sie einzelne Codezeilen unter 100 Zeichen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:153
 msgid ""
@@ -199,18 +206,20 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
-msgstr ""
+msgstr "Die einzige Ausnahme dieser Regel ist der Tenär Operator:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:189
-#, fuzzy
 msgid "Comment spacing"
-msgstr "Kommentare"
+msgstr "Leerzeichen bei Kommentaren"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:191
 msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
+"Kommentare sollten mit einem Leerzeichen beginnen, aber kein Code der "
+"auskommentiert wird (inaktiv). Dies hilft Kommentare von inaktivem Code zu "
+"unterscheiden."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
@@ -229,23 +238,22 @@ msgid "Whitespace"
 msgstr "Leerzeichen"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:223
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid "
 "extraneous spaces in function calls."
 msgstr ""
-"Setze immer ein Leerzeichen um Operatoren und nach Kommas. Vermeide "
-"zusätzliche Leerzeichen in Dictionary-Referenzen oder Funktionsaufrufen, "
-"oder um \"Spalten\" zu erzeugen."
+"Setze immer ein Leerzeichen um Operatoren und nach Kommas. Vermeide auch "
+"zusätzliche Leerzeichen in Funktionsaufrufen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
+"Benutze keine Leerzeichen um Ausdrücke vertikal auszurichten (um \"Spalten\" "
+"zu erzeugen.):"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
-#, fuzzy
 msgid "Floating-point numbers"
-msgstr "Fließkommazahl (reell)"
+msgstr "Fließkommazahlen (reell)"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:252
 msgid ""
@@ -255,9 +263,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
-#, fuzzy
 msgid "Accessing vector members"
-msgstr "Ablaufsteuerung"
+msgstr "Zugriff auf Vektorelemente"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:275
 msgid ""
@@ -272,7 +279,6 @@ msgid "Naming conventions"
 msgstr "Benennungsrichtlinien"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:295
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, leading to "
@@ -280,7 +286,7 @@ msgid ""
 msgstr ""
 "Diese Benennungsrichtlinien folgen dem Godot Engine Style. Bei "
 "Nichtbeachtung wird dein Code mit den eingebauten Bennennungsrichtlinien "
-"kollidieren, was hässlich ist."
+"kollidieren, was zu inkonsistentem Code führt."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
 msgid "Functions and variables"
@@ -303,13 +309,12 @@ msgstr ""
 "Worttrennung: ``const MAX_SPEED = 200``:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
-#, fuzzy
 msgid "Code order"
-msgstr "Ablaufsteuerung"
+msgstr "Code Reihenfolge"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
 msgid "We suggest to organize shader code this way:"
-msgstr ""
+msgstr "Wir empfehlen Shader-Code auf diese Weise aufzubauen:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:340
 msgid ""
@@ -317,10 +322,14 @@ msgid ""
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
+"Wir haben die Reihenfolge optimiert, um das Lesen des Codes von oben nach "
+"unten zu vereinfachen, Entwicklern das erste Lesen des Codes zu erleichtern "
+"und Fehler im Zusammenhang mit der Reihenfolge der Variablendeklarationen zu "
+"vermeiden."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
 msgid "This code order follows two rules of thumb:"
-msgstr ""
+msgstr "Diese Code-Reihenfolge folgt zwei Faustregeln:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:346
 msgid "Metadata and properties first, followed by methods."
@@ -342,3 +351,6 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Deklarieren Sie lokale Variablen so nah wie möglich am Platz ihrer ersten "
+"Verwendung. Dies erleichtert das Lesen des Codes, ohne zu viel scrollen zu "
+"müssen, um herauszufinden, wo die Variable deklariert wurde."

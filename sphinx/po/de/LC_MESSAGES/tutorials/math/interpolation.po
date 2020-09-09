@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,28 +27,37 @@ msgid ""
 "to become familiar with it in order to expand your horizons as a graphics "
 "developer."
 msgstr ""
+"Interpolation ist eine sehr grundlegende Operation in der "
+"Grafikprogrammierung. Es ist gut sich damit vertraut zu machen um Ihren "
+"Horizont als Grafikentwickler zu erweitern."
 
 #: ../../docs/tutorials/math/interpolation.rst:8
 msgid ""
 "The basic idea is that you want to transition from A to B. A value ``t``, "
 "represents the states in-between."
 msgstr ""
+"Die Grundidee ist, dass Sie von A nach B wechseln möchten. Ein Wert ``t`` "
+"repräsentiert die dazwischen liegenden Zustände."
 
 #: ../../docs/tutorials/math/interpolation.rst:10
 msgid ""
 "As an example if ``t`` is 0, then the state is A. If ``t`` is 1, then the "
 "state is B. Anything in-between is an *interpolation*."
 msgstr ""
+"Wenn beispielsweise ``t`` 0 ist, ist der Zustand A. Wenn ``t`` 1 ist, ist "
+"der Zustand B. Alles dazwischen ist eine * Interpolation *."
 
 #: ../../docs/tutorials/math/interpolation.rst:12
 msgid ""
 "Between two real (floating-point) numbers, a simple interpolation is usually "
 "described as:"
 msgstr ""
+"Zwischen zwei reellen (Gleitkomma-) Zahlen wird eine einfache Interpolation "
+"normalerweise beschrieben als:"
 
 #: ../../docs/tutorials/math/interpolation.rst:19
 msgid "And often simplified to:"
-msgstr ""
+msgstr "Und oft vereinfacht zu:"
 
 #: ../../docs/tutorials/math/interpolation.rst:26
 msgid ""
@@ -56,6 +65,10 @@ msgid ""
 "another at *constant speed* is *\"linear\"*. So, when you hear about *Linear "
 "Interpolation*, you know they are referring to this simple formula."
 msgstr ""
+"Der Name dieser Art der Interpolation, die mit *konstanter Geschwindigkeit* "
+"einen Wert in einen anderen umwandelt, lautet *\"linear\"*. Wenn Sie also "
+"von *Lineare Interpolation* hören, wissen Sie, dass sie sich auf diese "
+"einfache Formel beziehen."
 
 #: ../../docs/tutorials/math/interpolation.rst:28
 msgid ""
@@ -63,6 +76,9 @@ msgid ""
 "recommended read afterwards is the :ref:`Bezier <doc_beziers_and_curves>` "
 "page."
 msgstr ""
+"Es gibt andere Arten von Interpolationen, die hier nicht behandelt werden. "
+"Eine empfohlene Lektüre ist anschließend die Seite :ref:`Bezier "
+"<doc_beziers_and_curves>`."
 
 #: ../../docs/tutorials/math/interpolation.rst:31
 msgid "Vector interpolation"
@@ -89,6 +105,8 @@ msgstr ""
 msgid ""
 "Here is simple pseudo-code for going from point A to B using interpolation:"
 msgstr ""
+"Hier ist ein einfacher Pseudocode für die Strecke von Punkt A nach Punkt B "
+"mithilfe von Interpolation:"
 
 #: ../../docs/tutorials/math/interpolation.rst:48
 msgid "It will produce the following motion:"
@@ -105,11 +123,18 @@ msgid ""
 "the function :ref:`Transform.interpolate_with() "
 "<class_Transform_method_interpolate_with>` can be used."
 msgstr ""
+"Es ist auch möglich ganze Transformationen zu interpolieren (stellen Sie "
+"sicher, dass sie entweder eine einheitliche Skalierung oder mindestens "
+"dieselbe ungleichmäßige Skalierung haben). Hierzu kann die Funktion :ref:"
+"`Transform.interpolate_with () <class_Transform_method_interpolate_with>` "
+"verwendet werden."
 
 #: ../../docs/tutorials/math/interpolation.rst:58
 msgid ""
 "Here is an example of transforming a monkey from Position1 to Position2:"
 msgstr ""
+"Hier ist ein Beispiel für die Umwandlung eines Affen von Position1 in "
+"Position2:"
 
 #: ../../docs/tutorials/math/interpolation.rst:62
 msgid "Using the following pseudocode:"
@@ -117,7 +142,7 @@ msgstr "Beim Benutzen des folgenden Pseudocodes:"
 
 #: ../../docs/tutorials/math/interpolation.rst:74
 msgid "And again, it will produce the following motion:"
-msgstr ""
+msgstr "Und wieder wird die folgende Bewegung erzeugt:"
 
 #: ../../docs/tutorials/math/interpolation.rst:80
 msgid "Smoothing motion"
@@ -128,13 +153,19 @@ msgid ""
 "Interpolation can be used to smooth movement, rotation, etc. Here is an "
 "example of a circle following the mouse using smoothed motion:"
 msgstr ""
+"Interpolation kann verwendet werden um Bewegung, Drehung usw. zu glätten. "
+"Hier ist ein Beispiel für einen Kreis, der der Maus mit geglätteter Bewegung "
+"folgt:"
 
 #: ../../docs/tutorials/math/interpolation.rst:94
 msgid "Here is how it looks:"
-msgstr "Hier ist wie es aussieht:"
+msgstr "So sieht es aus:"
 
 #: ../../docs/tutorials/math/interpolation.rst:98
 msgid ""
 "This useful for smoothing camera movement, allies following you (ensuring "
 "they stay within a certain range), and many other common game patterns."
 msgstr ""
+"Dies ist nützlich für sanfte Kamerabewegungen, Ihnen folgende Verbündete (um "
+"sicherzustellen, dass sie in einem bestimmten Bereich bleiben) und viele "
+"andere gängige Spielmuster."

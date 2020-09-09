@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,21 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:4
 msgid "Containers"
-msgstr ""
+msgstr "Container"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:6
 msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
 "different aspect ratios for basic multiple resolution handling in GUIs,"
 msgstr ""
+":ref:`Anker <doc_size_and_anchors>` sind eine effiziente Möglichkeit, "
+"verschiedene Seitenverhältnisse im Umgang mit mehreren Auflösungen in GUIs "
+"zu verarbeiten."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:9
 msgid "For more complex user interfaces, they can become difficult to use."
 msgstr ""
+"Bei komplexeren Benutzeroberflächen kann die Verwendung schwierig werden."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:11
 msgid ""
@@ -181,12 +185,19 @@ msgid ""
 "`MarginContainer <class_MarginContainer>`). Padding will be added on the "
 "margins depending on the theme configuration."
 msgstr ""
+"Untergeordnete Steuerelemente werden in Richtung der Grenzen dieses "
+"Steuerelements erweitert (via :ref:`MarginContainer "
+"<class_MarginContainer>`). Abhängig von der Konfiguration des Themas wird an "
+"den Rändern eine Auffüllung hinzugefügt."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
 msgid ""
 "Again, keep in mind that the margins are a *Theme* value, so they need to be "
 "edited from the constants overrides section of each control:"
 msgstr ""
+"Beachten Sie auch hier, dass die Ränder ein *Thema*-Wert sind, sodass sie im "
+"Abschnitt zum Überschreiben von Konstanten jedes Steuerelements bearbeitet "
+"werden müssen:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
 msgid "Tab Container"

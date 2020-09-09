@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgstr ""
 "す。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
-#, fuzzy
 msgid ""
 "This article talks about older versions of Unity. Nestable prefabs ('Nested "
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
@@ -40,8 +39,8 @@ msgid ""
 msgstr ""
 "この記事では、Unityの古いバージョンについて説明します。ネスト可能なプレハブ"
 "('Nested prefabs')がUnity 2018.3に追加されました。 ネスト可能なプレハブは"
-"Godotのシーンに似ており、シーンの編成によりGodotのようなアプローチを可能にし"
-"ます。"
+"Godotのシーンに似ており、シーンの編成に、よりGodotのようなアプローチを可能に"
+"します。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
@@ -102,13 +101,12 @@ msgstr ""
 "**コンソール:** PS4、PS Vita、Xbox One、Xbox 360、Wii U、ニンテンドー3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
 "HoloLens"
 msgstr ""
-"**VR:** Oculus Rift、SteamVR、Google Cardboard、Playstation VR、Gear VR、"
-"HoloLens"
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
+"HoloLens\\"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
@@ -264,9 +262,8 @@ msgstr ""
 "索できます)。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
-#, fuzzy
 msgid "This approach has several advantages:"
-msgstr "それぞれに異なる利点があります。"
+msgstr "このアプローチにはいくつかの利点があります:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:78
 msgid ""
@@ -317,13 +314,12 @@ msgid "The scene system"
 msgstr "シーンシステム"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favorite feature of most Godot users."
 msgstr ""
 "これは、UnityとGodotの最も重要な違いであり、ほとんどのGodotユーザーのお気に入"
-"りの機能です。"
+"りの特徴です。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
@@ -416,7 +412,6 @@ msgid "**A scene for the Enemy.**"
 msgstr "**敵のシーン**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:118
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
@@ -424,15 +419,14 @@ msgid ""
 "by the AnimatedSprite node."
 msgstr ""
 "敵は、いくつかのシーンで使用したい要素でもあります。プレイヤーノードとほぼ同"
-"じですが、唯一の違いは、スクリプト(敵の行動を生成するために「AI」ルーチンが必"
-"要)と、AnimatedSpriteノードで使用されるスプライトテクスチャです。"
+"じですが、唯一の違いは、そのスクリプト (敵の行動を生成するために AI ルーチン"
+"が必要) と、AnimatedSpriteノードで使用されるスプライトテクスチャです。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:122
 msgid "**A Level scene.**"
 msgstr "**レベルシーン**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:124
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -441,11 +435,11 @@ msgid ""
 "You can set different properties for each Enemy node (to change its color, "
 "for example)."
 msgstr ""
-"レベルシーンは、レンガ(プラットフォーム用)、コイン(プレイヤーが収集するた"
-"め)、および敵シーンのいくつかのインスタンスで構成されます。各インスタンスは、"
-"レベルシーンツリーのノードです。これらのインスタンスは別々の敵であり、最初は"
-"敵のシーンで定義されている動作と外観を共有しています。敵のノードごとに異なる"
-"プロパティを設定できます(たとえば、個々の色を変更するため)。"
+"Levelシーンは、レンガ(プラットフォーム用)、コイン(プレイヤーが収集するため)、"
+"およびいくつかの敵シーンのインスタンスから構成されます。各インスタンスは、"
+"Levelシーンツリー内のノードです。これらのインスタンスは別々の敵であり、初期状"
+"態では敵シーンで定義された動作と外観を共有しています。敵のノードごとに、異な"
+"るプロパティを設定できます (たとえば、個々の色を変更するなど)。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
 msgid ""
@@ -653,17 +647,16 @@ msgstr ""
 "ログラマなら 1 晩から 1 週間で習得出来ます。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:204
-#, fuzzy
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behavior to the GameObject: For example, you can attach a "
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
-"Unityでは、必要な数のスクリプトをGameObjectに添付できます。各スクリプトは、ビ"
-"ヘイビアーをGameObjectに追加します。たとえば、プレイヤーのコントロールに反応"
-"するようにスクリプトを添付し、特定のゲームロジックを制御するスクリプトを追加"
-"できます。"
+"Unityでは、GameObjectにスクリプトをいくつでもアタッチできます。各スクリプト"
+"は、1個のビヘイビアーをGameObjectに追加します。たとえば、プレイヤーのコント"
+"ロールに反応するためのスクリプトをアタッチし、そこに特定のゲームロジックを制"
+"御するスクリプトを追加できます。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""
@@ -672,10 +665,10 @@ msgid ""
 "need to attach more scripts to one node, then you may consider two "
 "solutions, depending on your scene and on what you want to achieve:"
 msgstr ""
-"Godotでは、ノードごとに1つのスクリプトのみを添付できます。外部GDScriptファイ"
-"ルを使用するか、スクリプトをノードに直接含めることができます。 1つのノードに"
-"さらにスクリプトをアタッチする必要がある場合、シーンと目的に応じて、2つの解決"
-"策を検討できます。"
+"Godotでは、ノードごとに1つのスクリプトのみをアタッチできます。外部GDScript"
+"ファイルを使用するか、スクリプトをノードに直接含めることができます。 1つの"
+"ノードにさらにスクリプトをアタッチする必要がある場合、シーンと目的に応じて、2"
+"つの解決策を検討できます。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:212
 msgid ""

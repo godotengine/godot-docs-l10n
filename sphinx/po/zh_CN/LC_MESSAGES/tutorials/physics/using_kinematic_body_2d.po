@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,6 +277,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
+msgid ""
+"`get_slide_count()` only counts times the body has collided and changed "
+"direction."
+msgstr ""
+
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:135
 #, fuzzy
 msgid ""
 "See :ref:`KinematicCollision2D <class_KinematicCollision2D>` for details on "
@@ -284,11 +290,11 @@ msgid ""
 msgstr ""
 "参考 :ref:`Particles2D <class_Particles2D>` 来了解使用粒子效果的更多细节。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:137
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
 msgid "Which movement method to use?"
 msgstr "使用哪种运动方式？"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:139
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:141
 #, fuzzy
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
@@ -303,7 +309,7 @@ msgstr ""
 "``move_and_slide()`` 是一种特殊情况， ``move_and_collide()` `更通用。 例如，"
 "以下两个代码段会导致相同的碰撞响应:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:170
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:172
 msgid ""
 "Anything you do with ``move_and_slide()`` can also be done with "
 "``move_and_collide()``, but it might take a little more code. However, as "
@@ -314,7 +320,7 @@ msgstr ""
 "成，但它可能需要更多的代码。 但是，正如我们在下面的示例中将看到的，有些情况"
 "下 ``move_and_slide()`` 不能提供您想要的响应。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:174
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:176
 msgid ""
 "In the example above, we assign the velocity that ``move_and_slide()`` "
 "returns back into the ``velocity`` variable. This is because when the "
@@ -322,14 +328,14 @@ msgid ""
 "internally to reflect the slowdown."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:179
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:181
 msgid ""
 "For example, if your character fell on the floor, you don't want it to "
 "accumulate vertical speed due to the effect of gravity. Instead, you want "
 "its vertical speed to reset to zero."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:183
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:185
 msgid ""
 "``move_and_slide()`` may also recalculate the kinematic body's velocity "
 "several times in a loop as, to produce a smooth motion, it moves the "
@@ -338,11 +344,11 @@ msgid ""
 "in our ``velocity`` variable, and use on the next frame."
 msgstr ""
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:190
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
 msgid "Examples"
 msgstr "示例"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:194
 msgid ""
 "To see these examples in action, download the sample project: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
@@ -350,18 +356,18 @@ msgstr ""
 "要查看这些示例，请下载示例项目: :download:`using_kinematic2d.zip <files/"
 "using_kinematic2d.zip>`。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:196
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
 msgid "Movement and walls"
 msgstr "移动和墙壁"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:198
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
 #, fuzzy
 msgid ""
 "If you've downloaded the sample project, this example is in \"BasicMovement."
 "tscn\"."
 msgstr "如果您已下载示例项目，则此示例位于“BasicMovement.tscn”场景中。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:200
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:202
 #, fuzzy
 msgid ""
 "For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
@@ -376,16 +382,16 @@ msgstr ""
 "``CollisionShape2D`` 的* Shape *属性中，选择“New RectangleShape2D”并调整矩形"
 "大小以适合精灵图像。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:206
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr "有关实现2D移动方案的示例，请参阅 :ref:`doc_2d_movement` 。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:208
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:210
 msgid "Attach a script to the KinematicBody2D and add the following code:"
 msgstr "将脚本附加到KinematicBody2D并添加以下代码:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:271
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:273
 msgid ""
 "Run this scene and you'll see that ``move_and_collide()`` works as expected, "
 "moving the body along the velocity vector. Now let's see what happens when "
@@ -398,7 +404,7 @@ msgstr ""
 "状的 :ref:`StaticBody2D <class_StaticBody2D>` 。 为了可见性，您可以使用精灵，"
 "Polygon2D，或从“调试”菜单中打开“可见碰撞形状”。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:277
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:279
 msgid ""
 "Run the scene again and try moving into the obstacle. You'll see that the "
 "``KinematicBody2D`` can't penetrate the obstacle. However, try moving into "
@@ -409,7 +415,7 @@ msgstr ""
 "物。 但是，尝试以某个角度进入障碍物，您会发现障碍物就像胶水一样 - 感觉物体被"
 "卡住了。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:281
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:283
 msgid ""
 "This happens because there is no *collision response*. "
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
@@ -418,7 +424,7 @@ msgstr ""
 "发生这种情况是因为没有 *碰撞响应* 。 ``move_and_collide()``在碰撞发生时停止物"
 "体的运动。 我们需要编写我们想要的碰撞响应。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:285
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:287
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
 "Note that we removed ``delta`` from the velocity calculation."
@@ -426,7 +432,7 @@ msgstr ""
 "尝试将函数更改为 ``move_and_slide(velocity)`` 并再次运行。 请注意，我们从速度"
 "计算中删除了“delta”。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:288
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:290
 msgid ""
 "``move_and_slide()`` provides a default collision response of sliding the "
 "body along the collision object. This is useful for a great many game types, "
@@ -435,11 +441,11 @@ msgstr ""
 "``move_and_slide()``提供了一个沿碰撞对象滑动物体的默认碰撞响应。 这对于许多游"
 "戏类型都很有用，并且可能是获得所需行为所需的全部内容。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:293
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
 msgid "Bouncing/reflecting"
 msgstr "弹跳/反射"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:295
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:297
 msgid ""
 "What if you don't want a sliding collision response? For this example "
 "(\"BounceandCollide.tscn\" in the sample project), we have a character "
@@ -448,7 +454,7 @@ msgstr ""
 "如果您不想要滑动碰撞响应怎么办？ 对于这个示例(示例项目中的“BounceandCollide."
 "tscn”)，我们有一个角色射击子弹，我们希望子弹从墙上反弹。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:299
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:301
 msgid ""
 "This example uses three scenes. The main scene contains the Player and "
 "Walls. The Bullet and Wall are separate scenes so that they can be instanced."
@@ -456,7 +462,7 @@ msgstr ""
 "此示例使用三个场景。 主场景包含游戏角色和墙壁。 子弹和墙是单独的场景，以便它"
 "们可以实例化。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:302
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:304
 msgid ""
 "The Player is controlled by the `w` and `s` keys for forward and back. "
 "Aiming uses the mouse pointer. Here is the code for the Player, using "
@@ -465,11 +471,11 @@ msgstr ""
 "游戏角色由'w`和`s`键控制前进和后退。 瞄准使用鼠标指针。 这是游戏角色的代码，"
 "使用``move_and_slide()``:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:389
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:391
 msgid "And the code for the Bullet:"
 msgstr "子弹的代码:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:451
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:453
 #, fuzzy
 msgid ""
 "The action happens in ``_physics_process()``. After using "
@@ -479,7 +485,7 @@ msgstr ""
 "动作发生在 ``_physics_process()`` 中。 使用 ``move_and_slide()`` 如果发生碰"
 "撞，则返回一个 ``Kinematic Collision 2D`` 对象(否则，返回为 ``Nil``)。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:455
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:457
 msgid ""
 "If there is a returned collision, we use the ``normal`` of the collision to "
 "reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
@@ -487,20 +493,20 @@ msgstr ""
 "如果有一个返回的碰撞，我们使用碰撞的 ``normal`` 来反映子弹的 ``velocity`` 和 "
 "``Vector2.bounce()`` 方法。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:458
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:460
 msgid ""
 "If the colliding object (``collider``) has a ``hit`` method, we also call "
 "it. In the example project, we've added a flashing color effect to the Wall "
 "to demonstrate this."
 msgstr ""
-"如果碰撞对象( ``collider`` )有一个 ``hit`` 方法，我们也称之为。 在示例项目"
-"中，我们为Wall添加了一个闪烁的颜色效果来演示这一点。"
+"如果碰撞对象( ``collider`` )有一个 ``hit`` 方法，我们也调用它。 在示例项目"
+"中，我们为墙壁添加了一个颜色闪烁效果来演示这一点。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:465
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
 msgid "Platformer movement"
 msgstr "平台运动"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:467
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:469
 msgid ""
 "Let's try one more popular example: the 2D platformer. ``move_and_slide()`` "
 "is ideal for quickly getting a functional character controller up and "
@@ -511,7 +517,7 @@ msgstr ""
 "和运行功能字符控制器。 如果您已下载示例项目，可以在“Platformer.tscn”中找到"
 "它。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:471
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:473
 msgid ""
 "For this example, we'll assume you have a level made of ``StaticBody2D`` "
 "objects. They can be any shape and size. In the sample project, we're using :"
@@ -521,11 +527,11 @@ msgstr ""
 "任何形状和大小。 在示例项目中，我们使用 :ref:`Polygon2D <class_Polygon2D>` 来"
 "创建平台形状。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:475
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:477
 msgid "Here's the code for the player body:"
 msgstr "这是游戏角色物体的代码:"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:556
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:558
 #, fuzzy
 msgid ""
 "When using ``move_and_slide()``, the function returns a vector representing "
@@ -538,7 +544,7 @@ msgstr ""
 "运动。 将该值设置回角色的“速度”可以让我们平稳地上下移动斜坡。 尝试删除 "
 "``velocity =`` ，看看如果您不这样做会发生什么。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:561
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:563
 #, fuzzy
 msgid ""
 "Also note that we've added ``Vector2(0, -1)`` as the floor normal. This "
@@ -548,7 +554,7 @@ msgstr ""
 "另请注意，我们添加了 ``Vector2(0，-1)`` 作为最低法线。 这是向上指向的向量。 "
 "这意味着如果角色与具有此法线的对象发生碰撞，则将其视为地板。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:565
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:567
 #, fuzzy
 msgid ""
 "Using the floor normal allows us to make jumping work, using "
@@ -561,7 +567,7 @@ msgstr ""
 "``move_and_slide()`` 碰撞后返回 ``true`` ，其中碰撞体的法线在给定楼层向量的45"
 "度范围内(这可以通过设置 ``floor_max_angle`` 来调整)。"
 
-#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:570
+#: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:572
 #, fuzzy
 msgid ""
 "This angle also allows you to implement other features like wall jumps using "

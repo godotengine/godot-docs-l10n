@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
-#, fuzzy
 msgid "General optimization tips"
-msgstr "Eine Optimierung"
+msgstr "Generelle Optimierungs-Tipps"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:7
 msgid "Introduction"
@@ -52,9 +51,8 @@ msgid "And preferably, we will use a blend of the two."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:25
-#, fuzzy
 msgid "Smoke and Mirrors"
-msgstr "Nodes und Ressourcen"
+msgstr "Rauch und Spiegel"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:27
 msgid ""
@@ -97,9 +95,8 @@ msgid "Each of these are annoying to the user, but in different ways."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:49
-#, fuzzy
 msgid "Measuring performance"
-msgstr "Leistung"
+msgstr "Leistung messen"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:51
 msgid ""
@@ -110,29 +107,27 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:55
 msgid "There are several methods of measuring performance, including:"
-msgstr ""
+msgstr "Es gibt mehrere Arten Leistung zu messen, wie:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:57
 msgid "Putting a start / stop timer around code of interest"
-msgstr ""
+msgstr "einen Start / Stop Timer um den interessanten Code setzen"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler"
-msgstr "Polygone erstellen"
+msgstr "Godot Profiler verwenden"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third party profilers"
-msgstr "Externe Quellen"
+msgstr "Externer Profiler von Drittanbietern verwenden"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:60
 msgid "Using GPU profilers / debuggers"
-msgstr ""
+msgstr "Nutzt GPU Profiler / Debugger"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:61
 msgid "Checking the frame rate (with vsync disabled)"
-msgstr ""
+msgstr "Überprüfen der Bildwiederholrate (mit abgeschaltetem vsync)"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:63
 msgid ""
@@ -182,7 +177,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:86
 msgid "Detective work"
-msgstr ""
+msgstr "Detektivarbeit"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:88
 msgid ""
@@ -192,7 +187,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:93
-#, fuzzy
 msgid "Hypothesis testing"
 msgstr "Testphase"
 
@@ -237,7 +231,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:118
-#, fuzzy
 msgid "Profilers"
 msgstr "Profiler"
 
@@ -257,13 +250,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:129
-#, fuzzy
 msgid ""
 "For more info about using the profiler within Godot see :ref:"
 "`doc_debugger_panel`."
 msgstr ""
-"Für mehr Informationen zur Arbeitsweise von ``Viewport``-Nodes, siehe dazu "
-"die :ref:`Viewports<doc_viewports>`-Anleitung."
+"Weitere Informationen zur Verwendung des Profilers in Godot finden Sie "
+"unter :ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:133
 msgid "Principles"
@@ -317,9 +309,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:163
-#, fuzzy
 msgid "Performant design"
-msgstr "Leistung"
+msgstr "Performantes Design"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:165
 msgid ""
@@ -352,6 +343,14 @@ msgid ""
 "to spend too much time on the details at this stage until you have finalized "
 "the overall design, otherwise much of your work will be thrown out."
 msgstr ""
+"In der Praxis ist es natürlich unwahrscheinlich, dass Sie beim ersten Mal "
+"das beste Design finden, es sei denn, Sie haben Vorkenntnisse. Daher "
+"erstellen Sie häufig eine Reihe von Versionen eines bestimmten Codebereichs, "
+"die jeweils unterschiedliche Herangehensweisen an das Problem verfolgen, bis "
+"Sie zu einer zufriedenstellenden Lösung gelangen. Es ist wichtig, zu diesem "
+"Zeitpunkt nicht zu viel Zeit mit den Details zu verbringen, bis Sie das "
+"Gesamtdesign fertiggestellt haben. Andernfalls wird ein Großteil Ihrer "
+"Arbeit verworfen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:187
 msgid ""
@@ -364,9 +363,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:195
-#, fuzzy
 msgid "The optimization process"
-msgstr "Eine Optimierung"
+msgstr "Der Optimierungprozess"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:197
 msgid ""
@@ -384,7 +382,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:205
 msgid "The process is thus:"
-msgstr ""
+msgstr "Der Prozess ist also:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:207
 msgid "Profile / Identify bottleneck"
@@ -395,9 +393,8 @@ msgid "Optimize bottleneck"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:209
-#, fuzzy
 msgid "Return to step 1"
-msgstr "Rückgabe"
+msgstr "Kehren Sie zu Schritt 1 zurück"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:212
 msgid "Optimizing bottlenecks"

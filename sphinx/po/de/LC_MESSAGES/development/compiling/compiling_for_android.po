@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:4
 msgid "Compiling for Android"
-msgstr ""
+msgstr "Kompilieren für Android"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:9
 msgid "Note"
-msgstr ""
+msgstr "Anmerkung"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:11
 msgid ""
@@ -46,61 +46,69 @@ msgstr "Voraussetzungen"
 #: ../../docs/development/compiling/compiling_for_android.rst:22
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr ""
+"Zum Kompilieren unter Windows, Linux oder MacOS ist Folgendes erforderlich:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:24
 msgid "`Python 3.5+ <https://www.python.org/downloads/>`_."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:25
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
-msgstr ""
+msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
-#, fuzzy
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)."
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
+"(Kommandozeilen-Tools reichen aus)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:29
 msgid ""
 "Required SDK components will be automatically installed by Gradle (except "
 "the NDK)."
 msgstr ""
+"Erforderliche SDK-Komponenten werden von Gradle automatisch installiert (mit "
+"Ausnahme des NDK)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
-#, fuzzy
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later."
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 oder höher."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:32
 msgid "Gradle (will be downloaded and installed automatically if missing)."
-msgstr ""
+msgstr "Gradle (wird bei Fehlen automatisch heruntergeladen und installiert)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:33
 msgid "JDK 8 (either OpenJDK or Oracle JDK)."
-msgstr ""
+msgstr "JDK 8 (entweder OpenJDK oder Oracle JDK)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:35
 msgid "JDK 9 or later are not currently supported."
-msgstr ""
+msgstr "JDK 9 oder höher wird derzeit nicht unterstützt."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:36
 msgid ""
 "You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
 "ojdkbuild>`_."
 msgstr ""
+"Sie können einen Build herunterladen von `ojdkbuild <https://github.com/"
+"ojdkbuild/ojdkbuild>`_."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:38
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"Eine allgemeine Übersicht über die Verwendung von SCons für Godot finden Sie "
+"unter :ref:`doc_introduction_to_the_buildsystem`."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:44
 msgid "Setting up the buildsystem"
-msgstr ""
+msgstr "Buildsystem einrichten"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:46
 msgid ""
@@ -161,14 +169,18 @@ msgstr ""
 msgid ""
 "Release template (used when exporting with **Debugging Enabled** unchecked)"
 msgstr ""
+"Release-Vorlage (wird beim Exportieren verwendet, wenn das Kontrollkästchen "
+"**Debugging aktiviert** deaktiviert ist)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:102
 msgid "The resulting APK will be located at ``bin/android_release.apk``."
-msgstr ""
+msgstr "Die resultierende APK befindet sich unter ``bin/android_release.apk``."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:104
 msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr ""
+"Debug-Vorlage (wird beim Exportieren verwendet, wobei **Debugging "
+"aktiviert** aktiviert ist)"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:117
 msgid "The resulting APK will be located at ``bin/android_debug.apk``."
@@ -195,18 +207,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:146
-#, fuzzy
 msgid "Cleaning the generated export templates"
-msgstr "Skelett erstellen"
+msgstr "Bereinigen der generierten Exportvorlagen"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:148
 msgid ""
 "You can use the following commands to remove the generated export templates:"
 msgstr ""
+"Mit den folgenden Befehlen können Sie die generierten Exportvorlagen "
+"entfernen:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:160
 msgid "Using the export templates"
-msgstr ""
+msgstr "Verwenden der Exportvorlagen"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:162
 msgid ""
@@ -224,7 +237,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:171
 msgid "Installing the templates"
-msgstr ""
+msgstr "Vorlagen installieren"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:173
 msgid ""
@@ -235,15 +248,16 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:177
 msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:178
 msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
-msgstr ""
+msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:179
 msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
+"MacOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:181
 msgid ""
@@ -285,7 +299,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:212
 msgid "Application not installed"
-msgstr ""
+msgstr "Anwendung nicht installiert"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:214
 msgid ""
@@ -314,7 +328,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:231
 msgid "Application exits immediately"
-msgstr ""
+msgstr "Die Anwendung wird sofort beendet"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:233
 msgid ""

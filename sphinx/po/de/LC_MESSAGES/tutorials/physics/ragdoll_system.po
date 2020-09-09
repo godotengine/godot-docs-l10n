@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
-msgstr ""
+msgstr "Ragdoll System (Gliederpuppe)"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:7
 msgid "Introduction"
@@ -31,11 +31,16 @@ msgid ""
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
+"Seit Version 3.1 unterstützt Godot die Ragdoll-Physik. Ragdolls verlassen "
+"sich auf Physiksimulationen, um realistische prozedurale Animationen zu "
+"erstellen. Sie werden in vielen Spielen für Todesanimationen verwendet."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:11
 msgid ""
 "In this tutorial, we will be using the Platformer3D demo to set up a ragdoll."
 msgstr ""
+"In dieser Anleitung verwenden wir die Platformer3D-Demo, um eine Ragdoll "
+"einzurichten."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:13
 msgid ""
@@ -117,7 +122,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
 msgid "Joints adjustment"
-msgstr ""
+msgstr "Gelenkeinstellung"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
@@ -131,11 +136,11 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:56
 msgid "This is the final result:"
-msgstr ""
+msgstr "Dies ist das Endergebnis:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:61
 msgid "Simulating the ragdoll"
-msgstr ""
+msgstr "Simulation der Ragdoll"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:63
 msgid ""
@@ -144,11 +149,17 @@ msgid ""
 "method. Attach a script to the skeleton node and call the method in the "
 "``_ready`` method:"
 msgstr ""
+"Die Ragdoll ist jetzt einsatzbereit. Um die Simulation zu starten und die "
+"Ragdoll-Animation abzuspielen, müssen Sie die Methode "
+"``physical_bones_start_simulation`` aufrufen. Hängen Sie ein Skript an den "
+"Skelett-Node an und rufen Sie diese Methode in der ``_ready`` Methode auf:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
+"Um die Simulation zu stoppen, rufen Sie die Methode "
+"``physical_bones_stop_simulation ()`` auf."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
@@ -158,17 +169,21 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
-msgstr ""
+msgstr "Kollisionsebene und Maske"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:82
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
 msgstr ""
+"Stellen Sie sicher, dass Ihre Kollisionsebenen und Masken ordnungsgemäß "
+"eingerichtet sind, damit die Kapsel des ``KinematicBody`` der "
+"Physiksimulation nicht im Wege steht:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "Für weitere Informationen, siehe :ref:`doc_physics_introduction`"
+msgstr ""
+"Für weitere Informationen, siehe :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."

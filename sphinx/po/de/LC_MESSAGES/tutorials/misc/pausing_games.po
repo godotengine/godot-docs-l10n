@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,20 +61,21 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/pausing_games.rst:34
 msgid "Doing so will have the following behavior:"
-msgstr ""
+msgstr "Dies hat folgendes Verhalten:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:36
 msgid "2D and 3D physics will be stopped."
-msgstr ""
+msgstr "Die 2D und 3D Physik wird gestoppt."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:37
 msgid ""
 "``_process`` and ``_physics_process`` will not be called anymore in nodes."
 msgstr ""
+"``_process`` und ``_physics_process`` wird in Nodes nicht mehr aufgerufen."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:38
 msgid "``_input`` and ``_input_event`` will not be called anymore either."
-msgstr ""
+msgstr "``_input`` und ``_input_event`` wird ebenfalls nicht mehr aufgerufen."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:40
 msgid ""
@@ -82,10 +83,13 @@ msgid ""
 "by default, will result in an unrecoverable state (nothing will work "
 "anymore!)."
 msgstr ""
+"Dies stoppt effektiv das ganze Spiel. Das Aufrufen dieser Funktion über ein "
+"Skript führt standardmäßig zu einem nicht wiederherstellbaren Status (nichts "
+"funktioniert mehr!)."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:45
 msgid "White-listing nodes"
-msgstr ""
+msgstr "White-Listing-Nodes"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:47
 msgid ""
@@ -93,10 +97,13 @@ msgid ""
 "pause are white-listed. This is done by editing the \"Pause Mode\" property "
 "in a node:"
 msgstr ""
+"Stellen Sie vor dem Aktivieren der Pause sicher, dass Nodes, die während der "
+"Pause weiterarbeiten müssen, auf der weißen Liste stehen. Dies erfolgt durch "
+"Bearbeiten der Eigenschaft \"Pausenmodus\" in einem Node:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:53
 msgid "You can achieve the same result in code:"
-msgstr ""
+msgstr "Sie können das gleiche Ergebnis im Code erzielen:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:62
 msgid ""
@@ -111,25 +118,33 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/pausing_games.rst:70
 msgid "So the three possible states for a node are:"
-msgstr ""
+msgstr "Die drei möglichen Zustände für einen Node sind also:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:72
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
 "The first parent that has a non-Inherit state."
 msgstr ""
+"**Erben**: Prozess abhängig vom Status des Elternteils, Großelternteils usw. "
+"Der erste Elternteil, der einen Nicht-Vererbungsstatus hat."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:74
 msgid ""
 "**Stop**: Stop the node no matter what (and children in Inherit mode). When "
 "paused this node will not process."
 msgstr ""
+"**Stop**: Stoppt den Node, egal was passiert (und Kinder im "
+"Vererbungsmodus). Wenn dieser Node angehalten wird, wird er nicht "
+"verarbeitet."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:76
 msgid ""
 "**Process**: Process the node no matter what (and children in Inherit mode). "
 "Paused or not this node will process."
 msgstr ""
+"**Verarbeiten**: Verarbeitet den Node, egal was passiert (und Kinder im "
+"Vererbungsmodus). Egal ob angehalten oder nicht, wird dieser Node "
+"verarbeitet."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:80
 msgid "Example"
@@ -140,6 +155,9 @@ msgid ""
 "An example of this is creating a popup or panel with controls inside, and "
 "set its pause mode to \"Process\" then hide it:"
 msgstr ""
+"Ein Beispiel hierfür ist das Erstellen eines Popups oder Bedienfelds mit "
+"darin enthaltenen Steuerelementen. Stellen Sie den Pausenmodus auf "
+"\"Verarbeiten\" und blenden Sie es dann aus:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:87
 msgid ""
@@ -147,17 +165,25 @@ msgid ""
 "grandchildren will inherit that state. This way, this branch of the scene "
 "tree will continue working when paused."
 msgstr ""
+"Wenn Sie die Wurzel des Pausen-Popups auf \"Verarbeiten\" setzen, erben alle "
+"Kinder und Enkelkinder diesen Status. Auf diese Weise funktioniert dieser "
+"Zweig des Szenenbaums nach einer Pause weiter."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:91
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
 msgstr ""
+"Machen Sie es schließlich so, wenn eine Pause-Taste gedrückt wird (egal "
+"welche Taste), aktivieren Sie die Pause und zeigen Sie den Pause-Bildschirm "
+"an."
 
 #: ../../docs/tutorials/misc/pausing_games.rst:109
 msgid "To remove the pause, do the opposite when the pause screen is closed:"
 msgstr ""
+"Gehen Sie beim Schließen des Pausenbildschirms wie folgt vor, um die Pause "
+"zu entfernen:"
 
 #: ../../docs/tutorials/misc/pausing_games.rst:127
 msgid "And that should be all!"
-msgstr ""
+msgstr "Und das sollte alles sein!"

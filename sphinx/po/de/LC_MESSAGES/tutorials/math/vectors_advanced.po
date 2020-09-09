@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,11 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Das Skalarprodukt hat eine weitere interessante Eigenschaft mit "
+"Einheitsvektoren. Stellen Sie sich vor, dass senkrecht zu diesem Vektor (und "
+"durch den Ursprung) eine Ebene verläuft. Ebenen teilen den gesamten Raum in "
+"positive (über der Ebene) und negative (unter der Ebene), und (entgegen der "
+"landläufigen Meinung) können Sie ihre Mathematik auch in 2D verwenden:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -43,6 +48,13 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"Einheitsvektoren, die senkrecht zu einer Oberfläche stehen (sie beschreiben "
+"also die Ausrichtung der Oberfläche), werden als "
+"**Einheitsnormalenvektoren** bezeichnet. Normalerweise werden sie jedoch nur "
+"als *Normalen* abgekürzt. Normalen erscheinen in Ebenen, 3D-Geometrie (um zu "
+"bestimmen, wo sich jede Fläche oder jeder Scheitelpunkt befindet) usw. Ein "
+"**normaler** *ist*ein ** Einheitsvektor**, wird aber aufgrund seiner "
+"Verwendung *normal* genannt. (Genau wie wir (0,0) den Ursprung nennen!)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
@@ -53,6 +65,13 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"Es ist so einfach wie es aussieht. Die Ebene verläuft am Ursprung vorbei und "
+"ihre Oberfläche ist senkrecht zum Einheitsvektor (oder *normal*). Die Seite, "
+"auf die der Vektor zeigt, ist der positive Halbraum, während die andere "
+"Seite der negative Halbraum ist. In 3D ist dies genau das Gleiche, außer "
+"dass die Ebene eine unendliche Oberfläche anstelle einer Linie ist (stellen "
+"Sie sich ein unendliches, flaches Blatt Papier vor, das Sie ausrichten "
+"können und das am Ursprung befestigt ist)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
@@ -65,12 +84,18 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"Nachdem klar ist, was eine Ebene ist, kehren wir zum Skalarprodukt zurück. "
+"Das Skalarprodukt zwischen einem **Einheitsvektor** und einem beliebigen "
+"**Punkt im Raum** (ja, diesmal machen wir ein Skalarprodukt zwischen Vektor "
+"und Position) gibt den **Abstand vom Punkt zur Ebene** zurück:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
 msgstr ""
+"Aber nicht nur die absolute Entfernung: wenn sich der Punkt im negativen "
+"Halbraum befindet, ist auch die Entfernung negativ:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
@@ -127,6 +152,12 @@ msgid ""
 "plane, travelling in N direction. As an example, imagine you want to reach a "
 "point in the plane, you will just do:"
 msgstr ""
+"Grundsätzlich können N und D jede Ebene im Raum darstellen, sei es für 2D "
+"oder 3D (abhängig von der Anzahl der Dimensionen von N), und die Mathematik "
+"ist für beide gleich. Es ist das gleiche wie zuvor, aber D ist die "
+"Entfernung vom Ursprung zur Ebene in N-Richtung. Stellen Sie sich als "
+"Beispiel vor, Sie möchten einen Punkt in der Ebene erreichen. Sie tun "
+"einfach Folgendes:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:91
 msgid ""
@@ -135,6 +166,11 @@ msgid ""
 "seems. If we want to tell, again, the distance from the point to the plane, "
 "we do the same but adjusting for distance:"
 msgstr ""
+"Dadurch wird der normale Vektor gedehnt (seine Größe geändert) und er "
+"berührt die Ebene. Diese Mathematik mag verwirrend erscheinen, ist aber "
+"tatsächlich viel einfacher als es scheint. Wenn wir noch einmal die "
+"Entfernung vom Punkt zur Ebene angeben möchten, tun wir dasselbe, passen "
+"jedoch die Entfernung an:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:105
 msgid "The same thing, using a built-in function:"
@@ -152,16 +188,21 @@ msgid ""
 "This will result in a plane in the same position, but with inverted negative "
 "and positive half spaces:"
 msgstr ""
+"Das Umdrehen der Polarität der Ebene kann durch Negieren von N und D "
+"erfolgen. Dies führt zu einer Ebene an derselben Position, jedoch mit "
+"invertierten negativen und positiven Halbräumen:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:133
 msgid ""
 "Of course, Godot also implements this operator in :ref:`Plane "
 "<class_Plane>`, so doing:"
 msgstr ""
+"Natürlich implementiert Godot diesen Operator auch in :ref:`Plane "
+"<class_Plane>`, also schreiben wir:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:145
 msgid "Will work as expected."
-msgstr ""
+msgstr "Funktioniert wie erwartet."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:147
 msgid ""
@@ -169,6 +210,11 @@ msgid ""
 "the distance to it. So, why is it useful to calculate the distance from a "
 "point to a plane? It's extremely useful! Let's see some simple examples.."
 msgstr ""
+"Denken Sie also daran, eine Ebene ist genau das und ihre hauptsächliche "
+"praktische Verwendung besteht darin, die Entfernung zu ihr zu berechnen. "
+"Warum ist es also sinnvoll, die Entfernung von einem Punkt zu einer Ebene zu "
+"berechnen? Es ist sehr nützlich! Schauen wir uns einige einfache Beispiele "
+"an."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:153
 msgid "Constructing a plane in 2D"
@@ -180,6 +226,9 @@ msgid ""
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"Ebenen kommen eindeutig nicht aus dem Nichts, also müssen sie gebaut werden. "
+"Das Konstruieren in 2D ist einfach. Dies kann entweder aus einem Normalen "
+"(Einheitsvektor) und einem Punkt oder aus zwei Punkten im Raum erfolgen."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
@@ -187,6 +236,9 @@ msgid ""
 "is already computed, so just calculate D from the dot product of the normal "
 "and the point."
 msgstr ""
+"Im Fall einer Normalen und eines Punktes ist der größte Teil der Arbeit "
+"erledigt, da die Normalen bereits berechnet wurden. Berechnen Sie also "
+"einfach D aus dem Skalarprodukt der Normalen und des Punkts."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:174
 msgid ""
@@ -196,22 +248,30 @@ msgid ""
 "must be obtained first, and then it needs to be rotated 90° degrees to "
 "either side:"
 msgstr ""
+"Für zwei Punkte im Raum gibt es tatsächlich zwei Ebenen, die durch sie "
+"hindurchgehen und denselben Raum teilen, aber normal in die "
+"entgegengesetzten Richtungen zeigen. Um die Normale aus den beiden Punkten "
+"zu berechnen, muss zuerst der Richtungsvektor ermittelt und dann um 90 ° "
+"nach beiden Seiten gedreht werden:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:199
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
+"Der Rest ist der gleiche wie im vorherigen Beispiel. Entweder point_a oder "
+"point_b funktionieren, da sie sich in derselben Ebene befinden:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:217
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr ""
+"Dasselbe in 3D zu tun, ist etwas komplexer und wird weiter unten erläutert."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:221
 msgid "Some examples of planes"
-msgstr ""
+msgstr "Einige Beispiele von Flächen"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid ""
@@ -220,6 +280,11 @@ msgid ""
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"Hier ist ein einfaches Beispiel dafür, wofür Ebenen nützlich sind. Stellen "
+"Sie sich vor, Sie haben ein `konvexes <https://www.mathsisfun.com/"
+"definitions/convex.html>`__ Polygon. Zum Beispiel ein Rechteck, ein Trapez, "
+"ein Dreieck oder ein beliebiges Polygon, bei dem sich keine Flächen nach "
+"innen biegen."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:228
 msgid ""
@@ -227,6 +292,10 @@ msgid ""
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"Für jedes Segment des Polygons berechnen wir die Ebene, die an diesem "
+"Segment vorbeigeht. Sobald wir die Liste der Ebenen haben, können wir tolle "
+"Dinge tun, zum Beispiel prüfen, ob sich ein Punkt innerhalb des Polygons "
+"befindet."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:232
 msgid ""
@@ -234,11 +303,14 @@ msgid ""
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
+"Wir gehen alle Ebenen durch. Wenn wir eine Ebene finden, in der der Abstand "
+"zum Punkt positiv ist, liegt der Punkt außerhalb des Polygons, andernfalls "
+"ist der Punkt innerhalb."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:238
 #: ../../docs/tutorials/math/vectors_advanced.rst:277
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "Der Code sollte ungefähr so aussehen:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:263
 msgid ""
@@ -247,6 +319,10 @@ msgid ""
 "This is called the Separating Axis Theorem (or SAT) and most physics engines "
 "use this to detect collision."
 msgstr ""
+"Ziemlich cool, oder? Aber das wird noch viel besser! Mit etwas mehr Aufwand "
+"lässt uns eine ähnliche Logik wissen, wann sich zwei konvexe Polygone "
+"überlappen. Dies wird als Separating Axis Theorem (SAT) bezeichnet, und die "
+"meisten Physik-Engines verwenden dies, um Kollisionen zu erkennen."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:268
 msgid ""
@@ -256,6 +332,12 @@ msgid ""
 "it. This check is performed with the planes of A against the points of B, "
 "and then with the planes of B against the points of A:"
 msgstr ""
+"Bei einem Punkt reicht es aus nur zu überprüfen, ob eine Ebene eine positive "
+"Entfernung zurückgibt, um festzustellen, ob der Punkt außerhalb liegt. Bei "
+"einem anderen Polygon müssen wir eine Ebene finden, in der *alle* *anderen* "
+"*Polygon-Punkte* einen positiven Abstand zurückgeben. Diese Prüfung wird mit "
+"den Ebenen von A gegen die Punkte von B und dann mit den Ebenen von B gegen "
+"die Punkte von A durchgeführt:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:368
 msgid ""
@@ -264,10 +346,15 @@ msgid ""
 "usually just handled by splitting the concave polygon into smaller convex "
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
+"Wie Sie sehen können, sind Ebenen sehr nützlich, und dies ist erst die "
+"Spitze des Eisbergs. Sie fragen sich vielleicht, was mit nicht konvexen "
+"Polygonen passiert. Dies geschieht normalerweise durch Aufteilen des "
+"konkaven Polygone in kleinere konvexe Polygone oder durch Verwendung einer "
+"Technik wie BSP (die heutzutage nicht viel Verwendung findet)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:375
 msgid "Collision detection in 3D"
-msgstr ""
+msgstr "Kollisionserkennung in 3D"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid ""
@@ -277,6 +364,11 @@ msgid ""
 "pretty well) but it's used by almost all physics engines and collision "
 "detection libraries :)"
 msgstr ""
+"Dies ist ein weiterer Bonus, eine Belohnung dafür, dass Sie geduldig sind "
+"und mit dieser langen Anleitung Schritt halten. Hier ist ein weiteres Stück "
+"Weisheit. Dies ist möglicherweise kein direkter Anwendungsfall (Godot macht "
+"die Kollisionserkennung bereits ziemlich gut), aber es wird von fast allen "
+"Physik-Engines und Kollisionserkennungsbibliotheken verwendet :)"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:383
 msgid ""
@@ -284,6 +376,10 @@ msgid ""
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
+"Erinnern Sie sich, dass das Konvertieren einer konvexen Form in 2D in ein "
+"Array von 2D-Ebenen für die Kollisionserkennung hilfreich war? Sie konnten "
+"feststellen, ob sich ein Punkt innerhalb einer konvexen Form befand oder ob "
+"sich zwei konvexe 2D-Formen überlappten."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:387
 msgid ""
@@ -291,6 +387,9 @@ msgid ""
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
+"Nun, dies funktioniert auch in 3D. Wenn zwei vielflächige 3D-Formen "
+"kollidieren, können Sie keine Trennebene finden. Wenn eine Trennebene "
+"gefunden wird, kollidieren die Formen definitiv nicht."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:391
 msgid ""
@@ -299,6 +398,10 @@ msgid ""
 "side. This plane is always one of the face-planes of either polygon A or "
 "polygon B."
 msgstr ""
+"Zur Erinnerung: Trennebene bedeutet, dass sich alle Scheitelpunkte des "
+"Polygons A auf einer Seite der Ebene und alle Scheitelpunkte des Polygons B "
+"auf der anderen Seite befinden. Diese Ebene ist immer eine der Flächenebenen "
+"von Polygon A oder Polygon B."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:396
 msgid ""
@@ -306,6 +409,9 @@ msgid ""
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
+"In 3D gibt es jedoch ein Problem bei diesem Ansatz, da es möglich ist, dass "
+"in einigen Fällen keine Trennebene gefunden werden kann. Dies ist ein "
+"Beispiel für eine solche Situation:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:402
 msgid ""
@@ -313,23 +419,25 @@ msgid ""
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
+"Um dies zu vermeiden, müssen einige zusätzliche Ebenen als Trennobjekte "
+"getestet werden. Diese Ebenen sind das Kreuzprodukt zwischen den Kanten des "
+"Polygons A und den Kanten des Polygons B."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:408
 msgid "So the final algorithm is something like:"
-msgstr ""
+msgstr "Der endgültige Algorithmus ist also ungefähr so:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:589
 msgid "More information"
 msgstr "Mehr Informationen"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:591
-#, fuzzy
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "article:"
 msgstr ""
-"Für weitere Informationen zu Singletons bzw. Autoload-Skripten, siehe :ref:"
-"`doc_singletons_autoload`."
+"Für weitere Informationen zur Benutzung von Vektoren-Mathematik in Godot, "
+"siehe folgenden Artikel:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:593
 msgid ":ref:`doc_matrices_and_transforms`"
@@ -341,3 +449,6 @@ msgid ""
 "excellent video series \"Essence of Linear Algebra\": https://www.youtube."
 "com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
 msgstr ""
+"Für weiterführende Erklärungen siehe 3Blue1Brown's excellente Video Serie "
+"\"Essence of Linear Algebra\": https://www.youtube.com/watch?"
+"v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"

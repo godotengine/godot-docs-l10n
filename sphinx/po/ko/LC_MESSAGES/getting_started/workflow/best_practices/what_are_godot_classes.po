@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,43 +18,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
-#, fuzzy
-msgid "Godot scenes and scripts are classes"
-msgstr "클래스로 스크립트를 등록하기"
+msgid "Applying object-oriented principles in Godot"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
-"In Godot, scripts and scenes can both be the equivalent of classes in an "
-"Object-Oriented programming language. The main difference is that scenes are "
-"`declarative code <https://en.wikipedia.org/wiki/Declarative_programming>`_, "
-"while scripts can contain `imperative code <https://en.wikipedia.org/wiki/"
-"Imperative_programming>`_."
+"The engine offers two main ways to create reusable objects: scripts and "
+"scenes. Neither of these technically define classes under the hood."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:12
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:9
 msgid ""
-"As a result, many best practices in Godot boil down to applying Object-"
-"Oriented design principles to the scenes, nodes, or scripts that make up "
-"your game."
+"Still, many best practices using Godot involve applying object-oriented "
+"programming principles to the scripts and scenes that compose your game. "
+"That is why it's useful to understand how we can think of them as classes."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:15
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:13
 msgid ""
-"This guide explains how scripts and scenes work in the engine's core, to "
-"help you get a sense of how Godot works under the hood, and to help you "
-"better understand where some of this series' best practices come from."
+"This guide briefly explains how scripts and scenes work in the engine's core "
+"to help you understand how they work under the hood."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:20
-#, fuzzy
-msgid "Making sense of classes in Godot"
-msgstr "Godot 3.0+에서 에셋 가져오기"
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:17
+msgid "How scripts work in the engine"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:19
+msgid ""
+"The engine provides built-in classes like :ref:`Node <class_Node>`. You can "
+"extend those to create derived types using a script."
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
 #, fuzzy
 msgid ""
-"Godot Engine provides built-in classes like :ref:`Node <class_Node>`. User-"
-"created types are not technically classes. Instead, they are resources that "
+"These scripts are not technically classes. Instead, they are resources that "
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
@@ -62,7 +61,7 @@ msgstr ""
 "처럼 말이죠), 하지만 사용자가 만든 타입은 사실 클래스가 아닙니다. 대신 엔진 "
 "클래스에서 작동하기 위해 엔진에게 초기화 시퀀스를 알려주는 리소스입나다."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:27
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
 #, fuzzy
 msgid ""
 "Godot's internal classes have methods that register a class's data with a :"
@@ -74,29 +73,33 @@ msgstr ""
 "는) 클래스 정보에 액세스하여 런타임을 제공합니다. ClassDB에 저장된 것은 다음 "
 "것도 포함됩니다..."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-msgid "properties"
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
+#, fuzzy
+msgid "Properties."
 msgstr "속성"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-msgid "methods"
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:30
+#, fuzzy
+msgid "Methods."
 msgstr "메서드"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:33
-msgid "constants"
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
+#, fuzzy
+msgid "Constants."
 msgstr "상수"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-msgid "signals"
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
+#, fuzzy
+msgid "Signals."
 msgstr "시그널"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:36
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 #, fuzzy
 msgid ""
-"This ``ClassDB`` is what Objects check against when performing an operation "
-"like accessing a property or calling a method. ``ClassDB`` checks the "
-"database's records and the records of the Object's base types to see if the "
-"Object supports the operation."
+"This ``ClassDB`` is what objects check against when performing an operation "
+"like accessing a property or calling a method. It checks the database's "
+"records and the object's base types' records to see if the object supports "
+"the operation."
 msgstr ""
 "게다가 ClassDB는 어떤 객체가 언제 연산을 수행하는 지를 확인합니다. 속성에 액"
 "세스하는가? 메서드를 호출하는가? 시그널을 방출하는가? 이 모두를 데이터베이스"
@@ -105,136 +108,87 @@ msgstr ""
 "정의하는데 이걸로 데이터베이스에 등록한 C++ 내용물이 무엇이고 어떻게 등록했는"
 "지를 설명합니다."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:41
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:38
 msgid ""
-"On the engine's side, every class defines a static ``_bind_methods()`` "
-"function that describes what C++ content it registers to the database and "
-"how. When you use the engine, you can extend the methods, properties, and "
-"signals available from the ``ClassDB`` by attaching a :ref:`Script "
-"<class_Script>` to your node."
+"Attaching a :ref:`Script <class_Script>` to your object extends the methods, "
+"properties, and signals available from the ``ClassDB``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:46
-#, fuzzy
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:43
 msgid ""
-"Objects check their attached script before the database. This is why scripts "
-"can override built-in methods. If a script defines a "
-"``_get_property_list()`` method, Godot appends that data to the list of "
-"properties the Object fetches from the ClassDB. The same is true for other "
-"declarative code."
+"Even scripts that don't use the ``extends`` keyword implicitly inherit from "
+"the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
+"can instantiate scripts without the ``extends`` keyword from code. Since "
+"they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
+"<class_Node>`."
 msgstr ""
-"*이것*\\ 이 바로 :ref:`Script <class_Script>`\\ 입니다. 객체는 데이터베이스 "
-"이전에 붙어있는 스크립트를 확인합니다, 즉 스크립트는 메서드를 재정의할 수도 "
-"있습니다. 스크립트가  `_get_property_list()` 메서드를 정의한다면, ClassDB에"
-"서 객체가 가져오는 속성 목록이 데이터로 추가됩니다. 이는 다른 선언적 코드에서"
-"도 마찬가지입니다."
+
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:49
+msgid "Scenes"
+msgstr "씬(Scene)"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
-"Even scripts that don't inherit from a built-in type, i.e. scripts that "
-"don't start with the ``extends`` keyword, implicitly inherit from the "
-"engine's base :ref:`Reference <class_Reference>` class. This allows the "
-"Object to defer to the script's content where the engine logic deems "
-"appropriate."
+"The behavior of scenes has many similarities to classes, so it can make "
+"sense to think of a scene as a class. Scenes are reusable, instantiable, and "
+"inheritable groups of nodes. Creating a scene is similar to having a script "
+"that creates nodes and adds them as children using ``add_child()``."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
-msgid ""
-"As a result, you can instance scripts without the ``extends`` keyword from "
-"code, but you cannot attach them to a :ref:`Node <class_Node>`"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
-msgid "Scripting performances and PackedScene"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:55
 #, fuzzy
 msgid ""
-"As the size of Objects increases, the scripts' necessary size to create them "
-"grows much, much larger. Creating node hierarchies demonstrates this. Each "
-"individual Node's logic could be several hundred lines of code in length."
-msgstr ""
-"자체적인 문제가 있습니다. 객체의 규모가 커질수록, 그것을 만드는 데 필요한 스"
-"크립트의 규모도 더욱 더 커집니다. 이것은 노드 계층 구조를 만드는 것으로 드러"
-"납니다. 각 노드의 논리는 수 백줄의 코드가 될 수 있습니다."
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
-msgid ""
-"Let's see a simple example of creating a single ``Node`` as a child. The "
-"code below creates a new ``Node``, changes its name, assigns a script to it, "
-"sets its future parent as its owner so it gets saved to disk along with it, "
-"and finally adds it as a child of the ``Main`` node:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:109
-msgid ""
-"Script code like this is much slower than engine-side C++ code. Each change "
-"makes a separate call to the scripting API which leads to many \"look-ups\" "
-"on the back-end to find the logic to execute."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:113
-msgid ""
-"Scenes help to avoid this performance issue. :ref:`PackedScene "
-"<class_PackedScene>`, the base type that scenes inherit from, are resources "
-"that use serialized data to create objects. The engine can process scenes in "
-"batches on the back-end and provide much better performance than scripts."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:119
-#, fuzzy
-msgid "Scenes and scripts are objects"
-msgstr "씬과 스크립트는 오브젝트입니다"
-
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:121
-#, fuzzy
-msgid ""
-"Why is any of this important to scene organization? Because scenes *are* "
-"objects. One often pairs a scene with a scripted root node that makes use of "
-"the sub-nodes. This means that the scene is often an extension of the "
-"script's declarative code."
+"We often pair a scene with a scripted root node that makes use of the "
+"scene's nodes. As such, the scene is often an extension of the script's "
+"declarative code."
 msgstr ""
 "자, 왜 이렇게 씬 조직이 중요할까요? 씬이 *바로* 객체라는 것을 이해해야합니"
 "다. 때로는 하나의 씬과 스크립트과 붙은 루트 노드로 된 씬을 하위 노드로 사용하"
 "는 경우도 있습니다. 즉, 씬은 때로 스크립트의 선언적 코드의 확장이 됩니다."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:126
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "The content of a scene helps to define:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:128
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:60
 #, fuzzy
 msgid "What nodes are available to the script"
 msgstr "어떤 객체를 스크립트에서 사용할 수 있는지?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:129
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:61
 #, fuzzy
 msgid "How they are organized"
 msgstr "어떻게 그들이 조직되어있는지?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:130
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:62
 #, fuzzy
 msgid "How they are initialized"
 msgstr "어떻게 그들이 초기화되는지?"
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:131
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:63
 msgid "What signal connections they have with each other"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:133
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
+#, fuzzy
 msgid ""
-"Many Object-Oriented principles which apply to written code *also* apply to "
-"scenes."
-msgstr "코드에 적용되는 많은 객체지향 원칙은 *씬에도* 적용됩니다."
+"Why is any of this important to scene organization? Because instances of "
+"scenes *are* objects. As a result, many object-oriented principles that "
+"apply to written code also apply to scenes: single responsibility, "
+"encapsulation, and others."
+msgstr ""
+"자, 왜 이렇게 씬 조직이 중요할까요? 씬이 *바로* 객체라는 것을 이해해야합니"
+"다. 때로는 하나의 씬과 스크립트과 붙은 루트 노드로 된 씬을 하위 노드로 사용하"
+"는 경우도 있습니다. 즉, 씬은 때로 스크립트의 선언적 코드의 확장이 됩니다."
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:136
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
 msgid ""
-"The scene is *always an extension of the script attached to its root node*. "
-"You can see all the nodes it contains as part of a single class."
+"The scene is *always an extension of the script attached to its root node*, "
+"so you can interpret it as part of a class."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:139
+#: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:72
 msgid ""
-"Most of the tips and techniques explained in this series will build on this."
+"Most of the techniques explained in this best practices series build on this "
+"point."
 msgstr ""

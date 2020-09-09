@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:4
 msgid "Developing for Oculus Quest"
-msgstr ""
+msgstr "Entwickeln für Oculus Quest"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:7
 msgid "Introduction"
@@ -30,6 +30,8 @@ msgid ""
 "This tutorial goes over how to get started developing for the *Oculus Quest* "
 "with an official Godot plugin."
 msgstr ""
+"In dieser Anleitung erfahren Sie, wie Sie mit einem offiziellen Godot-Plugin "
+"mit der Entwicklung für *Oculus Quest* beginnen."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:12
 msgid "Before starting, there are two things you need to do:"
@@ -50,7 +52,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:22
-#, fuzzy
 msgid "Setting Up Godot"
 msgstr "Godot einrichten"
 
@@ -72,11 +73,12 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:36
 msgid "Now you can start building the main scene:"
-msgstr ""
+msgstr "Jetzt können Sie mit dem Aufbau der Hauptszene beginnen:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:38
 msgid "Add an :ref:`ARVROrigin <class_ARVROrigin>` node first."
 msgstr ""
+"Fügen Sie zuerst einen :ref:`ARVROrigin <class_ARVROrigin>`-Node hinzu."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:39
 msgid ""
@@ -108,26 +110,25 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:46
-#, fuzzy
 msgid "Now add a script to the main node and add the following code:"
-msgstr ""
-"Füge ein Skript zum ``Mob`` hinzu und füge die folgenden Member-Variablen "
-"hinzu:"
+msgstr "Fügen Sie nun dem Haupt-Node ein Skript mit folgendem Code hinzu:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
-#, fuzzy
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
 msgstr ""
-"Bevor Du Dein Projekt für Android exportieren kannst, musst Du folgende "
-"Software herunterladen:"
+"Bevor Sie dieses Projekt in die Quest exportieren können, müssen Sie drei "
+"weitere Schritte ausführen."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
 "First go into the project settings and make sure that the main scene is the "
 "scene we run. Godot does not ask you to set this on export."
 msgstr ""
+"Gehen Sie zuerst in die Projekteinstellungen und stellen Sie sicher, dass "
+"die Hauptszene die Szene ist, die wir ausführen. Godot fordert Sie beim "
+"Export nicht auf dies festzulegen."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:84
 msgid ""
@@ -145,12 +146,11 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:95
 msgid "Now save and close the export window."
-msgstr ""
+msgstr "Speichern und schließen Sie nun das Exportfenster."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:98
-#, fuzzy
 msgid "Setting Up Your Quest"
-msgstr "Godot einrichten"
+msgstr "Den Quest einrichten"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:100
 msgid ""
@@ -158,18 +158,22 @@ msgid ""
 "an Oculus app on it and link it up to your Quest. Start the Oculus app. "
 "Press the settings cogwheel on the bottom right hand side. Select your Quest:"
 msgstr ""
+"Sie benötigen zum Schluss Ihr Telefon. Wenn Sie Ihren Quest erhalten haben, "
+"müssen Sie eine Oculus App darauf installieren und mit Ihrem Quest "
+"verknüpfen. Starten Sie die Oculus App und drücken Sie auf das Einstellrad "
+"unten rechts. Wähle deinen Quest aus:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:107
 msgid "Select \"More Settings\", and select \"Developer Mode\":"
-msgstr ""
+msgstr "Wählen Sie \"Weitere Einstellungen\" und dann \"Entwicklermodus\":"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:111
 msgid "Now turn developer mode on:"
-msgstr ""
+msgstr "Schalten Sie nun den Entwicklermodus ein:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:115
 msgid "This allows you to deploy your games to the Quest."
-msgstr ""
+msgstr "Auf diese Weise können Sie Ihre Spiele für den Quest bereitstellen."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:117
 msgid ""
@@ -178,6 +182,12 @@ msgid ""
 "the little Android button that should be visible in the top right hand side "
 "of your Godot window. It should build your game and export it to the Quest."
 msgstr ""
+"Verbinden Sie den Quest mit dem mitgelieferten USB-Kabel mit Ihrem PC. Wenn "
+"Sie den Quest aktivieren, werden möglicherweise einige Dialogfelder "
+"angezeigt um dem PC die Berechtigung zum Bereitstellen von Apps zu erteilen. "
+"Klicken Sie nun auf die kleine Android-Schaltfläche, die oben rechts in "
+"Ihrem Godot-Fenster sichtbar sein sollte. Es sollte Ihr Spiel erstellen und "
+"in den Quest exportieren."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:123
 msgid ""
@@ -186,19 +196,23 @@ msgid ""
 "quest that contains a lot of scenes to get help you on your way including "
 "really nice controller meshes."
 msgstr ""
+"Das oben Genannte ist das Mindeste um Ihr Projekt auf dem Quest zum Laufen "
+"zu bringen. Es ist nicht sehr aufregend. Holger Dammertz hat ein großartiges "
+"Toolkit für den Quest erstellt, das viele Szenen enthält, um Ihnen auf Ihrem "
+"Weg zu helfen, einschließlich wirklich netter Controller-Meshes."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:128
 msgid ""
 "You can find the toolkit `here <https://github.com/NeoSpark314/"
 "godot_oculus_quest_toolkit>`__."
 msgstr ""
+"Sie finden das Toolkit `hier <https://github.com/NeoSpark314/"
+"godot_oculus_quest_toolkit>`__."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
-#, fuzzy
 msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."
 msgstr ""
-"Zusätzlich zu dieser Dokumentation möchtest Du vielleicht auch einen Blick "
-"auf die verschiedenen `Godot-Demoprojekte <https://github.com/godotengine/"
-"godot-demo-projects>`_ werfen."
+"Wenn Sie bei der Verbesserung des Plugins helfen möchten, treten Sie uns "
+"bitte `hier <https://github.com/GodotVR/godot_oculus_mobile>`__ bei."

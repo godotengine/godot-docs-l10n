@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,25 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:4
 msgid "Core types"
-msgstr ""
+msgstr "Kerntypen"
 
 #: ../../docs/development/cpp/core_types.rst:6
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
 msgstr ""
+"Godot hat eine Vielzahl von Klassen und Vorlagen, aus denen sich sein Kern "
+"zusammensetzt, und alles baut darauf auf."
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
 "This reference will try to list them in order for their better understanding."
 msgstr ""
+"Diese Referenz wird versuchen sie aufzulisten, um sie besser zu verstehen."
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "Definitionen"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -76,17 +79,19 @@ msgstr ""
 #: ../../docs/development/cpp/core_types.rst:220
 #: ../../docs/development/cpp/core_types.rst:233
 msgid "References:"
-msgstr ""
+msgstr "Referenzen:"
 
 #: ../../docs/development/cpp/core_types.rst:37
 msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
 "typedefs.h>`__"
 msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
-msgstr ""
+msgstr "Speichermodell"
 
 #: ../../docs/development/cpp/core_types.rst:42
 msgid ""
@@ -95,6 +100,11 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
+"PC ist eine wunderbare Architektur. Computer verfügen häufig über Gigabytes "
+"an RAM, Terabytes an Speicher und Gigahertz CPU. Wenn eine Anwendung mehr "
+"Ressourcen benötigt, lagert das Betriebssystem die inaktiven aus. Andere "
+"Architekturen (wie Mobilgeräte oder Konsolen) sind im Allgemeinen "
+"eingeschränkter."
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -103,6 +113,11 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
+"Das gebräuchlichste Speichermodell ist der Heap, bei dem eine Anwendung "
+"einen Speicherbereich anfordert und das zugrunde liegende Betriebssystem "
+"versucht, ihn irgendwo anzupassen und zurückzugeben. Dies funktioniert oft "
+"am besten und ist flexibel, aber im Laufe der Zeit und bei Missbrauch kann "
+"dies zu einer Segmentierung führen."
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -112,6 +127,12 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
+"Durch die Segmentierung werden langsam Löcher erzeugt, die für die meisten "
+"gängigen Zuordnungen zu klein sind, sodass Speicherplatz verschwendet wird. "
+"Es gibt viel Literatur über Heap und Segmentierung, daher wird auf dieses "
+"Thema hier nicht weiter eingegangen. Moderne Betriebssysteme verwenden "
+"ausgelagerten Speicher, wodurch das Segmentierungsproblem zwar gemindert, "
+"aber nicht gelöst wird."
 
 #: ../../docs/development/cpp/core_types.rst:58
 msgid ""
@@ -122,8 +143,16 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
+"In vielen Studien und Tests wurde jedoch gezeigt, dass bei ausreichendem "
+"Speicher die Segmentierung im Laufe der Zeit kein Problem darstellt, wenn "
+"die maximale Zuordnungsgröße im Verhältnis zur maximalen Heap-Größe und zum "
+"Anteil des Speichers, der nicht verwendet werden soll, unter einem "
+"bestimmten Schwellenwert liegt wie es konstant bleiben wird. Mit anderen "
+"Worten, lassen Sie 10-20% Ihres Speichers frei und führen Sie alle kleinen "
+"Zuweisungen durch, und alles ist gut."
 
 #: ../../docs/development/cpp/core_types.rst:65
+#, fuzzy
 msgid ""
 "Godot ensures that all objects that can be allocated dynamically are small "
 "(less than a few kb at most). But what happens if an allocation is too large "
@@ -133,10 +162,19 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
+"Godot stellt sicher, dass alle Objekte, die dynamisch zugewiesen werden "
+"können, klein sind (höchstens einige KB). Aber was passiert, wenn eine "
+"Zuordnung zu groß ist (z.B. ein Bild oder eine Netzgeometrie oder ein großes "
+"Array)? In diesem Fall hat Godot die Möglichkeit einen dynamischen "
+"Speicherpool zu verwenden. Dieser Speicher muss gesperrt sein, damit auf ihn "
+"zugegriffen werden kann. Wenn einer Zuordnung der Speicherplatz ausgeht, "
+"wird der Pool bei Bedarf neu angeordnet und komprimiert. Abhängig von den "
+"Anforderungen des Spiels kann der Programmierer die Größe des dynamischen "
+"Speicherpools konfigurieren."
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
-msgstr ""
+msgstr "Speicher zuweisen"
 
 #: ../../docs/development/cpp/core_types.rst:76
 msgid ""
@@ -144,24 +182,30 @@ msgid ""
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
+"Godot verfügt über viele Tools zum Verfolgen der Speichernutzung in einem "
+"Spiel, insbesondere während des Debuggens. Aus diesem Grund sollten die "
+"regulären C und C++ Bibliotheksaufrufe nicht verwendet werden. Stattdessen "
+"werden einige andere bereitgestellt."
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Für die Zuweisung im C-Stil bietet Godot einige Makros:"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard C "
 "library."
 msgstr ""
+"Diese entsprechen dem üblichen malloc, realloc, freigeben aus der Standard C-"
+"Bibliothek."
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "Für die Zuweisung im C++ Stil stehen spezielle Makros zur Verfügung:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "die äquivalent zu new, delete, new [] und delete [] sind."
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
@@ -195,20 +239,24 @@ msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
 "pool_vector.cpp>`__"
 msgstr ""
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "Container"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot bietet auch eine Reihe gängiger Container:"
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
@@ -216,7 +264,7 @@ msgstr "Vektor"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
@@ -255,22 +303,28 @@ msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
 "h>`__"
 msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
 "h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:174
 msgid "String"
@@ -289,6 +343,8 @@ msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
 "ustring.h>`__"
 msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
+"ustring.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
@@ -313,20 +369,24 @@ msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
+"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
-msgstr ""
+msgstr "Mathe-Typen"
 
 #: ../../docs/development/cpp/core_types.rst:205
 msgid ""
 "There are several linear math types available in the core/math directory."
 msgstr ""
+"Im Verzeichnis core/math stehen mehrere lineare Mathe-Typen zur Verfügung."
 
 #: ../../docs/development/cpp/core_types.rst:211
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
@@ -343,10 +403,12 @@ msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
 "node_path.h>`__"
 msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
-msgstr ""
+msgstr "RID"
 
 #: ../../docs/development/cpp/core_types.rst:227
 msgid ""
@@ -359,3 +421,4 @@ msgstr ""
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"

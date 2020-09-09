@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,7 @@ msgstr ""
 "Par exemple, si vous souhaitez exécuter du code uniquement dans l'éditeur, "
 "utilisez :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:49
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
@@ -128,7 +128,7 @@ msgstr ""
 "En revanche, si vous voulez exécuter du code uniquement dans le jeu, il "
 "suffit d'utiliser la négation de l'expression précédente :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:64
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
 "editor and in-game."
@@ -136,12 +136,12 @@ msgstr ""
 "Les morceaux de code qui n'utilisent aucune des 2 conditions ci-dessus "
 "seront exécutés à la fois dans l'éditeur et dans le jeu."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr ""
 "Voici à quoi une fonction ``_process()`` pourrait ressembler pour vous :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:97
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
 "when we remove the script, the node will keep its rotation. Be careful to "
@@ -151,11 +151,11 @@ msgstr ""
 "nous supprimons le script, le nœud conserve sa rotation. Faites attention à "
 "ne pas faire de modifications non souhaitées."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:100
 msgid "Try it out"
 msgstr "Testez-le"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
@@ -163,7 +163,7 @@ msgstr ""
 "Ajoutez un nœud ``Sprite`` à votre scène et donnez lui la texture de l'icône "
 "Godot. Attachez-lui un script, ouvrez-le, et changez-le en ceci :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:127
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
@@ -171,14 +171,14 @@ msgstr ""
 "Sauvegardez le script et revenez à l'éditeur. Vous devriez maintenant voir "
 "votre objet tourner. Si vous lancez le jeu, il tournera également."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:131
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 "Si vous ne voyez pas les modifications, rechargez la scène (fermez-la et "
 "ouvrez-la à nouveau)."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:133
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
@@ -186,7 +186,7 @@ msgstr ""
 "Choisissons maintenant quel code fonctionne à quel moment. Modifiez votre "
 "fonction ``_process()`` pour qu'elle ressemble à ceci :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:158
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
@@ -195,11 +195,11 @@ msgstr ""
 "dans l'éditeur, mais si vous exécutez le jeu, il tournera dans le sens "
 "antihoraire."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
 msgid "Editing variables"
 msgstr "Édition des variables"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
 "Add and export a variable speed to the script. The function set_speed after "
 "\"setget\" is executed with your input to change the variable. Modify  "
@@ -209,7 +209,7 @@ msgstr ""
 "après \"setget\" est exécutée avec votre entrée pour modifier la variable. "
 "Modifiez ``_process()`` pour inclure la vitesse de rotation."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:213
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -224,11 +224,11 @@ msgstr ""
 "nœuds doivent également s'exécuter dans l'éditeur. Les nœuds chargés "
 "automatiquement (Autoload) ne sont pas du tout accessibles dans l'éditeur."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:216
 msgid "Instancing scenes"
 msgstr "Instancier des scènes"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:218
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "
 "currently opened in the editor. Be sure to set the scene root as the owner "
@@ -240,15 +240,15 @@ msgstr ""
 "de la scène comme étant le propriétaire de tous les nœuds créés de cette "
 "manière, sinon les nœuds ne seront pas visibles dans l'éditeur."
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:220
 msgid "If you are using ``tool``:"
 msgstr "Si vous utilisez un ``tool`` :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:239
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr "Si vous utilisez :ref:`EditorScript<class_EditorScript>` :"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:260
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

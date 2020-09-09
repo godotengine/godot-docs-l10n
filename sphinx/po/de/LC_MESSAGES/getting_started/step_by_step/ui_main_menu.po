@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,14 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr "Erstelle einen Titelbildschirm"
+msgstr "Erstellung eines Titelbildschirms"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
-"In den nächsten zwei Tutorials, wirst du mithilfe des Benutzeroberflächen "
+"In den nächsten zwei Anleitungen, wirst du mithilfe des Benutzeroberflächen "
 "Systems der Engine, Schritt für Schritt eine zugängliche Benutzeroberfläche "
 "erstellen:"
 
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 "Lade die Projekt Dateien herunter: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` und extrahiere das Archiv. Importiere das ``start/"
-"`` Projekt nach Godot um dem Tutorial zu folgen. Der ``end\\`` Ordner "
+"`` Projekt nach Godot um der Anleitung zu folgen. Der ``end\\`` Ordner "
 "enthält das finale Ergebnis. Du findest alle Sprites im ``start/assets/"
 "main_menu``` Ordner."
 
@@ -167,18 +167,18 @@ msgstr ""
 "spezifische Komponenten, die von diesen Vorlagen abstammen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
-#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
 "work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
-"Wir werden den ersten Ansatz verwenden, weil die erste Version deiner UI "
+"Wir werden den ersten Ansatz verwenden, weil die erste Version deines UI "
 "möglcherweise nicht so gut klappen wird wie du es gerne hättest. Du wirst "
 "wahrscheinlich Teile wieder verwerfen und Komponenten mit der Zeit "
-"überarbeiten. Wenn du dir sicher bist, dass alles funktioniert, kannst du "
-"sie ganz einfach wiederverwendbar machen, wie unten gezeigt."
+"überarbeiten. Wenn du dir sicher bist, dass alles funktioniert, können "
+"einige Teile ganz einfach wiederverwendbar gemacht werden, wie weiter unten "
+"gezeigt wird."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
@@ -208,7 +208,7 @@ msgstr "Aufgliederung des UI-Entwurfs"
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
 msgid "Here are my three rules of thumb to find the right containers:"
 msgstr ""
-"Hier sind meine drei Faustregeln, wie man die richtigen Behälter findet:"
+"Hier sind meine drei Faustregeln, wie man die richtigen Container findet:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
 msgid ""
@@ -271,9 +271,9 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
-"Behälter passen sich an die Auflösung und das Seitenverhältnis des "
+"Container passen sich an die Auflösung und das Seitenverhältnis des "
 "Bildschirms an. Obwohl wir UI-Elemente händisch platzieren könnten, sind "
-"Behälter schneller, genauer und **responsiv**."
+"Container schneller, genauer und **reaktionsschneller**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
 msgid "Prepare the Main Menu scene"
@@ -286,12 +286,18 @@ msgid ""
 "editor then change **Display > Window > Size > Width** to ``1366`` and "
 "**Display > Window > Size > Height** to ``768``."
 msgstr ""
+"Diese Anleitung basiert auf einer Fenstergröße von 1366x768. Um die "
+"Fenstergröße des Projekts zu ändern, öffne **Project > Project Settings** "
+"oben im Editor und ändere **Display > Window > Size > Width** zu ``1366`` "
+"und **Display > Window > Size > Height** zu ``768``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Falls du vergisst die Fenstergröße zu ändern, könnten sich Ankerpunkte und "
+"Container nicht wie gewünscht verhalten."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
@@ -302,7 +308,6 @@ msgstr ""
 "leere Szene zu erstellen, klicke auf das Menü **Szene -> Neue Szene**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -314,8 +319,9 @@ msgstr ""
 "können. Die Wurzel deiner UI sollte der alleräußerste Container oder das "
 "Element sein. In diesem Fall ist es ein ``MarginContainer``. "
 "``MarginContainer`` ist für die meisten Oberflächen ein guter Ausgangspunkt, "
-"da man oft einen Rand um sie herum braucht. Drücke ``Meta+S``, um die Szene "
-"auf dem Datenträger zu speichern. Nenne sie *MainMenu*."
+"da man oft einen Rand um sie herum braucht. Drücke :kbd:`Strg + S` (:kbd:"
+"`Cmd + S` auf MacOS), um die Szene auf dem Datenträger zu speichern. Nenne "
+"sie *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
@@ -380,7 +386,6 @@ msgid "and the main menu's illustration."
 msgstr "Und die Darstellung des Hauptmenüs."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
 "macOS) on your keyboard. Start to type ``TextureRect`` to find the "
@@ -388,10 +393,11 @@ msgid ""
 "`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"Drücke auf die Schaltfläche ``Add Node`` oder drücke ``Strg+A`` auf der "
-"Tastatur. Gib ``TextureRect`` ein, um den entsprechenden Node zu finden und "
-"drücke Eingabe. Wähle den neuen Node aus und drücke fünf Mal ``Strg+D``, um "
-"fünf zusätzliche Instanzen zu erzeugen."
+"Klicke auf **Add Node** oder drücke :kbd:`Strg + A` (:kbd:`Cmd + A` auf "
+"MacOS) auf der Tastatur. Gib ``TextureRect`` ein, um das entsprechende Node "
+"zu finden und drücke Enter. Mit der neuen Node ausgewählt, drücke fünf Mal :"
+"kbd:`Strg + D` (:kbd:`Cmd + D` auf MacOS), um fünf zusätzliche "
+"``TextureRect`` Instanzen zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
@@ -418,9 +424,9 @@ msgid ""
 msgstr ""
 "Wende die Operation auf alle ``TextureRect``-Nodes an. Das Logo, die "
 "Illustration, die drei Menüpunkte und die Versionsangabe sollten jeweils "
-"eigenen Knoten sein. Benenne die Knoten dann im Szenenfenster durch einen "
-"Doppelklick um. Da noch nichts im Behälter plaziert wurde, sieht er noch "
-"etwas unordenlich aus."
+"eigene Nodes sein. Benenne die Nodes dann im Szenenfenster durch einen "
+"Doppelklick um. Da noch nichts im Container platziert wurde, sieht er noch "
+"etwas unordentlich aus."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
 msgid "The six nodes with textures loaded."
@@ -537,7 +543,6 @@ msgstr ""
 "sobald du ihn in dem CenterContainer platzierst."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -549,11 +554,11 @@ msgid ""
 msgstr ""
 "Um die Menüpunkte und das Logo links auseinanderzuziehen, werden wir einen "
 "letzten Container mit seinen size flags verwenden. Wähle den "
-"``VBoxContainer`` und drücke ``Meta+A``, um einen neuen Node darin "
-"einzufügen. Füge einen zweiten ``VBoxContainer`` hinzu und nenne ihn "
-"\"MenuOptions\". Selektiere die drei Menüpunkte ``Continue``, ``NewGame`` "
-"und ``Options``, und ziehe sie in den neuen ``VBoxContainer``. Das Layout "
-"der UI sollte sich, wenn überhaupt, kaum ändern."
+"``VBoxContainer`` und drücke :kbd:`Strg + A` (:kbd:`Cmd + A` auf MacOS), um "
+"ein neues Node darin einzufügen. Füge einen zweiten ``VBoxContainer`` hinzu "
+"und nenne ihn *MenuOptions*. Wähle alle drei Menüpunkte ``Continue``, "
+"``NewGame`` und ``Options`` und ziehe sie in den neuen ``VBoxContainer``. "
+"Das Layout der Benutzeroberfläche sollte sich, wenn überhaupt, kaum ändern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
@@ -629,7 +634,7 @@ msgid ""
 msgstr ""
 "Glückwunsch, dass du es so weit geschafft hast! Du kannst das fertige Menü "
 "herunterladen und mit deinem vergleichen: :download:`ui_main_menu_design.zip "
-"<files/ui_main_menu_design.zip>`. Im nächsten Tutorial wirst du eine "
+"<files/ui_main_menu_design.zip>`. In der nächsten Anleitung wirst du eine "
 "Spieleoberfläche mit Leisten und Gegenstandszählern erstellen."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
@@ -646,7 +651,6 @@ msgstr ""
 "Größe der UI-Elemente zu steuern."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
@@ -654,8 +658,8 @@ msgid ""
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
 "Die Reihenfolge der Verschachtelung ist entscheidend. Um zu sehen, ob sich "
-"deine UI ordentilch an verschiedene Seitenverhältnisse anpasst, wähle den "
-"Wurzelknoten, drücke die Taste Q, um den Auswahlmodus zu aktivieren, wähle "
+"deine UI ordentlich an verschiedene Seitenverhältnisse anpasst, wähle den "
+"Wurzel-Node, drücke die Taste Q, um den Auswahlmodus zu aktivieren, wähle "
 "den Container aus und ziehe an einer seiner Ecken, um die Größe zu ändern. "
 "Die UI-Komponenten darin sollten sich dynamisch anpassen."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "Gestaltung von Benutzeroberflächen mit den Kontroll-Nodes"
+msgstr "Benutzeroberflächen gestalten mit Kontroll-Nodes"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -69,8 +69,8 @@ msgid ""
 "The five most common containers (you can learn more about containers in the :"
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
-"Die fünf häufigsten Behälter (mehr dazu in der Dokumentation unter :ref:`GUI "
-"Containers <doc_gui_containers>`)."
+"Die fünf häufigsten Container (mehr dazu in der Dokumentation unter :ref:"
+"`GUI Containers <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -274,18 +274,18 @@ msgstr "TextureButton (Textur-Knopf)"
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
 #, fuzzy
 msgid ""
-"**TextureButton** is like TextureRect, except it has 5 texture slots: one "
+"**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
 "Pressed, and Hover textures. Focused is useful if your interface listens to "
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** ist TextureRect ähnlich, außer dass er 5 Textur Slots hat: "
+"**TextureButton** ist wie TextureRect, außer dass er 5 Textur Slots hat: "
 "einen für jeden Button Status. Meistens wirst du die Texturen Normal, "
 "Pressed und Hover verwenden. Focused ist hilfreich wenn deine "
-"Benutzeroberfläche Tastenkürzel erwartet. Der sechste Textur Slot, die Click "
-"Mask, lässt dich mithilfe eines 2-bit Schwarz-Weiß Bildes die anklickbare "
-"Zone definieren."
+"Benutzeroberfläche Tasteneingaben erwartet. Der sechste Textur Slot, die "
+"Click Mask, lässt dich mithilfe eines 1-bit Schwarz-Weiß Bildes die "
+"anklickbare Fläche definieren."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -691,7 +691,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:298
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
-"GridContainer, um Control-Knoten in einem gitterartigen Muster anzuordnen"
+"GridContainer, um Kontroll-Nodes in einem gitterartigen Muster anzuordnen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:300
 msgid ""

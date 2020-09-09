@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "Розміщення в один клік"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "Звучить добре, що це?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -33,6 +33,11 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, etc.), "
 "it's good to let the user know that it exists."
 msgstr ""
+"Ця опція пропонується автоматично, якщо платформа сконфігурована правильно "
+"та підтримуваний пристрій приєднано до комп'ютера. Оскільки багато чого може "
+"піти не так на різних рівнях (платформа може бути сконфігурована не "
+"правильно, SDK не коректно встановлений, пристрій не вірно сконфігурований і "
+"т.і.), добре повідомити користувачу про таку можливість."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:15
 msgid ""
@@ -41,29 +46,37 @@ msgid ""
 "export, install and run the project (in debug mode) on the device. This "
 "feature is called, in industry buzzwords, \"One-Click Deploy\"."
 msgstr ""
+"Деякі платформи (на даний момент лише Android) можуть виявити, коли USB-"
+"пристрій підключено до комп'ютера, і пропонувати користувачеві автоматично "
+"експортувати, встановлювати та запускати проект (у режимі налагодження) на "
+"пристрої. У галузевих термінах ця функція називається \"Розміщення в один "
+"клік\"."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:21
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "Послідовність кроків для розміщення в один клік"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Configure target platform."
-msgstr ""
+msgstr "Сконфігурувати цільову платформу."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:24
+#, fuzzy
 msgid ""
 "Configure device (make sure it's in developer mode, likes the computer, USB "
 "cable is plugged, USB is recognized, etc.)."
 msgstr ""
+"Сконфігурувати пристрій (впевніться, що він знаходиться в режимі "
+"розробника,  USB-кабель підключений, розпізнається USB тощо )"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid "Connect the device..."
-msgstr ""
+msgstr "Підключіть пристрій..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:27
 msgid "And voilà!"
-msgstr ""
+msgstr "І все!"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:31
 msgid "Click once... and deploy!"
-msgstr ""
+msgstr "Один клік... і розміщено!"

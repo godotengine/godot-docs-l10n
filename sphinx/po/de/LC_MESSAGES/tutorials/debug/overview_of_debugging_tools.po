@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
-msgstr ""
+msgstr "Übersicht der Debugging-Tools"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:6
 msgid ""
 "This guide will give you an overview of the available debugging tools in the "
 "engine."
 msgstr ""
+"Dieses Handbuch gibt Ihnen einen Überblick über die verfügbaren Debugging-"
+"Tools in der Engine."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:9
 msgid ""
@@ -34,42 +36,53 @@ msgid ""
 "performances. It also offers options to visualize collision boxes and "
 "navigation polygons in the running game."
 msgstr ""
+"Godot wird mit einem leistungsstarken Debugger und Profilern geliefert, mit "
+"denen Sie Fehler aufspüren, Ihr Spiel zur Laufzeit überprüfen, wichtige "
+"Messdaten überwachen und die Leistung messen können. Es bietet auch Optionen "
+"zur Visualisierung von Kollisionsfeldern und Navigationspolygonen im "
+"laufenden Spiel."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
 msgid ""
 "Finally, you have options to debug the game running on a remote device and "
 "to reload changes to your scenes or your code while the game is running."
 msgstr ""
+"Schließlich haben Sie die Möglichkeit, das auf einem Remote-Gerät "
+"ausgeführte Spiel zu debuggen und Änderungen an Ihren Szenen oder Ihrem Code "
+"neu zu laden, während das Spiel ausgeführt wird."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
-#, fuzzy
 msgid "Debugger Panel"
-msgstr "Debugger"
+msgstr "Debugger Panel"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
 msgid ""
 "Many of Godot's debugging tools are part of the Debugger panel, which you "
 "can find information about in :ref:`doc_debugger_panel`."
 msgstr ""
+"Viele der Debugging-Tools von Godot sind Teil des Debugger-Panels, zu dem "
+"Sie hier Informationen finden :ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
-#, fuzzy
 msgid "Debug menu options"
-msgstr "**Beschreibung**"
+msgstr "Debug Menü Optionen"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
 msgid ""
 "There are a few common debug options you can toggle on or off when running "
 "your game in the editor, which can help you in debugging your game."
 msgstr ""
+"Es gibt einige gängige Debug-Optionen, die Sie beim Ausführen Ihres Spiels "
+"im Editor ein- oder ausschalten können, um das Debuggen Ihres Spiels zu "
+"erleichtern."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid "You can find these options in the **Debug** editor menu."
-msgstr ""
+msgstr "Sie finden diese Optionen im Editor-Menü **Debuggen**."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Here are the descriptions of the options:"
-msgstr ""
+msgstr "Hier sind die Beschreibungen der Optionen:"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
@@ -80,6 +93,8 @@ msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer for debugging."
 msgstr ""
+"Beim Exportieren und Bereitstellen versucht die resultierende ausführbare "
+"Datei eine Verbindung zur IP Ihres Computers zwecks Debuggen herzustellen."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
@@ -90,6 +105,8 @@ msgid ""
 "This option speeds up testing for games with a large footprint on remote "
 "devices."
 msgstr ""
+"Diese Option beschleunigt das Testen von Spielen mit großem Platzbedarf auf "
+"Remote-Geräten."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:46
 msgid ""
@@ -97,12 +114,18 @@ msgid ""
 "game, deploying the game builds a minimal executable. The editor then "
 "provides files from the project over the network."
 msgstr ""
+"Wenn **Kleine Programmdatei über Netzwerk-Dateisystem** aktiviert ist, wird "
+"durch das Bereitstellen des Spiels eine minimale ausführbare Datei erstellt, "
+"anstatt das gesamte Spiel zu exportieren. Der Editor stellt dann Dateien aus "
+"dem Projekt über das Netzwerk bereit."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:50
 msgid ""
 "Also, on Android, the game is deployed using the USB cable to speed up "
 "deployment."
 msgstr ""
+"Damit es schneller geht wird unter Android das Spiel auch über USB-Kabel "
+"bereitgestellt."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
@@ -113,6 +136,8 @@ msgid ""
 "This option makes collision shapes and raycast nodes visible in the running "
 "game."
 msgstr ""
+"Diese Option macht Kollisionsformen und Raycast-Nodes im laufenden Spiel "
+"sichtbar."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
@@ -120,7 +145,7 @@ msgstr "Navigation sichtbar"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
-msgstr ""
+msgstr "Navigation-Meshes und Polygone werden im laufenden Spiel angezeigt."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
@@ -132,6 +157,9 @@ msgid ""
 "appears instantly. When used remotely on a device, this is more efficient "
 "with the network filesystem."
 msgstr ""
+"Mit dieser Option wird jede Änderung, die Sie zur Laufzeit an einer Szene im "
+"Editor vornehmen, sofort angezeigt. Bei Remote-Zugriff ist dies mit dem "
+"Netzwerk-Dateisystem effizienter."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
@@ -142,10 +170,12 @@ msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with the network filesystem."
 msgstr ""
+"Jedes gespeicherte Skript wird im laufenden Spiel neu geladen. Bei Remote-"
+"Zugriff ist dies mit dem Netzwerk-Dateisystem effizienter."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Script editor debug tools and options"
-msgstr ""
+msgstr "Debug-Tools und Optionen für den Skript-Editor"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid ""
@@ -153,6 +183,9 @@ msgid ""
 "and two options. The breakpoint tools can also be found in the **Debugger** "
 "tab of the debugger."
 msgstr ""
+"Der Skripteditor verfügt über eigene Debug-Tools zur Verwendung mit "
+"Haltepunkten und zwei Optionen. Diese Haltepunkt-Tools finden Sie auch auf "
+"der Registerkarte **Debugger** des Debuggers."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:84
 msgid ""
@@ -169,60 +202,65 @@ msgid ""
 "your game with an external editor."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:94
-#, fuzzy
-msgid "Debug project settings"
-msgstr "Projekteinstellungen überschreiben"
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:95
+msgid ""
+"Breakpoints won't break on code if it's :ref:`running in a thread "
+"<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
+"debugger."
+msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:96
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
+msgid "Debug project settings"
+msgstr "Debug Projekteinstellungen"
+
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
-#, fuzzy
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
 msgid "Settings"
-msgstr "Zeichenketten"
+msgstr "Einstellungen"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:107
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "GDScript"
 msgstr "GDScript"
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:109
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
 msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
 msgid "Shapes"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:115
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
 msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:125
 msgid "Remote in scene dock"
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
 "inspect or change the nodes' parameters in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
+#: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."

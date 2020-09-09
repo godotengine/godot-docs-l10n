@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -293,6 +293,7 @@ msgid "Conclusion"
 msgstr "Вывод"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:278
+#, fuzzy
 msgid ""
 "Many of Godot's built-in node types provide signals you can use to detect "
 "events. For example, an :ref:`Area2D <class_Area2D>` representing a coin "
@@ -302,8 +303,8 @@ msgstr ""
 "Многие встроенные в Godot типы узлов предоставляют сигналы, которые можно "
 "использовать для обнаружения событий. Например, объект :ref:`Area2D "
 "<class_Area2D>`, представленный в виде монетки, посылает сигнал "
-"``body_entered`` всякий раз, когда физическое тело игрока входит в ее форму "
-"столкновения, давая вам знать, когда игрок её собрал."
+"``body_entered``(тело_вошло) всякий раз, когда физическое тело игрока входит "
+"в ее форму столкновения (коллизии), давая вам знать, когда игрок её собрал."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:283
 msgid ""

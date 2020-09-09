@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "Импорт переводов"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Игры и интернационализация"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -31,6 +31,10 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"В мире много разных рынков и культур, и, чтобы максимизировать прибыль™, в "
+"настоящее время игры выпускаются на нескольких языках. Чтобы решить эту "
+"проблему, любой современный игровой движок должен поддерживать "
+"интернационализированный текст."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -39,6 +43,11 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"В обычных настольных или мобильных приложениях интернационализированный "
+"текст обычно находится в файлах ресурсов (или файлах .po для материалов "
+"GNU). Однако игры могут использовать на несколько порядков больше текста, "
+"чем приложения, поэтому они должны поддерживать эффективные методы работы с "
+"большим количеством многоязычного текста."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -49,6 +58,12 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"Есть два подхода к созданию многоязычных игр и приложений. Оба основаны на "
+"системе \"ключ:значение\". Первый - использовать в качестве ключа один из "
+"языков (обычно английский), второй - использовать определенный "
+"идентификатор. Первый подход, вероятно, проще для разработки, если игра "
+"сначала выпускается на английском, а затем на других языках, но полный "
+"кошмар при одновременной работе со многими языками."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -57,6 +72,11 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"Как правило, в играх используется второй подход, и для каждой строки "
+"используется уникальный идентификатор. Это позволяет вам редактировать текст "
+"во время его перевода на другие языки. Уникальный идентификатор может быть "
+"числом, строкой или строкой с числом (в любом случае это просто уникальная "
+"строка)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid ""
@@ -64,10 +84,13 @@ msgid ""
 "translations written in the gettext ``.po`` format. See :ref:"
 "`doc_localization_using_gettext` for details."
 msgstr ""
+"Если вам нужен более мощный формат файла, Godot также поддерживает загрузку "
+"переводов, написанных в формате gettext ``.po``. Смотрите для подробностей :"
+"ref:`doc_localization_using_gettext`."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid "Translation format"
-msgstr ""
+msgstr "Translation format (формат перевода)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
 msgid ""
@@ -78,6 +101,12 @@ msgid ""
 "without a `byte order mark <https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 msgstr ""
+"Чтобы завершить картину и обеспечить эффективную поддержку переводов, Godot "
+"имеет специальный импортер, который может читать файлы CSV. Большинство "
+"редакторов электронных таблиц могут экспортировать в этот формат, поэтому "
+"единственное требование - файлы должны иметь особое расположение. Файлы CSV "
+"**должны** сохраняться в кодировке UTF-8 `без отметки порядка байтов "
+"<https://en.wikipedia.org/wiki/Byte_order_mark> `__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""
@@ -86,21 +115,27 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"По умолчанию, Microsoft Excel всегда сохраняет файлы CSV в кодировке ANSI, а "
+"не в UTF-8. Для этого нет встроенного способа, но есть обходные пути, "
+"описанные `здесь <https://stackoverflow.com/questions/4221176/excel-to-csv-"
+"with-utf8-encoding> `__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"Мы рекомендуем вместо этого использовать `LibreOffice <https://www."
+"libreoffice.org/>` __ или Google Sheets."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid "CSV files must be formatted as follows:"
-msgstr ""
+msgstr "Файлы CSV должны быть отформатированы следующим образом:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "keys"
-msgstr ""
+msgstr "ключи"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
 msgid "<lang1>"
@@ -142,6 +177,14 @@ msgid ""
 "and \"Key1\" will be different keys. The top-left cell is ignored and can be "
 "left empty or having any content. Here's an example:"
 msgstr ""
+"Теги \"lang\" должны представлять язык, который должен быть одним из :ref:"
+"`действительных локалей <doc_locales>`, поддерживаемых движком. Теги \"KEY\" "
+"должны быть уникальными и универсально представлять строку (обычно они "
+"пишутся в верхнем регистре, чтобы отличать их от других строк). Эти ключи "
+"будут заменены во время выполнения соответствующей переведенной строкой. "
+"Обратите внимание, что регистр важен, \"KEY1\" и \"Key1\" будут разными "
+"ключами. Левая верхняя ячейка игнорируется и может быть оставлена пустой или "
+"с любым содержимым. Вот пример:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
 msgid "en"
@@ -161,15 +204,15 @@ msgstr "GREET"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "Hola, amigo!"
-msgstr ""
+msgstr "Hola, amigo! (Привет, друг!)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは (Привет)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "ASK"
@@ -177,15 +220,15 @@ msgstr "ASK"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "How are you?"
-msgstr ""
+msgstr "Как ты?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está? (Как дела?)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか (Как поживаешь?)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "BYE"
@@ -193,31 +236,32 @@ msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Goodbye"
-msgstr ""
+msgstr "Goodbye (Прощай)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós (Прощай)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
 msgid "さようなら"
 msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
+#, fuzzy
 msgid "QUOTE"
-msgstr ""
+msgstr "QUOTE (ЦИТАТА)"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hello\" said the man."
-msgstr ""
+msgstr "\"Hello\" said the man."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "\"Hola\" dijo el hombre."
-msgstr ""
+msgstr "\"Hola\" dijo el hombre."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
 msgid "「こんにちは」男は言いました"
-msgstr ""
+msgstr "「こんにちは」男は言いました"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
 msgid ""
@@ -231,16 +275,27 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
+"Тот же пример показан ниже в виде простого текстового файла, разделенного "
+"запятыми, который должен быть результатом редактирования указанного выше в "
+"электронной таблице. При редактировании текстовой версии не забудьте "
+"заключить в двойные кавычки любое сообщение, содержащее запятые, разрывы "
+"строк или двойные кавычки, чтобы запятые не анализировались как разделители, "
+"разрывы строк не создавали новые записи, а двойные кавычки не "
+"анализировались как заключительные символы. Убедитесь, что в сообщении нет "
+"двойных кавычек, поставив перед ними другую двойную кавычку. Кроме того, вы "
+"можете выбрать другой разделитель, кроме запятой, в параметрах импорта."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
 msgid "CSV importer"
-msgstr ""
+msgstr "Импортёр CSV"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:109
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"По умолчанию Godot обрабатывает файлы CSV как переводы. Он импортирует их и "
+"сгенерирует рядом с собой один или несколько сжатых файлов ресурсов перевода."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:112
 msgid ""
@@ -248,6 +303,9 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"Импорт также добавит перевод в список переводов, загружаемых при запуске "
+"игры, указанный в project.godot (или в настройках проекта). Godot также "
+"позволяет загружать и удалять переводы во время выполнения."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
 msgid ""
@@ -255,7 +313,12 @@ msgid ""
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
+"Выберите файл ``.csv``и перейдите в панель **Импорт**, чтобы определить "
+"параметры импорта. Вы можете переключить сжатие импортированных переводов и "
+"выбрать разделитель, который будет использоваться при синтаксическом анализе "
+"файла CSV."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr ""
+"Не забудьте нажать **Reimport** после любого изменения этих параметров."

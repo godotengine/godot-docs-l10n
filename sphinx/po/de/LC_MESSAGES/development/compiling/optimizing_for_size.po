@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,10 @@ msgid ""
 "SCons options. You can then save this file and place it at the root of your "
 "Godot source directory."
 msgstr ""
+"Du kannst den Online `Godot Bau-Options Generator <https://godot-build-"
+"options-generator.github.io/>`__ nutzen, um eine ``custom.py`` Datei zu "
+"erzeugen, welche die SCons Optionen beinhaltet. Dann kann diese Datei im "
+"Wurzelverzeichnis von Godot gespeichert werden."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
@@ -74,10 +78,13 @@ msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
+"Die meisten kleinen Spiele benötigen keine komplexen GUI Kontroll-Elemente "
+"wie Tree, ItemList, TextEdit or GraphEdit. Sie können abgeschaltet werden "
+"mit einem Build Flag:"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "Unerwünschte Module deaktivieren"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
@@ -108,9 +115,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr ":ref:`Behälterr<doc_gui_containers>`"
+msgstr ":ref:`doc_overriding_build_options`."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -163,7 +169,11 @@ msgid ""
 "compressor can be used. This can reduce binary size considerably."
 msgstr ""
 
-#: ../../docs/development/compiling/optimizing_for_size.rst:162
+#: ../../docs/development/compiling/optimizing_for_size.rst:164
+msgid "You cannot use embedded PCK files with UPX compression."
+msgstr ""
+
+#: ../../docs/development/compiling/optimizing_for_size.rst:166
 msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "

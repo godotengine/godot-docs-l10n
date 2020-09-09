@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,13 @@ msgid "GDScript format strings"
 msgstr "Строки формата GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
-#, fuzzy
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript предлагает свойство *format strings*, которая позволяет повторно "
-"использовать текстовые шаблоны для создания различных, но похожих строк."
+"GDScript предлагает возможность *форматирования строк*, которое позволяет "
+"повторно использовать текстовые шаблоны для сжатого создания различных, но "
+"похожих строк."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -455,12 +455,11 @@ msgid "key"
 msgstr "ключ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
-"\"Привет, {имя} v{версия}!\".format({\"имя\":\"Godette\", \"версия\":"
+"\"Привет, {name} v{version}!\".format({\"имя\":\"Godette\", \"версия\":"
 "\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
@@ -479,7 +478,6 @@ msgid "index"
 msgstr "индекс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 msgstr "\"Привет, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 
@@ -489,11 +487,11 @@ msgid "mix"
 msgstr "Сочетание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
-"\"Привет, {0} v{версия}!\".format({\"0\":\"Godette\", \"версия\":\"3.0\"})"
+"``\"Привет, {0} v{version}!\".format({\"0\":\"Godette\", \"версия\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -503,33 +501,28 @@ msgid "Array"
 msgstr "Массив"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"\"Привет, {имя} v{версия}!\".format([[\"версия\":\"3.0\"], [\"имя\":\"Godette"
-"\"])"
+"``\"Привет, {name} v{version}!\".format([[\"версия\":\"3.0\"], [\"имя\","
+"\"Godette\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr "\"Привет, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+msgstr "``\"Привет, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
-#, fuzzy
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr "\"Привет, {имя} v{0}!\".format([3.0, [\"имя\":\"Godette\"]])"
+msgstr "``\"Привет, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "no index"
-msgstr "индекс"
+msgstr "без индекса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr "\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Привет, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
@@ -544,9 +537,8 @@ msgid "Infix (default)"
 msgstr "Infix (по умолчанию)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
-#, fuzzy
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr "\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
@@ -559,21 +551,18 @@ msgid "Postfix"
 msgstr "Постфикс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr "\"Привет, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
+msgstr "``\"Привет, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
 msgstr "Префикс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
-#, fuzzy
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr "\"Привет, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
+msgstr "``\"Привет, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
-#, fuzzy
 msgid ""
 "Combining both the ``String.format`` method and the ``%`` operator could be "
 "useful, as ``String.format`` does not have a way to manipulate the "
@@ -584,13 +573,12 @@ msgstr ""
 "чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
-"\"Привет, {0} v{версия}\".format({0:\"Godette\", \"версия\":\"%0.2f\" % "
-"3.114})"
+"``\"Привет, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"

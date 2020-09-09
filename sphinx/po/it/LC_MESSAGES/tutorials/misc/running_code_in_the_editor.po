@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,75 +89,75 @@ msgstr ""
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:49
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "the same statement:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:50
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:64
 msgid ""
 "Pieces of code do not have either of the 2 conditions above will run both in-"
 "editor and in-game."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:52
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:97
 msgid ""
 "Modifications in editor are permanent. For example, in the following case, "
 "when we remove the script, the node will keep its rotation. Be careful to "
 "avoid making unwanted modifications."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:69
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:100
 msgid "Try it out"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:71
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
 msgid ""
 "Add a ``Sprite`` node to your scene and set the texture to Godot icon. "
 "Attach and open a script, and change it to this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:82
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:127
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:86
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:131
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:88
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:133
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:99
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:158
 msgid ""
 "Save the script. Now the object will spin clockwise in the editor, but if "
 "you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:102
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
 #, fuzzy
 msgid "Editing variables"
 msgstr "Modificare le istanze"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:103
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
 "Add and export a variable speed to the script. The function set_speed after "
 "\"setget\" is executed with your input to change the variable. Modify  "
 "``_process()`` to include the rotation speed."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:125
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:213
 msgid ""
 "Code from other nodes doesn't run in the editor. Your access to other nodes "
 "is limited. You can access the tree and nodes, and their default properties, "
@@ -166,11 +166,11 @@ msgid ""
 "all."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:128
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:216
 msgid "Instancing scenes"
 msgstr "Instanziare scene"
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:130
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:218
 msgid ""
 "You can instantiate packed scenes normally and add them to the scene "
 "currently opened in the editor. Be sure to set the scene root as the owner "
@@ -178,15 +178,15 @@ msgid ""
 "editor."
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:132
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:220
 msgid "If you are using ``tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:142
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:239
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:153
+#: ../../docs/tutorials/misc/running_code_in_the_editor.rst:260
 msgid ""
 "Using ``tool`` improperly can yield many errors. It is advised to first "
 "write the code how you want it, and only then add the ``tool`` keyword to "

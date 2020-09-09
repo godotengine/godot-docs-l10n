@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High-level vs low-level API"
-msgstr ""
+msgstr "High-level vs low-level API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -235,7 +235,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
 msgid "Managing connections"
-msgstr ""
+msgstr "Verbindungen verwalten"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
 msgid ""
@@ -252,11 +252,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
 msgid "``network_peer_connected(int id)``"
-msgstr ""
+msgstr "``network_peer_connected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
 msgid "``network_peer_disconnected(int id)``"
-msgstr ""
+msgstr "``network_peer_disconnected(int id)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
@@ -276,18 +276,16 @@ msgid "Clients:"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
-#, fuzzy
 msgid "``connected_to_server``"
-msgstr "``Drehung``"
+msgstr "``connected_to_server``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
-#, fuzzy
 msgid "``connection_failed``"
-msgstr "``Drehung``"
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 msgid "``server_disconnected``"
-msgstr ""
+msgstr "``server_disconnected``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -308,7 +306,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
@@ -319,43 +317,43 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
 msgid "``rpc(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
 msgid "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
 msgid "``rpc_unreliable(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_unreliable(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
 msgid "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
-msgstr ""
+msgstr "Das Synchronisieren von Mitgliedsvariablen ist ebenfalls möglich:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
 msgid "``rset(\"variable\", value)``"
-msgstr ""
+msgstr "``rset(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
 msgid "``rset_id(<peer_id>, \"variable\", value)``"
-msgstr ""
+msgstr "``rset_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
 msgid "``rset_unreliable(\"variable\", value)``"
-msgstr ""
+msgstr "``rset_unreliable(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
 msgid "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
-msgstr ""
+msgstr "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
-msgstr ""
+msgstr "Funktionen können auf zwei Arten aufgerufen werden:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
 msgid ""
@@ -414,22 +412,24 @@ msgid ""
 "The second use is to specify how the function will be called via RPC. There "
 "are four different keywords:"
 msgstr ""
+"Die zweite Verwendung besteht darin, anzugeben, wie die Funktion über RPC "
+"aufgerufen wird. Es gibt vier verschiedene Schlüsselwörter:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:237
 msgid "``remote``"
-msgstr ""
+msgstr "``remote``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:238
 msgid "``remotesync``"
-msgstr ""
+msgstr "``remotesync``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:239
 msgid "``master``"
-msgstr ""
+msgstr "``master``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
 msgid "``puppet``"
-msgstr ""
+msgstr "``puppet``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
 msgid ""
@@ -462,7 +462,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
 msgid "Starting the game"
-msgstr ""
+msgstr "Das Spiel starten"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:256
 msgid ""
@@ -470,10 +470,14 @@ msgid ""
 "start the game. This is nothing special in itself, but we'll explain a few "
 "nice tricks that can be done at this point to make your life much easier."
 msgstr ""
+"Sobald sich genügend Spieler in der Lobby versammelt haben, sollte der "
+"Server das Spiel wahrscheinlich starten. Dies ist an sich nichts Besonderes, "
+"aber wir werden ein paar nette Tricks erklären, die an dieser Stelle "
+"ausgeführt werden können, um Ihr Leben viel einfacher zu machen."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:260
 msgid "Player scenes"
-msgstr ""
+msgstr "Spielerszene"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:262
 msgid ""
@@ -507,7 +511,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:302
 msgid "Synchronizing game start"
-msgstr ""
+msgstr "Spielstart synchronisieren"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:304
 msgid ""
@@ -525,7 +529,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
-msgstr ""
+msgstr "Das Spiel synchronisieren"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
@@ -602,11 +606,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:390
 msgid "Example bomb code:"
-msgstr ""
+msgstr "Beispiel für einen Bombencode:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:398
 msgid "Example player code:"
-msgstr ""
+msgstr "Beispiel für einen Spielercode:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:415
 msgid ""
@@ -657,6 +661,17 @@ msgid ""
 "words, those peers are set as puppets for that node by virtue of not being "
 "the network master of it)."
 msgstr ""
+"Das obige Setup bedeutet, dass nur der Peer, dem der betroffene Körper "
+"gehört, dafür verantwortlich ist, allen anderen Peers mitzuteilen, dass sein "
+"Körper betäubt wurde, nachdem er von der Bombe des Hosts aus der Ferne dazu "
+"angewiesen wurde. Der besitzende Peer (immer noch in der ``exploded`` "
+"Methode) teilt allen anderen Peers mit, dass sein Spieler-Node betäubt "
+"wurde. Der Peer ruft dazu die ``stun`` Methode auf allen Instanzen dieses "
+"Spieler-Nodes (auf den anderen Peers) aus der Ferne auf. Da die ``stun`` "
+"Methode das Schlüsselwort ``puppet`` hat, wird es nur von Peers aufgerufen, "
+"die sich nicht als Netzwerkmaster des Nodes festgelegt haben (mit anderen "
+"Worten, diese Peers werden aufgrund dieses Nodes als Puppets für diesen Node "
+"festgelegt, nicht der Netzwerk-Master davon zu sein)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
 msgid ""
@@ -671,6 +686,9 @@ msgid ""
 "bodies in the area, such that all the instances of any player in the bomb "
 "area get stunned on the screens of all the peers."
 msgstr ""
+"Der Meister der Bombe (der Wirt) wiederholt die obigen Schritte für jeden "
+"der Körper in dem Gebiet, so dass alle Instanzen eines Spielers im "
+"Bombengebiet auf den Bildschirmen aller Peers betäubt werden."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
 msgid ""
@@ -681,9 +699,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "Export für den Google Play Store"
+msgstr "Exportieren für dedizierte Server"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:455
 msgid ""
@@ -691,6 +708,10 @@ msgid ""
 "a dedicated server with no GPU available. See :ref:"
 "`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
+"Sobald Sie ein Multiplayer-Spiel erstellt haben, möchten Sie es "
+"möglicherweise exportieren, um es auf einem dedizierten Server ohne "
+"verfügbare GPU auszuführen. Weitere Informationen finden Sie unter :ref:"
+"`doc_exporting_for_dedicated_servers`."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:461
 msgid ""
@@ -699,6 +720,10 @@ msgid ""
 "You'll also have to modify the game starting mechanism so that the first "
 "player who joins can start the game."
 msgstr ""
+"Die Codebeispiele auf dieser Seite können nicht auf einem dedizierten Server "
+"ausgeführt werden. Sie müssen sie ändern, damit der Server nicht als Spieler "
+"betrachtet wird. Sie müssen auch den Spielstartmechanismus ändern, damit der "
+"erste Spieler, der beitritt, das Spiel starten kann."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -324,9 +324,8 @@ msgstr ""
 "Names."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
-#, fuzzy
 msgid "GUI example"
-msgstr "Exemples d'entrée"
+msgstr "Exemple dans l'interface graphique"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
@@ -355,9 +354,8 @@ msgstr ""
 "Par exemple, les paramètres du joueur ressemblent à ceci :"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Par exemple :"
+msgstr "Exemple en code"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -366,12 +364,18 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"Dans les appels de fonction, les couches sont spécifiées comme un bitmask. "
+"Lorsqu'une fonction active toutes les couches par défaut, le bitmask sera "
+"donné sous la forme ``0x7ffffff``. Votre code peut utiliser une notation "
+"binaire, hexadécimale ou décimale pour les bitmask, selon votre préférence."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
+"L'équivalent en code de l'exemple ci-dessus où les couches 1, 3 et 4 ont été "
+"activées serait le suivant :"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"

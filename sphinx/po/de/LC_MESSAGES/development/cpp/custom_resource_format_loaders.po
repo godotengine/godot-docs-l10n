@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,19 +48,20 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:358
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
-msgstr ""
+msgstr "Wofür?"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
@@ -68,11 +69,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
-msgstr ""
+msgstr "Audio Formate"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
-msgstr ""
+msgstr "Video Formate"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
@@ -80,7 +81,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:32
 msgid "What not?"
-msgstr ""
+msgstr "Was nicht?"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:34
 msgid "Raster images"
@@ -91,11 +92,12 @@ msgid "ImageFormatLoader should be used to load images."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
-#, fuzzy
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -121,9 +123,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
-#, fuzzy
 msgid "Creating a ResourceFormatSaver"
-msgstr "Erstellen eines Baums"
+msgstr "Erstellen eines ResourceFormatSaver"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid ""
@@ -133,7 +134,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:158
 msgid "Creating custom data types"
-msgstr ""
+msgstr "Benutzerdefinierte Datentypen erstellen"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:160
 msgid ""
@@ -143,13 +144,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
-#, fuzzy
 msgid "Here is an example of creating a custom datatype:"
-msgstr "Unterhalb ist ein Beispiel einer Klassen-Datei (Mutex):"
+msgstr ""
+"Hier ist ein Beispiel zum Erstellen eines benutzerdefinierten Datentyps:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
-msgstr ""
+msgstr "Überlegungen"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:264
 msgid ""
@@ -165,20 +166,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:305
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
-msgstr ""
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:306
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 msgstr ""
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:307
-#, fuzzy
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 msgid "Registering the new file format"
@@ -192,15 +196,16 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:361
 msgid "Loading it on GDScript"
-msgstr ""
+msgstr "Lade es in GDScript"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:363
 msgid ""
 "Save a file called ``demo.json`` with the following contents and place it in "
 "the project's root folder:"
 msgstr ""
+"Speichern Sie eine Datei mit dem Namen ``demo.json`` mit dem folgenden "
+"Inhalt und legen Sie sie im Wurzelordner des Projekts ab:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
-#, fuzzy
 msgid "Then attach the following script to any node::"
-msgstr "Anschließend fügst Du die folgenden beiden Funktionen hinzu:"
+msgstr "Anschließend fügen Sie die folgenden beiden Funktionen hinzu:"

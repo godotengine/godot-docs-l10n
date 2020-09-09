@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "Anleitung für Einsteiger - VR"
+msgstr "VR - Anleitung für Einsteiger - Teil 2"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
@@ -32,6 +31,9 @@ msgid ""
 "of special :ref:`RigidBody <class_RigidBody>`-based nodes that can be used "
 "in VR."
 msgstr ""
+"In diesem Teil der VR-Starter-Anleitung werden wir eine Reihe von speziellen "
+"Nodes hinzufügen :ref:`RigidBody <class_RigidBody>` -basierte Knoten, die in "
+"VR verwendet werden können."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:13
 msgid ""
@@ -41,17 +43,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"eine Kopie des `godot-cpp-Repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`_."
+"Sie finden das fertige Projekt im `OpenVR GitHub Repository <https://github."
+"com/GodotVR/godot_openvr_fps>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:20
 msgid "Adding destroyable targets"
-msgstr ""
+msgstr "Zerstörbare Ziele hinzufügen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:22
 msgid ""
@@ -59,6 +60,9 @@ msgid ""
 "nodes, we need something for them to do. Let's make a simple sphere target "
 "that will break into a bunch of pieces when destroyed."
 msgstr ""
+"Bevor wir einen der speziellen :ref:`RigidBody <class_RigidBody>`-basierten "
+"Node erstellen, müssen sie noch etwas anderes tun. Machen wir ein einfaches "
+"Kugelziel, das bei Zerstörung in ein paar Teile zerbricht."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:25
 msgid ""
@@ -87,47 +91,55 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:79
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:263
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:658
-#, fuzzy
 msgid "Let's go over how this script works."
-msgstr "Schauen wir, was diese neuen Variablen machen."
+msgstr "Gehen wir einmal die Funktionsweise dieses Skripts durch."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:82
 msgid "Explaining the Sphere Target code"
-msgstr ""
+msgstr "Erklärung der Kugel-Ziel-Codes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
-#, fuzzy
 msgid "First, let's go through all the class variables in the script:"
-msgstr "Gehen wir diese globalen Variablen einmal durch."
+msgstr "Als erstes gehen wir all die Klassenvariablen im Skript durch:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
 msgid ""
 "``destroyed``: A variable to track whether the sphere target has been "
 "destroyed."
 msgstr ""
+"``destroyed``: Eine Variable um zu verfolgen, ob das Kugelziel zerstört "
+"wurde."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:87
 msgid ""
 "``destroyed_timer``: A variable to track how long the sphere target has been "
 "destroyed."
 msgstr ""
+"``destroyed_timer``: Eine Variable um zu verfolgen, wie lange das Kugelziel "
+"zerstört wurde."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:88
 msgid ""
 "``DESTROY_WAIT_TIME``: A constant to define the length of time the target "
 "can be destroyed for before it frees/deletes itself."
 msgstr ""
+"``DESTROY_WAIT_TIME``: Eine Konstante zur Festlegung der Zeitdauer, für die "
+"das Ziel zerstört werden kann, bevor es sich selbst freigibt bzw. löscht."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:89
 msgid ""
 "``health``: A variable to store the amount of health the sphere target has."
 msgstr ""
+"``health``: Eine Variable zum Speichern des Gesundheitszustands des "
+"Kugelziels."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:90
 msgid ""
 "``RIGID_BODY_TARGET``: A constant to hold the scene of the destroyed sphere "
 "target."
 msgstr ""
+"``RIGID_BODY_TARGET``: Eine Konstante um die Szene des zerstörten Kugelziels "
+"zu halten."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:92
 msgid ""
@@ -146,7 +158,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:684
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:858
 msgid "``_ready`` function step-by-step explanation"
-msgstr ""
+msgstr "``_ready`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:100
 msgid ""
@@ -162,7 +174,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:694
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:868
 msgid "``_physics_process`` function step-by-step explanation"
-msgstr ""
+msgstr "``_physics_process`` Funktion Schritt-für-Schritt erklärt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:108
 msgid ""
@@ -175,7 +187,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:113
 msgid "``damage`` function step-by-step explanation"
-msgstr ""
+msgstr "``damage`` Funktion Schritt für Schritt Erklärung"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:115
 msgid ""
@@ -276,9 +288,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:167
-#, fuzzy
 msgid "Let's go through what this function does real quick:"
-msgstr "Schauen wir, was diese neuen Variablen machen."
+msgstr "Lassen Sie uns schnell durchgehen, was diese Funktion macht:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:169
 msgid ""
@@ -301,7 +312,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:179
 msgid "Adding a pistol"
-msgstr ""
+msgstr "Eine Pistole hinzufügen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:181
 msgid ""
@@ -349,7 +360,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
 msgid "Explaining the pistol code"
-msgstr ""
+msgstr "Erklärung des Pistolencodes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:269
 msgid ""
@@ -364,9 +375,8 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:849
-#, fuzzy
 msgid "Next, let's look at the class variables:"
-msgstr "Gehen wir diese globalen Variablen einmal durch."
+msgstr "Schauen wir uns als nächstes die Klassenvariablen an:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:275
 msgid ""
@@ -441,7 +451,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:473
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:760
 msgid "``interact`` function step-by-step explanation"
-msgstr ""
+msgstr "``interact`` Funktionserklärung Schritt für Schritt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:301
 msgid ""
@@ -557,7 +567,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:343
 msgid "``picked_up`` function step-by-step explanation"
-msgstr ""
+msgstr "``picked_up`` Funktionserklärung Schritt für Schritt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:345
 msgid ""
@@ -568,7 +578,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:348
 msgid "``dropped`` function step-by-step explanation"
-msgstr ""
+msgstr "``dropped`` Funktionserklärung Schritt für Schritt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:350
 msgid ""
@@ -579,7 +589,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:354
 msgid "Pistol finished"
-msgstr ""
+msgstr "Pistole fertiggestellt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:359
 msgid ""
@@ -592,7 +602,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:365
 msgid "Adding a shotgun"
-msgstr ""
+msgstr "Eine Schrotflinte hinzufügen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:367
 msgid "Next let's add a shotgun to the VR project."
@@ -637,9 +647,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "Ressourcen freigeben"
+msgstr "Erklärung des Schrotflintencodes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -760,7 +769,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:532
 msgid "Shotgun finished"
-msgstr ""
+msgstr "Schrotflinte fertiggestellt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:534
 msgid ""
@@ -839,7 +848,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:662
 msgid "Explaining the bomb code"
-msgstr ""
+msgstr "Erklärung des Bombencodes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:664
 msgid ""
@@ -879,6 +888,8 @@ msgid ""
 "``EXPLOSION_DAMAGE``: A constant to define how much damage is applied with "
 "the bomb explodes."
 msgstr ""
+"``EXPLOSION_DAMAGE``: Eine Konstante die definiert, wie viel Schaden mit der "
+"explodierenden Bombe verursacht wird."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:674
 msgid ""
@@ -892,10 +903,14 @@ msgid ""
 "``explosion_timer`` A variable to hold the length of time that has passed "
 "since the bomb exploded."
 msgstr ""
+"``explosion_timer`` Eine Variable die die Zeitspanne festhält, die seit der "
+"Explosion der Bombe vergangen ist."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:676
 msgid "``exploded``: A variable to hold whether the bomb has exploded or not."
 msgstr ""
+"``exploded``: Eine Variable die festhält, ob die Bombe explodiert ist oder "
+"nicht."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:677
 msgid ""
@@ -1117,12 +1132,14 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:769
 msgid "Bomb finished"
-msgstr ""
+msgstr "Bombe fertiggestellt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:771
 msgid ""
 "Now the bomb is ready to go! You can find the bombs in the orange building."
 msgstr ""
+"Jetzt ist die Bombe bereit zur Nutzung! Sie finden die Bomben im "
+"orangefarbenen Gebäude."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:773
 msgid ""
@@ -1198,9 +1215,8 @@ msgid "Let's go over how this script works!"
 msgstr "Schauen wir, was dieses neue Script macht."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "Ressourcen freigeben"
+msgstr "Erklärung des Schwertcodes"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -1336,13 +1352,15 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:900
 msgid "Sword finished"
-msgstr ""
+msgstr "Schwert fertiggestellt"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:904
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
 msgstr ""
+"Damit können Sie jetzt die Ziele durchschneiden! Sie finden das Schwert in "
+"der Ecke zwischen der Schrotflinte und der Pistole."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:909
 msgid "Updating the target UI"
@@ -1368,9 +1386,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:937
-#, fuzzy
 msgid "Let's go over how this script works real quick."
-msgstr "Schauen wir, was diese neuen Variablen machen."
+msgstr "Lassen Sie uns schnell durchgehen, wie dieses Skript funktioniert."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:939
 msgid ""
@@ -1397,6 +1414,8 @@ msgid ""
 "Finally, before we finish this tutorial, let's add a way to reset the game "
 "while in VR."
 msgstr ""
+"Bevor wir diese Anleitung beenden fügen wir eine Möglichkeit hinzu, das "
+"Spiel in VR zurückzusetzen."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:952
 msgid ""
@@ -1406,9 +1425,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:990
-#, fuzzy
 msgid "Let's quickly go over how this script works."
-msgstr "Schauen wir, was diese neuen Variablen machen."
+msgstr "Lassen Sie uns kurz erläutern, wie dieses Skript funktioniert."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
 #, fuzzy
@@ -1481,14 +1499,16 @@ msgid ""
 "Resetting the scene abruptly without any sort of transition can lead to "
 "discomfort in VR."
 msgstr ""
+"Das plötzliche Zurücksetzen der Szene ohne Übergang kann zu Problemen in der "
+"VR führen."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1025
 msgid "Final notes"
-msgstr ""
+msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1029
 msgid "Whew! That was a lot of work."
-msgstr ""
+msgstr "Puh! Das war viel Arbeit."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1031
 msgid ""

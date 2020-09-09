@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
-msgstr ""
+msgstr "räumliches Material"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:7
 msgid "Introduction"
@@ -252,11 +252,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
-msgstr ""
+msgstr "Verwenden als Albedo"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
+"Wenn Sie diese Option auswählen, wird die Vertex-Farbe als Albedo-Farbe "
+"verwendet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:155
 msgid "Is sRGB"
@@ -527,7 +529,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:299
 msgid "Material colors, maps and channels"
-msgstr ""
+msgstr "Materialfarben, Karten und Kanäle"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:301
 msgid ""
@@ -535,10 +537,13 @@ msgid ""
 "textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
+"Neben den Parametern definieren die Materialien selbst die Farben, Texturen "
+"und Kanäle. Godot unterstützt eine umfangreiche Liste von ihnen. Sie werden "
+"nachstehend ausführlich beschrieben:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:306
 msgid "Albedo"
-msgstr ""
+msgstr "Albedo (Hauptfarbe)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:308
 msgid ""
@@ -548,10 +553,18 @@ msgid ""
 "name mainly happened because, in PBR (Physically Based Rendering), this "
 "color affects many more calculations than just the diffuse lighting path."
 msgstr ""
+"*Albedo* ist die Grundfarbe für das Material, auf das alle anderen "
+"Einstellungen angewendet werden. Bei der Einstellung *Unschattiert* ist dies "
+"die einzige sichtbare Farbe. In früheren Versionen von Godot wurde dieser "
+"Kanal *Diffuse* genannt. Die Namensänderung erfolgte hauptsächlich, weil "
+"diese Farbe in PBR (Physically Based Rendering) viel mehr Berechnungen "
+"beeinflusst als nur den diffusen Beleuchtungspfad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:314
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
+"Albedofarbe und -textur können zusammen verwendet werden, da sie "
+"multipliziert werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:316
 msgid ""
@@ -559,10 +572,14 @@ msgid ""
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
+"*Alpha-Kanal* in Albedofarbe und -textur wird auch für die Objekttransparenz "
+"verwendet. Wenn Sie eine Farbe oder Textur mit *Alpha-Kanal* verwenden, "
+"stellen Sie sicher, dass entweder Transparenz oder *Alpha-Schere* aktiviert "
+"ist, damit dies funktioniert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:321
 msgid "Metallic"
-msgstr ""
+msgstr "Metallisch"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:323
 msgid ""
@@ -571,6 +588,11 @@ msgid ""
 "the less diffuse/ambient light affects the material and the more light is "
 "reflected. This model is called \"energy-conserving\"."
 msgstr ""
+"Godot verwendet aufgrund seiner Einfachheit ein Metallmodell gegenüber "
+"Konkurrenzmodellen. Dieser Parameter definiert, wie reflektierend das "
+"Material ist. Je reflektierender, desto weniger diffuses/Umgebungslicht "
+"beeinflusst das Material und desto mehr Licht wird reflektiert. Dieses "
+"Modell wird als \"energiesparend\" bezeichnet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:328
 msgid ""
@@ -578,16 +600,23 @@ msgid ""
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
+"Der Parameter *Spiegelnd* ist ein allgemeiner Wert für das "
+"Reflexionsvermögen (im Gegensatz zu *Metallisch* ist dies nicht "
+"energiesparend. Belassen Sie ihn daher bei ``0.5`` und verändern Sie ihn "
+"nur, wenn Sie dies benötigen)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:332
 msgid ""
 "The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
 "material completely unreflective, just like in real life."
 msgstr ""
+"Das minimale interne Reflexionsvermögen beträgt ``0.04``, daher ist es "
+"unmöglich ein Material wie im wirklichen Leben vollkommen ohne Reflexion zu "
+"erstellen."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:338
 msgid "Roughness"
-msgstr ""
+msgstr "Unebenheit"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:340
 msgid ""
@@ -596,10 +625,15 @@ msgid ""
 "(simulating natural microsurfacing). Most common types of materials can be "
 "achieved with the right combination of *Metallic* and *Roughness*."
 msgstr ""
+"*Unebenheit* beeinflusst die Art und Weise, wie Reflexion stattfindet. Ein "
+"Wert von ``0`` macht es zu einem perfekten Spiegel, während ein Wert von "
+"``1`` die Reflexion vollständig verwischt (Simulation einer natürlichen "
+"Mikrooberfläche). Die meisten gängigen Materialtypen können mit der "
+"richtigen Kombination von *Metallisch* und *Unebenheit* erzielt werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:348
 msgid "Emission"
-msgstr ""
+msgstr "Ausstrahlung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:350
 msgid ""
@@ -608,6 +642,11 @@ msgid ""
 "are used). This value is added to the resulting final image and is not "
 "affected by other lighting in the scene."
 msgstr ""
+"*Ausstrahlung* gibt an, wie viel Licht vom Material emittiert wird (beachten "
+"Sie, dass dies kein Licht um die Geometrie einschließt, es sei denn :ref:"
+"`doc_gi_probes` wird verwendet). Dieser Wert wird zum resultierenden "
+"endgültigen Bild hinzugefügt und nicht durch andere Beleuchtung in der Szene "
+"beeinflusst."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
 #, fuzzy
@@ -821,7 +860,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:510
 msgid "UV1 and UV2"
-msgstr ""
+msgstr "UV1 und UV2"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:512
 msgid ""

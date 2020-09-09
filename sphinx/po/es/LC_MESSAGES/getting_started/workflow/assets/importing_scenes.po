@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -871,35 +871,32 @@ msgstr ""
 "después de la exportación:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Añadiendo detección de colisiones a los objetos"
+msgstr "Añadiendo detección de colisiones a los objetos."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Configurar objetos como mallas de navegación"
+msgstr "Configurar objetos como mallas de navegación."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
-"Eliminar nodos que no se usan en el motor del juego (como luces específicas "
-"usadas para modelar)"
+"Eliminar los nodos que no se utilizan en el motor del juego (como las luces "
+"específicas utilizadas para el modelado)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
 "Godot will detect suffixes in object names and will perform actions "
 "automatically."
 msgstr ""
-"Para simplificar este flujo de trabajo, Godot ofrece algunos sufijos que se "
-"pueden añadir a los nombres de los objetos en su software de modelado 3D. "
-"Cuando se importan, Godot los detecta y realiza acciones automáticamente:"
+"Para simplificar este flujo de trabajo, Godot ofrece varios sufijos que "
+"pueden añadirse a los nombres de los objetos de su software de modelado 3D. "
+"Al ser importado, Godot detectará los sufijos en los nombres de los objetos "
+"y realizará las acciones automáticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
 msgid "All the suffixes described below are *case-sensitive*."
@@ -990,25 +987,22 @@ msgstr ""
 "predefinidas, dependiendo del tipo de dibujo vacío del Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "Una flecha simple creará una :ref:`class_rayshape`"
+msgstr "Una sola flecha creará un :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "Un cubo creará un :ref:`class_boxshape`"
+msgstr "Un cubo creará un :ref:`class_boxshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "Una imagen creará :ref:`class_planeshape`"
+msgstr "Una imagen creará un :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "Esfera (y otras no listadas) creará :ref:`class_sphereshape`"
+msgstr ""
+"Una esfera (y las otras no listadas) creará un :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
@@ -1085,17 +1079,16 @@ msgid "Animation loop (-loop, -cycle)"
 msgstr "Bucle de animación (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
 "flag set. **Unlike the other suffixes described above, this does not require "
 "a hyphen.**"
 msgstr ""
-"Los clips de animación en el documento de COLLADA que comienzan o terminan "
-"con el token \"loop\" o \"cycle\" se importarán como una animación de Godot "
-"con la marca de loop establecida. Esto distingue entre mayúsculas y "
-"minúsculas y no requiere un guión."
+"Los clips de animación en el documento COLLADA que empiezan o terminan con "
+"el token ``loop`` o ``cycle`` serán importados como una Animación de Godot "
+"con la marca loop establecida. **A diferencia de los otros sufijos descritos "
+"anteriormente, este no requiere un guión.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
 #, fuzzy

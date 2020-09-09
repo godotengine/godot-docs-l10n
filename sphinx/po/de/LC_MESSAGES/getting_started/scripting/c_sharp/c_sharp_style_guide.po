@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,6 +83,7 @@ msgid ""
 "Use one line feed character at the end of each file, except for `csproj` "
 "files."
 msgstr ""
+"Benutze ein Line Feed am Ende jeder Datei, mit Ausnahme der `csproj` Datei."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 msgid ""
@@ -129,7 +130,7 @@ msgstr "Für einfache Zugriffsfunktionen (Property Accessors)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."
-msgstr "Für einfache Objekte, Felder oder Collection Initializer."
+msgstr "Für einfache Objekte, Arrays oder Collection Initializer."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:67
 msgid "For abstract auto property, indexer, or event declarations."
@@ -145,7 +146,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:92
 msgid "Between method, properties, and inner type declarations."
-msgstr ""
+msgstr "Zwischen Methoden, Eigenschaften und innerer Typen-Deklarationen."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "At the end of each file."
@@ -309,9 +310,8 @@ msgid "Rather than:"
 msgstr "besser als:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Umgebungsvariablen"
+msgstr "Mitgliedsvariablen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
 msgid ""
@@ -319,6 +319,9 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
+"Deklarieren Sie keine Mitgliedsvariablen, wenn sie nur lokal in einer "
+"Methode verwendet werden, da dies das Lesen des Codes erschwert. Deklarieren "
+"Sie sie stattdessen als lokale Variablen in der Methode."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 msgid "Local variables"
@@ -330,6 +333,9 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
+"Deklarieren Sie lokale Variablen so nah wie möglich am Platz ihrer ersten "
+"Verwendung. Dies erleichtert das Lesen des Codes, ohne zu viel scrollen zu "
+"müssen, um herauszufinden, wo die Variable deklariert wurde."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:282
 msgid "Implicitly typed local variables"

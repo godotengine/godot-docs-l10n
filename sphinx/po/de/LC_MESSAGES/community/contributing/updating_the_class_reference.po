@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
-#, fuzzy
 msgid "Contributing to the class reference"
-msgstr "Referenzierung eines Attributs"
+msgstr "Beitrag zur Klassenreferenz"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
 msgid ""
@@ -37,6 +36,11 @@ msgid ""
 "This reference is essential for anyone learning the engine: it is available "
 "both online and in the engine."
 msgstr ""
+"Godot wird mit vielen Nodes und Singletons geliefert, um Ihnen bei der "
+"Entwicklung Ihrer Spiele zu helfen. Jedes ist eine Klasse, dokumentiert in :"
+"ref:`Klassenreferenz <toc-class-ref>`. Diese Referenz ist für jeden der die "
+"Engine lernt unerlässlich: Sie ist sowohl online als auch in der Engine "
+"verfügbar."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:13
 msgid ""
@@ -58,6 +62,10 @@ msgid ""
 "comment in an existing one) to let others know so they don't start working "
 "on the same thing too."
 msgstr ""
+"**Wichtig:** Wenn Sie größere Änderungen oder einen größeren Beitrag planen, "
+"ist es normalerweise eine gute Idee, den Sachverhalt in einem kurzen "
+"Kommentar mitzuteilen, damit andere informiert sind und nicht anfangen an "
+"der gleichen Sache zu arbeiten."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:21
 msgid ""
@@ -65,10 +73,13 @@ msgid ""
 "reference completion status `here <https://godotengine.github.io/doc-status/"
 ">`__."
 msgstr ""
+"Sie sind sich nicht sicher, wo Sie anfangen sollen, Beiträge zu leisten? "
+"Sehen Sie sich den aktuellen Abschlussstatus der Klassenreferenz `hier "
+"<https://godotengine.github.io/doc-status/>`__ an."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:25
 msgid "How to contribute"
-msgstr ""
+msgstr "Wie man dazu beiträgt"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:27
 msgid ""
@@ -76,10 +87,15 @@ msgid ""
 "repository: `doc/classes/ <https://github.com/godotengine/godot/tree/master/"
 "doc/classes>`_."
 msgstr ""
+"Die Klassenreferenz befindet sich in den folgenden XML-Dateien im GitHub-"
+"Repository von Godot: `doc/classes/ <https://github.com/godotengine/godot/"
+"tree/master/doc/classes>`_."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:29
 msgid "There are 5 steps to update the class reference (full guide below):"
 msgstr ""
+"Es gibt 5 Schritte zum Aktualisieren der Klassenreferenz (vollständige "
+"Anleitung unten):"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:31
 msgid "Fork `Godot's repository <https://github.com/godotengine/godot>`_"
@@ -111,25 +127,30 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:40
 msgid "Get started with GitHub"
-msgstr ""
+msgstr "Beginnen Sie mit GitHub"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:42
 msgid ""
 "If you're new to Git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
+"Wenn Sie Git und GitHub noch nicht kennen, hilft Ihnen dieses Handbuch beim "
+"Einstieg. Sie werden lernen:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:44
 msgid "Fork and clone Godot's repository"
-msgstr ""
+msgstr "Gabeln und klonen des Godot Repository"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:45
+#, fuzzy
 msgid "Keep your fork up to date with other contributors"
-msgstr ""
+msgstr "Halte deinen Fork mit anderen Beitragenden auf dem Laufenden"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:46
 msgid "Create a pull request so your improvements end in the official docs"
 msgstr ""
+"Erstelle eine Pull Request, damit deine Verbesserungen in den offiziellen "
+"Dokumenten erscheinen"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:48
 msgid ""
@@ -137,18 +158,22 @@ msgid ""
 "`GitHub's interactive guide <https://try.github.io/levels/1/challenges/1>`_. "
 "You'll learn some essential vocabulary and get a sense for the tool."
 msgstr ""
+"Wenn du neu bei Git bist, dem Versionskontrollsystem, das Godot benutzt, "
+"gehe durch `GitHubs interaktive Anleitung <https://try.github.io/levels/1/"
+"challenges/1>`_. Du wirst einige wichtige Vokabeln lernen und ein Gefühl für "
+"das Werkzeug bekommen."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:51
 msgid "Fork Godot"
-msgstr ""
+msgstr "Godot forken"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:53
 msgid "Fork the Godot Engine into a GitHub repository of your own."
-msgstr ""
+msgstr "Forke die Godot-Engine in ein eigenes GitHub-Repository."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:55
 msgid "Clone the repository on your computer:"
-msgstr ""
+msgstr "Klone das Repository auf deinen Computer:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:61
 msgid ""
@@ -156,16 +181,22 @@ msgid ""
 "your improvements with other docs writers. It's also easier to clean up your "
 "repository if you run into any issues with Git."
 msgstr ""
+"Erstelle einen neuen Branch, um deine Änderungen vorzunehmen. Das macht es "
+"sehr viel einfacher, deine Verbesserungen mit anderen Dokumentautoren zu "
+"synchronisieren. Es ist auch einfacher, dein Repository aufzuräumen, wenn du "
+"auf irgendwelche Probleme mit Git stoßt."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:67
 msgid ""
 "The new branch is the same as your master branch, until you start to write "
 "API docs. In the ``doc/`` folder, you'll find the class reference."
 msgstr ""
+"Der neue Branch ist derselbe wie Ihr Hauptzweig, bis du beginnst, API-"
+"Dokumente zu schreiben. Im Ordner ``doc/``` findest du die Klassenreferenz."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:70
 msgid "How to keep your local clone up-to-date"
-msgstr ""
+msgstr "Wie du deinen lokalen Klon auf dem Laufenden halten kannst"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:72
 msgid ""
@@ -173,28 +204,39 @@ msgid ""
 "will fall behind it, and you'll have to synchronize it. Especially if other "
 "contributors update the class reference while you work on it."
 msgstr ""
+"Andere Autoren tragen zu Godots Dokumentation bei. Dein lokales Repository "
+"fällt dahinter zurück, und du musst es synchronisieren. Besonders wenn "
+"andere Mitwirkende die Klassenreferenz aktualisieren, während du daran "
+"arbeitest."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:74
 msgid ""
 "First add an ``upstream`` git *remote* to work with. Remotes are links to "
 "online repositories you can download new files from."
 msgstr ""
+"Füge zuerst ein ``upstream`` git *remote* hinzu, mit dem du arbeiten kannst. "
+"Remotes sind Links zu Online-Repositorien, von denen du neue Dateien "
+"herunterladen kannst."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:80
 msgid "You can check the list of all remote servers with:"
-msgstr ""
+msgstr "Du kannst die Liste aller Remote-Server überprüfen mit:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:86
 msgid ""
 "You should have two: ``origin``, your fork on GitHub that Git adds by "
 "default, and ``upstream``, that you just added:"
 msgstr ""
+"Du solltest zwei haben: ``origin``, dein Fork auf GitHub, die Git "
+"standardmäßig hinzufügt, und ```upstream``, die du gerade hinzugefügt hast:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:96
 msgid ""
 "Each time you want to sync your branch to the state of the upstream "
 "repository, enter:"
 msgstr ""
+"Gebe jedes Mal, wenn du deinen Branch mit dem Zustand des upstream "
+"Repository synchronisieren möchten, ein:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:102
 msgid ""
@@ -288,6 +330,16 @@ msgid ""
 "version of the repository cleanly. Also, it's harder to keep clean indents "
 "from GitHub. And they're very important in the docs."
 msgstr ""
+"Obwohl Sie Dateien auf GitHub bearbeiten können, wird dies nicht empfohlen. "
+"Da Hunderte von Mitwirkenden an Godot arbeiten, muss die Git-Geschichte "
+"sauber bleiben. Jedes Commit sollte alle damit verbundenen Verbesserungen "
+"bündeln, die Sie an der Klassenreferenz vornehmen, eine neue Funktion, "
+"Fehlerbehebungen ... Wenn Sie von GitHub aus arbeiten, wird jedes Mal beim "
+"speichern ein neuer Zweig und eine Pull-Anforderung erstellt. Wenn ein paar "
+"Tagen vergehen, bevor Ihre Änderungen überprüft wurden, können Sie nicht "
+"sauber auf die neueste Version des Repositorys aktualisieren. Außerdem ist "
+"es schwieriger, saubere Einrückungen von GitHub fernzuhalten. Und sie sind "
+"sehr wichtig in den Dokumenten."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:162
 msgid ""
@@ -340,27 +392,27 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:180
 msgid "<description></description>"
-msgstr ""
+msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:181
 msgid "<brief_description></brief_description>"
-msgstr ""
+msgstr "<brief_description></brief_description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:182
 msgid "<constant></constant>"
-msgstr ""
+msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
 msgid "<method></method>"
-msgstr ""
+msgstr "<method></method>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:184
 msgid "<member></member>"
-msgstr ""
+msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:185
 msgid "<signal></signal>"
-msgstr ""
+msgstr "<signal></signal>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:187
 msgid ""
@@ -369,6 +421,11 @@ msgid ""
 "and easy to read. **Do not leave empty lines** in the descriptions: each "
 "line in the XML file will result in a new paragraph."
 msgstr ""
+"Schreiben Sie in einer klaren und einfachen Sprache. Befolgen Sie immer die "
+"folgenden Anweisungen :ref:`Schreibrichtlinien "
+"<doc_docs_writing_guidelines>`, um Ihre Beschreibungen kurz und leicht "
+"lesbar zu halten. **Lassen Sie keine leeren Zeilen** in den Beschreibungen: "
+"Jede Zeile in der XML-Datei führt zu einem neuen Absatz."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:189
 msgid "Here's how a class looks like in XML:"
@@ -382,21 +439,23 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Improve formatting with BBCode style tags"
-msgstr ""
+msgstr "Verbessern Sie die Formatierung mit BBCode-Tags"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid ""
 "Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
+"Godots Klassenreferenz unterstützt BBCode-ähnliche Tags. Sie fügen dem Text "
+"eine schöne Formatierung hinzu. Hier ist die Liste der verfügbaren Tags:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Effect"
-msgstr ""
+msgstr "Effekt"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
@@ -408,23 +467,23 @@ msgstr "Ergebnis"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "[Class]"
-msgstr ""
+msgstr "[Class]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Link a class"
-msgstr ""
+msgstr "eine Klasse verlinken"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the [Sprite]."
-msgstr ""
+msgstr "bewege das [Sprite]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Move the :ref:`class_sprite`."
-msgstr ""
+msgstr "bewege das :ref:`class_sprite`"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "[method methodname]"
-msgstr ""
+msgstr "[method methodname]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:242
 msgid "Link to a method in this class"
@@ -441,7 +500,7 @@ msgstr "Siehe :ref:`hide <class_spatial_method_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "[method Class.methodname]"
-msgstr ""
+msgstr "[method Class.methodname]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:244
 msgid "Link to another class's method"
@@ -453,7 +512,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "[member membername]"
-msgstr ""
+msgstr "[member membername]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:246
 msgid "Link to a member in this class"
@@ -470,7 +529,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "[member Class.membername]"
-msgstr ""
+msgstr "[member Class.membername]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:248
 msgid "Link to another class's member"
@@ -482,7 +541,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "[signal signalname]"
-msgstr ""
+msgstr "[signal signalname]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:250
 msgid "Link to a signal in this class"
@@ -499,7 +558,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "[signal Class.signalname]"
-msgstr ""
+msgstr "[signal Class.signalname]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Link to another class's signal"
@@ -511,55 +570,55 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
-msgstr ""
+msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Bold"
-msgstr ""
+msgstr "Fett"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
-msgstr ""
+msgstr "Ein [b]fetter[/b] Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
-msgstr ""
+msgstr "Ein **fetter** Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
-msgstr ""
+msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Italic"
-msgstr ""
+msgstr "kursiv"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
-msgstr ""
+msgstr "Ein [i]kursiver[/i] Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
-msgstr ""
+msgstr "Ein *kursiver* Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
-msgstr ""
+msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Monospace"
-msgstr ""
+msgstr "Monospace"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "Ein [code]monospace[/code] Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some ``monospace`` text."
-msgstr ""
+msgstr "Ein ``monospace`` Text."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "[kbd] [/kbd]"
-msgstr ""
+msgstr "[kbd] [/kbd]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Keyboard/mouse shortcut"
@@ -567,23 +626,23 @@ msgstr "Tastatur/Maus Kürzel"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some [kbd]Ctrl + C[/kbd] key."
-msgstr ""
+msgstr "Eine [kbd]Ctrl + C[/kbd] Taste."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
-msgstr ""
+msgstr "Eine :kbd:`Ctrl + C` Taste."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "[codeblock] [/codeblock]"
-msgstr ""
+msgstr "[codeblock] [/codeblock]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Multiline preformatted block"
-msgstr ""
+msgstr "Mehrzeiliger vorformatierter Block"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "*See below.*"
-msgstr ""
+msgstr "*siehe unten*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:265
 msgid ""
@@ -591,48 +650,92 @@ msgid ""
 "always use **four spaces** for indentation (the parser will delete tabs). "
 "Example:"
 msgstr ""
+"Verwenden Sie ``[Codeblock]`` für vorformatierte Codeblöcke. Verwenden Sie "
+"in ``[Codeblock]`` immer **vier Leerzeichen** zum Einrücken (der Parser "
+"löscht Tabulatoren). Beispiel:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:275
 msgid "Will display as:"
 msgstr "Wird angezeigt als:"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:285
-msgid "I don't know what this method does!"
+#: ../../docs/community/contributing/updating_the_class_reference.rst:283
+msgid ""
+"To denote important information, add a paragraph starting with \"[b]Note:[/"
+"b]\" at the end of the description:"
 msgstr ""
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:287
+#: ../../docs/community/contributing/updating_the_class_reference.rst:290
+msgid ""
+"To denote crucial information that could cause security issues or loss of "
+"data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
+"b] at the end of the description:"
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:298
+msgid ""
+"For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/"
+"i]\". Notice the use of italics instead of bold:"
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:305
+msgid ""
+"In all the paragraphs described above, make sure the punctuation is part of "
+"the BBCode tags for consistency."
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:309
+msgid "I don't know what this method does!"
+msgstr "Ich weiß nicht, was diese Methode macht!"
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:311
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Kein Problem. Lassen Sie es hinter sich und listen Sie die Methoden auf, die "
+"Sie übersprungen haben, als Sie einen Abruf Ihrer Änderungen anforderten. "
+"Ein anderer Schreiber wird sich darum kümmern."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:289
+#: ../../docs/community/contributing/updating_the_class_reference.rst:313
 msgid ""
 "You can still have a look at the methods' implementation in Godot's source "
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"Sie können sich immer noch die Implementierung der Methoden im Godot-"
+"Quellcode auf GitHub ansehen. Wenn Sie Zweifel haben, können Sie auch auf "
+"der Frage-und-Antwort-Website <https://godotengine.org/qa/> __ und im IRC "
+"(freenode, #godotengine) nachfragen."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:293
+#: ../../docs/community/contributing/updating_the_class_reference.rst:317
 msgid "Localization"
 msgstr "Lokalisierung"
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:295
+#: ../../docs/community/contributing/updating_the_class_reference.rst:319
 msgid ""
 "The documentation can be translated in any language on `Hosted Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
+"Die Dokumentation kann in eine beliebige Sprache auf `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs/>`__ übersetzt werden."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:298
+#: ../../docs/community/contributing/updating_the_class_reference.rst:322
 msgid ""
 "Translated strings are synced manually by documentation maintainers in the "
 "`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
 "repository."
 msgstr ""
+"Übersetzte Zeichenfolgen werden manuell von Dokumentationsbetreuern im "
+"Repository `godot-docs-l10n <https://github.com/godotengine/godot-docs-"
+"l10n>`__ synchronisiert."
 
-#: ../../docs/community/contributing/updating_the_class_reference.rst:302
+#: ../../docs/community/contributing/updating_the_class_reference.rst:326
 msgid ""
 "Languages with a good level of completion have their own localized instances "
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
+"Sprachen mit einem guten Abschluss haben ihre eigenen lokalisierten "
+"Instanzen von ReadTheDocs. Öffnen Sie ein Problem im Repository ``godot-docs-"
+"l10n``, wenn Sie der Meinung sind, dass eine neue Sprache vollständig genug "
+"ist, um eine eigene Instanz zu erhalten."

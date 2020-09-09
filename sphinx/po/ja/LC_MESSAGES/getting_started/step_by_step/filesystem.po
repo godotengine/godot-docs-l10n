@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,7 +213,6 @@ msgstr ""
 "か？)。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -226,9 +225,8 @@ msgstr ""
 "ないことです。大文字と小文字を区別しないホストファイルシステムで作業している"
 "開発者がアセットを「myfile.PNG」として保存してから「myfile.png」として参照す"
 "る場合、プラットフォームでは正常に動作しますが、LinuxやAndroidなどの他のプ"
-"ラットフォームでは動作しません。 この制約は、すべてのファイルを保存するために"
-"圧縮パッケージを使用するエクスポートされたバイナリにも適用される場合がありま"
-"す。"
+"ラットフォームでは動作しません。 これはおそらく、すべてのファイルが圧縮された"
+"パッケージを使用する、エクスポートされたバイナリにも現れるでしょう。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""

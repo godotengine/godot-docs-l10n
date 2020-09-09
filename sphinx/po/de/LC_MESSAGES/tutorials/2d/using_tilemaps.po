@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "TileMaps verwenden"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -36,6 +36,16 @@ msgid ""
 "Finally, you can add collision, occlusion, and navigation shapes to tiles, "
 "adding additional functionality to the TileMap."
 msgstr ""
+"Eine TileMap ist ein Raster aus Kacheln (Tiles), mit denen das Layout eines "
+"Spiels erstellt wird. Die Verwendung von :ref:`TileMap <class_TileMap>`-"
+"Nodes zum Entwerfen Ihrer Ebenen bietet mehrere Vorteile. Erstens "
+"ermöglichen sie das Zeichnen des Layouts, indem sie die Kacheln auf ein "
+"Raster \"malen\", was viel schneller ist als das Platzieren einzelner :ref: "
+"`Sprite <class_Sprite>`-Nodes nacheinander. Zweitens ermöglichen sie viel "
+"größere Ebenen, da sie für das Zeichnen einer großen Anzahl von Kacheln "
+"optimiert sind. Schließlich können Sie Kacheln Kollisions-, Okklusions- und "
+"Navigationsformen hinzufügen und der TileMap zusätzliche Funktionen "
+"hinzufügen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid "Project setup"
@@ -52,6 +62,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
 msgstr ""
+"Erstellen Sie ein neues Projekt und legen Sie das obige Bild im "
+"Projektordner ab."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:31
 msgid ""
@@ -61,10 +73,16 @@ msgid ""
 "the Import tab. Turn off ``Filter`` and click \"Reimport\". See :ref:"
 "`doc_import_images` for details."
 msgstr ""
+"Bei Verwendung eines TileSets ist es wichtig, dass benachbarte Kacheln "
+"übereinstimmen. Godots Standard ist das Importieren von 2D-Bildern mithilfe "
+"eines interpolierten \"Filter\" -Modus, was zu hässlichen Rändern zwischen "
+"den Kacheln führt. Wählen Sie das Bild aus und klicken Sie auf die "
+"Registerkarte Importieren. Schalten Sie ``Filter`` aus und klicken Sie auf "
+"\"Reimport\". Siehe :ref:`doc_import_images` für Details."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:37
 msgid "TileMap node"
-msgstr ""
+msgstr "TileMap-Node"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:39
 msgid ""
@@ -78,62 +96,78 @@ msgid ""
 "Under the \"Cell\" section in the Inspector are many properties you can "
 "adjust to customize your tilemap's behavior:"
 msgstr ""
+"Im Abschnitt \"Zelle\" im Inspektor finden Sie viele veränderbare "
+"Eigenschaften, um das Verhalten Ihrer TileMap anzupassen:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:52
 msgid "``Cell Size``"
-msgstr ""
+msgstr "``Cell Size``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:51
 msgid ""
 "This defines the size of the grid. This should match the pixel size of your "
 "tiles. The default value is ``(64, 64)``."
 msgstr ""
+"Dies definiert die Größe des Rasters. Dies sollte der Pixelgröße Ihrer "
+"Kacheln entsprechen. Der Standardwert ist ``(64, 64)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:56
 msgid "``YSort``"
-msgstr ""
+msgstr "``YSort``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:55
 msgid ""
 "This causes tiles to be drawn in order of their ``Y`` position, so that "
 "\"lower\" tiles are drawn on top of \"higher\" ones."
 msgstr ""
+"Dies bewirkt, dass Kacheln in der Reihenfolge ihrer ``Y``-Position "
+"gezeichnet werden, so dass \"niedrigere\" Kacheln über \"höhere\" Kacheln "
+"gezogen werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid "``Half Offset`` and ``Tile Origin``"
-msgstr ""
+msgstr "``Half Offset`` und ``Tile Origin``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:59
 msgid ""
 "These properties affect the position of the tile relative to the grid "
 "position."
 msgstr ""
+"Diese Eigenschaften wirken sich auf die Position der Kachel relativ zur "
+"Rasterposition aus."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:63
 msgid "``Quadrant``"
-msgstr ""
+msgstr "``Quadrant``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Defines the chunk size used for batched drawing. This can negatively affect "
 "performance. Don't change it unless you know what you're doing."
 msgstr ""
+"Definiert die Blockgröße, die für das Stapelzeichnen verwendet wird. Dies "
+"kann sich negativ auf die Leistung auswirken. Ändern Sie es nur, wenn Sie "
+"wissen was Sie tun."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "``Custom Transform``"
-msgstr "``Transformation``"
+msgstr "``Custom Transform``"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
 msgstr ""
+"Wird verwendet, um die Form der Kachel zu ändern. Verwenden Sie diese "
+"Option, wenn Sie keine quadratische Kacheln haben."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:68
 msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
+"Alle diese Optionen können für diese Übung auf ihren Standardeinstellungen "
+"belassen werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
 msgid "Creating a TileSet"
-msgstr "Erstellen eines Kachel-Sets"
+msgstr "Erstellen eines TileSets"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -143,18 +177,27 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
+"Sobald Sie Ihre TileMap konfiguriert haben, ist es Zeit, ein :ref:`TileSet "
+"<class_TileSet>` hinzuzufügen. Ein TileSet ist eine :ref:`Resource "
+"<class_Resource>`, die die Daten zu Ihren Kacheln enthält: deren Texturen, "
+"Kollisionsformen und andere Eigenschaften. Wenn das Spiel läuft, kombiniert "
+"die TileMap die einzelnen Kacheln zu einem einzigen Objekt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:79
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
 "TileSet\"."
 msgstr ""
+"Um ein neues TileSet hinzuzufügen, klicken Sie auf die Eigenschaft \"TileSet"
+"\" und wählen Sie \"Neues TileSet\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:84
 msgid ""
 "Click on the TileSet property, and the \"TileSet\" panel will open at the "
 "bottom of the editor window:"
 msgstr ""
+"Klicken Sie auf die TileSet-Eigenschaft, und das Fenster \"TileSet\" wird "
+"unten im Editorfenster geöffnet:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:89
 msgid ""
@@ -162,6 +205,9 @@ msgid ""
 "the \"Add Texture(s) to TileSet\" button and select the ``tilesheet.png`` "
 "image."
 msgstr ""
+"Zuerst müssen Sie die Textur(en) hinzufügen, die Sie für die Kacheln "
+"verwenden. Klicken Sie auf die Schaltfläche \"Textur(en) zu TileSet "
+"hinzufügen\" und wählen Sie das Bild ``tilesheet.png`` aus."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
@@ -176,12 +222,18 @@ msgid ""
 "created tile now appears on the right side. Click in the viewport and you "
 "can place tiles. Right-click to remove them."
 msgstr ""
+"Klicken Sie im Szenenbaum auf die TileMap, und Sie sehen, dass die neu "
+"erstellte Kachel jetzt auf der rechten Seite angezeigt wird. Klicken Sie in "
+"das Ansichtsfenster und Sie können Kacheln platzieren. Klicken Sie mit der "
+"rechten Maustaste, um sie zu entfernen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:104
 msgid ""
 "It's easy to accidentally select and move the tilemap node. To avoid this, "
 "use the node's lock button:"
 msgstr ""
+"Es ist einfach, den TileMap-Node versehentlich auszuwählen und zu "
+"verschieben. Um dies zu vermeiden, verwenden Sie die Sperrtaste des Nodes:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Collision shapes"
@@ -202,15 +254,23 @@ msgid ""
 "button. Make sure you still have grid snap enabled, then click and drag in "
 "the tile. A square collision shape appears in light blue:"
 msgstr ""
+"Klicken Sie unten im Editorfenster auf \"TileSet\", um zum TileSet-Tool "
+"zurückzukehren. Klicken Sie auf die zuvor definierte Kachel (gelb umrandet). "
+"Wählen Sie die Registerkarte \"Kollision\" und klicken Sie auf die "
+"Schaltfläche \"Neues Rechteck erstellen\". Stellen Sie sicher, dass der "
+"Rasterfang noch aktiviert ist, und klicken und ziehen Sie die Kachel hinein. "
+"Eine quadratische Kollisionsform wird hellblau angezeigt:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:124
 msgid ""
 "You can add occlusion and navigation shapes to the tile in the same way."
 msgstr ""
+"Auf die gleiche Weise können Sie der Kachel Okklusions- und "
+"Navigationsformen hinzufügen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:127
 msgid "Atlas tiles"
-msgstr ""
+msgstr "Atlas Kacheln"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:129
 msgid ""
@@ -218,10 +278,15 @@ msgid ""
 "tiles all at once using an atlas. This also allows you to randomly generate "
 "tiles from the group."
 msgstr ""
+"Anstatt einzelne Kacheln einzeln hinzuzufügen, können Sie mithilfe eines "
+"Atlas eine Gruppe von Kacheln gleichzeitig definieren. Auf diese Weise "
+"können Sie auch zufällig Kacheln aus der Gruppe generieren."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:133
 msgid "Click \"New Atlas\" and drag to select the entire tile sheet."
 msgstr ""
+"Klicken Sie auf \"Neuer Atlas\" und ziehen Sie, um das gesamte Kachelblatt "
+"auszuwählen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid ""
@@ -229,6 +294,10 @@ msgid ""
 "settings to `(64, 64)`, or your tiles may be chopped into smaller pieces. "
 "You can find this in the Inspector:"
 msgstr ""
+"Wenn Sie dies noch nicht getan haben, stellen Sie sicher, dass Sie den "
+"\"Schritt\" in den Fangeinstellungen auf `(64, 64)` ändern. Andernfalls "
+"werden Ihre Kacheln möglicherweise in kleinere Stücke geschnitten. Sie "
+"finden dies im Inspektor:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:143
 msgid ""
@@ -236,12 +305,17 @@ msgid ""
 "tiles as before. You can also click \"Icon\" to select one of the tiles to "
 "represent the atlas."
 msgstr ""
+"Sobald Sie den Atlas definiert haben, können Sie den einzelnen Kacheln wie "
+"zuvor Kollisionsformen hinzufügen. Sie können auch auf \"Icon\" klicken, um "
+"eine der Kacheln als Symbol für diesen Atlas auszuwählen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:147
 msgid ""
 "Back in the TileMap, you can select the atlas tile and you'll see all of the "
 "tiles it contains:"
 msgstr ""
+"Zurück in der TileMap können Sie die Atlas-Kachel auswählen und sehen alle "
+"darin enthaltenen Kacheln:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:152
 msgid ""
@@ -249,10 +323,13 @@ msgid ""
 "grouping similar tiles together when you're working with a large number of "
 "tiles."
 msgstr ""
+"Dies spart nicht nur Zeit beim Definieren der Kacheln, sondern kann auch "
+"dazu beitragen, ähnliche Kacheln zu gruppieren, wenn Sie mit einer großen "
+"Anzahl von Kacheln arbeiten."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:156
 msgid "Random tile priorities"
-msgstr ""
+msgstr "Zufällige Kachelprioritäten"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:158
 msgid ""
@@ -263,16 +340,27 @@ msgid ""
 "twice as likely to be selected as a tile with priority 1, and a tile with "
 "priority 3 is 50% more likely to be selected than a tile with priority 2."
 msgstr ""
+"Wenn Sie mit Atlas Kacheln zeichnen und die Option \"Priorität verwenden\" "
+"aktivieren, werden die Kacheln zufällig ausgewählt. Standardmäßig hat jede "
+"Kachel im TileSet die gleiche Wahrscheinlichkeit des Auftretens. Sie können "
+"die Wahrscheinlichkeit ändern, indem Sie für jede Kachel unterschiedliche "
+"Prioritäten festlegen. Beispielsweise wird eine Kachel mit Priorität 2 "
+"doppelt so häufig ausgewählt wie eine Kachel mit Priorität 1, und eine "
+"Kachel mit Priorität 3 wird mit 50% höherer Wahrscheinlichkeit ausgewählt "
+"als eine Kachel mit Priorität 2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
-msgstr ""
+msgstr "Autotiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
+"Mit Autotiles können Sie eine Gruppe von Kacheln definieren und dann Regeln "
+"hinzufügen, um zu steuern, welche Kacheln basierend auf dem Inhalt "
+"benachbarter Zellen zum Zeichnen verwendet werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:171
 msgid ""
@@ -280,6 +368,10 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
+"Klicken Sie auf \"Neues Autotile\" und ziehen Sie, um die zu verwendenden "
+"Kacheln auszuwählen. Sie können Kollisionen, Okklusion, Navigationsformen "
+"und Kachelprioritäten hinzufügen und eine Symbolkachel auf dieselbe Weise "
+"wie beim Atlas auswählen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:175
 msgid ""
@@ -288,6 +380,13 @@ msgid ""
 "mask. Left-clicking an area of the tile adds a bit, right-click removes \"off"
 "\", and shift-left-click sets an \"ignore\" bit."
 msgstr ""
+"Die Auswahl der Kacheln wird durch Bitmasken gesteuert. Bitmasken können "
+"hinzugefügt werden, indem Sie auf \"Bitmaske\" und dann auf Teile der "
+"Kacheln klicken, um Bits in der Maske hinzuzufügen oder zu entfernen. Wenn "
+"Sie mit der linken Maustaste auf einen Bereich der Kachel klicken, wird ein "
+"Bit hinzugefügt, mit der rechten Maustaste wird dieses Bit wieder entfernt, "
+"und mit ein 'Umschalttaste' + linke Maustaste wird ein \"Ignorieren\" -Bit "
+"gesetzt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -298,6 +397,13 @@ msgid ""
 "more than one matching bitmask is found, one of them will be selected "
 "randomly, using the tile priorities."
 msgstr ""
+"Immer wenn Godot eine Zelle mit einem Autotile aktualisiert, erstellt es "
+"zuerst ein Muster, auf dessen Grundlage benachbarte Zellen bereits "
+"festgelegt sind. Anschließend wird das Autotile nach einer einzelnen Kachel "
+"mit einer Bitmaske durchsucht, die dem erstellten Muster entspricht. Wenn "
+"keine passende Bitmaske gefunden wird, wird stattdessen die Kachel \"Symbol"
+"\" verwendet. Wenn mehr als eine passende Bitmaske gefunden wird, wird eine "
+"davon zufällig anhand der Kachelprioritäten ausgewählt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:187
 msgid ""
@@ -306,12 +412,19 @@ msgid ""
 "\"Selected Tile\" heading. Allowed values are \"2x2\", \"3x3 (minimal)\", "
 "and \"3x3\"."
 msgstr ""
+"Die Regeln für das Abgleichen einer Bitmaske mit einem Muster hängen vom "
+"automatischen Bitmaskenmodus des TileSets ab. Dies kann auf der "
+"Registerkarte \"Inspektor\" unter der Überschrift \"Ausgewählte Kachel\" "
+"festgelegt werden. Zulässige Werte sind \"2x2\", \"3x3 (minimal)\" und "
+"\"3x3\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:191
 msgid ""
 "All \"on\" and \"off\" bits must be satisfied for a bitmask to match, but "
 "\"ignore\" bits are ignored."
 msgstr ""
+"Alle \"Ein\" und \"Aus\" Bits müssen erfüllt sein, damit eine Bitmaske "
+"übereinstimmt, aber \"Ignorieren\" -Bits werden ignoriert."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:195
 msgid "2x2"
@@ -341,12 +454,18 @@ msgid ""
 "would be needed to provide exactly one tile for each arrangement that this "
 "mode can test for."
 msgstr ""
+"Für die zu verwendende Kachel muss mindestens ein Bit gesetzt sein, sodass "
+"insgesamt 15 Kacheln erforderlich sind, um genau eine Kachel für jede "
+"Anordnung bereitzustellen, auf die dieser Modus testen kann."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:211
 msgid ""
 "2x2 mode can only match cells that are part of a 2-by-2 block - cells with "
 "no neighbors and lines only one cell wide are not supported."
 msgstr ""
+"Der 2x2-Modus kann nur mit Zellen übereinstimmen, die Teil eines 2-mal-2-"
+"Blocks sind. Zellen ohne Nachbarn und Zeilen mit nur einer Zellbreite werden "
+"nicht unterstützt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:215
 msgid "3x3 (minimal)"
@@ -362,13 +481,16 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:220
 msgid "The 4 corner bits work the same as in 2x2 mode."
-msgstr ""
+msgstr "Die 4 Eckbits funktionieren genauso wie im 2x2-Modus."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
 msgstr ""
+"Wenn ein Kantenbit \"an\" ist, muss die Zelle, die diese Kante teilt, "
+"gefüllt werden. Wenn ein Kantenbit \"aus\" ist, muss die Zelle, die diese "
+"Kante teilt, leer sein."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:225
 msgid "The center bit should be \"on\" for any tile you wish to use."
@@ -379,12 +501,16 @@ msgid ""
 "Note that in this mode, it makes no sense for a corner bit to be \"on\" when "
 "either edge bit adjacent to it is not \"on\"."
 msgstr ""
+"Beachten Sie, dass es in diesem Modus keinen Sinn macht, dass ein Eckbit "
+"\"Ein\" ist, wenn eines der angrenzenden Kantenbits nicht \"Ein\" ist."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:230
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Insgesamt wären 47 Kacheln erforderlich, um genau eine Bitmaske für jede "
+"Anordnung bereitzustellen, auf die dieser Modus testen kann."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid "3x3"
@@ -400,17 +526,21 @@ msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
+"Jedes Bit prüft eine einzelne benachbarte Zelle. Eckbits prüfen nur diagonal "
+"benachbarte Zellen. Das mittlere Bit sollte für jede Kachel, die Sie "
+"verwenden möchten, \"an\" sein."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:242
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
+"Insgesamt wären 256 Kacheln erforderlich, um genau eine Bitmaske für jede "
+"Anordnung bereitzustellen, auf die dieser Modus testen kann."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:247
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "Verwendung von Leerzeichen"
+msgstr "Autotile deaktivieren"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:249
 msgid ""
@@ -418,10 +548,13 @@ msgid ""
 "select tiles manually, by clicking \"Disable Autotile\" at the top of the "
 "tile selection window."
 msgstr ""
+"Wenn Sie eine Autotile verwenden, können Sie dessen Verhalten deaktivieren "
+"und Kacheln manuell auswählen, indem Sie oben im Kachelauswahlfenster auf "
+"\"Autotile deaktivieren\" klicken."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
 msgid "Autotile binding"
-msgstr ""
+msgstr "Autotile Bindung"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:256
 msgid ""
@@ -435,6 +568,16 @@ msgid ""
 "to the neighbor cell. You can find the id of an autotile using "
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
+"Standardmäßig sucht Autotile nur nach benachbarten Zellen, die mit demselben "
+"Autotile gefüllt wurden. Dieses Verhalten kann überschrieben werden, damit "
+"Autotiles aneinander oder sogar an leere Zellen gebunden werden. Derzeit "
+"kann dies nur durch Skripterstellung erfolgen. Sie müssen Ihrem TileSet ein "
+"Skript hinzufügen und eine Funktion mit dem Namen \"_is_tile_bound(drawn_id, "
+"neighbor_id)\" definieren. Diese Funktion wird für jede benachbarte Zelle "
+"aufgerufen, die nicht dasselbe Autotile enthält, und sollte \"wahr\" "
+"zurückgeben, wenn die gezeichnete Zelle an die Nachbarzelle \"binden\" soll. "
+"Sie können die ID eines Autotiles mit \"find_tile_by_name (name)\" "
+"ermitteln. Leere Zellen erhalten die ID -1."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:266
 msgid ""
@@ -442,6 +585,9 @@ msgid ""
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
+"Beachten Sie, dass das Skript, um dies im Editor zu verwenden, mit einer "
+"\"tool\"-Deklaration beginnen sollte. Möglicherweise müssen Sie die Szene "
+"schließen und neu laden, damit diese Änderungen wirksam werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "Tips and tricks"
@@ -469,3 +615,5 @@ msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."
 msgstr ""
+"Werkzeuge wie Kopieren, Einfügen und Bereiche füllen finden Sie im Menü "
+"\"TileMap\" oben rechts."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,19 +49,19 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide, you will learn:"
-msgstr ""
+msgstr "In dieser Anleitung geht es um:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
-msgstr ""
+msgstr "Godots vier Arten von Kollisionsobjekten"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:19
 msgid "How each collision object works"
-msgstr ""
+msgstr "Wie jedes Kollisionsobjekt funktioniert"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:20
 msgid "When and why to choose one type over another"
-msgstr ""
+msgstr "Wann und warum eins dem anderen vorgezogen wird"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:22
 msgid ""
@@ -69,6 +69,9 @@ msgid ""
 "collision shape has a direct equivalent in 3D and in most cases they work in "
 "much the same way."
 msgstr ""
+"In den Beispielen dieses Dokuments werden 2D-Objekte verwendet. Jedes 2D-"
+"Physikobjekt und jede Kollisionsform hat ein direktes Äquivalent in 3D und "
+"funktioniert in den meisten Fällen auf die gleiche Weise."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
 msgid "Collision objects"
@@ -79,6 +82,8 @@ msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
 msgstr ""
+"Godot bietet vier Arten von physikalischen Körpern, die :ref:"
+"`CollisionObject2D <class_CollisionObject2D>` erweitern:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
@@ -91,15 +96,21 @@ msgid ""
 "``Area2D`` can also be used to override physics properties, such as gravity "
 "or damping, in a defined area."
 msgstr ""
+"``Area2D``-Nodes bieten **Erkennung** und **Einfluss**. Sie können erkennen "
+"wenn sich Objekte überlappen, und Signale ausgeben wenn Körper den Bereich "
+"betreten oder verlassen. Ein ``Area2D`` kann auch verwendet werden, um "
+"physikalische Eigenschaften wie Schwerkraft oder Dämpfung in einem "
+"definierten Bereich zu übergehen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
+"Die anderen drei Körper erweitern :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
-msgstr ""
+msgstr ":ref:`StaticBody2D <class_StaticBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:40
 msgid ""
@@ -108,6 +119,10 @@ msgid ""
 "collision. They are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"Ein statischer Körper wird nicht von der Physik-Engine bewegt. Es nimmt an "
+"der Kollisionserkennung teil, bewegt sich jedoch nicht als Reaktion auf die "
+"Kollision. Sie werden am häufigsten für Objekte verwendet, die Teil der "
+"Umgebung sind oder kein dynamisches Verhalten benötigen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
@@ -120,16 +135,23 @@ msgid ""
 "impulses, etc.) and the physics engine calculates the resulting movement. :"
 "ref:`Read more about using rigid bodies. <doc_rigid_body>`"
 msgstr ""
+"Dies ist der Node, der simulierte 2D-Physik implementiert. Sie steuern einen "
+"``RigidBody2D`` nicht direkt, sondern üben stattdessen Kräfte auf ihn aus "
+"(Schwerkraft, Impulse usw.) und die Physik-Engine berechnet die "
+"resultierende Bewegung. :ref:`Read more about using rigid bodies. "
+"<doc_rigid_body>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
-msgstr ""
+msgstr ":ref:`KinematicBody2D <class_KinematicBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:51
 msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
 msgstr ""
+"Ein Körper, der Kollisionserkennung bietet, aber keine Physik. Alle "
+"Bewegungs- und Kollisionsreaktionen müssen im Code implementiert sein."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
 msgid "Collision shapes"
@@ -141,12 +163,18 @@ msgid ""
 "as children. These shapes are used to define the object's collision bounds "
 "and to detect contact with other objects."
 msgstr ""
+"Ein Physikkörper kann eine beliebige Anzahl von :ref:`Shape2D "
+"<class_Shape2D>` Objekten als untergeordnete Objekte enthalten. Diese Formen "
+"werden verwendet, um die Kollisionsgrenzen des Objekts zu definieren und den "
+"Kontakt mit anderen Objekten zu erkennen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:61
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
 msgstr ""
+"Um Kollisionen zu erkennen, muss dem Objekt mindestens eine ``Shape2D`` "
+"zugewiesen werden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:64
 msgid ""
@@ -155,6 +183,10 @@ msgid ""
 "<class_CollisionPolygon2D>` as a child of the object. These nodes allow you "
 "to draw the shape directly in the editor workspace."
 msgstr ""
+"Die häufigste Methode zum Zuweisen einer Form ist das Hinzufügen von :ref:"
+"`CollisionShape2D <class_CollisionShape2D>` oder :ref:`CollisionPolygon2D "
+"<class_CollisionPolygon2D>` als untergeordnetes Objekt des Objekts. Mit "
+"diesen Nodes können Sie die Form direkt im Editor-Arbeitsbereich zeichnen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:68
 msgid ""
@@ -164,10 +196,15 @@ msgid ""
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
+"Achten Sie darauf, Ihre Kollisionsformen niemals im Editor zu skalieren. Die "
+"Eigenschaft \"Scale\" im Inspektor sollte ``(1, 1)`` bleiben. Wenn Sie die "
+"Größe der Kollisionsform ändern, sollten Sie immer die Größenregler "
+"verwenden und **nicht** die ``Node2D``-Skalenregler. Das Skalieren einer "
+"Form kann zu unerwartetem Kollisionsverhalten führen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:77
 msgid "Physics process callback"
-msgstr ""
+msgstr "Aufruf des Physikprozesses"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:79
 msgid ""
@@ -176,6 +213,11 @@ msgid ""
 "a body's state variables such as ``position`` or ``linear velocity`` may not "
 "be accurate for the current frame."
 msgstr ""
+"Die Physik-Engine kann mehrere Threads erzeugen, um die Leistung zu "
+"verbessern, sodass sie bis zu einem vollständigen Frame für die Verarbeitung "
+"der Physik verwenden kann. Aus diesem Grund ist der Wert der "
+"Zustandsvariablen eines Körpers wie ``position`` oder ``linear velocity`` "
+"für den aktuellen Frame möglicherweise nicht genau."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
 msgid ""
@@ -188,6 +230,16 @@ msgid ""
 "the default 60 Hz physics update rate, it will typically be equal to "
 "``0.01666...`` (but not always, see below)."
 msgstr ""
+"Um diese Ungenauigkeit zu vermeiden, sollte jeder Code, der auf die "
+"Eigenschaften eines Körpers zugreifen muss, in der Funktion :ref:`Node."
+"_physics_process () <class_Node_method__physics_process>` ausgeführt werden, "
+"der vor jedem Physikschritt mit einer konstanten Bildrate (standardmäßig 60 "
+"mal pro Sekunde) aufgerufen wird. Dieser Methode wird ein ``delta``-"
+"Parameter übergeben, bei dem es sich um eine Gleitkommazahl handelt, die der "
+"Zeit entspricht, die seit dem letzten Schritt in *Sekunden* vergangen ist. "
+"Wenn Sie die Standard-Aktualisierungsrate für die Physik von 60 Hz "
+"verwenden, entspricht diese normalerweise \"0,01666 ...\" (aber nicht immer, "
+"siehe unten)."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:94
 msgid ""
@@ -195,6 +247,10 @@ msgid ""
 "physics calculations, so that the game behaves correctly if you change the "
 "physics update rate or if the player's device can't keep up."
 msgstr ""
+"Es wird empfohlen immer den Parameter ``delta`` zu verwenden wenn dies für "
+"Ihre Physikberechnungen relevant ist, damit sich das Spiel korrekt verhält "
+"wenn Sie die Aktualisierungsrate der Physik ändern oder wenn das Gerät des "
+"Spielers nicht mithalten kann."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:101
 msgid "Collision layers and masks"
@@ -208,24 +264,32 @@ msgid ""
 "and **masks**. Each ``CollisionObject2D`` has 20 different physics layers it "
 "can interact with."
 msgstr ""
+"Eines der leistungsstärksten, aber häufig missverstandenen "
+"Kollisionsmerkmale ist das Kollisionsschichtsystem. Mit diesem System können "
+"Sie komplexe Interaktionen zwischen einer Vielzahl von Objekten aufbauen. "
+"Die Schlüsselkonzepte sind **Ebenen** und **Masken**. Jedes "
+"``CollisionObject2D`` hat 20 verschiedene physikalische Schichten, mit denen "
+"es interagieren kann."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:109
 msgid "Let's look at each of the properties in turn:"
-msgstr ""
+msgstr "Schauen wir uns nacheinander die einzelnen Eigenschaften an:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:113
 msgid "collision_layer"
-msgstr ""
+msgstr "collision_layer"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:112
 msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
+"Dies beschreibt die Ebenen, **in** denen das Objekt erscheint. Standardmäßig "
+"sind alle Objekte auf Ebene ``1``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:118
 msgid "collision_mask"
-msgstr ""
+msgstr "collision_mask"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:116
 msgid ""
@@ -233,12 +297,16 @@ msgid ""
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
+"Dies beschreibt, welche Schichten der Körper nach Kollisionen **scannen** "
+"wird. Wenn sich ein Objekt nicht in einer der Maskenebenen befindet, wird es "
+"vom Körper ignoriert. Standardmäßig scannen alle Körper die Ebene ``1``."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:120
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
+"Diese Eigenschaften können per Code oder im Inspektor konfiguriert werden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:122
 msgid ""
@@ -246,11 +314,14 @@ msgid ""
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
+"Es kann schwierig sein den Überblick darüber zu behalten, wofür Sie die "
+"einzelnen Ebenen verwenden. Daher ist es möglicherweise hilfreich, den von "
+"Ihnen verwendeten Ebenen Namen zuzuweisen. Namen können unter "
+"Projekteinstellungen -> Ebenennamen vergeben werden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
-#, fuzzy
 msgid "GUI example"
-msgstr "Input-Beispiele"
+msgstr "GUI Beispiele"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
@@ -259,6 +330,10 @@ msgid ""
 "collisions with both Enemy and Coin, but Enemy and Coin should ignore each "
 "other."
 msgstr ""
+"Sie haben vier Node-Typen in Ihrem Spiel: Wände, Spieler, Feind und Münze. "
+"Sowohl der Spieler als auch der Feind sollten mit Wänden kollidieren können. "
+"Der Spieler-Node sollte Kollisionen mit dem Feind und der Münze erkennen, "
+"aber der Feind und die Münze sollten sich gegenseitig ignorieren."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:136
 msgid ""
@@ -268,11 +343,16 @@ msgid ""
 "should interact with. For example, the Player's settings would look like "
 "this:"
 msgstr ""
+"Benennen Sie zunächst die Ebenen 1 bis 4 \"Wände\", \"Spieler\", \"Feinde\" "
+"und \"Münzen\" und platzieren Sie jeden Node-Typ mithilfe der Eigenschaft "
+"\"Ebene\" in der jeweiligen Ebene. Legen Sie dann die \"Masken\" -"
+"Eigenschaft jedes Nodes fest, indem Sie die Ebenen auswählen mit denen er "
+"interagieren soll. Die Einstellungen des Spielers sehen beispielsweise "
+"folgendermaßen aus:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Timer Beispiel"
+msgstr "Code Beispiel"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -281,16 +361,22 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"In Funktionsaufrufen werden Ebenen als Bitmaske angegeben. Wenn eine "
+"Funktion standardmäßig alle Ebenen aktiviert, wird die Ebenenmaske als "
+"``0x7fffffff`` angegeben. Ihr Code kann je nach Wunsch für Ebenenmasken "
+"Binär-, Hexadezimal- oder Dezimalschreibweise verwenden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
+"Das Code-Äquivalent des obigen Beispiels, in dem die Schichten 1, 3 und 4 "
+"aktiviert wurden, lautet wie folgt:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"
-msgstr ""
+msgstr "Area2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:176
 msgid ""
@@ -299,32 +385,41 @@ msgid ""
 "be used to override physics properties, such as gravity or damping, in a "
 "defined area."
 msgstr ""
+"Area-Nodes bieten **Erkennung** und **Einfluss**. Sie können erkennen wenn "
+"sich Objekte überlappen und Signale abgeben wenn Körper den Bereich betreten "
+"oder verlassen. Bereiche können auch verwendet werden, um physikalische "
+"Eigenschaften wie Schwerkraft oder Dämpfung in einem definierten Bereich zu "
+"übergehen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:181
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
-msgstr ""
+msgstr "Es gibt drei Hauptanwendungen für :ref:`Area2D <class_Area2D>`:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:183
 msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr ""
+"Überschreiben physikalischer Parameter (wie z.B. der Schwerkraft) in einer "
+"bestimmten Region."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:185
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
+"Erkennen, wann andere Körper eine Region betreten oder verlassen oder welche "
+"Körper sich derzeit in einer Region befinden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:187
 msgid "Checking other areas for overlap."
-msgstr ""
+msgstr "Überprüfen anderer Bereiche auf Überlappung."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:189
 msgid "By default, areas also receive mouse and touchscreen input."
-msgstr ""
+msgstr "Standardmäßig erhalten Bereiche auch Maus- und Touchscreen-Eingaben."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:192
 msgid "StaticBody2D"
-msgstr ""
+msgstr "StaticBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid ""
@@ -334,32 +429,41 @@ msgid ""
 "**as if** it were moving, using its ``constant_linear_velocity`` and "
 "``constant_angular_velocity`` properties."
 msgstr ""
+"Ein statischer Körper wird von der Physik-Engine nicht bewegt. Es nimmt an "
+"der Kollisionserkennung teil, bewegt sich jedoch nicht als Reaktion auf die "
+"Kollision. Es kann jedoch einem kollidierenden Körper Bewegung oder Rotation "
+"verleihen **als ob** er sich bewegen würde, und zwar unter Verwendung seiner "
+"Eigenschaften ``constant_linear_velocity`` und ``constant_angular_velocity`` "
+"(\"konstante lineare Geschwindigkeit\" und \"konstante Winkelgeschwindigkeit"
+"\")."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"`` StaticBody2D`` -Nodes werden am häufigsten für Objekte verwendet, die "
+"Teil der Umgebung sind oder kein dynamisches Verhalten benötigen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:202
 msgid "Example uses for ``StaticBody2D``:"
-msgstr ""
+msgstr "Beispiele für ``StaticBody2D``:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:204
 msgid "Platforms (including moving platforms)"
-msgstr ""
+msgstr "Plattformen (einschließlich beweglicher Plattformen)"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:205
 msgid "Conveyor belts"
-msgstr ""
+msgstr "Förderbänder"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:206
 msgid "Walls and other obstacles"
-msgstr ""
+msgstr "Wände und andere Hindernisse"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:209
 msgid "RigidBody2D"
-msgstr ""
+msgstr "RigidBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:211
 msgid ""
@@ -369,12 +473,20 @@ msgid ""
 "collisions with other bodies, and collision responses, such as bouncing, "
 "rotating, etc."
 msgstr ""
+"Dies ist der Node, der simulierte 2D-Physik implementiert. Sie steuern ein :"
+"ref:`RigidBody2D <class_RigidBody2D>` nicht direkt. Stattdessen üben Sie "
+"Kräfte darauf aus, und die Physik-Engine berechnet die resultierende "
+"Bewegung, einschließlich Kollisionen mit anderen Körpern, und "
+"Kollisionsreaktionen wie Prellen, Drehen usw."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:217
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
+"Sie können das Verhalten eines starren Körpers über Eigenschaften wie \"Masse"
+"\", \"Reibung\" oder \"Sprungkraft\" ändern, die im Inspektor festgelegt "
+"werden können."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:220
 msgid ""
@@ -382,6 +494,10 @@ msgid ""
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
+"Das Verhalten des Körpers wird auch von den Eigenschaften der Welt "
+"beeinflusst, wie unter `Projekteinstellungen -> Physik` festgelegt, oder "
+"durch Eingabe eines :ref:`Area2D <class_Area2D>`, das die globalen "
+"Eigenschaften der Physik überschreibt."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:224
 msgid ""
@@ -390,40 +506,54 @@ msgid ""
 "by the physics engine. The body will wake up when forces are applied, either "
 "by a collision or via code."
 msgstr ""
+"Wenn ein starrer Körper in Ruhe ist und sich eine Weile nicht bewegt hat, "
+"geht er schlafen. Ein schlafender Körper wirkt wie ein statischer Körper und "
+"seine Kräfte werden nicht von der Physik-Engine berechnet. Der Körper wacht "
+"auf, wenn Kräfte aufgebracht werden, entweder durch eine Kollision oder per "
+"Code."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:230
 msgid "Rigid body modes"
-msgstr ""
+msgstr "Rigid Body Modi"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:232
 msgid "A rigid body can be set to one of four modes:"
-msgstr ""
+msgstr "Ein starrer Körper kann auf einen von vier Modi eingestellt werden:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:234
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
+"**Rigid** - Der Körper verhält sich wie ein physisches Objekt. Es kollidiert "
+"mit anderen Körpern und reagiert auf die auf ihn ausgeübten Kräfte. Dies ist "
+"der Standardmodus."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:235
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
+"**Static** - Der Körper verhält sich wie ein :ref:`StaticBody2D "
+"<class_StaticBody2D>` und bewegt sich nicht."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:236
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
+"**Character** - Ähnlich wie im \"Rigid\" Modus, aber der Körper kann sich "
+"nicht drehen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:237
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
+"**Kinematic** - Der Körper verhält sich wie ein :ref:`KinematicBody2D "
+"<class_KinematicBody2D>` und muss per Code verschoben werden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:240
 msgid "Using RigidBody2D"
-msgstr ""
+msgstr "Nutzung von RigidBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:242
 msgid ""
@@ -433,6 +563,12 @@ msgid ""
 "create RigidBody2Ds and adjust their properties. Stacking, falling, and "
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
+"Einer der Vorteile der Verwendung eines starren Körpers besteht darin, dass "
+"viele Verhaltensweisen \"kostenlos\" ausgeführt werden können, ohne dass "
+"Code geschrieben werden muss. Wenn Sie beispielsweise ein Spiel im \"Angry "
+"Birds\"-Stil mit fallenden Blöcken erstellen, müssen Sie nur RigidBody2Ds "
+"erstellen und deren Eigenschaften anpassen. Das Stapeln, Fallen und Hüpfen "
+"wird automatisch von der Physik-Engine berechnet."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:248
 msgid ""
@@ -446,10 +582,21 @@ msgid ""
 "which allows for safely changing properties and synchronizing them with the "
 "physics engine."
 msgstr ""
+"Wenn Sie jedoch eine gewisse Kontrolle über den Körper haben möchten, "
+"sollten Sie vorsichtig sein - das Ändern der Position, der linearen "
+"Geschwindigkeit oder anderer physikalischer Eigenschaften eines starren "
+"Körpers kann zu unerwartetem Verhalten führen. Wenn Sie eine der "
+"physikbezogenen Eigenschaften ändern müssen, sollten Sie :ref:"
+"`_integrate_forces () <class_RigidBody2D_method__integrate_forces>` anstelle "
+"von ``_physics_process ()`` verwenden. In dieser Funktion haben Sie Zugriff "
+"auf :ref:`Physics2DDirectBodyState <class_Physics2DDirectBodyState>` des "
+"Körpers, wodurch Eigenschaften sicher geändert und mit der Physik-Engine "
+"synchronisiert werden können."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:257
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
+"Hier ist zum Beispiel der Code für ein Raumschiff im \"Asteroids\" Stil:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
@@ -457,6 +604,10 @@ msgid ""
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
+"Beachten Sie, dass wir die Eigenschaften ``linear_velocity`` oder "
+"``angular_velocity`` nicht direkt einstellen, sondern Kräfte (``thrust`` und "
+"``torque`` - \"Schub\" und \"Drehmoment\") auf den Körper ausüben und die "
+"Physik-Engine die resultierende Bewegung berechnet ."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:306
 msgid ""
@@ -466,10 +617,16 @@ msgid ""
 "ref:`can_sleep <class_RigidBody2D_property_can_sleep>` property. Be aware "
 "that this can have a negative effect on performance."
 msgstr ""
+"Wenn ein starrer Körper schlafen geht, wird die Funktion ``_integrate_forces "
+"()`` nicht aufgerufen. Um dieses Verhalten zu überschreiben, müssen Sie den "
+"Körper wach halten, indem Sie eine Kollision erstellen, eine Kraft auf ihn "
+"ausüben oder die Eigenschaft :ref:`can_sleep "
+"<class_RigidBody2D_property_can_sleep>` deaktivieren. Beachten Sie, dass "
+"sich dies negativ auf die Leistung auswirken kann."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:313
 msgid "Contact reporting"
-msgstr ""
+msgstr "Kontakt-Meldungen"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:315
 msgid ""
@@ -482,6 +639,15 @@ msgid ""
 "<class_Physics2DDirectBodyState_method_get_contact_count>` and related "
 "functions."
 msgstr ""
+"Standardmäßig achten starre Körper nicht auf Kontakte, da dies eine große "
+"Menge an Speicher erfordern kann, wenn sich viele Körper in der Szene "
+"befinden. Um die Kontaktberichterstellung zu aktivieren, setzen Sie die "
+"Eigenschaft :ref:`contact_reported "
+"<class_RigidBody2D_property_contacts_reported>` auf einen Wert ungleich "
+"Null. Die Kontakte erhält man dann über :ref:`Physics2DDirectBodyState."
+"get_contact_count () "
+"<class_Physics2DDirectBodyState_method_get_contact_count>` und verwandte "
+"Funktionen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:322
 msgid ""
@@ -489,10 +655,14 @@ msgid ""
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
+"Die Kontaktüberwachung über Signale kann über die Eigenschaft :ref:"
+"`contact_monitor <class_RigidBody2D_property_contact_monitor>` aktiviert "
+"werden. Eine Liste der verfügbaren Signale finden Sie unter :ref:"
+"`RigidBody2D <class_RigidBody2D>`."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:327
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
@@ -501,6 +671,11 @@ msgid ""
 "friction. Instead, they must be controlled by the user via code. The physics "
 "engine will not move a kinematic body."
 msgstr ""
+":ref:`KinematicBody2D <class_KinematicBody2D>` Körper erkennen Kollisionen "
+"mit anderen Körpern, werden jedoch nicht von physikalischen Eigenschaften "
+"wie Schwerkraft oder Reibung beeinflusst. Stattdessen müssen sie vom "
+"Benutzer per Code gesteuert werden. Die Physik-Engine bewegt keinen "
+"kinematischen Körper."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:334
 msgid ""
@@ -510,10 +685,16 @@ msgid ""
 "if a collision is detected with another body. After the body has collided, "
 "any collision response must be coded manually."
 msgstr ""
+"Wenn Sie einen kinematischen Körper bewegen, sollten Sie seine ``position`` "
+"nicht direkt einstellen. Stattdessen verwenden Sie die Methoden "
+"``move_and_collide()`` oder ``move_and_slide()``. Diese Methoden bewegen den "
+"Körper entlang eines bestimmten Vektors und er stoppt sofort, wenn eine "
+"Kollision mit einem anderen Körper erkannt wird. Nachdem der Körper "
+"kollidiert ist, muss jede Kollisionsreaktion manuell codiert werden."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:341
 msgid "Kinematic collision response"
-msgstr ""
+msgstr "Kinematische Kollisionsreaktion"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:343
 msgid ""
@@ -522,10 +703,15 @@ msgid ""
 "collision response depends on which method you used to move the "
 "KinematicBody2D."
 msgstr ""
+"Nach einer Kollision möchten Sie möglicherweise, dass der Körper abprallt, "
+"an einer Wand entlang gleitet oder die Eigenschaften des getroffenen Objekts "
+"ändert. Wie Sie mit der Kollisionsreaktion umgehen, hängt davon ab, mit "
+"welcher Methode Sie den KinematicBody2D verschoben haben."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:348
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
+":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:350
 msgid ""
@@ -534,20 +720,27 @@ msgid ""
 "information about the collision and the colliding body. You can use this "
 "information to determine the response."
 msgstr ""
+"Bei Verwendung von ``move_and_collide ()`` gibt die :ref:"
+"`KinematicCollision2D <class_KinematicCollision2D>` Funktion ein Objekt "
+"zurück, das Informationen über die Kollision und den kollidierenden Körper "
+"enthält. Sie können diese Informationen verwenden, um die Antwort zu "
+"bestimmen."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:355
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
 msgstr ""
+"Wenn Sie beispielsweise den Punkt im Raum suchen möchten, an dem die "
+"Kollision aufgetreten ist:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:386
 msgid "Or to bounce off of the colliding object:"
-msgstr ""
+msgstr "Oder um vom kollidierenden Objekt abzuprallen:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:415
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
-msgstr ""
+msgstr ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:417
 msgid ""
@@ -557,21 +750,35 @@ msgid ""
 "``move_and_slide()`` provides a convenient way to implement sliding movement "
 "without writing much code."
 msgstr ""
+"Gleiten ist eine häufige Kollisionsreaktion. Stellen Sie sich einen Spieler "
+"vor, der sich in einem Top-Down-Spiel an Wänden entlang bewegt oder in einem "
+"Plattformer auf und ab läuft. Während es möglich ist, diese Antwort nach der "
+"Verwendung von ``move_and_collide()`` selbst zu codieren, bietet "
+"``move_and_slide()`` eine bequeme Möglichkeit, eine Gleitbewegung zu "
+"implementieren, ohne viel Code zu schreiben."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:423
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
+"``move_and_slide ()`` bezieht automatisch den Zeitschritt in seine "
+"Berechnung ein, daher sollten Sie den Geschwindigkeitsvektor **nicht** mit "
+"``delta`` multiplizieren."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:427
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
+"Verwenden Sie beispielsweise den folgenden Code, um einen Character zu "
+"erstellen, der über den Boden laufen (einschließlich Hänge) und auch "
+"springen kann, wenn er auf dem Boden steht:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:494
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
 msgstr ""
+"Siehe auch :ref:`doc_kinematic_character_2d` for more details on using "
+"``move_and_slide()``für ein Demo Projekt mit ausführlichem Code."

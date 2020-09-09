@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio streams"
-msgstr ""
+msgstr "Audio streams"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:7
 msgid "Introduction"
@@ -82,17 +82,20 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:44
 msgid "AudioStreamPlayer"
-msgstr ""
+msgstr "AudioStreamPlayer"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:46
 msgid ""
 "This is the standard, non-positional stream player. It can play to any bus. "
 "In 5.1 sound setups, it can send audio to stereo mix or front speakers."
 msgstr ""
+"Dies ist der Standard-Stream-Player ohne Position, der zu jedem Bus gespielt "
+"werden kann. In 5.1-Sound-Setups kann Audio an Stereomix oder "
+"Frontlautsprecher gesendet werden."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:50
 msgid "AudioStreamPlayer2D"
-msgstr ""
+msgstr "AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:52
 msgid ""
@@ -100,6 +103,10 @@ msgid ""
 "environment. When close to the left of the screen, the panning will go left. "
 "When close to the right side, it will go right."
 msgstr ""
+"Dies ist eine Variante von AudioStreamPlayer, gibt jedoch Ton in einer 2D "
+"Positionsumgebung aus. Wenn Sie sich links vom Bildschirm befinden, wird "
+"nach links geschwenkt, in der Nähe der rechten Seite dementsprechend nach "
+"rechts."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:58
 msgid ""
@@ -108,10 +115,14 @@ msgid ""
 "different reverb or sound qualities to handle action happening in a "
 "particular parts of your game world."
 msgstr ""
+"Area2Ds können verwendet werden, um Sound von allen AudioStreamPlayer2Ds die "
+"sie enthalten, auf bestimmte Busse umzuleiten. Auf diese Weise können Busse "
+"mit unterschiedlichen Hall- oder Klangqualitäten erstellt werden, um die "
+"Aktionen in bestimmten Teilen Ihrer Spielwelt zu bewältigen."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:66
 msgid "AudioStreamPlayer3D"
-msgstr ""
+msgstr "AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:68
 msgid ""
@@ -120,29 +131,43 @@ msgid ""
 "it can position sound in stereo, 5.1 or 7.1 depending on the chosen audio "
 "setup."
 msgstr ""
+"Dies ist eine Variante von AudioStreamPlayer, gibt jedoch Ton in einer 3D-"
+"Positionsumgebung aus. Abhängig von der Position des Spielers relativ zum "
+"Bildschirm kann der Ton je nach gewähltem Audio-Setup in Stereo, 5.1 oder "
+"7.1 positioniert werden."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:72
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr ""
+"Ähnlich wie bei AudioStreamPlayer2D kann ein Bereich den Ton auf einen "
+"Audiobus umleiten."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:76
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
 msgstr ""
+"Im Gegensatz zu 2D bietet die 3D Version von AudioStreamPlayer einige "
+"erweiterte Optionen:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:81
 msgid "Reverb buses"
-msgstr ""
+msgstr "Reverb Busse (Hall-Effekt)"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:83
+#, fuzzy
 msgid ""
 "Godot allows for 3D audio streams that enter a specific Area node to send "
 "dry and wet audio to separate buses. This is useful when you have several "
 "reverb configurations for different types of rooms. This is done by enabling "
 "this type of reverb in the **Reverb Bus** section of the Area's properties:"
 msgstr ""
+"Godot ermöglicht 3D Audiostreams, die in einen bestimmten Bereichs-Node "
+"eintreten, um trockenes und nasses Audio an separate Busse zu senden. Dies "
+"ist nützlich, wenn Sie mehrere Hallkonfigurationen für verschiedene "
+"Raumtypen haben. Dies erfolgt durch Aktivieren dieser Art von Hall im "
+"Abschnitt **Reverb Bus** der Eigenschaften des Bereichs:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:90
 msgid ""
@@ -150,6 +175,10 @@ msgid ""
 "the reverb info from each area. A Reverb effect needs to be created and "
 "configured in each reverb bus to complete the setup for the desired effect:"
 msgstr ""
+"Gleichzeitig wird ein spezielles Buslayout erstellt, in dem jeder Bereich "
+"die Hall-Informationen von jedem Bereich empfängt. In jedem Reverb-Bus muss "
+"ein Hall-Effekt erstellt und konfiguriert werden, um das Setup für den "
+"gewünschten Effekt abzuschließen:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:96
 msgid ""
@@ -159,10 +188,15 @@ msgid ""
 "source may be far away. Playing around with this parameter can simulate that "
 "effect."
 msgstr ""
+"Der Abschnitt **Reverb Bus** des Bereichs enthält auch einen Parameter mit "
+"dem Namen **Uniformity**. Einige Arten von Räumen prallen stärker ab als "
+"andere (wie ein Lagerhaus), sodass der Nachhall fast gleichmäßig im gesamten "
+"Raum zu hören ist, auch wenn die Quelle möglicherweise weit entfernt ist. "
+"Das Herumspielen mit diesem Parameter kann diesen Effekt simulieren."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:103
 msgid "Doppler"
-msgstr ""
+msgstr "Doppler"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:105
 msgid ""
@@ -171,6 +205,11 @@ msgid ""
 "Godot can track velocity changes in the AudioStreamPlayer3D and Camera "
 "nodes. Both nodes have this property, which must be enabled manually:"
 msgstr ""
+"Wenn sich die Relativgeschwindigkeit zwischen einem Sender und einem Hörer "
+"ändert, wird dies als Zunahme oder Abnahme der Tonhöhe des emittierten Tons "
+"wahrgenommen. Godot kann Geschwindigkeitsänderungen in dem "
+"AudioStreamPlayer3D Node und Camera Nodeverfolgen. Beide Nodes haben diese "
+"Eigenschaft, die manuell aktiviert werden muss:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:112
 msgid ""
@@ -178,3 +217,7 @@ msgid ""
 "for objects moved using ``_process``, or **Physics** for objects moved using "
 "``_physics_process``. The tracking will happen automatically."
 msgstr ""
+"Aktivieren Sie es abhängig davon wie Objekte verschoben werden: verwenden "
+"Sie **Leerlauf** für Objekte, die mit ``_process`` verschoben wurden, oder "
+"**Physik** für Objekte, die mit ``_physics_process`` verschoben wurden. Die "
+"Verfolgung erfolgt automatisch."

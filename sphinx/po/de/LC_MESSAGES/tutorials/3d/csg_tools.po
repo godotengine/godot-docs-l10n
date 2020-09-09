@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:4
-msgid "CSG"
+msgid "Prototyping levels with CSG"
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:6
@@ -27,6 +27,11 @@ msgid ""
 "basic shapes or custom meshes to create more complex shapes. In 3D modelling "
 "software, CSG is mostly known as \"Boolean Operators\"."
 msgstr ""
+"CSG steht für **Constructive Solid Geometry** (konstruktive "
+"Festkörpergeometrie), und ist ein Werkzeug zum Kombinieren von Grundformen "
+"oder benutzerdefinierten Meshes, um komplexere Formen zu erstellen. In 3D-"
+"Modellierungssoftware wird CSG hauptsächlich als \"Boolesche Operatoren\" "
+"bezeichnet."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:10
 msgid ""
@@ -35,6 +40,10 @@ msgid ""
 "primitives. Interior environments can be created by using inverted "
 "primitives."
 msgstr ""
+"Level-Prototyping ist eine der Hauptanwendungen von CSG in Godot. Mit dieser "
+"Technik können Benutzer einfache Versionen der gängigsten Formen erstellen, "
+"indem sie Grundelemente kombinieren. Innenumgebungen können mithilfe "
+"invertierter Grundelemente erstellt werden."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:14
 msgid ""
@@ -42,6 +51,10 @@ msgid ""
 "built-in support for UV mapping or editing 3D polygons (though extruded 2D "
 "polygons can be used with the CSGPolygon node)."
 msgstr ""
+"Die CSG-Nodes in Godot sind hauptsächlich für das Prototyping vorgesehen. Es "
+"gibt keine integrierte Unterstützung für UV-Mapping oder das Bearbeiten von "
+"3D-Polygonen (obwohl extrudierte 2D-Polygone mit dem CSGPolygon-Node "
+"verwendet werden können)."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:18
 msgid ""
@@ -60,6 +73,8 @@ msgid ""
 "Like other features of Godot, CSG is supported in the form of nodes. These "
 "are the CSG nodes:"
 msgstr ""
+"Wie andere Funktionen von Godot wird CSG in Form von Nodes unterstützt. Dies "
+"sind die CSG-Nodes:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:32
 msgid ":ref:`CSGBox <class_CSGBox>`"
@@ -91,52 +106,62 @@ msgstr ":ref:`CSG Combiner <class_CSGcombiner>`"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:45
 msgid "CSG tools features"
-msgstr ""
+msgstr "Eigenschaften der CSG-Tools"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:47
 msgid "Every CSG node supports 3 kinds of boolean operations:"
-msgstr ""
+msgstr "Jeder CSG-Node unterstützt drei Arten von Booleschen Operationen:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:49
 msgid ""
 "**Union:** Geometry of both primitives is merged, intersecting geometry is "
 "removed."
 msgstr ""
+"**Vereinigung:** Die Geometrie beider Grundelemente wird zusammengeführt, "
+"die sich überschneidende Geometrie wird entfernt."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:51
 msgid ""
 "**Intersection:** Only intersecting geometry remains, the rest is removed."
 msgstr ""
+"**Schnittpunkt:** Es bleibt nur die Schnittgeometrie übrig, der Rest wird "
+"entfernt."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:52
 msgid ""
 "**Subtraction:** The second shape is subtracted from the first, leaving a "
 "dent with its shape."
 msgstr ""
+"**Subtraktion:** Die zweite Form wird von der ersten subtrahiert, wobei eine "
+"Delle mit ihrer Form zurückbleibt."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:60
 msgid "CSGPolygon"
-msgstr ""
+msgstr "CSGPolygon"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:62
 msgid ""
 "The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
 "in 2D (in X, Y coordinates) in the following ways:"
 msgstr ""
+"Der Node :ref:`CSGPolygon <class_CSGPolygon>` wird entlang eines in 2D "
+"gezeichneten Polygons (in X, Y Koordinaten) auf folgende Weise extrudiert:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:65
 msgid "**Depth:** Extruded back a given amount."
-msgstr ""
+msgstr "**Tiefe:** Extrudierte einen bestimmten Betrag zurück."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:66
 msgid "**Spin:** Extruded while spinning around its origin."
-msgstr ""
+msgstr "**Schleudern:** Extrudiert beim Drehen um seinen Ursprung."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:67
 msgid ""
 "**Path:** Extruded along a Path node. This operation is commonly called "
 "lofting."
 msgstr ""
+"**Pfad:** Extrudiert entlang eines Pfad-Nodes. Diese Operation wird "
+"üblicherweise als Lofting bezeichnet."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:74
 msgid ""
@@ -158,23 +183,23 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:86
 msgid "it must be closed,"
-msgstr ""
+msgstr "es muss geschlossen sein,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:87
 msgid "it must not self-intersect,"
-msgstr ""
+msgstr "es darf sich nicht selbst überschneiden,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:88
 msgid "it must not contain internal faces,"
-msgstr ""
+msgstr "es darf keine inneren Flächen enthalten,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:89
 msgid "every edge must connect to only two other faces."
-msgstr ""
+msgstr "Jede Kante darf nur mit zwei anderen Flächen verbunden werden."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:94
 msgid "CSGCombiner"
-msgstr ""
+msgstr "CSGCombiner"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:96
 msgid ""
@@ -417,9 +442,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "Einige Dinge gibt es zu beachten:"
+msgstr ""
+"Es gibt zwei Möglichkeiten, ein Material auf einen CSG-Node anzuwenden:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:264
 msgid ""

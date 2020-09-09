@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "Materialien"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "Verwendung vorhandener Godot-Materialien"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:7
 msgid ""
@@ -33,6 +33,11 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"Eine Möglichkeit, wie der Exporteur mit Materialien umgehen kann besteht "
+"darin zu versuchen, das Blender-Material mit einem vorhandenen Godot-"
+"Material abzugleichen. Dies hat den Vorteil, dass Sie alle Funktionen des "
+"Materialsystems von Godot nutzen können. Dies bedeutet jedoch, dass Sie Ihr "
+"Modell mit dem in Blender angewendeten Material nicht sehen können."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
 msgid ""
@@ -100,7 +105,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 msgid "``group node``"
-msgstr ""
+msgstr "``group node``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
@@ -114,6 +119,9 @@ msgid ""
 "output shader node, it is the only one guaranteed to be exactly correct. "
 "Others are just based on approximation."
 msgstr ""
+"Versuchen Sie nach Möglichkeit den PrincipledBSDF-Node mit der GGX-Version "
+"als Ausgabe-Shader-Node zu verwenden. Dies ist der einzige, der garantiert "
+"sehr genau ist. Andere basieren nur auf Annäherung."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
 msgid ""
@@ -125,7 +133,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"
-msgstr ""
+msgstr "Externe Materialien erzeugen"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:61
 msgid ""

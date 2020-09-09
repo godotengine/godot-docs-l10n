@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,6 @@ msgstr ""
 "не можете видеть свою модель с материалом, примененным внутри Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:12
-#, fuzzy
 msgid ""
 "To do this, the exporter attempts to find Godot materials with names that "
 "match those of the material name in Blender. So if you export an object in "
@@ -102,7 +101,6 @@ msgid "Export of Cycles/EEVEE materials"
 msgstr "Экспорт материалов Cycles/EEVEE"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:39
-#, fuzzy
 msgid ""
 "The exporter has a primitive support for converting Cycles/EEVEE material "
 "node tree to Godot Shader Material. Note that some of the Shader Node are "
@@ -114,19 +112,17 @@ msgstr ""
 "реализации, а именно:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
-#, fuzzy
 msgid "all the ``noisy textures``"
-msgstr "все ``noisy textures``"
+msgstr "все ``noisy textures``(\"шумные текстуры\")"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:44
-#, fuzzy
 msgid "``generated texture coordinates``"
 msgstr "``сгенерированные текстурные координаты``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:45
 #, fuzzy
 msgid "``group node``"
-msgstr "``групповой узел``"
+msgstr "``групповой узел``(или \"узел группы\")"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:46
 msgid ""
@@ -144,22 +140,21 @@ msgid ""
 "Others are just based on approximation."
 msgstr ""
 "Если возможно, попробуйте использовать узел PrincipledBSDF с распределением "
-"GGX в качестве выходного шейдерного узла, это единственная гарантия того, "
-"что он будет абсолютно корректным. Другие просто основаны на приближении."
+"GGX в качестве выходного шейдерного узла, этот вариант гарантированно "
+"точный. Другие просто основываются на приближении."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:53
-#, fuzzy
 msgid ""
 "Sometimes materials may not be valid for exporting (e.g. has some "
 "unsupported node) or it is using Blender Internal Engine, only the diffuse "
 "color and a few flags (e.g. unshaded) are exported and form a Spatial "
 "Material."
 msgstr ""
-"Иногда материалы могут быть недействительны для экспорта (например, имеет "
-"какой-то неподдерживаемый узел) или используется внутренний рендер "
+"Иногда материалы могут быть недействительны для экспорта (например, имеют "
+"какой-то не поддерживаемый узел) или они используют внутренний рендер "
 "Blender'a, экспортируется только рассеянный цвет и несколько флагов "
-"(например, unshaded флаг), которые образуют Пространственный Материал "
-"(Spatial Material)."
+"(например, unshaded (незатемненный) флаг), которые образуют Пространственный "
+"Материал (Spatial Material)."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:59
 msgid "Generate external materials"

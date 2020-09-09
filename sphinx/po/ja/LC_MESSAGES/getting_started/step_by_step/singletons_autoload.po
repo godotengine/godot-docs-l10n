@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,6 @@ msgstr ""
 "来ますが、頻繁にデータをセーブとロードする事は面倒でさらに遅くもなります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -71,38 +70,34 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_\\ は"
-"シーン同士の絶え間ない情報の供給を必要とする一般的なユースケースを解決するた"
-"めにとても有用なツールです。我々のケースでは異なる名前を付けるならば、同じ"
-"シーンもしくはクラスを複数のシングルトンの為に再利用する事が可能です。"
+"`シングルトンパターン<https://ja.wikipedia.org/wiki/Singleton_パターン>`_ "
+"\\はシーン同士の絶え間ない情報の供給を必要とする一般的なユースケースを解決す"
+"るためにとても有用なツールです。我々のケースでは異なる名前を付けるならば、同"
+"じシーンもしくはクラスを複数のシングルトンの為に再利用する事が可能です。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
 msgstr "このコンセプトを使うと、オブジェクトを以下のように作る事が出来ます:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
-msgstr "シーンが現在実行中でも問題なく、いつでもロードされます"
+msgstr "シーンが現在実行中でも問題なく、いつでもロードされます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "プレイヤー情報のようなグローバル変数を保管できます"
+msgstr "プレイヤー情報のようなグローバル変数を保管できます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "シーンの切り替えと、シーン遷移同士の切り替えを操作する事ができます"
+msgstr "シーンの遷移の切り替えを操作する事ができます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
-"シングルトンのように動作します、デザインによりGDScript からはグローバル変数を"
-"サポートしません"
+"シングルトンのように動作します、デザインによりGDScript はグローバル変数をサ"
+"ポートしません。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -126,25 +121,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-":ref:`Node <class_Node>`を継承したシーンもしくはスクリプトは自動読み込みに"
-"よってロードする事が出来ます。ノート:スクリプトを自動読み込みする時、ノードが"
-"作られそれにスクリプトがアタッチされます。このノードは他のシーンがロードされ"
-"る前にルートビューポートに追加されます。"
+"スクリプトを自動読み込みする時、\\ :ref:`class_Node`\\ が作られそれにスクリプ"
+"トがアタッチされます。このノードは他のシーンがロードされる前にルートビュー"
+"ポートに追加されます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"シーンもしくはスクリプトを自動読み込みするには、メニューから ``プロジェクト -"
-"> プロジェクト設定`` を選び\"自動読み込み\"タブに切り替えて下さい。"
+"シーンもしくはスクリプトを自動読み込みするには、メニューから **プロジェクト "
+"> プロジェクト設定** を選び**自動読み込み**タブに切り替えて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
@@ -166,13 +158,12 @@ msgstr ""
 "トンにアクセス出来るという事です:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"もし\"有効\"チェックがオンなら(デフォルトでオン)シングルトンは単純に、直接ア"
-"クセス出来ます:"
+"もし\"有効\"チェックがオンなら(デフォルトでオン)シングルトンは``get_node()``"
+"なしに、直接アクセス出来ます:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -189,7 +180,6 @@ msgid "Custom scene switcher"
 msgstr "カスタムシーン・スイッチャー"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -200,7 +190,7 @@ msgstr ""
 "このチュートリアルは自動読み込みを使ったシーンスイッチャーの構築を実演しま"
 "す。基本的なシーンの切り替えをする為に、\\ :ref:`SceneTree.change_scene() "
 "<class_SceneTree_method_change_scene>`\\ メソッドを使う事が出来ます(詳細は"
-"\\ :ref:`doc_scene_tree`\\ を見てください).。しかし、あなたがシーンの変更の"
+"\\ :ref:`doc_scene_tree`\\ を見てください)。しかし、あなたがシーンの変更の"
 "際、より複雑なふるまいを必要としているならば、このメソッドはさらなる機能性を"
 "提供します。"
 
@@ -229,26 +219,24 @@ msgid "Global.gd"
 msgstr "\\ Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"\"Script\" タブに切り替えGlobal.gdという新しいスクリプトを作成して下さい。 "
-"``Node`` が継承される事を確かめて下さい。"
+"**Script** タブに切り替え``Global.gd``という新しいスクリプトを作成して下さ"
+"い。 ``Node`` が継承される事を確かめて下さい。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
-"次のステップはスクリプトを自動読み込みリストに追加する事です。メニューから ``"
-"プロジェクト> プロジェクト設定``と開き、\"自動読み込み\"タブへ切り替えブラウ"
-"ズボタンをクリックするか次のようにパスを入力します: ``res://Global.gd`` 。追"
-"加をクリックし自動読み込みリストへ追加して下さい:"
+"次のステップはこのスクリプトを自動読み込みリストに追加する事です。メニューか"
+"ら **プロジェクト> プロジェクト設定**と開き、**自動読み込み**タブへ切り替え、"
+"ブラウズボタンをクリックして選択するか次のようにパスを入力します: ``res://"
+"Global.gd`` 。**追加**をクリックし自動読み込みリストへ追加して下さい:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -259,7 +247,6 @@ msgstr ""
 "りました。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
@@ -268,8 +255,8 @@ msgid ""
 msgstr ""
 "スクリプトに戻り、 `_ready()` 関数内でカレントシーンを持って来る必要がありま"
 "す。両方のカレントシーン(片方はボタンを含む)と ``global.gd`` はルートの子供で"
-"す。しかし自動読み込みされたノードはいつも1番です。つまりルートの最後の子供は"
-"いつもロードされたシーンになります。"
+"す。しかし自動読み込みされるノードはいつも最初です。つまりルートの最後の子供"
+"はいつも自動読み込みされたシーンになります。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
 msgid ""
@@ -309,16 +296,15 @@ msgstr ""
 "れます。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`."
 msgstr ""
-"ノート:シーンが小さい時にはこの遷移は瞬時に行われます。しかし、シーンがより複"
-"雑な場合、表示されるのに大量の時間がかかります。これの操作を学ぶには、次の"
-"チュートリアルを見て下さい:\\ :ref:ref:`doc_background_loading`\\"
+"シーンが小さい時にはこの遷移は瞬時に行われます。しかし、シーンがより複雑な場"
+"合、表示されるのに大量の時間がかかります。これの操作を学ぶには、次のチュート"
+"リアルを見て下さい:\\ :ref:`doc_background_loading`\\。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""

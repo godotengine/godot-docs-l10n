@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,6 +298,13 @@ msgstr "Configuración de la escena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
 msgid ""
+"If you still have the \"instancing\" project open from the previous "
+"tutorial, then close that out (Project -> Quit to Project List) and create a "
+"New Project."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting.rst:109
+msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
@@ -305,23 +312,23 @@ msgstr ""
 "pestaña Escena (o pulsando ``Ctrl+A``) para crear una jerarquía con los "
 "siguientes nodos:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:110
+#: ../../docs/getting_started/step_by_step/scripting.rst:112
 msgid "Panel"
 msgstr "Panel"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:112
+#: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Label"
 msgstr "Label"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:113
+#: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
 msgstr "Botón"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:115
+#: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "The scene tree should look like this:"
 msgstr "El árbol de la escena debería verse así:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:119
+#: ../../docs/getting_started/step_by_step/scripting.rst:121
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
@@ -330,15 +337,15 @@ msgstr ""
 "que se parezcan a la imagen de abajo. Puedes configurar el texto desde la "
 "pestaña Inspector."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:124
+#: ../../docs/getting_started/step_by_step/scripting.rst:126
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
 msgstr "Finalmente, guarda la escena con un nombre como ``sayhello.tscn``."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:129
+#: ../../docs/getting_started/step_by_step/scripting.rst:131
 msgid "Adding a script"
 msgstr "Añadir un script"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:131
+#: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
@@ -346,7 +353,7 @@ msgstr ""
 "Haz clic con el botón derecho del ratón en el nodo Panel y selecciona "
 "\"Añadir Script\" en el menú contextual:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:136
+#: ../../docs/getting_started/step_by_step/scripting.rst:138
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
@@ -355,7 +362,7 @@ msgstr ""
 "diálogo permite definir el idioma del script, nombre de la clase y otras "
 "opciones relevantes."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:139
+#: ../../docs/getting_started/step_by_step/scripting.rst:141
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
@@ -363,7 +370,7 @@ msgstr ""
 "En GDScript, el propio archivo representa la clase, por lo que el campo del "
 "nombre de la clase no se puede editar."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:142
+#: ../../docs/getting_started/step_by_step/scripting.rst:144
 msgid ""
 "The node we're attaching the script to is a panel, so the Inherits field "
 "will automatically be filled in with \"Panel\". This is what we want, as the "
@@ -374,12 +381,12 @@ msgstr ""
 "queremos, ya que el objetivo del script es ampliar la funcionalidad de "
 "nuestro nodo panel."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:146
+#: ../../docs/getting_started/step_by_step/scripting.rst:148
 msgid "Finally, enter a path name for the script and select Create:"
 msgstr ""
 "Finalmente, introduce un nombre de ruta para el script y haz clic en Crear:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:150
+#: ../../docs/getting_started/step_by_step/scripting.rst:152
 msgid ""
 "The script will then be created and added to the node. You can see this as "
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
@@ -389,7 +396,7 @@ msgstr ""
 "como un icono de \"Abrir script \" al lado del nodo en la pestaña Escena, "
 "así como en la propiedad del script en el Inspector:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:156
+#: ../../docs/getting_started/step_by_step/scripting.rst:158
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -399,7 +406,7 @@ msgstr ""
 "en la imagen de arriba. Esto te llevará al editor de scripts, donde se "
 "incluirá una plantilla predeterminada:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:161
+#: ../../docs/getting_started/step_by_step/scripting.rst:163
 msgid ""
 "There's not much there. The ``_ready()`` function is called when the node, "
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
@@ -409,11 +416,11 @@ msgstr ""
 "sus hijos, entran a la escena activa. **Nota:** ``_ready()`` no es el "
 "constructor, ese es ``_init()``."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:166
+#: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"
 msgstr "El papel del script"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:168
+#: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid ""
 "A script adds behavior to a node. It is used to control how the node "
 "functions as well as how it interacts with other nodes: children, parent, "
@@ -426,11 +433,11 @@ msgstr ""
 "es el nodo. En otras palabras, el script hereda las funciones provistas por "
 "ese nodo."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:179
+#: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid "Handling a signal"
 msgstr "Manejando una señal"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:181
+#: ../../docs/getting_started/step_by_step/scripting.rst:183
 msgid ""
 "Signals are \"emitted\" when some specific kind of action happens, and they "
 "can be connected to any function of any script instance. Signals are used "
@@ -442,7 +449,7 @@ msgstr ""
 "señales se utilizan sobre todo en nodos de la IGU, aunque otros nodos "
 "también tienen señales, e incluso puedes definir señales en tu propio script."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:186
+#: ../../docs/getting_started/step_by_step/scripting.rst:188
 msgid ""
 "In this step, we'll connect the \"pressed\" signal to a custom function. "
 "Forming connections is the first part and defining the custom function is "
@@ -455,7 +462,7 @@ msgstr ""
 "crear conexiones: a través de una interfaz visual que proporciona el editor "
 "o a través del código."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:191
+#: ../../docs/getting_started/step_by_step/scripting.rst:193
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
@@ -464,7 +471,7 @@ msgstr ""
 "tutoriales, cubriremos cómo funciona la interfaz del editor para futuras "
 "referencias."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:194
+#: ../../docs/getting_started/step_by_step/scripting.rst:196
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
@@ -473,7 +480,7 @@ msgstr ""
 "pestaña ``Nodo``. A continuación, asegúrate de que has seleccionado "
 "``Señales``."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:199
+#: ../../docs/getting_started/step_by_step/scripting.rst:201
 msgid ""
 "If you then select \"pressed()\" under \"BaseButton\" and click the "
 "\"Connect...\" button in the bottom right, you'll open up the connection "
@@ -483,7 +490,7 @@ msgstr ""
 "\"Conectar... \" en la parte inferior derecha, se abrirá el cuadro de "
 "diálogo de creación de la conexión."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:204
+#: ../../docs/getting_started/step_by_step/scripting.rst:206
 msgid ""
 "The top of the dialogue displays a list of your scene's nodes with the "
 "emitting node's name highlighted in blue. Select the \"Panel\" node here."
@@ -492,7 +499,7 @@ msgstr ""
 "con el nombre del nodo que esta emitiendo resaltado en azul. Selecciona el "
 "nodo \"Panel\" aquí."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:207
+#: ../../docs/getting_started/step_by_step/scripting.rst:209
 msgid ""
 "The bottom of the dialogue shows the name of the method that will be "
 "created. By default, the method name will contain the emitting node's name "
@@ -503,7 +510,7 @@ msgstr ""
 "emisor (\"Botón\" en este caso), dando como resultado `` _on_ [Node_emisor] "
 "_ [nombre_de_la_señal] ``."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:211
+#: ../../docs/getting_started/step_by_step/scripting.rst:213
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -513,7 +520,7 @@ msgstr ""
 "es un tutorial de scripting, así que por el bien del aprendizaje, ¡vamos a "
 "sumergirnos en el proceso manual!"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:215
+#: ../../docs/getting_started/step_by_step/scripting.rst:217
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -526,7 +533,7 @@ msgstr ""
 "nodos en cualquier parte de la escena, en relación con el nodo al que "
 "pertenece el script."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:220
+#: ../../docs/getting_started/step_by_step/scripting.rst:222
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
@@ -534,7 +541,7 @@ msgstr ""
 "Para mayor comodidad, borra todo lo que se encuentra debajo de ``extends "
 "Panel``. Rellenarás el resto del script manualmente."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:223
+#: ../../docs/getting_started/step_by_step/scripting.rst:225
 msgid ""
 "Because the Button and Label are siblings under the Panel where the script "
 "is attached, you can fetch the Button by typing the following underneath the "
@@ -544,12 +551,12 @@ msgstr ""
 "script, puedes recuperar el Botón escribiendo lo siguiente debajo de la "
 "función ``_ready()``:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:240
+#: ../../docs/getting_started/step_by_step/scripting.rst:242
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr ""
 "A continuación, escribe una función que se llamará cuando se pulse el botón:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:255
+#: ../../docs/getting_started/step_by_step/scripting.rst:257
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
@@ -558,21 +565,21 @@ msgstr ""
 "``_on_Button_pressed()`` utilizando :ref:`Object.connect() "
 "<class_Object_method_connect>`."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:271
+#: ../../docs/getting_started/step_by_step/scripting.rst:273
 msgid "The final script should look like this:"
 msgstr "El script final debería verse así:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:304
+#: ../../docs/getting_started/step_by_step/scripting.rst:306
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
 "Ejecuta la escena y pulsa el botón. Deberías obtener el siguiente resultado:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:308
+#: ../../docs/getting_started/step_by_step/scripting.rst:310
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "¡Vaya, hola! Felicidades por el script de tu primera escena."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:312
+#: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -585,12 +592,12 @@ msgstr ""
 "hijo de Panel. Si Button fuera en cambio un hijo de Label, el código para "
 "obtenerlo sería:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:330
+#: ../../docs/getting_started/step_by_step/scripting.rst:332
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
 "También, recuerda que los nodos se referencian por nombre, no por tipo."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:334
+#: ../../docs/getting_started/step_by_step/scripting.rst:336
 #, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
@@ -601,7 +608,7 @@ msgstr ""
 "específicos a los parámetros de la función conectada. Puedes añadir y "
 "eliminar valores de diferentes tipos."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:338
+#: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr "Hierfür gibt es verschiedene Möglichkeiten in C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid "**Casting and Type Checking**"
-msgstr ""
+msgstr "**Casting und Typprüfung**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:28
 msgid ""
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
 msgid "**Type checking using the IS operator**"
-msgstr ""
+msgstr "**Typprüfung mit dem IS-Operator**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:68
 msgid ""
@@ -110,6 +110,8 @@ msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
+"Weitere Informationen zur Typprüfung finden Sie unter `Pattern Matching "
+"<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
 msgid "C# signals"
@@ -120,12 +122,16 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
+"Ein vollständiges C# Beispiel finden Sie im Abschnitt **Behandeln eines "
+"Signals** in der Schritt-für-Schritt-Anleitung :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:88
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
+"Das Deklarieren eines Signals in C# erfolgt mit dem Attribut ``[Signal]`` "
+"eines Beauftragten."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
 msgid ""
@@ -138,19 +144,23 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
-msgstr ""
+msgstr "Das Senden von Signalen erfolgt mit der Methode ``EmitSignal``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
+"Beachten Sie, dass Sie einen Signalnamen immer mit dem Schlüsselwort "
+"``nameof`` referenzieren können (angewendet auf den Beauftragten selbst)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:131
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr ""
+"Es ist möglich Werte beim Herstellen einer Verbindung durch Übergeben eines "
+"Objektarrays zu binden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:151
 msgid ""
@@ -168,17 +178,21 @@ msgid ""
 "that it should be executed before any use of said signals (with ``Connect`` "
 "or ``EmitSignal``)."
 msgstr ""
+"Abschließend, Signale können durchs aufrufen von ``AddUserSignal`` erstellt "
+"werden, jedoch seien sie vorsichtig, dass dies durchgeführt, bevor das "
+"betroffene Signal benutzt wird (durch ``Connect`` oder ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "Prozessor-Ablaufsteuerungsfunktionen"
+msgstr "Präprozessor Festlegungen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
 msgstr ""
+"Godot verfügt über eine Reihe von Definitionen, mit denen Sie Ihren C# Code "
+"abhängig von der Umgebung in die Sie kompilieren ändern können."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -186,6 +200,9 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"Wenn Sie Ihr Projekt vor Godot 3.2 erstellt haben, müssen Sie Ihre `csproj` "
+"Datei ändern oder neu generieren, um diese Funktion zu verwenden "
+"(vergleichen Sie ``<DefineConstants>`` mit einem neuen 3.2+ -Projekt)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 msgid "Examples"
@@ -193,27 +210,31 @@ msgstr "Beispiele"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "Sie können beispielsweise den Code basierend auf der Plattform ändern:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
 msgstr ""
+"Oder Sie können erkennen in welcher Engine sich Ihr Code befindet, was für "
+"die Erstellung von Cross-Engine-Bibliotheken hilfreich ist:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
 msgid "Full list of defines"
-msgstr ""
+msgstr "Vollständige Liste von Definitionen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "``GODOT`` wird immer in den Godot Einstellungen definiert."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
 msgstr ""
+"Ob ``GODOT_64`` oder ``GODOT_32`` definiert wird, ist abhängig von der "
+"Architektur 64-bit oder 32-bit."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
@@ -235,33 +256,42 @@ msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"Je nach Plattformtyp eine von ``GODOT_PC``, ``GODOT_MOBILE`` oder "
+"``GODOT_WEB``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"Eine von ``GODOT_ARM64_V8A`` oder ``GODOT_ARMEABI_V7A`` auf Android je nach "
+"Architektur."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
 msgstr ""
+"Einer von ``GODOT_ARM64`` oder ``GODOT_ARMV7`` unter iOS abhängig von der "
+"Architektur."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"Je nach Texturkomprimierungstyp ``GODOT_S3TC``, ``GODOT_ETC`` und "
+"``GODOT_ETC2``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"Alle benutzerdefinierten Funktionen, die im Exportmenü hinzugefügt werden, "
+"werden großgeschrieben und mit dem Präfix ``foo`` -> ``GODOT_FOO`` versehen."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"

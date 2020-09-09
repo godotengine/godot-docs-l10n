@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,13 +38,15 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:16
 msgid "Advantages"
-msgstr ""
+msgstr "Vorteile"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:18
 msgid ""
 "gettext is a standard format, which can be edited using any text editor or "
 "GUI editors such as `Poedit <https://poedit.net/>`_."
 msgstr ""
+"gettext ist ein Standardformat, dass mit jedem Text Editor oder GUI Editor "
+"wie `Poedit <https://poedit.net/>`_ editiert werden kann."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:20
 msgid ""
@@ -67,7 +69,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:29
 msgid "Disadvantages"
-msgstr ""
+msgstr "Nachteile"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:31
 msgid ""
@@ -85,7 +87,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:39
 msgid "Caveats"
-msgstr ""
+msgstr "Vorsichtsmaßnahmen"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:41
 msgid ""
@@ -93,10 +95,13 @@ msgid ""
 "limited than the reference GNU gettext implementation), some features such "
 "as pluralization aren't supported."
 msgstr ""
+"Da Godot hinter den Kulissen einen eigenen PO-Datei-Parser verwendet (der "
+"eingeschränkter ist als die Referenz-GNU-Gettext-Implementierung), werden "
+"einige Funktionen wie die Pluralisierung nicht unterstützt."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:46
 msgid "Installing gettext tools"
-msgstr ""
+msgstr "gettext Tools installieren"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:48
 msgid ""
@@ -125,9 +130,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "Skelett erstellen"
+msgstr "Manuelles Erstellen der PO-Vorlage (POT)"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -157,9 +161,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "Skelett erstellen"
+msgstr "Erstellen der PO-Vorlage (POT) mit pybabel"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid ""

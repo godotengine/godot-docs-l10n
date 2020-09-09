@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,15 @@ msgstr "Statische Typisierung in GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
 msgid "In this guide, you will learn:"
-msgstr ""
+msgstr "In dieser Anleitung geht es um:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Wie Typen in GDSkript benutzt werden**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Diese **statische Typen helfen Fehler zu vermeiden**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -39,20 +39,25 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"Wo und wie Sie diese neue Sprachfunktion verwenden, liegt ganz bei Ihnen: "
+"Sie können sie nur in einigen vertraulichen GDScript-Dateien verwenden, "
+"überall verwenden oder Code schreiben, wie Sie es immer getan haben!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr ""
+"Statische Typen können für Variablen, Konstanten, Funktionen, Parameter und "
+"Rückgabetypen verwendet werden."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "Typisiertes GDScript ist verfügbar seit Version 3.1."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Ein kurzer Überblick über statische Typisierung"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -60,6 +65,10 @@ msgid ""
 "gives you and your teammates more information as you're working, as the "
 "arguments' types show up when you call a method."
 msgstr ""
+"Mit getipptem GDScript kann Godot noch mehr Fehler erkennen, während Sie den "
+"Code schreiben! Sie und Ihre Teamkollegen erhalten während der Arbeit mehr "
+"Informationen, da die Argumenttypen beim Aufrufen einer Methode angezeigt "
+"werden."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -68,6 +77,11 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"Stellen Sie sich vor, Sie programmieren ein Inventarsystem. Sie codieren "
+"einen \"Item\" -Node und dann ein \"Inventar\". Um Artikel zum Inventar "
+"hinzuzufügen, sollten die Personen, die mit Ihrem Code arbeiten, immer einen "
+"Artikel an die Methode \"Inventory.add\" übergeben. Mit Typen können Sie "
+"Folgendes erzwingen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:49
 msgid ""
@@ -77,6 +91,11 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Ein weiterer wesentlicher Vorteil von typisiertem GDScript ist das neue ** "
+"Warnsystem **. Ab Version 3.1 gibt Godot beim Schreiben Warnungen zu Ihrem "
+"Code aus: Die Engine identifiziert Abschnitte Ihres Codes, die zur Laufzeit "
+"zu Problemen führen können. Sie können jedoch entscheiden, ob Sie den Code "
+"unverändert lassen möchten oder nicht. Mehr dazu gleich."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:55
 msgid ""
@@ -84,12 +103,19 @@ msgid ""
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
+"Statische Typen bieten Ihnen auch bessere Optionen für die Code-"
+"Vervollständigung. Unten sehen Sie den Unterschied zwischen einer "
+"dynamischen und einer statisch typisierten Abschlussoption für eine Klasse "
+"namens \"PlayerController\"."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:59
 msgid ""
 "You've probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
+"Sie haben wahrscheinlich schon einmal einen Node in einer Variablen "
+"gespeichert und einen Punkt eingegeben, der keine Vorschläge für die "
+"automatische Vervollständigung anzeigte:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:65
 msgid ""
@@ -97,12 +123,19 @@ msgid ""
 "you're passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"Dies ist auf dynamischen Code zurückzuführen. Godot kann nicht wissen, "
+"welchen Node oder Werttyp Sie an die Funktion übergeben. Wenn Sie den Typ "
+"jedoch explizit schreiben, erhalten Sie alle öffentlichen Methoden und "
+"Variablen vom Node:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:72
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
 msgstr ""
+"Typisiertes GDScript wird in der Zukunft auch die Codeleistung steigern: "
+"Just-In-Time-Kompilierung und andere Compiler-Verbesserungen stehen bereits "
+"auf der Roadmap!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:76
 msgid ""
@@ -114,10 +147,18 @@ msgid ""
 "clearer and the more structured the code, the faster it is to understand, "
 "the faster you can move forward."
 msgstr ""
+"Insgesamt bietet die getippte Programmierung eine strukturiertere Erfahrung. "
+"Es hilft, Fehler zu vermeiden und verbessert den selbstdokumentierenden "
+"Aspekt Ihrer Skripte. Dies ist besonders hilfreich, wenn Sie in einem Team "
+"oder an einem langfristigen Projekt arbeiten: Studien haben gezeigt, dass "
+"Entwickler die meiste Zeit damit verbringen, den Code anderer Leute oder "
+"Skripte zu lesen, die sie in der Vergangenheit geschrieben und vergessen "
+"haben. Je klarer und strukturierter der Code ist, desto schneller ist er zu "
+"verstehen, desto schneller können Sie vorankommen."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:85
 msgid "How to use static typing"
-msgstr ""
+msgstr "Wie statische Typisierung genutzt wird"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:87
 msgid ""
@@ -125,24 +166,32 @@ msgid ""
 "variable's name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
+"Um den Typ einer Variablen oder einer Konstante zu definieren, schreiben Sie "
+"einen Doppelpunkt nach dem Namen der Variablen, gefolgt von ihrem Typ. Z.B. "
+"`` var health: int``. Dies zwingt den Variablentyp dazu, immer gleich zu "
+"bleiben:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:96
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
 msgstr ""
+"Godot wird versuchen, Typen abzuleiten, wenn Sie einen Doppelpunkt "
+"schreiben, aber Sie lassen den Typ weg:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:105
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "Aktuell können drei Arten von Typen verwendet werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ""
+msgstr ":ref:`Built-in <doc_gdscript_builtin_types>`"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:108
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
 msgstr ""
+"Kernklassen und Nodes (`` Objekt``, `` Knoten``, `` Area2D``, `` Camera2D`` "
+"usw.)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:110
 msgid ""
@@ -150,6 +199,9 @@ msgid ""
 "<doc_scripting_continued_class_name>` feature to register types in the "
 "editor."
 msgstr ""
+"Deine eigenen, benutzerdefinierten Klassen. Schau doch die neue Funktion an: "
+"ref: `class_name <doc_scripting_continued_class_name>`, um Typen im Editor "
+"zu registrieren."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:115
 msgid ""
@@ -157,10 +209,13 @@ msgid ""
 "automatically from the assigned value. But you can still do so to make the "
 "intent of your code clearer."
 msgstr ""
+"Sie müssen keine Typhinweise für Konstanten schreiben, da Godot diese "
+"automatisch anhand des zugewiesenen Werts festlegt. Sie können dies dennoch "
+"tun, um die Absicht Ihres Codes klarer zu machen."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:118
 msgid "Custom variable types"
-msgstr ""
+msgstr "eigene Variablen-Typen"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:120
 msgid ""
@@ -168,12 +223,19 @@ msgid ""
 "two ways to use them in scripts. The first method is to preload the script "
 "you want to use as a type in a constant:"
 msgstr ""
+"Du kannst jede Klasse, einschließlich deiner benutzerdefinierten Klassen, "
+"als Typen verwenden. Es gibt zwei Möglichkeiten, sie in Skripten zu "
+"verwenden. Die erste Methode besteht darin, das Skript, das du als Typ in "
+"eine Konstante verwenden möchten, vorzuladen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:129
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
 "the example above, your Rifle.gd would look like this:"
 msgstr ""
+"Die zweite Methode besteht darin, beim Erstellen das Schlüsselwort `` "
+"class_name`` zu verwenden. Für das obige Beispiel würde Ihr Rifle.gd "
+"folgendermaßen aussehen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:137
 msgid ""
@@ -181,6 +243,9 @@ msgid ""
 "editor, and you can use it anywhere, without having to preload it into a "
 "constant:"
 msgstr ""
+"Wenn du `` class_name`` verwendest, registriert Godot den Rifle-Typ global "
+"im Editor und du kannst ihn überall verwenden, ohne ihn in eine Konstante "
+"vorladen zu müssen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:146
 msgid "Variable casting"
@@ -191,6 +256,8 @@ msgid ""
 "Type casting is a key concept in typed languages. Casting is the conversion "
 "of a value from one type to another."
 msgstr ""
+"Typumwandlung ist ein Schlüsselkonzept in typisierten Sprachen. Casting ist "
+"die Konvertierung eines Werts von einem Typ in einen anderen."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:151
 msgid ""
@@ -201,6 +268,12 @@ msgid ""
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
+"Stellen Sie sich einen Feind in Ihrem Spiel vor, der Area2D erweitert. Sie "
+"möchten, dass es mit dem Player kollidiert, einem `` KinematicBody2D`` mit "
+"einem Skript namens `` PlayerController``. Sie verwenden das Signal "
+"\"on_body_entered\", um die Kollision zu erkennen. Mit eingegebenem Code "
+"wird der Körper, den Sie erkennen, ein generischer `` PhysicsBody2D`` sein "
+"und nicht Ihr `` PlayerController`` beim `` _on_body_entered`` Rückruf."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:158
 msgid ""
@@ -209,6 +282,10 @@ msgid ""
 "use this type. This forces the variable to stick to the ``PlayerController`` "
 "type:"
 msgstr ""
+"Sie können überprüfen, ob dieses `` PhysicsBody2D`` Ihr Player mit dem "
+"Casting-Schlüsselwort `` as`` ist, und den Doppelpunkt ``: `` erneut "
+"verwenden, um die Variable zur Verwendung dieses Typs zu zwingen. Dies "
+"zwingt die Variable, sich an den Typ \"PlayerController\" zu halten:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:172
 msgid ""
@@ -217,12 +294,19 @@ msgid ""
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
+"Da wir mit einem benutzerdefinierten Typ zu tun haben, falls ``body`` den "
+"``PlayerController`` nicht erweitert, wird die Variable ``player`` auf "
+"``null`` gesetzt. Wir können dies verwenden um zu überprüfen, ob der Körper "
+"der Spieler ist oder nicht. Dank des cast erhalten wir auch eine komplette "
+"automatische Vervollständigung der Spielervariablen."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:179
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
 "error."
 msgstr ""
+"Wenn Sie versuchen mit einem integrierten Typ zu casten und dies "
+"fehlschlägt, gibt Godot einen Fehler aus."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
 msgid "Safe lines"
@@ -236,6 +320,12 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"Sie können auch casting verwenden, um sichere Zeilen zu gewährleisten. "
+"Sichere Zeilen sind ein neues Tool in Godot 3.1, mit dem Sie feststellen "
+"können, wann mehrdeutige Codezeilen typsicher sind. Da Sie typisierten und "
+"dynamischen Code mischen und abgleichen können, verfügt Godot manchmal nicht "
+"über genügend Informationen um zu wissen, ob eine Anweisung zur Laufzeit "
+"einen Fehler auslöst oder nicht."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
 msgid ""
@@ -254,39 +344,51 @@ msgid ""
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"Sie können Casting verwenden um Godot den zu erwartenden Typ mitzuteilen, "
+"wenn Sie einen Node erhalten: ``($Timer als Timer)``, ``($Player als "
+"KinematicBody2D)`` usw. Godot stellt die Funktionalität des Typs sicher, und "
+"wenn ja wird die Zeilennummer links im Skripteditor grün."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:206
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr ""
+"Unsichere Zeile (Zeile 7) im Vergleich zu sicheren Zeilen (Zeile 6 und 8)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:210
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"Sie können sichere Zeilen deaktivieren oder ihre Farbe in den "
+"Editoreinstellungen ändern."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
 msgid "Define the return type of a function with the arrow ->"
-msgstr ""
+msgstr "Definieren Sie den Rückgabetyp einer Funktion mit dem Pfeil ->"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:215
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after its declaration, followed by the return type:"
 msgstr ""
+"Um den Rückgabetyp einer Funktion zu definieren, schreiben Sie nach ihrer "
+"Deklaration einen Bindestrich und eine rechtwinklige Klammer ``->``, gefolgt "
+"vom Rückgabetyp:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:223
 msgid ""
 "The type ``void`` means the function does not return anything. You can use "
 "any type, as with variables:"
 msgstr ""
+"Der Typ ``void`` bedeutet, dass die Funktion nichts zurückgibt. Sie können "
+"wie bei Variablen einen beliebigen Typ verwenden:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:232
 msgid "You can also use your own nodes as return types:"
-msgstr ""
+msgstr "Sie können auch Ihre eigenen Nodes als Rückgabetypen verwenden:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:248
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "Typisiert oder dynamisch: Halten Sie sich an einen Stil"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
 msgid ""
@@ -295,6 +397,11 @@ msgid ""
 "your peers. It's easier for everyone to work together if you follow the same "
 "guidelines, and faster to read and understand other people's code."
 msgstr ""
+"Typisiertes GDScript und dynamisches GDScript können im selben Projekt "
+"koexistieren. Ich empfehle jedoch sich aus Gründen der Konsistenz in Ihrer "
+"Codebasis und für Ihre Kollegen an beide Stile zu halten. Es ist für alle "
+"einfacher zusammenzuarbeiten, wenn Sie dieselben Richtlinien befolgen und "
+"den Code anderer schneller lesen und verstehen können."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
 msgid ""
@@ -302,10 +409,13 @@ msgid ""
 "discussed above. Here's an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"Typisierter Code erfordert etwas mehr Schreibaufwand, aber Sie erhalten die "
+"oben beschriebenen Vorteile. Hier ist ein Beispiel für dasselbe leere Skript "
+"in einem dynamischen Stil:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:272
 msgid "And with static typing:"
-msgstr ""
+msgstr "und mit statischer Typisierung:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:286
 msgid ""
@@ -313,16 +423,21 @@ msgid ""
 "Signal callbacks, like any methods, can also use types. Here's a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
+"Wie Sie sehen, können Sie auch Typen mit den virtuellen Methoden der Engine "
+"verwenden. Signalrückrufe können wie alle Methoden auch Typen verwenden. "
+"Hier ist ein ``body_entered`` Signal im dynamischen Stil:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:295
 msgid "And the same callback, with type hints:"
-msgstr ""
+msgstr "Und der gleiche Aufruf mit Typhinweisen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:302
 msgid ""
 "You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
 "to cast parameters automatically:"
 msgstr ""
+"Sie können dies jederzeit ersetzen, z.B. ``CollisionObject2D`` mit Ihrem "
+"eigenen Typ, um Parameter automatisch umzuwandeln:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
@@ -334,23 +449,28 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 msgid "Warning system"
-msgstr ""
+msgstr "Warnsystem"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
 msgid ""
 "Documentation about the GDScript warning system has been moved to :ref:"
 "`doc_gdscript_warning_system`."
 msgstr ""
+"Die Dokumentation zum GDScript-Warnsystem wurde verschoben nach :ref:"
+"`doc_gdscript_warning_system`."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 msgid "Cases where you can't specify types"
-msgstr ""
+msgstr "Fälle in denen man keine Typen spezifizieren kann"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
 msgid ""
 "To wrap up this introduction, let's cover a few cases where you can't use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"Lassen Sie uns zum Abschluss dieser Einführung einige Fälle behandeln, in "
+"denen Sie keine Typhinweise verwenden können. Alle folgenden Beispiele "
+"**lösen Fehler aus**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:332
 msgid "You can't use Enums as types:"
@@ -361,6 +481,8 @@ msgid ""
 "You can't specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
+"Sie können den Typ einzelner Mitglieder in einem Array nicht angeben. Dies "
+"erzeugt einen Fehler:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:346
 msgid ""
@@ -368,10 +490,13 @@ msgid ""
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
+"Sie können die Zuweisung von Typen in einer ``for``-Schleife nicht "
+"erzwingen, da jedes Element, das diese ``for``-Schleife durchläuft, bereits "
+"einen anderen Typ hat. Sie können also **nicht** schreiben:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:356
 msgid "Two scripts can't depend on each other in a cyclic fashion:"
-msgstr ""
+msgstr "Zwei Skripte können nicht zyklisch voneinander abhängen:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:379
 msgid "Summary"
@@ -384,3 +509,8 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"Typisiertes GDScript ist ein leistungsstarkes Tool. Ab Version 3.1 von Godot "
+"verfügbar, können Sie strukturierteren Code schreiben, häufige Fehler "
+"vermeiden und skalierbare Systeme erstellen. In Zukunft werden statische "
+"Typen dank anstehender Compiler-Optimierungen auch einen schönen "
+"Leistungsschub bringen."

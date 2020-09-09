@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,11 +234,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "No chunked responses"
-msgstr ""
+msgstr "Sem respostas fragmentadas"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "A verificação de host não pode ser desativada"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
@@ -307,12 +307,14 @@ msgstr "C#"
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid "Clipboard synchronization between engine and operating system"
 msgstr ""
+"Sincronização da área de transferência entre a engine e o sistema operacional"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
+"Redes diferentes de :ref:`class_HTTPClient` e :ref:`class_WebSocketClient`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 #, fuzzy
@@ -369,6 +371,14 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"Os outros arquivos exportados são servidos como estão, próximos do arquivo "
+"``.html``, com seus nomes inalterados. O arquivo ``.wasm`` é um módulo "
+"binário WebAssembly que implementa a engine. O arquivo ``.pck`` é o pacote "
+"principal do Godot que contém seu jogo. O arquivo ``.js`` contém códigos de "
+"inicialização e é utilizado pelo arquivo ``.html`` para acessar a engine. O "
+"arquivo ``.png`` contém a imagem inicial de inicialização. Não é utilizado "
+"na página HTML padrão, mas é incluído para :ref:`páginas HTML personalizadas "
+"<doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
@@ -390,6 +400,10 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"Hospedar os arquivos com compressão no lado do servidor é recomendada "
+"principalmente pelos arquivos ``.pck`` e ``.wasm``, que geralmente são "
+"arquivos grandes. O módulo WebAssembly comprime muito bem, até cerca de um "
+"quarto do seu tamanho original com compressão gzip."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:170
 msgid "Export options"
@@ -411,6 +425,9 @@ msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Se um caminho para o arquivo **Página HTML personalizado** for especificado, "
+"ele será utilizado ao invés da página HTML padrão. Veja :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:179
 msgid ""
@@ -418,6 +435,9 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Incluído no Cabeçalho** é inserido no elemento ``<head>`` da página HTML "
+"gerada. Isso permite, por exemplo, carregar webfonts e APIs JavaScript, "
+"incluindo CSS, ou executar código JavaScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:186
 #, fuzzy
@@ -438,28 +458,37 @@ msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"O valor da última instrução do JavaScript é convertido para um valor "
+"GDScript e retornado por ``eval()`` sob certas circunstâncias:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:202
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
+"Um ``número`` do JavaScript é retornado como GDScript :ref:`class_float`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
+"O valor ``booleano`` do JavaScript é retornado como GDScript :ref:"
+"`class_bool`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
+"O valor do tipo ``string`` no JavaScript é retornado como GDScript :ref:"
+"`class_String`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"No JavaScript os valores do tipo ``ArrayBuffer``, ``TypedArray`` e "
+"``DataView`` são retornados como GDScript :ref:`class_PoolByteArray`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:214
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "Qualquer outro valor no JavaScript é retornado como ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:216
 msgid ""
@@ -481,3 +510,6 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"O método``eval`` também aceita um segundo argumento do tipo ``Booleano`` que "
+"determina se o código deve ser executado no contexto global, padrão "
+"``falso``para prevenir poluir o espaço de nome global::"

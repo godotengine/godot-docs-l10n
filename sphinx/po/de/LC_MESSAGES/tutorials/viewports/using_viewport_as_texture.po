@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
 msgid "Using a Viewport as a texture"
-msgstr ""
+msgstr "Ansichtsfenster als Textur nutzen"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:7
 msgid "Introduction"
@@ -32,12 +32,18 @@ msgid ""
 "to do so, it will walk you through the process of making a procedural planet "
 "like the one below:"
 msgstr ""
+"In dieser Anleitung lernen Sie die Verwendung von :ref:`Viewport "
+"<class_Viewport>` als Textur kennen, die auf 3D-Objekte angewendet werden "
+"kann. Zu diesem Zweck erstellen wir einen prozeduralen Planeten wie dem "
+"folgenden hier:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:15
 msgid ""
 "This tutorial does not cover how to code a dynamic atmosphere like the one "
 "this planet has."
 msgstr ""
+"Diese Anleitung behandelt nicht, wie man eine dynamische Atmosphäre wie die "
+"dieses Planeten codiert."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:17
 msgid ""
@@ -51,22 +57,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
-#, fuzzy
 msgid "In this tutorial, we'll cover the following topics:"
 msgstr ""
 "Im Verlauf dieser Einleitung werden wir die folgenden Themen behandeln:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
 msgid "How to use a :ref:`Viewport <class_Viewport>` as a render texture"
-msgstr ""
+msgstr "Verwendung von :ref:`Viewport <class_Viewport>` als Rendertextur"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:26
 msgid "Mapping a texture to a sphere with equirectangular mapping"
-msgstr ""
+msgstr "Eine Textur auf eine Kugel abbilden mit gleichwinkliger Zuordnung"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:27
 msgid "Fragment shader techniques for procedural planets"
-msgstr ""
+msgstr "Fragment-Shader-Techniken für prozedurale Planeten"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:28
 msgid ""
@@ -76,11 +81,11 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:31
 msgid "Setting up the Viewport"
-msgstr ""
+msgstr "Einrichten des Ansichtsfensters"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:33
 msgid "First, add a :ref:`Viewport <class_Viewport>` to the scene."
-msgstr ""
+msgstr "Zuerst, füge :ref:`Viewport <class_Viewport>` zu der Szene."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:35
 msgid ""
@@ -143,7 +148,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:76
 msgid "Applying the texture"
-msgstr ""
+msgstr "Anwenden der Textur"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:78
 msgid ""
@@ -197,7 +202,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:107
 msgid "Making the planet texture"
-msgstr ""
+msgstr "Planetentextur erzeugen"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:109
 msgid ""
@@ -331,15 +336,15 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:249
 msgid "And now the planet looks like:"
-msgstr ""
+msgstr "Nun sieht der Planet so aus:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:253
 msgid "And with shading turned back on, it looks like:"
-msgstr ""
+msgstr "Und wenn die Schattierung wieder aktiviert ist, sieht es so aus:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:258
 msgid "Making an ocean"
-msgstr ""
+msgstr "Einen Ozean erzeugen"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:260
 msgid ""

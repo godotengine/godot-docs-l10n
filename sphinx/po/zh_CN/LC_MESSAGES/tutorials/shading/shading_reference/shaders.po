@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
-#, fuzzy
 msgid "Shaders"
 msgstr "着色器"
 
@@ -57,7 +56,7 @@ msgstr ""
 "原因是Godot集成了内置功能，使编写复杂着色器变得更加容易。Godot将用户编写的着"
 "色器代码封装在自己的代码中。这样，Godot就可以处理很多用户无需担心的底层内容，"
 "它能够解析着色器代码，并使用它来影响渲染管道。对于更高级的着色器，您可以使用"
-"渲染_模式关闭此功能。"
+"render_mode关闭此功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:23
 msgid ""
@@ -69,20 +68,18 @@ msgstr ""
 "息，请参见 :ref:`Godot着色语言文档<doc_shading_language>`。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:27
-#, fuzzy
 msgid "Shader types"
 msgstr "着色器类型"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:29
-#, fuzzy
 msgid ""
 "Instead of supplying a general purpose configuration for all uses (2D, 3D, "
 "particles), Godot shaders must specify what they are intended for. Different "
 "types support different render modes, built-in variables, and processing "
 "functions."
 msgstr ""
-"Godot着色语言必须指定着色器的用途，而不是提供通用配置。 根据类型，支持不同的"
-"渲染模式，内置变量和处理功能。"
+"Godot着色语言必须指定着色器的用途，而不是提供通用配置给所有用途（2D、3D、粒"
+"子）。 不同的类型支持不同的渲染模式，内置变量，和处理函数。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:33
 #, fuzzy
@@ -122,7 +119,6 @@ msgid "Render modes"
 msgstr "渲染模式"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:50
-#, fuzzy
 msgid ""
 "Different shader types support different render modes. They are optional "
 "and, if specified, must be after the *shader_type*. Render modes are used to "
@@ -130,8 +126,9 @@ msgid ""
 "to use the render mode ``unshaded`` to skip the built-in light processor "
 "function."
 msgstr ""
-"不同的着色器类型支持不同的渲染模式。它们是可选的，但如果指定，则必须在 "
-"*shader_type* 之后。下面是示例语法:"
+"不同的着色器类型支持不同的渲染模式。它们是可选的，但如果指定，则必须位于 "
+"*shader_type* 之后。渲染模式被用于改变内置功能的处理方式。一个比较常见的用法"
+"是，通过使用渲染模式 ``unshaded`` 来跳过内置的光照处理函数。"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:55
 msgid "Render modes are specified underneath the shader type:"

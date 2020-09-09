@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr ""
+msgstr "Ray-casting"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
+"Eine der häufigsten Aufgaben in der Spieleentwicklung besteht darin, einen "
+"(Licht-) Strahl (oder ein benutzerdefiniertes Objekt) zu werfen und zu "
+"überprüfen, was darauf trifft. Dies ermöglicht komplexe Verhaltensweisen, KI "
+"usw. In dieser Anleitung wird erklärt, wie dies in 2D und 3D funktioniert."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
@@ -41,16 +45,24 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
+"Godot speichert alle Low-Level-Spielinformationen auf Servern, während die "
+"Szene nur ein Frontend ist. Daher ist das Ray-Casting (Strahlenwerfen) im "
+"Allgemeinen eine untergeordnete Aufgabe. Bei einfachen Raycasts "
+"funktionieren Nodes wie :ref:`RayCast <class_RayCast>` und :ref:`RayCast2D "
+"<class_RayCast2D>`, da sie jedem Frame das Ergebnis eines Raycasts "
+"zurückgeben."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
 msgstr ""
+"In vielen Fällen muss Raycasting jedoch ein interaktiverer Prozess sein, "
+"sodass eine Möglichkeit vorhanden sein muss, dies per Code zu tun."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "Raum"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -60,6 +72,11 @@ msgid ""
 "<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
 "get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
+"In der Physikwelt speichert Godot alle Kollisions- und Physikinformationen "
+"auf niedriger Ebene in einem *Raum*. Der aktuelle 2D-Raum (für 2D-Physik) "
+"kann durch Zugriff auf Folgendes abgerufen werden :ref:`CanvasItem."
+"get_world_2d().space <class_CanvasItem_method_get_world_2d>`. Für 3D ist es :"
+"ref:`Spatial.get_world().space <class_Spatial_method_get_world>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -91,19 +108,19 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
-msgstr ""
+msgstr "Verwenden Sie den folgenden Code in 2D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
-msgstr ""
+msgstr "Oder direkter:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
-msgstr ""
+msgstr "Und in 3D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
-msgstr ""
+msgstr "Raycast-Abfrage"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -129,10 +146,11 @@ msgstr ""
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
 msgstr ""
+"Die Daten sind im 3D-Raum unter Verwendung von Vector3-Koordinaten ähnlich."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr ""
+msgstr "Kollisionsausnahmen"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -141,6 +159,11 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
+"Ein häufiger Anwendungsfall für das Ray-Casting besteht darin, einem "
+"Charakter das Sammeln von Daten über die Welt um ihn herum zu ermöglichen. "
+"Ein Problem dabei ist, dass dasselbe Zeichen einen Kollider hat, sodass der "
+"Strahl nur den Kollider seines Elternteils erkennt, wie in der folgenden "
+"Abbildung gezeigt:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
@@ -155,7 +178,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Kollisionsmaske"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -164,6 +187,10 @@ msgid ""
 "exceptions. In this case, it is much more efficient to use the collision "
 "layer/mask system."
 msgstr ""
+"Während die Ausnahmemethode zum Ausschließen des übergeordneten Körpers gut "
+"funktioniert, ist es sehr unpraktisch, wenn Sie eine große oder dynamische "
+"Liste von Ausnahmen benötigen. In diesem Fall ist es viel effizienter, das "
+"Kollisionsschichten- bzw. Maskensystem zu verwenden."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
@@ -180,7 +207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
-msgstr ""
+msgstr "3D-Raycasting vom Bildschirm"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:229
 msgid ""

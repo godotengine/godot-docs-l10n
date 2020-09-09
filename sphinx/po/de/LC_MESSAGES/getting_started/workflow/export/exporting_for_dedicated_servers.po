@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:4
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "Export für den Google Play Store"
+msgstr "Exportieren für dedizierte Server"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:6
 msgid ""
@@ -30,9 +29,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "Animation unterstützt:"
+msgstr "Plattformunterstützung"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -40,12 +38,18 @@ msgid ""
 "org/download/server>`__. To compile a server binary from source, follow "
 "instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
+"** Linux: ** `Laden Sie eine offizielle Linux-Server-Binärdatei <https://"
+"godotengine.org/download/server>` __ herunter. Befolgen Sie die Anweisungen "
+"in: ref: `doc_compiling_for_x11`, um eine Server-Binärdatei aus dem "
+"Quellcode zu kompilieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
 msgid ""
 "**macOS:** :ref:`Compile a server binary from source for macOS "
 "<doc_compiling_for_osx>`."
 msgstr ""
+"**MacOS:** :ref:`Kompiliere eine Server-Binärdatei aus der Quelle für MacOS "
+"<doc_compiling_for_osx>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
 msgid ""
@@ -89,9 +93,9 @@ msgid "Exporting a PCK file"
 msgstr "Exportieren einer PCK Datei"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Einige Dinge gibt es zu beachten:"
+msgstr ""
+"Es gibt zwei Möglichkeiten, ein Projekt für einen Server zu exportieren:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -119,9 +123,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
-#, fuzzy
 msgid "See :ref:`doc_exporting_projects` for more information."
-msgstr ":ref:`Code im Editor ausführen <doc_running_code_in_the_editor>`"
+msgstr "Siehe :ref:`doc_exporting_projects` für weitere Informationen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:58
 msgid ""
@@ -146,9 +149,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "Vorbereitung des Projekts"
+msgstr "Serververteilung vorbereiten"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:76
 msgid ""
@@ -161,10 +163,36 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-msgid "Next steps"
-msgstr ""
+#, fuzzy
+msgid "Starting the dedicated server"
+msgstr "Exportieren für dedizierte Server"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
+msgid ""
+"If both your client and server are part of the same Godot project, you will "
+"have to add a way to start the server directly using a command-line "
+"argument. This can be done by adding the following code snippet in your main "
+"scene (or a singleton)'s ``_ready()`` method::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
+msgid ""
+"Alternatively, you can make the dedicated server always start up if a "
+"headless or server binary is detected::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
+msgid ""
+"If your client and server are separate Godot projects, your server should "
+"most likely be configured in a way where running the main scene starts a "
+"server automatically."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
+msgid "Next steps"
+msgstr "Nächste Schritte"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:116
 msgid ""
 "On Linux, to make your dedicated server restart after a crash or system "
 "reboot, you can `create a systemd service <https://medium.com/@benmorel/"
@@ -173,7 +201,7 @@ msgid ""
 "provided by systemd."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:122
 msgid ""
 "If you have experience with containers, you could also look into wrapping "
 "your dedicated server in a `Docker <https://www.docker.com/>`__ container. "

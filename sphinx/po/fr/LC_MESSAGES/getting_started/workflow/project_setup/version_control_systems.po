@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,3 +102,16 @@ msgid ""
 msgstr ""
 "``.mono/`` : Ce dossier contient les fichiers Mono générés automatiquement. "
 "Il n'existe que dans les projets utilisant la version Mono de Godot."
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
+#, fuzzy
+msgid "Working with Git on Windows"
+msgstr "Éxécution sur Windows"
+
+#: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
+msgid ""
+"Most Git for Windows clients are configured with the ``core.autocrlf`` set "
+"to ``true``. This can lead to files unnecessarily being marked as modified "
+"by Git due to their line endings being converted automatically. It is better "
+"to set this option as::"
+msgstr ""

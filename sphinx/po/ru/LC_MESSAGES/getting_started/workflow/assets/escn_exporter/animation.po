@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,16 +27,17 @@ msgstr "Анимация поддерживается:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "анимация трансформаций всех типов объектов"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
+#, fuzzy
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "преобразование анимаций позы скелета"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 #, fuzzy
 msgid "shape key animation"
-msgstr "Спрайтовая Анимация"
+msgstr "анимация по ключевым фигурам (shape key animation)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 #, fuzzy
@@ -44,13 +45,12 @@ msgid "light animation"
 msgstr "Спрайтовая Анимация"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Спрайтовая Анимация"
+msgstr "анимация камеры"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "Несколько действий для одного объекта"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -58,16 +58,22 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
+"В большинстве игр один объект может переключаться между несколькими "
+"анимациями. Это дополнение поддерживает экспорт нескольких действий "
+"одновременно в один AnimationPlayer и позволяет легко переключать действия."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr ""
+"Этот рабочий процесс использует блендер nla_tracks. Вот краткое руководство "
+"по использованию этой функции:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
+#, fuzzy
 msgid "**1. Stash active action**"
-msgstr ""
+msgstr "**1. Спрятать активное действие**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
 msgid ""
@@ -75,14 +81,18 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
+"Новое созданное действие всегда является активным действием, привязанным к "
+"объекту. Есть несколько способов разместить активное действие в треке NLA, "
+"один из которых, конечно, делает это в ``Редакторе NLA``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
-msgstr ""
+msgstr "Или это можно сделать, спрятав действие в ``Dope Sheet``"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:33
+#, fuzzy
 msgid "**2. Check mute status of NLA tracks**"
-msgstr ""
+msgstr "**2.Проверка состояния выключенного звука для треков NLA**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid ""
@@ -90,25 +100,31 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
+"Дорожка NLA может быть `` отключена`` или ``включена``, экспортер "
+"экспортирует все ``отключенные`` дорожки NLA как отдельное действие, в то "
+"время как все ``включенные`` дорожки NLA будут смешаны с каждым действием "
+"(включая действие действия), и экспортированы."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
-msgstr ""
+msgstr "**3. Экспорт сцены**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr ""
+msgstr "Убедитесь, что включена опция ``Export Stashed Actions``."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
 msgstr ""
+"Затем, все сохраненные действия, а также активное действие, экспортируются в "
+"AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 #, fuzzy
 msgid "Constraints"
-msgstr "Константы"
+msgstr "Ограничения"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -117,11 +133,15 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
+"Иногда сложная анимация строится с ограничением объекта; обычный пример - "
+"обратная кинематика. Надстройка автоматически проверяет, есть ли у объекта "
+"какие-либо ограничения; если это так, все ограничения запекаются в действия, "
+"а затем экспортируются вместе с объектом."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 #, fuzzy
 msgid "Animation Mode"
-msgstr "Анимация"
+msgstr "Режим Анимации"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -130,20 +150,28 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
+"Godot и Blender имеют разную структуру для хранения данных анимации. В Godot "
+"данные анимации хранятся в узле AnimationPlayer, а не в каждом анимированном "
+"узле. Чтобы исправить это несоответствие и по-прежнему сделать "
+"воспроизведение анимации универсальным, это дополнение имеет три режима "
+"экспорта анимации."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
-msgstr ""
+msgstr "**Режим 'Анимация как действия'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"Рассматривайте все анимации как действия с объектами, чтобы в "
+"экспортированной сцене каждый объект имел свой собственный AnimationPlayer и "
+"сохранял свои действия."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**Режим 'Анимация сцены'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -151,10 +179,15 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"Если вы хотите, чтобы ваша анимация давала такой же результат, как "
+"воспроизведение на временной шкале Blender, это то, что вам нужно. В этом "
+"режиме все анимации в сцене помещаются только в один AnimationPlayer в корне "
+"сцены."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
+#, fuzzy
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**Режим 'Анимация как действие со сжатием'**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -164,3 +197,9 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"Поведение этого режима очень похоже на поведение режима 'Анимация как "
+"действие', но он может генерировать меньше AnimationPlayers; объекты в "
+"отношениях родитель-потомок будут совместно использовать свой "
+"AnimationPlayer. Это полезно, когда у вас несколько ригов и у каждого "
+"скелета и сетки есть действия; тогда одна установка будет иметь только один "
+"AnimationPlayer."

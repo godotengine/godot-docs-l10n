@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,9 @@ msgstr ""
 "다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
-"In Godot 3.0, we use a more modern approach to importing: Simply drop your "
+"In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
 "project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
@@ -51,24 +52,36 @@ msgstr ""
 "져온 리소스를 res://.import 폴더에 숨겨 놓습니다."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
-msgid "This allows changing all the import parameters transparently."
-msgstr "이를 통해 모든 가져오기 매개변수를 투명하게 변경할 수 있습니다."
+msgid ""
+"This means that when trying to access imported assets through code you need "
+"to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
+"automatically take into account where the internal files are saved. If you "
+"try and access an imported asset using the :ref:`File <class_File>` class it "
+"will work in the editor, but break in the exported project."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:23
+#: ../../docs/getting_started/workflow/assets/import_process.rst:26
+msgid ""
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
+"imported files, only the :ref:`File <class_File>` class can."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "가져오기 매개변수 변경하기"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:25
+#: ../../docs/getting_started/workflow/assets/import_process.rst:32
+#, fuzzy
 msgid ""
-"Changing the import parameters of an asset in Godot (again, keep in mind "
-"import parameters are only present in non-native Godot resource types) is "
-"easy. Select the relevant resource in the filesystem dock:"
+"To change the import parameters of an asset in Godot (again, keep in mind "
+"import parameters are only present in non-native Godot resource types) "
+"select the relevant resource in the filesystem dock:"
 msgstr ""
 "Godot에서 애셋의 가져오기 매개변수를 변경하는 것은 쉽습니다 (다시 말하지만, "
 "가져오기 매개변수는 오직 네이티브가 아닌 Godot 리소스 타입에 있습니다). 파일 "
 "시스템 독에서 관련된 리소스를 선택합니다:"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
@@ -76,7 +89,7 @@ msgstr ""
 "매개변수를 조정한 후에, \"다시 가져오기\"를 눌러줍니다. 매개변수는 이 애셋과 "
 "향후 다시 가져오기에만 사용될 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
@@ -85,11 +98,33 @@ msgstr ""
 "여러 애셋 가져오기 매개변수를 동시에 바꾸는 것도 가능합니다. 간단히 리소스 독"
 "에서 모두를 선택하고 다시 가져올 때 가져온 매개변수를 적용합니다."
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:39
+#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#, fuzzy
+msgid "Reimporting multiple assets"
+msgstr "이미지 가져오기"
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+msgid ""
+"While working on a project you may find that several assets need to have the "
+"same parameters changed, such as enabling mipmaps, but you only want those "
+"specific parameters changed. To do this, select every asset you want to "
+"reimport in the file system. In the import tab there will now be a checkbox "
+"to the left of every import parameter."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:56
+msgid ""
+"Select the checkbox of the parameters you want to change on your imported "
+"assets, then change the parameters normally. Finally, click the reimport "
+"button and every selected asset will be reimported with only those "
+"parameters changed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
 msgstr "자동 다시 가져오기"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:41
+#: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
 "When the MD5 checksum of the source asset changes, Godot will perform an "
 "automatic reimport of it, applying the preset configured for that specific "
@@ -98,11 +133,11 @@ msgstr ""
 "원본 애셋의 MD5 체크섬이 바꿀 때, Godot는 튿정 애셋을 위해 구성된 프리셋을 적"
 "용하면서, 그것에 자동 다시 내보내기를 실행할 것입니다."
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+#: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
 msgstr "생성된 파일"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+#: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
@@ -110,13 +145,13 @@ msgstr ""
 "가져오기는 추가 <asset>.import 파일을 추가하는데, 가져오기 구성이 거기에 들어"
 "있습니다. 이것을 버전 제어 시스템에 커밋하도록 하세요!"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:53
+#: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
 "또한, 추가 애셋은 숨겨진 res://.import 폴더에 프리셋이 되어 있을 것입니다:"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#: ../../docs/getting_started/workflow/assets/import_process.rst:80
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -129,11 +164,11 @@ msgstr ""
 "다. 다른 컴퓨터에서 확인할 때 다시 가져오는 시간이 짧을 수 있지만, 상당히 많"
 "은 시간과 공간을 잡아먹습니다. 오십보백보입니다!"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:64
+#: ../../docs/getting_started/workflow/assets/import_process.rst:87
 msgid "Changing import resource type"
 msgstr "가져오기 리소스 타입 변경하기"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:66
+#: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
@@ -141,11 +176,11 @@ msgstr ""
 "일부 원본 애셋은 리소스의 다른 타입으로 가져올 수 있습니다. 이를 위해, 원하"
 "는 리소스의 관련된 타입을 선택하고 \"Reimport\"를 누르세요:"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:74
+#: ../../docs/getting_started/workflow/assets/import_process.rst:97
 msgid "Changing default import parameters"
 msgstr "기본값 가져오기 매개변수 변경하기"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:76
+#: ../../docs/getting_started/workflow/assets/import_process.rst:99
 msgid ""
 "Different types of games might require different defaults. Changing the "
 "defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
@@ -156,11 +191,11 @@ msgstr ""
 "바꾸려면 \"Preset..\" 메뉴를 사용할 수 있습니다. 프리셋을 제공하는 일부 리소"
 "스 타입 밖에도, 기본 값 설정을 저장하고 지울 수도 있습니다:"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:84
+#: ../../docs/getting_started/workflow/assets/import_process.rst:107
 msgid "Simplicity is key!"
 msgstr "단순함이 핵심입니다!"
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:86
+#: ../../docs/getting_started/workflow/assets/import_process.rst:109
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
@@ -168,7 +203,7 @@ msgstr ""
 "이것은 매우 간단한 워크플로로 익숙해지는데 얼마 안 걸릴 것입니다. 그리고 리소"
 "스를 다루는데 더 정확한 방법을 유도합니다."
 
-#: ../../docs/getting_started/workflow/assets/import_process.rst:89
+#: ../../docs/getting_started/workflow/assets/import_process.rst:112
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"

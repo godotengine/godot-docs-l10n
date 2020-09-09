@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:4
 msgid "Complying with Licenses"
-msgstr ""
+msgstr "Einhaltung von Lizenzen"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:7
 msgid "What are licenses?"
-msgstr ""
+msgstr "Was sind Lizenzen?"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:9
 msgid ""
@@ -53,7 +53,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:19
 msgid "This text reads as follows:"
-msgstr ""
+msgstr "Dieser Text lautet wie folgt:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:22
 msgid "This game uses Godot Engine, available under the following license:"
@@ -64,6 +64,8 @@ msgid ""
 "Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
 "2014-2020 Godot Engine contributors."
 msgstr ""
+"Copyright (c) 2007-2020 Juan Linietsky, Ariel Manzur. Copyright (c) "
+"2014-2020 Mitwirkende der Godot Engine."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:27
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:88
@@ -94,6 +96,13 @@ msgid ""
 "FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS "
 "IN THE SOFTWARE."
 msgstr ""
+"DIE SOFTWARE WIRD \"WIE BESEHEN\" OHNE JEGLICHE AUSDRÜCKLICHE ODER "
+"STILLSCHWEIGENDE GEWÄHRLEISTUNG ZUR VERFÜGUNG GESTELLT, EINSCHLIESSLICH DER "
+"GEWÄHRLEISTUNG FÜR MARKTGÄNGIGKEIT, EIGNUNG FÜR EINEN BESTIMMTEN ZWECK UND "
+"NICHTVERLETZUNG. IN KEINEM FALL HAFTEN DIE AUTOREN ODER COPYRIGHT-INHABER "
+"FÜR JEGLICHE ANSPRÜCHE, SCHÄDEN ODER ANDERE HAFTUNGEN, OB VERTRAGS-, "
+"SCHADENERSATZ- ODER ANDERWEITIGE MASSNAHMEN AUS, AUS ODER IM ZUSAMMENHANG "
+"MIT DER SOFTWARE ODER DER NUTZUNG ODER ANDEREN ANGEBOTE SOFTWARE."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:34
 msgid ""
@@ -112,10 +121,14 @@ msgid ""
 "as long as it can be displayed under some condition. These are the most "
 "common approaches (only need to implement one of them, not all)."
 msgstr ""
+"Die Lizenz gibt nicht an, wie sie integriert werden muss, daher ist alles "
+"gültig, solange es unter bestimmten Bedingungen angezeigt werden kann. Dies "
+"sind die gängigsten Ansätze (es muss nur einer implementiert werden, nicht "
+"alle)."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:42
 msgid "Credits screen"
-msgstr ""
+msgstr "Credits-Bildschirm"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:44
 msgid ""
@@ -123,6 +136,9 @@ msgid ""
 "the bottom after showing the rest of the credits. Most large studios use "
 "this approach with open source licenses."
 msgstr ""
+"Fügen Sie den obigen Lizenztext irgendwo in den Credits-Bildschirm ein. Es "
+"kann unten sein, nachdem der Rest der Credits angezeigt wurde. Die meisten "
+"großen Studios verwenden diesen Ansatz mit Open Source-Lizenzen."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
 msgid "Licenses screen"
@@ -132,10 +148,12 @@ msgstr "Lizenzbildschirm"
 msgid ""
 "Some games have a special menu (often in the settings) to display licenses."
 msgstr ""
+"Einige Spiele haben ein spezielles Menü (oft in den Einstellungen), um "
+"Lizenzen anzuzeigen."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:52
 msgid "Output log"
-msgstr ""
+msgstr "Ausgabeprotokoll"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:54
 msgid ""
@@ -146,26 +164,31 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:57
 msgid "Accompanying file"
-msgstr ""
+msgstr "Begleitdatei"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:59
 msgid ""
 "If the game is distributed on desktop operating systems, a file containing "
 "the license can be added to the software that is installed to the user PC."
 msgstr ""
+"Wenn das Spiel auf Desktop-Betriebssystemen verteilt ist, kann der auf dem "
+"Benutzer-PC installierten Software eine Datei mit der Lizenz hinzugefügt "
+"werden."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:62
 msgid "Printed manual"
-msgstr ""
+msgstr "Gedrucktes Handbuch"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:64
 msgid ""
 "If the game includes printed manuals, license text can be included there."
 msgstr ""
+"Wenn das Spiel gedruckte Handbücher enthält, kann dort Lizenztext eingefügt "
+"werden."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:67
 msgid "Third Party licenses"
-msgstr ""
+msgstr "Lizenzen von Drittanbietern"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:69
 msgid ""
@@ -194,21 +217,24 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:81
 msgid "ENet"
-msgstr ""
+msgstr "ENet"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:83
 msgid ""
 "If the project being created is a multiplayer game using the `ENet <http://"
 "enet.bespin.org/>`_ driver, ENet has similar licensing terms as Godot"
 msgstr ""
+"Wenn es sich bei dem erstellten Projekt um ein Multiplayer-Spiel handelt, "
+"das den Treiber `ENet <http://enet.bespin.org/>`_ verwendet, hat ENet "
+"ähnliche Lizenzbedingungen wie Godot"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:86
 msgid "Copyright (c) 2002-2016 Lee Salzman"
-msgstr ""
+msgstr "Copyright (c) 2002-2016 Lee Salzman"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:95
 msgid "MBedTLS"
-msgstr ""
+msgstr "MBedTLS"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:97
 msgid ""
@@ -230,7 +256,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""

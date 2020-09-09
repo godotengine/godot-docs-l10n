@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,34 +131,28 @@ msgstr ""
 "requise. Assurez-vous de définir les préférences suivantes de cette manière :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "**Bon :** *Editor Settings...*"
+msgstr "Dans les paramètres de l'éditeur de Godot :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
-#, fuzzy
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
-msgstr "Éditeur externe Mono pour JetBrains Rider"
+msgstr "Réglez **Mono External Editor** sur **JetBrains Rider**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-#, fuzzy
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
-msgstr "Outils de compilation Mono pour JetBrains Mono."
+msgstr "régler **Mono Build Tool** sur **JetBrains Mono**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
 msgstr "Dans Rider :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
 msgstr ""
-"Définissez ``MSBuild version`` pour qu'elle soit fournie avec Rider ou .NET "
-"Core."
+"Réglez **MSBuild version** sur **Bundled with Rider** ou **.NET Core**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-#, fuzzy
 msgid "Install the **Godot support** plugin."
 msgstr "Installez le plugin **Godot support**."
 
@@ -272,27 +266,26 @@ msgstr ""
 "IntelliSense et la surbrillance du code."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
-#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the `:ref:doc_c_sharp_configuring_vs_2019_for_debugging` section below."
 msgstr ""
-"Si vous utilisez Visual Studio 2019, vous devez suivre les instructions "
-"figurant dans la section \"Configurez VS2019 for Debugging\" ci-dessous."
+"Si vous utilisez Visual Studio 2019, vous devez suivre les instructions qui "
+"se trouvent dans la section `:ref:"
+"doc_c_sharp_configuring_vs_2019_for_debugging` ci-dessous."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "Creating a C# script"
 msgstr "Création d'un script C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
 "Après avoir configuré avec succès C# pour Godot, vous devriez voir l'option "
-"suivante lorsque vous sélectionnez ``Attacher un script`` dans le menu "
+"suivante lorsque vous sélectionnez **Attacher un script** dans le menu "
 "contextuel d'un nœud de votre scène :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
@@ -394,7 +387,6 @@ msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "Pour plus d'informations, voir la page :ref:`doc_c_sharp_differences`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
@@ -403,15 +395,18 @@ msgid ""
 msgstr ""
 "Si vous utilisez C#, vous devez (re)compiler les assemblages du projet "
 "chaque fois que vous voulez voir de nouvelles variables d'exportation ou des "
-"nouveaux signaux. Cette compilation peut être déclenchée manuellement en "
-"cliquant sur le mot \"Mono\" au bas de la fenêtre de l'éditeur pour afficher "
-"le panneau Mono, puis en cliquant sur le bouton \"Compiler Projet\"."
+"nouveaux signaux dans l'éditeur. Cette compilation peut être déclenchée "
+"manuellement en cliquant sur le mot **Mono** au bas de la fenêtre de "
+"l'éditeur pour afficher le panneau Mono, puis en cliquant sur le bouton "
+"**Build Project**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
 msgstr ""
+"Vous devrez également reconstruire les assemblages de projet pour appliquer "
+"les changements dans les scripts \"tool\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"

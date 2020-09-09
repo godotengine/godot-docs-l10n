@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
-msgstr ""
+msgstr "Módulos personalizados no C++"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Módulos"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
+"O Godot permite estender a engine de uma forma modular. Novos módulos podem "
+"ser criados e então habilitado/desativado. Isto permite adicionar novas "
+"funcionalidades no mesmo nível da engine sem modificá-la, que pode ser "
+"separada para uso e reutilização em diferentes módulos."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
 msgid ""
@@ -41,10 +45,16 @@ msgid ""
 "and others. As many new modules as desired can be created and combined. The "
 "SCons build system will take care of it transparently."
 msgstr ""
+"Módulos são localizados no subdiretório ``modules/`` do sistema de "
+"compilação. Por padrão, dezenas de módulos são habilitados, como GDScript "
+"(que, sim, não faz parte da engine básica), o tempo de execução (runtime) do "
+"Mono, um módulo de expressões regulares, dentre outros. Podem ser criados e "
+"combinados quantos módulos novos desejar. O sistema de compilação SCons vai "
+"cuidar disso de forma transparente."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 msgid "What for?"
-msgstr ""
+msgstr "Para que serve?"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
@@ -52,36 +62,42 @@ msgid ""
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
 "++ modules can be useful in the following scenarios:"
 msgstr ""
+"Embora seja recomendado que a maior parte do jogo seja escrito em script (já "
+"que economiza muito tempo), é perfeitamente possível usar C ++ em seu lugar. "
+"Adicionar módulos C ++ pode ser útil nos seguintes cenários:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr ""
+msgstr "Vinculando uma biblioteca externa no Godot (tipo PhysX, FMOD, etc)."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
-msgstr ""
+msgstr "Otimize as partes principais de um jogo."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
-msgstr ""
+msgstr "Adicionando novas funcionalidades para a engine e/ou editor."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
-msgstr ""
+msgstr "Portando um jogo existente."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
 msgstr ""
+"Escreva um novo jogo completo em C ++ porque você não pode viver sem C ++."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr ""
+msgstr "Criando um novo módulo"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 msgid ""
 "Before creating a module, make sure to download the source code of Godot and "
 "manage to compile it. There are tutorials in the documentation for this."
 msgstr ""
+"Antes de criar um módulo, certifique-se de baixar o código fonte do Godot e "
+"conseguir compilá-lo. Existem tutoriais na documentação para isso."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -89,6 +105,9 @@ msgid ""
 "``modules/``. If you want to maintain the module separately, you can "
 "checkout a different VCS into modules and use it."
 msgstr ""
+"Para criar um módulo, a primeira etapa é criar um diretório dentro de "
+"``modules/``. Se você deseja manter o módulo separado, você pode criar um "
+"checkout de um VCS diferente em ``modules/`` e usá-lo."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
 msgid ""
@@ -110,6 +129,8 @@ msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
 msgstr ""
+"Então, a nova classe precisa ser registrada de alguma forma, então mais dois "
+"arquivos precisam ser criados:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:123
 msgid ""
@@ -127,6 +148,8 @@ msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
+"Em seguida, precisamos criar um arquivo``SCsub`` para que o sistema de "
+"compilação compile o módulo:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:164
 msgid ""

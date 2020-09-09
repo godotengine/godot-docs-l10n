@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:4
 msgid "Differences between GLES2 and GLES3"
-msgstr ""
+msgstr "Unterschiede zwischen GLES2 und GLES3"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "design and are not the result of bugs. There may be differences that are "
 "unintentional, but they should be reported as bugs."
 msgstr ""
+"Diese Seite dokumentiert die Unterschiede zwischen GLES2 und GLES3, diese "
+"sind beabsichtigt und keine Fehler. Es kann unbeabsichtigte Unterschiede "
+"geben, die jedoch als Fehler gemeldet werden sollten."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:9
 msgid ""
@@ -55,10 +58,12 @@ msgid ""
 "Particles and Particles2D can be converted to their CPU equivalent node with "
 "the \"Convert to CPUParticles\" option in the editor."
 msgstr ""
+"Partikel und Partikel2D können mit der Editor-Option \"In CPU-Partikel "
+"konvertieren\" in ihren CPU-äquivalenten Node konvertiert werden."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:26
 msgid "``SCREEN_TEXTURE`` mip-maps"
-msgstr ""
+msgstr "``SCREEN_TEXTURE`` MipMaps"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:28
 msgid ""
@@ -69,7 +74,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:32
 msgid "``DEPTH_TEXTURE``"
-msgstr ""
+msgstr "``DEPTH_TEXTURE``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:34
 msgid ""
@@ -96,7 +101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:47
 msgid "HDR"
-msgstr "HDRI"
+msgstr "HDR"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:49
 msgid ""
@@ -188,11 +193,11 @@ msgstr "Lichter hinzufügen (ambient light)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:84
 msgid "Fog"
-msgstr ""
+msgstr "Nebel"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:85
 msgid "Depth of field"
-msgstr ""
+msgstr "Tiefenschärfe"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:86
 msgid "Glow (also known as bloom)"
@@ -265,7 +270,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:127
 msgid "Shading language"
-msgstr ""
+msgstr "Shader-Sprache"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:129
 msgid ""
@@ -283,93 +288,100 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:135
 msgid "Function"
-msgstr ""
+msgstr "Funktion"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:137
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
-msgstr ""
+msgstr "vec_type **modf** ( vec_type x, out vec_type i )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:139
 msgid "vec_int_type **floatBitsToInt** ( vec_type x )"
-msgstr ""
+msgstr "vec_int_type **floatBitsToInt** ( vec_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:141
 msgid "vec_uint_type **floatBitsToUint** ( vec_type x )"
-msgstr ""
+msgstr "vec_uint_type **floatBitsToUint** ( vec_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:143
 msgid "vec_type **intBitsToFloat** ( vec_int_type x )"
-msgstr ""
+msgstr "vec_type **intBitsToFloat** ( vec_int_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:145
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type x )"
-msgstr ""
+msgstr "vec_type **uintBitsToFloat** ( vec_uint_type x )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:147
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:149
 msgid "See workaround below"
-msgstr ""
+msgstr "Siehe Problemumgehung unten"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:149
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( samplerCube s, int lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
 msgid "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:151
 msgid "**bias** not available in vertex shader"
-msgstr ""
+msgstr "**bias** nicht verfügbar im Vertex Shader"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:153
 msgid ""
 "vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 msgstr ""
+"vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
 msgid "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:155
 msgid "Only available in vertex shader on some hardware"
-msgstr ""
+msgstr "Nur in Vertex Shader auf bestimmter Hardware verfügbar"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:157
 msgid "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 msgstr ""
+"vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:159
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy)"
 msgstr ""
+"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:161
 msgid "vec_type **dFdx** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **dFdx** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:163
 msgid "vec_type **dFdy** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **dFdy** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:165
 msgid "vec_type **fwidth** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **fwidth** ( vec_type p )"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:168
 msgid ""
 "Functions not in GLES2's GLSL were added with Godots own shader standard "
 "library. These functions may perform worse in GLES2 compared to GLES3."
 msgstr ""
+"Funktionen, die nicht in GLES2 GLSL enthalten sind, wurden mit Godots "
+"eigener Shader-Standardbibliothek hinzugefügt. Diese Funktionen können in "
+"GLES2 im Vergleich zu GLES3 schlechter abschneiden."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:171
 msgid "``textureSize()`` workaround"
-msgstr ""
+msgstr "``textureSize()`` Problemungehung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:173
 msgid ""
@@ -379,7 +391,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:189
 msgid "Built in variables and render modes"
-msgstr ""
+msgstr "Eingebaute Variablen und Render-Modi"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:191
 msgid ""
@@ -391,28 +403,28 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:196
 msgid "Variable / Render Mode"
-msgstr ""
+msgstr "Variable / Render Mode"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:198
 msgid "``ensure_correct_normals``"
-msgstr ""
+msgstr "``ensure_correct_normals``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:200
 msgid "``INSTANCE_ID``"
-msgstr ""
+msgstr "``INSTANCE_ID``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:202
 msgid "``DEPTH``"
-msgstr ""
+msgstr "``DEPTH``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:204
 msgid "``ANISOTROPY``"
-msgstr ""
+msgstr "``ANISOTROPY``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:206
 msgid "``ANISOTROPY_FLOW``"
-msgstr ""
+msgstr "``ANISOTROPY_FLOW``"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:208
 msgid "``SSS_STRENGTH``"
-msgstr ""
+msgstr "``SSS_STRENGTH``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -187,10 +187,36 @@ msgstr ""
 "令行引數來指定 PCK 檔的路徑："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
+#, fuzzy
+msgid "Starting the dedicated server"
+msgstr "為專用伺服器匯出"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
+msgid ""
+"If both your client and server are part of the same Godot project, you will "
+"have to add a way to start the server directly using a command-line "
+"argument. This can be done by adding the following code snippet in your main "
+"scene (or a singleton)'s ``_ready()`` method::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
+msgid ""
+"Alternatively, you can make the dedicated server always start up if a "
+"headless or server binary is detected::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
+msgid ""
+"If your client and server are separate Godot projects, your server should "
+"most likely be configured in a way where running the main scene starts a "
+"server automatically."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:116
 msgid ""
 "On Linux, to make your dedicated server restart after a crash or system "
 "reboot, you can `create a systemd service <https://medium.com/@benmorel/"
@@ -203,7 +229,7 @@ msgstr ""
 "with-systemd-611b5c8b91d6>`__ 。這樣也可以更方便地檢視伺服器日誌，並且 "
 "systemd 會提供自動日誌切割 (log rotatioin)。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:122
 msgid ""
 "If you have experience with containers, you could also look into wrapping "
 "your dedicated server in a `Docker <https://www.docker.com/>`__ container. "

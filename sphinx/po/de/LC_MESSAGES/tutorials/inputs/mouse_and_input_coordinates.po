@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,10 +30,13 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"Der Grund für diese kleine Anleitung besteht darin, viele häufige Fehler in "
+"Bezug auf Eingabekoordinaten, ermitteln der Mausposition und "
+"Bildschirmauflösung usw. zu beseitigen."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "Hardware-Anzeigekoordinaten"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
@@ -41,10 +44,14 @@ msgid ""
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
+"Die Verwendung von Hardwarekoordinaten ist sinnvoll, wenn komplexe "
+"Benutzeroberflächen geschrieben und auf einem PC ausgeführt werden sollen, z."
+"B. Editoren, MMOs, Tools usw. Außerhalb dieses Anwendungsbereichs ist dies "
+"jedoch weniger sinnvoll."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "Anzeigekoordinaten des Ansichtsbereichs"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
@@ -53,11 +60,17 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godot verwendet Ansichtsfenster zum Anzeigen von Inhalten, und diese können "
+"durch verschiedene Optionen skaliert werden (siehe :ref:"
+"`doc_multiple_resolutions`). Verwenden Sie dann die Funktionen im Node, um "
+"die Mauskoordinaten und die Größe des Ansichtsfensters zu erhalten, zum "
+"Beispiel:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr ""
+"Alternativ können Sie das Ansichtsfenster nach der Mausposition fragen:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""

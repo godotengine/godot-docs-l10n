@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 13:45+0200\n"
+"POT-Creation-Date: 2020-09-09 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,13 +171,12 @@ msgstr ""
 "l'un ni de l'autre, les fichiers binaires glTF sont très bien."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
 msgstr ""
 "Blender n'exporte pas de textures émistives avec le fichier glTF. Si votre "
-"modèle en utilise un, il doit être introduit séparément."
+"modèle en utilise un, il doit être apporté séparément."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid "Exporting DAE files from Blender"
@@ -900,26 +899,22 @@ msgstr ""
 "doivent être effectuées après l'exportation :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Ajout de détection de collision aux objets"
+msgstr "Ajout de détection de collision aux objets."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Réglage des objets comme maillages de navigation"
+msgstr "Réglage des objets comme maillages de navigation."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
 "Supprimer les nœuds qui ne sont pas utilisés dans le moteur de jeu (comme "
-"les lumières spécifiques utilisées pour la modélisation)"
+"les lumières spécifiques utilisées pour la modélisation)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -929,25 +924,23 @@ msgstr ""
 "Pour simplifier ce flux de travail, Godot propose quelques suffixes qui "
 "peuvent être ajoutés aux noms des objets dans votre logiciel de modélisation "
 "3D. Lors de l'importation, Godot les détectera et effectuera des actions "
-"automatiquement :"
+"automatiquement."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "Tous les suffixes décrits ci-dessous sont *sensibles à la casse*."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 msgid "Remove nodes (-noimp)"
 msgstr "Supprimer les nœuds (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
-#, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"Les noms de nœuds qui ont ce suffixe seront supprimés au moment de "
-"l'importation, quel que soit leur type. Ils n'apparaîtront pas dans la scène "
-"importée."
+"Les objets qui ont le suffixe ``-noimp`` seront supprimés à l'importation, "
+"quel que soit leur type. Ils n'apparaîtront pas dans la scène importée."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
@@ -961,6 +954,13 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"L'option ``-col`` ne fonctionnera que pour les objets Mesh. Si elle est "
+"détectée, un nœud de collision statique enfant sera ajouté, en utilisant la "
+"même géométrie que le maillage. Cela créera une forme de collision de "
+"maillage triangulaire, ce qui est une option lente mais précise pour la "
+"détection de collisions. Cette option est généralement celle que vous "
+"souhaitez pour la géométrie de niveau (mais voir aussi ``-colonly`` ci-"
+"dessous)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
 msgid ""
@@ -974,71 +974,75 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"L'option ``-convcol`` va créer un :ref:`classe_convexpolygonshape` au lieu "
+"d'un :ref:`classe_concavepolygonshape`. Contrairement aux maillages "
+"triangulaires qui peuvent être concaves, une forme convexe ne peut "
+"représenter avec précision qu'une forme qui n'a pas d'angles concaves (une "
+"pyramide est convexe, mais une boîte creuse est concave). De ce fait, les "
+"formes de collision convexes ne sont généralement pas adaptées à la "
+"géométrie de niveau. Lorsqu'elles représentent des maillages assez simples, "
+"les formes de collision convexes peuvent donner de meilleures performances "
+"qu'une forme de collision triangulaire. Cette option est idéale pour les "
+"objets simples ou dynamiques qui nécessitent une détection des collisions "
+"précises."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"Cependant, il arrive souvent que la géométrie visuelle soit trop complexe ou "
-"trop peu lisse pour les collisions, ce qui finit par ne pas bien fonctionner."
+"Cependant, dans les deux cas, la géométrie visuelle peut être trop complexe "
+"ou pas assez lisse pour les collisions. Cela peut créer des glitches "
+"physiques et ralentir le moteur inutilement."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
-#, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"Pour résoudre ce problème, le modificateur \"-colonly\" existe, qui "
+"Pour résoudre ce problème, le modificateur ``-colonly`` existe, qui "
 "supprimera le maillage lors de l'importation et créera une collision :ref:"
 "`class_staticbody` à la place. Cela permet de séparer le maillage visuel et "
 "la collision réelle."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
-#, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"L'option \"-convcolonly\" fonctionne de la même manière, mais crée à la "
+"L'option ``-convcolonly`` fonctionne de la même manière, mais crée à la "
 "place un :ref:`class_convexpolygonshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
-#, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"L'option \"-colonly\" peut également être utilisée avec les objets vides de "
+"L'option ``-colonly`` peut également être utilisée avec les objets vides de "
 "Blender. Lors de l'importation, il créera un :ref:`class_staticbody` avec un "
 "nœud collision en tant qu'enfant. Le nœud collision aura une des formes "
 "prédéfinies, en fonction du type de dessin vide de Blender :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "Une flèche simple créera une :ref:`class_rayshape`"
+msgstr "Une flèche simple créera une :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "Un cube créera une :ref:`class_boxshape`"
+msgstr "Un cube créera une :ref:`class_boxshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "Une image créera une :ref:`class_planeshape`"
+msgstr "Une image créera une :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "Sphère (et autres non listés) va créer :ref:`class_sphereshape`"
+msgstr "Une sphère (et autres non listés) créera une :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
@@ -1046,9 +1050,12 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"Dans la mesure du possible, **essayez d'utiliser quelques formes primitives "
+"de collision** au lieu de maillages triangulaires ou de formes convexes. Les "
+"formes primitives ont souvent les meilleures performances et une meilleure "
+"fiabilité."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:422
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
@@ -1056,66 +1063,61 @@ msgid ""
 msgstr ""
 "Pour une meilleure visibilité dans l'éditeur de Blender, l'utilisateur peut "
 "définir l'option \"X-Ray\" sur les vides de collision et définir une couleur "
-"distincte pour eux dans User Preferences / Themes / 3D View / Empty."
+"distincte pour eux dans **User Preferences > Themes > 3D View > Empty**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid "Create navigation (-navmesh)"
 msgstr "Créer une navigation (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
-#, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera converti en un maillage de "
-"navigation. Le nœud de maillage original sera supprimé."
+"Un nœud de maillage avec le suffixe ``-navmesh`` sera converti en un "
+"maillage de navigation. Le objet Mesh original sera supprimé à l'importation."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Créer un VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:435
-#, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
-"nœud :ref:`VehicleBody <class_VehicleBody>`."
+"Un nœud de maillage avec le suffixe ``-vehicle`` sera importé en tant "
+"qu'enfant d'un nœud :ref:`class_VehicleBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Créer une VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:441
-#, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
-"nœud :ref:`VehicleWheel <class_VehicleWheel>`."
+"Un nœud de maillage avec le suffixe ``-wheel`` sera importé en tant "
+"qu'enfant d'un nœud :ref:`class_VehicleWheel`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
 msgid "Rigid Body (-rigid)"
 msgstr "Corps Rigide (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:447
-#, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"Un nœud de maillage avec ce suffixe sera importé en tant qu'enfant d'un "
-"nœud :ref:`VehicleBody <class_VehicleBody>`."
+"Un nœud de maillage avec le suffixe ``-rigid`` sera importé en tant "
+"qu'enfant d'un nœud :ref:`class_RigidBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Animation loop (-loop, -cycle)"
 msgstr "Boucle d'animation (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
@@ -1123,15 +1125,15 @@ msgid ""
 "a hyphen.**"
 msgstr ""
 "Les clips d'animation dans le document COLLADA qui commencent ou se "
-"terminent par le jeton \"loop\" ou \"cycle\" seront importés sous forme "
-"d'animation Godot avec le drapeau loop activé. Ceci est sensible à la casse "
-"et ne nécessite pas de trait d'union."
+"terminent par le jeton ``loop`` ou ``cycle`` seront importés sous forme de "
+"Godot Animation avec le flag loop activé. **Contrairement aux autres "
+"suffixes décrits ci-dessus, il n'est pas nécessaire d'utiliser un trait "
+"d'union.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
-#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
-"Dans Blender, cela nécessite d'utiliser l'éditeur NLA et de nommer l'action "
-"avec le préfixe ou le suffixe \"loop\" ou \"cycle\"."
+"Dans Blender, cela nécessite d'utiliser l'éditeur NLA et de nommer l'Action "
+"avec le préfixe ou le suffixe ``loop`` ou ``cycle``."
