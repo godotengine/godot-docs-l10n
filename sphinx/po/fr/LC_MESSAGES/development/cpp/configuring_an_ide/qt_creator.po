@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,11 +46,13 @@ msgid "Under **Location** select the Godot root folder."
 msgstr "Sous **Location**, sélectionnez le dossier racine de Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:23
+#, fuzzy
 msgid ""
 "Next, you can choose which folders and files will be visible to the project. "
 "While C/C++ files are added automatically, other extensions can be "
-"potentially useful: ``*.py`` for buildsystem files, ``*.java`` for Android "
-"platform development, ``*.mm`` for macOS platform development."
+"potentially useful: ``*.glsl`` for shader files, ``*.py`` for buildsystem "
+"files, ``*.java`` for Android platform development, ``*.mm`` for macOS "
+"platform development."
 msgstr ""
 "Ensuite, vous pouvez choisir les dossiers et fichiers qui seront visibles au "
 "projet. Les fichiers C/C++ seront ajoutés automatiquement, d'autres "
@@ -179,7 +181,6 @@ msgid "Code style configuration"
 msgstr "Configuration du style de code"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:93
-#, fuzzy
 msgid ""
 "Developers must follow the project's :ref:`code style "
 "<doc_code_style_guidelines>` and the IDE should help them follow it. By "
@@ -187,12 +188,12 @@ msgid ""
 "Godot code style guidelines. You can change this behavior by changing the "
 "**Code Style** in **Tools > Options > C++**."
 msgstr ""
-"Les développeurs doivent suivre le :ref:`code style "
+"Les développeurs doivent suivre le :ref:`style de code "
 "<doc_code_style_guidelines>` du projet et l'IDE devrait les aider à le "
 "faire. Par défaut, Qt Creator utilise des espaces pour l'indentation, ce qui "
 "ne correspond pas aux directives de style de code de Godot. Vous pouvez "
-"changer ce comportement en modifiant le **Code Style** dans **Options > C+"
-"+**."
+"changer ce comportement en modifiant le **Code Style** dans **Tools > "
+"Options > C++**."
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:102
 msgid ""

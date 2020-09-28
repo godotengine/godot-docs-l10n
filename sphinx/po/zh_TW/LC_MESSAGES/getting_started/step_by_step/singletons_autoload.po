@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,6 @@ msgstr ""
 "料很麻煩，而且可能會拖慢速度。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -77,26 +76,22 @@ msgid "Using this concept, you can create objects that:"
 msgstr "利用這個概念，我們可以做出像這樣的物件："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
-msgstr "隨時都保持載入狀態，不論現在執行的是哪個場景"
+msgstr "隨時都保持載入狀態，不論現在執行的是哪個場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "可以保存全域變數，如玩家的資訊"
+msgstr "可以保存全域變數，如玩家的資訊。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "可以處理場景的切換以及場景間的轉場效果"
+msgstr "可以處理場景的切換以及場景間的轉場效果。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
-msgstr "行為類似單例模式，GDScript 在設計上不支援全域變數"
+msgstr "**行為** 類似單例模式，只是 GDScript 在設計上不支援全域變數。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -108,6 +103,8 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot 不會依照單例設計模式將 AutoLoad 變成「真正」的單例。如果使用者需要的"
+"話，依然可以實體化多次 AutoLoad。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -117,27 +114,24 @@ msgstr "Autoload"
 msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
-msgstr ""
+msgstr "可以通過建立 AutoLoad 來載入從 :ref:`class_Node` 繼承來的場景或腳本。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-"我們可以使用 Autoload 來從繼承了 :ref:`Node <class_Node>` 的腳本載入場景或腳"
-"本。請注意：自動載入腳本時會建立一個節點，而載入的腳本會被附加在上面。這個節"
-"點將會在其他場景載入前被新增到根檢視區上。"
+"當 Autoload 腳本時，會新增一個 :ref:`class_Node` 並將該腳本附加到 Node 上。這"
+"個節點會在其他場景載入前被新增到根檢視區上。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"要自動載入場景或腳本，請從選單中選擇 ``專案 -> 專案設定`` 然後切換到"
-"「AutoLoad」分頁。"
+"要自動載入場景或腳本，請從選單中選擇 **[專案] -> [專案設定]** 然後切換到 "
+"**[AutoLoad]** 分頁。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
@@ -158,13 +152,12 @@ msgstr ""
 "這表示，所有的節點都可以通過下列方式來存取名為「PlayerVariables」的單例："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"若有勾選「Enable」（啟用）欄位（預設為 ``true`` ），則就可以直接這樣存取單"
-"例："
+"若有勾選「Enable」(啟用) 欄位 (預設就有勾選)，則就可以直接這樣存取單例而不需"
+"使用 ``get_node()``："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -180,7 +173,6 @@ msgid "Custom scene switcher"
 msgstr "自製場景切換器"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -190,8 +182,9 @@ msgid ""
 msgstr ""
 "這篇教學展示了如何使用 Autoload 來製作場景切換器。如果只需要做基本的場景切"
 "換，可以使用 :ref:`SceneTree.change_scene() "
-"<class_SceneTree_method_change_scene>` 方法（詳細請參考 :ref:"
-"`doc_scene_tree` ）。若在切換場景時需要更複雜的行為，則這個方法就有更多功能。"
+"<class_SceneTree_method_change_scene>` 方法 (詳細請參考 :ref:"
+"`doc_scene_tree` )。但若在切換場景時需要更複雜的行為，則這個方法就有更多功"
+"能。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
@@ -217,24 +210,23 @@ msgid "Global.gd"
 msgstr "\\ Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"切換到「腳本」分頁並建立名為 Global.gd 的腳本。請確認該腳本有繼承 ``Node`` ："
+"切換到 **[腳本]** 分頁並建立名為 ``Global.gd`` 的腳本。請確認該腳本有繼承 "
+"``Node`` ："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
-"下一個步驟就是將這個腳本新增至 Autoload 列表中。從選單中打開 ``專案 > 專案設"
-"定`` ，然後切換到「AutoLoad」分頁，並按瀏覽按鈕來選擇腳本，也可以直接輸入路"
-"徑： ``res://Global.gd`` 。按「新增」來加入至 Autoload 列表："
+"下一個步驟就是將這個腳本新增至 Autoload 列表中。從選單中打開 **[專案] > [專案"
+"設定]** ，然後切換到 **[AutoLoad]** 分頁，並點擊瀏覽按鈕來選擇腳本，也可以直"
+"接輸入路徑： ``res://Global.gd`` 。點擊 **[新增]** 來加入至 Autoload 列表："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -243,15 +235,14 @@ msgid ""
 msgstr "現在，無論正在執行專案中的哪個場景，這個腳本都會被載入。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
 "``Global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
-"回到腳本中，我們現在需要讓腳本在 `_fetch()` 中取得目前的場景。目前的場景（只"
-"有一個按鈕的那個）以及 ``global.gd`` 都是在根上的子節點，但 Autoload 的節點總"
+"回到腳本中，我們現在需要讓腳本在 `_ready()` 中取得目前的場景。目前的場景 (只"
+"有一個按鈕的那個) 以及 ``Global.gd`` 都是在根上的子節點，但 Autoload 的節點總"
 "是優先載入的。這表示根上的最後一個子節點永遠為目前載入的場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
@@ -290,7 +281,6 @@ msgid ""
 msgstr "執行專案並測試看看按按鈕來切換場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
@@ -299,7 +289,7 @@ msgid ""
 msgstr ""
 "請注意：當場景很小時，場景過場會馬上發生。但若場景很複雜，就可能會出現有體感"
 "的等待時間。要瞭解如何處理這個問題，請參考下一個教學： :ref:"
-"`doc_background_loading`"
+"`doc_background_loading` 。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -309,3 +299,6 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"另外，若載入時間沒有很長的話 (如小於 3 秒等)，也可以在場景更改前顯示一些 2D "
+"元素來製造出「載入磚 (Loading Plaque)」的效果。場景更改完後就可以將這些元素隱"
+"藏起來。這種做法可以用來讓玩家知道場景正在載入。"

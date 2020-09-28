@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,9 +214,8 @@ msgstr ""
 "utilisant l'argument de ligne de commande``--main-pack`` :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "Exportation pour les serveurs dédiés"
+msgstr "Démarrage du serveur dédié"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -225,12 +224,19 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"Si votre client et votre serveur font tous deux partie du même projet Godot, "
+"vous devrez ajouter un moyen de démarrer le serveur directement en utilisant "
+"un argument de ligne de commande. Cela peut être fait en ajoutant le bout de "
+"code suivant dans la méthode ``_ready()`` de votre scène principale (ou d'un "
+"singleton) :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
 msgstr ""
+"Vous pouvez également faire en sorte que le serveur dédié démarre toujours "
+"si un binaire sans tête ou un binaire de serveur est détecté :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -238,6 +244,9 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"Si votre client et votre serveur sont des projets Godot distincts, votre "
+"serveur devrait très probablement être configuré de manière à ce que "
+"l'exécution de la scène principale lance automatiquement un serveur."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"

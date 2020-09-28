@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,26 +109,29 @@ msgstr ""
 "ものの追加を避けることは、常にソフトウェア開発の良い習慣と見なされます。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
-msgid "#2: The problem has to exist"
+#, fuzzy
+msgid "#2: To solve the problem, it has to exist in the first place"
 msgstr "#2: 問題が存在する必要があります"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
+#, fuzzy
 msgid ""
-"This is a variation of the previous practice. I believe most developers "
-"agree that adding anything unnecessary is not a good idea, but what "
-"constitutes what is necessary and what isn't?"
+"This is a variation of the previous practice. Adding anything unnecessary is "
+"not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
 "これは、以前のプラクティスのバリエーションです。ほとんどの開発者は、不要なも"
 "のを追加するのは良い考えではないことに同意していると思いますが、何が必要で何"
 "がそうではないのでしょうか？"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:58
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
+#, fuzzy
 msgid ""
-"The answer to this question is that the problem needs to *exist*. It must "
-"not be speculation or a belief. The user must be using the software as "
-"intended to create something they *need*. In this process, the user may "
-"stumble into a problem that requires a solution in order to continue, or in "
-"order to achieve greater productivity. In this case, *a solution is needed*."
+"The answer to this question is that the problem needs to *exist* before it "
+"can be actually solved. It must not be speculation or a belief. The user "
+"must be using the software as intended to create something they *need*. In "
+"this process, the user may stumble into a problem that requires a solution "
+"to proceed, or in order to achieve greater productivity. In this case, *a "
+"solution is needed*."
 msgstr ""
 "この質問への答えは、問題が *存在する* 必要があるということです。推測や信念で"
 "あってはなりません。ユーザーは、\\ *必要* なものを作成するために、ソフトウェ"
@@ -136,7 +139,7 @@ msgstr ""
 "生産性を高めるために解決策を必要とする問題に出くわすことがあります。この場"
 "合、\\ *解決策が必要* です。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:64
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:63
 msgid ""
 "Believing that problems may arise in the future and that the software needs "
 "to be ready to solve them by the time they appear is called *\"Future "
@@ -146,30 +149,31 @@ msgstr ""
 "準備が必要であると信じることは、\\ *将来の校正* と呼ばれ、次のような考え方に"
 "よって特徴付けられます:"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:67
 msgid "I think it would be useful for users to..."
 msgstr "私はそれがユーザーのために有用であると思います..."
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:69
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
 msgid "I think users will eventually need to..."
 msgstr "ユーザーは最終的に必要になると思います..."
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:71
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
+#, fuzzy
 msgid ""
-"This is generally considered a bad habit, because trying to solve problems "
-"that *don't actually exist* in the present will very often lead to code that "
-"will be written but never used, or to code that is considerably more complex "
-"to use and maintain than it needs to be."
+"This is generally considered a bad habit because trying to solve problems "
+"that *don't actually exist* in the present will often lead to code that will "
+"be written but never used, or that is considerably more complex to use and "
+"maintain than it needs to be."
 msgstr ""
 "*現時点で存在しない* 問題を解決しようとすると、頻繁に記述されても使用されない"
 "コードや、それよりも使用および保守がかなり複雑なコードになることが多いため、"
 "これは一般的に悪い習慣と考えられています。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:77
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
 msgstr "#3: 問題は複雑または頻繁である必要があります"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:79
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
 "Software is designed to solve problems, but we can't expect it to solve "
 "*every problem that exists under the sun*. As a game engine, Godot will "
@@ -182,7 +186,7 @@ msgstr ""
 "が、それはあなたのために *ゲーム全体* を作ることはありません。どこかに線を引"
 "く必要があります。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:86
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:85
 msgid ""
 "Whether a problem is worth solving is determined by the difficulty the user "
 "has to work around it. This difficulty can be expressed as:"
@@ -190,15 +194,15 @@ msgstr ""
 "問題を解決する価値があるかどうかは、ユーザーがその問題を回避する必要がある難"
 "しさによって決まります。この難易度は次のように表現できます:"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
 msgid "The complexity of the problem"
 msgstr "問題の複雑さ"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:90
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
 msgstr "問題の頻度"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:92
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 #, fuzzy
 msgid ""
 "If the problem is *too complex* for most users to solve, the software must "
@@ -211,7 +215,7 @@ msgstr ""
 "のが簡単な場合、そのような解決策を提供することは不要であり、それを行うのは"
 "ユーザー次第です。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:97
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:96
 msgid ""
 "The exception, however, is when the user stumbles into this problem "
 "*frequently enough* that having to do the simple solution every time becomes "
@@ -222,7 +226,7 @@ msgstr ""
 "単純な解決策を実行しなければならないことは迷惑になります。この場合、ソフト"
 "ウェアはこのユースケースを簡素化する解決策を提供する必要があります。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:101
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:100
 msgid ""
 "In our experience, in most cases it's usually obvious to tell when a problem "
 "is complex or frequent, but cases may arise where drawing this line is "
@@ -233,11 +237,11 @@ msgstr ""
 "は通常明らかですが、この線を描くのが難しい場合が発生する可能性があります。こ"
 "れが、他の開発者と話し合うこと(次のポイント)が常に推奨される理由です。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:106
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
 msgstr "#4: 解決策は他のユーザーと話し合う必要があります"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:108
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""
 "It is often the case that, when users stumble upon problems, they are only "
 "immersed in their own project, so they will naturally try to solve the "
@@ -247,7 +251,7 @@ msgstr ""
 "らは自然に自分の観点から問題を解決しようとし、ユースケースについてのみ考えま"
 "す。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:112
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:111
 msgid ""
 "Because of this, user proposed solutions don't always contemplate other use "
 "cases that developers are often aware of, so they are often biased towards "
@@ -256,7 +260,7 @@ msgstr ""
 "このため、ユーザーが提案した解決策は、開発者がよく知っている他のユースケース"
 "を常に想定しているわけではないため、多くの場合、独自の要件に偏っています。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:118
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:117
 #, fuzzy
 msgid ""
 "For developers, the perspective is different. They may find the user's "
@@ -271,7 +275,7 @@ msgstr ""
 "単純またはより低いレベルの)解決策を提案し、残りの解決策はユーザーに任せるかも"
 "しれません。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:124
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:123
 msgid ""
 "In any case, before attempting a contribution, it is important to discuss "
 "the actual problems with the other developers or contributors, so a better "
@@ -280,7 +284,7 @@ msgstr ""
 "いずれにせよ、貢献を試みる前に、実際の問題を他の開発者または貢献者と話し合う"
 "ことが重要です。そうすれば、実装に関するより良い合意に達することができます。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:128
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:127
 msgid ""
 "The only exception, in this case, is when an area of code has a clear owner "
 "(agreed by the other contributors), who talks to users directly and has the "
@@ -290,7 +294,7 @@ msgstr ""
 "であり、ユーザーと直接話をし、解決策を直接実装するための知識が最も高い場合で"
 "す。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:132
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:131
 msgid ""
 "Also, Godot's philosophy is to favor ease of use and maintenance over "
 "absolute performance. Performance optimizations will be considered, but they "
@@ -298,11 +302,11 @@ msgid ""
 "add too much complexity to the codebase."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:138
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:137
 msgid "#5: To each problem, its own solution"
 msgstr "#5: それぞれの問題に対して、独自の解決策"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:140
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:139
 msgid ""
 "For programmers, it is always a most enjoyable challenge to find the most "
 "optimal solutions to problems. Things, however, may go overboard sometimes "
@@ -313,7 +317,7 @@ msgstr ""
 "挑戦です。しかし、物事は時々行き過ぎて、プログラマーはできるだけ多くの問題を"
 "解決する解決策を考え出そうとします。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:145
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:144
 msgid ""
 "The situation will often take a turn for the worse when, in order to make "
 "this solution appear even more fantastic and flexible, the pure speculation-"
@@ -322,7 +326,7 @@ msgstr ""
 "この解決策をさらにすてきで柔軟に見せるために、純粋な投機ベースの問題(#2で説"
 "明)もステージに登場させてしまうと、状況はしばしば悪化します。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:151
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:150
 msgid ""
 "The main problem is that, in reality, it rarely works this way. Most of the "
 "time, just writing an individual solution to each problem results in code "
@@ -332,7 +336,7 @@ msgstr ""
 "とんどの場合、各問題に対する個別の解決策を書くだけで、コードはよりシンプルで"
 "保守しやすくなります。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:155
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:154
 msgid ""
 "Additionally, solutions that target individual problems are better for the "
 "users, as they find something that does exactly what they need, without "
@@ -343,7 +347,7 @@ msgstr ""
 "なシステムを学習および記憶する必要なく、ユーザーが必要なことを正確に実行でき"
 "るものを見つけるため、ユーザーにとってより優れています。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:160
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:159
 #, fuzzy
 msgid ""
 "Big and flexible solutions also have an additional drawback which is that, "
@@ -355,12 +359,12 @@ msgstr ""
 "いう追加の欠点もあります。これにより、追加される機能をさらに要求し続けます(そ"
 "して、APIとコードベースがますます複雑になります)。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:165
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:164
 msgid "#6: Cater to common use cases, leave the door open for the rare ones"
 msgstr ""
 "#6: 一般的なユースケースに対応し、まれなケースにはドアを開けたままにする"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:167
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:166
 msgid ""
 "This is a continuation of the previous point, which further explains why "
 "this way of thinking and designing software is preferred."
@@ -368,7 +372,7 @@ msgstr ""
 "これは前のポイントの続きであり、この考え方とソフトウェアの設計方法が好まれる"
 "理由をさらに説明しています。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:170
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:169
 msgid ""
 "As mentioned before (in point #2), it is very difficult for us (as human "
 "beings who design software) to actually understand all future user needs. "
@@ -380,7 +384,7 @@ msgstr ""
 "ケースに対応する非常に柔軟な構造を作成しようとすることは、しばしば間違いで"
 "す。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:175
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:174
 msgid ""
 "We may come up with something we believe is brilliant, but when it's "
 "actually used, we will find that users will never even use half of it, or "
@@ -392,7 +396,7 @@ msgstr ""
 "い機能が必要になることがわかり、それを破棄してしまうか、さらに複雑にすること"
 "が必要になってきます。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:180
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:179
 msgid ""
 "The question is then, how to design software that gives users what *we know "
 "they need*, but that is flexible enough to allow them to do *what we don't "
@@ -402,7 +406,7 @@ msgstr ""
 "フトウェアをどのように設計するかですが、それは彼らが将来 *彼らが必要かもしれ"
 "ないとは知らないこと* をすることを可能にするほど柔軟です？"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:186
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:185
 #, fuzzy
 msgid ""
 "The answer to this question is that, to ensure users still can do what they "
@@ -415,7 +419,7 @@ msgstr ""
 "てより多くの作業が発生するとしても、ユーザーが目的を達成するために使用できる "
 "*低レベルAPI* へのアクセスを許可する必要があるということです。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:191
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:190
 msgid ""
 "In real-life scenarios, these use cases will be at most rare and uncommon "
 "anyway, so it makes sense a custom solution needs to be written. This is why "
@@ -425,11 +429,11 @@ msgstr ""
 "決策を記述する必要があります。そのため、基本的な構成要素をユーザーに提供する"
 "ことが重要です。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:196
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:195
 msgid "#7: Solutions must be local"
 msgstr "#7: 解決策はローカルでなければなりません"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:198
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:197
 msgid ""
 "When looking for a solution to a problem, be it implementing a new feature "
 "or fixing a bug, sometimes the easiest path is to add data or a new function "
@@ -438,7 +442,7 @@ msgstr ""
 "問題の解決策を探しているとき、新しい機能の実装であれバグの修正であれ、コード"
 "のコアレイヤーにデータや新しい関数を追加することが最も簡単な場合があります。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:202
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:201
 msgid ""
 "The main problem here is, adding something to the core layers that will only "
 "be used from a single location far away will not only make the code more "
@@ -450,7 +454,7 @@ msgstr ""
 "コアAPIがより大きく、より複雑になり、一般的に理解するのがより困難になることで"
 "す。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:207
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:206
 #, fuzzy
 msgid ""
 "This is bad, because readability and cleanness of core APIs is always of "
@@ -461,7 +465,7 @@ msgstr ""
 "であり、コードベースを学習するための出発点として新しい貢献者の鍵となるため、"
 "これは悪いことです。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:215
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:214
 msgid ""
 "The common reasoning for wanting to do this is that it's usually less code "
 "to simply add a hack in the core layers."
@@ -469,7 +473,7 @@ msgstr ""
 "これを行いたい一般的な理由は、通常、コアレイヤーにハックを追加するだけで、"
 "コードが少なくなるということです。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:218
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:217
 msgid ""
 "Despite this, this practice is not advised. Generally, the code for a "
 "solution should be closer to where the problem originates, even if it "
@@ -481,11 +485,11 @@ msgstr ""
 "生元に近い場所に配置する必要があります。より多くの創造性が必要かもしれません"
 "が、この道が常にお勧めします。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:224
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:223
 msgid "#8: Don't use complex canned solutions for simple problems"
 msgstr "#8: 単純な問題に複雑な解決策パックを使用しない"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:226
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:225
 msgid ""
 "Not every problem has a simple solution and, many times, the right choice is "
 "to use a third party library to solve the problem."
@@ -493,7 +497,7 @@ msgstr ""
 "すべての問題に単純な解決策があるわけではなく、多くの場合、サードパーティのラ"
 "イブラリを使用して問題を解決することが正しい選択です。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:229
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:228
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we just "
 "can't link libraries dynamically. Instead, we bundle them in our source tree."
@@ -501,7 +505,7 @@ msgstr ""
 "Godotは色々なプラットフォームで出荷する必要があるため、ライブラリを動的にリン"
 "クすることはできません。代わりに、ソースツリーにバンドルします。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:234
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:233
 msgid ""
 "As a result, we are very picky with what goes in, and we tend to prefer "
 "smaller libraries (in fact, single header ones are our favorite). Only in "
@@ -511,7 +515,7 @@ msgstr ""
 "む傾向があります(実際、単一のヘッダーのものが私たちのお気に入りです)。他に選"
 "択の余地がない場合にのみ、より大きな何かをバンドルすることになります。"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:238
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:237
 msgid ""
 "Also, libraries must use a permissive enough license to be included into "
 "Godot. Some examples of acceptable licenses are Apache 2.0, BSD, MIT, ISC, "

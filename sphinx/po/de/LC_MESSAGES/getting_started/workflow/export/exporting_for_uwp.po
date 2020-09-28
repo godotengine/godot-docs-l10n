@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid ""
 "trusted signature. Godot supports automatic signing of packages with "
 "external tools."
 msgstr ""
-"Wenn du die Anwendung jedoch installieren und ausführen möchtest, musst du "
+"Wenn Sie die Anwendung jedoch installieren und ausführen möchten, müssen Sie "
 "sie mit einer vertrauenswürdigen Signatur signieren. Godot unterstützt das "
 "automatische Signieren von Paketen mit externen Werkzeugen."
 
@@ -47,15 +47,15 @@ msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
-"Stelle außerdem sicher, dass der Publishername, den du beim Exportieren des "
-"Pakets festlegst, mit dem im Zertifikat verwendeten Namen übereinstimmt."
+"Stellen Sie außerdem sicher, dass der Publishername, den Sie beim "
+"Exportieren des Pakets festlegen, mit dem im Zertifikat verwendeten Namen "
+"übereinstimmt."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
 msgstr "Einschränkungen für Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
-#, fuzzy
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
@@ -100,12 +100,11 @@ msgid "exclusive access to GPU power (100%)"
 msgstr "exklusiver Zugang zu GPU-Leistung (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
-#, fuzzy
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
-"Das Überschreiten dieser Speicherbeschränkungen führt zu Zuordnungsfehlern "
+"Das Überschreiten dieser Speicherbeschränkungen führt zu Zuweisungsfehlern "
 "und zum Absturz der Anwendung."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
@@ -120,7 +119,7 @@ msgid ""
 "in the path."
 msgstr ""
 "Dies erfordert die Tools ``MakeCert.exe`` und ``Pvk2Pfx.exe``, die mit dem "
-"Windows SDK geliefert werden. Wenn du Visual Studio verwendest, kannst du "
+"Windows SDK geliefert werden. Wenn Sie Visual Studio verwenden, können Sie "
 "eine der zugehörigen Entwickler-Eingabeaufforderungen öffnen, da diese Tools "
 "im Lieferumfang enthalten sind und sich im Pfad befinden."
 
@@ -130,14 +129,15 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
-"Ausführlichere Anweisungen kannst du der `Microsoft Dokumentation <https://"
+"Ausführlichere Anweisungen können Sie der `Microsoft Dokumentation <https://"
 "msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85).aspx>`__ "
 "entnehmen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
 msgstr ""
-"Führe zunächst ``MakeCert`` aus, um einen privaten Schlüssel zu erzeugen::"
+"Führen Sie zunächst ``MakeCert`` aus, um einen privaten Schlüssel zu "
+"erzeugen::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
@@ -160,7 +160,7 @@ msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
-"Wenn du kein Passwort mit dem Argument ``/po`` angibst, hat der PFX das "
+"Wenn Sie kein Passwort mit dem Argument ``/po`` angeben, hat der PFX das "
 "gleiche Passwort wie der private Schlüssel."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
@@ -169,9 +169,9 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
-"Du musst diesem Zertifikat ebenfalls vertrauen, um deine Anwendung "
-"installieren zu können. Öffne die Eingabeaufforderung als Administrator und "
-"führe den folgenden Befehl aus::"
+"Sie müssen diesem Zertifikat ebenfalls vertrauen, um Ihre Anwendung "
+"installieren zu können. Öffnen Sie die Eingabeaufforderung als Administrator "
+"und führen Sie den folgenden Befehl aus::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Setting up automatic signing"
@@ -183,9 +183,9 @@ msgid ""
 "Export > Uwp. From there you need to click on the folder for ``Signtool``, "
 "and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
-"Um die automatische Signierung beim Export einzurichten, musst du zu "
-"Editoreinstellungen > Export > Uwp gehen. Von dort aus musst du auf den "
-"Ordner für ``Signtool`` klicken und zu der Datei ``SignTool.exe`` auf deinem "
+"Um die automatische Signierung beim Export einzurichten, müssen Sie zu "
+"Editoreinstellungen > Export > Uwp gehen. Von dort aus müssen Sie auf den "
+"Ordner für ``Signtool`` klicken und zu der Datei ``SignTool.exe`` auf Ihrem "
 "Computer navigieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
@@ -195,22 +195,23 @@ msgid ""
 "next to ``Certificate`` and go to the certificate file. Then enter the "
 "pfxPassword in the password field."
 msgstr ""
-"Nachdem du dies eingerichtet hast, schließe die Editoreinstellungen, gehe zu "
-"Projekt > Exportieren und wähle die UWP-Voreinstellung. Unter den Optionen "
-"``Signing`` klicke auf den Ordner neben ``Certificate`` und gehe zu der "
-"Zertifikatsdatei. Gebe dann das pfxPassword in das Passwortfeld ein."
+"Nachdem Sie dies eingerichtet haben, schließen Sie die Editoreinstellungen, "
+"gehen zu Projekt > Exportieren und wählen die UWP-Voreinstellung. Unter den "
+"Optionen ``Signing`` klicken Sie auf den Ordner neben ``Certificate`` und "
+"gehen zu der Zertifikatsdatei. Geben Sie dann das pfxPassword in das "
+"Passwortfeld ein."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
 msgid "Your project will now be automatically signed on export."
-msgstr "Dein Projekt wird nun beim Export automatisch signiert."
+msgstr "Ihr Projekt wird nun beim Export automatisch signiert."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
 msgid ""
 "If you want to sign an exported app manually run ``SignTool.exe`` and use "
 "the following command."
 msgstr ""
-"Wenn du eine exportierte Anwendung manuell signieren möchtest, führe "
-"``SignTool.exe`` aus und verwende den folgenden Befehl."
+"Wenn Sie eine exportierte Anwendung manuell signieren möchten, führen Sie "
+"``SignTool.exe`` aus und verwenden den folgenden Befehl."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
@@ -221,14 +222,12 @@ msgid "Installing the package"
 msgstr "Paket installieren"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:89
-#, fuzzy
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
-"Seit dem Windows 10 Jubiläumsupdate bist du in der Lage, Pakete einfach "
-"durch Doppelklick auf die Datei ``.appx`` aus dem Windows Explorer zu "
-"installieren."
+"Ab dem Windows 10 Anniversary Update können Sie Pakete installieren, indem "
+"Sie einfach im Windows Explorer auf die Datei ``.appx`` doppelklicken."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
@@ -243,6 +242,6 @@ msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
-"Wenn du deine bereits installierte Anwendung aktualisieren möchtest, musst "
-"du die Versionsnummer auf dem neuen Paket aktualisieren oder zuerst das "
+"Wenn Sie Ihre bereits installierte Anwendung aktualisieren möchten, müssen "
+"Sie die Versionsnummer auf dem neuen Paket aktualisieren oder zuerst das "
 "vorherige Paket deinstallieren."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 "做，則無法指定如何轉換及修改紋理、音訊檔、場景的匯入旗標。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -44,9 +43,9 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"Godot 3.0 版中，我們使用了更現代的匯入方法：只需直接將素材 (圖片、場景、音訊"
-"檔、字體…等) 拖放至專案資料夾 (於作業系統的檔案總管手動複製)。Godot 會自動於"
-"內部匯入這些檔案， 並將匯入的資源保存在 ``res://.import`` 資料夾中。"
+"自 Godot 3.0+ 以來，我們使用了更現代的匯入方法：只需直接將素材 (圖片、場景、"
+"音訊檔、字體…等) 拖放至專案資料夾 (於作業系統的檔案總管手動複製)。Godot 會自"
+"動於內部匯入這些檔案， 並將匯入的資源保存在 res://.import 資料夾中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -56,26 +55,31 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"這表示，要在程式碼中存取匯入的素材，就必須使用 :ref:"
+"`ResourceLoader<class_ResourceLoader>` ，因為 ResourceLoader 會自己處理要在內"
+"部將檔案存在哪裡。若使用 :ref:`File <class_File>` 來存取匯入的素材，則只能在"
+"編輯器中正常運作，而匯出的專案中則會出問題。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"然而，:ref:`ResourceLoader<class_ResourceLoader>` 無法存取非匯入的檔案，只"
+"有 :ref:`File <class_File>` 可以存取。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "更改匯入參數"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"在 Godot 中更改素材的匯入參數也很容易 (但請記得只有非原生 Godot 資源類型有匯"
-"入參數)。於檔案系統 Dock 中選擇相應的資源即可："
+"若要在 Godot 中更改素材的匯入參數，於檔案系統 Dock 中選擇相應的資源即可 (但請"
+"記得只有非原生 Godot 資源類型有匯入參數)。："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
@@ -95,9 +99,8 @@ msgstr ""
 "源，重新匯入時，參數將套用在這些資源上。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "匯入圖片"
+msgstr "重新匯入多個素材"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -107,6 +110,9 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"在處理專案時，我們有時候會需要對多個素材上更改同一個參數，如開啟 Mipmap 等，"
+"通常這種情況只需要更改特定的幾個參數。為此，可以在檔案系統中選擇所有要重新匯"
+"入的素材，然後在匯入分頁中，每個匯入參數的左邊會出現一個勾選框。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -115,6 +121,8 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"勾選匯入素材中要更改的參數，接著就照常更改參數即可。最後，選擇 [重新匯入] 按"
+"鈕，所有選擇的素材都只會套用這些參數的更改並重新匯入。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -451,22 +451,22 @@ msgstr ""
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:291
 msgid "**Don't** add a type hint with a colon or by casting:"
 msgstr ""
-"**N'ajoutez pas** une indication de type avec deux points ou par conversion :"
+"**Ne pas faire** ajouter une indication de type avec deux points ou par "
+"conversion :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:301
-#, fuzzy
 msgid "**Do** write constants and variables with dynamic typing:"
-msgstr "** Écrivez** des variables consistante avec le typage dynamique :"
+msgstr "**Faire** écrire des variables consistante avec le typage dynamique :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:311
 msgid "**Don't** write functions with inferred arguments or return types:"
 msgstr ""
-"**Ne pas** écrire de fonctions avec des arguments inférés ou des types de "
-"retour :"
+"**Ne pas faire** écrire de fonctions avec des arguments inférés ou des types "
+"de retour :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:322
 msgid "**Do** write functions using dynamic typing:"
-msgstr "**Do** écrire des fonctions en utilisant la frappe dynamique :"
+msgstr "**Faire** écrire des fonctions en utilisant la frappe dynamique :"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:334
 msgid "Use real-world code examples where appropriate"
@@ -793,9 +793,14 @@ msgid ""
 "easily seen by colorblind people. Please do not use red as it won't be "
 "visible for some users."
 msgstr ""
+"Lorsque vous devez mettre en évidence une zone de l'éditeur pour afficher "
+"quelque chose, comme un bouton ou une option, utilisez un contour jaune de 2 "
+"pixels d'épaisseur sans biseau. Si le contour se trouve sur un fond sombre, "
+"il doit être jaune pour être facilement visible par les daltoniens. "
+"N'utilisez pas de rouge, car il ne sera pas visible pour certains "
+"utilisateurs."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:526
-#, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
 "run through a PNG compressor to save size. You can use the lossless OxiPNG "
@@ -805,11 +810,11 @@ msgid ""
 "compression."
 msgstr ""
 "Avant d'ajouter ou de remplacer des images dans la documentation, il faut "
-"les faire passer par un compresseur PNG pour en réduire la taille. Le "
-"compresseur sans perte intégré dans des programmes comme Krita ou Photoshop "
-"devrait suffire. Pour les images plus lourdes, envisagez également "
-"d'utiliser un compresseur avec perte, tel que `pngquant <https://pngquant."
-"org/>`_ où presque aucune qualité d'image n'est perdue pendant la "
+"les faire passer par un compresseur PNG pour en réduire la taille. Vous "
+"pouvez utiliser le compresseur sans perte OxiPNG inclus dans `Squoosh "
+"<https://squoosh.app/>`__ à cette fin. Pour les images plus lourdes, pensez "
+"à utiliser un compresseur avec perte comme `pngquant <https://pngquant.org/"
+">`_. Avec lui, presque aucune qualité d'image n'est perdue lors de la "
 "compression."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:535
@@ -817,3 +822,5 @@ msgid ""
 "The program pngquant must be installed locally as it's not available in "
 "Squoosh."
 msgstr ""
+"Le programme pngquant doit être installé localement car il n'est pas "
+"disponible dans Squoosh."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:4
 msgid "GDScript exports"
-msgstr "GDScript exportiert"
+msgstr "GDScript Exporte"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
 msgid "Introduction to exports"
-msgstr "Einführung in Exports"
+msgstr "Einführung in Exporte"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -33,7 +33,7 @@ msgid ""
 "editor. Exporting is done by using the ``export`` keyword::"
 msgstr ""
 "In Godot können Klassenmember exportiert werden. Das bedeutet, dass ihre "
-"Werte zusammen mit der zugehörigen Ressource (z.B. der :ref:`scene "
+"Werte zusammen mit der zugehörigen Ressource (z.B. der :ref:`Szene "
 "<class_PackedScene>`) gespeichert werden. Sie sind außerdem im "
 "Eigenschaftseditor verfügbar und können hier editiert werden. Das "
 "exportieren funktioniert über das Schlüsselwort ``export``:"
@@ -162,7 +162,7 @@ msgstr ""
 "Wenn Sie den Wert einer exportierten Variablen aus einem Skript in: ref: "
 "`doc_gdscript_tool_mode` ändern, wird der Wert im Inspektor nicht "
 "automatisch aktualisiert. Rufen Sie zum Aktualisieren Folgendes auf: ref: "
-"`property_list_changed_notify () "
+"`property_list_changed_notify() "
 "<class_Object_method_property_list_changed_notify>`, nachdem Sie den Wert "
 "der exportierten Variablen festgelegt haben."
 
@@ -192,9 +192,9 @@ msgid ""
 msgstr ""
 "Bevor Sie weiterlesen, sollten Sie sich mit der Art und Weise vertraut "
 "machen, wie Eigenschaften behandelt werden und wie sie angepasst werden "
-"können mit: ref: `_set () <class_Object_method__get_property_list>` ,: ref: "
-"`_get () <class_Object_method__get_property_list>` und: ref: ` "
-"_get_property_list () <class_Object_method__get_property_list> `Methoden wie "
+"können mit: ref: `_set() <class_Object_method__get_property_list>` ,: ref: "
+"`_get() <class_Object_method__get_property_list>` und: ref: ` "
+"_get_property_list() <class_Object_method__get_property_list> `Methoden wie "
 "beschrieben in: ref:` doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230

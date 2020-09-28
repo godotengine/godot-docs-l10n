@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,10 +35,10 @@ msgstr ""
 "Request) wird von vielen Projekten auf Git genutzt und sollte erfahrenen "
 "Entwicklern freier Software vertraut sein. Die Idee ist, dass nur eine "
 "kleine Anzahl Entwickler (wenn überhaupt) Änderungen direkt in den *master*-"
-"Zweig übergeben. Stattdessen gabeln (*fork*) die Mitwirkenden das Projekt (d."
-"h. erstellen eine Kopie davon, die sie nach Belieben ändern können) und "
+"Zweig übergeben. Stattdessen spalten (*fork*) die Mitwirkenden das Projekt "
+"(d.h. erstellen eine Kopie davon, die sie nach Belieben ändern können) und "
 "fordern dann über die GitHub-Schnittstelle ein *pull* (Änderungen ziehen) "
-"von einem Zweig ihrer Gabel zu einem Zweig des Originals an ( oft als "
+"von einem Zweig ihres Fork zu einem Zweig des Originals an ( oft als "
 "*Upstream* bezeichnet)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:16
@@ -84,7 +84,7 @@ msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
 msgstr ""
-"Zusätzlich zu dieser Dokumentation möchtest Du vielleicht auch einen Blick "
+"Zusätzlich zu dieser Dokumentation möchten Sie vielleicht auch einen Blick "
 "auf die verschiedenen `Godot-Demoprojekte <https://github.com/godotengine/"
 "godot-demo-projects>`_ werfen."
 
@@ -172,7 +172,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:71
 msgid "Forking and cloning"
-msgstr "gabeln und klonen (fork und clone)"
+msgstr "abspalten (Fork) und klonen"
 
 #: ../../docs/community/contributing/pr_workflow.rst:73
 msgid ""
@@ -181,6 +181,11 @@ msgid ""
 "GitHub account and to be logged in. In the top right corner of the "
 "repository's GitHub page, you should see the \"Fork\" button as shown below:"
 msgstr ""
+"Der erste Schritt besteht darin, das `godotengine/godot <https://github.com/"
+"godotengine/godot>`_ repository auf GitHub *abzuspalten (englisch Fork)*. "
+"Dazu benötigen Sie ein GitHub-Konto und müssen angemeldet sein. In der "
+"oberen rechten Ecke der GitHub-Seite des Repositorys sollten Sie die "
+"Schaltfläche \"Fork\" wie unten gezeigt sehen:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:80
 msgid ""
@@ -199,6 +204,12 @@ msgid ""
 "Windows or macOS, or install it through your package manager if you're using "
 "Linux."
 msgstr ""
+"Sie können dann Ihren abgespalteten Zweig (Fork) *klonen*, d.h. eine lokale "
+"Kopie des Online-Repositorys erstellen (in Git-Sprache den *entfernten "
+"Ursprung*). Wenn Sie dies noch nicht getan haben, laden Sie Git von der "
+"Website <https://git-scm.com> `_ herunter, wenn Sie Windows oder MacOS "
+"verwenden oder installieren Sie es über Ihren Paketmanager, wenn Sie Linux "
+"verwenden."
 
 #: ../../docs/community/contributing/pr_workflow.rst:90
 msgid ""
@@ -211,7 +222,7 @@ msgstr ""
 #: ../../docs/community/contributing/pr_workflow.rst:93
 msgid "To clone your fork from GitHub, use the following command:"
 msgstr ""
-"Verwenden Sie den folgenden Befehl, um Ihre Gabel von GitHub zu klonen:"
+"Verwenden Sie den folgenden Befehl, um Ihren Fork von GitHub zu klonen:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:99
 msgid ""
@@ -237,7 +248,7 @@ msgid ""
 "forked:"
 msgstr ""
 "Wir beginnen mit der Einrichtung eines Verweises auf das ursprüngliche "
-"Repository, das wir gegabelt haben:"
+"Repository, das wir abspaltet haben:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:117
 msgid ""
@@ -247,6 +258,11 @@ msgid ""
 "remote reference named ``origin``, which points to your fork (``USERNAME/"
 "godot``)."
 msgstr ""
+"Dadurch wird eine Referenz mit dem Namen ``Upstream`` erstellt, die auf das "
+"ursprüngliche ``Godotengine/Godot``-Repository verweist. Dies ist nützlich, "
+"wenn Sie neue Commits aus dem Zweig ``master`` ziehen möchten, um Ihren Fork "
+"zu aktualisieren. Sie haben eine andere Fernreferenz namens ``origin``, die "
+"auf Ihren Fork zeigt (``USERNAME/godot``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:122
 msgid ""
@@ -254,6 +270,10 @@ msgid ""
 "``godot`` folder (which you can move around if you want, the relevant "
 "metadata is hidden in its ``.git`` subfolder)."
 msgstr ""
+"Sie müssen die obigen Schritte nur einmal ausführen, solange Sie diesen "
+"lokalen ``godot``-Ordner behalten (den Sie verschieben können, wenn Sie "
+"möchten, die relevanten Metadaten sind in seinem ``.git``-Unterordner "
+"versteckt)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:126
 msgid ""
@@ -272,6 +292,13 @@ msgid ""
 "search engine when lost, so we will give you the basic commands to know when "
 "working in Git."
 msgstr ""
+"Die ist die allgemeine Vorstellung, die Git-Anfänger von ihrem Workflow "
+"haben: viele seltsame Befehle, die durch Kopieren und Einfügen gelernt "
+"werden müssen, in der Hoffnung, dass sie wie erwartet funktionieren. Und das "
+"ist eigentlich kein schlechter Weg zu lernen, solange Sie neugierig sind und "
+"nicht zögern, Ihre Suchmaschine zu befragen, sollten Sie mal nicht weiter "
+"wissen. Deshalb geben wir Ihnen die grundlegenden Befehle, die Sie bei der "
+"Arbeit in Git wissen sollten."
 
 #: ../../docs/community/contributing/pr_workflow.rst:137
 msgid ""
@@ -279,6 +306,9 @@ msgid ""
 "feature in Godot's project manager, which is coded in the ``editor/"
 "project_manager.cpp`` file."
 msgstr ""
+"Im Folgenden nehmen wir als Beispiel an, dass Sie eine Funktion in Godots "
+"Projektmanager implementieren möchten, die in der Datei ``editor/"
+"project_manager.cpp`` codiert ist."
 
 #: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
@@ -290,6 +320,9 @@ msgid ""
 "of your fork (``origin``). To start your own feature development, we will "
 "create a feature branch:"
 msgstr ""
+"Standardmäßig sollte der ``git clone`` Sie in den ``master``-Zweig Ihres "
+"Forks setzen (``Ursprung``). Um Ihre eigene Feature-Entwicklung zu starten, "
+"erstellen wir einen Feature-Zweig:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:156
 msgid "This command is equivalent:"
@@ -443,12 +476,18 @@ msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
 msgstr ""
+"Es gibt verschiedene Befehle die Sie kennen sollten, um Ihre aktuelle Arbeit "
+"zu überprüfen: bevor Sie sie bereitstellen, während sie bereitgestellt wird "
+"und nachdem sie übergeben wurde."
 
 #: ../../docs/community/contributing/pr_workflow.rst:267
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
 msgstr ""
+"``git diff`` zeigt Ihnen die aktuellen nicht bereitgestellten Änderungen, d."
+"h. die Unterschiede zwischen Ihrem Arbeitsverzeichnis und dem "
+"Bereitstellungsbereich."
 
 #: ../../docs/community/contributing/pr_workflow.rst:269
 msgid ""
@@ -461,16 +500,23 @@ msgstr ""
 #: ../../docs/community/contributing/pr_workflow.rst:271
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr ""
+"``git add <files>`` wird die Änderungen an den aufgelisteten Dateien "
+"*bereitstellen*."
 
 #: ../../docs/community/contributing/pr_workflow.rst:272
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
 msgstr ""
+"``git diff --staged`` zeigt die aktuell bereitgestellten Änderungen an, d.h. "
+"die Unterschiede zwischen dem bereitgestelltem Bereich und dem letzten "
+"Commit."
 
 #: ../../docs/community/contributing/pr_workflow.rst:274
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
 msgstr ""
+"``git reset HEAD <files>`` wird Änderungen an den aufgelisteten Dateien "
+"*aufheben*."
 
 #: ../../docs/community/contributing/pr_workflow.rst:275
 msgid ""
@@ -488,6 +534,13 @@ msgid ""
 "you write a commit log. You can use ``git commit -m \"Cool commit log\"`` to "
 "write the log directly."
 msgstr ""
+"``git commit`` schreibt die bereitgestellten Dateien fest. Es wird ein "
+"Texteditor geöffnet (Sie können den gewünschten Editor mit der "
+"Umgebungsvariablen ``GIT_EDITOR`` oder der Einstellung ``core.editor`` in "
+"Ihrer Git-Konfiguration definieren), damit Sie ein Commit-Protokoll "
+"schreiben können. Sie können ``git commit -m \"Cooles "
+"Festschreibungsprotokoll\" `` verwenden, um das Protokoll direkt zu "
+"schreiben."
 
 #: ../../docs/community/contributing/pr_workflow.rst:282
 msgid ""
@@ -608,7 +661,7 @@ msgstr ""
 "Die gute Nachricht ist, dass Sie eine Pull-Anfrage ändern können, indem Sie "
 "einfach auf den Zweig reagieren, von dem aus Sie die Pull-Anfrage gestellt "
 "haben. Sie können z.B. ein neues Commit für diesen Zweig erstellen, schieben "
-"Sie es an Ihre Gabelung, und die PR wird automatisch aktualisiert:"
+"Sie es an Ihren Fork und die PR wird automatisch aktualisiert:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:396
 msgid ""

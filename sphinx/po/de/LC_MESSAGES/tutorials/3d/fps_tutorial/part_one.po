@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,18 +150,18 @@ msgid ""
 "development **before** going through this tutorial series."
 msgstr ""
 "Obwohl diese Anleitung von Anfängern abgeschlossen werden kann, empfehlen "
-"wir zuerst :ref:`doc_your_first_game` abzuschließen. Wenn du noch neu in der "
-"Godot Engine oder mit Game Development allgemein bist, wird dringlichst "
-"empfohlen die eben genannte Anleitung **zuerst** durchzulesen."
+"wir zuerst :ref:`doc_your_first_game` abzuschließen. Wenn Sie noch neu in "
+"der Godot Engine oder mit Spiele-Entwicklung allgemein sind, wird "
+"dringlichst empfohlen die eben genannte Anleitung **zuerst** durchzulesen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games, you will likely struggle making 3D games."
 msgstr ""
-"Beachte: Erstellen von 3D Spielen ist viel schwieriger als 2D Spiele. Wenn "
-"du nicht weißt wie man 2D Spiele machst wirst du mit 3D wahrscheinlich "
-"Probleme haben."
+"Beachten Sie: Das Erstellen von 3D Spielen ist viel schwieriger als 2D "
+"Spiele. Wenn Sie nicht wissen wie man 2D Spiele erzeugt, werden Sie mit 3D "
+"wahrscheinlich Probleme haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
 msgid ""
@@ -169,16 +169,16 @@ msgid ""
 "basic programming experience in GDScript, and basic experience in game "
 "development."
 msgstr ""
-"Diese Anleitung erwartet das du bereits Erfahrung mit dem Godot Editor, "
-"programmieren mit GDScript und grundsätzliche Game Development Erfahrung "
-"hast."
+"Diese Anleitung erwartet das Sie bereits Erfahrung mit dem Godot Editor, "
+"programmieren mit GDScript und grundsätzliche Erfahrung in Spiele-"
+"Entwicklung haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
-"Du kannst die Inhalte für den Start dieser Anleitung hier herunterladen: :"
+"Sie können die Inhalte für den Start dieser Anleitung hier herunterladen: :"
 "download:`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
@@ -240,14 +240,14 @@ msgid ""
 "can move around the game environment, sprint, look around with a mouse based "
 "first person camera, jump into the air, and turn a flash light on and off."
 msgstr ""
-"Am Ende des Abschnitts wirst Du einen funktionierenden First-Person-"
+"Am Ende des Abschnitts werden Sie einen funktionierenden First-Person-"
 "Charakter haben, der sich durch die Spielumgebung bewegen, sprinten, "
 "springen, mausgesteuert mit einer First-Person-Kamera umherschauen sowie "
 "eine Taschenlampe ein- und ausschalten kann."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Alles fertig machen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:80
 msgid "Launch Godot and open up the project included in the starter assets."
@@ -408,6 +408,7 @@ msgstr "``GRAVITY``: wie stark die Gravitation nach unten zieht."
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:396
 msgid "``vel``: Our :ref:`KinematicBody <class_KinematicBody>`'s velocity."
 msgstr ""
+"``vel``: Die Geschwindigkeit des :ref:`KinematicBody <class_KinematicBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:397
 msgid ""
@@ -544,7 +545,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:447
 msgid "Let's look at ``process_input`` next:"
-msgstr ""
+msgstr "Lassen Sie uns ``process_input`` als nächstes ansehen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:449
 msgid "First we set ``dir`` to an empty :ref:`Vector3 <class_Vector3>`."
@@ -711,7 +712,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:580
 msgid "Okay, back to ``process_input``:"
-msgstr ""
+msgstr "Okay, zurück zu ``process_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:582
 msgid ""
@@ -957,7 +958,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:689
 msgid "Giving the player a flash light and the option to sprint"
-msgstr ""
+msgstr "Dem Spieler ein Taschenlampe geben und die Möglichkeit zum Sprinten"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:691
 msgid ""
@@ -1075,7 +1076,7 @@ msgid ""
 "Whew! That was a lot of work. Now you have a fully working first person "
 "character!"
 msgstr ""
-"Uff! Das war viel Arbeit. Jetzt hast du einen voll funktionsfähigen Ego-"
+"Uff! Das war viel Arbeit. Jetzt haben Sie einen voll funktionsfähigen Ego-"
 "Charakter!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:843
@@ -1117,4 +1118,4 @@ msgid ""
 "`Godot_FPS_Part_1.zip <files/Godot_FPS_Part_1.zip>`"
 msgstr ""
 "Sie können das fertige Projekt für diesen Teil hier herunterladen: :"
-"download: `Godot_FPS_Part_1.zip <files / Godot_FPS_Part_1.zip>`"
+"download: `Godot_FPS_Part_1.zip <files/Godot_FPS_Part_1.zip>`"

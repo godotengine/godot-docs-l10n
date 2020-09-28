@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:4
 msgid "Custom post-processing"
-msgstr "Benutzerdefiniertes Post-Processing"
+msgstr "Benutzerdefinierte Nachbearbeitung"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "DOF, and SSAO. Sometimes you want to write your own custom effect. Here's "
 "how you can do so."
 msgstr ""
+"Godot bietet viele sofort einsatzbereite Nachbearbeitungseffekte, darunter "
+"Bloom, DOF und SSAO. Manchmal möchten Sie Ihren eigenen Effekt schreiben. "
+"Hier erfahren Sie, wie Sie dies tun können."
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:12
 msgid ""
@@ -39,6 +42,11 @@ msgid ""
 "<class_Viewport>`, then render the ``Viewport`` inside a :ref:"
 "`ViewportTexture <class_ViewportTexture>` and show it on the screen."
 msgstr ""
+"Nachbearbeitungseffekte sind Shader, die auf einen Frame angewendet werden, "
+"nachdem Godot ihn gerendert hat. Sie können Ihre Szene zuerst in ein :ref:"
+"`Viewport <class_Viewport>` rendern, dann das ``Viewport`` in ein :ref:"
+"`ViewportTexture <class_ViewportTexture>` rendern und auf dem Bildschirm "
+"anzeigen."
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:16
 msgid ""
@@ -47,6 +55,11 @@ msgid ""
 "familiar with this, you should read the :ref:`Screen Reading Shaders "
 "Tutorial <doc_screen-reading_shaders>` first."
 msgstr ""
+"Der einfachste Weg einen benutzerdefinierten Nachbearbeitungs-Shader zu "
+"implementieren besteht darin, die in Godot integrierte Fähigkeit zum Lesen "
+"von der Bildschirmtextur zu verwenden. Wenn Sie damit nicht vertraut sind, "
+"sollten Sie zuerst die :ref:`Bildschirmlesen-Shader Anleitung <doc_screen-"
+"reading_shaders>` lesen."
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:22
 msgid ""
@@ -55,6 +68,10 @@ msgid ""
 "to normals or other render passes. You only have access to the rendered "
 "frame."
 msgstr ""
+"Aktuell unterstützt Godot nicht das Rendern in mehreren Puffern "
+"gleichzeitig. Ihr Nachbearbeitungs-Shader hat keinen Zugriff auf Normals "
+"oder andere Renderdurchläufe. Sie haben nur Zugriff auf den gerenderten "
+"Frame."
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:27
 msgid "Single pass post-processing"

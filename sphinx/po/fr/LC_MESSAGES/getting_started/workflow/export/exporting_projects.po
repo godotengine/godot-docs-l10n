@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,11 +218,11 @@ msgstr ""
 "Une fois téléchargés, ils peuvent être installés à l'aide de l'option "
 "\"Installer des modèles d'exportation\" dans l'éditeur :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid "Export mode"
 msgstr "Mode d'exportation"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
@@ -230,19 +230,19 @@ msgstr ""
 "Lors de l'exportation, Godot fait une liste de tous les fichiers à exporter "
 "et crée ensuite le paquet. Il existe 3 modes différents pour l'exportation :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
 msgstr "Exporter toutes les ressources du projet"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
 msgstr "Exporter les scènes sélectionnées (y compris les dépendances)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
 msgstr "Exporter les ressources sélectionnées (y compris les dépendances)"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
@@ -255,11 +255,11 @@ msgstr ""
 "du projet, et vous devez sélectionner chaque scène ou ressource que vous "
 "souhaitez exporter."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "Exporting from the command line"
 msgstr "Exporter à partir de la ligne de commande"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:128
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -272,7 +272,7 @@ msgstr ""
 "d'exportation pour définir les paramètres d'exportation. Une invocation "
 "basique de l'exportation serait :"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:137
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -284,7 +284,7 @@ msgstr ""
 "sortie est relatif au chemin du projet ou absolu. Il ne respecte pas le "
 "répertoire à partir duquel la commande a été invoquée."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:142
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -295,7 +295,7 @@ msgstr ""
 "exécutables Godot. Ceci se produit si le nom de la cible se termine par ``."
 "pck`` ou ``.zip``."
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:146
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
@@ -303,3 +303,46 @@ msgstr ""
 "Il est souvent utile de combiner le drapeau ``--export`` avec le drapeau ``--"
 "path`` et de créer un modèle d'exportation dédié pour l'exportation "
 "automatisée :"
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
+msgid "PCK versus ZIP pack file formats"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+msgid ""
+"Each format has its upsides and downsides. PCK is the default and "
+"recommended format for most use cases, but you may want to use a ZIP archive "
+"instead depending on your needs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
+#, fuzzy
+msgid "**PCK format:**"
+msgstr "**Formats :**"
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
+msgid "Uncompressed format. Larger file size, but faster to read/write."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+msgid ""
+"Not readable and writable using tools normally present on the user's "
+"operating system, even though there are `third-party tools <https://github."
+"com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
+#, fuzzy
+msgid "**ZIP format:**"
+msgstr "**Formats :**"
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
+msgid "Compressed format. Smaller file size, but slower to read/write."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
+msgid ""
+"Readable and writable using tools normally present on the user's operating "
+"system. This can be useful to make modding easier (see also :ref:"
+"`doc_exporting_pcks`)."
+msgstr ""

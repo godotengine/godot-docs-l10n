@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:4
 msgid "GI Probes"
-msgstr ""
+msgstr "GI Proben"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "`doc_baked_lightmaps` can be used as an alternative when using the GLES2 "
 "renderer."
 msgstr ""
+"Diese Features ist nur bei Verwendung des GLES3-Backends verfügbar. :ref:"
+"`doc_baked_lightmaps` kann alternativ bei Verwendung des GLES2-Renderers "
+"verwendet werden."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:13
 msgid ""
@@ -39,6 +42,11 @@ msgid ""
 "Probes are similar to Reflection Probes, but they use a different and more "
 "complex technique to produce indirect light and reflections."
 msgstr ""
+"Genau wie bei :ref:`doc_reflection_probes` und wie im :ref:"
+"`doc_spatial_material` angegeben, können Objekte reflektiertes oder diffuses "
+"Licht zeigen. GI-Probes ähneln Reflexions-Probes, verwenden jedoch eine "
+"andere und komplexere Technik um indirektes Licht und Reflexionen zu "
+"erzeugen."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:18
 msgid ""
@@ -48,6 +56,12 @@ msgid ""
 "time. Dynamic objects that move within one of these probes will also receive "
 "indirect lighting from the scene automatically."
 msgstr ""
+"Die Stärke von GI-Probes ist sehr gutes indirektes Echtzeitlicht. Während "
+"die Szene für die verwendeten statischen Objekte ein schnelles Vorbacken "
+"benötigt, können Lichter hinzugefügt, geändert oder entfernt werden und dies "
+"wird in Echtzeit aktualisiert. Dynamische Objekte, die sich innerhalb einer "
+"dieser Probes bewegen, erhalten automatisch auch indirektes Licht von der "
+"Szene."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:24
 msgid ""
@@ -111,7 +125,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:54
 msgid "Adding lights"
-msgstr "Lichter hinzufügen"
+msgstr "Beleuchtung hinzufügen"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:56
 msgid ""
@@ -138,7 +152,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:74
 msgid "Reflections"
-msgstr ""
+msgstr "Reflexionen"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:76
 msgid ""
@@ -179,7 +193,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:104
 msgid "Tweaking"
-msgstr ""
+msgstr "Optimieren"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid "GI Probes support a few parameters for tweaking:"
@@ -239,7 +253,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid "Quality"
-msgstr ""
+msgstr "Qualität"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,26 +80,24 @@ msgid "Exporting bit flags"
 msgstr "匯出位元旗標"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
-"作為位元旗標的整數可以在單一屬性內除錯多個 ``true``/``false`` (布林) 值。只需"
-"要使用匯出提示 ``int, FLAGS`` 就可以在編輯器中設定："
+"作為位元旗標的整數可以在單一屬性內儲存多個 ``true``/``false`` (布林) 值。只需"
+"要使用匯出提示 ``int, FLAGS, …`` 就可以在編輯器中設定："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"在這個例子中， ``Fire`` 的值為 1， ``Water`` 為 2， ``Earth`` 為 4 而 "
-"``Wind`` 則為 8。通常必須定義對應的常數 (如： ``const ELEMENT_WIND = 8`` "
-"等)。"
+"必須為每個旗標提供說明字串。在這個例子中， ``Fire`` 的值為 1， ``Water`` 為 "
+"2， ``Earth`` 為 4 而 ``Wind`` 則為 8。通常必須定義對應的常數 (如： ``const "
+"ELEMENT_WIND = 8`` 等)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
@@ -108,11 +106,10 @@ msgid ""
 msgstr "匯出提示在專案設定中也定義了物理與算繪層："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
-msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該匯出布林變數。"
+msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該使用布林變數。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
@@ -121,7 +118,7 @@ msgstr "匯出陣列"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
-msgstr ""
+msgstr "可以在匯出的陣列中使用初始設定式，但只能使用常數運算式。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""

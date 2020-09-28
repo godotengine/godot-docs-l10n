@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,11 +185,11 @@ msgid ""
 "Templates** option in the editor:"
 msgstr "一旦下载后，就可以使用编辑器中的 **安装导出模板** 选项进行安装："
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
 msgid "Export mode"
 msgstr "导出模式"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
@@ -197,19 +197,19 @@ msgstr ""
 "导出时，Godot会创建一个所有要导出的文件的列表，然后创建包。有3种不同的导出模"
 "式："
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
 msgstr "导出项目中的所有资源"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
 msgstr "导出选中的场景（包括依赖项）"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
 msgstr "导出选中的资源（包括依赖资源）"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
@@ -217,11 +217,11 @@ msgid ""
 "every scene or resource you want to export."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "Exporting from the command line"
 msgstr "从命令行导出"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:128
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -232,7 +232,7 @@ msgstr ""
 "行参数来支持它。从命令行导出仍需要导出预设来定义导出参数。该命令的基本调用将"
 "是："
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:137
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -243,7 +243,7 @@ msgstr ""
 "``some_name.exe``。输出路径相对于项目路径或绝对路径；它不遵命令被调用时的目"
 "录。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:140
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:142
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -252,10 +252,53 @@ msgstr ""
 "您还可以将其配置为仅导出PCK或ZIP文件，从而允许单个导出可以被多个Godot可执行文"
 "件使用。如果目标名称以 ``.pck`` 或 ``.zip`` 结尾，才会发生这种情况。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:146
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
 "将 ``--export`` 标志与 ``--path`` 标志组合起来通常很有用，可为自动导出创建专"
 "用的导出预设："
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
+msgid "PCK versus ZIP pack file formats"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+msgid ""
+"Each format has its upsides and downsides. PCK is the default and "
+"recommended format for most use cases, but you may want to use a ZIP archive "
+"instead depending on your needs."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
+#, fuzzy
+msgid "**PCK format:**"
+msgstr "**平台：**"
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
+msgid "Uncompressed format. Larger file size, but faster to read/write."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+msgid ""
+"Not readable and writable using tools normally present on the user's "
+"operating system, even though there are `third-party tools <https://github."
+"com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
+#, fuzzy
+msgid "**ZIP format:**"
+msgstr "**平台：**"
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
+msgid "Compressed format. Smaller file size, but slower to read/write."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
+msgid ""
+"Readable and writable using tools normally present on the user's operating "
+"system. This can be useful to make modding easier (see also :ref:"
+"`doc_exporting_pcks`)."
+msgstr ""

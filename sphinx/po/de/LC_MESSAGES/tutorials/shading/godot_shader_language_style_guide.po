@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:4
 msgid "Godot shader language style guide"
-msgstr ""
+msgstr "Godots Shader-Sprache Stil-Richtlinien"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
 msgid ""
@@ -28,10 +28,10 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also support the "
 "development of auto-formatting tools."
 msgstr ""
-"Dieser Style Guide listet Konventionen zum Schreiben von elegantem GDScript. "
-"Das Ziel ist, einen dazu zu ermutigen, sauberen und lesbaren Code zu "
-"schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen zu "
-"fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
+"Diese Stil-Richtlinien listen Konventionen zum Schreiben von elegantem "
+"GDScript auf. Das Ziel ist Sie dazu zu ermutigen, sauberen und lesbaren Code "
+"zu schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen "
+"zu fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
 "Formatierungswerkzeugen ankurbeln."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:11
@@ -41,6 +41,11 @@ msgid ""
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
 "godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
 msgstr ""
+"Da die Godot-Shader-Sprache den Sprachen im C-Stil und GLSL nahe kommt, ist "
+"dieses Handbuch von Godots eigener GLSL-Formatierung inspiriert. Sie können "
+"sich ein Beispiel einer GLSL-Datei im Quellcode von Godot `hier <https://"
+"github.com/godotengine/godot/blob/master/drivers/gles2/shaders/copy.glsl>`__ "
+"ansehen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:16
 msgid ""
@@ -48,10 +53,10 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
-"Styleguides sind nicht als harte Regelbücher gedacht. Manchmal können Sie "
-"einige der folgenden Richtlinien möglicherweise nicht anwenden. In diesem "
-"Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie andere "
-"Entwickler nach Erkenntnissen."
+"Stil-Richtlinien sind nicht als harte Regelbücher gedacht. Manchmal können "
+"Sie einige der folgenden Richtlinien möglicherweise nicht anwenden. In "
+"diesem Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie "
+"andere Entwickler nach Erkenntnissen."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:20
 msgid ""
@@ -72,6 +77,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:26
 msgid "Here is a complete shader example based on these guidelines:"
 msgstr ""
+"Hier ist ein vollständiges Shader-Beispiel, das auf diesen Richtlinien "
+"basiert:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:50
 msgid "Formatting"
@@ -86,13 +93,14 @@ msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
-"Benutze Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
+"Benutzen Sie Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
 "*(Standardeinstellung im Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
-"Benutze ein Line Feed am Ende jeder Datei. *(Standardeinstellung im Editor)*"
+"Benutzen Sie ein Line Feed am Ende jeder Datei. *(Standardeinstellung im "
+"Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:57
 msgid ""
@@ -105,7 +113,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
-"Benutze **Tabs** anstelle von Leerzeichen für Einrückungen. "
+"Benutzen Sie **Tabs** anstelle von Leerzeichen für Einrückungen. "
 "*(Standardeinstellung im Editor)*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
@@ -195,6 +203,10 @@ msgid ""
 "code on small displays and with two shaders opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
+"Falls möglich versuchen Sie Zeilen unter 80 Zeichen zu halten. Dies hilft "
+"beim Lesen des Codes auf kleinen Displays und mit zwei nebeneinander "
+"geöffneten Shadern in einem externen Texteditor. Zum Beispiel bei der "
+"Betrachtung einer Unterschieds-Revision."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:158
 msgid "One statement per line"
@@ -202,7 +214,7 @@ msgstr "Eine Anweisung pro Zeile"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
-msgstr ""
+msgstr "Kombinieren Sie niemals mehrere Anweisungen in einer einzigen Zeile."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
@@ -225,6 +237,8 @@ msgstr ""
 msgid ""
 "Don't use multiline comment syntax if your comment can fit on a single line:"
 msgstr ""
+"Verwenden Sie keine mehrzeilige Kommentarsyntax, wenn Ihr Kommentar in eine "
+"einzelne Zeile passt:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:216
 msgid ""
@@ -232,6 +246,9 @@ msgid ""
 "press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
 "the selected lines."
 msgstr ""
+"Drücken Sie im Shader-Editor :kbd:`Strg + K` um den ausgewählten Code zu "
+"einem Kommentar zu machen (oder den Kommentar zu entfernen). Diese Funktion "
+"fügt am Anfang der ausgewählten Zeilen ``//`` hinzu oder entfernt sie."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
@@ -248,8 +265,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:242
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
-"Benutze keine Leerzeichen um Ausdrücke vertikal auszurichten (um \"Spalten\" "
-"zu erzeugen.):"
+"Benutzen Sie keine Leerzeichen um Ausdrücke vertikal auszurichten (um "
+"\"Spalten\" zu erzeugen.):"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:250
 msgid "Floating-point numbers"
@@ -261,6 +278,10 @@ msgid ""
 "This makes it easier to distinguish floating-point numbers from integers, as "
 "well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
+"Geben Sie immer mindestens eine Ziffer für den Vorkommateil und den "
+"Nachkommateil an. Dies erleichtert die Unterscheidung von Gleitkommazahlen "
+"von ganzen Zahlen sowie die Unterscheidung von Zahlen größer als 1 von "
+"Zahlen kleiner als 1."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
 msgid "Accessing vector members"
@@ -285,7 +306,7 @@ msgid ""
 "inconsistent code."
 msgstr ""
 "Diese Benennungsrichtlinien folgen dem Godot Engine Style. Bei "
-"Nichtbeachtung wird dein Code mit den eingebauten Bennennungsrichtlinien "
+"Nichtbeachtung wird Ihr Code mit den eingebauten Bennennungsrichtlinien "
 "kollidieren, was zu inkonsistentem Code führt."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:300
@@ -333,13 +354,16 @@ msgstr "Diese Code-Reihenfolge folgt zwei Faustregeln:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:346
 msgid "Metadata and properties first, followed by methods."
-msgstr ""
+msgstr "Zuerst Metadaten und Eigenschaften, gefolgt von Methoden."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:347
 msgid ""
 "\"Public\" comes before \"private\". In a shader language's context, \"public"
 "\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
+"\"Public\" steht vor \"private\". Im Kontext einer Shader-Sprache bezieht "
+"sich \"public\" auf das, was vom Benutzer leicht angepasst werden kann "
+"(Uniforms)."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
 msgid "Local variables"

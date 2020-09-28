@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr "Progetta una schermata di titolo"
+msgstr "Progetta una schermata del titolo"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
@@ -45,6 +45,10 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
+"Imparerai come progettare le UI di gioco in modo efficiente e come usare i "
+"nodi Control di Godot. Questa pagina si concentra sulla parte visiva: tutto "
+"ciò che fai dall'editor. Per sapere come programmare una barra della vita, "
+"leggi :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create."
@@ -58,6 +62,11 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu`` "
 "folder."
 msgstr ""
+"Scarica i file del progetto: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` ed estrai l'archivio. Importa il progetto ``start/"
+"`` in Godot per seguire questo tutorial. La cartella ``end/`` contiene il "
+"risultato finale. Troverai tutti gli sprite nella cartella ``start/assets/"
+"main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
 msgid ""
@@ -81,10 +90,17 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Per progettare una buona interfaccia utente, devi prima creare un modello "
+"approssimativo: un semplice disegno che si concentri sul posizionamento dei "
+"componenti dell'interfaccia utente, sulla loro dimensione e sull'interazione "
+"dell'utente. Carta e penna sono tutto ciò che ti serve. In questa fase non "
+"dovresti usare una grafica elaborata. Quindi, hai solo bisogno di semplici "
+"sprite e sei pronto ad entrare in Godot. Vuoi assicurarti che i giocatori "
+"possano orientarsi nell'interfaccia usando questo modello semplificato."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Uno schizzo approssimativo o modello dell' Interfaccia Utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:48
 msgid ""
@@ -92,12 +108,18 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
+"Placeholder non deve necessariamente significare brutto, ma dovresti "
+"mantenere la grafica semplice e pulita. Evita effetti speciali, animazioni e "
+"illustrazioni dettagliate prima di far provare ai giocatori la tua "
+"interfaccia utente. Altrimenti:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
+"La grafica potrebbe distorcere la percezione dell'esperienza da parte dei "
+"giocatori e vi sfuggirà un prezioso feedback."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -111,6 +133,13 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Cerca sempre di far funzionare l'interfaccia con del semplice testo e dei "
+"riquadri. È facile sostituire le texture in un secondo momento. I "
+"progettisti professionisti di UX lavorano spesso con contorni e riquadri "
+"semplici in scala di grigi. Quando togli i colori e le immagini elaborate, è "
+"molto più facile ridimensionare e posizionare correttamente gli elementi "
+"dell'interfaccia utente. Ti aiuta a perfezionare le basi di progettazione su "
+"cui ti baserai."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
 msgid "There are two ways to design your UI in Godot. You can:"
@@ -121,12 +150,16 @@ msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
+"Costruire il tutto in una singola scena, e alla fine salvare alcuni rami "
+"come scene riutilizzabili."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
+"Crea scene di base per componenti riutilizzabili e crea componenti specifici "
+"che ereditano da esse."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -135,12 +168,19 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"Utilizzeremo il primo approccio, perché la prima versione della tua "
+"interfaccia utente potrebbe non funzionare come desideri. È probabile che "
+"butterai via delle parti e riadattaterai i componenti mentre procedi. Quando "
+"sei sicuro che tutto funzioni, è facile rendere alcune parti riutilizzabili, "
+"come vedrai di seguito."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
+"I file che troverai in Godot. La grafica sembra più pulita che sul disegno "
+"grezzo, ma sono comunque dei sostituti."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -151,15 +191,17 @@ msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"Prima di passare all'editor, vogliamo pianificare come annideremo i "
+"contenitori in base al nostro schizzo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "Suddividere lo schizzo dell'Interfaccia Utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "Ecco le mie tre regole pratiche per trovare i contenitori giusti:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
 msgid ""
@@ -167,10 +209,14 @@ msgid ""
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
+"Suddividi l'interfaccia utente in caselle nidificate, dalla più grande che "
+"contiene tutto, alle più piccole, che racchiudono un widget, come una barra "
+"con la sua Label, un pannello o un pulsante."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
+"Se c'è un po 'di spazio intorno a un'area, usa un `` MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
 msgid ""
@@ -185,6 +231,8 @@ msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Queste regole sono sufficienti per iniziare e funzionano bene con interfacce "
+"semplici."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:103
 msgid ""
@@ -195,10 +243,16 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"Per il menu principale, il riquadro più grande è l'intera finestra di gioco. "
+"C'è dello spazio tra i bordi della finestra e i primi componenti: questo "
+"dovrebbe essere un ``MarginContainer``. Poi, lo schermo è diviso in due "
+"colonne, quindi useremo un ``HBoxContainer``. Nella colonna di sinistra, "
+"gestiremo le righe con un ``VBoxContainer``. E nella colonna di destra, "
+"centreremo l'illustrazione con un ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr ""
+msgstr "Elementi dell' interfaccia, suddivisi usando le tre semplici regole."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -209,7 +263,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Preparare la scena del menu principale"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -220,16 +274,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+#, fuzzy
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Se dimentichi di modificare le dimensioni della finestra, ancore e "
+"contenitori potrebbero non funzionare come previsto."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
+"Creiamo il menu principale. Lo costruiremo in un'unica scena. Per creare una "
+"scena vuota, fare clic su **Scena> Nuova scena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
@@ -271,29 +330,31 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Aggiungi gli sprite dell'interfaccia utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Seleziona ``MarginContainer`` e crea gli elementi dell'interfaccia utente "
+"come nodi ``TextureRect``. Abbiamo bisogno:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
-msgstr ""
+msgstr "il titolo o il logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr ""
+msgstr "le tre opzioni di testo come singoli nodi,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
-msgstr ""
+msgstr "la nota di versione,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 msgid "and the main menu's illustration."
-msgstr ""
+msgstr "e l'illustrazione del menu principale."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid ""

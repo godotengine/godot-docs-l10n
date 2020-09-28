@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,7 +108,7 @@ msgid ""
 msgstr ""
 "Godot 將腳本 API 中所有的變數都保存在 :ref:`Variant <doc_variant_class>` 類別"
 "內。Variant 可以保存 Variant 相容的資料結構，如 :ref:`Array <class_Array>` "
-"與 :ref:`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object` 。"
+"與 :ref:`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object>` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -195,24 +195,26 @@ msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
+"**取值、設值：** **依位置** 最快。如，可要求第 0、第 2 與第 10 筆記錄…等。但"
+"無法指定要哪個記錄。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
-msgstr ""
+msgstr "操作：需要 1 個額外的操作來將陣列從起始位置移至需要的位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr ""
+msgstr "**搜尋：** 最慢。找到一個值的索引／位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
-msgstr ""
+msgstr "操作：必須要迭代陣列並比較各個值，直到找到相符的元素。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
-msgstr ""
+msgstr "效能還會依據是否需要完整的搜尋而有所不同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
 msgid ""
@@ -221,6 +223,9 @@ msgid ""
 "by re-sorting the Array after every edit and writing an ordered-aware search "
 "algorithm."
 msgstr ""
+"若陣列有排序，則搜尋操作可達對數時間 (相對較快)。不過，業餘使用者可能會不太習"
+"慣這種方法。這種方法會需要在每次編輯陣列後進行重新排列，並編寫適用於有序陣列"
+"的搜尋演算法。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
 msgid ""
@@ -233,6 +238,13 @@ msgid ""
 "becomes too full, it increases to the next power of 2 (so, 16 records, then "
 "32, etc.) and rebuilds the structure."
 msgstr ""
+"Godot 通過 ``OrderedHashMap<Variant, Variant>`` 來實作字典 (Dictionary) 型"
+"別。Godot 會儲存一個小型索引鍵／值配對的陣列 (初始化為 2^3 或 8 筆記錄)。當使"
+"用者存取數值時，這組陣列就會提供索引鍵。接著再對索引鍵進行 **雜湊** ，如將其"
+"轉換為數字。這裡的「雜湊」是用於將索引計算到陣列中。由於是陣列，OHM 會快速地"
+"「查表」來將索引鍵對應到數值上。如果 HashMap 變得太滿的話，Godot 會將其大小增"
+"加到下一個 2 的冪次 (也就是 16 筆資料，然後是 32 筆…以此類推)，然後重新建立這"
+"個架構。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
@@ -241,10 +253,13 @@ msgid ""
 "position into account. In all, this results in constant-time access to all "
 "records at the expense of memory and some minor operational efficiency."
 msgstr ""
+"雜湊是為了降低索引鍵碰撞的機率。若發生碰撞，表格就必須要為該數值重新計算另一"
+"個索引來處理前一個位置。這樣一來，就可以常數時間來存取所有記錄，但卻需要犧牲"
+"一些記憶體與執行效率。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
-msgstr ""
+msgstr "對每個索引鍵雜湊任意次。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
@@ -252,10 +267,12 @@ msgid ""
 "one, as long as the number of hash calculations doesn't become too dependent "
 "on the density of the table, things will stay fast. Which leads to..."
 msgstr ""
+"雜湊操作為常數時間，所以即使某個演算法需要被執行超過一次，只要雜湊計算的數字"
+"不要太依賴表格的密度，就能保持高速。這樣一來…"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
 msgid "Maintaining an ever-growing size for the table."
-msgstr ""
+msgstr "維護表格持續增長的大小。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -263,26 +280,31 @@ msgid ""
 "to reduce hash collisions and maintain the speed of accesses. This is why it "
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
+"雜湊表 (HashMap) 會維護穿插在表格間所沒有使用到的記憶體空間，來減少雜湊碰撞的"
+"機率並保持存取的速度。這也是為什麼雜湊表大小成長的速度是以 2 的冪次在成長的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
 msgstr ""
+"我們可以說，字典可以做一些陣列沒辦法做的任務。下面列出一些字典能做的操作："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
-msgstr ""
+msgstr "**迭代：** 快速。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
 msgstr ""
+"操作：在映射表內部的雜湊向量間迭代。回傳每個索引鍵。然後，使用者便能通過該索"
+"引鍵來跳至並回傳所需的值。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
-msgstr ""
+msgstr "**插入、移除、移動：** 最快。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
@@ -290,44 +312,48 @@ msgid ""
 "value (array start + offset). Move is two of these (one insert, one erase). "
 "The map must do some maintenance to preserve its capabilities:"
 msgstr ""
+"操作：雜湊給定的索引鍵。需要 1 個額外操作來找到適當的值 (陣列起始 + 偏移)。移"
+"動是由這其中的兩個操作組成的 (一個新增、一個刪除)。映射表為了保持其功能性，必"
+"須要做一些維護操作："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
-msgstr ""
+msgstr "更新記錄的有序列表。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
-msgstr ""
+msgstr "判斷表格的密度，決定是否有需要增加表格的大小。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
 msgstr ""
+"字典會記得使用者插入索引鍵的順序。這樣一來在執行迭代的時候就能確保可靠性。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
-msgstr ""
+msgstr "**取值、設值：** 最快。與 **以索引鍵** 查詢相同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
-msgstr ""
+msgstr "操作：與插入／移除／移動相同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
-msgstr ""
+msgstr "**查詢：** 最慢。需要找出值的索引鍵。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
-msgstr ""
+msgstr "操作：必須要在每個記錄間迭代，並比較各個值來找出相符合的項目。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
-msgstr ""
+msgstr "請注意，Godot 並沒有直接提供這個功能 (因為字典並非設計來做這項工作)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:167
 msgid ""
@@ -338,6 +364,11 @@ msgid ""
 "find more information about what objects are and how they work in the :ref:"
 "`doc_what_are_godot_classes` article."
 msgstr ""
+"Godot 實作物件的方法很單純，但卻有動態資料內容容器。物件會在被要求的時候查詢"
+"資料來源。舉例來說，當物件需要回答「你有沒有一個叫『position』的屬性？」這種"
+"問題時，物件可能會詢問 :ref:`Script <class_Script>` 或 :ref:`ClassDB "
+"<class_ClassDB>` 。更多關於物件的資訊以及物件如何運作的資訊，請參考 :ref:"
+"`doc_what_are_godot_classes` 一文。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:174
 msgid ""
@@ -351,6 +382,12 @@ msgid ""
 "that it must make so many checks is what makes them slower than both of the "
 "alternatives for looking up data."
 msgstr ""
+"此處有一個重要的細節，就是有關物件任務中的複雜度。每當物件執行一次這種多來源"
+"的查詢時，物件會執行 **多個** 迭代迴圈以及雜湊表查詢。而且，查詢的線性時間會"
+"依據物件的繼承與層級大小而異。若物件查詢的類別 (目前的類別) 沒有找到任何東"
+"西，則查詢會被傳遞到更上一層，直到最原始的 Object 類別。雖然這些操作單獨來看"
+"都很快，但事實上因為這些操作需要做到很多確認，所以會讓查詢比起查詢陣列或字典"
+"的兩種方法都來得慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:186
 msgid ""
@@ -360,12 +397,16 @@ msgid ""
 "API operations will take much longer. They must locate the source of any "
 "relevant data before they can attempt to access it."
 msgstr ""
+"當開發人員提到腳本的 API 有多慢時，指的是這個查詢鏈很慢。跟經過編譯的 C++ 程"
+"式碼比起來，這些 C++ 程式在查詢會知道要讀取的準確位置，因此相比起來腳本 API "
+"就不可避免地慢很多。腳本 API 必須要在嘗試存取資料前找過所有相關資料的來源。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:192
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
 msgstr ""
+"GDScript 比較慢的原因就是因為在執行所有操作前都必須要經歷過一次這個系統。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
@@ -373,6 +414,9 @@ msgid ""
 "But, if the C# script calls into an engine class' content or if the script "
 "tries to access something external to it, it will go through this pipeline."
 msgstr ""
+"C# 可以通過最佳化的 Bytecode 來以更快的速度處理一些內容。但是，若 C# 腳本要呼"
+"叫引擎的類別內容，或是腳本試圖存取腳本外部的東西，則還是需要走過一次這個過"
+"程。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:200
 msgid ""
@@ -382,12 +426,17 @@ msgid ""
 "a manual task. It is at this point that external, non-C++ classes will use "
 "the API to locate them."
 msgstr ""
+"NativeScript C++ 則更進一步，預設會將所有東西都保持在內部。呼叫外部結構的時候"
+"會經過腳本 API。在 NativeScript C++ 中，必須要手動註冊方法並將方法暴露給腳本 "
+"API。這樣一來，非 C++ 類別就可以通過 API 來找到這些方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
 msgstr ""
+"因此，假設我們需要繼承 Reference 來建立一個資料結構，類似 Array 或 "
+"Dictionary，誰還要用 Object 而不用 Array 或 Dictionary 呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
@@ -396,6 +445,9 @@ msgid ""
 "API doesn't change in response to internal data structure changes. What's "
 "more, Objects can have signals, allowing for reactive behavior."
 msgstr ""
+"**控制：** 因為物件能建立更複雜的結構，所以我們可以將資料抽象化成抽象層，來確"
+"保對外的 API 不會因為內部資料結構的更改而需要跟著改變。而且，物件還可以有訊"
+"號，可以作出回應式的行為。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:214
 msgid ""
@@ -404,6 +456,8 @@ msgid ""
 "values one expects, but one doesn't need to worry about whether the property "
 "exists in the first place."
 msgstr ""
+"**明確：** 當使用到腳本與引擎類別定義的資料時，物件是可信任的資料結構。屬性中"
+"的值可能與使用者期望的不同，但是在使用時不需要擔心物件上是否有某個屬性。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:219
 msgid ""

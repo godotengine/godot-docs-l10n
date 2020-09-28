@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -508,12 +508,11 @@ msgstr ""
 "Supporte le mélange entre les divisions (splits)."
 
 #: ../../docs/about/list_of_features.rst:179
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"*OmniLight :* Double parabole (rapide) ou cubemap (plus lent mais plus "
+"*OmniLight :* Double paraboloïde (rapide) ou cubemap (plus lent mais plus "
 "précis). Supporte les textures colorées du projecteur sous forme de "
 "panoramas."
 
@@ -968,12 +967,12 @@ msgid "Optional Doppler effect in 2D and 3D."
 msgstr "Effet Doppler optionnel en 2D et 3D."
 
 #: ../../docs/about/list_of_features.rst:347
-#, fuzzy
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
-"Support des :ref:`audio bus <doc_audio_buses>` re-routables et des effets."
+"Support d' :ref:`audio bus <doc_audio_buses>` re-routable et des effets avec "
+"des dizaines d'effets inclus."
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
@@ -1025,9 +1024,8 @@ msgid "**Formats:**"
 msgstr "**Formats :**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "*Images :* Voir :ref:`doc_importing_images_supported_formats`."
+msgstr "*Images :* Voir :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 msgid "*Audio:*"
@@ -1105,6 +1103,8 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Les touches peuvent être mappées en mode \"physique\" pour être "
+"indépendantes de la disposition du clavier."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
@@ -1128,7 +1128,8 @@ msgstr ""
 "d'exploitation."
 
 #: ../../docs/about/list_of_features.rst:401
-msgid "Gamepad input (up to 8 simulatenous controllers)."
+#, fuzzy
+msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr "Entrée de manette de jeu (jusqu'à 8 contrôleurs en simultané)."
 
 #: ../../docs/about/list_of_features.rst:402
@@ -1647,13 +1648,12 @@ msgstr ""
 "GCC, Clang and MSVC. MinGW est également pris en charge."
 
 #: ../../docs/about/list_of_features.rst:571
-#, fuzzy
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
-"Respectueux des packagers : dans la plupart des cas, les bibliothèques "
+"Respectueux des packagers. Dans la plupart des cas, les bibliothèques "
 "système peuvent être utilisées à la place de celles fournies par Godot. Le "
 "système de compilation ne télécharge rien. Les compilations peuvent être "
 "entièrement reproductibles."

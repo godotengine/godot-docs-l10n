@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -516,9 +516,8 @@ msgstr ""
 "要があります)。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid "``--export-pack <preset> <path>``"
-msgstr "\\ ``--export <target>``"
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
 #, fuzzy
@@ -728,7 +727,8 @@ msgstr ""
 "スクリプトは ``SceneTree`` または ``MainLoop`` から継承する必要があります。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-msgid "Here is a simple example of how it works:"
+#, fuzzy
+msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "簡単な動作例を次に示します:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
@@ -742,3 +742,18 @@ msgid ""
 msgstr ""
 "パスに ``project.godot`` が存在しない場合は、現在のパスが現在の作業ディレクト"
 "リであると見なされます (``-path`` が指定されている場合を除く)。"
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:314
+msgid ""
+"The first line of ``sayhello.gd`` above is commonly referred to as a "
+"*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
+"you to run the script as follows in modern Linux distributions, as well as "
+"macOS:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:326
+msgid ""
+"If the above doesn't work in your current version of Linux or macOS, you can "
+"always have the shebang run Godot straight from where it is located as "
+"follows:"
+msgstr ""

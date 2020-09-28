@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,53 +88,53 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
-msgid "#2: The problem has to exist"
+msgid "#2: To solve the problem, it has to exist in the first place"
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
-"This is a variation of the previous practice. I believe most developers "
-"agree that adding anything unnecessary is not a good idea, but what "
-"constitutes what is necessary and what isn't?"
+"This is a variation of the previous practice. Adding anything unnecessary is "
+"not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:58
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
 msgid ""
-"The answer to this question is that the problem needs to *exist*. It must "
-"not be speculation or a belief. The user must be using the software as "
-"intended to create something they *need*. In this process, the user may "
-"stumble into a problem that requires a solution in order to continue, or in "
-"order to achieve greater productivity. In this case, *a solution is needed*."
+"The answer to this question is that the problem needs to *exist* before it "
+"can be actually solved. It must not be speculation or a belief. The user "
+"must be using the software as intended to create something they *need*. In "
+"this process, the user may stumble into a problem that requires a solution "
+"to proceed, or in order to achieve greater productivity. In this case, *a "
+"solution is needed*."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:64
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:63
 msgid ""
 "Believing that problems may arise in the future and that the software needs "
 "to be ready to solve them by the time they appear is called *\"Future "
 "proofing\"* and its characterized by lines of thought such as:"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:67
 msgid "I think it would be useful for users to..."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:69
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
 msgid "I think users will eventually need to..."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:71
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
 msgid ""
-"This is generally considered a bad habit, because trying to solve problems "
-"that *don't actually exist* in the present will very often lead to code that "
-"will be written but never used, or to code that is considerably more complex "
-"to use and maintain than it needs to be."
+"This is generally considered a bad habit because trying to solve problems "
+"that *don't actually exist* in the present will often lead to code that will "
+"be written but never used, or that is considerably more complex to use and "
+"maintain than it needs to be."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:77
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:79
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
 "Software is designed to solve problems, but we can't expect it to solve "
 "*every problem that exists under the sun*. As a game engine, Godot will "
@@ -142,22 +142,22 @@ msgid ""
 "it won't make the *entire game* for you. A line must be drawn somewhere."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:86
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:85
 msgid ""
 "Whether a problem is worth solving is determined by the difficulty the user "
 "has to work around it. This difficulty can be expressed as:"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
 #, fuzzy
 msgid "The complexity of the problem"
 msgstr "Роль скрипту"
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:90
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:92
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""
 "If the problem is *too complex* for most users to solve, the software must "
 "offer a ready-made solution for it. Likewise, if the problem is easy for the "
@@ -165,7 +165,7 @@ msgid ""
 "the user to do it."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:97
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:96
 msgid ""
 "The exception, however, is when the user stumbles into this problem "
 "*frequently enough* that having to do the simple solution every time becomes "
@@ -173,7 +173,7 @@ msgid ""
 "this use case."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:101
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:100
 msgid ""
 "In our experience, in most cases it's usually obvious to tell when a problem "
 "is complex or frequent, but cases may arise where drawing this line is "
@@ -181,25 +181,25 @@ msgid ""
 "always advised."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:106
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:108
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""
 "It is often the case that, when users stumble upon problems, they are only "
 "immersed in their own project, so they will naturally try to solve the "
 "problem from their own perspective, thinking only about their use case."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:112
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:111
 msgid ""
 "Because of this, user proposed solutions don't always contemplate other use "
 "cases that developers are often aware of, so they are often biased towards "
 "their own requirements."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:118
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:117
 msgid ""
 "For developers, the perspective is different. They may find the user's "
 "problem too unique to justify a solution (instead of a user workaround), or "
@@ -208,21 +208,21 @@ msgid ""
 "solution up to the user."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:124
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:123
 msgid ""
 "In any case, before attempting a contribution, it is important to discuss "
 "the actual problems with the other developers or contributors, so a better "
 "agreement on implementation can be reached."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:128
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:127
 msgid ""
 "The only exception, in this case, is when an area of code has a clear owner "
 "(agreed by the other contributors), who talks to users directly and has the "
 "most knowledge to implement a solution directly."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:132
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:131
 msgid ""
 "Also, Godot's philosophy is to favor ease of use and maintenance over "
 "absolute performance. Performance optimizations will be considered, but they "
@@ -230,11 +230,11 @@ msgid ""
 "add too much complexity to the codebase."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:138
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:137
 msgid "#5: To each problem, its own solution"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:140
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:139
 msgid ""
 "For programmers, it is always a most enjoyable challenge to find the most "
 "optimal solutions to problems. Things, however, may go overboard sometimes "
@@ -242,21 +242,21 @@ msgid ""
 "problems as possible."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:145
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:144
 msgid ""
 "The situation will often take a turn for the worse when, in order to make "
 "this solution appear even more fantastic and flexible, the pure speculation-"
 "based problems (as described in #2) also make their appearance on stage."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:151
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:150
 msgid ""
 "The main problem is that, in reality, it rarely works this way. Most of the "
 "time, just writing an individual solution to each problem results in code "
 "that is simpler and more maintainable."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:155
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:154
 msgid ""
 "Additionally, solutions that target individual problems are better for the "
 "users, as they find something that does exactly what they need, without "
@@ -264,7 +264,7 @@ msgid ""
 "simple tasks."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:160
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:159
 msgid ""
 "Big and flexible solutions also have an additional drawback which is that, "
 "over time, they are rarely flexible enough for all users, which keep "
@@ -272,17 +272,17 @@ msgid ""
 "more complex)."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:165
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:164
 msgid "#6: Cater to common use cases, leave the door open for the rare ones"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:167
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:166
 msgid ""
 "This is a continuation of the previous point, which further explains why "
 "this way of thinking and designing software is preferred."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:170
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:169
 msgid ""
 "As mentioned before (in point #2), it is very difficult for us (as human "
 "beings who design software) to actually understand all future user needs. "
@@ -290,7 +290,7 @@ msgid ""
 "once is often a mistake."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:175
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:174
 msgid ""
 "We may come up with something we believe is brilliant, but when it's "
 "actually used, we will find that users will never even use half of it, or "
@@ -298,14 +298,14 @@ msgid ""
 "design, forcing us to either throw it away or make it even more complex."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:180
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:179
 msgid ""
 "The question is then, how to design software that gives users what *we know "
 "they need*, but that is flexible enough to allow them to do *what we don't "
 "know they might need* in the future?"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:186
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:185
 msgid ""
 "The answer to this question is that, to ensure users still can do what they "
 "want to do, we need to give them access to a *low level API* that they can "
@@ -313,25 +313,25 @@ msgid ""
 "means reimplementing some logic that already exists."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:191
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:190
 msgid ""
 "In real-life scenarios, these use cases will be at most rare and uncommon "
 "anyway, so it makes sense a custom solution needs to be written. This is why "
 "it's important to still provide users the basic building blocks to do it."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:196
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:195
 msgid "#7: Solutions must be local"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:198
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:197
 msgid ""
 "When looking for a solution to a problem, be it implementing a new feature "
 "or fixing a bug, sometimes the easiest path is to add data or a new function "
 "in the core layers of code."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:202
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:201
 msgid ""
 "The main problem here is, adding something to the core layers that will only "
 "be used from a single location far away will not only make the code more "
@@ -339,20 +339,20 @@ msgid ""
 "complex, more difficult to understand in general."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:207
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:206
 msgid ""
 "This is bad, because readability and cleanness of core APIs is always of "
 "extreme importance given how much code relies on it, and because it's key "
 "for new contributors as a starting point to learning the codebase."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:215
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:214
 msgid ""
 "The common reasoning for wanting to do this is that it's usually less code "
 "to simply add a hack in the core layers."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:218
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:217
 msgid ""
 "Despite this, this practice is not advised. Generally, the code for a "
 "solution should be closer to where the problem originates, even if it "
@@ -360,30 +360,30 @@ msgid ""
 "creativity might be needed, but this path is always the advised one."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:224
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:223
 msgid "#8: Don't use complex canned solutions for simple problems"
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:226
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:225
 msgid ""
 "Not every problem has a simple solution and, many times, the right choice is "
 "to use a third party library to solve the problem."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:229
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:228
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we just "
 "can't link libraries dynamically. Instead, we bundle them in our source tree."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:234
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:233
 msgid ""
 "As a result, we are very picky with what goes in, and we tend to prefer "
 "smaller libraries (in fact, single header ones are our favorite). Only in "
 "cases where there is no other choice we end up bundling something larger."
 msgstr ""
 
-#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:238
+#: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:237
 msgid ""
 "Also, libraries must use a permissive enough license to be included into "
 "Godot. Some examples of acceptable licenses are Apache 2.0, BSD, MIT, ISC, "

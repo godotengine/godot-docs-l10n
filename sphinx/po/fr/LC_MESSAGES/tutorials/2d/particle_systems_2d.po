@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,9 +370,8 @@ msgid "ParticlesMaterial settings"
 msgstr "Paramètres de ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "Directory"
+msgstr "Direction"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -380,6 +379,10 @@ msgid ""
 "``Vector3(1, 0, 0)`` which makes particles emit to the right. However, with "
 "the default gravity settings, particles will go straight down."
 msgstr ""
+"C'est la direction de base dans laquelle les particules sont émises. La "
+"valeur par défaut est ``Vector3(1, 0, 0)``, ce qui fait que les particules "
+"émettent vers la droite. Cependant, avec les paramètres de gravité par "
+"défaut, les particules vont directement vers le bas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
@@ -387,6 +390,10 @@ msgid ""
 "than 0. Here, we set the initial velocity to 40. You'll notice that "
 "particles emit toward the right, then go down because of gravity."
 msgstr ""
+"Pour que cette propriété soit perceptible, il faut une *vitesse initiale* "
+"supérieure à 0. Ici, nous avons fixé la vitesse initiale à 40. Vous "
+"remarquerez que les particules sont émises vers la droite, puis descendent à "
+"cause de la gravité."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
@@ -406,11 +413,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
-msgstr ""
+msgstr "Planéité"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
-msgstr ""
+msgstr "Cette propriété n'est utile que pour les particules 3D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Gravity"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,9 @@ msgid ""
 "doesn't have a GPU or display server available, you'll need to use a server "
 "build of Godot."
 msgstr ""
+"Wenn Sie einen dedizierten Server für Ihr Projekt auf einem Computer "
+"ausführen möchten, auf dem keine GPU oder kein Anzeigeserver verfügbar ist, "
+"müssen Sie einen Server-Build von Godot verwenden."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
 msgid "Platform support"
@@ -64,6 +67,8 @@ msgstr ""
 msgid ""
 "If your project uses C#, you'll have to use a Mono-enabled server binary."
 msgstr ""
+"Wenn Ihr Projekt C# verwendet müssen Sie eine Mono-fähige Server-Binärdatei "
+"verwenden."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:24
 msgid "\"Headless\" versus \"server\" binaries"
@@ -102,16 +107,23 @@ msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
+"Erstellen Sie eine Linux/X11-Exportvoreinstellung, definieren Sie eine "
+"benutzerdefinierte Release-Exportvorlage, die auf die Server-Binärdatei "
+"verweist und exportieren Sie das Projekt wie gewohnt."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
 msgstr ""
+"Exportieren Sie nur eine PCK-Datei, vorzugsweise aus einer Linux/X11-"
+"Exportvoreinstellung."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
 msgstr ""
+"Beide Methoden sollten zu einer identischen Ausgabe führen. Der folgende "
+"Text beschreibt den PCK-Dateiansatz."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
 msgid ""
@@ -163,9 +175,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "Exportieren für dedizierte Server"
+msgstr "Starten des dedizierten Servers"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -174,12 +185,19 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"Wenn sowohl Ihr Client als auch Ihr Server Teil desselben Godot-Projekts "
+"sind, müssen Sie eine Möglichkeit haben den Server mithilfe eines Kommandos "
+"auf der Befehlszeile direkt zu starten. Dies kann durch Hinzufügen des "
+"folgenden Codeausschnitts in der ``_ready() `` Methode Ihrer Hauptszene "
+"(oder eines Singletons) erfolgen::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
 msgstr ""
+"Alternativ können Sie den dedizierten Server immer starten lassen, wenn eine "
+"Headless- oder Server-Binärdatei erkannt wird::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -187,6 +205,9 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"Wenn Ihr Client und Ihr Server separate Godot-Projekte sind, sollte Ihr "
+"Server höchstwahrscheinlich so konfiguriert sein, dass beim Ausführen der "
+"Hauptszene ein Server automatisch gestartet wird."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"

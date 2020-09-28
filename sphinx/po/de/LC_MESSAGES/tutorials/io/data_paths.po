@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Datenpfade"
 
 #: ../../docs/tutorials/io/data_paths.rst:7
 msgid "Path separators"
-msgstr ""
+msgstr "Pfad-Trennzeichen"
 
 #: ../../docs/tutorials/io/data_paths.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "UNIX-style path separators (``/``). These work on all platforms, including "
 "Windows."
 msgstr ""
+"Um so viele Plattformen wie möglich zu unterstützen, akzeptiert Godot nur "
+"Pfadtrenner im UNIX-Stil (``/``). Diese funktionieren auf allen Plattformen, "
+"einschließlich Windows."
 
 #: ../../docs/tutorials/io/data_paths.rst:13
 msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
@@ -46,6 +49,9 @@ msgid ""
 "project exists in any given folder that contains a ``project.godot`` text "
 "file, even if such file is empty."
 msgstr ""
+"Wie im :ref:`doc_command_line_tutorial` erwähnt, geht Godot davon aus, dass "
+"ein Projekt in einem beliebigen Ordner existiert, der eine ``project.godot`` "
+"Textdatei enthält, auch wenn diese Datei leer ist."
 
 #: ../../docs/tutorials/io/data_paths.rst:22
 msgid ""
@@ -53,10 +59,14 @@ msgid ""
 "base. For example, a texture located in the root of the project folder may "
 "be opened from the following path: ``res://some_texture.png``."
 msgstr ""
+"Der Zugriff auf Projektdateien kann durch das Öffnen eines beliebigen Pfades "
+"mit ``res://`` als Basis erfolgen. Beispielsweise kann eine Textur, die sich "
+"im Stammverzeichnis des Projektordners befindet, vom folgenden Pfad aus "
+"geöffnet werden: ``res://some_texture.png``."
 
 #: ../../docs/tutorials/io/data_paths.rst:27
 msgid "User path (persistent data)"
-msgstr ""
+msgstr "Benutzerpfad (persistente Daten)"
 
 #: ../../docs/tutorials/io/data_paths.rst:29
 msgid ""
@@ -64,12 +74,19 @@ msgid ""
 "will be read-only, due to it being inside a package, self-contained "
 "executable, or system-wide install location."
 msgstr ""
+"Während das Projekt läuft, ist es ein übliches Szenario, dass der "
+"Ressourcenpfad schreibgeschützt ist, da er sich in einem Paket, einer "
+"eigenständigen ausführbaren Datei oder einem systemweiten Installationsort "
+"befindet."
 
 #: ../../docs/tutorials/io/data_paths.rst:33
 msgid ""
 "Storing persistent files in such scenarios should be done by using the "
 "``user://`` prefix, for example: ``user://game_save.txt``."
 msgstr ""
+"Das Speichern persistenter Dateien in solchen Szenarien sollte unter "
+"Verwendung des Präfixes ``user://`` erfolgen, zum Beispiel: ``user://"
+"game_save.txt``."
 
 #: ../../docs/tutorials/io/data_paths.rst:36
 msgid ""
@@ -80,16 +97,26 @@ msgid ""
 "the Project Settings, but it can be overridden on a per-platform basis "
 "using :ref:`feature tags <doc_feature_tags>`."
 msgstr ""
+"Bei einigen Geräten (z.B. Handys und Konsolen) ist dieser Weg einzigartig "
+"für das Projekt. Auf Desktop-Betriebssystemen verwendet die Engine den "
+"typischen ``~/.local/share/godot/app_userdata/Name`` unter MacOS und Linux "
+"und ``%APPDATA%/Name`` unter Windows. Der ``Name`` wird aus dem in den "
+"Projekteinstellungen definierten Anwendungsnamen übernommen, kann aber auf "
+"einer Pro-Plattform-Basis mit Hilfe der :ref:`Feature-Tags "
+"<doc_feature_tags>` überschrieben werden."
 
 #: ../../docs/tutorials/io/data_paths.rst:45
 msgid "Editor data paths"
-msgstr ""
+msgstr "Editor-Datenpfade"
 
 #: ../../docs/tutorials/io/data_paths.rst:47
 msgid ""
 "The editor uses different paths for user data, user settings and cache "
 "depending on the platform. By default, these paths are:"
 msgstr ""
+"Der Editor verwendet je nach Plattform unterschiedliche Pfade für "
+"Benutzerdaten, Benutzereinstellungen und Cache. Standardmäßig sind diese "
+"Pfade:"
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Type"
@@ -143,7 +170,7 @@ msgstr "Linux: ``~/.cache/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:66
 msgid "**User data** contains export templates and project-specific data."
-msgstr ""
+msgstr "**User data** enthält Exportvorlagen und projektspezifische Daten."
 
 #: ../../docs/tutorials/io/data_paths.rst:67
 msgid ""
@@ -158,6 +185,8 @@ msgid ""
 "**Cache** contains temporary data. It can safely be removed when Godot is "
 "closed."
 msgstr ""
+"**Cache** enthält temporäre Daten. Er kann sicher entfernt werden, wenn "
+"Godot geschlossen ist."
 
 #: ../../docs/tutorials/io/data_paths.rst:72
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,10 +134,11 @@ msgid "Player scene"
 msgstr "Player(플레이어) 씬"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
+#, fuzzy
 msgid ""
-"The first scene we will make defines the ``Player`` object. One of the "
-"benefits of creating a separate Player scene is that we can test it "
-"separately, even before we've created other parts of the game."
+"The first scene will define the ``Player`` object. One of the benefits of "
+"creating a separate Player scene is that we can test it separately, even "
+"before we've created other parts of the game."
 msgstr ""
 "처음으로 정의할 씬은 ``Player`` 객체입니다. 별도의 Player 씬을 만들면 게임의 "
 "다른 부분을 만들기 전에 따로 실험해 볼 수 있다는 장점이 있습니다."
@@ -888,16 +889,17 @@ msgid "Main scene"
 msgstr "메인 씬"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
+#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
-"`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
-"your saved ``Player.tscn``."
+"`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
+"Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
 "이제 이 모두를 모을 차례입니다. 새 씬을 만들고 ``Main`` 이라는 이름의 :ref:"
 "`Node <class_Node>` 를 만드세요. \"인스턴스\" 버튼을 누르고 저장한 ``Player."
 "tscn`` 을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:677
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -905,7 +907,7 @@ msgstr ""
 "``Main`` 의 자식으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
 "지으세요 (값은 초 단위 입니다):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -913,7 +915,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``MobTimer`` 라고 이름지음) - 얼마나 자주 적이 스"
 "폰하는지를 조절함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -921,7 +923,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``ScoreTimer`` 라고 이름지음) - 매 초마다 점수를 "
 "증가시킴"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -929,7 +931,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``StratTimer`` 라고 이름지음) - 시작하기 전에 지"
 "연시간을 줌"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -937,24 +939,24 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (``StartPosition`` 이라고 이름지음) - 플"
 "레이어의 시작 위치를 표시함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:685
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "각  ``Timer`` 마다 ``Wait Time`` 속성을 다음과 같이 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:692
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:693
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -962,11 +964,11 @@ msgstr ""
 "그리고, ``StartTimer`` 속성의 ``One Shot`` 을 \"On\"으로 설정하고 "
 "``StartPosition`` 노드의 ``Position`` 을 ``(240, 450)`` 으로 설정하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:696
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid "Spawning mobs"
 msgstr "적 스폰하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:698
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:699
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -978,7 +980,7 @@ msgstr ""
 "``Main`` 의 자식으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
 "택한다면, 당신은 편집기 위쪽에 새로운 버튼들이 보일 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:705
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:706
 #, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
@@ -992,7 +994,7 @@ msgstr ""
 "어있어야 합니다. 이 설정은 \"잠금\" 버튼 왼쪽과 \"스냅 설정\" 버튼 옆의 세 개"
 "의 점에서 찾을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:713
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -1000,7 +1002,7 @@ msgstr ""
 "*시계 방향* 으로 그리세요, 그렇지 않으면 적들은 *안쪽* 이 아닌 *바깥쪽* 으로 "
 "향할 것입니다!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:718
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:719
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -1008,7 +1010,7 @@ msgstr ""
 "이미지에서 ``4`` 포인트를 찍고 난 후, \"커브 닫기\" 버튼을 누르면 커브가 완성"
 "됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:721
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -1020,16 +1022,16 @@ msgstr ""
 "이 노드는 자동으로 회전하고 이동하면서 경로를 따라갈 것입니다, 그래서 우리는 "
 "이걸로 경로를 따라 임의의 위치와 방향을 선택하기 위해 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:726
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:727
 #, fuzzy
 msgid "Your scene should look like this:"
 msgstr "씬 트리는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:731
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid "Main script"
 msgstr "메인 스크립트"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:733
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:734
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -1037,17 +1039,17 @@ msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
 "를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고를 수 있도록 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:773
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:774
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:776
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid "You can assign this property's value in two ways:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:778
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:779
 #, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
@@ -1056,13 +1058,13 @@ msgstr ""
 "\"파일 시스템\" 패널에서 ``Mob.tscn`` 을 드래그하고 ``Main`` 노드의 스크립트 "
 "속성 아래 ``Mob`` 속성에 드랍하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:780
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:783
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:784
 #, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
@@ -1071,7 +1073,7 @@ msgstr ""
 "씬 트리에서 Button 노드를 고르고 \"노드(Node)\" 탭을 선택하세요. 그런 다음 "
 "\"시그널(Signals)\"이 선택되어 있는지 확인하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:786
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:787
 #, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
@@ -1089,7 +1091,7 @@ msgstr ""
 "고 치세요. 다음의 코드를 추가하고 ``new_game`` 함수를 추가하여 새로운 게임을 "
 "위한 모든 것들을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:827
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:828
 #, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
@@ -1101,7 +1103,7 @@ msgstr ""
 "``timeout()`` 시그널을 연결하세요. ``StartTimer`` 는 나머지 두 타이머를 시작"
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:854
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:855
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -1113,12 +1115,12 @@ msgstr ""
 "``PathFollow2D`` 노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치"
 "와 방향을 선택하기 위해서 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:860
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:861
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "새로운 인스턴스는 ``add_child()`` 를 사용해야 추가할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
 #, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
@@ -1129,41 +1131,41 @@ msgstr ""
 "로 좀 더 편한 작업을 하고싶다면, ``deg2rad()`` 와 ``rad2deg()`` 함수로 이 둘"
 "을 전환할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:914
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 #, fuzzy
 msgid "Testing the scene"
 msgstr "씬 설정하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:916
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
 "automatically when the game launches. Press the \"Play\" button and select "
 "``Main.tscn`` when prompted."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -1176,7 +1178,7 @@ msgstr ""
 "<class_CanvasLayer>` 노드를 추가하고 ``HUD`` 라고 이름지으세요. \"HUD\"는 "
 "\"heads-up display\"의 약자로, 정보가 게임 화면 앞에 덮어씌우는 방식입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:952
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -1186,24 +1188,24 @@ msgstr ""
 "들을 그릴수 있게 해주고, 이로써 보여지는 정보가 플레이어나 적과 같은 게임 요"
 "소들에 의해 가려지지 않게 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:956
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
 #, fuzzy
 msgid "The HUD needs to display the following information:"
 msgstr "HUD는 다음의 정보들을 보여줍니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:958
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "점수, ``ScoreTimer`` 가 바꿈."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "메시지, \"Game Over\"나 \"Get Ready!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 msgid "A \"Start\" button to begin the game."
 msgstr "게임을 시작하기 위한 \"Start\" 버튼."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:963
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1213,28 +1215,28 @@ msgstr ""
 "기 위해, 우리는 두 가지 형식의 :ref:`Control <class_Control>` 노드를 쓸겁니"
 "다: :ref:`Label <class_Label>` 과 :ref:`Button <class_Button>` 입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:966
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "다음에 맞춰 ``HUD`` 노드의 자식으로 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:968
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr "``ScoreLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 #, fuzzy
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr "``MessageLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:971
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr "``StartButton`` 으로 이름지은 :ref:`Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:971
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` 로 이름지은 :ref:`Timer <class_Timer>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:973
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 #, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
@@ -1247,11 +1249,11 @@ msgstr ""
 "assets에는 \"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사용"
 "하려면, 각 ``Control`` 노드마다 다음과 같이 하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:978
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:979
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:982
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:983
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1261,14 +1263,14 @@ msgstr ""
 "\"를 눌러서 \"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 ``Size`` "
 "도 설정해야 합니다. ``64`` 정도가 좋습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:988
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:989
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
 "the same place on the other two Control nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:992
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:993
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1284,7 +1286,7 @@ msgstr ""
 "져 있는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:999
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
@@ -1292,7 +1294,7 @@ msgstr ""
 "아래에 보이는 대로 노드를 정렬하세요. \"레이아웃(Layout)\" 버튼을 클릭해서 "
 "Control 노드의 레이아웃을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1004
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1005
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -1300,65 +1302,65 @@ msgstr ""
 "당신은 노드들을 드래그해서 수동으로 놓을 수도 있습니다, 혹은 더 정확한 방법으"
 "로는, 다음의 설정을 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1008
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 msgid "*Layout* : \"Top Wide\""
 msgstr "*레이아웃* : \"Top Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
 msgid "*Text* : ``0``"
 msgstr "*Text* : ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1013
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
 msgid "*Align* : \"Center\""
 msgstr "*Align* : \"Center\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1015
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 #, fuzzy
 msgid "Message"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*레이아웃* : \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
 msgid "*Autowrap* : \"On\""
 msgstr "*Autowrap* : \"On\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1023
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Text* : ``Start``"
 msgstr "*Text* : ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*레이아웃* : \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid "*Margin* :"
 msgstr "*Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
 #, fuzzy
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -1368,17 +1370,17 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1035
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1036
 msgid "Now add this script to ``HUD``:"
 msgstr "이제 ``HUD`` 에 이 스크립트를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1054
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1055
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "``start_game`` 시그널은 ``Main`` 노드에게 버튼이 눌려졌음을 알립니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
 #, fuzzy
 msgid ""
 "This function is called when we want to display a message temporarily, such "
@@ -1388,7 +1390,7 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1398,7 +1400,7 @@ msgstr ""
 "보여주고, 타이틀 화면으로 돌아와서, 잠깐 일시정지한 후 \"Start\" 버튼을 보여"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1114
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1115
 #, fuzzy
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
@@ -1411,11 +1413,11 @@ msgstr ""
 "간 지연에 매우 유용한데, \"Start\" 버튼을 보여주기 전에 약간의 시간을 기다려"
 "줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "이 함수는 점수가 변경될 때마다 ``Main`` 에 의해서 호출됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 #, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
@@ -1424,11 +1426,11 @@ msgstr ""
 "``MessageTimer`` 의 ``timeout()`` 시그널과 ``StartButton`` 의 ``pressed()`` "
 "를 연결하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
 msgid "Connecting HUD to Main"
 msgstr "메인에 HUD를 연결하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 #, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
@@ -1440,7 +1442,7 @@ msgstr ""
 "래에 위치시킵니다. 모든 트리는 이렇게 되어야 하므로, 놓친 것이 없는지 확인해"
 "보세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1448,7 +1450,7 @@ msgstr ""
 "이제 ``HUD`` 기능을 ``Main`` 스크립트에 연결할겁니다. 여기에는 ``Main`` 씬에 "
 "추가적인 것이 요구됩니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1174
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by typing \"new_game\" in the "
@@ -1456,7 +1458,7 @@ msgid ""
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -1464,11 +1466,11 @@ msgstr ""
 "``new_game()`` 에서, 점수 화면을 업데이트하고 \"Get Ready\" 메시지를 보이게 "
 "합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()`` 에서는, 일치하는 ``HUD`` 함수를 호출해야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1204
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1476,7 +1478,7 @@ msgstr ""
 "마지막으로, ``_on_ScoreTimer_timeout()`` 를 추가해서 점수가 바뀌는 것과 일치"
 "한 화면을 유지하도록 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1484,11 +1486,11 @@ msgstr ""
 "이제 실행할 준비가 끝났습니다! \"프로젝트 실행\" 버튼을 누르세요. 아마 메인 "
 "씬을 선택하라고 물어볼 겁니다, ``Main.tscn`` 을 골라줍시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
 msgid "Removing old creeps"
 msgstr "오래된 적들 제거하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
 #, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
@@ -1501,7 +1503,7 @@ msgstr ""
 "직 화면에 남아 있습니다.새 게임이 시작되면 적이 모두 사라지는 것이 좋을 것입"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1227
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
 "In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
 "to the Inspector (the same place where you find the node's signals). Next to "
@@ -1509,23 +1511,23 @@ msgid ""
 "\"Add\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1246
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1250
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 msgid "Finishing up"
 msgstr "마무리 작업"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1252
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1253
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1535,11 +1537,11 @@ msgstr ""
 "을 향상시킬 \"주스\"를 추가하는 것입니다. 독창적인 아이디어로 자유롭게 게임 "
 "플레이를 확장시켜보세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1257
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
 msgid "Background"
 msgstr "배경(Background)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1259
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
 #, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
@@ -1555,7 +1557,7 @@ msgstr ""
 "``ColorRect`` 는 오직 하나의 속성만 가지고 있습니다: ``Color`` 입니다. 원하"
 "는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1265
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
 #, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
@@ -1564,11 +1566,11 @@ msgstr ""
 "또한 배경 이미지를 추가할 수도 있는데, 이미지가 있다면, ``Sprite`` 노드를 사"
 "용하면 됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1269
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid "Sound effects"
 msgstr "음향 효과(Sound effects)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1271
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1272
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1580,7 +1582,7 @@ msgstr ""
 "Loop.ogg\"는 배경 음악으로, \"gameover.wav\"는 플레이어가 죽었을 때 쓰면 됩니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1276
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1277
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1592,7 +1594,7 @@ msgstr ""
 "이름 지으세요. 각각에서, ``Stream`` 속성을 클릭하시고 \"Load\"를 선택해서 이"
 "름에 맞는 오디오 파일을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1281
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1282
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1600,17 +1602,17 @@ msgstr ""
 "음악을 실행시키려면, ``new_game()`` 함수에 ``$Music.play()`` 를 추가하고 "
 "``game_over()`` 함수에 ``$Music.stop()`` 을 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1284
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1285
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 "마지막으로, ``game_over()`` 함수에 ``$DeathSound.play()`` 를 추가하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1287
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
 #, fuzzy
 msgid "Keyboard shortcut"
 msgstr "키보드 단축키"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1289
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1290
 #, fuzzy
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
@@ -1621,7 +1623,7 @@ msgstr ""
 "하는 게 편리할 것입니다. 이렇게 하는 방법들 중 하나로 ``Button`` 노드의 "
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1293
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
 #, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
@@ -1638,7 +1640,7 @@ msgstr ""
 "서 이름을 \"ui_select\"로 입력하세요. 이것은 스페이스바로 지정된 기본 입력 이"
 "벤트입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1301
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1302
 #, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
@@ -1647,7 +1649,7 @@ msgstr ""
 "이제 시작 버튼이 나타날 때, 버튼을 클릭하거나 스페이스바를 눌러서 게임을 시작"
 "할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1305
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
 msgid "Project files"
 msgstr "프로젝트 파일"
 
@@ -1655,10 +1657,10 @@ msgstr "프로젝트 파일"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1308
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

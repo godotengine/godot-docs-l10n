@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:107
 msgid "Checking UV2"
-msgstr ""
+msgstr "UV2 überprüfen"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:109
 msgid ""
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid "Setting up lights"
-msgstr ""
+msgstr "Beleuchtung aufsetzen"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:149
 msgid ""
@@ -235,12 +235,19 @@ msgid ""
 "shadowmapping and lighting are still dynamic and affect moving objects, but "
 "light bounces from that light will be baked."
 msgstr ""
+"Beleuchtung wird standardmäßig mit indirektem Licht gebrannt. Dies bedeutet, "
+"dass Schattenkarten und Beleuchtung immer noch dynamisch sind und sich auf "
+"sich bewegende Objekte auswirken, aber hiervon reflektiertes Licht wird "
+"gebrannt."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:153
 msgid ""
 "Lights can be disabled (no bake) or be fully baked (direct and indirect). "
 "This can be controlled from the **Bake Mode** menu in lights:"
 msgstr ""
+"Beleuchtung kann deaktiviert (kein brennen) oder vollständig gebrannt werden "
+"(direkt und indirekt). Dies kann über das Menü **Brennmodus** in der "
+"Beleuchtung gesteuert werden:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:158
 msgid "The modes are:"
@@ -265,7 +272,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:165
 msgid "Baking quality"
-msgstr ""
+msgstr "Brenn-Qualität"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:167
 msgid ""
@@ -304,27 +311,31 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
-msgstr ""
+msgstr "Brennen"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
+"Um den Brennvorgang zu starten, drücken Sie einfach die große Schaltfläche "
+"**LightMaps brennen** oben, wenn Sie den Node `` BakedLightmap`` auswählen:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
 "This can take from seconds to minutes (or hours) depending on scene size, "
 "bake method and quality selected."
 msgstr ""
+"Dies kann je nach Szenengröße, Brennmethode und gewählter Qualität zwischen "
+"Sekunden und Minuten (oder Stunden) dauern."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:198
 msgid "Configuring bake"
-msgstr "Backen konfigurieren"
+msgstr "Brennen konfigurieren"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:200
 msgid "Several more options are present for baking:"
-msgstr ""
+msgstr "Zum Brennen stehen einige weitere Optionen zur Verfügung:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
 msgid ""

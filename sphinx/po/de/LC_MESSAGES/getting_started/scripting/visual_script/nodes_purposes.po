@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid ""
 "Programming in Godot Visual Scripting is done via *Nodes* and *Port "
 "Connections* inside each function."
 msgstr ""
-"Godot Visual Skript programmiert man mittels *Nodes* und *Port Verbindungen* "
+"Godot VisualSkript programmiert man mittels *Nodes* und *Port Verbindungen* "
 "innerhalb jeder Funktion."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
@@ -90,7 +90,7 @@ msgid ""
 "appear to the left and right of nodes and which can be used to make "
 "*Connections*: There are two types of *Ports*: *Sequence* and *Data*."
 msgstr ""
-"Nodes in Godot Visual Scripting haben *Schnittstellen (Ports)*. Dies sind "
+"Nodes in Godot VisualScript haben *Schnittstellen (Ports)*. Dies sind "
 "Endpunkte, die links und rechts von Nodes angezeigt werden und zum "
 "Herstellen von *Verbindungen* verwendet werden können: Es gibt zwei Arten "
 "von *Ports*: *Sequenz* und *Daten*."
@@ -215,7 +215,7 @@ msgid ""
 "to as *member function*) on this node."
 msgstr ""
 "Eine der häufigsten Aufgaben ist der Zugriff auf Szenenbaum-Nodes (auch hier "
-"nicht zu verwechseln mit *Visual Script Nodes*). Beim ziehen aus dem "
+"nicht zu verwechseln mit *VisualScript Nodes*). Beim ziehen aus dem "
 "Szenenbaum und platzieren auf der Zeichenfläche werden Sie aufgefordert auf "
 "diesem Node *eine Methode aufzurufen* (manchmal als *Elementfunktion* "
 "bezeichnet)."
@@ -241,7 +241,7 @@ msgid ""
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
 "Es muss darauf geachtet werden, dass dies nur funktioniert, wenn die zu "
-"bearbeitende Szene Ihr *Visual Script* in einem der Nodes enthält! "
+"bearbeitende Szene Ihr *VisualScript* in einem der Nodes enthält! "
 "Andernfalls wird eine Warnung angezeigt."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
@@ -631,7 +631,7 @@ msgid ""
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
-"Dies hat die gleiche Funktion wie Preload () in GDScript. Diese Ressource "
+"Dies hat die gleiche Funktion wie preload() in GDScript. Diese Ressource "
 "wird geladen und ist sofort einsatzbereit. Anstatt den Node zu "
 "instanziieren, ist es einfacher die gewünschte Ressource aus dem Dateisystem-"
 "Dock auf die Zeichenfläche zu ziehen."
@@ -823,7 +823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:404
 msgid "By Type"
-msgstr ""
+msgstr "vom Typ"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid ""
@@ -877,7 +877,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:433
 msgid "Emit Signal"
-msgstr ""
+msgstr "Signal aussenden"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid ""
@@ -902,7 +902,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr ""
+msgstr "Warte"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -919,7 +919,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -932,7 +932,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:458
 msgid "Yield Signal"
-msgstr ""
+msgstr "Yield Signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Same as Yield, but will wait until a given signal is emitted."
@@ -972,7 +972,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:481
 msgid "Expression Node"
-msgstr ""
+msgstr "Ausdrucks-Node"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid ""
@@ -980,16 +980,23 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Unter den Operatoren ist der *Ausdruck*-Node der leistungsstärkste. Wenn es "
+"gut verwendet wird, können Sie visuelle Skripte, die mathematisch oder "
+"logisch schwer sind, enorm vereinfachen. Geben Sie einen beliebigen Ausdruck "
+"ein und er wird in Echtzeit ausgeführt."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:486
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Ausdrucks-Nodes können:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Mathematische und logische Ausdrücke ausführen, basierend auf "
+"benutzerdefinierten Eingaben aus (z.B. \"a*5+b\", wobei a und b "
+"benutzerdefinierte Eingaben sind):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:493
 msgid "Access local variables or properties:"
@@ -1001,6 +1008,9 @@ msgid ""
 "such as ``sin()``, ``cos()``, ``print()``, as well as constructors, such as "
 "``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
+"Verwenden Sie die meisten der vorhandenen integrierten Funktionen, die "
+"GDScript zur Verfügung stehen, wie z.B. ``sin()``, ``cos()``, ``print()`` "
+"sowie Konstruktoren wie z.B. ``Vector3(x, y, z)``, ``Rect2(...)``, usw.:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"
@@ -1011,3 +1021,5 @@ msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Verwenden Sie den sequenzierten Modus, der sinnvoller ist, wenn Sie die "
+"Verarbeitungsreihenfolge einhalten:"

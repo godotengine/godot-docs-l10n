@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "Variant Klasse"
 
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
@@ -33,57 +33,75 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"Variant ist der wichtigste Datentyp von Godot, es ist die wichtigste Klasse "
+"in der Engine. Eine Variante benötigt nur 20 Bytes und kann fast jeden "
+"Engine-Datentyp darin speichern. Varianten werden selten verwendet, um "
+"Informationen über einen längeren Zeitraum zu speichern. Stattdessen werden "
+"sie hauptsächlich für die Kommunikation, Bearbeitung, Serialisierung und das "
+"allgemeine Verschieben von Daten verwendet."
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr ""
+msgstr "Ein Variant kann:"
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
-msgstr ""
+msgstr "fast jeden Datentyp speichern"
 
 #: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
 msgstr ""
+"Operationen zwischen vielen Varianten ausführen (GDScript verwendet Variant "
+"als atomaren/nativen Datentyp)."
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
 msgstr ""
+"gehasht sein, damit sie schnell mit anderen Varianten verglichen werden "
+"können"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
-msgstr ""
+msgstr "verwendet werden, um sicher zwischen Datentypen zu konvertieren"
 
 #: ../../docs/development/cpp/variant_class.rst:23
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
 msgstr ""
+"werden genutzt um aufrufende Methoden und ihre Argumente zu abstrahieren "
+"(Godot exportiert alle seine Funktionen über Varianten)"
 
 #: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
 msgstr ""
-"Wird verwendet, um Anrufe zu verschieben oder Daten zwischen Threads zu "
+"Werden verwendet, um Anrufe zu verschieben oder Daten zwischen Threads zu "
 "verschieben."
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
 msgstr ""
+"Als binär serialisiert und auf der Festplatte gespeichert oder über das "
+"Netzwerk übertragen werden."
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
 msgstr ""
+"in Text serialisiert und verwenden dies zum Drucken von Werten und "
+"bearbeitbaren Einstellungen."
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
 msgstr ""
+"Arbeitet wie eine exportierte Eigenschaft, damit der Editor sie universell "
+"bearbeiten kann."
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr ""
+msgstr "Wird für Wörterbücher, Arrays, Parser usw. verwendet."
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -91,6 +109,10 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
+"Dank der Variant-Klasse war das Schreiben von Godot selbst eine viel, viel "
+"einfachere Aufgabe, da es mit wenig Aufwand hochdynamische Konstrukte "
+"ermöglicht, die in C++ nicht üblich sind. Werden Sie noch heute ein Freund "
+"von Variant."
 
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
@@ -107,7 +129,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr ""
+msgstr "Container: Wörterbuch und Array"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -116,12 +138,19 @@ msgid ""
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
 msgstr ""
+"Beide werden mit Varianten implementiert. Ein Wörterbuch kann jeden Datentyp "
+"der als Schlüssel verwendet wird mit jedem anderen Datentyp abgleichen. Ein "
+"Array enthält nur ein Feld von Varianten. Natürlich kann ein Variant auch "
+"ein Wörterbuch und ein Array enthalten, was es noch flexibler macht."
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
 msgstr ""
+"Durch Änderungen an einem Container werden alle Verweise darauf geändert. Es "
+"sollte ein Mutex erstellt werden um ihn zu sperren, wenn ein Multithread-"
+"Zugriff gewünscht wird."
 
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""

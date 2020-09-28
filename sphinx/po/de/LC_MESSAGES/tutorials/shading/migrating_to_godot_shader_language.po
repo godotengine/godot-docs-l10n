@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:4
 msgid "Migrating to Godot's shading language"
-msgstr ""
+msgstr "Umstieg auf Godots Shader-Sprache"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:7
 msgid "Introduction"
@@ -31,18 +31,21 @@ msgid ""
 "GLSL and gives practical advice on how to migrate shaders from other "
 "sources, such as Shadertoy and The Book of Shaders, into Godot shaders."
 msgstr ""
+"Dieses Dokument erklärt die Unterschiede zwischen Godots Shader-Sprache und "
+"GLSL und gibt praktische Ratschläge zur Migration von Shadern aus anderen "
+"Quellen wie Shadertoy und The Book of Shaders in Godot-Shader."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:13
 msgid ""
 "For detailed information on Godot's shading language, please refer to the :"
 "ref:`Shading Language <doc_shading_language>` reference."
 msgstr ""
-"Genauere Informationen über Godots Shading Language gibt es im eigenen "
+"Genauere Informationen über Godots Shader-Sprache gibt es im eigenen "
 "Artikel: :ref:`Shading Language <doc_shading_language>`."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:17
 msgid "GLSL"
-msgstr ""
+msgstr "GLSL"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:19
 msgid ""
@@ -50,10 +53,13 @@ msgid ""
 "quality-of-life features. Accordingly, most features available in GLSL are "
 "available in Godot's shading language."
 msgstr ""
+"Godot verwendet eine auf GLSL basierende Shader-Sprache mit einigen "
+"verbesserten Funktionen. Dementsprechend sind die meisten in GLSL "
+"verfügbaren Funktionen in Godots Shader-Sprache verfügbar."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:23
 msgid "Shader programs"
-msgstr ""
+msgstr "Shader Programme"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:25
 msgid ""
@@ -62,6 +68,11 @@ msgid ""
 "shader that contains a ``vertex`` and/or a ``fragment`` function. If you "
 "only choose to write one, Godot will supply the other."
 msgstr ""
+"In GLSL verwendet jeder Shader ein separates Programm. Sie haben ein "
+"Programm für den Vertex-Shader und eines für den Fragment-Shader. In Godot "
+"haben Sie einen einzelnen Shader, der eine ``vertex`` - und/oder eine "
+"``fragment``-Funktion enthält. Wenn Sie nur eines schreiben, liefert Godot "
+"das andere."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:29
 msgid ""
@@ -69,6 +80,10 @@ msgid ""
 "fragment and vertex shaders in one file. In GLSL, the vertex and fragment "
 "programs cannot share variables except when varyings are used."
 msgstr ""
+"Mit Godot können einheitliche Variablen und Funktionen gemeinsam genutzt "
+"werden, indem die Fragment- und Vertex-Shader in einer Datei definiert "
+"werden. In GLSL können die Vertex- und Fragment-Programme nur dann Variablen "
+"gemeinsam nutzen, wenn Variationen verwendet werden."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:34
 msgid "Vertex attributes"
@@ -125,7 +140,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:64
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:206
 msgid "Main"
-msgstr ""
+msgstr "Main"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:66
 msgid ""
@@ -148,7 +163,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:77
 msgid "Macros"
-msgstr ""
+msgstr "Makros"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:79
 msgid ""
@@ -160,6 +175,14 @@ msgid ""
 "``#ifdef``, etc.), there is no equivalent because they run during the pre-"
 "processing stage of compilation."
 msgstr ""
+"Entsprechend der Ähnlichkeit mit C können Sie mit GLSL Makros verwenden. Im "
+"Allgemeinen wird ``#define`` verwendet, um Konstanten oder kleine Funktionen "
+"zu definieren. Es gibt keine einfache Möglichkeit Definitionen in Godots "
+"Shader-Sprache zu übersetzen. Wenn es sich um eine definierte Funktion "
+"handelt ersetzen Sie sie durch eine Funktion. Wenn es sich um eine Konstante "
+"handelt, ersetzen Sie sie durch ein Uniform. Für andere Makros (``#if``, "
+"``#ifdef`` usw.) gibt es kein Äquivalent, da sie während der "
+"Präprozessorphase der Kompilierung ausgeführt werden."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:86
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
@@ -172,6 +195,9 @@ msgid ""
 "GLSL has many built-in variables that are hard-coded. These variables are "
 "not uniforms, so they are not editable from the main program."
 msgstr ""
+"GLSL verfügt über viele integrierte, fest codierte Variablen. Diese "
+"Variablen sind keine Uniforms, daher können sie nicht vom Hauptprogramm aus "
+"bearbeitet werden."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
@@ -189,7 +215,7 @@ msgstr "Art"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:218
 msgid "Equivalent"
-msgstr ""
+msgstr "Equivalent"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
@@ -200,7 +226,7 @@ msgstr "Beschreibung"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:94
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:220
 msgid "gl_FragColor"
-msgstr ""
+msgstr "gl_FragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:94
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
@@ -212,13 +238,13 @@ msgstr "out vec4"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:220
 msgid "COLOR"
-msgstr ""
+msgstr "COLOR"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:94
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:220
 msgid "Output color for each pixel."
-msgstr ""
+msgstr "Ausgabefarbe für jeden Pixel."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
@@ -236,13 +262,13 @@ msgstr "vec4"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
 msgid "FRAGCOORD"
-msgstr ""
+msgstr "FRAGCOORD"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:222
 msgid "For full screen quads. For smaller quads, use UV."
-msgstr ""
+msgstr "Für Vollbild-Quadrate. Verwenden Sie für kleinere Quadrate UV."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:98
 msgid "VERTEX"
@@ -254,7 +280,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "gl_PointSize"
-msgstr ""
+msgstr "gl_PointSize"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
@@ -267,7 +293,7 @@ msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
-msgstr ""
+msgstr "POINT_SIZE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "Size of Point primitive."
@@ -275,18 +301,18 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:102
 msgid "gl_PointCoord"
-msgstr ""
+msgstr "gl_PointCoord"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:102
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "vec2"
-msgstr ""
+msgstr "vec2"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:102
 msgid "POINT_COORD"
-msgstr ""
+msgstr "POINT_COORD"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:102
 msgid "Position on point when drawing Point primitives."
@@ -294,7 +320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "gl_FrontFacing"
-msgstr ""
+msgstr "gl_FrontFacing"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "bool"
@@ -302,7 +328,7 @@ msgstr "bool"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "FRONT_FACING"
-msgstr ""
+msgstr "FRONT_FACING"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "True if front face of primitive."
@@ -312,7 +338,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:184
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:232
 msgid "Coordinates"
-msgstr ""
+msgstr "Koordinaten"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:112
 msgid ""
@@ -323,7 +349,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:116
 msgid "Precision"
-msgstr ""
+msgstr "Präzision"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:118
 msgid ""
@@ -337,7 +363,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:124
 msgid "Shadertoy"
-msgstr ""
+msgstr "Shadertoy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:126
 msgid ""
@@ -393,19 +419,19 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:160
 msgid "fragColor"
-msgstr "Farbe"
+msgstr "fragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 msgid "fragCoord"
-msgstr ""
+msgstr "fragCoord"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:162
 msgid "FRAGCOORD.xy"
-msgstr ""
+msgstr "FRAGCOORD.xy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 msgid "iResolution"
-msgstr ""
+msgstr "iResolution"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:164
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
@@ -424,12 +450,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 msgid "iTime"
-msgstr ""
+msgstr "iTime"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "TIME"
-msgstr ""
+msgstr "TIME"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:166
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
@@ -438,7 +464,7 @@ msgstr "Zeit seit dem Start des Shaders."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "iTimeDelta"
-msgstr ""
+msgstr "iTimeDelta"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
@@ -451,44 +477,44 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:168
 msgid "Time to render previous frame."
-msgstr ""
+msgstr "Zeit um den vorherigen Frame zu rendern."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "iFrame"
-msgstr ""
+msgstr "iFrame"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:170
 msgid "Frame number."
-msgstr ""
+msgstr "Frame Nummer."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 msgid "iChannelTime[4]"
-msgstr ""
+msgstr "iChannelTime[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 msgid "Time since that particular texture started."
-msgstr ""
+msgstr "Zeit seit Start der gegebenen Textur."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 msgid "iMouse"
-msgstr ""
+msgstr "iMouse"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:174
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "Mouse position in pixel coordinates."
-msgstr ""
+msgstr "Mausposition in Pixelkoordinaten."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 msgid "iDate"
-msgstr ""
+msgstr "iDate"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
 msgid "Current date, expressed in seconds."
-msgstr ""
+msgstr "Aktuelles Datum in Sekunden."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "iChannelResolution[4]"
-msgstr ""
+msgstr "iChannelResolution[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "1.0 / TEXTURE_PIXEL_SIZE"
@@ -496,11 +522,11 @@ msgstr "1.0 / TEXTURE_PIXEL_SIZE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:178
 msgid "Resolution of particular texture."
-msgstr ""
+msgstr "Auflösung der gegebenen Textur."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:180
 msgid "iChanneli"
-msgstr ""
+msgstr "iChanneli"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:180
 msgid "Sampler2D"
@@ -508,11 +534,11 @@ msgstr "Sampler2D"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:180
 msgid "TEXTURE"
-msgstr ""
+msgstr "TEXTURE"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:180
 msgid "Godot provides only one built-in; user can make more."
-msgstr ""
+msgstr "Godot bietet nur einen eingebauten; Nutzer können mehr erzeugen."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:186
 msgid ""
@@ -532,6 +558,11 @@ msgid ""
 "set list of uniforms passed in and with no ability to add additional "
 "uniforms."
 msgstr ""
+"Ähnlich wie bei Shadertoy bietet `The Book of Shaders <https://"
+"thebookofshaders.com>`_ Zugriff auf einen Fragment-Shader im Webbrowser, mit "
+"dem der Benutzer interagieren kann. Der Benutzer kann nur Fragment-Shader-"
+"Code mit einer festgelegten Liste von übergebenen Uniforms schreiben und "
+"kann keine zusätzlichen Uniforms hinzufügen."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:196
 msgid ""
@@ -539,6 +570,9 @@ msgid ""
 "Book of Shaders provides a `page <https://thebookofshaders.com/04>`_ on "
 "running shaders in various frameworks."
 msgstr ""
+"Für weitere Hilfe beim Portieren von Shadern auf verschiedene Frameworks im "
+"Allgemeinen bietet The Book of Shaders eine `Seite <https://thebookofshaders."
+"com/04>`_ zum Ausführen von Shadern in verschiedenen Frameworks."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:202
 msgid ""
@@ -546,6 +580,9 @@ msgid ""
 "version of GLSL. However, it still has the regular types, including "
 "constants and macros."
 msgstr ""
+"Das Buch der Shader verwendet die Webgl-Spezifikation, sodass eine etwas "
+"andere Version von GLSL ausgeführt wird. Es gibt jedoch weiterhin die "
+"regulären Typen, einschließlich Konstanten und Makros."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:208
 msgid ""
@@ -553,24 +590,29 @@ msgid ""
 "in GLSL. Everything written in a Book of Shaders ``main`` function should be "
 "copied into Godot's ``fragment`` function."
 msgstr ""
+"Der Einstiegspunkt für einen Buch der Shader Fragment-Shader ist ``main``, "
+"genau wie in GLSL. Alles was in einer ``main`` -Funktion von Buch der Shader "
+"geschrieben ist, sollte in Godots ``fragment``-Funktion kopiert werden."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:214
 msgid ""
 "The Book of Shaders sticks closer to plain GLSL than Shadertoy does. It also "
 "implements fewer uniforms than Shadertoy."
 msgstr ""
+"Das Buch der Shader hält sich genauer an GLSL als Shadertoy. Es "
+"implementiert auch weniger Uniforms als Shadertoy."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:224
 msgid "u_resolution"
-msgstr ""
+msgstr "u_resolution"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "u_time"
-msgstr ""
+msgstr "u_time"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:228
 msgid "u_mouse"
-msgstr ""
+msgstr "u_mouse"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:234
 msgid ""

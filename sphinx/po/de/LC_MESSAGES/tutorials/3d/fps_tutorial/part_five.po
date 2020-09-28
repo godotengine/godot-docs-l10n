@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,10 +39,10 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_four` will be the starting project for part 5"
 msgstr ""
-"Es wird davon ausgegangen, dass du :ref:`doc_fps_tutorial_part_four` "
-"beendest hast, bevor du mit diesem Teil der Anleitung fortfährst. Das "
+"Es wird davon ausgegangen, dass Sie :ref:`doc_fps_tutorial_part_four` "
+"beendet haben, bevor Sie mit diesem Teil der Anleitung fortfahren. Das "
 "fertige Projekt aus :ref:`doc_fps_tutorial_part_four` wird das Startprojekt "
-"für Teil 5 sein"
+"für Teil 5 sein."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:16
 msgid "Let's get started!"
@@ -57,8 +57,8 @@ msgid ""
 "Firstly, let's give the player some grenades to play with. Open up ``Grenade."
 "tscn``."
 msgstr ""
-"Zuerst geben wir dem Spieler ein paar Granaten zum Spielen. Öffne ``Grenade."
-"tscn``."
+"Zuerst geben wir dem Spieler ein paar Granaten zum Spielen. Öffnen Sie "
+"``Grenade.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:23
 msgid ""
@@ -82,7 +82,6 @@ msgstr ""
 "ref:``Area <class_Area>` Node, der den Sprengradius der Granate darstellt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:28
-#, fuzzy
 msgid ""
 "Finally, the last thing to note is ``Explosion``. This is the :ref:"
 "`Particles <class_Particles>` node that will emit an explosion effect when "
@@ -91,12 +90,12 @@ msgid ""
 "also emitted using world coordinates instead of local coordinates, so we "
 "have ``Local Coords`` unchecked as well."
 msgstr ""
-"Schließlich ist als letztes die ``Explosion`` zu erwähnen. Dies ist das :ref:"
-"`Particles <class_Particles>` Node, das einen Explosionseffekt emittiert, "
-"wenn die Granate explodiert. Eine Sache, die man hier erwähnen sollte, ist, "
+"Schließlich ist als letztes die ``Explosion`` zu erwähnen. Dies ist der :ref:"
+"`Partikel <class_Particles>`-Node, der einen Explosionseffekt emittiert, "
+"wenn die Granate explodiert. Eine Sache die man hier erwähnen sollte ist, "
 "dass wir ``One shot`` aktiviert haben. Damit emittieren wir alle Partikel "
 "auf einmal. Die Partikel werden auch unter Verwendung von Weltkoordinaten "
-"anstelle von lokalen Koordinaten emittiert, Dadurch haben wir die ``Local "
+"anstelle von lokalen Koordinaten emittiert, daher haben wir die ``Local "
 "Coords`` nicht angekreuzt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:32
@@ -104,18 +103,18 @@ msgid ""
 "If you want, you can see how the particles are set up by looking through the "
 "particle's ``Process Material`` and ``Draw Passes``."
 msgstr ""
-"Wenn du willst kannst du dir anschauen, wie die Partikel aufgebaut sind, "
-"indem du durch die ``Process Material`` und ``Draw Passes`` des Partikels "
-"schaust."
+"Wenn Sie wollen können Sie sich anschauen, wie die Partikel aufgebaut sind, "
+"indem Sie durch die ``Process Material`` und ``Draw Passes`` des Partikels "
+"schauen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:34
 msgid ""
 "Let's write the code needed for the grenade. Select ``Grenade`` and make a "
 "new script called ``Grenade.gd``. Add the following:"
 msgstr ""
-"Lass uns den für die Granate benötigten Code schreiben. Wähle ``Grenade`` "
-"aus und erstelle ein neues Skript namens ``Grenade.gd``. Füge das Folgende "
-"hinzu:"
+"Lassen Sie uns den für die Granate benötigten Code schreiben. Wählen Sie "
+"``Grenade`` aus und erstellen ein neues Skript namens ``Grenade.gd``. Fügen "
+"Sie das Folgende hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:90
 msgid "Let's go over what's happening, starting with the class variables:"
@@ -247,7 +246,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:123
 msgid "Now let's look at ``_process``."
-msgstr ""
+msgstr "Lassen Sie uns jetzt ``_process`` anschauen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:125
 msgid ""
@@ -354,6 +353,7 @@ msgstr ""
 msgid ""
 "``player_body``: The player's :ref:`KinematicBody <class_KinematicBody>`."
 msgstr ""
+"``player_body``: Der :ref:`KinematicBody <class_KinematicBody>` des Spielers."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:252
 msgid ""
@@ -456,7 +456,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:299
 msgid "Adding grenades to the player"
-msgstr ""
+msgstr "Dem Spieler Granaten hinzufügen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:301
 msgid ""
@@ -576,6 +576,9 @@ msgid ""
 "Now the player can use both types of grenades, but there are still a few "
 "things we should probably add before we move on to adding the other things."
 msgstr ""
+"Jetzt kann der Spieler beide Arten von Granaten verwenden, aber es gibt noch "
+"einige Dinge, die wir wahrscheinlich hinzufügen sollten, bevor wir mit dem "
+"Hinzufügen der anderen Sachen fortfahren."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:381
 msgid ""
@@ -983,6 +986,8 @@ msgid ""
 "``flash_timer``: A variable for tracking how long the muzzle flash meshes "
 "have been visible."
 msgstr ""
+"``flash_timer``: Eine Variable zum Verfolgen wie lange die Meshes der "
+"Mündungsblitze sichtbar waren."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
@@ -1107,7 +1112,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
-msgstr ""
+msgstr "Lassen Sie uns als nächstes ``_ready`` durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:818
 msgid ""
@@ -1148,7 +1153,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
-msgstr ""
+msgstr "Lassen Sie uns nun ``_physics_process`` durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:835
 msgid ""
@@ -1211,7 +1216,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:861
 msgid "Next let's go through ``fire_bullet``."
-msgstr ""
+msgstr "Lassen Sie uns als nächstes ``fire_bullet`` durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 msgid "Firstly, we check whether the turret is using a raycast."
@@ -1290,7 +1295,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
 msgid "Now let's look at ``body_exited_vision``."
-msgstr ""
+msgstr "Schauen wir uns nun ``body_exited_vision`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:900
 msgid ""

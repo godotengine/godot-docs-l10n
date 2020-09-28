@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,12 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
+"Godot verfügt über eine einfache Serialisierungs-API, die auf Variant "
+"basiert. Sie wird verwendet um Datentypen effizient in ein Array von Bytes "
+"zu konvertieren. Diese API wird in den Funktionen ``get_var`` und "
+"``store_var`` von :ref:`class_File` sowie in den Paket-APIs für :ref:"
+"`class_PacketPeer` verwendet. Dieses Format wird *nicht* für binäre Szenen "
+"und Ressourcen verwendet."
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:16
 msgid "Packet specification"
@@ -261,7 +267,7 @@ msgstr "9"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "plane"
-msgstr ""
+msgstr "plane"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
@@ -269,7 +275,7 @@ msgstr "10"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "quat"
-msgstr ""
+msgstr "quat"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
@@ -294,7 +300,7 @@ msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "basis"
-msgstr "Basis"
+msgstr "basis"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "13"
@@ -302,7 +308,7 @@ msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
-msgstr ""
+msgstr "transform"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "14"
@@ -378,7 +384,7 @@ msgstr "21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "int array"
-msgstr ""
+msgstr "int array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "22"
@@ -386,7 +392,7 @@ msgstr "22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "real array"
-msgstr ""
+msgstr "real array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "23"
@@ -394,7 +400,7 @@ msgstr "23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "string array"
-msgstr ""
+msgstr "string array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
@@ -406,7 +412,7 @@ msgstr "24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "vector2 array"
-msgstr ""
+msgstr "vector2 array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "25"
@@ -414,7 +420,7 @@ msgstr "25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "vector3 array"
-msgstr ""
+msgstr "vector3 array"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "26"
@@ -517,7 +523,7 @@ msgstr "Offset"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Len"
-msgstr ""
+msgstr "Len"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:96
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:105

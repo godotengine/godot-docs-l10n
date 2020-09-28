@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:4
 msgid "CanvasItem shaders"
-msgstr ""
+msgstr "2D CanvasItem Shader"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:6
 msgid ""
@@ -121,7 +121,7 @@ msgstr "**light_only**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:33
 msgid "Only draw on light pass."
-msgstr ""
+msgstr "Nur bei Lichtdurchlass zeichnen."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:35
 msgid "**skip_vertex_transform**"
@@ -170,6 +170,8 @@ msgid ""
 "Global time, in seconds. It's subject to the rollover setting (which is "
 "3,600 -1 hour- by default)."
 msgstr ""
+"Globale Zeit in Sekunden. Es unterliegt der Rollover-Einstellung "
+"(standardmäßig 3.600 - Standardmäßig 1 Stunde)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:59
 msgid "Vertex built-ins"
@@ -207,19 +209,23 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
 msgid "Then, in your vertex shader:"
-msgstr ""
+msgstr "Dann in Ihrem Vertex-Shader:"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:98
 msgid ""
 "``world_position`` can then be used in either the vertex or fragment "
 "functions."
 msgstr ""
+"``world_position`` kann dann entweder in den Vertex- oder Fragmentfunktionen "
+"verwendet werden."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:100
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Andere integrierte Funktionen wie UV und COLOR werden ebenfalls an die "
+"Fragmentfunktion übergeben, wenn sie nicht verändert wurden."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:102
 msgid ""
@@ -245,7 +251,7 @@ msgstr "in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:112
 msgid "Image space to view space transform."
-msgstr ""
+msgstr "Bildraum zum Anzeigen der Raumtransformation."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
 msgid "in mat4 **EXTRA_MATRIX**"
@@ -253,7 +259,7 @@ msgstr "in mat4 **EXTRA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
 msgid "Extra transform."
-msgstr ""
+msgstr "Extra Transformation."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
 msgid "in mat4 **PROJECTION_MATRIX**"
@@ -269,7 +275,7 @@ msgstr "in vec4 **INSTANCE_CUSTOM**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
 msgid "Instance custom data."
-msgstr ""
+msgstr "Benutzerdefinierte Daten instanzieren."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:120
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
@@ -308,9 +314,8 @@ msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
-#, fuzzy
 msgid "Texture coordinates."
-msgstr "Nächste Koordinate"
+msgstr "Textur Koordinaten"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
@@ -399,7 +404,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "inout float **NORMALMAP_DEPTH**"
-msgstr ""
+msgstr "inout float **NORMALMAP_DEPTH**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
 msgid "Normalmap depth for scaling."
@@ -472,7 +477,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
 msgid "Light built-ins"
-msgstr "Eingebaute Lichtarten"
+msgstr "Eingebaute Beleuchtungsarten"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
 msgid ""
@@ -566,7 +571,7 @@ msgstr "inout vec4 **LIGHT_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:251
 msgid "Color of Light."
-msgstr ""
+msgstr "Farbe des Lichts."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
 msgid "in vec2 **LIGHT_UV**"
@@ -574,7 +579,7 @@ msgstr "in vec2 **LIGHT_UV**"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
 msgid "UV for Light texture."
-msgstr ""
+msgstr "UV für Beleuchtungstextur."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:255
 msgid "out vec4 **SHADOW_COLOR**"

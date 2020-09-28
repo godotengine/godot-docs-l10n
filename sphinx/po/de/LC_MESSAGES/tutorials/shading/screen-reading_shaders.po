@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:4
 msgid "Screen-reading shaders"
-msgstr ""
+msgstr "Bildschirmlesender-Shader"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:7
 msgid "Introduction"
@@ -34,6 +34,12 @@ msgid ""
 "problems. As a result, not even the most modern hardware supports this "
 "properly."
 msgstr ""
+"Sehr oft ist es erwünscht einen Shader zu erstellen, der von demselben "
+"Bildschirm liest, auf den er schreibt. 3D-APIs wie OpenGL oder DirectX "
+"machen dies aufgrund interner Hardwareeinschränkungen sehr schwierig. GPUs "
+"sind extrem parallel, sodass das Lesen und Schreiben alle möglichen Cache- "
+"und damit verbundene Probleme verursacht. Infolgedessen unterstützt dies "
+"nicht einmal die modernste Hardware ordnungsgemäß."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:16
 msgid ""
@@ -41,10 +47,14 @@ msgid ""
 "a back-buffer and then read from it while drawing. Godot provides a few "
 "tools that make this process easy!"
 msgstr ""
+"Die Problemumgehung besteht darin, eine Kopie des Bildschirms oder eines "
+"Teils des Bildschirms in einen Rückpuffer zu erstellen und dann beim "
+"Zeichnen daraus zu lesen. Godot bietet einige Tools, die diesen Prozess "
+"vereinfachen!"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
 msgid "SCREEN_TEXTURE built-in texture"
-msgstr ""
+msgstr "SCREEN_TEXTURE eingebaute Textur"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:23
 msgid ""
@@ -58,6 +68,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:34
 msgid "results in an invisible object, because it just shows what lies behind."
 msgstr ""
+"führt zu einem unsichtbaren Objekt, da es nur zeigt was dahinter steckt."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:36
 msgid ""
@@ -65,22 +76,29 @@ msgid ""
 "chunk of the screen, it also does an efficient separatable gaussian blur to "
 "its mipmaps."
 msgstr ""
+"Der Grund, warum texturLod verwendet werden muss liegt darin, dass Godot "
+"beim Zurückkopieren eines Teils des Bildschirms auch eine effiziente, "
+"trennbare Gaußsche Unschärfe für seine MipMaps ausführt."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:39
 msgid ""
 "This allows for not only reading from the screen, but reading from it with "
 "different amounts of blur at no cost."
 msgstr ""
+"Dies ermöglicht nicht nur das Lesen vom Bildschirm, sondern auch das "
+"kostenlose Lesen davon mit unterschiedlichen Unschärfen."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:44
 msgid ""
 "Mipmaps are not generated in GLES2 due to poor performance and compatibility "
 "with older devices."
 msgstr ""
+"MipMaps werden in GLES2 aufgrund der schlechten Leistung und Kompatibilität "
+"mit älteren Geräten nicht generiert."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:48
 msgid "SCREEN_TEXTURE example"
-msgstr ""
+msgstr "SCREEN_TEXTURE Beispiel"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:50
 msgid ""
@@ -91,7 +109,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:74
 msgid "Behind the scenes"
-msgstr ""
+msgstr "hinter den Kulissen"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:76
 msgid ""
@@ -110,6 +128,9 @@ msgid ""
 "second one will not use the result of the first one, resulting in unexpected "
 "visuals:"
 msgstr ""
+"Wenn sich in 2D Shader überlappen die ``SCREEN_TEXTURE`` verwenden, "
+"verwendet der zweite das nicht Ergebnis des ersten, was zu unerwarteten "
+"visuellen Elementen führt:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:90
 msgid ""
@@ -129,6 +150,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:100
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
 msgstr ""
+"Bei richtigem Kopieren des Rückpuffers zeigen die beiden Kugeln einen "
+"korrekten Übergang:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:104
 msgid ""
@@ -148,13 +171,15 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:114
 msgid "Back-buffer logic"
-msgstr ""
+msgstr "Rückpufferlogik"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:116
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
 msgstr ""
+"Um es verständlicher zu machen, funktioniert die Rückpuffer-Kopierlogik in "
+"Godot folgendermaßen:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:119
 msgid ""
@@ -162,6 +187,9 @@ msgid ""
 "back buffer before drawing that node. This only happens the first time; "
 "subsequent nodes do not trigger this."
 msgstr ""
+"Wenn ein Node ``SCREEN_TEXTURE`` verwendet, wird der gesamte Bildschirm in "
+"den Backpuffer kopiert, noch bevor dieser Node gezeichnet wird. Dies "
+"geschieht nur beim ersten Mal; nachfolgende Nodes lösen dies nicht aus."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:122
 msgid ""
@@ -193,8 +221,13 @@ msgid ""
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
+"Bei 3D-Shadern ist es auch möglich, auf den Bildschirmtiefenpuffer "
+"zuzugreifen. Hierzu wird das integrierte ``DEPTH_TEXTURE`` verwendet. Diese "
+"Textur ist nicht linear; es muss über die inverse Projektionsmatrix "
+"konvertiert werden."
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:143
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
 msgstr ""
+"Der folgende Code ruft die 3D-Position unter dem gezeichneten Pixel ab:"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "une configuration d’importation pour les textures, l’audio, les scènes, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -46,7 +45,7 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"Dans Godot 3.0, nous utilisons une approche plus moderne pour importer : "
+"Dans Godot 3.0+, nous utilisons une approche plus moderne pour importer : "
 "déposez simplement vos assets (fichiers images, scènes, fichiers audios, "
 "polices, etc.) directement dans le répertoire du projet (copiez les "
 "manuellement avec l’explorateur de fichier de votre système d’exploitation). "
@@ -61,28 +60,37 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"Cela signifie que lorsque vous essayez d'accéder à des ressources importées "
+"par le biais du code, vous devez utiliser le :ref:`Resource "
+"Loader<class_ResourceLoader>` car il prendra automatiquement en compte "
+"l'endroit où les fichiers internes sont enregistrés. Si vous essayez "
+"d'accéder à une ressource importée en utilisant la classe :ref:`Fichier "
+"<classe_Fichier>`, cela fonctionnera dans l'éditeur, mais pas dans le projet "
+"exporté."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"Cependant, la classe :ref:`Resource Loader<class_ResourceLoader>` ne peut "
+"pas accéder aux fichiers non importés, seule la classe :ref:`File "
+"<class_File>` le peut."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "Changer les paramètres d’importation"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Changer les paramètres d’importation d’un asset dans Godot est facile "
-"(encore une fois, gardez à l’esprit que les paramètres d’importation sont "
-"seulement présents pour les types de ressources non-natifs de Godot). "
-"Sélectionnez la ressource appropriée dans le dock du système de fichiers :"
+"Pour changer les paramètres d’importation d’un asset dans Godot(encore une "
+"fois, gardez à l’esprit que les paramètres d’importation sont seulement "
+"présents pour les types de ressources non-natifs de Godot) sélectionnez la "
+"ressource concernée dans le dock du système de fichiers :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
@@ -105,9 +113,8 @@ msgstr ""
 "elles lors de leur réimportation."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "Utilisation de plusieurs threads"
+msgstr "Réimporter plusieurs assets"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -117,6 +124,12 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"En travaillant sur un projet, vous pouvez constater que plusieurs assets "
+"doivent avoir les mêmes paramètres modifiés, comme l'activation des mipmaps, "
+"mais que vous ne voulez que ces paramètres spécifiques uniquement soient "
+"modifiés. Pour ce faire, sélectionnez chaque asset que vous souhaitez "
+"réimporter dans le système de fichiers. Dans l'onglet d'importation, il y "
+"aura désormais une case à cocher à gauche de chaque paramètre d'importation."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -125,6 +138,10 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Cochez la case des paramètres que vous souhaitez modifier sur vos assets "
+"importés, puis modifiez les paramètres normalement. Enfin, cliquez sur le "
+"bouton de réimportation et chaque asset sélectionné sera réimporté avec "
+"uniquement les paramètres modifiés."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"

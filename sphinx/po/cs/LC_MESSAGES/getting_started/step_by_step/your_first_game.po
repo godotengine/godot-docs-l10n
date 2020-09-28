@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,10 +134,11 @@ msgid "Player scene"
 msgstr "Scéna Player (Hráč)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
+#, fuzzy
 msgid ""
-"The first scene we will make defines the ``Player`` object. One of the "
-"benefits of creating a separate Player scene is that we can test it "
-"separately, even before we've created other parts of the game."
+"The first scene will define the ``Player`` object. One of the benefits of "
+"creating a separate Player scene is that we can test it separately, even "
+"before we've created other parts of the game."
 msgstr ""
 "První scéna, kterou vytvoříme, definuje objekt ``Player``. Jednou z výhod "
 "vytvoření samostatné hráčské scény je to, že ji můžeme testovat samostatně, "
@@ -881,16 +882,17 @@ msgid "Main scene"
 msgstr "Hlavní scéna"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
+#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
-"`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
-"your saved ``Player.tscn``."
+"`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
+"Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
 "Nyní je čas to všechno spojit. Vytvořte novou scénu a přidejte :ref:"
 "`Node<class_Node>` s názvem `` Main``. Klikněte na tlačítko \"Instance\" a "
 "vyberte uložený soubor `` Player.tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:677
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -898,7 +900,7 @@ msgstr ""
 "Nyní přidejte následující uzly jako potomky ``Main`` a pojmenujte je podle "
 "obrázku (hodnoty jsou v sekundách):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -906,7 +908,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (pojmenovaný ``MobTimer``) - pro ovládání času "
 "generování nepřátel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -914,7 +916,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (pojmenovaný ``ScoreTimer``) - pro zvýšení skóre "
 "za každou sekundu bez srážky"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -922,7 +924,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (pojmenovaný ``StartTimer``) - pro zpoždění před "
 "spuštěním"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:683
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -930,24 +932,24 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (pojmenovaný ``StartPosition``) - pro "
 "označení počáteční pozice hráče"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:685
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:686
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "Nastavte vlastnost `Wait Time``každého z uzlů` `Timer`` takto:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:688
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:689
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:691
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:692
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:693
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -955,11 +957,11 @@ msgstr ""
 "Dále nastavte vlastnost ``One Shot`` uzlu ``StartTimer`` na\" On \"a "
 "nastavte ``Position`` v uzlu ``StartPosition`` na ``(240, 450)``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:696
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:697
 msgid "Spawning mobs"
 msgstr "Zrození nepřátel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:698
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:699
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -971,7 +973,7 @@ msgstr ""
 "názvem ``MobPath`` jako potomka ``Main``. Když vyberete ``Path2D``, uvidíte "
 "v horní části editoru některá nová tlačítka:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:705
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:706
 #, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
@@ -986,7 +988,7 @@ msgstr ""
 "lze nalézt nalevo od tlačítka \"Lock\", které se zobrazí jako magnet vedle "
 "některých protínajících se čar."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:713
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -994,7 +996,7 @@ msgstr ""
 "Nakreslete cestu *ve směru hodinových ručiček*, jinak budou vaši nepřátelé "
 "natočení *směrem ven* místo *dovnitř*!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:718
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:719
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -1002,7 +1004,7 @@ msgstr ""
 "Po umístění bodu „4“ do obrázku klikněte na tlačítko „Zavřít křivku“ a vaše "
 "cesta bude úplná."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:721
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -1015,15 +1017,15 @@ msgstr ""
 "jak se pohybuje, takže ji můžeme použít k výběru náhodné polohy a směru "
 "podél cesty."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:726
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:727
 msgid "Your scene should look like this:"
 msgstr "Vaše scéna by měla vypadat takto:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:731
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid "Main script"
 msgstr "Hlavní skript"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:733
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:734
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -1032,7 +1034,7 @@ msgstr ""
 "(PackedScene) ``, abychom nám mohli vybrat scénu Mob, pro kterou chceme "
 "vytvořit instanci."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:773
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:774
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob`` property in the "
 "Inspector under \"Script Variables\"."
@@ -1040,17 +1042,17 @@ msgstr ""
 "Klikněte na uzel ``Main`` a uvidíte vlastnost ``Mob`` v Inspektoru pod "
 "\"Proměnné skriptu\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:776
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:777
 msgid "You can assign this property's value in two ways:"
 msgstr "Hodnotu této vlastnosti můžete přiřadit dvěma způsoby:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:778
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:779
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
 msgstr "Přetáhněte ``Mob.tscn`` z panelu \"FileSystem\" do vlastnosti `Mob``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:780
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
@@ -1058,7 +1060,7 @@ msgstr ""
 "Klikněte na šipku dolů vedle „[prázdné]“ a vyberte „Načíst“. Vyberte `` Mob."
 "tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:783
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:784
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
@@ -1066,7 +1068,7 @@ msgstr ""
 "Vyberte uzel ``Player`` ve stromové struktuře scény a poté zvolte kartu "
 "„Uzel“. Dále se ujistěte, že máte vybranou možnost „Signály“."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:786
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:787
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -1086,7 +1088,7 @@ msgstr ""
 "„Připojit“. K nové funkci přidejte následující kód a také funkci "
 "``new_game``, která nastaví vše pro novou hru:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:827
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:828
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` , and ``MobTimer``) to the main script. "
@@ -1097,7 +1099,7 @@ msgstr ""
 "`` ScoreTimer``a`` MobTimer``) do hlavního skriptu.`` StartTimer``spustí "
 "další dva časovače.`` ScoreTimer`` zvýší skóre o 1."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:854
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:855
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -1109,14 +1111,14 @@ msgstr ""
 "``PathFollow2D`` se bude automaticky otáčet, jak následuje cestu, takže ji "
 "použijeme k výběru směru a polohy nepřátel."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:860
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:861
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
 "Všimněte si, že do scény musí být přidána nová instance pomocí "
 "''add_child()''."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
@@ -1126,11 +1128,11 @@ msgstr ""
 "nikoli stupně. Pokud se vám pracuje pohodlněji se stupni, budete muset "
 "použít převodní funkce ``deg2rad ()`` a ``rad2deg ()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:914
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid "Testing the scene"
 msgstr "Testování scény"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:916
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
 "Let's test the scene to make sure everything is working. Add this to "
 "``_ready()``:"
@@ -1138,7 +1140,7 @@ msgstr ""
 "Vyzkoušejte scénu, abychom se ujistili, že vše funguje. Přidejte toto do `` "
 "_ready () ``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:934
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "
 "automatically when the game launches. Press the \"Play\" button and select "
@@ -1148,7 +1150,7 @@ msgstr ""
 "automaticky při spuštění hry. Stiskněte tlačítko \"Play\" a po zobrazení "
 "výzvy vyberte ``Main.tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "
 "player disappear when hit by a mob."
@@ -1156,7 +1158,7 @@ msgstr ""
 "Měli byste být schopni pohybovat hráčem do všech směrů, vidět rozmnožování "
 "nepřátek a sledovat, jak hráč zmizí, když je zasažen nepřítelem."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:941
 msgid ""
 "When you're sure everything is working, remove the call to ``new_game()`` "
 "from ``_ready()``."
@@ -1164,11 +1166,11 @@ msgstr ""
 "Pokud jste si jisti, že vše funguje, odeberte volání ``new_game ()`` z `` "
 "_ready () ``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -1182,7 +1184,7 @@ msgstr ""
 "<class_CanvasLayer>. „HUD“ znamená „heads-up display“, informační displej, "
 "který se zobrazuje jako překryv v horní části herní obrazovky."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:952
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:953
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -1192,23 +1194,23 @@ msgstr ""
 "uživatelského rozhraní do vrstvy nad zbytkem hry, takže informace, které "
 "zobrazuje, nejsou zakryty žádnými herními prvky, jako je hráč nebo nepřátelé."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:956
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:957
 msgid "The HUD needs to display the following information:"
 msgstr "HUD musí zobrazit následující informace:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:958
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "Skóre, změněno uzlem ``ScoreTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:959
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "Zprávu, například „Game Over“ nebo „Připravte se!“"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:960
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:961
 msgid "A \"Start\" button to begin the game."
 msgstr "Tlačítko \"Start\" pro zahájení hry."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:963
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1219,27 +1221,27 @@ msgstr ""
 "typy :ref:`Control <class_Control>` nodes: :ref:`Label <class_Label>` a: "
 "ref: `Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:966
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:967
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "Jako podřízené uzlu ``HUD`` vytvořte následující:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:968
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` s názvem ``ScoreLabel``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:969
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid ":ref:`Label <class_Label>` named ``Message``."
 msgstr ":ref:`Label <class_Label>` pojmenovaný ``Message``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:970
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:971
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ":ref:`Button <class_Button>` s názvem ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:971
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` s názvem ``MessageTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:973
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1251,11 +1253,11 @@ msgstr ""
 "herníchzdrojích je obsažen soubor s názvem „Xolonium-Regular.ttf“. Chcete-li "
 "použít toto písmo, proveďte následující:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:978
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:979
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr "V části „Vlastní písma“ vyberte „Nový DynamicFont“"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:982
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:983
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1265,7 +1267,7 @@ msgstr ""
 "zvolte \"Načíst\" a vyberte soubor \"Xolonium-Regular.ttf\". Musíte také "
 "nastavit písmo ``Velikost``. Nastavení \"64\" funguje dobře."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:988
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:989
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the DynamicFont property and choose \"Copy\", then \"Paste\" it in "
@@ -1275,7 +1277,7 @@ msgstr ""
 "vlastnosti DynamicFont a zvolit \"Kopírovat\", pak \"Vložit\" na stejné "
 "místo na ostatních dvou řídících uzlech."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:992
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:993
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1291,7 +1293,7 @@ msgstr ""
 "uzlu k jeho kotvě. Viz :ref:`doc_design_interfaces_with_the_control_nodes` "
 "pro více informací."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:999
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
@@ -1299,7 +1301,7 @@ msgstr ""
 "Uspořádejte uzly podle obrázku níže. Kliknutím na tlačítko \"Rozložení\" "
 "nastavíte rozvržení řídicího uzlu:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1004
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1005
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -1307,64 +1309,64 @@ msgstr ""
 "Uzly můžete přetáhnout a umístit je ručně, nebo pro přesnější umístění "
 "použijte následující nastavení:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1008
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1009
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1010
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
 msgid "*Layout* : \"Top Wide\""
 msgstr "*Layout*: \"Top Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1011
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
 msgid "*Text* : ``0``"
 msgstr "*Text*: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1012
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1013
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
 msgid "*Align* : \"Center\""
 msgstr "*Align* : \"Center\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1015
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1016
 msgid "Message"
 msgstr "Zpráva"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
 msgid "*Layout* : \"HCenter Wide\""
 msgstr "*Rozložení*: \"HCenter Wide\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1018
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1019
 msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "*Text*: ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1020
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
 msgid "*Autowrap* : \"On\""
 msgstr "*Autowrap* : \"On\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1023
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1024
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid "*Text* : ``Start``"
 msgstr "*Text*: ``Start``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
 msgid "*Layout* : \"Center Bottom\""
 msgstr "*Layout*: \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1027
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1028
 msgid "*Margin* :"
 msgstr "*Margin* :"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1029
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
 msgid "Top: ``-200``"
 msgstr "Top: `-200`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1030
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1031
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
@@ -1372,18 +1374,18 @@ msgstr ""
 "V ``MessageTimer`` nastavte ``Wait Time`` na ``2`` a nastavte vlastnost `One "
 "Shot`` na\" On \"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1035
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1036
 msgid "Now add this script to ``HUD``:"
 msgstr "Nyní přidejte tento skript do ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1054
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1055
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr ""
 "Signál ``start_game`` oznamuje uzlu ``Main``, že bylo tlačítko stisknuto."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
@@ -1391,7 +1393,7 @@ msgstr ""
 "Tato funkce se volá, když chceme dočasně zobrazit zprávu, například "
 "„Připravte se“."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1401,7 +1403,7 @@ msgstr ""
 "Over“, poté se vratíme na titulní obrazovku a po krátké pauze se zobrazí "
 "tlačítko „Start“."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1114
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1115
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -1413,11 +1415,11 @@ msgstr ""
 "velmi užitečné pro přidání zpoždění, jako například ve výše uvedeném kódu, "
 "kdy chceme počkat, než se zobrazí tlačítko „Start“."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "Tatu funkci volá uzel ``Main``, kdykoli se skóre změní."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
@@ -1425,11 +1427,11 @@ msgstr ""
 "Připojte signál ``timeout ()`` uzlu ``MessageTimer`` a ``pressed()`` signál "
 "uzlu ``StartButton`` a k novým funkcím přidejte následující kód:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
 msgid "Connecting HUD to Main"
 msgstr "Připojení HUD k Main"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
@@ -1440,7 +1442,7 @@ msgstr ""
 "``Player``. Strom scény by měl vypadat takto, takže se ujistětě, že vám něco "
 "neuniklo:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1448,7 +1450,7 @@ msgstr ""
 "Nyní musíme propojit funkcionalitu `HUD``se skriptem` `Main``. To vyžaduje "
 "několik přídavků ke scéně ``Main``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1174
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by typing \"new_game\" in the "
@@ -1460,7 +1462,7 @@ msgstr ""
 "signál \". Ověřte, že zelená ikonka připojení se nyní objeví ve skriptu "
 "vedle ``func new_game ()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -1468,11 +1470,11 @@ msgstr ""
 "V ``new_game ()`` aktualizujte zobrazení skóre a zobrazte zprávu „Připravte "
 "se“:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1194
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "V ``game_over ()`` musíme zavolat odpovídající `HUD`` funkci:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1204
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1480,7 +1482,7 @@ msgstr ""
 "Nakonec přidejte toto do ``_on_ScoreTimer_timeout ()``, aby byl displej "
 "synchronizován s měnícím se skóre:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1216
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1217
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1488,11 +1490,11 @@ msgstr ""
 "Nyní jste připraveni hrát! Klikněte na tlačítko „Přehrát projekt“. Budete "
 "vyzváni k výběru hlavní scény, takže zvolte ``Main.tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1220
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
 msgid "Removing old creeps"
 msgstr "Odstranění starých nepřátel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1222
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -1506,7 +1508,7 @@ msgstr ""
 "všem nepřátelům, aby zmizeli. Můžeme to udělat pomocí funkcionality "
 "„skupina“."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1227
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
 "In the ``Mob`` scene, select the root node and click the \"Node\" tab next "
 "to the Inspector (the same place where you find the node's signals). Next to "
@@ -1518,7 +1520,7 @@ msgstr ""
 "\"Signály\" klikněte na \"Skupiny\" a můžete zadat nový název skupiny a "
 "kliknout na tlačítko \"Přidat\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1233
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
@@ -1526,7 +1528,7 @@ msgstr ""
 "Nyní budou všechny davy ve skupině „mobs“. K funkci ``game_over ()`` v `` "
 "Main`` pak můžeme přidat následující řádek:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1246
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
@@ -1534,11 +1536,11 @@ msgstr ""
 "Funkce `call_group ()` `volá pojmenovanou funkci na každém uzlu ve skupině - "
 "v tomto případě říkáme každému nepříteli, aby se sám odstranil."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1250
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 msgid "Finishing up"
 msgstr "Dokončení"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1252
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1253
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1548,11 +1550,11 @@ msgstr ""
 "zbývajících kroků pro přidání trochu více „šťávy“ pro zlepšení herního "
 "zážitku. Nebojte se rozšířit hru o své vlastní nápady."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1257
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1258
 msgid "Background"
 msgstr "Pozadí"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1259
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1568,7 +1570,7 @@ msgstr ""
 "barvu, která se vám líbí, a vyberte \"Rozložení\" -> \"Úplný obdélník\" tak, "
 "aby pokrýval celou obrazovku."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1265
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
@@ -1576,11 +1578,11 @@ msgstr ""
 "Můžete také, pokud jej máte, místo změny barvy přidat pomocí uzlu `` "
 "TextureRect`` na pozadí obrázek."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1269
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid "Sound effects"
 msgstr "Zvukové efekty"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1271
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1272
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1591,7 +1593,7 @@ msgstr ""
 "hry. Ve složce herních zdrojů máte dva zvukové soubory: „House in a Forest "
 "Loop.ogg“ pro hudbu na pozadí a „gameover.wav“, kdy hráč prohraje."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1276
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1277
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1603,7 +1605,7 @@ msgstr ""
 "`DeathSound`. U každého z nich, klikněte na `Stream` vlastnost, vyberte "
 "možnost \"Načíst\", a vyberte odpovídající zvukový soubor."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1281
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1282
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1611,15 +1613,15 @@ msgstr ""
 "Chcete-li přehrát hudbu, přidejte ``$ Music.play ()`` do funkce `` new_game "
 "() ``a`` $ Music.stop () ``do funkce`` game_over () ``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1284
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1285
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "Nakonec přidejte do funkce ``game_over ()`` ``$ DeathSound.play ()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1287
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
 msgid "Keyboard shortcut"
 msgstr "Klávesová zkratka"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1289
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1290
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
@@ -1629,7 +1631,7 @@ msgstr ""
 "také spustit stisknutím klávesy na klávesnici. Můžeme to udělat pomocí "
 "vlastnosti \"Shortcut\" v uzlu ``Button``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1293
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1644,7 +1646,7 @@ msgstr ""
 "nový „InputEventAction“. Nakonec do vlastnosti *Action* zadejte název "
 "``ui_select``. Toto je výchozí vstupní událost spojená s mezerníkem."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1301
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1302
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
@@ -1652,7 +1654,7 @@ msgstr ""
 "Nyní, když se objeví tlačítko Start, můžete na něj buď kliknout, nebo "
 "stisknout: kbd: `Space` pro spuštění hry."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1305
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
 msgid "Project files"
 msgstr "Soubory projektu"
 
@@ -1660,10 +1662,10 @@ msgstr "Soubory projektu"
 msgid "You can find a completed version of this project at these locations:"
 msgstr "Dokončenou verzi tohoto projektu naleznete na těchto místech:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1308
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"

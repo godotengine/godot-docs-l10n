@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
-msgstr "räumliches Material"
+msgstr "3D Materialien (Spatial)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:7
 msgid "Introduction"
@@ -32,10 +32,16 @@ msgid ""
 "shader code. However, it can be converted to shader code if additional "
 "functionality is needed."
 msgstr ""
+"``SpatialMaterial`` ist ein Standard-3D-Material, das die von Künstlern "
+"meistgesuchten Funktionen bereitstellen soll, ohne dass Shader-Code "
+"geschrieben werden muss. Falls zusätzliche Funktionen benötigt werden, kann "
+"es jedoch in Shader-Code konvertiert werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
 msgstr ""
+"In dieser Anleitung werden die meisten in ``SpatialMaterial`` vorhandenen "
+"Parameter erläutert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:15
 msgid ""
@@ -44,6 +50,11 @@ msgid ""
 "*Material* property of the node using the mesh (such as a MeshInstance "
 "node), or in the *Material Override* property of the node using the mesh."
 msgstr ""
+"Es gibt drei Möglichkeiten, einem Objekt ein ``SpatialMaterial`` "
+"hinzuzufügen. Es kann in der Eigenschaft *Material* des Meshes hinzugefügt "
+"werden. Sie kann in der Eigenschaft *Material* des Nodes mithilfe des Meshes "
+"(z.B. einem MeshInstance-Node) oder in der Eigenschaft *Material "
+"überschreiben* des Nodes mithilfe des Meshes hinzugefügt werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
@@ -55,6 +66,14 @@ msgid ""
 "also override the regular material property of the node and the material "
 "property of the mesh."
 msgstr ""
+"Wenn Sie dem Mesh selbst ein Material hinzufügen, erhält das Meshes bei "
+"jeder Verwendung dieses Material. Wenn Sie dem Node mithilfe des Meshes ein "
+"Material hinzufügen, wird das Material nur von diesem Node verwendet und "
+"überschreibt auch die Materialeigenschaft des Meshes. Wenn ein Material in "
+"der Eigenschaft *Material überschreiben * des Nodes hinzugefügt wird, wird "
+"es nur von diesem Node verwendet. Außerdem werden die reguläre "
+"Materialeigenschaft des Nodes und die Materialeigenschaft des Meshes "
+"überschrieben."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:30
 msgid "Flags"
@@ -65,10 +84,12 @@ msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
 msgstr ""
+"Räumliche Materialien haben viele Flags, die die allgemeine Verwendung eines "
+"Materials bestimmen."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:37
 msgid "Transparent"
-msgstr ""
+msgstr "Transparent"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:39
 msgid ""
@@ -77,6 +98,10 @@ msgid ""
 "using a different technique (sorted from back to front and rendered in "
 "order)."
 msgstr ""
+"In Godot sind Materialien nur dann transparent, wenn sie speziell "
+"konfiguriert sind. Der Hauptgrund dafür ist, dass transparente Materialien "
+"mit einer anderen Technik gerendert werden (von hinten nach vorne sortiert "
+"und in der richtigen Reihenfolge gerendert)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:43
 msgid ""
@@ -84,28 +109,35 @@ msgid ""
 "materials unusable with many mid- and post-processing effects (such as SSAO, "
 "SSR, etc.) that require perfectly opaque geometry."
 msgstr ""
+"Diese Technik ist weniger effizient (viele Zustandsänderungen treten auf) "
+"und macht die Materialien mit vielen Mittel- und Nachbearbeitungseffekten "
+"(wie SSAO, SSR usw.) unbrauchbar, die eine perfekt lichtundurchlässige "
+"Geometrie erfordern."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:47
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
 msgstr ""
+"Aus diesem Grund werden Materialien in Godot als undurchsichtig angenommen, "
+"sofern nicht anders angegeben. Die wichtigsten Einstellungen, die "
+"Transparenz ermöglichen, sind:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:50
 msgid "Transparent flag (this one)"
-msgstr ""
+msgstr "Transparentes Flag (dieses hier)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:51
 msgid "Blend mode set to other than \"Mix\""
-msgstr ""
+msgstr "Übergangsmodus auf etwas anderes als \"Mix\" eingestellt"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:52
 msgid "Enabling distance or proximity fade"
-msgstr ""
+msgstr "Aktiviert das Verblassen bei Nähe oder Entfernung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Use Shadow to Opacity"
-msgstr ""
+msgstr "Schatten zur Deckkraft verwenden"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
 msgid ""
@@ -113,15 +145,20 @@ msgid ""
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"Durch die Beleuchtung wird das Alpha so geändert, dass schattierte Bereiche "
+"undurchsichtig und nicht schattierte Bereiche transparent sind. Nützlich zum "
+"Überlagern von Schatten auf einen Kamera-Feed in AR."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:61
 msgid "Unshaded"
-msgstr ""
+msgstr "nicht schattiert"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:63
 msgid ""
 "In most cases it is common for materials to be affected by lighting (shaded)."
 msgstr ""
+"In den meisten Fällen ist es üblich, dass Materialien durch Beleuchtung "
+"beeinträchtigt werden (schattiert)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:65
 msgid ""
@@ -129,10 +166,13 @@ msgid ""
 "ignore the rest. Toggling this flag on will remove all shading and display "
 "pure, unlit color."
 msgstr ""
+"In einigen Fällen möchten Sie jedoch möglicherweise nur die Albedo (Farbe) "
+"anzeigen und den Rest ignorieren. Wenn Sie dieses Flag aktivieren, werden "
+"alle Schattierungen entfernt und reine, unbeleuchtete Farben angezeigt."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:72
 msgid "Vertex Lighting"
-msgstr ""
+msgstr "Vertex Beleuchtung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:74
 msgid ""
@@ -140,6 +180,9 @@ msgid ""
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
+"Godot hat dank des Tiefenvorlaufs mehr oder weniger einheitliche Kosten pro "
+"Pixel. Alle Beleuchtungsberechnungen werden durchgeführt, indem der "
+"Beleuchtungs-Shader für jedes Pixel ausgeführt wird."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:77
 msgid ""
@@ -148,22 +191,30 @@ msgid ""
 "transparency (which is common in particle systems). Switching to per-vertex "
 "lighting may help in these cases."
 msgstr ""
+"Da diese Berechnungen kostspielig sind, kann die Leistung in einigen Fällen "
+"erheblich beeinträchtigt werden, z.B. beim Zeichnen mehrerer "
+"Transparenzschichten (was in Partikelsystemen üblich ist). In diesen Fällen "
+"kann die Umstellung auf Vertex-Beleuchtung hilfreich sein."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:82
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
 msgstr ""
+"Darüber hinaus kann die Umstellung auf Vertex-Beleuchtung auf Low-End- oder "
+"Mobilgeräten die Renderleistung erheblich verbessern."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:87
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
 msgstr ""
+"Beachten Sie, dass bei aktivierter Vertex-Beleuchtung nur gerichtete "
+"Beleuchtung Schatten erzeugen kann (aus Leistungsgründen)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid "No Depth Test"
-msgstr ""
+msgstr "Kein Tiefentest"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:93
 msgid ""
@@ -171,6 +222,9 @@ msgid ""
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
+"Damit nahe Objekte über weit entfernten Objekten erscheinen, werden "
+"Tiefenprüfungen durchgeführt. Das Deaktivieren hat zur Folge, dass Objekte "
+"über (oder unter) allem anderen angezeigt werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:97
 msgid ""
@@ -178,10 +232,13 @@ msgid ""
 "and works very well with the *Render Priority* property of Material (see the "
 "bottom of this page)."
 msgstr ""
+"Das Deaktivieren dieser Option ist am sinnvollsten, um Anzeigegeräte im Raum "
+"zu zeichnen und funktioniert sehr gut mit der Eigenschaft *Renderpriorität* "
+"von Material (siehe unten auf dieser Seite)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:104
 msgid "Use Point Size"
-msgstr ""
+msgstr "Punktgröße verwenden"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:106
 msgid ""
@@ -189,10 +246,14 @@ msgid ""
 "(generally it's made of triangles when imported from 3D DCCs). If so, then "
 "those points can be resized (see below)."
 msgstr ""
+"Diese Option ist nur wirksam, wenn die gerenderte Geometrie aus Punkten "
+"besteht (im Allgemeinen besteht sie aus Dreiecken, wenn sie aus 3D-DCCs "
+"importiert wird). In diesem Fall kann die Größe dieser Punkte geändert "
+"werden (siehe unten)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:111
 msgid "World Triplanar"
-msgstr ""
+msgstr "Dreiflächige Welt"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:113
 msgid ""
@@ -200,10 +261,13 @@ msgid ""
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
+"Bei Verwendung der dreiflächigen (Triplanar) Zuordnung (siehe unten in den "
+"Einstellungen für UV1 und UV2) wird im lokalen Objektraum triplanar "
+"berechnet. Mit dieser Option funktioniert Triplanar im Raum."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:118
 msgid "Fixed Size"
-msgstr ""
+msgstr "feste Größe"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:120
 msgid ""
@@ -211,48 +275,58 @@ msgid ""
 "distance. This is useful mostly for indicators (no depth test and high "
 "render priority) and some types of billboards."
 msgstr ""
+"Dadurch wird das Objekt unabhängig von der Entfernung mit derselben Größe "
+"gerendert. Dies ist vor allem für Anzeigegeräte (kein Tiefentest und hohe "
+"Renderpriorität) und einige Arten von Werbetafeln nützlich."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:125
 msgid "Do Not Receive Shadows"
-msgstr ""
+msgstr "Keine Schatten empfangen"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:127
 msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
 "onto it."
 msgstr ""
+"Lässt das Objekt keinen Schatten empfangen, der sonst darauf geworfen würde."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:131
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "Umgebungslicht deaktivieren"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
 "otherwise light it."
 msgstr ""
+"Lässt das Objekt keine Umgebungsbeleuchtung erhalten, die es sonst "
+"beleuchten würde."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:137
 msgid "Ensure Correct Normals"
-msgstr ""
+msgstr "Stellen Sie sicher, dass die Normals korrekt sind"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
 msgid "Fixes normals when non-uniform scaling is used."
 msgstr ""
+"Gleicht Normals an, wenn eine ungleichmäßige Skalierung verwendet wird."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid "Vertex Color"
-msgstr ""
+msgstr "Vertexfarbe"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default, they are ignored."
 msgstr ""
+"Mit dieser Einstellung können Sie auswählen, was standardmäßig für Vertex-"
+"Farben verwendet werden soll, die aus Ihrer 3D-Modellierungsanwendung "
+"stammen. Standardmäßig werden sie ignoriert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
-msgstr "Verwenden als Albedo"
+msgstr "Als Albedo verwenden"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
 msgid "Choosing this option means vertex color is used as albedo color."
@@ -262,27 +336,31 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:155
 msgid "Is sRGB"
-msgstr ""
+msgstr "ist sRGB"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:157
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
+"Die meisten 3D-DCCs exportieren Vertex-Farben wahrscheinlich als sRGB. Wenn "
+"Sie diese Option aktivieren, sehen sie korrekt aus."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:161
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:163
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
+"``SpatialMaterial`` verfügt auch über mehrere konfigurierbare Parameter, um "
+"viele Aspekte des Renderns zu optimieren:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
 msgid "Diffuse Mode"
-msgstr ""
+msgstr "Diffuser Modus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:171
 msgid ""
@@ -448,7 +526,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:248
 msgid "Point Size"
-msgstr ""
+msgstr "Punktgröße"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "When drawing points, specify the point size in pixels."
@@ -499,7 +577,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:275
 msgid "Grow"
-msgstr ""
+msgstr "Wachsen"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:277
 msgid "Grows the object vertices in the direction pointed by their normals:"
@@ -678,7 +756,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid "Rim"
-msgstr ""
+msgstr "Rim"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:381
 msgid ""
@@ -707,7 +785,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:440
 #: ../../docs/tutorials/3d/spatial_material.rst:460
 msgid "*This feature is only available when using the GLES3 backend.*"
-msgstr ""
+msgstr "*Diese Features ist nur bei Verwendung des GLES3-Backends verfügbar.*"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:398
 msgid ""
@@ -718,7 +796,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid "Anisotropy"
-msgstr ""
+msgstr "Anisotropie (Richtungsabhängigkeit)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:407
 msgid ""
@@ -757,7 +835,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:438
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Streuung unter der Oberfläche"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:442
 msgid ""
@@ -765,10 +843,13 @@ msgid ""
 "scattered, and then comes out. It is useful to create realistic skin, "
 "marble, colored liquids, etc."
 msgstr ""
+"Dieser Effekt emuliert Licht das die Oberfläche eines Objekts durchdringt, "
+"gestreut wird und dann austritt. Es ist nützlich um realistische Haut, "
+"Marmor, farbige Flüssigkeiten usw. zu erstellen."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:449
 msgid "Transmission"
-msgstr ""
+msgstr "Übertragung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:451
 msgid ""
@@ -776,10 +857,14 @@ msgid ""
 "transferred to the dark side (opposite from the light). This works well for "
 "thin objects such as plant leaves, grass, human ears, etc."
 msgstr ""
+"Hiermit wird gesteuert wie viel Licht von der beleuchteten Seite (sichtbar "
+"für Licht) auf die dunkle Seite (gegenüber dem Licht) übertragen wird. Dies "
+"funktioniert gut für dünne Objekte wie Pflanzenblätter, Gras, menschliche "
+"Ohren usw."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:458
 msgid "Refraction"
-msgstr ""
+msgstr "Brechung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:462
 msgid ""
@@ -788,10 +873,14 @@ msgid ""
 "allows distorting the transparency in a way similar to refraction in real "
 "life."
 msgstr ""
+"Wenn die Brechung aktiviert ist, ersetzt sie die Alpha-Überblendung und "
+"Godot versucht stattdessen Informationen hinter dem gerenderten Objekt "
+"abzurufen. Dies ermöglicht eine Verzerrung der Transparenz auf ähnliche "
+"Weise wie die Brechung im wirklichen Leben."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:469
 msgid "Detail"
-msgstr ""
+msgstr "Detail"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:471
 msgid ""
@@ -799,10 +888,15 @@ msgid ""
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
+"Godot ermöglicht die Verwendung von sekundärer Albedo und normalen Karten, "
+"um eine Detailtextur zu erzeugen, die auf viele Arten gemischt werden kann. "
+"Durch die Kombination mit sekundären UV- oder triplanaren Modi können viele "
+"interessante Texturen erzielt werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
 msgstr ""
+"Es gibt verschiedene Einstellungen die steuern, wie Details verwendet werden."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:479
 msgid ""
@@ -811,11 +905,17 @@ msgid ""
 "is for the regular material textures, different shades of gray are for "
 "partial blending of the material textures and detail textures."
 msgstr ""
+"Maske: Die Detailmaske ist ein Schwarzweißbild mit dem gesteuert wird, wo "
+"das Mischen auf einer Textur stattfindet. Weiß steht für die Detailtexturen, "
+"Schwarz für die normalen Materialtexturen, verschiedene Graustufen für die "
+"teilweise Überblendung der Materialtexturen und Detailtexturen."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:484
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
+"Übergangsmodus: Diese vier Modi steuern, wie die Texturen ineinander "
+"überblenden.."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""
@@ -908,7 +1008,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:544
 msgid "Render priority"
-msgstr ""
+msgstr "Render Reihenfolge"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:546
 msgid ""

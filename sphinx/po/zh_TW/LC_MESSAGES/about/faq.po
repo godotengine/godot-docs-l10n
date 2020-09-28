@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -454,12 +454,40 @@ msgstr ""
 "一樣野心勃勃的社群貢獻者。"
 
 #: ../../docs/about/faq.rst:187
+msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:189
+msgid ""
+"Godot aims for cross-platform compatibility and open standards first and "
+"foremost. OpenGL and Vulkan are the technologies that are both open and "
+"available (nearly) on all platforms. Thanks to this design decision, a "
+"project developed with Godot on Windows will run out of the box on Linux, "
+"macOS, and more."
+msgstr ""
+
+#: ../../docs/about/faq.rst:195
+msgid ""
+"Since Godot only has a few people working on its renderer, we would prefer "
+"having fewer rendering backends to maintain. On top of that, using a single "
+"API on all platforms allows for greater consistency with fewer platform-"
+"specific issues."
+msgstr ""
+
+#: ../../docs/about/faq.rst:200
+msgid ""
+"In the long term, we may develop a Direct3D 12 renderer for Godot (mainly "
+"for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
+"rendering backends on all platforms, including Windows."
+msgstr ""
+
+#: ../../docs/about/faq.rst:205
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr "要怎麼做出能應付多種解析度與長寬比的素材呢？"
 
-#: ../../docs/about/faq.rst:189
+#: ../../docs/about/faq.rst:207
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -474,7 +502,7 @@ msgstr ""
 "做。剛開始這方法在 Apple 的裝置上還行，但不久後就開始出現各種有不同解析度與長"
 "寬比的 Android 與 Apple 裝置，而且大小與 DPI 的差異還很大。"
 
-#: ../../docs/about/faq.rst:197
+#: ../../docs/about/faq.rst:215
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -485,7 +513,7 @@ msgstr ""
 "幕長寬比做處理。這主要是 2D 遊戲所需要做的，3D 遊戲中就只是相機的 XFov 或 "
 "YFov 的問題而已。"
 
-#: ../../docs/about/faq.rst:201
+#: ../../docs/about/faq.rst:219
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -499,7 +527,7 @@ msgstr ""
 "(1920x1080) 或 720p (1280x720) 其中一種。但要記得，解析度越高，素材的大小就越"
 "大，也就代表要佔用更多的記憶體以及需要更長的載入時間。"
 
-#: ../../docs/about/faq.rst:209
+#: ../../docs/about/faq.rst:227
 msgid ""
 "Use the stretch options in Godot; 2D stretching while keeping aspect ratios "
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
@@ -508,7 +536,7 @@ msgstr ""
 "使用 Godot 的伸縮選項；2D 伸縮在保持長寬比的時候效果最佳。請參考 :ref:"
 "`doc_multiple_resolutions` 教學來瞭解如何實現。"
 
-#: ../../docs/about/faq.rst:213
+#: ../../docs/about/faq.rst:231
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or if there "
@@ -518,7 +546,7 @@ msgstr ""
 "確保最小解析度並決定在不同的長寬比下是要讓遊戲垂直還是水平伸縮，還是要在螢幕"
 "旁邊顯示黑條。關於這點進一步的說明請參考 :ref:`doc_multiple_resolutions`。"
 
-#: ../../docs/about/faq.rst:218
+#: ../../docs/about/faq.rst:236
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
@@ -527,11 +555,11 @@ msgstr ""
 "使用者界面則請使用 :ref:`錨定 <doc_size_and_anchors>` 來判斷控制元件是要留在"
 "原位還是要移動。如果是比較複雜的 UI，建議您瞭解有關容器 (Container) 的內容。"
 
-#: ../../docs/about/faq.rst:222
+#: ../../docs/about/faq.rst:240
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "就這樣！現在遊戲應該可以在不同解析度底下運作。"
 
-#: ../../docs/about/faq.rst:224
+#: ../../docs/about/faq.rst:242
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -541,11 +569,11 @@ msgstr ""
 "如果希望遊戲在只有小螢幕 (寬度小於 300 像素) 的上古裝置上也能運作，可以使用匯"
 "出選項來縮小圖片，並將該建構設為在 AppStore 或 GooglePlay 下特定的螢幕大小。"
 
-#: ../../docs/about/faq.rst:230
+#: ../../docs/about/faq.rst:248
 msgid "How can I extend Godot?"
 msgstr "如何擴充 Godot？"
 
-#: ../../docs/about/faq.rst:232
+#: ../../docs/about/faq.rst:250
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
@@ -554,11 +582,11 @@ msgstr ""
 "如製作 Godot 編輯器外掛或是加上其他語言的支援等有關擴充 Godot 的內容，請參"
 "考 :ref:`編輯器外掛 <doc_making_plugins>` 與工具腳本。"
 
-#: ../../docs/about/faq.rst:236
+#: ../../docs/about/faq.rst:254
 msgid "Also, see the official blog posts on these topics:"
 msgstr "另外也請參考一下有關下列主題的官方部落格文章："
 
-#: ../../docs/about/faq.rst:238
+#: ../../docs/about/faq.rst:256
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
@@ -566,12 +594,12 @@ msgstr ""
 "`GDNative 架構概覽 (英文) <https://godotengine.org/article/look-gdnative-"
 "architecture>`_"
 
-#: ../../docs/about/faq.rst:239
+#: ../../docs/about/faq.rst:257
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr ""
 "`GDNative 來了！(英文) <https://godotengine.org/article/dlscript-here>`_"
 
-#: ../../docs/about/faq.rst:241
+#: ../../docs/about/faq.rst:259
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -582,18 +610,30 @@ msgstr ""
 "官方 Python 支援 <https://github.com/touilleMan/godot-python>`_ 一樣。這是瞭"
 "解第三方函式庫要如何整合進 Godot 的一個好的開始。"
 
-#: ../../docs/about/faq.rst:247
+#: ../../docs/about/faq.rst:265
+#, fuzzy
+msgid "When is the next release of Godot out?"
+msgstr "下個版本什麼時候出？"
+
+#: ../../docs/about/faq.rst:267
+#, fuzzy
+msgid ""
+"When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
+"more information."
+msgstr "更多資訊請參考 :ref:`doc_exporting_projects` 。"
+
+#: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
 msgstr "我想參與貢獻！要從哪裡開始？"
 
-#: ../../docs/about/faq.rst:249
+#: ../../docs/about/faq.rst:273
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
 "水啦！作為一個開源專案，Godot 沒有像你這種創新且野心勃勃的開發者可不行。"
 
-#: ../../docs/about/faq.rst:252
+#: ../../docs/about/faq.rst:276
 msgid ""
 "The first place to get started is in the `issues <https://github.com/"
 "godotengine/godot/issues>`_. Find an issue that resonates with you, then "
@@ -606,11 +646,11 @@ msgstr ""
 "blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ 指南來瞭解如何 "
 "Fork、修改，最後送出 Pull Request (PR)。"
 
-#: ../../docs/about/faq.rst:257
+#: ../../docs/about/faq.rst:281
 msgid "I have a great idea for Godot. How can I share it?"
 msgstr "我有個大膽的想法可以給 Godot。該分享去哪裡？"
 
-#: ../../docs/about/faq.rst:259
+#: ../../docs/about/faq.rst:283
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -629,40 +669,40 @@ msgstr ""
 "ROADMAP.md>`_ 內提出的核心功能，還有 `解決 Bug 與找出問題 (英文) <https://"
 "github.com/godotengine/godot/issues>`_，以及與 Godot 核心成員對話。"
 
-#: ../../docs/about/faq.rst:268
+#: ../../docs/about/faq.rst:292
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr "Godot 社群中多數的開發者都對下列這些東西比較有興趣："
 
-#: ../../docs/about/faq.rst:271
+#: ../../docs/about/faq.rst:295
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr "使用 Godot 的體驗以及所遇到的問題 (這點比起增進 Godot 的想法還重要)。"
 
-#: ../../docs/about/faq.rst:273
+#: ../../docs/about/faq.rst:297
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr "因使用者專案需求而希望能實作的功能。"
 
-#: ../../docs/about/faq.rst:275
+#: ../../docs/about/faq.rst:299
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr "在學習過程中遇到的難以理解的概念。"
 
-#: ../../docs/about/faq.rst:276
+#: ../../docs/about/faq.rst:300
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "希望能在工作流程中改善的部分。"
 
-#: ../../docs/about/faq.rst:277
+#: ../../docs/about/faq.rst:301
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr "需要更清楚的教學或是說明文件寫得很模糊的部分。"
 
-#: ../../docs/about/faq.rst:279
+#: ../../docs/about/faq.rst:303
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
@@ -671,7 +711,7 @@ msgstr ""
 "請不要覺得 Godot 不歡迎你的想法。反過來說，請試著先把這些想法當成是 Godot 的"
 "設計問題來重新表達，這樣開發者們以及社群就可以此作為實現依據。"
 
-#: ../../docs/about/faq.rst:283
+#: ../../docs/about/faq.rst:307
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -683,7 +723,7 @@ msgstr ""
 "嘗試什麼、希望獲得什麼結果、以及實際上得到了什麼。這樣子來描述問題與 Idea 就"
 "有助於讓整個社群都能專注於提升整體的開發者體驗。"
 
-#: ../../docs/about/faq.rst:289
+#: ../../docs/about/faq.rst:313
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
@@ -691,11 +731,11 @@ msgstr ""
 "加分項：最好能附上截圖、具體用了什麼數字、測試案例、或是範例專案（若可能的"
 "話）。"
 
-#: ../../docs/about/faq.rst:293
+#: ../../docs/about/faq.rst:317
 msgid "Is it possible to use Godot as a library?"
 msgstr "可以把 Godot 當作函式庫來用嗎？"
 
-#: ../../docs/about/faq.rst:295
+#: ../../docs/about/faq.rst:319
 msgid ""
 "Godot is meant to be used with its editor. We recommend you give it a try, "
 "as it will most likely save you time in the long term. There are no plans to "
@@ -706,7 +746,7 @@ msgstr ""
 "可以節省很多時間。目前沒有計劃要讓 Godot 能作為函式庫使用，因為這樣會讓引擎其"
 "他的功能變得很複雜，對一般的使用者來說難以使用。"
 
-#: ../../docs/about/faq.rst:300
+#: ../../docs/about/faq.rst:324
 msgid ""
 "If you want to use a rendering library, look into using an established "
 "rendering engine instead. Keep in mind rendering engines usually have "
@@ -716,11 +756,11 @@ msgstr ""
 "若您是想用算繪引擎，建議改而使用其他正式的算繪引擎。請注意，算繪引擎的社群通"
 "常與 Godot 相比來得小。這樣會讓尋找問題答案變得比較困難。"
 
-#: ../../docs/about/faq.rst:306
+#: ../../docs/about/faq.rst:330
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Godot 怎麼不用 STL"
 
-#: ../../docs/about/faq.rst:308
+#: ../../docs/about/faq.rst:332
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -730,7 +770,7 @@ msgstr ""
 "Library，標準樣板庫)。雖然我們知道 STL 是一個很厲害的通用函式庫，但 Godot 有"
 "一些特殊需求。"
 
-#: ../../docs/about/faq.rst:312
+#: ../../docs/about/faq.rst:336
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
@@ -738,7 +778,7 @@ msgstr ""
 "STL 樣板會產生很大的符號 (Symbol)，進而讓偵錯用二進位檔的體積變大。我們用名稱"
 "很短並、少量的樣板來代替。"
 
-#: ../../docs/about/faq.rst:313
+#: ../../docs/about/faq.rst:337
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
@@ -749,13 +789,13 @@ msgstr ""
 "傳遞資料；或是 RID 系統為了效能需要 O(1) 的存取時間。還有其他類似狀況，如我們"
 "的雜湊表實作設計成能與引擎內部型別無縫整合。"
 
-#: ../../docs/about/faq.rst:314
+#: ../../docs/about/faq.rst:338
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr "容器內建了記憶體追蹤，以改進記憶體使用狀況追蹤。"
 
-#: ../../docs/about/faq.rst:315
+#: ../../docs/about/faq.rst:339
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -763,17 +803,17 @@ msgstr ""
 "在大型陣列中使用記憶體池，可以被映射到預分配緩衝區 (Preaoolocated Buffer) 或"
 "是虛擬記憶體。"
 
-#: ../../docs/about/faq.rst:316
+#: ../../docs/about/faq.rst:340
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
 msgstr "使用自定字串型別，而 STL 提供的字串太簡陋且缺乏完善的國際化支援。"
 
-#: ../../docs/about/faq.rst:319
+#: ../../docs/about/faq.rst:343
 msgid "Why does Godot not use exceptions?"
 msgstr "Godot 怎麼不用例外 (Excaption)？"
 
-#: ../../docs/about/faq.rst:321
+#: ../../docs/about/faq.rst:345
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -783,17 +823,17 @@ msgstr ""
 "我們認為無論如何遊戲不應該 Crash。若發生了未預期的狀況，Godot 會輸出錯誤 (可"
 "以被追蹤回腳本)，但接著會儘可能地修復並繼續執行。"
 
-#: ../../docs/about/faq.rst:326
+#: ../../docs/about/faq.rst:350
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "另外，例外功能會導致二進位執行檔的大小大幅增加。"
 
-#: ../../docs/about/faq.rst:330
+#: ../../docs/about/faq.rst:354
 msgid "Why does Godot not enforce RTTI?"
 msgstr "Godot 怎麼不強制 RTTI？"
 
-#: ../../docs/about/faq.rst:332
+#: ../../docs/about/faq.rst:356
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -802,11 +842,11 @@ msgstr ""
 "Godot 提供了自己的型別轉換系統，其內部可以選擇是否要使用 RTTI (執行期型態訊"
 "息)。在 Godot 內禁用 RTTI 則代表能損失一點點效能來爭取更小的二進位檔案大小。"
 
-#: ../../docs/about/faq.rst:337
+#: ../../docs/about/faq.rst:361
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "Godot 怎麼不強制使用者實作 DoD？"
 
-#: ../../docs/about/faq.rst:339
+#: ../../docs/about/faq.rst:363
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
@@ -816,7 +856,7 @@ msgstr ""
 "Coherency) 機制，但我們認為多數使用者都不是真的有需要強制使用 DoD (Data "
 "oriented Design，資料導向設計)。"
 
-#: ../../docs/about/faq.rst:343
+#: ../../docs/about/faq.rst:367
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -828,7 +868,7 @@ msgstr ""
 "要執行一些少量的修改) 時能讓效能有顯著提升。舉個例子，若每一幀都需要移動上百"
 "個 Sprite 或敵人時，DoD 就沒什麼用了，需要考慮另一種最佳化的方式。"
 
-#: ../../docs/about/faq.rst:350
+#: ../../docs/about/faq.rst:374
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -836,7 +876,7 @@ msgstr ""
 "絕大多數的遊戲都不需要 DoD。而且 Godot 對於大多數情況都提供了便利的工具來代"
 "替。"
 
-#: ../../docs/about/faq.rst:353
+#: ../../docs/about/faq.rst:377
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -845,19 +885,19 @@ msgstr ""
 "如果真的有遊戲需要處理這麼大量的物件，我們建議使用 C++ 與 GDNative 來處理吃效"
 "能的部分，剩下的部分則使用 GDScript (或 C#)。"
 
-#: ../../docs/about/faq.rst:358
+#: ../../docs/about/faq.rst:382
 msgid "How can I support Godot development or contribute?"
 msgstr "要怎麼參與貢獻或支持 Godot 的開發呢？"
 
-#: ../../docs/about/faq.rst:360
+#: ../../docs/about/faq.rst:384
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "請參考 :ref:`doc_ways_to_contribute`。"
 
-#: ../../docs/about/faq.rst:363
+#: ../../docs/about/faq.rst:387
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "有誰在為 Godot 工作？如何聯絡？"
 
-#: ../../docs/about/faq.rst:365
+#: ../../docs/about/faq.rst:389
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

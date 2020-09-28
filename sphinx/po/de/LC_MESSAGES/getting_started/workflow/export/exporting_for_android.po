@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "If you install Android Studio, you need to run it once to complete the SDK "
 "setup."
 msgstr ""
-"Wenn du Android Studio installierst, musst du es einmal ausführen, um das "
+"Wenn Sie Android Studio installieren, müssen Sie es einmal ausführen, um das "
 "SDK-Setup abzuschließen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
@@ -64,9 +64,8 @@ msgstr ""
 "Versionen funktionieren nicht."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
-#, fuzzy
 msgid "Create a debug.keystore"
-msgstr "Erstellen eines debug.keystore"
+msgstr "Erstellen eines Debug-Keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
@@ -76,9 +75,9 @@ msgid ""
 "it in the ``~/.android`` directory)."
 msgstr ""
 "Android benötigt eine Debug-Keystore-Datei zur Installation auf Geräten und "
-"zur Verteilung von nicht freigegebenen APKs. Wenn du das SDK schon einmal "
-"benutzt und Projekte gebaut hast, hat ant oder eclipse wahrscheinlich eines "
-"für dich generiert (unter Linux und MacOS findest du es im Verzeichnis ``~/."
+"zur Verteilung von nicht freigegebenen APKs. Wenn Sie das SDK schon einmal "
+"benutzt und Projekte gebaut haben, hat ant oder eclipse wahrscheinlich eines "
+"für Sie generiert (unter Linux und MacOS finden Sie es im Verzeichnis ``~/."
 "android``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:31
@@ -86,7 +85,7 @@ msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
-"Wenn du diese nicht finden kannst oder eine solche generieren musst, kann "
+"Wenn Sie diese nicht finden können oder eine solche generieren müssen, kann "
 "der Befehl keytool aus dem JDK dafür verwendet werden::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
@@ -98,15 +97,15 @@ msgid ""
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
 "Dies wird eine ``debug.keystore`` Datei in deinem aktuellen Verzeichnis "
-"erzeugen. Du solltest sie an einen einprägsamen Ort wie z.B. ``%USERPROFILE%"
-"\\.android\\`` verschieben, da du ihren Speicherort in einem späteren "
-"Schritt benötigen wirst. Weitere Informationen über die Verwendung von "
-"``keytool`` findest du in `diesem Q&A-Artikel <https://godotengine.org/"
+"erzeugen. Sie sollten sie an einen einprägsamen Ort wie z.B. ``%USERPROFILE%"
+"\\.android\\`` verschieben, da Sie ihren Speicherort in einem späteren "
+"Schritt benötigen werden. Weitere Informationen über die Verwendung von "
+"``keytool`` finden Sie in `diesem Q&A-Artikel <https://godotengine.org/"
 "qa/21349/jdk-android-file-missing>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:39
 msgid "Make sure you have adb"
-msgstr "Stelle sicher, dass du adb hast"
+msgstr "Stellen Sie sicher, dass Sie adb haben"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:41
 msgid ""
@@ -117,7 +116,7 @@ msgid ""
 msgstr ""
 "Android Debug Bridge (``adb``) ist das Kommandozeilen-Werkzeug, das zur "
 "Kommunikation mit Android-Geräten verwendet wird. Es wird mit dem SDK "
-"installiert, aber du musst möglicherweise eine (beliebige) der Android-API-"
+"installiert, aber Sie müssen möglicherweise eine (beliebige) der Android-API-"
 "Ebenen installieren, damit es im SDK-Verzeichnis installiert wird."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:46
@@ -165,15 +164,15 @@ msgstr ""
 "\\jdk-8.0.252.09-hotspot\\bin`` installiert. Unter Linux wird es "
 "normalerweise in ein Verzeichnis wie ``/usr/bin/jarsigner`` installiert. Der "
 "genaue Pfad kann je nach installiertem OpenJDK-Update und dem Betriebssystem "
-"deines Rechners variieren."
+"Ihres Rechners variieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
-"Die Debug-Datei ``.keystore``` - Du findest sie in dem Ordner, in dem du die "
-"``debug.keystore`` Datei abgelegt hast, die du oben erstellt hast."
+"Die Debug-Datei ``.keystore``` - Sie finden sie in dem Ordner, in dem Sie "
+"die ``debug.keystore`` Datei abgelegt haben, die Sie oben erstellt haben."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:69
 msgid "Once that is configured, everything is ready to export to Android!"

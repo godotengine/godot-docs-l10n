@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,11 @@ msgid ""
 "from. In most cases, it's still recommended to create icons for new classes "
 "to improve the user experience."
 msgstr ""
+"Wenn eine neue Klasse erstellt und Skripten bereitgestellt wird, wird sie "
+"auf der Benutzeroberfläche des Editors mit einem Standardsymbol angezeigt, "
+"das die Basisklasse darstellt von der sie erbt. In den meisten Fällen wird "
+"weiterhin empfohlen, Symbole für neue Klassen zu erstellen, um die "
+"Benutzererfahrung zu verbessern."
 
 #: ../../docs/development/editor/creating_icons.rst:12
 msgid "Creating icons"
@@ -39,28 +44,38 @@ msgid ""
 "instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
 "editor."
 msgstr ""
+"Um neue Symbole zu erstellen, muss zunächst ein Vektorgrafik-Editor "
+"installiert sein. Zum Beispiel können Sie den Open-Source Editor `Inkscape "
+"<https://inkscape.org/>`_ verwenden."
 
 #: ../../docs/development/editor/creating_icons.rst:17
 msgid "Clone the ``godot`` repository containing all the editor icons:"
-msgstr ""
+msgstr "Klonen Sie das ``godot`` Repository mit allen Editor-Symbolen:"
 
 #: ../../docs/development/editor/creating_icons.rst:23
 msgid ""
 "The icons must be created in a vector graphics editor in SVG format. There "
 "are two main requirements to follow:"
 msgstr ""
+"Die Symbole müssen in einem Vektorgrafik-Editor im SVG-Format erstellt "
+"werden. Es sind zwei Hauptanforderungen zu beachten:"
 
 #: ../../docs/development/editor/creating_icons.rst:26
 msgid ""
 "Icons must be 16×16. In Inkscape, you can configure the document size in "
 "**File > Document Properties**."
 msgstr ""
+"Symbole müssen 16×16 sein. In Inkscape können Sie die Dokumentgröße unter "
+"**Datei -> Dokumenteigenschaften** konfigurieren."
 
 #: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
 "Lines should be snapped to pixels whenever possible to remain crisp at lower "
 "DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
+"Linien sollten nach Möglichkeit auf Pixel ausgerichtet werden, um bei "
+"niedrigeren DPI-Werten scharf zu bleiben. Um dies zu vereinfachen, können "
+"Sie in Inkscape ein 16×16-Raster erstellen."
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid ""
@@ -172,7 +187,7 @@ msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:102
 msgid "References"
-msgstr ""
+msgstr "Referenzen"
 
 #: ../../docs/development/editor/creating_icons.rst:104
 msgid ""

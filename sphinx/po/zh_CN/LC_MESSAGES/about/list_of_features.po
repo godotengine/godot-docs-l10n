@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,7 @@ msgstr "使用一个支持 ORM 纹理的粗糙金属工作流。"
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Normal mapping."
-msgstr "Normal mapping (法线贴图)"
+msgstr "Normal mapping (法线贴图)."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid ""
@@ -875,7 +875,7 @@ msgstr "可选择2D和3D的多普勒效果。"
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
-msgstr ""
+msgstr "支持重路由 :ref:`音频总线 <doc_audio_buses>` 以及大量其它效果。"
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
@@ -884,7 +884,7 @@ msgstr "Listener3D节点从不同于3D摄像机的位置进行侦听。"
 
 #: ../../docs/about/list_of_features.rst:350
 msgid "Audio input to record microphones."
-msgstr ""
+msgstr "支持录制麦克风，作为音频输入。"
 
 #: ../../docs/about/list_of_features.rst:351
 msgid "MIDI input."
@@ -892,11 +892,11 @@ msgstr "MIDI 输入。"
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "尚不支持MIDI输出."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**被使用的 API :**"
 
 #: ../../docs/about/list_of_features.rst:357
 #, fuzzy
@@ -905,11 +905,11 @@ msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "*macOS:* CoreAudio。"
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio 或 ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
 #, fuzzy
@@ -937,11 +937,11 @@ msgstr "音频"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "WAV，可选IMA-ADPCM压缩。"
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:374
 #, fuzzy
@@ -950,7 +950,7 @@ msgstr "场景"
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(推荐使用)*."
 
 #: ../../docs/about/list_of_features.rst:377
 #, fuzzy
@@ -961,15 +961,15 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (实验性功能)。"
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)。"
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
-msgstr ""
+msgstr "Wavefront OBJ（仅静态场景，可直接被加载为mesh）。"
 
 #: ../../docs/about/list_of_features.rst:384
 msgid "Input"
@@ -979,17 +979,17 @@ msgstr "输入"
 msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
-msgstr ""
+msgstr "该输入映射系统使用硬编码的输入事件，也可以使用可重定向的输入动作。"
 
 #: ../../docs/about/list_of_features.rst:388
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
-msgstr ""
+msgstr "坐标轴参数可以映射到两个不同的操作上，这些操作可以配置死区。"
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "使用相同的代码支持键盘和手柄操作。"
 
 #: ../../docs/about/list_of_features.rst:391
 msgid "Keyboard input."
@@ -999,32 +999,33 @@ msgstr "键盘输入。"
 msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
-msgstr ""
+msgstr "按键可以被映射到\"物理\"模式，该模式下按键行为和键盘布局无关。"
 
 #: ../../docs/about/list_of_features.rst:395
-#, fuzzy
 msgid "Mouse input."
-msgstr "鼠标事件"
+msgstr "鼠标输入。"
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
-msgstr ""
+msgstr "鼠标箭头可以配置为可见，隐藏，捕获，或者限制在窗口范围内。"
 
 #: ../../docs/about/list_of_features.rst:398
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"当捕获了鼠标的原始输入时，将会绕过windows或者linux操作系统的鼠标加速设置。"
 
 #: ../../docs/about/list_of_features.rst:401
-msgid "Gamepad input (up to 8 simulatenous controllers)."
-msgstr ""
+#, fuzzy
+msgid "Gamepad input (up to 8 simultaneous controllers)."
+msgstr "手柄输入(最多同时支持8个控制器)。"
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "支持带压感的绘图笔和平板输入。"
 
 #: ../../docs/about/list_of_features.rst:405
 msgid "Navigation"
@@ -1032,7 +1033,7 @@ msgstr "导航"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "2D和3D A 星算法。"
 
 #: ../../docs/about/list_of_features.rst:408
 msgid "Navigation meshes."
@@ -1040,11 +1041,11 @@ msgstr "导航网格。"
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr ""
+msgstr "Godot4.0 支持动态障碍物躲避规划。"
 
 #: ../../docs/about/list_of_features.rst:410
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "编辑器内生成导航网格。"
 
 #: ../../docs/about/list_of_features.rst:413
 msgid "Networking"
@@ -1052,23 +1053,23 @@ msgstr "网络"
 
 #: ../../docs/about/list_of_features.rst:415
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "使用StreamPeer和TCP_Server开发底层TCP网络通信。"
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "使用PacketPeer和UDPServer 开发底层UDP网络通信。"
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "使用HTTPClient开发底层HTTP请求。"
 
 #: ../../docs/about/list_of_features.rst:418
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "使用HTTPRequest 开发上层HTTP请求。"
 
 #: ../../docs/about/list_of_features.rst:420
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "使用打包的证书相关工具，支持开箱即用的HTTPS功能。"
 
 #: ../../docs/about/list_of_features.rst:422
 #, fuzzy
@@ -1077,25 +1078,25 @@ msgstr "高级多人游戏"
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "使用远程过程调用(RPCS)实现的自动同步复制功能。"
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "支持不可靠，可靠和有序传输模型。"
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "全平台可用的WebSocket客户端和服务器实现。"
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "全平台可用的WebRTC 客户端和服务器实现。"
 
 #: ../../docs/about/list_of_features.rst:429
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
-msgstr ""
+msgstr "当在NAT后部署服务器时，支持使用UPnP来避免对转发端口的需求。"
 
 #: ../../docs/about/list_of_features.rst:433
 msgid "Internationalization"
@@ -1103,13 +1104,15 @@ msgstr "国际化"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "对包含emoji的Unicode完整支持。"
 
 #: ../../docs/about/list_of_features.rst:436
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
+"使用 ：ref：'CSV <doc_internationalizing_games>\"或 ：ref：'gettext "
+"<doc_localization_using_gettext>\"存储本地化字符串。"
 
 #: ../../docs/about/list_of_features.rst:438
 msgid ""

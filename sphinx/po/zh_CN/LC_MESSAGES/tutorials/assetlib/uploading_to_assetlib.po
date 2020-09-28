@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,41 +85,44 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:40
 msgid ""
 "The license needs to be correct. The license listed on the asset library "
-"must match the license in the repository."
+"must match the license in the repository. The repo MUST have a license file, "
+"called either \"LICENSE\" or \"LICENSE.md\". This file must contain the "
+"license text itself and a copyright statement that includes the year(s) and "
+"copyright holder."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:43
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:46
 msgid ""
 "Use proper English for the name and description of your asset. This includes "
 "using correct capitalization, and using full sentences in the description."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:47
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:50
 msgid ""
 "The icon link must be a direct link. For icons hosted on GitHub, the link "
 "must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
 #, fuzzy
 msgid "Recommendations"
 msgstr "重命名动画"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:53
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:56
 msgid ""
 "These things are not required for your asset to be approved, but if you "
 "follow these recommendations, you can help make the asset library a better "
 "place for all users."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:57
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:60
 msgid ""
 "Fix or suppress all script warnings. The warning system is there to help "
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:61
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:64
 msgid ""
 "Make your code conform to the official style guides. Having a consistent "
 "style helps other people read your code, and it also helps if other people "
@@ -127,7 +130,7 @@ msgid ""
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:66
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
 msgid ""
 "If you have screenshots in your repo, place them in their own subfolder and "
 "add a **.gdignore** file in the same folder (note: **gd**, not **git**). "
@@ -136,40 +139,40 @@ msgid ""
 "create a file whose name starts with a period."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:75
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:75
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:81
 msgid ""
 "While the asset library allows more than just GitHub, consider hosting your "
 "asset's source code on GitHub. Other services may not work reliably, and a "
 "lack of familiarity can be a barrier to contributors."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:83
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
 msgid "Submitting"
 msgstr "提交"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:85
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:88
 msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit Assets"
 "\" page of the AssetLib, which will look like this:"
 msgstr "一旦您登录，您将能够转到AssetLib的``提交资源``页面，该页面如下所示:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:88
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
 msgid "|image0|"
 msgstr "|image0|"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:90
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:93
 msgid ""
 "While it may look like a lot (and there is more as you scroll down), each "
 "field is described in terms of what you should put in. We will nonetheless "
@@ -178,21 +181,21 @@ msgstr ""
 "虽然它可能看起来很多(并且向下滚动时会显示更多)，每个字段都是根据您应该放入的"
 "内容进行描述的。但是，我们仍坚持在这里将提交表单中所需的内容详细阐述一遍。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid "**Asset Name**:"
 msgstr "**资源的名称**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:95
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
 msgstr "您的资源名称。 应该是您资源的特有描述性标题。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid "**Category**:"
 msgstr "**分类**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
 msgid ""
 "The category that your asset belongs to, and will be shown in search "
 "results. The category is split into **Addons** and **Projects**. In-editor, "
@@ -204,11 +207,11 @@ msgstr ""
 "** 。 在编辑器中，项目类型(模板，演示，项目)的资源将显示在项目管理器的"
 "AssetLib中，而插件类型的资源仅显示在项目内部中。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:107
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:110
 msgid "**Godot version**:"
 msgstr "**Godot 版本**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:107
 #, fuzzy
 msgid ""
 "The version of the engine that the asset works with. Currently, it's not "
@@ -222,11 +225,11 @@ msgstr ""
 "能需要多次重新提交资源，并为其支持的每个Godot版本添加一个条目。 这在处理引擎"
 "的主要版本时尤其重要，例如Godot 2.x和Godot 3.x."
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:114
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid "**Version**:"
 msgstr "**版本**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:110
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:113
 msgid ""
 "The version number of the asset. While you are free to choose and use any "
 "versioning scheme that you like, you may want to look into something such as "
@@ -239,11 +242,11 @@ msgstr ""
 "org>`_ 之类的内容。 请注意，系统内还有一个内部版本号，每次更改或更新资源下载"
 "地址时都会增加。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:119
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid "**Repository host**:"
 msgstr "**存储库主机**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:120
 #, fuzzy
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
@@ -255,11 +258,11 @@ msgstr ""
 "GitHub，GitLab或Bitbucket)上的托管存储库。 您可以在此处选择资源使用的提供商，"
 "以便网站可以计算最终下载链接。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid "**Repository URL**:"
 msgstr "**存储库地址**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid ""
 "The URL to your asset's files/webpage. This will vary based on your choice "
 "of provider, but it should look similar to `https://github.com/<user>/"
@@ -268,11 +271,11 @@ msgstr ""
 "资源文件/网页的地址。 这将根据您选择的提供商而有所不同，但它的结构类似于 "
 "`https://github.com/<user>/<project>`。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:127
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
 msgid "**Issues URL**:"
 msgstr "**问题地址**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:128
 msgid ""
 "The URL to your asset's issue tracker. Again, this will differ from "
 "repository host to repository host, but will likely look similar to `https://"
@@ -283,12 +286,12 @@ msgstr ""
 "github.com/<user>/<project>/issues`。 如果您使用提供商的问题跟踪器，则可以将"
 "此字段留空，因为它是资源存储库的一部分。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:131
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
 #, fuzzy
 msgid "**Download Commit**:"
 msgstr "**下载提交/标记**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:133
 #, fuzzy
 msgid ""
 "The commit of the asset. For example, "
@@ -298,11 +301,11 @@ msgstr ""
 "资源的提交或标记。 例如， `b1d3172f89b86e52465a74f63a74ac84c491d3e1` 或 "
 "`v1.0` 。 资源馆网站根据此计算出实际下载地址。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:135
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
 msgid "**Icon URL**:"
 msgstr "**图标地址**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:137
 msgid ""
 "The URL to your asset's icon (which will be used as a thumbnail in the "
 "AssetLib search results and on the asset's page). Should be an image in "
@@ -311,11 +314,11 @@ msgstr ""
 "资源图标的地址(将在AssetLib搜索结果和资源页面中用作缩略图)。 应该是PNG或JPG格"
 "式的图像。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:140
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
 msgid "**License**:"
 msgstr "**许可证**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:141
 msgid ""
 "The license under which you are distributing the asset. The list includes a "
 "variety of free and open-source software licenses, such as GPL (v2 and v3), "
@@ -326,11 +329,11 @@ msgstr ""
 "MIT，BSD和Boost软件许可证。 您可以访问 `OpenSource.org <https://opensource."
 "org>`_ 获取每个列出的许可证的详细说明。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:146
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
 msgid "**Description**:"
 msgstr "**描述**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:146
 msgid ""
 "Finally, you can use the Description field for a textual overview of your "
 "asset, its features and behavior, a changelog, et cetera. In the future, "
@@ -340,7 +343,7 @@ msgstr ""
 "最后，您可以使用Description字段来查看资源，其功能和行为，更改日志等文本概"
 "述。 将来，将支持使用Markdown格式，但目前只支持纯文本。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:148
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:151
 msgid ""
 "You may also include up to three video and/or image previews, which will be "
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
@@ -349,27 +352,27 @@ msgstr ""
 "您还可以包含最多三个视频和/或图像预览，这些预览将显示在资源页面的底部。 请使"
 "用每个预览提交框上的``启用``复选框从而启用它们。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:152
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
 msgid "**Type**:"
 msgstr "**类型**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:153
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:156
 msgid "Either an image, or a video."
 msgstr "图像或视频。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:154
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:157
 msgid "**Image/YouTube URL**:"
 msgstr "**图片/ YouTube的网址**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:158
 msgid "Either a link to the image, or to a video, hosted on YouTube."
 msgstr "YouTube上托管的图片或视频链接。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:159
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:162
 msgid "**Thumbnail URL**:"
 msgstr "**缩略图地址**:"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:157
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:160
 #, fuzzy
 msgid ""
 "A URL to an image that will be used as a thumbnail for the preview. This "
@@ -379,7 +382,7 @@ msgstr ""
 "图像的地址，将用作预览的缩略图。 此选项最终将被删除，相反缩略图将会被自动计算"
 "出。"
 
-#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:161
+#: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:164
 #, fuzzy
 msgid ""
 "Once you are done, hit Submit. Your asset will be entered into the pending "

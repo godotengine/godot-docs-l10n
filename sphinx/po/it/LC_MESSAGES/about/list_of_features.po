@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -510,7 +510,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "*SpotLight:* Texture singola."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
@@ -549,6 +549,8 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:197
 msgid "Reflection techniques can be mixed together for greater accuracy."
 msgstr ""
+"Le tecniche di riflessione possono essere mischiate per una migliore "
+"accuratezza."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
@@ -556,7 +558,7 @@ msgstr "**Cielo:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Cielo panoramico (utilizzando un HDRI)."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "Procedural sky."
@@ -568,7 +570,7 @@ msgstr "**Nebbia:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Nebbia di profondità con curva di attenuazione regolabile."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
@@ -579,15 +581,16 @@ msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Supporto per la colorazione automatica della nebbia di profondità dipendente "
+"dalla direzione della telecamera (per adattarsi al colore del sole)."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Particelle"
+msgstr "**Particelle:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -608,7 +611,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Profondità di campo vicina e lontana."
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Screen-space ambient occlusion."
@@ -622,24 +625,23 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Correzione del colore utilizzando una rampa unidimensionale."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Regolazione della luminosità, contrasto e saturazione."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid "**Texture filtering:**"
-msgstr ""
+msgstr "**Filtro texture:**"
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Filtraggio per vicinanza, bilineare, trilineare o anisotropico."
 
 #: ../../docs/about/list_of_features.rst:232
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "TextureProgress"
+msgstr "**Compressione delle texture:**"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
@@ -647,80 +649,83 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (non supportato su macOS)."
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (consigliato quando si utilizza il renderizzatore GLES2)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "*GLES3:* S3TC (non supportato su piattaforme mobile/Web)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Anti-aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:241
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "Istanze multiple"
+msgstr "Antialiasing multi-campione (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"La maggior parte di questi effetti può essere regolata per prestazioni "
+"migliori o per migliorare ulteriormente la qualità. Questo può essere utile "
+"quando si utilizza Godot per il rendering offline."
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "tool"
+msgstr "Strumenti 3D"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr "ref:`Geometria procedurale <toc-geometria_procedurale>``"
+msgstr ""
+"Strumenti per :ref:`generazione geometrica procedurale "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+":ref:`Geometria solida costruttiva <doc_csg_tools>`` (destinata alla "
+"prototipazione)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Nodo Path3D per rappresentare un percorso nello spazio 3D."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "Nodo PathFollow3D per fare in modo che i nodi seguano un Path3D."
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Classe di supporto per la geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Fisica"
+msgstr "Fisica 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Corpi di veicoli (destinati alla fisica arcade, non alla simulazione)."
 
 #: ../../docs/about/list_of_features.rst:269
 msgid "Soft bodies."
-msgstr ""
+msgstr "Corpi morbidi."
 
 #: ../../docs/about/list_of_features.rst:270
 msgid "Ragdolls."
-msgstr ""
+msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:275
 msgid ""
@@ -731,6 +736,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
 msgstr ""
+"Generare forme di collisione triangolare per qualsiasi mesh dall'editor."
 
 #: ../../docs/about/list_of_features.rst:277
 msgid ""
@@ -739,7 +745,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -756,28 +762,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr ":ref:`Plugins Shader Visivo<doc_visual_shader_plugins>`"
+msgstr "Editor di shader visuali."
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr ":ref:`Plugins Shader Visivo<doc_visual_shader_plugins>`"
+msgstr "Supporto per plug-in visual shader."
 
 #: ../../docs/about/list_of_features.rst:290
 msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "Informazioni Generali"
+msgstr "**Generale:**"
 
 #: ../../docs/about/list_of_features.rst:294
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "Progettazione e composizione orientata all'oggetto"
+msgstr ""
+"Modello di progettazione orientato agli oggetti con script che estendono i "
+"nodi."
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
@@ -984,11 +988,12 @@ msgid "glTF 2.0 *(recommended)*."
 msgstr "glTF 2.0 *(consigliato)*."
 
 #: ../../docs/about/list_of_features.rst:377
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>` __ "
+"(esportazione diretta da Blender)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
@@ -1050,7 +1055,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:401
-msgid "Gamepad input (up to 8 simulatenous controllers)."
+msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:402
@@ -1172,9 +1177,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:448
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Abilita/Disabilita modalità a schermo intero"
+msgstr "Modalità a schermo intero."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
@@ -1254,9 +1258,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "Nodi"
+msgstr "**Nodi:**"
 
 #: ../../docs/about/list_of_features.rst:482
 #, fuzzy
@@ -1302,7 +1305,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:491
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "I nodi Control possono essere ruotati e ridimensionati."
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "**Sizing:**"
@@ -1478,13 +1481,12 @@ msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:562
-#, fuzzy
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Gli script di completamento <https://github.com/godotengine/godot/tree/"
+"master/misc/dist/shell>` __ sono disponibili per Bash, zsh e fish."
 
 #: ../../docs/about/list_of_features.rst:565
 msgid ""

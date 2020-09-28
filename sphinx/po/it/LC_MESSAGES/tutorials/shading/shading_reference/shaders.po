@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:7
 msgid "Introduction"
@@ -183,6 +183,18 @@ msgid ""
 "is used; if not, it cuts all the corresponding code out. Therefore, you will "
 "not waste calculations on effects that you do not use."
 msgstr ""
+"L'uso standard della funzione fragment è quello di impostare le proprietà "
+"del materiale che saranno usate per calcolare l'illuminazione. Per esempio, "
+"si impostano i valori per ```ROUGHNESS``, ``RIM``, o ``TRANSMISSION``` che "
+"indicano alla funzione luce come le luci rispondono a quel frammento. Questo "
+"rende possibile il controllo di una complessa pipeline di shading senza che "
+"l'utente debba scrivere molto codice. Se non avete bisogno di questa "
+"funzionalità integrata, potete ignorarla e scrivere la vostra funzione di "
+"elaborazione delle luci e Godot la ottimizzerà. Per esempio, se non si "
+"scrive un valore su ```RIM``, Godot non calcolerà l'illuminazione del bordo. "
+"Durante la compilazione, Godot controlla se ``RIM`` viene utilizzato; in "
+"caso contrario, taglia fuori tutto il codice corrispondente. Pertanto, non "
+"si sprecheranno i calcoli sugli effetti che non si usano."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
 msgid "Light processor"

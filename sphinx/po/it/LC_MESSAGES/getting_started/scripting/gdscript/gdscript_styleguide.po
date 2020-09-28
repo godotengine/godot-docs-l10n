@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,8 @@ msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
+"L'editor di script integrato di Godot utilizza molte di queste convenzioni "
+"come impostazione predefinita. Lascia che ti aiuti."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Here is a complete class example based on these guidelines:"
@@ -89,7 +91,6 @@ msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
-#, fuzzy
 msgid "Indentation"
 msgstr "Indentazione"
 
@@ -107,7 +108,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
 msgid "**Good**:"
 msgstr ""
 
@@ -121,7 +122,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
 msgid "**Bad**:"
 msgstr ""
 
@@ -206,9 +207,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
-#, fuzzy
 msgid "Boolean operators"
-msgstr "Classi e nodi"
+msgstr "Operatori booleani"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
@@ -248,8 +248,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
+#, fuzzy
 msgid "Whitespace"
-msgstr ""
+msgstr "Spazio bianco"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
@@ -491,9 +492,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
-#, fuzzy
 msgid "Member variables"
-msgstr "Definisce una variabile."
+msgstr "Variabili membro"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid ""
@@ -503,9 +503,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
-#, fuzzy
 msgid "Local variables"
-msgstr "Array locali"
+msgstr "Variabili locali"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
 msgid ""
@@ -562,29 +561,41 @@ msgstr ""
 "typing<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-msgid "Type hints"
-msgstr "Inferenza del tipo"
+msgid "Declared types"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
-msgid ""
-"Place the colon right after the variable's name, without a space, and let "
-"the GDScript compiler infer the variable's type when possible."
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
-"Posiziona i due punti subito dopo il nome della variabile, senza spazi, e "
-"lascia che il compilatore GDScript inferisca il tipo di variabile quando "
-"possibile."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:760
-msgid ""
-"When you let the compiler infer the type hint, write the colon and equal "
-"signs together: ``:=``."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#, fuzzy
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "Definisci il tipo ritornato da una funzione con la freccia ->"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+msgid "Inferred types"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
 "Quando lasci inferire al compilatore il tipo della variabile, scrivi insieme "
 "i due punti e l'uguale: ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
-msgid ""
-"Add a space on either sides of the return type arrow when defining functions."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "::"
 msgstr ""
-"Aggiungi uno spazio su entrambi i lati della freccia 'return type' quando "
-"definisci una funzione."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "var health := 0  # The compiler will use the int type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
+msgid ""
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""

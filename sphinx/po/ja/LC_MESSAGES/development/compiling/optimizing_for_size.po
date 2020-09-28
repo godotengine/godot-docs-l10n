@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -188,31 +188,3 @@ msgid ""
 msgstr ""
 "ソースからビルドする場合は、バイナリからデバッグシンボルを削除することを忘れ"
 "ないでください:"
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:156
-msgid "Using UPX to compress binaries"
-msgstr "UPXを使用してバイナリを圧縮する"
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:158
-msgid ""
-"If you are targeting desktop platforms, the `UPX <https://upx.github.io/>`_ "
-"compressor can be used. This can reduce binary size considerably."
-msgstr ""
-"デスクトッププラットフォームをターゲットにしている場合、\\ `UPX <https://upx."
-"github.io/>`_ コンプレッサーを使用できます。これにより、バイナリサイズを大幅"
-"に削減できます。"
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:164
-msgid "You cannot use embedded PCK files with UPX compression."
-msgstr ""
-
-#: ../../docs/development/compiling/optimizing_for_size.rst:166
-msgid ""
-"However, keep in mind that some antivirus programs may detect UPX-packed "
-"binaries as a virus. Therefore, if you are releasing a commercial game, make "
-"sure to sign your binaries or use a platform that will distribute them."
-msgstr ""
-"ただし、一部のウイルス対策プログラムでは、UPXで圧縮されたバイナリがウイルスと"
-"して検出される場合があることに注意してください。したがって、商用ゲームをリ"
-"リースする場合は、必ずバイナリに署名するか、それらを配布するプラットフォーム"
-"を使用してください。"

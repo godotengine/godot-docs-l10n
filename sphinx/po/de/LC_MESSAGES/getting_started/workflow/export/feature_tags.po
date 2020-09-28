@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,32 +30,38 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
+"Godot verfügt über ein spezielles System zur Kennzeichnung der Verfügbarkeit "
+"von Funktionen. Jedes *Merkmal* wird als Zeichenfolge dargestellt, das sich "
+"auf viele der folgenden Elemente beziehen kann:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "Plattform Name."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr ""
+msgstr "Plattformarchitektur (64-Bit oder 32-Bit, x86 oder ARM)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
-msgstr ""
+msgstr "Plattformtyp (Desktop, Mobile, Web)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression algorithms on the platform."
-msgstr ""
+msgstr "Unterstützte Texturkomprimierungsalgorithmen auf der Plattform."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
+"Ob ein Build ``debug`` oder ``release`` ist (``debug`` enthält den Editor)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
 "Whether the project is running from the editor or a \"standalone\" binary."
 msgstr ""
+"Ob das Projekt über den Editor oder eine \"eigenständige\" Binärdatei "
+"ausgeführt wird."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
@@ -173,7 +179,7 @@ msgstr "**Veröffentlichung**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr ""
+msgstr "Läuft auf einem Release-Build"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
@@ -185,7 +191,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
-msgstr ""
+msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
@@ -245,7 +251,7 @@ msgstr "**mobile**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
-msgstr ""
+msgstr "Host OS ist eine mobile Plattform"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
@@ -253,7 +259,7 @@ msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr ""
+msgstr "Host OS ist eine PC-Plattform (Desktop/Laptop)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
@@ -261,7 +267,7 @@ msgstr "**web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
-msgstr ""
+msgstr "Das Host OS ist ein Webbrowser"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
@@ -269,7 +275,7 @@ msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "Texturen mit ETC1-Komprimierung werden unterstützt"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
@@ -277,7 +283,7 @@ msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "Texturen mit ETC2-Komprimierung werden unterstützt"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
@@ -293,11 +299,11 @@ msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "Texturen mit PVRTC-Komprimierung werden unterstützt"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
-msgstr ""
+msgstr "Benutzerdefinierte Funktionen"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
 msgid ""

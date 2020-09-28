@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,6 +149,19 @@ msgid ""
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
+":ref:`ARVROrigin <class_ARVROrigin>` è un nodo importante, devi averne uno, "
+"e soltanto uno, da qualche parte nella tua scena. Questo nodo mappa il "
+"centro del tuo spazio di tracciamento del mondo reale su una posizione nel "
+"tuo mondo virtuale. Tutto il resto è tracciato in posizione rispetto a "
+"questo punto. Il punto in cui si trova esattamente questo punto differisce "
+"da un'implementazione all'altra, ma l'esempio migliore per capire come "
+"funziona questo nodo è quello di dare un'occhiata a una posizione a scala di "
+"stanza. Mentre abbiamo funzioni per regolare il punto per centrarlo sul "
+"giocatore per l'impostazione predefinita, il punto di origine sarà la "
+"posizione centrale della stanza in cui ti trovi. Mentre cammini fisicamente "
+"intorno alla stanza, la posizione dell'HMD viene tracciata in relazione a "
+"questa posizione centrale e il tracciamento viene riprodotto nel mondo "
+"virtuale."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
@@ -267,7 +280,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:146
 msgid "Other things to consider"
-msgstr ""
+msgstr "Altre cose da considerare"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:148
 msgid ""

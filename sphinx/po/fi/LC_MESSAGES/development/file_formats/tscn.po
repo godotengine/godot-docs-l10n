@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,6 @@ msgstr ""
 "ei käytännössä tunnu olevan väliä."
 
 #: ../../docs/development/file_formats/tscn.rst:36
-#, fuzzy
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
 "them. The only difference between them is the first element in the heading "
@@ -114,7 +113,8 @@ msgstr ""
 "Näiden osioiden tulisi esiintyä järjestyksessä, mutta niiden erottelu voi "
 "olla hankalaa. Ainoa ero niiden välillä on otsikon ensimmäinen elementti, "
 "joka on yhdistävä tekijä kaikille osion muille kohdille. Esimerkiksi "
-"kaikkien ulkoisten resurssien otsikko alkaa :code:`[ext_resource .....]`"
+"kaikkien ulkoisten resurssien otsikoiden pitäisi alkaa "
+"``[ext_resource .....]``."
 
 #: ../../docs/development/file_formats/tscn.rst:41
 msgid ""
@@ -204,7 +204,6 @@ msgid "``groups``"
 msgstr "``groups``"
 
 #: ../../docs/development/file_formats/tscn.rst:81
-#, fuzzy
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
 "``parent=Path/To/Node`` entry in its heading. All scene files should have "
@@ -214,13 +213,13 @@ msgid ""
 "should be ``\".\"``. Here is an example scene tree (but without any node "
 "content):"
 msgstr ""
-"Tiedoston ensimmäinen solmu on juurisolmu ja sen otsikossa ei tule olla :"
-"code:`parent=Path/To/Node` merkintää. Kaikissa skenetiedostoissa tulee olla "
-"tasan yksi juurisolmu. Jos näin ei ole, Godot ei pysty tuomaan tiedostoa. "
-"Muiden solmujen yläsolmujen polkujen tulee olla absoluuttisia, eikä niiden "
-"tule sisältää skenen juuren nimeä. Jos ne sijaitsevat suoraan skenen juuren "
-"alla, niiden polkujen tulee olla :code:`\".\"`. Seuraavassa on esimerkki "
-"skenepuusta (ilman solmusisältöä)."
+"Tiedoston ensimmäisessä solmussa, joka on myös skenen juurisolmu, ei tule "
+"olla ``parent=Path/To/Node`` merkintää otsikossa. Kaikissa skenetiedostoissa "
+"tulee olla tasan *yksi* juurisolmu. Jos näin ei ole, Godot ei pysty tuomaan "
+"tiedostoa. Muiden solmujen yläsolmujen polkujen tulee olla absoluuttisia, "
+"eikä niiden tule sisältää skenen juuren nimeä. Jos solmut sijaitsevat "
+"suoraan skenen juuren alla, niiden polkujen tulee olla ``\".\"``. Tässä on "
+"esimerkki skenepuusta (ilman solmusisältöä):"
 
 #: ../../docs/development/file_formats/tscn.rst:97
 #, fuzzy
@@ -259,15 +258,14 @@ msgid "Skeleton"
 msgstr "Luuranko"
 
 #: ../../docs/development/file_formats/tscn.rst:165
-#, fuzzy
 msgid ""
 "The Skeleton node inherits the Spatial node, but also may have a list of "
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
-"Skeleton-solmu periytyy Spatial-solmusta. Sen lisäksi sillä voi olla lista "
-"luita (bones) avain-arvo pareina muodossa :code:`bones/Id/Attribute=Value`. "
-"Luiden attribuutit ovat"
+"Skeleton solmu periytyy Spatial solmusta, mutta sen lisäksi sillä voi olla "
+"lista luita avain-arvo pareina muodossa ``bones/Id/Attribute=Value``. Luiden "
+"attribuutit ovat:"
 
 #: ../../docs/development/file_formats/tscn.rst:169
 msgid "``name``"
@@ -299,22 +297,20 @@ msgid "``name`` must be the first attribute of each bone."
 msgstr "``name`` täytyy olla jokaisen luun ensimmäinen attribuutti."
 
 #: ../../docs/development/file_formats/tscn.rst:177
-#, fuzzy
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
 "the bone list is built to a bone tree."
 msgstr ""
-":code:`parent` on indeksi ylempään luuhun luulistassa. Sen avulla "
-"luulistasta muodostuu puu"
+"``parent`` on indeksi ylempään luuhun luulistassa. Sen avulla luulistasta "
+"muodostuu puu."
 
 #: ../../docs/development/file_formats/tscn.rst:179
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr "``rest`` on luun muunnosmatriisi lepoasennossa."
 
 #: ../../docs/development/file_formats/tscn.rst:180
-#, fuzzy
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
-msgstr ":code:`pose` on asentomatriisi, joka käyttää :code:`rest` pohjanaan"
+msgstr "``pose`` on asentomatriisi; käytä ``rest`` perustana."
 
 #: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
@@ -399,22 +395,20 @@ msgstr ""
 "resursseihin viitataan eri metodeilla, niillä voi olla sama tunnusluku."
 
 #: ../../docs/development/file_formats/tscn.rst:271
-#, fuzzy
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
 "\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
-"Esimerkiksi resurssiin :code:`[ext_resource id=3 type=\"PackedScene\" "
-"path=....]` voidaan viitata näin: :code:`ExtResource(3)`"
+"Esimerkiksi resurssiin ``[ext_resource id=3 type=\"PackedScene\" "
+"path=....]`` voidaan viitata näin: ``ExtResource(3)``."
 
 #: ../../docs/development/file_formats/tscn.rst:277
-#, fuzzy
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of a path, a type and an ID."
 msgstr ""
 "Ulkoiset resurssit ovat linkkejä resursseihin, jotka eivät sisälly TSCN-"
-"tiedostoon itsessään. Ulkoinen resurssi koostuu seuraavista:"
+"tiedostoon itsessään. Ulkoinen resurssi koostuu polusta, tyypistä ja ID:stä."
 
 #: ../../docs/development/file_formats/tscn.rst:280
 #, fuzzy

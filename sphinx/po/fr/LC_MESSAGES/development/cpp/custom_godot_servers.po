@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
-#, fuzzy
 msgid ""
 "Godot implements multi-threading as servers. Servers are daemons which "
 "manage data, process it, and push the result. Servers implement the mediator "
@@ -34,10 +33,10 @@ msgid ""
 "other modules. In addition, the server claims ownership for its RID "
 "allocations."
 msgstr ""
-"Godot met en œuvre le multithreading en tant que serveurs. Les serveurs sont "
+"Godot implemente le multithreading en tant que serveurs. Les serveurs sont "
 "des processus en arrière-plan qui gèrent les données, les traitent et "
 "poussent le résultat. Les serveurs implémentent le patron de conception "
-"Mediator qui interprète l'identification des ressources ID et traite les "
+"mediator qui interprète l'identification des ID ressources et traite les "
 "données pour le moteur et les autres modules. De plus, le serveur revendique "
 "la propriété de ses allocations RID."
 

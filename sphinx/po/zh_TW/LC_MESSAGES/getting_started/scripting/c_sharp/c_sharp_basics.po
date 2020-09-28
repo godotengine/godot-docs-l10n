@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,32 +118,29 @@ msgstr ""
 "偏好設定："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "編輯器設定"
+msgstr "在 Godot 的編輯器設定中："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
-#, fuzzy
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
-msgstr "將 Mono External Editor 設為 JetBrains Rider"
+msgstr "將 **Mono External Editor** 設為 **JetBrains Rider** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-#, fuzzy
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
-msgstr "將 Mono Build Tool 設為 JetBrains Mono。"
+msgstr "將 **Mono Build Tool** 設為 **JetBrains Mono** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
 msgstr "Rider 中："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
-msgstr "將 ``MSBuild version`` 設為 Rider 配套的版本或是 .NET Core。"
+msgstr ""
+"將 **MSBuild version** 設為 **Bundled with Rider** (Rider 配套的版本) 或是 "
+"**.NET Core** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-#, fuzzy
 msgid "Install the **Godot support** plugin."
 msgstr "安裝 **Godot support** 外掛。"
 
@@ -247,27 +244,25 @@ msgstr ""
 "醒目提示或 IntelliSense 等功能。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
-#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the `:ref:doc_c_sharp_configuring_vs_2019_for_debugging` section below."
 msgstr ""
-"若使用 Visual Studio 2019，請確保有按照下方「設定 VS 2019 以進行除錯」段落中"
-"的介紹。"
+"若使用 Visual Studio 2019，請確保有按照下方 `:ref:"
+"doc_c_sharp_configuring_vs_2019_for_debugging` 段落中的介紹。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "Creating a C# script"
 msgstr "建立 C# 腳本"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
-"成功為 Godot 設定好 C# 後，應該可以在從場景中節點右鍵選單中選擇 ``[附加腳"
-"本]`` 時看到下列選項："
+"成功為 Godot 設定好 C# 後，應該可以在從場景中節點右鍵選單中選擇 **[附加腳"
+"本]** 時看到下列選項："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
@@ -354,7 +349,6 @@ msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "更多資訊請參考 :ref:`doc_c_sharp_differences` 一頁。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
@@ -362,14 +356,14 @@ msgid ""
 "to reveal the Mono panel, then clicking the **Build Project** button."
 msgstr ""
 "使用 C# 時，若要看到新匯出的變數或訊號，就需要建構或重新建構專案。要重新建構"
-"專案可以手動點擊編輯器視窗底部的 [Mono] 文字來打開 Mono 面板，然後點擊 [建構"
-"專案] 按鈕。"
+"專案可以手動點擊編輯器視窗底部的 **[Mono]** 文字來打開 Mono 面板，然後點擊 "
+"**[建構專案]** 按鈕。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
-msgstr ""
+msgstr "接著還需要重新建構專案組建，以套用「工具」腳本中的改動。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"
@@ -601,3 +595,7 @@ msgid ""
 "launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
 "you start the debugger in VS Code your Godot project will run."
 msgstr ""
+"若要設定除錯功能，請開啟 Visual Studio Code 並從 Microsoft 下載 Mono Debug 擴"
+"充套件與 Ignacio 製作的 Godot 擴充套件。接著以 VS Code 開啟 Godot 專案資料"
+"夾。然後前往 [執行] (Run) 分頁並點擊 **建立 launch.json 檔案** ，並從下拉選單"
+"中選擇 **C# Godot** 。接著便能在 VS Code 中開啟除錯工具來執行 Godot 專案。"

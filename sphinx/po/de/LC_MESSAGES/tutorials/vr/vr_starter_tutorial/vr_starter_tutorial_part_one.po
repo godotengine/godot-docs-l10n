@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:62
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Alles fertig machen"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
@@ -549,6 +549,10 @@ msgid ""
 "we have looked at the VR controller scene, let's write the code that will "
 "drive them."
 msgstr ""
+"Das ist ein kurzer Überblick darüber, wie die VR-Controller-Szenen aufgebaut "
+"sind und wie wir die Nodes verwenden werden, um die Funktionalität für sie "
+"bereitzustellen. Nachdem wir uns nun die VR-Controller-Szene angesehen "
+"haben, lass uns den Code schreiben, der sie steuern wird."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:235
 msgid "The code for the VR controllers"
@@ -561,6 +565,11 @@ msgid ""
 "scenes will be using the same script, so it doesn't matter which you use "
 "first. With ``VR_Controller.gd`` opened, add the following code:"
 msgstr ""
+"Wählen Sie den Wurzel-Node der Szene, entweder ``Right_Controller`` oder "
+"``Left_Controller``, und erstellen ein neues Skript mit dem Namen "
+"``VR_Controller.gd``. Beide Szenen werden das gleiche Skript benutzen, so "
+"dass es keine Rolle spielt, welches Sie zuerst benutzen. Wenn "
+"``VR_Controller.gd`` geöffnet ist, fügen Sie den folgenden Code hinzu:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:240
 msgid ""
@@ -582,12 +591,18 @@ msgid ""
 "tabs. You can select ``Convert Indent To Spaces`` to convert tabs back into "
 "spaces."
 msgstr ""
+"Um im Skript-Editor die Leerzeichen in Tabs umzuwandeln, klicken Sie auf das "
+"Menü ``Edit`` und wählen ``Convert Indent To Tabs``. Dadurch werden alle "
+"Leerzeichen in Tabs umgewandelt. Sie können \"Convert Indent To Spaces\" "
+"wählen, um Tabs wieder in Leerzeichen umzuwandeln."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:535
 msgid ""
 "This is quite a bit of code to go through. Let's go through what the code "
 "does step-by-step."
 msgstr ""
+"Das ist eine ganze Menge Code, den man durcharbeiten muss. Lass uns Schritt "
+"für Schritt durchgehen, was der Code tut."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:538
 msgid "Explaining the VR controller code"
@@ -619,6 +634,9 @@ msgid ""
 "controller velocities. This is used to smooth the velocity calculations over "
 "time."
 msgstr ""
+"``prior_controller_velocities``: Ein Array zur Aufnahme der letzten 30 "
+"berechneten VR-Reglergeschwindigkeiten. Dies wird verwendet, um die "
+"Geschwindigkeitsberechnungen über die Zeit zu glätten."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:545
 msgid ""
@@ -626,6 +644,9 @@ msgid ""
 "controller is holding. If the VR controller is not holding any objects, this "
 "variable will be ``null``."
 msgstr ""
+"``held_object``: Eine Variable zum Halten einer Referenz auf das Objekt, das "
+"der VR controller hält. Wenn der VR controller keine Objekte hält, wird "
+"diese Variable ``null`` sein."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:546
 msgid ""
@@ -634,18 +655,26 @@ msgid ""
 "reset the :ref:`RigidBody <class_RigidBody>`'s data when it is no longer "
 "held."
 msgstr ""
+"``held_object_data``: Ein Wörterbuch zur Speicherung von Daten für das Node :"
+"ref:`RigidBody <class_RigidBody>`, das vom VR-Controller gehalten wird. Dies "
+"wird verwendet, um die Daten des :ref:`RigidBody <class_RigidBody>` "
+"zurückzusetzen, wenn er nicht mehr gehalten wird."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:547
 msgid ""
 "``grab_area``: A variable to hold the :ref:`Area <class_Area>` node used to "
 "grab objects with the VR controller."
 msgstr ""
+"``grab_area``: Eine Variable, die das Node :ref:``Area <class_Area>` hält, "
+"das zum Greifen von Objekten mit dem VR-Controller verwendet wird."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:548
 msgid ""
 "``grab_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "used to grab objects with the VR controller."
 msgstr ""
+"``grab_raycast``: Eine Variable, die den :ref:`Raycast <class_Raycast>`-Node "
+"enthält, mit dem Objekte mit dem VR-Controller erfasst werden."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:549
 msgid ""
@@ -653,12 +682,17 @@ msgid ""
 "using. There are only two modes for grabbing objects in this tutorial, "
 "``AREA`` and ``RAYCAST``."
 msgstr ""
+"``grab_mode``: Eine Variable zur Definition des Greifmodus, den der VR-"
+"Controller verwendet. Es gibt in diesem Tutorial nur zwei Modi zum Greifen "
+"von Objekten, ``AREA`` und ``RAYCAST``."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:550
 msgid ""
 "``grab_pos_node``: A variable to hold the node that will be used to update "
 "the position and rotation of held objects."
 msgstr ""
+"``grab_pos_node``: Eine Variable zum Halten des Nodes, das verwendet wird, "
+"um die Position und Rotation der gehaltenen Objekte zu aktualisieren."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:551
 msgid ""
@@ -667,18 +701,26 @@ msgid ""
 "controller. This mesh will be shown when the VR controller is not holding "
 "anything."
 msgstr ""
+"``hand_mesh``: Eine Variable, die das Node :ref:``MeshInstance "
+"<class_MeshInstance>` hält, welches das Hand mesh für den VR-Controller "
+"enthält. Dieses Mesh wird angezeigt, wenn der VR-Controller nichts hält."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:552
 msgid ""
 "``hand_pickup_drop_sound``: A variable to hold the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node that contains the pickup/drop sound."
 msgstr ""
+"``hand_pickup_drop_sound``: Eine Variable zum Halten des Nodes :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D <`, das den Aufheben-/"
+"Fallenlassenton enthält."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:553
 msgid ""
 "``teleport_pos``: A variable to hold the position the player will be "
 "teleported to when the VR controller teleports the player."
 msgstr ""
+"``teleport_pos``: Eine Variable zum Halten der Position, zu welcher der "
+"Spieler teleportiert wird, wenn der VR-Controller den Spieler teleportiert."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:554
 msgid ""
@@ -694,6 +736,10 @@ msgid ""
 "teleport button is held down. This will be used to detect if this VR "
 "controller is trying to teleport the player."
 msgstr ""
+"``teleport_button_down``: Eine Variable, die benutzt wird, um zu verfolgen, "
+"ob die Teleport-Taste des Controllers gedrückt gehalten wird. Dies wird "
+"verwendet, um zu erkennen, ob dieser VR-Controller versucht, den Player zu "
+"teleportieren."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:556
 msgid ""
@@ -701,6 +747,10 @@ msgid ""
 "node used to calculate the teleport position. This node also has a :ref:"
 "`MeshInstance <class_MeshInstance>` that acts as a 'laser sight' for aiming."
 msgstr ""
+"``teleport_raycast``: Eine Variable, die das Node :ref:`Raycast "
+"<class_Raycast>` hält, das zur Berechnung der Teleportposition verwendet "
+"wird. Dieses Node hat auch eine :ref:`MeshInstance <class_MeshInstance>`, "
+"die als 'Laserzielgerät' zum Zielen dient."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:557
 msgid ""
@@ -728,6 +778,8 @@ msgid ""
 "``directional_movement``: A variable to hold whether this VR controller is "
 "moving the player using the touchpad/joystick."
 msgstr ""
+"``directional_movement``: Eine Variable die festhält, ob dieser VR-"
+"Controller den Spieler mit dem Touchpad bzw. Joystick bewegt."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:562
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,15 +71,15 @@ msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
 msgstr ""
-"``get_pending_event_count ()`` gibt die Anzahl der ausstehenden Ereignisse "
-"in der Warteschlange zurück."
+"``get_pending_event_count()`` gibt die Anzahl der ausstehenden Ereignisse in "
+"der Warteschlange zurück."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:58
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
 msgstr ""
-"``Variant pop_pending_event ()`` löscht das erste Ereignis aus der "
+"``Variant pop_pending_event()`` löscht das erste Ereignis aus der "
 "Warteschlange und gibt es zurück."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:62
@@ -88,7 +88,7 @@ msgstr "Store Kit"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:64
 msgid "Implemented in ``platform/iphone/in_app_store.mm``."
-msgstr ""
+msgstr "Implementiert in ``platform/iphone/in_app_store.mm``."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:66
 msgid ""
@@ -127,7 +127,7 @@ msgstr "Kauf einer Produkt-ID über die Store Kit API."
 #: ../../docs/tutorials/platform/services_for_ios.rst:274
 #: ../../docs/tutorials/platform/services_for_ios.rst:419
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:89
 msgid ""
@@ -168,7 +168,7 @@ msgstr "Das Antwortereignis ist ein Wörterbuch mit den folgenden Feldern:"
 #: ../../docs/tutorials/platform/services_for_ios.rst:354
 #: ../../docs/tutorials/platform/services_for_ios.rst:386
 msgid "On error:"
-msgstr ""
+msgstr "bei Fehler:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:111
 #: ../../docs/tutorials/platform/services_for_ios.rst:214
@@ -182,7 +182,7 @@ msgstr "bei Erfolg:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:122
 msgid "request_product_info"
-msgstr ""
+msgstr "request_product_info"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:124
 msgid "Requests the product info on a list of product IDs."
@@ -196,7 +196,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:155
 msgid "restore_purchases"
-msgstr ""
+msgstr "restore_purchases"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:157
 msgid ""
@@ -215,7 +215,7 @@ msgstr "Game Center"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:176
 msgid "Implemented in ``platform/iphone/game_center.mm``."
-msgstr ""
+msgstr "Implementiert in ``platform/iphone/game_center.mm``."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:178
 msgid ""
@@ -311,7 +311,7 @@ msgstr "Nimmt ein Wörterbuch als Parameter mit 3 Feldern:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:278
 msgid "``name`` (string) the achievement name"
-msgstr ""
+msgstr "``name`` (Zeichenfolge) den Namen des Erfolgs"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:279
 msgid ""
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:431
 msgid "Examples:"
-msgstr ""
+msgstr "Beispiele:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:443
 msgid "On close:"

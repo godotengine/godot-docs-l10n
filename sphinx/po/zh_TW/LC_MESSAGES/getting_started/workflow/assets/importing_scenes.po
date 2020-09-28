@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,6 @@ msgstr ""
 "有需要這兩種情況的話，則用 glTF 二進位檔即可。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
@@ -318,8 +317,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:231
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:323
 msgid "Storage"
 msgstr "Storage - 儲存"
 
@@ -368,11 +367,25 @@ msgid ""
 "modified and re-imported."
 msgstr "當使用內建材質，每次原始場景修改與重新匯入後都會遺失這些材質。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
+msgid ""
+"Godot will not reimport materials that are stored in external files unless "
+"you remove the associated ``.material`` file before reimporting."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
+msgid ""
+"To force reimporting materials every time the 3D scene is reimported, change "
+"the material storage mode in the 3D scene by selecting it in the FileSystem "
+"dock, going to the Import dock then setting **Material > Storage** to "
+"**Built-In** instead of **Files**."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Keep On Reimport"
 msgstr "Keep On Reimport - 重新匯入時保留"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:178
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -381,101 +394,101 @@ msgstr ""
 "編輯材質並使用 Godot 功能後，匯入工具會保留編輯後的材質，往後原始場景更改後都"
 "不會再匯入材質。該選項僅在材質保存為檔案時出現。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:183
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
 msgid "Meshes"
 msgstr "Meshes - 網格"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid "Compress"
 msgstr "Compress - 壓縮"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr "在各個網格中的網格多面中使用較不精確的數字以節省空間。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:211
 msgid "These are:"
 msgstr "被壓縮的數字為："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:192
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
 msgstr "變換矩陣 (位置、旋轉與縮放)：32 位元浮點數將轉換為 16 位元有號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:193
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:203
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
 msgstr "頂點：32 位元浮點數將轉換為 16 位元有號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "法線：32 位元浮點數將轉換為 32 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:195
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "切線：32 位元浮點數將轉換為 32 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:206
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "頂點色：32 位元浮點數將轉換為 32 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:197
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV：32 位元浮點數將轉換為 32 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:208
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV2：32 位元浮點數將轉換為 32 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:199
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:209
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr "頂點權重：32 位元浮點數將轉換為 16 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:210
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr "骨架骨骼：32 位元浮點數將轉換為 16 位元無號整數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:211
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
 msgstr "陣列索引：依據元素的多寡，將轉換為 32 位元或 16 位元無號浮點數。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
 msgid "Additional info:"
 msgstr "額外訊息："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:204
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr "UV2 = 用於細節紋理與烘焙光照紋理的副 UV 通道。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
 msgstr ""
 "陣列索引 = 用來將上述陣列的各元素計數的一組數字陣列。即為頂點或法線的數量。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:217
 msgid ""
 "In some cases, this might lead to loss of precision, so disabling this "
 "option may be needed. For instance, if a mesh is very big or there are "
@@ -487,11 +500,11 @@ msgstr ""
 "常大或匯入覆蓋巨大區域的多網格，則壓縮匯入的網格可能會導致幾何形狀間有空隙，"
 "或是頂點不在應在的位置上。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:213
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "Ensure Tangents"
 msgstr "Ensure Tangents - 確保切線"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -501,7 +514,7 @@ msgstr ""
 "若使用到有法線映射的貼圖，則網格必須要有切線陣列。該選項可以確保當原始場景中"
 "沒有時產生切線陣列。Godot 使用 Mikktspace 來產生，但最好能在匯出工具中產生。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:233
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
@@ -510,29 +523,29 @@ msgstr ""
 "除了內建網格，也可以將網格保存在獨立的檔案 (資源) 中。但除非有需要使用獨立網"
 "格來建立物件外，沒什麼實際用途。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:226
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
 msgstr "該選項主要是提供給偏好直接處理網格而不是場景的使用者。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
 msgid "Light Baking"
 msgstr "Light Baking - 光照烘焙"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:242
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "即網格是否用於烘焙的光照圖中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
 msgstr "**Disabled - 禁用：** 網格不用於烘焙的光照圖中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:235
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid "**Enable:** The mesh is used in baked lightmaps."
 msgstr "**Enable - 啟用：** 網格用於烘焙的光照圖中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
@@ -540,25 +553,25 @@ msgstr ""
 "** Gen Lightmaps - 產生光照圖：** 網格有在烘焙的光照圖中使用，並為光照圖展開"
 "副 UV 層。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:248
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
 msgstr "更多有關光照烘焙的資訊，請參考 :ref:`doc_baked_lightmaps` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:241
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
 msgid "External Files"
 msgstr "External Files - 外部檔案"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:253
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
 msgstr "可選擇將產生的網格與材質以場景名稱保存在子資料夾中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:247
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
 msgid "Animation options"
 msgstr "Animation - 動畫選項"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender) can generate many animations in a single file. "
@@ -569,15 +582,15 @@ msgstr ""
 "的) 可以將多個動畫產生在單一檔案中。其他的匯入工具，如 3DS Max 或 Maya 的，則"
 "需要將多個動畫放在同一個時間軸上，最糟的情況則會將各個動畫放在個別檔案中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid "Import of animations is enabled by default."
 msgstr "預設有開啟動畫匯入。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:269
 msgid "FPS"
 msgstr "FPS"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:261
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -587,17 +600,17 @@ msgstr ""
 "多數 3D 匯出格式都將動畫時間軸保存為秒而非影格。為了儘量確保動畫能按照原本的"
 "樣子匯入，請設定編輯時用的 FPS。若未設定則可能導致動畫不穩定。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:276
 msgid "Filter Script"
 msgstr "Filter Script - 過濾腳本"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:278
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept."
 msgstr "也可以指定一個特殊格式的過濾腳本，用來判斷哪些動畫中的哪些軌道要保留。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -611,7 +624,7 @@ msgstr ""
 "使用不區分大小寫的表示式來配對，使用 ``?`` 與 ``*`` 字元作為萬用字元 (內部使"
 "用 ``String.matchn()`` )。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
@@ -621,7 +634,7 @@ msgstr ""
 "腳本必須以動畫過濾陳述式來開頭 (表示為以 ``@`` 為首的行)。舉例來說，若要套用"
 "過濾到所有名稱以 ``\"_Loop\"`` 結尾的匯入動畫："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
 "Similarly, additional patterns can be added to the same line, separated by "
 "commas. Here is a modified example to additionally *include* all animations "
@@ -632,7 +645,7 @@ msgstr ""
 "包含** 所有以 ``\"Arm_Left\"`` 開頭的動畫，但同時 **排除** 所有名稱以 ``"
 "\"Attach\"`` 結尾的動畫："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:299
 msgid ""
 "Following the animation selection filter statement, we add track filtering "
 "patterns to indicate which animation tracks should be kept or discarded. If "
@@ -642,7 +655,7 @@ msgstr ""
 "緊接著用來選擇動畫的過濾陳述式之後，要寫的便是用來判斷哪些軌道要保留，哪些要"
 "放棄的過濾模式。若沒有指定過濾模式，則相符動畫中的所有軌道都會被放棄！"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid ""
 "It's important to note that track filter statements are applied in order for "
 "each track within the animation, this means that one line may include a "
@@ -654,7 +667,7 @@ msgstr ""
 "選擇了保留軌道的陳述式之後可能出現另一個規則來放棄保留軌道。同樣地，若先前的"
 "規律條件排除了一個軌道，過濾腳本後方的規則仍然可以將該軌道重新包含進來。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:298
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:308
 msgid ""
 "For example: include all tracks in animations with names ending in ``\"_Loop"
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
@@ -664,7 +677,7 @@ msgstr ""
 "\"Control\"`` 結尾且會對 ``\"Skeleton\"`` 造成效果的動畫，除非名稱中有 ``"
 "\"Arm\"`` ："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
@@ -673,12 +686,12 @@ msgstr ""
 "在上述例子中，如 ``”Skeleton:Leg_Control\"`` 軌道會被放棄，而如 ``\"Skeleton:"
 "Head\"`` 或 ``\"Skeleton:Arm_Left_Control\"`` 軌道則會被保留。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:310
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:320
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
 msgstr "不以 ``+`` 或 ``-`` 開頭的軌道過濾規則會被忽略。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:315
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
@@ -687,11 +700,11 @@ msgstr ""
 "預設情況下，動畫會以內建形式保存。也可以將動畫儲存於檔案中。這樣即使重新匯入"
 "後，在動畫中新增的自定軌道也能被保留。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:329
 msgid "Optimizer"
 msgstr "Optimizer - 最佳化工具"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:321
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:331
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -700,11 +713,11 @@ msgstr ""
 "動畫匯入後會執行最佳化工具。最佳化工具能有效降低動畫的大小。一般來說，應該維"
 "持開啟最佳化工具，除非遇到動畫疑似因為最佳化而損壞的情況。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid "Clips"
 msgstr "Clips - 剪輯"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:327
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:337
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. For this to work, the model must have only one animation that is "
@@ -716,11 +729,11 @@ msgstr ""
 "``default`` 的動畫才能建立剪輯。要建立剪輯，請將剪輯數量調整為大於零的任意"
 "數。接著便能為剪輯命名、選擇開始與結尾的影格、以及選擇動畫是否要循環。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:336
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid "Scene inheritance"
 msgstr "場景繼承"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:338
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
 msgid ""
 "In many cases, it may be desired to make modifications to the imported "
 "scene. By default, this is not possible because if the source asset changes "
@@ -731,7 +744,7 @@ msgstr ""
 "始素材 (重新從 3D 模型程式中匯出的原始 ``.dae``, ``.gltf``, ``.obj`` 檔案)，"
 "Godot 會重新匯入整個場景。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:341
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
 msgid ""
 "It is possible, however, to make local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -740,53 +753,49 @@ msgstr ""
 "但，我們可以通過 **場景繼承** 來建立區域修改。試著打開匯入場景，會顯示下列視"
 "窗："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr "繼承場景中，修改只有下列限制："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:348
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr "節點無法移除 (但可以在任何地方新增節點)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:349
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
 msgstr "子資源無法編輯 (可以使用上面說明的方法將子資源保存在外部)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:351
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:361
 msgid "Other than that, everything is allowed!"
 msgstr "除此之外，可以對繼承場景做任何事！"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:354
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:366
 msgid "Import hints"
 msgstr "匯入小提示"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:356
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
 msgstr "編輯完場景後，我們往往會需要在匯出後執行下列常見任務："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
 msgid "Adding collision detection to objects."
-msgstr "為物件加上碰撞偵測"
+msgstr "為物件加上碰撞偵測。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 msgid "Setting objects as navigation meshes."
-msgstr "將物件設為導航網格"
+msgstr "將物件設為導航網格。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
-msgstr "刪除遊戲引擎中未使用到的節點 (如用於建模的特定光照)"
+msgstr "刪除遊戲引擎中未使用到的節點 (如用於建模的特定光照)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -794,31 +803,29 @@ msgid ""
 "automatically."
 msgstr ""
 "為了簡化此一工作流程，Godot 提供了一些可以在 3D 建模軟體中放在物件名稱後的後"
-"置詞。匯入後，Godot 會偵測出這些名稱後置詞並自動執行操作："
+"置詞。匯入時，Godot 會偵測出這些名稱後置詞並自動執行操作。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "下方介紹的所有後置詞都 **有區分大小寫** 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:383
 msgid "Remove nodes (-noimp)"
 msgstr "刪除節點 (-noimp)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"無論是什麼型別的物件，匯入時，名稱中有該後置詞的節點會被移除。這些節點不會出"
-"現在匯入的場景中。"
+"無論是什麼型別的物件，匯入時，名稱中有 ``-noimp`` 後置詞的節點都會被移除。這"
+"些節點不會出現在匯入的場景中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:389
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr "建立碰撞 (-col, colonly, -convcolonly)"
+msgstr "建立碰撞 (-col, -convcol, -colonly, -convcolonly)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:379
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
 msgid ""
 "The option ``-col`` will work only for Mesh objects. If it is detected, a "
 "child static collision node will be added, using the same geometry as the "
@@ -826,8 +833,12 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"``-col` 選項只適用於網格 (Mesh) 物件。若偵測到該選項，則會加上子靜態碰撞節"
+"點，並使用相同的幾何體作為網格。這個選項會建立三角網格碰撞區域，建立過程很"
+"慢，但作為碰撞偵測來說時很精準的選項。該選項通常適用於等級幾何 (也請一併參考"
+"下方的 ``colonly``)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:397
 msgid ""
 "The option ``-convcol`` will create a :ref:`class_convexpolygonshape` "
 "instead of a :ref:`class_concavepolygonshape`. Unlike triangle meshes which "
@@ -839,157 +850,158 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"``-convcol`` 會建立 :ref:`class_convexpolygonshape` 而非 :ref:"
+"`class_concavepolygonshape` 。與三角網格不同，三角網格可以是凹型的 "
+"(Concave)，凸型 (Convex) 只能在形狀沒有凸角時精準地呈現形狀 (金字塔是凸型，而"
+"空心盒 (Hallow Box) 是凹形)。因此，凸型碰撞區域通常不適合等級幾何。當要呈現比"
+"較簡單的網格時，凸型比起三角碰撞區域有更佳的效能。該選項適合用於需要精準碰撞"
+"偵測的簡單或動態的物件。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"然而，通常視覺幾何要拿來作為碰撞形體，都太複雜且太不平滑了，所以效果通常不"
-"佳。"
+"然而，在這兩種情況，通常視覺幾何要拿來作為碰撞形體都太複雜且太不平滑了。這樣"
+"會造成物理故障並不必要地降低引擎的速度。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"「-colony」修飾詞就是為了解決這個問題，使用該後置詞會在匯入時將網格移除，並改"
-"而建立 :ref:`class_staticbody` 碰撞區域。如此便有助於分開視覺化網格與實際的碰"
-"撞區域。"
+"``-colony`` 修飾詞就是為了解決這個問題，使用該後置詞會在匯入時將網格移除，並"
+"改而建立 :ref:`class_staticbody` 碰撞區域。如此便有助於分開視覺化網格與實際的"
+"碰撞區域。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"「-convcolonly」會建立 :ref:`class_convexpolygonshape` 而非 :ref:"
-"`class_concavepolygonshape` 。"
+"使用 ``-convcolonly`` 選項會改而建立 :ref:`class_convexpolygonshape` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"「-colonly」也可與 Blender 的空體一起使用。匯入時，會建立一個有碰撞子節點的 :"
-"ref:`class_staticbody`。依據 Blender 空體的不同，建立的碰撞節點會是數種預定義"
-"形狀之一："
+"``-colonly`` 也可與 Blender 的空體一起使用。匯入時，會建立一個有碰撞子節點"
+"的 :ref:`class_staticbody`。不同繪製型別的 Blender 空體所建立的碰撞節點會是數"
+"種預定義形狀之一："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "單箭頭會建立 :ref:`class_rayshape`"
+msgstr "單箭頭會建立 :ref:`class_rayshape` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:424
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "立方體會建立 :ref:`class_boxshape`"
+msgstr "立方體會建立 :ref:`class_boxshape` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "影像會建立 :ref:`class_planeshape`"
+msgstr "影像會建立 :ref:`class_planeshape` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:426
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "球體 (與其他未列出的形狀) 會建立 :ref:`class_sphereshape`"
+msgstr "球體 (與其他未列出的形狀) 會建立 :ref:`class_sphereshape` 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:428
 msgid ""
 "When possible, **try to use a few primitive collision shapes** instead of "
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"如果可能的話， **請儘量使用初形碰撞區域** 來代替三角網格或凸型。初形通常有較"
+"好的效能並較可靠。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:422
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:434
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
 "**User Preferences > Themes > 3D View > Empty**."
 msgstr ""
-"為了提高 Blender 編輯器中的可見性，可以開啟碰撞空體的「X-Ray」選項，並於 [使"
-"用者偏好設定] / [主題] / [3D 視圖] / [空體] 中為空體設定不同的顏色。"
+"為了提高 Blender 編輯器中的可見性，可以開啟碰撞空體的「X-Ray」選項，並於 "
+"**[使用者偏好設定] / [主題] / [3D 視圖] / [空體]** 中為空體設定不同的顏色。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:440
+msgid ""
+"See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
+"shapes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:444
 msgid "Create navigation (-navmesh)"
 msgstr "建立導航 (-navmesh)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:446
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
-msgstr "有該後置詞的網格節點會被轉換為導航網格。原始網格節點將被刪除。"
+msgstr ""
+"有 ``-navmesh`` 後置詞的網格節點會被轉換為導航網格。原始的網格物件將會在匯入"
+"時被刪除。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "建立 VehicleBody (-vehicle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:435
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleBody <class_VehicleBody>` 節點的"
-"子節點。"
+"有 ``-vehicle`` 後置詞的網格節點會被匯入為 :ref:`class_VehicleBody` 節點的子"
+"節點。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "建立 VehicleWheel (-wheel)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:441
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:458
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleWheel <class_VehicleWheel>` 節點"
-"的子節點。"
+"有 ``-wheel`` 後置詞的網格節點會被匯入為 :ref:`class_VehicleWheel` 節點的子節"
+"點。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:462
 msgid "Rigid Body (-rigid)"
 msgstr "剛體 (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:447
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:464
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleBody <class_VehicleBody>` 節點的"
-"子節點。"
+"有 ``-rigid`` 後置詞的網格節點會被匯入為 :ref:`class_RigidBody` 節點的子節"
+"點。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:467
 msgid "Animation loop (-loop, -cycle)"
 msgstr "動畫循環 (-loop, -cycle)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:469
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
 "flag set. **Unlike the other suffixes described above, this does not require "
 "a hyphen.**"
 msgstr ""
-"在 COLLADA 文件中以「loop」或「cycle」權杖結尾的動畫片段會被匯入為開啟循環旗"
-"標的 Godot Animation。這兩個後置詞有區分大小寫，且不需要減號 (-)。"
+"在 COLLADA 文件中以 ``loop`` 或 ``cycle`` 結尾的動畫片段會被匯入為開啟循環旗"
+"標的 Godot Animation。**於這裡介紹的其他後置詞不同，這個後置詞不需要加減號"
+"** 。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:473
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
-"在 Blender 中，需要使用 NLA 編輯器，並以「loop」或「cycle」前置或後置詞來命名"
-"動作。"
+"在 Blender 中，需要使用 NLA 編輯器，並以 ``loop`` 或 ``cycle`` 前置或後置詞來"
+"命名動作。"

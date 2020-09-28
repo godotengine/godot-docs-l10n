@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,6 @@ msgstr ""
 "<doc_compiling_for_osx>` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
-#, fuzzy
 msgid ""
 "**Windows:** There is no dedicated server build for Windows yet. As an "
 "alternative, you can use the ``--no-window`` command-line argument to "
@@ -62,7 +61,8 @@ msgid ""
 "on the Windows machine."
 msgstr ""
 "**Windows：** 目前還沒有用於 Windows 的專用伺服器建置。可以使用 ``--no-"
-"window`` 命令行引數來防止 Godot 產生視窗。"
+"window`` 命令行引數來防止 Godot 產生視窗。請注意，即使使用 ``--no-window`` 命"
+"令行引數，在 Windows 上還是必須要有支援 OpenGL。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
 msgid ""
@@ -104,28 +104,28 @@ msgid "Exporting a PCK file"
 msgstr "匯出 PCK 檔"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Godot 沒有使用限制"
+msgstr "有兩種方法可以為伺服器匯出專案："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
+"建立 Linux/X11 匯出預設設定，並定義指向伺服器二進位檔的自定 Release 匯出樣"
+"板，然後照往常一樣匯出專案即可。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
-msgstr ""
+msgstr "只匯出 PCK 檔，建議從 Linux/X11 匯出預設設定中匯出。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
-msgstr ""
+msgstr "這兩種方法產生的結果都相同。下方說明了 PCK 檔的這個方法。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
-#, fuzzy
 msgid ""
 "Once you've downloaded a server binary, you should export a PCK file "
 "containing your project data. After creating the export preset, click "
@@ -133,9 +133,9 @@ msgid ""
 "destination path. The **Export With Debug** checkbox in the file dialog has "
 "no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
-"下載好伺服器二進位檔後，則需要匯出包含專案資料的 PCK 檔。建議為此建立一個 "
-"Linux 匯出預設。建立好匯出預設後，點擊 [匯出] 對話框下方的 **[匯出 PCK/"
-"ZIP]** 並選擇目標路徑。"
+"下載好伺服器二進位檔後，需要匯出包含專案資料的 PCK 檔。建立好匯出預設後，點"
+"擊 [匯出] 對話框下方的 **[匯出 PCK/ZIP]** 並選擇目標路徑。對話框中的 "
+"**Export With Debug** 勾選框不會影響最終的 PCK 檔，可以不動這個選項。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
 msgid "See :ref:`doc_exporting_projects` for more information."
@@ -147,6 +147,8 @@ msgid ""
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
+"若從無周邊 (Headless) 編輯器中匯出專案，請在專案資料夾中使用 ``--export-"
+"pack`` 選項來呼叫無周邊編輯器以匯出 PCK 檔。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
@@ -187,9 +189,8 @@ msgstr ""
 "令行引數來指定 PCK 檔的路徑："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "為專用伺服器匯出"
+msgstr "開啟專用伺服器"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -198,12 +199,15 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"若用戶端與伺服器端都屬於相同的 Godot 專案，則必須要加上能直接以命令行引數來開"
+"啟伺服器的方法。可以通過在主要場景 (或單例) 的 ``_ready()`` 方法中加上下列程"
+"式碼片段來實現："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
-msgstr ""
+msgstr "另外，也可以在偵測到無周邊或伺服器二進位檔時開啟專用伺服器："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -211,6 +215,8 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"如果用戶端與伺服器端是分開的兩個 Godot 專案，則伺服器通常應該都設定好會在主要"
+"場景開啟時自動執行伺服器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"

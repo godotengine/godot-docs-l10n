@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:4
 msgid "Optimization using Servers"
-msgstr ""
+msgstr "Optimierung mit Servern"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:6
 msgid ""
@@ -28,22 +28,28 @@ msgid ""
 "`Scene System<doc_scene_tree>`. Using nodes and resources simplifies project "
 "organization and asset management in complex games."
 msgstr ""
+"Engines wie Godot bieten dank ihrer hochwertigen Konstruktionen und "
+"Funktionen eine höhere Benutzerfreundlichkeit. Auf die meisten von ihnen "
+"wird über das :ref:`Szenensystem <doc_scene_tree>` zugegriffen, bzw. "
+"verwendet . Die Verwendung von Nodes und Ressourcen vereinfacht die "
+"Projektorganisation und das Asset Management in komplexen Spielen."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:10
 msgid "There are, of course, always drawbacks:"
-msgstr ""
+msgstr "Es gibt natürlich immer Nachteile:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:12
 msgid "There is an extra layer of complexity"
-msgstr ""
+msgstr "Es gibt eine zusätzliche Komplexitätsebene"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:13
 msgid "Performance is lower than using simple APIs directly"
 msgstr ""
+"Die Leistung ist geringer als bei der direkten Verwendung einfacher APIs"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:14
 msgid "It is not possible to use multiple threads to control them"
-msgstr ""
+msgstr "Es ist nicht möglich, mehrere Threads zu verwenden, um sie zu steuern"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:15
 msgid "More memory is needed."
@@ -57,6 +63,11 @@ msgid ""
 "instances for something that needs to be processed every frame can be a "
 "bottleneck."
 msgstr ""
+"In vielen Fällen ist dies kein wirkliches Problem (Godot ist sehr optimiert "
+"und die meisten Vorgänge werden mit Signalen behandelt, sodass keine Abfrage "
+"erforderlich ist). Trotzdem kann es manchmal dazu kommen: Der Umgang mit "
+"Zehntausenden von Instanzen für etwas, das in jedem Frame verarbeitet werden "
+"muss, kann beispielsweise einen Engpass darstellen."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:21
 msgid ""
@@ -64,14 +75,17 @@ msgid ""
 "and wish they could go back to a more handcrafted, low level implementation "
 "of game code."
 msgstr ""
+"In solche Situationen bereuen Programmierer, dass sie eine Spiel-Engine "
+"verwenden und wünschten sich, sie könnten zu einer handwerklicheren "
+"Implementierung von Spielcode auf niedriger Ebene zurückkehren."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:24
 msgid "Still, Godot is designed to work around this problem."
-msgstr ""
+msgstr "Dennoch ist Godot darauf ausgelegt, dieses Problem zu umgehen."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:27
 msgid "Servers"
-msgstr ""
+msgstr "Server"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:29
 msgid ""
@@ -79,6 +93,9 @@ msgid ""
 "whole scene system is *optional*. While it is not currently possible to "
 "compile it out, it can be completely bypassed."
 msgstr ""
+"Eine der interessantesten Designentscheidungen für Godot ist die Tatsache, "
+"dass das gesamte Szenensystem *optional* ist. Während es derzeit nicht "
+"möglich ist es heraus zu kompilieren, kann es vollständig umgangen werden."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:32
 msgid ""
@@ -86,37 +103,50 @@ msgid ""
 "to control rendering, physics, sound, etc. The scene system is built on top "
 "of them and uses them directly. The most common servers are:"
 msgstr ""
+"Im Kern verwendet Godot das Konzept der Server. Es handelt sich um APIs auf "
+"sehr niedriger Ebene zur Steuerung von Rendering, Physik, Sound usw. Das "
+"Szenensystem ist darauf aufgebaut und verwendet sie direkt. Die häufigsten "
+"Server sind:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:36
 msgid ""
 ":ref:`VisualServer <class_VisualServer>`: handles everything related to "
 "graphics."
 msgstr ""
+":ref:`VisualServer <class_VisualServer>`: kümmert sich um alles, was mit "
+"Grafiken zu tun hat."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:37
 msgid ""
 ":ref:`PhysicsServer <class_PhysicsServer>`: handles everything related to 3D "
 "physics."
 msgstr ""
+":ref:`PhysicsServer <class_PhysicsServer>`: kümmert sich um alles rund um "
+"die 3D-Physik."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:38
 msgid ""
 ":ref:`Physics2DServer <class_Physics2DServer>`: handles everything related "
 "to 2D physics."
 msgstr ""
+":ref:`Physics2DServer <class_Physics2DServer>`: kümmert sich um alles, was "
+"mit 2D-Physik zu tun hat."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:39
 msgid ""
 ":ref:`AudioServer <class_AudioServer>`: handles everything related to audio."
 msgstr ""
-":ref:`AudioServer <class_AudioServer>`: ist zuständig für alles was mit "
-"Audio zu tun hat."
+":ref:`AudioServer <class_AudioServer>`: kümmert sich um alles, was mit Audio "
+"zu tun hat."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:41
 msgid ""
 "Just explore their APIs and you will realize that the all functions provided "
 "are low-level implementations of everything Godot allows you to do."
 msgstr ""
+"Wenn Sie nur die APIs untersuchen werden Sie feststellen, dass alle "
+"bereitgestellten Funktionen einfache Implementierungen von allem sind, was "
+"Godot Ihnen ermöglicht."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:45
 msgid "RIDs"
@@ -240,7 +270,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:156
 msgid "Creating a 2D RigidBody and moving a sprite with it"
-msgstr ""
+msgstr "Erstellen eines 2D-RigidBody und Verschieben eines Sprites damit"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:158
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr "Definitionen"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
-"Godot uses the standard C98 datatypes, such as ``uint8_t``, ``uint32_t``, "
+"Godot uses the standard C99 datatypes, such as ``uint8_t``, ``uint32_t``, "
 "``int64_t``, etc. which are nowadays supported by every compiler. "
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
@@ -264,15 +264,15 @@ msgstr "Vektor"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
-msgstr "Liste"
+msgstr "List"
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr "Festlegen"
+msgstr "Set"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr ""
+msgstr "Map"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -281,22 +281,30 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"Sie sind einfach und sollen so minimal wie möglich zu sein, da Vorlagen in C+"
+"+ häufig inline sind und die Binärgröße sowohl in Debug-Symbolen als auch "
+"den Code aufblähen. List, Set und Map können mit folgenden Zeigern iteriert "
+"werden:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "Die Vector<> -Klasse hat auch ein paar nette Funktionen:"
 
 #: ../../docs/development/cpp/core_types.rst:160
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
 msgstr ""
+"Sie kopiert beim Schreiben, daher ist das Erstellen von Kopien günstig, "
+"solange sie nicht geändert werden."
 
 #: ../../docs/development/cpp/core_types.rst:162
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
 msgstr ""
+"Sie unterstützt Multithreading durch Verwendung kleinster Operationen am "
+"Referenzzähler."
 
 #: ../../docs/development/cpp/core_types.rst:168
 msgid ""
@@ -337,6 +345,10 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"Godot bietet auch eine String-Klasse. Diese Klasse bietet eine Vielzahl von "
+"Funktionen, vollständige Unicode-Unterstützung für alle Funktionen (z.B. "
+"Falloperationen) und das Parsen bzw. Extrahieren von utf8 sowie Helfer für "
+"die Konvertierung und Visualisierung."
 
 #: ../../docs/development/cpp/core_types.rst:184
 msgid ""
@@ -348,7 +360,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
-msgstr ""
+msgstr "StringName"
 
 #: ../../docs/development/cpp/core_types.rst:189
 msgid ""
@@ -357,12 +369,19 @@ msgid ""
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
+"StringNames sind wie ein String, sind aber eindeutig. Das Erstellen eines "
+"StringName aus einem String führt zu einem eindeutigen internen Zeiger für "
+"alle gleichen Strings. StringNames sind nützlich um Strings als Bezeichner "
+"zu verwenden, da beim Vergleich im Grunde genommen ein Zeiger verglichen "
+"wird."
 
 #: ../../docs/development/cpp/core_types.rst:194
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
 msgstr ""
+"Die Erstellung eines StringName (insbesondere eines neuen) ist langsam, der "
+"Vergleich jedoch schnell."
 
 #: ../../docs/development/cpp/core_types.rst:200
 msgid ""
@@ -390,13 +409,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:214
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:216
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
 msgstr ""
+"Dies ist ein spezieller Datentyp, mit dem Pfade in einem Szenenbaum "
+"gespeichert und schnell referenziert werden."
 
 #: ../../docs/development/cpp/core_types.rst:222
 msgid ""
@@ -416,6 +437,10 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"RIDs sind Ressourcen-IDs. Server verwenden diese um auf darin gespeicherte "
+"Daten zu verweisen. RIDs sind undurchsichtig, was bedeutet, dass auf "
+"verwiesene Daten nicht direkt zugegriffen werden kann. RIDs sind eindeutig, "
+"auch für verschiedene Arten von Daten, auf die verwiesen wird."
 
 #: ../../docs/development/cpp/core_types.rst:235
 msgid ""

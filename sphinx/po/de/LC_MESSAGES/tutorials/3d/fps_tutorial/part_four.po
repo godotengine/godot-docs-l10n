@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,7 +181,7 @@ msgid ""
 "``input_movement_vector = input_movement_vector.normalized()``:"
 msgstr ""
 "Fügen Sie in ``process_input`` den folgenden Code direkt vor "
-"``input_movement_vector = input_movement_vector.normalized () `` hinzu:"
+"``input_movement_vector = input_movement_vector.normalized() `` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:113
 msgid "Let's go over what we're doing."
@@ -389,7 +389,7 @@ msgstr "Fügen wir nun Folgendes zu ``_input`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
-msgstr ""
+msgstr "Lassen Sie uns durchgehen was hier passiert:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
 msgid ""
@@ -615,7 +615,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:438
 msgid "Next let's look at ``kit_size_change``."
-msgstr ""
+msgstr "Als nächstes sehen wir uns ``kit_size_change`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:440
 msgid "The first thing we do is check to see if ``is_ready`` is ``true``."
@@ -645,7 +645,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:451
 msgid "Now let's look at ``kit_size_change_values``."
-msgstr ""
+msgstr "Lassen Sie uns jetzt ``kit_size_change_values`` anschauen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:453
 msgid ""
@@ -861,11 +861,11 @@ msgid ""
 "`RigidBody <class_RigidBody>` would be more hassle than it's worth since all "
 "it has to do is stay still."
 msgstr ""
-"Beachte zunächst, dass wir kein :ref:`RigidBody <class_RigidBody>` Node, "
-"sondern ein :ref:`StaticBody <class_StaticBody>` Node verwenden. Der Grund "
-"dafür ist, dass unsere nicht gebrochenen Ziele sich nirgendwo bewegen "
+"Beachten Sie zunächst, dass wir kein :ref:`RigidBody <class_RigidBody>` "
+"Node, sondern ein :ref:`StaticBody <class_StaticBody>` Node verwenden. Der "
+"Grund dafür ist, dass unsere nicht gebrochenen Ziele sich nirgendwo bewegen "
 "werden; die Verwendung eines :ref:`RigidBody <class_RigidBody>` wäre mehr "
-"Aufwand, als es wert ist, da er nur stillstehen muss."
+"Aufwand als es wert ist, da er nur stillstehen muss."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:623
 msgid ""
@@ -884,7 +884,8 @@ msgid ""
 msgstr ""
 "Die andere Sache, die es zu beachten gilt, ist, dass wir ein Node namens "
 "``Broken_Target_Holder`` haben. Dieses Node wird eine gespawnte/instanzierte "
-"Szene namens ``Broken_Target.tscn`` enthalten. Öffne ``Broken_Target.tscn``."
+"Szene namens ``Broken_Target.tscn`` enthalten. Öffnen Sie ``Broken_Target."
+"tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:628
 #, fuzzy
@@ -903,14 +904,13 @@ msgstr ""
 "instanziert wurde."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:632
-#, fuzzy
 msgid ""
 "While you still have ``Broken_Target.tscn`` open, attach "
 "``RigidBody_hit_test.gd`` to all of the :ref:`RigidBody <class_RigidBody>` "
 "nodes. This will make it so the player can shoot at the broken pieces and "
 "they will react to the bullets."
 msgstr ""
-"Solange du noch ``Broken_Target.tscn`` geöffnet hast, hänge "
+"Solange Sie noch ``Broken_Target.tscn`` geöffnet haben, hängen Sie "
 "``RigidBody_hit_test.gd`` an alle :ref:`RigidBody <class_RigidBody>` Nodes "
 "an. Dadurch wird erreicht, dass der Spieler auf die zerbrochenen Stücke "
 "schießen kann und diese auf die Kugeln reagieren."
@@ -921,8 +921,8 @@ msgid ""
 "`StaticBody <class_StaticBody>` node and create a new script called ``Target."
 "gd``."
 msgstr ""
-"In Ordnung, wechseln nun zurück zu ``Target.tscn``, wähle das Node "
-"``Target`` :ref:`StaticBody <class_StaticBody>` aus und erstelle ein neues "
+"In Ordnung, wechseln Sie nun zurück zu ``Target.tscn``, wählen den Node "
+"``Target`` :ref:`StaticBody <class_StaticBody>` aus und erstellen ein neues "
 "Skript mit dem Namen ``Target.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:637
@@ -1011,7 +1011,6 @@ msgid "Let's look at ``_ready``."
 msgstr "Schauen wir uns ``_ready`` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:713
-#, fuzzy
 msgid ""
 "The first thing we do is get the broken target holder and assign it to "
 "``broken_target_holder``. Notice how we're using ``get_parent().get_node()`` "
@@ -1019,9 +1018,9 @@ msgid ""
 "change ``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
 msgstr ""
 "Das Erste, was wir tun, ist, das zerbrochene Ziel zu holen und ihn dem "
-"``broken_target_holder`` zuzuordnen. Beachte, wie wir hier ``get_parent()."
-"get_node()`` anstelle von ``$`` benutzen. Wenn du ``$``` benutzen wollen "
-"würdest, müsstest du ``get_parent().get_node()`` in ``$\"../"
+"``broken_target_holder`` zuzuordnen. Beachten Sie, wie wir hier "
+"``get_parent().get_node()`` anstelle von ``$`` benutzen. Wenn Sie ``$``` "
+"benutzen wollen, müssten Sie ``get_parent().get_node()`` in ``$\"../"
 "Broken_Target_Holder\"`` ändern."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:716
@@ -1169,7 +1168,6 @@ msgstr ""
 "lassen. Dazu iterieren wir über alle Kinder in ``clone``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:758
-#, fuzzy
 msgid ""
 "For each child, we first check to see if it's a :ref:`RigidBody "
 "<class_RigidBody>` node. If it is, we then calculate the center position of "
@@ -1178,13 +1176,13 @@ msgid ""
 "we push the child from the calculated center, in the direction away from the "
 "center, using the damage of the bullet as the force."
 msgstr ""
-"Für jedes Kind prüfen wir zunächst, ob es sich um ein :ref:`RigidBody "
+"Für jeden Unter-Node prüfen wir zunächst, ob es sich um ein :ref:`RigidBody "
 "<class_RigidBody>` Node handelt. Wenn dies der Fall ist, berechnen wir dann "
-"die Mittelposition des Ziels relativ zum Kind. Dann finden wir heraus, in "
-"welcher Richtung das Kind relativ zum Zentrum liegt. Unter Verwendung dieser "
-"berechneten Variablen schieben wir das Kind vom berechneten Zentrum in die "
-"Richtung weg vom Zentrum, wobei wir die Schaden des Geschosses als Kraft "
-"verwenden."
+"die Mittelposition des Ziels relativ zum untergeordneten Node. Dann finden "
+"wir heraus, in welche Richtung dieser untergeordnete Node relativ zum "
+"Zentrum liegt. Unter Verwendung dieser berechneten Variablen schieben wir "
+"den Unter-Node vom berechneten Zentrum in die Richtung weg vom Zentrum, "
+"wobei wir den Schaden des Geschosses als Kraft verwenden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:762
 msgid ""
@@ -1193,11 +1191,10 @@ msgid ""
 "your targets to shatter."
 msgstr ""
 "Wir multiplizieren den Schaden mit ``12``, damit er eine dramatischere "
-"Wirkung hat. Du kannst dies auf einen höheren oder niedrigeren Wert ändern, "
-"je nachdem, wie explosiv du deine Ziele zerschlagen willst."
+"Wirkung hat. Sie können dies auf einen höheren oder niedrigeren Wert ändern, "
+"je nachdem, wie explosiv Sie Ihre Ziele zerschlagen wollen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:765
-#, fuzzy
 msgid ""
 "Next, we set the target's respawn timer. We set the timer to "
 "``TARGET_RESPAWN_TIME``, so it takes ``TARGET_RESPAWN_TIME`` in seconds "
@@ -1221,9 +1218,9 @@ msgid ""
 "in the editor! Otherwise the targets will not be destroyed and you will get "
 "an error!"
 msgstr ""
-"Stelle sicher, dass der exportierte ``destroyed_target`` Wert für ``Target."
-"tscn`` im Editor gesetzt ist! Andernfalls werden die Ziele nicht zerstört "
-"und du erhälst einen Fehler!"
+"Stellen Sie sicher, dass der exportierte ``destroyed_target`` Wert für "
+"``Target.tscn`` im Editor gesetzt ist! Andernfalls werden die Ziele nicht "
+"zerstört und Sie erhalten einen Fehler!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:774
 msgid ""
@@ -1232,8 +1229,8 @@ msgid ""
 "they've taken enough damage. After a little while, they'll respawn into a "
 "whole target again."
 msgstr ""
-"Wenn das erledigt ist, platziere einige ``Target.tscn`` Instanzen in einer/"
-"beiden/allen Leveln. Du solltest feststellen, dass sie in fünf Teile "
+"Wenn das erledigt ist, platzieren Sie einige ``Target.tscn`` Instanzen in "
+"einer/beiden/allen Leveln. Sie sollten feststellen, dass sie in fünf Teile "
 "explodieren, nachdem sie genug Schaden genommen haben. Nach einer Weile "
 "werden sie wieder zu einem ganzen Ziel zusammengesetzt."
 
@@ -1271,5 +1268,5 @@ msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_4.zip <files/Godot_FPS_Part_4.zip>`"
 msgstr ""
-"Du kannst das fertige Projekt für diesen Teil hier herunterladen: :download:"
+"Sie können das fertige Projekt für diesen Teil hier herunterladen: :download:"
 "`Godot_FPS_Teil_4.zip <files/Godot_FPS_Teil_4.zip>`"

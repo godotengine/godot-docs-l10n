@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,16 +90,18 @@ msgstr ""
 "``release_debug``："
 
 #: ../../docs/development/compiling/compiling_for_web.rst:41
+#, fuzzy
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
-"built into the engine. Since ``eval()`` calls can be a security concern, the "
+"built into the engine. Official export templates also have the JavaScript "
+"singleton enabled. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
 "默认情况下，将生成 :ref:`JavaScript 单例 <doc_javascript_eval>` 到引擎。由于 "
 "``eval()`` 调用可能是一个安全问题，``javascript_eval`` 选项可用于构建而不需要"
 "单例："
 
-#: ../../docs/development/compiling/compiling_for_web.rst:48
+#: ../../docs/development/compiling/compiling_for_web.rst:49
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -110,22 +112,22 @@ msgstr ""
 "子目录中。针对发布版本的名字是 ``godot.javascript.opt.zip``，或针对调试版本的"
 "是 ``godot.javascript.opt.debug.zip``。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:53
+#: ../../docs/development/compiling/compiling_for_web.rst:54
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
 "最后，将zip存档重命名为 ``webassembly_release.zip`` 以获取发布版本的模板："
 
-#: ../../docs/development/compiling/compiling_for_web.rst:58
+#: ../../docs/development/compiling/compiling_for_web.rst:59
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr "调试模板的 ``webassembly_debug.zip``："
 
-#: ../../docs/development/compiling/compiling_for_web.rst:63
+#: ../../docs/development/compiling/compiling_for_web.rst:64
 msgid "Building per asm.js translation or LLVM backend"
 msgstr "构建每个asm.js转换或LLVM后端"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:65
+#: ../../docs/development/compiling/compiling_for_web.rst:66
 msgid ""
 "WebAssembly can be compiled in two ways: The default is to first compile to "
 "asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
@@ -138,7 +140,7 @@ msgstr ""
 "的工具将此代码转换为WebAssembly。Emscripten会自动处理这两个进程，我们只需运行"
 "SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:71
+#: ../../docs/development/compiling/compiling_for_web.rst:72
 msgid ""
 "The other method uses LLVM's WebAssembly backend. This backend is available "
 "starting with LLVM 8 or in development builds. Emscripten manages this "
@@ -147,7 +149,7 @@ msgstr ""
 "另一种方法是使用LLVM的WebAssembly后端。此后端可从LLVM 8开始或在开发版本中使"
 "用。Emscripten也管理此过程，因此我们仅调用SCons。"
 
-#: ../../docs/development/compiling/compiling_for_web.rst:75
+#: ../../docs/development/compiling/compiling_for_web.rst:76
 msgid ""
 "In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
 "Emscripten configuration file is used. If it points to a directory "

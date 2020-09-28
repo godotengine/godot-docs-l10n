@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:4
-#, fuzzy
 msgid "Optimization using MultiMeshes"
-msgstr "Optimierungen durch Stapelverarbeitung"
+msgstr "Optimierungen durch MultiMeshes"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:6
 msgid ""
@@ -28,6 +27,9 @@ msgid ""
 "processed (and certain amount of control needs to be retained), :ref:`using "
 "servers directly <doc_using_servers>` is the recommended optimization."
 msgstr ""
+"Für eine große Anzahl von Instanzen (Tausende) die ständig verarbeitet "
+"werden müssen (und ein gewisses Maß an Kontrolle muss beibehalten werden), "
+"wird Folgendes empfohlen :ref:`Server direkt verwenden <doc_using_servers>`."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:10
 msgid ""
@@ -35,10 +37,13 @@ msgid ""
 "of these approaches are efficient anymore. Still, depending on the "
 "requirements, there is one more optimization possible."
 msgstr ""
+"Wenn die Anzahl der Objekte Hunderttausende oder Millionen erreicht, ist "
+"keiner dieser Ansätze mehr effizient. Abhängig von den Anforderungen ist "
+"jedoch noch eine weitere Optimierung möglich."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:15
 msgid "MultiMeshes"
-msgstr "Mehrere-Skulpturen"
+msgstr "MultiMeshes"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:17
 msgid ""
@@ -47,6 +52,10 @@ msgid ""
 "uses the GPU hardware to do this (in OpenGL ES 2.0, it's less efficient "
 "because there is no hardware support for it, though)."
 msgstr ""
+"Ein :ref:`MultiMesh <class_MultiMesh>` ist ein einzelnes Zeichnungselement, "
+"das bis zu Millionen von Objekten auf einmal zeichnen kann. Es ist äußerst "
+"effizient, da hierfür die GPU-Hardware verwendet wird (in OpenGL ES 2.0 ist "
+"es weniger effizient, da es jedoch keine Hardwareunterstützung gibt)."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:21
 msgid ""
@@ -56,6 +65,12 @@ msgid ""
 "MultiMesh. It is possible to provide a custom visibility rect for them, but "
 "it will always be *all-or-none* visibility."
 msgstr ""
+"Der einzige Nachteil ist, dass für einzelne Instanzen kein *Bildschirm* oder "
+"*Kegelstumpf* wegschneiden möglich ist. Dies bedeutet, dass Millionen von "
+"Objekten *immer* oder *nie* gezeichnet werden, abhängig von der Sichtbarkeit "
+"des gesamten MultiMesh. Es ist möglich eine benutzerdefinierte "
+"Sichtbarkeitsrahmen für sie bereitzustellen, aber es wird immer eine *alles "
+"oder nichts* Sichtbarkeit sein."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:26
 msgid ""
@@ -64,6 +79,10 @@ msgid ""
 "use case. A workaround is to create several MultiMeshes for different areas "
 "of the world."
 msgstr ""
+"Wenn die Objekte einfach genug sind (nur ein paar Eckpunkte) ist dies im "
+"Allgemeinen kein großes Problem, da die meisten modernen GPUs für diesen "
+"Anwendungsfall optimiert sind. Eine Umgehung des Problems besteht darin, "
+"mehrere MultiMeshes für verschiedene Regionen der Welt zu erstellen."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:30
 msgid ""
@@ -74,6 +93,13 @@ msgid ""
 "Information to the shader can be provided via textures (there are floating-"
 "point :ref:`Image<class_Image>` formats which are ideal for this)."
 msgstr ""
+"Es ist auch möglich eine Logik innerhalb des Vertex-Shaders auszuführen "
+"(unter Verwendung der integrierten Konstanten ``INSTANCE_ID`` oder "
+"``INSTANCE_CUSTOM``). Ein Beispiel für das Animieren von Tausenden von "
+"Objekten in einem MultiMesh finden Sie in der Anleitung :ref:`Animieren von "
+"Tausenden von Fischen <doc_animating_thousands_of_fish>`. Informationen für "
+"den Shader können über Texturen bereitgestellt werden (es gibt Gleitkomma :"
+"ref:`Bild <class_Image>`-Formate die dafür ideal sind)."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:36
 msgid ""
@@ -84,6 +110,13 @@ msgid ""
 "way, the array can be created with multiple threads, then set in one call, "
 "providing high cache efficiency."
 msgstr ""
+"Eine andere Alternative ist die Verwendung von GDNative und C++, die äußerst "
+"effizient sein sollten (es ist möglich den gesamten Status für alle Objekte "
+"mithilfe des linearen Speichers über die Funktion :ref:`VisualServer."
+"multimesh_set_as_bulk_array() "
+"<class_VisualServer_method_multimesh_set_as_bulk_array>` festzulegen). Auf "
+"diese Weise kann das Array mit mehreren Threads erstellt und dann in einem "
+"Aufruf festgelegt werden, wodurch eine hohe Cache-Effizienz erzielt wird."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:42
 msgid ""
@@ -94,10 +127,16 @@ msgid ""
 "instances that will be used, then change the amount visible depending on how "
 "many are currently needed."
 msgstr ""
+"Schließlich müssen nicht alle MultiMesh-Instanzen sichtbar sein. Die Anzahl "
+"der sichtbaren kann mit der Eigenschaft :ref:`MultiMesh."
+"visible_instance_count <class_MultiMesh_property_visible_instance_count>` "
+"gesteuert werden. Der typische Ablauf besteht darin, die maximale Anzahl der "
+"verwendeten Instanzen zuzuweisen und dann die sichtbare Anzahl zu ändern, je "
+"nachdem wie viele derzeit benötigt werden."
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:48
 msgid "Multimesh example"
-msgstr "Ein Beispiel von Multimeshes"
+msgstr "Ein Beispiel von MultiMeshes"
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:50
 msgid ""
@@ -105,3 +144,6 @@ msgid ""
 "GDScript may be more efficient for millions of objects, but for a few "
 "thousands, GDScript should be fine."
 msgstr ""
+"Hier ist ein Beispiel für die Verwendung eines MultiMesh aus Code heraus. "
+"Andere Sprachen als GDScript sind möglicherweise für Millionen von Objekten "
+"effizienter, aber für einige Tausend sollte GDScript in Ordnung sein."

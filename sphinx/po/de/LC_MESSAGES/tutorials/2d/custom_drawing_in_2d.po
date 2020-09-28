@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
-msgstr "Benutzerdefinierte Zeichnung in 2D"
+msgstr "2D benutzerdefiniertes zeichnen"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 msgid "Why?"
@@ -39,7 +39,7 @@ msgstr ""
 "zeichnen. In den meisten Fällen reicht dies aus, aber nicht immer. Bevor Sie "
 "vor Angst, Wut und Verzweiflung weinen, weil ein Node zum Zeichnen dieses "
 "bestimmten *Etwas* nicht existiert ... wäre es gut zu wissen, wie einfach es "
-"ist jeden 2D-Node (sei es :ref:`Control <) class_Control> `oder :ref:`Node2D "
+"ist jeden 2D-Node (sei es :ref:`Control <class_Control> `oder :ref:`Node2D "
 "<class_Node2D>`basiert) dazu zu bringen benutzerdefinierte Befehle zu "
 "zeichnen. Es ist *wirklich* einfach dies zu tun."
 
@@ -104,12 +104,18 @@ msgid ""
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the ``_draw()`` function."
 msgstr ""
+"Fügen Sie ein Skript zu einem beliebigen von :ref:`CanvasItem "
+"<class_CanvasItem>` abgeleiteten Node hinzu, wie zum Beispiel :ref:`Control "
+"<class_Control>` oder: ref: `Node2D <class_Node2D>`. Überschreiben Sie dann "
+"die Funktion ``_draw() ``."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
+"Es gibt viele Zeichenbefehle, die alle in der Klassenreferenz :ref:"
+"`CanvasItem <class_CanvasItem>` beschrieben werden."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid "Updating"
@@ -120,6 +126,9 @@ msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
+"Die Funktion ``_draw() `` wird nur einmal aufgerufen , womit dann die "
+"Zeichenbefehle gecached und zwischengespeichert werden, sodass weitere "
+"Aufrufe nicht erforderlich sind."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
@@ -127,18 +136,26 @@ msgid ""
 "call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
 "same node and a new ``_draw()`` call will happen."
 msgstr ""
+"Wenn ein erneutes Zeichnen erforderlich ist, weil sich ein Status oder etwas "
+"anderes geändert hat, rufen Sie einfach :ref:`CanvasItem.update() "
+"<class_CanvasItem_method_update>` in demselben Node auf und ein neuer "
+"``_draw() `` Aufruf wird ausgeführt."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
 msgstr ""
+"Hier ist ein etwas komplexeres Beispiel, eine Texturvariable, die bei "
+"Änderung neu gezeichnet wird:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
 msgstr ""
+"In einigen Fällen kann es wünschenswert sein jedes Frame zu zeichnen. Rufen "
+"Sie dazu einfach ``update() `` aus dem ``_process() `` Rückruf auf:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "An example: drawing circular arcs"
@@ -152,6 +169,11 @@ msgid ""
 "what about drawing a portion of a circle? You will have to code a function "
 "to perform this and draw it yourself."
 msgstr ""
+"Wir werden jetzt die benutzerdefinierte Zeichenfunktion der Godot Engine "
+"verwenden um etwas zu zeichnen für das Godot keine Funktionen bereitstellt. "
+"Als Beispiel bietet Godot eine Funktion ``draw_circle()`` die einen ganzen "
+"Kreis zeichnet. Was ist jedoch mit dem Zeichnen eines Teils eines Kreises? "
+"Sie müssen eine Funktion schreiben um dies auszuführen und selbst zeichnen."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
 msgid "Arc function"
@@ -165,6 +187,12 @@ msgid ""
 "we have to provide to our drawing function. We'll also provide the color "
 "value, so we can draw the arc in different colors if we wish."
 msgstr ""
+"Ein Bogen wird durch seine Kreisparameter definiert, d.h. den Mittelpunkt "
+"und den Radius. Der Bogen selbst wird dann durch den Winkel definiert bei "
+"dem er beginnt und durch den Winkel bei dem er stoppt. Dies sind die 4 "
+"Argumente, die wir für unsere Zeichenfunktion angeben müssen. Wir geben auch "
+"den Farbwert an, damit wir den Bogen auf Wunsch in verschiedenen Farben "
+"zeichnen können."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
 msgid ""
@@ -198,6 +226,10 @@ msgid ""
 "initialize an empty ``PoolVector2Array``, which is simply an array of "
 "``Vector2``\\ s."
 msgstr ""
+"Erinnern Sie sich an die Anzahl der Punkte, in die unsere Form zerlegt "
+"werden muss? Wir haben diese Zahl in der Variablen ``nb_points`` auf einen "
+"Wert von ``32`` festgelegt. Dann initialisieren wir ein leeres "
+"``PoolVector2Array`` das einfach ein Array von ``Vector2`` ist."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
 msgid ""
@@ -207,6 +239,12 @@ msgid ""
 "include the last point. We first determine the angle of each point, between "
 "the starting and ending angles."
 msgstr ""
+"Der nächste Schritt besteht darin die tatsächlichen Positionen dieser 32 "
+"Punkte zu berechnen, aus denen ein Bogen besteht. Dies geschieht in der "
+"ersten for-Schleife: Wir iterieren über die Anzahl der Punkte, für die wir "
+"die Positionen berechnen möchten, plus einen Punkt, der den letzten Punkt "
+"enthält. Wir bestimmen zuerst den Winkel jedes Punktes zwischen dem Start- "
+"und dem Endwinkel."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 msgid ""
@@ -217,6 +255,13 @@ msgid ""
 "start counting at 12 o'clock. So we decrease each angle by 90° in order to "
 "start counting from 12 o'clock."
 msgstr ""
+"Der Grund, warum jeder Winkel um 90° verringert wird besteht darin, dass wir "
+"aus jedem Winkel mithilfe der Trigonometrie 2D-Positionen berechnen (Sie "
+"wissen, Sinus und Cosinus ...). Um es einfacher zu machen, verwenden ``sin() "
+"`` und ``cos() `` Bogenmaß, nicht Grad. Der Winkel von 0° (0 Bogenmaß) "
+"beginnt bei 3 Uhr, obwohl wir bei 12 Uhr mit dem Zählen beginnen möchten. "
+"Also verringern wir jeden Winkel um 90° um bei 12 Uhr mit dem Zählen zu "
+"beginnen."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
 msgid ""
@@ -229,6 +274,15 @@ msgid ""
 "which is performed by adding it to our ``Vector2`` value. Finally, we insert "
 "the point in the ``PoolVector2Array`` which was previously defined."
 msgstr ""
+"Die tatsächliche Position eines Punktes auf einem Kreis im Winkel ``angle`` "
+"(im Bogenmaß) wird durch ``Vector2(cos(angle), sin(angle))`` angegeben. Da "
+"``sin()`` und ``cos()`` Werte zwischen -1 und 1 zurückliefern, befindet sich "
+"die Position auf einem Kreis mit Radius 1. Um diese Position auf unserem "
+"Hilfskreis zu haben, der einen Radius von ``radius`` hat, müssen wir einfach "
+"die Position mit ``radius`` multiplizieren. Schließlich müssen wir unseren "
+"Hilfskreis an der Position ``center`` positionieren, indem wir ihn zu "
+"unserem Wert ``Vector2`` hinzufügen. Schließlich fügen wir den Punkt in das "
+"zuvor definierte ``PoolVector2Array`` ein."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
 msgid ""
@@ -278,10 +332,14 @@ msgid ""
 "is exactly the same as before, except that we draw a polygon instead of "
 "lines:"
 msgstr ""
+"Wir können noch einen Schritt weiter gehen und nicht nur eine Funktion "
+"schreiben, die den durch den Bogen definierten Teil der Scheibe zeichnet, "
+"sondern auch deren gesamte Form. Die Methode ist genau die gleiche wie "
+"zuvor, außer dass wir anstelle von Linien ein Polygon zeichnen:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
 msgid "Dynamic custom drawing"
-msgstr ""
+msgstr "Dynamische benutzerdefinierte Zeichnung"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
 msgid ""
@@ -291,6 +349,12 @@ msgid ""
 "our example, we will simply increment them by 50. This increment value has "
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
+"In Ordnung, wir können jetzt benutzerdefinierte Inhalte auf dem Bildschirm "
+"zeichnen. Es ist jedoch statisch; Lassen Sie uns diese Form um den "
+"Mittepunkt drehen. Die Lösung hierfür besteht einfach darin, die Werte "
+"angle_from und angle_to im Laufe der Zeit zu ändern. In unserem Beispiel "
+"erhöhen wir sie einfach um 50. Dieser Inkrementwert muss konstant bleiben, "
+"sonst ändert sich die Drehzahl entsprechend."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
 msgid ""
@@ -298,10 +362,13 @@ msgid ""
 "top of our script. Also note that you can store them in other nodes and "
 "access them using ``get_node()``."
 msgstr ""
+"Zuerst müssen wir die Variablen angle_from und angle_to oben in unserem "
+"Skript global anlegen. Beachten Sie auch, dass Sie sie in anderen Nodes "
+"speichern und mit ``get_node()`` darauf zugreifen können."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
 msgid "We make these values change in the _process(delta) function."
-msgstr ""
+msgstr "Wir ändern diese Werte in der Funktion _process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
 msgid ""

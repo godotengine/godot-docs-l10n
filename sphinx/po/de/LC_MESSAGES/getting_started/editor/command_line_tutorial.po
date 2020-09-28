@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -580,7 +580,7 @@ msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
-"Zum Beispiel, der vollständige Befehl zum exportieren deines Spiels (wie "
+"Zum Beispiel, der vollständige Befehl zum exportieren Ihres Spiels (wie "
 "unten beschrieben) sieht in etwa so aus:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:179
@@ -632,9 +632,10 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
-"Godot schont dein Filesystem und wird keine extra Metadata Dateien erzeugen. "
-"Nutze ``rm`` um eine Szenendatei zu löschen. Stelle sicher, dass nichts auf "
-"diese Szene verweist, ansonsten wird beim Öffnen ein Fehler angezeigt."
+"Godot schont Ihr Filesystem und wird keine extra Metadata Dateien erzeugen. "
+"Nutzen Sie ``rm`` um eine Szenendatei zu löschen. Stellen Sie sicher, dass "
+"nichts auf diese Szene verweist, ansonsten wird beim Öffnen ein Fehler "
+"angezeigt."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:226
 msgid "Running the game"
@@ -715,6 +716,10 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"Um nur eine PCK-Datei zu exportieren, verwenden Sie die Option ``--export-"
+"pack`` gefolgt vom voreingestellten Namen und Ausgabepfad mit der "
+"Dateierweiterung anstelle von ``--export``. Die Ausgabepfaderweiterung "
+"bestimmt das Format des Pakets, entweder PCK oder ZIP."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:285
 msgid "Running a script"
@@ -736,7 +741,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Das Skript muss von ``SceneTree`` oder ``MainLoop`` erben."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-msgid "Here is a simple example of how it works:"
+#, fuzzy
+msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "Hier ein kleines Beispiel wie es funktioniert:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
@@ -751,3 +757,18 @@ msgstr ""
 "Falls im Pfad kein ``project.godot`` existiert wird der aktuelle Pfad als "
 "aktuelles Arbeitsverzeichnis angenommen (es sei denn, ``--path`` ist "
 "angegeben)."
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:314
+msgid ""
+"The first line of ``sayhello.gd`` above is commonly referred to as a "
+"*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
+"you to run the script as follows in modern Linux distributions, as well as "
+"macOS:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:326
+msgid ""
+"If the above doesn't work in your current version of Linux or macOS, you can "
+"always have the shebang run Godot straight from where it is located as "
+"follows:"
+msgstr ""

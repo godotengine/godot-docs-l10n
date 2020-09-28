@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "Audio-Samples importieren"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Why import?"
-msgstr ""
+msgstr "Wieso importieren?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and Ogg Vorbis."
 msgstr ""
+"Rohe Audiodaten sind im Allgemeinen groß und unerwünscht. Godot bietet zwei "
+"Hauptoptionen zum Importieren Ihrer Audiodaten: WAV und Ogg Vorbis."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
@@ -41,12 +43,19 @@ msgid ""
 "play back (hundreds of simultaneous voices in this format are fine), but "
 "take up significant space."
 msgstr ""
+"WAV-Dateien verwenden Rohdaten oder leichte Komprimierung, stellen nur "
+"geringe Anforderungen an die CPU für die Wiedergabe (Hunderte von Stimmen "
+"gleichzeitig in diesem Format sind in Ordnung), beanspruchen jedoch viel "
+"Platz."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:15
 msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
+"Ogg Vorbis-Dateien verwenden eine stärkere Komprimierung, die zu einer viel "
+"kleineren Dateigröße führt, für die Wiedergabe jedoch erheblich mehr "
+"Rechenleistung benötigt."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
 msgid "Here is a comparative chart."

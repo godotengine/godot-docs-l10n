@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
 msgid "GDScript style guide"
-msgstr "GDScript Style Guide"
+msgstr "GDScript Stil-Richtlinien"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:6
 msgid ""
@@ -28,10 +28,10 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also support the "
 "development of auto-formatting tools."
 msgstr ""
-"Dieser Style Guide listet Konventionen zum Schreiben von elegantem GDScript. "
-"Das Ziel ist, einen dazu zu ermutigen, sauberen und lesbaren Code zu "
-"schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen zu "
-"fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
+"Diese Stil-Richtlinien listen Konventionen zum Schreiben von elegantem "
+"GDScript auf. Das Ziel ist Sie dazu zu ermutigen, sauberen und lesbaren Code "
+"zu schreiben und die Konsistenz aller Projekte, Diskussionen und Anleitungen "
+"zu fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
 "Formatierungswerkzeugen ankurbeln."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:11
@@ -39,8 +39,9 @@ msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
 msgstr ""
-"Da GDScript Python ähnelt, ist dieser Guide inspiriert von Python's `PEP 8 "
-"<https://www.python.org/dev/peps/pep-0008/>`__ Programmier-Styleguide."
+"Da GDScript Python ähnelt, ist diese Anleitung inspiriert von Python's `PEP "
+"8 <https://www.python.org/dev/peps/pep-0008/>`__ Programmier-Stil-"
+"Richtlinien."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:15
 msgid ""
@@ -48,10 +49,10 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
-"Styleguides sind nicht als harte Regelbücher gedacht. Manchmal können Sie "
-"einige der folgenden Richtlinien möglicherweise nicht anwenden. In diesem "
-"Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie andere "
-"Entwickler nach Erkenntnissen."
+"Stil-Richtlinien sind nicht als harte Regelbücher gedacht. Manchmal können "
+"Sie einige der folgenden Richtlinien möglicherweise nicht anwenden. In "
+"diesem Fall urteilen Sie selbst was wohl am besten wäre und fragen Sie "
+"andere Entwickler nach Erkenntnissen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:19
 msgid ""
@@ -87,13 +88,14 @@ msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
-"Benutze Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
+"Benutzen Sie Line Feed (**LF**) für Zeilenumbrüche, nicht CRLF oder CR. "
 "*(Standardeinstellung im Editor)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
-"Benutze ein Line Feed am Ende jeder Datei. *(Standardeinstellung im Editor)*"
+"Benutzen Sie ein Line Feed am Ende jeder Datei. *(Standardeinstellung im "
+"Editor)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
@@ -106,7 +108,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
-"Benutze **Tabs** anstelle von Leerzeichen für Einrückungen. "
+"Benutzen Sie **Tabs** anstelle von Leerzeichen für Einrückungen. "
 "*(Standardeinstellung im Editor)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
@@ -129,7 +131,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
 msgid "**Good**:"
 msgstr "**Gut**:"
 
@@ -143,7 +145,7 @@ msgstr "**Gut**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
 msgid "**Bad**:"
 msgstr "**Schlecht**:"
 
@@ -316,8 +318,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
-"Benutze keine Leerzeichen um Ausdrücke vertikal auszurichten (um \"Spalten\" "
-"zu erzeugen.):"
+"Benutzen Sie keine Leerzeichen um Ausdrücke vertikal auszurichten (um "
+"\"Spalten\" zu erzeugen.):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid "Quotes"
@@ -333,9 +335,8 @@ msgstr ""
 "Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "Mitglieder"
+msgstr "Nummern"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -343,18 +344,19 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"Lassen Sie die führende oder nachfolgende Null in Gleitkommazahlen nicht "
+"weg. Andernfalls sind sie schwerer lesbar und auf einen Blick schwerer von "
+"Ganzzahlen zu unterscheiden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
 msgstr "**Gut**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
 msgstr "**Schlecht**:"
 
@@ -363,12 +365,16 @@ msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
+"Verwenden Sie Kleinbuchstaben für Buchstaben in hexadezimalen Zahlen, da "
+"ihre geringere Höhe die Lesbarkeit der Zahl erleichtert."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
+"Nutzen Sie die Unterstriche von GDScript in Literalen, damit große Zahlen "
+"lesbarer sind."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -381,7 +387,7 @@ msgid ""
 "inconsistent code."
 msgstr ""
 "Diese Benennungsrichtlinien folgen dem Godot Engine Style. Bei "
-"Nichtbeachtung wird dein Code mit den eingebauten Bennennungsrichtlinien "
+"Nichtbeachtung wird Ihr Code mit den eingebauten Bennennungsrichtlinien "
 "kollidieren, was zu inkonsistentem Code führt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
@@ -639,9 +645,9 @@ msgid ""
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
-"Beginnen Sie mit der Rückrufmethode ``_init ()``, die die Engine beim "
-"Erstellen des Objekts im Speicher aufruft. Folgen Sie dem Rückruf ``_ready "
-"()`` den Godot aufruft, wenn er dem Szenenbaum ein Node hinzufügt."
+"Beginnen Sie mit der Rückrufmethode ``_init()``, die die Engine beim "
+"Erstellen des Objekts im Speicher aufruft. Folgen Sie dem Rückruf "
+"``_ready()`` den Godot aufruft, wenn er dem Szenenbaum ein Node hinzufügt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
 msgid ""
@@ -657,7 +663,7 @@ msgid ""
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
-"Andere integrierte virtuelle Rückrufe wie \"_unhandled_input ()\" und "
+"Andere integrierte virtuelle Rückrufe wie \"_unhandled_input()\" und "
 "\"_physics_process\" \"sollten als nächstes folgen. Diese steuern die "
 "Hauptschleife des Objekts und die Interaktionen mit der Spiel-Engine."
 
@@ -682,29 +688,43 @@ msgstr ""
 "<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-msgid "Type hints"
-msgstr "Tipps für Typen"
+#, fuzzy
+msgid "Declared types"
+msgstr "Benannte Typen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
-msgid ""
-"Place the colon right after the variable's name, without a space, and let "
-"the GDScript compiler infer the variable's type when possible."
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
-"Platzieren Sie den Doppelpunkt direkt hinter dem Variablennamen ohne "
-"Leerzeichen und lassen Sie den GDScript-Compiler nach Möglichkeit auf den "
-"Variablentyp schließen."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:760
-msgid ""
-"When you let the compiler infer the type hint, write the colon and equal "
-"signs together: ``:=``."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#, fuzzy
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "Definieren Sie den Rückgabetyp einer Funktion mit dem Pfeil ->"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+#, fuzzy
+msgid "Inferred types"
+msgstr "Kerntypen"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
 "Wenn der Compiler den Typ erkennen soll, schreiben Sie den Doppelpunkt und "
 "die Gleichheitszeichen zusammen: ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
-msgid ""
-"Add a space on either sides of the return type arrow when defining functions."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "::"
 msgstr ""
-"Fügen Sie beim Definieren von Funktionen auf beiden Seiten des "
-"Rückgabetyppfeils ein Leerzeichen ein."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "var health := 0  # The compiler will use the int type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
+msgid ""
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""

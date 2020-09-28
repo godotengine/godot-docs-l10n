@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,9 @@ msgid ""
 "``MainLoop.NOTIFICATION_WM_QUIT_REQUEST`` notification that is sent to all "
 "nodes when quitting is requested."
 msgstr ""
+"Auf Desktop-Plattformen verfügt die :ref:`MainLoop <class_MainLoop>` über "
+"eine spezielle ``MainLoop.NOTIFICATION_WM_QUIT_REQUEST``-Benachrichtigung, "
+"die bei einer Beendigungsanforderung an alle Nodes gesendet wird."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:21
 msgid ""
@@ -56,25 +59,38 @@ msgid ""
 "> Quit On Go Back** is checked in the Project Settings (which is the "
 "default)."
 msgstr ""
+"Unter Android wird stattdessen ``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` "
+"gesendet. Durch Drücken der Zurück-Taste wird die Anwendung beendet, wenn in "
+"den Projekteinstellungen **Anwendung> Konfiguration> Bei Zurück beenden** "
+"aktiviert ist (Standardeinstellung)."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:28
 msgid ""
 "``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` isn't supported on iOS, as iOS "
 "devices don't have a physical Back button."
 msgstr ""
+"``MainLoop.NOTIFICATION_WM_GO_BACK_REQUEST`` wird unter iOS nicht "
+"unterstützt, da iOS-Geräte keine physische Zurück-Schaltfläche haben."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:31
 msgid "Handling the notification is done as follows (on any node):"
 msgstr ""
+"Die Behandlung der Benachrichtigung erfolgt wie folgt (bei jedem Node):"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:48
 msgid ""
 "When developing mobile apps, quitting is not desired unless the user is on "
 "the main screen, so the behavior can be changed."
 msgstr ""
+"Bei der Entwicklung mobiler Apps ist das Beenden nur dann erwünscht, wenn "
+"sich der Benutzer auf dem Hauptbildschirm befindet, sodass das Verhalten "
+"geändert werden kann."
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:51
 msgid ""
 "It is important to note that by default, Godot apps have the built-in "
 "behavior to quit when quit is requested, this can be changed:"
 msgstr ""
+"Es ist wichtig zu beachten, dass Godot-Apps standardmäßig das eingebaute "
+"Verhalten haben sich bei einer Beendigungsanforderung zu beenden. Dies kann "
+"geändert werden:"

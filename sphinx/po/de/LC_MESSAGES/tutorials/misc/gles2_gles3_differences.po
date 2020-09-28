@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,6 +91,9 @@ msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
 "appear slightly different between them  especially when lighting is used."
 msgstr ""
+"GLES2 und GLES3 befinden sich in unterschiedlichen Farbräumen. Dies "
+"bedeutet, dass die Farben zwischen ihnen leicht unterschiedlich erscheinen, "
+"insbesondere bei Verwendung von Beleuchtung."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:42
 msgid ""
@@ -110,28 +113,34 @@ msgid ""
 "user Low Dynamic Range (LDR) which limits viewport values to the ``0-1`` "
 "range."
 msgstr ""
+"GLES2 kann keine HDR-Rendering-Funktionen (High Dynamic Range) verwenden. "
+"Wenn HDR für Ihr Projekt oder für ein bestimmtes Ansichtsfenster festgelegt "
+"ist, verwendet Godot weiterhin den LDR (Low Dynamic Range), wodurch die "
+"Werte des Ansichtsfensters auf den Bereich ``0-1`` begrenzt werden."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:54
 msgid "SpatialMaterial features"
-msgstr ""
+msgstr "SpatialMaterial-Funktionen"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:56
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
 "`SpatialMaterial <class_SpatialMaterial>` are missing:"
 msgstr ""
+"In GLES2 fehlen die folgenden erweiterten Rendering-Funktionen in :ref:"
+"`SpatialMaterial <class_SpatialMaterial>`:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:58
 msgid "Refraction"
-msgstr ""
+msgstr "Brechung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:59
 msgid "Subsurface scattering"
-msgstr ""
+msgstr "Streuung unter der Oberfläche"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:60
 msgid "Anisotropy"
-msgstr ""
+msgstr "Anisotropie (Richtungsabhängigkeit)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:61
 msgid "Clearcoat"
@@ -139,11 +148,13 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:62
 msgid "Depth mapping"
-msgstr ""
+msgstr "Tiefenabbildung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:64
 msgid "When using SpatialMaterials they will not even appear in the editor."
 msgstr ""
+"Bei Verwendung von SpatialMaterials werden diese nicht einmal im Editor "
+"angezeigt."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:66
 msgid ""
@@ -155,17 +166,19 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:71
 msgid "Environment features"
-msgstr "Eigenschaften von Umgebungsvariablen"
+msgstr "Umgebungsmerkmale"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:73
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
 "<class_Environment>` are missing:"
 msgstr ""
+"In GLES2 fehlen die folgenden Funktionen in der :ref:`Umgebung "
+"<class_Environment>`:"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:75
 msgid "Auto exposure"
-msgstr ""
+msgstr "Automatische Belichtung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:76
 msgid "Tonemapping"
@@ -185,7 +198,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:82
 msgid "Sky (including procedural sky)"
-msgstr ""
+msgstr "Himmel (inkl. proceduralem Himmel)"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:83
 msgid "Ambient light"
@@ -205,11 +218,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:87
 msgid "Adjustment"
-msgstr ""
+msgstr "Einstellung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:90
 msgid "GIProbes"
-msgstr ""
+msgstr "GI-Proben"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:92
 msgid ""
@@ -242,7 +255,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:108
 msgid "Texture compression"
-msgstr ""
+msgstr "Texturkomprimierung"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:110
 msgid ""
@@ -266,7 +279,7 @@ msgstr "Übergangsformen"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:124
 msgid "Blend shapes are not supported in GLES2."
-msgstr ""
+msgstr "Übergangsformen werden in GLES2 nicht unterstützt."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:127
 msgid "Shading language"
@@ -277,13 +290,16 @@ msgid ""
 "GLES3 provides many built-in functions that GLES2 does not. Below is a list "
 "of functions that are not available or are have limited support in GLES2."
 msgstr ""
+"GLES3 bietet viele integrierte Funktionen, die GLES2 nicht bietet. Unten "
+"finden Sie eine Liste der Funktionen, die in GLES2 nicht verfügbar sind oder "
+"nur eingeschränkt unterstützt werden."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:132
 msgid ""
 "For a complete list of built-in GLSL functions see the :ref:`Shading "
 "Language doc <doc_shading_language>`."
 msgstr ""
-"Genauere Informationen über Godots Shading Language gibt es im eigenen "
+"Genauere Informationen über Godots Shader-Sprache gibt es im eigenen "
 "Artikel: :ref:`Shading Language <doc_shading_language>`."
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:135

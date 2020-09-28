@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:205
 msgid "Use a semaphore"
-msgstr ""
+msgstr "Semaphoren verwenden"
 
 #: ../../docs/tutorials/io/background_loading.rst:207
 msgid ""
@@ -193,8 +193,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:211
+#, fuzzy
 msgid "Not blocking main thread during the polling"
-msgstr ""
+msgstr "Den Hauptthread während der Abstimmung nicht blockieren"
 
 #: ../../docs/tutorials/io/background_loading.rst:213
 msgid ""
@@ -205,6 +206,14 @@ msgid ""
 "thread to acquire them. This might cause a deadlock if the main thread is "
 "waiting for your mutex while your thread is waiting to load a resource."
 msgstr ""
+"Wenn Sie ein Mutex haben, um Aufrufe vom Hauptthread zu Ihrer Loader-Klasse "
+"zuzulassen, sperren Sie den Hauptthread nicht, während Sie ``poll`` in Ihrer "
+"Loader-Klasse aufrufen. Wenn eine Ressource fertig geladen ist, benötigt sie "
+"möglicherweise einige Ressourcen von den APIs auf niedriger Ebene "
+"(VisualServer usw.), die möglicherweise den Hauptthread sperren müssen, um "
+"sie zu erhalten. Dies kann zu einem Deadlock führen, wenn der Hauptthread "
+"auf Ihren Mutex wartet, während Ihr Thread darauf wartet, eine Ressource zu "
+"laden."
 
 #: ../../docs/tutorials/io/background_loading.rst:222
 msgid "Example class"
@@ -215,25 +224,34 @@ msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
 msgstr ""
+"Eine Beispielklasse für das Laden von Ressourcen in Threads finden Sie "
+"hier: :download:`resource_queue.gd <files/resource_queue.gd>`. Die Benutzung "
+"ist wie folgt:"
 
 #: ../../docs/tutorials/io/background_loading.rst:231
 msgid "Call after you instance the class to start the thread."
-msgstr ""
+msgstr "Rufe nach der Instanz die Klasse auf, um den Thread zu starten."
 
 #: ../../docs/tutorials/io/background_loading.rst:237
 msgid ""
 "Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
 "the queue."
 msgstr ""
+"Stelle eine Ressource in die Warteschlange. Verwende das optionale Argument "
+"\"p_in_front\", um sie an den Anfang der Warteschlange zu stellen."
 
 #: ../../docs/tutorials/io/background_loading.rst:244
 msgid "Remove a resource from the queue, discarding any loading done."
 msgstr ""
+"Entferne eine Ressource aus der Warteschlange und verwerfe dabei jede "
+"geladene."
 
 #: ../../docs/tutorials/io/background_loading.rst:250
 msgid ""
 "Returns ``true`` if a resource is fully loaded and ready to be retrieved."
 msgstr ""
+"Gibt ``true`` zurück, wenn eine Ressource vollständig geladen und bereit zum "
+"Abruf ist."
 
 #: ../../docs/tutorials/io/background_loading.rst:256
 msgid ""
@@ -243,6 +261,12 @@ msgid ""
 "(updating progress bars, etc), use ``is_ready`` to find out if a resource is "
 "actually ready."
 msgstr ""
+"Ruft den Fortschritt einer Ressource ab. Gibt -1 zurück, wenn ein Fehler "
+"aufgetreten ist (z.B. wenn die Ressource nicht in der Warteschlange steht), "
+"oder eine Zahl zwischen 0,0 und 1,0 mit dem Fortschritt des Ladevorgangs. "
+"Verwende diese Funktion hauptsächlich für kosmetische Zwecke (Aktualisierung "
+"von Fortschrittsbalken usw.), verwende ``is_ready``, um herauszufinden, ob "
+"eine Ressource tatsächlich bereit ist."
 
 #: ../../docs/tutorials/io/background_loading.rst:266
 msgid ""
@@ -251,6 +275,12 @@ msgid ""
 "and finish the load. If the resource is not on the queue, it will call "
 "``ResourceLoader::load`` to load it normally and return it."
 msgstr ""
+"Gibt die vollständig geladene Ressource zurück, oder ``null`` bei einem "
+"Fehler. Wenn die Ressource nicht vollständig geladen ist (``is_ready`` gibt "
+"``false`` zurück), blockiert sie Ihren Thread und beendet das Laden. Wenn "
+"sich die Ressource nicht in der Warteschlange befindet, wird "
+"``ResourceLoader::load`` aufgerufen, um sie normal zu laden und "
+"zurückzugeben."
 
 #: ../../docs/tutorials/io/background_loading.rst:272
 msgid "Example:"
@@ -262,3 +292,7 @@ msgid ""
 "scenarios. If you run into any issues, ask for help in one of `Godot's "
 "community channels <https://godotengine.org/community>`__."
 msgstr ""
+"**Bemerkung**: Dieser Code wird in seiner derzeitigen Form nicht in realen "
+"Szenarien getestet. Wenn Sie auf irgendwelche Probleme stoßen, bitten Sie in "
+"einem von `Godots Gemeinschaftskanälen <https://godotengine.org/"
+"community>`__ um Hilfe."

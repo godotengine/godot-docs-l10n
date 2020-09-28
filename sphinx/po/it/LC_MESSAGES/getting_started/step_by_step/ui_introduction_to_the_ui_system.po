@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "Disegnare interfacce con i nodi Control"
+msgstr "Progettare le interfacce con i nodi Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -218,8 +218,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"```Scale``` scala la texture per adattarsi al rettangolo di delimitazione "
-"del nodo."
+"``Scale`` scala la texture per adattarla al rettangolo di delimitazione del "
+"nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
@@ -272,7 +272,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -280,11 +279,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"** TextureButton ** è simile a TextureRect, tranne per il fatto che ha 5 "
-"slot per trama: uno per ciascuno degli stati dei pulsanti. Il più delle "
-"volte, userete le texture Normal, Pressed e Hover .  è utile se "
+"** TextureButton ** è simile a TextureRect, tranne per il fatto che ha 6 "
+"slot per le texture: uno per ciascuno degli stati dei pulsanti. Il più delle "
+"volte, userete le texture Normal, Pressed e Hover. Focused è utile se "
 "l'interfaccia è in ascolto dell'input da tastiera. La sesta area immagine, "
-"la  Clic Mask, consente di definire l'area in cui è possibile fare clic "
+"la Clic Mask, consente di definire l'area in cui è possibile fare clic "
 "utilizzando un'immagine in bianco e nero a 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
@@ -319,9 +318,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
-"** TextureProgress ** consente di creare una barra di avanzamento con un "
-"massimo di 3 sprite. Le trame Under, Over sono intervallate da Progress, che "
-"mostra il contenuto della barra."
+"** TextureProgress ** sovrappone fino a 3 sprite per creare una barra di "
+"avanzamento. Le texture Under e Over racchiudono quella Progress, che mostra "
+"il valore della barra."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -330,10 +329,10 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
-"La proprietà `` Mode '' controlla la direzione in cui cresce la barra: "
+"La proprietà ``Mode`` controlla la direzione verso cui la barra cresce: "
 "orizzontale, verticale o radiale. Se lo si imposta su radiale, le proprietà "
-"`` Initial Angle'' e `` Fill Degrees '' consentono di limitare l'intervallo "
-"del misuratore."
+"``Initial Angle`` e ``Fill Degrees`` consentono di limitare l'intervallo "
+"dell'indicatore."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -346,13 +345,13 @@ msgid ""
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
 "Per animare la barra, dovresti vedere la sezione Intervallo. Regola le "
-"proprietà `` Min '' e `` Max`` per impostare l'intervallo del misuratore. Ad "
-"esempio, per rappresentare la vita di un personaggio, devi impostare `` "
-"Min`` su `` 0 '' e `` Max`` sulla vita massima del personaggio. Cambia la "
-"proprietà `` Value`` per aggiornare la barra. Se si lasciano i valori `` "
-"Min`` e `` Max`` nei valori predefiniti di `` 0`` e `` 100 '' e si imposta "
-"la proprietà `` Value`` su `` 40``, il Verrà visualizzato il 40% della trama "
-"`` Progress`` e il 60% rimarrà nascosto."
+"proprietà ``Min`` e ``Max`` per impostare l'intervallo dell' indicatore. Ad "
+"esempio, per rappresentare la vita di un personaggio, devi impostare ``Min`` "
+"su ``0 `` e ``Max`` sulla vita massima del personaggio. Cambia la proprietà "
+"``Value`` per aggiornare la barra. Se si lasciano i valori ``Min`` e ``Max`` "
+"nei valori predefiniti di ``0`` e ``100`` e si imposta la proprietà "
+"``Value`` su ``40``, verrà visualizzato il 40% della texture ``Progress`` e "
+"il 60% rimarrà nascosto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -370,16 +369,16 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"** Label ** stampa il testo sullo schermo. Troverai tutte le sue proprietà "
-"nella sezione Etichetta, nell'Inspector. Digita il testo nella proprietà `` "
-"Text '' e seleziona Autowrap se desideri che rispetti le dimensioni della "
+"**Label** stampa il testo sullo schermo. Troverai tutte le sue proprietà "
+"nella sezione Label, nell'Inspector. Digita il testo nella proprietà "
+"``Text`` e seleziona Autowrap se desideri che rispetti le dimensioni della "
 "casella di testo. Se Autowrap è disabilitato, non sarà possibile "
-"ridimensionare il nodo. È possibile allineare il testo in orizzontale e in "
-"verticale rispettivamente con Allinea e Allinea."
+"ridimensionare il nodo. È possibile allineare il testo in orizzontale con "
+"Align e in verticale con Valign."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Immagine di un Nodo Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
@@ -392,6 +391,10 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
+"**NinePatchRect** prende una texture divisa in 3 righe e 3 colonne. Il "
+"centro e i lati si estendono quando si scala la texture, ma non scala mai "
+"gli angoli. È utile per costruire pannelli, finestre di dialogo e sfondi "
+"scalabili per la vostra interfaccia utente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -414,14 +417,15 @@ msgid ""
 "elements for you. They take control over their children."
 msgstr ""
 "Sono disponibili molti nodi contenitore che scalano e posizionano gli "
-"elementi dell'interfaccia utente. Prendono il controllo dei loro figli."
+"elementi dell'interfaccia utente per te. Prendono il controllo sui loro "
+"figli."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
-"Nell'altro lato c'è il menu di layout. Ti aiuta ad ancorare, rilasciare e "
+"Sull'altro lato c'è il menu di layout. Ti aiuta ad ancorare, piazzare e "
 "ridimensionare un elemento dell'interfaccia utente all'interno del suo "
 "genitore."
 
@@ -457,7 +461,7 @@ msgstr ""
 msgid "Place UI elements precisely with anchors"
 msgstr ""
 "Piazzare perfettamente gli elementi dell'interfaccia utente attraverso l'uso "
-"degli ancoraggi"
+"delle ancore"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -490,19 +494,20 @@ msgid ""
 msgstr ""
 "Come qualsiasi altra proprietà, puoi modificare i 4 punti di ancoraggio "
 "nell'Inspector, ma questo non è il modo più conveniente. Quando si seleziona "
-"un nodo di controllo, il menu di configurazione appare sopra la finestra del "
+"un nodo Control, il menu di configurazione appare sopra la finestra del "
 "display sulla barra degli strumenti. Offre un elenco di icone per impostare "
 "le 4 ancore con un solo clic, invece di utilizzare le 4 proprietà "
-"dell'ispettore. Il menu di progettazione verrà visualizzato solo quando si "
-"seleziona un nodo di controllo."
+"dell'Inspector. Il menu di progettazione verrà visualizzato solo quando si "
+"seleziona un nodo Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
+#, fuzzy
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Il menu del layout nella finestra di visualizzazione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
-msgstr "Le ancore sono relative al contenitore principale"
+msgstr "Le ancore sono relative al contenitore genitore"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
 msgid ""
@@ -604,14 +609,17 @@ msgstr ""
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
-"Lo stesso esempio qui sopra, ma il nodo centra ha la proprietà di dimensione "
-"\"Espandi\""
+"Lo stesso esempio come sopra, ma il nodo centrale ha la proprietà di "
+"dimensione \"Espandi\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Avrai bisogno di un po 'di pratica per capire i size tag, in quanto il loro "
+"effetto può cambiare un po' a seconda della configurazione della tua "
+"interfaccia."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"

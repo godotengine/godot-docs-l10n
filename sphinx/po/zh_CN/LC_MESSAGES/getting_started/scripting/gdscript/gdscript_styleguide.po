@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
 msgid "**Good**:"
 msgstr "**良好的**："
 
@@ -126,7 +126,7 @@ msgstr "**良好的**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
 msgid "**Bad**:"
 msgstr "**糟糕的**："
 
@@ -610,23 +610,41 @@ msgstr ""
 "<doc_gdscript_static_typing>`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-msgid "Type hints"
-msgstr "类型提示"
+#, fuzzy
+msgid "Declared types"
+msgstr "命名的类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
-msgid ""
-"Place the colon right after the variable's name, without a space, and let "
-"the GDScript compiler infer the variable's type when possible."
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
-"将冒号放在变量名称之后，不带空格，并在尽可能让GDScript编译器推断变量的类型。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:760
-msgid ""
-"When you let the compiler infer the type hint, write the colon and equal "
-"signs together: ``:=``."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#, fuzzy
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "使用箭头 ``->`` 定义函数的返回类型"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+#, fuzzy
+msgid "Inferred types"
+msgstr "核心类型"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr "当让编译器推断类型提示时，将冒号和等号一起写： ``:=``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "var health := 0  # The compiler will use the int type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
-"Add a space on either sides of the return type arrow when defining functions."
-msgstr "定义函数时，在返回类型箭头的两侧添加一个空格。"
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""

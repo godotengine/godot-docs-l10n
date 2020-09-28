@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:30
 msgid "Add the following code to ``AnimationPlayer_Manager.gd``:"
-msgstr ""
+msgstr "Fügen Sie den folgenden Code ``AnimationPlayer_Manager.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:152
 msgid "Lets go over what this script is doing:"
@@ -789,6 +789,7 @@ msgstr "``KILL_TIMER``: Wie lange die Kugel fliegt, ohne etwas zu treffen."
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:482
 msgid "``timer``: A float for tracking how long the bullet has been alive."
 msgstr ""
+"``timer``: Ein Fließkommazahl um zu verfolgen, wie lange die Kugel noch lebt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:483
 msgid ""
@@ -983,7 +984,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:589
 msgid "Creating the first weapon"
-msgstr ""
+msgstr "Die erste Waffe erstellen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:591
 msgid "Lets write the code for each of our weapons, starting with the pistol."
@@ -998,7 +999,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:595
 msgid "Add the following code to ``Weapon_Pistol.gd``:"
-msgstr ""
+msgstr "Fügen Sie den folgenden Code ``Weapon_Pistol.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:646
 msgid "Let's go over how the script works."
@@ -1089,7 +1090,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:683
 msgid "Next let's look at ``fire_weapon``:"
-msgstr ""
+msgstr "Als nächstes sehen wir uns ``fire_weapon`` an:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:685
 msgid "The first thing we do is instance the bullet scene we made earlier."
@@ -1157,7 +1158,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
 msgid "Now let's look at ``equip_weapon``:"
-msgstr ""
+msgstr "Als nächstes sehen wir uns ``equip_weapon`` an:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:710
 msgid ""
@@ -1197,7 +1198,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:727
 msgid "Finally, let's look at ``unequip_weapon``:"
-msgstr ""
+msgstr "Zum Schluss sehen wir uns ``unequip_weapon`` an:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:729
 msgid ""
@@ -1240,7 +1241,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:744
 msgid "Creating the other two weapons"
-msgstr ""
+msgstr "Die anderen beiden Waffen erzeugen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:746
 msgid ""
@@ -1401,12 +1402,16 @@ msgid ""
 "``WEAPON_NUMBER_TO_NAME``: A dictionary allowing us to convert from a "
 "weapon's number to its name. We'll use this for changing weapons."
 msgstr ""
+"``WEAPON_NUMBER_TO_NAME``: Ein Wörterbuch mit dem wir die Nummer einer Waffe "
+"in ihren Namen umwandeln können. Wir werden dies zum Waffenwechsel verwenden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:921
 msgid ""
 "``WEAPON_NAME_TO_NUMBER``: A dictionary allowing us to convert from a "
 "weapon's name to its number. We'll use this for changing weapons."
 msgstr ""
+"``WEAPON_NAME_TO_NUMBER``: Ein Wörterbuch mit dem wir den Namen einer Waffe "
+"in ihre Nummer umwandeln können. Wir werden dies zum Waffenwechsel verwenden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:922
 msgid ""
@@ -1425,6 +1430,8 @@ msgid ""
 "``health``: How much health our player has. In this part of the tutorial we "
 "will not be using it."
 msgstr ""
+"``health``: Wie viel Gesundheit hat unser Spieler? In diesem Teil der "
+"Anleitung werden wir es nicht verwenden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:925
 msgid ""
@@ -1501,7 +1508,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:996
 msgid "Now we will call ``process_changing_weapons``."
-msgstr ""
+msgstr "Jetzt rufen wir ``process_changing_weapons`` auf."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
 msgid ""
@@ -1582,7 +1589,7 @@ msgstr "Füge den folgenden Code hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1107
 msgid "Let's go over what's happening here:"
-msgstr ""
+msgstr "Lassen Sie uns durchgehen was hier passiert:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1109
 msgid ""
@@ -1707,7 +1714,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1170
 msgid "Creating some test subjects"
-msgstr ""
+msgstr "Erstellen einiger Testpersonen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1172
 msgid ""

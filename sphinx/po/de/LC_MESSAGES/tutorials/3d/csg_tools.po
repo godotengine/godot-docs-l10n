@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:4
 msgid "Prototyping levels with CSG"
-msgstr ""
+msgstr "Level-Prototypen mittels CSG erstellen"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:6
 msgid ""
@@ -63,6 +63,10 @@ msgid ""
 "It lets you design levels using `TrenchBroom <https://kristianduske.com/"
 "trenchbroom/>`__ and import them in Godot."
 msgstr ""
+"Wenn Sie nach einem benutzerfreundlichen Level-Design-Tool für ein Projekt "
+"suchen, können Sie stattdessen `Qodot <https://github.com/Shfty/qodot-"
+"plugin>`__ verwenden. Sie können Ebenen mit `TrenchBroom <https://"
+"kristianduske.com/trenchbroom/>`__ entwerfen und in Godot importieren."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
 msgid "Introduction to CSG nodes"
@@ -230,45 +234,49 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:114
 msgid "Prototyping a level"
-msgstr ""
+msgstr "Einen Level-Prototyp erstellen"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:116
 msgid "We will prototype a room to practice the use of CSG tools."
 msgstr ""
+"Als Übung zur Verwendung von CSG-Tools werden wir einen Raum als Prototyp "
+"erstellen."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:118
 msgid ""
 "Working in **Orthogonal** projection gives a better view when combining the "
 "CSG shapes."
 msgstr ""
+"Das Arbeiten in der **orthogonalen** Projektion bietet eine bessere Sicht "
+"beim Kombinieren der CSG-Formen."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:121
 msgid "Our level will contain these objects:"
-msgstr ""
+msgstr "Unser Level wird folgende Objekte enthalten:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:123
 msgid "a room,"
-msgstr ""
+msgstr "einen Raum,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:124
 msgid "a bed,"
-msgstr ""
+msgstr "ein Bett,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:125
 msgid "a lamp,"
-msgstr ""
+msgstr "eine Lampe,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:126
 msgid "a desk,"
-msgstr ""
+msgstr "einen Schreibtisch,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:127
 msgid "a bookshelf."
-msgstr ""
+msgstr "ein Bücherregal."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:129
 msgid "Create a scene with a Spatial node as root node."
-msgstr ""
+msgstr "Erstellen Sie eine Szene mit einem Spatial-Node als Wurzel."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:131
 msgid ""
@@ -276,46 +284,60 @@ msgid ""
 "some angles. Change the display mode using **Display Overdraw** in the 3D "
 "viewport menu, or add a DirectionalLight node to help you see clearly."
 msgstr ""
+"Die Standardbeleuchtung der Umgebung bietet in einigen Winkeln keine klare "
+"Schattierung. Ändern Sie den Anzeigemodus mit **Display Overdraw** im 3D-"
+"Ansichtsfenster-Menü oder fügen Sie einen DirectionalLight-Node hinzu, damit "
+"Sie klar sehen können."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:138
 msgid ""
 "Create a CSGBox and name it ``room``, enable **Invert Faces** and change the "
 "dimensions of your room."
 msgstr ""
+"Erstellen Sie eine CSGBox und nennen Sie sie ``room``, aktivieren Sie "
+"**Gesichter umkehren** und ändern Sie die Abmessungen Ihres Raums."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:145
 msgid "Next, create a CSGCombiner and name it ``desk``."
 msgstr ""
+"Erstellen Sie als Nächstes einen CSGCombiner und nennen Sie ihn ``desk``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:147
 msgid "A desk has one surface and 4 legs:"
-msgstr ""
+msgstr "Ein Schreibtisch hat eine Oberfläche und 4 Beine:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:149
 msgid ""
 "Create 1 CSGBox children node in **Union** mode for the surface and adjust "
 "the dimensions."
 msgstr ""
+"Erstellen Sie einen CSGBox-Unter-Node im **Union**-Modus für die Oberfläche "
+"und passen Sie die Abmessungen an."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:151
 msgid ""
 "Create 4 CSGBox children nodes in **Union** mode for the legs and adjust the "
 "dimensions."
 msgstr ""
+"Erstellen Sie 4 CSGBox-Unter-Nodes im **Union**-Modus für die Beine und "
+"passen Sie die Abmessungen an."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:154
 msgid "Adjust their placement to resemble a desk."
-msgstr ""
+msgstr "Passen Sie ihre Platzierung einem Schreibtisch an."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:158
 msgid ""
 "CSG nodes inside a CSGCombiner will only process their operation within the "
 "combiner. Therefore, CSGCombiners are used to organize CSG nodes."
 msgstr ""
+"CSG-Nodes in einem CSGCombiner verarbeiten ihre Operation nur innerhalb des "
+"Kombinierers. Daher werden CSGCombiners verwendet, um CSG-Nodes zu "
+"organisieren."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:162
 msgid "Create a CSGCombiner and name it ``bed``."
-msgstr ""
+msgstr "Erstellen Sie einen CSGCombiner und nennen Sie ihn ``bed``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:164
 msgid ""
@@ -323,30 +345,42 @@ msgid ""
 "CSGBox and adjust its dimension for the bed. Create another CSGBox and "
 "adjust its dimension for the mattress."
 msgstr ""
+"Unser Bett besteht aus 3 Teilen: dem Bett, der Matratze und einem Kissen. "
+"Erstellen Sie eine CSGBox und passen Sie ihre Abmessungen für das Bett an. "
+"Erstellen Sie eine weitere CSGBox und passen Sie deren Abmessungen für die "
+"Matratze an."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:170
 msgid ""
 "We will create another CSGCombiner named ``pillow`` as the child of  "
 "``bed``. The scene tree should look like this:"
 msgstr ""
+"Wir werden einen weiteren CSGCombiner namens ``pillow`` als Unter-Node von   "
+"``bed`` erstellen. Der Szenenbaum sollte folgendermaßen aussehen:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:175
 msgid ""
 "We will combine 3 CSGSphere nodes in **Union** mode to form a pillow. Scale "
 "the Y axis of the spheres and enable **Smooth Faces**."
 msgstr ""
+"Wir werden 3 CSGSphere-Nodes im **Union**-Modus zu einem Kissen kombinieren. "
+"Skalieren Sie die Y-Achse der Kugeln und aktivieren Sie **Glatte Gesichter**."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:180
 msgid ""
 "Select the ``pillow`` node and switch the mode to **Subtraction**; the "
 "combined spheres will cut a hole into the mattress."
 msgstr ""
+"Wählen Sie den ``pillow`` Node und schalten Sie den Modus auf "
+"**Subtraktion**; Die kombinierten Kugeln schneiden ein Loch in die Matratze."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:185
 msgid ""
 "Try to re-parent the ``pillow`` node to the root ``Spatial`` node; the hole "
 "will disappear."
 msgstr ""
+"Versuchen Sie, den ``pillow`` Node wieder dem Wurzel-Node ``Spatial`` "
+"zuzuordnen. Das Loch wird verschwinden."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:188
 msgid ""
@@ -354,16 +388,22 @@ msgid ""
 "node is not a CSG node, the CSGCombiner nodes are the end of the operations; "
 "this shows the use of CSGCombiner to organize the CSG scene."
 msgstr ""
+"Dies soll den Effekt der CSG-Verarbeitungsreihenfolge veranschaulichen. Da "
+"der Wurzel-Node kein CSG-Node ist, sind die CSGCombiner-Nodes das Ende der "
+"Operationen. Dies zeigt die Verwendung von CSGCombiner zum Organisieren der "
+"CSG-Szene."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:193
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "Das fertig gebaute Bett sollte so aussehen:"
+msgstr ""
+"Machen Sie die vorhin gemachte Änderung wieder rückgängig, nachdem Sie den "
+"Effekt beobachtet haben. Das fertig gebaute Bett sollte nun so aussehen:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:198
 msgid "Create a CSGCombiner and name it ``lamp``."
-msgstr ""
+msgstr "Erstellen Sie einen CSGCombiner und nennen Sie ihn ``lamp``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:200
 msgid ""
@@ -371,6 +411,11 @@ msgid ""
 "CSGCylinder, enable the **Cone** option and make it the stand. Create "
 "another CSGCylinder and adjust the dimensions to use it as a pole."
 msgstr ""
+"Eine Lampe besteht aus 3 Teilen: dem Ständer, der Stange und dem "
+"Lampenschirm. Erstellen Sie einen CSGCylinder, aktivieren Sie die Option "
+"**Cone** und machen Sie ihn zum Ständer. Erstellen Sie einen weiteren "
+"CSGCylinder und passen Sie die Abmessungen an, um ihn als Stange zu "
+"verwenden."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:206
 msgid ""
@@ -379,39 +424,52 @@ msgid ""
 "while in **Front View** (numeric keypad 1); this shape will extrude around "
 "the origin and form the lampshade."
 msgstr ""
+"Wir werden ein CSGPolygon für den Lampenschirm verwenden. Verwenden Sie den "
+"**Spin**-Modus für das CSGPolygon und zeichnen Sie ein `Trapez <https://en."
+"wikipedia.org/wiki/Trapezoid>`_ in **Vorderansicht** (Ziffernblock 1); Diese "
+"Form wird um den Ursprung herum extrudiert und bildet den Lampenschirm."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:217
 msgid "Adjust the placement of the 3 parts to make it look like a lamp."
 msgstr ""
+"Passen Sie die Platzierung der 3 Teile so an, dass sie wie eine Lampe "
+"aussehen."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:221
 msgid "Create a CSGCombiner and name it ``bookshelf``."
-msgstr ""
+msgstr "Erstellen Sie einen CSGCombiner und nennen Sie ihn ``bookshelf``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:223
 msgid ""
 "We will use 3 CSGBox nodes for the bookshelf. Create a CSGBox and adjust its "
 "dimensions; this will be the size of the bookshelf."
 msgstr ""
+"Wir werden 3 CSGBox-Nodes für das Bücherregal verwenden. Erstellen Sie eine "
+"CSGBox und passen Sie ihre Abmessungen an. Dies ist die Größe des "
+"Bücherregals."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:228
 msgid ""
 "Duplicate the CSGBox and shorten the dimensions of each axis and change the "
 "mode to **Subtraction**."
 msgstr ""
+"Duplizieren Sie die CSGBox, kürzen Sie die Abmessungen jeder Achse und "
+"ändern Sie den Modus in **Subtraktion**."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:235
 msgid ""
 "You've almost built a shelf. Create one more CSGBox for dividing the shelf "
 "into two levels."
 msgstr ""
+"Sie haben das Regal fast gebaut. Erstellen Sie eine weitere CSGBo, um das "
+"Regal in zwei Ebenen zu unterteilen."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:240
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
 msgstr ""
-"Positioniere deine Möbel im Raum wie du möchtest und deine Szene sollte so "
+"Positionieren Sie die Möbel im Raum wie Sie möchten und die Szene sollte so "
 "aussehen:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:245
@@ -420,10 +478,14 @@ msgid ""
 "tools can be used for designing all kinds of levels, such as a maze or a "
 "city; explore its limitations when designing your game."
 msgstr ""
+"Sie haben mit den CSG-Tools in Godot erfolgreich einen Raum-Level als "
+"Prototyp erstellt. CSG-Tools können zum Entwerfen aller Arten von Level "
+"verwendet werden, z.B. eines Labyrinths oder einer Stadt. Erforschen Sie die "
+"Grenzen beim Entwerfen Ihres Spiels."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:250
 msgid "Using prototype textures"
-msgstr ""
+msgstr "Verwenden von Prototyp-Texturen"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:252
 msgid ""
@@ -434,12 +496,22 @@ msgid ""
 "restricts its usage to organic surfaces like terrain. Still, when "
 "prototyping, it can be used to quickly apply textures to CSG-based levels."
 msgstr ""
+"Godots :ref:`doc_spatial_material` unterstützt *triplanare Zuordnung* mit "
+"der automatisch eine Textur auf beliebige Objekte ohne Verzerrung angewendet "
+"werden kann. Dies ist praktisch wenn Sie CSG verwenden, da Godot das "
+"Bearbeiten von UV-Karten auf CSG-Nodes noch nicht unterstützt. Die "
+"triplanare Kartierung ist relativ langsam, was ihre Verwendung normalerweise "
+"auf organische Oberflächen wie Gelände beschränkt. Beim Prototyping können "
+"Texturen jedoch schnell auf CSG-basierte Ebenen angewendet werden."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:259
 msgid ""
 "If you need some textures for prototyping, Kenney made a `set of CC0-"
 "licensed prototype textures <https://kenney.nl/assets/prototype-textures>`__."
 msgstr ""
+"Wenn Sie einige Texturen für das Prototyping benötigen, hat Kenney eine "
+"Reihe von CC0-lizenzierten Prototyp-Texturen erstellt <https://kenney.nl/"
+"assets/prototype-textures> `__."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
 msgid "There are two ways to apply a material to a CSG node:"
@@ -453,6 +525,10 @@ msgid ""
 "automatically, but will make it impossible to change the material in "
 "individual children."
 msgstr ""
+"Anwenden auf einen CSGCombiner-Node als Materialüberschreibung (**Geometrie> "
+"Materialüberschreibung** im Inspektor). Dies wirkt sich automatisch auf die "
+"Kinder aus, macht es jedoch unmöglich, das Material bei einzelnen Kindern zu "
+"ändern."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:268
 msgid ""
@@ -460,6 +536,10 @@ msgid ""
 "This way, each CSG node can have its own appearance. Subtractive CSG nodes "
 "will apply their material to the nodes they're \"digging\" into."
 msgstr ""
+"Anwenden eines Materials auf einzelne Nodes (**Material** im Inspektor). Auf "
+"diese Weise kann jeder CSG-Node sein eigenes Erscheinungsbild haben. "
+"Subtraktive CSG-Nodes wenden ihr Material auf die Nodes an, in die sie "
+"\"graben\"."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:272
 msgid ""
@@ -473,6 +553,17 @@ msgid ""
 "Higher values in the **Scale** property will cause the texture to repeat "
 "more often."
 msgstr ""
+"Um eine triplanare Zuordnung auf einen CSG-Node anzuwenden, wählen Sie sie "
+"aus, gehen Sie zum Inspektor und klicken Sie auf den Text **[leer]** neben "
+"**Materialüberschreibung** (oder **Material** für einzelne CSG-Nodes). "
+"Wählen Sie **Neues SpatialMaterial**. Klicken Sie auf das Symbol des neu "
+"erstellten Materials, um es zu bearbeiten. Entfalten Sie den Abschnitt "
+"**Albedo** und laden Sie eine Textur in die Eigenschaft **Textur**. "
+"Entfalten Sie nun den Abschnitt **Uv1** und überprüfen **Triplanar**. Sie "
+"können den Texturversatz und die Skalierung auf jeder Achse ändern, indem "
+"Sie mit den Eigenschaften **Skalieren** und **Versatz** direkt darüber "
+"spielen. Höhere Werte in der Eigenschaft **Scale** führen dazu, dass sich "
+"die Textur häufiger wiederholt."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:281
 msgid ""
@@ -482,3 +573,9 @@ msgid ""
 "onto, click the dropdown arrow next to its material property then choose "
 "**Paste**."
 msgstr ""
+"Sie können ein SpatialMaterial kopieren, um es über CSG-Nodes hinweg "
+"wiederzuverwenden. Klicken Sie dazu im Inspektor auf den Dropdown-Pfeil "
+"neben einer Materialeigenschaft und wählen Sie **Kopieren**. Um es "
+"einzufügen wählen Sie den Node aus, auf den Sie das Material anwenden "
+"möchten, klicken Sie auf den Dropdown-Pfeil neben seiner Materialeigenschaft "
+"und wählen Sie dann **Einfügen**."

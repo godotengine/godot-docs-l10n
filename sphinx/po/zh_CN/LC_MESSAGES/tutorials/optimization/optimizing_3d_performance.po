@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,99 +53,108 @@ msgid ""
 "still see the entire town. It won't just render the buildings in front of "
 "you, it will render the street behind that, with the people on that street, "
 "the buildings behind that. You quickly end up in situations where you are "
-"attempting to render 10x, or 100x more than what is visible."
+"attempting to render 10× or 100× more than what is visible."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:28
 msgid ""
 "Things aren't quite as bad as they seem, because the Z-buffer usually allows "
-"the GPU to only fully shade the objects that are at the front. However, "
-"unneeded objects are still reducing performance."
+"the GPU to only fully shade the objects that are at the front. This is "
+"called *depth prepass* and is enabled by default in Godot when using the "
+"GLES3 renderer. However, unneeded objects are still reducing performance."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:32
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:33
 msgid ""
 "One way we can potentially reduce the amount to be rendered is to take "
-"advantage of occlusion. As of version 3.2.2 there is no built in support for "
-"occlusion in Godot, however with careful design you can still get many of "
+"advantage of occlusion. As of Godot 3.2.2, there is no built in support for "
+"occlusion in Godot. However, with careful design you can still get many of "
 "the advantages."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:36
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:37
 msgid ""
-"For instance in our city street scenario, you may be able to work out in "
+"For instance, in our city street scenario, you may be able to work out in "
 "advance that you can only see two other streets, ``B`` and ``C``, from "
 "street ``A``. Streets ``D`` to ``Z`` are hidden. In order to take advantage "
 "of occlusion, all you have to do is work out when your viewer is in street "
 "``A`` (perhaps using Godot Areas), then you can hide the other streets."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:42
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:43
 msgid ""
-"This is a manual version of what is known as a 'potentially visible set'. It "
-"is a very powerful technique for speeding up rendering. You can also use it "
-"to restrict physics or AI to the local area, and speed these up as well as "
-"rendering."
-msgstr ""
-
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:48
-msgid "Other occlusion techniques"
+"This is a manual version of what is known as a \"potentially visible set\". "
+"It is a very powerful technique for speeding up rendering. You can also use "
+"it to restrict physics or AI to the local area, and speed these up as well "
+"as rendering."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:50
 msgid ""
-"There are other occlusion techniques such as portals, automatic PVS, and "
-"raster based occlusion culling. Some of these may be available through "
-"addons, and may be available in core Godot in the future."
+"In some cases, you may have to adapt your level design to add more occlusion "
+"opportunities. For example, you may have to add more walls to prevent the "
+"player from seeing too far away, which would decrease performance due to the "
+"lost opportunies for occlusion culling."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:55
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:56
+msgid "Other occlusion techniques"
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:58
+msgid ""
+"There are other occlusion techniques such as portals, automatic PVS, and "
+"raster-based occlusion culling. Some of these may be available through add-"
+"ons and may be available in core Godot in the future."
+msgstr ""
+
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:63
 msgid "Transparent objects"
 msgstr "透明物体"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:57
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
 #, fuzzy
 msgid ""
 "Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader "
 "<class_Shader>` to improve performance. This, however, can not be done with "
 "transparent objects. Transparent objects are rendered from back to front to "
-"make blending with what is behind work. As a result, try to use as few "
-"transparent objects as possible. If an object has a small section with "
+"make blending with what is behind work. As a result, **try to use as few "
+"transparent objects as possible**. If an object has a small section with "
 "transparency, try to make that section a separate surface with its own "
-"Material."
+"material."
 msgstr ""
 "如前所述，Godot通过材质和着色器对对象进行排序以提高性能。 但是，这不能在透明"
 "对象上完成。 透明对象从后向前呈现，以便与背后的内容进行混合。 因此，请尽量将"
 "透明物体保持在最低限度！ 如果对象有一小部分是透明的，请尝试将该部分作为单独的"
 "材质。"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:64
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:73
 #, fuzzy
 msgid ""
 "For more information, see the :ref:`GPU optimizations "
 "<doc_gpu_optimization>` doc."
 msgstr "有关更多信息，请参见 :ref:`doc_c_sharp_differences` 页面。"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:68
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:77
 msgid "Level of detail (LOD)"
 msgstr "细节程度(LOD)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:70
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:79
 msgid ""
 "In some situations, particularly at a distance, it can be a good idea to "
-"replace complex geometry with simpler versions - the end user will probably "
-"not be able to see much difference. Consider looking at a large number of "
-"trees in the far distance. There are several strategies for replacing models "
-"at varying distance. You could use lower poly models, or use transparency to "
-"simulate more complex geometry."
+"**replace complex geometry with simpler versions**. The end user will "
+"probably not be able to see much difference. Consider looking at a large "
+"number of trees in the far distance. There are several strategies for "
+"replacing models at varying distance. You could use lower poly models, or "
+"use transparency to simulate more complex geometry."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:78
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:87
 #, fuzzy
 msgid "Billboards and imposters"
 msgstr "Billboard Mode(广告牌模式)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:80
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:89
 msgid ""
 "The simplest version of using transparency to deal with LOD is billboards. "
 "For example, you can use a single transparent quad to represent a tree at "
@@ -155,14 +164,14 @@ msgid ""
 "`doc_gpu_optimization`)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:86
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:95
 msgid ""
 "An alternative is to render not just one tree, but a number of trees "
 "together as a group. This can be especially effective if you can see an area "
 "but cannot physically approach it in a game."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:90
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:99
 msgid ""
 "You can make imposters by pre-rendering views of an object at different "
 "angles. Or you can even go one step further, and periodically re-render a "
@@ -172,11 +181,11 @@ msgid ""
 "it depending on the type of project you are making."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:98
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:107
 msgid "Use instancing (MultiMesh)"
 msgstr "使用多网格(MultiMesh)"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:100
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:109
 #, fuzzy
 msgid ""
 "If several identical objects have to be drawn in the same place or nearby, "
@@ -189,15 +198,15 @@ msgstr ""
 "<class_MultiMesh>` 。 MultiMesh允许以极低的性能成本绘制数十万个物体，使其成为"
 "鸡群，草，颗粒等的理想选择。"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:106
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:115
 msgid "Also see the :ref:`Using MultiMesh <doc_using_multimesh>` doc."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:109
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:118
 msgid "Bake lighting"
 msgstr "烘焙照明"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:111
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:120
 msgid ""
 "Lighting objects is one of the most costly rendering operations. Realtime "
 "lighting, shadows (especially multiple lights), and GI are especially "
@@ -205,14 +214,14 @@ msgid ""
 "handle."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:115
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
 msgid ""
-"Consider using baked lighting, especially for mobile. This can look "
-"fantastic, but has the downside that it will not be dynamic. Sometimes this "
-"is a trade off worth making."
+"**Consider using baked lighting**, especially for mobile. This can look "
+"fantastic, but has the downside that it will not be dynamic. Sometimes, this "
+"is a trade-off worth making."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:119
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:128
 #, fuzzy
 msgid ""
 "In general, if several lights need to affect a scene, it's best to use :ref:"
@@ -223,40 +232,40 @@ msgstr ""
 "场景，理想的是烘焙它( :ref:`doc_baked_lightmaps` )。 烘焙还可以通过添加间接光"
 "反弹来改善场景质量。"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
 #, fuzzy
-msgid "Animation / Skinning"
+msgid "Animation and skinning"
 msgstr "动画长度"
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:126
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
 msgid ""
-"Animation and particularly vertex animation such as skinning and morphing "
-"can be very expensive on some platforms. You may need to lower poly count "
+"Animation and vertex animation such as skinning and morphing can be very "
+"expensive on some platforms. You may need to lower the polycount "
 "considerably for animated models or limit the number of them on screen at "
 "any one time."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:131
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:140
 msgid "Large worlds"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:142
 msgid ""
 "If you are making large worlds, there are different considerations than what "
 "you may be familiar with from smaller games."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:136
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:145
 msgid ""
 "Large worlds may need to be built in tiles that can be loaded on demand as "
 "you move around the world. This can prevent memory use from getting out of "
 "hand, and also limit the processing needed to the local area."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:140
+#: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:149
 msgid ""
-"There may be glitches due to floating point error in large worlds. You may "
-"be able to use techniques such as orienting the world around the player "
-"(rather than the other way around), or shifting the origin periodically to "
-"keep things centred around (0, 0, 0)."
+"There may also be rendering and physics glitches due to floating point error "
+"in large worlds. You may be able to use techniques such as orienting the "
+"world around the player (rather than the other way around), or shifting the "
+"origin periodically to keep things centred around ``Vector3(0, 0, 0)``."
 msgstr ""

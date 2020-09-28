@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,7 +130,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
 msgid "**Good**:"
 msgstr "**Bon** :"
 
@@ -144,7 +144,7 @@ msgstr "**Bon** :"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
 msgid "**Bad**:"
 msgstr "**Mauvais** :"
 
@@ -335,9 +335,8 @@ msgstr ""
 "une chaîne de caractères donnée. Voir l'exemple ci-dessous :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "Membres"
+msgstr "Nombres"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -345,18 +344,19 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"N'omettez pas le zéro de tête ou de queue dans les nombres à virgule "
+"flottante. Sinon, cela les rend moins lisibles et plus difficiles à "
+"distinguer des nombres entiers d'un seul coup d'œil."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
-msgstr "**Bon** :"
+msgstr "**Bon** :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
 msgstr "**Mauvais** :"
 
@@ -365,12 +365,16 @@ msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
+"Utilisez des minuscules pour les lettres des nombres hexadécimaux, car leur "
+"hauteur réduite rend le nombre plus facile à lire."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
+"Profitez des underscores de GDScript dans les littéraux pour rendre les "
+"grands nombres plus lisibles."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -685,29 +689,43 @@ msgstr ""
 "optionnel<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-msgid "Type hints"
-msgstr "Indices de types"
+#, fuzzy
+msgid "Declared types"
+msgstr "Types nommés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
-msgid ""
-"Place the colon right after the variable's name, without a space, and let "
-"the GDScript compiler infer the variable's type when possible."
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
-"Ajoutez deux-points après le nom d'une variable, sans espace, et le "
-"compilateur GDScript en déduira le type de la variable quand cela est "
-"possible."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:760
-msgid ""
-"When you let the compiler infer the type hint, write the colon and equal "
-"signs together: ``:=``."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#, fuzzy
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "Définissez le type de retour d'une fonction à l'aide de la flèche ->"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+#, fuzzy
+msgid "Inferred types"
+msgstr "Types cœur"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
 "Quand vous laissez le compilateur déduire le type, écrivez les deux-points "
 "et le signe égale attaché : ``:=``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
-msgid ""
-"Add a space on either sides of the return type arrow when defining functions."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "::"
 msgstr ""
-"Ajoutez un espace de chaque côté de la flèche indiquant le type de retour "
-"dans l'en-tête de vos fonctions."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "var health := 0  # The compiler will use the int type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
+msgid ""
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""

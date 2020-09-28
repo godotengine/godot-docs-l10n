@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -524,7 +524,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr "Mapas de luz (Lightmaps) são gerados pela CPU."
+msgstr "Lightmaps são pré-calculados na CPU."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
@@ -604,7 +604,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "**Post-processing:**"
-msgstr "**Processamento-póstumo:**"
+msgstr "**Pós-processamento:**"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -728,9 +728,8 @@ msgid "3D geometry helper class."
 msgstr "Classe auxiliar de geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Física"
+msgstr "Física 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -751,6 +750,8 @@ msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
 msgstr ""
+"Formas pré construídas: cubo, esfera, cápsula, cilindro (apenas com física "
+"de projétil)."
 
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -763,7 +764,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -804,7 +805,7 @@ msgstr "Design e composição orientada a objetos"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "Sinais e grupos para comunicação entre scripts."
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
@@ -831,7 +832,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:303
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Sintaxe inspirada em Python."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Syntax highlighting is provided on GitHub."
@@ -853,16 +854,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Usa Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Suporte completo para a sintaxe e funcionalidades do C# 7.0."
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Animação por Sprites"
+msgstr "Suporta todas as plataformas."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
@@ -871,7 +871,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`ScriptVisual: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
@@ -886,7 +886,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
@@ -907,6 +907,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
 msgstr ""
+"Use qualquer build system e funcionalidades da linguagem que você quiser."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
@@ -920,15 +921,15 @@ msgstr "Áudio"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "Mono, estéreo, saídas 5.1 e 7.1."
 
 #: ../../docs/about/list_of_features.rst:343
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "Não-posicional e posicional playback em 2D e 3D."
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "Efeito Doppler opcional em 2D e 3D."
 
 #: ../../docs/about/list_of_features.rst:347
 msgid ""
@@ -1080,7 +1081,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:401
-msgid "Gamepad input (up to 8 simulatenous controllers)."
+msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:402

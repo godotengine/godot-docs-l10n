@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,81 +403,162 @@ msgid ""
 "no neighbors and lines only one cell wide are not supported."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:215
-msgid "3x3 (minimal)"
-msgstr "3x3 (最小)"
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:217
-msgid ""
-"In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
-"center)."
+#: ../../docs/tutorials/2d/using_tilemaps.rst:214
+#: ../../docs/tutorials/2d/using_tilemaps.rst:246
+msgid "**Template - Generic:**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:220
-msgid "The 4 corner bits work the same as in 2x2 mode."
+#: ../../docs/tutorials/2d/using_tilemaps.rst:216
+msgid ""
+"This template can be used for sideways or fully top-down perspectives. It's "
+"designed for a TileMap cell size of 64x64."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:219
+#: ../../docs/tutorials/2d/using_tilemaps.rst:252
+msgid "Key:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:221
+#: ../../docs/tutorials/2d/using_tilemaps.rst:254
+msgid "Red: \"on\""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
+#: ../../docs/tutorials/2d/using_tilemaps.rst:255
+msgid "White: \"off\""
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:227
+msgid "3x3 (minimal)"
+msgstr "3x3 (最小)"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:229
+msgid ""
+"In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
+"center). The 4 corner bits work the same as in 2x2 mode."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
 "When an edge bit is \"on\", the cell which shares that edge must be filled. "
 "When an edge bit is \"off\", the cell which shares that edge must be empty."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:225
-msgid "The center bit should be \"on\" for any tile you wish to use."
-msgstr ""
-
-#: ../../docs/tutorials/2d/using_tilemaps.rst:227
+#: ../../docs/tutorials/2d/using_tilemaps.rst:235
 msgid ""
-"Note that in this mode, it makes no sense for a corner bit to be \"on\" when "
-"either edge bit adjacent to it is not \"on\"."
+"The center bit should be \"on\" for any tile you wish to use. Note that in "
+"this mode, it makes no sense for a corner bit to be \"on\" when either edge "
+"bit adjacent to it is not \"on\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:230
+#: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
 "A total of 47 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:235
+#: ../../docs/tutorials/2d/using_tilemaps.rst:244
+msgid "Right-click an image and choose **Save image as…** to save it."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:248
+msgid ""
+"This template can be used for sideways or fully top-down perspectives. All "
+"templates below are designed for a TileMap cell size of 64x64, but you may "
+"have to use different subtile sizes for top-down templates as described "
+"below."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:260
+msgid "**Template - Top-down floor in 3/4 perspective:**"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:262
+msgid "Key (applies to the four templates below):"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:264
+msgid "Green: floor"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:265
+msgid "Cyan: wall"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:266
+msgid "Yellow: top of wall"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:267
+#, fuzzy
+msgid "Transparent: air"
+msgstr "透明"
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:271
+msgid "**Template - Top-down wall in 3/4 perspective:**"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:275
+msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:277
+msgid ""
+"When using this template, set the TileSet subtile size to ``Vector2(64, "
+"88)``."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:281
+msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:283
+msgid ""
+"When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
+"184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
+"size. This means the texture offset should be ``Vector2(0, -120)``:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "3x3"
 msgstr "3x3"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:237
+#: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:239
+#: ../../docs/tutorials/2d/using_tilemaps.rst:294
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:242
+#: ../../docs/tutorials/2d/using_tilemaps.rst:297
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:247
+#: ../../docs/tutorials/2d/using_tilemaps.rst:302
 #, fuzzy
 msgid "Disabling autotile"
 msgstr "禁用不需要的模块"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:249
+#: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid ""
 "When using an autotile, it is possible to turn of the autotile behaviour and "
 "select tiles manually, by clicking \"Disable Autotile\" at the top of the "
 "tile selection window."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:254
+#: ../../docs/tutorials/2d/using_tilemaps.rst:309
 #, fuzzy
 msgid "Autotile binding"
 msgstr "自动总线禁用"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:256
+#: ../../docs/tutorials/2d/using_tilemaps.rst:311
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -490,18 +571,18 @@ msgid ""
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:266
+#: ../../docs/tutorials/2d/using_tilemaps.rst:321
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:271
+#: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid "Tips and tricks"
 msgstr "提示和技巧"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:273
+#: ../../docs/tutorials/2d/using_tilemaps.rst:328
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -511,18 +592,18 @@ msgstr ""
 "到在图块之间出现了一些线条。要解决此问题，请打开“项目设置”，然后在“Rendering/"
 "Quality(渲染/质量)”部分中启用“Use Pixel Snap”。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:277
+#: ../../docs/tutorials/2d/using_tilemaps.rst:332
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr "您可以使用编辑器右上方的图标来翻转和旋转图块。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:279
+#: ../../docs/tutorials/2d/using_tilemaps.rst:334
 #, fuzzy
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr "要绘制直线，请在单击并拖动图块时按住<Shift>。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:281
+#: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

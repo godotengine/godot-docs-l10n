@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 msgid "Scripting"
-msgstr "撰寫程式"
+msgstr "撰寫腳本"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:7
 msgid "Introduction"
@@ -262,15 +262,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "撰寫能夠存取場景中其他節點的腳本。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"在這之前，請記得要先閱讀 :ref:`GDScript<doc_gdscript>` 參考手冊。GDScript 被"
-"設計得很簡單，而且這個參考手冊很短，所以應該只需要幾分鐘就能掌握基本概念。"
+"在這之前，請記得要先閱讀 :ref:`GDScript<doc_gdscript>` 參考手冊並將 GDScript "
+"頁面加到瀏覽器書籤內。GDScript 被設計得很簡單，而且這個參考手冊被區分成了多個"
+"段落，能夠很容易掌握各種概念。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -282,6 +282,8 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"若上一個教學中的「實體化」專案還開著的話，請先關閉該專案 ([專案] -> [退出至專"
+"案列表]) 並建立新專案。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -545,14 +547,13 @@ msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "另外，也請記得參照的是節點名稱而不是型別。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:336
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"連接對話框中右邊的面板中可以用來將特定數值對應成函式參數，可以新增或移除不同"
-"型別的數值。"
+"連接對話框中的「進階」面板中可用來將特定數值對應成函式參數，可以新增或移除不"
+"同型別的數值。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid ""

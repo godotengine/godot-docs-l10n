@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -526,19 +526,18 @@ msgstr ""
 "doivent être activés)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid "``--export-pack <preset> <path>``"
-msgstr "``--export <target>``"
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Comme ``--export``, mais utilise le modèle de débogage (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` doivent être activés)."
+"Comme ``--export``, mais n'exporter que le pack de jeu pour le préréglage "
+"donné. L'extension <path> détermine s'il sera au format PCK ou ZIP. (:ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>` doit être activée)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -726,6 +725,10 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"Pour exporter uniquement un fichier PCK, utilisez l'option ``--export-pack`` "
+"suivie du nom du préréglage et du chemin de sortie, avec l'extension du "
+"fichier, au lieu de ``--export``. L'extension du chemin de sortie détermine "
+"le format du paquet, soit PCK soit ZIP."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:285
 msgid "Running a script"
@@ -747,7 +750,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Le script doit hériter de ``SceneTree`` ou ``MainLoop``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-msgid "Here is a simple example of how it works:"
+#, fuzzy
+msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "Voici un simple exemple de son fonctionnement :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
@@ -762,3 +766,18 @@ msgstr ""
 "Si aucun fichier ``project.godot`` n'existe au chemin, le chemin courant est "
 "supposé être le répertoire de travail courant (sauf si ``--path`` est "
 "spécifié)."
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:314
+msgid ""
+"The first line of ``sayhello.gd`` above is commonly referred to as a "
+"*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
+"you to run the script as follows in modern Linux distributions, as well as "
+"macOS:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:326
+msgid ""
+"If the above doesn't work in your current version of Linux or macOS, you can "
+"always have the shebang run Godot straight from where it is located as "
+"follows:"
+msgstr ""

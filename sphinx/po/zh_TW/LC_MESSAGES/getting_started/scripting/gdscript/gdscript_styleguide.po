@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgstr "縮排等級在每個區塊都應增加。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:744
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
 msgid "**Good**:"
 msgstr "**正確例** :"
 
@@ -131,7 +131,7 @@ msgstr "**正確例** :"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:752
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
 msgid "**Bad**:"
 msgstr "**錯誤例** :"
 
@@ -298,7 +298,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
 msgid "Numbers"
-msgstr ""
+msgstr "數字"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -306,32 +306,32 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"不要忽略浮點數中的前置或後置 0。以免降低數字的可讀性，並難以一眼區分與整數的"
+"不同。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
-msgstr "**正確例** :"
+msgstr "\\ **Good**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
-msgstr "**錯誤例** :"
+msgstr "\\ **Bad**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
-msgstr ""
+msgstr "16 進位數字使用小寫字母，因為當字母比數字矮的時候比較好閱讀數字。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
-msgstr ""
+msgstr "在字面值中通過 GDScript 的底線功能來讓大數更好閱讀。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -579,7 +579,6 @@ msgstr ""
 "著是 ``_ready()`` 回呼函式，Godot 會在節點被新增只場景樹時呼叫 _ready()。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
-#, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
@@ -613,22 +612,41 @@ msgstr ""
 "<doc_gdscript_static_typing>` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-msgid "Type hints"
-msgstr "型別提示"
+#, fuzzy
+msgid "Declared types"
+msgstr "有名稱的型別"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
-msgid ""
-"Place the colon right after the variable's name, without a space, and let "
-"the GDScript compiler infer the variable's type when possible."
-msgstr "將冒號放在變數名稱後，不加上空格，並儘量讓 GDScript 編譯器來推斷型別。"
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
+msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:760
-msgid ""
-"When you let the compiler infer the type hint, write the colon and equal "
-"signs together: ``:=``."
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
+#, fuzzy
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "使用箭頭 -> 來定義函式的回傳值型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
+#, fuzzy
+msgid "Inferred types"
+msgstr "有名稱的型別"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
+#, fuzzy
+msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr "若讓編譯器來推斷型別，則請將冒號與等號寫在一起： ``:=`` 。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+msgid "var health := 0  # The compiler will use the int type."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
-"Add a space on either sides of the return type arrow when defining functions."
-msgstr "定義函式時，請在回傳型別的箭頭周圍各加上一個空格。"
+"However, in a few cases when context is missing, the compiler falls back to "
+"the function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""

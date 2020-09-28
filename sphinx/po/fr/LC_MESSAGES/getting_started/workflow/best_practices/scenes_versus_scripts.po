@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,55 +287,51 @@ msgstr ""
 "largement la programmation impérative."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
-#, fuzzy
 msgid "Performance of Script vs PackedScene"
-msgstr "Performances des scripts et PackedScene"
+msgstr "Performances de Script vs PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid ""
 "One last aspect to consider when choosing scenes and scripts is execution "
 "speed."
 msgstr ""
+"Un dernier aspect à considérer lors du choix des scènes et des scripts est "
+"la vitesse d'exécution."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
-#, fuzzy
 msgid ""
 "As the size of objects increases, the scripts' necessary size to create and "
 "initialize them grows much larger. Creating node hierarchies demonstrates "
 "this. Each Node's logic could be several hundred lines of code in length."
 msgstr ""
-"Au fur et à mesure que la taille des objets augmente, la taille nécessaire "
-"aux scripts pour les créer devient beaucoup, beaucoup plus grande. La "
-"création de hiérarchies de nœuds en est la preuve. La logique de chaque Nœud "
-"individuel pourrait être de plusieurs centaines de lignes de code."
+"Au fur et à mesure que la taille des objets augmente, la taille des scripts "
+"nécessaire pour les créer et les initialiser s'agrandit beaucoup. La "
+"création de hiérarchies de nœuds en est la preuve. La logique de chaque nœud "
+"peut comporter plusieurs centaines de lignes de code."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
-#, fuzzy
 msgid ""
 "The code example below creates a new ``Node``, changes its name, assigns a "
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
-"Voyons un exemple simple, créer un ``Nœud`` enfant seul. Le code ci-dessous "
-"crée un nouveau ``Nœud``, change son nom, lui assigne un script et change "
-"son futur parent en son propriétaire, afin qu'il soit sauvegardé sur le "
-"disque en même temps que lui, et finalement l'ajoute en tant qu'enfant du "
-"nœud ``Principal`` (Main) :"
+"L'exemple de code ci-dessous crée un nouveau ``Node``, change son nom, lui "
+"attribue un script, définit son futur parent comme propriétaire afin qu'il "
+"soit enregistré sur le disque en même temps que lui, et enfin l'ajoute comme "
+"enfant du noeud ``Main`` :"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
-#, fuzzy
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
 "instruction makes a call to the scripting API which leads to many \"lookups"
 "\" on the back-end to find the logic to execute."
 msgstr ""
-"Le code d'un script comme celui ci est beaucoup plus lent que le C++ du "
-"moteur. Chaque modification fait un appel distincts à l'API de script ce qui "
-"mène à de nombreuses recherche en arrière-plan pour trouver la logique à "
+"Un code de script comme celui-ci est beaucoup plus lent que le code C ++ "
+"côté moteur. Chaque instruction fait un appel à l'API de script qui conduit "
+"à de nombreuses \"recherches\" sur le back-end pour trouver la logique à "
 "exécuter."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
-#, fuzzy
 msgid ""
 "Scenes help to avoid this performance issue. :ref:`PackedScene "
 "<class_PackedScene>`, the base type that scenes inherit from, defines "
@@ -343,11 +339,11 @@ msgid ""
 "scenes in batches on the back-end and provide much better performance than "
 "scripts."
 msgstr ""
-"Les scènes aident à éviter ce genre de problème lié aux performances. :ref:"
-"`PackedScene <class_PackedScene>`, le type basique duquel les scènes "
-"héritent sont des ressources qui utilisent de données en série pour créer "
-"des objets. Le moteur peut ensuite calculer les scènes en lots en arrière-"
-"plan ce qui permet de bien meilleures performances qu'avec des scripts."
+"Les scènes aident à éviter ce problème de performances. :ref:`PackedScene "
+"<class_PackedScene>`, le type de base dont les scènes héritent, définit les "
+"ressources qui utilisent des données sérialisées pour créer des objets. Le "
+"moteur peut traiter les scènes par lots sur le back-end et offrir de bien "
+"meilleures performances que les scripts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"

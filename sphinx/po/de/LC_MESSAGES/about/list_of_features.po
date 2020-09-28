@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-09 13:27+0200\n"
+"POT-Creation-Date: 2020-09-28 16:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,8 +208,8 @@ msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
-"Lade Projekte von der Bestandsbibliothek in den Projektmanager herunter und "
-"importiere sie direkt."
+"Laden Sie Projekte von der Bestandsbibliothek in den Projektmanager herunter "
+"und importieren diese direkt."
 
 #: ../../docs/about/list_of_features.rst:76
 msgid "2D graphics"
@@ -504,7 +504,6 @@ msgstr ""
 "Unterstützt Blending zwischen splits."
 
 #: ../../docs/about/list_of_features.rst:179
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
@@ -548,7 +547,7 @@ msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
-"Schnelle baked Reflektionen oder langsame Echtzeit-Reflektionen nutzen "
+"Schnell gebrannte Reflektionen oder langsame Echtzeit-Reflektionen nutzen "
 "ReflectionProbe. Parallaxe Korrekturen können wahlweise eingeschaltet werden."
 
 #: ../../docs/about/list_of_features.rst:196
@@ -919,7 +918,7 @@ msgstr "Offizielle Einbindung für C und C++."
 
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
-msgstr "Nutze das Bau-System und die Sprachfeatures die du möchtest."
+msgstr "Nutzen Sie das Bau-System und die Sprachfeatures die Sie möchten."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
@@ -946,12 +945,11 @@ msgid "Optional Doppler effect in 2D and 3D."
 msgstr "Optionaler Doppler-Effekt in 2D und 3D."
 
 #: ../../docs/about/list_of_features.rst:347
-#, fuzzy
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
-"Unterstützung für Re-Routable :ref:`audio buses <doc_audio_buses>` und "
+"Unterstützung für Re-Routable :ref:`Audio Busse <doc_audio_buses>` und "
 "Effekte."
 
 #: ../../docs/about/list_of_features.rst:349
@@ -1001,9 +999,8 @@ msgid "**Formats:**"
 msgstr "**Formate:**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "*Bilder:* See :ref:`doc_importing_images_supported_formats`."
+msgstr "*Bilder:* Siehe :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 msgid "*Audio:*"
@@ -1079,6 +1076,8 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Tasten können im \"physischen\" Modus unabhängig vom Tastaturlayout "
+"zugeordnet werden."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
@@ -1101,7 +1100,8 @@ msgstr ""
 "Einstellungen der Maus des Betriebssystems zu umgehen."
 
 #: ../../docs/about/list_of_features.rst:401
-msgid "Gamepad input (up to 8 simulatenous controllers)."
+#, fuzzy
+msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr "Gamepad Einagbe (bis zu 8 gleichzeitige Controller)."
 
 #: ../../docs/about/list_of_features.rst:402
@@ -1206,7 +1206,7 @@ msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
 msgstr ""
-"Nutze übersetzte Zeichenketten automatisch in deinem Projekt in GUI "
+"Nutzen Sie übersetzte Zeichenketten automatisch in Ihrem Projekt in GUI "
 "Elementen oder mit Hilfe der ``tr()`` Funktion."
 
 #: ../../docs/about/list_of_features.rst:440
@@ -1611,16 +1611,15 @@ msgstr ""
 "GCC, Clang und MSVC. MinGW wird auch unterstützt."
 
 #: ../../docs/about/list_of_features.rst:571
-#, fuzzy
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
 "Benutzerfreundlich gegenüber Packagern: In den meisten Fällen können "
-"Systembibliotheken anstelle der von Godot bereitgestellten verwendet werden. "
-"Das Build-System lädt nichts herunter, Builds können somit vollständig "
-"reproduzierbar sein."
+"Systembibliotheken anstelle der von Godot bereitgestellten Bibliotheken "
+"verwendet werden. Das Build-System lädt nichts herunter. Builds können somit "
+"vollständig reproduzierbar sein."
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Godot 4.0 will be written in C++17."
@@ -1644,6 +1643,6 @@ msgid ""
 "documents features that have been agreed upon and may be implemented in "
 "future Godot releases."
 msgstr ""
-"Diese `roadmap <https://github.com/godotengine/godot-roadmap>`__ Dokumente "
-"zeigen Verbesserungen (Features) auf die man sich geeinigt hat und die "
-"möglicherweise in zukünftigen Godot-Versionen eingebaut werden."
+"Diese Seite zeigt einen `Fahrplan <https://github.com/godotengine/godot-"
+"roadmap>`__ mit Verbesserungen (Features) auf die man sich geeinigt hat und "
+"die möglicherweise in zukünftigen Godot-Versionen eingebaut werden."
