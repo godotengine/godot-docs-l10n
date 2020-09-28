@@ -26,6 +26,7 @@
 # monolifed <monolifed@gmail.com>, 2018.
 # Muhammet Mustafa Tozlu <m.mustafatozlu@gmail.com>, 2019.
 # Mustafa Turhan <odunluzikkim@gmail.com>, 2019.
+# Mutlu ORAN <mutlu.oran66@gmail.com>, 2020.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
 # Halil Üneş <halilunes@gmail.com>, 2018.
 # Oğuz Ersen <oguzersen@protonmail.com>, 2019-2020.
@@ -37,6 +38,7 @@
 # Sinan İnak <tzolpka@gmail.com>, 2020.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 # Vedat Günel <gunel15@itu.edu.tr>, 2020.
+# Yusuf Osman YILMAZ <wolfkan4219@gmail.com>, 2020.
 # Zsosu Ktosu <zktosu@gmail.com>, 2020.
 #
 msgid ""
@@ -44,8 +46,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-09 13:27+0200\n"
-"PO-Revision-Date: 2020-07-26 22:51+0000\n"
-"Last-Translator: Berkay Düzenli <mberkayduzenli@gmail.com>\n"
+"PO-Revision-Date: 2020-09-27 15:32+0000\n"
+"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -53,7 +55,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2-dev\n"
+"X-Generator: Weblate 4.3-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -6627,11 +6629,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1308
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
@@ -6841,13 +6843,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:322
 msgid ""
 "Open JDK(version 8 is required, more recent versions won't work): https://"
 "adoptopenjdk.net/index.html"
 msgstr ""
+"Open JDK(sürüm 8 gereklidir, daha yeni sürümler çalışmaz): https://"
+"adoptopenjdk.net/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:324
 msgid ""
@@ -11140,7 +11144,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
-msgstr "Tanım"
+msgstr "Açıklama"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -14168,7 +14172,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Sil"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -27918,19 +27922,24 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
-msgstr ""
+msgstr "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:247
 msgid "`DRY <https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>`_"
 msgstr ""
+"`DRY (Kendini tekrar etme) <https://en.wikipedia.org/wiki/Don"
+"%27t_repeat_yourself>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:248
 msgid "`KISS <https://en.wikipedia.org/wiki/KISS_principle>`_"
 msgstr ""
+"`KISS (Basit tut, aptal) <https://en.wikipedia.org/wiki/KISS_principle>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:249
 msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
+"`YAGNI (Ona ihtiyacın olmayacak) <https://en.wikipedia.org/wiki/You_aren"
+"%27t_gonna_need_it>`_"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
 #, fuzzy
@@ -38109,16 +38118,20 @@ msgid ""
 "(Python example) https://dev.to/karn/building-a-simple-state-machine-in-"
 "python"
 msgstr ""
+"(Python örneği) https://dev.to/karn/building-a-simple-state-machine-in-python"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:180
 msgid ""
 "(C# example) https://www.codeproject.com/Articles/489136/"
 "UnderstandingplusandplusImplementingplusStateplusP"
 msgstr ""
+"(C# örneği) https://www.codeproject.com/Articles/489136/"
+"UnderstandingplusandplusImplementingplusStateplusP"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:181
 msgid "(Wiki article) https://en.wikipedia.org/wiki/Finite-state_machine"
 msgstr ""
+"(Wikipedia makalesi) https://tr.wikipedia.org/wiki/Sonlu_durum_makinesi"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:183
 msgid ""
@@ -48779,15 +48792,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -75379,7 +75392,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -75464,7 +75477,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -85013,6 +85026,8 @@ msgid ""
 "`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
 "typedefs.h>`__"
 msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
@@ -85125,12 +85140,16 @@ msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
 "`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
 "pool_vector.cpp>`__"
 msgstr ""
+"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
+"pool_vector.cpp>`__"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
@@ -85181,22 +85200,28 @@ msgid ""
 "`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
 "h>`__"
 msgstr ""
+"`core/vector.h <https://github.com/godotengine/godot/blob/master/core/vector."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
 "`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
 "h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
+"h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:170
 msgid ""
 "`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:171
 msgid ""
 "`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 msgstr ""
+"`core/map.h <https://github.com/godotengine/godot/blob/master/core/map.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:176
 msgid ""
@@ -85211,6 +85236,8 @@ msgid ""
 "`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
 "ustring.h>`__"
 msgstr ""
+"`core/ustring.h <https://github.com/godotengine/godot/blob/master/core/"
+"ustring.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:187
 msgid "StringName"
@@ -85235,6 +85262,8 @@ msgid ""
 "`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
 "string_name.h>`__"
 msgstr ""
+"`core/string_name.h <https://github.com/godotengine/godot/blob/master/core/"
+"string_name.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:203
 msgid "Math types"
@@ -85249,6 +85278,7 @@ msgstr ""
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:214
 #: ../../docs/development/file_formats/tscn.rst:136
@@ -85266,6 +85296,8 @@ msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
 "node_path.h>`__"
 msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
 msgid "RID"
@@ -85283,6 +85315,7 @@ msgstr ""
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
@@ -85358,6 +85391,8 @@ msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
@@ -85387,12 +85422,16 @@ msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
 "h>`__"
 msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
@@ -85425,6 +85464,8 @@ msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
@@ -85494,6 +85535,8 @@ msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
@@ -85665,6 +85708,8 @@ msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
@@ -85688,6 +85733,8 @@ msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
@@ -85713,6 +85760,8 @@ msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid "Resource saving"
@@ -85735,6 +85784,8 @@ msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"
 msgstr ""
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_saver.h>`__"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:2
 msgid "Inheritance class tree"
@@ -86413,6 +86464,8 @@ msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
@@ -86447,6 +86500,8 @@ msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 msgstr ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -86528,6 +86583,8 @@ msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
 msgstr ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`_"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:310
 msgid "Registering the new file format"
@@ -86585,6 +86642,8 @@ msgid ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
 msgstr ""
+"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:26
 #: ../../docs/development/cpp/custom_audiostreams.rst:351
@@ -86592,6 +86651,8 @@ msgid ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
 msgstr ""
+"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
@@ -86665,6 +86726,8 @@ msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
 "core/math/audio_frame.h>`__"
 msgstr ""
+"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
+"core/math/audio_frame.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
 msgid "Custom Godot servers"
@@ -86779,6 +86842,8 @@ msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
@@ -86819,6 +86884,8 @@ msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
+"core/message_queue.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:480
 msgid "Summing it up"
@@ -87001,6 +87068,8 @@ msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"
 msgstr ""
+"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"
 
 #: ../../docs/development/editor/editor_style_guide.rst:4
 #, fuzzy

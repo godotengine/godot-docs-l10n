@@ -23,6 +23,7 @@
 # Francesco Rossi <zhu.gamedev@tutanota.com>, 2020.
 # Francesco Scavello <francesco.scavello99@gmail.com>, 2020.
 # Giacomo Bella <foliestere@gmail.com>, 2018-2019.
+# Giacomo Bertolotti <giacomo.chappo@hotmail.it>, 2020.
 # gioele-santi <gioele.santi@gmail.com>, 2020.
 # Giuseppe Guerra <me@nyodev.xyz>, 2019.
 # Giuseppe Tomasello <g.tomas98@gmail.com>, 2019.
@@ -74,8 +75,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-09 13:27+0200\n"
-"PO-Revision-Date: 2020-09-09 08:35+0000\n"
-"Last-Translator: Mirko <miknsop@gmail.com>\n"
+"PO-Revision-Date: 2020-09-27 15:32+0000\n"
+"Last-Translator: Marco Galli <mrcgll98@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -2059,7 +2060,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "*SpotLight:* Texture singola."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
@@ -2098,6 +2099,8 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:197
 msgid "Reflection techniques can be mixed together for greater accuracy."
 msgstr ""
+"Le tecniche di riflessione possono essere mischiate per una migliore "
+"accuratezza."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
@@ -2105,7 +2108,7 @@ msgstr "**Cielo:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Cielo panoramico (utilizzando un HDRI)."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "Procedural sky."
@@ -2117,7 +2120,7 @@ msgstr "**Nebbia:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Nebbia di profondità con curva di attenuazione regolabile."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
@@ -2128,15 +2131,16 @@ msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Supporto per la colorazione automatica della nebbia di profondità dipendente "
+"dalla direzione della telecamera (per adattarsi al colore del sole)."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Particelle"
+msgstr "**Particelle:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2157,7 +2161,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Profondità di campo vicina e lontana."
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Screen-space ambient occlusion."
@@ -2171,24 +2175,23 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Correzione del colore utilizzando una rampa unidimensionale."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Regolazione della luminosità, contrasto e saturazione."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid "**Texture filtering:**"
-msgstr ""
+msgstr "**Filtro texture:**"
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Filtraggio per vicinanza, bilineare, trilineare o anisotropico."
 
 #: ../../docs/about/list_of_features.rst:232
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "TextureProgress"
+msgstr "**Compressione delle texture:**"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
@@ -2196,80 +2199,83 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (non supportato su macOS)."
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (consigliato quando si utilizza il renderizzatore GLES2)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "*GLES3:* S3TC (non supportato su piattaforme mobile/Web)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Anti-aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:241
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "Istanze multiple"
+msgstr "Antialiasing multi-campione (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"La maggior parte di questi effetti può essere regolata per prestazioni "
+"migliori o per migliorare ulteriormente la qualità. Questo può essere utile "
+"quando si utilizza Godot per il rendering offline."
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "tool"
+msgstr "Strumenti 3D"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr "ref:`Geometria procedurale <toc-geometria_procedurale>``"
+msgstr ""
+"Strumenti per :ref:`generazione geometrica procedurale "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+":ref:`Geometria solida costruttiva <doc_csg_tools>`` (destinata alla "
+"prototipazione)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Nodo Path3D per rappresentare un percorso nello spazio 3D."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "Nodo PathFollow3D per fare in modo che i nodi seguano un Path3D."
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Classe di supporto per la geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Fisica"
+msgstr "Fisica 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Corpi di veicoli (destinati alla fisica arcade, non alla simulazione)."
 
 #: ../../docs/about/list_of_features.rst:269
 msgid "Soft bodies."
-msgstr ""
+msgstr "Corpi morbidi."
 
 #: ../../docs/about/list_of_features.rst:270
 msgid "Ragdolls."
-msgstr ""
+msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:275
 msgid ""
@@ -2280,6 +2286,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
 msgstr ""
+"Generare forme di collisione triangolare per qualsiasi mesh dall'editor."
 
 #: ../../docs/about/list_of_features.rst:277
 msgid ""
@@ -2289,7 +2296,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:280
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -2306,14 +2313,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr ":ref:`Plugins Shader Visivo<doc_visual_shader_plugins>`"
+msgstr "Editor di shader visuali."
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr ":ref:`Plugins Shader Visivo<doc_visual_shader_plugins>`"
+msgstr "Supporto per plug-in visual shader."
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2324,14 +2329,14 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "Informazioni Generali"
+msgstr "**Generale:**"
 
 #: ../../docs/about/list_of_features.rst:294
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "Progettazione e composizione orientata all'oggetto"
+msgstr ""
+"Modello di progettazione orientato agli oggetti con script che estendono i "
+"nodi."
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
@@ -2540,11 +2545,12 @@ msgid "glTF 2.0 *(recommended)*."
 msgstr "glTF 2.0 *(consigliato)*."
 
 #: ../../docs/about/list_of_features.rst:377
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>` __ "
+"(esportazione diretta da Blender)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
@@ -2733,9 +2739,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:448
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Abilita/Disabilita modalità a schermo intero"
+msgstr "Modalità a schermo intero."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
@@ -2815,9 +2820,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "Nodi"
+msgstr "**Nodi:**"
 
 #: ../../docs/about/list_of_features.rst:482
 #, fuzzy
@@ -2863,7 +2867,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:491
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "I nodi Control possono essere ruotati e ridimensionati."
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "**Sizing:**"
@@ -3045,13 +3049,12 @@ msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:562
-#, fuzzy
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Gli script di completamento <https://github.com/godotengine/godot/tree/"
+"master/misc/dist/shell>` __ sono disponibili per Bash, zsh e fish."
 
 #: ../../docs/about/list_of_features.rst:565
 msgid ""
@@ -3779,8 +3782,7 @@ msgstr ""
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
 msgstr ""
-"Se stai usando Blender, dai un'occhiata al nostro `Better Collada Exporter "
-"<https://godotengine.org/download>`_."
+"Puoi `scaricare Godot Engine qui <https://godotengine.org/download/>` _."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -8061,9 +8063,8 @@ msgstr ""
 "cambiamenti effettuati:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Scripting di una scena"
+msgstr "Impostare una scena principale"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -8441,7 +8442,6 @@ msgstr ""
 "<https://github.com/godotengine/godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
-#, fuzzy
 msgid "Godot's design philosophy"
 msgstr "La filosofia progettuale di Godot"
 
@@ -8750,7 +8750,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
-msgstr "Guidato dalla comunità"
+msgstr "Gestito dalla comunità"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
 #, fuzzy
@@ -8854,7 +8854,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "Disegnare interfacce con i nodi Control"
+msgstr "Progettare le interfacce con i nodi Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -9054,8 +9054,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Scale`` scales the texture to fit the node's bounding rectangle."
 msgstr ""
-"```Scale``` scala la texture per adattarsi al rettangolo di delimitazione "
-"del nodo."
+"``Scale`` scala la texture per adattarla al rettangolo di delimitazione del "
+"nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid "``Tile`` makes the texture repeat, but it won't scale."
@@ -9108,7 +9108,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -9116,11 +9115,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"** TextureButton ** è simile a TextureRect, tranne per il fatto che ha 5 "
-"slot per trama: uno per ciascuno degli stati dei pulsanti. Il più delle "
-"volte, userete le texture Normal, Pressed e Hover .  è utile se "
+"** TextureButton ** è simile a TextureRect, tranne per il fatto che ha 6 "
+"slot per le texture: uno per ciascuno degli stati dei pulsanti. Il più delle "
+"volte, userete le texture Normal, Pressed e Hover. Focused è utile se "
 "l'interfaccia è in ascolto dell'input da tastiera. La sesta area immagine, "
-"la  Clic Mask, consente di definire l'area in cui è possibile fare clic "
+"la Clic Mask, consente di definire l'area in cui è possibile fare clic "
 "utilizzando un'immagine in bianco e nero a 1 bit."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
@@ -9155,9 +9154,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
-"** TextureProgress ** consente di creare una barra di avanzamento con un "
-"massimo di 3 sprite. Le trame Under, Over sono intervallate da Progress, che "
-"mostra il contenuto della barra."
+"** TextureProgress ** sovrappone fino a 3 sprite per creare una barra di "
+"avanzamento. Le texture Under e Over racchiudono quella Progress, che mostra "
+"il valore della barra."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -9166,10 +9165,10 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
-"La proprietà `` Mode '' controlla la direzione in cui cresce la barra: "
+"La proprietà ``Mode`` controlla la direzione verso cui la barra cresce: "
 "orizzontale, verticale o radiale. Se lo si imposta su radiale, le proprietà "
-"`` Initial Angle'' e `` Fill Degrees '' consentono di limitare l'intervallo "
-"del misuratore."
+"``Initial Angle`` e ``Fill Degrees`` consentono di limitare l'intervallo "
+"dell'indicatore."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -9182,13 +9181,13 @@ msgid ""
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
 "Per animare la barra, dovresti vedere la sezione Intervallo. Regola le "
-"proprietà `` Min '' e `` Max`` per impostare l'intervallo del misuratore. Ad "
-"esempio, per rappresentare la vita di un personaggio, devi impostare `` "
-"Min`` su `` 0 '' e `` Max`` sulla vita massima del personaggio. Cambia la "
-"proprietà `` Value`` per aggiornare la barra. Se si lasciano i valori `` "
-"Min`` e `` Max`` nei valori predefiniti di `` 0`` e `` 100 '' e si imposta "
-"la proprietà `` Value`` su `` 40``, il Verrà visualizzato il 40% della trama "
-"`` Progress`` e il 60% rimarrà nascosto."
+"proprietà ``Min`` e ``Max`` per impostare l'intervallo dell' indicatore. Ad "
+"esempio, per rappresentare la vita di un personaggio, devi impostare ``Min`` "
+"su ``0 `` e ``Max`` sulla vita massima del personaggio. Cambia la proprietà "
+"``Value`` per aggiornare la barra. Se si lasciano i valori ``Min`` e ``Max`` "
+"nei valori predefiniti di ``0`` e ``100`` e si imposta la proprietà "
+"``Value`` su ``40``, verrà visualizzato il 40% della texture ``Progress`` e "
+"il 60% rimarrà nascosto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "TextureProgress bar, two thirds filled"
@@ -9202,16 +9201,16 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"** Label ** stampa il testo sullo schermo. Troverai tutte le sue proprietà "
-"nella sezione Etichetta, nell'Inspector. Digita il testo nella proprietà `` "
-"Text '' e seleziona Autowrap se desideri che rispetti le dimensioni della "
+"**Label** stampa il testo sullo schermo. Troverai tutte le sue proprietà "
+"nella sezione Label, nell'Inspector. Digita il testo nella proprietà "
+"``Text`` e seleziona Autowrap se desideri che rispetti le dimensioni della "
 "casella di testo. Se Autowrap è disabilitato, non sarà possibile "
-"ridimensionare il nodo. È possibile allineare il testo in orizzontale e in "
-"verticale rispettivamente con Allinea e Allinea."
+"ridimensionare il nodo. È possibile allineare il testo in orizzontale con "
+"Align e in verticale con Valign."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Immagine di un Nodo Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
@@ -9224,6 +9223,10 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
+"**NinePatchRect** prende una texture divisa in 3 righe e 3 colonne. Il "
+"centro e i lati si estendono quando si scala la texture, ma non scala mai "
+"gli angoli. È utile per costruire pannelli, finestre di dialogo e sfondi "
+"scalabili per la vostra interfaccia utente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -9246,14 +9249,15 @@ msgid ""
 "elements for you. They take control over their children."
 msgstr ""
 "Sono disponibili molti nodi contenitore che scalano e posizionano gli "
-"elementi dell'interfaccia utente. Prendono il controllo dei loro figli."
+"elementi dell'interfaccia utente per te. Prendono il controllo sui loro "
+"figli."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
-"Nell'altro lato c'è il menu di layout. Ti aiuta ad ancorare, rilasciare e "
+"Sull'altro lato c'è il menu di layout. Ti aiuta ad ancorare, piazzare e "
 "ridimensionare un elemento dell'interfaccia utente all'interno del suo "
 "genitore."
 
@@ -9289,7 +9293,7 @@ msgstr ""
 msgid "Place UI elements precisely with anchors"
 msgstr ""
 "Piazzare perfettamente gli elementi dell'interfaccia utente attraverso l'uso "
-"degli ancoraggi"
+"delle ancore"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -9322,19 +9326,20 @@ msgid ""
 msgstr ""
 "Come qualsiasi altra proprietà, puoi modificare i 4 punti di ancoraggio "
 "nell'Inspector, ma questo non è il modo più conveniente. Quando si seleziona "
-"un nodo di controllo, il menu di configurazione appare sopra la finestra del "
+"un nodo Control, il menu di configurazione appare sopra la finestra del "
 "display sulla barra degli strumenti. Offre un elenco di icone per impostare "
 "le 4 ancore con un solo clic, invece di utilizzare le 4 proprietà "
-"dell'ispettore. Il menu di progettazione verrà visualizzato solo quando si "
-"seleziona un nodo di controllo."
+"dell'Inspector. Il menu di progettazione verrà visualizzato solo quando si "
+"seleziona un nodo Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
+#, fuzzy
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Il menu del layout nella finestra di visualizzazione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
-msgstr "Le ancore sono relative al contenitore principale"
+msgstr "Le ancore sono relative al contenitore genitore"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
 msgid ""
@@ -9436,14 +9441,17 @@ msgstr ""
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
-"Lo stesso esempio qui sopra, ma il nodo centra ha la proprietà di dimensione "
-"\"Espandi\""
+"Lo stesso esempio come sopra, ma il nodo centrale ha la proprietà di "
+"dimensione \"Espandi\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:272
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Avrai bisogno di un po 'di pratica per capire i size tag, in quanto il loro "
+"effetto può cambiare un po' a seconda della configurazione della tua "
+"interfaccia."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"
@@ -9578,7 +9586,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr "Progetta una schermata di titolo"
+msgstr "Progetta una schermata del titolo"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
@@ -9604,6 +9612,10 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`."
 msgstr ""
+"Imparerai come progettare le UI di gioco in modo efficiente e come usare i "
+"nodi Control di Godot. Questa pagina si concentra sulla parte visiva: tutto "
+"ciò che fai dall'editor. Per sapere come programmare una barra della vita, "
+"leggi :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create."
@@ -9617,6 +9629,11 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu`` "
 "folder."
 msgstr ""
+"Scarica i file del progetto: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` ed estrai l'archivio. Importa il progetto ``start/"
+"`` in Godot per seguire questo tutorial. La cartella ``end/`` contiene il "
+"risultato finale. Troverai tutti gli sprite nella cartella ``start/assets/"
+"main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
 msgid ""
@@ -9640,10 +9657,17 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Per progettare una buona interfaccia utente, devi prima creare un modello "
+"approssimativo: un semplice disegno che si concentri sul posizionamento dei "
+"componenti dell'interfaccia utente, sulla loro dimensione e sull'interazione "
+"dell'utente. Carta e penna sono tutto ciò che ti serve. In questa fase non "
+"dovresti usare una grafica elaborata. Quindi, hai solo bisogno di semplici "
+"sprite e sei pronto ad entrare in Godot. Vuoi assicurarti che i giocatori "
+"possano orientarsi nell'interfaccia usando questo modello semplificato."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:46
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Uno schizzo approssimativo o modello dell' Interfaccia Utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:48
 msgid ""
@@ -9651,12 +9675,18 @@ msgid ""
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
+"Placeholder non deve necessariamente significare brutto, ma dovresti "
+"mantenere la grafica semplice e pulita. Evita effetti speciali, animazioni e "
+"illustrazioni dettagliate prima di far provare ai giocatori la tua "
+"interfaccia utente. Altrimenti:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:52
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback."
 msgstr ""
+"La grafica potrebbe distorcere la percezione dell'esperienza da parte dei "
+"giocatori e vi sfuggirà un prezioso feedback."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:54
 msgid "If the User Experience doesn't work, you'll have to redo some sprites."
@@ -9670,6 +9700,13 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Cerca sempre di far funzionare l'interfaccia con del semplice testo e dei "
+"riquadri. È facile sostituire le texture in un secondo momento. I "
+"progettisti professionisti di UX lavorano spesso con contorni e riquadri "
+"semplici in scala di grigi. Quando togli i colori e le immagini elaborate, è "
+"molto più facile ridimensionare e posizionare correttamente gli elementi "
+"dell'interfaccia utente. Ti aiuta a perfezionare le basi di progettazione su "
+"cui ti baserai."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:65
 msgid "There are two ways to design your UI in Godot. You can:"
@@ -9680,12 +9717,16 @@ msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes."
 msgstr ""
+"Costruire il tutto in una singola scena, e alla fine salvare alcuni rami "
+"come scene riutilizzabili."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:69
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes."
 msgstr ""
+"Crea scene di base per componenti riutilizzabili e crea componenti specifici "
+"che ereditano da esse."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
 msgid ""
@@ -9694,12 +9735,19 @@ msgid ""
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"Utilizzeremo il primo approccio, perché la prima versione della tua "
+"interfaccia utente potrebbe non funzionare come desideri. È probabile che "
+"butterai via delle parti e riadattaterai i componenti mentre procedi. Quando "
+"sei sicuro che tutto funzioni, è facile rendere alcune parti riutilizzabili, "
+"come vedrai di seguito."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
+"I file che troverai in Godot. La grafica sembra più pulita che sul disegno "
+"grezzo, ma sono comunque dei sostituti."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -9710,15 +9758,17 @@ msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"Prima di passare all'editor, vogliamo pianificare come annideremo i "
+"contenitori in base al nostro schizzo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:89
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:292
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "Suddividere lo schizzo dell'Interfaccia Utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:91
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "Ecco le mie tre regole pratiche per trovare i contenitori giusti:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:93
 msgid ""
@@ -9726,10 +9776,14 @@ msgid ""
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button."
 msgstr ""
+"Suddividi l'interfaccia utente in caselle nidificate, dalla più grande che "
+"contiene tutto, alle più piccole, che racchiudono un widget, come una barra "
+"con la sua Label, un pannello o un pulsante."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
 msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
+"Se c'è un po 'di spazio intorno a un'area, usa un `` MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
 msgid ""
@@ -9744,6 +9798,8 @@ msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Queste regole sono sufficienti per iniziare e funzionano bene con interfacce "
+"semplici."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:103
 msgid ""
@@ -9754,10 +9810,16 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"Per il menu principale, il riquadro più grande è l'intera finestra di gioco. "
+"C'è dello spazio tra i bordi della finestra e i primi componenti: questo "
+"dovrebbe essere un ``MarginContainer``. Poi, lo schermo è diviso in due "
+"colonne, quindi useremo un ``HBoxContainer``. Nella colonna di sinistra, "
+"gestiremo le righe con un ``VBoxContainer``. E nella colonna di destra, "
+"centreremo l'illustrazione con un ``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
 msgid "Interface building blocks, broken down using the three rules of thumb."
-msgstr ""
+msgstr "Elementi dell' interfaccia, suddivisi usando le tre semplici regole."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -9768,7 +9830,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:121
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Preparare la scena del menu principale"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -9779,16 +9841,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
+#, fuzzy
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Se dimentichi di modificare le dimensioni della finestra, ancore e "
+"contenitori potrebbero non funzionare come previsto."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
+"Creiamo il menu principale. Lo costruiremo in un'unica scena. Per creare una "
+"scena vuota, fare clic su **Scena> Nuova scena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
@@ -9830,29 +9897,31 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:155
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Aggiungi gli sprite dell'interfaccia utente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:157
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Seleziona ``MarginContainer`` e crea gli elementi dell'interfaccia utente "
+"come nodi ``TextureRect``. Abbiamo bisogno:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
 msgid "the title or logo,"
-msgstr ""
+msgstr "il titolo o il logo,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr ""
+msgstr "le tre opzioni di testo come singoli nodi,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
-msgstr ""
+msgstr "la nota di versione,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
 msgid "and the main menu's illustration."
-msgstr ""
+msgstr "e l'illustrazione del menu principale."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid ""
@@ -10432,7 +10501,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
 msgid "Add the progress bar"
-msgstr ""
+msgstr "Aggiungi la barra di avanzamento"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:235
 msgid ""
@@ -10543,6 +10612,9 @@ msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"L'icona della bomba si fissa sul bordo destro dello sfondo. Ridimensionare "
+"il contenitore del contatore per vedere il nodo dell'icona attaccarsi al suo "
+"lato destro"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:316
 msgid ""
@@ -12397,7 +12469,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -13701,7 +13773,7 @@ msgstr "Azione"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
 #, fuzzy
 msgid "Windows, Linux"
-msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
+msgstr "Windows, Linux"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -13719,7 +13791,7 @@ msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
 #, fuzzy
 msgid "Editor setting"
-msgstr "Icone dell'editor"
+msgstr "Impostazioni dell'editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "Open 2D Editor"
@@ -13735,11 +13807,11 @@ msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "Open 3D Editor"
-msgstr "Apri editor 3D"
+msgstr "Apri Editor 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -13751,11 +13823,11 @@ msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr "Apri editor degli script"
+msgstr "Apri Editor degli script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -13769,7 +13841,7 @@ msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
-msgstr ""
+msgstr "``editor/editor_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
@@ -13785,7 +13857,7 @@ msgstr ":kbd: `Alt + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
-msgstr ""
+msgstr "``editor/editor_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
@@ -13801,7 +13873,7 @@ msgstr ":kbd:`Cmd + Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "``editor/distraction_free_mode``"
-msgstr ""
+msgstr "``editor/distraction_free_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
@@ -13817,7 +13889,7 @@ msgstr ":kbd:`Cmd + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "``editor/next_tab``"
-msgstr ""
+msgstr "``editor/next_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
@@ -13833,11 +13905,12 @@ msgstr ":kbd:`Cmd + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "``editor/prev_tab``"
-msgstr ""
+msgstr "``editor/prev_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
+#, fuzzy
 msgid "Filter Files"
-msgstr ""
+msgstr "Filtrare i file"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Ctrl + Alt + P`"
@@ -13849,7 +13922,7 @@ msgstr ":kbd:`Cmd + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "``editor/filter_files``"
-msgstr ""
+msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
@@ -13865,7 +13938,7 @@ msgstr ":kbd:`Cmd + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "``editor/open_scene``"
-msgstr ""
+msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
@@ -13881,7 +13954,7 @@ msgstr ":kbd:`Cmd + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "``editor/close_scene``"
-msgstr ""
+msgstr "``editor/close_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
@@ -13899,11 +13972,11 @@ msgstr ":kbd:`Cmd + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "``editor/reopen_closed_scene``"
-msgstr ""
+msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr "Salva Scena"
+msgstr "Salva scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -13915,12 +13988,12 @@ msgstr ":kbd:`Cmd + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "``editor/save_scene``"
-msgstr ""
+msgstr "``editor/save_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 #, fuzzy
 msgid "Save Scene As"
-msgstr "Scene"
+msgstr "Salva scena come"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Ctrl + Shift + S`"
@@ -13932,7 +14005,7 @@ msgstr ":kbd:`Cmd + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid "``editor/save_scene_as``"
-msgstr ""
+msgstr "``editor/save_scene_as``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
@@ -13950,11 +14023,12 @@ msgstr ":kbd:`Cmd + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "``editor/save_all_scenes``"
-msgstr ""
+msgstr "``editor/save_all_scenes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
+#, fuzzy
 msgid "Quick Open"
-msgstr ""
+msgstr "Apertura rapida"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid ":kbd:`Shift + Alt + O`"
@@ -13962,11 +14036,11 @@ msgstr ":kbd:`Shift + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "``editor/quick_open``"
-msgstr ""
+msgstr "``editor/quick_open``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "Quick Open Scene"
-msgstr ""
+msgstr "Apertura rapida scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Ctrl + Shift + O`"
@@ -13978,11 +14052,11 @@ msgstr ":kbd:`Cmd + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "``editor/quick_open_scene``"
-msgstr ""
+msgstr "``editor/quick_open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid "Quick Open Script"
-msgstr ""
+msgstr "Apertura rapida script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Ctrl + Alt + O`"
@@ -13994,7 +14068,7 @@ msgstr ":kbd:`Cmd + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid "``editor/quick_open_script``"
-msgstr ""
+msgstr "``editor/quick_open_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -14013,7 +14087,7 @@ msgstr ":kbd:`Cmd + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 msgid "``editor/undo``"
-msgstr ""
+msgstr "``editor/undo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
@@ -14030,7 +14104,7 @@ msgstr ":kbd:`Cmd + Shift + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid "``editor/redo``"
-msgstr ""
+msgstr "``editor/redo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
@@ -14046,7 +14120,7 @@ msgstr ":kbd:`Cmd + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "``editor/file_quit``"
-msgstr ""
+msgstr "``editor/file_quit``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
@@ -14062,7 +14136,7 @@ msgstr ":kbd:`Shift + Alt + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "``editor/quit_to_project_list``"
-msgstr ""
+msgstr "``editor/quit_to_project_list``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
@@ -14078,7 +14152,7 @@ msgstr ":kbd:`Cmd + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "``editor/take_screenshot``"
-msgstr ""
+msgstr "``editor/take_screenshot``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
@@ -14094,7 +14168,7 @@ msgstr ":kbd:`Cmd + Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "``editor/fullscreen_mode``"
-msgstr ""
+msgstr "``editor/fullscreen_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
@@ -14112,7 +14186,7 @@ msgstr ":kbd:`Cmd + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "``editor/play``"
-msgstr ""
+msgstr "``editor/play``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
@@ -14128,7 +14202,7 @@ msgstr ":kbd:`Cmd + Ctrl + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "``editor/pause_scene``"
-msgstr ""
+msgstr "``editor/pause_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
@@ -14145,11 +14219,11 @@ msgstr ":kbd:`Cmd + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "``editor/stop``"
-msgstr ""
+msgstr "``editor/stop``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr "Avvia Scena"
+msgstr "Esegui scena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -14162,11 +14236,11 @@ msgstr ":kbd:`Cmd + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "``editor/play_scene``"
-msgstr ""
+msgstr "``editor/play_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr "Avvia Scena Personalizzata"
+msgstr "Avvia scena personalizzata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -14180,7 +14254,7 @@ msgstr ":kbd:`Cmd + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "``editor/play_custom_scene``"
-msgstr ""
+msgstr "``editor/play_custom_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
@@ -14192,11 +14266,11 @@ msgstr ":kbd:`Shift + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "``editor/bottom_panel_expand``"
-msgstr ""
+msgstr "``editor/bottom_panel_expand``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:86
 msgid "2D / Canvas Item Editor"
-msgstr ""
+msgstr "Editor 2D / Canvas Item"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -14215,7 +14289,7 @@ msgstr ":kbd:`Cmd + =`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 msgid "``canvas_item_editor/zoom_plus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_plus``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -14234,7 +14308,7 @@ msgstr ":kbd:`Cmd + -`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 msgid "``canvas_item_editor/zoom_minus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_minus``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
@@ -14252,7 +14326,7 @@ msgstr ":kbd:`Cmd + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "``canvas_item_editor/zoom_reset``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_reset``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
@@ -14264,7 +14338,7 @@ msgstr ":kbd:`Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "``canvas_item_editor/pan_view``"
-msgstr ""
+msgstr "``canvas_item_editor/pan_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
@@ -14279,7 +14353,7 @@ msgstr ":kbd:`Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 msgid "``canvas_item_editor/select_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/select_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
@@ -14295,7 +14369,7 @@ msgstr ":kbd:`W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 msgid "``canvas_item_editor/move_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/move_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
@@ -14310,7 +14384,7 @@ msgstr ":kbd:`E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 msgid "``canvas_item_editor/rotate_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/rotate_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -14325,7 +14399,7 @@ msgstr ":kbd:`S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 msgid "``canvas_item_editor/scale_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/scale_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
@@ -14338,7 +14412,7 @@ msgstr ":kbd:`R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "``canvas_item_editor/ruler_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/ruler_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
@@ -14350,7 +14424,7 @@ msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "``canvas_item_editor/use_smart_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_smart_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
@@ -14362,7 +14436,7 @@ msgstr ":kbd:`Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "``canvas_item_editor/use_grid_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_grid_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
@@ -14374,7 +14448,7 @@ msgstr ":kbd:`Num *`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "``canvas_item_editor/multiply_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/multiply_grid_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
@@ -14386,11 +14460,11 @@ msgstr ":kbd:`Num /`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "``canvas_item_editor/divide_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/divide_grid_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr "Mostra Sempre Griglia"
+msgstr "Mostra sempre Griglia"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -14399,7 +14473,7 @@ msgstr ":kbd:`G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "``canvas_item_editor/show_grid``"
-msgstr ""
+msgstr "``canvas_item_editor/show_grid``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
@@ -14411,7 +14485,7 @@ msgstr ":kbd:`H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "``canvas_item_editor/show_helpers``"
-msgstr ""
+msgstr "``canvas_item_editor/show_helpers``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
@@ -14424,7 +14498,7 @@ msgstr ":kbd:`Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "``canvas_item_editor/show_guides``"
-msgstr ""
+msgstr "``canvas_item_editor/show_guides``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
@@ -14437,7 +14511,7 @@ msgstr ":kbd:`F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "``canvas_item_editor/center_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/center_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
@@ -14450,7 +14524,7 @@ msgstr ":kbd:`Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "``canvas_item_editor/frame_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/frame_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
@@ -14466,7 +14540,7 @@ msgstr ":kbd:`Cmd + Shift + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "``canvas_item_editor/preview_canvas_scale``"
-msgstr ""
+msgstr "``canvas_item_editor/preview_canvas_scale``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
@@ -14478,7 +14552,7 @@ msgstr ":kbd:`Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "``canvas_item_editor/anim_insert_key``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
@@ -14494,7 +14568,7 @@ msgstr ":kbd:`Cmd + Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 msgid "Make Custom Bones from Nodes"
@@ -14513,7 +14587,7 @@ msgstr ":kbd:`Cmd + Shift + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 msgid "``canvas_item_editor/skeleton_make_bones``"
-msgstr ""
+msgstr "``canvas_item_editor/skeleton_make_bones``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
@@ -14525,11 +14599,11 @@ msgstr ":kbd:`Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "``canvas_item_editor/anim_clear_pose``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_clear_pose``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:139
 msgid "3D / Spatial Editor"
-msgstr ""
+msgstr "Editor 3D / Spatial"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
@@ -14537,7 +14611,7 @@ msgstr "Abilita/Disabilita Vista libera"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
-msgstr ""
+msgstr "``spatial_editor/freelook_toggle``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
@@ -14550,7 +14624,7 @@ msgstr ":kbd:`A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "``spatial_editor/freelook_left``"
-msgstr ""
+msgstr "``spatial_editor/freelook_left``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
@@ -14562,7 +14636,7 @@ msgstr ":kbd:`D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "``spatial_editor/freelook_right``"
-msgstr ""
+msgstr "``spatial_editor/freelook_right``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
@@ -14570,7 +14644,7 @@ msgstr "Vista Libera Avanti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
-msgstr ""
+msgstr "``spatial_editor/freelook_forward``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
@@ -14578,7 +14652,7 @@ msgstr "Vista Libera Indietro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
-msgstr ""
+msgstr "``spatial_editor/freelook_backwards``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
@@ -14586,7 +14660,7 @@ msgstr "Vista Libera Su"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
-msgstr ""
+msgstr "``spatial_editor/freelook_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
@@ -14594,7 +14668,7 @@ msgstr "Vista Libera Giù"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
-msgstr ""
+msgstr "``spatial_editor/freelook_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
@@ -14606,7 +14680,7 @@ msgstr ":kbd:`Shift`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "``spatial_editor/freelook_speed_modifier``"
-msgstr ""
+msgstr "``spatial_editor/freelook_speed_modifier``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
@@ -14618,23 +14692,23 @@ msgstr ":kbd:`Alt`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "``spatial_editor/freelook_slow_modifier``"
-msgstr ""
+msgstr "``spatial_editor/freelook_slow_modifier``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "``spatial_editor/tool_select``"
-msgstr ""
+msgstr "``spatial_editor/tool_select``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "``spatial_editor/tool_move``"
-msgstr ""
+msgstr "``spatial_editor/tool_move``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "``spatial_editor/tool_rotate``"
-msgstr ""
+msgstr "``spatial_editor/tool_rotate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "``spatial_editor/tool_scale``"
-msgstr ""
+msgstr "``spatial_editor/tool_scale``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
@@ -14647,7 +14721,7 @@ msgstr ":kbd:`T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "``spatial_editor/local_coords``"
-msgstr ""
+msgstr "``spatial_editor/local_coords``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
@@ -14655,7 +14729,7 @@ msgstr "Usa Snap"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
-msgstr ""
+msgstr "``spatial_editor/snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
@@ -14668,7 +14742,7 @@ msgstr ":kbd:`PgDown`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "``spatial_editor/snap_to_floor``"
-msgstr ""
+msgstr "``spatial_editor/snap_to_floor``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
@@ -14680,7 +14754,7 @@ msgstr ":kbd:`Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "``spatial_editor/top_view``"
-msgstr ""
+msgstr "``spatial_editor/top_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
@@ -14692,7 +14766,7 @@ msgstr ":kbd:`Alt + Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "``spatial_editor/bottom_view``"
-msgstr ""
+msgstr "``spatial_editor/bottom_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
@@ -14704,7 +14778,7 @@ msgstr ":kbd:`Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "``spatial_editor/front_view``"
-msgstr ""
+msgstr "``spatial_editor/front_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
@@ -14716,7 +14790,7 @@ msgstr ":kbd:`Alt + Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "``spatial_editor/rear_view``"
-msgstr ""
+msgstr "``spatial_editor/rear_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
@@ -14728,7 +14802,7 @@ msgstr ":kbd:`Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "``spatial_editor/right_view``"
-msgstr ""
+msgstr "``spatial_editor/right_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
@@ -14740,7 +14814,7 @@ msgstr ":kbd:`Alt + Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "``spatial_editor/left_view``"
-msgstr ""
+msgstr "``spatial_editor/left_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
@@ -14752,7 +14826,7 @@ msgstr ":kbd:`Num 5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "``spatial_editor/switch_perspective_orthogonal``"
-msgstr ""
+msgstr "``spatial_editor/switch_perspective_orthogonal``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid "Insert Animation Key"
@@ -14764,7 +14838,7 @@ msgstr ":kbd:`K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid "``spatial_editor/insert_anim_key``"
-msgstr ""
+msgstr "``spatial_editor/insert_anim_key``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
@@ -14776,7 +14850,7 @@ msgstr ":kbd:`O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "``spatial_editor/focus_origin``"
-msgstr ""
+msgstr "``spatial_editor/focus_origin``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
@@ -14784,7 +14858,7 @@ msgstr "Centra la Selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
-msgstr ""
+msgstr "``spatial_editor/focus_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
@@ -14800,7 +14874,7 @@ msgstr ":kbd:`Cmd + Alt + M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "``spatial_editor/align_transform_with_view``"
-msgstr ""
+msgstr "``spatial_editor/align_transform_with_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
@@ -14817,7 +14891,7 @@ msgstr ":kbd:`Cmd + Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "``spatial_editor/align_rotation_with_view``"
-msgstr ""
+msgstr "``spatial_editor/align_rotation_with_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
@@ -14833,7 +14907,7 @@ msgstr ":kbd:`Cmd + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "``spatial_editor/1_viewport``"
-msgstr ""
+msgstr "``spatial_editor/1_viewport``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
@@ -14849,7 +14923,7 @@ msgstr ":kbd:`Cmd + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "``spatial_editor/2_viewports``"
-msgstr ""
+msgstr "``spatial_editor/2_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
@@ -14865,7 +14939,7 @@ msgstr ":kbd:`Cmd + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "``spatial_editor/2_viewports_alt``"
-msgstr ""
+msgstr "``spatial_editor/2_viewports_alt``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
@@ -14881,7 +14955,7 @@ msgstr ":kbd:`Cmd + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "``spatial_editor/3_viewports``"
-msgstr ""
+msgstr "``spatial_editor/3_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
@@ -14897,7 +14971,7 @@ msgstr ":kbd:`Cmd + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "``spatial_editor/3_viewports_alt``"
-msgstr ""
+msgstr "``spatial_editor/3_viewports_alt``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
@@ -14913,12 +14987,11 @@ msgstr ":kbd:`Cmd + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "``spatial_editor/4_viewports``"
-msgstr ""
+msgstr "``spatial_editor/4_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
-#, fuzzy
 msgid "Text Editor"
-msgstr "Editor"
+msgstr "Editor di testo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
@@ -14938,7 +15011,7 @@ msgstr ":kbd:`Cmd + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "``script_text_editor/cut``"
-msgstr ""
+msgstr "``script_text_editor/cut``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
@@ -14964,7 +15037,7 @@ msgstr ":kbd:`Cmd + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "``script_text_editor/copy``"
-msgstr ""
+msgstr "``script_text_editor/copy``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
@@ -14982,7 +15055,7 @@ msgstr ":kbd:`Cmd + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "``script_text_editor/paste``"
-msgstr ""
+msgstr "``script_text_editor/paste``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
@@ -15000,7 +15073,7 @@ msgstr ":kbd:`Cmd + A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "``script_text_editor/select_all``"
-msgstr ""
+msgstr "``script_text_editor/select_all``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
@@ -15023,7 +15096,7 @@ msgstr ":kbd:`Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 msgid "``script_text_editor/find``"
-msgstr ""
+msgstr "``script_text_editor/find``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
@@ -15037,7 +15110,7 @@ msgstr ":kbd:`Cmd + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 msgid "``script_text_editor/find_next``"
-msgstr ""
+msgstr "``script_text_editor/find_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -15055,7 +15128,7 @@ msgstr ":kbd:`Cmd + Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid "``script_text_editor/find_previous``"
-msgstr ""
+msgstr "``script_text_editor/find_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -15074,7 +15147,7 @@ msgstr ":kbd:`Cmd + Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 msgid "``script_text_editor/find_in_files``"
-msgstr ""
+msgstr "``script_text_editor/find_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
@@ -15091,11 +15164,11 @@ msgstr ":kbd:`Alt + Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "``script_text_editor/replace``"
-msgstr ""
+msgstr "``script_text_editor/replace``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 msgid "Replace in Files"
-msgstr ""
+msgstr "Sostituisci nei file"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
@@ -15104,11 +15177,11 @@ msgstr ":kbd:`Ctrl + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 msgid "``script_text_editor/replace_in_files``"
-msgstr ""
+msgstr "``script_text_editor/replace_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "``script_text_editor/undo``"
-msgstr ""
+msgstr "``script_text_editor/undo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid ":kbd:`Ctrl + Y`"
@@ -15120,7 +15193,7 @@ msgstr ":kbd:`Cmd + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "``script_text_editor/redo``"
-msgstr ""
+msgstr "``script_text_editor/redo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
@@ -15131,11 +15204,11 @@ msgstr "Sposta in su"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid ":kbd:`Alt + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Freccia Su`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 msgid "``script_text_editor/move_up``"
-msgstr ""
+msgstr "``script_text_editor/move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
@@ -15145,11 +15218,11 @@ msgstr "Sposta in giù"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Freccia Giù`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid "``script_text_editor/move_down``"
-msgstr ""
+msgstr "``script_text_editor/move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
@@ -15167,7 +15240,7 @@ msgstr ":kbd:`Cmd + Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "``script_text_editor/delete_line``"
-msgstr ""
+msgstr "``script_text_editor/delete_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
@@ -15183,7 +15256,7 @@ msgstr ":kbd:`Cmd + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "``script_text_editor/toggle_comment``"
-msgstr ""
+msgstr "``script_text_editor/toggle_comment``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
@@ -15196,7 +15269,7 @@ msgstr ":kbd:`Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "``script_text_editor/toggle_fold_line``"
-msgstr ""
+msgstr "``script_text_editor/toggle_fold_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
@@ -15216,7 +15289,7 @@ msgstr ":kbd:`Cmd + Shift + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "``script_text_editor/clone_down``"
-msgstr ""
+msgstr "``script_text_editor/clone_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
@@ -15228,7 +15301,7 @@ msgstr ":kbd: `Ctrl + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "``script_text_editor/complete_symbol``"
-msgstr ""
+msgstr "``script_text_editor/complete_symbol``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
@@ -15244,7 +15317,7 @@ msgstr ":kbd:`Cmd + Shift + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "``script_text_editor/evaluate_selection``"
-msgstr ""
+msgstr "``script_text_editor/evaluate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
@@ -15260,7 +15333,7 @@ msgstr ":kbd:`Cmd + Alt + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "``script_text_editor/trim_trailing_whitespace``"
-msgstr ""
+msgstr "``script_text_editor/trim_trailing_whitespace``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
@@ -15272,7 +15345,7 @@ msgstr ":kbd:`Shift + F4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "``script_text_editor/convert_to_uppercase``"
-msgstr ""
+msgstr "``script_text_editor/convert_to_uppercase``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
@@ -15284,7 +15357,7 @@ msgstr ":kbd:`Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "``script_text_editor/convert_to_lowercase``"
-msgstr ""
+msgstr "``script_text_editor/convert_to_lowercase``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
@@ -15296,7 +15369,7 @@ msgstr ":kbd:`Shift + F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "``script_text_editor/capitalize``"
-msgstr ""
+msgstr "``script_text_editor/capitalize``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
@@ -15312,7 +15385,7 @@ msgstr ":kbd:`Cmd + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "``script_text_editor/convert_indent_to_spaces``"
-msgstr ""
+msgstr "``script_text_editor/convert_indent_to_spaces``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
@@ -15328,7 +15401,7 @@ msgstr ":kbd:`Cmd + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "``script_text_editor/convert_indent_to_tabs``"
-msgstr ""
+msgstr "``script_text_editor/convert_indent_to_tabs``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
@@ -15344,7 +15417,7 @@ msgstr ":kbd:`Cmd + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "``script_text_editor/auto_indent``"
-msgstr ""
+msgstr "``script_text_editor/auto_indent``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
@@ -15360,7 +15433,7 @@ msgstr ":kbd:`Cmd + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "``script_text_editor/toggle_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/toggle_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
@@ -15372,7 +15445,7 @@ msgstr ":kbd:`Ctrl + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "``script_text_editor/goto_next_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/goto_next_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
@@ -15380,11 +15453,11 @@ msgstr "Va' al segnalibro precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/goto_previous_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "Go to Function"
-msgstr "Va' alla funzione"
+msgstr "Vai alla funzione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -15392,11 +15465,11 @@ msgstr ":kbd:`Ctrl + Cmd + J`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "``script_text_editor/goto_function``"
-msgstr ""
+msgstr "``script_text_editor/goto_function``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr "Va' alla linea"
+msgstr "Vai alla linea"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -15408,7 +15481,7 @@ msgstr ":kbd:`Cmd + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "``script_text_editor/goto_line``"
-msgstr ""
+msgstr "``script_text_editor/goto_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -15422,7 +15495,7 @@ msgstr ":kbd:`F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid "``script_text_editor/toggle_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/toggle_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
@@ -15438,7 +15511,7 @@ msgstr ":kbd:`Cmd + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "``script_text_editor/remove_all_breakpoints``"
-msgstr ""
+msgstr "``script_text_editor/remove_all_breakpoints``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
@@ -15450,7 +15523,7 @@ msgstr ":kbd:`Ctrl + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "``script_text_editor/goto_next_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/goto_next_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
@@ -15466,7 +15539,7 @@ msgstr ":kbd:`Cmd + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "``script_text_editor/goto_previous_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/goto_previous_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
@@ -15482,7 +15555,7 @@ msgstr ":kbd:`Alt + Shift + Spazio`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "``script_text_editor/contextual_help``"
-msgstr ""
+msgstr "``script_text_editor/contextual_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
 msgid "Script Editor"
@@ -15490,19 +15563,19 @@ msgstr "Editor script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
-msgstr ""
+msgstr "``script_editor/find``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "``script_editor/find_next``"
-msgstr ""
+msgstr "``script_editor/find_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "``script_editor/find_previous``"
-msgstr ""
+msgstr "``script_editor/find_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid "``script_editor/find_in_files``"
-msgstr ""
+msgstr "``script_editor/find_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid ":kbd:`Shift + Alt + Up Arrow`"
@@ -15510,7 +15583,7 @@ msgstr ":kbd:`Shift + Alt + Freccia Su`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid "``script_editor/window_move_up``"
-msgstr ""
+msgstr "``script_editor/window_move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid ":kbd:`Shift + Alt + Down Arrow`"
@@ -15518,12 +15591,12 @@ msgstr ":kbd:`Shift + Alt + Freccia Giù`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid "``script_editor/window_move_down``"
-msgstr ""
+msgstr "``script_editor/window_move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 #, fuzzy
 msgid "Next Script"
-msgstr "GDScript"
+msgstr "Prossimo Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -15535,11 +15608,11 @@ msgstr ":kbd:`Cmd + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid "``script_editor/next_script``"
-msgstr ""
+msgstr "``script_editor/next_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "Previous Script"
-msgstr ""
+msgstr "Script precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Ctrl + Shift + ,`"
@@ -15551,7 +15624,7 @@ msgstr ":kbd:`Cmd + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "``script_editor/prev_script``"
-msgstr ""
+msgstr "``script_editor/prev_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
@@ -15559,7 +15632,7 @@ msgstr "Riapri lo script chiuso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
-msgstr ""
+msgstr "``script_editor/reopen_closed_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
@@ -15575,7 +15648,7 @@ msgstr ":kbd:`Cmd + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "``script_editor/save``"
-msgstr ""
+msgstr "``script_editor/save``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
@@ -15583,7 +15656,7 @@ msgstr "Salva tutto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
-msgstr ""
+msgstr "``script_editor/save_all``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
@@ -15591,7 +15664,7 @@ msgstr "Ricarica Soft Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
-msgstr ""
+msgstr "``script_editor/reload_script_soft``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
@@ -15600,11 +15673,11 @@ msgstr "Cronologia Precedente"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid ":kbd:`Alt + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Freccia Sinistra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "``script_editor/history_previous``"
-msgstr ""
+msgstr "``script_editor/history_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
@@ -15613,11 +15686,11 @@ msgstr "Cronologia Successiva"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid ":kbd:`Alt + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Freccia Destra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "``script_editor/history_next``"
-msgstr ""
+msgstr "``script_editor/history_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
@@ -15633,7 +15706,7 @@ msgstr ":kbd:`Cmd + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "``script_editor/close_file``"
-msgstr ""
+msgstr "``script_editor/close_file``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
@@ -15650,7 +15723,7 @@ msgstr ":kbd:`Cmd + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid "``script_editor/run_file``"
-msgstr ""
+msgstr "``script_editor/run_file``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
@@ -15666,15 +15739,15 @@ msgstr ":kbd:`Cmd + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "``script_editor/toggle_scripts_panel``"
-msgstr ""
+msgstr "``script_editor/toggle_scripts_panel``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "``script_editor/zoom_in``"
-msgstr ""
+msgstr "``script_editor/zoom_in``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "``script_editor/zoom_out``"
-msgstr ""
+msgstr "``script_editor/zoom_out``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
@@ -15682,12 +15755,11 @@ msgstr "Resetta ingrandimento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
-msgstr ""
+msgstr "``script_editor/reset_zoom``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:342
-#, fuzzy
 msgid "Visual Script Editor"
-msgstr "VisualScript"
+msgstr "Editor Visual Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
@@ -15695,7 +15767,7 @@ msgstr "Trova tipo del nodo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
-msgstr ""
+msgstr "``visual_script_editor/find_node_type``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
@@ -15703,7 +15775,7 @@ msgstr "Copia nodi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/copy_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
@@ -15711,7 +15783,7 @@ msgstr "Taglia nodi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/cut_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "Paste Nodes"
@@ -15719,11 +15791,11 @@ msgstr "Incolla nodi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/paste_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr "Elimina Selezionati"
+msgstr "Elimina selezionati"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -15745,7 +15817,7 @@ msgstr ":kbd:`Cmd + BkSp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "``visual_script_editor/delete_selected``"
-msgstr ""
+msgstr "``visual_script_editor/delete_selected``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
@@ -15757,7 +15829,7 @@ msgstr ":kbd:`Ctrl + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "``visual_script_editor/create_function``"
-msgstr ""
+msgstr "``visual_script_editor/create_function``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "Edit Member"
@@ -15773,7 +15845,7 @@ msgstr ":kbd:`Cmd + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "``visual_script_editor/edit_member``"
-msgstr ""
+msgstr "``visual_script_editor/edit_member``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
@@ -15781,16 +15853,15 @@ msgstr "Aggiorna grafico"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/refresh_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "``visual_script_editor/toggle_breakpoint``"
-msgstr ""
+msgstr "``visual_script_editor/toggle_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
-#, fuzzy
 msgid "Editor Output"
-msgstr "Editor"
+msgstr "Editor Output"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
@@ -15799,7 +15870,7 @@ msgstr "Copia selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
-msgstr ""
+msgstr "``editor/copy_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
@@ -15807,7 +15878,7 @@ msgstr "Svuota output"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
-msgstr ""
+msgstr "``editor/clear_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:378
 #: ../../docs/tutorials/debug/debugger_panel.rst:14
@@ -15824,7 +15895,7 @@ msgstr ":kbd:`F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "``debugger/step_into``"
-msgstr ""
+msgstr "``debugger/step_into``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
@@ -15836,7 +15907,7 @@ msgstr ":kbd:`F10`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "``debugger/step_over``"
-msgstr ""
+msgstr "``debugger/step_over``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
@@ -15848,11 +15919,12 @@ msgstr ":kbd:`F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "``debugger/continue``"
-msgstr ""
+msgstr "``debugger/continue``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:391
+#, fuzzy
 msgid "File Dialog"
-msgstr ""
+msgstr "Finestra di dialogo File"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
@@ -15860,23 +15932,23 @@ msgstr "Torna indietro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
-msgstr ""
+msgstr "``file_dialog/go_back``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr "Va' avanti"
+msgstr "Vai avanti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
-msgstr ""
+msgstr "``file_dialog/go_forward``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr "Va' su"
+msgstr "Vai su"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
-msgstr ""
+msgstr "``file_dialog/go_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
@@ -15884,7 +15956,7 @@ msgstr "Aggiorna"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
-msgstr ""
+msgstr "``file_dialog/refresh``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
@@ -15900,7 +15972,7 @@ msgstr ":kbd:`Cmd + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "``file_dialog/toggle_hidden_files``"
-msgstr ""
+msgstr "``file_dialog/toggle_hidden_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
@@ -15908,7 +15980,7 @@ msgstr "Attiva/disattiva preferito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
-msgstr ""
+msgstr "``file_dialog/toggle_favorite``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
@@ -15920,7 +15992,7 @@ msgstr ":kbd:`Alt + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "``file_dialog/toggle_mode``"
-msgstr ""
+msgstr "``file_dialog/toggle_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
@@ -15936,7 +16008,7 @@ msgstr ":kbd:`Cmd + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "``file_dialog/create_folder``"
-msgstr ""
+msgstr "``file_dialog/create_folder``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
@@ -15946,7 +16018,7 @@ msgstr "Elimina"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
-msgstr ""
+msgstr "``file_dialog/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
@@ -15961,7 +16033,7 @@ msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "``file_dialog/focus_path``"
-msgstr ""
+msgstr "``file_dialog/focus_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
@@ -15970,16 +16042,16 @@ msgstr "Sposta preferito in su"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Ctrl + Up Arrow`"
-msgstr ""
+msgstr ":kbd: `Ctrl + Freccia Su`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Cmd + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Freccia Su`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "``file_dialog/move_favorite_up``"
-msgstr ""
+msgstr "``file_dialog/move_favorite_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
@@ -15988,20 +16060,20 @@ msgstr "Sposta preferito in giù"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid ":kbd:`Ctrl + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Freccia Giù`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid ":kbd:`Cmd + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Freccia Giù`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "``file_dialog/move_favorite_down``"
-msgstr ""
+msgstr "``file_dialog/move_favorite_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Riquadro FileSystem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -16009,7 +16081,7 @@ msgstr "Copia percorso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
-msgstr ""
+msgstr "``filesystem_dock/copy_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
@@ -16018,11 +16090,11 @@ msgstr "Duplica"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
-msgstr ""
+msgstr "``filesystem_dock/duplicate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 msgid "``filesystem_dock/delete``"
-msgstr ""
+msgstr "``filesystem_dock/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:435
 msgid "Scene Tree Dock"
@@ -16034,7 +16106,7 @@ msgstr "Aggiungi un nodo figlio"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
-msgstr ""
+msgstr "``scene_tree/add_child_node``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
@@ -16050,7 +16122,7 @@ msgstr ":kbd:`Cmd + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "``scene_tree/batch_rename``"
-msgstr ""
+msgstr "``scene_tree/batch_rename``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
@@ -16058,11 +16130,11 @@ msgstr "Copia percorso del nodo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
-msgstr ""
+msgstr "``scene_tree/copy_node_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "``scene_tree/delete``"
-msgstr ""
+msgstr "``scene_tree/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid "Force Delete"
@@ -16074,19 +16146,19 @@ msgstr ":kbd:`Shift + Del`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid "``scene_tree/delete_no_confirm``"
-msgstr ""
+msgstr "``scene_tree/delete_no_confirm``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "``scene_tree/duplicate``"
-msgstr ""
+msgstr "``scene_tree/duplicate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "``scene_tree/move_up``"
-msgstr ""
+msgstr "``scene_tree/move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "``scene_tree/move_down``"
-msgstr ""
+msgstr "``scene_tree/move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
 #, fuzzy
@@ -16099,7 +16171,7 @@ msgstr "Duplica selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
-msgstr ""
+msgstr "``animation_editor/duplicate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
@@ -16115,7 +16187,7 @@ msgstr ":kbd:`Cmd + Shift + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "``animation_editor/duplicate_selection_transposed``"
-msgstr ""
+msgstr "``animation_editor/duplicate_selection_transposed``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
@@ -16123,7 +16195,7 @@ msgstr "Elimina la selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
-msgstr ""
+msgstr "``animation_editor/delete_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
@@ -16131,15 +16203,15 @@ msgstr "Va' al passo successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Freccia Destra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Cmd + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Freccia Destra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "``animation_editor/goto_next_step``"
-msgstr ""
+msgstr "``animation_editor/goto_next_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
@@ -16147,19 +16219,19 @@ msgstr "Va' al passo precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Freccia Sinistra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Cmd + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Freccia Sinistra`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "``animation_editor/goto_prev_step``"
-msgstr ""
+msgstr "``animation_editor/goto_prev_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:475
 msgid "Tile Map Editor"
-msgstr ""
+msgstr "Editor Tile Map"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
@@ -16167,7 +16239,7 @@ msgstr "Trova tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
-msgstr ""
+msgstr "``tile_map_editor/find_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
@@ -16179,7 +16251,7 @@ msgstr ":kbd:`I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "``tile_map_editor/pick_tile``"
-msgstr ""
+msgstr "``tile_map_editor/pick_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
@@ -16191,7 +16263,7 @@ msgstr ":kbd:`P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "``tile_map_editor/paint_tile``"
-msgstr ""
+msgstr "``tile_map_editor/paint_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
@@ -16199,7 +16271,7 @@ msgstr "Riempimento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
-msgstr ""
+msgstr "``tile_map_editor/bucket_fill``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "Transpose"
@@ -16207,7 +16279,7 @@ msgstr "Trasponi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
-msgstr ""
+msgstr "``tile_map_editor/transpose``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
@@ -16219,7 +16291,7 @@ msgstr ":kbd:`X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "``tile_map_editor/flip_horizontal``"
-msgstr ""
+msgstr "``tile_map_editor/flip_horizontal``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
@@ -16231,7 +16303,7 @@ msgstr ":kbd:`Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "``tile_map_editor/flip_vertical``"
-msgstr ""
+msgstr "``tile_map_editor/flip_vertical``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
@@ -16239,7 +16311,7 @@ msgstr "Ruota a sinistra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
-msgstr ""
+msgstr "``tile_map_editor/rotate_left``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
@@ -16247,7 +16319,7 @@ msgstr "Ruota a destra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
-msgstr ""
+msgstr "``tile_map_editor/rotate_right``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "Clear Transform"
@@ -16255,7 +16327,7 @@ msgstr "Azzera la trasformazione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
-msgstr ""
+msgstr "``tile_map_editor/clear_transform``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
@@ -16267,7 +16339,7 @@ msgstr ":kbd:`M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "``tile_map_editor/select``"
-msgstr ""
+msgstr "``tile_map_editor/select``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
@@ -16275,11 +16347,11 @@ msgstr "Taglia selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
-msgstr ""
+msgstr "``tile_map_editor/cut_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "``tile_map_editor/copy_selection``"
-msgstr ""
+msgstr "``tile_map_editor/copy_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
@@ -16287,12 +16359,11 @@ msgstr "Cancella selezione"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
-msgstr ""
+msgstr "``tile_map_editor/erase_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "Editor"
+msgstr "Editor Tileset"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
@@ -16300,7 +16371,7 @@ msgstr "Coordinata successiva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
-msgstr ""
+msgstr "``tileset_editor/next_shape``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "Previous Coordinate"
@@ -16312,7 +16383,7 @@ msgstr ":kbd:`PgUp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "``tileset_editor/previous_shape``"
-msgstr ""
+msgstr "``tileset_editor/previous_shape``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
@@ -16324,11 +16395,11 @@ msgstr ":kbd:`1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "``tileset_editor/editmode_region``"
-msgstr ""
+msgstr "``tileset_editor/editmode_region``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "Collision Mode"
-msgstr "Modalità di collisione"
+msgstr "Modalità Collisioni"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -16336,7 +16407,7 @@ msgstr ":kbd:`2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "``tileset_editor/editmode_collision``"
-msgstr ""
+msgstr "``tileset_editor/editmode_collision``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
@@ -16348,7 +16419,7 @@ msgstr ":kbd:`3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "``tileset_editor/editmode_occlusion``"
-msgstr ""
+msgstr "``tileset_editor/editmode_occlusion``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "Navigation Mode"
@@ -16360,7 +16431,7 @@ msgstr ":kbd:`4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "``tileset_editor/editmode_navigation``"
-msgstr ""
+msgstr "``tileset_editor/editmode_navigation``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
@@ -16372,11 +16443,11 @@ msgstr ":kbd:`5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "``tileset_editor/editmode_bitmask``"
-msgstr ""
+msgstr "``tileset_editor/editmode_bitmask``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr "Modalità Prioritaria"
+msgstr "Modalità Priorità"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -16384,7 +16455,7 @@ msgstr ":kbd:`6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "``tileset_editor/editmode_priority``"
-msgstr ""
+msgstr "``tileset_editor/editmode_priority``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "Icon Mode"
@@ -16396,7 +16467,7 @@ msgstr ":kbd:`7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "``tileset_editor/editmode_icon``"
-msgstr ""
+msgstr "``tileset_editor/editmode_icon``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
@@ -16694,11 +16765,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid "Bricks"
-msgstr ""
+msgstr "Mattoni"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:101
 msgid "Coins"
-msgstr ""
+msgstr "Monete"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "The player"
@@ -16888,7 +16959,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:194
 msgid "Design"
-msgstr ""
+msgstr "Design"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:196
 msgid ""
@@ -17530,7 +17601,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "``*`` ``/`` ``%``"
-msgstr ""
+msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "Multiplication / Division / Remainder"
@@ -17595,7 +17666,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr ""
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 #, fuzzy
@@ -17636,7 +17707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "Ternary if/else"
@@ -18162,7 +18233,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:212
 msgid "Variables"
-msgstr ""
+msgstr "Variabili"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:572
 msgid ""
@@ -18653,7 +18724,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1079
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
-msgstr ""
+msgstr "Ereditarietà"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1081
 msgid "A class (stored as a file) can inherit from:"
@@ -18853,9 +18924,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1312
-#, fuzzy
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
-msgstr ":ref:`Eseguire Codice nell'Editor <doc_running_code_in_the_editor>`"
+msgstr "Vedi :ref:`doc_running_code_in_the_editor` per maggiori informazioni."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1314
 msgid ""
@@ -19305,7 +19375,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "Dizionari"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -19738,6 +19808,8 @@ msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
+"L'editor di script integrato di Godot utilizza molte di queste convenzioni "
+"come impostazione predefinita. Lascia che ti aiuti."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Here is a complete class example based on these guidelines:"
@@ -19782,7 +19854,6 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
-#, fuzzy
 msgid "Indentation"
 msgstr "Indentazione"
 
@@ -19921,9 +19992,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
-#, fuzzy
 msgid "Boolean operators"
-msgstr "Classi e nodi"
+msgstr "Operatori booleani"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:319
 msgid ""
@@ -19966,8 +20036,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
+#, fuzzy
 msgid "Whitespace"
-msgstr ""
+msgstr "Spazio bianco"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
@@ -20215,9 +20286,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Definisce una variabile."
+msgstr "Variabili membro"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
@@ -20230,9 +20300,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
-msgstr "Array locali"
+msgstr "Variabili locali"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
@@ -20826,11 +20895,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Utilizzo in GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr ""
+msgstr "Esamina questo esempio concreto in GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -20865,7 +20934,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr ""
+msgstr "Un rapido esempio in GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
@@ -20990,6 +21059,8 @@ msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"Questi caratteri vengono visualizzati prima di quanto sopra. Alcuni di loro "
+"funzionano solo a determinate condizioni."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
@@ -21113,13 +21184,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "Esempi del metodo Format"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"Di seguito sono riportati alcuni esempi di utilizzo delle varie chiamate del "
+"metodo ''String.format''."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
@@ -21142,12 +21215,12 @@ msgstr "**Risultato**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
-msgstr ""
+msgstr "Dizionario"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "chiave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -21168,7 +21241,7 @@ msgstr "Ciao, Godette v3.0!"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "indice"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
@@ -21177,7 +21250,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "mix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
@@ -21235,7 +21308,6 @@ msgid "Hi, Godette v3.0"
 msgstr "Ciao, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "Postfix"
 msgstr "Suffisso"
 
@@ -21904,7 +21976,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "Preload"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -21999,7 +22071,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr ""
+msgstr "TypeCast"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -22125,7 +22197,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:306
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid ""
@@ -23174,9 +23246,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr ":ref:`Segnali <doc_signals>`"
+msgstr "Vedi anche: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 #, fuzzy
@@ -23336,7 +23407,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:251
 msgid "Quat"
-msgstr ""
+msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:253
 msgid ""
@@ -23584,9 +23655,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
-#, fuzzy
 msgid "General guidelines"
-msgstr "Proprietà generali"
+msgstr "Linee guida generali"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:36
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
@@ -24570,7 +24640,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
-msgstr "Reimportazioni automatiche"
+msgstr "Reimportazione automatica"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid ""
@@ -24819,7 +24889,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Uncompressed"
-msgstr ""
+msgstr "Non compresso"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Compress Lossless (PNG)"
@@ -24983,7 +25053,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Repeat"
-msgstr ""
+msgstr "Ripeti"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
 msgid ""
@@ -24999,7 +25069,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 #: ../../docs/tutorials/audio/audio_buses.rst:180
 msgid "Filter"
-msgstr ""
+msgstr "Filtro"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:147
 msgid ""
@@ -25011,7 +25081,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmaps"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:152
 msgid ""
@@ -25043,7 +25113,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid "Anisotropic"
-msgstr ""
+msgstr "Anisotropico"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:165
 msgid ""
@@ -25850,7 +25920,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Compress"
-msgstr ""
+msgstr "Comprimi"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
 msgid ""
@@ -26129,7 +26199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid "Clips"
-msgstr ""
+msgstr "Clips"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:327
 msgid ""
@@ -32670,7 +32740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr ""
+msgstr "Casualità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
@@ -33860,6 +33930,17 @@ msgid ""
 "In our example, we will simply use a fixed number of points, no matter the "
 "radius."
 msgstr ""
+"Fondamentalmente, disegnare una forma sullo schermo richiede che sia "
+"scomposta in un certo numero di punti collegati da uno all'altro. Come puoi "
+"immaginare, maggiore è il numero di punti di cui è fatta la tua forma, più "
+"uniforme apparirà, ma più pesante sarà anche in termini di costi di "
+"elaborazione. In generale, se la tua forma è enorme (o in 3D, vicino alla "
+"fotocamera), richiederà più punti per essere disegnata senza che sia "
+"angolare. Al contrario, se la tua forma è piccola (o in 3D, lontana dalla "
+"fotocamera), puoi ridurne il numero di punti per risparmiare sui costi di "
+"elaborazione; questo è noto come * Level of Detail (LOD) *. Nel nostro "
+"esempio, utilizzeremo semplicemente un numero fisso di punti, "
+"indipendentemente dal raggio."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 msgid ""
@@ -40049,16 +40130,20 @@ msgid ""
 "(Python example) https://dev.to/karn/building-a-simple-state-machine-in-"
 "python"
 msgstr ""
+"(Esempio Python) https://dev.to/karn/building-a-simple-state-machine-in-"
+"python"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:180
 msgid ""
 "(C# example) https://www.codeproject.com/Articles/489136/"
 "UnderstandingplusandplusImplementingplusStateplusP"
 msgstr ""
+"(Esempio C#) https://www.codeproject.com/Articles/489136/"
+"UnderstandingplusandplusImplementingplusStateplusP"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:181
 msgid "(Wiki article) https://en.wikipedia.org/wiki/Finite-state_machine"
-msgstr ""
+msgstr "(Articolo Wiki) https://en.wikipedia.org/wiki/Finite-state_machine"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:183
 msgid ""
@@ -47220,7 +47305,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:103
 msgid "Doppler"
-msgstr ""
+msgstr "Effetto Doppler"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:105
 msgid ""
@@ -51026,7 +51111,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:156
 msgid "Let's do a simple example with the following pseudocode:"
-msgstr ""
+msgstr "Facciamo un semplice esempio con il seguente pseudocodice:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:170
 msgid ""
@@ -58979,6 +59064,21 @@ msgid ""
 "you might want to show a separate character in 3D imposed over the game "
 "(like in StarCraft)."
 msgstr ""
+"Per il 3D, a :ref:`Viewport <class_Viewport>` conterrà a :ref:`World "
+"<class_World>`. Questo è fondamentalmente l'universo che collega fisica e "
+"rendering insieme. I nodi Spatial si registreranno usando :ref:`World "
+"<class_World>` del più vicino :ref:`Viewport <class_Viewport>`. Di default, "
+"appena creato :ref:`Viewports <class_Viewport>` non contengono un :ref:"
+"`World <class_World>` ma usano lo stesso del loro genitore :ref:`Viewport "
+"<class_Viewport>` (root :ref:` Viewport <class_Viewport> `contiene sempre "
+"un :ref:` World <class_World> `, che è l'unico oggetto a cui viene eseguito "
+"il rendering di default). Un :ref:`World <class_World>` può essere impostato "
+"in un :ref:`Viewport <class_Viewport>` usando la proprietà \"world\", e "
+"questo separerà tutti i nodi figli di quello :ref:`Viewport "
+"<class_Viewport>` da interagendo con il genitore :ref:`Viewport's "
+"<class_Viewport>` :ref:`World <class_World>`. Ciò è particolarmente utile in "
+"scenari in cui, ad esempio, potresti voler mostrare un personaggio separato "
+"in 3D imposto sul gioco (come in StarCraft)."
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
@@ -60289,6 +60389,18 @@ msgid ""
 "is used; if not, it cuts all the corresponding code out. Therefore, you will "
 "not waste calculations on effects that you do not use."
 msgstr ""
+"L'uso standard della funzione fragment è quello di impostare le proprietà "
+"del materiale che saranno usate per calcolare l'illuminazione. Per esempio, "
+"si impostano i valori per ```ROUGHNESS``, ``RIM``, o ``TRANSMISSION``` che "
+"indicano alla funzione luce come le luci rispondono a quel frammento. Questo "
+"rende possibile il controllo di una complessa pipeline di shading senza che "
+"l'utente debba scrivere molto codice. Se non avete bisogno di questa "
+"funzionalità integrata, potete ignorarla e scrivere la vostra funzione di "
+"elaborazione delle luci e Godot la ottimizzerà. Per esempio, se non si "
+"scrive un valore su ```RIM``, Godot non calcolerà l'illuminazione del bordo. "
+"Durante la compilazione, Godot controlla se ``RIM`` viene utilizzato; in "
+"caso contrario, taglia fuori tutto il codice corrispondente. Pertanto, non "
+"si sprecheranno i calcoli sugli effetti che non si usano."
 
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:103
 msgid "Light processor"
@@ -61743,9 +61855,8 @@ msgid "float **length** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:694
-#, fuzzy
 msgid "Vector length"
-msgstr "Vettore"
+msgstr "Lunghezza del vettore"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:696
 msgid "float **distance** (vec_type a, vec_type b)"
@@ -65302,9 +65413,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:120
-#, fuzzy
 msgid "Fresnel node"
-msgstr "Creare nodi"
+msgstr "Nodo Fresnel"
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:122
 msgid ""
@@ -68485,6 +68595,19 @@ msgid ""
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
+":ref:`ARVROrigin <class_ARVROrigin>` è un nodo importante, devi averne uno, "
+"e soltanto uno, da qualche parte nella tua scena. Questo nodo mappa il "
+"centro del tuo spazio di tracciamento del mondo reale su una posizione nel "
+"tuo mondo virtuale. Tutto il resto è tracciato in posizione rispetto a "
+"questo punto. Il punto in cui si trova esattamente questo punto differisce "
+"da un'implementazione all'altra, ma l'esempio migliore per capire come "
+"funziona questo nodo è quello di dare un'occhiata a una posizione a scala di "
+"stanza. Mentre abbiamo funzioni per regolare il punto per centrarlo sul "
+"giocatore per l'impostazione predefinita, il punto di origine sarà la "
+"posizione centrale della stanza in cui ti trovi. Mentre cammini fisicamente "
+"intorno alla stanza, la posizione dell'HMD viene tracciata in relazione a "
+"questa posizione centrale e il tracciamento viene riprodotto nel mondo "
+"virtuale."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:89
 msgid ""
@@ -68603,7 +68726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:146
 msgid "Other things to consider"
-msgstr ""
+msgstr "Altre cose da considerare"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:148
 msgid ""
@@ -72061,13 +72184,11 @@ msgid "Now add a script to the main node and add the following code:"
 msgstr "Aggiungi uno script a ``Mob`` e le seguenti variabili membro:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
-#, fuzzy
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
 msgstr ""
-"Prima di poter esportare il progetto per Android, è necessario scaricare il "
-"seguente software:"
+"Prima di poter esportare questo progetto su Quest devi fare altre tre cose."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
@@ -75048,7 +75169,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Risoluzione dei problemi"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:179
 msgid "Godot crashes upon load"
@@ -75205,9 +75326,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "Descrizione"
+msgstr "Sottoscrizioni"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -75604,9 +75724,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
-#, fuzzy
 msgid "Static Methods"
-msgstr "Creare nodi"
+msgstr "Metodi statici"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:45
@@ -75638,9 +75757,8 @@ msgid "`Engine.unload <#Engine.unload>`__ **(** **)**"
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
-#, fuzzy
 msgid "boolean"
-msgstr "Classi e nodi"
+msgstr "booleano"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 msgid ""
@@ -77581,7 +77699,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:55
 msgid "There are several methods of measuring performance, including:"
-msgstr ""
+msgstr "Esistono diversi metodi per misurare le prestazioni, tra cui:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:57
 msgid "Putting a start / stop timer around code of interest"
@@ -77603,7 +77721,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:61
 msgid "Checking the frame rate (with vsync disabled)"
-msgstr ""
+msgstr "Controllare il frame rate (con vsync disabilitato)"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:63
 msgid ""
@@ -82459,9 +82577,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "Impostazioni utente"
+msgstr "Impostazioni"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -86059,9 +86176,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "Esempio di Sistema di Allarme"
+msgstr "Esempio Windows:"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -86516,6 +86632,9 @@ msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
+"Gli argomenti possono essere diversi in base alla propria configurazione ed "
+"esigenze. Vedi: ref: `doc_introduction_to_the_buildsystem` per un elenco "
+"completo di argomenti."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid ""
@@ -87784,7 +87903,7 @@ msgstr "Node2D"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:25
 msgid "Spatial"
-msgstr ""
+msgstr "Spatial"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:29
 msgid "Source files: :download:`class_tree.zip <files/class_tree.zip>`."
@@ -88740,6 +88859,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_godot_servers.rst:22
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 msgstr ""
+"`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>` __"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:23
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
@@ -90117,11 +90237,12 @@ msgstr ""
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
 #, fuzzy
 msgid "Best Practices"
-msgstr "Migliori prassi:"
+msgstr "Migliori pratiche"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
+#, fuzzy
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: Il problema viene sempre prima di tutto"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -93518,9 +93639,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:97
-#, fuzzy
 msgid "Translation interface"
-msgstr "L'interfaccia finale."
+msgstr "Interfaccia di traduzione"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:99
 msgid ""
@@ -94101,6 +94221,12 @@ msgid ""
 "<https://www.reddit.com/r/godot/comments/an0iq5/"
 "godot_tutorials_list_of_video_and_written/>`_."
 msgstr ""
+"Questo è un elenco di tutorial e risorse di terze parti create dalla "
+"comunità di Godot. Per quanto riguarda le risorse, ricorda che c'è la `Godot "
+"Asset Library ufficiale <https://godotengine.org/asset-library/asset>` _ "
+"piena di risorse ufficiali e della comunità! Inoltre, dai un'occhiata a "
+"questo `grande elenco su Reddit <https://www.reddit.com/r/godot/comments/"
+"an0iq5/godot_tutorials_list_of_video_and_written/>` _."
 
 #: ../../docs/community/tutorials.rst:8
 msgid ""

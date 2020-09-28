@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-09 13:27+0200\n"
-"PO-Revision-Date: 2020-09-07 18:05+0000\n"
+"PO-Revision-Date: 2020-09-28 11:19+0000\n"
 "Last-Translator: BinotaLIU <me@binota.org>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
@@ -1383,7 +1383,7 @@ msgstr "支援平台"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr "**在編輯器與匯出的專案中均可執行： **"
+msgstr "**在編輯器與匯出的專案中均可執行：**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -1806,12 +1806,11 @@ msgstr ""
 "割) 間混合。"
 
 #: ../../docs/about/list_of_features.rst:179
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"**OmniLight:** Dual Parabolid (較快) 或 Cubemap (較慢但較精確)。支援 "
+"**OmniLight:** Dual Paraboloid (較快) 或 Cubemap (較慢但較精確)。支援 "
 "Panoramas 格式的色彩透射紋理 (Colored Projector Texture)。"
 
 #: ../../docs/about/list_of_features.rst:181
@@ -2023,51 +2022,50 @@ msgstr "軟體。"
 
 #: ../../docs/about/list_of_features.rst:270
 msgid "Ragdolls."
-msgstr ""
+msgstr "Ragdoll。"
 
 #: ../../docs/about/list_of_features.rst:275
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
-msgstr ""
+msgstr "內建形狀：長方體、球體、膠囊體、圓柱體 (僅適用於 Bullet 物理)。"
 
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "在編輯器內為任意網格產生三角碰撞區域。"
 
 #: ../../docs/about/list_of_features.rst:277
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "在編輯器內為任意網格產生一個或多個凸碰撞區域。"
 
 #: ../../docs/about/list_of_features.rst:280
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "著色器"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "**2D：** 自定頂點、Fragment 與光照著色器。"
 
 #: ../../docs/about/list_of_features.rst:283
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
+msgstr "**3D：** 自定頂點、Fragment、光照與天空著色器。"
 
 #: ../../docs/about/list_of_features.rst:284
 msgid ""
 "Text-based shaders using a `shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"使用 `參考 GLSL 製作的著色器語言 <doc_shading_language>`_ 之純文字著色器。"
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Android"
+msgstr "視覺著色器編輯器。"
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr "支援視覺著色器外掛。"
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2075,129 +2073,129 @@ msgstr "Android"
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr "撰寫程式"
+msgstr "撰寫腳本"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "一般"
+msgstr "**一般：**"
 
 #: ../../docs/about/list_of_features.rst:294
-#, fuzzy
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr "物件導向的設計與組合"
+msgstr "可通過腳本來擴充節點的物件導向設計模式。"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "可通過訊號與群組來在腳本間進行通訊。"
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
-msgstr ""
+msgstr "支援 :ref:`跨語言腳本編寫 <doc_cross_language_scripting>` 。"
 
 #: ../../docs/about/list_of_features.rst:297
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
-msgstr ""
+msgstr "多種 2D 與 3D 線型資料型別，如向量與變換。"
 
 #: ../../docs/about/list_of_features.rst:299
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:301
-#, fuzzy
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
-"自 Godot 3.1 版以後，GDScript 支援 :ref:`可選的靜態型別定義 "
-"<doc_gdscript_static_typing>` 。"
+"具有 :ref:`可選靜態型別 <doc_gdscript_static_typing>` 的 :ref:`高階直譯式語"
+"言 <doc_gdscript>` 。"
 
 #: ../../docs/about/list_of_features.rst:303
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "參考自 Python 的語法。"
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "在 GitHub 上有語法醒目提示。"
 
 #: ../../docs/about/list_of_features.rst:305
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+"可 :ref:`使用執行緒 <doc_using_multiple_threads>` 來進行異步操作，或使用多處"
+"理器核心。"
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:310
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
-msgstr ""
+msgstr "打包為獨立二進位檔案，以減少檔案大小與相依性。"
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "使用 Mono 6.x。"
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "完整支援 C# 7.0 語法與功能。"
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "支援的圖片格式"
+msgstr "支援所有平台。"
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
-msgstr ""
+msgstr "建議使用外部編輯器以獲得更多 IDE 功能。"
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`視覺腳本 VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
-msgstr ""
+msgstr ":ref:`圖像式的視覺腳本語言 <doc_what_is_visual_script>` 。"
 
 #: ../../docs/about/list_of_features.rst:321
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"適合用於特定功能 (如用於特定關卡的邏輯)，而非以視覺腳本 VisualScript 來製作整"
+"個專案。"
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "\\ **GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
-msgstr ""
+msgstr "當有需要時，可通過連接到原生函式庫以獲得更佳效能與進行第三方整合。"
 
 #: ../../docs/about/list_of_features.rst:328
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
-msgstr ""
+msgstr "若要撰寫遊戲腳本邏輯，則建議在效能允許的情況下使用 GDScript 或 C#。"
 
 #: ../../docs/about/list_of_features.rst:331
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "官方支援的 C 與 C++ 繫結。"
 
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "可依照需求使用任何建構系統與語言功能。"
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
-msgstr ""
+msgstr "由社群維護的 D, Kotlin, Python, Nim 與 Rust 繫結。"
 
 #: ../../docs/about/list_of_features.rst:338
 #: ../../docs/about/docs_changelog.rst:28
@@ -2207,195 +2205,190 @@ msgstr "音訊"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "單聲道、立體聲、5.1 與 7.1 輸出。"
 
 #: ../../docs/about/list_of_features.rst:343
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "在 2D 與 3D 空間中的非位置性與位置性播放。"
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "在 2D 與 3D 中提供可選的都卜勒效應。"
 
 #: ../../docs/about/list_of_features.rst:347
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
+"支援可重新導向的 :ref:`音訊匯流排 <doc_audio_buses>` 與特效，並包含數十種特"
+"效。"
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
-msgstr ""
+msgstr "Listener3D 節點可用於在 3D 空間中以與相機的位置進行監聽。"
 
 #: ../../docs/about/list_of_features.rst:350
 msgid "Audio input to record microphones."
-msgstr ""
+msgstr "可通過錄製麥克風來進行音訊輸入。"
 
 #: ../../docs/about/list_of_features.rst:351
 msgid "MIDI input."
-msgstr ""
+msgstr "MIDI 輸入。"
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "尚未支援 MIDI 輸出。"
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**所用 API:**"
 
 #: ../../docs/about/list_of_features.rst:357
-#, fuzzy
 msgid "*Windows:* WASAPI."
-msgstr "\\ **Windows**"
+msgstr "**Windows:** WASAPI。"
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "**macOS:** CoreAudio。"
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio 或 ALSA。"
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
 msgstr "匯入"
 
 #: ../../docs/about/list_of_features.rst:364
-#, fuzzy
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ":ref:`自定型別 <doc_making_plugins>`"
+msgstr "支援 :ref:`自定匯入外掛 <doc_import_plugins>` 。"
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "**Formats:**"
-msgstr "格式"
+msgstr "**格式:**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "**遊戲主機：** 請參閱 :ref:`doc_consoles`"
+msgstr "**圖片:** 請參閱 :ref:`doc_import_images` 。"
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "音訊"
+msgstr "**音訊:**"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "WAV，可選擇是否使用 IMA-ADPCM 壓縮。"
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis。"
 
 #: ../../docs/about/list_of_features.rst:374
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "場景"
+msgstr "**3D 場景:**"
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 **(推薦)** 。"
 
 #: ../../docs/about/list_of_features.rst:377
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (直接從 "
+"Blender 中匯出)。"
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (實驗性)。"
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)。"
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
-msgstr ""
+msgstr "Wavefront OBJ (僅可使用靜態場景，可直接載入為網格)。"
 
 #: ../../docs/about/list_of_features.rst:384
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "輸入"
 
 #: ../../docs/about/list_of_features.rst:386
 msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
-msgstr ""
+msgstr "使用硬式編碼的輸入事件或可重新映射的輸入操作來進行輸入映射。"
 
 #: ../../docs/about/list_of_features.rst:388
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
-msgstr ""
+msgstr "座標軸數值可映射至兩個不同的操作，並配有可設定的反應區域。"
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "使用同一個程式碼來同時支援鍵盤與遊戲控制器。"
 
 #: ../../docs/about/list_of_features.rst:391
-#, fuzzy
 msgid "Keyboard input."
-msgstr "鍵盤快捷鍵"
+msgstr "鍵盤輸入。"
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
-msgstr ""
+msgstr "可將按鍵以「物理模式」進行映射，以避免因鍵盤配置不同而影響映射。"
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
-msgstr ""
+msgstr "滑鼠輸入。"
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
-msgstr ""
+msgstr "可將滑鼠遊標設為可見、隱藏、捕捉、或限制於視窗內。"
 
 #: ../../docs/about/list_of_features.rst:398
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"捕捉滑鼠輸入時，在 Windows 與 Linux 上會使用原始輸入，以繞過作業系統的滑鼠加"
+"速設定。"
 
 #: ../../docs/about/list_of_features.rst:401
 msgid "Gamepad input (up to 8 simulatenous controllers)."
-msgstr ""
+msgstr "遊戲控制器輸入 (同時支援最多 8 組控制器)。"
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "具有感壓支援的繪圖筆／繪圖板輸入。"
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "導航模式"
+msgstr "導航"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "2D 與 3D 的 A* 演算法。"
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "導航模式"
+msgstr "導航網格"
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr ""
+msgstr "預計於 Godot 4.0 中支援動態障礙躲避。"
 
 #: ../../docs/about/list_of_features.rst:410
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "在編輯器中產生導航網格。"
 
 #: ../../docs/about/list_of_features.rst:413
 #: ../../docs/about/docs_changelog.rst:60
@@ -2405,49 +2398,49 @@ msgstr "網路"
 
 #: ../../docs/about/list_of_features.rst:415
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "使用 StreamPeer 與 TCP_Server 來操作低階 TCP 網路。"
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "使用 PacketPeer 與 UDPServer 來操作低階 UDP 網路。"
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "使用 HTTPClient 來傳送低階 HTTP 請求。"
 
 #: ../../docs/about/list_of_features.rst:418
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "使用 HTTPRequest 來傳送高階 HTTP 請求。"
 
 #: ../../docs/about/list_of_features.rst:420
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "支援 HTTPS，使用內建附帶的憑證。"
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr ""
+msgstr "使用 UDP 與 ENet 來支援高階多玩家 API。"
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "通過遠端程序呼叫 (RPC) 來自動複製。"
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "支援不可靠、可靠、與有序的傳輸模式。"
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "在所有平台上均配有 WebSocket 用戶端與伺服器。"
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "在所有平台上均配有 WebRTC 用戶端與伺服器。"
 
 #: ../../docs/about/list_of_features.rst:429
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
-msgstr ""
+msgstr "支援在 NAT 下架設伺服器時通過 UPnP 來繞過需要連接埠轉發的需求。"
 
 #: ../../docs/about/list_of_features.rst:433
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
@@ -2456,250 +2449,250 @@ msgstr "國際化"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "完整支援包含 Emoji 在內的 Unicode。"
 
 #: ../../docs/about/list_of_features.rst:436
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
+"將本地化字串儲存於 :ref:`CSV <doc_internationalizing_games>` 或 :ref:"
+"`gettext <doc_localization_using_gettext>` 格式。"
 
 #: ../../docs/about/list_of_features.rst:438
 msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
-msgstr ""
+msgstr "可在 GUI 元素中自動使用專案中的本地化字串，亦可使用 ``tr()`` 函式。"
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
 "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
-msgstr ""
+msgstr "預計於 Godot 4.0 中支援 RTL 文字模式與文字形狀。"
 
 #: ../../docs/about/list_of_features.rst:443
 msgid "Windowing and OS integration"
-msgstr ""
+msgstr "視窗環境與作業系統整合"
 
 #: ../../docs/about/list_of_features.rst:445
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
-msgstr ""
+msgstr "移動、縮放、最小化與最大化由專案產生的視窗。"
 
 #: ../../docs/about/list_of_features.rst:446
-#, fuzzy
 msgid "Change the window title and icon."
-msgstr "更改檔案圖示"
+msgstr "更改視窗標題與圖示。"
 
 #: ../../docs/about/list_of_features.rst:447
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
-msgstr ""
+msgstr "喚起注意 (在大多數平台上，會使標題列閃爍)。"
 
 #: ../../docs/about/list_of_features.rst:448
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "指定全螢幕模式。"
+msgstr "全螢幕模式。"
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
 "Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
 "this way. Use a Viewport with a different resolution instead."
 msgstr ""
+"不使用獨立的全螢幕，因此在該模式下無法更改螢幕解析度。可使用 Viewport 來設定"
+"不同的解析度。"
 
 #: ../../docs/about/list_of_features.rst:453
 msgid "Borderless window (fullscreen or non-fullscreen)."
-msgstr ""
+msgstr "無邊框視窗 (可用於全螢幕或非全螢幕)。"
 
 #: ../../docs/about/list_of_features.rst:454
 msgid "Ability to keep the window always on top."
-msgstr ""
+msgstr "可將視窗設為總是在最頂端。"
 
 #: ../../docs/about/list_of_features.rst:455
 msgid "Transparent window with per-pixel transparency."
-msgstr ""
+msgstr "透明視窗，可做到每個像素點都為透明。"
 
 #: ../../docs/about/list_of_features.rst:456
 msgid "Global menu integration on macOS."
-msgstr ""
+msgstr "在 macOS 中可整合全域選單。"
 
 #: ../../docs/about/list_of_features.rst:457
 msgid "Execute commands in a blocking or non-blocking manner."
-msgstr ""
+msgstr "阻斷式或非阻斷式地執行指令。"
 
 #: ../../docs/about/list_of_features.rst:458
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
 "registered on the system)."
 msgstr ""
+"使用預設或 (系統中有註冊時) 自定的通訊協定處理常式來開啟檔案路徑或網址。"
 
 #: ../../docs/about/list_of_features.rst:459
 msgid "Parse custom command line arguments."
-msgstr ""
+msgstr "解析自定命令行引數。"
 
 #: ../../docs/about/list_of_features.rst:462
-#, fuzzy
 msgid "Mobile"
-msgstr "在行動平台上"
+msgstr "行動平台"
 
 #: ../../docs/about/list_of_features.rst:464
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "支援 iOS 與 Android 的內購功能。"
 
 #: ../../docs/about/list_of_features.rst:465
 msgid "Support for advertisements using third-party modules."
-msgstr ""
+msgstr "支援以第三方模組來顯示廣告。"
 
 #: ../../docs/about/list_of_features.rst:468
 msgid "XR support (AR and VR)"
-msgstr ""
+msgstr "支援 XR (AR 與 VR)"
 
 #: ../../docs/about/list_of_features.rst:470
 msgid "Support for ARKit on iOS out of the box."
-msgstr ""
+msgstr "開箱即用支援 iOS 上的 ARKit。"
 
 #: ../../docs/about/list_of_features.rst:471
 msgid "Support for the OpenXR and OpenVR APIs."
-msgstr ""
+msgstr "支援 OpenXR 與 OpenVR API。"
 
 #: ../../docs/about/list_of_features.rst:472
 msgid ""
 "Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
 "to plugins."
-msgstr ""
+msgstr "通過外掛，可支援主流 VR 頭戴式裝置，如 Oculus Quest 與 HTC Vive。"
 
 #: ../../docs/about/list_of_features.rst:475
-#, fuzzy
 msgid "GUI system"
-msgstr "檔案系統"
+msgstr "GUI 圖形界面系統"
 
 #: ../../docs/about/list_of_features.rst:477
 msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
+"Godot 的 GUI 時使用在 Godot 中製作遊戲相同的 Control 節點製成的。編輯器的 UI "
+"可通過擴充套件來輕鬆擴充。"
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "節點"
+msgstr "**節點:**"
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "Buttons."
-msgstr "按鈕"
+msgstr "按鈕。"
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Checkboxes, check buttons, radio buttons."
-msgstr ""
+msgstr "勾選框、勾選按鈕、單選按鈕。"
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
-msgstr ""
+msgstr "使用 LineEdit (單行) 與 TextEdit (多行) 來加上文字輸入框。"
 
 #: ../../docs/about/list_of_features.rst:485
 msgid "Dropdown menus using PopupMenu and OptionButton."
-msgstr ""
+msgstr "使用 PopupMenu 與 OptionButton 來製作下拉選單。"
 
 #: ../../docs/about/list_of_features.rst:486
 msgid "Scrollbars."
-msgstr ""
+msgstr "滾動條。"
 
 #: ../../docs/about/list_of_features.rst:487
-#, fuzzy
 msgid "Labels."
-msgstr "標籤"
+msgstr "標籤。"
 
 #: ../../docs/about/list_of_features.rst:488
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+"使用 RichTextLabel 來顯示 :ref:`使用 BBCode 格式化的文字 "
+"<doc_bbcode_in_richtextlabel>` 。"
 
 #: ../../docs/about/list_of_features.rst:489
 msgid "Trees (can also be used to represent tables)."
-msgstr ""
+msgstr "樹狀圖 (也可以用於顯示表格)。"
 
 #: ../../docs/about/list_of_features.rst:490
 msgid ""
 "Containers (horizontal, vertical, grid, center, margin, draggable "
 "splitter, ...)."
-msgstr ""
+msgstr "Container (水平、垂直、網格、置中、可拖曳的分割線…等)。"
 
 #: ../../docs/about/list_of_features.rst:491
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "Control 節點可旋轉與縮放。"
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**調整大小:**"
 
 #: ../../docs/about/list_of_features.rst:495
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
-msgstr ""
+msgstr "通過錨點 (Anchor) 來將 GUI 元素置於特定的角落、邊緣或置中。"
 
 #: ../../docs/about/list_of_features.rst:496
-#, fuzzy
 msgid "Containers to place GUI elements automatically following certain rules."
-msgstr "新增容器來自動擺放 UI 元素"
+msgstr "通過容器 (Container) 來依照特定規則自動擺放 GUI 元素。"
 
 #: ../../docs/about/list_of_features.rst:498
-#, fuzzy
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Stack <class_BoxContainer>` 配置。"
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`int <class_int>`"
+msgstr ":ref:`Grid <class_GridContainer>` 配置。"
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 msgstr ""
+":ref:`外邊距 <class_MarginContainer>` 與 :ref:`置中 <class_CenterContainer>` "
+"配置。"
 
 #: ../../docs/about/list_of_features.rst:502
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
-msgstr ""
+msgstr ":ref:`可拖曳的分割區域 <class_SplitContainer>` 配置。"
 
 #: ../../docs/about/list_of_features.rst:504
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
-msgstr ""
+msgstr "可通過 ``2D`` 或 ``Viewport`` 伸縮模式來縮放至不同的解析度。"
 
 #: ../../docs/about/list_of_features.rst:505
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
-msgstr ""
+msgstr "通過錨定與 ``Expand`` 伸縮模式來支援任何長寬比。"
 
 #: ../../docs/about/list_of_features.rst:507
 msgid "**Theming:**"
-msgstr ""
+msgstr "**佈景主題:**"
 
 #: ../../docs/about/list_of_features.rst:509
-#, fuzzy
 msgid "Built-in theme editor."
-msgstr "執行編輯器"
+msgstr "內建主題編輯器。"
 
 #: ../../docs/about/list_of_features.rst:511
 msgid "Generate a theme based on the current editor theme settings."
-msgstr ""
+msgstr "通過目前的編輯器佈景主題設定來產生佈景主題。"
 
 #: ../../docs/about/list_of_features.rst:513
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
-msgstr ""
+msgstr "使用 :ref:`class_StyleBoxFlat` 來製作基於向量的佈景主題。"
 
 #: ../../docs/about/list_of_features.rst:515
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
-msgstr ""
+msgstr "支援圓角與斜角、陰影，與每個邊都可調整的寬度。"
 
 #: ../../docs/about/list_of_features.rst:517
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr ""
+msgstr "通過 :ref:`class_StyleBoxTexture` 來以紋理製作佈景。"
 
 #: ../../docs/about/list_of_features.rst:519
 msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
-msgstr ""
+msgstr "Godot 的小型發行版大小適合用於作為 Electron 或 Qt 的替代方案。"
 
 #: ../../docs/about/list_of_features.rst:523
 #: ../../docs/about/docs_changelog.rst:153
@@ -2711,26 +2704,25 @@ msgstr "動畫"
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Direct kinematics and inverse kinematics."
-msgstr ""
+msgstr "正向運動學與反向運動學。"
 
 #: ../../docs/about/list_of_features.rst:526
 msgid "Support for animating any property with customizable interpolation."
-msgstr ""
+msgstr "支援以可客製化的插值算法來動畫化任何屬性。"
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "Support for calling methods in animation tracks."
-msgstr ""
+msgstr "支援在動畫軌中呼叫方法。"
 
 #: ../../docs/about/list_of_features.rst:528
 msgid "Support for playing sounds in animation tracks."
-msgstr ""
+msgstr "支援在動畫軌中播放聲音。"
 
 #: ../../docs/about/list_of_features.rst:529
 msgid "Support for Bézier curves in animation."
-msgstr ""
+msgstr "支援在動畫中使用貝茲曲線。"
 
 #: ../../docs/about/list_of_features.rst:532
-#, fuzzy
 msgid "Formats"
 msgstr "格式"
 
@@ -2738,41 +2730,41 @@ msgstr "格式"
 msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
-msgstr ""
+msgstr "場景與資源可保存為 :ref:`文字檔 <doc_tscn_file_format>` 或二進位格式。"
 
 #: ../../docs/about/list_of_features.rst:536
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
-msgstr ""
+msgstr "文字檔為人類可讀取的格式，並較適合用於版本控制系統。"
 
 #: ../../docs/about/list_of_features.rst:537
 msgid "Binary formats are faster to save/load for large scenes/resources."
-msgstr ""
+msgstr "二進位檔案在保存與讀取大型場景或資源時較快。"
 
 #: ../../docs/about/list_of_features.rst:539
 msgid "Read and write text or binary files using :ref:`class_File`."
-msgstr ""
+msgstr "使用 :ref:`class_File` 來讀取與寫入二進位檔案。"
 
 #: ../../docs/about/list_of_features.rst:541
 msgid "Can optionally be compressed or encrypted."
-msgstr ""
+msgstr "可使用可選的壓縮或加密。"
 
 #: ../../docs/about/list_of_features.rst:543
 msgid "Read and write :ref:`class_JSON` files."
-msgstr ""
+msgstr "可讀寫 :ref:`class_JSON` 檔案。"
 
 #: ../../docs/about/list_of_features.rst:544
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
-msgstr ""
+msgstr "可通過 :ref:`class_ConfigFile` 來讀寫 INI 格式的組態設定檔。"
 
 #: ../../docs/about/list_of_features.rst:546
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
-msgstr ""
+msgstr "可串聯化或反串聯化任何 Godot 資料型別，包含 Vector, Color…等。"
 
 #: ../../docs/about/list_of_features.rst:548
 msgid "Read XML files using :ref:`class_XMLParser`."
-msgstr ""
+msgstr "可通過 :ref:`class_XMLParser` 來讀取 XML 檔案。"
 
 #: ../../docs/about/list_of_features.rst:549
 msgid ""
@@ -2780,12 +2772,16 @@ msgid ""
 "into a ZIP archive, or directly into the executable for single-file "
 "distribution."
 msgstr ""
+"可將遊戲資料打包進 PCK 檔案 (可更快讀取的客製化格式)，或是打包進 ZIP 壓縮檔，"
+"亦或是直接打包進執行檔內來發佈單一檔案。"
 
 #: ../../docs/about/list_of_features.rst:551
 msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
+":ref:`匯出額外的 PCK 檔案 <doc_exporting_pcks>` ，可讓引擎讀取，並用於支援 "
+"Mod 或 DLC。"
 
 #: ../../docs/about/list_of_features.rst:555
 #: ../../docs/about/docs_changelog.rst:206
@@ -2798,37 +2794,42 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
+":ref:`低階伺服器存取 <doc_using_servers>` 可在需要時繞過場景樹的一些瓶頸。"
 
 #: ../../docs/about/list_of_features.rst:559
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "命令行教學"
+msgstr "可用於自動化的命令行介面。"
 
 #: ../../docs/about/list_of_features.rst:561
 msgid "Export and deploy projects using continuous integration platforms."
-msgstr ""
+msgstr "通過持續整合 (CI, Continuous Integration) 平台來匯出與部署專案。"
 
 #: ../../docs/about/list_of_features.rst:562
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
+"可用於 Bash, ZSH 與 Fish 的 `自動補全腳本 <https://github.com/godotengine/"
+"godot/tree/master/misc/dist/shell>`__ 。"
 
 #: ../../docs/about/list_of_features.rst:565
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
+"支援將 :ref:`C++ 模組 <doc_custom_modules_in_c++>` 靜態鏈接到引擎二進位檔中。"
 
 #: ../../docs/about/list_of_features.rst:567
 msgid "Engine and editor written in C++03."
-msgstr ""
+msgstr "引擎與編輯器以 C++03 撰寫。"
 
 #: ../../docs/about/list_of_features.rst:569
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
+"可通過 GCC, Clang 與 MSVC 進行 :ref:`編譯 "
+"<doc_introduction_to_the_buildsystem>` 。亦支援 MinGW。"
 
 #: ../../docs/about/list_of_features.rst:571
 msgid ""
@@ -2836,20 +2837,22 @@ msgid ""
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
+"對打包者友好。在大多數情況下，都可使用系統函式庫來代替 Godot 中提供的函式庫。"
+"建構系統不需要額外下載任何東西。建置過程完全可重現。"
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Godot 4.0 will be written in C++17."
-msgstr ""
+msgstr "Godot 4.0 會使用 C++ 17 來撰寫。"
 
 #: ../../docs/about/list_of_features.rst:576
 msgid "Licensed under the permissive MIT license."
-msgstr ""
+msgstr "以鬆散的 MIT 授權條款授權。"
 
 #: ../../docs/about/list_of_features.rst:578
 msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
-msgstr ""
+msgstr "開放的開發過程，且 :ref:`歡迎參與貢獻 <doc_ways_to_contribute>` 。"
 
 #: ../../docs/about/list_of_features.rst:582
 #: ../../docs/about/release_policy.rst:82
@@ -3513,12 +3516,9 @@ msgstr ""
 "入門 Godot 所需要的東西。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
-#, fuzzy
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
-msgstr ""
-"如果您使用的是Blender，請查看我們自己的`Better Collada Exporter <https://"
-"godotengine.org/download>`_。"
+msgstr "可以 `從此處下載 Godot Engine <https://godotengine.org/download/>`_ 。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -3969,7 +3969,6 @@ msgstr ""
 "點的子節點，在空白的場景中則會新增為「根」節點。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
-#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -3996,7 +3995,6 @@ msgstr ""
 "Control 或 Node2D 作為根節點。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
-#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Other Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "
@@ -4331,7 +4329,6 @@ msgstr ""
 "剛才保存的場景所產生，所以我們對那個場景的改動都會反映到實體上。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -4342,8 +4339,8 @@ msgid ""
 msgstr ""
 "也可以調整個別的實體。我們先把反彈值跳回 ``0`` ，然後回到 ``Main`` 場景選擇其"
 "中一個球的實體。由於一些如 ``PhysicsMaterial`` 的資源在各個實體之間是共用的，"
-"所以我們要讓這個實體變成獨立的。點擊下拉箭頭，然後選擇 [獨立化]。再來把 "
-"``Bounce`` 改成 ``1`` 然後按 [執行]。"
+"所以我們要讓這個實體變成獨立的。點擊屬性面板右上角的工具按鈕，然後選擇 [獨立"
+"化子資源]。再來把 ``Bounce`` 改成 ``1`` 然後按 [執行]。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""
@@ -4792,15 +4789,15 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "撰寫能夠存取場景中其他節點的腳本。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"在這之前，請記得要先閱讀 :ref:`GDScript<doc_gdscript>` 參考手冊。GDScript 被"
-"設計得很簡單，而且這個參考手冊很短，所以應該只需要幾分鐘就能掌握基本概念。"
+"在這之前，請記得要先閱讀 :ref:`GDScript<doc_gdscript>` 參考手冊並將 GDScript "
+"頁面加到瀏覽器書籤內。GDScript 被設計得很簡單，而且這個參考手冊被區分成了多個"
+"段落，能夠很容易掌握各種概念。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -4814,6 +4811,8 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"若上一個教學中的「實體化」專案還開著的話，請先關閉該專案 ([專案] -> [退出至專"
+"案列表]) 並建立新專案。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -5078,14 +5077,13 @@ msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "另外，也請記得參照的是節點名稱而不是型別。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:336
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"連接對話框中右邊的面板中可以用來將特定數值對應成函式參數，可以新增或移除不同"
-"型別的數值。"
+"連接對話框中的「進階」面板中可用來將特定數值對應成函式參數，可以新增或移除不"
+"同型別的數值。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid ""
@@ -6604,7 +6602,6 @@ msgstr ""
 "``MobPath`` 。之後當選擇 ``Path2D`` 的時候，編輯器上方會出現一些新的按鈕："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:705
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -6612,9 +6609,9 @@ msgid ""
 "be found to the left of the \"Lock\" button, appearing as a magnet next to "
 "some dots and intersecting lines, respectively."
 msgstr ""
-"選擇中間的按鈕（「新增控制點」），並在顯示的轉角處新增控制點，點擊各個角落來"
-"繪製路徑。要將控制點吸附到網格上，必須確保「使用網格吸附」選項有開啟。吸附選"
-"項在「鎖定」按鈕的左邊，顯示的圖示是一個磁鐵跟幾個相交的線。"
+"選擇中間的按鈕 (「新增控制點」)，然後點擊顯示的轉角處來新增控制點並繪製路徑。"
+"若要將控制點吸附到網格上，請開啟「使用網格吸附」與「使用吸附」選項，這兩個選"
+"項在「鎖定」按鈕的左邊，顯示的圖示是一個磁鐵跟幾條相交的線。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:713
 msgid ""
@@ -8290,7 +8287,6 @@ msgid "TextureButton"
 msgstr "\\ TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -8298,11 +8294,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** 類似 TextureRect，不同的地方是 TextureButton 有五個紋理貼圖"
-"欄位：每個按鈕的狀態都有一個貼圖。大多數情況下，會使用到 Normal（正常）、"
-"Pressed（按下）、與 Hover（懸浮）的貼圖。Focused（聚焦）適用於會監聽鍵盤事件"
-"的界面。第六個圖片欄位為 Click Mask（點擊遮色片），可使用 1-Bit 的純黑白圖片"
-"來定義可點擊的區域。"
+"**TextureButton** 類似 TextureRect，不同的地方是 TextureButton 有六個紋理貼圖"
+"欄位，每個按鈕的狀態都有一個貼圖。大多數情況下，會使用到 Normal (正常)、"
+"Pressed (按下) 與 Hover (懸停) 的貼圖。Focused (聚焦) 適用於會監聽鍵盤事件的"
+"界面。第六個圖片欄位為 Click Mask (點擊遮色片)，可使用 1-Bit 的純黑白圖片來定"
+"義可點擊的區域。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -8987,12 +8983,16 @@ msgid ""
 "editor then change **Display > Window > Size > Width** to ``1366`` and "
 "**Display > Window > Size > Height** to ``768``."
 msgstr ""
+"本教學中的視窗大小為 1366×768。若要修改專案的基本視窗大小，請從編輯器上方開"
+"啟 **[專案] > [專案設定]** 並更改 **Display (顯示) > Window (視窗) > Size (大"
+"小) > Width (寬度)** 為 ``1366`` ，以及將 **Display (顯示) > Window (視窗) > "
+"Size (大小) > Height (高度)** 更改為 ``768`` 。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:130
 msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
-msgstr ""
+msgstr "若沒有修改視窗大小，則使用錨點與容器的結果可能會不如預期。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
 msgid ""
@@ -9889,7 +9889,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "雖然節點錨定到整個背景了，但位置還不正確"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -9898,12 +9897,11 @@ msgid ""
 "``Background`` and the text."
 msgstr ""
 "接著我們要修改 ``Number`` 的對齊屬性來把它移動到 ``Background`` 的左邊中間。"
-"選擇 ``Number`` 節點，並修改 ``Align`` 屬性為 Left（左）， ``Valign`` 屬性為 "
-"Center（中）。接著將左側邊緣的大小修改一點點來給 ``Background`` 與文字中間加"
-"一點留白。"
+"選擇 ``Number`` 節點，並修改 ``Align`` 屬性為 Left (左)， ``Valign`` 屬性為 "
+"Center (中)。接著增加左側邊緣的大小點來給 ``Background`` 與文字中間加一點留"
+"白。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-#, fuzzy
 msgid "The Number node aligned to the left and center"
 msgstr "Number 節點現在對齊在左邊中間了"
 
@@ -12561,7 +12559,6 @@ msgstr ""
 "料很麻煩，而且可能會拖慢速度。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -12579,26 +12576,22 @@ msgid "Using this concept, you can create objects that:"
 msgstr "利用這個概念，我們可以做出像這樣的物件："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
-msgstr "隨時都保持載入狀態，不論現在執行的是哪個場景"
+msgstr "隨時都保持載入狀態，不論現在執行的是哪個場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "可以保存全域變數，如玩家的資訊"
+msgstr "可以保存全域變數，如玩家的資訊。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "可以處理場景的切換以及場景間的轉場效果"
+msgstr "可以處理場景的切換以及場景間的轉場效果。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
-msgstr "行為類似單例模式，GDScript 在設計上不支援全域變數"
+msgstr "**行為** 類似單例模式，只是 GDScript 在設計上不支援全域變數。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -12610,6 +12603,8 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot 不會依照單例設計模式將 AutoLoad 變成「真正」的單例。如果使用者需要的"
+"話，依然可以實體化多次 AutoLoad。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -12619,27 +12614,24 @@ msgstr "Autoload"
 msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
-msgstr ""
+msgstr "可以通過建立 AutoLoad 來載入從 :ref:`class_Node` 繼承來的場景或腳本。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-"我們可以使用 Autoload 來從繼承了 :ref:`Node <class_Node>` 的腳本載入場景或腳"
-"本。請注意：自動載入腳本時會建立一個節點，而載入的腳本會被附加在上面。這個節"
-"點將會在其他場景載入前被新增到根檢視區上。"
+"當 Autoload 腳本時，會新增一個 :ref:`class_Node` 並將該腳本附加到 Node 上。這"
+"個節點會在其他場景載入前被新增到根檢視區上。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"要自動載入場景或腳本，請從選單中選擇 ``專案 -> 專案設定`` 然後切換到"
-"「AutoLoad」分頁。"
+"要自動載入場景或腳本，請從選單中選擇 **[專案] -> [專案設定]** 然後切換到 "
+"**[AutoLoad]** 分頁。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
 msgid ""
@@ -12660,13 +12652,12 @@ msgstr ""
 "這表示，所有的節點都可以通過下列方式來存取名為「PlayerVariables」的單例："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"若有勾選「Enable」（啟用）欄位（預設為 ``true`` ），則就可以直接這樣存取單"
-"例："
+"若有勾選「Enable」(啟用) 欄位 (預設就有勾選)，則就可以直接這樣存取單例而不需"
+"使用 ``get_node()``："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
@@ -12682,7 +12673,6 @@ msgid "Custom scene switcher"
 msgstr "自製場景切換器"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -12692,8 +12682,9 @@ msgid ""
 msgstr ""
 "這篇教學展示了如何使用 Autoload 來製作場景切換器。如果只需要做基本的場景切"
 "換，可以使用 :ref:`SceneTree.change_scene() "
-"<class_SceneTree_method_change_scene>` 方法（詳細請參考 :ref:"
-"`doc_scene_tree` ）。若在切換場景時需要更複雜的行為，則這個方法就有更多功能。"
+"<class_SceneTree_method_change_scene>` 方法 (詳細請參考 :ref:"
+"`doc_scene_tree` )。但若在切換場景時需要更複雜的行為，則這個方法就有更多功"
+"能。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid ""
@@ -12719,24 +12710,23 @@ msgid "Global.gd"
 msgstr "\\ Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"切換到「腳本」分頁並建立名為 Global.gd 的腳本。請確認該腳本有繼承 ``Node`` ："
+"切換到 **[腳本]** 分頁並建立名為 ``Global.gd`` 的腳本。請確認該腳本有繼承 "
+"``Node`` ："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
 "the script by clicking the browse button or typing its path: ``res://Global."
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
-"下一個步驟就是將這個腳本新增至 Autoload 列表中。從選單中打開 ``專案 > 專案設"
-"定`` ，然後切換到「AutoLoad」分頁，並按瀏覽按鈕來選擇腳本，也可以直接輸入路"
-"徑： ``res://Global.gd`` 。按「新增」來加入至 Autoload 列表："
+"下一個步驟就是將這個腳本新增至 Autoload 列表中。從選單中打開 **[專案] > [專案"
+"設定]** ，然後切換到 **[AutoLoad]** 分頁，並點擊瀏覽按鈕來選擇腳本，也可以直"
+"接輸入路徑： ``res://Global.gd`` 。點擊 **[新增]** 來加入至 Autoload 列表："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -12745,15 +12735,14 @@ msgid ""
 msgstr "現在，無論正在執行專案中的哪個場景，這個腳本都會被載入。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
 "``Global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
-"回到腳本中，我們現在需要讓腳本在 `_fetch()` 中取得目前的場景。目前的場景（只"
-"有一個按鈕的那個）以及 ``global.gd`` 都是在根上的子節點，但 Autoload 的節點總"
+"回到腳本中，我們現在需要讓腳本在 `_ready()` 中取得目前的場景。目前的場景 (只"
+"有一個按鈕的那個) 以及 ``Global.gd`` 都是在根上的子節點，但 Autoload 的節點總"
 "是優先載入的。這表示根上的最後一個子節點永遠為目前載入的場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
@@ -12793,7 +12782,6 @@ msgid ""
 msgstr "執行專案並測試看看按按鈕來切換場景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
@@ -12802,7 +12790,7 @@ msgid ""
 msgstr ""
 "請注意：當場景很小時，場景過場會馬上發生。但若場景很複雜，就可能會出現有體感"
 "的等待時間。要瞭解如何處理這個問題，請參考下一個教學： :ref:"
-"`doc_background_loading`"
+"`doc_background_loading` 。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -12812,6 +12800,9 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"另外，若載入時間沒有很長的話 (如小於 3 秒等)，也可以在場景更改前顯示一些 2D "
+"元素來製造出「載入磚 (Loading Plaque)」的效果。場景更改完後就可以將這些元素隱"
+"藏起來。這種做法可以用來讓玩家知道場景正在載入。"
 
 #: ../../docs/getting_started/editor/index.rst:3
 msgid "Editor manual"
@@ -13346,19 +13337,18 @@ msgstr ""
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid "``--export-pack <preset> <path>``"
-msgstr "``--export <target>``"
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"與 ``--export`` 相同，但使用除錯樣板（必須啟用 :ref:`工具 "
-"<doc_introduction_to_the_buildsystem_tools>` ）。"
+"與 ``--export`` 相同，但會使用給定的預設設定來匯出遊戲打包。會依照 <path> 的"
+"副檔名來判斷匯出的格式是 PCK 還是 ZIP。(必須啟用 :ref:`工具 "
+"<doc_introduction_to_the_buildsystem_tools>` )。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -13519,6 +13509,9 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"如果只要匯出 PCK 檔案，可以將 ``--export`` 改成 ``--export-pack`` 選項，然後"
+"接上匯出預設設定的名稱與輸出路徑，並加上副檔名。輸出路徑的副檔名是依據套件格"
+"式判斷的，必須為 PCK 或 ZIP 其一。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:285
 msgid "Running a script"
@@ -17826,9 +17819,8 @@ msgid "Base 10 integer"
 msgstr "10 進位整數"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
-#, fuzzy
 msgid "``0x8f51``"
-msgstr "``0x8F51``"
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "Base 16 (hexadecimal) integer"
@@ -17887,6 +17879,8 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
+"整數與浮點數可以用 ``_`` 來分隔數字，讓數字的可讀性更高。下列這些數字格式都是"
+"有效的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:311
 msgid "Comments"
@@ -17974,116 +17968,112 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
-"`Unicode 格式 <https://zh.wikipedia.org/zh-tw/Unicode>`_ 的字串。字串可以包"
-"含 `標準 C 語言逸出順序（英語） <https://en.wikipedia.org/wiki/"
-"Escape_sequences_in_C>`_ 。GDScript 也支援 :ref:`doc_gdscript_printf`。"
+"`Unicode 格式 <https://zh.wikipedia.org/zh-tw/Unicode>`_ 的字串。字串可以包含"
+"下列逸出序列："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
-#, fuzzy
 msgid "**Escape sequence**"
-msgstr "逸出序列"
+msgstr "**逸出序列**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
 msgid "**Expands to**"
-msgstr ""
+msgstr "**會被解析為**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "Newline (line feed)"
-msgstr ""
+msgstr "換行 (LF)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "Horizontal tab character"
-msgstr ""
+msgstr "水平 TAB 字元"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Carriage return"
-msgstr ""
+msgstr "歸位字元"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Alert (beep/bell)"
-msgstr ""
+msgstr "警告 (警示嗶聲/鈴聲)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "Backspace"
-msgstr ""
+msgstr "退格鍵"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Formfeed page break"
-msgstr ""
+msgstr "Formfeed 分頁字元"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "Vertical tab character"
-msgstr ""
+msgstr "縱向 TAB 字元"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "Double quote"
-msgstr ""
+msgstr "雙引號"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
-#, fuzzy
 msgid "Single quote"
-msgstr "單例"
+msgstr "單引號"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "Backslash"
-msgstr ""
+msgstr "反斜線"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
+msgstr "Unicode 字碼指標 ``XXXX`` (16進位，不區分大小寫)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:394
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
-msgstr ""
+msgstr "GDScript 亦支援 :ref:`doc_gdscript_printf` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:397
 msgid "Vector built-in types"
@@ -19164,7 +19154,6 @@ msgid "Memory management"
 msgstr "記憶體管理"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1322
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -19174,11 +19163,11 @@ msgid ""
 "reference cycles that can't be freed, a ``weakref`` function is provided for "
 "creating weak references."
 msgstr ""
-"若類別繼承自 :ref:`class_reference` ，則類別的實體會在不再被使用時釋放。"
+"若類別繼承自 :ref:`class_Reference` ，則類別的實體會在不再被使用時釋放。"
 "GDScript 中沒有記憶體回收行程，而只使用參照計數。預設情況下，所有未定義繼承的"
 "類別都會繼承 **Reference** 。若不想繼承 Reference，則類別必須手動繼承 :ref:"
-"`class_Object` 並呼叫 instance.free() 。要避免無法被釋放的參照循環，可使用 "
-"``weakref`` 方法來建立弱參照。"
+"`class_Object` 並呼叫 ``instance.free()`` 。要避免無法被釋放的參照循環，可使"
+"用 ``weakref`` 方法來建立弱參照。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1330
 msgid ""
@@ -19978,26 +19967,24 @@ msgid "Exporting bit flags"
 msgstr "匯出位元旗標"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
 "can be set from the editor::"
 msgstr ""
-"作為位元旗標的整數可以在單一屬性內除錯多個 ``true``/``false`` (布林) 值。只需"
-"要使用匯出提示 ``int, FLAGS`` 就可以在編輯器中設定："
+"作為位元旗標的整數可以在單一屬性內儲存多個 ``true``/``false`` (布林) 值。只需"
+"要使用匯出提示 ``int, FLAGS, …`` 就可以在編輯器中設定："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"在這個例子中， ``Fire`` 的值為 1， ``Water`` 為 2， ``Earth`` 為 4 而 "
-"``Wind`` 則為 8。通常必須定義對應的常數 (如： ``const ELEMENT_WIND = 8`` "
-"等)。"
+"必須為每個旗標提供說明字串。在這個例子中， ``Fire`` 的值為 1， ``Water`` 為 "
+"2， ``Earth`` 為 4 而 ``Wind`` 則為 8。通常必須定義對應的常數 (如： ``const "
+"ELEMENT_WIND = 8`` 等)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
@@ -20006,11 +19993,10 @@ msgid ""
 msgstr "匯出提示在專案設定中也定義了物理與算繪層："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
-msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該匯出布林變數。"
+msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該使用布林變數。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
@@ -20019,7 +20005,7 @@ msgstr "匯出陣列"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
-msgstr ""
+msgstr "可以在匯出的陣列中使用初始設定式，但只能使用常數運算式。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
@@ -20469,7 +20455,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
 msgid "Numbers"
-msgstr ""
+msgstr "數字"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -20477,32 +20463,32 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"不要忽略浮點數中的前置或後置 0。以免降低數字的可讀性，並難以一眼區分與整數的"
+"不同。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
-msgstr "**正確例** :"
+msgstr "\\ **Good**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
-msgstr "**錯誤例** :"
+msgstr "\\ **Bad**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
-msgstr ""
+msgstr "16 進位數字使用小寫字母，因為當字母比數字矮的時候比較好閱讀數字。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
-msgstr ""
+msgstr "在字面值中通過 GDScript 的底線功能來讓大數更好閱讀。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:197
@@ -20760,7 +20746,6 @@ msgstr ""
 "著是 ``_ready()`` 回呼函式，Godot 會在節點被新增只場景樹時呼叫 _ready()。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
-#, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
@@ -21145,7 +21130,6 @@ msgid "Typed or dynamic: stick to one style"
 msgstr "靜態或動態：只選擇一種風格"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:250
-#, fuzzy
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But I "
 "recommend to stick to either style for consistency in your codebase, and for "
@@ -21154,7 +21138,7 @@ msgid ""
 msgstr ""
 "有型別的 GDScript 與動態 GDScript 可以在同一個專案中共存，但我們建議固定一種"
 "風格來在程式碼中保持一貫性，團隊成員也應固定來保持一貫。若大家都遵守同一個方"
-"針的話，也更容易一起工作，也能更快地閱讀理解他人的程式碼。"
+"針的話，也更容易一起工作並更快地閱讀理解他人的程式碼。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:256
 msgid ""
@@ -22578,12 +22562,11 @@ msgstr ""
 "記憶體。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
-#, fuzzy
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced setter (setting requires a sequence port)."
 msgstr ""
-"就像上面看到的，有兩個可用的節點：一個簡單的 Getter 與一個序列 Getter (設定需"
+"就像上面看到的，有兩個可用的節點：一個簡單的 Getter 與一個序列 Setter (設定需"
 "要有序列埠)。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
@@ -23203,32 +23186,29 @@ msgstr ""
 "偏好設定："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "編輯器設定"
+msgstr "在 Godot 的編輯器設定中："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
-#, fuzzy
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
-msgstr "將 Mono External Editor 設為 JetBrains Rider"
+msgstr "將 **Mono External Editor** 設為 **JetBrains Rider** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-#, fuzzy
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
-msgstr "將 Mono Build Tool 設為 JetBrains Mono。"
+msgstr "將 **Mono Build Tool** 設為 **JetBrains Mono** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
 msgstr "Rider 中："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
-msgstr "將 ``MSBuild version`` 設為 Rider 配套的版本或是 .NET Core。"
+msgstr ""
+"將 **MSBuild version** 設為 **Bundled with Rider** (Rider 配套的版本) 或是 "
+"**.NET Core** 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-#, fuzzy
 msgid "Install the **Godot support** plugin."
 msgstr "安裝 **Godot support** 外掛。"
 
@@ -23324,27 +23304,25 @@ msgstr ""
 "醒目提示或 IntelliSense 等功能。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
-#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the `:ref:doc_c_sharp_configuring_vs_2019_for_debugging` section below."
 msgstr ""
-"若使用 Visual Studio 2019，請確保有按照下方「設定 VS 2019 以進行除錯」段落中"
-"的介紹。"
+"若使用 Visual Studio 2019，請確保有按照下方 `:ref:"
+"doc_c_sharp_configuring_vs_2019_for_debugging` 段落中的介紹。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "Creating a C# script"
 msgstr "建立 C# 腳本"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
-"成功為 Godot 設定好 C# 後，應該可以在從場景中節點右鍵選單中選擇 ``[附加腳"
-"本]`` 時看到下列選項："
+"成功為 Godot 設定好 C# 後，應該可以在從場景中節點右鍵選單中選擇 **[附加腳"
+"本]** 時看到下列選項："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
@@ -23433,7 +23411,6 @@ msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "更多資訊請參考 :ref:`doc_c_sharp_differences` 一頁。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
@@ -23441,14 +23418,14 @@ msgid ""
 "to reveal the Mono panel, then clicking the **Build Project** button."
 msgstr ""
 "使用 C# 時，若要看到新匯出的變數或訊號，就需要建構或重新建構專案。要重新建構"
-"專案可以手動點擊編輯器視窗底部的 [Mono] 文字來打開 Mono 面板，然後點擊 [建構"
-"專案] 按鈕。"
+"專案可以手動點擊編輯器視窗底部的 **[Mono]** 文字來打開 Mono 面板，然後點擊 "
+"**[建構專案]** 按鈕。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
-msgstr ""
+msgstr "接著還需要重新建構專案組建，以套用「工具」腳本中的改動。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"
@@ -23680,6 +23657,10 @@ msgid ""
 "launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
 "you start the debugger in VS Code your Godot project will run."
 msgstr ""
+"若要設定除錯功能，請開啟 Visual Studio Code 並從 Microsoft 下載 Mono Debug 擴"
+"充套件與 Ignacio 製作的 Godot 擴充套件。接著以 VS Code 開啟 Godot 專案資料"
+"夾。然後前往 [執行] (Run) 分頁並點擊 **建立 launch.json 檔案** ，並從下拉選單"
+"中選擇 **C# Godot** 。接著便能在 VS Code 中開啟除錯工具來執行 Godot 專案。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "C# features"
@@ -24134,9 +24115,8 @@ msgstr ""
 "性也可以用在 **delegate`` 上，其名稱簽名會用來定義訊號。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr "參見 :ref:`c_sharp_signals`"
+msgstr "參見 :ref:`c_sharp_signals` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -25575,9 +25555,8 @@ msgstr ""
 "此資料夾。"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
-#, fuzzy
 msgid "Working with Git on Windows"
-msgstr "在 Windows 上執行"
+msgstr "在 Windows 上使用 Git"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
 msgid ""
@@ -25586,6 +25565,9 @@ msgid ""
 "by Git due to their line endings being converted automatically. It is better "
 "to set this option as::"
 msgstr ""
+"Windows 上大多數的 Git 用戶端都會將 ``core.autocrlf`` 設為 ``true`` 。這個設"
+"定會使檔案被 Git 標記為已修改，因為這些檔案的行結尾會自動被轉換。最好更改這個"
+"選項："
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
@@ -25610,7 +25592,6 @@ msgstr ""
 "做，則無法指定如何轉換及修改紋理、音訊檔、場景的匯入旗標。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -25618,9 +25599,9 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"Godot 3.0 版中，我們使用了更現代的匯入方法：只需直接將素材 (圖片、場景、音訊"
-"檔、字體…等) 拖放至專案資料夾 (於作業系統的檔案總管手動複製)。Godot 會自動於"
-"內部匯入這些檔案， 並將匯入的資源保存在 ``res://.import`` 資料夾中。"
+"自 Godot 3.0+ 以來，我們使用了更現代的匯入方法：只需直接將素材 (圖片、場景、"
+"音訊檔、字體…等) 拖放至專案資料夾 (於作業系統的檔案總管手動複製)。Godot 會自"
+"動於內部匯入這些檔案， 並將匯入的資源保存在 res://.import 資料夾中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -25630,26 +25611,31 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"這表示，要在程式碼中存取匯入的素材，就必須使用 :ref:"
+"`ResourceLoader<class_ResourceLoader>` ，因為 ResourceLoader 會自己處理要在內"
+"部將檔案存在哪裡。若使用 :ref:`File <class_File>` 來存取匯入的素材，則只能在"
+"編輯器中正常運作，而匯出的專案中則會出問題。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"然而，:ref:`ResourceLoader<class_ResourceLoader>` 無法存取非匯入的檔案，只"
+"有 :ref:`File <class_File>` 可以存取。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "更改匯入參數"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"在 Godot 中更改素材的匯入參數也很容易 (但請記得只有非原生 Godot 資源類型有匯"
-"入參數)。於檔案系統 Dock 中選擇相應的資源即可："
+"若要在 Godot 中更改素材的匯入參數，於檔案系統 Dock 中選擇相應的資源即可 (但請"
+"記得只有非原生 Godot 資源類型有匯入參數)。："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
@@ -25669,9 +25655,8 @@ msgstr ""
 "源，重新匯入時，參數將套用在這些資源上。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "匯入圖片"
+msgstr "重新匯入多個素材"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -25681,6 +25666,9 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"在處理專案時，我們有時候會需要對多個素材上更改同一個參數，如開啟 Mipmap 等，"
+"通常這種情況只需要更改特定的幾個參數。為此，可以在檔案系統中選擇所有要重新匯"
+"入的素材，然後在匯入分頁中，每個匯入參數的左邊會出現一個勾選框。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -25689,6 +25677,8 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"勾選匯入素材中要更改的參數，接著就照常更改參數即可。最後，選擇 [重新匯入] 按"
+"鈕，所有選擇的素材都只會套用這些參數的更改並重新匯入。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
@@ -26303,13 +26293,13 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "Svg"
-msgstr ""
+msgstr "Svg"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:208
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 msgid "Scale"
-msgstr ""
+msgstr "Scale - 縮放"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -26317,6 +26307,8 @@ msgid ""
 "image. The default scale (1.0) will make the imported SVG match its original "
 "design scale."
 msgstr ""
+"該選項只會套用於 SVG 檔。用於控制 SVG 圖像的縮放。預設的縮放為 (1.0)，會使匯"
+"入的 SVG 保持原始大小。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
@@ -26886,7 +26878,6 @@ msgstr ""
 "有需要這兩種情況的話，則用 glTF 二進位檔即可。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
@@ -27506,24 +27497,20 @@ msgid ""
 msgstr "編輯完場景後，我們往往會需要在匯出後執行下列常見任務："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "為物件加上碰撞偵測"
+msgstr "為物件加上碰撞偵測。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "將物件設為導航網格"
+msgstr "將物件設為導航網格。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
-msgstr "刪除遊戲引擎中未使用到的節點 (如用於建模的特定光照)"
+msgstr "刪除遊戲引擎中未使用到的節點 (如用於建模的特定光照)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:362
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -27531,29 +27518,27 @@ msgid ""
 "automatically."
 msgstr ""
 "為了簡化此一工作流程，Godot 提供了一些可以在 3D 建模軟體中放在物件名稱後的後"
-"置詞。匯入後，Godot 會偵測出這些名稱後置詞並自動執行操作："
+"置詞。匯入時，Godot 會偵測出這些名稱後置詞並自動執行操作。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:368
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "下方介紹的所有後置詞都 **有區分大小寫** 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 msgid "Remove nodes (-noimp)"
 msgstr "刪除節點 (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:373
-#, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"無論是什麼型別的物件，匯入時，名稱中有該後置詞的節點會被移除。這些節點不會出"
-"現在匯入的場景中。"
+"無論是什麼型別的物件，匯入時，名稱中有 ``-noimp`` 後置詞的節點都會被移除。這"
+"些節點不會出現在匯入的場景中。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:377
-#, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr "建立碰撞 (-col, colonly, -convcolonly)"
+msgstr "建立碰撞 (-col, -convcol, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:379
 msgid ""
@@ -27563,6 +27548,10 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"``-col` 選項只適用於網格 (Mesh) 物件。若偵測到該選項，則會加上子靜態碰撞節"
+"點，並使用相同的幾何體作為網格。這個選項會建立三角網格碰撞區域，建立過程很"
+"慢，但作為碰撞偵測來說時很精準的選項。該選項通常適用於等級幾何 (也請一併參考"
+"下方的 ``colonly``)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
 msgid ""
@@ -27576,69 +27565,66 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"``-convcol`` 會建立 :ref:`class_convexpolygonshape` 而非 :ref:"
+"`class_concavepolygonshape` 。與三角網格不同，三角網格可以是凹型的 "
+"(Concave)，凸型 (Convex) 只能在形狀沒有凸角時精準地呈現形狀 (金字塔是凸型，而"
+"空心盒 (Hallow Box) 是凹形)。因此，凸型碰撞區域通常不適合等級幾何。當要呈現比"
+"較簡單的網格時，凸型比起三角碰撞區域有更佳的效能。該選項適合用於需要精準碰撞"
+"偵測的簡單或動態的物件。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:394
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"然而，通常視覺幾何要拿來作為碰撞形體，都太複雜且太不平滑了，所以效果通常不"
-"佳。"
+"然而，在這兩種情況，通常視覺幾何要拿來作為碰撞形體都太複雜且太不平滑了。這樣"
+"會造成物理故障並不必要地降低引擎的速度。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:398
-#, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"「-colony」修飾詞就是為了解決這個問題，使用該後置詞會在匯入時將網格移除，並改"
-"而建立 :ref:`class_staticbody` 碰撞區域。如此便有助於分開視覺化網格與實際的碰"
-"撞區域。"
+"``-colony`` 修飾詞就是為了解決這個問題，使用該後置詞會在匯入時將網格移除，並"
+"改而建立 :ref:`class_staticbody` 碰撞區域。如此便有助於分開視覺化網格與實際的"
+"碰撞區域。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:402
-#, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"「-convcolonly」會建立 :ref:`class_convexpolygonshape` 而非 :ref:"
-"`class_concavepolygonshape` 。"
+"使用 ``-convcolonly`` 選項會改而建立 :ref:`class_convexpolygonshape` 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:404
-#, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"「-colonly」也可與 Blender 的空體一起使用。匯入時，會建立一個有碰撞子節點的 :"
-"ref:`class_staticbody`。依據 Blender 空體的不同，建立的碰撞節點會是數種預定義"
-"形狀之一："
+"``-colonly`` 也可與 Blender 的空體一起使用。匯入時，會建立一個有碰撞子節點"
+"的 :ref:`class_staticbody`。不同繪製型別的 Blender 空體所建立的碰撞節點會是數"
+"種預定義形狀之一："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:411
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "單箭頭會建立 :ref:`class_rayshape`"
+msgstr "單箭頭會建立 :ref:`class_rayshape` 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:412
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "立方體會建立 :ref:`class_boxshape`"
+msgstr "立方體會建立 :ref:`class_boxshape` 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:413
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "影像會建立 :ref:`class_planeshape`"
+msgstr "影像會建立 :ref:`class_planeshape` 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "球體 (與其他未列出的形狀) 會建立 :ref:`class_sphereshape`"
+msgstr "球體 (與其他未列出的形狀) 會建立 :ref:`class_sphereshape` 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid ""
@@ -27646,90 +27632,88 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"如果可能的話， **請儘量使用初形碰撞區域** 來代替三角網格或凸型。初形通常有較"
+"好的效能並較可靠。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:422
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
 "**User Preferences > Themes > 3D View > Empty**."
 msgstr ""
-"為了提高 Blender 編輯器中的可見性，可以開啟碰撞空體的「X-Ray」選項，並於 [使"
-"用者偏好設定] / [主題] / [3D 視圖] / [空體] 中為空體設定不同的顏色。"
+"為了提高 Blender 編輯器中的可見性，可以開啟碰撞空體的「X-Ray」選項，並於 "
+"**[使用者偏好設定] / [主題] / [3D 視圖] / [空體]** 中為空體設定不同的顏色。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:427
 msgid "Create navigation (-navmesh)"
 msgstr "建立導航 (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:429
-#, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
-msgstr "有該後置詞的網格節點會被轉換為導航網格。原始網格節點將被刪除。"
+msgstr ""
+"有 ``-navmesh`` 後置詞的網格節點會被轉換為導航網格。原始的網格物件將會在匯入"
+"時被刪除。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:433
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "建立 VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:435
-#, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleBody <class_VehicleBody>` 節點的"
-"子節點。"
+"有 ``-vehicle`` 後置詞的網格節點會被匯入為 :ref:`class_VehicleBody` 節點的子"
+"節點。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:439
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "建立 VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:441
-#, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleWheel <class_VehicleWheel>` 節點"
-"的子節點。"
+"有 ``-wheel`` 後置詞的網格節點會被匯入為 :ref:`class_VehicleWheel` 節點的子節"
+"點。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:445
 msgid "Rigid Body (-rigid)"
 msgstr "剛體 (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:447
-#, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"有該後置詞的網格節點會被匯入為 :ref:`VehicleBody <class_VehicleBody>` 節點的"
-"子節點。"
+"有 ``-rigid`` 後置詞的網格節點會被匯入為 :ref:`class_RigidBody` 節點的子節"
+"點。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Animation loop (-loop, -cycle)"
 msgstr "動畫循環 (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
 "flag set. **Unlike the other suffixes described above, this does not require "
 "a hyphen.**"
 msgstr ""
-"在 COLLADA 文件中以「loop」或「cycle」權杖結尾的動畫片段會被匯入為開啟循環旗"
-"標的 Godot Animation。這兩個後置詞有區分大小寫，且不需要減號 (-)。"
+"在 COLLADA 文件中以 ``loop`` 或 ``cycle`` 結尾的動畫片段會被匯入為開啟循環旗"
+"標的 Godot Animation。**於這裡介紹的其他後置詞不同，這個後置詞不需要加減號"
+"** 。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
-#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
-"在 Blender 中，需要使用 NLA 編輯器，並以「loop」或「cycle」前置或後置詞來命名"
-"動作。"
+"在 Blender 中，需要使用 NLA 編輯器，並以 ``loop`` 或 ``cycle`` 前置或後置詞來"
+"命名動作。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Blender ESCN exporter"
@@ -29230,7 +29214,7 @@ msgstr ""
 msgid ""
 "If you export for Windows with embedded PCK files, you will not be able to "
 "sign the program, it will break."
-msgstr ""
+msgstr "若為 Windows 匯出內嵌 PCK 檔案，則會沒辦法簽署程式，程式會退出。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for Windows"
@@ -29246,9 +29230,8 @@ msgstr ""
 "Windows 有兩種類型的圖示可以更改：檔案圖示與工作列圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "創建內容"
+msgstr "建立 ICO 檔案"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -29257,12 +29240,17 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"Windows 上不使用 PNG 或 JPG 等格式來作為應用程式圖示，而是使用一種叫 ICO，只"
+"有 Windows 在用的格式。可以使用任何程式建立應用程式圖示，但必須使用如 GIMP 等"
+"程式來將格式轉換為 ICO。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"`這個影片教學 (英語) <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ 說明了如"
+"何用 GIMP 來匯出 ICO 檔案。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
@@ -29283,14 +29271,13 @@ msgid ""
 msgstr "工作列圖示即為專案執行時顯示在工作列上的圖示。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
-#, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
 "要更改工作列圖示，請前往 **[專案] → [專案設定] → [Application] → [Config] → "
-"[Icon]** 。點擊資料夾圖示並選擇想要的圖示。"
+"[Windows Native Icon]** 。點擊資料夾圖示並選擇 ICO 檔。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
 msgid ""
@@ -29298,6 +29285,8 @@ msgid ""
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"該設定只會更改匯出至 Windows 平台的遊戲。若要設定 macOS 上的圖示，請使用 "
+"``Macos Native Icon`` 。而其他的平台則使用 ``Icon`` 設定。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
 msgid "Changing the file icon"
@@ -29311,6 +29300,9 @@ msgid ""
 "choose to enable the **Embed Pck** option for your Windows export preset in "
 "the Export dialog."
 msgstr ""
+"在更改嵌入 PCK 檔的可執行檔的應用程式圖示時，目前有一些 `已知的問題 <https://"
+"github.com/godotengine/godot/issues/33466>`__ 。如果要在匯出對話框的 Windows "
+"匯出設定中選擇 **Enbed Pck** 時，目前建議先避免使用 rcedit。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
 msgid ""
@@ -29372,6 +29364,9 @@ msgid ""
 "cache. To do so, open `Run` and call the command ``ie4uinit.exe -"
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
+"若在 Windows 10 上圖示沒有正常顯示，請試試清除圖示快取。要清除快取，請開啟 **"
+"執行** 並呼叫指令 ``ie4uinit.exe -ClearIconCache`` 或 ``ie4uinit.exe -"
+"show`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
@@ -29740,6 +29735,8 @@ msgid ""
 "**godot_project_to_export** must not be the same as "
 "**exported_xcode_project_name** to prevent signing issues in Xcode."
 msgstr ""
+"**godot_project_to_export** 不可與 **exported_xcode_project_name** 相同，以避"
+"免 Xcode 上產生簽署問題。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "Steps to link a Godot project folder to Xcode"
@@ -29922,7 +29919,6 @@ msgstr ""
 "\\Android\\Sdk\\platform-tools\\adb.exe`` 中找到。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:63
-#, fuzzy
 msgid ""
 "The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
 "installs to a directory like ``%PROGRAMFILES%\\AdoptOpenJDK\\jdk-8.0.252.09-"
@@ -29931,9 +29927,9 @@ msgid ""
 "you've installed and your machine's operating system."
 msgstr ""
 "(JDK 6 或 8 中的) ``jarsigner`` 執行檔 - Windows 上 OpenJDK 的安裝位置可能會"
-"是 ``%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-openjdk-1.8.0.232-2\\bin`` 之類"
-"的。Linux 上則通常會安裝到如 ``/usr/bin/jarsigner`` 指令的位置。正確的路徑會"
-"依據所安裝的 OpenJDK 版本與您的作業系統而有所不同。"
+"是 ``%PROGRAMFILES%\\AdoptOpenJDK\\jdk-8.0.252.09-hotspot\\bin`` 之類的。"
+"Linux 上則通常會安裝到如 ``/usr/bin/jarsigner`` 指令的位置。正確的路徑會依據"
+"所安裝的 OpenJDK 版本與作業系統而有所不同。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -30621,14 +30617,14 @@ msgstr ""
 "** 開啟匯出的專案。要解決這個問題，請使用本機伺服器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-#, fuzzy
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m http."
 "server 8000 --bind 127.0.0.1`` with Python 3 to serve the current working "
 "directory at ``http://localhost:8000``."
 msgstr ""
 "Python 中有可以輕鬆執行本機伺服器的方法。可以在 Python3 上使用 ``python -m "
-"http.server`` 來將目前的工作目錄放在 ``http://localhost:8000`` 。"
+"http.server 8000 --bind 127.0.0.1`` 來將目前的工作目錄放在 ``http://"
+"localhost:8000`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:23
 msgid ""
@@ -31106,7 +31102,6 @@ msgstr ""
 "<doc_compiling_for_osx>` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
-#, fuzzy
 msgid ""
 "**Windows:** There is no dedicated server build for Windows yet. As an "
 "alternative, you can use the ``--no-window`` command-line argument to "
@@ -31115,7 +31110,8 @@ msgid ""
 "on the Windows machine."
 msgstr ""
 "**Windows：** 目前還沒有用於 Windows 的專用伺服器建置。可以使用 ``--no-"
-"window`` 命令行引數來防止 Godot 產生視窗。"
+"window`` 命令行引數來防止 Godot 產生視窗。請注意，即使使用 ``--no-window`` 命"
+"令行引數，在 Windows 上還是必須要有支援 OpenGL。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
 msgid ""
@@ -31157,28 +31153,28 @@ msgid "Exporting a PCK file"
 msgstr "匯出 PCK 檔"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Godot 沒有使用限制"
+msgstr "有兩種方法可以為伺服器匯出專案："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
+"建立 Linux/X11 匯出預設設定，並定義指向伺服器二進位檔的自定 Release 匯出樣"
+"板，然後照往常一樣匯出專案即可。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
-msgstr ""
+msgstr "只匯出 PCK 檔，建議從 Linux/X11 匯出預設設定中匯出。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
-msgstr ""
+msgstr "這兩種方法產生的結果都相同。下方說明了 PCK 檔的這個方法。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
-#, fuzzy
 msgid ""
 "Once you've downloaded a server binary, you should export a PCK file "
 "containing your project data. After creating the export preset, click "
@@ -31186,9 +31182,9 @@ msgid ""
 "destination path. The **Export With Debug** checkbox in the file dialog has "
 "no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
-"下載好伺服器二進位檔後，則需要匯出包含專案資料的 PCK 檔。建議為此建立一個 "
-"Linux 匯出預設。建立好匯出預設後，點擊 [匯出] 對話框下方的 **[匯出 PCK/"
-"ZIP]** 並選擇目標路徑。"
+"下載好伺服器二進位檔後，需要匯出包含專案資料的 PCK 檔。建立好匯出預設後，點"
+"擊 [匯出] 對話框下方的 **[匯出 PCK/ZIP]** 並選擇目標路徑。對話框中的 "
+"**Export With Debug** 勾選框不會影響最終的 PCK 檔，可以不動這個選項。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
 msgid "See :ref:`doc_exporting_projects` for more information."
@@ -31200,6 +31196,8 @@ msgid ""
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
+"若從無周邊 (Headless) 編輯器中匯出專案，請在專案資料夾中使用 ``--export-"
+"pack`` 選項來呼叫無周邊編輯器以匯出 PCK 檔。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
@@ -31240,9 +31238,8 @@ msgstr ""
 "令行引數來指定 PCK 檔的路徑："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "為專用伺服器匯出"
+msgstr "開啟專用伺服器"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -31251,12 +31248,15 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"若用戶端與伺服器端都屬於相同的 Godot 專案，則必須要加上能直接以命令行引數來開"
+"啟伺服器的方法。可以通過在主要場景 (或單例) 的 ``_ready()`` 方法中加上下列程"
+"式碼片段來實現："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
-msgstr ""
+msgstr "另外，也可以在偵測到無周邊或伺服器二進位檔時開啟專用伺服器："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -31264,6 +31264,8 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"如果用戶端與伺服器端是分開的兩個 Godot 專案，則伺服器通常應該都設定好會在主要"
+"場景開啟時自動執行伺服器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:849
@@ -31360,7 +31362,6 @@ msgid ""
 msgstr "本系列是一些可以協助你更有效率地使用 Godot 的最佳實踐。"
 
 #: ../../docs/getting_started/workflow/best_practices/introduction_best_practices.rst:9
-#, fuzzy
 msgid ""
 "Godot allows for a great amount of flexibility in how you structure a "
 "project's codebase and break it down into scenes. Each approach has its pros "
@@ -31415,13 +31416,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:4
 msgid "Applying object-oriented principles in Godot"
-msgstr ""
+msgstr "在 Godot 中套用物件導向原則"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:6
 msgid ""
 "The engine offers two main ways to create reusable objects: scripts and "
 "scenes. Neither of these technically define classes under the hood."
 msgstr ""
+"Godot 提供了兩種方法來建立可重複使用的物件：腳本與場景。這兩種方法技術上來說"
+"都算是在定義類別。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:9
 msgid ""
@@ -31429,36 +31432,37 @@ msgid ""
 "programming principles to the scripts and scenes that compose your game. "
 "That is why it's useful to understand how we can think of them as classes."
 msgstr ""
+"儘管如此，許多使用 Godot 的最佳實踐都包含了將物件導向程式設計原則套用到構成遊"
+"戲的腳本與場景上。因此，瞭解如何將場景與腳本看作物件是很實用的。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:13
-#, fuzzy
 msgid ""
 "This guide briefly explains how scripts and scenes work in the engine's core "
 "to help you understand how they work under the hood."
 msgstr ""
-"本指南解釋了腳本與場景在引擎核心中是如何運作的，來協助你瞭解 Godot 實際是怎麼"
-"運作的，並幫助你更好地理解本系列中的一些最佳實踐是怎麼來的。"
+"本指南大致解釋了腳本與場景在引擎核心中是如何運作的，來協助你瞭解 Godot 實際是"
+"怎麼運作的。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:17
 msgid "How scripts work in the engine"
-msgstr ""
+msgstr "在引擎中腳本是如何運作的"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:19
 msgid ""
 "The engine provides built-in classes like :ref:`Node <class_Node>`. You can "
 "extend those to create derived types using a script."
 msgstr ""
+"Godot 中提供了一些內建類別，如 :ref:`Node<class_Node>` 。可以通過繼承這些類別"
+"來通過腳本建立延伸型別。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:22
-#, fuzzy
 msgid ""
 "These scripts are not technically classes. Instead, they are resources that "
 "tell the engine a sequence of initializations to perform on one of the "
 "engine's built-in classes."
 msgstr ""
-"Godot Engine 提供了一些如 :ref:`Node <class_Node>` 之類的內建類別。使用者建立"
-"的型別理論上不是類別，而是用來告訴引擎要在內建類別上進行一系列初始化操作的資"
-"源。"
+"這些腳本在理論上來說不是類別，而是用來告訴引擎要在內建類別上進行一系列初始化"
+"操作的資源。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:25
 msgid ""
@@ -31471,27 +31475,22 @@ msgstr ""
 "訊："
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
-#, fuzzy
 msgid "Properties."
-msgstr "屬性"
+msgstr "屬性。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:30
-#, fuzzy
 msgid "Methods."
-msgstr "方法"
+msgstr "方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "常數"
+msgstr "常數。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "訊號"
+msgstr "訊號。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
-#, fuzzy
 msgid ""
 "This ``ClassDB`` is what objects check against when performing an operation "
 "like accessing a property or calling a method. It checks the database's "
@@ -31507,9 +31506,10 @@ msgid ""
 "Attaching a :ref:`Script <class_Script>` to your object extends the methods, "
 "properties, and signals available from the ``ClassDB``."
 msgstr ""
+"將 :ref:`Script <class_Script>` 附加到物件上，就會使物件繼承 ``ClassDB`` 中可"
+"用的方法、屬性與訊號。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:43
-#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
 "the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
@@ -31517,9 +31517,10 @@ msgid ""
 "they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
-"即時腳本不是從內建型別繼承來的，即不以 ``extends 關鍵字開始的腳本，也會隱含性"
-"地自動繼承引擎的基礎 :ref:`Reference <class_Reference>` 類別。這樣一來便能讓"
-"該類別在引擎覺得合邏輯的地方來遵守腳本內容。"
+"即使是不使用 ``extends`` 關鍵字的腳本，也會隱含性地自動繼承引擎的基礎 :ref:"
+"`Reference <class_Reference>` 類別。這樣一來，即使沒有在程式碼中使用 "
+"``extends`` 關鍵字也能初始化腳本。由於這些腳本是繼承自 ``Reference`` ，所以無"
+"法附加到 :ref:`Node <class_Node>` 上。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:51
 msgid ""
@@ -31528,17 +31529,18 @@ msgid ""
 "inheritable groups of nodes. Creating a scene is similar to having a script "
 "that creates nodes and adds them as children using ``add_child()``."
 msgstr ""
+"由於場景與類別在行為上有許多相同的地方，因此也可以將場景看作是類別。場景可重"
+"複使用、可初始化，而且還是一組可繼承的節點。建立場景就有點類似一個會建立節點"
+"並通過 ``add_child()`` 將這些節點新增為子節點的腳本。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:55
-#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
 "scene's nodes. As such, the scene is often an extension of the script's "
 "declarative code."
 msgstr ""
-"為什麼這些東西對場景組織來說有這麼重要？因為場景 **是** 物件。大家通常會將場"
-"景與有腳本的根節點一起使用，然後用根節點上的腳本來使用子節點。這表示，場景通"
-"常算是腳本中宣告型程式碼的延伸。"
+"我們通常會將場景與有腳本的根節點一起使用。因此，場景通常算是腳本中宣告型程式"
+"碼的延伸。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:58
 msgid "The content of a scene helps to define:"
@@ -31561,32 +31563,28 @@ msgid "What signal connections they have with each other"
 msgstr "節點之間有用什麼訊號連接"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:65
-#, fuzzy
 msgid ""
 "Why is any of this important to scene organization? Because instances of "
 "scenes *are* objects. As a result, many object-oriented principles that "
 "apply to written code also apply to scenes: single responsibility, "
 "encapsulation, and others."
 msgstr ""
-"為什麼這些東西對場景組織來說有這麼重要？因為場景 **是** 物件。大家通常會將場"
-"景與有腳本的根節點一起使用，然後用根節點上的腳本來使用子節點。這表示，場景通"
-"常算是腳本中宣告型程式碼的延伸。"
+"為什麼這些東西對場景組織來說有這麼重要？因為場景 **是** 物件。因此，許多在寫"
+"程式碼時能套用的物件導向原則也都能套用至場景上：單一職責、封裝等。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:69
-#, fuzzy
 msgid ""
 "The scene is *always an extension of the script attached to its root node*, "
 "so you can interpret it as part of a class."
 msgstr ""
-"場景 **永遠是附加到場景根節點的腳本的延伸** 。可以將場景中包含的所有節點視為"
-"單一類別的一部分。"
+"場景 **永遠是附加到場景根節點的腳本的延伸** ，因此可以將場景視為類別的一部"
+"分。"
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:72
-#, fuzzy
 msgid ""
 "Most of the techniques explained in this best practices series build on this "
 "point."
-msgstr "本系列中的許多提示與技術解釋都以此為基礎。"
+msgstr "本最佳實踐系列中的許多技術解釋都以此為基礎。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
 msgid "Scene organization"
@@ -32396,40 +32394,35 @@ msgid ""
 msgstr "但缺點是，這也代表必須要使用大量的指令式程式。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
-#, fuzzy
 msgid "Performance of Script vs PackedScene"
-msgstr "腳本效能與 PackedScene"
+msgstr "腳本效能 vs PackedScene 效能"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid ""
 "One last aspect to consider when choosing scenes and scripts is execution "
 "speed."
-msgstr ""
+msgstr "在選擇場景與腳本時，最後一個需要考慮的點就是執行速度了。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
-#, fuzzy
 msgid ""
 "As the size of objects increases, the scripts' necessary size to create and "
 "initialize them grows much larger. Creating node hierarchies demonstrates "
 "this. Each Node's logic could be several hundred lines of code in length."
 msgstr ""
 "隨著物件的大小增長，要建立物件所需的腳本也變得越來越大。建立節點階層即可重現"
-"此狀況。個別節點的邏輯可為數百行程式碼。"
+"此狀況。個別節點的邏輯可多達數百行程式碼。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
-#, fuzzy
 msgid ""
 "The code example below creates a new ``Node``, changes its name, assigns a "
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
-"來看看一個建立 ``Node`` 子節點的簡單範例。下列程式碼會建立一個新的 ``Node`` "
-"節點、更改名稱、為該節點指派腳本、然後將新節點的母節點設為目前節點，這樣一來"
-"該節點才會跟著一起保存到硬碟上，然後最後才將 ``Main`` 節點作為目前節點的腳本"
-"保存："
+"下列程式碼會建立一個新的 ``Node`` 節點、更改名稱、為該節點指派腳本、然後將新"
+"節點的母節點設為目前節點，這樣一來該節點才會跟著一起保存到硬碟上，然後最後才"
+"將其加為 ``Main`` 節點的子節點："
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
-#, fuzzy
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
 "instruction makes a call to the scripting API which leads to many \"lookups"
@@ -32439,7 +32432,6 @@ msgstr ""
 "API 呼叫來向後端「查詢」要執行什麼邏輯。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
-#, fuzzy
 msgid ""
 "Scenes help to avoid this performance issue. :ref:`PackedScene "
 "<class_PackedScene>`, the base type that scenes inherit from, defines "
@@ -32448,7 +32440,7 @@ msgid ""
 "scripts."
 msgstr ""
 "場景系統可以避免這種效能問題。 :ref:`PackedScene <class_PackedScene>` ，即，"
-"場景繼承的基礎型別，是一種資源，可以用來序列化資料並建立物件。引擎可以在後端"
+"場景繼承的基礎型別，是一種資源，可以用來串聯化資料並建立物件。引擎可以在後端"
 "批次處理場景，並可提供比腳本好很多的效能。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:207
@@ -33459,7 +33451,7 @@ msgid ""
 msgstr ""
 "Godot 將腳本 API 中所有的變數都保存在 :ref:`Variant <doc_variant_class>` 類別"
 "內。Variant 可以保存 Variant 相容的資料結構，如 :ref:`Array <class_Array>` "
-"與 :ref:`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object` 。"
+"與 :ref:`Dictionary <class_Dictionary>` 以及 :ref:`Object <class_Object>` 。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -33546,24 +33538,26 @@ msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
+"**取值、設值：** **依位置** 最快。如，可要求第 0、第 2 與第 10 筆記錄…等。但"
+"無法指定要哪個記錄。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
-msgstr ""
+msgstr "操作：需要 1 個額外的操作來將陣列從起始位置移至需要的位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr ""
+msgstr "**搜尋：** 最慢。找到一個值的索引／位置。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
-msgstr ""
+msgstr "操作：必須要迭代陣列並比較各個值，直到找到相符的元素。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
-msgstr ""
+msgstr "效能還會依據是否需要完整的搜尋而有所不同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
 msgid ""
@@ -33572,6 +33566,9 @@ msgid ""
 "by re-sorting the Array after every edit and writing an ordered-aware search "
 "algorithm."
 msgstr ""
+"若陣列有排序，則搜尋操作可達對數時間 (相對較快)。不過，業餘使用者可能會不太習"
+"慣這種方法。這種方法會需要在每次編輯陣列後進行重新排列，並編寫適用於有序陣列"
+"的搜尋演算法。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
 msgid ""
@@ -33584,6 +33581,13 @@ msgid ""
 "becomes too full, it increases to the next power of 2 (so, 16 records, then "
 "32, etc.) and rebuilds the structure."
 msgstr ""
+"Godot 通過 ``OrderedHashMap<Variant, Variant>`` 來實作字典 (Dictionary) 型"
+"別。Godot 會儲存一個小型索引鍵／值配對的陣列 (初始化為 2^3 或 8 筆記錄)。當使"
+"用者存取數值時，這組陣列就會提供索引鍵。接著再對索引鍵進行 **雜湊** ，如將其"
+"轉換為數字。這裡的「雜湊」是用於將索引計算到陣列中。由於是陣列，OHM 會快速地"
+"「查表」來將索引鍵對應到數值上。如果 HashMap 變得太滿的話，Godot 會將其大小增"
+"加到下一個 2 的冪次 (也就是 16 筆資料，然後是 32 筆…以此類推)，然後重新建立這"
+"個架構。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
@@ -33592,10 +33596,13 @@ msgid ""
 "position into account. In all, this results in constant-time access to all "
 "records at the expense of memory and some minor operational efficiency."
 msgstr ""
+"雜湊是為了降低索引鍵碰撞的機率。若發生碰撞，表格就必須要為該數值重新計算另一"
+"個索引來處理前一個位置。這樣一來，就可以常數時間來存取所有記錄，但卻需要犧牲"
+"一些記憶體與執行效率。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
-msgstr ""
+msgstr "對每個索引鍵雜湊任意次。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
@@ -33603,10 +33610,12 @@ msgid ""
 "one, as long as the number of hash calculations doesn't become too dependent "
 "on the density of the table, things will stay fast. Which leads to..."
 msgstr ""
+"雜湊操作為常數時間，所以即使某個演算法需要被執行超過一次，只要雜湊計算的數字"
+"不要太依賴表格的密度，就能保持高速。這樣一來…"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
 msgid "Maintaining an ever-growing size for the table."
-msgstr ""
+msgstr "維護表格持續增長的大小。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -33614,26 +33623,31 @@ msgid ""
 "to reduce hash collisions and maintain the speed of accesses. This is why it "
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
+"雜湊表 (HashMap) 會維護穿插在表格間所沒有使用到的記憶體空間，來減少雜湊碰撞的"
+"機率並保持存取的速度。這也是為什麼雜湊表大小成長的速度是以 2 的冪次在成長的。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
 msgstr ""
+"我們可以說，字典可以做一些陣列沒辦法做的任務。下面列出一些字典能做的操作："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
-msgstr ""
+msgstr "**迭代：** 快速。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
 msgstr ""
+"操作：在映射表內部的雜湊向量間迭代。回傳每個索引鍵。然後，使用者便能通過該索"
+"引鍵來跳至並回傳所需的值。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
-msgstr ""
+msgstr "**插入、移除、移動：** 最快。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
@@ -33641,44 +33655,48 @@ msgid ""
 "value (array start + offset). Move is two of these (one insert, one erase). "
 "The map must do some maintenance to preserve its capabilities:"
 msgstr ""
+"操作：雜湊給定的索引鍵。需要 1 個額外操作來找到適當的值 (陣列起始 + 偏移)。移"
+"動是由這其中的兩個操作組成的 (一個新增、一個刪除)。映射表為了保持其功能性，必"
+"須要做一些維護操作："
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
-msgstr ""
+msgstr "更新記錄的有序列表。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
-msgstr ""
+msgstr "判斷表格的密度，決定是否有需要增加表格的大小。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
 "The Dictionary remembers in what order users inserted its keys. This enables "
 "it to execute reliable iterations."
 msgstr ""
+"字典會記得使用者插入索引鍵的順序。這樣一來在執行迭代的時候就能確保可靠性。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
-msgstr ""
+msgstr "**取值、設值：** 最快。與 **以索引鍵** 查詢相同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
-msgstr ""
+msgstr "操作：與插入／移除／移動相同。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
-msgstr ""
+msgstr "**查詢：** 最慢。需要找出值的索引鍵。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
-msgstr ""
+msgstr "操作：必須要在每個記錄間迭代，並比較各個值來找出相符合的項目。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
 "Note that Godot does not provide this feature out-of-the-box (because they "
 "aren't meant for this task)."
-msgstr ""
+msgstr "請注意，Godot 並沒有直接提供這個功能 (因為字典並非設計來做這項工作)。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:167
 msgid ""
@@ -33689,6 +33707,11 @@ msgid ""
 "find more information about what objects are and how they work in the :ref:"
 "`doc_what_are_godot_classes` article."
 msgstr ""
+"Godot 實作物件的方法很單純，但卻有動態資料內容容器。物件會在被要求的時候查詢"
+"資料來源。舉例來說，當物件需要回答「你有沒有一個叫『position』的屬性？」這種"
+"問題時，物件可能會詢問 :ref:`Script <class_Script>` 或 :ref:`ClassDB "
+"<class_ClassDB>` 。更多關於物件的資訊以及物件如何運作的資訊，請參考 :ref:"
+"`doc_what_are_godot_classes` 一文。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:174
 msgid ""
@@ -33702,6 +33725,12 @@ msgid ""
 "that it must make so many checks is what makes them slower than both of the "
 "alternatives for looking up data."
 msgstr ""
+"此處有一個重要的細節，就是有關物件任務中的複雜度。每當物件執行一次這種多來源"
+"的查詢時，物件會執行 **多個** 迭代迴圈以及雜湊表查詢。而且，查詢的線性時間會"
+"依據物件的繼承與層級大小而異。若物件查詢的類別 (目前的類別) 沒有找到任何東"
+"西，則查詢會被傳遞到更上一層，直到最原始的 Object 類別。雖然這些操作單獨來看"
+"都很快，但事實上因為這些操作需要做到很多確認，所以會讓查詢比起查詢陣列或字典"
+"的兩種方法都來得慢。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:186
 msgid ""
@@ -33711,12 +33740,16 @@ msgid ""
 "API operations will take much longer. They must locate the source of any "
 "relevant data before they can attempt to access it."
 msgstr ""
+"當開發人員提到腳本的 API 有多慢時，指的是這個查詢鏈很慢。跟經過編譯的 C++ 程"
+"式碼比起來，這些 C++ 程式在查詢會知道要讀取的準確位置，因此相比起來腳本 API "
+"就不可避免地慢很多。腳本 API 必須要在嘗試存取資料前找過所有相關資料的來源。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:192
 msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
 msgstr ""
+"GDScript 比較慢的原因就是因為在執行所有操作前都必須要經歷過一次這個系統。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
@@ -33724,6 +33757,9 @@ msgid ""
 "But, if the C# script calls into an engine class' content or if the script "
 "tries to access something external to it, it will go through this pipeline."
 msgstr ""
+"C# 可以通過最佳化的 Bytecode 來以更快的速度處理一些內容。但是，若 C# 腳本要呼"
+"叫引擎的類別內容，或是腳本試圖存取腳本外部的東西，則還是需要走過一次這個過"
+"程。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:200
 msgid ""
@@ -33733,12 +33769,17 @@ msgid ""
 "a manual task. It is at this point that external, non-C++ classes will use "
 "the API to locate them."
 msgstr ""
+"NativeScript C++ 則更進一步，預設會將所有東西都保持在內部。呼叫外部結構的時候"
+"會經過腳本 API。在 NativeScript C++ 中，必須要手動註冊方法並將方法暴露給腳本 "
+"API。這樣一來，非 C++ 類別就可以通過 API 來找到這些方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
 msgstr ""
+"因此，假設我們需要繼承 Reference 來建立一個資料結構，類似 Array 或 "
+"Dictionary，誰還要用 Object 而不用 Array 或 Dictionary 呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
@@ -33747,6 +33788,9 @@ msgid ""
 "API doesn't change in response to internal data structure changes. What's "
 "more, Objects can have signals, allowing for reactive behavior."
 msgstr ""
+"**控制：** 因為物件能建立更複雜的結構，所以我們可以將資料抽象化成抽象層，來確"
+"保對外的 API 不會因為內部資料結構的更改而需要跟著改變。而且，物件還可以有訊"
+"號，可以作出回應式的行為。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:214
 msgid ""
@@ -33755,6 +33799,8 @@ msgid ""
 "values one expects, but one doesn't need to worry about whether the property "
 "exists in the first place."
 msgstr ""
+"**明確：** 當使用到腳本與引擎類別定義的資料時，物件是可信任的資料結構。屬性中"
+"的值可能與使用者期望的不同，但是在使用時不需要擔心物件上是否有某個屬性。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:219
 msgid ""

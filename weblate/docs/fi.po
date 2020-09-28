@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-09 13:27+0200\n"
-"PO-Revision-Date: 2020-09-05 20:17+0000\n"
+"PO-Revision-Date: 2020-09-27 15:32+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -581,7 +581,7 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"Logot ja ikonit kuuluvat pääasiassa saman Creative Commons  -lisenssin alle. "
+"Logot ja ikonit kuuluvat pääasiassa saman Creative Commons -lisenssin alle. "
 "Ota huomioon, että jotkin Godotin sisällyttämät kolmansien osapuolten "
 "lähdekoodit voivat kuulua toisentyyppisiin lisensseihin."
 
@@ -1488,9 +1488,8 @@ msgid "Features"
 msgstr "Ominaisuudet"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Tuetut animaatiot:"
+msgstr "Alustat"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1535,9 +1534,8 @@ msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:35
-#, fuzzy
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
+msgstr ":ref:`Konsolit <class_CSGPolygon>`."
 
 #: ../../docs/about/list_of_features.rst:37
 msgid ""
@@ -1564,9 +1562,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:46
-#, fuzzy
 msgid "Script editor."
-msgstr "Skriptieditori"
+msgstr "Skriptieditori."
 
 #: ../../docs/about/list_of_features.rst:47
 msgid ""
@@ -1611,9 +1608,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:62
-#, fuzzy
 msgid "Live camera replication."
-msgstr "kameran animaatio"
+msgstr "Kameran reaaliaikainen replikointi."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Move the in-editor camera and see the result in the running project."
@@ -1736,9 +1732,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:109
 #: ../../docs/about/list_of_features.rst:215
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Partikkelit"
+msgstr "CPU-pohjaiset partikkelit."
 
 #: ../../docs/about/list_of_features.rst:112
 #, fuzzy
@@ -1783,9 +1778,8 @@ msgstr "Fysiikkaominaisuudet"
 
 #: ../../docs/about/list_of_features.rst:128
 #: ../../docs/about/list_of_features.rst:264
-#, fuzzy
 msgid "Static bodies."
-msgstr "metodit"
+msgstr "Staattiset kappaleet."
 
 #: ../../docs/about/list_of_features.rst:129
 #: ../../docs/about/list_of_features.rst:265
@@ -1862,9 +1856,8 @@ msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:161
-#, fuzzy
 msgid "Normal mapping."
-msgstr "Muoto"
+msgstr "Normaalimäppäys."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid ""
@@ -1923,9 +1916,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:181
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "Tekstuurien tuonti"
+msgstr "*SpotLight:* Yksi tekstuuri."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
@@ -1975,9 +1967,8 @@ msgid "Panorama sky (using an HDRI)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:202
-#, fuzzy
 msgid "Procedural sky."
-msgstr "Proseduraalinen geometria"
+msgstr "Proseduraalinen taivas."
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Fog:**"
@@ -2079,9 +2070,8 @@ msgid "**Anti-aliasing:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:241
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "Useat ilmentymät"
+msgstr "Moninäytteinen antialiasointi (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
@@ -2099,10 +2089,11 @@ msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Proseduraalinen geometria <toc-procedural_geometry>`"
+msgstr ""
+"Työkaluja :ref:`proseduraalisen geometrian luontiin "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
@@ -2174,14 +2165,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr "Visuaalinen sävytineditori."
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr ":ref:`doc_visual_shader_plugins`"
+msgstr "Tuki visuaalisen sävyttimen liitännäisille."
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2255,9 +2244,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Tuettu animaatio"
+msgstr "Tukee kaikkia alustoja."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
@@ -2343,9 +2331,8 @@ msgid "Audio input to record microphones."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:351
-#, fuzzy
 msgid "MIDI input."
-msgstr "Syöte"
+msgstr "MIDI-syöte."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
@@ -2381,9 +2368,8 @@ msgid "**Formats:**"
 msgstr "Muoto"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "**Konsoli:** Katso :ref:`doc_consoles`"
+msgstr "*Kuvat:* Katso :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 #, fuzzy
@@ -2408,11 +2394,12 @@ msgid "glTF 2.0 *(recommended)*."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:377
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (suora "
+"vienti Blenderistä)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
@@ -2449,9 +2436,8 @@ msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:391
-#, fuzzy
 msgid "Keyboard input."
-msgstr "Näppäimistön pikanäppäin"
+msgstr "Näppäimistösyöte."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
@@ -2460,9 +2446,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:395
-#, fuzzy
 msgid "Mouse input."
-msgstr "Hiiren liike"
+msgstr "Hiirisyöte."
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
@@ -2493,9 +2478,8 @@ msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Siirtymistila"
+msgstr "Navigointimeshit."
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2601,9 +2585,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:448
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Siirry koko näytön tilaan"
+msgstr "Koko näytön tila."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
@@ -2638,9 +2621,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:459
-#, fuzzy
 msgid "Parse custom command line arguments."
-msgstr "Logiikka-asetukset"
+msgstr "Komentoriviargumenttien jäsennys."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid "Mobile"
@@ -2689,9 +2671,8 @@ msgid "**Nodes:**"
 msgstr "Solmut"
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "Buttons."
-msgstr "Button"
+msgstr "Painikkeet."
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Checkboxes, check buttons, radio buttons."
@@ -2710,9 +2691,8 @@ msgid "Scrollbars."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:487
-#, fuzzy
 msgid "Labels."
-msgstr "Label"
+msgstr "Selitteet."
 
 #: ../../docs/about/list_of_features.rst:488
 msgid ""
@@ -2751,9 +2731,8 @@ msgid ":ref:`Stack <class_BoxContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`Ruudukkoasettelu <class_GridContainer>`."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
@@ -2780,9 +2759,8 @@ msgid "**Theming:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:509
-#, fuzzy
 msgid "Built-in theme editor."
-msgstr "Sisäänrakennetut funktiot"
+msgstr "Sisäänrakennettu teemaeditori."
 
 #: ../../docs/about/list_of_features.rst:511
 msgid "Generate a theme based on the current editor theme settings."
@@ -2905,9 +2883,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:559
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "Logiikka-asetukset"
+msgstr "Komentorivikäyttöliittymä automointia varten."
 
 #: ../../docs/about/list_of_features.rst:561
 msgid "Export and deploy projects using continuous integration platforms."
@@ -3481,9 +3458,8 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:38
-#, fuzzy
 msgid "Godot 3.2"
-msgstr "Godot 3.1 versiossa:"
+msgstr "Godot 3.2"
 
 #: ../../docs/about/release_policy.rst:38
 msgid "January 2020"
@@ -3496,9 +3472,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:41
-#, fuzzy
 msgid "Godot 3.1"
-msgstr "Godot 3.1 versiossa:"
+msgstr "Godot 3.1"
 
 #: ../../docs/about/release_policy.rst:41
 msgid "March 2019"
@@ -3511,18 +3486,16 @@ msgid "|partial| Only critical, security and platform support fixes."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:43
-#, fuzzy
 msgid "Godot 3.0"
-msgstr "Godot 3.1 versiossa:"
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:43
 msgid "January 2018"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:45
-#, fuzzy
 msgid "Godot 2.1"
-msgstr "Godot 3.1 versiossa:"
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:45
 msgid "July 2016"
@@ -3544,9 +3517,8 @@ msgid "|eol| No longer supported."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:49
-#, fuzzy
 msgid "Godot 1.1"
-msgstr "Godot 3.1 versiossa:"
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:49
 msgid "May 2015"
@@ -4750,9 +4722,9 @@ msgid ""
 "`GDScript<doc_gdscript>`. Nowadays, Godot has four (yes, four!) official "
 "languages and the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli "
-"käyttää  :ref:`GDScript<doc_gdscript>` kieltä. Nykyään Godotissa on neljä "
-"(kyllä, neljä!) virallista kieltä sekä mahdollisuus lisätä ylimääräisiä "
+"Ennen Godotin versiota 3.0 ainoa vaihtoehto pelin skriptaukseen oli käyttää :"
+"ref:`GDScript<doc_gdscript>` kieltä. Nykyään Godotissa on neljä (kyllä, "
+"neljä!) virallista kieltä sekä mahdollisuus lisätä ylimääräisiä "
 "skriptikieliä dynaamisesti!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
@@ -5142,10 +5114,9 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"Siinä ei ole paljoakaan valmiina. ``_ready()`` funktiota kutsutaan, kun "
-"solmu ja kaikki sen alisolmut lisätään aktiiviseen skeneen. **Huom:** "
-"``_ready()`` ei ole luokan konstruktori; konstruktori on sen sijaan "
-"``_init()``."
+"Siinä ei ole paljoakaan. ``_ready()`` funktiota kutsutaan, kun solmu ja "
+"kaikki sen alisolmut lisätään aktiiviseen skeneen. **Huom:** ``_ready()`` ei "
+"ole luokan konstruktori; konstruktori on sen sijaan ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"
@@ -5868,7 +5839,7 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Ikkunan alalaidassa on kenttä nimeltä \"Method In Node\".  Tämä on "
+"Ikkunan alalaidassa on kenttä nimeltä \"Method In Node\". Tämä on "
 "kohdesolmun skriptissä sen funktion nimi, jota haluat käyttää. Godot'n "
 "oletusarvoinen nimeämiskäytäntö tätä funktiota luodessa on "
 "``_on_<solmun_nimi>_<signaalin_nimi>``, mutta voit halutessasi muuttaa nimen."
@@ -6216,7 +6187,6 @@ msgid "Sprite animation"
 msgstr "Spriten animaatio"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -6233,8 +6203,8 @@ msgstr ""
 "varoitusmerkki. ``AnimatedSprite`` tarvitsee :ref:`SpriteFrames "
 "<class_SpriteFrames>` resurssin, joka on lista animaatioista, joita se voi "
 "toistaa. Luodaksesi sellaisen, etsi ``Frames`` ominaisuus Tarkastelijasta ja "
-"napsauta \"[empty]\" -> \"New SpriteFrames\". Tämän pitäisi automaattisesti "
-"avata SpriteFrames paneelin."
+"napsauta \"[empty]\" -> \"New SpriteFrames\". Napsauta uudelleen avataksesi "
+"\"SpriteFrames\" paneelin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
 #, fuzzy
@@ -6717,9 +6687,8 @@ msgid "Node setup"
 msgstr "Solmun järjestely"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
-#, fuzzy
 msgid "Click Scene -> New Scene and add the following nodes:"
-msgstr "Napsauta Skene -> Uusi skene, ja luomme Mob skenen."
+msgstr "Napsauta Skene -> Uusi skene ja lisää seuraavat solmut:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
@@ -6808,9 +6777,8 @@ msgstr ""
 "ominaisuudeksi ``90`` ``Node2D`` solmussa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "Tallenna skene"
+msgstr "Tallenna skene."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -7422,7 +7390,7 @@ msgid ""
 "time before showing the \"Start\" button."
 msgstr ""
 "Kun sinun täytyy pysäyttää koodi hetkeksi vaihtoehto ajastimelle on käyttää "
-"skenepuun ``create_timer()`` funktiota.  Tämä voi olla todella hyödyllistä "
+"skenepuun ``create_timer()`` funktiota. Tämä voi olla todella hyödyllistä "
 "luomaan viiveitä kuten ylläolevassa koodissa, missä me haluamme odottaa "
 "hetken ennenkuin näytämme \"Start\" painikkeen."
 
@@ -7432,13 +7400,12 @@ msgstr ""
 "Tätä funktiota kutsutaan ``Main`` solmussa aina kun pistemäärä muuttuu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1134
-#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
 "Yhdistä ``MessageTimer`` solmun ``timeout()`` signaali ja ``StartButton`` "
-"solmun ``pressed()`` signaali."
+"solmun ``pressed()`` signaali, ja lisää seuraava koodi uusiin funktioihin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
 msgid "Connecting HUD to Main"
@@ -7829,12 +7796,11 @@ msgid "Export presets"
 msgstr "Viennin esiasetukset"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:267
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*."
 msgstr ""
-"Seuraavaksi voit säätää viennin asetukset napsauttamalla *Projekti -> Vie*:"
+"Seuraavaksi voit säätää viennin asetukset napsauttamalla *Projekti -> Vie*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:269
 msgid ""
@@ -9422,9 +9388,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
-#, fuzzy
 msgid "The final interface."
-msgstr "Muokkaa käyttöliittymää"
+msgstr "Lopullinen käyttöliittymä."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
@@ -12638,9 +12603,8 @@ msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Skriptin lisäys"
+msgstr "Aja skripti."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -15391,7 +15355,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Tiedostojärjestelmätelakka"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -21772,9 +21736,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "Editorin ikonit"
+msgstr "Godotin editorin asetuksissa:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -22394,13 +22357,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Tämän dokumentaation lisäksi voit myös katsoa erilaisia Godot demoprojekteja "
-"<https://github.com/godotengine/godot-demo-projects>`_."
+"Esimerkkiprojektia varten, katso OS-testausdemo: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
@@ -22552,9 +22514,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr ":ref:`doc_signals`"
+msgstr "Katso myös: :ref:`doc_c_sharp_signals`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
@@ -25534,14 +25495,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:358
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Lisää tämä koodi funktioon:"
+msgstr "Törmäystunnistuksen lisääminen objekteille."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:359
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Siirtymistila"
+msgstr "Objektien asettaminen navigointimesheiksi."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:360
 msgid ""
@@ -27539,11 +27498,12 @@ msgid "Download the Android SDK"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from `developer.android.com <https://"
 "developer.android.com/studio/>`__."
-msgstr "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+"Lataa ja asenna Android SDK osoitteesta `developer.android.com <https://"
+"developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
 msgid ""
@@ -27891,14 +27851,14 @@ msgid "Download the command-line tools"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:56
-#, fuzzy
 msgid ""
 "Go to the `Android Studio download page <https://developer.android.com/"
 "studio/#command-tools>`_. To save disk space, you don't want the full IDE, "
 "so don't download it."
 msgstr ""
-"`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
-"(komentorivityökalut ovat riittävät)"
+"Mene `Android Studion lataussivulle <https://developer.android.com/studio/"
+"#command-tools>`_. Säästääksesi levytilaa, et halua koko IDE:ä, joten älä "
+"lataa sitä."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:61
 msgid ""
@@ -28579,9 +28539,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "Tuetut animaatiot:"
+msgstr "Alustatuki"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -28901,24 +28860,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:29
-#, fuzzy
 msgid "Properties."
-msgstr "ominaisuudet"
+msgstr "Ominaisuudet."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:30
-#, fuzzy
 msgid "Methods."
-msgstr "metodit"
+msgstr "Metodit."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "Vakiot"
+msgstr "Vakiot."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "Signaalit"
+msgstr "Signaalit."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid ""
@@ -46736,9 +46691,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:14
-#, fuzzy
 msgid "The structure of the demo"
-msgstr "Juurisolmun skaala."
+msgstr "Demon rakenne"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:16
 msgid ""
@@ -48405,11 +48359,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr ":ref:`doc_using_multiple_threads`"
+msgstr ""
+"Lisätietoja varten lue :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -62584,9 +62539,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
-#, fuzzy
 msgid "Texture coordinates."
-msgstr "Seuraava koordinaatti"
+msgstr "Tekstuurin koordinaatit."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
 msgid "Color from vertex primitive."
@@ -63743,9 +63697,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:166
-#, fuzzy
 msgid "Once you set it up and should look like this."
-msgstr "Skenepuun pitäisi näyttää tältä:"
+msgstr "Saatuasi sen järjestettyä, sen pitäisi näyttää tältä."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:170
 msgid ""
@@ -64348,9 +64301,8 @@ msgid "Animate vertices, like tree leaves or grass."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:23
-#, fuzzy
 msgid "Create custom particle code."
-msgstr "Mukautettujen tietotyyppien luonti"
+msgstr "Luo mukautettu partikkelikoodi."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:26
 msgid ""
@@ -69609,9 +69561,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:997
-#, fuzzy
 msgid "Let's quickly go through what this script."
-msgstr "Käydään skripti läpi:"
+msgstr "Käydään skripti pikaisesti läpi."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:1001
 msgid ""
@@ -69890,9 +69841,8 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:79
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:263
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:658
-#, fuzzy
 msgid "Let's go over how this script works."
-msgstr "Käydään skripti läpi:"
+msgstr "Käydään läpi kuinka tämä skripti toimii."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:82
 msgid "Explaining the Sphere Target code"
@@ -70977,9 +70927,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:840
-#, fuzzy
 msgid "Let's go over how this script works!"
-msgstr "Käydään skripti läpi:"
+msgstr "Käydään läpi kuinka tämä skripti toimii!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
 #, fuzzy
@@ -71377,13 +71326,12 @@ msgid "Now add a script to the main node and add the following code:"
 msgstr "Lisää ``Mob`` solmulle skripti ja lisää seuraavat jäsenmuuttujat:"
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:76
-#, fuzzy
 msgid ""
 "Before you can export this project to the Quest you need to do three more "
 "things."
 msgstr ""
-"Ennen kuin voit viedä projektisi Androidille, sinun täytyy ladata seuraavat "
-"ohjelmistot:"
+"Ennen kuin voit viedä tämän projektin Questille, sinun täytyy tehdä vielä "
+"kolme asiaa."
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:79
 msgid ""
@@ -74296,9 +74244,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
-#, fuzzy
 msgid "From your script:"
-msgstr "Skriptin rooli"
+msgstr "Skriptistäsi:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:151
 #, fuzzy
@@ -74481,9 +74428,8 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
-#, fuzzy
 msgid "Full example:"
-msgstr "Syöte-esimerkkejä"
+msgstr "Täysi esimerkki:"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:96
 msgid "Purchase an item"
@@ -75211,9 +75157,8 @@ msgid "Fails if a canvas cannot be found on the page."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:165
-#, fuzzy
 msgid "Command line argument."
-msgstr "Logiikka-asetukset"
+msgstr "Komentoriviargumentit."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:168
 msgid "Promise that resolves once the engine started."
@@ -75289,9 +75234,8 @@ msgid "Complete list of :ref:`supported locales <doc_locales>`."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:221
-#, fuzzy
 msgid "Language code."
-msgstr "Kieli"
+msgstr "Kielikoodi."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:226
 msgid ""
@@ -76331,9 +76275,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:54
-#, fuzzy
 msgid "Next, add a script to the MeshInstance."
-msgstr "Lisää tämä koodi funktioon:"
+msgstr "Seuraavaksi, lisää MeshInstance solmulle skripti."
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:56
 msgid "Under ``_ready()``, create a new Array."
@@ -77799,9 +77742,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:208
-#, fuzzy
 msgid "For more information on threads see :ref:`doc_using_multiple_threads`."
-msgstr ":ref:`doc_using_multiple_threads`"
+msgstr ""
+"Saadaksesi lisää tietoja säikeistä, katso :ref:`doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:213
 msgid ""
@@ -78207,9 +78150,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:207
-#, fuzzy
 msgid "Post processing / shadows"
-msgstr "Käsittely loppuu."
+msgstr "Jälkikäsittely / varjot"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:209
 msgid ""
@@ -83488,13 +83430,12 @@ msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
-#, fuzzy
 msgid ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
 "(command-line tools are sufficient)."
 msgstr ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
-"(komentorivityökalut ovat riittävät)"
+"(komentorivityökalut ovat riittävät)."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:29
 msgid ""
@@ -83503,11 +83444,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:31
-#, fuzzy
 msgid ""
 "`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later."
 msgstr ""
-"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 tai uudempi"
+"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 tai "
+"uudempi."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:32
 msgid "Gradle (will be downloaded and installed automatically if missing)."
@@ -84986,9 +84927,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr ":ref:`doc_gui_containers`"
+msgstr ":ref:`doc_overriding_build_options`."
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -85215,9 +85155,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Android SDK"
+msgstr "Android Studion tervetuloikkuna."
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
@@ -85399,9 +85338,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "varoitusjärjestelmän esimerkki"
+msgstr "Windows-esimerkki:"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -85444,9 +85382,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
-#, fuzzy
 msgid "Adding files to the project"
-msgstr "Lisää tämä koodi funktioon:"
+msgstr "Tiedostojen lisääminen projektiin"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
@@ -87478,9 +87415,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "Dokumentaatiosta"
+msgstr "Nyt voimme generoida dokumentaation:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -88618,7 +88554,6 @@ msgstr ""
 "ei käytännössä tunnu olevan väliä."
 
 #: ../../docs/development/file_formats/tscn.rst:36
-#, fuzzy
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
 "them. The only difference between them is the first element in the heading "
@@ -88628,7 +88563,8 @@ msgstr ""
 "Näiden osioiden tulisi esiintyä järjestyksessä, mutta niiden erottelu voi "
 "olla hankalaa. Ainoa ero niiden välillä on otsikon ensimmäinen elementti, "
 "joka on yhdistävä tekijä kaikille osion muille kohdille. Esimerkiksi "
-"kaikkien ulkoisten resurssien otsikko alkaa :code:`[ext_resource .....]`"
+"kaikkien ulkoisten resurssien otsikoiden pitäisi alkaa "
+"``[ext_resource .....]``."
 
 #: ../../docs/development/file_formats/tscn.rst:41
 msgid ""
@@ -88718,7 +88654,6 @@ msgid "``groups``"
 msgstr "``groups``"
 
 #: ../../docs/development/file_formats/tscn.rst:81
-#, fuzzy
 msgid ""
 "The first node in the file, which is also the scene root, must not have a "
 "``parent=Path/To/Node`` entry in its heading. All scene files should have "
@@ -88728,13 +88663,13 @@ msgid ""
 "should be ``\".\"``. Here is an example scene tree (but without any node "
 "content):"
 msgstr ""
-"Tiedoston ensimmäinen solmu on juurisolmu ja sen otsikossa ei tule olla :"
-"code:`parent=Path/To/Node` merkintää. Kaikissa skenetiedostoissa tulee olla "
-"tasan yksi juurisolmu. Jos näin ei ole, Godot ei pysty tuomaan tiedostoa. "
-"Muiden solmujen yläsolmujen polkujen tulee olla absoluuttisia, eikä niiden "
-"tule sisältää skenen juuren nimeä. Jos ne sijaitsevat suoraan skenen juuren "
-"alla, niiden polkujen tulee olla :code:`\".\"`. Seuraavassa on esimerkki "
-"skenepuusta (ilman solmusisältöä)."
+"Tiedoston ensimmäisessä solmussa, joka on myös skenen juurisolmu, ei tule "
+"olla ``parent=Path/To/Node`` merkintää otsikossa. Kaikissa skenetiedostoissa "
+"tulee olla tasan *yksi* juurisolmu. Jos näin ei ole, Godot ei pysty tuomaan "
+"tiedostoa. Muiden solmujen yläsolmujen polkujen tulee olla absoluuttisia, "
+"eikä niiden tule sisältää skenen juuren nimeä. Jos solmut sijaitsevat "
+"suoraan skenen juuren alla, niiden polkujen tulee olla ``\".\"``. Tässä on "
+"esimerkki skenepuusta (ilman solmusisältöä):"
 
 #: ../../docs/development/file_formats/tscn.rst:97
 #, fuzzy
@@ -88765,15 +88700,14 @@ msgstr ""
 "attribuuttia."
 
 #: ../../docs/development/file_formats/tscn.rst:165
-#, fuzzy
 msgid ""
 "The Skeleton node inherits the Spatial node, but also may have a list of "
 "bones described in key-value pairs in the format ``bones/Id/"
 "Attribute=Value``. The bone attributes consist of:"
 msgstr ""
-"Skeleton-solmu periytyy Spatial-solmusta. Sen lisäksi sillä voi olla lista "
-"luita (bones) avain-arvo pareina muodossa :code:`bones/Id/Attribute=Value`. "
-"Luiden attribuutit ovat"
+"Skeleton solmu periytyy Spatial solmusta, mutta sen lisäksi sillä voi olla "
+"lista luita avain-arvo pareina muodossa ``bones/Id/Attribute=Value``. Luiden "
+"attribuutit ovat:"
 
 #: ../../docs/development/file_formats/tscn.rst:170
 msgid "``parent``"
@@ -88801,22 +88735,20 @@ msgid "``name`` must be the first attribute of each bone."
 msgstr "``name`` täytyy olla jokaisen luun ensimmäinen attribuutti."
 
 #: ../../docs/development/file_formats/tscn.rst:177
-#, fuzzy
 msgid ""
 "``parent`` is the index of parent bone in the bone list, with parent index, "
 "the bone list is built to a bone tree."
 msgstr ""
-":code:`parent` on indeksi ylempään luuhun luulistassa. Sen avulla "
-"luulistasta muodostuu puu"
+"``parent`` on indeksi ylempään luuhun luulistassa. Sen avulla luulistasta "
+"muodostuu puu."
 
 #: ../../docs/development/file_formats/tscn.rst:179
 msgid "``rest`` is the transform matrix of bone in its \"resting\" position."
 msgstr "``rest`` on luun muunnosmatriisi lepoasennossa."
 
 #: ../../docs/development/file_formats/tscn.rst:180
-#, fuzzy
 msgid "``pose`` is the pose matrix; use ``rest`` as the basis."
-msgstr ":code:`pose` on asentomatriisi, joka käyttää :code:`rest` pohjanaan"
+msgstr "``pose`` on asentomatriisi; käytä ``rest`` perustana."
 
 #: ../../docs/development/file_formats/tscn.rst:181
 msgid ""
@@ -88897,22 +88829,20 @@ msgstr ""
 "resursseihin viitataan eri metodeilla, niillä voi olla sama tunnusluku."
 
 #: ../../docs/development/file_formats/tscn.rst:271
-#, fuzzy
 msgid ""
 "For example, to refer to the resource ``[ext_resource id=3 type=\"PackedScene"
 "\" path=....]``, you would use ``ExtResource(3)``."
 msgstr ""
-"Esimerkiksi resurssiin :code:`[ext_resource id=3 type=\"PackedScene\" "
-"path=....]` voidaan viitata näin: :code:`ExtResource(3)`"
+"Esimerkiksi resurssiin ``[ext_resource id=3 type=\"PackedScene\" "
+"path=....]`` voidaan viitata näin: ``ExtResource(3)``."
 
 #: ../../docs/development/file_formats/tscn.rst:277
-#, fuzzy
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of a path, a type and an ID."
 msgstr ""
 "Ulkoiset resurssit ovat linkkejä resursseihin, jotka eivät sisälly TSCN-"
-"tiedostoon itsessään. Ulkoinen resurssi koostuu seuraavista:"
+"tiedostoon itsessään. Ulkoinen resurssi koostuu polusta, tyypistä ja ID:stä."
 
 #: ../../docs/development/file_formats/tscn.rst:280
 #, fuzzy
@@ -89525,9 +89455,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
-#, fuzzy
 msgid "Best Practices"
-msgstr "Parhaat käytännöt:"
+msgstr "Parhaat käytännöt"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
@@ -89612,9 +89541,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
-#, fuzzy
 msgid "The complexity of the problem"
-msgstr "Juurisolmun skaala."
+msgstr "Ongelman monimutkaisuus"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:90
 msgid "The frequency the problem"

@@ -46,6 +46,7 @@
 # Emerson Guerra <guerraemerson@gmail.com>, 2018.
 # Esdras Tarsis <esdrastarsis@gmail.com>, 2019.
 # Fathos Law <fathos23@gmail.com>, 2018.
+# Felipe Fetter <felipetfetter@gmail.com>, 2020.
 # Felipe Jesus Macedo <fmacedo746@gmail.com>, 2020.
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
@@ -76,6 +77,7 @@
 # Jairo <jairom@protonmail.ch>, 2019.
 # Jairo Tuboi <tuboi.jairo@gmail.com>, 2020.
 # Jessé Silva <starclock@gmail.com>, 2018.
+# j-novaes <joaovictor.nb21@hotmail.com>, 2020.
 # João Marcelo da Cruz Souza <joao.marcelo.c@hotmail.com>, 2020.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018-2020.
@@ -180,8 +182,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-09 13:27+0200\n"
-"PO-Revision-Date: 2020-09-07 21:32+0000\n"
-"Last-Translator: Gustavo Maciel <gustamaciel2012@hotmail.com>\n"
+"PO-Revision-Date: 2020-09-12 00:46+0000\n"
+"Last-Translator: j-novaes <joaovictor.nb21@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -193,7 +195,7 @@ msgstr ""
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
-msgstr "Documentação da Godot – Versão *3.2*"
+msgstr "Documentação do Godot - versão *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -246,8 +248,8 @@ msgid ""
 "stable Godot releases nevertheless."
 msgstr ""
 "Por enquanto, as traduções localizadas estão disponíveis apenas para a "
-"versão mais\"recente\" (de desenvolvimento), mas devem ser adequadas para "
-"aprender como usar versões estáveis de Godot."
+"versão mais \"recente\" (de desenvolvimento), mas também são adequadas para "
+"aprender como usar versões estáveis do Godot."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -2171,7 +2173,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr "Mapas de luz (Lightmaps) são gerados pela CPU."
+msgstr "Lightmaps são pré-calculados na CPU."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
@@ -2251,7 +2253,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "**Post-processing:**"
-msgstr "**Processamento-póstumo:**"
+msgstr "**Pós-processamento:**"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -2375,9 +2377,8 @@ msgid "3D geometry helper class."
 msgstr "Classe auxiliar de geometria 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Física"
+msgstr "Física 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -2398,6 +2399,8 @@ msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
 msgstr ""
+"Formas pré construídas: cubo, esfera, cápsula, cilindro (apenas com física "
+"de projétil)."
 
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
@@ -2411,7 +2414,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:280
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -2456,7 +2459,7 @@ msgstr "Design e composição orientada a objetos"
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "Sinais e grupos para comunicação entre scripts."
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
@@ -2483,7 +2486,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:303
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Sintaxe inspirada em Python."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Syntax highlighting is provided on GitHub."
@@ -2505,16 +2508,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Usa Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Suporte completo para a sintaxe e funcionalidades do C# 7.0."
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Animação por Sprites"
+msgstr "Suporta todas as plataformas."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
@@ -2523,7 +2525,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`ScriptVisual: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
@@ -2538,7 +2540,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
@@ -2559,6 +2561,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
 msgstr ""
+"Use qualquer build system e funcionalidades da linguagem que você quiser."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
@@ -2574,15 +2577,15 @@ msgstr "Áudio"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "Mono, estéreo, saídas 5.1 e 7.1."
 
 #: ../../docs/about/list_of_features.rst:343
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "Não-posicional e posicional playback em 2D e 3D."
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "Efeito Doppler opcional em 2D e 3D."
 
 #: ../../docs/about/list_of_features.rst:347
 msgid ""
@@ -6217,9 +6220,9 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Em baixo da janela há um campo rotulado \"Método Receptor\". Esse é o nome "
-"da função no script do nó alvo que você quer usar. Por padrão, Godot vai "
-"criar essa função usando a convenção de nomenclatura "
+"Em baixo da janela há um campo rotulado \"Método no nó\". Esse é o nome da "
+"função no script do nó alvo que você quer usar. Por padrão, Godot vai criar "
+"essa função usando a convenção de nomenclatura "
 "``_on_<node_name>_<signal_name>`` mas você pode mudá-lo se desejar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:75
@@ -6414,7 +6417,7 @@ msgid ""
 "folder."
 msgstr ""
 "Execute o Godot e crie um novo projeto. Então, baixe :download:`dodge_assets."
-"zip <files/dodge_assets.zip>`. Ele contém as imagens e os sons que você "
+"zip <files/dodge_assets.zip>`.  Isso contém as imagens e os sons que você "
 "usará para fazer o jogo. Descompacte esses arquivos na pasta do seu projeto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:36
@@ -6535,8 +6538,8 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"Salve a cena. Clique em Cena -> Salvar ou pressione :kbd: `Ctrl+S` no "
-"Windows/Linux ou :kbd: `Cmd+S` no MacOS."
+"Salve a cena. Clique em Cena -> Salvar ou pressione :kbd:`Ctrl + S` no "
+"Windows/Linux ou :kbd:`Cmd + S` no macOS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
