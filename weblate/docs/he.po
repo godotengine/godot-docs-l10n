@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: 2020-11-13 22:59+0000\n"
 "Last-Translator: Ziv D <wizdavid@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
@@ -217,7 +217,7 @@ msgstr "על אודות"
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:7
 #: ../../docs/tutorials/math/vector_math.rst:7
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:7
-#: ../../docs/tutorials/animation/2d_skeletons.rst:12
+#: ../../docs/tutorials/animation/2d_skeletons.rst:7
 #: ../../docs/tutorials/animation/animation_tree.rst:7
 #: ../../docs/tutorials/inputs/input_examples.rst:7
 #: ../../docs/tutorials/io/saving_games.rst:7
@@ -5344,7 +5344,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:29
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
-#: ../../docs/tutorials/misc/state_design_pattern.rst:233
+#: ../../docs/tutorials/misc/state_design_pattern.rst:234
 msgid "Project setup"
 msgstr ""
 
@@ -11031,9 +11031,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:309
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:52
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:110
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:161
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:165
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:218
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:30
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
@@ -17198,12 +17198,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -17211,11 +17217,11 @@ msgid ""
 "emitted when the function didn't yield anymore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -17223,7 +17229,7 @@ msgid ""
 "call to ``Node._ready()`` is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -17231,11 +17237,11 @@ msgid ""
 "can replace the above code with a single line::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -17245,7 +17251,7 @@ msgid ""
 "depending on whether the project is run in a debug build."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."
@@ -26313,46 +26319,70 @@ msgid "Download the Android SDK"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
+msgid "Download and install the Android SDK."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
 msgid ""
-"Download and install the Android SDK from `developer.android.com <https://"
-"developer.android.com/studio/>`__."
+"You can install it using `Android Studio <https://developer.android.com/"
+"studio/>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
-"If you install Android Studio, you need to run it once to complete the SDK "
-"setup."
+"Run it once to complete the SDK setup using these `instructions <https://"
+"developer.android.com/studio/intro/update#sdk-manager>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
-msgid "Install OpenJDK 8"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
 msgid ""
-"Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, newer versions do not work."
+"Ensure that the `required packages <https://developer.android.com/studio/"
+"intro/update#recommended>`__ are installed as well."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
+msgid ""
+"You can install it using the `command line tools <https://developer.android."
+"com/studio/#command-tools>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
+msgid ""
+"Once the command line tools are installed, run the `sdkmanager <https://"
+"developer.android.com/studio/command-line/sdkmanager>`__ command to complete "
+"the setup process:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
+#, fuzzy
+msgid "Install OpenJDK"
+msgstr "Android"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:30
+msgid ""
+"Download and install  `OpenJDK <https://adoptopenjdk.net/index.html>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:33
 msgid "Create a debug.keystore"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:35
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
-"or eclipse probably generated one for you (on Linux and macOS, you can find "
-"it in the ``~/.android`` directory)."
+"or eclipse probably generated one for you (in the ``~/.android`` directory "
+"on Linux and macOS, in the ``C:\\Users\\<user>\\.android\\`` directory on "
+"Windows)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:31
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\.android"
@@ -26361,66 +26391,46 @@ msgid ""
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:39
-msgid "Make sure you have adb"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:41
-msgid ""
-"Android Debug Bridge (``adb``) is the command line tool used to communicate "
-"with Android devices. It's installed with the SDK, but you may need to "
-"install one (any) of the Android API levels for it to be installed in the "
-"SDK directory."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
 msgid "Setting it up in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:50
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:54
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:56
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
-msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
-
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
-msgid ""
-"The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
-"``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
+msgid "In that screen, 2 paths need to be set:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:63
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:62
 msgid ""
-"The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
-"installs to a directory like ``%PROGRAMFILES%\\AdoptOpenJDK\\jdk-8.0.252.09-"
-"hotspot\\bin``. On Linux, it typically installs to a directory like ``/usr/"
-"bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
-"you've installed and your machine's operating system."
+"The ``Android Sdk Path`` should be the location where the Android SDK was "
+"installed. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/"
+"Users/$USER/Library/Android/sdk/`` on macOS."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:65
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:72
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
 msgid "Providing launcher icons"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -26428,18 +26438,18 @@ msgid ""
 "resolution variants."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
 #, fuzzy
 msgid "There are two types of icons required by Godot:"
 msgstr "אין מגבלות שימוש בגודוט"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -26449,7 +26459,7 @@ msgid ""
 "at least 432×432 px."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -26457,54 +26467,54 @@ msgid ""
 "rules and some of the capabilities of adaptive icons."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
 "(264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:91
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
 msgid ""
 "It's highly recommended to provide all requested icons, and at least with "
 "the specified resolutions. Only this way your application will look great on "
 "all Android devices and versions."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
 msgid "Exporting for Google Play Store"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -26512,42 +26522,42 @@ msgid ""
 "studio/publish/app-signing>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:105
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid "**Release User:** Replace with the key alias."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
 msgid "Optimizing the APK size"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -26557,7 +26567,7 @@ msgid ""
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:131
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -26568,7 +26578,7 @@ msgid ""
 "devices in use today."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:139
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:138
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
@@ -31238,7 +31248,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
-#: ../../docs/tutorials/animation/2d_skeletons.rst:35
+#: ../../docs/tutorials/animation/2d_skeletons.rst:30
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:21
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:12
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:32
@@ -38053,7 +38063,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:837
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1226
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:680
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
@@ -38089,7 +38099,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:850
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:695
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:965
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
@@ -39593,7 +39603,7 @@ msgid "Add the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1107
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:535
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:547
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
 msgstr ""
@@ -39877,69 +39887,107 @@ msgid ""
 "tscn``, try using ``Ruins_Level.tscn`` instead."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:36
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:38
+msgid ""
+"Due to Godot updates since this tutorial was published, if you are using "
+"Godot 3.2 or later, you may need to apply the following changes to the Space "
+"Level and Ruins Level scenes:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:40
+msgid "Open ``res://assets/Space_Level_Objects/Space_Level.tscn``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:41
+msgid ""
+"In the Scene tree dock, select the **Floor_and_Celing** node. In the "
+"Inspector dock, if the Mesh Library field under GridMap is ``[empty]``, set "
+"it to ``Space_Level_Mesh_Lib.tres`` by dragging the file ``res://assets/"
+"Space_Level_Objects/Space_Level_Mesh_Lib.tres`` from the FileSystem dock to "
+"that field."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:42
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:46
+msgid "Do the same for the **Walls** node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:44
+msgid "Open ``res://assets/Ruin_Level_Objects/Ruins_Level.tscn``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:45
+msgid ""
+"In the Scene tree dock, select the **Floor** node. In the Inspector dock, if "
+"the Mesh Library field under GridMap is ``[empty]``, set it to "
+"``Ruin_Level_Mesh_Lib.tres`` by dragging the file ``res://assets/"
+"Ruin_Level_Objects/Ruin_Level_Mesh_Lib.tres`` from the FileSystem dock into "
+"that field."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:48
 msgid ""
 "You might have noticed there are several :ref:`RigidBody <class_RigidBody>` "
 "nodes placed throughout the level. We can place ``RigidBody_hit_test.gd`` on "
 "them and then they will react to being hit with bullets, so let's do that!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:39
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:51
 msgid ""
 "Follow the instructions below for either (or both) of the scenes you want to "
 "use"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:75
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:87
 msgid ""
 "Now you can fire at all the rigid bodies in either level and they will react "
 "to bullets hitting them!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:78
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:90
 msgid "Adding ammo"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:80
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
 msgid ""
 "Now that the player has working guns, let's give them a limited amount of "
 "ammo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:82
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
 msgid ""
 "Firstly, we need to define a few variables in each of our weapon scripts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:84
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:193
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:205
 msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:104
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:93
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:105
 msgid ""
 "``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:94
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:106
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reloaded weapon/magazine"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:96
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:108
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:98
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:110
 msgid ""
 "Add the following right under ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:100
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:112
 msgid ""
 "This will remove one from ``ammo_in_weapon`` every time the player fires. "
 "Notice we're not checking to see if the player has enough ammo or not in "
@@ -39947,29 +39995,29 @@ msgid ""
 "enough ammo in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:105
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:117
 msgid "Now we need to add ammo for both the rifle and the knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:107
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:119
 msgid ""
 "You may be wondering why we are adding ammo for the knife given it does not "
 "consume any ammunition. The reason we want to add ammo to the knife is so we "
 "have a consistent interface for all our weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:110
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:122
 msgid ""
 "If we did not add ammo variables for the knife, we would have to add checks "
 "for the knife. By adding the ammo variables to the knife, we don't need to "
 "worry about whether or not all our weapons have the same variables."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:113
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:125
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:121
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:133
 msgid ""
 "And then add the following to ``fire_weapon``: ``ammo_in_weapon -= 1``. Make "
 "sure that ``ammo_in_weapon -= 1`` is outside of the ``if ray."
@@ -39977,128 +40025,128 @@ msgid ""
 "player hit something or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:124
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
 msgid ""
 "Now all that's left is the knife. Add the following to ``Weapon_Knife.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:132
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:144
 msgid "Because the knife does not consume ammo, that is all we need to add."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:136
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:148
 msgid "Now we need to change one thing in ``Player.gd``, that is to say,"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:138
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:150
 msgid ""
 "how we're firing the weapons in ``process_input``. Change the code for "
 "firing weapons to the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:153
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:165
 msgid ""
 "Now the weapons have a limited amount of ammo, and will stop firing when the "
 "player runs out."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:157
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:169
 msgid ""
 "Ideally, we'd like to let the player be able to see how much ammo is left. "
 "Let's make a new function called ``process_UI``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:159
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:171
 msgid "First, add ``process_UI(delta)`` to ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:161
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
 msgid "Now add the following to ``Player.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:173
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:235
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:185
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:216
 msgid "Let's go over what's happening:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:175
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
 msgid ""
 "Firstly, we check to see if the current weapon is either ``UNARMED`` or "
 "``KNIFE``. If it is, we change the ``UI_status_label``'s text to only show "
 "the player's health since ``UNARMED`` and ``KNIFE`` do not consume ammo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:178
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:190
 msgid ""
 "If the player is using a weapon that consumes ammo, we first get the weapon "
 "node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:180
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
 msgid ""
 "Then we change ``UI_status_label``'s text to show the player's health, along "
 "with how much ammo the player has in the weapon and how much spare ammo the "
 "player has for that weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:184
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:196
 msgid "Now we can see how much ammo the player has through the HUD."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:187
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:199
 msgid "Adding reloading to the weapons"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:189
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:201
 msgid ""
 "Now that the player can run out of ammo, we need a way to let the player "
 "fill them back up. Let's add reloading next!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
 msgid ""
 "For reloading, we need to add a few more variables and a function to every "
 "weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:214
 msgid ""
 "``CAN_RELOAD``: A boolean to track whether this weapon has the ability to "
 "reload"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:215
 msgid ""
 "``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare "
 "ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
 "next part!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:204
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:216
 msgid ""
 "``RELOADING_ANIM_NAME``: The name of the reloading animation for this weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:206
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:218
 msgid ""
 "Now we need to add a function for handling reloading. Add the following "
 "function to ``Weapon_Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:237
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
 msgid ""
 "First we define a variable to see whether or not this weapon can reload."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:239
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
 msgid ""
 "Then we check to see if the player is in this weapon's idle animation state "
 "because we only want to be able to reload when the player is not firing, "
 "equipping, or unequipping."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:242
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:254
 msgid ""
 "Next we check to see if the player has spare ammo, and if the ammo already "
 "in the weapon is equal to a fully reloaded weapon. This way we can ensure "
@@ -40106,246 +40154,246 @@ msgid ""
 "already full of ammo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:245
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:257
 msgid ""
 "If we can still reload, then we calculate the amount of ammo needed to "
 "reload the weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:247
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:259
 msgid ""
 "If the player has enough ammo to fill the weapon, we remove the ammo needed "
 "from ``spare_ammo`` and then set ``ammo_in_weapon`` to a full weapon/"
 "magazine."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:249
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:261
 msgid ""
 "If the player does not have enough ammo, we add all the ammo left in "
 "``spare_ammo``, and then set ``spare_ammo`` to ``0``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:251
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:263
 msgid ""
 "Next we play the reloading animation for this weapon, and then return "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:253
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:265
 msgid "If the player could not reload, we return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:257
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:269
 msgid ""
 "Now we need to add reloading to the rifle. Open up ``Weapon_Rifle.gd`` and "
 "add the following class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:266
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:278
 msgid ""
 "These variables are exactly the same as the pistol, just with "
 "``RELOADING_ANIM_NAME`` changed to the rifle's reloading animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:268
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:280
 msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:297
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:309
 msgid "This code is exactly the same as the one for the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:301
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:313
 msgid ""
 "The last bit we need to do for the weapons is add 'reloading' to the knife. "
 "Add the following class variables to ``Weapon_Knife.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:310
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:322
 msgid ""
 "Since we both cannot reload or refill a knife, we set both constants to "
 "``false``. We also define ``RELOADING_ANIM_NAME`` as an empty string, since "
 "the knife has no reloading animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:313
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:325
 msgid "Now we need to add ``reloading_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:320
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:332
 msgid "Since we cannot reload a knife, we always return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:323
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:335
 msgid "Adding reloading to the player"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:325
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:337
 msgid ""
 "Now we need to add a few things to ``Player.gd``. First we need to define a "
 "new class variable:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:331
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:343
 msgid ""
 "``reloading_weapon``: A variable to track whether or not the player is "
 "currently trying to reload."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:334
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:346
 msgid "Next we need to add another function call to ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:336
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:348
 msgid ""
 "Add ``process_reloading(delta)`` to ``_physics_process``. Now "
 "``_physics_process`` should look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:347
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:359
 msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:358
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:409
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:370
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:421
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:362
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:424
 msgid "Let's go over what's happening here."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:360
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:372
 msgid "Firstly, we check to make sure the player is trying to reload."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:362
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:374
 msgid ""
 "If the player is trying to reload, we then get the current weapon. If the "
 "current weapon does not equal ``null``, we call its ``reload_weapon`` "
 "function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:364
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:376
 msgid ""
 "If the current weapon is equal to ``null``, then the current weapon is "
 "``UNARMED``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:366
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:378
 msgid ""
 "Finally, we set ``reloading_weapon`` to ``false`` because, regardless of "
 "whether the player successfully reloaded, we've tried reloading and no "
 "longer need to keep trying."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:371
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:383
 msgid ""
 "Before we can let the player reload, we need to change a few things in "
 "``process_input``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:373
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:385
 msgid ""
 "The first thing we need to change is in the code for changing weapons. We "
 "need to add an additional check (``if reloading_weapon == false:``) to see "
 "if the player is reloading:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:384
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:396
 msgid ""
 "This makes it so the player cannot change weapons if the player is reloading."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:386
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:398
 msgid ""
 "Now we need to add the code to trigger a reload when the player pushes the "
 "``reload`` action. Add the following code to ``process_input``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:411
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:423
 msgid ""
 "First we make sure the player is not reloading already, nor is the player "
 "trying to change weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:413
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:425
 msgid "Then we check to see if the ``reload`` action has been pressed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:415
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:427
 msgid ""
 "If the player has pressed ``reload``, we then get the current weapon and "
 "check to make sure it is not ``null``. Then we check to see whether the "
 "weapon can reload or not using its ``CAN_RELOAD`` constant."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:418
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:430
 msgid ""
 "If the weapon can reload, we then get the current animation state, and make "
 "a variable for tracking whether the player is already reloading or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:420
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:432
 msgid ""
 "We then go through every weapon to make sure the player is not already "
 "playing that weapon's reloading animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:422
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:434
 msgid ""
 "If the player is not reloading any weapon, we set ``reloading_weapon`` to "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:426
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:438
 msgid ""
 "One thing I like to add is where the weapon will reload itself if you try to "
 "fire it and it's out of ammo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:428
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:440
 msgid ""
 "We also need to add an additional if check (``is_reloading_weapon == false:"
 "``) so the player cannot fire the current weapon while reloading."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:431
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:443
 msgid ""
 "Let's change our firing code in ``process_input`` so it reloads when trying "
 "to fire an empty weapon:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:449
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
 msgid ""
 "Now we check to make sure the player is not reloading before we fire the "
 "weapon, and when we have ``0`` or less ammo in the current weapon, we set "
 "``reloading_weapon`` to ``true`` if the player tries to fire."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:452
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:464
 msgid ""
 "This will make it so the player will try to reload when attempting to fire "
 "an empty weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:456
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:468
 msgid ""
 "With that done, the player can now reload! Give it a try! Now you can fire "
 "all the spare ammo for each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:459
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:471
 msgid "Adding sounds"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:461
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:473
 msgid ""
 "Finally, let's add some sounds that accompany the player firing, reloading "
 "and changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:463
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:475
 msgid ""
 "There are no game sounds provided in this tutorial (for legal reasons). "
 "https://gamesounds.xyz/ is a collection of **\"royalty free or public domain "
@@ -40353,28 +40401,28 @@ msgid ""
 "which can be found in the Sonniss.com GDC 2017 Game Audio Bundle."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:467
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:479
 msgid ""
 "Open up ``Simple_Audio_Player.tscn``. It is simply a :ref:`Spatial "
 "<class_Spatial>` with an :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "as its child."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:469
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:481
 msgid ""
 "The reason this is called a 'simple' audio player is because we are not "
 "taking performance into account and because the code is designed to provide "
 "sound in the simplest way possible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:472
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:484
 msgid ""
 "If you want to use 3D audio, so it sounds like it's coming from a location "
 "in 3D space, right click the :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` and select \"Change type\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:475
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:487
 msgid ""
 "This will open the node browser. Navigate to :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` and select \"change\". In the source for this "
@@ -40384,21 +40432,21 @@ msgid ""
 "code provided below will work regardless of which one you chose."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:480
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:492
 msgid ""
 "Create a new script and call it ``Simple_Audio_Player.gd``. Attach it to "
 "the :ref:`Spatial <class_Spatial>` in ``Simple_Audio_Player.tscn`` and "
 "insert the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:532
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:544
 msgid ""
 "By setting ``position`` to ``null`` by default in ``play_sound``, we are "
 "making it an optional argument, meaning ``position`` doesn't necessarily "
 "have to be passed in to call ``play_sound``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:539
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:551
 msgid ""
 "In ``_ready``, we get the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "and connect its ``finished`` signal to the ``destroy_self`` function. It "
@@ -40408,13 +40456,13 @@ msgid ""
 "``stop`` on the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:543
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
 msgid ""
 "Make sure your sound files are **not** set to loop! If it is set to loop, "
 "the sounds will continue to play infinitely and the script will not work!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:546
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:558
 msgid ""
 "The ``play_sound`` function is what we will be calling from ``Player.gd``. "
 "We check if the sound is one of the three possible sounds, and if it is one "
@@ -40422,26 +40470,26 @@ msgid ""
 "<class_AudioStreamPlayer>` to the correct sound."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:562
 msgid ""
 "If it is an unknown sound, we print an error message to the console and free "
 "the audio player."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:552
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:564
 msgid ""
 "If you are using an :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>`, "
 "remove the ``#`` to set the position of the audio player node so it plays at "
 "the correct position."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:567
 msgid ""
 "Finally, we tell the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` to "
 "play."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:557
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:569
 msgid ""
 "When the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` is finished "
 "playing the sound, it will call ``destroy_self`` because we connected the "
@@ -40449,11 +40497,11 @@ msgid ""
 "<class_AudioStreamPlayer>` and free the audio player to save on resources."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:561
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:573
 msgid "This system is extremely simple and has some major flaws:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:563
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:575
 msgid ""
 "One flaw is we have to pass in a string value to play a sound. While it is "
 "relatively simple to remember the names of the three sounds, it can be "
@@ -40462,7 +40510,7 @@ msgid ""
 "remember the name(s) of each sound effect we want to play."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:568
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:580
 msgid ""
 "Another flaw is we cannot play looping sounds effects, nor background music, "
 "easily with this system. Because we cannot play looping sounds, certain "
@@ -40471,21 +40519,21 @@ msgid ""
 "we need to continue playing it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:573
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:585
 msgid ""
 "One of the biggest flaws with this system is we can only play sounds from "
 "``Player.gd``. Ideally we'd like to be able to play sounds from any script "
 "at any time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:578
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:590
 msgid ""
 "With that done, let's open up ``Player.gd`` again. First we need to load the "
 "``Simple_Audio_Player.tscn``. Place the following code in the class "
 "variables section of the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:585
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:597
 msgid ""
 "Now we need to instance the simple audio player when we need it, and then "
 "call its ``play_sound`` function and pass the name of the sound we want to "
@@ -40493,23 +40541,23 @@ msgid ""
 "in ``Player.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:597
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:609
 msgid "Let's walk through what this function does:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:601
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:613
 msgid ""
 "The first line instances the ``Simple_Audio_Player.tscn`` scene and assigns "
 "it to a variable named ``audio_clone``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:604
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:616
 msgid ""
 "The second line gets the scene root, and this has a large (though safe) "
 "assumption."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:606
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:618
 msgid ""
 "We first get this node's :ref:`SceneTree <class_SceneTree>`, and then access "
 "the root node, which in this case is the :ref:`Viewport <class_Viewport>` "
@@ -40520,7 +40568,7 @@ msgid ""
 "the player is under, which may not always be the case**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:612
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
 msgid ""
 "If this doesn't make sense to you, don't worry too much about it. The second "
 "line of code only does not work reliably if you have multiple scenes loaded "
@@ -40529,96 +40577,96 @@ msgid ""
 "potentially a issue depending on how you handle scene loading."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:616
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:628
 msgid ""
 "The third line adds our newly created ``Simple_Audio_Player`` scene to be a "
 "child of the scene root. This works exactly the same as when we are spawning "
 "bullets."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:619
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:631
 msgid ""
 "Finally, we call the ``play_sound`` function and pass in the arguments "
 "passed in to ``create_sound``. This will call ``Simple_Audio_Player.gd``'s "
 "``play_sound`` function with the passed in arguments."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:636
 msgid ""
 "Now all that is left is playing the sounds when we want to. Let's add sound "
 "to the pistol first!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:626
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:638
 msgid "Open up ``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:628
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:640
 msgid ""
 "Now, we want to make a noise when the player fires the pistol, so add the "
 "following to the end of the ``fire_weapon`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:646
 msgid ""
 "Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:636
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:658
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:648
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:670
 msgid ""
 "To make a sound when the player reloads, we need to add the following right "
 "under ``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` "
 "in the ``reload_weapon`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:643
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:665
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:655
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:677
 msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:647
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:659
 msgid "Now let's add sounds to the rifle. Open up ``Weapon_Rifle.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:650
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:662
 msgid ""
 "To play sounds when the rifle is fired, add the following to the end of the "
 "``fire_weapon`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:668
 msgid ""
 "Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:684
 msgid ""
 "Now you have weapons with limited ammo that play sounds when you fire them!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:674
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:686
 msgid ""
 "At this point, we have all the basics of an FPS game working. There are "
 "still a few things that would be nice to add, and we're going to add them in "
 "the next three parts!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:677
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:689
 msgid ""
 "For example, right now we have no way to add ammo to our spares, so we'll "
 "eventually run out. Also, we don't have anything to shoot at outside of the :"
 "ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:680
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:692
 msgid ""
 "In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
 "along with some health and ammo pick ups! We're also going to add joypad "
 "support, so we can play with wired Xbox 360 controllers!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:685
+#: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:697
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_3.zip <files/Godot_FPS_Part_3.zip>`"
@@ -50637,14 +50685,7 @@ msgstr ""
 msgid "2D skeletons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:8
-msgid ""
-"There are known issues with 2D skeletons on mobile and web platforms with "
-"the GLES2 renderer. We recommend using the GLES3 renderer if your project "
-"relies on Skeleton2D for now."
-msgstr ""
-
-#: ../../docs/tutorials/animation/2d_skeletons.rst:14
+#: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
 "When working with 3D, skeletal deforms are common for characters and "
 "creatures and most 3D modelling applications support it. For 2D, as this "
@@ -50652,176 +50693,176 @@ msgid ""
 "aimed for this."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:18
+#: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
 "One option is to create animations in third-party software such as Spine or "
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
 "built-in."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:22
+#: ../../docs/tutorials/animation/2d_skeletons.rst:17
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:25
+#: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:27
+#: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:29
+#: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:32
+#: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:39
+#: ../../docs/tutorials/animation/2d_skeletons.rst:34
 msgid ""
 "Before starting, we recommend you to go through the :ref:"
 "`doc_cutout_animation` tutorial to gain a general understanding of animating "
 "within Godot."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:43
+#: ../../docs/tutorials/animation/2d_skeletons.rst:38
 msgid ""
 "For this tutorial, we will be using a single image to construct our "
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
 "png>` or save the image below."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:49
+#: ../../docs/tutorials/animation/2d_skeletons.rst:44
 msgid ""
 "It is also advised to download the final character image :download:"
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
 "putting the different pieces together."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:56
+#: ../../docs/tutorials/animation/2d_skeletons.rst:51
 #, fuzzy
 msgid "Creating the polygons"
 msgstr "יצירת תוכן"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:58
+#: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid ""
 "Create a new scene for your model (if it's going to be an animated "
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:62
+#: ../../docs/tutorials/animation/2d_skeletons.rst:57
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:67
+#: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:72
+#: ../../docs/tutorials/animation/2d_skeletons.rst:67
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:77
+#: ../../docs/tutorials/animation/2d_skeletons.rst:72
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:82
+#: ../../docs/tutorials/animation/2d_skeletons.rst:77
 msgid ""
 "Duplicate the polygon node and give it a proper name. Then, enter the \"UV\" "
 "dialog again and replace the old polygon with another one in the new desired "
 "piece."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:86
+#: ../../docs/tutorials/animation/2d_skeletons.rst:81
 msgid ""
 "When you duplicate nodes and the next piece has a similar shape, you can "
 "edit the previous polygon instead of drawing a new one."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:89
+#: ../../docs/tutorials/animation/2d_skeletons.rst:84
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
 "\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:94
+#: ../../docs/tutorials/animation/2d_skeletons.rst:89
 msgid "Keep doing this until you mapped all pieces."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:98
+#: ../../docs/tutorials/animation/2d_skeletons.rst:93
 msgid ""
 "You will notice that pieces for nodes appear in the same layout as they do "
 "in the original texture. This is because by default, when you draw a "
 "polygon, the UV and points are the same."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:102
+#: ../../docs/tutorials/animation/2d_skeletons.rst:97
 msgid ""
 "Rearrange the pieces and build the character. This should be pretty quick. "
 "There is no need to change pivots, so don't bother making sure rotation "
 "pivots for each piece are right; you can leave them be for now."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:108
+#: ../../docs/tutorials/animation/2d_skeletons.rst:103
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:113
+#: ../../docs/tutorials/animation/2d_skeletons.rst:108
 msgid ""
 "And there you go! It was definitely much easier than in the cutout tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:116
+#: ../../docs/tutorials/animation/2d_skeletons.rst:111
 #, fuzzy
 msgid "Creating the skeleton"
 msgstr "יצירת תוכן"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:118
+#: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:123
+#: ../../docs/tutorials/animation/2d_skeletons.rst:118
 msgid ""
 "Create a ``Bone2D`` node as a child of the skeleton. Put it on the hip "
 "(usually skeletons start here). The bone will be pointing to the right, but "
 "you can ignore this for now."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:129
+#: ../../docs/tutorials/animation/2d_skeletons.rst:124
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:133
+#: ../../docs/tutorials/animation/2d_skeletons.rst:128
 msgid ""
 "At the end of this chain, there will be a *jaw* node. It is, again, very "
 "short and pointing to the right. This is normal for bones without children. "
 "The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:139
+#: ../../docs/tutorials/animation/2d_skeletons.rst:134
 msgid ""
 "In this case, we don't need to rotate the bone (coincidentally the jaw "
 "points right in the sprite), but in case you need to, feel free to do it. "
@@ -50829,11 +50870,11 @@ msgid ""
 "usually need a length or a specific rotation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:144
+#: ../../docs/tutorials/animation/2d_skeletons.rst:139
 msgid "Keep going and build the whole skeleton:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:148
+#: ../../docs/tutorials/animation/2d_skeletons.rst:143
 msgid ""
 "You will notice that all bones raise an annoying warning about a missing "
 "rest pose. This means that it's time to set one. Go to the *skeleton* node "
@@ -50841,33 +50882,33 @@ msgid ""
 "it anytime you want (which is very handy for animating):"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:155
+#: ../../docs/tutorials/animation/2d_skeletons.rst:150
 msgid ""
 "The warnings will go away. If you modify the skeleton (add/remove bones) you "
 "will need to set the rest pose again."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:159
+#: ../../docs/tutorials/animation/2d_skeletons.rst:154
 msgid "Deforming the polygons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:161
+#: ../../docs/tutorials/animation/2d_skeletons.rst:156
 msgid ""
 "Select the previously created polygons and assign the skeleton node to their "
 "``Skeleton`` property. This will ensure that they can eventually be deformed "
 "by it."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:167
+#: ../../docs/tutorials/animation/2d_skeletons.rst:162
 msgid "Click the property highlighted above and select the skeleton node:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:171
+#: ../../docs/tutorials/animation/2d_skeletons.rst:166
 msgid ""
 "Again, open the UV editor for the polygon and go to the *Bones* section."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:175
+#: ../../docs/tutorials/animation/2d_skeletons.rst:170
 msgid ""
 "You will not be able to paint weights yet. For this you need to synchronize "
 "the list of bones from the skeleton with the polygon. This step is done only "
@@ -50877,14 +50918,14 @@ msgid ""
 "modified. Push the \"Sync Bones to Polygon\" button to sync the list."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:184
+#: ../../docs/tutorials/animation/2d_skeletons.rst:179
 msgid ""
 "The list of bones will automatically appear. By default, your polygon has no "
 "weight assigned to any of them. Select the bones you want to assign weight "
 "to and paint them:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:190
+#: ../../docs/tutorials/animation/2d_skeletons.rst:185
 msgid ""
 "Points in white have a full weight assigned, while points in black are not "
 "influenced by the bone. If the same point is painted white for multiple "
@@ -50893,20 +50934,20 @@ msgid ""
 "bending effect)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:198
+#: ../../docs/tutorials/animation/2d_skeletons.rst:193
 msgid ""
 "After painting the weights, animating the bones (NOT the polygons!) will "
 "have the desired effect of modifying and bending the polygons accordingly. "
 "As you only need to animate bones in this approach, work becomes much easier!"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:202
+#: ../../docs/tutorials/animation/2d_skeletons.rst:197
 msgid ""
 "But it's not all roses. Trying to animate bones that bend the polygon will "
 "often yield unexpected results:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:207
+#: ../../docs/tutorials/animation/2d_skeletons.rst:202
 msgid ""
 "This happens because Godot generates internal triangles that connect the "
 "points when drawing the polygon. They don't always bend the way you would "
@@ -50914,44 +50955,44 @@ msgid ""
 "you expect it to deform."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:213
+#: ../../docs/tutorials/animation/2d_skeletons.rst:208
 msgid "Internal vertices"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:215
+#: ../../docs/tutorials/animation/2d_skeletons.rst:210
 msgid ""
 "Open the UV menu for each bone again and go to the *Points* section. Add "
 "some internal vertices in the regions where you expect the geometry to bend:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:220
+#: ../../docs/tutorials/animation/2d_skeletons.rst:215
 msgid ""
 "Now, go to the *Polygon* section and redraw your own polygons with more "
 "detail. Imagine that, as your polygons bend, you need to make sure they "
 "deform the least possible, so experiment a bit to find the right setup."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:226
+#: ../../docs/tutorials/animation/2d_skeletons.rst:221
 msgid ""
 "Once you start drawing, the original polygon will disappear and you will be "
 "free to create your own:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
+#: ../../docs/tutorials/animation/2d_skeletons.rst:226
 msgid ""
 "This amount of detail is usually fine, though you may want to have more fine-"
 "grained control over where triangles go. Experiment by yourself until you "
 "get the results you like."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:235
+#: ../../docs/tutorials/animation/2d_skeletons.rst:230
 msgid ""
 "**Note:** Don't forget that your newly added internal vertices also need "
 "weight painting! Go to the *Bones* section again to assign them to the right "
 "bones."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:238
+#: ../../docs/tutorials/animation/2d_skeletons.rst:233
 msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
@@ -60894,9 +60935,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:309
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:52
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:110
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:161
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:214
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:165
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:218
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Built-in"
@@ -60915,7 +60956,7 @@ msgid "Global time, in seconds."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:59
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:63
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "Vertex built-ins"
 msgstr ""
@@ -60954,24 +60995,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:102
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:106
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:109
 msgid "**x**: Rotation angle in radians."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:106
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:110
 msgid "**y**: Phase during lifetime (0 to 1)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:107
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:111
 msgid "**z**: Animation frame."
 msgstr ""
 
@@ -61023,7 +61064,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:120
 msgid "View space to clip space transform."
 msgstr ""
 
@@ -61075,7 +61116,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
 msgid "inout vec3 **NORMAL**"
 msgstr ""
 
@@ -61111,7 +61152,7 @@ msgid "Roughness for vertex lighting."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:167
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
 msgid "inout vec2 **UV**"
 msgstr ""
 
@@ -61142,8 +61183,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:134
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:67
 msgid "inout vec4 **COLOR**"
 msgstr ""
@@ -61153,7 +61194,7 @@ msgid "Color from vertices."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:140
 msgid "inout float **POINT_SIZE**"
 msgstr ""
 
@@ -61170,7 +61211,7 @@ msgid "Instance ID for instancing."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:122
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
@@ -61179,7 +61220,7 @@ msgid "Instance custom data (for particles, mostly)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:140
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:144
 msgid "Fragment built-ins"
 msgstr ""
 
@@ -61194,8 +61235,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:315
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:163
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:220
 msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
@@ -61208,13 +61249,13 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:112
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:326
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:120
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
@@ -61261,7 +61302,7 @@ msgid "Binormal that comes from vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:169
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
 msgid "out vec3 **NORMALMAP**"
 msgstr ""
 
@@ -61279,8 +61320,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:332
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "in vec2 **UV**"
 msgstr ""
 
@@ -61300,7 +61341,7 @@ msgid "UV2 that comes from vertex function."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid "in vec4 **COLOR**"
 msgstr ""
 
@@ -61480,8 +61521,8 @@ msgid "Custom depth value (0..1)."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:191
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
 msgid "in vec2 **SCREEN_UV**"
 msgstr ""
 
@@ -61490,8 +61531,8 @@ msgid "Screen UV coordinate for current pixel."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:241
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:245
 msgid "in vec2 **POINT_COORD**"
 msgstr ""
 
@@ -61500,7 +61541,7 @@ msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
 #, fuzzy
 msgid "Light built-ins"
 msgstr "אנימציות"
@@ -61559,7 +61600,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
@@ -61682,126 +61723,130 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:54
 msgid ""
-"Global time, in seconds. It's subject to the rollover setting (which is "
-"3,600 -1 hour- by default)."
+"Global time since the engine has started, in seconds (always positive). It's "
+"subject to the rollover setting (which is 3,600 seconds by default). It's "
+"not affected by :ref:`time_scale<class_Engine_property_time_scale>` or "
+"pausing, but you can override the ``TIME`` variable's time scale by calling "
+"``VisualServer.set_shader_time_scale()`` with the desired time scale factor "
+"as parameter (``1.0`` being the default)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:61
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the camera). If not written to, these values will not be "
 "modified and be passed through as they came."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:64
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:68
 msgid ""
 "The user can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:77
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:81
 msgid ""
 "``WORLD_MATRIX`` is actually a modelview matrix. It takes input in local "
 "space and transforms it into view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:84
 msgid ""
 "In order to get the world space coordinates of a vertex, you have to pass in "
 "a custom uniform like so:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:87
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:91
 msgid "Then, in your vertex shader:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:98
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:102
 msgid ""
 "``world_position`` can then be used in either the vertex or fragment "
 "functions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:100
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:104
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:112
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:116
 msgid "Image space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
 msgid "in mat4 **EXTRA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
 msgid "Extra transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:118
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:122
 msgid "Instance custom data."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:120
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:120
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:201
 msgid "``true`` if this is a light pass."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:122
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
 msgid "inout vec2 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:122
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
 msgid "Vertex, in image space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:187
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:124
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:187
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite with a texture of "
 "size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
 msgid "Texture coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:130
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:134
 msgid "Color from vertex primitive."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:179
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid "in vec4 **MODULATE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:132
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:179
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
 msgid ""
 "Final modulate color. If used, **COLOR** will not be multiplied by modulate "
 "automatically after the fragment function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:140
 msgid "Point size for point drawing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:142
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:146
 msgid ""
 "Certain Nodes (for example, :ref:`Sprites <class_Sprite>`) display a texture "
 "by default. However, when a custom fragment function is attached to these "
@@ -61810,7 +61855,7 @@ msgid ""
 "color for such nodes, use:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:151
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:155
 msgid ""
 "This differs from the behavior of the built-in normal map. If a normal map "
 "is attached, Godot uses it by default and assigns its value to the built-in "
@@ -61820,83 +61865,83 @@ msgid ""
 "and overwriting ``NORMAL``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:163
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:216
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:220
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:169
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overwrites "
 "**NORMAL**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "inout float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
 msgid "Normalmap depth for scaling."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:178
 msgid "UV from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:180
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:187
 msgid "in sampler2D **TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:187
 msgid "Default 2D texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:189
 msgid "in sampler2D **NORMAL_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:189
 msgid "Default 2D normal texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
 msgid "Screen UV for use with **SCREEN_TEXTURE**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:197
 msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:199
 msgid "Coordinate for drawing points."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
 msgid "in sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:209
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
 "CanvasItem shaders, the shader is called once for the object being drawn, "
@@ -61907,102 +61952,102 @@ msgid ""
 "visible where it is covered by light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:215
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
 "``true``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:220
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:224
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
 "happens outside of this function**."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:227
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:229
 msgid ""
 "Input Color. This is the output of the fragment function (with final "
 "modulation applied, if **MODULATE** is not used in any function of the "
 "shader)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
 msgid "sampler2D **TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:237
 msgid "Current texture in use for CanvasItem."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
 msgid "**SCREEN_TEXTURE** Coordinate (for using with screen texture)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:241
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:245
 msgid "UV for Point Sprite."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:247
 msgid "inout vec2 **LIGHT_VEC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:243
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:247
 msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter illumination direction when normal maps are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:246
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:250
 msgid "inout vec2 **SHADOW_VEC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:246
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:250
 msgid ""
 "Vector from light to fragment in local coordinates. It can be modified to "
 "alter shadow computation."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:249
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
 msgid "inout float **LIGHT_HEIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:249
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
 msgid "Height of Light. Only effective when normals are used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:251
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:255
 msgid "inout vec4 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:251
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:255
 msgid "Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:257
 msgid "in vec2 **LIGHT_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:257
 msgid "UV for Light texture."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:259
 msgid "out vec4 **SHADOW_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:255
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:259
 msgid "Shadow Color of Light."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:261
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:261
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
@@ -71919,8 +71964,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://github.com/"
-"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
+"describe below in the `GDNative-demos repository <https://docs.godotengine."
+"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
@@ -71968,9 +72013,9 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 msgid ""
-"A Git clone of the `godot_headers repository <https://github.com/"
-"GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
-"public API exposed to GDNative."
+"A Git clone of the `godot_headers repository <https://github.com/godotengine/"
+"godot_headers>`_: these are the C headers for Godot's public API exposed to "
+"GDNative."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
@@ -72523,8 +72568,8 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
 msgid ""
-"a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`__."
+"a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
+"cpp>`__."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
@@ -80725,7 +80770,7 @@ msgstr ""
 msgid ""
 "Finally, this script is actually being designated as a class named "
 "``State``. This makes refactoring the code easier, since the file path from "
-"using the ``load()`` and ``preload()`` functions in godot will not be needed."
+"using the ``load()`` and ``preload()`` functions in Godot will not be needed."
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:88
@@ -80736,20 +80781,20 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
 msgid ""
-"The since the ``Run`` and ``Idle`` states extend from ``State`` which "
-"extends ``Node2D``, the function ``_physics_process(delta)`` is called from "
-"the **bottom-up** meaning ``Run`` and ``Idle`` will call their "
-"implementation of ``_physics_process(delta)``, then ``State`` will call its "
-"implementation, then ``Node2D`` will call its own implementation and so on. "
-"This may seem strange, but it is only relevant for predefined functions such "
-"as ``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
+"Since the ``Run`` and ``Idle`` states extend from ``State`` which extends "
+"``Node2D``, the function ``_physics_process(delta)`` is called from the "
+"**bottom-up** meaning ``Run`` and ``Idle`` will call their implementation of "
+"``_physics_process(delta)``, then ``State`` will call its implementation, "
+"then ``Node2D`` will call its own implementation and so on. This may seem "
+"strange, but it is only relevant for predefined functions such as "
+"``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
 msgid ""
-"There is a round-about method for obtaining a state instance. A state "
-"factory can be used."
+"There is a roundabout method for obtaining a state instance. A state factory "
+"can be used."
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
@@ -80765,14 +80810,14 @@ msgid ""
 "script ``persistent_state.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:229
+#: ../../docs/tutorials/misc/state_design_pattern.rst:230
 msgid ""
 "The ``persistent_state.gd`` script contains code for detecting input. This "
 "was to make the tutorial simple, but it is not usually best practice to do "
 "this."
 msgstr ""
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:235
+#: ../../docs/tutorials/misc/state_design_pattern.rst:236
 msgid ""
 "This tutorial made an assumption that the node it would be attached to "
 "contained a child node which is an :ref:`AnimatedSprite "
@@ -80782,24 +80827,24 @@ msgid ""
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:242
+#: ../../docs/tutorials/misc/state_design_pattern.rst:243
 msgid ""
 "The zip file of the llama used in this tutorial is :download:`here <files/"
 "llama.zip>`. The source was from `piskel_llama <https://www.piskelapp.com/p/"
 "agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_, but I couldn't find "
-"the original creator information on that page though... There is also a good "
+"the original creator information on that page... There is also a good "
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:247
+#: ../../docs/tutorials/misc/state_design_pattern.rst:248
 msgid ""
 "So, the only script that must be attached is ``persistent_state.gd``, which  "
 "should be attached to the top node of the player, which is a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:254
+#: ../../docs/tutorials/misc/state_design_pattern.rst:255
 msgid ""
 "Now the player has utilized the state design pattern to implement its two "
 "different states. The nice part of this pattern is that if one wanted to add "
