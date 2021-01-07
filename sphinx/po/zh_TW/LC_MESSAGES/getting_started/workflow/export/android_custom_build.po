@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:4
 msgid "Custom builds for Android"
-msgstr "為 Android 平台自定建構"
+msgstr "為 Android 平台自定建置"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:6
 msgid ""
@@ -30,8 +30,8 @@ msgid ""
 "project."
 msgstr ""
 "Godot 中有可以使用自定 Android 樣板的選項。不是使用 Godot 附帶的預編譯樣板，"
-"而是將真正的 Android Java 專案安裝到專案資料夾中。Godot 接著會建構該 Java 專"
-"案，並使用建構結果來在每次匯出專案是作為匯出樣板使用。"
+"而是將真正的 Android Java 專案安裝到專案資料夾中。Godot 接著會建置該 Java 專"
+"案，並使用建置結果來在每次匯出專案是作為匯出樣板使用。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:11
 msgid "There are some reasons why you may want to do this:"
@@ -39,18 +39,18 @@ msgstr "有幾個原因會需要這麼做："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:13
 msgid "Modify the project before it's built."
-msgstr "要在建構前修改專案。"
+msgstr "要在建置前修改專案。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
 msgid "Add external SDKs that build with your project."
-msgstr "建構專案時要加上外部 SDK。"
+msgstr "建置專案時要加上外部 SDK。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 msgid ""
 "Configuring the custom build is a more or less straightforward process, but "
 "it may take a while to get used to how the Android SDK works."
 msgstr ""
-"設定自定建構不一定是個簡單的過程，可能需要花點時間才能習慣 Android SDK 的使用"
+"設定自定建置不一定是個簡單的過程，可能需要花點時間才能習慣 Android SDK 的使用"
 "方法。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:19
@@ -60,11 +60,11 @@ msgstr "我們儘量提供該過程的詳細說明。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:22
 msgid "Set up the custom build environment"
-msgstr "設定自定建構環境"
+msgstr "設定自定建置環境"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:24
 msgid "Go to the Project menu, and install the *Custom Build* template:"
-msgstr "前往 [專案]，然後安裝 **自定建構** 樣板："
+msgstr "前往 [專案]，然後安裝 **自定建置** 樣板："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:28
 msgid ""
@@ -73,15 +73,13 @@ msgid ""
 msgstr "請確定有下載匯出樣板。若沒下載的話，該選單會協助下載。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
-#, fuzzy
 msgid ""
 "A Gradle-based Android project will be created under ``res://android/"
 "build``. Editing these files is not needed unless you want to :ref:`create "
 "your own add-ons<doc_android_plugin>`, or you really need to modify the "
 "project."
 msgstr ""
-"安裝後會在 ``res://android/build`` 中建立一個基於 Grandle 的 Android 專案，並"
-"在 ``res://android`` 中加上 ``.gdignore`` 來讓 Godot 檔案系統忽略該資料夾。除"
+"安裝後會在 ``res://android/build`` 中建立一個基於 Grandle 的 Android 專案。除"
 "非想要 :ref:`建立自己的增益集` 或是真的有需要修改專案，否則沒有必要修改這些檔"
 "案。"
 
@@ -122,6 +120,9 @@ msgid ""
 "*Custom Setup* view of the installer. You have to restart Godot after this, "
 "otherwise Godot can't find the ``JAVA_HOME`` variable."
 msgstr ""
+"在 Windows 上請確保有在安裝程式的 **自定安裝 (Custom Setup)** 畫面中勾選「設"
+"定 ``JAVA_HOME`` 變數 (Set ``JavaHome`` Variable)」。設定好該選項後會需要重新"
+"啟動 Godot，否則 Godot 會找不到 ``JAVA_HOME`` 變數。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
 msgid "Download the command-line tools"
@@ -145,14 +146,14 @@ msgstr ""
 "成相同目的。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
-#, fuzzy
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
 "are listed under *Download Options*. Scroll down a bit until you see them "
 "and download the ZIP file for your platform."
 msgstr ""
 "找到該頁面中的 **Command line tools only** (僅命令行工具) 段落。目前，這個段"
-"落列在 **Download Options** (下載選項) 中。稍微往下滾動一點來找。"
+"落列在 **Download Options** (下載選項) 中。稍微向下滾動一點即可看到該選項，然"
+"後請下載適用於你平台的 ZIP 檔案。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:71
 msgid ""
@@ -174,6 +175,8 @@ msgid ""
 "folder. Then unzip the Android SDK ZIP file into the ``android-sdk/cmdline-"
 "tools`` folder."
 msgstr ""
+"在 ``android-sdk`` 資料夾中建立一個命名為 ``cmdline-tools`` 的空資料夾。接著"
+"將 Android SDK 的 ZIP 壓縮檔解壓到 ``android-sdk/cmdline-tools`` 資料夾中。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:86
 msgid ""
@@ -183,17 +186,22 @@ msgid ""
 "the archive with the default Windows extractor, the files are not extracted "
 "correctly and you will run into errors later on!"
 msgstr ""
+"若使用 Windows，則不可以使用預設的 Windows 解壓縮工具來解壓縮 (如檔案總管)。"
+"必須要使用如 7zip, WinRAR 或 Powershell 的 ``Expand-Archive`` 指令。若通過預"
+"設的 Windows 解壓工具來解壓縮的話，將無法正確解壓縮檔案，而之後執行的時候會發"
+"生錯誤！"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:92
 msgid ""
 "The ``cmdline-tools`` folder should now contain the unzipped folder called "
 "``tools``. Finally, rename the ``tools`` folder to ``latest``."
 msgstr ""
+"``cmdline-tools`` 資料夾現在應該要包含解壓出來的 ``tools`` 資料夾。接著，請"
+"將 ``tools`` 資料夾更名為 ``latest`` 。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:95
-#, fuzzy
 msgid "Your final directory structure should look like this :"
-msgstr "現在，場景樹應該會長這樣："
+msgstr "最後，資料夾結構應該會長這樣："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 msgid ""
@@ -267,32 +275,31 @@ msgid ""
 "debug keystore (this is needed to build). Go up two folders by writing:"
 msgstr ""
 "**平台工具** 安裝完成後，最後一個步驟就是產生除錯用金鑰儲存區了 (需要有這個才"
-"能建構)。通過下列指令來前往上兩層資料夾："
+"能建置)。通過下列指令來前往上兩層資料夾："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:146
 msgid "(or open a new shell in the ``android-sdk`` folder)."
 msgstr "(或是在 ``android-sdk`` 資料夾中開啟新 Shell)。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:148
-#, fuzzy
 msgid ""
 "And you need to input the following line (This should work out of the box. "
 "However, if you haven't set the ``JAVA_HOME`` variable on Windows, there are "
 "further instructions below):"
 msgstr ""
-"接著需要輸入下列這行指令 (Linux 與 macOS 中該指令應該可以直接執行，而 "
-"Windows 的話，則請參考更下方的使用步驟)："
+"接著需要輸入下列這行指令 (Linux 與 macOS 中該指令應該可以直接執行，而如果在 "
+"Windows 上沒設定 ``JAVA_HOME`` 變數，請參考本頁稍後的說明)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:156
-#, fuzzy
 msgid ""
 "On Windows, if you did not install the ``JAVA_HOME`` variable, the full path "
 "to Java should be provided. You need to add ``&`` at the beginning of the "
 "line if you use PowerShell; it's not needed for the regular ``cmd.exe`` "
 "console."
 msgstr ""
-"在 Windows 上，必須要提供完整的 Java 路徑。如果使用 PowerShell 的話則必須在這"
-"行開頭加上 ``&`` ，而普通的 ``cmd.exe`` 主控台則不需要。"
+"在 Windows 上，如果在安裝時沒設定 ``JAVA_HOME`` 變數，則必須要提供完整的 "
+"Java 路徑。如果使用 PowerShell 的話則必須在這行開頭加上 ``&`` ，而普通的 "
+"``cmd.exe`` 主控台則不需要。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid ""
@@ -445,7 +452,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:270
 msgid "Enabling the custom build and exporting"
-msgstr "啟用自定建構與匯出"
+msgstr "啟用自定建置與匯出"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:272
 msgid ""
@@ -462,10 +469,10 @@ msgid ""
 "templates (this window will appear every time):"
 msgstr ""
 "接著，只要匯出專案或單鍵部署時，就會呼叫 ``Gradle <https://gradle.org/>`_ 建"
-"構系統，並產生新的樣板 (該視窗每次都會出現)："
+"置系統，並產生新的樣板 (該視窗每次都會出現)："
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:283
 msgid ""
 "The templates built will be used automatically afterwards, so no further "
 "configuration is needed."
-msgstr "接著會自動使用樣板建構，不需要進一步設定。"
+msgstr "接著會自動使用樣板建置，不需要進一步設定。"

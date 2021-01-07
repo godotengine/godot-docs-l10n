@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,8 +48,9 @@ msgid "Create flexible UI components"
 msgstr "Creare un componente UI flessibile"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
+#, fuzzy
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "Usare l'ereditarietà della scena"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
@@ -115,6 +116,7 @@ msgid "The life and energy bars on the left"
 msgstr "Le barre della vita e dell'energia a sinistra"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -123,23 +125,38 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and emerald counters "
 "side-by-side."
 msgstr ""
+"Questo rende più facile il nidificare i contenitori: abbiamo alcuni margini "
+"intorno al bordo dello schermo usando un ``MarginContainer``, seguito da un "
+"``HBoxContainer`` per gestire le nostre due colonne. Le due barre si "
+"sovrappongono l'una sull'altra all'interno di un ``VBoxContainer``. E avremo "
+"bisogno di un ultimo ```HBoxContainer`` nella colonna di destra per "
+"posizionare i contatori di bombe e smeraldi uno accanto all'altro."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
+#, fuzzy
 msgid "We get a clean UI layout with only 4 containers"
 msgstr ""
+"Otteniamo un layout pulito per l'interfaccia utente con solo 4 contenitori"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
+#, fuzzy
 msgid ""
 "We will need extra containers inside the individual UI components, but this "
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"Avremo bisogno di contenitori aggiuntivi all'interno dei singoli componenti "
+"dell'interfaccia utente, ma questo ci dà la struttura della scena GUI "
+"principale. Con questo piano in atto, possiamo saltare dentro Godot e creare "
+"la nostra GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
+#, fuzzy
 msgid "Create the base GUI"
-msgstr ""
+msgstr "Creare l'interfaccia grafica utente di base"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
+#, fuzzy
 msgid ""
 "There are two possible approaches to the GUI: we can design elements in "
 "separate scenes and put them together, or prototype everything in a single "
@@ -148,18 +165,30 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"Ci sono due possibili approcci alla GUI: possiamo progettare elementi in "
+"scene separate e metterli insieme, oppure prototipare tutto in una singola "
+"scena e scomporlo successivamente. Vi consiglio di lavorare con una singola "
+"scena, perché in questo modo potete giocare più velocemente con il "
+"posizionamento e le proporzioni dell'interfaccia utente. Una volta che ha un "
+"bell'aspetto, è possibile salvare intere sezioni dell'albero dei nodi come "
+"sotto-scene riutilizzabili. Lo faremo in un attimo."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
+#, fuzzy
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "Per ora, iniziamo con qualche contenitore."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
+#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
+"Creare una nuova scena e aggiungere un ``MarginContainer``. Selezionare il "
+"nodo e nominarlo ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
+#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -167,10 +196,20 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Vogliamo che la nostra interfaccia si ancori alla parte superiore dello "
+"schermo. Selezionare il nodo ``GUI`` e fare clic sul pulsante Layout nella "
+"parte superiore della finestra di visualizzazione. Selezionare l'opzione "
+"```Top Wide```. Il nodo ``GUI``` si ancorerà al bordo superiore del suo "
+"genitore, la viewport di default. Si ridimensionerà automaticamente "
+"sull'asse verticale per fare spazio ai suoi componenti dell'interfaccia "
+"utente figlio."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
+#, fuzzy
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"Salvare la scena come ``GUI.tscn```. Ci metteremo l'intera interfaccia "
+"grafica."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -191,8 +230,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
+#, fuzzy
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "Dovresti avere 4 contenitori che assomigliano a questo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
@@ -203,8 +243,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
+#, fuzzy
 msgid "Create the bars' base"
-msgstr ""
+msgstr "Creare la base delle barre"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
 msgid ""
@@ -228,25 +269,34 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
+#, fuzzy
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr ""
+msgstr "Un ``NinePatchRect`` chiamato ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
+#, fuzzy
 msgid "A ``TextureRect`` named ``Title``"
-msgstr ""
+msgstr "Un ``TextureRect`` chiamato ``Titolo``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
+#, fuzzy
 msgid "And a ``Label`` named ``Number``"
-msgstr ""
+msgstr "E un ``Label`` con il nome di ``Numero``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:128
+#, fuzzy
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
+"Per aggiungere i nodi come elementi di pari livello, selezionare sempre "
+"prima il nodo ``Count``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
+#, fuzzy
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
+"Il tuo albero della scena dovrebbe essere così. Siamo pronti a inserire "
+"alcune texture"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
@@ -256,8 +306,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
+#, fuzzy
 msgid "You should see a list of textures that we'll use to skin our interface."
 msgstr ""
+"Dovresti vedere un elenco di texture che useremo per decorare la nostra "
+"interfaccia."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
 msgid ""
@@ -329,8 +382,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
+#, fuzzy
 msgid "Replace the Label's font"
-msgstr ""
+msgstr "Sostituisci il carattere della Label"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
 msgid ""

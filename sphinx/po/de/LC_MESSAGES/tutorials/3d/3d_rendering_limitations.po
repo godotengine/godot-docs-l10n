@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
 msgid "There are several ways to alleviate banding. Here are a few examples:"
 msgstr ""
+"Es gibt verschiedene Möglichkeiten, um Streifenbildung zu mildern. Hier "
+"einige Beispiele:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
@@ -97,7 +99,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid "Depth buffer precision"
-msgstr ""
+msgstr "Tiefenpuffergenauigkeit"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:51
 msgid ""
@@ -137,7 +139,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:76
 msgid "Transparency sorting"
-msgstr ""
+msgstr "Transparenz-Sortierung"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:78
 msgid ""
@@ -189,24 +191,31 @@ msgstr ""
 msgid ""
 "Edges of meshes will be smoothed out nicely (as well as supersampling would)."
 msgstr ""
+"Die Ränder der Meshs werden schön geglättet (ebenso wie beim Supersampling)."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:108
 msgid ""
 "Transparent materials that use *alpha testing* (1-bit transparency) won't be "
 "smoothed out."
 msgstr ""
+"Transparente Materialien, die *Alpha-Tests* (1-Bit-Transparenz) verwenden, "
+"werden nicht geglättet."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:109
 msgid ""
 "Specular aliasing (\"sparkles\" that appear on reflective surfaces) won't be "
 "reduced."
 msgstr ""
+"Spiegel-Aliasing (\"Funkeln\", das auf reflektierenden Oberflächen auftritt) "
+"wird nicht reduziert."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:111
 msgid ""
 "There are several ways to work around this limitation depending on your "
 "performance budget:"
 msgstr ""
+"Es gibt mehrere Möglichkeiten, diese Einschränkung abhängig von Ihrem "
+"Leistungsbudget zu umgehen:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:113
 msgid ""

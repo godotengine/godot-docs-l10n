@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,15 +138,15 @@ msgid "Scene linear & asset pipelines"
 msgstr "线性色彩空间和资源管道"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:77
-#, fuzzy
 msgid ""
 "Working in scene-linear sRGB is not as simple as just pressing a switch. "
 "First, imported image assets must be converted to linear light ratios on "
 "import. Even when linearized, those assets may not be perfectly well-suited "
 "for use as textures, depending on how they were generated."
 msgstr ""
-"在HDR中工作不仅仅是按下开关。 首先，导入的图像资源必须在导入时转换为线性空"
-"间。 有两种方法可以做到这一点:"
+"在场景线性sRGB中工作并不像按一下开关那样简单。 首先，导入的图像素材必须在导入"
+"时转换为线性光比例。 即使将其线性化，这些素材也可能并不完全适合用作纹理，具体"
+"取决于它们的生成方式。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:82
 #, fuzzy
@@ -220,7 +220,6 @@ msgid "Parameters of HDR"
 msgstr "HDR的参数"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:114
-#, fuzzy
 msgid ""
 "HDR settings can be found in the :ref:`Environment <class_Environment>` "
 "resource. Most of the time, these are found inside a :ref:`WorldEnvironment "
@@ -229,4 +228,4 @@ msgid ""
 msgstr ""
 "HDR可以在 :ref:`Environment <class_Environment>` 资源中找到。 这些在大多数情"
 "况下都可以在 :ref:`WorldEnvironment <class_WorldEnvironment>` 节点中找到或在"
-"相机中设置。 HDR有许多参数:"
+"相机中设置。 更多信息请参阅 :ref:`doc_environment_and_post_processing`。"

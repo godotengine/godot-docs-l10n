@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,6 @@ msgid "Sprite animation"
 msgstr "스프라이트 애니메이션"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
-#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -242,7 +241,7 @@ msgstr ""
 "을 다루게 됩니다. 노드 옆을 보면 주의 표시가 있습니다. ``AnimatedSprite``\\ "
 "는 :ref:`SpriteFrames <class_SpriteFrames>` 리소스가 필요합니다. "
 "SpriteFrames 리소스는 보여줄 수 있는 애니메이션 목록을 보여줍니다. 리소스를 "
-"만들려면 인스펙터(Inspecter)에서 ``Frames`` 속성을 찾아, \"[비었음]\" -> "
+"만들려면 인스펙터(Inspector)에서 ``Frames`` 속성을 찾아, \"[비었음]\" -> "
 "\"새 SpriteFrames\"를 클릭하세요. 이러면 자동으로 스프라이트 프레임"
 "(SpriteFrames) 패널이 열릴 것입니다."
 
@@ -351,9 +350,9 @@ msgid ""
 "here, it will override the value written in the script."
 msgstr ""
 "첫 번째 변수인 ``speed``\\ 에 ``export`` 키워드를 사용하면 인스펙터"
-"(Inspecter) 내에서 값을 설정할 수 있습니다. 편리한 점으로는 인스펙터"
-"(Inspecter)에서도 원하는 값으로 조정할 수 있는 것입니다. ``Player`` 노드를 선"
-"택하면 인스펙터(Inspecter)의 \"Script Variables\" 섹션에 나타납니다. 기억하세"
+"(Inspector) 내에서 값을 설정할 수 있습니다. 편리한 점으로는 인스펙터"
+"(Inspector)에서도 원하는 값으로 조정할 수 있는 것입니다. ``Player`` 노드를 선"
+"택하면 인스펙터(Inspector)의 \"Script Variables\" 섹션에 나타납니다. 기억하세"
 "요, 여기서 값을 바꾸면 스크립트에 작성한 값도 재정의됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:200
@@ -438,8 +437,8 @@ msgid ""
 msgstr ""
 "``velocity``\\ 를 ``(0, 0)``\\ 으로 설정하는 것으로 시작합니다 - 기본 값으로 "
 "플레이어는 움직이지 않아야 합니다. 그 후 각 입력을 확인하고 ``velocity``\\ 에"
-"서 더하기/빼기를 통해 전체 방향을 얻습니다.  예를 들어 당신이 ``오른쪽`` 과 "
-"``아래`` 를 동시에 누른다면, 결과 ``velocity`` 벡터는 ``(1, 1)`` 이 될 것입니"
+"서 더하기/빼기를 통해 전체 방향을 얻습니다. 예를 들어 당신이 ``오른쪽`` 과 ``"
+"아래`` 를 동시에 누른다면, 결과 ``velocity`` 벡터는 ``(1, 1)`` 이 될 것입니"
 "다. 이런 경우에서, 상하좌우 움직임을 추가하는 것은, 플레이어는 단순히 수평으"
 "로 움직이는 것보다 *더 빠르게* 움직이게 됩니다."
 
@@ -537,14 +536,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
 "in the scene tree."
 msgstr ""
 "\"디버거\" 패널에서 \"null instance\"라고 하면서 에러가 뜬다면, 노드 이름의 "
-"철자를 틀렸다는 것을 의미합니다. 노드 이름은 대소문자를 구별하고  ``"
+"철자를 틀렸다는 것을 의미합니다. 노드 이름은 대소문자를 구별하고 ``"
 "$NodeName`` 이나 ``get_node(\"NodeName\")`` 이 씬 트리에서 보는 이름이 일치해"
 "야 합니다."
 
@@ -636,7 +634,6 @@ msgstr ""
 "탭을 클릭하고 플레이어가 방출할 수 있는 시그널들을 확인해 보세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
-#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` "
@@ -646,12 +643,12 @@ msgid ""
 "automatically create a function in your player's script."
 msgstr ""
 "우리의 \"hit\" 시그널도 거기에 있다는 것에 주목하세요! 적들은 "
-"``RigidBody2D`` 노드가 될 것이기 때문에, 우리는 ``body_entered( Object "
-"body )`` 시그널이 필요하고, 이걸로 바디가 플레이어와 접촉할 때 방출하도록 할 "
-"것입니다. \"연결하기..\" 를 누르고 \"시그널 연결하기\" 창에서 \"연결\"을 누릅"
-"니다. 우리는 어떤 설정도 바꿀 필요가 없습니다 - Godot는 자동으로 플레이어 스"
-"크립트에 함수를 생성해줍니다. 이 함수는 시그널이 방출될 때마다 호출될 것입니"
-"다 - 시그널을 *처리하는 것*\\ 입니다."
+"``RigidBody2D`` 노드가 될 것이기 때문에, 우리는 ``body_entered(body: Node)`` "
+"시그널이 필요합니다. 이것을 바디가 플레이어와 닿았을 때 방출할 것입니다. \"연"
+"결하기..\" 를 누르고 \"시그널 연결하기\" 창에서 \"연결\"을 누릅니다. 우리는 "
+"어떤 설정도 바꿀 필요가 없습니다 - Godot는 자동으로 플레이어 스크립트에 함수"
+"를 생성해줍니다. 이 함수는 시그널이 방출될 때마다 호출될 것입니다 - 시그널을 "
+"*처리하는 것*\\ 입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
@@ -760,7 +757,7 @@ msgid ""
 msgstr ""
 ":ref:`RigidBody2D <class_RigidBody2D>` 속성에서는, ``Gravity Scale`` 을 "
 "``0`` 으로 설정해 적이 아래로 떨어지지 않도록 합니다. 그리고, "
-"``PhysicsBody2D``  섹션의 ``Mask`` 속성을 클릭하고 첫 번째 상자의 체크를 푸세"
+"``PhysicsBody2D`` 섹션의 ``Mask`` 속성을 클릭하고 첫 번째 상자의 체크를 푸세"
 "요. 이것은 적들끼리 충돌하지 않도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:563
@@ -781,10 +778,9 @@ msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:571
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to “On”."
 msgstr ""
-"인스펙터(Inspecter)에서 ``script`` 속성을 당신의 스크립트로 설정합니다."
+"인스펙터(Inspector)에서 ``script`` 속성을 당신의 스크립트로 설정합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:573
 msgid ""
@@ -859,7 +855,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
-#, fuzzy
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
@@ -867,7 +862,7 @@ msgid ""
 msgstr ""
 "씬을 실행할 때 매 순간마다 다른 \"무작위\" 숫자의 순서를 원한다면 "
 "``randomize()`` 를 사용해야 합니다. ``randomize()`` 를 우리의 ``Main`` 씬에 "
-"사용할꺼니까, 더이상 여기 있으면 안됩니다. ``randi() % n`` 은  ``0`` 과 "
+"사용할꺼니까, 더이상 여기 있으면 안됩니다. ``randi() % n`` 은 ``0`` 과 "
 "``n-1`` 사이의 무작위 정수 값을 얻는 기본적인 방법입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:649
@@ -942,7 +937,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:686
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
-msgstr "각  ``Timer`` 마다 ``Wait Time`` 속성을 다음과 같이 설정하세요:"
+msgstr "각 ``Timer`` 마다 ``Wait Time`` 속성을 다음과 같이 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:689
 msgid "``MobTimer``: ``0.5``"
@@ -1173,10 +1168,10 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
-"게임에 마지막으로 필요한 것은 UI입니다: 인터페이스로 화면에 점수, \"게임 오버"
-"\" 메시지, 재시작 버튼을 보여줍니다. 새 씬을 만들고,  :ref:`CanvasLayer "
+"게임에 마지막으로 필요한 것은 UI입니다: 인터페이스로 점수, \"game over\" 메시"
+"지, 재시작 버튼을 화면에 보여줍니다. 새 씬을 만들고, :ref:`CanvasLayer "
 "<class_CanvasLayer>` 노드를 추가하고 ``HUD`` 라고 이름지으세요. \"HUD\"는 "
-"\"heads-up display\"의 약자로, 정보가 게임 화면 앞에 덮어씌우는 방식입니다."
+"\"heads-up display\"의 약자로, 정보를 게임 화면 앞에 덮어씌우는 방식입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:953
 msgid ""
@@ -1624,7 +1619,6 @@ msgstr ""
 "\"Shortcut\" 속성을 사용하는 것이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1633,7 +1627,7 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"``HUD`` 씬에서 ``StartButton``\\ 을 선택하고 인스펙터(Inspecter)에서 "
+"``HUD`` 씬에서 ``StartButton``\\ 을 선택하고 인스펙터(Inspector)에서 "
 "*Shortcut* 속성을 찾으세요. \"새 Shortcut\"을 선택하고 \"Shortcut\" 항목을 클"
 "릭하세요. 두 번째 *Shortcut* 속성이 나타날 것입니다. \"새 InputEventAction"
 "\"을 선택하고 새로운 \"InputEvent\"을 클릭하세요. 마지막으로 *Action* 속성에"

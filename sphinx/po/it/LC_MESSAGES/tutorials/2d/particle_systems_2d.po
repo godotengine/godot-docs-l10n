@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,9 @@ msgid "Particle systems (2D)"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
+#, fuzzy
 msgid "Intro"
-msgstr ""
+msgstr "Intro"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid ""
@@ -48,6 +49,7 @@ msgid "Particle nodes"
 msgstr "Particelle"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
+#, fuzzy
 msgid ""
 "Godot provides two different nodes for 2D particles, :ref:"
 "`class_Particles2D` and :ref:`class_CPUParticles2D`. Particles2D is more "
@@ -62,6 +64,19 @@ msgid ""
 "inspector, and selecting \"Convert to CPUParticles2D\" in the \"Particles\" "
 "menu of the toolbar."
 msgstr ""
+"Godot fornisce due diversi nodi per particelle 2D, :ref: `class_Particles2D` "
+"e :ref:` class_CPUParticles2D`. Particles2D è più avanzato e utilizza la GPU "
+"per elaborare gli effetti delle particelle, ma ciò lo limita all'API grafica "
+"di fascia più alta, e nel nostro caso al renderer GLES3. Per i progetti che "
+"utilizzano il backend GLES2, CPUParticles2D è un'opzione guidata dalla CPU "
+"con parità di funzionalità vicina a Particles2D, ma con prestazioni "
+"inferiori. Mentre Particles2D è configurato tramite a :ref: "
+"`class_ParticlesMaterial` (e facoltativamente con uno shader "
+"personalizzato), le opzioni di corrispondenza sono fornite tramite le "
+"proprietà del nodo in CPUParticles2D (ad eccezione delle impostazioni del "
+"trail). Puoi convertire un nodo Particles2D in un nodo CPUParticles2D "
+"facendo clic sul nodo nella finestra di ispezione e selezionando \"Converti "
+"in CPUParticles2D\" nel menu \"Particelle\" della barra degli strumenti."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
 msgid ""
@@ -73,8 +88,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
+#, fuzzy
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid ""
@@ -88,8 +104,9 @@ msgid "Your Particles2D node should now be emitting white points downward."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
+#, fuzzy
 msgid "Texture"
-msgstr ""
+msgstr "Texture"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
@@ -103,8 +120,9 @@ msgid "Time parameters"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
+#, fuzzy
 msgid "Lifetime"
-msgstr ""
+msgstr "Tutta la vita"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
@@ -131,8 +149,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
+#, fuzzy
 msgid "Preprocess"
-msgstr ""
+msgstr "Pre-elaborazione"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -155,8 +174,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
+#, fuzzy
 msgid "Explosiveness"
-msgstr ""
+msgstr "Esplosività"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
@@ -300,8 +320,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
+#, fuzzy
 msgid "Spread"
-msgstr ""
+msgstr "Diffusione"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid ""
@@ -312,16 +333,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
+#, fuzzy
 msgid "Flatness"
-msgstr ""
+msgstr "Planarità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
+#, fuzzy
 msgid "Gravity"
-msgstr ""
+msgstr "Gravità"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:214
 msgid "The gravity applied to every particle."
@@ -393,8 +416,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
+#, fuzzy
 msgid "Damping"
-msgstr ""
+msgstr "Smorzamento"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid ""
@@ -404,8 +428,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:278
+#, fuzzy
 msgid "Angle"
-msgstr ""
+msgstr "Angolo"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:280
 msgid ""
@@ -414,8 +439,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:286
+#, fuzzy
 msgid "Scale"
-msgstr ""
+msgstr "Scala"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."

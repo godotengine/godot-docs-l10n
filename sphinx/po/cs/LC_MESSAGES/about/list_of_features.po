@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Na této stránce jsou uvedeny funkce podporované aktuální stabilní verzí "
 "Godota (3.2). `Další funkce <https://docs.godotengine.org/en/latest/about/"
-"list_of_features.html>` __ jsou k dispozici v nejnovější vývojové verzi "
+"list_of_features.html >`__ jsou k dispozici v nejnovější vývojové verzi "
 "(4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
@@ -126,7 +126,7 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
-"Podpora pro :ref:'externí editory skriptů <doc_external_editor>', jako je "
+"Podpora pro :ref:`externí editory skriptů <doc_external_editor>` , jako je "
 "Visual Studio Code nebo Vim."
 
 #: ../../docs/about/list_of_features.rst:49
@@ -191,7 +191,7 @@ msgid ""
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
 "Pluginy pro rozšíření funkcí editoru lze stáhnout z :ref:`library library "
-"<doc_what_is_assetlib>`."
+"<doc_what_is_assetlib>` ."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
@@ -495,7 +495,6 @@ msgstr ""
 "Podporuje prolnutí mezer."
 
 #: ../../docs/about/list_of_features.rst:179
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
@@ -925,11 +924,12 @@ msgid "Optional Doppler effect in 2D and 3D."
 msgstr "Volitelný Dopplerův efekt ve 2D a 3D."
 
 #: ../../docs/about/list_of_features.rst:347
-#, fuzzy
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
-msgstr "Podpora re-routable :ref:`audio bus <doc_audio_buses>` a efekty."
+msgstr ""
+"Podpora re-routable :ref:`audio bus <doc_audio_buses>` a efekty s tucty "
+"efektů v ceně."
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
@@ -966,7 +966,7 @@ msgstr "*Linux:* PulseAudio nebo ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
-msgstr "Importovat"
+msgstr "Import"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -977,9 +977,8 @@ msgid "**Formats:**"
 msgstr "**Formáty:**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "*Obrázky:* Viz: odkaz: `doc_importing_images_supported_formats`."
+msgstr "*Obrázky:* Viz: odkaz: `doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 msgid "*Audio:*"
@@ -1006,7 +1005,7 @@ msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
 msgstr ""
-"`ESCN <https://github.com/godotengine/godot-blender-exporter>` __ (přímý "
+"`ESCN <https://github.com/godotengine/godot-blender-exporter >`__ (přímý "
 "export z Blenderu)."
 
 #: ../../docs/about/list_of_features.rst:379
@@ -1054,6 +1053,8 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Klávesy lze mapovat ve „fyzickém“ režimu tak, aby byly nezávislé na "
+"rozložení klávesnice."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
@@ -1075,7 +1076,6 @@ msgstr ""
 "aby se vyhnul nastavení akcelerace myši operačního systému."
 
 #: ../../docs/about/list_of_features.rst:401
-#, fuzzy
 msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr "Vstup pro gamepad (až 8 současně připojených ovladačů)."
 
@@ -1426,8 +1426,8 @@ msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
 msgstr ""
-"Godotova malá distribuční velikost z něj činí vhodnou alternativu k "
-"frameworkům jako Electron nebo Qt."
+"Malá velikost distribuce Godot z něj činí vhodnou alternativu k frameworkům "
+"jako Electron nebo Qt."
 
 #: ../../docs/about/list_of_features.rst:523
 msgid "Animation"
@@ -1548,7 +1548,7 @@ msgid ""
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
 "`Skripty pro dokončení <https://github.com/godotengine/godot/tree/master/"
-"misc/dist/shell>` __ jsou k dispozici pro Bash, zsh a fish."
+"misc/dist/shell >`__ jsou k dispozici pro Bash, zsh a fish."
 
 #: ../../docs/about/list_of_features.rst:565
 msgid ""
@@ -1571,7 +1571,6 @@ msgstr ""
 "GCC, Clang a MSVC. Podporováno je také MinGW."
 
 #: ../../docs/about/list_of_features.rst:571
-#, fuzzy
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
@@ -1594,7 +1593,7 @@ msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
 msgstr ""
-"Otevřený proces vývoje s :ref:'příspěvky vítány <doc_ways_to_contribute>'."
+"Otevřený proces vývoje s :ref:`příspěvky vítány <doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:582
 msgid ""
@@ -1602,6 +1601,6 @@ msgid ""
 "documents features that have been agreed upon and may be implemented in "
 "future Godot releases."
 msgstr ""
-"`Road mapa <https://github.com/godotengine/godot-roadmap>` __ úložiště "
+"`Road mapa <https://github.com/godotengine/godot-roadmap >`__ úložiště "
 "dokumentuje funkce, které již byly dohodnuty a mohou být implementovány v "
 "budoucích vydáních Godot."

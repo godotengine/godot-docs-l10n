@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgstr ""
 "<doc_compiling_for_osx>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:16
-#, fuzzy
 msgid ""
 "**Windows:** There is no dedicated server build for Windows yet. As an "
 "alternative, you can use the ``--no-window`` command-line argument to "
@@ -62,9 +61,11 @@ msgid ""
 "window`` command-line argument, you'll need to have OpenGL support available "
 "on the Windows machine."
 msgstr ""
-"**Windows:** Todavía no hay compilación de servidor dedicado para Windows. "
-"Como alternativa puedes usar la línea de comandos ``--no-window`` para "
-"prevenir que Godot abra una ventana."
+"**Windows:** Todavía no existe una compilación de servidor dedicado para "
+"Windows. Como alternativa, puede usar el argumento de línea de comando ``--"
+"no-window`` para evitar que Godot genere una ventana. Tenga en cuenta que "
+"incluso con el argumento de línea de comando ``--no-window``, necesitará "
+"tener soporte OpenGL disponible en la máquina Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
 msgid ""
@@ -110,28 +111,33 @@ msgid "Exporting a PCK file"
 msgstr "Exportando un archivo PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Hay dos formas de obtener certificados:"
+msgstr "Hay dos formas de exportar un proyecto para un servidor:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
 "Create a Linux/X11 export preset, define a custom Release export template "
 "that points to the server binary then export the project as usual."
 msgstr ""
+"Crear un preajuste de exportación de Linux/X11, define una plantilla de "
+"exportación de Release personalizada que apunte al binario del servidor y "
+"luego exportar el proyecto como de siempre."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:43
 msgid "Export a PCK file only, preferably from a Linux/X11 export preset."
 msgstr ""
+"Exportar sólo un archivo PCK, preferiblemente de un preajuste de exportación "
+"Linux/X11."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:45
 msgid ""
 "Both methods should result in identical output. The text below describes the "
 "PCK file approach."
 msgstr ""
+"Ambos métodos deberían dar como resultado un resultado idéntico. El texto "
+"que sigue describe el enfoque del archivo PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:48
-#, fuzzy
 msgid ""
 "Once you've downloaded a server binary, you should export a PCK file "
 "containing your project data. After creating the export preset, click "
@@ -139,10 +145,13 @@ msgid ""
 "destination path. The **Export With Debug** checkbox in the file dialog has "
 "no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
-"Una vez descargado el binario server, deberás exportar un archivo PCK que "
-"contenga os datos del proyecto. Es recomendado crear un export preset de "
-"Linux para este propósito. Después de crear el export preset, clic **Export "
-"PCK/ZIP** al final del diálogo Exportar, luego elige una ruta destino."
+"Una vez que haya descargado un binario de servidor, debe exportar un archivo "
+"PCK que contenga los datos de su proyecto. Después de crear el ajuste "
+"preestablecido de exportación, haga clic en **Exportar PCK / ZIP** en la "
+"parte inferior del cuadro de diálogo Exportar y luego elija una ruta de "
+"destino. La casilla de verificación **Exportar con depuración** en el cuadro "
+"de diálogo del archivo no tiene relación con el archivo PCK final, por lo "
+"que puede dejarlo como está."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
 msgid "See :ref:`doc_exporting_projects` for more information."
@@ -154,6 +163,9 @@ msgid ""
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
+"Si estás exportando el proyecto desde un editor sin cabeza, llama al editor "
+"sin cabeza con la opción `--export-pack` mientras estás en la carpeta del "
+"proyecto para exportar sólo un archivo PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
@@ -199,9 +211,8 @@ msgstr ""
 "al archivo PCK usando el argumento de línea de comandos ``--main-pack``::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "Exportando para servidores dedicados"
+msgstr "Iniciar el servidor dedicado"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -210,12 +221,19 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"Si tanto el cliente como el servidor son parte del mismo proyecto Godot, "
+"tendrás que añadir una forma de iniciar el servidor directamente usando un "
+"argumento de línea de comandos. Esto puede hacerse añadiendo el siguiente "
+"fragmento de código en tu escena principal (o en el singleton) ``_ready()`` "
+"method::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
 msgstr ""
+"Alternativamente, puede hacer que el servidor dedicado siempre se inicie si "
+"se detecta un headless o binario de servidor::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -223,6 +241,9 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"Si tu cliente y tu servidor son proyectos Godot separados, lo más probable "
+"es que tu servidor esté configurado de tal manera que al ejecutar la escena "
+"principal se inicie un servidor automáticamente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"

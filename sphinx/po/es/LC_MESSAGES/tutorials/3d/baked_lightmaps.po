@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -369,6 +369,10 @@ msgid ""
 "parameter. More subdivision results in more detail, but also takes more time "
 "to bake."
 msgstr ""
+"``BakedLightmap`` utiliza, por simplicidad, una versión voxelizada de la "
+"escena para calcular la iluminación. El tamaño del voxel puede ser ajustado "
+"con el parámetro **Bake Subdiv**. Más subdivisión resulta en más detalles, "
+"pero también toma más tiempo para hornear."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:171
 msgid ""
@@ -377,18 +381,28 @@ msgid ""
 "subdivision), which is used for capturing light in dynamic objects (more on "
 "that later). Its default value is also good enough for most cases."
 msgstr ""
+"En general, los valores por defecto son lo suficientemente buenos. También "
+"hay una **Subdivisión de captura** (que siempre debe ser igual o menor que "
+"la subdivisión principal), que se utiliza para capturar la luz en los "
+"objetos dinámicos (más sobre eso más adelante). Su valor por defecto también "
+"es lo suficientemente bueno para la mayoría de los casos."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:178
 msgid ""
 "Besides the capture size, quality can be modified by setting the **Bake "
 "Mode**. Two modes of capturing indirect are provided:"
 msgstr ""
+"Además del tamaño de la captura, la calidad puede ser modificada por el "
+"ajuste del **Modo de horneado**. Se proporcionan dos modos de captura "
+"indirecta:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:183
 msgid ""
 "**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
 "Looks similar to (but slightly better than) ``GIProbe``."
 msgstr ""
+"**Voxel Cone**: Trace: Es el predeterminado; es menos preciso, pero más "
+"rápido. Se ve similar a (pero ligeramente mejor que) ``GIProbe``."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:184
 msgid ""
@@ -396,16 +410,22 @@ msgid ""
 "longer to bake. If used in low or medium quality, some scenes may produce "
 "grain."
 msgstr ""
+"**Ray Tracing**: Este método es más preciso, pero puede tardar bastante más "
+"tiempo en hornearse. Si se usa en calidad baja o media, algunas escenas "
+"pueden producir granulado."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
-msgstr ""
+msgstr "Horneado"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
+"Para empezar el proceso de horneado, sólo tienes que pulsar el gran botón "
+"**Hornear mapas de luz** en la parte superior al seleccionar el nodo "
+"``BakedLightmap``:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
@@ -421,7 +441,7 @@ msgstr "Configurando el bake"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:200
 msgid "Several more options are present for baking:"
-msgstr ""
+msgstr "Hay varias opciones más para hornear:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
 msgid ""
@@ -430,6 +450,11 @@ msgid ""
 "cases. Increase it in case you want better lighting on small details or your "
 "scene is large."
 msgstr ""
+"**Bake Subdiv**: El mapa de luz de Godot utiliza una cuadrícula para "
+"transferir la información de la luz; el valor por defecto está bien y "
+"debería funcionar en la mayoría de los casos. Auméntalo en caso de que "
+"quieras una mejor iluminación en los pequeños detalles o tu escena sea "
+"extensa."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:203
 msgid ""
@@ -437,40 +462,55 @@ msgid ""
 "(lighting dynamic objects). Default value is generally OK, it's usually "
 "smaller than Bake Subdiv and can't be larger than it."
 msgstr ""
+"**Captura de la Subdivisión**: Esta es la cuadrícula utilizada para la "
+"captura de información en tiempo real (iluminación de objetos dinámicos). El "
+"valor por defecto es generalmente el correcto, usualmente más pequeño que "
+"Bake Subdiv y no puede ser más grande que él."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:204
 msgid ""
 "**Bake Quality**: Three bake quality modes are provided, Low, Medium and "
 "High. Higher quality takes more time."
 msgstr ""
+"**Calidad del horneado**: Se proporcionan tres modos de calidad de horneado, "
+"Bajo, Medio y Alto. Una calidad más alta tomará más tiempo."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:205
 msgid ""
 "**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
 "Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
 msgstr ""
+"**Modo de hornear**: El horneador puede usar dos técnicas diferentes: *Voxel "
+"Cone Tracing* (rápido, pero aproximado), o *RayTracing* (lento, pero "
+"preciso)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:206
 msgid ""
 "**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
 "``GIProbe``."
 msgstr ""
+"**Propagación**: Usado para el modo *Voxel Cone Trace*. Funciona igual que "
+"en ``GIProbe``."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:207
 msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
 msgstr ""
+"**HDR**: Si está desactivado, los mapas de luz son más pequeños, pero no "
+"pueden capturar ninguna luz sobre el blanco (1.0)."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "**Image Path**: Where lightmaps will be saved. By default, on the same "
 "directory as the scene (\".\"), but can be tweaked."
 msgstr ""
+"**Image Path**: Donde se guardarán los mapas de luz. Por defecto, en el "
+"mismo directorio de la escena (\".\"), pero esto puede ser cambiado."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
-msgstr ""
+msgstr "**Extents**: Tamaño del área afectada (puede ser editada visualmente)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
 msgid ""
@@ -479,6 +519,11 @@ msgid ""
 "which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
 "you can save it to disk."
 msgstr ""
+"**Datos de la luz**: Contiene los datos de la luz horneada después de "
+"hornear. Las texturas se guardan en el disco, pero también contiene los "
+"datos de captura de los objetos dinámicos, que pueden ser un poco pesados. "
+"Si estás usando los formatos .tscn (en lugar de .scn), puedes guardarlos en "
+"el disco."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:213
 msgid "Dynamic objects"
@@ -491,6 +536,10 @@ msgid ""
 "generate *capture* data. This is used to, then, transfer the light to "
 "dynamic objects that move around the scene."
 msgstr ""
+"En otros motores o implementaciones de mapas de luz, se requiere colocar "
+"manualmente pequeños objetos llamados \"sondas de luz\" alrededor del nivel "
+"para generar datos de *captura*. Esto se utiliza para, entonces, transferir "
+"la luz a los objetos dinámicos que se mueven alrededor de la escena."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:220
 msgid ""
@@ -499,3 +548,8 @@ msgid ""
 "objects around, and they will be lit accordingly. Of course, you have to "
 "make sure you set up your scene bounds accordingly or it won't work."
 msgstr ""
+"Sin embargo, esta aplicación de la mapeo de luz utiliza un método diferente. "
+"El proceso es automático, así que no tienes que hacer nada. Sólo mueve tus "
+"objetos alrededor, y se iluminarán en consecuencia. Por supuesto, tienes que "
+"asegurarte de establecer los límites de la escena en consecuencia o no "
+"funcionará."

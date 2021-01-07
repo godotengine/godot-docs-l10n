@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:4
 msgid "Cutout animation"
-msgstr ""
+msgstr "Animación de cortes"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:7
 msgid "What is it?"
-msgstr ""
+msgstr "¿Qué es eso?"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:9
 msgid ""
@@ -37,6 +37,16 @@ msgid ""
 "small increments between each shot to create the illusion of movement when "
 "the images are played back quickly in sequence."
 msgstr ""
+"Tradicionalmente, la `animación de recorte <https://en.wikipedia.org/wiki/"
+"Cutout_animation>`__ es un tipo de `animación de stop motion <https://en."
+"wikipedia.org/wiki/Stop_motion>`__ en la que los trozos de papel (u otro "
+"material delgado) se cortan en formas especiales y se disponen en "
+"representaciones bidimensionales de personajes y objetos. Los cuerpos de los "
+"personajes suelen estar hechos de varias piezas. Los pedazos se arreglan y "
+"se fotografían una vez por cada cuadro de la película. El animador mueve y "
+"rota las piezas en pequeños incrementos entre cada toma para crear la "
+"ilusión de movimiento cuando las imágenes se reproducen rápidamente en "
+"secuencia."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:18
 msgid ""
@@ -45,6 +55,10 @@ msgid ""
 "Never Land Pirates <https://en.wikipedia.org/wiki/"
 "Jake_and_the_Never_Land_Pirates>`__."
 msgstr ""
+"Las simulaciones de animación de recortes pueden ser creadas ahora usando "
+"software como se ve en `South Park <https://en.wikipedia.org/wiki/"
+"South_Park>`__ y `Jake and the Never Land Pirates <https://en.wikipedia.org/"
+"wiki/Jake_and_the_Never_Land_Pirates>`__."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:22
 msgid ""
@@ -52,16 +66,22 @@ msgid ""
 "`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
 "Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
+"En los videojuegos, esta técnica también se ha hecho popular. Ejemplos de "
+"esto son \"Paper Mario\" <https://en.wikipedia.org/wiki/"
+"Super_Paper_Mario>`__ o \"Rayman Origins\" <https://en.wikipedia.org/wiki/"
+"Rayman_Origins>`__ ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:27
 msgid "Cutout animation in Godot"
-msgstr ""
+msgstr "Animación de recortes en Godot"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
 msgid ""
 "Godot provides tools for working with cutout rigs, and is ideal for the "
 "workflow:"
 msgstr ""
+"Godot proporciona herramientas para trabajar con equipos de corte, y es "
+"ideal para el flujo de trabajo:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:31
 msgid ""
@@ -70,6 +90,10 @@ msgid ""
 "sprite sizes, pivots, opacity, color modulation, and more, can all be "
 "animated and blended."
 msgstr ""
+"**El sistema de animación está completamente integrado con el motor**: Esto "
+"significa que las animaciones pueden controlar mucho más que el movimiento "
+"de los objetos. Las texturas, los tamaños de los sprites, los pivotes, la "
+"opacidad, la modulación del color y más, pueden ser animados y mezclados."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
 msgid ""
@@ -80,34 +104,51 @@ msgid ""
 "animation can be used selectively for complex parts such as hands, feet, "
 "changing facial expressions, etc."
 msgstr ""
+"**Combinar estilos de animación**: AnimatedSprite permite que la animación "
+"tradicional de celda se use junto con la animación de recorte. En la "
+"animación de celdas, diferentes cuadros de animación usan dibujos "
+"completamente diferentes en vez de las mismas piezas posicionadas de manera "
+"diferente. En una animación basada en los recortes, la animación de celda "
+"puede ser usada selectivamente para partes complejas como manos, pies, "
+"expresiones faciales cambiantes, etc."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:41
 msgid ""
 "**Custom Shaped Elements**: Custom shapes can be created with :ref:"
 "`Polygon2D <class_Polygon2D>` allowing UV animation, deformations, etc."
 msgstr ""
+"**Elementos de Forma Personalizada**: Las formas personalizadas pueden ser "
+"creadas con :ref:`Polygon2D <class_Polygon2D>` permitiendo animación UV, "
+"deformaciones, etc."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
 "systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
+"**Sistemas de partículas**: Un equipo de animación de recortes puede "
+"combinarse con sistemas de partículas. Esto puede ser útil para efectos de "
+"magia, jetpack, etc."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:46
 msgid ""
 "**Custom Colliders**: Set colliders and influence areas in different parts "
 "of the skeletons, great for bosses and fighting games."
 msgstr ""
+"**Colisionadores Personalizados**: Colisionadores y áreas de influencia en "
+"diferentes partes de los esqueletos, ideales para jefes y juegos de lucha."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:48
 msgid ""
 "**Animation Tree**: Allows complex combinations and blending between several "
 "animations, the same way it works in 3D."
 msgstr ""
+"**Árbol de la Animación**: Permite combinaciones complejas y mezclas entre "
+"varias animaciones, de la misma manera que funciona en 3D."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:51
 msgid "And much more!"
-msgstr ""
+msgstr "¡Y mucho más!"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:54
 msgid "Making of GBot"
@@ -120,31 +161,42 @@ msgid ""
 "v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ character, created by "
 "Andreas Esau."
 msgstr ""
+"Para este tutorial, usaremos como contenido de demostración las piezas del "
+"personaje `GBot <https://www.youtube.com/watch?"
+"v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__, creado por Andreas Esau."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:62
 msgid ""
 "Get your assets: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 msgstr ""
+"Consigue tus recursos: :download:`gbot_resources.zip <files/gbot_resources."
+"zip>`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:65
 msgid "Setting up the rig"
-msgstr ""
+msgstr "Preparando el mecanismo de montaje"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:67
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
-msgstr ""
+msgstr "Crear un Nodo2D vacío como raíz de la escena, trabajaremos bajo él:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:71
 msgid ""
 "The first node of the model is the hip. Generally, both in 2D and 3D, the "
 "hip is the root of the skeleton. This makes it easier to animate:"
 msgstr ""
+"El primer nodo del modelo es la cadera. Generalmente, tanto en 2D como en "
+"3D, la cadera es la raíz del esqueleto. Esto hace que sea más fácil de "
+"animar:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:77
 msgid ""
 "Next will be the torso. The torso needs to be a child of the hip, so create "
 "a child sprite and load the torso texture, later accommodate it properly:"
 msgstr ""
+"Lo siguiente será el torso. El torso necesita ser un hijo de la cadera, para "
+"crear un sprite hijo y cargar la textura del torso, más tarde la "
+"acomodaremos correctamente:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
 msgid ""
@@ -152,25 +204,32 @@ msgid ""
 "the torso. We can do this be pressing :kbd:`E` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit :kbd:`ESC`."
 msgstr ""
+"Esto se ve bien. Veamos si nuestra jerarquía funciona como un esqueleto "
+"rotando el torso. Podemos hacerlo presionando :kbd:`E` para entrar en el "
+"modo de rotación, y arrastrando con el botón izquierdo del ratón. Para salir "
+"del modo de rotación pulsa :kbd:`ESC`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr ""
+msgstr "El pivote de rotación está mal y necesita ser ajustado."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:90
 msgid ""
 "This small cross in the middle of the :ref:`Sprite <class_Sprite>` is the "
 "rotation pivot:"
 msgstr ""
+"Esta pequeña cruz en el medio del :ref:`Sprite <class_Sprite>` es el pivote "
+"de rotación:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:96
 msgid "Adjusting the pivot"
-msgstr ""
+msgstr "Ajustando el pivote"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:98
 msgid ""
 "The pivot can be adjusted by changing the *offset* property in the Sprite:"
 msgstr ""
+"El pivote puede ser ajustado cambiando la propiedad *offset* en el Sprite:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
 msgid ""
@@ -178,6 +237,10 @@ msgid ""
 "pivot point,  press :kbd:`V` to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
+"El pivote también puede ser ajustado *visualmente*. Al pasar el cursor sobre "
+"el punto de pivote deseado, presiona :kbd:`V` para mover el pivote allí para "
+"el Sprite seleccionado. También hay una herramienta en la barra de "
+"herramientas que tiene una función similar."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:110
 msgid ""
@@ -185,12 +248,17 @@ msgid ""
 "each sprite in its correct place in the hierarchy, so its rotations and "
 "translations are relative to its parent:"
 msgstr ""
+"Continúe añadiendo piezas al cuerpo, empezando por el brazo derecho. "
+"Asegúrate de poner cada sprite en su lugar correcto en la jerarquía, para "
+"que sus rotaciones y traslaciones sean relativas a su padre:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:116
 msgid ""
 "With the left arm there's a problem. In 2D, child nodes appear in front of "
 "their parents:"
 msgstr ""
+"Con el brazo izquierdo hay un problema. En 2D, los nodos hijos aparecen "
+"delante de sus padres:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
 msgid ""
@@ -200,16 +268,24 @@ msgid ""
 "hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
+"Queremos que el brazo izquierdo aparezca *detrás* de la cadera y el torso. "
+"Podríamos mover los nodos del brazo izquierdo detrás de la cadera (por "
+"encima del nodo de la cadera en la jerarquía de la escena), pero entonces el "
+"brazo izquierdo ya no está en su lugar correcto en la jerarquía. Esto "
+"significa que no se vería afectado por el movimiento del torso. Arreglaremos "
+"este problema con los nodos de ``RemoteTransform2D``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:127
 msgid ""
 "You can also fix depth ordering problems by adjusting the Z property of any "
 "node inheriting from Node2D."
 msgstr ""
+"También puedes arreglar los problemas de ordenamiento de profundidad "
+"ajustando la propiedad Z de cualquier nodo heredado de Nodo2D."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:131
 msgid "RemoteTransform2D node"
-msgstr ""
+msgstr "Nodo RemoteTransform2D"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:133
 msgid ""
@@ -218,12 +294,19 @@ msgid ""
 "(including any transformation it inherits from its parents) to the remote "
 "node it targets."
 msgstr ""
+"El nodo :ref:`RemoteTransform2D <clase_RemoteTransform2D>` transforma los "
+"nodos en algún otro lugar de la jerarquía. Este nodo aplica su propia "
+"transformación (incluyendo cualquier transformación que herede de sus "
+"padres) al nodo remoto al que apunta."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
 msgid ""
 "This allows us to correct the visibility order of our elements, "
 "independently of the locations of those parts in the cutout hierarchy."
 msgstr ""
+"Esto nos permite corregir el orden de visibilidad de nuestros elementos, "
+"independientemente de la ubicación de esas partes en la jerarquía de "
+"recortes."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:140
 msgid ""
@@ -232,32 +315,44 @@ msgid ""
 "call it ``remote_hand_l``. Use the ``Remote Path`` property of the two new "
 "nodes to target the ``arm_l`` and ``hand_l`` sprites respectively:"
 msgstr ""
+"Crear un nodo ``RemoteTransform2D`` como un hijo del torso. Llámalo "
+"``remote_arm_l``. Crea otro nodo RemoteTransform2D dentro del primero y "
+"llámalo ``remote_hand_l``. Usa la propiedad ``Remote Path`` de los dos "
+"nuevos nodos para apuntar a los sprites ``arm_l`` y ``hand_l`` "
+"respectivamente:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:147
 msgid ""
 "Moving the ``RemoteTransform2D`` nodes now moves the sprites. So we can "
 "create animations by adjusting the ``RemoteTransform2D`` transforms:"
 msgstr ""
+"Al mover los nodos de ``RemoteTransform2D`` ahora se mueven los sprites. Así "
+"que podemos crear animaciones ajustando las transformaciones de "
+"``RemoteTransform2D``:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:153
 msgid "Completing the skeleton"
-msgstr ""
+msgstr "Completando el esqueleto"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:155
 msgid ""
 "Complete the skeleton by following the same steps for the rest of the parts. "
 "The resulting scene should look similar to this:"
 msgstr ""
+"Completa el esqueleto siguiendo los mismos pasos para el resto de las "
+"partes. La escena resultante debería ser similar a esta:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:160
 msgid ""
 "The resulting rig will be easy to animate. By selecting the nodes and "
 "rotating them you can animate forward kinematics (FK) efficiently."
 msgstr ""
+"El rig resultante será fácil de animar. Seleccionando los nodos y rotándolos "
+"puedes animar forward kinematics (FK) eficientemente."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:163
 msgid "For simple objects and rigs this is fine, but there are limitations:"
-msgstr ""
+msgstr "Para objetos simples y aparejos esto está bien, pero hay limitaciones:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:165
 msgid ""
@@ -265,40 +360,52 @@ msgid ""
 "The scene tree ends up being used to select parts instead, which can be "
 "slower."
 msgstr ""
+"La selección de los sprites en el mirador principal puede resultar difícil "
+"en los aparejos complejos. El árbol de la escena termina siendo usado para "
+"seleccionar partes en su lugar, lo que puede ser más lento."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:167
 msgid ""
 "Inverse Kinematics (IK) is useful for animating extremities like hands and "
 "feet, and can't be used with our rig in its current state."
 msgstr ""
+"La Cinemática Inversa (IK) es útil para animar las extremidades como las "
+"manos y los pies, y no puede ser usada con nuestro equipo en su estado "
+"actual."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
 msgid "To solve these problems we'll use Godot's skeletons."
-msgstr ""
+msgstr "Para resolver estos problemas usaremos los esqueletos de Godot."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
 msgid "Skeletons"
-msgstr ""
+msgstr "Esqueletos"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:175
 msgid ""
 "In Godot there is a helper to create \"bones\" between nodes. The bone-"
 "linked nodes are called skeletons."
 msgstr ""
+"En Godot hay un ayudante para crear \"bones\" entre los nodos. Los nodos "
+"vinculados a los huesos se llaman esqueletos."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:178
 msgid ""
 "As an example, let's turn the right arm into a skeleton. To create a "
 "skeleton, a chain of nodes must be selected from top to bottom:"
 msgstr ""
+"Como ejemplo, convirtamos el brazo derecho en un esqueleto. Para crear un "
+"esqueleto, se debe seleccionar una cadena de nodos de arriba a abajo:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:183
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
-msgstr ""
+msgstr "Luego, haz clic en el menú Esqueleto y selecciona ``Make Bones``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:187
 msgid "This will add bones covering the arm, but the result may be surprising."
 msgstr ""
+"Esto añadirá los huesos que cubren el brazo, pero el resultado puede ser "
+"sorprendente."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:191
 msgid ""
@@ -306,6 +413,9 @@ msgid ""
 "parent. And there's currently no child of the hand node. With this knowledge "
 "let's try again."
 msgstr ""
+"¿Por qué la mano carece de un hueso? En Godot, un hueso conecta un nodo con "
+"su padre. Y actualmente no hay ningún hijo del nodo de la mano. Con este "
+"conocimiento vamos a intentarlo de nuevo."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:195
 msgid ""
@@ -322,12 +432,16 @@ msgstr ""
 msgid ""
 "Now select the whole chain, from the endpoint to the arm and create bones:"
 msgstr ""
+"Ahora selecciona toda la cadena, desde el punto final hasta el brazo y crea "
+"huesos:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:207
 msgid ""
 "The result resembles a skeleton a lot more, and now the arm and forearm can "
 "be selected and animated."
 msgstr ""
+"El resultado se parece mucho más a un esqueleto, y ahora el brazo y el "
+"antebrazo pueden ser seleccionados y animados."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:210
 msgid ""
@@ -335,6 +449,9 @@ msgid ""
 "articulable parts of the cutout, with the hip as the ultimate connection "
 "between all of them."
 msgstr ""
+"Crear puntos finales para todas las extremidades importantes. Generar huesos "
+"para todas las partes articulables del recorte, con la cadera como la última "
+"conexión entre todas ellas."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:214
 msgid ""
@@ -343,6 +460,10 @@ msgid ""
 "we don't want that. To fix this, select the root and hip node, open the "
 "Skeleton menu, click ``clear bones``."
 msgstr ""
+"Puede que noten que se crea un hueso extra al conectar la cadera y el torso. "
+"Godot ha conectado el nodo de la cadera a la raíz de la escena con un hueso, "
+"y no queremos eso. Para arreglar esto, selecciona el nodo de la raíz y la "
+"cadera, abre el menú de Esqueleto, haz clic en ``clear bones``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
 msgid "Your final skeleton should look something like this:"
@@ -353,6 +474,8 @@ msgid ""
 "You might have noticed a second set of endpoints in the hands. This will "
 "make sense soon."
 msgstr ""
+"Puede que hayas notado un segundo conjunto de puntos finales en las manos. "
+"Esto tendrá sentido pronto."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
 msgid ""
@@ -365,7 +488,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "IK chains"
-msgstr ""
+msgstr "cadenas IK"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:234
 msgid ""
@@ -376,11 +499,20 @@ msgid ""
 "rotating and positioning several other bones (the shin and the thigh at "
 "least). This would be quite complex and lead to imprecise results."
 msgstr ""
+"IK significa cinemática inversa. Es una técnica conveniente para animar la "
+"posición de manos, pies y otras extremidades de plataformas como la que "
+"hemos hecho. Imagina que quieres posar el pie de un personaje en una "
+"posición específica en el suelo. Sin las cadenas IK, cada movimiento del pie "
+"requeriría rotar y posicionar varios otros huesos (la espinilla y el muslo "
+"por lo menos). Esto sería bastante complejo y llevaría a resultados "
+"imprecisos."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:241
 msgid ""
 "IK allows us to move directly the foot while the shin and thigh self-adjust."
 msgstr ""
+"IK nos permite mover directamente el pie mientras que la espinilla y el "
+"muslo se autoajustan."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:243
 msgid ""
@@ -388,14 +520,17 @@ msgid ""
 "the chain. For example, to create an IK chain for the right leg, select the "
 "following:"
 msgstr ""
+"Para crear una cadena IK, selecciona una cadena de huesos desde el punto "
+"final hasta la base de la cadena. Por ejemplo, para crear una cadena IK para "
+"la pierna derecha, seleccione lo siguiente:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:249
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
-msgstr ""
+msgstr "Entonces habilita esta cadena para IK. Ve a Edición > Hacer cadena IK."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:253
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr ""
+msgstr "Como resultado, la base de la cadena se volverá *amarilla*."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:257
 msgid ""
@@ -403,6 +538,9 @@ msgid ""
 "chain (e.g. a foot) and move it. You'll see the rest of the chain adjust as "
 "you adjust its position."
 msgstr ""
+"Una vez que la cadena IK esté colocada, agarra a cualquier niño o nieto de "
+"la base de la cadena (por ejemplo, un pie) y muévelo. Verás que el resto de "
+"la cadena se ajusta a medida que ajustas su posición."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
 msgid "Animation tips"
@@ -414,6 +552,9 @@ msgid ""
 "for your cutout rigs. For more information on how the animation system in "
 "Godot works, see :ref:`doc_animations`."
 msgstr ""
+"La siguiente sección será una colección de consejos para crear animaciones "
+"para sus rigs cutout. Para más información sobre cómo funciona el sistema de "
+"animación en Godot, ver :ref:`doc_animations`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
 msgid "Setting keyframes and excluding properties"
@@ -432,6 +573,9 @@ msgid ""
 "The key button inserts location, rotation, and scale keyframes for the "
 "selected objects or bones at the current playhead position."
 msgstr ""
+"El botón clave inserta la ubicación, rotación y escala de los fotogramas "
+"clave de los objetos o huesos seleccionados en la posición actual de la "
+"cabeza de juego."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:281
 msgid ""
@@ -439,6 +583,9 @@ msgid ""
 "button modify its function, allowing you to specify which of the three "
 "properties keyframes will be created for."
 msgstr ""
+"Los botones de conmutación \"loc\", \"rot\" y \"scl\" a la izquierda del "
+"botón de la llave modifican su función, permitiéndote especificar para cuál "
+"de las tres propiedades se crearán los fotogramas de clave."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:285
 msgid ""
@@ -450,6 +597,14 @@ msgid ""
 "when you add a new keyframe. This way, you can avoid adding unwanted scale "
 "keyframes which would disrupt the existing scale animation."
 msgstr ""
+"Aquí hay una ilustración de cómo esto puede ser útil: Imagina que tienes un "
+"nodo que ya tiene dos fotogramas clave animando sólo su escala. Quieres "
+"añadir un movimiento de rotación superpuesto al mismo nodo. El movimiento de "
+"rotación debería comenzar y terminar en momentos diferentes del cambio de "
+"escala que ya está configurado. Puedes usar los botones de alternancia para "
+"que sólo se añada información de rotación cuando añadas un nuevo fotograma "
+"clave. De esta manera, puedes evitar añadir fotogramas clave de escala no "
+"deseados que podrían interrumpir la animación de escala existente."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
 msgid "Creating a rest pose"
@@ -460,12 +615,17 @@ msgid ""
 "Think of a rest pose as a default pose that your cutout rig should be set to "
 "when no other pose is active in your game. Create a rest pose as follows:"
 msgstr ""
+"Piensa en una pose de descanso como una pose predeterminada que tu equipo de "
+"recorte debe estar configurado cuando ninguna otra pose esté activa en tu "
+"juego. Crea una pose de descanso de la siguiente manera:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:299
 msgid ""
 "1. Make sure the rig parts are positioned in what looks like a \"resting\" "
 "arrangement."
 msgstr ""
+"1. Asegúrate de que las piezas de la plataforma estén colocadas en lo que "
+"parece un montaje \"en reposo\"."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
 msgid "Create a new animation, rename it \"rest\"."
@@ -474,12 +634,16 @@ msgstr "Crea una nueva animación, renómbrala a \"rest\" (descanso)."
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
 msgstr ""
+"Selecciona todos los nodos de tu equipo (la selección de la caja debería "
+"funcionar bien)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid ""
 "4. Make sure the \"loc\", \"rot\", and \"scl\" toggle buttons are all active "
 "in the toolbar."
 msgstr ""
+"4. Asegúrate de que los botones de conmutación \"loc\", \"rot\" y \"scl\" "
+"estén todos activos en la barra de herramientas."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:309
 msgid ""
@@ -487,32 +651,43 @@ msgid ""
 "storing their current arrangement. This pose can now be recalled when "
 "necessary in your game by playing the \"rest\" animation you've created."
 msgstr ""
+"5. Presione el botón llave. Se insertarán las teclas para todas las partes "
+"seleccionadas que guarden su disposición actual. Esta pose puede ahora ser "
+"recordada cuando sea necesario en su juego jugando la animación \"descanso\" "
+"que ha creado."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:316
 msgid "Modifying rotation only"
-msgstr ""
+msgstr "Modificando la rotación solamente"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:318
 msgid ""
 "When animating a cutout rig, often it's only the rotation of the nodes that "
 "needs to change. Location and scale are rarely used."
 msgstr ""
+"Cuando se anima un equipo de recorte, a menudo es sólo la rotación de los "
+"nodos lo que necesita cambiar. La ubicación y la escala se utilizan "
+"raramente."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid ""
 "So when inserting keys, you might find it convenient to have only the \"rot"
 "\" toggle active most of the time:"
 msgstr ""
+"Así que al insertar las teclas, puede que te convenga tener sólo la palanca "
+"de \"rot\" activa la mayor parte del tiempo:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
 msgid ""
 "This will avoid the creation of unwanted animation tracks for position and "
 "scale."
 msgstr ""
+"Esto evitará la creación de pistas de animación no deseadas para la posición "
+"y la escala."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid "Keyframing IK chains"
-msgstr ""
+msgstr "Fotogramas clave de cadenas IK"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
 msgid ""
@@ -527,7 +702,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
-msgstr ""
+msgstr "Visualmente mueve un sprite detrás de su padre"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:340
 msgid ""
@@ -537,6 +712,11 @@ msgid ""
 "him. During this animation the whole arm and the object in his hand would "
 "need to change their visual depth relative to the body of the character."
 msgstr ""
+"A veces es necesario que un nodo cambie su profundidad visual en relación "
+"con su nodo padre durante una animación. Piensa en un personaje frente a la "
+"cámara, que saca algo de detrás de su espalda y lo sostiene frente a él. "
+"Durante esta animación todo el brazo y el objeto en su mano necesitarían "
+"cambiar su profundidad visual en relación al cuerpo del personaje."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:346
 msgid ""
@@ -546,18 +726,24 @@ msgid ""
 "Parent\" and/or RemoteTransform2D nodes. They provide overlapping "
 "functionality."
 msgstr ""
+"Para ayudar con esto, hay una propiedad \"Detrás del padre\" en todos los "
+"nodos heredados de Node2D. Cuando planifiques tu equipo, piensa en los "
+"movimientos que tendrá que realizar y piensa en cómo usarás los nodos "
+"\"Behind Parent\" y/o RemoteTransform2D. Ellos proporcionan funcionalidad de "
+"superposición."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:354
 msgid "Setting easing curves for multiple keys"
-msgstr ""
+msgstr "Configurar las curvas de relajación para múltiples teclas"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
 msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr ""
+"Para aplicar la misma curva de relajación a varios fotogramas clave a la vez:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
 msgid "Select the relevant keys."
-msgstr ""
+msgstr "Seleccione las teclas correspondientes."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
 msgid ""
@@ -570,10 +756,11 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor, click on the desired curve to apply it."
 msgstr ""
+"En el editor de transiciones, haga clic en la curva deseada para aplicarla."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "Deformación esquelética 2D"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:368
 msgid ""
@@ -581,8 +768,13 @@ msgid ""
 "to deform organically (e.g. antennae that wobble as an insect character "
 "walks)."
 msgstr ""
+"La deformación esquelética puede utilizarse para aumentar un aparejo de "
+"recorte, permitiendo que las piezas individuales se deformen orgánicamente "
+"(por ejemplo, las antenas que se tambalean cuando un personaje de insecto "
+"camina)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:371
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
 msgstr ""
+"Este proceso se describe en un :ref:`separate tutorial <doc_2d_skeletons>`."

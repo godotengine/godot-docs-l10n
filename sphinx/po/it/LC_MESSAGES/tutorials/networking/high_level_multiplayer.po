@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,8 +234,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
+#, fuzzy
 msgid "Managing connections"
-msgstr ""
+msgstr "Gestione delle connessioni"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
 msgid ""
@@ -272,20 +273,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
+#, fuzzy
 msgid "Clients:"
-msgstr ""
+msgstr "Clienti:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
+#, fuzzy
 msgid "``connected_to_server``"
-msgstr ""
+msgstr "``connected_to_server``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
+#, fuzzy
 msgid "``connection_failed``"
-msgstr ""
+msgstr "``connection_failed``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
+#, fuzzy
 msgid "``server_disconnected``"
-msgstr ""
+msgstr "``server_disconnected``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -305,8 +310,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
+#, fuzzy
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
@@ -657,26 +663,41 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
+#, fuzzy
 msgid ""
 "The result of this call to ``stun`` is to make the player look stunned on "
 "the screen of all the peers, including the current network master peer (due "
 "to the local call to ``stun`` after ``rpc(\"stun\")``)."
 msgstr ""
+"Il risultato di questa chiamata a ``stun`` è quello di far apparire il "
+"giocatore stordito sullo schermo di tutti i partecipanti, incluso il peer "
+"master di rete corrente (a causa della chiamata locale a ``stun`` dopo "
+"``rpc(\"stun\")``)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:442
+#, fuzzy
 msgid ""
 "The master of the bomb (the host) repeats the above steps for each of the "
 "bodies in the area, such that all the instances of any player in the bomb "
 "area get stunned on the screens of all the peers."
 msgstr ""
+"Il padrone della bomba (l'host) ripete i passaggi sopra descritti per ognuno "
+"dei corpi nella zona, in modo tale che tutte le istanze di qualsiasi "
+"giocatore nella zona della bomba vengano stordite sugli schermi di tutti i "
+"partecipanti."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
+#, fuzzy
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
 "make much sense for an area-of-effect case like the bomb, but might in other "
 "cases, like single target damage."
 msgstr ""
+"Nota che puoi anche inviare il messaggio \"stun ()\" solo a un giocatore "
+"specifico usando ``rpc_id (<id>,\" exploded \", bomb_owner)``. Questo "
+"potrebbe non avere molto senso per un effetto ad area come la bomba, ma "
+"potrebbe in altri casi, come il danno a bersaglio singolo."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
 msgid "Exporting for dedicated servers"

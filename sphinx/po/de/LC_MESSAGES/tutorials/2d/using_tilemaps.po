@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,6 +58,10 @@ msgid ""
 "nl/assets/abstract-platformer>`_ but for this demo we'll stick to this small "
 "set."
 msgstr ""
+"In dieser Demo werden die folgenden Kacheln aus Kenneys Paket \"Abstract "
+"Platformer\" verwendet. Das komplette Set finden Sie `hier <https://kenney."
+"nl/assets/abstract-platformer>`_, aber für diese Demo bleiben wir bei diesem "
+"kleinen Set."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid "Create a new project and place the above image in the project folder."
@@ -90,6 +94,10 @@ msgid ""
 "TileMap uses a square grid of tiles. You can also use a perspective-based "
 "\"Isometric\" mode or define your own custom tile shape."
 msgstr ""
+"Fügen Sie der Szene einen neuen :ref:`TileMap <class_TileMap>`-Node hinzu. "
+"Standardmäßig verwendet eine TileMap ein quadratisches Kachelraster. Sie "
+"können auch einen perspektivischen \"isometrischen\" Modus verwenden oder "
+"Ihre eigene benutzerdefinierte Kachelform definieren."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid ""
@@ -215,6 +223,10 @@ msgid ""
 "want. Click the \"Enable Snap\" button to make it easier to select the "
 "entire tile. A yellow rectangle appears around the selected tile."
 msgstr ""
+"Klicken Sie anschließend auf \"Neue Einzelkachel\" und ziehen Sie das Bild "
+"hinein, um die gewünschte Kachel auszuwählen. Klicken Sie auf die "
+"Schaltfläche \"Fang aktivieren\", um die Auswahl der gesamten Kachel zu "
+"vereinfachen. Um die ausgewählte Kachel wird ein gelbes Rechteck angezeigt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:98
 msgid ""
@@ -237,7 +249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 msgid "Collision shapes"
-msgstr "Collision Shapes"
+msgstr "Kollisionsformen"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:112
 msgid ""
@@ -245,6 +257,9 @@ msgid ""
 "obstacles, for example - then you'll need to add collision shapes to any "
 "tiles that you want to be considered \"solid\"."
 msgstr ""
+"Wenn Sie eine Karte erstellen für die Kollisionen erforderlich sind (z.B. "
+"Wände, Boden oder andere Hindernisse), müssen Sie allen Kacheln, die als "
+"\"fest\" eingestuft werden sollen, Kollisionsformen hinzufügen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:116
 msgid ""
@@ -351,14 +366,14 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid "Autotiles"
-msgstr "Autotiles"
+msgstr "AutoTiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:168
 msgid ""
 "Autotiles allow you to define a group of tiles, then add rules to control "
 "which tile gets used for drawing based on the content of adjacent cells."
 msgstr ""
-"Mit Autotiles können Sie eine Gruppe von Kacheln definieren und dann Regeln "
+"Mit AutoTiles können Sie eine Gruppe von Kacheln definieren und dann Regeln "
 "hinzufügen, um zu steuern, welche Kacheln basierend auf dem Inhalt "
 "benachbarter Zellen zum Zeichnen verwendet werden."
 
@@ -368,7 +383,7 @@ msgid ""
 "add collisions, occlusion, navigation shapes, tile priorties, and select an "
 "icon tile in the same manner as for atlas tiles."
 msgstr ""
-"Klicken Sie auf \"Neues Autotile\" und ziehen Sie, um die zu verwendenden "
+"Klicken Sie auf \"Neues AutoTile\" und ziehen Sie, um die zu verwendenden "
 "Kacheln auszuwählen. Sie können Kollisionen, Umgebungsverdeckung, "
 "Navigationsformen und Kachelprioritäten hinzufügen und eine Symbolkachel auf "
 "dieselbe Weise wie beim Atlas auswählen."
@@ -441,12 +456,18 @@ msgid ""
 "the top-left bit is set, the cell directly above, directly left, and "
 "diagonally above-left must be filled."
 msgstr ""
+"Wenn ein Bit \"Ein\" ist, müssen alle mit dieser Ecke verbundenen Zellen mit "
+"demselben AutoTile gefüllt werden damit die Bitmaske übereinstimmt. Wenn "
+"beispielsweise das Bit oben links gesetzt ist, müssen die Zellen direkt "
+"darüber, links und diagonal links darüber gefüllt werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:204
 msgid ""
 "Where a bit is \"off\", at least one cell connected to that corner must not "
 "be set using the same autotile."
 msgstr ""
+"Wenn ein Bit \"aus\" ist, darf mindestens eine mit dieser Ecke verbundene "
+"Zelle nicht mit demselben AutoTile gesetzt werden."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:207
 msgid ""
@@ -470,41 +491,43 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:214
 #: ../../docs/tutorials/2d/using_tilemaps.rst:246
 msgid "**Template - Generic:**"
-msgstr ""
+msgstr "**Vorlage - Allgemein:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:216
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. It's "
 "designed for a TileMap cell size of 64x64."
 msgstr ""
+"Diese Vorlage kann für seitliche oder vollständig von oben nach unten "
+"gerichtete Perspektiven verwendet werden. Es ist für eine TileMap-"
+"Zellengröße von 64 x 64 ausgelegt."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:219
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
 msgid "Key:"
-msgstr ""
+msgstr "Schlüssel:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
 msgid "Red: \"on\""
-msgstr ""
+msgstr "Rot: \"an\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 #: ../../docs/tutorials/2d/using_tilemaps.rst:255
 msgid "White: \"off\""
-msgstr ""
+msgstr "Weiß: \"aus\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
 msgstr "3x3 (minimal)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:229
-#, fuzzy
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center). The 4 corner bits work the same as in 2x2 mode."
 msgstr ""
 "Im 3x3 (minimal) Modus enthält jede Bitmaske 9 Bits (4 Ecken, 4 Ränder, 1 "
-"Mitte)."
+"Mitte). Die 4 Eckbits funktionieren genauso wie im 2x2-Modus."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
@@ -516,14 +539,14 @@ msgstr ""
 "Kante teilt, leer sein."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
-#, fuzzy
 msgid ""
 "The center bit should be \"on\" for any tile you wish to use. Note that in "
 "this mode, it makes no sense for a corner bit to be \"on\" when either edge "
 "bit adjacent to it is not \"on\"."
 msgstr ""
-"Beachten Sie, dass es in diesem Modus keinen Sinn macht, dass ein Eckbit "
-"\"Ein\" ist, wenn eines der angrenzenden Kantenbits nicht \"Ein\" ist."
+"Das mittlere Bit sollte für jede Kachel, die Sie verwenden möchten, \"Ein\" "
+"sein. Beachten Sie, dass es in diesem Modus keinen Sinn macht, dass ein "
+"Eckbit \"Ein\" ist, wenn eines der angrenzenden Kantenbits nicht \"Ein\" ist."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
@@ -536,6 +559,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:244
 msgid "Right-click an image and choose **Save image as…** to save it."
 msgstr ""
+"Klicken Sie mit der rechten Maustaste auf ein Bild und wählen Sie **Bild "
+"speichern unter…** um es zu speichern."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid ""
@@ -547,46 +572,47 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:260
 msgid "**Template - Top-down floor in 3/4 perspective:**"
-msgstr ""
+msgstr "**Vorlage - Top-down-Etage in 3/4 Perspektive:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid "Key (applies to the four templates below):"
-msgstr ""
+msgstr "Schlüssel (gilt für die folgenden vier Vorlagen):"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:264
 msgid "Green: floor"
-msgstr ""
+msgstr "Grün: Boden"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Cyan: wall"
-msgstr ""
+msgstr "Cyan: Wand"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:266
 msgid "Yellow: top of wall"
-msgstr ""
+msgstr "Gelb: Oberseite der Wand"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:267
-#, fuzzy
 msgid "Transparent: air"
-msgstr "Transparent"
+msgstr "Transparent: Luft"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "**Template - Top-down wall in 3/4 perspective:**"
-msgstr ""
+msgstr "**Vorlage - Top-Down-Wand in 3/4 Perspektive:**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:275
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
-msgstr ""
+msgstr "**Vorlage - Top-Down-Wand in 3/4 Perspektive (dicke Wände):**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:277
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
 msgstr ""
+"Wenn Sie diese Vorlage verwenden, setzen Sie die Elementgröße des TileSet "
+"auf ``Vector2(64, 88)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
-msgstr ""
+msgstr "**Vorlage - Top-Down-Wand in 3/4 Perspektive (hohe Wände):**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:283
 msgid ""
@@ -637,7 +663,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid "Autotile binding"
-msgstr "Autotile Bindung"
+msgstr "AutoTile Bindung"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:311
 msgid ""
@@ -687,11 +713,15 @@ msgstr ""
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
+"Sie können Kacheln mithilfe der Symbole oben rechts im Editor spiegeln und "
+"drehen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:334
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
+"Um gerade Linien zu zeichnen, halten Sie :kbd:`Shift` gedrückt, während Sie "
+"auf eine Kachel klicken und sie ziehen."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""

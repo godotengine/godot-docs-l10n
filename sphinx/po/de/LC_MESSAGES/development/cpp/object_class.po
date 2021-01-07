@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,10 @@ msgid ""
 "reflection and editable properties, and declaring them is a matter of using "
 "a single macro like this."
 msgstr ""
+":ref:`Object <class_object>` ist die Basisklasse für fast alles. Die meisten "
+"Klassen in Godot erben direkt oder indirekt davon. Objekte bieten "
+"Reflexions- und bearbeitbare Eigenschaften, und für deren Deklaration muss "
+"ein einziges Makro wie dieses verwendet werden."
 
 #: ../../docs/development/cpp/object_class.rst:26
 msgid "This makes Objects gain a lot of functionality, like for example"
@@ -73,20 +77,27 @@ msgid ""
 "that inherit from Object, as well as dynamic bindings to all their methods "
 "properties and integer constants."
 msgstr ""
+"ClassDB ist eine statische Klasse, welche die gesamte Liste der von Object "
+"geerbten registrierten Klassen sowie dynamische Bindungen an alle "
+"Methodeneigenschaften und Ganzzahlkonstanten enthält."
 
 #: ../../docs/development/cpp/object_class.rst:47
 msgid "Classes are registered by calling:"
-msgstr ""
+msgstr "Klassen werden registriert durch Aufruf:"
 
 #: ../../docs/development/cpp/object_class.rst:53
 msgid ""
 "Registering it will allow the class to be instanced by scripts, code, or "
 "creating them again when deserializing."
 msgstr ""
+"Durch die Registrierung kann die Klasse durch Skripte, Code instanziiert "
+"oder beim Deserialisieren erneut erstellt werden."
 
 #: ../../docs/development/cpp/object_class.rst:56
 msgid "Registering as virtual is the same but it can't be instanced."
 msgstr ""
+"Die Registrierung als virtuell ist die gleiche, aber sie kann nicht "
+"instanziert werden."
 
 #: ../../docs/development/cpp/object_class.rst:62
 msgid ""
@@ -96,16 +107,26 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
+"Von Objekten abgeleitete Klassen können die statische Funktion ``static void "
+"_bind_methods()`` überschreiben. Wenn eine Klasse registriert ist, wird "
+"diese statische Funktion aufgerufen, um alle Objektmethoden, Eigenschaften, "
+"Konstanten usw. zu registrieren. Sie wird nur einmal aufgerufen. Wenn eine "
+"von Object abgeleitete Klasse instanziiert, aber nicht registriert wurde, "
+"wird sie automatisch als virtuell registriert."
 
 #: ../../docs/development/cpp/object_class.rst:69
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
 msgstr ""
+"In ``_bind_methods`` gibt es ein paar Dinge, die getan werden können. Das "
+"Registrieren von Funktionen ist eine:"
 
 #: ../../docs/development/cpp/object_class.rst:76
 msgid "Default values for arguments can be passed in reverse order:"
 msgstr ""
+"Standardwerte für Argumente können in umgekehrter Reihenfolge übergeben "
+"werden:"
 
 #: ../../docs/development/cpp/object_class.rst:82
 msgid ""
@@ -114,10 +135,16 @@ msgid ""
 "compiling on release, the macro ignores them, so the strings are unused and "
 "optimized away."
 msgstr ""
+"``D_METHOD`` ist ein Makro, das \"Methodenname\" zur Steigerung der "
+"Effizienz in einen StringName konvertiert. Argumentnamen werden zur "
+"Selbstbeobachtung verwendet, aber beim Kompilieren bei der Veröffentlichung "
+"werden sie vom Makro ignoriert, sodass die Zeichenfolgen nicht verwendet und "
+"nicht optimiert werden."
 
 #: ../../docs/development/cpp/object_class.rst:87
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
 msgstr ""
+"Weitere Beispiele finden Sie unter ``_bind_methods`` von Control oder Objekt."
 
 #: ../../docs/development/cpp/object_class.rst:89
 msgid ""
@@ -125,6 +152,10 @@ msgid ""
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
 "a string passing the name can be passed for brevity."
 msgstr ""
+"Wenn nur Module und Funktionen hinzugefügt werden, von denen nicht erwartet "
+"wird, dass sie so gründlich dokumentiert werden, kann das Makro "
+"``D_METHOD()`` ignoriert und eine Zeichenfolge, die den Namen übergibt, kann "
+"der Kürze halber übergeben werden."
 
 #: ../../docs/development/cpp/object_class.rst:96
 msgid ""
@@ -140,17 +171,21 @@ msgstr "Konstanten"
 
 #: ../../docs/development/cpp/object_class.rst:101
 msgid "Classes often have enums such as:"
-msgstr ""
+msgstr "Klassen haben oft Aufzählungen wie:"
 
 #: ../../docs/development/cpp/object_class.rst:110
 msgid ""
 "For these to work when binding to methods, the enum must be declared "
 "convertible to int, for this a macro is provided:"
 msgstr ""
+"Damit diese beim Binden an Methoden funktionieren, muss die Aufzählung als "
+"in int konvertierbar deklariert werden. Dazu wird ein Makro bereitgestellt:"
 
 #: ../../docs/development/cpp/object_class.rst:117
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
 msgstr ""
+"Die Konstanten können auch innerhalb von ``_bind_methods`` gebunden werden, "
+"indem Sie Folgendes verwenden:"
 
 #: ../../docs/development/cpp/object_class.rst:125
 msgid "Properties (set/get)"
@@ -159,20 +194,25 @@ msgstr "Eigenschaften (set/get)"
 #: ../../docs/development/cpp/object_class.rst:127
 msgid "Objects export properties, properties are useful for the following:"
 msgstr ""
+"Objekte exportieren Eigenschaften, Eigenschaften sind für Folgendes nützlich:"
 
 #: ../../docs/development/cpp/object_class.rst:129
 msgid "Serializing and deserializing the object."
-msgstr ""
+msgstr "Serialisierung und Deserialisierung des Objekts."
 
 #: ../../docs/development/cpp/object_class.rst:130
 msgid "Creating a list of editable values for the Object derived class."
 msgstr ""
+"Erstellen einer Liste editierbarer Werte für die vom Objekt abgeleitete "
+"Klasse."
 
 #: ../../docs/development/cpp/object_class.rst:132
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
 msgstr ""
+"Eigenschaften werden normalerweise durch die Klasse PropertyInfo() "
+"definiert. Normalerweise konstruiert als:"
 
 #: ../../docs/development/cpp/object_class.rst:139
 msgid "For example:"
@@ -184,6 +224,10 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
+"Dies ist eine Ganzzahl-Eigenschaft mit dem Namen \"amount\". Der Hinweis ist "
+"ein Bereich. Der Bereich reicht von 0 bis 49 in Schritten von 1 "
+"(Ganzzahlen). Es kann nur für den Editor verwendet werden (Wert visuell "
+"bearbeiten), wird jedoch nicht serialisiert."
 
 #: ../../docs/development/cpp/object_class.rst:149
 msgid "Another example:"
@@ -195,12 +239,18 @@ msgid ""
 "allow the defined hint ones. Since no usage flags were specified, the "
 "default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
+"Dies ist eine Zeichenfolgeeigenschaft, die eine beliebige Zeichenfolge "
+"annehmen kann, der Editor jedoch nur die definierten Hinweiszeichen zulässt. "
+"Da keine Verwendungsflags angegeben wurden, sind die Standardflags "
+"PROPERTY_USAGE_STORAGE und PROPERTY_USAGE_EDITOR."
 
 #: ../../docs/development/cpp/object_class.rst:159
 msgid ""
 "There are plenty of hints and usage flags available in object.h, give them a "
 "check."
 msgstr ""
+"In object.h sind viele Hinweise und Verwendungsflags verfügbar. Überprüfen "
+"Sie sie."
 
 #: ../../docs/development/cpp/object_class.rst:162
 msgid ""
@@ -210,26 +260,38 @@ msgid ""
 "such as \"animation/frame\" which also make indexing impossible unless using "
 "operator []."
 msgstr ""
+"Eigenschaften können auch wie C# -Eigenschaften funktionieren und über das "
+"Index mithilfe der Indizierung aufgerufen werden. Von dieser Verwendung wird "
+"jedoch im Allgemeinen abgeraten, da die Verwendung von Funktionen aus "
+"Gründen der Lesbarkeit bevorzugt wird. Viele Eigenschaften sind auch an "
+"Kategorien gebunden, z. B. \"Animation/Frame\", die eine Indizierung nur mit "
+"dem Operator [] unmöglich machen."
 
 #: ../../docs/development/cpp/object_class.rst:168
 msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
 msgstr ""
+"Aus ``_bind_methods()`` können Eigenschaften erstellt und gebunden werden, "
+"solange set/get-Funktionen vorhanden sind. Beispiel:"
 
 #: ../../docs/development/cpp/object_class.rst:175
 msgid "This creates the property using the setter and the getter."
 msgstr ""
+"Dadurch wird die Eigenschaft mit Hilfe des Setters und des Getters erstellt."
 
 #: ../../docs/development/cpp/object_class.rst:180
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
-msgstr ""
+msgstr "Bindung von Eigenschaften mit ``_set``/``_get``/``_get_property_list``"
 
 #: ../../docs/development/cpp/object_class.rst:182
 msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
 msgstr ""
+"Ein zusätzliches Verfahren zum Erstellen von Eigenschaften besteht, wenn "
+"mehr Flexibilität gewünscht wird (d.H. Hinzufügen oder Entfernen von "
+"Eigenschaften im Kontext)."
 
 #: ../../docs/development/cpp/object_class.rst:185
 msgid ""
@@ -237,12 +299,18 @@ msgid ""
 "are NOT virtual, DO NOT make them virtual, they are called for every "
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
+"Die folgenden Funktionen können in einer von Object abgeleiteten Klasse "
+"überschrieben werden. Sie sind NICHT virtuell. Machen Sie sie NICHT "
+"virtuell. Sie werden bei jeder Überschreibung aufgerufen und die vorherigen "
+"Funktionen werden nicht ungültig gemacht (mehrstufiger Aufruf)."
 
 #: ../../docs/development/cpp/object_class.rst:197
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
 msgstr ""
+"Dies ist auch etwas weniger effizient, da ``p_property`` mit den gewünschten "
+"Namen in serieller Reihenfolge verglichen werden muss."
 
 #: ../../docs/development/cpp/object_class.rst:201
 msgid "Dynamic casting"
@@ -252,6 +320,8 @@ msgstr "dynamisches Casting"
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
 msgstr ""
+"Godot bietet zum Beispiel dynamisches Casting zwischen von Objekten "
+"abgeleiteten Klassen:"
 
 #: ../../docs/development/cpp/object_class.rst:213
 msgid ""
@@ -260,6 +330,11 @@ msgid ""
 "platforms where a small binary size is ideal, such as HTML5 or consoles "
 "(with low memory footprint)."
 msgstr ""
+"Wenn die Umwandlung fehlschlägt, wird NULL zurückgegeben. Dieses System "
+"verwendet RTTI, funktioniert aber auch einwandfrei (wenn auch etwas "
+"langsamer), wenn RTTI deaktiviert ist. Dies ist nützlich auf Plattformen, "
+"auf denen eine kleine Binärgröße ideal ist, z. B. HTML5 oder Konsolen (mit "
+"geringem Speicher)."
 
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
@@ -270,18 +345,25 @@ msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
 msgstr ""
+"Für Objekte kann eine Reihe von Signalen definiert werden (ähnlich wie bei "
+"Delegierten in anderen Sprachen). Die Verbindung zu ihnen ist ziemlich "
+"einfach:"
 
 #: ../../docs/development/cpp/object_class.rst:230
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
 "``ClassDB::bind_method`` (explained before)."
 msgstr ""
+"Die Methode ``_node_entered_tree`` muss bei der Klasse mit ``ClassDB::"
+"bind_method`` registriert werden (siehe oben)."
 
 #: ../../docs/development/cpp/object_class.rst:233
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
 msgstr ""
+"Das Hinzufügen von Signalen zu einer Klasse erfolgt in ``_bind_methods``, z."
+"B. mit dem Makro ``ADD_SIGNAL``:"
 
 #: ../../docs/development/cpp/object_class.rst:241
 msgid "References"
@@ -293,12 +375,17 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
+":ref:`Referenz <class_reference>` erbt von Object und enthält einen "
+"Referenzzähler. Es ist die Basis für referenzgezählte Objekttypen. Die "
+"Deklaration muss mit dem Ref<> Template erfolgen. Zum Beispiel:"
 
 #: ../../docs/development/cpp/object_class.rst:255
 msgid ""
 "``myref`` is reference counted. It will be freed when no more Ref<> "
 "templates point to it."
 msgstr ""
+"``myref`` wird als Referenz gezählt. Es wird freigegeben, wenn keine Ref<> "
+"Templates mehr darauf verweisen."
 
 #: ../../docs/development/cpp/object_class.rst:261
 msgid ""
@@ -320,6 +407,12 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
+":ref:`Resource <class_resource>` erbt von Reference, sodass alle Ressourcen "
+"als Referenz gezählt werden. Ressourcen können optional einen Pfad "
+"enthalten, der auf eine Datei auf der Festplatte verweist. Dies kann mit "
+"``resource.set_path(path)`` eingestellt werden. Dies wird normalerweise vom "
+"Ressourcenlader durchgeführt. Keine zwei verschiedenen Ressourcen können "
+"denselben Pfad haben. Wenn Sie dies versuchen, wird ein Fehler angezeigt."
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resources without a path are fine too."
@@ -347,6 +440,10 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
+"Wenn zuvor ein Verweis auf diese Ressource geladen wurde und sich im "
+"Speicher befindet, gibt der Ressourcenlader diesen Verweis zurück. Dies "
+"bedeutet, dass nur eine Ressource gleichzeitig aus einer Datei geladen "
+"werden kann, auf die auf der Festplatte verwiesen wird."
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "resourceinteractiveloader (TODO)"
@@ -376,6 +473,11 @@ msgid ""
 "bundled with the saved resource and assigned sub-IDs, like \"res://"
 "someresource.res::1\". This also helps to cache them when loaded."
 msgstr ""
+"Instanz wird gespeichert. Unterressourcen, die einen Pfad zu einer Datei "
+"haben, werden als Referenz auf diese Ressource gespeichert. Unterressourcen "
+"ohne Pfad werden mit der gespeicherten Ressource und den zugewiesenen Unter-"
+"IDs wie \"res: //someresource.res::1\" gebündelt. Dies hilft auch, sie beim "
+"Laden zwischenzuspeichern."
 
 #: ../../docs/development/cpp/object_class.rst:317
 msgid ""

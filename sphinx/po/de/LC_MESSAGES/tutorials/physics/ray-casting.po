@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
-msgstr ""
+msgstr "Zugriff auf den Raum"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
@@ -105,6 +105,9 @@ msgid ""
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` must be used."
 msgstr ""
+"Um Abfragen im physikalischen Raum durchzuführen, müssen :ref:"
+"`Physics2DDirectSpaceState <class_Physics2DDirectSpaceState>` und :ref:"
+"`PhysicsDirectSpaceState <class_PhysicsDirectSpaceState>` verwendet werden."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
@@ -142,6 +145,7 @@ msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr ""
+"Das ``Ergebnis``-Wörterbuch enthält bei einer Kollision die folgenden Daten:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
@@ -174,7 +178,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
-msgstr ""
+msgstr "Das Ausnahme-Array kann Objekte oder RIDs enthalten."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
@@ -204,6 +208,8 @@ msgid ""
 "See :ref:`doc_physics_introduction_collision_layer_code_example` for details "
 "on how to set the collision mask."
 msgstr ""
+"Siehe :ref:`doc_physics_introduction_collision_layer_code_example` für "
+"Details zum Festlegen der Kollisionsmaske."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:227
 msgid "3D ray casting from screen"
@@ -230,6 +236,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/ray-casting.rst:243
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr ""
+"Um sie mit einer Kamera zu erhalten, kann der folgende Code verwendet werden:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:271
 msgid ""

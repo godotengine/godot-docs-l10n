@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,10 +158,11 @@ msgstr ""
 "を使用することです。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
+#, fuzzy
 msgid ""
 "Finally, this script is actually being designated as a class named "
 "``State``. This makes refactoring the code easier, since the file path from "
-"using the ``load()`` and ``preload()`` functions in godot will not be needed."
+"using the ``load()`` and ``preload()`` functions in Godot will not be needed."
 msgstr ""
 "最後に、このスクリプトは実際には ``State`` という名前のクラスとして指定されて"
 "います。これにより、godotで ``load()`` および ``preload()`` 関数で使用する"
@@ -175,14 +176,15 @@ msgstr ""
 "そのため、基準ステートがあるので、前に説明した2つの状態を実装できます。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
+#, fuzzy
 msgid ""
-"The since the ``Run`` and ``Idle`` states extend from ``State`` which "
-"extends ``Node2D``, the function ``_physics_process(delta)`` is called from "
-"the **bottom-up** meaning ``Run`` and ``Idle`` will call their "
-"implementation of ``_physics_process(delta)``, then ``State`` will call its "
-"implementation, then ``Node2D`` will call its own implementation and so on. "
-"This may seem strange, but it is only relevant for predefined functions such "
-"as ``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
+"Since the ``Run`` and ``Idle`` states extend from ``State`` which extends "
+"``Node2D``, the function ``_physics_process(delta)`` is called from the "
+"**bottom-up** meaning ``Run`` and ``Idle`` will call their implementation of "
+"``_physics_process(delta)``, then ``State`` will call its implementation, "
+"then ``Node2D`` will call its own implementation and so on. This may seem "
+"strange, but it is only relevant for predefined functions such as "
+"``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
 "``Run`` および ``Idle`` のステートは ``Node2D`` を拡張する ``State`` から拡張"
@@ -194,9 +196,10 @@ msgstr ""
 "装をオーバーライドする通常の継承ルールを使用します。"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
+#, fuzzy
 msgid ""
-"There is a round-about method for obtaining a state instance. A state "
-"factory can be used."
+"There is a roundabout method for obtaining a state instance. A state factory "
+"can be used."
 msgstr ""
 "ステートインスタンスを取得するためのラウンドアバウトメソッドがあります。ス"
 "テートファクトリを使用できます。"
@@ -220,7 +223,7 @@ msgstr ""
 "め、この新しいスクリプト ``persistent_state.gd`` を呼び出すことは理にかなって"
 "います。"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:229
+#: ../../docs/tutorials/misc/state_design_pattern.rst:230
 msgid ""
 "The ``persistent_state.gd`` script contains code for detecting input. This "
 "was to make the tutorial simple, but it is not usually best practice to do "
@@ -230,11 +233,11 @@ msgstr ""
 "います。これはチュートリアルを簡単にするためでしたが、通常これを行うのはベス"
 "トプラクティスではありません。"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:233
+#: ../../docs/tutorials/misc/state_design_pattern.rst:234
 msgid "Project setup"
 msgstr "プロジェクトの設定"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:235
+#: ../../docs/tutorials/misc/state_design_pattern.rst:236
 msgid ""
 "This tutorial made an assumption that the node it would be attached to "
 "contained a child node which is an :ref:`AnimatedSprite "
@@ -250,12 +253,13 @@ msgstr ""
 "最上位ノードは :ref:`KinematicBody2D <class_KinematicBody2D>` であると想定さ"
 "れます。"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:242
+#: ../../docs/tutorials/misc/state_design_pattern.rst:243
+#, fuzzy
 msgid ""
 "The zip file of the llama used in this tutorial is :download:`here <files/"
 "llama.zip>`. The source was from `piskel_llama <https://www.piskelapp.com/p/"
 "agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_, but I couldn't find "
-"the original creator information on that page though... There is also a good "
+"the original creator information on that page... There is also a good "
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
@@ -266,7 +270,7 @@ msgstr ""
 "ための良いチュートリアルも既にあるので参照してください。\\ :ref:`2Dスプライト"
 "アニメーション <doc_2d_sprite_animation>`\\ 。"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:247
+#: ../../docs/tutorials/misc/state_design_pattern.rst:248
 msgid ""
 "So, the only script that must be attached is ``persistent_state.gd``, which  "
 "should be attached to the top node of the player, which is a :ref:"
@@ -276,7 +280,7 @@ msgstr ""
 "で、これはプレイヤーの最上位ノードにアタッチする必要があります。これは :ref:"
 "`KinematicBody2D <class_KinematicBody2D>` です。"
 
-#: ../../docs/tutorials/misc/state_design_pattern.rst:254
+#: ../../docs/tutorials/misc/state_design_pattern.rst:255
 msgid ""
 "Now the player has utilized the state design pattern to implement its two "
 "different states. The nice part of this pattern is that if one wanted to add "

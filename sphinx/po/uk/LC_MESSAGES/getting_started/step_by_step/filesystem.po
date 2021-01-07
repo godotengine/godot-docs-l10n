@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "A file system manages how assets are stored and how they are accessed. A "
 "well-designed file system also allows multiple developers to edit the same "
@@ -44,7 +43,6 @@ msgid "Implementation"
 msgstr "Реалізація"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
-#, fuzzy
 msgid ""
 "The file system stores resources on disk. Anything, from a script, to a "
 "scene or a PNG image is a resource to the engine. If a resource contains "
@@ -54,7 +52,7 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
-"Файлова система зберігає ресурси на диску. Все, від скрипту, сцени, чи "
+"Файлова система зберігає ресурси на диску. Все, від скрипту, до сцени, чи "
 "зображення PNG - це ресурс для движка. Якщо ресурс містить властивості, що "
 "посилаються на інші ресурси на диску, включаються також і шляхи до цих "
 "ресурсів. Якщо в ресурсі є вбудовані під-ресурси, ресурс зберігається в "
@@ -62,7 +60,6 @@ msgstr ""
 "часто поєднується з текстурами шрифту."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
-#, fuzzy
 msgid ""
 "The Godot file system avoids using metadata files. Existing asset managers "
 "and VCSs are better than anything we can implement, so Godot tries its best "
@@ -78,37 +75,33 @@ msgstr "Зразок вмісту файлової системи:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"Файл project.godot - це файл опису проекту, і він завжди знаходиться в "
+"Файл ``project.godot`` - це файл опису проекту, і він завжди знаходиться в "
 "корені проекту. Насправді його розташування визначає, де знаходиться корінь. "
 "Це перший файл, який Godot шукає при відкритті проекту."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
 "Цей файл містить конфігурацію проекту у простому тексті, використовуючому "
-"формат win.ini. Навіть порожній project.godot може функціонувати, як основне "
-"визначення порожнього проекту."
+"формат win.ini. Навіть порожній ``project.godot`` може функціонувати, як "
+"основне визначення порожнього проекту."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
-#, fuzzy
 msgid "Path delimiter"
-msgstr "Розмежувач шляху"
+msgstr "Розмежувач шляхів"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
-#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
@@ -121,12 +114,10 @@ msgstr ""
 "project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
-#, fuzzy
 msgid "Resource path"
 msgstr "Шлях до ресурсу"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:60
-#, fuzzy
 msgid ""
 "When accessing resources, using the host OS file system layout can be "
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
@@ -137,16 +128,14 @@ msgstr ""
 "спеціальний шлях ``res://``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
 "Шлях ``res://`` завжди буде вказувати на корінь проекту (де знаходиться "
-"project.godot, тому ``res://project.godot`` завжди дійсний)."
+"``project.godot``, тому ``res://project.godot`` завжди дійсний)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
-#, fuzzy
 msgid ""
 "This file system is read-write only when running the project locally from "
 "the editor. When exported or when running on different devices (such as "
@@ -159,12 +148,10 @@ msgstr ""
 "стане доступна лише для читання, і запис більше не буде дозволено."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
-#, fuzzy
 msgid "User path"
-msgstr "Шлях користувача"
+msgstr "Користувацький шлях"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -174,15 +161,15 @@ msgid ""
 msgstr ""
 "Запис на диск все ще потрібен для таких завдань, як збереження ігрового "
 "стану, або завантаження вмісту. З цією метою движок забезпечує наявність "
-"спеціального шляху ``user://``, який завжди можна записати."
+"спеціального шляху ``user://``, який завжди можна записати. Цей шлях "
+"міняється в залежності від операційної системи на якій запущений проект. "
+"Розширення місцевого шляху далі пояснюється в :ref:`doc_data_paths`."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
-#, fuzzy
 msgid "Host file system"
 msgstr "Файлова система хоста"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:85
-#, fuzzy
 msgid ""
 "Alternatively host file system paths can also be used, but this is not "
 "recommended for a released product as these paths are not guaranteed to work "
@@ -199,7 +186,6 @@ msgid "Drawbacks"
 msgstr "Недоліки"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
-#, fuzzy
 msgid ""
 "There are some drawbacks to this simple file system design. The first issue "
 "is that moving assets around (renaming them or moving them from one path to "
@@ -214,7 +200,6 @@ msgstr ""
 "активу."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
-#, fuzzy
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -224,11 +209,10 @@ msgstr ""
 "Щоб уникнути цього, виконуйте всі свої переміщення, видалення та "
 "перейменування операцій із Godot, на панелі Файлова система. Ніколи не "
 "переміщуйте активи за межами Godot, інакше залежність доведеться виправляти "
-"вручну (Godot виявляє це і допомагає все-таки вам виправити, але навіщо йти "
+"вручну (Godot виявляє це і допоможе вам все виправити, але навіщо йти "
 "складним шляхом?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -246,12 +230,11 @@ msgstr ""
 "стислий пакет для зберігання всіх файлів."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:109
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
 "Рекомендується, щоб ваша команда чітко визначила порядок іменування файлів "
-"під час роботи з Godot. Одне просте умова, що захищається від дурня, - це "
-"дозволяти лише невеликі імена файлів та імен."
+"під час роботи з Godot. Одна з найпростіших умов захисту від помилок - це "
+"використовувати лише нижній регістр для імен файлів та шляхів."

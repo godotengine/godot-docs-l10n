@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -689,38 +689,36 @@ msgstr ""
 "optionnel<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "Types nommés"
+msgstr "Types déclarés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
+"Pour déclarer le type d'une variable, utilisez ``<variable>: <type>`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "Définissez le type de retour d'une fonction à l'aide de la flèche ->"
+msgstr ""
+"Pour déclarer le type de retour d'une fonction, utilisez ``-> <type>`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "Types cœur"
+msgstr "Types inférés"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
-#, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
-"Quand vous laissez le compilateur déduire le type, écrivez les deux-points "
-"et le signe égale attaché : ``:=``."
+"Dans la plupart des cas, vous pouvez laisser le compilateur déduire le type, "
+"en utilisant ``:=`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
+msgstr "var health := 0 # Le compilateur utilisera le type int."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
@@ -729,3 +727,7 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"Cependant, dans quelques cas où le contexte est absent, le compilateur "
+"revient au type de retour de la fonction. Par exemple, ``get_node()`` ne "
+"peut pas déduire un type à moins que la scène ou le fichier du noeud ne soit "
+"chargé en mémoire. Dans ce cas, vous devez définir le type explicitement."

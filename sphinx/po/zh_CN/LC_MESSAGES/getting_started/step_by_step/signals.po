@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -245,22 +245,20 @@ msgid ""
 msgstr "信号还可以选择声明一个或多个参数。在括号之间指定参数名称："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:243
-#, fuzzy
 msgid ""
 "The signal arguments show up in the editor's node dock, and Godot can use "
 "them to generate callback functions for you. However, you can still emit any "
 "number of arguments when you emit signals. So it's up to you to emit the "
 "correct values."
 msgstr ""
-"这些参数显示在编辑器的节点停靠面板中，Godot可以使用它们为您生成回调函数。但"
-"是，发出信号时仍然可以发出任意数量的参数；由您来发出正确的值。"
+"这些信号参数显示在编辑器的节点停靠面板中，Godot可以使用它们为您生成回调函数。"
+"但是，发出信号时仍然可以发出任意数量的参数；所以由你来决定是否发出正确的值。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:248
-#, fuzzy
 msgid ""
 "To pass values, add them as the second argument to the ``emit_signal`` "
 "function:"
-msgstr "要通过代码发出信号，使用 ``emit_signal`` 函数："
+msgstr "要传递数值，请将数值作为第二个参数添加到 ``emit_signal`` 函数中："
 
 #: ../../docs/getting_started/step_by_step/signals.rst:276
 msgid "Conclusion"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:58
 msgid "For nodes, there are many functions available:"
-msgstr ""
+msgstr "Für Nodes stehen viele Funktionen zur Verfügung:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:60
 msgid ""
@@ -188,6 +188,8 @@ msgid ""
 "<class_CanvasLayer_method_get_canvas>` method will return the canvas RID in "
 "the server."
 msgstr ""
+"Für CanvasLayer gibt die Methode :ref:`CanvasLayer.get_canvas() "
+"<class_CanvasLayer_method_get_canvas>` die Canvas-RID auf dem Server zurück."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:64
 msgid ""
@@ -195,6 +197,9 @@ msgid ""
 "<class_Viewport_method_get_viewport_rid>` method will return the viewport "
 "RID in the server."
 msgstr ""
+"Bei Ansichtsfenstern gibt die Methode :ref:'Viewport.get_viewport_rid() "
+"<class_Viewport_method_get_viewport_rid>' die RID des Ansichtsfensters auf "
+"dem Server zurück."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:66
 msgid ""
@@ -228,6 +233,8 @@ msgid ""
 "Just explore the nodes and resources you are familiar with and find the "
 "functions to obtain the server *RIDs*."
 msgstr ""
+"Erkunden Sie einfach die Nodes und Ressourcen mit denen Sie vertraut sind "
+"und finden Sie die Funktionen zum Abrufen der Server *RIDs*."
 
 #: ../../docs/tutorials/optimization/using_servers.rst:80
 msgid ""
@@ -256,11 +263,11 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:117
 msgid "Primitives are cleared this way:"
-msgstr ""
+msgstr "Primitive werden folgendermaßen gelöscht:"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:126
 msgid "Instantiating a Mesh into 3D space"
-msgstr ""
+msgstr "Instanziieren eines Mesh in den 3D-Raum"
 
 #: ../../docs/tutorials/optimization/using_servers.rst:128
 msgid ""
@@ -307,3 +314,6 @@ msgid ""
 "possible to request information back, until it's actual data that can be "
 "saved."
 msgstr ""
+"Aus diesem Grund sind die meisten APIs in solchen Servern so konzipiert, "
+"dass es nicht einmal möglich ist, Informationen zurückzufordern, bis die "
+"tatsächlichen Daten gespeichert werden können."

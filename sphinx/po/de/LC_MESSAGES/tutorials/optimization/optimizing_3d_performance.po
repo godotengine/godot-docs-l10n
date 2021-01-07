@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,6 @@ msgstr ""
 "noch die Leistung."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:33
-#, fuzzy
 msgid ""
 "One way we can potentially reduce the amount to be rendered is to take "
 "advantage of occlusion. As of Godot 3.2.2, there is no built in support for "
@@ -133,7 +132,6 @@ msgid "Other occlusion techniques"
 msgstr "Andere Verdeckungstechniken"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:58
-#, fuzzy
 msgid ""
 "There are other occlusion techniques such as portals, automatic PVS, and "
 "raster-based occlusion culling. Some of these may be available through add-"
@@ -286,13 +284,12 @@ msgstr ""
 "mit geringerem Stromverbrauch."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:124
-#, fuzzy
 msgid ""
 "**Consider using baked lighting**, especially for mobile. This can look "
 "fantastic, but has the downside that it will not be dynamic. Sometimes, this "
 "is a trade-off worth making."
 msgstr ""
-"Erwägen Sie die Verwendung eingebrannter Beleuchtung, insbesondere für "
+"**Erwägen Sie die Verwendung eingebrannter Beleuchtung**, insbesondere für "
 "Mobilgeräte. Dies kann fantastisch aussehen, hat aber den Nachteil nicht "
 "dynamisch zu sein. Manchmal ist dies ein Kompromiss, der sich aber lohnt."
 
@@ -307,12 +304,10 @@ msgstr ""
 "Szenenqualität verbessern, indem indirekte Lichtreflexe hinzugefügt werden."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
-#, fuzzy
 msgid "Animation and skinning"
-msgstr "Animation/Skinning"
+msgstr "Animation und Skinning"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
-#, fuzzy
 msgid ""
 "Animation and vertex animation such as skinning and morphing can be very "
 "expensive on some platforms. You may need to lower the polycount "

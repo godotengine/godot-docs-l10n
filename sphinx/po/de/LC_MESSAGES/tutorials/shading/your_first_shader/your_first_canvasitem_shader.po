@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,6 +133,8 @@ msgid ""
 "This line tells the engine which built-in variables and functionality to "
 "supply you with."
 msgstr ""
+"Diese Zeile teilt der Engine mit, welche integrierten Variablen und "
+"Funktionen Sie bereitstellen soll."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:65
 msgid ""
@@ -164,6 +166,8 @@ msgid ""
 "The most basic fragment function does nothing except assign a single color "
 "to every pixel."
 msgstr ""
+"Die einfachste Fragmentfunktion tut nichts anderes, als jedem Pixel eine "
+"einzelne Farbe zuzuweisen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:79
 msgid ""
@@ -179,10 +183,12 @@ msgid ""
 "Congratulations! You're done. You have successfully written your first "
 "shader in Godot."
 msgstr ""
+"Herzlichen Glückwunsch! Sie sind fertig. Sie haben erfolgreich Ihren ersten "
+"Shader in Godot geschrieben."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:93
 msgid "Now let's make things more complex."
-msgstr ""
+msgstr "Lassen Sie uns die Dinge jetzt komplexer machen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:95
 msgid ""
@@ -205,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:115
 msgid "Using ``TEXTURE`` built-in"
-msgstr ""
+msgstr "Verwenden der integrierten ``TEXTURE``"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:117
 msgid ""
@@ -237,6 +243,8 @@ msgstr ""
 msgid ""
 "You can use uniforms by defining them at the top of your shader like so:"
 msgstr ""
+"Sie können Uniforms verwenden, indem Sie sie oben im Shader wie folgt "
+"definieren:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:152
 msgid ""
@@ -249,6 +257,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:154
 msgid "Add a uniform to change the amount of blue in our Sprite."
 msgstr ""
+"Fügen Sie ein Uniform hinzu, um den Blauanteil in unserem Sprite zu ändern."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:165
 msgid ""
@@ -283,12 +292,15 @@ msgstr "Ihre erste Vertex Funktion"
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:187
 msgid "Now that we have a fragment function, let's write a vertex function."
 msgstr ""
+"Da wir nun eine Fragment-Funktion haben, schreiben wir eine Vertex-Funktion."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:189
 msgid ""
 "Use the vertex function to calculate where on the screen each vertex should "
 "end up."
 msgstr ""
+"Verwenden Sie die Vertex-Funktion zur Berechnung, wo auf dem Bildschirm "
+"jeder Vertex landen soll."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:191
 msgid ""
@@ -302,12 +314,16 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:196
 msgid "You can offset the vertices by directly adding to ``VERTEX``."
 msgstr ""
+"Sie können die Eckpunkte versetzen, indem Sie diese direkt zu ``VERTEX`` "
+"hinzufügen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:204
 msgid ""
 "Combined with the ``TIME`` built-in variable, this can be used for simple "
 "animation."
 msgstr ""
+"In Kombination mit der integrierten Variablen ``TIME`` kann dies für "
+"einfache Animationen verwendet werden."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:214
 msgid "Conclusion"

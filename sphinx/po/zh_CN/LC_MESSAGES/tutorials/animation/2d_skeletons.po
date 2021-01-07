@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,18 +21,11 @@ msgstr ""
 msgid "2D skeletons"
 msgstr "二维骨骼"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:8
-msgid ""
-"There are known issues with 2D skeletons on mobile and web platforms with "
-"the GLES2 renderer. We recommend using the GLES3 renderer if your project "
-"relies on Skeleton2D for now."
-msgstr ""
-
-#: ../../docs/tutorials/animation/2d_skeletons.rst:12
+#: ../../docs/tutorials/animation/2d_skeletons.rst:7
 msgid "Introduction"
 msgstr "简介"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:14
+#: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid ""
 "When working with 3D, skeletal deforms are common for characters and "
 "creatures and most 3D modelling applications support it. For 2D, as this "
@@ -42,7 +35,7 @@ msgstr ""
 "当使用三维时，骨骼变形在角色和生物中很常见，大多数三维建模软件都支持这种变"
 "形。对于二维，由于这个函数不常用，很难找到主流软件来实现这一点。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:18
+#: ../../docs/tutorials/animation/2d_skeletons.rst:13
 msgid ""
 "One option is to create animations in third-party software such as Spine or "
 "Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
@@ -51,39 +44,39 @@ msgstr ""
 "一般选择在第三方软件中创建动画，如Spine或Dragonbones。不过，从Godot 3.1版本开"
 "始，就已经内置此功能。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:22
+#: ../../docs/tutorials/animation/2d_skeletons.rst:17
 msgid ""
 "Why would you want to do skeletal animations directly in Godot? The answer "
 "is that there are many advantages to it:"
 msgstr "为什么要在Godot中直接处理骨骼动画？答案是这样做有很多好处："
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:25
+#: ../../docs/tutorials/animation/2d_skeletons.rst:20
 msgid ""
 "Better integration with the engine, so less hassle importing and editing "
 "from an external tool."
 msgstr "能更好地与引擎集成，从而减少使用外部工具导入和编辑的麻烦。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:27
+#: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid ""
 "Ability to control particle systems, shaders, sounds, call scripts, colors, "
 "transparency, etc. in animations."
 msgstr "能够控制粒子系统，着色器，声音，调用脚本，颜色，透明度等动画。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:29
+#: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid ""
 "The built-in skeletal system in Godot is very efficient and designed for "
 "performance."
 msgstr "Godot内置的骨骼系统非常高效，并且是为性能而设计的。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:32
+#: ../../docs/tutorials/animation/2d_skeletons.rst:27
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
 msgstr "接下来的教程将讲解二维骨骼变形。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:35
+#: ../../docs/tutorials/animation/2d_skeletons.rst:30
 msgid "Setup"
 msgstr "场景布置"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:39
+#: ../../docs/tutorials/animation/2d_skeletons.rst:34
 #, fuzzy
 msgid ""
 "Before starting, we recommend you to go through the :ref:"
@@ -93,7 +86,7 @@ msgstr ""
 "在开始之前，建议您阅读:参考:'文档_剪纸动画'教程，以便对Godot的动画系统有个大"
 "致的了解。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:43
+#: ../../docs/tutorials/animation/2d_skeletons.rst:38
 msgid ""
 "For this tutorial, we will be using a single image to construct our "
 "character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
@@ -102,7 +95,7 @@ msgstr ""
 "在本教程中，我们将使用单张图片来构建我们的角色。从这里下载:'gBot_pieces."
 "png<img/gBot_pieces.png>'或保存下图。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:49
+#: ../../docs/tutorials/animation/2d_skeletons.rst:44
 msgid ""
 "It is also advised to download the final character image :download:"
 "`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
@@ -111,11 +104,11 @@ msgstr ""
 "并且建议下载最终的角色图片:“gBot_complete.png < img / gBot_complete.png >”将"
 "不同部分放在一起，以便进行参考。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:56
+#: ../../docs/tutorials/animation/2d_skeletons.rst:51
 msgid "Creating the polygons"
 msgstr "创建一个多边形"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:58
+#: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid ""
 "Create a new scene for your model (if it's going to be an animated "
 "character, you may want to use a ``KinematicBody2D``). For ease of use, an "
@@ -124,7 +117,7 @@ msgstr ""
 "为您的模型创建一个新场景(如果它是一个动画角色，您可能需要使用“二维动力学物"
 "体”(KinematicBody2D))。为便于使用,创建一个空的二维节点作为该多边形的根节点。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:62
+#: ../../docs/tutorials/animation/2d_skeletons.rst:57
 msgid ""
 "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
 "the scene for now, so simply create it like this:"
@@ -132,25 +125,25 @@ msgstr ""
 "从“二维多边形”(Polygon2D)节点开始。现在不需要把它放在场景何处，所以简单创建如"
 "下:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:67
+#: ../../docs/tutorials/animation/2d_skeletons.rst:62
 msgid ""
 "Select it and assign the texture with the character pieces you have "
 "downloaded before:"
 msgstr "为您之前下载的角色部件选择并指定纹理:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:72
+#: ../../docs/tutorials/animation/2d_skeletons.rst:67
 msgid ""
 "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
 "for the polygon:"
 msgstr "不建议直接绘制多边形。而是打开该多边形的“UV”对话框:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:77
+#: ../../docs/tutorials/animation/2d_skeletons.rst:72
 msgid ""
 "Head over to the *Points* mode, select the pencil and draw a polygon around "
 "the desired piece:"
 msgstr "转到*点*模式，选择铅笔，在需要的区域绘制一个多边形:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:82
+#: ../../docs/tutorials/animation/2d_skeletons.rst:77
 #, fuzzy
 msgid ""
 "Duplicate the polygon node and give it a proper name. Then, enter the \"UV\" "
@@ -159,24 +152,24 @@ msgid ""
 msgstr ""
 "复制该多边形节点并重命名,再次进入“UV”对话框，将旧多边形替换为新多边形。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:86
+#: ../../docs/tutorials/animation/2d_skeletons.rst:81
 msgid ""
 "When you duplicate nodes and the next piece has a similar shape, you can "
 "edit the previous polygon instead of drawing a new one."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:89
+#: ../../docs/tutorials/animation/2d_skeletons.rst:84
 msgid ""
 "After moving the polygon, remember to update the UV by selecting Edit -> "
 "\"Polygon -> UV\" in the Polygon 2D UV Editor."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:94
+#: ../../docs/tutorials/animation/2d_skeletons.rst:89
 #, fuzzy
 msgid "Keep doing this until you mapped all pieces."
 msgstr "重复这样的操作，直到所有部分都被映射。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:98
+#: ../../docs/tutorials/animation/2d_skeletons.rst:93
 #, fuzzy
 msgid ""
 "You will notice that pieces for nodes appear in the same layout as they do "
@@ -186,7 +179,7 @@ msgstr ""
 "您会注意到，节点的片段与它们在原始纹理中的布局相同。这是因为(默认情况下)绘制"
 "多边形时，UV和点是一样的。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:102
+#: ../../docs/tutorials/animation/2d_skeletons.rst:97
 msgid ""
 "Rearrange the pieces and build the character. This should be pretty quick. "
 "There is no need to change pivots, so don't bother making sure rotation "
@@ -195,7 +188,7 @@ msgstr ""
 "重新排列部件，建立角色。这个过程应该很快。没必要改变轴心，因此，不必费心确保"
 "每个部件的旋转轴心都正确；你可以暂时不用理会它们。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:108
+#: ../../docs/tutorials/animation/2d_skeletons.rst:103
 msgid ""
 "Ah, the visual order of the pieces is not correct yet, as some are covering "
 "wrong pieces. Rearrange the order of the nodes to fix this:"
@@ -203,23 +196,23 @@ msgstr ""
 "啊，这些作品的视觉顺序还不正确，因为有些覆盖到错误的部分。重新排列节点的顺序"
 "来解决这个问题:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:113
+#: ../../docs/tutorials/animation/2d_skeletons.rst:108
 msgid ""
 "And there you go! It was definitely much easier than in the cutout tutorial."
 msgstr "恭喜你完成本节教程!它肯定比剪纸动画教程简单得多。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:116
+#: ../../docs/tutorials/animation/2d_skeletons.rst:111
 msgid "Creating the skeleton"
 msgstr "创建骨骼"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:118
+#: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid ""
 "Create a ``Skeleton2D`` node as a child of the root node. This will be the "
 "base of our skeleton:"
 msgstr ""
 "创建一个“二维骨骼”(Skeleton2D)节点作为根节点的子节点。我们将其做为基础骨骼:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:123
+#: ../../docs/tutorials/animation/2d_skeletons.rst:118
 msgid ""
 "Create a ``Bone2D`` node as a child of the skeleton. Put it on the hip "
 "(usually skeletons start here). The bone will be pointing to the right, but "
@@ -228,11 +221,11 @@ msgstr ""
 "创建一个“二维单根骨”(Bone2D)节点作为骨架的子节点。把它放在臀部(通常骨骼从这里"
 "开始建立)。单根骨会指向右边，但是现在你可以忽略这个。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:129
+#: ../../docs/tutorials/animation/2d_skeletons.rst:124
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr "在层级结构中继续创建骨骼并依次命名它们。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:133
+#: ../../docs/tutorials/animation/2d_skeletons.rst:128
 msgid ""
 "At the end of this chain, there will be a *jaw* node. It is, again, very "
 "short and pointing to the right. This is normal for bones without children. "
@@ -241,7 +234,7 @@ msgstr ""
 "在这根链条的末端，会有一个*下巴*节点。它很短小，也指向右边。这根单根骨正常情"
 "况下没有子骨骼。*提示*单根骨的长度属性可以通过属性面板来改变:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:139
+#: ../../docs/tutorials/animation/2d_skeletons.rst:134
 #, fuzzy
 msgid ""
 "In this case, we don't need to rotate the bone (coincidentally the jaw "
@@ -253,11 +246,11 @@ msgstr ""
 "更改的话，请随意。重复一遍,该单根骨仅仅起到提示作用，带有子节点的节点通常不需"
 "要长度或者特定的旋转。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:144
+#: ../../docs/tutorials/animation/2d_skeletons.rst:139
 msgid "Keep going and build the whole skeleton:"
 msgstr "继续构建整个骨骼:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:148
+#: ../../docs/tutorials/animation/2d_skeletons.rst:143
 msgid ""
 "You will notice that all bones raise an annoying warning about a missing "
 "rest pose. This means that it's time to set one. Go to the *skeleton* node "
@@ -268,17 +261,17 @@ msgstr ""
 "是时候设置一个了。转到“骨架”(skeleton)节点并创建一个休闲姿势。这个姿势是默认"
 "的，你可以随时回来修改(对于制作动画来说非常方便):"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:155
+#: ../../docs/tutorials/animation/2d_skeletons.rst:150
 msgid ""
 "The warnings will go away. If you modify the skeleton (add/remove bones) you "
 "will need to set the rest pose again."
 msgstr "警告消失了。如果你修改骨骼(添加/移除单根骨)，你需要重新设置休闲姿势。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:159
+#: ../../docs/tutorials/animation/2d_skeletons.rst:154
 msgid "Deforming the polygons"
 msgstr "多边形的变形"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:161
+#: ../../docs/tutorials/animation/2d_skeletons.rst:156
 #, fuzzy
 msgid ""
 "Select the previously created polygons and assign the skeleton node to their "
@@ -288,16 +281,16 @@ msgstr ""
 "选择之前创建的多边形，并将骨骼节点分配给它们的“骨骼”(skeleton)属性。这能确保"
 "最终使它们变形。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:167
+#: ../../docs/tutorials/animation/2d_skeletons.rst:162
 msgid "Click the property highlighted above and select the skeleton node:"
 msgstr "单击上面突出显示的属性并选择骨骼节点:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:171
+#: ../../docs/tutorials/animation/2d_skeletons.rst:166
 msgid ""
 "Again, open the UV editor for the polygon and go to the *Bones* section."
 msgstr "再次打开多边形的UV编辑器，进入*单根骨*部分。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:175
+#: ../../docs/tutorials/animation/2d_skeletons.rst:170
 msgid ""
 "You will not be able to paint weights yet. For this you need to synchronize "
 "the list of bones from the skeleton with the polygon. This step is done only "
@@ -311,7 +304,7 @@ msgstr ""
 "信息保存在多边形中，即使骨骼节点意外丢失或被修改。按“同步骨骼到多边形”按钮来"
 "同步列表。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:184
+#: ../../docs/tutorials/animation/2d_skeletons.rst:179
 msgid ""
 "The list of bones will automatically appear. By default, your polygon has no "
 "weight assigned to any of them. Select the bones you want to assign weight "
@@ -320,7 +313,7 @@ msgstr ""
 "单根骨列表将自动显示。默认情况下，您的多边形没有被分配任何权重信息。选择您想"
 "要分配权重的单根骨，并在它们上面绘制:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:190
+#: ../../docs/tutorials/animation/2d_skeletons.rst:185
 msgid ""
 "Points in white have a full weight assigned, while points in black are not "
 "influenced by the bone. If the same point is painted white for multiple "
@@ -332,7 +325,7 @@ msgstr ""
 "的白色点，那么权重的影响将平均分配在这些单根骨之间。(所以通常不需要过多使用中"
 "间色调，除非你想仔细打磨弯曲效果)。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:198
+#: ../../docs/tutorials/animation/2d_skeletons.rst:193
 msgid ""
 "After painting the weights, animating the bones (NOT the polygons!) will "
 "have the desired effect of modifying and bending the polygons accordingly. "
@@ -341,14 +334,14 @@ msgstr ""
 "绘制完权重后，制作单根骨动画(而不是多边形!)会具有修改和弯曲多边形的预期效果。"
 "因为你只需用这种方法驱动单根骨，工作就变得容易得多!"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:202
+#: ../../docs/tutorials/animation/2d_skeletons.rst:197
 msgid ""
 "But it's not all roses. Trying to animate bones that bend the polygon will "
 "often yield unexpected results:"
 msgstr ""
 "但这并不完美。尝试调调单根骨的动画，弯曲的多边形往往会产生意想不到的结果:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:207
+#: ../../docs/tutorials/animation/2d_skeletons.rst:202
 msgid ""
 "This happens because Godot generates internal triangles that connect the "
 "points when drawing the polygon. They don't always bend the way you would "
@@ -359,11 +352,11 @@ msgstr ""
 "期望的方式弯曲。如果要解决这个问题，你需要在几何图形中设置提示，以明确希望它"
 "如何变形。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:213
+#: ../../docs/tutorials/animation/2d_skeletons.rst:208
 msgid "Internal vertices"
 msgstr "内部顶点"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:215
+#: ../../docs/tutorials/animation/2d_skeletons.rst:210
 msgid ""
 "Open the UV menu for each bone again and go to the *Points* section. Add "
 "some internal vertices in the regions where you expect the geometry to bend:"
@@ -371,7 +364,7 @@ msgstr ""
 "再次打开每个单根骨的UV菜单，进入*点*部分。在你期望几何弯曲的地方添加一些内部"
 "顶点:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:220
+#: ../../docs/tutorials/animation/2d_skeletons.rst:215
 msgid ""
 "Now, go to the *Polygon* section and redraw your own polygons with more "
 "detail. Imagine that, as your polygons bend, you need to make sure they "
@@ -380,13 +373,13 @@ msgstr ""
 "现在转到*多边形*部分，重新绘制细节更丰富的多边形。这样，当多边形弯曲时，你需"
 "要确保它们变形的可能性最小，慢慢尝试找出正确的设置。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:226
+#: ../../docs/tutorials/animation/2d_skeletons.rst:221
 msgid ""
 "Once you start drawing, the original polygon will disappear and you will be "
 "free to create your own:"
 msgstr "一旦你开始绘制，原来的多边形会消失，你可以自由创建自己的多边形:"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:231
+#: ../../docs/tutorials/animation/2d_skeletons.rst:226
 msgid ""
 "This amount of detail is usually fine, though you may want to have more fine-"
 "grained control over where triangles go. Experiment by yourself until you "
@@ -395,7 +388,7 @@ msgstr ""
 "通常这个数量的细节没有问题，尽管你想更精细地控制三角形。请多多尝试，直到获得"
 "你满意的结果。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:235
+#: ../../docs/tutorials/animation/2d_skeletons.rst:230
 #, fuzzy
 msgid ""
 "**Note:** Don't forget that your newly added internal vertices also need "
@@ -405,6 +398,6 @@ msgstr ""
 "**注意:**不要忘记，新增加的内部顶点也需要绘制权重！再次转到*单根骨*部分，将它"
 "们分配到正确的单根骨上。"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:238
+#: ../../docs/tutorials/animation/2d_skeletons.rst:233
 msgid "Once you are all set, you will get much better results:"
 msgstr "一旦你设定好了，你会得到更好的结果:"

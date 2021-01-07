@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,10 @@ msgid ""
 "org/download/server>`__. To compile a server binary from source, follow "
 "instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
-"** Linux: ** `Laden Sie eine offizielle Linux-Server-Binärdatei <https://"
+"**Linux:** `Laden Sie eine offizielle Linux-Server-Binärdatei <https://"
 "godotengine.org/download/server>` __ herunter. Befolgen Sie die Anweisungen "
-"in: ref: `doc_compiling_for_x11`, um eine Server-Binärdatei aus dem "
-"Quellcode zu kompilieren."
+"in :ref:`doc_compiling_for_x11`, um eine Server-Binärdatei aus dem Quellcode "
+"zu kompilieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:15
 msgid ""
@@ -72,13 +72,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:24
 msgid "\"Headless\" versus \"server\" binaries"
-msgstr ""
+msgstr "\"Headless\" versus \"Server\"-Binärdateien"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:26
 msgid ""
 "The `server download page <https://godotengine.org/download/server>`__ "
 "offers two kinds of binaries with several differences."
 msgstr ""
+"Die `Server-Download-Seite <https://godotengine.org/download/server>`__ "
+"bietet zwei Arten von Binärdateien mit einigen Unterschieden an."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:29
 msgid ""
@@ -188,8 +190,8 @@ msgstr ""
 "Wenn sowohl Ihr Client als auch Ihr Server Teil desselben Godot-Projekts "
 "sind, müssen Sie eine Möglichkeit haben den Server mithilfe eines Kommandos "
 "auf der Befehlszeile direkt zu starten. Dies kann durch Hinzufügen des "
-"folgenden Codeausschnitts in der ``_ready() `` Methode Ihrer Hauptszene "
-"(oder eines Singletons) erfolgen::"
+"folgenden Codeausschnitts in der ``_ready()`` Methode Ihrer Hauptszene (oder "
+"eines Singletons) erfolgen:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
@@ -197,7 +199,7 @@ msgid ""
 "headless or server binary is detected::"
 msgstr ""
 "Alternativ können Sie den dedizierten Server immer starten lassen, wenn eine "
-"Headless- oder Server-Binärdatei erkannt wird::"
+"Headless- oder Server-Binärdatei erkannt wird:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""

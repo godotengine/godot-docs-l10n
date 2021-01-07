@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shader_materials.rst:4
 msgid "Shader materials"
-msgstr ""
+msgstr "Materiales Shader"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:7
 msgid "Introduction"
@@ -33,36 +33,44 @@ msgid ""
 "`ParticlesMaterial <class_ParticlesMaterial>`. They are flexible "
 "implementations that cover most use cases."
 msgstr ""
+"Para los casos más comunes, Godot proporciona materiales listos para usar "
+"para la mayoría de los tipos shaders, como :ref:`SpatialMaterial "
+"<class_SpatialMaterial>`, :ref:`CanvasItemMaterial "
+"<class_CanvasItemMaterial>` y :ref:`ParticlesMaterial "
+"<class_ParticlesMaterial>`. Son implementaciones flexibles que cubren la "
+"mayoría de los casos de uso."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:14
 msgid ""
 "Shader materials allow writing a custom shader directly, for maximum "
 "flexibility. Examples of this are:"
 msgstr ""
+"Los materiales shader permiten escribir un shader personalizado "
+"directamente, para una máxima flexibilidad. Ejemplos de esto son:"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:17
 msgid "Create procedural textures."
-msgstr ""
+msgstr "Crea texturas de procedimiento."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:18
 msgid "Create complex texture blending effects."
-msgstr ""
+msgstr "Crea efectos complejos de mezcla de texturas."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:19
 msgid "Create animated materials, or materials that change over time."
-msgstr ""
+msgstr "Crea materiales animados, o materiales que cambian con el tiempo."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:20
 msgid "Create refractive effects or other advanced effects."
-msgstr ""
+msgstr "Crea efectos refractivos u otros efectos avanzados."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:21
 msgid "Create special lighting shaders for more exotic materials."
-msgstr ""
+msgstr "Crea shaders de iluminación especiales para materiales más exóticos."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:22
 msgid "Animate vertices, like tree leaves or grass."
-msgstr ""
+msgstr "Animar los vértices, como las hojas de los árboles o la hierba."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:23
 msgid "Create custom particle code."
@@ -70,7 +78,7 @@ msgstr "Crear código personalizado para partículas."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:24
 msgid "And much more!"
-msgstr ""
+msgstr "¡Y mucho más!"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:26
 msgid ""
@@ -79,16 +87,23 @@ msgid ""
 "can see your edited shaders in real-time. It is also possible to edit "
 "shaders using a visual, node-based graph editor."
 msgstr ""
+"Godot proporciona una funcionalidad incorporada para facilitar las "
+"operaciones frecuentes. Además, el editor de shaders de Godot detectará "
+"errores mientras escribes, para que puedas ver tus shaders editados en "
+"tiempo real. También es posible editar los shaders usando un editor gráfico "
+"visual basado en nodos."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:32
 msgid "Creating a ShaderMaterial"
-msgstr ""
+msgstr "Creando un ShaderMaterial"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:34
 msgid ""
 "Create a new ShaderMaterial in some object of your choice. Go to the "
 "\"Material\" property and create a ShaderMaterial."
 msgstr ""
+"Crear un nuevo ShaderMaterial en algún objeto de tu elección. Ve a la "
+"propiedad \"Material\" y crea un ShaderMaterial."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:39
 msgid ""
@@ -96,27 +111,36 @@ msgid ""
 "create a shader or visual shader. Regular shaders use code to set their "
 "properties while a visual shader uses a node based workflow."
 msgstr ""
+"A continuación, haga clic en el material shader para ver sus propiedades. "
+"Desde aquí puedes crear un shader o un shader visual. Los shaders normales "
+"usan código para establecer sus propiedades mientras que un shader visual "
+"usa un flujo de trabajo basado en nodos."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:43
 msgid ""
 "If you need to you can convert a visual shader to a text shader. However you "
 "can't convert a text shader to a visual shader."
 msgstr ""
+"Si lo necesitas, puedes convertir un shader visual en un shader de texto. "
+"Sin embargo, no puedes convertir un shader de texto en un shader visual."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:46
 msgid "Choose one of them and you can start editing your shader."
-msgstr ""
+msgstr "Elige uno de ellos y podrás empezar a editar tu shader."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:50
 msgid ""
 "If you create a regular shader click on it and the shader editor will open."
 msgstr ""
+"Si creas un shader normal, haz clic en él y se abrirá el editor de shaders."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:54
 msgid ""
 "If you create a visual shader the visual shader editor will open "
 "automatically."
 msgstr ""
+"Si creas un shader visual, el editor de shader visuales se abrirá "
+"automáticamente."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:58
 msgid ""
@@ -125,14 +149,19 @@ msgid ""
 "replicate a text shader as nodes, or it can be used as a preview for "
 "converting your visual shader to a text shader."
 msgstr ""
+"En el editor de sombreadores visuales puedes hacer clic en un botón y ver "
+"cómo se ve tu shader visual como código shader. Esto puede ser útil si "
+"intentas replicar un shader de texto como nodos, o puede utilizarse como una "
+"vista previa para convertir tu shader visual en un shader de texto."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:67
 msgid "To learn more about visual shaders, read :ref:`doc_visual_shaders`."
 msgstr ""
+"Para aprender más sobre los shaders visuales, lea :ref:`doc_visual_shaders`."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:70
 msgid "Converting to ShaderMaterial"
-msgstr ""
+msgstr "Convirtiendo a ShaderMaterial"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:72
 msgid ""
@@ -140,9 +169,14 @@ msgid ""
 "ParticlesMaterial to ShaderMaterial. To do so, go to the material properties "
 "and select the convert option."
 msgstr ""
+"Es posible convertir de SpatialMaterial, CanvasItemMaterial y "
+"ParticlesMaterial a ShaderMaterial. Para ello, vaya a las propiedades del "
+"material y seleccione la opción de conversión."
 
 #: ../../docs/tutorials/shading/shader_materials.rst:80
 msgid ""
 "Using the convert option will turn the SpatialMaterial into a ShaderMaterial "
 "with a text shader, not a visual shader."
 msgstr ""
+"Usar la opción de conversión convertirá el SpatialMaterial en un "
+"ShaderMaterial con un shader de texto, no un shader visual."

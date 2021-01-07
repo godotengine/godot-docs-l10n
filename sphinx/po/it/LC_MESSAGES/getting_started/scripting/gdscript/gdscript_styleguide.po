@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,8 +109,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
+#, fuzzy
 msgid "**Good**:"
-msgstr ""
+msgstr "**Buono**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:116
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
@@ -123,8 +124,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
+#, fuzzy
 msgid "**Bad**:"
-msgstr ""
+msgstr "**Male**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 msgid ""
@@ -156,8 +158,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
+#, fuzzy
 msgid "Blank lines"
-msgstr ""
+msgstr "Righe vuote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 msgid "Surround functions and class definitions with two blank lines:"
@@ -287,14 +290,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
+#, fuzzy
 msgid "**Good**::"
-msgstr ""
+msgstr "**Buono**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
+#, fuzzy
 msgid "**Bad**::"
-msgstr ""
+msgstr "**Male**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
 msgid ""
@@ -557,8 +562,8 @@ msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
-"A partire da Godot 3.1, GDScript supporta :ref:`optional static "
-"typing<doc_gdscript_static_typing>`."
+"A partire da Godot 3.1, GDScript supporta :ref:`tipizzazione statica "
+"opzionale<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
 msgid "Declared types"
@@ -571,7 +576,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
 #, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "Definisci il tipo ritornato da una funzione con la freccia ->"
+msgstr "Per dichiarare il tipo di ritorno di una funzione, usa ``-> <tipo> ``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
 msgid "Inferred types"
@@ -581,12 +586,13 @@ msgstr ""
 #, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
-"Quando lasci inferire al compilatore il tipo della variabile, scrivi insieme "
-"i due punti e l'uguale: ``:=``."
+"Nella maggior parte dei casi puoi lasciare che il compilatore deduca il "
+"tipo, usando ``:=``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
+#, fuzzy
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."

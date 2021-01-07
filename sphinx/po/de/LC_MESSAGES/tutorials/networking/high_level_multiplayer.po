@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,11 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"Im Folgenden werden die Unterschiede zwischen High- und Low-Level-Netzwerken "
+"in Godot sowie einige Grundlagen erläutert. Wenn Sie direkt durchstarten und "
+"Ihren ersten Node ein Netzwerk hinzufügen möchten, fahren Sie mit "
+"`Initializing the network`_ weiter unten fort. Aber lesen Sie den Rest "
+"später!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44,10 +49,22 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
+"Godot unterstützte immer Standard-Low-Level-Netzwerke über UDP, TCP und "
+"einige übergeordnete Protokolle wie SSL und HTTP. Diese Protokolle sind "
+"flexibel und können für fast alles verwendet werden. Die manuelle "
+"Synchronisierung des Spielstatus kann jedoch eine Menge Arbeit bedeuten. "
+"Manchmal kann diese Arbeit nicht vermieden werden oder lohnt sich, "
+"beispielsweise wenn Sie mit einer benutzerdefinierten Serverimplementierung "
+"im Backend arbeiten. In den meisten Fällen lohnt es sich jedoch, die High-"
+"Level-Netzwerk-API von Godot in Betracht zu ziehen, die einen Teil der fein "
+"abgestimmten Steuerung von Low-Level-Netzwerken für eine einfachere "
+"Benutzbarkeit eintauscht."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
 msgstr ""
+"Das ist auf die eingebauten Einschränkungen von Low-Level Protokollen "
+"zurückzuführen:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -60,6 +77,16 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP stellt sicher, dass Pakete immer zuverlässig und in der richtigen "
+"Reihenfolge ankommen, allerdings ist die Latenz durch Fehlerkorrektur in der "
+"Regel höher. Es ist auch ein etwas komplexeres Protokoll, da es versteht, "
+"was eine \"Verbindung\" ist, und für Ziele optimiert wird, die häufig nicht "
+"für Anwendungen wie Multiplayer-Spiele geeignet sind. Pakete werden "
+"gepuffert, um in größeren Stapeln gesendet zu werden, wobei weniger Aufwand "
+"pro Paket für eine höhere Latenz getauscht wird. Dies kann für Anwendungen "
+"wie HTTP nützlich sein, aber im Allgemeinen nicht für Spiele. Einige davon "
+"können konfiguriert und deaktiviert werden (z.B. durch Deaktivieren des "
+"\"Nagle-Algorithmus\" für die TCP-Verbindung)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -70,6 +97,13 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP ist ein einfacheres Protokoll, das nur Pakete sendet (und kein Konzept "
+"einer \"Verbindung\" hat). Keine Fehlerkorrektur macht es ziemlich schnell "
+"(geringe Latenz), aber Pakete können auf dem Weg verloren gehen oder in der "
+"falschen Reihenfolge empfangen werden. Hinzu kommt, dass die MTU (maximale "
+"Paketgröße) für UDP im Allgemeinen niedrig ist (nur einige hundert Bytes). "
+"Wenn Sie also größere Pakete übertragen, müssen Sie diese aufteilen, neu "
+"organisieren und erneut versuchen, falls etwas fehlschlägt."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -81,6 +115,14 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"Im Allgemeinen kann TCP als zuverlässig, geordnet und langsam und UDP als "
+"unzuverlässig, ungeordnet und schnell charakterisiert werden. Wegen dem "
+"großen Performance-Unterschied macht es häufig Sinn, die Teile von TCP "
+"wiederzuverwenden, die für Spiele gewollt sind (optionale Zuverlässigkeit "
+"und Paketordnung) , während die ungewollten Teile (Paketstau/Übertragungs-"
+"Kontroll-Features, Nagle-Algorithmus, etc.) weggelassen werden. Aus diesem "
+"Grund liefern die meisten Spiele-Engines solche Implementationen direkt mit "
+"und Godot ist da keine Ausnahme."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -89,6 +131,11 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"Zusammengefasst kann die Low-Level Netzwerk API für maximale Kontrolle "
+"genutzt werden, wobei alles darüber von Grund auf selbst implementiert "
+"werden muss, oder man nutzt die High-Level API basierend auf dem :ref:"
+"`Szenenbaum <class_SceneTree>`, die den Großteil der Arbeit im Hintergrund "
+"leistet und das im Allgemeinen auf optimierte Weise."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -99,12 +146,20 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"Die meisten von Godot unterstützten Plattformen liefern alle oder die "
+"meisten der angesprochenen High- und Low-Level Netzwerk-Features. Da "
+"Netzwerken allerdings sehr plattformabhängig ist, könnten manche "
+"Funktionalitäten auf manchen Plattformen nicht verfügbar sein. Besonders die "
+"HTML5-Plattform unterstützt zurzeit nur WebSocket und manche High-Level "
+"Features als auch der Zugriff auf Low-Level-Protokolle wie TCP und UDP fehlt."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"Mehr über TCP/IP, UDP und Netzwerke Allgemein finden Sie hier: https://"
+"gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -114,6 +169,11 @@ msgid ""
 "<https://gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games hat viele nützliche Artikel über Netzwerke in Spielen (`hier "
+"<https://gafferongames.com/categories/game-networking/>`__), darunter die "
+"umfassende `Introduction to networking models in games <https://"
+"gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -121,6 +181,9 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Wenn Sie die Low-Level Netzwerkbibliothek Ihrer Wahl anstatt der Godot-"
+"eigenen nutzen wollen, finden Sie hier ein Beispiel: https://github.com/"
+"PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -130,6 +193,13 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"Das Hinzufügen von Netzwerk-Funktionen zu Ihrem Spiel ist mit einer gewissen "
+"Verantwortung verbunden. Es kann Ihre Anwendung angreifbar machen, wenn es "
+"falsch gemacht wird, und kann zu Cheats oder Exploits führen. Es kann sogar "
+"einem Angreifer ermöglichen, die Computer zu kompromittieren, auf denen Ihre "
+"Anwendung ausgeführt wird, und Ihre Server zu verwenden, um Spam zu senden, "
+"andere anzugreifen oder die Daten Ihrer Benutzer zu stehlen, wenn diese Ihr "
+"Spiel spielen."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -137,10 +207,14 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"Das ist mit Netzwerkanwendungen immer der Fall, ganz unabhängig ob Godot "
+"genutzt wird oder nicht. Sie können natürlich experimentieren, aber wenn Sie "
+"eine Netzwerkanwendung freigeben, berücksichtigen Sie immer mögliche "
+"Sicherheitsbedenken."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "Abstraktion auf mittlerer Ebene"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -185,7 +259,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:74
 msgid "Initializing the network"
-msgstr ""
+msgstr "Netzwerk initialisieren"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:76
 msgid ""
@@ -198,11 +272,15 @@ msgid ""
 "To initialize high-level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
+"Um das Netzwerk auf hoher Ebene zu initialisieren, muss dem Szenenbaum ein "
+"NetworkedMultiplayerPeer-Objekt bereitgestellt werden."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:80
 msgid ""
 "To create that object, it first has to be initialized as a server or client."
 msgstr ""
+"Um dieses Objekt zu erstellen, muss es zuerst als Server oder Client "
+"initialisiert werden."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:82
 msgid ""
@@ -213,18 +291,20 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:90
 msgid "Initializing as a client, connecting to a given IP and port:"
 msgstr ""
+"Initialisierung als Client, Verbindung zu einer bestimmten IP und einem "
+"bestimmten Port:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:98
 msgid "Get the previously set network peer:"
-msgstr ""
+msgstr "Den zuvor gesetzten Netzwerk Peer erhalten:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
-msgstr ""
+msgstr "Prüfen, ob der Baum als Server oder Client initialisiert ist:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:110
 msgid "Terminating the networking feature:"
-msgstr ""
+msgstr "Beenden der Netzwerkfunktion:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:116
 msgid ""
@@ -360,12 +440,16 @@ msgid ""
 "Reliable: the function call will arrive no matter what, but may take longer "
 "because it will be re-transmitted in case of failure."
 msgstr ""
+"Zuverlässig: Der Funktionsaufruf kommt auf jeden Fall an, kann jedoch länger "
+"dauern, da er im Fehlerfall erneut übertragen wird."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
 "transmitted; but if it arrives, it will do it quickly."
 msgstr ""
+"Unzuverlässig: Wenn der Funktionsaufruf nicht eintrifft, wird er nicht "
+"erneut übertragen. aber wenn er ankommt, geschieht dies schnell."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
 msgid ""
@@ -375,6 +459,12 @@ msgid ""
 "would likely be outdated because the object moved further in the meantime, "
 "even if it was resent reliably)."
 msgstr ""
+"In den meisten Fällen ist Zuverlässigkeit erwünscht. Unzuverlässig ist "
+"meistens nützlich, wenn Objektpositionen synchronisiert werden (die "
+"Synchronisierung muss ständig erfolgen und wenn ein Paket verloren geht ist "
+"es nicht so schlimm, da irgendwann ein neues ankommt und es wahrscheinlich "
+"veraltet ist, weil sich das Objekt in der Zwischenzeit weiter bewegt hat, "
+"selbst wenn es erneut zuverlässig gesendet wurde)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
 msgid ""
@@ -391,6 +481,8 @@ msgid ""
 "Let's get back to the lobby. Imagine that each player that connects to the "
 "server will tell everyone about it."
 msgstr ""
+"Kehren wir noch einmal zum Anfang zurück. Stellen Sie sich vor jeder "
+"Spieler, der eine Verbindung zum Server herstellt, wird allen davon erzählen."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:225
 msgid ""
@@ -486,6 +578,10 @@ msgid ""
 "scene for each player connected to it**. For a 4 player game, each peer "
 "needs to instance 4 player nodes."
 msgstr ""
+"In den meisten Spielen hat wahrscheinlich jeder Spieler seine eigene Szene. "
+"Denken Sie daran, dass dies ein Multiplayer-Spiel ist. In jedem Peer müssen "
+"Sie also **eine Szene für jeden damit verbundenen Spieler instanziieren**. "
+"Für ein 4-Spieler-Spiel muss jeder Peer 4-Spieler-Nodes instanziieren."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:265
 msgid ""
@@ -493,6 +589,9 @@ msgid ""
 "must also be relatively easy for a player to tell which node represents each "
 "player ID."
 msgstr ""
+"Wie benennt man solche Nodes? In Godot müssen Nodes einen eindeutigen Namen "
+"haben. Es muss für einen Spieler auch relativ einfach zu erkennen sein, "
+"welcher Node welche Spieler-ID repräsentiert."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:268
 msgid ""
@@ -500,6 +599,9 @@ msgid ""
 "scenes as their network ID*. This way, they will be the same in every peer "
 "and RPC will work great! Here is an example:"
 msgstr ""
+"Die Lösung besteht darin, einfach die *Wurzel-Nodes der instanziierten "
+"Playerszenen als Netzwerk-ID* zu benennen. Auf diese Weise sind sie bei "
+"jedem Peer gleich und RPC funktioniert hervorragend! Hier ist ein Beispiel:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:298
 msgid ""
@@ -520,12 +622,19 @@ msgid ""
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
+"Spieler einzurichten kann aufgrund von Verzögerungen, unterschiedlicher "
+"Hardware oder aus anderen Gründen für jeden Peer unterschiedlich lange "
+"dauern. Um sicherzustellen, dass das Spiel tatsächlich startet wenn alle "
+"bereit sind, kann es nützlich sein das Spiel anzuhalten, bis alle Spieler "
+"bereit sind:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:313
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
+"Wenn der Server von allen Peers das OK erhält, kann er sie anweisen zu "
+"starten, wie zum Beispiel:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
@@ -541,7 +650,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "Network master"
-msgstr ""
+msgstr "Netzwerk-Master"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
@@ -592,6 +701,9 @@ msgid ""
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
+"Zur Verdeutlichung hier ein Beispiel, wie dies in der `Bomberdemo <https://"
+"github.com/godotengine/godot-demo-projects/tree/master/networking/"
+"multiplayer_bomber>`_ aussieht:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:383
 msgid "Master and puppet keywords"

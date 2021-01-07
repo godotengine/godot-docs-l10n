@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,7 +71,7 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
-"Se você possui experiência prévia com linguagems estaticamente tipadas, como "
+"Se você possui experiência prévia com linguagens estaticamente tipadas, como "
 "C, C++, ou C#, mas nunca utilizou uma linguagem dinamicamente tipada antes, "
 "é aconselhado que leia este tutorial: :ref:`doc_gdscript_more_efficiently`."
 
@@ -100,10 +100,10 @@ msgid ""
 "identifier. Additionally, identifiers must not begin with a digit. "
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
-"Qualquer string que se restringe a caracteres alfabéticos(\"a\" à \"z\" e \"A"
-"\" à \"Z\"), dígitos (\"0\" a \"9\") e \"_\" se qualifica como um "
+"Qualquer String que se restringe a caracteres alfabéticos (``a`` a ``z`` e "
+"``A`` a ``Z``), dígitos (``0`` a ``9``) e ``_`` se qualifica como um "
 "identificador. Além disso, identificadores não devem começar com um dígito. "
-"Identificadore são case-sensitive (\"foo\" é diferente de \"FOO\")."
+"Identificadores são [i]case-sensitive[/i] (``foo`` é diferente de ``FOO``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Keywords"
@@ -844,16 +844,12 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
-"Uma sequência de caracteres em `formato Unicode <https://pt.wikipedia.org/"
-"wiki/Unicode>`_. Strings podem conter `sequências de escape padrão de C "
-"<https://pt.wikibooks.org/wiki/Programar_em_C/Seq%C3%BC%C3%AAncias_de_escape>"
-"\"_. GDScript suporta :ref:`strings formatadas, também conhecidas como "
-"funcionalidade printf <doc_gdscript_printf>`."
+"Uma sequência de caracteres no `Formato Unicode <https://pt.wikipedia.org/"
+"wiki/Unicode>`_. Strings podem conter as seguintes sequências de escape:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 #, fuzzy
@@ -2409,12 +2405,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2422,11 +2424,11 @@ msgid ""
 "emitted when the function didn't yield anymore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Palavra-chave Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2438,7 +2440,7 @@ msgstr ""
 "cena ativa, os subnós só podem ser obtidos quando uma chamada para ``Node."
 "_ready()`` é feita."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2450,11 +2452,11 @@ msgstr ""
 "inicialização da variável de um membro até que ``_ready()`` seja chamado. "
 "Ela pode substituir o código acima por uma única linha::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Palavra-chave assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2470,7 +2472,7 @@ msgstr ""
 "sejam importantes para o código funcionar. Caso contrário, o comportamento "
 "do script variará dependendo se está compilando em modo depuração ou não."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

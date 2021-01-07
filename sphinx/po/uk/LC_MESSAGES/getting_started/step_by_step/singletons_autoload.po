@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
-#, fuzzy
 msgid "Singletons (AutoLoad)"
-msgstr "Синглтон (Автозавантаження)"
+msgstr "Синглтони (Автозавантаження)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
 msgstr "Вступ"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
-#, fuzzy
 msgid ""
 "Godot's scene system, while powerful and flexible, has a drawback: there is "
 "no method for storing information (e.g. a player's score or inventory) that "
@@ -65,7 +63,6 @@ msgstr ""
 "громіздкими і може бути повільним."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -73,7 +70,7 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ є "
+"`Шаблон Singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`_ є "
 "корисним інструментом для вирішення загального випадку, коли вам потрібно "
 "зберігати постійну інформацію між сценами. У нашому випадку можливо повторне "
 "використання однієї і тієї ж сцени, або класу, для декількох синглтонів, "
@@ -84,32 +81,27 @@ msgid "Using this concept, you can create objects that:"
 msgstr "Використовуючи цю концепцію, ви можете створювати об'єкти, які:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
 msgstr ""
-"Завжди завантажуються, незалежно від того, яка сцена працює в даний момент"
+"Завжди завантажуються, незалежно від того, яка сцена працює в даний момент."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "Можуть зберігати глобальні змінні, наприклад інформацію про гравця"
+msgstr "Можуть зберігати глобальні змінні, наприклад інформацію про гравця."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "Можуть працювати з переключенням сцен і переходами між сценами"
+msgstr "Можуть працювати з переключенням сцен і переходами між сценами."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
-"Діяти як синглтон, оскільки GDScript не підтримує глобальні змінні за "
-"дизайном"
+"*Діють* як синглтон, оскільки архітектура GDScript не дозволяє підтримувати "
+"глобальні змінні."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts can give us these characteristics."
 msgstr "Автозавантаження вузлів та скриптів може дати нам ці характеристики."
 
@@ -119,6 +111,9 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot не зробить AutoLoad \"справжнім\" синглтоном відповідно до шаблону "
+"архітектури синглтона. За потреби користувач може інсталювати його більше "
+"одного разу."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -129,32 +124,29 @@ msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
 msgstr ""
+"Ви можете створити AutoLoad для завантаження сцени, чи скрипту, "
+"успадкованого від :ref:`class_Node`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
-#, fuzzy
 msgid ""
 "When autoloading a script, a :ref:`class_Node` will be created and the "
 "script will be attached to it. This node will be added to the root viewport "
 "before any other scenes are loaded."
 msgstr ""
-"Ви можете використовувати AutoLoad для завантаження сцени, або скрипту, який "
-"успадковується від :ref:`Node <class_Node>`. Примітка: при автозавантаженні "
-"скрипту буде створений Вузол і скрипт буде доданий до нього. Цей вузол буде "
-"доданий до кореневого вікна перегляду перед завантаженням будь-яких інших "
-"сцен."
+"При автозавантеженні скрипту буде створений :ref:`class_Node` і цей скрипт "
+"буде прикріплений до нього. Цей вузол буде доданий до кореневого вікна "
+"перегляду перед завантаженням будь-яких інших сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:57
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"Для автоматичного завантаження сцени, чи скрипту, виберіть у меню ``Проект -"
-"> Параметри проекту``та перейдіть на вкладку \"AutoLoad\" (\"Автозавантаження"
-"\")."
+"Для автоматичного завантаження сцени, чи скрипту, виберіть у меню **Проект -"
+"> Параметри проекту** та перейдіть на вкладку **AutoLoad** "
+"(\"Автозавантаження\")."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -167,7 +159,6 @@ msgstr ""
 "керувати за допомогою клавіш зі стрілками вгору/вниз."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
-#, fuzzy
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
@@ -176,16 +167,14 @@ msgstr ""
 "\"PlayerVariables\" за допомогою:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:82
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly without requiring ``get_node()``:"
 msgstr ""
-"Якщо встановлено прапорець \"Увімкнути\" (за замовчуванням ``true``), то до "
-"синглтона можна отримати доступ безпосередньо:"
+"Якщо встановлено прапорець **Enable**(\"Увімкнути\") (за замовчуванням), то "
+"до синглтона можна отримати доступ без ``get_node()``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "Note that autoload objects (scripts and/or scenes) are accessed just like "
 "any other node in the scene tree. In fact, if you look at the running scene "
@@ -197,12 +186,10 @@ msgstr ""
 "з'являються і завантажені вузли:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
-#, fuzzy
 msgid "Custom scene switcher"
-msgstr "Власний перемикач сцени"
+msgstr "Користувацький перемикач сцени"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -225,7 +212,6 @@ msgstr ""
 "autoload.zip>` і відкрийте його в Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:113
-#, fuzzy
 msgid ""
 "The project contains two scenes: ``Scene1.tscn`` and ``Scene2.tscn``. Each "
 "scene contains a label displaying the scene name and a button with its "
@@ -239,19 +225,17 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
 msgid "Global.gd"
-msgstr ""
+msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Switch to the **Script** tab and create a new script called ``Global.gd``. "
 "Make sure it inherits from ``Node``:"
 msgstr ""
-"Перейдіть на вкладку \"Скрипт\" і створіть новий скрипт під назвою Global."
-"gd. Переконайтеся, що він нащадок ``Node``:"
+"Перейдіть на вкладку **Скрипт** і створіть новий скрипт під назвою ``Global."
+"gd``. Переконайтеся, що він нащадок ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **AutoLoad** tab and select "
@@ -259,10 +243,10 @@ msgid ""
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 "Наступним кроком є додавання цього скрипту до списку автозавантаження. "
-"Відкрийте ``Проект > Параметри проекту``, перейдіть на вкладку \"AutoLoad"
-"\"(\"Автозавантаження\") і виберіть скрипт, натиснувши кнопку Огляд, або "
-"ввівши його шлях: ``res://Global.gd``. Натисніть «Додати», щоб додати його "
-"до списку автоматичного завантаження:"
+"Відкрийте **Проект > Параметри проекту**, перейдіть на вкладку "
+"**AutoLoad**(\"Автозавантаження\") і виберіть скрипт, натиснувши кнопку "
+"Огляд, або ввівши його шлях: ``res://Global.gd``. Натисніть **Додати**, щоб "
+"додати його до списку автоматичного завантаження:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:133
 msgid ""
@@ -273,7 +257,6 @@ msgstr ""
 "завантажений."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
@@ -286,7 +269,6 @@ msgstr ""
 "нащадок кореня - це завжди завантажена сцена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:167
-#, fuzzy
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
@@ -295,20 +277,18 @@ msgstr ""
 "поточну сцену та замінити її на запитувану."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:236
-#, fuzzy
 msgid ""
 "Using :ref:`Object.call_deferred() <class_Object_method_call_deferred>`, the "
 "second function will only run once all code from the current scene has "
 "completed. Thus, the current scene will not be removed while it is still "
 "being used (i.e. its code is still running)."
 msgstr ""
-"Використовуючи : ref: `Object.call_deferred () "
+"Використовуючи :ref:`Object.call_deferred () "
 "<class_Object_method_call_deferred>`, друга функція запуститься лише після "
 "завершення всього коду з поточної сцени. Таким чином, поточна сцена не буде "
 "видалена під час її використання (тобто її код все ще працює)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:241
-#, fuzzy
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
@@ -328,7 +308,6 @@ msgstr ""
 "натисканні кнопки."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
@@ -338,7 +317,7 @@ msgstr ""
 "Примітка: Коли сцен мало, перехід відбувається миттєво. Однак якщо ваші "
 "сцени складніші, для їх появи може знадобитися значна кількість часу. Щоб "
 "дізнатися, як впоратися з цим, дивіться наступний урок: :ref:"
-"`doc_background_loading`"
+"`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -348,3 +327,8 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"Як варіант, якщо час завантаження відносно короткий (менше 3 секунд, або "
+"близько того), ви можете відобразити \"талицю завантаження\", показавши "
+"якийсь 2D-елемент безпосередньо перед зміною сцени. Потім ви можете "
+"приховати її відразу після зміни сцени. Це може бути використано, щоб "
+"вказати гравцеві, що сцена завантажується."

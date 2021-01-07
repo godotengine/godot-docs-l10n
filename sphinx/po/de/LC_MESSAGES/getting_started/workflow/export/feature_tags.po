@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,7 @@ msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr "Auf Android laufen lassen"
+msgstr "Läuft auf Android"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
@@ -107,7 +107,7 @@ msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
-msgstr "Auf HTML5 laufen lassen"
+msgstr "Läuft unter HTML5"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
@@ -123,7 +123,7 @@ msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
-msgstr "Auf MacOS laufen lassen"
+msgstr "Läuft unter MacOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "**iOS**"
@@ -131,7 +131,7 @@ msgstr "**iOS**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "Running on iOS"
-msgstr "Auf iOS laufen lassen"
+msgstr "Läuft unter iOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
@@ -139,7 +139,7 @@ msgstr "**UWP**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
-msgstr "Auf UWP laufen lassen"
+msgstr "Läuft unter UWP"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "**Windows**"
@@ -147,7 +147,7 @@ msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
-msgstr "Auf Windows laufen lassen"
+msgstr "Läuft unter Windows"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
@@ -155,7 +155,7 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "Läuft unter X11 (Linux/BSD-Desktop)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
@@ -163,7 +163,7 @@ msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
-msgstr ""
+msgstr "Läuft auf der Headless-Server-Plattform"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
@@ -171,7 +171,7 @@ msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr ""
+msgstr "Läuft auf einem Debug-Build (einschließlich des Editors)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -187,7 +187,7 @@ msgstr "**Editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr ""
+msgstr "Läuft auf einem Editor-Build"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
@@ -195,7 +195,7 @@ msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr ""
+msgstr "Läuft auf einem Nicht-Editor-Build"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -310,6 +310,9 @@ msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
+"Es ist möglich, benutzerdefinierte Features zu einem Build hinzuzufügen; "
+"verwenden Sie dazu das entsprechende Feld in der *Exportvoreinstellung*, die "
+"zur Erstellung des Builds verwendet wurde:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
@@ -321,6 +324,9 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
+"Funktionen können verwendet werden, um bestimmte Konfigurationswerte in den "
+"*Projekt-Einstellungen* außer Kraft zu setzen. Dadurch können Sie jede "
+"Konfiguration beim Erstellen eines Builds besser anpassen."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -328,6 +334,9 @@ msgid ""
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"Im folgenden Beispiel wird ein anderes Symbol für den Demo-Build des Spiels "
+"hinzugefügt (der in einer speziellen Exportvoreinstellung angepasst wurde, "
+"die wiederum nur Demo-Levels enthält)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
@@ -344,6 +353,9 @@ msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
+"Es gibt bereits eine Vielzahl von Einstellungen, die standardmäßig mit "
+"Überschreibungen versehen sind; sie sind in vielen Abschnitten der "
+"Projekteinstellungen zu finden."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
 msgid "Customizing the build"
@@ -355,3 +367,7 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"Feature-Tags können auch verwendet werden, um einen Build-Prozess "
+"anzupassen, indem ein benutzerdefiniertes **ExportPlugin** geschrieben wird. "
+"Sie werden auch verwendet, um anzugeben, welche Shared Library in "
+"**GDNative** geladen und exportiert wird."

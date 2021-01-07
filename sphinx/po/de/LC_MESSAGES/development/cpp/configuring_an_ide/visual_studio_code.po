@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,9 @@ msgid ""
 "platform IDE by `Microsoft <https://microsoft.com>`_ (not to be confused "
 "with :ref:`doc_configuring_an_ide_vs`)."
 msgstr ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ ist eine kostenlose "
+"plattformübergreifende IDE von `Microsoft <https://microsoft.com>`_ (nicht "
+"zu verwechseln mit :ref:`doc_configuring_an_ide_vs`)."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
 msgid "Importing the project"
@@ -37,36 +40,45 @@ msgid ""
 "Make sure the C/C++ extension is installed. You can find instructions in the "
 "`official documentation <https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
+"Stellen Sie sicher, dass die C/C++ - Erweiterung installiert ist. "
+"Anweisungen finden Sie in der `offiziellen Dokumentation <https://code."
+"visualstudio.com/docs/languages/cpp>`_."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:14
 msgid ""
 "From the Visual Studio Code's main screen open the Godot root folder with "
 "**File > Open Folder...**."
 msgstr ""
+"Öffnen Sie im Hauptbildschirm von Visual Studio-Code den Godot-Stammordner "
+"mit **Datei > Ordner öffnen ...**."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:16
 msgid ""
 "Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
 "*Configure Task*."
 msgstr ""
+"Drücken Sie :kbd:`Strg + Umschalt + P`, um das Eingabeaufforderungsfenster "
+"zu öffnen und *Configure Task* einzugeben."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
 msgid "Select the **Create tasks.json file from template** option."
-msgstr ""
+msgstr "Wählen Sie die Option **task.json-Datei aus Vorlage erstellen**."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
 msgid "Then select **Others**."
-msgstr ""
+msgstr "dann wählen Sie **Others**."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:31
 msgid ""
 "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
 "section to it:"
 msgstr ""
+"Suchen Sie in der Datei ``task.json`` das Array ``\"tasks\"`` und fügen Sie "
+"einen neuen Abschnitt hinzu:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid "An example of a filled out ``tasks.json``."
-msgstr ""
+msgstr "Ein Beispiel eines ausgefüllten ``Tasks.json``."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
 msgid ""
@@ -86,37 +98,49 @@ msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
 msgstr ""
+"Um das Projekt auszuführen und zu debuggen, müssen Sie eine neue "
+"Konfiguration in der Datei ``launch.json`` erstellen."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:62
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr ""
+"Drücken Sie :kbd:`Strg + Umschalt + D`, um das Ausführen-Panel zu öffnen."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
+"Wenn die Datei ``launch.json`` fehlt, werden Sie aufgefordert diese neu zu "
+"erstellen."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
+"Wählen Sie **C++ (GDB/LLDB)**. Möglicherweise gibt es hier eine andere "
+"plattformspezifische Option. Wenn ausgewählt, passen Sie das bereitgestellte "
+"Konfigurationsbeispiel entsprechend an."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
+"Suchen Sie in der Datei ``launch.json`` das Array ``\"configurations\"`` und "
+"fügen Sie einen neuen Abschnitt hinzu:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
 msgid "An example of a filled out ``launch.json``."
-msgstr ""
+msgstr "Ein Beispiel für ein ausgefülltes ``launch.json``."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:104
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
 msgstr ""
+"Der Name unter ``program`` hängt von Ihrer Build-Konfiguration ab, z.B. "
+"``godot.x11.tools.64`` für 64-Bit-X11-Plattform mit aktivierten ``tools``."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 msgid ""

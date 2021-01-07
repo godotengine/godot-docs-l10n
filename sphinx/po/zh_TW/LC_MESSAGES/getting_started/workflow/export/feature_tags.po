@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr "平台所支援的紋理壓縮演算法。"
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr "建構為 ``debug`` 還是 ``release`` (``debug`` 包含編輯器)。"
+msgstr "建置為 ``debug`` 還是 ``release`` (``debug`` 包含編輯器)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
@@ -164,7 +164,7 @@ msgstr "\\ **debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr "在除錯建構中執行 (包含編輯器)"
+msgstr "在除錯建置中執行 (包含編輯器)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -172,7 +172,7 @@ msgstr "\\ **release**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
-msgstr "在發行版本建構上執行"
+msgstr "在發行版本建置上執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "**editor**"
@@ -180,7 +180,7 @@ msgstr "\\ **editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
-msgstr "在編輯器建構中執行"
+msgstr "在編輯器建置中執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
@@ -188,7 +188,7 @@ msgstr "\\ **standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "Running on a non-editor build"
-msgstr "在非編輯器建構中執行"
+msgstr "在非編輯器建置中執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
@@ -196,7 +196,7 @@ msgstr "\\ **64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "在 64 位元建構上執行 (不限架構)"
+msgstr "在 64 位元建置上執行 (不限架構)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
@@ -204,7 +204,7 @@ msgstr "\\ **32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "在 32 位元建構上執行 (不限架構)"
+msgstr "在 32 位元建置上執行 (不限架構)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
@@ -212,7 +212,7 @@ msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
-msgstr "在 64 位元 x86 建構上執行"
+msgstr "在 64 位元 x86 建置上執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
@@ -220,7 +220,7 @@ msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
-msgstr "在 32 位元 x86 建構上執行"
+msgstr "在 32 位元 x86 建置上執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
@@ -228,7 +228,7 @@ msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
-msgstr "在 64 位元 ARM 建構上執行"
+msgstr "在 64 位元 ARM 建置上執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
@@ -236,7 +236,7 @@ msgstr "**arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "Running on a 32-bit ARM build"
-msgstr "在 32 位元 ARM 建構上執行"
+msgstr "在 32 位元 ARM 建置上執行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
@@ -303,7 +303,7 @@ msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
-"可以在建構中新增自定功能。在 **匯出預設** 中使用相應的欄位來產生自定功能："
+"可以在建置中新增自定功能。在 **匯出預設** 中使用相應的欄位來產生自定功能："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
@@ -315,7 +315,7 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"可以用功能來在 **[專案設定]** 中覆寫指定的組態設定值。這樣一來便能在建構時自"
+"可以用功能來在 **[專案設定]** 中覆寫指定的組態設定值。這樣一來便能在建置時自"
 "定各種設定。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
@@ -329,7 +329,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
-msgstr "覆寫後，組態設定中會多一個用於該建構的新欄位："
+msgstr "覆寫後，組態設定中會多一個用於該建置的新欄位："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:113
 msgid "Default overrides"
@@ -343,7 +343,7 @@ msgstr "預設已經有許多設定會被覆蓋。專案設定中各個地方都
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
 msgid "Customizing the build"
-msgstr "自定建構"
+msgstr "自定建置"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
 msgid ""
@@ -351,5 +351,5 @@ msgid ""
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
-"可以通過撰寫自定 **ExportPlugin** 來使用功能標籤自定建構過程。ExportPlugin 也"
+"可以通過撰寫自定 **ExportPlugin** 來使用功能標籤自定建置過程。ExportPlugin 也"
 "可以用來指定 **GDNative** 中要載入與匯出哪些共用程式庫。"

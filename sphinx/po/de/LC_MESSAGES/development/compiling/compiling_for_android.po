@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:78
 msgid "Building the export templates"
-msgstr ""
+msgstr "Erstellen der Exportvorlagen"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:80
 msgid ""
@@ -185,10 +185,11 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:117
 msgid "The resulting APK will be located at ``bin/android_debug.apk``."
 msgstr ""
+"Die resultierende APK wird sich unter ``bin/android_debug.apk`` befinden."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:120
 msgid "Adding support for x86 devices"
-msgstr ""
+msgstr "Unterstützung für x86-Geräte hinzufügen"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:122
 msgid ""
@@ -286,7 +287,7 @@ msgstr "Fehlerbeseitigung"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:203
 msgid "Platform doesn't appear in SCons"
-msgstr ""
+msgstr "Die Plattform wird in SCons nicht angezeigt"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:205
 msgid ""
@@ -305,20 +306,25 @@ msgstr "Anwendung nicht installiert"
 msgid ""
 "Android might complain the application is not correctly installed. If so:"
 msgstr ""
+"Android könnte sich beschweren, dass die Anwendung nicht korrekt installiert "
+"ist. Wenn dies der Fall ist:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:217
 msgid "Check that the debug keystore is properly generated."
 msgstr ""
+"Prüfen Sie, ob der Debug-Schlüsselspeicher ordnungsgemäß generiert wurde."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:218
 msgid "Check that the jarsigner executable is from JDK 8."
-msgstr ""
+msgstr "Überprüfen Sie, ob die ausführbare Datei jarsigner aus JDK 8 stammt."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:220
 msgid ""
 "If it still fails, open a command line and run `logcat <https://developer."
 "android.com/studio/command-line/logcat>`_:"
 msgstr ""
+"Wenn es immer noch fehlschlägt, öffnen Sie eine Befehlszeile und führen Sie "
+"`logcat <https://developer.android.com/studio/command-line/logcat>`_ aus:"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:226
 msgid ""
@@ -347,6 +353,8 @@ msgid ""
 "``libgodot_android.so`` is not in ``libs/<android_arch>/`` where "
 "``<android_arch>`` is the device's architecture."
 msgstr ""
+"``libgodot_android.so`` ist nicht in ``libs/<android_arch>/``, wo "
+"``<android_arch>`` die Architektur des Geräts ist."
 
 #: ../../docs/development/compiling/compiling_for_android.rst:240
 msgid ""
@@ -357,4 +365,4 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:244
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
-msgstr ""
+msgstr "In jedem Fall sollte ``adb logcat`` auch die Fehlerursache anzeigen."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,11 +219,10 @@ msgid ""
 msgstr "然后从弹出的菜单中选择我们之前渲染的视区。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:96
-#, fuzzy
 msgid ""
 "Your sphere should now be colored in with the colors we rendered to the "
 "Viewport."
-msgstr "现在，您的球体应使用我们渲染到视区的颜色进行着色"
+msgstr "现在，您的球体应使用我们渲染到视区的颜色进行着色。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:100
 #, fuzzy
@@ -245,7 +244,6 @@ msgid "Making the planet texture"
 msgstr "使行星纹理"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:109
-#, fuzzy
 msgid ""
 "So now, when we render to our :ref:`Viewport <class_Viewport>`, it appears "
 "magically on the sphere. But there is an ugly seam created by our texture "
@@ -257,7 +255,7 @@ msgstr ""
 "所以现在我们渲染到我们的 :ref:`Viewport <class_Viewport>` 它在球体上神奇地出"
 "现了。 但是我们的纹理坐标会产生一个丑陋的缝隙。 那么我们如何以一种很好的方式"
 "获得围绕球体的一系列坐标？ 一种解决方案是使用在纹理域上重复的函数。 ``sin``和"
-"``cos``是两个这样的函数。 让我们将它们应用于纹理，看看会发生什么"
+"``cos``是两个这样的函数。 让我们将它们应用于纹理，看看会发生什么。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:120
 #, fuzzy
@@ -305,9 +303,8 @@ msgstr ""
 "标。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:149
-#, fuzzy
 msgid "And if we use ``unit`` as an output ``COLOR`` value, we get:"
-msgstr "如果我们使用 ``unit`` 作为输出 ``COLOR`` 值，我们得到。"
+msgstr "如果我们使用 ``unit`` 作为输出 ``COLOR`` 值，我们可以得到："
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:153
 #, fuzzy

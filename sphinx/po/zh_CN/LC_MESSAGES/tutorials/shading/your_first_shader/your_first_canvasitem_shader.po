@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,28 +260,25 @@ msgstr ""
 "理”一起绘制精灵。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:142
-#, fuzzy
 msgid "Uniform input"
-msgstr "制服"
+msgstr "统一值输入"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:144
 msgid ""
 "Uniform input is used to pass data into a shader that will be the same "
 "across the entire shader."
-msgstr "统一值输入用于将数据传递到整个着色器中相同的着色器中。"
+msgstr "统一值输入用于向着色器中传递数据，这些数据在整个着色器中都是相同的。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:146
 msgid ""
 "You can use uniforms by defining them at the top of your shader like so:"
-msgstr "你可以使用统一值定义他们在你的着色器顶部这样："
+msgstr "你可以通过在着色器顶部定义来使用统一值，如："
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:152
-#, fuzzy
 msgid ""
 "For more information about usage see the :ref:`Shading Language doc "
 "<doc_shading_language>`."
-msgstr ""
-"有关内置GLSL函数的完整列表，请参见:参考:`着色语言文档<文档_着色_语言>`。"
+msgstr "用法的更多详情请参见 :ref:`着色语言文档 <doc_shading_language>` 。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:154
 msgid "Add a uniform to change the amount of blue in our Sprite."
@@ -300,9 +297,8 @@ msgstr ""
 "值。如果在编辑器中更改该值，它将覆盖着色器中提供的默认值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:171
-#, fuzzy
 msgid "Interacting with shaders from code"
-msgstr "与光交互"
+msgstr "代码与着色器的交互"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:173
 msgid ""
@@ -322,9 +318,8 @@ msgstr ""
 "包括拼写和大小写。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:185
-#, fuzzy
 msgid "Your first vertex function"
-msgstr "顶点函数的颜色。"
+msgstr "你的第一个顶点函数"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:187
 msgid "Now that we have a fragment function, let's write a vertex function."
@@ -368,6 +363,8 @@ msgid ""
 "and ``COLOR``. It is up to you to dream up more complex mathematical "
 "strategies for assigning values to those variables."
 msgstr ""
+"着色器的核心，如你所见，是计算 ``VERTEX`` 和 ``COLOR``。你可以制定更复杂的数"
+"学策略来给这些变量赋值。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:219
 msgid ""
@@ -376,3 +373,6 @@ msgid ""
 "query=&sort=popular&from=10&num=4>`_ and `The Book of Shaders <https://"
 "thebookofshaders.com>`_."
 msgstr ""
+"一些更高级的着色器教程可以给你启发，如 `Shadertoy <https://www.shadertoy.com/"
+"results?query=&sort=popular&from=10&num=4>`_ 和 `着色器之书 <https://"
+"thebookofshaders.com/?lan=ch>`_ 。"

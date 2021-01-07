@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,20 +22,20 @@ msgid "Importing images"
 msgstr "导入图像"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-#, fuzzy
 msgid "Supported image formats"
-msgstr "精灵动画"
+msgstr "支持的图像格式"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
-#, fuzzy
 msgid "Godot can import the following image formats:"
-msgstr "Godot支持以下3D *场景文件格式*："
+msgstr "Godot 可以导入以下图像格式："
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:11
 msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - 不支持每像素16位的图像。只支持每像素1位、4位、8位、24位和32"
+"位图像。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
@@ -43,6 +43,8 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface(``.dds``) -如果纹理中存在mipmap，则直接加载。可以使用自定"
+"义mipmap制作特效。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:16
 msgid ""
@@ -65,11 +67,11 @@ msgstr "JPEG (``.jpg``, ``.jpeg``) - 不支持每个格式的限制透明度。"
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
-msgstr ""
+msgstr "PNG(``.png``) - 导入时精度限制为每个通道8位（无HDR图像）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:24
 msgid "Truevision Targa (``.tga``)"
-msgstr ""
+msgstr "Truevision Targa (``.tga``)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:25
 msgid ""
@@ -80,6 +82,11 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVG在导入时使用 `NanoSVG <https://github.com/"
+"memononen/nanosvg>`__ 进行栅格化。支持并不完善，复杂向量可能无法正确渲染。对"
+"于复杂的向量，使用Inkscape将其渲染成PNGs往往是更好的解决方案。这个操作可以通"
+"过Inkscape的 `命令行界面 <https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__ 来自动完成。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid "WebP (``.webp``)"
@@ -90,6 +97,7 @@ msgid ""
 "If you've compiled the Godot editor from source with specific modules "
 "disabled, some formats may not be available."
 msgstr ""
+"如果你从源代码编译Godot编辑器时禁用了特定的模块，某些格式可能无法使用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid "Importing textures"
@@ -143,19 +151,17 @@ msgid "Compress Mode"
 msgstr "压缩模式"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:63
-#, fuzzy
 msgid ""
 "**VRAM Compression:** This is the most common compression mode for 3D "
 "assets. Size on disk is reduced and video memory usage is also decreased "
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
-"**VRAM压缩：** 这是3D素材最常见的压缩方式。磁盘文件的大小减小了，显存使用量也"
-"大大减少了（通常是4到6倍）。但对 2D 来说应该避免使用用此模式，因为它会出现明"
-"显的失真。"
+"**VRAM压缩：** 这是3D素材最常见的压缩方式。可以减小磁盘文件的大小，同时大大减"
+"少显存使用量（通常是4到6倍）。但 2D 素材应该避免使用此模式，因为它会出现明显"
+"的失真。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:67
-#, fuzzy
 msgid ""
 "**Lossless Compression:** This is the most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -163,8 +169,8 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"**无损压缩：** 这是 2D 素材最常见的压缩方式。显示素材不会失真，并且磁盘压缩率"
-"也不错。但是，它将使用比VRAM多得多的显存。同样推荐使用于像素像素艺术。"
+"**无损压缩：** 这是 2D 素材最常用的压缩方式。显示的素材不会失真，并且磁盘压缩"
+"率也不错。但是，它占用的显存比VRAM压缩多得多。这是像素画的推荐设置。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
 #, fuzzy
@@ -350,6 +356,9 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot需要法线贴图使用X +，Y-和Z +坐标。换言之，如果你导入了用于其他引擎的材"
+"质，就需要转换法线贴图，将它的Y轴翻转过来。否则，法线贴图显示的Y轴方向会相"
+"反。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
@@ -357,6 +366,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"可以在 `这里 <http://wiki.polycount.com/wiki/"
+"Normal_Map_Technical_Details>`__ 找到关于法线贴图（包括常见引擎的坐标顺序表）"
+"的更多信息。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Flags"
@@ -547,3 +559,5 @@ msgid ""
 "image. The default scale (1.0) will make the imported SVG match its original "
 "design scale."
 msgstr ""
+"该选项仅适用于 SVG 文件。它控制 SVG 图像的缩放。默认比例 (1.0) 表示使导入的 "
+"SVG 保持原始设计大小。"

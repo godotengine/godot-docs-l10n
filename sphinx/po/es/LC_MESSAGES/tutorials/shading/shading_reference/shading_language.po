@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,6 +41,9 @@ msgid ""
 "Guide<doc_migrating_to_godot_shader_language>` is a resource that will help "
 "you transition from regular GLSL to Godot's shading language."
 msgstr ""
+"Si ya estás familiarizado con el GLSL, la :ref:`Godot Shader Migration "
+"Guide<doc_migrating_to_godot_shader_language>` es un recurso que te ayudará "
+"a pasar del GLSL regular al lenguaje shader de Godot."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:16
 msgid "Data types"
@@ -419,6 +422,12 @@ msgid ""
 "identity matrix. If a smaller matrix is constructed from a larger matrix, "
 "the top, left submatrix of the larger matrix is used."
 msgstr ""
+"Las matrices también pueden construirse a partir de una matriz de otra "
+"dimensión. Hay dos reglas: Si se construye una matriz más grande a partir de "
+"una matriz más pequeña, las filas y columnas adicionales se fijan a los "
+"valores que tendrían en una matriz de identidad. Si se construye una matriz "
+"más pequeña a partir de una matriz más grande, se utiliza la submatriz "
+"superior izquierda de la matriz más grande."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:155
 msgid "Swizzling"
@@ -459,7 +468,6 @@ msgstr ""
 "la mayor parte del tiempo), pero normalmente se necesita en los fragment."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:189
-#, fuzzy
 msgid ""
 "Some architectures (mainly mobile) can benefit significantly from this, but "
 "there are downsides such as the additional overhead of conversion between "
@@ -468,13 +476,12 @@ msgid ""
 "unexpected behavior and it is best to avoid specifying precision unless "
 "necessary."
 msgstr ""
-"Ten en cuenta que algunas arquitecturas (principalmente móviles) se "
-"benefician mucho de esto, pero también están restringidas (conversiones "
-"entre precisiones tiene un costo). Lee la documentación relevante de la "
-"arquitectura destino para saber más al respecto. Honestamente, los drivers "
-"de móviles suelen tener bugs y para no tener problemas hay que intentar "
-"hacer shaders simples y no especificar precisión a menos que sea *realmente* "
-"necesario."
+"Algunas arquitecturas (principalmente móviles) pueden beneficiarse "
+"significativamente de esto, pero existen desventajas como la sobrecarga "
+"adicional de conversión entre precisiones. Consulte la documentación de la "
+"arquitectura de destino para obtener más información. En muchos casos, los "
+"controladores móviles provocan un comportamiento incoherente o inesperado y "
+"es mejor evitar especificar la precisión a menos que sea necesario."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:196
 msgid "Arrays"
@@ -505,7 +512,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:213
 msgid "They can be initialized at the beginning like:"
-msgstr ""
+msgstr "Pueden ser inicializados al principio como:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:225
 msgid ""
@@ -558,6 +565,11 @@ msgid ""
 "value is slightly faster than using a uniform. Constants must be initialized "
 "at their declaration."
 msgstr ""
+"Use la palabra clave ``const`` antes de la declaración de la variable para "
+"hacerla inmutable, lo que significa que no puede ser modificada. Todos los "
+"tipos básicos, excepto las samplers pueden ser declarados como constantes. "
+"Acceder y utilizar un valor constante es ligeramente más rápido que utilizar "
+"un uniforme. Las constantes deben ser inicializadas en su declaración."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:271
 msgid ""
@@ -565,6 +577,9 @@ msgid ""
 "multiple of them (if they have the same type) can be declared in a single "
 "expression e.g"
 msgstr ""
+"Las constantes no pueden ser modificadas y además no pueden tener indicios, "
+"pero varias de ellas (si tienen el mismo tipo) pueden ser declaradas en una "
+"sola expresión, por ejemplo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:277
 msgid "Similar to variables, arrays can also be declared with ``const``."
@@ -580,6 +595,12 @@ msgid ""
 "Like uniforms, global constants are shared between all shader stages, but "
 "they are not accessible outside of the shader."
 msgstr ""
+"Las constantes pueden ser declaradas tanto globalmente (fuera de cualquier "
+"función) como localmente (dentro de una función). Las constantes globales "
+"son útiles cuando se quiere tener acceso a un valor en todo el shader que no "
+"necesita ser modificado. Al igual que los uniformes, las constantes globales "
+"se comparten entre todas las etapas del shader, pero no son accesibles fuera "
+"del shader."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:297
 msgid "Operators"
@@ -807,6 +828,8 @@ msgid ""
 "You can only use functions that have been defined above (higher in the "
 "editor) the function from which you are calling them."
 msgstr ""
+"Sólo puede utilizar las funciones que han sido definidas arriba (más arriba "
+"en el editor) la función desde la que las está llamando."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:406
 msgid "Function arguments can have special qualifiers:"
@@ -909,6 +932,8 @@ msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
 msgstr ""
+"Puedes poner los uniformes en el editor en el material. O puedes fijarlos a "
+"través de GDScript:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:506
 msgid ""
@@ -916,6 +941,9 @@ msgid ""
 "shader. It must match *exactly* to the name of the uniform in the shader or "
 "else it will not be recognized."
 msgstr ""
+"El primer argumento para ``set_shader_param`` es el nombre del uniforme en "
+"el shader. Debe coincidir *exactamente* con el nombre del uniforme en el "
+"shader o de lo contrario no será reconocido."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:509
 msgid ""
@@ -933,6 +961,10 @@ msgid ""
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
 "Godot's 3D engine renders in linear color space."
 msgstr ""
+"Es importante entender que las texturas que se suministran como color "
+"requieren de pistas para una adecuada conversión sRGB->lineal (es decir, "
+"``hint_albedo``), ya que el motor 3D de Godot renderiza en el espacio de "
+"color lineal."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "Full list of hints below:"
@@ -1016,6 +1048,10 @@ msgid ""
 "variables from GDScript to shaders, Godot converts the type automatically. "
 "Below is a table of the corresponding types:"
 msgstr ""
+"GDScript usa tipos de variables diferentes a los que usa el GLSL, así que al "
+"pasar las variables de GDScript a los shaders, Godot convierte el tipo "
+"automáticamente. A continuación se muestra una tabla de los tipos "
+"correspondientes:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "GDScript type"
@@ -1023,7 +1059,7 @@ msgstr "Tipo GDScript"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:548
 msgid "GLSL type"
-msgstr ""
+msgstr "Tipo GLSL"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
 msgid "**Vector2**"
@@ -1051,6 +1087,9 @@ msgid ""
 "thrown if the type does not match. Your shader will just exhibit undefined "
 "behavior."
 msgstr ""
+"Tengan cuidado al establecer los uniformes shader de GDScript, no se "
+"arrojará ningún error si el tipo no coincide. Su shader sólo mostrará un "
+"comportamiento indefinido."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
 msgid "Uniforms can also be assigned default values:"
@@ -1076,6 +1115,9 @@ msgid ""
 "please see the :ref:`Differences between GLES2 and GLES3 doc "
 "<doc_gles2_gles3_differences>`."
 msgstr ""
+"Para una lista de las funciones que no están disponibles en el backend "
+"GLES2, por favor vea la :ref:`Differences between GLES2 and GLES3 doc "
+"<doc_gles2_gles3_differences>`."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:589
 msgid "Function"
@@ -1207,7 +1249,7 @@ msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
-msgstr ""
+msgstr "Potencia (sin definir si ``x`` < 0 o si ``x`` = 0 y ``y`` <= 0)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
 msgid "vec_type **exp** (vec_type x)"
@@ -1377,9 +1419,8 @@ msgid "Clamp to ``min..max``"
 msgstr "Restringe a ``min..max``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
-#, fuzzy
 msgid "float **mix** (float a, float b, float c)"
-msgstr "vec_type **mix** (float a, float b, float c)"
+msgstr "float **mix** (float a, float b, float c)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
 msgid "Linear interpolate"
@@ -1841,4 +1882,4 @@ msgstr "vec_type **fwidth** (vec_type p)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
 msgid "Sum of absolute derivative in ``x`` and ``y``"
-msgstr ""
+msgstr "Suma del derivado absoluto en ``x`` e ``y``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,29 +90,32 @@ msgid "Select **OS X > Application > Command Line Tool**."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
-#, fuzzy
 msgid ""
 "Name it something so you know not to compile with this target (e.g. "
 "``GodotXcodeIndex``)."
-msgstr "このターゲットでコンパイルしないように名前を付けます"
+msgstr ""
+"このターゲットでコンパイルしてはいけないことがわかるように名前をつけてくださ"
+"い (例: ``GodotXcodeIndex```)。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:48
-#, fuzzy
 msgid ""
 "For this target open the **Build Settings** tab and look for **Header Search "
 "Paths**."
 msgstr ""
-"新しく作成したターゲットの\\ *ビルド設定*\\ タブに移動し、\\ *ヘッダー検索パ"
-"スを検索します*"
+"このターゲットの場合、 **Build Settings** タブを開き、 **Header Search "
+"Paths** を探します。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:49
-#, fuzzy
 msgid ""
 "Set **Header Search Paths** to the absolute path to the Godot root folder. "
 "You need to include subdirectories as well. To achieve that, add two two "
 "asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
 "source/**``."
-msgstr "パスの末端に 「\\*\\*」を追加して再帰的にする"
+msgstr ""
+"**ヘッダ検索パス** をGodotのルートフォルダへの絶対パスに設定してください。サ"
+"ブディレクトリも含める必要があります。そのためには、パスの最後にアスタリスク "
+"(``**``) を2つ追加してください。 例えば、 ``/Users/me/repos/godot-source/"
+"**`` のように。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 #, fuzzy
@@ -123,17 +126,17 @@ msgstr ""
 "Godotソースをプロジェクトファイルブラウザにドラッグアンドドロップします。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
-#, fuzzy
 msgid "Uncheck **Create external build system project**."
-msgstr "チェックを外す: \\ *外部ビルド システムの作成*"
+msgstr "**外部ビルドシステムプロジェクトを作成する** のチェックを外します。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
-#, fuzzy
 msgid ""
 "Next select **Create groups** for the **Added folders** option and check "
 "*only* your command line indexing target in the **Add to targets** section."
 msgstr ""
-"*ターゲットに追加*\\ セクションでコマンドラインターゲットのみをオフにします"
+"次に、**Added folders**オプションで**Create groups**を選択し、**Add to "
+"targets**セクションにコマンドラインのインデックス対象 *だけ* あることを確認し"
+"てください。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
 #, fuzzy
@@ -162,14 +165,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
-#, fuzzy
 msgid "Open the scheme editor of the external build target."
-msgstr "外部ビルドターゲットのオープンスキームエディタ"
+msgstr "外部ビルドターゲットのスキームエディタを開きます。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:77
-#, fuzzy
 msgid "Locate the **Build > Post Actions** section."
-msgstr "*アクションの投稿へ飛ぶ*"
+msgstr "**ビルド > ポストアクション** セクションにあります。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:78
 #, fuzzy
@@ -183,36 +184,30 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
-#, fuzzy
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
-msgstr "Xcodeが認識する名前をバイナリに与えるスクリプトを記述する"
+msgstr "Xcodeが認識できる名前をバイナリに与えるスクリプトを作成します。例:"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
-#, fuzzy
 msgid "Build the external build target."
-msgstr "外部ビルドターゲットの構築"
+msgstr "外部ビルドターゲットをビルドします。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:93
-#, fuzzy
 msgid "Open the scheme editor again and select **Run**."
-msgstr "スキームエディタを再度開きます"
+msgstr "スキームエディタを再度開き、 **実行** を選択します。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:99
-#, fuzzy
 msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr ""
-"*Executable*\\ を、ビルド後のアクションスクリプトでリンクしたファイルに設定し"
-"ます"
+"ビルド後のアクションスクリプトでリンクしたファイルに **Executable** を設定し"
+"ます。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
-#, fuzzy
 msgid "Check **Debug executable**."
-msgstr ""
-"まだ実行されていない場合は、\\ *デバッグ実行可能ファイル*\\ をチェックします"
+msgstr "**Debug executable** をチェックしてください。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
@@ -223,11 +218,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
-#, fuzzy
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/osx/"
 "godot_main_osx.mm`` and run the project."
-msgstr "プラットフォーム /osx/godot_main_osx.mm でブレークポイントを設定する"
+msgstr ""
+"すべてが動作していることを確認するには、 ``platform/osx/godot_main_osx.mm`` "
+"にブレークポイントを設定してプロジェクトを実行してください。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy

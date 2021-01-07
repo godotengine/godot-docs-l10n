@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:4
 msgid "Compiling for Universal Windows Platform"
-msgstr ""
+msgstr "為通用 Windows 平台進行編譯"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:9
 msgid "Requirements"
@@ -27,29 +27,33 @@ msgstr "系統需求"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
 msgid "SCons 3.0+ (see :ref:`doc_compiling_for_windows` for more details)."
-msgstr ""
+msgstr "SCons 3.0+ (詳情請參考 :ref:`doc_compiling_for_windows`)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
 msgid ""
 "Visual Studio 2017 or later. See :ref:`doc_compiling_for_windows` about the "
 "caveats of installing it and the various prompts."
 msgstr ""
+"Visual Studio 2017 或更新版本。有關安裝須知以及其他提示，請參考 :ref:"
+"`doc_compiling_for_windows`。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:14
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
-msgstr ""
+msgstr "Windows 10 SDK (可在 Visual Studio 安裝中選擇)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
 msgstr ""
+"`ANGLE 原始碼 <https://github.com/Microsoft/angle>`__ 。請使用 ``ms_master`` "
+"(預設) 分支。請將其放置於路徑中不含空格的位置以避免發生問題。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:19
 msgid ""
 "The ANGLE repo by Microsoft has been discontinued and the ``ms_master`` "
 "branch has been cleared out."
-msgstr ""
+msgstr "Microsoft 提供的 ANGLE 已停止維護，而 ``ms_master`` 分支已被刪除。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:22
 msgid ""
@@ -57,18 +61,23 @@ msgid ""
 "state of the source code via commit `c61d048 <https://github.com/microsoft/"
 "angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__."
 msgstr ""
+"但有一個臨時解決方案，即通過 Commit `c61d048 <https://github.com/microsoft/"
+"angle/tree/c61d0488abd9663e0d4d2450db7345baa2c0dfb6>`__ 來下載舊版本的原始"
+"碼。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:26
 msgid ""
 "This page will eventually be updated in the future to reflect the new build "
 "instructions."
-msgstr ""
+msgstr "本頁之後將會更新以提供新的建置說明。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:29
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"有關配合 Godot 使用 SCons 的一般說明，請參考 :ref:"
+"`doc_introduction_to_the_buildsystem` 。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
@@ -80,6 +89,8 @@ msgid ""
 "you want to build. Check :ref:`doc_compiling_for_windows` to see how these "
 "prompts work."
 msgstr ""
+"需要開啟用於建置目標架構的 Visual Studio 提示字元。將參考 :ref:"
+"`doc_compiling_for_windows` 以瞭解提示字元如何使用。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:39
 msgid ""
@@ -87,6 +98,9 @@ msgid ""
 "and ARM (32-bits). For the latter, you can run ``vcvarsall.bat`` with "
 "``x86_arm`` or ``amd64_arm`` as argument to set the environment."
 msgstr ""
+"UWP 有三種目標架構：x86 (32 位元), x64 (64 位元) 與 ARM (32 位元)。ARM 結構可"
+"以使用 ``x86_arm`` 或 ``amd64_arm`` 作為 ``vcvarsall.bat`` 的引數來設定環境變"
+"數。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:43
 msgid ""
@@ -94,15 +108,17 @@ msgid ""
 "source code. The build process will also build ANGLE to produce the required "
 "DLLs for the selected architecture."
 msgstr ""
+"將 ``ANGLE_SRC_PATH`` 設為所下載的 ANGLE 原始碼的資料夾。建置過程同時也會建"
+"置 ANGLE 來產生選擇架構所需的 DLL。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:47
 msgid ""
 "Once you're set, run the SCons command similarly to the other platforms::"
-msgstr ""
+msgstr "完成設定之後，即可以與其他平台類似的方式執行 SCons 指令："
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:52
 msgid "Creating UWP export templates"
-msgstr ""
+msgstr "建立 UWP 匯出樣板"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:54
 msgid ""
@@ -110,16 +126,18 @@ msgid ""
 "You need all three architectures with ``debug`` and ``release`` templates to "
 "be able to export."
 msgstr ""
+"要在編輯器中匯出，需要正確地建置套件與樣板。必須要有 ``debug`` 與 "
+"``release`` 的所有三種架構才能匯出。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:58
 msgid ""
 "Open the command prompt for one architecture and run SCons twice (once for "
 "each target)::"
-msgstr ""
+msgstr "開其中一個架構的啟命令提示字元並執行 SCons 兩次 (每個目標各一次)："
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:64
 msgid "Repeat for the other architectures."
-msgstr ""
+msgstr "對其他架構重複相同的過程。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:66
 msgid ""
@@ -127,6 +145,8 @@ msgid ""
 "like ``godot.uwp.opt.debug.32.x86.exe`` (with variations for each target/"
 "arch)."
 msgstr ""
+"最後，``bin`` 資料夾中會有幾個 ``.exe`` 二進位檔，名稱類似 ``godot.uwp.opt."
+"debug.32.x86.exe`` (依據建置目標與架構而有所不同)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:70
 msgid ""
@@ -136,12 +156,19 @@ msgid ""
 "``x64`` or ``ARM``), get the ``libEGL.dll`` and the ``libGLESv2.dll``, "
 "putting them along with the executable."
 msgstr ""
+"將其中一個檔案複製到 Godot 原始碼中的 ``misc/dist/uwp_template`` ，然後將該二"
+"進位檔案重新命名為 ``godot.uwp.exe`` 。然後從 ANGLE 的原始碼中，找到 "
+"``winrt/10/src/Release_%arch%`` (其中 ``%arch%`` 可能是 ``Win32``, ``x64`` "
+"或 ``ARM``) 下的 ``libEGL.dll`` 與 ``libGLESv2.dll`` ，與剛才的執行檔放在一"
+"起。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:76
 msgid ""
 "Add the files in the ``uwp_template`` folder to a ZIP. Rename the resulting "
 "Zip according to the target/architecture of the template::"
 msgstr ""
+"將 ``uwp_template`` 中的檔案新增至 ZIP 檔中。依據樣板的建置目標與架構將產生"
+"的 ZIP 檔重新命名："
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:86
 msgid ""
@@ -151,10 +178,13 @@ msgid ""
 "of Godot 3. If you don't want to replace the templates, you can set the "
 "\"Custom Package\" property in the export window."
 msgstr ""
+"將這幾個樣板移至 Godot 設定路徑的 ``[版本]\\templates`` 資料夾中，其中， **版"
+"本** 是編譯匯出樣板要用的 Godot 版本，如， ``3.0.alpha`` 代表 Alpha 版的 "
+"Godot 3。若不想取代樣板，則可以在匯出視窗中設定「自定套件」屬性。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:93
 msgid "Running UWP apps with Visual Studio"
-msgstr ""
+msgstr "通過 Visual Studio 執行 UWP 應用程式"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:95
 msgid ""
@@ -163,6 +193,9 @@ msgid ""
 "the easiest way if you are testing on a device such as a Windows Phone or an "
 "Xbox One."
 msgstr ""
+"若想對 UWP 版本進行除錯或想在尚未打包與簽名的狀況下執行應用程式，可以通過 "
+"Visual Studio 來部署與執行。如果你使用 Windows Phone 或 Xbox One 等裝置來測試"
+"的話，該方法可能是最簡單的。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:100
 msgid ""
@@ -170,6 +203,8 @@ msgid ""
 "``install.bat`` script file. This will install the Visual Studio project "
 "templates for ANGLE apps."
 msgstr ""
+"在 ANGLE 原始碼資料夾中，開啟 ``templates`` 然後點兩下 ``install.bat`` 批次"
+"檔。該批次檔會安裝用於 ANGLE 應用程式的 Visual Studio 專案樣板。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:104
 msgid ""
@@ -178,6 +213,9 @@ msgid ""
 "also need to build it for ARM if you plan to run on a device. You can also "
 "use MSBuild if you're comfortable with the command line."
 msgstr ""
+"若尚未建置 Godot，請開啟 ANGLE 原始碼中的 ``winrt/10/src/angle.sln`` 解決方"
+"案，然後建置 Release/Win32 建置目標。如果有要在裝置上執行的話，則也需要同時建"
+"置 ARM 版本。如果熟悉命令行的話，也可以使用 MSBuild。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:109
 msgid ""
@@ -185,6 +223,8 @@ msgid ""
 "Universal)\" project template, which can be found under the ``Visual C++/"
 "Windows/Universal`` category."
 msgstr ""
+"通過「App for OpenGL ES (Windows Universal)」專案樣板來建立一個新的 Windows "
+"App，該樣板在 ``Visual C++/Windows/Universal`` 分類下。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:113
 msgid ""
@@ -194,6 +234,10 @@ msgid ""
 "and in the \"Properties\" window and change the relative path from "
 "``Debug_Win32`` to ``Release_Win32`` (or ``Release_ARM`` for devices)."
 msgstr ""
+"該基礎專案已經設定好了 ANGLE 相依性。但，預設情況下該樣板會使用除錯版的 DLL，"
+"這些 DLL 的效能通常比較差。因此，請到「Binaries」篩選器，點擊其中的各個 DLL，"
+"然後在「Properties」視窗中將相對路徑從 ``Debug_Win32`` 更改為 "
+"``Release_Win32`` (或是用於裝置時改為 ``Release_ARM``)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:119
 msgid ""
@@ -201,6 +245,9 @@ msgid ""
 "the Godot executable for UWP you have. In the \"Properties\" window, set "
 "\"Content\" to ``True`` so it's included in the project."
 msgstr ""
+"在同樣的「Binaries」篩選器中，選擇「Add > Existing Item」，然後將其指向用於 "
+"UWP 的 Godot 執行檔。在「Properties」視窗中，將「Content」設為 ``True`` 來讓"
+"其包含在專案中。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:123
 msgid ""
@@ -211,6 +258,11 @@ msgid ""
 "the ``EntryPoint`` attribute to ``GodotUWP.App``. This will ensure that the "
 "Godot executable is correctly called when the app starts."
 msgstr ""
+"右鍵點擊 ``Package.appxmanifest`` 檔案，然後選擇「Open With... > XML (Text) "
+"Editor」。在 ``Package/Applications/Application`` 元素中，將 ``Executable`` "
+"屬性的 ``$targetnametoken$.exe`` 更改為 ``godot.uwp.exe`` (即 Godot 執行檔的"
+"名稱)。另外，也請將 ``EntryPoint`` 屬性更改為 ``GodotUWP.App`` 。這樣一來即可"
+"確保在應用程式開始時會正確呼叫 Godot 執行檔。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:130
 msgid ""
@@ -220,6 +272,10 @@ msgid ""
 "> Existing Item\" command and set their \"Content\" property to ``True`` so "
 "they're copied to the app."
 msgstr ""
+"在 Visual Studio 專案資料夾中，建立一個名為 ``game`` 的新資料夾 (**不是** 篩"
+"選器)。在該資料夾中，可以放置 ``data.pck`` 檔或 Godot 專案檔。之後，請確保在"
+"「Add > Existing Item」指令中包含這個資料夾，並將「Content」屬性設為 "
+"``True`` ，以確保將這個資料夾複製至應用程式中。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:136
 msgid ""
@@ -229,6 +285,10 @@ msgid ""
 "by right-clicking the project (*not* the solution) in the \"Solution Explorer"
 "\" and selecting \"Build\"."
 msgstr ""
+"為了簡化工作流程，可以開啟「Solution Properties」然後取消選取"
+"「Configuration」中的「Build」選項。然後還是必須要建置一次應用程式來產生一些"
+"必須的檔案。可以在「Solution Explorer」中右鍵點擊專案 (**不是** 解決方案) 然"
+"後選擇「Build」來建置。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:142
 msgid ""
@@ -236,3 +296,5 @@ msgid ""
 "the \"Start Without Debugging\" option from the \"Debug\" menu (or press :"
 "kbd:`Ctrl + F5`) to make it launch faster."
 msgstr ""
+"之後即可直接執行專案，然後應該會開啟應用程式。也可以將「Debug」選單中選擇"
+"「Start Without Debugging」(或點擊 :kbd:`Ctrl + F5`) 來更快開啟。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,14 +117,12 @@ msgstr ""
 "设定一致："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "编辑器图标"
+msgstr "在Godot的编辑器设置里："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
-#, fuzzy
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
-msgstr "将 Mono External Editor 设置为 JetBrains Rider"
+msgstr "将 **Mono External Editor** 设置为 **JetBrains Rider**。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
 #, fuzzy
@@ -138,11 +136,11 @@ msgstr "在Rider中："
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
-msgstr ""
+msgstr "将 **MSBuild 版本**设置为 **Bundled with Rider** 或 **.NET Core**。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 msgid "Install the **Godot support** plugin."
-msgstr ""
+msgstr "安装 **Godot support**（**Godot 支持**）插件。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:70
 msgid "macOS and Linux"
@@ -367,7 +365,7 @@ msgstr ""
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
-msgstr ""
+msgstr "你还需要重新构建项目集，以应用 \"工具 \"脚本中的更改。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"
@@ -513,7 +511,6 @@ msgstr ""
 ">`_使用方法在 `这里<https://github.com/godotengine/godot/pull/34382>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:287
-#, fuzzy
 msgid "Configuring VS 2019 for debugging"
 msgstr "VS2019 调试配置"
 
@@ -537,7 +534,6 @@ msgstr ""
 "装VS2019的可以在 Visual Studio Installer中选择修改，确保安装即可）。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:297
-#, fuzzy
 msgid ""
 "**Ensure that you do not have Xamarin installed.** Do not choose the "
 "``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
@@ -568,7 +564,6 @@ msgid "Leave ``Local Deploy Path`` blank."
 msgstr "清空``Local Deploy Path``项。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:303
-#, fuzzy
 msgid ""
 "Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
 "Settings --> Mono --> Debugger Agent."
@@ -577,7 +572,6 @@ msgstr ""
 "Agent 中的Port相同的数值。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:304
-#, fuzzy
 msgid ""
 "Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
 "Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
@@ -587,7 +581,6 @@ msgstr ""
 "助。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:306
-#, fuzzy
 msgid ""
 "Run the game in Godot. It should hang at the Godot splash screen while it "
 "waits for your debugger to attach."
@@ -614,3 +607,7 @@ msgid ""
 "launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
 "you start the debugger in VS Code your Godot project will run."
 msgstr ""
+"要配置调试，打开Visual Studio Code，从微软下载Mono Debug扩展和由Ignacio制作的"
+"Godot扩展。然后在VS Code中打开Godot项目文件夹。进入 \"运行 \"选项卡，点击**创"
+"建launch.json文件**。从下拉菜单中选择**C# Godot**。现在，当你在VS Code中启动"
+"调试器时，你的Godot项目将会运行。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,6 +301,8 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"Если у вас всё ещё открыт проект \"Инстанцирование\", закройте его (Проект -"
+"> Выйти в список проектов), и создайте Новый проект."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -313,11 +315,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:112
 msgid "Panel"
-msgstr "Панель"
+msgstr "Panel (Панель)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Label"
-msgstr "Label"
+msgstr "Label (Надпись)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
@@ -410,9 +412,9 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"Там не так много. Функция ``_ready()`` вызывается, когда узел и все его "
-"дочерние элементы входят в активную сцену. **Примечание:** ``_ready()`` не "
-"является конструктором; конструктором является ``_init()``."
+"Не так уж и много. Функция ``_ready()`` вызывается тогда, когда узел и все "
+"его дочерние элементы входят в активную сцену. **Примечание:** ``_ready()`` "
+"не является конструктором; таковым следует считать ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"

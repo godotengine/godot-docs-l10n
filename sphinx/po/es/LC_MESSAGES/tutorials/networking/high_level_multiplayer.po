@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:98
 msgid "Get the previously set network peer:"
-msgstr ""
+msgstr "Consigue el par de la red previamente establecido:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
@@ -438,7 +438,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
@@ -452,39 +452,39 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
 msgid "``rpc(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
 msgid "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_id(<peer_id>,\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
 msgid "``rpc_unreliable(\"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_unreliable(\"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
 msgid "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
-msgstr ""
+msgstr "``rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
-msgstr ""
+msgstr "También es posible sincronizar las variables de los miembros:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
 msgid "``rset(\"variable\", value)``"
-msgstr ""
+msgstr "``rset(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
 msgid "``rset_id(<peer_id>, \"variable\", value)``"
-msgstr ""
+msgstr "``rset_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
 msgid "``rset_unreliable(\"variable\", value)``"
-msgstr ""
+msgstr "``rset_unreliable(\"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
 msgid "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
-msgstr ""
+msgstr "``rset_unreliable_id(<peer_id>, \"variable\", value)``"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
@@ -835,16 +835,16 @@ msgid "Example player code:"
 msgstr "Ejemplo de código de jugador:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:415
-#, fuzzy
 msgid ""
 "In the above example, a bomb explodes somewhere (likely managed by whoever "
 "is the master of this bomb-node, e.g. the host). The bomb knows the bodies "
 "(player nodes) in the area, so it checks that they contain an ``exploded`` "
 "method before calling it."
 msgstr ""
-"En el ejemplo anterior, una bomba explota en algún lugar (probablemente sea "
-"administrada por quien sea master). La bomba conoce los cuerpos en el área, "
-"por lo que los verifica y verifica que contengan una función ``exploded``."
+"En el ejemplo anterior, una bomba explota en algún lugar (probablemente "
+"administrada por quien sea el maestro de este nodo de bomba, por ejemplo, el "
+"anfitrión). La bomba conoce los cuerpos (nodos de jugador) en el área, por "
+"lo que verifica que contengan un método ``explotado`` antes de llamarlo."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:418
 msgid ""
@@ -853,6 +853,11 @@ msgid ""
 "itself as the master of the instance corresponding to itself, and it has set "
 "a different peer as the master for each of the other instances."
 msgstr ""
+"Recordemos que cada par tiene un conjunto completo de instancias de nodos "
+"jugadores, una instancia para cada par (incluyéndose a sí mismo y al "
+"anfitrión). Cada par se ha establecido como el maestro de la instancia "
+"correspondiente a sí mismo, y ha establecido un par diferente como maestro "
+"para cada una de las otras instancias."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
@@ -860,6 +865,10 @@ msgid ""
 "has called it remotely on all bodies in the area that have the method. "
 "However, this method is in a player node and has a ``master`` keyword."
 msgstr ""
+"Ahora, volviendo a la llamada del método ``exploded``, la bomba en el "
+"huésped ha llamado remotamente a todos los cuerpos en el área que tienen el "
+"método. Sin embargo, este método está en un nodo de jugador y tiene una "
+"palabra clave ``master``."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
 msgid ""
@@ -873,6 +882,16 @@ msgid ""
 "has the ``master`` keyword). This works well as long as all peers agree on "
 "who is the master of what."
 msgstr ""
+"La palabra clave ``master`` en el método ``exploded`` en el nodo de "
+"jugadores significa dos cosas para la forma en que se hace esta llamada. "
+"Primero, desde la perspectiva del par que llama (el anfitrión), el par que "
+"llama sólo intentará llamar remotamente al método en el par que ha "
+"establecido como maestro de la red del nodo jugador en cuestión. En segundo "
+"lugar, desde la perspectiva del par al que el host está enviando la llamada, "
+"el par sólo aceptará la llamada si se establece como el maestro de la red "
+"del nodo jugador con el método que se está llamando (que tiene la palabra "
+"clave ``master``). Esto funciona bien siempre y cuando todos los pares estén "
+"de acuerdo en quién es el maestro de qué."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:432
 msgid ""
@@ -887,6 +906,18 @@ msgid ""
 "words, those peers are set as puppets for that node by virtue of not being "
 "the network master of it)."
 msgstr ""
+"La configuración anterior significa que sólo el compañero que posee el "
+"cuerpo afectado será responsable de decir a todos los demás compañeros que "
+"su cuerpo fue aturdido, después de haber sido instruido remotamente para "
+"hacerlo por la bomba del anfitrión. Por lo tanto, el compañero propietario "
+"(aún en el método ``exploded``) le dice a todos los demás compañeros que su "
+"nodo de jugador fue aturdido. El compañero hace esto llamando remotamente al "
+"método ``stun`` en todas las instancias de ese nodo jugador (en los otros "
+"compañeros). Debido a que el método ``stun`` tiene la palabra clave "
+"``puppet``, sólo los compañeros que no se establecieron como el maestro de "
+"la red del nodo lo llamarán (en otras palabras, esos compañeros se "
+"establecen como puppets para ese nodo en virtud de no ser el maestro de la "
+"red del mismo)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
 msgid ""
@@ -894,6 +925,10 @@ msgid ""
 "the screen of all the peers, including the current network master peer (due "
 "to the local call to ``stun`` after ``rpc(\"stun\")``)."
 msgstr ""
+"El resultado de esta llamada a ``stun`` es hacer que el jugador se vea "
+"aturdido en la pantalla de todos los compañeros, incluyendo el compañero "
+"maestro de la red actual (debido a la llamada local a ``stun`` después de "
+"``rpc(\"stun\")``)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:442
 msgid ""
@@ -901,19 +936,22 @@ msgid ""
 "bodies in the area, such that all the instances of any player in the bomb "
 "area get stunned on the screens of all the peers."
 msgstr ""
+"El maestro de la bomba (el anfitrión) repite los pasos anteriores para cada "
+"uno de los cuerpos de la zona, de manera que todas las instancias de "
+"cualquier jugador de la zona de la bomba quedan aturdidas en las pantallas "
+"de todos los compañeros."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
-#, fuzzy
 msgid ""
 "Note that you could also send the ``stun()`` message only to a specific "
 "player by using ``rpc_id(<id>, \"exploded\", bomb_owner)``. This may not "
 "make much sense for an area-of-effect case like the bomb, but might in other "
 "cases, like single target damage."
 msgstr ""
-"Ten en cuenta que también puedes enviar el mensaje ``stun()`` solo a un "
-"jugador específico utilizando ``rpc_id(<id>, \"exploded\", bomb_owner)``. "
-"Esto puede no tener mucho sentido para un caso de área de efecto como el de "
-"la bomba, sino en otros casos, como daño a un solo objetivo."
+"Tenga en cuenta que también puede enviar el mensaje ``stun()`` solo a un "
+"jugador específico usando ``rpc_id (<id>, \"explotó\", bomb_owner)``. Esto "
+"puede no tener mucho sentido para un caso de área de efecto como la bomba, "
+"pero podría en otros casos, como daño a un solo objetivo."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
 msgid "Exporting for dedicated servers"
@@ -925,6 +963,9 @@ msgid ""
 "a dedicated server with no GPU available. See :ref:"
 "`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
+"Una vez que hayas hecho un juego multijugador, tal vez quieras exportarlo "
+"para ejecutarlo en un servidor dedicado sin GPU disponible. Ver :ref:"
+"`doc_exporting_for_dedicated_servers` para más información."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:461
 msgid ""
@@ -933,6 +974,11 @@ msgid ""
 "You'll also have to modify the game starting mechanism so that the first "
 "player who joins can start the game."
 msgstr ""
+"Los ejemplos de código de esta página no están diseñados para funcionar en "
+"un servidor dedicado. Tendrás que modificarlos para que el servidor no sea "
+"considerado como un jugador. También tendrás que modificar el mecanismo de "
+"inicio del juego para que el primer jugador que se una pueda iniciar el "
+"juego."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
 msgid ""
@@ -944,3 +990,11 @@ msgid ""
 "player is the one which decides whether to call the I-was-stunned method "
 "(``stun``) on all of the other peers and itself."
 msgstr ""
+"El ejemplo de bomberman aquí es en gran medida para fines ilustrativos, y no "
+"hace nada en el lado del anfitrión para manejar el caso en el que un "
+"compañero utiliza un cliente personalizado para engañar, por ejemplo, "
+"negándose a aturdirse a sí mismo. En la implementación actual tal engaño es "
+"perfectamente posible porque cada cliente es el maestro de la red de su "
+"propio jugador, y el maestro de la red de un jugador es el que decide si "
+"llamar al método \"yo fui aturdido\" (``stun``) en todos los otros pares y "
+"en sí mismo."

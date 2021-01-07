@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,12 +36,16 @@ msgstr "Voraussetzungen"
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"Sie müssen für iOS von einem Computer exportieren, auf dem ein MacOS mit "
+"installiertem Xcode läuft."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Laden Sie die Godot-Exportvorlagen herunter. Verwenden Sie das Godot-Menü: "
+"Editor> Exportvorlagen verwalten"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:17
 msgid "Export a Godot project to Xcode"
@@ -67,27 +71,31 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:27
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "Alles in der Kategorie **Benötigte Icons**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "Alles in der Kategorie **Landschafts-Startbildschirme**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "Alles in der Kategorie **Portrait-Startbildschirme**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:31
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"Nachdem Sie auf **Projekt exportieren** geklickt haben, gibt es noch zwei "
+"wichtige Optionen:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:33
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Pfad** ist ein leerer Ordner, der die exportierten Xcode-Projektdateien "
+"enthält."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
@@ -118,10 +126,12 @@ msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"Wenn Sie **exported_xcode_project_name.xcodeproj** öffnen, können Sie diese "
+"wie jede andere iOS-Anwendung erstellen und bereitstellen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:53
 msgid "Active development considerations"
-msgstr ""
+msgstr "Überlegungen zur aktiven Entwicklung"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:55
 msgid ""
@@ -144,10 +154,12 @@ msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name** ist der Name der exportierten iOS-Anwendung "
+"(wie oben)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:64
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export** ist der Name des Godot-Projekts."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:66
 msgid ""
@@ -157,11 +169,13 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:70
 msgid "Steps to link a Godot project folder to Xcode"
-msgstr ""
+msgstr "Schritte zum Verknüpfen eines Godot-Projektordners mit Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:72
 msgid "Start from an exported iOS project (follow the steps above)."
 msgstr ""
+"Beginnen Sie mit einem exportierten iOS-Projekt (folgen Sie den obigen "
+"Schritten)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:73
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,25 +135,23 @@ msgid "Set **Mono External Editor** to **JetBrains Rider**."
 msgstr "Establece **Mono External Editor** a **JetBrains Rider**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-#, fuzzy
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
-msgstr "Mono Build Tool a JetBrains Mono."
+msgstr "establezca **Mono Build Tool** en **JetBrains Mono**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
 msgstr "En Rider:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
-#, fuzzy
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
 msgstr ""
-"Conjunto ```Msbuild versión`` para ya sea incluido con Rider o . NET Core."
+"Establezca la **Vesión de MSBuild** para que ya sea incluido con Rider o **."
+"NET Core**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
-#, fuzzy
 msgid "Install the **Godot support** plugin."
-msgstr "Instalar el plugin **Godot support**."
+msgstr "Instale el plugin de **Godot support**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:70
 msgid "macOS and Linux"
@@ -263,29 +261,27 @@ msgstr ""
 "IntelliSense."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
-#, fuzzy
 msgid ""
 "If you are using Visual Studio 2019, you must follow the instructions found "
 "in the `:ref:doc_c_sharp_configuring_vs_2019_for_debugging` section below."
 msgstr ""
-"Si utiliza Visual Studio 2019, debe seguir las instrucciones que se "
-"encuentran en la sección \"Configurar VS2019 para la depuración\" a "
-"continuación."
+"Si está utilizando Visual Studio 2019, debe seguir las instrucciones que se "
+"encuentran en la sección `:ref:"
+"doc_c_sharp_configuring_vs_2019_for_debugging` a continuación.."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "Creating a C# script"
 msgstr "Creando un script de C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
-"Después de que hayas configurado adecuadamente C# para Godot, deberías ver "
-"la siguiente opción cuando selecciones ``Añadir script`` en el menú "
-"contextual de los nodos en tu escena:"
+"Después de configurar con éxito C# para Godot, debería ver la siguiente "
+"opción al seleccionar **Añadir script** en el menú contextual de un nodo en "
+"su escena:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
@@ -385,24 +381,25 @@ msgstr ""
 "Para más información, consulta la página :ref:`doc_c_sharp_differences`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
 "triggered by clicking the word **Mono** at the bottom of the editor window "
 "to reveal the Mono panel, then clicking the **Build Project** button."
 msgstr ""
-"Si estás usando C#, necesitas (re)construir los archivos assembly del "
-"proyecto cada vez que quieras tener visibles las variables exportadas o las "
-"señales. Esta construcción puede ser lanzada manualmente pulsando en la "
-"palabra \"Mono\" en la parte inferior de la ventana de edición para revelar "
-"el Panel Mono, y luego haciendo clic en el botón \"Construir Proyecto\"."
+"Necesita (re) construir los ensamblajes del proyecto cada vez que desee ver "
+"nuevas variables o señales exportadas en el editor. Esta compilación se "
+"puede activar manualmente haciendo clic en la palabra **Mono** en la parte "
+"inferior de la ventana del editor para revelar el panel Mono, luego haciendo "
+"clic en el botón **Crear proyecto**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
 msgstr ""
+"También tendrás que reconstruir los ensamblajes del proyecto para aplicar "
+"los cambios en los scripts de las \"herramientas\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:213
 msgid "Current gotchas and known issues"
@@ -661,3 +658,9 @@ msgid ""
 "launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
 "you start the debugger in VS Code your Godot project will run."
 msgstr ""
+"Para configurar la depuración, abre el código de Visual Studio y descarga la "
+"extensión Mono Debug de Microsoft y la extensión Godot hecha por Ignacio. "
+"Luego abre la carpeta del proyecto Godot en VS Code. Ve a la pestaña "
+"Ejecutar y haz clic en **crear un archivo launch.json**. Selecciona **C# "
+"Godot** en el menú desplegable. Ahora, cuando inicies el depurador en VS "
+"Code tu proyecto Godot se ejecutará."

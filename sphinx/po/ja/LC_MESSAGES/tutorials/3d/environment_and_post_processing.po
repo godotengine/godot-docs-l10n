@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -840,7 +840,6 @@ msgstr ""
 "ローパターンを作成することです:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:339
-#, fuzzy
 msgid ""
 "Finally, as the highest layers are created by stretching small blurred "
 "images, it is possible that some blockiness may be visible. Enabling "
@@ -848,8 +847,9 @@ msgid ""
 "that this is effective only when using the GLES3 backend.*"
 msgstr ""
 "最後に、小さなぼかした画像を引き伸ばすことによって最上位のレイヤーが作成され"
-"るため、何らかのブロックが見える可能性があります。\\ **Bicubic Upscaling** を"
-"有効にすると、最小限のパフォーマンスコストでそれが削除されます。"
+"るため、何らかのブロックが見える可能性があります。 **Bicubic Upscaling** を有"
+"効にすると、最小限のパフォーマンスコストでそれが削除されます。*これはGLES3"
+"バックエンドを使っている場合にのみ有効です。*"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:347
 msgid "Adjustments"

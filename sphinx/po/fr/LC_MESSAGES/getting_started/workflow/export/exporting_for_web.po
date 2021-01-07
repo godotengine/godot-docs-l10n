@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgstr ""
 "local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-#, fuzzy
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m http."
 "server 8000 --bind 127.0.0.1`` with Python 3 to serve the current working "
@@ -64,7 +63,9 @@ msgid ""
 msgstr ""
 "Python offre une méthode facile pour démarrer un serveur local. Utilisez "
 "``python -m http.server 8000 --bind 127.0.0.1`` avec Python 3 pour servir le "
-"répertoire de travail actuel à ``http://localhost:8000``."
+"répertoire de travail actuel à ``http://localhost:8000``. `Référez-vous au "
+"MDN pour des informations supplémentaires <https://developer.mozilla.org/en-"
+"US/docs/Learn/Common_questions/set_up_a_local_testing_server>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
@@ -527,7 +528,6 @@ msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Toute autre valeur JavaScript est retournée comme ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:217
-#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
@@ -535,11 +535,12 @@ msgid ""
 "``null``.  The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
-"Les modèles d'export HTML5 peuvent être composés sans le support du "
-"singleton. Avec de tels modèles, et sur les plate-formes autres que HTML5, "
-"appeler ``JavaScript.eval`` renverra ``null`` également. La disponibilité du "
-"singleton peut être vérifiée avec :ref:`l'étiquette de fonctionnalité "
-"<doc_feature_tags>` :"
+"Les modèles d'exportation HTML5 peuvent être :ref:`compilé "
+"<doc_compiling_for_web>` sans support du singleton pour améliorer la "
+"sécurité. Avec de tels modèles, et sur des plateformes autres que HTML5, "
+"appeler ``JavaScript.eval`` renverra également ``null``. La disponibilité du "
+"singleton peut être vérifiée avec le ``JavaScript`` :ref:`feature tag "
+"<doc_feature_tags>` :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
 msgid ""

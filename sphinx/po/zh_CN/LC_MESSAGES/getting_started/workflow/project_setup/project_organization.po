@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,14 +72,13 @@ msgstr ""
 "在一个文件夹中。然后，它们可以使用一个单独的文件夹来存储使用它们的构建关卡。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
-msgstr "C# 风格指南"
+msgstr "风格指南"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:50
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
-msgstr ""
+msgstr "为了项目之间的一致性，我们建议遵循以下指导原则："
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -89,11 +88,14 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"使用 **snake_case** 风格为文件夹和文件命名（除了c#脚本）。这避免了在 Windows "
+"上导出项目时可能出现的大小写敏感问题。C# 脚本是这个规则的一个例外，因为按照惯"
+"例是用类名来对它们命名，而类名应该是 PascalCase 风格。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
-msgstr ""
+msgstr "使用 **PascalCase** 风格对节点进行命名，这与内置的节点大小写风格一致。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -103,6 +105,9 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"通常，将第三方资源放在顶级的 ``addons/`` 文件夹中，即使它们不是编辑器插件。这"
+"样更加容易跟踪哪些文件是第三方文件。当然这个规则也有一些例外：如果你要使用第"
+"三方游戏资源创建角色，将这些资源和角色场景及脚本放在同一文件夹下会更好。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
@@ -174,12 +179,18 @@ msgid ""
 "stick to ``snake_case`` naming for all files in the project (and lowercase "
 "characters in general)."
 msgstr ""
+"Windows和最新的macOS版本默认使用不区分大小写的文件系统，而Linux发行版默认使用"
+"区分大小写的文件系统。由于Godot的PCK虚拟文件系统区分大小写，因此在导出项目后"
+"可能会导致问题。为了避免这种情况，建议对项目中的所有文件都使用 "
+"``snake_case`` 蛇形命名法（一般使用小写）。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:107
 msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
+"当风格指南中另有说明时，可以不遵守此规则（如C#样式指南）。不过，记得保持一致"
+"性，避免出错。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
 msgid ""
@@ -188,6 +199,9 @@ msgid ""
 "Subsystem for Linux feature, run the following command in a PowerShell "
 "window::"
 msgstr ""
+"在Windows 10上，为了进一步避免与大小写敏感性相关的错误，您还可以让项目文件夹"
+"区分大小写。启用 Windows 的 Linux 子系统特性后，在 PowerShell 窗口中运行以下"
+"命令::"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:120
 msgid ""
@@ -195,3 +209,5 @@ msgid ""
 "following line in a PowerShell window *running as Administrator* then reboot "
 "when asked::"
 msgstr ""
+"如果你还没有启用 Windows 的 Linux 子系统，你可以在PowerShell窗口中输入以下代"
+"码*以管理员权限运行*然后重启::"

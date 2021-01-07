@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
 msgstr "跨语言脚本"
 
@@ -34,7 +33,6 @@ msgstr ""
 "GDScript 定义节点的脚本。本页会介绍在使用不用语言的两个节点之间可能的交互。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:11
-#, fuzzy
 msgid ""
 "The following two scripts will be used as references throughout this page."
 msgstr "以下两个脚本用在整个页面中作为参考。"
@@ -94,7 +92,6 @@ msgid "Instantiating GDScript nodes from C#"
 msgstr "在C#中实例化GDScript节点"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:99
-#, fuzzy
 msgid ""
 "From the C# side, everything work the same way. Once loaded, the GDScript "
 "can be instantiated with :ref:`GDScript.New() <class_GDScript_method_new>`."
@@ -219,3 +216,6 @@ msgid ""
 "GitHub issue <https://github.com/godotengine/godot/issues/38352>`__ for more "
 "information."
 msgstr ""
+"GDScript文件可能无法从C＃脚本继承。同样地，C＃脚本可能无法从GDScript文件继"
+"承。由于实现起来非常复杂，因此将来不太可能取消此限制。详见`这个 GitHub issue "
+"<https://github.com/godotengine/godot/issues/38352>`__ 。"

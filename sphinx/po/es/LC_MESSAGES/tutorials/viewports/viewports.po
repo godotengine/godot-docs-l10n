@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,7 +126,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:51
 msgid "Listener"
-msgstr ""
+msgstr "Oyente"
 
 #: ../../docs/tutorials/viewports/viewports.rst:53
 msgid ""
@@ -137,10 +137,16 @@ msgid ""
 "`Viewport <class_Viewport>` to display your :ref:`World <class_World>`, "
 "don't forget to enable this!"
 msgstr ""
+"Godot soporta el sonido 3D (tanto en nodos 2D como 3D); más sobre esto se "
+"puede encontrar en el :ref:`Audio Streams Tutorial<doc_audio_streams>`. Para "
+"que este tipo de sonido sea audible, el :ref:`Viewport <class_Viewport>` "
+"debe estar habilitado como oyente (para 2D o 3D). Si estás usando un :ref:"
+"`Viewport <class_Viewport>` personalizado para mostrar tu :ref:`World "
+"<class_World>`, ¡no te olvides de habilitarlo!"
 
 #: ../../docs/tutorials/viewports/viewports.rst:60
 msgid "Cameras (2D & 3D)"
-msgstr ""
+msgstr "Cámaras (2D y 3D)"
 
 #: ../../docs/tutorials/viewports/viewports.rst:62
 msgid ""
@@ -149,6 +155,10 @@ msgid ""
 "`Viewport <class_Viewport>` (going towards the root). For example, in the "
 "following hierarchy:"
 msgstr ""
+"Cuando se usa una :ref:`Camera <class_Camera>` / :ref:`Camera2D "
+"<class_Camera2D>`, las cámaras siempre se mostrarán en el padre más cercano :"
+"ref:`Viewport <class_Viewport>` (yendo hacia la raíz). Por ejemplo, en la "
+"siguiente jerarquía:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:69
 msgid ""
@@ -160,6 +170,13 @@ msgid ""
 "`Viewport <class_Viewport>` node because :ref:`Viewport <class_Viewport>` "
 "nodes only capture nodes below them in the hierarchy."
 msgstr ""
+"La cámaraA aparecerá en la raíz :ref:`Viewport <class_Viewport>` y dibujará "
+"MeshA. La cámaraB será capturada por el nodo :ref:`Viewport "
+"<class_Viewport>` junto con MeshB. Aunque MeshB está en la jerarquía de la "
+"escena, no será dibujada en el Root :ref:`Viewport <class_Viewport>`. Del "
+"mismo modo, MeshA no será visible desde el nodo :ref:`Viewport "
+"<class_Viewport>` porque los nodos :ref:`Viewport <class_Viewport>` sólo "
+"capturan los nodos que están debajo de ellos en la jerarquía."
 
 #: ../../docs/tutorials/viewports/viewports.rst:75
 msgid ""
@@ -167,6 +184,9 @@ msgid ""
 "if there is more than one, make sure that the desired one has the \"current"
 "\" property set, or make it the current camera by calling:"
 msgstr ""
+"Sólo puede haber una cámara activa por :ref:`Viewport <class_Viewport>`, así "
+"que si hay más de una, asegúrate de que la deseada tiene la propiedad "
+"\"actual\" establecida, o hazla la cámara actual llamando:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:83
 msgid ""
@@ -176,10 +196,16 @@ msgid ""
 "<class_VisualInstance_property_layers>` property to restrict which objects "
 "are rendered."
 msgstr ""
+"Por defecto, las cámaras renderizarán todos los objetos de su mundo. En 3D, "
+"las cámaras pueden usar su propiedad :ref:`cull_mask "
+"<class_Camera_property_cull_mask>` combinada con la propiedad :ref:"
+"`VisualInstance's <class_VisualInstance>` :ref:`layer "
+"<class_VisualInstance_property_layers>` para restringir qué objetos se "
+"renderizan."
 
 #: ../../docs/tutorials/viewports/viewports.rst:89
 msgid "Scale & stretching"
-msgstr ""
+msgstr "Escalado y estiramiento"
 
 #: ../../docs/tutorials/viewports/viewports.rst:91
 msgid ""
@@ -201,6 +227,9 @@ msgid ""
 "<class_Viewport>` resolution different from the one specified in size, by "
 "calling:"
 msgstr ""
+"También es posible escalar el contenido 2D y hacer que la resolución :ref:"
+"`Viewport <class_Viewport>` sea diferente de la especificada en el tamaño, "
+"llamando:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:103
 msgid ""
@@ -208,10 +237,14 @@ msgid ""
 "in the project settings. For more information on scaling and stretching "
 "visit the :ref:`Multiple Resolutions Tutorial <doc_multiple_resolutions>`"
 msgstr ""
+"La raíz :ref:`Viewport <class_Viewport>` utiliza esto para las opciones de "
+"estiramiento en la configuración del proyecto. Para más información sobre "
+"escalado y estiramiento visite el Tutorial de Múltiples Resoluciones :ref:"
+"`Multiple Resolutions Tutorial <doc_multiple_resolutions>`"
 
 #: ../../docs/tutorials/viewports/viewports.rst:107
 msgid "Worlds"
-msgstr ""
+msgstr "Mundos"
 
 #: ../../docs/tutorials/viewports/viewports.rst:109
 msgid ""
@@ -231,6 +264,21 @@ msgid ""
 "you might want to show a separate character in 3D imposed over the game "
 "(like in StarCraft)."
 msgstr ""
+"Para 3D, un :ref:`Viewport <class_Viewport>` contendrá un :ref:`World "
+"<class_World>`. Este es básicamente el universo que une la física y la "
+"representación juntos. Los nodos de base espacial se registrarán usando el :"
+"ref:`World <class_World>` del :ref:`Viewport <clase_Viewport>` más cercano. "
+"Por defecto, los :ref:`Viewports <class_Viewport>` recién creados no "
+"contienen un :ref:`World <class_World>` sino que usan el mismo que su padre :"
+"ref:`Viewport <class_Viewport>` (la raíz :ref:`Viewport <class_Viewport>` "
+"siempre contiene un :ref:`World <class_World>`, que es al que se renderizan "
+"los objetos por defecto). Un :ref:`World <class_World>` puede establecerse "
+"en un :ref:`Viewport <class_Viewport>` usando la propiedad \"world\", y eso "
+"separará a todos los nodos hijos de ese :ref:`Viewport <class_Viewport>` de "
+"la interacción con el padre :ref:`Viewport's <class_Viewport>` :ref:`World "
+"<class_World>`. Esto es especialmente útil en escenarios donde, por ejemplo, "
+"podrías querer mostrar un personaje separado en 3D impuesto sobre el juego "
+"(como en StarCraft)."
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
@@ -253,6 +301,11 @@ msgid ""
 "them may be desired, it is possible to do so by setting the :ref:`Viewport's "
 "<class_Viewport>` :ref:`World2D <class_World2D>` manually."
 msgstr ""
+"Para 2D, cada :ref:`Viewport <class_Viewport>` siempre contiene su propio :"
+"ref:`World2D <class_World2D>`. Esto es suficiente en la mayoría de los "
+"casos, pero en caso de que se desee compartirlo, es posible hacerlo "
+"configurando el :ref:`Viewport's <class_Viewport>` :ref:`World2D "
+"<class_World2D>` manualmente."
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
@@ -261,6 +314,10 @@ msgid ""
 "and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/viewport/2d_in_3d>`_ respectively."
 msgstr ""
+"Para un ejemplo de cómo funciona esto, ver los proyectos de demostración `3D "
+"en 2D <https://github.com/godotengine/godot-demo-projects/tree/master/"
+"viewport/3d_in_2d>`_ y `2D en 3D <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/viewport/2d_in_3d>`_ respectivamente."
 
 #: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
@@ -272,6 +329,9 @@ msgid ""
 "contents. For the root :ref:`Viewport <class_Viewport>`, this is effectively "
 "a screen capture. This is done with the following code:"
 msgstr ""
+"Es posible consultar una captura del contenido de :ref:`Viewport "
+"<class_Viewport>`. Para la raíz :ref:`Viewport <class_Viewport>`, esto es "
+"efectivamente una captura de pantalla. Esto se hace con el siguiente código:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:152
 msgid ""
@@ -280,6 +340,10 @@ msgid ""
 "because there is nothing to get as texture. You can deal with it using (for "
 "example):"
 msgstr ""
+"Pero si usas esto en ``_ready()`` o desde el primer fotograma de la "
+"inicialización :ref:`Viewport's <class_Viewport>`, obtendrás una textura "
+"vacía porque no hay nada que obtener como textura. Puedes tratarlo usando "
+"(por ejemplo):"
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
 msgid "Viewport Container"
@@ -291,6 +355,9 @@ msgid ""
 "`ViewportContainer <class_viewportcontainer>`, it will become active and "
 "display anything it has inside. The layout looks like this:"
 msgstr ""
+"Si el :ref:`Viewport <class_Viewport>` es hijo de un :ref:`ViewportContainer "
+"<class_viewportcontainer>`, se activará y mostrará todo lo que tenga dentro. "
+"El diseño se ve así:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:169
 msgid ""
@@ -322,6 +389,14 @@ msgid ""
 "ref:`Viewport <class_Viewport>` to use HDR, HDR is very useful for when you "
 "want to store values in the texture that are outside the range 0.0 - 1.0."
 msgstr ""
+"Debido al hecho de que el :ref:`Viewport <class_Viewport>` es una entrada a "
+"otra superficie de renderizado, expone unas cuantas propiedades de "
+"renderizado que pueden ser diferentes de la configuración del proyecto. La "
+"primera es MSAA; puedes elegir usar un nivel diferente de MSAA para cada :"
+"ref:`Viewport <class_Viewport>`; el comportamiento por defecto es DISABLED. "
+"También puedes establecer el :ref:`Viewport <class_Viewport>` para usar HDR, "
+"HDR es muy útil para cuando quieras almacenar valores en la textura que "
+"estén fuera del rango 0.0 - 1.0."
 
 #: ../../docs/tutorials/viewports/viewports.rst:181
 msgid ""
@@ -333,6 +408,12 @@ msgid ""
 "<class_Viewport>`'s Usage property to 2D if your viewport doesn't render "
 "anything in 3D."
 msgstr ""
+"Si sabes cómo se va a usar el :ref:`Viewport <class_Viewport>`, puedes "
+"establecer su uso en 3D o 2D. Godot restringirá entonces cómo se dibuja el :"
+"ref:`Viewport <class_Viewport>` de acuerdo a tu elección; por defecto es 3D. "
+"El modo de uso 2D es ligeramente más rápido y utiliza menos memoria en "
+"comparación con el 3D. Es una buena idea establecer la propiedad de uso de :"
+"ref:`Viewport <class_Viewport>` a 2D si tu viewport no renderiza nada en 3D."
 
 #: ../../docs/tutorials/viewports/viewports.rst:187
 msgid ""
@@ -341,6 +422,10 @@ msgid ""
 "shadows won't be rendered. For reference, the Project Settings define it to "
 "4096 by default."
 msgstr ""
+"Si necesitas renderizar las sombras 3D en la ventana, asegúrate de "
+"configurar la propiedad *Shadow Atlas Size* de la ventana a un valor "
+"superior a 0. De lo contrario, las sombras no se renderizarán. Como "
+"referencia, la Configuración del proyecto lo define a 4096 por defecto."
 
 #: ../../docs/tutorials/viewports/viewports.rst:190
 msgid ""
@@ -349,10 +434,15 @@ msgid ""
 "specify one of four options for how the :ref:`Viewport <class_Viewport>` "
 "will display things drawn inside it. Debug Draw is disabled by default."
 msgstr ""
+"Godot también proporciona una forma de personalizar cómo se dibuja todo "
+"dentro :ref:`Viewports <class_Viewport>` usando \"Debug Draw\". Debug Draw "
+"permite especificar una de las cuatro opciones de cómo el :ref:`Viewport "
+"<class_Viewport>` mostrará las cosas dibujadas dentro de él. Debug Draw está "
+"desactivado por defecto."
 
 #: ../../docs/tutorials/viewports/viewports.rst:196
 msgid "*A scene drawn with Debug Draw disabled*"
-msgstr ""
+msgstr "*Una escena dibujada con Debug Draw desactivado*"
 
 #: ../../docs/tutorials/viewports/viewports.rst:198
 msgid ""
@@ -360,36 +450,45 @@ msgid ""
 "draws the scene without using lighting information so all the objects appear "
 "flatly colored the color of their albedo."
 msgstr ""
+"Las otras tres opciones son sin sombra, sobregirado y alambrado. Unshaded "
+"dibuja la escena sin usar la información de la iluminación, así que todos "
+"los objetos aparecen coloreados de forma plana del color de su albedo."
 
 #: ../../docs/tutorials/viewports/viewports.rst:204
 msgid "*The same scene with Debug Draw set to Unshaded*"
-msgstr ""
+msgstr "*La misma escena con Debug Draw ajustada a Unshaded*"
 
 #: ../../docs/tutorials/viewports/viewports.rst:206
 msgid ""
 "Overdraw draws the meshes semi-transparent with an additive blend so you can "
 "see how the meshes overlap."
 msgstr ""
+"El sobredimensionamiento dibuja las mallas semitransparentes con una mezcla "
+"de aditivos para poder ver cómo se superponen las mallas."
 
 #: ../../docs/tutorials/viewports/viewports.rst:210
 msgid "*The same scene with Debug Draw set to Overdraw*"
-msgstr ""
+msgstr "*La misma escena con Debug Draw puesta en Overdraw*"
 
 #: ../../docs/tutorials/viewports/viewports.rst:212
 msgid ""
 "Lastly, Wireframe draws the scene using only the edges of triangles in the "
 "meshes."
 msgstr ""
+"Por último, Wireframe dibuja la escena usando sólo los bordes de los "
+"triángulos en las mallas."
 
 #: ../../docs/tutorials/viewports/viewports.rst:216
 msgid ""
 "The effects of the Wireframe mode are only visible in the editor, not while "
 "the project is running."
 msgstr ""
+"Los efectos del modo Wireframe sólo son visibles en el editor, no mientras "
+"el proyecto está en marcha."
 
 #: ../../docs/tutorials/viewports/viewports.rst:219
 msgid "Render target"
-msgstr ""
+msgstr "Renderizar el objetivo"
 
 #: ../../docs/tutorials/viewports/viewports.rst:221
 msgid ""
@@ -399,16 +498,22 @@ msgid ""
 "<class_ViewportTexture>` somewhere. This can be requested via code using "
 "(for example):"
 msgstr ""
+"Al renderizar a un :ref:`Viewport <class_Viewport>`, lo que esté dentro no "
+"será visible en el editor de escenas. Para mostrar el contenido, tienes que "
+"dibujar el :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
+"<class_ViewportTexture>` en algún lugar. Esto se puede solicitar mediante un "
+"código usando (por ejemplo):"
 
 #: ../../docs/tutorials/viewports/viewports.rst:231
 msgid ""
 "Or it can be assigned in the editor by selecting \"New ViewportTexture\""
-msgstr ""
+msgstr "O se puede asignar en el editor seleccionando \"New ViewportTexture\""
 
 #: ../../docs/tutorials/viewports/viewports.rst:235
 msgid ""
 "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr ""
+"y luego seleccionando el :ref:`Viewport <class_Viewport>` que quieres usar."
 
 #: ../../docs/tutorials/viewports/viewports.rst:239
 msgid ""
@@ -421,6 +526,14 @@ msgid ""
 "while next frame will clear the texture on the next frame and then set "
 "itself to Never."
 msgstr ""
+"Cada cuadro, la textura de :ref:`Viewport <class_Viewport>` se borra con el "
+"color claro por defecto (o un color transparente si :ref:`Transparent "
+"Bg<class_Viewport_property_transparent_bg>` se establece en ``true``). Esto "
+"se puede cambiar poniendo :ref:`Clear "
+"Mode<class_Viewport_property_render_target_clear_mode>` en Never o Next "
+"Frame. Como su nombre lo indica, Never significa que la textura nunca se "
+"borrará, mientras que el siguiente cuadro borrará la textura en el siguiente "
+"cuadro y luego se establecerá en Never."
 
 #: ../../docs/tutorials/viewports/viewports.rst:244
 msgid ""
@@ -432,6 +545,14 @@ msgid ""
 "flexibility allows users to render an image once and then use the texture "
 "without incurring the cost of rendering every frame."
 msgstr ""
+"Por defecto, la renderización de :ref:`Viewport <class_Viewport>` ocurre "
+"cuando el :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
+"<class_ViewportTexture>` ha sido dibujado en un marco. Si es visible, se "
+"renderizará; de lo contrario, no lo hará. Este comportamiento puede "
+"cambiarse a renderizado manual (una vez), o siempre renderizado, sin "
+"importar si es visible o no. Esta flexibilidad permite a los usuarios "
+"renderizar una imagen una vez y luego usar la textura sin incurrir en el "
+"costo de renderizar cada fotograma."
 
 #: ../../docs/tutorials/viewports/viewports.rst:252
 msgid ""

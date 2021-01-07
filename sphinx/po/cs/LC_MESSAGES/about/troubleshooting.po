@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,23 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Odstraňování problémů"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Tato stránka obsahuje seznam běžných problémů, které se vyskytly při "
+"používání Godotu, a možná řešení."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Všechno, co dělám v editoru nebo projektovém manažerovi, se zdá být zpožděno "
+"o jeden snímek."
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -39,6 +43,10 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"Toto je `známá chyba <https://github.com/godotengine/godot/issues/23069 >`_ "
+"v grafických ovladačích Intel pro Windows. Problém by měla vyřešit "
+"aktualizace na nejnovější verzi grafického ovladače *poskytovanou "
+"společností Intel*."
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -46,18 +54,23 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Měli byste použít grafický ovladač dodaný společností Intel, místo ovladače "
+"od dodavatele vašeho stolního počítače nebo notebooku, protože jejich verze "
+"je často zastaralá."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
-msgstr ""
+msgstr "Mřížka zmizí a oka zčernají, když otočím 3D kameru v editoru."
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"Toto je `známá chyba <https://github.com/godotengine/godot/issues/30330>`__ "
+"v grafických ovladačích Intel pro Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -65,16 +78,21 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"Jediným řešením je prozatím přepnout na vykreslovač GLES2. Vykreslovací "
+"modul můžete přepnout v pravém horním rohu editoru nebo v nastavení projektu."
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Pokud používáte počítač, který vám umožňuje přepínat grafickou kartu, "
+"například NVIDIA Optimus, můžete ke spuštění Godotu použít vyhrazenou "
+"grafickou kartu."
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "Spuštění editoru nebo projektu trvá velmi dlouho."
 
 #: ../../docs/about/troubleshooting.rst:34
 msgid ""
@@ -85,10 +103,16 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Toto je `známá chyba <https://github.com/godotengine/godot/issues/20566>`__ "
+"v systému Windows, pokud máte připojena konkrétní periferní zařízení USB. "
+"Zdá se, že chybu způsobil zejména software iCUE společnosti Corsair. Zkuste "
+"aktualizovat ovladače periferních zařízení USB na nejnovější verzi. Pokud "
+"chyba přetrvává, musíte před otevřením editoru odpojit vadné periferie. "
+"Potom můžete periferní zařízení znovu připojit."
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "Po kliknutí na konzolu systému se editor Godot zamrzne."
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -98,16 +122,23 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"Pokud používáte Godot ve Windows se zapnutou systémovou konzolou, můžete "
+"omylem aktivovat *režim výběru* kliknutím do příkazového okna. Toto chování "
+"specifické pro Windows pozastaví aplikaci, aby vám umožnila vybrat text "
+"uvnitř konzoly systému. Godot nemůže potlačit toto specifické chování "
+"systému."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Chcete-li to vyřešit, vyberte okno konzoly systému a stiskněte klávesu Enter "
+"pro opuštění režimu výběru."
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "Na rozdíl od editoru se okno projektu jeví rozmazané."
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -115,6 +146,9 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"Na rozdíl od editoru si není projekt ve výchozím nastavení vědom DPI. Toto "
+"se provádí za účelem zlepšení výkonu, zejména u integrované grafiky, kde je "
+"vykreslování 3D scén v hiDPI pomalé."
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -122,10 +156,14 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Chcete-li to vyřešit, otevřete **Project> Project Settings** and enable "
+"**Display> Window> Dpi> Allow Hidpi**. Kromě toho se ujistěte, že je váš "
+"projekt nakonfigurován tak, aby podporoval :ref:`multiple resolutions "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "Když spustím projekt, okno projektu se neobjeví na středu."
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -134,12 +172,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Toto je `známá chyba <https://github.com/godotengine/godot/issues/13017>`__. "
+"Chcete-li to vyřešit, otevřete **Project > Project Settings** and enable "
+"**Display > Window > Dpi > Allow Hidpi**. Kromě toho se ujistěte, že je váš "
+"projekt nakonfigurován tak, aby podporoval :ref:`multiple resolutions "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Projekt funguje při spuštění z editoru, ale při spuštění z exportované kopie "
+"se mu nepodaří načíst některé soubory."
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -150,6 +195,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"To je obvykle způsobeno opomenutím určit filtr souborů, které nejsou zdroji, "
+"v dialogovém okně Export. Ve výchozím nastavení Godot zahrne do souboru PCK "
+"pouze skutečné *zdroje* . Některé soubory, které se běžně používají, "
+"například soubory JSON, se za zdroje nepovažují. Například pokud načítáte "
+"soubor ``test.json`` v exportovaném projektu, musíte ve filtru exportu "
+"souborů nepovažovaných za zdroje, zadat ``* .json``. Viz :ref:"
+"`doc_exporting_projects_export_mode` pro více informací."
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -160,3 +212,10 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"V systému Windows to může být také způsobeno :ref:`problémy s rozlišením "
+"malých a velkých písmen <doc_project_organization_case_sensitivity>` . Pokud "
+"ve svém skriptu uvedete odkaz na zdroj jinou velikostí písma, než je v "
+"souborovém systému, načítání se po exportu projektu nezdaří. Je tomu tak "
+"proto, že ve virtuálním souborovém systému PCK se rozlišují velká a malá "
+"písmena, zatímco v systému souborů Windows se ve výchozím nastavení velká a "
+"malá písmena nerozlišují."

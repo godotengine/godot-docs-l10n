@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,15 @@ msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"На этой странице перечислены распространенные проблемы, возникающие при "
+"использовании Godot, и возможные их решения."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Все что я делаю в редакторе или менеджере проекта подвисает на один кадр."
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -39,6 +42,9 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"Это `известная ошибка <https://github.com/godotengine/godot/issues/23069>>__ "
+"на графических драйверах Intel под Windows. Обновление до последней версии "
+"графического драйвера * предоставляемого Intel* должно исправить проблему."
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -46,18 +52,25 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Используйте графический драйвер предоставляемый компанией Intel, нежели тот, "
+"что поставляется изготовителем вашего ПК или ноутбука. Зачастую это "
+"объясняется устаревшей версией заводских настроек."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"Координатная сетка исчезает, а полисетки темнеют, когда я изменяю ракурс 3D-"
+"камеры в редакторе."
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"Это `распространенная ошибка<https://github.com/godotengine/godot/"
+"issues/30330>`__ графических драйверов Intel на Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -65,16 +78,22 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"Пока что, единственный обходной путь — это переключиться на GLES2 рендерер. "
+"Переключатель находится в верхнем правом углу редактора, или же в Настройках "
+"проекта."
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Если вы используете компьютер с возможностью переключения на другую "
+"видеокарту, например используя NVIDIA Optimus — вы можете выделить отдельную "
+"видеокарту для работы в Godot."
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "Длительный запуск редактора или проекта."
 
 #: ../../docs/about/troubleshooting.rst:34
 msgid ""
@@ -85,10 +104,16 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Это `распространенная ошибка<https://github.com/godotengine/godot/"
+"issues/20566>`__ на Windows, которая возникает из-за специфических USB "
+"периферийных устройств. В частности, ошибку вызывает программное обеспечение "
+"Corsair iCUE. Попробуйте обновить драйверы подобных устройств, до последней "
+"версии. Если ошибка не исчезнет, вам придется извлечь это устройство перед "
+"запуском редактора, после чего подключить вновь."
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "Godot-редактор явно подвисает после нажатия на системную консоль."
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -98,16 +123,25 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"При запуске Godot через системную консоль на Windows — вы можете случайно "
+"включить *режим выделения*, кликая внутри командного окна. Это специфичное "
+"для Windows поведение приостанавливает работу приложения, чтобы вы могли "
+"выделить текст в системной консоли. Godot не может отменить это "
+"специфическое для системы, поведение."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Для решения проблемы, выберите окно этой системной консоли и нажмите Enter, "
+"чтобы отключить режим выделения."
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
 msgstr ""
+"Отображение в окне проекта выглядит размытым, в отличии от показанного в "
+"редакторе."
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -115,6 +149,9 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"В отличии от редактора, в настройках проекта по умолчанию не помечен флажок "
+"DPI-поддержки. Это сделано для повышения производительности, особенно для "
+"интегрированной графики, где рендеринг 3D-сцен в hiDPI происходит медленно."
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -122,10 +159,14 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Для решения, откройте *Проект > Настройки проекта* и включите опцию "
+"**Display > Window > Dpi > Allow Hidpi**. Кроме того, убедитесь, что ваш "
+"проект настроен на поддержку :ref:`нескольких разрешений "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "Когда я запускаю проект, окно проекта не отображается по центру."
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -134,12 +175,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Это `распространенная ошибка <https://github.com/godotengine/godot/"
+"issues/13017>`__. Для её решения, откройте **Проект > Настройки проекта** и "
+"включите опцию **Display > Window > Dpi > Allow Hidpi**. Кроме того, "
+"убедитесь, что ваш проект настроен на поддержку :ref:`нескольких разрешений "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Проект работает при запуске из редактора, но не может загрузить некоторые "
+"файлы при запуске из экспортированной копии."
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -150,6 +198,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"Обычно это происходит из-за того, что вы забыли указать фильтр для файлов, "
+"не являющихся ресурсами, в диалоговом окне «Экспорт». По умолчанию, Godot "
+"будет включать актуальные *ресурсы* в PCK-файл. Некоторые часто используемые "
+"файлы, такие как JSON, не считаются ресурсами. К примеру, если вы загружаете "
+"``test.json`` в экспортируемый проект, вам нужно указать ``*.json`` в "
+"фильтре экспорта без ресурсов. Смотреть :ref:"
+"`doc_exporting_projects_export_mode` для получения информации."
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -160,3 +215,9 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"На Windows, эта проблема бывает связана с :ref:`чувствительностью к регистру "
+"<doc_project_organization_case_sensitivity>`. Если вы ссылаетесь на ресурс в "
+"вашем скрипте, с отличным, от принятой в системе регистром наименований "
+"файлов — экспорт проекта проваливается. Это связано с тем, что виртуальная "
+"файловая система PCK чувствительна к регистру, тогда как файловая система "
+"Windows по умолчанию не чувствительна к нему."

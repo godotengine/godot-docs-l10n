@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -548,8 +548,8 @@ msgstr "Informação adicional:"
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
-"UV2 = O segundo canal UV para texturas detalhadas e texturas de mapa de luz "
-"baked."
+"UV2 = O segundo canal UV para texturas detalhadas e texturas lightmap "
+"previamente calculadas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:215
 msgid ""
@@ -614,28 +614,30 @@ msgstr "Light Baking"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:242
 msgid "Whether or not the mesh is used in baked lightmaps."
-msgstr "Se a malha é ou não usada em mapas de luz baked."
+msgstr "Se a malha é ou não usada em lightmaps previamente calculados."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid "**Disabled:** The mesh is not used in baked lightmaps."
-msgstr "**Desativado:** A malha não é usada em mapas de luz baked."
+msgstr ""
+"**Desativado:** A malha não é usada em lightmaps previamente calculados."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid "**Enable:** The mesh is used in baked lightmaps."
-msgstr "**Habilitar:** A malha é usada em baked lightmaps."
+msgstr "**Habilitar:** A malha é usada em lightmaps previamente calculados."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
 "**Gen Lightmaps:** The mesh is used in baked lightmaps, and unwraps a second "
 "UV layer for lightmaps."
 msgstr ""
-"**Gen Lightmaps:** A malha é usada em mapas de luz pré-calculados, e "
-"desembrulha uma segunda camada UV para mapas de luz."
+"**Gen Lightmaps:** A malha é usada em lightmaps previamente calculados, e "
+"desembrulha uma segunda camada UV para lightmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:248
-#, fuzzy
 msgid "For more information on light baking see :ref:`doc_baked_lightmaps`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para obter mais informações sobre cálculo prévio de luz, consulte :ref:"
+"`doc_baked_lightmaps`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
 msgid "External Files"
@@ -891,26 +893,22 @@ msgstr ""
 "após a exportação:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Adicionando detecção de colisão a objetos"
+msgstr "Adicionando detecção de colisão a objetos."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Definindo objetos com malhas de navegação"
+msgstr "Definindo objetos como malhas de navegação."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
-"Excluindo nós que não são usados no motor do jogo (como luzes específicas "
-"usadas para modelagem)"
+"Excluindo nós que não são usados no motor de jogo (como luzes específicas "
+"usadas para modelagem)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -919,7 +917,7 @@ msgid ""
 msgstr ""
 "Para simplificar esse fluxo de trabalho, o Godot oferece alguns sufixos que "
 "podem ser adicionados aos nomes dos objetos em seu software de modelagem 3D. "
-"Quando importado, o Godot irá detectá-los e executar ações automaticamente:"
+"Quando importado, o Godot irá detectá-los e executar ações automaticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid "All the suffixes described below are *case-sensitive*."
@@ -1009,25 +1007,22 @@ msgstr ""
 "do tipo de desenho vazio do Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "Seta única criará um :ref:`class_rayshape`"
+msgstr "A seta única criará um :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:424
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "Cubo criará um :ref:`class_boxshape`"
+msgstr "O Cubo criará um :ref:`class_boxshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "Imagem criará um :ref:`class_planeshape`"
+msgstr "A imagem criará um :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:426
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "Esfera (e os outros não listados) criarão um :ref:`class_sphereshape`"
+msgstr ""
+"A Esfera (e os outros não listados) criará um :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:428
 msgid ""
@@ -1035,23 +1030,27 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"Quando possível, **tente usar algumas formas de colisão primitivas** ao "
+"invés de malhas triangulares ou formas convexas. As formas primitivas "
+"costumam ter o melhor desempenho e confiabilidade."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:434
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
 "**User Preferences > Themes > 3D View > Empty**."
 msgstr ""
-"Para uma melhor visibilidade no editor do Blender, o usuário pode definir a "
-"opção \"X-Ray\" em colisão vazias e definir alguma cor distinta para eles em "
-"User Preferences / Themes / 3D View / Empty."
+"Para uma melhor visibilidade no editor do Blender, você pode definir a opção "
+"\"X-Ray\" em colisão vazias e definir alguma cor distinta para elas em "
+"**Preferências do Usuário > Temas > 3D View > Vazio**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:440
 msgid ""
 "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
 "shapes."
 msgstr ""
+"Veja :ref:`doc_collision_shapes_3d` para uma visão abrangente das formas de "
+"colisão."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:444
 msgid "Create navigation (-navmesh)"

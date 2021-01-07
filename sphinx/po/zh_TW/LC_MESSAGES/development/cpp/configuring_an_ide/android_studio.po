@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:4
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android"
+msgstr "\\ Android Studio"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
 msgid ""
@@ -29,41 +28,49 @@ msgid ""
 "has a feature-rich editor which supports Java and C/C++. It can be used to "
 "work on Godot's core engine as well as the Android platform codebase."
 msgstr ""
+"`Android Studio <https://developer.android.com/studio>`_ 是用於 Android 開發"
+"的一個免費 `JetBrains <https://www.jetbrains.com/>`_ IDE。Android Studio 提供"
+"了支援 Java 與 C/C++ 的功能豐富的編輯器。使用 Android Studio 除了可以處理 "
+"Android 平台的程式碼外，還可以用來處理 Godot 核心引擎。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:12
 msgid "Importing the project"
-msgstr ""
+msgstr "匯入專案"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:14
 msgid ""
 "From the Android Studio's welcome window select **Open an existing Android "
 "Studio project**."
 msgstr ""
+"在 Android Studio 的歡迎視窗內選擇 **Open an existing Android Studio "
+"project** (開啟現有的 Android Studio 專案)。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Android"
+msgstr "Android Studio 的歡迎視窗。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
 "Navigate to ``<Godot root directory>/platform/android/java`` and select the "
 "``settings.gradle`` file."
 msgstr ""
+"前往 ``<Godot 根目錄>/platform/android/java`` 並選擇 ``settings.gradle`` 檔"
+"案。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:24
 msgid "Android Studio will import and index the project."
-msgstr ""
+msgstr "Android Studio 會匯入並對專案進行索引。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:25
 msgid ""
 "To build the project, follow the :ref:`compiling instructions <toc-devel-"
 "compiling>`."
-msgstr ""
+msgstr "若要建置專案，請參考 :ref:`編譯說明 <toc-devel-compiling>` 。"
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:27
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
-msgstr "也請參閱 `Godot 網站上的條款頁面 <https://godotengine.org/license>`_。"
+msgstr ""
+"若遇到任何問題，請在 `任何一個 Godot 的社群頻道 <https://godotengine.org/"
+"community>`__ 中尋求幫助。"

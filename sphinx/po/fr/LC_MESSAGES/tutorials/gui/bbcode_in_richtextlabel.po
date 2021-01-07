@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,6 @@ msgstr ""
 "paramètre BBCode."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:44
-#, fuzzy
 msgid ""
 "For BBCode tags such as ``[b]`` (bold), ``[i]`` (italics) or ``[code]`` to "
 "work, you must set up custom fonts for the RichTextLabel node first."
@@ -116,6 +115,8 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
+"Il n'y a pas encore de balises BBCode pour contrôler le centrage vertical du "
+"texte."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:50
 msgid "Reference"
@@ -192,6 +193,8 @@ msgstr "``[code]{texte}[/code]``"
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "Makes {text} use the code font (which is typically monospace)."
 msgstr ""
+"Fait utiliser la police du code (qui est généralement monospace) pour le "
+"{texte}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "**center**"
@@ -202,9 +205,8 @@ msgid "``[center]{text}[/center]``"
 msgstr "``[center]{texte}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
-#, fuzzy
 msgid "Makes {text} horizontally centered."
-msgstr "Centre le {texte}."
+msgstr "Centre le {texte} horizontalement."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "**right**"
@@ -215,9 +217,8 @@ msgid "``[right]{text}[/right]``"
 msgstr "``[right]{texte}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
-#, fuzzy
 msgid "Makes {text} horizontally right-aligned."
-msgstr "Aligne le {texte} à droite."
+msgstr "Aligne le {texte} horizontalement à droite."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "**fill**"
@@ -228,9 +229,8 @@ msgid "``[fill]{text}[/fill]``"
 msgstr "``[fill]{texte}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
-#, fuzzy
 msgid "Makes {text} fill the RichTextLabel's width."
-msgstr "Remplit la largeur avec le {texte}."
+msgstr "Remplit la largeur du RichTextLabel avec le {texte}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "**indent**"
@@ -241,7 +241,6 @@ msgid "``[indent]{text}[/indent]``"
 msgstr "``[indent]{texte}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
-#, fuzzy
 msgid "Increase the indentation level of {text}."
 msgstr "Augmente le niveau d’indentation du {texte}."
 
@@ -255,7 +254,7 @@ msgstr "``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "Show {url} as such, underline it and make it clickable."
-msgstr ""
+msgstr "Afficher {url} comme tel, la souligner et la rendre cliquable."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "**url (ref)**"
@@ -266,9 +265,8 @@ msgid "``[url=<url>]{text}[/url]``"
 msgstr "``[url=<url>]{texte}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
-#, fuzzy
 msgid "Makes {text} reference <url> (underlined and clickable)."
-msgstr "Fait pointer le {texte} vers l’<url>."
+msgstr "Fait pointer le {texte} vers l’<url> (souligné et cliquable)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "**image**"
@@ -302,9 +300,8 @@ msgid "``[img=<width>x<height>]{path}[/img]``"
 msgstr "``[img=<width>x<height>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
-#, fuzzy
 msgid "Insert image at resource {path} using <width>×<height>."
-msgstr "Insérer l'image à la ressource {path} en utilisant <width> & <height>."
+msgstr "Insère l'image à la ressource {path} en utilisant <width>×<height>."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "**font**"
@@ -329,11 +326,10 @@ msgid "``[color=<code/name>]{text}[/color]``"
 msgstr "``[color=<code/nom>]{texte}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
-#, fuzzy
 msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
 msgstr ""
-"Change la couleur d’un {texte}, utilise le format hexadécimal tel que "
-"#ff00ff ou un nom de couleur."
+"Change la couleur du {texte} ; utilise un nom ou le format #, tel que "
+"``#ff00ff``."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "**table**"

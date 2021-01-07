@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,6 @@ msgstr ""
 "型，OGG Vorbis声音等等。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:18
-#, fuzzy
 msgid ""
 "This tutorial will show you how to create a simple import plugin to load a "
 "custom text file as a material resource. This text file will contain three "
@@ -59,7 +58,8 @@ msgid ""
 msgstr ""
 "本教程将向您展示如何创建一个简单的导入插件，以将自定义文本文件作为材质资源加"
 "载。 此文本文件将包含由逗号分隔的三个数值，它表示颜色的三个通道，并且生成的颜"
-"色将用作导入材质的反照率(主颜色)。"
+"色将用作导入材质的反照率(主颜色)。在此示例中，它将包含纯蓝色（红色0，绿色0和"
+"满蓝色）："
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:30
 msgid "Configuration"
@@ -640,8 +640,8 @@ msgid ""
 "\"Reimport\". This will update the imported material and should "
 "automatically update the view showing the red color instead."
 msgstr ""
-"转到导入面板，启用``使用红色反正``选项，然后单击``重新导入``。 这将更新导入的"
-"材质，并应自动更新显示红色的视图。"
+"转到导入面板，启用“强制使用红色”选项，然后单击“重新导入”。 这将更新导入的材"
+"质，并应该自动更新显示红色的视图。"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:424
 msgid ""

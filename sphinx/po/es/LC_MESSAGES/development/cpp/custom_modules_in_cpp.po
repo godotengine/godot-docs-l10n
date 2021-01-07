@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "Módulos"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -516,12 +516,16 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:556
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
+"use la macro `` GDCLASS '' para la herencia, para que Godot pueda "
+"encapsularla"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:557
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
+"use `` _bind_methods '' para vincular sus funciones a secuencias de comandos "
+"y permitir que funcionen como devoluciones de llamada para señales."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:560
 msgid ""
@@ -535,15 +539,24 @@ msgid ""
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
+"Si hereda de: ref: `class_Node` (o cualquier tipo de nodo derivado, como "
+"Sprite), su nueva clase aparecerá en el editor, en el árbol de herencia en "
+"el cuadro de diálogo\" Agregar nodo \"."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:566
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
+"Si hereda de: ref: `class_Resource`, aparecerá en la lista de recursos y "
+"todas las propiedades expuestas se pueden serializar cuando se guardan / "
+"cargan."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:569
+#, fuzzy
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."
 msgstr ""
+"Con esta misma lógica, puede ampliar el Editor y casi cualquier área del "
+"motor."

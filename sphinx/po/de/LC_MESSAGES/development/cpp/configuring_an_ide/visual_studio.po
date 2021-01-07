@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,11 @@ msgid ""
 "commercial use. It has many useful features, such as memory view, "
 "performance view, source control and more."
 msgstr ""
+"`Visual Studio Community <https://visualstudio.microsoft.com>`__ ist eine "
+"reine Windows-IDE von `Microsoft <https://microsoft.com>`_, die für den "
+"nichtkommerziellen Gebrauch kostenlos ist. Es verfügt über viele nützliche "
+"Funktionen wie Speicheransicht, Leistungsansicht, Quellcodeverwaltung und "
+"mehr."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:12
 msgid "Importing the project"
@@ -38,16 +43,23 @@ msgid ""
 "Visual Studio requires a solution file to work on a project. While Godot "
 "does not come with the solution file, it can be generated using SCons."
 msgstr ""
+"Visual Studio benötigt eine solution datei, um an einem Projekt arbeiten zu "
+"können. Godot wird zwar nicht mit der solution datei geliefert, sie kann "
+"jedoch mit SCons generiert werden."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:17
 msgid ""
 "Navigate to the Godot root folder and open a Command Prompt or PowerShell "
 "window."
 msgstr ""
+"Navigieren Sie zum Godot-Wurzelordner und öffnen Sie eine "
+"Eingabeaufforderung oder ein PowerShell-Fenster."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:18
 msgid "Run ``scons platform=windows vsproj=yes`` to generate the solution."
 msgstr ""
+"Führen Sie ``scons platform=windows vsproj=yes`` aus, um die Lösung zu "
+"generieren."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:19
 msgid ""
@@ -55,16 +67,22 @@ msgid ""
 "project root or by using the **Open a project or solution** option inside of "
 "the Visual Studio."
 msgstr ""
+"Sie können das Projekt jetzt öffnen, indem Sie im Projektstamm auf ``godot."
+"sln`` doppelklicken oder die Option **Projekt oder Solution öffnen** in "
+"Visual Studio verwenden."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:21
 msgid "Use the **Build** top menu to build the project."
 msgstr ""
+"Verwenden Sie das Hauptmenü **Erstellen**, um das Projekt zu erstellen."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:23
 msgid ""
 "Visual Studio must be configured with the C++ package. It can be selected in "
 "the intaller:"
 msgstr ""
+"Visual Studio muss mit dem C ++ - Paket konfiguriert werden. Es kann im "
+"Intaller ausgewählt werden:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 msgid "Debugging the project"
@@ -76,6 +94,10 @@ msgid ""
 "Godot's source code, stop at specific points in the code, inspect the "
 "current execution context, and make live changes to the codebase."
 msgstr ""
+"Visual Studio verfügt über einen leistungsstarken Debugger. Auf diese Weise "
+"kann der Benutzer den Quellcode von Godot untersuchen, an bestimmten Stellen "
+"im Code anhalten, den aktuellen Ausführungskontext überprüfen und Live-"
+"Änderungen an der Codebasis vornehmen."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:36
 msgid ""
@@ -86,12 +108,20 @@ msgid ""
 "opens a project, the initial process is terminated and the debugger gets "
 "detached."
 msgstr ""
+"Sie können das Projekt mit dem angehängten Debugger über die Option **Debug "
+"> Debugging starten** im oberen Menü starten. Sofern Sie den Projektmanager "
+"nicht speziell debuggen möchten, müssen Sie zuerst die Debugging-Optionen "
+"konfigurieren. Dies liegt an der Tatsache, dass beim Öffnen eines Projekts "
+"durch den Godot-Projektmanager der anfängliche Prozess beendet und der "
+"Debugger getrennt wird."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:41
 msgid ""
 "To configure the launch options to use with the debugger use **Project > "
 "Properties** from the top menu:"
 msgstr ""
+"Um die Startoptionen für den Debugger zu konfigurieren, verwenden Sie "
+"**Projekt > Eigenschaften** im oberen Menü:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:47
 msgid ""
@@ -101,24 +131,36 @@ msgid ""
 "project (must be provided as an *absolute* path to the project root, not the "
 "``project.godot`` file)."
 msgstr ""
+"Öffnen Sie den Abschnitt **Debugging** und fügen Sie unter "
+"**Befehlsargumente** zwei neue Argumente hinzu: Das Flag ``-e`` öffnet den "
+"Editor anstelle des Projektmanagers, und das Argument ``--path`` öffnet das "
+"angegebenen Projekt (muss als *absoluter* Pfad zum Projektstamm angegeben "
+"werden, nicht als ``project.godot``-Datei)."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:55
 msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
 msgstr ""
+"Weitere Informationen zu Befehlszeilenargumenten finden Sie in der :ref:"
+"`Befehlszeilen-Anleitung <doc_command_line_tutorial>`."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:58
 msgid ""
 "Even if you start the project without a debugger attached it can still be "
 "connected to the running process using **Debug > Attach to Process...** menu."
 msgstr ""
+"Selbst wenn Sie das Projekt ohne angeschlossenen Debugger starten, kann es "
+"über das Menü **Debug > An Prozess anhängen ...** mit dem laufenden Prozess "
+"verbunden werden."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:61
 msgid ""
 "To check that everything is working, put a breakpoint in ``main.cpp`` and "
 "press :kbd:`F5` to start debugging."
 msgstr ""
+"Um zu überprüfen, ob alles funktioniert, setzen Sie einen Haltepunkt in "
+"``main.cpp`` und drücken Sie :kbd:`F5`, um das Debuggen zu starten."
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 msgid ""

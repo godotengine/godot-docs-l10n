@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,20 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:4
-#, fuzzy
 msgid "Logic preferences"
-msgstr "Смена текущей сцены"
+msgstr "Настройки логики"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:6
 msgid ""
 "Ever wondered whether one should approach problem X with strategy Y or Z? "
 "This article covers a variety of topics related to these dilemmas."
 msgstr ""
+"Вы когда-нибудь задумывались, следует ли подходить к проблеме X со "
+"стратегией Y или Z? В этой статье рассматриваются различные темы, связанные "
+"с этими дилеммами."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:10
-#, fuzzy
 msgid "Loading vs. preloading"
-msgstr "Загрузка сцен"
+msgstr "Загрузка и предварительная загрузка"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:12
 msgid ""
@@ -40,6 +41,10 @@ msgid ""
 "possible to front-load the \"loading\" operations and avoid loading "
 "resources while in the middle of performance-sensitive code."
 msgstr ""
+"В GDScript существует глобальный метод :ref:`preload <class_ @ "
+"GDScript_method_preload>`. Он загружает ресурсы как можно раньше, чтобы "
+"предварительно загрузить «загрузочные» операции и избежать загрузки ресурсов "
+"в середине кода, чувствительного к производительности."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
 msgid ""
@@ -50,12 +55,20 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
+"Его аналог, метод :ref:`load <class_ @ GDScript_method_load>`, загружает "
+"ресурс только тогда, когда он достигает оператора load. То есть он загрузит "
+"ресурс на месте, что может вызвать замедление, когда это произойдет в "
+"середине важных процессов. Функция load также является псевдонимом для :ref:"
+"`ResourceLoader.load (path) <class_ResourceLoader_method_load>`, который "
+"доступен для * всех * языков сценариев."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
 "So, when exactly does preloading occur versus loading, and when should one "
 "use either? Let's see an example:"
 msgstr ""
+"Итак, когда именно происходит предварительная загрузка во время загрузки и "
+"когда следует ее использовать? Посмотрим на пример:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:88
 msgid ""

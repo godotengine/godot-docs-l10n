@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,33 +18,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:4
-#, fuzzy
 msgid "Collision shapes (3D)"
-msgstr "Collision Shapes"
+msgstr "Kollisionsformen (3D)"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:6
-#, fuzzy
 msgid "This guide explains:"
-msgstr "Dies zeigt:"
+msgstr "Dieses Handbuch erklärt:"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:8
 msgid "The types of collision shapes available in 3D in Godot."
-msgstr ""
+msgstr "Die in 3D in Godot verfügbaren Kollisionsformen."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:9
 msgid "Using a convex or a concave mesh as a collision shape."
-msgstr ""
+msgstr "Verwendung eines konvexen oder konkaven Mesh als Kollisionsform."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:10
-#, fuzzy
 msgid "Performance considerations regarding 3D collisions."
-msgstr "Leistungs-Analyse Tools."
+msgstr "Leistungsüberlegungen zu 3D-Kollisionen."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:12
 msgid ""
 "Godot provides many kinds of collision shapes, with different performance "
 "and accuracy tradeoffs."
 msgstr ""
+"Godot bietet viele Arten von Kollisionsformen mit unterschiedlichen "
+"Kompromissen bei Leistung und Genauigkeit."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:15
 msgid ""
@@ -61,35 +60,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:26
-#, fuzzy
 msgid "Primitive collision shapes"
-msgstr "Collision-Shapes sichtbar"
+msgstr "einfache Kollisionsformen"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:28
-#, fuzzy
 msgid "Godot provides the following primitive collision shape types:"
-msgstr "Godot unterstützt die folgenden Bildformate:"
+msgstr "Godot bietet die folgenden einfachen Kollisionsformtypen:"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:30
-#, fuzzy
 msgid ":ref:`class_BoxShape`"
-msgstr ":ref:`Sprite <class_Sprite>`"
+msgstr ":ref:`class_BoxShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:31
-#, fuzzy
 msgid ":ref:`class_SphereShape`"
-msgstr ":ref:`CSG Sphere <class_CSGSphere>`"
+msgstr ":ref:`class_SphereShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:32
-#, fuzzy
 msgid ":ref:`class_CapsuleShape`"
-msgstr "9: :ref:`Plane<class_plane>`"
+msgstr ":ref:`class_CapsuleShape`"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
 msgid ""
 ":ref:`class_CylinderShape`. It is only available when using the Bullet "
 "physics engine."
 msgstr ""
+":ref:`class_CylinderShape`. Dies ist nur verfügbar, wenn die Geschoss-Physik-"
+"Engine verwendet wird."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:36
 msgid ""
@@ -98,6 +94,10 @@ msgid ""
 "a whole level, you may need convex or concave shapes instead. More on that "
 "below."
 msgstr ""
+"Sie können die Kollision der meisten kleineren Objekte mit einer oder "
+"mehreren einfachen Formen darstellen. Für komplexere Objekte wie ein großes "
+"Schiff oder eine ganze Ebene benötigen Sie möglicherweise stattdessen "
+"konvexe oder konkave Formen. Mehr dazu weiter unten."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:40
 msgid ""
@@ -105,11 +105,13 @@ msgid ""
 "RigidBodies and KinematicBodies as their behavior is the most reliable. They "
 "often provide better performance as well."
 msgstr ""
+"Wir empfehlen einfache Formen für dynamische Objekte wie RigidBodies und "
+"KinematicBodies zu bevorzugen, da deren Verhalten am zuverlässigsten ist. "
+"Sie bieten oft auch eine bessere Leistung."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:45
-#, fuzzy
 msgid "Convex collision shapes"
-msgstr "Collision Shapes"
+msgstr "Konvexe Kollisionsformen"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:47
 msgid ""
@@ -157,9 +159,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:77
-#, fuzzy
 msgid "Concave or trimesh collision shapes"
-msgstr "Collision Shapes"
+msgstr "Konkave oder Drei-Mesh Kollisionsformen"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:79
 msgid ""
@@ -237,9 +238,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
-#, fuzzy
 msgid "Performance caveats"
-msgstr "Leistung"
+msgstr "Leistungseinschränkungen"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:131
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,6 @@ msgid "Player scene"
 msgstr "Playerシーン"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
@@ -880,15 +879,15 @@ msgid "Main scene"
 msgstr "Mainシーン"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
-"さあ、すべてをまとめましょう。 新しいシーンを作成し、 ``Main`` という名前の"
-"\\ :ref:`Node <class_Node>`\\ を追加します。 「インスタンス」ボタンをクリック"
-"して、保存した ``Player.tscn`` を選択します。"
+"さあ、すべてをまとめましょう。 新しいシーンを作成し、 ``Main`` という名前の :"
+"ref:`Node <class_Node>` を追加します。 Node2D **ではなく** 、Nodeを作成してい"
+"ることを確認してください。「インスタンス」ボタンをクリックして、保存した "
+"``Player.tscn`` を選択します。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
@@ -970,7 +969,6 @@ msgstr ""
 "部にいくつかの新しいボタンが表示されます:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -978,11 +976,10 @@ msgid ""
 "be found to the left of the \"Lock\" button, appearing as a magnet next to "
 "some dots and intersecting lines, respectively."
 msgstr ""
-"中央のアイコン([点を空きスペースに追加])を選択し、表示されているコーナーをク"
-"リックしてポイントを追加してパスを描画します。ポイントをグリッドにスナップす"
-"るには、[グリッドスナップを使う]が選択されていることを確認します。このオプ"
-"ションは、[ロック]ボタンの左側にあり、「交差する線と磁石」のアイコンで表示さ"
-"れています。"
+"中央のアイコン([点を追加])を選択し、表示されているコーナーをクリックしてポイ"
+"ントを追加してパスを描画します。ポイントをグリッドにスナップするには、[グリッ"
+"ドスナップを使う]が選択されていることを確認します。このオプションは、[ロック]"
+"ボタンの左側にあり、「交差する線と磁石」のアイコンで表示されています。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""

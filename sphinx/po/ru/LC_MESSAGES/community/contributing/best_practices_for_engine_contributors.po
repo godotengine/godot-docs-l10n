@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:4
 msgid "Best practices for engine contributors"
-msgstr ""
+msgstr "Правила и рекоммендации для разработчиков движка"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 msgid "Introduction"
@@ -34,6 +34,11 @@ msgid ""
 "common misunderstandings and bad practices during the process of "
 "contributing code to the project."
 msgstr ""
+"Godot имеет большое количество пользователей, способных участвовать в "
+"разработке движка, так как сам проект в основном нацелен на пользователей "
+"умеющих программировать. Несмотря на это, не все из них имеют опыт работы "
+"над крупными проектами, что может привести к распространенным недоразумениям "
+"и плохой практической реализации добавляемого в проект кода."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
@@ -46,6 +51,10 @@ msgid ""
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
+"Этот документ создан чтобы дать разработчикам список эталонных примеров "
+"которым они должны следовать, а так же для того, чтобы определиться с "
+"набором терминов для обозначения типичных ситуаций, которые возникают в "
+"процессе публикации их доработок."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:22
 msgid ""
@@ -53,6 +62,9 @@ msgid ""
 "development, our intention is to just restrict to situations that are most "
 "common in our project."
 msgstr ""
+"Многим может показаться полезным распространить правила изложенные здесь на "
+"разработку ПО в общем, но наша цель - покрыть только те ситуации, которые "
+"наиболее распространены в нашем проекте."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:26
 msgid ""
@@ -60,14 +72,19 @@ msgid ""
 "new features. To abstract this idea, we will call them *Solutions*, because "
 "they always seek to solve something that can be described as a *Problem*."
 msgstr ""
+"Доработки, в большинстве своём, можно классифицировать как: исправления "
+"ошибок (багфиксы), улучшения (доработки) или добавление новых функций. Чтобы "
+"абстрагироваться от этой классификации мы будем называть все доработки "
+"*Решениями*, потому что они всегда нацелены на решение чего-то "
+"определённого, того, что можно назвать *Проблемой*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
 msgid "Best Practices"
-msgstr "Лучшие практики"
+msgstr "Правила работы"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: Сначала проблема"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -76,6 +93,11 @@ msgid ""
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may not be actually solving any actual problems."
 msgstr ""
+"Многие участники невероятно креативны и им просто нравится процесс "
+"проектирования абстрактных структур данных, создания приятных "
+"пользовательских интерфейсов или они просто любят программировать, но часто "
+"они придумывают крутые идеи, которые на самом деле не решают реальных "
+"проблем."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:43
 msgid ""
@@ -85,16 +107,23 @@ msgid ""
 "Avoiding the addition of anything unnecessary is always considered a good "
 "practice in software development."
 msgstr ""
+"Такой подход можно назвать *Поиском проблемы для готового решения*. В "
+"идеальном мире такие решения не вредят проекту, но в реальности код требует "
+"времени на написание, занимает место в исходниках и бинарной версии "
+"редактора, плюс ко всему, его нужно поддерживать. Избегание добавления "
+"ненужных вещей всегда считается хорошим примером в разработке ПО."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr ""
+msgstr "#2: Чтобы решить проблему, сначала убедитесь в её существовании"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
 "This is a variation of the previous practice. Adding anything unnecessary is "
 "not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
+"Это вариация предыдущего пункта. Добавление чего-то необязательного это "
+"плохая идея, но что значит \"обязательный\" и что таковым не является?"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
 msgid ""
@@ -105,6 +134,12 @@ msgid ""
 "to proceed, or in order to achieve greater productivity. In this case, *a "
 "solution is needed*."
 msgstr ""
+"Ответ на этот вопрос - проблема должна *существовать* чтобы быть решённой. "
+"Проблема не должна быть предположением или убеждением. Пользователь "
+"использует софт для того, чтобы создать то, что ему *нужно*, в этом процессе "
+"он может упереться в проблему редактора, которая требует решения для того "
+"чтобы пользователь мог продолжить, или ему может потребоваться бóльшая "
+"производительность. В этом случае *решение необходимо*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:63
 msgid ""
@@ -112,14 +147,18 @@ msgid ""
 "to be ready to solve them by the time they appear is called *\"Future "
 "proofing\"* and its characterized by lines of thought such as:"
 msgstr ""
+"Подход к разработке основанный на вере в то, что проблемы могут возникнуть в "
+"любой момент и программа должна быть готова их решить к тому моменту когда "
+"они появятся - называется *\"Разработкой на перспективу\"* и характеризуется "
+"такими идеями как:"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:67
 msgid "I think it would be useful for users to..."
-msgstr ""
+msgstr "Я думаю, в будущем, пользователям может быть полезно..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
 msgid "I think users will eventually need to..."
-msgstr ""
+msgstr "Думаю, пользователям в конечном итоге понадобится..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
 msgid ""
@@ -128,10 +167,15 @@ msgid ""
 "be written but never used, or that is considerably more complex to use and "
 "maintain than it needs to be."
 msgstr ""
+"Как правило, это считается плохой привычкой, потому что попытка решить "
+"проблемы которых *на самом деле не существует* в настоящем, с большой "
+"вероятностью приведёт к тому что написанный код никогда не будет использован "
+"в будущем, или к тому что его поддержка и использование окажутся гораздо "
+"сложнее, чем предполагалось."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
-msgstr ""
+msgstr "#3: Проблема должна быть сложной или частой"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
@@ -140,21 +184,29 @@ msgid ""
 "solve problems for you, so it helps you to make games better and faster, but "
 "it won't make the *entire game* for you. A line must be drawn somewhere."
 msgstr ""
+"Программа разрабатывается для того чтобы решать проблемы, но мы не можем "
+"ожидать от неё решения *каждой проблемы которая существует во вселенной*. "
+"Как игровой движок - Godot будет решать проблемы, связанные с созданием игр, "
+"это значит что он может помочь вам делать игры лучше и быстрее, но это не "
+"значит что он сделает за вас *всю игру целиком*. Где-то должна быть "
+"проведена ограничительная черта."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:85
 msgid ""
 "Whether a problem is worth solving is determined by the difficulty the user "
 "has to work around it. This difficulty can be expressed as:"
 msgstr ""
+"Ответ на вопрос: \"Cтоит ли решать проблему?\" будет зависеть от того, "
+"насколько сложно пользователю её обойти. Эта сложность может быть выражена "
+"как:"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
-#, fuzzy
 msgid "The complexity of the problem"
-msgstr "Роль сценария"
+msgstr "Сложность проблемы"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
-msgstr ""
+msgstr "Частота возникновения проблемы"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""
@@ -163,6 +215,9 @@ msgid ""
 "user to workaround, offering such a solution is unnecessary and it's up to "
 "the user to do it."
 msgstr ""
+"Если проблема *слишком сложна* для большинства пользователей, софт должен "
+"предложить готовое решение для неё. Аналогично, если проблема достаточно "
+"проста и пользователь может её обойти - предлагать решение необязательно."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:96
 msgid ""
@@ -171,6 +226,10 @@ msgid ""
 "an annoyance. In this case, the software must offer a solution to simplify "
 "this use case."
 msgstr ""
+"Исключением из этого правила будет проблема с которой пользователь "
+"сталкивается *достаточно часто* и необходимость каждый раз решать её "
+"становится раздражающей. В этом случае, прогамма должна предложить решение "
+"для того чтобы упростить эту область её использования."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:100
 msgid ""
@@ -179,10 +238,14 @@ msgid ""
 "difficult. This is why discussing with other developers (next point) is "
 "always advised."
 msgstr ""
+"Если судить по нашему опыту, в большинстве случаев крайне просто определить, "
+"является ли проблема сложной или частой, но случаи, когда эту линию провести "
+"сложно - тоже могут встречаться. Именно поэтому общение с другими "
+"разработчиками (следующий пункт) крайне рекоммендуется."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
-msgstr ""
+msgstr "#4: Решение должно быть обсуждено с другими"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""

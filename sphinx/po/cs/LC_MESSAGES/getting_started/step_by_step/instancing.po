@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Instancing (vytváření instancí)"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
-msgstr "Představení"
+msgstr "Úvod"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -79,7 +79,7 @@ msgid ""
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
 "Chcete-li se dozvědět, jak funguje vytváření instancí, začněte stažením "
-"ukázkového projektu:: download: `instancing.zip <files / instancing.zip>`."
+"ukázkového projektu: :download:`instancing.zip <files / instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
@@ -151,8 +151,8 @@ msgid ""
 "kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
 msgstr ""
 "Do scény můžete přidat libovolný počet instancí, buď opětovným použitím "
-"tlačítka „Instance“ nebo kliknutím na instanci míčku a stisknutím: kbd: "
-"`Ctrl + D`(: kbd:` Cmd + D` on MacOS) pro duplikování:"
+"tlačítka „Instance“ nebo kliknutím na instanci míčku a stisknutím :kbd:`Ctrl "
+"+ D`(: kbd:` Cmd + D` on MacOS) pro duplikování:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -181,7 +181,6 @@ msgstr ""
 "uložené scéně Ball, změny této scény ovlivní všechny její instance."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,12 +19,13 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
 msgid "List of features"
-msgstr "Liste der Features (Eigenschaften, Merkmale)"
+msgstr "Liste der Eigenschaften und Merkmale"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
 msgstr ""
-"Diese Seite zeigt alle Features die aktuell von Godot unterstützt werden."
+"Diese Seite zeigt alle Eigenschaften und Merkmale (Features) die aktuell von "
+"Godot unterstützt werden."
 
 #: ../../docs/about/list_of_features.rst:10
 msgid ""
@@ -39,7 +40,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
-msgstr "Eigenschaften"
+msgstr "Eigenschaften und Merkmale"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
@@ -522,12 +523,12 @@ msgstr "**Globale Beleuchtung mit indirekter Beleuchtung:**"
 #: ../../docs/about/list_of_features.rst:185
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
-"indirektes Lichtschema (schnell, kann aber während der Laufzeit nicht "
+"Gebrannte LightMaps (schnell, kann aber während der Laufzeit nicht "
 "aktualisiert werden)."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr "Lichtschema werden auf der CPU indirekt berechnet."
+msgstr "LightMaps werden auf der CPU eingebrannt."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
@@ -1100,9 +1101,8 @@ msgstr ""
 "Einstellungen der Maus des Betriebssystems zu umgehen."
 
 #: ../../docs/about/list_of_features.rst:401
-#, fuzzy
 msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "Gamepad Einagbe (bis zu 8 gleichzeitige Controller)."
+msgstr "Gamepad Eingabe (bis zu 8 Controller gleichzeitig)."
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."

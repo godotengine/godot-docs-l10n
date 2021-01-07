@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -442,7 +442,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Normal mapping."
-msgstr "Normal mapping."
+msgstr "Обычная карта."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid ""
@@ -502,12 +502,11 @@ msgstr ""
 "сегментный. Поддерживает смешивание между разделениями."
 
 #: ../../docs/about/list_of_features.rst:179
-#, fuzzy
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
-"*OmniLight:* Двойной параболоид (быстрый) или кубическая карта (медленнее, "
+"* OmniLight: * Двойной параболоид (быстрый) или кубическая карта (медленнее, "
 "но точнее). Поддерживает цветные текстуры проектора в виде панорам."
 
 #: ../../docs/about/list_of_features.rst:181
@@ -639,10 +638,9 @@ msgstr ""
 "Replace(Заменить)."
 
 #: ../../docs/about/list_of_features.rst:225
-#, fuzzy
 msgid "Color correction using an one-dimensional ramp."
 msgstr ""
-"Коррекция света с использованием одномерной рамп-функции (линейно-временной "
+"Коррекция цвета с использованием одномерной рамп-функции (линейно-временной "
 "функции)."
 
 #: ../../docs/about/list_of_features.rst:226
@@ -949,7 +947,6 @@ msgid "Mono, stereo, 5.1 and 7.1 output."
 msgstr "Выход моно, стерео, 5.1 и 7.1."
 
 #: ../../docs/about/list_of_features.rst:343
-#, fuzzy
 msgid "Non-positional and positional playback in 2D and 3D."
 msgstr "Непозиционное и позиционное воспроизведение в 2D и 3D."
 
@@ -958,13 +955,12 @@ msgid "Optional Doppler effect in 2D and 3D."
 msgstr "Дополнительный эффект Доплера в 2D и 3D."
 
 #: ../../docs/about/list_of_features.rst:347
-#, fuzzy
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
-"Поддержка для маршрутизируемых :ref:`звуковых шин <doc_audio_buses>` и "
-"эффектов."
+"Поддержка перенаправляемых :ref:`audio buses <doc_audio_buses>` и эффектов с "
+"десятком внесенных изменений."
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
@@ -1014,9 +1010,8 @@ msgid "**Formats:**"
 msgstr "**Форматы:**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "*Изображения:* Cмотрите :ref:`doc_importing_images_supported_formats`."
+msgstr "*Изображения:* Cмотреть :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 msgid "*Audio:*"
@@ -1093,6 +1088,8 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Клавиши могут быть назначены в \"физическом\" режиме, для независимости от "
+"раскладки клавиатуры."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
@@ -1115,9 +1112,8 @@ msgstr ""
 "чтобы обойти настройки ускорения мыши ОС."
 
 #: ../../docs/about/list_of_features.rst:401
-#, fuzzy
 msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr "Геймпад-вход (до 8 симуляторных контроллеров)."
+msgstr "Геймпад-вход (до 8 контроллеров одновременно)."
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."
@@ -1231,7 +1227,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:443
 msgid "Windowing and OS integration"
-msgstr "Использование окон и интеграция в ОС"
+msgstr "Окна и интеграция в ОС"
 
 #: ../../docs/about/list_of_features.rst:445
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
@@ -1412,17 +1408,19 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:498
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ":ref:`Stack <class_BoxContainer>` layouts."
+msgstr ":ref:`Stack <class_BoxContainer>`-компоновка."
 
 #: ../../docs/about/list_of_features.rst:499
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`Grid <class_GridContainer>` layouts."
+msgstr ":ref:`Grid <class_GridContainer>`-компоновка."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 msgstr ""
+":ref:`Margin <class_MarginContainer>` и :ref:`centered "
+"<class_CenterContainer>`-компоновка."
 
 #: ../../docs/about/list_of_features.rst:502
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
@@ -1618,15 +1616,14 @@ msgstr ""
 "использованием GCC, Clang и MSVC. Также поддерживается MinGW."
 
 #: ../../docs/about/list_of_features.rst:571
-#, fuzzy
 msgid ""
 "Friendly towards packagers. In most cases, system libraries can be used "
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
-"Дружелюбно по отношению к упаковщикам: в большинстве случаев можно "
-"использовать системные библиотеки вместо предоставленных Godot. Система "
-"сборки ничего не скачивает. Сборки могут быть полностью воспроизводимыми."
+"Дружелюбно относится к упаковщикам. В большинстве случаев можно использовать "
+"системные библиотеки вместо тех, которые предоставляет Godot. Система сборки "
+"ничего не загружает. Сборки могут быть полностью воспроизводимыми."
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Godot 4.0 will be written in C++17."

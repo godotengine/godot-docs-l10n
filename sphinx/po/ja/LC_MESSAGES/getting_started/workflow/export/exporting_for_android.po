@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,42 +34,69 @@ msgid "Download the Android SDK"
 msgstr "Android SDKをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
+#, fuzzy
+msgid "Download and install the Android SDK."
+msgstr "Android Studioのダウンロードとインストール"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
+#, fuzzy
 msgid ""
-"Download and install the Android SDK from `developer.android.com <https://"
-"developer.android.com/studio/>`__."
+"You can install it using `Android Studio <https://developer.android.com/"
+"studio/>`__."
 msgstr ""
 "`developer.android.com <https://developer.android.com/studio/>`__ から"
 "Android SDKをダウンロードしてインストールします。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:15
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
-"If you install Android Studio, you need to run it once to complete the SDK "
-"setup."
+"Run it once to complete the SDK setup using these `instructions <https://"
+"developer.android.com/studio/intro/update#sdk-manager>`__."
 msgstr ""
-"Android Studioをインストールする場合、SDKのセットアップを完了するために1回実"
-"行する必要があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
+msgid ""
+"Ensure that the `required packages <https://developer.android.com/studio/"
+"intro/update#recommended>`__ are installed as well."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 #, fuzzy
-msgid "Install OpenJDK 8"
+msgid ""
+"You can install it using the `command line tools <https://developer.android."
+"com/studio/#command-tools>`__."
+msgstr ""
+"それでも失敗する場合は、コマンドラインを開き、\\ `logcat <https://developer."
+"android.com/studio/command-line/logcat>`_を実行します。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
+msgid ""
+"Once the command line tools are installed, run the `sdkmanager <https://"
+"developer.android.com/studio/command-line/sdkmanager>`__ command to complete "
+"the setup process:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
+#, fuzzy
+msgid "Install OpenJDK"
 msgstr "JDKのインストール"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:30
 msgid ""
-"Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, newer versions do not work."
+"Download and install  `OpenJDK <https://adoptopenjdk.net/index.html>`__."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:33
 msgid "Create a debug.keystore"
 msgstr "デバッグキーストアを作成する"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:35
+#, fuzzy
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
-"or eclipse probably generated one for you (on Linux and macOS, you can find "
-"it in the ``~/.android`` directory)."
+"or eclipse probably generated one for you (in the ``~/.android`` directory "
+"on Linux and macOS, in the ``C:\\Users\\<user>\\.android\\`` directory on "
+"Windows)."
 msgstr ""
 "Androidでは、デバイスにインストールし、リリースされていないAPKを配布するため"
 "のデバッグキーストアファイルが必要です。以前にSDKを使用してプロジェクトをビル"
@@ -77,7 +104,7 @@ msgstr ""
 "性があります(LinuxとmacOSの場合、\\ ``~/.android``\\ ディレクトリに見つけるこ"
 "とができます)。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:31
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
@@ -85,7 +112,7 @@ msgstr ""
 "見つからない場合や生成する必要がある場合は、JDKのkeytoolコマンドをこの目的に"
 "使用できます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\.android"
@@ -99,27 +126,11 @@ msgstr ""
 "は、\\ `このQ&A記事 <https://godotengine.org/qa/21349/jdk-android-file-"
 "missing>`__ を参照してください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:39
-msgid "Make sure you have adb"
-msgstr "アンドロイドデバッグブリッジ(adb)を持っていることを確認します"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:41
-msgid ""
-"Android Debug Bridge (``adb``) is the command line tool used to communicate "
-"with Android devices. It's installed with the SDK, but you may need to "
-"install one (any) of the Android API levels for it to be installed in the "
-"SDK directory."
-msgstr ""
-"Androidデバッグブリッジ(``adb``) は、Androidデバイスとの通信に使用されるコマ"
-"ンドラインツールです。 SDKと共にインストールされますが、SDKディレクトリにイン"
-"ストールするためにAndroid APIレベルのいずれか1つ(任意)をインストールする必要"
-"があります。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
 msgid "Setting it up in Godot"
 msgstr "Godotで設定する"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:50
 #, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
@@ -128,37 +139,23 @@ msgstr ""
 "[エディタ設定]画面に入力します。この画面には、コンピュータのユーザー アカウン"
 "トのエディタ設定が含まれます (プロジェクトから独立しています)。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:54
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:56
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr "Androidの設定が配置されているセクションまで下にスクロールします:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
-msgid "In that screen, the path to 3 files needs to be set:"
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
+#, fuzzy
+msgid "In that screen, 2 paths need to be set:"
 msgstr "この画面では、3つのファイルへのパスを設定する必要があります:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:62
 msgid ""
-"The ``adb`` executable (``adb.exe`` on Windows) - It can usually be found at "
-"``%LOCALAPPDATA%\\Android\\Sdk\\platform-tools\\adb.exe``."
+"The ``Android Sdk Path`` should be the location where the Android SDK was "
+"installed. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/"
+"Users/$USER/Library/Android/sdk/`` on macOS."
 msgstr ""
-"``adb`` 実行可能ファイル(Windowsでは ``adb.exe``) - 通常は ``%LOCALAPPDATA%"
-"\\Android\\Sdk\\platform-tools\\adb.exe`` にあります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:63
-#, fuzzy
-msgid ""
-"The ``jarsigner`` executable (from JDK 6 or 8) - On Windows, OpenJDK "
-"installs to a directory like ``%PROGRAMFILES%\\AdoptOpenJDK\\jdk-8.0.252.09-"
-"hotspot\\bin``. On Linux, it typically installs to a directory like ``/usr/"
-"bin/jarsigner``. The exact path may vary depending on the OpenJDK update "
-"you've installed and your machine's operating system."
-msgstr ""
-"``jarsigner`` 実行可能ファイル(JDK 6または8から) - Windowsでは、OpenJDKは ``"
-"%PROGRAMFILES%\\ojdkbuild\\java-1.8.0-openjdk-1.8.0.232-2\\bin`` のようなディ"
-"レクトリにインストールされます。正確なパスは、インストールしたOpenJDKアップ"
-"デートによって異なる場合があります。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:65
 msgid ""
 "The debug ``.keystore`` file - It can be found in the folder where you put "
 "the ``debug.keystore`` file you created above."
@@ -166,15 +163,15 @@ msgstr ""
 "デバック ``.keystore``ファイル - 上記で作成した ``debug.keystore`` ファイルを"
 "置いたフォルダにあります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:69
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "設定が完了すれば、Androidにエクスポートできるようになります!"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:72
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:71
 msgid "Providing launcher icons"
 msgstr "ランチャーアイコンの提供"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
 "Launcher icons are used by Android launcher apps to represent your "
 "application to users. Godot only requires high-resolution icons (for "
@@ -185,11 +182,11 @@ msgstr ""
 "すために使用されます。 Godotは高解像度アイコン(``xxxhdpi`` 密度画面用)のみを"
 "必要とし、低解像度のバリアントを自動的に生成します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
 msgid "There are two types of icons required by Godot:"
 msgstr "Godotに必要なアイコンには2つのタイプがあります:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 #, fuzzy
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
@@ -198,7 +195,7 @@ msgstr ""
 "**Main Icon**: 『クラシック版』のアイコン。これはAndroid 8 (Oreo) 未満の全"
 "Androidバージョンにて使用されます。最低でも 192x192 ピクセルが必要。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
 "**Adaptive Icons:** Starting from Android 8 (inclusive), `Adaptive Icons "
 "<https://developer.android.com/guide/practices/ui_guidelines/"
@@ -214,7 +211,7 @@ msgstr ""
 "ングは、ランチャーによってコントロールされます。最低でも 432x432 ピクセルが必"
 "要。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid ""
 "It's important to adhere to some rules when designing adaptive icons. "
 "`Google Design has provided a nice article <https://medium.com/google-design/"
@@ -226,7 +223,7 @@ msgstr ""
 "する\\ `すばらしい記事を公開 <https://medium.com/google-design/designing-"
 "adaptive-icons-515af294c783>`_ (英語)しています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 #, fuzzy
 msgid ""
 "The most important adaptive icon design rule is to have your icon critical "
@@ -238,7 +235,7 @@ msgstr ""
 "す。セーフゾーンは中心から半径 66dp (``xxxhdpi``\\ で264ピクセル) の円形で"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:85
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
@@ -246,14 +243,14 @@ msgstr ""
 "もし要求されるアイコンを指定しなかった場合、Godotは失敗するたびにフォールバッ"
 "ク チェーンから次のものを試し、置き換えます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
 msgstr ""
 "**Main Icon:** 指定されたメイン アイコン -> プロジェクト アイコン -> デフォル"
 "トのGodotメインアイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
 msgid ""
 "**Adaptive Icon Foreground:** Provided foreground icon -> Provided main icon "
 "-> Project icon -> Default Godot foreground icon."
@@ -261,7 +258,7 @@ msgstr ""
 "**Adaptive Icon Foreground:** 指定された前面アイコン -> 指定されたメイン アイ"
 "コン -> プロジェクト アイコン -> デフォルトのGodot前面アイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:88
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
@@ -269,7 +266,7 @@ msgstr ""
 "**Adaptive Icon Background:** 指定された背景アイコン -> デフォルトのGodot背景"
 "アイコン。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:91
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
 #, fuzzy
 msgid ""
 "It's highly recommended to provide all requested icons, and at least with "
@@ -280,11 +277,11 @@ msgstr ""
 "奨します。それがAndroidの全デバイスおよび全バージョンで、あなたのアプリケー"
 "ションが良く見えるようにする唯一の方法です。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:93
 msgid "Exporting for Google Play Store"
 msgstr "Google Playストア用にエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:95
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
@@ -293,7 +290,7 @@ msgstr ""
 "ルを使用して署名する必要があります。このようなファイルは次のように生成できま"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:103
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
 msgid ""
 "This keystore and key are used to verify your developer identity, remember "
 "the password and keep it in a safe place! Use Google's Android Developer "
@@ -305,19 +302,19 @@ msgstr ""
 "て、\\ `APK 署名 <https://developer.android.com/studio/publish/app-"
 "signing>`_ の詳細をご覧ください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:105
 msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "次に、Android エクスポートプリセットで次のフォームに入力します:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:109
 msgid "**Release:** Enter the path to the keystore file you just generated."
 msgstr "**Release:** 生成したばかりのキーストアファイルへのパスを入力します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:110
 msgid "**Release User:** Replace with the key alias."
 msgstr "**Release User:** キーエイリアスで置き換えます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:111
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
@@ -325,7 +322,7 @@ msgstr ""
 "**Release Password:** キーパスワード。現在、キーストアのパスワードとキーのパ"
 "スワードは同じでなければならないことに注意してください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:113
 msgid ""
 "**Your export_presets.cfg file now contains sensitive information.** If you "
 "use a version control system, you should remove it from public repositories "
@@ -335,7 +332,7 @@ msgstr ""
 "ジョン管理システムを使用する場合は、パブリックリポジトリから削除し、 ``."
 "gitignore`` ファイルまたは同等のファイルに追加する必要があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:117
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while choosing "
 "the APK's name."
@@ -343,11 +340,11 @@ msgstr ""
 "APKの名前を選択する際は、[** Export with Debug **]チェックボックスをオフにす"
 "ることを忘れないでください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
 msgid "Optimizing the APK size"
 msgstr "APKサイズの最適化"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid ""
 "By default, the APK will contain native libraries for both ARMv7 and ARMv8 "
 "architectures. This increases its size significantly. To create a smaller "
@@ -363,7 +360,7 @@ msgstr ""
 "テクチャのライブラリのみを含むAPKが作成されます。 ARMv7をターゲットとするアプ"
 "リケーションはARMv8デバイスでも実行できますが、その逆は当てはまりません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:132
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:131
 msgid ""
 "Since August 2019, Google Play requires all applications to be available in "
 "64-bit form. This means you cannot upload an APK that contains *just* an "
@@ -381,7 +378,7 @@ msgstr ""
 "クチャをターゲットにする必要があります。通常、ARMv7およびARMv8用のAPKを作成す"
 "るだけで、現在使用されているほとんどのデバイスをカバーできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:139
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:138
 msgid ""
 "You can optimize the size further by compiling an Android export template "
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "

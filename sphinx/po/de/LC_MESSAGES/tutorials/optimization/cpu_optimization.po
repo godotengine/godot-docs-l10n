@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU optimization"
 msgstr "CPU-Optimierungen"
 
@@ -63,7 +62,6 @@ msgstr ""
 "herauszufinden wie viel Zeit in jeder Funktion verbracht wird."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:24
-#, fuzzy
 msgid ""
 "The Godot IDE conveniently has a built-in profiler. It does not run every "
 "time you start your project: it must be manually started and stopped. This "
@@ -82,9 +80,8 @@ msgstr ""
 "eines Frames ansehen."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:35
-#, fuzzy
 msgid "Results of a profile of one of the demo projects."
-msgstr "`Dies sind die Ergebnisse eines Profils eines der Demo-Projekte.`"
+msgstr "Dies sind die Ergebnisse eines Profils eines der Demo-Projekte."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:37
 msgid ""
@@ -99,6 +96,8 @@ msgid ""
 "Time spent waiting for various built-in servers may not be counted in the "
 "profilers. This is a known bug."
 msgstr ""
+"Die Wartezeit auf verschiedene integrierte Server wird in den Profilern "
+"möglicherweise nicht berücksichtigt. Dies ist ein bekannter Fehler."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:44
 msgid ""
@@ -112,7 +111,6 @@ msgstr ""
 "normalerweise erhöhen, indem Sie diesen Bereich optimieren."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:48
-#, fuzzy
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
 "`doc_debugger_panel`."
@@ -142,6 +140,12 @@ msgid ""
 "<https://visualstudio.microsoft.com/>`__ and `Intel VTune <https://software."
 "intel.com/content/www/us/en/develop/tools/vtune-profiler.html>`__."
 msgstr ""
+"Sie können dazu eine Reihe von Profilern von Drittanbietern verwenden, "
+"darunter `Valgrind <https://www.valgrind.org/>`__, `VerySleepy <http://www."
+"codersnotes.com/sleepy/>`__, `HotSpot <https://github.com/KDAB/hotspot>`__, "
+"`Visual Studio <https://visualstudio.microsoft.com/>`__ und `Intel VTune "
+"<https://software.intel.com/content/www/us/en/develop/tools/vtune-profiler."
+"html>`__."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:64
 #, fuzzy
@@ -163,11 +167,10 @@ msgstr ""
 "Möglichkeit Release-Builds untersuchen."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:74
-#, fuzzy
 msgid "Example results from Callgrind, which is part of Valgrind."
 msgstr ""
-"`Dies sind Beispielergebnisse von Callgrind, einem Teil von Valgrind, unter "
-"Linux.`"
+"Dies sind Beispielergebnisse von Callgrind, einem Teil von Valgrind, unter "
+"Linux."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:76
 msgid ""
@@ -228,7 +231,6 @@ msgid "Manually timing functions"
 msgstr "Manuelle Timing-Funktionen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:101
-#, fuzzy
 msgid ""
 "Another handy technique, especially once you have identified the bottleneck "
 "using a profiler, is to manually time the function or area under test. The "
@@ -334,24 +336,23 @@ msgstr ""
 "optimal und die CPU kann so schnell wie möglich arbeiten."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:154
-#, fuzzy
 msgid ""
 "Godot usually takes care of such low-level details for you. For example, the "
 "Server APIs make sure data is optimized for caching already for things like "
 "rendering and physics. Still, you should be especially aware of caching when "
 "using :ref:`GDNative <toc-tutorials-gdnative>`."
 msgstr ""
-"Godot kümmert sich normalerweise um solche Details auf niedriger Ebene für "
+"Godot kümmert sich normalerweise um solche Details auf unterster Ebene für "
 "Sie. Beispielsweise stellen die Server-APIs sicher, dass Daten für das "
 "Caching bereits für Dinge wie Rendering und Physik optimiert sind. Bei der "
-"Verwendung von GDNative sollten Sie jedoch besonders auf das Caching achten."
+"Verwendung von :ref:`GDNative <toc-tutorials-gdnative>` sollten Sie jedoch "
+"besonders auf das Caching achten."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:160
 msgid "Languages"
 msgstr "Sprachen"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:162
-#, fuzzy
 msgid ""
 "Godot supports a number of different languages, and it is worth bearing in "
 "mind that there are trade-offs involved. Some languages are designed for "
@@ -359,9 +360,9 @@ msgid ""
 "to work with."
 msgstr ""
 "Godot unterstützt eine Reihe verschiedener Sprachen und es ist zu beachten, "
-"dass es Kompromisse gibt - einige Sprachen sind auf Benutzerfreundlichkeit "
-"und auf Kosten der Geschwindigkeit ausgelegt, andere sind schneller, dafür "
-"aber das arbeiten damit schwieriger."
+"dass es Kompromisse gibt. Einige Sprachen sind auf Benutzerfreundlichkeit "
+"ausgelegt, was auf Kosten der Geschwindigkeit geht, und andere sind "
+"schneller, aber dafür schwieriger zu handhaben."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:166
 msgid ""
@@ -425,7 +426,6 @@ msgid "C++"
 msgstr "C++"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:198
-#, fuzzy
 msgid ""
 "Godot is written in C++. Using C++ will usually result in the fastest code. "
 "However, on a practical level, it is the most difficult to deploy to end "
@@ -436,8 +436,9 @@ msgstr ""
 "Godot ist in C++ geschrieben. Die Verwendung von C++ führt normalerweise zum "
 "schnellsten Code. Auf praktischer Ebene ist es jedoch am schwierigsten, ihn "
 "auf Computern von Endbenutzern auf verschiedenen Plattformen "
-"bereitzustellen. Zu den Optionen für die Verwendung von C++ gehören GDNative "
-"und benutzerdefinierte Module."
+"bereitzustellen. Zu den Optionen für die Verwendung von C++ gehören :ref:"
+"`GDNative <toc-tutorials-gdnative>` und :ref:`benutzerdefinierte Module "
+"<doc_custom_modules_in_c++>`."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:205
 msgid "Threads"
@@ -481,7 +482,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:221
-#, fuzzy
 msgid "For more information on threads, see :ref:`doc_using_multiple_threads`."
 msgstr ""
 "Für weitere Informationen zu Threads siehe :ref:`doc_using_multiple_threads`."
@@ -506,14 +506,13 @@ msgstr ""
 "große Anzahl von Nodes haben."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:231
-#, fuzzy
 msgid ""
 "Each node is handled individually in the Godot renderer. Therefore, a "
 "smaller number of nodes with more in each can lead to better performance."
 msgstr ""
 "Jeder Node wird im Godot-Renderer einzeln behandelt, sodass manchmal eine "
-"kleinere Anzahl von Nodes mit mehr in jedem zu einer besseren Leistung "
-"führen kann."
+"kleinere Anzahl von Nodes mit mehr in jedem einzelnen zu einer besseren "
+"Leistung führen kann."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:234
 #, fuzzy
@@ -548,7 +547,6 @@ msgid "Physics"
 msgstr "Physik"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:248
-#, fuzzy
 msgid ""
 "In some situations, physics can end up becoming a bottleneck. This is "
 "particularly the case with complex worlds and large numbers of physics "
@@ -558,12 +556,10 @@ msgstr ""
 "bei komplexen Welten und einer großen Anzahl von Physikobjekten."
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:251
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
 msgstr "Einige Techniken zur Beschleunigung der Physik:"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
-#, fuzzy
 msgid ""
 "Try using simplified versions of your rendered geometry for collision "
 "shapes. Often, this won't be noticeable for end users, but can greatly "

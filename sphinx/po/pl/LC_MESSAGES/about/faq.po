@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -503,7 +503,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Dlaczego Godot używa Vulkan API lub OpenGL zamiast Direct3D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -513,6 +513,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot dąży przede wszystkim do niezależności od platformy oraz do wspierania "
+"otwartych standardów. OpenGL i Vulkan są technologiami zarówno otwartymi jak "
+"i dostępnymi (niemalże) na wszystkich platformach. Dzięki tej decyzji "
+"projektowej, projekt rozwijany w Godot na Windowsie będzie działał od ręki "
+"na Linuksie, macOS i innych systemach."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -521,6 +526,11 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Ponieważ nad silnikiem renderującym Godota pracuje tylko kilka osób, zależy "
+"nam na jak najmniejszej ilości backend-ów renderujących do utrzymania. "
+"Ponadto, używanie pojedynczego API na wszystkich platformach pozwala na "
+"większą spójność z mniejszą ilością problemów specyficznych dla "
+"poszczególnych platform."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -528,6 +538,10 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Na dłuższą metę, możliwe, że będziemy pracować nad silnikiem renderującym "
+"Direct3D 12 dla Godota (głównie na potrzeby Xbox'a) lecz Vulkan i OpenGL "
+"pozostaną domyślnymi backend-ami renderującymi na wszystkich platformach (w "
+"tym także dla Windows)."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -674,16 +688,16 @@ msgstr ""
 "się z Godotem."
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "Kiedy będzie wydana następna wersja?"
+msgstr "Kiedy zostanie wydana następna wersja Godota?"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr ":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>`"
+msgstr ""
+"Kiedy będzie gotowa! Przeczytaj  :ref:"
+"`doc_release_policy_when_is_next_release_out` by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"

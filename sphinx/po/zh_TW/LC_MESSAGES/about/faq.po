@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,7 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"另外，也有一些非官方的第三方組織成功匯出到遊戲主機平台上。但預設建構腳本以及"
+"另外，也有一些非官方的第三方組織成功匯出到遊戲主機平台上。但預設建置腳本以及"
 "匯出樣板中均未包含這些平台。"
 
 #: ../../docs/about/faq.rst:61
@@ -246,7 +246,7 @@ msgstr ""
 "GDScript 是與 Godot 整合的腳本語言。是為了以最少的程式碼發揮 Godot 最大的潛能"
 "而從 0 打造的，同時也能讓不論新手或專業開發者都能儘可能快速地駕馭 Godot 優"
 "勢。若你曾經使用過如 Python 之類的語言，肯定也能快速上手 GDScript。請參考 :"
-"ref:`GDScript 腳本編寫指南 <doc_gdscript>`_ 取得範例程式碼、歷史、以及 "
+"ref:`GDScript 腳本編寫指南 <doc_gdscript>` 取得範例程式碼、歷史、以及 "
 "GDScript 功能的完整簡介。"
 
 #: ../../docs/about/faq.rst:102
@@ -455,7 +455,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "為什麼 Godot 要用 Vulkan 與 OpenGL 而不是 Direct3D？"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -465,6 +465,9 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot 的目標是提供跨平台相容性與優先使用開放標準。OpenGL 與 Vulkan 這兩種技術"
+"都是開放原始碼且 (幾乎) 可以在所有平台上使用。而得益於此一設計決定，使用 "
+"Godot 在 Windows 上開發的專案可以直接在 Linux, macOS 等平台上執行。"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -473,6 +476,9 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"由於只有少數人在處理 Godot 的算繪引擎，我們希望能儘量減少工作，不要增加太多需"
+"要維護的算繪後端。因此，在所有平台上都使用相同的單一 API 可以讓我們保持更佳的"
+"一致性，並減少遇到平台特定的問題。"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -480,6 +486,9 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"以長遠的眼光來看，未來我們可能會開發用於 Godot 的 Direct3D 12 算繪引擎 (主要"
+"是為了個 Xbox 用)，但在所有平台上，包含 Windows，預設的算繪引擎都會維持 "
+"Vulkan 與 OpenGL。"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -567,7 +576,7 @@ msgid ""
 "the App Store or Google Play."
 msgstr ""
 "如果希望遊戲在只有小螢幕 (寬度小於 300 像素) 的上古裝置上也能運作，可以使用匯"
-"出選項來縮小圖片，並將該建構設為在 AppStore 或 GooglePlay 下特定的螢幕大小。"
+"出選項來縮小圖片，並將該建置設為在 AppStore 或 GooglePlay 下特定的螢幕大小。"
 
 #: ../../docs/about/faq.rst:248
 msgid "How can I extend Godot?"
@@ -611,16 +620,16 @@ msgstr ""
 "解第三方函式庫要如何整合進 Godot 的一個好的開始。"
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
 msgstr "下個版本什麼時候出？"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr "更多資訊請參考 :ref:`doc_exporting_projects` 。"
+msgstr ""
+"準備好的時候就會出了！更多資訊請參考 :ref:"
+"`doc_release_policy_when_is_next_release_out ` 。"
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"

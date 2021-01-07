@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,16 +135,14 @@ msgid "Player scene"
 msgstr "Сцена Игрока"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"Первая сцена, которую мы создадим, определяет объект ``Player`` (Игрок). "
-"Одним из преимуществ создания отдельной сцены игрока является то, что мы "
-"можем протестировать ее отдельно, даже до того, как мы создали другие части "
-"игры."
+"Первая сцена будет определять объект ``Player``. Одним из преимуществ "
+"создания отдельной сцены Player является то, что мы можем протестировать ее "
+"отдельно, даже до того, как создадим другие части игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -904,15 +902,15 @@ msgid "Main scene"
 msgstr "Главная сцена"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
-"Пришло время собрать все это вместе. Создайте новую сцену и добавьте узел :"
-"ref:`Node <class_Node>` с именем ``Main``. Нажмите кнопку \"Инстанцировать\" "
-"и выберите сохраненную ранее сцену ``Player.tscn``."
+"Теперь пришло время собрать все это воедино. Создайте новую сцену и "
+"добавьте :ref:`Node <class_Node>` с именем ``Main``. Убедитесь, что вы "
+"создаете Node, а **не** Node2D. Нажмите кнопку \"Instance\" и выберите "
+"сохраненный файл ``Player.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
@@ -999,7 +997,6 @@ msgstr ""
 "``Path2D``, вы увидите несколько новых кнопок в верхней части редактора:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -1007,11 +1004,11 @@ msgid ""
 "be found to the left of the \"Lock\" button, appearing as a magnet next to "
 "some dots and intersecting lines, respectively."
 msgstr ""
-"Выберите среднюю (\"Добавить точку\") и нарисуйте путь щелчками мыши, чтобы "
+"Выберите среднюю (\"Add Point\") и нарисуйте путь щелчками мыши, чтобы "
 "добавить точки в показанных углах. Чтобы точки привязывались к сетке, "
-"убедитесь, что опция \"Использовать привязку к сетке\" включена. Эту опцию "
-"можно найти слева от кнопки \"Зафиксировать\", и она выглядит как магнит с "
-"несколькими пересекающимися линиями."
+"убедитесь, что выбраны \"Use Grid Snap\" и \"Use Snap\". Эти опции можно "
+"найти слева от кнопки \"Lock\", они отображаются в виде магнита рядом с "
+"точками и пересекающимися линиями соответственно."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""
@@ -1072,13 +1069,11 @@ msgid "You can assign this property's value in two ways:"
 msgstr "Значение этого свойства можно присвоить двумя способами:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:779
-#, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property ."
 msgstr ""
-"Перетащите ``Mob.tscn`` из панели \"Файловая система\" и вставьте в свойство "
-"``Mob``."
+"Перетащите ``Mob.tscn`` из панели \"Файловая система\" в свойство ``Mob``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:781
 msgid ""
@@ -1089,14 +1084,13 @@ msgstr ""
 "\"Загрузить\"(\"Load\"). Затем выберите ``Mob.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:784
-#, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
 msgstr ""
 "Затем выберите узел ``Player``(\"Игрок\") в панели \"Сцена\"(\"Scene\") и "
-"получите доступ к панели \"Узел\"(\"Node\") на боковой панели. Убедитесь, "
-"что в панели \"Узел\" выбрана вкладка \"Сигналы\"(\"Signals\")."
+"откройте вкладку \"Узел\"(\"Node\") в инспекторе. Убедитесь, что во вкладке "
+"\"Узел\" выбрана вкладка \"Сигналы\"(\"Signals\")."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:787
 msgid ""

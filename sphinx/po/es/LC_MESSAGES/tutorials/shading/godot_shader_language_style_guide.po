@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:4
 msgid "Godot shader language style guide"
-msgstr ""
+msgstr "Guía de estilo del lenguaje Shader de Godot"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
 msgid ""
@@ -40,6 +40,11 @@ msgid ""
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
 "godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
 msgstr ""
+"Dado que el lenguaje de shader Godot se acerca a los lenguajes de estilo C y "
+"GLSL, esta guía está inspirada en el propio formato GLSL de Godot. Puedes "
+"ver un ejemplo de un archivo GLSL en el código fuente de Godot `aquí "
+"<https://github.com/godotengine/godot/blob/master/drivers/gles2/shaders/copy."
+"glsl>`__."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:16
 msgid ""
@@ -201,6 +206,10 @@ msgid ""
 "code on small displays and with two shaders opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
+"Si puedes, intenta mantener las líneas por debajo de 80 caracteres. Esto "
+"ayuda a leer el código en pequeñas pantallas y con dos shader abiertos uno "
+"al lado del otro en un editor de texto externo. Por ejemplo, al mirar una "
+"revisión diferencial."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:158
 msgid "One statement per line"
@@ -208,7 +217,7 @@ msgstr "Una declaración/instrucción por linea"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
-msgstr ""
+msgstr "Nunca combine varias declaraciones en una sola línea."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
@@ -230,6 +239,8 @@ msgstr ""
 msgid ""
 "Don't use multiline comment syntax if your comment can fit on a single line:"
 msgstr ""
+"No utilice la sintaxis de comentarios de varias líneas si su comentario "
+"puede caber en una sola línea:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:216
 msgid ""
@@ -237,6 +248,9 @@ msgid ""
 "press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
 "the selected lines."
 msgstr ""
+"En el editor de shader, para hacer un comentario del código seleccionado (o "
+"descomentarlo), presione :kbd:`Ctrl + K`. Esta característica agrega o "
+"elimina ``//`` al comienzo de las líneas seleccionadas."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
@@ -264,6 +278,10 @@ msgid ""
 "This makes it easier to distinguish floating-point numbers from integers, as "
 "well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
+"Siempre especifica al menos un dígito tanto para la parte entera como para "
+"la fraccionaria. Esto facilita la distinción de los números reales de los "
+"números enteros, así como la distinción de los números mayores de 1 de los "
+"menores de 1."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
 msgid "Accessing vector members"
@@ -276,6 +294,10 @@ msgid ""
 "``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
 "better understand what the underlying data represents."
 msgstr ""
+"Usa ``r``, ``g``, ``b``, y ``a`` cuando accedas a los miembros de un vector "
+"si contiene un color. Si el vector contiene algo más que un color, usa "
+"``x``, ``y``, ``z``, y ``w``. Esto permite a los que leen tu código entender "
+"mejor lo que representan los datos subyacentes."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:293
 msgid "Naming conventions"
@@ -317,7 +339,7 @@ msgstr "Orden de código"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:323
 msgid "We suggest to organize shader code this way:"
-msgstr ""
+msgstr "Sugerimos organizar el código de los shaders de esta manera:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:340
 msgid ""
@@ -332,17 +354,20 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:344
 msgid "This code order follows two rules of thumb:"
-msgstr ""
+msgstr "Este orden del código sigue dos reglas generales:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:346
 msgid "Metadata and properties first, followed by methods."
-msgstr ""
+msgstr "Los metadatos y las propiedades primero, seguidos de los métodos."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:347
 msgid ""
 "\"Public\" comes before \"private\". In a shader language's context, \"public"
 "\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
+"\"Public\" viene antes de \"private\". En el contexto del lenguaje de "
+"shaders, \"public\" se refiere a lo que es fácilmente ajustable por el "
+"usuario (uniformes)."
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
 msgid "Local variables"

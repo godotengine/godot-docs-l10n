@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,6 @@ msgid "Exporting bit flags"
 msgstr "Exportando \"bit flags\""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS, ...``, they "
@@ -100,17 +99,16 @@ msgstr ""
 "editor:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:150
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
 "``Wind`` corresponds to value 8. Usually, constants should be defined "
 "accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
-"En este ejemplo, ``Fire`` tiene valor 1, ``Water`` tiene valor 2, ``Earth`` "
-"tiene valor 4 y ``Wind`` corresponde al valor 8. Usualmente, las constantes "
-"deberían de definirse acorde a esto (p. ej. const ELEMENT_WIND = 8`` y así "
-"con el resto)."
+"Debes proveer una cadena de descripción por cada bandera .En este ejemplo, "
+"``Fire`` tiene valor 1, ``Water`` tiene valor 2, ``Earth`` tiene valor 4 y "
+"``Wind`` corresponde al valor 8. Usualmente, las constantes deberían de "
+"definirse acorde a esto (p. ej. const ELEMENT_WIND = 8`` y así con el resto)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:155
 msgid ""
@@ -121,12 +119,11 @@ msgstr ""
 "renderizado definidas en Ajustes de Proyecto::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:162
-#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr ""
-"Usar bit flags requiere ciertos conocimientos de las operaciones bit a bit. "
+"Usar banderas requiere ciertos conocimientos de las operaciones bit a bit. "
 "En caso de duda, se pueden exportar variables booleanas en su lugar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
@@ -137,6 +134,8 @@ msgstr "Exportando arrays"
 msgid ""
 "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
+"Los arrays exportados pueden tener inicializadores, pero deben ser "
+"expresiones constantes."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:170
 msgid ""
@@ -144,13 +143,13 @@ msgid ""
 "array values can be set in the inspector by dragging and dropping multiple "
 "files from the FileSystem dock at once."
 msgstr ""
-"Si el array exportado especifica un tipo que hereda deResource, se podrán "
+"Si el array exportado especifica un tipo que hereda de Resource, se podrán "
 "asignar valores al array arrastrando y soltando múltiples archivos a la vez "
 "desde el panel de Sistema de Archivos."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:208
 msgid "Setting exported variables from a tool script"
-msgstr "Asignando variables exportadas desde un script en modo tool"
+msgstr "Configurando variables exportadas desde un script en modo tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:210
 msgid ""
@@ -193,8 +192,8 @@ msgstr ""
 "Antes de seguir leyendo, deberías familiarizarte con el modo en que las "
 "propiedades son manejadas y cómo pueden ser personalizadas con :ref:`_set() "
 "<class_Object_method__get_property_list>`, :ref:`_get() "
-"<class_Object_method__get_property_list>`, and :ref:`_get_property_list() "
-"<class_Object_method__get_property_list>` methods as described in :ref:"
+"<class_Object_method__get_property_list>`, y :ref:`_get_property_list() "
+"<class_Object_method__get_property_list>` Los métodos se describen en:ref:"
 "`doc_accessing_data_or_logic_from_object`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:230

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr "Einführung"
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
 msgstr ""
-"Diese Anleitung zeigt dir, wie man einen Singleplayer First-Person-Shooter "
+"Diese Anleitung zeigt Ihnen, wie man einen Singleplayer First-Person-Shooter "
 "erstellt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
@@ -252,6 +252,8 @@ msgstr "Alles fertig machen"
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:80
 msgid "Launch Godot and open up the project included in the starter assets."
 msgstr ""
+"Starten Sie Godot und öffnen Sie das Projekt, das in den Starter-Assets "
+"enthalten ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:82
 msgid ""
@@ -272,6 +274,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:92
 msgid "Let's take a second to see what we have in the starter assets."
 msgstr ""
+"Nehmen wir uns einen Moment Zeit, um zu sehen, was wir an Starter-Assets "
+"haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:94
 msgid ""
@@ -282,7 +286,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:97
 msgid "For now let's open up ``Player.tscn``."
-msgstr ""
+msgstr "Lassen Sie uns jetzt ``Player.tscn`` öffnen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:99
 msgid ""
@@ -349,10 +353,14 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:132
 msgid "See :ref:`using transforms <doc_using_transforms>` for more information"
 msgstr ""
+"Weitere Informationen finden Sie unter :ref:`Verwendung von Transformationen "
+"<doc_using_transforms>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:136
 msgid "Attach a new script to the ``Player`` node and call it ``Player.gd``."
 msgstr ""
+"Hängen Sie ein neues Skript an den ``Player``-Node an und nennen Sie es "
+"``Player.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:138
 msgid ""
@@ -363,6 +371,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:375
 msgid "This is a lot of code, so let's break it down function by function:"
 msgstr ""
+"Das ist eine Menge Code, also lassen Sie ihn uns Funktion für Funktion "
+"aufschlüsseln:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:377
 msgid ""
@@ -399,7 +409,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:393
 msgid "Let's go through each of the class variables:"
-msgstr ""
+msgstr "Lassen Sie uns die einzelnen Klassenvariablen durchgehen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:395
 msgid "``GRAVITY``: How strong gravity pulls us down."
@@ -442,6 +452,8 @@ msgid ""
 "``MAX_SLOPE_ANGLE``: The steepest angle our :ref:`KinematicBody "
 "<class_KinematicBody>` will consider as a 'floor'."
 msgstr ""
+"``MAX_SLOPE_ANGLE``: Der steilste Winkel, den unser :ref:`KinematicBody "
+"<class_KinematicBody>` als 'Boden' betrachtet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:402
 msgid "``camera``: The :ref:`Camera <class_Camera>` node."
@@ -484,13 +496,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:417
 msgid "Now let's look at the ``_ready`` function:"
-msgstr ""
+msgstr "Schauen wir uns nun die ``_ready`` Funktion an:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:419
 msgid ""
 "First we get the ``camera`` and ``rotation_helper`` nodes and store them "
 "into their variables."
 msgstr ""
+"Zuerst holen wir uns die Nodes ``camera`` und ``rotation_helper`` und "
+"speichern sie in ihren Variablen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:421
 msgid ""
@@ -523,12 +537,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:435
 msgid "Next let's take a look at ``_physics_process``:"
 msgstr ""
+"Lassen Sie uns als nächstes einen Blick auf ``_Physik_Prozess`` werfen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:437
 msgid ""
 "All we're doing in ``_physics_process`` is calling two functions: "
 "``process_input`` and ``process_movement``."
 msgstr ""
+"Alles, was wir in ``_physics_process`` tun, ist zwei Funktionen aufzurufen: "
+"``process_input`` und ``process_movement``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:439
 msgid ""
@@ -614,18 +631,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:500
 msgid "Here is what world space looks like in 2D:"
-msgstr ""
+msgstr "So sieht der Weltenraum in 2D aus:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:502
 msgid ""
 "The following images are just examples. Each arrow/rectangle represents a "
 "directional vector"
 msgstr ""
+"Die folgenden Bilder sind nur Beispiele. Jeder Pfeil / jedes Rechteck "
+"repräsentiert einen Richtungsvektor"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:506
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:561
 msgid "And here is what it looks like for 3D:"
-msgstr ""
+msgstr "Und so sieht es für 3D aus:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:510
 msgid ""
@@ -640,6 +659,7 @@ msgid ""
 "Local space is different, because it takes the rotation of the object into "
 "account."
 msgstr ""
+"Der lokale Raum ist anders, weil er die Rotation des Objekts berücksichtigt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:516
 msgid ""
@@ -661,6 +681,9 @@ msgid ""
 "eye-space-in-game-development (Local space and eye space are essentially the "
 "same thing in this context)"
 msgstr ""
+"https://gamedev.stackexchange.com/questions/65783/what-are-world-space-and-"
+"eye-space-in-game-development (Lokaler Raum und sichtbarer Raum sind in "
+"diesem Zusammenhang im Wesentlichen dasselbe)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:526
 msgid ""
@@ -681,10 +704,12 @@ msgid ""
 "To use the :ref:`Spatial <class_Spatial>` node's local directional vectors, "
 "we use this code:"
 msgstr ""
+"Um die lokalen Richtungsvektoren des Nodes :ref:`Spatial <class_Spatial>` zu "
+"nutzen, verwenden wir diesen Code:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:557
 msgid "Here is what local space looks like in 2D:"
-msgstr ""
+msgstr "So sieht der lokale Raum in 2D aus:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:565
 msgid ""
@@ -732,6 +757,8 @@ msgid ""
 "Based on which directional movement action is pressed, we add to or subtract "
 "from ``input_movement_vector``."
 msgstr ""
+"Basierend darauf, welche Richtungsbewegungsaktion gedrückt wird, addieren "
+"oder subtrahieren wir von ``input_movement_vector``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:589
 msgid ""
@@ -777,6 +804,8 @@ msgstr ""
 msgid ""
 "Because we're setting the Y velocity, the player will jump into the air."
 msgstr ""
+"Da wir die Y-Geschwindigkeit einstellen, wird der Spieler in die Luft "
+"springen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:609
 msgid ""
@@ -801,7 +830,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:619
 msgid "Now let's look at ``process_movement``:"
-msgstr ""
+msgstr "Schauen wir uns nun ``process_movement`` an:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:621
 msgid ""
@@ -839,6 +868,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:633
 msgid "After that we make a new variable for acceleration, named ``accel``."
 msgstr ""
+"Danach erstellen wir eine neue Variable für die Beschleunigung, genannt "
+"``accel``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:635
 msgid ""
@@ -878,6 +909,8 @@ msgid ""
 "The final function we have is the ``_input`` function, and thankfully it's "
 "fairly short:"
 msgstr ""
+"Die letzte Funktion, die wir haben, ist die ``_input`` Funktion, und "
+"glücklicherweise ist sie ziemlich kurz:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:651
 msgid ""
@@ -940,6 +973,8 @@ msgid ""
 "See :ref:`using transforms <doc_using_transforms>` for more information on "
 "rotating transforms."
 msgstr ""
+"Siehe :ref:`Benutzung von Transformationen <doc_benutzung_transformationen>` "
+"für weitere Informationen über rotierende Transformationen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:680
 msgid ""
@@ -975,6 +1010,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:696
 msgid "First we need a few more class variables in our player script:"
 msgstr ""
+"Zunächst benötigen wir ein paar weitere Klassenvariablen in unserem Player-"
+"Skript:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:717
 msgid ""
@@ -1000,6 +1037,8 @@ msgid ""
 "This gets the ``Flashlight`` node and assigns it to the ``flashlight`` "
 "variable."
 msgstr ""
+"Dies erhält den ``Flashlight``-Node und weist ihn der Variablen "
+"``flashlight`` zu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:738
 msgid ""
@@ -1009,7 +1048,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:780
 msgid "Let's go over the additions:"
-msgstr ""
+msgstr "Lassen Sie uns die Ergänzungen durchgehen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:782
 msgid ""

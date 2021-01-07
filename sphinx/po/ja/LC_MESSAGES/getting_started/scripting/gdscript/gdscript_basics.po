@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1933,9 +1933,9 @@ msgid ""
 "``_init`` from ``State.gd``."
 msgstr ""
 "継承クラス(``State.gd``)が ``_init`` コンストラクタを定義し、それが引数を取る"
-"場合(このケースは ``e``)、``State.gd`` \n"
-"の継承クラス(``Idle.gd``)も_initを定義し、 ``State.gd`` から ``_init`` に適切"
-"なパラメータを渡す*必要*があります。"
+"場合(このケースは ``e`` )、``State.gd`` の継承クラス(``Idle.gd``)も``_init``"
+"を定義し、 ``State.gd`` から ``_init`` に適切なパラメータを渡す *必要* があり"
+"ます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
 msgid ""
@@ -2172,9 +2172,8 @@ msgid ""
 "signal, the game node's ``_on_Character_health_depleted`` is called::"
 msgstr ""
 "下の例では、我々は``Character``ノードから``Game``ノードへ "
-"``health_depleted`` シグナルを接続します。\n"
-"``Character``ノードがシグナルを発信したとき、gameノードの "
-"``_on_Character_health_depleted`` が呼ばれます。"
+"``health_depleted`` シグナルを接続します。``Character``ノードがシグナルを発信"
+"したとき、gameノードの ``_on_Character_health_depleted`` が呼ばれます。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid "You can emit as many arguments as you want along with a signal."
@@ -2208,9 +2207,9 @@ msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
 msgstr ""
-"シグナルを使うにはクラスが ``Object`` クラスを直接継承する、もしくは  "
-"`Node``、 ``KinematicBody``、``Control``... 等を通じて他の形式の``Object`` ク"
-"ラスの継承をする必要があります。"
+"シグナルを使うにはクラスが ``Object`` クラスを直接継承しているか、もしくは"
+"``Object``を継承している``Node``、 ``KinematicBody``、``Control``等を継承して"
+"いる必要があります。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid ""
@@ -2278,7 +2277,7 @@ msgid ""
 "can add the character's name in the binds array argument::"
 msgstr ""
 "上の例に基づいて、``Player1 took 22 damage.`` のようにスクリーン上にそれぞれ"
-"のキャラクターの受けたダメージのログを表示したいとします 。  "
+"のキャラクターの受けたダメージのログを表示したいとします 。"
 "``health_changed`` シグナルはダメージを受けたキャラクターの名前を我々に与えま"
 "せん。その場合、ゲーム内のコンソールにシグナルを接続する事により、バインドさ"
 "れた引数の配列にあるキャラクターの名前を追加することができます::"
@@ -2365,6 +2364,12 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
@@ -2372,7 +2377,7 @@ msgstr ""
 "ある関数が yield するかどうかわからない場合や、何度も yield するかもしれない"
 "時は、条件付きで ``completed`` のシグナルを yield させることができます:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2384,11 +2389,11 @@ msgstr ""
 "ない場合にのみ発せられるので、ここで ``while`` を使うと冗長になることに注意し"
 "てください。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Onreadyキーワード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2399,7 +2404,7 @@ msgstr ""
 "シーンはアクティブなシーンツリーに入ったときにのみ設定されるので、サブノード"
 "は ``Node._ready()`` への呼び出しが行われた時にのみ取得できます。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2411,11 +2416,11 @@ msgstr ""
 "までメンバー変数の初期化を遅らせるものです。 上記のコードを単一行に置き換える"
 "ことができます::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Assertキーワード"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2429,7 +2434,7 @@ msgstr ""
 "でのプロジェクトのエクスポートでは引数として渡された式が評価されない事を意味"
 "します。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

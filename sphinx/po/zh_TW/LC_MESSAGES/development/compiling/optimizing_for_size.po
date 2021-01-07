@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:4
 msgid "Optimizing a build for size"
-msgstr ""
+msgstr "最佳化建置檔案大小"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:9
 msgid "Rationale"
-msgstr ""
+msgstr "理由"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:11
 msgid ""
@@ -32,6 +32,8 @@ msgid ""
 "specific compiler flags to aid on decreasing build size. Common situations "
 "include creating builds for mobile and Web platforms."
 msgstr ""
+"有時候，我們會優先最佳化建置大小而不是速度。也就是不編譯引擎內沒用到的功能，"
+"以及使用特定的編譯旗標來降低建置的大小。常見的情況如為行動平台與 Web 平台。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:16
 msgid ""
@@ -39,6 +41,8 @@ msgid ""
 "smaller binary. Before continuing, it is recommended to read the previous "
 "tutorials on compiling Godot for each platform."
 msgstr ""
+"本教學旨在提供各種能縮小二進位檔的方法概覽。繼續之前，建議先閱讀為各個平台編"
+"譯 Godot 的教學。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:22
 msgid ""
@@ -47,16 +51,21 @@ msgid ""
 "SCons options. You can then save this file and place it at the root of your "
 "Godot source directory."
 msgstr ""
+"可以通過 `Godot 建置選項產生器 <https://godot-build-options-generator.github."
+"io/>`__ 線上工具來產生包含 SCons 選項的 ``custom.py`` 檔案。然後將該檔案保存"
+"並放置於 Godot 原始碼資料夾的根目錄。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
-msgstr ""
+msgstr "禁用 3D"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:30
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
+"對於 2D 遊戲來說，包含完整的 3D 引擎通常沒什麼意義。因此，可以使用一個建置旗"
+"標來禁用："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:36
 msgid ""
@@ -64,26 +73,30 @@ msgid ""
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
+"必須要禁用 Tools 才能使用該旗標，因為編輯器並非設計給不支援 3D 的情景。關閉 "
+"3D 支援後，二進位檔的大小約可以減少 15%。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:41
 msgid "Disabling advanced GUI nodes"
-msgstr ""
+msgstr "禁用進階 GUI 節點"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:43
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
+"大多數小型遊戲都不需要如 Tree, ItemList, TextEdit 或 GraphEdit 等的複雜 GUI "
+"控制。可以通過一個建置旗標來禁用："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:51
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "禁用不需要的模組"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:53
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
-msgstr ""
+msgstr "許多 Godot 的功能都以模組的形式提供，可以通過下列指令來檢視模組列表："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:60
 msgid ""
@@ -91,6 +104,8 @@ msgid ""
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
+"會顯示能禁用的模組列表，以及所有建置選項。若正在開發一款簡易的 2D 遊戲，可以"
+"禁用其中許多的模組："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:68
 msgid ""
@@ -99,6 +114,8 @@ msgid ""
 "might want to keep networking-related modules, regex support, or theora/webm "
 "to play videos)."
 msgstr ""
+"若確定這個設定與你的需求不合時，可以看看模組列表，找找其中是否有你的遊戲需要"
+"的功能 (如，與網路相關的模組、正規表示式支援以及用於播放影片的 Theora/WebM)。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid ""
@@ -106,29 +123,32 @@ msgid ""
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
+"此外，也可以通過在原始碼根目錄建立 ``custom.py`` 來提供要禁用的模組列表，其內"
+"容類似如下："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr "Android"
+msgstr ":ref:`doc_overriding_build_options` 。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
-msgstr ""
+msgstr "最佳化大小而非速度"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:122
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
+"Godot 3.1 後可進行大小最佳化 (而非速度)。若要啟用大小最佳化，請將 "
+"``optimize`` 旗標設為 ``size`` ："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:129
 msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr ""
+msgstr "部分平台，如 WebAssembly，已預設使用此模式。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:132
 msgid "Compiling with link-time optimization"
-msgstr ""
+msgstr "以連結時期最佳化進行編譯"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:134
 msgid ""
@@ -137,18 +157,21 @@ msgid ""
 "template functions and unused code. It can currently be used with the GCC "
 "and MSVC compilers:"
 msgstr ""
+"開啟連結時期最佳化可產生效能與檔案大小都更有效率的二進位檔。連結時期最佳化是"
+"通過清理重複的樣板功能與為使用的程式碼來達成的。目前可以在 GCC 與 MSVC 編譯器"
+"上使用："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:143
 msgid ""
 "Linking becomes much slower with this option, so it should be used only for "
 "release builds."
-msgstr ""
+msgstr "連結在開啟該選項時會變得特別慢，因此應該只用於釋出版本。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:147
 msgid "Stripping binaries"
-msgstr ""
+msgstr "在二進位檔中移除"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:149
 msgid ""
 "If you build from source, remember to strip debug symbols from binaries:"
-msgstr ""
+msgstr "若從原始碼編譯，請記得在二進位檔中移除除錯用符號："

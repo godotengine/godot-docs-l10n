@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,8 @@ msgid ""
 "Godot provides a way to use script templates as seen in the ``Script Create "
 "Dialog`` while creating a new script:"
 msgstr ""
+"Godot提供了一种在创建新脚本时使用脚本模板的方法，在“脚本创建对话框”中可以看"
+"到："
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:11
 msgid ""
@@ -34,6 +36,8 @@ msgid ""
 "possible to modify existing and create new ones, both per project and the "
 "editor."
 msgstr ""
+"默认提供一组默认脚本模板，但也可以针对每个项目和编辑器修改现有脚本模板并创建"
+"新模板。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
 #, fuzzy
@@ -42,34 +46,29 @@ msgstr "安装模板"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
-msgstr ""
+msgstr "有两个地方可以管理模板。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:20
-#, fuzzy
 msgid "Editor-defined templates"
-msgstr "导出模板"
+msgstr "编辑器定义的模板"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:22
 msgid ""
 "These are available globally throughout any project. The location of these "
 "templates are determined per each OS:"
-msgstr ""
+msgstr "这些在任何项目中都可以全局使用。这些模板的位置是根据操作系统而确定的："
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:25
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
-msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:26
-#, fuzzy
 msgid "Linux: ``$HOME/.local/share/godot/script_templates/``"
-msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
+msgstr "Linux: ``$HOME/.local/share/godot/script_templates/``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:27
-#, fuzzy
 msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
-msgstr ""
-"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
+msgstr "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:29
 msgid ""
@@ -77,11 +76,12 @@ msgid ""
 "built-in templates automatically, so this logic can be used to reset the "
 "default templates in case you've accidentally overwritten them."
 msgstr ""
+"如果未检测到 ``script_templates`` ，Godot将自动创建一组默认的内置模板。在默认"
+"模板被意外覆盖的时候可以用这个方法重置。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:34
-#, fuzzy
 msgid "Project-defined templates"
-msgstr "项目文件"
+msgstr "项目定义的模板"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:36
 msgid ""
@@ -90,16 +90,19 @@ msgid ""
 "script_templates_search_path`` setting in the :ref:`ProjectSettings "
 "<class_ProjectSettings>`, both via code and the editor."
 msgstr ""
+"搜索模板的默认路径是 ``res://script_templates/`` 文件夹。可以通过代码和编辑器"
+"在 :ref:`项目设置<class_ProjectSettings>` 中配置 ``editor/"
+"script_templates_search_path`` 设置来更改路径。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:41
 msgid ""
 "If no ``script_templates`` directory is found within a project, it is simply "
 "ignored."
-msgstr ""
+msgstr "如果在项目中未找到 ``script_templates`` 文件夹，则将其忽略。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:45
 msgid "Language support and overriding behavior"
-msgstr ""
+msgstr "语言支持和重写行为"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:47
 msgid ""
@@ -108,6 +111,8 @@ msgid ""
 "recognized by that language according to template's file extension. For "
 "GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
 msgstr ""
+"如果一个语言实现了根据模板生成脚本的方法，你就可以创建一个对应拓展名的文件作"
+"为模板。对于 GDScript 和 C#, 拓展名分别是``gd`` 和 ``cs``."
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:52
 msgid ""
@@ -118,12 +123,19 @@ msgid ""
 "won't be visible throughout the project's filesystem anymore, yet the "
 "templates can be modified by an external text editor anytime."
 msgstr ""
+"这个脚本模板跟正常的脚本文件有相同的拓展名。这可能会导致脚本解析器把它们作为"
+"工程中的正常脚本进行处理。为了避免这样的问题，请在这个模板文件所在的文件夹下"
+"创建一个 ``.gdignore`` 文件来忽略它们。这样的话，这个文件夹也不会出现在工程的"
+"文件系统中了，不过你还可以使用外部的文本编辑器在任何时间来对这些模板文件进行"
+"编辑。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:59
 msgid ""
 "The built-in editor templates are automatically shadowed by the project-"
 "specific templates given both scripts have the same filename."
 msgstr ""
+"如果编辑器内置的模板与项目中创建的模板文件具有相同的文件名，则内置的模板会被"
+"自动隐藏。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:63
 #, fuzzy
@@ -136,22 +148,22 @@ msgid ""
 "cannot be configured nor overridden, but you can use these as the base for "
 "creating other templates."
 msgstr ""
+"“默认”模板总是根据每种语言动态生成，并且不能配置也不能覆盖，但是你可以使用它"
+"们作为创建其他模板的基础。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:116
-#, fuzzy
 msgid "List of template placeholders"
-msgstr "多个占位符"
+msgstr "模板占位符"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:118
 msgid ""
 "The following describes the complete list of built-in template placeholders "
 "which are currently implemented."
-msgstr ""
+msgstr "下面列出当前已实现的所有模板占位符。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:122
-#, fuzzy
 msgid "Base placeholders"
-msgstr "多个占位符"
+msgstr "基本占位符"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:125
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
@@ -168,7 +180,7 @@ msgstr "``%CLASS%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:127
 msgid "The name of the new class (used in C# only)."
-msgstr ""
+msgstr "新建类的名称（只在 C# 中使用）。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:129
 msgid "``%BASE%``"
@@ -176,7 +188,7 @@ msgstr "``%BASE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:129
 msgid "The base type a new script inherits from."
-msgstr ""
+msgstr "新建脚本的基类型。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:131
 msgid "``%TS%``"
@@ -189,11 +201,13 @@ msgid ""
 "``text_editor/indent/size`` settings in the :ref:`EditorSettings "
 "<class_EditorSettings>` respectively."
 msgstr ""
+"缩进占位符. 缩进字符的类型和数量分别由 :ref:`EditorSettings "
+"<class_EditorSettings>` 中的 ``text_editor/indent/type`` 和 ``text_editor/"
+"indent/size`` 两个设置决定。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:139
-#, fuzzy
 msgid "Type placeholders"
-msgstr "多个占位符"
+msgstr "类型占位符"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:141
 msgid ""
@@ -202,6 +216,9 @@ msgid ""
 "completion/add_type_hints`` setting in the :ref:`EditorSettings "
 "<class_EditorSettings>`."
 msgstr ""
+"这些只在使用 GDScript 的静态类型时有用。这些占位符是否被替换取决于 :ref:"
+"`EditorSettings <class_EditorSettings>` 中的 ``text_editor/completion/"
+"add_type_hints`` 设置。"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 msgid "Value"
@@ -210,12 +227,12 @@ msgstr "值"
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 #, fuzzy
 msgid "``%INT_TYPE%``"
-msgstr "``TYPE_*``"
+msgstr "``%INT_TYPE%``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 #, fuzzy
 msgid "``: int``"
-msgstr "``parent``"
+msgstr "``: int``"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:151
 msgid "``%STRING_TYPE%``"

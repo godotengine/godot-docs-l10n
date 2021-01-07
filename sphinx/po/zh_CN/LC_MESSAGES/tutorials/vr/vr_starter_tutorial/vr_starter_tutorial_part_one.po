@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,9 +104,8 @@ msgid ""
 msgstr "如何制作一个 :ref:`RigidBody <class_RigidBody>` 基于拾取和放下系统。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:27
-#, fuzzy
 msgid "How to create simple destroyable target."
-msgstr "添加可销毁的目标"
+msgstr "如何添加可销毁的目标。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:28
 #, fuzzy
@@ -173,22 +172,19 @@ msgid "The font used is Titillium-Regular"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:49
-#, fuzzy
 msgid "The font is licensed under the SIL Open Font License, Version 1.1"
 msgstr ""
 "使用的字体是** Titillium-Regular **，并根据SIL Open Font License 1.1版获得许"
-"可。"
+"可"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:51
-#, fuzzy
 msgid ""
 "The audio used are from several different sources, all downloaded from the "
 "Sonniss #GameAudioGDC Bundle (`License PDF <https://sonniss.com/gdc-bundle-"
 "license/>`_)"
 msgstr ""
 "所使用的音频来自几个不同的来源，都来自 **Sonnis #GameAudioGDC Bundle**。 声音"
-"效果的许可证包含在PDF `此处 <https://sonniss.com/gdc-bundle-license/>`_ 中。 "
-"存储音频文件的文件夹与包中的文件夹具有相同的名称。"
+"效果的许可证包含在PDF `此处 <https://sonniss.com/gdc-bundle-license/>`_"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:52
 msgid ""
@@ -197,7 +193,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:54
-#, fuzzy
 msgid ""
 "The OpenVR addon was created by `Bastiaan Olij <https://github.com/"
 "BastiaanOlij>`_ and is released under the MIT license. It can be found both "
@@ -206,9 +201,10 @@ msgid ""
 "asset>`_. *3rd party code and libraries used in the OpenVR addon may be "
 "under a different license.*"
 msgstr ""
-"** OpenVR插件**由Bastiaan Olij创建，并在MIT许可下发布。 它可以在 `资源馆 "
-"<https://godotengine.org/asset-library/asset/150>`_ 和在 `GitHub上找到 "
-"<https://github.com/GodotVR/godot-openvr-asset>`_ 。"
+"OpenVR插件由`Bastiaan Olij <https://github.com/BastiaanOlij>`_创建，并在MIT许"
+"可下发布。 可以在Godot素材库<https://godotengine.org/asset-library/"
+"asset/150>`_和GitHub <https://github.com/GodotVR/godot-openvr-asset上找到 "
+">`_。 * OpenVR插件中使用的第三方代码和库可能具有不同的许可。*"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:56
 msgid ""
@@ -337,18 +333,19 @@ msgid "To summarize:"
 msgstr "总而言之："
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:103
-#, fuzzy
 msgid ""
 "The :ref:`ARVROrigin <class_ARVROrigin>` node is the center of the VR "
 "tracking system and is positioned on the floor."
-msgstr ":ref:`ARVROrigin <class_ARVROrigin>` - 我们在世界上的起源点"
+msgstr ""
+":ref:`ARVROrigin <class_ARVROrigin>` -节点是VR跟踪系统的中心，位于地面上。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:105
-#, fuzzy
 msgid ""
 "The :ref:`ARVRCamera <class_ARVRCamera>` is the player's VR headset and view "
 "into the scene."
-msgstr ":ref:`ARVRCamera <class_ARVRCamera>` - 位置跟踪的摄像机的特殊子类"
+msgstr ""
+":ref:`ARVRCamera <class_ARVRCamera>` -是玩家的VR头戴式设备，同时提供了场景的"
+"视图。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:107
 msgid ""
@@ -364,12 +361,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:111
-#, fuzzy
 msgid ""
 "The :ref:`ARVRController <class_ARVRController>` nodes represent the VR "
 "controllers and handle all of the input from the VR controllers."
 msgstr ""
-":ref:`ARVRController <class_ARVRController>` - 一个轨道控制器位置的新空间类"
+":ref:`ARVRController <class_ARVRController>` - 节点代表VR控制器并处理来自VR控"
+"制器的所有输入。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:115
 msgid "Starting VR"
@@ -644,11 +641,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:543
-#, fuzzy
 msgid ""
 "``prior_controller_position``: A variable to hold the VR controller's last "
 "position in 3D space."
-msgstr "``respawn_points``:一个变量，用于保存关卡中的所有重生点"
+msgstr ""
+"``prior_controller_position``：一个变量，用于保存VR控制器在3D空间中的最后位"
+"置。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:544
 #, fuzzy
@@ -783,14 +781,13 @@ msgstr ""
 "动。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:562
-#, fuzzy
 msgid ""
 "You can find a great article explaining all about how to handle touchpad/"
 "joystick dead zones `here <https://web.archive.org/web/20191208161810/http://"
 "www.third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html>`__."
 msgstr ""
 "您可以在这里找到一篇很棒的文章解释如何处理游戏手柄/控制器死区:http://www."
-"third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html"
+"third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:564
 #, fuzzy

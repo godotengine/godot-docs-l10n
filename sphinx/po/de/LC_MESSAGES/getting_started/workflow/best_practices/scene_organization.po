@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,16 +27,21 @@ msgid ""
 "content. Which nodes should one use? Where should one place them? How should "
 "they interact?"
 msgstr ""
+"Dieser Artikel behandelt Themen im Zusammenhang mit der effektiven "
+"Organisation von Szeneninhalten. Welche Nodes sollte man verwenden? Wo soll "
+"man sie platzieren? Wie sollen sie interagieren?"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:11
 msgid "How to build relationships effectively"
-msgstr ""
+msgstr "Wie man effektiv Beziehungen aufbaut"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:13
 msgid ""
 "When Godot users begin crafting their own scenes, they often run into the "
 "following problem:"
 msgstr ""
+"Wenn Godot-Nutzer anfangen ihre eigenen Szenen zu erstellen, stoßen sie "
+"häufig auf das folgende Problem:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
 msgid ""
@@ -48,6 +53,14 @@ msgid ""
 "because the node paths do not find their targets and signal connections "
 "established in the editor break."
 msgstr ""
+"Sie erstellen ihre erste Szene und füllen sie mit Inhalten, um schließlich "
+"Teile ihrer Szene in separate Szenen zu speichern, da sich das nagende "
+"Gefühl, dass sie die Dinge aufteilen sollten, zu häufen beginnt. Dann "
+"stellen sie jedoch fest, dass die direkten Verweise, auf die sie sich zuvor "
+"verlassen konnten, nicht mehr möglich sind. Die Wiederverwendung der Szene "
+"an mehreren Stellen führt zu Problemen, da die Node-Pfade ihre Ziele und "
+"Signalverbindungen nicht finden, die in der Editorunterbrechung hergestellt "
+"wurden."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -56,6 +69,10 @@ msgid ""
 "that the sub-scene will create itself without being picky about how one uses "
 "it."
 msgstr ""
+"Um diese Probleme zu beheben, müssen die Unterszenen instanziiert werden, "
+"ohne dass Details zu ihrer Umgebung erforderlich sind. Man muss darauf "
+"vertrauen können, dass sich die Unterszene selbst erstellt, ohne wählerisch "
+"zu sein, wie man sie verwendet."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
 msgid ""
@@ -64,12 +81,19 @@ msgid ""
 "Loose_coupling>`_ to other parts of the codebase. This keeps the size of "
 "objects small (for maintainability) and improves their reusability."
 msgstr ""
+"Eines der wichtigsten Dinge, die bei OOP berücksichtigt werden müssen, ist "
+"die Beibehaltung fokussierter Klassen für einzelne Zwecke mit `loser "
+"Kopplung <https://en.wikipedia.org/wiki/Loose_coupling>`_ an andere Teile "
+"der Codebasis. Dies hält die Größe von Objekten klein (aus Gründen der "
+"Wartbarkeit) und verbessert deren Wiederverwendbarkeit."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:35
 msgid ""
 "These OOP best practices have *several* implications for best practices in "
 "scene structure and script usage."
 msgstr ""
+"Diese empfohlenen OOP Vorgehensweisen haben *mehrere* Implikationen für "
+"empfohlene Vorgehensweisen in der Szenenstruktur und der Skriptverwendung."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:38
 msgid ""
@@ -77,6 +101,9 @@ msgid ""
 "That is, one should create scenes that keep everything they need within "
 "themselves."
 msgstr ""
+"**Wenn irgend möglich, sollte man Szenen so gestalten, dass sie keine "
+"Abhängigkeiten haben.** Das heißt, man sollte Szenen erstellen, die alles, "
+"was sie brauchen, in sich selbst behalten."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:42
 msgid ""
@@ -87,12 +114,20 @@ msgid ""
 "which rely on their external environment can inadvertently trigger bugs and "
 "unexpected behavior."
 msgstr ""
+"Wenn eine Szene mit einem externen Kontext interagieren muss, empfehlen "
+"erfahrene Entwickler die Verwendung von `Dependency Injection <https://en."
+"wikipedia.org/wiki/Dependency_injection>`_. Diese Technik beinhaltet, dass "
+"eine High-Level-API die Abhängigkeiten der Low-Level-API bereitstellt. Warum "
+"das? Weil Klassen, die sich auf ihre externe Umgebung verlassen, ungewollt "
+"Bugs und unerwartetes Verhalten auslösen können."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:49
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
 msgstr ""
+"Dazu muss man Daten verfügbar machen und sich dann auf einen übergeordneten "
+"Kontext verlassen, um sie zu initialisieren:"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
 msgid ""
@@ -100,24 +135,32 @@ msgid ""
 "to behavior, not start it. Note that signal names are usually past-tense "
 "verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
+"Verbinden mit einem Signal. Äußerst sicher, sollte aber nur verwendet "
+"werden, um auf ein Verhalten zu \"reagieren\", nicht um es zu starten. "
+"Beachten Sie, dass Signalnamen in der Regel Verben in der Vergangenheitsform "
+"sind, z. B. \"betreten\", \"Fertigkeit_aktiviert\" oder "
+"\"Gegenstand_gesammelt\"."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:73
 msgid "Call a method. Used to start behavior."
-msgstr ""
+msgstr "Ruft eine Methode auf. Wird zum Starten des Verhaltens verwendet."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:92
 msgid ""
 "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as "
 "ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
+"Initialisieren einer :ref:`FuncRef <class_FuncRef>` Eigenschaft. Sicherer "
+"als eine Methode, da der Besitz der Methode unnötig ist. Wird verwendet, um "
+"das Verhalten zu starten."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:112
 msgid "Initialize a Node or other Object reference."
-msgstr ""
+msgstr "Initialisieren eines Nodes oder einer anderen Objektreferenz."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:131
 msgid "Initialize a NodePath."
-msgstr ""
+msgstr "NodePath initialisieren."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
 msgid ""
@@ -125,6 +168,10 @@ msgid ""
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
+"Diese Optionen verbergen die Zugriffspunkte vor dem untergeordneten Node. "
+"Dadurch bleibt der untergeordnete Node wiederum an seine Umgebung **locker "
+"verbunden**. Man kann es in einem anderen Kontext wiederverwenden, ohne "
+"zusätzliche Änderungen an seiner API vorzunehmen."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:156
 msgid ""

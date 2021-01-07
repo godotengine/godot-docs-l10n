@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:4
 msgid "Baked lightmaps"
-msgstr ""
+msgstr "gebrannte LightMaps"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:7
 msgid "Introduction"
@@ -32,6 +32,14 @@ msgid ""
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
 "almost no resources at run-time."
 msgstr ""
+"Gebrannte LightMaps sind ein alternativer Arbeitsablauf zum Hinzufügen "
+"indirekter (oder gebrannter) Beleuchtung zu einer Szene. Im Gegensatz zum "
+"Ansatz :ref:`doc_gi_probes` funktionieren gebrannte LightMaps auf Low-End-"
+"PCs und Mobilgeräten einwandfrei, da sie zur Laufzeit fast keine Ressourcen "
+"verbrauchen.\n"
+"Gebrannt bedeutet hierbei die Durchführung einer teuren Offline-Berechnung "
+"und Zwischenspeicherung der Ergebnisse in einer Map oder in Vertex-"
+"Attributen."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:14
 msgid ""
@@ -89,7 +97,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:50
 msgid "Unwrap from your 3D DCC"
-msgstr ""
+msgstr "Entpacken aus Ihrem 3D-DCC"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:52
 msgid ""
@@ -120,7 +128,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:73
 msgid "Unwrap from within Godot"
-msgstr ""
+msgstr "Aus Godot entpacken"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:75
 msgid ""
@@ -136,7 +144,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:84
 msgid "Unwrap on scene import"
-msgstr ""
+msgstr "Entpacken beim Szenenimport"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:86
 msgid ""
@@ -200,7 +208,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:128
 msgid "Configure bounds"
-msgstr ""
+msgstr "Grenzen konfigurieren"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:130
 msgid ""
@@ -211,7 +219,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:137
 msgid "Setting up meshes"
-msgstr ""
+msgstr "Meshes einrichten"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:139
 msgid ""
@@ -224,6 +232,8 @@ msgid ""
 "When auto-generating lightmaps on scene import, this is enabled "
 "automatically."
 msgstr ""
+"Wenn beim Szenenimport automatisch Lightmaps generiert werden, wird dies "
+"automatisch aktiviert."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid "Setting up lights"
@@ -263,6 +273,8 @@ msgstr ""
 msgid ""
 "**Indirect:** This is the default mode. Only indirect lighting will be baked."
 msgstr ""
+"**Indirekt:** Dies ist der Standardmodus. Es wird nur indirekte Beleuchtung "
+"gebrannt."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:162
 msgid ""
@@ -319,7 +331,7 @@ msgid ""
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
 "Um den Brennvorgang zu starten, drücken Sie einfach die große Schaltfläche "
-"**LightMaps brennen** oben, wenn Sie den Node `` BakedLightmap`` auswählen:"
+"**LightMaps brennen** oben, wenn Sie den Node ``BakedLightmap`` auswählen:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
@@ -375,6 +387,8 @@ msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
 msgstr ""
+"**HDR**: Wenn deaktiviert, sind Lightmaps kleiner, können jedoch kein Licht "
+"über Weiß (1.0) erfassen."
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
@@ -385,6 +399,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
 msgstr ""
+"**Ausmaße**: Größe des betroffenen Bereichs (kann visuell bearbeitet werden)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -279,7 +279,7 @@ msgid ""
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
 "偵錯選項僅適用於編輯器與匯出樣板（但必須使用 ``debug`` 或 ``release_debug`` "
-"來建構目標，詳細請參考 :ref:`doc_introduction_to_the_buildsystem_target` ）。"
+"來建置目標，詳細請參考 :ref:`doc_introduction_to_the_buildsystem_target` ）。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "``-d``, ``--debug``"
@@ -462,7 +462,7 @@ msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"建構腳本解決方案 (Solution)（如用於 C# 專案，必須啟用 :ref:`工具 "
+"建置腳本解決方案 (Solution)（如用於 C# 專案，必須啟用 :ref:`工具 "
 "<doc_introduction_to_the_buildsystem_tools>` ）。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
@@ -636,7 +636,7 @@ msgid ""
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
 "Godot 亦支援自命令行匯出專案。對於 CI 環境（持續整合, Continuous "
-"Integration）設定特別有用。無周邊版本的 Godot （伺服器建構，無視訊功能）亦是"
+"Integration）設定特別有用。無周邊版本的 Godot （伺服器建置，無視訊功能）亦是"
 "最佳選擇。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:271
@@ -687,9 +687,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "該腳本必須繼承 ``SceneTree`` 或 ``MainLoop`` 。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "下列為一個簡單的範例說明其如何運作："
+msgstr "下列為一個簡單的 ``sayhello.gd`` 範例，用來說明如何運作："
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid "And how to run it:"
@@ -710,6 +709,9 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"在上方 ``sayhello.gd`` 範例中的第一行就是我們一般稱為 **Shebang** 的東西。若 "
+"Godot 的二進位執行檔有在 ``PATH`` 中，並且名稱為 ``godot`` 的話，則這行 "
+"Shebang 就能讓腳本在現代 Linux 發行版下執行，而 macOS 也可以："
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:326
 msgid ""
@@ -717,3 +719,5 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"若上方的這個範例無法在你使用的 Linux 或 macOS 版本中使用，也可以通過下列這個"
+"方法來直接讓 Shebang 從 Godot 儲存的地方執行："

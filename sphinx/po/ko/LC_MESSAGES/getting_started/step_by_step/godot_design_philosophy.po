@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
-#, fuzzy
 msgid "Godot's design philosophy"
 msgstr "Godot의 디자인 철학"
 
@@ -29,17 +28,16 @@ msgstr ""
 "다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
 "This leads to different workflows and different ways to form your games' "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
-"**모든 게임 엔진은 서로 다르고 그렇기에 다른 필요를 충족시킵니다.** 그들이 제"
-"공하는 기능의 범위 뿐만 아니라, 각 엔진의 디자인도 독특합니다. 이것은 게임의 "
-"구조를 형성하는 다양한 방법과 다양한 워크플로를 유도합니다. 이 모든 것이 각각"
-"의 디자인 철학에서 생겨난 것입니다."
+"**모든 게임 엔진은 다르며 서로 다른 요구사항에 알맞습니다.** 다양한 기능을 제"
+"공할뿐만 아니라 각 엔진은 디자인도 독특합니다. 이것은 게임의 구조를 형성하는 "
+"다양한 방법과 다양한 워크플로를 유도합니다. 이것은 모두 각자의 디자인 철학에"
+"서 비롯된 것입니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
@@ -95,20 +93,18 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "무엇보다도, 당신이 어떤 씬에서든지 **상속하는 것** 이 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you'd like. It works like a class in pure code, except "
 "you're free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
-"Godot 씬은 무기나 캐릭터, 아이템, 문, 하나의 레벨, 레벨의 일부... 원하는 어"
-"떤 것이든 될수 있습니다. 편집기를 사용하거나, 오직 코드만을 사용하거나 이 둘"
-"을 섞어서 일치시켜서 자유롭게 디자인한다는 경우를 제외하면 마치 순수코드에서"
-"의 클래스처럼 작동합니다."
+"Godot 씬은 무기나 캐릭터, 아이템, 문, 레벨, 레벨의 일부... 여러분이 원하는 어"
+"떤 것이든 될수 있습니다. 편집기를 사용하거나, 코드만 사용하거나 이 둘을 섞어"
+"서 자유롭게 디자인할 수 있다는 점을 제외하면 순수 코드의 클래스처럼 동작합니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It's different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -118,25 +114,23 @@ msgid ""
 msgstr ""
 "이것은 씬을 상속하고 확장한다는 점에서 여러 3D 엔진에서 볼수 있는 프리펩과는 "
 "다릅니다. 당신은 캐릭터를 확장시켜 마법사를 만들수도 있습니다. 편집기에 있는 "
-"캐릭터를 수정하면 마법사도 이를 업데이트합니다. 이것은 당신이 프로젝트를 만들"
-"면서 프로젝트 구조가 게임 디자인에 일치하도록 도와줍니다."
+"캐릭터를 수정하면 마법사도 업데이트됩니다. 여러분의 프로젝트 구조가 게임의 디"
+"자인과 일치하도록 프로젝트를 만드는데 도움이 됩니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 msgid "|image0|"
 msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they're the exception, not the norm."
 msgstr ""
-"또한 Godot는 노드라고 불리는 다양한 유형의 객체를 제공합니다, 이들 각각 특정"
-"한 목적을 지니고 있습니다. 노드는  트리의 일부분으로 항상 그들의 부모 노드에"
-"서 노드 클래스까지 상속합니다. 비록 엔진이 충돌 모양같은 구성 요소를 포함하지"
-"만, 이들은 예외이고, 표준이 아닙니다."
+"또한 Godot는 각각 특정 목적을 가진 노드라고하는 다양한 유형의 객체를 제공합니"
+"다. 노드는 트리의 일부이며 항상 부모에서 Node 클래스까지 상속됩니다. 비록 엔"
+"진이 충돌 모양과 같은 구성 요소도 제공하지만 표준이 아니고 예외입니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 msgid "|image1|"
@@ -154,7 +148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
 msgid "All-inclusive package"
-msgstr "모든 것이 들어있는 패키지"
+msgstr "올인원 패키지"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
 msgid ""
@@ -163,9 +157,9 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
-"Godot는 가장 보편적인 요구들의 해답을 제공하고자 노력했습니다. Godot는 전용 "
-"스크립팅 작업 공간과 애니메이션 편집기, 타일맵 편집기, 쉐이더 편집기, 디버"
-"거, 프로파일러, 지역 및 원격 장치를 핫 리로드 하는 기능 등등을 가지고 있습니"
+"Godot의 자체도구는 가장 보편적인 요구사항에 답 하기 위한 노력입니다. Godot에"
+"는 전용 스크립팅 작업 공간과 애니메이션 편집기, 타일맵 편집기, 쉐이더 편집"
+"기, 디버거, 프로파일러, 로컬 및 원격 장치에서 핫 리로드 하는 기능 등이 있습니"
 "다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
@@ -181,11 +175,10 @@ msgid ""
 msgstr ""
 "목표는 게임을 만드는 모든 패키지와 끊김없는 사용자 경험을 제공하는 것입니다. "
 "물론 가져오기 플러그인이 있다면 여전히 외부 프로그램과 함께 작업할 수 있습니"
-"다. 아니면  `Tiled Map Importer <https://github.com/vnen/godot-tiled-"
-"importer>`__ 처럼 하나로 만들 수도 있습니다."
+"다. 아니면 `Tiled Map Importer <https://github.com/vnen/godot-tiled-"
+"importer>`__ 처럼 여러분이 하나 만들 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDscript "
 "and VisualScript, along with C#. They're designed for the needs of game "
@@ -230,7 +223,6 @@ msgstr ""
 "드나 리소스를 그래프로 드래그 앤 드롭하여 새 노드 블럭을 생성할 수 있습니다.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
-#, fuzzy
 msgid ""
 "Note that the 3D workspace doesn't feature as many tools as the 2D "
 "workspace. You'll need external programs or add-ons to edit terrains, "
@@ -238,10 +230,10 @@ msgid ""
 "extend the editor's functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
-"3D 작업 공간은 2D 작업 공간같은 도구들이 많지 않습니다. 당신은 외부 프로그램"
-"이나 애드온으로 지형을 편집하거나, 복잡한 캐릭터를 애니메이트하거나 해야합니"
-"다. Godot는 게임 코드를 사용하여 편집기의 기능성을 넓히는 완전한 API를 제공합"
-"니다. 하단의 `The Godot editor is a Godot game`_ 을 참고하세요."
+"3D 작업 공간은 2D 작업 공간만큼 많은 도구들이 제공되지 않습니다. 여러분은 외"
+"부 프로그램이나 애드온으로 지형을 편집하거나, 복잡한 캐릭터를 애니메이트하거"
+"나 해야합니다. Godot는 게임 코드를 사용하여 편집기의 기능성을 넓히는 완전한 "
+"API를 제공합니다. 하단의 `The Godot editor is a Godot game`_ 을 참고하세요."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 msgid "|image4|"
@@ -260,7 +252,6 @@ msgid "Open source"
 msgstr "오픈 소스"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "

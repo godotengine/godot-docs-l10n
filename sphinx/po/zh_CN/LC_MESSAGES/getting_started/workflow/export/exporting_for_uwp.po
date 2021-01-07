@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,6 +168,8 @@ msgid ""
 "Export > Uwp. From there you need to click on the folder for ``Signtool``, "
 "and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
+"为了导出时自动签名你需要转到 Editor Settings > Export > Uwp。在这里你需要点击"
+"包含 ``Signtool``的文件夹，然后导航到电脑上的``SignTool.exe``文件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
 msgid ""
@@ -176,20 +178,23 @@ msgid ""
 "next to ``Certificate`` and go to the certificate file. Then enter the "
 "pfxPassword in the password field."
 msgstr ""
+"设置好编辑器选项之后，转到Project > Export，然后选择UWP预设。点击在 "
+"``Signing`` 选项的下面``Certificate``旁边的文件夹，然后转到certificate文件。"
+"接着在密码字段输入pfxPassword。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
 msgid "Your project will now be automatically signed on export."
-msgstr ""
+msgstr "现在你的项目将在导出时自动签名。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
 msgid ""
 "If you want to sign an exported app manually run ``SignTool.exe`` and use "
 "the following command."
-msgstr ""
+msgstr "如果你想手动签名导出的应用，运行``SignTool.exe``然后使用后面的命令。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
-msgstr ""
+msgstr "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:4
 msgid "GDNative C example"
-msgstr ""
+msgstr "Ejemplo de GDNative C"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:7
 msgid "Introduction"
@@ -32,13 +32,21 @@ msgid ""
 "GDNative. Understanding the contents of this tutorial will help you in "
 "understanding all that is to come after this."
 msgstr ""
+"Este tutorial introducira lo mínimo necesario para crear modulos de "
+"GDNative. Este debería ser tu inicio en el mundo del GDNative. Entender "
+"estos contenidos de este tutorial te ayudara a entender todo lo que vendrá "
+"luego de esto."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
+#, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://github.com/"
-"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
+"describe below in the `GDNative-demos repository <https://docs.godotengine."
+"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
 msgstr ""
+"Antes de empezar, puedes descargar el código fuente del objeto de ejemplo "
+"que describimos a continuación en el repositorio. Link: https://github.com/"
+"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
 msgid ""
@@ -46,6 +54,9 @@ msgid ""
 "little easier, but in this tutorial we'll be doing things by hand to "
 "understand the process."
 msgstr ""
+"Este proyecto de ejemplo también contiene un archivo SConstruct que facilita "
+"un poco la compilación, pero en este tutorial haremos las cosas a mano para "
+"entender el proceso."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:22
 msgid ""
@@ -57,24 +68,33 @@ msgid ""
 "allows you to write logic in C or C++ in a similar fashion as you would "
 "write a GDScript file. We'll be creating the C equivalent of this GDScript:"
 msgstr ""
+":ref:`GDNative <class_GDNative>` puede ser usado para crear bastantes tipos "
+"de adiciones a Godot, usar interfaces tales como :ref:`PluginScript "
+"<class_PluginScript>` or :ref:`ARVRInterfaceGDNative "
+"<class_ARVRInterfaceGDNative>`. En este tutorial vamos a ver como crear un "
+"módulo :ref:`NativeScript <class_NativeScript>`. NativeScript te permite "
+"escribir lógica en C o C++ de manera similar a como escribirias un archivo "
+"GDScript. Estaresmos creando el equivalente en C de este GDScript:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:43
 msgid ""
 "Future tutorials will focus on the other types of GDNative modules and "
 "explain when and how to use each of them."
 msgstr ""
+"Los próximos tutoriales se centrarán en los otros tipos de modulos GDNative "
+"y explicarán cuándo y cómo usar cada uno."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:47
 msgid "Prerequisites"
-msgstr ""
+msgstr "Pre-requisitos"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
 msgid "Before we start you'll need a few things:"
-msgstr ""
+msgstr "Antes de comenzar, necesitará algunas cosas:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
-msgstr ""
+msgstr "Un ejecutable de Godot para tu versión objetivo."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
@@ -82,12 +102,15 @@ msgid ""
 "manager. On macOS, you can install Xcode from the Mac App Store. On Windows, "
 "you can use Visual Studio 2015 or later, or MinGW-w64."
 msgstr ""
+"Un compilador de C. En Linux, instale ``gcc`` o ``clang`` mediante su gestor "
+"de paquetes. En macOS, puede instalar Xcode desde la App Store de Mac. En "
+"Windows, puede usar Visual Studio 2015 o superior, o MinGW-w64."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 msgid ""
-"A Git clone of the `godot_headers repository <https://github.com/"
-"GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
-"public API exposed to GDNative."
+"A Git clone of the `godot_headers repository <https://github.com/godotengine/"
+"godot_headers>`_: these are the C headers for Godot's public API exposed to "
+"GDNative."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
@@ -95,16 +118,21 @@ msgid ""
 "For the latter, we suggest that you create a dedicated folder for this "
 "GDNative example project, open a terminal in that folder and execute:"
 msgstr ""
+"Para esto le sugerimos que cree una carpeta para este proyecto de ejemplo de "
+"GDNative, después abra una terminal en esa carpeta y ejecutelo:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:66
 msgid "This will download the required files into that folder."
 msgstr ""
+"Esto requiere que descarges los arhivos requeridos dentro de la carpeta."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
 msgid ""
 "If you plan to use Git for your GDNative project, you can also add "
 "``godot_headers`` as a Git submodule."
 msgstr ""
+"Si planeas usar Git para tu proyecto en GDNative, puedes añadir "
+"``godot_headers`` como un submódulo de Git."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
 msgid ""
@@ -118,11 +146,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
+#, fuzzy
 msgid ""
 "The ``master`` branch of the ``godot_headers`` repository is kept in line "
 "with the ``master`` branch of Godot and thus contains the GDNative class and "
 "structure definitions that will work with the latest development builds."
 msgstr ""
+"La rama ``master`` del repositorio  ``godot_headers`` se nabtuebe a raya con "
+"la rama ``master`` de Godot y por eso contiene la clase GDNative y unas "
+"definiciones de estructuras que permita trabajar con la última versión de "
+"desarrollo."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:87
 msgid ""
@@ -156,6 +189,8 @@ msgid ""
 "Let's start by writing our main code. Eventually, we want to end up with a "
 "file structure that looks along those lines:"
 msgstr ""
+"Comencemos por escribir nuestro código principal. Eventualmente, queremos "
+"terminar con una estructura de archivos que se vea similar a esto:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:126
 msgid ""
@@ -180,6 +215,9 @@ msgid ""
 "all be put together into one big file. Each section will be explained as we "
 "add it."
 msgstr ""
+"Veremos el código fuente poco a poco así que todas las partes debajo "
+"deberían estar juntas dentro de un gran archivo. Cada sección será explicada "
+"a medida que sea añadida."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:149
 msgid ""
@@ -198,12 +236,18 @@ msgid ""
 "additional functions have their own \"GDNative structs\" that are accessible "
 "through extensions."
 msgstr ""
+"Para mantener esta implementación modular y fácilmante extendible, las "
+"funciones núcleo están disponibles a través del \"núcleo\" de la estructura "
+"de la API, pero funciones adicionales tienen su propia \"estructura de "
+"GDNative\" que son accesibles entre extensiones."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:160
 msgid ""
 "In our example, we access one of these extension to gain access to the "
 "functions specifically needed for NativeScript."
 msgstr ""
+"En nuestro ejemplo, accederemos a una de estas extensiones para ganar acceso "
+"a las funciones especificamente necesitadas para NativeScript."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:163
 msgid ""
@@ -231,6 +275,13 @@ msgid ""
 "to a structure that contains various bits of information we may find useful "
 "among which the pointers to our API structures."
 msgstr ""
+"Siguiente es el primero de muchos puntos de entrada que Godot llamará cuando "
+"nuestra libería dinámica es cargada. Estos métodos están prefijados con "
+"``godot_``(puedes cambiar esto luego) seguido de su nombre. "
+"``gdnative_init`` es una función que inicia nuestra libería dinámica. Godot "
+"dará un \"pointer\" a una estructura que contenga varios bits de información "
+"que quizás encontremos útiles entre los cuales el \"pointer\" a nuestras "
+"estructuras de API"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:187
 msgid ""

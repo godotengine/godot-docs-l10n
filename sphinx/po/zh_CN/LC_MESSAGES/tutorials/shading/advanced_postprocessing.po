@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgstr "将QuadMesh作为子节点添加到相机，因此相机始终指向它"
 msgid ""
 "Set the Geometry property ``extra_cull_margin`` as large as possible in the "
 "QuadMesh"
-msgstr ""
+msgstr "在QuadMesh中将几何属性 ``extra_cull_margin`` 设置得尽可能大"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:71
 #, fuzzy
@@ -185,7 +185,6 @@ msgstr ""
 "一个视区访问深度纹理。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:89
-#, fuzzy
 msgid ""
 "The values returned by ``DEPTH_TEXTURE`` are between ``0`` and ``1`` and are "
 "nonlinear. When displaying depth directly from the ``DEPTH_TEXTURE``, "
@@ -198,12 +197,12 @@ msgid ""
 "linearize it, we multiply it by the inverse of the projection matrix, which "
 "in Godot, is accessible with the variable ``INV_PROJECTION_MATRIX``."
 msgstr ""
-"``DEPTH_TEXTURE`` 返回的值介于 ``0`` 和 ``1`` 之间，并且是非线性的。当直接"
+"``DEPTH_TEXTURE`` 返回的值介于 ``0``和 ``1`` 之间，并且是非线性的。当直接"
 "从“DEPTH_TEXTURE”显示深度时，除非它非常接近，否则一切都会看起来几乎是白色的。"
 "这是因为深度缓冲区使用比进一步更多的位来存储更靠近相机的对象，因此深度缓冲区"
 "中的大部分细节都靠近相机。为了使深度值与世界或模型坐标对齐，我们需要将值线性"
 "化。当我们将投影矩阵应用于顶点位置时，z值是非线性的，所以为了线性化它我们将它"
-"乘以投影矩阵的倒数，在Godot中可以用变量 ``INV_PROJECTION_MATRIX`` 访问它"
+"乘以投影矩阵的倒数，在Godot中可以用变量 ``INV_PROJECTION_MATRIX`` 访问它。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:99
 #, fuzzy

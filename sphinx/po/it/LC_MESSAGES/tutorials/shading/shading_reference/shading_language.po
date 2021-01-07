@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,9 @@ msgid "Description"
 msgstr "Descrizione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:23
+#, fuzzy
 msgid "**void**"
-msgstr ""
+msgstr "**void**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:23
 msgid "Void datatype, useful only for functions that return nothing."
@@ -69,32 +70,36 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
+#, fuzzy
 msgid "**bool**"
-msgstr ""
+msgstr "**bool**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
 msgid "Boolean datatype, can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:27
+#, fuzzy
 msgid "**bvec2**"
-msgstr ""
+msgstr "**bvec2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:27
 msgid "Two-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:29
+#, fuzzy
 msgid "**bvec3**"
-msgstr ""
+msgstr "**bvec3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:29
 msgid "Three-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:31
+#, fuzzy
 msgid "**bvec4**"
-msgstr ""
+msgstr "**bvec4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:31
 msgid "Four-component vector of booleans."
@@ -102,64 +107,72 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:33
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:552
+#, fuzzy
 msgid "**int**"
-msgstr ""
+msgstr "**int**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:33
 msgid "Signed scalar integer."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:35
+#, fuzzy
 msgid "**ivec2**"
-msgstr ""
+msgstr "**ivec2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:35
 msgid "Two-component vector of signed integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:37
+#, fuzzy
 msgid "**ivec3**"
-msgstr ""
+msgstr "**ivec3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:37
 msgid "Three-component vector of signed integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:39
+#, fuzzy
 msgid "**ivec4**"
-msgstr ""
+msgstr "**ivec4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:39
 msgid "Four-component vector of signed integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:41
+#, fuzzy
 msgid "**uint**"
-msgstr ""
+msgstr "**uint**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:41
 msgid "Unsigned scalar integer; can't contain negative numbers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:43
+#, fuzzy
 msgid "**uvec2**"
-msgstr ""
+msgstr "**uvec2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:43
 msgid "Two-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:45
+#, fuzzy
 msgid "**uvec3**"
-msgstr ""
+msgstr "**uvec3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:45
 msgid "Three-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:47
+#, fuzzy
 msgid "**uvec4**"
-msgstr ""
+msgstr "**uvec4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:47
 msgid "Four-component vector of unsigned integers."
@@ -167,8 +180,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:49
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:554
+#, fuzzy
 msgid "**float**"
-msgstr ""
+msgstr "**float**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:49
 msgid "Floating-point scalar."
@@ -176,8 +190,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#, fuzzy
 msgid "**vec2**"
-msgstr ""
+msgstr "**vec2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
 msgid "Two-component vector of floating-point values."
@@ -185,8 +200,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
+#, fuzzy
 msgid "**vec3**"
-msgstr ""
+msgstr "**vec3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
 msgid "Three-component vector of floating-point values."
@@ -195,24 +211,27 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
+#, fuzzy
 msgid "**vec4**"
-msgstr ""
+msgstr "**vec4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
 msgid "Four-component vector of floating-point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:57
+#, fuzzy
 msgid "**mat2**"
-msgstr ""
+msgstr "**mat2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:57
 msgid "2x2 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:59
+#, fuzzy
 msgid "**mat3**"
-msgstr ""
+msgstr "**mat3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:59
 msgid "3x3 matrix, in column major order."
@@ -221,8 +240,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
+#, fuzzy
 msgid "**mat4**"
-msgstr ""
+msgstr "**mat4**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
 msgid "4x4 matrix, in column major order."
@@ -235,24 +255,27 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#, fuzzy
 msgid "**sampler2D**"
-msgstr ""
+msgstr "**sampler2D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:63
 msgid "Sampler type for binding 2D textures, which are read as float."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:65
+#, fuzzy
 msgid "**isampler2D**"
-msgstr ""
+msgstr "**isampler2D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:65
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:67
+#, fuzzy
 msgid "**usampler2D**"
-msgstr ""
+msgstr "**usampler2D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:67
 msgid ""
@@ -260,16 +283,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:69
+#, fuzzy
 msgid "**sampler2DArray**"
-msgstr ""
+msgstr "**sampler2DArray**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:69
 msgid "Sampler type for binding 2D texture arrays, which are read as float."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:71
+#, fuzzy
 msgid "**isampler2DArray**"
-msgstr ""
+msgstr "**isampler2DArray**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:71
 msgid ""
@@ -277,8 +302,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:73
+#, fuzzy
 msgid "**usampler2DArray**"
-msgstr ""
+msgstr "**usampler2DArray**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:73
 msgid ""
@@ -287,24 +313,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:75
+#, fuzzy
 msgid "**sampler3D**"
-msgstr ""
+msgstr "**sampler3D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:75
 msgid "Sampler type for binding 3D textures, which are read as float."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:77
+#, fuzzy
 msgid "**isampler3D**"
-msgstr ""
+msgstr "**isampler3D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:77
 msgid "Sampler type for binding 3D textures, which are read as signed integer."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:79
+#, fuzzy
 msgid "**usampler3D**"
-msgstr ""
+msgstr "**usampler3D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:79
 msgid ""
@@ -312,16 +341,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:81
+#, fuzzy
 msgid "**samplerCube**"
-msgstr ""
+msgstr "**samplerCube**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:81
 msgid "Sampler type for binding Cubemaps, which are read as floats."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:85
+#, fuzzy
 msgid "Casting"
-msgstr ""
+msgstr "Conversione del tipo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:87
 msgid ""
@@ -332,8 +363,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:90
+#, fuzzy
 msgid "Example:"
-msgstr ""
+msgstr "Esempio:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:98
 msgid ""
@@ -360,8 +392,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:118
+#, fuzzy
 msgid "Constructing"
-msgstr ""
+msgstr "Costruzione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:120
 msgid "Construction of vector types must always pass:"
@@ -384,8 +417,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:155
+#, fuzzy
 msgid "Swizzling"
-msgstr ""
+msgstr "Swizzling"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:157
 msgid ""
@@ -395,8 +429,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:174
+#, fuzzy
 msgid "Precision"
-msgstr ""
+msgstr "Precisione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:176
 msgid ""
@@ -424,7 +459,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:196
 msgid "Arrays"
-msgstr ""
+msgstr "Arrays"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:198
 msgid ""
@@ -518,16 +553,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
+#, fuzzy
 msgid "Precedence"
-msgstr ""
+msgstr "Precedenza"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
 msgid "Class"
 msgstr "Classe"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
+#, fuzzy
 msgid "Operator"
-msgstr ""
+msgstr "Operatore"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "1 (highest)"
@@ -538,16 +575,18 @@ msgid "parenthetical grouping"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
+#, fuzzy
 msgid "**()**"
-msgstr ""
+msgstr "**()**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "2"
 msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
+#, fuzzy
 msgid "unary"
-msgstr ""
+msgstr "unario"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "**+, -, !, ~**"
@@ -558,8 +597,9 @@ msgid "3"
 msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
+#, fuzzy
 msgid "multiplicative"
-msgstr ""
+msgstr "moltiplicativo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 msgid "**/, \\*, %**"
@@ -570,8 +610,9 @@ msgid "4"
 msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
+#, fuzzy
 msgid "additive"
-msgstr ""
+msgstr "additivo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 msgid "**+, -**"
@@ -594,8 +635,9 @@ msgid "6"
 msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
+#, fuzzy
 msgid "relational"
-msgstr ""
+msgstr "relazionale"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 msgid "**<, >, <=, >=**"
@@ -606,8 +648,9 @@ msgid "7"
 msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
+#, fuzzy
 msgid "equality"
-msgstr ""
+msgstr "uguaglianza"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 msgid "**==, !=**"
@@ -622,8 +665,9 @@ msgid "bit-wise AND"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
+#, fuzzy
 msgid "**&**"
-msgstr ""
+msgstr "**&**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 msgid "9"
@@ -634,8 +678,9 @@ msgid "bit-wise exclusive OR"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
+#, fuzzy
 msgid "**^**"
-msgstr ""
+msgstr "**^**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 msgid "10"
@@ -646,8 +691,9 @@ msgid "bit-wise inclusive OR"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
+#, fuzzy
 msgid "**|**"
-msgstr ""
+msgstr "**|**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 msgid "11"
@@ -658,8 +704,9 @@ msgid "logical AND"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
+#, fuzzy
 msgid "**&&**"
-msgstr ""
+msgstr "**&&**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "12 (lowest)"
@@ -670,8 +717,9 @@ msgid "logical inclusive OR"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
+#, fuzzy
 msgid "**||**"
-msgstr ""
+msgstr "**||**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:330
 msgid "Flow control"
@@ -695,8 +743,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:381
+#, fuzzy
 msgid "Discarding"
-msgstr ""
+msgstr "Scartare"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:383
 msgid ""
@@ -741,8 +790,9 @@ msgid "Example below:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:421
+#, fuzzy
 msgid "Varyings"
-msgstr ""
+msgstr "Variabili"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:423
 msgid ""
@@ -770,20 +820,23 @@ msgid "There are two possible interpolation qualifiers:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:479
+#, fuzzy
 msgid "Qualifier"
-msgstr ""
+msgstr "Qualificatore"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
+#, fuzzy
 msgid "**flat**"
-msgstr ""
+msgstr "**flat**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
 msgid "The value is not interpolated."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
+#, fuzzy
 msgid "**smooth**"
-msgstr ""
+msgstr "**smooth**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
 msgid ""
@@ -792,8 +845,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
+#, fuzzy
 msgid "Uniforms"
-msgstr ""
+msgstr "Uniformi"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:490
 msgid ""
@@ -835,12 +889,14 @@ msgid "Full list of hints below:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:525
+#, fuzzy
 msgid "Hint"
-msgstr ""
+msgstr "Suggerimento"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
+#, fuzzy
 msgid "hint_color"
-msgstr ""
+msgstr "hint_color"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 msgid "Used as color"
@@ -859,48 +915,54 @@ msgid "Used as range (with min/max/step)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
+#, fuzzy
 msgid "hint_albedo"
-msgstr ""
+msgstr "hint_albedo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:531
 msgid "Used as albedo color, default white"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
+#, fuzzy
 msgid "hint_black_albedo"
-msgstr ""
+msgstr "hint_black_albedo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:533
 msgid "Used as albedo color, default black"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
+#, fuzzy
 msgid "hint_normal"
-msgstr ""
+msgstr "hint_normal"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:535
 msgid "Used as normalmap"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
+#, fuzzy
 msgid "hint_white"
-msgstr ""
+msgstr "hint_white"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:537
 msgid "As value, default to white."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
+#, fuzzy
 msgid "hint_black"
-msgstr ""
+msgstr "hint_black"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:539
 msgid "As value, default to black"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
+#, fuzzy
 msgid "hint_aniso"
-msgstr ""
+msgstr "hint_aniso"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:541
 msgid "As flowmap, default to right."
@@ -922,24 +984,28 @@ msgid "GLSL type"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
+#, fuzzy
 msgid "**Vector2**"
-msgstr ""
+msgstr "**Vector2**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
+#, fuzzy
 msgid "**Vector3**"
-msgstr ""
+msgstr "**Vector3**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
 msgid "**Color**"
 msgstr "**Color**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
+#, fuzzy
 msgid "**Transform**"
-msgstr ""
+msgstr "**Transform**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
+#, fuzzy
 msgid "**Transform2D**"
-msgstr ""
+msgstr "**Transform2D**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
 msgid ""
@@ -1156,8 +1222,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:635
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
+#, fuzzy
 msgid "Absolute"
-msgstr ""
+msgstr "Assoluto"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:637
 msgid "ivec_type **abs** (ivec_type x)"
@@ -1169,8 +1236,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:639
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
+#, fuzzy
 msgid "Sign"
-msgstr ""
+msgstr "Segno"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:641
 msgid "ivec_type **sign** (ivec_type x)"
@@ -1181,16 +1249,18 @@ msgid "vec_type **floor** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:643
+#, fuzzy
 msgid "Floor"
-msgstr ""
+msgstr "Pavimento"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
 msgid "vec_type **round** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:645
+#, fuzzy
 msgid "Round"
-msgstr ""
+msgstr "Rotondo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:647
 msgid "vec_type **roundEven** (vec_type x)"
@@ -1205,8 +1275,9 @@ msgid "vec_type **trunc** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:649
+#, fuzzy
 msgid "Truncation"
-msgstr ""
+msgstr "Troncamento"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:651
 msgid "vec_type **ceil** (vec_type x)"
@@ -1221,8 +1292,9 @@ msgid "vec_type **fract** (vec_type x)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:653
+#, fuzzy
 msgid "Fractional"
-msgstr ""
+msgstr "Frazionario"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 msgid "vec_type **mod** (vec_type x, vec_type y)"
@@ -1230,8 +1302,9 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:655
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
+#, fuzzy
 msgid "Remainder"
-msgstr ""
+msgstr "Resto"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:657
 msgid "vec_type **mod** (vec_type x , float y)"
@@ -1250,16 +1323,18 @@ msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:661
+#, fuzzy
 msgid "Minimum"
-msgstr ""
+msgstr "Minimo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:663
+#, fuzzy
 msgid "Maximum"
-msgstr ""
+msgstr "Massimo"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:665
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
@@ -1423,16 +1498,18 @@ msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:705
+#, fuzzy
 msgid "Reflect"
-msgstr ""
+msgstr "Riflettere"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:707
+#, fuzzy
 msgid "Refract"
-msgstr ""
+msgstr "Rifrazione"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:709
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:4
 msgid "Internationalizing games"
-msgstr ""
+msgstr "Internacionalizando jogos"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:7
 msgid "Introduction"
@@ -50,16 +50,24 @@ msgid ""
 "covered in the :ref:`doc_importing_translations` tutorial, so this one could "
 "be seen more like a follow-up to that one."
 msgstr ""
+"A localização geralmente é feita por estúdios específicos contratados para a "
+"função e, apesar da enorme quantidade de softwares e formatos de arquivos "
+"disponíveis para isso, a forma mais comum de fazer localização até hoje "
+"ainda é com planilhas. O processo de criar as planilhas e importá-las já é "
+"abordado no tutorial :ref:`doc_importing_translations`, então este poderia "
+"ser visto mais como uma continuação daquele."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
 msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
+"Utilizaremos a demonstração oficial como exemplo; você pode `baixá-la da "
+"Biblioteca de Assets <https://godotengine.org/asset-library/asset/134>`_."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
 msgid "Configuring the imported translation"
-msgstr ""
+msgstr "Configurando a tradução importada"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
 msgid ""
@@ -67,14 +75,19 @@ msgid ""
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
+"As traduções podem ser atualizadas e reimportadas quando são alteradas, mas "
+"ainda precisam ser adicionadas ao projeto. Isso é feito em **Projeto → "
+"Configurações do projeto → Localização**:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
 msgid "The above dialog is used to add or remove translations project-wide."
 msgstr ""
+"A caixa de diálogo acima é usada para adicionar ou remover traduções em todo "
+"o projeto."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
-msgstr ""
+msgstr "Localizando recursos"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
 msgid ""
@@ -82,16 +95,21 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
+"Também é possível instruir o Godot para usar versões alternativas de assets "
+"(recursos), dependendo do idioma atual. A aba **Remapeamentos*** pode ser "
+"usada para isso:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
 "Select the resource to be remapped, then add some alternatives for each "
 "locale."
 msgstr ""
+"Selecione o recurso a ser remapeado e, em seguida, adicione algumas "
+"alternativas para cada locale."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:52
 msgid "Converting keys to text"
-msgstr ""
+msgstr "Convertendo chaves em texto"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
@@ -101,6 +119,11 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will automatically be translated."
 msgstr ""
+"Alguns controles, como :ref:`Button <class_Button>` e :ref:`Label "
+"<class_Label>` irão automaticamente buscar uma tradução se o seu texto "
+"corresponder a uma chave de tradução. Por exemplo, se o texto de um rótulo "
+"for \"MAIN_SCREEN_GREETING1\" e essa chave existir na tradução atual, o "
+"texto será traduzido automaticamente."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
@@ -108,10 +131,13 @@ msgid ""
 "used. This will just look up the text in the translations and convert it if "
 "found:"
 msgstr ""
+"No código, a função :ref:`Object.tr() <class_Object_method_tr>` pode ser "
+"usada. Isso apenas pesquisará o texto nas traduções e o converterá se "
+"encontrado:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"
-msgstr ""
+msgstr "Tornando os controles redimensionáveis"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:71
 msgid ""
@@ -121,6 +147,11 @@ msgid ""
 "<class_Container>` can be useful, as well as the text wrapping options "
 "available in :ref:`Label <class_Label>`."
 msgstr ""
+"O mesmo texto em diferentes idiomas pode variar muito em comprimento. Para "
+"isso, certifique-se de ler o tutorial em :ref:`doc_size_and_anchors`, pois "
+"ajustar dinamicamente os tamanhos de controle pode ajudar. :ref:`Container "
+"<class_Container>` pode ser útil, assim como as opções de quebra de texto "
+"disponíveis em :ref:`Label <class_Label>`."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:78
 msgid "TranslationServer"
@@ -133,16 +164,23 @@ msgid ""
 "removed during run-time; the current language can also be changed at run-"
 "time."
 msgstr ""
+"O Godot tem um servidor que lida com gerenciamento de tradução de baixo "
+"nível chamado :ref:`TranslationServer <class_TranslationServer>`. As "
+"traduções podem ser adicionadas ou removidas durante o tempo de execução; o "
+"idioma atual também pode ser alterado em tempo de execução."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:86
 msgid "Command line"
-msgstr ""
+msgstr "Linha de comando"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:88
 msgid ""
 "Language can be tested when running Godot from the command line. For "
 "example, to test a game in French, the following argument can be supplied:"
 msgstr ""
+"A linguagem pode ser testada ao executar o Godot a partir da linha de "
+"comando. Por exemplo, para testar um jogo em francês, o seguinte argumento "
+"pode ser fornecido:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:97
 msgid "Translating the project name"
@@ -156,9 +194,16 @@ msgid ""
 "Settings** and append the locale identifier to it. For instance, for "
 "Spanish, this would be ``application/name_es``:"
 msgstr ""
+"O nome do projeto se torna o nome do aplicativo ao exportar para diferentes "
+"sistemas operacionais e plataformas. Para especificar o nome do projeto em "
+"mais de um idioma, crie uma nova configuração ``application/name`` nas "
+"**Configurações do projeto** e anexe o identificador do locale a ele. Por "
+"exemplo, para o espanhol, isto seria ``application/name_es``:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
 msgstr ""
+"Se você não tem certeza sobre o código do idioma a ser usado, consulte a :"
+"ref:`lista de códigos de locale <doc_locales>`."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,10 +74,9 @@ msgid ""
 "sounds you'll be using to make the game. Unzip these files in your project "
 "folder."
 msgstr ""
-"Spusťte Godota a vytvořte nový projekt. Pak stáhněte: download: "
-"`dodge_assets.zip <files / dodge_assets.zip>`. Obsahuje obrázky a zvuky, "
-"které budete používat při tvorbě hry. Rozbalte tyto soubory ve složce "
-"projektu."
+"Spusťte Godota a vytvořte nový projekt. Pak stáhněte :download:`dodge_assets."
+"zip <files / dodge_assets.zip>`. Obsahuje obrázky a zvuky, které budete "
+"používat při tvorbě hry. Rozbalte tyto soubory ve složce projektu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:36
 msgid ""
@@ -122,11 +121,11 @@ msgid ""
 "and scripts in the project's root folder, identified by ``res://``.  You can "
 "see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a `` "
-"HUD``, které zkombinujeme do hlavní scény hry:`` Main`` . Ve větším projektu "
-"může být užitečné vytvořit složky, pro každkou scénu a její skript zvlášť, "
-"ale pro tuto relativně malou hru můžete ukládat své scény a skripty do "
-"kořenového adresáře projektu identifikovaného pomocí `` res: //``. Složky "
+"V tomto projektu vytvoříme 3 nezávislé scény: ``Player``, ``Mob`` a ``HUD``, "
+"které zkombinujeme do hlavní scény hry:``Main`` . Ve větším projektu může "
+"být užitečné vytvořit složky, pro každkou scénu a její skript zvlášť, ale "
+"pro tuto relativně malou hru můžete ukládat své scény a skripty do "
+"kořenového adresáře projektu identifikovaného pomocí ``res: //``. Složky "
 "projektu můžete vidět v doku Souborový systém v levém dolním rohu:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:62
@@ -134,7 +133,6 @@ msgid "Player scene"
 msgstr "Scéna Player (Hráč)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
@@ -196,13 +194,13 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"Uložte scénu. Klikněte na Scéna -> Uložit nebo stiskněte: kbd: `Ctrl + S` v "
+"Uložte scénu. Klikněte na Scéna -> Uložit nebo stiskněte :kbd:`Ctrl + S` v "
 "systému Windows / Linux nebo: kbd:`Cmd + S` v systému MacOS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
-"V tomto projektu budeme dodržovat Godotova pravidla pro názvy identifikátorů."
+"V tomto projektu budeme dodržovat Godot pravidla pro názvy identifikátorů."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid ""
@@ -850,8 +848,8 @@ msgid ""
 "selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 "Potom musíme vybrat náhodné číslo mezi ``0`` a ``2``, abychom vybrali jedno "
-"z těchto jmen ze seznamu (indexy pole začínají ``0``). `` randi ()% "
-"n``vybere náhodné celé číslo mezi`` 0``a`` n-1``."
+"z těchto jmen ze seznamu (indexy pole začínají ``0``). ``randi ()% n``vybere "
+"náhodné celé číslo mezi``0``a``n-1``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
@@ -882,7 +880,6 @@ msgid "Main scene"
 msgstr "Hlavní scéna"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
@@ -974,7 +971,6 @@ msgstr ""
 "v horní části editoru některá nová tlačítka:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -1652,7 +1648,7 @@ msgid ""
 "`Space` to start the game."
 msgstr ""
 "Nyní, když se objeví tlačítko Start, můžete na něj buď kliknout, nebo "
-"stisknout: kbd: `Space` pro spuštění hry."
+"stisknout :kbd:`Space` pro spuštění hry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
 msgid "Project files"

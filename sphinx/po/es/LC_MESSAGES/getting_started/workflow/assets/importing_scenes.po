@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,13 +165,12 @@ msgstr ""
 "glTF binarios están bien."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:57
-#, fuzzy
 msgid ""
 "Blender does not export emissive textures with the glTF file. If your model "
 "uses one, it must be brought in separately."
 msgstr ""
-"Blender no exporta texturas emisivas con el archivo glTF. Si tu modelo las "
-"usa, deben ser agregadas de manera separada."
+"Blender no exporta texturas emisivas con el archivo glTF. Si su modelo usa "
+"uno, debe traerlo por separado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid "Exporting DAE files from Blender"
@@ -414,6 +413,8 @@ msgid ""
 "Godot will not reimport materials that are stored in external files unless "
 "you remove the associated ``.material`` file before reimporting."
 msgstr ""
+"Godot no reimportará materiales almacenados en archivos externos a menos que "
+"elimine el archivo ``.material`` asociado antes de reimportarlo."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
 msgid ""
@@ -422,6 +423,11 @@ msgid ""
 "dock, going to the Import dock then setting **Material > Storage** to "
 "**Built-In** instead of **Files**."
 msgstr ""
+"Para forzar la reimportación de materiales cada vez que se reimporta la "
+"escena 3D, cambie el modo de almacenamiento de material en la escena 3D "
+"seleccionándolo en el dock del Sistema de Archivos, yendo al dock de "
+"Importación y estableciendo **Material > Almacenamiento** en **Interno** en "
+"lugar de **Archivos**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Keep On Reimport"
@@ -915,25 +921,24 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid "All the suffixes described below are *case-sensitive*."
 msgstr ""
+"Todos los sufijos descritos a continuación son *sensibles a las mayúsculas*."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:383
 msgid "Remove nodes (-noimp)"
 msgstr "Eliminar nodos (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:385
-#, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"Los nombres de nodos que tengan este sufijo se eliminarán en el momento de "
-"la importación, independientemente de su tipo. No aparecerán en la escena "
+"Los objetos que tienen el sufijo ``-noimp`` se eliminarán en el momento de "
+"la importación sin importar cuál sea su tipo. No aparecerán en la escena "
 "importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:389
-#, fuzzy
 msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
-msgstr "Crear colisiones (-col, -colonly, -convcolonly)"
+msgstr "Crear colisiones (-col, -convcol, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:391
 msgid ""
@@ -943,6 +948,12 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"La opción ``-col`` funcionará sólo para los objetos de Malla. Si se detecta, "
+"se agregará un nodo de colisión estática hijo, usando la misma geometría de "
+"la malla. Esto creará una forma de colisión de malla triangular, que es una "
+"opción lenta, pero precisa para la detección de colisiones. Esta opción es "
+"normalmente la que quieres para la geometría del nivel (pero mira también ``-"
+"colonly`` más abajo)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:397
 msgid ""
@@ -956,49 +967,56 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"La opción``-convcol`` creará una \"ref:`class_convexpolygonshape` en lugar "
+"de una :ref:`class_concavepolygonshape`. A diferencia de las mallas de "
+"triángulos que pueden ser cóncavas, una forma convexa sólo puede representar "
+"con precisión una forma que no tiene ángulos cóncavos (una pirámide es "
+"convexa, pero una caja hueca es cóncava). Debido a esto, las formas de "
+"colisión convexas generalmente no son adecuadas para la geometría de nivel. "
+"Cuando se representan mallas suficientemente simples, las formas de colisión "
+"convexas pueden dar lugar a un mejor rendimiento en comparación con una "
+"forma de colisión triangular. Esta opción es ideal para objetos simples o "
+"dinámicos que requieren una detección de colisiones mayormente precisa."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
-#, fuzzy
 msgid ""
 "However, in both cases, the visual geometry may be too complex or not smooth "
 "enough for collisions. This can create physics glitches and slow down the "
 "engine unneccesarily."
 msgstr ""
-"Sin embargo, a menudo se da el caso de que la geometría visual es demasiado "
-"compleja o irregular para las colisiones, que terminan por no funcionar bien."
+"Sin embargo, en ambos casos, la geometría visual puede ser demasiado "
+"compleja o no lo suficientemente suave para las colisiones. Esto puede crear "
+"fallas físicas y ralentizar el motor innecesariamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
-#, fuzzy
 msgid ""
 "To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
 "upon importing and will create a :ref:`class_staticbody` collision instead. "
 "This helps the visual mesh and actual collision to be separated."
 msgstr ""
-"Para resolver esto, existe el modificador \"-colonly\", que eliminará la "
-"malla al importarla y creará una colisión :ref:`class_staticbody` en su "
-"lugar. Esto ayuda a separar la malla visual de la colisión real."
+"Para solucionar esto, existe el modificador ``-colonly``. Eliminará la malla "
+"al importar y creará una colisión :ref:`class_staticbody` en su lugar. Esto "
+"ayuda a separar la malla visual y la colisión real."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:414
-#, fuzzy
 msgid ""
 "The option ``-convcolonly`` works in a similar way, but will create a :ref:"
 "`class_convexpolygonshape` instead."
 msgstr ""
-"La opción \"-convcolonly\" creará :ref:`class_convexpolygonshape` en lugar "
-"de :ref:`class_concavepolygonshape`."
+"La opción ``-convcolonly`` funciona de manera similar, pero creará una :ref:"
+"`class_convexpolygonshape` en su lugar."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
-#, fuzzy
 msgid ""
 "The option ``-colonly`` can also be used with Blender's empty objects. On "
 "import, it will create a :ref:`class_staticbody` with a collision node as a "
 "child. The collision node will have one of a number of predefined shapes, "
 "depending on Blender's empty draw type:"
 msgstr ""
-"La opción \"-colonly\" también se puede utilizar con los objetos vacíos de "
-"Blender. Al importarlo creará un :ref:`class_staticbody` con el nodo de "
-"colisión como hijo. El nodo de colisión tendrá una de las formas "
-"predefinidas, dependiendo del tipo de dibujo vacío del Blender:"
+"La opción ``-colonly`` también se puede usar con los objetos vacíos de "
+"Blender. En la importación, creará un :ref:`class_staticbody` con un nodo de "
+"colisión como hijo. El nodo de colisión tendrá una de varias formas "
+"predefinidas, dependiendo del tipo de dibujo vacío de Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
 msgid "Single arrow will create a :ref:`class_rayshape`."
@@ -1024,75 +1042,76 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"Cuando sea posible, trata de usar unas cuantas formas de colisión primitivas "
+"en lugar de mallas triangulares o formas convexas. Las formas primitivas a "
+"menudo tienen el mejor rendimiento y fiabilidad."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:434
-#, fuzzy
 msgid ""
 "For better visibility in Blender's editor, you can set the \"X-Ray\" option "
 "on collision empties and set some distinct color for them in Blender's "
 "**User Preferences > Themes > 3D View > Empty**."
 msgstr ""
-"Para una mejor visibilidad en el editor de Blender, el usuario puede "
-"configurar la opción \"X-Ray\" en los vacíos de colisión y establecer un "
-"color distinto para ellos en User Preferences / Themes / 3D View / Empty."
+"Para una mejor visibilidad en el editor de Blender, puede configurar la "
+"opción \"X-Ray\" en los vacíos de colisión y establecer un color distinto "
+"para ellos en Blender **User Preferences > Themes > 3D View > Empty**."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:440
 msgid ""
 "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
 "shapes."
 msgstr ""
+"Ver :ref:`doc_collision_shapes_3d` para una visión general de las formas de "
+"colisión."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:444
 msgid "Create navigation (-navmesh)"
 msgstr "Crear navigation (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:446
-#, fuzzy
 msgid ""
 "A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
 "mesh. The original Mesh object will be removed at import-time."
 msgstr ""
-"Un nodo de malla con este sufijo se convertirá en una malla de navegación. "
-"Se eliminará el nodo Mesh original."
+"Un nodo de malla con el sufijo ``-navmesh`` se convertirá en una malla de "
+"navegación. El objeto Mesh original se eliminará en el momento de la "
+"importación."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:450
 msgid "Create a VehicleBody (-vehicle)"
 msgstr "Crea un VehicleBody (-vehicle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:452
-#, fuzzy
 msgid ""
 "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
 "ref:`class_VehicleBody` node."
 msgstr ""
-"Un nodo mesh con este sufijo se importará como un hijo a un nodo :ref:"
-"`VehicleBody <class_VehicleBody>`."
+"Un nodo de malla con el sufijo ``-vehicle`` se importará como hijo a un "
+"nodo :ref:`class_VehicleBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:456
 msgid "Create a VehicleWheel (-wheel)"
 msgstr "Crea un VehicleWheel (-wheel)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:458
-#, fuzzy
 msgid ""
 "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
 "`class_VehicleWheel` node."
 msgstr ""
-"Un nodo mesh con este sufijo se importará como un hijo a un nodo :ref:"
-"`VehicleWheel <class_VehicleWheel>`."
+"Un nodo de malla con el sufijo ``-wheel`` se importará como hijo a un nodo :"
+"ref:`class_VehicleWheel`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:462
 msgid "Rigid Body (-rigid)"
-msgstr "Rigid Body (-rigid)"
+msgstr "RigidBody (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:464
-#, fuzzy
 msgid ""
 "A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
 "`class_RigidBody`."
 msgstr ""
-"Un nodo mesh con este sufijo se importará como un hijo a un nodo :ref:"
-"`VehicleBody <class_VehicleBody>`."
+"Un nodo de malla con el sufijo ``-rigid`` se importará como :ref:"
+"`class_RigidBody`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:467
 msgid "Animation loop (-loop, -cycle)"
@@ -1111,10 +1130,9 @@ msgstr ""
 "anteriormente, este no requiere un guión.**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:473
-#, fuzzy
 msgid ""
 "In Blender, this requires using the NLA Editor and naming the Action with "
 "the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
-"En Blender, esto requiere usar el NLA Editor y nombrar la Acción con el "
-"prefijo o el sufijo \"loop\" o \"cycle\"."
+"En Blender, esto requiere usar el Editor NLA y nombrar la Acción con el "
+"prefijo o sufijo ``bucle`` o ``ciclo``."

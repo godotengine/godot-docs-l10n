@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,6 @@ msgstr ""
 "终止它。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
-#, fuzzy
 msgid ""
 "A solution is to code a global, auto-loaded sound manager class. It "
 "generates a pool of ``AudioStreamPlayer`` nodes that cycle through as each "
@@ -79,11 +78,11 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
-"用户倾向于认为最好的解决方案是，通过使 ``SoundManager`` 自动加载节点，使整个"
-"系统更智能。它会生成一个 ``AudioStreamPlayers`` 池，随着每个新的音效请求的出"
-"现，而循环播放。然后，他们将 ``SoundManager`` 设置为自动加载，以便可以使用 "
-"``SFX.play(\"coin_pickup.ogg\")`` 从任何位置进行访问。殊不知，他们已经引入了"
-"许多复杂的东西到他们的代码。"
+"有一个解决方案是写一个全局的，自动加载的音效管理器类。它会生成一个 "
+"``AudioStreamPlayers``的节点池，每个播放器随着每个新的音效请求的出现而依次循"
+"环播放。我们不妨就起名该类为``Sound``，你可以使用 ``Sound.play(\"coin_pickup."
+"ogg\")`` 从你的项目的任何位置使用它。这在短期内解决了问题但是却造成了更多的麻"
+"烦："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
 #, fuzzy
@@ -125,13 +124,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
-#, fuzzy
 msgid ""
 "Contrast this with each scene keeping as many ``AudioStreamPlayer`` nodes as "
 "it needs within itself and all these problems go away:"
 msgstr ""
 "与之形成对比的是，每个场景在其内部，保留尽可能多的 ``AudioStreamPlayer`` 节"
-"点，所有这些问题都会消失。"
+"点，所有这些问题都会消失:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:55
 msgid ""

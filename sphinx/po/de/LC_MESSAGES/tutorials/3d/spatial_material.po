@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -373,10 +373,12 @@ msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
+"**Burley:** Standardmodus, der ursprüngliche diffuse Algorithmus von Disney "
+"Principled PBS."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid "**Lambert:** Is not affected by roughness."
-msgstr ""
+msgstr "**Lambert:** Wird nicht von Rauheit beeinflusst."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:176
 msgid ""
@@ -401,7 +403,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:189
 msgid "Specular Mode"
-msgstr ""
+msgstr "spiegelnder Modus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:191
 msgid ""
@@ -412,6 +414,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:194
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
+"**ShlickGGGX:** Der heutzutage von PBR-3D-Engines am häufigsten verwendete "
+"Blob."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:195
 msgid ""
@@ -421,20 +425,21 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid "**Phong:** Same as above."
-msgstr ""
+msgstr "**Phong:** Wie oben."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:198
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
+"**Toon:** Erstellt einen Toon-Blob, dessen Größe sich je nach Rauheit ändert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:199
 msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
-msgstr ""
+msgstr "**Disabled:** Manchmal ist der Blob im Weg. Weg da!"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:204
 msgid "Blend Mode"
-msgstr ""
+msgstr "Übergangs-Modus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:206
 msgid ""
@@ -455,28 +460,34 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid "**Sub:** Object is subtracted."
-msgstr ""
+msgstr "**Sub:** Objekt wird subtrahiert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:213
 msgid "**Mul:** Object is multiplied."
-msgstr ""
+msgstr "**Mul:** Objekt wird multipliziert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:218
 msgid "Cull Mode"
-msgstr ""
+msgstr "Ausschneid-Modus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:220
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
 msgstr ""
+"Bestimmt, welche Seite des Objekts nicht gezeichnet wird, wenn Rückseiten "
+"gerendert werden:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:222
 msgid "**Back:** The back of the object is culled when not visible (default)."
 msgstr ""
+"**Rückseite:** Die Rückseite des Objekts wird ausgesondert, wenn sie nicht "
+"sichtbar ist (Standard)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid "**Front:** The front of the object is culled when not visible."
 msgstr ""
+"**Vorderseite:** Die Vorderseite des Objekts wird ausgesondert, wenn sie "
+"nicht sichtbar ist."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:224
 msgid ""
@@ -486,20 +497,24 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:227
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "Tiefenzeichnungsmodus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:229
 msgid "Specifies when depth rendering must take place."
-msgstr ""
+msgstr "Gibt an, wann das Tiefenrendern stattfinden muss."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:231
 msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
 msgstr ""
+"**Nur undurchsichtig (Standard):** Die Tiefe wird nur für undurchsichtige "
+"Objekte gezeichnet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:232
 msgid ""
 "**Always:** Depth draw is drawn for both opaque and transparent objects."
 msgstr ""
+"**Immer:** Tiefenzeichnung wird sowohl für undurchsichtige als auch für "
+"transparente Objekte verwendet."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:233
 msgid ""
@@ -516,7 +531,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:242
 msgid "Line Width"
-msgstr ""
+msgstr "Linienbreite"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:244
 msgid ""
@@ -530,7 +545,7 @@ msgstr "Punktgröße"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:250
 msgid "When drawing points, specify the point size in pixels."
-msgstr ""
+msgstr "Geben Sie beim Zeichnen von Punkten die Punktgröße in Pixel an."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:253
 msgid "Billboard Mode"
@@ -544,7 +559,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:258
 msgid "**Disabled:** Billboard mode is disabled."
-msgstr ""
+msgstr "**Disabled:** Der Billboard-Modus ist deaktiviert."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:259
 msgid ""
@@ -582,6 +597,7 @@ msgstr "Wachsen"
 #: ../../docs/tutorials/3d/spatial_material.rst:277
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
+"Die Objektvertices wachsen in der Richtung, in die ihre Normalen zeigen:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:281
 msgid ""
@@ -591,7 +607,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:288
 msgid "Use Alpha Scissor"
-msgstr ""
+msgstr "Alpha-Schere verwenden"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:290
 msgid ""
@@ -727,9 +743,8 @@ msgstr ""
 "beeinflusst."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
-#, fuzzy
 msgid "Normal map"
-msgstr "Normal Map (Karte)"
+msgstr "Normale Zuordnung/Abbildung"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
 msgid ""
@@ -738,6 +753,11 @@ msgid ""
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
+"Mit der normalen Zuordnung können Sie eine Textur festlegen, die feinere "
+"Formdetails darstellt. Dadurch wird die Geometrie nicht geändert, sondern "
+"nur der Einfallswinkel für Licht. In Godot werden nur die roten und grünen "
+"Kanäle normaler Karten verwendet, um eine bessere Komprimierung und eine "
+"bessere Kompatibilität zu erzielen."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""
@@ -746,6 +766,12 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot benötigt die normale Karte, um die X+ -, Y- und Z+ -Koordinaten zu "
+"verwenden. Mit anderen Worten, wenn Sie ein Material importiert haben, das "
+"für die Verwendung mit einer anderen Engine erstellt wurde, müssen Sie "
+"möglicherweise die normale Karte so konvertieren, dass ihre Y-Achse "
+"umgedreht wird. Andernfalls scheint die normale Kartenrichtung auf der Y-"
+"Achse invertiert zu sein."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:374
 msgid ""
@@ -753,6 +779,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Weitere Informationen über Normal Maps (einschließlich einer "
+"Koordinatenordnungstabelle für populäre Engines) finden Sie `hier <http://"
+"wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid "Rim"
@@ -766,6 +795,11 @@ msgid ""
 "takes light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
+"Einige Gewebe haben einen sehr feinen Flaum, durch den Licht gestreut wird. "
+"Godot emuliert dies mit dem Parameter *Rim (Randbereich)*. Im Gegensatz zu "
+"anderen Randbeleuchtungsimplementierungen, die nur den Strahlungskanal "
+"verwenden, berücksichtigt diese tatsächlich Licht (kein Licht bedeutet kein "
+"Randbereich). Dies macht den Effekt wesentlich glaubwürdiger."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:388
 msgid ""
@@ -774,10 +808,15 @@ msgid ""
 "for the rim. If *Tint* is ``1``, then the albedo of the material is used. "
 "Using intermediate values generally works best."
 msgstr ""
+"Der Außenrandbereich hängt von der Rauheit ab, und es gibt einen speziellen "
+"Parameter der angibt, wie er gefärbt werden muss. Wenn *Tint* ``0`` ist, "
+"wird die Farbe des Lichts für den Rand verwendet. Wenn *Tint* ``1`` ist, "
+"wird die Albedo des Materials verwendet. Die Verwendung von Zwischenwerten "
+"funktioniert im Allgemeinen am besten."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:394
 msgid "Clearcoat"
-msgstr ""
+msgstr "Klarlack"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:396
 #: ../../docs/tutorials/3d/spatial_material.rst:405
@@ -793,6 +832,10 @@ msgid ""
 "coat to the material. This is common in car paint and toys. In practice, "
 "it's a smaller specular blob added on top of the existing material."
 msgstr ""
+"Der Parameter *Klarlack* wird verwendet, um dem Material einen zweiten "
+"Durchgang transparenter Beschichtung hinzuzufügen. Dies ist bei Autolacken "
+"und Spielzeugen üblich. In der Praxis ist es ein kleinerer Spiegelklecks, "
+"der über dem vorhandenen Material hinzugefügt wird."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid "Anisotropy"
@@ -808,7 +851,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:414
 msgid "Ambient Occlusion"
-msgstr ""
+msgstr "Umgebungsokklusion (Umgebungsbedingte Verdeckung)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:416
 msgid ""
@@ -971,7 +1014,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:517
 msgid "Triplanar Mapping"
-msgstr ""
+msgstr "Triplanare Mapping"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:519
 msgid ""
@@ -989,7 +1032,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:530
 msgid "Proximity and distance fade"
-msgstr ""
+msgstr "Nähe und Entfernung verblassen"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:532
 msgid ""

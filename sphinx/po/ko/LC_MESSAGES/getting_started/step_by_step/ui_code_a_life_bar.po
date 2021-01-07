@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,7 +314,7 @@ msgid ""
 "later in the tutorial."
 msgstr ""
 "두 번째 줄을 ``bar.max_value`` 의 값을 지정합니다.이 두 줄을 하나로 묶을 수"
-"도 있습니다, 하지만  이 튜토리얼에서 ``player_max_health`` 를 나중에도 사용해"
+"도 있습니다, 하지만 이 튜토리얼에서 ``player_max_health`` 를 나중에도 사용해"
 "야 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
@@ -461,7 +461,7 @@ msgstr "``health_changed`` 는 캐릭터가 피해를 입었을 때 방출됩니
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr "우리는  health\\_changed 시그널을 연결합니다"
+msgstr "우리는 health\\_changed 시그널을 연결합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -601,7 +601,7 @@ msgid ""
 "It takes a new\\_value as its only argument:"
 msgstr ""
 "새로운 ``update_health`` 메서드를 ``_on_Player_health_changed`` 아래에 만듭니"
-"다.  new\\_value를 유일한 인수로 갖습니다:"
+"다. new\\_value를 유일한 인수로 갖습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
@@ -662,7 +662,7 @@ msgstr ""
 "인터페이스는 작동하지만, 몇 가지 애니메이션을 사용할 수 있습니다. 지금이 속성"
 "을 애니메이트 하는데 필수적인 도구, ``Tween`` 노드를 소개하기에 좋은 순간이네"
 "요. ``Tween``\\ 은 어떤 것이든 처음부터 끝을 일정 기간 동안 애니메이트 합니"
-"다. 예를 들어 캐릭터가 피해를 입을 때  ``Player``\\ 의 현재 새로운 ``health``"
+"다. 예를 들어 캐릭터가 피해를 입을 때 ``Player``\\ 의 현재 새로운 ``health``"
 "\\ 로 ``TextureProgress``\\ 에서 체력을 애니메이트 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
@@ -956,8 +956,8 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
-"`modulate` 는 `CanvasItem` 클래스에서 나옵니다. 모든 2D와 UI  노드는 여기에 "
-"상속됩니다. 이것은 노드의 가시성을 켜고 끌 수 있고, 셰이더를 지정하고, "
+"`modulate` 는 `CanvasItem` 클래스에서 나옵니다. 모든 2D와 UI 노드는 여기에 상"
+"속됩니다. 이것은 노드의 가시성을 켜고 끌 수 있고, 셰이더를 지정하고, "
 "`modulate` 에서 색상을 사용하여 수정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602

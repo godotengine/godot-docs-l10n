@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
-#, fuzzy
 msgid "Customizing the mouse cursor"
-msgstr "Запуск редактора"
+msgstr "Настройка курсора мыши"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
 msgid ""
@@ -28,22 +27,28 @@ msgid ""
 "order to suit the overall design. There are two ways to customize the mouse "
 "cursor:"
 msgstr ""
+"Возможно, вам захочется изменить внешний вид курсора мыши в вашей игре, "
+"чтобы он соответствовал общему дизайну. Существует два способа настройки "
+"курсора мыши:"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:25
 msgid "Using project settings"
-msgstr ""
+msgstr "Используя настройки проекта"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:37
 msgid "Using a script"
-msgstr ""
+msgstr "Используя скрипт"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
 msgid ""
 "Using project settings is a simpler (but more limited) way to customize the "
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
+"Использование настроек проекта - это более простой (но более ограниченный) "
+"способ настройки курсора мыши. Второй способ более настраиваемый, но "
+"затрагивает создание сценариев."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:15
 msgid ""
@@ -53,18 +58,27 @@ msgid ""
 "cursor. Therefore, it's recommended to use the approach described here "
 "whenever possible."
 msgstr ""
+"Вы можете отобразить \"программный\" курсор мыши, скрыв курсор мыши и "
+"переместив Sprite в положение курсора в методе ``_process``, но это добавит "
+"по крайней мере один кадр задержки по сравнению с \"аппаратным\" курсором "
+"мыши. Поэтому рекомендуется по возможности использовать описанный здесь "
+"подход."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
 msgid ""
 "If you have to use the \"software\" approach, consider adding an "
 "extrapolation step to better display the actual mouse input."
 msgstr ""
+"Если вам нужно использовать \"программный\" подход, подумайте о добавлении "
+"шага экстраполяции, чтобы лучше отобразить фактический ввод мыши."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
+"Откройте настройки проекта, перейдите в Display>Mouse Cursor. Вы увидите "
+"Custom Image и Custom Image Hotspot."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:31
 msgid ""
@@ -72,34 +86,41 @@ msgid ""
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
+"Custom Image - это желаемое изображение, которое вы хотите установить в "
+"качестве курсора мыши. Custom Hotspot - это точка на изображении, которую вы "
+"хотели бы использовать в качестве точки обнаружения курсора."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:34
 msgid "The custom image **must** be less than 256x256."
-msgstr ""
+msgstr "Пользовательское изображение **должно** быть меньше 256x256."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:39
 msgid "Create a Node and attach the following script."
-msgstr ""
+msgstr "Создайте Node и прикрепите следующий скрипт."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:77
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
+"Проверьте :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_method_set_custom_mouse_cursor>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:81
 msgid "Demo project"
-msgstr ""
+msgstr "Демо-проект"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:83
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
+"Узнайте больше, изучив этот демо-проект: https://github.com/"
+"guilhermefelipecgs/custom_hardware_cursor"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:87
 msgid "Cursor list"
-msgstr ""
+msgstr "Список курсоров"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:89
 msgid ""
@@ -107,3 +128,7 @@ msgid ""
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
 "Which ones you want to use depends on your use case."
 msgstr ""
+"Как описано в классе :ref:`Input <class_Input>` (см. перечисление "
+"**CursorShape**), существует несколько курсоров мыши, которые вы можете "
+"определить. Какие из них вы хотите использовать, зависит от вашего варианта "
+"использования."

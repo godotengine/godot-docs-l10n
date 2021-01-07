@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,15 +138,14 @@ msgid "Player scene"
 msgstr "Scène Player"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"La première scène que nous allons faire définit l'objet ``Player``. L'un des "
-"avantages de la création d'une scène Player séparée est que nous pouvons la "
-"tester séparément, avant même d'avoir créé d'autres parties du jeu."
+"La première scène définira l'objet ``Player``. L'un des avantages de la "
+"création d'une scène Player séparée est que nous pouvons la tester "
+"séparément, avant même d'avoir créé d'autres parties du jeu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -920,15 +919,15 @@ msgid "Main scene"
 msgstr "Scène principale"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
 "Maintenant, il est temps de tout rassembler ensemble. Créer une nouvelle "
-"scène et ajouter un :ref:`Node <class_Node>` nommé ``Main``. Cliquez sur le "
-"bouton \"Instance\" et sélectionnez votre ``Player.tscn`` sauvegardé."
+"scène et ajouter un :ref:`Node <class_Node>` nommé ``Main``. Assurez-vous de "
+"créer un Node, **pas** un Node2D. Cliquez sur le bouton \"Instance\" et "
+"sélectionnez le fichier ``Player.tscn`` que vous avez sauvegardé."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""

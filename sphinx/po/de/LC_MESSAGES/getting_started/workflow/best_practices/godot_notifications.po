@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,6 +113,10 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_PARENTED>`: a callback that triggers "
 "anytime one adds a child node to another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_PARENTED "
+"<class_Node_constant_NOTIFICATION_PARENTED>`: Ein Rückruf, der immer dann "
+"ausgelöst wird, wenn ein untergeordneter Node einem anderen Node hinzugefügt "
+"wird."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:52
 msgid ""
@@ -120,6 +124,10 @@ msgid ""
 "<class_Node_constant_NOTIFICATION_UNPARENTED>`: a callback that triggers "
 "anytime one removes a child node from another node."
 msgstr ""
+":ref:`Node::NOTIFICATION_UNPARENTED "
+"<class_Node_constant_NOTIFICATION_UNPARENTED>`: Ein Rückruf, der immer dann "
+"ausgelöst wird, wenn ein untergeordneter Node von einem anderen Node "
+"entfernt wird."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:56
 msgid ""
@@ -134,12 +142,16 @@ msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification`` method."
 msgstr ""
+"Auf all diese benutzerdefinierten Benachrichtigungen kann man über die "
+"universelle Methode ``_notification`` zugreifen."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:65
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
 "overridden by scripts."
 msgstr ""
+"Methoden in der Dokumentation, die als \"virtuell\" gekennzeichnet sind, "
+"sollen auch von Skripten überschrieben werden."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:68
 msgid ""
@@ -196,7 +208,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
-msgstr ""
+msgstr "_init vs. initialization vs. export"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
 msgid ""
@@ -211,12 +223,16 @@ msgid ""
 "Scripts have three types of property assignments that can occur during "
 "instantiation:"
 msgstr ""
+"Skripts verfügen über drei Arten von Eigenschaftszuweisungen, die während "
+"der Instanziierung auftreten können:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:210
 msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
 msgstr ""
+"Beim Instanziieren einer Szene werden Eigenschaftswerte in der folgenden "
+"Reihenfolge eingerichtet:"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:213
 msgid ""
@@ -240,7 +256,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr ""
+msgstr "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""

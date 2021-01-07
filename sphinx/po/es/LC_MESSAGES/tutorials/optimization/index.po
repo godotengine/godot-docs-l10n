@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "prácticos de esto son:"
 
 #: ../../docs/tutorials/optimization/index.rst:11
-#, fuzzy
 msgid ""
 "Rendering large amounts of objects efficiently is easy, but when a large "
 "scene must be rendered, it can become inefficient. To solve this, visibility "
@@ -45,15 +44,14 @@ msgid ""
 "efficient, but at the same time, fewer objects are rendered. Therefore, the "
 "overall rendering efficiency is improved."
 msgstr ""
-"Renderizar objetos eficientemente en grandes cantidades es fácil, pero "
-"cuando se debe renderizar una escena grande, puede volverse ineficiente. "
-"Para resolver esto, se debe agregar el cálculo de visibilidad al "
-"renderizado, lo que hace que el renderizado sea menos eficiente, pero, al "
-"mismo tiempo, se renderizan menos objetos, por lo que la eficiencia en "
-"general mejora."
+"Renderizar grandes cantidades de objetos de manera eficiente es fácil, pero "
+"cuando se debe renderizar una escena grande, puede volverse ineficaz. Para "
+"resolver esto, se debe agregar el cálculo de visibilidad al renderizado. "
+"Esto hace que el renderizado sea menos eficiente, pero al mismo tiempo, se "
+"renderizan menos objetos. Por lo tanto, se mejora la eficiencia de "
+"renderizado general."
 
 #: ../../docs/tutorials/optimization/index.rst:17
-#, fuzzy
 msgid ""
 "Configuring the properties of every material for every object that needs to "
 "be rendered is also slow. To solve this, objects are sorted by material to "
@@ -61,11 +59,10 @@ msgid ""
 msgstr ""
 "La configuración de las propiedades de cada material para cada objeto que "
 "necesita ser renderizado también es lenta. Para resolver esto, los objetos "
-"se clasifican por material para reducir los costes, pero al mismo tiempo la "
-"clasificación tiene un coste."
+"se clasifican por material para reducir los costos. Al mismo tiempo, la "
+"clasificación tiene un costo."
 
 #: ../../docs/tutorials/optimization/index.rst:21
-#, fuzzy
 msgid ""
 "In 3D physics, a similar situation happens. The best algorithms to handle "
 "large amounts of physics objects (such as SAP) are slow at insertion/removal "
@@ -73,14 +70,13 @@ msgid ""
 "removal, as well as raycasting, will not be able to handle as many active "
 "objects."
 msgstr ""
-"En la física 3D ocurre una situación similar. Los mejores algoritmos para "
-"manejar grandes cantidades de objetos físicos (tales como SAP) son lentos en "
-"la inserción/eliminación de objetos y el ray-casting. Los algoritmos que "
-"permiten una inserción y eliminación más rápida, así como el ray-casting no "
-"serán capaces de manejar tantos objetos activos."
+"En física 3D ocurre una situación similar. Los mejores algoritmos para "
+"manejar grandes cantidades de objetos físicos (como SAP) son lentos en la "
+"inserción / remoción de objetos y la transmisión de rayos. Los algoritmos "
+"que permiten una inserción y remoción más rápida, así como el raycasting, no "
+"podrán manejar tantos objetos activos."
 
 #: ../../docs/tutorials/optimization/index.rst:27
-#, fuzzy
 msgid ""
 "And there are many more examples of this! Game engines strive to be general-"
 "purpose in nature. Balanced algorithms are always favored over algorithms "
@@ -88,46 +84,43 @@ msgid ""
 "are fast but are more difficult to use."
 msgstr ""
 "¡Y hay muchos más ejemplos de esto! Los motores de juegos se esfuerzan por "
-"ser de propósito general en la naturaleza, por lo que los algoritmos "
-"balanceados siempre son favorecidos sobre los algoritmos que pueden ser "
-"rápidos en algunas situaciones y lentos en otras... o los algoritmos que son "
-"rápidos pero hacen la usabilidad más difícil."
+"ser de uso general por naturaleza. Los algoritmos equilibrados siempre se "
+"prefieren a los algoritmos que pueden ser rápidos en algunas situaciones y "
+"lentos en otras, o los algoritmos que son rápidos pero son más difíciles de "
+"usar."
 
 #: ../../docs/tutorials/optimization/index.rst:32
-#, fuzzy
 msgid ""
 "Godot is not an exception to this. While it is designed to have backends "
 "swappable for different algorithms, the default backends prioritize balance "
 "and flexibility over performance."
 msgstr ""
-"Godot no es una excepción y, aunque está diseñado para tener backends "
-"intercambiables para diferentes algoritmos, los predeterminados (o más bien, "
-"los únicos que están ahí por ahora) priorizan el equilibrio y la "
-"flexibilidad sobre el rendimiento."
+"Godot no es una excepción a esto. Si bien está diseñado para tener backends "
+"intercambiables por diferentes algoritmos, los backends predeterminados "
+"priorizan el equilibrio y la flexibilidad sobre el rendimiento."
 
 #: ../../docs/tutorials/optimization/index.rst:36
-#, fuzzy
 msgid ""
 "With this clear, the aim of this tutorial section is to explain how to get "
 "the maximum performance out of Godot. While the tutorials can be read in any "
 "order, it is a good idea to start from :ref:`doc_general_optimization`."
 msgstr ""
-"Con esto claro, el objetivo de este tutorial es explicar cómo obtener el "
-"máximo rendimiento de Godot."
+"Con esto claro, el objetivo de esta sección tutorial es explicar cómo sacar "
+"el máximo rendimiento a Godot. Si bien los tutoriales se pueden leer en "
+"cualquier orden, es una buena idea comenzar desde :ref:"
+"`doc_general_optimization`."
 
 #: ../../docs/tutorials/optimization/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "Comando"
+msgstr "Común"
 
 #: ../../docs/tutorials/optimization/index.rst:51
 msgid "CPU"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:60
-#, fuzzy
 msgid "GPU"
-msgstr "GUI"
+msgstr "GPU"
 
 #: ../../docs/tutorials/optimization/index.rst:70
 msgid "2D"

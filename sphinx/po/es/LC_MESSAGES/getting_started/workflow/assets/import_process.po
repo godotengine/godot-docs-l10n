@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "escenas, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -46,12 +45,12 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"En Godot 3.0 podemos usar un enfoque más moderno para importar: Simplemente "
-"arrastra y suelta tus recursos (archivos de imágenes, escenas, audios, "
-"fuentes, etc.) directamente en la carpeta del proyecto (cópialos manualmente "
-"desde el explorador de archivos de tu SO). Godot importará esos archivos "
-"automáticamente y mantendrá los recursos importados oculto en la carpeta "
-"res://.import ."
+"En Godot 3.0+, utilizamos un enfoque más moderno para la importación: "
+"simplemente coloque sus activos (archivos de imagen, escenas, archivos de "
+"audio, fuentes, etc.) directamente en la carpeta del proyecto (cópielos "
+"manualmente con el explorador de archivos de su sistema operativo). Godot "
+"importará automáticamente estos archivos internamente y mantendrá los "
+"recursos importados ocultos en una carpeta res: //.import."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -61,28 +60,36 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"Esto significa que cuando se intenta acceder a los activos importados a "
+"través del código, es necesario utilizar el :ref:`Resource "
+"Loader<class_ResourceLoader>` ya que tendrá en cuenta automáticamente dónde "
+"se guardan los archivos internos. Si intentas acceder a un activo importado "
+"mediante la clase :ref:`File <class_File>` funcionará en el editor, pero se "
+"romperá en el proyecto exportado."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"Sin embargo, el :ref:`Resource Loader<class_ResourceLoader>` no puede "
+"acceder a los archivos no importados, sólo la clase :ref:`File <class_File>` "
+"puede."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "Cambiando parámetros de importación"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Cambiar los parámetros de importación de un recurso en Godot (nuevamente, "
-"ten en cuenta que los parámetros de importación sólo están presentes en "
-"tipos de recursos Godot no nativos) es fácil. Selecciona el recurso "
-"correspondiente en el panel del Sistema de Archivos:"
+"Para cambiar los parámetros de importación de un activo en Godot "
+"(nuevamente, tenga en cuenta que los parámetros de importación solo están "
+"presentes en los tipos de recursos de Godot no nativos), seleccione el "
+"recurso relevante en la base del sistema de archivos:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
@@ -104,9 +111,8 @@ msgstr ""
 "recursos y los parámetros indicados se aplicarán a todos al reimportar."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "Usando múltiples hilos"
+msgstr "Reimportar varios activos"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -116,6 +122,12 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"Mientras se trabaja en un proyecto, es posible que se encuentre con que "
+"varios recursos necesitan que se cambien los mismos parámetros, como la "
+"habilitación de mipmaps, pero sólo se desea que se cambien esos parámetros "
+"específicos. Para ello, seleccione cada activo que desee reimportar en el "
+"sistema de archivos. En la pestaña de importación habrá ahora una casilla de "
+"verificación a la izquierda de cada parámetro de importación."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -124,6 +136,10 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Seleccione la casilla de verificación de los parámetros que desea modificar "
+"en sus activos importados, y luego cambie los parámetros normalmente. "
+"Finalmente, haga clic en el botón de reimportación y cada activo "
+"seleccionado será reimportado con sólo esos parámetros cambiados."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
-msgstr ""
+msgstr "Мышь и входные координаты"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
@@ -30,10 +30,13 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"Причина этого небольшого урока состоит в том, чтобы прояснить многие "
+"распространенные ошибки относительно входных координат, получения положения "
+"мыши, разрешения экрана и т. д."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "Отображение hardware-координат"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
@@ -41,10 +44,13 @@ msgid ""
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
+"Использование hardware-координат имеет смысл в случае написания комплекса, "
+"предназначенного для работы на PC, например редакторов, MMO, инструментов и "
+"т. д. Однако это не имеет такого большого смысла за пределами этой области."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "Отображение viewport-координат"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
@@ -53,11 +59,15 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godot использует viewports (видовые экраны) для отображения контента, и "
+"видовые экраны можно масштабировать несколькими опциями (см. туториал :ref:"
+"`doc_multiple_resolutions`). Используйте, например, функции в узлах для "
+"получения координат мыши и размера видового экрана:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
-msgstr ""
+msgstr "Кроме того, можно запросить в видовом окне положение мыши:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
 msgid ""
@@ -66,3 +76,7 @@ msgid ""
 "Use ``event.relative`` instead of ``event.position`` and ``event.speed`` to "
 "process mouse movement and position changes."
 msgstr ""
+"Когда режим мыши установлен на ``Input.MOUSE_MODE_CAPTURED``, значение "
+"``event.position`` из ``InputEventMouseMotion`` находится в центре экрана. "
+"Используйте ``event.relative`` вместо ``event.position`` и ``event.speed`` "
+"для обработки движения мыши и изменения ее положения."

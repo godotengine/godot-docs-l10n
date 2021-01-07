@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,12 +60,22 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"Это означает, что при попытке получить доступ к импортированным ресурсам с "
+"помощью кода, вам необходимо использовать :ref:"
+"`ResourceLoader<class_ResourceLoader>` класс, поскольку он автоматически "
+"учитывает: куда сохраняются внутренние файлы. Если попытаетесь получить "
+"доступ к импортированному ресурсу с помощью класса :ref:`File <class_File>`, "
+"он будет работать в самом редакторе, но прервется на экспортированном "
+"проекте."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"Однако, :ref:`ResourceLoader<class_ResourceLoader>` не имеет доступа к не "
+"импортированным файлам, только класс :ref:`File <class_File>` на такое "
+"способен."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
@@ -101,9 +111,8 @@ msgstr ""
 "применяться ко всем из них при повторном импорте."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "Импортирование изображений"
+msgstr "Повторный импорт нескольких активов"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -113,6 +122,12 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"Во время работы над проектом вы можете обнаружить, что для нескольких "
+"ресурсов необходимо изменить одни и те же параметры, например включить MIP-"
+"карты, но вам нужно изменить только эти конкретные параметры. Для этого "
+"выберите каждый ресурс, который вы хотите повторно импортировать в файловую "
+"систему. На вкладке импорта теперь будет флажок слева от каждого параметра "
+"импорта."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -121,6 +136,10 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"Установите флажок для параметров, которые вы хотите изменить в "
+"импортированных активах, затем измените параметры обычным образом. Наконец, "
+"нажмите кнопку повторного импорта, и каждый выбранный актив будет повторно "
+"импортирован с изменением только этих параметров."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"

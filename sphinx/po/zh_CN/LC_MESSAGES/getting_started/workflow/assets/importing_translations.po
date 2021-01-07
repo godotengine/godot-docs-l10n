@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,6 @@ msgid "Translation format"
 msgstr "翻译格式"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
-#, fuzzy
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -93,10 +92,11 @@ msgid ""
 "without a `byte order mark <https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 msgstr ""
-"为了完成这幅图景并提供高效的翻译支持，Godot有一个特殊的导入器，可以读取CSV文"
-"件。所有电子表格编辑器（可以是Libreoffice、Microsoft Office、Google Docs等）"
-"都可以导出为这种格式，因此唯一的要求是文件必须具有特殊的排列方式。CSV文件必须"
-"以UTF-8编码保存，并按照以下格式设置："
+"为了完成这幅图片并提供高效的翻译支持，Godot有一个可以读取CSV文件特殊的导入"
+"器。所有电子表格编辑器（可以是Libreoffice、Microsoft Office、Google Docs等）"
+"都可以导出为这种格式，因此唯一的要求是文件必须具有特殊的排列方式。CSV文件**必"
+"须**以UTF-8编码保存，且不应含有`字节顺序标记<https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid ""
@@ -105,12 +105,17 @@ msgid ""
 "workarounds as described `here <https://stackoverflow.com/questions/4221176/"
 "excel-to-csv-with-utf8-encoding>`__."
 msgstr ""
+"默认情况下，Microsoft Excel始终以ANSI编码而不是UTF-8保存CSV文件。Excel中没有"
+"内置的方法可以执行此操作，但是有一些变通的方法，如 `此处 <https://"
+"stackoverflow.com/questions/4221176/excel-to-csv-with-utf8-encoding>`__ 所"
+"述。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
+"我们建议使用 `LibreOffice <https://www.libreoffice.org/>`__ 或谷歌表格代替。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 #, fuzzy

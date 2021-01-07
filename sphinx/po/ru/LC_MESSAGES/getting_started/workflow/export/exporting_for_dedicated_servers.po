@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:24
 msgid "\"Headless\" versus \"server\" binaries"
-msgstr ""
+msgstr "Бинарные файлы \"без головы\" и \"серверы\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:26
 msgid ""
@@ -226,12 +226,18 @@ msgid ""
 "argument. This can be done by adding the following code snippet in your main "
 "scene (or a singleton)'s ``_ready()`` method::"
 msgstr ""
+"Если и ваш клиент, и сервер являются частью одного и того же проекта Godot, "
+"вам нужно будет добавить способ запуска сервера напрямую с помощью аргумента "
+"командной строки. Это можно сделать, добавив следующий фрагмент кода в вашу "
+"основную сцену (или синглтон) с помощью метода _ready ():"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:99
 msgid ""
 "Alternatively, you can make the dedicated server always start up if a "
 "headless or server binary is detected::"
 msgstr ""
+"В качестве альтернативы вы можете сделать так, чтобы выделенный сервер "
+"всегда запускался при обнаружении бинарного файла без заголовка или сервера:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:109
 msgid ""
@@ -239,6 +245,9 @@ msgid ""
 "most likely be configured in a way where running the main scene starts a "
 "server automatically."
 msgstr ""
+"Если ваш клиент и сервер являются отдельными проектами Godot, ваш сервер, "
+"скорее всего, должен быть настроен таким образом, чтобы запуск основной "
+"сцены запускал сервер автоматически."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:114
 msgid "Next steps"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr "於視接口中隱藏的物件也會被匯出，但會於 Godot 中場�
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"
-msgstr "建構管線整合"
+msgstr "建置管線整合"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 msgid ""
@@ -77,5 +77,5 @@ msgid ""
 msgstr ""
 "若有數百個模型檔時，我們會需要避免讓藝術家浪費時間在匯出 Blend 檔案。為此，匯"
 "出工具中有一個 Python 函式 ``io_scene_godot.export(輸出檔案路徑)`` 可用於呼叫"
-"來匯出檔案。該函式能用來與其他建構系統整合。Godot-Blender-exporter 儲存庫中有"
+"來匯出檔案。該函式能用來與其他建置系統整合。Godot-Blender-exporter 儲存庫中有"
 "提供一個範例 Makefile 與 python 腳本，可匯出一資料夾中所有的 Blend 檔案。"

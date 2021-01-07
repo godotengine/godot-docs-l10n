@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,9 +102,8 @@ msgstr ""
 "Он существует только в проектах, использующих Mono-версию Godot."
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:40
-#, fuzzy
 msgid "Working with Git on Windows"
-msgstr "Работает на Windows"
+msgstr "Работает с Git на Windows"
 
 #: ../../docs/getting_started/workflow/project_setup/version_control_systems.rst:42
 msgid ""
@@ -113,3 +112,7 @@ msgid ""
 "by Git due to their line endings being converted automatically. It is better "
 "to set this option as::"
 msgstr ""
+"Настройка большинства Git-приложений не обходится без параметра ``core."
+"autocrlf`` со значением ``true``. Это может привести к излишней статусной "
+"маркировке — modified, из-за автоматического преобразования окончания строк. "
+"Лучше всего изменить это значение на::"

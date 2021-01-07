@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,6 @@ msgid "Set **Mono External Editor** to **JetBrains Rider**."
 msgstr "Установите **Mono External Editor** на **JetBrains Rider**."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
-#, fuzzy
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
 msgstr "выставьте **Mono Build Tool** на **JetBrains Mono**."
 
@@ -274,15 +273,13 @@ msgid "Creating a C# script"
 msgstr "Создание C# скрипта"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
-"После успешной установки C# в Godot, вы должны увидеть следующую опцию при "
-"выборе **Attach script** (**Прикрепить скрипт**) в контекстном меню нодов в "
-"вашей сцене:"
+"После успешной настройки C# в Godot, вы должны увидеть новую опцию выбора — "
+"из контекстного меню прикрепляемого к сцене скрипта:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
@@ -376,25 +373,23 @@ msgstr ""
 "C# стримится быть наиболее наглядным, насколько это возможно."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:200
-#, fuzzy
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
-"Для получения дополнительной информации посмотрите руководство :ref:"
+"За дополнительно информацией, обратитесь к странице: :ref:"
 "`doc_c_sharp_differences`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
-#, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
 "triggered by clicking the word **Mono** at the bottom of the editor window "
 "to reveal the Mono panel, then clicking the **Build Project** button."
 msgstr ""
-"Если вы используете C#, вам нужно (пере)собирать сборки проекта всякий раз, "
-"когда вы хотите увидеть новые экспортируемые переменные или сигналы в "
-"редакторе. Эта сборка может быть запущена путем нажатия на слово **Mono** в "
-"нижней части окна редактора, чтобы открыть Mono Panel (Панель Mono), а затем "
-"на кнопку **Build Project**(**Собрать проект**)."
+"Чтобы видеть новые экспортируемые переменные и сигналы в редакторе, вам "
+"необходимо каждый раз (пере)собирать C#-проект. Эта сборка может быть "
+"запущена нажатием на **Mono**, в нижней части окна редактора; в открытой "
+"Mono Panel (Панели Mono) кликаем на кнопку **Build Project**(**Собрать "
+"проект**)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:209
 msgid ""

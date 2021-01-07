@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,6 +183,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
 msgstr ""
+"Hier ist ein Vergleich, wie sich unterschiedliches Umgebungslicht auf eine "
+"Szene auswirkt:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:97
 msgid ""
@@ -221,6 +223,8 @@ msgstr ""
 msgid ""
 "**Depth Fog:** This one is applied based on the distance from the camera."
 msgstr ""
+"**Tiefennebel:** Dieser wird basierend auf der Entfernung von der Kamera "
+"angewendet."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:120
 msgid ""
@@ -237,6 +241,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:126
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
 msgstr ""
+"Zwei Eigenschaften können verändert werden, um den Nebel-Effekt "
+"interessanter zu machen:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:128
 msgid ""
@@ -274,12 +280,16 @@ msgstr ""
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
 msgstr ""
+"**Modus:** Tonzuordnungsmodus, der linear, Reindhart, filmisch oder Asse "
+"sein kann."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:148
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
 msgstr ""
+"**Belichtung:** Tone Mapping-Belichtung, die die über die Zeit empfangene "
+"Lichtmenge simuliert."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid ""
@@ -289,7 +299,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:152
 msgid "Auto Exposure (HDR)"
-msgstr ""
+msgstr "Automatische Belichtung (HDR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:156
 msgid ""
@@ -340,6 +350,8 @@ msgstr ""
 msgid ""
 "**Max Luma:** Maximum luminance that auto exposure will aim to adjust for."
 msgstr ""
+"**Max Luma:** Maximale Luminanz (Leuchtdichte), auf die sich die "
+"automatische Belichtung einstellen soll."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:185
 msgid ""
@@ -356,10 +368,12 @@ msgid ""
 "A large amount of widely-used mid- and post-processing effects are supported "
 "in the Environment."
 msgstr ""
+"Es wird ein großer Teil der weit verbreiteten Mid- und Post-Processing-"
+"Effekte unterstützt."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:194
 msgid "Screen-Space Reflections (SSR)"
-msgstr ""
+msgstr "Bildschirm-Raum-Reflexionen (Screen-Space Reflections=SSR)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:198
 msgid ""
@@ -382,6 +396,8 @@ msgstr ""
 msgid ""
 "A few user-controlled parameters are available to better tweak the technique:"
 msgstr ""
+"Zur besseren Anpassung der Technik stehen ein paar benutzergesteuerte "
+"Parameter zur Verfügung:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:211
 msgid ""
@@ -400,6 +416,8 @@ msgid ""
 "**Fade Out** allows adjusting the fade-out curve, so the step limit fades "
 "out softly."
 msgstr ""
+"**Ausblenden** ermöglicht das Anpassen der Ausblendkurve, sodass die "
+"Schrittgrenze sanft ausgeblendet wird."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:214
 msgid ""
@@ -421,7 +439,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:220
 msgid "Screen-Space Ambient Occlusion (SSAO)"
-msgstr ""
+msgstr "Bildschirm-Raum Berührungsebene (Screen-Space Ambient Occlusion=SSAO)"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:224
 msgid ""
@@ -467,10 +485,12 @@ msgid ""
 "SSAO looks best when combined with a real source of indirect light, like "
 "GIProbe:"
 msgstr ""
+"SSAO sieht am besten aus, wenn es mit einer echten Quelle indirekten Lichts "
+"wie GIProbe kombiniert wird:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:252
 msgid "Tweaking SSAO is possible with several parameters:"
-msgstr ""
+msgstr "Die Optimierung von SSAO ist mit mehreren Parametern möglich:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:256
 msgid ""
@@ -527,7 +547,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:266
 msgid "Depth of Field / Far Blur"
-msgstr ""
+msgstr "Tiefenschärfe/Ferne Unschärfe"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:268
 msgid ""
@@ -545,7 +565,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:278
 msgid "Depth of Field / Near Blur"
-msgstr ""
+msgstr "Tiefenschärfe/Nahe Unschärfe"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:280
 msgid ""
@@ -596,10 +616,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:314
 msgid "Both will cause the light to start bleeding out of the brighter areas."
 msgstr ""
+"In beiden Fällen beginnt das Licht aus den helleren Bereichen zu leuchten."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:316
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
 msgstr ""
+"Sobald das Leuchten sichtbar ist, kann es mit einigen zusätzlichen "
+"Parametern gesteuert werden:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
 msgid ""
@@ -617,7 +640,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
 msgid "The **Blend Mode** of the effect can also be changed:"
-msgstr ""
+msgstr "Der **Mischmodus** des Effekts kann ebenfalls geändert werden:"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,12 +43,18 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"Windows verwendet für Anwendungssymbole keine Formate wie png oder jpg. "
+"Stattdessen verwendet es ein Windows-exklusives Format namens ICO. Sie "
+"können Ihr Anwendungssymbol in einem beliebigen Programm erstellen, müssen "
+"es jedoch mit einem Programm wie GIMP in eine ICO-Datei konvertieren."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"In dieser Video-Anleitung <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ "
+"erfahren Sie, wie Sie eine ICO-Datei mit GIMP exportieren können."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
@@ -69,15 +75,14 @@ msgstr ""
 "wenn Ihr Projekt ausgeführt wird."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
-#, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
 "Um das Taskleistensymbol zu ändern, gehen Sie zu **Projekt → "
-"Projekteinstellungen → Anwendung → Konfiguration → Symbol**. Klicken Sie auf "
-"das Ordnersymbol und wählen Sie das gewünschte Symbol aus."
+"Projekteinstellungen → Anwendung → Konfiguration → WindowsSymbol**. Klicken "
+"Sie auf das Ordnersymbol und wählen Sie das gewünschte Symbol aus."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
 msgid ""
@@ -85,6 +90,9 @@ msgid ""
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"Diese Einstellung ändert nur das Symbol für Ihr exportiertes Spiel unter "
+"Windows. Um das Symbol für MacOS einzustellen, verwenden Sie ``Macos Native "
+"Icon``. Und für jede andere Plattform verwenden Sie die Einstellung ``Icon``."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
 msgid "Changing the file icon"

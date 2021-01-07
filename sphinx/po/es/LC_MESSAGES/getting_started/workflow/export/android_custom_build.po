@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,18 +81,16 @@ msgstr ""
 "están, este menú te ayudara a descargarlas."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:31
-#, fuzzy
 msgid ""
 "A Gradle-based Android project will be created under ``res://android/"
 "build``. Editing these files is not needed unless you want to :ref:`create "
 "your own add-ons<doc_android_plugin>`, or you really need to modify the "
 "project."
 msgstr ""
-"Esto creará un poyecto Android, basado en Gradle, en ``res://android/"
-"build``, y creara un archivo ``.gdignore`` file in ``res://android`` para "
-"que el sistema de archivos de Godot ignore esta carpeta. No es necesario "
-"editar estos archivos, a no ser que quieras :ref:`crear tus propios add-"
-"ons<doc_android_plugin>`, o realmente necesites modificar el proyecto."
+"Se creará un proyecto de Android basado en Gradle en ``res: // android / "
+"build``. No es necesario editar estos archivos a menos que lo desee :ref:"
+"`create your own add-ons<doc_android_plugin>`, o realmente necesita "
+"modificar el proyecto."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install the Android SDK (command-line version)"
@@ -134,6 +132,10 @@ msgid ""
 "*Custom Setup* view of the installer. You have to restart Godot after this, "
 "otherwise Godot can't find the ``JAVA_HOME`` variable."
 msgstr ""
+"En Windows, asegúrate de habilitar \"Colocar la variable``JAVA_HOME`` en la "
+"vista *Instalación Personalizada* del instalador. Tienes que reiniciar a "
+"Godot después de esto, de lo contrario Godot no podrás encontrar la variable "
+"``JAVA_HOME``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
 msgid "Download the command-line tools"
@@ -158,15 +160,14 @@ msgstr ""
 "mismo usando Android Studio."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:67
-#, fuzzy
 msgid ""
 "Look on that page for the *Command line tools only* section. Currently, they "
 "are listed under *Download Options*. Scroll down a bit until you see them "
 "and download the ZIP file for your platform."
 msgstr ""
-"Mira en la pagina por *Herramientas de la Línea de Comandos*. En este "
-"momento, están listadas bajo *Opciones de Descarga*. Baja un poco hasta que "
-"las veas."
+"Busque en esa página la sección *Solo herramientas de línea de comandos*. "
+"Actualmente, se enumeran en *Opciones de descarga*. Desplácese hacia abajo "
+"un poco hasta que los vea y descargue el archivo ZIP para su plataforma."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:71
 msgid ""
@@ -190,6 +191,9 @@ msgid ""
 "folder. Then unzip the Android SDK ZIP file into the ``android-sdk/cmdline-"
 "tools`` folder."
 msgstr ""
+"Crea una carpeta vacía llamada ``cmdline-tools`` dentro de la carpeta "
+"``android-sdk``. Luego descomprime el archivo ZIP del SDK de Android en la "
+"carpeta ``android-sdk/cmdline-tools``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:86
 msgid ""
@@ -199,17 +203,24 @@ msgid ""
 "the archive with the default Windows extractor, the files are not extracted "
 "correctly and you will run into errors later on!"
 msgstr ""
+"Si estás en Windows, no debes extraer el archivo ZIP con el extractor "
+"predeterminado de Windows (por ejemplo, el Explorador de Windows). Tienes "
+"que usar otra herramienta como 7zip, WinRAR o el comando ``Expand-Archive`` "
+"de Powershell. !Si extraes el archivo con el extractor de Windows por "
+"defecto, los archivos no son extraidos correctamente y te encontrarás con "
+"errores más tarde!"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:92
 msgid ""
 "The ``cmdline-tools`` folder should now contain the unzipped folder called "
 "``tools``. Finally, rename the ``tools`` folder to ``latest``."
 msgstr ""
+"La carpeta ``cmdline-tools`` debería contener ahora la carpeta descomprimida "
+"llamada ``tools``. Finalmente, renombra la carpeta ``tools`` a ``latest``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:95
-#, fuzzy
 msgid "Your final directory structure should look like this :"
-msgstr "Tu árbol de la escena debería verse así:"
+msgstr "Su estructura de directorio final debería verse así:"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:104
 msgid ""
@@ -298,26 +309,25 @@ msgid "(or open a new shell in the ``android-sdk`` folder)."
 msgstr "(o abre una nueva consola en la carpeta ``android-sdk``)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:148
-#, fuzzy
 msgid ""
 "And you need to input the following line (This should work out of the box. "
 "However, if you haven't set the ``JAVA_HOME`` variable on Windows, there are "
 "further instructions below):"
 msgstr ""
-"Y necesitarás introducir la siguiente línea (en Linux and macOS esto debería "
-"funcionar directamente, para Windows hay mas instrucciones debajo):"
+"Y debe ingresar la siguiente línea (Esto debería funcionar de inmediato. Sin "
+"embargo, si no ha configurado la variable ``JAVA_HOME`` en Windows, hay más "
+"instrucciones a continuación):"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:156
-#, fuzzy
 msgid ""
 "On Windows, if you did not install the ``JAVA_HOME`` variable, the full path "
 "to Java should be provided. You need to add ``&`` at the beginning of the "
 "line if you use PowerShell; it's not needed for the regular ``cmd.exe`` "
 "console."
 msgstr ""
-"En Windows, se debe proporcionar la ruta de acceso completa a Java. Deberás "
-"agregar ``&`` al principio en la línea si PowerShell es usado, no es "
-"necesario para la consola normal ``cmd.exe``."
+"En Windows, si no instaló la variable ``JAVA_HOME``, se debe proporcionar la "
+"ruta completa a Java. Debe agregar ``&`` al comienzo de la línea si usa "
+"PowerShell; no es necesario para la consola normal ``cmd.exe``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:160
 msgid ""

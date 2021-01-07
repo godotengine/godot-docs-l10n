@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,7 +306,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
 msgid "PCK versus ZIP pack file formats"
-msgstr ""
+msgstr "Formats de fichiers PCK contre ZIP pack"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
@@ -314,15 +314,19 @@ msgid ""
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
+"Chaque format a ses avantages et ses inconvénients. PCK est le format par "
+"défaut et recommandé pour la plupart des cas d'utilisation, mais vous pouvez "
+"utiliser une archive ZIP à la place selon vos besoins."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
-#, fuzzy
 msgid "**PCK format:**"
-msgstr "**Formats :**"
+msgstr "**Format PCK :**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
+"Format non compressé. Taille de fichier plus importante, mais plus rapide à "
+"lire/écrire."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
@@ -330,15 +334,20 @@ msgid ""
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
+"Non lisible et éditable à l'aide d'outils normalement présents sur le "
+"système d'exploitation de l'utilisateur, même s'il existe des `outils tiers "
+"<https://github.com/hhyyrylainen/GodotPckTool>`__ pour extraire et créer des "
+"fichiers PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
-#, fuzzy
 msgid "**ZIP format:**"
-msgstr "**Formats :**"
+msgstr "**Format ZIP :**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
+"Format compressé. Taille de fichier plus petite, mais plus lent à lire/"
+"écrire."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
 msgid ""
@@ -346,3 +355,6 @@ msgid ""
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
+"Lisible et éditable à l'aide d'outils normalement présents sur le système "
+"d'exploitation de l'utilisateur. Cela peut être utile pour faciliter le "
+"modding (voir aussi :ref:`doc_exporting_pcks`)."

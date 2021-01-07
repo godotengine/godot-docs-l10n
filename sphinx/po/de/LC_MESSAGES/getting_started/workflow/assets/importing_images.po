@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,9 @@ msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - Keine Unterstützung für Bilder mit 16 Bit pro Pixel. Es "
+"werden nur Bilder mit 1 Bit, 4 Bit, 8 Bit, 24 Bit und 32 Bit pro Pixel "
+"unterstützt."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
@@ -41,29 +44,39 @@ msgid ""
 "will be loaded directly. This can be used to achieve effects using custom "
 "mipmaps."
 msgstr ""
+"DirectDraw Surface (``.dds``) - Wenn Mipmaps in der Textur vorhanden sind, "
+"werden sie direkt geladen. Dies kann verwendet werden, um Effekte mit "
+"benutzerdefinierten Mipmaps zu erzielen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:16
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
 msgstr ""
+"OpenEXR (``.exr``) - Unterstützt HDR (sehr empfohlen für Panoramahimmel)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:18
 msgid ""
 "Radiance HDR (``.hdr``) - Supports HDR (highly recommended for panorama "
 "skies)."
 msgstr ""
+"Radiance HDR (``.hdr``) - Unterstützt HDR (sehr empfohlen für "
+"Panoramahimmel)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:20
 msgid ""
 "JPEG (``.jpg``, ``.jpeg``) - Doesn't support transparency per the format's "
 "limitations."
 msgstr ""
+"JPEG (``.jpg```, ``.jpeg``) - Unterstützt aufgrund der Einschränkungen des "
+"Formats keine Transparenz."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:22
 msgid ""
 "PNG (``.png``) - Precision is limited to 8 bits per channel upon importing "
 "(no HDR images)."
 msgstr ""
+"PNG (``.png``) - Die Genauigkeit ist beim Import auf 8 Bit pro Kanal "
+"begrenzt (keine HDR-Bilder)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:24
 msgid "Truevision Targa (``.tga``)"
@@ -78,6 +91,13 @@ msgid ""
 "automated thanks to its `command-line interface <https://wiki.inkscape.org/"
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
+"SVG (``.svg``, ``.svgz``) - SVGs werden beim Importieren mit `NanoSVG "
+"<https://github.com/memononen/nanosvg>`__ gerastert. Die Unterstützung ist "
+"begrenzt; komplexe Vektoren werden möglicherweise nicht korrekt gerendert. "
+"Für komplexe Vektoren ist das Rendern in PNGs mit Inkscape oft die bessere "
+"Lösung. Dies kann dank der `Befehlszeilenschnittstelle <https://wiki."
+"inkscape.org/wiki/index.php/Using_the_Command_Line#Export_files>`__ "
+"automatisiert werden."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid "WebP (``.webp``)"
@@ -137,6 +157,9 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"Bilder sind einer der größten Nutzerinhalte in einem Spiel. Um sie effizient "
+"verarbeiten zu können, müssen sie komprimiert werden. Godot bietet je nach "
+"Anwendungsfall mehrere Komprimierungsverfahren an."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:61
 msgid "Compress Mode"
@@ -149,6 +172,11 @@ msgid ""
 "considerably (usually by a factor between 4 and 6). This mode should be "
 "avoided for 2D as it exhibits noticeable artifacts."
 msgstr ""
+"**VRAM-Komprimierung:** Dies ist der gebräuchlichste Komprimierungsmodus für "
+"3D-Assets. Die Größe auf der Festplatte wird reduziert, und auch die Nutzung "
+"des Videospeichers wird erheblich verringert (normalerweise um einen Faktor "
+"zwischen 4 und 6). Dieser Modus sollte für 2D vermieden werden, da er "
+"auffällige Artefakte aufweist."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:67
 msgid ""
@@ -158,6 +186,11 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
+"**Verlustfreie Komprimierung:** Dies ist der gebräuchlichste "
+"Komprimierungsmodus für 2D-Assets. Er zeigt Assets ohne jegliche Art von "
+"Artefakten an, und die Festplattenkomprimierung ist anständig. Sie benötigt "
+"jedoch wesentlich mehr Videospeicher als die VRAM-Komprimierung. Dies ist "
+"auch die empfohlene Einstellung für Pixelkunst."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
 msgid ""
@@ -166,18 +199,28 @@ msgid ""
 "compared to Lossless or Uncompressed. Video memory usage isn't decreased by "
 "this mode; it's the same as with Lossless Compression or Uncompressed."
 msgstr ""
+"**Verlustbehaftete Komprimierung:** Dies ist eine gute Wahl für große 2D-"
+"Assets. Sie hat einige Artefakte, aber weniger als VRAM und die Dateigröße "
+"ist im Vergleich zu verlustlos oder unkomprimiert um ein Vielfaches "
+"geringer. Die Nutzung des Videospeichers wird durch diesen Modus nicht "
+"verringert; es ist derselbe wie bei der verlustfreien oder unkomprimierten "
+"Komprimierung."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
 msgstr ""
+"**Unkomprimiert:** Nur nützlich für Formate, die nicht komprimiert werden "
+"können (wie z.B. rohe Float-Bilder)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
+"In dieser Tabelle wird jede der vier Optionen zusammen mit ihren Vor- und "
+"Nachteilen beschrieben (|gut| = beste, |schlecht| = schlechteste):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:82
 msgid "Uncompressed"
@@ -290,12 +333,19 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
+"Godot unterstützt HDR-Texturen (als .HDR oder .EXR). Diese sind vor allem "
+"als äquirektanguläre HDR-Panoramahimmel nützlich (das Internet hat viele, "
+"wenn Sie danach suchen), die Cubemaps in Godot 2.x ersetzen. Moderne PCs "
+"unterstützen das BC6H-VRAM-Format, aber es gibt immer noch viele, die dies "
+"nicht tun."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
+"Wenn Sie möchten, dass Godot die volle Kompatibilität in Bezug auf die Art "
+"der Texturen gewährleistet, aktivieren Sie die Option \"Force RGBE\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:112
 msgid "Normal Map"
@@ -311,6 +361,14 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
+"Wenn eine Textur als Normalmap verwendet wird, sind nur der rote und der "
+"grüne Kanal erforderlich. Da normale Texturkompressionsalgorithmen Artefakte "
+"erzeugen, die in Normalmaps nicht so schön aussehen, ist das RGTC-"
+"Kompressionsformat für diese Daten am besten geeignet. Wenn Sie diese Option "
+"auf \"Aktiviert\" setzen, wird Godot das Bild als RGTC-komprimiert "
+"importieren. Standardmäßig ist sie auf \"Erkennen\" eingestellt, d.h. wenn "
+"die Textur jemals als normale Map verwendet wird, wird sie in \"Aktiviert\" "
+"geändert und automatisch wieder importiert."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
@@ -318,6 +376,9 @@ msgid ""
 "have to adjust custom shaders that use the normal map to take this into "
 "account."
 msgstr ""
+"Beachten Sie, dass sich die RGTC-Komprimierung auf das resultierende "
+"Normalmapbild auswirkt. Sie müssen benutzerdefinierte Shader, welche die "
+"Normalmap verwenden, anpassen, um dies zu berücksichtigen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
@@ -326,6 +387,12 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godot benötigt die normale Karte, um die X+ -, Y- und Z+ -Koordinaten zu "
+"verwenden. Mit anderen Worten, wenn Sie ein Material importiert haben, das "
+"für die Verwendung mit einer anderen Engine erstellt wurde, müssen Sie "
+"möglicherweise die normale Karte so konvertieren, dass ihre Y-Achse "
+"umgedreht wird. Andernfalls scheint die normale Kartenrichtung auf der Y-"
+"Achse invertiert zu sein."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
@@ -333,6 +400,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Weitere Informationen über Normal Maps (einschließlich einer "
+"Koordinatenordnungstabelle für populäre Engines) finden Sie `hier <http://"
+"wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Flags"
@@ -343,6 +413,8 @@ msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"Es gibt eine Vielzahl von Einstellungen, die beim Importieren eines Bildes "
+"als Textur je nach Anwendungsfall umgeschaltet werden können."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:138
 msgid "Repeat"
@@ -354,10 +426,14 @@ msgid ""
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\"."
 msgstr ""
+"Diese Einstellung wird am häufigsten in 3D verwendet und ist daher in 2D "
+"generell deaktiviert. Sie setzt UV-Koordinaten, die über den Bereich 0,0 - "
+"1,1 hinausgehen, auf \"Schleife\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid "Repeating can optionally be set to mirrored mode."
 msgstr ""
+"Die Wiederholung kann optional auf den gespiegelten Modus eingestellt werden."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:145
 msgid "Filter"
@@ -370,6 +446,11 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"Wenn Pixel größer als die Bildschirmpixel werden, ermöglicht diese Option "
+"die lineare Interpolation für diese Pixel. Das Ergebnis ist eine glattere "
+"(weniger blockige) Textur. Diese Einstellung kann häufig in 2D und 3D "
+"verwendet werden, ist aber normalerweise deaktiviert, wenn man Pixelperfekte "
+"Spiele erstellt."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid "Mipmaps"
@@ -382,26 +463,36 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"Wenn die Pixel kleiner als der Bildschirm werden, treten Mipmaps in Kraft. "
+"Dies hilft, den Körnigkeitseffekt beim Verkleinern der Texturen zu "
+"reduzieren. Denken Sie daran, dass bei älterer Hardware (GLES2, "
+"hauptsächlich Mobilgeräte) einige Anforderungen an die Verwendung von "
+"Mipmaps bestehen:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "Texturbreite und -höhe müssen Potenzen von 2 sein"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "Wiederholung muss aktiviert sein"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"Denken Sie an das oben Gesagte, wenn Sie Handyspiele und -anwendungen "
+"entwickeln, eine vollständige Kompatibilität anstreben und Mipmaps benötigen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
+"Bei 3D sollte mipmap eingeschaltet sein, da dies auch die Leistung "
+"verbessert (kleinere Versionen der Textur werden für weiter entfernte "
+"Objekte verwendet)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid "Anisotropic"
@@ -412,6 +503,9 @@ msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
 msgstr ""
+"Wenn die Texturen nahezu parallel zur Ansicht sind (wie z.B. Böden), sorgt "
+"diese Option dafür, dass sie mehr Details aufweisen, indem die Unschärfe "
+"reduziert wird."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:168
 msgid "SRGB"
@@ -424,6 +518,11 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
+"Godot verwendet beim 3D-Rendern den linearen Farbraum. Für Texturen, die auf "
+"Albedo- oder Detailkanäle abgebildet werden, muss diese Option aktiviert "
+"sein, damit die Farben korrekt aussehen. Wenn sie auf den Modus \"Erkennen\" "
+"eingestellt ist, wird die Textur als SRGB markiert, wenn sie in Albedo-"
+"Kanälen verwendet wird."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:174
 msgid "Process"
@@ -433,10 +532,12 @@ msgstr "Prozess"
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
+"Einige spezielle Prozesse können auf Bilder angewendet werden, wenn sie als "
+"Texturen importiert werden."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:179
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Alpha-Grenze fixieren"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:181
 msgid ""
@@ -444,16 +545,21 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the like."
 msgstr ""
+"Dies versetzt Pixel derselben Umgebungsfarbe in den Übergang von Transparenz "
+"zu Nichttransparenz. Dies hilft, den Umriss-Effekt beim Exportieren von "
+"Bildern aus Photoshop und dergleichen zu verringern."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:186
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr ""
+"Es ist eine gute Idee dies standardmäßig aktiviert zu lassen, es sei denn "
+"bestimmte Werte sind erforderlich."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid "Premultiplied Alpha"
-msgstr ""
+msgstr "Vormultiplizierte Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:191
 msgid ""
@@ -462,6 +568,11 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"Eine Alternative zum beheben abgedunkelter Ränder ist die Verwendung von "
+"vormultipliziertem Alpha. Wenn Sie diese Option aktivieren, wird die Textur "
+"in dieses Format konvertiert. Beachten Sie, dass ein Material erstellt "
+"werden muss, das den PREMULT ALPHA-Mischmodus auf Canvas-Elementen "
+"verwendet, die es benötigen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:195
 msgid "HDR as sRGB"
@@ -487,6 +598,9 @@ msgid ""
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""
+"Kehrt die Farbe des Bildes um. Dies ist z. B. nützlich, um eine Höhenkarte, "
+"die von externen Programmen generiert wird, in eine Tiefenkarte zu "
+"konvertieren, die mit :ref:'doc_spatial_material' verwendet werden kann."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "Svg"

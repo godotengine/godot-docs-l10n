@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -493,41 +493,42 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:214
 #: ../../docs/tutorials/2d/using_tilemaps.rst:246
 msgid "**Template - Generic:**"
-msgstr ""
+msgstr "**Modèle - Générique :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:216
 msgid ""
 "This template can be used for sideways or fully top-down perspectives. It's "
 "designed for a TileMap cell size of 64x64."
 msgstr ""
+"Ce modèle peut être utilisé pour des perspectives latérales ou entièrement "
+"de dessus. Il est conçu pour une taille de cellule TileMap de 64x64."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:219
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
 msgid "Key:"
-msgstr ""
+msgstr "Clé :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
 msgid "Red: \"on\""
-msgstr ""
+msgstr "Rouge : \"on\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 #: ../../docs/tutorials/2d/using_tilemaps.rst:255
 msgid "White: \"off\""
-msgstr ""
+msgstr "Blanc : \"off\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:227
 msgid "3x3 (minimal)"
 msgstr "3x3 (minimal)"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:229
-#, fuzzy
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
 "center). The 4 corner bits work the same as in 2x2 mode."
 msgstr ""
 "En mode 3x3 (minimal), chaque bitmask contient 9 bits (4 coins, 4 bords, 1 "
-"centre)."
+"centre). Les 4 bits de coin fonctionnent de la même manière qu'en mode 2x2."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:232
 msgid ""
@@ -539,14 +540,14 @@ msgstr ""
 "bordure doit être vide."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:235
-#, fuzzy
 msgid ""
 "The center bit should be \"on\" for any tile you wish to use. Note that in "
 "this mode, it makes no sense for a corner bit to be \"on\" when either edge "
 "bit adjacent to it is not \"on\"."
 msgstr ""
-"Notez que dans ce mode, il n'est pas logique qu'un bit de coin soit \"on\" "
-"alors qu'un bit de bord adjacent n'est pas \"on\"."
+"Le bit central doit être \"on\" pour toute tuile que vous souhaitez "
+"utiliser. Notez que dans ce mode, il n'est pas logique qu'un bit de coin "
+"soit \"on\" alors qu'un bit de bord adjacent à celui-ci n'est pas \"on\"."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:239
 msgid ""
@@ -559,6 +560,8 @@ msgstr ""
 #: ../../docs/tutorials/2d/using_tilemaps.rst:244
 msgid "Right-click an image and choose **Save image as…** to save it."
 msgstr ""
+"Faites un clic droit sur une image et choisissez **Save image as...** pour "
+"l'enregistrer."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:248
 msgid ""
@@ -567,49 +570,54 @@ msgid ""
 "have to use different subtile sizes for top-down templates as described "
 "below."
 msgstr ""
+"Ce modèle peut être utilisé pour des perspectives latérales ou entièrement "
+"de dessus. Tous les modèles ci-dessous sont conçus pour une taille de "
+"cellule TileMap de 64x64, mais vous devrez peut-être utiliser différentes "
+"tailles de sous-tuiles pour les modèles de dessus, comme décrit ci-dessous."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:260
 msgid "**Template - Top-down floor in 3/4 perspective:**"
-msgstr ""
+msgstr "**Modèle - Sol vu de dessus en perspective 3/4 :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid "Key (applies to the four templates below):"
-msgstr ""
+msgstr "Clé (s’applique aux quatre modèles ci-dessous) :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:264
 msgid "Green: floor"
-msgstr ""
+msgstr "Vert : sol"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Cyan: wall"
-msgstr ""
+msgstr "Cyan : mur"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:266
 msgid "Yellow: top of wall"
-msgstr ""
+msgstr "Jaune : haut de mur"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:267
-#, fuzzy
 msgid "Transparent: air"
-msgstr "Transparent"
+msgstr "Transparent : air"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:271
 msgid "**Template - Top-down wall in 3/4 perspective:**"
-msgstr ""
+msgstr "**Modèle - Mur vu de dessus en perspective 3/4 :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:275
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
-msgstr ""
+msgstr "**Modèle - Mur vu de dessus en perspective 3/4 (murs épais) :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:277
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
 msgstr ""
+"Lorsque vous utilisez ce modèle, définissez la taille de sous-tuile TileSet "
+"à ``Vector2(64, 88)``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
-msgstr ""
+msgstr "**Modèle - Mur vu de dessus en perspective 3/4 (murs haut) :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:283
 msgid ""
@@ -617,6 +625,10 @@ msgid ""
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
 "size. This means the texture offset should be ``Vector2(0, -120)``:"
 msgstr ""
+"Lorsque vous utilisez ce modèle, réglez le pas de \"Snap Options\" sur "
+"``Vector2(64, 184)`` et le décalage de Texture de \"Selected Tile\" sur la "
+"hauteur moins la taille de la cellule. Cela signifie que le décalage de la "
+"texture doit être ``Vector2(0, -120)`` :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "3x3"

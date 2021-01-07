@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,9 +318,8 @@ msgstr ""
 "nombres pueden ser asignados en Ajustes del Proyecto -> Layer Names."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
-#, fuzzy
 msgid "GUI example"
-msgstr "Ejemplo de Input"
+msgstr "Ejemplo de GUI"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
@@ -348,9 +347,8 @@ msgstr ""
 "interactuar. Por ejemplo Player debería verse así:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Ejemplo de Timer"
+msgstr "Ejemplo de código"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -359,12 +357,19 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"En las llamadas de función, las capas se especifican como una máscara de "
+"bits. Cuando una función habilita todas las capas por defecto, la máscara de "
+"capa se dará como ``0x7fffffff``. Tu código puede utilizar la notación "
+"binaria, hexadecimal o decimal para las máscaras de capa, dependiendo de tu "
+"preferencia."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
 msgstr ""
+"El código equivalente del ejemplo anterior en el que se habilitaron las "
+"capas 1, 3 y 4 sería el siguiente::"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"

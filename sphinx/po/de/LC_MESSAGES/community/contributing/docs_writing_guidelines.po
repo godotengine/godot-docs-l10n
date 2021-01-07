@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,7 +75,7 @@ msgstr "explizite Referenzen zu nutzen"
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:20
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:235
 msgid "Use 's to show possession"
-msgstr ""
+msgstr "Verwenden Sie es, um Besitz anzuzeigen"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:21
 msgid "Use the Oxford comma"
@@ -148,6 +148,9 @@ msgid ""
 "Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
 "any expression you can replace with a single word."
 msgstr ""
+"Bevorzugen Sie präzise, aber gebräuchliche Verben gegenüber generischen "
+"Verben wie ``make``, ``set`` und allen Ausdrücken, die Sie durch ein "
+"einziges Wort ersetzen können."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:79
 msgid ""
@@ -170,6 +173,8 @@ msgid ""
 "The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
 "moving\"."
 msgstr ""
+"Die progressiven Formen beschreiben kontinuierliche Aktionen. z.B. \"ruft\", "
+"\"bewegt sich\"."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:101
 msgid "**Don't** use the progressive form for instant changes."
@@ -185,6 +190,9 @@ msgid ""
 "improvement. For example, in the previous sentence, \"it replaces\" would "
 "not make much sense where \"replacing\" currently is."
 msgstr ""
+"Ausnahme: Wenn das Thema nicht eindeutig ist, hat das Ersetzen von \"ing\"-"
+"Verben keine Verbesserung. Zum Beispiel würde im vorherigen Satz \"es ersetzt"
+"\" nicht viel Sinn machen, wo jetzt \"ersetzen\" steht."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:119
 msgid ""
@@ -200,6 +208,9 @@ msgid ""
 "Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
 "so you may use them: ``the remaining movement``, ``the missing file``, etc."
 msgstr ""
+"Verben können sich mit -ing in adjektivische Substantive verwandeln. Dies "
+"ist keine Konjugation, Sie können sie also verwenden: ,,die verbleibende "
+"Bewegung\", ,,die fehlende Datei\", usw."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:129
 msgid "Remove unnecessary adverbs and adjectives"
@@ -457,6 +468,10 @@ msgid ""
 "and ``bars``. You can also copy them directly from your game projects, "
 "ensuring that any code snippet compiles without errors."
 msgstr ""
+"Beispiele aus der realen Welt sind für Anfänger leichter zugänglich als "
+"abstrakte ``foos`` und ``bars``. Sie können sie auch direkt aus Ihren "
+"Spielprojekten kopieren und so sicherstellen, dass jeder Codeschnipsel ohne "
+"Fehler kompiliert wird."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:340
 msgid ""
@@ -464,6 +479,9 @@ msgid ""
 "to understand code better. It gives them a frame of reference as to where "
 "they could use the code snippets in a live project."
 msgstr ""
+"Wenn Sie ``var speed = 10`` statt ``var my_var = 10`` schreiben, können "
+"Anfänger den Code besser verstehen. Es gibt ihnen einen Bezugsrahmen, in dem "
+"sie die Codeschnipsel in einem Live-Projekt verwenden können."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:344
 msgid "**Don't** write made-up examples:"
@@ -480,26 +498,35 @@ msgid ""
 "``foo()`` or ``my_func()`` and consider more meaningful names for your "
 "examples."
 msgstr ""
+"Natürlich gibt es Situationen, in denen die Verwendung von Beispielen aus "
+"der realen Welt unpraktisch ist. In solchen Situationen sollten Sie trotzdem "
+"Namen wie ``my_var``, ``foo()`` oder ``my_func()`` vermeiden und sich "
+"sinnvollere Namen für Ihre Beispiele überlegen."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:374
 msgid ""
 "The brief description is the reference's most important sentence. It's the "
 "user's first contact with a node:"
 msgstr ""
+"Die Kurzbeschreibung ist der wichtigste Satz der Referenz. Er ist der erste "
+"Kontakt des Benutzers mit einem Node:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:377
 msgid "It's the only description in the \"Create New Node\" dialog."
 msgstr ""
+"Es ist die einzige Beschreibung im Dialogfeld \"Neuen Node erstellen\"."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:378
 msgid "It's at the top of every page in the reference"
-msgstr ""
+msgstr "Es befindet sich oben auf jeder Seite in der Referenz"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:380
 msgid ""
 "The brief description should explain the node's role and its functionality, "
 "in up to 200 characters."
 msgstr ""
+"Die Kurzbeschreibung sollte die Rolle des Nodes und seine Funktionalität in "
+"bis zu 200 Zeichen erklären."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:383
 msgid "**Don't** write tiny and vague summaries:"
@@ -523,6 +550,10 @@ msgid ""
 "description, ideally on a new line. No need to mention the return values for "
 "any method whose name starts with ``set`` or ``get``."
 msgstr ""
+"Einige Methoden geben wichtige Werte zurück. Beschreiben Sie diese am Ende "
+"der Beschreibung, am besten in einer neuen Zeile. Bei allen Methoden, deren "
+"Name mit ``set`` oder ``get`` beginnt, müssen Sie die Rückgabewerte nicht "
+"erwähnen."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:414
 msgid "**Do** always use \"Returns\"."
@@ -534,6 +565,10 @@ msgid ""
 "external collider can influence the method and the body that calls ``move``. "
 "In this case, you can use the passive voice."
 msgstr ""
+"Beachten Sie die Ausnahme von der \"direct voice\"-Regel: Bei der move-"
+"Methode kann ein externer Collider die Methode und den Körper, der ``move`` "
+"aufruft, beeinflussen. In diesem Fall können Sie die passive Stimme "
+"verwenden."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:428
 msgid ""
@@ -541,12 +576,18 @@ msgid ""
 "stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
 "for every member variable."
 msgstr ""
+"Für boolesche Member-Variablen sollten Sie immer ``if true`` und/oder ``if "
+"false`` verwenden, um eindeutig zu bleiben. ``Kontrolliert, ob oder ob "
+"nicht`` kann mehrdeutig sein und wird nicht für jede Member-Variable "
+"funktionieren."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:432
 msgid ""
 "Also, surround boolean values, variable names and methods with ``[code][/"
 "code]``."
 msgstr ""
+"Umgeben Sie außerdem boolesche Werte, Variablennamen und Methoden mit "
+"``[code][/code]``."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:434
 msgid "**Do** start with \"if true\":"
@@ -563,6 +604,10 @@ msgid ""
 "XML files in the Godot repository, replace existing arguments written like "
 "'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
+"In der Klassenreferenz umgeben Sie Argumente immer mit ``[code][/code]``. In "
+"der Dokumentation und in Godot wird es wie ``this`` angezeigt. Wenn Sie XML-"
+"Dateien im Godot-Repository bearbeiten, ersetzen Sie vorhandene Argumente, "
+"die wie 'this' oder \\'this\\' geschrieben sind, durch ``[code]this[/code]``."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:452
 msgid "Common vocabulary to use in Godot's documentation"
@@ -739,9 +784,14 @@ msgid ""
 "easily seen by colorblind people. Please do not use red as it won't be "
 "visible for some users."
 msgstr ""
+"Wenn Sie einen Bereich des Editors hervorheben müssen, um etwas zu zeigen, "
+"z. B. eine Schaltfläche oder eine Option, verwenden Sie eine 2 Pixel dicke "
+"gelbe Kontur ohne Abschrägung. Wenn sich der Umriss auf einem dunklen "
+"Hintergrund befindet, sollte der Umriss gelb sein, damit er von "
+"Farbenblinden leicht gesehen werden kann. Bitte verwenden Sie kein Rot, da "
+"es für manche Benutzer nicht sichtbar ist."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:526
-#, fuzzy
 msgid ""
 "Before you add or replace any images in the documentation, they should be "
 "run through a PNG compressor to save size. You can use the lossless OxiPNG "
@@ -751,15 +801,17 @@ msgid ""
 "compression."
 msgstr ""
 "Bevor Sie Bilder in der Dokumentation hinzufügen oder ersetzen, sollten "
-"diese über einen PNG-Kompressor ausgeführt werden, um Größe zu sparen. Der "
-"in Programmen wie Krita oder Photoshop integrierte verlustfreie Kompressor "
-"sollte ausreichen. Bei größeren Bildern sollten Sie auch einen "
-"verlustbehafteten Kompressor verwenden, z.B. `pngquant <https://pngquant.org/"
-">`_ , bei dem während der Komprimierung fast keine Bildqualität verloren "
-"geht."
+"diese durch einen PNG-Kompressor laufen, um Größe zu sparen. Sie können zu "
+"diesem Zweck den verlustfreien OxiPNG-Kompressor verwenden, der in `Squoosh "
+"<https://squoosh.app/>`__ enthalten ist. Für größere Bilder sollten Sie "
+"einen verlustbehafteten Kompressor wie `pngquant <https://pngquant.org/>`_ "
+"verwenden. Mit ihm geht bei der Komprimierung fast keine Bildqualität "
+"verloren."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:535
 msgid ""
 "The program pngquant must be installed locally as it's not available in "
 "Squoosh."
 msgstr ""
+"Das Programm pngquant muss lokal installiert werden, da es in Squoosh nicht "
+"verfügbar ist."

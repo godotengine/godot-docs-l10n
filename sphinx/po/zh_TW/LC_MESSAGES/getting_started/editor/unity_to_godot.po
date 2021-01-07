@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -678,25 +678,25 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:230
 msgid "Script serialization"
-msgstr "腳本串聯化"
+msgstr "腳本序列化"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:232
 msgid "Unity can handle script serialization in two ways:"
-msgstr "Unity 可通過兩種方法來處理腳本的串聯化 (Serialization)："
+msgstr "Unity 可通過兩種方法來處理腳本的序列化 (Serialization)："
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:234
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
-"隱含：若型別為可串聯化的型別，則類別中所有 Public 欄位都會自動串聯化"
-"（ ``Dictionary`` 不可串聯化）。"
+"隱含：若型別為可序列化的型別，則類別中所有 Public 欄位都會自動序列化"
+"（ ``Dictionary`` 不可序列化）。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:235
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
-msgstr "明確：非 Public 欄位可使用 ``[SerializeField]`` 屬性來串聯化。"
+msgstr "明確：非 Public 欄位可使用 ``[SerializeField]`` 屬性來序列化。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
 msgid ""
@@ -706,8 +706,8 @@ msgid ""
 "`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
 "the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
-"Godot 有內建的腳本串聯化系統，但只會在明確聲明下運作。任何可串聯化的型別都可"
-"使用 ``export`` 關鍵字來串聯化（ :ref:`內建與各種引擎型別 "
+"Godot 有內建的腳本序列化系統，但只會在明確聲明下運作。任何可序列化的型別都可"
+"使用 ``export`` 關鍵字來序列化（ :ref:`內建與各種引擎型別 "
 "<doc_binary_serialization_api>` ，包含 :ref:`class_Array` 與 :ref:"
 "`class_Dictionary`）。詳細請參考 :ref:`Export 文件 <doc_gdscript_exports>` 。"
 
@@ -721,7 +721,7 @@ msgid ""
 msgstr ""
 "Unity 還有一個用來序列化素材物件的 ``ScriptableObject`` 資料型別。這個型別同"
 "等於 Godot 中所有資源的基礎型別 :ref:`class_Resource` 。建立一個繼承 :ref:"
-"`class_Resource` 的腳本即可建立可串聯化的自定物件。更多關於資源的資訊可參考 :"
+"`class_Resource` 的腳本即可建立可序列化的自定物件。更多關於資源的資訊可參考 :"
 "ref:`這裡 <doc_resources>` 。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247

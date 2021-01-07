@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Ora che vi siete bagnati le mani, parliamo del progetto di Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
@@ -96,7 +95,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Inoltre, puoi **ereditare** da qualsiasi scena."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you'd like. It works like a class in pure code, except "
@@ -105,12 +103,11 @@ msgid ""
 msgstr ""
 "Una scena di Godot può essere un'arma, un personaggio, un oggetto, una "
 "porta, un livello, una parte di un livello.... tutto quello che vuoi. "
-"Funziona come una classe in codice puro, tranne per il fatto che si è liberi "
-"di progettarlo usando l'editor, usando solo il codice, o mescolando e "
+"Funziona come una classe in codice puro, tranne che sei libero di "
+"progettarlo utilizzando l'editor, usando solo il codice, o mescolando e "
 "abbinando i due."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It's different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -129,7 +126,6 @@ msgid "|image0|"
 msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -138,9 +134,8 @@ msgid ""
 msgstr ""
 "Inoltre, nota che Godot offre tanti tipi di oggetti diversi chiamati nodi, "
 "ognuno con un suo scopo. Tutti i nodi sono parte di un albero ed ereditano "
-"dai loro padri, fino alla classe Nodo. Anche se l'engine ha alcuni "
-"componenti, per esempio le forme di collisione, che eccezionalmente non "
-"rispettano questa regola."
+"dai loro parent, fino alla classe Node. Anche se l'engine ha alcuni "
+"componenti come le forme di collisione, essi sono l'eccezione, non la norma."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 msgid "|image1|"
@@ -152,8 +147,8 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"Lo sprite è un Node2D, un CanvasItem e un Node. Ha tutte le proprietà e le "
-"caratteristiche delle sue tre classi madri, come le trasformazioni o la "
+"Sprite è un Node2D, un CanvasItem e un Node. Ha tutte le proprietà e le "
+"caratteristiche delle sue tre classi parent, come le trasformazioni o la "
 "possibilità di disegnare forme personalizzate e renderizzare con uno shader "
 "personalizzato."
 
@@ -192,7 +187,6 @@ msgstr ""
 "vnen/godot-tiled-importer>."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDscript "
 "and VisualScript, along with C#. They're designed for the needs of game "
@@ -240,7 +234,6 @@ msgstr ""
 "nel grafico per creare nuovi blocchi di codice.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
-#, fuzzy
 msgid ""
 "Note that the 3D workspace doesn't feature as many tools as the 2D "
 "workspace. You'll need external programs or add-ons to edit terrains, "
@@ -272,7 +265,6 @@ msgid "Open source"
 msgstr "Open source"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
@@ -285,7 +277,6 @@ msgstr ""
 "dai collaboratori."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won't ship with the engine. This may include Google AdMob, or FMOD. Any "
@@ -294,10 +285,9 @@ msgstr ""
 "Chiunque può collegare strumenti proprietari per le esigenze dei loro "
 "progetti - semplicemente non saranno inclusi nell'engine. Questo può "
 "includere Google AdMob, o FMOD. Ognuno di questi può essere invece "
-"implementato comeplugin di terze parti."
+"implementato come plugin di terze parti."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart's content. You can also debug games easily, as "
@@ -310,13 +300,12 @@ msgstr ""
 "con una stack trace, anche se arrivano dall'engine stesso."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
-#, fuzzy
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there's no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
 "Questo **non influenzerà il lavoro che fai con Godot** in nessun modo: non "
-"ci sono stringhe collegate all'engine o qualsiasi cosa fai con esso."
+"ci sono vincoli collegati all'engine o qualsiasi cosa tu faccia con esso."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
@@ -330,11 +319,11 @@ msgid ""
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
-"**Godot è prodotto dalla sua comunità, per la comunità, e per tutti i "
-"creatori di giochi là fuori.** Sono le necessità degli utenti e delle "
-"discussioni aperte che guidano gli aggiornamenti centrali. Le nuove "
-"funzionalità dagli sviluppatori centrali spesso si concentrano su cosa "
-"avvantaggerà prima la maggior parte degli utenti."
+"**Godot è creato dalla sua comunità, per la comunità, e per tutti i creatori "
+"di giochi là fuori.** Sono i bisogni degli utenti e le discussioni libere "
+"che guidano gli aggiornamenti più fondamentali. Le nuove funzionalità dagli "
+"sviluppatori principali spesso si concentrano su cosa avvantaggerà prima la "
+"maggior parte degli utenti."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
 #, fuzzy
@@ -345,7 +334,7 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
-"Detto questo, sebbene una manciata di sviluppatori centrali lavora ad esso a "
+"Detto questo, sebbene una manciata di sviluppatori dedicati lavori ad esso a "
 "tempo pieno, il progetto ha oltre 600 contributori al momento. Programmatori "
 "volontari lavorano su funzionalità di cui potranno avere bisogno essi "
 "stessi, quindi vedrai i miglioramenti in tutti gli angoli del motore "
@@ -383,15 +372,14 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
 "*RPG in a Box é un editor di GDR voxel fatto con Godot 2. Usa gli strumenti "
-"dell'interfaccia di Godot per il suo sistema di programmazione basato sui "
-"nodi e per il resto dell'interfaccia.*"
+"dell'interfaccia utente di Godot per il suo sistema di programmazione basato "
+"sui nodi e per il resto dell'interfaccia.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
 msgid ""
@@ -400,10 +388,10 @@ msgid ""
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"Posiziona lo ``strumento`` keyword sopra qualsiasi file GDScript ed esso "
-"verà eseguito nell'editor. Questo ti consente di importare ed esportare "
-"plugins, creare plugin come editor di livelli personalizzati, o creare "
-"script con gli stessi nodi e API che utilizzi nei tuoi progetti."
+"Metti la keyword ``tool`` in cima a qualsiasi file GDScript ed esso verrà "
+"eseguito nell'editor. Questo ti consente di importare ed esportare plugins, "
+"creare plugin come editor di livelli personalizzati, o creare script con gli "
+"stessi nodi e API che utilizzi nei tuoi progetti."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"

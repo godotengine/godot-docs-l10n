@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -615,7 +615,6 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot пише для вас метод зворотного виклику і дає його вам"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
@@ -626,7 +625,6 @@ msgstr ""
 "поточний ``health``. Ваш код повинен виглядати так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -634,22 +632,20 @@ msgid ""
 "com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
 "Движок не перетворює PascalCase в snake_case, для прикладів C# ми будемо "
-"використовувати PascalCase для імен методів, & camelCase для параметрів "
-"методу, який дотримуються офіційні умови C # іменування `C# naming "
-"conventions. <https://docs.microsoft.com/en-us/dotnet/standard/design-"
-"guidelines/capitalization-conventions>`_"
+"використовувати PascalCase для імен методів, і camelCase для параметрів "
+"методу, дотримуючись таким чином офіційних `умов іменування в C#. <https://"
+"docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
+"conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
-#, fuzzy
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
 "У Player.gd, коли Player випромінює сигнал health\\_changed, він також "
-"надсилає значення для здоров'я"
+"надсилає значення його здоров'я"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
@@ -658,12 +654,11 @@ msgstr ""
 "``update_health`` і передамо їй змінну ``player_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
-#, fuzzy
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
-"Ми могли безпосередньо оновити значення здоров’я на `LifeBar` та `Number`. "
+"Ми могли б безпосередньо оновити значення здоров’я на `LifeBar` та `Number`. "
 "Існує дві причини використовувати цей метод:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
@@ -680,28 +675,24 @@ msgid "We will reuse this method a bit later"
 msgstr "Ми використаємо цей метод трохи пізніше"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
-#, fuzzy
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
 "Створіть новий ``update_health`` метод нижче ``_on_Player_health_changed``. "
-"Він приймає new\\_value як єдиний аргумент:"
+"Він приймає new\\_value в якості єдиного аргумента:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
-#, fuzzy
 msgid "This method needs to:"
 msgstr "Цей метод буде:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
-#, fuzzy
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
 "встановлювати ``text`` вузла ``Number`` на ``new_value`` конвертоване в текст"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
-#, fuzzy
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "встановлювати ``value`` в ``TextureProgress`` на ``new_value``"
 
@@ -716,20 +707,18 @@ msgstr ""
 "призначити їй ``new_value`` безпосередньо"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
 "of the game. Press :kbd:`F5` to test the game: the life bar updates with "
 "every attack!"
 msgstr ""
-"Також викличте ``update_health`` в кінці ``_ready`` функції, щоб "
+"Також викличте ``update_health`` в кінці функції ``_ready``, щоб "
 "ініціалізувати ``text`` вузла ``Number`` з правильним значенням на початку "
-"гри. Натисніть F5, щоб перевірити гру: шкала здоров'я оновлюється з кожною "
-"атакою!"
+"гри. Натисніть :kbd:`F5`, щоб перевірити гру: шкала здоров'я оновлюється з "
+"кожною атакою!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
-#, fuzzy
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
@@ -740,7 +729,6 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "Анімація втрати здоров'я за допомогою вузла Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
-#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -750,14 +738,13 @@ msgid ""
 "``health`` when the character takes damage."
 msgstr ""
 "Наш інтерфейс функціональний, але він може використовувати деяку анімацію. "
-"Це хороша можливість представити вузол ``Tween``, важливий інструмент для "
-"анімації властивостей. ``Tween`` анімує все, що завгодно, від початку до "
+"Це хороша можливість познайомитися з вузлом ``Tween``, важливим інструментом "
+"для анімації властивостей. ``Tween`` анімує все, що завгодно, від початку до "
 "кінця, протягом певної тривалості. Наприклад, він може анімувати здоров'я "
 "``TextureProgress`` від поточного до нового значення ``health`` пошкодженого "
 "``Player``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
-#, fuzzy
 msgid ""
 "The ``GUI`` scene already contains a ``Tween`` child node stored in the "
 "``tween`` variable. Let's now use it. We have to make some changes to "
@@ -768,7 +755,6 @@ msgstr ""
 "``update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
-#, fuzzy
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
@@ -777,12 +763,10 @@ msgstr ""
 "Він бере сім аргументів:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
-#, fuzzy
 msgid "A reference to the node who owns the property to animate"
 msgstr "Посилання на вузол, властивість якого належить анімувати"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
-#, fuzzy
 msgid "The property's identifier as a string"
 msgstr "Ідентифікатор властивості в виді тексту"
 
@@ -799,17 +783,14 @@ msgid "The animation's duration in seconds"
 msgstr "Тривалість анімації в секундах"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
-#, fuzzy
 msgid "The type of the transition"
 msgstr "Тип переходу"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
-#, fuzzy
 msgid "The easing to use in combination with the equation."
-msgstr "Легкість у використанні в поєднанні з рівнянням."
+msgstr "Послаблення для використання в поєднанні з рівнянням."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
-#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an easing equation. This "
 "controls how the value evolves from the start to the end point."
@@ -818,7 +799,6 @@ msgstr ""
 "контролюють, як значення змінюється від початку до кінця."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
-#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -834,7 +814,6 @@ msgstr ""
 "``animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
-#, fuzzy
 msgid ""
 "At the top of the script, define a new variable, name it "
 "``animated_health``, and set its value to 0. Navigate back to the "
@@ -852,7 +831,6 @@ msgid "Let's break down the call:"
 msgstr "Давайте розберемо цей виклик:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
-#, fuzzy
 msgid ""
 "We target ``animated_health`` on ``self``, that is to say the ``GUI`` node. "
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
@@ -863,7 +841,6 @@ msgstr ""
 "тексту. Ось чому ми пишемо ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
-#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
@@ -876,7 +853,6 @@ msgstr ""
 "це ``new_value``. І ``0.6`` це тривалість анімації в секундах."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:441
-#, fuzzy
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
@@ -887,7 +863,6 @@ msgstr ""
 "не активний. Додайте цей код після останнього рядка:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:460
-#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -897,19 +872,17 @@ msgid ""
 "animations, check out `AnimationPlayer`."
 msgstr ""
 "Хоча ми могли б анімувати властивість `health` (здоров'я) на `Player` "
-"(гравець), ми не повинні цього робити. Персонажі повинні втрачати життя "
-"миттєво, коли вони потрапляють під удар. Це набагато спрощує керування їх "
-"станами. Ви завжди краще зберігати анімацію в окремому контейнері даних, або "
-"вузлі. Вузол `tween` ідеально підходить для коду контролювання анімації. Для "
+"(гравцеві), ми не повинні цього робити. Персонажі повинні втрачати життя "
+"миттєво при попаданні під удар. Це набагато спрощує керування їх станами. "
+"Вам завжди краще зберігати анімацію в окремому контейнері даних, або вузлі. "
+"Вузол `tween` ідеально підходить для коду контролювання анімації. Для "
 "анімації ручної роботи перегляньте `AnimationPlayer`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:463
-#, fuzzy
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "Призначення animated\\_health LifeBar"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:465
-#, fuzzy
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
@@ -918,12 +891,10 @@ msgstr ""
 "``Bar`` та ``Number``. Давайте виправимо це."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
-#, fuzzy
 msgid "So far, the update\\_health method looks like this:"
 msgstr "Поки що метод ``update_health`` виглядає приблизно так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:492
-#, fuzzy
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -943,7 +914,6 @@ msgstr ""
 "`Number` та `TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:516
-#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -954,12 +924,10 @@ msgstr ""
 "непогано, щоб шкала здоров'я анімувалася поривчастим способом."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
-#, fuzzy
 msgid "The animation is smooth, but the number is broken"
-msgstr "Гладка анімація, та недоладне число"
+msgstr "Гладка анімація, проте недоладне число"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
-#, fuzzy
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
@@ -967,21 +935,18 @@ msgid ""
 msgstr ""
 "Ми можемо виправити обидві проблеми шляхом заокруглення ``animated_health``. "
 "Використовуйте локальну змінну з назвою ``round_value`` для зберігання "
-"заокругленого значення ``animated_health``. Потім призначте його "
+"заокругленого значення ``animated_health``. Потім призначте значення "
 "``number_label.text`` та ``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:546
-#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr "Спробуйте гру ще раз, щоб побачити приємну анімацію."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:550
-#, fuzzy
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "Заокруглюючи animated_health ми вбиваємо двох зайців одним пострілом"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
-#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -1002,7 +967,6 @@ msgid "Fade the bar when the Player dies"
 msgstr "Зникнення шкали при смерті гравця"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:564
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -1015,7 +979,6 @@ msgstr ""
 "``Tween``, який паралельно управляє декількома анімаціями."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -1032,12 +995,10 @@ msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "Знайдіть сигнал ``died``, виберіть його та натисніть кнопку Приєднати."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
-#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
 msgstr "Сигнал вже має бути підключеним до Enemy"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:580
-#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -1050,7 +1011,6 @@ msgstr ""
 "перенесе вас до файлу ``GUI.gd`` в робочій області скриптів."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
-#, fuzzy
 msgid "You should get these values in the Connecting Signal window"
 msgstr "Ви повинні отримати такі значення у вікні З'єднання сигналу"
 
@@ -1065,7 +1025,6 @@ msgstr ""
 "додасте з'єднань, тим важче буде відстежувати їх."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:594
-#, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
@@ -1075,7 +1034,6 @@ msgstr ""
 "наших текстур."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
-#, fuzzy
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
@@ -1086,7 +1044,6 @@ msgstr ""
 "і змінювати його за допомогою кольору `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -1098,7 +1055,6 @@ msgstr ""
 "прозорим."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:606
-#, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -1113,7 +1069,6 @@ msgstr ""
 "``Color()`` для побудови двох значень ``Color``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:628
-#, fuzzy
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
@@ -1131,7 +1086,6 @@ msgstr ""
 "``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -1148,12 +1102,10 @@ msgstr ""
 "І це все. Тепер ви можете запустити гру, щоб побачити кінцевий результат!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:673
-#, fuzzy
 msgid "The final result. Congratulations for getting there!"
 msgstr "Кінцевий результат. Вітаємо з успіхом!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:677
-#, fuzzy
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "
@@ -1163,6 +1115,6 @@ msgid ""
 msgstr ""
 "Використовуючи ті самі методи, ви можете змінити колір шкали, коли гравець "
 "отруїться, перетворити шкалу на червону, коли його здоров'я знизиться, "
-"струсити інтерфейс користувача, коли він отримує критичний удар ... принцип "
+"стрясти інтерфейс користувача, коли він отримує критичний удар ... принцип "
 "однаковий: випромінюйте сигнал, щоб переслати інформацію від гравця до "
 "графічного інтерфейсу та дозволити інтерфейсу обробити його."

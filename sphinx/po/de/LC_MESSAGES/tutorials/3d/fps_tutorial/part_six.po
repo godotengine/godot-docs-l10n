@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,8 @@ msgid ""
 "Firstly, open up ``Main_Menu.tscn`` and take a look at how the scene is set "
 "up."
 msgstr ""
+"Öffnen Sie zunächst ``Main_Menu.tscn`` und sehen Sie sich an, wie die Szene "
+"eingerichtet ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:26
 msgid ""
@@ -87,6 +89,8 @@ msgid ""
 "Select ``Main_Menu`` (the root node) and create a new script called "
 "``Main_Menu.gd``. Add the following:"
 msgstr ""
+"Wählen Sie ``Main_Menu`` (der Wurzel-Node) und erstellen Sie ein neues "
+"Skript namens ``Main_Menu.gd``. Fügen Sie Folgendes hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:122
 msgid ""
@@ -100,28 +104,36 @@ msgid ""
 "See :ref:`doc_ui_main_menu` and the tutorials following for better ways to "
 "make GUIs and UIs!"
 msgstr ""
+"Siehe :ref:`doc_ui_main_menu` und die folgenden Anleitungen für bessere "
+"Möglichkeiten, GUIs und UIs zu erstellen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:127
 msgid "Let's look at the class variables first."
-msgstr ""
+msgstr "Sehen wir uns zunächst die Klassenvariablen an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:129
 msgid ""
 "``start_menu``: A variable to hold the ``Start_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
+"``start_menu``: Eine Variable, die das ``Start_Menu`` :ref:`Panel "
+"<class_Panel>` enthält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:130
 msgid ""
 "``level_select_menu``: A variable to hold the ``Level_Select_Menu`` :ref:"
 "`Panel <class_Panel>`."
 msgstr ""
+"``level_select_menu``: Eine Variable zur Aufnahme des ``Level_Select_Menu`` :"
+"ref:`Panel <class_Panel>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:131
 msgid ""
 "``options_menu``: A variable to hold the ``Options_Menu`` :ref:`Panel "
 "<class_Panel>`."
 msgstr ""
+"``options_menu``: Eine Variable, die das ``Options_Menu`` :ref:`Panel "
+"<class_Panel>` enthält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:132
 msgid ""
@@ -156,6 +168,8 @@ msgid ""
 "Firstly, we get all the :ref:`Panel <class_Panel>` nodes and assign them to "
 "the proper variables."
 msgstr ""
+"Zuerst erhalten wir alle :ref:`Panel <class_Panel>`-Nodes und weisen sie den "
+"richtigen Variablen zu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:144
 msgid ""
@@ -186,6 +200,8 @@ msgstr ""
 msgid ""
 "In ``start_menu_button_pressed``, we check to see which button is pressed."
 msgstr ""
+"In ``start_menu_button_button_pressed`` prüfen wir, welche Taste gedrückt "
+"wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:157
 msgid ""
@@ -198,6 +214,8 @@ msgid ""
 "In ``level_select_menu_button_pressed``, we check to see which button is "
 "pressed."
 msgstr ""
+"In ``level_select_menu_button_button_pressed`` prüfen wir, welche Taste "
+"gedrückt wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:163
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:175
@@ -218,11 +236,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:169
 msgid "Don't worry about the singleton, we'll get there soon!"
 msgstr ""
+"Machen Sie sich keine Sorgen um das Singleton, wir kommen bald dorthin!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:173
 msgid ""
 "In ``options_menu_button_pressed``, we check to see which button is pressed."
 msgstr ""
+"In ``options_menu_button_pressed`` prüfen wir, welche Taste gedrückt wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:177
 msgid ""
@@ -240,11 +260,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:183
 msgid "Finally, lets take a look at ``set_mouse_and_joypad_sensitivity``."
 msgstr ""
+"Lassen Sie uns schließlich einen Blick auf "
+"``set_mouse_and_joypad_sensitivity`` werfen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:185
 msgid ""
 "Firstly, we get the ``Globals`` singleton and assign it to a local variable."
 msgstr ""
+"Zuerst erhalten wir das ``Globals`` Singleton und weisen es einer lokalen "
+"Variablen zu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:187
 msgid ""
@@ -288,12 +312,16 @@ msgid ""
 "``mouse_sensitivity``: The current sensitivity for our mouse, so we can load "
 "it in ``Player.gd``."
 msgstr ""
+"``mouse_sensitivity``: Die aktuelle Empfindlichkeit für unsere Maus, damit "
+"wir sie in ``Player.gd`` laden können."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:215
 msgid ""
 "``joypad_sensitivity``: The current sensitivity for our joypad, so we can "
 "load it in ``Player.gd``."
 msgstr ""
+"``joypad_sensitivity``: Die aktuelle Empfindlichkeit für unser Joypad, damit "
+"wir es in ``Player.gd`` laden können."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:217
 msgid ""
@@ -319,6 +347,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:224
 msgid "Open up the ``Project Settings`` and click the ``AutoLoad`` tab."
 msgstr ""
+"Öffnen Sie die ``Projekteinstellungen`` und klicken Sie auf die "
+"Registerkarte ``AutoLoad``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:228
 msgid ""
@@ -347,6 +377,8 @@ msgid ""
 "Now that ``Globals.gd`` is a singleton/autoload script, you can test the "
 "main menu!"
 msgstr ""
+"Nun, da ``Globals.gd`` ein Singleton/Autoload-Skript ist, können Sie das "
+"Hauptmenü testen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:237
 msgid ""
@@ -393,7 +425,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:265
 msgid "Let's go over what this script does."
-msgstr ""
+msgstr "Lassen Sie uns durchgehen, was dieses Skript bewirkt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:269
 msgid ""
@@ -428,6 +460,8 @@ msgid ""
 "Now let's jump back to ``Main_Menu.gd`` and change the following in "
 "``options_menu_button_pressed``:"
 msgstr ""
+"Lassen Sie uns nun zurück zu ``Main_Menu.gd`` springen und in "
+"``options_menu_button_button_pressed`` folgendes ändern:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:289
 msgid "to this instead:"
@@ -443,12 +477,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:391
 msgid "Open up ``Globals.gd`` and add the following class variables:"
 msgstr ""
+"Öffnen Sie ``Globals.gd`` und fügen Sie die folgenden Klassenvariablen hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:314
 msgid ""
 "``canvas_layer``: A canvas layer so the GUI/UI created in ``Globals.gd`` is "
 "always drawn on top."
 msgstr ""
+"``canvas_layer``: Eine Canvas-Ebene, sodass die in ``Globals.gd`` erstellte "
+"GUI/UI immer an oberster Stelle gezeichnet wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
 msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
@@ -497,11 +534,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:340
 msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
-msgstr ""
+msgstr "Jetzt müssen wir ``set_debug_display`` zu ``Globals.gd`` hinzufügen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:354
 msgid "Let's go over what's happening."
-msgstr ""
+msgstr "Lassen Sie uns noch einmal durchgehen, was geschieht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:356
 msgid ""
@@ -650,10 +687,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:443
 msgid "Finally, we pause the entire :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"Schließlich halten wir den gesamten :ref:`Szenenbaum <class_SceneTree>` an."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:445
 msgid "For more information on pausing in Godot, see :ref:`doc_pausing_games`"
 msgstr ""
+"Weitere Informationen zum Pausieren in Godot finden Sie unter :ref:"
+"`doc_pausing_games`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:449
 msgid ""
@@ -664,7 +704,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:451
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:466
 msgid "Add the following to ``Globals.gd``:"
-msgstr ""
+msgstr "Fügen Sie Folgendes zu ``Globals.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:462
 msgid ""
@@ -693,6 +733,8 @@ msgid ""
 "Before we're ready to test the pop-up, we should change one thing in "
 "``Player.gd``."
 msgstr ""
+"Bevor wir das Popup testen können, sollten wir eine Sache in ``Player.gd`` "
+"ändern."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:488
 msgid ""
@@ -754,6 +796,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
 msgstr ""
+"``RESPAWN_TIME``: Die Zeit (in Sekunden), die zum Wiederaufladen benötigt "
+"wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:537
 msgid "``dead_time``: A variable to track how long the player has been dead."
@@ -789,12 +833,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:554
 msgid "Don't worry, we will be adding ``get_respawn_position`` further below!"
 msgstr ""
+"Keine Sorge, wir werden ``get_respawn_position`` weiter unten hinzufügen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:558
 msgid ""
 "Next, we need to make a few changes to ``_physics_process``. Change "
 "``_physics_process`` to the following:"
 msgstr ""
+"Als nächstes müssen wir einige Änderungen an ``_physics_process`` vornehmen. "
+"Ändern Sie ``_physics_process`` wie folgt:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:576
 msgid ""
@@ -813,14 +860,18 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:580
 msgid "We have not made ``process_respawn`` yet, so let's change that."
 msgstr ""
+"Wir haben noch kein ``process_respawn`` erzeugt, also lassen Sie uns das "
+"ändern."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:584
 msgid "Let's add ``process_respawn``. Add the following to ``Player.gd``:"
 msgstr ""
+"Fügen wir ``process_respawn`` hinzu. Fügen Sie das Folgende zu ``Player.gd`` "
+"hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:643
 msgid "Let's go through what this function is doing."
-msgstr ""
+msgstr "Lassen Sie uns durchgehen, was diese Funktion bewirkt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:647
 msgid ""
@@ -933,7 +984,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:686
 msgid "Finally, we set ``is_dead`` to ``false``."
-msgstr ""
+msgstr "Schließlich setzen wir ``is_dead`` auf ``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:690
 msgid ""
@@ -944,6 +995,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:697
 msgid "Now, when the player is dead, they cannot look around with the mouse."
 msgstr ""
+"Wenn der Spieler nun tot ist, kann er sich nicht mehr mit der Maus umsehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:700
 msgid "Finishing the respawn system"
@@ -954,6 +1006,8 @@ msgid ""
 "Firstly, let's open ``Weapon_Pistol.gd`` and add the ``reset_weapon`` "
 "function. Add the following:"
 msgstr ""
+"Als erstes öffnen wir ``Weapon_Pistol.gd`` und fügen die Funktion "
+"``reset_weapon`` hinzu. Fügen Sie Folgendes hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:710
 msgid ""
@@ -963,15 +1017,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid "Now let's add ``reset_weapon`` in ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "Fügen wir nun ``reset_weapon`` in ``Weapon_Rifle.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:720
 msgid "And add the following to ``Weapon_Knife.gd``:"
-msgstr ""
+msgstr "Und fügen Sie Folgendes zu ``Weapon_Knife.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:728
 msgid "Now all the weapons will reset when the player dies."
-msgstr ""
+msgstr "Jetzt werden alle Waffen zurückgesetzt, wenn der Spieler stirbt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:732
 msgid ""
@@ -983,6 +1037,8 @@ msgstr ""
 msgid ""
 "``respawn_points``: A variable to hold all the respawn points in a level"
 msgstr ""
+"``respawn_points``: Eine Variable, die alle Respawn-Punkte in einem Level "
+"hält"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
 msgid ""
@@ -998,12 +1054,12 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:748
 msgid "Now let's add ``get_respawn_position`` to ``Globals.gd``:"
-msgstr ""
+msgstr "Fügen wir nun ``get_respawn_position`` zu ``Globals.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:759
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:941
 msgid "Let's go over what this function does."
-msgstr ""
+msgstr "Lassen Sie uns noch einmal durchgehen, was diese Funktion bewirkt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:763
 msgid ""
@@ -1036,6 +1092,8 @@ msgid ""
 "Before we are done with ``Globals.gd``, we need to add the following to "
 "``load_new_scene``:"
 msgstr ""
+"Bevor wir mit ``Globals.gd`` fertig sind, müssen wir ``load_new_scene`` "
+"Folgendes hinzufügen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:780
 msgid ""
@@ -1071,6 +1129,8 @@ msgstr ""
 msgid ""
 "Now, when the player dies, they will respawn after waiting ``4`` seconds!"
 msgstr ""
+"Wenn der Spieler nun stirbt, wird er nach ``4`` Sekunden Wartezeit wieder "
+"erscheinen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:807
 msgid ""
@@ -1093,6 +1153,8 @@ msgstr ""
 msgid ""
 "Firstly, open up ``SimpleAudioPlayer.gd`` and change it to the following:"
 msgstr ""
+"Öffnen Sie zunächst ``SimpleAudioPlayer.gd`` und nehmen folgende Änderungen "
+"vor:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:859
 msgid ""
@@ -1123,7 +1185,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:868
 msgid "Let's go over the changes."
-msgstr ""
+msgstr "Lassen Sie uns die Änderungen durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:872
 msgid ""
@@ -1181,6 +1243,8 @@ msgid ""
 "``audio_clips``: A dictionary holding all the audio clips ``Globals.gd`` can "
 "play."
 msgstr ""
+"``audio_clips``: Ein Wörterbuch, das alle Audio-Clips enthält, die ``Globals."
+"gd`` abspielen kann."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
@@ -1191,6 +1255,8 @@ msgid ""
 "``created_audio``: A list to hold all the simple audio players ``Globals."
 "gd`` has created."
 msgstr ""
+"``created_audio``: Eine Liste mit allen einfachen Audio-Playern, die "
+"``Globals.gd`` erstellt hat."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:911
 msgid ""
@@ -1222,6 +1288,8 @@ msgstr "gun_submachine_auto_shot_00_automatic_preview_01"
 msgid ""
 "Now we need to add a new function called ``play_sound`` to ``Globals.gd``:"
 msgstr ""
+"Jetzt müssen wir ``Globals.gd`` eine neue Funktion namens ``play_sound`` "
+"hinzufügen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:943
 msgid ""
@@ -1241,6 +1309,8 @@ msgid ""
 "We then set ``should_loop``, and add ``new_audio`` as a child of ``Globals."
 "gd``."
 msgstr ""
+"Dann setzen wir ``should_loop``, und fügen ``new_audio`` als Unterelement "
+"von ``Globals.gd`` hinzu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:949
 msgid ""
@@ -1269,7 +1339,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
 msgid "Add the following to ``load_new_scene``:"
-msgstr ""
+msgstr "Fügen Sie Folgendes zu ``load_new_scene`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
 msgid ""
@@ -1290,7 +1360,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:976
 msgid "Now, change ``create_sound`` to the following:"
-msgstr ""
+msgstr "Ändern Sie nun ``create_sound`` wie folgt:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:983
 msgid ""
@@ -1322,12 +1392,14 @@ msgstr "Schlussbemerkungen"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
 msgid "Now you have a fully working single player FPS!"
-msgstr ""
+msgstr "Jetzt haben Sie einen voll funktionsfähigen Einzelspieler-FPS!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
 msgid ""
 "At this point, you have a good base to build more complicated FPS games."
 msgstr ""
+"An diesem Punkt haben Sie eine gute Grundlage, um kompliziertere FPS-Spiele "
+"zu erstellen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1004
 msgid "If you ever get lost, be sure to read over the code again!"
@@ -1340,6 +1412,8 @@ msgid ""
 "You can download the finished project for the entire tutorial here: :"
 "download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
 msgstr ""
+"Sie können das fertige Projekt für die gesamte Anleitung hier "
+"herunterladen: :download:`Godot_FPS_Teil_6.zip <files/Godot_FPS_Fertig.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1008
 msgid ""
@@ -1365,6 +1439,8 @@ msgid ""
 "The finished project source is hosted on GitHub as well: https://github.com/"
 "TwistedTwigleg/Godot_FPS_Tutorial"
 msgstr ""
+"Die fertige Projektquelle wird ebenfalls auf GitHub gehostet: https://github."
+"com/TwistedTwigleg/Godot_FPS_Tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
 msgid ""
@@ -1384,6 +1460,9 @@ msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
 "download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
 msgstr ""
+"Sie können alle in dieser Anleitung verwendeten ``.blend`` Dateien hier "
+"herunterladen: :download:`Godot_FPS_BlenderFiles.zip <files/"
+"Godot_FPS_BlenderFiles.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1026
 msgid ""
@@ -1424,6 +1503,8 @@ msgid ""
 "While no sounds are provided, you can find many game ready sounds at https://"
 "gamesounds.xyz/"
 msgstr ""
+"Es werden zwar keine Sounds zur Verfügung gestellt, aber Sie können viele "
+"spielbereite Sounds unter https://gamesounds.xyz/ finden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1040
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,9 +370,8 @@ msgid "ParticlesMaterial settings"
 msgstr "Ajustes de ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "Directorio"
+msgstr "Dirección"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -380,6 +379,10 @@ msgid ""
 "``Vector3(1, 0, 0)`` which makes particles emit to the right. However, with "
 "the default gravity settings, particles will go straight down."
 msgstr ""
+"Esta es la dirección base en la que las partículas emiten. El valor por "
+"defecto es \"Vector3(1, 0, 0)`` que hace que las partículas emitan hacia la "
+"derecha. Sin embargo, con la configuración predeterminada de la gravedad, "
+"las partículas irán directamente hacia abajo."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
@@ -387,6 +390,9 @@ msgid ""
 "than 0. Here, we set the initial velocity to 40. You'll notice that "
 "particles emit toward the right, then go down because of gravity."
 msgstr ""
+"Para que esta propiedad se note, se necesita una *velocidad inicial* mayor "
+"que 0. Aquí, fijamos la velocidad inicial en 40. Notará que las partículas "
+"se emiten hacia la derecha, y luego bajan debido a la gravedad."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
@@ -405,11 +411,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
-msgstr ""
+msgstr "Llanura"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
-msgstr ""
+msgstr "Esta propiedad sólo es útil para las partículas 3D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Gravity"

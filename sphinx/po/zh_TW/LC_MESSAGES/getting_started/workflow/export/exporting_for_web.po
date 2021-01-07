@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,6 @@ msgstr ""
 "** 開啟匯出的專案。要解決這個問題，請使用本機伺服器。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-#, fuzzy
 msgid ""
 "Python offers an easy method to start a local server. Use ``python -m http."
 "server 8000 --bind 127.0.0.1`` with Python 3 to serve the current working "
@@ -60,7 +59,9 @@ msgid ""
 msgstr ""
 "Python 中有可以輕鬆執行本機伺服器的方法。可以在 Python3 上使用 ``python -m "
 "http.server 8000 --bind 127.0.0.1`` 來將目前的工作目錄放在 ``http://"
-"localhost:8000`` 。"
+"localhost:8000`` 。`更多資訊請參考 MDN 上的說明 (英語) <https://developer."
+"mozilla.org/en-US/docs/Learn/Common_questions/"
+"set_up_a_local_testing_server>`__ 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
@@ -83,8 +84,8 @@ msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
 msgstr ""
-"直到 Godot 將 **OpenGL ES 3** 轉譯器刪除並改用 **Vulkan** 之前，HTML5 匯出都"
-"在選擇 **GLES3** 時使用 **WebGL 2** 。"
+"直到 Godot 將 **OpenGL ES 3** 算繪引擎刪除並改用 **Vulkan** 之前，HTML5 匯出"
+"都在選擇 **GLES3** 時使用 **WebGL 2** 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:35
 msgid ""
@@ -106,7 +107,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
-msgstr "Godot 的 WebGL 2 轉譯器有一些 3D 問題，而且已停止維護。"
+msgstr "Godot 的 WebGL 2 算繪引擎有一些 3D 問題，而且已停止維護。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:46
 msgid "Limitations"
@@ -434,7 +435,7 @@ msgid ""
 "as JavaScript code. This allows interacting with the browser in ways not "
 "possible with script languages integrated into Godot."
 msgstr ""
-"在網頁建構中有實作 ``JavaScript`` 單例。該單例只提供了一個名為 ``eval`` 的方"
+"在網頁建置中有實作 ``JavaScript`` 單例。該單例只提供了一個名為 ``eval`` 的方"
 "法，類似 JavaScript 中相同名稱的函式。該方法接受單一字串引數，會將該字串作為 "
 "JavaScript 程式碼來執行。這樣便可用 Godot 整合腳本中無法實現的方法來與瀏覽器"
 "互動。"
@@ -472,7 +473,6 @@ msgid "Any other JavaScript value is returned as ``null``."
 msgstr "其他的 JavaScript 值則會回傳為 ``null`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:217
-#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
@@ -480,9 +480,10 @@ msgid ""
 "``null``.  The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
-"建構的 HTML5 匯出樣板也有可能不支援該單例。這種樣板在 HTML5 之外的平台上呼叫 "
-"``JavaScript.eval`` 也會回傳 ``null`` 。可以通過 ``JavaScript`` :ref:`功能標"
-"籤` 來檢查是否可使用該單例："
+"建置的 HTML5 匯出樣板也有可能為了提升安全性而被 :ref:`建置 "
+"<doc_compiling_for_web>` 為不支援該單例的版本。當使用這種樣板或是在非 HTML5 "
+"的平台上時，呼叫 ``JavaScript.eval`` 也會回傳 ``null`` 。可以通過 "
+"``JavaScript`` :ref:`功能標籤` 來檢查是否可使用該單例："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
 msgid ""

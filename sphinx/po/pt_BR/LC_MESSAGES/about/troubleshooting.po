@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,22 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Solução de problemas"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Esta página lista problemas comuns ao usar a Godot e possíveis soluções."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Tudo que eu faço no editor ou no gerenciador de projeto aparece atrasado em "
+"um frame."
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -39,6 +42,10 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"Esse é um bug conhecido <https://github.com/godotengine/godot/"
+"issues/23069>`__ em drivers gráficos da Intel no Windows. Atualizar os "
+"drivers para sua última versão *providenciada pela intel* deve resolver o "
+"problema."
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -46,18 +53,25 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Você deve usar os drivers gráficos providenciados pela Intel ao invés do "
+"entregue pela fabricante do seu desktop ou laptop porque muitas das vezes "
+"este está desatualizado."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"A grade deasparece e as malhas ficam pretas quando eu rotaciono a câmera 3D "
+"no editor."
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"Este é um `bug conhecido <https://github.com/godotengine/godot/"
+"issues/30330>`__ em drivers gráficos da Intel no Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -65,16 +79,21 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"A única forma de contornar isto,por agora,é mudar para o renderizador GLES2."
+"Você pode mudar o renderizador no canto superior-direito do editor ou nas "
+"Configurações do Projeto."
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Se você usa um computador que lhe permite trocar sua placa gráfica, como "
+"NVIDIA Optimus, você pode usar a placa dedicada para executar o Godot."
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "O editor ou projeto leva muito tempo para iniciar."
 
 #: ../../docs/about/troubleshooting.rst:34
 msgid ""
@@ -85,10 +104,16 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Esse é um ´bug conhecido <https://github.com/godotengine/godot/issues/20566>"
+"´__ no Windows quando você tem periféricos USB específicos conectados. Em "
+"particular, o software iCUE da Corsair parece causar o bug. Tente atualizar "
+"os drivers dos seus periféricos USB para a última versão. Se o bug "
+"persistir, você precisa desconectar os periféricos suspeiros antes de abrir "
+"o editor. Após isso, você pode conectá-lo novamente."
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "O editor Godot parece congelar após clicar no console do sistema."
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -98,16 +123,23 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"Quando rodando a Godot no Windows,com o console do sistema aberto,você pode "
+"acidentalmente habilitar o *modo de seleção* clicando dentro da janela de "
+"comando.Esse comportamento característico do Windows para a aplicação para "
+"que você selecione o texto dentro do console do sistema.A Godot não pode "
+"ignorar esse comportamento específico do sistema."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Para resolver isto,selecione a janela do console do sistema e pressione "
+"Enter para sair do modo de seleção."
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "A janela do projeto está borrada,diferente do editor."
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -115,6 +147,9 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"Diferente do editor, o projeto não está marcado como DPI-aware por padrão."
+"Isso é feito para melhorar a performance,especialmente em gráficos "
+"integrados,onde a renderização de cenas em hiDPI é lenta."
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -122,10 +157,15 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Para resolver isso,abra **Projeto > Configurações do Projeto** e habilite "
+"**Tela > Janela > Dpi > permitir Hidpi**. Além disso,verifique se o seu "
+"projeto está configurado para suportar :ref:`múltiplas resoluções "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
 msgstr ""
+"A janela do projeto não aparece centralizada quando eu executo o projeto."
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -134,12 +174,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Este é um `problema conhecido <https://github.com/godotengine/godot/"
+"issues/13017>`__. Para resolvê-lo, Abra **Projeto > Configurações do "
+"Projeto** e habilite **Tela > Janela > Dpi > Permitir Hidpi**. Além disso, "
+"verifique se o seu projeto está configurado para suportar :ref:`múltiplas "
+"resoluções <doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"O projeto funciona quando executado a partir do editor, mas falha ao "
+"carregar alguns arquivos ao executar a partir de uma cópia exportada."
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -150,6 +197,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"Isso é geralmente causado ao esquecer de especificar um filtro para arquivos "
+"sem recursos no diálogo Exportar. Por padrão, Godot somente incluirá "
+"*recursos* presentes no arquivo PCK. Alguns arquivos comumente usados, como "
+"arquivos JSON, não são considerados recursos. Por exemplo, se você carregar "
+"``test.json`` no projeto exportado, você precisa especificar ``*.json`` no "
+"filtro de exportação sem recursos. Veja :ref:"
+"`doc_exporting_projects_export_mode` para mais informação."
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -160,3 +214,10 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"No Windows, isso pode também ser devido aos problemas :ref:`case sensitivity "
+"<doc_project_organization_case_sensitivity>` . Se você referenciar um "
+"recurso em seu script com um caso diferente disso no sistema de arquivos, "
+"carregamento falhará uma vez que você exportar o projeto. Isto se dá porque "
+"o sistema de arquivos virtual PCK é sensível aos caracteres maiúsculos e "
+"minúsculos, enquanto o sistema de arquivos do Windows não é sensível por "
+"padrão."

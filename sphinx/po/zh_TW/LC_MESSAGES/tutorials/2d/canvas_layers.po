@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,14 +19,13 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Canvas 圖層"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Viewport 與 Canvas 項目"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
-#, fuzzy
 msgid ""
 "Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
 "<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
@@ -34,19 +33,20 @@ msgid ""
 "Each item will inherit its parent's transform. This means that when the "
 "parent is moved, the children will move too."
 msgstr ""
-"一般的2D節點，例如 :ref:`Node2D <class_Node2D>` 或 :ref:`Control "
-"<class_Control>` ，都是繼承自 :ref:`CanvasItem <class_CanvasItem>` ，也就是所"
-"有2D節點的基礎。CanvasItems可以形成樹狀結構，並且座標轉換(transform)會被繼"
-"承。意思是當父節點的座標被移動，子節點的座標也會跟著移動。"
+"一般的 2D 節點，如 :ref:`Node2D <class_Node2D>` 或 :ref:`Control "
+"<class_Control>` ，都是從 :ref:`CanvasItem <class_CanvasItem>` 繼承來的。"
+"CanvasItem 是所有 2D 節點的基礎型別。CanvasItem 可以用樹狀形式進行排列。其中"
+"的各個項目都會繼承其母節點的變換。也就是說，當母節點移動的時候，子節點也會跟"
+"著移動。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
-"這些節點都是 :ref:`Viewport <class_Viewport>` 的子節點，會經由它來顯示。"
+"CanvasItem 節點與從 CanvasItem 繼承來的節點，都是 :ref:`Viewport "
+"<class_Viewport>` 直接或間接的子節點，同時也會通過 Viewport 來顯示。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -56,6 +56,10 @@ msgid ""
 "it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"Viewport 有 :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>` 屬性，這個屬性能用來將自定 :ref:"
+"`Transform2D <class_Transform2D>` 變換套用到其層級上包含的 CanvasItem。有些"
+"如 :ref:`Camera2D <class_Camera2D>` 的節點就是通過更改這個變換來運作的。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -63,18 +67,22 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"如滾動等效果可以通過操作 Canvas 的變換屬性來實現以達到最佳效果。這種做法比移"
+"動根 Canvas 項目 (也就是整個場景) 來得有效率。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
+"雖然在通常情況下，我們並不希望遊戲或 App 的 **所有東西** 都收到 Canvas 變換的"
+"影響。例子如下："
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
-msgstr ""
+msgstr "**視察背景 (Parallax Background)**: 比畫面中其他部分動得慢的背景。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -83,20 +91,25 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**UI**: 想像一下覆蓋在遊戲世界畫面上的 UI (使用者介面) 與 HUD (抬頭顯示器)。"
+"我們會希望生命計數器、分數與其他項目在遊戲世界更改的時候保持在畫面上相同的位"
+"置。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
 msgstr ""
+"**轉場**: 在轉場 (淡入淡出、混合等) 使用的視覺效果上，我們會希望這些效果保留"
+"在畫面上固定的位置。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
-msgstr ""
+msgstr "要如何在單一場景樹中解決這些問題？"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
-msgstr ""
+msgstr "\\ CanvasLayer"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
@@ -108,6 +121,12 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
+"這個問題的答案就是 :ref:`CanvasLayer <class_CanvasLayer>` 。CanvasLayer 是一"
+"個可以為其所有子節點與次級子節點加上額外的 2D 算繪圖層的節點。Viewport 子節點"
+"預設會在第「0」層上進行繪製，而 CanvasLayer 則會在其他數字的圖層上繪製。較大"
+"數字的圖層會被繪製在較小數字的圖層之上。CanvasLayer 自己也有獨立的變換，並不"
+"收到其他圖層的變換影響。這樣一來，便可以讓 UI 繪製在畫面上固定的地方，觀看遊"
+"戲世界的更改便不受影響。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -115,16 +134,21 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"CanvasLayer 的其中一個例子就是建立視差背景。可以通過將背景放在 "
+"CanvasLayer「-1」上來實現。分數、生命計數器與暫停按鈕的畫面可以建立在第「1」"
+"層上。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "下圖顯示了圖層的樣子："
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"CanvasLayer 與樹狀順序彼此獨立，其順序只會依據圖層數字來決定，因此可以依據需"
+"求來進行實體化。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
@@ -136,3 +160,8 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"若要控制節點的繪製順序，也不一定要使用 CanvasLayer。要確保節點被繪製另一個節"
+"點的「前方」還是「後方」的標準方法是在場景面板中調整節點的順序。也許不太直"
+"覺，但在場景面板最上面的節點會在 Viewport 中會被繪製在下方節點的 **後面** 。"
+"2D 節點也有能控制繪製順序的屬性 (請參考 :ref:`Node2D.z_index "
+"<class_Node2D_property_z_index>`)。"

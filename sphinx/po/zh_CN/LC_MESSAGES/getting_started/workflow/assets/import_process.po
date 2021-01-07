@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,6 @@ msgstr ""
 "做，就无法指定如何转换和更改纹理、音频文件、场景等的导入标志。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -44,9 +43,10 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"在Godot 3.0中，我们使用一种更现代的导入方法：只需将素材（图像文件，场景，音频"
-"文件，字体等）直接拖放到项目文件夹中（使用系统文件浏览器手动复制它们）。Godot"
-"将自动在内部导入这些文件，并将导入的素材隐藏在 ``res://.import`` 文件夹中。"
+"在Godot 3.0+中，我们使用一种更现代的导入方法：只需将素材（图像文件，场景，音"
+"频文件，字体等）直接拖到项目文件夹中（使用系统文件资源管理器手动复制它们）。"
+"Godot将自动在内部导入这些文件，并将导入的素材隐藏在 ``res://.import`` 文件夹"
+"中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid ""
@@ -56,33 +56,38 @@ msgid ""
 "try and access an imported asset using the :ref:`File <class_File>` class it "
 "will work in the editor, but break in the exported project."
 msgstr ""
+"这意味着，在尝试通过代码访问导入的素材时，你需要使用 :ref:"
+"`ResourceLoader<class_ResourceLoader>` ，它会自动考虑内部文件的保存位置。如果"
+"尝试使用 :ref:`File <class_File>` 类访问导入的素材，它会在编辑器中正常运作，"
+"但在导出的项目中会出错。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:26
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
 "imported files, only the :ref:`File <class_File>` class can."
 msgstr ""
+"然而 :ref:`Resource Loader<class_ResourceLoader>` 无法访问非导入的文件，只"
+"有 :ref:`File <class_File>` 类可以。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:30
 msgid "Changing import parameters"
 msgstr "更改导入参数"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"在Godot中更改素材的导入参数（再次记住，导入参数仅存在于非本地的 Godot 素材类"
-"型中）很容易。只需在文件系统停靠面板中选择相关素材即可："
+"在Godot中更改素材的导入参数（再次提醒，只有非本地的 Godot 素材类型有导入参"
+"数），只需在文件系统停靠面板中选择相关的素材："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""
 "Then, after adjusting the parameters, press \"Reimport\". These parameters "
 "will only be used for this asset and on future reimports."
 msgstr ""
-"并且，在调整参数后，按下 ``重新导入``。这些参数将仅用于此素材和将来的重新导"
+"并且，在调整参数后，按下 ``重新导入``。这些参数将仅用于此素材和之后的重新导"
 "入。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
@@ -95,9 +100,8 @@ msgstr ""
 "材，当重新导入时，所暴露的参数将应用于它们。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
-#, fuzzy
 msgid "Reimporting multiple assets"
-msgstr "使用多个线程"
+msgstr "重新导入多个素材"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
@@ -107,6 +111,9 @@ msgid ""
 "reimport in the file system. In the import tab there will now be a checkbox "
 "to the left of every import parameter."
 msgstr ""
+"在进行项目时，你可能会发现有数个素材都需要修改同一个参数的情况，例如启用"
+"mipmaps，但你只想改动特定的参数。为此，请在文件系统中选择你要重新导入的素材。"
+"现在导入选项卡的每个导入参数的左边都会出现一个复选框。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:56
 msgid ""
@@ -115,6 +122,8 @@ msgid ""
 "button and every selected asset will be reimported with only those "
 "parameters changed."
 msgstr ""
+"勾选导入素材中你想更改的参数，然后照常修改参数。最后点击“重新导入”按钮。这样"
+"就重新导入了只有选定部分参数被修改过的素材。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:62
 msgid "Automatic reimport"
@@ -201,4 +210,4 @@ msgstr ""
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
-msgstr "有许多类型的素材可供导入，因此请继续阅读以了解如何使用它们！"
+msgstr "有许多可导入的素材类型，请继续阅读，了解如何使用它们！"

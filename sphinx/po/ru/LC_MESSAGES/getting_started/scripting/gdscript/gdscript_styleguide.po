@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -338,6 +338,8 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"Не пропускайте нули в числах с плавающей точкой. Это делает их менее "
+"читаемыми, и более сложно отличимыми от обычных чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
@@ -358,12 +360,16 @@ msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
 msgstr ""
+"Используйте нижний регистр в записи шестнадцатеричных чисел, так их "
+"становится проще прочесть."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
 msgstr ""
+"Используйте преимущество разделения больших чисел в переменных GDScript — "
+"задействовав символ нижнего подчеркивания, для удобства."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -662,7 +668,7 @@ msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
 msgstr ""
-"Остальные интерфейсы, публичные и приватные методы класса следуют далее, в "
+"Остальной интерфейс класса, публичные и приватные методы — следуют после, в "
 "указанном порядке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:734
@@ -678,38 +684,38 @@ msgstr ""
 "typing<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "Типы Шейдеров"
+msgstr "Объявленные типы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
+"Для объявление типа переменной, используйте конструкцию ``<переменная>: "
+"<тип>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "Определите тип возвращаемого значения функции с помощью стрелки ->"
+msgstr ""
+"Для объявления возвращаемого типа функции, используйте конструкцию ``-> "
+"<тип>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "Основные типы"
+msgstr "Определяемые типы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
-#, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
-"Когда вы позволите компилятору вывести подсказку типа, запишите двоеточие и "
-"знаки равенства вместе: ``: = ``."
+"В большинстве случаев, вы можете позволить компилятору самому определять "
+"типы, указав конструкцией ``:=``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
+msgstr "var health := 0 # Компилятор воспримет как числовой тип."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
@@ -718,3 +724,7 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"В случаях, когда контекст отсутствует — компилятор прерывает работу и "
+"указывает на неверный возвращаемый тип функции. К примеру, ``get_node()`` не "
+"может вывести тип, если сцена или файл узла не прогружены. В этом случае, "
+"задайте тип явно."

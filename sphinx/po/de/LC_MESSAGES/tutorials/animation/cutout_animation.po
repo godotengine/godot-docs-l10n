@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,11 +132,13 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:65
 msgid "Setting up the rig"
-msgstr ""
+msgstr "Einrichten des Rigs"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:67
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
 msgstr ""
+"Erstellen Sie einen leeren Node2D als Wurzel der Szene, um darunter zu "
+"arbeiten:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:71
 msgid ""
@@ -159,22 +161,26 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr ""
+msgstr "Der Drehpunkt ist falsch und muss angepasst werden."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:90
 msgid ""
 "This small cross in the middle of the :ref:`Sprite <class_Sprite>` is the "
 "rotation pivot:"
 msgstr ""
+"Dieses kleine Kreuz in der Mitte des :ref:`Sprite <class_Sprite>` ist der "
+"Drehpunkt:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:96
 msgid "Adjusting the pivot"
-msgstr ""
+msgstr "Drehpunkt einstellen"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:98
 msgid ""
 "The pivot can be adjusted by changing the *offset* property in the Sprite:"
 msgstr ""
+"Der Drehpunkt kann durch Ändern der Eigenschaft *offset* im Sprite angepasst "
+"werden:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
 msgid ""
@@ -213,7 +219,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:131
 msgid "RemoteTransform2D node"
-msgstr ""
+msgstr "RemoteTransform2D-Node"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:133
 msgid ""
@@ -245,7 +251,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:153
 msgid "Completing the skeleton"
-msgstr ""
+msgstr "Das Skelett vervollständigen"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:155
 msgid ""
@@ -262,6 +268,8 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:163
 msgid "For simple objects and rigs this is fine, but there are limitations:"
 msgstr ""
+"Für einfache Objekte und Rigs ist dies in Ordnung, es gibt jedoch "
+"Einschränkungen:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:165
 msgid ""
@@ -278,11 +286,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
 msgid "To solve these problems we'll use Godot's skeletons."
-msgstr ""
+msgstr "Um diese Probleme zu lösen, werden wir Godots Skelette benutzen."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
 msgid "Skeletons"
-msgstr ""
+msgstr "Skelette"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:175
 msgid ""
@@ -299,10 +307,13 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:183
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
 msgstr ""
+"Klicken Sie dann auf das Menü Skelett und wählen Sie ``Knochen erzeugen``."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:187
 msgid "This will add bones covering the arm, but the result may be surprising."
 msgstr ""
+"Dadurch werden Knochen für den Arm hinzugefügt, aber das Ergebnis könnte "
+"überraschend sein."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:191
 msgid ""
@@ -322,6 +333,8 @@ msgstr ""
 msgid ""
 "Now select the whole chain, from the endpoint to the arm and create bones:"
 msgstr ""
+"Wählen Sie nun die gesamte Kette, vom Endpunkt bis zum Arm, und erstellen "
+"Sie Knochen:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:207
 msgid ""
@@ -362,7 +375,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "IK chains"
-msgstr ""
+msgstr "IK-Ketten"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:234
 msgid ""
@@ -378,6 +391,8 @@ msgstr ""
 msgid ""
 "IK allows us to move directly the foot while the shin and thigh self-adjust."
 msgstr ""
+"Die IK ermöglicht es uns, den Fuß direkt zu bewegen, während sich Schienbein "
+"und Oberschenkel von selbst anpassen."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:243
 msgid ""
@@ -389,10 +404,12 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:249
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
 msgstr ""
+"Aktivieren Sie dann diese Kette für IK. Wechseln Sie zu Bearbeiten > IK-"
+"Kette erstellen."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:253
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr ""
+msgstr "Dadurch wird die Basis der Kette *Gelb*."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:257
 msgid ""
@@ -414,13 +431,15 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
 msgid "Setting keyframes and excluding properties"
-msgstr ""
+msgstr "Festlegen von Keyframes und Ausschließen von Eigenschaften"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
 msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
 msgstr ""
+"Spezielle Kontextelemente werden in der oberen Symbolleiste angezeigt, wenn "
+"das Animationseditorfenster geöffnet ist:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
 msgid ""
@@ -461,6 +480,8 @@ msgid ""
 "1. Make sure the rig parts are positioned in what looks like a \"resting\" "
 "arrangement."
 msgstr ""
+"1. Stellen Sie sicher, dass die Rig-Teile so positioniert sind, dass sie wie "
+"eine \"ruhende\" Anordnung aussehen."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
 msgid "Create a new animation, rename it \"rest\"."
@@ -469,6 +490,8 @@ msgstr "Erstelle eine neue Animation, benenne sie um in \"rest\" (schlafen)."
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
 msgstr ""
+"Wählen Sie alle Nodes in Ihrem Rig aus (die Auswahl der Box sollte gut "
+"funktionieren)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid ""
@@ -485,7 +508,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:316
 msgid "Modifying rotation only"
-msgstr ""
+msgstr "Nur Rotation ändern"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:318
 msgid ""
@@ -504,10 +527,12 @@ msgid ""
 "This will avoid the creation of unwanted animation tracks for position and "
 "scale."
 msgstr ""
+"Dadurch wird die Erstellung unerwünschter Animationsspuren für Position und "
+"Skalierung vermieden."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid "Keyframing IK chains"
-msgstr ""
+msgstr "Keyframing IK-Ketten"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
 msgid ""
@@ -518,7 +543,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
-msgstr ""
+msgstr "Verschiebt ein Sprite visuell hinter dem übergeordneten Element"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:340
 msgid ""
@@ -540,11 +565,13 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:354
 msgid "Setting easing curves for multiple keys"
-msgstr ""
+msgstr "Festlegen von Beschleunigungskurven für mehrere Tasten"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
 msgid "To apply the same easing curve to multiple keyframes at once:"
 msgstr ""
+"So wenden Sie dieselbe Beschleunigungskurve auf mehrere Keyframes "
+"gleichzeitig an:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
 msgid "Select the relevant keys."
@@ -561,10 +588,11 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
 msgid "In the transition editor, click on the desired curve to apply it."
 msgstr ""
+"Klicken Sie im Übergangseditor auf die gewünschte Kurve, um sie anzuwenden."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
-msgstr ""
+msgstr "2D-Skelettverformung"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:368
 msgid ""
@@ -577,3 +605,5 @@ msgstr ""
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
 msgstr ""
+"Dieser Prozess wird in einer :ref:`separaten Anleitung <doc_2d_skeletons>` "
+"beschrieben."

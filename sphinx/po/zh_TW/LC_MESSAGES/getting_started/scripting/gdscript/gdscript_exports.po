@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,13 +222,13 @@ msgstr "建立屬性群組"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:265
 msgid "A list of properties with similar names can be grouped."
-msgstr "有類似名稱的屬性也可以被放到群組內。"
+msgstr "可將名稱類似的屬性放在群組內。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:279
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "
 "collapsible list of properties;"
-msgstr "``name`` 是在屬性面板中可以展開摺疊的群組名稱，內包含了一組屬性列表；"
+msgstr "``name`` 是群組名稱，在屬性面板中可以展開摺疊，內包含了一組屬性列表；"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:282
 msgid ""
@@ -237,8 +237,8 @@ msgid ""
 "key. For instance, ``rotate_speed`` is going to be shortened to ``speed`` in "
 "this case."
 msgstr ""
-"接下來所有新增的屬性都會被放在群組中，且會以 ``hint_string`` 索引鍵定義的前置"
-"字串來縮短名稱。例如， 在本例中 ``rotate_speed`` 會被縮短為 ``speed`` 。"
+"接下來所有新增的屬性都會被摺疊放在群組中，且會以 ``hint_string`` 索引鍵定義的"
+"前置字串來縮短名稱。例如， 在本例中 ``rotate_speed`` 會被縮短為 ``speed`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:286
 msgid ""

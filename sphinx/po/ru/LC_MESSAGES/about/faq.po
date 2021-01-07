@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot - это `Свободное и открытое программное обеспечение <https://en."
+"Godot — это `Свободное и открытое программное обеспечение <https://en."
 "wikipedia.org/wiki/Free_and_open-source_software>`_, которое доступно под "
 "`OSI-утвержденной <https://opensource.org/licenses/MIT>`_ MIT лицензией. Это "
 "означает, что он свободен как \"свобода слова\" равно как и \"свобода "
@@ -83,7 +83,7 @@ msgid ""
 "different licenses."
 msgstr ""
 "Логотипы и иконки также находятся под лицензией Creative Commons. Заметьте, "
-"что сторонние библиотеки, включенные в исходный код Godot могут иметь другие "
+"что сторонние библиотеки, включённые в исходный код Godot могут иметь другие "
 "лицензии."
 
 #: ../../docs/about/faq.rst:27
@@ -118,7 +118,7 @@ msgstr "**Для редактора:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr "Windows (Окно)"
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "macOS"
@@ -242,7 +242,7 @@ msgid ""
 msgstr ""
 "Что касается новых языков, поддержка возможна с использованием возможностей "
 "сторонних решений GDNative / NativeScript / PluginScript. (См. вопрос о "
-"плагинах ниже.) В настоящее время работа ведется полным ходом, например, "
+"плагинах ниже.) В настоящее время работа ведётся полным ходом, например, "
 "есть неофициальные привязки Godot к `Python <https://github.com/touilleMan/"
 "godot-python>`_ и `Nim <https://github.com/pragmagic/godot-nim>`_."
 
@@ -260,13 +260,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
-"GDScript - это интегрированный язык скриптов Godot. Он был построен с нуля, "
+"GDScript — это интегрированный язык скриптов Godot. Он был построен с нуля, "
 "чтобы максимизировать потенциал Godot в наименьшем количестве кода, "
 "предоставляя как начинающим, так и опытным разработчикам возможность "
 "максимально быстро использовать преимущества Godot. Если вы когда-нибудь "
-"писали что-то на языке, подобном Python, то вы почувствуете себя дома. Для "
-"примеров, истории и полного обзора возможностей, которые предлагает "
-"GDScript, ознакомьтесь с: ref: `Руководство по созданию скриптов GDScript "
+"писали что-то на языке, подобном Python, то вы почувствуете себя как дома. "
+"Для примеров, истории и полного обзора возможностей, которые предлагает "
+"GDScript, ознакомьтесь с: ref: `Руководством по созданию скриптов GDScript "
 "<doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
@@ -276,12 +276,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"Есть несколько причин использовать GDScript - когда вы создаете прототип, "
+"Есть несколько причин использовать GDScript — когда вы создаёте прототип, "
 "ваш проект находится на стадии альфа/бета тестирования, или вы не "
 "занимаетесь созданием будущего ААА (Трипл-А) проекта, но наиболее "
-"существенной причиной, в общем и целом, является **сведение.**(англ. "
-"reduction - алгоритм преобразования одной задачи к другой в теории сложности "
-"вычислений)"
+"существенной причиной является общее **упрощение разработки**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -507,7 +505,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Почему Godot использует Vulkan или OpenGL вместо Direct 3D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -517,6 +515,10 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Прежде всего, Godot стремится к совместности перекрёстных платформ и "
+"открытых стандартов. OpenGl и Vulkan - технологии, открытые и доступные на "
+"всех (почти) платформах. Благодаря этому дизайнерскому решению, проект, "
+"созданный с Godot на Windows также пойдёт на Linux, macOS и др."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -525,6 +527,11 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Поскольку над модулем рендеринга Godot работает всего несколько человек, мы "
+"бы предпочли, чтобы у вас было меньше серверных модулей рендеринга. Кроме "
+"того, использование единого API на всех платформах позволяет добиться "
+"большей согласованности с меньшим количеством проблем, связанных с "
+"платформой."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -532,14 +539,16 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"В будущем, возможно, мы разработаем для Godot рендерер Direct3D 12 (в "
+"основном для Xbox), однако Vulkan и OpenGL по умолчанию останутся основными "
+"графическими отрисовщиками для всех платформ, включая Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"Как ассеты должны быть созданы, чтобы поддерживать множество разрешений и "
-"соотношений сторон экрана?"
+"Как создавать ресурсы под множество разрешений и соотношений сторон дисплея?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -681,16 +690,17 @@ msgstr ""
 "как другая сторонняя библиотека интегрируется с Godot."
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "Когда следующий релиз?"
+msgstr "Когда выйдет следующий релиз Godot?"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr "Дополнительную информацию смотрите в :ref:`doc_exporting_projects`."
+msgstr ""
+"Когда он будет готов! Смотреть :ref:"
+"`doc_release_policy_when_is_next_release_out` для дополнительного "
+"ознакомления."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
@@ -963,7 +973,7 @@ msgid ""
 msgstr ""
 "В то время как Godot пытается как можно лучше использовать когерентность "
 "кэша для множества вычислительно тяжёлых задач, мы полагаем, что большинство "
-"пользователей не должны вынуждено прибегать к практике DoD."
+"пользователей не должны принуждаться прибегать к практике DoD."
 
 #: ../../docs/about/faq.rst:367
 msgid ""
@@ -994,10 +1004,9 @@ msgid ""
 "needed, our recommendation is to use C++ and GDNative for the high "
 "performance parts and GDScript (or C#) for the rest of the game."
 msgstr ""
-"Если необходима игра, которая действительно нуждается в обработке большого "
-"количества объектов, мы рекомендуем использовать C++ и GDNative для мест,где "
-"требуется высокая производительность и GDScript (или C#) для остальной части "
-"игры."
+"Если игра действительно должна обрабатывать большое количество объектов, то "
+"мы рекомендуем использовать C++ и GDNative для высокозатратных частей и "
+"GDScript (или C#) для остальной части игры."
 
 #: ../../docs/about/faq.rst:382
 msgid "How can I support Godot development or contribute?"

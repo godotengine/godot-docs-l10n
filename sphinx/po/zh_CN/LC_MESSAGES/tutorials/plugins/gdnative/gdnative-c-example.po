@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,12 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://github.com/"
-"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
+"describe below in the `GDNative-demos repository <https://docs.godotengine."
+"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
 msgstr ""
 "在开始之前，您可以通过以下链接将源代码下载到我们将在此处描述的示例对象: "
-"https://github.com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo"
+"https://github.com/GodotNativeTools/GDNative-demos/tree/master/c/"
+"SimpleDemo__。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
 #, fuzzy
@@ -86,9 +87,8 @@ msgid "Prerequisites"
 msgstr "先决条件"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
-#, fuzzy
 msgid "Before we start you'll need a few things:"
-msgstr "在我们开始之前，您需要一些东西。"
+msgstr "在我们开始之前，您需要一些东西："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
@@ -104,12 +104,12 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 #, fuzzy
 msgid ""
-"A Git clone of the `godot_headers repository <https://github.com/"
-"GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
-"public API exposed to GDNative."
+"A Git clone of the `godot_headers repository <https://github.com/godotengine/"
+"godot_headers>`_: these are the C headers for Godot's public API exposed to "
+"GDNative."
 msgstr ""
-"`godot_headers repository <https://github.com/GodotNativeTools/"
-"godot_headers>`_ 的副本，"
+"“ godot_headers”存储库<https://github.com/GodotNativeTools/godot_headers>`_的"
+"Git克隆：这是公开给GDNative的Godot公共API的C头文件。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
 #, fuzzy
@@ -446,7 +446,6 @@ msgstr ""
 "自动销毁。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:338
-#, fuzzy
 msgid ""
 "In more complex operations it can be confusing the keep track of which value "
 "needs to be deallocated and which does not. As a general rule: call "
@@ -454,9 +453,9 @@ msgid ""
 "The String destructor would be called in C++ after the Variant was created, "
 "so the same is necessary in C."
 msgstr ""
-"(在更复杂的操作中，可能会混淆跟踪哪个值需要被释放，哪些不需要。一般来说:当调"
-"用C++析构函数时调用godot_XXX_destroy。字符串析构函数将在C++之后调用 Variant已"
-"创建，因此在C)中也是如此"
+"在更复杂的操作中，跟踪哪个值需要重新分配以及哪个值不需要可能会造成混淆。 一般"
+"来说：当将调用C++析构函数时，请调用``godot_TYPENAME_destroy``。 创建Variant"
+"后，将调用C++中的String类析构函数，在C中也是如此。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:344
 msgid "The variant we return is destroyed automatically by Godot."
@@ -606,9 +605,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:439
-#, fuzzy
 msgid "Platform libraries"
-msgstr "平台名称。"
+msgstr "平台库"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:441
 msgid ""

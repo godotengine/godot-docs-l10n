@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:4
 msgid "Common engine methods and macros"
-msgstr ""
+msgstr "常見引擎方法與巨集"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:6
 msgid ""
@@ -27,51 +27,54 @@ msgid ""
 "are used in almost every file. This page is geared towards beginner "
 "contributors, but it can also be useful for those writing custom C++ modules."
 msgstr ""
+"Godot 的 C++ 原始碼中使用了數十種自定方法與巨集，且幾乎所有檔案中都有用到。本"
+"頁主要是提供給剛開始參與貢獻的人看，但對於撰寫自定 C++ 模組的人來說應該也很實"
+"用。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:11
-#, fuzzy
 msgid "Print text"
-msgstr "繪製圖塊"
+msgstr "印出文字"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:31
 msgid ""
 "If you need to add placeholders in your messages, use format strings as "
 "described below."
-msgstr ""
+msgstr "若需要在訊息中新增預留位置，可以使用如下說明的格式化字串。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:35
 msgid "Format a string"
-msgstr ""
+msgstr "格式化字串"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:37
 msgid ""
 "The ``vformat()`` function returns a formatted :ref:`class_String`. It "
 "behaves in a way similar to C's ``sprintf()``:"
 msgstr ""
+"``vformat()`` 函式會回傳經過格式化的 :ref:`class_String` 。其行為與 C 的 "
+"``sprintf()`` 類似："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:51
 msgid ""
 "In most cases, try to use ``vformat()`` instead of string concatenation as "
 "it makes for more readable code."
 msgstr ""
+"大多數情況下，使用 ``vformat()`` 來代替字串串接可以提升程式碼的可讀性。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:55
 msgid "Convert an integer or float to a string"
-msgstr ""
+msgstr "將整數或浮點數轉為字串"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:57
 msgid "This is mainly useful when printing numbers directly."
-msgstr ""
+msgstr "該方法通常適用於直接印出數字。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:68
-#, fuzzy
 msgid "Internationalize a string"
-msgstr "國際化"
+msgstr "國際化字串"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
-#, fuzzy
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "Godot 沒有使用限制"
+msgstr "在 Godot 的程式碼中有兩種方法來進行國際化："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
@@ -80,6 +83,9 @@ msgid ""
 "translated if they provide a translation for it. When contributing to the "
 "engine, this is generally the macro you should use for localizable strings."
 msgstr ""
+"``TTR()``: **編輯器 (\"Tools\") 翻譯 - Tools TRanslation** 只能在編輯器中實"
+"用。若使用者在專案中使用了相同的文字，若沒有提供用於該文字的翻譯，就不會被翻"
+"譯。在參與引擎貢獻時，用來翻譯字串的巨集通常都是這個。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:76
 msgid ""
@@ -87,12 +93,16 @@ msgid ""
 "projects if they provide a translation for the given string. This kind of "
 "translation shouldn't be used in editor-only code."
 msgstr ""
+"``RTR()``: **執行階段翻譯 - Run-time TRanslations** 檔有提供給定字串的翻譯"
+"時，會在專案內自動翻譯。這種翻譯通常不會用在編輯器程式碼內。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:87
 msgid ""
 "To insert placeholders in localizable strings, wrap the localization macro "
 "in a ``vformat()`` call as follows:"
 msgstr ""
+"若要在可翻譯字串內插入預留位置，請如下範例以 ``vformat()`` 呼叫包住國際化巨"
+"集："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:97
 msgid ""
@@ -101,65 +111,71 @@ msgid ""
 "string will never match the translation as it will have the placeholder "
 "already replaced when it's passed to TranslationServer."
 msgstr ""
+"當將 ``vformat()`` 與翻譯巨集一起使用時，請務必將翻譯巨集包在 ``vformat()`` "
+"內，而不要反過來。否則產生的字串永遠不會有對應的翻譯，因為在傳給 "
+"TranslationServer 時，字串的預留位置已經被換掉了。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:103
 msgid "Clamp a value"
-msgstr ""
+msgstr "鉗制數值"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:105
 msgid ""
 "Godot provides macros for clamping a value with a lower bound (``MAX``), an "
 "upper bound (``MIN``) or both (``CLAMP``):"
 msgstr ""
+"Godot 提供了用來將數值鉗制在最小值 (``MAX``) 與最大值 (``MIN``) 以及同時鉗制 "
+"(``CLAMP``) 的巨集："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:117
 msgid ""
 "This works with any type that can be compared to other values (like ``int`` "
 "and ``float``)."
-msgstr ""
+msgstr "這幾個巨集可以用在所有能互相比較的型別內 (如 ``int`` 與 ``float``)。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:121
 msgid "Microbenchmarking"
-msgstr ""
+msgstr "微型效能評定 (Microbenchmarking)"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:123
 msgid ""
 "If you want to benchmark a piece of code but don't know how to use a "
 "profiler, use this snippet:"
 msgstr ""
+"若想對一小部分的程式碼進行效能評定，但不知道要如何實用分析工具，則可以使用下"
+"列程式碼片段："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:135
 msgid ""
 "This will print the time spent between the ``begin`` declaration and the "
 "``end`` declaration."
-msgstr ""
+msgstr "這個程式會印出介於 ``begin`` 宣告與 ``end`` 宣告間所花費的時間。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:140
 msgid ""
 "You may have to ``#include \"core/os/os.h\"`` if it's not present already."
-msgstr ""
+msgstr "若程式碼中沒有 ``#include \"core/os/os.h\"`` ，則需要包含這行程式。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:142
 msgid ""
 "When opening a pull request, make sure to remove this snippet as well as the "
 "include if it wasn't there previously."
 msgstr ""
+"如果一開始沒有這段程式碼的話，請確定在開啟 Pull Request 時有移除這段程式。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
-#, fuzzy
 msgid "Get project/editor settings"
-msgstr "測試"
+msgstr "取得專案或編輯器設定"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
-#, fuzzy
 msgid "There are four macros available for this:"
-msgstr "Godot 沒有使用限制"
+msgstr "有四種可用於取得設定的巨集："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
 "If a default value has been specified elsewhere, don't specify it again to "
 "avoid repetition:"
-msgstr ""
+msgstr "如果有在其他地方指定預設值的話，則請不要指定預設值以避免重複："
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:170
 msgid ""
@@ -167,16 +183,17 @@ msgid ""
 "and use ``GLOBAL_GET``/``EDITOR_GET`` in all other places where it's "
 "referenced."
 msgstr ""
+"建議每個設定只使用一次 ``GLOBAL_DEF``/``EDITOR_DEF`` ，然後在其他參照的地方使"
+"用 ``GLOBAL_GET``/``EDITOR_GET`` 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:174
-#, fuzzy
 msgid "Error macros"
-msgstr "錯誤"
+msgstr "錯誤巨集"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:176
 msgid ""
 "Godot features many error macros to make error reporting more convenient."
-msgstr ""
+msgstr "Godot 提供了許多能讓錯誤回報更方便的錯誤巨集。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:180
 msgid ""
@@ -184,6 +201,8 @@ msgid ""
 "in ``assert()`` function. An error is reached if the condition inside "
 "evaluates to ``true``, not ``false``."
 msgstr ""
+"在錯誤巨集中的條件式與 GDScript 的內建 ``assert()`` 函式運作的方法 **相反"
+"** 。錯誤會在其中的條件式為 ``true`` 時跑出，而非 ``false`` 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:186
 msgid ""
@@ -193,6 +212,9 @@ msgid ""
 "don't know C++. In case a method was passed invalid arguments, you can print "
 "the invalid value in question to ease debugging."
 msgstr ""
+"這裡只寫了幾種自定訊息的變體，因為我們建議所有新的貢獻者都應該只使用這些類型"
+"的訊息。請確保自定訊息有包含足夠的訊息來讓使用者即使不瞭解 C++ 也能診斷問題。"
+"當將無效的引數傳給某個方法時，可以將無效的值印出以讓除錯過程更簡單。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:192
 msgid ""
@@ -200,12 +222,14 @@ msgid ""
 "necessary, remove ``_MSG`` at the end of the macro name and don't supply a "
 "message argument."
 msgstr ""
+"對於不需要顯示人類可讀取訊息的內部錯誤檢查，可以移除巨集後方的 ``_MSG`` ，然"
+"後不提供訊息引數。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:196
 msgid ""
 "Also, always try to return processable data so the engine can keep running "
 "well."
-msgstr ""
+msgstr "另外，也請務必回傳可處理的資料，以讓引擎繼續執行。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:240
 msgid ""
@@ -213,6 +237,8 @@ msgid ""
 "core/error_macros.h>`__ in Godot's codebase for more information about each "
 "error macro."
 msgstr ""
+"有關各個錯誤巨集的更多資訊，請參考 Godot 原始碼中的 `core/error_macros.h "
+"<https://github.com/godotengine/godot/blob/master/core/error_macros.h>`__ 。"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:243
 msgid ""
@@ -221,3 +247,6 @@ msgid ""
 "list of available error codes in `core/error_list.h <https://github.com/"
 "godotengine/godot/blob/master/core/error_list.h>`__."
 msgstr ""
+"有些函式會回傳錯誤代碼 (具體化為使用 ``Error`` 回傳型別)。該錯誤代碼的值可以"
+"直接在錯誤巨集中回傳。有關可用的錯誤代碼列表，請參考 `core/error_list.h "
+"<https://github.com/godotengine/godot/blob/master/core/error_list.h>`__ 。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,16 +410,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:236
-#, fuzzy
 msgid ""
 "If you have already created a merge commit without using ``rebase``, or have "
 "made any other changes that have resulted in undesired history, the best "
 "option is to use an *interactive rebase* on the upstream branch. See the :"
 "ref:`dedicated section <doc_pr_workflow_rebase>` for instructions."
 msgstr ""
-"``rebase`` を使用せずにマージコミットを既にプッシュした場合、または不要な履歴"
-"をもたらす他の変更を行った場合は、ハードリセットを使用して特定のコミットに戻"
-"り、再試行できます:"
+"もし ``rebase`` を使わずにすでにマージコミットを作成していたり、他の変更をし"
+"た結果、望ましくない履歴が残っている場合は、上流ブランチで *interactive "
+"rebase* を使うのが最善の方法です。説明は :ref:`専用セクション "
+"<doc_pr_workflow_rebase>` を参照してください。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
@@ -727,18 +727,15 @@ msgstr ""
 "したPRを得ることができます:)"
 
 #: ../../docs/community/contributing/pr_workflow.rst:443
-#, fuzzy
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
 "command takes a commit ID or a branch name as argument, and will let you "
 "modify all commits between that commit/branch and the last one in your "
 "working branch, the so-called ``HEAD``."
 msgstr ""
-"これを行うには、\\ *インタラクティブなリベース* ``git rebase -i`` を使用しま"
-"す。 このコマンドは引数としてコミットハッシュを受け取り、そのコミットハッシュ"
-"とブランチの最後の1つ、いわゆる\\ *HEAD*\\ との間のすべてのコミットを変更でき"
-"るようにします。 この例では、最後の2つのコミットに基づいてアクションを実行す"
-"るため、次のことを行います:"
+"これには *interactive rebase* ``git rebase -i`` を使います。このコマンドはコ"
+"ミットIDかブランチ名を引数にとり、そのコミット/ブランチと作業ブランチの最後の"
+"コミット、いわゆる ``HEAD``との間のすべてのコミットを修正することができます。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:448
 msgid ""

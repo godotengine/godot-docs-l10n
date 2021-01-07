@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:4
 msgid "Part 4"
-msgstr ""
+msgstr "Parte 4"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:7
 msgid "Part overview"
@@ -31,6 +31,9 @@ msgid ""
 "player can destroy, support for joypads, and add the ability to change "
 "weapons with the scroll wheel."
 msgstr ""
+"En esta parte, añadiremos las recogidas de salud, las recogidas de munición, "
+"los objetivos que el jugador puede destruir, el soporte para los joypads, y "
+"añadiremos la capacidad de cambiar las armas con la rueda de desplazamiento."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:13
 msgid ""
@@ -38,6 +41,9 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_three` will be the starting project for part 4"
 msgstr ""
+"Se supone que has terminado :ref:`doc_fps_tutorial_part_three` antes de "
+"pasar a esta parte del tutorial. El proyecto terminado de :ref:"
+"`doc_fps_tutorial_part_three` será el proyecto inicial de la parte 4"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:16
 msgid "Let's get started!"
@@ -45,7 +51,7 @@ msgstr "¡Vamos a empezar!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:19
 msgid "Adding joypad input"
-msgstr ""
+msgstr "Añadiendo la entrada del joypad"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:21
 msgid ""
@@ -53,18 +59,27 @@ msgid ""
 "Console controllers, Joysticks (like for flight simulators), Wheels (like "
 "for driving simulators), VR Controllers, and more!"
 msgstr ""
+"En Godot, cualquier controlador de juego se conoce como un joypad. Esto "
+"incluye: ¡Controladores de consola, Joysticks (como los de los simuladores "
+"de vuelo), Ruedas (como los de los simuladores de conducción), Controladores "
+"VR, y más!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:24
 msgid ""
 "Firstly, we need to change a few things in our project's input map. Open up "
 "the project settings and select the ``Input Map`` tab."
 msgstr ""
+"En primer lugar, necesitamos cambiar algunas cosas en el mapa de entrada de "
+"nuestro proyecto. Abre la configuración del proyecto y selecciona la pestaña "
+"``Input Map``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:26
 msgid ""
 "Now we need to add some joypad buttons to our various actions. Click the "
 "plus icon and select ``Joy Button``."
 msgstr ""
+"Ahora tenemos que añadir algunos botones del joypad a nuestras diversas "
+"acciones. Haz clic en el icono más y selecciona ``Joy Button``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:30
 msgid ""
@@ -72,52 +87,60 @@ msgid ""
 "selected is set to ``0``. In the finished project, we will be using the "
 "following:"
 msgstr ""
+"Siéntete libre de usar la disposición de los botones que quieras. Asegúrate "
+"de que el dispositivo seleccionado esté puesto en ``0``. En el proyecto "
+"terminado, usaremos lo siguiente:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:32
 msgid "movement_sprint: ``Device 0, Button 4 (L, L1)``"
-msgstr ""
+msgstr "movement_sprint: ``Device 0, Button 4 (L, L1)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:33
 msgid "fire: ``Device 0, Button 0 (PS Cross, XBox A, Nintendo B)``"
-msgstr ""
+msgstr "fire: ``Device 0, Button 0 (PS Cross, XBox A, Nintendo B)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:34
 msgid "reload: ``Device 0, Button 0 (PS Square, XBox X, Nintendo Y)``"
-msgstr ""
+msgstr "reload: ``Device 0, Button 0 (PS Square, XBox X, Nintendo Y)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:35
 msgid "flashlight: ``Device 0, Button 12 (D-Pad Up)``"
-msgstr ""
+msgstr "flashlight: ``Device 0, Button 12 (D-Pad Up)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:36
 msgid "shift_weapon_positive: ``Device 0, Button 15 (D-Pad Right)``"
-msgstr ""
+msgstr "shift_weapon_positive: ``Device 0, Button 15 (D-Pad Right)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:37
 msgid "shift_weapon_negative: ``Device 0, Button 14 (D-Pad Left)``"
-msgstr ""
+msgstr "shift_weapon_negative: ``Device 0, Button 14 (D-Pad Left)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:38
 msgid "fire_grenade: ``Device 0, Button 1 (PS Circle, XBox B, Nintendo A).``"
-msgstr ""
+msgstr "fire_grenade: ``Device 0, Button 1 (PS Circle, XBox B, Nintendo A).``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:40
 msgid "These are already set up for you if you downloaded the starter assets"
 msgstr ""
+"Estos ya están configurados para ti si descargaste los activos de recursos"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:42
 msgid "Once you are happy with the input, close the project settings and save."
 msgstr ""
+"Una vez que esté satisfecho con la entrada, cierre la configuración del "
+"proyecto y guárdela."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:46
 msgid "Now let's open up ``Player.gd`` and add joypad input."
-msgstr ""
+msgstr "Ahora abramos ``Player.gd`` y agreguemos la entrada del joypad."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:48
 msgid ""
 "First, we need to define a few new class variables. Add the following class "
 "variables to ``Player.gd``:"
 msgstr ""
+"Primero, necesitamos definir algunas nuevas variables de clase. Añade las "
+"siguientes variables de clase a ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:56
 msgid "Let's go over what each of these does:"
@@ -128,12 +151,16 @@ msgid ""
 "``JOYPAD_SENSITIVITY``: This is how fast the joypad's joysticks will move "
 "the camera."
 msgstr ""
+"``JOYPAD_SENSITIVITY``: Esta es la rapidez con la que los joysticks del "
+"Joypad moverán la cámara."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:59
 msgid ""
 "``JOYPAD_DEADZONE``: The dead zone for the joypad. You may need to adjust "
 "depending on your joypad."
 msgstr ""
+"``JOYPAD_DEADZONE``: La zona muerta para el joypad. Puede que tengas que "
+"ajustarlo dependiendo de tu joypad."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:61
 msgid ""
@@ -141,30 +168,37 @@ msgid ""
 "movement within a radius of JOYPAD_DEADZONE. If we did not ignore said "
 "movement, the camera would jitter."
 msgstr ""
+"Muchos mandos se mueven alrededor de un cierto punto. Para contrarrestar "
+"esto, ignoramos cualquier movimiento dentro de un radio de JOYPAD_DEADZONE. "
+"Si no ignoráramos dicho movimiento, la cámara se podría temblar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:64
 msgid ""
 "Also, we are defining ``JOYPAD_SENSITIVITY`` as a variable instead of a "
 "constant because we'll later be changing it."
 msgstr ""
+"Además, estamos definiendo ``JOYPAD_SENSITIVITY`` como una variable en lugar "
+"de una constante porque más tarde la cambiaremos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:66
 msgid "Now we are ready to start handling joypad input!"
-msgstr ""
+msgstr "¡Ahora estamos listos para empezar a manejar la entrada del joypad!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:70
 msgid ""
 "In ``process_input``, add the following code just before "
 "``input_movement_vector = input_movement_vector.normalized()``:"
 msgstr ""
+"En ``process_input``, añade el siguiente código justo antes de "
+"``input_movement_vector = input_movement_vector.normalized()``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:113
 msgid "Let's go over what we're doing."
-msgstr ""
+msgstr "Repasemos lo que estamos haciendo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:115
 msgid "Firstly, we check to see if there is a connected joypad."
-msgstr ""
+msgstr "En primer lugar, comprobamos si hay un Joypad conectado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:117
 msgid ""
@@ -172,6 +206,10 @@ msgid ""
 "left and up/down. Because a wired Xbox 360 controller has different joystick "
 "axis mapping based on OS, we will use different axes based on the OS."
 msgstr ""
+"Si hay un joypad conectado, entonces tenemos sus ejes de palo izquierdo para "
+"derecha/izquierda y arriba/abajo. Debido a que un controlador Xbox 360 con "
+"cable tiene diferentes mapeos de ejes de joystick basados en el sistema "
+"operativo, usaremos diferentes ejes basados en el sistema operativo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:121
 msgid ""
@@ -180,6 +218,11 @@ msgid ""
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
+"Este tutorial asume que estás usando un XBox 360 o un controlador con cable "
+"de PlayStation. Además, no tengo (actualmente) acceso a un ordenador Mac, "
+"así que puede que haya que cambiar los ejes del joystick. Si es así, por "
+"favor, abre un problema de GitHub en el repositorio de documentación de "
+"Godot! ¡Gracias!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:125
 msgid ""
@@ -188,6 +231,10 @@ msgid ""
 "Vector2. If it is not, we use a scaled Radial Dead zone for precise dead "
 "zone calculation."
 msgstr ""
+"A continuación, comprobamos si la longitud del vector del joypad está dentro "
+"del radio ``JOYPAD_DEADZONE``. Si es así, ponemos ``joypad_vec`` en un "
+"Vector2 vacío. Si no lo está, usamos una zona Muerta Radial escalada para un "
+"cálculo preciso de la zona muerta."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:128
 msgid ""
@@ -196,6 +243,10 @@ msgid ""
 "http://www.third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right."
 "html>`__."
 msgstr ""
+"Puedes encontrar un gran artículo explicando todo sobre cómo manejar las "
+"zonas muertas del joypad/controlador `aquí <https://web.archive.org/"
+"web/20191208161810/http://www.third-helix.com/2013/04/12/doing-thumbstick-"
+"dead-zones-right.html>`__."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:131
 msgid ""
@@ -203,10 +254,13 @@ msgid ""
 "provided in that article. The article is a great read, and I highly suggest "
 "giving it a look!"
 msgstr ""
+"Estamos usando una versión traducida del código de la zona muerta radial "
+"escalada que se proporciona en ese artículo. El artículo es una gran "
+"lectura, ¡y sugiero encarecidamente que le echen un vistazo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:134
 msgid "Finally, we add ``joypad_vec`` to ``input_movement_vector``."
-msgstr ""
+msgstr "Finalmente, añadimos ``joypad_vec`` a ``input_movement_vector``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:136
 msgid ""
@@ -214,21 +268,29 @@ msgid ""
 "not normalize ``input_movement_vector``, the player could move faster if "
 "they pushed in the same direction with both the keyboard and the joypad!"
 msgstr ""
+"¿Recuerdas cómo normalizamos el ``input_movement_vector``? ¡Esto es el "
+"porqué! !Si no normalizamos el ``input_movement_vector``, el jugador puede "
+"moverse más rápido si empuja en la misma dirección con el teclado y el "
+"joypad!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:141
 msgid ""
 "Make a new function called ``process_view_input`` and add the following:"
 msgstr ""
+"Haz una nueva función llamada ``process_view_input`` y añade lo siguiente:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:216
 msgid "Let's go over what's happening:"
-msgstr ""
+msgstr "Repasemos lo que está pasando:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:218
 msgid ""
 "Firstly, we check the mouse mode. If the mouse mode is not "
 "``MOUSE_MODE_CAPTURED``, we want to return, which will skip the code below."
 msgstr ""
+"En primer lugar, comprobamos el modo del ratón. Si el modo del ratón no es "
+"``MOUSE_MODE_CAPTURED``, queremos volver, lo que hará que se salte el código "
+"de abajo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:220
 msgid ""
@@ -236,6 +298,10 @@ msgid ""
 "This will hold the right joystick position. Based on the OS, we set its "
 "values so it is mapped to the proper axes for the right joystick."
 msgstr ""
+"A continuación, definimos un nuevo :ref:`Vector2 <class_Vector2>` llamado "
+"``joypad_vec``. Esto mantendrá la posición correcta del joystick. Basándonos "
+"en el sistema operativo, fijamos sus valores para que se mapee a los ejes "
+"adecuados para el joystick derecho."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:223
 msgid ""
@@ -243,18 +309,26 @@ msgid ""
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
+"Como ya se ha dicho, no tengo (actualmente) acceso a un ordenador Mac, así "
+"que puede que haya que cambiar los ejes de los joysticks. ¡Si lo hacen, por "
+"favor, abran un número de GitHub en el repositorio de documentación de "
+"Godot! ¡Gracias!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:226
 msgid ""
 "We then account for the joypad's dead zone, exactly like in "
 "``process_input``."
 msgstr ""
+"Entonces tenemos en cuenta la zona muerta del Joypad, exactamente como en "
+"``process_input``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:228
 msgid ""
 "Then, we rotate ``rotation_helper`` and the player's :ref:`KinematicBody "
 "<class_KinematicBody>` using ``joypad_vec``."
 msgstr ""
+"Luego, rotamos ``rotation_helper`` y el jugador :ref:`KinematicBody "
+"<class_KinematicBody>` usando ``joypad_vec``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:230
 msgid ""
@@ -262,6 +336,10 @@ msgid ""
 "is exactly the same as the code in ``_input``. All we've done is change the "
 "values to use ``joypad_vec`` and ``JOYPAD_SENSITIVITY``."
 msgstr ""
+"Fíjate en cómo el código que maneja la rotación del jugador y la "
+"``rotation_helper`` es exactamente el mismo que el código en ``_input``. "
+"Todo lo que hemos hecho es cambiar los valores para usar ``joypad_vec`` y "
+"``JOYPAD_SENSITIVITY``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:233
 msgid ""
@@ -269,24 +347,34 @@ msgid ""
 "``process_view`` as well. Once these bugs are fixed, this will likely be "
 "updated to place the mouse rotation here in ``process_view_input`` as well."
 msgstr ""
+"Debido a algunos errores relacionados con el ratón en Windows, no podemos "
+"poner la rotación del ratón en ``process_view`` también. Una vez que estos "
+"errores sean corregidos, esto probablemente se actualizará para colocar la "
+"rotación del ratón aquí en ``process_view_input`` también."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:236
 msgid ""
 "Finally, we clamp the camera's rotation so the player cannot look upside "
 "down."
 msgstr ""
+"Finalmente, fijamos la rotación de la cámara para que el jugador no pueda "
+"mirar al revés."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:240
 msgid ""
 "The last thing we need to do is add ``process_view_input`` to "
 "``_physics_process``."
 msgstr ""
+"La última cosa que necesitamos hacer es añadir ``process_view_input`` a "
+"``_physics_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:242
 msgid ""
 "Once ``process_view_input`` is added to ``_physics_process``, you should be "
 "able to play using a joypad!"
 msgstr ""
+"Una vez que ``process_view_input`` sea añadido a ``physics_process``, "
+"deberías ser capaz de jugar usando un joypad!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:244
 msgid ""
@@ -294,6 +382,9 @@ msgid ""
 "to do some more axis managing, and because I prefer to use a shoulder "
 "buttons to fire."
 msgstr ""
+"Decidí no usar los disparadores del joypad para disparar porque entonces "
+"tendríamos que hacer un poco más de manejo del eje, y porque prefiero usar "
+"los botones del hombro para disparar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:246
 msgid ""
@@ -302,10 +393,15 @@ msgid ""
 "triggers, and check if it's over a certain value, say ``0.8`` for example. "
 "If it is, you add the same code as when the ``fire`` action was pressed."
 msgstr ""
+"Si quieres usar los disparadores para disparar, tendrás que cambiar cómo "
+"funciona el disparo en ``process_input``. Necesitas obtener los valores de "
+"los ejes para los disparadores, y comprobar si está por encima de un cierto "
+"valor, digamos ``0.8`` por ejemplo. Si es así, agregas el mismo código que "
+"cuando se presionó la acción ``fire``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:250
 msgid "Adding mouse scroll wheel input"
-msgstr ""
+msgstr "Añadir la entrada de la rueda de desplazamiento del ratón"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:252
 msgid ""
@@ -313,6 +409,9 @@ msgid ""
 "pickups and the target. Let's add the ability to change weapons using the "
 "scroll wheel on the mouse."
 msgstr ""
+"Añadamos otra característica relacionada con la entrada antes de empezar a "
+"trabajar en las recogidas y el objetivo. Añadamos la posibilidad de cambiar "
+"de arma con la rueda de desplazamiento del ratón."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:254
 msgid "Open up ``Player.gd`` and add the following class variables:"
@@ -320,25 +419,28 @@ msgstr "Abre ``Player.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:261
 msgid "Let's go over what each of these new variables will be doing:"
-msgstr ""
+msgstr "Repasemos lo que hará cada una de estas nuevas variables:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:263
 msgid "``mouse_scroll_value``: The value of the mouse scroll wheel."
 msgstr ""
+"``mouse_scroll_value``: El valor de la rueda de desplazamiento del ratón."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:264
 msgid ""
 "``MOUSE_SENSITIVITY_SCROLL_WHEEL``: How much a single scroll action "
 "increases mouse_scroll_value"
 msgstr ""
+"``MOUSE_SENSITIVITY_SCROLL_WHEEL``: Cuánto aumenta el valor de "
+"mouse_scroll_value con una sola acción de scroll"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:268
 msgid "Now let's add the following to ``_input``:"
-msgstr ""
+msgstr "Ahora agreguemos lo siguiente a ``_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
-msgstr ""
+msgstr "Repasemos lo que está pasando aquí:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
 msgid ""
@@ -346,6 +448,10 @@ msgid ""
 "that the mouse mode is ``MOUSE_MODE_CAPTURED``. Then, we check to see if the "
 "button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
 msgstr ""
+"En primer lugar, comprobamos si el evento es un evento "
+"``InputEventMouseButton`` y que el modo del ratón es "
+"``MOUSE_MODE_CAPTURED``. Luego, comprobamos si el índice del botón es un "
+"índice ``BUTTON_WHEEL_UP`` o ``BUTTON_WHEEL_DOWN``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:295
 msgid ""
@@ -354,12 +460,18 @@ msgid ""
 "it is up or down, we add or subtract ``MOUSE_SENSITIVITY_SCROLL_WHEEL`` to/"
 "from ``mouse_scroll_value``."
 msgstr ""
+"Si el índice del evento es de hecho un índice de rueda de botones, entonces "
+"comprobamos si es un índice de ``BUTTON_WHEEL_UP`` o ``BUTTON_WHEEL_DOWN``. "
+"Basándonos en si está arriba o abajo, sumamos o restamos "
+"``MOUSE_SENSITIVITY_SCROLL_WHEEL`` a/desde ``mouse_scroll_value``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:298
 msgid ""
 "Next, we clamp mouse scroll value to ensure it is inside the range of "
 "selectable weapons."
 msgstr ""
+"A continuación, fijamos el valor de desplazamiento del ratón para "
+"asegurarnos de que está dentro del rango de armas seleccionables."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:300
 msgid ""
@@ -367,6 +479,9 @@ msgid ""
 "player is doing neither, we round ``mouse_scroll_value`` and cast it to an "
 "``int``."
 msgstr ""
+"Luego comprobamos si el jugador está cambiando de armas o recargando. Si el "
+"jugador no hace ninguna de las dos cosas, redondeamos el "
+"``mouse_scroll_value`` y lo ponemos en ``int``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:302
 msgid ""
@@ -374,6 +489,9 @@ msgid ""
 "key in our dictionary. If we left it as a float, we would get an error when "
 "we tried to run the project."
 msgstr ""
+"Estamos asignando ``mouse_scroll_value`` a un ``int`` para poder usarla como "
+"clave en nuestro diccionario. Si lo dejamos como un real, obtendríamos un "
+"error al intentar ejecutar el proyecto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:305
 msgid ""
@@ -384,6 +502,13 @@ msgid ""
 "will change weapons in ``process_changing_weapon``, and set "
 "``mouse_scroll_value`` to ``round_mouse_scroll_value``."
 msgstr ""
+"A continuación, comprobamos si el nombre del arma en "
+"``round_mouse_scroll_value`` no es igual al nombre actual del arma usando "
+"``WEAPON_NUMBER_TO_NAME``. Si el arma es diferente al arma actual del "
+"jugador, asignamos ``changing_weapon_name``, ponemos ``changing_weapon`` en "
+"``true`` para que el jugador cambie las armas en "
+"``process_changing_weapon``, y ponemos ``mouse_scroll_value`` a "
+"``round_mouse_scroll_value``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:309
 msgid ""
@@ -393,6 +518,13 @@ msgid ""
 "By assigning ``mouse_scroll_value`` to ``round_mouse_scroll_value``, we "
 "ensure that each weapon takes exactly the same amount of scrolling to change."
 msgstr ""
+"La razón por la que estamos ajustando ``mouse_scroll_value`` al valor de "
+"desplazamiento redondeado es porque no queremos que el jugador mantenga su "
+"rueda de desplazamiento del ratón justo entre los valores, dándole la "
+"posibilidad de cambiar casi extremadamente rápido. Al asignar "
+"``mouse_scroll_value`` al ``round_mouse_scroll_value``, nos aseguramos de "
+"que cada arma necesite exactamente la misma cantidad de desplazamiento para "
+"cambiar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:315
 msgid ""
@@ -400,6 +532,9 @@ msgid ""
 "changing weapons, add the following right after the line ``changing_weapon = "
 "true``:"
 msgstr ""
+"Una cosa más que necesitamos cambiar es en ``process_input``. En el código "
+"para cambiar las armas, añade lo siguiente justo después de la línea "
+"``changing_weapon = true``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:321
 msgid ""
@@ -409,10 +544,17 @@ msgid ""
 "next/last weapon, but rather the next/last weapon the scroll wheel changed "
 "to."
 msgstr ""
+"Ahora el valor de desplazamiento se cambiará con la entrada del teclado. Si "
+"no cambiamos esto, el valor de desplazamiento estaría fuera de sincronía. Si "
+"la rueda de desplazamiento estuviera desincronizada, el desplazamiento hacia "
+"adelante o hacia atrás no pasaría a la siguiente/última arma, sino a la "
+"siguiente/última arma a la que cambió la rueda de desplazamiento."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:326
 msgid "Now you can change weapons using the scroll wheel! Go give it a whirl!"
 msgstr ""
+"¡Ahora puedes cambiar de armas usando la rueda de desplazamiento! ¡Ve a "
+"probarlo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:329
 msgid "Adding the health pickups"
@@ -423,10 +565,12 @@ msgid ""
 "Now that the player has health and ammo, we ideally need a way to replenish "
 "those resources."
 msgstr ""
+"Ahora que el jugador tiene salud y munición, idealmente necesitamos una "
+"forma de reponer esos recursos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:333
 msgid "Open up ``Health_Pickup.tscn``."
-msgstr ""
+msgstr "Abre ``Health_Pickup.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:335
 msgid ""
@@ -434,6 +578,9 @@ msgid ""
 "Spatial nodes, one called ``Health_Kit`` and another called "
 "``Health_Kit_Small``."
 msgstr ""
+"Expande el ``Holder`` si no está ya expandido. Fíjate en que tenemos dos "
+"nodos espaciales, uno llamado ``Health_Kit`` y otro llamado "
+"``Health_Kit_Small``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:337
 msgid ""
@@ -442,6 +589,10 @@ msgid ""
 "``Health_Kit_Small`` only have a single :ref:`MeshInstance "
 "<class_MeshInstance>` as their children."
 msgstr ""
+"Esto es porque en realidad vamos a hacer dos tamaños de recipientes para la "
+"salud, uno pequeño y otro grande/normal. ``Health_Kit`` y "
+"``Health_Kit_Small`` sólo tienen un único :ref:`MeshInstance "
+"<class_MeshInstance>` como sus hijos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:340
 msgid ""
@@ -452,6 +603,13 @@ msgid ""
 "on the size of the health pickup, so the smaller health pickup has a trigger "
 "collision shape closer to its size."
 msgstr ""
+"A continuación, amplia ``Health_Pickup_Trigger``. Este es un nodo :ref:`Area "
+"<class_Area>` que vamos a usar para comprobar si el jugador ha caminado lo "
+"suficientemente cerca para recoger el kit de salud. Si lo expandes, "
+"encontrarás dos formas de colisión, una para cada tamaño. Usaremos un tamaño "
+"diferente de forma de colisión basado en el tamaño del recipiente de salud, "
+"así que el recipiente de salud más pequeña tiene una forma de colisión de "
+"disparo más cercana a su tamaño."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
 msgid ""
@@ -466,6 +624,8 @@ msgid ""
 "Select ``Health_Pickup`` and add a new script called ``Health_Pickup.gd``. "
 "Add the following:"
 msgstr ""
+"Selecciona ``Health_Pickup`` y añade un nuevo script llamado ``Health_Pickup."
+"gd``. Añade lo siguiente:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:405
 msgid ""
@@ -479,17 +639,23 @@ msgid ""
 "``kit_size``: The size of the health pickup. Notice how we're using a "
 "``setget`` function to tell if it's changed."
 msgstr ""
+"``kit_size``: El tamaño del recipiente de salud. Fíjate en cómo usamos la "
+"función ``setget`` para saber si ha cambiado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:408
 msgid ""
 "``HEALTH_AMMOUNTS``: The amount of health each pickup in each size contains."
 msgstr ""
+"``HEALTH_AMMOUNTS``: La cantidad de salud que contiene cada recipiente de "
+"cada tamaño."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:409
 msgid ""
 "``RESPAWN_TIME``: The amount of time, in seconds, it takes for the health "
 "pickup to respawn"
 msgstr ""
+"``RESPAWN_TIME``: La cantidad de tiempo, en segundos, que le toma al "
+"recipiente de salud reaparecer"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:410
 msgid ""
@@ -497,13 +663,15 @@ msgid ""
 "been waiting to respawn."
 msgstr ""
 "``respawn_timer``: Una variable usada para rastrear cuánto tiempo ha estado "
-"el item de salud esperando para reaparecer."
+"el recipiente de salud esperando para reaparecer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:411
 msgid ""
 "``is_ready``: A variable to track whether the ``_ready`` function has been "
 "called or not."
 msgstr ""
+"``is_ready``: Una variable para rastrear si la función ``_ready`` ha sido "
+"llamada o no."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:413
 msgid ""
@@ -512,6 +680,11 @@ msgid ""
 "cannot access child nodes until ``_ready`` is called. If we did not ignore "
 "the first ``setget`` call, we would get several errors in the debugger."
 msgstr ""
+"Estamos usando ``is_ready`` porque las funciones ``setget`` son llamadas "
+"antes de ``_ready``; necesitamos ignorar la primera llamada de cambio de "
+"tamaño de kit, porque no podemos acceder a los nodos hijos hasta que "
+"``_ready`` sea llamado. Si no ignoramos la primera llamada a ``setget``, "
+"obtendríamos varios errores en el depurador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:417
 msgid ""
@@ -520,16 +693,24 @@ msgid ""
 "have to make two scenes for the two sizes, since we can easily change sizes "
 "in the editor using the exported variable."
 msgstr ""
+"Además, fíjate en cómo estamos usando una variable exportada. Esto es para "
+"que podamos cambiar el tamaño de las capturas de salud en el editor. Esto es "
+"para que no tengamos que hacer dos escenas para los dos tamaños, ya que "
+"podemos cambiar fácilmente los tamaños en el editor usando la variable "
+"exportada."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:420
 msgid ""
 "See :ref:`doc_GDScript` and scroll down to the Exports section for a list of "
 "export hints you can use."
 msgstr ""
+"Vea :ref:`doc_GDScript` y desplácese hacia abajo hasta la sección de "
+"Exportaciones para ver una lista de sugerencias de exportación que puede "
+"usar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:424
 msgid "Let's look at ``_ready``:"
-msgstr ""
+msgstr "Veamos el ``_ready``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:426
 msgid ""
@@ -538,11 +719,17 @@ msgid ""
 "makes it so any body that enters the :ref:`Area <class_Area>` triggers the "
 "``trigger_body_entered`` function."
 msgstr ""
+"En primer lugar, conectamos la señal de ``body_entered`` de la "
+"``Health_Pickup_Trigger`` con la función de ``trigger_body_entered``. Esto "
+"hace que cualquier cuerpo que entre en la función :ref:`Area<class_Area>`` "
+"de ``trigger_body_entered``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:429
 msgid ""
 "Next, we set ``is_ready`` to ``true`` so we can use the ``setget`` function."
 msgstr ""
+"Luego, ponemos ``is_ready`` en ``true`` para poder usar la función "
+"``setget``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:431
 msgid ""
@@ -551,6 +738,10 @@ msgid ""
 "the second argument is whether to enable or disable the collision shape and "
 "mesh at that size."
 msgstr ""
+"Luego escondemos todos los posibles kits y sus formas de colisión usando "
+"``kit_size_change_values``. El primer argumento es el tamaño del kit, "
+"mientras que el segundo argumento es si se activa o desactiva la forma de "
+"colisión y la malla de ese tamaño."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:434
 msgid ""
@@ -558,14 +749,17 @@ msgid ""
 "``kit_size_change_values`` and passing in ``kit_size`` and ``true``, so the "
 "size at ``kit_size`` is enabled."
 msgstr ""
+"Entonces hacemos visible sólo el tamaño del kit que seleccionamos, llamando "
+"a ``kit_size_change_values`` y pasando en ``kit_size`` y ``true``, para que "
+"el tamaño en ``kit_size`` esté habilitado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:438
 msgid "Next let's look at ``kit_size_change``."
-msgstr ""
+msgstr "A continuación, veamos el ``kit_size_change``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:440
 msgid "The first thing we do is check to see if ``is_ready`` is ``true``."
-msgstr ""
+msgstr "Lo primero que hacemos es comprobar si ``is_ready`` es ``true``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:442
 msgid ""
@@ -573,6 +767,9 @@ msgid ""
 "``kit_size`` disabled using ``kit_size_change_values``, passing in "
 "``kit_size`` and ``false``."
 msgstr ""
+"Si ``is_ready`` es ``true``, entonces hacemos que cualquier kit ya asignado "
+"a ``kit_size`` sea desactivado usando ``kit_size_change_values``, pasando "
+"``kit_size`` y ``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:444
 msgid ""
@@ -582,28 +779,39 @@ msgid ""
 "``kit_size`` to the passed in value, this will make whatever kit size was "
 "passed in visible."
 msgstr ""
+"Luego asignamos ``kit_size`` al nuevo valor pasado, ``value``. Luego "
+"llamamos a ``kit_size_change_values`` pasando en ``kit_size`` otra vez, pero "
+"esta vez con el segundo argumento como ``true`` así que lo activamos. Como "
+"cambiamos ``kit_size`` al valor pasado, esto hará visible cualquier tamaño "
+"de kit que se haya pasado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:447
 msgid ""
 "If ``is_ready`` is not ``true``, we simply assign ``kit_size`` to the passed "
 "in ``value``."
 msgstr ""
+"Si \"is_ready\" no es ``true``, simplemente asignamos ``kit_size`` al "
+"``valor`` pasado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:451
 msgid "Now let's look at ``kit_size_change_values``."
-msgstr ""
+msgstr "Ahora veamos los ``kit_size_change_values``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:453
 msgid ""
 "The first thing we do is check to see which size was passed in. Based on "
 "which size we want to enable/disable, we want to get different nodes."
 msgstr ""
+"Lo primero que hacemos es comprobar qué tamaño se pasó. Basándonos en el "
+"tamaño que queremos activar/desactivar, queremos obtener diferentes nodos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:455
 msgid ""
 "We get the collision shape for the node corresponding to ``size`` and "
 "disable it based on the ``enabled`` passed in argument/variable."
 msgstr ""
+"Obtenemos la forma de colisión del nodo correspondiente al ``size`` y lo "
+"deshabilitamos basándonos en el ``enabled`` pasado en el argumento/variable."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:457
 msgid ""
@@ -613,12 +821,19 @@ msgid ""
 "need to flip it. By flipping it, we can enable the collision shape and make "
 "the mesh visible when ``true`` is passed in."
 msgstr ""
+"¿Por qué usamos ``!enable`` en lugar de ``enable``? Esto es así, cuando "
+"decimos que queremos habilitar el nodo, podemos pasar en ``true``, pero "
+"como :ref:`CollisionShape <class_CollisionShape>` usa disabled en lugar de "
+"enabled, necesitamos darle la vuelta. Al voltearlo, podemos habilitar la "
+"forma de colisión y hacer la malla visible cuando se pasa ``true``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:461
 msgid ""
 "We then get the correct :ref:`Spatial <class_Spatial>` node holding the mesh "
 "and set its visibility to ``enable``."
 msgstr ""
+"Entonces obtenemos el nodo correcto :ref:`Spatial <class_Spatial>` que "
+"sostiene la malla y fijamos su visibilidad en ``enable``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:463
 msgid ""
@@ -627,10 +842,15 @@ msgid ""
 "so we cannot pick up health for a size that is not visible, and so only the "
 "mesh for the proper size will be visible."
 msgstr ""
+"Esta función puede ser un poco confusa; intente pensar en ella de esta "
+"manera: Estamos habilitando/deshabilitando los nodos apropiados para "
+"``size`` usando ``enabled``. Esto es para que no podamos recoger la salud "
+"para un tamaño que no es visible, y así sólo la malla para el tamaño "
+"adecuado será visible."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:468
 msgid "Finally, let's look at ``trigger_body_entered``."
-msgstr ""
+msgstr "Finalmente, veamos ``trigger_body_entered``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:470
 msgid ""
@@ -638,6 +858,9 @@ msgid ""
 "has a method/function called ``add_health``. If it does, we then call "
 "``add_health`` and pass in the health provided by the current kit size."
 msgstr ""
+"Lo primero que hacemos es comprobar si el cuerpo que acaba de entrar tiene "
+"un método/función llamado ``add_health``. Si lo tiene, entonces llamamos "
+"``add_health`` y pasamos la salud proporcionada por el tamaño del kit actual."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:473
 msgid ""
@@ -646,12 +869,19 @@ msgid ""
 "``kit_size_change_values``, passing in ``kit_size`` and ``false`` so the kit "
 "at ``kit_size`` is invisible until it has waited long enough to respawn."
 msgstr ""
+"Luego ponemos ``respawn_timer`` a ``RESPAWN_TIME`` para que el jugador tenga "
+"que esperar antes de que pueda recuperar la salud. Finalmente, llama a "
+"``kit_size_change_value``, pasando ``kit_size`` y ``false`` para que el kit "
+"en ``kit_size`` sea invisible hasta que haya esperado lo suficiente para "
+"reaparecer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:478
 msgid ""
 "The last thing we need to do before the player can use this health pickup is "
 "add a few things to ``Player.gd``."
 msgstr ""
+"Lo último que tenemos que hacer antes de que el jugador pueda usar esta "
+"recogida de salud es añadir algunas cosas a ``Player.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:480
 msgid "Open up ``Player.gd`` and add the following class variable:"
@@ -660,16 +890,19 @@ msgstr "Abre ``Player.gd`` y añade la siguiente variable de clase:"
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:486
 msgid "``MAX_HEALTH``: The maximum amount of health a player can have."
 msgstr ""
+"``MAX_HEALTH``: La máxima cantidad de salud que un jugador puede tener."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:488
 msgid ""
 "Now we need to add the ``add_health`` function to the player. Add the "
 "following to ``Player.gd``:"
 msgstr ""
+"Ahora necesitamos agregar la función ``add_health`` al jugador. Añade lo "
+"siguiente a ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:496
 msgid "Let's quickly go over what this does."
-msgstr ""
+msgstr "Repasemos rápidamente lo que esto hace."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:498
 msgid ""
@@ -677,6 +910,9 @@ msgid ""
 "clamp the health so that it cannot take on a value higher than "
 "``MAX_HEALTH``, nor a value lower than ``0``."
 msgstr ""
+"Primero añadimos ``additional_health`` a la salud actual del jugador. Luego "
+"fijamos la salud de manera que no pueda tomar un valor más alto que "
+"``MAX_HEALTH``, ni un valor más bajo que ``0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:503
 msgid ""
@@ -685,16 +921,23 @@ msgid ""
 "of the health pickup in the editor when a ``Health_Pickup`` instanced scene "
 "is selected, from a convenient drop down."
 msgstr ""
+"Con eso hecho, el jugador puede ahora recoger la salud! Coloca algunas "
+"escenas de ``Health_Pickup`` alrededor y pruébalo. Puedes cambiar el tamaño "
+"de la recogida de salud en el editor cuando se selecciona una escena "
+"instanciada de ``Health_Pickup``, desde un conveniente menú desplegable."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:507
 msgid "Adding the ammo pickups"
-msgstr "Agregando los items de municiones"
+msgstr "Añadiendo las recogidas de munición"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:509
 msgid ""
 "While adding health is good and all, we can't reap the rewards from adding "
 "it since nothing can (currently) damage us. Let's add some ammo pickups next!"
 msgstr ""
+"Aunque añadir salud es bueno y todo eso, no podemos recoger las recompensas "
+"ya que nada puede (actualmente) dañarnos. ¡Ahora vamos a añadir algunas "
+"municiones!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:512
 msgid ""
@@ -702,12 +945,18 @@ msgid ""
 "``Health_Pickup.tscn``, but with the meshes and trigger collision shapes "
 "changed slightly to account for the difference in mesh sizes."
 msgstr ""
+"Abre ``Ammo_Pickup.tscn``. Fíjate en cómo está estructurado exactamente "
+"igual que ``Health_Pickup.tscn``, pero con las mallas y las formas de "
+"colisión disparadoras cambiaran ligeramente para explicar la diferencia en "
+"los tamaños de las mallas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:515
 msgid ""
 "Select ``Ammo_Pickup`` and add a new script called ``Ammo_Pickup.gd``. Add "
 "the following:"
 msgstr ""
+"Selecciona ``Ammo_Pickup`` y añade un nuevo script llamado ``Ammo_Pickup."
+"gd``. Añade lo siguiente:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:576
 msgid ""
@@ -715,6 +964,9 @@ msgid ""
 "pickup. That's because it largely is the same! Only a few things have been "
 "changed, and that's what we're going to go over."
 msgstr ""
+"Habrás notado que este código se ve casi exactamente igual que el de la "
+"salud. ¡Eso es porque en gran medida es el mismo! Sólo unas pocas cosas han "
+"sido cambiadas, y eso es lo que vamos a repasar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:579
 msgid ""
@@ -724,6 +976,11 @@ msgid ""
 "stood for how many health points would be awarded, we add an entire clip to "
 "the current weapon instead of the raw ammo amount)"
 msgstr ""
+"Primero, nota el cambio a ``AMMO_AMOUNTS`` de ``HEALTH_AMMOUNTS``. "
+"``AMMO_AMMOUNTS`` será la cantidad de municiones/cargadores que se añade al "
+"arma actual. (A diferencia del caso de ``HEALTH_AMMOUNTS``, que el cual nos "
+"dice cuantos puntos de salud se conceden, añadiremos un clip entero al arma "
+"actual en lugar de la cantidad de munición bruta)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:582
 msgid ""
@@ -731,22 +988,29 @@ msgid ""
 "checking for the existence of and calling a function called ``add_ammo`` "
 "instead of ``add_health``."
 msgstr ""
+"La única otra cosa que hay que notar está en ``trigger_body_entered``. "
+"Estamos comprobando la existencia y llamando a una función llamada "
+"``add_ammo`` en lugar de ``add_health``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:584
 msgid ""
 "Other than those two small changes, everything else is the same as the "
 "health pickup!"
 msgstr ""
+"Aparte de esos dos pequeños cambios, ¡todo lo demás es lo mismo que la salud!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:588
 msgid ""
 "All we need to do to make the ammo pickups work is add a new function to the "
 "player. Open ``Player.gd`` and add the following function:"
 msgstr ""
+"Todo lo que tenemos que hacer para que funcionen las recogidas de munición "
+"es añadir una nueva función al jugador. Abre ``Player.gd`` y añade la "
+"siguiente función:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:597
 msgid "Let's go over what this function does."
-msgstr ""
+msgstr "Repasemos lo que hace esta función."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:599
 msgid ""
@@ -755,6 +1019,10 @@ msgid ""
 "not ``UNARMED`` before trying to get the node/script attached to "
 "``current_weapon_name``."
 msgstr ""
+"Lo primero que comprobamos es si el jugador está ``UNARMED``. Como "
+"``UNARMED`` no tiene un nodo/script, queremos asegurarnos de que el jugador "
+"no está ``UNARMED`` antes de intentar que el nodo/script se adjunte al "
+"``current_weapon_name``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:602
 msgid ""
@@ -763,12 +1031,19 @@ msgid ""
 "multiplying the current weapon's ``AMMO_IN_MAG`` value by however many ammo "
 "clips we're adding (``additional_ammo``)."
 msgstr ""
+"A continuación, comprobamos si el arma actual puede ser recargada. Si el "
+"arma actual puede, añadimos un cargador completo de munición al arma "
+"multiplicando el valor de ``AMMO_IN_MAG`` del arma actual por todos los "
+"cargadores de munición que añadamos(``additional_ammo``)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:607
 msgid ""
 "With that done, you should now be able to get additional ammo! Go place some "
 "ammo pickups in one/both/all of the scenes and give it a try!"
 msgstr ""
+"¡Con eso hecho, ahora deberías ser capaz de conseguir munición adicional! "
+"¡Ve a colocar algunas recogidas de munición en una/ambas/todas las escenas y "
+"pruébalas!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:609
 msgid ""
@@ -777,19 +1052,24 @@ msgid ""
 "to each weapon's script, and then clamp the weapon's ``spare_ammo`` variable "
 "after adding ammo in ``add_ammo``."
 msgstr ""
+"Fíjate en cómo no limitamos la cantidad de munición que puedes llevar. Para "
+"limitar la cantidad de munición que cada arma puede llevar, necesitas añadir "
+"una variable adicional al script de cada arma, y luego fijar la variable "
+"``spare_ammo`` del arma después de añadir la munición en ``add_ammo``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:613
 msgid "Adding breakable targets"
-msgstr ""
+msgstr "Añadiendo objetivos destruibles"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:615
 msgid "Before we end this part, let's add some targets."
-msgstr ""
+msgstr "Antes de terminar esta parte, añadamos algunos objetivos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:617
 msgid ""
 "Open up ``Target.tscn`` and take a look at the scenes in the scene tree."
 msgstr ""
+"Abre ``Target.tscn`` y echa un vistazo a las escenas en el árbol de escenas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:619
 msgid ""
@@ -799,12 +1079,19 @@ msgid ""
 "`RigidBody <class_RigidBody>` would be more hassle than it's worth since all "
 "it has to do is stay still."
 msgstr ""
+"En primer lugar, fíjate en que no estamos usando un nodo :ref:`RigidBody "
+"<class_RigidBody>`, sino un :ref:`StaticBody <class_StaticBody>` uno. La "
+"razón de esto es que nuestros objetivos no rotos no se moverán a ninguna "
+"parte; usar un :ref:`RigidBody <class_RigidBody>` sería más problemático de "
+"lo que vale ya que todo lo que tiene que hacer es quedarse quieto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:623
 msgid ""
 "We also save a tiny bit of performance using a :ref:`StaticBody "
 "<class_StaticBody>` over a :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
+"También ahorramos un poco de rendimiento usando un :ref:`StaticBody "
+"<class_StaticBody>` sobre un :ref:`RigidBody <class_RigidBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:625
 msgid ""
@@ -812,6 +1099,9 @@ msgid ""
 "This node is going to hold a spawned/instanced scene called ``Broken_Target."
 "tscn``. Open up ``Broken_Target.tscn``."
 msgstr ""
+"La otra cosa a tener en cuenta es que tenemos un nodo llamado "
+"``Broken_Target_Holder``. Este nodo va a albergar una escena creada/iniciada "
+"llamada ``Broken_Target.tscn``. Abre ``Broken_Target.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:628
 msgid ""
@@ -821,6 +1111,12 @@ msgid ""
 "hide the non-broken target, so it looks like the target shattered rather "
 "than a shattered target was spawned/instanced."
 msgstr ""
+"Fíjate en cómo el objetivo se divide en cinco piezas, cada una de ellas un "
+"nodo :ref:`RigidBody <class_RigidBody>`. Vamos a generar/instanciar esta "
+"escena cuando el objetivo reciba demasiado daño y necesite ser destruido. "
+"Entonces, vamos a esconder el objetivo no roto, para que parezca que el "
+"objetivo destrozado en lugar de un objetivo destrozado fue generado/"
+"instanciado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:632
 msgid ""
@@ -829,6 +1125,10 @@ msgid ""
 "nodes. This will make it so the player can shoot at the broken pieces and "
 "they will react to the bullets."
 msgstr ""
+"Mientras aún tengas abierto ``Broken_Target.tscn``, adjunta "
+"``RigidBody_hit_test.gd`` a todos los nodos :ref:`RigdBody "
+"<class_RigidBody>`. Esto hará que el jugador pueda disparar a las piezas "
+"rotas y que reaccionen a las balas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:635
 msgid ""
@@ -836,10 +1136,13 @@ msgid ""
 "`StaticBody <class_StaticBody>` node and create a new script called ``Target."
 "gd``."
 msgstr ""
+"Bien, ahora vuelve a ``Target.tscn``, selecciona el nodo ``Target`` :ref: "
+"\"StaticBody\" <class_StaticBody> y crea un nuevo script llamado ``Target."
+"gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:637
 msgid "Add the following code to ``Target.gd``:"
-msgstr ""
+msgstr "Añade el siguiente código a ``Target.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:695
 msgid "Let's go over what this script does, starting with the class variables:"
@@ -851,40 +1154,53 @@ msgid ""
 "``TARGET_HEALTH``: The amount of damage needed to break a fully healed "
 "target."
 msgstr ""
+"``TARGET_HEALTH``: La cantidad de daño necesaria para romper un objetivo con "
+"su salud completa."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:698
 msgid "``current_health``: The amount of health this target currently has."
 msgstr ""
+"``current_health``: La cantidad de salud que este objetivo tiene actualmente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:699
 msgid ""
 "``broken_target_holder``: A variable to hold the ``Broken_Target_Holder`` "
 "node so we can use it easily."
 msgstr ""
+"``broken_target_holder``: Una variable para mantener el nodo "
+"``Broken_Target_Holder`` para que podamos usarla fácilmente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:700
 msgid ""
 "``target_collision_shape``: A variable to hold the :ref:`CollisionShape "
 "<class_CollisionShape>` for the non-broken target."
 msgstr ""
+"``target_collision_shape``: Una variable para mantener la :ref:"
+"`CollisionShape <clase_CollisionShape>` para el objetivo no roto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:701
 msgid ""
 "``TARGET_RESPAWN_TIME``: The length of time, in seconds, it takes for a "
 "target to respawn."
 msgstr ""
+"``TARGET_RESPAWN_TIME``: El tiempo, en segundos, que tarda un objetivo en "
+"reaparecer."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:702
 msgid ""
 "``target_respawn_timer``: A variable to track how long a target has been "
 "broken."
 msgstr ""
+"``target_respawn_timer``: Una variable para rastrear cuánto tiempo un "
+"objetivo ha sido roto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:703
 msgid ""
 "``destroyed_target``: A :ref:`PackedScene <class_PackedScene>` to hold the "
 "broken target scene."
 msgstr ""
+"``destroyed_target``: A :ref:`PackedScene <class_PackedScene>` para mantener "
+"la escena del objetivo roto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:705
 msgid ""
@@ -895,10 +1211,16 @@ msgid ""
 "different scene in the editor; we don't need to go to the code to change the "
 "scene we're using."
 msgstr ""
+"Fíjate en cómo usamos una variable exportada (a :ref:`PackedScene "
+"<class_PackedScene>`) para obtener la escena objetivo rota en lugar de usar "
+"la ``preload``. Usando una variable exportada, podemos elegir la escena "
+"desde el editor, y si necesitamos usar una escena diferente, es tan fácil "
+"como seleccionar una escena diferente en el editor; no necesitamos ir al "
+"código para cambiar la escena que estamos usando."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:711
 msgid "Let's look at ``_ready``."
-msgstr ""
+msgstr "Veamos el ``_ready``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:713
 msgid ""
@@ -907,6 +1229,10 @@ msgid ""
 "here, instead of ``$``. If you wanted to use ``$``, then you'd need to "
 "change ``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
 msgstr ""
+"Lo primero que hacemos es conseguir el broken target holder y asignarlo a "
+"``broken_target_holder``. Fíjate en cómo usamos ``get_parent().get_node()`` "
+"aquí, en lugar de ``$``. Si quisieras usar ``$``, entonces necesitarías "
+"cambiar ``get_parent().get_node()`` a ``$\"../Broken_Target_Holder\"``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:716
 msgid ""
@@ -914,6 +1240,9 @@ msgid ""
 "NodeName\"`` to get the parent nodes using ``$``, which is why "
 "``get_parent().get_node()`` is used instead."
 msgstr ""
+"Cuando esto fue escrito, no me di cuenta de que se puede usar ``$\"../"
+"NodeName\"`` para obtener los nodos padres usando ``$``, por lo que se usa "
+"``get_parent().get_node()`` en su lugar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:719
 msgid ""
@@ -925,10 +1254,17 @@ msgid ""
 "To get around this, we will disable/enable the collision shape as we make "
 "the mesh visible/invisible."
 msgstr ""
+"A continuación, obtenemos la forma de la colisión y la asignamos a "
+"\"target_collision_shape\". La razón por la que necesitamos la forma de "
+"colisión es porque incluso cuando la malla es invisible, la forma de "
+"colisión seguirá existiendo en el mundo de la física. Esto hace que el "
+"jugador pueda interactuar con un objetivo no roto aunque sea invisible, que "
+"no es lo que queremos. Para evitar esto, desactivaremos/habilitaremos la "
+"forma de colisión mientras hacemos la malla visible/invisible."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:725
 msgid "Next let's look at ``_physics_process``."
-msgstr ""
+msgstr "A continuación, veamos el ``_physics_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:727
 msgid ""
@@ -936,10 +1272,12 @@ msgid ""
 "first thing we do is check to see if ``target_respawn_timer`` is greater "
 "than ``0``."
 msgstr ""
+"Sólo vamos a usar el ``_physics_process`` para la reaparición, y lo primero "
+"que hacemos es comprobar si el ``target_respawn_timer`` es mayor que ``0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:729
 msgid "If it is, we then subtract ``delta`` from it."
-msgstr ""
+msgstr "Si lo es, entonces le restamos ``delta``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:731
 msgid ""
@@ -949,6 +1287,11 @@ msgid ""
 "here, effectively allowing us to do whatever we need to do when the timer is "
 "finished."
 msgstr ""
+"Entonces comprobamos si ``target_respawn_timer`` es ``0`` o menos. La razón "
+"detrás de esto es que acabamos de eliminar ``delta`` de "
+"``target_respawn_timer``, si es ``0`` o menos, entonces el objetivo acaba de "
+"llegar aquí, permitiéndonos hacer lo que necesitemos hacer cuando el "
+"temporizador esté terminado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:734
 msgid "In this case, we want to respawn the target."
@@ -960,54 +1303,75 @@ msgid ""
 "do this by iterating over all of the children in ``broken_target_holder`` "
 "and free them using ``queue_free``."
 msgstr ""
+"Lo primero que hacemos es sacar a todos los hijos del contenedor de objetivo "
+"roto. Lo hacemos iterando sobre todos los hijos en ``broken_target_holder`` "
+"y los liberamos usando ``queue_free``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:738
 msgid ""
 "Next, we enable the collision shape by setting its ``disabled`` boolean to "
 "``false``."
 msgstr ""
+"Luego, habilitamos la forma de colisión poniendo su ``disabled`` booleano a "
+"``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:740
 msgid "Then we make the target, and all of its children nodes, visible again."
 msgstr ""
+"Entonces hacemos que el objetivo, y todos sus nodos hijos, sean visibles de "
+"nuevo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:742
 msgid ""
 "Finally, we reset the target's health (``current_health``) to "
 "``TARGET_HEALTH``."
 msgstr ""
+"Finalmente, reajustamos la salud del objetivo (``current_health``) a "
+"``TARGET_HEALTH``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:746
 msgid "Finally, let's look at ``bullet_hit``."
-msgstr ""
+msgstr "Por último, veamos el ``bullet_hit``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:748
 msgid ""
 "The first thing we do is subtract however much damage the bullet does from "
 "the target's health."
 msgstr ""
+"Lo primero que hacemos es restar todo el daño que la bala hace a la salud "
+"del objetivo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:750
 msgid ""
 "Next we check to see if the target is at ``0`` health or lower. If it is, "
 "the target has just died and we need to spawn a broken target."
 msgstr ""
+"A continuación, comprobamos si el objetivo está en ``0`` de salud o más "
+"bajo. Si lo está, el objetivo acaba de morir y necesitamos crear un objetivo "
+"roto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:752
 msgid ""
 "We first instance a new destroyed target scene, and assign it to a new "
 "variable, a ``clone``."
 msgstr ""
+"Primero, damos un ejemplo de una nueva escena destruida, y la asignamos a "
+"una nueva variable, un ``clone``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:754
 msgid "Next we add the ``clone`` as a child of the broken target holder."
 msgstr ""
+"A continuación añadimos el ``clone`` como un hijo del portador del objetivo "
+"roto."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:756
 msgid ""
 "For bonus effect, we want to make all the target pieces explode outwards. To "
 "do this, we iterate over all the children in ``clone``."
 msgstr ""
+"Para un efecto adicional, queremos hacer que todas las piezas del objetivo "
+"exploten hacia afuera. Para hacer esto, iteramos sobre todos los niños en "
+"``clone``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:758
 msgid ""
@@ -1018,6 +1382,12 @@ msgid ""
 "we push the child from the calculated center, in the direction away from the "
 "center, using the damage of the bullet as the force."
 msgstr ""
+"Para cada niño, primero comprobamos si es un nodo :ref:`RigidBody "
+"<class_RigidBody>`. Si lo es, entonces calculamos la posición central del "
+"objetivo relativa al nodo hijo. Luego averiguamos en qué dirección está el "
+"nodo hijo con respecto al centro. Usando esas variables calculadas, "
+"empujamos al niño desde el centro calculado, en la dirección opuesta al "
+"centro, usando el daño de la bala como fuerza."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:762
 msgid ""
@@ -1025,6 +1395,9 @@ msgid ""
 "change this to a higher or lower value depending on how explosively you want "
 "your targets to shatter."
 msgstr ""
+"Multiplicamos el daño por ``12`` para que tenga un efecto más dramático. "
+"Puedes cambiar esto a un valor más alto o más bajo dependiendo de la "
+"explosividad con la que quieras que se rompan tus objetivos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:765
 msgid ""
@@ -1032,12 +1405,17 @@ msgid ""
 "``TARGET_RESPAWN_TIME``, so it takes ``TARGET_RESPAWN_TIME`` in seconds "
 "until it is respawned."
 msgstr ""
+"A continuación, fijamos el temporizador de reposición del objetivo. Ponemos "
+"el temporizador en ``TARGET_RESPAWN_TIME``, así que toma "
+"``TARGET_RESPAWN_TIME``en segundos hasta que se regenera."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:767
 msgid ""
 "Then we disable the non-broken target's collision shape, and set the "
 "target's visibility to ``false``."
 msgstr ""
+"Luego deshabilitamos la forma de colisión del objetivo no roto, y ponemos la "
+"visibilidad del objetivo en ``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:771
 msgid ""
@@ -1045,6 +1423,9 @@ msgid ""
 "in the editor! Otherwise the targets will not be destroyed and you will get "
 "an error!"
 msgstr ""
+"¡Asegúrate de poner el valor exportado de ``destroyed_target`` para ``Target."
+"tscn`` en el editor! ¡De lo contrario los objetivos no serán destruidos y "
+"obtendrás un error!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:774
 msgid ""
@@ -1053,6 +1434,10 @@ msgid ""
 "they've taken enough damage. After a little while, they'll respawn into a "
 "whole target again."
 msgstr ""
+"Con eso hecho, ve a colocar algunas instancias de ``Target.tscn`` alrededor "
+"en uno/ambos/todos los niveles. Deberías encontrar que explotan en cinco "
+"pedazos después de haber recibido suficiente daño. Después de un rato, "
+"volverán a convertirse en un objetivo completo de nuevo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 msgid "Final notes"
@@ -1063,6 +1448,8 @@ msgid ""
 "Now you can use a joypad, change weapons with the mouse's scroll wheel, "
 "replenish your health and ammo, and break targets with your weapons."
 msgstr ""
+"Ahora puedes usar un joypad, cambiar de arma con la rueda de desplazamiento "
+"del ratón, reponer tu salud y munición, y romper objetivos con tus armas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:784
 msgid ""
@@ -1070,13 +1457,18 @@ msgid ""
 "grenades to our player, give our player the ability to grab and throw "
 "objects, and add turrets!"
 msgstr ""
+"En la siguiente parte, :ref:`doc_fps_tutorial_part_five`, ¡vamos a añadir "
+"granadas a nuestro jugador, dándole la posibilidad de agarrar y lanzar "
+"objetos, y añadir torretas!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr ""
+msgstr "¡Si alguna vez te pierdes, asegúrate de leer el código de nuevo!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:789
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_4.zip <files/Godot_FPS_Part_4.zip>`"
 msgstr ""
+"Puede descargar el proyecto terminado para esta parte aquí: :download:"
+"`Godot_FPS_Part_4.zip <files/Godot_FPS_Part_4.zip>`"

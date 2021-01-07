@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,21 +52,19 @@ msgstr ""
 "这是最终结果的预览："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
-#, fuzzy
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process and "
 "how to use Godot."
 msgstr ""
-"**为什么是2D游戏** 3D游戏比2D游戏复杂得多。您应该坚持使用2D，直到您对游戏开发"
-"过程有了充分的了解。"
+"**为什么是2D？** 3D游戏比2D游戏复杂得多。在你充分掌握了游戏开发过程和Godot的"
+"使用方式之前，请坚持使用2D。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:29
 msgid "Project setup"
 msgstr "项目设置"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:31
-#, fuzzy
 msgid ""
 "Launch Godot and create a new project. Then, download :download:"
 "`dodge_assets.zip <files/dodge_assets.zip>`. This contains the images and "
@@ -74,28 +72,26 @@ msgid ""
 "folder."
 msgstr ""
 "启动Godot并创建一个新项目。然后，下载 :download:`dodge_assets.zip <files/"
-"dodge_assets.zip>`——用于制作游戏的图像和声音。将这些文件解压缩到您的项目文件"
-"夹中。"
+"dodge_assets.zip>` ——用于制作这个游戏的图像和声音。将这些文件解压缩到您的项目"
+"文件夹中。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:36
-#, fuzzy
 msgid ""
 "For this tutorial, we will assume you are familiar with the Godot editor. If "
 "you haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation "
 "of setting up a project and using the editor."
 msgstr ""
-"对于本教程，我们假设您熟悉编辑器。如果您还没有阅读 :ref:"
-"`doc_scenes_and_nodes` ，那么赶紧看看，以了解如何设置项目并使用编辑器。"
+"在本教程中，我们假设您已经熟悉了编辑器。如果您还没有阅读 :ref:"
+"`doc_scenes_and_nodes` ，请先阅读，学习如何设置项目与编辑器的使用方式。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:40
-#, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on Project -> Project Settings -> Display -> Window "
 "and set \"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
-"这个游戏会使用竖屏模式，所以我们需要调整游戏窗口的大小。点击项目->项目设置->"
-"显示->窗口，设置“宽度”为 ``480`` ，“高度”为 ``720``。"
+"这个游戏使用竖屏模式，所以我们需要调整游戏窗口的大小。点击项目->项目设置->显"
+"示->窗口，设置“宽度”为 ``480`` ，“高度”为 ``720``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:44
 msgid ""
@@ -111,7 +107,6 @@ msgid "Organizing the project"
 msgstr "组织项目"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:51
-#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -120,24 +115,24 @@ msgid ""
 "and scripts in the project's root folder, identified by ``res://``.  You can "
 "see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"在这个项目中，我们将制作3个独立的场景：``Player``、 ``Mob``、和 ``HUD``，将它"
-"们组合到游戏的 ``Main`` 场景中。创建文件夹来保存各种场景及其脚本可能会很有"
-"用，但是对于这个相对较小的游戏，您可以将场景和脚本保存在项目的根文件夹 "
-"``res://`` 中。您可以在左下角的文件系统停靠面板中看到您的项目文件夹："
+"在这个项目中，我们将制作3个独立的场景：``Player``、 ``Mob``、和 ``HUD``，之后"
+"将它们组合到游戏的 ``Main`` 场景中。在较大的项目中，创建文件夹来保存各种场景"
+"及其脚本可能会很有用，但是对于这个相对较小的游戏，你可以将场景和脚本保存在项"
+"目的根文件夹 ``res://`` 。您可以在左下角的文件系统停靠面板中看到您的项目文件"
+"夹："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:62
 msgid "Player scene"
-msgstr "``Player`` 场景"
+msgstr "Player 场景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"第一个场景，我们会定义 ``Player`` 对象。创建单独的 ``Player`` 场景的好处之一"
-"是，即使在创建游戏的其他部分之前，我们仍可以对其进行单独测试。"
+"第一个场景，我们会定义 ``Player`` 对象。单独创建Player场景的好处之一是，在游"
+"戏的其他部分做出来之前，我们就可以对其进行单独测试。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -162,16 +157,15 @@ msgstr ""
 "Godot将在场景树中的节点旁边显示警告图标。你现在可以忽略它。我们稍后再谈。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
-#, fuzzy
 msgid ""
 "With ``Area2D`` we can detect objects that overlap or run into the player. "
 "Change the node's name to ``Player`` by double-clicking on it. Now that "
 "we've set the scene's root node, we can add additional nodes to give it more "
 "functionality."
 msgstr ""
-"使用 ``Area2D`` 我们可以检测物体是否跑到 ``Player`` 之中或者与 ``Player`` 发"
-"生交叠。通过单击节点名称将其名称更改为 ``Player``。它是场景的根节点。我们可以"
-"向该角色中添加其他节点以添加功能。"
+"使用 ``Area2D`` 可以检测到与玩家重叠或进入玩家内的物体。通过双击节点名称将其"
+"名称更改为 ``Player``。我们已经设置好了场景的根节点，现在可以向该角色中添加其"
+"他节点来增加功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
@@ -185,13 +179,12 @@ msgstr ""
 "象的子级不可选择。``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
-#, fuzzy
 msgid ""
 "Save the scene. Click Scene -> Save, or press :kbd:`Ctrl + S` on Windows/"
 "Linux or :kbd:`Cmd + S` on macOS."
 msgstr ""
-"保存场景。点击场景 -> 保存，或者在Windows/Linux平台上按下 ``Ctrl+S`` 或是Mac"
-"上按下 ``Command+S``。"
+"保存场景。点击场景 -> 保存，或者在Windows/Linux平台上按下 :kbd:`Ctrl + S` ，"
+"在MacOS上按下 :kbd:`Cmd + S` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
@@ -240,7 +233,6 @@ msgstr ""
 "SpriteFrames”。再次点击来打开 ``SpriteFrames`` 面板:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
-#, fuzzy
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -250,10 +242,11 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"左边是一个动画列表。点击 ``默认`` 动画，并将其重命名为 ``right``。然后点击 ``"
-"添加`` 按钮，创建第二个动画，名为 ``up``。将每个动画的两个图像（名为 "
-"``playerGrey_up[1/2]`` 和 ``playerGrey_walk[1/2]`` ）拖到面板的 ``动画帧`` 一"
-"侧："
+"左边是一个动画列表。点击 \"defalult\"动画，并将其重命名为 \"walk\"。然后点击 "
+"\"新动画\"按钮，创建另一个名为 \"up \"的动画。在 \"文件系统 \"选项卡中找到"
+"player图像-——它们应该在你之前解压的 ``art`` 文件夹中。将每个动画的两张图像，"
+"``playerGrey_up[1/2]``和``playerGrey_walk[1/2]``，拖到对应动画的面板的 \"动画"
+"帧 \"处："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -294,20 +287,19 @@ msgid "Moving the player"
 msgstr "移动 ``Player``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:155
-#, fuzzy
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the "
 "\"Attach Script\" button:"
 msgstr ""
-"现在我们需要添加一些内置节点所不具备的功能，因此我们要添加一个脚本。点击 "
-"``Player`` 节点然后点击 ``添加脚本`` 按钮："
+"现在我们需要添加一些内置节点所不具备的功能，因此要添加一个脚本。点击 "
+"``Player`` 节点然后点击 ``附加脚本`` 按钮："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:161
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
-msgstr "在脚本设置窗口中，您可以保留默认设置。只要点击 ``创建`` 就好："
+msgstr "在脚本设置窗口中，您可以维持默认设置。点击 ``创建`` 即可："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:164
 msgid ""
@@ -397,16 +389,14 @@ msgstr ""
 "分配给键盘上箭头键的默认事件。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:240
-#, fuzzy
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it's pressed or ``false`` if it isn't."
 msgstr ""
-"您可以使用 ``Input.is_action_pressed()`` 来检测是否按下了键，如果按下则返回 "
-"``true``，否则返回 ``false``。"
+"您可以使用 ``Input.is_action_pressed()`` 来检测是否按下了键，如果按下会返回 "
+"``true``，否则返回 ``false`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:302
-#, fuzzy
 msgid ""
 "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player "
 "should not be moving. Then we check each input and add/subtract from the "
@@ -416,22 +406,21 @@ msgid ""
 "movement, the player would move *faster* diagonally than if it just moved "
 "horizontally."
 msgstr ""
-"我们首先将 ``velocity（速度）`` 设置为 ``(0, 0)``——默认情况下 ``Player`` 不应"
-"该移动。然后我们检查每次输入并从 ``velocity（速度）`` 中进行加/减以获得总方"
-"向。例如，如果您同时按住 ``right（向右）`` 和 ``down（向下）``，则生成的 "
-"``velocity（速度）`` 速度将为 ``(1, 1)``。在这种情况下，由于我们要添加水平和"
-"垂直移动，因此 ``Player`` 的移动速度比水平移动要 *快*。"
+"我们首先将 ``velocity（速度）`` 设置为 ``(0, 0)``——默认情况下玩家不应该移动。"
+"然后我们检查每个输入并从 ``velocity（速度）`` 中进行加/减以获得总方向。例如，"
+"如果您同时按住 ``right（向右）`` 和 ``down（向下）``，则生成的 ``velocity（速"
+"度）`` 速度将为 ``(1, 1)``。在这种情况下，由于我们同时向水平和垂直两个方向进"
+"行移动，因此玩家斜向移动的速度将会比水平移动要 *更快*。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
-#, fuzzy
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, then multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
-"如果对速度进行 *归一化（normalize）*，我们可以防止这种情况，这意味着我们将其 "
-"*长度（length）* 设置为 ``1``，然后乘以所需速度。这意味着不再有快速的对角运"
-"动。"
+"只要对速度进行 *归一化（normalize）*，就可以防止这种情况，也就是将速度的 *长"
+"度（length）* 设置为 ``1`` ，然后乘以想要的速度。这样就不会有过快的斜向运动"
+"了。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:313
 msgid ""
@@ -444,12 +433,12 @@ msgstr ""
 "而言，这不是必需的。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:317
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
 msgstr ""
-"我们还检查 ``Player`` 是否在移动，以便我们可以启动或停止AnimatedSprite动画。"
+"我们也要检查玩家是否在移动，以便在AnimatedSprite上调用 ``play()`` 或 "
+"``stop()`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid ""
@@ -500,7 +489,7 @@ msgstr "点击“运行场景”（``F6``）并确认您能够在屏幕中沿任
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:355
 msgid "If you get an error in the \"Debugger\" panel that says"
-msgstr "如果您在调试器(Debugger)面板中看到错误："
+msgstr "如果在“调试器（Debugger）”面板中出现错误："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:357
 #, fuzzy
@@ -512,14 +501,13 @@ msgstr ""
 "instance``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
 "in the scene tree."
 msgstr ""
-"则可能意味着您拼错了节点名称。节点名称区分大小写，并且 ``$NodeName`` 或 "
-"``get_node(\"NodeName\")`` 必须与您在场景树中看到的名称匹配。"
+"则可能意味着您拼错了 AnimatedSprite节点的名称。节点名称区分大小写，并且 ``"
+"$NodeName`` 或 ``get_node(\"NodeName\")`` 必须与您在场景树中看到的名称匹配。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
 msgid "Choosing animations"
@@ -558,16 +546,15 @@ msgid ""
 msgstr "再次播放场景并检查每个方向上的动画是否正确。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:428
-#, fuzzy
 msgid ""
 "A common mistake here is to type the names of the animations wrong. The "
 "animation names in the SpriteFrames panel must match what you type in the "
 "code. If you named the animation ``\"Walk\"``, you must also use a capital "
 "\"W\" in the code."
 msgstr ""
-"这里经常会有人犯下错误拼写动画名称的问题。SpriteFrames面板里的动画名称必须与"
-"代码所引用的名称完全一致。如果动画的名称为``「Walk」``，代码中也必须使用大写"
-"「W」的「Walk」。"
+"这里一个常见的错误是把动画的名字打错了。“SpriteFrames”面板中的动画名称必须与"
+"在代码中键入的内容匹配。如果将动画命名为``\"Walk\"``，则还必须在代码中使用大"
+"写字母“W”。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:433
 msgid ""
@@ -624,7 +611,6 @@ msgstr ""
 "发出信号时，都会调用此函数——用它 *处理* 信号。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
-#, fuzzy
 msgid ""
 "Note the green icon indicating that a signal is connected to this function. "
 "Add this code to the function:"
@@ -690,9 +676,8 @@ msgid "Node setup"
 msgstr "节点设置"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
-#, fuzzy
 msgid "Click Scene -> New Scene and add the following nodes:"
-msgstr "点击场景 -> 新建场景，然后我们就可以创建Mob了。"
+msgstr "点击场景 -> 新建场景然后添加以下节点："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:547
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
@@ -776,9 +761,8 @@ msgstr ""
 "像对齐，您需要在 ``Node2D`` 下将 ``Rotation Degrees`` 属性设置为 ``90``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "``Player`` 场景"
+msgstr "保存该场景。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Enemy script"
@@ -1015,11 +999,10 @@ msgstr ""
 "量`` 下的 ``Mob`` 属性中。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:781
-#, fuzzy
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
-msgstr "单击「空」旁边的下拉箭头按钮，选择「载入」，接着选择``Mob.tscn``。"
+msgstr "单击“「空」”旁边的下拉箭头按钮，选择“载入”，接着选择``Mob.tscn``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:784
 #, fuzzy
@@ -1370,13 +1353,12 @@ msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "每当分数改变，这个函数会被 ``Main`` 调用。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
-#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton`` and add the following code to the new functions:"
 msgstr ""
 "连接 ``MessageTimer`` 的 ``timeout()`` 信号和 ``StartButton`` 的 "
-"``pressed()`` 信号。"
+"``pressed()`` 信号并添加以下代码到新函数中："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
 msgid "Connecting HUD to Main"

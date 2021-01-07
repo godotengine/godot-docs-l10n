@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -396,6 +396,11 @@ msgid ""
 "connections with special properties. Transitions are uni-directional, but "
 "two can be used to connect in both ways."
 msgstr ""
+"Este nodo es una máquina de estado relativamente simple. Los nodos raíz "
+"pueden ser creados y conectados a través de líneas. Los estados se conectan "
+"a través de *Transiciones*, que son conexiones con propiedades especiales. "
+"Las transiciones son unidireccionales, pero dos se pueden usar para "
+"conectarlos en ambos sentidos."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
 msgid "There are many types of transitions:"
@@ -406,36 +411,48 @@ msgid ""
 "*Immediate*: Will switch to the next state immediately. The current state "
 "will end and blend into the beginning of the new one."
 msgstr ""
+"*Inmediato*: Cambiará al siguiente estado inmediatamente. El estado actual "
+"terminará y se mezclará con el principio del nuevo."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:153
 msgid ""
 "*Sync*: Will switch to the next state immediately, but will seek the new "
 "state to the playback position of the old state."
 msgstr ""
+"*Sync*: Cambiará al siguiente estado inmediatamente, pero buscará el nuevo "
+"estado a la posición de reproducción del viejo estado."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:154
 msgid ""
 "*At End*: Will wait for the current state playback to end, then switch to "
 "the beginning of the next state animation."
 msgstr ""
+"*Al final*: Esperará a que termine la reproducción del estado actual, y "
+"luego pasará al principio de la animación del siguiente estado."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:156
 msgid ""
 "Transitions also have a few properties. Click any transition and it will be "
 "displayed in the inspector dock:"
 msgstr ""
+"Las transiciones también tienen algunas propiedades. Haga clic en cualquier "
+"transición y se mostrará en el muelle de inspección:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:160
 msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
 msgstr ""
+"*Switch Mode* es el tipo de transición (ver arriba), puede ser modificado "
+"después de la creación aquí."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
 "*Auto Advance* will turn on the transition automatically when this state is "
 "reached. This works best with the *At End* switch mode."
 msgstr ""
+"*Auto Avance* encenderá la transición automáticamente cuando se alcance este "
+"estado. Esto funciona mejor con el modo de interruptor *Al final*."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:162
 msgid ""
@@ -443,10 +460,15 @@ msgid ""
 "This is a custom text field that can be filled with a variable name. The "
 "variable can be modified from code (more on this later)."
 msgstr ""
+"*Condición de avance* activará el avance automático cuando se establezca "
+"esta condición. Este es un campo de texto personalizado que puede ser "
+"llenado con un nombre de variable. La variable puede ser modificada desde el "
+"código (más sobre esto más adelante)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
+"*Xfade Time* es el tiempo para cruzar entre este estado y el siguiente."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
 msgid ""
@@ -454,12 +476,17 @@ msgid ""
 "on this later). When travelling from a state to another, give more priority "
 "to this node."
 msgstr ""
+"*Prioridad* se usa junto con la función ``travel()`` del código (más sobre "
+"esto más adelante). Cuando se viaja de un estado a otro, hay que dar más "
+"prioridad a este nodo."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
 "*Disabled* allows to disable this transition (it will not be used during "
 "travel or auto advance)."
 msgstr ""
+"*Desactivado* permite desactivar esta transición (no se usará durante el "
+"viaje o el avance automático)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:170
 msgid "Root motion"
@@ -472,6 +499,11 @@ msgid ""
 "allows animating characters in a way where steps actually match the floor "
 "below. It also allows precise interaction with objects during cinematics."
 msgstr ""
+"Cuando se trabaja con animaciones 3D, una técnica popular es que los "
+"animadores usen el hueso del esqueleto de la raíz para dar movimiento al "
+"resto del esqueleto. Esto permite animar los personajes de manera que los "
+"pasos coincidan con el piso de abajo. También permite una interacción "
+"precisa con los objetos durante la cinematografía."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:175
 msgid ""
@@ -479,12 +511,17 @@ msgid ""
 "as the *root motion track*. Doing so will cancel the bone transformation "
 "visually (the animation will stay in place)."
 msgstr ""
+"Al reproducir la animación en Godot, es posible seleccionar este hueso como "
+"la *pista de movimiento de raíz*. Al hacerlo, se cancelará la transformación "
+"del hueso visualmente (la animación se mantendrá en su lugar)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:180
 msgid ""
 "Afterwards, the actual motion can be retrieved via the :ref:`AnimationTree "
 "<class_AnimationTree>` API as a transform:"
 msgstr ""
+"Después, el movimiento real puede ser recuperado a través de la API :ref:"
+"`AnimationTree <class_AnimationTree>` como una transformación:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:191
 msgid ""
@@ -492,6 +529,9 @@ msgid ""
 "<class_KinematicBody_method_move_and_slide>` to control the character "
 "movement."
 msgstr ""
+"Esto puede ser alimentado a funciones como :ref:`KinematicBody."
+"move_and_slide <class_KinematicBody_method_move_and_slide>` para controlar "
+"el movimiento del personaje."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid ""
@@ -499,6 +539,10 @@ msgid ""
 "and will act as a custom floor for your character and animations (this node "
 "is normally disabled during the game)."
 msgstr ""
+"También hay un nodo de herramientas, ``RootMotionView``, que puede ser "
+"colocado en una escena y actuará como un piso personalizado para tu "
+"personaje y las animaciones (este nodo normalmente se desactiva durante el "
+"juego)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:200
 msgid "Controlling from code"
@@ -509,6 +553,8 @@ msgid ""
 "After building the tree and previewing it, the only question remaining is "
 "\"How is all this controlled from code?\"."
 msgstr ""
+"Después de construir el árbol y previsualizarlo, la única pregunta que queda "
+"es \"¿Cómo se controla todo esto desde el código?\"."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:204
 msgid ""
@@ -519,6 +565,13 @@ msgid ""
 "your animation tree, or reuse nodes with a complex layout (such as a state "
 "machine or blend space) in different animation trees."
 msgstr ""
+"Tengan en cuenta que los nodos de animación son sólo recursos y, como tales, "
+"se comparten entre todas las instancias. Poner valores en los nodos afectará "
+"directamente a todas las instancias de la escena que usa este "
+"``AnimationTree``. Sin embargo, esto tiene algunos casos de uso "
+"interesantes, por ejemplo, puedes copiar y pegar partes de tu árbol de "
+"animación, o reutilizar nodos con un diseño complejo (como una máquina de "
+"estados o un espacio de mezcla) en diferentes árboles de animación."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:209
 msgid ""
@@ -527,6 +580,10 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
+"Los datos de la animación real están contenidos en el nodo ``AnimationTree`` "
+"y se accede a ellos a través de las propiedades. Revisa la sección "
+"\"Parameters\" del nodo ``AnimationTree`` para ver todos los parámetros que "
+"pueden ser modificados en tiempo real:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:214
 msgid ""
@@ -534,20 +591,26 @@ msgid ""
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realization of very complex animation logic."
 msgstr ""
+"Esto es útil porque permite animarlos desde un ``AnimationPlayer``, o "
+"incluso desde el mismo ``AnimationTree``, permitiendo la realización de una "
+"lógica de animación muy compleja."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:217
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
 msgstr ""
+"Para modificar estos valores del código, se debe obtener el camino de la "
+"propiedad. Esto se hace fácilmente pasando el ratón por encima de cualquiera "
+"de los parámetros:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:221
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "Lo que permite establecerlos o leerlos:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "State machine travel"
-msgstr ""
+msgstr "Viaje de la máquina de estados"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:238
 msgid ""
@@ -556,6 +619,10 @@ msgid ""
 "to another one, while visiting all the intermediate ones. This is done via "
 "the A\\* algorithm."
 msgstr ""
+"Una de las características agradables de la implementación de la Máquina de "
+"Estados de Godot es la capacidad de viajar. El gráfico puede ser instruido "
+"para ir del estado actual a otro, mientras se visitan todos los intermedios. "
+"Esto se hace a través del algoritmo A* (Algoritmo Estrella)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:241
 msgid ""
@@ -564,9 +631,15 @@ msgid ""
 "<class_AnimationNodeStateMachinePlayback>` object from the ``AnimationTree`` "
 "node (it is exported as a property)."
 msgstr ""
+"Para usar la habilidad de viajar, primero debes recuperar el objeto :ref:"
+"`AnimationNodeStateMachinePlayback "
+"<class_AnimationNodeStateMachinePlayback>` del nodo ``AnimationTree`` (se "
+"exporta como una propiedad)."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:254
 msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
 msgstr ""
+"Una vez recuperado, se puede utilizar llamando a una de las muchas funciones "
+"que ofrece:"

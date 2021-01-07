@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,30 +84,24 @@ msgid "Using this concept, you can create objects that:"
 msgstr "Usando esse conceito, você pode criar objetos que:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
-msgstr "São sempre carregados, não importa qual cena seja aberta no editor"
+msgstr "São sempre carregados, independentemente da cena em execução."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr ""
-"Pode armazenar variáveis globais, como informações do jogador, itens, "
-"dinheiro etc. e compartilhar informações entre cenas"
+msgstr "Pode armazenar variáveis globais, como informações do jogador."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "Pode lidar com troca de cenas e transições entre cenas"
+msgstr "Pode lidar com troca de cenas e transições entre cenas."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
-"Atua como um singleton, já que o GDScript não suporta variáveis globais por "
-"projeto"
+"*Atua* como um singleton, já que o GDScript não suporta variáveis globais "
+"por projeto."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -316,17 +310,16 @@ msgstr ""
 "Rode o projeto e veja se você consegue trocar de cena apertando o botão."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`."
 msgstr ""
-"Nota: Quando cenas são pequenas, a transição será instantânea. No entanto, "
-"se as cenas são mais complexas, elas levarão um tempo significativo para "
-"aparecer. Para aprender a gerenciar isto, veja o próximo tutorial: :ref:"
-"`doc_background_loading`"
+"Quando as cenas são pequenas, a transição é instantânea. No entanto, se suas "
+"cenas forem mais complexas, elas podem demorar um pouco para aparecer. Para "
+"aprender como lidar com isso, veja o próximo tutorial: :ref:"
+"`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""

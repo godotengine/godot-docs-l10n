@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:4
 msgid "Custom AudioStreams"
-msgstr ""
+msgstr "自定 AudioStream"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:7
 msgid "Introduction"
@@ -31,6 +31,9 @@ msgid ""
 "AudioStreamPlayer binds onto an AudioStream to emit PCM data into an "
 "AudioServer which manages audio drivers."
 msgstr ""
+"AudioStream 是所有音訊發射物件的基礎類別。AudioStreamPlayer 繫結到 "
+"AudioStream 上，以將 PCM 資料發射至 AudioServer 內。AudioServer 則負責管理音"
+"訊驅動程式。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:13
 msgid ""
@@ -39,18 +42,24 @@ msgid ""
 "and exposes itself to GDScript. AudioStream references its own internal "
 "custom AudioStreamPlayback which translates AudioStream into PCM data."
 msgstr ""
+"所有的音訊資源都需要兩個音訊基礎類別：AudioStream 與 AudioStreamPlayback。作"
+"為資料容器，AudioStream 包含了音訊資源，並會將其自身暴露給 GDScript。"
+"AudioStream 也會將其自身參照到內部的自定 AudioStreamPlayback，用來將 "
+"AudioStream 翻譯至 PCM 資料。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:19
 msgid ""
 "This guide assumes the reader knows how to create C++ modules. If not, refer "
 "to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
+"本篇指南假設讀者已瞭解如何建立 C++ 模組。否則，請先參考這篇指南： :ref:"
+"`doc_custom_modules_in_c++` 。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:23
 #: ../../docs/development/cpp/custom_audiostreams.rst:117
 #: ../../docs/development/cpp/custom_audiostreams.rst:348
 msgid "References:"
-msgstr ""
+msgstr "參考資料："
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:25
 #: ../../docs/development/cpp/custom_audiostreams.rst:119
@@ -59,6 +68,8 @@ msgid ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
 msgstr ""
+"\\ `servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:26
 #: ../../docs/development/cpp/custom_audiostreams.rst:351
@@ -66,26 +77,28 @@ msgid ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
 msgstr ""
+"\\ `scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:29
 msgid "What for?"
-msgstr ""
+msgstr "可以做什麼？"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
-msgstr ""
+msgstr "繫結外部函式庫 (如 Wwise, FMOD…等)。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:32
 msgid "Adding custom audio queues"
-msgstr ""
+msgstr "新增自定音訊佇列"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:33
 msgid "Adding support for more audio formats"
-msgstr ""
+msgstr "新增更多音訊格式的支援"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:36
 msgid "Create an AudioStream"
-msgstr ""
+msgstr "建立 AudioStream"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:38
 msgid ""
@@ -94,6 +107,9 @@ msgid ""
 "in a number of ways such as with an internal counter for a tone generator, "
 "internal/external buffer, or a file reference."
 msgstr ""
+"AudioStream 由三個元件組成：資料容器、串流名稱以及 AudioStreamPlayback 友類產"
+"生器 (Friend Class Generator)。音訊資料可以通過數種方式載入，如用於音調產生器"
+"的內部計數器、內／外部緩衝區或檔案參照。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:43
 msgid ""
@@ -102,26 +118,33 @@ msgid ""
 "regardless how many times ``load`` is called on a specific resource. "
 "Therefore, playback state must be self-contained in AudioStreamPlayback."
 msgstr ""
+"有的 AudioStream 必須要是無狀態的，如由 ResourceLoader 載入的物件。"
+"ResourceLoader 會載入一次，然後無論對特定資源呼叫多少次 ``load`` ，都會參照到"
+"相同的物件上。因此，播放狀態必須要在 AudioStreamPlayback 內自封閉。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:123
 msgid "Create an AudioStreamPlayback"
-msgstr ""
+msgstr "建立 AudioStreamPlayback"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:125
 msgid ""
 "AudioStreamPlayer uses ``mix`` callback to obtain PCM data. The callback "
 "must match sample rate and fill the buffer."
 msgstr ""
+"AudioStreamPlayer 使用 ``mix`` 回呼來取得 PCM 資料。該回呼必須要符合採樣率，"
+"並填充緩衝區。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:127
 msgid ""
 "Since AudioStreamPlayback is controlled by the audio thread, i/o and dynamic "
 "memory allocation are forbidden."
 msgstr ""
+"由於 AudioStreamPlayback 是由音訊執行緒控制的，因此不可進行 I/O 與動態記憶體"
+"分配。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:232
 msgid "Resampling"
-msgstr ""
+msgstr "重新採樣"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:234
 msgid ""
@@ -130,6 +153,9 @@ msgid ""
 "AudioStreamPlaybackResampled. Godot provides cubic interpolation for audio "
 "resampling."
 msgstr ""
+"Godoto 的 AudioServer 目前使用 44100 Hz 的採樣率。當需要其他如 48000 的採樣率"
+"時，則必須要主動提供採樣率，或是使用 AudioStreamPlaybackResampled。Godot 提供"
+"了三次方內插補點 (Cubic Interpolation) 用於音訊重新採樣。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:238
 msgid ""
@@ -137,9 +163,13 @@ msgid ""
 "``_mix_internal`` to query AudioFrames and ``get_stream_sampling_rate`` to "
 "query current mix rate."
 msgstr ""
+"AudioStreamPlaybackResampled 不是複寫 ``mix`` ，而是使用 ``_mix_internal`` 來"
+"查詢 AudioFrame，並使用 ``get_stream_sampling_rate`` 來查詢目前的混合率。"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:349
 msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
 "core/math/audio_frame.h>`__"
 msgstr ""
+"\\ `core/math/audio_frame.h <https://github.com/godotengine/godot/blob/"
+"master/core/math/audio_frame.h>`__"

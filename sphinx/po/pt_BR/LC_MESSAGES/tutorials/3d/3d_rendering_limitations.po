@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,6 +75,8 @@ msgid ""
 "Bake some noise into your textures. This is mainly effective in 2D, e.g. for "
 "vignetting effects."
 msgstr ""
+"Calcule previamente algum \"ruído\" em suas texturas. Isto é principalmente "
+"eficaz em 2D, por ex. para efeitos de vinheta."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:39
 msgid ""
@@ -161,12 +163,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:95
+#, fuzzy
 msgid ""
 "If you want a material to fade with distance, use the SpatialMaterial "
 "distance fade mode **Pixel Dither** or **Object Dither** instead of "
 "**PixelAlpha**. This will make the material opaque. This way, it can also "
 "cast shadows."
 msgstr ""
+"Se você quiser que um material desapareça gradualmente com a distância, use "
+"o modo \"SpatialMaterial distance fade\" **Matização de Pixel** ou "
+"**Matização de Objeto** ao invés de **PixelAlpha**. Isso tornará o material "
+"opaco. Dessa forma, ele também poderá projetar sombras."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:101
 #, fuzzy

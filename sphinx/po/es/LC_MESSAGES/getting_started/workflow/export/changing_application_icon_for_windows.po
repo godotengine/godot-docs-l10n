@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,8 @@ msgstr ""
 "que se pueden cambiar: el icono del archivo y el icono de la barra de tareas."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "Creando un Tileset"
+msgstr "Creando un archivo ICO"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -43,12 +42,18 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"Windows no utiliza formatos como png o jpg para los iconos de las "
+"aplicaciones. En su lugar, utiliza un formato sólo para Windows llamado ICO. "
+"Puedes crear tu icono de aplicación en cualquier programa pero tendrás que "
+"convertirlo en un archivo ICO usando un programa como GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ repasa "
+"cómo exportar un archivo ICO con GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
@@ -71,15 +76,14 @@ msgstr ""
 "cuando se está ejecutando el juego."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
-#, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
-"Para cambiar el icono de la barra de tareas, dirígete a **Proyecto → Ajustes "
-"del proyecto → Application → Config → Icon**. Haz clic en el icono de la "
-"carpeta y selecciona el icono deseado."
+"Para cambiar el icono de la barra de tareas, vaya a **Proyecto → "
+"Configuración del proyecto → Aplicación → Configuración → Icono nativo de "
+"Windows**. Haga clic en el icono de la carpeta y seleccione su archivo ICO."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
 msgid ""
@@ -87,6 +91,9 @@ msgid ""
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"Este ajuste sólo cambia el icono del juego exportado en Windows. Para "
+"configurar el icono para macOS, usa ``Macos Native Icon``. Y para cualquier "
+"otra plataforma, usa el ajuste ``Icon``."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
 msgid "Changing the file icon"
@@ -100,6 +107,11 @@ msgid ""
 "choose to enable the **Embed Pck** option for your Windows export preset in "
 "the Export dialog."
 msgstr ""
+"Hay ``known issues <https://github.com/godotengine/godot/issues/33466>`__ al "
+"cambiar el icono de la aplicación en los ejecutables que incrustan un "
+"archivo PCK. Se recomienda evitar el uso de rcedit por ahora si eliges "
+"habilitar la opción **Embed Pck** para su exportación de Windows "
+"preestablecida en el diálogo de exportación."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
 msgid ""
@@ -160,12 +172,20 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
+"Si rcedit falla en cambiar el icono, puedes en su lugar :ref:`compile your "
+"own Windows export templates <doc_compiling_for_windows>` con el icono "
+"cambiado. Para hacerlo, reemplace `platform/windows/godot.ico <https://"
+"github.com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ con "
+"su propio archivo ICO *antes* de compilar las plantillas de exportación."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
+"Una vez hecho esto, puede especificar tus plantillas de exportación como "
+"plantillas de exportación personalizadas en el preajuste de exportación de "
+"Windows del proyecto."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
 msgid "Testing the result"
@@ -184,3 +204,6 @@ msgid ""
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
+"Si tu icono no se muestra correctamente, en Windows 10, intenta vaciar la "
+"caché de iconos. Para ello, abre el diálogo **Ejecutar** e introduce "
+"``ie4uinit.exe -ClearIconCache`` o ``ie4uinit.exe -show``."

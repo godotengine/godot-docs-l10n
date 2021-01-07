@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -288,21 +288,24 @@ msgid ""
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"Prima di continuare, assicurati di aver letto il riferimento sul manuale "
-"del :ref:'GDScript<doc_gdscript>'. Si tratta di un linguaggio progettato per "
-"essere semplice, ed il riferimento è breve, quindi non ci vorranno più di "
-"pochi minuti per ottenere una panoramica dei concetti."
+"Prima di continuare, assicurati di scorrere e aggiungere ai segnalibri il "
+"riferimento :ref:`GDScript <doc_gdscript>`. È un linguaggio progettato per "
+"essere semplice e il riferimento è strutturato in sezioni per rendere più "
+"facile ottenere una panoramica dei concetti."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
 msgstr "Impostazione della scena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
+#, fuzzy
 msgid ""
 "If you still have the \"instancing\" project open from the previous "
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"Se hai ancora il progetto di \"istanza\" aperto dal tutorial precedente, "
+"chiudilo (Progetto -> Esci da Elenco progetti) e crea un Nuovo progetto."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -560,8 +563,9 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_on_Button_pressed()`` "
 "by using :ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"Infine, connetti il segnale \"pressed\" del bottone a ``_ready()``, usando :"
-"ref:`Object.connect() <class_Object_method_connect>`."
+"Infine, connettere il segnale \"pressed\" del bottone a "
+"``_on_Button_pressed()``, usando :ref:`Object.connect() "
+"<class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:273
 msgid "The final script should look like this:"
@@ -574,9 +578,8 @@ msgstr ""
 "Esegui la scena e premi il pulsante. Dovresti avere il seguente risultato:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:310
-#, fuzzy
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "Hey! Congratulazioni nel codificare la tua prima scena."
+msgstr "Ma ciao! Congratulazioni per la aver programmato la tua prima scena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
@@ -603,9 +606,9 @@ msgid ""
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"La parte destra della finestra per la connessione dei segnali è per "
-"aggiungere parametri con valori specifici che vengono passati alla funzione "
-"connessa. Puoi aggiungere e rimuovere valori di vari tipi."
+"Il pannello \"avanzato\" della finestra di dialogo Connect serve per "
+"associare valori specifici ai parametri della funzione collegata. È "
+"possibile aggiungere e rimuovere valori di diversi tipi."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid ""

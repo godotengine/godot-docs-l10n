@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,24 +42,29 @@ msgid ""
 "Long-story short, it describes the worst-case scenario of runtime length. In "
 "laymen's terms:"
 msgstr ""
+"Kurz gesagt, es beschreibt das Worst-Case-Szenario der Laufzeitlänge. "
+"Laienhaft ausgedrückt:"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:18
 msgid ""
 "\"As the size of a problem domain increases, the runtime length of the "
 "algorithm...\""
 msgstr ""
+"\"Mit zunehmender Größe eines Problems, nimmt die Laufzeit des Algorithmus..."
+"\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr ""
+msgstr "Konstante Zeit, ``O(1)``: \"...erhöht sich nicht..\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr ""
+msgstr "Logarithmische Zeit, ``O(log n)``: \"...nimmt langsam zu.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:23
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
 msgstr ""
+"Linearzeit, ``O(n)``:\"... erhöht sich mit der gleichen Geschwindigkeit.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:24
 msgid "Etc."
@@ -108,9 +113,9 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
-"Godot implementiert Array als ``Vector <Variant> ``. Die Engine speichert "
-"den Array-Inhalt in einem zusammenhängenden Speicherabschnitt, d.h. sie "
-"befinden sich in einer Reihe nebeneinander."
+"Godot implementiert ein Array als ``Vector <Variant> ``. Die Engine "
+"speichert den Array-Inhalt in einem zusammenhängenden Speicherabschnitt, d."
+"h. sie befinden sich in einer Reihe nebeneinander."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -190,30 +195,43 @@ msgid ""
 "This makes only 2 copies of the array (still constant time, but slow) versus "
 "copying roughly 1/2 of the array, on average, N times (linear time)."
 msgstr ""
+"Dies macht nur 2 Kopien des Arrays (noch konstante Zeit, aber langsam) im "
+"Vergleich zum Kopieren von ungefähr der Hälfte des Arrays, durchschnittlich "
+"N-mal (lineare Zeit)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:88
 msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
+"**Get, Set:** Schnellste *nach Position*. Kann den 0., 2., 10. Datensatz "
+"usw. anfordern, es kann aber nicht angeben werden welchen Datensatz Sie "
+"wollen."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
 msgstr ""
+"Op: 1 Additionsoperation von der Startposition des Arrays bis zum "
+"gewünschten Index."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
 msgstr ""
+"**Finden:** Am langsamsten. Identifiziert den Index/die Position eines "
+"Wertes."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
 msgstr ""
+"Op: Muss das Array durchlaufen und Werte vergleichen, bis eine "
+"Übereinstimmung gefunden wird."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
 msgid ""
 "Performance is also dependent on whether one needs an exhaustive search."
 msgstr ""
+"Die Leistung hängt auch davon ab, ob eine umfassende Suche erforderlich ist."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:100
 msgid ""
@@ -245,7 +263,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:118
 msgid "Hashing every key an arbitrary number of times."
-msgstr ""
+msgstr "Jeden Schlüssel beliebig oft puffern."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:120
 msgid ""
@@ -253,10 +271,14 @@ msgid ""
 "one, as long as the number of hash calculations doesn't become too dependent "
 "on the density of the table, things will stay fast. Which leads to..."
 msgstr ""
+"Hash-Operationen sind zeitlich konstant, d.h. selbst wenn ein Algorithmus "
+"mehr als eine Hash-Berechnung durchführen muss, bleibt alles schnell, "
+"solange die Anzahl der Hash-Berechnungen nicht zu stark von der Dichte der "
+"Tabelle abhängt. Das führt zu..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
 msgid "Maintaining an ever-growing size for the table."
-msgstr ""
+msgstr "Beibehaltung einer ständig wachsenden Tabellengröße."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -273,7 +295,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
-msgstr ""
+msgstr "**Iterieren:** Schnell."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
@@ -283,7 +305,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
-msgstr ""
+msgstr "**Einfügen, Löschen, Verschieben:** Am schnellsten."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
@@ -294,11 +316,13 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:148
 msgid "update ordered List of records."
-msgstr ""
+msgstr "Aktualisiert geordnete Liste der Datensätze."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:150
 msgid "determine if table density mandates a need to expand table capacity."
 msgstr ""
+"bestimmt, ob die Tabellendichte eine Erweiterung der Tabellenkapazität "
+"erfordert."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:152
 msgid ""
@@ -309,20 +333,23 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
 msgstr ""
+"**Get, Set:** Am schnellsten. Dasselbe wie eine Suche *nach Schlüssel*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
-msgstr ""
+msgstr "Op: Wie einfügen/löschen/bewegen."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
-msgstr ""
+msgstr "**Finden:** Am langsamsten. Identifiziert den Schlüssel eines Wertes."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
 msgstr ""
+"Op: Muss Datensätze durchlaufen und den Wert vergleichen, bis eine "
+"Übereinstimmung gefunden wird."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
 msgid ""
@@ -367,6 +394,8 @@ msgid ""
 "The reason GDScript is slow is because every operation it performs passes "
 "through this system."
 msgstr ""
+"Der Grund warum GDScript langsam ist liegt darin, dassjede von ihm "
+"ausgeführte Operation dieses System durchläuft."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:195
 msgid ""
@@ -437,7 +466,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:276
 msgid "Enumerations: int vs. string"
-msgstr ""
+msgstr "Aufzählungen: int im Vergleich zu String"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
 msgid ""

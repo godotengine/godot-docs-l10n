@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,9 +78,8 @@ msgid "**bool**"
 msgstr "**bool**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
-#, fuzzy
 msgid "Boolean datatype, can only contain ``true`` or ``false``."
-msgstr "布尔数据类型，只能包含“true”或“false”"
+msgstr "布尔数据类型，只能包含“true”或“false”。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:27
 msgid "**bvec2**"
@@ -765,6 +764,8 @@ msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
+"当导出 GLES2 项目到 HTML5时， WebGL 1.0将被使用。 WebGL 1.0不支持动态循环，所"
+"以使用这些的着色器将不会工作。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:381
 msgid "Discarding"
@@ -860,20 +861,18 @@ msgid "**flat**"
 msgstr "**flat**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:481
-#, fuzzy
 msgid "The value is not interpolated."
-msgstr "该值未插值"
+msgstr "该值未插值。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
 msgid "**smooth**"
 msgstr "**smooth**"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:483
-#, fuzzy
 msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default."
-msgstr "该值以透视正确的方式进行插值。 这是默认值"
+msgstr "该值以透视正确的方式进行插值。 这是默认值。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
 msgid "Uniforms"
@@ -1598,7 +1597,7 @@ msgstr "点乘"
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 #, fuzzy
 msgid "vec3 **cross** (vec3 a, vec3 b)"
-msgstr "vec3 **cross** ( vec3, vec3 )"
+msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "Cross product"

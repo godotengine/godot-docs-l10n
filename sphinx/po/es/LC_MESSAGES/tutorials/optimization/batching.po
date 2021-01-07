@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/batching.rst:4
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "Optimización"
+msgstr "Optimización mediante procesamiento por lotes"
 
 #: ../../docs/tutorials/optimization/batching.rst:7
 msgid "Introduction"
@@ -43,14 +42,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:21
-#, fuzzy
 msgid "2D batching is currently only supported when using the GLES2 renderer."
-msgstr "ETC1 (recomendado cuando se utiliza el renderizador GLES2)."
+msgstr ""
+"Actualmente, el procesamiento por lotes 2D solo se admite cuando se utiliza "
+"el renderizador GLES2."
 
 #: ../../docs/tutorials/optimization/batching.rst:24
-#, fuzzy
 msgid "Draw calls"
-msgstr "Inconvenientes"
+msgstr "Dibujar llamadas"
 
 #: ../../docs/tutorials/optimization/batching.rst:26
 msgid ""
@@ -129,9 +128,8 @@ msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:72
-#, fuzzy
 msgid "Change of texture."
-msgstr "Renderizado de texturas dinámicas"
+msgstr "Cambio de textura."
 
 #: ../../docs/tutorials/optimization/batching.rst:73
 msgid "Change of material."
@@ -148,9 +146,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:82
-#, fuzzy
 msgid "Determining the rendering order"
-msgstr "Terminar la función de red:"
+msgstr "Determinando el orden de renderizado"
 
 #: ../../docs/tutorials/optimization/batching.rst:84
 msgid ""
@@ -182,19 +179,16 @@ msgid "The order of objects in the scene tree."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:98
-#, fuzzy
 msgid "The Z index of objects."
-msgstr "El objeto ``Engine``"
+msgstr "El Z index de objetos."
 
 #: ../../docs/tutorials/optimization/batching.rst:99
-#, fuzzy
 msgid "The canvas layer."
-msgstr "Canvas layers"
+msgstr "La canvas layer."
 
 #: ../../docs/tutorials/optimization/batching.rst:100
-#, fuzzy
 msgid ":ref:`class_YSort` nodes."
-msgstr ":ref:`RID <class_RID>`"
+msgstr "Nodos :ref:`class_YSort`."
 
 #: ../../docs/tutorials/optimization/batching.rst:104
 msgid ""
@@ -205,9 +199,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:110
-#, fuzzy
 msgid "A trick"
-msgstr "Bloques"
+msgstr "Un truco"
 
 #: ../../docs/tutorials/optimization/batching.rst:112
 msgid ""
@@ -312,9 +305,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:208
-#, fuzzy
 msgid "Overlap test"
-msgstr "Detección de superposición"
+msgstr "Prueba de superposición"
 
 #: ../../docs/tutorials/optimization/batching.rst:210
 msgid ""
@@ -337,9 +329,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:223
-#, fuzzy
 msgid "Light scissoring"
-msgstr "Procesador Light"
+msgstr "Tijera ligera"
 
 #: ../../docs/tutorials/optimization/batching.rst:225
 msgid ""
@@ -396,9 +387,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:264
-#, fuzzy
 msgid "Vertex baking"
-msgstr "Vertex Lighting (Iluminación de vértices)"
+msgstr "Horneado de vértice"
 
 #: ../../docs/tutorials/optimization/batching.rst:266
 msgid "The GPU shader receives instructions on what to draw in 2 main ways:"
@@ -448,9 +438,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:291
-#, fuzzy
 msgid "Custom shaders"
-msgstr "Mallas personalizadas"
+msgstr "Sombreadores personalizados"
 
 #: ../../docs/tutorials/optimization/batching.rst:293
 msgid ""
@@ -470,7 +459,6 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:302
-#, fuzzy
 msgid "Project Settings"
 msgstr "Configuración del proyecto"
 
@@ -485,9 +473,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:312
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "Opciones de animación"
+msgstr "renderizado / procesamiento por lotes / opciones"
 
 #: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
@@ -511,9 +498,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:329
-#, fuzzy
 msgid "rendering/batching/parameters"
-msgstr "Parámetros de Dibujo (Drawing)"
+msgstr "renderizado / procesamiento por lotes / parámetros"
 
 #: ../../docs/tutorials/optimization/batching.rst:331
 msgid ""
@@ -664,9 +650,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:457
-#, fuzzy
 msgid "Default batches"
-msgstr "Características por defecto"
+msgstr "Lotes predeterminados"
 
 #: ../../docs/tutorials/optimization/batching.rst:459
 msgid ""

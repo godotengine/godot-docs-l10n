@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,6 @@ msgstr ""
 "在C#中声明一个信号是通过一个 ``delegate`` 上的 ``[Signal]`` 属性完成的。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:98
-#, fuzzy
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``. If you want to connect a signal in the editor, you need to "
@@ -203,7 +202,7 @@ msgstr "处理器函数"
 msgid ""
 "Godot has a set of defines that allow you to change your C# code depending "
 "on the environment you are compiling to."
-msgstr ""
+msgstr "Godot有一组定义，可让您根据要编译的环境来更改C＃代码。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:179
 msgid ""
@@ -211,6 +210,8 @@ msgid ""
 "regenerate your `csproj` file to use this feature (compare "
 "``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
+"如果是Godot 3.2之前创建的项目，你需要修改或重新生成你的 `csproj` 文件来使用这"
+"个功能（可与一个3.2+新项目中的 ``<DefineConstants>`` 相对比）。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:184
 msgid "Examples"
@@ -218,27 +219,27 @@ msgstr "示例"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:186
 msgid "For example, you can change code based on the platform:"
-msgstr ""
+msgstr "例如，你可以根据平台更改代码："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:203
 msgid ""
 "Or you can detect which engine your code is in, useful for making cross-"
 "engine libraries:"
-msgstr ""
+msgstr "或者你可以检测代码所在的引擎，这对于制作跨引擎库很有用："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:219
 msgid "Full list of defines"
-msgstr "宏定义的完整列表"
+msgstr "完整的定义列表"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:221
 msgid "``GODOT`` is always defined for Godot projects."
-msgstr ""
+msgstr "所有 Godot 项目都会定义 ``GODOT``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:223
 msgid ""
 "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the "
 "architecture is 64-bit or 32-bit."
-msgstr ""
+msgstr "按照架构是 64 位还是 32 位，会定义 ``GODOT_64`` 或 ``GODOT_32``。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:225
 msgid ""
@@ -248,48 +249,58 @@ msgid ""
 "``get_name()`` method of the :ref:``OS <class_OS>`` singleton, but not every "
 "possible OS the method returns is an OS that Godot with Mono runs on."
 msgstr ""
+"按照操作系统，会定义 ``GODOT_X11``、``GODOT_WINDOWS``、``GODOT_OSX``、"
+"``GODOT_ANDROID``、``GODOT_IOS``、``GODOT_HTML5``，或者 ``GODOT_SERVER`` 中的"
+"一个。这些名称在未来可能会被更改。这些名称是由 :ref:``OS <class_OS>`` 单例"
+"（singleton）中的 ``get_name()`` 方法创建的，但是 Godot 与 Mono 只能在其中一"
+"部分平台上运行。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:232
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
-msgstr ""
+msgstr "在**导出**时，根据导出功能，还可能定义以下内容："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
+"``GODOT_PC``、``GODOT_MOBILE``或``GODOT_WEB``中的一种，取决于平台类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
+"``GODOT_ARM64_V8A``或``GODOT_ARMEABI_V7A``中的一个，仅在安卓系统上，取决于架"
+"构。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
-msgstr ""
+msgstr "``GODOT_ARM64``或``GODOT_ARMV7``中的一个，仅在iOS上，取决于架构。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
+"``GODOT_S3TC``、``GODOT_ETC``和``GODOT_ETC2``中的任一种，取决于纹理压缩类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""
 "Any custom features added in the export menu will be capitalized and "
 "prefixed: ``foo`` -> ``GODOT_FOO``."
 msgstr ""
+"所有在导出菜单中添加的自定义功能都会被大写并加上前缀： ``foo`` -> "
+"``GODOT_FOO`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"为了阐明这点，可以看看这个 `轰炸机演示 <https://github.com/godotengine/godot-"
-"demo-projects/tree/master/networking/multiplayer_bomber>`_ :"
+"如果想要参考一个示例项目，可以参考该OS测试demo：https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"

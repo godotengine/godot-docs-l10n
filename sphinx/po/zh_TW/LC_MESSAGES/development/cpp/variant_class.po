@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "Variant 類別"
 
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
@@ -33,55 +33,60 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"Variant 是 Godot 中最重要的一個資料型別，同時也是引擎中最重要的類別。一個只"
+"佔 20 位元組的 Variant 可以用來儲存幾乎所有的引擎資料型別。Variant 很少用來長"
+"時間儲存資料，主要都是用來進行通訊、編輯、序列化以移動資料。"
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr ""
+msgstr "Variant 可以："
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
-msgstr ""
+msgstr "保存幾乎所有資料型別"
 
 #: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
 msgstr ""
+"在多個 Variant 進行操作 (GDScript 使用 Variant 作為其不可部分完成與原生的資料"
+"型別)。"
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
-msgstr ""
+msgstr "可雜湊，這樣一來便能快速與其他 Variant 進行比對"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
-msgstr ""
+msgstr "在各個資料型別間安全地轉換"
 
 #: ../../docs/development/cpp/variant_class.rst:23
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
-msgstr ""
+msgstr "用來抽象呼叫方法以及其引數 (Godot 以 Variant 來匯出其所有的方法)"
 
 #: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
-msgstr ""
+msgstr "用來延遲呼叫或在執行緒間移動資料。"
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
-msgstr ""
+msgstr "可序列化為二進位，並儲存於硬碟上或經由網路傳輸。"
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
-msgstr ""
+msgstr "可序列化為文字，並用來印出數值或作為可編輯的設定。"
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
-msgstr ""
+msgstr "可當作匯出的屬性使用，這樣編輯器便能進行一般地編輯。"
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr ""
+msgstr "可用於字典、陣列、剖析器…等。"
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -89,21 +94,25 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
+"基本上，多虧有了 Variant，撰寫 Godot 本身便容易得多，因為使用 Variant 就能輕"
+"鬆地完成 C++ 中所不常見的高度動態結構。馬上就來熟悉熟悉 Variant 吧。"
 
 #: ../../docs/development/cpp/variant_class.rst:38
 #: ../../docs/development/cpp/variant_class.rst:57
 msgid "References:"
-msgstr ""
+msgstr "參考資料："
 
 #: ../../docs/development/cpp/variant_class.rst:40
 msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 msgstr ""
+"\\ `core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr ""
+msgstr "容器：字典 (Dictionary) 與陣列 (Array)"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -112,26 +121,35 @@ msgid ""
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
 msgstr ""
+"這兩種容器都是通過 Variant 來實作的。Dictionary 可以將所有作為索引鍵使用的資"
+"料型別與另一個資料型別做比對。Array 內則儲存的時 Variant 的陣列。當然，"
+"Variant 內也可以再儲存另一個 Dictionary 與 Array，來達到更佳的靈活性。"
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
 "Modifications to a container will modify all references to it. A Mutex "
 "should be created to lock it if multi threaded access is desired."
 msgstr ""
+"修改容器也會修改所有該容器的參照。當有需要多執行緒存取時則應該新增 Mutex 來進"
+"行鎖定。"
 
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
 "Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
-msgstr ""
+msgstr "自 Godot 3.0 起，已刪除容器的寫入時複製 (COW, Copy-on-Write) 模式。"
 
 #: ../../docs/development/cpp/variant_class.rst:59
 msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"\\ `core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
 "h>`__"
 msgstr ""
+"\\ `core/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"array.h>`__"

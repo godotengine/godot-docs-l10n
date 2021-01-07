@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:4
 msgid "Controlling thousands of fish with Particles"
-msgstr ""
+msgstr "Kontrolle tausender Fische mittels Partikel"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:6
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:66
 msgid "From a high level, this looks like:"
-msgstr ""
+msgstr "Von einer höheren Ebene aus betrachtet sieht dies so aus:"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:78
 msgid ""
@@ -106,11 +106,15 @@ msgid ""
 "First, generate 4 seeds inside the ``RESTART`` block using the ``hash`` "
 "function provided above:"
 msgstr ""
+"Generieren Sie zunächst 4 Startwerte innerhalb des ``RESTART``-Blocks mit "
+"der oben angegebenen ``hash``-Funktion:"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:90
 msgid ""
 "Then, use those seeds to generate random numbers using ``rand_from_seed``:"
 msgstr ""
+"Dann verwenden Sie diese Startwerte, um Zufallszahlen unter Verwendung von "
+"``rand_from_seed`` zu erzeugen:"
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:99
 msgid ""
@@ -121,6 +125,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:106
 msgid "Remember, all this code so far goes inside the ``RESTART`` block."
 msgstr ""
+"Denken Sie daran, dass sich der gesamte Code bisher im Block ``RESTART`` "
+"befindet."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:108
 msgid ""
@@ -137,6 +143,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:113
 msgid "Let's transform the fish by setting their ``VELOCITY``."
 msgstr ""
+"Lassen Sie uns die Fische transformieren, indem wir ihre ``VELOCITY`` "
+"einstellen."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:119
 msgid ""
@@ -153,6 +161,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:128
 msgid "This will give each fish a unique speed between ``2`` and ``10``."
 msgstr ""
+"Dadurch erhält jeder Fisch eine einzigartige Geschwindigkeit zwischen ``2`` "
+"und ``10``."
 
 #: ../../docs/tutorials/3d/vertex_animation/controlling_thousands_of_fish.rst:130
 msgid ""

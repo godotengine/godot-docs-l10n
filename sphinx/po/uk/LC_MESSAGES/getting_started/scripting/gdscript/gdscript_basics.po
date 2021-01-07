@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2403,12 +2403,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2416,11 +2422,11 @@ msgid ""
 "emitted when the function didn't yield anymore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Ключове слово Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2432,7 +2438,7 @@ msgstr ""
 "час входу в дерево активних сцен, під-вузли можна отримати лише тоді, коли "
 "здійснюється виклик ``Node._ready()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2444,11 +2450,11 @@ msgstr ""
 "відкладає ініціалізацію змінної члена до виклику ``_ready()``. Воно може "
 "замінити вищевказаний код одним рядком:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Ключове слово Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 #, fuzzy
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
@@ -2466,7 +2472,7 @@ msgstr ""
 "скрипту може змінюватись залежно від того, чи виконується проект у "
 "налагодженні."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

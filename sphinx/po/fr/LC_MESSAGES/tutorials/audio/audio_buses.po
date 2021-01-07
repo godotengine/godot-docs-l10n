@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -376,16 +376,15 @@ msgid "Distortion"
 msgstr "Distorsion (Distortion)"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:161
-#, fuzzy
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
 "*overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate "
 "sound coming through a low-quality speaker or device."
 msgstr ""
-"Les effets de distorsion rendent le son \"sale\". Godot offre plusieurs "
-"types de distorsion : *overdrive*, *tan* et *bits écrasés*. La distorsion "
-"peut être utilisée pour simuler le son provenant d'un haut-parleur ou d'un "
-"appareil de faible qualité."
+"Rend le son distordu. Godot propose plusieurs types de distorsion : "
+"*overdrive*, *tan* et *bit crushing*. La distorsion peut être utilisée pour "
+"simuler le son provenant d'un haut-parleur ou d'un appareil de faible "
+"qualité."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "EQ"
@@ -432,30 +431,26 @@ msgstr ""
 "être utilisé directement."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:185
-#, fuzzy
 msgid "HighPassFilter"
-msgstr ""
-"Filtre passe-haut, filtre plateau haut (HighPassFilter, HighShelfFilter)"
+msgstr "HighPassFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:187
-#, fuzzy
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
 "to reduce the bass content of a signal."
 msgstr ""
-"Ce sont des filtres qui coupent les fréquences en dessous d'une fréquence de "
-"coupure (*Cutoff*) spécifique. HighPassFilter et HighShelfFilter sont "
-"utilisés pour réduire les basses d'un signal."
+"Coupe les fréquences en dessous d'une fréquence spécifique *Cutoff*. Le "
+"HighPassFilter est utilisé pour réduire le contenu en basses fréquences d'un "
+"signal."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:192
-#, fuzzy
 msgid "HighShelfFilter"
-msgstr ""
-"Filtre passe-haut, filtre plateau haut (HighPassFilter, HighShelfFilter)"
+msgstr "HighShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr ""
+"Réduit toutes les fréquences au-dessus d'une fréquence spécifique *Cutoff*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:199
 msgid "Limiter"
@@ -472,32 +467,30 @@ msgstr ""
 "dB. L'ajout d'un limiteur au bus maître est une protection contre l'écrêtage."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:206
-#, fuzzy
 msgid "LowPassFilter"
-msgstr "Filtre"
+msgstr "LowPassFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:208
-#, fuzzy
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
 "(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
 "used to simulate \"muffled\" sound. For instance, underwater sounds, sounds "
 "blocked by walls, or distant sounds."
 msgstr ""
-"Ce sont les filtres les plus courants, ils coupent les fréquences au-dessus "
-"d'une fréquence de *coupure* spécifique et peuvent aussi résonner (boost les "
-"fréquences proches de la fréquence de coupure). Des filtres passe-bas "
-"peuvent être utilisés pour simuler un son \"étouffé\". Par exemple, les sons "
-"sous-marins, les sons bloqués par les murs ou les sons distants."
+"Coupe les fréquences au-dessus d'une fréquence *Cutoff* spécifique et peut "
+"également résonner (amplifie les fréquences proches de la fréquence "
+"*Cutoff*). Des filtres passe-bas peuvent être utilisés pour simuler un son "
+"\"étouffé\". Par exemple, les sons sous-marins, les sons bloqués par les "
+"murs ou les sons éloignés."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:214
-#, fuzzy
 msgid "LowShelfFilter"
-msgstr "Filtre passe-bas, filtre plateau bas (LowPassFilter, LowShelfFilter)"
+msgstr "LowShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:216
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
+"Réduit toutes les fréquences en dessous d'une fréquence spécifique *Cutoff*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:219
 msgid "NotchFilter"

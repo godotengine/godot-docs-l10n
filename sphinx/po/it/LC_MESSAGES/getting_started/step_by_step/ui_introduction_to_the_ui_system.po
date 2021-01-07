@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,15 +79,16 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
+#, fuzzy
 msgid ""
 "To design your UI, you'll use the Control nodes. These are the nodes with "
 "green icons in the editor. There are dozens of them, for creating anything "
 "from life bars to complex applications. Godot's editor itself is built using "
 "Control nodes."
 msgstr ""
-"Per progettare la tua Interfaccia Utente, userai i nodi Control. Questi nodi "
-"hanno icone verdi nell'editor. Ce ne sono a dozzine, per creare qualsiasi "
-"cosa, dalle barre della vita ad applicazioni complesse. Lo stesso editor di "
+"Per progettare la tua Interfaccia Utente, userai i nodi Control. Questi sono "
+"nodi con icone verdi nell'editor. Ce ne sono a dozzine, per creare qualsiasi "
+"cosa da barre della vita ad applicazioni complesse. Lo stesso editor di "
 "Godot é costruito usando nodi Control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:32
@@ -115,12 +116,14 @@ msgid "Bounding rectangle"
 msgstr "Rettangolo di delimitazione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
+#, fuzzy
 msgid "Focus and focus neighbor"
-msgstr "Focus e focus adiacente"
+msgstr "Focus e vicino di focus"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
+#, fuzzy
 msgid "Size flags"
-msgstr "Flag di dimensione"
+msgstr "Flag di dimensioni"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Margin"
@@ -201,8 +204,8 @@ msgid ""
 msgstr ""
 "**TextureRect** mostra una texture o un'immagine dentro l'Interfaccia "
 "Utente. Sembra simile al nodo Sprite, ma offre molteplici modalitá di "
-"ridimensionamento. Imposta la proprietà Stretch Mode (Modalità di "
-"Stiramento) per cambiare il suo comportamento:"
+"ridimensionamento. Imposta la proprietà Stretch Mode per cambiare il suo "
+"comportamento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
 msgid ""
@@ -250,18 +253,17 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node's limits."
 msgstr ""
-"``Keep Aspect Covered`` funziona proprio come ``Keep Aspect Centered``, ma "
-"il lato più corto si adatta al rettangolo di delimitazione e l'altro si "
-"aggancia ai limiti del nodo."
+"``Keep Aspect Covered`` funziona come ``Keep Aspect Centered`` ma il lato "
+"più corto si aggancia al rettangolo di delimitazione e l'altro al limite del "
+"nodo."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:90
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
-"Come per i nodi Sprite, è possibile modulare il colore di TextureRect. Fai "
-"clic sulla proprietà ``Modula`` e utilizza il selettore colore."
+"Come per i nodi Sprite, è possibile modulare il colore di TextureRect. Fare "
+"clic sulla proprietà ``Modulate`` e utilizzare il selezionatore di colori."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureRect modulated with a red color"
@@ -503,13 +505,14 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 #, fuzzy
 msgid "The layout menu in the viewport"
-msgstr "Il menu del layout nella finestra di visualizzazione"
+msgstr "Il menu di disposizione nella finestra di visualizzazione"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
 msgstr "Le ancore sono relative al contenitore genitore"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:211
+#, fuzzy
 msgid ""
 "Each anchor is a value between 0 and 1. For the left and top anchors, a "
 "value of 0 means that without any margin, the node's edges will align with "
@@ -528,7 +531,6 @@ msgstr ""
 "mentre gli ancoraggi sono relativi alla dimensione del contenitore padre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:221
-#, fuzzy
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
@@ -542,6 +544,7 @@ msgid "Margins change with the anchor"
 msgstr "I margini cambiano con l'ancora"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:228
+#, fuzzy
 msgid ""
 "Margins update automatically when you move or resize a control node. They "
 "represent the distance from the control node's edges to its anchor, which is "
@@ -550,13 +553,13 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
-"I margini vengono aggiornati automaticamente quando si sposta o ridimensiona "
-"un nodo di controllo. Rappresentano la distanza tra i bordi del nodo di "
-"controllo e il suo ancoraggio, che è relativa al nodo di controllo padre o "
-"contenitore. Quindi i tuoi nodi di controllo devono essere sempre "
-"all'interno di un contenitore, come vedremo tra poco. Se non vi è parent, i "
-"margini saranno relativi al rettangolo di delimitazione del nodo stesso, "
-"impostato nella sezione Rect, nella finestra di ispezione."
+"I margini vengono aggiornati automaticamente quando si sposta o si "
+"ridimensiona un nodo Control. Rappresentano la distanza tra i bordi del nodo "
+"Control e le sue ancore, che è relativa al nodo Control padre o contenitore. "
+"Quindi i tuoi nodi Control devono essere sempre all'interno di un "
+"contenitore, come vedremo tra poco. Se non vi è un nodo padre, i margini "
+"saranno relativi al rettangolo di delimitazione del nodo stesso, impostato "
+"nella sezione Rect, nell' Inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:238
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
@@ -572,6 +575,13 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Prova a cambiare le ancore o annidare i nodi Control nei contenitori: i "
+"margini verranno aggiornati. Raramente sarà necessario modificare i margini "
+"manualmente. Cerca sempre di trovare un contenitore per aiutarti prima; "
+"Godot possiede dei nodi per risolvere tutti i casi più comuni. Devi "
+"aggiungere spazio tra una barra della vita e il bordo dello schermo? Usa "
+"MarginContainer. Vuoi creare un menu verticale? Utilizza VBoxContainer. "
+"Maggiori informazioni su questi di seguito."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:249
 msgid "Use size tags to change how UI elements fill the available space"
@@ -589,6 +599,14 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Ogni nodo Control ha le Size Flags. Dicono ai contenitori come "
+"ridimensionare gli elementi dell'interfaccia utente. Se aggiungi il flag "
+"\"Riempi\" alla proprietà Orizzontale o Verticale, il rettangolo di "
+"delimitazione del nodo occuperà più spazio possibile, ma rispetterà i suoi "
+"fratelli e manterrà le sue dimensioni. Se in un HBoxContainer sono presenti "
+"3 nodi TextureRect, con flag \"Riempi\" su entrambi gli assi, ciascuno "
+"occuperà fino a un terzo dello spazio disponibile, ma non di più. Il "
+"contenitore prenderà il nodo e lo ridimensionerà automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:261
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
@@ -623,7 +641,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:276
 msgid "Arrange control nodes automatically with containers"
-msgstr "Disponi i nodi Control automaticamente con i container"
+msgstr "Disponi i nodi Control automaticamente con i contenitori"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:278
 msgid ""
@@ -632,6 +650,11 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
+"I contenitori organizzano automaticamente tutti i nodi Control figli, "
+"inclusi altri contenitori in righe, colonne e altro. Usali per aggiungere "
+"dello spazio libero intorno all'interfaccia o centrare i nodi nei loro "
+"rettangoli di delimitazione. Tutti i contenitori integrati si aggiornano "
+"nell'editor, in modo da poter vedere immediatamente l'effetto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:284
 msgid ""
@@ -639,10 +662,13 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"I contenitori hanno alcune proprietà speciali per controllare il modo in cui "
+"dispongono gli elementi dell'interfaccia utente. Per modificarle, scorri "
+"verso il basso fino alla sezione Custom Constants nell' Inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:289
 msgid "The 5 most useful containers"
-msgstr "I 5 container più utili"
+msgstr "I 5 contenitori più utili"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid ""
@@ -679,6 +705,11 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer centra tutti i suoi figli all'interno del suo rettangolo di "
+"delimitazione. In genere si utilizza per le schermate dei titoli, se si "
+"desidera che le opzioni rimangano al centro della finestra. Poiché centra "
+"tutto, spesso vorrai un singolo container al suo interno. Se invece usi "
+"texture e pulsanti, si sovrapporranno."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -696,6 +727,13 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainer aggiunge un margine su ciascuno dei lati dei nodi figli. "
+"Aggiungi un MarginContainer che occupi l'intera finestra per aggiungere una "
+"separazione tra il bordo della finestra e l'interfaccia utente. Puoi "
+"impostare un margine sul alto superiore, sinistro, destro o inferiore del "
+"container. Non è necessario selezionare la casella: fai clic sulla casella "
+"del valore corrispondente e digitare un numero qualsiasi. Si attiverà "
+"automaticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:320
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
@@ -710,6 +748,12 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Esistono due BoxContainer: VBoxContainer e HBoxContainer. Non è possibile "
+"aggiungere il nodo BoxContainer stesso, in quanto si tratta di una classe di "
+"supporto, ma è possibile utilizzare container box verticali e orizzontali. "
+"Organizzano i nodi in righe o colonne. Usali per allineare gli articoli in "
+"un negozio o per costruire griglie complesse con righe e colonne di "
+"dimensioni diverse, in quanto puoi inserli come più ti aggradano."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:331
 msgid "The HBoxContainer horizontally aligns UI elements"
@@ -724,6 +768,12 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer organizza automaticamente i suoi figli in una colonna. Li "
+"mette uno dopo l'altro. Se si utilizza il parametro separazione, lascerà uno "
+"spazio tra i suoi figli. HBoxContainer dispone gli elementi dell'interfaccia "
+"utente in una riga. È simile al VBoxContainer, con un ulteriore metodo `` "
+"add_spacer`` per aggiungere un nodo Control spaziatore prima del suo primo "
+"figlio o dopo il suo ultimo figlio, da uno script."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:340
 msgid ""
@@ -736,6 +786,14 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainer consente di disporre gli elementi dell'interfaccia utente in "
+"un modello a griglia. Puoi controllare solo il numero di colonne che ha e da "
+"solo imposterà il numero di righe, in base al numero di figli. Se hai nove "
+"figli e tre colonne, avrai 9 ÷ 3 = 3 righe. Aggiungi altri tre figli e avrai "
+"quattro righe. In altre parole, creerà nuove righe man mano che aggiungi più "
+"texture e pulsanti. Come i contenitori box, ha due proprietà per impostare "
+"rispettivamente la separazione verticale e orizzontale tra le righe e le "
+"colonne."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:351
 msgid "A GridContainer with 2 columns. It sizes each column automatically."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid "Setup"
-msgstr ""
+msgstr "Configuração"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
@@ -55,6 +55,10 @@ msgid ""
 "You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
 "any other 2D image you have."
 msgstr ""
+"Cada exemplo abaixo usa a mesma configuração de cena. Comece com um "
+"``KinematicBody2D`` com dois filhos: ``Sprite`` e ``CollisionShape2D``. Você "
+"pode usar o ícone do Godot (\"icon.png\") para a textura do Sprite ou usar "
+"qualquer imagem 2D que você tiver."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
@@ -105,6 +109,9 @@ msgid ""
 "you've set up input actions correctly as described in the :ref:"
 "`doc_2d_movement_setup` part of this tutorial."
 msgstr ""
+"Se o código acima não faz nada quando você pressiona as teclas, verifique se "
+"você configurou as ações de entrada corretamente conforme descrito na parte :"
+"ref:`doc_2d_movement_setup` deste tutorial."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,8 @@ msgid "For compiling under macOS, the following is required:"
 msgstr "要在Windows下进行编译，需要以下内容："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:13
-#, fuzzy
 msgid "`Python 3.5+ <https://www.python.org>`_."
-msgstr "`Python 2.7+ 或 Python 3.5+ <https://www.python.org/>`__"
+msgstr "`Python 3.5+ <https://www.python.org/>`__。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 #, fuzzy
@@ -41,18 +40,18 @@ msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
 msgstr "`SCons <https://www.scons.org>`__ 构建系统。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
-#, fuzzy
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
-msgstr "Xcode（或更轻巧的Xcode命令行工具）"
+msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_（或更轻巧的Xcode命"
+"令行工具）。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
-#, fuzzy
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
-msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ （用于WebM SIMD优化）"
+msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ （用于WebM SIMD优化）。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 #, fuzzy
@@ -82,9 +81,8 @@ msgid "Compiling"
 msgstr "开始编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:33
-#, fuzzy
 msgid "Start a terminal, go to the root directory of the engine source code."
-msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令："
+msgstr "启动终端，进入引擎源代码的根目录。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:35
 msgid "To compile for Intel (x86-64) powered Macs, use::"

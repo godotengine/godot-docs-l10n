@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -513,19 +513,19 @@ msgstr ""
 "быть включен)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid "``--export-pack <preset> <path>``"
-msgstr "``--export <target>``"
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Как ``--export``, но использует шаблон отладки (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` должна быть включена)."
+"Как ``--export``, но экспортирует только игровой проект для выбранного "
+"шаблона. Параметр <path> означает, в каком он будет формате: PCK или ZIP. (:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` должна быть "
+"включена)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -706,6 +706,9 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"Чтобы экспортировать только файл PCK, укажите ключ ``--export-pack``, сразу "
+"после наименования шаблона и пути сохранения, вместо ключа ``--export``. "
+"Параметр \"Путь сохранения\" означает формат пакета: PCK или ZIP."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:285
 msgid "Running a script"
@@ -726,9 +729,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Скрипт должен наследоваться от SceneTree или MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "Вот простой пример того, как это работает:"
+msgstr "Вот простой пример ``sayhello.gd`` и как это работает:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid "And how to run it:"
@@ -749,6 +751,10 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"Первая строка ``sayhello.gd`` отсылается к так называемому *шебангу*. По "
+"правилам этой инструкции, если бинарный исполняемый файл Godot указан в "
+"переменной окружения``PATH`` как ``godot``, вы сможете запускать скрипт в "
+"современных дистрибутивах Linux, а также в macOS:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:326
 msgid ""
@@ -756,3 +762,6 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"Если вышеперечисленное не работает в вашей текущей версии Linux или macOS, "
+"вы всегда можете заставить шебанг запускать Godot прямо с того места, где он "
+"находится, следующим образом:"

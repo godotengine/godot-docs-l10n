@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:4
 msgid "Best practices for engine contributors"
-msgstr ""
+msgstr "參與引擎貢獻的最佳實踐"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 msgid "Introduction"
@@ -34,6 +34,9 @@ msgid ""
 "common misunderstandings and bad practices during the process of "
 "contributing code to the project."
 msgstr ""
+"由於 Godot 主要是給有能力編寫程式的人用的，因此有非常多 Godot 使用者都有能力"
+"參與貢獻。雖然如此，但這些人之中並非所有人對於大型專案或是軟體工程都有相同的"
+"處理經驗，也導致了許多在為專案貢獻程式碼時常見的誤解與不良的實踐。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
@@ -46,6 +49,8 @@ msgid ""
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
+"本篇文章討論的範圍是有關貢獻者應遵守的最佳實踐列表，以及建立一個在提供貢獻的"
+"過程時能用來引述常見情形的語言。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:22
 msgid ""
@@ -53,6 +58,8 @@ msgid ""
 "development, our intention is to just restrict to situations that are most "
 "common in our project."
 msgstr ""
+"雖然有的人認為這些最佳實踐可以沿伸到一般軟體開發上，但我們主要只想限定在於 "
+"Godot 專案中最常見的情況。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:26
 msgid ""
@@ -60,14 +67,17 @@ msgid ""
 "new features. To abstract this idea, we will call them *Solutions*, because "
 "they always seek to solve something that can be described as a *Problem*."
 msgstr ""
+"參與貢獻大部分的時間都是在處理 Bug 修正、改進功能與新增功能。為了將這個概念抽"
+"象化，我們在此稱為 **解決方案** ，因為這些貢獻通常都是找出能解決所謂 **問題"
+"** 的方法。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
 msgid "Best Practices"
-msgstr ""
+msgstr "最佳實踐"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: 問題優先"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -76,6 +86,9 @@ msgid ""
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may not be actually solving any actual problems."
 msgstr ""
+"有許多貢獻者都非常有創意，且享受設計抽象資料結構與建立優秀的使用者介面過程，"
+"或是喜愛程式設計。不管是遇到什麼問題，這些貢獻者都能想出許多好點子，但這些好"
+"點子不一定能解決實際的問題。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:43
 msgid ""
@@ -85,16 +98,22 @@ msgid ""
 "Avoiding the addition of anything unnecessary is always considered a good "
 "practice in software development."
 msgstr ""
+"這種情況通常稱為 **找出問題的解決方案** (Solutions in Search of a Problem)。"
+"在理想的世界裡，找出問題的解決方案並不是有害的，但，實際上，要寫程式碼就必須"
+"要花費時間，而且原始碼跟二進位檔都會佔用空間，再來，一旦有了新的程式也就需要"
+"維護。在軟體開發上，最好能避免新增任何不需要的東西。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr ""
+msgstr "#2: 若要解決問題，則必須要先有問題"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
 "This is a variation of the previous practice. Adding anything unnecessary is "
 "not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
+"這個最佳實踐算是前一個的變體。雖然最好不要新增任何不需要的東西，但什麼東西算"
+"是需要的，什麼又算是不需要的呢？"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
 msgid ""
@@ -105,6 +124,10 @@ msgid ""
 "to proceed, or in order to achieve greater productivity. In this case, *a "
 "solution is needed*."
 msgstr ""
+"這個問題的回答，就是問題必須要先 **存在** 才能被解決。問題決不能只是臆測或某"
+"種信仰。使用者必須要以軟體被預期的使用方法使用軟體來產生 **需求** 。在這個過"
+"程中，使用者可能會陷入需要一種解決方案才能解決的問題，或是需要一個解決方案才"
+"能提升效率的狀況。這時候，就 **需要解決方案** 。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:63
 msgid ""
@@ -112,14 +135,16 @@ msgid ""
 "to be ready to solve them by the time they appear is called *\"Future "
 "proofing\"* and its characterized by lines of thought such as:"
 msgstr ""
+"深信未來會出現問題，且認為軟體必須要在問題出現的時候準備好隨時被解決就稱為 **"
+"防範未來** (Future proofing)，通常會以下列這幾種想法出現："
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:67
 msgid "I think it would be useful for users to..."
-msgstr ""
+msgstr "如果使用者能 ... 的話會很實用"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:68
 msgid "I think users will eventually need to..."
-msgstr ""
+msgstr "使用者之後會需要能 ..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
 msgid ""
@@ -128,10 +153,12 @@ msgid ""
 "be written but never used, or that is considerably more complex to use and "
 "maintain than it needs to be."
 msgstr ""
+"嘗試解決 **實際上不存在** 的問題通常可以看作是一種壞習慣，且會導致寫出不會被"
+"用到的程式碼，或是寫出用法與維護起來比起需求還要更複雜的程式碼。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
 msgid "#3: The problem has to be complex or frequent"
-msgstr ""
+msgstr "#3: 問題必須要複雜或頻繁"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:78
 msgid ""
@@ -140,20 +167,25 @@ msgid ""
 "solve problems for you, so it helps you to make games better and faster, but "
 "it won't make the *entire game* for you. A line must be drawn somewhere."
 msgstr ""
+"軟體是被設計來解決問題的，但我們不能指望軟體能解決 **世界上所有的問題** 。作"
+"為一個遊戲引擎，Godot 會負責解決問題，這樣使用者就能更好更快地製作遊戲，但 "
+"Godot 不會幫使用者做好 **整個遊戲** 。我們必須要在某些地方劃清界線。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:85
 msgid ""
 "Whether a problem is worth solving is determined by the difficulty the user "
 "has to work around it. This difficulty can be expressed as:"
 msgstr ""
+"我們可以從使用者難不難迴避問題來判斷某個問題是否值得解決。迴避問題的難易度可"
+"以由下判斷："
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
 msgid "The complexity of the problem"
-msgstr ""
+msgstr "問題的複雜性"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
-msgstr ""
+msgstr "問題的頻繁度"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""
@@ -162,6 +194,9 @@ msgid ""
 "user to workaround, offering such a solution is unnecessary and it's up to "
 "the user to do it."
 msgstr ""
+"若對於大多數使用者來說，要解決這個問題都 **太複雜** ，則這個軟體應該要能提供"
+"現成的解決方案。同理，若對使用者來說，這個問題能很輕鬆地迴避掉，則就沒有必要"
+"提供一套解決方案，且使用者可以自行決定是否要使用。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:96
 msgid ""
@@ -170,6 +205,9 @@ msgid ""
 "an annoyance. In this case, the software must offer a solution to simplify "
 "this use case."
 msgstr ""
+"但是，有個例外情況是，如果使用者 **經常** 遇到這個問題，則會因為每次遇到都必"
+"須要使用到某個簡單的解決方案而困擾。這時，軟體也必須要能提供簡化此一情況的解"
+"決方案。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:100
 msgid ""
@@ -178,10 +216,13 @@ msgid ""
 "difficult. This is why discussing with other developers (next point) is "
 "always advised."
 msgstr ""
+"從我們的經驗來看，大多數情況下，我們都可以馬上說清楚某個問題的複雜性與頻繁"
+"度，但有些情況下可能很難畫清楚這個界線。這也是為什麼我們建議要多與其他開發人"
+"員討論 (下一點)。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:105
 msgid "#4: The solution must be discussed with others"
-msgstr ""
+msgstr "#4: 解決方法必須與其他人充分討論過"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:107
 msgid ""
@@ -189,6 +230,8 @@ msgid ""
 "immersed in their own project, so they will naturally try to solve the "
 "problem from their own perspective, thinking only about their use case."
 msgstr ""
+"在很多情況下，使用者陷入問題時都只會以自己的專案作為觀點來看這個問題，然後自"
+"然而然地以自己的觀點來解決這個問題，只考慮到自己的情況。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:111
 msgid ""
@@ -196,6 +239,8 @@ msgid ""
 "cases that developers are often aware of, so they are often biased towards "
 "their own requirements."
 msgstr ""
+"因此，使用者提出的解決方案並不一定能滿足其他開發人員平常會遇到的問題，而通常"
+"只能滿足這些使用者自己的需求。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:117
 msgid ""
@@ -205,6 +250,10 @@ msgid ""
 "that applies to a wider range of known problems, and leave the rest of the "
 "solution up to the user."
 msgstr ""
+"對於開發人員來說，則是不同的視角。開發人員可能會認為使用者的問題太特例而不需"
+"要解決方案 (只要使用者自行迴避即可)，或是開發人員可能會建議使用一種部分的解決"
+"方案 (通常是比較簡單或低階的解法)，適用於更廣泛的問題，然後讓使用者自行處理剩"
+"下的問題。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:123
 msgid ""
@@ -212,6 +261,8 @@ msgid ""
 "the actual problems with the other developers or contributors, so a better "
 "agreement on implementation can be reached."
 msgstr ""
+"不管哪種情況，在嘗試參與貢獻時，先與其他開發人員或貢獻者進行討論都很重要，這"
+"樣也才能在實作方法上有更好的共識。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:127
 msgid ""
@@ -219,6 +270,9 @@ msgid ""
 "(agreed by the other contributors), who talks to users directly and has the "
 "most knowledge to implement a solution directly."
 msgstr ""
+"在這個情況中唯一的例外就是，當某個區域的程式碼很明顯有 (經過其他貢獻者同意"
+"的) 主人時，這個程式碼主人通常會直接與使用者對話，且有最多能如何直接實作解決"
+"方案的知識。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:131
 msgid ""
@@ -227,10 +281,13 @@ msgid ""
 "may not be accepted if they make something too difficult to use or if they "
 "add too much complexity to the codebase."
 msgstr ""
+"當然，以 Godot 的理念來看，簡單易用與維護性比起效能來說更優先。雖然也是要考慮"
+"效能最佳化，但如果把某個東西做的太複雜難以使用或是讓整體程式碼變得太複雜，就"
+"可能不被接受。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:137
 msgid "#5: To each problem, its own solution"
-msgstr ""
+msgstr "#5: 每個問題都有各自的解決方案"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:139
 msgid ""
@@ -239,6 +296,8 @@ msgid ""
 "and programmers will try to come up with solutions that solve as many "
 "problems as possible."
 msgstr ""
+"對於程式設計師來說，找出問題的最佳解法是個令人享受的過程。但，有時候會把事情"
+"做得太過頭，且程式設計師會想找出能儘可能解決最多數問題的解決方案。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:144
 msgid ""
@@ -246,6 +305,9 @@ msgid ""
 "this solution appear even more fantastic and flexible, the pure speculation-"
 "based problems (as described in #2) also make their appearance on stage."
 msgstr ""
+"這種儘量解決多數問題的解決方案也會在程式設計師想讓解決方案看起來更出色與靈活"
+"時變得更糟糕。而純粹基於臆測的問題 (像 #2 中說明的) 也會讓這些解決方案浮上檯"
+"面。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:150
 msgid ""
@@ -253,6 +315,8 @@ msgid ""
 "time, just writing an individual solution to each problem results in code "
 "that is simpler and more maintainable."
 msgstr ""
+"主要的問題是，在現實中，這種解決方案很少能解決問題。大多數時候，如果能為個別"
+"問題製作個別的解決方案，產生出來的程式碼也能更簡單且更好維護。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:154
 msgid ""
@@ -261,6 +325,8 @@ msgid ""
 "having to learn and remember a more complex system they will only need for "
 "simple tasks."
 msgstr ""
+"此外，針對個別問題製作的解決方案對於使用者來說也更好，因為使用者可以找到剛好"
+"符合他們需求的解法，而不需要只為了某個簡單的任務來瞭解與記住一個複雜的系統。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:159
 msgid ""
@@ -269,16 +335,20 @@ msgid ""
 "requesting more functions added (and making the API and codebase more and "
 "more complex)."
 msgstr ""
+"又大又彈性的解決方案還有另一個缺點就是，隨著時間的推移，這些解決方案對於使用"
+"者來說通常不是那麼彈性，使用者也就會要求要新增更多功能 (並產生更多、更複雜的 "
+"API 與程式碼)。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:164
 msgid "#6: Cater to common use cases, leave the door open for the rare ones"
-msgstr ""
+msgstr "#6: 應對常見問題，對少見的問題保持開放"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:166
 msgid ""
 "This is a continuation of the previous point, which further explains why "
 "this way of thinking and designing software is preferred."
 msgstr ""
+"這點是前一點的延伸，並進一步解釋為什麼我們建議用這種方式來思考與設計軟體。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:169
 msgid ""
@@ -287,6 +357,9 @@ msgid ""
 "Trying to write very flexible structures that cater to many use cases at "
 "once is often a mistake."
 msgstr ""
+"就像剛才提過的 (在 #2 中)，對於我們來說，(作為一個設計軟體的人類) 要實際瞭解"
+"未來使用者會有什麼需求非常困難。因此要設計出能同時滿足各種使用情況的靈活架構"
+"通常是個錯誤。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:174
 msgid ""
@@ -295,6 +368,9 @@ msgid ""
 "that they will require features that don't quite accommodate our original "
 "design, forcing us to either throw it away or make it even more complex."
 msgstr ""
+"我們可能會想出一些自己都覺得很聰明的想法，但實際上用的時候，使用者通常連一半"
+"的功能都用不到或是使用者會要求超出我們原本設計的功能，讓我們必須要將這個功能"
+"刪掉，或是讓這些功能變得更複雜。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:179
 msgid ""
@@ -302,6 +378,8 @@ msgid ""
 "they need*, but that is flexible enough to allow them to do *what we don't "
 "know they might need* in the future?"
 msgstr ""
+"接著問題就來了，要如何為使用者設計出 **符合使用者需求** 的功能，但同時又保有"
+"彈性能在未來滿足 **使用者目前還不需要** 的功能？"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:185
 msgid ""
@@ -310,6 +388,9 @@ msgid ""
 "use to achieve what they want, even if it's more work for them because it "
 "means reimplementing some logic that already exists."
 msgstr ""
+"這個問題的答案，就是要能確保使用者仍能做他們想做的事，因此我們需要提供使用者 "
+"**低階 API** 的存取，這樣使用者就能達成他們的目標，甚至對使用者來說更好，因為"
+"這樣一來就能通過低階 API 來重新實作一些已經存在的邏輯。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:190
 msgid ""
@@ -317,10 +398,12 @@ msgid ""
 "anyway, so it makes sense a custom solution needs to be written. This is why "
 "it's important to still provide users the basic building blocks to do it."
 msgstr ""
+"但不管怎麼說，在現實場景中這些使用情況是很少見的，所以讓使用者只能自行實作解"
+"決方案是很合理的。這也是為什麼提供使用者實作解決方案的基本要素很重要的原因。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:195
 msgid "#7: Solutions must be local"
-msgstr ""
+msgstr "#7: 解決方案必須位於相同層級"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:197
 msgid ""
@@ -328,6 +411,8 @@ msgid ""
 "or fixing a bug, sometimes the easiest path is to add data or a new function "
 "in the core layers of code."
 msgstr ""
+"在尋找問題的解決方案時，如實作新功能或修正 Bug，有時候最簡單的方法就是將資料"
+"或新函式加到核心層級的程式碼中。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:201
 msgid ""
@@ -336,6 +421,9 @@ msgid ""
 "difficult to follow (split in two), but also make the core API larger, more "
 "complex, more difficult to understand in general."
 msgstr ""
+"這個做法的主要問題就是，當我們加到核心層級上的東西只有某個離核心很遠的一個東"
+"西會用到，不但會讓程式碼很難追蹤 (一分為二)，也會讓核心 API 更肥大、更複雜、"
+"且更難以直接理解。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:206
 msgid ""
@@ -343,12 +431,14 @@ msgid ""
 "extreme importance given how much code relies on it, and because it's key "
 "for new contributors as a starting point to learning the codebase."
 msgstr ""
+"這樣不好，因為想想有多少程式碼都仰賴核心 API 來運作，核心 API 是否易讀與是否"
+"清楚非常重要。另一個原因是因為核心 API 是新貢獻者開始瞭解程式碼的起點。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:214
 msgid ""
 "The common reasoning for wanting to do this is that it's usually less code "
 "to simply add a hack in the core layers."
-msgstr ""
+msgstr "會想將程式碼加到核心層級的原因通常是因為這麼做只要寫更少的程式碼。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:217
 msgid ""
@@ -357,22 +447,29 @@ msgid ""
 "involves more code, duplicated, more complex or is less efficient. More "
 "creativity might be needed, but this path is always the advised one."
 msgstr ""
+"因此，這種做法並不推薦。一般來說，解決方案的程式碼應該儘量靠近原本發生問題的"
+"地方，就算這樣會讓程式碼變得更多、出現重複、或是更複雜與更沒效率。可能需要發"
+"揮更多創意，但我們非常建議這麼做。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:223
 msgid "#8: Don't use complex canned solutions for simple problems"
-msgstr ""
+msgstr "#8: 不要大炮打小鳥"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:225
 msgid ""
 "Not every problem has a simple solution and, many times, the right choice is "
 "to use a third party library to solve the problem."
 msgstr ""
+"並非所有問題都有簡單的解決方案，而且，很多時候，正確的選擇是使用第三方函式庫"
+"來解決問題。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:228
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we just "
 "can't link libraries dynamically. Instead, we bundle them in our source tree."
 msgstr ""
+"由於 Godot 必須要發佈到大量不同的平台，所以我們不能直接動態地連結到函式庫上，"
+"而必須要將這些程式碼捆綁到我們的原始碼裡。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:233
 msgid ""
@@ -380,6 +477,9 @@ msgid ""
 "smaller libraries (in fact, single header ones are our favorite). Only in "
 "cases where there is no other choice we end up bundling something larger."
 msgstr ""
+"因此，我們非常挑剔什麼東西能放進原始碼庫中，而且我們傾向使用小型的函式庫 (事"
+"實上，最好只有單一標頭檔)。除非是沒有其他選擇的情況，我們才會將大型的函式庫捆"
+"綁進來。"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:237
 msgid ""
@@ -392,3 +492,8 @@ msgid ""
 "run it on iOS in the long term. Since iOS doesn't support dynamic linking, "
 "static linking the only option on that platform."
 msgstr ""
+"另外，函式庫也必須要使用足夠鬆散的授權條款才能夠被包含進 Godot。舉例來說，我"
+"們可以使用 Apache 2.0, BSD, MIT, ISC 與 MPL 2.0。更具體來說，我們不能使用 "
+"GPL 或 LGPL 授權的函式庫，因為這些授權條款特別禁止靜態連結至專屬軟體內 (也就"
+"是 Godot 大多數匯出專案發佈的方法)。這項要求也適用於編輯器，因為我們長期來看"
+"還想在 iOS 上執行。由於 iOS 不支援動態連結，因此靜態連結是 iOS 上唯一的選項。"

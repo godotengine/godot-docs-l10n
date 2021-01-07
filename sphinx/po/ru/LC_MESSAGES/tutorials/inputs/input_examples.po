@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:4
-#, fuzzy
 msgid "Input examples"
-msgstr "Входящие события"
+msgstr "Примеры ввода"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:7
 msgid "Introduction"
@@ -35,16 +34,25 @@ msgid ""
 "will show you some of the most common scenarios, which you can use as "
 "starting points for your own projects."
 msgstr ""
+"В этом уроке вы узнаете, как использовать систему :ref:`InputEvent "
+"<class_InputEvent>` Godot для захвата ввода игрока. Существует множество "
+"различных типов ввода, которые может использовать ваша игра - клавиатура, "
+"геймпад, мышь и т. д. - и множество различных способов превратить эти "
+"входные данные в действия в вашей игре. Этот документ покажет вам некоторые "
+"из наиболее распространенных сценариев, которые вы можете использовать в "
+"качестве отправной точки для своих собственных проектов."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:16
 msgid ""
 "For a detailed overview of how Godot's input event system works, see :ref:"
 "`doc_inputevent`."
 msgstr ""
+"Для получения подробного обзора того, как работает система входных событий "
+"Godot, см. :ref:`doc_inputevent`."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:20
 msgid "Events versus polling"
-msgstr ""
+msgstr "Сравнение событий и опроса"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:22
 msgid ""
@@ -56,22 +64,33 @@ msgid ""
 "`Input <class_Input>` singleton, which you can use to query the state of an "
 "input."
 msgstr ""
+"Иногда вы хотите, чтобы ваша игра реагировала на определенное входное "
+"событие - например, нажатие кнопки \"прыжок\". В других ситуациях вы можете "
+"захотеть, чтобы что-то происходило, пока нажата клавиша, например движение. "
+"В первом случае вы можете использовать функцию ``_input()``, которая будет "
+"вызываться всякий раз, когда происходит событие ввода. Во втором случае "
+"Godot предоставляет синглтон :ref:`Input <class_Input>`, который можно "
+"использовать для запроса состояния ввода."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:29
 msgid "Examples:"
-msgstr ""
+msgstr "Примеры:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:63
 msgid ""
 "This gives you the flexibility to mix-and-match the type of input processing "
 "you do."
 msgstr ""
+"Это дает вам гибкость - возможность смешивать и сочетать типы обработки "
+"входных данных, которую вы делаете."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:66
 msgid ""
 "For the remainder of this tutorial, we'll focus on capturing individual "
 "events in ``_input()``."
 msgstr ""
+"В оставшейся части этого урока мы сосредоточимся на захвате отдельных "
+"событий в ``_input()``."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:70
 msgid "Input events"
@@ -84,12 +103,18 @@ msgid ""
 "specific properties related to that event. To see what events actually look "
 "like, add a Node and attach the following script:"
 msgstr ""
+"События ввода - это объекты, которые наследуются от :ref:`InputEvent "
+"<class_InputEvent>`. В зависимости от типа события объект будет содержать "
+"определенные свойства, связанные с этим событием. Чтобы увидеть, как на "
+"самом деле выглядят события, добавьте Node и прикрепите следующий скрипт:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:99
 msgid ""
 "As you press keys, move the mouse, and perform other inputs, you'll see each "
 "event scroll by in the output window. Here's an example of the output:"
 msgstr ""
+"Когда вы нажимаете клавиши, перемещаете мышь и выполняете другие вводы, вы "
+"увидите, как каждое событие прокручивается в окне вывода. Вот пример вывода:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:113
 msgid ""
@@ -98,11 +123,16 @@ msgid ""
 "consider :ref:`InputEventMouseButton <class_InputEventMouseButton>`. It "
 "inherits from the following classes:"
 msgstr ""
+"Как вы можете видеть, результаты очень различны для разных типов входных "
+"данных. Ключевые события даже печатаются как их ключевые символы. Например, "
+"рассмотрим :ref:`InputEventMouseButton <class_InputEventMouseButton>`. Он "
+"наследуется от следующих классов:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:118
 msgid ""
 ":ref:`InputEvent <class_InputEvent>` - the base class for all input events"
 msgstr ""
+":ref:`InputEvent <class_InputEvent>` - базовый класс для всех входных событий"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:119
 msgid ""
@@ -110,24 +140,33 @@ msgid ""
 "ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
 "`Alt`."
 msgstr ""
+":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - добавляет "
+"возможность проверять, нажаты ли модификаторы, такие как :kbd:`Shift` или :"
+"kbd:`Alt`."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:120
 msgid ""
 ":ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event "
 "properties, such as ``position``"
 msgstr ""
+":ref:`InputEventMouse <class_InputEventMouse>` - добавляет свойства события "
+"мыши, такие как ``position``"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:121
 msgid ""
 ":ref:`InputEventMouseButton <class_InputEventMouseButton>` - contains the "
 "index of the button that was pressed, whether it was a double-click, etc."
 msgstr ""
+":ref:`InputEventMouseButton <class_InputEventMouseButton>` - содержит индекс "
+"кнопки, которая была нажата, был ли это двойной щелчок и т. д."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:123
 msgid ""
 "It's a good idea to keep the class reference open while you're working with "
 "events so you can check the event type's available properties and methods."
 msgstr ""
+"Рекомендуется держать ссылку на класс открытой во время работы с событиями, "
+"чтобы вы могли проверить доступные свойства и методы типа события."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:127
 msgid ""
@@ -135,10 +174,14 @@ msgid ""
 "that doesn't contain it - calling ``position`` on ``InputEventKey`` for "
 "example. To avoid this, make sure to test the event type first:"
 msgstr ""
+"Вы можете столкнуться с ошибками, если попытаетесь получить доступ к "
+"свойству типа ввода, которое его не содержит , например, вызывая "
+"``position`` на ``InputEventKey``. Чтобы избежать этого, сначала проверьте "
+"тип события:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:149
 msgid "InputMap"
-msgstr ""
+msgstr "InputMap"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:151
 msgid ""
@@ -149,11 +192,17 @@ msgid ""
 "defined. To see them, and to add your own, open Project -> Project Settings "
 "and select the InputMap tab:"
 msgstr ""
+":ref:`InputMap <class_InputMap>` - это наиболее гибкий способ обработки "
+"различных входных данных. Вы используете это, создавая именованные "
+"*actions*, которым можно назначить любое количество событий ввода, таких как "
+"нажатия клавиш или щелчки мыши. Новый проект Godot включает в себя ряд уже "
+"определенных действий по умолчанию. Чтобы увидеть их и добавить свои "
+"собственные, откройте Project -> Project Settings и выберите вкладку "
+"InputMap:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:161
-#, fuzzy
 msgid "Capturing actions"
-msgstr "Статические функции"
+msgstr "Захват действий"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:163
 msgid ""
@@ -161,11 +210,13 @@ msgid ""
 "``is_action_pressed()`` and ``is_action_released()`` by passing the name of "
 "the action you're looking for:"
 msgstr ""
+"После того как вы определили свои действия, вы можете обработать их в своих "
+"сценариях с помощью ``is_action_pressed()`` и ``is_action_released()``, "
+"передав имя искомого действия:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:185
-#, fuzzy
 msgid "Keyboard events"
-msgstr "Сочетание клавиш"
+msgstr "События клавиатуры"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:187
 msgid ""
@@ -174,6 +225,10 @@ msgid ""
 "where you want to specifically look at key events. For this example, let's "
 "check for the :kbd:`T`:"
 msgstr ""
+"События клавиатуры фиксируются в :ref:`InputEventKey <class_InputEventKey>`. "
+"Хотя вместо этого рекомендуется использовать входные действия, могут быть "
+"случаи, когда вы хотите специально посмотреть на ключевые события. Например, "
+"давайте проверим :kbd:`T`:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:213
 #: ../../docs/tutorials/inputs/input_examples.rst:251
@@ -181,11 +236,12 @@ msgid ""
 "See :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` for a list of "
 "scancode constants."
 msgstr ""
+"См. :ref:`@GlobalScope_KeyList <enum_@GlobalScope_KeyList>` для получения "
+"списка констант сканкода."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:217
-#, fuzzy
 msgid "Keyboard modifiers"
-msgstr "Модификаторы-заполнители"
+msgstr "Модификаторы клавиатуры"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:219
 msgid ""
@@ -195,11 +251,15 @@ msgid ""
 "happen when the :kbd:`T` is pressed, but something different when it's :kbd:"
 "`Shift + T`:"
 msgstr ""
+"Свойства модификатора наследуются от :ref:`InputEventWithModifiers "
+"<class_InputEventWithModifiers>`. Это позволяет проверять наличие комбинаций "
+"модификаторов с помощью логических свойств. Давайте представим, что вы "
+"хотите, чтобы при нажатии :kbd:`T` происходило одно, а при :kbd:`Shift + T` "
+"- что-то другое:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:255
-#, fuzzy
 msgid "Mouse events"
-msgstr "Входящие события"
+msgstr "События мыши"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:257
 msgid ""
@@ -209,10 +269,15 @@ msgid ""
 "<class_InputEventMouseMotion>`. Note that this means that all mouse events "
 "will contain a ``position`` property."
 msgstr ""
+"События мыши происходят из класса :ref:`InputEventMouse "
+"<class_InputEventMouse>` и разделяются на два типа: :ref:"
+"`InputEventMouseButton <class_InputEventMouseButton>` и :ref:"
+"`InputEventMouseMotion <class_InputEventMouseMotion>`. Обратите внимание, "
+"что это означает, что все события мыши будут содержать свойство ``position``."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:263
 msgid "Mouse buttons"
-msgstr ""
+msgstr "Кнопки мыши"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:265
 msgid ""
@@ -223,11 +288,16 @@ msgid ""
 "as a button - two buttons, to be precise, with both ``BUTTON_WHEEL_UP`` and "
 "``BUTTON_WHEEL_DOWN`` being separate events."
 msgstr ""
+"Захват кнопок мыши очень похож на обработку клавиатурных событий. :ref:"
+"`@GlobalScope_ButtonList <enum_@GlobalScope_ButtonList>` содержит список "
+"констант ``BUTTON_*`` для каждой возможной кнопки, о которых будет сообщено "
+"в свойстве события ``button_index``. Обратите внимание, что колесо прокрутки "
+"также считается кнопкой - точнее, двумя кнопками, причем ``BUTTON_WHEEL_UP`` "
+"и ``BUTTON_WHEEL_DOWN`` являются отдельными событиями."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:300
-#, fuzzy
 msgid "Mouse motion"
-msgstr "Векторные Операции"
+msgstr "Движение мыши"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:302
 msgid ""
@@ -235,17 +305,21 @@ msgid ""
 "whenever the mouse moves. You can find the move's distance with the "
 "``relative`` property."
 msgstr ""
+"События :ref:`InputEventMouseMotion <class_InputEventMouseMotion>` "
+"происходят всякий раз, когда мышь перемещается. Вы можете найти расстояние "
+"перемещения с помощью свойства ``relative``."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:306
 msgid ""
 "Here's an example using mouse events to drag-and-drop a :ref:`Sprite "
 "<class_Sprite>` node:"
 msgstr ""
+"Вот пример использования событий мыши для перетаскивания узла :ref:`Sprite "
+"<class_Sprite>`:"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:379
-#, fuzzy
 msgid "Touch events"
-msgstr "Входящие события"
+msgstr "Сенсорные события"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:381
 msgid ""
@@ -254,6 +328,11 @@ msgid ""
 "mouse click event, and :ref:`InputEventScreenDrag "
 "<class_InputEventScreenDrag>` works much the same as mouse motion."
 msgstr ""
+"Если вы используете устройство с сенсорным экраном, вы можете генерировать "
+"сенсорные события. :ref:`InputEventScreenTouch "
+"<class_InputEventScreenTouch>` эквивалентно событию щелчка мыши, а :ref:"
+"`InputEventScreenDrag <class_InputEventScreenDrag>` работает почти так же, "
+"как движение мыши."
 
 #: ../../docs/tutorials/inputs/input_examples.rst:386
 msgid ""
@@ -262,3 +341,7 @@ msgid ""
 "From Mouse\" and your project will interpret mouse clicks and motion as "
 "touch events."
 msgstr ""
+"Чтобы протестировать сенсорные события на устройстве без сенсорного экрана, "
+"откройте Project Settings и перейдите в раздел \"Input Devices/Pointing\". "
+"Включите функцию \"Emulate Touch From Mouse\", и ваш проект будет "
+"интерпретировать щелчки мыши и движение как сенсорные события."

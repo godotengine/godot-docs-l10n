@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2348,12 +2348,18 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2361,11 +2367,11 @@ msgid ""
 "emitted when the function didn't yield anymore."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Onready 키워드"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2376,7 +2382,7 @@ msgstr ""
 "리에 들어갈 때만 구성하기 때문에, 하위 노드는 ``Node._ready()``\\ 로의 호출"
 "이 있을 때만 가져올 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2388,11 +2394,11 @@ msgstr ""
 "기화는 ``_ready()``\\ 를 호출할 때까지 지연합니다. 위의 코드를 한 줄로 대체"
 "가 가능합니다::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Assert 키워드"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2407,7 +2413,7 @@ msgstr ""
 "를 일으킬 소지가 있는 표현식을 가질 수 **없습니다**. 그렇지 않으면, 스크립트"
 "는 프로젝트가 디버그 빌드인지 여부에 따라 매우 다르게 동작할 것입니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

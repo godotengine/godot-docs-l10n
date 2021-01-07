@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:4
 msgid "Custom GUI controls"
-msgstr ""
+msgstr "Controles GUI personalizados"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:7
 msgid "So many controls..."
-msgstr ""
+msgstr "Tantos controles..."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
 msgid ""
@@ -34,10 +34,17 @@ msgid ""
 "diagonal scrollbars, at least it will be good to know how to create these "
 "controls easily from script."
 msgstr ""
+"Sin embargo, nunca hay suficientes. Crear tus propios controles "
+"personalizados que actúen como tú quieres es una obsesión de casi todos los "
+"programadores de GUI. Godot proporciona muchos de ellos, pero puede que no "
+"funcionen exactamente de la manera que quieres. Antes de contactar a los "
+"desarrolladores con una solicitud de soporte para barras de desplazamiento "
+"diagonales, al menos será bueno saber cómo crear estos controles fácilmente "
+"desde el script."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
 msgid "Drawing"
-msgstr ""
+msgstr "Dibujando"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:19
 msgid ""
@@ -45,10 +52,14 @@ msgid ""
 "tutorial. The same applies. Some functions are worth mentioning due to their "
 "usefulness when drawing, so they will be detailed next:"
 msgstr ""
+"Para dibujar, se recomienda consultar el tutorial :ref:"
+"`doc_custom_drawing_in_2d`. Lo mismo se aplica. Algunas funciones son dignas "
+"de mención por su utilidad a la hora de dibujar, por lo que se detallarán a "
+"continuación:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:24
 msgid "Checking control size"
-msgstr ""
+msgstr "Comprobando el tamaño del control"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:26
 msgid ""
@@ -57,10 +68,15 @@ msgid ""
 "<class_Control_property_rect_size>` property is provided. Checking it during "
 "``_draw()`` is vital to ensure everything is kept in-bounds."
 msgstr ""
+"A diferencia de los nodos 2D, el \"tamaño\" es importante con los controles, "
+"ya que ayuda a organizarlos en diseños adecuados. Para ello, se proporciona "
+"la propiedad :ref:`Control.rect_size <class_Control_property_rect_size>`. "
+"Revisarla durante el ``draw()`` es vital para asegurar que todo se mantenga "
+"dentro de los límites."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:33
 msgid "Checking focus"
-msgstr ""
+msgstr "Comprobando el enfoque"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:35
 msgid ""
@@ -73,10 +89,19 @@ msgid ""
 "focused control. To check for this status, the :ref:`Control.has_focus() "
 "<class_Control_method_has_focus>` method exists. Example"
 msgstr ""
+"Algunos controles (como los botones o los editores de texto) pueden "
+"proporcionar un enfoque de entrada para el teclado o el joypad de entrada. "
+"Ejemplos de ello son la introducción de texto o la pulsación de un botón. "
+"Esto se controla con la propiedad :ref:`Control.focus_mode "
+"<class_Control_property_focus_mode>`. Cuando se dibuja, y si el control "
+"soporta el enfoque de entrada, siempre se desea mostrar algún tipo de "
+"indicador (resaltado, cuadro, etc.) para indicar que este es el control "
+"actualmente enfocado. Para comprobar este estado, existe el método :ref:"
+"`Control.has_focus() <class_Control_method_has_focus>`. Ejemplo"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:69
 msgid "Sizing"
-msgstr ""
+msgstr "Escalando"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
@@ -100,10 +125,12 @@ msgid ""
 "To provide this callback, just override :ref:`Control.get_minimum_size() "
 "<class_Control_method_get_minimum_size>`, for example:"
 msgstr ""
+"Para proporcionar esta llamada, simplemente anula :ref:`Control."
+"get_minimum_size() <class_Control_method_get_minimum_size>`, por ejemplo:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:96
 msgid "Alternatively, set it using a function:"
-msgstr ""
+msgstr "Alternativamente, configúralo usando una función:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 msgid "Input"
@@ -114,16 +141,21 @@ msgid ""
 "Controls provide a few helpers to make managing input events much easier "
 "than regular nodes."
 msgstr ""
+"Los controles proporcionan unos cuantos ayudantes para que la gestión de los "
+"eventos de entrada sea mucho más fácil que la de los nodos regulares."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:118
 msgid "Input events"
-msgstr ""
+msgstr "Eventos de entrada"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:120
 msgid ""
 "There are a few tutorials about input before this one, but it's worth "
 "mentioning that controls have a special input method that only works when:"
 msgstr ""
+"Hay algunos tutoriales sobre la entrada de datos antes de este, pero vale la "
+"pena mencionar que los controles tienen un método especial de entrada de "
+"datos que sólo funciona cuando:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:124
 msgid "The mouse pointer is over the control."
@@ -134,12 +166,16 @@ msgid ""
 "The button was pressed over this control (control always captures input "
 "until button is released)"
 msgstr ""
+"El botón fue presionado sobre este control (el control siempre captura la "
+"entrada hasta que se suelta el botón)"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:127
 msgid ""
 "Control provides keyboard/joypad focus via :ref:`Control.focus_mode "
 "<class_Control_property_focus_mode>`."
 msgstr ""
+"Control proporciona el foco del teclado/joypad a través de :ref:`Control."
+"focus_mode <class_Control_property_focus_mode>`."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:130
 msgid ""

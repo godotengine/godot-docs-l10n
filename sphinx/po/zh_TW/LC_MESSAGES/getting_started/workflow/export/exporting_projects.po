@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgid ""
 "then added to a native project together with the game data."
 msgstr ""
 "同樣的情況，搬到行動平台上就稍微糟糕一點了。要在這些平台上發佈專案，則必須為"
-"各個平台建構各自的二進位檔，並將遊戲資料一起新增到原生專案中。"
+"各個平台建置各自的二進位檔，並將遊戲資料一起新增到原生專案中。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -232,7 +232,7 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
-"在正式環境中，適用於自動建構，在 Godot 中可以使用 ``--export`` 與 ``--export-"
+"在正式環境中，適用於自動建置，在 Godot 中可以使用 ``--export`` 與 ``--export-"
 "debug`` 參數來從命令行進行匯出。但從命令行匯出依然需要匯出預設設定來指定匯出"
 "參數。該指令的基本呼叫方法如下："
 
@@ -266,7 +266,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
 msgid "PCK versus ZIP pack file formats"
-msgstr ""
+msgstr "PCK v.s. ZIP 打包檔案格式"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid ""
@@ -274,15 +274,16 @@ msgid ""
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
+"不同格式都各有其利弊。PCK 是預設的格式，且建議用於大多數情況。但依據需求的不"
+"同，使用者可能會想用 ZIP 壓縮檔。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
-#, fuzzy
 msgid "**PCK format:**"
-msgstr "**格式:**"
+msgstr "**PCK 格式:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
 msgid "Uncompressed format. Larger file size, but faster to read/write."
-msgstr ""
+msgstr "未經壓縮的格式。檔案大小較大，但讀寫較快。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
@@ -290,15 +291,16 @@ msgid ""
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
+"在使用者的作業系統上通常沒有附帶能讀寫 PCK 格式的工具。但有一些 `第三方工具 "
+"<https://github.com/hhyyrylainen/GodotPckTool>`__ 可以解包與建立 PCK 檔案。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
-#, fuzzy
 msgid "**ZIP format:**"
-msgstr "**格式:**"
+msgstr "**ZIP 格式:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid "Compressed format. Smaller file size, but slower to read/write."
-msgstr ""
+msgstr "經過壓縮。檔案大小較小，但讀寫較慢。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
 msgid ""
@@ -306,3 +308,5 @@ msgid ""
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
+"使用者的作業系統上通常會附帶可讀寫 ZIP 格式的工具。適合用於製作較易進行 Mod "
+"的遊戲 (也請一併參考 :ref:`doc_exporting_pcks` )。"

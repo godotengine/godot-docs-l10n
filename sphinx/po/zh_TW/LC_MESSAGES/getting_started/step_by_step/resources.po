@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -287,14 +287,14 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
-"Resource 的自動串聯化與反串聯化 (Serialization/Deserialization) 是 Godot "
+"Resource 的自動序列化與復原序列化 (Serialization/Deserialization) 是 Godot "
 "Engine 的內建功能。使用者毋須自己實作資源檔案資料的匯入／匯出。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
-msgstr "資源也可以遞歸串聯化子資源，這表示使用者可以設計更複雜的資料結構。"
+msgstr "資源也可以遞歸序列化子資源，這表示使用者可以設計更複雜的資料結構。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -303,7 +303,7 @@ msgid ""
 "res) for increased speed and compression."
 msgstr ""
 "使用者能將資源保存為對版本控制友善的文字檔 (\\*.tres) 。在匯出遊戲後，Godot "
-"會將資源檔案串聯化為二進位檔 (\\*.res) 來提高速度與壓縮率。"
+"會將資源檔案序列化為二進位檔 (\\*.res) 來提高速度與壓縮率。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -345,7 +345,7 @@ msgid ""
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
 "接著屬性面板中便會顯示資源腳本的自定屬性。若有人編輯了屬性值並保存資源，則屬"
-"性面板也會串聯化自定屬性。要從屬性面板中保存資源，點擊屬性面板的工具選單（右"
+"性面板也會序列化自定屬性。要從屬性面板中保存資源，點擊屬性面板的工具選單（右"
 "上角），並選擇「保存」或「另存新檔」。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:193
@@ -427,7 +427,7 @@ msgid ""
 msgstr ""
 "請注意，資源檔案 (\\*.tres/\\*.res) 會檔案中保存資源所使用的腳本路徑。載入"
 "後，資源會抓取並以擴充其型別的方式載入腳本。這表示將無法指派子類別，如腳本的"
-"內部類別（如在 GDScript 內使用 ``class`` 關鍵字）。Godot 不會正確地串聯化腳本"
+"內部類別（如在 GDScript 內使用 ``class`` 關鍵字）。Godot 不會正確地序列化腳本"
 "內子類別的自定屬性。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:331

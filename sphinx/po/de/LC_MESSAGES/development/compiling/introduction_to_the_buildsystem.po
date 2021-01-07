@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,6 +91,10 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
+"Bitte beachten Sie die Dokumentation zu :ref:`doc_compiling_for_android`, :"
+"ref:`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`, :ref:"
+"`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
+"`doc_compiling_for_windows` und :ref:`doc_compiling_for_x11`."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:47
 msgid ""
@@ -121,6 +125,8 @@ msgstr ""
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:63
 msgid "To list the available target platforms, use ``scons platform=list``::"
 msgstr ""
+"Um die verfügbaren Zielplattformen aufzulisten, verwenden Sie ``scons "
+"platform=list``:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:77
 msgid ""
@@ -198,7 +204,7 @@ msgstr "Ziel"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
-msgstr ""
+msgstr "Ziel steuert Optimierungs- und Debug-Flags. Jeder Modus bedeutet:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
@@ -239,15 +245,16 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**32**: Build binaries for 32-bit platforms."
-msgstr ""
+msgstr "**32**: Erstellt Binärdateien für 32-Bit-Plattformen."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**64**: Build binaries for 64-bit platforms."
-msgstr ""
+msgstr "**64**: Erstellt Binärdateien für 64-Bit-Plattformen."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
+"**default**: Erstellen Sie die Architektur, die der Hostplattform entspricht."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
 msgid ""
@@ -361,10 +368,12 @@ msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
 msgstr ""
+"Buildoptionen, die aus der Datei festgelegt wurden, können durch die "
+"Befehlszeilenoptionen überschrieben werden."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:270
 msgid "It's also possible to override the options conditionally:"
-msgstr ""
+msgstr "Es ist auch möglich, die Optionen bedingt zu überschreiben:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:285
 msgid "Using the SCONSFLAGS"

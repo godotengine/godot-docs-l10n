@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,11 +80,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
-msgstr ""
+msgstr "Kennen Sie den Basistyp des Skripts, das sie verwenden möchten."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:73
 msgid "Create an instance of that base type."
-msgstr ""
+msgstr "Erstellt eine Instanz dieses Basistyps."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:75
 msgid "Add the script to the node."
@@ -92,7 +92,7 @@ msgstr "Füge das Skript zum Node hinzu."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:77
 msgid "(Drag-n-drop method)"
-msgstr ""
+msgstr "(Drag-n-Drop-Methode)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:79
 msgid "Find the script in the FileSystem dock."
@@ -104,7 +104,7 @@ msgstr "Benutze Drag and Drop, um das Skript in das Szenen-Dock zu bringen."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:83
 msgid "(Property method)"
-msgstr ""
+msgstr "(Eigenschaftsmethode)"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:85
 msgid ""
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
-msgstr ""
+msgstr "Wählen Sie \"Laden\" aus der Dropdown-Liste."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:89
 msgid "Select the script from the file dialog."
@@ -138,15 +138,16 @@ msgstr ":ref:`Custom Types <doc_making_plugins>`"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:100
 msgid "Editor-only. Typenames are not accessible at runtime."
-msgstr ""
+msgstr "Nur Editor. Auf Typnamen kann zur Laufzeit nicht zugegriffen werden."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:102
 msgid "Does not support inherited custom types."
-msgstr ""
+msgstr "Unterstützt keine vererbten benutzerdefinierten Typen."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:104
 msgid "An initializer tool. Creates the node with the script. Nothing more."
 msgstr ""
+"Ein Initialisierungswerkzeug. Erstellt den Node mit dem Skript. Sonst nichts."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:106
 msgid ""
@@ -157,19 +158,23 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
 msgid "Allows users to define an icon."
-msgstr ""
+msgstr "Ermöglicht es Benutzern, ein Symbol zu definieren."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:111
 msgid ""
 "Works for all scripting languages because it deals with Script resources in "
 "abstract."
 msgstr ""
+"Funktioniert für alle Skriptsprachen, da es sich um Skriptressourcen in "
+"abstrakter Sprache handelt."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:113
 msgid ""
 "Set up using :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>`."
 msgstr ""
+"Einrichten mit :ref:`EditorPlugin.add_custom_type "
+"<class_EditorPlugin_method_add_custom_type>`."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:115
 msgid ":ref:`Script Classes <doc_scripting_continued_class_name>`"
@@ -194,12 +199,16 @@ msgid ""
 "Editor is aware of inheritance relationships between scripts, script "
 "classes, and engine C++ classes."
 msgstr ""
+"Der Editor kennt die Vererbungsbeziehungen zwischen Skripten, Skriptklassen "
+"und Engine-C++ Klassen."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:129
 msgid ""
 "Engine developers must add support for languages manually (both name "
 "exposure and runtime accessibility)."
 msgstr ""
+"Engine-Entwickler müssen die Unterstützung für Sprachen manuell hinzufügen "
+"(sowohl Namensnennung als auch Laufzeitzugriff)."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
@@ -232,16 +241,20 @@ msgstr ""
 msgid ""
 "On the downside, it also means having to use largely imperative programming."
 msgstr ""
+"Auf der anderen Seite bedeutet dies auch, dass eine weitgehend imperative "
+"Programmierung erforderlich ist."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
 msgid "Performance of Script vs PackedScene"
-msgstr ""
+msgstr "Leistung von Script vs PackedScene"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid ""
 "One last aspect to consider when choosing scenes and scripts is execution "
 "speed."
 msgstr ""
+"Ein letzter Aspekt, der bei der Auswahl von Szenen und Skripten "
+"berücksichtigt werden muss, ist die Ausführungsgeschwindigkeit."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
 msgid ""
@@ -279,7 +292,7 @@ msgstr "Fazit"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:207
 msgid "In the end, the best approach is to consider the following:"
-msgstr ""
+msgstr "Letztendlich ist der beste Ansatz, Folgendes zu berücksichtigen:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:209
 msgid ""

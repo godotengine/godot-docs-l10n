@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,8 +51,8 @@ msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
 "`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
 msgstr ""
-"Ältere Artikel über GDScript wurden hierhin verschoben: ref:`Frequently "
-"Asked Questions <doc_faq_what_is_gdscript>`."
+"Ältere Artikel über GDScript wurden nach :ref:`Frequently Asked Questions "
+"<doc_faq_what_is_gdscript>` verschoben."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid "Example of GDScript"
@@ -230,18 +230,16 @@ msgid "class"
 msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "Definiert eine Klasse."
+msgstr "Definiert eine innere Klasse."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
-#, fuzzy
 msgid "class_name"
-msgstr "class"
+msgstr "class_name"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "Definiert einen Klassennamen und ein optionales Symbol für Ihr Skript."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -1232,7 +1230,7 @@ msgid ""
 "assign to it::"
 msgstr ""
 "Um einen Schlüssel zu einem bestehenden Wörterbuch hinzuzufügen, greifen Sie "
-"wie ein vorhandener Schlüssel darauf zu und weisen Sie ihm einen zu::"
+"wie ein vorhandener Schlüssel darauf zu und weisen Sie ihm einen zu:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
 msgid ""
@@ -1291,7 +1289,7 @@ msgid ""
 "inferred, so it's possible to omit the type name::"
 msgstr ""
 "Wenn die Variable innerhalb der Deklaration initialisiert wird, kann der Typ "
-"abgeleitet werden, sodass der Typname weggelassen werden kann::"
+"abgeleitet werden, sodass der Typname weggelassen werden kann:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:603
 msgid ""
@@ -1396,10 +1394,17 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"Konstanten sind Werte, die Sie nicht ändern können während das Spiel läuft, "
+"ihr Wert muss zur Kompilierungszeit bekannt sein. Mit dem Schlüsselwort "
+"``const`` können Sie einem konstanten Wert einen Namen geben. Wenn Sie "
+"versuchen, einer Konstanten nach ihrer Deklaration einen Wert zuzuweisen, "
+"wird ein Fehler angezeigt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
 msgstr ""
+"Wir empfehlen die Verwendung von Konstanten, wenn sich ein Wert nicht ändern "
+"soll."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -1407,7 +1412,7 @@ msgid ""
 "also possible to add explicit type specification::"
 msgstr ""
 "Obwohl der Typ der Konstanten aus dem zugewiesenen Wert abgeleitet wird, ist "
-"es auch möglich, eine explizite Typspezifikation hinzuzufügen::"
+"es auch möglich, eine explizite Typspezifikation hinzuzufügen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:681
 msgid "Assigning a value of an incompatible type will raise an error."
@@ -1490,14 +1495,14 @@ msgid ""
 msgstr ""
 "Funktionen können auch eine Typspezifikation für die Argumente und für den "
 "Rückgabewert haben. Typen für Argumente können auf ähnliche Weise wie "
-"Variablen hinzugefügt werden::"
+"Variablen hinzugefügt werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:741
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
 "Wenn ein Funktionsargument einen Standardwert hat, kann auf den Typ "
-"geschlossen werden::"
+"geschlossen werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:746
 msgid ""
@@ -1505,7 +1510,7 @@ msgid ""
 "using the arrow token (``->``)::"
 msgstr ""
 "Der Rückgabetyp der Funktion kann nach der Argumentliste mit dem Pfeiltoken "
-"(`` -> ``) angegeben werden::"
+"(`` -> ``) angegeben werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:752
 msgid ""
@@ -1558,7 +1563,7 @@ msgid ""
 msgstr ""
 "Um eine Funktion zur Laufzeit namentlich zu referenzieren (z.B. um sie in "
 "einer Variablen zu speichern oder als Argument an eine andere Funktion zu "
-"übergeben), müssen die Helfer ``call`` oder ``funcref`` verwendet werden::"
+"übergeben), müssen die Helfer ``call`` oder ``funcref`` verwendet werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:789
 msgid "Static functions"
@@ -1610,7 +1615,7 @@ msgstr ""
 msgid "Short statements can be written on the same line as the condition::"
 msgstr ""
 "Kurze Befehle können auf die selbe Zeile wie die Bedingung geschrieben "
-"werden::"
+"werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
 msgid ""
@@ -1619,7 +1624,7 @@ msgid ""
 msgstr ""
 "Manchmal möchte man vielleicht anfangs einen anderen Wert zuweisen, "
 "basierend auf einem booleschen Ausdruck. Hierfür ist der ternäre IF-Ausdruck "
-"nützlich::"
+"nützlich:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:839
 msgid ""
@@ -1708,7 +1713,7 @@ msgstr "Konstanten-Muster"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "Constant primitives, like numbers and strings::"
-msgstr "Konstanten einfachen Typs, wie Zahlen und Zeichenketten::"
+msgstr "Konstanten einfachen Typs, wie Zahlen und Zeichenketten:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
 msgid "Variable pattern"
@@ -1716,7 +1721,7 @@ msgstr "Variablen-Muster"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
 msgid "Matches the contents of a variable/enum::"
-msgstr "Vergleicht mit dem Inhalt einer Variable oder Aufzählung::"
+msgstr "Vergleicht mit dem Inhalt einer Variable oder Aufzählung:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
 msgid "Wildcard pattern"
@@ -1733,7 +1738,7 @@ msgid ""
 "statement in other languages::"
 msgstr ""
 "Es kann als das Äquivalent genutzt werden von ``default`` in einer "
-"``switch``-Anweisung in anderen Sprachen.::"
+"``switch``-Anweisung in anderen Sprachen.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:964
 msgid "Binding pattern"
@@ -1747,7 +1752,7 @@ msgid ""
 msgstr ""
 "Ein Verbindungs-Muster erzeugt eine neue Variable. Wie das Platzhalter-"
 "Muster passt es auf alles und gibt diesem Wert einen Namen. Es ist besondern "
-"hilfreich beim Feld- und Wörterbuch-Muster::"
+"hilfreich beim Feld- und Wörterbuch-Muster:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
 msgid "Array pattern"
@@ -1911,7 +1916,7 @@ msgstr "Mehrfache Vererbung ist nicht erlaubt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1095
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr "Vererbung benutzt das Schlüsselwort ``extends``::"
+msgstr "Vererbung benutzt das Schlüsselwort ``extends``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
 msgid ""
@@ -1919,7 +1924,7 @@ msgid ""
 "can be used::"
 msgstr ""
 "Um zu prüfen, ob eine gegebene Instanz von einer gegebenen Klasse erbt, "
-"verwendet man das Schlüsselwort ``is``::"
+"verwendet man das Schlüsselwort ``is``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
 msgid ""
@@ -1940,7 +1945,7 @@ msgstr ""
 "Dies ist besonders nützlich, da Funktionen in erweiterten Klassen andere "
 "Funktionen mit demselben Namen in ihren übergeordneten Klassen ersetzen. "
 "Wenn Sie sie weiterhin aufrufen möchten, können Sie ihnen einen ``.`` "
-"voranstellen (wie das Schlüsselwort ``super`` in anderen Sprachen)::"
+"voranstellen (wie das Schlüsselwort ``super`` in anderen Sprachen):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
 msgid ""
@@ -1979,13 +1984,13 @@ msgid ""
 msgstr ""
 "Anders als beim Aufruf einer regulären Funktion, wie im obigen Beispiel mit "
 "``.some_func``, werden Argumente, wenn der Konstruktor aus der geerbten "
-"Klasse Argumente entgegennimmt, wie folgt übergeben::"
+"Klasse Argumente entgegennimmt, wie folgt übergeben:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 "Dies wird besser anhand von Beispielen erklärt. Betrachten Sie dieses "
-"Szenario::"
+"Szenario:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
 msgid "There are a few things to keep in mind here:"
@@ -2029,7 +2034,7 @@ msgstr ""
 "Wenn der ``Idle.gd``'s ``_init`` Konstruktor 0 Argumente annimmt, muss er "
 "immer noch irgendeinen Wert an die ```State.gd`` Elternklasse übergeben, "
 "selbst wenn sie nichts tut. Das bringt uns zu der Tatsache, dass man auch im "
-"Basiskonstruktor Literale übergeben kann, nicht nur Variablen. z.B.::"
+"Basiskonstruktor Literale übergeben kann, nicht nur Variablen. z.B.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
 msgid "Inner classes"
@@ -2061,7 +2066,7 @@ msgstr ""
 "um auf sie in anderen Klassen zuzugreifen. Dies macht man mit den Funktionen "
 "``load`` oder ``preload`` (siehe weiter unten). Das Instanzieren einer "
 "geladenen Klassenressource erledigt man durch Aufruf der ``new``-Funktion "
-"auf dem Klassenobjekt::"
+"auf dem Klassenobjekt:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1240
 msgid "Exports"
@@ -2111,11 +2116,11 @@ msgstr ""
 "geändert wird. Der *setter* muß entscheiden, was mit dem neuen Wert "
 "geschehen soll. Umgekehrt, wenn auf ``variable`` zugegriffen wird, muß die "
 "*getter*-Funktion (``getterfunc`` oben) den gewünschten Wert zurückgeben. "
-"Unten ist ein Beispiel::"
+"Unten ist ein Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1275
 msgid "Either of the *setter* or *getter* functions can be omitted::"
-msgstr "Eine der Funktionen *setter* oder *getter* kann weggelassen werden ::"
+msgstr "Eine der Funktionen *setter* oder *getter* kann weggelassen werden :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid ""
@@ -2151,7 +2156,7 @@ msgstr ""
 "die exportierten Eigenschaften können geändert werden. In einigen Fällen ist "
 "es erwünscht, dass sie innerhalb des Editors ausgeführt werden (solange sie "
 "keinen Spielcode ausführen oder dies manuell vermeiden). Hierfür existiert "
-"das Schlüsselwort ``tool``, das an den Anfang der Datei gesetzt werden muss::"
+"das Schlüsselwort ``tool``, das an den Anfang der Datei gesetzt werden muss:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
@@ -2182,14 +2187,13 @@ msgid ""
 "reference cycles that can't be freed, a ``weakref`` function is provided for "
 "creating weak references."
 msgstr ""
-"Wenn eine Klasse von: ref: `class_Reference` erbt, werden Instanzen "
-"freigegeben, wenn sie nicht mehr verwendet werden. Es gibt keinen "
-"Müllsammler , nur Referenzzählung. Standardmäßig erweitern alle Klassen, die "
-"keine Vererbung definieren, ** Referenz **. Wenn dies nicht gewünscht ist, "
-"muss eine Klasse manuell Folgendes erben: ref: `class_Object` und` `instance."
-"free()` `aufrufen. Um Referenzzyklen zu vermeiden, die nicht freigegeben "
-"werden können, wird eine Funktion \"weakref\" zum Erstellen schwacher "
-"Referenzen bereitgestellt."
+"Wenn eine Klasse von :ref:`class_Reference` erbt, werden nicht mehr "
+"verwendete Instanzen freigegeben. Es gibt keinen Garbage Collector, nur "
+"Referenzzählung. Standardmäßig erweitern alle Klassen **Referenz**, die "
+"keine Vererbung definieren. Wenn dies nicht erwünscht ist, muss eine Klasse :"
+"ref:`class_Object` manuell erben und ``instance.free()``aufrufen. Um "
+"Referenzzyklen zu vermeiden, die nicht freigegeben werden können, wird eine "
+"Funktion ``weakref`` zum Erstellen schwacher Referenzen bereitgestellt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
 msgid ""
@@ -2247,7 +2251,7 @@ msgstr ""
 "Im folgenden Beispiel verbinden wir das Signal \"health_depleted\" von einem "
 "\"Character\" -Node mit einem \"Game\" -Node. Wenn der ``Character``-Node "
 "das Signal aussendet, wird des Game "
-"nodes``_on_Character_health_depleted``genannt ::"
+"nodes``_on_Character_health_depleted``genannt :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
 msgid "You can emit as many arguments as you want along with a signal."
@@ -2275,10 +2279,10 @@ msgid ""
 "method::"
 msgstr ""
 "In unserem ``Character.gd`` -Skript definieren wir ein ``health_changed`` "
-"Signal und senden es mit: ref: `Object.emit_signal() "
+"Signal und senden es mit :ref:`Object.emit_signal() "
 "<class_Object_method_emit_signal>` und von einem ``Game`` Node weiter oben "
-"im Szenenbaum, wir verbinden ihn mit der ``Lebensleiste`` mit der: ref: "
-"`Object.connect() <class_Object_method_connect>` Methode::"
+"im Szenenbaum, wir verbinden ihn mit der ``Lebensleiste`` mit der :ref:"
+"`Object.connect() <class_Object_method_connect>` Methode:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1429
 msgid ""
@@ -2295,9 +2299,9 @@ msgid ""
 "then connect the character, that emits the signal, to the receiver, the "
 "``Lifebar`` node in this case."
 msgstr ""
-"Im `` Game`` -Node erhalten wir sowohl den `` Charakter`` als auch den `` "
-"Lebensleiste`` Node und verbinden dann den Charakter, der das Signal "
-"aussendet, mit dem Empfänger, in diesem Fall dem `` Lebensleiste`` Knoten ."
+"Im ``Game``-Node erhalten wir sowohl den ``Charakter`` als auch den "
+"``Lebensleiste``-Node und verbinden dann den Charakter, der das Signal "
+"aussendet, mit dem Empfänger, in diesem Fall dem ``Lebensleiste``-Node ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1446
 msgid ""
@@ -2313,7 +2317,7 @@ msgid ""
 "definition::"
 msgstr ""
 "Sie können optionale Argumentnamen in Klammern nach der Definition des "
-"Signals schreiben::"
+"Signals schreiben:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1455
 msgid ""
@@ -2358,19 +2362,19 @@ msgid ""
 "can add the character's name in the binds array argument::"
 msgstr ""
 "Aufbauend auf dem obigen Beispiel möchten wir ein Protokoll des von jedem "
-"Charakter erlittenen Schadens auf dem Bildschirm anzeigen, z. B. \"Spieler1 "
-"hat 22 Schaden erlitten\". Das `` health_changed`` Signal gibt uns nicht den "
+"Charakter erlittenen Schadens auf dem Bildschirm anzeigen, z.B. ``Spieler1 "
+"hat 22 Schaden erlitten``. Das ``health_changed`` Signal gibt uns nicht den "
 "Namen des Charakters, der Schaden genommen hat. Wenn wir also das Signal mit "
 "der In-Game-Konsole verbinden, können wir den Namen des Charakters in das "
-"Argument binds array einfügen::"
+"Argument binds array einfügen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr ""
-"Unser `` BattleLog`` -Node empfängt jedes Element im Binds-Array als "
-"zusätzliches Argument ::"
+"Unser ``BattleLog`` -Node empfängt jedes Element im Binds-Array als "
+"zusätzliches Argument :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1497
 msgid "Coroutines with yield"
@@ -2388,18 +2392,18 @@ msgid ""
 msgstr ""
 "GDScript bietet Unterstützung für die integrierte Funktion "
 "`Coroutinen<https://en.wikipedia.org/wiki/Coroutine>` _ über die integrierte "
-"Funktion: ref: `yield <class_ @ GDScript_method_yield>`. Das Aufrufen von `` "
-"Yield() `` kehrt sofort von der aktuellen Funktion zurück, wobei der "
+"Funktion :ref:`yield <class_ @ GDScript_method_yield>`. Das Aufrufen von "
+"``Yield()`` kehrt sofort von der aktuellen Funktion zurück, wobei der "
 "aktuelle eingefrorene Zustand dieselbe Funktion wie der Rückgabewert hat. "
-"Wenn Sie für dieses resultierende Objekt `` resume() `` aufrufen, wird die "
+"Wenn Sie für dieses resultierende Objekt ``resume()`` aufrufen, wird die "
 "Ausführung fortgesetzt und alles zurückgegeben, was die Funktion zurückgibt. "
 "Nach der Wiederaufnahme wird das Statusobjekt ungültig. Hier ist ein "
-"Beispiel::"
+"Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1541
 msgid "Will print::"
-msgstr "Ausgabe::"
+msgstr "Ausgabe:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1526
 msgid ""
@@ -2407,14 +2411,14 @@ msgid ""
 "example::"
 msgstr ""
 "Es ist auch möglich Werte zwischen ``yield()`` und ``resume()`` zu "
-"übergeben, zum Beispiel::"
+"übergeben, zum Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1547
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr ""
 "Denken Sie daran, den neuen Funktionsstatus zu speichern, wenn Sie mehrere "
-"``yield``\\s verwenden::"
+"``yield``\\s verwenden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1562
 msgid "Coroutines & signals"
@@ -2426,10 +2430,10 @@ msgid ""
 "``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples::"
 msgstr ""
-"Die wahre Stärke der Verwendung von \"Yield\" liegt in der Kombination mit "
-"Signalen. `` Yield`` kann zwei Argumente akzeptieren, ein Objekt und ein "
+"Die wahre Stärke der Verwendung von ``yield`` liegt in der Kombination mit "
+"Signalen. ``yield`` kann zwei Argumente akzeptieren, ein Objekt und ein "
 "Signal. Wenn das Signal empfangen wird, beginnt die Ausführung erneut. Hier "
-"sind einige Beispiele::"
+"sind einige Beispiele:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
 msgid ""
@@ -2454,6 +2458,12 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
@@ -2462,7 +2472,7 @@ msgstr ""
 "ob sie mehrfach nachgeben kann, können Sie bedingt bis zum ``completed`` "
 "Signal nachgeben:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2471,15 +2481,14 @@ msgid ""
 msgstr ""
 "Dies stellt sicher, dass die Funktion alles zurückgibt, was sie zurückgeben "
 "sollte, unabhängig davon, ob Coroutinen intern verwendet wurden. Beachten "
-"Sie, dass die Verwendung von `` während`` hier redundant wäre, da das Signal "
-"`` abgeschlossen`` nur ausgegeben wird, wenn die Funktion nicht mehr "
-"nachgibt."
+"Sie, dass die Verwendung von ``während`` hier redundant wäre, da das Signal "
+"``abgeschlossen`` nur ausgegeben wird, wenn die Funktion nicht mehr nachgibt."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Onready Schlüsselwort"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2491,7 +2500,7 @@ msgstr ""
 "Szenenbaums konfiguriert werden müssen, können die Unterknoten nur abgerufen "
 "werden, wenn ein Aufruf von \"Node._ready()\" erfolgt."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2502,13 +2511,13 @@ msgstr ""
 "Referenzen häufen. Zu diesem Zweck hat GDScript das Schlüsselwort \"onready"
 "\", das die Initialisierung einer Mitgliedsvariablen verzögert, bis "
 "\"_ready()\" \"aufgerufen wird. Es kann den obigen Code durch eine einzelne "
-"Zeile ersetzen ::"
+"Zeile ersetzen :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Assert Schlüsselwort"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2517,15 +2526,15 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
-"Das`` behaupten`` Schlüsselwort kann verwendet werden, um Bedingungen im "
+"Das ``behaupten`` Schlüsselwort kann verwendet werden, um Bedingungen im "
 "Debug-Builds zu überprüfen. Diese Behauptungen werden in Nicht-Debug-Builds "
 "ignoriert. Dies bedeutet, dass der als Argument übergebene Ausdruck in einem "
 "Release-Modus exportierten Projekt nicht ausgewertet wird. Aus diesem Grund "
-"dürfen Behauptungen ** keine ** Ausdrücke enthalten, die Nebenwirkungen "
-"haben. Andernfalls hängt das Verhalten des Skripts davon ab, ob das Projekt "
-"in einem Debug-Build ausgeführt wird."
+"dürfen Behauptungen **keine** Ausdrücke enthalten, die Nebenwirkungen haben. "
+"Andernfalls hängt das Verhalten des Skripts davon ab, ob das Projekt in "
+"einem Debug-Build ausgeführt wird."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

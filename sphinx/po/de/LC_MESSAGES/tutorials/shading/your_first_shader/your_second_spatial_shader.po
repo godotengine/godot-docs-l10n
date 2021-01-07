@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,8 @@ msgid ""
 "For a full list of these parameters see the :ref:`spatial shader "
 "<doc_spatial_shader>` reference doc."
 msgstr ""
+"Eine vollständige Liste dieser Parameter finden Sie im Referenzdokument :ref:"
+"`Spatial Shader <doc_spatial_shader>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:15
 msgid ""
@@ -100,6 +102,8 @@ msgstr ""
 msgid ""
 "First let's set the color of the water. We do that by setting ``ALBEDO``."
 msgstr ""
+"Lassen Sie uns zuerst die Farbe des Wassers einstellen, was über die "
+"Einstellung ``ALBEDO`` geschieht."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:52
 msgid "``ALBEDO`` is a ``vec3`` that contains the color of the object."
@@ -107,7 +111,7 @@ msgstr "``ALBEDO`` ist ein ``vec3`` das die Farbe des Objekts enthält."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:54
 msgid "Let's set it to a nice shade of blue."
-msgstr ""
+msgstr "Lassen Sie uns es auf einen schönen Blauton einstellen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:64
 msgid ""
@@ -120,6 +124,8 @@ msgid ""
 "The PBR model that Godot uses relies on two main parameters: ``METALLIC`` "
 "and ``ROUGHNESS``."
 msgstr ""
+"Das von Godot verwendete PBR-Modell basiert auf zwei Hauptparametern: "
+"``METALLIC`` und ``ROUGHNESS``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:69
 msgid ""
@@ -233,7 +239,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:168
 msgid "Animating with ``TIME``"
-msgstr ""
+msgstr "Animieren mit ``TIME``"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:170
 msgid ""
@@ -264,6 +270,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:191
 msgid "And make sure to correctly pass it in inside the vertex function."
 msgstr ""
+"Und stellen Sie sicher, dass sie innerhalb der Vertexfunktion korrekt "
+"übergeben wird."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:201
 msgid ""
@@ -294,7 +302,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:226
 msgid "Advanced effects: waves"
-msgstr ""
+msgstr "fortschrittliche Effekte: Wellen"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:228
 msgid ""
@@ -309,6 +317,8 @@ msgid ""
 "``wave()`` has one parameter, ``position``, which is the same as it is in "
 "``height()``."
 msgstr ""
+"``wave()`` hat einen Parameter ``position``, der mit ``height()`` identisch "
+"ist."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:234
 msgid ""
@@ -319,6 +329,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:244
 msgid "At first this looks complicated. So let's go through it line-by-line."
 msgstr ""
+"Das sieht zunächst kompliziert aus. Gehen wir es also Zeile für Zeile durch."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:250
 msgid ""
@@ -345,6 +356,8 @@ msgstr ""
 msgid ""
 "We can now replace the contents of our ``height()`` function with ``wave()``."
 msgstr ""
+"Wir können jetzt den Inhalt unserer ``height()`` Funktion durch ``wave()`` "
+"ersetzen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:277
 msgid "Using this you get:"

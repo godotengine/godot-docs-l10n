@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -716,7 +716,6 @@ msgstr ""
 "的分叉中，您可以做任何您想做的事情，并且一切都被允许以获得整洁的PR :)"
 
 #: ../../docs/community/contributing/pr_workflow.rst:443
-#, fuzzy
 msgid ""
 "We will use the *interactive rebase* ``git rebase -i`` to do this. This "
 "command takes a commit ID or a branch name as argument, and will let you "
@@ -725,8 +724,7 @@ msgid ""
 msgstr ""
 "我们将使用 *交互式重新设置基线* ``git rebase -i`` 来执行此操作。此命令将使用"
 "提交哈希作为参数，并允许您修改该提交哈希与分支的最后一个提交之间的所有提交，"
-"即所谓的 *HEAD*。在我们的示例中，我们希望对最后两次提交采取行动，因此我们将执"
-"行以下操作："
+"即所谓的 ``HEAD``。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:448
 msgid ""

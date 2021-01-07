@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -750,40 +750,34 @@ msgstr "8: :ref:`Transform2D<class_transform2d>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:177
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:245
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:270
-#, fuzzy
 msgid "The X component of the X column vector, accessed via [0][0]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "X列向量的X分量，可通过[0][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:179
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:247
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:272
-#, fuzzy
 msgid "The Y component of the X column vector, accessed via [0][1]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "X列向量的Y分量，可通过[0][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:181
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:251
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
-#, fuzzy
 msgid "The X component of the Y column vector, accessed via [1][0]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Y列向量的X分量，可通过[1][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:183
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
-#, fuzzy
 msgid "The Y component of the Y column vector, accessed via [1][1]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Y列向量的Y分量，可通过[1][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:185
-#, fuzzy
 msgid "The X component of the origin vector, accessed via [2][0]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "原始向量的X分量，可通过[2] [0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:187
-#, fuzzy
 msgid "The Y component of the origin vector, accessed via [2][1]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "原始向量的Y分量，可通过[2][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:191
 msgid "9: :ref:`Plane<class_plane>`"
@@ -840,15 +834,13 @@ msgstr "12: :ref:`Basis<class_basis>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:249
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
-#, fuzzy
 msgid "The Z component of the X column vector, accessed via [0][2]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "X列向量的Z分量，可通过[0][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
-#, fuzzy
 msgid "The Z component of the Y column vector, accessed via [1][2]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Y列向量的Z分量，可通过[1][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
@@ -857,9 +849,8 @@ msgstr "28"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
-#, fuzzy
 msgid "The X component of the Z column vector, accessed via [2][0]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Z列向量的X分量，可通过[2][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:259
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
@@ -868,9 +859,8 @@ msgstr "32"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:259
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:284
-#, fuzzy
 msgid "The Y component of the Z column vector, accessed via [2][1]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Z列向量的Y分量，可通过[2][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
@@ -879,9 +869,8 @@ msgstr "36"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:261
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:286
-#, fuzzy
 msgid "The Z component of the Z column vector, accessed via [2][2]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "Z列向量的Z分量，可通过[2][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:265
 msgid "13: :ref:`Transform<class_transform>`"
@@ -892,27 +881,24 @@ msgid "40"
 msgstr "40"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:288
-#, fuzzy
 msgid "The X component of the origin vector, accessed via [3][0]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "原始向量的X分量，可通过[3][0]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
 msgid "44"
 msgstr "44"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:290
-#, fuzzy
 msgid "The Y component of the origin vector, accessed via [3][1]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "原点向量的Y分量，可通过[3][1]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
 msgid "48"
 msgstr "48"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:292
-#, fuzzy
 msgid "The Z component of the origin vector, accessed via [3][2]"
-msgstr "向量的各个组成部分可以直接通过名称访问。"
+msgstr "原点向量的Z分量，可通过[3][2]访问"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:296
 msgid "14: :ref:`Color<class_color>`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,28 +273,28 @@ msgstr "Armazenado como S3TC / BC, PVRTC / ETC, dependendo da plataforma"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Size on Disk"
-msgstr "Tamanho no disco"
+msgstr "Tamanho no Disco"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|bad| Large"
-msgstr "| mau | ampla"
+msgstr "|ruim| Ampla"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|regular| Small"
-msgstr "| regular | Pequeno"
+msgstr "|regular| Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "|good| Very Small"
-msgstr "bom | Muito pequeno"
+msgstr "|bom| Muito Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "Memory Usage"
-msgstr "Uso de memória"
+msgstr "Uso de Memória"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid "|good| Small"
-msgstr "bom | Pequeno"
+msgstr "|bom| Pequeno"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 msgid "Performance"
@@ -303,43 +303,42 @@ msgstr "Performance"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|regular| Normal"
-msgstr "| regular | Normal"
+msgstr "|regular| Normal"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:90
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|good| Fast"
-msgstr "bom | Rápido"
+msgstr "|bom | Rápido"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "Quality Loss"
-msgstr "Perda de qualidade"
+msgstr "Perda de Qualidade"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|good| None"
-msgstr "bom | Nenhum"
+msgstr "|bom| Nenhum"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|regular| Slight"
-msgstr "| regular | Leve"
+msgstr "|regular| Leve"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:92
 msgid "|bad| Moderate"
-msgstr "| mau | Moderado"
+msgstr "|ruim| Moderado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "Load Time"
-msgstr "Tempo de carregamento"
+msgstr "Tempo de Carregamento"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:94
 msgid "|bad| Slow"
-msgstr "| mau | Lento"
+msgstr "|ruim| Lento"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:104
 msgid "HDR Mode"
 msgstr "Modo HDR"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:106
-#, fuzzy
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
 "mostly useful as high dynamic range equirectangular panorama skies (the "
@@ -347,26 +346,25 @@ msgid ""
 "2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
 "that do not."
 msgstr ""
-"Godot suporta texturas de alta faixa dinâmica (como .HDR ou .EXR). Estes são "
-"principalmente úteis como skys boxes de alta faixa dinâmica (a internet tem "
-"muito se você procurar por eles), que substituem o Cubemaps no Godot 2.x. "
-"PCs modernos suportam o formato BC6H VRAM, mas ainda há muito que não."
+"O Godot suporta texturas de alta faixa dinâmica (como .HDR ou .EXR). Esses "
+"são principalmente úteis como céus panorâmicos equirretangulares (ou "
+"[i]skyboxes[/i]) de alta faixa dinâmica (a Internet tem muitos se você "
+"pesquisar por eles), que substituem Cubemaps no Godot 2.x. Os PCs modernos "
+"suportam o formato VRAM BC6H, mas ainda existem muitos que não suportam."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
-#, fuzzy
 msgid ""
 "If you want Godot to ensure full compatibility in terms of the kind of "
 "textures, enable the \"Force RGBE\" option."
 msgstr ""
-"Se você quiser que Godot garanta compatibilidade total para tipos de "
+"Se você quiser que o Godot garanta compatibilidade total para tipos de "
 "texturas, ative a opção \"Forçar RGBE\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:112
 msgid "Normal Map"
-msgstr "Mapa Normal"
+msgstr "Normal Map"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
-#, fuzzy
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
@@ -376,14 +374,14 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
-"Ao usar uma textura como mapa normal, somente os canais vermelho e verde são "
+"Ao usar uma textura como normal map, somente os canais vermelho e verde são "
 "necessários. Como os algoritmos de compactação de textura regulares produzem "
-"artefatos que não parecem tão bons em mapas normais, o formato de "
-"compactação RGTC é o melhor ajuste para esses dados. Forçar essa opção para "
-"\"Ativado\" fará com que Godot importe a imagem como RGTC compactada. Por "
-"padrão, ele é definido como \"Detectar\", o que significa que, se a textura "
-"for usada como um mapa normal, ela será alterada para \"Ativada\" e "
-"reimportada automaticamente."
+"artefatos que não parecem tão bons em normal maps, o formato de compactação "
+"RGTC é o melhor ajuste para esses dados. Forçar essa opção para \"Ativado\" "
+"fará com que o Godot importe a imagem como RGTC compactada. Por padrão, ele "
+"é definido como \"Detectar\", o que significa que, se a textura for usada "
+"como um normal map, ela será alterada para \"Ativada\" e reimportada "
+"automaticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:119
 msgid ""
@@ -402,6 +400,11 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"O Godot requer que o normal map use as coordenadas X+, Y- e Z+. Em outras "
+"palavras, se você importou um material feito para ser usado com outro motor, "
+"pode ser necessário converter o normal map para que seu eixo Y seja "
+"invertido. Caso contrário, a direção do normal map pode parecer estar "
+"invertida no eixo Y."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""
@@ -409,6 +412,9 @@ msgid ""
 "popular engines) can be found `here <http://wiki.polycount.com/wiki/"
 "Normal_Map_Technical_Details>`__."
 msgstr ""
+"Mais informações sobre normal maps (incluindo uma tabela de ordem de "
+"coordenadas para motores populares) podem ser encontradas `aqui (em Inglês) "
+"<http://wiki.polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:133
 msgid "Flags"
@@ -492,13 +498,13 @@ msgstr ""
 "telefone, desejar ter compatibilidade total e precisar de mipmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:160
-#, fuzzy
 msgid ""
 "When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
-"Ao fazer 3D, mipmap deve ser ativado, pois isso também melhora o desempenho "
-"(versões menores da textura são usadas para objetos mais distantes)."
+"Ao fazer 3D, o mipmap deve ser ativado, pois isso também melhora o "
+"desempenho (versões menores da textura são usadas para objetos mais "
+"distantes)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:163
 msgid "Anisotropic"
@@ -543,7 +549,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:179
 msgid "Fix Alpha Border"
-msgstr "Corrigir a borda de Alpha"
+msgstr "Corrigir Borda de Alfa"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:181
 msgid ""
@@ -565,7 +571,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:189
 msgid "Premultiplied Alpha"
-msgstr "Alpha pré-multiplicado"
+msgstr "Alfa previamente multiplicado"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:191
 msgid ""
@@ -574,7 +580,7 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
-"Uma alternativa para ajustar bordas escurecidas é usar alfa pré-"
+"Uma alternativa para ajustar bordas escurecidas é usar alfa previamente "
 "multiplicado. Habilitando esta opção, a textura será convertida para este "
 "formato. Lembre-se que um material que usa o modo de mistura PREMULT ALPHA "
 "nos itens da tela terá de ser criado para itens que precisam dele."
@@ -609,11 +615,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "Svg"
-msgstr ""
+msgstr "SVG"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:208
 msgid "Scale"
-msgstr "Scale"
+msgstr "Escala"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:210
 msgid ""
@@ -621,3 +627,6 @@ msgid ""
 "image. The default scale (1.0) will make the imported SVG match its original "
 "design scale."
 msgstr ""
+"Esta opção se aplica apenas a arquivos SVG. Ele controla a escala da imagem "
+"SVG. A escala padrão (1.0) fará com que o SVG importado corresponda à escala "
+"original do projeto."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,6 +148,9 @@ msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
 "keyframes indicates that the value hasn't changed."
 msgstr ""
+"Las formas de los diamantes representan fotogramas clave en la línea de "
+"tiempo. Una línea entre dos fotogramas clave indica que el valor no ha "
+"cambiado."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:71
 msgid "Keyframes in Godot"
@@ -441,6 +444,8 @@ msgid ""
 "Capture: The current value of a property is remembered, and it will blend "
 "with the first animation key found"
 msgstr ""
+"Captura: Se recuerda el valor actual de una propiedad, y se mezclará con la "
+"primera clave de animación encontrada"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:240
 msgid "Track mode"
@@ -532,13 +537,16 @@ msgstr ""
 #: ../../docs/tutorials/animation/introduction_2d.rst:280
 #: ../../docs/tutorials/animation/introduction_2d.rst:293
 msgid "Keyframes for other properties"
-msgstr ""
+msgstr "Los fotogramas clave para otras propiedades"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:282
 msgid ""
 "Godot doesn't restrict you to only edit transform properties. Every property "
 "can be used as a track where you can set keyframes."
 msgstr ""
+"Godot no te restringe a sólo editar las propiedades de transformación. Cada "
+"propiedad puede ser usada como una pista donde puedes establecer fotogramas "
+"clave."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:285
 msgid ""
@@ -553,7 +561,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:296
 msgid "Edit keyframes"
-msgstr ""
+msgstr "Editar fotogramas clave"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:298
 msgid ""
@@ -575,16 +583,22 @@ msgid ""
 "clicking and dragging the easing setting. This tells Godot, how to change "
 "the property values when it reaches this keyframe."
 msgstr ""
+"Además, también puede editar el valor de relajación para este fotograma "
+"clave haciendo clic y arrastrando el ajuste de relajación. Esto le dice a "
+"Godot, cómo cambiar los valores de la propiedad cuando llega a este "
+"fotograma clave."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:311
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
 msgstr ""
+"Normalmente se modifican las animaciones de esta manera, cuando el "
+"movimiento no se \"ve bien\"."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:315
 msgid "Advanced: Call Method tracks"
-msgstr ""
+msgstr "Avanzado: Método de llamada de pistas"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:317
 msgid ""
@@ -593,12 +607,18 @@ msgid ""
 "index` you know that each node type is a class and has a bunch of callable "
 "methods."
 msgstr ""
+"El motor de animación de Godot no se detiene aquí. Si ya te sientes cómodo "
+"con el lenguaje de scripts de Godot :ref:`doc_gdscript` y :doc:`/classes/"
+"index` sabes que cada tipo de nodo es una clase y tiene un montón de métodos "
+"llamables."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:323
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
 "play an audio stream."
 msgstr ""
+"Por ejemplo, el nodo de tipo :ref:`class_AudioStreamPlayer` tiene un método "
+"para reproducir un flujo de audio."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:326
 msgid ""
@@ -621,21 +641,31 @@ msgid ""
 "specific keyframe. Normally to play audio you should use an audio track, but "
 "for the sake of demonstrating methods we're going to do it this way."
 msgstr ""
+"Para demostrarlo, vamos a usar una pista del método de llamada para "
+"reproducir audio en un fotograma clave específico. Normalmente para "
+"reproducir audio se debe usar una pista de audio, pero para demostrar los "
+"métodos vamos a hacerlo de esta manera."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:336
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
 msgstr ""
+"Añade un :ref:`class_AudioStreamPlayer` al Árbol de Escenas y configura un "
+"stream usando un archivo de audio que pones en tu proyecto."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:339
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
 msgstr ""
+"Haz clic en \"Añadir pista\" (|Añadir pista|) en los controles de pista del "
+"panel de animación."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:342
 msgid "Select \"Add Call Method Track\" from the list of possible track types."
 msgstr ""
+"Selecciona \"Agregar pista de método de llamada\" de la lista de posibles "
+"tipos de pista."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:347
 msgid "Add Call Method Track"
@@ -646,10 +676,12 @@ msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
 msgstr ""
+"Selecciona el nodo :ref:`class_AudioStreamPlayer` en la ventana de "
+"selección. Godot añade la pista con la referencia al nodo."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:355
 msgid "Select AudioStreamPlayer"
-msgstr ""
+msgstr "Selecciona AudioStreamPlayer"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:357
 msgid ""
@@ -657,6 +689,10 @@ msgid ""
 "\"Insert Key\" option. This will bring up a list of methods that can be "
 "called for the AudioStreamPlayer node. Select the first one."
 msgstr ""
+"Haz clic con el botón derecho del ratón en la línea de tiempo donde Godot "
+"debe reproducir la muestra y haz clic en la opción \"Insertar Clave\". Esto "
+"hará que aparezca una lista de métodos que pueden ser llamados para el nodo "
+"AudioStreamPlayer. Selecciona el primero."
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:364
 msgid ""
@@ -671,3 +707,6 @@ msgid ""
 "You can change its position by dragging it on the timeline, you can also "
 "click on the keyframe and use the keyframe settings in the inspector."
 msgstr ""
+"Puedes cambiar su posición arrastrándola en la línea de tiempo, también "
+"puedes hacer clic en el fotograma clave y usar los ajustes del fotograma "
+"clave en el inspector."

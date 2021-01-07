@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
-msgstr ""
+msgstr "本頁列出了在使用 Godot 時會遇到的場景問題與可行的解決方案。"
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
-msgstr ""
+msgstr "我在編輯器與專案管理員中做任何事情感覺都慢了一幀。"
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -39,6 +39,9 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"這個問題是 Windows 上 Intel 圖形驅動程式的 `已知 Bug <https://github.com/"
+"godotengine/godot/issues/23069>`__ 。請將顯示卡驅動程式的版本更新到 **Intel "
+"提供的** 最新版本，應該就能解決。"
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -46,18 +49,22 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"請使用由 Intel 提供的顯示卡驅動程式，而不要使用主機或筆電製造商提供的程式，因"
+"為通常版本都很舊。"
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
-msgstr ""
+msgstr "在編輯器中旋轉 3D 相機時，柵欄不見了，網格也變成了全黑。"
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"這是 Windows 上 Intel 圖形顯示卡的一個 `已知 Bug <https://github.com/"
+"godotengine/godot/issues/30330>`__ 。"
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -65,16 +72,20 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"目前唯一的臨時解決方案，就只有將算繪引擎改成 GLES2。可以從編輯器的右上角切換"
+"算繪引擎，或是在 [專案設定] 中更改。"
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"如果使用的電腦允許切換顯示卡，如 NVIDIA Optimus，則可以使用合適的顯示卡來執"
+"行 Godot。"
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "編輯器或專案花了很多時間才打開。"
 
 #: ../../docs/about/troubleshooting.rst:34
 msgid ""
@@ -85,10 +96,15 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"這是在 Windows 上的一個 `已知 Bug <https://github.com/godotengine/godot/"
+"issues/20566>`__ ，會發生在有連接到特定 USB 週邊設備時。特別是 Corsair 的 "
+"iCUE 軟體似乎會導致這個問題。請試著更新這些 USB 週邊設備的驅動程式至最新版"
+"本。若仍然遇到此 Bug，則必須在開啟編輯器時先斷開有問題的週邊設備。開啟後即可"
+"重新接上。"
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "點擊系統主控台後，Godot 編輯器沒有回應。"
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -98,16 +114,19 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"在 Windows 上啟用系統主控台時執行 Godot，可能會不小心在命令視窗內因點擊而啟用"
+"了 **選擇模式** 。這個行為只會發生在 Windows 上，會暫停應用程式來讓使用者可選"
+"擇系統主控台內的文字。Godot 無法複寫此一系統特定的行為。"
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
-msgstr ""
+msgstr "要解決此問題，請選擇系統主控台視窗，並按一下 Enter 鍵來離開選擇模式。"
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "專案視窗看起來很模式，編輯器則不會。"
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -115,6 +134,8 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"專案視窗與編輯器不同，預設情況下不會依據 DPI 做調整。這個特性是為了提升效能，"
+"特別是內顯在 hiDPI 下算繪 3D 場景時很慢。"
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -122,10 +143,13 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"要解決此問題，請開啟 **[專案] > [專案設定]** 並啟用 **[Display] > [Window] > "
+"[Dpi] > [Allow Hidpi]** 。除此之外，請確保專案有設定好 :ref:`多解析度 "
+"<doc_multiple_resolutions>` 支援。"
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "執行專案時，專案視窗沒有顯示在正中間。"
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -134,12 +158,16 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"這是一個 `已知的 Bug <https://github.com/godotengine/godot/"
+"issues/13017>`__ 。要解決此問題，請開啟 **[專案] > [專案設定]** 並啟用 "
+"**[Display] > [Window] > [Dpi] > [Allow Hidpi]** 。除此之外，請確保專案有設定"
+"好 :ref:`多解析度 <doc_multiple_resolutions>` 支援。"
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
-msgstr ""
+msgstr "專案可以從編輯器裡執行，但是從匯出的版本執行時無法載入某些檔案。"
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -150,6 +178,11 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"這個問題通常時因為忘記在 [匯出] 對話框中為非資源檔案指定篩選器導致的。預設情"
+"況下，Godot 只會將真正的 **資源 (Resource)** 打包進 PCK 檔案內。有些常用的檔"
+"案，如 JSON 檔，並不屬於資源。舉例來說，若在匯出的專案中載入 ``test.json`` ，"
+"則需要在非資源匯出篩選器內指定 ``*.json`` 。更多資訊請參考 :ref:"
+"`doc_exporting_projects_export_mode` 。"
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -160,3 +193,7 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"而在 Windows 上，這個問題還可能是因為 :ref:`大小寫區分 "
+"<doc_project_organization_case_sensitivity>` 問題導致的。若在腳本中以與檔案系"
+"統不同的大小寫來參照資源，則匯出專案之後就會載入失敗。這是因為虛擬 PCK 檔案系"
+"統是有區分大小寫的，而 Windows 的檔案系統則預設不區分大小寫。"

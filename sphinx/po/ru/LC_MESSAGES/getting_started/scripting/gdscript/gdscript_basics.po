@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,18 +229,16 @@ msgid "class"
 msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "Объявляет класс."
+msgstr "Определяет внутренний класс."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
-#, fuzzy
 msgid "class_name"
-msgstr "class"
+msgstr "class_name"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "Привязка названия класса и необязательной иконки для вашего скрипта."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -687,9 +685,8 @@ msgid "Base 10 integer"
 msgstr "Целое число в десятичной системе счисления"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
-#, fuzzy
 msgid "``0x8f51``"
-msgstr "``0x8F51``"
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 16 (hexadecimal) integer"
@@ -748,6 +745,8 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
+"Типы данных int и float могут объявляться с номерами, разделёнными ``_``, "
+"для удобочитаемого вида. Допустимы следующие способы записи чисел::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
@@ -962,13 +961,12 @@ msgid ":ref:`Vector2 <class_Vector2>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
-#, fuzzy
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as an "
 "array."
 msgstr ""
-"2D вектор, содержащий поля ``x`` и ``y``. Также может быть доступен как "
-"массив."
+"2D-векторный тип, содержащий поля ``x`` и ``y``. Также может быть доступен "
+"как массив."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -1000,9 +998,8 @@ msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
-#, fuzzy
 msgid "3×2 matrix used for 2D transforms."
-msgstr "Матрица 3x2, используемая для двумерных преобразований."
+msgstr "Матрица 3x2, используемая для 2D-преобразований."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:425
 msgid ":ref:`Plane <class_Plane>`"
@@ -1381,10 +1378,16 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"Константы — это значения, которые не меняются в ходе игры. Они должны быть "
+"известны на этапе компиляции. Используя ключевое слово ``const``, вам "
+"разрешается присвоить константное значение переменной. Повтор этого трюка с "
+"уже объявленной константой — вызовет ошибку."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
 msgstr ""
+"Мы рекомендуем использовать константы там, где подразумевается неизменность "
+"их значений."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -1688,19 +1691,16 @@ msgid "Constant primitives, like numbers and strings::"
 msgstr "Постоянные (константные) примитивы, такие как числа и строки ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
-#, fuzzy
 msgid "Variable pattern"
-msgstr "переменный шаблон"
+msgstr "Шаблон переменной"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:928
-#, fuzzy
 msgid "Matches the contents of a variable/enum::"
-msgstr "подбор содержимого переменной/перечисления(enum) ::"
+msgstr "Соответствует содержимому переменной/перечисления(enum)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
-#, fuzzy
 msgid "Wildcard pattern"
-msgstr "шаблон подстановки"
+msgstr "Шаблон подстановки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
 msgid "This pattern matches everything. It's written as a single underscore."
@@ -1759,14 +1759,12 @@ msgstr ""
 "последнюю подшаблонку ``..``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
-#, fuzzy
 msgid "Every subpattern has to be comma-separated."
 msgstr "Каждый подшаблон должен быть разделен запятыми."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1012
-#, fuzzy
 msgid "Dictionary pattern"
-msgstr "шаблон словаря"
+msgstr "Шаблон словаря"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:988
 msgid ""
@@ -1889,43 +1887,38 @@ msgid "Multiple inheritance is not allowed."
 msgstr "Множественное наследование невозможно."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1095
-#, fuzzy
 msgid "Inheritance uses the ``extends`` keyword::"
-msgstr "Наследование использует ключевое слово ``extends``:"
+msgstr "При наследовании использует ключевое слово ``extends``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
-#, fuzzy
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
-"Для проверки что текущий экземпляр наследуется от заданного класса может "
-"быть использовано ключевое слово ``is``:"
+"Чтобы проверить, наследуется ли данный экземпляр от данного класса, можно "
+"использовать ключевое слово ``is``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
-#, fuzzy
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
 msgstr ""
-"Для вызова функции в *базовом классе* (т.е. функции ``extend`` (расширения) "
-"в текущем классе), добавьте ``.`` к имени функции:"
+"Чтобы вызвать функцию, находящуюся в *родительском классе* (т.е. функцию "
+"``extend``-класса в текущем классе), добавьте ``.`` к имени функции:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1124
-#, fuzzy
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
 "call them, you can prefix them with ``.`` (like the ``super`` keyword in "
 "other languages)::"
 msgstr ""
-"Это особенно полезно, так как функции при расширении классов заменяют "
-"одноименные функции в своих базовых классах. Так что если вы все еще хотите "
-"обратится к ним, вы можете использовать ``.`` как ключевое слово ``super`` в "
-"других языках:"
+"Это особенно полезно, поскольку функции в классах-потомках заменяют "
+"(переопределяют) функции с тем же именем в своих родительских классах. Если "
+"вы хотите вызвать функцию из класса-родителя, вызывайте их, поставив ``.`` "
+"перед именем функции (как и ключевое слово super в других языках):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
-#, fuzzy
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -1935,25 +1928,24 @@ msgstr ""
 "Помните, что функции по умолчанию, такие как  ``_init``, и большинство "
 "уведомлений (notifications), таких как ``_enter_tree``, ``_exit_tree``, "
 "``_process``, ``_physics_process`` и др. вызываются во всех базовых классах "
-"автоматически. Таким образом, существует необходимость только явного вызова "
-"функции при некоторой их перегрузке."
+"автоматически. А значит, нет необходимости вызывать их вручную при "
+"перегрузке этих функций."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid "Class Constructor"
 msgstr "Конструктор класса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1141
-#, fuzzy
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
 "automatically when inheriting a class. So, there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"Конструктор класса вызывается при создании экземпляра класса "
-"(инстанциировании) и называется ``_init``. Как говорилось ранее, конструктор "
-"класса-родителя вызывается автоматически, когда происходит наследование. "
-"Таким образом, необходимости вызывать ``._init`` вручную обычно нет."
+"Конструктор класса, вызываемый при создании экземпляра класса, "
+"называется``_init``. Как упоминалось ранее, конструкторы родительских "
+"классов вызываются автоматически при наследовании класса. Таким образом, "
+"обычно нет необходимости явно вызывать .``_init ()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 #, fuzzy
@@ -2004,7 +1996,6 @@ msgstr ""
 "является тем же ``e`` переданным в ``Idle.gd``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1184
-#, fuzzy
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -2012,9 +2003,9 @@ msgid ""
 "constructor as well, not just variables. eg.::"
 msgstr ""
 "если конструктор ``_init`` в ``Idle.gd`` принимает ноль аргументов, то ему "
-"все равно нужно передать некоторое значение в базовый класс ``State.gd``, "
-"даже если он ничего не делает. Что подводит нас к тому, что литералы можно "
-"передавать не только переменным, но и в базовом конструкторе. Например.:"
+"все равно нужно передать некоторое значение в родительский класс ``State."
+"gd``, даже если он ничего не делает. Что подводит нас к тому, что литералы "
+"можно передавать не только переменным, но и в базовом конструкторе. Например:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
 msgid "Inner classes"
@@ -2425,6 +2416,12 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
@@ -2433,7 +2430,7 @@ msgstr ""
 "нет, или может ли он вернуться несколько раз, вы можете привести "
 "промежуточный результат к сигналу ``completed`` через условие:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 #, fuzzy
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
@@ -2447,11 +2444,11 @@ msgstr ""
 "`completed`` посылается только тогда, когда у функции больше не остается "
 "промежуточных возвратов."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Ключевое слово Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 #, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
@@ -2464,7 +2461,7 @@ msgstr ""
 "входе в активное дерево сцен, суб-узлы могут быть получены только при вызове "
 "функции Node._ready()."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2476,11 +2473,11 @@ msgstr ""
 "откладывает инициализацию входящей переменной до вызова ``_ready()``. Он "
 "может заменить приведенный выше код одной строкой:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Ключевое слово Assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2497,7 +2494,7 @@ msgstr ""
 "противном случае поведение скрипта в отладочной и релизной сборке будет "
 "различаться."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

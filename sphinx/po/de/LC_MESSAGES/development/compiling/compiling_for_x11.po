@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,10 +52,12 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_x11.rst:21
 msgid "pkg-config (used to detect the dependencies below)."
 msgstr ""
+"pkg-config (wird verwendet, um die unten aufgeführten Abhängigkeiten zu "
+"erkennen)."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:22
 msgid "X11, Xcursor, Xinerama, Xi and XRandR development libraries."
-msgstr ""
+msgstr "X11, Xcursor, Xinerama, Xi und XRandR Entwicklungsbibliotheken."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:23
 msgid "MesaGL development libraries."
@@ -71,11 +73,11 @@ msgstr "PulseAudio Entwicklungsbibliotheken."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:26
 msgid "*Optional* - libudev (build with ``udev=yes``)."
-msgstr ""
+msgstr "*Optional* - libudev (Build mit ``udev=yes``)."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:27
 msgid "*Optional* - yasm (for WebM SIMD optimizations)."
-msgstr ""
+msgstr "*Optional* - yasm (für WebM SIMD-Optimierungen)."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:29
 msgid ""
@@ -126,13 +128,13 @@ msgid "**openSUSE**"
 msgstr "**openSUSE**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:82
-#, fuzzy
 msgid "**NetBSD**"
-msgstr "**FreeBSD**"
+msgstr "**NetBSD**"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:86
 msgid "For audio support, you can optionally install ``pulseaudio``."
 msgstr ""
+"Für Audio-Unterstützung können Sie optional ``pulseaudio`` installieren."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:88
 msgid "**Solus**"
@@ -167,12 +169,16 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_x11.rst:114
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
+"Wenn Sie nicht mit GCC, sondern mit Clang kompilieren möchten, verwenden Sie "
+"diesen Befehl:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
+"Die Verwendung von Clang scheint eine Voraussetzung für OpenBSD zu sein, da "
+"sonst keine Schriftarten erstellt werden."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:123
 msgid ""
@@ -198,7 +204,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:138
 msgid "Compiling a headless/server build"
-msgstr ""
+msgstr "Kompilieren eines Headless/Server-Builds"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:140
 msgid ""
@@ -211,10 +217,12 @@ msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
+"Um einen *Server*-Build zu kompilieren, der für den Betrieb von dedizierten "
+"Spielservern optimiert ist, benutzen Sie:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:151
 msgid "Building export templates"
-msgstr ""
+msgstr "Exportvorlagen erstellen"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:153
 msgid ""
@@ -251,6 +259,8 @@ msgstr ""
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
+"Um Standardexportvorlagen zu erstellen, müssen die resultierenden Dateien "
+"kopiert werden nach:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:187
 msgid ""
@@ -274,7 +284,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:207
 msgid "Using Clang and LLD for faster development"
-msgstr ""
+msgstr "Nutzen Sie Clang und LLD für eine schnellere Entwicklung"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:209
 msgid ""
@@ -290,7 +300,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:214
 msgid "Clang tends to give more useful error messages compared to GCC."
-msgstr ""
+msgstr "Clang gibt im Vergleich zu GCC nützlichere Fehlermeldungen."
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:216
 msgid ""

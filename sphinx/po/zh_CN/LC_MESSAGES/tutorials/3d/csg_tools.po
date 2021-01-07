@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,9 +196,8 @@ msgid "it must not contain internal faces,"
 msgstr "它不得包含内部面"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:89
-#, fuzzy
 msgid "every edge must connect to only two other faces."
-msgstr "每条边都必须连接到另外两个面"
+msgstr "每条边都必须连接到另外两个面。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:94
 msgid "CSGCombiner"
@@ -307,9 +306,8 @@ msgid "Next, create a CSGCombiner and name it ``desk``."
 msgstr "接下来，创建一个CSGCombiner并将其命名为 ``desk`` 。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:147
-#, fuzzy
 msgid "A desk has one surface and 4 legs:"
-msgstr "桌子有一个表面和四条腿。"
+msgstr "桌子有一个表面和四条腿："
 
 #: ../../docs/tutorials/3d/csg_tools.rst:149
 #, fuzzy
@@ -397,11 +395,10 @@ msgstr ""
 "节点是操作的结束，这表示使用 ``CSGCombiner`` 来组织CSG场景。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:193
-#, fuzzy
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "观察效果后撤消重新父母。"
+msgstr "观察效果后，撤消重新选择父节点。您搭建的床应如下所示："
 
 #: ../../docs/tutorials/3d/csg_tools.rst:198
 #, fuzzy

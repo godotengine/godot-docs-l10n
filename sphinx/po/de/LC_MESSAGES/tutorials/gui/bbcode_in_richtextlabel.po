@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,6 +66,8 @@ msgid ""
 "For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
 "\" with a blue color."
 msgstr ""
+"Zum Beispiel würde ``BBCode [color=blue]blau[/color]`` das Wort \"blau\" mit "
+"einer blauen Farbe rendern."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid ""
@@ -85,6 +87,8 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "There are no BBCode tags to control vertical centering of text yet."
 msgstr ""
+"Es gibt noch keine BBCode-Tags zur Steuerung der vertikalen Zentrierung von "
+"Text."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:50
 msgid "Reference"
@@ -160,7 +164,7 @@ msgstr "``[code]{text}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "Makes {text} use the code font (which is typically monospace)."
-msgstr ""
+msgstr "Lässt {text} die Code-Schriftart verwenden (normalerweise Monospace)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "**center**"
@@ -171,9 +175,8 @@ msgid "``[center]{text}[/center]``"
 msgstr "``[center]{text}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
-#, fuzzy
 msgid "Makes {text} horizontally centered."
-msgstr "zeigt {text} zentriert"
+msgstr "zeigt {Text} horizontal zentriert."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "**right**"
@@ -184,9 +187,8 @@ msgid "``[right]{text}[/right]``"
 msgstr "``[right]{text}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
-#, fuzzy
 msgid "Makes {text} horizontally right-aligned."
-msgstr "zeigt {text} rechtsbündig"
+msgstr "zeigt {text} horizontal rechtsbündig."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "**fill**"
@@ -198,7 +200,7 @@ msgstr "``[fill]{text}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "Makes {text} fill the RichTextLabel's width."
-msgstr ""
+msgstr "Lässt {Text} die Breite des RichTextLabels ausfüllen."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "**indent**"
@@ -210,7 +212,7 @@ msgstr "``[indent]{text}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "Increase the indentation level of {text}."
-msgstr ""
+msgstr "Erhöht die Einrückungsstufe von {text}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "**url**"
@@ -222,7 +224,7 @@ msgstr "``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "Show {url} as such, underline it and make it clickable."
-msgstr ""
+msgstr "Zeigt {url} als solches an, unterstreicht es und macht es anklickbar."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "**url (ref)**"
@@ -234,7 +236,7 @@ msgstr "``[url=<url>]{text}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "Makes {text} reference <url> (underlined and clickable)."
-msgstr ""
+msgstr "Lässt {text} auf <url> verweisen (unterstrichen und anklickbar)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "**image**"
@@ -246,7 +248,7 @@ msgstr "``[img]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "Insert image at resource {path}."
-msgstr ""
+msgstr "Bild an Ressource {Pfad} einfügen."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
@@ -260,6 +262,8 @@ msgstr "``[img=<width>]{path}[/img]``"
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "Insert image at resource {path} using <width> (keeps ratio)."
 msgstr ""
+"Fügen Sie mit <width> ein Bild an der Ressource {path} ein (behält das "
+"Verhältnis bei)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "``[img=<width>x<height>]{path}[/img]``"
@@ -267,7 +271,7 @@ msgstr "``[img=<width>x<height>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "Insert image at resource {path} using <width>×<height>."
-msgstr ""
+msgstr "Bild an der Ressource {Pfad} mit <Breite>×<Höhe> einfügen."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "**font**"
@@ -290,7 +294,6 @@ msgid "``[color=<code/name>]{text}[/color]``"
 msgstr "``[color=<code/name>]{text}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
-#, fuzzy
 msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
 msgstr "ändert {text} Farbe; verwende Name oder #Format, z.B. #ff00ff"
 
@@ -411,11 +414,13 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:122
 msgid "Image vertical offset"
-msgstr ""
+msgstr "Vertikaler Bildversatz (Offset)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:124
 msgid "You use a custom font for your image in order to align it vertically."
 msgstr ""
+"Verwenden Sie eine benutzerdefinierte Schriftart für Ihr Bild, um es "
+"vertikal auszurichten."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:126
 msgid "Create a ``BitmapFont`` resource"
@@ -432,6 +437,8 @@ msgid ""
 "Set the BBCode tag this way: ``[font=<font-path>][img]{image-path}[/img][/"
 "font]``"
 msgstr ""
+"Setzen Sie den BBCode-Tag wie folgt: ``[font=<font-path>][img]{image-path}[/"
+"img][/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
 msgid "Animation effects"
@@ -554,6 +561,8 @@ msgid ""
 "``absolute_index`` tells you how far into the entire text you are as an "
 "index."
 msgstr ""
+"Der ``absolute_index`` sagt Ihnen als Index, wie weit Sie sich im gesamten "
+"Text befinden."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,6 +81,8 @@ msgstr ""
 msgid ""
 "Since the scale is logarithmic, true zero (no audio) can't be represented."
 msgstr ""
+"Da die Skala logarithmisch ist, kann der wahre Nullpunkt (kein Ton) nicht "
+"dargestellt werden."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:31
 msgid ""
@@ -118,7 +120,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:50
 msgid "Audio buses can be found in the bottom panel of the Godot editor:"
-msgstr ""
+msgstr "Audiobusse finden Sie im unteren Bereich des Godot-Editors:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:54
 msgid ""
@@ -334,16 +336,15 @@ msgid "Distortion"
 msgstr "Distortion (Verzerrung)"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:161
-#, fuzzy
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
 "*overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate "
 "sound coming through a low-quality speaker or device."
 msgstr ""
-"Verzerrungseffekte machen den Sound \"schmutzig\". Godot bietet verschiedene "
-"Arten von Verzerrungen an: *Overdrive*, *Tan* und *Bit Crushing*. Verzerrung "
-"kann verwendet werden, um einen Ton zu simulieren, der über einen "
-"Lautsprecher oder ein Gerät mit geringer Qualität kommt."
+"Verfälscht den Klang, bzw. verzerrt ihn. Godot bietet verschiedene Arten von "
+"Verzerrungen an: *Overdrive*, *Tan* und *Bit Crushing*. Die Verzerrung kann "
+"verwendet werden, um den Ton zu simulieren, der über einen Lautsprecher oder "
+"ein Gerät mit geringer Qualität kommt."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "EQ"
@@ -389,28 +390,24 @@ msgstr ""
 "werden sollte."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:185
-#, fuzzy
 msgid "HighPassFilter"
-msgstr "HighPassFilter, HighShelfFilter"
+msgstr "HighPassFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:187
-#, fuzzy
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
 "to reduce the bass content of a signal."
 msgstr ""
-"Dies sind Filter, die Frequenzen unter eine bestimmte *Grenzfrequenz* "
-"schneiden. HighPassFilter und HighShelfFilter werden verwendet, um den "
-"Bassinhalt eines Signals zu reduzieren."
+"Schneidet Frequenzen unter eine bestimmte *Grenzfrequenz* ab. HighPassFilter "
+"wird verwendet, um den Bassinhalt eines Signals zu reduzieren."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:192
-#, fuzzy
 msgid "HighShelfFilter"
-msgstr "HighPassFilter, HighShelfFilter"
+msgstr "HighShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
-msgstr ""
+msgstr "Reduziert alle Frequenzen oberhalb einer bestimmten *Cutoff*-Frequenz."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:199
 msgid "Limiter"
@@ -428,33 +425,30 @@ msgstr ""
 "schützt vor Übersteuerungen."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:206
-#, fuzzy
 msgid "LowPassFilter"
-msgstr "Filter"
+msgstr "LowPassFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:208
-#, fuzzy
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
 "(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
 "used to simulate \"muffled\" sound. For instance, underwater sounds, sounds "
 "blocked by walls, or distant sounds."
 msgstr ""
-"Dies sind die am häufigsten verwendeten Filter. Sie schneiden Frequenzen "
-"über einer bestimmten *Grenzfrequenz* und können auch mitschwingen (Boost-"
-"Frequenzen nahe der *Grenzfrequenz*). Tiefpassfilter können verwendet "
-"werden, um \"gedämpften\" Klang zu simulieren. Zum Beispiel "
+"Schneidet Frequenzen über einer bestimmten *Grenzfrequenz* ab und kann auch "
+"mitschwingen (Boost-Frequenzen nahe der *Grenzfrequenz*). Tiefpassfilter "
+"können verwendet werden, um \"gedämpften\" Klang zu simulieren, z.B. "
 "Unterwassergeräusche, durch Wände blockierte Geräusche oder entfernte "
 "Geräusche."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:214
-#, fuzzy
 msgid "LowShelfFilter"
-msgstr "LowPassFilter, LowShelfFilter"
+msgstr "LowShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:216
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
+"Reduziert alle Frequenzen unterhalb einer bestimmten *Cutoff*-Frequenz."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:219
 msgid "NotchFilter"
@@ -618,3 +612,6 @@ msgid ""
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "
 "loaded from disk."
 msgstr ""
+"Das Standard Buslayout wird automatisch in der Datei ``res://"
+"default_bus_layout.tres`` gespeichert. Benutzerdefinierte Busanordnungen "
+"können gespeichert und von der Festplatte geladen werden."

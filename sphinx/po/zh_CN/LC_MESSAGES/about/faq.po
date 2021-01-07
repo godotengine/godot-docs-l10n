@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -448,7 +448,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "为什么Godot使用Vulkan/OpenGL而不是Direct3D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -458,6 +458,9 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot的首要目标是实现跨平台兼容性和开放标准。 OpenGL和Vulkan是在所有平台上都"
+"开放且几乎可用的技术。 由于这一设计决定，在Windows上使用Godot开发的项目在"
+"Linux，macOS等平台上同样可用。"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -466,6 +469,8 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"由于只有少数人开发Godot的渲染器，我们更倾向于只有少数几个渲染后端需要维护。在"
+"此之上，所有平台使用单一的API，这样可以有更好的一致性和很少的平台特定的问题。"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -473,6 +478,8 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"未来一段时间后, 我们可能会为Godot开发一个Direct3D 12渲染器(主要面向Xbox)，但"
+"是Vulkan和OpenGL将仍然是包括Windows在内的所有平台的默认渲染后端。"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -603,16 +610,14 @@ msgstr ""
 "Godot中的第一步。"
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "下一个版本什么时候出来？"
+msgstr "Godot的下一个版本什么时候发布？"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr "详情见 :ref:`doc_running_code_in_the_editor`。"
+msgstr "当它准备好的时候！详情见 :ref:`doc_running_code_in_the_editor`。"
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"

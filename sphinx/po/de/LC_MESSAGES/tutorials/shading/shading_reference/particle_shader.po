@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr "**keep_data**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:32
 msgid "Do not clear previous data on restart."
-msgstr ""
+msgstr "Löschen Sie beim Neustart keine vorherigen Daten."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "**disable_force**"
@@ -92,7 +92,7 @@ msgstr "**disable_force**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:34
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr ""
+msgstr "Anziehungskraft abschalten. (Derzeit nicht implementiert in 3.1)"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "**disable_velocity**"
@@ -100,12 +100,11 @@ msgstr "**disable_velocity**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:36
 msgid "Ignore **VELOCITY** value."
-msgstr ""
+msgstr "Ignoriert den Wert **VELOCITY**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
-#, fuzzy
 msgid "Built-ins"
-msgstr "Eingebaute Typen"
+msgstr "integrierte Elemente"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:42
 msgid ""
@@ -114,20 +113,26 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"Mit \"in\" gekennzeichnete Werte sind schreibgeschützt. Mit \"out\" "
+"gekennzeichnete Werte dienen zum optionalen Schreiben und enthalten nicht "
+"unbedingt sinnvolle Werte. Als \"inout\" gekennzeichnete Werte stellen einen "
+"sinnvollen Standardwert dar und können optional beschrieben werden. Sampler "
+"können nicht geschrieben werden und sind nicht markiert."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
-#, fuzzy
 msgid "Global built-ins"
-msgstr "eingebaute Fragmente-Typen"
+msgstr "Global integrierte Elemente"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:50
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
+"Globale integrierte Elemente sind überall verfügbar, einschließlich "
+"benutzerdefinierter Funktionen."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "integriert"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:55
 msgid "in float **TIME**"
@@ -139,7 +144,7 @@ msgstr "Globale Zeit in Sekunden."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:59
 msgid "Vertex built-ins"
-msgstr "eingebaute Eckpunkt-Typen"
+msgstr "integrierte Vertex-Elemente"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:61
 msgid ""
@@ -156,6 +161,8 @@ msgstr "inout vec4 **COLOR**"
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
 msgstr ""
+"Partikelfarbe, kann in die Vertexfunktion des Mesh geschrieben und darauf "
+"zugegriffen werden."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "inout vec3 **VELOCITY**"
@@ -163,7 +170,7 @@ msgstr "inout vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:69
 msgid "Particle velocity, can be modified."
-msgstr ""
+msgstr "Partikelgeschwindigkeit, kann geändert werden."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "out float **MASS**"
@@ -172,6 +179,7 @@ msgstr "out float **MASS**"
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:71
 msgid "Particle mass, use for attractors (not implemented in 3.1)."
 msgstr ""
+"Partikelmasse, Verwendung für Attraktoren (in 3.1 nicht implementiert)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "inout bool **ACTIVE**"
@@ -179,7 +187,7 @@ msgstr "inout bool **ACTIVE**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:73
 msgid "``true`` when Particle is active, can be set to ``false``."
-msgstr ""
+msgstr "``wahr``, wenn Partikel aktiv ist, kann auf ``falsch`` gesetzt werden."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:75
 msgid "in bool **RESTART**"
@@ -198,6 +206,8 @@ msgstr "inout vec4 **CUSTOM**"
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
+"Benutzerdefinierte Partikeldaten. Zugänglich vom Shader des Mesh als "
+"**INSTANCE_CUSTOM**."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:79
 msgid "inout mat4 **TRANSFORM**"
@@ -229,7 +239,7 @@ msgstr "in uint **NUMBER**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:85
 msgid "Unique number since emission start."
-msgstr ""
+msgstr "Eindeutige Nummer seit Emissionsbeginn."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "in int **INDEX**"
@@ -237,7 +247,7 @@ msgstr "in int **INDEX**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:87
 msgid "Particle index (from total particles)."
-msgstr ""
+msgstr "Partikelindex (aus Gesamtpartikeln)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "in mat4 **EMISSION_TRANSFORM**"
@@ -245,7 +255,7 @@ msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:89
 msgid "Emitter transform (used for non-local systems)."
-msgstr ""
+msgstr "Emitter-Transformation (wird für nicht-lokale Systeme verwendet)."
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "in uint **RANDOM_SEED**"
@@ -253,4 +263,4 @@ msgstr "in uint **RANDOM_SEED**"
 
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:91
 msgid "Random seed used as base for random."
-msgstr ""
+msgstr "Zufälliger Startwert, der als Basis für random verwendet wird."

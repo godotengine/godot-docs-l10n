@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,14 +128,13 @@ msgid "Player scene"
 msgstr "Player 場景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"第一個場景，我們要來定義 ``Player`` 物件。把玩家做成獨立場景的好處是：就算遊"
-"戲其他部分還沒做好，也可以獨立測試單一場景。"
+"第一個場景，我們要來定義 ``Player`` 物件。把玩家做成獨立一個 Player 場景的好"
+"處是：就算遊戲其他部分還沒做好，也可以獨立測試單一場景。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -344,8 +343,8 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
-"使用 C# 時，若要看到新匯出的變數或訊號，就需要建構或重新建構專案。要重新建構"
-"專案可以手動點擊編輯器視窗底部的 [Mono] 文字來打開 Mono 面板，然後點擊 [建構"
+"使用 C# 時，若要看到新匯出的變數或訊號，就需要建置或重新建置專案。要重新建置"
+"專案可以手動點擊編輯器視窗底部的 [Mono] 文字來打開 Mono 面板，然後點擊 [建置"
 "專案] 按鈕。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:208
@@ -828,15 +827,14 @@ msgid "Main scene"
 msgstr "Main（主要）場景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
 "現在該把所有東西都組合在一起了。先建立一個新的場景，並新增一個名稱為 "
-"``Main`` 的 :ref:`Node <class_Node>` 。點擊「實體化」按鈕並選擇稍早保存的 "
-"``Player.tscn`` 。"
+"``Main`` 的 :ref:`Node <class_Node>` 。請確認一下建立的是 Node，**而不是** "
+"Node2D。點擊 [實體化] 按鈕並選擇稍早保存的 ``Player.tscn`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""

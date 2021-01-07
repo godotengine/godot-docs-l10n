@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,10 @@ msgid ""
 "animating thousands of fish using vertex animation and static mesh "
 "instancing."
 msgstr ""
+"Este tutorial explora una técnica usada en el juego `ABZU <https://www."
+"gdcvault.com/play/1024409/Creating-the-Art-of-ABZ>`_ para renderizar y "
+"animar miles de peces usando animación de vértices e instanciación estática "
+"de malla."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:10
 msgid ""
@@ -36,12 +40,18 @@ msgid ""
 "Using the following technique you can render thousands of animated objects, "
 "even on low end hardware."
 msgstr ""
+"En Godot, esto se puede lograr con un personalizado :ref:`Shader "
+"<class_Shader>` y una :ref:`MultiMeshInstance <class_MultiMeshInstance>`. "
+"Usando la siguiente técnica puedes renderizar miles de objetos animados, "
+"incluso en hardware de gama baja."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:14
 msgid ""
 "We will start by animating one fish. Then, we will see how to extend that "
 "animation to thousands of fish."
 msgstr ""
+"Empezaremos animando a un pez. Luego, veremos cómo extender esa animación a "
+"miles de peces."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
 msgid "Animating one Fish"
@@ -53,12 +63,17 @@ msgid ""
 "`MeshInstance <class_MeshInstance>` and add a new :ref:`ShaderMaterial "
 "<class_ShaderMaterial>`."
 msgstr ""
+"Empezaremos con un solo pez. Carga tu modelo de pez en un :ref:`MeshInstance "
+"<class_MeshInstance>` y añade un nuevo :ref:`ShaderMaterial "
+"<class_ShaderMaterial>`."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:23
 msgid ""
 "Here is the fish we will be using for the example images, you can use any "
 "fish model you like."
 msgstr ""
+"Aquí está el pez que usaremos para las imágenes de ejemplo, puedes usar "
+"cualquier modelo de pez que quieras."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:27
 msgid ""
@@ -67,6 +82,10 @@ msgid ""
 "1.0) Public Domain Dedication https://creativecommons.org/publicdomain/"
 "zero/1.0/"
 msgstr ""
+"El modelo de pez en este tutorial está hecho por `QuaterniusDev <http://"
+"quaternius.com>`_ y se comparte con una licencia creative commons. CC0 1.0 "
+"Universal (CC0 1.0) Public Domain Dedication https://creativecommons.org/"
+"publicdomain/zero/1.0/"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:31
 msgid ""
@@ -77,26 +96,32 @@ msgid ""
 "shader, you avoid using bones and can instead calculate the full animation "
 "in a few lines of code and completely on the GPU."
 msgstr ""
+"Típicamente, usarías huesos y un :ref:`Skeleton <class_Skeleton>` para "
+"animar objetos. Sin embargo, los huesos se animan en la CPU y así terminas "
+"teniendo que calcular miles de operaciones en cada fotograma y se hace "
+"imposible tener miles de objetos. Usando la vertex animation en un vertex "
+"sharder, evitas usar huesos y puedes en cambio calcular la animación "
+"completa en unas pocas líneas de código y completamente en la GPU."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:37
 msgid "The animation will be made of four key motions:"
-msgstr ""
+msgstr "La animación se hará con cuatro claves de movimiento:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:39
 msgid "A side to side motion"
-msgstr ""
+msgstr "Un movimiento de lado a lado"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:40
 msgid "A pivot motion around the center of the fish"
-msgstr ""
+msgstr "Un movimiento pivotante alrededor del centro del pez"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:41
 msgid "A panning wave motion"
-msgstr ""
+msgstr "Un movimiento de onda de panorámico"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:42
 msgid "A panning twist motion"
-msgstr ""
+msgstr "Un movimiento de giro de panorámica"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:44
 msgid ""
@@ -105,6 +130,10 @@ msgid ""
 "the motion so that you can tweak the animation in editor and see the results "
 "in real time, without the shader having to recompile."
 msgstr ""
+"Todo el código de la animación estará en el vertex shader uniforms que "
+"controlan la cantidad de movimiento. Usamos uniforms para controlar la "
+"fuerza del movimiento para que puedas ajustar la animación en el editor y "
+"ver los resultados en tiempo real, sin que el shader tenga que recompilar."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:48
 msgid ""
@@ -114,12 +143,19 @@ msgid ""
 "will always move the fish back and forth in its left to right direction, "
 "instead of on the ``x`` axis in the world orientation."
 msgstr ""
+"Todos los movimientos se harán usando ondas coseno aplicadas a ``VERTEX`` en "
+"el espacio modelo. Queremos que los vértices estén en el espacio modelo para "
+"que el movimiento sea siempre relativo a la orientación de los peces. Por "
+"ejemplo, de lado a lado siempre moverá al pez de izquierda a derecha, en "
+"lugar de en el eje ``x`` en la orientación del mundo."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:53
 msgid ""
 "In order to control the speed of the animation, we will start by defining "
 "our own time variable using ``TIME``."
 msgstr ""
+"Para controlar la velocidad de la animación, empezaremos definiendo nuestra "
+"propia variable de tiempo usando ``TIME``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:60
 msgid ""
@@ -128,6 +164,10 @@ msgid ""
 "is rendered, all the vertices will move to the side by the amount of "
 "``cos(time)``."
 msgstr ""
+"El primer movimiento que implementaremos es el movimiento de lado a lado. "
+"Puede hacerse compensando ``VERTEX.x`` por ``cos`` de ``TIME``. Cada vez que "
+"la malla se renderice, todos los vértices se moverán de lado por la cantidad "
+"de ``cos(time)``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:69
 msgid "The resulting animation should look something like this:"
@@ -139,16 +179,21 @@ msgid ""
 "to do is multiply ``VERTEX`` by a rotation matrix for it to rotate around "
 "the center of the fish."
 msgstr ""
+"A continuación, añadimos el pivote. Debido a que el pez está centrado en (0, "
+"0), todo lo que tenemos que hacer es multiplicar ``VERTEX`` por una matriz "
+"de rotación para que gire alrededor del centro del pez."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:76
 msgid "We construct a rotation matrix like so:"
-msgstr ""
+msgstr "Construimos una matriz de rotación así:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:85
 msgid ""
 "And then we apply it in the ``x`` and ``z`` axes by multiplying it by "
 "``VERTEX.xz``."
 msgstr ""
+"Y luego lo aplicamos en los ejes ``x`` y ``z`` multiplicándolo por ``VERTEX."
+"xz``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:91
 msgid "With only the pivot applied you should see something like this:"
@@ -160,6 +205,10 @@ msgid ""
 "need a new variable, ``body``. ``body`` is a float that is ``0`` at the tail "
 "of the fish and ``1`` at its head."
 msgstr ""
+"Los próximos dos movimientos necesitan bajar por la espina dorsal del pez. "
+"Para eso, necesitamos una nueva variable, ``body``. ``body`` es un real que "
+"está ``0`` en la cola del pez y ``1`` en su cabeza.\"cuerpo\" es un flotador "
+"que está ``0`` en la cola del pez y ``1`` en su cabeza."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:102
 msgid ""
@@ -168,6 +217,10 @@ msgid ""
 "the position along the spine, which is the variable we defined above, "
 "``body``."
 msgstr ""
+"El siguiente movimiento es una onda coseno que se mueve a lo largo del pez. "
+"Para hacer que se mueva a lo largo de la espina dorsal del pez, compensamos "
+"la entrada a ``cos`` por la posición a lo largo de la espina dorsal, que es "
+"la variable que definimos arriba, ``body``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:111
 msgid ""
@@ -176,12 +229,19 @@ msgid ""
 "has a different position in the wave making it look like a wave is moving "
 "along the fish."
 msgstr ""
+"Esto se ve muy similar al movimiento de lado a lado que definimos arriba, "
+"pero en este, al usar ``body`` para desplazar ``cos`` cada vertex a lo largo "
+"de la espina tienes una posición diferente en la onda haciendo que parezca "
+"que una onda se está moviendo a lo largo del pez."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:117
 msgid ""
 "The last motion is the twist, which is a panning roll along the spine. "
 "Similarly to the pivot, we first  construct a rotation matrix."
 msgstr ""
+"El último movimiento es el giro, que es un rollo de desplazamiento a lo "
+"largo de la columna vertebral. De manera similar al pivote, primero "
+"construimos una matriz de rotación."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:126
 msgid ""
@@ -189,6 +249,9 @@ msgid ""
 "around its spine. For this to work, the fish's spine needs to be centered on "
 "the ``z`` axis."
 msgstr ""
+"Aplicamos la rotación en los ejes ``xy`` para que el pez parezca girar "
+"alrededor de su espina. Para que esto funcione, la columna vertebral del pez "
+"necesita estar centrada en el eje ``z``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:133
 msgid "Here is the fish with twist applied:"
@@ -199,6 +262,8 @@ msgid ""
 "If we apply all these motions one after another, we get a fluid jelly-like "
 "motion."
 msgstr ""
+"Si aplicamos todos estos movimientos uno tras otro, obtenemos un movimiento "
+"fluido y como gelatina."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:141
 msgid ""
@@ -206,6 +271,9 @@ msgid ""
 "need to limit the panning motions to the back half of the fish. To do this, "
 "we create a new variable, ``mask``."
 msgstr ""
+"Los peces normales nadan principalmente con la mitad trasera de su cuerpo. "
+"Por consiguiente, necesitamos limitar los movimientos de desplazamiento a la "
+"mitad trasera del pez. Para hacer esto, creamos una nueva variable, ``mask``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:144
 msgid ""
@@ -213,16 +281,21 @@ msgid ""
 "at the end  using ``smoothstep`` to control the point at which the "
 "transition from ``0`` to ``1`` happens."
 msgstr ""
+"``mask`` es un real que va de ``0`` en la parte delantera del pez a ``1`` al "
+"final, usando ``smoothstep`` para controlar el punto en el que la transición "
+"de ``0`` a ``1`` ocurre."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:152
 msgid "Below is an image of the fish with ``mask`` used as ``COLOR``:"
-msgstr ""
+msgstr "Abajo hay una imagen del pez con ``mask`` usada como ``COLOR``:"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:156
 msgid ""
 "For the wave, we multiply the motion by ``mask`` which will limit it to the "
 "back half."
 msgstr ""
+"Para la ola, multiplicamos el movimiento por la ``mask`` que la limitará a "
+"la mitad trasera."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:163
 msgid ""
@@ -233,10 +306,16 @@ msgid ""
 "are replacing the ``VERTEX`` with the rotated version. If we multiplied that "
 "by ``mask``, we would shrink the fish."
 msgstr ""
+"Para aplicar la máscara al giro, usamos ``mix``. ``mix`` nos permite mezclar "
+"la vertex position entre un vértice completamente girado y uno que no está "
+"girado. Necesitamos usar ``mix`` en lugar de multiplicar la ``mask`` por el "
+"``VERTEX`` girado porque no estamos añadiendo el movimiento al ``VERTEX``, "
+"estamos reemplazando el ``VERTEX`` con la versión girada. Si lo "
+"multiplicamos por la ``mask``, reduciremos el tamaño de los peces."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:174
 msgid "Putting the four motions together gives us the final animation."
-msgstr ""
+msgstr "La unión de los cuatro movimientos nos da la animación final."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:178
 msgid ""
@@ -244,10 +323,13 @@ msgid ""
 "fish. You will find that you can create a wide variety of swim styles using "
 "these four motions."
 msgstr ""
+"Adelante, juega con los uniforms para alterar el ciclo de natación de los "
+"peces. Verás que puedes crear una gran variedad de estilos de natación "
+"usando estos cuatro movimientos."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:182
 msgid "Making a school of fish"
-msgstr ""
+msgstr "Hacer un banco de peces"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:184
 msgid ""
@@ -263,6 +345,9 @@ msgid ""
 "MeshInstance node. For this tutorial, we will name the MultiMeshInstance "
 "node ``School``, because it will contain a school of fish."
 msgstr ""
+"Se crea un nodo MultiMeshInstance y se utiliza de la misma manera que se "
+"haría un nodo MeshInstance. Para este tutorial, nombraremos al nodo "
+"MultiMeshInstance ``School``, porque contendrá un banco de peces."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:190
 msgid ""
@@ -270,6 +355,9 @@ msgid ""
 "and to that MultiMesh add your :ref:`Mesh <class_Mesh>` with the shader from "
 "above."
 msgstr ""
+"Una vez que tengas una MultiMeshInstance agrega un :ref:`MultiMesh "
+"<class_MultiMesh>`, y a esa MultiMesh agrega tu :ref:`Mesh <class_Mesh>` con "
+"el shader superior."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:193
 msgid ""
@@ -277,6 +365,9 @@ msgid ""
 "Transform (rotation, translation, scale), Color, and Custom. Custom is used "
 "to pass in 4 multi-use variables using a :ref:`Color <class_Color>`."
 msgstr ""
+"MultiMeshes dibuja tu malla con tres propiedades adicionales por sustancia: "
+"Transformación (rotación, traslación, escala), Color y Custom. Custom se usa "
+"para pasar 4 variables multiusos usando un :ref:`Color <clase_Color>`."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:197
 msgid ""
@@ -285,12 +376,18 @@ msgid ""
 "any of the other parameters while ``instance_count`` is larger than ``0``. "
 "We will set ``instance count`` in GDScript later."
 msgstr ""
+"\"``instance_count`` especifica cuántas instancias de la malla quieres "
+"dibujar. Por ahora, deja ``instance_count`` en ``0`` porque no puedes "
+"cambiar ninguno de los otros parámetros mientras ``instance_count`` sea "
+"mayor que ``0``. Más tarde pondremos ``instance_count`` en GDScript."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:201
 msgid ""
 "``transform_format`` specifies whether the transforms used are 3D or 2D. For "
 "this tutorial, select 3D."
 msgstr ""
+"``transform_format`` especifica si las transformaciones utilizadas son 3D o "
+"2D. Para este tutorial, selecciona 3D."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:203
 msgid ""
@@ -303,14 +400,24 @@ msgid ""
 "``Byte`` will take less memory and be faster, but you may see some visual "
 "artifacts."
 msgstr ""
+"Tanto para el ``color_format`` como para el ``custom_data_format`` puedes "
+"elegir entre ``None``, ``Byte`` y ``Float``. ``None`` significa que no "
+"pasarás esos datos (ya sea una variable de ``COLOR`` o ``INSTANCE_CUSTOM``) "
+"al shader. ``Byte`` significa que cada número que compone el color que pasas "
+"se almacenará con 8 bits mientras que ``Float`` significa que cada número se "
+"almacenará en un número de real (32 bits). ``Float`` es más lento pero más "
+"preciso, ``Byte`` tomará menos memoria y será más rápido, pero puedes ver "
+"algunos artefactos visuales."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:210
 msgid "Now, set ``instance_count`` to the number of fish you want to have."
-msgstr ""
+msgstr "Ahora, pon ``instance_count`` al número de peces que quieres tener."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:212
 msgid "Next we need to set the per-instance transforms."
 msgstr ""
+"Lo siguiente que necesitamos es establecer las transformaciones por "
+"instancia."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:214
 msgid ""
@@ -318,6 +425,9 @@ msgid ""
 "is entirely in editor and is described in the :ref:`MultiMeshInstance "
 "tutorial <doc_using_multi_mesh_instance>`."
 msgstr ""
+"Hay dos formas de establecer transformaciones por instancia para "
+"MultiMeshes. La primera está completamente en el editor y es descrita en el :"
+"ref:`MultiMeshInstance tutorial <doc_using_multi_mesh_instance>`."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:217
 msgid ""
@@ -325,18 +435,26 @@ msgid ""
 "code. Below, we use GDScript to loop over all the instances and set their "
 "transform to a random position."
 msgstr ""
+"La segunda es hacer un bucle sobre todas las instancias y establecer sus "
+"transformaciones en código. A continuación, usamos GDScript para hacer un "
+"bucle sobre todas las instancias y establecer su transformación en una "
+"posición aleatoria."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:227
 msgid ""
 "Running this script will place the fish in random positions in a box around "
 "the position of the MultiMeshInstance."
 msgstr ""
+"Ejecutar este guión colocará a los peces en posiciones aleatorias en una "
+"caja alrededor de la posición de la MultiMeshInstance."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:230
 msgid ""
 "If performance is an issue for you, try running the scene with GLES2 or with "
 "fewer fish."
 msgstr ""
+"Si la actuación es un problema para ti, intenta hacer la escena con GLES2 o "
+"con menos peces."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:232
 msgid ""
@@ -344,10 +462,14 @@ msgid ""
 "It makes them look very robotic. The next step is to give each fish a "
 "different position in the swim cycle so the entire school looks more organic."
 msgstr ""
+"¿Nota que todos los peces están en la misma posición en su ciclo de "
+"natación? Los hace parecer muy robóticos. El siguiente paso es darle a cada "
+"pez una posición diferente en el ciclo de natación para que todo el banco "
+"parezca más orgánico."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:237
 msgid "Animating a school of fish"
-msgstr ""
+msgstr "Animar un banco de peces"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:239
 msgid ""
@@ -355,12 +477,16 @@ msgid ""
 "they are animated with one parameter, ``time``. In order to give each fish a "
 "unique position in the swim cycle, we only need to offset ``time``."
 msgstr ""
+"Uno de los beneficios de animar a los peces usando funciones de ``cos`` es "
+"que se animan con un parámetro, ``time``. Para darle a cada pez una posición "
+"única en el ciclo de natación, sólo necesitamos compensar el ``time``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:243
 msgid ""
 "We do that by adding the per-instance custom value ``INSTANCE_CUSTOM`` to "
 "``time``."
 msgstr ""
+"Lo hacemos añadiendo el valor personalizado ``INSTANCE_CUSTOM`` a ``time``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:249
 msgid ""
@@ -368,6 +494,9 @@ msgid ""
 "one line into the ``for`` loop from above. In the ``for`` loop we assign "
 "each instance a set of four random floats to use."
 msgstr ""
+"A continuación, tenemos que pasar un valor a ``INSTANCE_CUSTOM``. Lo hacemos "
+"añadiendo una línea en el bucle ``for`` superior. En el bucle ``for`` "
+"asignamos a cada instancia un conjunto de cuatro reales aleatorios para usar."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:257
 msgid ""
@@ -375,12 +504,17 @@ msgid ""
 "a little more individuality by using ``INSTANCE_CUSTOM`` to make them swim "
 "faster or slower by multiplying by ``TIME``."
 msgstr ""
+"Ahora todos los peces tienen posiciones únicas en el ciclo de natación. "
+"Puedes darles un poco más de individualidad usando ``INSTANCE_CUSTOM`` para "
+"hacerlos nadar más rápido o más lento multiplicando por el ``TIME``."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:266
 msgid ""
 "You can even experiment with changing the per-instance color the same way "
 "you changed the per-instance custom value."
 msgstr ""
+"Incluso puedes experimentar con el cambio de color por instancia de la misma "
+"manera que cambiaste el valor personalizado por instancia."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:269
 msgid ""
@@ -390,6 +524,11 @@ msgid ""
 "faster than moving thousands of MeshInstances per frame, it'll still likely "
 "be slow."
 msgstr ""
+"Un problema con el que te encontrarás en este punto es que los peces están "
+"animados, pero no se mueven. Puedes moverlos actualizando la transformación "
+"por instancia de cada pez en cada fotograma. Aunque hacerlo será más rápido "
+"que mover miles de MeshInstances por fotograma, es probable que siga siendo "
+"lento."
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:274
 msgid ""
@@ -397,3 +536,6 @@ msgid ""
 "<class_Particles>` to take advantage of the GPU and move each fish around "
 "individually while still receiving the benefits of instancing."
 msgstr ""
+"En el próximo tutorial cubriremos cómo usar :ref:`Particles "
+"<class_Particles>` para aprovechar la GPU y mover cada pez individualmente "
+"mientras se reciben los beneficios del instanciamiento."

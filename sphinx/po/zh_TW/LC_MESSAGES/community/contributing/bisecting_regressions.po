@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:4
 msgid "Bisecting regressions"
-msgstr ""
+msgstr "Bisect 迴歸"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:8
 msgid ""
@@ -29,14 +29,18 @@ msgid ""
 "possible for contributors to fix bugs faster, as they can know in advance "
 "which commit caused the regression. Your effort will be widely appreciated :)"
 msgstr ""
+"Bisect 是一種在軟體中找出迴歸 (Regression) 的方法。當在 `GitHub 上的 Godot 儲"
+"存庫 <https://github.com/godotengine/godot>`__ 上回報 Bug 後，可能會有貢獻者"
+"要求你 **Bisect** 該問題。通過 Bisect 便能讓貢獻者進一步瞭解是哪個 Commit 造"
+"成該問題的，進而更快修正 Bug。大家會很感謝你的努力 :)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:14
 msgid "The guide below explains how to find a regression by bisecting."
-msgstr ""
+msgstr "本指南解釋如何通過 Bisect 來找出迴歸。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:17
 msgid "What is bisecting?"
-msgstr ""
+msgstr "什麼是 Bisect？"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:19
 msgid ""
@@ -47,10 +51,15 @@ msgid ""
 "it's typically used for bugs, it can also be used to find other kinds of "
 "unexpected changes such as performance regressions."
 msgstr ""
+"Godot 開發人員使用 `Git <https://git-scm.com/>`__ 版本控制系統。在 Git 的脈絡"
+"下，Bisect 是一個手動進行 `二分搜尋 <https://zh.wikipedia.org/zh-tw/%E4%BA%8C"
+"%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95>`__ 來判斷迴歸是何時產"
+"生的一個過程。雖然通常 Bisect 是用來找出 Bug 的，但也可以用來找出如效能迴歸等"
+"其他未預期的改動。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:27
 msgid "Using official builds to speed up bisecting"
-msgstr ""
+msgstr "使用官方建置來加快 Bisect"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:29
 msgid ""
@@ -61,6 +70,10 @@ msgid ""
 "betas, and release candidates `here <https://downloads.tuxfamily.org/"
 "godotengine/>`__."
 msgstr ""
+"在使用 Git 的 ``bisect`` 指令前，我們強烈建議試著通過較舊版本 (或較新) 的官方"
+"釋出版本來嘗試重現 Bug。這樣一來可以大幅降低可能需要用來從原始碼建置並進行測"
+"試的 Commit 範圍。可以在 `此處 <https://downloads.tuxfamily.org/godotengine/"
+">`__ 找到官方釋出版本、Alpha 版、RC 版的二進位檔。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:35
 msgid ""
@@ -72,6 +85,11 @@ msgid ""
 "and RC builds. If you do manage to reproduce the bug with Godot 3.2 beta 1, "
 "then try older alpha builds."
 msgstr ""
+"舉例來說，如果我們要回報 Godot 3.2 的 Bug，則應該先試著在 Godot 3.1 中復現該 "
+"Bug (不適用修正版本，原因見後方)。若該 Bug 沒有在 Godot 3.1 中出現，則請試著"
+"在 Godot 3.2 **Beta 1** 中 (也就是大約在所有測試版建置的中間) 嘗試復現。若沒"
+"辦法在 Godot 3.2 Beta 1 中復現，則請試試較新版本的 Beta 與 RC 建置。如果能成"
+"功在 Godot 3.2 Beta 1 中復現 Bug，則請接著試試較舊版本的 Alpha 建置。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:44
 msgid ""
@@ -81,10 +99,13 @@ msgid ""
 "of branch doesn't follow the rest of Godot's development, which is done in "
 "the ``master`` branch."
 msgstr ""
+"進行 Bisect 迴歸時，請不要使用如 Godot 3.1.2 這樣的修正釋出，請先使用主版本的"
+"釋出，如 Godot 3.1.這是因為，修正版本是在獨立的 **穩定版分支** 上建置的。這種"
+"分支並不會跟隨其他 Godot 在 ``master`` 分支中所進行的開發。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:51
 msgid "The Git bisect command"
-msgstr ""
+msgstr "Git 的 Bisect 指令"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:53
 msgid ""
@@ -94,6 +115,9 @@ msgid ""
 "process semi-automated as you only have to build the engine, run it and try "
 "to reproduce the bug."
 msgstr ""
+"如果在上述測試過程中找到了沒有出現該 Bug 的建置，則可以開始 Bisect 迴歸。Git "
+"版本控制系統提供了一個內建指令來進行 Bisect 迴歸： ``git bisect`` 。有了這個"
+"指令便可將此一過程半自動化，只需要建置引擎並嘗試重現該 Bug 即可。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:61
 msgid ""
@@ -102,6 +126,9 @@ msgid ""
 "compiling>` page for your target platform. (Compiling Godot from source "
 "doesn't require C++ programming knowledge.)"
 msgstr ""
+"在 Bisect 迴歸前，需要先建置用於從原始碼編譯 Godot 的建置環境。要設定建置環"
+"境，請參考與建置目標平台對應的 :ref:`編譯 <toc-devel-compiling>` 頁面。(從原"
+"始碼編譯 Godot 並不需要 C++ 程式設計知識。)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:66
 msgid ""
@@ -111,6 +138,10 @@ msgid ""
 "there and report the results of your \"pre-bisecting\" on the GitHub issue "
 "so another contributor can continue bisecting from there."
 msgstr ""
+"請主義，在較慢的硬體上編譯 Godot 可能會花費一些時間 (在較慢的雙核 CPU 上，每"
+"個建置可能會花費高達一個小時)。這表示，整個過程可能會耗費數個小時。如果你使用"
+"較慢的硬體，則你可以停在這裡，並在 GitHub Issue 上回報你在「Bisect 前」的結果"
+"來讓其他貢獻者能從此處繼續進行 Bisect。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:72
 msgid ""
@@ -122,18 +153,26 @@ msgid ""
 ">`__, go to the folder that contains the pre-release you downloaded and look "
 "for the ``README.txt`` file. The commit hash is written inside that file."
 msgstr ""
+"要開始 Bisect，首先必須先判斷「壞的」與「好的」建置的 Commit 雜湊 (識別項)。"
+"「壞的」代表會出現 Bug 的建置，而「好的」則代表不會出現該 Bug 的版本。如果使"
+"用預釋出的建置來當作「好的」或「壞的」建置，則請瀏覽 `下載鏡像 <https://"
+"downloads.tuxfamily.org/godotengine/>`__ 頁面，前往包含你下載的預釋出版本的資"
+"料夾內，然後找到 ``README.txt`` 檔案。該檔案內有寫上 Commit 雜湊。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:80
 msgid ""
 "If you're using a stable release as the \"good\" or \"bad\" build, use one "
 "of the following commit hashes depending on the version:"
 msgstr ""
+"如果你使用穩定版來作為「好的」或「壞的」建置，則請依據版本來使用下列其一 "
+"Commit 雜湊："
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:89
 msgid ""
 "To refer to the latest state of the master branch, you can use ``master`` "
 "instead of a commit hash."
 msgstr ""
+"如果要參照 master 分支的最新狀態，則可以使用 ``master`` 來代替 Commit 雜湊。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:92
 msgid ""
@@ -141,10 +180,12 @@ msgid ""
 "done, in the terminal window, use ``cd`` to reach the Godot repository "
 "folder and enter the following command:"
 msgstr ""
+":ref:`使用 Git 來取得 Godot 的原始碼 <doc_getting_source>` 。完成後，在終端機"
+"視窗內使用 ``cd`` 來移動至 Godot 儲存庫資料夾內，然後輸入下列指令："
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:104
 msgid "Compile Godot. This assumes you've set up a build environment:"
-msgstr ""
+msgstr "編譯 Godot。此處假設你已經設定好了建置環境："
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:112
 msgid ""
@@ -152,19 +193,22 @@ msgid ""
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
 "command assigns 4 CPU threads to compiling Godot."
 msgstr ""
+"由於建置 Godot 會需要一段時間，所以你可能會想儘量使用多個 CPU 執行緒來進行建"
+"置。``-j`` 參數就是用來指定執行緒數量的。在此例中，該指令指定使用 4 個 CPU 執"
+"行緒來編譯 Godot。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:116
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
-msgstr ""
+msgstr "執行 ``bin/`` 資料夾內的二進位檔，然後嘗試復現 Bug。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:118
 msgid "If the build **still** exhibits the bug, run the following command:"
-msgstr ""
+msgstr "若該建置中 **依然** 會遇到 Bug，則請執行下列指令："
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:124
 msgid "If the build **does not** exhibit the bug, run the following command:"
-msgstr ""
+msgstr "如果該建置 **沒有** 出現 Bug，請執行下列指令："
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:130
 msgid ""
@@ -176,6 +220,10 @@ msgid ""
 "most regressions; Git will remind you of the number of steps remaining (in "
 "the worst case scenario)."
 msgstr ""
+"輸入上述其中一個指令後，Git 會切換到不同的 Commit 上。接著應再次建置 Godot、"
+"嘗試復現 Bug、然後依據結果輸入 ``git bisect good`` 或 ``git bisect bad`` 。這"
+"個過程會需要重複多次。Commit 的範圍越大、就需要越多步驟。通常需要 5 到 10 個"
+"步驟才足夠找出大多數的迴歸；Git 會提示還剩下幾個步驟 (最糟情況下的剩餘步驟)。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:137
 msgid ""
@@ -184,9 +232,14 @@ msgid ""
 "issue you've bisected. This will help in solving the issue. Thanks again for "
 "contributing to Godot :)"
 msgstr ""
+"完成了足夠的步驟後，Git 會顯示該迴歸出現的 Commit 雜湊。請將該 Commit 雜湊寫"
+"在所 Bisect 的 GitHub Issue 留言上。這樣有助於解決該問題。再次感謝你參與貢獻 "
+"Godot :)"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:144
 msgid ""
 "You can read the full documentation on ``git bisect`` `here <https://git-scm."
 "com/docs/git-bisect>`__."
 msgstr ""
+"有關 ``git bisect`` 的完整說明文件可以參考 `此處 <https://git-scm.com/docs/"
+"git-bisect>`__ 。"

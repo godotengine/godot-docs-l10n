@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -503,7 +503,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Perché Godot usa Vulkan o OpenGL invece di Direct3D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -513,6 +513,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot mira innanzitutto alla compatibilità multipiattaforma e agli standard "
+"aperti. OpenGL e Vulkan sono le tecnologie aperte e disponibili su (quasi) "
+"tutte le piattaforme. Grazie a questa decisione progettuale, un progetto "
+"sviluppato con Godot su Windows verrà eseguito immediatamente su Linux, "
+"macOS e altro."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -521,6 +526,10 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Poiché Godot ha solo poche persone che lavorano sul suo renderer, "
+"preferiremmo avere meno backend di rendering da mantenere. Inoltre, "
+"l'utilizzo di una singola API su tutte le piattaforme permette maggiore "
+"consistenza e meno problemi riguardanti una piattaforma specifica."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -528,14 +537,17 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Nel lungo termine, potremmo sviluppare un renderer Direct3D 12 per Godot "
+"(principalmente per Xbox), ma Vulkan e OpenGL rimarranno i backend di "
+"rendering predefiniti su tutte le piattaforme, incluso Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"Come dovrebbero essere create le risorse per gestire risoluzioni grafiche "
-"multiple e diversi formati di schermo?"
+"Come dovrebbero essere create le risorse per gestire risoluzioni grafiche e "
+"formati di schermo diversi?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -677,16 +689,16 @@ msgstr ""
 "librerie di terze parti si integrano in Godot."
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "Quando uscirà la prossima versione?"
+msgstr "Quando uscirà la prossima versione di Godot?"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr ":ref:`Eseguire Codice nell'Editor <doc_running_code_in_the_editor>`"
+msgstr ""
+"Quando è pronta! Vedi :ref:`doc_release_policy_when_is_next_release_out` per "
+"maggiori informazioni."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"

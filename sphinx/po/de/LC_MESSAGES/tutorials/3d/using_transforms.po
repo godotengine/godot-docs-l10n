@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,12 +43,15 @@ msgstr ""
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
 msgstr ""
+"Winkel in drei Dimensionen werden meistens als \"Eulerwinkel\" bezeichnet."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Euler-Winkel wurden Anfang des 18. Jahrhunderts vom Mathematiker Leonhard "
+"Euler eingeführt."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -61,7 +64,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
-msgstr ""
+msgstr "Probleme der Eulerwinkel"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
@@ -103,6 +106,8 @@ msgstr ""
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"Sie fragen sich vielleicht, was das für Sie bedeutet. Sehen wir uns ein "
+"praktisches Beispiel an:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -146,14 +151,16 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
 msgstr ""
+"Bei der Verwendung von Winkeln hat dies jedoch nicht immer die erwartete "
+"Wirkung:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "Die Kamera drehte sich tatsächlich in die entgegengesetzte Richtung!"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "Es gibt einige Gründe, warum dies passieren kann:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -172,7 +179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
-msgstr ""
+msgstr "Sagen Sie \"Nein\" zu Euler-Winkeln"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:82
 msgid ""
@@ -186,10 +193,11 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
 msgstr ""
+"Stattdessen gibt es einen besseren Weg, Ihre Rotationsprobleme zu lösen."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
-msgstr ""
+msgstr "Einführung in Transformationen"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:89
 msgid ""
@@ -203,6 +211,8 @@ msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"Es ist auch möglich, über die Eigenschaft ``global_transform`` auf die "
+"Weltkoordinatentransformation zuzugreifen."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
 msgid ""
@@ -218,11 +228,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "Eine Standardbasis (unverändert) ist vergleichbar mit:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
 msgid "This is also an analog of a 3x3 identity matrix."
-msgstr ""
+msgstr "Auch dies ist analog zu einer 3x3-Identitätsmatrix."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
 msgid ""
@@ -261,7 +271,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
-msgstr ""
+msgstr "Manipulation von Transformationen"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:145
 msgid ""
@@ -277,21 +287,23 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "Eine Methode in Spatial vereinfacht dies:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "Dadurch wird der Node relativ zum übergeordneten Node gedreht."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr ""
+"Verwenden Sie Folgendes, um sich relativ zum Objektraum zu drehen (die Node-"
+"eigene Transformation):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
-msgstr ""
+msgstr "Präzisionsfehler"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:199
 msgid ""
@@ -329,7 +341,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
-msgstr ""
+msgstr "Abrufen von Informationen"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:232
 msgid ""
@@ -355,7 +367,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr ""
+msgstr "nach links schießen:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
@@ -364,10 +376,12 @@ msgstr "Springen:"
 #: ../../docs/tutorials/3d/using_transforms.rst:302
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
+"Alle gebräuchlichen Verhaltensweisen und Logiken können nur mit Vektoren "
+"ausgeführt werden."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:305
 msgid "Setting information"
-msgstr ""
+msgstr "Festlegen von Informationen"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid ""
@@ -386,7 +400,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "Beispiel für das Umsehen im FPS-Stil:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:353
 msgid ""
@@ -410,7 +424,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "Die Umwandlung einer Rotation in Quaternion ist unkompliziert."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
 msgid ""

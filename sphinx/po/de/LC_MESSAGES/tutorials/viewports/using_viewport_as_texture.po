@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,8 @@ msgid ""
 "Setting a Roughness map from a :ref:`Viewport Texture "
 "<class_ViewportTexture>`"
 msgstr ""
+"Festlegen einer Rauheitskarte aus einer :ref:`Ansichtsfenster-Textur "
+"<class_ViewportTexture>`"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:31
 msgid "Setting up the Viewport"
@@ -108,6 +110,8 @@ msgstr ""
 msgid ""
 "Select the Viewport and add a :ref:`ColorRect <class_ColorRect>` as a child."
 msgstr ""
+"Wählen Sie das Ansichtsfenster und fügen Sie ein :ref:`ColorRect "
+"<class_ColorRect>` als untergeordnetes Element hinzu."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:48
 msgid ""
@@ -138,7 +142,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:68
 msgid "The above code renders a gradient like the one below."
-msgstr ""
+msgstr "Der obige Code rendert einen Farbverlauf wie den folgenden."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:72
 msgid ""
@@ -155,6 +159,8 @@ msgid ""
 "MeshInstance > GeometryInstance > Geometry > Material Override > ``New "
 "SpatialMaterial``:"
 msgstr ""
+"MeshInstance > GeometryInstance > Geometry > Material Override > ``New "
+"SpatialMaterial``:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
 msgid ""
@@ -169,6 +175,8 @@ msgid ""
 "MeshInstance > GeometryInstance > Geometry > Material Override > ``click`` / "
 "``Edit``:"
 msgstr ""
+"MeshInstanz > GeometrieInstanz > Geometrie > Materialüberschreibung > "
+"``Klicken`` / ``Bearbeiten``:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
 msgid ""
@@ -183,12 +191,16 @@ msgid ""
 "Then, from the menu that pops up, select the Viewport that we rendered to "
 "earlier."
 msgstr ""
+"Wählen Sie dann aus dem angezeigten Menü das Ansichtsfenster aus, in das "
+"zuvor gerendert wurde."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:96
 msgid ""
 "Your sphere should now be colored in with the colors we rendered to the "
 "Viewport."
 msgstr ""
+"Ihre Kugel sollte jetzt mit den Farben eingefärbt sein, die wir im "
+"Ansichtsfenster gerendert haben."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:100
 msgid ""
@@ -247,6 +259,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:149
 msgid "And if we use ``unit`` as an output ``COLOR`` value, we get:"
 msgstr ""
+"Und wenn wir ``unit`` als Ausgabewert ``COLOR`` verwenden, erhalten wir:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:153
 msgid ""
@@ -260,15 +273,20 @@ msgid ""
 "All credit goes to the author, Inigo Quilez. It is published under the "
 "``MIT`` licence."
 msgstr ""
+"Alle Ehre gebührt dem Autor Inigo Quilez. Es wird unter der ``MIT``-Lizenz "
+"veröffentlicht."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:183
 msgid ""
 "Now to use ``noise``, add the following to the    ``fragment`` function:"
 msgstr ""
+"Um nun ``Rauschen`` zu verwenden, fügen Sie der Funktion ``Fragment`` "
+"folgendes hinzu:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:192
 msgid "In order to highlight the texture, we set the material to unshaded."
 msgstr ""
+"Um die Textur hervorzuheben, setzen wir das Material auf nicht schattiert."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:194
 msgid ""
@@ -414,3 +432,5 @@ msgid ""
 "And there you have it. A procedural planet generated using a :ref:`Viewport "
 "<class_Viewport>`."
 msgstr ""
+"Und da haben Sie es. Ein prozeduraler Planet, der unter Verwendung eines :"
+"ref:`Ansichtfenster <class_Viewport>` generiert wurde."

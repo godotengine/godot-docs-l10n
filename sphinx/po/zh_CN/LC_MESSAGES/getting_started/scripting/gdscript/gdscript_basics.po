@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,7 @@ msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "为脚本定义类名称和可选图标。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -725,6 +725,7 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
+"整数和浮点数可以用``_``来分隔，使其更易读。以下表示数字的方式都是有效的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
@@ -811,92 +812,88 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
 msgstr ""
 "`Unicode格式 <https://en.wikipedia.org/wiki/Unicode>`_ 的字符序列。字符串可以"
-"包含 `标准C转义序列 <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_。"
-"GDScript也支持 :ref:`doc_gdscript_printf`。"
+"包含以下转义序列："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
-#, fuzzy
 msgid "**Escape sequence**"
-msgstr "转义序列"
+msgstr "**转义序列**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "**Expands to**"
-msgstr ""
+msgstr "**转义为**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "``\\n``"
-msgstr ""
+msgstr "``\\n``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:372
 msgid "Newline (line feed)"
-msgstr ""
+msgstr "换行（line feed，LF）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "``\\t``"
-msgstr ""
+msgstr "``\\t``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Horizontal tab character"
-msgstr ""
+msgstr "水平制表符（tab）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "``\\r``"
-msgstr ""
+msgstr "``\\r``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Carriage return"
-msgstr ""
+msgstr "回车（carriage return，CR）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "``\\a``"
-msgstr ""
+msgstr "``\\a``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:378
 msgid "Alert (beep/bell)"
-msgstr ""
+msgstr "警报（蜂鸣/响铃）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "``\\b``"
-msgstr ""
+msgstr "``\\b``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid "Backspace"
-msgstr ""
+msgstr "退格键（Backspace）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "``\\f``"
-msgstr ""
+msgstr "``\\f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid "Formfeed page break"
-msgstr ""
+msgstr "换页符（form feed，FF）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
 msgid "``\\v``"
-msgstr ""
+msgstr "``\\v``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:384
-#, fuzzy
 msgid "Vertical tab character"
-msgstr "动力学角色(二维)"
+msgstr "垂直制表符（tab）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "``\\\"``"
-msgstr ""
+msgstr "``\\\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:386
 msgid "Double quote"
-msgstr ""
+msgstr "双引号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 msgid "``\\'``"
-msgstr ""
+msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
 #, fuzzy
@@ -905,23 +902,23 @@ msgstr "单例"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\\\``"
-msgstr ""
+msgstr "``\\\\``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "Backslash"
-msgstr ""
+msgstr "反斜杠"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "``\\uXXXX``"
-msgstr ""
+msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
+msgstr "Unicode 代码点 ``XXXX``（十六进制，不区分大小写）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
-msgstr ""
+msgstr "GDScript 也支持 :ref:`doc_gdscript_printf`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
 msgid "Vector built-in types"
@@ -1308,10 +1305,12 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"常量代表游戏运行时不可更改的值。其值在编译时必须已知。使用 ``const`` 关键字即"
+"可为常量值赋予名称。尝试为常量重写赋值会引发错误。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
-msgstr ""
+msgstr "我们建议使用常量来储存不应当更改的值。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -2224,6 +2223,12 @@ msgstr "一旦一个信号被某个对象发出，你还可以获取该信号的
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
@@ -2231,7 +2236,7 @@ msgstr ""
 "如果你不确定一个函数是否还会继续yield，可以使用信号量completed，来作为判断依"
 "据:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 #, fuzzy
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
@@ -2242,11 +2247,11 @@ msgstr ""
 "这确保了无论函数内部是否使用协程，该函数都将返回应返回的结果。 请注意，使用"
 "while会在这里是多余的，因为仅当函数不再产生时才会发出Completed信号。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "``Onready`` 关键字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2256,7 +2261,7 @@ msgstr ""
 "使用节点时，通常希望将对场景部分的引用保留在变量中。由于仅在进入活动场景树时"
 "才保证要配置场景，因此只有在调用 ``Node._ready()`` 时才能获得子节点。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2267,11 +2272,11 @@ msgstr ""
 "``onready``，将成员变量的初始化推迟到调用 ``_ready()``。它可以用一行替换上面"
 "的代码："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Assert关键字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2285,7 +2290,7 @@ msgstr ""
 "必须 **不能** 包含具有副作用的表达式。否则，脚本的行为将取决于项目是否在调试"
 "版本中运行。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

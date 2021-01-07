@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:4
 msgid "Editor and docs localization"
-msgstr ""
+msgstr "本地化編輯器與說明文件"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:8
 msgid ""
@@ -28,22 +28,29 @@ msgid ""
 "to make the most important resources available in many languages, thanks to "
 "the translation effort of the community."
 msgstr ""
+"Godot 旨在使任何人都能進行遊戲開發，其中亦包含不懂或不習慣使用英語的人。因"
+"此，我們儘可能地讓許多最重要的資源都有各種語言的版本。感謝社群對翻譯提供的貢"
+"獻。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:13
 msgid "These resources include:"
-msgstr ""
+msgstr "這些資源包含："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:15
 msgid ""
 "The `Godot editor's interface <https://hosted.weblate.org/projects/godot-"
 "engine/godot/>`__ (ca. 15,000 words)."
 msgstr ""
+"`Godot 編輯器界面 <https://hosted.weblate.org/projects/godot-engine/godot/"
+">`__ (約 15,000 個單詞)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:17
 msgid ""
 "The `online documentation <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/>`__ (editor manual and tutorials, ca. 300,000 words)."
 msgstr ""
+"`線上說明文件 <https://hosted.weblate.org/projects/godot-engine/godot-docs/"
+">`__ (含編輯器手冊與教學，約 30,000 個單詞)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:19
 msgid ""
@@ -51,6 +58,8 @@ msgid ""
 "class-reference/>`__, available both online and in the editor (ca. 200,000 "
 "words)."
 msgstr ""
+"`類別參照文件 <https://hosted.weblate.org/projects/godot-engine/godot-class-"
+"reference/>`__ ，可在線上與編輯器內閱讀 (約 200,000 個單詞)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:22
 msgid ""
@@ -60,6 +69,10 @@ msgid ""
 "the translation for the various components, and keep them up to date. Click "
 "the bold links above to access each resource on Weblate."
 msgstr ""
+"為了處理翻譯，我們使用了 GNU gettext 檔案格式 (``PO`` 檔) 以及開源的 "
+"``Weblate <https://weblate.org>`__ 網頁本地化平台。通過 Weblate，我們便能與眾"
+"多貢獻者輕鬆協作來完成各個元件的翻譯，並保持這些翻譯在最新狀態。請點擊上方的"
+"連結來在 Weblate 上存取各個資源。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:28
 msgid ""
@@ -67,6 +80,8 @@ msgid ""
 "and some resource-specific instructions on e.g. how to handle some keywords "
 "or the localization of images."
 msgstr ""
+"本頁提供了 Weblate 上一般性翻譯工作流程的概覽，並提供了一些資源特定的說明，"
+"如：如何如何處理關鍵字或本地化圖片。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:34
 msgid ""
@@ -75,11 +90,13 @@ msgid ""
 "interface, then the online documentation, and eventually the class reference "
 "if there are enough translators to keep up with updates."
 msgstr ""
+"翻譯所有官方的 Godot 內容是龐大的工程，因此我們建議以上面列出各資源的順序來優"
+"先處理：先翻譯編輯器界面、然後翻譯線上說明文件、最後如果有足夠多的翻譯任意能"
+"保持文件更新，才來翻譯類別參照文件。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:40
-#, fuzzy
 msgid "Using Weblate for translations"
-msgstr "匯入翻譯"
+msgstr "使用 Weblate 來進行翻譯"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:42
 msgid ""
@@ -89,12 +106,17 @@ msgid ""
 "not accepted. Translations are synced manually between Weblate and the Godot "
 "repositories by maintainers."
 msgstr ""
+"雖然所有翻譯最後都會被放到 Godot Engine 與其說明文件的 Git 儲存庫中，但所有的"
+"翻譯更新都是以 Weblate 來處理的。因此我們並不允許直接往 Git 儲存庫上打開 "
+"Pull Request。翻譯是由維護人員手動在 Weblate 與 Godot 儲存庫間同步的。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:48
 msgid ""
 "You should therefore `register on Weblate <https://hosted.weblate.org/"
 "accounts/register/>`__ to contribute to Godot's translations."
 msgstr ""
+"因此你應先 `在 Weblate 上註冊 <https://hosted.weblate.org/accounts/register/"
+">`__ 才能參與貢獻 Godot 的翻譯。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:51
 msgid ""
@@ -103,6 +125,9 @@ msgid ""
 "org/projects/godot-engine/godot/>`__ as an example) to find the list of all "
 "languages:"
 msgstr ""
+"登入後，請瀏覽想參與貢獻的 Godot 資源 (在本頁中我們會以 `編輯器翻譯 <https://"
+"hosted.weblate.org/projects/godot-engine/godot/>`__ 為例) 來看看所有語言的列"
+"表："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:59
 msgid ""
@@ -110,17 +135,20 @@ msgid ""
 "workflow <https://docs.weblate.org/en/latest/user/translating.html>`__ for "
 "more details."
 msgstr ""
+"歡迎參考 Weblate 自己 `翻譯工作流程 <https://docs.weblate.org/en/latest/user/"
+"translating.html>`__ 說明文件來瞭解更多詳情。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:64
-#, fuzzy
 msgid "Adding a new language"
-msgstr "設計語言"
+msgstr "新增新語言"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:66
 msgid ""
 "If your language is already listed, click on its name to access the "
 "overview, and skip the rest of this section."
 msgstr ""
+"若你要翻譯的語言已在列表中，只需要點擊其名稱即可存取該語言的概覽，並請略過本"
+"段落。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:69
 msgid ""
@@ -128,6 +156,8 @@ msgid ""
 "languages and click the \"Start new translation\" button, and select the "
 "language you want to translate to:"
 msgstr ""
+"若你的語言未在列表中，請滾動至所有語言列表的最下方，並點擊「Start new "
+"translation」按鈕，然後選擇想要翻譯的語言："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:77
 msgid ""
@@ -136,6 +166,9 @@ msgid ""
 "for French) instead of a regional variant (e.g. ``fr_FR`` for French "
 "(France), ``fr_CA`` for French (Canada), or ``fr_DZ`` for French (Algeria))."
 msgstr ""
+"若你的語言在不同的國家或地區內使用，而地區間的差異僅有一小部分，建議先將翻譯"
+"加到通用的變體 (如法語為 ``fr``) 而不是地區變體 (如法文 (法國) 為 "
+"``fr_FR`` 、法語 (加拿大) 為 ``fr_CA``、法語 (阿爾及利亞) 為 ``fr_DZ``))。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:82
 msgid ""
@@ -145,6 +178,9 @@ msgid ""
 "regional variant, it will only be available automatically for users located "
 "in this region (or having their system language configured for this region)."
 msgstr ""
+"Godot 有大量需要翻譯的內容，因此這些對於地區變體的重複性工作應只在這些語言變"
+"體有足夠的差異時才進行。另外，若翻譯是在地區變體內完成的，則只有位於該地區的"
+"使用者才能自動使用到這些語言 (或是系統語言設定在該地區內的使用者)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:88
 msgid ""
@@ -155,11 +191,14 @@ msgid ""
 "g. Spanish (work on ``es`` first, then duplicate it to ``es_AR``, ``es_ES``, "
 "``es_MX``, etc. if necessary) or Portuguese (``pt_BR`` vs ``pt_PT``)."
 msgstr ""
+"當這些地區變體的差異足夠大到能進行個別的翻譯時，我們建議儘可能先完成通用變"
+"體，然後將完整的翻譯複製到其他地區變體再進行相關的編輯。這個策略應適用於如西"
+"班牙語 (先進行 ``es``，然後若有必要的話再將翻譯複製到 ``es_AR``, ``es_ES``, "
+"``es_MX``…等) 或葡萄牙語 (``pt_BR`` v.s. ``pt_PT``)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:97
-#, fuzzy
 msgid "Translation interface"
-msgstr "翻譯格式"
+msgstr "翻譯界面"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:99
 msgid ""
@@ -169,16 +208,21 @@ msgid ""
 "corresponding list. You can also click the \"Translate\" button to get "
 "started on the list of strings needing action."
 msgstr ""
+"選擇語言後，可以看到翻譯狀態的概覽，包含還剩餘多少字串需要翻譯或需要審閱。可"
+"以點擊各個項目來瀏覽對應的列表。另外也可以點擊「Translate」按鈕來開始處理需要"
+"處理的字串列表。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:107
 msgid ""
 "After selecting a list of clicking \"Translate\", you will see the main "
 "translation interface where all the work happens:"
 msgstr ""
+"選擇列表並點擊「Translate」後，可以看到主要的翻譯界面，這個界面就是用來處理所"
+"有翻譯工作的："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:112
 msgid "On that page, you have:"
-msgstr ""
+msgstr "在本頁中有："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:114
 msgid ""
@@ -186,6 +230,8 @@ msgid ""
 "to another pre-defined list or do a custom search, etc. There is also a \"Zen"
 "\" editing mode with a simplified interface."
 msgstr ""
+"工具列，可用於在目前字串列表間切換、更改為另一個預定義列表或是自定搜尋…等。另"
+"外，也有一個「Zen (禪)」編輯模式，具有較簡化的界面。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:117
 msgid ""
@@ -200,6 +246,13 @@ msgid ""
 "(in PO jargon, these are so-called \"fuzzy\" strings). Such strings won't be "
 "used in the translation until fixed."
 msgstr ""
+"目前實際在處理的字串位於「Translation」面板內。預設情況下，這裡應該會顯示英語"
+"的原始字串以及一個用於你的語言的編輯框。若你也熟悉其他語言，可以在使用者設定"
+"內加上其他語言來協助你在翻譯上取得更多脈絡。編輯好目前字串後，請點擊「Save」"
+"按鈕來確認更改並移至下一個欄位。或者，也可以使用「Skip」按鈕來跳過翻譯。"
+"「Needs editing」勾選框表示原始字串經過更新，因此該翻譯需要進行審閱來處理這些"
+"更新 (用 PO 的語言來說，這些翻譯是所謂的「Fuzzy」字串)。這些字串在被修正前將"
+"不會被用於翻譯。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:127
 msgid ""
@@ -209,6 +262,9 @@ msgid ""
 "other translators, machine translations, and a list of all other existing "
 "translations for that string."
 msgstr ""
+"下方的面板有許多的工具可以協助進行翻譯，如附近字串可提供上下文 (這些字串通常"
+"為同一個編輯器工具或同一個說明文件頁面內的，因此這些字串可能會使用類似的術"
+"語)、來自其他翻譯人員的留言、機器翻譯、以及其他現有語言中該字串的翻譯列表。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:132
 msgid ""
@@ -218,6 +274,9 @@ msgid ""
 "\"node\" term in Godot, you can add it to the glossary to ensure that other "
 "translators use the same convention."
 msgstr ""
+"右上方的「Glossary」顯示了之前加入的術語，這些術語為目前字串中有出現的。舉例"
+"來說，如果你與其他翻譯人員決定為 Godot 的「Node」術語使用特定的翻譯，則可以將"
+"其加入 Glossary 來確保其他翻譯人員使用相同的翻譯慣例。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:137
 msgid ""
@@ -226,11 +285,13 @@ msgid ""
 "original string on GitHub. You may need to search for the string in the page "
 "to locate it and its surrounding context."
 msgstr ""
+"右下方的面板包含了原始字串的資訊。最重要的項目為「source string location」，"
+"其中包含了 GitHub 上原始字串的連結。可能需要在該頁面中搜尋字串才能找到該字串"
+"與其附近的上下文。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:143
-#, fuzzy
 msgid "Locating original content"
-msgstr "建立內容"
+msgstr "找出原始內容"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:145
 msgid ""
@@ -240,6 +301,9 @@ msgid ""
 "organized in the PO files to help you locate the original content and use it "
 "as a reference when translating."
 msgstr ""
+"PO 檔是原始字串 (``msgid``) 的有序列表，以及其翻譯 (``msgstr``)。在預設情況"
+"下，Weblate 會以其順序顯示這些字串。因此，可以通過字串的順序來瞭解該內容在 "
+"PO 檔內是如何排列的，並可通過該順序來找出原始內容並於翻譯時作為參考。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:153
 msgid ""
@@ -250,6 +314,10 @@ msgid ""
 "context also makes the translation effort much easier and more enjoyable, as "
 "you can see directly if the translation you wrote will make sense in context."
 msgstr ""
+"許多的單詞根據其上下文都會都不同的翻譯，因此在翻譯時參考原始上下文是重要的。"
+"如果用了不對的翻譯對使用者來說並不好，且比起將這些字串保留為英語來說，使用者"
+"可能更難理解錯誤的翻譯。通過瞭解上下文也能讓翻譯工作更輕鬆愉快，而且你也能直"
+"接看到這些翻譯在其脈絡中是否合理。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:161
 msgid ""
@@ -260,6 +328,11 @@ msgid ""
 "nearby ones) is defined in the ``editor/code_editor.cpp`` code file, and is "
 "thereby related to the code editors in Godot (GDScript, shaders)."
 msgstr ""
+"編輯器界面的翻譯樣板時通過以 **字母順序** 剖析所有 C++ 原始碼來產生的。因此，"
+"所有在相同檔案內定義的字串都會被放在一起。舉例來說，若「source string "
+"location」顯示為 ``editor/code_editor.cpp`` ，則目前的字串 (以及其相鄰的字"
+"串) 都時定義在 ``editor/code_editor.cpp`` 程式碼內的，而該字串也就是與 Godot "
+"程式碼編輯器相關的 (GDScript, Shader)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:167
 msgid ""
@@ -273,6 +346,12 @@ msgid ""
 "``getting_started/step_by_step/scenes_and_nodes.rst`` for the page :ref:"
 "`doc_scenes_and_nodes`."
 msgstr ""
+"線上說明文件的翻譯樣板時從原始 RST 檔案產生的，其順序與在 **目錄** 中看到的一"
+"樣。所以，以第一個字串來說，就是說明文件首頁中的字串。因此翻譯說明文件建議的"
+"工作流程是先找到想翻譯頁面中獨特的字串，然後一邊對照該頁面英語版本線上文件一"
+"邊翻譯所有有相同 Source string location 的字串。舉例來說，:ref:"
+"`doc_scenes_and_nodes` 這頁的 Source string loaction 應為 ``getting_started/"
+"step_by_step/scenes_and_nodes.rst`` 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:176
 msgid ""
@@ -285,6 +364,11 @@ msgid ""
 "descriptions for the :ref:`class_Node2D` class would have the source string "
 "location ``doc/classes/Node2D.xml``."
 msgstr ""
+"類別參照文件樣板是以 **字母順序** 從原始 XML 檔產生的，該順序也與線上版本的目"
+"錄順序相同。因此可以通過某個類別的簡介來找到相應的原始字串，並以該原始字串來"
+"搜尋第一個翻譯字串，然後該列表的所有其他說明在 Weblate 上就應該位於該字串後"
+"方。舉例來說，:ref:`class_Node2D`` 類別說明的 Source string location 應為 "
+"``doc/classes/Node2D.xml`` 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:185
 msgid ""
@@ -293,6 +377,9 @@ msgid ""
 "also be used with the ``location:`` token, e.g. ``location:scenes_and_nodes."
 "rst``):"
 msgstr ""
+"要找到特定位置的頁面或類別，可以通過 Weblate 的進階搜尋功能，並指定"
+"「Location strings」查詢 (也可以使用 ``location:`` 附記來搜尋，如 ``location:"
+"scenes_and_nodes.rst``)："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:195
 msgid ""
@@ -305,11 +392,16 @@ msgid ""
 "happen that a given paragraph or section title is not at the location you'd "
 "expect it when reading the online version of a page."
 msgstr ""
+"如果某個原始字串出現在多個原始位置，則這些字串會被合併為同一個。舉例來說，在"
+"上方 ``location:scenes_and_nodes.rst`` 查詢中，搜尋結果第一個的"
+"「Introduction」也被用在其他數十個頁面內，其中也包含了出現在樣板 "
+"``scenes_and_nodes.rst`` 頁面之前的字串。點擊「Next」按鈕就可以移至上方顯示的"
+"「Scene and nodes」標題字串。因此，某個段落或段落標題的位置可能與在閱讀線上版"
+"本時出現的位置不同。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:206
-#, fuzzy
 msgid "Respecting the markup syntax"
-msgstr "測試結果"
+msgstr "遵守原本的標記語法"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:208
 msgid ""
@@ -317,15 +409,16 @@ msgid ""
 "and having some notions on the markup language used for each resource is "
 "important to avoid creating syntax errors in your translations."
 msgstr ""
+"各個翻譯資源的原始格式都不同。瞭解各個資源使用的標記語言可以避免在翻譯中出現"
+"語法錯誤。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:213
-#, fuzzy
 msgid "Editor interface (C++)"
-msgstr "Godot 介面"
+msgstr "編輯器界面 (C++)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:215
 msgid "The editor translations originate from C++ strings, and may use:"
-msgstr ""
+msgstr "編輯器翻譯來自 C++ 字串，這些字串可能會使用到："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:217
 msgid ""
@@ -337,6 +430,10 @@ msgid ""
 "the sentence. Example (``%s``  will be substituted with a file name or "
 "path)::"
 msgstr ""
+"**C 語言格式規範** 如 ``%s`` (字串) 或 ``%d`` (數字) 。這些規範會在執行階段被"
+"替取代，在翻譯時應將這些符號保留在翻譯內，並讓這些字串被取代掉之後還能保持其"
+"原意。如果從句子來看不清楚會被取代成什麼內容的話，則可能會需要參考 Source "
+"string location。範例 (``%s`` 會被取代為檔案名稱或路徑)："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:230
 msgid ""
@@ -348,11 +445,15 @@ msgid ""
 "used for vertical spacing, or manual wrapping of long lines which would "
 "otherwise be too long especially in the editor translation). Example::"
 msgstr ""
+"**C 語言逸出字元** 如 ``\\n`` (換行) 或 ``\\t`` (Tab 字元)。在 Weblate 編輯器"
+"中， ``\\n`` 字元會被取代為 ``↵`` (Return)，而 ``\\t`` 則會被取代為 ``↹`` 。"
+"Tab 字元並補償用，但在翻譯時應確保換行的使用與原始英語字串中使用的方式一致 "
+"(如果未正確使用則 Weblate 會顯示警告)。換行資源有時候也會被用來作為垂直空白，"
+"或是當字串太長的話用來手動斷行 (常用於編輯器翻譯)。如："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:247
-#, fuzzy
 msgid "Online documentation (RST)"
-msgstr "說明文件架構"
+msgstr "顯示說明文件 (RST)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:249
 msgid ""
@@ -360,6 +461,8 @@ msgid ""
 "which also use their own markup syntax to style text, create internal and "
 "external links, etc. Here are some examples::"
 msgstr ""
+"線上說明文件的翻譯源自 reStructuredText (RST) 檔。RST 檔也使用了自己的標記語"
+"法來格式化文字、建立內部或外部連結…等。下列為翻譯："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:291
 msgid ""
@@ -369,17 +472,22 @@ msgid ""
 "inline markup (bold, italics, inline code) and the internal and external "
 "hyperlink markup."
 msgstr ""
+"請參考 `reStructured Text primer (英語) <https://www.sphinx-doc.org/en/"
+"master/usage/restructuredtext/basics.html>`__ 以快速瞭解可能出現在原始字串內"
+"的 RST 標記語言。在翻譯時可能會遇到特殊的行內標記 (粗體、斜體、行內程式碼) 以"
+"及內部與外部超連結標記。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:297
-#, fuzzy
 msgid "Class reference (BBCode)"
-msgstr "類別參照手冊"
+msgstr "類別參照文件 (BBCode)"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:299
 msgid ""
 "The class reference is documented in the main Godot repository using XML "
 "files, and with BBCode-like markup for styling and internal references."
 msgstr ""
+"類別參照文件是放在 Godot 主儲存庫中的說明文件，使用 XML 檔案，並使用類似 "
+"BBCode 的標記語言來格式化字串與進行內部參照。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:302
 msgid ""
@@ -389,6 +497,10 @@ msgid ""
 "another class (e.g. ``[Node2D]``) or to a property in a given class (e.g. "
 "``[member Node2D.position]``), or for multiline code blocks. Example::"
 msgstr ""
+"有些標籤來自原版 BBCode (如 ``[b]粗體[/b]`` 與 ``[i]Italics[/i]``)，而其他標"
+"籤則為 Godot 專用的，用來提供進階功能，如行內程式碼 (如 ``[code]true[/"
+"code]``) 、到其他類別的連結 (如 ``[Node2D]``) 或到指定類別屬性的連結 (如 "
+"``[member Node2D.position]``) 、以及多行程式碼區塊。如："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:314
 msgid ""
@@ -400,12 +512,19 @@ msgid ""
 "you can translate the name of the variable which holds the result (``red "
 "= ...``)."
 msgstr ""
+"在上方的範例中，``[code]name[/code]``, ``[code]alpha[/code]`` 與 ``[Color]`` "
+"**不應** 進行翻譯，因為這些字串是用來引用其對應的引數名稱與 Godot API 中的類"
+"別。同樣地，``[codeblock]`` 中的內容也不應翻譯，如 ``ColorN`` 為 GodotAPI 的"
+"函式，而 ``\"red\"`` 為該函式支援的其中一個顏色名稱。要翻譯的話頂多只能翻譯保"
+"存其結果的變數名稱 (``red = ...``)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:321
 msgid ""
 "Note also that in the XML, each line is a paragraph, so you should not add "
 "line breaks if they are not part of the original translation."
 msgstr ""
+"另外也請注意，在 XML 中每一行都是一個獨立的段落，因此若原始翻譯中沒有斷行的"
+"話，就不應加上新的斷行。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:326
 msgid ""
@@ -413,11 +532,13 @@ msgid ""
 "BBCode-like tags <doc_updating_the_class_reference_bbcode>` which are used "
 "throughout the class reference."
 msgstr ""
+"請參考我們寫給類別參照文件撰寫人員的說明文件來瞭解 :ref:`所有類別 BBCode 的標"
+"籤 <doc_updating_the_class_reference_bbcode>` ，這些標籤會在類別參照文件中到"
+"處使用。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:331
-#, fuzzy
 msgid "Offline translation and testing"
-msgstr "國際化"
+msgstr "離線翻譯與測試"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:333
 msgid ""
@@ -426,12 +547,17 @@ msgid ""
 "your preferred PO editing application, such as `Poedit <https://poedit.net/"
 ">`__ or `Lokalize <https://userbase.kde.org/Lokalize>`__."
 msgstr ""
+"雖然我們建議使用 Weblate 的界面來撰寫翻譯，但也可以下載 PO 檔到本機上來以慣用"
+"的 PO 編輯器進行翻譯，如 `Poedit <https://poedit.net/>`__ 或 `Lokalize "
+"<https://userbase.kde.org/Lokalize>`__ 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:338
 msgid ""
 "To download the PO file locally, browse to the translation overview for your "
 "language, and select the first item in the \"Files\" menu:"
 msgstr ""
+"要下載 PO 檔到本機上，請瀏覽對應語言的翻譯概覽頁面，然後選擇「Files」選單中的"
+"第一項："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:343
 msgid ""
@@ -439,6 +565,8 @@ msgid ""
 "item in that same menu and select your file. Choose \"Add as translation\" "
 "for the file upload mode."
 msgstr ""
+"完成一系列的編輯後，請使用相同選單中的「Upload translation」項目並選擇編輯好"
+"的檔案。上傳模式請選擇「Adds as translation」。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:349
 msgid ""
@@ -448,6 +576,9 @@ msgid ""
 "advise to use the online interface so that you always work on the latest "
 "version."
 msgstr ""
+"如果從下載 PO 檔到上傳編輯後版本間經過了一段時間，翻譯內容就有可能其他貢獻者"
+"複寫。這也是我們建議使用線上界面的原因，因為這樣一來就能確保在處理的為最新版"
+"本。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:355
 msgid ""
@@ -455,6 +586,8 @@ msgid ""
 "you can use the downloaded PO file and :ref:`compile Godot from source <toc-"
 "devel-compiling>`."
 msgstr ""
+"若想在本機上測試所做出的更改 (尤其是編輯器翻譯)，可以下載 PO 檔並 :ref:`從原"
+"始碼編譯 Godot <toc-devel-compiling>` 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:358
 msgid ""
@@ -462,6 +595,9 @@ msgid ""
 "Esperanto) and place it in the ``editor/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/editor/translations>`__)."
 msgstr ""
+"重新命名 PO 檔為 ``<lang>.po`` (如世界語為 ``eo.po``)，並將該檔案放置於 "
+"``editor/translations/`` 資料夾內 (`GitHub <https://github.com/godotengine/"
+"godot/tree/master/editor/translations>`__) 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:362
 msgid ""
@@ -469,10 +605,13 @@ msgid ""
 "file similarly and placing it in the ``doc/translations/`` folder (`GitHub "
 "<https://github.com/godotengine/godot/tree/master/doc/translations>`__)."
 msgstr ""
+"也可以以相同的名稱來測試類別參照文件，更改 PO 檔案的名稱，然後將該檔案放置於 "
+"``doc/translations/`` 資料夾 (`GitHub <https://github.com/godotengine/godot/"
+"tree/master/doc/translations>`__)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:367
 msgid "Localizing documentation images"
-msgstr ""
+msgstr "本地化說明文件圖片"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:369
 msgid ""
@@ -481,6 +620,8 @@ msgid ""
 "Some of it includes text and might thus be relevant to localize in your "
 "language."
 msgstr ""
+"線上說明文件包含了許多圖片，這些圖片可能時 Godot 編輯器的截圖、自製圖像、或是"
+"其他類型的圖片內容。有些圖片包含文字，因此可能需要翻譯為你使用的語言。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:373
 msgid ""
@@ -488,6 +629,9 @@ msgid ""
 "<https://github.com/godotengine/godot-docs-l10n>`_ Git repository where the "
 "documentation translations are synced from Weblate."
 msgstr ""
+"圖片翻譯的部分不是通過 Weblate 處理的，而是直接通過 `godot-docs-l10n "
+"<https://github.com/godotengine/godot-docs-l10n>`_ 這個 Git 儲存庫處理的。該"
+"儲存庫中包含了所有從 Weblate 同步來的說明文件翻譯。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:379
 msgid ""
@@ -495,6 +639,8 @@ msgid ""
 "Git. We plan to work on a simplified Web tool which could be used to manage "
 "image localization in a convenient way, abstracting away these steps."
 msgstr ""
+"此一工作流程並不直觀，且需要一些 Git 的知識。我們計劃要製作一個簡單的 Web 工"
+"具來更方便地處理圖片本地化，藉此簡化這些步驟。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:383
 msgid ""
@@ -503,6 +649,10 @@ msgid ""
 "`doc_intro_to_the_editor_interface`. Click the \"Edit on GitHub\" link in "
 "the top right corner:"
 msgstr ""
+"若要翻譯圖片，首先應在其原始英語說明文件找到這些圖片。要找出圖片檔案，請先在"
+"英語版說明文件中瀏覽相關的頁面，如 :ref:"
+"`doc_intro_to_the_editor_interface` 。然後點擊右上角的「Edit on GitHub」連"
+"結："
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:390
 msgid ""
@@ -511,6 +661,10 @@ msgid ""
 "Note the full path to the image as it will be needed further down (here "
 "``getting_started/step_by_step/img/project_manager_first_open.png``)."
 msgstr ""
+"在 GitHub 上，請點擊欲翻譯的圖片，然後點擊「Download」按鈕來將該圖片下載到本"
+"機保存，然後通過圖片編輯工具來編輯該圖片。請記下該圖片的完整路徑，接下來還會"
+"用到 (本例中為 ``getting_started/step_by_step/img/project_manager_first_open."
+"png``)。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:397
 msgid ""
@@ -520,6 +674,9 @@ msgid ""
 "format, so you can browse the ``img/`` folder which contains them to check "
 "for that."
 msgstr ""
+"建立該圖片的本地化版本，可以通過編輯英語版圖片來製作，若該圖片為截圖的話，則"
+"直接以你的語言來在編輯器內截圖。有些圖片也有 SVG 格式的原始檔，因此瀏覽 "
+"``img/`` 資料夾內來看看是否有原始檔。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:402
 msgid ""
@@ -527,6 +684,9 @@ msgid ""
 "added before the extension, e.g. ``project_manager_first_open.png`` would "
 "become ``project_manager_first_open.fr.png`` for the French localization."
 msgstr ""
+"將本地化的圖片以與原始圖片相同的名稱保存，但應在副檔名前加上語言代碼，如 "
+"``project_manager_first_open.png`` 的法語本地化版本應為 "
+"``project_manager_first_open.fr.png`` 。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:406
 msgid ""
@@ -536,9 +696,15 @@ msgid ""
 "translated image there. In our example, the end result should be ``images/"
 "getting_started/step_by_step/img/project_manager_first_open.fr.png``."
 msgstr ""
+"最後，在 godot-docs-l10n_ 中，在 ``images`` 子資料夾中建立與原始圖片相同的資"
+"料夾結構 (`GitHub <https://github.com/godotengine/godot-docs-l10n/tree/"
+"master/images>`_)，然後將翻譯好的圖片放在這裡。在本例中，最終的結果應放置為 "
+"``images/getting_started/step_by_step/img/project_manager_first_open.fr."
+"png``。"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:412
 msgid ""
 "Repeat this for other images and :ref:`make a Pull Request "
 "<doc_pr_workflow>`."
 msgstr ""
+"為其他圖片重複此一過程，然後 :ref:`開啟 Pull Request <doc_pr_workflow>` 。"

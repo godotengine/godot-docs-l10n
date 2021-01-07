@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,22 +114,18 @@ msgstr ""
 "immer als bewährte Methode angesehen."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
-#, fuzzy
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr "#2: Das Problem muss bestehen"
+msgstr "#2: Um das Problem zu lösen, muss es überhaupt existieren"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
-#, fuzzy
 msgid ""
 "This is a variation of the previous practice. Adding anything unnecessary is "
 "not a good idea, but what constitutes what is necessary and what isn't?"
 msgstr ""
-"Dies ist eine Variation der vorherigen Praxis. Ich glaube, die meisten "
-"Entwickler sind sich einig, dass das Hinzufügen von unnötigen Elementen "
-"keine gute Idee ist, aber was macht das Notwendige aus und was nicht?"
+"Dies ist eine Abweichung der bisherigen Praxis. Etwas Unnötiges hinzuzufügen "
+"ist keine gute Idee, aber was ist notwendig und was nicht?"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:57
-#, fuzzy
 msgid ""
 "The answer to this question is that the problem needs to *exist* before it "
 "can be actually solved. It must not be speculation or a belief. The user "
@@ -165,7 +161,6 @@ msgid "I think users will eventually need to..."
 msgstr "Ich denke, Benutzer bräuchten irgendwann ..."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:70
-#, fuzzy
 msgid ""
 "This is generally considered a bad habit because trying to solve problems "
 "that *don't actually exist* in the present will often lead to code that will "
@@ -173,8 +168,8 @@ msgid ""
 "maintain than it needs to be."
 msgstr ""
 "Dies wird im Allgemeinen als schlechte Angewohnheit angesehen, da der "
-"Versuch Probleme zu lösen die derzeit nicht existieren, sehr oft zu Code "
-"führt der geschrieben, aber nie verwendet wird oder zu Code dessen "
+"Versuch Probleme zu lösen die derzeit *nicht wirklich* existieren, sehr oft "
+"zu Code führt der geschrieben, aber nie verwendet wird oder zu Code dessen "
 "Verwendung und Wartung erheblich komplexer ist als es sein muss."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:76
@@ -559,3 +554,13 @@ msgid ""
 "run it on iOS in the long term. Since iOS doesn't support dynamic linking, "
 "static linking the only option on that platform."
 msgstr ""
+"Außerdem müssen die Bibliotheken eine ausreichend freizügige Lizenz "
+"verwenden, um in Godot aufgenommen zu werden. Einige Beispiele für "
+"akzeptable Lizenzen sind Apache 2.0, BSD, MIT, ISC und MPL 2.0. Insbesondere "
+"können wir keine Bibliotheken akzeptieren, die unter der GPL oder LGPL "
+"lizenziert sind, da diese Lizenzen das statische Linken in proprietärer "
+"Software (als die Godot in den meisten exportierten Projekten verteilt wird) "
+"effektiv verbieten. Diese Anforderung gilt auch für den Editor, da wir ihn "
+"auf lange Sicht möglicherweise auf iOS betreiben wollen. Da iOS kein "
+"dynamisches Linking unterstützt, ist statisches Linking die einzige Option "
+"auf dieser Plattform."

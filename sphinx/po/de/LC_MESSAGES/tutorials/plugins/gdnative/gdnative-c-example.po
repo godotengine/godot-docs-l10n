@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:14
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://github.com/"
-"GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
+"describe below in the `GDNative-demos repository <https://docs.godotengine."
+"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
@@ -70,11 +70,11 @@ msgstr "Voraussetzungen"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
 msgid "Before we start you'll need a few things:"
-msgstr ""
+msgstr "Bevor wir beginnen, benötigen Sie einige Dinge:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
-msgstr ""
+msgstr "Eine ausführbare Godot-Datei für Ihre Zielversion."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
@@ -85,9 +85,9 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 msgid ""
-"A Git clone of the `godot_headers repository <https://github.com/"
-"GodotNativeTools/godot_headers>`_: these are the C headers for Godot's "
-"public API exposed to GDNative."
+"A Git clone of the `godot_headers repository <https://github.com/godotengine/"
+"godot_headers>`_: these are the C headers for Godot's public API exposed to "
+"GDNative."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
@@ -99,6 +99,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:66
 msgid "This will download the required files into that folder."
 msgstr ""
+"Dadurch werden die erforderlichen Dateien in diesen Ordner heruntergeladen."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:70
 msgid ""
@@ -350,11 +351,11 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:344
 msgid "The variant we return is destroyed automatically by Godot."
-msgstr ""
+msgstr "Die zurückgegebene Variante wird automatisch von Godot zerstört."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:346
 msgid "And that is the whole source code of our module."
-msgstr ""
+msgstr "Und das ist der gesamte Quellcode unseres Moduls."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:349
 msgid "Compiling"
@@ -397,7 +398,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:388
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
-msgstr ""
+msgstr "Erstellen der GDNativeLibrary (``.gdnlib``) Datei"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
 msgid ""
@@ -417,10 +418,12 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:399
 msgid "Start by clicking the create resource button in the Inspector:"
 msgstr ""
+"Beginnen Sie, indem Sie im Inspektor auf die Schaltfläche Ressource "
+"erstellen klicken:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:403
 msgid "And select ``GDNativeLibrary``:"
-msgstr ""
+msgstr "und wählen ``GDNativeLibrary``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:407
 msgid ""
@@ -437,6 +440,8 @@ msgstr "Haupt-Eigenschaften"
 msgid ""
 "In the Inspector, you have various properties to control loading the library."
 msgstr ""
+"Im Inspektor haben Sie verschiedene Eigenschaften, um das Laden der "
+"Bibliothek zu steuern."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:417
 msgid ""
@@ -519,10 +524,12 @@ msgid ""
 "The file is saved in a text-based format and should have contents similar to "
 "this:"
 msgstr ""
+"Die Datei wird in einem textbasierten Format gespeichert und sollte einen "
+"ähnlichen Inhalt haben:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:495
 msgid "Creating the NativeScript (``.gdns``) file"
-msgstr ""
+msgstr "Erstellen der NativeScript-Datei (``.gdns``)"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:497
 msgid ""
@@ -556,6 +563,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:519
 msgid "Finally, click on the save icon and save this as ``bin/simple.gdns``:"
 msgstr ""
+"Klicken Sie schließlich auf das Speichern-Symbol und speichern es als ``bin/"
+"simple.gdns``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:523
 msgid ""
@@ -566,19 +575,22 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:529
 msgid "Select the control node and attach a script to it:"
-msgstr ""
+msgstr "Wählen Sie den Control-Node aus und hängen Sie ein Skript an:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:533
 msgid "Next link up the ``pressed`` signal on the button to your script:"
 msgstr ""
+"Als nächstes verknüpfen Sie das ``pressed`` Signal der Schaltfläche mit "
+"Ihrem Skript:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:537
 msgid "Don't forget to save your scene, call it ``main.tscn``."
 msgstr ""
+"Vergessen Sie nicht, Ihre Szene zu speichern, nennen Sie sie ``main.tscn``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:539
 msgid "Now we can implement our ``main.gd`` code:"
-msgstr ""
+msgstr "Jetzt können wir unseren ``Haupt.gd`` Code implementieren:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:551
 msgid ""

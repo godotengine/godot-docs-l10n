@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -519,19 +519,18 @@ msgstr ""
 "<doc_introduction_to_the_buildsystem_tools>` muss aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid "``--export-pack <preset> <path>``"
-msgstr "``--export <target>``"
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
-#, fuzzy
 msgid ""
 "Like ``--export``, but only export the game pack for the given preset. The "
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
-"Wie ``--export``, aber Debug-Vorlage wird verwendet (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` muss aktiviert sein)."
+"Wie ``--export``, aber exportiere nur das Game Pack für das gegebene Preset. "
+"Die Erweiterung <path> bestimmt, ob sie im PCK- oder ZIP-Format vorliegt. (:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` muss aktiviert sein)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -741,9 +740,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Das Skript muss von ``SceneTree`` oder ``MainLoop`` erben."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "Hier ein kleines Beispiel wie es funktioniert:"
+msgstr "Hier ein kleines ``sayhello.gd` Beispiel wie es funktioniert:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid "And how to run it:"
@@ -765,6 +763,10 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"Die erste Zeile von ``sayhello.gd`` oben wird allgemein als *shebang* "
+"bezeichnet. Wenn sich die Godot-Binärdatei in Ihrem ``PATH`` als ``godot`` "
+"befindet, können Sie das Skript in modernen Linux-Distributionen sowie unter "
+"MacOS wie folgt ausführen:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:326
 msgid ""
@@ -772,3 +774,6 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"Wenn das oben Genannte unter Ihrer aktuellen Linux oder MacOS Version nicht "
+"funktioniert, können Sie den \"Shebang\" immer wie folgt direkt von Godot "
+"ausführen lassen:"

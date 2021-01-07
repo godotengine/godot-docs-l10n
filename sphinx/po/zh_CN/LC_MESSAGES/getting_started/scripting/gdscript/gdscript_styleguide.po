@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,6 +302,8 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
+"不要忽略浮点数中的前导或尾随零。 否则，这会使它们的可读性降低，很难一眼与整数"
+"区分开。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
@@ -321,13 +323,13 @@ msgstr "**糟糕的**："
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
-msgstr ""
+msgstr "对于十六进制数字，请使用小写字母，因为它们较矮，使数字更易于阅读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
-msgstr ""
+msgstr "利用GDScript的文字下划线，使大数字更易读。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -610,36 +612,32 @@ msgstr ""
 "<doc_gdscript_static_typing>`。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "命名的类型"
+msgstr "声明类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
-msgstr ""
+msgstr "要声明变量的类型，使用 ``<variable>: <type>``："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "使用箭头 ``->`` 定义函数的返回类型"
+msgstr "要声明函数的返回类型，使用``-> <type>``："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "核心类型"
+msgstr "推断类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
-#, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
-msgstr "当让编译器推断类型提示时，将冒号和等号一起写： ``:=``。"
+msgstr "在大多数情况下，你可以让编译器使用``:=``来推断类型："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
+msgstr "var health := 0  # 编译器会使用int类型。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
@@ -648,3 +646,6 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"然而，在少数情况下，当上下文缺失时，编译器会回退到函数的返回类型。例如，在节"
+"点的场景或文件被加载到内存中之前，``get_node()``无法自动推断类型。在这种情况"
+"下，你应该明确地设置类型。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
 "can download it from the Mac App Store."
 msgstr ""
+"`Xcode <https://developer.apple.com/xcode>`_ ist eine kostenlose MacOS "
+"spezifische IDE. Sie können es aus dem Mac App Store herunterladen."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
 msgid "Importing the project"
@@ -63,7 +65,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid "Arguments"
-msgstr ""
+msgstr "Argumente"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid ""
@@ -115,6 +117,10 @@ msgid ""
 "asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
 "source/**``."
 msgstr ""
+"Setzen Sie **Header Search Paths** auf den absoluten Pfad zum Godot-"
+"Stammordner. Sie müssen auch Unterverzeichnisse einschließen. Um dies zu "
+"erreichen, fügen Sie am Ende des Pfads zwei Sternchen (``**``) hinzu, z.B. "
+"``/Users/me/repos/godot-source/**``."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:53
 msgid ""
@@ -126,23 +132,29 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:54
 msgid "Uncheck **Create external build system project**."
-msgstr ""
+msgstr "Deaktivieren Sie **Externes Build-Systemprojekt erstellen**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:60
 msgid ""
 "Next select **Create groups** for the **Added folders** option and check "
 "*only* your command line indexing target in the **Add to targets** section."
 msgstr ""
+"Wählen Sie als Nächstes **Gruppen erstellen** für die Option **Ordner "
+"hinzugefügt** und aktivieren Sie *nur* Ihr Befehlszeilen-Indizierungsziel im "
+"Abschnitt **Zu Zielen hinzufügen**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:67
 msgid "Xcode will now index the files. This may take a few minutes."
-msgstr ""
+msgstr "Xcode indiziert nun die Dateien. Dies kann einige Minuten dauern."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:68
 msgid ""
 "Once Xcode is done indexing, you should have jump-to-definition, "
 "autocompletion, and full syntax highlighting."
 msgstr ""
+"Sobald die Indizierung von Xcode abgeschlossen ist, sollten Sie über Sprung-"
+"zur-Definition, Autovervollständigung und vollständige Syntaxhervorhebung "
+"verfügen."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
 msgid "Debugging the project"
@@ -153,6 +165,8 @@ msgid ""
 "To enable debugging support you need to edit the external build target's "
 "build and run schemes."
 msgstr ""
+"Um die Debugging-Unterstützung zu aktivieren, müssen Sie die Build- und Run-"
+"Schemata des externen Build-Ziels bearbeiten."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
@@ -195,10 +209,12 @@ msgid ""
 "Set the **Executable** to the file you linked in your post-build action "
 "script."
 msgstr ""
+"Setzen Sie **Ausführbar** für die Datei fest, die Sie in Ihrem Post-Build-"
+"Aktionsskript verknüpft haben."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:100
 msgid "Check **Debug executable**."
-msgstr ""
+msgstr "Aktivieren Sie **Debug ausführbare Datei**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:101
 msgid ""
@@ -207,12 +223,19 @@ msgid ""
 "the executable to open the specified project (must be provided as an "
 "*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
+"Sie können der Registerkarte **Argumente** zwei Argumente hinzufügen: Das "
+"Flag ``-e`` öffnet den Editor anstelle des Projektmanagers, und das Argument "
+"``--path`` weist die ausführbare Datei an, das angegebene Projekt zu öffnen "
+"( muss als *absoluter* Pfad zum Projektstamm angegeben werden, nicht als "
+"``project.godot`` Datei)."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/osx/"
 "godot_main_osx.mm`` and run the project."
 msgstr ""
+"Um zu überprüfen, ob alles funktioniert, setzen Sie einen Haltepunkt in "
+"``platform/osx/godot_main_osx.mm`` und führen Sie das Projekt aus."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 msgid ""

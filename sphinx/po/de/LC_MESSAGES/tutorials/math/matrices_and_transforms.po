@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,6 +154,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "To do this in code, we can simply multiply each of the vectors:"
 msgstr ""
+"Um dies im Code zu tun, können wir jeden der Vektoren einfach multiplizieren:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:92
 msgid ""
@@ -172,6 +173,8 @@ msgstr ""
 msgid ""
 "In actual projects, you can use the `scaled()` method to perform scaling."
 msgstr ""
+"In aktuellen Projekten können Sie die Methode `scaled()` verwenden, um eine "
+"Skalierung durchzuführen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
 msgid "Rotating the transformation matrix"
@@ -258,10 +261,12 @@ msgstr ""
 msgid ""
 "In actual projects, you can use the `rotated()` method to perform rotations."
 msgstr ""
+"In aktuellen Projekten können Sie die `rotated()` Methode verwenden, um "
+"Rotationen durchzuführen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "Basis of the transformation matrix"
-msgstr ""
+msgstr "Basis der Transformationsmatrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid ""
@@ -382,15 +387,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:293
-#, fuzzy
 msgid ""
 "Normally, you will always have the basis vectors perpendicular to each "
 "other. However, shearing can be useful in some situations, and understanding "
 "shearing helps you understand how transforms work."
 msgstr ""
 "Normalerweise sind die Basisvektoren immer senkrecht zueinander, in einigen "
-"Situationen kann das Abschneiden jedoch hilfreich sein. Wenn Sie das "
-"Abschneiden verstehen, wird auch verständlicher wie Transformationen "
+"Situationen kann das Beschneiden jedoch hilfreich sein. Wenn Sie das "
+"Beschneiden verstehen, wird auch verständlicher wie Transformationen "
 "funktionieren."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:297
@@ -413,7 +417,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "As an example, let's set Y to (1, 1):"
-msgstr ""
+msgstr "Als Beispiel setzen wir Y auf (1, 1):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:328
 msgid ""
@@ -619,6 +623,8 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:534
 msgid "Lastly, applying the identity transform will always do nothing."
 msgstr ""
+"Und schließlich wird die Anwendung der Identitätsumwandlung niemals etwas "
+"bewirken."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid ""
@@ -655,6 +661,8 @@ msgid ""
 "Transforming a position by a transform and its inverse results in the same "
 "position (same for \"xform_inv\"):"
 msgstr ""
+"Das Transformieren einer Position durch eine Transformation und ihre "
+"Umkehrung führt zu derselben Position (dasselbe für \"xform_inv\"):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:582
 msgid "How does it all work in 3D?"
@@ -669,6 +677,13 @@ msgid ""
 "stores the :ref:`class_Basis` separately from the :ref:`class_Transform`, "
 "since the math can get complex and it makes sense to separate it."
 msgstr ""
+"Eines der großartigen Dinge an Transformationsmatrizen ist, dass sie "
+"zwischen 2D- und 3D-Transformationen sehr ähnlich funktionieren. Alle Codes "
+"und Formeln, die oben für 2D verwendet wurden, funktionieren in 3D gleich, "
+"mit 3 Ausnahmen: die Hinzufügung einer dritten Achse, dass jede Achse vom "
+"Typ :ref:`class_Vector3` ist, und auch, dass Godot die :ref:`class_Basis` "
+"getrennt von der :ref:`class_Transform` speichert, da die Mathematik komplex "
+"werden kann und es sinnvoll ist, sie zu trennen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:592
 msgid ""
@@ -678,6 +693,12 @@ msgid ""
 "translate, we manipulate the origin; and to shear, we change the basis "
 "vectors to be non-perpendicular."
 msgstr ""
+"Alle Konzepte für die Funktionsweise von Translation (Verschiebung), "
+"Rotation (Drehung), Skalierung (Größenänderung) und Scherung (Beschneidung) "
+"in 3D sind im Vergleich zu 2D gleich. Zum Skalieren nehmen wir jede "
+"Komponente und multiplizieren sie; zum Drehen ändern wir, wohin jeder "
+"Basisvektor zeigt; zum Verschieben verändern wir den Ursprung; und zum "
+"Scheren ändern wir die Basisvektoren so, dass sie nicht senkrecht sind."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:600
 msgid ""
@@ -729,6 +750,12 @@ msgid ""
 "rotations as a set of 3 numbers, however, they are limited and not very "
 "useful, except for trivial cases."
 msgstr ""
+"Mit 2D haben wir eine einfache Möglichkeit (atan2), zwischen einer "
+"Transformationsmatrix und einem Winkel zu wechseln. In 3D können wir die "
+"Rotation nicht einfach als eine Zahl darstellen. Es gibt etwas namens "
+"Eulerwinkel, das Rotationen als eine Menge von 3 Zahlen darstellen kann. "
+"Diese sind jedoch begrenzt und nicht sehr nützlich, außer in trivialen "
+"Fällen."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:631
 msgid ""
@@ -738,6 +765,12 @@ msgid ""
 "you is to completely ignore how they work under-the-hood, because they are "
 "very complicated and unintuitive."
 msgstr ""
+"In 3D werden normalerweise keine Winkel verwendet, sondern entweder eine "
+"Transformationsbasis (die so ziemlich überall in Godot verwendet wird) oder "
+"Quaternionen (erweiterter reeller Zahlenbereich). Godot kann Quaternionen "
+"mit der Struktur :ref:`class_Quat` darstellen. Sie sollten dabei am besten "
+"völlig ignorieren, wie dies unter der Haube funktioniert, denn sie sind sehr "
+"kompliziert und nicht intuitiv."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:637
 msgid ""

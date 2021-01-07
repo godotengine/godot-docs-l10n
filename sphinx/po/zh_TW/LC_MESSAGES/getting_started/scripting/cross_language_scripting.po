@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -162,16 +162,15 @@ msgid "Calling C# methods from GDScript"
 msgstr "在 GDScript 中呼叫 C# 方法"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:158
-#, fuzzy
 msgid ""
 "Again, calling C# methods from GDScript should be straightforward. The "
 "marshalling process will do its best to cast the arguments to match function "
 "signatures. If that's impossible, you'll see the following error: ``Invalid "
 "call. Nonexistent function `FunctionName```."
 msgstr ""
-"同樣地，從 GDScript 中呼叫 C# 方法應該很簡單。封送處理程序會竭力將引數的型別"
-"轉換為符合函式簽章的型別。若無法自動轉換，則會看到這個錯誤： ``Invalid call. "
-"Nonexistent function `FunctionName``` 。"
+"同樣地，從 GDScript 中呼叫 C# 方法應該很簡單。封送處理程序會儘可能地將引數的"
+"型別轉換為符合函式簽章的型別。若無法自動轉換，則會看到這個錯誤： ``Invalid "
+"call. Nonexistent function `FunctionName``` 。"
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:174
 msgid "Calling GDScript methods from C#"

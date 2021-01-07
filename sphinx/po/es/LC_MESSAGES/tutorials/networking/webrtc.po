@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,11 @@ msgstr ""
 #: ../../docs/tutorials/networking/webrtc.rst:4
 #: ../../docs/tutorials/networking/webrtc.rst:21
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../docs/tutorials/networking/webrtc.rst:7
 msgid "HTML5, WebSocket, WebRTC"
-msgstr ""
+msgstr "HTML5, WebSocket, WebRTC"
 
 #: ../../docs/tutorials/networking/webrtc.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "WebAssembly platform, allowing your game to run directly in the browser when "
 "a user visit your webpage."
 msgstr ""
+"Una de las grandes características de Godot es su capacidad de exportar a la "
+"plataforma HTML5/WebAssembly, lo que permite que el juego se ejecute "
+"directamente en el navegador cuando un usuario visita su página web."
 
 #: ../../docs/tutorials/networking/webrtc.rst:11
 msgid ""
@@ -40,6 +43,10 @@ msgid ""
 "only HTTPRequests until recently, when first WebSocket and then WebRTC were "
 "proposed as standards."
 msgstr ""
+"Esta es una gran oportunidad tanto para las demostraciones como para los "
+"juegos completos, pero solía venir con algunas limitaciones. En el área de "
+"redes, los navegadores solían soportar sólo HTTPRequests hasta hace poco, "
+"cuando primero se propusieron como estándares WebSocket y luego WebRTC."
 
 #: ../../docs/tutorials/networking/webrtc.rst:14
 msgid "WebSocket"
@@ -53,6 +60,11 @@ msgid ""
 "notifications to browsers, and has been used to implement chats, turn-based "
 "games, etc."
 msgstr ""
+"Cuando el protocolo WebSocket fue estandarizado en diciembre de 2011, "
+"permitió a los navegadores crear conexiones estables y bidireccionales con "
+"un servidor WebSocket. El protocolo es bastante simple, pero es una "
+"herramienta muy poderosa para enviar notificaciones push a los navegadores, "
+"y se ha utilizado para implementar chats, juegos por turnos, etc."
 
 #: ../../docs/tutorials/networking/webrtc.rst:18
 msgid ""
@@ -60,6 +72,9 @@ msgid ""
 "reliability but not for latency, so not good for real-time applications like "
 "VoIP and fast-paced games."
 msgstr ""
+"Los WebSockets, sin embargo, siguen usando una conexión TCP, lo que es bueno "
+"para la fiabilidad pero no para la latencia, por lo que no es bueno para "
+"aplicaciones en tiempo real como VoIP y juegos de ritmo rápido."
 
 #: ../../docs/tutorials/networking/webrtc.rst:23
 msgid ""
@@ -69,6 +84,12 @@ msgid ""
 "relies on many other technologies behind the scenes (ICE, DTLS, SDP) to "
 "provide fast, real-time, and secure communication between two peers."
 msgstr ""
+"Por esta razón, desde 2010, Google comenzó a trabajar en una nueva "
+"tecnología llamada WebRTC, que más tarde, en 2017, se convirtió en una "
+"recomendación de candidato del W3C. WebRTC es un conjunto de "
+"especificaciones mucho más complejo, y se basa en muchas otras tecnologías "
+"entre bastidores (ICE, DTLS, SDP) para proporcionar una comunicación rápida, "
+"en tiempo real y segura entre dos pares."
 
 #: ../../docs/tutorials/networking/webrtc.rst:25
 msgid ""
@@ -76,6 +97,9 @@ msgid ""
 "whenever possible a direct communication (i.e. try to avoid a relaying "
 "server)."
 msgstr ""
+"La idea es encontrar la ruta más rápida entre los dos pares y establecer "
+"siempre que sea posible una comunicación directa (es decir, tratar de evitar "
+"un servidor de retransmisión)."
 
 #: ../../docs/tutorials/networking/webrtc.rst:27
 msgid ""
@@ -84,6 +108,11 @@ msgid ""
 "form of Session Description Protocol - SDP strings). This usually takes the "
 "form of a so-called WebRTC Signaling Server."
 msgstr ""
+"Sin embargo, esto tiene un precio, que es que cierta información de los "
+"medios de comunicación debe ser intercambiada entre los dos pares antes de "
+"que la comunicación pueda comenzar (en forma de Protocolo de Descripción de "
+"Sesión - cadenas SDP). Esto normalmente toma la forma de un llamado Servidor "
+"de Señalización WebRTC."
 
 #: ../../docs/tutorials/networking/webrtc.rst:31
 msgid ""
@@ -93,6 +122,12 @@ msgid ""
 "Once this step is done, peers can disconnect from the signaling server and "
 "keep the direct Peer-to-Peer (P2P) connection open."
 msgstr ""
+"Los pares se conectan a un servidor de señales (por ejemplo, un servidor "
+"WebSocket) y envían su información de medios. El servidor luego transmite "
+"esta información a otros pares, permitiéndoles establecer la comunicación "
+"directa deseada. Una vez realizado este paso, los pares pueden desconectarse "
+"del servidor de señalización y mantener abierta la conexión directa Peer-to-"
+"Peer (P2P)."
 
 #: ../../docs/tutorials/networking/webrtc.rst:34
 msgid "Using WebRTC in Godot"
@@ -107,6 +142,12 @@ msgid ""
 "section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` for "
 "more details."
 msgstr ""
+"WebRTC está implementado en Godot a través de dos clases principales :ref:"
+"`WebRTCPeerConnection <class_WebRTCPeerConnection>` y :ref:"
+"`WebRTCDataChannel <class_WebRTCDataChannel>`, además de la implementación "
+"de la API multijugador :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>`. "
+"Ver la sección sobre :ref:`highh-level multiplayer "
+"<doc_high_level_multiplayer>` para más detalles."
 
 #: ../../docs/tutorials/networking/webrtc.rst:38
 msgid ""
@@ -116,6 +157,11 @@ msgid ""
 "native>`__ for instructions and to get the latest `release <https://github."
 "com/godotengine/webrtc-native/releases>`__."
 msgstr ""
+"Estas clases están disponibles automáticamente en HTML5, pero **requieren un "
+"plugin GDNative externo en plataformas nativas (no HTML5)**. Revisa el "
+"repositorio de plugins nativos de la web <https://github.com/godotengine/"
+"webrtc-native>`__ para instrucciones y para obtener el último `lanzamiento "
+"<https://github.com/godotengine/webrtc-native/releases>`__."
 
 #: ../../docs/tutorials/networking/webrtc.rst:41
 msgid "Minimal connection example"
@@ -127,6 +173,9 @@ msgid ""
 "peers in the same application. This is not very useful in real life, but "
 "will give you a good overview of how a WebRTC connection is set up."
 msgstr ""
+"Este ejemplo le mostrará cómo crear una conexión WebRTC entre dos pares en "
+"la misma aplicación. Esto no es muy útil en la vida real, pero te dará una "
+"buena visión general de cómo se establece una conexión WebRTC."
 
 #: ../../docs/tutorials/networking/webrtc.rst:91
 msgid "This will print:"
@@ -142,16 +191,22 @@ msgid ""
 "different scenes, and using a :ref:`singleton <doc_singletons_autoload>` as "
 "a signaling server."
 msgstr ""
+"Este ejemplo se expande sobre el anterior, separando los pares en dos "
+"escenas diferentes, y usando un :ref:`singleton <doc_singletons_autoload>` "
+"como servidor de señales."
 
 #: ../../docs/tutorials/networking/webrtc.rst:141
 msgid "And now for the local signaling server:"
-msgstr ""
+msgstr "Y ahora para el servidor de señales locales:"
 
 #: ../../docs/tutorials/networking/webrtc.rst:143
 msgid ""
 "This local signaling server is supposed to be used as a :ref:`singleton "
 "<doc_singletons_autoload>` to connect two peers in the same scene."
 msgstr ""
+"Este servidor local de señales se supone que debe ser usado como un :ref:"
+"`singleton <doc_singletons_autoload>` para conectar dos pares en la misma "
+"escena."
 
 #: ../../docs/tutorials/networking/webrtc.rst:177
 msgid "Then you can use it like this:"
@@ -159,11 +214,11 @@ msgstr "Luego puedes usarlas así:"
 
 #: ../../docs/tutorials/networking/webrtc.rst:198
 msgid "This will print something similar to this:"
-msgstr ""
+msgstr "Esto imprimirá algo similar a esto:"
 
 #: ../../docs/tutorials/networking/webrtc.rst:206
 msgid "Remote signaling with WebSocket"
-msgstr ""
+msgstr "Señalización remota con WebSocket"
 
 #: ../../docs/tutorials/networking/webrtc.rst:208
 msgid ""
@@ -172,3 +227,7 @@ msgid ""
 "demo projects <https://github.com/godotengine/godot-demo-projects>`_ under "
 "`networking/webrtc_signaling`."
 msgstr ""
+"Una demostración más avanzada usando WebSocket para la señalización de pares "
+"y :ref:`WebRTCMultiplayer <class_WebRTCMultiplayer>` está disponible en los "
+"`proyectos de demostración de Godot <https://github.com/godotengine/godot-"
+"demo-projects>`_ bajo `networking/webrtc_signaling`."

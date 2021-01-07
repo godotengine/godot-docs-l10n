@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,19 +35,23 @@ msgstr "`Python 3.5+ <https://www.python.org>`_."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
-msgstr ""
+msgstr "`SCons 3.0+ <https://www.scons.org>`_ Build-System."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
 msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (oder die "
+"einfacheren Kommandozeilenwerkzeuge für Xcode)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
 msgstr ""
+"*Optional* - `yasm <https://yasm.tortall.net/>`_ (für WebM SIMD-"
+"Optimierungen)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 msgid ""
@@ -76,16 +80,20 @@ msgstr "Kompilieren"
 #: ../../docs/development/compiling/compiling_for_osx.rst:33
 msgid "Start a terminal, go to the root directory of the engine source code."
 msgstr ""
+"Starten Sie ein Terminal und wechseln Sie in das Wurzelverzeichnis des "
+"Engine-Quellcodes."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:35
 msgid "To compile for Intel (x86-64) powered Macs, use::"
-msgstr ""
+msgstr "Zum Kompilieren für Intel (x86-64) betriebene Macs verwenden Sie:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:39
 msgid ""
 "To compile for Apple Silicon (ARM64) powered Macs, use (only for Godot "
 "3.2.3+)::"
 msgstr ""
+"Um für Apple Silicon (ARM64) powered Macs zu kompilieren, verwenden Sie (nur "
+"für Godot 3.2.3+)::"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:43
 msgid ""
@@ -117,7 +125,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:67
 msgid "Compiling a headless/server build"
-msgstr ""
+msgstr "Kompilieren eines Headless/Server-Builds"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:69
 msgid ""
@@ -130,6 +138,8 @@ msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
+"Um einen *Server*-Build zu kompilieren, der für den Betrieb von dedizierten "
+"Spielservern optimiert ist, benutzen Sie:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid "Cross-compiling for macOS from Linux"
@@ -155,12 +165,16 @@ msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
+"Befolgen Sie die Anweisungen zum Packen des SDK: https://github.com/"
+"tpoechtrager/osxcross#packaging-the-sdk"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:95
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
+"Befolgen Sie die Anweisungen zum Installieren von OSXCross: https://github."
+"com/tpoechtrager/osxcross#installation"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:98
 msgid ""
@@ -172,6 +186,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_osx.rst:104
 msgid "Now you can compile with SCons like you normally would::"
 msgstr ""
+"Jetzt können Sie mit SCons kompilieren, wie Sie es normalerweise tun würden::"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:108
 msgid ""

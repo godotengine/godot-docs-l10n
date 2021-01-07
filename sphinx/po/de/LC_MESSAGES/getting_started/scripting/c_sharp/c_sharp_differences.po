@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,8 @@ msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
+"Wie im :ref:`doc_c_sharp` erklärt, benutzt C# generell ``PascalCase`` "
+"anstatt von ``snake_case``, welches in GDScript und C++ benutzt wird."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
@@ -61,7 +63,7 @@ msgid ""
 "constants were moved to the ``Error`` enum."
 msgstr ""
 "Globale Konstanten wurden in ihre eigenen Aufzählungen verschoben. Zum "
-"Beispiel wurden ``ERR_* `` Konstanten in die ``Error`` Aufzählung verschoben."
+"Beispiel wurden ``ERR_*`` Konstanten in die ``Error`` Aufzählung verschoben."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
@@ -185,6 +187,9 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
+"Manchmal kann es nützlich sein, die Direktive ``using static`` zu verwenden. "
+"Diese Anweisung ermöglicht den Zugriff auf die Mitglieder und "
+"verschachtelten Typen einer Klasse, ohne den Klassennamen anzugeben."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:92
@@ -206,6 +211,11 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
+"Verwenden Sie die Eigenschaft ``[Export]`` anstelle des GDScript-"
+"Schlüsselworts ``export``. Diese Eigenschaft kann auch mit diesen Parametern "
+"optional versehen werden: :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` und ``hintString``. "
+"Standardwerte können durch Zuweisen eines Werts festgelegt werden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -217,6 +227,10 @@ msgid ""
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
+"Verwenden Sie die Eigenschaft ``[Signal]`` um ein Signal anstelle des "
+"GDScript-Schlüsselworts ``signal`` zu deklarieren. Diese Eigenschaft sollte "
+"für ein `delegate` verwendet werden, dessen Namenssignatur zur Definition "
+"des Signals verwendet wird."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
 msgid "See also: :ref:`doc_c_sharp_signals`."
@@ -244,6 +258,11 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
+"In einigen sehr seltenen Fällen reicht dies jedoch nicht aus. Beispielsweise "
+"möchten Sie vielleicht auf ein Mitglied aus der Basisklasse ``Godot.Object`` "
+"zugreifen, z.B. ``Connect``. Für solche Anwendungsfälle stellen wir eine "
+"statische Eigenschaft mit dem Namen ``Singleton`` bereit, die die Singleton-"
+"Instanz zurückgibt. Der Typ dieser Instanz ist ``Godot.Object``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
 msgid "String"
@@ -254,6 +273,9 @@ msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
+"Verwenden Sie ``System.String`` (``string``). Die meisten String-Methoden "
+"von Godot werden von der Klasse ``StringExtensions`` als "
+"Erweiterungsmethoden bereitgestellt."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
 msgid "There are a few differences, though:"
@@ -266,6 +288,10 @@ msgid ""
 "extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
+"``erase``: Zeichenfolgen sind in C# unveränderlich, daher können wir die an "
+"die Erweiterungsmethode übergebene Zeichenfolge nicht ändern. Aus diesem "
+"Grund wurde ``Erase`` als Erweiterungsmethode von ``StringBuilder`` anstelle "
+"von string hinzugefügt. Alternativ können Sie ``string.Remove`` verwenden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:168
 msgid ""
@@ -273,6 +299,9 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: Es wird eine zusätzliche Methode "
+"bereitgestellt, bei der es sich um eine Überladung von ``IsSubsequenceOf`` "
+"handelt, mit der Sie die Groß- und Kleinschreibung explizit angeben können:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:179
 msgid ""
@@ -280,6 +309,9 @@ msgid ""
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
+"``Match``/``Matchn``/``ExprMatch``: Neben ``Match`` und ``Matchn`` wird eine "
+"zusätzliche Methode bereitgestellt, mit der Sie die Groß- und "
+"Kleinschreibung explizit angeben können:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid "Basis"
@@ -291,6 +323,10 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
+"Strukturen können in C# keine parameterlosen Konstruktoren haben. Daher "
+"initialisiert ``new Basis()`` alle primitiven Mitglieder auf ihren "
+"Standardwert. Verwenden Sie ``Basis.Identity`` anstelle von ``Basis()`` in "
+"GDScript und C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:196
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:242
@@ -320,6 +356,10 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
+"Strukturen können in C# keine parameterlosen Konstruktoren haben. Daher "
+"initialisiert ``new Transform2D()`` alle primitiven Elemente auf ihren "
+"Standardwert. Bitte verwenden Sie ``Transform2D.Identity`` anstelle von "
+"``Transform2D()`` in GDScript und C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:211
 msgid ""
@@ -346,6 +386,8 @@ msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
+"Die folgende Methode wurde in eine Eigenschaft mit einem *etwas* anderen "
+"Namen konvertiert:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:228
 msgid "``center()``"
@@ -364,6 +406,8 @@ msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
+"Das folgende Feld wurde in eine Eigenschaft mit einem *etwas* anderen Namen "
+"konvertiert:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
 msgid "``end``"
@@ -391,11 +435,17 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
+"Strukturen können in C# keine parameterlosen Konstruktoren haben. Daher "
+"initialisiert ``new Quat()`` alle primitiven Mitglieder auf ihren "
+"Standardwert. Bitte verwenden Sie ``Quat.Identity`` anstelle von ``Quat()`` "
+"in GDScript und C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:257
 msgid ""
 "The following methods were converted to a property with a different name:"
 msgstr ""
+"Die folgenden Methoden wurden in eine Eigenschaft mit einem anderen Namen "
+"konvertiert:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
 msgid "``length()``"
@@ -422,6 +472,8 @@ msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
+"*Das ist vorübergehend. PoolArrays benötigen ihre eigenen Typen um sie wie "
+"gewünscht zu verwenden.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:274
 msgid "``Array``"
@@ -493,6 +545,9 @@ msgid ""
 "Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
 "Array)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Array<T>`` ist eine typsichere Hülle um ``Godot."
+"Collections.Array``. Verwenden Sie den Konstruktor ``Godot.Collections."
+"Array<T>(Godot.Collections.Array)`` um eine zu erstellen."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
@@ -508,6 +563,9 @@ msgid ""
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
+"``Godot.Collections.Dictionary<T>`` ist eine typsichere Hülle um ``Godot."
+"Collections.Dictionary``. Verwenden Sie den Konstruktor ``Godot.Collections."
+"Dictionary<T>(Godot.Collections.Dictionary)`` um eine zu erstellen."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "Variant"
@@ -536,12 +594,17 @@ msgid ""
 "achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
 "csharp/language-reference/keywords/yield>`_."
 msgstr ""
+"Etwas Ähnliches wie GDScript's ``yield`` mit einem einzigen Parameter kann "
+"mit C#'s `yield Schlüsselwort <https://docs.microsoft.com/en-US/dotnet/"
+"csharp/language-reference/keywords/yield>`_ erreicht werden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:311
 msgid ""
 "The equivalent of yield on signal can be achieved with async/await and "
 "``Godot.Object.ToSignal``."
 msgstr ""
+"Das Gleiche wie yield für Signale kann mit async/await und ``Godot.Object."
+"ToSignal``erreicht werden."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:321
 msgid "Other differences"
@@ -552,6 +615,8 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
+"``preload`` wie es in GDScript funktioniert, ist in C# nicht verfügbar. "
+"Verwenden Sie stattdessen ``GD.Load`` oder ``ResourceLoader.Load``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:326
 msgid "Other differences:"

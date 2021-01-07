@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Einführung"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:9
-#, fuzzy
 msgid ""
 "In an ideal world, computers would run at infinite speed. The only limit to "
 "what we could achieve would be our imagination. However, in the real world, "
@@ -40,7 +39,6 @@ msgstr ""
 "zwingt."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:14
-#, fuzzy
 msgid ""
 "Thus, designing games and other software is a compromise between what we "
 "would like to be possible, and what we can realistically achieve while "
@@ -51,26 +49,22 @@ msgstr ""
 "während wir eine gute Leistung beibehalten."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:18
-#, fuzzy
 msgid "To achieve the best results, we have two approaches:"
-msgstr ""
-"Um die besten Ergebnisse zu erzielen, haben wir zwei Ansätze: *schneller "
-"arbeiten* intelligenter arbeiten"
+msgstr "Um die besten Ergebnisse zu erzielen, haben wir zwei Ansätze:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:20
 msgid "Work faster."
-msgstr ""
+msgstr "schneller arbeiten"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:21
 msgid "Work smarter."
-msgstr ""
+msgstr "intelligenter arbeiten"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:23
 msgid "And preferably, we will use a blend of the two."
 msgstr "Und vorzugsweise verwenden wir eine Mischung aus beiden."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:26
-#, fuzzy
 msgid "Smoke and mirrors"
 msgstr "Rauch und Spiegel"
 
@@ -94,7 +88,6 @@ msgid "The nature of slowness"
 msgstr "Die Natur der Langsamkeit"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:36
-#, fuzzy
 msgid ""
 "To the outside observer, performance problems are often lumped together. But "
 "in reality, there are several different kinds of performance problems:"
@@ -103,31 +96,28 @@ msgstr ""
 "In Wirklichkeit gibt es jedoch verschiedene Arten von Leistungsproblemen:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:39
-#, fuzzy
 msgid ""
 "A slow process that occurs every frame, leading to a continuously low frame "
 "rate."
 msgstr ""
 "Ein langsamer Prozess, der bei jedem Frame auftritt und zu einer "
-"kontinuierlich niedrigen Bildwiederholrate führt"
+"kontinuierlich niedrigen Bildwiederholrate führt."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:41
-#, fuzzy
 msgid ""
 "An intermittent process that causes \"spikes\" of slowness, leading to "
 "stalls."
 msgstr ""
 "Ein zeitweise aussetzender Prozess, der 'Spitzen' der Langsamkeit verursacht "
-"und zu Verzögerungen führt"
+"und zu Verzögerungen führt."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:43
-#, fuzzy
 msgid ""
 "A slow process that occurs outside of normal gameplay, for instance, when "
 "loading a level."
 msgstr ""
 "Ein langsamer Prozess, der außerhalb des normalen Spiels stattfindet, z.B. "
-"beim Laden eines Levels"
+"beim Laden eines Levels."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:46
 msgid "Each of these are annoying to the user, but in different ways."
@@ -153,17 +143,14 @@ msgid "There are several methods of measuring performance, including:"
 msgstr "Es gibt mehrere Arten Leistung zu messen, wie:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:57
-#, fuzzy
 msgid "Putting a start/stop timer around code of interest."
-msgstr "einen Start / Stop Timer um den interessanten Code setzen"
+msgstr "Einen Start/Stop Timer um den zu untersuchenden Code setzen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler."
 msgstr "Godot Profiler verwenden"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third-party CPU profilers."
 msgstr "Externer Profiler von Drittanbietern verwenden"
 
@@ -173,14 +160,15 @@ msgid ""
 "developer.nvidia.com/nsight-graphics>`__ or `apitrace <https://apitrace."
 "github.io/>`__."
 msgstr ""
+"Verwendung von GPU-Profilern/Debuggern wie z.B. `NVIDIA Nsight Graphics "
+"<https://developer.nvidia.com/nsight-graphics>`__ oder `apitrace <https://"
+"apitrace.github.io/>`__."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:63
-#, fuzzy
 msgid "Checking the frame rate (with V-Sync disabled)."
-msgstr "Überprüfen der Bildwiederholrate (mit abgeschaltetem vsync)"
+msgstr "Überprüfen der Bildwiederholrate (mit abgeschaltetem V-Sync)"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:65
-#, fuzzy
 msgid ""
 "Be very aware that the relative performance of different areas can vary on "
 "different hardware. It's often a good idea to measure timings on more than "
@@ -188,15 +176,14 @@ msgid ""
 msgstr ""
 "Beachten Sie, dass die relative Leistung verschiedener Bereiche je nach "
 "Hardware variieren kann. Oft ist es eine gute Idee, Timings auf mehr als "
-"einem Gerät vorzunehmen, insbesondere auf Mobilgeräten genauso wie auf "
-"Desktops, wenn Sie für Mobilgeräte entwickeln wollen."
+"einem Gerät vorzunehmen, insbesondere auf Mobilgeräten, wenn Sie dafür "
+"entwickeln wollen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:70
 msgid "Limitations"
 msgstr "Limitierungen"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:72
-#, fuzzy
 msgid ""
 "CPU profilers are often the go-to method for measuring performance. However, "
 "they don't always tell the whole story."
@@ -205,15 +192,13 @@ msgstr ""
 "jedoch nicht immer alle Infos."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:75
-#, fuzzy
 msgid ""
 "Bottlenecks are often on the GPU, \"as a result\" of instructions given by "
 "the CPU."
 msgstr ""
-"Engpässe treten häufig auf der GPU auf, `aufgrund` von Anweisungen der CPU"
+"Engpässe treten häufig auf der GPU auf, `aufgrund` von Anweisungen der CPU."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:77
-#, fuzzy
 msgid ""
 "Spikes can occur in the operating system processes (outside of Godot) \"as a "
 "result\" of instructions used in Godot (for example, dynamic memory "
@@ -221,7 +206,7 @@ msgid ""
 msgstr ""
 "Spitzen können in den Betriebssystemprozessen (außerhalb von Godot) `als "
 "Ergebnis` von Anweisungen auftreten, die in Godot verwendet werden (z.B. "
-"dynamische Speicherzuweisung)"
+"dynamische Speicherzuweisung)."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:79
 msgid ""
@@ -230,13 +215,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:81
-#, fuzzy
 msgid ""
 "You may have to solve performance problems that occur on hardware you don't "
 "have access to."
 msgstr ""
 "Möglicherweise müssen Sie Leistungsprobleme lösen, die auf Hardware "
-"auftreten, auf die Sie keinen Zugriff haben"
+"auftreten, auf die Sie keinen Zugriff haben."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:84
 msgid ""
@@ -265,13 +249,12 @@ msgid "Hypothesis testing"
 msgstr "Hypothesentest"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:97
-#, fuzzy
 msgid ""
 "Say, for example, that you believe sprites are slowing down your game. You "
 "can test this hypothesis by:"
 msgstr ""
-"Angenommen Sie glauben, dass Sprites Ihr Spiel verlangsamen. Sie können "
-"diese Hypothese beispielsweise testen, indem Sie:"
+"Angenommen Sie glauben Ihr Spiel wird durch Sprites verlangsamt. Sie können "
+"diese Hypothese testen indem Sie:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:100
 msgid "Measuring the performance when you add more sprites, or take some away."
@@ -280,7 +263,6 @@ msgstr ""
 "entfernen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:102
-#, fuzzy
 msgid ""
 "This may lead to a further hypothesis: does the size of the sprite determine "
 "the performance drop?"
@@ -289,13 +271,12 @@ msgstr ""
 "den Leistungsabfall?"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:105
-#, fuzzy
 msgid ""
 "You can test this by keeping everything the same, but changing the sprite "
 "size, and measuring performance."
 msgstr ""
 "Sie können dies testen, indem Sie alles gleich lassen, aber die Sprite-Größe "
-"ändern und die Leistung messen"
+"ändern und die Leistung messen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:109
 msgid "Binary search"
@@ -316,7 +297,6 @@ msgstr ""
 "verbessert?"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:116
-#, fuzzy
 msgid ""
 "Once you know which of the two halves contains the bottleneck, you can "
 "repeat this process until you've pinned down the problematic area."
@@ -340,21 +320,19 @@ msgstr ""
 "und wie oft Funktionen aufgerufen wurden."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:126
-#, fuzzy
 msgid ""
 "This can be very useful both to identify bottlenecks and to measure the "
 "results of your improvements. Sometimes, attempts to improve performance can "
 "backfire and lead to slower performance. **Always use profiling and timing "
 "to guide your efforts.**"
 msgstr ""
-"Dies kann sehr nützlich sein um Engpässe zu identifizieren und die "
+"Dies kann sehr nützlich sein, um Engpässe zu identifizieren und die "
 "Ergebnisse Ihrer Verbesserungen zu messen. Manchmal können Versuche die "
 "Leistung zu verbessern nach hinten losgehen und zu einer langsameren "
-"Leistung führen. Verwenden Sie daher immer Profiler und Timing, um Ihre "
-"Bemühungen zu steuern."
+"Leistung führen. **Verwenden Sie immer Profiler und Timing, um Ihre "
+"Bemühungen zu steuern.**"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:131
-#, fuzzy
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
 "`doc_debugger_panel`."
@@ -367,9 +345,12 @@ msgid "Principles"
 msgstr "Prinzipien"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:136
-#, fuzzy
 msgid "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ said:"
-msgstr "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
+msgstr ""
+"Die 5 Design-Prinzipien der Objektorientierten Programmierung mit kann mit "
+"dem Akronym `SOLID <https://en.wikipedia.org/wiki/SOLID>`_ zusammenfassen.\n"
+"`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ erklärte diese "
+"einmal auf einfache Weise:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:138
 msgid ""
@@ -393,7 +374,6 @@ msgid "The messages are very important:"
 msgstr "Die Nachrichten sind sehr wichtig:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:147
-#, fuzzy
 msgid ""
 "Developer time is limited. Instead of blindly trying to speed up all aspects "
 "of a program, we should concentrate our efforts on the aspects that really "
@@ -414,7 +394,6 @@ msgstr ""
 "auf Bereiche zu beschränken, die wirklich davon profitieren."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:154
-#, fuzzy
 msgid ""
 "Just because we *can* optimize a particular bit of code, it doesn't "
 "necessarily mean that we *should*. Knowing when and when not to optimize is "
@@ -425,7 +404,6 @@ msgstr ""
 "optimieren ist, ist eine großartige Fähigkeit die es zu entwickeln gilt."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:158
-#, fuzzy
 msgid ""
 "One misleading aspect of the quote is that people tend to focus on the "
 "subquote *\"premature optimization is the root of all evil\"*. While "
@@ -462,7 +440,6 @@ msgstr ""
 "laufen wie ein Programm, das auf Leistung ausgelegt ist."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:173
-#, fuzzy
 msgid ""
 "This tends to be far more important in game or graphics programming than in "
 "general programming. A performant design, even without low-level "
@@ -470,9 +447,9 @@ msgid ""
 "low-level optimization."
 msgstr ""
 "Dies ist in der Spiel- und Grafikprogrammierung weitaus wichtiger als in der "
-"allgemeinen Programmierung. Ein performantes Design läuft auch ohne "
-"Optimierung auf niedriger Ebene oft um ein Vielfaches schneller als ein "
-"mittelmäßiges Design mit Optimierung auf niedriger Ebene."
+"allgemeinen Programmierung. Ein performantes Design läuft auch ohne Low-"
+"Level-Optimierung oft um ein Vielfaches schneller als ein mittelmäßiges "
+"Design mit Low-Level-Optimierung."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:179
 msgid "Incremental design"
@@ -521,19 +498,17 @@ msgid "The optimization process"
 msgstr "Der Optimierungprozess"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:198
-#, fuzzy
 msgid ""
 "Assuming we have a reasonable design, and taking our lessons from Knuth, our "
 "first step in optimization should be to identify the biggest bottlenecks - "
 "the slowest functions, the low-hanging fruit."
 msgstr ""
-"Unter der Annahme, dass wir ein vernünftiges Design haben und von Knuth "
-"gelernt haben, sollte unser erster Schritt bei der Optimierung darin "
+"Unter der Annahme, dass wir ein vernünftiges Design haben und wir auch fit "
+"im programmieren sind, sollte unser erster Schritt bei der Optimierung darin "
 "bestehen, die größten Engpässe zu identifizieren - die langsamsten "
 "Funktionen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:202
-#, fuzzy
 msgid ""
 "Once we've successfully improved the speed of the slowest area, it may no "
 "longer be the bottleneck. So we should test/profile again and find the next "
@@ -541,27 +516,24 @@ msgid ""
 msgstr ""
 "Sobald wir die Geschwindigkeit des langsamsten Bereichs erfolgreich "
 "verbessert haben, ist dies möglicherweise nicht mehr der Engpass. Wir "
-"sollten also erneut testen / profilieren und den nächsten Engpass finden, "
-"auf den wir uns konzentrieren können."
+"sollten also erneut testen/profilieren und den nächsten Engpass finden, auf "
+"den wir uns konzentrieren können."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:206
 msgid "The process is thus:"
 msgstr "Der Prozess ist also:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:208
-#, fuzzy
 msgid "Profile / Identify bottleneck."
 msgstr "Profile / Engpass identifizieren"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:209
-#, fuzzy
 msgid "Optimize bottleneck."
 msgstr "Engpass optimieren"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:210
-#, fuzzy
 msgid "Return to step 1."
-msgstr "Kehren Sie zu Schritt 1 zurück"
+msgstr "Kehren Sie zu Schritt 1 zurück."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:213
 msgid "Optimizing bottlenecks"
@@ -596,7 +568,6 @@ msgstr ""
 "Level oder beim Laden vorberechneter Datendateien)."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:227
-#, fuzzy
 msgid ""
 "Once algorithms and data are good, you can often make small changes in "
 "routines which improve performance. For instance, you can move some "
@@ -604,23 +575,25 @@ msgid ""
 "nested loops. (This should be feasible if you know a 2D array's width or "
 "height in advance.)"
 msgstr ""
-"Sobald Algorithmen und Daten gut sind, können Sie häufig kleine Änderungen "
-"an Routinen vornehmen, die die Leistung verbessern, z.B. Berechnungen "
-"außerhalb von Schleifen verschieben."
+"Sobald die Algorithmen und Daten gut sind, können Sie häufig kleine "
+"Änderungen an Routinen vornehmen um die Leistung zu verbessern. Sie können "
+"beispielsweise einige Berechnungen außerhalb von Schleifen verschieben oder "
+"verschachtelte ``for``-Schleifen in nicht verschachtelte Schleifen "
+"umwandeln. (Dies sollte möglich sein, wenn Sie die Breite oder Höhe eines 2D-"
+"Arrays im Voraus kennen.)"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:232
-#, fuzzy
 msgid ""
 "Always retest your timing/bottlenecks after making each change. Some changes "
 "will increase speed, others may have a negative effect. Sometimes, a small "
 "positive effect will be outweighed by the negatives of more complex code, "
 "and you may choose to leave out that optimization."
 msgstr ""
-"Testen Sie das Timing bzw. die Engpässe immer wieder nach jeder Änderung. "
-"Einige Änderungen erhöhen die Geschwindigkeit, andere können sich negativ "
-"auswirken. Manchmal wird ein kleiner positiver Effekt durch die negativen "
-"Aspekte komplexeren Codes aufgewogen, und Sie können diese Optimierung "
-"weglassen."
+"Testen Sie das Timing bzw. mögliche Engpässe immer wieder nach jeder "
+"Änderung. Einige Änderungen erhöhen die Geschwindigkeit, andere können sich "
+"negativ auswirken. Manchmal wird ein kleiner positiver Effekt durch die "
+"negativen Aspekte komplexeren Codes aufgewogen, und Sie können diese "
+"Optimierung weglassen."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:238
 msgid "Appendix"
@@ -631,7 +604,6 @@ msgid "Bottleneck math"
 msgstr "Engpass Mathematik"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:243
-#, fuzzy
 msgid ""
 "The proverb *\"a chain is only as strong as its weakest link\"* applies "
 "directly to performance optimization. If your project is spending 90% of the "
@@ -640,36 +612,33 @@ msgid ""
 msgstr ""
 "Das Sprichwort \"Eine Kette ist nur so stark wie ihr schwächstes Glied\" "
 "gilt direkt für die Leistungsoptimierung. Wenn Ihr Projekt 90% der Zeit in "
-"Funktion 'A' verbringt, kann die Optimierung von A einen massiven Einfluss "
-"auf die Leistung haben."
+"Funktion ``A`` verbringt, kann die Optimierung von ``A`` einen massiven "
+"Einfluss auf die Leistung haben."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:259
-#, fuzzy
 msgid ""
 "In this example, improving this bottleneck ``A`` by a factor of 9× decreases "
 "overall frame time by 5× while increasing frames per second by 5×."
 msgstr ""
-"In diesem Beispiel wird der Engpass A um den Faktor 9x verbessert, was die "
-"Gesamte Frame-Zeit um das 5-fache verringert und somit die Bilder pro "
+"In diesem Beispiel wird der Engpass ``A`` um den Faktor 9x verbessert, was "
+"die Gesamte Frame-Zeit um das 5-fache verringert und somit die Bilder pro "
 "Sekunde um das 5-fache erhöht."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:262
-#, fuzzy
 msgid ""
 "However, if something else is running slowly and also bottlenecking your "
 "project, then the same improvement can lead to less dramatic gains:"
 msgstr ""
-"Wenn jedoch etwas anderes langsam läuft und Ihr Projekt einen Engpass "
-"aufweist, kann dieselbe Verbesserung zu weniger dramatischen Erfolgen führen:"
+"Wenn jedoch etwas anderes langsam läuft und Ihr Projekt ausbremst, kann "
+"dieselbe Verbesserung zu weniger dramatischen Erfolgen führen:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:277
-#, fuzzy
 msgid ""
 "In this example, even though we have hugely optimized function ``A``, the "
 "actual gain in terms of frame rate is quite small."
 msgstr ""
 "In diesem Beispiel ist der tatsächliche Gewinn in Bezug auf die Bildrate "
-"recht gering, obwohl wir die Funktionalität A enorm optimiert haben."
+"recht gering, obwohl wir die Funktionalität ``A`` enorm optimiert haben."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:280
 msgid ""
@@ -682,10 +651,9 @@ msgstr ""
 "beiden bestimmt."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:296
-#, fuzzy
 msgid ""
 "In this example, we optimized the CPU hugely again, but the frame time "
 "didn't improve because we are GPU-bottlenecked."
 msgstr ""
-"In diesem Beispiel haben wir die CPU erneut enorm optimiert, aber die Frame-"
-"Zeit hat sich nicht verbessert, da wir einen GPU-Engpass haben."
+"In diesem Beispiel haben wir die CPU erneut enorm optimiert, aber die "
+"Bildwiederholrate hat sich nicht verbessert, da wir einen GPU-Engpass haben."

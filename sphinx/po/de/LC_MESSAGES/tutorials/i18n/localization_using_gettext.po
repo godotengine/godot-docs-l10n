@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,6 +66,8 @@ msgid ""
 "Multiline strings are more convenient to edit in gettext files compared to "
 "CSV files."
 msgstr ""
+"Mehrzeilige Zeichenfolgen lassen sich in gettext-Dateien bequemer bearbeiten "
+"als in CSV-Dateien."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:29
 msgid "Disadvantages"
@@ -122,12 +124,16 @@ msgid ""
 "**macOS:** Use `Homebrew <https://brew.sh/>`_ to install gettext with the "
 "``brew install gettext`` command."
 msgstr ""
+"**macOS:** Verwenden Sie ``Homebrew <https://brew.sh/>`_, um gettext mit dem "
+"Befehl ``brew install gettext`` zu installieren."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:58
 msgid ""
 "**Linux:** On most distributions, install the ``gettext`` package from your "
 "distribution's package manager."
 msgstr ""
+"**Linux:** Bei den meisten Distributionen installieren Sie das Paket "
+"``gettext`` über den Paketmanager Ihrer Distribution."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
 msgid "Creating the PO template (POT) manually"
@@ -174,6 +180,8 @@ msgstr ""
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:94
 msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
 msgstr ""
+"Nach der Installation von ``babel`` und ```babel-godot``, zum Beispiel mit "
+"pip:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
 msgid ""
@@ -184,7 +192,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
 msgid "You can then run pybabel like so:"
-msgstr ""
+msgstr "Sie können dann pybabel wie folgt ausführen:"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
 msgid ""
@@ -196,7 +204,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:124
 msgid "Creating a messages file from a PO template"
-msgstr ""
+msgstr "Erstellen einer Nachrichtendatei aus einer PO-Vorlage"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
 msgid ""
@@ -219,7 +227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:141
 msgid "Loading a messages file in Godot"
-msgstr ""
+msgstr "Laden einer Nachrichtendatei in Godot"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
 msgid ""
@@ -235,10 +243,12 @@ msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
 "and testing translations in Godot."
 msgstr ""
+"Weitere Informationen zum Importieren und Testen von Übersetzungen in Godot "
+"finden Sie unter :ref:`doc_internationalizing_games`."
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:153
 msgid "Updating message files to follow the PO template"
-msgstr ""
+msgstr "Aktualisieren der Nachrichtendateien, um der PO-Vorlage zu folgen"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
 msgid ""
@@ -256,7 +266,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:169
 msgid "Checking the validity of a PO file or template"
-msgstr ""
+msgstr "Überprüfen der Gültigkeit einer PO-Datei oder -Vorlage"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
 msgid ""

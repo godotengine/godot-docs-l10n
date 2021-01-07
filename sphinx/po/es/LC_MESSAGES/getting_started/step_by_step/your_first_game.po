@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,15 +137,14 @@ msgid "Player scene"
 msgstr "Escena del jugador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"La primer escena que haremos define el objeto ``Player``. Uno de los "
-"beneficios de crear una escena del jugador aparte es que se puede probar de "
-"manera separada, aún antes de haber creado otras partes del juego."
+"La primer escena define el objeto ``Player``. Uno de los beneficios de crear "
+"una escena aparte para el jugador es que se puede probar de manera separada, "
+"aún antes de haber creado otras partes del juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -909,15 +908,15 @@ msgid "Main scene"
 msgstr "Escena principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
 "Ahora es momento de juntar todo. Crea una nueva escena y agrega un :ref:"
-"`Node <class_Node>` llamado ``Main``. Haz clic en el botón \"Instanciar\" y "
-"selecciona la escena grabada ``Player.tscn``."
+"`Node <class_Node>` llamado ``Main``. Asegúrate de crear un Node, **no** un "
+"Node2D. Haz clic en el botón \"Instanciar\" y selecciona la escena grabada "
+"``Player.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
@@ -1004,7 +1003,6 @@ msgstr ""
 "editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -1014,7 +1012,7 @@ msgid ""
 msgstr ""
 "Selecciona el botón del medio (\"Añadir Punto\") y dibuja el camino haciendo "
 "clic para agregar los puntos en las esquinas como se muestra. Para tener los "
-"puntos ajustados a la rejilla, asegúrate de tener marcado \"Ajustar a "
+"puntos ajustados a la cuadrícula, asegúrate de tener marcado \"Ajustar a "
 "cuadrícula\". Esta opción se encuentra a la izquierda del botón \"Bloquear"
 "\", que aparece como un imán al lado de las líneas de intersección."
 

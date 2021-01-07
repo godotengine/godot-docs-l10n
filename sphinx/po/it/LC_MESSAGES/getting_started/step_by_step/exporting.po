@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,6 @@ msgstr ""
 "in uno stile di input click-and-move."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default Godot emulates mouse input from touch input. That means if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -86,32 +85,32 @@ msgid ""
 "input. In the \"Project Settings\" under *Input Devices* and *Pointing*, set "
 "*Emulate Touch From Mouse* to \"On\"."
 msgstr ""
-"Per impostazione predefinita Godot emula l'input del mouse tramite il touch. "
-"Questo significa che se qualcosa è codificato per essere attivato da un "
-"evento del mouse, anche il touch lo attiverà. Se si vuole disabilitarlo per "
-"qualsiasi motivo, oppure emulare il tocco del mouse, è possibile tramite "
-"\"Impostazioni progetto\" , *Dispositivi di ingresso* e *Puntamento*"
+"Di default Godot emula l'input del mouse dall'input touch. Ciò significa che "
+"se qualcosa viene codificato per attivarsi con un evento del mouse, anche "
+"l'input touch lo attiverà. Godot può anche emulare l'input touch dal clic "
+"del mouse, del quale ne avremo bisogno per essere in grado di continuare a "
+"giocare sul nostro computer dopo che passeremo all'input touch. In "
+"\"Impostazioni progetto\" in *Dispositivi di input* e *Puntamento*, imposta "
+"*Emula touch dal mouse* su \"Attivo\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:39
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to *Display*, then click on *Window*. "
 "In the *Stretch* options, set *Mode* to \"2d\" and *Aspect* to \"keep\"."
 msgstr ""
-"Prima di modificare il metodo di input, nelle impostazioni del progetto vai "
-"a \"Display\", quindi fai clic su \"Finestra\". Nelle opzioni di estensione, "
-"impostare \"Modalità\" su \"2d\" e su \"Mantieni\". Ciò garantisce che il "
-"gioco venga ridimensionato in modo coerente su schermi di dimensioni diverse."
+"Vogliamo anche assicurarci che il gioco sia in scala costante su schermi di "
+"dimensioni diverse, quindi nelle impostazioni del progetto andate su "
+"*Visualizza*, poi cliccate su *Finestra*. Nelle opzioni *Stretch*, impostare "
+"*Mode* su \"2d\" e *Aspect* su \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:43
-#, fuzzy
 msgid ""
 "Since we are already in the *Window* settings, we should also set under "
 "*Handheld* the *Orientation* to \"portrait\"."
 msgstr ""
-"Poiché ci troviamo già nelle impostazioni *Finestra*, dovremmo anche "
-"impostare in * Handheld* l'*Orientamento* su \"verticale\"."
+"Dato che siamo già nelle impostazioni *Finestra*, dovremmo anche impostare "
+"sotto *Manuale* l'*Orientamento* su \"ritratto\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:48
 msgid ""
@@ -164,13 +163,12 @@ msgstr ""
 "esportazione:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:256
-#, fuzzy
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"Nella finestra che appare, è possibile fare clic su \"Download\" per "
-"ottenere la versione del modello relativa alla versione di Godot."
+"Nella finestra che appare, puoi cliccare su \"Download\" per ottenere la "
+"versione del modello che corrisponde alla tua versione di Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -351,14 +349,14 @@ msgstr ""
 "SDK Android sul sistema e la posizione del keystore appena creato."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above). Select the Android Presets and under *Options* go "
 "to *Screen* and set *Orientation* to \"Portrait\"."
 msgstr ""
-"Ora sei pronto per l'esportazione. Clicca su *Progetto -> Esporta* e "
-"aggiungi un preset per Android (vedi sopra)."
+"Ora sei pronto per l'esportazione. Clicca su *Project -> Export* e aggiungi "
+"un preset per Android (vedi sopra). Seleziona i preset per Android e sotto "
+"*Opzioni* vai su *Schermo* e imposta *Orientamento* su \"Ritratto\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:345
 msgid ""
@@ -469,18 +467,16 @@ msgstr ""
 "Al termine dell'esportazione, avrai una cartella contenente i seguenti file:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can search online to find "
 "suggestions for your specific OS."
 msgstr ""
-"Tramite la visualizzazione del file '.html' nel browser verrà riprodotto il "
-"gioco. Tuttavia, non è possibile aprire direttamente il file, è necessario "
-"che sia servito da un server Web. Se non ne hai già configurato uno sul "
-"computer, puoi utilizzare Google per trovare suggerimenti per il tuo "
-"specifico sistema operativo."
+"La visualizzazione del file `.html` nel tuo browser ti permette di giocare. "
+"Tuttavia, non è possibile aprire il file direttamente, deve essere servito "
+"da un server web. Se non ne hai uno impostato sul tuo computer, puoi cercare "
+"online per trovare suggerimenti per il tuo specifico sistema operativo."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:404
 msgid ""
@@ -510,8 +506,8 @@ msgid ""
 "find at the `Godot GitHub repository <https://github.com/godotengine/godot/"
 "issues>`_."
 msgstr ""
-"Il supporto del browser per WASM non è molto diffuso. Firefox e Chrome lo "
-"supportano entrambi, ma potresti ancora trovare alcune cose che non "
-"funzionano. Assicurati di aver aggiornato il browser alla versione più "
-"recente e segnala eventuali bug che trovi nel repository 'Godot Github "
-"<https://github.com/godotengine/godot/issues>`_."
+"Sebbene il WASM sia supportato in tutti i principali browser, è ancora una "
+"tecnologia emergente e si possono trovare alcune cose che non funzionano. "
+"Assicurati di aver aggiornato il tuo browser alla versione più recente, e "
+"segnala qualsiasi bug che trovi nel repository `Godot GitHub <https://github."
+"com/godotengine/godot/issues>``_."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Optimizing 3D performance"
 msgstr "Optimizando las prestaciones en 3D"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:10
-#, fuzzy
 msgid "Culling"
 msgstr "Polling"
 
@@ -39,9 +38,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:18
-#, fuzzy
 msgid "Occlusion culling"
-msgstr "Modo de Oclusión"
+msgstr "Eliminación de oclusión"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:20
 msgid ""
@@ -111,7 +109,6 @@ msgid "Transparent objects"
 msgstr "Objetos transparentes"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:65
-#, fuzzy
 msgid ""
 "Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader "
 "<class_Shader>` to improve performance. This, however, can not be done with "
@@ -127,15 +124,22 @@ msgstr ""
 "adelante para hacer que se mezclen con lo que hay detrás del trabajo. Por lo "
 "tanto ¡intenta reducir al mínimo la transparencia de los objetos! Si un "
 "objeto tiene una sección pequeña con transparencia, intenta hacer de esa "
-"sección un material independiente."
+"sección un material independiente.Godot ordena los objetos por :ref:"
+"`Material <class_Material>` y :ref:`Shader <class_Shader>` para mejorar el "
+"rendimiento. Sin embargo, esto no se puede hacer con objetos transparentes. "
+"Los objetos transparentes se renderizan de atrás hacia adelante para "
+"combinarlos con lo que hay detrás. Como resultado, **intente utilizar la "
+"menor cantidad posible de objetos transparentes**. Si un objeto tiene una "
+"sección pequeña con transparencia, intente hacer de esa sección una "
+"superficie separada con su propio material."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:73
-#, fuzzy
 msgid ""
 "For more information, see the :ref:`GPU optimizations "
 "<doc_gpu_optimization>` doc."
 msgstr ""
-"Para más información, consulta la página :ref:`doc_c_sharp_differences`."
+"Para obtener más información, consulte :ref:`GPU optimizations "
+"<doc_gpu_optimization>` doc."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:77
 msgid "Level of detail (LOD)"
@@ -152,9 +156,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:87
-#, fuzzy
 msgid "Billboards and imposters"
-msgstr "Billboard Mode"
+msgstr "Vallas publicitarias e impostores"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:89
 msgid ""
@@ -188,7 +191,6 @@ msgid "Use instancing (MultiMesh)"
 msgstr "Usar la instanciación (MultiMesh)"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:109
-#, fuzzy
 msgid ""
 "If several identical objects have to be drawn in the same place or nearby, "
 "try using :ref:`MultiMesh <class_MultiMesh>` instead. MultiMesh allows the "
@@ -225,21 +227,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:128
-#, fuzzy
 msgid ""
 "In general, if several lights need to affect a scene, it's best to use :ref:"
 "`doc_baked_lightmaps`. Baking can also improve the scene quality by adding "
 "indirect light bounces."
 msgstr ""
-"Las luces pequeñas no suelen ser un problema de rendimiento. Las sombras un "
-"poco más. En general, si varias luces necesitan afectar una escena, lo ideal "
-"es hacer un bake (:ref:`doc_baked_lightmaps`). El baking también puede "
-"mejorar la calidad de la escena añadiendo rebotes de luz indirectos."
+"En general, si varias luces necesitan afectar una escena, es mejor usar :ref:"
+"`doc_baked_lightmaps`. Hornear también puede mejorar la calidad de la escena "
+"al agregar rebotes de luz indirectos."
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
-#, fuzzy
 msgid "Animation and skinning"
-msgstr "Duración de la animación"
+msgstr "Animación y skinning"
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
 msgid ""

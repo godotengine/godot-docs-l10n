@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,12 +158,18 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
+"若無法使用 rcedit 更改圖示，則可以改而 :ref:`自行編譯更改好圖示的客製化 "
+"Windows 匯出樣板 <doc_compiling_for_windows>` 。要在編譯的匯出樣板裡更改圖"
+"示，請在 **編譯匯出樣板前** 將 `platform/windows/godot.ico <https://github."
+"com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ 更改為你要使"
+"用的 ICO 檔案。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
+"完成之後，即可在專案的 Windows 匯出預設中將匯出樣板指定為客製化匯出樣板。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
 msgid "Testing the result"
@@ -175,7 +181,6 @@ msgid ""
 msgstr "現在可以匯出專案了。若一切正常，應該可以看到這個結果："
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
-#, fuzzy
 msgid ""
 "If your icon isn't showing up properly, on Windows 10, try clearing the icon "
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,16 +52,15 @@ msgstr ""
 "gerendert werden, sodass sich die Effizienz insgesamt verbessert."
 
 #: ../../docs/tutorials/optimization/index.rst:17
-#, fuzzy
 msgid ""
 "Configuring the properties of every material for every object that needs to "
 "be rendered is also slow. To solve this, objects are sorted by material to "
 "reduce the costs. At the same time, sorting has a cost."
 msgstr ""
-"Das Konfigurieren der Eigenschaften jedes Materials für jedes Objekt, das "
-"gerendert werden muss, ist ebenfalls langsam. Um dies zu lösen werden "
-"Objekte nach Material sortiert, um die Kosten zu senken, aber gleichzeitig "
-"hat auch das Sortieren gewisse Kosten."
+"Auch die Konfiguration der Eigenschaften jedes Materials für jedes Objekt, "
+"das gerendert werden muss, ist langsam. Um dies zu lösen werden Objekte nach "
+"Material sortiert, um die Kosten zu senken, aber gleichzeitig hat auch das "
+"Sortieren gewisse Kosten."
 
 #: ../../docs/tutorials/optimization/index.rst:21
 #, fuzzy
@@ -79,7 +78,6 @@ msgstr ""
 "können nicht so viele aktive Objekte verarbeiten."
 
 #: ../../docs/tutorials/optimization/index.rst:27
-#, fuzzy
 msgid ""
 "And there are many more examples of this! Game engines strive to be general-"
 "purpose in nature. Balanced algorithms are always favored over algorithms "
@@ -87,21 +85,19 @@ msgid ""
 "are fast but are more difficult to use."
 msgstr ""
 "Und es gibt noch viele weitere Beispiele! Spiele-Engines sind von Natur aus "
-"allgemein einsetzbar, daher werden ausgewogene Algorithmen immer gegenüber "
-"Algorithmen bevorzugt, die in bestimmten Situationen schnell, in anderen "
-"allerdings langsam sind oder Algorithmen, die zwar schnell sind, aber die "
-"Benutzerfreundlichkeit erschweren."
+"allgemein einsetzbar, daher werden ausgewogene Algorithmen immer Algorithmen "
+"vorgezogen, die in manchen Situationen schnell und in anderen langsam sind, "
+"oder Algorithmen, die zwar schnell, aber schwieriger zu verwenden sind."
 
 #: ../../docs/tutorials/optimization/index.rst:32
-#, fuzzy
 msgid ""
 "Godot is not an exception to this. While it is designed to have backends "
 "swappable for different algorithms, the default backends prioritize balance "
 "and flexibility over performance."
 msgstr ""
-"Godot ist keine Ausnahme, und obwohl Backends für verschiedene Algorithmen "
-"austauschbar sind, setzen die Standard-Backends auf Balance und Flexibilität "
-"gegenüber Leistung."
+"Godot bildet dabei keine Ausnahme. Während es so konzipiert ist, dass die "
+"Backends für verschiedene Algorithmen austauschbar sind, haben bei den "
+"Standard-Backends Ausgewogenheit und Flexibilität Vorrang vor Leistung."
 
 #: ../../docs/tutorials/optimization/index.rst:36
 msgid ""

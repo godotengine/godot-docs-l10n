@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -400,7 +400,7 @@ msgid ""
 "class name to snake_case::"
 msgstr ""
 "Benutze einen Unterstrich für Dateinamen. Für Klassennamen (Wortanfänge "
-"groß) füge den Unterstrich ein (wandle PascalCase in Snake_Case)::"
+"groß) füge den Unterstrich ein (wandle PascalCase in Snake_Case):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
 msgid ""
@@ -544,7 +544,7 @@ msgid ""
 msgstr ""
 "Geben Sie ggf. den Klassennamen ein. Mit dieser Funktion können Sie eine "
 "GDScript-Datei in Ihrem Projekt in einen globalen Typ umwandeln. Weitere "
-"Informationen finden Sie unter: ref: `doc_gdscript`."
+"Informationen finden Sie unter :ref:`doc_gdscript`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
@@ -684,42 +684,41 @@ msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
-"Seit Godot 3.1 unterstützt GDScript: ref: `optionale statische Typisierung "
+"Seit Godot 3.1 unterstützt GDScript :ref:`optionale statische Typisierung "
 "<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "Benannte Typen"
+msgstr "Deklarierte Typen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
 msgstr ""
+"Verwenden Sie ``<Variable>: <Typ>`` um den Typ einer Variablen zu "
+"deklarieren:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "Definieren Sie den Rückgabetyp einer Funktion mit dem Pfeil ->"
+msgstr ""
+"Um den Rückgabetyp einer Funktion zu deklarieren Verwenden Sie ``-> <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "Kerntypen"
+msgstr "auf Typen rückschließen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
-#, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
 msgstr ""
-"Wenn der Compiler den Typ erkennen soll, schreiben Sie den Doppelpunkt und "
-"die Gleichheitszeichen zusammen: ``:=``."
+"In den meisten Fällen können Sie den Compiler auf den Typ schließen lassen "
+"(Compiler soll versuchen den Typ zu erkennen), indem Sie ``: =`` nutzen:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
+msgstr "var health := 0  # Der Compiler verwendet den Typ Ganzzahl."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
@@ -728,3 +727,8 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"In einigen Fällen bei denen der Kontext fehlt, greift der Compiler jedoch "
+"auf den Rückgabetyp der Funktion zurück. Beispielsweise kann ``get_node()`` "
+"keine Rückschlüsse auf den Typ ziehen, es sei denn die Szene oder Datei des "
+"Nodes wird in den Speicher geladen. In diesem Fall sollten Sie den Typ "
+"explizit festlegen."

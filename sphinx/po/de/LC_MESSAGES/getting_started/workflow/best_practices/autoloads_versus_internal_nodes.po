@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,9 +37,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
-#, fuzzy
 msgid "The cutting audio issue"
-msgstr "Der Start Wert"
+msgstr "Das einschneidende Audio-Problem"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
 msgid ""
@@ -48,6 +47,10 @@ msgid ""
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
+"Andere Engines können die Erstellung von Manager-Klassen fördern: "
+"Singletons, die viele Funktionen in einem global zugänglichen Objekt "
+"organisieren. Godot bietet dank des Node-Baums und der Signale viele "
+"Möglichkeiten, um einen globalen Zustand zu vermeiden."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
 msgid ""
@@ -57,6 +60,11 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
+"Nehmen wir zum Beispiel an, wir bauen einen Plattformer und möchten Münzen "
+"sammeln, wobei ein Soundeffekt abgespielt wird. Dafür gibt es einen Node: "
+"den :ref:`AudioStreamPlayer <class_AudioStreamPlayer> `. Wenn wir jedoch den "
+"``AudioStreamPlayer`` aufrufen während bereits ein Sound abgespielt wird, "
+"unterbricht der neue Sound den vorherigen."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
 msgid ""
@@ -67,6 +75,13 @@ msgid ""
 "play(\"coin_pickup.ogg\")``. This solves the problem in the short term but "
 "causes more problems:"
 msgstr ""
+"Eine Lösung besteht darin, eine globale, automatisch geladene Soundmanager-"
+"Klasse zu codieren. Es wird ein Pool von ``AudioStreamPlayer``-Nodes "
+"generiert, die bei jeder neuen Anforderung von Soundeffekten durchlaufen "
+"werden. Angenommen, wir nennen diese Klasse ``Sound``. Sie können sie von "
+"überall in Ihrem Projekt aus verwenden, indem Sie ``Sound.play(\"coin_pickup."
+"ogg\")`` aufrufen. Dies löst das Problem kurzfristig, verursacht jedoch "
+"weitere Probleme:"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
 msgid ""
@@ -74,12 +89,19 @@ msgid ""
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
+"** Globaler Status **: Ein Objekt ist jetzt für alle Objektdaten "
+"verantwortlich. Wenn die ``Sound``-Klasse Fehler aufweist oder kein "
+"AudioStreamPlayer verfügbar ist, können alle aufrufenden Nodes Probleme "
+"bekommen."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
+"**Globaler Zugriff**: Jetzt, da jedes Objekt ``Sound.play(sound_path)`` von "
+"überall aufrufen kann, gibt es keine einfache Möglichkeit mehr, die Ursache "
+"eines Fehlers zu finden."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -87,6 +109,10 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**Globale Ressourcenzuweisung**: Mit einem Pool von ``AudioStreamPlayer``-"
+"Nodes, die von Anfang an gespeichert wurden, können Sie entweder zu wenige "
+"haben und damit Probleme bekommen, oder zu viele und es kann dadurch "
+"deutlich mehr Speicher verwendet werden als benötigt."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -94,6 +120,10 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"Beim globalen Zugriff besteht das Problem darin, dass jeder Code irgendwo "
+"falsche Daten an das Autoload ``Sound`` in unserem Beispiel übergeben kann. "
+"Infolgedessen erstreckt sich der zu untersuchende Bereich zur Behebung des "
+"Fehlers über das gesamte Projekt."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
@@ -192,6 +222,8 @@ msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
 msgstr ""
+"**Statische Funktionen**: Erstellen einer Funktionsbibliothek, die nur Werte "
+"zurückgibt."
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
 msgid ""

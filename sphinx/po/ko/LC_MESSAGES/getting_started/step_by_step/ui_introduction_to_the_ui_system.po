@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr "Godot 편집기는 엔진의 UI 프레임 워크로 제작되었습니�
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
-"이 강좌는 UI 디자인으로 시작할 것입니다. 당신은 이러한 것들을 배울 겁니다:"
+"이 강좌는 UI 디자인으로 시작할 것입니다. 여러분은 이러한 것들을 배울 겁니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
@@ -72,8 +72,9 @@ msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
-"인터페이스를 컨트롤하고 다른 스크립트에 연결하는 방법을 배우려면, `Build "
-"your first game UI in Godot <doc_ui_game_user_interface>` 를 읽어주세요."
+"인터페이스를 컨트롤하고 다른 스크립트에 연결하는 방법을 배우려면, :ref:"
+"`Build your first game UI in Godot <doc_ui_game_user_interface>` 를 읽어주세"
+"요."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:28
 msgid ""
@@ -131,32 +132,32 @@ msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
-"일단 당신이 컨트롤 노드의 기초를 이해했다면, 노드에서 파생되는 모든 다른 노드"
-"들을 이해하는 데 오래 걸리지 않을 겁니다."
+"일단 여러분이 Control 노드의 기초를 이해하면, 노드에서 파생되는 모든 다른 노"
+"드들을 이해하는 데 오래 걸리지 않을 겁니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr "가장 일반적인 5개의 UI 요소들"
+msgstr "가장 일반적인 5가지 UI 요소들"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 편집기 플러그인"
-"과 애플리케이션을 만드는 것을 도와줍니다."
+"Godot에는 수십 개의 Control 노드가 있습니다. 많은 것들이 편집기 플러그인과 응"
+"용프로그램을 만드는데 도움이 됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:55
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
-"대부분의 게임에, 당신은 오로지 다섯 가지 UI 요소와, 몇 개의 컨테이너들만 필요"
-"합니다. 컨트롤 노드들은 이렇습니다:"
+"대부분의 게임은 5가지 UI 요소와 몇 개의 컨테이너만 필요합니다. 5종의 Control "
+"노드는 다음과 같습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
-msgstr "Label: 문자를 보여주기 위해 사용합니다"
+msgstr "Label: 문자표시에 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid ""
@@ -182,7 +183,7 @@ msgstr "TextureButton: 버튼을 만들기 위해 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr "UI 디자인을 위한 5개의 가장 일반적인 컨트롤 노드들"
+msgstr "UI 디자인을 위한 가장 일반적인 5가지 Control 노드"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
@@ -262,7 +263,6 @@ msgid "TextureButton"
 msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -270,11 +270,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** 은 TextureRect와 비슷하지만, 5개의 텍스처 슬롯을 갖고 있습"
-"니다: 이들은 각 버튼의 상태입니다. 대부분은, Normal, Pressed, 그리고 Hover 텍"
-"스처를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 "
-"유용합니다. 여섯 번째 이미지 슬롯인, Click Mask는, 순수한 흰색과 검은색 2-비"
-"트를 사용해 클릭할 수 있는 영역을 정의하게 만듭니다."
+"**TextureButton** 은 TextureRect와 비슷하지만, 6개의 텍스처 슬롯이 있습니다: "
+"이들은 각각 버튼의 상태입니다. 대부분은, Normal, Pressed, 그리고 Hover 텍스처"
+"를 사용할 겁니다. Focused는 인터페이스가 키보드의 입력을 수신하는 경우에 유용"
+"합니다. 여섯 번째 이미지 슬롯인 Click Mask는 순수한 흰색과 검은색 2-비트를 사"
+"용해 클릭할 수 있는 영역을 정의하게 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -289,7 +289,7 @@ msgstr ""
 "Base Button 섹션에서, 당신은 버튼이 행동하는 법을 바꾸는 몇 가지 체크 상자를 "
 "볼 수 있을 겁니다. ``Toggle Mode`` 가 켜지면, 버튼은 당신이 눌렀을 때 활성화"
 "와 기본 상태를 껏다 켯다 할 것입니다. ``Disabled`` 는 버튼을 기본 상태로 만들"
-"고, 이 경우에 ``Disabled`` 텍스처를 사용합니다. TextureButton은  앞의 노드와 "
+"고, 이 경우에 ``Disabled`` 텍스처를 사용합니다. TextureButton은 앞의 노드와 "
 "몇 가지 속성들을 공유합니다: ``modulate`` 속성을 갖고 있어서, 색상을 바꿀 수 "
 "있고, ``Resize`` 와 ``Stretch`` 모드로 크기의 변화를 바꿀 수 있습니다."
 
@@ -319,7 +319,7 @@ msgid ""
 msgstr ""
 "``Mode`` 속성은 어느 방향으로 막대가 자라게 할지 제어합니다: 수평, 수직 아니"
 "면 방사형으로 말입니다. 방사형으로 설정하면, ``Initial Angle`` 과 ``Fill "
-"Degrees``  속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
+"Degrees`` 속성으로 당신은 게이지의 범위를 제한할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:131
 msgid ""
@@ -470,10 +470,10 @@ msgid ""
 "inspector's 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
-"모든 속성과 마찬가지로, 인스펙터(Inspecter)에서 4개의 앵커 포인트를 편집할 "
+"모든 속성과 마찬가지로, 인스펙터(Inspector)에서 4개의 앵커 포인트를 편집할 "
 "수 있습니다만, 가장 편리한 방법은 아닙니다. 컨트롤 노드를 선택할 때, 레이아"
 "웃 메뉴가 뷰포트 위의 툴바에 나타납니다. 여기에는 아이콘 목록이 있는데 이것으"
-"로 4개의 앵커들을 모두 설정할 수 있습니다, 인스펙터(Inspecter)의 4개의 속성"
+"로 4개의 앵커들을 모두 설정할 수 있습니다, 인스펙터(Inspector)의 4개의 속성"
 "을 사용하는 대신 말이죠. 레이아웃 메뉴는 오직 컨트롤 노드를 선택할 때만 보여"
 "집니다."
 

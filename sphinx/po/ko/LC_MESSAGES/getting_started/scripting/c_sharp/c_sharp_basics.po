@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,6 @@ msgstr ""
 "션 <doc_scripting>`\\ 을 (다시) 확인하세요."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:24
-#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 6.x .NET framework, including full support for "
@@ -65,8 +64,8 @@ msgid ""
 "www.mono-project.com/docs/about-mono/compatibility/>`_ page in the Mono "
 "documentation."
 msgstr ""
-"C#은 하이 레벨 프로그래밍 언어로 Microsoft가 개발했습니다. Godot에서는 Mono "
-"6.x .NET framework로 구현되었으며, C# 8.0을 완전 지원합니다. Mono는 Microsoft"
+"C#은 Microsoft가 개발한 하이 레벨 프로그래밍 언어 입니다. Godot에서는 Mono 6."
+"x .NET framework로 구현되었으며, C# 8.0을 완전 지원합니다. Mono는 Microsoft"
 "의 .NET Framework의 오픈 소스로 C#과 Common Language Runtime을 위한 ECMA 표준"
 "을 기반으로 구현되었습니다. 호환성을 확인하기 위한 좋은 시작점으로 Mono 문서"
 "에 있는 `호환성<http://www.mono-project.com/docs/about-mono/compatibility/"
@@ -122,32 +121,34 @@ msgid ""
 "JetBrains Rider comes with bundled MSBuild, so nothing extra is required. "
 "Make sure to set the following preferences:"
 msgstr ""
+"JetBrains Rider는 MSBuild가 번들로 함께 제공되므로 추가 작업이 필요하지 않습"
+"니다. 다음 기본 설정을 지정하십시오:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "편집기"
+msgstr "Godot 편집기 설정 :"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
-msgstr ""
+msgstr "**Mono External Editor** 를 **JetBrains Rider** 로 설정."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:62
 msgid "set **Mono Build Tool** to **JetBrains Mono**."
-msgstr ""
+msgstr "**Mono Build Tool** 을 **JetBrains Mono** 로 설정."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:64
 msgid "In Rider:"
-msgstr ""
+msgstr "Rider 에서:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
 msgid ""
 "Set **MSBuild version** to either **Bundled with Rider** or **.NET Core**."
 msgstr ""
+"**MSBuild version** 을 **Bundled with Rider** 이나 **.NET Core** 로 설정."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:67
 msgid "Install the **Godot support** plugin."
-msgstr ""
+msgstr "**Godot support** 플러그인을 설치."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:70
 msgid "macOS and Linux"
@@ -202,10 +203,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:96
 msgid "Configuring an external editor"
-msgstr "외부 편집기 구성하기"
+msgstr "외부 편집기 설정"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
-#, fuzzy
 msgid ""
 "C# support in Godot's script editor is minimal. Consider using an external "
 "IDE or editor, such as  `Visual Studio Code <https://code.visualstudio.com/"
@@ -217,10 +217,10 @@ msgid ""
 msgstr ""
 "Godot의 스크립트 편집기에서 C# 지원은 최소한입니다. `Visual Studio Code "
 "<https://code.visualstudio.com/>`_\\ 나 MonoDevelop과 같은 외부 IDE나 편집기"
-"를 사용하는 것을 고려해보세요. 이 둘은 자동 완성, 디버깅을 제공하며 C#으로 작"
-"업하면서 쓰이는 유용한 기능이 있습니다. Godot에서 외부 편집기를 선택하려면, "
-"**편집기 → 편집기 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에"
-"서 **Editor**\\ 를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
+"를 사용하는 것을 고려해보세요. 이들은 자동 완성, 디버깅 및 C#을 위한 기타 유"
+"용한 기능이 제공됩니다. Godot에서 외부 편집기를 선택하려면, **편집기 → 편집"
+"기 설정**\\ 으로 가서 **Mono**\\ 로 내려갑니다. **Mono**\\ 에서 **Editor**\\ "
+"를 클릭하면 외부 편집기를 선택하는 페이지가 나타납니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:107
 msgid "Visual Studio 2019"
@@ -243,16 +243,15 @@ msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:115
-#, fuzzy
 msgid ""
 "If you are using Visual Studio Code, ensure you download and install the `C# "
 "extension <https://marketplace.visualstudio.com/items?itemName=ms-vscode."
 "csharp>`_ to enable features like syntax highlighting and IntelliSense."
 msgstr ""
-"만약 비주얼 스튜디오 코드를 사용하고 계신다면, 문법 하이라이트와 "
-"IntelliSense 같은 기능들을 활성화하기 위해 `C# 확장 프로그램 <https://"
-"marketplace.visualstudio.com/items?itemName=ms-vscode.csharp>`_을 다운받아 설"
-"치하는걸 잊지 마시기 바랍니다."
+"만약 비주얼 스튜디오 코드를 사용하고 계신다면, 문법 강조와 IntelliSense 같은 "
+"기능들을 활성화하기 위해 `C# 확장 프로그램 <https://marketplace.visualstudio."
+"com/items?itemName=ms-vscode.csharp>`_을 다운받아 설치하는걸 잊지 마시기 바랍"
+"니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
 #, fuzzy
@@ -268,14 +267,13 @@ msgid "Creating a C# script"
 msgstr "C# 스크립트 만들기"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
-#, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
 "option when selecting **Attach Script** in the context menu of a node in "
 "your scene:"
 msgstr ""
-"Godot를 위한 C# 설정이 성공적으로 마친 후, 씬의 노드 메뉴에서 ``스크립트 붙이"
-"기``\\ 를 눌렀을 때, 다음 설정이 보여야 합니다:"
+"Godot용 C# 을 성공적으로 설정한 후, 씬의 노드 메뉴에서 **스크립트 붙이기** "
+"를 눌렀을 때, 다음 설정이 표시되어야 합니다:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
 msgid ""
@@ -320,9 +318,7 @@ msgstr "예제"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
-msgstr ""
-"여기 몇 가지 주석으로 작업이 이루어지는 방법을 설명하는 공백 C# 스크립트가 있"
-"습니다."
+msgstr "여기 동작을 설명하는 주석이 붙은 C# 스크립트가 있습니다."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:181
 msgid ""

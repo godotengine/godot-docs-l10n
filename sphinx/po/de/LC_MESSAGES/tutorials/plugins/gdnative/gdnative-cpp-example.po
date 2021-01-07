@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,9 @@ msgid ""
 "You can download the full example we'll be creating in this tutorial `on "
 "GitHub <https://github.com/BastiaanOlij/gdnative_cpp_example>`__."
 msgstr ""
+"Sie können das vollständige Beispiel herunterladen, das wir in dieser "
+"Anleitung auf `GitHub <https://github.com/BastiaanOlij/"
+"gdnative_cpp_example>`__ erstellen."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:28
 msgid "Setting up the project"
@@ -61,7 +64,7 @@ msgstr "Projekt einrichten"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:30
 msgid "There are a few prerequisites you'll need:"
-msgstr ""
+msgstr "Es gibt ein paar Voraussetzungen, die Sie benötigen:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:32
 msgid "a Godot 3.x executable,"
@@ -76,9 +79,10 @@ msgid "SCons as a build tool,"
 msgstr "SCons als Build-Tool,"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
+#, fuzzy
 msgid ""
-"a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`__."
+"a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
+"cpp>`__."
 msgstr ""
 "eine Kopie des `godot-cpp-Repository <https://github.com/GodotNativeTools/"
 "godot-cpp>`_."
@@ -117,6 +121,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Do make sure you clone recursive to pull in both repositories:"
 msgstr ""
+"Stellen Sie sicher, dass Sie rekursiv klonen, um beide Repositories "
+"einzuziehen:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:93
 msgid ""
@@ -144,6 +150,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:111
 msgid "This will clone these two repositories into your project folder."
 msgstr ""
+"Dadurch werden diese beiden Repositorys in Ihren Projektordner geklont."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:114
 msgid "Building the C++ bindings"
@@ -154,6 +161,8 @@ msgid ""
 "Now that we've downloaded our prerequisites, it is time to build the C++ "
 "bindings."
 msgstr ""
+"Nachdem wir unsere Voraussetzungen heruntergeladen haben, ist es Zeit die C+"
+"+ Bindungen zu erstellen."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:119
 msgid ""
@@ -194,6 +203,8 @@ msgid ""
 "At some point in the future, compiled binaries will be available, making "
 "this step optional."
 msgstr ""
+"Zu einem späteren Zeitpunkt werden kompilierte Binärdateien verfügbar sein, "
+"sodass dieser Schritt optional ist."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:150
 msgid ""
@@ -234,6 +245,8 @@ msgid ""
 "You should now have ``demo``, ``godot-cpp``, ``godot_headers``, and ``src`` "
 "directories in your GDNative module."
 msgstr ""
+"Sie sollten nun die Verzeichnisse ``demo``, ``godot-cpp``, ``godot_headers`` "
+"und ``src`` in Ihrem GDNative-Modul haben."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:171
 msgid ""
@@ -254,6 +267,8 @@ msgid ""
 "We're using the namespace ``godot``, since everything in GDNative is defined "
 "within this namespace."
 msgstr ""
+"Wir benutzen den Namensraum ``godot``, da alles in GDNative innerhalb dieses "
+"Namensraumes definiert ist."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:243
 msgid ""
@@ -265,6 +280,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:247
 msgid "After that, we declare a single member variable called ``time_passed``."
 msgstr ""
+"Danach deklarieren wir eine einzelne Mitgliedsvariable namens "
+"``time_passed``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:249
 msgid ""
@@ -287,6 +304,8 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:260
 msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
 msgstr ""
+"Lassen Sie uns unsere Funktionen implementieren, indem wir unsere Datei "
+"``gdexample.cpp`` erstellen:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:320
 msgid ""
@@ -370,6 +389,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:394
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
 msgstr ""
+"Sie sollten das Modul jetzt unter ``demo/bin/<Plattform>`` finden können."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:398
 msgid ""
@@ -460,7 +480,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:488
 msgid "We're finally ready to run the project:"
-msgstr ""
+msgstr "Wir sind endlich bereit, das Projekt auszuführen:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:493
 msgid "Adding properties"
@@ -491,6 +511,8 @@ msgstr ""
 msgid ""
 "In our ``gdexample.h`` file we simply need to add a member variable like so:"
 msgstr ""
+"In unserer ``gdexample.h`` Datei müssen wir einfach eine Mitgliedsvariable "
+"wie folgt hinzufügen:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:519
 msgid ""
@@ -584,7 +606,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:703
 msgid "This however is the required syntax:"
-msgstr ""
+msgstr "Dies ist jedoch die erforderliche Syntax:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:714
 msgid ""
@@ -605,6 +627,8 @@ msgid ""
 "In our ``gdexample.h`` header file we just need to define a new member "
 "``time_emit``:"
 msgstr ""
+"In unserer Header-Datei ``gexample.h`` müssen wir nur ein neues Mitglied "
+"``time_emit`` definieren:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:732
 msgid ""
@@ -636,7 +660,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:771
 msgid "Next we'll need to change our ``_process`` method:"
-msgstr ""
+msgstr "Als nächstes müssen wir unsere ``_process`` Methode ändern:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:817
 msgid ""
@@ -655,7 +679,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:833
 msgid "Every second we simply output our position to the console."
-msgstr ""
+msgstr "Jede Sekunde geben wir einfach unsere Position auf der Konsole aus."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:836
 msgid "NativeScript 1.1 vs NativeScript 1.0"

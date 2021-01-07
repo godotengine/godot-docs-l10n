@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:4
 msgid "Submitting to the Asset Library"
-msgstr ""
+msgstr "Presentando a la Biblioteca de Activos"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:7
 msgid "Introduction"
@@ -30,6 +30,9 @@ msgid ""
 "This tutorial aims to serve as a guide on how you can submit your own assets "
 "to the Godot Asset Library and share them with the Godot community."
 msgstr ""
+"Este tutorial tiene como objetivo servir de guía sobre cómo puede presentar "
+"sus propios bienes a la Biblioteca de Recursos Godot y compartirlos con la "
+"comunidad Godot."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:12
 msgid ""
@@ -37,16 +40,21 @@ msgid ""
 "to submit assets to the AssetLib, you need to have a registered account, and "
 "be logged in."
 msgstr ""
+"Como se menciona en el documento :ref:`doc_using_assetlib`, para poder "
+"presentar los recursos a la AssetLib, es necesario tener una cuenta "
+"registrada y estar conectado."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:17
 msgid "Submission guidelines"
-msgstr ""
+msgstr "Directrices de presentación"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:19
 msgid ""
 "Before submitting your asset, please ensure it follows all of the "
 "requirements, and also consider following the recommendations."
 msgstr ""
+"Antes de presentar su recurso, por favor asegúrese de que cumple con todos "
+"los requisitos, y también considere seguir las recomendaciones."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:23
 msgid "Requirements"
@@ -58,12 +66,18 @@ msgid ""
 "accepted. However, in order for your asset to be accepted, there are a few "
 "requirements your asset needs to meet to be approved."
 msgstr ""
+"En términos generales, la mayoría de los bienes que la gente presenta a la "
+"biblioteca de bienes son aceptados. Sin embargo, para que su recurso sea "
+"aceptado, hay algunos requisitos que tu recurso que deben cumplirse para ser "
+"aprobado."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
 msgid ""
 "The asset must work. If the asset doesn't run or otherwise doesn't work in "
 "the specified Godot version, then it will be rejected."
 msgstr ""
+"El recurso debe funcionar. Si el recurso no se ejecuta o no funciona en la "
+"versión especificada de Godot, entonces será rechazado."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
 msgid ""
@@ -71,6 +85,10 @@ msgid ""
 "redundant data out of the repository. `Here's a template. <https://github."
 "com/github/gitignore/blob/master/Godot.gitignore>`_"
 msgstr ""
+"El recurso debe tener un archivo **.gitignore** adecuado. Es importante "
+"mantener los datos redundantes fuera del repositorio. \"Aquí hay una "
+"plantilla. <https://github.com/github/gitignore/blob/master/Godot."
+"gitignore>`_"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
 msgid ""
@@ -78,6 +96,9 @@ msgid ""
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
+"No hay submódulos, o cualquier submódulo debe ser no esenciales. GitHub no "
+"incluye submódulos en el archivo ZIP descargado, por lo que si el activo "
+"necesita el contenido del submódulo, tu recurso no funcionará."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:40
 msgid ""
@@ -87,18 +108,29 @@ msgid ""
 "license text itself and a copyright statement that includes the year(s) and "
 "copyright holder."
 msgstr ""
+"La licencia tiene que ser correcta. La licencia que aparece en la biblioteca "
+"de recursos debe coincidir con la licencia del repositorio. El repositorio "
+"DEBE tener un archivo de licencia, llamado \"LICENSE\" o \"LICENSE.md\". "
+"Este archivo debe contener el texto de la licencia en sí y una declaración "
+"de copyright que incluya el año o años y el titular del copyright."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:46
 msgid ""
 "Use proper English for the name and description of your asset. This includes "
 "using correct capitalization, and using full sentences in the description."
 msgstr ""
+"Use el inglés apropiado para el nombre y la descripción de tu recurso. Esto "
+"incluye el uso correcto de las mayúsculas y el uso de frases completas en la "
+"descripción."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:50
 msgid ""
 "The icon link must be a direct link. For icons hosted on GitHub, the link "
 "must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
+"El enlace del icono debe ser un enlace directo. Para los iconos alojados en "
+"GitHub, el enlace debe comenzar con \"raw.githubusercontent.com\", no con "
+"\"github.com\"."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
 msgid "Recommendations"
@@ -110,6 +142,9 @@ msgid ""
 "follow these recommendations, you can help make the asset library a better "
 "place for all users."
 msgstr ""
+"Estas cosas no son necesarias para que su recurso sea aprobado, pero si "
+"sigue estas recomendaciones, puede ayudar a que la biblioteca de recursos "
+"sea un lugar mejor para todos los usuarios."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:60
 msgid ""
@@ -117,6 +152,9 @@ msgid ""
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
+"Arregle o suprima todas las advertencias del script. El sistema de "
+"advertencias está ahí para ayudar a identificar problemas con su código, "
+"pero la gente que usa tu activo no necesita verlos."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:64
 msgid ""
@@ -125,6 +163,10 @@ msgid ""
 "wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
+"Haz que tu código se ajuste a las guías de estilo oficiales. Tener un estilo "
+"consistente ayuda a otras personas a leer tu código, y también ayuda si "
+"otras personas desean contribuir a tu recurso. Ver: la :ref:"
+"`doc_gdscript_styleguide` o la :ref:`doc_c_sharp_styleguide`."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
 msgid ""
@@ -134,18 +176,27 @@ msgid ""
 "command prompt in the project folder and run ``type nul > .gdignore`` to "
 "create a file whose name starts with a period."
 msgstr ""
+"Si tiene capturas de pantalla en su repo, colóquelas en su propia subcarpeta "
+"y añada un archivo **.gdignore** en la misma carpeta (nota: **gd**, no "
+"**git**). Esto evita que Godot importe tus capturas de pantalla. En Windows, "
+"abra un símbolo del sistema en la carpeta de proyectos y ejecute ``type nul "
+"> .gdignore`` para crear un archivo cuyo nombre comience con un punto."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:75
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
 msgstr ""
+"Si tu recurso es una biblioteca para trabajar con otros archivos, considere "
+"la posibilidad de incluir archivos de ejemplo en el recurso."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
 msgstr ""
+"El icono debe ser un cuadrado, su relación de aspecto debe ser 1:1. También "
+"debería tener una resolución mínima de 64x64 píxeles."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:81
 msgid ""
@@ -153,16 +204,22 @@ msgid ""
 "asset's source code on GitHub. Other services may not work reliably, and a "
 "lack of familiarity can be a barrier to contributors."
 msgstr ""
+"Aunque la biblioteca de recursos permite más que sólo GitHub, considera "
+"alojar el código fuente de tu recurso en GitHub. Otros servicios pueden no "
+"funcionar de forma fiable, y la falta de familiaridad puede ser una barrera "
+"para los colaboradores."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
 msgid "Submitting"
-msgstr ""
+msgstr "Presentando"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:88
 msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit Assets"
 "\" page of the AssetLib, which will look like this:"
 msgstr ""
+"Una vez que haya iniciado sesión, podrá dirigirse a la página \"Enviar "
+"Recursos\" de la AssetLib, que se verá así:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
 msgid "|image0|"
@@ -174,20 +231,25 @@ msgid ""
 "field is described in terms of what you should put in. We will nonetheless "
 "go over what is required in the submission form here as well."
 msgstr ""
+"Aunque puede parecer mucho (y hay más a medida que se desplaza hacia abajo), "
+"cada campo se describe en términos de lo que se debe poner. No obstante, "
+"también repasaremos aquí lo que se requiere en el formulario de presentación."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid "**Asset Name**:"
-msgstr ""
+msgstr "**Nombre del Recurso**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
 msgstr ""
+"El nombre de tu recurso. Debe ser un título único y descriptivo de lo que es "
+"tu recurso."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid "**Category**:"
-msgstr ""
+msgstr "**Categoría**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:101
 msgid ""
@@ -197,10 +259,16 @@ msgid ""
 "viewing the AssetLib from the Project Manager, while assets of the Addon "
 "type will only be visible from inside a project."
 msgstr ""
+"La categoría a la que pertenece tu recurso, y se mostrará en los resultados "
+"de la búsqueda. La categoría se divide en **Adjuntos** y **Proyectos**. En "
+"el editor, los recursos del tipo Proyecto (Plantillas, Demostraciones, "
+"Proyectos) sólo se muestran cuando se visualiza la AssetLib desde el "
+"Administrador de Proyectos, mientras que los recursos del tipo Addon sólo "
+"serán visibles desde el interior de un proyecto."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:110
 msgid "**Godot version**:"
-msgstr ""
+msgstr "**Versión de Godot**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:107
 msgid ""
@@ -211,10 +279,16 @@ msgid ""
 "when dealing with major versions of the engine, such as Godot 2.x and Godot "
 "3.x."
 msgstr ""
+"La versión del motor con el que trabaja el recurso. Actualmente, no es "
+"posible tener una sola entrada de recurso que contenga descargas para "
+"múltiples versiones de motor, por lo que puede ser necesario volver a enviar "
+"el recurso varias veces, con una entrada para cada versión de Godot que "
+"soporte. Esto es particularmente importante cuando se trata de versiones "
+"principales del motor, como Godot 2.x y Godot 3.x."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid "**Version**:"
-msgstr ""
+msgstr "**Versión**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:113
 msgid ""
@@ -224,10 +298,16 @@ msgid ""
 "be clear and consistent. Note that there is also an internal version number, "
 "incremented every time the asset download URL is changed or updated."
 msgstr ""
+"El número de versión del recurso. Mientras que eres libre de elegir y "
+"utilizar cualquier esquema de versionado que te guste, puedes buscar algo "
+"como `SemVer <https://semver.org>`_ si quieres que el esquema de versionado "
+"de tu recurso sea claro y consistente. Tenga en cuenta que también hay un "
+"número de versión interno, que se incrementa cada vez que se cambia o "
+"actualiza la URL de descarga del recurso."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid "**Repository host**:"
-msgstr ""
+msgstr "**Anfitrión del repositorio**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:120
 msgid ""
@@ -236,10 +316,14 @@ msgid ""
 "GitLab or Bitbucket. This is where you choose which provider your asset "
 "uses, so the site can compute the final download link."
 msgstr ""
+"Los recursos subidos en la AssetLib no están alojados en ella directamente. "
+"En su lugar, apuntan a repositorios alojados en terceros proveedores de Git, "
+"como GitHub, GitLab o Bitbucket. Aquí es donde eliges qué proveedor utiliza "
+"tu recurso, para que el sitio pueda calcular el enlace de descarga final."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid "**Repository URL**:"
-msgstr ""
+msgstr "**URL de Repositorio**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid ""
@@ -247,10 +331,13 @@ msgid ""
 "of provider, but it should look similar to `https://github.com/<user>/"
 "<project>`."
 msgstr ""
+"La URL de los archivos/página web de tu recurso. Esto variará en función de "
+"su elección de proveedor, pero debe ser similar a \"https://github.com/\", "
+"\"usuario\" o \"proyecto\"."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
 msgid "**Issues URL**:"
-msgstr ""
+msgstr "**Problemas de URL**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:128
 msgid ""
@@ -259,10 +346,15 @@ msgid ""
 "github.com/<user>/<project>/issues`. You may leave this field empty if you "
 "use your provider's issue tracker, and it's part of the same repository."
 msgstr ""
+"La URL del rastreador de problemas de tu recurso. De nuevo, esto diferirá de "
+"un host de repositorio a otro, pero probablemente se verá similar a `https://"
+"github.com/<user>/<project>/issues`. Puedes dejar este campo vacío si "
+"utilizas el rastreador de problemas de tu proveedor, y es parte del mismo "
+"repositorio."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
 msgid "**Download Commit**:"
-msgstr ""
+msgstr "**Descargar el Commit**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:133
 msgid ""
@@ -270,10 +362,13 @@ msgid ""
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. The site computes the actual "
 "download URL from this."
 msgstr ""
+"El commit del recurso. Por ejemplo, "
+"\"b1d3172f89b86e52465a74f63a74ac84c491d3e1\". El sitio calcula la URL de "
+"descarga real a partir de esto."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
 msgid "**Icon URL**:"
-msgstr ""
+msgstr "**URL de Icono**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:137
 msgid ""
@@ -281,10 +376,13 @@ msgid ""
 "AssetLib search results and on the asset's page). Should be an image in "
 "either the PNG or JPG format."
 msgstr ""
+"La URL del icono de tu recurso (que se utilizará como miniatura en los "
+"resultados de búsqueda de AssetLib y en la página del recurso). Debe ser una "
+"imagen en formato PNG o JPG."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
 msgid "**License**:"
-msgstr ""
+msgstr "**Licencia**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:141
 msgid ""
@@ -293,10 +391,15 @@ msgid ""
 "MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://"
 "opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""
+"La licencia bajo la cual está distribuyendo el recurso. La lista incluye una "
+"variedad de licencias de software libre y de código abierto, como la GPL (v2 "
+"y v3), MIT, BSD y Boost Software License. Puede visitar `OpenSource.org "
+"<https://opensource.org>`_ para una descripción detallada de cada una de las "
+"licencias listadas."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
 msgid "**Description**:"
-msgstr ""
+msgstr "**Descripción**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:146
 msgid ""
@@ -305,6 +408,10 @@ msgid ""
 "formatting with Markdown will be supported, but currently, your only option "
 "is plain text."
 msgstr ""
+"Por último, puede utilizar el campo Descripción para obtener una visión "
+"general textual de tu recurso, sus características y comportamiento, un "
+"registro de cambios, etc. En el futuro, se soportará el formato con "
+"Markdown, pero actualmente, su única opción es el texto sin formato."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:151
 msgid ""
@@ -312,26 +419,30 @@ msgid ""
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
 "of the preview submission boxes to enable them."
 msgstr ""
+"También puede incluir hasta tres vistas previas de vídeo y/o imágenes, que "
+"se mostrarán en la parte inferior de la página del recurso. Utilice la "
+"casilla de verificación \"Habilitar\" en cada una de las cajas de "
+"presentación de vistas previas para habilitarlas."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
 msgid "**Type**:"
-msgstr ""
+msgstr "**Tipo**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:156
 msgid "Either an image, or a video."
-msgstr ""
+msgstr "O una imagen o un video."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:157
 msgid "**Image/YouTube URL**:"
-msgstr ""
+msgstr "**URL Imagen/Youtube**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:158
 msgid "Either a link to the image, or to a video, hosted on YouTube."
-msgstr ""
+msgstr "Un enlace a la imagen, o a un video, alojado en YouTube."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:162
 msgid "**Thumbnail URL**:"
-msgstr ""
+msgstr "**Url Miniatura**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:160
 msgid ""
@@ -339,6 +450,9 @@ msgid ""
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
+"Una URL de una imagen que será usada como una miniatura para la vista "
+"previa. Esta opción será eliminada eventualmente, y las miniaturas serán "
+"computadas automáticamente en su lugar."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:164
 msgid ""
@@ -353,3 +467,13 @@ msgid ""
 "reviewers on IRC (the ``#godotengine-atelier`` channel on Freenode), or the "
 "official Discord server."
 msgstr ""
+"Una vez que hayas terminado, presiona Enviar. Tu recurso será introducido en "
+"la cola de espera, que puedes visitar en el AssetLib `aquí <https://"
+"godotengine.org/asset-library/asset/edit?&asset=-1>`_ . El proceso de "
+"aprobación es manual y puede tardar unos días para que tu addon sea aceptado "
+"(o rechazado), así que por favor, ¡ten paciencia! Se te informará cuando tu "
+"addon sea revisado. Si fue rechazado, se te dirá por qué puede haber sido, y "
+"podrá- presentarlo de nuevo con los cambios apropiados. Puede que tengas "
+"algo de suerte acelerando el proceso de aprobación enviando un mensaje a los "
+"moderadores/revisores de recursos en el IRC (el canal ``godotengine-"
+"atelier`` en Freenode), o al servidor oficial de Discord."

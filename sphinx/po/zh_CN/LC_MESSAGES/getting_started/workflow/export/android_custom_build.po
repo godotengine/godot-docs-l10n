@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,8 @@ msgid "Modify the project before it's built."
 msgstr "在构建项目之前对其进行修改。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:14
-#, fuzzy
 msgid "Add external SDKs that build with your project."
-msgstr "添加与您的项目一起构建的外部SDK"
+msgstr "添加与您的项目一起构建的外部SDK。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:16
 #, fuzzy
@@ -128,6 +127,9 @@ msgid ""
 "*Custom Setup* view of the installer. You have to restart Godot after this, "
 "otherwise Godot can't find the ``JAVA_HOME`` variable."
 msgstr ""
+"Windows上, 在安装界面的 *Custom Setup*确保你启用了 \"Set ``JAVA_HOME`` "
+"variable\"。这之后你必须重新启动Godot，不然Godot将无法找到``JAVA_HOME`` 变"
+"量。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:57
 msgid "Download the command-line tools"
@@ -179,6 +181,8 @@ msgid ""
 "folder. Then unzip the Android SDK ZIP file into the ``android-sdk/cmdline-"
 "tools`` folder."
 msgstr ""
+"在``android-sdk``文件夹中创建一个 ``cmdline-tools`` 的空文件夹。然后将 "
+"Android SDK 压缩文件解压到``android-sdk/cmdline-tools`` 文件夹。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:86
 msgid ""
@@ -188,12 +192,18 @@ msgid ""
 "the archive with the default Windows extractor, the files are not extracted "
 "correctly and you will run into errors later on!"
 msgstr ""
+"如果是Windows平台，禁止使用默认的Widnows解压工具（比如 Windows Explorer）解压"
+"ZIP压缩包。必须使用其他工具，比如 7zip, WinRAR 或者 Powershell 的``Expand-"
+"Archive`` 命令。如果使用默认的解压工具解压压缩包，文件将不会被正确解压，之后"
+"也会运行错误！"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:92
 msgid ""
 "The ``cmdline-tools`` folder should now contain the unzipped folder called "
 "``tools``. Finally, rename the ``tools`` folder to ``latest``."
 msgstr ""
+"``cmdline-tools``文件夹现在应该包含解压之后的文件夹 ``tools``。最后，把"
+"``tools`` 文件夹重命名为``latest``。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:95
 #, fuzzy
@@ -205,6 +215,7 @@ msgid ""
 "We need to setup the directory structure this way for the sdkmanager (inside "
 "the bin folder) to work."
 msgstr ""
+"为了让sdkmanager（在bin文件夹下）能正常工作，需要用这种方式设置目录结构。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
 msgid "Accepting the licenses"
@@ -258,6 +269,10 @@ msgid ""
 "sdk_root=../../ platform-tools``. These must be executed inside the ``/tools/"
 "bin/`` folder because the path for ``--sdk_root`` is relative."
 msgstr ""
+"如果收到一条这样的报错 ``Warning: Could not create settings``，尝试 ``./"
+"sdkmanager --sdk_root=../../ --licenses`` 或``./sdkmanager --sdk_root=../../ "
+"platform-tools``。这些命令必须在``/tools/bin/``文件夹里执行，因为 ``--"
+"sdk_root`` 路径是相对的。"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:137
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:222

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -341,7 +341,7 @@ msgid ""
 "Inverse Kinematics (IK) is useful for animating extremities like hands and "
 "feet, and can't be used with our rig in its current state."
 msgstr ""
-"反向动力学(IK)对于手和脚等肢体的运动非常有用，目前我们的绑定还无法使用。"
+"反向动力学（IK）对于手和脚等肢体的运动非常有用，目前我们的绑定还无法使用。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
 #, fuzzy
@@ -427,9 +427,8 @@ msgstr ""
 "和hip节点，打开Skeleton菜单，单击 ``clear bones``。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
-#, fuzzy
 msgid "Your final skeleton should look something like this:"
-msgstr "您最后的场景应该是这样的。"
+msgstr "您最后的场景应该是这样的："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
 #, fuzzy
@@ -452,7 +451,6 @@ msgid "IK chains"
 msgstr "IK链"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:234
-#, fuzzy
 msgid ""
 "IK stands for inverse kinematics. It's a convenient technique for animating "
 "the position of hands, feet and other extremities of rigs like the one we've "
@@ -461,9 +459,10 @@ msgid ""
 "rotating and positioning several other bones (the shin and the thigh at "
 "least). This would be quite complex and lead to imprecise results."
 msgstr ""
-"IK链是一种强大的动画工具。 想象一下，您想要将角色的脚放在地面上的特定位置。 "
-"如果没有IK链，脚的每次运动都需要旋转和定位其他几个骨骼。 这将非常复杂并导致不"
-"精确的结果。"
+"IK 是反向动力学（Inverse Kinematics）的缩写，给手部、足部以及其它肢体的动画带"
+"来便利。想象一下，您想要将角色的脚放在地面上的特定位置。 如果没有 IK 链，脚的"
+"每次运动都需要旋转和定位其他几个骨骼（至少得涉及大腿及小腿）。 这将非常复杂并"
+"导致不精确的结果。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:241
 msgid ""

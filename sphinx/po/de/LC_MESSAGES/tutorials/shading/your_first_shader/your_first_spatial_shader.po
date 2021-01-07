@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:30
 msgid "Where to assign my material"
-msgstr ""
+msgstr "Wo kann man Material zuweisen"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:32
 msgid ""
@@ -128,6 +128,8 @@ msgstr "Einrichtung"
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:55
 msgid "Add a new :ref:`MeshInstance <class_meshinstance>` node to your scene."
 msgstr ""
+"Fügen Sie einen neuen Node :ref:`MeshInstance <class_meshinstance>` zu Ihrer "
+"Szene hinzu."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:57
 msgid ""
@@ -138,6 +140,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:60
 msgid "This adds a :ref:`PlaneMesh <class_planemesh>` to our scene."
 msgstr ""
+"Dies fügt ein :ref:`PlaneMesh <class_planemesh>` zu unserer Szene hinzu."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:62
 msgid ""
@@ -149,10 +152,12 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:66
 msgid "This will allow you to see the triangles making up the plane."
 msgstr ""
+"Auf diese Weise können Sie die Dreiecke sehen, aus denen die Ebene entstellt "
+"ist."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:70
 msgid "Now set ``Subdivide Width`` and ``Subdivide Depth`` to ``32``."
-msgstr ""
+msgstr "Setzen Sie nun ``Subdivide Width`` und ``Subdivide Depth`` auf ``32``."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:74
 msgid ""
@@ -174,6 +179,8 @@ msgid ""
 "Now click beside \"Shader\" where it says \"[empty]\" and select \"New Shader"
 "\"."
 msgstr ""
+"Klicken Sie nun neben \"Shader\" auf \"[leer]\" und wählen Sie \"Neuer Shader"
+"\"."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:85
 msgid ""
@@ -209,7 +216,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:104
 msgid "We define the vertex shader like so:"
-msgstr ""
+msgstr "So definieren wir den Vertex-Shader:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:112
 msgid ""
@@ -220,6 +227,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:121
 msgid "Adding this line, you should get an image like the one below."
 msgstr ""
+"Wenn Sie diese Zeile hinzufügen, sollten Sie ein Bild wie das folgende "
+"erhalten."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:125
 msgid ""
@@ -284,6 +293,8 @@ msgid ""
 ":ref:`OpenSimplexNoise <class_opensimplexnoise>` is used by the NoiseTexture "
 "to generate a heightmap."
 msgstr ""
+":ref:`OpenSimplexNoise <class_opensimplexnoise>` wird von der Rauschtextur "
+"zum Generieren einer Höhenkarte verwendet."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:166
 msgid "Once you set it up and should look like this."
@@ -315,6 +326,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:186
 msgid "Using this code you can see the texture creates random looking hills."
 msgstr ""
+"Mit diesem Code können Sie sehen, wie die Textur zufällig aussehende Hügel "
+"erzeugt."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:190
 msgid ""
@@ -337,7 +350,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:201
 msgid "Let's make a uniform that changes the height of the terrain."
-msgstr ""
+msgstr "Lasst uns ein Uniform herstellen, das die Höhe des Geländes verändert."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:208
 msgid ""
@@ -396,6 +409,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:250
 msgid "First, we will add an :ref:`OmniLight<class_OmniLight>` to the scene."
 msgstr ""
+"Zuerst werden wir der Szene ein :ref:`OmniLight<class_OmniLight>` hinzufügen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:254
 msgid ""
@@ -466,6 +480,8 @@ msgstr ""
 msgid ""
 "And now we can access ``tex_position`` from the ``fragment()`` function."
 msgstr ""
+"Und jetzt können wir auf ``tex_position`` von der ``fragment()`` Funktion "
+"aus zugreifen."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:316
 msgid ""
@@ -477,6 +493,8 @@ msgstr ""
 msgid ""
 "We can even drag the light around and the lighting will update automatically."
 msgstr ""
+"Wir können das Licht sogar herumziehen und die Beleuchtung wird automatisch "
+"aktualisiert."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:324
 msgid ""

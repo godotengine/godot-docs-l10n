@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,17 @@ msgid ""
 "Many of Godot's debugging tools, including the debugger, can be found in the "
 "debugger panel at the bottom of the screen. Click on **Debugger** to open it."
 msgstr ""
+"Viele der Debugging-Tools von Godot, einschließlich des Debuggers, finden "
+"Sie im Debugger-Bereich am unteren Bildschirmrand. Klicken Sie auf "
+"**Debugger** um sie zu öffnen."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:11
 msgid ""
 "The debugger panel is split into several tabs, each focusing on a specific "
 "task."
 msgstr ""
+"Das Debugger-Bedienfeld ist in mehrere Registerkarten unterteilt, die sich "
+"jeweils auf eine bestimmte Aufgabe konzentrieren."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:14
 msgid "Debugger"
@@ -42,6 +47,8 @@ msgid ""
 "The Debugger tab opens automatically when the GDScript compiler reaches a "
 "breakpoint in your code."
 msgstr ""
+"Die Registerkarte Debugger wird automatisch geöffnet, wenn der GDScript-"
+"Compiler einen Haltepunkt in Ihrem Code erreicht."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:19
 msgid ""
@@ -49,40 +56,53 @@ msgid ""
 "information about the state of the object, and buttons to control the "
 "program's execution."
 msgstr ""
+"Sie erhalten eine Information der `Stapelverfolgung <https://en.wikipedia."
+"org/wiki/Stack_trace>`__ zum Status des Objekts und Schaltflächen zur "
+"Steuerung der Programmausführung."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:23
 msgid "You can use the buttons in the top-right corner to:"
-msgstr ""
+msgstr "Mit den Schaltflächen in der oberen rechten Ecke können Sie:"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:25
 msgid ""
 "Skip all breakpoints. That way, you can save breakpoints for future "
 "debugging sessions."
 msgstr ""
+"alle Haltepunkte überspringen. Auf diese Weise können Sie Haltepunkte für "
+"zukünftige Debugging-Sitzungen speichern."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:27
 msgid "Copy the current error message."
-msgstr ""
+msgstr "die aktuelle Fehlermeldung kopieren."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:28
 msgid ""
 "**Step Into** the code. This button takes you to the next line of code, and "
 "if it's a function, it steps line-by-line through the function."
 msgstr ""
+"**Schritt hinein** in den Code. Diese Schaltfläche führt Sie zur nächsten "
+"Codezeile. Wenn es sich um eine Funktion handelt, wird die Funktion "
+"zeilenweise durchlaufen."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:30
 msgid ""
 "**Step Over** the code. This button goes to the next line of code, but it "
 "doesn't step line-by-line through functions."
 msgstr ""
+"**Schritt überspringen** den Code. Diese Schaltfläche wechselt zur nächsten "
+"Codezeile, geht jedoch nicht zeilenweise durch die Funktionen."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:32
 msgid "**Break**. This button pauses the game's execution."
 msgstr ""
+"**Unterbrechen**. Diese Schaltfläche unterbricht die Ausführung des Spiels."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:33
 msgid "**Continue**. This button resumes the game after a breakpoint or pause."
 msgstr ""
+"**Fortsetzen**. Diese Schaltfläche setzt das Spiel nach einem Haltepunkt "
+"oder einer Pause fort."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:37
 msgid ""
@@ -99,11 +119,15 @@ msgstr "Fehler"
 msgid ""
 "This is where error and warning messages are printed while running the game."
 msgstr ""
+"Hier werden Fehler- und Warnmeldungen ausgegeben, während das Spiel "
+"ausgeführt wird."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:46
 msgid ""
 "You can disable specific warnings in **Project Settings > Debug > GDScript**."
 msgstr ""
+"Sie können bestimmte Warnungen unter **Projekteinstellungen> Debug> "
+"GDScript** deaktivieren."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
@@ -114,12 +138,16 @@ msgid ""
 "The debugger comes with three profilers for your processor, network "
 "operations, and video memory."
 msgstr ""
+"Der Debugger enthält drei Profiler für Ihren Prozessor, den Netzwerkbetrieb "
+"und den Videospeicher."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:54
 msgid ""
 "The profiler is used to show why individual frames take as long as they do "
 "to process and render."
 msgstr ""
+"Der Profiler wird verwendet zum erkennen, warum einzelne Frames so lange "
+"brauchen, bis sie verarbeitet und gerendert sind."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:57
 msgid ""
@@ -178,6 +206,11 @@ msgid ""
 "open while the game is running, you can open it later and see how the values "
 "changed."
 msgstr ""
+"Die Monitore sind Diagramme verschiedener Aspekte des Spiels, während es "
+"ausgeführt wird, wie z.B. FPS, Speichernutzung, Anzahl der Nodes in einer "
+"Szene und mehr. Alle Monitore verfolgen die Statistiken automatisch. Selbst "
+"wenn ein Monitor während des Spiels nicht geöffnet ist, können Sie ihn "
+"später öffnen und sehen, wie sich die Werte geändert haben."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
@@ -191,6 +224,11 @@ msgid ""
 "RAM that resource is using. There is also a total video RAM usage number at "
 "the top right of the panel."
 msgstr ""
+"Die Registerkarte **Video RAM** zeigt die Video RAM-Nutzung des Spiels "
+"während der Ausführung an. Sie enthält eine Liste aller Ressourcen die Video-"
+"RAM verwenden, geordnet nach Ressourcenpfad, den Ressourcentyp, das Format "
+"und den von dieser Ressource verwendeten Video-RAM. Oben rechts im "
+"Bedienfeld befindet sich außerdem eine Gesamtzahl der Video-RAM-Auslastung."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
@@ -201,12 +239,16 @@ msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
 msgstr ""
+"Die Registerkarte **Verschiedenes** enthält Tools zum Identifizieren der "
+"Control-Nodes, auf die Sie zur Laufzeit klicken:"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:110
 msgid ""
 "**Clicked Control** tells you where the clicked node is in the scene tree."
 msgstr ""
+"**Clicked Control** zeigt an, wo sich der angeklickte Node im Szenenbaum "
+"befindet."
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:111
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
-msgstr ""
+msgstr "**Clicked Control Type** gibt den Typ des angeklickten Nodes an."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,6 +84,8 @@ msgid ""
 "This is how it's done in the `Third Person Shooter demo <https://github.com/"
 "godotengine/tps-demo>`_, for reference:"
 msgstr ""
+"Als Referenz hier noch einmal wie es in der `Third Person Shooter Demo "
+"<https://github.com/godotengine/tps-demo>`_ gemacht wird:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:36
 msgid ""
@@ -100,16 +102,21 @@ msgstr "Erstellen eines Baums"
 msgid ""
 "There are three main types of nodes that can be used in ``AnimationTree``:"
 msgstr ""
+"Es gibt drei Haupttypen von Nodes, die in ``AnimationTree` verwendet werden "
+"können:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:44
 msgid ""
 "Animation nodes, which reference an animation from the linked "
 "``AnimationTree``."
 msgstr ""
+"Animation-Nodes, die auf eine Animation aus dem verknüpften "
+"``AnimationTree`` verweisen."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:45
 msgid "Animation Root nodes, which are used to blend sub-nodes."
 msgstr ""
+"Animation-Wurzelnodes, die für Übergänge zwischen Unter-Nodes genutzt werden."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:46
 msgid ""
@@ -120,6 +127,8 @@ msgstr ""
 #: ../../docs/tutorials/animation/animation_tree.rst:48
 msgid "To set a root node in ``AnimationTree``, a few types are available:"
 msgstr ""
+"Um einen Wurzel-Node in ``AnimationTree`` festzulegen, sind einige Typen "
+"verfügbar:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:52
 msgid ""
@@ -181,7 +190,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:73
 msgid "Following is a short description of available nodes:"
-msgstr ""
+msgstr "Es folgt eine kurze Beschreibung der verfügbaren Nodes:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:76
 msgid "Blend2 / Blend3"
@@ -196,6 +205,8 @@ msgstr ""
 #: ../../docs/tutorials/animation/animation_tree.rst:82
 msgid "For more complex blending, it is advised to use blend spaces instead."
 msgstr ""
+"Für komplexere Überblendungen wird empfohlen, stattdessen Überblendungsräume "
+"zu verwenden."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:84
 msgid ""
@@ -206,7 +217,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:90
 msgid "OneShot"
-msgstr ""
+msgstr "Einmalig (OneShot)"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:92
 msgid ""
@@ -292,7 +303,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:141
 msgid "StateMachine"
-msgstr ""
+msgstr "Zustandsmaschine"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:143
 msgid ""
@@ -335,6 +346,8 @@ msgid ""
 "*Switch Mode* is the transition type (see above), it can be modified after "
 "creation here."
 msgstr ""
+"*Switch Mode* ist der Übergangstyp (siehe oben), der nach der Erstellung "
+"hier geändert werden kann."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:161
 msgid ""
@@ -352,6 +365,8 @@ msgstr ""
 #: ../../docs/tutorials/animation/animation_tree.rst:164
 msgid "*Xfade Time* is the time to cross-fade between this state and the next."
 msgstr ""
+"*Xfade Time* ist die Zeit zum Überblenden zwischen diesem und dem nächsten "
+"Status."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:165
 msgid ""
@@ -397,6 +412,9 @@ msgid ""
 "<class_KinematicBody_method_move_and_slide>` to control the character "
 "movement."
 msgstr ""
+"Dies kann Funktionen wie :ref:`KinematicBody.move_and_slide "
+"<class_KinematicBody_method_move_and_slide>` zugeführt werden, um die "
+"Zeichenbewegung zu steuern."
 
 #: ../../docs/tutorials/animation/animation_tree.rst:193
 msgid ""
@@ -407,7 +425,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:200
 msgid "Controlling from code"
-msgstr ""
+msgstr "Steuern aus Programmcode"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:202
 msgid ""
@@ -448,11 +466,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:221
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "So können Sie sie einstellen oder lesen:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:236
 msgid "State machine travel"
-msgstr ""
+msgstr "Zustandsmaschine fahren"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:238
 msgid ""
@@ -475,3 +493,5 @@ msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
 msgstr ""
+"Einmal abgerufen, kann es verwendet werden, indem Sie eine der vielen "
+"gebotenen Funktionen aufrufen:"

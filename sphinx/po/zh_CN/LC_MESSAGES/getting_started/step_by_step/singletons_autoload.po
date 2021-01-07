@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,6 @@ msgstr ""
 "加载数据很麻烦并且可能很慢。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -67,35 +66,31 @@ msgid ""
 "the same scene or class for multiple singletons as long as they have "
 "different names."
 msgstr ""
-"`单例模式 <https://en.wikipedia.org/wiki/Singleton_pattern>`_ 是解决需要在场"
-"景之间存储持久性信息的常见用例的有用工具。在我们的示例中，可以将同一个场景或"
-"类重新用于多个单例，只要它们有不同的名称。"
+"`单例模式 <https://en.wikipedia.org/wiki/Singleton_pattern>`_ 是一个解决需要"
+"在场景之间存储持久性信息的常见用例的实用工具。在我们的示例中，只要多个单例具"
+"有不同的名称，就可以复用相同的场景或类。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr "使用此概念，您可以创建对象："
+msgstr "利用这个概念，你可以创建这样的对象："
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running."
-msgstr "始终加载，无论当前正在运行哪个场景"
+msgstr "无论当前运行哪个场景，始终加载。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Can store global variables such as player information."
-msgstr "可以存储全局变量，例如 ``player`` 信息"
+msgstr "可以存储全局变量，如玩家信息。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions."
-msgstr "可以处理切换场景和场景间的过渡"
+msgstr "可以处理切换场景和场景间过渡。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "*Act* like a singleton, since GDScript does not support global variables by "
 "design."
-msgstr "表现得像一个单例对象，因为GDScript在设计上不支持全局变量"
+msgstr "**行为**类似单例模式，因为GDScript在设计上不支持全局变量。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts can give us these characteristics."
@@ -107,6 +102,8 @@ msgid ""
 "design pattern. It may still be instanced more than once by the user if "
 "desired."
 msgstr ""
+"Godot不会按照单例设计模式将AutoLoad设为“真正的”单例。如有必要，用户仍然可以对"
+"它进行多次实例化。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
@@ -117,6 +114,7 @@ msgid ""
 "You can create an AutoLoad to load a scene or a script that inherits from :"
 "ref:`class_Node`."
 msgstr ""
+"你可以创建一个AutoLoad来加载一个场景或一个继承自 :ref:`class_Node` 的脚本。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
 #, fuzzy
@@ -289,7 +287,6 @@ msgid ""
 msgstr "运行该项目，并测试您可以通过按下按钮来切换场景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286
-#, fuzzy
 msgid ""
 "When scenes are small, the transition is instantaneous. However, if your "
 "scenes are more complex, they may take a noticeable amount of time to "
@@ -298,7 +295,7 @@ msgid ""
 msgstr ""
 "注意：当场景较小时，过渡是瞬时的。但是，如果您的场景比较复杂，则可能需要花费"
 "相当长的时间才能显示出来。要了解如何处理此问题，请参阅下一个教程： :ref:"
-"`doc_background_loading`"
+"`doc_background_loading`。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:290
 msgid ""
@@ -308,3 +305,6 @@ msgid ""
 "scene is changed. This can be used to indicate to the player that a scene is "
 "being loaded."
 msgstr ""
+"另外，如果加载时间相对较短（少于3秒左右），你可以在改变场景之前，通过显示某种"
+"2D元素来显示一个 \"加载中图标\"，然后在改变场景后隐藏它。这能让玩家知道场景正"
+"在载入中。"

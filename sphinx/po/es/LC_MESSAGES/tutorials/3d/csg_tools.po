@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:4
 msgid "Prototyping levels with CSG"
-msgstr ""
+msgstr "Prototipando niveles con CSG"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:6
 msgid ""
@@ -27,6 +27,10 @@ msgid ""
 "basic shapes or custom meshes to create more complex shapes. In 3D modelling "
 "software, CSG is mostly known as \"Boolean Operators\"."
 msgstr ""
+"CSG significa **Geometría Sólida Constructiva**, y es una herramienta para "
+"combinar formas básicas o mallas personalizadas para crear formas más "
+"complejas. En el software de modelado 3D, CSG es mayormente conocido como "
+"\"Operadores Booleanos\"."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:10
 msgid ""
@@ -35,6 +39,10 @@ msgid ""
 "primitives. Interior environments can be created by using inverted "
 "primitives."
 msgstr ""
+"El prototipo de nivel es uno de los principales usos del CSG en Godot. Esta "
+"técnica permite a los usuarios crear versiones simples de las formas más "
+"comunes combinando primitivas. Se pueden crear ambientes interiores "
+"utilizando primitivas invertidas."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:14
 msgid ""
@@ -42,6 +50,10 @@ msgid ""
 "built-in support for UV mapping or editing 3D polygons (though extruded 2D "
 "polygons can be used with the CSGPolygon node)."
 msgstr ""
+"Los nodos CSG en Godot están destinados principalmente a la creación de "
+"prototipos. No hay soporte incorporado para mapeo de UV o edición de "
+"polígonos 3D (aunque se pueden usar polígonos 2D extruidos con el nodo "
+"CSGPolygon)."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:18
 msgid ""
@@ -50,6 +62,10 @@ msgid ""
 "It lets you design levels using `TrenchBroom <https://kristianduske.com/"
 "trenchbroom/>`__ and import them in Godot."
 msgstr ""
+"Si estás buscando una herramienta de diseño de niveles fácil de usar para un "
+"proyecto, tal vez quieras usar `Qodot <https://github.com/Shfty/qodot-"
+"plugin>`__ en su lugar. Te permite diseñar niveles usando \"TrenchBroom\" "
+"<https://kristianduske.com/trenchbroom/>`__ e importarlos en Godot."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
 msgid "Introduction to CSG nodes"
@@ -60,6 +76,8 @@ msgid ""
 "Like other features of Godot, CSG is supported in the form of nodes. These "
 "are the CSG nodes:"
 msgstr ""
+"Al igual que otras características de Godot, el CSG se apoya en forma de "
+"nodos. Estos son los nodos de CSG:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:32
 msgid ":ref:`CSGBox <class_CSGBox>`"
@@ -95,48 +113,58 @@ msgstr "Funcionalidades de herramientas CSG"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:47
 msgid "Every CSG node supports 3 kinds of boolean operations:"
-msgstr ""
+msgstr "Cada nodo CSG soporta 3 tipos de operaciones booleanas:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:49
 msgid ""
 "**Union:** Geometry of both primitives is merged, intersecting geometry is "
 "removed."
 msgstr ""
+"**Unión:** La geometría de ambas primitivas se fusiona, la geometría que se "
+"intersecta se elimina."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:51
 msgid ""
 "**Intersection:** Only intersecting geometry remains, the rest is removed."
 msgstr ""
+"**Intersección:** Sólo queda la geometría de intersección, el resto se "
+"elimina."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:52
 msgid ""
 "**Subtraction:** The second shape is subtracted from the first, leaving a "
 "dent with its shape."
 msgstr ""
+"**Sustracción:** La segunda forma se resta de la primera, dejando una mella "
+"con su forma."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:60
 msgid "CSGPolygon"
-msgstr ""
+msgstr "PolígonoCSG"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:62
 msgid ""
 "The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
 "in 2D (in X, Y coordinates) in the following ways:"
 msgstr ""
+"El nodo :ref:`CSGPolygon <class_CSGPolygon>` extruye a lo largo de un "
+"polígono dibujado en 2D (en coordenadas X, Y) de las siguientes maneras:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:65
 msgid "**Depth:** Extruded back a given amount."
-msgstr ""
+msgstr "**Profundidad:** Extraído de vuelta una cantidad dada."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:66
 msgid "**Spin:** Extruded while spinning around its origin."
-msgstr ""
+msgstr "**Girar:** Extruido mientras gira alrededor de su origen."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:67
 msgid ""
 "**Path:** Extruded along a Path node. This operation is commonly called "
 "lofting."
 msgstr ""
+"**Ruta:** Extruido a lo largo de un nodo Ruta. Esta operación se llama "
+"comúnmente \"lofting\"."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:74
 msgid ""
@@ -144,6 +172,9 @@ msgid ""
 "work. In the Path node, draw the path and the polygon in CSGPolygon will "
 "extrude along the given path."
 msgstr ""
+"El modo **Ruta** debe estar provisto de un nodo :ref:`Path <class_Path>` "
+"para funcionar. En el nodo Ruta, dibuja el camino y el polígono en "
+"CSGPolygon extruirá a lo largo del camino dado."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:80
 msgid "Custom meshes"
@@ -155,6 +186,9 @@ msgid ""
 "modelled in other software and imported into Godot. Multiple materials are "
 "supported. There are some restrictions for geometry:"
 msgstr ""
+"Cualquier malla puede ser usada para :ref:`CSGMesh <class_CSGMesh>`; la "
+"malla puede ser modelada en otro software e importada a Godot. Se admiten "
+"múltiples materiales. Hay algunas restricciones para la geometría:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:86
 msgid "it must be closed,"
@@ -162,25 +196,27 @@ msgstr "debe ser cerrada,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:87
 msgid "it must not self-intersect,"
-msgstr ""
+msgstr "no debe intersectarse a si mismo,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:88
 msgid "it must not contain internal faces,"
-msgstr ""
+msgstr "no debe contener caras internas,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:89
 msgid "every edge must connect to only two other faces."
-msgstr ""
+msgstr "cada borde debe conectarse sólo a otras dos caras."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:94
 msgid "CSGCombiner"
-msgstr ""
+msgstr "CombinadorCSG"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:96
 msgid ""
 "The :ref:`CSGCombiner <class_CSGCombiner>` node is an empty shape used for "
 "organization. It will only combine children nodes."
 msgstr ""
+"El nodo :ref:`CSGCombiner <class_CSGCombiner>` es una forma vacía que se "
+"utiliza para la organización. Sólo combinará nodos hijos."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:100
 msgid "Processing order"
@@ -192,6 +228,9 @@ msgid ""
 "union, intersection or subtraction, in tree order, and apply them to itself "
 "one after the other."
 msgstr ""
+"Cada nodo CSG primero procesará sus nodos hijos y sus operaciones: unión, "
+"intersección o sustracción, en orden de árbol, y se los aplicará a sí mismo "
+"uno tras otro."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:106
 msgid ""
@@ -202,48 +241,57 @@ msgid ""
 "affecting performance. Only use binary operations where you actually need "
 "them."
 msgstr ""
+"En interés del rendimiento, asegúrese de que la geometría del CSG siga "
+"siendo relativamente simple, ya que las mallas complejas pueden tardar un "
+"tiempo en procesarse. Si se agregan objetos juntos (como objetos de mesa y "
+"de habitación), crearlos como árboles CSG separados. Forzar demasiados "
+"objetos en un solo árbol eventualmente comenzará a afectar el rendimiento. "
+"Utiliza las operaciones binarias sólo donde realmente las necesites."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:114
 msgid "Prototyping a level"
-msgstr ""
+msgstr "Prototipando un nivel"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:116
 msgid "We will prototype a room to practice the use of CSG tools."
 msgstr ""
+"Haremos un prototipo de una sala para practicar el uso de herramientas CSG."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:118
 msgid ""
 "Working in **Orthogonal** projection gives a better view when combining the "
 "CSG shapes."
 msgstr ""
+"Trabajar en la proyección **Ortonormal** da una mejor visión al combinar las "
+"formas del CSG."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:121
 msgid "Our level will contain these objects:"
-msgstr ""
+msgstr "Nuestro nivel contendrá estos objetos:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:123
 msgid "a room,"
-msgstr ""
+msgstr "una habitación,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:124
 msgid "a bed,"
-msgstr ""
+msgstr "una cama,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:125
 msgid "a lamp,"
-msgstr ""
+msgstr "una lámpara,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:126
 msgid "a desk,"
-msgstr ""
+msgstr "un escritorio,"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:127
 msgid "a bookshelf."
-msgstr ""
+msgstr "una estantería."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:129
 msgid "Create a scene with a Spatial node as root node."
-msgstr ""
+msgstr "Crear una escena con un nodo Sspacial como nodo raíz."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:131
 msgid ""
@@ -251,46 +299,59 @@ msgid ""
 "some angles. Change the display mode using **Display Overdraw** in the 3D "
 "viewport menu, or add a DirectionalLight node to help you see clearly."
 msgstr ""
+"La iluminación por defecto del entorno no proporciona un sombreado claro en "
+"algunos ángulos. Cambia el modo de visualización usando **Display Overdraw** "
+"en el menú de vista 3D, o añade un nodo DirectionalLight para ayudarte a ver "
+"con claridad."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:138
 msgid ""
 "Create a CSGBox and name it ``room``, enable **Invert Faces** and change the "
 "dimensions of your room."
 msgstr ""
+"Crea una CSGBox y llámala ``room``, habilita la opción \"Invertir caras\" y "
+"cambia las dimensiones de tu habitación."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:145
 msgid "Next, create a CSGCombiner and name it ``desk``."
-msgstr ""
+msgstr "A continuación, crear un CSGCombiner y nombrarlo ``desk``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:147
 msgid "A desk has one surface and 4 legs:"
-msgstr ""
+msgstr "Un escritorio tiene una superficie y 4 patas:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:149
 msgid ""
 "Create 1 CSGBox children node in **Union** mode for the surface and adjust "
 "the dimensions."
 msgstr ""
+"Crear 1 nodo infantil CSGBox en modo **Unión** para la superficie y ajusta "
+"las dimensiones."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:151
 msgid ""
 "Create 4 CSGBox children nodes in **Union** mode for the legs and adjust the "
 "dimensions."
 msgstr ""
+"Crea 4 nodos infantiles CSGBox en modo **Unión** para las piernas y ajusta "
+"las dimensiones."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:154
 msgid "Adjust their placement to resemble a desk."
-msgstr ""
+msgstr "Ajusta su ubicación para que se parece a un escritorio."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:158
 msgid ""
 "CSG nodes inside a CSGCombiner will only process their operation within the "
 "combiner. Therefore, CSGCombiners are used to organize CSG nodes."
 msgstr ""
+"Los nodos CSG dentro de un combinadorCSG sólo procesarán su operación dentro "
+"del combinador. Por lo tanto, los combinadorCSG se utilizan para organizar "
+"los nodos CSG."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:162
 msgid "Create a CSGCombiner and name it ``bed``."
-msgstr ""
+msgstr "Crea un CombinadorCSG y llámalo ``bed``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:164
 msgid ""
@@ -298,30 +359,41 @@ msgid ""
 "CSGBox and adjust its dimension for the bed. Create another CSGBox and "
 "adjust its dimension for the mattress."
 msgstr ""
+"Nuestra cama consta de 3 partes: la cama, el colchón y una almohada. Crea "
+"una CSGBox y ajusta su dimensión para la cama. Crea otra CSGBox y ajusta su "
+"dimensión para el colchón."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:170
 msgid ""
 "We will create another CSGCombiner named ``pillow`` as the child of  "
 "``bed``. The scene tree should look like this:"
 msgstr ""
+"Crearemos otro CombinadorCSG llamado ``pillow`` como el hijo de ``bed``. El "
+"árbol de la escena debería verse así:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:175
 msgid ""
 "We will combine 3 CSGSphere nodes in **Union** mode to form a pillow. Scale "
 "the Y axis of the spheres and enable **Smooth Faces**."
 msgstr ""
+"Combinaremos 3 nodos de la CSGSphere en modo **Unión** para formar una "
+"almohada. Escala el eje Y de las esferas y habilita **Caras Suaves**."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:180
 msgid ""
 "Select the ``pillow`` node and switch the mode to **Subtraction**; the "
 "combined spheres will cut a hole into the mattress."
 msgstr ""
+"Selecciona el nodo ``pillow`` y cambia el modo a **Sustracción**; las "
+"esferas combinadas harán un agujero en el colchón."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:185
 msgid ""
 "Try to re-parent the ``pillow`` node to the root ``Spatial`` node; the hole "
 "will disappear."
 msgstr ""
+"Trata de volver a unir el nodo ``pillow`` con el nodo ``Spatial`` de la "
+"raíz; el agujero desaparecerá."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:188
 msgid ""
@@ -329,6 +401,10 @@ msgid ""
 "node is not a CSG node, the CSGCombiner nodes are the end of the operations; "
 "this shows the use of CSGCombiner to organize the CSG scene."
 msgstr ""
+"Esto es para ilustrar el efecto del orden de procesamiento CSG. Dado que el "
+"nodo raíz no es un nodo CSG, los nodos CombinadorCSG son el final de las "
+"operaciones; esto muestra el uso de CombinadorCSG para organizar la escena "
+"CSG."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:193
 msgid ""
@@ -340,7 +416,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:198
 msgid "Create a CSGCombiner and name it ``lamp``."
-msgstr ""
+msgstr "Crea un CombinadorCSG y llámalo ``lamp``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:200
 msgid ""
@@ -348,6 +424,9 @@ msgid ""
 "CSGCylinder, enable the **Cone** option and make it the stand. Create "
 "another CSGCylinder and adjust the dimensions to use it as a pole."
 msgstr ""
+"Una lámpara consta de 3 partes: el soporte, el poste y la pantalla de "
+"lampara. Crea un cilindroCSG, activa la opción **Cono** y hazlo el soporte. "
+"Crea otro cilindroCSG y ajustar las dimensiones para usarlo como un poste."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:206
 msgid ""
@@ -356,32 +435,43 @@ msgid ""
 "while in **Front View** (numeric keypad 1); this shape will extrude around "
 "the origin and form the lampshade."
 msgstr ""
+"Usaremos un polígonoCSG para la pantalla de la lámpara de pantalla. Usaremos "
+"el modo **Spin** para el polígonoCSGP y dibujaremos un \"trapezoide\" "
+"<https://en.wikipedia.org/wiki/Trapezoid>`_ mientras que en **Front View** "
+"(teclado numérico 1); esta forma se extrudirá alrededor del origen y formará "
+"la pantalla de la lámpara."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:217
 msgid "Adjust the placement of the 3 parts to make it look like a lamp."
-msgstr ""
+msgstr "Ajusta la colocación de las 3 partes para que parezca una lámpara."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:221
 msgid "Create a CSGCombiner and name it ``bookshelf``."
-msgstr ""
+msgstr "Crea un CombinadorCSG y llámalo ``bookshelf``."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:223
 msgid ""
 "We will use 3 CSGBox nodes for the bookshelf. Create a CSGBox and adjust its "
 "dimensions; this will be the size of the bookshelf."
 msgstr ""
+"Usaremos 3 nodos CSGBox para la estantería. Crea un CSGBox y ajusta sus "
+"dimensiones; este será el tamaño de la estantería."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:228
 msgid ""
 "Duplicate the CSGBox and shorten the dimensions of each axis and change the "
 "mode to **Subtraction**."
 msgstr ""
+"Duplicar la CSGBox y acortar las dimensiones de cada eje y cambiar el modo a "
+"**Sustracción**."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:235
 msgid ""
 "You've almost built a shelf. Create one more CSGBox for dividing the shelf "
 "into two levels."
 msgstr ""
+"Casi has construido un estante. Crea una CSGBox más para dividir el estante "
+"en dos niveles."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:240
 msgid ""
@@ -397,6 +487,10 @@ msgid ""
 "tools can be used for designing all kinds of levels, such as a maze or a "
 "city; explore its limitations when designing your game."
 msgstr ""
+"Has hecho un prototipo con éxito de una habitación con las herramientas CSG "
+"en Godot. Las herramientas CSG pueden utilizarse para diseñar todo tipo de "
+"niveles, como un laberinto o una ciudad; explora sus limitaciones a la hora "
+"de diseñar tu juego."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:250
 msgid "Using prototype textures"
@@ -411,12 +505,22 @@ msgid ""
 "restricts its usage to organic surfaces like terrain. Still, when "
 "prototyping, it can be used to quickly apply textures to CSG-based levels."
 msgstr ""
+"El :ref:`doc_spatial_material` de Godot soporta *mapeo triplanar*, que puede "
+"ser usado para aplicar automáticamente una textura a objetos arbitrarios sin "
+"distorsión. Esto es útil cuando se usa CSG ya que Godot no soporta todavía "
+"la edición de mapas UV en los nodos CSG. El mapeado triplanar es "
+"relativamente lenta, lo que normalmente restringe su uso a superficies "
+"orgánicas como el terreno. Aún así, cuando se hacen prototipos, se puede "
+"usar para aplicar rápidamente texturas a niveles basados en CSG."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:259
 msgid ""
 "If you need some textures for prototyping, Kenney made a `set of CC0-"
 "licensed prototype textures <https://kenney.nl/assets/prototype-textures>`__."
 msgstr ""
+"Si necesitas algunas texturas para el prototipo, Kenney hizo unas \"texturas "
+"de prototipo con licencia CC0\" <https://kenney.nl/assets/prototype-"
+"textures>`__."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
 msgid "There are two ways to apply a material to a CSG node:"
@@ -429,6 +533,10 @@ msgid ""
 "automatically, but will make it impossible to change the material in "
 "individual children."
 msgstr ""
+"Aplicándolo a un nodo CombinadorCSG como sobreescritura de material "
+"(**Geometría > Anulación de material** en el Inspector). Esto afectará a sus "
+"hijos automáticamente, pero hará imposible cambiar el material en hijos "
+"individuales."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:268
 msgid ""
@@ -436,6 +544,10 @@ msgid ""
 "This way, each CSG node can have its own appearance. Subtractive CSG nodes "
 "will apply their material to the nodes they're \"digging\" into."
 msgstr ""
+"Aplicando un material a los nodos individuales (**Material** en el "
+"Inspector). De esta manera, cada nodo CSG puede tener su propia apariencia. "
+"Los nodos CSG sustractivos aplicarán su material a los nodos en los que "
+"están \"excavando\"."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:272
 msgid ""
@@ -449,6 +561,16 @@ msgid ""
 "Higher values in the **Scale** property will cause the texture to repeat "
 "more often."
 msgstr ""
+"Para aplicar el mapeo triplanar a un nodo CSG, selecciónelo, vaya al "
+"Inspector, haga clic en el texto **[vacío]** junto a **Sobreescritura "
+"Material** (o **Material** para nodos CSG individuales). Elija **Nuevo "
+"Material Espacial**. Haga clic en el icono del material recién creado para "
+"editarlo. Despliega la sección **Albedo** y carga una textura en la "
+"propiedad **Texture**. Ahora, despliega la sección **Uv1** y marca "
+"**Triplanar**. Puedes cambiar el desplazamiento y la escala de la textura en "
+"cada eje jugando con las propiedades **Escala** y **Desplazamiento** justo "
+"arriba. Valores más altos en la propiedad **Escala** harán que la textura se "
+"repita más a menudo."
 
 #: ../../docs/tutorials/3d/csg_tools.rst:281
 msgid ""
@@ -458,3 +580,8 @@ msgid ""
 "onto, click the dropdown arrow next to its material property then choose "
 "**Paste**."
 msgstr ""
+"Puedes copiar un MaterialEspacial para reutilizarlo en los nodos del CSG. "
+"Para ello, haga clic en la flecha desplegable junto a una propiedad material "
+"en el Inspector y elija **Copiar**. Para pegarlo, selecciona el nodo al que "
+"quieres aplicar el material, haz clic en la flecha desplegable hacia abajo "
+"junto a su propiedad material y elige **Pegar**."

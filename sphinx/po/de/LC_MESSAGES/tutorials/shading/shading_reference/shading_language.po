@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -399,7 +399,7 @@ msgstr "Konstruieren"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:120
 msgid "Construction of vector types must always pass:"
-msgstr ""
+msgstr "Die Konstruktion von Vektortypen muss immer bestehen aus:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:132
 msgid ""
@@ -419,7 +419,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:155
 msgid "Swizzling"
-msgstr ""
+msgstr "Swizzling (Elemente eines Vektors neu anordnen)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:157
 msgid ""
@@ -549,6 +549,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:277
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
+"Ähnlich wie Variablen können Arrays auch mit ``const`` deklariert werden."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:287
 msgid ""
@@ -1567,7 +1568,7 @@ msgstr "mat_type **outerProduct** (vec_type column, vec_type row)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:713
 msgid "Matrix outer product"
-msgstr ""
+msgstr "Matrix-Außenprodukt"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "mat_type **transpose** (mat_type m)"
@@ -1575,7 +1576,7 @@ msgstr "mat_type **transpose** (mat_type m)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:715
 msgid "Transpose matrix"
-msgstr ""
+msgstr "Matrix transponieren"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "float **determinant** (mat_type m)"
@@ -1583,7 +1584,7 @@ msgstr "float **determinant** (mat_type m)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:717
 msgid "Matrix determinant"
-msgstr ""
+msgstr "Matrix-Determinante"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:719
 msgid "mat_type **inverse** (mat_type m)"
@@ -1824,7 +1825,7 @@ msgstr "vec_type **dFdx** (vec_type p)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:781
 msgid "Derivative in ``x`` using local differencing"
-msgstr ""
+msgstr "Ableitung in ``x`` unter Verwendung lokaler Differenzierung"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
 msgid "vec_type **dFdy** (vec_type p)"
@@ -1832,7 +1833,7 @@ msgstr "vec_type **dFdy** (vec_type p)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:783
 msgid "Derivative in ``y`` using local differencing"
-msgstr ""
+msgstr "Ableitung in ``y`` unter Verwendung lokaler Differenzierung"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
 msgid "vec_type **fwidth** (vec_type p)"
@@ -1840,4 +1841,4 @@ msgstr "vec_type **fwidth** (vec_type p)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:785
 msgid "Sum of absolute derivative in ``x`` and ``y``"
-msgstr ""
+msgstr "Summe der absoluten Ableitung in ``x`` und ``y``"

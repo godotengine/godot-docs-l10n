@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,81 +32,110 @@ msgid ""
 "understand the :ref:`doc_vector_math` tutorial, as this tutorial requires a "
 "knowledge of vectors."
 msgstr ""
-"在阅读本教程之前，建议阅读关于 :ref:`doc_vector_math` 的前一篇教程，因为这是"
-"一个直接的续作。"
+"在阅读本教程之前，我们推荐你从头到尾阅读并且理解 :ref:`doc_vector_math` 教"
+"程，因为本教程需要一点向量的知识。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:13
+#, fuzzy
 msgid ""
 "This tutorial is about *transformations* and how we represent them in Godot "
 "using matrices. It is not a full in-depth guide to matrices. Transformations "
 "are most of the time applied as translation, rotation, and scale, so we will "
 "focus on how to represent those with matrices."
 msgstr ""
+"这个教程是关于 *变换* 以及我们如何在Godot中使用矩阵表示它。这不是关于矩阵的充"
+"分、深入的指南。变换大多数时候被应用为平移，旋转，和缩放,所以我们将会关注如何"
+"用矩阵表示这些变换。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:18
+#, fuzzy
 msgid ""
 "Most of this guide focuses on 2D, using :ref:`class_Transform2D` and :ref:"
 "`class_Vector2`, but the way things work in 3D is very similar."
 msgstr ""
+"这个指南大部分关注于2D，使用Transform2D和Vector2，但在3D中这些事物的工作方式"
+"也十分相似。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
+#, fuzzy
 msgid ""
 "As mentioned in the previous tutorial, it is important to remember that in "
 "Godot, the Y axis points *down* in 2D. This is the opposite of how most "
 "schools teach linear algebra, with the Y axis pointing up."
 msgstr ""
+"正如之前的教程中提到的，要记在Godot中，Y轴在2D中指向下。这与学校里教的线性代"
+"数正好相反，在那里Y轴是指向上的。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
+#, fuzzy
 msgid ""
 "The convention is that the X axis is red, the Y axis is green, and the Z "
 "axis is blue. This tutorial is color-coded to match these conventions, but "
 "we will also represent the origin vector with a blue color."
 msgstr ""
+"这里的惯例是X轴是红色的，Y轴是绿色的，并且Z轴是蓝色的。这个教程里的颜色是经过"
+"设置的以匹配这些惯例, 但是我们也给原向量使用蓝色。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:32
+#, fuzzy
 msgid "Matrix components and the Identity matrix"
-msgstr ""
+msgstr "矩阵分量和单位矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:34
+#, fuzzy
 msgid ""
 "The identity matrix represents a transform with no translation, no rotation, "
 "and no scale. Let's start by looking at the identity matrix and how its "
 "components relate to how it visually appears."
 msgstr ""
+"单位矩阵代表一个没有平移，没有旋转，并且没有缩放的变换。让我们开始看看单位矩"
+"阵以及它的分量如何与它的视觉表现相联系吧。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
+#, fuzzy
 msgid ""
 "Matrices have rows and columns, and a transformation matrix has specific "
 "conventions on what each does."
-msgstr ""
+msgstr "矩阵有一些行和列，并且一个变换矩阵有关于这些行和列做什么的特定的惯例。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
+#, fuzzy
 msgid ""
 "In the image above, we can see that the red X vector is represented by the "
 "first column of the matrix, and the green Y vector is likewise represented "
 "by the second column. A change to the columns will change these vectors. We "
 "will see how they can be manipulated in the next few examples."
 msgstr ""
+"在上面的图片中，我们可以看到红色的X向量被表示为矩阵的第一列，然后绿色的Y向量"
+"相似地被表示为第二列。改变这些列会改变对应的向量。我们将会在接下来的几个例子"
+"中看到他们是如何被操纵的。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:49
+#, fuzzy
 msgid ""
 "You should not worry about manipulating rows directly, as we usually work "
 "with columns. However, you can think of the rows of the matrix as showing "
 "which vectors contribute to moving in a given direction."
 msgstr ""
+"你不需要关心直接操作行，因为我们一般操作列。不过，你可以将矩阵的行理解为它显"
+"示了那个向量对给定的方向的移动的贡献。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:53
+#, fuzzy
 msgid ""
 "When we refer to a value such as `t.x.y`, that's the Y component of the X "
 "column vector. In other words, the bottom-left of the matrix. Similarly, `t."
 "x.x` is top-left, `t.y.x` is top-right, and `t.y.y` is bottom-right, where "
 "`t` is the Transform2D."
 msgstr ""
+"当我们指定一个值例如*t.x.y*, 这是X列向量的Y分量。换句话说，是这个矩阵的左下"
+"角。类似地，*t.x.x* 是左上角，*t.y.x*是右上角,然后*t.y.y*是右下角，在这里t是"
+"一个 Transform2D。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:59
 #, fuzzy
 msgid "Scaling the transformation matrix"
-msgstr "创建动画"
+msgstr "缩放变换矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:61
 msgid ""
@@ -114,6 +143,8 @@ msgid ""
 "by placing the Godot logo underneath our vectors so that we can visually see "
 "the effects on an object:"
 msgstr ""
+"应用一个缩放是最容易理解的操作之一。让我们开始吧，把Godot logo放置于我们的向"
+"量之下，这样我们可以直观得看出应用于这些对象上的效果："
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:67
 msgid ""
@@ -121,33 +152,41 @@ msgid ""
 "the scale we want. Let's scale it up by 2. 1 times 2 becomes 2, and 0 times "
 "2 becomes 0, so we end up with this:"
 msgstr ""
+"现在，为了缩放矩阵，我们唯一需要做的就是将每个矩阵分量乘以我们想要的缩放比"
+"例。来将它缩放两倍吧，1乘以2变成了2，0乘以2变成了0，所以我们最后得到了这个："
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "To do this in code, we can simply multiply each of the vectors:"
-msgstr ""
+msgstr "要在代码中做到这件事。我们可以简单地乘上每个向量："
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:92
+#, fuzzy
 msgid ""
 "If we wanted to return it to its original scale, we can multiply each "
 "component by 0.5. That's pretty much all there is to scaling a "
 "transformation matrix."
 msgstr ""
+"如果我们想要回到它原来的尺度，我们可以对每个分量乘以0.5。这几乎就是缩放一个变"
+"换矩阵的全部了。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:96
+#, fuzzy
 msgid ""
 "To calculate the object's scale from an existing transformation matrix, you "
 "can use `length()` on each of the column vectors."
 msgstr ""
+"要从一个已经存在的变换矩阵中计算对象的缩放尺度，你可以对每个列向量使用 "
+"`length()` 方法。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:99
 msgid ""
 "In actual projects, you can use the `scaled()` method to perform scaling."
-msgstr ""
+msgstr "在实际的项目中，你可以使用 `scaled()` 方法去执行缩放。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
 #, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "准备好动画"
+msgstr "旋转变换矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
@@ -689,14 +728,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr "`3D中的水 <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
-#, fuzzy
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr "`3D中的水 <https://www.youtube.com/watch?v=vm9Sdvhq6ho>`__"
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"

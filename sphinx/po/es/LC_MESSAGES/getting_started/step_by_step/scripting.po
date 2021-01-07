@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,6 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Escribir un script que pueda acceder a otros nodos de la escena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
@@ -289,8 +288,8 @@ msgid ""
 msgstr ""
 "Antes de continuar, asegúrate de leer la referencia :ref:"
 "`GDScript<doc_gdscript>`. Es un lenguaje diseñado para ser simple, y la "
-"referencia es corta, por lo que no tomará más que unos pocos minutos para "
-"obtener una visión general de los conceptos."
+"referencia está estructurada en secciones para que sea más fácil ver un "
+"resumen de los conceptos."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -302,6 +301,9 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"Si todavía tienes abierto el proyecto \"instanciación\" del tutorial "
+"anterior, entonces ciérralo ( Proyecto -> Salir a la lista de proyectos) y "
+"crea un nuevo proyecto."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -598,14 +600,13 @@ msgstr ""
 "También, recuerda que los nodos se referencian por nombre, no por tipo."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:336
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"El panel derecho del diálogo de conexión sirve para vincular valores "
-"específicos a los parámetros de la función conectada. Puedes añadir y "
+"El panel 'avanzado' del diálogo de conexión se usa para asignar valores "
+"específicos a los parámetros de las funciones conectadas. Se puede añadir o "
 "eliminar valores de diferentes tipos."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340

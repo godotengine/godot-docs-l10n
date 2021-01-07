@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,12 +210,16 @@ msgid "Export selected resources (and dependencies)"
 msgstr "导出选中的资源（包括依赖资源）"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
+#, fuzzy
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
 "you a list of the scenes or resources in the project, and you have to select "
 "every scene or resource you want to export."
 msgstr ""
+"**Export all resources in the project** 将会导出项目中的每一个资源。**Export "
+"selected scenes**和**Export selected resources**给予你一张项目中的场景或资源"
+"的清单，并且你需要选取每个你想导出的场景或资源。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid "Exporting from the command line"
@@ -261,15 +265,19 @@ msgstr ""
 "用的导出预设："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
+#, fuzzy
 msgid "PCK versus ZIP pack file formats"
-msgstr ""
+msgstr "PCK与ZIP打包文件格式对比"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#, fuzzy
 msgid ""
 "Each format has its upsides and downsides. PCK is the default and "
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
+"各个格式有它的优势与劣势。PCK对大多数用例来说是默认和推荐格式，但取决于您的需"
+"要，您可能希望使用ZIP。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
 #, fuzzy
@@ -277,15 +285,19 @@ msgid "**PCK format:**"
 msgstr "**平台：**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
+#, fuzzy
 msgid "Uncompressed format. Larger file size, but faster to read/write."
-msgstr ""
+msgstr "未压缩的格式。文件尺寸更大，但读写更快。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+#, fuzzy
 msgid ""
 "Not readable and writable using tools normally present on the user's "
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
+"使用用户操作系统上的一般工具将不可读和不可写，即使试图用`third-party tools "
+"<https://github.com/hhyyrylainen/GodotPckTool>`__ 用于提取和创建 PCK 文件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
 #, fuzzy
@@ -294,7 +306,7 @@ msgstr "**平台：**"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid "Compressed format. Smaller file size, but slower to read/write."
-msgstr ""
+msgstr "压缩格式。尺寸更小，但读写更慢。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
 msgid ""
@@ -302,3 +314,5 @@ msgid ""
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
 msgstr ""
+"可以使用用户操作系统中的常见工具读取或写入。这对简化制作mod很有用。（另请参"
+"阅:ref:`doc_exporting_pcks`）。"

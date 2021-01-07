@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -860,26 +860,22 @@ msgstr ""
 "タスクがあります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "オブジェクトへのコリジョン(衝突)検出の追加"
+msgstr "オブジェクトへのコリジョン検出の追加。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "オブジェクトをナビゲーションメッシュとして設定する"
+msgstr "オブジェクトをナビゲーションメッシュとして設定する。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
 "ゲーム エンジンで使用されていないノードの削除 (モデリングに使用される特定のラ"
-"イトなど)"
+"イトなど)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -888,7 +884,8 @@ msgid ""
 msgstr ""
 "このワークフローを簡略化するために、Godotには3Dモデリング・ソフトウェアのオブ"
 "ジェクトの名前に追加できるサフィックスがいくつかあります。インポートすると、"
-"Godotはそれらを検出し、自動的にアクションを実行します:"
+"Godotはそれらのオブジェクトの名前のサフィックスを検出し、自動的にアクションを"
+"実行します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
 msgid "All the suffixes described below are *case-sensitive*."
@@ -978,27 +975,23 @@ msgstr ""
 "くつかの形状があります:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "単一の矢印(Single arrow)は :ref:`class_rayshape` を作成します"
+msgstr "単一の矢印(Single arrow)は :ref:`class_rayshape` を作成します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:424
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "キューブ(Cube)は :ref:`class_boxshape` を作成します"
+msgstr "キューブは :ref:`class_boxshape` を作成します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "イメージ(Image) :ref:`class_planeshape` を作成します"
+msgstr "イメージ :ref:`class_planeshape` を作成します。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:426
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
 msgstr ""
-"球(Sphere )、(およびリストされていない他のもの)は :ref:`class_sphereshape` を"
-"作成します"
+"球、(およびリストされていない他のもの)は :ref:`class_sphereshape` を作成しま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:428
 msgid ""
@@ -1081,16 +1074,16 @@ msgid "Animation loop (-loop, -cycle)"
 msgstr "アニメーションループ(-loop、-cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:469
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
 "flag set. **Unlike the other suffixes described above, this does not require "
 "a hyphen.**"
 msgstr ""
-"トークン「loop」または「cycle」で開始または終了するCOLLADAドキュメント内のア"
+"``loop``または ``cycle``トークンで開始または終了するCOLLADAドキュメント内のア"
 "ニメーションクリップは、ループフラグが設定されたGodotアニメーションとしてイン"
-"ポートされます。これは大文字と小文字が区別され、ハイフンは不要です。"
+"ポートされます。**これは上記で示したような他のサフィックスとは違い、ハイフン"
+"は不要です。**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:473
 #, fuzzy

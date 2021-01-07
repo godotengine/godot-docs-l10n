@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,9 +143,9 @@ msgid ""
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"La prima scena che faremo andrà a definire l'oggetto ``Player``. Uno dei "
-"benefici di creare una scena separata per l'oggetto Player è che potremo "
-"testarla separatamente, anche prima di aver creato le altre parti del gioco."
+"La prima scena definirà l'oggetto ``Player``. Uno dei vantaggi di creare una "
+"scena separata per il giocatore è che possiamo testarla separatamente, anche "
+"prima di aver creato altre parti del gioco."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -255,6 +255,7 @@ msgstr ""
 "per aprire il pannello \"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
+#, fuzzy
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -264,14 +265,14 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"Sulla sinistra c'è una lista di animazioni. Clicca su quella con scritto "
-"\"default\" e rinominala in \"walk\". Ora clicca sul tasto \"Aggiungi\" per "
-"creare una seconda animazione chiamata \"up\". Trova le immagini del "
-"giocatore nella scheda \"FileSystem\" - si trovano nella cartella `` art`` "
-"che hai decompresso in precedenza. Trascina le due immagini per ogni "
-"animazione, chiamate ``playerGrey_up[1/2]`` e ``playerGrey_walk[1/2]``, "
-"all'interno della sezione \"Frames animazione\" del pannello per "
-"l'animazione corrispondente:"
+"Sulla sinistra c'è un elenco di animazioni. Fai clic su quella \"predefinita"
+"\" e rinominala in \"walk\". Quindi fare clic sul pulsante \"Nuova animazione"
+"\" per creare una seconda animazione denominata \"up\". Trova le immagini "
+"del giocatore nella scheda \"FileSystem\" - si trovano nella cartella `` "
+"art`` che hai decompresso in precedenza. Trascina le due immagini per ogni "
+"animazione, denominate `` playerGrey_up [1/2] `` e `` playerGrey_walk [1/2] "
+"``, nella parte \"Fotogrammi animazione\" del pannello per l'animazione "
+"corrispondente:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -720,15 +721,16 @@ msgid "Enemy scene"
 msgstr "Scena del nemico"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:533
+#, fuzzy
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
 "the screen, choose a random direction, and move in a straight line."
 msgstr ""
 "Ora è il momento di creare i nemici che il nostro giocatore dovrà schivare. "
-"Il loro comportamento non sarà molto complesso: i mob si generano in modo "
-"casuale ai bordi dello schermo, scelgono una direzione randomica e si "
-"muovono in linea retta."
+"Il loro comportamento non sarà molto complesso: i mob saranno generati in "
+"modo casuale ai bordi dello schermo, sceglieranno una direzione randomica e "
+"si muoveranno in linea retta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:537
 msgid ""
@@ -740,9 +742,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:540
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr ""
-"Vedi :ref:` Istanziamento<doc_instancing>` per saperne di più "
-"sull'istanziamento."
+msgstr "Vedi :ref:`doc_instancing` per saperne di più sull'istanziamento."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid "Node setup"
@@ -922,8 +922,10 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
-"Ora e' il momento di riunire tutto insieme. Creare una nuova scena e "
-"aggiungere un :ref:`Nodo<class_Node>` denominato ``Main``."
+"Ora è il momento di mettere tutto insieme. Creare una nuova scena e "
+"aggiungere un :ref:`Node <class_Node_Node>`` chiamato ``Main``. Assicuratevi "
+"di creare un Nodo, **non** un Node2D. Clicca il pulsante \"Instance\" e "
+"seleziona il tuo ``Player.tscn`` salvato."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
@@ -1003,10 +1005,10 @@ msgid ""
 "<class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you "
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
-"Il nodo principale genererà nuovi mob, e vogliamo che appaiano in una "
-"posizione casuale sul bordo dello schermo. Aggiungi un nodo :ref:`Path2D "
-"<class_Path2D>` chiamato ``MobPath``` come figlio di ``Main```. Quando "
-"selezioni ``Path2D```, vedrai alcuni nuovi pulsanti nella parte superiore "
+"Il nodo Main genererà nuovi mob, e vogliamo che appaiano in una posizione "
+"casuale sul bordo dello schermo. Aggiungi un nodo :ref:`Path2D "
+"<class_Path2D>` chiamato ``MobPath`` come figlio di ``Main``. Quando "
+"selezioni ``Path2D``, vedrai alcuni nuovi pulsanti nella parte superiore "
 "dell'editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
@@ -1018,12 +1020,12 @@ msgid ""
 "be found to the left of the \"Lock\" button, appearing as a magnet next to "
 "some dots and intersecting lines, respectively."
 msgstr ""
-"Selezionare quello centrale (\"Aggiungi punto\") e disegnare il tracciato "
-"facendo clic per aggiungere i punti agli angoli mostrati. Per fare in modo "
-"che i punti si aggancino alla griglia, assicurarsi che l'opzione \"Blocca "
-"sulla griglia\" sia selezionata. Questa opzione si trova sotto il pulsante "
-"\"Opzioni di aggancio\" a sinistra del pulsante \"Blocca\", che appare come "
-"una serie di tre punti verticali."
+"Selezionate quello centrale (\"Add Point\") e disegnate il percorso "
+"cliccando per aggiungere i punti agli angoli mostrati. Per fare in modo che "
+"i punti aggancino alla griglia, assicurarsi che \"Use Grid Snap\" e \"Use "
+"Snap\" siano entrambi selezionati. Queste opzioni si trovano a sinistra del "
+"pulsante \"Blocca\", che appare come un magnete accanto ad alcuni punti e "
+"linee che si intersecano, rispettivamente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""
@@ -1100,14 +1102,13 @@ msgstr ""
 "\"Load\". Selezionare ``Mob.tscn```."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:784
-#, fuzzy
 msgid ""
 "Next, select the ``Player`` node in the Scene dock, and access the Node dock "
 "on the sidebar. Make sure to have the Signals tab selected in the Node dock."
 msgstr ""
-"Seleziona il nodo \"Button\" nell'albero della scena e quindi seleziona la "
-"scheda \"Node\". Successivamente, assicurati di avere selezionato \"Signals"
-"\"."
+"Quindi, seleziona il nodo ``Player`` nel dock Scene e accedi al dock Nodo "
+"sulla barra laterale. Assicurati di avere la scheda Segnali selezionata nel "
+"dock Nodo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:787
 #, fuzzy
@@ -1121,12 +1122,15 @@ msgid ""
 "following code to the new function, as well as a ``new_game`` function that "
 "will set everything up for a new game:"
 msgstr ""
-"Successivamente, fare clic sul lettore e collegare il segnale ''hit''. "
-"Vogliamo creare una nuova funzione denominata ''game_over'', che gestirà ciò "
-"che deve accadere al termine di una partita. Digitare \"game_over\" nella "
-"casella \"Metodo nel nodo\" nella parte inferiore della finestra \"Segnale "
-"di collegamento\". Aggiungi il codice seguente, nonché una funzione "
-"''new_game'' per impostare tutto per un nuovo gioco:"
+"Dovresti vedere una lista dei segnali per il nodo ``Player``. Trova e clicca "
+"due volte sul segnale ``hit`` nella lista (o clicca con il tasto destro del "
+"mouse e seleziona \"Connetti...\"). In questo modo si aprirà la finestra di "
+"dialogo per la connessione del segnale. Vogliamo creare una nuova funzione "
+"chiamata ``game_over```, che gestirà ciò che deve accadere quando un gioco "
+"finisce. Digitate \"game_over\" nella casella \"Receiver Method\" in fondo "
+"alla finestra di dialogo della connessione del segnale e cliccate su "
+"\"Connect\". Aggiungete il seguente codice alla nuova funzione, così come "
+"una funzione ``new_game`` che imposterà tutto per un nuovo gioco:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:828
 msgid ""
@@ -1272,19 +1276,19 @@ msgstr "Creare quanto segue come elementi figlio del nodo ''HUD'':"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:969
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
-msgstr ":ref:'Label <class_Label>' denominato ''ScoreLabel''."
+msgstr ":ref:`Label <class_Label>` denominato ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:970
 msgid ":ref:`Label <class_Label>` named ``Message``."
-msgstr ":ref:`Label <class_Label>` denominato ''Message''."
+msgstr ":ref:`Label <class_Label>` denominato ``Message``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:971
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ":ref:'Button <class_Button>' denominato ''StartButton''."
+msgstr ":ref:`Button <class_Button>` denominato ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:972
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
-msgstr ":ref:'Timer <class_Timer>' denominato ''MessageTimer''."
+msgstr ":ref:`Timer <class_Timer>` denominato ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
@@ -1343,13 +1347,12 @@ msgstr ""
 "per ulteriori dettagli."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
 "Control node's layout:"
 msgstr ""
-"Disporre i nodi come illustrato di seguito. Fare clic sul pulsante \"Ancora"
-"\" per impostare l'ancoraggio di un nodo Control:"
+"Disponi i nodi come illustrato di seguito. Fare clic sul pulsante \"Layout\" "
+"per impostare l'ancoraggio di un nodo Control:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1005
 msgid ""
@@ -1417,14 +1420,11 @@ msgid "Bottom: ``-100``"
 msgstr "In basso: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
-#, fuzzy
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
 msgstr ""
-"Questa funzione viene chiamata quando si desidera visualizzare "
-"temporaneamente un messaggio, ad esempio \"Get Ready\". Sul "
-"``MessageTimer``, impostare il ``Tempo di attesa`` su ``2`` e impostare la "
+"Sul ``MessageTimer``, imposta ``Tempo d'attesa`` su ``2`` e imposta la "
 "proprietà ``One Shot`` su \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1036
@@ -1458,7 +1458,6 @@ msgstr ""
 "pausa, mostra il pulsante \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1115
-#, fuzzy
 msgid ""
 "When you need to pause for a brief time, an alternative to using a Timer "
 "node is to use the SceneTree's ``create_timer()`` function. This can be very "
@@ -1467,7 +1466,7 @@ msgid ""
 msgstr ""
 "Quando è necessario sospendere per un breve periodo di tempo, un'alternativa "
 "all'utilizzo di un nodo Timer consiste nell'utilizzare la funzione "
-"''create_timer()'' di SceneTree. Questo può essere molto utile per "
+"``create_timer()`` di SceneTree. Questo può essere molto utile per "
 "ritardare, come nel codice sopra, dove vogliamo aspettare un po 'di tempo "
 "prima di mostrare il pulsante \"Start\"."
 
@@ -1491,17 +1490,15 @@ msgid "Connecting HUD to Main"
 msgstr "Collegamento di HUD a Main"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
-#, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
 "The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
-"Ora che abbiamo finito di creare la scena ''HUD'', salvarla e tornare a "
-"''Main''. Istanza della scena ''HUD'' in ''Main'' come hai fatto la scena "
-"''Player'', e posizionarlo nella parte inferiore dell'albero. L'albero "
-"completo dovrebbe essere simile a questo, quindi assicurati di non perdere "
-"nulla:"
+"Ora che abbiamo finito di creare la scena ``HUD``, tornare a ``Main``. "
+"Istanza la scena ``HUD`` in ``Main`` come hai fatto per la scena ``Player``. "
+"L'albero della scena completo dovrebbe essere simile a questo, quindi "
+"assicurati di non aver tralasciato nulla:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1171
 msgid ""
@@ -1559,7 +1556,6 @@ msgid "Removing old creeps"
 msgstr "Rimozione old creeps"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
-#, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -1567,9 +1563,11 @@ msgid ""
 "tell *all* the mobs to remove themselves. We can do this with the \"group\" "
 "feature."
 msgstr ""
-"Se si gioca fino a \"Game Over\" e poi si inizia una nuova partita, i creeps "
-"del gioco precedente sono ancora sullo schermo. Sarebbe meglio se "
-"scomparissero tutti all'inizio di una nuova partita."
+"Se giochi fino al \"Game Over\" e inizi subito una nuova partita, i creeps "
+"del gioco precedente potrebbero essere ancora sullo schermo. Sarebbe meglio "
+"se scomparissero tutti all'inizio di una nuova partita. Abbiamo solo bisogno "
+"di un modo per dire a *tutti* i mob di sparire. Possiamo farlo con la "
+"funzione \"gruppo\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
@@ -1619,7 +1617,6 @@ msgid "Background"
 msgstr "Sfondo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
-#, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1628,21 +1625,20 @@ msgid ""
 "color you like and select \"Layout\" -> \"Full Rect\" so that it covers the "
 "screen."
 msgstr ""
-"Lo sfondo grigio di default non è un gran che, quindi cambiamo il colore. Un "
-"modo per farlo è usando il nodo :ref:`ColorRect <class_ColorRect>`. Mettendo "
-"il nodo come primo figlio di ``Main`` questo verrà disegnato dietro gli "
-"altri nodi. ``ColorRect``ha una sola proprietà: ``Color``. Scegli un colore "
-"che ti piace e aumenta la grandezza di ``ColorRect`` in modo da coprire lo "
-"schermo."
+"Lo sfondo grigio di default non è molto attraente, quindi cambiamo il suo "
+"colore. Un modo per farlo è usare un nodo :ref:`ColorRect "
+"<class_ColorRect>``. Rendilo il primo nodo sotto ``Main`` in modo che sia "
+"disegnato dietro gli altri nodi. ``ColorRect`` ha una sola proprietà: "
+"``Color``. Scegli un colore che ti piace e seleziona \"Layout\" -> \"Full "
+"Rect\" in modo che copra lo schermo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
-"Puoi anche aggiungere un immagine come sfondo, se ne hai una, usando un nodo "
-"ti tipo ``Sprite``."
+"Puoi anche aggiungere un'immagine di sfondo, se ne hai una, usando invece un "
+"nodo ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid "Sound effects"
@@ -1686,23 +1682,20 @@ msgstr ""
 "Dopodichè , aggiungi ''$DeathSound.play()'' nella funzione ''game_over()''."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1288
-#, fuzzy
 msgid "Keyboard shortcut"
-msgstr "Scorciatoie da tastiera"
+msgstr "Scorciatoia da tastiera"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1290
-#, fuzzy
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
 "this with the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
-"Dato che nel gioco si utilizzano i comandi della tastiera, sarebbe anche "
-"comodo iniziare il gioco premendo un tasto della tastiera. Un modo per farlo "
-"è usare la proprietà \"Shortcut\" del nodo ``Button``."
+"Poiché il gioco si gioca con i comandi della tastiera, sarebbe conveniente "
+"se potessimo iniziare il gioco anche premendo un tasto sulla tastiera. "
+"Possiamo farlo con la proprietà \"Shortcut\" del nodo ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1711,21 +1704,20 @@ msgid ""
 "*Action* property, type the name ``ui_select``. This is the default input "
 "event associated with the spacebar."
 msgstr ""
-"Nella scena ''HUD'', seleziona ''StartButton'' e cerca la proprietà "
-"'Scorciatoie' nell'Inspector. Seleziona quindi \"Nuova scorciatoia\" e "
-"clicca sul \"Scelta rapida\". Verrà visualizzata la relativa proprietà . "
-"Seleziona \"Nuovo InputEventAction\" e clicca sul nuovo \"InputEvent\". "
-"Infine, nella proprietà \"Action\", digita il nome ''ui_select''.Questo è "
-"l'InputEvent predefinito associato alla barra spaziatrice."
+"Nella scena ``HUD``, selezionare il ``StartButton`` e trova la sua proprietà "
+"*Shortcut* nell'Inspector. Seleziona \"New Shortcut\" e clicca sulla voce "
+"\"Shortcut\". Apparirà una seconda proprietà *Shortcut*. Seleziona \"New "
+"InputEventAction\" e clicca sulla nuova \"InputEventAction\". Infine, nella "
+"proprietà *Action*, digita il nome ``ui_select``. Questo è l'evento di input "
+"predefinito associato alla barra spaziatrice."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1302
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Space` to start the game."
 msgstr ""
-"Da questo momento, quando viene visualizzato il pulsante di avvio, è "
-"possibile cliccarlo o premere la barra spaziatrice per avviare il gioco."
+"Ora, quando appare il pulsante di avvio, puoi cliccare su di esso o premere :"
+"kbd:`Spazio` per avviare il gioco."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
 msgid "Project files"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,13 +42,10 @@ msgid "**On Linux/macOS only:** pkg-config"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
-#, fuzzy
 msgid ""
 "You may need to import necessary certificates for NuGet to perform HTTPS "
 "requests."
-msgstr ""
-"您可能需要导入必要的证书，以使NuGet执行HTTPS请求。您可以使用以下命令来执行此"
-"操作（在Windows上，可以从Mono命令行提示符下运行它）："
+msgstr "您可能需要导入必要的证书，以使NuGet执行HTTPS请求。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:19
 msgid ""
@@ -659,22 +656,19 @@ msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr "**module_mono_enabled**：在启用Mono模块的情况下构建Godot（是| **否**）"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:368
-#, fuzzy
 msgid "Build Godot with the Mono module enabled."
-msgstr "**module_mono_enabled**：在启用Mono模块的情况下构建Godot（是| **否**）"
+msgstr "在启用Mono模块的情况下构建Godot。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_glue**\\ =\\ **yes** | no"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:372
-#, fuzzy
 msgid ""
 "Whether to include the glue source files in the build and define "
 "``MONO_GLUE_DISABLED`` as a preprocessor macro."
 msgstr ""
-"**mono_glue**：是否在构建中包括胶水源文件，并将 ``MONO_GLUE_DISABLED`` 定义为"
-"预处理器宏（**是** | 否）"
+"是否在构建中包括胶水源文件，并将 ``MONO_GLUE_DISABLED`` 定义为预处理器宏。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:375
 #, fuzzy
@@ -682,30 +676,26 @@ msgid "**mono_prefix**\\ =path"
 msgstr "**mono_prefix**\\ =path"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:377
-#, fuzzy
 msgid ""
 "Path to the Mono installation directory for the target platform and "
 "architecture."
-msgstr "**mono_prefix**：目标平台和体系结构的Mono安装目录的路径"
+msgstr "目标平台和体系结构的Mono安装目录的路径。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:379
 msgid "**xbuild_fallback**\\ =yes | **no**"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:381
-#, fuzzy
 msgid "Whether to fallback to xbuild if MSBuild is not available."
-msgstr ""
-"**xbuild_fallback**：如果MSBuild不可用，是否回退到xbuild（是| **否** ）"
+msgstr "如果MSBuild不可用，是否回退到xbuild。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:385
-#, fuzzy
 msgid "Whether to link the Mono runtime statically."
-msgstr "**mono_static**：是否静态链接Mono运行时（是| **否**）"
+msgstr "是否静态链接Mono运行时。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid ""
@@ -717,10 +707,7 @@ msgid "**copy_mono_root**\\ =yes | **no**"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:390
-#, fuzzy
 msgid ""
 "Whether to copy the Mono framework assemblies and configuration files "
 "required by the Godot editor."
-msgstr ""
-"**copy_mono_root**：是否复制Godot编辑器所需的Mono框架程序集和配置文件（是| **"
-"否**）"
+msgstr "是否复制Godot编辑器所需的Mono框架程序集和配置文件。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,7 +186,7 @@ msgstr "request_product_info"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:124
 msgid "Requests the product info on a list of product IDs."
-msgstr ""
+msgstr "Fordert die Produktinfo aus einer Liste von Produkt-IDs an."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:129
 msgid ""
@@ -222,6 +222,8 @@ msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has 9 methods:"
 msgstr ""
+"Die Game Center API ist über das \"GameCenter\"-Singleton verfügbar. Es hat "
+"9 Methoden:"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:181
 msgid "``Error authenticate();``"
@@ -261,7 +263,7 @@ msgstr "``Error request_identity_verification_signature();``"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:191
 msgid "plus the standard pending event interface."
-msgstr ""
+msgstr "sowie die Standardschnittstelle für ausstehende Ereignisse."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:194
 msgid "authenticate"
@@ -277,7 +279,7 @@ msgstr "post_score"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:227
 msgid "Posts a score to a Game Center leaderboard."
-msgstr ""
+msgstr "Veröffentlicht eine Punktzahl auf einer Game Center-Bestenliste."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:232
 #: ../../docs/tutorials/platform/services_for_ios.rst:421
@@ -318,6 +320,8 @@ msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
+"``progress`` (Fließkomma) der Leistungsfortschritt von 0,0 bis 100,0 "
+"(übergeben an ``GKAchievement::percentComplete``)"
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:281
 msgid ""
@@ -332,6 +336,7 @@ msgstr "reset_achievements"
 #: ../../docs/tutorials/platform/services_for_ios.rst:317
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
+"Löscht alle Game Center-Erfolge. Die Funktion benötigt keine Parameter."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:344
 msgid "request_achievements"
@@ -362,6 +367,8 @@ msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr ""
+"Zeigt das integrierte Game Center-Overlay mit Bestenlisten, Erfolgen und "
+"Herausforderungen an."
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:423
 msgid ""

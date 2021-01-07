@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,18 +214,16 @@ msgid "class"
 msgstr "\\ class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "定義一個類別。"
+msgstr "定義一個內部類別。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
-#, fuzzy
 msgid "class_name"
-msgstr "\\ class"
+msgstr "\\ class_name"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "為腳本定義一個類別名稱，以及一個可選的圖示。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -378,7 +376,7 @@ msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
 "`Assert keyword`_."
 msgstr ""
-"判定一個條件，當判定失敗的時候記錄錯誤。在非除錯用建構中會忽略。請參考 "
+"判定一個條件，當判定失敗的時候記錄錯誤。在非除錯用建置中會忽略。請參考 "
 "`Assert 關鍵字`_ 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:203
@@ -1307,10 +1305,12 @@ msgid ""
 "give a constant value a name. Trying to assign a value to a constant after "
 "it's declared will give you an error."
 msgstr ""
+"常數是一種無法在遊戲執行時更改的數值。常數的值必須在編譯時期就已定好。使用 "
+"``const`` 關鍵字即可為常數設定名稱。若在常數定義後試圖為常數賦值會回傳錯誤。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:662
 msgid "We recommend using constants whenever a value is not meant to change."
-msgstr ""
+msgstr "我們建議，當有不會更改的值時，一概使用常數。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:675
 msgid ""
@@ -1795,7 +1795,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid "Class Constructor"
-msgstr "類別建構函式"
+msgstr "類別建置函式"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1141
 msgid ""
@@ -1804,8 +1804,8 @@ msgid ""
 "automatically when inheriting a class. So, there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"類別建構函式 ``_init`` 會在類別實體化時呼叫。如同剛才提到的，繼承的類別會自動"
-"呼叫母類別建構函式，所以通常不需要明確呼叫 ``._init()`` 。"
+"類別建置函式 ``_init`` 會在類別實體化時呼叫。如同剛才提到的，繼承的類別會自動"
+"呼叫母類別建置函式，所以通常不需要明確呼叫 ``._init()`` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 msgid ""
@@ -1813,7 +1813,7 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this::"
 msgstr ""
-"上方的 ``.some_func`` 例子中可以看到與呼叫一般函式不同，若繼承類別的建構函式"
+"上方的 ``.some_func`` 例子中可以看到與呼叫一般函式不同，若繼承類別的建置函式"
 "有引數，則會這樣傳遞："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
@@ -1831,7 +1831,7 @@ msgid ""
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``."
 msgstr ""
-"若被繼承類別 (``State.gd``) 定義了需要引數的建構函式 ``_init`` (此例中為 "
+"若被繼承類別 (``State.gd``) 定義了需要引數的建置函式 ``_init`` (此例中為 "
 "``e``) ，則繼承類別 (``Idle.gd``) **必須** 也定義 ``_init`` 並將適當的參數傳"
 "遞從 ``State.gd`` 中傳遞給 ``_init`` 。"
 
@@ -1846,7 +1846,7 @@ msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
 msgstr ""
-"在上方的例子中，傳遞給 ``State.gd`` 建構函式的 ``e`` 與傳遞給 ``Idle.gd`` 之 "
+"在上方的例子中，傳遞給 ``State.gd`` 建置函式的 ``e`` 與傳遞給 ``Idle.gd`` 之 "
 "``e`` 相同。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1184
@@ -1856,8 +1856,8 @@ msgid ""
 "This brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. eg.::"
 msgstr ""
-"若 ``Idle.gd`` 中的 ``_init`` 建構函式只接受 0 個引數，則即使沒有效果，依然需"
-"要傳入數值給 ``State.gd`` 母類別。也就是說，不只可將變數傳給母類別的建構函"
+"若 ``Idle.gd`` 中的 ``_init`` 建置函式只接受 0 個引數，則即使沒有效果，依然需"
+"要傳入數值給 ``State.gd`` 母類別。也就是說，不只可將變數傳給母類別的建置函"
 "式，也可傳遞字面值，如下："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
@@ -2227,6 +2227,12 @@ msgstr "也可以在物件送出訊號後取得訊號的引數："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
+"If there is more than one argument, ``yield`` returns an array containing "
+"the arguments::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
 "conditionally:"
@@ -2234,7 +2240,7 @@ msgstr ""
 "若不確定某個函式會不會 yield，或是某個函式是否會 yield 多次，則可以設定 "
 "yield 條件為 ``completed`` 訊號："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1620
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
@@ -2244,11 +2250,11 @@ msgstr ""
 "這樣一來便確保該函式會回傳應該要回傳的值而不管內部是否有協同程式。請注意，不"
 "需要使用 ``while`` ，因為 ``completed`` 訊號只會在函式不再 yield 後才送出。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1626
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
 msgid "Onready keyword"
 msgstr "Onready 關鍵字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1628
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2258,7 +2264,7 @@ msgstr ""
 "使用節點時，我們通常會想以變數來參照到場景的某個部分。由於場景只有在進入有效"
 "場景樹後才能保證有正確配置，所以在 ``Node._ready()`` 呼叫後才能取得子節點。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1641
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2269,11 +2275,11 @@ msgstr ""
 "``onready`` 關鍵字，會推遲成員變數的初始化，直到 ``_ready()`` 呼叫後。我們可"
 "以將上述代碼用這樣一行程式碼來取代："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1649
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
 msgid "Assert keyword"
 msgstr "Assert 關鍵字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1651
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2282,12 +2288,12 @@ msgid ""
 "have side effects. Otherwise, the behavior of the script would vary "
 "depending on whether the project is run in a debug build."
 msgstr ""
-"``assert`` 關鍵字可以用來在除錯建構中檢查條件。這些斷言會在非除錯建構中忽略。"
+"``assert`` 關鍵字可以用來在除錯建置中檢查條件。這些斷言會在非除錯建置中忽略。"
 "這表示作為引數傳遞的運算式在以發行模式匯出的專案中將不會被計算。因此，斷言 **"
-"不可** 包含有副作用的運算式。否則，腳本會因為專案是否於除錯建構中而有不同的行"
+"不可** 包含有副作用的運算式。否則，腳本會因為專案是否於除錯建置中而有不同的行"
 "為。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1663
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

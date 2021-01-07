@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgstr "macOS 10.12 及更新版本 (64 位元、x86 與 ARM)。"
 
 #: ../../docs/about/list_of_features.rst:24
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr "Linux (64 位元或 32 位元，x86 或 ARM)"
+msgstr "Linux (64 位元或 32 位元，x86 或 ARM)。"
 
 #: ../../docs/about/list_of_features.rst:26
 msgid ""
@@ -74,11 +74,11 @@ msgstr "官方二進位執行檔使用 Ubuntu 14.04 編譯。"
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "**Runs exported projects:**"
-msgstr "**匯出並執行專案：**"
+msgstr "**執行匯出的專案：**"
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "Android 4.4 and later."
-msgstr "Android 4.4 以上版本"
+msgstr "Android 4.4 及更新版本。"
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "iOS 10.0 and later."
@@ -114,7 +114,7 @@ msgstr "場景樹編輯器。"
 
 #: ../../docs/about/list_of_features.rst:46
 msgid "Script editor."
-msgstr "腳本編輯器"
+msgstr "腳本編輯器。"
 
 #: ../../docs/about/list_of_features.rst:47
 msgid ""
@@ -134,7 +134,7 @@ msgstr "尚未支援對執行緒進行除錯。"
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Performance monitoring tools."
-msgstr "執行效能檢測"
+msgstr "效能偵測工具。"
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "Live script reloading."
@@ -203,12 +203,12 @@ msgstr "2D 圖像"
 #: ../../docs/about/list_of_features.rst:78
 #: ../../docs/about/list_of_features.rst:142
 msgid "**Two renderers available:**"
-msgstr "**兩種可用的轉譯器：**"
+msgstr "**兩種可用的算繪引擎：**"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:145
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr "OpenGL ES 3.0 轉譯器 (在桌面平台上使用 OpenGL 3.3)。"
+msgstr "OpenGL ES 3.0 算繪引擎 (在桌面平台上使用 OpenGL 3.3)。"
 
 #: ../../docs/about/list_of_features.rst:81
 #: ../../docs/about/list_of_features.rst:145
@@ -218,7 +218,7 @@ msgstr "高階視覺效果。建議用於桌面平台。"
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:151
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr "OpenGL ES 2.0 轉譯器 (在桌面平台上使用 OpenGL 2.1)。"
+msgstr "OpenGL ES 2.0 算繪引擎 (在桌面平台上使用 OpenGL 2.1)。"
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:148
@@ -227,7 +227,7 @@ msgstr "建議用於行動裝置與網頁平台。"
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Sprite, polygon and line rendering."
-msgstr "Sprite、多邊形與線條轉譯器。"
+msgstr "Sprite、多邊形與線條算繪引擎。"
 
 #: ../../docs/about/list_of_features.rst:89
 msgid ""
@@ -280,7 +280,7 @@ msgstr "Dynamicfont 支援可選的字體描邊與可調整的寬度與色彩。
 #: ../../docs/about/list_of_features.rst:106
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
-msgstr "支援字體過取樣，以在高解析度下保持字體清晰可見。"
+msgstr "支援字體過採樣，以在高解析度下保持字體清晰可見。"
 
 #: ../../docs/about/list_of_features.rst:108
 msgid "GPU-based particles with support for custom particle shaders."
@@ -386,8 +386,8 @@ msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
-"並非所有功能都可用。當使用 OpenGL ES 3.0 轉譯器時，僅在下方標示 **GLES3** 時"
-"才可用。"
+"並非所有功能都可用。當使用 OpenGL ES 3.0 算繪引擎時，僅在下方標示 **GLES3** "
+"時才可用。"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "**Camera:**"
@@ -615,7 +615,7 @@ msgstr "**GLES3:** ETC2 (在 macOS 上不支援)。"
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr "ETC1 (使用 GLES2 轉譯器時建議使用)。"
+msgstr "ETC1 (使用 GLES2 算繪引擎時建議使用)。"
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
@@ -627,7 +627,7 @@ msgstr "**抗鋸齒：**"
 
 #: ../../docs/about/list_of_features.rst:241
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "多取樣抗鋸齒 (MSAA)。"
+msgstr "多採樣抗鋸齒 (MSAA)。"
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
@@ -654,7 +654,7 @@ msgstr "用於 :ref:`產生集合 <doc_procedural_geometry>` 的工具。"
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
-msgstr ":ref:`建構實體集合 <doc_csg_tools>` (用於製作 Prototype)。"
+msgstr ":ref:`建置實體集合 <doc_csg_tools>` (用於製作 Prototype)。"
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
@@ -844,7 +844,7 @@ msgstr "官方支援的 C 與 C++ 繫結。"
 
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
-msgstr "可依照需求使用任何建構系統與語言功能。"
+msgstr "可依照需求使用任何建置系統與語言功能。"
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
@@ -1014,7 +1014,6 @@ msgstr ""
 "速設定。"
 
 #: ../../docs/about/list_of_features.rst:401
-#, fuzzy
 msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr "遊戲控制器輸入 (同時支援最多 8 組控制器)。"
 
@@ -1405,7 +1404,7 @@ msgstr "可通過 :ref:`class_ConfigFile` 來讀寫 INI 格式的組態設定檔
 
 #: ../../docs/about/list_of_features.rst:546
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
-msgstr "可串聯化或反串聯化任何 Godot 資料型別，包含 Vector, Color…等。"
+msgstr "可序列化或復原序列化任何 Godot 資料型別，包含 Vector, Color…等。"
 
 #: ../../docs/about/list_of_features.rst:548
 msgid "Read XML files using :ref:`class_XMLParser`."
@@ -1460,7 +1459,7 @@ msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
-"支援將 :ref:`C++ 模組 <doc_custom_modules_in_c++>` 靜態鏈接到引擎二進位檔中。"
+"支援將 :ref:`C++ 模組 <doc_custom_modules_in_c++>` 靜態連結到引擎二進位檔中。"
 
 #: ../../docs/about/list_of_features.rst:567
 msgid "Engine and editor written in C++03."
@@ -1481,7 +1480,7 @@ msgid ""
 "anything. Builds can be fully reproducible."
 msgstr ""
 "對打包者友好。在大多數情況下，都可使用系統函式庫來代替 Godot 中提供的函式庫。"
-"建構系統不需要額外下載任何東西。建置過程完全可重現。"
+"建置系統不需要額外下載任何東西。建置過程完全可重現。"
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Godot 4.0 will be written in C++17."

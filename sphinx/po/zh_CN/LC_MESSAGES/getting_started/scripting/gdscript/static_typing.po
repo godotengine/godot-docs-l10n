@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,24 +57,22 @@ msgid "A brief look at static typing"
 msgstr "静态类型简介"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
-#, fuzzy
 msgid ""
 "With typed GDScript, Godot can detect even more errors as you write code! It "
 "gives you and your teammates more information as you're working, as the "
 "arguments' types show up when you call a method."
 msgstr ""
-"使用类型化的GDScript，在编写代码时Godot可以检测到更多错误！它会在您工作时为您"
-"和您的队友提供更多信息，因为当您调用方法时，参数的类型会显示出来。"
+"有了GDScript中的类型，Godot在编写代码时甚至可以检测到更多错误！它会在你工作时"
+"为你和你的团队提供更多信息。因为当你调用方法时，会显示出参数的类型。"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
-#, fuzzy
 msgid ""
 "Imagine you're programming an inventory system. You code an ``Item`` node, "
 "then an ``Inventory``. To add items to the inventory, the people who work "
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
-"想象一下你正在编写一个库存系统。您编写一个 ``Item`` 节点，然后再编写一个 "
+"想象你正在编写一个库存系统。您编写一个 ``Item`` 节点，然后再编写一个 "
 "``Inventory`` 。要将项目添加到清单中，使用代码的人员应始终将 ``Item`` 传递给 "
 "``Inventory.add`` 方法。使用类型，您可以强制执行以下操作："
 

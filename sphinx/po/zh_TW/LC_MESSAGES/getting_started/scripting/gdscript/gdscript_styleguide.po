@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -612,36 +612,32 @@ msgstr ""
 "<doc_gdscript_static_typing>` 。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
-#, fuzzy
 msgid "Declared types"
-msgstr "有名稱的型別"
+msgstr "宣告型別"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
-msgstr ""
+msgstr "若要宣告變數的型別，請使用 ``<變數>: <型別>`` ："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
-#, fuzzy
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "使用箭頭 -> 來定義函式的回傳值型別"
+msgstr "若要宣告函數的回傳型別，請使用 ``-> <型別>`` ："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
-#, fuzzy
 msgid "Inferred types"
-msgstr "有名稱的型別"
+msgstr "推斷型別"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
-#, fuzzy
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
-msgstr "若讓編譯器來推斷型別，則請將冒號與等號寫在一起： ``:=`` 。"
+msgstr "大多數情況下，我們都直接使用 ``:=`` 來讓編輯器推斷型別："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
 msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
+msgstr "var health := 0  # 編譯器會使用 int 型別。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
 msgid ""
@@ -650,3 +646,6 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
+"然而，有時候會因為上下文不足而讓編譯器無法得知函數的回傳型別。舉例來說，除非"
+"已經將場景或節點檔案載入至記憶體，否則 ``get_node()`` 無法進行型別推斷。這時"
+"候，就需要明確設定型別。"

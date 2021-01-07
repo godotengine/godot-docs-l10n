@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,6 +374,8 @@ msgid ""
 "Godot will not reimport materials that are stored in external files unless "
 "you remove the associated ``.material`` file before reimporting."
 msgstr ""
+"除非你在重新导入之前删除相关的 ``.material``文件，否则Godot不会重新导入存储在"
+"外部文件中的素材。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:180
 msgid ""
@@ -382,6 +384,9 @@ msgid ""
 "dock, going to the Import dock then setting **Material > Storage** to "
 "**Built-In** instead of **Files**."
 msgstr ""
+"如要在每次重新导入 3D 场景时强制重新导入材质，请在文件系统面板中选中 3D 场景"
+"中的材质存储模式，然后进入导入面板，将 **材质 > 存储** 设置为 **内置** 而不"
+"是 **文件**。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:186
 msgid "Keep On Reimport"
@@ -613,7 +618,6 @@ msgid ""
 msgstr "可以使用特殊语法指定过滤器脚本，以决定应保留哪些动画的哪些轨道。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
-#, fuzzy
 msgid ""
 "The filter script is executed against each imported animation. The syntax "
 "consists of two types of statements, the first for choosing which animations "
@@ -624,19 +628,18 @@ msgid ""
 msgstr ""
 "过滤器脚本会针对每个导入的动画执行。语法由两种类型的语句组成，一种用于选择要"
 "过滤的动画，另一种用于过滤匹配的动画中的各个轨道。所有名称模式均使用不区分大"
-"小写的表达式匹配，可以使用通配符``?`` 和 ``*``（using ``String.matchn()`` "
-"under the hood）。"
+"小写的表达式匹配，可以使用通配符 ``?`` 和 ``*`` （内部使用 ``String."
+"matchn()`` ）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
-#, fuzzy
 msgid ""
 "The script must start with an animation filter statement (as denoted by the "
 "line beginning with an ``@``). For example, if we would like to apply "
 "filters to all imported animations which have a name ending in ``\"_Loop"
 "\"``::"
 msgstr ""
-"脚本必须以动画筛选器语句开头 (如以 ``@`` 开头的行表示)。 例如，如果我们想要将"
-"筛选器应用于所有以``\"_Loop\"`` 结尾的导入动画："
+"脚本必须以动画过滤器语句开头 (如以 ``@`` 开头的行表示)。 例如，如果我们想要将"
+"过滤器应用在所有以 ``\"_Loop\"`` 结尾的导入动画上："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
@@ -645,6 +648,9 @@ msgid ""
 "with names that begin with ``\"Arm_Left\"``, but also *exclude* all "
 "animations which have names ending in ``\"Attack\"``::"
 msgstr ""
+"同样地，还可以在同一行中添加其他模式，以逗号分隔。下面是一个修改后的例子，它"
+"额外*包含*所有名称以 ``\"Arm_Left\"`` 开头的动画，同时*排除*所有名称以 ``"
+"\"Attack\"``结尾的动画::"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:299
 msgid ""
@@ -653,6 +659,8 @@ msgid ""
 "no track filter patterns are specified, then all tracks within the matched "
 "animations will be discarded!"
 msgstr ""
+"在动画选择过滤器语句之后，我们添加轨道过滤模式来指示保留或丢弃哪些动画轨道。"
+"如果未指定轨道过滤器模式，则匹配动画中的所有轨道都会被丢弃！"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid ""
@@ -662,6 +670,9 @@ msgid ""
 "early rule may then be re-included once again by a filter rule further down "
 "in the filter script."
 msgstr ""
+"需要注意的是，轨道过滤器表达式是按顺序作用于动画中的每条轨道，这意味着，一行"
+"表达式可能包含某个轨道，但后续的规则仍然可以忽略它。同样，一个被之前规则排除"
+"的轨道，可能被过滤器脚本后续的规则重新包含进来。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:308
 msgid ""
@@ -669,18 +680,23 @@ msgid ""
 "\"``, but discard any tracks affecting a ``\"Skeleton\"`` which end in ``"
 "\"Control\"``, unless they have ``\"Arm\"`` in their name::"
 msgstr ""
+"例如: 包含动画中所有名字以``\"_Loop\"``结尾的轨道, 但忽略任何以``\"Control"
+"\"``结尾的``\"Skeleton\"``轨道，除非它们的名字中有 ``\"Arm\"``::"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
+#, fuzzy
 msgid ""
 "In the above example, tracks like ``\"Skeleton:Leg_Control\"`` would be "
 "discarded, while tracks such as ``\"Skeleton:Head\"`` or ``\"Skeleton:"
 "Arm_Left_Control\"`` would be retained."
 msgstr ""
+"在上面的示例中，如像``\"Skeleton:Leg_Control\"`` 这样的轨道会被丢弃，而像``"
+"\"Skeleton:Head\"`` or ``\"Skeleton:Arm_Left_Control\"``这样的轨道会被保留。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:320
 msgid ""
 "Any track filter lines that do not begin with a ``+`` or ``-`` are ignored."
-msgstr ""
+msgstr "任何不是以 ``+`` 或``-``开头的轨道过滤器行将会被忽略。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:325
 msgid ""
@@ -716,6 +732,9 @@ msgid ""
 "greater than zero. You can then name a clip, specify which frames it starts "
 "and stops on, and choose whether the animation loops or not."
 msgstr ""
+"可以指定单个时间轴中的多个动画作为剪辑。这样做的话，模型必须只有一个命名为"
+"``default``的动画。为了创建剪辑，把剪辑数量改成比0大的数。然后可以修改剪辑名"
+"字，指定开始和结束帧，选择动画是否循环。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:346
 msgid "Scene inheritance"
@@ -770,24 +789,20 @@ msgid ""
 msgstr "很多时候，编辑场景时，导出后需要完成一些常见任务："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "向对象添加碰撞检测"
+msgstr "向对象添加碰撞检测。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "将对象设置为导航网格"
+msgstr "将对象设置为导航网格。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
-msgstr "删除游戏引擎中未使用的节点（例如用于建模的特定光源）"
+msgstr "删除游戏引擎中未使用的节点（例如用于建模的特定光源）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:374
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -795,11 +810,12 @@ msgid ""
 "automatically."
 msgstr ""
 "为简化此工作流程，Godot提供了一些后缀，可以将其添加到3D建模软件中的对象名称"
-"中。导入后，Godot将检测到它们并自动执行操作："
+"中。导入后，Godot将检测到它们并自动执行操作。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:380
+#, fuzzy
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "下面提及的所有后缀都区分大小写。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:383
 msgid "Remove nodes (-noimp)"
@@ -827,6 +843,10 @@ msgid ""
 "accurate option for collision detection. This option is usually what you "
 "want for level geometry (but see also ``-colonly`` below)."
 msgstr ""
+"``-col``选项只作用于网格物体。如果该选项被检测到，将会添加一个静态碰撞体的子"
+"节点，用的是跟网格一样的几何体。这会创建一个三角形网格碰撞体，这个选项对碰撞"
+"检测来说很慢但是精确。这个选项通常是关卡几何体需要的（但是也看看下面的``-"
+"colonly`` ）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:397
 msgid ""
@@ -840,6 +860,12 @@ msgid ""
 "shape. This option is ideal for simple or dynamic objects that require "
 "mostly-accurate collision detection."
 msgstr ""
+"``-convcol``选项将创建 一个 :ref:`class_convexpolygonshape` 而不是 :ref:"
+"`class_concavepolygonshape`。不像可以是凹型的三角形网格，一个凸型的形状只能精"
+"确的表示它没有任何凹型角度（金字塔是凸型，但空盒子是凹型）。因此，凸型碰撞体"
+"通常不适用于关卡几何体。当说到一个很简单的网格时， 凸型碰撞体相对三角形碰撞体"
+"有更好的性能。这个选项适用于简单的物体，或是需要大多数时精确碰撞检测的动态物"
+"体。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
 #, fuzzy
@@ -883,25 +909,21 @@ msgstr ""
 "一，具体取决于Blender的空绘制类型："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:423
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "单箭头将创建一个 :ref:`class_rayshape`"
+msgstr "单箭头将创建一个 :ref:`class_rayshape`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:424
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "方块将创建一个 :ref:`class_boxshape`"
+msgstr "方块将创建一个 :ref:`class_boxshape`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "图像将创建一个 :ref:`class_planeshape`"
+msgstr "图像将创建一个 :ref:`class_planeshape`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:426
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "球体（和其他未列出的）将创建一个 :ref:`class_sphereshape`"
+msgstr "球体（和其他未列出的）将创建一个 :ref:`class_sphereshape`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:428
 msgid ""
@@ -909,6 +931,8 @@ msgid ""
 "triangle mesh or convex shapes. Primitive shapes often have the best "
 "performance and reliability."
 msgstr ""
+"可能的话, **试着使用少量简单的碰撞体**而不是三角形网格或凸型体。简单的形状常"
+"常有最好的性能和可靠性。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:434
 #, fuzzy
@@ -924,7 +948,7 @@ msgstr ""
 msgid ""
 "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
 "shapes."
-msgstr ""
+msgstr "碰撞体全面概述请查看 :ref:`doc_collision_shapes_3d`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:444
 msgid "Create navigation (-navmesh)"
@@ -981,7 +1005,6 @@ msgid "Animation loop (-loop, -cycle)"
 msgstr "动画循环（``-loop`` 、``-cycle``）"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:469
-#, fuzzy
 msgid ""
 "Animation clips in the COLLADA document that start or end with the token "
 "``loop`` or ``cycle`` will be imported as a Godot Animation with the loop "
@@ -989,7 +1012,7 @@ msgid ""
 "a hyphen.**"
 msgstr ""
 "COLLADA文档中以令牌 ``loop`` 或 ``cycle`` 开头或结尾的动画剪辑将作为设置了循"
-"环标志的Godot动画导入。这是区分大小写的，不需要连字符。"
+"环标志的Godot动画导入。**这是区分大小写的，不需要连字符。**"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:473
 #, fuzzy

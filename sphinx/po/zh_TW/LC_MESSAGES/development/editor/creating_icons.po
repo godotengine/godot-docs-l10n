@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/editor/creating_icons.rst:4
-#, fuzzy
 msgid "Editor icons"
-msgstr "編輯器"
+msgstr "編輯器圖示"
 
 #: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
@@ -29,11 +28,13 @@ msgid ""
 "from. In most cases, it's still recommended to create icons for new classes "
 "to improve the user experience."
 msgstr ""
+"當建立了新的類別，並將新類別暴露給腳本使用時，編輯器的界面上會為該類別顯示一"
+"個預設的圖示，用來代表這個類別所繼承的基礎類別。在大多數情況下，為了提升使用"
+"者體驗，我們建議為新類別加上圖示。"
 
 #: ../../docs/development/editor/creating_icons.rst:12
-#, fuzzy
 msgid "Creating icons"
-msgstr "創建內容"
+msgstr "建立圖示"
 
 #: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
@@ -41,28 +42,34 @@ msgid ""
 "instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
 "editor."
 msgstr ""
+"要建立新圖示，必須要先安裝一個向量圖編輯器。舉例來說，可以使用開放原始碼的 "
+"`Inkscape <https://inkscape.org/>`_ 編輯器。"
 
 #: ../../docs/development/editor/creating_icons.rst:17
 msgid "Clone the ``godot`` repository containing all the editor icons:"
-msgstr ""
+msgstr "Clone 包含了所有編輯器圖示的 ``godot`` 儲存庫："
 
 #: ../../docs/development/editor/creating_icons.rst:23
 msgid ""
 "The icons must be created in a vector graphics editor in SVG format. There "
 "are two main requirements to follow:"
-msgstr ""
+msgstr "自定圖示必須要是 SVG 格式的向量圖。主要需符合兩個需求："
 
 #: ../../docs/development/editor/creating_icons.rst:26
 msgid ""
 "Icons must be 16×16. In Inkscape, you can configure the document size in "
 "**File > Document Properties**."
 msgstr ""
+"圖示必須為 16×16。在 Inkspace 中，可以在 **[File] > [Document Properties]** "
+"中設定文件大小。"
 
 #: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
 "Lines should be snapped to pixels whenever possible to remain crisp at lower "
 "DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
+"線條應儘可能吸附至像素點上，以在低 DPI 下保持清晰。可以通過在 Inkscape 中建"
+"立 16×16 的網格來讓這個過程更輕鬆。"
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid ""
@@ -71,10 +78,13 @@ msgid ""
 "intended name in a case-sensitive manner. For example, to create an icon for "
 "CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
+"處理好圖示的設計後，就可以將圖示保存在剛才 Clone 的儲存庫中的 ``editor/"
+"icons`` 資料夾。該資料夾的名稱與預期的名稱保持大小寫一致。如，為 "
+"CPUParticles2D 建立圖示時，檔名應為 ``CPUParticles2D.svg`` 。"
 
 #: ../../docs/development/editor/creating_icons.rst:37
 msgid "Color conversion for light editor themes"
-msgstr ""
+msgstr "為亮色編輯器主題調整色彩"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid ""
@@ -87,11 +97,15 @@ msgid ""
 "the list above. Otherwise, your icon may become difficult to read on a light "
 "background."
 msgstr ""
+"若使用者使用亮色主題的編輯器，則 Godot 會依據 `一組預定義的色彩映射 <https://"
+"github.com/godotengine/godot/blob/b9f2e57d6240346f1833fd0390de195c956299e7/"
+"editor/editor_themes.cpp#L122-L184>`__ 來轉換顏色。這樣可以確保圖示使用適當的"
+"對比度來顯示。請儘量將圖示的調色盤限制在上表中的顏色。否則，圖示在亮色背景下"
+"可能會難以閱讀。"
 
 #: ../../docs/development/editor/creating_icons.rst:47
-#, fuzzy
 msgid "Icon optimization"
-msgstr "動畫"
+msgstr "圖示最佳化"
 
 #: ../../docs/development/editor/creating_icons.rst:49
 msgid ""
@@ -99,6 +113,9 @@ msgid ""
 "size so they can be efficiently parsed. Editor icons must be first optimized "
 "before being added to the engine, to do so:"
 msgstr ""
+"由於編輯器會在載入時期對 SVG 進行一次算繪，因此需要保持 SVG 在一定的大小內，"
+"這樣才能被有效率地解析。編輯器圖示必須要在加進引擎前先進行最佳化。要最佳化圖"
+"示，請："
 
 #: ../../docs/development/editor/creating_icons.rst:53
 msgid ""
@@ -107,12 +124,17 @@ msgid ""
 "svgcleaner/releases/latest>`__ and placing it into a location in your "
 "``PATH`` environment variable."
 msgstr ""
+"從 `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ 的 `Releases 分"
+"頁 <https://github.com/RazrFalcon/svgcleaner/releases/latest>`__ 中下載二進位"
+"執行檔，並將其放置於 ``PATH`` 環境變數的路徑中。"
 
 #: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
 "Run the command below, replacing ``svg_source.svg`` with the path to your "
 "SVG file (which can be a relative or absolute path):"
 msgstr ""
+"執行下列指令，並將 ``svg_source.svg`` 取代為 SVG 檔的路徑 (可以是相對或絕對路"
+"徑)："
 
 #: ../../docs/development/editor/creating_icons.rst:65
 msgid ""
@@ -120,6 +142,8 @@ msgid ""
 "The optimized icon will be saved to ``svg_optimized.svg``. You can also "
 "change the destination parameter to any relative or absolute path you'd like."
 msgstr ""
+"``--multipass`` 開關可以用來改進壓縮，因此請務必加上這個旗標。經過最佳化的圖"
+"示會被保存為 ``svg_optimized.svg`` 。也可以將目標參數改為任何相對或絕對路徑。"
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -128,10 +152,12 @@ msgid ""
 "recommended to keep the source SVG around if you need to make further "
 "changes."
 msgstr ""
+"雖然最佳化這步驟不會太明顯地影響圖示的品質，但依然會移除一些如參考線等只有編"
+"輯器會用到的資訊。因此，如果未來還有需要修改 SVG 的話，建議保留原始檔案。"
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"
-msgstr ""
+msgstr "整合與分享圖示"
 
 #: ../../docs/development/editor/creating_icons.rst:79
 msgid ""
@@ -139,6 +165,9 @@ msgid ""
 "to add optimized icons to ``editor/icons`` in the main repository. Recompile "
 "the engine to make it pick up new icons for classes."
 msgstr ""
+"若是要參與貢獻 Godot 引擎本身，則應該開啟 Pull Request 來將最佳化過的圖示加到"
+"主儲存庫的 ``editor/icons`` 中。重新編譯引擎即可讓 Godot 找到用於該類別的新圖"
+"示。"
 
 #: ../../docs/development/editor/creating_icons.rst:83
 msgid ""
@@ -147,38 +176,47 @@ msgid ""
 "don't need to make a separate pull request for your icons to be available "
 "within the editor as they can be self-contained."
 msgstr ""
+"另外也可以在模組內建立自定圖示。若是要建立自定模組而不是要整合到 Godot 內，就"
+"不需要另外為圖示開 Pull Request 來讓圖示在編輯器裡可見，因為這些圖示都是自封"
+"閉的。"
 
 #: ../../docs/development/editor/creating_icons.rst:88
 msgid ""
 "For specific instructions on how to create module icons, refer to :ref:"
 "`Creating custom module icons<doc_custom_module_icons>`."
 msgstr ""
+"有關如何建立模組圖示，請參考 :ref:`Creating custom module "
+"icons<doc_custom_module_icons>` 。"
 
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: ../../docs/development/editor/creating_icons.rst:94
 msgid "If icons don't appear in the editor, make sure that:"
-msgstr ""
+msgstr "若圖示沒出現在編輯器中，請確認："
 
 #: ../../docs/development/editor/creating_icons.rst:96
 msgid ""
 "Each icon's filename matches the naming requirement as described previously."
-msgstr ""
+msgstr "各個圖示的名稱是否有符合前述要求。"
 
 #: ../../docs/development/editor/creating_icons.rst:98
 msgid ""
 "``modules/svg`` is enabled (it should be enabled by default). Without it, "
 "icons won't appear in the editor at all."
 msgstr ""
+"有啟用 ``modules/svg`` (預設應該有啟用)。沒有 SVG 模組，圖示就完全不會出現在"
+"編輯器內。"
 
 #: ../../docs/development/editor/creating_icons.rst:102
 msgid "References"
-msgstr ""
+msgstr "參照"
 
 #: ../../docs/development/editor/creating_icons.rst:104
 msgid ""
 "`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
 "icons>`__"
 msgstr ""
+"\\ `editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"

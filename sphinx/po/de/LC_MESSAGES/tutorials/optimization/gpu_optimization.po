@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU optimization"
 msgstr "GPU Optimierungen"
 
@@ -45,7 +44,6 @@ msgstr ""
 "treten auch auf der GPU selbst Engpässe auf."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:16
-#, fuzzy
 msgid ""
 "Where bottlenecks occur in rendering is highly hardware-specific. Mobile "
 "GPUs in particular may struggle with scenes that run easily on desktop."
@@ -72,7 +70,6 @@ msgstr ""
 "untersuchen."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:26
-#, fuzzy
 msgid "Draw calls, state changes, and APIs"
 msgstr "Zeichnungsaufrufe, Statusänderungen und APIs"
 
@@ -141,7 +138,6 @@ msgstr ""
 "beschränkt werden können."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:54
-#, fuzzy
 msgid "For more information on 2D batching, see :ref:`doc_batching`."
 msgstr ""
 "Für weitere Informationen zu 2D Stapelverarbeitung siehe :ref:`doc_batching`."
@@ -236,14 +232,13 @@ msgstr ""
 "schlimmsten Fall Atlanten."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:91
-#, fuzzy
 msgid ""
 "**Reusing Shaders:** If materials can't be reused, at least try to re-use "
 "shaders (or SpatialMaterials with different parameters but the same "
 "configuration)."
 msgstr ""
 "**Wiederverwenden von Shadern**: Wenn Materialien nicht wiederverwendet "
-"werden können, versuchen Sie zumindest, Shader (oder SpatialMaterials mit "
+"werden können, versuchen Sie zumindest Shader (oder SpatialMaterials mit "
 "unterschiedlichen Parametern, aber derselben Konfiguration) "
 "wiederzuverwenden."
 
@@ -259,7 +254,6 @@ msgstr ""
 "wird das Rendern viel schneller."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:100
-#, fuzzy
 msgid "Pixel cost versus vertex cost"
 msgstr "Pixel-Kosten im Vergleich zu Vertex-Kosten"
 
@@ -274,24 +268,20 @@ msgstr ""
 "relativ und hängt von vielen Faktoren ab."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:105
-#, fuzzy
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles. This meant that every frame:"
 msgstr ""
 "Auf einem modernen PC und einer modernen Konsole sind die Vertex-Kosten "
-"niedrig. GPUs haben ursprünglich nur Dreiecke gerendert, sodass jeder Frame "
-"alle Eckpunkte enthält:"
+"niedrig. GPUs haben ursprünglich nur Dreiecke gerendert, sodass jeder Frame:"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:108
-#, fuzzy
 msgid "All vertices had to be transformed by the CPU (including clipping)."
-msgstr "Musste von der CPU transformiert werden (einschließlich Clipping)."
+msgstr "von der CPU transformiert werden musste (einschließlich Clipping)."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:109
-#, fuzzy
 msgid "All vertices had to be sent to the GPU memory from the main RAM."
-msgstr "Musste vom Hauptspeicher an den GPU-Speicher gesendet werden."
+msgstr "vom Hauptspeicher an den GPU-Speicher gesendet werden musste."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:111
 #, fuzzy
@@ -311,7 +301,6 @@ msgstr ""
 "auf die GPU, damit sie viele Dreiecke viel effizienter rendern können."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:117
-#, fuzzy
 msgid ""
 "On mobile devices, the story is different. PC and console GPUs are brute-"
 "force monsters that can pull as much electricity as they need from the power "
@@ -413,9 +402,8 @@ msgid "Vertex-lit objects (common on mobile)"
 msgstr "Vertex-beleuchtete Objekte (häufig auf Mobilgeräten)"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:156
-#, fuzzy
 msgid "Pixel/fragment shaders and fill rate"
-msgstr "Pixel / Fragment-Shader - Füllrate"
+msgstr "Pixel/Fragment-Shader und Füllrate"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:158
 #, fuzzy
@@ -511,7 +499,6 @@ msgid "Texture compression"
 msgstr "Texturkomprimierung"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:198
-#, fuzzy
 msgid ""
 "By default, Godot compresses textures of 3D models when imported using video "
 "RAM (VRAM) compression. Video RAM compression isn't as efficient in size as "
@@ -519,9 +506,9 @@ msgid ""
 "large enough textures."
 msgstr ""
 "Godot komprimiert beim Import standardmäßig Texturen von 3D-Modellen (VRAM-"
-"Komprimierung). Die Video-RAM-Komprimierung ist nicht so effizient wie beim "
-"Speichern von PNG oder JPG, erhöht jedoch die Leistung beim Zeichnen "
-"erheblich."
+"Komprimierung). Diese Video-RAM-Komprimierung ist nicht so effizient wie "
+"beim Speichern von PNG oder JPG, steigert aber die Leistung enorm, wenn "
+"genügend große Texturen gezeichnet werden."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:203
 msgid ""
@@ -561,12 +548,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:222
-#, fuzzy
 msgid "Post-processing and shadows"
-msgstr "Nachbearbeitung / Schatten"
+msgstr "Nachbearbeitung und Schatten"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:224
-#, fuzzy
 msgid ""
 "Post-processing effects and shadows can also be expensive in terms of "
 "fragment shading activity. Always test the impact of these on different "
@@ -586,9 +571,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:234
-#, fuzzy
 msgid "Transparency and blending"
-msgstr "Transparenz / Übergang"
+msgstr "Transparenz und Übergänge"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:236
 #, fuzzy
@@ -610,18 +594,16 @@ msgstr ""
 "korrekt auszusehen."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:243
-#, fuzzy
 msgid ""
 "Transparent objects are also particularly bad for fill rate, because every "
 "item has to be drawn even if other transparent objects will be drawn on top "
 "later on."
 msgstr ""
-"Die transparenten Elemente sind auch besonders schlecht für die Füllrate, da "
-"jedes Element gezeichnet werden muss, auch wenn später transparente Elemente "
+"Transparente Objekte sind auch besonders schlecht für die Füllrate, da jedes "
+"Objekt gezeichnet werden muss, auch wenn später andere transparente Objekte "
 "darüber gezeichnet werden."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:247
-#, fuzzy
 msgid ""
 "Opaque objects don't have to do this. They can usually take advantage of the "
 "Z-buffer by writing to the Z-buffer only first, then only performing the "
@@ -630,7 +612,7 @@ msgid ""
 msgstr ""
 "Undurchsichtige Gegenstände müssen dies nicht tun. Normalerweise können sie "
 "den Z-Puffer nutzen, indem sie zuerst nur in den Z-Puffer schreiben und dann "
-"nur den Fragment-Shader für das 'gewinnende' Fragment ausführen, das sich "
+"nur den Fragment-Shader für das \"gewinnende\" Fragment ausführen, das sich "
 "bei einem bestimmten Pixel vorne befindet."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:252
@@ -651,26 +633,23 @@ msgstr ""
 "\"Vortäuschen\"."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:259
-#, fuzzy
 msgid "Multi-platform advice"
 msgstr "Multi-Plattform-Ratschlag"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:261
-#, fuzzy
 msgid ""
 "If you are aiming to release on multiple platforms, test *early* and test "
 "*often* on all your platforms, especially mobile. Developing a game on "
 "desktop but attempting to port it to mobile at the last minute is a recipe "
 "for disaster."
 msgstr ""
-"Wenn Sie auf mehreren Plattformen veröffentlichen möchten, testen Sie `früh` "
-"und `häufig` auf allen Ihren Plattformen, insbesondere auf Mobilgeräten. Die "
+"Wenn Sie auf mehreren Plattformen veröffentlichen möchten, testen Sie *früh* "
+"und *häufig* auf allen Ihren Plattformen, insbesondere auf Mobilgeräten. Die "
 "Entwicklung eines Spiels auf dem Desktop und dann der Versuch in letzter "
 "Minute dieses Spiel auf das Handy zu portieren, endet meistens in einer "
 "Katastrophe."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:265
-#, fuzzy
 msgid ""
 "In general, you should design your game for the lowest common denominator, "
 "then add optional enhancements for more powerful platforms. For example, you "
@@ -684,9 +663,8 @@ msgstr ""
 "verwenden, wenn Sie für beides entwickeln wollen."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:271
-#, fuzzy
 msgid "Mobile/tiled renderers"
-msgstr "Mobile / Kachel-Renderer"
+msgstr "Mobile/Kachel-Renderer"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:273
 #, fuzzy
@@ -704,7 +682,6 @@ msgstr ""
 "Schreibvorgänge zum Hauptspeicher."
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:278
-#, fuzzy
 msgid ""
 "There are some downsides though. Tiled rendering can make certain techniques "
 "much more complicated and expensive to perform. Tiles that rely on the "

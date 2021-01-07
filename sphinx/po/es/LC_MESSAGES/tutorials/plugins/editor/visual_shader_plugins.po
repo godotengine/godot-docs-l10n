@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "Visual Shader plugins are used to create custom :ref:`class_VisualShader` "
 "nodes in GDScript."
 msgstr ""
+"Los complementos de Visual Shader se utilizan para crear nodos "
+"personalizados: ref: `class_VisualShader` en GDScript."
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:9
 msgid ""
@@ -34,6 +36,11 @@ msgid ""
 "script file and it will be ready to use, provided the custom node is "
 "registered with ``class_name``."
 msgstr ""
+"El proceso de creación es diferente al de los complementos de editor "
+"habituales. No es necesario crear un archivo ``plugin.cfg`` para "
+"registrarlo; en su lugar, cree y guarde un archivo de script y estará listo "
+"para usar, siempre que el nodo personalizado esté registrado con "
+"``class_name``."
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:14
 msgid ""
@@ -42,28 +49,37 @@ msgid ""
 "brace/Godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/"
 "classic_perlin3d.tres>`_."
 msgstr ""
+"Este breve tutorial explicará cómo crear un nodo de ruido Perlin-3D (código "
+"original de este complemento de sombreadores de ruido GPU <https://github."
+"com/curly-brace/Godot-3.0-Noise-Shaders/blob/master/assets/gpu_noise_shaders/"
+"classic_perlin3d.tres>`_."
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:18
 msgid ""
 "Create a Sprite and assign a :ref:`class_ShaderMaterial` to its material "
 "slot:"
 msgstr ""
+"Crea un Sprite y asigna un: ref: `class_ShaderMaterial` a su espacio de "
+"material:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:22
 msgid "Assign :ref:`class_VisualShader` to the shader slot of the material:"
 msgstr ""
+"Asignar: ref: `class_VisualShader` a la ranura de sombreado del material:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:26
 msgid ""
 "Don't forget to change its mode to \"CanvasItem\" (if you are using a "
 "Sprite):"
-msgstr ""
+msgstr "No olvide cambiar su modo a \"CanvasItem\" (si está usando un Sprite):"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:30
 msgid ""
 "Create a script which derives from :ref:`class_VisualShaderNodeCustom`. This "
 "is all you need to initialize your plugin."
 msgstr ""
+"Cree un script que se derive de: ref: `class_VisualShaderNodeCustom`. Esto "
+"es todo lo que necesita para inicializar su complemento."
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:193
 msgid ""
@@ -71,13 +87,18 @@ msgid ""
 "the member's dialog (if you can't see your new node, try restarting the "
 "editor):"
 msgstr ""
+"Guárdalo y abre Visual Shader. Debería ver su nuevo tipo de nodo en el "
+"cuadro de diálogo del miembro (si no puede ver su nuevo nodo, intente "
+"reiniciar el editor):"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:197
 msgid "Place it on a graph and connect the required ports:"
-msgstr ""
+msgstr "Colóquelo en un gráfico y conecte los puertos necesarios:"
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:201
 msgid ""
 "That is everything you need to do, as you can see it is easy to create your "
 "own custom VisualShader nodes!"
 msgstr ""
+"Eso es todo lo que necesita hacer, como puede ver, ¡es fácil crear sus "
+"propios nodos VisualShader personalizados!"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -219,12 +219,12 @@ msgstr "Laden Sie die Engine vom angegebenen Basispfad."
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 #: ../../docs/<rst_epilog>:0
 msgid "Arguments"
-msgstr ""
+msgstr "Argumente"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:78
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:129
 msgid "Base path of the engine to load."
-msgstr ""
+msgstr "Basispfad der zu ladenden Engine."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Returns"
@@ -232,11 +232,11 @@ msgstr "Rückgabe"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:80
 msgid "Promise which resolves once the engine is loaded."
-msgstr ""
+msgstr "Dieses Versprechen löst sich ein, sobald die Engine geladen ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:85
 msgid "Unload the engine to free memory."
-msgstr ""
+msgstr "Entladen Sie die Engine, um Speicher freizugeben."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:87
 msgid ""
@@ -254,12 +254,16 @@ msgstr ""
 msgid ""
 "The major WebGL version to check for. Defaults to ``1`` for *WebGL 1.0*."
 msgstr ""
+"Die zu prüfende WebGL-Hauptversion. Standardeinstellung ist ``1`` für *WebGL "
+"1.0*."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:96
 msgid ""
 "``true`` if the given major version of WebGL is available, ``false`` "
 "otherwise."
 msgstr ""
+"``wahr``, wenn die angegebene Hauptversion von WebGL verfügbar ist, "
+"ansonsten ``falsch``."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:102
 msgid ""
@@ -269,11 +273,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:105
 msgid "Filename extension without preceding dot."
-msgstr ""
+msgstr "Dateinamenerweiterung ohne vorangestellten Punkt."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:110
 msgid "Instance Property Descriptions"
-msgstr ""
+msgstr "Beschreibungen der Instanzeigenschaften"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:114
 msgid ""
@@ -284,11 +288,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:118
 msgid "Instance Method Descriptions"
-msgstr ""
+msgstr "Beschreibungen der Instanzmethoden"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:122
 msgid "Create a new instance of the ``Engine`` class."
-msgstr ""
+msgstr "Erstellen Sie eine neue Instanz der Klasse ``Engine``."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:126
 msgid ""
@@ -299,6 +303,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:132
 msgid "Promise that resolves once the engine is loaded and initialized."
 msgstr ""
+"Dieses Versprechen löst sich ein, sobald die Engine geladen und "
+"initialisiert ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:137
 msgid ""
@@ -315,7 +321,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:141
 msgid "If type is ``string``, the file will be loaded from that path."
-msgstr ""
+msgstr "Wenn der Typ ``String`` ist, wird die Datei von diesem Pfad geladen."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:143
 msgid ""
@@ -331,7 +337,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:151
 msgid "Promise that resolves once the file is loaded."
-msgstr ""
+msgstr "Versprechen, das nach dem Laden der Datei aufgelöst wird."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:156
 msgid ""
@@ -349,6 +355,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:163
 msgid "Fails if a canvas cannot be found on the page."
 msgstr ""
+"Schlägt fehl, wenn ein Canvas auf der Seite nicht gefunden werden kann."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:165
 msgid "Command line argument."
@@ -356,12 +363,14 @@ msgstr "Kommandozeilenparameter."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:168
 msgid "Promise that resolves once the engine started."
-msgstr ""
+msgstr "Dieses Versprechen löst sich ein, sobald die Engine gestartet ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:173
 msgid ""
 "Start the game instance using the given executable URL and main pack URL."
 msgstr ""
+"Starten Sie die Spielinstanz mit der angegebenen ausführbaren URL und der "
+"URL des Hauptpakets."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:175
 msgid ""
@@ -378,14 +387,16 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:181
 msgid "Executable name in a form of URL, omitting filename extension."
 msgstr ""
+"Ausführbarer Name in Form einer URL, wobei die Dateinamenerweiterung "
+"weggelassen wird."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 msgid "URL of the main pack to start the game."
-msgstr ""
+msgstr "URL des Hauptpakets, um das Spiel zu starten."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 msgid "Promise that resolves once the game started."
-msgstr ""
+msgstr "Dieses Versprechen löst sich ein, sobald das Spiel gestartet ist."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:192
 msgid ""
@@ -398,6 +409,8 @@ msgid ""
 "``true`` if the engine shall be unloaded after initializing, ``false`` "
 "otherwise."
 msgstr ""
+"``wahr`` wenn die Engine nach der Initialisierung entladen werden soll, "
+"``falsch`` andernfalls."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 msgid ""
@@ -407,7 +420,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:204
 msgid "The canvas element to use."
-msgstr ""
+msgstr "Das zu verwendende Canvas-Element."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 msgid ""
@@ -418,14 +431,19 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:212
 msgid "``true`` if the canvas shall be resized on start, ``false`` otherwise."
 msgstr ""
+"``wahr`` wenn die Größe der Leinwand beim Start geändert werden soll, sonst "
+"``falsch``."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:217
 msgid "Specify a language code to select the proper localization for the game."
 msgstr ""
+"Geben Sie einen Sprachcode an, um die richtige Lokalisierung für das Spiel "
+"auszuwählen."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:219
 msgid "Complete list of :ref:`supported locales <doc_locales>`."
 msgstr ""
+"Vollständige Liste der :ref:`unterstützten Gebietsschemata <doc_locales>`."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:221
 msgid "Language code."
@@ -446,7 +464,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:232
 msgid "Executable name."
-msgstr ""
+msgstr "Name der ausführbaren Datei."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:237
 msgid ""
@@ -495,6 +513,8 @@ msgstr ""
 msgid ""
 "The callback function must accept one string argument: the message to print."
 msgstr ""
+"Die Rückruffunktion muss ein Zeichenfolgenargument akzeptieren: die zu "
+"druckende Nachricht."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:262
 msgid ""

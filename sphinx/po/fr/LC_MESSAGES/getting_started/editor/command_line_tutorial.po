@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -750,9 +750,8 @@ msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "Le script doit hériter de ``SceneTree`` ou ``MainLoop``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:293
-#, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr "Voici un simple exemple de son fonctionnement :"
+msgstr "Voici un exemple simple de fonctionnement de ``sayhello.gd`` :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:304
 msgid "And how to run it:"
@@ -774,6 +773,10 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"La première ligne de ``sayhello.gd`` ci-dessus est communément appelée "
+"*shebang*. Si le binaire Godot se trouve dans votre ``PATH`` en tant que "
+"``godot``, il vous permet d'exécuter le script comme suit dans les "
+"distributions Linux modernes, ainsi que dans macOS :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:326
 msgid ""
@@ -781,3 +784,6 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"Si ce qui précède ne fonctionne pas dans votre version actuelle de Linux ou "
+"de macOS, vous pouvez toujours faire en sorte que le shebang exécute Godot "
+"directement à partir de l'endroit où il se trouve comme suit :"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,13 @@ msgid ""
 "each bus via an AudioStreamPlayer node. There are different kinds of "
 "AudioStreamPlayers. Each one loads an AudioStream and plays it back."
 msgstr ""
+"Como ya habrán leído en :ref:`doc_audio_buses`, el sonido se envía a cada "
+"bus a través de un nodo AudioStreamPlayer. Hay diferentes tipos de "
+"AudioStreamPlayer. Cada uno carga un AudioStream y lo reproduce."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
 msgid "AudioStream"
-msgstr ""
+msgstr "AudioStream"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
 msgid ""
@@ -43,6 +46,11 @@ msgid ""
 "files such as WAV (``.wav``) or Ogg Vorbis (``.ogg``) can be loaded as "
 "AudioStreams and placed inside an AudioStreamPlayer."
 msgstr ""
+"Un flujo de audio es un objeto abstracto que emite sonido. El sonido puede "
+"provenir de muchos lugares, pero lo más común es que se cargue desde el "
+"sistema de archivos. Los archivos de audio como WAV (``.wav``) o Ogg Vorbis "
+"(``.ogg``) pueden ser cargados como AudioStreams y colocados dentro de un "
+"AudioStreamPlayer."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:21
 msgid ""
@@ -58,6 +66,10 @@ msgid ""
 "of them can be played simultaneously with little impact on performance. This "
 "format is usually best for short sound effects."
 msgstr ""
+"Los archivos WAV son bastante grandes, pero usan poca potencia de la CPU "
+"para reproducirlos. Cientos de ellos pueden ser reproducidos simultáneamente "
+"con poco impacto en el rendimiento. Este formato suele ser el mejor para los "
+"efectos de sonido cortos."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:27
 msgid ""
@@ -66,6 +78,11 @@ msgid ""
 "This format works well for music, long sound effect sequences, and voice at "
 "relatively low bitrates."
 msgstr ""
+"Los archivos Ogg Vorbis son mucho más pequeños, pero utilizan mucha más "
+"potencia de la CPU para su reproducción, por lo que sólo se pueden "
+"reproducir unos pocos a la vez (especialmente en los móviles). Este formato "
+"funciona bien para música, largas secuencias de efectos de sonido y voz a "
+"velocidades de bits relativamente bajas."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:32
 msgid ""
@@ -73,6 +90,10 @@ msgid ""
 "metadata, Ogg Vorbis files do not. If looping an Ogg Vorbis file is desired, "
 "it must be set up using the import options:"
 msgstr ""
+"Tengan en cuenta que mientras que los archivos WAV pueden contener "
+"información en bucle en sus metadatos, los archivos Ogg Vorbis no. Si se "
+"desea hacer un bucle en un archivo Ogg Vorbis, debe ser configurado usando "
+"las opciones de importación:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:38
 msgid ""
@@ -81,20 +102,27 @@ msgid ""
 "played back. This can be helpful for adding variation to sounds that are "
 "played back often."
 msgstr ""
+"Hay otros tipos de AudioStreamPlayer, como AudioStreamRandomPitch. Este hace "
+"un ajuste aleatorio del tono del sonido cada vez que se reproduce. Esto "
+"puede ser útil para añadir variación a los sonidos que se reproducen a "
+"menudo."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:44
 msgid "AudioStreamPlayer"
-msgstr ""
+msgstr "AudioStreamPlayer"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:46
 msgid ""
 "This is the standard, non-positional stream player. It can play to any bus. "
 "In 5.1 sound setups, it can send audio to stereo mix or front speakers."
 msgstr ""
+"Este es el reproductor de stream estándar, no posicional. Puede reproducirse "
+"en cualquier bus. En configuraciones de sonido 5.1, puede enviar audio a la "
+"mezcla estéreo o a los altavoces frontales."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:50
 msgid "AudioStreamPlayer2D"
-msgstr ""
+msgstr "AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:52
 msgid ""
@@ -102,6 +130,9 @@ msgid ""
 "environment. When close to the left of the screen, the panning will go left. "
 "When close to the right side, it will go right."
 msgstr ""
+"Es una variante del AudioStreamPlayer, pero emite sonido en un entorno de "
+"posición 2D. Cuando esté cerca de la izquierda de la pantalla, la panorámica "
+"irá hacia la izquierda. Cuando esté cerca del lado derecho, irá a la derecha."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:58
 msgid ""
@@ -110,10 +141,14 @@ msgid ""
 "different reverb or sound qualities to handle action happening in a "
 "particular parts of your game world."
 msgstr ""
+"Area2Ds puede utilizarse para desviar el sonido de cualquier "
+"AudioStreamPlayer2Ds que contengan a buses específicos. Esto permite crear "
+"buses con diferentes calidades de reverberación o sonido para manejar la "
+"acción que ocurre en una parte determinada del mundo del juego."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:66
 msgid "AudioStreamPlayer3D"
-msgstr ""
+msgstr "AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:68
 msgid ""
@@ -122,21 +157,29 @@ msgid ""
 "it can position sound in stereo, 5.1 or 7.1 depending on the chosen audio "
 "setup."
 msgstr ""
+"Es una variante del AudioStreamPlayer, pero emite sonido en un entorno "
+"posicional 3D. Dependiendo de la ubicación del reproductor con respecto a la "
+"pantalla, puede posicionar el sonido en estéreo, 5.1 o 7.1 dependiendo de la "
+"configuración de audio elegida."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:72
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
 msgstr ""
+"Similar a AudioStreamPlayer2D, un Area puede desviar el sonido a un bus de "
+"audio."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:76
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
 msgstr ""
+"A diferencia de la 2D, la versión 3D de AudioStreamPlayer tiene algunas "
+"opciones más avanzadas:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:81
 msgid "Reverb buses"
-msgstr ""
+msgstr "Buses de reverberación"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:83
 msgid ""
@@ -145,6 +188,11 @@ msgid ""
 "reverb configurations for different types of rooms. This is done by enabling "
 "this type of reverb in the **Reverb Bus** section of the Area's properties:"
 msgstr ""
+"Godot permite que los flujos de audio 3D que entran en un nodo específico "
+"del área envíen audio seco y húmedo a buses separados. Esto es útil cuando "
+"se tienen varias configuraciones de reverberación para diferentes tipos de "
+"habitaciones. Esto se hace habilitando este tipo de reverberación en la "
+"sección **Reverb Bus** de las propiedades del Area:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:90
 msgid ""
@@ -152,6 +200,10 @@ msgid ""
 "the reverb info from each area. A Reverb effect needs to be created and "
 "configured in each reverb bus to complete the setup for the desired effect:"
 msgstr ""
+"Al mismo tiempo, se crea un diseño especial de bus donde cada área recibe la "
+"información de reverberación de cada área. Es necesario crear y configurar "
+"un efecto de reverberación en cada bus de reverberación para completar la "
+"configuración del efecto deseado:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:96
 msgid ""
@@ -161,10 +213,15 @@ msgid ""
 "source may be far away. Playing around with this parameter can simulate that "
 "effect."
 msgstr ""
+"La sección de **Reverb Bus** del área también tiene un parámetro llamado "
+"**Uniformidad**. Algunos tipos de habitaciones rebotan los sonidos más que "
+"otros (como un almacén), por lo que la reverberación puede ser escuchada "
+"casi uniformemente a través de la habitación aunque la fuente pueda estar "
+"lejos. Jugando con este parámetro se puede simular ese efecto."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:103
 msgid "Doppler"
-msgstr ""
+msgstr "Doppler"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:105
 msgid ""
@@ -173,6 +230,10 @@ msgid ""
 "Godot can track velocity changes in the AudioStreamPlayer3D and Camera "
 "nodes. Both nodes have this property, which must be enabled manually:"
 msgstr ""
+"Cuando la velocidad relativa entre un emisor y un oyente cambia, esto se "
+"percibe como un aumento o disminución del tono del sonido emitido. Godot "
+"puede rastrear los cambios de velocidad en los nodos AudioStreamPlayer3D y "
+"Camera. Ambos nodos tienen esta propiedad, que debe ser activada manualmente:"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:112
 msgid ""

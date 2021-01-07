@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,6 +278,8 @@ msgid ""
 "We then set the :ref:`RigidBody <class_RigidBody>`'s mode to ``MODE_STATIC`` "
 "so the grenade does not move."
 msgstr ""
+"Dann setzen wir den Modus des :ref:`RigidBody <class_RigidBody>` auf "
+"``MODE_STATIC``, damit sich die Granate nicht bewegt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:137
 msgid ""
@@ -304,12 +306,20 @@ msgid ""
 "`Particles <class_Particles>` play and we can free/destroy the grenade, as "
 "we no longer need it."
 msgstr ""
+"Als nächstes prüfen wir, ob ``explosion_wait_timer`` größer oder gleich "
+"``EXPLOSION_WAIT_TIME`` ist. Da wir ``delta`` hinzugefügt haben, wird dies "
+"nur einmal aufgerufen. Wenn ``explosion_wait_timer`` größer oder gleich "
+"``EXPLOSION_WAIT_TIME`` ist, hat die Granate lange genug gewartet, um die :"
+"ref:`Particles <class_Particles>` abspielen zu lassen, und wir können die "
+"Granate freigeben/zerstören, da wir sie nicht mehr brauchen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:148
 msgid ""
 "Let's quickly get the sticky grenade set up too. Open up ``Sticky_Grenade."
 "tscn``."
 msgstr ""
+"Lassen Sie uns schnell auch die Haftgranate aufsetzen. Öffnen Sie "
+"``Sticky_Granate.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:150
 msgid ""
@@ -318,22 +328,31 @@ msgid ""
 "``Sticky_Area``. We will be using ``Stick_Area`` to detect when the sticky "
 "grenade has collided with the environment and needs to stick to something."
 msgstr ""
+"``Sticky_Grenade.tscn`` ist fast identisch mit ``Grenade.tscn``, mit einem "
+"kleinen Zusatz. Wir haben jetzt eine zweite :ref:`Area <class_Area>`, "
+"genannt ``Sticky_Area``. Wir werden ``Stick_Area`` benutzen, um "
+"festzustellen, wann die Haftgranate mit der Umgebung kollidiert ist und an "
+"etwas haften bleiben muss."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:154
 msgid ""
 "Select ``Sticky_Grenade`` and make a new script called ``Sticky_Grenade."
 "gd``. Add the following:"
 msgstr ""
+"Wählen Sie ``Sticky_Grenade`` und erstellen Sie ein neues Skript namens "
+"``Sticky_Grenade.gd``. Fügen Sie Folgendes hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:244
 msgid ""
 "The code above is almost identical to the code for ``Grenade.gd``, so let's "
 "just go over what's changed."
 msgstr ""
+"Der obige Code ist fast identisch mit dem Code für ``Grenate.gd``, also "
+"lassen Sie uns einfach durchgehen, was sich geändert hat."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:246
 msgid "Firstly, we have a few more class variables:"
-msgstr ""
+msgstr "Zunächst einmal haben wir einige weitere Klassenvariablen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:248
 msgid ""
@@ -348,6 +367,9 @@ msgid ""
 "``attach_point``: A variable to hold a :ref:`Spatial <class_Spatial>` that "
 "will be at the position where the sticky grenade collided."
 msgstr ""
+"``attach_point``: Eine Variable, um einen :ref:`Spatial <class_Spatial>` zu "
+"halten, der sich an der Stelle befindet, an der die Klebe-Granate "
+"kollidierte."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:250
 msgid ""
@@ -362,6 +384,10 @@ msgid ""
 "player's :ref:`KinematicBody <class_KinematicBody>` so the sticky grenade "
 "does not stick to the player when the player throws it."
 msgstr ""
+"Sie wurden hinzugefügt, damit die Haftgranate an jedem :ref:`PhysicsBody "
+"<class_PhysicsBody>` haften kann, den sie treffen könnte. Außerdem benötigen "
+"wir jetzt den :ref:`KinematicBody <class_KinematicBody>` des Spielers, damit "
+"die Haftgranate nicht am Spieler kleben bleibt, wenn der Spieler sie wirft."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:257
 msgid ""
@@ -369,10 +395,15 @@ msgid ""
 "a line of code so when any body enters ``Stick_Area``, the "
 "``collided_with_body`` function is called."
 msgstr ""
+"Schauen wir uns nun die kleine Änderung in ``_ready`` an. In ``_ready`` "
+"haben wir eine Zeile Code hinzugefügt, so dass die Funktion "
+"``collided_with_body`` aufgerufen wird, wenn ein Körper in die "
+"``Stick_Area`` eintritt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:262
 msgid "Next let's take a look at ``collided_with_body``."
 msgstr ""
+"Lassen Sie uns als nächstes einen Blick auf ``collided_with_body`` werfen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:264
 msgid ""
@@ -383,6 +414,12 @@ msgid ""
 "collided with is not itself. If we have collided with ourself, we ignore it "
 "by returning."
 msgstr ""
+"Erstens stellen wir sicher, dass die Haftgranate nicht mit sich selbst "
+"kollidiert. Da die klebrige :ref:`Area <class_Area>` nicht weiß, dass sie "
+"am :ref:`RigidBody <class_RigidBody>` der Granate befestigt ist, müssen wir "
+"sicherstellen, dass sie nicht an sich selbst haftet, indem wir überprüfen, "
+"ob der Körper, mit dem sie kollidiert ist, nicht sie selbst ist. Wenn wir "
+"mit uns selbst kollidiert sind, ignorieren wir ihn, indem wir returnen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:269
 msgid ""
@@ -391,18 +428,27 @@ msgid ""
 "it. If the body the sticky grenade has collided with is indeed "
 "``player_body``, we ignore it by returning."
 msgstr ""
+"Dann prüfen wir, ob wir dem ``player_body`` etwas zugeordnet haben, und ob "
+"der Körper, mit dem die Haftgranate zusammengestoßen ist, der Spieler ist, "
+"der sie geworfen hat. Wenn der Körper, mit dem die Haftgranate kollidiert "
+"ist, tatsächlich ein ``player_body`` ist, ignorieren wir ihn, indem wir "
+"returnen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:272
 msgid ""
 "Next, we check if the sticky grenade has attached to something already or "
 "not."
 msgstr ""
+"Als nächstes prüfen wir, ob die Haftgranate bereits an etwas befestigt ist "
+"oder nicht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:274
 msgid ""
 "If the sticky grenade is not attached, we then set ``attached`` to ``true`` "
 "so we know the sticky grenade has attached to something."
 msgstr ""
+"Wenn die Haftgranate nicht befestigt ist, dann setzen wir ``attached`` auf "
+"``true``, damit wir wissen, dass die Haftgranate an etwas befestigt ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:276
 msgid ""
@@ -410,6 +456,10 @@ msgid ""
 "of the body the sticky grenade collided with. We then set the :ref:`Spatial "
 "<class_Spatial>`'s position to the sticky grenade's current global position."
 msgstr ""
+"Dann machen wir eine neue Node :ref:`Spatial <class_Spatial>`, und machen "
+"sie zu einem Kind des Körpers, mit dem die Haftgranate kollidierte. Dann "
+"setzen wir die Position :ref:`Spatial <class_Spatial>` auf die aktuelle "
+"globale Position der Haftgranate."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:279
 msgid ""
@@ -419,6 +469,12 @@ msgid ""
 "grenade's position, so it is always at the same position relative to the "
 "body it collided with."
 msgstr ""
+"Da wir das :ref:`Spatial <class_Spatial>` als Kind des Körpers hinzugefügt "
+"haben, mit dem die Haftgranate kollidiert ist, wird sie zusammen mit dem "
+"besagten Körper folgen. Wir können dann dieses :ref:`Spatial "
+"<class_Spatial>` verwenden, um die Position der Haftgranate so festzulegen, "
+"dass sie sich immer an der gleichen Position relativ zu dem Körper befindet, "
+"mit dem sie kollidiert ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:282
 msgid ""
@@ -426,16 +482,23 @@ msgid ""
 "moving whatever body it has collided with. Finally, we set our mode to "
 "``MODE_STATIC`` so the grenade does not move."
 msgstr ""
+"Dann schalten wir die ``rigid_shape`` aus, damit die Haftgranate sich nicht "
+"ständig bewegt, mit welchem Körper sie auch immer kollidiert ist. "
+"Schließlich stellen wir unseren Modus auf ``MODE_STATIC``, damit sich die "
+"Granate nicht bewegt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:287
 msgid "Finally, lets go over the few changes in ``_process``."
 msgstr ""
+"Lassen Sie uns schließlich die wenigen Änderungen im ``_process`` durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:289
 msgid ""
 "Now we're checking to see if the sticky grenade is attached right at the top "
 "of ``_process``."
 msgstr ""
+"Jetzt prüfen wir, ob die Haftgranate ganz oben auf dem ``_process`` "
+"angebracht ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:291
 msgid ""
@@ -446,6 +509,13 @@ msgid ""
 "<class_Spatial>` assigned to ``attach_point`` (using its global :ref:"
 "`Transform <class_Transform>`'s origin)."
 msgstr ""
+"Wenn die Haftgranate befestigt ist, stellen wir sicher, dass der "
+"Befestigungspunkt nicht gleich ``null`` ist. Wenn der angehängte Punkt nicht "
+"gleich ``null``` ist, setzen wir die globale Position der Haftgranate (unter "
+"Verwendung ihres globalen :ref:`Transform <class_Transform>` Ursprungs) auf "
+"die globale Position des :ref:`Spatial <class_Spatial>`, das dem "
+"``attach_point`` zugeordnet ist (unter Verwendung ihres globalen :ref:"
+"`Transform <class_Transform>` Ursprungs)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:295
 msgid ""
@@ -453,6 +523,10 @@ msgid ""
 "check to see if the sticky grenade has an attached point. If it does, we "
 "also call ``queue_free`` on the attach point, so it's also freed/destroyed."
 msgstr ""
+"Die einzige andere Änderung ist nun, dass wir vor dem Freilassen/Zerstören "
+"der Haftgranate prüfen müssen, ob die Haftgranate einen Befestigungspunkt "
+"hat. Wenn das der Fall ist, rufen wir auch ``queue_free`` auf dem "
+"Befestigungspunkt auf, so dass sie ebenfalls freigesetzt/zerstört wird."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:299
 msgid "Adding grenades to the player"
@@ -462,6 +536,8 @@ msgstr "Dem Spieler Granaten hinzufügen"
 msgid ""
 "Now we need to add some code to ``Player.gd`` so we can use the grenades."
 msgstr ""
+"Jetzt müssen wir etwas Code zu ``Player.gd`` hinzufügen, damit wir die "
+"Granaten benutzen können."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:303
 msgid ""
@@ -469,6 +545,10 @@ msgid ""
 "``Rotation_Helper``. Notice how in ``Rotation_Helper`` we have a node called "
 "``Grenade_Toss_Pos``. This is where we will be spawning the grenades."
 msgstr ""
+"Öffnen Sie zunächst ``Player.tscn`` und erweitern Sie den Nodebaum, bis Sie "
+"bei ``Rotation_Helper`` angelangt sind. Beachten Sie, dass wir in "
+"``Rotation_Helper`` eine Node namens ``Granate_Toss_Pos`` haben. Hier werden "
+"wir die Granaten spawnen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:306
 msgid ""
@@ -477,12 +557,18 @@ msgid ""
 "``Grenade_Toss_Pos``, you can change the angle at which the grenades are "
 "tossed."
 msgstr ""
+"Beachten Sie auch, wie es leicht um die ``X``-Achse gedreht ist, so dass es "
+"nicht gerade, sondern eher leicht nach oben zeigt. Indem Sie die Drehung von "
+"``Granate_Toss_Pos`` ändern, können Sie den Winkel ändern, in dem die "
+"Granaten geworfen werden."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:309
 msgid ""
 "Okay, now let's start making the grenades work with the player. Add the "
 "following class variables to ``Player.gd``:"
 msgstr ""
+"Okay, fangen wir nun an, die Granaten mit dem Spieler zum Funktionieren zu "
+"bringen. Fügen Sie die folgenden Klassenvariablen zu ``Player.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:319
 msgid ""
@@ -520,6 +606,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:325
 msgid "Most of these variables are similar to how we have our weapons set up."
 msgstr ""
+"Die meisten dieser Variablen ähneln der Art und Weise, wie wir unsere Waffen "
+"eingerichtet haben."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:327
 msgid ""
@@ -533,7 +621,7 @@ msgstr ""
 msgid ""
 "Now we need to add some code in ``_process_input`` Add the following to "
 "``_process_input``:"
-msgstr ""
+msgstr "Jetzt müssen wir etwas Code in ``_process_input`` hinzufügen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:362
 msgid "Let's go over what's happening here."
@@ -595,6 +683,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:399
 msgid "Now we'll show how many grenades the player has left in the UI."
 msgstr ""
+"Jetzt zeigen wir, wie viele Granaten der Spieler noch in der "
+"Benutzeroberfläche hat."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:401
 msgid ""
@@ -627,12 +717,16 @@ msgid ""
 "Now we have a function to add grenades, let's open up ``AmmoPickup.gd`` and "
 "use it!"
 msgstr ""
+"Jetzt haben wir eine Funktion zum Hinzufügen von Granaten, öffnen wir "
+"``AmmoPickup.gd`` und benutzen sie!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:418
 msgid ""
 "Open up ``AmmoPickup.gd`` and go to the ``trigger_body_entered`` function. "
 "Change it to the following:"
 msgstr ""
+"Öffnen Sie ``AmmoPickup.gd`` und gehen Sie zur Funktion "
+"``trigger_body_entered``. Ändern Sie es wie folgt:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:433
 msgid ""
@@ -661,16 +755,22 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:449
 msgid "Now you should be able to throw grenades! Go give it a try!"
 msgstr ""
+"Jetzt sollten Sie in der Lage sein, Granaten zu werfen! Versuchen Sie es "
+"doch mal!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:453
 msgid "Adding the ability to grab and throw RigidBody nodes to the player"
 msgstr ""
+"Hinzufügen der Fähigkeit zum Greifen und Werfen von RigidBody-Nodes für den "
+"Spieler"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:455
 msgid ""
 "Next, let's give the player the ability to pick up and throw :ref:`RigidBody "
 "<class_RigidBody>` nodes."
 msgstr ""
+"Als nächstes geben wir dem Spieler die Möglichkeit, :ref:`RigidBody "
+"<class_RigidBody>`-Nodes aufzunehmen und zu werfen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:457
 msgid "Open up ``Player.gd`` and add the following class variables:"
@@ -682,6 +782,8 @@ msgid ""
 "``grabbed_object``: A variable to hold the grabbed :ref:`RigidBody "
 "<class_RigidBody>` node."
 msgstr ""
+"``grabbed_object``: Eine Variable zum Halten des ergriffenen :ref:`RigidBody "
+"<class_RigidBody>` Nodes."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:467
 msgid ""
@@ -709,10 +811,12 @@ msgstr ""
 msgid ""
 "With that done, all we need to do is add some code to ``process_input``:"
 msgstr ""
+"Wenn das erledigt ist, müssen wir nur noch etwas Code zu ``process_input`` "
+"hinzufügen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:509
 msgid "Let's go over what's happening."
-msgstr ""
+msgstr "Lassen Sie uns noch einmal durchgehen, was geschieht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:511
 msgid ""
@@ -725,7 +829,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:515
 msgid "Next we check to see whether or not ``grabbed_object`` is ``null``."
-msgstr ""
+msgstr "Als nächstes prüfen wir, ob ``Grabbed_object`` `Null`` ist oder nicht."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:519
 msgid ""
@@ -796,6 +900,9 @@ msgid ""
 "<doc_physics_introduction_collision_layer_code_example>` for more "
 "information on Godot collision masks."
 msgstr ""
+"Siehe :ref:`Physik-Einleitung "
+"<doc_physics_introduction_collision_layer_collision_example>` für weitere "
+"Informationen über Godots Kollisionsmasken."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
 msgid ""
@@ -808,6 +915,8 @@ msgid ""
 "We first set the mode of the :ref:`RigidBody <class_RigidBody>` we are "
 "holding to ``MODE_RIGID``."
 msgstr ""
+"Zuerst setzen wir den Modus des :ref:``RigidBody <class_RigidBody>`, den wir "
+"auf ``MODE_RIGID`` halten."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:551
 msgid ""
@@ -853,6 +962,8 @@ msgid ""
 "Finally, we set ``grabbed_object`` to ``null`` since the player has "
 "successfully thrown the held object."
 msgstr ""
+"Schließlich setzen wir ``grabbed_object`` auf ``null``, da der Spieler das "
+"gehaltene Objekt erfolgreich geworfen hat."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
@@ -884,6 +995,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:594
 msgid "Now the player cannot change weapons or reload while holding an object."
 msgstr ""
+"Jetzt kann der Spieler die Waffe nicht mehr wechseln oder nachladen, während "
+"er einen Gegenstand hält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:596
 msgid ""
@@ -898,11 +1011,14 @@ msgstr "Einen Geschützturm hinzufügen"
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
 msgid "Next, let's make a turret to shoot the player!"
 msgstr ""
+"Als nächstes bauen wir einen Geschützturm, der auf den Spieler schießt!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:603
 msgid ""
 "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
 msgstr ""
+"Öffnen Sie ``Turret.tscn``. Erweitern Sie ``Turret``, wenn es nicht bereits "
+"erweitert ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
 msgid ""
@@ -972,6 +1088,8 @@ msgid ""
 "``TURRET_DAMAGE_RAYCAST``: The amount of damage a single :ref:`Raycast "
 "<class_Raycast>` bullet does."
 msgstr ""
+"``TURRET_DAMAGE_RAYCAST``: Die Schadenshöhe, den ein einzelnes :ref:"
+"``Raycast <class_Raycast>` Geschoss anrichtet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:790
 msgid ""
@@ -992,7 +1110,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:792
 msgid "``FIRE_TIME``: The amount of time (in seconds) needed to fire a bullet."
 msgstr ""
-"``FIRE_TIME``: Die Zeit (in Sekunden) die benötigt wird, um eine Kugel "
+"``FIRE_TIME``: Die Zeit (in Sekunden) die benötigt wird, um ein Geschoss "
 "abzufeuern."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:793
@@ -1000,28 +1118,36 @@ msgid ""
 "``fire_timer``: A variable for tracking how much time has passed since the "
 "turret last fired."
 msgstr ""
+"``fire_timer``: Eine Variable zur Verfolgung, wie viel Zeit seit dem letzten "
+"Schuss des Geschützturms vergangen ist."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:794
 msgid "``node_turret_head``: A variable to hold the ``Head`` node."
-msgstr ""
+msgstr "``node_turret_head``: Eine Variable, die den ``Head``-Node enthält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:795
 msgid ""
 "``node_raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node "
 "attached to the turret's head."
 msgstr ""
+"``node_raycast``: Eine Variable, die den Node :ref:``Raycast "
+"<class_Raycast>` am Kopf des Geschützturms hält."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:796
 msgid ""
 "``node_flash_one``: A variable to hold the first muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
+"``node_flash_one``: Eine Variable, die den ersten Mündungsblitz enthält :ref:"
+"`MeshInstance <class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:797
 msgid ""
 "``node_flash_two``: A variable to hold the second muzzle flash :ref:"
 "`MeshInstance <class_MeshInstance>`."
 msgstr ""
+"``node_flash_two``: Eine Variable, die den zweiten Mündungsblitz enthält :"
+"ref:`MeshInstance <class_MeshInstance>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:798
 msgid "``ammo_in_turret``: The amount of ammo currently in the turret."
@@ -1108,7 +1234,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:812
 msgid "Whew, that's quite a few class variables!"
-msgstr ""
+msgstr "Puh, das sind ganz schön viele Klassenvariablen!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:816
 msgid "Let's go through ``_ready`` next."
@@ -1125,12 +1251,15 @@ msgstr ""
 msgid ""
 "We then get all the nodes and assign them to their respective variables."
 msgstr ""
+"Wir erhalten dann alle Nodes und ordnen sie ihren jeweiligen Variablen zu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:822
 msgid ""
 "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
 "turret cannot hurt itself."
 msgstr ""
+"Als nächstes fügen wir einige Ausnahmen zu :ref:`Raycast <class_Raycast>` "
+"hinzu, damit sich der Turm nicht selbst verletzen kann."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
 msgid ""
@@ -1150,6 +1279,8 @@ msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
 msgstr ""
+"Schließlich stellen wir den Gesundheitszustand des Geschützturms auf "
+"``MAX_TURRET_HEALTH`` ein, so dass er bei voller Gesundheit startet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid "Now let's go through ``_physics_process``."
@@ -1220,7 +1351,7 @@ msgstr "Lassen Sie uns als nächstes ``fire_bullet`` durchgehen."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
 msgid "Firstly, we check whether the turret is using a raycast."
-msgstr ""
+msgstr "Zuerst prüfen wir, ob der Turm einen Ray-Cast verwendet."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:865
 msgid ""
@@ -1271,6 +1402,8 @@ msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
 msgstr ""
+"Schauen wir uns als nächstes ``body_entered_vision`` an, und zum Glück ist "
+"dies recht kurz."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
 msgid ""
@@ -1321,6 +1454,8 @@ msgid ""
 "We first subtract however much damage the bullet causes from the turret's "
 "health."
 msgstr ""
+"Zuerst ziehen wir vom Gesundheitszustand des Turms den vom Geschoss "
+"verursachten Schaden ab."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
 msgid ""
@@ -1342,7 +1477,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:921
 msgid "Add the following code to ``TurretBodies.gd``:"
-msgstr ""
+msgstr "Fügen Sie den folgenden Code zu ``TurretBodies.gd`` hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:936
 msgid ""
@@ -1368,7 +1503,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:946
 msgid "Open ``Player.gd`` and add the following:"
-msgstr ""
+msgstr "Öffnen Sie ``Player.gd`` und fügen Sie Folgendes hinzu:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:953
 msgid ""
@@ -1404,3 +1539,5 @@ msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_5.zip <files/Godot_FPS_Part_5.zip>`"
 msgstr ""
+"Sie können das fertige Projekt für diesen Teil hier herunterladen: :download:"
+"`Godot_FPS_Teil_5.zip <files/Godot_FPS_Teil_5.zip>`"

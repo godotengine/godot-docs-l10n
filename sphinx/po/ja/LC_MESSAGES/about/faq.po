@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -484,7 +484,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "GodotがDirect3Dの代わりにVulkanやOpenGLを使うのはなぜですか？"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -494,6 +494,10 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godotは第一にクロスプラットフォームでの互換性とオープンスタンダードを目指して"
+"います。OpenGLとVulkanは(ほぼ)すべてのプラットフォームで利用できるオープンな"
+"技術です。この設計上の決定のおかげで、Windows上のGodotで開発されたプロジェク"
+"トでもLinuxやmacOSなどで実行することができます。"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -502,6 +506,10 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Godotのレンダラーについて作業する人は数人しかいないため、私たちがメンテナンス"
+"するレンダリングバックエンドはより少ない方が望ましいです。またすべてのプラッ"
+"トフォームにおいて単一のAPIを使用することでプラットフォーム固有の問題が少なく"
+"なり、一貫性の向上が見込めます。"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -509,6 +517,9 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"長期的には、私たちはDirect3D 12 レンダラーを(主にXbox用に)開発する可能性はあ"
+"りますが、VulkanとOpenGLはWindowsを含むすべてのプラットフォームにおいてデフォ"
+"ルトのレンダリングバックエンドであり続けるでしょう。"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -646,22 +657,21 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"GDScriptの実装、Godotモジュール、およびGodotの\\ `非公式Pythonサポート"
+"GDScriptの実装、Godotモジュール、およびGodotの\\ `非公式Pythonサポート "
 "<https://github.com/touilleMan/godot-python>`_\\ もご覧ください。これは、別の"
 "サードパーティライブラリがどのようにGodotに統合されるかを知る良い出発点です。"
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "次のリリースはいつ？"
+msgstr "次のGodotのリリースはいつですか？"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
-"詳細については、\\ :ref:`doc_running_code_in_the_editor` を参照してください。"
+"詳細については、\\ :ref:`doc_running_code_in_the_editor`\\ を参照してくださ"
+"い。"
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"

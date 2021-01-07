@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-28 16:14+0200\n"
+"POT-Creation-Date: 2021-01-07 14:35+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
-msgstr "特徴"
+msgstr "機能"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
@@ -49,15 +49,15 @@ msgstr "プラットフォーム"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr "**エディタとエクスポートしたプロジェクトの両方を実行できます。**"
+msgstr "**エディタとエクスポートしたプロジェクトの両方を実行可能:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr "Windows 7以降（64ビットと32ビット）。"
+msgstr "Windows 7以降 (64ビットと32ビット)。"
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12以降(64ビットと x86とARM)。"
+msgstr "macOS 10.12以降 (64ビットと x86とARM)。"
 
 #: ../../docs/about/list_of_features.rst:24
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
@@ -89,17 +89,19 @@ msgstr "iOS 10.0 以降。"
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
-msgstr ""
+msgstr "WebAssembly による HTML5 (Firefox、Chrome、Edge、Opera)。"
 
 #: ../../docs/about/list_of_features.rst:35
 msgid ":ref:`Consoles <doc_consoles>`."
-msgstr ":ref:`コンソール <doc_consoles>`."
+msgstr ":ref:`コンソール <doc_consoles>`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:37
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"Godotは可能な限りプラットフォームに依存しないことを目指しており、比較的簡単に"
+"新しいプラットフォームに移植することができます。"
 
 #: ../../docs/about/list_of_features.rst:41
 msgid "Editor"
@@ -124,14 +126,16 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"Visual Studio Code や Vim などの\\ :ref:`外部スクリプトエディタ "
+"<doc_external_editor>`\\ に対応。"
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
-msgstr "GDScript :ref:`debugger <doc_debugger_panel>`。"
+msgstr "GDScript\\ :ref:`デバッガ <doc_debugger_panel>`\\ 。"
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "複数スレッドでのデバッグはまだサポートされていません。"
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Performance monitoring tools."
@@ -160,6 +164,8 @@ msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"変更内容はエディタに反映されず、実行中のプロジェクトを閉じた後は保持されませ"
+"ん。"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid "Live camera replication."
@@ -171,7 +177,7 @@ msgstr "エディタ内のカメラを移動し、実行プロジェクトで結
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "コミュニティによって翻訳された数十の言語にてエディタを使用できます。"
 
 #: ../../docs/about/list_of_features.rst:68
 msgid "**Plugins:**"
@@ -182,32 +188,39 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+":ref:`アセット ライブラリ <doc_what_is_assetlib>`\\ からエディタプラグインを"
+"ダウンロードして、エディタの機能を拡張することができます。"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"GDScript を使用して独自のプラグインを作成し、新しい機能を追加したり、ワークフ"
+"ローを高速化したりすることができます。"
 
 #: ../../docs/about/list_of_features.rst:73
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"プロジェクトマネージャのアセットライブラリからプロジェクトをダウンロードし"
+"て、直接インポートします。"
 
 #: ../../docs/about/list_of_features.rst:76
 msgid "2D graphics"
-msgstr ""
+msgstr "2Dグラフィックス"
 
 #: ../../docs/about/list_of_features.rst:78
 #: ../../docs/about/list_of_features.rst:142
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**2つのレンダラーが利用可能:**"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:145
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
 msgstr ""
+"OpenGL ES 3.0レンダラー (デスクトップ プラットフォームではOpenGL 3.3を使用)。"
 
 #: ../../docs/about/list_of_features.rst:81
 #: ../../docs/about/list_of_features.rst:145
@@ -218,24 +231,25 @@ msgstr "ハイエンドビジュアル。デスクトッププラットフォー
 #: ../../docs/about/list_of_features.rst:151
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
 msgstr ""
+"OpenGL ES 2.0 レンダラー（デスクトッププラットフォームでOpenGl 2.1を使用）。"
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:148
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "モバイルとウェブのプラットフォームで推奨。"
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "スプライト、ポリゴン、ラインのレンダリング。"
 
 #: ../../docs/about/list_of_features.rst:89
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
-msgstr ""
+msgstr "Polygon2DやLine2Dといった線やポリゴンを描画する高度なツール。"
 
 #: ../../docs/about/list_of_features.rst:91
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "アニメーションするスプライトを作るのに役立つAnimatedSprite。"
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "Parallax layers."
@@ -243,45 +257,55 @@ msgstr "視差レイヤー。"
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "自動でレイヤーを何層か複製する疑似3Dのサポート。"
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "法線マップを用いた2Dライティング。"
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "ハード、あるいはソフトな影。"
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"ビットマップ（ビットマップフォント）を用いたフォントレンダリングや、フリータ"
+"イプ（ダイナミックフォント）を用いたフォントラスタライズ。"
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr ""
+"ビットマップフォントはBMFontといったツールを使うことでエクスポート可能。"
 
 #: ../../docs/about/list_of_features.rst:103
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"ダイナミックフォントは、モノクロフォントと色付きフォントをサポート。対応形式"
+"は TTF と OTF です。"
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"ダイナミックフォントは、任意で幅と色を調整可能なアウトラインをサポート。"
 
 #: ../../docs/about/list_of_features.rst:106
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"より高い解像度でフォントをシャープに保つための、フォントのオーバーサンプリン"
+"グをサポート。"
 
 #: ../../docs/about/list_of_features.rst:108
 msgid "GPU-based particles with support for custom particle shaders."
 msgstr ""
+"GPUベースのパーティクルは、カスタム パーティクルシェーダーをサポートしていま"
+"す。"
 
 #: ../../docs/about/list_of_features.rst:109
 #: ../../docs/about/list_of_features.rst:215
@@ -294,28 +318,28 @@ msgstr "2Dツール"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "2Dカメラは、スムージングとドラッグマージンを内蔵。"
 
 #: ../../docs/about/list_of_features.rst:115
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "2D空間で経路を表現する Path2D ノード。"
 
 #: ../../docs/about/list_of_features.rst:117
 #: ../../docs/about/list_of_features.rst:254
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "エディタ内で描画したり、手続き的に生成が可能。"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "ノードを Path2D に追従させるためのノードである PathFollow2D。"
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2Dジオメトリ用ヘルパークラス。"
 
 #: ../../docs/about/list_of_features.rst:121
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "テクスチャ付きの 2D ラインを描画する Line2Dノード。"
 
 #: ../../docs/about/list_of_features.rst:124
 msgid "2D physics"
@@ -344,12 +368,12 @@ msgstr "キネマティックボディ。"
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:268
 msgid "Joints."
-msgstr ""
+msgstr "ジョイント。"
 
 #: ../../docs/about/list_of_features.rst:132
 #: ../../docs/about/list_of_features.rst:271
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "出入りするボディを検出するための Area。"
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
@@ -358,17 +382,17 @@ msgstr "**衝突検出:**"
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "組み込みシェイプ: ライン、ボックス、円、カプセル。"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
-msgstr ""
+msgstr "衝突ポリゴン (手動で描いたり、エディタ内でスプライトから生成可能)。"
 
 #: ../../docs/about/list_of_features.rst:140
 msgid "3D graphics"
-msgstr ""
+msgstr "3Dグラフィックス"
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "HDR rendering with sRGB."
@@ -383,6 +407,8 @@ msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"すべての機能が利用できるわけではありません。OpenGL ES 3.0 レンダラーを使用し"
+"ている場合にのみ利用可能な機能は、以下では *GLES3* と記載されています。"
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "**Camera:**"
@@ -390,19 +416,19 @@ msgstr "**カメラ:**"
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "透視投影、平行投影、視錐台オフセットカメラ。"
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**物理ベースレンダリング:**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "ディズニーPBRモデルに準拠。"
 
 #: ../../docs/about/list_of_features.rst:160
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "ORMテクスチャに対応するラフネスメタリック用ワークフローを使用。"
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Normal mapping."
@@ -413,24 +439,27 @@ msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3:* 距離に応じて自動レベルのディテールを持つ視差 / リリーフマッピング。"
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "*GLES3:* サブサーフェス・スキャタリングおよび透過。"
 
 #: ../../docs/about/list_of_features.rst:164
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:* 近接フェード (ソフトパーティクル)。"
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"透過パイプラインを通過しないように、アルファ ブレンディングやディザリングを使"
+"用できる距離フェード。"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "ディザリングは、ピクセル単位またはオブジェクト単位で決定可能。"
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "**Real-time lighting:**"
@@ -438,7 +467,7 @@ msgstr "**リアルタイム照明:**"
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "ディレクショナルライト (太陽 / 月)。1 シーンにつき 4 個まで。"
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Omnidirectional lights."
@@ -446,7 +475,7 @@ msgstr "全方位ライト。"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "コーンの角度および減衰量を調整できるスポットライト。"
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "**Shadow mapping:**"
@@ -457,12 +486,16 @@ msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"*DirectionLight:* 直交 (最速)、PSSM 2分割および4分割。分割間におけるブレンド"
+"に対応しています。"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"*OmniLight:* デュアル パラボロイド (高速) またはキューブマップ (低速だがより"
+"正確)。パノラマの形でカラープロジェクターテクスチャに対応。"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "*SpotLight:* Single texture."
@@ -470,19 +503,19 @@ msgstr "*スポットライト:* 単一テクスチャ。"
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**間接照明によるグローバルイルミネーション:**"
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "ベイク済みライトマップ (高速ですが、実行時は更新不可)。"
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "ライトマップはCPU上でベイク。"
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
-msgstr ""
+msgstr "*GLES3:* GIプローブ (低速、セミリアルタイム)。反射をサポート。"
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "**Reflections:**"
@@ -490,13 +523,15 @@ msgstr "**反射:**"
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "*GLES3:* ボクセルベースの反射 (GIプローブ使用時)。"
 
 #: ../../docs/about/list_of_features.rst:194
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"ReflectionProbe を使用した高速ベイクド反射または低速リアルタイム反射。オプ"
+"ションで視差補正を有効にすることができます。"
 
 #: ../../docs/about/list_of_features.rst:196
 msgid "*GLES3:* Screen-space reflections."
@@ -504,15 +539,15 @@ msgstr "*GLES3:* スクリーンスペース リフレクション。"
 
 #: ../../docs/about/list_of_features.rst:197
 msgid "Reflection techniques can be mixed together for greater accuracy."
-msgstr ""
+msgstr "反射用技術は、より高い精度を得るために混用できます。"
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
-msgstr ""
+msgstr "**空:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "パノラマ空 (HDRIを使用)。"
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "Procedural sky."
@@ -520,25 +555,25 @@ msgstr "プロシージャルな空。"
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Fog:**"
-msgstr ""
+msgstr "**霧:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "減衰カーブを調整できる深度フォグ。"
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "減衰量を調整可能な高さフォグ (床または天井)。"
 
 #: ../../docs/about/list_of_features.rst:208
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
-msgstr ""
+msgstr "カメラの向きに応じた自動の深度フォグ色に対応 (太陽の色に合わせて)。"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "フォグの中で光を視認しやすくすることができる、オプションの透過率。"
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Particles:**"
@@ -547,6 +582,7 @@ msgstr "**パーティクル:**"
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
+"*GLES3:* カスタムパーティクルシェーダに対応した、GPUベースのパーティクル。"
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "**Post-processing:**"
@@ -558,29 +594,31 @@ msgstr "トーンマッピング (Linear、Reinhard、Filmic、ACES)。"
 
 #: ../../docs/about/list_of_features.rst:220
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr ""
+msgstr "*GLES3:* ビューポートの明るさに応じた自動露出調整。"
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* 近 / 遠距離の被写界深度。"
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr "*GLES3:* スクリーンスペース アンビエントオクルージョン"
+msgstr "*GLES3:* スクリーンスペース アンビエントオクルージョン。"
 
 #: ../../docs/about/list_of_features.rst:223
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"オプションのバイキュービック アップスケーリング付きのグロー / ブルームと、複"
+"数のブレンドモード: スクリーン、ソフトライト、追加、置換。"
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "一次元rampを用いた色補正。"
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "明るさ、コントラスト、彩度の調整。"
 
 #: ../../docs/about/list_of_features.rst:228
 msgid "**Texture filtering:**"
@@ -588,7 +626,7 @@ msgstr "**テクスチャ フィルタリング:**"
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "ニアレスト、バイリニア、トリリニア、または異方性のフィルタリング。"
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "**Texture compression:**"
@@ -596,23 +634,23 @@ msgstr "**テクスチャ圧縮:**"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* 高品質圧縮のためのBPTC (macOSには未対応)。"
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (macOSには未対応)。"
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (GLES2レンダラー使用時に推奨)。"
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "*GLES3:* S3TC (モバイル / Webプラットフォームでは未対応)。"
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**アンチエイリアシング:**"
 
 #: ../../docs/about/list_of_features.rst:241
 msgid "Multi-sample antialiasing (MSAA)."
@@ -623,6 +661,9 @@ msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"これらエフェクトのほぼ全ては、より良いパフォーマンス、もしくはクオリティー改"
+"善のために調整できます。これはGodotをオフラインレンダリングで使用する際に役立"
+"ちます。"
 
 #: ../../docs/about/list_of_features.rst:247
 msgid "3D tools"
@@ -630,7 +671,7 @@ msgstr "3Dツール"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
-msgstr ""
+msgstr "ビルトインのメッシュ:立方体・円柱・円錐・（半）球・角柱・平面・四角形"
 
 #: ../../docs/about/list_of_features.rst:250
 msgid ""
@@ -641,19 +682,19 @@ msgstr ":ref:`手続き型ジオメトリ生成 <toc-procedural_geometry>` 用�
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
-msgstr ""
+msgstr ":ref:`空間領域構成法(CSG) <doc_csg_tools>` (プロトタイピング用)。"
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "3D空間で経路を表現する Path3D ノード。"
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "ノードを Path3D に追従させるためのノードである PathFollow3D。"
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "3Dジオメトリ用ヘルパークラス。"
 
 #: ../../docs/about/list_of_features.rst:260
 msgid "3D physics"
@@ -661,7 +702,7 @@ msgstr "3D物理"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "乗り物ボディ (シミュレーションではなく、アーケード物理用)。"
 
 #: ../../docs/about/list_of_features.rst:269
 msgid "Soft bodies."
@@ -676,15 +717,19 @@ msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
 msgstr ""
+"ビルトインのシェイプ:立方体・球・カプセル型・円柱（Bullet 物理エンジンに備"
+"わっているもののみ）。"
 
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "エディタから任意のメッシュの形状の三角コリジョンが生成可能。"
 
 #: ../../docs/about/list_of_features.rst:277
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
+"エディタから任意のメッシュの形状の、一つまたは複数の凸型コリジョンが生成可"
+"能。"
 
 #: ../../docs/about/list_of_features.rst:280
 msgid "Shaders"
@@ -692,17 +737,19 @@ msgstr "シェーダー"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "*2D:* 頂点、フラグメント、ライト用のカスタムのシェーダ。"
 
 #: ../../docs/about/list_of_features.rst:283
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
+msgstr "*3D:* 頂点、フラグメント、ライト、天球用のカスタムのシェーダ。"
 
 #: ../../docs/about/list_of_features.rst:284
 msgid ""
 "Text-based shaders using a `shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"`GLSLにインスパイアされたシェーダ言語 <doc_shading_language>`\\ を使うテキス"
+"トベースのシェーダ。"
 
 #: ../../docs/about/list_of_features.rst:285
 msgid "Visual shader editor."
@@ -726,21 +773,23 @@ msgstr "スクリプトがノードを拡張する、オブジェクト指向デ
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "スクリプト間で通信するためのシグナルとグループ。"
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
+":ref:`異なる言語でのスクリプティング <doc_cross_language_scripting>`\\ に対"
+"応。"
 
 #: ../../docs/about/list_of_features.rst:297
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
-msgstr ""
+msgstr "ベクトルやトランスフォームといった、多くの2Dや3Dの線形代数データ型。"
 
 #: ../../docs/about/list_of_features.rst:299
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:301
 msgid ""
@@ -752,33 +801,37 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:303
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Pythonにインスパイアされた構文。"
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "GitHubでのシンタックスハイライトに対応。"
 
 #: ../../docs/about/list_of_features.rst:305
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+":ref:`スレッドの使用 <doc_using_multiple_threads>`\\ で非同期処理を行ったり、"
+"複数のプロセッサコアを利用したりできます。"
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:310
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
+"ファイルサイズと依存関係を抑えるために、異なるバイナリでパッケージ化されてい"
+"ます。"
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Mono 6.x を使用。"
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "C# 7.0の構文と機能を完全サポート。"
 
 #: ../../docs/about/list_of_features.rst:315
 msgid "Supports all platforms."
@@ -787,52 +840,62 @@ msgstr "すべてのプラットフォームをサポート。"
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
-msgstr ""
+msgstr "IDE の機能を利用できるため、外部エディタの使用をおすすめします。"
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
+":ref:`グラフベースのビジュアルスクリプト言語 <doc_what_is_visual_script>`"
+"\\ 。"
 
 #: ../../docs/about/list_of_features.rst:321
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"プロジェクト全体を作成するための言語としてではなく、特定の目的 (レベル固有の"
+"ロジックなど) のために使用する際に最適です。"
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C、C++、Rust、D、...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"必要がある場合、パフォーマンス向上やサードパーティ機能の統合のためのネイティ"
+"ブライブラリをリンクすることができます。"
 
 #: ../../docs/about/list_of_features.rst:328
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"パフォーマンスが十分な場合は、ゲームロジックの記述には GDScript または C# を"
+"使用することをおすすめします。"
 
 #: ../../docs/about/list_of_features.rst:331
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "C言語とC++向けに公式のバインディングがあります。"
 
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "ビルドシステムや言語機能はなんでも使うことができます。"
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
 msgstr ""
+"コミュニティにより保守されているD言語、Kotlin、Nim、Rust のバインディングが提"
+"供されています。"
 
 #: ../../docs/about/list_of_features.rst:338
 msgid "Audio"
@@ -840,30 +903,32 @@ msgstr "オーディオ"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "モノラル、ステレオ、5.1チャンネル、そして7.1チャンネルの出力。"
 
 #: ../../docs/about/list_of_features.rst:343
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "2Dおよび3Dでの非位置的および位置的再生。"
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "2Dと3Dにおけるオプションのドップラー効果。"
 
 #: ../../docs/about/list_of_features.rst:347
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
+"再ルーティング可能な :ref:`オーディオバス <doc_audio_buses>` と数十種類のエ"
+"フェクトをサポートしています。"
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
-msgstr ""
+msgstr "3Dでカメラとは異なる位置からリッスンするListener3Dノード。"
 
 #: ../../docs/about/list_of_features.rst:350
 msgid "Audio input to record microphones."
-msgstr ""
+msgstr "マイクを録音するための音声入力。"
 
 #: ../../docs/about/list_of_features.rst:351
 msgid "MIDI input."
@@ -871,11 +936,11 @@ msgstr "MIDI 入力。"
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "MIDI出力にはまだ対応していません。"
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "**APIs used:**"
-msgstr ""
+msgstr "** 使用API :**"
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "*Windows:* WASAPI."
@@ -883,11 +948,11 @@ msgstr "*Windows:* WASAPI。"
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "*macOS:* CoreAudio。"
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio、または ALSA。"
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
@@ -911,11 +976,11 @@ msgstr "*オーディオ:*"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "オプションの IMA-ADPCM 圧縮を使用した WAV。"
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis。"
 
 #: ../../docs/about/list_of_features.rst:374
 msgid "*3D scenes:*"
@@ -923,7 +988,7 @@ msgstr "*3Dシーン:*"
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(推奨)*。"
 
 #: ../../docs/about/list_of_features.rst:377
 msgid ""
@@ -935,15 +1000,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX(実験的)。"
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada(.dae)。"
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
-msgstr ""
+msgstr "Wavefront OBJ（静的シーンのみ、メッシュとして直接ロード可能）。"
 
 #: ../../docs/about/list_of_features.rst:384
 msgid "Input"
@@ -954,16 +1019,20 @@ msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
 msgstr ""
+"ハードコードされた入力イベントまたは再マップ可能な入力アクションを使用した入"
+"力マッピング・システム。"
 
 #: ../../docs/about/list_of_features.rst:388
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"軸の値は、設定可能なデッドゾーンを使用して 2 つの異なるアクションにマップでき"
+"ます。"
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "キーボードとゲームパッドの両方をサポートするために同じコードを使う。"
 
 #: ../../docs/about/list_of_features.rst:391
 msgid "Keyboard input."
@@ -974,6 +1043,7 @@ msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"キーは、キーボード レイアウトに依存しない \"物理\" モードでマップできます。"
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
@@ -984,20 +1054,24 @@ msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"マウスカーソルは、ウィンドウ内で表示、非表示、キャプチャ、または閉じ込めるこ"
+"とができます。"
 
 #: ../../docs/about/list_of_features.rst:398
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"キャプチャすると、WindowsやLinuxでは未加工の入力値が使用され、OSのマウスアク"
+"セラレーション設定を回避することができます。"
 
 #: ../../docs/about/list_of_features.rst:401
 msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr ""
+msgstr "ゲームパッド入力（最大8台同時使用コントローラ）。"
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "筆圧対応のペン/タブレット入力。"
 
 #: ../../docs/about/list_of_features.rst:405
 msgid "Navigation"
@@ -1005,7 +1079,7 @@ msgstr "ナビゲーション"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "2Dと3DのA*アルゴリズム。"
 
 #: ../../docs/about/list_of_features.rst:408
 msgid "Navigation meshes."
@@ -1013,11 +1087,11 @@ msgstr "ナビゲーションメッシュ。"
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
-msgstr ""
+msgstr "Godot 4.0で予定されている動的障害物回避のサポート。"
 
 #: ../../docs/about/list_of_features.rst:410
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "エディタからナビゲーションメッシュを生成します。"
 
 #: ../../docs/about/list_of_features.rst:413
 msgid "Networking"
@@ -1025,23 +1099,24 @@ msgstr "ネットワーク"
 
 #: ../../docs/about/list_of_features.rst:415
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "StreamPeer と TCP_Server を使用した低レベル TCP ネットワーキング。"
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "PacketPeer と UDPServer を使用した低レベル UDP ネットワーキング。"
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "HTTPClient を使用した低レベルの HTTP リクエスト。"
 
 #: ../../docs/about/list_of_features.rst:418
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "HTTPRequest を使用した高レベルの HTTP 要求。"
 
 #: ../../docs/about/list_of_features.rst:420
 msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr ""
+"バンドルされた証明書を使用して、すぐに使用できるHTTPSをサポートします。"
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "High-level multiplayer API using UDP and ENet."
@@ -1049,15 +1124,15 @@ msgstr "UDP および ENet を使う高レベルのマルチプレイヤーAPI�
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "リモートプロシージャコール（RPC）を使用した自動レプリケーション。"
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "信頼性の低い転送も、信頼性が高く順番が保証された転送もサポートします。"
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "すべてのプラットフォームで利用可能なWebSocketクライアントとサーバー。"
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "WebRTC client and server, available on all platforms."
