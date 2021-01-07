@@ -15,7 +15,7 @@
 # Moustapha Oumar <mito0o.852@gmail.com>, 2020.
 # Musab Alasaifer <mousablasefer@gmail.com>, 2020.
 # Nabeel20 <nabeelandnizam@gmail.com>, 2020.
-# Omar Aglan <omar.aglan91@yahoo.com>, 2018-2019.
+# Omar Aglan <omar.aglan91@yahoo.com>, 2018-2020.
 # Omar Salam <omar-ma-salam@outlook.com>, 2019.
 # osama-su <osamaahmed.sus@gmail.com>, 2020.
 # Rached Noureddine <rached.noureddine@gmail.com>, 2018.
@@ -30,8 +30,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-09-09 11:12+0000\n"
-"Last-Translator: Yassine Oudjana <y.oudjana@protonmail.com>\n"
+"PO-Revision-Date: 2020-11-29 08:28+0000\n"
+"Last-Translator: Omar Aglan <omar.aglan91@yahoo.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -40,11 +40,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
-msgstr "مستندات غودوت - الفرع *3.2*"
+msgstr "مستندات غودوت - النسخة *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -62,10 +62,10 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"هذه هي الوثائق الخاصة بفرع 3.2 المستقر. هل تبحث عن وثائق الفرع الحالي "
+"هذه هي الوثائق الخاصة بالإصدار 3.2 المستقر. هل تبحث عن وثائق الإصدار الحالي "
 "**التطوير** ؟ 'إلقِ نظرة هنا =https://docs.godotengine.org/en/latest>'_. "
-"يمكنك أيضًا تصفح وثائق الفرع السابق المستقر '3.1 2.3.1 &amp; https://docs."
-"godotengine.org/en/3.1>__."
+"يمكنك أيضًا تصفح وثائق الإصدارات السابقة المستقرة '3.1 2.3.1 &amp; https://"
+"docs.godotengine.org/en/3.1>__."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -94,8 +94,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"في الوقت الحاضر ، تتوفر ترجمات مترجمة فقط لفرع \"الآحدث\" (التطوير)، ولكن "
-"يجب أن تكون مناسبة لتعلم كيفية استخدام إصدارات غودو المستقرة مع ذلك."
+"في الوقت الحاضر ، تتوفر ترجمات مترجمة فقط للإصدار \"الآحدث\" (التطوير)، "
+"ولكنها كافية لتعلم كيفية استخدام إصدارات غودو المستقرة مع ذلك."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -116,9 +116,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
-"قائمة المحتويات الموجودة في الأسفل و في العمود الجانبي ينبغي أن تسمح لك "
-"بالدخول السهل لمستند الموضوع الذي يهمك. يمكنك كذلك إستعمال خاصية البحث في "
-"الزاوية أعلى اليسار."
+"قائمة المحتويات الموجودة بالإسفل و في العمود الجانبي ستسمح لك بالوصول السهل "
+"لمستند الموضوع الذي يهمك. يمكنك كذلك إستعمال خاصية البحث في الزاوية أعلى "
+"اليسار."
 
 #: ../../docs/index.rst:41
 msgid ""
@@ -182,14 +182,14 @@ msgstr "المجتمع"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
-msgstr "مرجعية الظلال"
+msgstr "مراجع الفصل"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "عن هذا التطبيق"
+msgstr "حول"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -282,7 +282,7 @@ msgid ""
 msgstr ""
 "مرحبًا بكم في المستند الرسمي لمحرك \"غودو\"، محرك الألعاب ثنائي و ثلاثي "
 "الأبعاد المجاني و المفتوح المصدر من قبل مجتمع المطورين! وراء هذه الكلام "
-"الصعب، ستجد أداة قوية وسهلة الاستخدام لتطوير أي نوع من الألعاب، لأي جهاز و "
+"الكثير، ستجد أداة قوية وسهلة الاستخدام لتطوير أي نوع من الألعاب، لأي جهاز و "
 "منصة وبدون أي قيود على الاستخدام على الإطلاق."
 
 #: ../../docs/about/introduction.rst:16
@@ -296,7 +296,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr "قبل ان تبدا"
+msgstr "قبل ان تبدأ"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -305,8 +305,8 @@ msgid ""
 "those may be worth a look."
 msgstr ""
 "صفحة :ref: `الدروس التعليمية والمصادر <doc_community_tutorials>` تعرض "
-"فيديوهات تعليمية ساهم بها المجتمع. إذا كنت تفضل مشاهدة الفيديو على النصوص، "
-"فإن هذه الصفحة قد تستحق نظرة منك."
+"فيديوهات تعليمية ساهم بها المجتمع. إذا كنت تفضل مشاهدة الفيديو عن قراءة "
+"النصوص، فقم بإلقاء نظرة علي هذة الصفحة."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -314,9 +314,9 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
-"في جال واجهتك اي مشاكل مع احد البرامج التعليمية او مشاريعك، تستطيع الحصول "
-"على المساعدة من مختلف الوسائل الاجتماعية خاصو ديسكورد غودوت و سؤال-جواب و "
-"الدردشة على الإنترنت."
+"في جال واجهتك مشاكل مع الدروس التعليمية او مشاريعك، تستطيع الحصول على "
+"المساعدة من مختلف :ref:` الوسائل الاجتماعية <doc_community_channels>`، خاصة "
+"علي غودوت ديسكورد ، سؤال وجواب أو IRC."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -328,7 +328,7 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"محرك الألعاب أداة معقدة، ومن ثم فإنه من الصعب للغاية تقديم محرك الألعاب غودو "
+"محرك الألعاب أداة معقدة، ولذلك فإنه من الصعب للغاية تعريف محرك الألعاب غودو "
 "في بضع كلمات. إليك على العموم الملخص، والذي يمكنك أن تعيد إستخدامه بُحرية إن "
 "كنت تحتاج إلى كتابة تقرير سريع عن محرك غودو."
 
@@ -341,13 +341,13 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"ان محرك غودو هو محرك ألعاب متعدد المنصات ملئ بمزايا لإنشاء ألعاب ثنائية "
-"وثلاثية الأبعاد من واجهة موحدة. وهو يوفر مجموعة شاملة من الأدوات الشائعة، "
-"بحيث يمكن للمستخدمين التركيز على صنع الألعاب دون الحاجة إلى إعادة أى شئ. "
-"يمكن تصدير الألعاب بنقرة واحدة إلى عدد من المنصات، بما في ذلك المنصات "
-"الرئيسية لسطح المكتب (لينكس و ماك أو إس و مايكروسوفت ويندوز) بالإضافة إلى "
-"الأنظمة المحمولة الأساسية (أندرويد و آي أو إس) والأنظمة الأساسية المعتمدة "
-"علي تقنيات الويب (إتش تي إم إل 5)."
+"محرك غودو هو محرك ألعاب متعدد المنصات ملئ بمزايا لإنشاء ألعاب ثنائية وثلاثية "
+"الأبعاد من واجهة موحدة. وهو يوفر مجموعة شاملة من الأدوات الشائعة، بحيث يمكن "
+"للمستخدمين التركيز على صنع الألعاب دون الحاجة إلى إعادة إختراع أي شئ. يمكن "
+"تصدير الألعاب بنقرة واحدة إلى عدد من المنصات، بما في ذلك المنصات الرئيسية "
+"لسطح المكتب (لينكس و ماك أو إس و مايكروسوفت ويندوز) بالإضافة إلى الأنظمة "
+"المحمولة الأساسية (أندرويد و آي أو إس) والأنظمة الأساسية المعتمدة علي تقنيات "
+"الويب (إتش تي إم إل 5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -372,7 +372,7 @@ msgid ""
 "step_by_step>` tutorial."
 msgstr ""
 "للحصول على نظرة أكثر تفصيلاً علي المحرك، نشجعك على قراءة هذه المستندات بشكل "
-"أكبر، خاصة المرجع: :ref:`خطوة بخطوة <toc-learn-step_by_step>`."
+"أكبر، خاصة الدرس التعليمي: :ref:`خطوة بخطوة <toc-learn-step_by_step>`."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
@@ -401,8 +401,8 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"يمكنك المساهمة في مستندات غودو من خلال فتح تذاكر الأخطاء أو إرسال التصحيحات "
-"عبر طلبات السحب على مستودع المصدر علي `جيت هاب <https://github.com/"
+"يمكنك المساهمة في مستندات غودو من خلال الإبلاغ عن الأخطاء أو إرسال التصحيحات "
+"عبر طلبات السحب على مستودع المصدر علي `جيت هب <https://github.com/"
 "godotengine/godot-docs>`_, أو ترجمتها إلى لغتك على `Hosted Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs/>`_."
 
@@ -419,7 +419,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
-msgstr "تنظيم المستندات"
+msgstr "ترتيب المستندات"
 
 #: ../../docs/about/introduction.rst:79
 msgid ""
@@ -456,7 +456,7 @@ msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"القسم :ref:`sec-tutorials` يمكن قرأته عن الحاجة، في آي ترتيب. وهو يحتوي علي "
+"القسم :ref:`sec-tutorials` يمكن قرأته عند الحاجة، في آي ترتيب. وهو يحتوي علي "
 "الدروس التعليمية الخاصة بخصائص معينة ومستنادتها."
 
 #: ../../docs/about/introduction.rst:93
@@ -477,7 +477,7 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "القسم :ref:`sec-community` يقدم معلومات تتعلق بالمساهمة في تطوير المحرك "
-"وحياة مجتمعه، على سبيل المثال، كيفية الإبلاغ عن الأخطاء والمساعدة في "
+"والمشاركة في مجتمعه، على سبيل المثال، كيفية الإبلاغ عن الأخطاء والمساعدة في "
 "المستندات وما إلى ذلك. ويشير أيضًا إلى قنوات مجتمعية متنوعة مثل IRC وديسكورد "
 "ويحتوي على قائمة من البرامج التعليمية الموصى بها من جهات خارجية خارج هذه "
 "المستندات."
@@ -530,14 +530,14 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"غودو هو `برنامج مجاني مفتوح المصدر <https://en.wikipedia.org/wiki/"
-"Free_and_open-source_software>`_  متوفر تحت `رخصة إم أي تي <https://"
+"غودو هو `برنامج مجاني ومفتوح المصدر <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ متوفر تحت `رخصة إم أي تي <https://"
 "opensource.org/licenses/MIT>`_. هذا يعني أنه حر كما في \"حرية التعبير\" "
 "وكذلك في \"البيرة الحرة.\""
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr "باختصار:"
+msgstr "بإختصار:"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -593,11 +593,11 @@ msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"انظر أيضا `صفحة الترخيص على موقع غودو <https://godotengine.org/license>`_."
+"انظر أيضاً `صفحة الترخيص على موقع غودو <https://godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "أي المنصات مدعومة بواسطة غودو؟"
+msgstr "ما المنصات التي يدعمها غودو؟"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
@@ -629,7 +629,7 @@ msgstr "ماك أو إس"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr "إكس 11 (لينكس، \\ * بيركلي)"
+msgstr "إكس 11 (لينكس \\ * بيركلي)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
@@ -661,7 +661,7 @@ msgstr "الويب"
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr "كلًا من 32 و 64 بت مدعوم حيث يكون ذلك منطقي، مع وجود 64 بت كافتراضي."
+msgstr "كلًا من 32 و 64 بت مدعوم حيثما يكون ذلك متوفر، مع وجود 64 بت كافتراضي."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -669,7 +669,7 @@ msgid ""
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
 "بعض المستخدمين أيضا يخبرون أن تم بناء واستخدام غودو بنجاح على النظم القائمة "
-"على بنية إيه آر إم مع لينكس، مثل رسبري باي."
+"على بنية إيه آر إم (ARM) مع لينكس، مثل رسبري باي."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -678,21 +678,20 @@ msgid ""
 "build scripts or export templates at this time."
 msgstr ""
 "بالإضافة إلى ذلك، هناك بعض الأعمال الغير رسمية من طرف ثالث يجري القيام بها "
-"لبناء لبعض مشغلي ألعاب الفيديو. ومع ذلك، لا يتم تضمين أي من ذلك في البرامج "
-"النصية للبنية الافتراضية أو قوالب التصدير في الوقت الحالي."
+"لبناء لبعض مشغلي ألعاب الفيديو. ومع ذلك، لا يتم تضمين أي من ذلك في الكود "
+"النصي للبنية الافتراضية أو قوالب التصدير في الوقت الحالي."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"لمعرفة المزيد حول هذا الموضوع، راجع الأقسام الموجودة في :المرجع: \"تصدير "
-"<toc-learn-workflow-export>\" و :المرجع: \"تجميع غودوت بنفسك <toc-devel-"
-"compiling>\"."
+"لمعرفة المزيد حول هذا الموضوع، راجع الأقسام الموجودة في :ref: \"التصدير <toc-"
+"learn-workflow-export>\" و :ref: \"بناء غودو بنفسك <toc-devel-compiling>\"."
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr "ما هي لغات البرمجة التي يمكن استعمالها في غودوت ؟"
+msgstr "ما هي لغات البرمجة التي يمكن استعمالها في غودو ؟"
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -700,9 +699,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"اللغات البرمجية المعتمدة رسمياً لمحرك الألعاب غودوت Godot هي GDScript و "
-"Visual Scripting و C# و كذلك  C++. يمكنك الاطلاع على العناوين الجانبية لكل "
-"لغة برمجية في قسم :ref:`scripting <toc-learn-scripting>`"
+"اللغات البرمجية المُعتمدة رسمياً لمحرك الألعاب غودو هي GDScript و Visual "
+"Scripting و C# و كذلك C++. يمكنك الاطلاع على العناوين الجانبية لكل لغة "
+"برمجية في قسم :ref:`البرمجة <toc-learn-scripting>`"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -713,13 +712,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"إن كنت قد شرعت بالعمل في غودوت أو برمجة الألعاب عموماً، فإن لغة GDScript هي "
-"المناسبة بالنسبة لك كونها سهلة التعلم وأصيلة في غودوت.وفي الوقت الذي تميل "
-"فيه لغات البرمجية النصية لأن تكون أقل أداءً من اللغات البرمجية الأخرى على "
-"المدى الطويل سواء أكان لأجل صنع نموذج مبدئي أو تطوير منتج ذو حد أدنى قابل "
-"للتطوير فيما بعد (MVPs)، أو حتى التركيز على الوقت-لبلوغ-السوق (TTM)، إن لغة "
-"البرمجة GDScript ستؤمن حلاً سريعاً وسهل الاستعمال وفي الوقت ذاته قادر على "
-"تطوير اللعبة الخاصة بك."
+"إن كنت قد شرعت بالعمل في غودو أو برمجة الألعاب عموماً، فإننا نفضل تعلم لغة "
+"GDScript كونها سهلة التعلم واللغة الرسمية لمحرك الألعاب غودو. في حين أن لغات "
+"البرمجة العالية المستوي تميل لأن تكون أقل أداءً من اللغات البرمجية المنخفضة "
+"المستوي على المدى الطويل سواء أكان لأجل صنع نموذج مبدئي أو تطوير منتج ذو حد "
+"أدنى قابل للتطوير فيما بعد (MVPs)، أو حتى التركيز على الوقت-لبلوغ-السوق "
+"(TTM)، فإن لغة البرمجة GDScript ستؤمن حلاً سريعاً وسهل الاستعمال وفي الوقت "
+"ذاته قادر على تطوير اللعبة الخاصة بك."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -734,9 +733,9 @@ msgstr ""
 "ضع في الحسبان أن دعم لغة البرمجة C# ما زال حديث العهد، وبالتالي قد تصادف بعض "
 "المشكلات والعقبات في طريق العمل بهذه اللغة، ولكن مجتمعنا اللطيف والدؤوب على "
 "العمل مستعد لمساعدتك في حل مشاكلك حالما تظهر بالنسبة لك، ولكن بما أن المشروع "
-"مفتوح المصدر، نفضل أن تقوم ببعض الأمور بنفسك. ابحث في الكبوات والمشكلات "
-"السابقة في open issues <https://github.com/godotengine/godot/issues>`_ وهي "
-"أسرع طريقة لحل المشكلات والعقبات التي تواجهك."
+"مفتوح المصدر، نفضل أن تقوم ببعض الأمور بنفسك. البحث في المناقشات والمشكلات "
+"السابقة في open issues <https://github.com/godotengine/godot/issues>`_ هي "
+"أفضل طريقة لحل المشكلات والعقبات التي تواجهك."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -746,16 +745,16 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"كما هو الحال من أجل اللغات الجديدة، فإن الدعم متوافر من خلال برمجيات الطرف "
-"الثالث كاستخدام  GDNative / NativeScript / PluginScript وخدماتها. (من الجيد "
-"الاطلاع على السؤال أدناه عن الإضافات). جارٍ العمل حالياً، فعلى سبيل المثال "
-"يدعم محرك الألعاب غدوت بصورة غير رسمية لغة البرمجة بايثون `Python <https://"
-"github.com/touilleMan/godot-python>` ، وكذلك لغم البرمجة نيم  `Nim <https://"
-"github.com/pragmagic/godot-nim>`_."
+"بالنسبة للغات البرمجة الجديدة، فإن الدعم متوافر من خلال برمجيات الطرف الثالث "
+"كاستخدام GDNative / NativeScript / PluginScript وخدماتها. (اطلع على السؤال "
+"عن الإضافات بالإسفل). جارٍ العمل حالياً، على سبيل المثال، يدعم محرك الألعاب "
+"غدوت بصورة غير رسمية لغة البرمجة `بايثون <https://github.com/touilleMan/"
+"godot-python>`، وكذلك لغة البرمجة `نيم <https://github.com/pragmagic/godot-"
+"nim>`_."
 
 #: ../../docs/about/faq.rst:93
 msgid "What is GDScript and why should I use it?"
-msgstr "ما هي GDScript ولماذا استعملها ؟"
+msgstr "ما هو GDScript ولماذا يجب أن أستعمله ؟"
 
 #: ../../docs/about/faq.rst:95
 msgid ""
@@ -767,13 +766,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
-"لغة البرمجة النصية GDScript هي لغة المحرك الأصيلة. لقد تم بناء هذه اللغة "
-"خصيصاً ومن الصغر للمحرك لاستحصال الطاقة العظمى والإمكانيات والقدرات الكامنة "
-"في هذا المحرك وبأقل أسطر برمجية، بطريقة تستوعب المطورين الجدد وكذلك أولئك "
-"المحترفين بحيث يستفيدون من نقاط القوة الخاصة ب غودوت. إن سبق لك كتابة أي شيء "
-"بلغة برمجية مثل باثيون Python من قبل فإنك ستشعر وكأنما أنت في المنزل. "
-"للاطلاع على الأمثلة، تاريخ اللغة والنظرة الشاملة عن إمكانيات وما تقدمه هذه "
-"اللغة يمكنك الاطلاع على:ref:`GDScript scripting guide <doc_gdscript>`."
+"GDScript هي لغة المحرك غودو المُدمجة. لقد تم بناء هذه اللغة من الصفر لاستحصال "
+"الإمكانيات القصوي للمحرك بأقل أسطر برمجية ممكنة، لتمكين المطورين الجدد وكذلك "
+"أولئك المحترفين من الإستفادة من نقاط القوة الخاصة بغودو بإسرع شكل ممكن. إن "
+"سبق لك كتابة أي شيء بلغة برمجية مثل بايثون من قبل فإنك ستشعر وكأنك في "
+"المنزل. للاطلاع على الأمثلة، تاريخ اللغة والنظرة الشاملة عن الإمكانيات وما "
+"تقدمه هذه اللغة يمكنك الاطلاع على:ref:`دليل البرمجة ب GDScript "
+"<doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:102
 msgid ""
@@ -782,10 +781,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"هنالك العديد من الأسباب تدفعك لاستخدام اللغة البرمجية GDScript خصوصاً عندما "
-"تعمل على نماذج بدئية في المراحل ألفا/بيتا من مشروعك، أو إن كنت تعمل على "
-"عنوان AAA  التالي ولكن في آخر المطاف يبقى السبب الأهم والأسمى هو ** السهولة "
-"والبُعد عن التعقيد**."
+"هنالك العديد من الأسباب تدفعك لاستخدام اللغة البرمجية GDScript، خصوصاً عندما "
+"تعمل على نماذج بدائية، كما في المرحلة ألفا/بيتا من مشروعك، أو إن لم تكن تعمل "
+"على اللعبة الكبيرة التالية، ولكن في نهاية المطاف يبقى السبب الأهم والأسمى هو "
+"** السهولة والبُعد عن التعقيد**."
 
 #: ../../docs/about/faq.rst:106
 msgid ""
@@ -799,14 +798,13 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
-"النية الخالصة في خلق لغة برمجية متضافرة بشكل كبيرة ومخصوصة لمحرك الألعاب "
-"غودوت كانت لسببين: الأول؛ هذه الطريقة تقلل الوقت اللازم للشروع وتشغيل محرك "
-"الألعاب، وبالتالي تعطي الحرية الكامنة والسريعة للمطورين لكي يكشفوا أنفسهم "
-"على المحرك بطريقة تسمح بالتركيز على الفعالية والإنتاج. الثاني؛ تقلل من العبء "
-"الإجمالي لصيانة المحرك، وكذلك من أبعاد المشكلات المحتملة وفي الوقت ذاته تتيح "
-"لمطوري المحرك التركيز على إصلاح الكبوت البرمجية وتطوير الميزات الخاصة بلبّ "
-"المحرك، بدلاً من تضييع وقت كبير في محاولة توفير ميزات تدريجياً لمجموعة كبيرة "
-"من اللغات البرمجية."
+"النية الخالصة في خلق لغة برمجية متضافرة بشكل كبير ومخصصة لمحرك الألعاب غودو "
+"كانت لسببين: الأول؛ تقليل الوقت اللازم للشروع وتشغيل محرك الألعاب، وبالتالي "
+"إعطاء المطورين السرعة الكافية لكي يكتشفوا المحرك بأنفسهم بطريقة تسمح "
+"بالتركيز على الفعالية والإنتاج. الثاني؛ تقليل العبء الإجمالي لصيانة المحرك، "
+"مخففاً أبعاد المشكلات المحتملة، وفي الوقت ذاته تتيح للمطوريين التركيز على "
+"إصلاح الأخطاء البرمجية وتطوير الميزات الخاصة بلبّ المحرك، بدلاً من تضييع وقت "
+"كبير في محاولة توفير الميزات تدريجياً لمجموعة كبيرة من اللغات البرمجية."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
@@ -820,13 +818,13 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"بما أن غودوت هو مشروع مفتوح المصدر، كان من الأولوية والضرورات تأمين تجربة "
+"بما أن غودو هو مشروع مفتوح المصدر، كان من الأولوية والضرورات تأمين تجربة "
 "استخدام شاملة وسلسلة قبل التركيز على جذب مزيد من المستخدمين عن طريق دعم لغات "
-"برمجية أخرى، خصوصاً عندما كان تأمين هذا الدعم سيؤمن تجربة استخدام أسوء. إننا "
-"نستوعب إن كنت ترغب في استخدام لغة برمجية أخرى في غودوت (اطلع على اللغات "
-"المدعومة أعلاه). وخلاصة القول، إن لم تعط GDScript فرصة، جربها ل **ثلاثة "
-"أيام**. كما هو المحرك بذاته، مجرد أن ترى كم هي فعالية وسرعة هذه اللغة، نحن "
-"نعتقد بأنك ستتعلق بها."
+"برمجية أخرى، خصوصاً عندما كان تأمين هذا الدعم سيؤمن تجربة استخدام أسوء. نحن "
+"نتفهم رغبتك في إستخدام لغة برمجية أخرى في غودو (اطلع على اللغات المدعومة "
+"أعلاه). وخلاصة القول، إن لم تعط GDScript فرصة، جربها ل **ثلاثة أيام**. كما "
+"هو المحرك بذاته، بمجرد أن ترى كم هي فعالية وسرعة هذه اللغة، نحن نعتقد بأنك "
+"ستتعلق بها."
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -834,13 +832,13 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
-"للمزيد من المعلومات لكي تصبح أكثر ارتياحاً مع اللغة النصية GDScript أو غيرها "
-"من اللغات البرمجية المطاوعة \"dynamically typed languages\" يمكنك مراجعة "
-"التعليمات ؛ :ref:`doc_gdscript_more_efficiently`."
+"للمزيد من المعلومات لكي تصبح أكثر ارتياحاً مع اللغة البرمجية GDScript أو "
+"غيرها من اللغات البرمجية الفعالة يمكنك مراجعة الدرس التعليمي :ref:"
+"`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
-msgstr "ماهي الأسباب التي أدت الى إنشاء لغة GDScript ؟"
+msgstr "ماهي الدوافع التي أدت الى إنشاء لغة GDScript ؟"
 
 #: ../../docs/about/faq.rst:129
 msgid ""
@@ -850,10 +848,10 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"في الأيام الأولى ، استخدم المحرك `لغة البرمجة <https://www.lua.org>` __. Lua "
-"سريع ، ولكن إنشاء روابط لنظام كائني التوجه (باستخدام الاحتياطات) كان معقدًا "
-"وبطيئًا واستغرق كمية هائلة من التعليمات البرمجية. بعد بعض التجارب على "
-"\"Python <https://www.python.org>` __ ، ثبت أنه من الصعب تضمينه."
+"في الأيام الأولى، استخدم المحرك لغة البرمجة `لوا <https://www.lua.org>`__. "
+"لغة البرمجة لوا سريعة، ولكن إنشاء روابط لنظام كائني التوجه (باستخدام "
+"الاحتياطات) كان معقدًا وبطيئًا وتطلب كمية هائلة من الأكواد البرمجية. بعد بعض "
+"التجارب على `بايثون <https://www.python.org>` __ ، ثبت أنه من الصعب تضمينه."
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -861,22 +859,22 @@ msgid ""
 msgstr "الأسباب الرئيسية التي أدت إلى إنشاء لغة برمجة مخصصة هي:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"دعم ضعيف للسردة Thread في معظم لغات البرمجة النصية ل VMs، وغودوت يستخدم "
-"السردات Threads (كما في لغات البرمجة Lua، Python، JS ، AS إلخ)."
+"الدعم الضعيف للخيوط الحاسوبية (Threads) في معظم لغات البرمجة النصية لنظم "
+"الذاكرة الافتراضية المفتوحة (VMs)، في حين أن غودو يستخدم الخيوط الحاسوبية "
+"(كما في لغات البرمجة لوا، بايثون، جافا سكريبت، Squirrel،أكشن سكربت، إلخ.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"دعم ضعيف للتوسع الصفي class-extending في النص البرمجي لنصوص VMs، والتأقلم مع "
-"الطريقة التي يعمل بها غودوت وسيلة غير فعالة (Lua, Python, JS)."
+"الدعم الضعيف للتوسع الصفي (class-extending) في الكود البرمجي للغات نظام "
+"الذاكرة الافتراضية المفتوح (VMs)، والتأقلم مع الطريقة التي يعمل بها غودو "
+"وسيلة غير فعالة (لوا، بايثون، جافا سكربت)."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
@@ -885,39 +883,36 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"العديد من اللغات البرمجية الحالية (Lua ,Python, Squirrel, إلخ) لديها واجهات "
-"سيّئة للرّبط بC++, ممّا يؤدّي إلى كمية كبيرة من الأسطر البرمجية والكبوات "
-"والاختناقات في الأداء, وكذلك نقص الفعالية بشكل عام. لذا أردنا التركيز على "
-"محرّك ممتاز, وليس عدد كبير من الإضافات والمُداخلات."
+"العديد من اللغات البرمجية الحالية (لوا ، بايثون، Squirrel، إلخ) لديها واجهات "
+"سيّئة للرّبط ب C++، ممّا يؤدّي إلى كمية كبيرة من الأسطر البرمجية، الأخطاء، "
+"الاختناقات، ونقص الفعالية بشكل عام. لذا قمنا بالتركيز علي إنشاء مُحرّك ممتاز، "
+"وليس عدد كبير من الإضافات والتضمينات."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"لا دعم لأنواع المُتجهات Vector (مثل vector3، matrix4، إلخ..)، الأمر الذي يسبب "
-"أداء أقل بكثير عند استخدام الأنواع الأخرى (كما في لغات البرمجة: Lua، Python، "
-"Squirrel، JS، AS إلخ)."
+"لايوجد دعم محلي لأنواع المُتجهات (مثل vector3، matrix4، إلخ..)، الأمر الذي "
+"يسبب أداء أقل بكثير عند استخدام الأنواع المخصصة (لوا، بايثون، Squirrel، جافا "
+"سكربت، أكشن سكربت، إلخ)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"جامع الموارد غير المستخدمة (جامع النفايات Garbage collector) يستهلك كميات "
-"كبيرة من الذاكرة (كما في لغات البرمجة Lua، Python، JS، AS..)."
+"جامع النفايات (Garbage collector) يسبب التوقف أو يستهلك كميات كبيرة من "
+"الذاكرة العشوائية ( لوا، بايثون، جافا سكربت، أكشن سكربت، إلخ)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"صعوبة التضفير مع محرر النصوص البرمجية لتأمين التتمة التلقائية، أو التحرير "
-"اللخظي، إلخ.. وهذا مدعوم بشكل جيد بواسطة لغة البرمجة GDScript."
+"صعوبة الدمج مع محرر النصوص البرمجية لتأمين التتمة التلقائية، أو التحرير "
+"اللحظي، إلخ.. هذه الخصائص مدعومة بشكل جيد بواسطة لغة البرمجة GDScript."
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -926,7 +921,7 @@ msgstr "تم تصميم GDScript من أجل التخلص من المشاكل ا
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
-msgstr "ماهي أنواع ملفات 3D Models المدعومة من طرف Godot ؟"
+msgstr "ماهي أنواع الملفات 3D التي يدعمها غودو؟"
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -3860,9 +3855,9 @@ msgid ""
 "project name and an empty folder will be created with that name for the "
 "project."
 msgstr ""
-"عندما ترى إشارة صح خضراء صغيرة على اليمين، هذا يدل أن المحرك قد اكتشف مجلداً "
-"فارغاً. يمكنك كذلك الضغط على زر ``أضف مجلد``  إلى جانب اسم المشروع الخاص بك "
-"ومن ثم فإن مجلداً فارغاً سينشأ باسم المشروع الخاص بك."
+"عندما ترى علامة صحيح خضراء صغيرة على اليمين، هذا يدل أن المحرك قد اكتشف "
+"مجلداً فارغاً. يمكنك كذلك الضغط على زر ``أضف مجلد`` إلى جانب اسم المشروع الخاص "
+"بك ومن ثم فإن مجلداً فارغاً سينشأ باسم المشروع الخاص بك."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:57
 msgid ""
@@ -3873,11 +3868,11 @@ msgid ""
 "you change your mind later on. For this tutorial either backend is fine."
 msgstr ""
 "في النهاية، يمكنك اختيار المحرك البصري الذي ترغب باختياره (OpenGL ES 3.0 أو "
-"OpenGL ES 2.0) وإن المحاسن والمساوئ المتعلقة بكل منهما مذكورة لتساعدك على "
-"الاختيار، ويمكنك الاطلاع على :ref:`doc_gles2_gles3_differences`  للمزيد من "
-"التفاصيل. ضع في الحسبان إنه بمقدورك تغيير برمجيات الكواليس Backend والخيارات "
-"الخاصة عن طريق إعدادات المشروع إن ما رغبت بتغيير رأيك في وقت لاحق. ومن أجل "
-"هذا المشروع كلا الخيارين جيدين."
+"OpenGL ES 2.0) كل من المحاسن والمساوئ المتعلقة بكل منهما مذكورة لتساعدك على "
+"الاختيار، ويمكنك الاطلاع على :ref:`doc_gles2_gles3_differences` للمزيد من "
+"التفاصيل. ضع في الحسبان إنه بمقدورك تغيير المحرك البصري من خلال إعدادات "
+"المشروع إذا قمت بتغيير رأيك في وقت لاحق. لهذا الدرس التعليمي كلا الخيارين "
+"يفي بالغرض."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -4001,9 +3996,9 @@ msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"في **فُسحة العمل ثلاثية الأبعاد** يمكنك العمل على السطوح والمجسمات، والإنارة "
+"في **مساحة العمل ثلاثية الأبعاد** يمكنك العمل على السطوح والمجسمات، والإنارة "
 "وتصميم المراحل للألعاب ثلاثية الأبعاد. اضغط على :kbd:`F2` (أو  :kbd:`Alt + "
-"2` لنظام تشغيل ماك) للحصول عليها."
+"2` لنظام تشغيل ماك) لتفعيله."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
@@ -4360,9 +4355,9 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
-"بداية، المشهد سيتنقل إلى المحرر ثنائي الأبعاد (لأننوع عُقدة اللصاقة التعريفية "
-"هو عقدة ثنائية البُعد)، ولصاقة تعريفية Label  ستظهر، وستكون مختارة، وفي "
-"الزاوية العلوية اليُسرى من مساحة الرؤية Viewport."
+"كبداية، المشهد سيتنقل إلى المحرر ثنائي الأبعاد (لأن نوع عُقدة اللصاقة "
+"التعريفية هو عقدة ثنائية البُعد)، ولصاقة تعريفية Label ستظهر، وستكون مختارة، "
+"وفي الزاوية العلوية اليُسرى من مساحة الرؤية Viewport."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:133
 msgid ""
@@ -7672,11 +7667,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
@@ -50324,15 +50319,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -55368,7 +55363,6 @@ msgid "Filipino"
 msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:286
-#, fuzzy
 msgid "fil_PH"
 msgstr "fil_PH"
 
@@ -76993,7 +76987,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -77078,7 +77072,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -82634,7 +82628,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""

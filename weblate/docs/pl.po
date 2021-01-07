@@ -25,15 +25,19 @@
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
 # Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
 # Jakub Maćkowiak <jakumac927@student.polsl.pl>, 2020.
+# Jarek Karpiel <jarek.karpiel@gmail.com>, 2020.
 # Katarzyna Twardowska <katarina.twardowska@gmail.com>, 2020.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # Kolunio <kolunio15wie@gmail.com>, 2020.
 # Letero <jkurzynski93@gmail.com>, 2020.
 # luluu9 <maxmax89_89@o2.pl>, 2018.
+# Maciej Cywiński <cyvvilek@gmail.com>, 2020.
 # Maciej Krzyżanowski <krzmaciek@gmail.com>, 2020.
 # Maciej <WriteToFeniks@gmail.com>, 2019-2020.
+# Mateusz Grzonka <alpinus4@gmail.com>, 2020.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019-2020.
+# Mikołaj Lubiak <lubiakmikolaj@gmail.com>, 2020.
 # Mr Cubica123 <mcmr.slendy@gmail.com>, 2020.
 # Myver <igormakarowicz@gmail.com>, 2019.
 # Patryk Majos <psychobutterpl@gmail.com>, 2019.
@@ -64,8 +68,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-09-20 19:55+0000\n"
-"Last-Translator: Piotr Grodzki <ziemniakglados@gmail.com>\n"
+"PO-Revision-Date: 2020-12-07 08:10+0000\n"
+"Last-Translator: Roman Skiba <romanskiba0@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -74,7 +78,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1066,7 +1070,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Dlaczego Godot używa Vulkan API lub OpenGL zamiast Direct3D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1076,6 +1080,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Godot dąży przede wszystkim do niezależności od platformy oraz do wspierania "
+"otwartych standardów. OpenGL i Vulkan są technologiami zarówno otwartymi jak "
+"i dostępnymi (niemalże) na wszystkich platformach. Dzięki tej decyzji "
+"projektowej, projekt rozwijany w Godot na Windowsie będzie działał od ręki "
+"na Linuksie, macOS i innych systemach."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -1084,6 +1093,11 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Ponieważ nad silnikiem renderującym Godota pracuje tylko kilka osób, zależy "
+"nam na jak najmniejszej ilości backend-ów renderujących do utrzymania. "
+"Ponadto, używanie pojedynczego API na wszystkich platformach pozwala na "
+"większą spójność z mniejszą ilością problemów specyficznych dla "
+"poszczególnych platform."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -1091,6 +1105,10 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Na dłuższą metę, możliwe, że będziemy pracować nad silnikiem renderującym "
+"Direct3D 12 dla Godota (głównie na potrzeby Xbox'a) lecz Vulkan i OpenGL "
+"pozostaną domyślnymi backend-ami renderującymi na wszystkich platformach (w "
+"tym także dla Windows)."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1237,16 +1255,16 @@ msgstr ""
 "się z Godotem."
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "Kiedy będzie wydana następna wersja?"
+msgstr "Kiedy zostanie wydana następna wersja Godota?"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
-msgstr ":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>`"
+msgstr ""
+"Kiedy będzie gotowa! Przeczytaj  :ref:"
+"`doc_release_policy_when_is_next_release_out` by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
@@ -1577,19 +1595,23 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Rozwiązywanie problemów"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Ta strona zawiera listę typowych problemów napotkanych podczas korzystania z "
+"Godota oraz ich możliwych rozwiązań."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Wszystko, co robię w edytorze lub menadżerze projektu, wydaje się być "
+"opóźnione o jedną klatkę."
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -1597,6 +1619,10 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"To jest ` znany błąd <https://github.com/godotengine/godot/issues/23069> `__ "
+"w sterownikach grafiki Intel w systemie Windows. Aktualizacja do najnowszej "
+"wersji sterownika karty graficznej * dostarczonej przez firmę Intel * "
+"powinna rozwiązać problem."
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -1604,18 +1630,26 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Powinieneś używać sterownikó graficznych dostarczonych przez firmę Intel, a "
+"nie tegych dostarczonych przez producenta komputera stacjonarnego lub "
+"laptopa, ponieważ ich wersja jest często nieaktualna."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"Kiedy obracam kamerę 3D w edytorze, siatka koordynująca znika, a siatka "
+"obiektu 3D staje się czarna."
 
 #: ../../docs/about/troubleshooting.rst:22
+#, fuzzy
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"To jest `` znany błąd <https://github.com/godotengine/godot/issues/30330> "
+"`__ w sterownikach grafiki Intel w systemie Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -1623,18 +1657,25 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"Na razie jedynym obejściem jest przejście na renderer GLES2. Możesz "
+"przełączyć renderer w prawym górnym rogu edytora lub w ustawieniach projektu."
 
 #: ../../docs/about/troubleshooting.rst:28
+#, fuzzy
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Jeśli używasz komputera umożliwiającego zmianę karty graficznej, takiego jak "
+"NVIDIA Optimus, możesz użyć dedykowanej karty graficznej do uruchomienia "
+"Godota."
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "Uruchomienie edytora lub projektu zajmuje bardzo dużo czasu."
 
 #: ../../docs/about/troubleshooting.rst:34
+#, fuzzy
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -1643,12 +1684,20 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Jest to `` znany błąd <https://github.com/godotengine/godot/issues/20566> "
+"`__ w systemie Windows, gdy masz podłączone określone urządzenia peryferyjne "
+"USB. W szczególności oprogramowanie Corsair iCUE wydaje się powodować błąd. "
+"Spróbuj zaktualizować sterowniki urządzeń peryferyjnych USB do ich "
+"najnowszej wersji. Jeśli błąd będzie się powtarzał, musisz odłączyć wadliwe "
+"urządzenia peryferyjne przed otwarciem edytora. Następnie możesz ponownie "
+"podłączyć urządzenie peryferyjne."
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "Po kliknięciu konsoli systemowej edytor Godot ulega zamrożeniu."
 
 #: ../../docs/about/troubleshooting.rst:44
+#, fuzzy
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -1656,34 +1705,53 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"W przypadku uruchamiania Godota w systemie Windows z włączoną konsolą "
+"systemową można przypadkowo włączyć * tryb wyboru *, klikając w oknie "
+"poleceń. To zachowanie specyficzne dla systemu Windows wstrzymuje aplikację, "
+"aby umożliwić zaznaczenie tekstu w konsoli systemowej. Godot nie może "
+"zastąpić tego zachowania specyficznego dla systemu."
 
 #: ../../docs/about/troubleshooting.rst:49
+#, fuzzy
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Aby rozwiązać ten problem, wybierz okno konsoli systemowej i naciśnij "
+"klawisz Enter, aby opuścić tryb wyboru."
 
 #: ../../docs/about/troubleshooting.rst:53
+#, fuzzy
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "W przeciwieństwie do edytora okno projektu jest niewyraźne."
 
 #: ../../docs/about/troubleshooting.rst:55
+#, fuzzy
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"W przeciwieństwie do edytora projekt nie jest domyślnie oznaczony jako "
+"obsługujący DPI. Ma to na celu poprawę wydajności, szczególnie w przypadku "
+"zintegrowanej grafiki, gdzie renderowanie scen 3D w trybie hiDPI jest "
+"powolne."
 
 #: ../../docs/about/troubleshooting.rst:59
+#, fuzzy
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Aby rozwiązać ten problem, otwórz ** Projekt> Ustawienia projektu ** i włącz "
+"** Wyświetlacz> Okno> Dpi> Zezwalaj na Hidpi **. Ponadto upewnij się, że "
+"Twój projekt jest skonfigurowany do obsługi: ref: `wiele rozdzielczości "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "Okno projektu nie pojawia się na środku kiedy uruchamiam projekt."
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -7542,7 +7610,7 @@ msgstr ""
 "\"(koniec gry) i przycisk restartu. Utwórz nową scenę i dodaj węzeł :ref:"
 "`CanvasLayer <class_CanvasLayer>` o nazwie ``HUD``. \"HUD\" oznacza \"Heads-"
 "up display\" - wyświetlacz informacyjny, który pojawia się jako nakładka na "
-"widoku gry i informuje o np. liczbie punktów, punktów życia."
+"widoku gry."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:953
 msgid ""
@@ -16401,7 +16469,6 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
-#, fuzzy
 msgid "FileSystem Dock"
 msgstr "System plików"
 
@@ -17935,8 +18002,8 @@ msgid ""
 "Initializes a variable once the Node the script is attached to and its "
 "children are part of the scene tree."
 msgstr ""
-"Inicjalizuje zmienną, do węzła do którego dołączony jest skrypt, a jego "
-"dzieci są częścią drzewa sceny."
+"Inicjalizuje zmienną wtedy, gdy Węzeł do którego dołączony jest skrypt oraz "
+"jego dzieci są częścią drzewa sceny."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid "export"
@@ -26003,7 +26070,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:69
 msgid "Files generated"
-msgstr "Generowane wygenerowane"
+msgstr "Wygenerowane pliki"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:71
 msgid ""
@@ -35801,9 +35868,8 @@ msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
-"Tworzenie własnego sterowania dla UI. Dostępnych jest wiele elementów "
-"sterujących, ale łatwo można natknąć się na potrzebę stworzenia nowego, "
-"niestandardowego."
+"Tworzenie własnej kontrolki UI. Dostępnych jest wiele kontrolek, ale łatwo "
+"można natknąć się na potrzebę stworzenia nowej, niestandardowej."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
 msgid "OK, how?"

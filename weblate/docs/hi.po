@@ -5,8 +5,9 @@
 # abhishek mohite <abhishekmohite421@gmail.com>, 2020.
 # Harsh Agarwal <ultramarinebicycle@gmail.com>, 2020.
 # Krishnendu Mondal <krishnendu.bhilai@gmail.com>, 2020.
+# l4KKY <greenforcesave@gmail.com>, 2020.
 # Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>, 2019.
-# Shirious <sad3119823@gmail.com>, 2020.
+# Shirious <sad3119823@gmail.com>, 2020-2021.
 # Suryansh5545 <suryanshpathak5545@gmail.com>, 2020.
 # Vikram1323 <vikram1323@gmail.com>, 2018.
 #
@@ -15,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-08-28 13:09+0000\n"
-"Last-Translator: Krishnendu Mondal <krishnendu.bhilai@gmail.com>\n"
+"PO-Revision-Date: 2021-01-07 02:53+0000\n"
+"Last-Translator: Shirious <sad3119823@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/hi/>\n"
 "Language: hi\n"
@@ -24,7 +25,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.4.1-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -977,7 +978,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "गॉडट Direct3D के बजाय वल्कन या ओपनजीएल का उपयोग क्यों करता है?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -987,6 +988,10 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"गोडॉट का उद्देश्य क्रॉस-प्लेटफॉर्म अनुकूलता और खुले मानकों के लिए सबसे पहले और सबसे महत्वपूर्ण "
+"है। ओपनजीएल और वल्कन ऐसी तकनीकें हैं जो सभी प्लेटफार्मों पर खुले और उपलब्ध (लगभग) दोनों हैं। "
+"इस डिजाइन निर्णय के लिए धन्यवाद, विंडोज पर गोडॉट के साथ विकसित एक परियोजना लिनक्स, "
+"मैकओएस और बहुत कुछ पर बॉक्स से बाहर चलेगी।"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -995,6 +1000,9 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"चूंकि गोडॉट में केवल कुछ लोग ही इसके रेंडररर पर काम कर रहे हैं, इसलिए हम बनाए रखने के लिए "
+"कम प्रतिपादन बैकएंड करना पसंद करेंगे। इसके शीर्ष पर, सभी प्लेटफार्मों पर एक ही एपीआई का "
+"उपयोग करके कम प्लेटफ़ॉर्म-विशिष्ट मुद्दों के साथ अधिक स्थिरता की अनुमति देता है।"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -1002,6 +1010,9 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"लंबी अवधि में, हम गोडॉट (मुख्य रूप से एक्सबॉक्स के उद्देश्यों के लिए) के लिए एक डायरेक्ट3डी 12 "
+"रेंडरर विकसित कर सकते हैं, लेकिन वल्कन और ओपनजीएल विंडोज सहित सभी प्लेटफार्मों पर डिफ़ॉल्ट "
+"प्रतिपादन बैकएंड रहेंगे।"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1144,7 +1155,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:265
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "When is the next release of Godot out?"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
@@ -1296,6 +1307,9 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"यदि आप एक प्रतिपादन(rendering) library का उपयोग करना चाहते हैं, तो इसके बजाय एक "
+"स्थापित प्रतिपादन इंजन का उपयोग करके देखें। ध्यान रखें प्रतिपादन इंजन आमतौर पर गोडॉट की "
+"तुलना में छोटे समुदाय होते हैं। इससे आपके सवालों के जवाब ढूंढना और मुश्किल हो जाएगा।"
 
 #: ../../docs/about/faq.rst:330
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -1462,19 +1476,21 @@ msgstr "' Godot वेबसाइट <https://godotengine.org/contact>'_पर 
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "समस्या निवारण"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"यह पृष्ठ गोडॉट और संभावित समाधानों का उपयोग करते समय सामने आई सामान्य समस्याओं को "
+"सूचीबद्ध करता है।"
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
-msgstr ""
+msgstr "सब कुछ मैं संपादक या परियोजना प्रबंधक में क्या एक फ्रेम से देरी प्रतीत होता है ।"
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -1482,6 +1498,9 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"यह विंडोज पर इंटेल ग्राफिक्स ड्राइवरों पर एक ' ज्ञात बग <https://github.com/"
+"godotengine/godot/issues/23069> '__ है । इंटेल द्वारा प्रदान किए गए नवीनतम "
+"ग्राफिक्स ड्राइवर संस्करण * को अपडेट करना समस्या को ठीक करना चाहिए।"
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -1489,12 +1508,16 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"आपको अपने डेस्कटॉप या लैपटॉप के निर्माता द्वारा प्रदान किए गए ग्राफिक्स ड्राइवर का "
+"उपयोग करना चाहिए क्योंकि उनका संस्करण अक्सर पुराना होता है।"
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"जब मैं संपादक में 3डी कैमरा घुमाता हूं तो ग्रिड गायब हो जाता है और meshes काला हो जाता "
+"है।"
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
@@ -1508,12 +1531,17 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"केवल समाधान, अभी के लिए, GLES2 रेंडरर पर स्विच करना है। आप रेंडरर को एडिटर या प्रोजेक्ट "
+"सेटिंग्स के टॉप-राइट कॉर्नर में स्विच कर सकते हैं।"
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"यदि आप एक कंप्यूटर का उपयोग करते हैं जो आपको अपने ग्राफिक्स कार्ड को स्विच करने की अनुमति "
+"देता है, जैसे एनवीडिया ऑप्टिमस, आप गोडॉट चलाने के लिए समर्पित ग्राफिक्स कार्ड का उपयोग "
+"कर सकते हैं।"
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
@@ -1528,10 +1556,16 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"यह विंडोज पर एक ' ज्ञात बग <https://github.com/godotengine/godot/"
+"issues/20566>'__ है जब आप विशिष्ट यूएसबी परिधीय जुड़े हैं । विशेष रूप से, कोर्सेयर का "
+"आईसीयू सॉफ्टवेयर बग का कारण लगता है। अपने यूएसबी पेरिफेरल्स के ड्राइवरों को उनके नवीनतम "
+"संस्करण में अपडेट करने का प्रयास करें। यदि बग बनी रहती है, तो आपको संपादक खोलने से पहले "
+"दोषपूर्ण परिधीय को डिस्कनेक्ट करने की आवश्यकता है। इसके बाद आप पेरिफेरल को फिर से कनेक्ट "
+"कर सकते हैं।"
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
-msgstr ""
+msgstr "गोडॉट एडिटर सिस्टम कंसोल पर क्लिक करने के बाद जमे (frozen) हुए दिखाई देता है।"
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -1541,16 +1575,21 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"सिस्टम कंसोल सक्षम के साथ विंडोज पर गोडॉट चलाते समय, आप गलती से कमांड विंडो के अंदर "
+"क्लिक करके * चयन मोड * को सक्षम कर सकते हैं। यह विंडोज-विशिष्ट व्यवहार आपको सिस्टम "
+"कंसोल के अंदर टेक्स्ट का चयन करने के लिए एप्लिकेशन को रोकता है। गोडॉट इस सिस्टम-विशिष्ट "
+"व्यवहार को ओवरराइड नहीं कर सकता है।"
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"इसे हल करने के लिए, सिस्टम कंसोल विंडो का चयन करें और चयन मोड छोड़ने के लिए एंटर दबाएं।"
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "परियोजना window संपादक के विपरीत, धुंधला दिखाई देती है।"
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -1558,6 +1597,9 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"संपादक के विपरीत, परियोजना को डिफ़ॉल्ट रूप से डीपीआई-जागरूक के रूप में चिह्नित नहीं किया "
+"गया है। यह प्रदर्शन को बेहतर बनाने के लिए किया जाता है, विशेष रूप से एकीकृत ग्राफिक्स पर, "
+"जहां hiDPI में 3डी दृश्यों को प्रस्तुत करना धीमा है।"
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -1568,7 +1610,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "परियोजना खिड़की केंद्रित नहीं दिखाई देती है जब मैं परियोजना चलाता हूं।"
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -1583,6 +1625,8 @@ msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"परियोजना संपादक से चलने पर काम करती है, लेकिन निर्यात की गई प्रतिलिपि से चलने पर कुछ "
+"फ़ाइलों को लोड करने में विफल रहती है।"
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -1593,6 +1637,12 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"यह आमतौर पर निर्यात संवाद में गैर संसाधन फ़ाइलों के लिए एक फिल्टर निर्दिष्ट करने के लिए भूल "
+"के कारण होता है । डिफ़ॉल्ट रूप से, गोडॉट केवल पीसीके फ़ाइल में वास्तविक * संसाधन * शामिल "
+"होगा। आमतौर पर उपयोग की जाने वाले कुछ फ़ाइलें, जैसे कि जेएसओएन फाइलें, संसाधन नहीं माने "
+"जाते हैं। उदाहरण के लिए, यदि आप निर्यात परियोजना में 'टेस्ट.जैसन' लोड करते हैं, तो आपको "
+"गैर-संसाधन निर्यात फ़िल्टर में '*.json' निर्दिष्ट करने की आवश्यकता है। देखें:रेफरी: "
+"doc_exporting_projects_export_mode' अधिक जानकारी के लिए ।"
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -1603,6 +1653,11 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"विंडोज पर, यह भी :ref: ' मामले संवेदनशीलता "
+"<doc_project_organization_case_sensitivity> मुद्दों के कारण हो सकता है । यदि आप "
+"फाइलिस्टम की तुलना में एक अलग मामले के साथ अपनी स्क्रिप्ट में किसी संसाधन का संदर्भ देते हैं, "
+"तो परियोजना का निर्यात करने के बाद लोडिंग विफल हो जाएगी। इसका कारण यह है कि वर्चुअल "
+"पीसीके फाइलिस्टम केस-सेंसिटिव है, जबकि विंडोज का फाइलसिस्टम डिफॉल्ट से केस-असंवेदनशील है ।"
 
 #: ../../docs/about/list_of_features.rst:4
 #, fuzzy
@@ -1620,19 +1675,21 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"यह पृष्ठ गोडॉट (3.2) के वर्तमान स्थिर संस्करण द्वारा समर्थित सुविधाओं को सूचीबद्ध करता है। "
+"' अधिक सुविधाओं <https://docs.godotengine.org/en/latest/about/list_of_features."
+"html>'__ नवीनतम विकास संस्करण (४.०) में उपलब्ध हैं ।"
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "पकड़ना"
+msgstr "सुविधाऐं"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
-msgstr ""
+msgstr "प्लेटफार्मों"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "** संपादक और निर्यात परियोजनाओं दोनों चला सकते हैं:**"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -1651,6 +1708,8 @@ msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Binaries स्थिर रूप से जुड़े हुए हैं और किसी भी वितरण पर चला सकते हैं यदि एक पुराने पर्याप्त "
+"आधार वितरण पर संकलित किया जाता है।"
 
 #: ../../docs/about/list_of_features.rst:28
 msgid "Official binaries are compiled on Ubuntu 14.04."
@@ -1682,6 +1741,8 @@ msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
 "new platforms with relative ease."
 msgstr ""
+"गोडॉट का उद्देश्य यथासंभव मंच-स्वतंत्र होना है और इसे सापेक्ष सहजता से नए प्लेटफार्मों पर "
+"पोर्ट किया जा सकता है।"
 
 #: ../../docs/about/list_of_features.rst:41
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
@@ -1694,11 +1755,11 @@ msgstr "संपादक"
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:340
 msgid "**Features:**"
-msgstr ""
+msgstr "**विशेषताएं:**"
 
 #: ../../docs/about/list_of_features.rst:45
 msgid "Scene tree editor."
-msgstr ""
+msgstr "दृश्य ट्री संपादक।"
 
 #: ../../docs/about/list_of_features.rst:46
 #, fuzzy
@@ -1710,6 +1771,8 @@ msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
 "Visual Studio Code or Vim."
 msgstr ""
+"के लिए समर्थन: ref: 'बाहरी स्क्रिप्ट संपादकों <doc_external_editor>' जैसे दृश्य स्टूडियो "
+"कोड या विम।"
 
 #: ../../docs/about/list_of_features.rst:49
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
@@ -1717,43 +1780,46 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "threads में अभी तक डिबगिंग के लिए कोई समर्थन नहीं।"
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "प्रदर्शन निगरानी उपकरण।"
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "Live script reloading."
-msgstr ""
+msgstr "लाइव स्क्रिप्ट रीलोडिंग।"
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Live scene editing."
-msgstr ""
+msgstr "लाइव दृश्य संपादन।"
 
 #: ../../docs/about/list_of_features.rst:56
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"परिवर्तन संपादक में प्रतिबिंबित होगा और running projectको बंद करने के बाद रखा जाएगा ।"
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Remote inspector."
-msgstr ""
+msgstr "रिमोट इंस्पेक्टर।"
 
 #: ../../docs/about/list_of_features.rst:60
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"परिवर्तन संपादक में प्रतिबिंबित नहीं होगा और चल परियोजना को बंद करने के बाद नहीं रखा "
+"जाएगा ।"
 
 #: ../../docs/about/list_of_features.rst:62
 msgid "Live camera replication."
-msgstr ""
+msgstr "लाइव कैमरा प्रतिकृति।"
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Move the in-editor camera and see the result in the running project."
-msgstr ""
+msgstr "इन-एडिटर कैमरा ले जाएं और चल रहे प्रोजेक्ट में परिणाम देखें।"
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Use the editor in dozens of languages contributed by the community."
@@ -1769,12 +1835,16 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"संपादक कार्यक्षमता का विस्तार करने के लिए संपादक प्लगइन्स को :रेफरी: एसेट लाइब्रेरी "
+"<doc_what_is_assetlib>' से डाउनलोड किया जा सकता है।"
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"नई सुविधाओं को जोड़ने या अपने कार्यप्रवाह को गति देने के लिए जीडीस्क्रिप्ट का उपयोग करके "
+"अपने स्वयं के प्लगइन बनाएं।"
 
 #: ../../docs/about/list_of_features.rst:73
 msgid ""
@@ -1804,7 +1874,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:151
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "उच्च अंत दृश्यों। डेस्कटॉप प्लेटफार्मों पर अनुशंसित।"
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:148
@@ -1819,18 +1889,19 @@ msgstr ""
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"बहुभुज 2डी और Line2D जैसे लाइनों और बहुभुजों को आकर्षित करने के लिए उच्च स्तरीय उपकरण।"
 
 #: ../../docs/about/list_of_features.rst:91
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "एनिमेटेड स्प्राइट्स बनाने के लिए एक सहायक के रूप में एनिमेटेडस्राइट।"
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "Parallax layers."
-msgstr ""
+msgstr "पैरालैक्स परतें।"
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
-msgstr ""
+msgstr "कई बार एक परत को स्वचालित रूप से डुप्लिकेट करके छद्म-3डी समर्थन।"
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "2D lighting with normal maps."
@@ -1845,30 +1916,35 @@ msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"फ्रीटाइप (डायनेमिकफॉन्ट) का उपयोग करके बिटमैप (बिटमैपफॉन्ट) या रैस्टराइजेशन का उपयोग "
+"करके फ़ॉन्ट प्रतिपादन।"
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "बिटमैप फोंट को बीएमफॉन्ट जैसे टूल्स का उपयोग करके निर्यात किया जा सकता है।"
 
 #: ../../docs/about/list_of_features.rst:103
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"डायनेमिक फोंट मोनोक्रोम फोंट के साथ-साथ रंगीन फोंट का समर्थन करता है। समर्थित प्रारूप "
+"टीटीएफ और ओटीएफ हैं।"
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"डायनेमिकफॉन्ट एडजस्टेबल चौड़ाई और रंग के साथ वैकल्पिक फ़ॉन्ट आउटलाइन का समर्थन करता है।"
 
 #: ../../docs/about/list_of_features.rst:106
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
-msgstr ""
+msgstr "उच्च संकल्पों पर फोंट को तेज रखने के लिए फ़ॉन्ट ओवरसैंपलिंग के लिए समर्थन।"
 
 #: ../../docs/about/list_of_features.rst:108
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "कस्टम कण (particle) छायादार (shaders) के लिए समर्थन के साथ GPU आधारित कणों।"
 
 #: ../../docs/about/list_of_features.rst:109
 #: ../../docs/about/list_of_features.rst:215
@@ -1882,82 +1958,81 @@ msgstr "उपकरण"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "बिल्ट-इन स्मूदिंग और ड्रैग मार्जिन के साथ 2डी कैमरा।"
 
 #: ../../docs/about/list_of_features.rst:115
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "2D स्पेस में एक पथ का प्रतिनिधित्व करने के लिए Path2D नोड।"
 
 #: ../../docs/about/list_of_features.rst:117
 #: ../../docs/about/list_of_features.rst:254
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "संपादक में तैयार किया जा सकता है या प्रक्रियात्मक रूप से उत्पन्न किया जा सकता है।"
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "PathFollow2D नोड को नोड्स बनाने के लिए एक Path2D का पालन करें।"
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "2डी ज्यामिति सहायक वर्ग।"
 
 #: ../../docs/about/list_of_features.rst:121
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "टेक्सचर 2डी लाइनें खींचने के लिए Line2D नोड।"
 
 #: ../../docs/about/list_of_features.rst:124
-#, fuzzy
 msgid "2D physics"
-msgstr "भौतिकी"
+msgstr "2डी भौतिकी"
 
 #: ../../docs/about/list_of_features.rst:126
 #: ../../docs/about/list_of_features.rst:262
 msgid "**Physics bodies:**"
-msgstr ""
+msgstr "**भौतिकी निकाय:**"
 
 #: ../../docs/about/list_of_features.rst:128
 #: ../../docs/about/list_of_features.rst:264
 msgid "Static bodies."
-msgstr ""
+msgstr "स्थिर bodies"
 
 #: ../../docs/about/list_of_features.rst:129
 #: ../../docs/about/list_of_features.rst:265
 msgid "Rigid bodies."
-msgstr ""
+msgstr "कठोर bodies।"
 
 #: ../../docs/about/list_of_features.rst:130
 #: ../../docs/about/list_of_features.rst:266
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "कानेमैटिक बॉडी।"
 
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:268
 msgid "Joints."
-msgstr ""
+msgstr "जोड़ों Joints।"
 
 #: ../../docs/about/list_of_features.rst:132
 #: ../../docs/about/list_of_features.rst:271
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "निकायों में प्रवेश करने या उसे छोड़ने का पता लगाने के लिए क्षेत्र।"
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
 msgid "**Collision detection:**"
-msgstr ""
+msgstr "**टकराव (Collision) का पता लगाने:**"
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "अंतर्निहित आकार: लाइन, बॉक्स, सर्कल, कैप्सूल।"
 
 #: ../../docs/about/list_of_features.rst:137
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
-msgstr ""
+msgstr "टकराव बहुभुज (संपादक में एक प्रेत से मैन्युअल रूप से तैयार या उत्पन्न किया जा सकता है)।"
 
 #: ../../docs/about/list_of_features.rst:140
 msgid "3D graphics"
-msgstr ""
+msgstr "3डी ग्राफिक्स"
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "HDR rendering with sRGB."
@@ -1965,7 +2040,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "अधिक अनुकूलता के लिए एलडीआर प्रतिपादन।"
 
 #: ../../docs/about/list_of_features.rst:150
 msgid ""
@@ -1979,7 +2054,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "परिप्रेक्ष्य, ऑर्थोग्राफिक और फ्रस्टम-ऑफसेट कैमरे।"
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Physically-based rendering:**"
@@ -1987,11 +2062,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "डिज्नी पीबीआर मॉडल का अनुसरण करता है।"
 
 #: ../../docs/about/list_of_features.rst:160
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
-msgstr ""
+msgstr "ओआरएम बनावट के समर्थन के साथ एक खुरदरापन-धातु कार्यप्रवाह का उपयोग करता है।"
 
 #: ../../docs/about/list_of_features.rst:161
 #, fuzzy
@@ -2002,65 +2077,71 @@ msgstr "सामग्री बनाना"
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
-msgstr ""
+msgstr "* GLES3:* दूरी के आधार पर विस्तार के स्वचालित स्तर के साथ पैरालैक्स/रिलीफ मैपिंग।"
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "* GLES3:* उप सतह बिखरने और प्रसारण।"
 
 #: ../../docs/about/list_of_features.rst:164
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "* GLES3:* निकटता फीका (नरम कणों) ।"
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"दूरी फीका (fade) जो पारदर्शी पाइपलाइन के माध्यम से जाने से बचने के लिए अल्फा सम्मिश्रण "
+"या डिथरिंग का उपयोग कर सकता है।"
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "डिथरिंग का निर्धारण प्रति-पिक्सेल या प्रति-ऑब्जेक्ट आधार पर किया जा सकता है।"
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "** वास्तविक समय प्रकाश व्यवस्था:**"
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "दिशात्मक रोशनी (सूर्य/चंद्रमा) । प्रति दृश्य 4 तक।"
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "सर्वदिश रोशनी।"
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "समायोज्य शंकु कोण और क्षीणन के साथ स्पॉट लाइट्स।"
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "** छाया मानचित्रण:**"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"* दिशाप्रकाश: * ऑर्थोगोनल (सबसे तेज), पीएसएसएम 2-स्प्लिट और 4-स्प्लिट। विभाजन के बीच "
+"सम्मिश्रण का समर्थन करता है।"
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"* ओमनीलाइट:* दोहरी पैराबोलॉइड (तेज) या क्यूबमैप (धीमी लेकिन अधिक सटीक)। पैनोरमा के "
+"रूप में रंगीन प्रोजेक्टर बनावट का समर्थन करता है।"
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "* स्पॉटलाइट:* एकल बनावट।"
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "अप्रत्यक्ष प्रकाश व्यवस्था के साथ वैश्विक रोशनी:**"
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
@@ -2125,6 +2206,8 @@ msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"कैमरे की दिशा (सूरज के रंग से मेल खाने के लिए) के आधार पर स्वचालित गहराई कोहरे के रंग के "
+"लिए समर्थन।"
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
@@ -2178,7 +2261,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "निकटतम, bilinear, ट्राइलिनियर या एनिसोट्रोपिक फ़िल्टरिंग।"
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "**Texture compression:**"
@@ -2224,10 +2307,9 @@ msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":रेफरी: 'प्रक्रियात्मक ज्यामिति <toc-procedural_geometry>'"
+msgstr ":refी: 'प्रक्रियात्मक ज्यामिति <toc-procedural_geometry>'"
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
@@ -2241,7 +2323,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "नोड्स बनाने के लिए PathFollow3D नोड एक Path3D का पालन करें।"
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
@@ -5087,7 +5169,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr ""
+msgstr "अनेक ग्रुप"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -13404,9 +13486,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "सामग्री बनाना"
+msgstr "फ़ाइलों मे तलाशिये"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306

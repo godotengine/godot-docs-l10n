@@ -20,14 +20,15 @@
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2020.
 # triarts <agung.triarta.h@gmail.com>, 2019.
+# yusuf afandi <afandi.yusuf.04@gmail.com>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-08-20 15:20+0000\n"
-"Last-Translator: Abid Febriansyah <abid.febri027@gmail.com>\n"
+"PO-Revision-Date: 2020-12-07 08:11+0000\n"
+"Last-Translator: Ade Fikri Malihuddin <ade.fm97@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1039,6 +1040,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
 msgstr ""
+"Mengapa Godot menggunakan Vulkan atau OpenGL dan bukan menggunakan Direct2D?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1048,6 +1050,11 @@ msgid ""
 "project developed with Godot on Windows will run out of the box on Linux, "
 "macOS, and more."
 msgstr ""
+"Utamanya Godot bertujuan untuk kompatibilitas cross-platform dan standar "
+"terbuka. OpenGL dan Vulkan merupakan teknologi yang terbuka dan tersedia "
+"hampir di semua platforms. Berkat keputusa disain, sebuah projek yang "
+"didevelop dengan Godot di Windows akan berjalan di Linux, macOS dan lebih "
+"banyak lagi."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -1056,6 +1063,10 @@ msgid ""
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
+"Sejak Godot hanya memilki beberapa orang yang mengerjakan renderer, kami "
+"lebih memilih sedikit backend renderer untuk di rawat. Di atas itu, "
+"menggunakan satu API di semua platform  membolehkan untuk menjaga "
+"konsistensi dengan sedikit masalah tentang platform-specific."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -1063,6 +1074,9 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Dijangka panjang, kami mungkin mengembangkan sebuah Direct3D renderer untuk "
+"Godot(khusuya untuk Xbox), tapi Vulkan dan OpenGL tetap bertahan sebagai "
+"backend rendering utama disemua platform, termasuk Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -1213,13 +1227,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:265
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "Kapan Godot rilis?"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"Saat sudah siap! Lihat:ref:`doc_release_policy_when_is_next_release_out` "
+"untuk informasi selanjutnya."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
@@ -1354,9 +1370,8 @@ msgstr ""
 "atau contoh projects(jika bisa diterapkan)."
 
 #: ../../docs/about/faq.rst:317
-#, fuzzy
 msgid "Is it possible to use Godot as a library?"
-msgstr "Apakah mungkin menggunakan Godot sebagai pustaka (library)?"
+msgstr "Apakah memungkinkan untuk menggunakan Godot sebagai pustaka (library)?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1365,6 +1380,11 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot harusnya digunakan bersama dengan editornya. Kami menyarankan anda "
+"mencobanya, karena akan membantu waktu anda dalam jangka waktu yang panjang. "
+"Tidak ada rencana untuk membuat Godot sebagai library, karena akan membuat "
+"semua mesin/engine menjadi berantakan dan sulit untuk digunakan pengguna "
+"biasa."
 
 #: ../../docs/about/faq.rst:324
 msgid ""
@@ -1373,6 +1393,10 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"Jika anda ingin menggunakan library rendering, lihat ke rendering engine "
+"yang sudah ada. Ingat saja, bahwa rendering engine biasanya mempunyai "
+"komunitas yang kecil dibandingkan Godot. Ini akan menyulitkan anda untuk "
+"mendapatkan jawaban dari masalah anda."
 
 #: ../../docs/about/faq.rst:330
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -1548,19 +1572,23 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Pencarian masalah"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Ini daftar halaman masalah umum yang ditemukan ketika menggunakan Godot dan "
+"Solusi yang memungkinkan."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Semua yang di lakukan dieditor atau projek manajer muncul lebih lambat 1 "
+"frame."
 
 #: ../../docs/about/troubleshooting.rst:11
 msgid ""
@@ -1568,6 +1596,9 @@ msgid ""
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
 "version *provided by Intel* should fix the issue."
 msgstr ""
+"Ini sebuah `bug  <https://github.com/godotengine/godot/issues/23069>`__ pada "
+"Grafis driver Intel di Windows. Mengupdate ke versi terakhir grafis driver "
+"*yang disediakan Intel* dapat memperbaiki masalah."
 
 #: ../../docs/about/troubleshooting.rst:15
 msgid ""
@@ -1575,18 +1606,25 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"Anda harus menggunakan grafis driver yang disediakan oleh Intel daripada "
+"yang disediakan oleh desktop anda atau pembuat laptop karena versi mereka "
+"biasa nya versi lama."
 
 #: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
 msgstr ""
+"Kotak menghilang dan meshes menjadi hitam ketika merotasi Kamera 3D di "
+"editor."
 
 #: ../../docs/about/troubleshooting.rst:22
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"Ini sebuah  `bug <https://github.com/godotengine/godot/issues/30330>`__ pada "
+"Intel graphics drivers pada Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -1594,16 +1632,21 @@ msgid ""
 "switch the renderer in the top-right corner of the editor or the Project "
 "Settings."
 msgstr ""
+"Satu cara mengatasinya, untuk sekarang, adalah menggunakan GLES2 renderer. "
+"Anda bisa menggantinya disudut atas-kanan editor atau Project Settings."
 
 #: ../../docs/about/troubleshooting.rst:28
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
 msgstr ""
+"Jika anda memakai sebuah komputer yang memperbolehkan anda mengganti kartu "
+"grafis, seperti NVidia Optimus, anda bisa menggunakan dedicated kartu grafis "
+"untuk menggunakan Godot."
 
 #: ../../docs/about/troubleshooting.rst:32
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "Editor atau projek memakan waktu yang lama untuk memulai."
 
 #: ../../docs/about/troubleshooting.rst:34
 msgid ""
@@ -1614,10 +1657,16 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
+"Sebuah ` bug <https://github.com/godotengine/godot/issues/20566>`__ pada "
+"Windows ketika anda punya perangkat USB spesifik tersambung. Sepertinya "
+"Corsair's iCUE software penyebabnya. Coba update perangkat usb driver "
+"keversi terbaru. Jika bug masih ada, anda perlu mencopot biang masalah "
+"perangkat sebelum membuka editor. Anda kemudian memasangnya kembali."
 
 #: ../../docs/about/troubleshooting.rst:42
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr ""
+"Godot editor tampak membeku setelah beberapa kali click di sistem konsol."
 
 #: ../../docs/about/troubleshooting.rst:44
 msgid ""
@@ -1627,16 +1676,23 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
+"Ketika Godot berjalan di Windows dengan sistem konsol aktif, anda tak "
+"sengaja mengaktifkan *mode seleksi* dengan mengclick didalam jendela "
+"command. Ini merupakan perilaku Window-specific untuk meng-pause aplikasi "
+"untuk membiarkan anda memilih text didalam sistem konsol. Godot tidak bisa "
+"mengambil alih perilaku system-specific."
 
 #: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Untuk mengatasinya, pilih jendela system konsol dan tekan Enter untuk "
+"meninggalkan selection mode."
 
 #: ../../docs/about/troubleshooting.rst:53
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "Jendela project tampak buram, tidak seperti editor."
 
 #: ../../docs/about/troubleshooting.rst:55
 msgid ""
@@ -1644,6 +1700,9 @@ msgid ""
 "done to improve performance, especially on integrated graphics, where "
 "rendering 3D scenes in hiDPI is slow."
 msgstr ""
+"Tak seperti editor, project tidak ditandai sebagai DPI-aware secara awal. "
+"Ini bertujuan untuk meningkatkan performa, utamaya pada integrated grafis, "
+"dimana 3D renderer dalam hiDPI membuat lambat."
 
 #: ../../docs/about/troubleshooting.rst:59
 msgid ""
@@ -1651,10 +1710,14 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Untuk mengatasinya, buka **Project > Project Settings** dan aktifkan "
+"**Display > Window > Dpi > Allow Hidpi**. Di atas itu, pastikan projek anda "
+"diatur untuk mendukung :ref:`multiple resolutions "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:64
 msgid "The project window doesn't appear centered when I run the project."
-msgstr ""
+msgstr "Jendela proyek tidak muncul di tengah ketika saya menjalankan proyek."
 
 #: ../../docs/about/troubleshooting.rst:66
 msgid ""
@@ -1663,12 +1726,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"Ini adalah `bug yang diketahui <https://github.com/godotengine/godot/"
+"issues/13017>` __. Untuk mengatasinya, buka ** Project> Project Settings ** "
+"dan aktifkan ** Display> Window> Dpi> Allow Hidpi **. Selain itu, pastikan "
+"project Anda dikonfigurasi untuk mendukung: ref: `multiple resolutions "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Proyek ini bekerja ketika dijalankan dari editor, tetapi gagal memuat "
+"beberapa file saat dijalankan dari salinan yang diekspor."
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -1679,6 +1749,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"Hal ini biasanya disebabkan karena lupa menetapkan filter untuk file non-"
+"sumber daya dalam dialog Ekspor. Secara default, Godot hanya akan "
+"menyertakan * sumber daya * aktual ke dalam file PCK. Beberapa file yang "
+"biasa digunakan, seperti file JSON, tidak dianggap sebagai sumber daya. "
+"Misalnya, jika Anda memuat `` test.json '' di proyek yang diekspor, Anda "
+"perlu menentukan `` * .json`` di filter ekspor non-sumber daya. Lihat: ref: "
+"`doc_exporting_projects_export_mode` untuk informasi lebih lanjut."
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -1689,6 +1766,12 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"Pada Windows, ini juga dapat disebabkan oleh: ref: masalah sensitivitas "
+"<doc_project_organization_case_sensitivity> `. Jika Anda mereferensikan "
+"sumber daya dalam skrip Anda dengan kasus yang berbeda dari pada sistem "
+"file, pemuatan akan gagal setelah Anda mengekspor proyek. Ini karena sistem "
+"file PCK virtual peka huruf besar / kecil, sedangkan sistem berkas Windows "
+"tidak peka huruf besar / kecil secara default."
 
 #: ../../docs/about/list_of_features.rst:4
 msgid "List of features"
@@ -1707,6 +1790,9 @@ msgid ""
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
+"Halaman ini mencantumkan fitur yang didukung oleh versi stabil Godot (3.2) "
+"saat ini. `Fitur lainnya <https://docs.godotengine.org/en/latest/about/"
+"list_of_features.html>` __ tersedia di versi pengembangan terbaru (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
 #, fuzzy
@@ -1720,7 +1806,7 @@ msgstr "Platform-specific (Perangkat spesifik)"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
-msgstr ""
+msgstr "** Can run both the editor and exported projects: **"
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
@@ -1739,14 +1825,16 @@ msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
 "on an old enough base distribution."
 msgstr ""
+"Biner terhubung secara statis dan dapat berjalan di distribusi apa pun jika "
+"dikompilasi pada distribusi basis yang cukup lama."
 
 #: ../../docs/about/list_of_features.rst:28
 msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr ""
+msgstr "Biner resmi dikompilasi di Ubuntu 14.04."
 
 #: ../../docs/about/list_of_features.rst:30
 msgid "**Runs exported projects:**"
-msgstr ""
+msgstr "**Runs exported projects:**"
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "Android 4.4 and later."
@@ -1786,14 +1874,12 @@ msgid "**Features:**"
 msgstr "**Fitur:**"
 
 #: ../../docs/about/list_of_features.rst:45
-#, fuzzy
 msgid "Scene tree editor."
-msgstr "Editor pohon adegan."
+msgstr "Editor skene pohon."
 
 #: ../../docs/about/list_of_features.rst:46
-#, fuzzy
 msgid "Script editor."
-msgstr "Editor skrip."
+msgstr "Editor script."
 
 #: ../../docs/about/list_of_features.rst:47
 msgid ""
@@ -1804,53 +1890,58 @@ msgstr ""
 "Studio Code atau Vim."
 
 #: ../../docs/about/list_of_features.rst:49
-#, fuzzy
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
 
 #: ../../docs/about/list_of_features.rst:51
 msgid "No support for debugging in threads yet."
-msgstr ""
+msgstr "Belum ada dukungan untuk debugging di thread."
 
 #: ../../docs/about/list_of_features.rst:52
 msgid "Performance monitoring tools."
-msgstr ""
+msgstr "Alat pemantauan kinerja."
 
 #: ../../docs/about/list_of_features.rst:53
 msgid "Live script reloading."
-msgstr ""
+msgstr "Memuat ulang skrip langsung."
 
 #: ../../docs/about/list_of_features.rst:54
 msgid "Live scene editing."
-msgstr ""
+msgstr "Pengeditan adegan langsung."
 
 #: ../../docs/about/list_of_features.rst:56
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
 "running project."
 msgstr ""
+"Perubahan akan tercermin di editor dan akan disimpan setelah menutup proyek "
+"yang sedang berjalan."
 
 #: ../../docs/about/list_of_features.rst:58
 msgid "Remote inspector."
-msgstr ""
+msgstr "Inspektur jarak jauh."
 
 #: ../../docs/about/list_of_features.rst:60
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
 "running project."
 msgstr ""
+"Perubahan tidak akan terlihat di editor dan tidak akan disimpan setelah "
+"menutup proyek yang sedang berjalan."
 
 #: ../../docs/about/list_of_features.rst:62
 msgid "Live camera replication."
-msgstr ""
+msgstr "Replikasi kamera langsung."
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
+"Pindahkan kamera dalam editor dan lihat hasilnya dalam proyek yang sedang "
+"berjalan."
 
 #: ../../docs/about/list_of_features.rst:66
 msgid "Use the editor in dozens of languages contributed by the community."
-msgstr ""
+msgstr "Gunakan editor dalam berbagai bahasa yang disumbangkan oleh komunitas."
 
 #: ../../docs/about/list_of_features.rst:68
 #, fuzzy
@@ -1862,106 +1953,123 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
+"Plugin editor dapat diunduh dari: ref: `asset library "
+"<doc_what_is_assetlib>` untuk memperluas fungsionalitas editor."
 
 #: ../../docs/about/list_of_features.rst:72
 msgid ""
 "Create your own plugins using GDScript to add new features or speed up your "
 "workflow."
 msgstr ""
+"Buat plugin Anda sendiri menggunakan GDScript untuk menambahkan fitur baru "
+"atau mempercepat alur kerja Anda."
 
 #: ../../docs/about/list_of_features.rst:73
 msgid ""
 "Download projects from the asset library in the project manager and import "
 "them directly."
 msgstr ""
+"Unduh proyek dari perpustakaan aset di manajer proyek dan impor secara "
+"langsung."
 
 #: ../../docs/about/list_of_features.rst:76
 msgid "2D graphics"
-msgstr ""
+msgstr "2D Grafis"
 
 #: ../../docs/about/list_of_features.rst:78
 #: ../../docs/about/list_of_features.rst:142
 msgid "**Two renderers available:**"
-msgstr ""
+msgstr "**Two renderers available:**"
 
 #: ../../docs/about/list_of_features.rst:80
 #: ../../docs/about/list_of_features.rst:145
 msgid "OpenGL ES 3.0 renderer (uses OpenGL 3.3 on desktop platforms)."
-msgstr ""
+msgstr "Perender OpenGL ES 3.0 (menggunakan OpenGL 3.3 pada platform desktop)."
 
 #: ../../docs/about/list_of_features.rst:81
 #: ../../docs/about/list_of_features.rst:145
 msgid "High-end visuals. Recommended on desktop platforms."
-msgstr ""
+msgstr "Visual kelas atas. Direkomendasikan di platform desktop."
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:151
 msgid "OpenGL ES 2.0 renderer (uses OpenGL 2.1 on desktop platforms)."
-msgstr ""
+msgstr "Perender OpenGL ES 2.0 (menggunakan OpenGL 2.1 pada platform desktop)."
 
 #: ../../docs/about/list_of_features.rst:83
 #: ../../docs/about/list_of_features.rst:148
 msgid "Recommended on mobile and Web platforms."
-msgstr ""
+msgstr "Direkomendasikan di platform seluler dan Web."
 
 #: ../../docs/about/list_of_features.rst:87
 msgid "Sprite, polygon and line rendering."
-msgstr ""
+msgstr "Sprite, poligon dan rendering garis."
 
 #: ../../docs/about/list_of_features.rst:89
 msgid ""
 "High-level tools to draw lines and polygons such as Polygon2D and Line2D."
 msgstr ""
+"Alat tingkat tinggi untuk menggambar garis dan poligon seperti Polygon2D dan "
+"Line2D."
 
 #: ../../docs/about/list_of_features.rst:91
 msgid "AnimatedSprite as a helper for creating animated sprites."
-msgstr ""
+msgstr "AnimatedSprite sebagai pembantu untuk membuat sprite animasi."
 
 #: ../../docs/about/list_of_features.rst:92
 msgid "Parallax layers."
-msgstr ""
+msgstr "Lapisan paralaks."
 
 #: ../../docs/about/list_of_features.rst:94
 msgid "Pseudo-3D support by automatically duplicating a layer several times."
 msgstr ""
+"Dukungan pseudo-3D dengan menduplikasi lapisan secara otomatis beberapa kali."
 
 #: ../../docs/about/list_of_features.rst:96
 msgid "2D lighting with normal maps."
-msgstr ""
+msgstr "Pencahayaan 2D dengan normalmap."
 
 #: ../../docs/about/list_of_features.rst:98
 msgid "Hard or soft shadows."
-msgstr ""
+msgstr "Bayangan keras atau lembut."
 
 #: ../../docs/about/list_of_features.rst:100
 msgid ""
 "Font rendering using bitmaps (BitmapFont) or rasterization using FreeType "
 "(DynamicFont)."
 msgstr ""
+"Perenderan font menggunakan bitmap (BitmapFont) atau rasterisasi menggunakan "
+"FreeType (DynamicFont)."
 
 #: ../../docs/about/list_of_features.rst:102
 msgid "Bitmap fonts can be exported using tools like BMFont."
-msgstr ""
+msgstr "Font bitmap dapat diekspor menggunakan alat seperti BMFont."
 
 #: ../../docs/about/list_of_features.rst:103
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts. Supported "
 "formats are TTF and OTF."
 msgstr ""
+"DynamicFont mendukung font monokrom serta font berwarna. Format yang "
+"didukung adalah TTF dan OTF."
 
 #: ../../docs/about/list_of_features.rst:105
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
 msgstr ""
+"DynamicFont mendukung kerangka font opsional dengan lebar dan warna yang "
+"dapat disesuaikan."
 
 #: ../../docs/about/list_of_features.rst:106
 msgid ""
 "Support for font oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
+"Dukungan untuk font oversampling agar font tetap tajam pada resolusi yang "
+"lebih tinggi."
 
 #: ../../docs/about/list_of_features.rst:108
 msgid "GPU-based particles with support for custom particle shaders."
-msgstr ""
+msgstr "Partikel berbasis GPU dengan dukungan untuk custom particle shader."
 
 #: ../../docs/about/list_of_features.rst:109
 #: ../../docs/about/list_of_features.rst:215
@@ -1976,28 +2084,28 @@ msgstr "Alat-alat"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr ""
+msgstr "Kamera 2D dengan pemulusan bawaan dan margin seret."
 
 #: ../../docs/about/list_of_features.rst:115
 msgid "Path2D node to represent a path in 2D space."
-msgstr ""
+msgstr "Simpul Path2D untuk merepresentasikan jalur dalam ruang 2D."
 
 #: ../../docs/about/list_of_features.rst:117
 #: ../../docs/about/list_of_features.rst:254
 msgid "Can be drawn in the editor or generated procedurally."
-msgstr ""
+msgstr "Dapat digambar di editor atau dibuat secara prosedural."
 
 #: ../../docs/about/list_of_features.rst:118
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
+msgstr "PathFollow2D node untuk membuat node mengikuti Path2D."
 
 #: ../../docs/about/list_of_features.rst:120
 msgid "2D geometry helper class."
-msgstr ""
+msgstr "Kelas pembantu geometri 2D."
 
 #: ../../docs/about/list_of_features.rst:121
 msgid "Line2D node to draw textured 2D lines."
-msgstr ""
+msgstr "Node Line2D untuk menggambar garis 2D bertekstur."
 
 #: ../../docs/about/list_of_features.rst:124
 #, fuzzy
@@ -2007,32 +2115,32 @@ msgstr "Physics (Fisika)"
 #: ../../docs/about/list_of_features.rst:126
 #: ../../docs/about/list_of_features.rst:262
 msgid "**Physics bodies:**"
-msgstr ""
+msgstr "**Physics bodies:**"
 
 #: ../../docs/about/list_of_features.rst:128
 #: ../../docs/about/list_of_features.rst:264
 msgid "Static bodies."
-msgstr ""
+msgstr "Badan statis."
 
 #: ../../docs/about/list_of_features.rst:129
 #: ../../docs/about/list_of_features.rst:265
 msgid "Rigid bodies."
-msgstr ""
+msgstr "Rigid bodies."
 
 #: ../../docs/about/list_of_features.rst:130
 #: ../../docs/about/list_of_features.rst:266
 msgid "Kinematic bodies."
-msgstr ""
+msgstr "Kinematic bodies."
 
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:268
 msgid "Joints."
-msgstr ""
+msgstr "Joints."
 
 #: ../../docs/about/list_of_features.rst:132
 #: ../../docs/about/list_of_features.rst:271
 msgid "Areas to detect bodies entering or leaving it."
-msgstr ""
+msgstr "Area untuk mendeteksi mayat yang masuk atau keluar."
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
@@ -2042,187 +2150,208 @@ msgstr "Collision Shapes Terlihat"
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
-msgstr ""
+msgstr "Bentuk bawaan: garis, kotak, lingkaran, kapsul."
 
 #: ../../docs/about/list_of_features.rst:137
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
+"Poligon tabrakan (dapat digambar secara manual atau dibuat dari sprite di "
+"editor)."
 
 #: ../../docs/about/list_of_features.rst:140
 msgid "3D graphics"
-msgstr ""
+msgstr "3D graphics"
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "HDR rendering with sRGB."
-msgstr ""
+msgstr "Rendering HDR dengan sRGB."
 
 #: ../../docs/about/list_of_features.rst:149
 msgid "LDR rendering for greater compatibility."
-msgstr ""
+msgstr "Rendering LDR untuk kompatibilitas yang lebih baik."
 
 #: ../../docs/about/list_of_features.rst:150
 msgid ""
 "Not all features are available. Features available only when using the "
 "OpenGL ES 3.0 renderer are marked *GLES3* below."
 msgstr ""
+"Tidak semua fitur tersedia. Fitur yang hanya tersedia saat menggunakan "
+"perender OpenGL ES 3.0 ditandai * GLES3 * di bawah."
 
 #: ../../docs/about/list_of_features.rst:153
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Camera:**"
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr ""
+msgstr "Kamera perspektif, ortografi, dan frustum-offset."
 
 #: ../../docs/about/list_of_features.rst:157
 msgid "**Physically-based rendering:**"
-msgstr ""
+msgstr "**Physically-based rendering:**"
 
 #: ../../docs/about/list_of_features.rst:159
 msgid "Follows the Disney PBR model."
-msgstr ""
+msgstr "Mengikuti model PBR Disney."
 
 #: ../../docs/about/list_of_features.rst:160
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
+"Menggunakan alur kerja kekasaran-logam dengan dukungan untuk tekstur ORM."
 
 #: ../../docs/about/list_of_features.rst:161
 msgid "Normal mapping."
-msgstr ""
+msgstr "Normal mapping."
 
 #: ../../docs/about/list_of_features.rst:162
 msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"* GLES3: * Parallax / pemetaan relief dengan tingkat detail otomatis "
+"berdasarkan jarak."
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "* GLES3: * Hamburan dan transmisi sub-permukaan."
 
 #: ../../docs/about/list_of_features.rst:164
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3:* Proximity fade (soft particles)."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Fade jarak yang dapat menggunakan pencampuran alfa atau dithering untuk "
+"menghindari melalui pipa transparan."
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Dithering can be determined on a per-pixel or per-object basis."
-msgstr ""
+msgstr "Dithering can be determined on a per-pixel or per-object basis."
 
 #: ../../docs/about/list_of_features.rst:169
 msgid "**Real-time lighting:**"
-msgstr ""
+msgstr "**Real-time lighting:**"
 
 #: ../../docs/about/list_of_features.rst:171
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr ""
+msgstr "Directional lights (sun/moon). Up to 4 per scene."
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Omnidirectional lights."
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Lampu sorot dengan sudut kerucut dan atenuasi yang dapat disesuaikan."
 
 #: ../../docs/about/list_of_features.rst:175
 msgid "**Shadow mapping:**"
-msgstr ""
+msgstr "**Shadow mapping:**"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid ""
 "*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
 "blending between splits."
 msgstr ""
+"* DirectionalLight: * Orthogonal (tercepat), PSSM 2-split dan 4-split. "
+"Mendukung pencampuran antar split."
 
 #: ../../docs/about/list_of_features.rst:179
 msgid ""
 "*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
 "Supports colored projector textures in the form of panoramas."
 msgstr ""
+"* OmniLight: * Dual paraboloid (cepat) atau cubemap (lebih lambat tapi lebih "
+"akurat). Mendukung tekstur proyektor berwarna dalam bentuk panorama."
 
 #: ../../docs/about/list_of_features.rst:181
 msgid "*SpotLight:* Single texture."
-msgstr ""
+msgstr "*SpotLight:* Single texture."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Global illumination with indirect lighting:**"
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
-msgstr ""
+msgstr "Baked Lightmaps (cepat, tetapi tidak dapat diperbarui saat run-time)."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Lightmaps dijalankan di CPU."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
+"* GLES3: * Probe GI (lebih lambat, semi-real-time). Mendukung refleksi."
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "**Reflections:**"
-msgstr ""
+msgstr "**Reflections:**"
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
-msgstr ""
+msgstr "*GLES3:* Voxel-based reflections (when using GI probes)."
 
 #: ../../docs/about/list_of_features.rst:194
 msgid ""
 "Fast baked reflections or slow real-time reflections using ReflectionProbe. "
 "Parallax correction can optionally be enabled."
 msgstr ""
+"Refleksi cepat atau refleksi real-time lambat menggunakan ReflectionProbe. "
+"Koreksi paralaks secara opsional dapat diaktifkan."
 
 #: ../../docs/about/list_of_features.rst:196
 msgid "*GLES3:* Screen-space reflections."
-msgstr ""
+msgstr "*GLES3:* Screen-space reflections."
 
 #: ../../docs/about/list_of_features.rst:197
 msgid "Reflection techniques can be mixed together for greater accuracy."
 msgstr ""
+"Teknik refleksi dapat dicampur bersama untuk akurasi yang lebih tinggi."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Sky:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Panorama sky (using an HDRI)."
 
 #: ../../docs/about/list_of_features.rst:202
 msgid "Procedural sky."
-msgstr ""
+msgstr "Procedural sky."
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Fog:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Kabut dalam dengan kurva atenuasi yang dapat disesuaikan."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
 msgstr ""
+"Kabut ketinggian (lantai atau langit-langit) dengan atenuasi yang dapat "
+"disesuaikan."
 
 #: ../../docs/about/list_of_features.rst:208
 msgid ""
 "Support for automatic depth fog color depending on the camera direction (to "
 "match the sun color)."
 msgstr ""
+"Dukungan untuk warna kabut kedalaman otomatis tergantung pada arah kamera "
+"(untuk mencocokkan warna matahari)."
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "Transmisi opsional untuk membuat cahaya lebih terlihat di kabut."
 
 #: ../../docs/about/list_of_features.rst:212
 #, fuzzy
@@ -2232,72 +2361,78 @@ msgstr "Partikel"
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
+"* GLES3: * Partikel berbasis GPU dengan dukungan untuk custom particle "
+"shader."
 
 #: ../../docs/about/list_of_features.rst:217
 msgid "**Post-processing:**"
-msgstr ""
+msgstr "**Post-processing:**"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
-msgstr ""
+msgstr "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 
 #: ../../docs/about/list_of_features.rst:220
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
+"* GLES3: * Penyesuaian eksposur otomatis berdasarkan kecerahan viewport."
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Near and far depth of field."
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Screen-space ambient occlusion."
-msgstr ""
+msgstr "*GLES3:* Screen-space ambient occlusion."
 
 #: ../../docs/about/list_of_features.rst:223
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace."
 msgstr ""
+"Bersinar / mekar dengan peningkatan skala bicubic opsional dan beberapa mode "
+"campuran yang tersedia: Layar, Cahaya Lembut, Tambah, Ganti."
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Koreksi warna menggunakan ramp satu dimensi."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Penyesuaian kecerahan, kontras dan saturasi."
 
 #: ../../docs/about/list_of_features.rst:228
 msgid "**Texture filtering:**"
-msgstr ""
+msgstr "**Texture filtering:**"
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Penyaringan terdekat, bilinear, trilinear atau anisotropik."
 
 #: ../../docs/about/list_of_features.rst:232
 msgid "**Texture compression:**"
-msgstr ""
+msgstr "**Texture compression:**"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
+"* GLES3: * BPTC untuk kompresi kualitas tinggi (tidak didukung di macOS)."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "* GLES3: * ETC2 (tidak didukung di macOS)."
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (disarankan saat menggunakan perender GLES2)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
-msgstr ""
+msgstr "* GLES3: * S3TC (tidak didukung di platform seluler / Web)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Anti-aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:241
 #, fuzzy
@@ -2309,6 +2444,9 @@ msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"Sebagian besar efek ini dapat disesuaikan untuk kinerja yang lebih baik atau "
+"untuk lebih meningkatkan kualitas. Ini dapat membantu saat menggunakan Godot "
+"untuk rendering offline."
 
 #: ../../docs/about/list_of_features.rst:247
 #, fuzzy
@@ -2318,6 +2456,8 @@ msgstr "Alat-alat"
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
+"Jala bawaan: kubus, silinder / kerucut, bola (hemi), prisma, bidang, segi "
+"empat."
 
 #: ../../docs/about/list_of_features.rst:250
 #, fuzzy
@@ -2330,18 +2470,20 @@ msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+": ref:`Constructive solid geometry <doc_csg_tools>` (ditujukan untuk "
+"pembuatan prototipe)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Simpul Path3D untuk merepresentasikan jalur dalam ruang 3D."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
-msgstr ""
+msgstr "PathFollow3D node untuk membuat node mengikuti Path3D."
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Kelas pembantu geometri 3D."
 
 #: ../../docs/about/list_of_features.rst:260
 #, fuzzy
@@ -2350,49 +2492,54 @@ msgstr "Physics (Fisika)"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Badan kendaraan (dimaksudkan untuk fisika arcade, bukan simulasi)."
 
 #: ../../docs/about/list_of_features.rst:269
 msgid "Soft bodies."
-msgstr ""
+msgstr "Soft bodies."
 
 #: ../../docs/about/list_of_features.rst:270
 msgid "Ragdolls."
-msgstr ""
+msgstr "Ragdolls."
 
 #: ../../docs/about/list_of_features.rst:275
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder (only with Bullet "
 "physics)."
 msgstr ""
+"Bentuk bawaan: kuboid, bola, kapsul, silinder (hanya dengan fisika Bullet)."
 
 #: ../../docs/about/list_of_features.rst:276
 msgid "Generate triangle collision shapes for any mesh from the editor."
-msgstr ""
+msgstr "Hasilkan bentuk benturan segitiga untuk mesh apa pun dari editor."
 
 #: ../../docs/about/list_of_features.rst:277
 msgid ""
 "Generate one or several convex collision shapes for any mesh from the editor."
 msgstr ""
+"Buat satu atau beberapa bentuk tumbukan cembung untuk mesh apa pun dari "
+"editor."
 
 #: ../../docs/about/list_of_features.rst:280
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
 msgid "Shaders"
-msgstr ""
+msgstr "Shaders"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
-msgstr ""
+msgstr "*2D:* Custom vertex, fragment, and light shaders."
 
 #: ../../docs/about/list_of_features.rst:283
 msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
-msgstr ""
+msgstr "*3D:* Custom vertex, fragment, light, and sky shaders."
 
 #: ../../docs/about/list_of_features.rst:284
 msgid ""
 "Text-based shaders using a `shader language inspired by GLSL "
 "<doc_shading_language>`."
 msgstr ""
+"Text-based shaders using a `shader language inspired by GLSL "
+"<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:285
 #, fuzzy
@@ -2419,115 +2566,134 @@ msgstr "Umum"
 
 #: ../../docs/about/list_of_features.rst:294
 msgid "Object-oriented design pattern with scripts extending nodes."
-msgstr ""
+msgstr "Pola desain berorientasi objek dengan skrip yang memperluas node."
 
 #: ../../docs/about/list_of_features.rst:295
 msgid "Signals and groups for communicating between scripts."
-msgstr ""
+msgstr "Sinyal dan grup untuk berkomunikasi antar skrip."
 
 #: ../../docs/about/list_of_features.rst:296
 msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr ""
+"Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 
 #: ../../docs/about/list_of_features.rst:297
 msgid ""
 "Many 2D and 3D linear algebra data types such as vectors and transforms."
 msgstr ""
+"Banyak tipe data aljabar linier 2D dan 3D seperti vektor dan transformasi."
 
 #: ../../docs/about/list_of_features.rst:299
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:301
 msgid ""
 ":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
 "static typing <doc_gdscript_static_typing>`."
 msgstr ""
+":ref:`High-level interpreted language <doc_gdscript>` with :ref:`optional "
+"static typing <doc_gdscript_static_typing>`."
 
 #: ../../docs/about/list_of_features.rst:303
 msgid "Syntax inspired by Python."
-msgstr ""
+msgstr "Sintaks yang terinspirasi oleh Python."
 
 #: ../../docs/about/list_of_features.rst:304
 msgid "Syntax highlighting is provided on GitHub."
-msgstr ""
+msgstr "Penyorotan sintaks disediakan di GitHub."
 
 #: ../../docs/about/list_of_features.rst:305
 msgid ""
 ":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
 "actions or make use of multiple processor cores."
 msgstr ""
+":ref:`Use threads <doc_using_multiple_threads>` untuk melakukan tindakan "
+"asinkron atau menggunakan beberapa inti prosesor."
 
 #: ../../docs/about/list_of_features.rst:308
 msgid ":ref:`C#: <toc-learn-scripting-gdscript>`"
-msgstr ""
+msgstr ":ref:`C#: <toc-learn-scripting-gdscript>`"
 
 #: ../../docs/about/list_of_features.rst:310
 msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
+"Dikemas dalam biner terpisah untuk menjaga ukuran file dan ketergantungan "
+"tetap rendah."
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "Menggunakan Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
-msgstr ""
+msgstr "Dukungan penuh untuk sintaks dan fitur C # 7.0."
 
 #: ../../docs/about/list_of_features.rst:315
 msgid "Supports all platforms."
-msgstr ""
+msgstr "Mendukung semua platform."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
 msgstr ""
+"Disarankan menggunakan editor eksternal untuk memanfaatkan fungsionalitas "
+"IDE."
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
-msgstr ""
+msgstr ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
 
 #: ../../docs/about/list_of_features.rst:320
 msgid ""
 ":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 msgstr ""
+":ref:`Graph-based visual scripting language <doc_what_is_visual_script>`."
 
 #: ../../docs/about/list_of_features.rst:321
 msgid ""
 "Works best when used for specific purposes (such as level-specific logic) "
 "rather than as a language to create entire projects."
 msgstr ""
+"Berfungsi paling baik saat digunakan untuk tujuan tertentu (seperti logika "
+"khusus level) daripada sebagai bahasa untuk membuat keseluruhan proyek."
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
 "party integrations."
 msgstr ""
+"Saat Anda membutuhkannya, tautkan ke pustaka asli untuk kinerja yang lebih "
+"tinggi dan integrasi pihak ketiga."
 
 #: ../../docs/about/list_of_features.rst:328
 msgid ""
 "For scripting game logic, GDScript or C# are recommended if their "
 "performance is suitable."
 msgstr ""
+"Untuk logika permainan skrip, GDScript atau C # direkomendasikan jika "
+"kinerjanya sesuai."
 
 #: ../../docs/about/list_of_features.rst:331
 msgid "Official bindings for C and C++."
-msgstr ""
+msgstr "Binding resmi untuk C dan C ++."
 
 #: ../../docs/about/list_of_features.rst:333
 msgid "Use any build system and language features you wish."
-msgstr ""
+msgstr "Gunakan sistem build dan fitur bahasa apa pun yang Anda inginkan."
 
 #: ../../docs/about/list_of_features.rst:335
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
 msgstr ""
+"Mempertahankan binding D, Kotlin, Python, Nim, dan Rust yang disediakan oleh "
+"komunitas."
 
 #: ../../docs/about/list_of_features.rst:338
 #: ../../docs/about/docs_changelog.rst:28
@@ -2537,30 +2703,34 @@ msgstr "Suara"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
-msgstr ""
+msgstr "Mono, stereo, 5.1 and 7.1 output."
 
 #: ../../docs/about/list_of_features.rst:343
 msgid "Non-positional and positional playback in 2D and 3D."
-msgstr ""
+msgstr "Pemutaran non-posisi dan posisi dalam 2D dan 3D."
 
 #: ../../docs/about/list_of_features.rst:345
 msgid "Optional Doppler effect in 2D and 3D."
-msgstr ""
+msgstr "Optional Doppler effect in 2D and 3D."
 
 #: ../../docs/about/list_of_features.rst:347
 msgid ""
 "Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
 "with dozens of effects included."
 msgstr ""
+"Dukungan untuk re-routable: ref: `audio bus <doc_audio_buses>` dan efek "
+"dengan lusinan efek yang disertakan."
 
 #: ../../docs/about/list_of_features.rst:349
 msgid ""
 "Listener3D node to listen from a position different than the camera in 3D."
 msgstr ""
+"Node Listener3D untuk mendengarkan dari posisi yang berbeda dari kamera "
+"dalam 3D."
 
 #: ../../docs/about/list_of_features.rst:350
 msgid "Audio input to record microphones."
-msgstr ""
+msgstr "Input audio untuk merekam mikrofon."
 
 #: ../../docs/about/list_of_features.rst:351
 #, fuzzy
@@ -2569,23 +2739,23 @@ msgstr "Masukan"
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
-msgstr ""
+msgstr "Belum ada dukungan untuk keluaran MIDI."
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**APIs used:**"
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "*Windows:* WASAPI."
-msgstr ""
+msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "*macOS:* CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio or ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
 #, fuzzy
@@ -2594,7 +2764,7 @@ msgstr "Ekspor"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ""
+msgstr "Support for :ref:`custom import plugins <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:366
 #, fuzzy
@@ -2603,7 +2773,7 @@ msgstr "Format"
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr ""
+msgstr "*Images:* See :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
 #, fuzzy
@@ -2612,37 +2782,40 @@ msgstr "Suara"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
-msgstr ""
+msgstr "WAV with optional IMA-ADPCM compression."
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:374
 msgid "*3D scenes:*"
-msgstr ""
+msgstr "*3D scenes:*"
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(recommended)*."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
 msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
+"export from Blender)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
-msgstr ""
+msgstr "FBX (experimental)."
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)."
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
 msgstr ""
+"Wavefront OBJ  (hanya adegan statis, dapat dimuat langsung sebagai jaring)."
 
 #: ../../docs/about/list_of_features.rst:384
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
@@ -2655,50 +2828,60 @@ msgid ""
 "Input mapping system using hardcoded input events or remappable input "
 "actions."
 msgstr ""
+"Input mapping system using hardcoded input events or remappable input "
+"actions."
 
 #: ../../docs/about/list_of_features.rst:388
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"Nilai sumbu dapat dipetakan ke dua tindakan berbeda dengan zona mati yang "
+"dapat dikonfigurasi."
 
 #: ../../docs/about/list_of_features.rst:389
 msgid "Use the same code to support both keyboards and gamepads."
-msgstr ""
+msgstr "Gunakan kode yang sama untuk mendukung keyboard dan gamepad."
 
 #: ../../docs/about/list_of_features.rst:391
 msgid "Keyboard input."
-msgstr ""
+msgstr "Masukan keyboard."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
 "Keys can be mapped in \"physical\" mode to be independent of the keyboard "
 "layout."
 msgstr ""
+"Kunci dapat dipetakan dalam mode \"fisik\" agar tidak tergantung pada tata "
+"letak keyboard."
 
 #: ../../docs/about/list_of_features.rst:395
 msgid "Mouse input."
-msgstr ""
+msgstr "Masukan mouse."
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"Kursor mouse dapat terlihat, disembunyikan, ditangkap atau dibatasi di dalam "
+"jendela."
 
 #: ../../docs/about/list_of_features.rst:398
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
 "OS' mouse acceleration settings."
 msgstr ""
+"Saat ditangkap, input mentah akan digunakan pada Windows dan Linux untuk "
+"menghindari pengaturan akselerasi mouse OS."
 
 #: ../../docs/about/list_of_features.rst:401
 msgid "Gamepad input (up to 8 simultaneous controllers)."
-msgstr ""
+msgstr "Masukan Gamepad (hingga 8 pengontrol simultan)."
 
 #: ../../docs/about/list_of_features.rst:402
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "Masukan pena / tablet dengan dukungan tekanan."
 
 #: ../../docs/about/list_of_features.rst:405
 #, fuzzy
@@ -2707,7 +2890,7 @@ msgstr "Navigasi Terlihat"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "Algoritma A * dalam 2D dan 3D."
 
 #: ../../docs/about/list_of_features.rst:408
 #, fuzzy
@@ -2717,10 +2900,11 @@ msgstr "Navigasi Terlihat"
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
 msgstr ""
+"Dukungan untuk penghindaran rintangan dinamis direncanakan di Godot 4.0."
 
 #: ../../docs/about/list_of_features.rst:410
 msgid "Generate navigation meshes from the editor."
-msgstr ""
+msgstr "Buat jaring navigasi dari editor."
 
 #: ../../docs/about/list_of_features.rst:413
 #: ../../docs/about/docs_changelog.rst:60
@@ -2730,39 +2914,39 @@ msgstr "Jaringan"
 
 #: ../../docs/about/list_of_features.rst:415
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "Jaringan TCP tingkat rendah menggunakan StreamPeer dan TCP_Server."
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "Jaringan UDP tingkat rendah menggunakan PacketPeer dan UDPServer."
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "Permintaan HTTP tingkat rendah menggunakan HTTPClient."
 
 #: ../../docs/about/list_of_features.rst:418
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "Permintaan HTTP tingkat tinggi menggunakan HTTPRequest."
 
 #: ../../docs/about/list_of_features.rst:420
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "Mendukung HTTPS di luar kotak menggunakan sertifikat yang dibundel."
 
 #: ../../docs/about/list_of_features.rst:422
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr ""
+msgstr "API multipemain tingkat tinggi menggunakan UDP dan ENet."
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "Automatic replication using remote procedure calls (RPCs)."
-msgstr ""
+msgstr "Replikasi otomatis menggunakan panggilan prosedur jarak jauh (RPC)."
 
 #: ../../docs/about/list_of_features.rst:425
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "Mendukung transfer yang tidak dapat diandalkan, andal, dan teratur."
 
 #: ../../docs/about/list_of_features.rst:427
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "Klien dan server WebSocket, tersedia di semua platform."
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "WebRTC client and server, available on all platforms."
@@ -7314,11 +7498,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
@@ -14939,7 +15123,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Berkas Sistem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 #, fuzzy
@@ -49897,15 +50081,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -76556,7 +76740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -76641,7 +76825,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -82189,7 +82373,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""

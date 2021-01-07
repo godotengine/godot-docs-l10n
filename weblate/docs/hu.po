@@ -5,6 +5,7 @@
 # Ács Zoltán <acszoltan111@gmail.com>, 2020.
 # Árpád Horváth <horvatha4@googlemail.com>, 2018.
 # cefrebevalo <szmarci711@gmail.com>, 2020.
+# Czmorek Dávid <czmdav.soft@gmail.com>, 2020.
 # Gabor Csordas <gaborcsordas@yahoo.com>, 2018.
 # gergely87 <gergely87@gmail.com>, 2019.
 # JanosHorak <lyanos.horak@gmail.com>, 2019.
@@ -12,14 +13,15 @@
 # Lilla Ozgyin <lityupix@gmail.com>, 2019.
 # Máté Széles <szelessm@gmail.com>, 2020.
 # sztrovacsek <magadeve@gmail.com>, 2019.
+# thekeymethod <csokan.andras87@protonmail.ch>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-09-20 19:56+0000\n"
-"Last-Translator: Ács Zoltán <acszoltan111@gmail.com>\n"
+"PO-Revision-Date: 2020-12-19 21:46+0000\n"
+"Last-Translator: József Orosz <jozsef.orosz542@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -27,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -178,9 +180,8 @@ msgid "Community"
 msgstr "Közösség"
 
 #: ../../docs/index.rst:131
-#, fuzzy
 msgid "Class reference"
-msgstr "Class hivatkozás"
+msgstr "Osztály referencia"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -6640,7 +6641,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
@@ -12715,7 +12716,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr "Kulcs beszúrása"
+msgstr "Kulcs Beszúrása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -13937,7 +13938,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Node típus keresése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -13969,7 +13970,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr "Kijelöltek törlése"
+msgstr "Kiválasztottak törlése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -14342,7 +14343,7 @@ msgstr "Animáció"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr "Kijelölés megkettőzése"
+msgstr "Kijelölés Megkettőzése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14350,7 +14351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr "Áthelyezettek megkettőzése"
+msgstr "Áthelyezettek Megkettőzése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14366,7 +14367,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr "Kijelölés törlése"
+msgstr "Kijelölés Törlése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14374,7 +14375,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Ugrás a Következő Lépésre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14390,7 +14391,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr "Ugrás az előző lépésre"
+msgstr "Ugrás az Előző Lépésre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -16942,9 +16943,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Van néhány dolog, amit észben kell tartani:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
 msgid ""
@@ -20553,9 +20553,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "Szerkesztő"
+msgstr "A Godot Szerkesztő Beállításaiban:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -21369,9 +21368,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Van néhány különbség, ennek ellenére:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -24770,9 +24768,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Van néhány megjegyeznivaló:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -24898,9 +24895,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animáció"
+msgstr "Támogatott Animáció:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -26498,9 +26494,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Godot-nak két ikon típusra van szüksége:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
@@ -27491,9 +27486,8 @@ msgid "Exporting a PCK file"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Két mód van egy projekt szerverre történő exportálásra:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -36298,9 +36292,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:82
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Két mód van erre ezt megtenni:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
@@ -37064,9 +37057,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Kétféleképpen lehet alapanyagot egy CSG csomóhoz rendelni:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:264
 msgid ""
@@ -49222,7 +49214,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
@@ -51308,9 +51300,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Többféle tranzició típus létezik:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
@@ -73537,9 +73528,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
-#, fuzzy
 msgid "From your script:"
-msgstr "Leírás"
+msgstr "A scriptedből:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:151
 msgid "Bundling GDNative resources"
@@ -75875,7 +75865,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -75960,7 +75950,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -77094,9 +77084,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:251
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Itt van néhány technika a fizikumod felgyorsításához:"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
 msgid ""
@@ -84652,9 +84641,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "Windows"
+msgstr "Windows példa:"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -85357,9 +85345,8 @@ msgid "Internationalize a string"
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
-#, fuzzy
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "A Godot kódbázisnak kétféle típusú nemzetköziesítése van:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
@@ -85439,9 +85426,8 @@ msgid "Get project/editor settings"
 msgstr "Tesztelés"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
-#, fuzzy
 msgid "There are four macros available for this:"
-msgstr "Nincs felhasználási korlátozás a Godot-ra"
+msgstr "Négy macro áll rendelkezésre ehhez:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
@@ -86727,9 +86713,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "A dokumentációról"
+msgstr "Mostmár legenerálhatjuk a dokumentációt:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""

@@ -4,6 +4,7 @@
 #
 # Dreamknight7 <chalataom@gmail.com>, 2019.
 # Gunthee Tawewatmongkol <sirarat.t@ku.th>, 2019.
+# Kongfa Warorot <gongpha@hotmail.com>, 2020.
 # Poommetee Ketson <poommetee@protonmail.com>, 2018.
 # Sanhaphat Srijumpa <fluke031@hotmail.com>, 2020.
 # Thanachart Monpassorn <nunf_2539@hotmail.com>, 2020.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-08-23 15:59+0000\n"
-"Last-Translator: Sanhaphat Srijumpa <fluke031@hotmail.com>\n"
+"PO-Revision-Date: 2020-12-03 19:27+0000\n"
+"Last-Translator: Kongfa Warorot <gongpha@hotmail.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/th/>\n"
 "Language: th\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2.1-dev\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -43,6 +44,9 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
+"นี่คือคู่มือสำหรับสาขา 3.2 ที่เสถียร กำลังมองหาคู่มือของสาขาที่**ใช้พัฒนา**ขณะนี้หรือไม่? `งั้นดูที่นี่ "
+"<https://docs.godotengine.org/en/latest>`_ คุณยังสามารถหาคู่มือสำหรับสาขา `3.1 "
+"<https://docs.godotengine.org/en/3.1>`_ ที่เสถียรรุ่นก่อนได้"
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -72,7 +76,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -80,9 +83,9 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"ยินดีต้อนรับสู่คู่มือใช้งาน Godot Engine เกมเอ็นจิ้น 2 มิติและ 3 มิติที่ให้ใช้งานได้อย่างเสรี! "
-"ท่านจะได้พบกับเครื่องมือพัฒนาเกมที่ทรงพลังและใช้งานสะดวก สามารถพัฒนาเกมประเภทใดก็ได้ "
-"บนแพล็ตฟอร์มใดก็ได้ และไม่มีการจำกัดการใช้งานใด ๆ ทั้งสิ้น"
+"ยินดีต้อนรับสู่คู่มือ `Godot Engine <https://godotengine.org>`__ ทางการ ที่เป็นเอนจินเกม "
+"2D และ 3D ที่ฟรีและโอเพนซอร์สที่ขับเคลื่อนโดยชุมชน หากคุณยังเป็นมือใหม่ เราแนะนำให้คุณอ่าน :"
+"ref:`หน้าคำนำ <doc_about_intro>` เพื่อได้รู้ภาพรวมว่าคู่มือนี้เสนออะไรบ้าง"
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -2362,9 +2365,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "ส่งออก"
+msgstr "นำเข้า"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2476,9 +2478,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "แสดงการนำทาง"
+msgstr "ตัวนำทาง"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
@@ -4479,7 +4480,7 @@ msgstr ""
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:171
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -12017,7 +12018,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "ค้นหาความช่วยเหลือ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -12097,7 +12098,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr ""
+msgstr "เปิดฉาก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -12113,7 +12114,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr ""
+msgstr "ปิดฉาก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -12129,7 +12130,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "เปิดฉากที่ปิดไปใหม่"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -12224,9 +12225,8 @@ msgid "``editor/quick_open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
-#, fuzzy
 msgid "Quick Open Script"
-msgstr "ตัวอย่างใน GDScript::"
+msgstr "เปิดสคริปต์อย่างรวดเร็ว"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Ctrl + Alt + O`"
@@ -12360,7 +12360,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr ""
+msgstr "หยุดฉาก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12376,7 +12376,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "หยุด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12393,7 +12393,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr ""
+msgstr "เล่นฉาก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12446,7 +12446,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "ขยาย"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12465,7 +12465,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "ย่อ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12501,7 +12501,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
-msgstr ""
+msgstr "มุมมองแพน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
@@ -12587,7 +12587,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "ใช้สแนปอัจฉริยะ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12599,7 +12599,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "ใช้สแนปเส้นกริด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12660,7 +12660,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "แสดงเส้นไกด์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12673,7 +12673,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
-msgstr ""
+msgstr "ให้สิ่งที่เลือกอยู่ตรงกลาง"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12699,7 +12699,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "ดูตัวอย่างขนาดแคนวาส"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -12855,7 +12855,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
-msgstr ""
+msgstr "ปรับความเร็วมุมมองอิสระ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
@@ -12883,7 +12883,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
-msgstr ""
+msgstr "ใช้พื้นที่ภายใน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -12896,7 +12896,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "ใช้สแนป"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12904,7 +12904,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "สแนปออบเจกต์กับชั้น"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -12989,7 +12989,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "สลับมุมมองเพอร์สเปกทีฟ/ออโธโกนอล"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -13034,7 +13034,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
-msgstr ""
+msgstr "จัดการแปลงให้เข้ากับวิว"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -13050,7 +13050,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "จัดการหมุนให้เข้ากับวิว"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
@@ -13067,7 +13067,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 วิวพอร์ต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -13083,7 +13083,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 วิวพอร์ต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -13099,7 +13099,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 วิวพอร์ต (อีกแบบ)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -13115,7 +13115,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 วิวพอร์ต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -13131,7 +13131,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 วิวพอร์ต (อีกแบบ)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -13147,7 +13147,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 วิวพอร์ต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -13188,7 +13188,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "คัดลอก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13325,7 +13325,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "แทนที่"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13373,7 +13373,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "เลื่อนขึ้น"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13388,7 +13388,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "เลื่อนลง"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13479,7 +13479,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "ประเมินที่เลือก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13546,9 +13546,8 @@ msgid "``script_text_editor/capitalize``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
-#, fuzzy
 msgid "Convert Indent to Spaces"
-msgstr "ชนิดของตัวแทน"
+msgstr "แปลงย่อหน้าเป็นเว้นวรรค"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13564,7 +13563,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "แปลงการเยื้องเป็นแท็บ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13596,7 +13595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "เพิ่ม/ลบบุ๊คมาร์ค"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -13612,7 +13611,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
-msgstr ""
+msgstr "ไปบุ๊คมาร์คถัดไป"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
@@ -13624,16 +13623,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "ไปบุ๊คมาร์คก่อนหน้า"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "ฟังก์ชัน"
+msgstr "ไปยังฟังก์ชัน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -13645,7 +13643,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "ไปยังบรรทัด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13662,7 +13660,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "เปิด/ปิด เบรกพอยต์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13675,7 +13673,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "ลบเบรกพอยต์ทั้งหมด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13691,7 +13689,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "ไปเบรกพอยต์ถัดไป"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -13703,7 +13701,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "ไปเบรกพอยต์ก่อนหน้า"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -13734,9 +13732,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "ตำแหน่งรีซอร์ส"
+msgstr "เอดิเตอร์สคริปต์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13805,7 +13802,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "เปิดสคริปต์ที่พึ่งปิด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -13813,7 +13810,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "บันทึก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13837,7 +13834,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "โหลดสคริปต์ใหม่แบบซอฟต์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -13871,7 +13868,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "ปิด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13904,7 +13901,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "เปิด/ปิดแผงสคริปต์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13928,7 +13925,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "รีเซ็ตซูม"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -14045,7 +14042,7 @@ msgstr "เอดิเตอร์"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "คัดลอกที่เลือก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -14053,7 +14050,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "เคลียร์เอาต์พุต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -14107,7 +14104,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "ย้อนกลับ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -14115,7 +14112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "ไปหน้า"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -14123,7 +14120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "ขึ้นบน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -14131,7 +14128,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "รีเฟรช"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -14139,7 +14136,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "เปิด/ปิดไฟล์ที่ซ่อน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14155,7 +14152,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "เพิ่ม/ลบที่ชอบ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14163,7 +14160,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "สลับโหมด"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -14174,9 +14171,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "ตัววนซ้ำ"
+msgstr "สร้างโฟลเดอร์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14194,16 +14190,15 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "ลบ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
-#, fuzzy
 msgid "Focus Path"
-msgstr "ตำแหน่งรีซอร์ส"
+msgstr "ตำแหน่งที่สนใจ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14254,12 +14249,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "แผงระบบไฟล์"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "เส้นทาง"
+msgstr "คัดลอกตำแหน่ง"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14268,7 +14262,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "ทำซ้ำ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14292,7 +14286,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "เปลี่ยนชื่อหลายรายการ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -14349,7 +14343,7 @@ msgstr "ผังแอนิเมชัน"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "ทำซ้ำที่เลือก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14357,7 +14351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "ทำซ้ำและย้าย"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14373,7 +14367,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "ลบที่เลือก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14381,7 +14375,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "ไปยังขั้นถัดไป"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14397,7 +14391,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "ไปยังขั้นก่อนหน้า"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14506,7 +14500,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "Clear Transform"
-msgstr ""
+msgstr "เคลียร์การแปลง"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14571,7 +14565,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
-msgstr ""
+msgstr "โหมดขอบเขต"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14595,7 +14589,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
-msgstr ""
+msgstr "โหมดตัวบังแสง"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -14606,9 +14600,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "แสดงการนำทาง"
+msgstr "โหมด Navigation"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14620,7 +14613,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
-msgstr ""
+msgstr "โหมดบิทมาร์ก"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14656,7 +14649,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr ""
+msgstr "โหมด Z Index"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -14700,7 +14693,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
-msgstr "สัญญาอนุญาต"
+msgstr "ลิขสิทธิ์"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
@@ -15293,7 +15286,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "ประวัติ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -15332,7 +15325,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:122
 msgid "Identifiers"
-msgstr ""
+msgstr "ตัวระบุ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:124
 msgid ""
@@ -15344,7 +15337,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Keywords"
-msgstr ""
+msgstr "คีย์เวิร์ด"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
 msgid ""
@@ -15363,11 +15356,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Keyword"
-msgstr ""
+msgstr "คีย์เวิร์ด"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
@@ -15377,16 +15370,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 msgid "See for_."
@@ -15395,7 +15388,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:837
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 msgid "See while_."
@@ -15404,7 +15397,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:883
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 msgid "See match_."
@@ -15412,7 +15405,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -15420,7 +15413,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid ""
@@ -15429,7 +15422,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid ""
@@ -15439,7 +15432,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "Returns a value from a function."
@@ -15447,7 +15440,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -15463,7 +15456,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
-msgstr ""
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "Defines what class to extend with the current class."
@@ -15472,7 +15465,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 #: ../../docs/tutorials/i18n/locales.rst:364
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 msgid ""
@@ -15498,7 +15491,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "tool"
-msgstr ""
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "Executes the script in the editor."
@@ -15506,7 +15499,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "Defines a signal."
@@ -15514,7 +15507,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "Defines a function."
@@ -15522,7 +15515,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "Defines a static function. Static member variables are not allowed."
@@ -15897,7 +15890,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "**Type**"
-msgstr ""
+msgstr "**ประเภท**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "``45``"
@@ -16961,9 +16954,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "ยังมีสิ่งที่ต้องรู้:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
 msgid ""
@@ -18011,7 +18003,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
-msgstr ""
+msgstr "การย่อหน้า"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
@@ -18193,7 +18185,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
-msgstr ""
+msgstr "เว้นวรรค"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
@@ -19286,7 +19278,7 @@ msgstr "**เติมอักษรแบบยืดหยุ่น** ต้�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "การเว้นช่อง"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -19361,31 +19353,31 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**สไตล์**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
-msgstr ""
+msgstr "**ตัวอย่าง**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
-msgstr ""
+msgstr "**ผลลัพธ์**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
-msgstr ""
+msgstr "ดิกชันนารี"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "คีย์"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -19406,7 +19398,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "ลำดับ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
@@ -19415,7 +19407,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "ผสม"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
@@ -19428,7 +19420,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
-msgstr ""
+msgstr "อาร์เรย์"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
@@ -19474,7 +19466,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
-msgstr ""
+msgstr "เติมหลัง"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
@@ -20628,9 +20620,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "แอนดรอยด์"
+msgstr "ในการตั้งค่าตัวแก้ไข Godot:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -21443,9 +21434,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "ยังมีข้อแตกต่างบางอย่าง:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -24851,9 +24841,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีบางสิ่งที่ต้องสังเกต:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -24918,7 +24907,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:163
 msgid "Skeleton"
-msgstr ""
+msgstr "โครงหลัก"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -26578,9 +26567,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีประเภทของไอคอนสองประเภทที่จำเป็นโดย Godot:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
@@ -27571,9 +27559,8 @@ msgid "Exporting a PCK file"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีสองวิธีในการส่งออกโปรเจกต์สำหรับเซิร์ฟเวอร์:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -30291,7 +30278,7 @@ msgstr "ชนิด"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr ""
+msgstr "การแปลง"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -36386,9 +36373,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:82
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีสองวิธีในการทำ:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
@@ -37153,9 +37139,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีสองวิธีที่นำวัสดุไปใช้กับโหนด CSG:"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:264
 msgid ""
@@ -51390,9 +51375,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีประเภทของการเปลี่ยนแปลงหลายประเภท:"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
@@ -73622,9 +73606,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
-#, fuzzy
 msgid "From your script:"
-msgstr "รายละเอียด"
+msgstr "จากสคริปต์ของคุณ:"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:151
 #, fuzzy
@@ -74985,9 +74968,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
-#, fuzzy
 msgid "Console support in Godot"
-msgstr "Godot สนับสนุนการเขียนโปรแกรมภาษาใดบ้าง?"
+msgstr "การสนับสนุนคอนโซลใน Godot"
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
@@ -77188,9 +77170,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:251
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "นี่คือเทคนิคบางอย่างที่เพิ่มความเร็วฟิสิกส์:"
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
 msgid ""
@@ -81044,7 +81025,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
-msgstr ""
+msgstr "Deploy พร้อมดีบักผ่านเครือข่าย"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
@@ -81330,7 +81311,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
-msgstr ""
+msgstr "โปรไฟล์เน็ตเวิร์ก"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:81
 msgid ""
@@ -81342,7 +81323,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr ""
+msgstr "มอนิเตอร์"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
@@ -81355,7 +81336,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
-msgstr ""
+msgstr "หน่วยความจำวีดีโอ"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:97
 msgid ""
@@ -84741,9 +84722,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "วินโดวส์"
+msgstr "ตัวอย่างวินโดวส์:"
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -84891,7 +84871,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "เปิด"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
@@ -85446,9 +85426,8 @@ msgid "Internationalize a string"
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
-#, fuzzy
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีประเภทของการทำให้เป็นสากลใน Codebase ของ Godot อยู่สองประเภท:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
@@ -85528,9 +85507,8 @@ msgid "Get project/editor settings"
 msgstr "แอนดรอยด์"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
-#, fuzzy
 msgid "There are four macros available for this:"
-msgstr "ไม่มีข้อจำกัดการใช้งาน Godot"
+msgstr "มีสี่มาโครที่ใช้งานได้:"
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
@@ -86816,9 +86794,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "เกี่ยวกับคู่มือ"
+msgstr "ตอนนี้พวกเราสามารถสร้างคู่มือได้:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -92860,6 +92837,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: ทรัพยากรสร้างเกมส์โดย Andre Schmitz <https://godot-engine."
+"zeef.com/andre.antonio.schmitz>`_"
 
 #, fuzzy
 #~ msgid "Render order"

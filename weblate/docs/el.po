@@ -10,6 +10,7 @@
 # George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2020.
 # Konstantinos Poulopoulos <aatyrael@gmail.com>, 2018.
 # KostasMSC <kargyris@athtech.gr>, 2020.
+# lawfulRobot <czavantias@gmail.com>, 2020.
 # Michael Maridakis <michael.marid@gmail.com>, 2018.
 # Overloaded <manoschool@yahoo.gr>, 2019-2020.
 # THANOS SIOURDAKIS <siourdakisthanos@gmail.com>, 2019.
@@ -19,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-09-09 08:35+0000\n"
-"Last-Translator: KostasMSC <kargyris@athtech.gr>\n"
+"PO-Revision-Date: 2020-10-31 23:14+0000\n"
+"Last-Translator: Pierre Stempin <pierre.stempin@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
 "Language: el\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -1034,7 +1035,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Γιατί χρησιμοποιεί Vulkan ή OpenGL αντί για Direct3D το Godot;"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1214,15 +1215,16 @@ msgstr ""
 "τρίτων με τη Godot."
 
 #: ../../docs/about/faq.rst:265
-#, fuzzy
 msgid "When is the next release of Godot out?"
-msgstr "Πότε θα κυκλοφορήσει η επόμενη κυκλοφορία;"
+msgstr "Πότε θα κυκλοφορήσει η επόμενη διανομή Godot;"
 
 #: ../../docs/about/faq.rst:267
 msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"Όταν είναι έτοιμο! Ανατρέξτε στο: ref: "
+"`doc_release_policy_when_is_next_release_out` για περισσότερες πληροφορίες."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
@@ -1377,6 +1379,10 @@ msgid ""
 "smaller communities compared to Godot. This will make it more difficult to "
 "find answers to your questions."
 msgstr ""
+"Εάν θέλετε να χρησιμοποιήσετε μία βιβλιοθήκη απόδοσης, καλύτερα να κοιτάξετε "
+"για μία κατοχυρωμένη βιβλιοθήκη απόδοσης. Έχετε υπόψιν ότι οι βιβλιοθήκες "
+"απόδοσης συνήθως έχουν μικρότερες κοινότητες σε σύγκριση με το Godot. Αυτό "
+"θα το κάνει δυσκολότερο να βρείτε απαντήσεις στις ερωτήσεις σας."
 
 #: ../../docs/about/faq.rst:330
 msgid "Why does Godot not use STL (Standard Template Library)"
@@ -1397,9 +1403,9 @@ msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
-"Το πρότυπο STL δημιουργεί πολύ μεγάλα σύμβολα, τα οποία προκύπτουν σε "
-"τεράστια διόρθωση εντοπισμού σφαλμάτων. Εμείς αντιθέτως, χρησιμοποιούμε "
-"ελάχιστα πρότυπα χρησιμοποιώντας πολύ μικρά ονόματα."
+"Το πρότυπο STL δημιουργεί πολύ μεγάλα σύμβολα, τα οποία έχουν ως αποτελεσμα "
+"τεράστια αρχεία αποσφαλμάτωσης. Εμείς αντιθέτως, χρησιμοποιούμε ελάχιστα "
+"πρότυπα χρησιμοποιώντας πολύ μικρά ονόματα."
 
 #: ../../docs/about/faq.rst:337
 msgid ""
@@ -1545,13 +1551,15 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Επίλυση προβλημάτων"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Αυτή η σελίδα παραθέτει κοινά ζητήματα που αντιμετωπίζονται κατά τη χρήση "
+"του Godot και πιθανές λύσεις."
 
 #: ../../docs/about/troubleshooting.rst:9
 msgid ""
@@ -2575,7 +2583,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:351
 msgid "MIDI input."
-msgstr "Είσοδος MIDI"
+msgstr "Είσοδος MIDI."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
@@ -2716,9 +2724,8 @@ msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Δημιουργία Πλοήγησης"
+msgstr "Πλέγματα Πλοήγησης."
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -3746,7 +3753,7 @@ msgstr "Μάρτιος 2019"
 #: ../../docs/about/release_policy.rst:45
 msgid "|partial| Only critical, security and platform support fixes."
 msgstr ""
-"|μερική| Μόνο κρίσιμες διορθώσεις, διορθώσεις ασφαλείας και διορθώσεις "
+"|partial| Μόνο κρίσιμες διορθώσεις, διορθώσεις ασφαλείας και διορθώσεις "
 "υποστήριξης πλατφόρμας."
 
 #: ../../docs/about/release_policy.rst:43
@@ -7189,11 +7196,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1310
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
@@ -14785,7 +14792,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Σύστημα αρχείων"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -21080,9 +21087,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "Επεξεργαστής"
+msgstr "Στις ρυθμίσεις επεξεργαστή Godot:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -24827,9 +24833,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Προσθήκη αρχείων στο έργο"
+msgstr "Προσθέτωντας ανίχνευση συγκρούσεων σε αντικείμενα."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
 #, fuzzy
@@ -28277,14 +28282,12 @@ msgid "Methods."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "Σταθερές"
+msgstr "Σταθερές."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "Σήματα"
+msgstr "Σήματα."
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid ""
@@ -46467,9 +46470,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Παράδειγμα Windows:"
+msgstr "Παράδειγμα κώδικα:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -47844,11 +47846,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "Δείτε :ref:`doc_ways_to_contribute`"
+msgstr "Για περισσότερες πληροφορίες, δείτε :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -49731,15 +49732,15 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:640
 msgid "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=mvmuCPvRoWQ"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:642
 msgid "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
-msgstr ""
+msgstr "https://www.youtube.com/watch?v=d4EgbgTm0Bg"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:644
 msgid "https://eater.net/quaternions"
-msgstr ""
+msgstr "https://eater.net/quaternions"
 
 #: ../../docs/tutorials/math/interpolation.rst:6
 msgid ""
@@ -76390,7 +76391,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
-msgstr ""
+msgstr "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
 
 #: ../../docs/tutorials/content/making_trees.rst:21
 msgid "and opened it in Blender."
@@ -76475,7 +76476,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -76923,9 +76924,8 @@ msgid "Optimize bottleneck."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:210
-#, fuzzy
 msgid "Return to step 1."
-msgstr "Επιστροφή"
+msgstr "Επιστροφή στο 1ο βήμα."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:213
 msgid "Optimizing bottlenecks"
@@ -82037,7 +82037,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""

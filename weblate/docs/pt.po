@@ -1,25 +1,25 @@
-# Godot Engine Documentation in Slovenian
+# Godot Engine Documentation in Portuguese
 # Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# matevž lapajne <sivar.lapajne@gmail.com>, 2018.
+# DeeJayLSP <djlsplays@gmail.com>, 2020.
+# João Lopes <linux-man@hotmail.com>, 2020.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-10-31 23:15+0000\n"
-"Last-Translator: Pierre Stempin <pierre.stempin@gmail.com>\n"
-"Language-Team: Slovenian <https://hosted.weblate.org/projects/godot-engine/"
-"godot-docs/sl/>\n"
-"Language: sl\n"
+"PO-Revision-Date: 2020-11-24 04:12+0000\n"
+"Last-Translator: João Lopes <linux-man@hotmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.4-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -63,7 +63,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -71,10 +70,6 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"Pozdravljeni v uradni dokumentaciji Godot Engine, brezplačni in odprtokodni "
-"2D in 3D igralni pogon! za tem grižljajem boste našli zmogljivo in še "
-"uporabniku prijazno orodje, ki ga lahko uporabljate za izdelavo katerekoli "
-"igre, za vsako okolje in brez omejitve uporabe."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -113,7 +108,7 @@ msgstr ""
 
 #: ../../docs/index.rst:61
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: ../../docs/index.rst:69
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
@@ -131,7 +126,7 @@ msgstr ""
 
 #: ../../docs/index.rst:121
 msgid "Community"
-msgstr "Skupnost"
+msgstr "Comunidade"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
@@ -142,7 +137,7 @@ msgstr ""
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "O Programu"
+msgstr "Sobre"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -224,7 +219,7 @@ msgstr "O Programu"
 #: ../../docs/development/editor/editor_style_guide.rst:7
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 msgid "Introduction"
-msgstr "Predstavitev"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -233,21 +228,13 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Pozdravljeni v uradni dokumentaciji Godot Engine, brezplačni in odprtokodni "
-"2D in 3D igralni pogon! za tem grižljajem boste našli zmogljivo in še "
-"uporabniku prijazno orodje, ki ga lahko uporabljate za izdelavo katerekoli "
-"igre, za vsako okolje in brez omejitve uporabe."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Tale stran ima namen dati osnovno predstavitev igralnega pogona in vsebine "
-"te dokumentacije, tako da boste kot začetnik vedeli kje začeti ali kje "
-"pogledati, če boste potrebovali informacije o specifičnih značilnostih."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
@@ -269,21 +256,16 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "O Godot Engine"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"Igralni pogon je zahtevno orodje in ga je težko predstaviti v nekaj besedah, "
-"zato je tukaj naša PR predstavitev, ki jo lahko večkrat uporabite, če "
-"potrebujete hitro osvežitev o Godot Engine."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -292,12 +274,6 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine je funkcijsko-zapakiran, več-okoljski igralni pogon za izdelavo "
-"2D in 3D iger z enotnega vmesnika. Zagotavlja obširen nabor osnovnih orodij, "
-"da se uporabnik lahko osredotoči na izdelovanje iger brez odkrivanja "
-"Amerike. Igre so lahko izvožene v enem kliku v številna okolja, vključno z "
-"glavnimi platformami (Linux, macOS, Windows) kot tudi mobilne (Android, iOS) "
-"in spletne (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -308,12 +284,6 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot je odprtokoden in popolnoma brezplačen pod zelo svobodno licenco MIT. "
-"Brez obveznosti in licenčnine. Razvijalčeve igre so njihove, do konca zadnje "
-"vrstice kode. Razvoj Godota je v celoti samostojno in skupinsko vodeno, s "
-"spodbujanjem uporabnikov za pomoč pri oblikovanju pogona, da se ujema z "
-"njihovimi pričakovanji. Podprto je s strani `Software Freedom Conservancy "
-"<https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -321,15 +291,12 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"Za poglobljen vpogled v pogon, vam priporočamo, da berete to dokumentacijo "
-"naprej, še posebno :ref:`Step by step <toc-learn-step_by_step>` vajo."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
-msgstr "O dokumentaciji"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:59
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -338,12 +305,6 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Ta dokumentacija je nenehno pisana, popravljena, urejena in prenovljena s "
-"strani članov Godot Engine skupnosti. Urejeno je s tekstnimi datoteki v "
-"`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
-"označevalni jezik in potem prevedeno v statično stran/dokument z uporabo "
-"odprtokodnega `Sphinx <http://www.sphinx-doc.org>`_ in `ReadTheDocs <https://"
-"readthedocs.org/>`_ orodij."
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -353,10 +314,6 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"H dokumentaciji Godot lahko prispevate z odpiranjem težavnih kart ali "
-"pošiljanjem popravkov preko GitHub `vir repozitorija <https://github.com/"
-"godotengine/godot-docs>`_, ali s prevajanjem v svoj jezik na `Domeni Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -365,25 +322,17 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
-"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
-"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
-"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:77
-#, fuzzy
 msgid "Organization of the documentation"
-msgstr "Organizacija dokumentacije"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"Dokumentacija je organizirana v pet odstavkov z impresivno neuravnovešeno "
-"porazdelitevijo vsebine - vendar na način kako je razdeljena bi moralo biti "
-"intuitivno:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -391,32 +340,20 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-":ref:`sec-general` odstavek vsebuje to predstavitev kot tudi informacije o "
-"pogonu, njegovo zgodovino in licenčnino, avtorje itd. Vsebuje tudi :ref:"
-"`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
 "games. It starts with the :ref:`Step by step <toc-learn-step_by_step>` "
 "tutorial which should be the entry point for all new users."
 msgstr ""
-":ref:`sec-learn` odstavek je glavni razlog za izdelavo te dokumentacije, ker "
-"vsebuje vse potrebne informacije kako uporabljati igralni pogon za izdelavo "
-"iger. Začne se z :ref:`korak za korakom <toc-learn-step_by_step>` vajo, "
-"katera bi morala biti vstopna točka za vse nove uporabnike."
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-":ref:`sec-tutorials` odstavek, na drugi strani pa je lahko prebran, ko ga "
-"potrebujemo, v katerem koli vrstnem redu. Vsebuje veliko značilno-določenih "
-"vaj in dokumentacij."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -424,12 +361,8 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-":ref:`sec-devel` odstavek je namenjen za napredne uporabnike in tiste, ki "
-"želijo prispevati pri razvijanju Godot-a, z informacijami kako prevajati "
-"pogon, razvijati C++ module ali vtičnike za urejevalnik."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -437,11 +370,6 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"The :ref:`sec-community` daje informacije navezujoče na prispevanje h "
-"razvijanju pogona in življenje skupnosti, npr. kako poročati o napakah, "
-"pomoč pri dokumentaciji, itd. Kaže tudi na različne skupinske kanale kot IRC "
-"in Discord in vsebuje seznam priporočenih \"tretjih\" vaj zunaj te "
-"dokumentacije."
 
 #: ../../docs/about/introduction.rst:101
 msgid ""
@@ -451,11 +379,6 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"Na koncu, :ref:`sec-class-ref` je dokumentacija Godot API, katera je "
-"dostopna neposredno v urejevalniku skript pogona. Ustvarjena  je samodejno "
-"iz datoteke v glavnem viru repozitorija, zato ustvarjene datoteke "
-"dokumentacije niso mišljene za spreminjanje. Glejte :ref:"
-"`doc_updating_the_class_reference` za podrobnosti."
 
 #: ../../docs/about/introduction.rst:107
 msgid ""
@@ -463,12 +386,10 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr "Uživajte ob branju in izdelovanju iger z Godot Engine!"
+msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
@@ -478,27 +399,24 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
 #: ../../docs/tutorials/optimization/batching.rst:478
 msgid "Frequently asked questions"
-msgstr "Pogosto zastavljena vprašanja"
+msgstr ""
 
 #: ../../docs/about/faq.rst:10
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr "Kaj lahko naredim z Godot? Koliko stane? Kakšni so licenčni pogoji?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:12
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot je Free/Libre Open Source Software dostopen pod `OSI-approved <https://"
-"opensource.org/licenses/MIT>`_ MIT license."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr "V kratkem:"
+msgstr ""
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -507,24 +425,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:17
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Lahko spremenite, (re)distribuirate in združite Godot z vsebino vašega srca"
 
 #: ../../docs/about/faq.rst:19
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
-"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
-"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -532,9 +444,6 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"Logotipi in ikone so ponavadi pod isto Creative Commons licenco. "
-"Upoštevajte, da imajo nekatere \"tretje\" knjižnice, ki jih vsebuje Godot z "
-"izvorno kodo, različne licence."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -544,33 +453,25 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Za vse podrobnosti, poglejte v `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_ kot tudi v `LICENSE.txt "
-"<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ in "
-"`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
-"LOGO_LICENSE.md>`_ datoteke v Godot repozitoriju."
 
 #: ../../docs/about/faq.rst:31
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Glejte tudi `licenčno stran na strani Godot <https://godotengine.org/"
-"license>`_."
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "Katera okolja podpira Godot?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**Za urejevalnik:**"
+msgstr ""
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "Windows"
-msgstr "Windows"
+msgstr ""
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
@@ -593,42 +494,39 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "**Za izvoz iger:**"
+msgstr ""
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr "Windows (in UWP)"
+msgstr ""
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:363
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
 #: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "iOS"
-msgstr "iOS"
+msgstr ""
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr "Splet"
+msgstr ""
 
 #: ../../docs/about/faq.rst:51
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Podprte so 32 in 64-bitne datoteke, kjer je to smiselno, pri čemer je "
-"prevzeto 64."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -637,41 +535,28 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:57
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Nekateri uporabniki poročajo o uspešnem grajenju in uporabljanju Godot-a na "
-"ARM procesorjih, ki temeljijo na sistemu linux, npr. Raspberry Pi. Obstaja "
-"pa tudi nekaj neuradnega \"tretjega\" dela pri izgradnji za nekatere "
-"konzole. Vsekakor pa to ni vključeno v privzete skripte za zgradnjo ali "
-"izvozne predloge."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Več o tem si poglejte v poglavjih :ref:`izvažanje <toc-learn-workflow-"
-"export>` in :ref:`prevajanje Godot-a sami <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "Kateri jeziki podpirajo Godot?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:67
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"Uradno podprti jeziki za Godot so GDScript, Visual Scripting, C# in C++. "
-"Oglejte si podkategorije za vsak jezik v razdelku :ref:`programiranje <toc-"
-"learn-scripting>`."
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -695,7 +580,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -703,9 +587,6 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Delo trenutno poteka, na primer, neurana povezava Godot z `Python <https://"
-"github.com/touilleMan/godot-python>`_ in `Nim <https://github.com/pragmagic/"
-"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:93
 msgid "What is GDScript and why should I use it?"
@@ -744,7 +625,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:114
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -756,13 +636,6 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Kratek odgovor je, da menimo, da je dodatna zapletenost na vaši strani (Ko "
-"se prvič učimo Godot in GDScript), pa tudi na naši strani (vzdrževanje) "
-"vredno večje povezanosti in prezhibne izkušnje kot pa privabljanje dodatnih "
-"uporabnikov z znajem bolj znanih programskih jezikov, katerih razultat bi "
-"prinašal slabše izkustvo. Razumemo, če bi raje uporabljali drug jezik v "
-"Godot (poglejte seznam podprtih možnosti spodaj), vendar vas spodbujamo, da "
-"ga poizkusite in videli boste prednosti, ki jih prinaša."
 
 #: ../../docs/about/faq.rst:123
 msgid ""
@@ -770,8 +643,6 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
-"Več informacij, da se navadite uporabljati GDScript ali druge tipizirane "
-"jezike najdete v :ref:`doc_gdscript_more_efficiently` vaji."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
@@ -792,62 +663,43 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"V večini jezikov VM ni dobre podpore za programske niti, Godot pa uporablja "
-"(Lua, Python, Squirrel, JS, AS itd.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"V večini jezikov VM, ni dobre razširitvene podpore za razrede. Njihova "
-"prilagoditev delovanju Godota je zelo neučinkovita (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Grozen vmesnik za vezavo na C++ da velikem številu kode kot rezultat, "
-"napake, zastoje in splošno neučinkovitost (Lua, Python, Squirrel, JS, etc.)"
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
 "ActionScript, etc.)."
 msgstr ""
-"Brez vgrajenih algebričnih tipov (vector3, matrix4, itd.), kar ima za "
-"posledico zmanjšano zmogljivost, pri svoji izbiri tipov (Lua, Python, "
-"Squirrel, JS, AS, itd.)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Zbiralnik smeti se zaustavlja ali ima nepotrebno veliko pomnilnika (Lua, "
-"Python, JS, AS itd.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
-"Težavnosti pri spoznavanju urejevalnika kode za zagotavljanje dokončevanja "
-"besed, urejanje v živo, itd. (vse od njih), je dobro podprto z GDScript."
 
 #: ../../docs/about/faq.rst:153
 msgid "GDScript was designed to curtail the issues above, and more."
@@ -858,19 +710,12 @@ msgid "What type of 3D model formats does Godot support?"
 msgstr ""
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). If you are "
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Dejstvo je da, ima Godot zelo dobro podporo za Collada, zato je priporočeno "
-"uporabljati izvoznik `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_, ker ponuja najboljše možno "
-"združljivost, če uporablajte Maya ali 3DS Max. Če pa uporabljate Blender, si "
-"oglejte naš izvoznik `Better Collada Exporter <https://godotengine.org/"
-"download>`_."
 
 #: ../../docs/about/faq.rst:161
 msgid "As of Godot 3.0, glTF is supported."
@@ -884,11 +729,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:167
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Ali bo v Godotu podprta vstavitev zaprtih SDK, kot so PhysX, GameWorks itd. ?"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
@@ -1021,42 +864,33 @@ msgid "How can I extend Godot?"
 msgstr ""
 
 #: ../../docs/about/faq.rst:250
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Za ustvarjanje dodatkov za Godot Editor si oglejte :ref:`EditorPlugins "
-"<doc_making_plugins>` in orodne skripte."
 
 #: ../../docs/about/faq.rst:254
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Poglejte si tudi uradne objeve v spletnem blogu na to temo:"
+msgstr ""
 
 #: ../../docs/about/faq.rst:256
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
-"`Poglejte si strukturo GDNative <https://godotengine.org/article/look-"
-"gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:257
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`Tukaj je GDNative! <https://godotengine.org/article/dlscript-here>`_"
+msgstr ""
 
 #: ../../docs/about/faq.rst:259
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"Lahko si tudi ogledate uporabo GDScript in Godot modulov, kot tudi `neuradno "
-"podporo Pythona <https://github.com/touilleMan/godot-python>`_ za Godot."
 
 #: ../../docs/about/faq.rst:265
 msgid "When is the next release of Godot out?"
@@ -1467,14 +1301,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "Prihodnost"
+msgstr "Características"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1533,7 +1365,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
-msgstr "Urejevalnik"
+msgstr "Editor"
 
 #: ../../docs/about/list_of_features.rst:43
 #: ../../docs/about/list_of_features.rst:85
@@ -1546,9 +1378,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:46
-#, fuzzy
 msgid "Script editor."
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:47
 msgid ""
@@ -1593,9 +1424,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:62
-#, fuzzy
 msgid "Live camera replication."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Move the in-editor camera and see the result in the running project."
@@ -1606,9 +1436,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:68
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Vtičniki"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:70
 msgid ""
@@ -1722,9 +1551,8 @@ msgid "CPU-based particles."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:112
-#, fuzzy
 msgid "2D tools"
-msgstr "Orodja"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
@@ -1787,9 +1615,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
@@ -2060,9 +1887,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "Orodja"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
@@ -2142,14 +1968,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2222,9 +2046,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
@@ -2280,7 +2103,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:28
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr "Zvok"
+msgstr "Áudio"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
@@ -2334,9 +2157,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "Izvozi"
+msgstr "Importar"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2351,9 +2173,8 @@ msgid "*Images:* See :ref:`doc_import_images`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Zvok"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2422,9 +2243,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:395
-#, fuzzy
 msgid "Mouse input."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
@@ -2447,18 +2267,16 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "Animacija"
+msgstr "Navegação"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2708,9 +2526,8 @@ msgid ":ref:`Stack <class_BoxContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
@@ -2768,7 +2585,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:377
 msgid "Animation"
-msgstr "Animacija"
+msgstr "Animação"
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Direct kinematics and inverse kinematics."
@@ -2958,33 +2775,28 @@ msgid "2D"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:25
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:31
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:36
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:37
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -2992,9 +2804,8 @@ msgid "Inputs"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:42
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
@@ -3027,49 +2838,42 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:62
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Vtičniki"
+msgstr "Plugins"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:74
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
@@ -3078,9 +2882,8 @@ msgid "Multi-threading"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
@@ -3097,30 +2900,25 @@ msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
@@ -3175,9 +2973,8 @@ msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:125
 msgid ":ref:`doc_scenes_versus_scripts`"
@@ -3313,9 +3110,8 @@ msgid ":ref:`doc_particle_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:187
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
@@ -3555,9 +3351,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
-msgstr "Predstavitev"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -4046,7 +3841,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
-msgstr "Uspelo je!"
+msgstr "Sucesso!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
@@ -4641,7 +4436,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
-msgstr ""
+msgstr "Botão"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "The scene tree should look like this:"
@@ -4939,7 +4734,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "Skupine"
+msgstr "Grupos"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -5126,9 +4921,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signali"
+msgstr "Sinal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1343
@@ -5137,7 +4931,7 @@ msgstr "Signali"
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:696
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
-msgstr "Signali"
+msgstr "Sinais"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
@@ -5497,9 +5291,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -5852,9 +5645,8 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
-#, fuzzy
 msgid "Node setup"
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Click Scene -> New Scene and add the following nodes:"
@@ -5929,9 +5721,8 @@ msgid "Save the scene."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
-#, fuzzy
 msgid "Enemy script"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -6170,9 +5961,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid "Testing the scene"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
@@ -6676,9 +6466,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -6715,9 +6504,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
-#, fuzzy
 msgid "Export presets"
-msgstr "Izvozi"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
@@ -10074,7 +9862,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:259
 #: ../../docs/community/tutorials.rst:53
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -10856,7 +10644,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
-msgstr ""
+msgstr "Carregamento automático"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
@@ -11104,7 +10892,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
-msgstr "Opis"
+msgstr "Descrição"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11432,9 +11220,8 @@ msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -11529,7 +11316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
-msgstr "Pot"
+msgstr "Caminho"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
@@ -11861,9 +11648,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
-#, fuzzy
 msgid "General Editor Actions"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -11896,9 +11682,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Windows, Linux"
-msgstr "Windows"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -11914,14 +11699,12 @@ msgstr "Windows"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Editor setting"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Urejevalnik"
+msgstr "Abrir Editor 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -11936,9 +11719,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Urejevalnik"
+msgstr "Abrir Editor 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -11954,7 +11736,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Abrir Editor de Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -11972,7 +11754,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Procurar em Ajuda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -11987,9 +11769,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "Animacija"
+msgstr "Modo Livre de Distrações"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -12005,7 +11786,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Próxima guia"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -12021,7 +11802,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Guia anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -12053,7 +11834,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr ""
+msgstr "Abrir Cena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -12069,7 +11850,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr ""
+msgstr "Fechar Cena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -12085,7 +11866,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Reabrir Cena Fechada"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -12103,7 +11884,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr ""
+msgstr "Guardar Cena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12135,7 +11916,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Guardar todas as Cenas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -12198,7 +11979,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Desfazer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -12217,7 +11998,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Refazer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12233,7 +12014,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Sair"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -12249,7 +12030,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr ""
+msgstr "Sair para a Lista de Projetos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -12265,7 +12046,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Captura do Ecrã"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12281,7 +12062,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Alternar Ecrã completo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12297,7 +12078,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Executar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12315,7 +12096,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr ""
+msgstr "Pausar Cena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12331,7 +12112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "Parar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12348,7 +12129,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr ""
+msgstr "Executar Cena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12365,7 +12146,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr ""
+msgstr "Executar Cena Personalizada"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12383,7 +12164,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Expandir Painel do Fundo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -12400,7 +12181,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Aumentar Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12419,7 +12200,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Diminuir Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12437,7 +12218,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Reposição do Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -12455,7 +12236,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
-msgstr ""
+msgstr "Vista Pan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
@@ -12468,7 +12249,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Modo Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12483,7 +12264,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Modo Mover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12499,7 +12280,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Modo Rodar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12514,7 +12295,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Modo Escalar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -12528,7 +12309,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "Modo Régua"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -12541,7 +12322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Usar Ajuste Inteligente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12553,7 +12334,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Usar Ajuste de Grelha"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12565,7 +12346,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Multiplicar passo da grelha por 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12577,7 +12358,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Dividir passo da grelha por 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12589,7 +12370,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr ""
+msgstr "Mostrar Grelha Sempre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -12602,7 +12383,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
-msgstr ""
+msgstr "Mostrar Ajudantes"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -12614,7 +12395,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Mostrar Guias"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12627,7 +12408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
-msgstr ""
+msgstr "Centrar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12640,7 +12421,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Seleção de Frame"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12653,7 +12434,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "Pré-visualizar Escala do Canvas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -12669,7 +12450,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Inserir Chave"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -12681,7 +12462,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "Inserir Chave (Pistas existentes)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -12716,7 +12497,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "Limpar Pose"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -12732,7 +12513,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
-msgstr ""
+msgstr "Alternar Freelook"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
@@ -12740,7 +12521,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
-msgstr ""
+msgstr "Freelook Esquerda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
@@ -12753,7 +12534,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
-msgstr ""
+msgstr "Freelook Direita"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
@@ -12765,7 +12546,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
-msgstr ""
+msgstr "Freelook Frente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
@@ -12773,7 +12554,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
-msgstr ""
+msgstr "Freelook Trás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
@@ -12781,7 +12562,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
-msgstr ""
+msgstr "Freelook Cima"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
@@ -12789,7 +12570,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
-msgstr ""
+msgstr "Freelook Baixo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
@@ -12797,7 +12578,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
-msgstr ""
+msgstr "Freelook Modificador de Velocidade"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
@@ -12809,7 +12590,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
-msgstr ""
+msgstr "Freelook Modificador de Lentidão"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
@@ -12837,7 +12618,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
-msgstr ""
+msgstr "Usar Espaço Local"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -12850,7 +12631,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Usar Ajuste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12858,7 +12639,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Ajustar Objetos ao Chão"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -12871,7 +12652,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Vista de Topo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -12883,7 +12664,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Vista de Fundo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -12895,7 +12676,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Vista de Frente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -12907,7 +12688,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Vista de Trás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -12919,7 +12700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Vista Direita"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -12931,7 +12712,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Vista Esquerda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -12943,7 +12724,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Alternar Vista Perspetiva/Ortogonal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -12954,9 +12735,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Animacija"
+msgstr "Inserir Chave de Animação"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -12968,7 +12748,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
-msgstr ""
+msgstr "Focar na Origem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
@@ -12980,7 +12760,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
-msgstr ""
+msgstr "Focar na Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
@@ -12988,7 +12768,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
-msgstr ""
+msgstr "Alinhar Transformação com Vista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -13004,7 +12784,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "Alinhar Rotação com Vista"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
@@ -13021,7 +12801,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 Viewport"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -13037,7 +12817,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -13053,7 +12833,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 Viewports (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -13069,7 +12849,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -13085,7 +12865,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 Viewports (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -13101,7 +12881,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -13116,13 +12896,12 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
-#, fuzzy
 msgid "Text Editor"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Cortar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -13142,7 +12921,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13168,7 +12947,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Colar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -13186,7 +12965,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Selecionar Tudo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -13228,7 +13007,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Localizar Seguinte"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -13242,7 +13021,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Localizar Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -13259,9 +13038,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Vtičniki"
+msgstr "Localizar em Ficheiros"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -13279,7 +13057,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Substituir"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13327,7 +13105,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Mover para cima"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13342,7 +13120,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Mover para baixo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13354,7 +13132,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Apagar Linha"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13372,7 +13150,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Alternar Comentário"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13388,7 +13166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Fechar/Abrir Linha"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13401,7 +13179,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "Clonar Abaixo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13421,7 +13199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "Completar Símbolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -13433,7 +13211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "Avaliar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13449,7 +13227,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Apagar Espaços nos Limites"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -13465,7 +13243,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Maiúsculas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13477,7 +13255,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Minúsculas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13489,7 +13267,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Capitalizar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13501,7 +13279,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
-msgstr ""
+msgstr "Converter Indentação em Espaços"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13517,7 +13295,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Converter Indentação em Tabulação"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13533,7 +13311,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Indentação Automática"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13549,7 +13327,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "Alternar Marcador"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -13565,7 +13343,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
-msgstr ""
+msgstr "Ir para Próximo Marcador"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
@@ -13577,16 +13355,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "Ir para Marcador Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "Predstavitev"
+msgstr "Ir para Função"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -13598,7 +13375,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Vai para Linha"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13615,7 +13392,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Alternar Breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13628,7 +13405,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Remover Todos os Breakpoints"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13644,7 +13421,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "Ir para Próximo Breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -13656,7 +13433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "Ir para Breakpoint Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -13672,7 +13449,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "Ajuda Contextual"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -13687,9 +13464,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "Pot"
+msgstr "Editor de Script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13724,9 +13500,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -13758,7 +13533,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "Reabrir Script Fechado"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -13766,7 +13541,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Guardar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13782,7 +13557,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Guardar Tudo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13790,7 +13565,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "Script de Recarregamento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -13798,7 +13573,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr ""
+msgstr "Histórico Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
@@ -13811,7 +13586,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr ""
+msgstr "Histórico Seguinte"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -13824,7 +13599,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13841,7 +13616,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
-msgstr "Zaženi"
+msgstr "Executar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Ctrl + Shift + X`"
@@ -13857,7 +13632,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Alternar Painel de Scripts"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13881,7 +13656,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Repor Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -13893,7 +13668,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Localizar Tipo de Nó"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -13901,7 +13676,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr ""
+msgstr "Copiar Nós"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -13909,7 +13684,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
-msgstr ""
+msgstr "Cortar Nós"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
@@ -13917,7 +13692,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "Paste Nodes"
-msgstr ""
+msgstr "Colar Nós"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -13925,7 +13700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "Apagar Selecionado"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -13951,7 +13726,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
-msgstr ""
+msgstr "Criar Função"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -13962,9 +13737,8 @@ msgid "``visual_script_editor/create_function``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
-#, fuzzy
 msgid "Edit Member"
-msgstr "Člani"
+msgstr "Editar Membro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -13980,7 +13754,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "Atualizar Gráfico"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -13991,14 +13765,13 @@ msgid "``visual_script_editor/toggle_breakpoint``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
-#, fuzzy
 msgid "Editor Output"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "Copiar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -14006,7 +13779,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "Limpar Saída"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -14015,11 +13788,11 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:378
 #: ../../docs/tutorials/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr "Razhroščevalnik"
+msgstr "Depurador"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "Passar Dentro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -14031,7 +13804,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "Passar Sobre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -14043,7 +13816,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -14059,7 +13832,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Voltar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -14067,7 +13840,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Avançar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -14075,7 +13848,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Subir"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -14083,7 +13856,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Atualizar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -14091,7 +13864,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Alternar Ficheiros Escondidos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14107,7 +13880,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Alternar Favorito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14115,7 +13888,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Alternar Modo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -14127,7 +13900,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
-msgstr ""
+msgstr "Criar Pasta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14145,7 +13918,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Apagar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -14153,7 +13926,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr ""
+msgstr "Caminho de Foco"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14168,7 +13941,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Mover Favorito para Cima"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -14186,7 +13959,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Mover Favorito para Baixo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -14204,12 +13977,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Doca de Sistema de Ficheiros"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Pot"
+msgstr "Copiar Caminho"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14218,7 +13990,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14234,7 +14006,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr ""
+msgstr "Adicionar Nó Filho"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -14242,7 +14014,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "Renomear em Massa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -14258,7 +14030,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Copiar Caminho do Nó"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14293,13 +14065,12 @@ msgid "``scene_tree/move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
-#, fuzzy
 msgid "Animation Track Editor"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Duplicar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14307,7 +14078,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Duplicar Transposto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14323,7 +14094,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "Apagar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14331,7 +14102,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Ir para Próximo Passo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14347,7 +14118,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Ir para Passo Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14367,7 +14138,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "Localizar Tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -14375,7 +14146,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "Escolher Tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -14387,7 +14158,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
-msgstr ""
+msgstr "Pintar Tile"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
@@ -14399,16 +14170,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
-msgstr ""
+msgstr "Balde de Enchimento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "Preoblikovanje"
+msgstr "Transpor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -14416,7 +14186,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Inverter na Horizontal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -14428,7 +14198,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Inverter na Vertical"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -14440,7 +14210,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Rodar Esquerda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
@@ -14448,16 +14218,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
-msgstr ""
+msgstr "Rodar Direita"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
-#, fuzzy
 msgid "Clear Transform"
-msgstr "Preoblikovanje"
+msgstr "Limpar Transformação"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14465,7 +14234,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Selecionar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14477,7 +14246,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
-msgstr ""
+msgstr "Cortar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -14489,20 +14258,19 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
-msgstr ""
+msgstr "Apagar Seleção"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
-msgstr ""
+msgstr "Próxima Coordenada"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
@@ -14510,7 +14278,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "Previous Coordinate"
-msgstr ""
+msgstr "Coordenada Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
@@ -14521,9 +14289,8 @@ msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
-#, fuzzy
 msgid "Region Mode"
-msgstr "Animacija"
+msgstr "Modo Região"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14534,9 +14301,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "Vidne Oblike Trka"
+msgstr "Modo Colisão"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -14548,7 +14314,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
-msgstr ""
+msgstr "Modo Oclusão"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -14559,9 +14325,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "Animacija"
+msgstr "Modo Navegação"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14572,9 +14337,8 @@ msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
-#, fuzzy
 msgid "Bitmask Mode"
-msgstr "Animacija"
+msgstr "Modo Bitmask"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14586,7 +14350,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "Modo Prioridade"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -14597,9 +14361,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
-#, fuzzy
 msgid "Icon Mode"
-msgstr "Animacija"
+msgstr "Modo Ícone"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -14611,7 +14374,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr ""
+msgstr "Modo Índice Z"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -14622,9 +14385,8 @@ msgid "``tileset_editor/editmode_z_index``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
-msgstr "O Godot Engine"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -14655,7 +14417,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
-msgstr "Licenca"
+msgstr "Licença"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
@@ -15174,9 +14936,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:230
-#, fuzzy
 msgid "Script serialization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:232
 msgid "Unity can handle script serialization in two ways:"
@@ -15731,9 +15492,8 @@ msgid "``-``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
-#, fuzzy
 msgid "Subtraction"
-msgstr "Predstavitev"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "``<<`` ``>>``"
@@ -15820,9 +15580,8 @@ msgid "``as``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
-#, fuzzy
 msgid "Type casting"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
@@ -15903,9 +15662,8 @@ msgid ":ref:`class_NodePath` or StringName"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -15968,9 +15726,8 @@ msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
-#, fuzzy
 msgid ":ref:`int <class_int>`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid ""
@@ -16443,7 +16200,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr "Konstante"
+msgstr "Constantes"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
 msgid ""
@@ -16502,7 +16259,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:386
 msgid "Functions"
-msgstr ""
+msgstr "Funções"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
 msgid ""
@@ -16680,9 +16437,8 @@ msgid "There are 6 pattern types:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
-#, fuzzy
 msgid "Constant pattern"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "Constant primitives, like numbers and strings::"
@@ -16794,7 +16550,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
 msgid "Classes"
-msgstr "Razredi"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
 msgid ""
@@ -16906,9 +16662,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
 msgid ""
@@ -17679,9 +17434,8 @@ msgid "GDScript exports"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "Predstavitev"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -17821,9 +17575,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
-#, fuzzy
 msgid "Adding script categories"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
@@ -18161,9 +17914,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "Člani"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -18260,9 +18012,8 @@ msgid "Use the past tense to name signals:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
-#, fuzzy
 msgid "Constants and enums"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:543
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
@@ -18382,9 +18133,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "Člani"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
@@ -18880,9 +18630,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
 msgid ""
@@ -19178,7 +18927,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Preenchimento"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -19946,7 +19695,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Ação"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -20004,7 +19753,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Samo"
+msgstr "Auto"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -20042,7 +19791,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Caminho do Recurso"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -20330,9 +20079,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:4
-#, fuzzy
 msgid "Custom VisualScript nodes"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:6
 msgid ""
@@ -20341,9 +20089,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
-#, fuzzy
 msgid "Creating a custom node"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:12
 msgid ""
@@ -20489,9 +20236,8 @@ msgid "Setting up C# for Godot"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:42
-#, fuzzy
 msgid "Windows (Visual Studio)"
-msgstr "Windows (in UWP)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:44
 msgid ""
@@ -20506,9 +20252,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:54
-#, fuzzy
 msgid "Windows (JetBrains Rider)"
-msgstr "Windows (in UWP)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
 msgid ""
@@ -20517,9 +20262,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -20563,9 +20307,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:84
-#, fuzzy
 msgid "Additional notes"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:86
 msgid ""
@@ -20991,9 +20734,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
-#, fuzzy
 msgid "C# signals"
-msgstr "Signali"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
@@ -21136,13 +20878,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
@@ -21331,9 +21070,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -21474,9 +21212,8 @@ msgid "``length()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``Length``"
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
@@ -22141,9 +21878,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
-#, fuzzy
 msgid "Creating script templates"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:6
 msgid ""
@@ -22159,9 +21895,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
-#, fuzzy
 msgid "Locating the templates"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
@@ -22315,7 +22050,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 msgid "``%INT_TYPE%``"
@@ -22738,9 +22473,8 @@ msgid "Importing images"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-#, fuzzy
 msgid "Supported image formats"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid "Godot can import the following image formats:"
@@ -23246,7 +22980,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr ""
+msgstr "Formato"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -24087,9 +23821,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
-#, fuzzy
 msgid "Animation options"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid ""
@@ -24105,7 +23838,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:269
 msgid "FPS"
-msgstr ""
+msgstr "FPS"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
@@ -24266,14 +23999,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid ""
@@ -24648,9 +24379,8 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/2d/using_tilemaps.rst:110
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:25
 msgid ""
@@ -24731,9 +24461,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -24762,7 +24491,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Malha"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -24798,7 +24527,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:163
 msgid "Skeleton"
-msgstr ""
+msgstr "Esqueleto"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -24859,9 +24588,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -24872,19 +24600,16 @@ msgid "transform animation of pose bones"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
@@ -24944,9 +24669,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
-#, fuzzy
 msgid "Constraints"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -24957,9 +24681,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
-#, fuzzy
 msgid "Animation Mode"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -25005,7 +24728,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr "Izvozi"
+msgstr "Exportar"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -25155,15 +24878,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
-msgstr ""
+msgstr "Exportar todos os recursos do projeto"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
+msgstr "Exportar cenas selecionadas (e dependências)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
-msgstr ""
+msgstr "Exportar recursos selecionados (e dependências)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
@@ -25334,9 +25057,8 @@ msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
 msgid "scenes"
@@ -25613,9 +25335,8 @@ msgid "Running on a release build"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "**Za urejevalnik:**"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
@@ -25824,9 +25545,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -26074,9 +25794,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-#, fuzzy
 msgid "Setting up automatic signing"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid ""
@@ -26459,9 +26178,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid ""
@@ -26810,9 +26528,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:137
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:222
-#, fuzzy
 msgid "Generating the keystore"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:139
 msgid ""
@@ -26919,9 +26636,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:214
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid "Android SDK Platform"
@@ -27187,9 +26903,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
-#, fuzzy
 msgid "Shader language limitations"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:377
@@ -27217,7 +26932,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr ""
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Clipboard synchronization between engine and operating system"
@@ -27394,9 +27109,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -27453,9 +27167,8 @@ msgid "Exporting a PCK file"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -27720,14 +27433,12 @@ msgid "Methods."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "Signali"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid ""
@@ -27808,9 +27519,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -28002,9 +27712,8 @@ msgid "`YAGNI <https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it>`_"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:252
-#, fuzzy
 msgid "Choosing a node tree structure"
-msgstr "Prihodnost"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:254
 msgid ""
@@ -30167,11 +29876,11 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr "Preoblikovanje"
+msgstr "Transformar"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -30322,9 +30031,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -30335,9 +30043,8 @@ msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -30686,9 +30393,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:302
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid ""
@@ -31007,9 +30713,8 @@ msgid "ParticlesMaterial settings"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -31145,7 +30850,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:293
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:295
 msgid "Used to change the color of the particles being emitted."
@@ -31163,9 +30868,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:305
-#, fuzzy
 msgid "Emission Shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:307
 msgid ""
@@ -31194,7 +30898,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid "Emission Mask"
-msgstr ""
+msgstr "Máscara de Emissão"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:329
 msgid "Three types of emission masks can be generated from a texture:"
@@ -31221,7 +30925,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:348
 msgid "Emission Colors"
-msgstr ""
+msgstr "Cores de Emissão"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:350
 msgid ""
@@ -32209,7 +31913,7 @@ msgstr ""
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
-msgstr "Orodja"
+msgstr "Ferramentas"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
@@ -32224,9 +31928,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -32318,9 +32021,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -32331,9 +32033,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimatedSprite"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
@@ -32392,9 +32093,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:125
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
 msgid ""
@@ -32460,9 +32160,8 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:183
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:185
 msgid ""
@@ -32819,9 +32518,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
-#, fuzzy
 msgid "Using 3D transforms"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:9
 msgid ""
@@ -34119,7 +33817,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid "Depth"
-msgstr "Globina"
+msgstr "Profundidade"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:429
 msgid ""
@@ -34942,9 +34640,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:28
-#, fuzzy
 msgid "The main downsides of ``GIProbe`` are:"
-msgstr "Glavni razlogi so:"
+msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:30
 msgid ""
@@ -35343,9 +35040,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:158
-#, fuzzy
 msgid "The modes are:"
-msgstr "Glavni razlogi so:"
+msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:160
 msgid ""
@@ -36262,9 +35958,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:82
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
@@ -36664,9 +36359,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "Predstavitev"
+msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:29
 msgid ""
@@ -37028,9 +36722,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:264
 msgid ""
@@ -44325,9 +44018,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
-#, fuzzy
 msgid "Animating one Fish"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
 msgid ""
@@ -44836,9 +44528,8 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:48
-#, fuzzy
 msgid "Audio buses"
-msgstr "Zvok"
+msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:9
 msgid ""
@@ -45724,9 +45415,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
-#, fuzzy
 msgid "Collision objects"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
@@ -45847,9 +45537,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:101
-#, fuzzy
 msgid "Collision layers and masks"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:103
 msgid ""
@@ -45920,9 +45609,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "Windows"
+msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -47236,9 +46924,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
-#, fuzzy
 msgid "Collision shape adjustment"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
@@ -47298,11 +46985,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -47595,9 +47281,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:4
-#, fuzzy
 msgid "Collision shapes (3D)"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:6
 msgid "This guide explains:"
@@ -47636,27 +47321,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:26
-#, fuzzy
 msgid "Primitive collision shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:28
 msgid "Godot provides the following primitive collision shape types:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:30
-#, fuzzy
 msgid ":ref:`class_BoxShape`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:31
 msgid ":ref:`class_SphereShape`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:32
-#, fuzzy
 msgid ":ref:`class_CapsuleShape`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
 msgid ""
@@ -47680,9 +47362,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:45
-#, fuzzy
 msgid "Convex collision shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:47
 msgid ""
@@ -47730,9 +47411,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:77
-#, fuzzy
 msgid "Concave or trimesh collision shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:79
 msgid ""
@@ -48202,9 +47882,8 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:411
 #: ../../docs/tutorials/math/vectors_advanced.rst:589
-#, fuzzy
 msgid "More information"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:413
 msgid ""
@@ -48641,9 +48320,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
-#, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
@@ -49234,9 +48912,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:31
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:33
 msgid ""
@@ -49265,9 +48942,8 @@ msgid "It will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:53
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:55
 msgid ""
@@ -49291,9 +48967,8 @@ msgid "And again, it will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:80
-#, fuzzy
 msgid "Smoothing motion"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:82
 msgid ""
@@ -50489,9 +50164,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -50535,9 +50209,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -50552,9 +50225,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -50987,9 +50659,8 @@ msgid "Once you are all set, you will get much better results:"
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Animacija"
+msgstr "AnimationTree"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -51015,9 +50686,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -51201,9 +50871,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -51270,9 +50939,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
@@ -51973,9 +51641,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:300
-#, fuzzy
 msgid "Mouse motion"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:302
 msgid ""
@@ -52182,7 +51849,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:32
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
-msgstr ""
+msgstr "Uso"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -52474,9 +52141,8 @@ msgid "Linux: ``~/.local/share/godot/``"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:57
-#, fuzzy
 msgid "User settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:59
 msgid "Linux: ``~/.config/godot/``"
@@ -52982,9 +52648,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -53014,9 +52679,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid ""
@@ -53136,7 +52800,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Localização"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -56062,7 +55726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -57131,9 +56795,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
-#, fuzzy
 msgid "Animation effects"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:133
 msgid ""
@@ -57512,7 +57175,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
-msgstr ""
+msgstr "Capturar"
 
 #: ../../docs/tutorials/viewports/viewports.rst:135
 msgid ""
@@ -58100,13 +57763,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:305
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
 msgid "Using a Viewport as a texture"
@@ -59149,7 +58809,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:107
 msgid "Members"
-msgstr "Člani"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:109
 msgid ""
@@ -59318,7 +58978,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
 msgid "Class"
-msgstr ""
+msgstr "Classe"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
 msgid "Operator"
@@ -59824,19 +59484,16 @@ msgid "**Vector3**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
-#, fuzzy
 msgid "**Color**"
-msgstr "**Za urejevalnik:**"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
-#, fuzzy
 msgid "**Transform**"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
-#, fuzzy
 msgid "**Transform2D**"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
 msgid ""
@@ -60172,9 +59829,8 @@ msgid "float **mix** (float a, float b, float c)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
-#, fuzzy
 msgid "Linear interpolate"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
@@ -60222,9 +59878,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
-#, fuzzy
 msgid "Hermite interpolate"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
@@ -60893,9 +60548,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
-#, fuzzy
 msgid "Built-ins"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:83
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
@@ -60910,9 +60564,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:89
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
@@ -61532,9 +61185,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:203
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
 msgid ""
@@ -63648,9 +63300,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:4
-#, fuzzy
 msgid "VisualShaders"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:6
 msgid ""
@@ -63675,9 +63326,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:22
-#, fuzzy
 msgid "Creating a VisualShader"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:24
 msgid ""
@@ -63802,9 +63452,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:94
-#, fuzzy
 msgid "Visual Shader nodes"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
@@ -64971,9 +64620,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:146
-#, fuzzy
 msgid "An optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:148
 msgid ""
@@ -66177,7 +65825,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr ""
+msgstr "Biblioteca de Ativos"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -67119,11 +66767,8 @@ msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:140
 msgid ""
@@ -67370,13 +67015,10 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:58
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:64
 msgid ""
@@ -67574,9 +67216,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:186
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:190
 msgid ""
@@ -70650,22 +70291,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/developing_for_oculus_quest.rst:130
-#, fuzzy
 msgid ""
 "If you want to help out with improving the plugin please join us `here "
 "<https://github.com/GodotVR/godot_oculus_mobile>`__."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
-#, fuzzy
 msgid "Installing plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
@@ -70675,9 +70312,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
-#, fuzzy
 msgid "Finding plugins"
-msgstr "Vtičniki"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
@@ -70708,9 +70344,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
-#, fuzzy
 msgid "Installing a plugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
@@ -70767,9 +70402,8 @@ msgid "Making plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
-#, fuzzy
 msgid "About plugins"
-msgstr "Vtičniki"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
 msgid ""
@@ -71442,7 +71076,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Key"
-msgstr "Črka"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/development/file_formats/tscn.rst:169
@@ -71816,9 +71450,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
-#, fuzzy
 msgid "Inspector plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
@@ -71837,9 +71470,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:40
-#, fuzzy
 msgid "EditorInspectorPlugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:42
 msgid ""
@@ -71861,9 +71493,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:84
-#, fuzzy
 msgid "EditorProperty"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:86
 msgid ""
@@ -71874,9 +71505,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
-#, fuzzy
 msgid "Visual Shader plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:6
 msgid ""
@@ -72556,13 +72186,10 @@ msgid "SCons as a build tool,"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:35
-#, fuzzy
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/GodotNativeTools/"
 "godot-cpp>`__."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:38
 msgid ""
@@ -73168,14 +72795,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/index.rst:2
-#, fuzzy
 msgid "Android plugins"
-msgstr "Vtičniki"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins (Godot 3.2.2+)"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:9
 msgid ""
@@ -73255,9 +72880,8 @@ msgid "Push notifications"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:33
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:35
 msgid ""
@@ -73302,9 +72926,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:51
-#, fuzzy
 msgid "Building an Android plugin"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
 msgid ""
@@ -73474,9 +73097,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:133
-#, fuzzy
 msgid "Loading and using an Android plugin"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:135
 msgid ""
@@ -73493,9 +73115,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
-#, fuzzy
 msgid "From your script:"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:151
 msgid "Bundling GDNative resources"
@@ -73588,14 +73209,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
-#, fuzzy
 msgid ""
 "If you learn better by looking at an example, you can find the demo project "
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
 "android_iap>`__."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
@@ -73609,7 +73227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
-msgstr ""
+msgstr "Alterações"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -73695,9 +73313,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
-#, fuzzy
 msgid "Consumables"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
@@ -73709,9 +73326,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "Opis"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -74095,9 +73711,8 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
-#, fuzzy
 msgid "Engine"
-msgstr "O Godot Engine"
+msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:15
 msgid ""
@@ -74851,9 +74466,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
-#, fuzzy
 msgid "Console support in Godot"
-msgstr "Kateri jeziki podpirajo Godot?"
+msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
@@ -75002,9 +74616,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:18
-#, fuzzy
 msgid "Creating a Thread"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:20
 msgid "Creating a thread is very simple, just use the following code:"
@@ -75914,7 +75527,7 @@ msgstr ""
 
 #: ../../docs/tutorials/content/making_trees.rst:93
 msgid "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
-msgstr ""
+msgstr "https://developer.nvidia.com/gpugems/GPUGems3/gpugems3_ch16.html"
 
 #: ../../docs/tutorials/optimization/index.rst:7
 msgid ""
@@ -75971,9 +75584,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "Skupnost"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:51
 msgid "CPU"
@@ -75984,9 +75596,8 @@ msgid "GPU"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
-#, fuzzy
 msgid "General optimization tips"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:9
 msgid ""
@@ -76085,14 +75696,12 @@ msgid "Putting a start/stop timer around code of interest."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third-party CPU profilers."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:60
 msgid ""
@@ -76161,9 +75770,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:95
-#, fuzzy
 msgid "Hypothesis testing"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:97
 msgid ""
@@ -76330,9 +75938,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:196
-#, fuzzy
 msgid "The optimization process"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:198
 msgid ""
@@ -76639,9 +76246,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
-#, fuzzy
 msgid "Creating a sprite"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:86
 msgid ""
@@ -76712,9 +76318,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:9
 msgid ""
@@ -76954,9 +76559,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:189
-#, fuzzy
 msgid "Other languages"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:191
 msgid ""
@@ -77003,9 +76607,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:221
-#, fuzzy
 msgid "For more information on threads, see :ref:`doc_using_multiple_threads`."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:226
 msgid ""
@@ -77048,9 +76651,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:251
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
 msgid ""
@@ -77095,9 +76697,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:9
 msgid ""
@@ -77169,9 +76770,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:54
-#, fuzzy
 msgid "For more information on 2D batching, see :ref:`doc_batching`."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:57
 msgid "3D batching"
@@ -77381,9 +76981,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:183
-#, fuzzy
 msgid "Reading textures"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:185
 msgid ""
@@ -77542,9 +77141,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:4
-#, fuzzy
 msgid "Optimization using MultiMeshes"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:6
 msgid ""
@@ -77620,9 +77218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:48
-#, fuzzy
 msgid "Multimesh example"
-msgstr "Windows"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:50
 msgid ""
@@ -77632,9 +77229,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:4
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:9
 msgid ""
@@ -77737,9 +77333,8 @@ msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:72
-#, fuzzy
 msgid "Change of texture."
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:73
 msgid "Change of material."
@@ -78044,9 +77639,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:291
-#, fuzzy
 msgid "Custom shaders"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:293
 msgid ""
@@ -78066,9 +77660,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:302
-#, fuzzy
 msgid "Project Settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:304
 msgid ""
@@ -78081,9 +77674,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:312
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
@@ -78393,9 +77985,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:1
-#, fuzzy
 msgid "optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:7
 msgid "Optimizing 3D performance"
@@ -78590,9 +78181,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
-#, fuzzy
 msgid "Animation and skinning"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
 msgid ""
@@ -79303,9 +78893,8 @@ msgid "64-bit signed integer"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:111
-#, fuzzy
 msgid "3: :ref:`float<class_float>`"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
@@ -79974,9 +79563,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
-#, fuzzy
 msgid "Editing variables"
-msgstr "Člani"
+msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
@@ -80218,7 +79806,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr ""
+msgstr "Partículas"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""
@@ -80415,9 +80003,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:122
-#, fuzzy
 msgid "Blend shapes"
-msgstr "Vidne Oblike Trka"
+msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:124
 msgid "Blend shapes are not supported in GLES2."
@@ -80658,9 +80245,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:9
 msgid ""
@@ -80706,9 +80292,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -80847,7 +80432,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr "Razhroščevalnik"
+msgstr "Depurar"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -80874,9 +80459,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
-#, fuzzy
 msgid "Debugger Panel"
-msgstr "Razhroščevalnik"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
 msgid ""
@@ -80885,9 +80469,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
-#, fuzzy
 msgid "Debug menu options"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
 msgid ""
@@ -80905,7 +80488,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
-msgstr "Uvajanje z Oddaljenim Razhroščevanjem"
+msgstr "Distribuir com Depuração Remota"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
@@ -80915,7 +80498,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
-msgstr "Kratko Uvajanje z Omrežjem FS"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
 msgid ""
@@ -80938,7 +80521,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
-msgstr "Vidne Oblike Trka"
+msgstr "Formas de Colisão Visíveis"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
@@ -80948,7 +80531,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
-msgstr "Vidna Navigacija"
+msgstr "Navegação Visível"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -80956,7 +80539,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
-msgstr "Usklajuj Spremembe Prizora"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:65
 msgid ""
@@ -80967,7 +80550,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
-msgstr "Usklajuj Spremembe Skript"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
 msgid ""
@@ -81010,9 +80593,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
-#, fuzzy
 msgid "Debug project settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
@@ -81021,9 +80603,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -81065,9 +80646,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:4
-#, fuzzy
 msgid "Debugger panel"
-msgstr "Razhroščevalnik"
+msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:6
 msgid ""
@@ -81130,7 +80710,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
-msgstr ""
+msgstr "Erros"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:44
 msgid ""
@@ -81144,7 +80724,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:51
 msgid ""
@@ -81193,7 +80773,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
-msgstr ""
+msgstr "Traçador de Rede"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:81
 msgid ""
@@ -81205,7 +80785,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr ""
+msgstr "Monitores"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
@@ -81218,7 +80798,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
-msgstr ""
+msgstr "Memória Vídeo"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:97
 msgid ""
@@ -81231,7 +80811,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
-msgstr ""
+msgstr "Diversos"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:107
 msgid ""
@@ -81352,9 +80932,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
-#, fuzzy
 msgid "Licenses screen"
-msgstr "Licenca"
+msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:49
 msgid ""
@@ -81458,7 +81037,7 @@ msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:104
 msgid "http://www.apache.org/licenses/LICENSE-2.0"
-msgstr ""
+msgstr "http://www.apache.org/licenses/LICENSE-2.0"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:106
 msgid ""
@@ -81712,7 +81291,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
-msgstr ""
+msgstr "Alvo"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -81806,14 +81385,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
-#, fuzzy
 msgid "Cleaning generated files"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
 msgid ""
@@ -81853,9 +81430,8 @@ msgid "Overriding the build options"
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
-#, fuzzy
 msgid "Using a file"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
 msgid ""
@@ -82851,9 +82427,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:146
-#, fuzzy
 msgid "Cleaning the generated export templates"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:148
 msgid ""
@@ -83799,9 +83374,8 @@ msgid "``Mono`` (optional)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:203
-#, fuzzy
 msgid "``Tools``"
-msgstr "Orodja"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:205
 msgid ""
@@ -83850,9 +83424,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:228
-#, fuzzy
 msgid "Building the Mono runtime"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid ""
@@ -83871,9 +83444,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:241
-#, fuzzy
 msgid "Targeting Android"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:243
 msgid ""
@@ -83895,9 +83467,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:257
-#, fuzzy
 msgid "Targeting iOS"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:259
 msgid ""
@@ -84038,13 +83609,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:354
-#, fuzzy
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:357
 msgid ""
@@ -84213,9 +83781,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -84392,9 +83959,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:4
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
 msgid ""
@@ -84421,9 +83987,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
@@ -84448,13 +84013,10 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"Glejte tudi `licenčno stran na strani Godot <https://godotengine.org/"
-"license>`_."
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:4
 msgid "CLion"
@@ -84521,9 +84083,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:9
-#, fuzzy
 msgid "Creating a new project"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:11
 msgid ""
@@ -84605,9 +84166,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "Windows"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -84649,9 +84209,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
-#, fuzzy
 msgid "Adding files to the project"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
@@ -84686,15 +84245,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:129
-#, fuzzy
 msgid ""
 "That's it. You're ready to start contributing to Godot using the Code::"
 "Blocks IDE. Remember to save the project file and the **Workspace**.  If you "
 "run into any issues, ask for help in one of `Godot's community channels "
 "<https://godotengine.org/community>`__."
 msgstr ""
-"Glejte tudi `licenčno stran na strani Godot <https://godotengine.org/"
-"license>`_."
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
 msgid "KDevelop"
@@ -84757,7 +84313,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Ativar"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
@@ -84788,9 +84344,8 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
-#, fuzzy
 msgid "Debugging the project"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
@@ -84923,9 +84478,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
-#, fuzzy
 msgid "Visual Studio"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
@@ -85308,9 +84862,8 @@ msgid "Internationalize a string"
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
-#, fuzzy
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
@@ -85385,14 +84938,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
-#, fuzzy
 msgid "Get project/editor settings"
-msgstr "Preskušanje"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
-#, fuzzy
 msgid "There are four macros available for this:"
-msgstr "Godot nima omejitve uporabe"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
@@ -85663,7 +85214,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Vetor"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -85671,7 +85222,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "Definir"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
@@ -86193,7 +85744,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
-msgstr ""
+msgstr "Recursos:"
 
 #: ../../docs/development/cpp/object_class.rst:266
 msgid ""
@@ -86677,9 +86228,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "O dokumentaciji"
+msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -86998,9 +86548,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
-#, fuzzy
 msgid "Creating a ResourceFormatSaver"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid ""
@@ -87369,9 +86918,8 @@ msgid "Editor development"
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:4
-#, fuzzy
 msgid "Editor icons"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
@@ -87382,9 +86930,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:12
-#, fuzzy
 msgid "Creating icons"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
@@ -87440,9 +86987,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:47
-#, fuzzy
 msgid "Icon optimization"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:49
 msgid ""
@@ -87527,9 +87073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:4
-#, fuzzy
 msgid "Editor style guide"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:9
 msgid "Thanks for your interest in contributing to the Godot editor!"
@@ -87543,9 +87088,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:16
-#, fuzzy
 msgid "Writing style"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:18
 msgid ""
@@ -87605,14 +87149,12 @@ msgid "**Good:** *Editor Settings...*"
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
-#, fuzzy
 msgid "**Bad:** *Editor Settings*"
-msgstr "Urejevalnik"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
-#, fuzzy
 msgid "Inspector sections"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:50
 msgid ""
@@ -87632,9 +87174,8 @@ msgid "This advice also applies to the Project Settings and Editor Settings."
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid "Inspector performance hints"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:62
 msgid ""
@@ -87682,9 +87223,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:84
-#, fuzzy
 msgid "Tooltips"
-msgstr "Orodja"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:86
 msgid ""
@@ -87767,9 +87307,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:21
-#, fuzzy
 msgid "File structure"
-msgstr "Prihodnost"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:23
 msgid "There are five main sections inside the TSCN file:"
@@ -87877,9 +87416,8 @@ msgid "``index`` (if two nodes have the same name)"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:79
-#, fuzzy
 msgid "``groups``"
-msgstr "Skupine"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:81
 msgid ""
@@ -87981,9 +87519,8 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:237
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:239
 msgid ""
@@ -88163,9 +87700,8 @@ msgid "``type``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:388
-#, fuzzy
 msgid "``path``"
-msgstr "Pot"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:389
 msgid "``interp``"
@@ -88190,9 +87726,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:398
-#, fuzzy
 msgid "``transform``"
-msgstr "Preoblikovanje"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
@@ -88216,9 +87751,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:409
-#, fuzzy
 msgid "``0`` (constant)"
-msgstr "Konstante"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:410
 msgid "``1`` (linear)"
@@ -88543,9 +88077,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:195
-#, fuzzy
 msgid "Contributing translations"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:197
 msgid ""
@@ -88969,13 +88502,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:33
-#, fuzzy
 msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
 msgstr ""
-"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
-"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/community/contributing/pr_workflow.rst:36
 msgid ""
@@ -90103,9 +89633,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:299
-#, fuzzy
 msgid "Editor integration"
-msgstr "Animacija"
+msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:301
 msgid ""
@@ -90585,16 +90114,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:135
-#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
-"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
-"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:138
 msgid ""
@@ -91825,7 +91350,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:317
 msgid "Localization"
-msgstr ""
+msgstr "Localização"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:319
 msgid ""
@@ -92174,9 +91699,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:247
-#, fuzzy
 msgid "Online documentation (RST)"
-msgstr "Organizacija dokumentacije"
+msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:249
 msgid ""
@@ -92366,9 +91890,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:4
-#, fuzzy
 msgid "Community channels"
-msgstr "Skupnost"
+msgstr ""
 
 #: ../../docs/community/channels.rst:6
 msgid ""
@@ -92383,17 +91906,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:10
-#, fuzzy
 msgid ""
 "A brief overview over these and other channels is also available on the "
 "`Godot website <https://godotengine.org/community>`_."
 msgstr ""
-"Glejte tudi `licenčno stran na strani Godot <https://godotengine.org/"
-"license>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr ""
+msgstr "Perguntas & Respostas"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
@@ -92715,195 +92235,3 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
-
-#, fuzzy
-#~ msgid "constants"
-#~ msgstr "Konstante"
-
-#, fuzzy
-#~ msgid "signals"
-#~ msgstr "Signali"
-
-#, fuzzy
-#~ msgid "There are two types of products - consumables and non-consumables:"
-#~ msgstr "Godot nima omejitve uporabe"
-
-#~ msgid "Testing"
-#~ msgstr "Preskušanje"
-
-#, fuzzy
-#~ msgid "Scheme setup"
-#~ msgstr "Pot"
-
-#, fuzzy
-#~ msgid "Creating a main screen plugin"
-#~ msgstr "Animacija"
-
-#, fuzzy
-#~ msgid ""
-#~ "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
-#~ "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-#~ "<https://opensource.org/licenses/MIT>`_ provided by Godot. That being "
-#~ "said, FBX support could still be provided by third parties as a plugin. "
-#~ "(See Plugins question below.)"
-#~ msgstr ""
-#~ "FBX SDK ima zelo `omejeno licenco <http://www.blender.org/bf/"
-#~ "Autodesk_FBX_License.rtf>`_, ki ni združljiva z `odprtokodno licenco "
-#~ "<http://opensource.org/licenses/MIT>`_, ki jo zagotavlja Godot."
-
-#, fuzzy
-#~ msgid "Code structure"
-#~ msgstr "Prihodnost"
-
-#, fuzzy
-#~ msgid "Global constants"
-#~ msgstr "Konstante"
-
-#, fuzzy
-#~ msgid "There is a few things to note here."
-#~ msgstr "Godot nima omejitve uporabe"
-
-#~ msgid "Mac OS X"
-#~ msgstr "Mac OS X"
-
-#~ msgid ""
-#~ "This means it is free as in \"free speech\" as well as in \"free beer\"."
-#~ msgstr "To pomeni da je zastonj kot \"free speech\" kot tudi \"free beer\"."
-
-#~ msgid "There are no usage restrictions on Godot"
-#~ msgstr "Godot nima omejitve uporabe"
-
-#~ msgid ""
-#~ "This means you can use it for any game or application, commercially or "
-#~ "non-commercially, in any industry"
-#~ msgstr ""
-#~ "To pomeni, da ga lahko uporabljate za katerokoli igro ali aplikacijo, "
-#~ "komercialno ali nekomercialno, v vsakem podjetju"
-
-#~ msgid ""
-#~ "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
-#~ "your lawyer of choice."
-#~ msgstr ""
-#~ "Za več poglejte `tukaj <https://tldrlegal.com/license/mit-license>`_ ali "
-#~ "vprašajte vašega odvetnika za izbiro."
-
-#~ msgid ""
-#~ "Note that C# and Visual Scripting support is comparatively young and "
-#~ "GDScript still has some advantages as outlined below."
-#~ msgstr ""
-#~ "Upoštevajte, da je podpora C# in Visual Scripting sorazmerno mlada in da "
-#~ "ima GDScript še vedno nekaj prednosti, kot je opisano spodaj."
-
-#~ msgid ""
-#~ "Support for new languages can be added by third parties using the "
-#~ "GDNative / NativeScript / PluginScript facilities. (See question about "
-#~ "plugins below.)"
-#~ msgstr ""
-#~ "Podpora za nove jezike je lahko dodana z \"tretjimi\" objekti z uporabo "
-#~ "GDNative / NativeScript / PluginScript. (Glejte vprašanja o vtičnikih "
-#~ "spodaj.)"
-
-#~ msgid ""
-#~ "GDScript? Why use a custom scripting language instead of my language of "
-#~ "choice?"
-#~ msgstr ""
-#~ "GDScript? Zakaj bi uporabljal/a osnovni programerski jezik namesto jezika "
-#~ "po moji izbiri?"
-
-#~ msgid ""
-#~ "GDScript is designed to integrate from the ground to the way Godot works, "
-#~ "more than any other language, and is simple and easy to learn. Takes at "
-#~ "most a day or two to get comfortable and it's easy to see the benefits "
-#~ "once you do. Please make the effort to learn GDScript, you will not "
-#~ "regret it."
-#~ msgstr ""
-#~ "GDScript je načrtovan, da vključuje vsa področja kjer Godot deluje, bolje "
-#~ "kot katerikoli jezik in je zelo enostaven in preprost za učenje. Ne "
-#~ "potrebuješ več kot dan ali dva, da se ga navadiš in ni težko videti "
-#~ "prednosti, ko ga spoznaš. Priporočamo vam, da vložite trud v učenje "
-#~ "GDScript, kar na koncu ne boste obžalovali."
-
-#~ msgid ""
-#~ "Godot C++ API is also efficient and easy to use (the entire Godot editor "
-#~ "is made with this API), and an excellent tool to optimize parts of a "
-#~ "project, but trying to use it instead of GDScript for an entire game is, "
-#~ "in most cases, a waste of time."
-#~ msgstr ""
-#~ "Godot C++ API je veliko sposobna in enostavna za uporabo (celoten Godotov "
-#~ "urejevalnik je izdelan s tem API-jem). Je odlično orodje za optimizacijo "
-#~ "delov projekta, vendar bi bilo v večini primerov zapravljanje časa, če bi "
-#~ "ga uporabljali namesto GDScript za izdelavo celotne igre."
-
-#~ msgid ""
-#~ "Yes, for more than a decade we tried in the past integrating several VMs "
-#~ "(and even shipped games using them), such as Python, Squirrel and Lua (in "
-#~ "fact we authored tolua++ in the past, one of the most popular C++ "
-#~ "binders). None of them worked as well as GDScript does now."
-#~ msgstr ""
-#~ "Res je, več kot desetletje smo poizkušali vključiti nekatere VM (in smo "
-#~ "celo izvažali igre), kot so Python, Squirrel in Lua (V resnici smo si v "
-#~ "preteklosti prilastili tolua++, eno najbolj priljubljenih C++ "
-#~ "vpenjalnikov). Nič od tega ni delovalo tako dobro kot GDScript deluje "
-#~ "zdaj."
-
-#~ msgid "For the more technically versed, proceed to the next item."
-#~ msgstr "Za bolj tehnično dovršene, nadaljujte na naslednji točki."
-
-#~ msgid ""
-#~ "I don't believe you. What are the technical reasons for the item above?"
-#~ msgstr "Ne verjamem vam. Kakšni so tehnološki razlogi za zgornjo stvar?"
-
-#, fuzzy
-#~ msgid ""
-#~ "GDScript was designed to solve the issues above, and performs well in all "
-#~ "the above scenarios. Please learn GDScript and enjoy a smooth integration "
-#~ "of scripting with the game engine (yes, it's a rare but enjoyable "
-#~ "situation when things just work). It's worth it, give it a try!"
-#~ msgstr ""
-#~ "GDScript je bila zasnovana za reševanje problemov naštetih zgoraj in v "
-#~ "vseh omenjenih primerih deluje zelo dobro. Svetujemo vam, da se naučite "
-#~ "GDScript in uživate v programiranju brez težav (ja, to je redka, a zelo "
-#~ "prijetna situacija, ko stvari delujejo samo). To je vredno, dajte mu "
-#~ "priložnost!"
-
-#~ msgid "I want to extend Godot. What are my options for creating plugins?"
-#~ msgstr ""
-#~ "Rad bi razširil Godot. Kakšne so moje možnosti za izdelavo vtičnikov?"
-
-#~ msgid ""
-#~ "Additional languages could be added via PluginScript or the more low-"
-#~ "level NativeScript."
-#~ msgstr ""
-#~ "Dodatni jeziki so lahko dodani z PluginScript ali z bolj nizko-nivojskim "
-#~ "NativeScript."
-
-#~ msgid ""
-#~ "If you want to add a certain native library, your best bet is GDNative "
-#~ "and custom C++ modules."
-#~ msgstr ""
-#~ "Če želite dodati nekatere prevzete knjižnice, bo vaša najboljša izbira "
-#~ "GDNative ali C++ moduli po vaši izbiri."
-
-#~ msgid "Why is FBX not supported for import?"
-#~ msgstr "Zakaj FBX ni podprt za uvoz?"
-
-#~ msgid "Also, glTF support was added in Godot 3.0."
-#~ msgstr "V Godot 3.0 je bila dodana tudi podpora glTF."
-
-#~ msgid ""
-#~ "FBX support could still be provided by third parties as a plugin. (See "
-#~ "Plugins question above.)"
-#~ msgstr ""
-#~ "Podpora FBX je lahko še vedno zagotovljena z dodatnimi \"tretjimi\" "
-#~ "vtičniki. (Glej vprašanje Vtičniki zgoraj.)"
-
-#~ msgid ""
-#~ "No, the aim of Godot is to create a complete open source engine licensed "
-#~ "under MIT, so you have complete control over every single piece of it. "
-#~ "Open versions of functionality or features from such SDKs may be "
-#~ "eventually added though."
-#~ msgstr ""
-#~ "Ne, cilj Godota je ustvariti popolnoma odprtokodni pogon za igre, "
-#~ "katerega izdana licenca je v okviru MIT, zato imate nadzor nad vsakim "
-#~ "posameznim delom. Odprte različice funkcionalnosti iz nekaterih SDK, se "
-#~ "bodo s časoma verjetno dodale."

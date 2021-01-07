@@ -8,6 +8,8 @@
 # Elias Vähänen <eliasvaha@gmail.com>, 2019.
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
 # Matti Niskanen <matti.t.niskanen@gmail.com>, 2020.
+# Orange719 <hiedanpaaoskari@gmail.com>, 2020.
+# Poki <poki@tuta.io>, 2020.
 # spiderfly <spiderfly@protonmail.com>, 2018.
 # Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2020.
 # TheAdvis <juhamk91@gmail.com>, 2020.
@@ -21,7 +23,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2020-09-28 16:14+0200\n"
-"PO-Revision-Date: 2020-09-27 15:32+0000\n"
+"PO-Revision-Date: 2020-10-26 14:22+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -30,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3-dev\n"
+"X-Generator: Weblate 4.3.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -421,15 +423,14 @@ msgid "Organization of the documentation"
 msgstr "Dokumentaation rakenne"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"Tämä dokumentaatio on järjestetty viiteen alueeseen vaikuttavan "
-"epätasapainoisella sisällön jakaumalla – mutta tapa, jolla se on jaoteltu "
-"pitäisi olla suhteellisen intuitiivista:"
+"Tämä dokumentaatio on jaoteltu viiteen sisällöltään huomattavan "
+"epätasapainoiseen osioon – mutta jaottelutavan pitäisi olla suhteellisen "
+"selkeä:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -1029,7 +1030,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:187
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
-msgstr ""
+msgstr "Miksi Godot käyttää Vulkania tai OpenGL:ää Direct3d:n sijasta?"
 
 #: ../../docs/about/faq.rst:189
 msgid ""
@@ -1204,7 +1205,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:265
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "Milloin Godotin seuraava versio julkaistaan?"
 
 #: ../../docs/about/faq.rst:267
 #, fuzzy
@@ -1345,7 +1346,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:317
 msgid "Is it possible to use Godot as a library?"
-msgstr ""
+msgstr "Onko mahdollista käyttää Godotia ohjelmistokirjastona?"
 
 #: ../../docs/about/faq.rst:319
 msgid ""
@@ -1354,6 +1355,11 @@ msgid ""
 "make Godot usable as a library, as it would make the rest of the engine more "
 "convoluted and difficult to use for casual users."
 msgstr ""
+"Godot on tarkoitettu käytettäväksi editorissaan. Suosittelemme kokeilemaan "
+"sitä, koska todennäköisesti säästät näin aikaa pitkässä juoksussa. Ei ole "
+"suunnitelmissa tehdä Godotista luokkakirjastoa, koska se tekisi muusta "
+"pelimoottorista monimutkaisemman ja vaikeamman käyttää tavalliselle "
+"käyttäjälle."
 
 #: ../../docs/about/faq.rst:324
 msgid ""
@@ -1404,6 +1410,8 @@ msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
 msgstr ""
+"Meidän konttimme sisältävät sisään rakennetun muistin tarkkailun, joka "
+"auttaa tarkkailemaan laitteen muistin käyttöä."
 
 #: ../../docs/about/faq.rst:339
 msgid ""
@@ -1455,6 +1463,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:361
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr ""
+"Miksi Godot ei pakota käyttäjiään toteuttamaan DoD-mallia (Data oriented "
+"Design, Tietokanta ensin-suunnittelu) ?"
 
 #: ../../docs/about/faq.rst:363
 msgid ""
@@ -3556,7 +3566,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_ios.rst:19
 #: ../../docs/development/compiling/compiling_for_uwp.rst:33
 msgid "Compiling"
-msgstr "Kääntää"
+msgstr "Kääntäminen"
 
 #: ../../docs/about/docs_changelog.rst:216
 msgid ":ref:`doc_optimizing_for_size`"
@@ -6019,14 +6029,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
-#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Receiver Method\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"Ikkunan alalaidassa on kenttä nimeltä \"Method In Node\". Tämä on "
+"Ikkunan alalaidassa on kenttä nimeltä \"Vastaanottava metodi\". Tämä on "
 "kohdesolmun skriptissä sen funktion nimi, jota haluat käyttää. Godot'n "
 "oletusarvoinen nimeämiskäytäntö tätä funktiota luodessa on "
 "``_on_<solmun_nimi>_<signaalin_nimi>``, mutta voit halutessasi muuttaa nimen."
@@ -20296,7 +20305,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_movement.rst:355
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:213
 msgid "Summary"
-msgstr ""
+msgstr "Yhteenveto"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid ""
@@ -32735,7 +32744,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D movement overview"
-msgstr ""
+msgstr "2D-liikkumisen yleiskatsaus"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:9
 msgid ""
@@ -32743,6 +32752,10 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
+"Jokainen aloitteleva pelintekijä on kysynyt samaa: \"Kuinka liikutan "
+"pelihahmoani?\" Riippuen pelisi tyylistä, sinulla voi olla "
+"erityisvaatimuksia, mutta yleisesti ottaen liikkuminen useimmissa 2D-"
+"peleissä pohjautuu muutamaan perusmalliin."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -32750,6 +32763,8 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
+"Käytämme esimerkeissä :ref:`KinematicBody2D <class_KinematicBody2D>` solmua, "
+"mutta periaatteet pätevät muihinkin solmutyyppeihin (Area2D, RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
@@ -32759,7 +32774,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:32
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:40
 msgid "Setup"
-msgstr ""
+msgstr "Järjestely"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:21
 msgid ""
@@ -32768,6 +32783,10 @@ msgid ""
 "You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
 "any other 2D image you have."
 msgstr ""
+"Jokainen alla oleva esimerkki käyttää samaa skenejärjestelyä. Aloita "
+"``KinematicBody2D`` solmulla, jolla on kaksi alisolmua: ``Sprite`` ja "
+"``CollisionShape2D``. Spriten tekstuurina voit käyttää Godot-ikonia (\"icon."
+"png\") tai mitä tahansa 2D-kuvaa."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:25
 msgid ""
@@ -32775,10 +32794,13 @@ msgid ""
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
+"Avaa valikosta ``Projekti -> Projektin asetukset...`` ja valitse "
+"\"Syötekartta\"-välilehti. Lisää siihen seuraavat syötetoiminnot (ks. :ref:"
+"`InputEvent <doc_inputevent>` tarkempia tietoja varten):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid "8-way movement"
-msgstr ""
+msgstr "8-suuntainen liikkuminen"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:33
 msgid ""
@@ -32787,10 +32809,15 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
+"Tässä esimerkkitilanteessa haluat käyttäjän painavan neljää suuntanäppäintä "
+"(ylös/vasemmalle/alas/oikealle tai W/A/S/D) ja liikkuvan valittuun suuntaan. "
+"Nimi \"8-suuntainen liikkuminen\" tulee siitä, että pelaaja voi liikkua "
+"viistosti painamalla kahta näppäintä yhtä aikaa."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:39
 msgid "Add a script to the kinematic body and add the following code:"
 msgstr ""
+"Lisää kinemaattiselle kappaleelle skripti ja lisää siihen seuraava koodi:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:103
 msgid ""
@@ -32799,18 +32826,27 @@ msgid ""
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
+"``get_input()`` funktiossa tarkistamme neljä näppäintapahtumaa ja laskemme "
+"ne yhteen saadaksemme nopeusvektorin. Tästä on se etu, että kaksi "
+"vastakkaista näppäintä kumoavat toisensa, mutta se johtaa myös siihen, että "
+"viistottainen liike on nopeampaa, koska kaksi suuntaa on laskettu yhteen."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
+"Voimme estää sen *normalisoimalla* nopeuden, mikä tarkoittaa, että asetamme "
+"sen *pituudeksi* ``1`` ja kerromme sen halutulla nopeudella."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
+"Mikäli et ole käyttänyt vektorimatematiikkaa aiemmin tai tarvitset "
+"kertausta, voit lukea selostuksen vektoreiden käytöstä Godotissa sivulta :"
+"ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:116
 msgid ""
@@ -32818,10 +32854,13 @@ msgid ""
 "you've set up input actions correctly as described in the :ref:"
 "`doc_2d_movement_setup` part of this tutorial."
 msgstr ""
+"Jos yllä oleva koodi ei tee mitään painaessasi näppäimiä, tarkista että olet "
+"asettanut syötetoiminnot oikein tämän oppaan :ref:`doc_2d_movement_setup` "
+"osiossa kuvatulla tavalla."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"
-msgstr ""
+msgstr "Kiertyminen + liikkuminen"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:123
 msgid ""
@@ -32830,6 +32869,10 @@ msgid ""
 "the character, while up/down moves it forward or backward in whatever "
 "direction it's facing."
 msgstr ""
+"Tämän tyyppistä liikkumista kutsutaan joskus \"Asteroids-tyyliksi\", koska "
+"se muistuttaa kyseisen klassisen arcade-pelin toimintatapaa. Painamalla "
+"vasemalle/oikealle kiertää pelihahmoa, kun taas ylös/alas liikuttaa sitä "
+"eteenpäin tai taaksepäin siinä suunnassa johon se osoittaa."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:198
 msgid ""
@@ -32838,6 +32881,10 @@ msgid ""
 "rotation. The rotation is applied directly to the body's ``rotation`` "
 "property."
 msgstr ""
+"Tässä olemme lisänneet kaksi uutta muuttujaa kiertymissuunnan ja -nopeuden "
+"seuraamiseksi. Jälleen kerran, molempien näppäimien yhdenaikainen painaminen "
+"kumoaa toisensa, eikä kiertymistä tapahdu. Kiertyminen lisätään suoraan "
+"kappaleen ``rotation`` ominaisuuteen."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:202
 msgid ""
@@ -32846,10 +32893,14 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"Nopeuden asettamiseksi käytämme ``Vector2.rotated()`` metodia niin, että se "
+"osoittaa samaan suuntaan kuin kappale. ``rotated()`` on hyödyllinen "
+"vektorifunktio, jota voit käyttää useissa tilanteissa, joissa muutoin "
+"tarvitsisit trigonometrisia funktioita."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid "Rotation + movement (mouse)"
-msgstr ""
+msgstr "Kiertyminen + liikkuminen (hiirellä)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid ""
@@ -32858,6 +32909,9 @@ msgid ""
 "character will always \"look at\" the mouse pointer. The forward/back inputs "
 "remain the same, however."
 msgstr ""
+"Tämä liikkumistyyli on muunnelma edellisestä. Tällä kertaa suuntaa asetetaan "
+"hiiren sijainnilla näppäimistön sijaan. Pelihahmo \"katsoo\" aina hiiren "
+"osoittimen suuntaan. Eteenpäin/taaksepäin syötteet pysyvät kuitenkin samana."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:269
 msgid ""
@@ -32865,16 +32919,21 @@ msgid ""
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
+"Tässä käytämme :ref:`Node2D <class_Node2D>` solmun ``look_at()`` metodia "
+"osoittamaan pelaaja annettun sijainnin suuntaan. Ilman tätä funktiota, "
+"saisit saman aikaan asettamalla kulman tällä tavalla:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:284
 msgid "Click-and-move"
-msgstr ""
+msgstr "Napsauta-ja-liiku"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:286
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
+"Tämä viimeinen esimerkki käyttää ainoastaan hiirtä hahmon ohjaamiseen. "
+"Ruudun napsauttaminen saa pelaajan siirtymään kohdepaikkaan."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:343
 msgid ""
@@ -32883,18 +32942,26 @@ msgid ""
 "moves slightly past the position and tries to move back, only to move too "
 "far and repeat."
 msgstr ""
+"Huomaa ``distance_to()`` tarkistus, jonka teemme ennen liikkumista. Ilman "
+"tätä testiä, kappale \"tärisisi\" saavutettuaan kohdesijainnin sen "
+"liikkuessa hivenen sijainnin ohi ja yrittäessä liikkua takaisin, vain "
+"liikkuakseen liian pitkälle ja toistaakseen saman."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:348
 msgid ""
 "Uncommenting the ``look_at()`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
+"Kommentoinnin poistaminen ``look_at()`` riviltä saa kappaleen kääntymään "
+"myös osoittamaan liikkumissuuntaansa, jos niin haluat."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
+"Tätä tekniikaa voi myös käyttää pohjana \"seuraavalle\" hahmolle. ``target`` "
+"sijainti voi olla minkä tahansa objektin, jota haluat liikuttaa."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:357
 msgid ""
@@ -32902,12 +32969,17 @@ msgid ""
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
+"Nämä koodiesimerkit saattavat olla hyödyllisiä aloituspisteitä omiin "
+"projekteihisi. Voit vapaasti käyttää niitä ja kokeilla mitä voisit saada "
+"aikaiseksi."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
+"Voit ladata tämän esimerkkiprojektin täältä: :download:`2D_movement_demo.zip "
+"<files/2D_movement_demo.zip>`"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:4
 msgid "2D lights and shadows"
@@ -77597,14 +77669,12 @@ msgid "Putting a start/stop timer around code of interest."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler."
-msgstr "Polygonien luonti"
+msgstr "Godot-profiloijan käyttö."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third-party CPU profilers."
-msgstr "Ulkoiset resurssit"
+msgstr "Ulkoisten kolmannen osapuolen CPU-profiloijien käyttö."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:60
 msgid ""
@@ -79256,9 +79326,8 @@ msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:72
-#, fuzzy
 msgid "Change of texture."
-msgstr "Tekstuurien tuonti"
+msgstr "Tekstuurien vaihto."
 
 #: ../../docs/tutorials/optimization/batching.rst:73
 msgid "Change of material."
