@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,147 +20,211 @@ msgstr ""
 msgid "Godot release policy"
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:7
+#: ../../docs/about/release_policy.rst:6
+msgid "Godot's release policy is in constant evolution. What is described below is intended to give a general idea of what to expect, but what will actually happen depends on the choices of core contributors, and the needs of the community at a given time."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:9
-msgid "Godot uses ``major.minor.patch`` version numbering. However, it does not strictly follow `Semantic Versioning <https://semver.org/>`__. This means that releases considered \"semver-minor\" by that standard (such as 3.1 -> 3.2) will most likely introduce breaking changes. Still, there won't be as many breaking changes as a \"semver-major\" version bump such as 3.2 -> 4.0."
+#: ../../docs/about/release_policy.rst:14
+msgid "Godot loosely follows `Semantic Versioning <https://semver.org/>`__ with a ``major.minor.patch`` versioning system, albeit with an interpretation of each term adapted to the complexity of a game engine:"
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:15
-msgid "In the interest of stability and usability, patch releases may occasionally introduce small breaking changes as well. When repackaging Godot projects (e.g. in a Flatpak), make sure to always use the same patch version as the one used to initially export the project."
+#: ../../docs/about/release_policy.rst:18
+msgid "The ``major`` version is incremented when major compatibility breakages happen which imply significant porting work to move projects from one major version to another."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:22
-msgid "The first release in a major/minor release series doesn't end with a trailing zero. For example, the first release in the 3.2 series is ``3.2``, not ``3.2.0``."
+msgid "For example, porting Godot projects from Godot 2.1 to Godot 3.0 required running the project through a conversion tool, and then performing a number of further adjustments manually for what the tool could not do automatically."
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:27
+#: ../../docs/about/release_policy.rst:26
+msgid "The ``minor`` version is incremented for feature releases which do not break compatibility in a major way. Minor compatibility breakage in very specific areas *may* happen in minor versions, but the vast majority of projects should not be affected or require significant porting work."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:31
+msgid "The reason for this is that as a game engine, Godot covers many areas such as rendering, physics, scripting, etc., and fixing bugs or implementing new features in a given area may sometimes require changing the behavior of a feature, or modifying the interface of a given class, even if the rest of the engine API remains backwards compatible."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:39
+msgid "Upgrading to a new minor version is therefore recommended for all users, but some testing is necessary to ensure that your project still behaves as expected in a new minor version."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:43
+msgid "The ``patch`` version is incremented for maintenance releases which focus on fixing bugs and security issues, implementing new requirements for platform support, and backporting safe usability enhancements. Patch releases are backwards compatible."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:48
+msgid "Patch versions may include minor new features which do not impact the existing API, and thus have no risk of impacting existing projects."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:53
+msgid "Updating to new patch versions is therefore considered safe and strongly recommended to all users of a given stable branch."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:56
+msgid "We call ``major.minor`` combinations *stable branches*. Each stable branch starts with a ``major.minor`` release (without the ``0`` for ``patch``) and is further developed for maintenance releases in a Git branch of the same name (for example patch updates for the 3.3 stable branch are developed in the ``3.3`` Git branch)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:64
+msgid "As mentioned in the introduction, Godot's release policy is evolving, and earlier Godot releases may not have followed the above rules to the letter. In particular, the 3.2 stable branch received a number of new features in 3.2.2 which would have warranted a ``minor`` version increment."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:29
-msgid "Godot versions are supported for a certain amount of time. While these durations are not set in stone, here's a table with the expected level of support for each Godot version:"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:34
-msgid "**Version**"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:34
-msgid "**Release date**"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:34
-msgid "**Support level**"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:36
-msgid "Godot 4.0"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:36
-msgid "~2021 (see below)"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:36
-msgid "|unstable| *Current focus of development (unstable).*"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:38
-msgid "Godot 3.2"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:38
-msgid "January 2020"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:38
-msgid "|supported| Backwards-compatible new features (backported from the ``master`` branch) as well as bug, security, and platform support fixes."
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:41
-msgid "Godot 3.1"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:41
-msgid "March 2019"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:41
-#: ../../docs/about/release_policy.rst:43
-#: ../../docs/about/release_policy.rst:45
-msgid "|partial| Only critical, security and platform support fixes."
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:43
-msgid "Godot 3.0"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:43
-msgid "January 2018"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:45
-msgid "Godot 2.1"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:45
-msgid "July 2016"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:47
-msgid "Godot 2.0"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:47
-msgid "February 2016"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:47
-#: ../../docs/about/release_policy.rst:49
-#: ../../docs/about/release_policy.rst:51
-msgid "|eol| No longer supported."
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:49
-msgid "Godot 1.1"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:49
-msgid "May 2015"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:51
-msgid "Godot 1.0"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:51
-msgid "December 2014"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:59
-msgid "**Legend:** |supported| Full support - |partial| Partial support - |eol| No support (end of life) - |unstable| Development version"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:65
-msgid "Pre-release Godot versions aren't intended to be used in production and are provided on a best-effort basis."
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:71
-msgid "When is the next release out?"
-msgstr ""
-
-#: ../../docs/about/release_policy.rst:73
-msgid "While Godot contributors aren't working under any deadlines, there's usually a major or minor Godot release made available every year. Following this trend, this means Godot 4.0 will most likely be released in **2021**."
+#: ../../docs/about/release_policy.rst:72
+msgid "Stable branches are supported *at minimum* until the next stable branch is released and has received its first patch update. In practice, we support stable branches on a *best effort* basis for as long as they have active users who need maintenance updates."
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:77
-msgid "Patch releases are made available more frequently, typically every 2-6 months while a release is fully supported. Partially supported releases will only have new patch releases once an important security or platform support fix has been merged."
+msgid "Whenever a new major version is released, we make the previous stable branch a long-term supported release, and do our best to provide fixes for issues encountered by users of that branch who cannot port complex projects to the new major version. This is the case for the 2.1 branch, and will be the case for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
 
-#: ../../docs/about/release_policy.rst:84
-msgid "The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository documents features that have been agreed upon and may be implemented in future Godot releases."
+#: ../../docs/about/release_policy.rst:88
+msgid "**Version**"
 msgstr ""
 
+#: ../../docs/about/release_policy.rst:88
+msgid "**Release date**"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:88
+msgid "**Support level**"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:90
+msgid "Godot 4.0"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:90
+msgid "~2021 (see below)"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:90
+msgid "|unstable| *Current focus of development (unstable).*"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:92
+msgid "Godot 3.3"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:92
+msgid "March/April 2021"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:92
+msgid "|supported| Receives bug, security and platform support fixes, as well as backwards-compatible usability enhancements."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:95
+msgid "Godot 3.2"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:95
+msgid "January 2020"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:95
+msgid "|partial| Only critical, security and platform support fixes (last update: 3.2.3)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:98
+msgid "Godot 3.1"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:98
+msgid "March 2019"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:98
+msgid "|partial| Only critical, security and platform support fixes (last update: 3.1.2)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:101
+msgid "Godot 3.0"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:101
+msgid "January 2018"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:101
+msgid "|eol| No longer supported (last update: 3.0.6)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:103
+msgid "Godot 2.1"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:103
+msgid "July 2016"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:103
+msgid "|partial| Only critical, security and platform support fixes (last update: 2.1.6)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:106
+msgid "Godot 2.0"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:106
+msgid "February 2016"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:106
+msgid "|eol| No longer supported (last update: 2.0.4.1)."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:108
+msgid "Godot 1.1"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:108
+msgid "May 2015"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:108
+#: ../../docs/about/release_policy.rst:110
+msgid "|eol| No longer supported."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:110
+msgid "Godot 1.0"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:110
+msgid "December 2014"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:118
+msgid "**Legend:** |supported| Full support – |partial| Partial support – |eol| No support (end of life) – |unstable| Development version"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:124
+msgid "Pre-release Godot versions aren't intended to be used in production and are provided for testing purposes only."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:130
+msgid "When is the next release out?"
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:132
+msgid "While Godot contributors aren't working under any deadlines, we have historically had one major or minor release per year, with several maintenance updates between each."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:136
+msgid "Starting with Godot 3.3, we aim to accelerate our development cycles for minor releases, so you can expect a new minor release every 3 to 6 months."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:139
+msgid "Maintenance (patch) releases will be released as needed with potentially very short development cycles, to provide users of the current stable branch with the latest bug fixes for their production needs."
+msgstr ""
+
+#: ../../docs/about/release_policy.rst:143
+msgid "As for the upcoming Godot 4.0, we can only say that we aim for a **2021** release, but any closer estimate is likely to be hard to uphold. Alpha builds will be published as soon as the main features for Godot 4.0 are finalized."
+msgstr ""

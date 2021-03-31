@@ -80,7 +80,7 @@ done
 if [ "$make_templates_list" = true ]; then
   echo "=== Making ordered list of Sphinx templates based on table of contents ==="
   if [ ! -f "index.html" ]; then
-    echo "Main 'index.html' file is missing, build it with 'make docs' and copy it here."
+    echo "Main 'index.html' file is missing, build it with 'make html' and copy it here."
     exit 1
   fi
   # The strings we are interested in are of the form:
