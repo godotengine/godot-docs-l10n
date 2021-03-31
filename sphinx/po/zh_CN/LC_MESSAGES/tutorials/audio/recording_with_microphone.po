@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "使用麦克风录音"
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
-msgstr ""
+msgstr "Godot支持Windows、macOS、Linux、Android和iOS的游戏内音频录制。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
@@ -44,7 +44,7 @@ msgstr "根节点的结构"
 msgid ""
 "The demo consists of a single scene. This scene includes two major parts: "
 "the GUI and the audio."
-msgstr ""
+msgstr "该演示由单一场景组成，这个场景包括两个主要部分：GUI和音频。"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:19
 msgid ""
@@ -52,8 +52,11 @@ msgid ""
 "the effect ``Record`` is created to handle the audio recording. An "
 "``AudioStreamPlayer`` named ``AudioStreamRecord`` is used for recording."
 msgstr ""
+"我们将重点介绍音频部分。在本演示中，创建了一个名为``Record``的总线，效果为"
+"``Record``，用于处理音频录制。用一个名为``AudioStreamPlayer``的"
+"``AudioStreamRecord``进行录音。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:41
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:55
 msgid ""
 "The audio recording is handled by the :ref:`class_AudioEffectRecord` "
 "resource which has three methods: :ref:`get_recording() "
@@ -62,29 +65,42 @@ msgid ""
 "`set_recording_active() "
 "<class_AudioEffectRecord_method_set_recording_active>`."
 msgstr ""
+"音频录制由 :ref:`class_AudioEffectRecord` 资源处理，它有三个方法： :ref:"
+"`get_recording() <class_AudioEffectRecord_method_get_recording>`, :ref:"
+"`is_recording_active() "
+"<class_AudioEffectRecord_method_is_recording_active>`, 以及 :ref:"
+"`set_recording_active() "
+"<class_AudioEffectRecord_method_set_recording_active>`。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:65
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:102
 msgid ""
 "At the start of the demo, the recording effect is not active. When the user "
 "presses the ``RecordButton``, the effect is enabled with "
 "``set_recording_active(true)``."
 msgstr ""
+"在演示开始时，录音效果是未激活。当用户按下``RecordButton``时，用"
+"``set_recording_active(true)``启用该效果。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:69
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:106
 msgid ""
 "On the next button press, as ``effect.is_recording_active()`` is ``true``, "
 "the recorded stream can be stored into the ``recording`` variable by calling "
 "``effect.get_recording()``."
 msgstr ""
+"在下一次按下按钮时，由于``effect.is_recording_active()``为``true``，可以通过"
+"调用``effect.get_recording()``将录制的流存储到``recording``变量中。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:87
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:140
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
 msgstr ""
+"要回放录音，你可以将录音指定为``AudioStreamPlayer``的流，并调用``play()``。"
 
-#: ../../docs/tutorials/audio/recording_with_microphone.rst:98
+#: ../../docs/tutorials/audio/recording_with_microphone.rst:160
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."
 msgstr ""
+"要保存录音，你需要调用``save_to_wav()``，并提供文件的路径。在本演示中，路径由"
+"用户通过``LineEdit``输入框定义。"

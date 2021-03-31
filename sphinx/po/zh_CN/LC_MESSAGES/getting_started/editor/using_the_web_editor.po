@@ -1,0 +1,244 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:4
+#, fuzzy
+msgid "Using the Web editor"
+msgstr "运行编辑器"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:6
+msgid ""
+"Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
+"you can use to work on new or existing projects."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:11
+msgid ""
+"The web editor is in a preliminary stage. While its feature set may be "
+"sufficient for educational purposes, it is currently **not recommended for "
+"production work**. See :ref:`doc_using_the_web_editor_limitations` below."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:16
+#, fuzzy
+msgid "Browser support"
+msgstr "提供mod支持"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:18
+msgid ""
+"The Web editor requires support for WebAssembly's SharedArrayBuffer. This is "
+"in turn required to support threading in the browser. The following desktop "
+"browsers support WebAssembly threading and can therefore run the web editor:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:22
+msgid "Chrome 68 or later"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:23
+msgid "Firefox 79 or later"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:24
+msgid "Edge 79 or later"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:26
+msgid ""
+"Opera and Safari are not supported yet. Safari may work in the future once "
+"proper threading support is added."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:29
+#, fuzzy
+msgid "**Mobile browsers are currently not supported.**"
+msgstr "目前不支持JDK 9或更高版本。"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:31
+msgid ""
+"The web editor supports both the GLES3 and GLES2 renderers, although GLES2 "
+"is recommended for better performance and compatibility with old/low-end "
+"hardware."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:36
+msgid ""
+"If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
+"mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
+"based browser instead of Firefox."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:43
+msgid "Limitations"
+msgstr "限制"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:45
+msgid ""
+"Due to limitations on the Godot or Web platform side, the following features "
+"are currently missing:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:48
+#, fuzzy
+msgid "No C#/Mono support."
+msgstr "|eol| 不再支持。"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:49
+msgid "No GDNative support."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:50
+msgid ""
+"No project exporting. As a workaround, you can download the project source "
+"using **Project > Tools > Download Project Source** and export it using a "
+"`native version of the Godot editor <https://godotengine.org/download>`__."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:53
+msgid "The editor won't warn you when closing the tab with unsaved changes."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:54
+msgid ""
+"No lightmap baking support. You can still use existing lightmaps if they "
+"were baked with a native version of the Godot editor (e.g. by importing an "
+"existing project)."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:58
+msgid ""
+"The following features are unlikely to be supported due to inherent "
+"limitations of the Web platform:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:61
+#, fuzzy
+msgid "No support for external script editors."
+msgstr "尚不支持MIDI输出."
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:62
+#, fuzzy
+msgid "No support for Android one-click deploy."
+msgstr "一键部署的步骤"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:66
+#, fuzzy
+msgid ""
+"See the `list of open issues on GitHub related to the web editor <https://"
+"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
+"%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
+msgstr ""
+"查看GitHub上的 `HTML5公开议题列表<https://github.com/godotengine/godot/"
+"issues?q=is:open+is:issue+label:platform:html5>`__ ，看看你关注的功能是否有议"
+"题。如果没有，请打开一个议题来表达你的兴趣。"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:70
+#, fuzzy
+msgid "Importing a project"
+msgstr "导入项目"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:72
+msgid "To import an existing project, the current process is as follows:"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:74
+msgid ""
+"Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
+"project ZIP** input."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:76
+msgid ""
+"Run the editor by clicking **Start Godot editor**. The Godot project manager "
+"should appear after 10-20 seconds. On slower machines or connections, "
+"loading may take up to a minute."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:79
+msgid ""
+"In the dialog that appears at the middle of the window, specify a name for "
+"the folder to create then click the **Create Folder** button (it doesn't "
+"have to match the ZIP archive's name)."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:82
+msgid "Click **Install & Edit** and the project will open in the editor."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:86
+msgid ""
+"It's important to place the project folder somewhere in ``/home/web_user/``. "
+"If your project folder is placed outside ``/home/web_user/``, you will lose "
+"your project when closing the editor!"
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:90
+msgid ""
+"When you follow the steps described above, the project folder will always be "
+"located in ``/home/web_user/projects``, keeping it safe."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:94
+#, fuzzy
+msgid "Editing and running a project"
+msgstr "创建一个新项目"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:96
+msgid ""
+"Unlike the native version of Godot, the web editor is constrained to a "
+"single window. Therefore, it cannot open a new window when running the "
+"project. Instead, when you run the project by clicking the Run button or "
+"pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:101
+msgid ""
+"The web editor offers an alternative way to deal with the editor and game "
+"windows (which are now \"tabs\"). You can switch between the **Editor** and "
+"**Game** tabs using the buttons on the top. You can also close the running "
+"game or editor by clicking the **×** button next to those tabs."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:107
+#, fuzzy
+msgid "Where are my project files?"
+msgstr "我的预制体在哪里？"
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:109
+msgid ""
+"Due to browser security limitations, the editor will save the project files "
+"to the browser's IndexedDB storage. This storage isn't accessible as a "
+"regular folder on your machine, but is abstracted away in a database."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:113
+msgid ""
+"You can download the project files as a ZIP archive by using **Project > "
+"Tools > Download Project Source**. This can be used to export the project "
+"using a `native Godot editor <https://godotengine.org/download>`__, since "
+"exporting from the web editor isn't supported yet."
+msgstr ""
+
+#: ../../docs/getting_started/editor/using_the_web_editor.rst:118
+msgid ""
+"In the future, it may be possible to use the `HTML5 FileSystem API <https://"
+"developer.mozilla.org/en-US/docs/Web/API/FileSystem>`__ to store the project "
+"files on the user's filesystem as the native editor would do. However, this "
+"isn't implemented yet."
+msgstr ""

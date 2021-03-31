@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,6 +233,9 @@ msgid ""
 "with them. If it's ``false`` the body will collide with rigid bodies and "
 "stop."
 msgstr ""
+"当这个参数为``true``时，本体可以推动:ref:`RigidBody2D <class_RigidBody2D>`节"
+"点，忽略其质量，不会检测到与它们的碰撞。如果是``false``，本体会与刚体发生碰撞"
+"而停止。"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:100
 msgid "``move_and_slide_with_snap``"
@@ -274,12 +277,14 @@ msgid ""
 "occur, as the slide response is calculated. To process these collisions, use "
 "``get_slide_count()`` and ``get_slide_collision()``:"
 msgstr ""
+"当使用``move_and_slide()``时，有可能发生多次碰撞，因为滑动响应是计算出来的。"
+"要处理这些碰撞，使用``get_slide_count()``和``get_slide_collision()``:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
 msgid ""
 "`get_slide_count()` only counts times the body has collided and changed "
 "direction."
-msgstr ""
+msgstr "`get_slide_count()`只计算物体碰撞和改变方向的次数。"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:135
 #, fuzzy
@@ -326,6 +331,8 @@ msgid ""
 "character collides with the environment, the function recalculates the speed "
 "internally to reflect the slowdown."
 msgstr ""
+"在上面的例子中，我们将``move_and_slide()``返回的速度赋值给``velocity``变量。"
+"这是因为当角色与环境发生碰撞时，函数会在内部重新计算速度，以反映减速的情况。"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:181
 msgid ""
@@ -333,6 +340,8 @@ msgid ""
 "accumulate vertical speed due to the effect of gravity. Instead, you want "
 "its vertical speed to reset to zero."
 msgstr ""
+"例如，如果角色倒在地上，不希望它因为重力的影响而积累垂直速度，而希望它的垂直"
+"速度重置为零。"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:185
 msgid ""
@@ -342,6 +351,9 @@ msgid ""
 "process, the function returns the character's new velocity that we can store "
 "in our ``velocity`` variable, and use on the next frame."
 msgstr ""
+"``move_and_slide()``还可以在循环中多次重新计算运动体的速度，为了产生一个平滑"
+"的运动，它默认会移动角色，并碰撞5次，在这个过程结束时，函数返回角色的新速度，"
+"可以将其存储在``velocity``变量中，并在下一帧中使用。"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:192
 msgid "Examples"

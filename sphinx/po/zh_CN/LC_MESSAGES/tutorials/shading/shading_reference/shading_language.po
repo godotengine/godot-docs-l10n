@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -491,6 +491,8 @@ msgid ""
 "Arrays are containers for multiple variables of a similar type. Note: As of "
 "Godot 3.2, only local and varying arrays have been implemented."
 msgstr ""
+"数组是存放多个相似类型变量的容器。注意：从godot3.2开始，只实现了局部数组和可"
+"变数组。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:202
 #, fuzzy
@@ -503,20 +505,23 @@ msgid ""
 "datatypes, except samplers. The array declaration follows a C-style syntax: "
 "``[const] + [precision] + typename + identifier + [array size]``."
 msgstr ""
+"局部数组在函数中声明。它们可以使用所有允许的数据类型，但采样器除外。数组声明"
+"遵循C-style的语法。``[const] + [precision] + typename + identifier + [array "
+"size]``。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:213
 msgid "They can be initialized at the beginning like:"
-msgstr ""
+msgstr "它们可以在开始时进行初始化，例如："
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:225
 msgid ""
 "You can declare multiple arrays (even with different sizes) in one "
 "expression:"
-msgstr ""
+msgstr "您可以在一个表达式中声明多个数组（即使大小不同）："
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:235
 msgid "To access an array element, use the indexing syntax:"
-msgstr ""
+msgstr "要访问一个数组元素，请使用索引语法："
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:245
 msgid ""
@@ -524,6 +529,8 @@ msgid ""
 "the built-in ``length()`` function). It doesn't accept any parameters and "
 "will return the array's size."
 msgstr ""
+"数组有一个内置函数``.length()``(不要与内置的``length()``函数混淆)。它不接受任"
+"何参数，作用是返回数组的大小。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:256
 msgid ""
@@ -534,6 +541,10 @@ msgid ""
 "expression or a simple number, the editor will check its bounds to prevent "
 "this crash."
 msgstr ""
+"如果你使用一个低于0或大于数组大小的索引--着色器将崩溃并中断渲染。为了防止这种"
+"情况，请使用``length()``、``if``或``clamp()``函数来确保索引在0和数组的长度之"
+"间。总是仔细测试和检查你的代码。如果你传递了一个常量表达式或一个简单的数字，"
+"编辑器会检查它的边界以防止这种崩溃。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:259
 msgid "Constants"
@@ -547,6 +558,9 @@ msgid ""
 "value is slightly faster than using a uniform. Constants must be initialized "
 "at their declaration."
 msgstr ""
+"在变量声明前使用``const``关键字可以使该变量不可改变，这意味着它不能被修改。除"
+"了采样器之外，所有的基本类型都可以声明为常量。访问和使用常量值的速度比使用统"
+"一变量uniform值稍快。常量必须在其声明时初始化。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:271
 msgid ""
@@ -554,10 +568,12 @@ msgid ""
 "multiple of them (if they have the same type) can be declared in a single "
 "expression e.g"
 msgstr ""
+"常量不能被修改，另外也不能有提示，但可以在一个表达式中声明多个常量（如果它们"
+"具有相同的类型），如"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:277
 msgid "Similar to variables, arrays can also be declared with ``const``."
-msgstr ""
+msgstr "与变量类似，数组也可以用``const``来声明。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:287
 msgid ""
@@ -567,6 +583,9 @@ msgid ""
 "Like uniforms, global constants are shared between all shader stages, but "
 "they are not accessible outside of the shader."
 msgstr ""
+"常量既可以全局声明（在任何函数之外），也可以局部声明（在函数内部）。当你想在"
+"整个着色器中访问一个不需要修改的值时，全局常量是非常有用的。像统一常量一样，"
+"全局常量在所有着色器范围是共享的，但它们在着色器之外是不可访问的。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:297
 msgid "Operators"
@@ -834,7 +853,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:440
 msgid "Varying can also be an array:"
-msgstr ""
+msgstr "Varying变量也可以被视为一个数组："
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:457
 msgid "Interpolation qualifiers"
@@ -876,7 +895,7 @@ msgstr "该值以透视正确的方式进行插值。 这是默认值。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:488
 msgid "Uniforms"
-msgstr "制服"
+msgstr "统一值"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:490
 #, fuzzy
@@ -886,8 +905,8 @@ msgid ""
 "the uniforms will appear as editable parameters in it. Uniforms can't be "
 "written from within the shader."
 msgstr ""
-"将值传递给着色器是可能的。 这些是整个着色器的全局，称为 *制服* 。 稍后将着色"
-"器指定给材质时，制服将在其上显示为可编辑参数。 无法在着色器中编写制服。"
+"将值传递给着色器是可能的。 这些是整个着色器的全局，称为 *统一值* 。 稍后将着"
+"色器指定给材质时，制服将在其上显示为可编辑参数。 无法在着色器中编写统一值。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:500
 msgid ""
@@ -920,6 +939,8 @@ msgid ""
 "require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
 "Godot's 3D engine renders in linear color space."
 msgstr ""
+"重要的是要明白，以颜色形式提供的纹理需要适当的sRGB->线性转换的提示(即"
+"``hint_albedo``)，因为Godot的3D引擎在线性颜色空间中渲染。"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:522
 msgid "Full list of hints below:"
@@ -1054,7 +1075,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:570
 msgid "Uniforms can also be assigned default values:"
-msgstr "制服也可以分配默认值:"
+msgstr "统一值也可以分配默认值:"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:580
 #, fuzzy
@@ -1235,7 +1256,7 @@ msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:621
 msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
-msgstr ""
+msgstr "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:623
 #, fuzzy
@@ -1481,9 +1502,8 @@ msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "vec_type **step** ( vec_type a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:675
-#, fuzzy
 msgid "``b[i] < a[i] ? 0.0 : 1.0``"
-msgstr "\\` b[i] < a[i] ? 0.0 : 1.0 \\`"
+msgstr "``b[i] < a[i] ? 0.0 : 1.0``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
 #, fuzzy
@@ -1491,9 +1511,8 @@ msgid "vec_type **step** (float a, vec_type b)"
 msgstr "vec_type **step** ( float a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:677
-#, fuzzy
 msgid "``b[i] < a ? 0.0 : 1.0``"
-msgstr "\\` b[i] < a ? 0.0 : 1.0 \\`"
+msgstr "``b[i] < a ? 0.0 : 1.0``"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 #, fuzzy
@@ -1595,9 +1614,8 @@ msgid "Dot product"
 msgstr "点乘"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
-#, fuzzy
 msgid "vec3 **cross** (vec3 a, vec3 b)"
-msgstr "vec3 **cross** (vec3 a, vec3 b)"
+msgstr "vec3 **叉乘（cross）** (vec3 a, vec3 b)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:701
 msgid "Cross product"

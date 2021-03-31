@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -674,17 +674,13 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:271
 msgid ""
-"The platform names recognized by the ``--export`` switch are the same as "
-"displayed in the export wizard of the editor. To get a list of supported "
-"platforms from the command line, try exporting to a non-recognized platform "
-"and the full listing of platforms your configuration supports will be shown."
+"The preset name must match the name of an export preset defined in the "
+"project's ``export_presets.cfg`` file. If the preset name contains spaces or "
+"special characters (such as \"Windows Desktop\"), it must be surrounded with "
+"quotes."
 msgstr ""
-"``--export`` 스위치가 인식하는 플랫폼 이름은 편집기의 내보내기 마법사에 표시"
-"된 것과 동일합니다. 명령줄에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
-"는 플랫폼으로 내보내기를 시도하고 그러면 구성이 지원되는 전체 플랫폼 목록이 "
-"나타날 것입니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:277
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
@@ -692,7 +688,7 @@ msgstr ""
 "게임의 디버그 버전을 내보내기 위해, ``--export`` 대신 ``--export-debug`` 스위"
 "치를 사용하세요. 매개 변수와 사용법은 동일합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
 "preset name and output path, with the file extension, instead of ``--"
@@ -700,11 +696,19 @@ msgid ""
 "PCK or ZIP."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:285
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
+msgid ""
+"When specifying a relative path as the path for `--export`, `--export-debug` "
+"or `--export-pack`, the path will be relative to the directory containing "
+"the ``project.godot`` file, **not** relative to the current working "
+"directory."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:289
 msgid "Running a script"
 msgstr "스크립트 실행하기"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:287
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 #, fuzzy
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
@@ -714,21 +718,21 @@ msgstr ""
 "명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 맞"
 "춤 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:295
 #, fuzzy
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "스크립트는 SceneTree나 MainLoop에서 상속해야 합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:293
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 #, fuzzy
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr "어떻게 작동하는 지의 예제입니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "And how to run it:"
 msgstr "그리고 어떻게 실행하는 지의 예제입니다:"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:311
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:315
 #, fuzzy
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
@@ -737,7 +741,7 @@ msgstr ""
 "project.godot이 경로에 존재하지 않으면, 현재 경로는 (``-path`` 가 지정되지 않"
 "는 한) 현재 작업 디렉토리로 가정합니다."
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:314
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:318
 msgid ""
 "The first line of ``sayhello.gd`` above is commonly referred to as a "
 "*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
@@ -745,7 +749,7 @@ msgid ""
 "macOS:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:326
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:330
 msgid ""
 "If the above doesn't work in your current version of Linux or macOS, you can "
 "always have the shebang run Godot straight from where it is located as "

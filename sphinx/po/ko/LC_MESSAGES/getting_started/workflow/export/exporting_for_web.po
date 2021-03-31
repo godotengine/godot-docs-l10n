@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,11 +74,18 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
+msgid ""
+"If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
+"mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to play the "
+"exported project using a Chromium-based browser instead of Firefox."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid "WebGL 2"
 msgstr "WebGL 2"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:32
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:39
 #, fuzzy
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
@@ -87,7 +94,7 @@ msgstr ""
 "*OpenGL ES 3* 렌더러가 *Vulkan*\\ 을 위해 Godot에서 사라질 때까지는, HTML5 내"
 "보내기는 *GLES3* 옵션이 선택되어있다면 *WebGL 2*\\ 을 사용합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:35
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 #, fuzzy
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
@@ -96,7 +103,7 @@ msgstr ""
 "WebGL 2은 향후 Godot에서 교체없이 제거될 것이기에 사용하는 것을 추천하지 않습"
 "니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
@@ -108,17 +115,17 @@ msgstr ""
 "**\\ 는 그렇지 않습니다. **iOS**\\ 는, 모든 브라우저가 WebKit (즉, 사파리)기"
 "반이기 때문에 역시 작동하지 않습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
 "Godot의 WebGL 2 렌더러는 3D에 문제가 있어 더 이상 유지 관리가 되지 않습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
 msgid "Limitations"
 msgstr "제한사항"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -129,11 +136,11 @@ msgstr ""
 "이 웹 플랫폼에서는 더 복잡합니다. 다음은 Godot 게임을 웹으로 이식할 때 알아"
 "야 할 제한사항 목록입니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Using cookies for data persistence"
 msgstr "데이터 지속성을 위한 쿠키 사용"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -145,7 +152,7 @@ msgstr ""
 "여준다면, **서드 파티** 쿠키도 허용해야합니다. 시크릿/비밀 브라우징 모드도 "
 "이 지속성을 방해합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -155,11 +162,11 @@ msgstr ""
 "지를 확인할 수 있습니다, 하지만 어떤 경우에는 잘못된 반응을 가져올 수 있습니"
 "다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
 msgid "Full screen and mouse capture"
 msgstr "전체화면과 마우스 캡쳐"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -175,7 +182,7 @@ msgstr ""
 "`class_Input` 싱글톤을 쿼리하는 것으로는 충분하지 않고, 관련된 입력 이벤트가 "
 "현재 활성화되어야 합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
@@ -185,11 +192,11 @@ msgstr ""
 "이 시작해야 작동합니다. 여기에는 :ref:`HTML 페이지의 커스터마이징"
 "<doc_customizing_html5_shell>`\\ 이 필요합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:86
 msgid "Audio autoplay"
 msgstr "오디오 자동재생"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
@@ -197,7 +204,7 @@ msgstr ""
 "크롬은 웹사이트가 오디오를 재생하는 법을 제한합이다. 반드시 플레이어가 클릭이"
 "나 키를 누르는 것으로 오디오를 재생해야 할 지도 모릅니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
@@ -206,37 +213,37 @@ msgstr ""
 "구글은 `웹 오디오 자동재생 규칙 <https://sites.google.com/a/chromium.org/dev/"
 "audio-video/autoplay>`__\\ 에 대한 정보를 제공합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
 msgstr ":ref:`class_HTTPClient` 그리고 :ref:`class_HTTPRequest`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
 msgstr "HTTP 클래스는 HTML5 플랫폼에 여러 제한을 갖고 있습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "``StreamPeer``\\ 로 접근하거나 바꾸는 것이 불가능합니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
 msgid "Threaded/Blocking mode is not available"
 msgstr "Threaded/Blocking 모드를 사용할 수 없습니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
 "한 프레임에 여러 번 처리할 수 없습니다, 그래서 루프에서 폴링은 멈춥니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "No chunked responses"
 msgstr "청크 응답 없음"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
 msgid "Host verification cannot be disabled"
 msgstr "호스트 확인을 비활성화할 수 없습니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
@@ -244,11 +251,11 @@ msgstr ""
 "`동일 출처 정책 <https://developer.mozilla.org/en-US/docs/Web/Security/Same-"
 "origin_policy>`\\ 이 적용됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
 msgid "Exported ``.html`` file must not be reused"
 msgstr "내보낸 ``.html`` 파일은 반드시 재 사용될 수 없습니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 #, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
@@ -260,11 +267,11 @@ msgstr ""
 "내보낼 시, 지정된 내보내기 설정에 따라  여러 문자 자리 표시자를 **생성된 "
 "HTML 파일**\\ 로 대체합니다. 더 이상 내보내기에 다시 사용할 수 없어야 합니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid "Boot splash is not displayed"
 msgstr "부팅 스플래시가 표시되지 않습니다"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
@@ -274,51 +281,51 @@ msgstr ""
 "를 PNG 파일로 내보낼 수 있기 때문에, :ref:`맞춤 HTML 페이지 "
 "<doc_customizing_html5_shell>` \\ 가 부팅 스플래시를 보여줄 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 #, fuzzy
 msgid "Shader language limitations"
 msgstr "언어 사양"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Unimplemented functionality"
 msgstr "구현되지 않은 기능"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:121
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "다음 기능은 현재 HTML5 플랫폼에서 사용할 수 없습니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
 msgid "Threads"
 msgstr "스레드(Threads)"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:133
 #, fuzzy
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "엔진과 운영체제 간의 클립보드 동기화"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 ":ref:`class_HTTPClient`\\ 와 :ref:`class_WebSocketClient` 이외의 네트워킹"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 #, fuzzy
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
@@ -331,11 +338,11 @@ msgstr ""
 "능에 아직 이슈가 있는지 찾아보세요. 기능이 아직 없다면 하나를 열어서 관심있"
 "는 기능을 이야기를 해보세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
 msgid "Serving the files"
 msgstr "파일 전달하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -345,7 +352,7 @@ msgstr ""
 "HTML 페이지도 이에 속합니다. 맞춤 HTML 파일을 사용할 수 있습니다, :ref:"
 "`doc_customizing_html5_shell`\\ 을 보세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:141
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -355,7 +362,7 @@ msgstr ""
 "고 언제든지 ``index.html``\\ 과 같은 이름으로 바꿀 수 있습니다, 이름은 기본적"
 "으로 파일에 의지하지 않습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -365,7 +372,7 @@ msgstr ""
 "을 게임의 크기가 있는 ``<iframe>``\\ 에 넣을 수 있습니다, 흔한 웹 게임 호스"
 "팅 사이트에서 쓰는 방식이죠."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:149
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -382,7 +389,7 @@ msgstr ""
 "플래시 이미지입니다. 기본 HTML 페이지에서는 쓰이지 않지만, :ref:`맞춤 HTML 페"
 "이지 <doc_customizing_html5_shell>`\\ 를 위해 포함됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:157
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -392,7 +399,7 @@ msgstr ""
 "stream`\\ 으로 전달됩니다.  ``.wasm`` 파일은 :mimetype:`application/wasm`\\ "
 "으로 전달됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -400,7 +407,7 @@ msgstr ""
 "WebAssembly 모듈  (``.wasm``)을  :mimetype:`application/wasm`\\ 이외의 MIME "
 "타입으로 전달하면 일부 시작 최적화를 방지할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:165
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -411,11 +418,11 @@ msgstr ""
 "큰 사이즈의 파일에 적합합니다. WebAssembly 모듈은 압축을 특히 잘하는데, gzip "
 "압축을 사용하여 원번 크기의 약 4분의 1까지 줄일 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 msgid "Export options"
 msgstr "내보내기 설정"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -425,7 +432,7 @@ msgstr ""
 "튼과 *편집 중인 씬 실행* 버튼 사이에 버튼이 나타나 테스트를 위해 빠르게 기본 "
 "브라우저에서 게임을 열 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:184
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -433,7 +440,7 @@ msgstr ""
 "**맞춤 HTML 셸** 파일에 대한 경로가 주어진다면, 그것이 기본 HTML 페이지 대신 "
 "사용됩니다. :ref:`doc_customizing_html5_shell`\\ 을 참고하세요."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -443,11 +450,11 @@ msgstr ""
 "로 웹 폰트나CSS가 포함된 타사 JavaScript API를 불러오거나, JavaScript 코드를 "
 "실행할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "Calling JavaScript from script"
 msgstr "스크립트에서 JavaScript 호출하기"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -460,7 +467,7 @@ msgstr ""
 "인수로 가지며 JavaScript 코드로 실행합니다. 이걸로 Godot와 통합될 수 없는 스"
 "크립트 언어를 브라우저와 상호작용할 수 있게됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:200
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -468,19 +475,19 @@ msgstr ""
 "마지막 JavaScript 명령문의 값은 GDScript 값으로 변환되며 특정 경우에 "
 "``eval()``\\ 에 의해 반환됩니다:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number``\\ 는 GDScript에서 :ref:`class_float`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``boolean``\\ 은 GDScript에서 :ref:`class_bool`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:212
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string``\\ GDScript에서 :ref:`class_String`\\ 으로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:206
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:213
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -488,11 +495,11 @@ msgstr ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` 그리고 ``DataView``\\ 는 GDScript"
 "에서 :ref:`class_PoolByteArray`\\ 로 반환됨"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:215
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "다른 JavaScript 값은 ``null``\\ 로 반환됩니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:217
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:224
 #, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
@@ -506,7 +513,7 @@ msgstr ""
 "것입니다. 싱글톤의 유효성은 ``Javascript`` :ref:`기능 태그 "
 "<doc_feature_tags>`\\ 로 확인할 수 있습니다::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:238
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -514,7 +521,7 @@ msgstr ""
 "위의 ``my_func3()``\\ 에서 3개의 큰따옴표 ``\"\"\"``\\ 로 둘러싸인 GDScript"
 "의 여러 줄의 문자열은 JavaScript 코드가 읽을 수 있도록 유지할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:234
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:241
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

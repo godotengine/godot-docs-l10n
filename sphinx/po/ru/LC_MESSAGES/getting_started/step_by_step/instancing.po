@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr "Интегрирование"
+msgstr "Создание экземпляров"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -73,15 +73,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr "Интегрирование на примере"
+msgstr "Создание экземпляров на примере"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Чтобы узнать, как работает интегрирование, давайте начнем с загрузки примера "
-"проекта: :download:`instancing.zip <files/instancing.zip>`."
+"Чтобы узнать, как это работает, давайте начнем с загрузки примера проекта: :"
+"download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
@@ -123,9 +123,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
-"Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего "
-"узла``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке "
-"сказано: \"Добавить файл сцены как узел.\") и выберите файл ``Ball.tscn``."
+"Мы хотим добавить экземпляр сцены ``Ball`` в качестве дочернего узла "
+"``Main``. Нажмите кнопку в виде \"цепи\" (во всплывающей подсказке сказано: "
+"\"Добавить файл сцены как узел.\") и выберите файл ``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -196,7 +196,7 @@ msgstr ""
 "ресурсы, как ``PhysicsMaterial`` по умолчанию являются общими для всех "
 "экземпляров, но мы можем сделать их уникальными. Нажмите на стрелку вниз и "
 "выберите пункт \"Сделать Уникальным (Make Unique)\". Установите для "
-"параметра``Bounce`` значение ``1`` и нажмите «Play»."
+"параметра ``Bounce`` значение ``1`` и нажмите «Play»."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,8 @@ msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本指南假定读者知道如何创建C++模块和Godot数据类型。如果没有，请参考指南 :ref:"
-"`doc_custom_modules_in_c++`。"
+"本指南假定读者知道如何创建C++模块和Godot数据类型。如果不知道，请参考本指南 :"
+"ref:`doc_custom_modules_in_c++` 。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
@@ -116,10 +116,11 @@ msgid ""
 msgstr "每种文件格式都包含一个数据容器和一个 ``ResourceFormatLoader``。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
+#, fuzzy
 msgid ""
 "ResourceFormatLoaders are usually simple classes which return all the "
 "necessary metadata for supporting new extensions in Godot. The class must "
-"the return the format name and the extension string."
+"return the format name and the extension string."
 msgstr ""
 "ResourceFormatLoader通常是简单的类，它们返回所有必需的元数据以支持Godot中的新"
 "扩展。该类必须返回格式名称和扩展名字符串。"
@@ -142,7 +143,7 @@ msgstr "创建一个资源格式加载器"
 msgid ""
 "If you'd like to be able to edit and save a resource, you can implement a "
 "``ResourceFormatSaver``:"
-msgstr ""
+msgstr "如果您希望能够编辑和保存资源，则可以实现``ResourceFormatSaver``:"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:158
 msgid "Creating custom data types"
@@ -158,9 +159,8 @@ msgstr ""
 "需要新的注册数据类型来理解其他二进制格式，例如机器学习模型。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:164
-#, fuzzy
 msgid "Here is an example of creating a custom datatype:"
-msgstr "这里有一个创建自定义数据类型的示例"
+msgstr "下面是创建自定义数据类型的示例："
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:262
 msgid "Considerations"
@@ -222,6 +222,7 @@ msgid ""
 "Save a file called ``demo.json`` with the following contents and place it in "
 "the project's root folder:"
 msgstr ""
+"保存具有以下内容的名为``demo.json``的文件，并将其放置在项目的根文件夹中："
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:379
 msgid "Then attach the following script to any node::"

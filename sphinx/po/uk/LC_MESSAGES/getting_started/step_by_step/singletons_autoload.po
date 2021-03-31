@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,8 +142,8 @@ msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **AutoLoad** tab."
 msgstr ""
-"Для автоматичного завантаження сцени, чи скрипту, виберіть у меню **Проект -"
-"> Параметри проекту** та перейдіть на вкладку **AutoLoad** "
+"Для автоматичного завантаження сцени, чи скрипту, виберіть у меню **Проєкт -"
+"> Параметри проєкту** та перейдіть на вкладку **AutoLoad** "
 "(\"Автозавантаження\")."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:62
@@ -218,9 +218,9 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
-"Проект містить дві сцени: ``Scene1.tscn`` і ``Scene2.tscn``. Кожна сцена "
+"Проєкт містить дві сцени: ``Scene1.tscn`` і ``Scene2.tscn``. Кожна сцена "
 "містить мітку, яка показує назву сцени та кнопку із підключеним сигналом "
-"``pressed()``. Коли ви запускаєте проект, він запускається в ``Scene1."
+"``pressed()``. Коли ви запускаєте проєкт, він запускається в ``Scene1."
 "tscn``. Однак натискання кнопки нічого не робить."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
@@ -243,7 +243,7 @@ msgid ""
 "gd``. Press **Add** to add it to the autoload list:"
 msgstr ""
 "Наступним кроком є додавання цього скрипту до списку автозавантаження. "
-"Відкрийте **Проект > Параметри проекту**, перейдіть на вкладку "
+"Відкрийте **Проєкт > Параметри проєкту**, перейдіть на вкладку "
 "**AutoLoad**(\"Автозавантаження\") і виберіть скрипт, натиснувши кнопку "
 "Огляд, або ввівши його шлях: ``res://Global.gd``. Натисніть **Додати**, щоб "
 "додати його до списку автоматичного завантаження:"
@@ -253,7 +253,7 @@ msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
-"Тепер, при запуску будь-якої сцени проекту, цей скрипт завжди буде "
+"Тепер, при запуску будь-якої сцени проєкту, цей скрипт завжди буде "
 "завантажений."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:135
@@ -304,7 +304,7 @@ msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button."
 msgstr ""
-"Запустіть проект і перевірте, чи можете ви перемикатися між сценами при "
+"Запустіть проєкт і перевірте, чи можете ви перемикатися між сценами при "
 "натисканні кнопки."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:286

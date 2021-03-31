@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:4
 msgid "Best practices for engine contributors"
-msgstr ""
+msgstr "Najlepsze praktyki dla wspierających rozwój silnika"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 msgid "Introduction"
@@ -34,6 +34,12 @@ msgid ""
 "common misunderstandings and bad practices during the process of "
 "contributing code to the project."
 msgstr ""
+"Godot posiada wielu użytkowników, którzy są w stanie go rozwijać, zważywszy "
+"na to, że projekt sam w sobie jest skierowany głównie do użytkowników "
+"potrafiących programować. Mimo to nie wszyscy są na tym samym poziomie "
+"doświadczenia w pracy z dużymi projektami lub w inżynierii oprogramowania, "
+"co może prowadzić do częstych nieporozumień i korzystania ze złych praktyk "
+"podczas rozwijania kodu projektu."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
@@ -46,6 +52,9 @@ msgid ""
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
+"Zakres tego dokumentu to lista najlepszych praktyk dla rozwijających kod, a "
+"także tworzenie języka, którego mogą oni używać w sytuacjach, które "
+"pojawiają się w takcie publikowania zmian."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:22
 msgid ""
@@ -53,6 +62,9 @@ msgid ""
 "development, our intention is to just restrict to situations that are most "
 "common in our project."
 msgstr ""
+"Podczas gdy niektórzy mogą uznać za dobry pomysł by rozszerzyć to na ogólne "
+"wytwarzanie oprogramowania, naszym zamiarem jest ograniczenie tego do "
+"sytuacji najczęściej napotykanych w naszym projekcie."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:26
 msgid ""
@@ -60,15 +72,18 @@ msgid ""
 "new features. To abstract this idea, we will call them *Solutions*, because "
 "they always seek to solve something that can be described as a *Problem*."
 msgstr ""
+"Wsparciem są zazwyczaj poprawki błędów, rozszerzenia lub nowe "
+"funkcjonalności. By uogólnić to pojęcie, nazwiemy je *Rozwiązaniami*, "
+"ponieważ ich celem jest zawsze rozwiązanie czegoś co może być określone jako "
+"*Problem*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
-#, fuzzy
 msgid "Best Practices"
-msgstr "Dobre praktyki:"
+msgstr "Najlepsze praktyki"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: Najpierw problem"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -77,6 +92,10 @@ msgid ""
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may not be actually solving any actual problems."
 msgstr ""
+"Duża część wspierających jest niesamowicie kreatywna i po prostu uwielbia "
+"projektować abstrakcyjne struktury danych, tworzyć piękne interfejsy "
+"użytkowania, lub po prostu kocha programować. Jednakże, jakkolwiek ich "
+"pomysły mogą być niesamowite, niekoniecznie rozwiązują istniejące problemy."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:43
 msgid ""
@@ -86,10 +105,15 @@ msgid ""
 "Avoiding the addition of anything unnecessary is always considered a good "
 "practice in software development."
 msgstr ""
+"Są one nazywane *Rozwiązanie poszukujące problemu*. W idealnym świecie nie "
+"byłyby one problemem, jednak w rzeczywistości kod zajmuje czas do napisania, "
+"miejsce do trzymania jako źródło czy kompilacja i wymaga utrzymywania gdy "
+"już zostanie napisany. Unikanie dodawanie czegokolwiek zbędnego jest zawsze "
+"uznawane za dobrą praktykę w rozwoju oprogramowania."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr ""
+msgstr "#2: By rozwiązać problem, musi on najpierw istnieć"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
@@ -149,13 +173,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
-#, fuzzy
 msgid "The complexity of the problem"
-msgstr "Rola skryptu"
+msgstr "Złożoność problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
-msgstr ""
+msgstr "Częstotliwość pojawiania się problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""

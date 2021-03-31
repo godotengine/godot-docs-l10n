@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Слои холста"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Узлы Viewport и CanvasItem"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -33,6 +33,12 @@ msgid ""
 "Each item will inherit its parent's transform. This means that when the "
 "parent is moved, the children will move too."
 msgstr ""
+"Обычные 2D-узлы, такие как :ref:`Node2D <class_Node2D>` или :ref:`Control "
+"<class_Control>` , наследуются от :ref:`CanvasItem <class_CanvasItem>`, "
+"который является базой для всех 2D-узлов. Узлы CanvasItem можно группировать "
+"в деревья. Каждый узел при этом будет наследовать преобразования своего "
+"родителя. Это означает, что когда родитель перемещается, дети тоже будут "
+"перемещаться."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
@@ -40,6 +46,9 @@ msgid ""
 "children of a :ref:`Viewport <class_Viewport>`, and will be displayed "
 "through it."
 msgstr ""
+"Узлы CanvasItem и узлы, унаследованные от них, являются прямыми или "
+"косвенными дочерними элементами объекта :ref:`Viewport <class_Viewport>` и "
+"будут отображаться через него."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -49,6 +58,11 @@ msgid ""
 "it contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
+"Viewport имеет свойство :ref:`Viewport.canvas_transform "
+"<class_Viewport_property_canvas_transform>`, которое позволяет применять "
+"настраиваемое преобразование :ref:`Transform2D <class_Transform2D>` к "
+"иерархии CanvasItem, которую он содержит. Такие узлы, как :ref:`Camera2D "
+"<class_Camera2D>` работают, изменяя это преобразование."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -56,18 +70,25 @@ msgid ""
 "transform property. This approach is more efficient than moving the root "
 "canvas item (and hence the whole scene)."
 msgstr ""
+"Такие эффекты, как прокрутка, лучше всего достигаются путём изменения "
+"свойства преобразования холста. Этот подход более эффективен, чем "
+"перемещение корневого элемента холста (и, следовательно, всей сцены)."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:28
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. Examples of this are:"
 msgstr ""
+"Однако обычно мы не хотим, чтобы *всё* в игре или приложении подвергалось "
+"преобразованию холста. Примеры этого:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr ""
+"**Плавающие (parallax) фоны**: такие фоновые изображения двигаются медленнее "
+"остальной сцены."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -76,20 +97,27 @@ msgid ""
 "display and other elements to retain their screen positions even when our "
 "view of the game world is changing."
 msgstr ""
+"**Интерфейс**: пользовательский интерфейс (UI) или Heads-up display (HUD) "
+"накладываются поверх изображения игрового мира. Мы хотим, чтобы счётчик "
+"жизней, отображение очков и другие элементы сохраняли свои позиции на экране "
+"независимо от перемещений персонажа."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:34
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "
 "blends) to remain at a fixed screen location."
 msgstr ""
+"**Переходы**: нам может понадобиться, чтобы эффекты, используемые для "
+"переходов (затухания, смешивания), постоянно оставались в определённой части "
+"окна."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:36
 msgid "How can these problems be solved in a single scene tree?"
-msgstr ""
+msgstr "Как можно решить эти проблемы в едином дереве сцены?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid "CanvasLayers"
-msgstr ""
+msgstr "Узел CanvasLayer"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
@@ -101,6 +129,15 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
+"Ответом будет :ref:`CanvasLayer <class_CanvasLayer>` - это узел, который "
+"добавляет отдельный слой 2D-рендеринга для всех своих дочерних и внучатых "
+"элементов. По умолчанию дочерние элементы Viewport будут рисоваться на "
+"нулевом слое, а CanvasLayer - на любом слое с номером, отличным от нуля. "
+"Слои с большим номером будут нарисованы над слоями с меньшим номером. При "
+"этом каждый CanvasLayer имеет собственное преобразование и не зависит от "
+"преобразования других слоёв. Это позволяет зафиксировать пользовательский "
+"интерфейс в пространстве экрана, в то время как изображение игрового мира "
+"будет изменяется."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -108,16 +145,22 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"Примером этого является создание параллакс-фона. Его можно сделать с помощью "
+"CanvasLayer на слое «-1». А отображение очков, счётчика жизней и кнопки "
+"паузы при этом можно расположить на слое «1»."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:54
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "Это можно изобразить в виде следующей схемы:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"Обработка узлов CanvasLayer не зависит от их порядкового номера в дереве "
+"сцены - только от номера их слоя; поэтому они могут создаться по мере "
+"необходимости."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:61
 msgid ""
@@ -129,3 +172,9 @@ msgid ""
 "controlling their drawing order (see :ref:`Node2D.z_index "
 "<class_Node2D_property_z_index>`)."
 msgstr ""
+"Для управления порядком рисования узлов CanvasLayer не требуется. Обычно, "
+"чтобы переместить узел на передний или на задний план, достаточно "
+"переместить его в дереве сцены. Это может показаться неочевидным, но чем "
+"выше узел в дереве на панели сцены, тем дальше от зрителя он рисуется. Кроме "
+"того, 2D-узлы имеют специальный параметр для управления порядком рисования "
+"(см. :ref:`Node2D.z_index <class_Node2D_property_z_index>`)."

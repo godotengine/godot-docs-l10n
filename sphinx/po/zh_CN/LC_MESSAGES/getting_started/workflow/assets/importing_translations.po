@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,15 +26,16 @@ msgid "Games and internationalization"
 msgstr "游戏与国际化"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
+#, fuzzy
 msgid ""
-"The world is full of different markets and cultures and, to maximize "
-"profits™, nowadays games are released in several languages. To solve this, "
-"internationalized text must be supported in any modern game engine."
+"The world is full of different languages and cultures, so nowadays games are "
+"released in several languages. To handle this, internationalized text must "
+"be supported in any modern game engine."
 msgstr ""
 "世界上充满了不同的市场和文化，并且为了最大化利润，当今的游戏以多种语言发行。"
 "为了解决这个问题，任何现代游戏引擎都必须支持国际化的文本。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:13
 msgid ""
 "In regular desktop or mobile applications, internationalized text is usually "
 "located in resource files (or .po files for GNU stuff). Games, however, can "
@@ -45,7 +46,7 @@ msgstr ""
 "po 文件）。然而，游戏可以使用比应用程序多几个数量级的文本，因此它们必须支持能"
 "高效处理多语言文本加载的方法。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:19
 msgid ""
 "There are two approaches to generate multilingual language games and "
 "applications. Both are based on a key:value system. The first is to use one "
@@ -59,7 +60,7 @@ msgstr ""
 "语发布游戏，后来以其他语言发布游戏，则第一种方法可能更易于开发；但是如果同时"
 "使用多种语言，则完全是一场噩梦。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:27
 msgid ""
 "In general, games use the second approach and a unique ID is used for each "
 "string. This allows you to revise the text while it is being translated to "
@@ -70,7 +71,7 @@ msgstr ""
 "他语言时修改文本。唯一ID可以是数字、字符串、或带有数字的字符串（无论如何，它"
 "只是一个唯一的字符串）。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:32
 msgid ""
 "If you need a more powerful file format, Godot also supports loading "
 "translations written in the gettext ``.po`` format. See :ref:"
@@ -79,11 +80,11 @@ msgstr ""
 "如果您需要更强大的文件格式，Godot还支持加载以gettext ``.po`` 格式编写的翻译。"
 "有关详细信息，请参见 :ref:`doc_localization_using_gettext`。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:37
 msgid "Translation format"
 msgstr "翻译格式"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:39
 msgid ""
 "To complete the picture and allow efficient support for translations, Godot "
 "has a special importer that can read CSV files. Most spreadsheet editors can "
@@ -98,7 +99,7 @@ msgstr ""
 "须**以UTF-8编码保存，且不应含有`字节顺序标记<https://en.wikipedia.org/wiki/"
 "Byte_order_mark>`__."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:47
 msgid ""
 "By default, Microsoft Excel will always save CSV files with ANSI encoding "
 "rather than UTF-8. There is no built-in way to do this, but there are "
@@ -110,54 +111,53 @@ msgstr ""
 "stackoverflow.com/questions/4221176/excel-to-csv-with-utf8-encoding>`__ 所"
 "述。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:53
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid ""
 "We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
 "Sheets instead."
 msgstr ""
 "我们建议使用 `LibreOffice <https://www.libreoffice.org/>`__ 或谷歌表格代替。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:54
 msgid "CSV files must be formatted as follows:"
-msgstr "文本内容如下："
+msgstr "CSV文件必须使用以下格式："
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "keys"
 msgstr "键"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang1>"
 msgstr "<lang1>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang2>"
 msgstr "<lang2>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<langN>"
 msgstr "<langN>"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 msgid "KEY1"
 msgstr "KEY1"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:60
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "string"
 msgstr "字符串"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "KEY2"
 msgstr "KEY2"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:64
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "KEYN"
 msgstr "KEYN"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:66
 msgid ""
 "The \"lang\" tags must represent a language, which must be one of the :ref:"
 "`valid locales <doc_locales>` supported by the engine. The \"KEY\" tags must "
@@ -173,84 +173,83 @@ msgstr ""
 "换。特别注意，``KEY1`` 和 ``Key1`` 将是不同的键。左上方的单元格将被忽略，可以"
 "保留为空或包含任何内容。这是一个例子："
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "en"
 msgstr "en"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "es"
 msgstr "es"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:77
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid "ja"
 msgstr "ja"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "GREET"
 msgstr "GREET"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "Hello, friend!"
 msgstr "Hello, friend!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "Hola, amigo!"
 msgstr "Hola, amigo!"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
 msgid "こんにちは"
 msgstr "こんにちは"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "ASK"
 msgstr "ASK"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "How are you?"
 msgstr "How are you?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "Cómo está?"
 msgstr "Cómo está?"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
 msgid "元気ですか"
 msgstr "元気ですか"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "BYE"
 msgstr "BYE"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Goodbye"
 msgstr "Goodbye"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "Adiós"
 msgstr "Adiós"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:83
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
 msgid "さようなら"
 msgstr "さようなら"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "QUOTE"
 msgstr "QUOTE"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "\"Hello\" said the man."
 msgstr "\"Hello\" said the man."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "\"Hola\" dijo el hombre."
 msgstr "\"Hola\" dijo el hombre."
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:85
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:84
 msgid "「こんにちは」男は言いました"
 msgstr "「こんにちは」男は言いました"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:88
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:87
 msgid ""
 "The same example is shown below as a comma-separated plain text file, which "
 "should be the result of editing the above in a spreadsheet. When editing the "
@@ -262,18 +261,17 @@ msgid ""
 "Alternatively, you can select another delimiter than comma in the import "
 "options."
 msgstr ""
-"下面是一个纯文本文件的相同示例，它以逗号分隔各项，这应该是在电子表格中编辑上"
-"面示例的结果。在编辑纯文本时，请确保将有逗号、换行符或双引号的内容，用双引号"
-"括起来。以便内容不会把逗号解析为定界符，换行符不会创建新条目，内容里的双引号"
-"不会被解析为字符串的边界。确保在内容前面包含另一个双引号用来转义，目的是告知"
-"解析器内容中可能包含双引号。 或者，您可以在导入选项中选择除逗号以外的其他定界"
-"符。"
+"下面是以逗号分隔的纯文本文件形式同样的例子，这应该是在电子表格中编辑上述内容"
+"的结果。当编辑纯文本时，请确保用双引号包裹任何包含逗号、换行符或双引号的消"
+"息，这样逗号就不会被解析为定界符，换行符不会创建新条目，双引号也不会被解析为"
+"包裹字符。请确保在信息中包含的任何双引号之前使用另一个双引号来转义。另外，您"
+"也可以在导入选项中选择逗号以外的其他定界符。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:107
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:106
 msgid "CSV importer"
 msgstr "CSV 导入器"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:109
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:108
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
@@ -281,7 +279,7 @@ msgstr ""
 "Godot 将 CSV 文件默认作为译文处理。它将导入它们，并在其旁边位置生成一个或多个"
 "压缩过的翻译资源文件。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:112
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:111
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
@@ -290,17 +288,15 @@ msgstr ""
 "导入还会将翻译添加到，要在游戏运行时加载的翻译列表中，在 ``project.godot`` "
 "（或项目设置）中指定。Godot还允许在运行时加载和删除翻译。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:117
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:116
 msgid ""
 "Select the ``.csv`` file and access the **Import** dock to define import "
 "options. You can toggle the compression of the imported translations, and "
 "select the delimiter to use when parsing the CSV file."
 msgstr ""
-"选择 ``.csv`` 文件并访问导入停靠面板，以定义导入选项。您可以切换导入翻译的压"
-"缩，并选择在解析CSV文件时使用的定界符。"
+"选择 ``.csv`` 文件并访问导入停靠面板，以定义导入选项。您可以切换是否压缩导入"
+"的翻译，并选择在解析CSV文件时使用的定界符。"
 
-#: ../../docs/getting_started/workflow/assets/importing_translations.rst:123
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_translations.rst:122
 msgid "Be sure to click **Reimport** after any change to these options."
 msgstr "对这些选项进行任何更改后，请务必点击 ``重新导入``。"

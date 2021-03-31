@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:4
-#, fuzzy
 msgid "3D rendering limitations"
-msgstr "3D性能和局限性"
+msgstr "3D渲染的局限性"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:7
 msgid "Introduction"
@@ -32,11 +31,12 @@ msgid ""
 "limitations. Godot's renderer is no exception. To work effectively with "
 "those limitations, you need to understand them."
 msgstr ""
+"出于对性能的要求，实时渲染引擎有很多局限性。Godot的渲染器也不例外。为了更有效"
+"地工作，你需要了解这些局限性。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:14
-#, fuzzy
 msgid "Texture size limits"
-msgstr "``TextureRect``"
+msgstr "纹理尺寸限制"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:16
 msgid ""
@@ -44,6 +44,8 @@ msgid ""
 "on older devices. You can check your target GPU's limitations on `GPUinfo."
 "org <https://www.gpuinfo.org/>`__."
 msgstr ""
+"在台式机和笔记本电脑上，旧设备可能不支持大于8192×8192的纹理。你可以在"
+"`GPUinfo.org <https://www.gpuinfo.org/>`上检查你的目标GPU的限制。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:20
 msgid ""
@@ -53,6 +55,9 @@ msgid ""
 "avoid using textures larger than 4096×4096 and use a power of two size if "
 "the texture needs to repeat."
 msgstr ""
+"移动端GPU通常仅支持小于4096×4096的纹理。此外，一些移动端GPU不支持对非二的幂次"
+"大小的纹理进行重复（repeat）操作。因此，如果你想让你的纹理在所有平台上正确显"
+"示，你应该避免使用比4096×4096大的纹理，如果纹理需要重复，应该使用两倍的大小。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:27
 msgid "Color banding"
@@ -66,16 +71,20 @@ msgid ""
 "visible banding, especially when using untextured materials. This can also "
 "be seen in 2D projects when using smooth gradient textures."
 msgstr ""
+"当使用GLES3或Vulkan渲染器时，Godot的3D引擎内部以高动态范围（HDR）进行渲染。然"
+"而，渲染输出将被色调映射（tonemmapped）到一个低动态范围，以便它可以显示在屏幕"
+"上。这可能导致可见的条带效应（banding），特别是当使用未贴图的材质时。在使用了"
+"具有平滑梯度的纹理的2D项目中也能看到这种效应。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
 msgid "There are several ways to alleviate banding. Here are a few examples:"
-msgstr ""
+msgstr "有几种方法可以缓解条带效应。下面是一些例子:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
 "Bake some noise into your textures. This is mainly effective in 2D, e.g. for "
 "vignetting effects."
-msgstr ""
+msgstr "在你的纹理中加入一些噪声。这主要在2D中有效，例如用于渐晕效果。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:39
 msgid ""
@@ -83,12 +92,17 @@ msgid ""
 "reading_shaders>`. Godot currently doesn't provide a built-in debanding "
 "shader, but this may be added in a future release."
 msgstr ""
+"实现一个去条带（debanding）着色器为:ref:`screen-reading shader <doc_screen-"
+"reading_shaders>`。Godot目前没有提供内置的去条带着色器，但这可能会在未来的发"
+"行版本中添加。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:45
 msgid ""
 "See `Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
 "pdf>`__ for more details about banding and ways to combat it."
 msgstr ""
+"参见`Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
+"pdf>`__ 获取更多有关条带效应的细节和解决方案。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid "Depth buffer precision"
@@ -103,6 +117,10 @@ msgid ""
 "fighting will occur. This will materialize as textures flickering back and "
 "forth as the camera moves or rotates."
 msgstr ""
+"为了在3D空间中排序对象，渲染引擎使用了深度缓冲区(也称为Z-buffer)。这个缓冲区"
+"具有有限的精度:在桌面平台上是24位，在移动平台上有时是16位(出于性能原因)。如果"
+"两个不同的对象最终具有相同的z缓冲值，那么z冲突（Z-fighting）就会发生，此时移"
+"动或旋转相机，将观察到纹理来回闪烁。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:58
 msgid ""
@@ -113,6 +131,9 @@ msgid ""
 "permissible value for your use case, though keep in mind it won't impact "
 "precision as much as the **Near** property."
 msgstr ""
+"为了使深度缓冲在渲染区域上更精确，你应该*增加*摄像机节点的**Near**属性，但是"
+"要小心，如果你设置得太高，玩家就会看穿附近的几何体。同时，还应该*减少*摄像机"
+"节点的**Far**属性到你用例允许的最低值，尽管它不会像**Near**属性那样影响精度。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:65
 msgid ""
@@ -122,6 +143,9 @@ msgid ""
 "increased to avoid Z-fighting in the distance. It can then be decreased once "
 "the player leaves the airplane."
 msgstr ""
+"如果你只需要当玩家能够看到很远的地方时才提供高精度，你可以根据游戏条件动态改"
+"变它。例如，如果玩家进入飞机，**Near**属性可以暂时增加，以避免远处的z冲突现象"
+"（z-fighting）。当玩家离开飞机时，它便会被减少。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:71
 msgid ""
@@ -129,11 +153,12 @@ msgid ""
 "the Z-fighting objects further apart without the difference being visible to "
 "the player."
 msgstr ""
+"根据场景和玩家视野条件，你还可以在玩家不会看出差异的情况下将产生z冲突的对象移"
+"得更远。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:76
-#, fuzzy
 msgid "Transparency sorting"
-msgstr "透明"
+msgstr "透明度排序"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:78
 msgid ""
@@ -146,6 +171,11 @@ msgid ""
 "specific materials to appear in front or behind of other transparent "
 "materials. Even then, this may not always be sufficient."
 msgstr ""
+"在Godot中，透明材质是在不透明材质之后绘制的。透明对象在绘制之前会根据Node3D的"
+"位置而不是世界空间中的顶点位置来排序（从后向前）。因此，互相有重叠的对象可能"
+"会出现排序错误的情况。要修复排序不当的对象，可以调整材质的:ref: `Render "
+"Priority <class_Material_property_render_priority>`属性。这将迫使特定的材质出"
+"现在其他透明材质的前面或后面。即便如此，这可能也并不总是能解决问题。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:86
 msgid ""
@@ -153,6 +183,8 @@ msgid ""
 "to alleviate this, but this is costly on the GPU. Godot currently doesn't "
 "provide this feature. There are still several ways to avoid this problem:"
 msgstr ""
+"一些渲染引擎采用了顺序无关的透明技术（OIT）来缓解这个问题，但这类技术对于GPU"
+"而言开销很大。Godot目前没有提供这个功能，但仍然有几种方法可以避免这个问题:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:90
 msgid ""
@@ -161,6 +193,8 @@ msgid ""
 "material. This will allow the opaque part to cast shadows and may also "
 "improve performance."
 msgstr ""
+"只有在你真正需要的时候才让材质透明。如果一种材质只有一个很小的透明部分，考虑"
+"将它分割成一个单独的材质。这将允许不透明部分投射阴影，也可能提高性能。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:95
 msgid ""
@@ -169,11 +203,12 @@ msgid ""
 "**PixelAlpha**. This will make the material opaque. This way, it can also "
 "cast shadows."
 msgstr ""
+"如果你想让材质随着距离增加而褪色，使用StandardMaterial3D距离褪色模式Pixel "
+"Dither或Object Dither来代替PixelAlpha，这将使材质不透明，它也可以投射阴影。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:101
-#, fuzzy
 msgid "Multi-sample antialiasing"
-msgstr "多个实例"
+msgstr "多采样抗锯齿"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:103
 msgid ""
@@ -181,23 +216,26 @@ msgid ""
 "edges of polygons when rendering objects. It does not increase the number of "
 "*color* samples used to render a scene. Here's what this means in practice:"
 msgstr ""
+"多重样本抗锯齿(MSAA)指的是在渲染对象时在多边形的边上取多个覆盖样本（coverage "
+"samples），但它不会增加用于渲染场景的颜色样本数量。下面是它在实践中的作用和局"
+"限性:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:107
 msgid ""
 "Edges of meshes will be smoothed out nicely (as well as supersampling would)."
-msgstr ""
+msgstr "网格的边缘将被很好地平滑(就像超采样一样)。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:108
 msgid ""
 "Transparent materials that use *alpha testing* (1-bit transparency) won't be "
 "smoothed out."
-msgstr ""
+msgstr "使用alpha测试(1位透明度)的透明材质无法被平滑。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:109
 msgid ""
 "Specular aliasing (\"sparkles\" that appear on reflective surfaces) won't be "
 "reduced."
-msgstr ""
+msgstr "高光锯齿问题（即出现在反射表面上的“火花”（sparkle））无法解决。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:111
 msgid ""
@@ -212,6 +250,9 @@ msgid ""
 "Limiter**. This filter has a moderate cost on performance. It should be "
 "enabled only if you actually need it."
 msgstr ""
+"为了使高光锯齿不那么明显，打开项目设置，并启用**Rendering > Quality > Screen "
+"Space Filters > Screen Space Roughness Limiter**。这个滤波器对性能有一定影"
+"响，只有当您确实需要它时，才应该启用它。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:118
 msgid ""
@@ -220,6 +261,8 @@ msgid ""
 "will also make the scene appear blurrier, especially at resolutions below "
 "1440p."
 msgstr ""
+"除了(或代替)MSAA之外，启用FXAA。FXAA是一个屏幕空间的抗锯齿方法，因此它将平滑"
+"一切事物。缺点是它会使场景显得模糊，特别是在分辨率低于1440p的时候。"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:122
 msgid ""
@@ -228,3 +271,6 @@ msgid ""
 "on the ViewportTexture flags. This technique is called *supersampling* and "
 "is very slow. Its use is generally only recommended for offline rendering."
 msgstr ""
+"以更高的分辨率渲染场景，然后在与窗口大小匹配的ViewportTexture中显示它。确保在"
+"ViewportTexture的标记中启用Filter。这种技术叫做超采样，非常慢。通常只推荐在离"
+"线渲染时使用它。"

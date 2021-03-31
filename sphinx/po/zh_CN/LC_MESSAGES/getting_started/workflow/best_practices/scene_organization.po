@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,6 @@ msgid ""
 msgstr "当Godot用户开始制作自己的场景时，他们经常遇到以下问题："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:16
-#, fuzzy
 msgid ""
 "They create their first scene and fill it with content only to eventually "
 "end up saving branches of their scene into separate scenes as the nagging "
@@ -51,10 +50,10 @@ msgid ""
 "because the node paths do not find their targets and signal connections "
 "established in the editor break."
 msgstr ""
-"他们创建了自己的第一个场景，并在其中填充了内容，然后才逐渐感觉到，需要将其拆"
-"分为可重复使用的片段，这将困扰他们。他们将场景的分支保存到自己的场景中。但"
-"是，他们然后注意到，他们以前能够依靠的硬引用已不再可能。在多个位置重复使用场"
-"景会产生问题，因为节点路径找不到目标。在编辑器中建立的信号连接中断。"
+"他们创建了自己的第一个场景，并将其内容填满，但最终却将自己场景的分支保存为独"
+"立的场景，因为他们应该拆分东西的纠结感开始累积。然而，他们会发现，之前能够依"
+"赖的强引用已经不能用了。在多个地方重新使用场景会产生问题，因为节点路径找不到"
+"目标，在编辑器中建立的信号连接也会中断。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:24
 msgid ""
@@ -67,24 +66,21 @@ msgstr ""
 "须能够相信子场景会自己创建自己，而无需挑剔人们如何使用它。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:29
-#, fuzzy
 msgid ""
 "One of the biggest things to consider in OOP is maintaining focused, "
 "singular-purpose classes with `loose coupling <https://en.wikipedia.org/wiki/"
 "Loose_coupling>`_ to other parts of the codebase. This keeps the size of "
 "objects small (for maintainability) and improves their reusability."
 msgstr ""
-"在面向对象的程序设计中，需要考虑的最重要的事情之一是保持专注、单一用途的类，"
-"使用 `松散耦合 <https://en.wikipedia.org/wiki/Loose_coupling>`_ 到代码库的其"
-"他部分。这样可以使对象的大小保持较小（为了可维护性），并提高了对象的可重用"
-"性，因此无需重写已完成的逻辑。"
+"在OOP中需要考虑的最大的事情之一是维护重点的、单一目的的类，并与代码库的其他部"
+"分进行 `松散的耦合<https://en.wikipedia.org/wiki/Loose_coupling>`_ 。这样可以"
+"使对象的大小保持在较小的范围内（便于维护），并提高它们的可重用性。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:35
-#, fuzzy
 msgid ""
 "These OOP best practices have *several* implications for best practices in "
 "scene structure and script usage."
-msgstr "这些OOP最佳实践，对场景结构和脚本使用方面的最佳实践，有 *多个* 分支。"
+msgstr "这些OOP对场景结构和脚本使用的最佳实践有 *多个* 的意义。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:38
 msgid ""
@@ -116,15 +112,14 @@ msgid ""
 msgstr "要做到这一点，必须公开数据，然后依赖父级上下文来初始化它："
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:52
-#, fuzzy
 msgid ""
 "Connect to a signal. Extremely safe, but should be used only to \"respond\" "
 "to behavior, not start it. Note that signal names are usually past-tense "
 "verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
-"连接到一个信号。极为安全，但仅应用于响应行为，而不是启动行为。请注意，信号名"
-"称通常是过去时态动词，例如 ``entered``、``skill_activated`` 或 "
-"``item_collected``。"
+"连接到一个信号，极其安全，但只能用于 \"响应\" 行为，而不是启动它。请注意，信"
+"号名称通常是过去式动词，如 \"entered\"、\"skill_activated\"或 "
+"\"item_collected\"。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:73
 msgid "Call a method. Used to start behavior."
@@ -147,14 +142,13 @@ msgid "Initialize a NodePath."
 msgstr "初始化一个 ``节点路径（NodePath）``。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:150
-#, fuzzy
 msgid ""
 "These options hide the points of access from the child node. This in turn "
 "keeps the child **loosely coupled** to its environment. One can re-use it in "
 "another context without any extra changes to its API."
 msgstr ""
-"这些选项隐藏子节点的访问的源。反过来，这保持子节点与环境的 **松散耦合**。人们"
-"可以在另一种上下文中重用它，而无需对其API进行任何额外更改。"
+"这些选项隐藏了子节点的访问点。这反过来又使子节点与环境保持 **松耦合** 。人们"
+"可以在另外一个上下文中重新使用它，而不需要对API做任何额外的改变。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:156
 msgid ""
@@ -226,7 +220,6 @@ msgstr ""
 "诉他们如何进行配置。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:234
-#, fuzzy
 msgid ""
 "So, why do all this complex switcharoo work? Well, because scenes operate "
 "best when they operate alone. If unable to work alone, then working with "
@@ -237,19 +230,17 @@ msgid ""
 "indirection is to avoid ending up in a situation where changing one class "
 "results in adversely effecting other classes."
 msgstr ""
-"那么，为什么所有这些复杂的切换都能工作呢？因为当场景单独运行时，效果最好。如"
-"果不能独自工作，那么就匿名与其他对象合作（具有最小的硬依赖关系，即松散耦"
-"合）。如果一个类不可避免的变化导致它以不可预见的方式与其他场景交互，然后事情"
-"就发生了变化。对一个类的更改可能会对其他类造成破坏性的影响。"
+"那么，为什么这些复杂的开关都起作用呢？嗯，因为场景在单独工作时运行得最好。如"
+"果不能单独工作，那么与别人匿名运行（最小化强依赖，即松散耦合）是下下之策。不"
+"可避免地，可能需要对一个类进行更改，如果这些更改导致它以不可预见的方式与其他"
+"场景交互，那么事情就会开始崩溃。所有这些间接性的目的就是为了避免最终出现改变"
+"一个类导致对其他类产生不利影响的情况。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:243
-#, fuzzy
 msgid ""
 "Scripts and scenes, as extensions of engine classes, should abide by *all* "
 "OOP principles. Examples include..."
-msgstr ""
-"脚本和场景，作为引擎类的扩展，应该遵循 *所有* 面向对象的程序设计原则。例子包"
-"括……"
+msgstr "脚本和场景作为引擎类的扩展，应该遵守 *所有* 的OOP原则。例如..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:246
 msgid "`SOLID <https://en.wikipedia.org/wiki/SOLID>`_"
@@ -286,7 +277,6 @@ msgstr ""
 "不确定的人来说，这篇有用的指南可以为他们提供一个良好结构的示例来开始。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:261
-#, fuzzy
 msgid ""
 "A game should always have a sort of \"entry point\"; somewhere the developer "
 "can definitively track where things begin so that they can follow the logic "
@@ -295,10 +285,10 @@ msgid ""
 "applications, this would be the \"main\" function. In this case, it would be "
 "a Main node."
 msgstr ""
-"游戏应该始终有一个 ``切入点``；开发人员可以在某个地方明确地跟踪事物的开始位"
-"置，以便他们可以按照逻辑在其他地方继续进行。该位置还可以俯瞰程序中的所有其他"
-"数据和逻辑。对于传统应用程序，这将是 ``Main`` 函数。在本例中，它将是一个 "
-"``Main`` 节点。"
+"一个游戏总是应该有一种 \"入口点\"；在某个地方，开发者可以明确地追踪到运行的开"
+"始位置，以便他们可以在其他地方继续运行逻辑。这个地方也可以作为程序中所有其他"
+"数据和逻辑的总览图。对于传统的应用程序，这将是 \"主\" 功能。在这种情况下，它"
+"将是一个Main节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:267
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:278
@@ -375,14 +365,13 @@ msgstr ""
 "以交换出主场景的内容。这种结构或多或少保留 ``世界`` 作为主要游戏节点。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:301
-#, fuzzy
 msgid ""
 "Any GUI would need to also be a singleton; be a transitory part of the "
 "\"World\"; or be manually added as a direct child of the root. Otherwise, "
 "the GUI nodes would also delete themselves during scene transitions."
 msgstr ""
-"任何GUI也必须是一个单例，是 ``世界`` 的过渡部分，或者手动添加为根的直接子级。"
-"否则，GUI节点还将在场景转换期间删除自己。"
+"任何GUI也需要是一个单例；是 \"世界\" 的一个过渡部分；或者是作为根节点的直接子"
+"节点手动添加。否则，GUI节点也会在场景转换时自行删除。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:306
 msgid ""
@@ -436,14 +425,13 @@ msgid ""
 msgstr "一个编组，轻松提取对所需节点的引用（假设只有一个目标）。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:332
-#, fuzzy
 msgid ""
 "When should one do this? Well, this is subjective. The dilemma arises when "
 "one must micro-manage when a node must move around the SceneTree to preserve "
 "itself. For example..."
 msgstr ""
-"什么时候应该这样做？好吧，这取决于他们的决定。当一个节点必须围绕场景树移动，"
-"且必须对其进行微观管理，以保持自身时，就会出现两难境地。例如..."
+"什么时候应该这样做呢？嗯，这是主观的。当一个节点必须在SceneTree[场景树]上移动"
+"以保护自己时，就会出现两难的局面。例如..."
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:336
 msgid "Add a \"player\" node to a \"room\"."
@@ -491,7 +479,6 @@ msgid "Re-add the player."
 msgstr "重新添加 ``玩家``。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:352
-#, fuzzy
 msgid ""
 "The issue is that the player here is a \"special case\"; one where the "
 "developers must *know* that they need to handle the player this way for the "
@@ -500,10 +487,10 @@ msgid ""
 "is dangerous. It's a maintenance burden, strains code readability, and "
 "bloats the intellectual content of a project unnecessarily."
 msgstr ""
-"问题在于，这里的 ``玩家`` 是一个 ``特殊情况``，其中开发者必须 *懂得* 他们需要"
-"以这种方式处理项目中的 ``玩家``。因此，作为一个团队可靠地共享此信息的唯一方法"
-"就是 *记录* 它。然而，在文档中保存实现细节是危险的。这是一种维护负担，增加了"
-"代码的可读性压力，以及增加了项目内不必要的知识内容。"
+"问题是，这里的角色是一个 \"特殊情况\" ；开发者必须 *知道* 需要以这种方式处理"
+"项目中的角色。因此，作为一个团队可靠地分享这些信息的唯一方法就是 *文档化* 。"
+"而将实现细节保留在文档中是很危险的，它是一种维护负担，使代码可读性下降，不必"
+"要地膨胀项目的知识内容。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:359
 msgid ""
@@ -569,7 +556,6 @@ msgstr ""
 "从 ``世界`` 分离的独立的分支中，可以帮助简化游戏连接等的管理。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:387
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "
@@ -577,10 +563,10 @@ msgid ""
 "they are dependent, then it stands to reason that they should be children of "
 "that parent (and likely part of that parent's scene if they aren't already)."
 msgstr ""
-"场景组织的关键，是用关系术语，而不是空间术语，来考虑场景树。节点是否需要依赖"
-"于其父节点的存在？如果不是，那么它们可以自己在其他地方蓬勃发展。如果是这样，"
-"那么很显然，它们应该是父节点的子节点（如果还不是，则可能是该父级的场景的一部"
-"分）。"
+"场景组织的关键是用关系树而不是空间树来考虑SceneTree[场景树]。节点是否依赖于其"
+"父节点的存在？如果不是，那么它们可以自己在别的地方茁壮成长。如果它们是依赖性"
+"的，那么理所当然它们应该是父节点的子节点（如果它们还不是父节点场景的一部分，"
+"那么很可能是父节点场景的一部分）。"
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:393
 msgid ""

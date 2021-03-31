@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,14 +79,14 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
-"Но давайте начнем с основ. Узлы являются фундаментальными строительными "
-"блоками для создания игры. Как упоминалось ранее, узел может выполнять "
-"множество специализированных функций. Однако любой используемый узел всегда "
+"Но давайте начнем с основ. Ноды являются фундаментальными строительными "
+"блоками для создания игры. Как упоминалось ранее, нода может выполнять "
+"множество специализированных функций. Однако любая используемая нода всегда "
 "имеет следующие атрибуты:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr "У него есть имя."
+msgstr "У нее есть имя."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
@@ -163,7 +163,9 @@ msgstr "может быть сохранена на диск и загружен
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "может быть *интегрирована* (подробнее об этом позже)."
+msgstr ""
+"может быть *инстанцирована* (т. е. использована несколько раз через создание "
+"её экземпляров, подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -365,8 +367,8 @@ msgid ""
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
 "Если это не сработает немедленно, и будет дисплей hiDPI хотя бы на одном из "
-"ваших мониторов, перейдите в **Проект → Настройки проекта → Экран → "
-"Окно(Project → Project Settings → Display → )**, затем включите **Allow "
+"ваших мониторов, перейдите в **Проект → Настройки проекта → Экран → Окно "
+"(Project → Project Settings → Display → Window)**, затем включите **Allow "
 "Hidpi** находящееся под **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180

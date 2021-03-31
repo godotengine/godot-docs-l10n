@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,9 +95,9 @@ msgstr ""
 "Коли ви програмуєте гру, ви спершу хочете побудувати основний геймплей: "
 "основні механізми, введення гравця, умови виграшу та програшу. Інтерфейс "
 "користувача з’являється трохи пізніше. Ви хочете, щоб усі елементи, що "
-"складають ваш проект, залишалися окремими, якщо це можливо. Кожен персонаж "
+"складають ваш проєкт, залишалися окремими, якщо це можливо. Кожен персонаж "
 "повинен бути у власній сцені, зі своїми скриптами, так же і з елементами "
-"інтерфейсу користувача. Це запобігає помилкам, зберігає ваш проект керованим "
+"інтерфейсу користувача. Це запобігає помилкам, зберігає ваш проєкт керованим "
 "та дозволяє різним членам команди працювати в різних частинах гри."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
@@ -140,7 +140,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr "Завантажте та вивчіть стартовий проект"
+msgstr "Завантажте та вивчіть стартовий проєкт"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 #, fuzzy
@@ -149,7 +149,7 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
-"Завантажте проект Godot: :download:`ui_code_life_bar.zip <files/"
+"Завантажте проєкт Godot: :download:`ui_code_life_bar.zip <files/"
 "ui_code_life_bar.zip>`. Він містить усі ресурси та скрипти, необхідні для "
 "початку роботи. Витягніть архів .zip, щоб отримати дві теки: `початок` і "
 "`кінець`."
@@ -164,7 +164,7 @@ msgid ""
 "game: the basic combat mechanics already work. But as the character isn't "
 "connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
-"Завантажте проект ``start`` у Godot. На панелі Файлова система двічі "
+"Завантажте проєкт ``start`` у Godot. На панелі Файлова система двічі "
 "клацніть на ``LevelMockup.tscn``, щоб відкрити її. Це макет RPG гри, де 2 "
 "персонажі стикаються один з одним. Рожевий ворог атакує і наносить "
 "пошкодження зеленому квадрату через регулярні проміжки часу, аж до його "
@@ -185,7 +185,7 @@ msgstr ""
 "Це типово для програмування гри: спочатку ви реалізуєте основний геймплей, "
 "відпрацьовуєте смерть гравця, а вже потім додасте інтерфейс. Це тому, що "
 "інтерфейс користувача слухає, що відбувається в грі. Тому він не може "
-"працювати, якщо інші системи ще не створені. Якщо ви спроектували інтерфейс, "
+"працювати, якщо інші системи ще не створені. Якщо ви спроєктували інтерфейс, "
 "перш ніж створили і протестувати геймплей, то, швидше за все, він не "
 "працюватиме добре, і вам доведеться його створити з нуля."
 
@@ -240,7 +240,7 @@ msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
-"Проект використовує просту організацію, яка підходить для невеликих ігор."
+"Проєкт використовує просту організацію, яка підходить для невеликих ігор."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 #, fuzzy
@@ -252,7 +252,7 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
-"У корені проекту, в теці ``res://`` ви знайдете ``LevelMockup``. Це головна "
+"У корені проєкту, в теці ``res://`` ви знайдете ``LevelMockup``. Це головна "
 "ігрова сцена і та, з якою ми будемо працювати. Усі компоненти, що складають "
 "гру, знаходяться у теці ``scenes/``. Тека ``assets/`` містить ігрові спрайти "
 "і шрифт для лічильника HP. У теці ``scripts/`` ви знайдете скрипти ворога, "

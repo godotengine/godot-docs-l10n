@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,8 +40,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://docs.godotengine."
-"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
+"describe below in the `GDNative-demos repository <https://github.com/"
+"godotengine/gdnative-demos/tree/master/c/simple>`_."
 msgstr ""
 "在开始之前，您可以通过以下链接将源代码下载到我们将在此处描述的示例对象: "
 "https://github.com/GodotNativeTools/GDNative-demos/tree/master/c/"
@@ -58,7 +58,6 @@ msgstr ""
 "行操作。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:22
-#, fuzzy
 msgid ""
 ":ref:`GDNative <class_GDNative>` can be used to create several types of "
 "additions to Godot, using interfaces such as :ref:`PluginScript "
@@ -68,10 +67,11 @@ msgid ""
 "allows you to write logic in C or C++ in a similar fashion as you would "
 "write a GDScript file. We'll be creating the C equivalent of this GDScript:"
 msgstr ""
-":ref:`GDNative <class_GDNative>` 可用于创建Godot的几种类型的添加，从"
-"PluginScript到ARVR接口。 在本教程中，我们将介绍如何创建 :ref:`NativeScript "
-"<class_NativeScript>` 模块。 NativeScript允许您以与编写GDScript文件类似的方式"
-"在C或C++中编写逻辑。 我们将创建此GDScript的C等价物:"
+":ref:`GDNative <class_GDNative>` 可用于创建多种类型的Godot附加功能，使用的接"
+"口有 :ref:`PluginScript <class_PluginScript>` 或 :ref:`ARVRInterfaceGDNative "
+"<class_ARVRInterfaceGDNative>` 。在本教程中，我们将探讨如何创建一个 :ref:"
+"`NativeScript <class_NativeScript>` 模块。NativeScript允许用C或C++写逻辑，就"
+"像写GDScript文件一样。我们将创建这个GDScript的C语言等效物:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:43
 #, fuzzy
@@ -91,8 +91,9 @@ msgid "Before we start you'll need a few things:"
 msgstr "在我们开始之前，您需要一些东西："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
+#, fuzzy
 msgid "A Godot executable for your target version."
-msgstr ""
+msgstr "一个适用于您的目标版本的Godot可执行文件。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:52
 msgid ""
@@ -100,6 +101,9 @@ msgid ""
 "manager. On macOS, you can install Xcode from the Mac App Store. On Windows, "
 "you can use Visual Studio 2015 or later, or MinGW-w64."
 msgstr ""
+"一个C语言编译器。在Linux上，从你的软件包管理器安装 ``gcc`` 或 ``clang`` 。在"
+"macOS上，你可以从Mac App Store上安装Xcode。在Windows上，你可以使用Visual "
+"Studio 2015或更高版本，或者MinGW-w64。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
 #, fuzzy
@@ -129,6 +133,8 @@ msgid ""
 "If you plan to use Git for your GDNative project, you can also add "
 "``godot_headers`` as a Git submodule."
 msgstr ""
+"如果你打算在GDNative项目中使用Git，你也可以添加 ``godot_headers`` 作为Git子模"
+"块。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:75
 #, fuzzy
@@ -163,6 +169,11 @@ msgid ""
 "with ``godot-``, so you can e.g. checkout the ``godot-3.1.1-stable`` tag for "
 "use with Godot 3.1.1. In your cloned repository, you can do:"
 msgstr ""
+"如果你想为Godot的稳定版本写一个GDNative模块，请查看与你的引擎版本相匹配的Git"
+"标签(带``git标签``)，在``godot_headers``库中，这种标签的前缀是``godot-``，所"
+"以你可以查看``godot-```。在``godot_headers``版本库中，这些标签的前缀是"
+"``godot-``，所以你可以查看``godot-3.1.1-stable``标签，用于Godot 3.1.1。在你的"
+"克隆仓库中，你可以这样做："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:97
 msgid ""
@@ -170,6 +181,8 @@ msgid ""
 "fall back to the matching stable branch (e.g. ``3.1``), which you would also "
 "check out with ``git checkout 3.1``."
 msgstr ""
+"如果由于任何原因缺少了与稳定版相匹配的标签，你可以回到与之相匹配的稳定分支(例"
+"如 ``3.1`` )，你也可以用 ``git checkout 3.1`` 来检查。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:101
 msgid ""
@@ -517,7 +530,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:388
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
-msgstr ""
+msgstr "创建GDNativeLibrary (``.gdnlib``)文件"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:390
 msgid ""
@@ -527,12 +540,15 @@ msgid ""
 "Godot what dynamic libraries are part of our module and need to be loaded "
 "per platform."
 msgstr ""
+"模块编译完成后，需要创建一个相应的 :ref:`GDNativeLibrary "
+"<class_GDNativeLibrary>` 资源，扩展名为 ``.gdnlib`` ，与动态库放在一起。这个"
+"文件告诉Godot哪些动态库是模块的一部分，需要在每个平台上加载。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:396
 msgid ""
 "We can use Godot to generate this file, so open the \"simple\" project in "
 "the editor."
-msgstr ""
+msgstr "我们可以使用Godot来生成这个文件，所以在编辑器中打开 \"简单 \"项目。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:399
 msgid "Start by clicking the create resource button in the Inspector:"
@@ -549,6 +565,8 @@ msgid ""
 "\"Expand Bottom Panel\" button in the bottom right to expand it to full "
 "height:"
 msgstr ""
+"你应该看到一个上下文编辑器出现在底部面板中。使用右下角的 \"展开底部面板 \"按"
+"钮将其展开到全高:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:413
 #, fuzzy
@@ -556,9 +574,10 @@ msgid "General properties"
 msgstr "节点属性"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:415
+#, fuzzy
 msgid ""
 "In the Inspector, you have various properties to control loading the library."
-msgstr ""
+msgstr "在检查器中，你有各种属性来控制加载库。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:417
 #, fuzzy
@@ -603,6 +622,8 @@ msgid ""
 "loses and gains focus, typically to pick up new or modified symbols from any "
 "change made to the library externally."
 msgstr ""
+"*Reloadable*定义了当编辑器失去和获得焦点时，是否应该重新加载库，通常是为了从"
+"外部对库的任何变化中获取新的或修改的符号。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:439
 msgid "Platform libraries"
@@ -613,29 +634,28 @@ msgid ""
 "The GDNativeLibrary editor plugin lets you configure two things for each "
 "platform and architecture that you aim to support."
 msgstr ""
+"GDNativeLibrary编辑器插件可以让你为你所要支持的每个平台和架构配置两件事。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:444
-#, fuzzy
 msgid ""
 "The *Dynamic Library* column (``entry`` section in the saved file) tells us "
 "for each platform and feature combination which dynamic library has to be "
 "loaded. This also informs the exporter which files need to be exported when "
 "exporting to a specific platform."
 msgstr ""
-"**条目**部分告诉我们每个平台和功能组合必须加载哪个动态库。 这还会通知导出器在"
-"导出到特定平台时需要导出哪些文件。"
+"*动态库* 一栏(保存文件中的 ``entry`` 部分)告诉我们每个平台和特征组合需要加载"
+"哪个动态库。这也告知导出器在向特定平台导出时需要导出哪些文件。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:449
-#, fuzzy
 msgid ""
 "The *Dependencies* column (also ``dependencies`` section) tells Godot what "
 "other files need to be exported for each platform in order for our library "
 "to work. Say that your GDNative module uses another DLL to implement "
 "functionality from a 3rd party library, this is where you list that DLL."
 msgstr ""
-"** dependencies **部分告诉Godot每个平台需要导出哪些其他文件才能使我们的库工"
-"作。 假设您的GDNative模块使用另一个DLL来实现第三方库的功能，这是您列出该DLL的"
-"位置。"
+"*Dependencies*列（也称 ``依赖`` 部分）告诉Godot为了让库工作，每个平台还需要导"
+"出哪些文件。如果您的GDNative模块使用另一个DLL来实现第三方库的功能，这就是您列"
+"出该DLL的地方。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:454
 msgid ""
@@ -643,6 +663,8 @@ msgid ""
 "you can link them in the relevant fields by clicking the folder button. If "
 "you built all three libraries, you should have something like this:"
 msgstr ""
+"在我们的例子中，我们只构建了Linux、macOS和/或Windows的库，所以你可以通过点击"
+"文件夹按钮在相关字段中链接它们。如果你建立了所有三个库，你应该有这样的东西："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:461
 #, fuzzy
@@ -654,16 +676,18 @@ msgid ""
 "We can then save our GDNativeLibrary resource as ``bin/libsimple.gdnlib`` "
 "with the Save button in the Inspector:"
 msgstr ""
+"然后，我们可以通过检查器中的保存按钮将GDNativeLibrary资源保存为``bin/"
+"libsimple.gdnlib``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:468
 msgid ""
 "The file is saved in a text-based format and should have contents similar to "
 "this:"
-msgstr ""
+msgstr "该文件以基于文本的格式保存，其内容应类似于以下内容："
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:495
 msgid "Creating the NativeScript (``.gdns``) file"
-msgstr ""
+msgstr "创建NativeScript (``.gdns``)文件"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:497
 #, fuzzy
@@ -681,6 +705,8 @@ msgid ""
 "Like done for the GDNativeLibrary resource, click the button to create a new "
 "resource in the Inspector and select ``NativeScript``:"
 msgstr ""
+"就像对GDNativeLibrary资源所做的那样，点击按钮在检查器中创建一个新资源，并选择"
+"``NativeScript``:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:506
 #, fuzzy
@@ -699,7 +725,7 @@ msgstr ""
 msgid ""
 "The *Class Name* must have the same spelling as the one given in "
 "``godot_nativescript_init`` when registering the class."
-msgstr ""
+msgstr "类名*必须与注册时在``godot_nativescript_init``中给出的拼写相同。"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:519
 #, fuzzy

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,12 +57,11 @@ msgid "Creating a plugin"
 msgstr "创建一个插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
-#, fuzzy
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
 "serve as a base to develop and test the plugins."
 msgstr ""
-"在开始前先谁便找个地方创建个空项目。这个空项目是制作和测试我们插件的基础。"
+"在开始前，先找个地方创建个空项目。这个空项目是制作和测试我们插件的基础。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
 msgid ""
@@ -72,6 +71,10 @@ msgid ""
 "inside the project folder. Godot provides a dialog for generating those "
 "files and placing them where they need to be."
 msgstr ""
+"编辑器要识别一个新的插件，首先需要创建两个文件：一个是``plugin.cfg``用于配置"
+"和具有此功能的工具脚本。插件在项目文件夹里面有一个标准路径，比如``addons/"
+"plugin_name``。Godot提供了一个属性框，用于生成这些文件并将它们放在需要的位"
+"置。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:33
 msgid ""
@@ -79,26 +82,26 @@ msgid ""
 "Settings...``. Go to the ``Plugins`` tab and then click on the ``Create`` "
 "button in the top-right."
 msgstr ""
+"在主工具栏中,点击``Project``[项目]下拉菜单,然后点击``Project Settings...``[项"
+"目设置].然后转到``Plugins``[插件]选项卡,在点击右上角的``Create``[创建]按钮。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:37
 msgid "You will see the dialog appear, like so:"
-msgstr ""
+msgstr "你将看到属性面板出现，如下所示:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:41
 msgid ""
 "The placeholder text in each field describes how it affects the plugin's "
 "creation of the files and the config file's values."
-msgstr ""
+msgstr "每个字段中文本属性都描述了它会影响到哪些配置文件的值。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:44
-#, fuzzy
 msgid "To continue with the example, use the following values::"
-msgstr "单位基具有以下值:"
+msgstr "如果要继续使用该例子,请使用下列的值:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:55
-#, fuzzy
 msgid "You should end up with a directory structure like this:"
-msgstr "您应该有4个看起来像这样的容器"
+msgstr "你最终的目录结构应该是这样显示的："
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:59
 #, fuzzy
@@ -128,6 +131,9 @@ msgid ""
 "change: it must be a ``tool`` script, or else it will not load properly in "
 "the editor, and it must inherit from :ref:`class_EditorPlugin`."
 msgstr ""
+"创建插件后，对话框会自动为你打开EditorPlugin脚本。该脚本有两个要求，你不能改"
+"变：它必须是一个 ``tool`` 脚本，否则将无法在编辑器中正常加载；它必须继承 :"
+"ref:`class_EditorPlugin`。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:76
 msgid ""
@@ -135,6 +141,8 @@ msgid ""
 "uses must *also* be a tool.  Any GDScript without ``tool`` imported into the "
 "editor will act like an empty file!"
 msgstr ""
+"除了EditorPlugin脚本之外，插件所使用的任何其他GDScript也必须是一个tool。 任何"
+"没有 ``tool`` 导入编辑器的GDScript都会像一个空文件一样!"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:80
 #, fuzzy
@@ -178,6 +186,9 @@ msgid ""
 "Class system <doc_scripting_continued_class_name>`. If you are writing "
 "GDScript or NativeScript, we recommend using Script Classes instead."
 msgstr ""
+"通过EditorPlugin添加的节点是 \"CustomType \"节点。虽然它们可以与任何脚本语言"
+"一起工作，但功能比 :ref:`脚本类系统<doc_scripting_continued_class_name>` 少。"
+"如果你正在编写GDScript或NativeScript，建议使用脚本类代替。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:143
 #, fuzzy

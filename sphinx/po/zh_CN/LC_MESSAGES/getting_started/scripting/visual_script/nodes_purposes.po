@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -230,13 +230,12 @@ msgid ""
 msgstr "结果是可以通过写入 *数据端口* 从脚本中更改此值。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
-#, fuzzy
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
-"如果需要读取该值，请再次拖动该节点，但按住 *Control* 键（或在Mac上为 "
-"*Command*）。这将创建一个 ``getter``："
+"如果需要读取该值，请再次拖动该节点，但按住 :kbd:`Ctrl` 键（macOS :kbd:"
+"`Cmd`）。这将创建一个 ``getter`` ："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
@@ -285,9 +284,10 @@ msgid ""
 msgstr "要在脚本中使用该变量，只需将其拖到画布上即可创建一个 ``getter``："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-#, fuzzy
 msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
-msgstr "同样，按住 *Control* （Mac上的 *Command* ）删除一个 ``setter``："
+msgstr ""
+"同样，按住 :kbd:`Ctrl` （ 或者在macOS上按住 :kbd:`Cmd` ）放置一个 ``setter`` "
+"："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -341,11 +341,10 @@ msgstr ""
 "员面板下方，存在所有可用节点类型的列表："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
-#, fuzzy
 msgid ""
 "Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
 "the list."
-msgstr "Ctrl-F（Mac上的Command-F）允许您搜索列表。"
+msgstr "按下 :kbd:`Ctrl + F` (或macOS :kbd:`Cmd + F` ) 打开搜索列表。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -475,13 +474,12 @@ msgstr ""
 "它们将引用相同的内存。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
-#, fuzzy
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced setter (setting requires a sequence port)."
 msgstr ""
-"从上面可以看到，有两个可用的节点：一个简单的 ``getter`` 和一个有序的 "
-"``getter`` （设置需要一个序列端口）。"
+"从上面可以看到，有两个可用的节点：一个简单的 ``getter`` 和一个左侧有序列端口"
+"的 ``setter`` （设置需要一个序列端口）。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
@@ -587,16 +585,15 @@ msgid "Condition"
 msgstr "条件（``Condition``）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If ``true``, it will go via "
 "the \"true\" sequence port. If ``false``, the second. After going for either "
 "of them, it goes via the \"done\" port. Leaving sequence ports disconnected "
 "is fine if not all of them are used."
 msgstr ""
-"这是一个检查布尔端口的简单节点。如果为 ``true``，它将通过 ``true`` 序列端口。"
-"如果为 ``false``，则通过第二个。在找到其中任何一个后，它通过 ``done`` 端口。"
-"如果未使用所有序列端口，则将它们保持断开状态是可以的。"
+"这是一个检查布尔端口的简单节点。如果为 ``true`` ，它将执行 ``true`` 序列端"
+"口。如果为 ``false`` ，则执行第二个。在执行完上面两个端口中的任意一个时，会执"
+"行 ``done`` 端口。对没有使用的端口保持断开即可。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -872,14 +869,13 @@ msgid "Access local variables or properties:"
 msgstr "访问局部变量或属性："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:498
-#, fuzzy
 msgid ""
 "Use most of the existing built-in functions that are available to GDScript, "
 "such as ``sin()``, ``cos()``, ``print()``, as well as constructors, such as "
 "``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
-"使用GDScript可用的大多数现有内置函数，例如 ``sin()``、``cos()``、"
-"``print()``，以及构造函数，例如 ``Vector3(x，y，z)``、``Rect2(..)`` 等："
+"使用GDScript现有的大部分内置函数，例如 ``sin()`` 、 ``cos()`` 、 "
+"``print()`` ，以及构造函数，例如 ``Vector3(x，y，z)`` 、 ``Rect2(..)`` 等："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503
 msgid "Call API functions:"

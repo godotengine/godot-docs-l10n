@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -252,49 +252,43 @@ msgid ""
 msgstr "不足之处在于，这也意味着很大程度上必须使用命令式编程。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:151
-#, fuzzy
 msgid "Performance of Script vs PackedScene"
-msgstr "脚本性能和 ``PackedScene``"
+msgstr "Script[脚本]与PackedScene[场景包]的性能对比"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:153
 msgid ""
 "One last aspect to consider when choosing scenes and scripts is execution "
 "speed."
-msgstr ""
+msgstr "在选择场景和脚本时，最后一个需要考虑的方面是执行速度。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:155
-#, fuzzy
 msgid ""
 "As the size of objects increases, the scripts' necessary size to create and "
 "initialize them grows much larger. Creating node hierarchies demonstrates "
 "this. Each Node's logic could be several hundred lines of code in length."
 msgstr ""
-"随着对象大小的增加，创建它们所需的脚本大小也变得越来越大。创建节点层次结构演"
-"示了这一点。每个节点的逻辑长度可能是几百行代码。"
+"随着对象内容的增加，脚本创建和初始化所需的内容也会大大增加。创建节点层次结构"
+"就说明了这一点。每个Node的逻辑可能有几百行代码。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
-#, fuzzy
 msgid ""
 "The code example below creates a new ``Node``, changes its name, assigns a "
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
-"让我们看一个简单的示例，将单个 ``Node`` 创建为子级。下面的代码创建一个新的 "
-"``Node``；更改其名称；为其分配脚本；将其未来的父级设置为其所有者，以便将其与"
-"之，一起保存到磁盘；最后将其作为一个子级添加到 ``Main`` 节点："
+"下面的代码示例创建一个新的 ``Node``，更改名称，分配脚本，将其未来的父级设置为"
+"其所有者，以便保存到磁盘中，最后将其添加为\"主\"节点的子级："
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
-#, fuzzy
 msgid ""
 "Script code like this is much slower than engine-side C++ code. Each "
 "instruction makes a call to the scripting API which leads to many \"lookups"
 "\" on the back-end to find the logic to execute."
 msgstr ""
-"这样的脚本代码比引擎端的 C++ 代码要慢得多。每次更改都会对脚本API进行单独的调"
-"用，从而导致后端进行许多“查找”，以查找要执行的逻辑。"
+"这样的脚本代码比引擎端的C++代码要慢很多。每条指令都要调用脚本API，导致后端要"
+"进行多次 \"查找\"，以找到要执行的逻辑。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
-#, fuzzy
 msgid ""
 "Scenes help to avoid this performance issue. :ref:`PackedScene "
 "<class_PackedScene>`, the base type that scenes inherit from, defines "
@@ -302,9 +296,9 @@ msgid ""
 "scenes in batches on the back-end and provide much better performance than "
 "scripts."
 msgstr ""
-"场景有助于避免此性能问题。场景继承的基本类型，:ref:`PackedScene "
-"<class_PackedScene>`，是使用序列化数据创建对象的资源。引擎可以在后端批量处理"
-"场景，并提供比脚本更好的性能。"
+"场景有助于避免这个性能问题。 :ref:`PackedScene <class_PackedScene>` [场景"
+"包]，场景继承的基础类型，定义了使用序列化数据创建对象的资源。引擎可以在后端批"
+"量处理场景，并提供比脚本好得多的性能。"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"

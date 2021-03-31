@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr "这不仅允许从屏幕上读取，而且可以免费读取具有不同
 msgid ""
 "Mipmaps are not generated in GLES2 due to poor performance and compatibility "
 "with older devices."
-msgstr ""
+msgstr "由于性能较差，且与旧设备不兼容，所以在GLES2中不会生成Mipmaps。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:48
 msgid "SCREEN_TEXTURE example"
@@ -168,6 +168,9 @@ msgid ""
 "``SCREEN_TEXTURE`` in 3D as it won't capture transparent objects and may "
 "capture some opaque objects that are in front of the object."
 msgstr ""
+"在3D中，由于 ``SCREEN_TEXTURE`` 只捕获一次，所以解决这个特殊问题的灵活性较"
+"小。在3D中使用 ``SCREEN_TEXTURE`` 时要小心，因为它不会捕获透明的物体，可能会"
+"捕获一些在物体前面的不透明物体。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:109
 msgid ""
@@ -176,6 +179,9 @@ msgid ""
 "then use the :ref:`Viewport's <class_Viewport>` texture instead of "
 "``SCREEN_TEXTURE``."
 msgstr ""
+"在3D中，你可以这样重现后置缓冲（back-buffer）逻辑：创建:ref:`视图窗口"
+"(Viewport) <class_Viewport>` 并在你的对象所在位置放置摄像机，然后使用:ref:`视"
+"图窗口的(Viewport's)<class_Viewport>` 纹理（而不是 `` SCREEN_TEXTURE`` ）。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:114
 msgid "Back-buffer logic"

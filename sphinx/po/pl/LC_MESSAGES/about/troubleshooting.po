@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,13 @@ msgstr ""
 "Ta strona zawiera listę typowych problemów napotkanych podczas korzystania z "
 "Godota oraz ich możliwych rozwiązań."
 
-#: ../../docs/about/troubleshooting.rst:9
+#: ../../docs/about/troubleshooting.rst:10
+msgid ""
+"See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
+"version of the Godot editor."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:14
 msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
@@ -37,7 +43,7 @@ msgstr ""
 "Wszystko, co robię w edytorze lub menadżerze projektu, wydaje się być "
 "opóźnione o jedną klatkę."
 
-#: ../../docs/about/troubleshooting.rst:11
+#: ../../docs/about/troubleshooting.rst:16
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/23069>`__ "
 "on Intel graphics drivers on Windows. Updating to the latest graphics driver "
@@ -48,7 +54,7 @@ msgstr ""
 "wersji sterownika karty graficznej * dostarczonej przez firmę Intel * "
 "powinna rozwiązać problem."
 
-#: ../../docs/about/troubleshooting.rst:15
+#: ../../docs/about/troubleshooting.rst:20
 msgid ""
 "You should use the graphics driver provided by Intel rather than the one "
 "provided by your desktop or laptop's manufacturer because their version is "
@@ -58,7 +64,7 @@ msgstr ""
 "nie tegych dostarczonych przez producenta komputera stacjonarnego lub "
 "laptopa, ponieważ ich wersja jest często nieaktualna."
 
-#: ../../docs/about/troubleshooting.rst:20
+#: ../../docs/about/troubleshooting.rst:25
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
 "editor."
@@ -66,16 +72,15 @@ msgstr ""
 "Kiedy obracam kamerę 3D w edytorze, siatka koordynująca znika, a siatka "
 "obiektu 3D staje się czarna."
 
-#: ../../docs/about/troubleshooting.rst:22
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:27
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
-"To jest `` znany błąd <https://github.com/godotengine/godot/issues/30330> "
-"`__ w sterownikach grafiki Intel w systemie Windows."
+"To jest ` znany błąd <https://github.com/godotengine/godot/issues/30330> `__ "
+"w sterownikach grafiki Intel w systemie Windows."
 
-#: ../../docs/about/troubleshooting.rst:25
+#: ../../docs/about/troubleshooting.rst:30
 msgid ""
 "The only workaround, for now, is to switch to the GLES2 renderer. You can "
 "switch the renderer in the top-right corner of the editor or the Project "
@@ -84,8 +89,7 @@ msgstr ""
 "Na razie jedynym obejściem jest przejście na renderer GLES2. Możesz "
 "przełączyć renderer w prawym górnym rogu edytora lub w ustawieniach projektu."
 
-#: ../../docs/about/troubleshooting.rst:28
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:33
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
@@ -94,12 +98,11 @@ msgstr ""
 "NVIDIA Optimus, możesz użyć dedykowanej karty graficznej do uruchomienia "
 "Godota."
 
-#: ../../docs/about/troubleshooting.rst:32
+#: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
 msgstr "Uruchomienie edytora lub projektu zajmuje bardzo dużo czasu."
 
-#: ../../docs/about/troubleshooting.rst:34
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:39
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -116,12 +119,11 @@ msgstr ""
 "urządzenia peryferyjne przed otwarciem edytora. Następnie możesz ponownie "
 "podłączyć urządzenie peryferyjne."
 
-#: ../../docs/about/troubleshooting.rst:42
+#: ../../docs/about/troubleshooting.rst:47
 msgid "The Godot editor appears frozen after clicking the system console."
 msgstr "Po kliknięciu konsoli systemowej edytor Godot ulega zamrożeniu."
 
-#: ../../docs/about/troubleshooting.rst:44
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:49
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -133,10 +135,9 @@ msgstr ""
 "systemową można przypadkowo włączyć * tryb wyboru *, klikając w oknie "
 "poleceń. To zachowanie specyficzne dla systemu Windows wstrzymuje aplikację, "
 "aby umożliwić zaznaczenie tekstu w konsoli systemowej. Godot nie może "
-"zastąpić tego zachowania specyficznego dla systemu."
+"nadpisać tego specyficznego zachowania."
 
-#: ../../docs/about/troubleshooting.rst:49
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:54
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -144,13 +145,35 @@ msgstr ""
 "Aby rozwiązać ten problem, wybierz okno konsoli systemowej i naciśnij "
 "klawisz Enter, aby opuścić tryb wyboru."
 
-#: ../../docs/about/troubleshooting.rst:53
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:58
+msgid ""
+"Some text such as \"NO DC\" appears in the top-left corner of the project "
+"manager and editor window."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:60
+msgid ""
+"This is caused by the NVIDIA graphics driver injecting an overlay to display "
+"information."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:62
+msgid ""
+"To disable this overlay on Windows, restore your graphics driver settings to "
+"the default values in the NVIDIA Control Panel."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:65
+msgid ""
+"To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
+"0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."
 msgstr "W przeciwieństwie do edytora okno projektu jest niewyraźne."
 
-#: ../../docs/about/troubleshooting.rst:55
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:71
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -161,8 +184,7 @@ msgstr ""
 "zintegrowanej grafiki, gdzie renderowanie scen 3D w trybie hiDPI jest "
 "powolne."
 
-#: ../../docs/about/troubleshooting.rst:59
-#, fuzzy
+#: ../../docs/about/troubleshooting.rst:75
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -173,25 +195,32 @@ msgstr ""
 "Twój projekt jest skonfigurowany do obsługi: ref: `wiele rozdzielczości "
 "<doc_multiple_resolutions>`."
 
-#: ../../docs/about/troubleshooting.rst:64
+#: ../../docs/about/troubleshooting.rst:80
 msgid "The project window doesn't appear centered when I run the project."
 msgstr "Okno projektu nie pojawia się na środku kiedy uruchamiam projekt."
 
-#: ../../docs/about/troubleshooting.rst:66
+#: ../../docs/about/troubleshooting.rst:82
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`__. "
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"To jest `znany błąd <https://github.com/godotengine/godot/issues/13017>`__. "
+"By go rozwiązać, otwórz **Projekt > Ustawienia projektu** i włącz **Display "
+"> Window > Dpi > Allow Hidpi**. Dodatkowo, upewnij się, że twój projekt jest "
+"skonfigurowany by wspierać :ref:`wiele rozdzielczości "
+"<doc_multiple_resolutions>`."
 
-#: ../../docs/about/troubleshooting.rst:72
+#: ../../docs/about/troubleshooting.rst:88
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Projekt działa poprawnie uruchomiony przez edytor, jednak nie ładuje "
+"niektórych plików gdy jest uruchomiony z wyeksportowanej kopii."
 
-#: ../../docs/about/troubleshooting.rst:74
+#: ../../docs/about/troubleshooting.rst:90
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -200,8 +229,15 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"To jest zazwyczaj spowodowane nie uwzględnieniem formatu w filtrze dla "
+"plików nie będących zasobami w okienku eksportu. Domyślnie Godot dodaje do "
+"pliku PCK jedynie właściwe *zasoby*. Niektóre często używane pliki, takie "
+"jak JSON nie są uznawane za zasoby. Na przykład, jeśli załadujesz ``test."
+"json`` w wyeksportowanym projekcie, musisz wyszczególnić ``*.json`` w "
+"filtrze plików nie będącymi zasobami. Po więcej informacji zobacz :ref:"
+"`doc_exporting_projects_export_mode`."
 
-#: ../../docs/about/troubleshooting.rst:81
+#: ../../docs/about/troubleshooting.rst:97
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "
@@ -210,3 +246,9 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"Na Windowsie, to może być spowodowane przez problemy z :ref:`case "
+"sensitivity <doc_project_organization_case_sensitivity>`. Jeśli w skrypcie "
+"odniesiesz się do zasobu z inną wielkością liter niż w systemie plików, "
+"podczas eksportu projektu nie zostanie on załadowany. Dzieje się tak "
+"ponieważ wirtualny system plików PCK jest wrażliwy na wielkość liter, "
+"podczas gdy system plików Windowsa domyślnie nie zwraca na nią uwagi."

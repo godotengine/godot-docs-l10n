@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,8 +95,11 @@ msgid "Indentation"
 msgstr "Indentazione"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
+#, fuzzy
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
+"Ogni livello di indentazione dovrebbe essere una volta più grande del blocco "
+"che lo contiene."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
@@ -108,7 +111,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:767
 #, fuzzy
 msgid "**Good**:"
 msgstr "**Buono**:"
@@ -123,7 +126,7 @@ msgstr "**Buono**:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:773
 #, fuzzy
 msgid "**Bad**:"
 msgstr "**Male**:"
@@ -158,7 +161,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
-#, fuzzy
 msgid "Blank lines"
 msgstr "Righe vuote"
 
@@ -208,6 +210,9 @@ msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
+"Evitare le parentesi nelle espressioni e nelle dichiarazioni condizionali. A "
+"meno che non siano necessarie per l'ordine delle operazioni, riducono solo "
+"la leggibilità."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid "Boolean operators"
@@ -251,7 +256,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
-#, fuzzy
 msgid "Whitespace"
 msgstr "Spazio bianco"
 
@@ -266,8 +270,9 @@ msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
+#, fuzzy
 msgid "Quotes"
-msgstr ""
+msgstr "Citazioni"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:404
 msgid ""
@@ -589,16 +594,7 @@ msgstr ""
 "Nella maggior parte dei casi puoi lasciare che il compilatore deduca il "
 "tipo, usando ``:=``:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
-#, fuzzy
-msgid "::"
-msgstr "::"
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
-msgid "var health := 0  # The compiler will use the int type."
-msgstr ""
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:762
 msgid ""
 "However, in a few cases when context is missing, the compiler falls back to "
 "the function's return type. For example, ``get_node()`` cannot infer a type "

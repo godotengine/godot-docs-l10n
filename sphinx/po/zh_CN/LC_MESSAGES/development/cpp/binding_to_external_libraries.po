@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,16 @@ msgid "Modules"
 msgstr "模块（Modules）"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:9
-#, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
 "Let's look at an example using `Festival <http://www.cstr.ed.ac.uk/projects/"
 "festival/>`_, a speech synthesis (text-to-speech) library written in C++."
 msgstr ""
-":ref:`doc_custom_modules_in_c++` 中的Summator示例非常适合小型自定义模块，但如"
-"果您想使用更大的外部库，该怎么办？ 让我们看一个使用Festival的示例，这是一个用"
-"C++编写的语音合成（文本到语音）库。"
+":ref:`doc_custom_modules_in_c++` 中的Summator例子对于小型自定义的模块来说是非"
+"常好，但是如果想使用一个更大的外部库呢？来看一个使用 `Festival <http://www."
+"cstr.ed.ac.uk/projects/festival/>`_ 的例子，这是一个用C++编写的语音合成库（文"
+"本到语音）。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
@@ -62,6 +62,8 @@ msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
+"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边)，"
+"这样模块才能被正确注册。"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:82
 #, fuzzy

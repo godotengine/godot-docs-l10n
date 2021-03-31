@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,7 +273,7 @@ msgid ""
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "Если вместо этого требуется чтение этого значения, перетащите узел еще раз, "
-"но удерживайте клавишу `Ctrl` (или :kbd: `Cmd` на macOS). Это создаст "
+"но удерживайте клавишу :kbd:`Ctrl` (или:kbd:`Cmd` на macOS). Это создаст "
 "\"производитель\"(\"getter\"):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
@@ -334,8 +334,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold :kbd:`Ctrl` (or :kbd:`Cmd` on macOS) to drop a setter:"
 msgstr ""
-"Аналогично, удерживайте `Ctrl` (или :kbd: `Cmd` на macOS), чтобы получился "
-"сеттер:"
+"Аналогично, удерживайте :kbd:`Ctrl` (или :kbd:`Cmd` на macOS), чтобы "
+"получился сеттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
@@ -400,8 +400,8 @@ msgid ""
 "Pressing :kbd:`Ctrl + F` (or :kbd:`Cmd + F` on macOS) allows you to search "
 "the list."
 msgstr ""
-"Нажатие :kbd: `Ctrl + F` ( или :kbd: `Cmd + F` на macOS) позволит "
-"осуществить поиск в списке."
+"Нажатие :kbd:`Ctrl + F` ( или :kbd:`Cmd + F` на macOS) позволит осуществить "
+"поиск в списке."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -551,12 +551,11 @@ msgstr ""
 "и они будут ссылаться на один и тот же фрагмент памяти."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
-#, fuzzy
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced setter (setting requires a sequence port)."
 msgstr ""
-"Как видно выше, доступны два узла: простой геттер и секвенированный геттер "
+"Как видно выше, доступны два узла: простой геттер и последовательный геттер "
 "(для настройки требуется последовательный порт)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274

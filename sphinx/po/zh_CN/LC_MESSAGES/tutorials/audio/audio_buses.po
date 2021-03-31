@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,6 +358,8 @@ msgid ""
 "EQ is what all other equalizers inherit from. It can be extended with with "
 "Custom scripts to create an equalizer with a custom number of bands."
 msgstr ""
+"EQ是所有其他均衡器的继承。它可以通过自定义脚本来扩展，以创建一个具有自定义频"
+"段数的均衡器。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 #, fuzzy
@@ -409,7 +411,7 @@ msgstr "HighPassFilter, HighShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
-msgstr ""
+msgstr "降低所有高于特定*截止*值的频率。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:199
 msgid "Limiter"
@@ -448,7 +450,7 @@ msgstr "LowPassFilter, LowShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:216
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
-msgstr ""
+msgstr "降低所有低于特定*截止*值的频率。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:219
 msgid "NotchFilter"
@@ -538,6 +540,9 @@ msgid ""
 "visualization. A demo project using this can be found `here <https://github."
 "com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
 msgstr ""
+"这个效果并不会改变音频，你可以这个效果添加到你想要分析频谱的总线上。这通常会"
+"被用于音频可视化。使用这个效果的演示项目可在`这里找到<https://github.com/"
+"godotengine/godot-demo-projects/tree/master/audio/spectrum>`__。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:266
 msgid "StereoEnhance"

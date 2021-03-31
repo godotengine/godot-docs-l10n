@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -675,7 +675,7 @@ msgstr "将显示为："
 msgid ""
 "To denote important information, add a paragraph starting with \"[b]Note:[/"
 "b]\" at the end of the description:"
-msgstr ""
+msgstr "要表示重要信息，请在描述末尾添加一段以“[b]注：[/b]”开头的内容："
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:290
 msgid ""
@@ -683,18 +683,23 @@ msgid ""
 "data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
 "b]\" at the end of the description:"
 msgstr ""
+"为了表示如果不仔细遵循可能导致安全问题或数据丢失的关键信息，请在描述末尾添加"
+"一段以“[b]警告：[/b]”开头的内容："
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:298
 msgid ""
 "For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/"
 "i]\". Notice the use of italics instead of bold:"
 msgstr ""
+"对于不推荐使用的属性，请添加以“[i]deprecated.[/i]”开头的段落。注意使用斜体代"
+"替粗体："
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:305
 msgid ""
 "In all the paragraphs described above, make sure the punctuation is part of "
 "the BBCode tags for consistency."
 msgstr ""
+"在上面描述的所有段落中，确保标点符号是BBCode标签的一部分，以保持一致性。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:309
 msgid "I don't know what this method does!"

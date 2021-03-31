@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -283,26 +283,40 @@ msgstr ""
 msgid "In the editor"
 msgstr "Im Editor"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:107
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:109
 msgid ""
-"You can also access the AssetLib directly from Godot. It is available from "
-"two places - in the Project Manager's Templates tab, and inside of a "
-"project, from the workspaces list."
+"The editor will display different categories of assets depending on whether "
+"you're browsing the project manager's **Templates** tab or the editor's "
+"**AssetLib** tab."
 msgstr ""
-"Sie können auch direkt von Godot aus auf die Bestandsbibliothek zugreifen. "
-"Sie ist an zwei Stellen verfügbar - auf der Registerkarte Vorlagen des "
-"Projektmanagers und innerhalb eines Projekts in der Liste der "
-"Arbeitsbereiche."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:111
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
+msgid ""
+"The project manager's **Templates** tab will only display assets that are "
+"standalone projects by themselves. This is denoted on the asset library with "
+"the *Templates*, *Demos* and *Projects* categories."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:117
+msgid ""
+"The editor's **AssetLib** tab will only display assets that are *not* "
+"standalone projects by themselves. In other words, it will display assets "
+"from all categories except *Templates*, *Demos* and *Projects*."
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:121
+msgid "You can also access the AssetLib directly from Godot:"
+msgstr ""
+
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:123
 msgid "|image7|"
 msgstr "|image7|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:125
 msgid "|image14|"
 msgstr "|image14|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:115
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:127
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
 "Once it's finished, you will see a window similar to what the AssetLib "
@@ -312,11 +326,11 @@ msgstr ""
 "Bestandsbibliothek ab. Sobald es fertig ist sehen Sie ein Fenster, das dem "
 "Aussehen der Bestandsbibliothek-Website ähnelt, mit einigen Unterschieden:"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:119
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:131
 msgid "|image8|"
 msgstr "|image8|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:121
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:133
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
@@ -325,7 +339,7 @@ msgstr ""
 "nach Kategorie oder Name suchen und nach Faktoren wie Name oder "
 "Bearbeitungsdatum sortieren."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:124
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:136
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
 "running. Projects, Demos and Templates can be downloaded from from the "
@@ -345,7 +359,7 @@ msgstr ""
 "jeder Änderung Ihrer Suchanfrage auf Suchen klicken, damit die Änderungen "
 "vorgenommen werden)."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:132
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:144
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
 "fetch assets from (using the Site dropdown menu), however currently only the "
@@ -360,16 +374,16 @@ msgstr ""
 "möglicherweise auf dem Webserver Ihres lokalen Computers ausgeführt wird "
 "(die localhost Option)."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:138
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:150
 msgid "When you click on an asset, you will see more information about it."
 msgstr ""
 "Durch klicken auf einen Inhalt werden weitere Information darüber angezeigt."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:140
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image9|"
 msgstr "|image9|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:142
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:154
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
 "asset, and will track download progress of it at the bottom of the editor "
@@ -380,11 +394,11 @@ msgstr ""
 "Wenn der Download fehlschlägt, können Sie ihn über die Schaltfläche "
 "Wiederholen neu anstarten."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:146
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:158
 msgid "|image10|"
 msgstr "|image10|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:148
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
@@ -392,11 +406,11 @@ msgstr ""
 "Wenn es fertig ist, können Sie mit der Installation über die Schaltfläche "
 "Installieren fortfahren. Dadurch wird das Paketinstallationsfenster geöffnet."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:151
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:163
 msgid "|image11|"
 msgstr "|image11|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:153
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:165
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
 "tick off any of the files that you do not wish to install, and Godot will "
@@ -411,11 +425,11 @@ msgstr ""
 "halten, wird eine Meldung angezeigt, warum sie nicht installiert werden "
 "können."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:159
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:171
 msgid "|image12|"
 msgstr "|image12|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:161
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:173
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
 "the files in the archive, and import any assets contained therein, such as "
@@ -428,11 +442,11 @@ msgstr ""
 "ist, sollte eine Meldung angezeigt werden, die besagt, dass die "
 "Paketinstallation abgeschlossen ist."
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:166
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:178
 msgid "|image13|"
 msgstr "|image13|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:168
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:180
 msgid ""
 "You may also use the Import button to import asset archives obtained "
 "elsewhere (such as downloading them directly from the AssetLib web "

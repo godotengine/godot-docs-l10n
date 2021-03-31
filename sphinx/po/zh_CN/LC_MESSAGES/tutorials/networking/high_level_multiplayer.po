@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,7 @@ msgstr "作为客户端初始化，连接到给定的IP和端口:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:98
 msgid "Get the previously set network peer:"
-msgstr ""
+msgstr "获取之前设置的网络客户端:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
@@ -664,8 +664,8 @@ msgid ""
 "are ready can be useful:"
 msgstr ""
 "由于延迟、不同的硬件或其他原因，设置游戏角色在每个客户端上花费的时间可能不"
-"同。为了确保游戏确实会在每个人都准备好的时候开始，有必要暂停游戏，直到所有的"
-"游戏角色都准备好:"
+"同。为了确保游戏会在每个人都准备好的时候真正开始，有必要暂停游戏直到所有的游"
+"戏角色都准备好："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:313
 msgid ""
@@ -709,7 +709,6 @@ msgstr ""
 "(ID 1)。因此，默认情况下，服务器拥有所有节点的权限。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
-#, fuzzy
 msgid ""
 "The network master can be set with the function :ref:`Node."
 "set_network_master(id, recursive) <class_Node_method_set_network_master>` "
@@ -717,11 +716,11 @@ msgid ""
 "recursively set on all child nodes of the node as well)."
 msgstr ""
 "可以使用函数 :ref:`Node.set_network_master(id, recursive) "
-"<class_Node_method_set_network_master>` 来设置网络主人(默认情况下recursive为"
-"true，这意味着在节点的所有子节点上也递归地设置了网络主人)。"
+"<class_Node_method_set_network_master>` 来设置网络主人(默认情况下"
+"recursive（递归）为 ``true`` ，这意味着在节点的所有子节点上也递归地设置了网络"
+"主人)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
-#, fuzzy
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
@@ -730,18 +729,17 @@ msgid ""
 msgstr ""
 "通过调用 :ref:`Node.is_network_master() "
 "<class_Node_method_is_network_master>` 来检查客户端上的特定节点实例是否是该节"
-"点用于所有连接的客户端的网络主人。这在服务器上执行时将返回true，在所有客户端"
-"上将返回false。"
+"点用于所有连接的客户端的网络主人。这在服务器上执行时将返回 ``true`` ，在所有"
+"客户端上将返回 ``false`` 。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
-#, fuzzy
 msgid ""
 "If you have paid attention to the previous example, it's possible you "
 "noticed that each peer was set to have network master authority for their "
 "own player (Node) instead of the server:"
 msgstr ""
-"如果您已经注意了前面的示例，则可能注意到本地客户端拥有针对它自己的游戏角色的"
-"网络主人权限，而不是服务器:"
+"如果你有留意前面的例子，你有可能注意到了每个客户端（peer）都被设置为拥有自己"
+"玩家（节点）的网络主权限，而不是服务器："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:374
 msgid ""
@@ -802,6 +800,9 @@ msgid ""
 "itself as the master of the instance corresponding to itself, and it has set "
 "a different peer as the master for each of the other instances."
 msgstr ""
+"回顾一下，每个对等体都有一套完整的玩家节点实例，每个对等体（包括自己和主机）"
+"都有一个实例。每个对等体都将自己设定为与自己对应的实例的主控，并将其他每个实"
+"例的主控设定为不同的对等体。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:422
 msgid ""
@@ -809,6 +810,9 @@ msgid ""
 "has called it remotely on all bodies in the area that have the method. "
 "However, this method is in a player node and has a ``master`` keyword."
 msgstr ""
+"现在，回到对 ``exploded`` 方法的调用，主机上的炸弹已经远程调用了该区域内所有"
+"拥有该方法的机体。不过，这个方法是在玩家节点中的，而且有一个 ``master``关键"
+"词。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:425
 msgid ""
@@ -822,6 +826,12 @@ msgid ""
 "has the ``master`` keyword). This works well as long as all peers agree on "
 "who is the master of what."
 msgstr ""
+"玩家节点中的``exploded``方法上的``master``关键字对于如何进行这种调用有两个意"
+"思。第一，从调用对等体(主机)的角度来看，调用对等体只会尝试远程调用它设定为相"
+"关玩家节点网络主控的对等体上的方法。其次，从宿主发送调用的对等体的角度来看，"
+"只有当对等体将自己设置为被调用方法的玩家节点的网络主控（该节点有``master``关"
+"键字）时，它才会接受调用。只要所有的对等体都同意谁是怎样的主控，工作状态将最"
+"好。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:432
 msgid ""
@@ -836,6 +846,12 @@ msgid ""
 "words, those peers are set as puppets for that node by virtue of not being "
 "the network master of it)."
 msgstr ""
+"上述设置意味着，只有拥有受影响身体的对等体，才会负责告诉所有其他对等体它的身"
+"体被眩晕了，因为主机的炸弹远程信号指示它这样做。即，拥有的对等体仍采用"
+"``exploded``方法告诉所有其他对等体，它的玩家节点被眩晕了。对等体通过远程调用"
+"该玩家节点的所有实例，在其他对等体上的``stun``方法来实现。因为``stun``方法有"
+"``puppet``关键字，所以只有没有将自己设置为节点的网络主控的对等体才会调用它，"
+"换句话说，这些对等体由于不是该节点的网络主控而被设置为该节点的傀儡。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:439
 msgid ""
@@ -843,6 +859,8 @@ msgid ""
 "the screen of all the peers, including the current network master peer (due "
 "to the local call to ``stun`` after ``rpc(\"stun\")``)."
 msgstr ""
+"这个调用 ``stun`` 的结果是让玩家在屏幕上看起来眩晕了所有对等体，包括当前的网"
+"络主控（由于在 ``rpc(\"stun\")`` 后本地调用 ``stun`` ）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:442
 msgid ""
@@ -850,6 +868,8 @@ msgid ""
 "bodies in the area, such that all the instances of any player in the bomb "
 "area get stunned on the screens of all the peers."
 msgstr ""
+"炸弹的主人(主机)对区域内的每一个物体重复上述步骤，这样，炸弹区域内任何玩家的"
+"所有实例都会在所有对等体的屏幕上被眩晕。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:445
 #, fuzzy
@@ -864,9 +884,8 @@ msgstr ""
 "他情况下有意义，比如单目标伤害时。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:453
-#, fuzzy
 msgid "Exporting for dedicated servers"
-msgstr "为Web导出"
+msgstr "导出专用服务"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:455
 msgid ""
@@ -874,6 +893,8 @@ msgid ""
 "a dedicated server with no GPU available. See :ref:"
 "`doc_exporting_for_dedicated_servers` for more information."
 msgstr ""
+"一旦你制作了一个多人游戏，你可能会想导出它到一个没有GPU的专用服务器上运行。参"
+"见:ref:`doc_exporting_for_dedicated_servers`获取更多信息。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:461
 msgid ""
@@ -882,6 +903,9 @@ msgid ""
 "You'll also have to modify the game starting mechanism so that the first "
 "player who joins can start the game."
 msgstr ""
+"这个页面上的代码样本并不是为了在专用服务器上运行而设计的。必须修改它们，使服"
+"务器不被认为是一个玩家，还必须修改游戏启动机制，使第一个加入的玩家可以启动游"
+"戏。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:468
 msgid ""
@@ -893,3 +917,7 @@ msgid ""
 "player is the one which decides whether to call the I-was-stunned method "
 "(``stun``) on all of the other peers and itself."
 msgstr ""
+"这里的轰炸机例子，主要是为了说明问题，并没有在主机端做任何事情，来处理对等体"
+"使用自定义客户端作弊的情况，例如拒绝击晕自己。在目前的实现中，这种作弊是完全"
+"可能的，因为每个客户端都是自己玩家的网络主控，而玩家的网络主控可决定是否在所"
+"有其他对等体和自己身上调用方法``stun``。"

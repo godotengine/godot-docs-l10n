@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,6 +62,11 @@ msgid ""
 "window`` command-line argument, you'll need to have OpenGL support available "
 "on the Windows machine."
 msgstr ""
+"**Windows:** Es gibt noch keinen dedizierten Server für Windows. Als "
+"Alternative können Sie das Kommandozeilenargument ``--no-window`` verwenden, "
+"um Godot daran zu hindern, ein Fenster zu erzeugen. Beachten Sie, dass Sie "
+"selbst mit dem ``--no-window`` Kommandozeilenargument OpenGL-Unterstützung "
+"auf der Windows-Maschine zur Verfügung haben müssen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:21
 msgid ""
@@ -87,6 +92,8 @@ msgid ""
 "**Server:** Use this one for running dedicated servers. It does not contain "
 "editor functionality, and is therefore smaller and more optimized."
 msgstr ""
+"**Server:** Verwenden Sie diesen für den Betrieb von dedizierten Servern. Er "
+"enthält keine Editor-Funktionalität und ist daher kleiner und optimierter."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:32
 msgid ""
@@ -94,6 +101,10 @@ msgid ""
 "be used for exporting projects. This binary *can* be used to run dedicated "
 "servers, but it's not recommended as it's larger and less optimized."
 msgstr ""
+"**Headless:** Diese Binärdatei enthält Editor-Funktionalität und ist für den "
+"Export von Projekten vorgesehen. Diese Binärdatei **kann* verwendet werden, "
+"um dedizierte Server zu betreiben, aber sie wird nicht empfohlen, da sie "
+"größer und weniger optimiert ist."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:37
 msgid "Exporting a PCK file"
@@ -135,6 +146,13 @@ msgid ""
 "destination path. The **Export With Debug** checkbox in the file dialog has "
 "no bearing on the final PCK file, so you can leave it as-is."
 msgstr ""
+"Sobald Sie eine Server-Binärdatei heruntergeladen haben, sollten Sie eine "
+"PCK-Datei mit Ihren Projektdaten exportieren. Nachdem Sie die "
+"Exportvoreinstellung erstellt haben, klicken Sie auf **Export PCK/ZIP** "
+"unten im Dialogfeld Export und wählen Sie dann einen Zielpfad. Das "
+"Kontrollkästchen **Export mit Debug** im Dateidialogfeld hat keinen Einfluss "
+"auf die endgültige PCK-Datei, so dass Sie sie so belassen können, wie sie "
+"ist."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:54
 msgid "See :ref:`doc_exporting_projects` for more information."
@@ -146,6 +164,9 @@ msgid ""
 "editor with the `--export-pack` option while in the project folder to export "
 "only a PCK file."
 msgstr ""
+"Wenn Sie das Projekt aus einem Headless-Editor exportieren, rufen Sie den "
+"Headless-Editor mit der Option `--export-pack` auf, während Sie sich im "
+"Projektordner befinden, um nur eine PCK-Datei zu exportieren."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:64
 msgid ""
@@ -154,6 +175,11 @@ msgid ""
 "possibly be. Support for stripping unneeded resources from a PCK for server "
 "usage is planned in a future Godot release."
 msgstr ""
+"Die PCK-Datei enthält Ressourcen, die normalerweise vom Server nicht "
+"benötigt werden, wie z.B. Texturen und Sounds. Das bedeutet, dass die PCK-"
+"Datei größer sein wird, als sie möglicherweise sein könnte. Unterstützung "
+"für das Strippen nicht benötigter Ressourcen von einem PCK für die "
+"Verwendung auf dem Server ist in einer zukünftigen Godot-Version geplant."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:69
 msgid ""
@@ -161,6 +187,10 @@ msgid ""
 "client and dedicated server build. This can be useful if you want to ship a "
 "single archive that can be used both as a client and dedicated server."
 msgstr ""
+"Das Positive daran ist, dass dieselbe PCK-Datei sowohl von einem Client- als "
+"auch von einem dedizierten Server-Build verwendet werden kann. Dies kann "
+"nützlich sein, wenn Sie ein einziges Archiv ausliefern möchten, das sowohl "
+"als Client als auch als dedizierter Server verwendet werden kann."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
 msgid "Preparing the server distribution"
@@ -175,6 +205,13 @@ msgid ""
 "with a PCK that has a different name, you can specify the path to the PCK "
 "file using the ``--main-pack`` command-line argument::"
 msgstr ""
+"Nachdem Sie eine Server-Binärdatei heruntergeladen oder kompiliert haben, "
+"sollten Sie sie nun in denselben Ordner wie die exportierte PCK-Datei legen. "
+"Die Server-Binärdatei sollte denselben Namen wie das PCK haben (ohne die "
+"Erweiterung). Dadurch kann Godot die PCK-Datei automatisch erkennen und "
+"verwenden. Wenn Sie einen Server mit einem PCK starten möchten, das einen "
+"anderen Namen hat, können Sie den Pfad zur PCK-Datei mit dem "
+"Befehlszeilenargument ``--main-pack`` angeben::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
 msgid "Starting the dedicated server"
@@ -223,6 +260,11 @@ msgid ""
 "view server logs in a more convenient fashion, with automatic log rotation "
 "provided by systemd."
 msgstr ""
+"Unter Linux können Sie einen `systemd-Dienst <https://medium.com/@benmorel/"
+"creating-a-linux-service-with-systemd-611b5c8b91d6>`__ einrichten, damit Ihr "
+"dedizierter Server nach einem Absturz oder Systemneustart neu startet. "
+"Dadurch können Sie auch die Serverprotokolle auf bequemere Weise anzeigen, "
+"wobei systemd für eine automatische Protokollrotation sorgt."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:122
 msgid ""
@@ -231,3 +273,8 @@ msgid ""
 "This way, it can be used more easily in an automatic scaling setup (which is "
 "outside the scope of this tutorial)."
 msgstr ""
+"Wenn Sie Erfahrung mit Containern haben, könnten Sie auch erwägen, Ihren "
+"dedizierten Server in einen `Docker <https://www.docker.com/>`__-Container "
+"zu verpacken. Auf diese Weise kann er leichter in einer Einrichtung mit "
+"automatischer Skalierung verwendet werden (was außerhalb des Rahmens dieses "
+"Tutorials liegt)."

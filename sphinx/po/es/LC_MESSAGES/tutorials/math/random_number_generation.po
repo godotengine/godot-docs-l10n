@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/math/random_number_generation.rst:4
+#, fuzzy
+msgid "Random number generation"
+msgstr "Funciones Random"
+
+#: ../../docs/tutorials/math/random_number_generation.rst:6
+msgid ""
+"Many games rely on randomness to implement core game mechanics. This page "
+"guides you through common types of randomness and how to implement them in "
+"Godot."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:10
+msgid ""
+"After giving you a brief overview of useful functions that generate random "
+"numbers, you will learn how to get random elements from arrays, "
+"dictionaries, and how to use a noise generator in GDScript."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:16
+msgid ""
+"Computers cannot generate \"true\" random numbers. Instead, they rely on "
+"`pseudorandom number generators <https://en.wikipedia.org/wiki/"
+"Pseudorandom_number_generator>`__ (PRNGs)."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:21
+msgid "Global scope versus RandomNumberGenerator class"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:23
+msgid ""
+"Godot exposes two ways to generate random numbers: via *global scope* "
+"methods or using the :ref:`class_RandomNumberGenerator` class."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:26
+msgid ""
+"Global scope methods are easier to set up, but they don't offer as much "
+"control."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:28
+msgid ""
+"RandomNumberGenerator requires more code to use, but exposes many methods "
+"not found in global scope such as :ref:`randi_range() "
+"<class_RandomNumberGenerator_method_randi_range>` and :ref:`randfn() "
+"<class_RandomNumberGenerator_method_randfn>`. On top of that, it allows "
+"creating multiple instances each with their own seed."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:34
+msgid ""
+"This tutorial uses global scope methods, except when the method only exists "
+"in the RandomNumberGenerator class."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:38
+msgid "The randomize() method"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:40
+msgid ""
+"In global scope, you can find a :ref:`randomize() "
+"<class_@GDScript_method_randomize>` method. **This method should be called "
+"only once when your project starts to initialize the random seed.** Calling "
+"it multiple times is unnecessary and may impact performance negatively."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:45
+msgid ""
+"Putting it in your main scene script's ``_ready()`` method is a good choice::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:50
+msgid ""
+"You can also set a fixed random seed instead using :ref:`seed() "
+"<class_@GDScript_method_seed>`. Doing so will give you *deterministic* "
+"results across runs::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:59
+msgid ""
+"When using the RandomNumberGenerator class, you should call ``randomize()`` "
+"on the instance since it has its own seed::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:66
+#, fuzzy
+msgid "Getting a random number"
+msgstr "Configurando la escena principal"
+
+#: ../../docs/tutorials/math/random_number_generation.rst:68
+msgid ""
+"Let's look at some of the most commonly used functions and methods to "
+"generate random numbers in Godot."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:71
+msgid ""
+"The function :ref:`randi() <class_@GDScript_method_randi>` returns a random "
+"number between 0 and 2^32-1. Since the maximum value is huge, you most "
+"likely want to use the modulo operator (``%``) to bound the result between 0 "
+"and the denominator::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:82
+msgid ""
+":ref:`randf() <class_@GDScript_method_randf>` returns a random floating-"
+"point number between 0 and 1. This is useful to implement a :ref:"
+"`doc_random_number_generation_weighted_random_probability` system, among "
+"other things."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:87
+msgid ""
+":ref:`randfn() <class_RandomNumberGenerator_method_randfn>` returns a random "
+"floating-point number following a `normal distribution <https://en.wikipedia."
+"org/wiki/Normal_distribution>`__. This means the returned value is more "
+"likely to be around the mean (0.0 by default), varying by the deviation (1.0 "
+"by default)::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:97
+msgid ""
+":ref:`rand_range() <class_@GDScript_method_rand_range>` takes two arguments "
+"``from`` and ``to``, and returns a random floating-point number between "
+"``from`` and ``to``::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:104
+msgid ""
+":ref:`RandomNumberGenerator.randi_range() "
+"<class_RandomNumberGenerator_method_randi_range>` takes two arguments "
+"``from`` and ``to``, and returns a random integer between ``from`` and "
+"``to``::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:114
+msgid "Get a random array element"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:116
+msgid ""
+"We can use random integer generation to get a random element from an array::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:136
+msgid ""
+"To prevent the same fruit from being picked more than once in a row, we can "
+"add more logic to this method::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:167
+msgid ""
+"This approach can be useful to make random number generation feel less "
+"repetitive. Still, it doesn't prevent results from \"ping-ponging\" between "
+"a limited set of values. To prevent this, use the :ref:`shuffle bag "
+"<doc_random_number_generation_shuffle_bags>` pattern instead."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:173
+msgid "Get a random dictionary value"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:175
+msgid "We can apply similar logic from arrays to dictionaries as well::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:201
+msgid "Weighted random probability"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:203
+msgid ""
+"The :ref:`randf() <class_@GDScript_method_randf>` method returns a floating-"
+"point number between 0.0 and 1.0. We can use this to create a \"weighted\" "
+"probability where different outcomes have different likelihoods::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:230
+msgid "\"Better\" randomness using shuffle bags"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:232
+msgid ""
+"Taking the same example as above, we would like to pick fruits at random. "
+"However, relying on random number generation every time a fruit is selected "
+"can lead to a less *uniform* distribution. If the player is lucky (or "
+"unlucky), they could get the same fruit three or more times in a row."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:237
+msgid ""
+"You can accomplish this using the *shuffle bag* pattern. It works by "
+"removing an element from the array after choosing it. After multiple "
+"selections, the array ends up empty. When that happens, you reinitialize it "
+"to its default value::"
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:267
+msgid ""
+"When running the above code, there is a chance to get the same fruit twice "
+"in a row. Once we picked a fruit, it will no longer be a possible return "
+"value unless the array is now empty. When the array is empty, we reset it "
+"back to its default value, making it possible to have the same fruit again, "
+"but only once."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:273
+#, fuzzy
+msgid "Random noise"
+msgstr "Randomness (Aleatoriedad)"
+
+#: ../../docs/tutorials/math/random_number_generation.rst:275
+msgid ""
+"The random number generation shown above can show its limits when you need a "
+"value that *slowly* changes depending on the input. The input can be a "
+"position, time, or anything else."
+msgstr ""
+
+#: ../../docs/tutorials/math/random_number_generation.rst:279
+msgid ""
+"To achieve this, you can use random *noise* functions. Noise functions are "
+"especially popular in procedural generation to generate realistic-looking "
+"terrain. Godot provides :ref:`class_opensimplexnoise` for this, which "
+"supports 1D, 2D, 3D, and 4D noise. Here's an example with 1D noise::"
+msgstr ""

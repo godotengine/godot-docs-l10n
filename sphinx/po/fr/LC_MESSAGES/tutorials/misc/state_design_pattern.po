@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,7 +165,6 @@ msgstr ""
 "d'utiliser la variable ``velocity`` définie dans leur classe de base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
-#, fuzzy
 msgid ""
 "Finally, this script is actually being designated as a class named "
 "``State``. This makes refactoring the code easier, since the file path from "
@@ -185,7 +184,6 @@ msgstr ""
 "question plus haut peuvent être mis en œuvre."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
-#, fuzzy
 msgid ""
 "Since the ``Run`` and ``Idle`` states extend from ``State`` which extends "
 "``Node2D``, the function ``_physics_process(delta)`` is called from the "
@@ -200,14 +198,13 @@ msgstr ""
 "étend de ``Node2D``, la fonction ``_physics_process(delta)`` est appelée à "
 "partir de **bottom-up**, ce qui signifie ``Run`` et ``Idle`` appelleront "
 "leur implémentation de ``_physics_process(delta)``, puis ``State`` appellera "
-"sot implémentation, puis `Node2D`` appellera sa propre implémentation et "
+"son implémentation, puis ``Node2D`` appellera sa propre implémentation et "
 "ainsi de suite. Cela peut sembler étrange, mais cela n'est pertinent que "
 "pour des fonctions prédéfinies telles que ``_ready()``, ``_process(delta)``, "
 "etc. Les fonctions personnalisées utilisent les règles d'héritage normales "
 "qui consistent à surcharger l'implémentation de base."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
-#, fuzzy
 msgid ""
 "There is a roundabout method for obtaining a state instance. A state factory "
 "can be used."
@@ -265,7 +262,6 @@ msgstr ""
 "<class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:243
-#, fuzzy
 msgid ""
 "The zip file of the llama used in this tutorial is :download:`here <files/"
 "llama.zip>`. The source was from `piskel_llama <https://www.piskelapp.com/p/"

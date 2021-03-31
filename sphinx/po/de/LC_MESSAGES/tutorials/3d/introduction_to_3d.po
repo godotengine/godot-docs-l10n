@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,11 +77,11 @@ msgid ""
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
 "Spatial-Nodes haben eine lokale Transformation, die relativ zum "
-"übergeordneten Node ist (solange der übergeordnete Node ebenfalls vom **oder "
-"erbt von** Spatial-Typ ist). Auf diese Transformation kann als 4×3 :ref:"
-"`Transform <class_Transform>` oder als 3 :ref:`Vector3 <class_Vector3>` "
-"Elemente zugegriffen werden, die für Position, Euler-Rotation (X, Y und Z "
-"Winkel) und Skalierung stehen."
+"übergeordneten Node ist (solange der übergeordnete Node ebenfalls vom Typ "
+"Spatial ist **oder von diesem erbt**). Auf diese Transformation kann als "
+"4×3 :ref:`Transform <class_Transform>` oder als 3 :ref:`Vector3 "
+"<class_Vector3>` Elemente zugegriffen werden, die für Position, Euler-"
+"Rotation (X, Y und Z Winkel) und Skalierung stehen."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -141,6 +141,14 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+"Es ist möglich, benutzerdefinierte Geometrie mithilfe der Ressource :ref:"
+"`ArrayMesh <class_ArrayMesh>` direkt zu erstellen. Erstellen Sie einfach "
+"Ihre Arrays und verwenden Sie die Funktion :ref:`ArrayMesh."
+"add_surface_from_arrays () "
+"<class_ArrayMesh_method_add_surface_from_arrays>`. Es steht auch eine "
+"Hilfsklasse zur Verfügung :ref:`SurfaceTool <class_SurfaceTool>`, die eine "
+"einfachere API und Hilfen zum Indizieren, Generieren von Normalen, Tangenten "
+"usw. bietet."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:72
 msgid ""
@@ -148,6 +156,10 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"In jedem Fall ist diese Methode zum Generieren statischer Geometrie "
+"(Modelle, die nicht häufig aktualisiert werden) gedacht, da das Erstellen "
+"von Vertex-Arrays und deren Übermittlung an die 3D-API erhebliche "
+"Leistungskosten verursacht."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid "Immediate geometry"
@@ -160,6 +172,11 @@ msgid ""
 "<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
 "mode API to create points, lines, triangles, etc."
 msgstr ""
+"Wenn stattdessen eine einfache Geometrie generiert werden muss, die häufig "
+"aktualisiert wird, stellt Godot einen speziellen Node bereit :ref:"
+"`ImmediateGeometry <class_ImmediateGeometry>`, der eine OpenGL 1.x-API im "
+"Unmittelbar-Modus zum Erstellen von Punkten, Linien, Dreiecke usw. "
+"bereitstellt."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid "2D in 3D"
@@ -174,6 +191,13 @@ msgid ""
 "that take advantage of mixing with 3D backgrounds, more realistic parallax, "
 "lighting/shadow effects, etc."
 msgstr ""
+"Während Godot eine leistungsstarke 2D-Engine enthält, verwenden viele Arten "
+"von Spielen 2D in einer 3D-Umgebung. Durch die Verwendung einer festen "
+"Kamera (entweder orthogonal oder perspektivisch), die sich nicht dreht, "
+"können Nodes wie :ref:`Sprite3D <class_Sprite3D>` und :ref:`AnimatedSprite3D "
+"<class_AnimatedSprite3D>` verwendet werden, um 2D-Spiele zu erstellen, die "
+"das Mischen mit 3D-Hintergründen, realistische Parallax-Effekte, Licht- / "
+"Schatteneffekten usw. nutzen."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:96
 msgid ""
@@ -181,6 +205,9 @@ msgid ""
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
+"Der Nachteil ist natürlich, dass die Komplexität zunimmt und die Leistung im "
+"Vergleich zu einfachem 2D, sowie die fehlenden Anhaltspunkte für die Arbeit "
+"in Pixeln verringert wird."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid "Environment"

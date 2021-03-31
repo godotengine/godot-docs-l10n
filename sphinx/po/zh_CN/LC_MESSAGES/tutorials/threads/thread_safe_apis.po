@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,3 +138,8 @@ msgid ""
 "easiest to use **one** thread for loading and modifying resources, and then "
 "the main thread for adding them."
 msgstr ""
+"不支持从多个线程修改一个唯一的资源。但是支持处理多个线程上的引用，因此在一个"
+"线程上加载资源也是如此，场景、纹理、网格等都可以在一个线程上加载和操作，然后"
+"添加到主线程的活动场景中。这里的限制如上所述，必须注意不要同时从多个线程上加"
+"载相同的资源，因此最简单的方法是用**一个**线程来加载和修改资源，然后用主线程"
+"来添加资源。"

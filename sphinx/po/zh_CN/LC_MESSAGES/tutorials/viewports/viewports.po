@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,6 +186,10 @@ msgid ""
 "<class_VisualInstance_property_layers>` property to restrict which objects "
 "are rendered."
 msgstr ""
+"默认情况下，相机将渲染其世界中的所有对象。在3D中，相机可以使用他们的 :ref: "
+"`cull_mask <class_Camera_property_cull_mask>` 属性和 :ref: `VisualInstance's "
+"<class_VisualInstance>` :ref:` layer <class_VisualInstance_property_layers>` "
+"属性来限制哪些对象被渲染。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:89
 msgid "Scale & stretching"
@@ -334,7 +338,6 @@ msgstr ""
 "容。 布局看起来像这样:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:169
-#, fuzzy
 msgid ""
 "The :ref:`Viewport <class_Viewport>` will cover the area of its parent :ref:"
 "`ViewportContainer <class_viewportcontainer>` completely if :ref:"
@@ -343,9 +346,11 @@ msgid ""
 "ref:`ViewportContainer <class_viewportcontainer>` cannot be smaller than the "
 "size of the :ref:`Viewport <class_Viewport>`."
 msgstr ""
-":ref:`Viewport <class_Viewport>` 将覆盖其父级的区域 :ref:`ViewportContainer "
-"<class_viewportcontainer>` 如果在以下情况下将stretch设置为true :ref:"
-"`ViewportContainer <class_viewportcontainer>`。 注意: :ref:"
+"如果 :ref:`Viewport<class_Viewport>` 在 :ref:`ViewportContainer "
+"<class_viewportcontainer>` 中 :ref:"
+"`Stretch<class_viewportcontainer_property_stretch>` 设置为 ``true`` ，则 :"
+"ref:`Viewport<class_viewportcontainer>` 将完全覆盖其父 :ref:"
+"`ViewportContainer <class_viewportcontainer>` 的区域。注意： :ref:"
 "`ViewportContainer <class_viewportcontainer>` 的大小不能小于 :ref:`Viewport "
 "<class_Viewport>` 的大小。"
 
@@ -391,6 +396,8 @@ msgid ""
 "shadows won't be rendered. For reference, the Project Settings define it to "
 "4096 by default."
 msgstr ""
+"如果需要在视图中渲染3D阴影，请确保将视图的*Shadow Atlas Size阴影贴图集大小*属"
+"性设置为大于0的值。否则，阴影将不会被渲染。作为参考，项目设置默认定义为4096。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:190
 msgid ""
@@ -434,13 +441,13 @@ msgstr "* Debug Draw设置为Overdraw的同一场景*"
 msgid ""
 "Lastly, Wireframe draws the scene using only the edges of triangles in the "
 "meshes."
-msgstr ""
+msgstr "最后，绘制的场景中线框仅使用网格中里边缘的三角形。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:216
 msgid ""
 "The effects of the Wireframe mode are only visible in the editor, not while "
 "the project is running."
-msgstr ""
+msgstr "线框模式的效果只在编辑器中可看见，在项目运行时不可见。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:219
 msgid "Render target"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,12 +62,15 @@ msgid ""
 "Icons must be 16×16. In Inkscape, you can configure the document size in "
 "**File > Document Properties**."
 msgstr ""
+"图标必须是16×16。在Inkscape中，你可以在 **文件>文档属性** 中配置文档大小。"
 
 #: ../../docs/development/editor/creating_icons.rst:28
 msgid ""
 "Lines should be snapped to pixels whenever possible to remain crisp at lower "
 "DPI. You can create a 16×16 grid in Inkscape to make this easier."
 msgstr ""
+"线条应该尽可能地被捕捉到像素，以便在较低的DPI下保持清晰，你可以在Inkscape中创"
+"建一个16×16的网格来简化这个过程。"
 
 #: ../../docs/development/editor/creating_icons.rst:31
 msgid ""
@@ -76,10 +79,13 @@ msgid ""
 "intended name in a case-sensitive manner. For example, to create an icon for "
 "CPUParticles2D, name the file ``CPUParticles2D.svg``."
 msgstr ""
+"一旦你对图标的设计感到满意，就把图标保存在拷贝版本库的 ``editor/icons`` 文件"
+"夹中。图标的名称应该与预期的名称相匹配，并区分大小写。例如，要为"
+"CPUParticles2D创建一个图标，将文件命名为 ``CPUParticles2D.svg`` 。"
 
 #: ../../docs/development/editor/creating_icons.rst:37
 msgid "Color conversion for light editor themes"
-msgstr ""
+msgstr "灯光编辑器主题的颜色转换"
 
 #: ../../docs/development/editor/creating_icons.rst:39
 msgid ""
@@ -92,6 +98,12 @@ msgid ""
 "the list above. Otherwise, your icon may become difficult to read on a light "
 "background."
 msgstr ""
+"如果用户将其编辑器配置为使用浅色主题，Godot将根据 `一组预定义的颜色映射 "
+"<https://github.com/godotengine/godot/blob/"
+"b9f2e57d6240346f1833fd0390de195c956299e7/editor/editor_themes.cpp#L122-"
+"L184>`__ 来转换图标的颜色。这是为了确保图标始终以足够的对比度显示。尽量将图标"
+"的调色板限制在上面列表中的颜色。否则，您的图标在浅色背景下可能会变得难以预"
+"览。"
 
 #: ../../docs/development/editor/creating_icons.rst:47
 msgid "Icon optimization"
@@ -114,12 +126,17 @@ msgid ""
 "svgcleaner/releases/latest>`__ and placing it into a location in your "
 "``PATH`` environment variable."
 msgstr ""
+"从 `发布选项卡 <https://github.com/RazrFalcon/svgcleaner/releases/latest>`__ "
+"下载二进制文件，并将其放置在环境变量 ``PATH`` 中的一个位置， `svgcleaner "
+"<https://github.com/RazrFalcon/svgcleaner>`__ 。"
 
 #: ../../docs/development/editor/creating_icons.rst:58
 msgid ""
 "Run the command below, replacing ``svg_source.svg`` with the path to your "
 "SVG file (which can be a relative or absolute path):"
 msgstr ""
+"运行下面的命令，将 ``svg_source.svg`` 替换为SVG文件的路径（可以是相对或绝对路"
+"径）:"
 
 #: ../../docs/development/editor/creating_icons.rst:65
 msgid ""
@@ -127,6 +144,8 @@ msgid ""
 "The optimized icon will be saved to ``svg_optimized.svg``. You can also "
 "change the destination parameter to any relative or absolute path you'd like."
 msgstr ""
+"``--multipass`` 开关可以提高压缩率，所以一定要包含它。优化后的图标将被保存为 "
+"``svg_optimized.svg`` 。你也可以将目标参数改为相对或绝对路径。"
 
 #: ../../docs/development/editor/creating_icons.rst:71
 msgid ""
@@ -135,6 +154,8 @@ msgid ""
 "recommended to keep the source SVG around if you need to make further "
 "changes."
 msgstr ""
+"虽然这个优化步骤不会对图标的质量产生明显影响，但还是会删除指南等只属于编辑器"
+"的信息。因此，如果你需要做进一步的修改，建议将源SVG保留下来。"
 
 #: ../../docs/development/editor/creating_icons.rst:77
 msgid "Integrating and sharing the icons"

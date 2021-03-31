@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,9 +58,9 @@ msgstr ""
 "Его аналог, метод :ref:`load <class_ @ GDScript_method_load>`, загружает "
 "ресурс только тогда, когда он достигает оператора load. То есть он загрузит "
 "ресурс на месте, что может вызвать замедление, когда это произойдет в "
-"середине важных процессов. Функция load также является псевдонимом для :ref:"
-"`ResourceLoader.load (path) <class_ResourceLoader_method_load>`, который "
-"доступен для * всех * языков сценариев."
+"середине важных процессов. Функция ``load`` также является псевдонимом для :"
+"ref:`ResourceLoader.load(path) <class_ResourceLoader_method_load>`, который "
+"доступен для *всех* языков сценариев."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""
@@ -77,6 +77,10 @@ msgid ""
 "wish for it. To distinguish these situations, there are a few things one can "
 "consider:"
 msgstr ""
+"Предварительная загрузка позволяет сценарию обрабатывать всю загрузку в "
+"момент загрузки сценария. Предварительная загрузка полезна, но бывают "
+"случаи, когда этого не хочется. Чтобы различать эти ситуации, следует учесть "
+"несколько вещей:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:93
 msgid ""
@@ -85,6 +89,11 @@ msgid ""
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
+"Если невозможно определить, когда может загрузиться сценарий, то "
+"предварительная загрузка ресурса, особенно сцены или сценария, может "
+"привести к дальнейшим загрузкам, которых нельзя было ожидать. Это может "
+"привести к непреднамеренной загрузке переменной длины поверх операций "
+"загрузки исходного сценария."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:98
 msgid ""
@@ -92,6 +101,10 @@ msgid ""
 "initialization), then preloading the value has no meaning. This point isn't "
 "a significant factor if one intends to always create the script on its own."
 msgstr ""
+"Если что-то еще может заменить значение (например, экспортированная "
+"инициализация сцены), то предварительная загрузка значения не имеет смысла. "
+"Этот момент не является существенным фактором, если кто-то намеревается "
+"всегда создавать сценарий самостоятельно."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:102
 msgid ""
@@ -99,6 +112,10 @@ msgid ""
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one my wish not to do this:"
 msgstr ""
+"Если кто-то хочет только «импортировать» ресурс другого класса (сценарий или "
+"сцену), то использование предварительно загруженной константы часто является "
+"лучшим способом действий. Однако в исключительных случаях я не хочу этого "
+"делать:"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:106
 msgid ""
@@ -106,6 +123,9 @@ msgid ""
 "instead, initialized either using an ``export`` or a ``load`` (and perhaps "
 "not even initialized until later)."
 msgstr ""
+"Если «импортированный» класс может быть изменен, то вместо этого он должен "
+"быть свойством, инициализированным либо с помощью «экспорта», либо "
+"«загрузки» (и, возможно, даже не инициализированного позже)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:110
 msgid ""
@@ -118,10 +138,18 @@ msgid ""
 "(which, as a :ref:`Reference <class_Reference>`-extending type, will cause "
 "the resources to delete themselves from memory)."
 msgstr ""
+"Если для сценария требуется очень много зависимостей, и кто-то не желает "
+"расходовать так много памяти, то может потребоваться загружать и выгружать "
+"различные зависимости во время выполнения по мере изменения обстоятельств. "
+"Если предварительно загрузить ресурсы в константы, то единственный способ "
+"выгрузить эти ресурсы — это выгрузить весь сценарий. Если вместо этого они "
+"загружают свойства, то можно установить для них значение `` null `` и "
+"полностью удалить все ссылки на ресурс (что, как расширяющийся тип :ref:"
+"`Reference <class_Reference>`, приведет к самоудалению ресурсов из памяти)."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:121
 msgid "Large levels: static vs. dynamic"
-msgstr ""
+msgstr "Крупные уровни: статические и динамические"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:123
 msgid ""
@@ -129,6 +157,10 @@ msgid ""
 "Should they create the level as one static space? Or should they load the "
 "level in pieces and shift the world's content as needed?"
 msgstr ""
+"Если кто-нибудь создает большой уровень, какие обстоятельства являются "
+"самыми подходящими? Должны ли они создавать уровень как одно статичное "
+"пространство? Или они должны загружать уровень по частям и перемещать "
+"содержимое мира по мере необходимости?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:127
 msgid ""
@@ -136,6 +168,9 @@ msgid ""
 "dilemma associated with the two options is one of the age-old programming "
 "choices: does one optimize memory over speed, or vice versa?"
 msgstr ""
+"Что ж, простой ответ: «когда этого требует производительность». Дилемма, "
+"связанная с этими двумя вариантами, является одним из старых вариантов "
+"программирования: оптимизировать ли память вместо скорости или наоборот?"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:131
 msgid ""
@@ -144,6 +179,11 @@ msgid ""
 "Wasting users' RAM leads to programs running slow or outright crashing from "
 "everything else the computer tries to do at the same time."
 msgstr ""
+"Наивный ответ - использовать статический уровень, который загружает все "
+"сразу. Но, в зависимости от проекта, это может потреблять большой объем "
+"памяти. Исчерпание оперативной памяти пользователей приводит к тому, что "
+"программы работают медленно или полностью вылетают из-за всего остального, "
+"что компьютер пытается делать одновременно."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:136
 msgid ""
@@ -153,6 +193,12 @@ msgid ""
 "Games with large and varied environments or procedurally generated elements "
 "often implement these strategies to avoid wasting memory."
 msgstr ""
+"Несмотря ни на что, нужно разбивать большие сцены на более мелкие (чтобы "
+"способствовать повторному использованию ресурсов). Затем разработчики могут "
+"проектировать узел, который управляет созданием/загрузкой и удалением/"
+"выгрузкой ресурсов и узлов в режиме реального времени. Игры с большими и "
+"разнообразными средами или процедурно генерируемыми элементами часто "
+"реализуют эти стратегии, чтобы избежать траты памяти."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:142
 msgid ""
@@ -161,14 +207,18 @@ msgid ""
 "isn't careful, they can develop a system that bloats the technical debt of "
 "the application."
 msgstr ""
+"С другой стороны, кодирование динамической системы является более сложным, т."
+"к. использует больше программируемой логики, которая приводит к возможностям "
+"для ошибок и багов. Если кто-то не будет осторожен, они могут разработать "
+"систему, которая раздувает технический долг приложения."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:147
 msgid "As such, the best options would be..."
-msgstr ""
+msgstr "Таким образом, лучшими вариантами были бы ..."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:149
 msgid "To use a static level for smaller games."
-msgstr ""
+msgstr "Использовать статику для небольших игр."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:151
 msgid ""
@@ -177,6 +227,11 @@ msgid ""
 "time, so as to improve usability and stability, then it could evolve into a "
 "reliable tool across projects."
 msgstr ""
+"Если у вас есть время / ресурсы для средней / большой игры, создайте "
+"библиотеку или плагин, который может кодировать управление узлами и "
+"ресурсами. Если со временем доработать, чтобы улучшить удобство "
+"использования и стабильность, то он может превратиться в надежный инструмент "
+"для всех проектов."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:156
 msgid ""
@@ -184,6 +239,10 @@ msgid ""
 "skills, but not the time or resources to refine the code (game's gotta get "
 "done). Could potentially refactor later to outsource the code into a plugin."
 msgstr ""
+"Кодируйте динамическую логику для средней / большой игры, потому что у вас "
+"есть навыки кодирования, но нет времени или ресурсов для уточнения кода "
+"(игра должна быть завершена). Позже потенциально можно провести рефакторинг, "
+"чтобы передать код в плагин."
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:161
 msgid ""
@@ -191,3 +250,6 @@ msgid ""
 "please see the :ref:`\"Change scenes manually\" "
 "<doc_change_scenes_manually>` documentation."
 msgstr ""
+"Примеры различных способов, которыми можно менять местами сцены во время "
+"выполнения, можно найти в документации :ref:`«Изменить сцены вручную» "
+"<doc_change_scenes_manually>`."

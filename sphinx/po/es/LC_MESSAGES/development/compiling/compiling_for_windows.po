@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,23 +163,40 @@ msgid ""
 "\\godot``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:92
+#: ../../docs/development/compiling/compiling_for_windows.rst:93
+msgid ""
+"To prevent slowdowns caused by continuous virus scanning during compilation, "
+"add the Godot source folder to the list of exceptions in your antivirus "
+"software."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_windows.rst:97
+msgid ""
+"For Windows Defender, hit the :kbd:`Windows` key, type \"Windows Defender "
+"Settings\" then hit :kbd:`Enter`. Under **Virus & threat protection**, go to "
+"**Virus & threat protection setting** and scroll down to **Exclusions**. "
+"Click **Add or remove exclusions** then add the Godot source folder."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_windows.rst:104
 msgid "Compiling"
 msgstr "Compilando"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:95
+#: ../../docs/development/compiling/compiling_for_windows.rst:107
 msgid "Selecting a compiler"
 msgstr "Seleccionando un compilador"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:97
+#: ../../docs/development/compiling/compiling_for_windows.rst:109
 msgid ""
 "SCons will automatically find and use an existing Visual Studio "
 "installation. If you do not have Visual Studio installed, it will attempt to "
 "use MinGW instead. If you already have Visual Studio installed and want to "
-"use MinGW, pass ``use_mingw=yes`` to the SCons command line."
+"use MinGW, pass ``use_mingw=yes`` to the SCons command line. Note that MSVC "
+"builds cannot be performed from the MSYS2 or MinGW shells. Use either ``cmd."
+"exe`` or PowerShell instead."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:102
+#: ../../docs/development/compiling/compiling_for_windows.rst:116
 msgid ""
 "During development, using the Visual Studio compiler is usually a better "
 "idea, as it links the Godot binary much faster than MinGW. However, MinGW "
@@ -187,34 +204,34 @@ msgid ""
 "below), making it a better choice for production use."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:108
+#: ../../docs/development/compiling/compiling_for_windows.rst:122
 msgid "Running SCons"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:110
+#: ../../docs/development/compiling/compiling_for_windows.rst:124
 msgid ""
 "After opening a command prompt, change to the root directory of the engine "
 "source code (using ``cd``) and type::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:115
+#: ../../docs/development/compiling/compiling_for_windows.rst:129
 msgid "You can specify a number of CPU threads to use to speed up the build::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:119
+#: ../../docs/development/compiling/compiling_for_windows.rst:133
 msgid ""
 "In general, it is OK to have at least as many threads compiling Godot as you "
 "have cores in your CPU, if not one or two more. Feel free to add the ``-j`` "
 "option to any SCons command you see below."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:123
+#: ../../docs/development/compiling/compiling_for_windows.rst:137
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:126
+#: ../../docs/development/compiling/compiling_for_windows.rst:140
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name ``godot.windows.tools.32.exe`` or ``godot."
@@ -223,58 +240,58 @@ msgid ""
 "``bits=32``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:132
+#: ../../docs/development/compiling/compiling_for_windows.rst:146
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Running it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:135
+#: ../../docs/development/compiling/compiling_for_windows.rst:149
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:139
+#: ../../docs/development/compiling/compiling_for_windows.rst:153
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
-"optimization is a memory-intensive process, this will require about 3 GB of "
+"optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:144
+#: ../../docs/development/compiling/compiling_for_windows.rst:158
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:150
+#: ../../docs/development/compiling/compiling_for_windows.rst:164
 msgid "Development in Visual Studio or other IDEs"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:152
+#: ../../docs/development/compiling/compiling_for_windows.rst:166
 msgid ""
 "For most projects, using only scripting is enough but when development in C+"
 "+ is needed, for creating modules or extending the engine, working with an "
 "IDE is usually desirable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:156
+#: ../../docs/development/compiling/compiling_for_windows.rst:170
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:161
+#: ../../docs/development/compiling/compiling_for_windows.rst:175
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:164
+#: ../../docs/development/compiling/compiling_for_windows.rst:178
 msgid ""
 "If you need to edit the build commands, they are located in \"Godot\" "
 "project settings, NMAKE sheet. SCons is called at the end of the commands. "
@@ -283,11 +300,11 @@ msgid ""
 "they are equivalent."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:171
+#: ../../docs/development/compiling/compiling_for_windows.rst:185
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:173
+#: ../../docs/development/compiling/compiling_for_windows.rst:187
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`__, which typically comes in 32-bit and 64-bit "
@@ -295,100 +312,98 @@ msgid ""
 "some known ones:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:179
+#: ../../docs/development/compiling/compiling_for_windows.rst:193
 msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:179
+#: ../../docs/development/compiling/compiling_for_windows.rst:193
 msgid "Install `mingw-w64-gcc from the AUR`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:181
+#: ../../docs/development/compiling/compiling_for_windows.rst:195
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:185
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_windows.rst:199
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:190
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_windows.rst:204
 msgid "**macOS**"
 msgstr "**macOS**"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:194
+#: ../../docs/development/compiling/compiling_for_windows.rst:208
 msgid "**Mageia**"
 msgstr "**Mageia**"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:202
+#: ../../docs/development/compiling/compiling_for_windows.rst:216
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
 "binaries in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:208
+#: ../../docs/development/compiling/compiling_for_windows.rst:222
 msgid ""
 "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can "
 "define the following environment variables to give a hint to the build "
 "system::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:215
+#: ../../docs/development/compiling/compiling_for_windows.rst:229
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:223
+#: ../../docs/development/compiling/compiling_for_windows.rst:237
 msgid "Troubleshooting"
 msgstr "Resolución de problemas"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:225
+#: ../../docs/development/compiling/compiling_for_windows.rst:239
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:229
+#: ../../docs/development/compiling/compiling_for_windows.rst:243
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:237
+#: ../../docs/development/compiling/compiling_for_windows.rst:251
 msgid "And for 32-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:245
+#: ../../docs/development/compiling/compiling_for_windows.rst:259
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:247
+#: ../../docs/development/compiling/compiling_for_windows.rst:261
 msgid ""
 "Windows export templates are created by compiling Godot without the editor, "
 "with the following flags::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:255
+#: ../../docs/development/compiling/compiling_for_windows.rst:269
 msgid ""
 "If you plan on replacing the standard export templates, copy these to the "
 "following location, replacing ``<version>`` with the version identifier "
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:261
+#: ../../docs/development/compiling/compiling_for_windows.rst:275
 msgid "With the following names::"
 msgstr "Con los siguientes nombres:"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:268
+#: ../../docs/development/compiling/compiling_for_windows.rst:282
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
 "instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:274
+#: ../../docs/development/compiling/compiling_for_windows.rst:288
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "

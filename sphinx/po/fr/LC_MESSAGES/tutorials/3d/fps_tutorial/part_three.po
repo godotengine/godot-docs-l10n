@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,10 +98,13 @@ msgid ""
 "Godot 3.2 or later, you may need to apply the following changes to the Space "
 "Level and Ruins Level scenes:"
 msgstr ""
+"En raison des mises à jour de Godot depuis la publication de ce tutoriel, si "
+"vous utilisez Godot 3.2 ou version ultérieure, vous devrez peut-être "
+"appliquer les modifications suivantes aux scènes Space Level et Ruins Level :"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:40
 msgid "Open ``res://assets/Space_Level_Objects/Space_Level.tscn``."
-msgstr ""
+msgstr "Ouvrez ``res://assets/Space_Level_Objects/Space_Level.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:41
 msgid ""
@@ -111,16 +114,20 @@ msgid ""
 "Space_Level_Objects/Space_Level_Mesh_Lib.tres`` from the FileSystem dock to "
 "that field."
 msgstr ""
+"Dans le dock arborescence de Scène, sélectionnez le nœud **Floor_and_Celing "
+"**. Dans le dock Inspecteur, si le champ Mesh Library sous GridMap est "
+"``[empty]``, définissez-le sur ``Space_Level_Mesh_Lib.tres`` en faisant "
+"glisser le fichier ``res://assets/Space_Level_Objects/Space_Level_Mesh_Lib."
+"tres`` du dock Système de fichiers vers ce champ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:42
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:46
-#, fuzzy
 msgid "Do the same for the **Walls** node."
-msgstr "L'échelle du nœud racine."
+msgstr "Faites de même pour le nœud **Walls**."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:44
 msgid "Open ``res://assets/Ruin_Level_Objects/Ruins_Level.tscn``."
-msgstr ""
+msgstr "Ouvrez ``res://assets/Ruin_Level_Objects/Ruins_Level.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:45
 msgid ""
@@ -130,6 +137,11 @@ msgid ""
 "Ruin_Level_Objects/Ruin_Level_Mesh_Lib.tres`` from the FileSystem dock into "
 "that field."
 msgstr ""
+"Dans le dock arborescence de Scène, sélectionnez le nœud **Floor**. Dans le "
+"dock Inspecteur, si le champ Mesh Library sous GridMap est ``[empty]``, "
+"définissez-le sur ``Ruin_Level_Mesh_Lib.tres`` en faisant glisser le fichier "
+"``res://assets/Ruin_Level_Objects/Ruin_Level_Mesh_Lib.tres`` du dock Système "
+"de fichiers dans ce champ."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:48
 msgid ""

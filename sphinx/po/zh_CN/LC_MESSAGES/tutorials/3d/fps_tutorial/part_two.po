@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 2"
 msgstr "第2部分"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "零件概述"
+msgstr "部分概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:9
 msgid "In this part we will be giving our player weapons to play with."
@@ -137,12 +136,13 @@ msgstr ""
 "``Idle_unarmed`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:171
+#, fuzzy
 msgid ""
 "If we try to transition to a state that is not included in the possible "
 "transitions states for the state we are in, then we get a warning message "
 "and the animation does not change. We can also automatically transition from "
 "some states into others, as will be explained further below in "
-"``animation_ended``"
+"``animation_ended``."
 msgstr ""
 "如果我们尝试转换到未包含在我们所处状态的可能转换状态中的状态，那么我们会收到"
 "警告消息并且动画不会更改。 我们也可以自动从一些状态转换到其他状态，这将在下面"
@@ -235,7 +235,8 @@ msgstr ""
 "``animation_ended`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:206
-msgid "Lets look at ``set_animation`` next."
+#, fuzzy
+msgid "Let's look at ``set_animation`` next."
 msgstr "让我们看看下面的 ``set_animation`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:208
@@ -288,7 +289,7 @@ msgid ""
 msgstr ""
 "如果动画名称在可能的转换列表中，我们将 ``current_state`` 设置为传入的动画"
 "(``animation_name``)，告诉 :ref:`AnimationPlayer <class_AnimationPlayer>` 以"
-"混合时间播放动画 在 ``animation_speeds`` 中设置的速度为`-1 -1`并返回 "
+"混合时间播放动画 在 ``animation_speeds`` 中设置的速度为 ``-1`` 并返回 "
 "``true`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:224
@@ -320,7 +321,8 @@ msgid ""
 msgstr "我们将混合时间设置为“-1”，因为我们想立即更改动画。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:236
-msgid "Now lets look at ``animation_ended``."
+#, fuzzy
+msgid "Now let's look at ``animation_ended``."
 msgstr "现在让我们来看看 ``animation_ended`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:238
@@ -466,6 +468,8 @@ msgid ""
 "<class_Camera>` node underneath Rotation Helper and check the \"Preview\" "
 "box underneath Perspective in the top-left corner."
 msgstr ""
+"如要预览\"Pistol_fire\"动画，请选择Rotation Helper下面的 :ref:` 摄像机"
+"<class_Camera>` 节点，并检查左上角透视图下面的“预览（Preview）”框。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:295
 msgid ""
@@ -1949,9 +1953,10 @@ msgid "Let's go over what's happening here:"
 msgstr "让我们回顾一下这里发生的事情:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1109
+#, fuzzy
 msgid ""
 "The first thing we do is make sure we've received input to change weapons. "
-"We do this by making sure ``changing_weapons`` is ``true``."
+"We do this by making sure ``changing_weapon`` is ``true``."
 msgstr ""
 "我们要做的第一件事就是确保我们收到改变武器的投入。 我们通过确保 "
 "``changing_weapons`` 是 ``true`` 来做到这一点。"

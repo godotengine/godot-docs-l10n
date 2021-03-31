@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,6 @@ msgstr ""
 "率也不错。但是，它占用的显存比VRAM压缩多得多。这是像素画的推荐设置。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
-#, fuzzy
 msgid ""
 "**Lossy Compression:** This is a good choice for large 2D assets. It has "
 "some artifacts, but less than VRAM and the file size is several times lower "
@@ -185,11 +184,10 @@ msgstr ""
 "它与无损压缩或未压缩相同。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
-#, fuzzy
 msgid ""
 "**Uncompressed:** Only useful for formats that can't be compressed (such as "
 "raw float images)."
-msgstr "未压缩：仅适用于无法压缩的格式（例如 ``raw float``）。"
+msgstr "未压缩：仅适用于无法压缩的格式（例如 raw float 图片）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid ""
@@ -232,9 +230,8 @@ msgid "Stored as WebP"
 msgstr "存储为 WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:84
-#, fuzzy
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
-msgstr "存储为 S3TC/BC 或 PVRTC/ETC（由平台决定）"
+msgstr "根据平台不同，存储为S3TC/BC或PVRTC/ETC"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Size on Disk"
@@ -323,7 +320,7 @@ msgstr "如果您希望 Godot 确保完全兼容各种纹理，请启用 ``强�
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:112
 msgid "Normal Map"
-msgstr "法线贴图"
+msgstr "Normal Map"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:114
 msgid ""
@@ -545,9 +542,8 @@ msgstr ""
 "`doc_spatial_material`，将非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
-#, fuzzy
 msgid "Svg"
-msgstr "保存游戏"
+msgstr "Svg"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:208
 msgid "Scale"

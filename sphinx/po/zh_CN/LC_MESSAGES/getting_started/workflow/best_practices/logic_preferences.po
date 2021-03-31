@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,6 @@ msgstr ""
 "时加载资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:17
-#, fuzzy
 msgid ""
 "Its counterpart, the :ref:`load <class_@GDScript_method_load>` method, loads "
 "a resource only when it reaches the load statement. That is, it will load a "
@@ -54,10 +53,10 @@ msgid ""
 "`ResourceLoader.load(path) <class_ResourceLoader_method_load>` which is "
 "accessible to *all* scripting languages."
 msgstr ""
-"与其对应，:ref:`load <class_@GDScript_method_load>` 方法，仅当资源到达加载语"
-"句时才加载它。也就是说，它将在适当的位置加载资源，这会导致速度下降，然后在敏"
-"感进程的中间发生。``load`` 函数也是 :ref:`ResourceLoader.load(path) "
-"<class_ResourceLoader_method_load>` 的别名，*所有* 脚本语言都可以访问它。"
+"其对应的 :ref:`load <class_@GDScript_method_load>` 方法，只有在到达load语句时"
+"才会加载资源。也就是说，它将立即加载资源，当它发生在敏感进程中时，会造成速度"
+"减慢。 ``load`` 函数也是 :ref:`ResourceLoader.load(path) "
+"<class_ResourceLoader_method_load>` 的别名， *所有* 脚本语言都可以访问。"
 
 #: ../../docs/getting_started/workflow/best_practices/logic_preferences.rst:24
 msgid ""

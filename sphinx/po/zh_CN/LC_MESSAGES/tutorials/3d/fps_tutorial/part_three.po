@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 3"
 msgstr "第3部分"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "零件概述"
+msgstr "部分概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:9
 #, fuzzy
@@ -96,10 +95,13 @@ msgid ""
 "Godot 3.2 or later, you may need to apply the following changes to the Space "
 "Level and Ruins Level scenes:"
 msgstr ""
+"由于本教程发布后Godot的更新，如果您使用的是Godot 3.2或更高版本，您可能需要对"
+"Space关卡和Ruins Level关卡场景进行以下更改:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:40
+#, fuzzy
 msgid "Open ``res://assets/Space_Level_Objects/Space_Level.tscn``."
-msgstr ""
+msgstr "打开 ``res://assets/Space_Level_Objects/Space_Level.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:41
 msgid ""
@@ -109,6 +111,10 @@ msgid ""
 "Space_Level_Objects/Space_Level_Mesh_Lib.tres`` from the FileSystem dock to "
 "that field."
 msgstr ""
+"在场景树面板中，选择 **Floor_and_Celing** 节点。在(属性)检查器面板中，如果"
+"GridMap下的Mesh Library字段为``[空]``，则将其设置为``Space_Level_Mesh_Lib."
+"tres``，将文件``res://assets/Space_Level_Objects/Space_Level_Mesh_Lib.tres``"
+"从文件系统面板拖放到该字段。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:42
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:46
@@ -117,8 +123,9 @@ msgid "Do the same for the **Walls** node."
 msgstr "根节点的规模。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:44
+#, fuzzy
 msgid "Open ``res://assets/Ruin_Level_Objects/Ruins_Level.tscn``."
-msgstr ""
+msgstr "打开 ``res://assets/Ruin_Level_Objects/Ruins_Level.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:45
 msgid ""
@@ -128,6 +135,10 @@ msgid ""
 "Ruin_Level_Objects/Ruin_Level_Mesh_Lib.tres`` from the FileSystem dock into "
 "that field."
 msgstr ""
+"在场景树面板中，选择**Floor**节点。在(属性)检查器面板中，如果GridMap下的Mesh "
+"Library字段是 ``[空]`` ，则将其设置为 ``Ruin_Level_Mesh_Lib.tres`` ，将文件 "
+"``res://assets/Ruin_Level_Objects/Ruin_Level_Mesh_Lib.tres`` 从文件系统拖放到"
+"该字段。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:48
 msgid ""
@@ -700,9 +711,9 @@ msgid ""
 "music and sounds suitable for games\"**. I used Gamemaster's Gun Sound Pack, "
 "which can be found in the Sonniss.com GDC 2017 Game Audio Bundle."
 msgstr ""
-"本教程中没有提供游戏声音(出于法律原因)。 https://gamesounds.xyz/是 **``免版税"
-"或公共领域音乐和适合游戏的声音``的集合** 。 我使用了Gamemaster的Gun Sound "
-"Pack，可以在Sonniss.com GDC 2017 Game Audio Bundle中找到。"
+"本教程中没有提供游戏声音(出于法律原因)。 https://gamesounds.xyz/是 **免版税或"
+"公共领域音乐和适合游戏的声音的集合** 。 我使用了Gamemaster的Gun Sound Pack，"
+"可以在Sonniss.com GDC 2017 Game Audio Bundle中找到。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:479
 #, fuzzy

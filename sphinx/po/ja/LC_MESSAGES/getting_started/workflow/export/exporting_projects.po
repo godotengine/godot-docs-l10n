@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,18 +78,27 @@ msgstr ""
 "タやデバッガなどのツールは含まれません。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
+#, fuzzy
 msgid ""
-"Finally, Godot has a simple but efficient system for creating DLCs as extra "
-"package files."
+"Finally, Godot has a simple but efficient system for :ref:`creating DLCs as "
+"extra package files <doc_exporting_pcks>`."
 msgstr ""
 "最後に、Godotには、追加のパッケージファイルとしてDLCを作成するためのシンプル"
 "だが効率的なシステムがあります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
+msgid ""
+"Godot does not support loading PCK files larger than 2 GB yet. If your "
+"exported project data is larger than 2 GB, you will need to split it into "
+"several PCK files by :ref:`exporting additional PCKs <doc_exporting_pcks>` "
+"and loading them at run-time."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid "On mobile"
 msgstr "モバイル上"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:47
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -99,7 +108,7 @@ msgstr ""
 "ロジェクトを配布するには、これらの各プラットフォームのバイナリがビルドされ、"
 "ゲームデータと共にネイティブプロジェクトに追加されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:52
 msgid ""
 "This can be troublesome because it means that the developer must be "
 "familiarized with the SDK of each platform before even being able to export. "
@@ -111,7 +120,7 @@ msgstr ""
 "ていますが、望ましくない時間にそれを行うことを余儀なくされることはイライラす"
 "る可能性があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:57
 msgid ""
 "There is also another problem with this approach: different devices prefer "
 "some data in different formats to run. The main example of this is texture "
@@ -125,11 +134,11 @@ msgstr ""
 "バイスはPVRTC(iOS)やETC(Android)などのさまざまな形式のテクスチャ圧縮を使用し"
 "ます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:65
 msgid "Export menu"
 msgstr "エクスポートメニュー"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:67
 msgid ""
 "After many attempts at different export workflows, the current one has "
 "proven to work the best. At the time of this writing, not all platforms are "
@@ -140,11 +149,11 @@ msgstr ""
 "ムがまだサポートされているわけではありませんが、サポートされているプラット"
 "フォームは引き続き拡張されています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:71
 msgid "To open the export menu, click the **Export** button:"
 msgstr "エクスポートメニューを開くには、[エクスポート]ボタンをクリックします:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:75
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
@@ -152,7 +161,7 @@ msgstr ""
 "エクスポートメニューが開きます。ただし、完全に空の状態です。これは、エクス"
 "ポートプリセットを追加する必要があるためです。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:80
 msgid ""
 "To create an export preset, click the **Add…** button at the top of the "
 "export menu. This will open a drop-down list of platforms to choose from for "
@@ -162,7 +171,7 @@ msgstr ""
 "加…**]ボタンをクリックします。これにより、エクスポートプリセット用に選択でき"
 "るプラットフォームのドロップダウンリストが開きます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:86
 msgid ""
 "The default options are often enough to export, so tweaking them is usually "
 "not necessary. However, many platforms require additional tools (SDKs) to be "
@@ -178,7 +187,7 @@ msgstr ""
 "要があります。エクスポートメニューは、何かが欠けていると文句を言い、ユーザー"
 "が解決するまでそのプラットフォームにエクスポートすることを許可しません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:95
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
@@ -186,11 +195,11 @@ msgstr ""
 "その時点で、ユーザーはドキュメントに戻り、そのプラットフォームを適切にセット"
 "アップする方法の指示に従うことが期待されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid "Export templates"
 msgstr "テンプレートのエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:101
 msgid ""
 "Apart from setting up the platform, the export templates must be installed "
 "to be able to export projects. They can be obtained as a TPZ file (which is "
@@ -202,7 +211,7 @@ msgstr ""
 "トのダウンロードページ<https://www.godotengine.org/download>` からTPZファイル"
 "(名前が変更されたZIPアーカイブ)として取得できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
@@ -210,11 +219,11 @@ msgstr ""
 "ダウンロードしたら、エディタの **エクスポートテンプレートの管理 [ファイルから"
 "インストール]** オプションを使用してインストールできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:107
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export mode"
 msgstr "エクスポート・モード"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:116
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
@@ -222,19 +231,19 @@ msgstr ""
 "エクスポート時に、Godotはエクスポートするすべてのファイルのリストを作成し、"
 "パッケージを作成します。エクスポートには3つの異なるモードがあります:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:119
 msgid "Export all resources in the project"
 msgstr "プロジェクト内のリソースをすべてエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
 msgid "Export selected scenes (and dependencies)"
 msgstr "選択したシーン(と依存関係にあるもの)をエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:121
 msgid "Export selected resources (and dependencies)"
 msgstr "選択したリソース(と依存関係にあるもの)をエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
 msgid ""
 "**Export all resources in the project** will export every resource in the "
 "project. **Export selected scenes** and **Export selected resources** gives "
@@ -242,11 +251,11 @@ msgid ""
 "every scene or resource you want to export."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:133
 msgid "Exporting from the command line"
 msgstr "コマンドラインからエクスポート"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:128
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:135
 msgid ""
 "In production, it is useful to automate builds, and Godot supports this with "
 "the ``--export`` and ``--export-debug`` command line parameters. Exporting "
@@ -258,7 +267,7 @@ msgstr ""
 "ンドラインからのエクスポートでも、設定のためにエクスポート用プリセットを指定"
 "する必要があります。コマンドラインでの基本的な呼び出し方はこうです:"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:144
 msgid ""
 "This will export to ``some_name.exe``, assuming there is a preset called "
 "\"Windows Desktop\" and the template can be found. The output path is "
@@ -270,7 +279,7 @@ msgstr ""
 "の相対パスか、絶対パスを指定します。コマンド実行時のディレクトリは関係ありま"
 "せん。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:142
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:149
 msgid ""
 "You can also configure it to export only the PCK or ZIP file, allowing a "
 "single export to be used with multiple Godot executables. This takes place "
@@ -280,7 +289,7 @@ msgstr ""
 "ポートすれば複数のGodot実行ファイルで使用できます。設定するには、ターゲットの"
 "ファイル名の拡張子に\\ ``.pck``\\ あるいは\\ ``.zip``\\ を指定します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:146
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:153
 msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
@@ -288,45 +297,60 @@ msgstr ""
 "自動エクスポートには、\\ ``--export``\\ フラグに\\ ``--path``\\ フラグを組み"
 "合わせたり、専用のプリセットを作ると便利でしょう。"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:154
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:161
 msgid "PCK versus ZIP pack file formats"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
 msgid ""
 "Each format has its upsides and downsides. PCK is the default and "
 "recommended format for most use cases, but you may want to use a ZIP archive "
 "instead depending on your needs."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:160
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:167
 #, fuzzy
 msgid "**PCK format:**"
 msgstr "**フォーマット:**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:162
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:169
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:163
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
 msgid ""
 "Not readable and writable using tools normally present on the user's "
 "operating system, even though there are `third-party tools <https://github."
 "com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:168
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:175
 #, fuzzy
 msgid "**ZIP format:**"
 msgstr "**フォーマット:**"
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:170
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:177
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_projects.rst:171
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:178
 msgid ""
 "Readable and writable using tools normally present on the user's operating "
 "system. This can be useful to make modding easier (see also :ref:"
 "`doc_exporting_pcks`)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:183
+msgid ""
+"Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, "
+"when using a ZIP file as a pack file, the exported binary will not try to "
+"use it automatically. Therefore, you have to create a *launcher script* that "
+"the player can double-click or run from a terminal to launch the project::"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_projects.rst:195
+msgid ""
+"Save the launcher script and place it in the same folder as the exported "
+"binary. On Linux, make sure to give executable permissions to the launcher "
+"script using the command ``chmod +x launch.sh``."
 msgstr ""

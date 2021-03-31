@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -438,16 +438,19 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:219
 #: ../../docs/tutorials/2d/using_tilemaps.rst:252
+#: ../../docs/tutorials/2d/using_tilemaps.rst:265
 msgid "Key:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:221
 #: ../../docs/tutorials/2d/using_tilemaps.rst:254
+#: ../../docs/tutorials/2d/using_tilemaps.rst:267
 msgid "Red: \"on\""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:222
 #: ../../docs/tutorials/2d/using_tilemaps.rst:255
+#: ../../docs/tutorials/2d/using_tilemaps.rst:268
 msgid "White: \"off\""
 msgstr ""
 
@@ -493,94 +496,108 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:260
-msgid "**Template - Top-down floor in 3/4 perspective:**"
+msgid "**Template - Generic 16 tiles:**"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:262
+msgid ""
+"This template can be used for tilesets that only have 16 tiles - for simpler "
+"art styles the missing tiles will not be noticeable."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:269
+msgid "Blue-checkered: \"ignore\""
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:274
+msgid "**Template - Top-down floor in 3/4 perspective:**"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:276
 msgid "Key (applies to the four templates below):"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:264
+#: ../../docs/tutorials/2d/using_tilemaps.rst:278
 msgid "Green: floor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:265
+#: ../../docs/tutorials/2d/using_tilemaps.rst:279
 msgid "Cyan: wall"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:266
+#: ../../docs/tutorials/2d/using_tilemaps.rst:280
 msgid "Yellow: top of wall"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:267
+#: ../../docs/tutorials/2d/using_tilemaps.rst:281
 #, fuzzy
 msgid "Transparent: air"
 msgstr "Transparent(透過)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:271
+#: ../../docs/tutorials/2d/using_tilemaps.rst:285
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:275
+#: ../../docs/tutorials/2d/using_tilemaps.rst:289
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:277
+#: ../../docs/tutorials/2d/using_tilemaps.rst:291
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:281
+#: ../../docs/tutorials/2d/using_tilemaps.rst:295
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:283
+#: ../../docs/tutorials/2d/using_tilemaps.rst:297
 msgid ""
 "When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
 "size. This means the texture offset should be ``Vector2(0, -120)``:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:290
+#: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid "3x3"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:292
+#: ../../docs/tutorials/2d/using_tilemaps.rst:306
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:294
+#: ../../docs/tutorials/2d/using_tilemaps.rst:308
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:297
+#: ../../docs/tutorials/2d/using_tilemaps.rst:311
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:302
+#: ../../docs/tutorials/2d/using_tilemaps.rst:316
 #, fuzzy
 msgid "Disabling autotile"
 msgstr "不要なモジュールの無効化"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:304
+#: ../../docs/tutorials/2d/using_tilemaps.rst:318
 msgid ""
-"When using an autotile, it is possible to turn of the autotile behaviour and "
-"select tiles manually, by clicking \"Disable Autotile\" at the top of the "
-"tile selection window."
+"When using an autotile, it is possible to turn off the autotile behaviour "
+"and select tiles manually, by clicking \"Disable Autotile\" at the top of "
+"the tile selection window."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:309
+#: ../../docs/tutorials/2d/using_tilemaps.rst:323
 #, fuzzy
 msgid "Autotile binding"
 msgstr "自動的なバス無効化"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:311
+#: ../../docs/tutorials/2d/using_tilemaps.rst:325
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -593,18 +610,18 @@ msgid ""
 "\"find_tile_by_name(name)\", empty cells are given an id of -1."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:321
+#: ../../docs/tutorials/2d/using_tilemaps.rst:335
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
 "changes to take effect."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:326
+#: ../../docs/tutorials/2d/using_tilemaps.rst:340
 msgid "Tips and tricks"
 msgstr "ヒントとテクニック"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:328
+#: ../../docs/tutorials/2d/using_tilemaps.rst:342
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -614,20 +631,20 @@ msgstr ""
 "イル間に線が表示される場合があります。これを修正するには、プロジェクト設定を"
 "開き、\"Rendering/Quality\" セクションで \"Use Pixel Snap\" を有効にします。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:332
+#: ../../docs/tutorials/2d/using_tilemaps.rst:346
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
 "エディタの右上にあるアイコンを使用して、タイルを反転および回転できます。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:334
+#: ../../docs/tutorials/2d/using_tilemaps.rst:348
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
 "直線を描くには、\\ :kbd:`Shift` を押しながらタイルをクリックしてドラッグしま"
 "す。"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:336
+#: ../../docs/tutorials/2d/using_tilemaps.rst:350
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

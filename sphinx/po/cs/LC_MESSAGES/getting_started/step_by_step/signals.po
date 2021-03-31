@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,9 +106,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"Ve vlastnostech uzlu Timer zaškrtněte políčko „On“ vedle položky * Autostart "
-"*. To způsobí automatické spuštění časovače při spuštění scény. Čas čekání* "
-"můžete nechat 1 sekundu."
+"Ve vlastnostech uzlu Timer zaškrtněte políčko „On“ vedle položky "
+"*Autostart*. To způsobí automatické spuštění časovače při spuštění scény. "
+"*Wait time* můžete nechat 1 sekundu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:45
 msgid ""
@@ -172,8 +172,8 @@ msgid ""
 msgstr ""
 "V dolní části okna je pole označené „Metoda příjemce“. Toto je název funkce "
 "ve skriptu cílového uzlu, který chcete použít. Ve výchozím nastavení Godot "
-"vytvoří tuto funkci pomocí konvence pojmenování `` _on_ <název_uzlu> _ "
-"<jméno_signálu> ``, ale můžete ji změnit, pokud si budete přát."
+"vytvoří tuto funkci pomocí konvence pojmenování ``_on_ <název_uzlu> _ "
+"<jméno_signálu>``, ale můžete ji změnit, pokud si budete přát."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:75
 msgid ""
@@ -228,9 +228,9 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
-"Pro navázání spojení v kódu použijeme funkci ``connect``. Vložíme ji do `` "
-"_ready () ``, aby se spojení navázalo při spuštění. Syntaxe funkce "
-"je``<source_node> .connect (<signal_name>, <target_node>, "
+"Pro navázání spojení v kódu použijeme funkci ``connect``. Vložíme ji do "
+"``_ready()``, aby se spojení navázalo při spuštění. Syntaxe funkce je "
+"``<source_node>.connect(<signal_name>,<target_node>,"
 "<target_function_name>)``. Zde je kód pro naše připojení časovače:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
@@ -251,7 +251,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:195
 msgid "To emit a signal via code, use the ``emit_signal`` function:"
-msgstr "Chcete-li vyslat signál pomocí kódu, použijte funkci ``emise_signal``:"
+msgstr "Chcete-li vyslat signál pomocí kódu, použijte funkci ``emit_signal``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:222
 msgid ""

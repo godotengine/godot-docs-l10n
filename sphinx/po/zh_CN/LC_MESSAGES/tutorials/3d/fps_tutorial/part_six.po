@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,8 @@ msgid "Part 6"
 msgstr "第6部分"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
-#, fuzzy
 msgid "Part overview"
-msgstr "零件概述"
+msgstr "部分概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:9
 #, fuzzy
@@ -606,14 +605,13 @@ msgstr ""
 "节点的任何其他节点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:331
-#, fuzzy
 msgid ""
 "The reason we're adding a :ref:`CanvasLayer <class_CanvasLayer>` is so all "
 "our GUI and UI nodes we instance/spawn in ``Globals.gd`` are always drawn on "
 "top of everything else."
 msgstr ""
-"我们添加一个 :ref:`CanvasLayer <class_CanvasLayer>` 的原因是我们在 ``Globals."
-"gd`` 中实例/生成的所有GUI和UI节点总是被绘制在其他所有节点之上。"
+"我们添加一个 :ref:`CanvasLayer <class_CanvasLayer>` 的原因是为了在 ``Globals."
+"gd`` 中实例/spawn的所有GUI和UI节点总是绘制在其他所有东西之上。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:334
 #, fuzzy
@@ -1107,7 +1105,6 @@ msgstr ""
 "起来更好，并且更容易被游戏游戏角色阅读。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:666
-#, fuzzy
 msgid ""
 "Then we check whether the player is dead. If so, we then remove ``delta`` "
 "from ``dead_time``."
@@ -1158,13 +1155,12 @@ msgstr ""
 "然后我们启用两个游戏角色的碰撞形状，以便游戏角色可以再次与环境发生碰撞。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:679
-#, fuzzy
 msgid ""
 "Next, we make the ``Death_Screen`` invisible and make the rest of the UI, "
 "the ``Panel`` and ``Crosshair`` nodes, visible again."
 msgstr ""
-"接下来，我们使 ``Death_Screen`` 不可见，并使UI的其余部分， ``Panel`` 和"
-"``Crosshair``节点再次可见。"
+"接下来，我们使 ``Death_Screen`` 不可见，并使UI的其余部分， ``Panel`` 和 "
+"``Crosshair`` 节点再次可见。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:681
 msgid ""
@@ -1174,14 +1170,14 @@ msgstr ""
 "然后我们通过每个武器并调用它的 ``reset_weapon`` 函数，我们将很快添加它。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:683
-#, fuzzy
 msgid ""
 "Then, we reset ``health`` to ``100``, ``grenade_amounts`` to its default "
 "values, and change ``current_grenade`` to ``Grenade``. This effectively "
 "resets these variables to their default values."
 msgstr ""
-"然后我们将 ``health`` 重置为 ``100`` ，将`grenade_amounts``重置为默认值，并"
-"将 ``current_grenade`` 改为 ``Grenade`` 。 这有效地将这些变量重置为其默认值。"
+"然后我们将 ``health`` 重置为 ``100`` ，将 ``grenade_amounts`` 重置为默认值，"
+"并将 ``current_grenade`` 改为 ``Grenade`` 。 这有效地将这些变量重置为其默认"
+"值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:686
 msgid "Finally, we set ``is_dead`` to ``false``."
@@ -1196,31 +1192,27 @@ msgstr ""
 "在`_input``的开头添加以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:697
-#, fuzzy
 msgid "Now, when the player is dead, they cannot look around with the mouse."
-msgstr "现在当游戏角色死了，游戏角色无法用鼠标环顾四周。"
+msgstr "现在当游戏角色死了，玩家无法用鼠标环顾四周。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:700
 msgid "Finishing the respawn system"
 msgstr "完成重生系统"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:702
-#, fuzzy
 msgid ""
 "Firstly, let's open ``Weapon_Pistol.gd`` and add the ``reset_weapon`` "
 "function. Add the following:"
 msgstr ""
-"首先让我们打开 ``Weapon_Pistol.gd`` 并添加 ``reset_weapon`` 函数。 添加以下内"
-"容:"
+"首先让我们打开 ``Weapon_Pistol.gd`` 脚本并添加 ``reset_weapon`` 函数。 添加以"
+"下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:710
-#, fuzzy
 msgid ""
 "Now, when we call ``reset_weapon``, the ammo in the pistol and the ammo in "
 "the spares will be reset to their default values."
 msgstr ""
-"现在当我们调用 ``reset_weapon`` 时，手枪中的弹药和备件中的弹药将重置为默认"
-"值。"
+"现在当我们调用 ``reset_weapon`` 时，手枪中的弹药和备用弹药将重置为默认值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid "Now let's add ``reset_weapon`` in ``Weapon_Rifle.gd``:"
@@ -1231,22 +1223,19 @@ msgid "And add the following to ``Weapon_Knife.gd``:"
 msgstr "并将以下内容添加到``Weapon_Knife.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:728
-#, fuzzy
 msgid "Now all the weapons will reset when the player dies."
 msgstr "现在，当游戏角色死亡时，所有武器都会重置。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:732
-#, fuzzy
 msgid ""
 "Now we need to add a few things to ``Globals.gd``. Firstly, add the "
 "following class variable:"
 msgstr "现在我们需要在 ``Globals.gd`` 中添加一些东西。 首先，添加以下类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:738
-#, fuzzy
 msgid ""
 "``respawn_points``: A variable to hold all the respawn points in a level"
-msgstr "``respawn_points``:一个变量，用于保存关卡中的所有重生点"
+msgstr "``respawn_points`` ：一个变量，用于保存关卡中的所有重生点"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
 msgid ""
@@ -1257,13 +1246,12 @@ msgstr ""
 "在“_ready”中添加以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:746
-#, fuzzy
 msgid ""
 "``randomize`` will get us a new random seed so we get a (relatively) random "
 "string of numbers when we use any of the random functions."
 msgstr ""
-"”randomize“将给我们一个新的随机种子，因此当我们使用任意一个随机函数时，我们得"
-"到一个(相对的)随机字符串。"
+"``randomize`` 将给我们一个新的随机种子，因此当我们使用任意一个随机函数时，我"
+"们得到一个(相对的)随机数字字符串。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:748
 msgid "Now let's add ``get_respawn_position`` to ``Globals.gd``:"
@@ -1275,7 +1263,6 @@ msgid "Let's go over what this function does."
 msgstr "让我们回顾一下这个功能的作用。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:763
-#, fuzzy
 msgid ""
 "Firstly, we check if ``Globals.gd`` has any ``respawn_points`` by checking "
 "whether ``respawn_points`` is ``null`` or not."
@@ -1311,12 +1298,12 @@ msgstr ""
 "<class_Spatial>` 节点的位置。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:774
-#, fuzzy
 msgid ""
 "Before we are done with ``Globals.gd``, we need to add the following to "
 "``load_new_scene``:"
 msgstr ""
-"在我们完成 ``Globals.gd`` 之前。 我们需要将以下内容添加到``load_new_scene``:"
+"在我们完成 ``Globals.gd`` 之前。 我们需要将以下内容添加到 ``load_new_scene`` "
+"："
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:780
 msgid ""
@@ -1339,7 +1326,6 @@ msgstr ""
 "附加到 ``Spawn_Points`` 。 将以下内容添加到``Respawn_Point_Setter.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:796
-#, fuzzy
 msgid ""
 "Now, when a node with ``Respawn_Point_Setter.gd`` has its ``_ready`` "
 "function called, all the children nodes of the node with "
@@ -1348,7 +1334,7 @@ msgid ""
 msgstr ""
 "现在当一个带有 ``Respawn_Point_Setter.gd`` 的节点调用了它的 ``_ready`` 函数"
 "时，该节点的所有子节点都带有 ``Respawn_Point_Setter.gd`` ， ``Spawn_Points`` "
-"在`` Ruins_Level.tscn``将被添加到``Globals.gd``中的``respawn_points``。"
+"在 `` Ruins_Level.tscn`` 将被添加到 ``Globals.gd`` 中的 ``respawn_points`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:800
 msgid ""
@@ -1361,10 +1347,9 @@ msgstr ""
 "色的 ``_ready`` 函数之前设置。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:805
-#, fuzzy
 msgid ""
 "Now, when the player dies, they will respawn after waiting ``4`` seconds!"
-msgstr "现在当游戏角色死亡时，他们会在等待“4”秒后重生！"
+msgstr "现在当游戏角色死亡时，他们会在等待 ``4`` 秒后重生！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:807
 msgid ""
@@ -1380,7 +1365,6 @@ msgid "Writing a sound system we can use anywhere"
 msgstr "编写一个我们可以随处使用的音响系统"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:813
-#, fuzzy
 msgid ""
 "Finally, let's make a sound system so we can play sounds from anywhere, "
 "without having to use the player."
@@ -1389,7 +1373,6 @@ msgstr ""
 "放器。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:815
-#, fuzzy
 msgid ""
 "Firstly, open up ``SimpleAudioPlayer.gd`` and change it to the following:"
 msgstr "首先，打开 ``SimpleAudioPlayer.gd`` 并将其更改为以下内容:"
@@ -1436,12 +1419,11 @@ msgid "Let's go over the changes."
 msgstr "让我们回顾一下这些变化。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:872
-#, fuzzy
 msgid ""
 "For the class variables, we removed all the ``audio_[insert name here]`` "
 "variables since we will instead have these passed in from ``Globals.gd``."
 msgstr ""
-"对于类变量，我们删除了所有的``audio_ [insert name here]``变量，因为我们将从 "
+"对于类变量，我们删除了所有的 ``audio_[insert name here]`` 变量，因为我们将从 "
 "``Globals.gd`` 中传入这些变量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:874
@@ -1501,16 +1483,15 @@ msgstr ""
 "``Globals.gd`` 。 首先，添加以下类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:905
-#, fuzzy
 msgid "Let's go over these global variables."
 msgstr "让我们来看看这些全局变量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:907
-#, fuzzy
 msgid ""
 "``audio_clips``: A dictionary holding all the audio clips ``Globals.gd`` can "
 "play."
-msgstr "``audio_clips``:一个包含所有音频片段``Globals.gd``的字典可以播放。"
+msgstr ""
+"``audio_clips`` ：一个 包含``Globals.gd`` 中可以播放的所有音频片段的字典。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:908
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
@@ -1539,8 +1520,8 @@ msgid ""
 "gun sound pack included in the Sonniss' GDC Game Audio bundle for 2017. The "
 "tracks I've used (with some minor editing) are as follows:"
 msgstr ""
-"我推荐的一个网站是** GameSounds.xyz **。 我正在使用2017年Sonniss'GDC游戏音频"
-"包中包含的Gamemaster音频枪声音包。我使用过的轨道(经过一些小编辑)如下:"
+"我推荐的一个网站是**GameSounds.xyz**。 我正在使用2017年Sonniss'GDC游戏音频包"
+"中包含的Gamemaster音频枪声音包。我使用过的轨道(经过一些小编辑)如下:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:918
 msgid "gun_revolver_pistol_shot_04,"
@@ -1560,7 +1541,6 @@ msgid ""
 msgstr "现在我们需要在 ``Globals.gd`` 中添加一个名为 ``play_sound`` 的新函数:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:943
-#, fuzzy
 msgid ""
 "Firstly, we check whether ``Globals.gd`` has an audio clip with the name "
 "``sound_name`` in ``audio_clips``. If it does not, we print an error message."
@@ -1598,6 +1578,7 @@ msgid ""
 "We add the ``new_audio`` into the ``created_audio`` list to hold all created "
 "audios."
 msgstr ""
+"我们将 \"new_audio \"添加到 \"created_audio \"列表中，以保存所有创建的音频。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:953
 msgid ""
@@ -1608,21 +1589,19 @@ msgstr ""
 "置。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:957
-#, fuzzy
 msgid ""
 "Before we leave ``Globals.gd``, we need to add a few lines of code to "
 "``load_new_scene`` so when the player changes scenes, all the audio is "
 "destroyed."
 msgstr ""
 "在我们离开 ``Globals.gd`` 之前，我们需要在 ``load_new_scene`` 中添加几行代"
-"码，这样当播放器改变场景时，所有的音频都会被破坏。"
+"码，这样当播放器改变场景时，所有的音频都会被销毁。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
 msgid "Add the following to ``load_new_scene``:"
 msgstr "将以下内容添加到``load_new_scene``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
-#, fuzzy
 msgid ""
 "Now, before ``Globals.gd`` changes scenes, it goes through each simple audio "
 "player in ``created_sounds`` and frees/destroys them. Once ``Globals.gd`` "
@@ -1632,11 +1611,10 @@ msgid ""
 msgstr ""
 "现在，在 ``Globals.gd`` 改变场景之前，它会通过 ``created_sounds`` 中的每个简"
 "单音频播放器并释放/销毁它们。 一旦 ``Globals.gd`` 完成了 ``created_audio`` 中"
-"的所有声音，我们就会清除 ``created_audio`` ，这样它就不再拥有对任何(noew释放/"
-"毁坏)简单音频播放器的任何引用。"
+"的所有声音，我们就会清除 ``created_audio`` ，这样它就不再拥有对任何(现已释放/"
+"毁坏)简单音频播放器的引用。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:973
-#, fuzzy
 msgid ""
 "Let's change ``create_sound`` in ``Player.gd`` to use this new system. "
 "First, remove ``simple_audio_player`` from ``Player.gd``'s class variables "
@@ -1652,7 +1630,6 @@ msgid "Now, change ``create_sound`` to the following:"
 msgstr "现在，将 ``create_sound`` 更改为以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:983
-#, fuzzy
 msgid ""
 "Now, whenever ``create_sound`` is called, we simply call ``play_sound`` in "
 "``Globals.gd``, passing in all the arguments received."
@@ -1661,7 +1638,6 @@ msgstr ""
 "``play_sound`` ，传入所有收到的参数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:987
-#, fuzzy
 msgid ""
 "Now all the sounds in our FPS can be played from anywhere. All we have to do "
 "is get the ``Globals.gd`` singleton, and call ``play_sound``, pass in the "
@@ -1673,7 +1649,6 @@ msgstr ""
 "论我们是否想要它循环，以及 播放声音。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:990
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenade "
 "explodes you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1682,10 +1657,10 @@ msgid ""
 "in the grenades ``_process`` function, right after the grenade damages all "
 "the bodies within its blast radius."
 msgstr ""
-"例如，如果您想在手榴弹爆炸时发出爆炸声，您需要在 ``Globals.gd`` 的"
-"``audio_clips``中添加一个新的声音，得到 ``Globals.gd`` 单例， 然后您只需要在"
-"手榴弹``_ process``函数中添加类似``globals.play_sound(“explosion”，false，"
-"global_transform.origin)``的东西，就在手榴弹损坏其爆炸半径范围内的所有物体之"
+"例如，如果您想在手榴弹爆炸时发出爆炸声，您需要在 ``Globals.gd`` 的 "
+"``audio_clips`` 中添加一个新的声音，得到 ``Globals.gd`` 单例， 然后您只需要在"
+"手榴弹 ``_ process`` 函数中添加类似 ``globals.play_sound(“explosion”，false，"
+"global_transform.origin)`` 的东西，就在手榴弹损坏其爆炸半径范围内的所有物体之"
 "后。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:996
@@ -1735,20 +1710,18 @@ msgid ""
 msgstr "除此之外，源代码完全相同，只是提供有用的评论，解释每个部分的作用。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1017
-#, fuzzy
 msgid ""
 "The finished project source is hosted on GitHub as well: https://github.com/"
 "TwistedTwigleg/Godot_FPS_Tutorial"
 msgstr ""
-"完成的项目源也托管在Github上:https://github.com/TwistedTwigleg/"
+"完整的项目源也托管在Github上： https://github.com/TwistedTwigleg/"
 "Godot_FPS_Tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1019
-#, fuzzy
 msgid ""
 "**Please note that the code in GitHub may or may not be in sync with the "
 "tutorial in the documentation**."
-msgstr "**请注意，Github中的代码可能与文档中的教程同步也可能不同步**。"
+msgstr "**请注意，Github中的代码可能与文档中的教程同步也可能不同步** 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1021
 msgid ""
@@ -1760,12 +1733,11 @@ msgstr ""
 "项目，因为它们是由Godot社区负责维护的。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1024
-#, fuzzy
 msgid ""
 "You can download all the ``.blend`` files used in this tutorial here: :"
 "download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
 msgstr ""
-"您可以在这里下载本教程中使用的所有 ``.blend`` 文件: :download:"
+"您可以在这里下载本教程中使用的所有 ``.blend`` 文件 : :download:"
 "`Godot_FPS_BlenderFiles.zip <files / Godot_FPS_BlenderFiles.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1026
@@ -1824,5 +1796,5 @@ msgid ""
 "**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
 "StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"
 msgstr ""
-"** OpenGameArt.org，360toolkit.co，Titillium-Regular，StumpyStrust和"
+"**OpenGameArt.org，360toolkit.co，Titillium-Regular，StumpyStrust和"
 "GameSounds.xyz的创建者都不参与本教程。**"

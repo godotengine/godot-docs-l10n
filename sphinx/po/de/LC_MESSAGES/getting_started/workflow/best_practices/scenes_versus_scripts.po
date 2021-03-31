@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,6 +37,11 @@ msgid ""
 "are often used in conjunction with a script so that the scene acts as an "
 "extension of the scripts declarative code."
 msgstr ""
+"Die Fähigkeiten jedes Systems sind daher unterschiedlich. Szenen können "
+"definieren, wie eine erweiterte Klasse initialisiert wird, aber nicht, was "
+"ihr Verhalten tatsächlich ist. Szenen werden oft in Verbindung mit einem "
+"Skript verwendet, so dass die Szene als Erweiterung des deklarativen Codes "
+"des Skripts fungiert."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:16
 msgid "Anonymous types"
@@ -58,6 +63,9 @@ msgid ""
 "is identical to creating in-engine classes whereas handling scenes requires "
 "a change in API:"
 msgstr ""
+"Aber die Wahl, welche davon zu verwenden ist, kann ein Dilemma sein. Das "
+"Erstellen von Skript-Instanzen ist identisch mit dem Erstellen von In-Engine-"
+"Klassen, während die Handhabung von Szenen eine Änderung der API erfordert:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:59
 msgid ""
@@ -65,6 +73,9 @@ msgid ""
 "differences between engine and script code. The larger and more complex the "
 "node, the more reason there is to build it as a scene."
 msgstr ""
+"Außerdem werden Skripte aufgrund der Geschwindigkeitsunterschiede zwischen "
+"Engine- und Skriptcode etwas langsamer arbeiten als Szenen. Je größer und "
+"komplexer das Node ist, desto mehr Gründe gibt es, das als Szene zu bauen."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:64
 msgid "Named types"
@@ -77,6 +88,11 @@ msgid ""
 "dialog with an optional icon. In these cases, the user's ability to use the "
 "script is much more streamlined. Rather than having to..."
 msgstr ""
+"In einigen Fällen kann ein Benutzer ein Skript als neuen Typ im Editor "
+"selbst registrieren. Dadurch wird es als neuer Typ im Node- oder "
+"Ressourcenerstellungsdialog mit einem optionalen Symbol angezeigt. In diesen "
+"Fällen ist die Fähigkeit des Benutzers, das Skript zu verwenden, viel "
+"rationalisierter. Anstatt es..."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:71
 msgid "Know the base type of the script they would like to use."
@@ -111,6 +127,8 @@ msgid ""
 "Scroll down to the bottom of the Inspector to find the ``script`` property "
 "and select it."
 msgstr ""
+"Scrollen Sie im Inspektor nach unten, um die Eigenschaft ``Skript`` zu "
+"finden, und wählen Sie sie aus."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:87
 msgid "Select \"Load\" from the dropdown."
@@ -127,6 +145,10 @@ msgid ""
 "of the above work. The creation dialog even has a search bar to look up the "
 "type by name."
 msgstr ""
+"Mit einem registrierten Skript wird der geskriptete Typ stattdessen zu einer "
+"Erstellungsoption wie die anderen Nodes und Ressourcen im System. Man muss "
+"keine der oben genannten Arbeiten durchführen. Der Erstellungsdialog hat "
+"sogar eine Suchleiste, um den Typ anhand des Namens zu suchen."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:96
 msgid "There are two systems for registering types..."
@@ -154,6 +176,8 @@ msgid ""
 "Editor has no type-awareness of the script or its relationship to other "
 "engine types or scripts."
 msgstr ""
+"Der Editor kennt weder den Typ des Skripts noch seine Beziehung zu anderen "
+"Enginetypen oder Skripten."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:109
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:127
@@ -193,6 +217,8 @@ msgid ""
 "Creates the node with the script, but can also change types or extend the "
 "type from the editor."
 msgstr ""
+"Erzeugt das Node mit dem Skript, kann aber auch Typen ändern oder den Typ "
+"vom Editor aus erweitern."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:124
 msgid ""
@@ -220,6 +246,9 @@ msgid ""
 "scripting languages. Each scripting language must implement its own support "
 "for exposing this information."
 msgstr ""
+"Der Editor scannt Projektordner und registriert alle offengelegten Namen für "
+"alle Skriptsprachen. Jede Skriptsprache muss ihre eigene Unterstützung für "
+"die Bereitstellung dieser Informationen implementieren."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:138
 msgid ""
@@ -228,6 +257,11 @@ msgid ""
 "script resource. Creating instances and accessing constants or static "
 "methods is viable from anywhere."
 msgstr ""
+"Beide Methoden fügen dem Erstellungsdialog Namen hinzu, aber insbesondere "
+"Skriptklassen ermöglichen es dem Benutzer auch, auf den Typennamen "
+"zuzugreifen, ohne die Skriptressource zu laden. Das Erstellen von Instanzen "
+"und der Zugriff auf Konstanten oder statische Methoden ist von überall aus "
+"möglich."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:143
 msgid ""
@@ -236,6 +270,10 @@ msgid ""
 "creating in-house tools for designers to use will find an easier time of "
 "things this way."
 msgstr ""
+"Mit Funktionen wie diesen kann man sich wünschen, dass ihr Typ ein Skript "
+"ohne Szene ist, weil es den Benutzern eine einfache Bedienung ermöglicht. "
+"Diejenigen, die Plugins entwickeln oder eigene Tools für Designer erstellen, "
+"werden es auf diese Weise leichter haben."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:148
 msgid ""
@@ -262,6 +300,10 @@ msgid ""
 "initialize them grows much larger. Creating node hierarchies demonstrates "
 "this. Each Node's logic could be several hundred lines of code in length."
 msgstr ""
+"Mit zunehmender Größe der Objekte wird auch die notwendige Größe der Skripte "
+"zum Erstellen und Initialisieren der Objekte viel größer. Das Erstellen von "
+"Nodehierarchien demonstriert dies. Die Logik eines jeden Nodes kann mehrere "
+"hundert Codezeilen lang sein."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:159
 msgid ""
@@ -269,6 +311,10 @@ msgid ""
 "script to it, sets its future parent as its owner so it gets saved to disk "
 "along with it, and finally adds it as a child of the ``Main`` node:"
 msgstr ""
+"Das folgende Codebeispiel erzeugt ein neues ``Node``, ändert dessen Namen, "
+"weist es ein Skript zu, setzt dessen zukünftigen Elternteil als Eigentümer, "
+"so dass es zusammen mit diesem auf der Festplatte gespeichert wird, und fügt "
+"es schließlich als Kind des ``Main``-Nodes hinzu:"
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:195
 msgid ""
@@ -276,6 +322,9 @@ msgid ""
 "instruction makes a call to the scripting API which leads to many \"lookups"
 "\" on the back-end to find the logic to execute."
 msgstr ""
+"Skriptcode wie dieser ist viel langsamer als engineseitiger C++ - Code. "
+"Jeder Befehl ruft die Skript-API auf, was zu vielen \"Suchvorgängen\" im "
+"Back-End führt, um die auszuführende Logik zu finden."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:199
 msgid ""
@@ -285,6 +334,11 @@ msgid ""
 "scenes in batches on the back-end and provide much better performance than "
 "scripts."
 msgstr ""
+"Szenen helfen, dieses Leistungsproblem zu vermeiden. :ref:`PackedScene "
+"<class_PackedScene>`, der Basistyp, von dem Szenen erben, definiert "
+"Ressourcen, die serialisierte Daten zum Erstellen von Objekten verwenden. "
+"Die Engine kann Szenen im Stapel im Back-End verarbeiten und bietet eine "
+"viel bessere Leistung als Skripte."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:205
 msgid "Conclusion"
@@ -302,6 +356,11 @@ msgid ""
 "chances are that it should probably be a script, likely one with a custom "
 "name/icon."
 msgstr ""
+"Wenn man ein grundlegendes Werkzeug erstellen möchte, das in mehreren "
+"verschiedenen Projekten wiederverwendet wird und das wahrscheinlich von "
+"Menschen aller Könnensstufen verwendet wird (einschließlich derer, die sich "
+"nicht als \"Programmierer\" bezeichnen), dann sollte das wahrscheinlich ein "
+"Skript sein, am Besten eines mit einem benutzerdefinierten Namen/Symbol."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:214
 msgid ""
@@ -309,6 +368,9 @@ msgid ""
 "should always be a scene. Scenes are easier to track/edit and provide more "
 "security than scripts."
 msgstr ""
+"Wenn man ein Konzept erstellen möchte, das für sein Spiel spezifisch ist, "
+"sollte es immer eine Szene sein. Szenen sind einfacher zu verfolgen/zu "
+"bearbeiten und bieten mehr Sicherheit als Skripte."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:218
 msgid ""
@@ -316,3 +378,6 @@ msgid ""
 "this in 3.1 by declaring a script class and giving it a scene as a constant. "
 "The script becomes, in effect, a namespace:"
 msgstr ""
+"Wenn man einer Szene einen Namen geben möchte, kann man dies in 3.1 immer "
+"noch tun, indem man eine Skriptklasse deklariert und ihr eine Szene als "
+"Konstante gibt. Das Skript wird praktisch zu einem Namespace:"

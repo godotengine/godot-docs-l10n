@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:9
-#, fuzzy
 msgid ""
 "In a normal scenario, you would use a :ref:`MeshInstance "
 "<class_MeshInstance>` node to display a 3D mesh like a human model for the "
@@ -37,11 +36,11 @@ msgid ""
 "conducive to rapid iterations. :ref:`MultiMeshInstance "
 "<class_MultiMeshInstance>` is one of the possible solutions to this problem."
 msgstr ""
-"在正常情况下，您将使用 :ref:`MeshInstance <class_MeshInstance>` 节点显示类似"
-"于主角的人体模型的3D网格，但在某些情况下，您希望创建同一网格的多个实例 一个场"
-"景。 您 *可以* 多次复制同一节点并手动调整转换。 这可能是一个繁琐的过程，结果"
-"看起来很机械。 而且，该方法不利于快速迭代。 :ref:`MultiMeshInstance "
-"<class_MultiMeshInstance>` 是这个问题的可能解决方案之一。"
+"在正常情况下，使用一个 :ref:`MeshInstance <class_MeshInstance>` 节点来显示一"
+"个3D网格，比如主角的人体模型，但在某些情况下，会想在一个场景中创建同一个网格"
+"的多个实例。你 *可以* 多次复制同一个节点，并手动调整变换。这可能是一个乏味的"
+"过程，结果可能看起来很机械。 :ref:`MultiMeshInstance "
+"<class_MultiMeshInstance>` 是解决这个问题的一种可能的方法。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
@@ -70,25 +69,23 @@ msgid ""
 msgstr "一个节点用作目标，即要放置多个网格的网格。 在树的示例中，这将是景观。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
-#, fuzzy
 msgid ""
 "The other node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree itself."
-msgstr "另一个节点用作源，即要复制的网格。 在树的情况下，这将是树。"
+msgstr ""
+"另一个节点是作为源节点，也就是你想复制的网格。在树的情况下，这将是树本身。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
-#, fuzzy
 msgid ""
 "In our example, we would use a :ref:`Spatial <class_Spatial>` node as the "
 "root node of the scene. Your scene tree would look like this:"
 msgstr ""
-"在我们的示例中，我们将使用 :ref:`Node <class_Node>` 作为场景的根节点。 您的场"
-"景树看起来像这样:"
+"在我们的示例中，将使用 :ref:`Node <class_Node>` 作为场景的根节点。 场景树看起"
+"来像这样:"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
-#, fuzzy
 msgid "For simplicity's sake, this tutorial uses built-in primitives."
-msgstr "出于简化目的，本教程使用内置基元。"
+msgstr "出于简化目的，本教程使用内置基本单元。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
@@ -114,11 +111,10 @@ msgid "Target Surface"
 msgstr "目标表面"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:58
-#, fuzzy
 msgid ""
 "The mesh used as the target surface on which to place copies of your source "
 "mesh."
-msgstr "您将用作目标曲面的网格，用于放置源网格的副本。"
+msgstr "用来放置源网格副本的目标表面的网格。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "Source Mesh"
@@ -141,9 +137,8 @@ msgid "Random Rotation"
 msgstr "随机旋转"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
-#, fuzzy
 msgid "Randomizing the rotation around the up axis of the source mesh."
-msgstr "随机围绕源网格的网格向上轴旋转。"
+msgstr "随机地围绕源网格的向上轴旋转。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Tilt"
@@ -195,7 +190,6 @@ msgid "The end result should look like this:"
 msgstr "最终结果应如下所示:"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:106
-#, fuzzy
 msgid ""
 "To change the result, repeat the previous steps with different parameters."
 msgstr "要更改结果，请使用不同的参数重复相同的步骤。"

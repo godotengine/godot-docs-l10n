@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,10 @@ msgid ""
 "Particle systems are used to simulate complex physical effects, such as "
 "sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
+"Предоставляется простая (но достаточно гибкая для большинства применений) "
+"система частиц. Системы частиц используются для моделирования сложных "
+"физических эффектов, таких как искры, огонь, магические частицы, дым, туман "
+"и т.д."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -42,6 +46,12 @@ msgid ""
 "essence, creating a particle system means setting base physics parameters "
 "and then adding randomness to them."
 msgstr ""
+"Идея состоит в том, что «частица» испускается через фиксированный интервал и "
+"с фиксированным временем жизни. В течение своей жизни у каждой частицы будет "
+"одно базовое поведение. Что отличает каждую частицу от остальных и "
+"обеспечивает более натуральный вид, так это «случайность», связанная с "
+"каждым параметром. По сути, создание системы частиц означает установку "
+"основных физических параметров, а затем добавление к ним случайности."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 #, fuzzy
@@ -63,6 +73,19 @@ msgid ""
 "inspector, and selecting \"Convert to CPUParticles2D\" in the \"Particles\" "
 "menu of the toolbar."
 msgstr ""
+"Godot предоставляет два разных узла для 2D-частиц: :ref: `class_Particles2D` "
+"и :ref:` class_CPUParticles2D`. Particles2D - более продвинутый и использует "
+"графический процессор для обработки эффектов частиц, но это ограничивает его "
+"графическим API более высокого уровня и, в нашем случае, средством "
+"визуализации GLES3. Для проектов, использующих под капотом GLES2, "
+"CPUParticles2D - это вариант, управляемый процессором, с почти "
+"соответствующими функциями с Particles2D, но меньшей производительностью. "
+"Хотя Particles2D настраивается с помощью :ref: `class_ParticlesMaterial` (и, "
+"возможно, с помощью настраиваемого шейдера), параметры сопоставления "
+"предоставляются через свойства узла в CPUParticles2D (за исключением "
+"настроек следа). Вы можете преобразовать узел Particles2D в узел "
+"CPUParticles2D, щелкнув по узлу в инспекторе и выбрав «Преобразовать в "
+"CPUParticles2D» в меню «Частицы» панели инструментов."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:36
 msgid ""
@@ -72,10 +95,15 @@ msgid ""
 "your Particles2D node in the inspector. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
+"В оставшейся части этого руководства мы будем использовать узел Particles2D. "
+"Сначала добавьте в сцену узел Particles2D. После создания этого узла вы "
+"заметите, что была создана только белая точка и что рядом с вашим узлом "
+"Particles2D в инспекторе есть значок предупреждения. Это связано с тем, что "
+"для работы узла требуется ParticlesMaterial."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:42
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "Материал частиц"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid ""
@@ -83,14 +111,17 @@ msgid ""
 "in your inspector panel. Click on the box next to ``Material``, and from the "
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
+"Чтобы добавить технологический материал в узел частиц, перейдите в раздел "
+"``Process Material`` на панели инспектора. Щелкните поле рядом с "
+"``Material`` и в раскрывающемся меню выберите ``New ParticlesMaterial``."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:50
 msgid "Your Particles2D node should now be emitting white points downward."
-msgstr ""
+msgstr "Теперь ваш узел Particles2D должен излучать белые точки вниз."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Texture"
-msgstr ""
+msgstr "Текстура"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
@@ -98,42 +129,49 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
+"Система частиц использует единую текстуру (в будущем это может быть "
+"расширено до анимированных текстур через таблицу спрайтов). Текстура "
+"устанавливается через соответствующее свойство текстуры:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:65
 msgid "Time parameters"
-msgstr ""
+msgstr "Параметры времени"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
-msgstr ""
+msgstr "Продолжительность жизни"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
+"Время в секундах, в течение которого каждая частица останется в живых. Когда "
+"время жизни заканчивается, вместо нее создается новая частица."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
-msgstr ""
+msgstr "Продолжительность жизни: 0,5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
-msgstr ""
+msgstr "Продолжительность жизни: 4,0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
-msgstr ""
+msgstr "Один снимок"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
 "then never again."
 msgstr ""
+"Когда этот параметр включен, узел Particles2D будет излучать все свои "
+"частицы один раз, а затем никогда больше."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
 msgid "Preprocess"
-msgstr ""
+msgstr "Предварительная обработка"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -143,10 +181,16 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"Системы частиц начинаются с нулевого испускания частиц, а затем начинают "
+"испускаться. Это может быть неудобно при загрузке сцены и таких систем, как "
+"факел, туман и т.д., которые начинают излучаться сразу после входа. "
+"Предварительная обработка используется, чтобы позволить системе обработать "
+"заданное количество секунд до того, как она будет фактически отрисована в "
+"первый раз."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:97
 msgid "Speed Scale"
-msgstr ""
+msgstr "Шкала скорости"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid ""
@@ -154,6 +198,10 @@ msgid ""
 "of a particle system. Lowering the value will make the particles slower "
 "while increasing the value will make the particles much faster."
 msgstr ""
+"Шкала скорости имеет значение по умолчанию ``1`` и используется для "
+"регулировки скорости системы частиц. Понижение значения сделает частицы "
+"медленнее, в то время как увеличение значения сделает частицы намного "
+"быстрее."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
@@ -169,30 +217,35 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
 msgstr ""
+"0: Испускать частицы через равные промежутки времени (значение по умолчанию)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:111
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: Испускать все частицы одновременно."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
 msgstr ""
+"Допускаются также значения в середине. Эта функция полезна для создания "
+"взрывов или внезапных выбросов частиц:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr ""
+msgstr "Случайность"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
 msgstr ""
+"Все физические параметры могут быть рандомизированы. Диапазон случайных "
+"значений от ``0`` до ``1 ``. Формула рандомизации параметра:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Fixed FPS"
-msgstr ""
+msgstr "Фиксированный FPS"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
@@ -201,6 +254,10 @@ msgid ""
 "render at 2 frames per second. Note this does not slow down the particle "
 "system itself."
 msgstr ""
+"Этот параметр можно использовать для установки системы частиц для рендеринга "
+"с фиксированным FPS. Например, изменение значения на ``2`` приведет к "
+"рендерингу частиц со скоростью 2 кадра в секунду. Обратите внимание, что это "
+"не замедляет саму систему частиц."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:136
 msgid "Fract Delta"
@@ -208,15 +265,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
-msgstr ""
+msgstr "Это можно использовать для включения или выключения Fract Delta."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid "Drawing parameters"
-msgstr ""
+msgstr "Параметры отрисовки"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 msgid "Visibility Rect"
-msgstr ""
+msgstr "Прямоугольник видимости"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
@@ -224,6 +281,9 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
+"Прямоугольник видимости контролирует видимость частиц на экране. Если этот "
+"прямоугольник находится за пределами области просмотра, движок не будет "
+"отображать частицы на экране."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:149
 msgid ""
@@ -231,6 +291,9 @@ msgid ""
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
 "upper-left corner of the rectangle, relative to the particle emitter."
 msgstr ""
+"Свойства прямоугольника ``W`` и ``H`` соответственно управляют его шириной и "
+"высотой. Свойства ``X`` и ``Y`` управляют положением верхнего левого угла "
+"прямоугольника относительно излучателя частиц."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:153
 msgid ""
@@ -240,6 +303,12 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"Вы можете настроить Godot для автоматического создания прямоугольника "
+"видимости с помощью панели инструментов над 2-мерным видом. Для этого "
+"выберите узел Particles2D и нажмите ``Particles> Generate Visibility Rect``. "
+"Godot будет имитировать узел Particles2D, излучающий частицы, в течение "
+"нескольких секунд и установит прямоугольник в соответствии с поверхностью, "
+"которую принимают частицы."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:155
 msgid ""
@@ -248,6 +317,10 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
+"Вы можете контролировать длительность излучения с помощью опции ``Generation "
+"Time (sec)``. Максимальное значение - 25 секунд. Если вам нужно больше "
+"времени для перемещения частиц, вы можете временно изменить длительность "
+"``preprocess`` на узле Particles2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:158
 msgid "Local Coords"
@@ -259,16 +332,22 @@ msgid ""
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
+"По умолчанию эта опция включена, и это означает, что пространство, в которое "
+"излучаются частицы определяется относительно узла. Если узел перемещается, "
+"все частицы перемещаются вместе с ним:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:166
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
 msgstr ""
+"Если этот параметр отключен, частицы будут излучаться в глобальное "
+"пространство, что означает, что при перемещении узла уже испускаемые частицы "
+"не затрагиваются:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
-msgstr ""
+msgstr "Порядок рисования"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -276,10 +355,14 @@ msgid ""
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
+"Это контролирует порядок, в котором отрисовываются отдельные частицы. "
+"``Index`` означает, что частицы отрисовываются в соответствии с порядком их "
+"выброса (по умолчанию). ``Lifetime`` означает, что они нарисованы в порядке "
+"оставшегося времени жизни."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:179
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "Параметры материала частиц"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
 #, fuzzy
@@ -292,6 +375,9 @@ msgid ""
 "``Vector3(1, 0, 0)`` which makes particles emit to the right. However, with "
 "the default gravity settings, particles will go straight down."
 msgstr ""
+"Это основное направление, в котором испускаются частицы. По умолчанию это "
+"``Vector3 (1, 0, 0)``, что заставляет частицы излучаться вправо. Однако с "
+"настройками силы тяжести по умолчанию частицы будут идти прямо вниз."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
@@ -299,10 +385,13 @@ msgid ""
 "than 0. Here, we set the initial velocity to 40. You'll notice that "
 "particles emit toward the right, then go down because of gravity."
 msgstr ""
+"Чтобы это свойство было заметным, вам нужна *начальная скорость* больше 0. "
+"Здесь мы установили начальную скорость равной 40. Вы заметите, что частицы "
+"испускаются вправо, а затем падают вниз из-за силы тяжести."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
-msgstr ""
+msgstr "Распространение"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid ""

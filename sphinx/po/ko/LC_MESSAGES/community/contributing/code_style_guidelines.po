@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -376,4 +376,70 @@ msgid ""
 "run black automatically, for example each time you save a file. For details "
 "you can check `Black editor integration <https://github.com/psf/black#editor-"
 "integration>`__."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:306
+#, fuzzy
+msgid "Comment style guide"
+msgstr "C# 스타일 가이드"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:308
+msgid ""
+"This comment style guide applies to all programming languages used within "
+"Godot's codebase."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:311
+msgid ""
+"Begin comments with a space character to distinguish them from disabled code."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:312
+msgid ""
+"Use sentence case for comments. Begin comments with an uppercase character "
+"and always end them with a period."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:314
+msgid "Reference variable/function names and values using backticks."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:315
+msgid "Wrap comments to ~100 characters."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:316
+msgid ""
+"You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as adominitions "
+"when needed."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:319
+#: ../../docs/community/contributing/code_style_guidelines.rst:342
+msgid "**Example:**"
+msgstr "**예시:**"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:327
+msgid ""
+"Don't repeat what the code says in a comment. Explain the *why* rather than "
+"*how*."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:329
+#, fuzzy
+msgid "**Bad:**"
+msgstr "**나쁨**:"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:336
+msgid ""
+"You can use Javadoc-style comments above function or macro definitions. It's "
+"recommended to use Javadoc-style comments *only* for methods which are not "
+"exposed to scripting. This is because exposed methods should be documented "
+"in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:354
+msgid ""
+"For member variables, don't use Javadoc-style comments but use single-line "
+"comments instead:"
 msgstr ""

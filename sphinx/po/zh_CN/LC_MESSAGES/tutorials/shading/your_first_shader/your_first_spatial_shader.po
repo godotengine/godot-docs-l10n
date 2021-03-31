@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -380,7 +380,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:194
 msgid "Uniforms"
-msgstr "制服"
+msgstr "统一值"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:196
 msgid ""
@@ -390,7 +390,7 @@ msgid ""
 "your :ref:`Shader<class_Shader>` using the keyword ``uniform``."
 msgstr ""
 "统一值变量允许你把游戏的变量传递到着色器。 它们对于控制着色器效果非常有用。 "
-"统一值可以是着色器中几乎所有可用的数据类型。 要使用统一值，请在 :ref:"
+"几乎所有在着色器中使用的数据类型都可以作为统一值。 要使用统一值，请在 :ref:"
 "`Shader<class_Shader>` 中使用关键字 ``uniform`` 声明它。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:201
@@ -512,9 +512,10 @@ msgstr ""
 "相反，我们将再次依靠噪声来计算法线。我们通过传入第二个噪声纹理来做到这一点。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_spatial_shader.rst:273
+#, fuzzy
 msgid ""
 "Set this second uniform texture to another NoiseTexture with another "
-"OpenSimplexNoise. But this time, check off \"As Normalmap\"."
+"OpenSimplexNoise. But this time, check **As Normalmap**."
 msgstr ""
 "使用另一个开放式简单噪声将第二个均匀纹理设置为另一个噪声纹理。但这一次，勾"
 "选“作为法线贴图”。"

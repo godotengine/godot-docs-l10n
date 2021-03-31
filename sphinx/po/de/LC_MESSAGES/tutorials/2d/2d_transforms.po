@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -109,6 +109,12 @@ msgid ""
 "<class_CanvasItem_method_make_input_local>` function was added for "
 "convenience."
 msgstr ""
+"Eingabeereignisse, die im :ref:`MainLoop._input_event() "
+"<class_MainLoop_method__input_event>`-Callback empfangen qurden, werden mit "
+"dieser Transformation multipliziert, aber es fehlen die oben genannten. Um "
+"InputEvent-Koordinaten in lokale CanvasItem-Koordinaten zu konvertieren, "
+"wurde der Einfachheit halber die Funktion :ref:`CanvasItem."
+"make_input_local() <class_CanvasItem_method_make_input_local>` hinzugefügt."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"

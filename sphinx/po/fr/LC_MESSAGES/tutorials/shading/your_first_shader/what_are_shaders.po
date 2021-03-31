@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,8 +59,8 @@ msgstr ""
 "plus facile en proposant de nombreuses fonctionnalités intégrées et en "
 "s'occupant d'une partie du travail d'initialisation de bas niveau pour vous. "
 "Cependant, le GLSL (le langage de shader OpenGL, que Godot utilise) reste "
-"peu intuitif et restrictif, en particulier pour les utilisateur·ices "
-"habitué·e·s au GDScript."
+"peu intuitif et restrictif, en particulier pour les utilisateurs habitués au "
+"GDScript."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:22
 msgid "But what are they?"
@@ -135,13 +135,13 @@ msgid ""
 "parallel, as they do not depend on each other. This lack of flexibility is "
 "designed to work with the GPU which allows shaders to be incredibly fast."
 msgstr ""
-"Une conséquence du pipeline des shader et que vous ne pouvez pas accéder au "
+"Une conséquence du pipeline des shader est que vous ne pouvez pas accéder au "
 "résultats des exécutions précédentes du shader, vous ne pouvez pas accéder à "
-"d'autres pixels que celui qui est en train d'être dessiné, et vous ne pouvez "
+"d'autres pixels que celui qui est en train d'être dessiné et vous ne pouvez "
 "pas écrire en dehors de ce pixel. Cela permet au GPU d’exécuter le shader "
-"pour différents pixels en parallèle, comme ils ne dépendent pas les uns des "
-"autres. Ce manque de flexibilité est conçu pour fonctionner avec le GPU qui "
-"permet aux shaders d'être incroyablement rapide."
+"pour différents pixels en parallèle, étant donné qu'ils ne dépendent pas les "
+"uns des autres. Ce manque de flexibilité est conçu pour fonctionner avec le "
+"GPU qui permet aux shaders d'être incroyablement rapide."
 
 #: ../../docs/tutorials/shading/your_first_shader/what_are_shaders.rst:62
 msgid "What can they do"

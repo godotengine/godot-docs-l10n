@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -397,20 +397,19 @@ msgstr ""
 "니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+#, fuzzy
 msgid ""
-"You have many container nodes at your disposal that scale and place UI "
-"elements for you. They take control over their children."
-msgstr ""
-"원하는 만큼의 UI 요소들을 확장하고 배치할 수 있는 많은 컨테이너 노드들이 있습"
-"니다. 컨테이너는 그들의 자식인 UI 요소들을 제어합니다."
-
-#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
-msgid ""
-"On the other side, you have the layout menu. It helps you to anchor, place "
-"and resize a UI element within its parent."
+"**Place UI elements precisely with anchors:** Use the **Layout** menu to "
+"place and resize a UI element relative to its parent."
 msgstr ""
 "반대로, 당신은 레이아웃 메뉴가 있습니다. 이것은 UI 요소들을 부모 내에서 부모"
 "위치를 기준로 위치를 고정하거나 배치하고 크기 조절하도록 돕습니다."
+
+#: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
+msgid ""
+"**Arrange control nodes automatically with containers:** Use container nodes "
+"to automatically scale and place UI elements."
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -642,7 +641,8 @@ msgstr ""
 "의 게임들은, 이정도만 있어도 충분합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-msgid "MarginContainer, to add margins around part of the UI"
+#, fuzzy
+msgid "MarginContainer, to add margins around parts of the UI"
 msgstr "MarginContainer, UI의 가장자리에 여백을 추가함"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295

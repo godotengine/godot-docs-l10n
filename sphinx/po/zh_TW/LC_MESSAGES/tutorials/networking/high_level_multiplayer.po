@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High-level multiplayer"
-msgstr ""
+msgstr "高階多玩家"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High-level vs low-level API"
-msgstr ""
+msgstr "高階 API v.s. 低階 API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -32,6 +32,8 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"以下為 Godot 中高階與低階網路的區別，以及一些基礎說明。若想直接將網路加到第一"
+"個節點上，請跳至下方的 `初始化網路`_ 。但請記得等一下再回來讀剩下的部分！"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44,12 +46,18 @@ msgid ""
 "consider Godot's high-level networking API, which sacrifices some of the "
 "fine-grained control of low-level networking for greater ease of use."
 msgstr ""
+"Godot 使用 UDP、TCP、與其他如 SSL 與 HTTP 等的高級通訊協定來支援標準低階網"
+"路。這些通訊協定非常彈性，且幾乎可以用在任何地方。但是，要手動通過這些方法來"
+"同步遊戲狀態可能會需要大量的工作。有時候，這種工作是無法避免的，例如要處理後"
+"端的自定伺服器實作時。但大多數情況下，都建議考慮一下 Godot 的高階網路 API，使"
+"用高階網路 API 只需要犧牲小部分的細節控制，就可以換來更好的易用性。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "由於繼承了低階通訊協定的一些特性，因此："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
+#, fuzzy
 msgid ""
 "TCP ensures packets will always arrive reliably and in order, but latency is "
 "generally higher due to error correction. It's also quite a complex protocol "
@@ -60,8 +68,14 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP確保封包始終可靠且按順序到達，但是由於錯誤校正，延遲通常更高。這也是一個非"
+"常複雜的協定，因為它了解什麼是“連接”，並最佳化了通常不適合用於多人遊戲的應用"
+"程序。封包被緩衝成更大的批次發送，從而減少了每份封包的開銷，提高了延遲。這對"
+"HTTP之類的東西可能很有用，但對遊戲通常不是。其中一些可以配置和禁用（例如禁用"
+"TCP連接的Nagle演算法）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
+#, fuzzy
 msgid ""
 "UDP is a simpler protocol, which only sends packets (and has no concept of a "
 "\"connection\"). No error correction makes it pretty quick (low latency), "
@@ -70,8 +84,13 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP是一種更簡單的協定，它僅發送封包（並且沒有“連接”的概念）。沒有錯誤糾正可以"
+"使其快速（低延遲），但是可能會丟失封包或以錯誤的順序接收封包。除此之外，UDP的"
+"MTU（最大封包大小）通常很低（只有幾百個位元組），因此傳輸較大的封包意味著得將"
+"其拆分、重組並在出現故障時重試。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
+#, fuzzy
 msgid ""
 "In general, TCP can be thought of as reliable, ordered, and slow; UDP as "
 "unreliable, unordered and fast. Because of the large difference in "
@@ -81,6 +100,10 @@ msgid ""
 "this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"普遍來說，TCP可以被認為是可靠，有序且緩慢；UDP不可靠，無序且快速。由於性能上"
+"的巨大差異，重新構建遊戲所需的TCP部分（可選的可靠性和封包順序），同時免去不必"
+"要的部分（擁塞/流量控制功能，Nagle演算法等）是合理的。因此，大多數遊戲引擎都"
+"提供了這樣的實現方式，Godot也不例外。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""

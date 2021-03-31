@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,6 @@ msgid "Add a script to the kinematic body and add the following code:"
 msgstr "将脚本添加到场景中的KinematicBody2D上，并添加以下代码:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:103
-#, fuzzy
 msgid ""
 "In the ``get_input()`` function, we check for the four key events and sum "
 "them up to get the velocity vector. This has the benefit of making two "
@@ -94,16 +93,16 @@ msgid ""
 "movement being faster due to the two directions being added together."
 msgstr ""
 "在 ``get_input()`` 函数中，我们检查四个键盘事件并将它们相加以获得速度向量。 "
-"这么做的优点是两个相对的键会彼此抵消，但是由于两个方向被加在一起，还将导致斜"
-"向移动得更快。"
+"这么做的优点是两个相对的键会彼此抵消，但是由于两个非相对方向被加在一起，导致"
+"对角线方向移动速度更快。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:108
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
-"如果我们让速度 *归一化* , 我们可以防止这种情况 ，这意味着我们将其 *长度* 设置"
-"为 ``1`` ，并乘以所期望速度。"
+"如果我们对速度 进行 *归一化（normalize）* 处理, 就可以防止这种情况 ，这意味着"
+"我们将速度向量的 *长度* 设置为 ``1`` ，并乘以所期望的速度。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:111
 msgid ""
@@ -119,6 +118,8 @@ msgid ""
 "you've set up input actions correctly as described in the :ref:"
 "`doc_2d_movement_setup` part of this tutorial."
 msgstr ""
+"如果在你按下键时上面的代码不起任何作用，请仔细检查你是否按照本教程的 :ref: "
+"`doc_2d_movement_setup` 部分所描述的正确设置了输入操作。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:121
 msgid "Rotation + movement"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,12 +58,17 @@ msgid ""
 "cursor. Therefore, it's recommended to use the approach described here "
 "whenever possible."
 msgstr ""
+"您可以通过隐藏鼠标光标并将Sprite移动到``_process``方法中的光标位置来显示“软"
+"件”鼠标光标，但与“硬件”鼠标光标相比，这至少会增加一帧延迟。因此，建议尽可能使"
+"用此处描述的方法。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
 msgid ""
 "If you have to use the \"software\" approach, consider adding an "
 "extrapolation step to better display the actual mouse input."
 msgstr ""
+"如果您必须使用“软件”方法，可以考虑添加一个外推步骤，以便更好地显示实际的鼠标"
+"输入。"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""

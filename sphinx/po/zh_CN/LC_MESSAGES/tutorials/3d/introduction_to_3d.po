@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,6 @@ msgstr ""
 "<class_Spatial>` 节点。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
-#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
 "(as long as the parent node is also of **or inherits from** the type "
@@ -71,10 +70,10 @@ msgid ""
 "<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
 "representing location, Euler rotation (X, Y and Z angles) and scale."
 msgstr ""
-"空间节点有一个局部变换，是相对于父节点的(只要父节点也是 **或者继承自** "
-"Spatial类型)。 这个变换可以作为4x3的 :ref:`Transform <class_Transform>` 或3个"
-"成员: 表示位置的 :ref:`Vector3 <class_Vector3>` ，欧拉旋转(x，y和z角度)和缩"
-"放。"
+"Spatial空间节点有一个局部变换，它是相对于父节点而言的（只要父节点也是 **或继"
+"承自** 的Spatial空间类型）。这个变换可以以4×3 :ref:`Transform "
+"<class_Transform>`的形式访问，也可以以3个 :ref:`Vector3 <class_Vector3>` 成员"
+"的形式访问，分别代表位置、欧拉旋转（X、Y和Z角）和缩放。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -241,7 +240,6 @@ msgstr ""
 "主意(除非你知道你在做什么)。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:133
-#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -250,10 +248,9 @@ msgid ""
 "as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
-"在使用3D资源时，最好以正确的缩放比例工作(将您的DCC设置为公制)。 Godot允许缩放"
-"后导入，尽管这在大多数情况下都适用，但在极少数情况下，它可能会在诸如渲染或物"
-"理等敏感区域引入浮点精度问题(并因此引入毛刺或失真)。 所以，确保你的艺术家总是"
-"在正确的缩放比例下工作！"
+"在使用3D资源时，最好使用正确的缩放比例(将DCC设置为公制)。 Godot允许缩放后导"
+"入，尽管这在大多数时都适用，但在极少数情况下，诸如渲染或物理等敏感区域带来浮"
+"点精度问题(带来毛刺或失真)。 所以，确保你的渲染总是在正确的缩放比例下工作！"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:140
 msgid ""
@@ -279,10 +276,9 @@ msgstr "**Z** 是前/后"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid "Space and manipulation gizmos"
-msgstr "空间和操纵控件"
+msgstr "空间和操纵辅助线框"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:152
-#, fuzzy
 msgid ""
 "Moving objects in the 3D view is done through the manipulator gizmos. Each "
 "axis is represented by a color: Red, Green, Blue represent X, Y, Z "
@@ -290,25 +286,23 @@ msgid ""
 "also to the shader language, ordering of components for Vector3, Color, "
 "etc.)."
 msgstr ""
-"在3D视图中移动对象是通过操纵控件完成的。 每个轴用颜色表示:红色，绿色，蓝色分"
-"别代表X，Y，Z。 这个约定也适用于格子和其他小控件(也涉及着色器语言，Vector3，"
-"Color等组件的排序)。"
+"在3D视图中移动物体是通过操纵器辅助线框完成的。每个轴用一种颜色表示：红、绿、"
+"蓝分别代表X、Y、Z。这种惯例也适用于网格和其他辅助线框（也适用于着色器语言，"
+"Vector3、Color等组件的排序）。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid "Some useful keybindings:"
 msgstr "一些有用的键盘绑定:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
-#, fuzzy
 msgid ""
 "To snap placement or rotation, press :kbd:`Ctrl` while moving, scaling or "
 "rotating."
-msgstr "要吸附移动或旋转，请在移动，缩放或旋转时按下“Ctrl”键。"
+msgstr "在移动、缩放或旋转时，按 :kbd:`Ctrl` 键，可进行吸附放置或旋转。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:164
-#, fuzzy
 msgid "To center the view on the selected object, press :kbd:`F`."
-msgstr "要将视图居中在所选对象上，请按\"f\"键。"
+msgstr "要将视图集中在所选对象上，按 :kbd:`F`。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid "View menu"
@@ -322,13 +316,13 @@ msgstr "视图选项由视口工具栏中的“视图”菜单控制。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
-msgstr "你可以通过这个菜单在编辑器的3D视图中隐藏控件:"
+msgstr "你可以通过这个菜单在编辑器的3D视图中隐藏辅助线框:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:177
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
-msgstr "要隐藏特定类型的控件，你可以在“视图”菜单中将其关闭。"
+msgstr "要隐藏特定类型的辅助线框，你可以在 \"视图\"菜单中把它们切换掉。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid "Default environment"
@@ -408,10 +402,12 @@ msgid "Lights"
 msgstr "灯光"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:225
-#, fuzzy
 msgid ""
 "Godot has a limit of up to 8 lights per mesh. Aside from that, there is no "
 "limitation on the number of lights, nor of types of lights, in Godot. As "
 "many as desired can be added, as long as performance allows, and no more "
 "than 8 lights shine on a single mesh."
-msgstr "Godot的灯光数量和灯光类型没有限制。 想加多少都可以(只要性能允许)。"
+msgstr ""
+"Godot的每个网格最多限制8个灯。除此之外，在Godot中，对灯的数量和灯的类型都没有"
+"限制。在性能允许的情况下，可以根据需要，添加任意数量的灯，而单个网格上照射的"
+"灯不超过8盏。"

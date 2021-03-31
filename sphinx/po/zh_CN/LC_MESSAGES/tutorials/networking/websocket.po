@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,8 @@ msgid ""
 "server. Before that, browsers used to only support HTTPRequests, which is "
 "not well-suited for bidirectional communication."
 msgstr ""
+"WebSocket协议在2011年被标准化，最初的目标是让浏览器与服务器建立稳定的双向连"
+"接。在此之前，浏览器曾只支持HTTPRequests，并不适合双向通信。"
 
 #: ../../docs/tutorials/networking/websocket.rst:12
 msgid ""
@@ -42,6 +44,10 @@ msgid ""
 "VoIP and fast-paced games (see :ref:`WebRTC <doc_webrtc>` for those use "
 "cases)."
 msgstr ""
+"这个协议相当简单，基于消息，是一个非常强大的向浏览器推送通知的工具，已经被用"
+"来实现聊天、回合制游戏等。它仍使用TCP连接，这对可靠性有好处，但对延迟没有好"
+"处，所以不适合实时的应用，比如VoIP和快节奏的游戏（这些用例见:ref:`WebRTC "
+"<doc_webrtc>`）。"
 
 #: ../../docs/tutorials/networking/websocket.rst:14
 msgid ""
@@ -49,10 +55,12 @@ msgid ""
 "a raw TCP connection, WebSocket soon started to spread outside the browsers, "
 "in native applications as a mean to communicate with network servers."
 msgstr ""
+"由于它的简单性、广泛的兼容性以及比原始TCP连接更容易使用，WebSocket很快就开始"
+"在浏览器以外的地方应用，在本地应用程序中作为与网络服务器通信的一种手段。"
 
 #: ../../docs/tutorials/networking/websocket.rst:16
 msgid "Godot supports WebSocket in both native and HTML5 exports."
-msgstr ""
+msgstr "Godot在本机和HTML5导出中都支持WebSocket。"
 
 #: ../../docs/tutorials/networking/websocket.rst:19
 #, fuzzy
@@ -68,6 +76,11 @@ msgid ""
 "See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` "
 "for more details."
 msgstr ""
+"在Godot中，WebSocket通过三个主要类来实现：ref:`WebSocketClient "
+"<class_WebSocketClient>`, :ref:`WebSocketServer <class_WebSocketServer>`, "
+"和 :ref:`WebSocketPeer <class_WebSocketPeer>`。WebSocket的实现与高级多人游戏"
+"兼容。更多细节请参见 :ref:`high-level multiplayer "
+"<doc_high_level_multiplayer>` 一节。"
 
 #: ../../docs/tutorials/networking/websocket.rst:24
 #, fuzzy
@@ -79,6 +92,8 @@ msgid ""
 "This example will show you how to create a WebSocket connection to a remote "
 "server, and how to send and receive data."
 msgstr ""
+"本示例将向您展示如何创建与远程服务器的 WebSocket 连接，以及如何发送和接收数"
+"据。"
 
 #: ../../docs/tutorials/networking/websocket.rst:79
 #, fuzzy
@@ -95,6 +110,8 @@ msgid ""
 "This example will show you how to create a WebSocket server that listen for "
 "remote connections, and how to send and receive data."
 msgstr ""
+"本示例将向您展示如何创建一个监听远程连接的 WebSocket 服务器，以及如何发送和接"
+"收数据。"
 
 #: ../../docs/tutorials/networking/websocket.rst:145
 #, fuzzy
@@ -113,3 +130,7 @@ msgid ""
 "demo projects <https://github.com/godotengine/godot-demo-projects>`_ under "
 "`networking/websocket_chat` and `networking/websocket_multiplayer`."
 msgstr ""
+"在 `godot demo projects <https://github.com/godotengine/godot-demo-"
+"projects>`_ 下 `networking/websocket_chat` 和 `networking/"
+"websocket_multiplayer` 有一个更高级的聊天演示demo，可以选择使用多人中级抽象和"
+"高级多人演示demo。"

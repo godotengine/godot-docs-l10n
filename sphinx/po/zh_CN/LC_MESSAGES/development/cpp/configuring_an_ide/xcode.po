@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
 "can download it from the Mac App Store."
 msgstr ""
+"`Xcode <https://developer.apple.com/xcode>`_ 是一个免费的macOS专用IDE，你可以"
+"从Mac App Store下载它。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:10
 msgid "Importing the project"
@@ -36,12 +38,14 @@ msgid ""
 "From Xcode's main screen create a new project using the **Other > External "
 "Build System** template."
 msgstr ""
+"在Xcode的主屏幕上，使用 **Other > External Build System** [其他>外部构建系统]"
+"模板创建一个新项目。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:18
 msgid ""
 "Open your build targets from the **Targets** section and select the **Info** "
 "tab."
-msgstr ""
+msgstr "从 **Targets** 部分打开您的构建目标，并选择 **Info** 标签。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
 #, fuzzy
@@ -51,11 +55,11 @@ msgstr "这样做会产生以下行为:"
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 #, fuzzy
 msgid "Build Tool"
-msgstr "构建cctools："
+msgstr "构建工具"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "A full path to the **scons** executable, e.g. **/usr/local/bin/scons**"
-msgstr ""
+msgstr "**scons**可执行程序一个完整路径，例如**/usr/local/bin/scons**"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:24
 msgid "Arguments"
@@ -84,10 +88,12 @@ msgid ""
 "Add a Command Line Tool target which will be used for indexing the project "
 "by choosing **File > New > Target...**."
 msgstr ""
+"通过选择 **File > New > Target...** [文件 > 新建 > 目标...]，添加一个命令行工"
+"具目标，它将用于为项目建立索引。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:40
 msgid "Select **OS X > Application > Command Line Tool**."
-msgstr ""
+msgstr "选择**OS X > Application > Command Line Tool**."
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:46
 msgid ""
@@ -154,7 +160,7 @@ msgstr "准备项目"
 msgid ""
 "To enable debugging support you need to edit the external build target's "
 "build and run schemes."
-msgstr ""
+msgstr "要启用调试支持，需要编辑外部构建目标的构建和运行方案。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:76
 msgid "Open the scheme editor of the external build target."
@@ -174,13 +180,15 @@ msgid ""
 "Under **Provide build settings from** select your project. This allows to "
 "reference the project directory within the script."
 msgstr ""
+"在 **Provide build settings from** [提供构建设置]下选择你的项目。这允许在脚本"
+"中引用项目目录。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:81
 #, fuzzy
 msgid ""
 "Create a script that will give the binary a name that Xcode can recognize, e."
 "g.:"
-msgstr "编写脚本，为二进制文件提供Xcode可以识别的名称"
+msgstr "创建一个脚本，给二进制文件一个 Xcode 可以识别的名字，例如："
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:91
 msgid "Build the external build target."
@@ -208,6 +216,9 @@ msgid ""
 "the executable to open the specified project (must be provided as an "
 "*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
+"你可以在 **Arguments** 选项卡上添加两个参数： ``-e`` 标志打开编辑器而不是项目"
+"管理器， ``--path`` 参数告诉可执行文件打开指定的项目（必须提供项目根目录 *绝"
+"对* 路径，而不是 ``project.godot`` 文件）。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:106
 msgid ""
@@ -218,10 +229,9 @@ msgstr ""
 "行项目。"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"有关这些渠道的简要概述也可在 `Godot网站 <https://godotengine.org/"
-"community>`_ 上找到。"
+"如果遇到问题，也可在 `Godot社区论坛 <https://godotengine.org/community>`__ 中"
+"寻求帮助。"

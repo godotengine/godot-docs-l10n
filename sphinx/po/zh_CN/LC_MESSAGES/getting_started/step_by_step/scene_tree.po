@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -147,9 +147,9 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
-"此节点包含主视图。默认情况下，将在其内部绘制 :ref:`Viewport "
-"<class_Viewport>` 的子项，因此有意义的是所有节点的顶部始终是这种类型的节点，"
-"否则将看不到任何东西。"
+"此节点包含主视口，默认情况下， :ref:`Viewport <class_Viewport>` 的任何子节点"
+"都将绘制在其中，因此以 :ref:`Viewport <class_Viewport>` 作为根节点是有意义"
+"的，否则将看不到任何内容。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""

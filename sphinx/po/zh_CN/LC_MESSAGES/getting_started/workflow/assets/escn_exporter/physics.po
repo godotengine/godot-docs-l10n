@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,16 +101,14 @@ msgid "Collision geometry only"
 msgstr "仅碰撞几何"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:49
-#, fuzzy
 msgid ""
 "Frequently you want different geometry for your collision meshes and your "
 "graphical meshes, but by default, the exporter will export a mesh along with "
 "the collision shape. To only export the collision shape, set the object's "
 "maximum draw type to Wire:"
 msgstr ""
-"通常，您需要不同的几何体用于碰撞网格和图形网格，但默认情况下，导出器将导出网"
-"格以及碰撞形状。要仅导出碰撞形状，请将对象的最大绘制类型设置为 ``线框（Wire）"
-"``："
+"通常，你希望碰撞网格和图形网格有不同的几何形状，但默认情况下，导出器会将网格"
+"和碰撞形状一起导出，要只导出碰撞形状，请将对象的最大绘制类型设置为Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:56
 msgid ""

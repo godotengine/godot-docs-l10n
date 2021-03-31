@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
-#, fuzzy
 msgid "Installing plugins"
-msgstr "制作插件"
+msgstr "安装插件"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
@@ -28,11 +27,12 @@ msgid ""
 "the community. Plugins can extend the editor's functionality with new nodes, "
 "additional docks, convenience features, and more."
 msgstr ""
+"Godot提供了一个编辑器插件系统,其中包含了社区开发的众多插件。插件可以插件可以"
+"通过新的节点、额外附加脚本、更多便捷的特性等来扩展编辑器的功能。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
-#, fuzzy
 msgid "Finding plugins"
-msgstr "制作插件"
+msgstr "查找插件"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
@@ -41,10 +41,13 @@ msgid ""
 "it's more convenient to use it directly from the editor. To do so, click the "
 "**AssetLib** tab at the top of the editor:"
 msgstr ""
+"寻找Godot插件的首选方法是使用 `Asset Library <https://godotengine.org/asset-"
+"library/>`[素材库]。虽然它可以在线浏览，但直接在编辑器中使用它更方便,点击编辑"
+"器顶部的**AssetLib** 选项卡:"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:20
 msgid "You can also find assets on code hosting websites such as GitHub."
-msgstr ""
+msgstr "您还可以在代码托管网站(如GitHub)上找到素材。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:24
 msgid ""
@@ -53,6 +56,9 @@ msgid ""
 "to be used in a running project. You don't need to enable such plugins to "
 "use them. Download them and extract the files in your project folder."
 msgstr ""
+"有些资源库将自己描述为 \"插件\"，但实际上可能不是*编辑器*插件。这对于那些打算"
+"在运行中的项目中使用的脚本来说。你不需要启用这些插件来使用它们。下载它们并将"
+"文件解压到你的项目文件夹中。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:29
 msgid ""
@@ -61,11 +67,13 @@ msgid ""
 "repository contains a ``plugin.cfg`` file in a folder placed in the ``addons/"
 "`` folder, then it is an editor plugin."
 msgstr ""
+"区分编辑器插件和非编辑器插件的一种方法是查找``plugin.cfg``存放插件的存储库中"
+"的文件。如果存储库包含``plugin.cfg``文件放在放置在``addons/``文件夹，那么它就"
+"是一个编辑器插件。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
-#, fuzzy
 msgid "Installing a plugin"
-msgstr "初始化网络"
+msgstr "安装一个插件"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
@@ -73,6 +81,8 @@ msgid ""
 "this can be done using the **Download** button, either from the editor or "
 "using the Web interface."
 msgstr ""
+"要安装插件,请将其下载为ZIP存档。在素材资源库中,可以使用 **Download** 下载按钮"
+"（通过编辑器或使用Web界面）来完成此操作。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:41
 msgid ""
@@ -80,12 +90,16 @@ msgid ""
 "**Releases** tab to download a stable release. This ensures you download a "
 "version that was declared to be stable by its author."
 msgstr ""
+"在 GitHub 上，如果插件已打 *tags* （或版本），请转到 **Releases** 选项卡下载"
+"稳定的版本。确保你下载的是作者宣布的稳定版本。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:45
 msgid ""
 "On GitHub, if the plugin doesn't have any *tags* declared, use the "
 "**Download ZIP** button to download a ZIP of the latest revision:"
 msgstr ""
+"在GitHub上,如果插件没有声明任何*tags*,请使用**Download ZIP**按钮下载最新版本"
+"的ZIP:"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:50
 msgid ""
@@ -96,11 +110,14 @@ msgid ""
 "whether to write into the folder; answer **Yes**. No files will be "
 "overwritten in the process."
 msgstr ""
+"解压ZIP压缩包，并将其包含的``addons/``文件夹移动到你的项目文件夹中。如果您的"
+"项目已经包含了一个``addons/``文件夹，请将插件的``addons/``文件夹移到您的项目"
+"文件夹中，将新的文件夹内容与现有的文件夹合并。你的文件管理器可能会问你是否要"
+"写入该文件夹，回答**yes[是]**。在这个过程中，不会有任何文件被覆盖。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:57
-#, fuzzy
 msgid "Enabling a plugin"
-msgstr "创建一个插件"
+msgstr "启用一个插件"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:59
 msgid ""
@@ -110,6 +127,10 @@ msgid ""
 "gray **Inactive** text and choose **Active** to enable the plugin. The word "
 "**Active** will display in green to confirm the plugin was enabled."
 msgstr ""
+"要启用新安装的插件，请打开编辑器顶部的**Project > Project Settings**[项目>项"
+"目设置]，然后进入**Plugins**[插件]标签。如果插件被正确安装，你应该在插件列表"
+"中看到它。点击灰色的**Inactive**文字，选择**Active**来启用该插件。**Active**"
+"字样将显示为绿色，以确认该插件已启用。注:按现在应该是点击enable打勾启用插件。"
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:68
 msgid ""
@@ -117,3 +138,5 @@ msgid ""
 "restart the editor. Likewise, disabling a plugin can be done without having "
 "to restart the editor."
 msgstr ""
+"启用插件后,你可以立即使用它,不需要重新启动编辑器。同样,禁用一个插件也可以不用"
+"重新启动编辑器。"

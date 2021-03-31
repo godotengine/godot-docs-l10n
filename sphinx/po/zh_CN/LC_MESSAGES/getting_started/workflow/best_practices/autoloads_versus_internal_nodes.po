@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:4
-#, fuzzy
 msgid "Autoloads versus regular nodes"
-msgstr "自动加载VS内部节点"
+msgstr "自动加载与常规节点"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:6
 msgid ""
@@ -30,32 +29,32 @@ msgid ""
 "freed when you change the scene from code with :ref:`SceneTree.change_scene "
 "<class_SceneTree_method_change_scene>`."
 msgstr ""
+"Godot提供了一个在项目根节点自动加载节点的功能，允许你在全局范围内访问它们，从"
+"而完成单例作用 :ref:`doc_singletons_autoload`。当您使用 :ref:`SceneTree."
+"change_scene <class_SceneTree_method_change_scene>`从代码中更改场景时，这些自"
+"动加载的节点不会被释放。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:11
 msgid ""
 "In this guide, you will learn when to use the Autoload feature, and "
 "techniques you can use to avoid it."
-msgstr ""
+msgstr "在本指南中，您将学习到何时使用自动加载功能，以及避免使用该功能的方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:15
-#, fuzzy
 msgid "The cutting audio issue"
-msgstr "起始值"
+msgstr "切割音频问题"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:17
-#, fuzzy
 msgid ""
 "Other engines can encourage the use of creating manager classes, singletons "
 "that organize a lot of functionality into a globally accessible object. "
 "Godot offers many ways to avoid global state thanks to the node tree and "
 "signals."
 msgstr ""
-"其他引擎可能鼓励创建“管理”类，这些类将许多功能组织成一个全局可访问的实体。"
-"Godot通过支持减少此类对象大小的方法而蓬勃发展。相反，它尽可能地将内容转移到各"
-"个节点。"
+"其他引擎可能鼓励使用创建管理类，单例将很多功能组织到一个全局可访问的对象中。"
+"由于节点树和信号，Godot提供了许多避免全局状态的方法。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:21
-#, fuzzy
 msgid ""
 "For example, let's say we are building a platformer and want to collect "
 "coins that play a sound effect. There's a node for that: the :ref:"
@@ -63,11 +62,9 @@ msgid ""
 "``AudioStreamPlayer`` while it is already playing a sound, the new sound "
 "interrupts the first."
 msgstr ""
-"例如，如果开发人员正在创建一个平台游戏，而他们想要在收集金币时，能播放音效，"
-"那该怎么办？好吧，为此有一个节点 :ref:`AudioStreamPlayer "
-"<class_AudioStreamPlayer>`。但是他们在测试中注意到，如果他们 ``播放`` 一个已"
-"经在播放声音的 ``AudioStreamPlayer``，则新声音会中断第一个声音，在可以播放前"
-"终止它。"
+"例如，假设我们正在构建一个平台游戏，并希望收集能够播放声音效果的硬币，那么就"
+"有一个节点 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>`。如果在 "
+"``AudioStreamPlayer`` 已经在播放声音时调用它，新的声音就会打断第一个声音。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:26
 msgid ""
@@ -85,23 +82,21 @@ msgstr ""
 "烦："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:32
-#, fuzzy
 msgid ""
 "**Global state**: one object is now responsible for all objects' data. If "
 "the ``Sound`` class has errors or doesn't have an AudioStreamPlayer "
 "available, all the nodes calling it can break."
 msgstr ""
-"**全局状态**：一个对象现在负责所有对象的数据。如果音效有错误，或没有一个可用"
-"的 ``AudioStreamPlayer``，一切都会崩溃。"
+"**全局状态**: 一个对象现在负责所有对象的数据。如果音效有错误，或没有一个可用"
+"的 ``AudioStreamPlayer`` ，一切都会崩溃。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:36
-#, fuzzy
 msgid ""
 "**Global access**: now that any object can call ``Sound.play(sound_path)`` "
 "from anywhere, there's no longer an easy way to find the source of a bug."
 msgstr ""
-"**全局访问**：现在，任何对象都可以从任何地方调用 `SFX.play(sound_path)`，因此"
-"不再存在一种简单的方法，来跟踪音效bug的开始位置。"
+"**全局访问**: 意味着任何对象都可以从任何地方调用 ``Sound."
+"play(sound_path)`` ，便不容易找到错误的来源了。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:39
 msgid ""
@@ -109,6 +104,8 @@ msgid ""
 "stored from the start, you can either have too few and face bugs, or too "
 "many and use more memory than you need."
 msgstr ""
+"**全局资源分配**: 由于从一开始就存储了一个 ``AudioStreamPlayer`` 节点池，如果"
+"数量太少会遇到bug，而数量太多则会占用更多的内存。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:45
 msgid ""
@@ -116,12 +113,14 @@ msgid ""
 "data to the ``Sound`` autoload in our example. As a result, the domain to "
 "explore to fix the bug spans the entire project."
 msgstr ""
+"关于全局访问，问题是任何地方的代码都可能将错误的数据传递给我们例子中的 "
+"``Sound`` 自动加载。因此，为了修复这个bug，需要检索的区域跨越整个项目。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:49
 msgid ""
 "When you keep code inside a scene, only one or two scripts may be involved "
 "in audio."
-msgstr ""
+msgstr "当您将代码保存在场景中时，音频可能仅涉及一个或两个脚本。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:52
 msgid ""
@@ -142,20 +141,22 @@ msgid ""
 "Each scene accesses only its own nodes. Now, if there is a bug, it's easy to "
 "find which node is at fault."
 msgstr ""
+"每个场景只访问自己的节点。那么如果有一个bug，很容易找到哪个节点有问题。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:61
 msgid "Each scene allocates exactly the amount of resources it needs."
-msgstr ""
+msgstr "每个场景只分配所需数量的资源。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:64
 msgid "Managing shared functionality or data"
-msgstr ""
+msgstr "管理共享功能或数据"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:66
 msgid ""
 "Another reason to use an Autoload can be that you want to reuse the same "
 "method or data across many scenes."
 msgstr ""
+"使用自动加载的另一个原因可能是您希望在许多场景中重复使用相同的方法或数据。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:69
 msgid ""
@@ -163,21 +164,26 @@ msgid ""
 "provides that feature for an individual scene using the :ref:`class_name "
 "<doc_scripting_continued_class_name>` keyword in GDScript."
 msgstr ""
+"对于函数，可以使用GDScript中的class_name :ref:`class_name "
+"<doc_scripting_continued_class_name>` 关键字创建一种新的``Node``类型，为单个"
+"场景提供该功能。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:73
 msgid "When it comes to data, you can either:"
-msgstr ""
+msgstr "当涉及到数据时，您可以："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:75
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
-msgstr ""
+msgstr "创建一个新类型的:ref:`Resource <class_Resource>`来共享数据。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:77
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
+"将数据存储在每个节点可以访问的对象中，例如使用``owner``属性来访问场景的根节"
+"点。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:81
 msgid "When you should use an Autoload"
@@ -185,7 +191,7 @@ msgstr "何时应使用自动加载"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:83
 msgid "Auto-loaded nodes can simplify your code in some cases:"
-msgstr ""
+msgstr "在某些情况下，自动加载节点可以简化您的代码："
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:85
 msgid ""
@@ -193,24 +199,24 @@ msgid ""
 "database, then an autoload can be a good tool. There is no scripting API in "
 "Godot to create and manage static data otherwise."
 msgstr ""
+"**静态数据**：如果你需要某个类专属的数据，比如数据库，那么自动加载将是一个很"
+"好的工具。Godot中并没有脚本API来创建和管理静态数据。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:89
 msgid ""
 "**Static functions**: creating a library of functions that only return "
 "values."
-msgstr ""
+msgstr "**静态函数**：创建一个只返回值的函数库。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:91
-#, fuzzy
 msgid ""
 "**Systems with a wide scope**: If the singleton is managing its own "
 "information and not invading the data of other objects, then it's a great "
 "way to create systems that handle broad-scoped tasks. For example, a quest "
 "or a dialogue system."
 msgstr ""
-"如果单例对象管理自身的信息，而不入侵其他对象的数据，那么这正是创建处理广泛任"
-"务的 ``系统`` 类的一个好方法。例如一个目标系统、任务系统、以及对话系统，将是"
-"单例实现的很好用例。"
+"**范围广泛的系统** 。如果单例管理器自己的信息，而不掺杂其他对象的数据，那么它"
+"是创建处理宽泛任务系统的好办法。例如，任务或对话系统。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:96
 msgid ""
@@ -220,6 +226,9 @@ msgid ""
 "``class_name`` keyword instead to get auto-completion for a type in your "
 "entire project."
 msgstr ""
+"在Godot 3.1之前，另一个用途只是为了方便：自动加载将有一个全局变量，用于在"
+"GDScript中生成它们的名称，允许你从项目中的任何脚本文件中调用它们。但现在，你"
+"可以使用``class_name``关键字来代替，以获得整个项目中一个类型的自动补全。"
 
 #: ../../docs/getting_started/workflow/best_practices/autoloads_versus_internal_nodes.rst:103
 msgid ""
@@ -237,3 +246,5 @@ msgid ""
 "As a result, you can get the auto-loaded node, for example an autoload "
 "called ``Sound``, by calling ``get_node(\"/root/Sound\")``."
 msgstr ""
+"然后，例如，你可以通过调用``get_node(\"/root/Sound\")``来获得一个名为"
+"``Sound``的自动加载节点。"

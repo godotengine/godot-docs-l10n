@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,6 @@ msgid "Player scene"
 msgstr "Scena del Player"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
@@ -255,7 +254,6 @@ msgstr ""
 "per aprire il pannello \"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:121
-#, fuzzy
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"walk\". Then click the \"New Animation\" button to create a second "
@@ -265,14 +263,14 @@ msgid ""
 "into the \"Animation Frames\" side of the panel for the corresponding "
 "animation:"
 msgstr ""
-"Sulla sinistra c'è un elenco di animazioni. Fai clic su quella \"predefinita"
-"\" e rinominala in \"walk\". Quindi fare clic sul pulsante \"Nuova animazione"
-"\" per creare una seconda animazione denominata \"up\". Trova le immagini "
-"del giocatore nella scheda \"FileSystem\" - si trovano nella cartella `` "
-"art`` che hai decompresso in precedenza. Trascina le due immagini per ogni "
-"animazione, denominate `` playerGrey_up [1/2] `` e `` playerGrey_walk [1/2] "
-"``, nella parte \"Fotogrammi animazione\" del pannello per l'animazione "
-"corrispondente:"
+"Sulla sinistra c'è un elenco di animazioni. Fai clic su quella chiamata "
+"\"default\" e rinominala in \"walk\". Quindi fare clic sul pulsante \"Nuova "
+"animazione\" per creare una seconda animazione denominata \"up\". Trova le "
+"immagini del giocatore nella scheda \"FileSystem\", si trovano nella "
+"cartella `` art`` che hai decompresso in precedenza. Trascina le due "
+"immagini per ogni animazione, chiamate `` playerGrey_up [1/2] `` e `` "
+"playerGrey_walk [1/2] ``, nella parte \"Fotogrammi animazione\" del pannello "
+"per l'animazione corrispondente:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:130
 msgid ""
@@ -721,7 +719,6 @@ msgid "Enemy scene"
 msgstr "Scena del nemico"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:533
-#, fuzzy
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
@@ -729,8 +726,8 @@ msgid ""
 msgstr ""
 "Ora è il momento di creare i nemici che il nostro giocatore dovrà schivare. "
 "Il loro comportamento non sarà molto complesso: i mob saranno generati in "
-"modo casuale ai bordi dello schermo, sceglieranno una direzione randomica e "
-"si muoveranno in linea retta."
+"modo casuale ai bordi dello schermo, sceglieranno una direzione casuale e si "
+"muoveranno in linea retta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:537
 msgid ""
@@ -916,7 +913,6 @@ msgid "Main scene"
 msgstr "Main Scene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
@@ -1723,7 +1719,7 @@ msgstr ""
 msgid "Project files"
 msgstr "Files del progetto"
 
-#: ../../docs/<generated>:1
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1311
 msgid "You can find a completed version of this project at these locations:"
 msgstr ""
 "È possibile trovare una versione completa di questo progetto in queste "

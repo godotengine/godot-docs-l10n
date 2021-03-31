@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,8 +84,8 @@ msgid ""
 "up to three columns:"
 msgstr ""
 "Pojďme si rozebrat finální UI a naplánovat jaké kontejnery použijeme. Stejně "
-"jako v :doc:`ui_main_menu`, začíná ``MarginContainer`` . Pak můžeme vidět až "
-"tři sloupce:"
+"jako v :doc:`ui_main_menu`, základem je ``MarginContainer`` . Pak můžeme "
+"vidět až tři sloupce:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
@@ -217,7 +217,7 @@ msgstr ""
 "Chceme naskládat pruhy svisle dovnitř ``HBoxContainer``. Přidejte "
 "``VBoxContainer`` jako dítě ``HBoxContainer`` a pojmenujte ho ``Bars``. "
 "Znovu vyberte rodičovský ``HBoxContainer`` a tentokrát přidejte jako jeho "
-"dítě další '`HBoxContainer``. Říkejme mu``Counters``. S těmito čtyřmi "
+"dítě další ``HBoxContainer``. Říkejme mu ``Counters``. S těmito čtyřmi "
 "kontejnery máme základ pro naši grafickou scénu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
@@ -277,7 +277,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr "``NinePatchRect`` s názvem ``Pozadí``"
+msgstr "``NinePatchRect`` s názvem ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
 msgid "A ``TextureRect`` named ``Title``"
@@ -797,7 +797,7 @@ msgstr ""
 "Inspektoru s vyjímkou jejího jména. Jestliže změníte a uložíte rodičovskou "
 "scénu, změny se projeví na všechn scénách, které z ní dědí. Na druhou "
 "stranu, když změníte hodnotu ve zděděné scéně, vždycky přepíšete hodnotu "
-"zděděnou po rodiči. Toto je užitečné pro prvnky UI, protože často používají "
+"zděděnou po rodiči. Toto je pro prvnky UI užitečné, protože často používají "
 "variace vycházející z jednoho základního prvku. Obecně v designu UI platí, "
 "že tlačítka, panely atd. sdílejí společný základní styl a interakce. "
 "Rozhodně ho nechceme kopírovat ručně jednu vlastnost po druhé do všech "
@@ -825,7 +825,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Vytvoření Ukazatele života děděním ze scény Bar"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -835,10 +835,16 @@ msgid ""
 "`Ctrl + S` (:kbd:`Cmd + S` on macOS) to save the new inherited scene and "
 "name it ``LifeBar``."
 msgstr ""
+"Přejděte na ``Scéna -> Nová odvozená scéna`` a vytvořte nový typ ``Bar``. "
+"Vyberte scénu Bar a otevřete ji. Měli byste vidět nový [neuložený] panel, "
+"který je jako váš ``Bar``, ale se všemi uzly kromě kořene v šedé barvě. "
+"Stisknutím :kbd:`Ctrl + S` (:kbd:`Cmd + S` v systému MacOS) uložte novou "
+"zděděnou scénu a pojmenujte ji ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Šedé uzly nelze přejmenovat. To vám říká, že pocházejí z rodičovské scény"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -849,6 +855,12 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Nejprve přejmenujte kořenový uzel nebo uzel nejvyšší úrovně na ``LifeBar``. "
+"Vždy chceme, aby kořen přesně popisoval, co je tato komponenta uživatelského "
+"rozhraní zač. Název odlišuje tento panel od panelu ``EnergyBar``, který "
+"vytvoříme příště. Ostatní uzly uvnitř scény by měly popisovat strukturu "
+"komponenty pomocí obecných pojmů tak, aby to fungovalo se všemi zděděnými "
+"scénami. Stejně jako naše uzly ``TextureProgress`` a ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
 msgid ""
@@ -860,16 +872,25 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Pokud jste někdy dělali webový design, je toto podobné práci s CSS: "
+"vytvoříte základní třídu a přidáváte její varianty pomocí tříd modifikátorů. "
+"Ze základní třídy tlačítka získáte varianty tlačítko-zelené a tlačítko-"
+"červené, které uživateli umožní přijímat a odmítat výzvy. Nová třída "
+"obsahuje název nadřazeného prvku a další klíčové slovo, které vysvětluje, v "
+"čem rodičovský prvek modifikuje. Když vytvoříme zděděnou scénu a změníme "
+"název uzlu nejvyšší úrovně, děláme vlastně totéž."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Vytvoření Ukazatele energie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Design ``LifeBar`` jsme již nastavili pomocí hlavní scény ``Bar``. Nyní "
+"potřebujeme ``EnergyBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
 msgid ""
@@ -878,6 +899,10 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Vytvoříme novou zděděnou scénu a opět jako základ vybereme scénu ``Bar."
+"tscn`` a otevřeme ji. Poklepejte na kořenový uzel ``Bar`` a přejmenujte jej "
+"na ``EnergyBar``. Novou scénu uložte jako ``EnergyBar.tscn``. Potřebujeme "
+"nahradit texturu HP texturou EP a změnit textury na měřidle."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
@@ -886,6 +911,9 @@ msgid ""
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
+"Přejděte do doku FileSystem vlevo, ve stromu scén vyberte uzel ``Title`` a "
+"přetáhněte soubor ``label_EP.png`` do slotu pro texturu. Vyberte uzel "
+"``Number`` a změňte vlastnost ``Text`` na jinou hodnotu, například ``14``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:452
 msgid ""
@@ -896,10 +924,16 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
+"Všimněte si, že textura EP je menší než textura HP. Měli bychom aktualizovat "
+"velikost písma ``Number``, aby lépe odpovídalo. Písmo je zdroj. Všechny uzly "
+"v celém projektu, které tento zdroj používají, budou ovlivněny jakoukoli "
+"změnou vlastností tohoto zdroje. Můžete zkusit změnit jeho velikost na "
+"obrovskou hodnotu, například ``40``, a přepnout zpět na scény ``LifeBar`` "
+"nebo ``Bar``. Uvidíte, že se velikost textu všude zvětšila."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
-msgstr ""
+msgstr "Pokud změníme zdroj písma, ovlivní to všechny uzly, které ho používají"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
 msgid ""
@@ -909,10 +943,16 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
+"Chceme-li změnit velikost písma pouze v tomto uzlu, musíme vytvořit lokální "
+"kopii písma pro tento uzel. Vyberte opět uzel ``Number`` a klikněte na ikonu "
+"klíče a šroubováku v pravém horním rohu Inspektora. V rozevírací nabídce "
+"vyberte možnost ``Make Sub-Resources Unique``. Godot vyhledá všechny zdroje, "
+"které tento uzel používá, a vytvoří pro nás jejich lokální kopie."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
+"Tato možnost slouží k vytvoření lokálních kopií prostředků pro jeden uzel"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""
@@ -921,6 +961,10 @@ msgid ""
 "need to use ``Make Sub-Resources Unique`` before you can tweak the resources "
 "without affecting the source node."
 msgstr ""
+"Pokud duplikujete uzel ze stromu scén pomocí :kbd:`Ctrl + D` (:kbd:`Cmd + D` "
+"v systému MacOS), sdílí své prostředky s původním uzlem. Než budete moci "
+"přizpůsobit zdroje, aniž byste ovlivnili uzel zdrojový , musíte použít "
+"``Make Sub-Resources Unique``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
@@ -929,10 +973,14 @@ msgid ""
 "adjust the ``Bottom`` spacing value to align the text's baseline with the EP "
 "label on the left."
 msgstr ""
+"Přejděte dolů do sekce ``Custom Font`` a otevřete ``Font``. Snižte hodnotu "
+"``Size`` na menší hodnotu, například ``20`` nebo ``22``. Možná budete muset "
+"také upravit hodnotu ``Bottom``, aby se základní linie textu zarovnala se "
+"štítkem EP na levé straně."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr ""
+msgstr "Widget EP Count s menším písmem než jeho protějšek HP"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
 msgid ""
@@ -940,6 +988,9 @@ msgid ""
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
+"Nyní vyberte uzel ``TextureProgress``. Přetáhněte soubor ``energy_bar_bg."
+"png`` do slotu ``Under`` a totéž proveďte se souborem ``energy_bar_fill."
+"png`` a přeneste jej do slotu textury ``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
 msgid ""
@@ -950,6 +1001,12 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
+"Velikost uzlu můžete vertikálně změnit tak, aby jeho ohraničující obdélník "
+"odpovídal měřidlu. Totéž proveďte s uzlem ``Count``, dokud se jeho velikost "
+"nevyrovná velikostí sloupce. Protože minimální velikost uzlu "
+"``TextureProgress`` je nastavena na základě jeho textur, nebudete moci "
+"zmenšit velikost uzlu ``Count`` pod tuto hodnotu. To je také velikost, "
+"kterou bude mít kontejner ``Bar``. I ten můžete zmenšit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
 msgid ""
@@ -958,10 +1015,14 @@ msgid ""
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
+"V neposlední řadě má kontejner ``Pozadí`` minimální velikost, která jej činí "
+"poněkud velkým. Vyberte jej a v části ``Rect`` změňte vlastnost ``Min Size`` "
+"na ``80`` pixelů. Jeho velikost by se měla automaticky změnit a uzly "
+"``Title`` a ``Number`` by se měly upravit zrovna tak."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Počet vypadá lépe, když je teď o něco menší"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
 msgid ""
@@ -971,10 +1032,15 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"Velikost uzlu Count ovlivňuje pozici TextureProgress. Protože za okamžik "
+"zarovnáme oba naše pruhy na výšku, bude lepší změnit velikost štítku EP "
+"pomocí levého okraje Counter. Tímto způsobem jsou uzly Count v ukazateli "
+"života i energie široké sto pixelů, takže obě měřidla budou dokonale "
+"zarovnána."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 msgid "Prepare the bomb and emerald counters"
-msgstr ""
+msgstr "Příprava počítadla bomb a smaragdů"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 msgid ""
@@ -983,10 +1049,14 @@ msgid ""
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
+"Nyní se postaráme o počítadla. Přejděte na ``Scéna -> Nová odvozená scéna`` "
+"a jako základ vyberte ``Counter.tscn``. Přejmenujte také kořenový uzel na "
+"``BombCounter``. Novou scénu uložte jako ``BombCounter.tscn``. To je pro "
+"tuto scénu vše."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
 msgid "The bomb counter is the same as the original Counter scene"
-msgstr ""
+msgstr "Počítadlo bomb je stejné jako v původní scéně Counter"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
 msgid ""
@@ -1001,14 +1071,24 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
+"Přejděte znovu na ``Scéna -> Nová odvozená scéna`` a znovu vyberte ``Counter."
+"tscn``. Přejmenujte kořenový uzel ``EmeraldCounter`` a scénu uložte jako "
+"``EmeraldCounter.tscn``. U tohoto je potřeba hlavně nahradit ikonu bomby "
+"ikonou smaragdu. Na kartě FileSystem přetáhněte ``emeralds_icon.png`` do "
+"slotu ``Texture`` uzlu ``Icon``. Uzel ``Icon`` je již ukotven k pravému "
+"okraji uzlu ``Background``, takže můžeme měnit jeho polohu a jeho měřítko a "
+"pozice se bude měnit společně s kontejnerem ``EmeraldCounter``. Posuňte "
+"ikonu smaragdu trochu doprava a dolů. Pomocí kláves se šipkami na klávesnici "
+"posuňte její pozici. Uložte a jsme hotovi se všemi prvky uživatelského "
+"rozhraní."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid "The emerald counter should look something like this"
-msgstr ""
+msgstr "Počítadlo smaragdů by mělo vypadat nějak takto"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
-msgstr ""
+msgstr "Přidání komponent uživatelského rozhraní do finální verze GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
 msgid ""
@@ -1018,20 +1098,29 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
+"Je čas přidat všechny prvky uživatelského rozhraní do hlavní scény "
+"grafického uživatelského rozhraní. Znovu otevřete scénu ``GUI.tscn`` a "
+"odstraňte uzly ``Bar`` a ``Counter``. V doku FileSystem najděte ``LifeBar."
+"tscn`` a přetáhněte do kontejneru ``Bars`` ve stromu scény. Totéž proveďte "
+"pro ``EnergyBar``. Měli byste je vidět zarovnané vertikálně."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr ""
+msgstr "Panel LifeBar a EnergyBar se automaticky zarovnají"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``EmeraldCounter.tscn`` "
 "scenes onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
+"Nyní přetáhněte scény ``BombCounter.tscn`` a ``EmeraldCounter.tscn`` do uzlu "
+"``Counters``. Jejich velikost se také změní automaticky."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
+"Uzly mění svoji velikost tak, aby zabíraly veškerý dostupný vertikální "
+"prostor"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
 msgid ""
@@ -1042,16 +1131,24 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
+"Aby počítadla ``EmeraldCounter`` a ``BombCounter`` používala velikost "
+"definovanou v souboru ``Counter.tscn``, musíme změnit příznaky ``Size "
+"Flags`` v kontejneru ``Counters``. Vyberte uzel ``Counters`` a rozbalte "
+"sekci ``Size Flags`` v Inspectoru. Zrušte zaškrtnutí značky ``Fill`` u "
+"vlastnosti ``Vertical`` a zaškrtněte ``Shrink Center``, aby se kontejner "
+"vycentroval uvnitř kontejneru ``HBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "Nyní mají obě počítadla řádnou velikost"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
 msgstr ""
+"Změňte vlastnost ``Min Size`` kontejneru ``Counters`` a určete tak výšku "
+"pozadí čítačů."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
 msgid ""
@@ -1064,10 +1161,18 @@ msgid ""
 "and go back to the GUI scene, it will be aligned vertically with the "
 "``LifeBar``."
 msgstr ""
+"Zbývá nám ještě jeden malý problém se štítkem EP na panelu EnergyBar: 2 "
+"sloupce by měly být zarovnány vertikálně. Kliknutím na ikonu vedle uzlu "
+"``EnergyBar`` otevřete jeho scénu. Vyberte uzel ``Count`` a přejděte dolů do "
+"sekce ``Custom Constants``. Přidejte hodnotu ``Margin Left`` ve výši ``20``. "
+"V sekci ``Rect`` nastavte uzlu ``Min Size`` zpět na 100, tedy stejnou "
+"hodnotu jako u LifeBaru. Nyní by měl mít ``Count`` nalevo okraj. Pokud jej "
+"uložíte a vrátíte se do scény grafického uživatelského rozhraní, bude "
+"zarovnán vertikálně s ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "2 pruhy jsou dokonale zarovnané"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
@@ -1075,20 +1180,25 @@ msgid ""
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
+"Před chvílí jsme mohli tímto způsobem nastavit ``EnergyBar``. Toto vám však "
+"ukazuje, že se můžete kdykoli vrátit k libovolné scéně, upravit ji a vidět, "
+"jak se změny šíří celým projektem!"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Umístění grafického uživatelského rozhraní do modelu hry"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
 msgstr ""
+"Na závěr tohoto tutoriálu vložíme grafické uživatelské rozhraní do scény "
+"modelu hry."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr ""
+msgstr "Přejděte do doku FileSystem a otevřete soubor ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
 msgid ""
@@ -1099,6 +1209,12 @@ msgid ""
 "possible vertically. Now you can see how the interface looks in the context "
 "of the game."
 msgstr ""
+"Přetáhněte scénu ``GUI.tscn`` přímo pod uzel ``bg`` a nad uzel "
+"``Characters``. Grafické uživatelské rozhraní se zmenší tak, aby se vešlo na "
+"celou plochu pohledu. Přejděte do nabídky Rozložení a vyberte možnost "
+"``Center Top``, aby se ukotvila k hornímu okraji herního okna. Poté změňte "
+"velikost grafického uživatelského rozhraní tak, aby bylo vertikálně co "
+"nejmenší. Nyní se můžete podívat, jak rozhraní vypadá v kontextu hry."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid ""
@@ -1106,6 +1222,9 @@ msgid ""
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
 "zip>`."
 msgstr ""
+"Gratulujeme, že jste se dostali až na konec tohoto dlouhého návodu. "
+"Závěrečný projekt najdete zde: :download:`ui_gui_design.zip <files/"
+"ui_gui_design.zip>`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
 msgid ""
@@ -1118,3 +1237,13 @@ msgid ""
 "16:9. They are close to one another. That's why it's enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
+"**Závěrečná poznámka o responzivním designu**. Pokud změníte velikost "
+"grafického uživatelského rozhraní, uzly se posunou, ale textury a text "
+"nezmění svoji velikost. Grafické uživatelské rozhraní má také minimální "
+"velikost, která vychází z velikosti použitých textur. Ve hrách "
+"nepotřebujeme, aby rozhraní bylo tak flexibilní jako rozhraní webových "
+"stránek. Téměř nikdy nechcete podporovat orientaci obrazovky na šířku i na "
+"výšku. Je to buď jedno, nebo druhé. Při orientaci na šířku se nejčastěji "
+"používají poměry od 4:3 do 16:9. Jsou si navzájem dost podobné. Proto stačí, "
+"aby se prvky grafického uživatelského rozhraní při změně velikosti okna "
+"pohybovaly pouze horizontálně."

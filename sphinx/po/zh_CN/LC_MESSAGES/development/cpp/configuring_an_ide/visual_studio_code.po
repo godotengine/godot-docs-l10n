@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,15 @@ msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:6
+#, fuzzy
 msgid ""
 "`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
-"platform IDE by `Microsoft <https://microsoft.com>`_ (not to be confused "
-"with :ref:`doc_configuring_an_ide_vs`)."
+"platform code editor by `Microsoft <https://microsoft.com>`_ (not to be "
+"confused with :ref:`doc_configuring_an_ide_vs`)."
 msgstr ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ 是 `Microsoft <https://"
+"microsoft.com>`_ 的一个免费的跨平台集成开发环境（不要与 :ref:"
+"`doc_configuring_an_ide_vs` 混淆）。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:10
 msgid "Importing the project"
@@ -55,7 +59,7 @@ msgstr "按Ctrl + Shift + P打开命令提示符窗口，然后输入 *Configure
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:21
 msgid "Select the **Create tasks.json file from template** option."
-msgstr ""
+msgstr "选择从模板中创建tasks.json文件选项。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:26
 msgid "Then select **Others**."
@@ -66,10 +70,11 @@ msgid ""
 "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
 "section to it:"
 msgstr ""
+"在 ``tasks.json`` 文件中找到 ``\"tasks\"`` 数组，并在其中添加一个新部分:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid "An example of a filled out ``tasks.json``."
-msgstr ""
+msgstr "填好了``tasks.json``的一个例子。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:54
 #, fuzzy
@@ -98,35 +103,40 @@ msgstr "按Ctrl + Shift + D打开``运行''面板。"
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:63
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
-msgstr ""
+msgstr "如果缺少 ``launch.json`` 文件，系统会提示你创建一个新的文件。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
+"选择 **C++ (GDB/LLDB)** 。这里可能还有其他特定平台的选项。如果选择了，请相应"
+"调整所提供的配置示例。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
+"在 ``launch.json`` 文件中找到 ``\"configurations\"`` 数组，并添加一个新部分:"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:102
+#, fuzzy
 msgid "An example of a filled out ``launch.json``."
-msgstr ""
+msgstr "填好的``launch.json``的例子。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:104
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
 msgstr ""
+"``program`` [程序]下的名称取决于你的构建配置，例如启用 ``tools`` 的64位X11平"
+"台 ``godot.x11.tools.64`` 。"
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"有关这些渠道的简要概述也可在 `Godot网站 <https://godotengine.org/"
-"community>`_ 上找到。"
+"如果遇到问题，也可在 `Godot社区论坛 <https://godotengine.org/community>`__ 中"
+"寻求帮助。"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -490,6 +490,11 @@ msgid ""
 "restricts its usage to organic surfaces like terrain. Still, when "
 "prototyping, it can be used to quickly apply textures to CSG-based levels."
 msgstr ""
+"Godot の :ref:`doc_spatial_material` は *triplanar mapping* をサポートしてい"
+"ます。Godot はまだ CSG ノード上の UV マップの編集をサポートしていないので、こ"
+"れは CSG を使うときに便利です。トリプラナーマッピングは比較的低速なので、地形"
+"のような有機的なサーフェスには通常は不向きです。しかし、プロトタイピングの際"
+"には、CSGベースのレベルにテクスチャを素早く適用するために使用できます。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:259
 msgid ""
@@ -529,6 +534,15 @@ msgid ""
 "Higher values in the **Scale** property will cause the texture to repeat "
 "more often."
 msgstr ""
+"CSGノードにトリプラナーマッピングを適用するには、CSGノードを選択してインスペ"
+"クタに移動し、 **Material Override** (個々のCSGノードの場合は **Material**) "
+"の隣にある **[empty]** テキストをクリックします。 **New SpatialMaterial** を"
+"選択します。新しく作成されたマテリアルのアイコンをクリックして編集します。 "
+"**Albedo** セクションを展開し、 **Texture** プロパティにテクスチャをロードし"
+"ます。次に、 **Uv1** セクションを展開し、 **Triplanar** にチェックを入れま"
+"す。上の **Scale** と **Offset** プロパティを使用して、各軸のテクスチャオフ"
+"セットとスケールを変更することができます。 **Scale** プロパティの値を高くする"
+"と、テクスチャがより頻繁に繰り返されるようになります。"
 
 #: ../../docs/tutorials/3d/csg_tools.rst:281
 msgid ""

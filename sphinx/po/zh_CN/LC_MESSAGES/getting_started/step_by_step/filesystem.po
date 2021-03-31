@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,6 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
-#, fuzzy
 msgid ""
 "The ``project.godot`` file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
@@ -82,7 +81,6 @@ msgstr ""
 "其位置定义了根的位置。这是Godot打开项目时要查找的第一个文件。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
-#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty ``project.godot`` can function as a basic "
@@ -96,7 +94,6 @@ msgid "Path delimiter"
 msgstr "路径分隔符"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
-#, fuzzy
 msgid ""
 "Godot only supports ``/`` as a path delimiter. This is done for portability "
 "reasons. All operating systems support this, even Windows, so a path such as "
@@ -105,7 +102,7 @@ msgid ""
 msgstr ""
 "Godot只支持用 ``/`` 做路径分隔符。这样做出于可移植性的原因。所有操作系统甚至"
 "Windows都支持此功能，因此诸如 ``c:\\project\\project.godot`` 之类的路径需要键"
-"入为 ``c:/project/project.godot``。"
+"入为 ``C:/project/project.godot`` 。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
@@ -121,12 +118,11 @@ msgstr ""
 "建了特殊路径 ``res://``。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
-#, fuzzy
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
-"路径 ``res://`` 将始终指向项目根目录（``project.godot`` 所在的位置，因此 "
+"路径 ``res://`` 将始终指向项目根目录（ ``project.godot`` 所在的位置，因此 "
 "``res://project.godot`` 将始终有效）。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
@@ -145,7 +141,6 @@ msgid "User path"
 msgstr "用户路径"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
-#, fuzzy
 msgid ""
 "Writing to disk is still needed for tasks such as saving game state or "
 "downloading content packs. To this end, the engine ensures that there is a "
@@ -154,7 +149,7 @@ msgid ""
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
 "诸如保存游戏状态或下载内容包之类的任务仍需要写入磁盘。为此，引擎确保存在始终"
-"可写的特殊路径 ``user://``。"
+"可写的特殊路径 ``user://`` 。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
@@ -199,7 +194,6 @@ msgstr ""
 "帮助您修复它们，但是为什么要走这条艰难的路线呢？）。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -208,9 +202,9 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
-"第二个是在Windows和macOS下，文件名和路径名不区分大小写。如果开发人员在不区分"
-"大小写的主机文件系统中工作，将资源保存为 ``myfile.PNG``，然后将其引用为 "
-"``myfile.png``，则该资源将在该平台上正常工作，但在其他平台（例如Linux、"
+"第二个问题是在Windows和macOS下，文件名和路径名不区分大小写。如果开发人员在不"
+"区分大小写的主机文件系统中工作，将资源保存为 ``myfile.PNG`` ，然后将其引用为 "
+"``myfile.png`` ，则该资源将在该平台上正常工作，但在其他平台（例如Linux、"
 "Android等）上无法正常工作。这也适用于导出的二进制文件，该文件使用压缩包存储所"
 "有文件。"
 

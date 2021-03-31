@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -327,7 +327,7 @@ msgstr "片段内置"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr ""
+msgstr "全局内置的功能随处可见，包括自定义功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
@@ -658,6 +658,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"屏幕空间中像素中心的坐标。``xy``表示窗口位置，如果不使用``DEPTH``，则``z``表"
+"示片段深度。原点在左下角。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:320
@@ -1000,6 +1002,9 @@ msgid ""
 "is enabled in the Project Settings. (It's enabled by default on mobile "
 "platforms.)"
 msgstr ""
+"如果启用了``vertex_lighting``渲染模式，或者在项目设置中启用了**Rendering渲染"
+">Quality质量>Shading着色>强制顶点着色**，则不会运行``light()``函数。(在移动平"
+"台上默认启用。)"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:311
 msgid "Elapsed total time in seconds."
@@ -1011,6 +1016,8 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"屏幕空间中像素中心的坐标。``xy``表示窗口位置，如果不使用``DEPTH``，则``z``表"
+"示片段深度。原点在左下角。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:330
 msgid "in vec3 **NORMAL**"

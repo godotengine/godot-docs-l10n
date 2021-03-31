@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,7 +158,7 @@ msgstr ""
 "Añade estos dos y es posible adivinar casi exactamente cuando el sonido o la "
 "música comenzará a sonar en los altavoces durante el *_process()*:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:60
+#: ../../docs/tutorials/audio/sync_with_audio.rst:79
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
 "sync with the system clock, the timing information will slowly drift away."
@@ -167,7 +167,7 @@ msgstr ""
 "exactamente sincronizado con el reloj del sistema, la información de tiempo "
 "se alejará lentamente."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:62
+#: ../../docs/tutorials/audio/sync_with_audio.rst:81
 msgid ""
 "For a rhythm game where a song begins and ends after a few minutes, this "
 "approach is fine (and it's the recommended approach). For a game where "
@@ -179,11 +179,11 @@ msgstr ""
 "juego en el que la reproducción puede durar mucho más tiempo, el juego "
 "eventualmente se desincronizará y se necesitará un enfoque diferente."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:65
+#: ../../docs/tutorials/audio/sync_with_audio.rst:84
 msgid "Using the sound hardware clock to sync"
 msgstr "Usando el reloj de hardware de sonido para sincronizar"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:67
+#: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid ""
 "Using :ref:`AudioStreamPlayer."
 "get_playback_position()<class_AudioStreamPlayer_method_get_playback_position>` "
@@ -201,7 +201,7 @@ msgstr ""
 "devolver el mismo valor. Además, el valor estará fuera de sincronía con los "
 "altavoces también por las razones mencionadas anteriormente."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:69
+#: ../../docs/tutorials/audio/sync_with_audio.rst:88
 msgid ""
 "To compensate for the \"chunked\" output, there is a function that can "
 "help: :ref:`AudioServer."
@@ -211,7 +211,7 @@ msgstr ""
 "`AudioServer."
 "get_time_since_last_mix()<class_AudioServer_method_get_time_since_last_mix>`."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:72
+#: ../../docs/tutorials/audio/sync_with_audio.rst:91
 msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
@@ -219,7 +219,7 @@ msgstr ""
 "Añadiendo el valor de retorno de esta función a *get_playback_position()* se "
 "aumenta la precisión:"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:79
+#: ../../docs/tutorials/audio/sync_with_audio.rst:103
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
@@ -227,7 +227,7 @@ msgstr ""
 "Para aumentar la precisión, resta la información de latencia (cuánto tarda "
 "en escucharse el audio después de ser mezclado):"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:86
+#: ../../docs/tutorials/audio/sync_with_audio.rst:114
 msgid ""
 "The result may be a bit jittery due how multiple threads work. Just check "
 "that the value is not less than in the previous frame (discard it if so). "
@@ -242,6 +242,6 @@ msgstr ""
 "longitud, o sincronizando cualquier cosa (efectos de sonido, por ejemplo) "
 "con la música."
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:88
+#: ../../docs/tutorials/audio/sync_with_audio.rst:116
 msgid "Here is the same code as before using this approach:"
 msgstr "Aquí está el mismo código que antes de usar este enfoque:"

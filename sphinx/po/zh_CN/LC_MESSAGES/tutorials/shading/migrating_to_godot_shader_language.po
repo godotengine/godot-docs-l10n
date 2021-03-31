@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,7 +180,7 @@ msgstr "常量"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:73
 #, fuzzy
 msgid ""
-"Global array constants are not supported in Godot 3.2.x. You can fake the "
+"Global array constants are not supported in Godot 3.x. You can fake the "
 "functionality by using a uniform initialized to the value, but you will not "
 "benefit from the increased speed from using a constant."
 msgstr ""
@@ -214,12 +214,11 @@ msgid "Variables"
 msgstr "变量"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:88
-#, fuzzy
 msgid ""
 "GLSL has many built-in variables that are hard-coded. These variables are "
 "not uniforms, so they are not editable from the main program."
 msgstr ""
-"GLSL有许多内置的硬编码变量。 这些变量不是制服，因此它们不能从主程序中编辑。"
+"GLSL有许多内置的硬编码变量。 这些变量不是统一值，因此它们不能从主程序中编辑。"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:158
@@ -312,7 +311,7 @@ msgstr "gl_PointSize"
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:172
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 msgid "float"
-msgstr "float"
+msgstr "(单精度)浮点数"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
@@ -407,13 +406,12 @@ msgstr ""
 "创建`纯魔术<https://www.shadertoy.com/view/4tjGRh>`_ 。"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:129
-#, fuzzy
 msgid ""
 "Shadertoy does not give the user full control over the shader. It handles "
 "all the input and uniforms and only lets the user write the fragment shader."
 msgstr ""
-"Shadertoy不会让用户完全控制着色器。 它只允许用户编写片段着色器。 它处理所有输"
-"入和制服，只允许用户编写片段着色器。"
+"Shadertoy不会让用户完全控制着色器。 它处理所有输入和统一值，仅允许用户编写片"
+"段着色器。"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:133
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:200

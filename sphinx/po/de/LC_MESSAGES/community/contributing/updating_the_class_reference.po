@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -332,10 +332,10 @@ msgid ""
 "forcefully need to go through these steps (unless you know that the class "
 "you plan to edit *has* been modified recently)."
 msgstr ""
-"**Beachte:** Wenn dies bereits kürzlich von einem anderen Beitragenden "
-"gemacht wurde, musst Du nicht zwingend alle diese Schritte durchgehen (außer "
-"Du weißt, dass die Klasse, die Du vorhast zu editieren, bereits kürzlich "
-"erst bearbeitet worden ist)."
+"**Hinweis:** Wenn dies bereits kürzlich von einem anderen Beitragenden "
+"gemacht wurde, müssen Sie nicht zwingend alle diese Schritte durchgehen "
+"(außer Sie wissen, dass die zu editierende Klasse bereits kürzlich erst "
+"bearbeitet wurde)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:145
 msgid "Push and request a pull of your changes"
@@ -354,7 +354,7 @@ msgid ""
 "When it's done, you can ask for a Pull Request via the GitHub UI of your "
 "Godot fork."
 msgstr ""
-"Wenn das erledigt ist, kannst du über die GitHub-Benutzeroberfläche deines "
+"Wenn das erledigt ist, können Sie über die GitHub-Benutzeroberfläche Ihres "
 "Godot-Forks eine Pull-Request stellen."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:160
@@ -384,8 +384,8 @@ msgid ""
 "TL;DR: If you don't know what you're doing exactly, do not edit files from "
 "GitHub."
 msgstr ""
-"TL;DR: Wenn du nicht genau weißt, was du tust, bearbeite keine Dateien aus "
-"GitHub."
+"TL;DR: Wenn Sie nicht genau wissen was Sie tun, bearbeiten Sie keine Dateien "
+"aus GitHub."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:165
 msgid "How to edit class XML"
@@ -398,10 +398,10 @@ msgid ""
 "constants and methods you'll find in the class reference. Godot generates "
 "and updates the XML automatically."
 msgstr ""
-"Bearbeite die Datei für deine gewählte Klasse in ``doc/classes/``, um die "
-"Klassenreferenz zu aktualisieren. Der Ordner enthält eine XML-Datei für jede "
-"Klasse. Die XML-Datei listet die Konstanten und Methoden auf, die du in der "
-"Klassenreferenz findest. Godot generiert und aktualisiert das XML "
+"Bearbeiten Sie die Datei für Ihre gewählte Klasse in ``doc/classes/``, um "
+"die Klassenreferenz zu aktualisieren. Der Ordner enthält eine XML-Datei für "
+"jede Klasse. Die XML-Datei listet die Konstanten und Methoden auf, die Sie "
+"in der Klassenreferenz finden. Godot generiert und aktualisiert das XML "
 "automatisch."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:169
@@ -410,10 +410,10 @@ msgid ""
 "that it doesn't change the indent style: tabs for the XML, and 4 spaces "
 "inside BBCode-style blocks. More on that below."
 msgstr ""
-"Bearbeite sie mit deinem bevorzugten Texteditor. Wenn du einen Code-Editor "
-"verwendest, stelle sicher, dass er den Einrückungsstil nicht verändert: Tabs "
-"für das XML und 4 Leerzeichen innerhalb von Blöcken im BBCode-Stil. Mehr "
-"dazu weiter unten."
+"Bearbeiten Sie sie mit Ihrem bevorzugten Texteditor. Wenn Sie einen Code-"
+"Editor verwenden, stellen Sie bitte sicher, dass er den Einrückungsstil "
+"nicht verändert: Tabs für das XML und 4 Leerzeichen innerhalb von Blöcken im "
+"BBCode-Stil. Mehr dazu weiter unten."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:171
 msgid ""
@@ -421,10 +421,10 @@ msgid ""
 "generated documentation, build Godot as described :ref:`here <toc-devel-"
 "compiling>`, run the editor and open the help for the page you modified."
 msgstr ""
-"Wenn du überprüfen musst, ob die vorgenommenen Änderungen in der generierten "
-"Dokumentation korrekt sind, builde Godot wie beschrieben :ref:`hier <toc-"
-"devel-compiling>`, starte den Editor und öffne die Hilfe für die "
-"modifizierte Seite."
+"Wenn Sie überprüfen müssen, ob die von Ihnen vorgenommenen Änderungen in der "
+"generierten Dokumentation korrekt sind, bauen Sie Godot wie :ref:`hier <toc-"
+"devel-compiling>` beschrieben , führen Sie den Editor aus und öffnen Sie die "
+"Hilfe für diese geänderte Seite."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:174
 msgid "How to write the class reference"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,8 +65,8 @@ msgid ""
 "objects in Godot, while :ref:`Spatial <doc_spatial_shader>` shaders are used "
 "to draw all 3D objects."
 msgstr ""
-":ref:画布项<doc_canvas_item_shader>`着色器用来绘制Godot中所有的2D对象，而:"
-"ref:`空间<doc_spatial_shader>`着色器用来绘制3D对象。"
+":ref:`CanvasItem <doc_canvas_item_shader>` 着色器用于绘制Godot中的所有2D对"
+"象，而 :ref:`Spatial <doc_spatial_shader>` 着色器用于绘制所有3D对象。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:26
 msgid ""
@@ -145,6 +145,8 @@ msgid ""
 "Because we are writing a CanvasItem shader, we specify ``canvas_item`` in "
 "the first line. All our code will go beneath this declaration."
 msgstr ""
+"因为我们正在编写CanvasItem着色器，所以我们在第一行中指定了``canvas_item``。我"
+"们所有的代码都会在这个声明下面。"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_first_canvasitem_shader.rst:63
 msgid ""

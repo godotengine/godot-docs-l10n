@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr "Ray-casting"
+msgstr "Raycasting"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:7
 msgid "Introduction"
@@ -46,7 +46,7 @@ msgid ""
 "what the result of a raycast is."
 msgstr ""
 "Godot speichert alle Low-Level-Spielinformationen auf Servern, während die "
-"Szene nur ein Frontend ist. Daher ist das Ray-Casting (Strahlenwerfen) im "
+"Szene nur ein Frontend ist. Daher ist das Raycasting (Strahlenwerfen) im "
 "Allgemeinen eine untergeordnete Aufgabe. Bei einfachen Raycasts "
 "funktionieren Nodes wie :ref:`RayCast <class_RayCast>` und :ref:`RayCast2D "
 "<class_RayCast2D>`, da sie jedem Frame das Ergebnis eines Raycasts "
@@ -132,6 +132,10 @@ msgid ""
 "<class_Physics2DDirectSpaceState_method_intersect_ray>` may be used. For "
 "example:"
 msgstr ""
+"Um eine 2D-Raycast-Abfrage durchzuführen, kann die Methode :ref:"
+"`Physics2DDirectSpaceState.intersect_ray() "
+"<class_Physics2DDirectSpaceState_method_intersect_ray>` verwendet werden. "
+"Zum Beispiel:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
@@ -163,7 +167,7 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
-"Ein häufiger Anwendungsfall für das Ray-Casting besteht darin, einem "
+"Ein häufiger Anwendungsfall für das Raycasting besteht darin, einem "
 "Charakter das Sammeln von Daten über die Welt um ihn herum zu ermöglichen. "
 "Ein Problem dabei ist, dass dasselbe Zeichen einen Kollider hat, sodass der "
 "Strahl nur den Kollider seines Elternteils erkennt, wie in der folgenden "

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,6 +108,8 @@ msgid ""
 "The editor uses different paths for user data, user settings and cache "
 "depending on the platform. By default, these paths are:"
 msgstr ""
+"编辑器根据平台使用不同的路径来存储用户数据，用户设置和缓存。 默认情况下，这些"
+"路径是："
 
 #: ../../docs/tutorials/io/data_paths.rst:51
 msgid "Type"
@@ -168,19 +170,19 @@ msgstr "Linux: ``~/.cache/godot/``"
 
 #: ../../docs/tutorials/io/data_paths.rst:66
 msgid "**User data** contains export templates and project-specific data."
-msgstr ""
+msgstr "**User data用户数据**包含导出模板和具体项目数据。"
 
 #: ../../docs/tutorials/io/data_paths.rst:67
 msgid ""
 "**User settings** contains editor settings, text editor themes, script "
 "templates, etc."
-msgstr ""
+msgstr "**User settings用户设置**包含编辑器设置、文本编辑器主题、脚本模板等。"
 
 #: ../../docs/tutorials/io/data_paths.rst:69
 msgid ""
 "**Cache** contains temporary data. It can safely be removed when Godot is "
 "closed."
-msgstr ""
+msgstr "**Cache缓存**包含临时数据。当Godot关闭时，它可以被安全地移除。"
 
 #: ../../docs/tutorials/io/data_paths.rst:72
 msgid ""
@@ -189,6 +191,9 @@ msgid ""
 "all platforms. Environment variables can be overridden as per the "
 "specification to change the editor (and project) data paths."
 msgstr ""
+"Godot在所有平台上都遵守`XDG基本目录规范<https://specifications.freedesktop."
+"org/basedir-spec/basedir-spec-latest.html>`__。可以根据规范覆盖环境变量，以更"
+"改编辑器(和项目)数据路径。"
 
 #: ../../docs/tutorials/io/data_paths.rst:77
 msgid ""
@@ -196,6 +201,9 @@ msgid ""
 "org.godotengine.Godot>`__, the editor data paths will be located in "
 "subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
+"如果您使用`Godot打包为flatpak<https://flathub.org/apps/details/org."
+"godotengine.Godot>`__，，编辑器数据路径将位于``~/.var/app/org.godotengine."
+"godot/`下的子文件夹中。"
 
 #: ../../docs/tutorials/io/data_paths.rst:85
 #, fuzzy
@@ -210,9 +218,15 @@ msgid ""
 "directory as the editor binary. This is useful to create a \"portable\" "
 "installation, which can then be placed on an USB drive."
 msgstr ""
+"如果您在编辑器二进制文件所在的目录下创建了名为``._sc_``或``_sc_``的文件，则"
+"Godot会开启*自带模式*。这将使Godot将所有用户数据写入与编辑器二进制文件位于同"
+"一目录中的名为``EDITOR_DATA/``的目录。这对于创建“便携”安装非常有用，然后可以"
+"将其放在USB驱动器上。"
 
 #: ../../docs/tutorials/io/data_paths.rst:93
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
 msgstr ""
+"Godot<https://store.steampowered.com/app/404790/>`__的`steam版默认使用自包含"
+"模式。"

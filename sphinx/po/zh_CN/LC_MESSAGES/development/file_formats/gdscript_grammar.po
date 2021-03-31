@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,8 @@ msgid ""
 "wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form>`_, for reference "
 "purposes."
 msgstr ""
+"这是用 `EBNF <https://en.wikipedia.org/wiki/Extended_Backus"
+"%E2%80%93Naur_form>`_ 写的GDScript的正式语法，供参考。"
 
 #: ../../docs/development/file_formats/gdscript_grammar.rst:9
 msgid ""
@@ -36,3 +38,5 @@ msgid ""
 "grammar definition. Inconsistencies here likely mean an error in this "
 "grammar, not a bug in GDScript."
 msgstr ""
+"此语法仅为描述性，源自参考文档和当前实现。GDScript解析器不是从语法定义生成"
+"的。这里的不一致可能意味着语法错误，而不是GDScript中的bug。"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,12 +93,12 @@ msgid ""
 "wiki/index.php/Using_the_Command_Line#Export_files>`__."
 msgstr ""
 "SVG (``.svg``, ``.svgz``) - SVG растеризируются с использованием `NanoSVG "
-"<https://github.com/memononen/nanosvg>` __ при их импорте. Поддержка "
+"<https://github.com/memononen/nanosvg>`__ при их импорте. Поддержка "
 "ограничена; сложные векторы могут отображаться некорректно. Для сложных "
 "векторов их рендеринг в PNG с помощью Inkscape часто оказывается лучшим "
-"решением. Это можно автоматизировать благодаря интерфейсу командной строки "
-"`<https://wiki.inkscape.org/wiki/index.php/"
-"Using_the_Command_Line#Export_files>` __."
+"решением. Это можно автоматизировать благодаря `интерфейсу командной строки "
+"<https://wiki.inkscape.org/wiki/index.php/"
+"Using_the_Command_Line#Export_files>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid "WebP (``.webp``)"
@@ -420,7 +420,6 @@ msgid "Repeat"
 msgstr "Повторение"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:140
-#, fuzzy
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
 "disabled in 2D. It sets UV coordinates going beyond the 0,0 - 1,1 range to "
@@ -598,7 +597,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:205
 msgid "Svg"
-msgstr "\"SVG\""
+msgstr "SVG"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:208
 msgid "Scale"

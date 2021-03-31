@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,6 @@ msgid "**1. Stash active action**"
 msgstr "**1. 暂存活动动作**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:21
-#, fuzzy
 msgid ""
 "New created action is always an active action bound to object. There are "
 "several ways to place an active action into NLA track, one is of course "
@@ -169,7 +168,6 @@ msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "**“动画作为压缩动作”模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
-#, fuzzy
 msgid ""
 "This mode has very similar behavior of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "
@@ -177,7 +175,7 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
-"此模式与“动画作为动作”模式的行为非常相似，但它可以生成较少的 "
-"``AnimationPlayers``；父子关系中的对象将共享它们的 ``AnimationPlayer``。当您"
-"有一些绑定，每个 ``Skeleton`` 和 ``Mesh`` 都有动作时，它很有用；那么一个绑定"
-"只有一个 ``AnimationPlayer``。"
+"这种模式与 '动画即动作' 模式的行为非常相似，但它可以生成较少的"
+"AnimationPlayers；父子关系的对象将共享他们的AnimationPlayer。当您有多个装备，"
+"并且每个骨架和网格都有动作时，这种模式就很有用；那么一个装备就只有一个"
+"AnimationPlayer。"

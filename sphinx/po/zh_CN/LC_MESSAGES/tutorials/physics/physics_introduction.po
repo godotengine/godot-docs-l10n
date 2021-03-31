@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,6 +222,8 @@ msgid ""
 "physics calculations, so that the game behaves correctly if you change the "
 "physics update rate or if the player's device can't keep up."
 msgstr ""
+"建议在物理计算中使用``delta``参数，以便当您更改物理更新速率或玩家设备跟不上"
+"时，游戏能够正确运行。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:101
 #, fuzzy
@@ -284,9 +286,8 @@ msgstr ""
 "定名称很有用。 可以在 ``项目设置`` -> ``图层名称`` 中指定名称。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:129
-#, fuzzy
 msgid "GUI example"
-msgstr "一个示例:"
+msgstr "图形用户界面示例"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:131
 msgid ""
@@ -311,9 +312,8 @@ msgstr ""
 "设置每个节点的 ``Mask`` 属性。 例如，游戏角色的设置如下所示:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "例如："
+msgstr "代码示例"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -322,12 +322,15 @@ msgid ""
 "``0x7fffffff``. Your code can use binary, hexadecimal, or decimal notation "
 "for layer masks, depending on your preference."
 msgstr ""
+"在函数调用中，为层指定位掩码。当一个函数默认启用所有图层时，图层掩码将被指定"
+"为``0x7fffffff``。根据你的喜好，你的代码可以使用二进制、十六进制或十进制来表"
+"示层掩码。"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
 msgid ""
 "The code equivalent of the above example where layers 1, 3 and 4 were "
 "enabled would be as follows::"
-msgstr ""
+msgstr "启用第1、3、4层，并添加一下代码："
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:174
 msgid "Area2D"

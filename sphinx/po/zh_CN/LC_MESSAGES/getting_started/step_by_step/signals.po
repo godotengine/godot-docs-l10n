@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
-#, fuzzy
 msgid "Signal"
 msgstr "信号"
 
@@ -41,7 +40,6 @@ msgstr ""
 "的消息。例如，与其持续检查按钮是否被按下，不如在按下按钮时发出信号。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:17
-#, fuzzy
 msgid ""
 "You can read more about the observer pattern here: https://"
 "gameprogrammingpatterns.com/observer.html"
@@ -142,7 +140,6 @@ msgid ""
 msgstr "目标节点 *必须* 附加一个脚本，否则您将收到一条错误消息。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:66
-#, fuzzy
 msgid ""
 "If you toggle the Advanced menu, you'll see on the right side that you can "
 "bind an arbitrary number of arguments of (possibly) different types. This "
@@ -150,8 +147,9 @@ msgid ""
 "method, as each signal propagation will result in different values for those "
 "extra call arguments."
 msgstr ""
-"在右侧，你可以绑定任意数量的(可能是)不同类型的参数。当你有多个信号连接到同一"
-"方法时，这很有用，因为每个信号传播将为那些额外的调用参数产生不同的值。"
+"如果你切换高级菜单，你会在右侧看到，你可以绑定任意数量的不同类型的参数。当你"
+"有多个信号连接到同一个方法时，这将很有用，因为每个信号的传播，可能会附加不同"
+"值的调用参数。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:70
 msgid ""

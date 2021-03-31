@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,15 @@ msgid "Importing audio samples"
 msgstr "Importing audio samples (импорт звуковых образцов)"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-msgid "Why import?"
-msgstr "Зачем импортировать?"
+#, fuzzy
+msgid "Supported files"
+msgstr "Поддерживаемые форматы изображения"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
+#, fuzzy
 msgid ""
-"Raw audio data in general is large and undesired. Godot provides two main "
-"options to import your audio data: WAV and Ogg Vorbis."
+"Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
+"MP3."
 msgstr ""
 "Необработанные аудиоданные обычно имеют большой размер и нежелательны. Godot "
 "предоставляет два основных варианта импорта аудиоданных: WAV и Ogg Vorbis."
@@ -38,16 +40,17 @@ msgid "Each has different advantages."
 msgstr "Каждый из них имеет различные преимущества."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
+#, fuzzy
 msgid ""
-"WAV files use raw data or light compression, make few demands on the CPU to "
-"play back (hundreds of simultaneous voices in this format are fine), but "
-"take up significant space."
+"WAV files use raw data or light compression (IMA-ADPCM). They are "
+"lightweight on the CPU to play back (hundreds of simultaneous voices in this "
+"format are fine). The downside is that they take up a lot of disk space."
 msgstr ""
 "Файлы WAV используют необработанные данные или лёгкое сжатие, мало требуют "
 "от ЦП воспроизведения (сотни одновременных голосов в этом формате вполне "
 "подойдут), но занимают значительное место."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:15
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:17
 msgid ""
 "Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
@@ -57,58 +60,77 @@ msgstr ""
 "мощности для воспроизведения."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:20
+msgid ""
+"MP3 files use better compression than WAV with IMA-ADPCM, but worse than Ogg "
+"Vorbis. This means that a MP3 file with roughly equal quality to Ogg Vorbis "
+"will be significantly larger. On the bright side, MP3 requires less CPU "
+"usage to play back compared to Ogg Vorbis. This makes MP3 useful for mobile "
+"and HTML5 projects where CPU resources are limited, especially when playing "
+"multiple compressed sounds at the same time (such as long ambient sounds)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."
 msgstr "Вот сравнительная диаграмма."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "Format"
 msgstr "Формат"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
 msgid "1 second of audio"
 msgstr "1 секунда звука"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "WAV 24-bit, 96 kHz, stereo"
 msgstr "WAV 24-bit, 96 kHz, стерео"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:25
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "576 KB"
 msgstr "576 KB"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "WAV 16-bit, 44 kHz, mono"
 msgstr "WAV 16-bit, 44 kHz, моно"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:27
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "88 KB"
 msgstr "88 KB"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "WAV 16-bit, IMA-ADPCM, mono"
 msgstr "WAV 16-bit, IMA-ADPCM, моно"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:29
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "22 KB"
 msgstr "22 KB"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
+#, fuzzy
+msgid "MP3 192 Kb/s, stereo"
+msgstr "Ogg Vorbis 128 Kb/s, стерео"
+
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
+msgid "24 KB"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "Ogg Vorbis 128 Kb/s, stereo"
 msgstr "Ogg Vorbis 128 Kb/s, стерео"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:31
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "16 KB"
 msgstr "16 KB"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "Ogg Vorbis 96 Kb/s, stereo"
 msgstr "Ogg Vorbis 96 Kb/s, стерео"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "12 KB"
 msgstr "12 KB"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:36
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:46
 msgid ""
 "Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
 "for music, speech, and long sound effects."
@@ -116,12 +138,11 @@ msgstr ""
 "Рассмотрите возможность использования WAV для коротких и повторяющихся "
 "звуковых эффектов и Ogg Vorbis для музыки, речи и длинных звуковых эффектов."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
 msgid "Best practices"
 msgstr "Лучшие практики"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:42
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
@@ -133,17 +154,17 @@ msgstr ""
 "реверберацию к звуковым эффектам, значительно уменьшая их размер и "
 "обеспечивая правильную обрезку. Скажи \"нет\" SFX с запечённой реверберацией!"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:49
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
 "Как вы можете видеть выше, звуковые эффекты становятся огромными с "
 "добавлением реверберации."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:62
 msgid "Trimming"
 msgstr "Тримминг"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:54
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:64
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
@@ -155,16 +176,16 @@ msgstr ""
 "при сохранении формы волны, излишне увеличивают их размер и увеличивают "
 "задержку в момент воспроизведения."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:59
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:69
 msgid "Importing as WAV with the **Trimming** option enabled solves this."
 msgstr ""
 "Импорт в формате WAV с включенной опцией **Trimming** решает эту проблему."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:73
 msgid "Looping"
 msgstr "Зацикливание (Looping)"
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:65
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:75
 msgid ""
 "Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to WAV files). This is useful for sound effects, such as "
@@ -175,7 +196,7 @@ msgstr ""
 "Это полезно для звуковых эффектов, таких как двигатели, пулемёты и т.д. "
 "Также поддерживается зацикливание пинг-понг."
 
-#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:70
+#: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:80
 msgid ""
 "As an alternative, the Import dock has a **Loop** option that enables "
 "looping for the entire sample when importing."

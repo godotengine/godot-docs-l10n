@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -721,7 +721,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr "크기조절 모드"
+msgstr "크기 조절 모드"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -846,9 +846,8 @@ msgid "``canvas_item_editor/center_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
-#, fuzzy
 msgid "Frame Selection"
-msgstr "반사"
+msgstr "프레임 선택"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -861,7 +860,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "캔버스 크기 조절 미리 보기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -889,7 +888,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "키 삽입 (기존 트랙)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -924,7 +923,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "포즈 지우기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -1044,9 +1043,8 @@ msgid "``spatial_editor/tool_scale``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
-#, fuzzy
 msgid "Use Local Space"
-msgstr "다음 경우에 공백을 넣습니다:"
+msgstr "로컬 공간 사용"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -1067,7 +1065,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "개체를 바닥에 스냅"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -1445,7 +1443,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "다음 찾기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -1459,7 +1457,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "이전 찾기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -1605,7 +1603,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "행 접기/펼치기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -1850,7 +1848,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "중단점 모두 제거"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -1895,7 +1893,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "상황에 맞는 도움말"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -2013,7 +2011,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "스크립트 일반 새로고침"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -2178,9 +2176,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "수학 함수"
+msgstr "함수 만들기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -2721,9 +2718,8 @@ msgid "``tile_map_editor/copy_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
-#, fuzzy
 msgid "Erase Selection"
-msgstr "반사"
+msgstr "선택 항목 지우기"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"

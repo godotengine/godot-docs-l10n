@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,7 +218,7 @@ msgid ""
 "as Git, Subversion, or Mercurial."
 msgstr ""
 "Хоча обидва редактори можуть здатися схожими, під поверхнею є багато "
-"відмінностей. Обидва дозволяють організувати проект за допомогою файлової "
+"відмінностей. Обидва дозволяють організувати проєкт за допомогою файлової "
 "системи, але підхід Godot простіший з одним файлом конфігурації, "
 "мінімалістичним текстовим форматом та відсутністю метаданих. Це робить Godot "
 "більш дружелюбним до систем VCS, таких як Git, Subversion або Mercurial."
@@ -257,7 +257,7 @@ msgid ""
 "explored in the debugger window)."
 msgstr ""
 "Панель інструментів у верхній частині екрана схожа в обох редакторах, що "
-"забезпечує контроль над відтворенням проекту. Проекти в Godot запускаються в "
+"забезпечує контроль над відтворенням проєкту. Проєкти в Godot запускаються в "
 "окремому вікні, а не всередині редактора (але з деревом та об'єктами все ще "
 "можна ознайомитись у вікні налагодження)."
 
@@ -270,8 +270,8 @@ msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
-"Швидкий запуск проекту та його закриття (Unity мусить зберегти, запустити "
-"проект, закрити проект, а потім перезавантажити попередній стан)."
+"Швидкий запуск проєкту та його закриття (Unity мусить зберегти, запустити "
+"проєкт, закрити проєкт, а потім перезавантажити попередній стан)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:79
 msgid ""
@@ -513,15 +513,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid "Project organization"
-msgstr "Організація проекта"
+msgstr "Організація проєкта"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:149
 msgid ""
 "There is no perfect project architecture. Any architecture can be made to "
 "work in either Unity and Godot."
 msgstr ""
-"Немає ідеальної архітектури проектів. Будь-яку архітектуру можна "
-"спроектувати так, щоб вона працювала як в Unity, так і в Godot."
+"Немає ідеальної архітектури проєктів. Будь-яку архітектуру можна "
+"спроєктувати так, щоб вона працювала як в Unity, так і в Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:152
 msgid ""
@@ -529,7 +529,7 @@ msgid ""
 "folder in the root directory that contains various folders, one per type of "
 "asset: Audio, Graphics, Models, Materials, Scripts, Scenes, and so on."
 msgstr ""
-"Однак загальна архітектура проектів Unity полягає в тому, щоб у кореневому "
+"Однак загальна архітектура проєктів Unity полягає в тому, щоб у кореневому "
 "каталозі містилася одна папка активів, яка містить різні папки, по одній на "
 "кожен тип об'єкта: Аудіо, Графіку, Моделі, Матеріали, Скрипти, Сцени тощо."
 
@@ -541,7 +541,7 @@ msgid ""
 "`doc_project_organization`."
 msgstr ""
 "Оскільки Godot дозволяє розділити сцени на менші сцени, кожна сцена та під-"
-"сцена існують, як файл у проекті, радимо організувати ваш проект дещо "
+"сцена існують, як файл у проєкті, радимо організувати ваш проєкт дещо "
 "інакше. Ця вікі надає сторінку для цього: :ref:`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:160
@@ -795,7 +795,7 @@ msgid ""
 "consider Godot Engine's editor as a \"game\" written in C++ using the Godot "
 "API."
 msgstr ""
-"Godot дозволяє розробляти свій проект безпосередньо в C++, використовуючи "
+"Godot дозволяє розробляти свій проєкт безпосередньо в C++, використовуючи "
 "його API, що наразі неможливо з Unity. Як приклад, ви можете розглядати "
 "редактор Godot Engine як \"гру\", написану на C++ за допомогою API Godot."
 

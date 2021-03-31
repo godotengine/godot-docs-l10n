@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -325,11 +325,16 @@ msgid "Padding"
 msgstr "Padding"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
+#, fuzzy
 msgid ""
 "The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"I caratteri ``.`` (*punto*), ``*`` (*asterisco*), ``-``` (*segno meno*) e le "
+"cifre (``0``-`9``) sono usati per il margine. Questo permette di stampare "
+"più valori allineati verticalmente come se fossero in una colonna, a "
+"condizione che venga usato un font a larghezza fissa."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
@@ -342,12 +347,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
+#, fuzzy
 msgid ""
 "Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
 "an integer following it. With no integer after ``.``, a precision of 0 is "
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"La precisione può essere specificata per i numeri reali aggiungendo un ``.`` "
+"(*punto*) con un intero che lo segue. Senza un intero dopo il ``.``, viene "
+"usata una precisione di 0, arrotondando al valore integrale. L'intero da "
+"usare per il margine deve apparire prima del punto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
@@ -356,8 +366,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
+#, fuzzy
 msgid "Dynamic padding"
-msgstr ""
+msgstr "Spaziatura dinamica"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -511,6 +522,8 @@ msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"I segnaposto possono anche essere personalizzati quando si usa ``String."
+"format``, ecco alcuni esempi di questa funzionalità."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #, fuzzy

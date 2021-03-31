@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -278,13 +278,12 @@ msgid "Vertex Color"
 msgstr "Vertex Color(顶点颜色)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:144
-#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default, they are ignored."
 msgstr ""
-"此设置允许选择默认情况下对来自3D建模应用程序的顶点颜色执行的操作。 默认情况"
-"下，它们会被忽略。"
+"此设置允许选择默认情况下如何处理来自 3D 建模应用程序的顶点颜色，默认情况下，"
+"它们会被忽略。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:150
 msgid "Use as Albedo"
@@ -314,7 +313,7 @@ msgstr "参数"
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
 "aspects of the rendering:"
-msgstr "``SpatialMaterial``还有几个可配置的参数来调整渲染的许多方面:"
+msgstr "``SpatialMaterial`` 还有几个可配置的参数来调整渲染的许多方面:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:169
 msgid "Diffuse Mode"
@@ -644,8 +643,8 @@ msgid ""
 "*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
 "touch it unless you need to)."
 msgstr ""
-"* Specular *参数是反射率的一般数量(与 *Metallic* 不同，这不是能量守恒的，因此"
-"请将其保留为“0.5”并且除非你需要，否则不要碰它)。"
+"* Specular * 参数是反射率的一般数量(与 *Metallic* 不同，这不是能量守恒的，因"
+"此请将其保留为 ``0.5`` 并且除非你需要，否则不要碰它)。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:332
 msgid ""
@@ -685,20 +684,19 @@ msgstr ""
 "响。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:358
-#, fuzzy
 msgid "Normal map"
-msgstr "Normalmap(法线贴图)"
+msgstr "法线贴图"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
-#, fuzzy
 msgid ""
 "Normal mapping allows you to set a texture that represents finer shape "
 "detail. This does not modify geometry, only the incident angle for light. In "
 "Godot, only the red and green channels of normal maps are used for better "
 "compression and wider compatibility."
 msgstr ""
-"法线贴图允许你设置表示更精细形状细节的纹理。 这不会修改几何体，只会修改光的入"
-"射角。 在Godot中，为了实现更广泛的兼容性，只使用法线贴图的红色和绿色通道。"
+"法线贴图允许你设置一个代表更精细形状细节的纹理，这不会修改几何体，只会修改光"
+"的入射角。在Godot中，为了更好的压缩和更广泛的兼容性，只使用了法线贴图的红色和"
+"绿色通道。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:369
 msgid ""

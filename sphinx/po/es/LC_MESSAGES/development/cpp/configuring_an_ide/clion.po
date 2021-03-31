@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,9 +49,9 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:20
 msgid ""
-"Navigate to ``<Godot root directory>/platform/android/java/lib`` (the "
-"``CMakeLists.txt`` file is located there) and select it (but *not* the "
-"``CMakeLists.txt`` file itself), then click **OK**."
+"Navigate to ``<Godot root directory>/platform/android/java/"
+"nativeSrcsConfigs`` (the ``CMakeLists.txt`` file is located there) and "
+"select it (but *not* the ``CMakeLists.txt`` file itself), then click **OK**."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:27
@@ -82,3 +82,48 @@ msgid ""
 msgstr ""
 "Si tienes algún problema, busca ayuda en alguno de los `canales de la "
 "comunidad Godot <https://godotengine.org/community>`_."
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:47
+msgid "Debugging the project"
+msgstr "Depurando el proyecto"
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:49
+msgid ""
+"Since CLion does not support SCons, you won't be able to compile, launch, "
+"and debug Godot from CLion in one step. You will first need to `compile "
+"godot yourself <https://docs.godotengine.org/en/stable/development/compiling/"
+"index.html>`__ and run the binary without CLion. You will then be able to "
+"debug Godot by using the `Attach to process <https://www.jetbrains.com/help/"
+"clion/attaching-to-local-process.html>`__ feature."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:52
+msgid "Run the compilation in debug mode by entering ``scons``."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:54
+msgid ""
+"Run the binary you have created (in the bin directory). If you want to debug "
+"a specific project, run the binary with the following arguments : ``--editor "
+"--path path/to/your/godot/project``. To run the project instead of editing "
+"it, remove the ``--editor`` argument."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:56
+msgid "In CLion, go to **Run > Attach to Process...**"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:61
+msgid "Find and Select godot in the list (or type the binary name/Process ID)"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:66
+msgid "You can now use the debugging tools from CLion."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide/clion.rst:70
+msgid ""
+"If you run the binary without any arguments, you will only debug the project "
+"manager window. Don't forget to add the ``--path path/to/your/godot/"
+"project`` argument to debug a project."
+msgstr ""

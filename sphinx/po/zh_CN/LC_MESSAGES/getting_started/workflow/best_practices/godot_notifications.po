@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,8 +97,8 @@ msgid ""
 "before the engine deletes an Object, i.e. a 'destructor'."
 msgstr ""
 ":ref:`Object::NOTIFICATION_PREDELETE "
-"<class_Object_constant_NOTIFICATION_PREDELETE>`：在引擎删除对象之前触发的回"
-"调，即一个 ``析构函数``。"
+"<class_Object_constant_NOTIFICATION_PREDELETE>`: 在引擎删除一个Object（即 "
+"'destructor' 析构函数）之前触发的回调。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:42
 msgid ""
@@ -147,9 +147,9 @@ msgid ""
 "its ``about_to_show`` signal which triggers *before* its appearance."
 msgstr ""
 ":ref:`Popup::NOTIFICATION_POST_POPUP "
-"<class_Popup_constant_NOTIFICATION_POST_POPUP>`：在 ``Popup`` 节点完成任何 "
-"``popup*`` 方法之后，触发的一个回调。请注意与它的 ``about_to_show`` 信号的区"
-"别，后者在前者出现 *之前* 触发。"
+"<class_Popup_constant_NOTIFICATION_POST_POPUP>`: 一个回调，在Popup节点完成任"
+"何 ``popup*`` 方法后触发。注意与它的 ``about_to_show`` 信号的区别，后者在*出"
+"现之前*触发。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:61
 msgid ""
@@ -181,7 +181,7 @@ msgstr "那么，在哪种情况下应该使用这些通知或虚函数呢？"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:77
 msgid "_process vs. _physics_process vs. \\*_input"
-msgstr "``_process`` VS ``_physics_process`` VS ``*_input``"
+msgstr "_process vs. _physics_process vs. \\*_input"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:79
 msgid ""
@@ -232,7 +232,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:156
 msgid "_init vs. initialization vs. export"
-msgstr "``_init`` VS ``initialization`` VS ``export``"
+msgstr "_init vs. initialization vs. export"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:158
 msgid ""
@@ -263,8 +263,8 @@ msgid ""
 "initialization value or the init assignment value. Init assignments take "
 "priority over initialization values."
 msgstr ""
-"**初始值赋值**：``instantiation`` 将分配 ``instantiation`` 值或 ``init`` 分配"
-"值。``init`` 分配的优先级高于 ``initialization`` 值。"
+"**Initial value assignment:** ``instantiation`` 将分配 ``instantiation`` 值"
+"或 ``init`` 分配值。 ``init`` 分配的优先级高于 ``initialization`` 值。"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:217
 msgid ""
@@ -284,7 +284,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr "``_ready`` VS ``_enter_tree`` VS ``NOTIFICATION_PARENTED``"
+msgstr "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:227
 msgid ""

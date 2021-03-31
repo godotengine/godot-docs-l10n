@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -596,19 +596,19 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:271
 msgid ""
-"The platform names recognized by the ``--export`` switch are the same as "
-"displayed in the export wizard of the editor. To get a list of supported "
-"platforms from the command line, try exporting to a non-recognized platform "
-"and the full listing of platforms your configuration supports will be shown."
+"The preset name must match the name of an export preset defined in the "
+"project's ``export_presets.cfg`` file. If the preset name contains spaces or "
+"special characters (such as \"Windows Desktop\"), it must be surrounded with "
+"quotes."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:277
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:280
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
 "preset name and output path, with the file extension, instead of ``--"
@@ -616,36 +616,44 @@ msgid ""
 "PCK or ZIP."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:285
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:284
+msgid ""
+"When specifying a relative path as the path for `--export`, `--export-debug` "
+"or `--export-pack`, the path will be relative to the directory containing "
+"the ``project.godot`` file, **not** relative to the current working "
+"directory."
+msgstr ""
+
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:289
 msgid "Running a script"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:287
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 msgid ""
 "It is possible to run a simple ``.gd`` script from the command line. This "
 "feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:291
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:295
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:293
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:304
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "And how to run it:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:311
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:315
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:314
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:318
 msgid ""
 "The first line of ``sayhello.gd`` above is commonly referred to as a "
 "*shebang*. If the Godot binary is in your ``PATH`` as ``godot``, it allows "
@@ -653,7 +661,7 @@ msgid ""
 "macOS:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:326
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:330
 msgid ""
 "If the above doesn't work in your current version of Linux or macOS, you can "
 "always have the shebang run Godot straight from where it is located as "

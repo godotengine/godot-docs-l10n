@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -206,7 +206,6 @@ msgstr ""
 "混合编译器品牌和版本可以完美地工作。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
-#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
@@ -249,15 +248,14 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "编写脚本，使其能访问场景中的其它节点。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"在继续之前，请务必阅读 :ref:`GDScript <doc_gdscript>` 参考手册。它被设计为一"
-"种简单的语言，参考手册很简短，因此概览这些概念并不需要花费太长时间。"
+"在继续之前，请确保先略过并标记：ref:`GDScript<doc_gdscript>` 参考。 这是一种"
+"设计得很简单的语言，并且该参考文献各部分，以使您可以更容易地获得概念的概述。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -273,13 +271,12 @@ msgstr ""
 "创建一个新项目。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
-#, fuzzy
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing :kbd:`Ctrl + A`) to create a hierarchy with the following nodes:"
 msgstr ""
-"使用从场景选项卡访问的“添加子节点”对话框(或按 :kbd:`Ctrl+A`)创建具有以下节点"
-"的层次结构："
+"使用从“添加子场景/Add Child Node”选项访问的“添加子节点”对话框（或通过按Ctrl "
+"+ A键）来创建具有以下节点的层次结构："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:112
 msgid "Panel"
@@ -535,7 +532,6 @@ msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "另外，请记住，节点是通过名称而不是类型来引用的。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:336
-#, fuzzy
 msgid ""
 "The 'advanced' panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "

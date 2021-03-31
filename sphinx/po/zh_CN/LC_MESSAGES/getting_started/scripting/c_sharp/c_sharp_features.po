@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "自定义功能"
+msgstr "C# 特性"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -147,9 +146,9 @@ msgid ""
 "manually triggered by clicking the “Build” button at the top right corner of "
 "the editor window."
 msgstr ""
-"这些信号可以在编辑器或者在代码中使用``Connect``进行连接。如果想在编辑器中连接"
-"一个信号，你需要（重新）生成项目组件才能看到这个新的信号。生成操作可以点击 编"
-"辑窗口右上角的“Build” 按钮手动触发。"
+"这些信号可以在编辑器或者在代码中使用 ``Connect`` 进行连接。如果想在编辑器中连"
+"接一个信号，你需要（重新）生成项目组件才能看到这个新的信号。生成操作可以点击 "
+"编辑窗口右上角的“Build” 按钮手动触发。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:119
 msgid "Emitting signals is done with the ``EmitSignal`` method."
@@ -194,9 +193,8 @@ msgstr ""
 "之前执行（使用 ``Connect`` 或 ``EmitSignal``）。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:174
-#, fuzzy
 msgid "Preprocessor defines"
-msgstr "处理器函数"
+msgstr "预编译定义"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:176
 msgid ""
@@ -251,7 +249,7 @@ msgid ""
 msgstr ""
 "按照操作系统，会定义 ``GODOT_X11``、``GODOT_WINDOWS``、``GODOT_OSX``、"
 "``GODOT_ANDROID``、``GODOT_IOS``、``GODOT_HTML5``，或者 ``GODOT_SERVER`` 中的"
-"一个。这些名称在未来可能会被更改。这些名称是由 :ref:``OS <class_OS>`` 单例"
+"一个。这些名称在未来可能会被更改。这些名称是由 :ref:`OS <class_OS>` 单例"
 "（singleton）中的 ``get_name()`` 方法创建的，但是 Godot 与 Mono 只能在其中一"
 "部分平台上运行。"
 
@@ -259,35 +257,36 @@ msgstr ""
 msgid ""
 "When **exporting**, the following may also be defined depending on the "
 "export features:"
-msgstr "在**导出**时，根据导出功能，还可能定义以下内容："
+msgstr "在 **导出** 时，根据导出功能，还可能定义以下内容："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:234
 msgid ""
 "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the "
 "platform type."
 msgstr ""
-"``GODOT_PC``、``GODOT_MOBILE``或``GODOT_WEB``中的一种，取决于平台类型。"
+"``GODOT_PC`` 、 ``GODOT_MOBILE`` 或 ``GODOT_WEB`` 中的一种，取决于平台类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:236
 msgid ""
 "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only "
 "depending on the architecture."
 msgstr ""
-"``GODOT_ARM64_V8A``或``GODOT_ARMEABI_V7A``中的一个，仅在安卓系统上，取决于架"
-"构。"
+"``GODOT_ARM64_V8A`` 或 ``GODOT_ARMEABI_V7A`` 中的一个，仅在安卓系统上，取决于"
+"架构。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:238
 msgid ""
 "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the "
 "architecture."
-msgstr "``GODOT_ARM64``或``GODOT_ARMV7``中的一个，仅在iOS上，取决于架构。"
+msgstr "``GODOT_ARM64`` 或 ``GODOT_ARMV7`` 中的一个，仅在iOS上，取决于架构。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:240
 msgid ""
 "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the "
 "texture compression type."
 msgstr ""
-"``GODOT_S3TC``、``GODOT_ETC``和``GODOT_ETC2``中的任一种，取决于纹理压缩类型。"
+"``GODOT_S3TC`` 、 ``GODOT_ETC`` 和 ``GODOT_ETC2`` 中的任一种，取决于纹理压缩"
+"类型。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:242
 msgid ""

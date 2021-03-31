@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,9 @@ msgid "NuGet"
 msgstr "NuGet"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:14
+#, fuzzy
 msgid "**On Linux/macOS only:** pkg-config"
-msgstr ""
+msgstr "**仅在 Linux/macOS 上：** pkg-config"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
 msgid ""
@@ -51,7 +52,7 @@ msgstr "您可能需要导入必要的证书，以使NuGet执行HTTPS请求。"
 msgid ""
 "The recommended method is to use **curl**'s CA (Certificate Autorities) "
 "certificate bundle."
-msgstr ""
+msgstr "推荐的方法是使用**curl**的CA（Certificate Autorities）证书捆绑。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:21
 msgid ""
@@ -59,12 +60,15 @@ msgid ""
 "run it from the Mono command line prompt (or the regular prompt if you added "
 "Mono's ``bin`` directory to your ``PATH`` environment variable)::"
 msgstr ""
+"运行以下命令来下载和导入它。在Windows上，你可以在Mono命令行提示符下运行它（如"
+"果你将Mono的``bin``目录添加到你的``PATH``环境变量中，则在普通提示符下运"
+"行）：:"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:29
 msgid ""
 "Alternatively, you can use the following command, though it's deprecated and "
 "may not work correctly::"
-msgstr ""
+msgstr "或者，您可以使用以下命令，尽管该命令被弃用，但可能无法正常工作：："
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:34
 msgid "Environment variables"
@@ -405,6 +409,9 @@ msgid ""
 "targeting other platforms like Android, iOS and WebAssembly. You will have "
 "to build the Mono runtime yourself for those platforms."
 msgstr ""
+"当为桌面构建Godot时，你很可能会使用系统上安装的预构建的Mono运行时。在针对其他"
+"平台（如Android、iOS和WebAssembly）时，可能不会出现这种情况。你将不得不自己为"
+"这些平台构建Mono运行时。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:235
 #, fuzzy
@@ -477,24 +484,26 @@ msgid ""
 "After building Godot for each architecture, you will notice SCons has copied "
 "the Mono libraries for each of them to the output directory:"
 msgstr ""
+"在为每个架构构建Godot之后，你会注意到SCons已经将每个架构的Mono库复制到输出目"
+"录中："
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:279
 msgid ""
 "The last three are only for iOS devices and are not available for the iOS "
 "simulator."
-msgstr ""
+msgstr "后面三个只针对iOS设备，iOS模拟器无法使用。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:281
 msgid ""
 "These libraries must be put in universal (multi-architecture) \"fat\" files "
 "to be distributed with the export templates."
-msgstr ""
+msgstr "这些库必须放在通用（多架构）的 \"胖 \"文件中，与导出模板一起分发。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:284
 msgid ""
 "The following bash script will create the \"fat\" libraries in the directory "
 "``#bin/ios/iphone-mono-libs``:"
-msgstr ""
+msgstr "以下bash脚本将在``#bin/ios/iphone-mono-libs``目录下创建 \"fat \"库："
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:300
 msgid ""
@@ -502,6 +511,8 @@ msgid ""
 "templates. The Godot editor will look for the libraries in ``<templates>/"
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
+"``iphone-mono-libs``文件夹必须与导出模板一起分发。Godot编辑器将在"
+"``<templates>/iphone-mono-libs/lib<name>.iphone.fat.a``中查找库。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:304
 #, fuzzy
@@ -512,7 +523,7 @@ msgstr "**网页：** WebAssembly"
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
 "whether the Mono module is enabled."
-msgstr ""
+msgstr "无论Mono模块是否启用，目前为WebAssembly构建都涉及相同的过程。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:308
 #, fuzzy
@@ -543,6 +554,10 @@ msgid ""
 "the SCons ``platform`` option, e.g.: ``<templates>/bcl/windows``, "
 "``<templates>/bcl/javascript``."
 msgstr ""
+"导出模板还必须包括每个目标平台的BCL（基础类库）。Godot在``<templates>/bcl/"
+"<target_platform>``中查找BCL文件夹，其中``<target_platform>``是传递给"
+"SCons``platform``选项的相同名称，例如。``<templates>/bcl/windows``, "
+"``<templates>/bcl/javascript``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:323
 #, fuzzy
@@ -597,6 +612,8 @@ msgid ""
 "and macOS, but this may change in the future as they're not guaranteed to be "
 "the same (as is the case with the Windows BCL)."
 msgstr ""
+"目前，我们假设Linux和macOS都可以使用相同的BCL配置文件，但未来可能会发生变化，"
+"因为它们不能保证相同（就像Windows BCL的情况一样）。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:341
 msgid ""
@@ -604,6 +621,8 @@ msgid ""
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
+"如果目标平台与Godot编辑器的平台相同，那么编辑器在导出模板中找不到BCL时，就会"
+"使用它所运行的BCL（``<data_folder>/Mono/lib/mono/4.5``）。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:346
 #, fuzzy
@@ -616,6 +635,7 @@ msgid ""
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
+"要对其他平台进行超前（AOT）编译，Godot需要访问该平台和架构的Mono交叉编译器。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:351
 msgid ""
@@ -623,6 +643,8 @@ msgid ""
 "folder. The location of this folder is ``<data_folder>/Tools/aot-compilers/"
 "``."
 msgstr ""
+"Godot将在AOT编译器文件夹中寻找交叉编译器可执行文件。这个文件夹的位置是"
+"``<data_folder>/Tools/aot-compilers/``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:354
 #, fuzzy
@@ -639,6 +661,9 @@ msgid ""
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
+"构建完成后，将可执行文件复制到Godot AOT编译器目录下。可执行文件的名称是``<三"
+">-mono-sgen``，例如：``aarch64-apple-darwin-mono-sgen``。``aarch64-apple-"
+"darwin-mono-sgen``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:361
 msgid "Command-line options"
@@ -661,7 +686,7 @@ msgstr "在启用Mono模块的情况下构建Godot。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:370
 msgid "**mono_glue**\\ =\\ **yes** | no"
-msgstr ""
+msgstr "**mono_glue**\\ =\\ **yes** | no"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:372
 msgid ""
@@ -683,7 +708,7 @@ msgstr "目标平台和体系结构的Mono安装目录的路径。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:379
 msgid "**xbuild_fallback**\\ =yes | **no**"
-msgstr ""
+msgstr "**xbuild_fallback**\\ =yes | **no**"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:381
 msgid "Whether to fallback to xbuild if MSBuild is not available."
@@ -691,7 +716,7 @@ msgstr "如果MSBuild不可用，是否回退到xbuild。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:383
 msgid "**mono_static**\\ =yes | no"
-msgstr ""
+msgstr "**mono_static**\\ =yes | no"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:385
 msgid "Whether to link the Mono runtime statically."
@@ -700,11 +725,11 @@ msgstr "是否静态链接Mono运行时。"
 #: ../../docs/development/compiling/compiling_with_mono.rst:386
 msgid ""
 "The default is **yes** for iOS and WASM, and **no** for other platforms."
-msgstr ""
+msgstr "iOS和WASM默认为**是**，其他平台为**否**。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:388
 msgid "**copy_mono_root**\\ =yes | **no**"
-msgstr ""
+msgstr "**copy_mono_root**\\ =yes | **no**"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:390
 msgid ""

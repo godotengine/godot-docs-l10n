@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,16 +110,20 @@ msgid ""
 "create a shader or visual shader. Regular shaders use code to set their "
 "properties while a visual shader uses a node based workflow."
 msgstr ""
+"接下来，点击着色器材质，查看其属性。从这里你可以创建一个着色器或视觉着色器。"
+"常规着色器使用代码来设置它们的属性，而视觉着色器则使用基于节点的工作流程。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:43
 msgid ""
 "If you need to you can convert a visual shader to a text shader. However you "
 "can't convert a text shader to a visual shader."
 msgstr ""
+"如果你需要，你可以将视觉着色器转换为文本着色器。但是你不能将文本着色器转换为"
+"视觉着色器。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:46
 msgid "Choose one of them and you can start editing your shader."
-msgstr ""
+msgstr "选择其中一个，你就可以开始编辑你的着色器。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:50
 msgid ""
@@ -139,10 +143,13 @@ msgid ""
 "replicate a text shader as nodes, or it can be used as a preview for "
 "converting your visual shader to a text shader."
 msgstr ""
+"在视觉着色器编辑器中，你可以点击一个按钮，看看你的视觉着色器作为着色器代码的"
+"样子。如果你想复制一个文本着色器作为节点，这可能是有用的，或者它可以作为将你"
+"的视觉着色器转换为文本着色器的预览。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:67
 msgid "To learn more about visual shaders, read :ref:`doc_visual_shaders`."
-msgstr ""
+msgstr "要了解更多关于可视化着色器的信息，请阅读 :ref:`doc_visual_shaders` 。"
 
 #: ../../docs/tutorials/shading/shader_materials.rst:70
 msgid "Converting to ShaderMaterial"
@@ -163,3 +170,5 @@ msgid ""
 "Using the convert option will turn the SpatialMaterial into a ShaderMaterial "
 "with a text shader, not a visual shader."
 msgstr ""
+"使用convert选项将把SpatialMaterial变成一个带有文本着色器的ShaderMaterial，而"
+"不是视觉着色器。"

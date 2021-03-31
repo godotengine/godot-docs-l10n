@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,9 @@ msgid ""
 "BMP (``.bmp``) - No support for 16-bit per pixel images. Only 1-bit, 4-bit, "
 "8-bit, 24-bit, and 32-bit per pixel images are supported."
 msgstr ""
+"BMP (``.bmp``) - 16 ビット/ピクセルの画像はサポートされていません。1 ビット、"
+"4 ビット、8 ビット、24 ビット、32 ビット/ピクセル画像のみがサポートされていま"
+"す。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
@@ -184,8 +187,9 @@ msgid ""
 "pixel art."
 msgstr ""
 "**Lossless(ロスレス) Compression:** これは2Dアセットで最も一般的な圧縮です。"
-"これは、人為的な影響を受けずにアセットを表示するものであり、ディスク圧縮は適"
-"切です。ただし、VRAM圧縮よりもかなり多くのビデオメモリを使用します。"
+"これは、あらゆるアーティファクトの影響を受けずにアセットを表示できるものであ"
+"り、ディスク圧縮はまずまずです。ただし、VRAM圧縮よりもかなり多くのビデオメモ"
+"リを使用します。これはピクセル アート用の推奨設定でもあります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:71
 msgid ""
@@ -380,6 +384,10 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godotでは、X+、Y-、Z+の座標を使用するために、法線マップを変換する必要がありま"
+"す。つまり、他のエンジンで使用するために作られたマテリアルをインポートした場"
+"合、法線マップの Y 軸が反転するように変換する必要があるかもしれません。そうし"
+"ないと、法線マップの方向がY軸上で反転して見えることがあります。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:128
 msgid ""

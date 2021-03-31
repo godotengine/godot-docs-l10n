@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,7 +214,7 @@ msgid ""
 "recompiling the engine."
 msgstr ""
 "Обратите внимание, что с помощью GDNative вы можете написать "
-"высокопроизводительный код, используя скомпилированные языкы, такие как C, C+"
+"высокопроизводительный код, используя скомпилированные языки, такие как C, C+"
 "+, Rust или Python (используя компилятор Cython) без перекомпиляции движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
@@ -241,10 +241,10 @@ msgid ""
 msgstr ""
 "Обратите внимание, что в рабочем пространстве 3D нет того же количества "
 "инструментов, как в рабочем пространстве 2D. Вам понадобятся внешние "
-"программы или аддоны для редактирования ландшафтов, анимации сложных "
-"персонажей и т.д. Godot предоставляет полный API для расширения "
-"функциональности редактора, используя код игры. См. `Редактор Godot - это "
-"игра Godot` ниже."
+"программы или аддоны для редактирования ландшафтов (terrain-ов), анимации "
+"сложных персонажей и т.д. Godot предоставляет полный API для расширения "
+"функциональности редактора с помощью кода игры. См. `Редактор Godot - это "
+"игра Godot`_ ниже."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 msgid "|image4|"
@@ -272,7 +272,7 @@ msgstr ""
 "Godot предлагает полностью открытую кодовую базу под лицензией **MIT**. Это "
 "означает, что все технологии, которые поставляются с ней, должны быть "
 "бесплатными и свободными. По большей части, они разрабатываются с нуля "
-"самими способствующими участниками."
+"членами сообщества."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
 msgid ""
@@ -294,7 +294,7 @@ msgid ""
 msgstr ""
 "С другой стороны, открытая кодовая база означает, что вы можете **изучать и "
 "расширять движок** как вам угодно. Вы также можете легко отлаживать игры, "
-"поскольку Godot будет печатать ошибки с трассировкой стека, даже если они "
+"поскольку Godot будет печатать ошибки с отслеживанием стека, даже если они "
 "исходят из самого движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
@@ -302,8 +302,8 @@ msgid ""
 "This **does not affect the work you do with Godot** in any way: there's no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
-"В любом случае, это **не влияет на работу, которую вы совершаете с Godot**: "
-"никаких условий для движка или всего, что вы делаете с ним, нет."
+"Это **ни коим образом не влияет на работу, которую вы совершаете с Godot**: "
+"нет никаких условий для движка или всего, что вы делаете с ним."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,7 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:327
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:347
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:766
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:767
 msgid "**Good**:"
 msgstr "**良好的**："
 
@@ -126,7 +126,7 @@ msgstr "**良好的**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:334
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:354
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:772
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:773
 msgid "**Bad**:"
 msgstr "**糟糕的**："
 
@@ -255,14 +255,13 @@ msgstr ""
 "可以用来区分文本注释和停用的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
-#, fuzzy
 msgid ""
 "In the script editor, to toggle the selected code commented, press :kbd:"
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"在脚本编辑器中，要切换已注释的选定代码，请按<kbd>Ctrl</kbd><kbd>K</kbd>。此功"
-"能在选定行的开头添加一个#符号。"
+"在脚本编辑器中，要切换已注释的选定代码，请按 :kbd:`Ctrl + K`。此功能在选定行"
+"的开头添加一个 **#** 注释符号。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
@@ -273,8 +272,8 @@ msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
-"请始终在运算符前后和逗号后使用一个空格。也避免在字典引用和函数调用中使用多余"
-"的空格。"
+"请始终在运算符前后和逗号后使用一个空格。避免在字典引用和函数调用中使用多余的"
+"空格，也不要创建 ``列（columns）``。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
@@ -292,9 +291,8 @@ msgstr ""
 "尽量使用双引号，除非单引号可以让字符串中需要转义的字符变少。见如下示例："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "成员"
+msgstr "数字"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -308,16 +306,14 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:452
-#, fuzzy
 msgid "**Good**::"
-msgstr "**良好的**："
+msgstr "**良好的**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:433
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:445
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:460
-#, fuzzy
 msgid "**Bad**::"
-msgstr "**糟糕的**："
+msgstr "**糟糕的**::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:438
 msgid ""
@@ -345,9 +341,8 @@ msgstr ""
 "导致风格不一致的代码。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
-#, fuzzy
 msgid "File names"
-msgstr "文件名称"
+msgstr "文件命名"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:480
 msgid ""
@@ -390,8 +385,7 @@ msgstr "使用蛇形命名法（snake\\_case）来命名函数与变量："
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
-msgstr ""
-"在虚方法（用户必须重写的函数）、私有函数、和私有变量前加一个下划线（\\_）："
+msgstr "在虚方法（用户覆写的函数）、私有函数和私有变量前加一个下划线（\\_）："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Signals"
@@ -463,8 +457,7 @@ msgstr "虚拟回调出现在类的接口之前。"
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
-msgstr ""
-"对象的构造和初始化函数``_init``和``_ready``应该在运行时修改对象的函数之前。"
+msgstr "对象的构造和初始化函数``_init``和``_ready``在修改对象的函数之前运行。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
 msgid "Class declaration"
@@ -503,11 +496,11 @@ msgid "Signals and properties"
 msgstr "信号和属性"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:631
-#, fuzzy
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
-msgstr "编写信号声明，后跟属性（即成员变量），在文档字符串之后。"
+msgstr ""
+"先声明信号，后跟属性（即成员变量），它们都在文档注释（docstring）之后。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:634
 msgid ""
@@ -533,9 +526,8 @@ msgstr ""
 "的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
-#, fuzzy
 msgid "Member variables"
-msgstr "成员访问"
+msgstr "成员变量"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 msgid ""
@@ -547,7 +539,6 @@ msgstr ""
 "量。相反，你应该将它们在方法内部定义为局部变量。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
-#, fuzzy
 msgid "Local variables"
 msgstr "局部变量"
 
@@ -578,11 +569,10 @@ msgstr ""
 "``_ready()`` 回调，当Godot向场景树添加一个节点时调用它。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
-#, fuzzy
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
-msgstr "这些函数应首先出现，因为它们显示如何初始化对象。"
+msgstr "这些函数应该声明在脚本最前面，因为它们显示了对象是如何初始化的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:693
 msgid ""
@@ -629,17 +619,9 @@ msgstr "推断类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
-msgstr "在大多数情况下，你可以让编译器使用``:=``来推断类型："
+msgstr "在大多数情况下，你可以让编译器使用 ``:=`` 来推断类型："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
-msgid "::"
-msgstr "::"
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:759
-msgid "var health := 0  # The compiler will use the int type."
-msgstr "var health := 0  # 编译器会使用int类型。"
-
-#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:761
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:762
 msgid ""
 "However, in a few cases when context is missing, the compiler falls back to "
 "the function's return type. For example, ``get_node()`` cannot infer a type "
@@ -647,5 +629,5 @@ msgid ""
 "should set the type explicitly."
 msgstr ""
 "然而，在少数情况下，当上下文缺失时，编译器会回退到函数的返回类型。例如，在节"
-"点的场景或文件被加载到内存中之前，``get_node()``无法自动推断类型。在这种情况"
-"下，你应该明确地设置类型。"
+"点的场景或文件被加载到内存中之前， ``get_node()`` 无法自动推断类型。在这种情"
+"况下，你应该明确地设置类型。"

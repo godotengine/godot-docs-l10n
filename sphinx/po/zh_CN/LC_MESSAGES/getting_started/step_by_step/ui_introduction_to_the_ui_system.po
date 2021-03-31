@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr "用于UI设计的5个最常见的 ``Control`` 节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
-msgstr "``TextureRect``"
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:73
 msgid ""
@@ -185,8 +185,8 @@ msgid ""
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
-"**TextureRect** 在UI内显示纹理或图像。它看起来类似于 ``Sprite`` 节点，但是它"
-"提供了多种缩放模式。设置 ``拉伸模式（Stretch Mode）`` 属性以更改其行为："
+"**TextureRect** 在UI内显示纹理或图像。它与Sprite节点类似，但提供了多种缩放模"
+"式，设置拉伸模式属性可改变其行为:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:77
 msgid ""
@@ -246,10 +246,9 @@ msgstr "用红色调制的 ``TextureRect``"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:98
 msgid "TextureButton"
-msgstr "``TextureButton``"
+msgstr "纹理按钮（TextureButton）"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -257,11 +256,10 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**纹理按钮（TextureButton）** 类似于 ``纹理矩形（TextureRect）``，只不过它有5"
-"个纹理槽：每个纹理槽对应一个按钮的状态。大多数时候，您会使用 ``普通槽"
-"（Normal）``、``按下槽（Pressed）``、和 ``悬停槽（Hover）`` 纹理。如果您的界"
-"面监听键盘的输入，``聚焦槽（Focused）`` 是很有用的。第六个图像插槽，``点击遮"
-"罩（Click Mask）``，允许您使用一个2位的纯黑白图像定义可点击区域。"
+"**纹理按钮** （TextureButton）类似于纹理矩形（TextureRect），只不过它有6个纹"
+"理槽：每个纹理槽对应一个按钮的状态。大多数时候，会使用Normal（普通）、"
+"Pressed（按下）和Hover（悬停）纹理。Focused（聚焦）适用于监听键盘输入的界面。"
+"Click Mask（点击遮罩）允许你使用1位的纯黑白图片定义可点击区域。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -286,7 +284,7 @@ msgstr "``TextureButton`` 及其5个纹理插槽"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:120
 msgid "TextureProgress"
-msgstr "``TextureProgress``"
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:122
 msgid ""
@@ -294,8 +292,8 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
-"**TextureProgress** 层多达3个精灵来创建进度条。``Under`` 和 ``Over`` 纹理将显"
-"示进度条的值的 ``Progress`` 夹在中间。"
+"**TextureProgress** 最多可以将3个精灵分层来创建一个进度条。Under和Over纹理将"
+"Progress纹理夹在中间，显示进度条的数值。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:126
 msgid ""
@@ -340,10 +338,9 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"**标签（Label）** 打印文本到屏幕。您将在属性检查器中 ``Label`` 部分找到它的所"
-"有属性。在 ``Text`` 属性中写入文本，如果希望它遵守文本框的大小，请选中 "
-"``Autowrap``。如果关闭 ``Autowrap``，则无法缩放节点。您可以使用 ``Align`` 和 "
-"``Valign`` 分别水平和垂直对齐文本。"
+"**标签** 打印文本到屏幕。您可以在检查器的标签部分中找到其所有属性。将文本写"
+"入 ``Text`` 属性中，然后检查自动换行是否要遵守文本框的大小,如果禁用自动包裹，"
+"则将无法缩放节点。您可以分别使用Align和Valign将文本水平和垂直对齐。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
@@ -351,7 +348,7 @@ msgstr "``Label`` 图片"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
-msgstr "``NinePatchRect``"
+msgstr "九宫格纹理（NinePatchRect）"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:160
 msgid ""
@@ -377,18 +374,18 @@ msgid ""
 msgstr "在Godot中，有两个工作流程可构建可伸缩和灵活的界面："
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+#, fuzzy
 msgid ""
-"You have many container nodes at your disposal that scale and place UI "
-"elements for you. They take control over their children."
+"**Place UI elements precisely with anchors:** Use the **Layout** menu to "
+"place and resize a UI element relative to its parent."
 msgstr ""
-"您有许多容器节点可供使用，可以为您缩放和放置UI元素。 他们控制自己的子项。"
+"另一方面，您有布局菜单。它帮助您在其父级中锚定、放置和重新调整UI元素的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
-"On the other side, you have the layout menu. It helps you to anchor, place "
-"and resize a UI element within its parent."
+"**Arrange control nodes automatically with containers:** Use container nodes "
+"to automatically scale and place UI elements."
 msgstr ""
-"另一方面，您有布局菜单。它帮助您在其父级中锚定、放置和重新调整UI元素的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -595,7 +592,8 @@ msgstr ""
 "了："
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-msgid "MarginContainer, to add margins around part of the UI"
+#, fuzzy
+msgid "MarginContainer, to add margins around parts of the UI"
 msgstr "``MarginContainer``，在UI的部件周围添加边距"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295

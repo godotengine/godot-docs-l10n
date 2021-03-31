@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "и т.д."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -46,7 +45,7 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
-"В Godot 3.0 мы используем более современный подход к импорту: просто "
+"В Godot 3.0+ мы используем более современный подход к импорту: просто "
 "перетащите свои ассеты (файлы изображений, сцены, аудиофайлы, шрифты и т.д.) "
 "прямо в папку проекта (скопируйте их вручную с помощью проводника файлов "
 "ОС). Godot автоматически импортирует эти файлы внутри и сохранит "
@@ -82,15 +81,14 @@ msgid "Changing import parameters"
 msgstr "Изменение параметров импорта"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:32
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) "
 "select the relevant resource in the filesystem dock:"
 msgstr ""
-"Изменить параметры импорта ресурса в Godot легко (опять же, помните, что "
-"параметры импорта присутствуют только в неродных типах ресурсов Godot). "
-"Выберите соответствующий ресурс в панели файловой системы:"
+"Чтобы изменить параметры импорта ресурса в Godot (опять же, помните, что "
+"параметры импорта присутствуют только в неродных типах ресурсов Godot) "
+"выберите соответствующий ресурс в панели файловой системы:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:38
 msgid ""

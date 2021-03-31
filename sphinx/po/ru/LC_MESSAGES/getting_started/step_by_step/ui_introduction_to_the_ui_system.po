@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "Дизайн интерфейса с помощью узлов контроля"
+msgstr "Дизайн интерфейса с помощью узлов Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -32,29 +32,27 @@ msgstr ""
 "Дисплеи компьютеров, мобильных телефонов и экраны телевизоров бывают разных "
 "форм и размеров. Чтобы выпустить игру, вам необходимо сделать поддержку "
 "разных соотношений сторон и разрешений экрана. Бывает нелегко создать "
-"отзывчивый интерфейс, который адаптируется ко всем платформам. К счастью, "
+"отзывчивый интерфейс, который адаптируется ко всем платформам, к счастью, "
 "Godot предоставляет мощный инструментарий для проектирования и управления "
-"чуткого пользовательского интерфейса."
+"отзывчивого пользовательского интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:14
 msgid "Godot's editor is made with the engine's UI framework"
 msgstr ""
-"Редактор Godot создан на основе каркаса пользовательского интерфейса движка"
+"Редактор Godot создан при помощи собственных средств редактирования UI "
+"(пользовательского интерфейса)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:16
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
-"Это руководство поможет вам начать разработку пользовательского интефейса. "
-"Вы узнаете:"
+msgstr "Это руководство поможет вам начать разработку UI. Вы узнаете:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:18
 msgid "The five most useful control nodes to build your games' interface"
-msgstr ""
-"Пять наиболее полезных узлов управления для сборки ваших игровых интерфейсов"
+msgstr "Пять наиболее полезных узлов для создания ваших игровых интерфейсов"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "How to work with the anchor of UI elements"
-msgstr "Как работать с якорями элементов пользовательского интерфейса"
+msgstr "Как работать с якорями элементов UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:20
 msgid ""
@@ -69,7 +67,7 @@ msgid ""
 "ref:`GUI Containers <doc_gui_containers>` documentation page)."
 msgstr ""
 "Пять наиболее распространенных контейнеров (узнать о контейнерах больше вы "
-"сможете на странице документации :ref:`GUI Containers <doc_gui_containers>`)."
+"сможете на странице документации :ref:`GUI Контейнеры <doc_gui_containers>`)."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid ""
@@ -143,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:50
 msgid "The 5 most common UI elements"
-msgstr "Пять наиболее распространенных элементов пользовательского интерфейса"
+msgstr "Пять наиболее распространенных элементов UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:52
 msgid ""
@@ -158,8 +156,8 @@ msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
-"Для большинства игр вам понадобится всего пять типов элементов "
-"пользовательского интерфейса и несколько контейнеров. Вот пять узлов Control:"
+"Для большинства игр вам понадобится всего пять типов элементов UI и "
+"несколько Контейнеров. Вот пять узлов Control:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:58
 msgid "Label: for displaying text"
@@ -190,9 +188,7 @@ msgstr "TextureButton: для создания кнопок"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:68
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
-"Пять наиболее распространенных узлов контроля для дизайна пользовательского "
-"интерфейса"
+msgstr "Пять наиболее распространенных узлов Control для дизайна UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:71
 msgid "TextureRect"
@@ -287,7 +283,7 @@ msgstr ""
 "случаев вы будете использовать текстуры Normal (нормальное состояние), "
 "Pressed (нажатое) и Hover (при наведении). Focused (сфокусированное) "
 "полезно, если ваш интерфейс принимает ввод с клавиатуры. Шестой слот "
-"изображения, Click Mask (маска клика), позволяет определить доступную для "
+"изображения, Click Mask (маска нажатия), позволяет определить доступную для "
 "клика область, используя 1-битное изображение, состоящее только из черного и "
 "белого цветов."
 
@@ -382,7 +378,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "Picture of a Label"
-msgstr "Изображение Label"
+msgstr "Скриншот элемента Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:158
 msgid "NinePatchRect"
@@ -414,20 +410,19 @@ msgid ""
 msgstr "Есть два способа создания масштабируемых и гибких интерфейсов в Godot:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+#, fuzzy
 msgid ""
-"You have many container nodes at your disposal that scale and place UI "
-"elements for you. They take control over their children."
+"**Place UI elements precisely with anchors:** Use the **Layout** menu to "
+"place and resize a UI element relative to its parent."
 msgstr ""
-"У вас в распоряжении есть множество узлов контейнера, которые масштабируют и "
-"размещают элементы интерфейса. Они управляют своими потомками."
+"С другой стороны, у вас есть меню макета расположения (layout). Оно помогает "
+"вам закрепить, разместить и изменить размер элемента внутри его родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
-"On the other side, you have the layout menu. It helps you to anchor, place "
-"and resize a UI element within its parent."
+"**Arrange control nodes automatically with containers:** Use container nodes "
+"to automatically scale and place UI elements."
 msgstr ""
-"С другой стороны, у вас есть меню макета. Оно помогает вам закрепить, "
-"разместить и изменить размер элемента внутри его родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -440,12 +435,12 @@ msgid ""
 "grid, etc."
 msgstr ""
 "Эти два подхода не всегда совместимы. Поскольку контейнер управляет своими "
-"потомками, вы не можете использовать меню макета на них. Каждый контейнер "
-"имеет определенный эффект, так что вам может потребоваться вложить несколько "
-"из них, чтобы получить работающий интерфейс. С подходом макета вы работаете "
-"снизу вверх, над потомками. Поскольку вы не вставляете дополнительных "
-"контейнеров в сцену, это может сделать более чистой иерархию, но так сложнее "
-"расположить элементы в ряд, колонку, сетку и прочее."
+"потомками, вы не можете использовать меню макета расположения на них. Каждый "
+"контейнер имеет определенный эффект, так что вам может потребоваться вложить "
+"несколько из них, чтобы получить работающий интерфейс. С подходом макета вы "
+"работаете снизу вверх, над потомками. Поскольку вы не вставляете "
+"дополнительных контейнеров в сцену, это может сделать более чистой иерархию, "
+"но так сложнее расположить элементы в ряд, колонку, сетку и прочее."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:179
 msgid ""
@@ -453,11 +448,11 @@ msgid ""
 "fits best in each situation."
 msgstr ""
 "По мере создания интерфейсов для ваших игр и инструментов, вы развиваете "
-"ощущение того, что лучше подходит в конкретной ситуации."
+"чувство того, что лучше подходит в конкретной ситуации."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:183
 msgid "Place UI elements precisely with anchors"
-msgstr "Размещайте элементы интерфейса в точности с якорями"
+msgstr "Размещайте элементы интерфейса точно при помощи якорей"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:185
 msgid ""
@@ -473,7 +468,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "The anchor property"
-msgstr "Свойство якоря"
+msgstr "Свойство \"якорь\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:195
 msgid "How to change the anchor"
@@ -488,16 +483,16 @@ msgid ""
 "inspector's 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
-"Как и любые свойства, вы можете редактировать 4 якорные точки в Инспекторе, "
-"но это не самый удобный путь. Когда вы выделяете управляющий узел, над окном "
-"просмотра в панели инструментов появляется меню макета. Оно дает вам список "
-"иконок для установки всех 4 якорей одним кликом вместо использования 4 "
-"свойств Инспектора. Меню макета будет видно лишь тогда, когда вы выбрали "
-"управляющий узел."
+"Вы можете редактировать 4 якорные точки в Инспекторе как любые другие "
+"свойства, но это не самый удобный путь. Когда вы выделяете управляющий узел, "
+"над окном просмотра в панели инструментов появляется меню макета "
+"расположения. Оно дает вам список иконок для установки всех 4 якорей одним "
+"кликом вместо использования 4 свойств Инспектора. Меню макета расположения "
+"будет видно лишь тогда, когда вы выбрали управляющий узел."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "The layout menu in the viewport"
-msgstr "Меню макета в окне просмотра"
+msgstr "Меню макета расположения в окне просмотра"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:209
 msgid "Anchors are relative to the parent container"
@@ -667,7 +662,8 @@ msgstr ""
 "для большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-msgid "MarginContainer, to add margins around part of the UI"
+#, fuzzy
+msgid "MarginContainer, to add margins around parts of the UI"
 msgstr ""
 "MarginContainer, для добавления полей вокруг частей пользовательского "
 "интерфейса"

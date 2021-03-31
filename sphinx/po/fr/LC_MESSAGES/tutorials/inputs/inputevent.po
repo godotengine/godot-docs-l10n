@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,11 +133,12 @@ msgstr ""
 "permet à l'interface graphique d'intercepter les événements."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:82
+#, fuzzy
 msgid ""
 "Second, it will try to feed the input to the GUI, and see if any control can "
 "receive it. If so, the :ref:`Control <class_Control>` will be called via the "
 "virtual function :ref:`Control._gui_input() "
-"<class_Control_method__gui_input>` and the signal \"input_event\" will be "
+"<class_Control_method__gui_input>` and the signal \"gui_input\" will be "
 "emitted (this function is re-implementable by script by inheriting from it). "
 "If the control wants to \"consume\" the event, it will call :ref:`Control."
 "accept_event() <class_Control_method_accept_event>` and the event will not "

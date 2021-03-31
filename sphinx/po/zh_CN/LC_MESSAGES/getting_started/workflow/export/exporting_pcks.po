@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "导出包、补丁、和mod"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
 msgid "Use cases"
-msgstr "用例"
+msgstr "使用案例"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:9
 msgid ""
@@ -62,9 +62,7 @@ msgstr "PCK文件概述"
 msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
-msgstr ""
-"Godot通过一个名为 **资源包** （PCK文件，扩展名为 ``.pck``）的功能，启用此功"
-"能。"
+msgstr "Godot通过 **资源包** （PCK文件，扩展名为 ``.pck`` ）实现此功能。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
 msgid "**Advantages:**"
@@ -84,14 +82,13 @@ msgstr "提供mod支持"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr "mods不需要公开源代码"
+msgstr "Mod不需要公开源代码"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
 msgstr "更加模块化的项目结构"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
-#, fuzzy
 msgid "users don't have to replace the entire game"
 msgstr "用户无需替换整个游戏"
 
@@ -101,8 +98,8 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
-"使用它们的第一部分涉及导出项目，并将其分发给玩家。然后，当以后想要添加功能或"
-"内容时，他们只是通过PCK文件将更新分发给用户。"
+"除第一次需要提供完整导出给用户外，之后添加的功能或内容，只需要使用此功能提供"
+"PCK文件给用户更新即可。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
@@ -228,7 +225,6 @@ msgstr ""
 "景。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
-#, fuzzy
 msgid ""
 "By default, if you import a file with the same file path/name as one you "
 "already have in your project, the imported one will replace it. This is "
@@ -237,9 +233,9 @@ msgid ""
 "of creating patches for one's own game. A PCK file of this kind can fix the "
 "content of a previously loaded PCK."
 msgstr ""
-"如果导入的文件与项目中已有的文件具有相同的文件路径/名称，则导入的文件将替换"
+"如果导入的文件与项目中已有的文件具有相同的文件路径和名称，则导入的文件将替换"
 "它。创建DLC或mod时需要注意这一点（使用工具将mods隔离到特定mods子文件夹时，很"
-"容易解决）。但是，这也是为自己的游戏创建补丁的一种方式。这种PCK文件可以修复先"
+"容易解决）。但是，这也是为自己的游戏创建补丁的一种方式，这种PCK文件可以修复先"
 "前加载的PCK的内容。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123

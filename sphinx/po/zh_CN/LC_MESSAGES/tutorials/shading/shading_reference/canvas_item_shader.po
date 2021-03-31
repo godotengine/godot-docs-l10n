@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,7 +154,7 @@ msgstr "片段内置"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr ""
+msgstr "全局内置的功能随处可见，包括自定义功能。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:52
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:114
@@ -176,6 +176,10 @@ msgid ""
 "``VisualServer.set_shader_time_scale()`` with the desired time scale factor "
 "as parameter (``1.0`` being the default)."
 msgstr ""
+"引擎启动后的全局时间，以秒为单位(始终为正数)。这取决于翻转设置(默认为3600"
+"秒)。不受 :ref:`time_scale<class_Engine_property_time_scale>` 或暂停的影响，"
+"但可以通过调用 ``VisualServer.set_shader_time_Scale()`` 来覆盖 ``TIME`` 变量"
+"的时标，并将所需的时标因子作为参数( ``1.0`` 为默认值)。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:63
 #, fuzzy
@@ -349,10 +353,11 @@ msgstr "in vec4 **COLOR**"
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:136
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:183
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:233
+#, fuzzy
 msgid ""
 "Final modulate color. If used, **COLOR** will not be multiplied by modulate "
 "automatically after the fragment function."
-msgstr ""
+msgstr "最后的调制颜色。如果使用，**COLOR**不会在片段函数后自动乘以调制。"
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:140
 #, fuzzy

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,8 @@ msgid ""
 "Spatial gizmo plugins are used by the editor and custom plugins to define "
 "the gizmos attached to any kind of Spatial node."
 msgstr ""
-"编辑器和自定义插件使用空间变换轴插件定义附加到任何类型的空间节点的变换轴。"
+"Spatial gizmo[空间辅助线框]插件是由编辑器和自定义插件来定义附加到任何类型的"
+"Spatial节点的辅助线框。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:12
 msgid ""
@@ -39,8 +40,9 @@ msgid ""
 "less clutter in your plugin structure, while the second one will let you "
 "store some per-gizmo data."
 msgstr ""
-"本教程向您展示自定义变换轴的两种主要定义方法。第一种方法适用于简单变换轴，可"
-"以减少插件结构的混乱，而第二种方法将允许您存储每个变换轴的数据。"
+"本教程将向您展示定义您自己的自定义辅助线框的两种主要方法。第一种方法对于简单"
+"的辅助线框来说效果很好，并且在你的插件结构中较少的混乱，而第二种方法将让你存"
+"储每个辅助线框的一些数据。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:16
 msgid ""
@@ -76,9 +78,9 @@ msgid ""
 "gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
 "the second approach."
 msgstr ""
-"对于简单变换轴来说，继承 :ref:`EditorSpatialGizmoPlugin "
-"<class_EditorSpatialGizmoPlugin>` 就足够了。如果你想为每个变换轴存储数据，或"
-"者你想将Godot 3.0版本的变换轴移植到3.1以上版本中，你应该采用第二种方法。"
+"对于简单的辅助线框，只要继承 :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` 就足够了。如果你想存储每个线框的一些数据，"
+"或者你要把一个Godot 3.0的线框移植到3.1+，你应该选择第二种方法。"
 
 #: ../../docs/tutorials/plugins/editor/spatial_gizmos.rst:65
 msgid "Simple approach"

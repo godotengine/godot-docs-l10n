@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr "Організація проекта"
+msgstr "Організація проєкта"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
 msgid "Introduction"
@@ -32,7 +32,7 @@ msgid ""
 "tutorial suggests a workflow which should be a good starting point. We will "
 "also cover using version control with Godot."
 msgstr ""
-"Оскільки у Godot немає обмежень щодо структури проекту, або використання "
+"Оскільки у Godot немає обмежень щодо структури проєкту, або використання "
 "файлової системи, організація файлів під час вивчення движка може здатися "
 "складною. Цей посібник пропонує робочий процес, який повинен стати гарним "
 "стартом. Ми також розглянемо використання контролю над версіями з Godot."
@@ -63,7 +63,7 @@ msgid ""
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
 "Враховуючи це, найпоширенішим підходом є групування ресурсів якомога ближче "
-"до сцен; коли проект росте, це робить його більш акуратним."
+"до сцен; коли проєкт росте, це робить його більш акуратним."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
 msgid ""
@@ -119,15 +119,15 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
-"Версії Godot до 3.0 виконували процес імпорту з файлів поза проектом. Хоча "
-"це може бути корисно у великих проектах, це створило організаційні клопоти "
+"Версії Godot до 3.0 виконували процес імпорту з файлів поза проєктом. Хоча "
+"це може бути корисно у великих проєктах, це створило організаційні клопоти "
 "для більшості розробників."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "Через це ресурси тепер прозоро імпортуються з папки проекту."
+msgstr "Через це ресурси тепер прозоро імпортуються з папки проєкту."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
 msgid "Ignoring specific folders"
@@ -141,7 +141,7 @@ msgid ""
 msgstr ""
 "Щоб Godot не імпортував файли, що містяться в певній теці, створіть в ній "
 "порожній файл, який називається ``.gdignore``(крапка ``.`` обов'язкова). Це "
-"може бути корисно для пришвидшення імпорту початкового проекту."
+"може бути корисно для пришвидшення імпорту початкового проєкту."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:83
 msgid ""

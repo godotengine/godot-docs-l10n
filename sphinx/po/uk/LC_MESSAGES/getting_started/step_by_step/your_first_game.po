@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"Цей урок допоможе вам створити перший проект Godot. Ви дізнаєтесь, як працює "
-"редактор Godot, як структурувати проект та як побудувати 2D гру."
+"Цей урок допоможе вам створити перший проєкт Godot. Ви дізнаєтесь, як працює "
+"редактор Godot, як структурувати проєкт та як побудувати 2D гру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -40,7 +40,7 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"Цей проект - це вступ до редактора Godot. Він передбачає, що ви вже маєте "
+"Цей проєкт - це вступ до редактора Godot. Він передбачає, що ви вже маєте "
 "певний досвід програмування. Якщо ви взагалі не програмуєте, вам слід почати "
 "звідси: :ref:`doc_scripting`."
 
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:29
 msgid "Project setup"
-msgstr "Налаштування проекта"
+msgstr "Налаштування проєкта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:31
 msgid ""
@@ -74,10 +74,10 @@ msgid ""
 "sounds you'll be using to make the game. Unzip these files in your project "
 "folder."
 msgstr ""
-"Запустіть Godot і створіть новий проект. Потім завантажте: download: "
+"Запустіть Godot і створіть новий проєкт. Потім завантажте: download: "
 "`dodge_assets.zip <files / dodge_assets.zip>`. Тут містяться зображення і "
 "звуки, які ви будете використовувати для створення гри. Разархівіруйте ці "
-"файли в папку вашого проекту."
+"файли в папку вашого проєкту."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:36
 msgid ""
@@ -87,7 +87,7 @@ msgid ""
 msgstr ""
 "Для цього уроку ми припустимо, що ви вже знайомі з редактором Godot. Якщо ви "
 "ще не читали: ref: `doc_scenes_and_nodes`, то зробіть це зараз для розуміння "
-"налаштування проекту і використання редактора."
+"налаштування проєкту і використання редактора."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:40
 msgid ""
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:49
 msgid "Organizing the project"
-msgstr "Організація проекту"
+msgstr "Організація проєкту"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:51
 msgid ""
@@ -123,11 +123,11 @@ msgid ""
 "and scripts in the project's root folder, identified by ``res://``.  You can "
 "see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
-"У цьому проекті ми створимо 3 незалежні сцени: `` Player``, `` Mob`` і `` "
-"HUD``, які ми будемо комбінувати зі сценою `` Main``. У ширшому проекті було "
+"У цьому проєкті ми створимо 3 незалежні сцени: `` Player``, `` Mob`` і `` "
+"HUD``, які ми будемо комбінувати зі сценою `` Main``. У ширшому проєкті було "
 "б корисно зробити папки для зберігання різних сцен і їх скриптів, але для "
 "цієї, відносно невеликий гри, ви можете зберігати свої сцени і скрипти в "
-"кореневій папці, званої `` res: // ``. Ви можете бачити папки проекту у "
+"кореневій папці, званої `` res: // ``. Ви можете бачити папки проєкту у "
 "вікні FileSystem (Файлова Система) в нижньому лівому кутку:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:62
@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:95
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr "У цьому проекті ми будемо дотримуватися правил іменування Godot."
+msgstr "У цьому проєкті ми будемо дотримуватися правил іменування Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid ""
@@ -371,7 +371,7 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
-"Якщо ви використовуєте C#, вам потрібно (пере)будувати збірки проектів, коли "
+"Якщо ви використовуєте C#, вам потрібно (пере)будувати збірки проєктів, коли "
 "ви хочете бачити нові змінні експорту, чи сигнали. Цю збірку можна вручну "
 "запустити, натиснувши слово \"Mono\" внизу вікна редактора, щоб відкрити "
 "панель Mono, а потім натиснути кнопку \"Build Project\"."
@@ -419,7 +419,7 @@ msgid ""
 msgstr ""
 "Спочатку нам потрібно перевірити ввід - чи гравець натискає клавішу? Для "
 "цієї гри у нас є 4 напрямки для перевірки. Дії введення визначені в "
-"Параметрах проекту в розділі \"Карта введення\". Тут ви можете визначити "
+"Параметрах проєкту в розділі \"Карта введення\". Тут ви можете визначити "
 "власні події та призначити їм різні клавіші, події миші чи інші входи. Для "
 "цієї демонстрації ми будемо використовувати події за замовчуванням, які "
 "призначені клавішам зі стрілками на клавіатурі."
@@ -1515,7 +1515,7 @@ msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
-"Тепер ви готові грати! Натисніть кнопку \"Відтворити проект\". Вам буде "
+"Тепер ви готові грати! Натисніть кнопку \"Відтворити проєкт\". Вам буде "
 "запропоновано вибрати головну сцену, тому виберіть ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1221
@@ -1682,11 +1682,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1306
 msgid "Project files"
-msgstr "Файли проекту"
+msgstr "Файли проєкту"
 
-#: ../../docs/<generated>:1
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1311
 msgid "You can find a completed version of this project at these locations:"
-msgstr "Ви можете знайти завершену версію цього проекту в таких місцях:"
+msgstr "Ви можете знайти завершену версію цього проєкту в таких місцях:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1309
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"

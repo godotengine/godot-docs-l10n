@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,34 +34,32 @@ msgid ""
 msgstr ""
 "Uma vez que Godot não tem nenhuma restrição na estrutura do projeto ou uso "
 "do sistema de arquivos, organizar arquivos enquanto aprendendo a engine pode "
-"parecer desafiador. This tutorial suggests a workflow which should be a good "
-"starting point. We will also cover using version control with Godot."
+"parecer desafiador. Este tutorial sugere um fluxo de trabalho que deve ser "
+"um bom ponto de início. Também cobriremos o uso de controle de versão com "
+"Godot."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:15
 msgid "Organization"
 msgstr "Organização"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:17
-#, fuzzy
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
 "Godot é baseado em cenas por natureza, e usa o sistema de arquivos como ele "
-"é, sem metadata ou um bando de dados de recursos."
+"é, sem metadados ou um banco de dados de assets."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
-#, fuzzy
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
 msgstr ""
-"Ao contrário de outras engines, muitos recursos estão contidos dentro da "
+"Ao contrário de outras engines, muitos recursos são contidos dentro da "
 "própria cena, então a quantidade de arquivos no sistema de arquivos é "
 "consideravelmente mais baixa."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:23
-#, fuzzy
 msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
@@ -70,18 +68,17 @@ msgstr ""
 "com as cenas, assim, quando um projeto cresce, ele fica mais gerenciável."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:27
-#, fuzzy
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Como exemplo, imagens, cenas de modelos 3D ou meshes, materiais, etc. podem "
-"geralmente ser organizados em um lugar, enquanto uma pasta separada é usada "
-"para salvar levels construídos que os usam."
+"Como exemplo, normalmente é possível colocar em uma única pasta seus ativos "
+"básicos, como imagens de sprite, malhas de modelos 3D, materiais e música, "
+"etc. Eles podem então usar uma pasta separada para armazenar níveis "
+"construídos que os utilizam."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:48
-#, fuzzy
 msgid "Style guide"
 msgstr "Guia de Estilo"
 
@@ -89,7 +86,8 @@ msgstr "Guia de Estilo"
 msgid ""
 "For consistency across projects, we recommend following these guidelines:"
 msgstr ""
-"Para manter a consistência entre os projeto, nós recomendamos o seguinte:"
+"Para manter a consistência entre os projetos, nós recomendamos estas "
+"seguintes diretrizes:"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid ""
@@ -99,11 +97,18 @@ msgid ""
 "the convention is to name them after the class name which should be in "
 "PascalCase."
 msgstr ""
+"Use **snake_case** para nomes de pastas e arquivos (com exceção de scripts "
+"C#). Isto evita os problemas de distinção entre maiúsculas e minúsculas que "
+"podem surgir após a exportação de um projeto no Windows. Os scripts C# são "
+"uma exceção a essa regra, pois a convenção é nomeá-los após o nome da classe "
+"que deve estar em PascalCase."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:57
 msgid ""
 "Use **PascalCase** for node names, as this matches built-in node casing."
 msgstr ""
+"Use **PascalCase** para nomes de nós, pois isso combina com a caixa embutida "
+"do nó."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
@@ -113,35 +118,38 @@ msgid ""
 "if you use third-party game assets for a character, it makes more sense to "
 "include them within the same folder as the character scenes and scripts."
 msgstr ""
+"Em geral, mantenha os recursos de terceiros em uma pasta ``addons /`` de "
+"nível superior, mesmo se eles não forem plugins do editor. Isto torna mais "
+"fácil rastrear quais arquivos são de terceiros. Existem algumas exceções a "
+"esta regra; por exemplo, se você usar recursos de jogo de terceiros para um "
+"personagem, faz mais sentido incluí-los na mesma pasta que as cenas e "
+"scripts dos personagens."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:65
 msgid "Importing"
 msgstr "Importando"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:67
-#, fuzzy
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
-"A versão Godot anterior ao 3.0 fez o processo de importação dos arquivos "
-"fora do projeto. Embora isso possa ser útil em grandes projetos, isso "
-"resultou em problemas para a maioria dos desenvolvedores."
+"Versões do Godot anteriores à 3.0 faziam o processo de importação dos "
+"arquivos fora do projeto. Embora isto possa ser útil em grandes projetos, "
+"isso resultou em problemas de organização para a maioria dos desenvolvedores."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:71
-#, fuzzy
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
 msgstr ""
-"Por causa disso, os ativos agora são importados de dentro da pasta do "
+"Por causa disso, os assets agora são importados de dentro da pasta do "
 "projeto de forma transparente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:75
-#, fuzzy
 msgid "Ignoring specific folders"
-msgstr "Desativando objetos específicos"
+msgstr "Ignorando pastas específicas"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:77
 msgid ""
@@ -182,7 +190,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:96
 msgid "Case sensitivity"
-msgstr ""
+msgstr "Sensibilidade de caixa"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:98
 msgid ""
@@ -199,6 +207,8 @@ msgid ""
 "You can break this rule when style guides say otherwise (such as the C# "
 "style guide). Still, be consistent to avoid mistakes."
 msgstr ""
+"Você pode quebrar esta regra quando os guias de estilo dizem o contrário "
+"(como o guia de estilo C#). Ainda assim, seja consistente para evitar erros."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:110
 msgid ""

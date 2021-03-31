@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,6 +212,7 @@ msgstr ""
 "grafica."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
+#, fuzzy
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -219,6 +220,11 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"Selezionando ``MarginContainer``, vai all'insector e scorri in basso verso "
+"la sezione costanti personalizzate. Apri la tendina e selezione il campo "
+"vicino ognuna delle proprietà ``Margin``. Impostali tutti su ``20`` pixels. "
+"Poi aggiungi un nodo ``HBoxContainer``. Questo conterrà due barre sulla "
+"sinistra e le seprarà dalle due sulla destra."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 msgid ""
@@ -228,6 +234,12 @@ msgid ""
 "``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"Vogliamo, ora, ordinare le barre in verticale nel ``HBoxContainer`. "
+"Aggiungiamo un ``VBoxContainer``come figlio di ``HBoxContainer``e "
+"rinominiamolo come ``Bars``. Selezioniamo il genitore ``HBoxContainer`` "
+"nuovamente e questa volta aggiungiamo un nuovo ``HBoxContainer``come figlio. "
+"Chiamiamolo ``Counters``. Con questi quattro contenitori abbiamo la base per "
+"la nostra interfaccia utente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 #, fuzzy
@@ -241,6 +253,11 @@ msgid ""
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
+"Possiamo procedere in questo modo, dato che prima mettiamo già l'interfaccia "
+"grafica e ci prendiamo un momento per pensare a quali contenitori possiamo "
+"utilizzare. Quando segui un tutorial come questo, potrebbe sembrarti strano. "
+"Ma appena comincerai a lavorare sui veri e propri videogiochi, ti sembrerà "
+"una procedura efficiente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
 #, fuzzy
@@ -254,6 +271,11 @@ msgid ""
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
+"Ogni barra è divisa in due sub-elementi che allinierai orizzontalmente: La "
+"barra della salute sulla sinistra e la barra della forza sulla destra. "
+"Ancora una volta il ``HBoxContainer``è lo strumento perfetto per questo "
+"lavoro. Seleziona il nodo ``Bars`` e aggiungi un nuovo ``HBoxContainer``al "
+"suo interno. Rinominalo come ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
 msgid ""
@@ -267,6 +289,16 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
+"L'etichetta richiede almeno tre nodi: un ``NinePatchRect`` per lo sfondo, "
+"nella parte alta dove aggiungeremo una texture a sinistra, sia ``HP`` o "
+"``EP``, e una ``Label`` a destra per i valori. Possiamo innestare un nodo "
+"``Control`` ogni volta che vogliamo. Possiamo usare il ``NinePatchRect`` "
+"come genitore per altri due elementi, così da comprimerli. In generale, se "
+"al contrario vuoi usare i contenitori, così da aiutarti da organizzare i "
+"componenti dell'interfaccia giocatore. Abbiamo bisogno di un "
+"``MarginContainer`più tardi per aggiungere uno spazio tra la barra della "
+"vita e gli altri indicatori. Seleziona ``Bar`` e aggiungi un "
+"``MarginContainer``. Rinominalo``Count``. Al suo interno, aggiungi tre nodi:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
 #, fuzzy
@@ -304,6 +336,9 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
+"La nostra scena è ancora vuota. E' il momento per inserire qualche Texture. "
+"Per caricarle, vai sulla sezione File di Sistema alla sinistra della "
+"visualizzazione. Cerca in res://assets/GUI folder."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 #, fuzzy
@@ -313,6 +348,7 @@ msgstr ""
 "interfaccia."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
+#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -322,6 +358,14 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
+"Seleziona il ``Background`` nel riquadro Scena. Nell'inspector, puoi vedere "
+"le proprietà ``Texture``. Nel riquadro File di Sistema clicca e trascina "
+"``label_HP_bg.png`` nello slot ``Texture`. Sembra deformato. Il "
+"MarginContainer genitore imposterà la dimensione a 0 finché non impostiamo "
+"la dimensione minima all'interno del contenitore. Seleziona il nodo "
+"``Background``. Nell'inspecto, scorri fino alla sezione Rect. Imposta ``Min "
+"Size`` in (100, 40). Puoi vedere che il ``Background` si regolerà con i suoi "
+"contenitori genitori."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
 msgid ""
@@ -331,10 +375,15 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
+"Poi, seleziona ``Title``e trascina``label_HP.png`` nel suo slot ``Texture``. "
+"Seleziona il nodo ``Number``, clicca sul campo dopo le proprietà ``Text`` e "
+"digita ``10``. In questo modo, puoi vedere entrambi i nodi nella "
+"visualizzazione. Dovrebbero allinearsi nella parte alta a sinistra del loro "
+"genitore ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
-msgstr ""
+msgstr "Se selezioni entrambi i nodi, dovresti vedere qualcosa di questo tipo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
 msgid ""
@@ -345,8 +394,15 @@ msgid ""
 "them in the Scene dock. They'll snap back to their previous size and "
 "position."
 msgstr ""
+"Avendo un contenitore come loro diretto genitore, non possiamo muoverli "
+"liberamente: il nodo ``Count`` ripristinerà i suoi punti di ancoraggio, la "
+"sua dimensione e posizione. Prova a muovere e ridimensionare i nodi nella "
+"viewport. Poi, seleziona una delle tre texture e premi :kbd:`Ctrl + Su` o :"
+"kbd:`Ctrl + Giù` per riordinarli nel riquadro Scena. Torneranno alle "
+"dimensioni e posizione precedenti."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
+#, fuzzy
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -354,12 +410,20 @@ msgid ""
 "parent for the ``Title`` and ``Number``. Select both the ``Title`` and "
 "``Number``, and drag and drop them onto ``Background``."
 msgstr ""
+"I contenitori genitori controllano le dimensioni, la scala, i margini e le "
+"ancore dei loro figli diretti. Per modificare i nodi, devi annidarli "
+"all'interno di un normale Controllo o di un altro elemento dell'UI. Useremo "
+"il ``Background`` come genitore per ``Title`` e ``Number``. Seleziona sia "
+"``Title`` che il ``Number`` e trascinali su ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:179
+#, fuzzy
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
+"Usando il nodo Background come genitore delle due texture, togliamo il "
+"controllo al Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
 msgid ""
@@ -380,6 +444,9 @@ msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
+"Ecco come dovrebbero apparire i riquadri di delimitazione dei nodi nella "
+"finestra. Tienilo approssimato, non hai bisogno di posizionarli troppo "
+"precisamente per ora."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
 #, fuzzy
@@ -425,6 +492,8 @@ msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
+"Con questo, abbiamo finito la parte più difficile della GUI. "
+"Congratulazioni! Passiamo ai nodi più semplici."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
 msgid "Add the progress bar"
@@ -435,6 +504,9 @@ msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
 msgstr ""
+"Abbiamo bisogno di un ultimo elemento per completare la nostra barra della "
+"vita: l'indicatore stesso. Godot fornisce un nodo ``TextureProgress`` che ha "
+"tutto ciò di cui abbiamo bisogno."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
 msgid ""
@@ -449,22 +521,27 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
+"Con solo cinque nodi ``Control``, la nostra prima barra è pronta all'uso."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
+"Ecco, la nostra barra della vita è pronta. Quest'ultima parte è stata "
+"veloce, vero? Questo grazie alla nostra robusta configurazione del container."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
 msgid "Design the bomb and emerald counters"
-msgstr ""
+msgstr "Progettare i contatori di bombe e smeraldi"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
 msgid ""
 "The bomb and emerald counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
+"I contatori delle bombe e degli smeraldi sono come il nodo ``Count`` della "
+"barra. Quindi lo duplicheremo e lo useremo come modello."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
@@ -486,7 +563,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
-msgstr ""
+msgstr "Ecco come dovrebbe apparire il tuo albero dei nodi"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
 msgid ""
@@ -570,7 +647,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
-msgstr ""
+msgstr "Trasformare la barra e il contatore in componenti UI riutilizzabili"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:337
 msgid ""
@@ -613,13 +690,14 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
-msgstr ""
+msgstr "Senza ulteriori modifiche, la nostra barra è pronto all'uso"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use scene inheritance to create the remaining elements"
-msgstr ""
+msgstr "Usare l'ereditarietà della scena per creare i restanti elementi"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
+#, fuzzy
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -627,12 +705,20 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"Abbiamo bisogno di due barre che funzionino allo stesso modo: dovrebbero "
+"avere un'etichetta a sinistra, con un certo valore, e un indicatore "
+"orizzontale a destra. L'unica differenza è che una ha l'etichetta HP ed è "
+"verde, mentre l'altra si chiama EP ed è gialla. Godot ci dà un potente "
+"strumento per creare una base comune da riutilizzare per tutte le barre del "
+"gioco: **inherited scenes**."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"Le scene ereditate ci aiutano a mantenere la scena della GUI pulita. Alla "
+"fine, avremo solo contenitori e un nodo per ogni componente dell'UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
 msgid ""
@@ -650,6 +736,8 @@ msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Un'icona di ricarica apparirà accanto alle proprietà che sovrascrivi. Fai "
+"clic su di essa per ripristinare il valore di default della scena madre."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
@@ -661,7 +749,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Ereditare la scena della Barra per costruire la Barra della Vita"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
@@ -675,6 +763,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Non puoi rinominare i nodi grigi. Questo ti dice che hanno una scena madre"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
@@ -699,7 +788,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Progettare la Barra dell'Energia"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
@@ -736,6 +825,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
+"Se cambiamo la risorsa font, tutti i nodi che la usano sono influenzati"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
 msgid ""
@@ -748,7 +838,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"
-msgstr ""
+msgstr "Usare questa opzione per creare copie uniche delle risorse per un nodo"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,12 +41,13 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Before we begin, you can download the source code to the example object we "
-"describe below in the `GDNative-demos repository <https://docs.godotengine."
-"org/en/latest/tutorials/scripting/gdnative/gdnative_c_example.html>`_."
+"describe below in the `GDNative-demos repository <https://github.com/"
+"godotengine/gdnative-demos/tree/master/c/simple>`_."
 msgstr ""
 "Avant de commencer, vous pouvez télécharger le code source de l'objet "
-"exemple décrit ci-dessous dans le dépôt `GDNative-demos repository <https://"
-"github.com/GodotNativeTools/GDNative-demos/tree/master/c/SimpleDemo>`_."
+"exemple décrit ci-dessous dans le `dépôt GDNative-demos <https://docs."
+"godotengine.org/en/latest/tutorials/scripting/gdnative/gdnative_c_example."
+"html>`_."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:18
 msgid ""
@@ -109,14 +110,13 @@ msgstr ""
 "récent) ou MinGW-w64."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
-#, fuzzy
 msgid ""
 "A Git clone of the `godot_headers repository <https://github.com/godotengine/"
 "godot_headers>`_: these are the C headers for Godot's public API exposed to "
 "GDNative."
 msgstr ""
-"Avoir cloné le `dépôt des godo_headers <https://github.com/GodotNativeTools/"
-"godot_headers>`_ : ce sont des entêtes C pour l'API publique de Godot exposé "
+"Un clone Git du `dépôt godot_headers <https://github.com/godotengine/"
+"godot_headers>`_ : ce sont les en-têtes C de l'API publique de Godot exposée "
 "à GDNative."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
@@ -157,7 +157,7 @@ msgstr ""
 "exemple ``3.1``) et idéalement la version actuellement en release que vous "
 "utilisez (par exemple ``3.1.1-stable``). Les modules GDNative générés avec "
 "des versions plus vieilles que les entêtes Godot *peuvent* fonctionner avec "
-"les nouvelles version tu moteur. L'inverse est faux."
+"les nouvelles version du moteur. L'inverse est faux."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:83
 msgid ""
@@ -332,8 +332,8 @@ msgstr ""
 "``godot_`` (vous pouvez le changer plus tard) suivi de leur nom. "
 "``gdnative_init`` est une fonction qui initialise notre bibliothèque "
 "dynamique. Godot lui donnera un pointeur vers une structure qui contient "
-"divers moreaux d'informations que nous pouvons trouver utiles parmi lesquels "
-"les pointeurs vers nos structures API."
+"divers morceaux d'informations que nous pouvons trouver utiles parmi "
+"lesquels les pointeurs vers nos structures API."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:187
 msgid ""

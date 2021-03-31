@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,13 +63,12 @@ msgstr ""
 "缩存档。在Godot中导入 `start/` 项目以遵循本教程。`end/` 文件夹包含最终结果。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
-#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
-"您可以在Youtube上观看这个教程的 `视频 <https://www.youtube.com/watch?"
-"v=y1E_y9AIqow>`_ 。"
+"你可以观看这个教程 `在Youtube上的视频 <https://www.youtube.com/watch?"
+"v=y1E_y9AIqow>`_ （英语且需要VPN）。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
@@ -325,7 +324,6 @@ msgid "If you select both nodes, you should see something like this"
 msgstr "如果您选择两个节点，您应该会看到这样的结果"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
-#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -334,10 +332,10 @@ msgid ""
 "them in the Scene dock. They'll snap back to their previous size and "
 "position."
 msgstr ""
-"由于它们有一个容器作为其直接父容器，因此我们无法自由移动它们：``Count`` 节点"
-"将始终重置其锚、其大小和位置。尝试移动视图中的节点并调整其大小。然后，选择三"
-"个纹理中的任何一个，然后按 ``Ctrl Up`` 或 ``Ctrl Down`` 在场景停靠面板中对其"
-"重新排序。他们将恢复到之前的大小和位置。"
+"因为它们有一个container节点(容器类节点)作为其直接的父节点，所以我们无法自由移"
+"动它们：``Count`` 节点将始终重置其锚、其大小和位置。尝试移动视图中的节点并调"
+"整其大小。然后，选择三个纹理中的任何一个，然后按 :kbd:`Ctrl Up` 或 :kbd:"
+"`Ctrl Down` 在场景停靠面板中对其重新排序。他们将恢复到之前的大小和位置。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
 msgid ""
@@ -500,16 +498,15 @@ msgstr ""
 "板。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
-#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press :kbd:`Ctrl + D` to "
 "duplicate it. Drag and drop the new node under the ``Counters`` "
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
-"在 ``Bar`` 节点下，选择 ``Count``，然后按 ``Ctrl D`` 复制它。将新节点拖放到场"
-"景树底部的 ``Counters`` ``HBoxContainer`` 下。您应该看到它会自动调整大小。暂"
-"时不用担心，我们会尽快修复它。"
+"在 ``Bar`` 节点下，选择 ``Count`` ，然后按 :kbd:`Ctrl D` 复制它。将新节点拖放"
+"到场景树中名为 ``Counters`` 的 ``HBoxContainer`` 节点下。您应该看到它会自动调"
+"整大小，暂时不用担心，我们会尽快修复它。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""
@@ -549,7 +546,6 @@ msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr "节点锚定到整个背景，但是它们的位置不正确"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -563,7 +559,6 @@ msgstr ""
 "间添加一些填充。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
-#, fuzzy
 msgid "The Number node aligned to the left and center"
 msgstr "``Number`` 节点左对齐并居中"
 
@@ -763,7 +758,6 @@ msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "继承 ``Bar`` 场景来构建生命条"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -771,10 +765,11 @@ msgid ""
 "`Ctrl + S` (:kbd:`Cmd + S` on macOS) to save the new inherited scene and "
 "name it ``LifeBar``."
 msgstr ""
-"转到 ``场景 -> 新建继承的场景（Scene -> New Inherited Scene）`` 以创建新的 "
-"``Bar`` 类型。选择 ``Bar`` 场景并将其打开。您应该看到一个新的[未保存]标签，就"
-"像您的 ``Bar``，但除根以外的所有节点均为灰色。按 ``Meta+S`` 保存新的继承场景"
-"并将其命名为 ``LifeBar``。"
+"点击编辑器左上角选项会弹出一个场景文件选择器 ``场景 -> 新建继承的场景（Scene "
+"-> New Inherited Scene）`` 以创建新的 ``Bar`` 类型。选择 ``Bar`` 场景并将其打"
+"开。您应该看到一个新的 [未保存] 标签，就像您的 ``Bar`` ，但除了根节点以外的其"
+"余子节点均为灰色。按 :kbd:`Ctrl + S` (:kbd:`Cmd + S` on macOS) 保存新的继承场"
+"景并将其命名为 ``LifeBar``。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
@@ -879,16 +874,15 @@ msgid "Use this option to create unique copies of the resources for one node"
 msgstr "使用此选项为一个节点创建资源的唯一副本"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
-#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with :kbd:`Ctrl + D` (:kbd:"
 "`Cmd + D` on macOS), it shares its resources with the original node. You "
 "need to use ``Make Sub-Resources Unique`` before you can tweak the resources "
 "without affecting the source node."
 msgstr ""
-"当您从场景树中复制节点时，如果使用 ``Meta+D``，它将与原始节点共享资源。您需要"
-"先使用 ``使子资源唯一（Make Sub-Resources Unique）``，然后才能调整资源而不影"
-"响源节点。"
+"当您从场景树中复制节点时，如果使用 :kbd:`Ctrl + D` (:kbd:`Cmd + D` on "
+"macOS)，它将与原始节点共享资源。您需要先使用 ``使子资源唯一（Make Sub-"
+"Resources Unique）``，然后才能调整复制节点的资源而不影响源节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
@@ -979,7 +973,6 @@ msgid "The bomb counter is the same as the original Counter scene"
 msgstr "炸弹计数器与原始计数器场景相同"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``EmeraldCounter`` and save the scene as "
@@ -992,14 +985,14 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"再次转到 ``场景 -> 新继承的场景（Scene -> New Inherited Scene）``，然后再次选"
-"择 ``Counter.tscn``。重命名根节点 ``EmeraldCounter``，并将场景保存为 "
-"``EmeraldCounter.tscn``。为此，我们主要需要将炸弹图标替换为翡翠图标。在 "
-"``FileSystem`` 选项卡中，将 ``emeralds icon.png`` 拖到 ``Icon`` 节点 "
-"``Texture`` 插槽中。``Icon`` 已经锚定在 ``Background`` 节点的右边缘，因此我们"
-"可以更改其位置，并使用 ``EmeraldCounter`` 容器对其进行缩放和重新定位。向右和"
-"向下稍微移动翡翠图标。使用键盘上的箭头键微调其位置。保存，我们已经完成了所有"
-"UI元素。"
+"再次转到 ``场景 -> 新继承的场景（Scene -> New Inherited Scene）`` ，然后再次"
+"选择 ``Counter.tscn`` 。重命名根节点为 ``EmeraldCounter`` ，并将场景保存为 "
+"``EmeraldCounter.tscn`` 。对于这个新继承的场景，我们主要将炸弹图标替换为翡翠"
+"图标。在 ``FileSystem（文件系统）`` 选项卡中，将 ``emeralds icon.png`` 拖到 "
+"``Icon`` 节点 的 ``Texture`` 属性插槽中。 ``Icon`` 已经锚定在 ``Background`` "
+"节点的右边缘，因此我们可以更改其位置，并使用 ``EmeraldCounter`` 容器对其进行"
+"缩放和重新定位。向右和向下稍微移动翡翠图标。使用键盘上的箭头键微调其位置。保"
+"存，我们已经完成了所有UI元素。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid "The emerald counter should look something like this"
@@ -1132,7 +1125,6 @@ msgstr ""
 "<files/ui_gui_design.zip>` 找到。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -1144,7 +1136,7 @@ msgid ""
 "elements to only move horizontally when we change the window size."
 msgstr ""
 "**关于响应式设计的最后说明**。如果调整GUI的大小，您将看到节点移动，但是纹理和"
-"文本将无法缩放。GUI的最小大小取决于其内部的纹理。在游戏中，我们不需要界面像网"
-"站一样灵活。您几乎永远都不想同时支持横向和纵向屏幕方向。两者必有其一。在横向"
-"模式中，最常见的比例范围是 4:3到16:9。它们很接近。这就是为什么当我们更改窗口"
-"大小时，GUI元素仅水平移动就足够了。"
+"文本将无法缩放。GUI的最小尺寸取决于其内部的纹理大小。在游戏中，我们不需要界面"
+"像网站一样灵活。您几乎永远都不想同时支持横向和纵向屏幕方向。要么横向、要么纵"
+"向。在横向模式中，最常见的比例范围是 4:3到16:9。它们很接近。这就是为什么当我"
+"们更改窗口大小时，GUI元素仅水平移动就足够了。"

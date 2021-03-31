@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,13 +64,12 @@ msgstr ""
 "夹包含最终结果。您将在 ``start/assets/main_menu`` 文件夹中找到所有精灵。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:30
-#, fuzzy
 msgid ""
 "Read the :doc:`ui_introduction_to_the_ui_system` first to learn how Godot's "
 "UI system works."
 msgstr ""
-"先阅读:doc:`ui_introduction_to_the_ui_system`来学习Godot的用户界面系统是如何"
-"工作的。"
+"请先阅读 :doc:`ui_introduction_to_the_ui_system` 来学习Godot的用户UI系统是如"
+"何工作的。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:34
 msgid "How to design your game UI"
@@ -144,24 +143,23 @@ msgid ""
 msgstr "从可复用组件构建模板场景，并创建从基本场景继承的特定组件。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:72
-#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
 "work as well as you'd like. You're likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
-"我们将使用第一种方法，因为您的UI的第一个版本可能不像您希望的那样工作。您可能"
-"会扔掉零件，重新设计零件。当您确信一切工作正常时，很容易使某些部件复用，如下"
-"所示。"
+"我们将使用第一种方法，因为初版的UI的通常会与所想有所落差，可能会删除并重新设"
+"计部分组件。当确定所有东西做好后，很容易提取出可重复使用的部分，这点我们稍后"
+"就会看到。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:79
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders."
 msgstr ""
-"在Godot中可以看到下载的文件。(简单的)图形看起来非常整洁，这比粗糙的设计更有视"
-"觉上的优势（能更好地表达你的意图）。但它们仍然是作为一个占位符来使用的。"
+"在Godot中可以看到下载的文件。简洁的图形比粗糙的设计能更好地表达的意图。但它们"
+"仍然是作为一个占位符来使用的。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:83
 msgid "Design the main menu"
@@ -265,7 +263,6 @@ msgstr ""
 "场景`` 菜单 -> ``新建场景``。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
-#, fuzzy
 msgid ""
 "We have to add a root node before we can save the scene. Your UI's root "
 "should be the outermost container or element. In this case it's a "
@@ -274,9 +271,9 @@ msgid ""
 "kbd:`Cmd + S` on macOS) to save the scene to the disk. Name it *MainMenu*."
 msgstr ""
 "在保存场景之前，我们必须添加一个根节点。UI的根应该是最外层的容器或元素。在这"
-"种情况下，它是一个 ``MarginContainer``。``MarginContainer`` 是大多数界面的良"
-"好起点，因为您经常需要在UI周围填充。按下 ``Meta+S`` 将场景保存到磁盘。把它命"
-"名为 *MainMenu* 。"
+"个例子中，它是一个 ``MarginContainer`` 。 ``MarginContainer`` 适用于大多数界"
+"面，因为UI周围通常需要留白。按下 :kbd:`Ctrl + S` （在macOS上是 :kbd:`Cmd + "
+"S` ）将场景保存到磁盘，并命名为 *MainMenu* 。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:142
 msgid ""
@@ -329,19 +326,17 @@ msgstr "标题或LOGO；"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr "三个文本选项，作为单独的节点；"
+msgstr "三个独立的文本选项；"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
 msgid "the version note,"
 msgstr "版本注释；"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
-#, fuzzy
 msgid "and the main menu's illustration."
-msgstr "和主菜单的插图。"
+msgstr "以及主菜单的插图。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
 "macOS) on your keyboard. Start to type ``TextureRect`` to find the "
@@ -349,9 +344,10 @@ msgid ""
 "`Ctrl + D` (:kbd:`Cmd + D` on macOS) five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
-"点击 ``添加节点（Add Node）`` 按钮或按键盘上的（Ctrl+A） ``Meta+A``。开始键"
-"入 ``TextureRect`` 以找到相应的节点，然后按 ``Enter`` 键。选中新节点后，按"
-"(Ctrl+D) ``Meta+D`` 五次以创建额外的五个 ``TextureRect`` 实例。"
+"点击 **添加子节点（Add Node）** 按钮或是快捷键 :kbd:`Ctrl + A` （macOS为 :"
+"kbd:`Cmd + A` ）。输入 ``TextureRect`` 以找到相应的节点并按 :kbd:`Enter` 。选"
+"中新节点后，按 :kbd:`Ctrl + D` （macOS为 :kbd:`Cmd + D` ）五次拷贝出的五个 "
+"``TextureRect`` 实例。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
 msgid ""
@@ -395,7 +391,6 @@ msgid "Add containers to place UI elements automatically"
 msgstr "添加容器以自动放置UI元素"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:196
-#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -407,12 +402,11 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behavior, I recommend to favor box containers."
 msgstr ""
-"我们的主菜单在屏幕边缘周围有一些边距。它分为两部分：在左侧，有logo和菜单选"
-"项。在右边，有字符。我们可以使用两个容器之一来实现此目的： "
-"``HSplitContainer`` 或 ``HBoxContainer``。拆分容器将区域分为两部分：左侧和右"
-"侧，或顶部和底部。它们还允许用户使用交互式栏来调整左右区域的大小。另一方面，"
-"``HBoxContainer`` 只是将自身拆分为具有与子级数目相同的列。尽管您可以禁用拆分"
-"容器的调整大小行为，但还是建议您使用盒式容器。"
+"主菜单周围留白，中间分为两部分：左侧有Logo和菜单选项。右侧有Characters，我们"
+"可以使用 ``HSplitContainer`` 或 ``HBoxContainer`` 来实现。 "
+"``SplitContainer`` 将区域分为上下或左右两部分，并允许用户自行调整区域大小。 "
+"``HBoxContainer`` 则只是根据子节点数量分割。尽管可以禁用 ``SplitContainer`` "
+"的调整区域大小功能，但还是建议使用 ``BoxContainer`` 。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:207
 msgid ""
@@ -483,7 +477,6 @@ msgstr ""
 "将角色节点放置在 ``CenterContainer`` 中后，它将立即在屏幕的右半部分居中。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press :kbd:"
@@ -493,11 +486,11 @@ msgid ""
 "inside the new ``VBoxContainer``. The UI's layout should barely change, if "
 "at all."
 msgstr ""
-"为了在左侧隔开菜单选项和logo，我们将使用一个最终容器及其尺寸标记。选择 "
-"``VBoxContainer`` 并按 ``Meta + A`` 在其中添加一个新节点。添加第二个 "
-"``VBoxContainer``，并将其命名为 ``MenuOptions``。选择所有三个菜单选项 ``继续"
-"（Continue）``，``新游戏（NewGame）`` 和 ``选项（Options）``，并将它们拖放到"
-"新的 ``VBoxContainer`` 中。UI的布局应该几乎不会变化。"
+"为了隔开左侧的菜单选项和Logo，我们还需要一个容器并设置其Size Flags。选择 "
+"``VBoxContainer`` 并按 :kbd:`Ctrl + A` （macOS为 :kbd:`Cmd + A` ）在其中添加"
+"一个新节点。添加第二个 ``VBoxContainer`` ，并将其命名为 *MenuOptions* 。选择"
+"所有菜单选项（ ``Continue``，``NewGame`` 和 ``Options`` ），并将其拖放至新的 "
+"``VBoxContainer`` 中。UI的布局应该看起来和刚才差不多。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
 msgid ""
@@ -578,16 +571,15 @@ msgstr ""
 "小。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:299
-#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press :kbd:`Q` to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
-"嵌套的顺序很重要。要查看UI是否能很好地适应不同的屏幕比例，请选择根节点，按Q键"
-"激活选择模式，选择容器，然后单击并拖动容器的某个角落以调整其大小。UI组件应该"
-"在其中流动。"
+"嵌套的顺序很重要。要查看UI是否能很好地适应不同的屏幕比例，可以先选择根节点，"
+"按 :kbd:`Q` 激活鼠标模式（Select Mode），选择容器并拖拽容器角落以调整其大小。"
+"UI组件应该在其中流畅移动。"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:305
 msgid ""

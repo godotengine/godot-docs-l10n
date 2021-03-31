@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "介绍了最终demo所使用的资源，然后介绍了如何逐步实现类似demo的场景。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
-#, fuzzy
 msgid ""
 "All the resources for this tutorial can be found in the `official demo "
 "repository <https://github.com/godotengine/godot-demo-projects>`_ on GitHub. "
@@ -48,8 +47,8 @@ msgid ""
 msgstr ""
 "本教程的所有资源都可以在github上的 `官方演示存储库 <https://github.com/"
 "godotengine/godot-demo-projects>`_ 中找到。 我建议您在开始之前下载它。 或者，"
-"也可以在项目管理器中下载。 启动Godot并在顶部栏中选择 \"Templates\" 并搜索 "
-"\"2D Lights and Shadows Demo\"。"
+"也可以在项目管理器中下载。 在启动Godot时在顶部栏中选择“模板（Templates）”选项"
+"卡并搜索 “2D Lights and Shadows Demo”。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 msgid "Setup"
@@ -61,19 +60,18 @@ msgid ""
 "casters, and one for the background. I've included links to them all here if "
 "you want to download them separately from the demo."
 msgstr ""
-"对于这个演示，我们使用四种纹理:两种用于灯光，一种用于那些会产生阴影的物品，一"
-"种用于背景。 如果想单独下载它们，我在这里列出了所有链接。"
+"对于这个演示，我们使用四种纹理：两种用于灯光，一种用于那些会产生阴影的物品，"
+"一种用于背景。 如果想单独下载它们，我在这里列出了所有链接。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
-#, fuzzy
 msgid ""
 "The first is the background image (`background.png <https://raw."
 "githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
 "lights_and_shadows/background.png>`_) used in the demo. You do not "
 "necessarily need a background, but we use one for the demo."
 msgstr ""
-"第一个是演示中使用的背景图像 (`bg.png <https://raw.githubusercontent.com/"
-"godotengine/godot-demo-projects/master/2d/lights_and_shadows/bg.png>`_ ) 。 "
+"第一个是演示中使用的背景图像（ `bg.png <https://raw.githubusercontent.com/"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/bg.png>`_ ）。 "
 "你不一定需要背景，但我们还是在演示中用了一个。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
@@ -279,7 +277,6 @@ msgstr ""
 "了。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:113
-#, fuzzy
 msgid ""
 "First add a :ref:`Sprite <class_Sprite>` and set its texture to the "
 "`background image <https://raw.githubusercontent.com/godotengine/godot-demo-"
@@ -287,8 +284,8 @@ msgid ""
 "can be any background you choose. For this style of shadow it is most likely "
 "to be a floor texture."
 msgstr ""
-"首先添加一个 :ref:`Sprite <class_Sprite>` 并将其纹理设置为 `background image "
-"<https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
+"首先添加一个 :ref:`Sprite <class_Sprite>` 并将其纹理设置为 `背景图片<https://"
+"raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/"
 "lights_and_shadows/bg.png>`_ 。 在你的游戏中这可以是你选择的任何背景。 对于我"
 "们这种风格的阴影, 这张图最可能是地板的纹理。"
 
@@ -331,11 +328,12 @@ msgstr ""
 "心。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
+#, fuzzy
 msgid ""
 "At the time of writing, 3.0 is the stable release version. The 3.1 "
 "development branch contains many changes to the animation system, so the "
 "animations in the demo will not be covered here. See :ref:"
-"`doc_introduction_2d_animation` for more information."
+"`doc_introduction_animation` for more information."
 msgstr ""
 "在撰写本文时，3.0是稳定版本。 3.1开发版本已经对动画系统的做了许多更改，因此此"
 "处不会介绍demo中的动画。 请参阅 :ref:`doc_introduction_2d_animation` 以了解更"
@@ -441,7 +439,7 @@ msgid ""
 "the lines of the polygon can be seen:"
 msgstr ""
 "为了说明它们的差异，这张图片里是一个相应的 :ref:`LightOccluder2D "
-"<class_LightOccluder2D>` 的 ``Closed`` 设置为 ``off``的:ref:"
+"<class_LightOccluder2D>` 的 ``Closed`` 设置为 ``off`` 的 :ref:"
 "`OccluderPolygon2D <class_OccluderPolygon2D>` 。 这是为了可以看到多边形的轮"
 "廓:"
 
@@ -566,5 +564,5 @@ msgid ""
 "``filter`` set the more expensive the shadows will be."
 msgstr ""
 "您需要稍微调整设置以找到适合你项目的设置。 没有对每个人都正确的解决方案，这就"
-"是Godot为什么提供如此多灵活性。 只要记住``filter`` 值越高, 阴影的计算成本也越"
-"高就行了。"
+"是Godot为什么提供如此多灵活性。 只要记住 ``filter`` 值越高, 阴影的计算成本也"
+"越高就行了。"

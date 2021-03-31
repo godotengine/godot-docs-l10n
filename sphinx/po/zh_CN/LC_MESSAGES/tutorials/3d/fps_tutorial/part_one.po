@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,23 +136,19 @@ msgstr ""
 "果您是新手Godot和/或游戏开发 **之前** 通过本教程系列。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
-#, fuzzy
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games, you will likely struggle making 3D games."
 msgstr ""
-"请记住:制作3D游戏要比制作2D游戏困难得多。 如果您不知道如何制作2D游戏，您可能"
-"会很难制作3D游戏。"
+"记住制作3D游戏比制作2D游戏难得多。如果你不知道如何制作2D游戏，你很可能会在制"
+"作3D游戏时遇到困难。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
-#, fuzzy
 msgid ""
 "This tutorial assumes you have experience working with the Godot editor, "
 "basic programming experience in GDScript, and basic experience in game "
 "development."
-msgstr ""
-"本教程假设您具有使用Godot编辑器的经验，具有GDScript的基本编程经验，并且具有游"
-"戏开发的基本经验。"
+msgstr "本教程假设你有使用Godot编辑器、GDScript基本编程、游戏开发的基本经验。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
 msgid ""
@@ -212,9 +208,8 @@ msgid ""
 msgstr "您可以在每个零件页面底部找到每个零件的完成项目"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
-#, fuzzy
 msgid "Part overview"
-msgstr "零件概述"
+msgstr "部分概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
@@ -223,44 +218,41 @@ msgid ""
 msgstr "在这一部分，我们将制作一个可以在环境中移动的第一人称游戏角色。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
-#, fuzzy
 msgid ""
 "By the end of this part, you will have a working first-person character who "
 "can move around the game environment, sprint, look around with a mouse based "
 "first person camera, jump into the air, and turn a flash light on and off."
 msgstr ""
-"在这部分结束时，您将拥有一个可以在游戏环境中移动的第一人称角色，用基于鼠标的"
-"第一人称相机环顾四周，可以跳到空中，打开和关闭闪光灯，以及冲刺。"
+"在这部分结束时，你将拥有一个能够在游戏环境中移动和冲刺、能够用鼠标控制相机环"
+"顾四周、能够跳到空中、能够打开和关闭闪光灯的第一人称角色。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr "准备好一切"
+msgstr "做好准备"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:80
 msgid "Launch Godot and open up the project included in the starter assets."
 msgstr "启动Godot并打开启动资源中包含的项目。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:82
-#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
 "in this tutorial, they will make the tutorial much easier to follow, as "
 "there are several pre-setup scenes we will be using throughout the tutorial "
 "series."
 msgstr ""
-"虽然这些资源不一定需要使用本教程中提供的脚本，但它们将使教程更容易理解，因为"
-"我们将在整个教程系列中使用几个预设置场景。"
+"使用本教程提供的脚本并不一定需要这些资源，但对理解教程很有帮助。在随后的一系"
+"列教程中，我们将使用许多预制场景。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:86
-#, fuzzy
 msgid ""
 "First, open the project settings and go to the \"Input Map\" tab. You'll "
 "find several actions have already been defined. We will be using these "
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
-"首先，打开项目设置并转到“输入映射”选项卡。 您会发现已经定义了几个动作。 我们"
-"将为我们的游戏角色使用这些操作。 如果需要，可以随意更改绑定到这些操作的键。"
+"首先，打开项目设置并转到“输入映射”选项卡。你会发现已经定义好了几个动作。 这些"
+"动作将会用在我们的游戏角色上。 如有需要，随时可以更改这些操作绑定的按键。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:92
 msgid "Let's take a second to see what we have in the starter assets."
@@ -280,25 +272,25 @@ msgid "For now let's open up ``Player.tscn``."
 msgstr "现在让我们打开 ``Player.tscn`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:99
-#, fuzzy
 msgid ""
 "There are a bunch of scenes and a few textures in the ``Assets`` folder. You "
 "can look at these if you want, but we will not be exploring through "
 "``Assets`` in this tutorial series. ``Assets`` contains all the models used "
 "for each of the levels, as well as some textures and materials."
 msgstr ""
-"在 ``Assets`` 文件夹中有一堆场景和一些纹理。 如果您愿意，可以查看这些内容，但"
-"我们不会通过本系列教程中的“资源”来探索。 ``Assets``包含用于每个级别的所有模"
-"型，以及一些纹理和材质。"
+"``Assets`` 文件夹中有许多场景和一些纹理。 如果你想看，可以多看看，但本系列教"
+"程不会深入探索 ``Assets`` 。 ``Assets`` 包含用于每个层级的所有模型，也有一些"
+"纹理和材质。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:104
 msgid "Making the FPS movement logic"
 msgstr "制作FPS运动逻辑"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:106
+#, fuzzy
 msgid ""
 "Once you have ``Player.tscn`` open, let's take a quick look at how it is set "
-"up"
+"up:"
 msgstr "打开“Player.tscn”后，让我们快速了解它是如何设置的"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:110
@@ -328,17 +320,15 @@ msgstr ""
 "取决于您的水平以及您希望游戏角色的感受。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:119
-#, fuzzy
 msgid ""
 "Many times the player will notice the collision shape being circular when "
 "they walk to an edge and slide off. We are adding the small square at the "
 "bottom of the capsule to reduce sliding on, and around, edges."
 msgstr ""
-"很多时候，游戏角色会注意到碰撞形状在走到边缘并滑落时是如何形成圆形的。 我们在"
-"胶囊底部添加了一个小方块，以减少边缘和周围的滑动。"
+"玩家从边缘滑落时，很容易注意到碰撞形状是一个圆。让我们在胶囊底部添加一个小正"
+"方形来减少在边缘上方和周围的滑动。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:123
-#, fuzzy
 msgid ""
 "Another thing to notice is how many nodes are children of "
 "``Rotation_Helper``. This is because ``Rotation_Helper`` contains all the "
@@ -347,20 +337,19 @@ msgid ""
 "``Rotation_helper`` on the ``X`` axis."
 msgstr ""
 "需要注意的另一件事是有多少节点是 ``Rotation_Helper`` 的子节点。 这是因为 "
-"``Rotation_Helper`` 包含我们想要在 ``X`` 轴上旋转的所有节点(向上和向下)。 这"
-"背后的原因是我们可以在 ``Y`` 轴上旋转 ``Player`` ，在 ``X`` 轴上旋转 "
+"``Rotation_Helper`` 包含了我们想在 ``X`` 轴上旋转（向上和向下）的所有节点。 "
+"这么做的目的是为了在 ``Y`` 轴上旋转 ``Player`` ，在 ``X`` 轴上旋转 "
 "``Rotation_helper`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:128
-#, fuzzy
 msgid ""
 "Had we not used ``Rotation_helper``, we would've likely had cases of "
 "rotating on both the ``X`` and ``Y`` axes simultaneously, potentially "
 "further degenerating into a state of rotation on all three axes in some "
 "cases."
 msgstr ""
-"如果我们不使用 ``Rotation_helper`` 那么我们可能会遇到同时旋转 ``X`` 和 ``Y`` "
-"轴的情况。 这会导致不良结果，因为在某些情况下我们可以在所有三个轴上旋转。"
+"假如我们不使用 ``Rotation_helper`` ，那么我们有时很可能会同时旋转 ``X`` 和 "
+"``Y`` 轴。 在某些情况下可能会进一步恶化为同时旋转三个轴的状态。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:132
 msgid "See :ref:`using transforms <doc_using_transforms>` for more information"
@@ -380,7 +369,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:375
 msgid "This is a lot of code, so let's break it down function by function:"
-msgstr "这是很多代码，所以让我们按功能分解它:"
+msgstr "这段代码很多，所以让我们按功能分解它:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:377
 msgid ""
@@ -388,14 +377,13 @@ msgid ""
 "manually typing the code in, you can copy and paste the code from this page "
 "directly into the script editor."
 msgstr ""
-"虽然不建议复制和粘贴代码，因为您可以通过手动输入代码来学习很多东西，但您可以"
-"将此页面中的代码直接复制并粘贴到脚本编辑器中。"
+"手敲代码的过程可以让你学到很多，所以并不提倡复制粘贴代码，但你仍然可以将此页"
+"面中的代码直接复制粘贴到脚本编辑器中。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:380
-#, fuzzy
 msgid ""
 "If you do this, all the code copied will be using spaces instead of tabs."
-msgstr "如果这样做，所有复制的代码将使用空格而不是制表符。"
+msgstr "如果这么做，所有复制的代码将使用空格而不是制表符。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:382
 msgid ""
@@ -447,19 +435,16 @@ msgid "``JUMP_SPEED``: How high we can jump."
 msgstr "``JUMP_SPEED``:我们能跳得多高。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:399
-#, fuzzy
 msgid ""
 "``ACCEL``: How quickly we accelerate. The higher the value, the sooner we "
 "get to max speed."
-msgstr ""
-"``ACCEL``:我们加速的速度有多快。 值越高，我们达到最大速度的速度就越快。"
+msgstr "``ACCEL``:我们加速的速度有多快。 值越高，我们就越快达到最大速度。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:400
-#, fuzzy
 msgid ""
 "``DEACCEL``: How quickly we are going to decelerate. The higher the value, "
 "the sooner we will come to a complete stop."
-msgstr "``DEACCEL``:我们减速的速度有多快。 价值越高，我们就越快完全停止。"
+msgstr "``DEACCEL``:我们减速的速度有多快。 值越高，我们就越快达到完全静止。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:401
 msgid ""
@@ -531,43 +516,38 @@ msgstr ""
 "首先，我们获得“camera”和“rotation_helper”节点，并将它们存储到它们的变量中。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:421
-#, fuzzy
 msgid ""
 "Then we need to set the mouse mode to captured, so the mouse cannot leave "
 "the game window."
-msgstr "然后我们需要将鼠标模式设置为capture，这样鼠标就不能离开游戏窗口。"
+msgstr "然后我们需要将鼠标模式设置为capture，这样鼠标就无法离开游戏窗口。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:423
-#, fuzzy
 msgid ""
 "This will hide the mouse and keep it at the center of the screen. We do this "
 "for two reasons: The first reason being we do not want the player to see "
 "their mouse cursor as they play."
 msgstr ""
-"这将隐藏鼠标并将其保持在屏幕的中心。 我们这样做有两个原因:第一个原因是我们不"
-"希望游戏角色在玩游戏时看到他们的鼠标光标。"
+"这将隐藏鼠标并将其保持在屏幕的中心。 这样做有两个原因：一是我们不希望游戏角色"
+"在游玩过程中看见他们的鼠标光标。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:426
-#, fuzzy
 msgid ""
 "The second reason is because we do not want the cursor to leave the game "
 "window. If the cursor leaves the game window there could be instances where "
 "the player clicks outside the window, and then the game would lose focus. To "
 "assure neither of these issues happens, we capture the mouse cursor."
 msgstr ""
-"第二个原因是因为我们不希望光标离开游戏窗口。 如果光标离开游戏窗口，则可能存在"
-"游戏角色在窗口外点击的情况，然后游戏将失去焦点。 为了确保这些问题都不会发生，"
-"我们捕获鼠标光标。"
+"二是因为我们不希望光标离开游戏窗口。 一旦光标离开游戏窗口，就有可能产生玩家点"
+"击在窗口外，导致游戏失去焦点的问题。所以我们捕获鼠标光标来避免这些问题。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:430
-#, fuzzy
 msgid ""
 "See :ref:`Input documentation <class_Input>` for the various mouse modes. We "
 "will only be using ``MOUSE_MODE_CAPTURED`` and ``MOUSE_MODE_VISIBLE`` in "
 "this tutorial series."
 msgstr ""
-"请参阅 :ref:`输入文档<class_Input>` 用于各种鼠标模式。 我们将只在本教程系列中"
-"使用 ``MOUSE_MODE_CAPTURED`` 和 ``MOUSE_MODE_VISIBLE`` 。"
+"关于鼠标模式请参阅 :ref:`输入文档<class_Input>` 。 我们只会在本教程系列中用"
+"到 ``MOUSE_MODE_CAPTURED`` 和 ``MOUSE_MODE_VISIBLE`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:435
 msgid "Next let's take a look at ``_physics_process``:"
@@ -582,23 +562,21 @@ msgstr ""
 "``process_movement`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:439
-#, fuzzy
 msgid ""
 "``process_input`` will be where we store all the code relating to player "
 "input. We want to call it first, before anything else, so we have fresh "
 "player input to work with."
 msgstr ""
-"``process_input``将存储与游戏角色输入相关的所有代码。 我们希望在其他任何事情"
-"之前先调用它，以便我们有新的游戏角色输入。"
+"``process_input``存储与玩家输入有关的所有代码。 我们希望最先调用它，以便处理"
+"最新的玩家输入。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:442
-#, fuzzy
 msgid ""
 "``process_movement`` is where we'll send all the data necessary to the :ref:"
 "`KinematicBody <class_KinematicBody>` so it can move through the game world."
 msgstr ""
-"``process_movement`` 是我们将所有必要的数据发送到 :ref:`KinematicBody "
-"<class_KinematicBody>` 所以它可以在游戏世界中移动。"
+"``process_movement`` 是我们向 :ref:`KinematicBody <class_KinematicBody>` 发送"
+"所有必要数据的地方，这样它就可以在游戏世界中移动。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:447
 msgid "Let's look at ``process_input`` next:"
@@ -1019,15 +997,14 @@ msgid ""
 msgstr "我们的最后一个函数是 ``_input`` 函数，谢天谢地它很简短:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:651
-#, fuzzy
 msgid ""
 "First we make sure that the event we are dealing with is an :ref:"
 "`InputEventMouseMotion <class_InputEventMouseMotion>` event. We also want to "
 "check if the cursor is captured, as we do not want to rotate if it is not."
 msgstr ""
-"首先，我们确保我们正在处理的事件是 :ref:`InputEventMouseMotion "
-"<class_InputEventMouseMotion>` event。 我们还想检查光标是否被捕获，因为如果不"
-"是，我们不想旋转。"
+"首先确保要处理的事件是一个 :ref:`InputEventMouseMotion "
+"<class_InputEventMouseMotion>`事件。检查光标是否被捕获，因为如果没有捕获，我"
+"们就不希望旋转。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:654
 msgid ""
@@ -1043,8 +1020,9 @@ msgid ""
 "rotate based on the relative mouse motion provided by :ref:"
 "`InputEventMouseMotion <class_InputEventMouseMotion>`."
 msgstr ""
-"如果事件确实是鼠标移动事件并且捕获了光标，我们将根据以下提供的相对鼠标移动进"
-"行旋转 :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`。"
+"如果该事件确实是一个鼠标运动事件，并且光标被捕获，将根据 :ref:"
+"`InputEventMouseMotion <class_InputEventMouseMotion>` 提供的相对鼠标运动进行"
+"旋转。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:660
 msgid ""
@@ -1052,7 +1030,7 @@ msgid ""
 "relative mouse motion's ``Y`` value, provided by :ref:`InputEventMouseMotion "
 "<class_InputEventMouseMotion>`."
 msgstr ""
-"首先，我们使用相对鼠标运动的 ``Y`` 值旋转 ``X`` 轴上的``rotation_helper`` 节"
+"首先，我们使用相对鼠标运动的 ``Y`` 值旋转 ``X`` 轴上的 ``rotation_helper`` 节"
 "点，提供者 :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:663

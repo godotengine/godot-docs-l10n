@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,57 +26,52 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:9
-#, fuzzy
 msgid ""
 "Baked lightmaps are an alternative workflow for adding indirect (or baked) "
 "lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked "
 "lightmaps work fine on low-end PCs and mobile devices, as they consume "
 "almost no resources at run-time."
 msgstr ""
-"烘焙光照贴图是用于向场景添加间接(或烘焙)光照的替代工作流程。 与 :ref:"
-"`doc_gi_probes` 方法不同，烘焙光照贴图在低端PC和移动设备上运行良好，因为它们"
-"在运行时几乎不消耗任何资源。"
+"烘焙的光影图是为场景添加间接（或烘焙）光照的另一种工作流程。与 :ref:"
+"`doc_gi_probes` 的方法不同，烘焙光照图在低端PC和移动设备上运行良好，因为运行"
+"时几乎不消耗资源。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:14
-#, fuzzy
 msgid ""
 "Unlike ``GIProbe``\\ s, Baked Lightmaps are completely static. Once baked, "
 "they can't be modified at all. They also don't provide the scene with "
 "reflections, so using :ref:`doc_reflection_probes` together with it on "
 "interiors (or using a Sky on exteriors) is a requirement to get good quality."
 msgstr ""
-"与GIProbes不同，Baked Lightmaps是完全静态的。 一旦烘焙，它们根本无法修改。 他"
-"们也没有为场景提供反射，因此在内部使用 :ref:`doc_reflection_probes` (或在外部"
-"使用Sky)是获得高质量的要求。"
+"与 ``GIProbe``\\ s 不同的是，Baked Lightmaps[烘焙光照贴图]是完全静态的。一旦"
+"被烘焙，就不能被修改，也不能为场景提供反射，所以在内部用 :ref:"
+"`doc_reflection_probes` 和它一起使用（或者在外部使用Sky）是获得好质量的要求。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:19
-#, fuzzy
 msgid ""
 "As they are baked, they have fewer problems than ``GIProbe`` regarding light "
 "bleeding, and indirect light can look better if using Raytrace mode on high "
 "quality setting (but baking can take a while)."
 msgstr ""
-"当它们被烘焙时，它们对于光出血的问题比GIProbe少，并且如果在高质量设置上使用光"
-"线跟踪模式，间接光看起来会更好(但烘焙可能需要一段时间)。"
+"由于它们是烘焙的，所以比 ``GIProbe`` 在光线渗出方面的问题要少，如果在高质量设"
+"置下使用Raytrace[光线跟踪]模式，间接光看起来会更好（但烘焙可能需要一段时"
+"间）。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:23
-#, fuzzy
 msgid ""
 "In the end, deciding which indirect lighting approach is better depends on "
 "your use case. In general, GIProbe looks better and is much easier to set "
 "up. For mobile or low-end compatibility, though, Baked Lightmaps are your "
 "only choice."
 msgstr ""
-"最后，决定哪种间接照明方法更好取决于您的使用案例。 一般来说，GIProbe看起来更"
-"好，更容易设置。 但是，对于低端兼容性或移动设备，Baked Lightmaps是您唯一的选"
-"择。"
+"最后，决定哪种间接光照方式更好取决于你的使用案例。一般来说，GIProbe看起来更"
+"好，而且更容易设置。但对于移动或低端兼容性，Baked Lightmaps是你唯一的选择。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:29
 msgid "Visual comparison"
 msgstr "视觉比较"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:31
-#, fuzzy
 msgid ""
 "Here are some comparisons of how Baked Lightmaps vs. GIProbe look. Notice "
 "that lightmaps are more accurate, but also suffer from the fact that "
@@ -136,7 +131,6 @@ msgid ""
 msgstr "并正常导入。 请记住，导入后需要在网格上设置纹理大小。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:67
-#, fuzzy
 msgid ""
 "If you use external meshes on import, the size will be kept. Be wary that "
 "most unwrappers in 3D DCCs are not quality oriented, as they are meant to "
@@ -168,16 +162,15 @@ msgid "Unwrap on scene import"
 msgstr "解开场景导入"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:86
-#, fuzzy
 msgid ""
 "This is probably the best approach overall. The only downside is that, on "
 "large models, unwrapping can take a while on import. Just select the "
 "imported scene in the filesystem dock, then go to the Import tab. There, the "
 "following option can be modified:"
 msgstr ""
-"这可能是整体上最好的方法。 唯一的缺点是，在大型模型上，解包可能需要一段时间才"
-"能导入。 只需在文件系统面板中选择导入的场景，然后转到“导入”选项卡。 在那里，"
-"可以修改以下选项:"
+"总体来说，这可能是最好的方法。唯一的缺点是，在大型模型上，导入时解包可能需要"
+"一段时间。只要在文件系统栏选择导入的场景，然后进入导入选项卡。在那里，可以修"
+"改以下选项:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:93
 msgid ""
@@ -186,8 +179,9 @@ msgid ""
 "size of the lightmap texture (and, in consequence, the UV padding in the "
 "map)."
 msgstr ""
-"** Light Baking **模式需要设置为**``Gen Lightmaps``**。 还必须提供世界单位的"
-"纹素大小，因为这将确定光照贴图纹理的最终大小(并因此确定地图中的UV填充)。"
+"** Light Baking ** 光照烘焙模式需要设置为 **\"Gen Lightmaps\"** 。 还必须提供"
+"世界单位的纹素大小，因为这将确定光照贴图纹理的最终大小(并因此确定地图中的UV填"
+"充)。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:97
 msgid ""
@@ -225,14 +219,13 @@ msgid "Setting up the scene"
 msgstr "设置场景"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:117
-#, fuzzy
 msgid ""
 "Before anything is done, a **BakedLightmap** Node needs to be added to a "
 "scene. This will enable light baking on all nodes (and sub-nodes) in that "
 "scene, even on instanced scenes."
 msgstr ""
-"在做任何事情之前，需要将** BakedLight **节点添加到场景中。 这将在该场景中的所"
-"有节点(和子节点)上进行灯光烘焙，即使在实例化场景中也是如此。"
+"在做任何事情之前，需要在场景中添加一个**BakedLightmap** 节点。这将使该场景中"
+"的所有节点(和子节点)，甚至是实例场景中的所有节点都能进行光照烘焙。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:123
 msgid ""
@@ -248,14 +241,13 @@ msgid "Configure bounds"
 msgstr "配置边界"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:130
-#, fuzzy
 msgid ""
 "Lightmap needs an approximate volume of the area affected because it uses it "
 "to transfer light to dynamic objects inside it (more on that later). Just "
 "cover the scene with the volume as you do with ``GIProbe``:"
 msgstr ""
-"光照贴图需要受影响区域的近似体积，因为它使用它将光线传输到内部的动态对象(稍后"
-"会详细介绍)。 只需像使用GIProbe一样用音量覆盖场景:"
+"光线贴图（Lightmap）需要一个受影响区域的近似体积，因为它将光线传递给在该体积"
+"内部的动态对象（稍后再谈）。就像使用 ``GIProbe`` 一样，用体积覆盖场景："
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:137
 msgid "Setting up meshes"
@@ -324,27 +316,26 @@ msgid "Baking quality"
 msgstr "烘焙质量"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:167
-#, fuzzy
 msgid ""
 "``BakedLightmap`` uses, for simplicity, a voxelized version of the scene to "
 "compute lighting. Voxel size can be adjusted with the **Bake Subdiv** "
 "parameter. More subdivision results in more detail, but also takes more time "
 "to bake."
 msgstr ""
-"为简单起见，BakedLightmap使用场景的体素化版本来计算光照。 可以使用** Bake "
-"Subdiv **参数调整体素大小。 更多细分会产生更多细节，但也需要更多时间来烘焙。"
+"为简单起见， ``烘焙光照贴图（BakedLightmap）`` 使用场景的体素化版本来计算光"
+"照。 可以使用 **烘焙细分（Bake Subdiv）** 参数调整体素大小。 更多细分会产生更"
+"多细节，但也需要更多时间来烘焙。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:171
-#, fuzzy
 msgid ""
 "In general, the defaults are good enough. There is also a **Capture "
 "Subdivision** (that must always be equal to or less than the main "
 "subdivision), which is used for capturing light in dynamic objects (more on "
 "that later). Its default value is also good enough for most cases."
 msgstr ""
-"通常，默认值足够好。 还有一个** Capture Subdivision **(必须始终等于或小于主细"
-"分)，用于捕捉动态对象中的光(稍后会详细介绍)。 对于更多情况，它的默认值也足够"
-"好。"
+"通常，默认值足够好。 还有一个 **捕捉细分（Capture Subdivision）** (必须始终等"
+"于或小于主细分)，用于捕捉动态对象中的光(稍后会详细介绍)。 对于更多情况，它的"
+"默认值也足够好。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:178
 msgid ""
@@ -355,36 +346,33 @@ msgstr ""
 "式:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:183
-#, fuzzy
 msgid ""
 "**Voxel Cone**: Trace: Is the default one; it's less precise, but faster. "
 "Looks similar to (but slightly better than) ``GIProbe``."
 msgstr ""
-"** Voxel Cone**: 跟踪:是默认值，它不太精确但速度更快。 看起来与GIProbe相似(但"
-"稍微好一点)。"
+"**Voxel Cone**: Trace:是默认的；它不太精确，但更快。看起来类似于（但比） "
+"``GIProbe`` 稍好。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:184
-#, fuzzy
 msgid ""
 "**Ray Tracing**: This method is more precise, but can take considerably "
 "longer to bake. If used in low or medium quality, some scenes may produce "
 "grain."
 msgstr ""
-"**光线追踪**:这种方法更精确，但烘焙时间可能要长得多。 如果以低质量或中等质量"
-"使用，某些场景可能会产生谷物。"
+"**光线追踪（Ray Tracing）** ：这种方法更精确，但烘焙时间可能要长得多。 如果以"
+"低质量或中等质量使用，某些场景可能会产生噪声颗粒。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:187
 msgid "Baking"
 msgstr "烘焙"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:189
-#, fuzzy
 msgid ""
 "To begin the bake process, just push the big **Bake Lightmaps** button on "
 "top when selecting the ``BakedLightmap`` node:"
 msgstr ""
-"要开始烘焙过程，只需在选择BakedLightmap节点时按下顶部的大** Bake Lightmaps **"
-"按钮:"
+"要开始烘焙过程，只需在选择 ``BakedLightmap`` 节点时按下顶部的 ** 烘焙光照贴图"
+"（Bake Lightmaps ）** 大按钮："
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:194
 msgid ""
@@ -402,15 +390,15 @@ msgid "Several more options are present for baking:"
 msgstr "烘焙还有几种选择:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:202
-#, fuzzy
 msgid ""
 "**Bake Subdiv**: The Godot lightmapper uses a grid to transfer light "
 "information around; the default value is fine and should work for most "
 "cases. Increase it in case you want better lighting on small details or your "
 "scene is large."
 msgstr ""
-"** Bake Subdiv**: Godot lightmapper使用网格传输光信息。 默认值很好，适用于大"
-"多数情况。 增加它，以防您希望更好地照亮小细节或您的场景很大。"
+"** 烘焙细分（Bake Subdiv）** ： 光照贴图机（Godot lightmapper）使用网格来传输"
+"光信息。 默认值能很好地适用大多数情况。您希望更好地照亮小细节或您的场景很大，"
+"可以增大它。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:203
 msgid ""
@@ -429,51 +417,49 @@ msgstr ""
 "**烘焙质量**:提供三种烘焙质量模式，低，中和高。 更高的质量需要更多的时间。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:205
-#, fuzzy
 msgid ""
 "**Bake Mode**: The baker can use two different techniques: *Voxel Cone "
 "Tracing* (fast, but approximate), or *RayTracing* (slow, but accurate)."
 msgstr ""
-"**烘焙模式**:面包师可以使用两种不同的技术:* Voxel Cone Tracing *(快速但近"
-"似)，或* RayTracing *(慢但准确)。"
+"**烘焙模式（Bake Mode）** ：烘焙器可以使用两种不同的技术： *体素圆锥追踪"
+"（Voxel Cone Tracing ）* （快速但近似），或 *光线追踪（RayTracing）* （慢但准"
+"确）。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:206
-#, fuzzy
 msgid ""
 "**Propagation**: Used for the *Voxel Cone Trace* mode. Works just like in "
 "``GIProbe``."
-msgstr "**传播**:用于* Voxel Cone Trace *模式。 就像在GIProbe中一样工作。"
+msgstr "**传播**: 用于*Voxel Cone Trace*模式。工作原理与 ``GIProbe`` 中一样。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:207
-#, fuzzy
 msgid ""
 "**HDR**: If disabled, lightmaps are smaller, but can't capture any light "
 "over white (1.0)."
-msgstr "** HDR**: 如果禁用，则光照贴图较小但无法捕捉白光(1.0)。"
+msgstr ""
+"**HDR** ： 如果禁用，则光照贴图更小，但不能捕捉到任何超过白色的光线（1.0）。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:208
 msgid ""
 "**Image Path**: Where lightmaps will be saved. By default, on the same "
 "directory as the scene (\".\"), but can be tweaked."
 msgstr ""
-"**图像路径**:将保存光照贴图的位置。 默认情况下，在与场景相同的目录(``。``)"
-"上，但可以进行调整。"
+"**图像路径** : Lightmaps的保存位置。默认情况下，保存在与场景相同的目录下 (\"."
+"\")，但可以进行调整。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:209
 msgid "**Extents**: Size of the area affected (can be edited visually)"
 msgstr "**范围**:受影响区域的大小(可以直观地编辑)"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:210
-#, fuzzy
 msgid ""
 "**Light Data**: Contains the light baked data after baking. Textures are "
 "saved to disk, but this also contains the capture data for dynamic objects, "
 "which can be a bit heavy. If you are using .tscn formats (instead of .scn), "
 "you can save it to disk."
 msgstr ""
-"**光数据**:烘焙后包含光烘焙数据。 纹理保存到磁盘，但这也包含动态对象的捕获数"
-"据，这些数据可能有点重。 如果您使用.tscn格式(而不是.scn)，则可以将其保存到磁"
-"盘。"
+"**光数据（Light Data）** ：包含烘焙后的光烘焙数据。 纹理保存到磁盘，但这也包"
+"含动态对象的捕获数据，这些数据可能有点大。 如果您使用.tscn格式(而不是.scn)，"
+"则可以将其保存到磁盘。"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:213
 msgid "Dynamic objects"

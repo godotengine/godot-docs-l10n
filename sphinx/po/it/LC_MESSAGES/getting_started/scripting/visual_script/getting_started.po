@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "Ci sono tre modi principali per aggiungere funzioni in uno script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a virtual function"
@@ -110,6 +110,9 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"Nell'esempio seguente, una funzione sarà eseguita quando il nodo è caricato "
+"e aggiunto alla scena in esecuzione. Per questo, il metodo virtuale _ready() "
+"sarà sovrascritto:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
@@ -120,6 +123,8 @@ msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"Poiché alcune funzioni si aspettano che restituiate un valore, aggiungeranno "
+"anche un nodo di ritorno dove si suppone che tale valore sia fornito:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a signal to a function"

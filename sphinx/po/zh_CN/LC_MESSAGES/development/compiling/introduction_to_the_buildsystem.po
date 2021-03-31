@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -318,7 +318,7 @@ msgstr "自定义C++模块"
 msgid ""
 "It's possible to compile modules residing outside of Godot's directory tree, "
 "along with the built-in modules."
-msgstr ""
+msgstr "可以编译驻扎在Godot目录树之外的模块，以及内置模块。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
 msgid ""
@@ -327,12 +327,15 @@ msgid ""
 "containing a collection of independent C++ modules that can be seen as C++ "
 "packages, just like the built-in ``modules/`` directory."
 msgstr ""
+"在编译之前，可以在命令行中传递一个``custom_modules``构建选项。这个选项代表了"
+"一个以逗号分隔的目录路径列表，其中包含了一系列独立的C++模块，这些模块可以被看"
+"作是C++包，就像内置的``modules/``目录一样。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 msgid ""
 "For instance, it's possible to provide both relative, absolute, and user "
 "directory paths containing such modules:"
-msgstr ""
+msgstr "例如，可以同时提供包含此类模块的相对、绝对和用户目录路径："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
 msgid ""
@@ -340,11 +343,12 @@ msgid ""
 "module, the engine will only compile the custom one. This logic can be used "
 "to override built-in module implementations."
 msgstr ""
+"如果有任何自定义模块的目录名与内置模块的目录名完全相同，引擎将只编译自定义模"
+"块。这个逻辑可以用来覆盖内置模块的实现。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr ":ref:`doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_modules_in_c++`"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
 #, fuzzy
@@ -358,6 +362,8 @@ msgid ""
 "``<options>`` is the list of build options you've used to build Godot "
 "previously."
 msgstr ""
+"有时，你可能会遇到一个错误，因为生成的文件存在。您可以使用``scons --clean "
+"<options>``删除它们，其中``<options>``是您之前用来构建Godot的构建选项列表。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
 msgid ""
@@ -366,6 +372,9 @@ msgid ""
 "all untracked and ignored files in the repository. Don't run this command if "
 "you have uncommitted work!"
 msgstr ""
+"或者，你也可以使用``git clean -fixd``来清理所有平台和配置的构建工件。注意，这"
+"将删除版本库中所有未跟踪和忽略的文件。如果你有未提交的工作，请不要运行这个命"
+"令！"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
 msgid "Other build options"
@@ -404,6 +413,8 @@ msgid ""
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
+"默认的``custom.py``文件可以在Godot引擎源的根部创建，以初始化任何通过命令行传"
+"递的SCons构建选项："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:257
 #, fuzzy
@@ -420,32 +431,35 @@ msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
 msgstr ""
+"另一个自定义文件可以用``profile``命令行选项明确指定，都会覆盖默认的构建配置："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
-msgstr ""
+msgstr "从文件中设置的构建选项可以被命令行选项所覆盖。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:270
 msgid "It's also possible to override the options conditionally:"
-msgstr ""
+msgstr "也可以有条件地重写这些选项："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:285
+#, fuzzy
 msgid "Using the SCONSFLAGS"
-msgstr ""
+msgstr "使用SCONSFLAGS"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:287
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
 msgstr ""
+"``SCONSFLAGS``是一个环境变量，SCons用来自动设置选项，而无需通过命令行提供。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:290
 msgid ""
 "For instance, you may want to build Godot in parallel with the "
 "aforementioned ``-j`` option for all the future builds:"
-msgstr ""
+msgstr "例如，你可能希望在未来的所有构建中，与上述``-j``选项并行构建Godot："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:307
 msgid "Export templates"

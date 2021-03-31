@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -356,6 +356,9 @@ msgid ""
 "which also use their own markup syntax to style text, create internal and "
 "external links, etc. Here are some examples::"
 msgstr ""
+"Le traduzioni della documentazione provengono da file reStructuredText "
+"(RST), che usano anche la loro sintassi di markup per stilizzare il testo, "
+"creare collegamenti interni ed esterni, ecc. Ecco alcuni esempi::"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:291
 msgid ""
@@ -376,6 +379,9 @@ msgid ""
 "The class reference is documented in the main Godot repository using XML "
 "files, and with BBCode-like markup for styling and internal references."
 msgstr ""
+"Il riferimento alla classe è documentato nel repository principale di Godot "
+"usando file XML, e con markup tipo BBCode per lo stile e i riferimenti "
+"interni."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:302
 msgid ""
@@ -402,6 +408,9 @@ msgid ""
 "Note also that in the XML, each line is a paragraph, so you should not add "
 "line breaks if they are not part of the original translation."
 msgstr ""
+"Nota anche che nell'XML, ogni riga è un paragrafo, quindi non dovresti "
+"aggiungere interruzioni di riga se non fanno parte della traduzione "
+"originale."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:326
 msgid ""
@@ -428,6 +437,8 @@ msgid ""
 "To download the PO file locally, browse to the translation overview for your "
 "language, and select the first item in the \"Files\" menu:"
 msgstr ""
+"Per scaricare il file PO localmente, vai alla panoramica delle traduzioni "
+"per la tua lingua e seleziona la prima voce nel menu \"Files\":"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:343
 msgid ""
@@ -435,6 +446,9 @@ msgid ""
 "item in that same menu and select your file. Choose \"Add as translation\" "
 "for the file upload mode."
 msgstr ""
+"Una volta che hai finito una serie di modifiche, usa la voce \"Carica "
+"traduzione\" in quello stesso menu e seleziona il tuo file. Scegli "
+"\"Aggiungi come traduzione\" per la modalità di caricamento del file."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:349
 msgid ""
@@ -444,6 +458,10 @@ msgid ""
 "advise to use the online interface so that you always work on the latest "
 "version."
 msgstr ""
+"Se è passato molto tempo tra il download del file PO e il caricamento della "
+"versione modificata, c'è il rischio di sovrascrivere le traduzioni fatte da "
+"altri collaboratori nel frattempo. Ecco perché consigliamo di utilizzare "
+"l'interfaccia online in modo da lavorare sempre sull'ultima versione."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:355
 msgid ""
@@ -468,7 +486,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:367
 msgid "Localizing documentation images"
-msgstr ""
+msgstr "Localizzare le immagini della documentazione"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:369
 msgid ""
@@ -477,6 +495,10 @@ msgid ""
 "Some of it includes text and might thus be relevant to localize in your "
 "language."
 msgstr ""
+"La documentazione online include molte immagini, che possono essere "
+"screenshot dell'editor di Godot, grafici personalizzati, o qualsiasi altro "
+"tipo di contenuto visivo. Alcune di esse includono del testo e potrebbero "
+"quindi essere rilevanti da localizzare nella tua lingua."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:373
 msgid ""
@@ -484,6 +506,9 @@ msgid ""
 "<https://github.com/godotengine/godot-docs-l10n>`_ Git repository where the "
 "documentation translations are synced from Weblate."
 msgstr ""
+"Questa parte non è gestita tramite Weblate, ma direttamente sul repository "
+"Git `godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`_ dove "
+"le traduzioni della documentazione sono sincronizzate da Weblate."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:379
 msgid ""
@@ -491,14 +516,23 @@ msgid ""
 "Git. We plan to work on a simplified Web tool which could be used to manage "
 "image localization in a convenient way, abstracting away these steps."
 msgstr ""
+"Il flusso di lavoro non è dei più semplici e richiede una certa conoscenza "
+"di Git. Abbiamo in programma di lavorare su uno strumento web semplificato "
+"che potrebbe essere usato per gestire la localizzazione delle immagini in "
+"modo conveniente, astraendo questi passaggi."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:383
+#, fuzzy
 msgid ""
 "To translate an image, you should first locate it in the original English "
 "documentation. To do so, browse the relevant page in the docs, e.g. :ref:"
 "`doc_intro_to_the_editor_interface`. Click the \"Edit on GitHub\" link in "
 "the top right corner:"
 msgstr ""
+"Per tradurre un'immagine, dovresti prima localizzarla nella documentazione "
+"originale in inglese. Per farlo, sfoglia la pagina pertinente nella "
+"documentazione, ad esempio :ref:`doc_intro_to_the_editor_interface`. Clicca "
+"sul link \"Edit on GitHub\" in alto a destra:"
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:390
 msgid ""
@@ -507,6 +541,11 @@ msgid ""
 "Note the full path to the image as it will be needed further down (here "
 "``getting_started/step_by_step/img/project_manager_first_open.png``)."
 msgstr ""
+"Su GitHub, clicca sull'immagine che vuoi tradurre. Se pertinente, clicca su "
+"\"Download\" per scaricarla localmente e modificarla con uno strumento di "
+"editing delle immagini. Nota il percorso completo dell'immagine perché sarà "
+"necessario più avanti (qui ``getting_started/step_by_step/img/"
+"project_manager_first_open.png``)."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:397
 msgid ""
@@ -516,6 +555,11 @@ msgid ""
 "format, so you can browse the ``img/`` folder which contains them to check "
 "for that."
 msgstr ""
+"Crea la tua versione localizzata dell'immagine, modificando quella inglese, "
+"o facendo uno screenshot dell'editor con la tua lingua, se è una schermata "
+"dell'editor. Alcune immagini potrebbero anche avere file sorgente "
+"disponibili in formato SVG, per controllare puoi sfogliare la cartella ``img/"
+"`` che le contiene."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:402
 msgid ""
@@ -523,6 +567,10 @@ msgid ""
 "added before the extension, e.g. ``project_manager_first_open.png`` would "
 "become ``project_manager_first_open.fr.png`` for the French localization."
 msgstr ""
+"Dai un nome alla tua immagine localizzata come quella originale, ma con il "
+"codice della lingua aggiunto prima dell'estensione, ad esempio "
+"``project_manager_first_open.png`` diventerebbe ``project_manager_first_open."
+"fr.png`` per la localizzazione francese."
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:406
 msgid ""

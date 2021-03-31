@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,9 @@ msgid ""
 "tool that helps you organize the different components of your game."
 msgstr ""
 "Створення одної сцени та додавання до неї вузлів може працювати для "
-"маленьких проектів, але по мірі збільшення проекта в розмірах і складності, "
+"маленьких проєктів, але по мірі збільшення проєкта в розмірах і складності, "
 "кількість вузлів може швидко стати некерованою. Щоб вирішити це, Godot "
-"дозволяє розділити проект на будь-яку кількість сцен. Це дає вам потужний "
+"дозволяє розділити проєкт на будь-яку кількість сцен. Це дає вам потужний "
 "інструмент, який допоможе організувати різні компоненти вашої гри."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
@@ -80,7 +80,7 @@ msgid ""
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
 "Щоб краще зрозуміти, як створювати екземпляр (instancing), давайте "
-"завантажимо зразок проекту: :download:`instancing.zip <files/instancing."
+"завантажимо зразок проєкту: :download:`instancing.zip <files/instancing."
 "zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
@@ -88,8 +88,8 @@ msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
-"Розпакуйте цей проект куди завгодно. Потім відкрийте Godot і додайте цей "
-"проект до керівника проектів за допомогою кнопки 'Імпортувати':"
+"Розпакуйте цей проєкт куди завгодно. Потім відкрийте Godot і додайте цей "
+"проєкт до керівника проєктів за допомогою кнопки 'Імпортувати':"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -98,8 +98,8 @@ msgid ""
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
 "Перейдіть до витягнутої папки та відкрийте файл \"project.godot\", який ви "
-"можете знайти в ній. Після цього новий проект з’явиться у списку проектів. "
-"Відредагуйте проект, натиснувши кнопку «Редагувати»."
+"можете знайти в ній. Після цього новий проєкт з’явиться у списку проєктів. "
+"Відредагуйте проєкт, натиснувши кнопку «Редагувати»."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -108,7 +108,7 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
-"Цей проект містить дві сцени: \"Ball.tscn\" і \"Main.tscn\". Сцена м'яча "
+"Цей проєкт містить дві сцени: \"Ball.tscn\" і \"Main.tscn\". Сцена м'яча "
 "(\"Ball.tscn\") використовує :ref:`RigidBody2D <class_RigidBody2D>` (тверде "
 "тіло 2D) для забезпечення фізичної поведінки, тоді як головна сцена («Main."
 "tscn») має набір перешкод для зіткнення з м'ячем (використовується :ref:"

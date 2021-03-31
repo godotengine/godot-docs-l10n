@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid ""
 "combining them allows for the creation of more complex functions."
 msgstr ""
 "У Godot, можливість впорядкувати вузли таким чином створює потужний "
-"інструмент для організації проектів. Оскільки різні вузли мають різні "
+"інструмент для організації проєктів. Оскільки різні вузли мають різні "
 "функції, їх поєднання дозволяє створити більш складні функції."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
@@ -167,7 +167,7 @@ msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
-"Запуск гри означає запуск сцени. Проект може містити кілька сцен, але для "
+"Запуск гри означає запуск сцени. Проєкт може містити кілька сцен, але для "
 "старту гри одна з них повинна бути обрана як головна сцена."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
@@ -190,7 +190,7 @@ msgid ""
 "Open the project you made in :ref:`doc_intro_to_the_editor_interface`, or "
 "create a new one. This will open the Godot editor:"
 msgstr ""
-"Відкрийте проект, який ви зробили в :ref:"
+"Відкрийте проєкт, який ви зробили в :ref:"
 "`doc_intro_to_the_editor_interface`, або створіть новий. Це відкриє редактор "
 "Godot:"
 
@@ -201,7 +201,7 @@ msgid ""
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
 "Як вже згадувалося раніше, створення ігор в Godot схоже на приготування "
-"страв на кухні, тому давайте відкриємо холодильник і додамо до проекту "
+"страв на кухні, тому давайте відкриємо холодильник і додамо до проєкту "
 "кілька свіжих вузлів. Почнемо з повідомлення \"Hello World\", яке ми "
 "помістимо на екран."
 
@@ -337,9 +337,9 @@ msgid ""
 "are from inside the game."
 msgstr ""
 "А тут трапляється щось смішне. Діалогове вікно файлів - це спеціальне "
-"діалогове вікно файлу, яке дозволяє зберігати лише всередині проекту. Корінь "
-"проекту - ``res://`` це означає \"шлях до ресурсу\". Це означає, що файли "
-"можна зберігати лише всередині проекту. Надалі, виконуючи операції з файлами "
+"діалогове вікно файлу, яке дозволяє зберігати лише всередині проєкту. Корінь "
+"проєкту - ``res://`` це означає \"шлях до ресурсу\". Це означає, що файли "
+"можна зберігати лише всередині проєкту. Надалі, виконуючи операції з файлами "
 "в Godot, пам'ятайте, що \"res://\" - це шлях до ресурсів, і незалежно від "
 "платформи, чи місця установки, це спосіб знайти, де файли ресурсів "
 "знаходяться всередині гри."
@@ -363,12 +363,12 @@ msgid ""
 "Window** then enable **Allow Hidpi** under **Dpi**."
 msgstr ""
 "Якщо це не спрацює, і у вас є дисплей hiDPI принаймні на одному з моніторів, "
-"перейдіть в **Проект → Налаштування проекту → Дисплей → Вікно**, а потім "
+"перейдіть в **Проєкт → Налаштування проєкту → Дисплей → Вікно**, а потім "
 "увімкніть **Дозволити Hidpi** під **Dpi**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:180
 msgid "Configuring the project"
-msgstr "Налаштування проекта"
+msgstr "Налаштування проєкта"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:182
 msgid ""
@@ -377,10 +377,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
-"Гаразд, настав час налаштувати проект. Зараз єдиний спосіб запустити щось - "
-"це виконати поточну сцену. Однак у проектів може бути кілька сцен, тому одна "
+"Гаразд, настав час налаштувати проєкт. Зараз єдиний спосіб запустити щось - "
+"це виконати поточну сцену. Однак у проєктів може бути кілька сцен, тому одна "
 "з них повинна бути встановлена як головна сцена. Це сцена, яка буде "
-"завантажуватися при кожному запуску проекта."
+"завантажуватися при кожному запуску проєкта."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:187
 msgid ""
@@ -392,14 +392,14 @@ msgid ""
 msgstr ""
 "Усі ці параметри зберігаються у файлі project.godot, який є простим "
 "текстовим файлом у форматі win.ini (для зручного редагування). У цьому файлі "
-"ви можете змінити десятки налаштувань, щоб змінити спосіб виконання проекту. "
-"Щоб спростити цей процес, Godot надає діалогове вікно налаштувань проекту, "
+"ви можете змінити десятки налаштувань, щоб змінити спосіб виконання проєкту. "
+"Щоб спростити цей процес, Godot надає діалогове вікно налаштувань проєкту, "
 "яке виступає як своєрідний інтерфейс для редагування файлу project.godot."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:193
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
-"Для доступу до цього діалогового вікна виберіть Проект -> Параметри проекту. "
+"Для доступу до цього діалогового вікна виберіть Проєкт -> Параметри проєкту. "
 "Спробуйте зараз."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:195
@@ -427,7 +427,7 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
-"Діалогове вікно налаштувань проекту надає безліч параметрів, які можна "
+"Діалогове вікно налаштувань проєкту надає безліч параметрів, які можна "
 "зберегти у файл project.godot та показує їх значення за замовчуванням. Якщо "
 "ви змінюєте значення, ліворуч від його імені виникає галочка. Це означає, що "
 "властивість буде збережено у файлі project.godot."

@@ -1,0 +1,314 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 3.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:4
+#, fuzzy
+msgid "Creating iOS plugins"
+msgstr "Eine Erweiterung erstellen"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:6
+msgid ""
+"This page explains what iOS plugins can do for you, how to use an existing "
+"plugin, and the steps to code a new one."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:8
+msgid ""
+"iOS plugins allow you to use third-party libraries and support iOS-specific "
+"features like In-App Purchases, GameCenter integration, ARKit support, and "
+"more."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:11
+#, fuzzy
+msgid "Loading and using an existing plugin"
+msgstr "Laden und Verwenden eines Android Plugins"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:13
+msgid ""
+"An iOS plugin requires a ``.gdip`` configuration file, a binary file which "
+"can be either ``.a`` static library or ``.xcframework`` containing ``.a`` "
+"static libraries, and possibly other dependencies. To use it, you need to:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:15
+msgid ""
+"Copy the plugin's files to your Godot project's ``res://ios/plugins`` "
+"directory. You can also group files in a sub-directory, like ``res://ios/"
+"plugins/my_plugin``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:17
+msgid ""
+"The Godot editor automatically detects and imports ``.gdip`` files inside "
+"``res://ios/plugins`` and its subdirectories."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:19
+msgid ""
+"You can find and activate detected plugins by going to Project -> Export... -"
+"> iOS and in the Options tab, scrolling to the Plugins section."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:23
+msgid ""
+"When a plugin is active, you can access it in your using ``Engine."
+"get_singleton()``::"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:30
+#, fuzzy
+msgid "Creating an iOS plugin"
+msgstr "Eine Erweiterung erstellen"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:32
+msgid ""
+"At its core, a Godot iOS plugin is an iOS library (*.a* archive file or *."
+"xcframework* containing static libraries) with the following requirements:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:34
+msgid "The library must have a dependency on the Godot engine headers."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:36
+msgid "The library must come with a ``.gdip`` configuration file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:38
+msgid ""
+"An iOS plugin can have the same functionality as a Godot module but provides "
+"more flexibility and doesn't require to rebuild the engine."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:40
+msgid ""
+"Here are the steps to get a plugin's development started. We recommend using "
+"`Xcode <https://developer.apple.com/develop/>`_ as your development "
+"environment."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:42
+#, fuzzy
+msgid ""
+"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
+"Godot iOS plugins."
+msgstr ""
+"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
+"google-play-billing>`_"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:44
+msgid ""
+"The `Godot iOS plugin template <https://github.com/naithar/"
+"godot_ios_plugin>`_ gives you all the boilerplate you need to get your iOS "
+"plugin started."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:47
+#, fuzzy
+msgid "To build an iOS plugin:"
+msgstr "Erstellen von Android Plugins"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:49
+msgid "Create an Objective-C static library for your plugin inside Xcode."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:51
+msgid ""
+"Add the Godot engine header files as a dependency for your plugin library in "
+"``HEADER_SEARCH_PATHS``. You can find the setting inside the ``Build "
+"Settings`` tab:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:53
+#, fuzzy
+msgid ""
+"Download the Godot engine source from the `Godot GitHub page <https://github."
+"com/godotengine/godot>`_."
+msgstr ""
+"eine Kopie des `godot-cpp-Repository <https://github.com/GodotNativeTools/"
+"godot-cpp>`_."
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:55
+msgid ""
+"Run SCons to generate headers. You can learn the process by reading :ref:"
+"`doc_compiling_for_ios`. You don't have to wait for compilation to complete "
+"to move forward as headers are generated before the engine starts to compile."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:57
+msgid ""
+"You should use the same header files for iOS plugins and for the iOS export "
+"template."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:59
+msgid ""
+"In the ``Build Settings`` tab, specify the compilation flags for your static "
+"library in ``OTHER_CFLAGS``. The most important ones are ``-fcxx-modules``, "
+"``-fmodules``, and ``-DDEBUG`` if you need debug support. Other flags should "
+"be the same you use to compile Godot. For instance, ``-DPTRCALL_ENABLED -"
+"DDEBUG_ENABLED, -DDEBUG_MEMORY_ALLOC -DDISABLE_FORCED_INLINE -"
+"DTYPED_METHOD_BIND``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:61
+msgid ""
+"Add the required logic for your plugin and build your library to generate a "
+"``.a`` file. You will probably need to build both ``debug`` and ``release`` "
+"target ``.a`` files. Depending on your needs, pick either or both. If you "
+"need both debug and release ``.a`` files, their name should match following "
+"pattern: ``[PluginName].[TargetType].a``. You can also build the static "
+"library with your SCons configuration."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:63
+msgid ""
+"The iOS plugin system also supports ``.xcframework`` files. To generate one, "
+"you can use a command such as: ``xcodebuild -create-xcframework -library "
+"[DeviceLibrary].a -library [SimulatorLibrary].a -output [PluginName]."
+"xcframework``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:65
+msgid ""
+"Create a Godot iOS Plugin configuration file to help the system detect and "
+"load your plugin:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:67
+#, fuzzy
+msgid ""
+"The configuration file extension must be ``gdip`` (e.g.: ``MyPlugin.gdip``)."
+msgstr ""
+"Die Erweiterung der Konfigurationsdatei muss ``gdap`` sein (z.B.: ``MyPlugin."
+"gdap``)."
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:69
+msgid "The configuration file format is as follow::"
+msgstr "Das Konfigurationsdateiformat lautet wie folgt:"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:92
+msgid "The ``config`` section and fields are required and defined as follow:"
+msgstr ""
+"Der Abschnitt ``config`` und dessen Felder sind erforderlich und wie folgt "
+"definiert:"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:94
+msgid "**name**: name of the plugin"
+msgstr "**name**: Name des Plugins"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:96
+msgid ""
+"**binary**: this should be the filepath of the plugin library (``a`` or "
+"``xcframework``) file."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:98
+msgid ""
+"The filepath can be relative (e.g.: ``MyPlugin.a``, ``MyPlugin."
+"xcframework``) in which case it's relative to the directory where the "
+"``gdip`` file is located."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:99
+#, fuzzy
+msgid ""
+"The filepath can be absolute: ``res://some_path/MyPlugin.a`` or ``res://"
+"some_path/MyPlugin.xcframework``."
+msgstr "Der Dateipfad kann absolut sein: ``res://some_path/MyPlugin.aar``."
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:100
+msgid ""
+"In case you need multitarget library usage, the filename should be "
+"``MyPlugin.a`` and ``.a`` files should be named as ``MyPlugin.release.a`` "
+"and ``MyPlugin.debug.a``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:101
+msgid ""
+"In case you use multitarget ``xcframework`` libraries, their filename in the "
+"configuration should be ``MyPlugin.xcframework``. The ``.xcframework`` files "
+"should be named as ``MyPlugin.release.xcframework`` and ``MyPlugin.debug."
+"xcframework``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:103
+#, fuzzy
+msgid ""
+"The ``dependencies`` and ``plist`` sections are optional and defined as "
+"follow:"
+msgstr ""
+"Der Abschnitt ``Abhängigkeiten`` und dessen Felder sind optional und wie "
+"folgt definiert:"
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:105
+msgid "**dependencies**:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:107
+msgid ""
+"**linked**: contains a list of iOS frameworks that the iOS application "
+"should be linked with."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:109
+msgid ""
+"**embedded**: contains a list of iOS frameworks or libraries that should be "
+"both linked and embedded into the resulting iOS application."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:111
+#, fuzzy
+msgid ""
+"**system**: contains a list of iOS system frameworks that are required for "
+"plugin."
+msgstr ""
+"**remote**: enthält eine Liste der remote binären Gradle-Abhängigkeiten für "
+"das Plugin."
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:113
+msgid ""
+"**capabilities**: contains a list of iOS capabilities that is required for "
+"plugin. A list of available capabilities can be found at `Apple "
+"UIRequiredDeviceCapabilities documentation page <https://developer.apple.com/"
+"documentation/bundleresources/information_property_list/"
+"uirequireddevicecapabilities>`_."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:115
+msgid ""
+"**files**: contains a list of files that should be copied on export. This is "
+"useful for data files or images."
+msgstr ""
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:117
+#, fuzzy
+msgid ""
+"**linker_flags**: contains a list of linker flags to add to the Xcode "
+"project when exporting the plugin."
+msgstr ""
+"**remote**: enthält eine Liste der remote binären Gradle-Abhängigkeiten für "
+"das Plugin."
+
+#: ../../docs/tutorials/platform/ios/ios_plugin.rst:119
+msgid ""
+"**plist**: should have keys and values that should be present in ``Info."
+"plist`` file following pattern: ``KeyName=\"key value\"``"
+msgstr ""

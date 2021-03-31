@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,15 +137,13 @@ msgid "Multiple instances"
 msgstr "多个实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
-#, fuzzy
 msgid ""
 "You can add as many instances as you like to a scene, either by using the "
 "\"Instance\" button again, or by clicking on the ball instance and pressing :"
 "kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate it:"
 msgstr ""
-"可以添加任意多的实例到一个场景中，通过再次使用 :menuselection:`实例化"
-"(Instance)` 按钮，或者点击球的实例然后选择 :menuselection:`复制(Duplicate)` "
-"(快捷键 :kbd:`Ctrl-D`)："
+"你可以在一个场景中添加任意数量的实例，可以再次使用 \"实例化\"按钮，也可以点击"
+"球的实例，然后按:kbd:`Ctrl + D`（MacOS上按:kbd:`Cmd + D`）复制它:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -156,11 +154,12 @@ msgid "Editing instances"
 msgstr "编辑实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
-#, fuzzy
 msgid ""
 "Open the ``Ball`` scene, expand the ``PhysicsMaterial`` by clicking on it, "
 "and set the ``Bounce`` property to ``1``."
-msgstr "然后，通过点击它来展开材质，并将 ``反弹`` 属性设置为 ``1``。"
+msgstr ""
+"打开 ``Ball`` 场景, 点击 ``PhysicsMaterial`` 展开, 然后设置 ``Bounce`` 属性"
+"为 ``1``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -172,7 +171,6 @@ msgstr ""
 "因为被实例化的球基于保存过的场景，更改该场景会影响所有实例。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -181,10 +179,10 @@ msgid ""
 "Inspector dock and select \"Make Sub-Resources Unique\". Set its ``Bounce`` "
 "to ``1`` and press \"Play\"."
 msgstr ""
-"也可以调整单个实例。 将反弹值设置回 ``0``，然后在 ``Main`` 场景中，选择实例球"
-"中的一个。 像 ``物理材质`` 这样的资源默认在实例之间共享，所以我们需要使它成为"
-"唯一的。点击向下箭头并选择 :menuselection:`独立化(Make Unique)`。 将其 ``反弹"
-"`` 设置为 ``1`` 并按“播放”。"
+"也可以只调整个别实例。 先将 ``Bounce`` 设回 ``0`` ，然后在 ``Main`` 场景中，"
+"选择一个要修改的球。 默认情况下在实例间共享同一个 ``PhysicsMaterial`` 这样的"
+"资源，因此修改前需要使其独立于其他实例。 点击属性面板右上方的工具按钮，选"
+"择“转为独立子资源”，并将 ``Bounce`` 设置为 ``1`` ，测试修改后的效果。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""

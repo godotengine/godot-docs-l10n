@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -536,7 +536,7 @@ msgid ""
 "with the opaque parts, then transparency is drawn above. Use this option "
 "with transparent grass or tree foliage."
 msgstr ""
-"** Depth Pre-Pass:** 透明なオブジェクトの場合、まず不透明な部分で不透明なパス"
+"**Depth Pre-Pass:** 透明なオブジェクトの場合、まず不透明な部分で不透明なパス"
 "が作成され、次に透明度が上に描画されます。このオプションは、透明な草や木の葉"
 "で使用します。"
 
@@ -782,6 +782,10 @@ msgid ""
 "you may have to convert the normal map so its Y axis is flipped. Otherwise, "
 "the normal map direction may appear to be inverted on the Y axis."
 msgstr ""
+"Godotでは、X+、Y-、Z+の座標を使用するために、法線マップを変換する必要がありま"
+"す。つまり、他のエンジンで使用するために作られたマテリアルをインポートした場"
+"合、法線マップの Y 軸が反転するように変換する必要があるかもしれません。そうし"
+"ないと、法線マップの方向がY軸上で反転して見えることがあります。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:374
 msgid ""
@@ -954,7 +958,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:477
 msgid "There are several settings that control how detail is used."
-msgstr ""
+msgstr "ディテールの使用をコントロールする設定がいくつかあります。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:479
 msgid ""
@@ -968,6 +972,8 @@ msgstr ""
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
+"Blend Mode: これらの4つのモードは、テクスチャのブレンド方法をコントロールしま"
+"す。"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:486
 msgid ""

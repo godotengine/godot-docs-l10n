@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,26 +78,26 @@ msgid ""
 "to get access to the data."
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:40
+#: ../../docs/tutorials/networking/http_request_class.rst:65
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:42
+#: ../../docs/tutorials/networking/http_request_class.rst:67
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:44
+#: ../../docs/tutorials/networking/http_request_class.rst:69
 msgid ""
 "Note that you may want to check whether the ``result`` equals "
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
 "class reference and :ref:`HTTPRequest <class_HTTPRequest>` for more."
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:46
+#: ../../docs/tutorials/networking/http_request_class.rst:71
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
 "array, with each string containing a header in the format ``\"header: value"
@@ -105,7 +105,7 @@ msgid ""
 "header) you could use the following:"
 msgstr ""
 
-#: ../../docs/tutorials/networking/http_request_class.rst:53
+#: ../../docs/tutorials/networking/http_request_class.rst:85
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
 "may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
@@ -114,7 +114,7 @@ msgstr ""
 "<doc_ssl_certificates>` beschrieben ausführen müssen, damit die SSL/TLS-"
 "Verschlüsselung und damit die HTTPS-URLs funktionieren."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:55
+#: ../../docs/tutorials/networking/http_request_class.rst:87
 msgid ""
 "Also, when calling APIs using authorization, be aware that someone might "
 "analyse and decompile your released application and thus may gain access to "
@@ -131,11 +131,11 @@ msgstr ""
 "in Ihr Spiel einzubetten. Vermeiden Sie nach Möglichkeit nützliche "
 "Informationen für einen Angreifer bereitzustellen."
 
-#: ../../docs/tutorials/networking/http_request_class.rst:59
+#: ../../docs/tutorials/networking/http_request_class.rst:91
 msgid "Sending data to server"
 msgstr "Daten zum Server senden"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:61
+#: ../../docs/tutorials/networking/http_request_class.rst:93
 msgid ""
 "Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
@@ -145,7 +145,7 @@ msgstr ""
 "Was aber, wenn Sie Daten an den Server senden müssen? Hier ist eine übliche "
 "Vorgehensweise:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:72
+#: ../../docs/tutorials/networking/http_request_class.rst:116
 msgid ""
 "Keep in mind that you have to wait for a request to finish before sending "
 "another one. Making multiple request at once requires you to have one node "

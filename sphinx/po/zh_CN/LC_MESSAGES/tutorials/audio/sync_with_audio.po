@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,7 +69,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:16
 msgid "Mixed chunks of audio are not played immediately."
-msgstr ""
+msgstr "混合的音频块不会立即播放。"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:17
 msgid "Graphics APIs display two or three frames late."
@@ -139,6 +139,8 @@ msgid ""
 "calling :ref:`AudioServer."
 "get_output_latency()<class_AudioServer_method_get_output_latency>`."
 msgstr ""
+"输出延迟（混音后的情况）可以通过调用:ref:`AudioServer."
+"get_output_latency()<class_AudioServer_method_get_output_latency>`来估算。"
 
 #: ../../docs/tutorials/audio/sync_with_audio.rst:35
 #, fuzzy
@@ -147,7 +149,7 @@ msgid ""
 "will begin playing in the speakers during *_process()*:"
 msgstr "加上这两个，几乎可以准确地猜到音效或音乐什么时候开始在扬声器中播放："
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:60
+#: ../../docs/tutorials/audio/sync_with_audio.rst:79
 #, fuzzy
 msgid ""
 "In the long run, though, as the sound hardware clock is never exactly in "
@@ -156,7 +158,7 @@ msgstr ""
 "然而，从长远来看，由于声音硬件时钟永远不会与系统时钟完全同步，它们计时的信息"
 "会慢慢消失。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:62
+#: ../../docs/tutorials/audio/sync_with_audio.rst:81
 msgid ""
 "For a rhythm game where a song begins and ends after a few minutes, this "
 "approach is fine (and it's the recommended approach). For a game where "
@@ -166,11 +168,11 @@ msgstr ""
 "在节奏游戏中，一首歌在几分钟后开始和结束，这种方法很好(也是推荐的方法)。而对"
 "于一款回放时间更长的游戏来说，游戏最终将失去同步，需要一种不同的方法。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:65
+#: ../../docs/tutorials/audio/sync_with_audio.rst:84
 msgid "Using the sound hardware clock to sync"
 msgstr "使用声音硬件时钟同步"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:67
+#: ../../docs/tutorials/audio/sync_with_audio.rst:86
 msgid ""
 "Using :ref:`AudioStreamPlayer."
 "get_playback_position()<class_AudioStreamPlayer_method_get_playback_position>` "
@@ -185,27 +187,29 @@ msgstr ""
 "调混合一个声音块时)，如此多的调用可以返回相同的值。除此之外，由于前面提到的原"
 "因，该值也将与扬声器不同步。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:69
+#: ../../docs/tutorials/audio/sync_with_audio.rst:88
 msgid ""
 "To compensate for the \"chunked\" output, there is a function that can "
 "help: :ref:`AudioServer."
 "get_time_since_last_mix()<class_AudioServer_method_get_time_since_last_mix>`."
 msgstr ""
+"为了补偿 \"chunked\"(块)输出，有个函数能有所帮助： :ref:`AudioServer."
+"get_time_since_last_mix()<class_AudioServer_method_get_time_since_last_mix>`。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:72
+#: ../../docs/tutorials/audio/sync_with_audio.rst:91
 msgid ""
 "Adding the return value from this function to *get_playback_position()* "
 "increases precision:"
 msgstr "将这个函数的返回值添加到*获取_回放_位置()*可以提高精度："
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:79
+#: ../../docs/tutorials/audio/sync_with_audio.rst:103
 #, fuzzy
 msgid ""
 "To increase precision, subtract the latency information (how much it takes "
 "for the audio to be heard after it was mixed):"
 msgstr "为了提高精度，处理延迟信息（音频混合后需要多少时间才能被听到）："
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:86
+#: ../../docs/tutorials/audio/sync_with_audio.rst:114
 msgid ""
 "The result may be a bit jittery due how multiple threads work. Just check "
 "that the value is not less than in the previous frame (discard it if so). "
@@ -217,6 +221,6 @@ msgstr ""
 "值(如果小于，则将其丢弃)。这个方法也不如之前的精确，但它适用于任何长度的歌"
 "曲，或者将任何东西(例如音效)与音乐同步。"
 
-#: ../../docs/tutorials/audio/sync_with_audio.rst:88
+#: ../../docs/tutorials/audio/sync_with_audio.rst:116
 msgid "Here is the same code as before using this approach:"
 msgstr "下面是使用这种方法之前相同的代码："

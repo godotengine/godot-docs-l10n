@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+#: ../../docs/index.rst:65
+msgid "General"
+msgstr "Général"
+
+#: ../../docs/index.rst:73
+msgid "Getting started"
+msgstr "Prise en main"
+
+#: ../../docs/index.rst:84
+msgid "Tutorials"
+msgstr "Tutoriels"
+
+#: ../../docs/index.rst:114
+msgid "Development"
+msgstr "Développement"
+
+#: ../../docs/index.rst:125
+msgid "Community"
+msgstr "Communauté"
+
+#: ../../docs/index.rst:135
+msgid "Class reference"
+msgstr "Référence des Classes"
+
 #: ../../docs/index.rst:2
-msgid "Godot Docs – *3.2* branch"
-msgstr "Godot Documents – version *3.2*"
+msgid "Godot Docs – *3.3* branch"
+msgstr "Godot Documents – version *3.3*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -32,17 +56,17 @@ msgstr ""
 
 #: ../../docs/index.rst:10
 msgid ""
-"This is the documentation for the stable 3.2 branch. Looking for the "
+"This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
 "<https://docs.godotengine.org/en/latest>`_. You can also browse the "
-"documentation for the previous stable `3.1 <https://docs.godotengine.org/"
-"en/3.1>`_ branch."
+"documentation for the previous stable `3.2 <https://docs.godotengine.org/"
+"en/3.2>`_ branch."
 msgstr ""
-"Ceci est la documentation de la branche 3.2 stable. Vous recherchez la "
+"Ceci est la documentation de la branche 3.3 stable. Vous recherchez la "
 "documentation de la branche **développement** actuelle ? Jetez un œil ici "
 "<https://docs.godotengine.org/en/latest>`_. Vous pouvez aussi consulter la "
-"documentation de la branche stable précédente `3.1 <https://docs.godotengine."
-"org/en/3.1>`_."
+"documentation de la branche stable précédente `3.2 <https://docs.godotengine."
+"org/en/3.2>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -103,6 +127,14 @@ msgstr ""
 
 #: ../../docs/index.rst:41
 msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ for offline "
+"reading (updated every Monday). Extract the ZIP archive then open the top-"
+"level ``index.html`` in a web browser."
+msgstr ""
+
+#: ../../docs/index.rst:45
+msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
 "improve the tutorials and class reference. If you don't understand "
@@ -116,53 +148,28 @@ msgstr ""
 "pas l'information qu'il vous faut, aidez-nous à améliorer la documentation "
 "en nous le faisant savoir !"
 
-#: ../../docs/index.rst:48
+#: ../../docs/index.rst:52
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
 "<https://hosted.weblate.org/engage/godot-engine/>`_ into your language, or "
 "talk to us on either the ``#documentation`` channel on `Discord <https://"
-"discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
-"net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"discord.gg/zH7NUgz>`_, or the ``#documentation`` channel on the `Godot "
+"Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
 "Soumettez un rapport de bug ou une *pull request* sur le `dépôt GitHub "
 "<https://github.com/godotengine/godot-docs/issues>`_, aidez nous à `traduire "
 "la documentation <https://hosted.weblate.org/engage/godot-engine/>`_ dans "
 "votre langue, ou discutez avec nous sur le canal ``#documentation`` sur "
-"`Discord <https://discord.gg/zH7NUgz>`_ ou le canal ``#godotengine-doc`` sur "
-"`irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_ !"
+"`Discord <https://discord.gg/zH7NUgz>`_ ou le canal ``#documentation`` sur "
+"le `Chat des contributeurs de Godot <https://chat.godotengine.org/>`_ !"
 
-#: ../../docs/index.rst:58
+#: ../../docs/index.rst:62
 msgid "weblate_widget"
 msgstr "weblate_widget"
 
-#: ../../docs/index.rst:59
+#: ../../docs/index.rst:63
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
 "La documentation principale du site est organisée en plusieurs sections :"
-
-#: ../../docs/index.rst:61
-msgid "General"
-msgstr "Général"
-
-#: ../../docs/index.rst:69
-msgid "Getting started"
-msgstr "Prise en main"
-
-#: ../../docs/index.rst:80
-msgid "Tutorials"
-msgstr "Tutoriels"
-
-#: ../../docs/index.rst:110
-msgid "Development"
-msgstr "Développement"
-
-#: ../../docs/index.rst:121
-msgid "Community"
-msgstr "Communauté"
-
-#: ../../docs/index.rst:131
-msgid "Class reference"
-msgstr "Référence des Classes"

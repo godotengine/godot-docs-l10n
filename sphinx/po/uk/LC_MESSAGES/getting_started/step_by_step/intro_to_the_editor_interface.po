@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgid ""
 "to get started with the engine."
 msgstr ""
 "Це керівництво проведе вас через інтерфейс Godot. Ми розглянемо **Менеджер "
-"проектів, доки, робочі області** і все, що вам потрібно знати, щоб почати "
+"проєктів, доки, робочі області** і все, що вам потрібно знати, щоб почати "
 "роботу з движком."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
@@ -40,7 +40,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
-msgstr "Керівник проекту"
+msgstr "Керівник проєкту"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
 msgid ""
@@ -49,7 +49,7 @@ msgid ""
 "the asset library, just click cancel, we'll look at it later."
 msgstr ""
 "Коли ви запускаєте Godot, перше вікно, яке ви побачите, - це менеджер "
-"проекту. Оскільки у вас немає проектів, з'явиться спливаюче вікно із "
+"проєкту. Оскільки у вас немає проєктів, з'явиться спливаюче вікно із "
 "запитом, чи хочете ви відкрити бібліотеку Ассет - просто натисніть кнопку "
 "\"Скасувати\", ми повернемося до цього пізніше."
 
@@ -77,16 +77,16 @@ msgid ""
 "downloading click install and choose where you want the project to go. You "
 "can learn more about it in :ref:`doc_what_is_assetlib`."
 msgstr ""
-"На вкладці **Шаблони** ви можете завантажити шаблони проектів та "
+"На вкладці **Шаблони** ви можете завантажити шаблони проєктів та "
 "демонстрації з відкритим кодом з бібліотеки активів, що допоможе вам швидше "
 "розпочати роботу. Просто виберіть потрібний шаблон, або демонстрацію, "
 "натисніть кнопку \"Завантажити\", після закінчення завантаження натисніть "
-"\"Встановити\" і виберіть, куди ви хочете встановити проект. Ви можете "
+"\"Встановити\" і виберіть, куди ви хочете встановити проєкт. Ви можете "
 "дізнатися більше про це у :ref:`doc_what_is_assetlib`."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:40
 msgid "Create or import a project"
-msgstr "Створення або імпортування проекту"
+msgstr "Створення або імпортування проєкту"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:42
 msgid ""
@@ -94,9 +94,9 @@ msgid ""
 "you give it a name, choose an empty folder on your computer to save it to, "
 "and choose a renderer."
 msgstr ""
-"Щоб створити новий проект, натисніть кнопку ``Новий проект`` справа. Вкажіть "
-"назву проекту і виберіть порожню теку на вашому комп'ютері для зберігання "
-"даних проекту."
+"Щоб створити новий проєкт, натисніть кнопку ``Новий проєкт`` справа. Вкажіть "
+"назву проєкту і виберіть порожню теку на вашому комп'ютері для зберігання "
+"даних проєкту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid ""
@@ -105,7 +105,7 @@ msgid ""
 msgstr ""
 "Натисніть кнопку Browse (Огляд), щоб відкрити файловий менеджер Godot і "
 "вибрати розташування папки або введіть шлях до неї в поле Project Path (Шлях "
-"до проекту)."
+"до проєкту)."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:53
 msgid ""
@@ -130,7 +130,7 @@ msgstr ""
 "чи OpenGL ES 2.0). Переваги та недоліки кожного з них перераховані нижче, "
 "щоб полегшити ваш вибір, і ви можете ознайомитися з :ref:"
 "`doc_gles2_gles3_differences` для отримання більш детальної інформації. "
-"Зауважте, що згодом ви можете змінити свій вибір в параметрах проекту, якщо "
+"Зауважте, що згодом ви можете змінити свій вибір в параметрах проєкту, якщо "
 "передумаєте. Для цього уроку чудово підійде будь-який вибір."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
@@ -139,15 +139,15 @@ msgid ""
 "you and open it in the editor."
 msgstr ""
 "Після завершення натисніть кнопку ``Створити та змінити``. Godot створить "
-"для вас проект і відкриє його в редакторі."
+"для вас проєкт і відкриє його в редакторі."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"Наступного разу, коли ви відкриєте менеджер проекту, ви побачите ваш новий "
-"проект в списку. Двічі клікніть по ньому, щоб відкрити його в редакторі."
+"Наступного разу, коли ви відкриєте менеджер проєкту, ви побачите ваш новий "
+"проєкт в списку. Двічі клікніть по ньому, щоб відкрити його в редакторі."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
@@ -155,8 +155,8 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
-"Ви можете імпортувати наявні проекти аналогічним чином, використовуючи "
-"кнопку Імпортувати. Знайдіть теку, яка містить проект або файл ``project."
+"Ви можете імпортувати наявні проєкти аналогічним чином, використовуючи "
+"кнопку Імпортувати. Знайдіть теку, яка містить проєкт або файл ``project."
 "godot``, щоб імпортувати та редагувати його."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
@@ -173,7 +173,7 @@ msgid ""
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"Ласкаво просимо в Godot! Відкривши свій проект, ви побачите інтерфейс "
+"Ласкаво просимо в Godot! Відкривши свій проєкт, ви побачите інтерфейс "
 "редактора з меню у верхній частині інтерфейсу і панелями, розташованими по "
 "обидва боки від ескізу."
 
@@ -190,7 +190,7 @@ msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
 msgstr ""
 "У док-панелі **FileSystem** (Файлова система) ви можете керувати файлами та "
-"ресурсами вашого проекту."
+"ресурсами вашого проєкту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 msgid ""
@@ -309,7 +309,7 @@ msgid ""
 "scripts and assets to use in your projects."
 msgstr ""
 "Нарешті, **AssetLib** - це бібліотека безкоштовних додатків, скриптів та "
-"ресурсів, для використання у ваших проектах."
+"ресурсів, для використання у ваших проєктах."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:164
 msgid "Modify the interface"

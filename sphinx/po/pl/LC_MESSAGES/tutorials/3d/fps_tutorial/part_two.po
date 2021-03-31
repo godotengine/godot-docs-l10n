@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,12 +133,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:171
+#, fuzzy
 msgid ""
 "If we try to transition to a state that is not included in the possible "
 "transitions states for the state we are in, then we get a warning message "
 "and the animation does not change. We can also automatically transition from "
 "some states into others, as will be explained further below in "
-"``animation_ended``"
+"``animation_ended``."
 msgstr ""
 "Jeśli spróbujemy przejść do stanu, który nie jest zawarty w możliwych "
 "stanach przejściowych dla stanu, w którym się znajdujemy, otrzymamy "
@@ -232,7 +233,8 @@ msgstr ""
 "animacja jest zakończona, ``animation_ended`` będzie wywoływany."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:206
-msgid "Lets look at ``set_animation`` next."
+#, fuzzy
+msgid "Let's look at ``set_animation`` next."
 msgstr "Spójrzmy następnie na ``set_animation``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:208
@@ -310,7 +312,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:236
-msgid "Now lets look at ``animation_ended``."
+#, fuzzy
+msgid "Now let's look at ``animation_ended``."
 msgstr "Spójrzmy teraz na ``animation_ended``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:238
@@ -1643,7 +1646,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1109
 msgid ""
 "The first thing we do is make sure we've received input to change weapons. "
-"We do this by making sure ``changing_weapons`` is ``true``."
+"We do this by making sure ``changing_weapon`` is ``true``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1111

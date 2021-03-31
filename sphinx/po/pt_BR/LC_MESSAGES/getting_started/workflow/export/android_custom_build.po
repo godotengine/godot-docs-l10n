@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:36
 msgid "Install the Android SDK (command-line version)"
-msgstr ""
+msgstr "Instalar o Android SDK (versão de linha de comando)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:38
 msgid ""
@@ -93,6 +93,11 @@ msgid ""
 "easier, but it requires downloading and installing Android Studio (which may "
 "require more than 1 GB of storage)."
 msgstr ""
+"Estes são os passos para instalar o Android SDK usando a linha de comando. A "
+"vantagem desta abordagem é a simplicidade e o tamanho pequeno de download/"
+"instalação. No entanto, pode ser mais desafiador. A abordagem do Android "
+"Studio é mais fácil, mas requer o download e instalação do Android Studio (o "
+"que pode exigir mais de 1 GB de armazenamento)."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:45
 msgid "Install a JDK"
@@ -105,6 +110,10 @@ msgid ""
 "`OpenJDK 8 <https://adoptopenjdk.net/index.html>`__ is required, newer "
 "versions won't work."
 msgstr ""
+"O Android SDK não vem com Java, por isso precisa ser instalado manualmente. "
+"Você precisa instalar um Java SDK (**não** apenas o executável ou JRE). O "
+"`OpenJDK8 <https://adoptopenjdk.net/index.html>`__ é necessário, versões "
+"mais recentes não vão funcionar."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:52
 msgid ""
@@ -159,6 +168,9 @@ msgid ""
 "folder. Then unzip the Android SDK ZIP file into the ``android-sdk/cmdline-"
 "tools`` folder."
 msgstr ""
+"Crie uma pasta vazia chamada ``cmdline-tools`` dentro da pasta ``android-"
+"sdk``. Em seguida, descompacte o arquivo Android SDK ZIP na pasta ``android-"
+"sdk/cmdline-tools``."
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:86
 msgid ""
@@ -308,7 +320,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:187
 msgid "Install the Android SDK (Android Studio)"
-msgstr ""
+msgstr "Instalar o Android SDK (Android Studio)"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:189
 msgid ""
@@ -348,13 +360,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:214
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr "Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid "Android SDK Platform"
-msgstr ""
+msgstr "Plataforma Android SDK"
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:217
 msgid ""

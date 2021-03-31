@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgstr "3"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr "float"
+msgstr "(单精度)浮点数"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:98
@@ -444,6 +444,10 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
+"之后是实际的数据包内容，每种类型的数据包内容都不同。请注意，这是假设Godot是用"
+"单精度浮点数编译的，这是默认的。如果Godot是用双精度浮点数编译的，那么数据结构"
+"中 \"float\" 字段的长度应该是8，偏移量应该是 ``(offset - 4) * 2 + 4`` 。 "
+"\"float\" 类型本身总是使用双精度。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:90
 msgid "0: null"
@@ -907,17 +911,17 @@ msgstr "14: :ref:`Color<class_color>`"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:301
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "红色(一般为0...1，对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:303
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "Green (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "绿色(一般为0...1，对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
-msgstr ""
+msgstr "蓝色(一般为0...1，对于过亮的颜色可大于1)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481

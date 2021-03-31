@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,7 +60,7 @@ msgstr ""
 "Если вы не уверены в аспекте, который здесь не описан, обратитесь к более "
 "полной документации, такой как `Соглашения о написании кода на C# <https://"
 "docs.microsoft.com/ru-ru/dotnet/csharp/programming-guide/inside-a-program/"
-"coding-conventions>`_ или `Правила именования С# <https://docs.microsoft.com/"
+"coding-conventions>`_ или `Правила именования C# <https://docs.microsoft.com/"
 "ru-ru/dotnet/standard/design-guidelines/naming-guidelines>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
@@ -73,10 +73,10 @@ msgid ""
 "code. So, before we move to a newer version, care must be taken to avoid "
 "mixing language features only available in C# 7.1 or later."
 msgstr ""
-"Godot в настоящее время использует **C # версию 7.0** в своем движке и "
-"пример исходного кода. Поэтому, прежде чем перейти к более новой версии, "
-"необходимо позаботиться о том, чтобы не смешивать языковые функции, "
-"доступные только в C# 7.1 или более поздней версии."
+"Godot в настоящее время использует **C# версии 7.0** в своем движке и пример "
+"исходного кода. Поэтому, прежде чем перейти к более новой версии, необходимо "
+"позаботиться о том, чтобы не смешивать языковые функции, доступные только в "
+"C# 7.1 или более поздней версии."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -152,9 +152,8 @@ msgid "However, you may choose to omit line breaks inside brackets:"
 msgstr "Однако вы можете пропустить разрывы строк внутри скобок:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:65
-#, fuzzy
 msgid "For simple property accessors."
-msgstr "Для простых свойств собственности."
+msgstr "Для простых методов доступа к свойствам."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:66
 msgid "For simple object, array, or collection initializers."

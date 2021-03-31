@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,7 @@ msgstr ""
 "下面是我们使其工作所需的所有代码。 该网址指向一个在线API模拟器; 它将返回一个"
 "预先定义好的JSON字符串，然后我们将解析它以获取对数据的访问权限。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:40
+#: ../../docs/tutorials/networking/http_request_class.rst:65
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
@@ -88,7 +88,7 @@ msgstr ""
 "有了这个，您应该在控制台上看到 ``(hello:world)`` ; hello是关键字，world是值，"
 "两者都是字符串。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:42
+#: ../../docs/tutorials/networking/http_request_class.rst:67
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
@@ -96,7 +96,7 @@ msgstr ""
 "有关解析JSON的更多信息，请参阅类型参考 :ref:`JSON <class_JSON>` 和 :ref:"
 "`JSONParseResult <class_JSONParseResult>` 。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:44
+#: ../../docs/tutorials/networking/http_request_class.rst:69
 msgid ""
 "Note that you may want to check whether the ``result`` equals "
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
@@ -106,7 +106,7 @@ msgstr ""
 "误是否发生，要了解更多信息, 请参阅JSON类型参考和 :ref:`HTTPRequest "
 "<class_HTTPRequest>` 。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:46
+#: ../../docs/tutorials/networking/http_request_class.rst:71
 msgid ""
 "Of course, you can also set custom HTTP headers. These are given as a string "
 "array, with each string containing a header in the format ``\"header: value"
@@ -117,7 +117,7 @@ msgstr ""
 "包含一个格式为 ``\"header: value\"`` 的头部。 例如，要设置自定义用户代理(HTTP"
 "的 ``user-agent`` 头部部分)，您可以像这样使用:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:53
+#: ../../docs/tutorials/networking/http_request_class.rst:85
 #, fuzzy
 msgid ""
 "Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
@@ -126,7 +126,7 @@ msgstr ""
 "请注意，为可以用到SSL/TLS加密即HTTPS 格式的网址上，您可能需要额外的操作, 见 :"
 "ref:`here <doc_ssl_certificates>` 。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:55
+#: ../../docs/tutorials/networking/http_request_class.rst:87
 msgid ""
 "Also, when calling APIs using authorization, be aware that someone might "
 "analyse and decompile your released application and thus may gain access to "
@@ -140,11 +140,11 @@ msgstr ""
 "嵌入诸如数据库访问凭证之类的东西通常不是一个好主意。 尽可能避免提供对攻击者有"
 "用的信息。"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:59
+#: ../../docs/tutorials/networking/http_request_class.rst:91
 msgid "Sending data to server"
 msgstr "将数据发送到服务器"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:61
+#: ../../docs/tutorials/networking/http_request_class.rst:93
 #, fuzzy
 msgid ""
 "Until now, we have limited ourselves to requesting data from a server. But "
@@ -154,7 +154,7 @@ msgstr ""
 "到目前为止，我们仅限于从服务器请求数据。 但是，如果您需要将数据发送到服务器"
 "呢？ 下面是一种常见的做法:"
 
-#: ../../docs/tutorials/networking/http_request_class.rst:72
+#: ../../docs/tutorials/networking/http_request_class.rst:116
 msgid ""
 "Keep in mind that you have to wait for a request to finish before sending "
 "another one. Making multiple request at once requires you to have one node "

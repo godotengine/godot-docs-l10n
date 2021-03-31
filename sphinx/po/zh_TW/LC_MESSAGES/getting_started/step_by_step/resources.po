@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,7 +365,7 @@ msgstr ""
 msgid "Let's see some examples."
 msgstr "來看看一些例子。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:271
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -378,7 +378,7 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` 結合使用來為資源的資料建立自定的視覺界面"
 "與編輯器。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:277
+#: ../../docs/getting_started/step_by_step/resources.rst:283
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -388,19 +388,19 @@ msgstr ""
 "DataTable 就是映射到自定結構的字串，與 Dictionary 映射字串到一個第二層自定資"
 "源腳本的做法類似。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:313
+#: ../../docs/getting_started/step_by_step/resources.rst:319
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr "除了直接在行內寫上字典值，也可以…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:315
+#: ../../docs/getting_started/step_by_step/resources.rst:321
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr "從試算表中匯入整張表的值並產生索引鍵/值組，或…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:317
+#: ../../docs/getting_started/step_by_step/resources.rst:323
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -408,7 +408,7 @@ msgstr ""
 "在編輯器中設計視覺界面並製作一個簡單的插件來在開啟這類資源型別的時候顯示在屬"
 "性面板中。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:320
+#: ../../docs/getting_started/step_by_step/resources.rst:326
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -416,7 +416,7 @@ msgstr ""
 "CurveTable 是同樣的東西，不同的地方是 CurveTable 是映射到一組以浮點數為值的陣"
 "列或 :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` 資源物件。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:325
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -430,7 +430,7 @@ msgstr ""
 "內部類別（如在 GDScript 內使用 ``class`` 關鍵字）。Godot 不會正確地序列化腳本"
 "內子類別的自定屬性。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:331
+#: ../../docs/getting_started/step_by_step/resources.rst:337
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

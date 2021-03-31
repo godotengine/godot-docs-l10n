@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,9 +66,8 @@ msgid ":doc:`ui_main_menu`"
 msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
-#, fuzzy
 msgid ":doc:`ui_game_user_interface`"
-msgstr ":ref:`doc_godot_interfaces`"
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -193,11 +192,10 @@ msgstr ""
 "法"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
-msgstr "该项目使用一个简单的组织来处理游戏果酱和小型游戏。"
+msgstr "该项目使用一个简单的项目组织结构适用于处理game jams和小型游戏。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -385,7 +383,6 @@ msgstr ""
 "态。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -588,16 +585,15 @@ msgstr ""
 "一个字符串，因此我们不能将其直接指定为 ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
 "of the game. Press :kbd:`F5` to test the game: the life bar updates with "
 "every attack!"
 msgstr ""
-"还要在 ``_ready`` 函数的末尾调用 ``update_health``，以在游戏开始时用正确的值"
-"初始化 ``Number`` 节点的 ``text``。按F5键测试游戏：每次攻击时，生命条都会更"
-"新！"
+"还要在 ``_ready`` 函数的末尾调用 ``update_health`` ，以在游戏开始时用正确的值"
+"初始化 ``Number`` 节点的 ``text`` 。按 :kbd:`F5`测试游戏：每次攻击时，生命条"
+"都会更新！"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
@@ -945,15 +941,14 @@ msgstr ""
 "然后，我们必须再次调用 ``Tween`` 节点的 ``interpolate_property`` 方法："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:645
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
 "这一次，我们改变了 ``modulate`` 属性，并将其从 ``start_color`` 动画化到 "
-"``end_color``。持续时间为1秒，线性过渡。再一次，因为过渡是线性的，所以缓动并"
-"不重要。下面是完整的 ``_on_Player_died`` 方法："
+"``end_color`` 。持续时间为1秒，线性过渡。因为过渡是线性的，所以缓动并不重要"
+"（译者注）。下面是完整的 ``_on_Player_died`` 方法："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:669
 msgid "And that is it. You may now play the game to see the final result!"

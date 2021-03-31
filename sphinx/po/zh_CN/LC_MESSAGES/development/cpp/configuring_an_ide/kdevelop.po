@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgstr "首先打开KDevelop并选择“打开项目（open project）”。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:17
 msgid "KDevelop's main screen."
-msgstr ""
+msgstr "KDevelop的主屏幕。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:19
 msgid "Navigate to the Godot root folder and select it."
-msgstr ""
+msgstr "导航到这Godot根文件夹并选择它。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:20
 #, fuzzy
@@ -61,12 +61,15 @@ msgid ""
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
 "** option."
 msgstr ""
+"在导入项目后，在**项目**面板中单击右键并选择**打开配置..**来打开项目配置。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:33
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
 msgstr ""
+"在**Language Support(语言支持)**下打开**Includes/Imports(包含/导入)**标签并添"
+"加以下路径:"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:49
 msgid "Apply the changes."
@@ -77,11 +80,12 @@ msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
 msgstr ""
+"在**Custom Build System(自定义构建系统)**下添加一个新的构建配置，设置如下:"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 #, fuzzy
 msgid "Build Directory"
-msgstr "构建它："
+msgstr "生成目录"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:53
 msgid "*blank*"
@@ -118,7 +122,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:66
 msgid "Apply the changes and close the configuration window."
-msgstr ""
+msgstr "应用更改并关闭配置窗口。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 #, fuzzy
@@ -127,25 +131,29 @@ msgstr "准备项目"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
-msgstr ""
+msgstr "从这顶部菜单选择 **Run > Configure Launches...**[运行>配置选项]。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:77
+#, fuzzy
 msgid "Click **Add** to create a new launch configuration."
-msgstr ""
+msgstr "单击 **Add** 已配置一个新的选项。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:78
+#, fuzzy
 msgid ""
 "Select **Executable** option and specify the path to your executable located "
 "in the ``<Godot root directory>/bin`` folder. The name depends on your build "
 "configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
 "``tools`` enabled."
 msgstr ""
+"选择**Executable(可执行)**选项并指定 ``<Godot 根目录>/bin`` 文件夹下可执行文"
+"件的路径。其名称取决于你的构建配置，例如：``godot.x11.tools.64`` for 64-bit "
+"X11 platform with ``tools`` enabled。"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"有关这些渠道的简要概述也可在 `Godot网站 <https://godotengine.org/"
-"community>`_ 上找到。"
+"如果遇到问题，也可在 `Godot社区论坛 <https://godotengine.org/community>`__ 中"
+"寻求帮助。"

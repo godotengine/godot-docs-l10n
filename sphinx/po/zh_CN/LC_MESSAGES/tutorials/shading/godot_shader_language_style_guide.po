@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:4
+#, fuzzy
 msgid "Godot shader language style guide"
-msgstr ""
+msgstr "Godot着色器语言风格指南"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:6
 #, fuzzy
@@ -39,6 +40,10 @@ msgid ""
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
 "godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
 msgstr ""
+"由于Godot的着色器语言与C风格语言和GLSL很接近，所以本指南的灵感来自于Godot自己"
+"的GLSL格式。你可以在Godot的源代码中查看一个GLSL文件的例子 `这里<https://"
+"github.com/godotengine/godot/blob/master/drivers/gles2/shaders/copy.glsl>` "
+"__。"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:16
 msgid ""
@@ -193,7 +198,7 @@ msgstr "一条语句一行"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:160
 msgid "Never combine multiple statements on a single line."
-msgstr ""
+msgstr "切勿在一行中合并多个语句。"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:179
 msgid "The only exception to that rule is the ternary operator:"
@@ -214,7 +219,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:208
 msgid ""
 "Don't use multiline comment syntax if your comment can fit on a single line:"
-msgstr ""
+msgstr "如果你的注释可以容纳在单行上，就不要使用多行注释语法:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:216
 #, fuzzy
@@ -254,6 +259,9 @@ msgid ""
 "This makes it easier to distinguish floating-point numbers from integers, as "
 "well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
+"在整数和小数部分请始终指定至少一个数字，这样可以更容易区分浮点和整数，以及区"
+"分大于1和小于1的数字。这样可以更容易区分浮点数和整数，以及区分大于1和小于1的"
+"数字。"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:273
 #, fuzzy
@@ -267,6 +275,9 @@ msgid ""
 "``x``, ``y``, ``z``, and ``w``. This allows those reading your code to "
 "better understand what the underlying data represents."
 msgstr ""
+"如果向量包含颜色，在访问向量成员时使用 ``r`` 、 ``g`` 、 ``b`` 和 ``a`` 。如"
+"果向量中不包含颜色，则使用 ``x`` 、 ``y`` 、 ``z`` 和 ``w`` 。这可以让那些阅"
+"读你的代码的人更好地理解基础数据的含义。"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:293
 msgid "Naming conventions"
@@ -332,9 +343,10 @@ msgid ""
 "\"Public\" comes before \"private\". In a shader language's context, \"public"
 "\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
+"\"公共 \" 优先在 \"私有 \" 之前。在着色器语言的语境中，\"公共 \" 指的是易于由"
+"用户调整的东西（uniforms）。"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
 msgstr "局部变量"
 

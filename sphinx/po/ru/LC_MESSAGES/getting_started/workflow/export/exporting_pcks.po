@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Use cases"
 msgstr "Случаи использования"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:9
-#, fuzzy
 msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
@@ -84,14 +83,12 @@ msgid "incremental updates/patches"
 msgstr "дополнительные обновления/патчи"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
-#, fuzzy
 msgid "offer DLCs"
-msgstr "предлагает DLC"
+msgstr "даёт возможность создавать DLC"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
-#, fuzzy
 msgid "offer mod support"
-msgstr "предоставляет поддержку модов"
+msgstr "даёт возможность поддержки модификаций(модов)"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
@@ -120,17 +117,14 @@ msgid "PCK files usually contain, but are not limited to:"
 msgstr "Файлы PCK обычно содержат, но не ограничиваются:"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
 msgstr "скрипты"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Сцены"
+msgstr "сцены"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
-#, fuzzy
 msgid "shaders"
 msgstr "шейдеры"
 
@@ -139,12 +133,10 @@ msgid "models"
 msgstr "модели"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
 msgstr "текстуры"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
 msgstr "звуковые эффекты"
 
@@ -243,7 +235,6 @@ msgid "Opening PCK files at runtime"
 msgstr "Открытие файлов PCK во время выполнения"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
-#, fuzzy
 msgid ""
 "To import a PCK file, one uses a one-liner. Keep in mind, there is no error "
 "or exception if the import fails. Instead, one might have to create some "
@@ -251,12 +242,12 @@ msgid ""
 "file in the directory of the games executable. The PCK file contains a "
 "“mod_scene.tscn” test scene in its root."
 msgstr ""
-"Чтобы импортировать PCK файл, вам можно использовать всего одну строку. Но "
-"держите в уме, что нет ошибки или какой-нибудь особой ситуации для неудачи с "
-"импортом. Вместо этого, вам придется создать код для проверки этого поверх "
-"всего остального. Приведенный пример исключает файл “mod.pck„ в папке с "
-"исполняемым файлом игры. Файл PCK содержит “mod_scene.tscn„, тестовую сцену "
-"в своей корневой папке."
+"Чтобы импортировать PCK файл, вам можно использовать всего одну строку кода. "
+"Но держите в уме, что нет ошибки или какой-нибудь особой ситуации при "
+"неудачи с импортом. Вместо этого, вам придется создать код для проверки "
+"этого поверх всего остального. Приведенный пример предполагает наличие файла "
+"“mod.pck„ в папке с исполняемым файлом игры. Этот PCK файл содержит "
+"“mod_scene.tscn„, тестовую сцену в своей корневой папке."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""

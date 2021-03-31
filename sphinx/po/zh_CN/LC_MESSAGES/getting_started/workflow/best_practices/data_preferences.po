@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,7 +225,6 @@ msgstr ""
 "索算法来完成。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:105
-#, fuzzy
 msgid ""
 "Godot implements Dictionary as an ``OrderedHashMap<Variant, Variant>``. The "
 "engine stores a small array (initialized to 2^3 or 8 records) of key-value "
@@ -236,10 +235,12 @@ msgid ""
 "becomes too full, it increases to the next power of 2 (so, 16 records, then "
 "32, etc.) and rebuilds the structure."
 msgstr ""
-"Godot将字典实现为一个 ``OrderedHashMap <Variant, Variant>``。引擎存储一个由键"
-"值对组成的巨大数组（初始化为1000条记录）。当试图访问一个值时，其会提供一个"
-"键。然后它 *散列* 键，即把它转换成一个数字。“哈希”变成数组的索引，让OHM库快速"
-"查找映射到值的键的概念“表”中的值。"
+"Godot将Dictionary[字典]实现为一个 ``OrderedHashMap<Variant, Variant>`` 。引擎"
+"存储一个键值对的小数组（初始化为2^3或8条记录）。当试图访问一个值时，它提供一"
+"个键。然后，对键进行 *哈希* 处理，即转换成一个数字。\"哈希\" 值用来计算进入数"
+"组的索引。作为一个数组，OHM就可以在键映射到值的 \"表\" 中快速查找。当HashMap"
+"变得过满时，它会增加到2的下一个幂值（以 16条记录，然后是32条，等等），并重新"
+"构建结构。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
 msgid ""
@@ -266,9 +267,8 @@ msgstr ""
 "太依赖于列表的密度，一切都会保持快速。这导致了……"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:125
-#, fuzzy
 msgid "Maintaining an ever-growing size for the table."
-msgstr "维护一个巨大的列表尺寸。"
+msgstr "保持不断增长的表规模。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:127
 msgid ""
@@ -276,13 +276,16 @@ msgid ""
 "to reduce hash collisions and maintain the speed of accesses. This is why it "
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
+"HashMaps为了减少哈希冲突，并保持访问速度，在表中保留了未使用的内存的间隙。这"
+"也是为什么它的大小不断地以2的幂次增加的原因。"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
-#, fuzzy
 msgid ""
 "As one might be able to tell, Dictionaries specialize in tasks that Arrays "
 "do not. An overview of their operational details is as follows:"
-msgstr "也许有人会说，字典专门处理数组所没有的任务。其操作细节概述如下："
+msgstr ""
+"如大家所知，Dictionaries [字典]擅长的任务是Arrays[数组]所不擅长的。其操作细节"
+"概述如下:"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
@@ -489,15 +492,15 @@ msgid "Enumerations: int vs. string"
 msgstr "枚举：整数VS字符串"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:278
-#, fuzzy
 msgid ""
 "Most languages offer an enumeration type option. GDScript is no different, "
 "but unlike most other languages, it allows one to use either integers or "
 "strings for the enum values (the latter only when using the ``export`` "
 "keyword in GDScript). The question then arises, \"which should one use?\""
 msgstr ""
-"大多数语言都提供枚举类型选项。GDScript也一样，但与大多数其他语言不同的是，它"
-"允许对枚举值使用整数或字符串。问题就来了，“应该用哪个呢？”"
+"大多数语言都提供了一个枚举类型选项。GDScript也不例外，但与大多数其他语言不同"
+"的是，它允许人们使用整数或字符串作为枚举值(只有在GDScript中使用` `export`` 关"
+"键字时才可使用后者)。那么问题就来了，\"应该使用哪一种？\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:283
 msgid ""
@@ -543,8 +546,7 @@ msgstr ""
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
-"``AnimatedTexture`` VS ``AnimatedSprite`` VS ``AnimationPlayer`` VS "
-"``AnimationTree``"
+"AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
 msgid ""

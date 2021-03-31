@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,19 +102,18 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
-"这可以通过先旋转 *X *，然后 *Y*, 然后旋转 *Z*来完成。 或者，你可以先以旋转 "
-"*Y*，然后旋转 *Z*，最后旋转 *X*。 怎样都行，但根据顺序不同，对象的最终方向 *"
-"不一定是相同的* 。 事实上，这意味着有多种方法可以从3个不同的角度构建方向，具"
-"体取决于 *旋转的顺序* 。"
+"这可以通过先旋转 *X* ，然后 *Y* ，然后旋转 *Z* 来完成。 或者，你可以先以旋转 "
+"*Y* ，然后旋转 *Z* ，最后旋转 *X* 。 怎样都行，但根据顺序不同，对象的最终方"
+"向 *不一定是相同的* 。 事实上，这意味着有多种方法可以从3个不同的角度构建方"
+"向，具体取决于 *旋转的顺序* 。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
-#, fuzzy
 msgid ""
 "Following is a visualization of rotation axes (in X, Y, Z order) in a gimbal "
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
-"以下（来自维基百科）是在一个万向结中，可视化的旋转轴（以XYZ顺序）。 如你所"
+"下图是一个万向结（来自维基百科），它有可视化的旋转轴（以XYZ顺序）。 如你所"
 "见，每个轴的方向取决于前一个轴的旋转方向:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
@@ -137,15 +136,15 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
-"在这种情况下，为了达到所需的效果，必须首先在 *Y*轴上应用旋转(在这种情况下"
-"为“上”，因为Godot中Y轴指向上方(\"Y-Up\" orientation))，然后在 *X*轴上旋转。"
+"为了实现希望的效果，必须先在 *Y* 轴上应用旋转（在这种情况下为“up（向上）”，因"
+"为Godot中Y轴指向正上方（\"Y-Up\" 方向）），然后在 *X* 轴上旋转。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
-"如果我们首先在 *X* 轴上应用旋转，然后再在 *Y* 中应用旋转，则效果会不理想:"
+"如果我们首先在 *X* 轴上应用旋转，然后再在 *Y* 轴上应用旋转，则效果会不理想:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -190,8 +189,8 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
-"旋转不会线性映射到方向，因此它们插值并不总是会形成最短路径(即从``270``到``0``"
-"的度数与从``270``开始到``360``的度数不同，即使角度是相同的)。"
+"旋转不会线性映射到方向，因此它们插值并不总是会形成最短路径(即从 ``270`` 到 "
+"``0`` 的度数与从 ``270`` 开始到 ``360`` 的度数不同，即使角度是相同的)。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -260,7 +259,7 @@ msgstr ""
 "可以通过 ``transform.basis.x`` ， ``transform.basis.y`` 和 ``transform.basis."
 "z`` 直接访问。 每个向量指向它的轴被旋转的方向，因此它们可以有效地描述节点的总"
 "旋转。 比例(只要它三个轴长度是一致的)也可以从轴的长度推断出来。 一个 *basis* "
-"也可以被解释为一个3x3矩阵并像 ``transform.basis [x] [y]``这样使用。"
+"也可以被解释为一个3x3矩阵并像 ``transform.basis [x] [y]`` 这样使用。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
@@ -274,7 +273,8 @@ msgstr "这也类似于一个3x3单位矩阵。"
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
-msgstr "遵循OpenGL惯例，``X``是 *右*轴，``Y``是 *上* 轴，``Z``是 *前* 轴。"
+msgstr ""
+"遵循OpenGL惯例， ``X`` 是 *右* 轴， ``Y`` 是 *上* 轴， ``Z`` 是 *前* 轴。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:127
 msgid ""
@@ -283,9 +283,9 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
-"除了 *basi(基)* ，变换也有 *origin(原点)* 。 这是一个*Vector3*，用于指定该变"
-"换距离实际原点``(0，0，0)``多远。 *basis* 与 *origin* 相结合，一个 "
-"*transform(变换)*有效地表示了一个空间中特定的平移，旋转和缩放。"
+"除了 *basi(基)* ，变换也有 *origin(原点)* 。 这是一个 *Vector3* ，用于指定该"
+"变换距离实际原点 ``(0，0，0)`` 多远。 *basis* 与 *origin* 相结合，一个 "
+"*transform(变换)* 有效地表示了一个空间中特定的平移，旋转和缩放。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
 msgid ""
@@ -300,15 +300,15 @@ msgid ""
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
-"控件的箭头显示基准的``X``, ``Y``, 和 ``Z``轴(分别为红色，绿色和蓝色)，而控件"
-"的中心位于对象的原点。"
+"控件的箭头显示基准的 ``X`` ， ``Y`` ，和 ``Z`` 轴(分别为红色，绿色和蓝色)，而"
+"控件的中心位于对象的原点。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
-"有关向量和变换在数学方面的更多信息，请阅读 :ref:`doc_vector_math`教程。"
+"有关向量和变换在数学方面的更多信息，请阅读 :ref:`doc_vector_math` 教程。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
@@ -352,7 +352,7 @@ msgid ""
 "other."
 msgstr ""
 "对变换执行连续的操作将导致由于浮点错误导致的精度损失。 这意味着每个轴的比例可"
-"能不再精确地为``1.0``，并且它们可能不完全相互为``90``度。"
+"能不再精确地为 ``1.0`` ，并且它们可能不完全相互为 ``90`` 度。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:201
 msgid ""
@@ -367,16 +367,16 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
-"有两种不同的方法来处理这个问题。 首先是在一段时间后对变换进行正交归一化处理"
-"(如果每帧修改一次，则可能每帧一次):"
+"有两种不同的方法来处理这个问题。 首先是在一段时间后对变换进行 *正交归一化"
+"（orthonormalize）* 处理(如果每帧修改一次，则可能每帧一次):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
-"这将使所有的轴再次拥有有``1.0``的长度并且彼此成90度角。 但是，应用于变换的任"
-"何缩放都将丢失。"
+"这将使所有的轴再次拥有有 ``1.0`` 的长度并且彼此成 ``90`` 度角。 但是，应用于"
+"变换的任何缩放都将丢失。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
 msgid ""
@@ -397,8 +397,8 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
-"现在你可能在想: ** “好吧，但是我怎么从变换中获得角度？”**。 答案又一次是:没有"
-"必要。 你必须尽最大努力停止用角度思考。"
+"现在你可能在想： **“好吧，但是我怎么从变换中获得角度？”** 。 答案又一次是:没"
+"有必要。 你必须尽最大努力停止用角度思考。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
@@ -440,7 +440,8 @@ msgid ""
 "in a specific order."
 msgstr ""
 "当然，有些情况下你想要将一些信息赋予到变换上。 想象一下第一人称控制器或环绕旋"
-"转的摄像机。 那些肯定是用角度来完成的，因为你*确实希望*变换以特定的顺序进行。"
+"转的摄像机。 那些肯定是用角度来完成的，因为你 *确实希望* 变换以特定的顺序进"
+"行。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
@@ -448,8 +449,8 @@ msgid ""
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
-"对于这种情况，请保证角度/旋转在变换*外部*，并每帧设置他们。 不要尝试获取并重"
-"新使用它们，因为变换是不该这么用的。"
+"对于这种情况，请保证角度/旋转在变换 *外部* ，并每帧设置他们。 不要尝试获取并"
+"重新使用它们，因为变换是不该这么用的。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "Example of looking around, FPS style:"
@@ -460,7 +461,7 @@ msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
-"如您所见，在这种情况下，保持外部旋转更为简单，然后使用变换作为* 最后的 *方"
+"如您所见，在这种情况下，保持外部旋转更为简单，然后使用变换作为 *最后的* 方"
 "向。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:356
@@ -485,7 +486,6 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "将旋转转换为四元数很简单。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:383
-#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
@@ -493,15 +493,17 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized. Otherwise, "
 "they will also suffer from numerical precision errors."
 msgstr ""
-":ref:`class_Quat` 类型的引用有更多关于数据类型的信息(它也可以做变换累加，变换"
-"点等等，虽然这个用法较少)。 如果多次对四元数进行插值或应用运算，请记住它们最"
-"后需要归一化，否则它们可能会产生数值精度错误。"
+":ref:`class_Quat` 类型引用有更多关于数据类型的信息（它还可以做变换累加、变换"
+"点等，不过这个使用频率较低）。如果你多次对四元数进行插值或应用操作，请记住它"
+"们最终需要被归一化。否则，会带来数值精度误差影响。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:389
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
-msgstr "四元数在做相机/路径/等东西时很有用。 插值的结果总会是正确且平滑的。"
+msgstr ""
+"四元数在处理相机/路径/等东西的移动轨迹时很有用。 插值的结果总会是正确且平滑"
+"的。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid "Transforms are your friend"

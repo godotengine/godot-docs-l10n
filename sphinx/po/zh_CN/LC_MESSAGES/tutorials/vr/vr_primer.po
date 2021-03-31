@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,6 +266,8 @@ msgid ""
 "are several official plugins available in the `GodotVR Repository <https://"
 "github.com/GodotVR>`_."
 msgstr ""
+"前面说过，Godot并不是开箱就支持各种VR和AR SDK，需要特定SDK提供插件。在"
+"`GodotVR Repository <https://github.com/GodotVR>`_，有几个官方插件。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:122
 msgid ""
@@ -273,12 +275,17 @@ msgid ""
 "provides support for the Oculus Go and Oculus Quest. The Quest will require "
 "additional setup documented in :ref:`doc_developing_for_oculus_quest`."
 msgstr ""
+"`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_提供对"
+"Oculus Go和Oculus Quest的支持。Quest需要额外的设置，详见:ref:"
+"`doc_developing_for_oculus_quest`。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:125
 msgid ""
 "`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
 "confused with OpenXR) supports the OpenVR SDK used by Steam."
 msgstr ""
+"`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_(不要与OpenXR混淆)支"
+"持Steam使用的OpenVR SDK。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:127
 msgid ""
@@ -293,6 +300,8 @@ msgid ""
 "`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
 "OpenHMD, an open source API and drivers for headsets."
 msgstr ""
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_支持OpenHMD，这是"
+"一个开源的API和耳机驱动程序。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:131
 msgid ""
@@ -301,14 +310,17 @@ msgid ""
 "development, only supports Linux and requires extra setup described in the "
 "repository."
 msgstr ""
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_支持VR和AR软件的开放"
+"标准OpenXR。这个插件处于开发初期，只支持Linux，需要参考在资源库中描述的额外设"
+"置。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:135
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
-msgstr ""
+msgstr "这些插件可以从 GitHub 或Godot资产库下载。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:137
 msgid "In addition to the plugins, there are several official demos."
-msgstr ""
+msgstr "除了插件之外，还有几个官方的demo。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
@@ -319,12 +331,16 @@ msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_(这个项目的"
+"教程是:ref:`doc_vr_starter_tutorial_part_one`)。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:142
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
+"`Godot XR工具<https://github.com/GodotVR/godot-xr-tools>`_，它展示了VR功能的"
+"实现，如移动和拾取物体。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:146
 msgid "Other things to consider"

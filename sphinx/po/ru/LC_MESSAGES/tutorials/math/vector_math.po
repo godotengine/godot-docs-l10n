@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,7 +136,7 @@ msgstr ""
 "Вы можете применять любой из методов (задание координат x и y или угла с "
 "длиной) для определения вектора, но обычно программисты используют "
 "координаты. Для примера, в Godot начало координат — это верхний-левый угол "
-"экрана, так что для перемещения 2D ноды с именем ``Node2D`` на 400 пикселей "
+"экрана, так что для перемещения 2D узла с именем ``Node2D`` на 400 пикселей "
 "вправо и 300 вниз используйте следующий код:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
@@ -169,7 +169,7 @@ msgid ""
 "added:"
 msgstr ""
 "Когда два вектора складываются или вычитаются, складываются соответствующие "
-"компоненты :"
+"компоненты:"
 
 #: ../../docs/tutorials/math/vector_math.rst:118
 msgid ""
@@ -193,8 +193,8 @@ msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr ""
-"Векторы представляют направление и длину(магнитуду). Значение представленное "
-"только длиной называется **скаляром**."
+"Векторы представляют направление и длину (магнитуду). Значение, "
+"представленное только длиной, называется **скаляром**."
 
 #: ../../docs/tutorials/math/vector_math.rst:131
 msgid "A vector can be multiplied by a **scalar**:"
@@ -244,7 +244,7 @@ msgid ""
 "position is found by adding velocity to the previous position."
 msgstr ""
 "Скорость вычисляет **изменение** позиции за единицу времени. Новая позиция "
-"находится добавление скорости к предыдущей позиции."
+"находится добавлением скорости к предыдущей позиции."
 
 #: ../../docs/tutorials/math/vector_math.rst:169
 msgid "Pointing toward a target"
@@ -256,9 +256,9 @@ msgid ""
 "robot. Subtracting the tank's position from the robot's position gives the "
 "vector pointing from the tank to the robot."
 msgstr ""
-"В этом примере, вы, управляя танком, хотите направить дуло на робота. "
-"Вычитание позиции танка из позиции робота, даёт вектор направленный от танка "
-"на робота."
+"В этом примере вы, управляя танком, хотите направить дуло на робота. "
+"Вычитание позиции танка из позиции робота даёт вектор, направленный от танка "
+"к роботу."
 
 #: ../../docs/tutorials/math/vector_math.rst:177
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
@@ -275,9 +275,10 @@ msgid ""
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
-"Вектор с **длиной** равной 1, называется **единичным вектором**. Они также "
-"иногда называются **векторами направления** или **нормалями**. Единичные "
-"векторы полезны когда вам нужно сохранить трэк направления."
+"Вектор с **длиной**, равной ``1``, называется **единичным вектором**. Они "
+"также иногда называются **векторами направления** или **нормалями**. "
+"Единичные векторы полезны, когда вам нужно сохранить направление без учёта "
+"длины."
 
 #: ../../docs/tutorials/math/vector_math.rst:187
 msgid "Normalization"
@@ -291,8 +292,8 @@ msgid ""
 "``Vector3`` provide a method for normalizing:"
 msgstr ""
 "**Нормализация** вектора означает приведение его длины к ``1`` с сохранением "
-"его направления. Это делается путем деления каждого из его компонентов на "
-"длину. Поскольку это такая распространенная операция, ``Vector2`` и "
+"его направления. Это делается путём деления каждого из его компонентов на "
+"длину. Поскольку это довольно распространённая операция, ``Vector2`` и "
 "``Vector3`` предоставляют метод нормализации:"
 
 #: ../../docs/tutorials/math/vector_math.rst:204
@@ -316,10 +317,10 @@ msgid ""
 "They are commonly used for lighting, collisions, and other operations "
 "involving surfaces."
 msgstr ""
-"Обычный пример использования единичных векторов это определение "
-"**нормалей**. Векторы нормалей - это единичные векторы направленные "
-"перпендикулярно поверхности, определяющей их направление. Они обычно "
-"используются в обработке света, коллизий, и других операциях с поверхностями."
+"Обычный пример использования единичных векторов - определение **нормалей**. "
+"Векторы нормалей - это единичные векторы, перпендикулярные к поверхности, "
+"определяющей их направление. Обычно они используются в обработке света, "
+"столкновений и других операциях с поверхностями."
 
 #: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""

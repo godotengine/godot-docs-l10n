@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,13 +126,12 @@ msgstr ""
 "当你完成之后，点击``创建 & 编辑``。引擎会帮你创建项目并在编辑器中打开。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:66
-#, fuzzy
 msgid ""
 "The next time you open the project manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-"下次打开项目管理器的时候，就可以在列表里看到新项目了。双击它可以在编辑器打开"
-"它。"
+"下次打开项目管理器的时候，就可以在列表里看到新项目了。双击它可以在编辑器打"
+"开。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:71
 msgid ""
@@ -152,14 +151,13 @@ msgid "Your first look at Godot's editor"
 msgstr "初识Godot编辑器"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:84
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor's "
 "interface with menus along the top of the interface and docks along the far "
 "extremes of the interface on either side of the viewport."
 msgstr ""
-"欢迎来到Godot！随着项目打开，应该能看到编辑器界面正处于3D视图状态。可以在界面"
-"顶部切换当前工作区。点击2D切换到2D工作区。"
+"欢迎来到戈多!打开项目后，您会看到编辑器的整个界面，顶部有菜单项，停靠在视窗顶"
+"端处。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:90
 msgid ""
@@ -169,32 +167,26 @@ msgstr ""
 "在顶部，从左到右，可以看到 **主菜单** 、**工作区** 以及 **各调试按钮** 。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
-#, fuzzy
 msgid ""
 "The **FileSystem dock** is where you'll manage your project files and assets."
-msgstr "在左侧，可以看到 **文件系统面板** ，在这里可以管理项目文件和素材。"
+msgstr "文件系统面板**是您管理项目文件和资产的地方。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
-#, fuzzy
 msgid ""
 "The **Scene dock** lists the active scene's content and the **Inspector** "
 "allows for the management of the properties of a scene's content."
-msgstr ""
-"在右侧，可以找到 **场景停靠面板**，其中列出了活动场景的内容。还可以在右下角找"
-"到 **属性面板**。"
+msgstr "**场景面板**列出了活动场景的内容，**检视器**用于管理场景内容的属性。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you'll find tools "
 "to move, scale or lock your scene's objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"在中间，上方有 **工具栏**，可以找到工具来移动、缩放或锁定场景对象。它会随着跳"
-"转到不同工作区而切换。"
+"中间上方有 **工具栏**，你可以用它移动、缩放或锁定你的场景物件。它会随着工作区"
+"的不同而切换。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
-#, fuzzy
 msgid ""
 "The **Bottom Panel** is the host for the debug console, the animation "
 "editor, the audio mixer… They are wide and can take precious space. That's "
@@ -213,22 +205,21 @@ msgid ""
 msgstr "可以在顶部看到有四个工作区按钮：2D、3D、脚本和素材库。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
-#, fuzzy
 msgid ""
 "You'll use the **2D workspace** for all types of games. In addition to 2D "
 "games, the 2D workspace is where you'll build your interfaces. Press :kbd:"
 "`F1` (or :kbd:`Alt + 1` on macOS) to access it."
 msgstr ""
-"将对所有类型的游戏使用 **2D 工作区** 。除了用于2D游戏外，2D 工作区也是构建界"
-"面的地方。按 :kbd:`F1` 访问它。"
+"对所有类型的游戏都需要使用 **2D 工作区** 。除了用于2D游戏外，也是构建UI界面的"
+"地方。按 :kbd:`F1`（或:kbd:`Alt + 1`在macOS上） 访问它。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
-#, fuzzy
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press :kbd:`F2` (or :kbd:`Alt + 2` on macOS) to access it."
 msgstr ""
-"在 **3D工作区** 里，可以使用网格、灯光并设计3D游戏关卡。按 :kbd:`F2` 访问它。"
+"在**3D工作区**中，你可以使用网格、灯光，并设计3D游戏的关卡。按:kbd:`F2`（或:"
+"kbd:`Alt + 2`在macOS上）进入。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid ""
@@ -242,24 +233,23 @@ msgid ""
 msgstr "更多关于 **3D 工作区** 的细节，请查看 :ref:`doc_introduction_to_3d`。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
-#, fuzzy
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press :kbd:`F3` (or :kbd:`Alt "
 "+ 3` on macOS) to access it, and :kbd:`Shift + F1` to search the reference."
 msgstr ""
-"**脚本** 工作区是一个完整的代码编辑器，有调试器、自动补全和内置的代码参考手"
-"册。按 :kbd:`F3` 访问它，:kbd:`F4` 搜索API参考手册。"
+"**Script**工作区是一个完整的代码编辑器，具有调试、自动补全和内置的代码参考"
+"等。按:kbd:`F3`（或:kbd:`Alt + 3`在macOS上）进入，按:kbd:`Shift + F1`搜索引"
+"用。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
-#, fuzzy
 msgid ""
 "To search for information about a class, method, property, constant, or "
 "signal in the engine while you are writing a script, press the \"Search Help"
 "\" button at the top right of the Script workspace."
 msgstr ""
-"在编写脚本时如果要搜索引擎中的类、方法、属性、常量或者信号函数时，请点击脚本"
-"工作区右上方的 **搜索帮助** 按钮。"
+"要在编写脚本时，搜索引擎中的类、方法、属性、常量或信号的信息，请使用脚本工作"
+"区右上方的 \"搜索帮助 \"按钮。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
@@ -271,11 +261,9 @@ msgstr "会弹出一个新窗口，以便查找你所需的信息。"
 msgid ""
 "Click on the item you are looking for and press open. The documentation for "
 "the item will be displayed in the script workspace."
-msgstr ""
-"单击您正在查找的目标，然后点击“打开”。该目标的文档将会在脚本工作区显示出来。"
+msgstr "单击要查找的项目，然后按“打开”。项目的文档将显示在脚本工作区中。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:160
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts and assets to use in your projects."
@@ -286,7 +274,6 @@ msgid "Modify the interface"
 msgstr "调整界面"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:166
-#, fuzzy
 msgid ""
 "Godot's interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "

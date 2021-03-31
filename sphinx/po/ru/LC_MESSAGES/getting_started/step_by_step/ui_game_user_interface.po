@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -368,8 +368,8 @@ msgstr ""
 "Поскольку у них есть контейнер в качестве прямого родителя, мы не можем "
 "свободно перемещать их: узел ``Count`` всегда будет сбрасывать свои якоря, "
 "их размер и положение. Попробуйте переместить и изменить размер узлов на "
-"окне просмотра. Затем выберите любой из трех текстур и нажмите `Ctrl + Up` "
-"или `Ctrl Down`, чтобы упорядочить их в сцене. Они вернуться к их "
+"окне просмотра. Затем выберите любой из трех текстур и нажмите :kbd:`Ctrl + "
+"Up` или :kbd:`Ctrl + Down`, чтобы упорядочить их в сцене. Они вернуться к их "
 "предыдущему размеру и положению."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
@@ -552,10 +552,11 @@ msgid ""
 "``HBoxContainer`` at the bottom of the scene tree. You should see it resize "
 "automatically. Don't worry about this for now, we'll fix the size soon."
 msgstr ""
-"В узле ``Bar`` выберите ``Count`` и нажмите :kbd:`Ctrl+D`, чтобы дублировать "
-"его. Перетащите новый узел под ``Counters`` ``HBoxContainer`` в нижнюю часть "
-"дерева сцены. Вы должны увидеть как он изменит размер автоматически. Не "
-"беспокойтесь об этом сейчас, мы исправим его в ближайшее время."
+"В узле ``Bar`` выберите ``Count`` и нажмите :kbd:`Ctrl + D`, чтобы "
+"дублировать его. Перетащите новый узел под ``Counters`` ``HBoxContainer`` в "
+"нижнюю часть дерева сцены. Вы должны увидеть как он изменит размер "
+"автоматически. Не беспокойтесь об этом сейчас, мы исправим его в ближайшее "
+"время."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""

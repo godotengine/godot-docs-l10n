@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,11 +75,18 @@ msgstr ""
 "issues/26554>`__ (不論哪個瀏覽器)。我們建議改用 :ref:`iOS 的原生匯出功能 "
 "<doc_exporting_for_ios>` ，以獲得最佳結果。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
+msgid ""
+"If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
+"mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to play the "
+"exported project using a Chromium-based browser instead of Firefox."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid "WebGL 2"
 msgstr "\\ WebGL 2"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:32
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:39
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
@@ -87,13 +94,13 @@ msgstr ""
 "直到 Godot 將 **OpenGL ES 3** 算繪引擎刪除並改用 **Vulkan** 之前，HTML5 匯出"
 "都在選擇 **GLES3** 時使用 **WebGL 2** 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:35
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
 msgstr "由於未來 Godot 會將 WebGL 2 移除，且不會有替換方案，所以不建議使用。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
@@ -104,16 +111,16 @@ msgstr ""
 "支援的瀏覽器中最受歡迎的，而 **Safari** 與 **Edge** 則不支援。 **iOS** 上所有"
 "的瀏覽器都是基於 WebKit 的 (即 Safari)，所以全部都不支援。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr "Godot 的 WebGL 2 算繪引擎有一些 3D 問題，而且已停止維護。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
 msgid "Limitations"
 msgstr "限制"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -123,11 +130,11 @@ msgstr ""
 "由於安全性與隱私權問題，要將許多在原生平台上能輕鬆運作的功能放到 Web 平台上會"
 "很複雜。以下列出了一些在將 Godot 遊戲移植到網頁時應注意的限制。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Using cookies for data persistence"
 msgstr "使用 Cookie 來保留資料"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -138,7 +145,7 @@ msgstr ""
 "是 IndexedDB)。若在 ``iframe`` 內玩遊戲的話，則必須同時啟用 **第三方** "
 "Cookie。隱私模式也會防止保留資料。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -147,11 +154,11 @@ msgstr ""
 "``OS.is_userfs_persistent()`` 方法可以用來檢查 ``user://`` 檔案系統是否會被保"
 "留，但有時候檢查結果不會是正確的。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
 msgid "Full screen and mouse capture"
 msgstr "全螢幕與滑鼠截取"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -165,7 +172,7 @@ msgstr ""
 "要在按鍵輸入事件回呼 (如 ``_input`` 或 ``_unhandled_input``) 中才能進入全螢"
 "幕。用 :ref:``class_Input``單例來查詢還不夠，必須要啟用相關的輸入事件。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
@@ -174,18 +181,18 @@ msgstr ""
 "出於相同原因，除非引擎是從有效的輸入事件處理常式中開始的，否則無法使用全螢幕"
 "專案設定。要設定則需要 :ref:`自定 HTML 頁面 <doc_customizing_html5_shell>` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:86
 msgid "Audio autoplay"
 msgstr "音訊自動播放"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
 msgstr ""
 "Chrome 會顯示網站能否播放音訊。可能有需要玩家點擊、輕觸或按按鍵來啟用音訊。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
@@ -194,36 +201,36 @@ msgstr ""
 "Google 有提供關於 `網頁音訊自動播放政策 (英文) <https://sites.google.com/a/"
 "chromium.org/dev/audio-video/autoplay>`__ 的額外資訊。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
 msgstr ":ref:`class_HTTPClient` 與 :ref:`class_HTTPRequest`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
 msgstr "在 HTML5 平台上，HTTP 類別有一些限制："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "無法存取或更改 ``StreamPeer``"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
 msgid "Threaded/Blocking mode is not available"
 msgstr "無法使用 Threaded/Blocking 模式"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr "每幀無法處理多次，因此在迴圈內輪詢會導致程式凍結"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "No chunked responses"
 msgstr "無法區塊回覆"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
 msgid "Host verification cannot be disabled"
 msgstr "無法禁用主機驗證"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
@@ -231,11 +238,11 @@ msgstr ""
 "必須遵守 `同源政策 (Same-origin policy) <https://developer.mozilla.org/en-US/"
 "docs/Web/Security/Same-origin_policy>`__"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
 msgid "Exported ``.html`` file must not be reused"
 msgstr "匯出的 ``.html`` 檔案無法重複使用"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the **generated HTML file** specifically for "
@@ -248,11 +255,11 @@ msgstr ""
 "時候都會遺失這些修改。若要自定產生的檔案，請參考 :ref:"
 "`doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid "Boot splash is not displayed"
 msgstr "不會顯示啟動畫面"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
@@ -261,11 +268,11 @@ msgstr ""
 "預設 HTML 頁面不會在載入時顯示啟動畫面。但，圖片是匯出為 PNG 檔案，所以 :ref:"
 "`自定 HTML 頁面 <doc_customizing_html5_shell>` 可以顯示圖片。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid "Shader language limitations"
 msgstr "著色器語言限制"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
@@ -273,39 +280,39 @@ msgstr ""
 "當匯出 GLES2 專案為 HTML5 時會使用 WebGL 1.0。WebGL 1.0 不支援動態循環，因此"
 "使用動態循環的著色器將不會運作。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Unimplemented functionality"
 msgstr "未實作的功能"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:121
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr "下列功能目前不在 HTML5 上支援："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
 msgid "Threads"
 msgstr "執行緒"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid "GDNative"
 msgstr "GDNative"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
 msgid "C#"
 msgstr "\\ C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:133
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "在引擎與作業系統間的剪貼簿同步"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 "除了 :ref:`class_HTTPClient` 與 :ref:`class_WebSocketClient` 之外的網路"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
 "godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
@@ -316,11 +323,11 @@ msgstr ""
 "issues?q=is:open+is:issue+label:platform:html5>`__ 以瞭解您有興趣的功能目前是"
 "否有問題。若列表上沒有，可以開啟 Issue 來與大家交流。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
 msgid "Serving the files"
 msgstr "提供檔案"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -330,7 +337,7 @@ msgstr ""
 "HTML 頁面。可以使用自定 HTML 檔案，請參考 :ref:"
 "`doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:141
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -339,7 +346,7 @@ msgstr ""
 "產生的 ``.html`` 可以用來在 Apache 伺服器中的 ``DirectoryIndex`` 功能中使用，"
 "並且可以隨時重命名為如 ``index.html`` 之類的名稱。預設情況下不會依賴其檔名。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -348,7 +355,7 @@ msgstr ""
 "HTML 頁面會以瀏覽器視窗的最大尺寸來繪製遊戲。這樣便可將其插入在遊戲大小的 "
 "``<iframe>`` 中，大多數遊戲在託管網頁中都是這麼做。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:149
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -364,7 +371,7 @@ msgstr ""
 "png`` 檔案包含了啟動畫面，預設的 HTML 頁面不會使用到，但可以用 :ref:`自定 "
 "HTML 頁面 <doc_customizing_html5_shell>` 來顯示。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:157
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -373,7 +380,7 @@ msgstr ""
 "``.pck`` 檔案為二進位形式，通常會以 MIME 類型 :mimetype:`application/octet-"
 "strem` 來傳送。 ``.wasm`` 則是 :mimetype:`application/wasm` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -381,7 +388,7 @@ msgstr ""
 "使用 :mimetype:`application/wasm` 之外的 MIME 類型來傳遞 WebAssembly 模組 "
 "(``.wasm`) 可以防止一些啟動最佳化。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:165
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -392,11 +399,11 @@ msgstr ""
 "小通常很大。WebAssembly 模組特別適合壓縮，使用 gzip 通常能壓縮到小於原本的四"
 "分之一。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 msgid "Export options"
 msgstr "匯出選項"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -405,7 +412,7 @@ msgstr ""
 "若有可執行的網頁匯出樣板，則在編輯器上 **[停止場景]** 與 **[執行編輯的場"
 "景]** 按鈕中間會多一個按鈕，可以用來在預設瀏覽器中快速開啟遊戲來測試。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:184
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -413,7 +420,7 @@ msgstr ""
 "若有設定 **預設 HTML Shell** 檔案，則會用這個檔案而非預設 HTML 頁面。請參考 :"
 "ref:doc_customizing_html5_shell` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -423,11 +430,11 @@ msgstr ""
 "達成如載入 Webfont 或第三方 JavaScript API、加上 CSS 或執行 JavaScript 等功"
 "能。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "Calling JavaScript from script"
 msgstr "從腳本中呼叫 JavaScript"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -440,7 +447,7 @@ msgstr ""
 "JavaScript 程式碼來執行。這樣便可用 Godot 整合腳本中無法實現的方法來與瀏覽器"
 "互動。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:200
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -448,19 +455,19 @@ msgstr ""
 "特定情況下，最後一個 JavaScript 陳述式的回傳值會轉換為 GDScript 值，並由 "
 "``eval()`` 回傳："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr "JavaScript ``number`` 型會以 GDScript :ref:`class_float` 回傳"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr "JavaScript ``bool`` 型會以 GDScript :ref:`class_bool` 回傳"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:212
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr "JavaScript ``string`` 型會以 GDScript :ref:`class_String` 回傳"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:206
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:213
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -468,11 +475,11 @@ msgstr ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` 與 ``DataView`` 型會以 GDScript :"
 "ref:`class_PoolByteArray` 回傳"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:215
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "其他的 JavaScript 值則會回傳為 ``null`` 。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:217
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:224
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
@@ -485,7 +492,7 @@ msgstr ""
 "的平台上時，呼叫 ``JavaScript.eval`` 也會回傳 ``null`` 。可以通過 "
 "``JavaScript`` :ref:`功能標籤` 來檢查是否可使用該單例："
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:238
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -493,7 +500,7 @@ msgstr ""
 "GDScript 的多行字串是由三個引號 ``\"\"\"`` 來包圍，如同上方 ``my_func3()`` 中"
 "的範例，適用於讓 JavaScript 更容易閱讀。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:234
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:241
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

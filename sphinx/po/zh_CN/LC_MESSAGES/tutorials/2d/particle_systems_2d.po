@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,11 +137,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:73
 msgid "Lifetime: 0.5"
-msgstr "寿命 : 0.5"
+msgstr "寿命：0.5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:77
 msgid "Lifetime: 4.0"
-msgstr "寿命 : 4.0"
+msgstr "寿命：4.0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
@@ -197,11 +197,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:110
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr "0:定期发射粒子(默认值)。"
+msgstr "0：定期发射粒子(默认值)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:111
 msgid "1: Emit all particles simultaneously."
-msgstr "1:同时发射所有粒子。"
+msgstr "1：同时发射所有粒子。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:113
 msgid ""
@@ -330,9 +330,8 @@ msgid "ParticlesMaterial settings"
 msgstr "ParticlesMaterial(粒子材质)设置"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "数据目录"
+msgstr "方向"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -340,6 +339,8 @@ msgid ""
 "``Vector3(1, 0, 0)`` which makes particles emit to the right. However, with "
 "the default gravity settings, particles will go straight down."
 msgstr ""
+"这是粒子发射的基础方向。默认值是 ``Vector3(1,0,0)`` ，它使粒子向右发射。然"
+"而，在默认的重力设置下，粒子会直线下降。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
@@ -347,6 +348,8 @@ msgid ""
 "than 0. Here, we set the initial velocity to 40. You'll notice that "
 "particles emit toward the right, then go down because of gravity."
 msgstr ""
+"为了让这个属性作用更明显，你需要一个大于0的 *初始速度（initial velocity）* 。"
+"这里，我们把初始速度设为40。你会注意到粒子向右发射，然后受重力作用下降。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
@@ -364,11 +367,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
-msgstr ""
+msgstr "Flatness（平直度）"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
-msgstr ""
+msgstr "这个属性只对3D粒子有用。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Gravity"

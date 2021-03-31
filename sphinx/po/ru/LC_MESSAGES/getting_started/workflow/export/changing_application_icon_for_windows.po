@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,8 @@ msgstr ""
 "значки двух типов: значок файла и значок на панели задач."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "Создание проекта"
+msgstr "Создание ICO файла"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -53,7 +52,7 @@ msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
-"`В этом видеоуроке <https://www.youtube.com/watch?v=uqV3UfM-n5Y>` _ "
+"`В этом видеоуроке <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ "
 "рассказывается, как экспортировать файл ICO с помощью GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
@@ -77,16 +76,15 @@ msgstr ""
 "время выполнения вашего проекта."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
-#, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
 "Чтобы изменить значок на панели задач, перейдите в **Project → Project "
-"Settings → Application → Config → Icon** (Проект → Настройки проекта → "
-"Приложение → Конфигурация → Значок). Щёлкните значок папки и выберите нужный "
-"значок."
+"Settings → Application → Config →Windows Native Icon**(Проект → Настройки "
+"проекта → Приложение → Конфигурация → Нативный Значок Windows). Щёлкните "
+"значок папки и выберите нужный ICO файл."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
 msgid ""
@@ -95,8 +93,8 @@ msgid ""
 "use the ``Icon`` setting."
 msgstr ""
 "Этот параметр изменяет только значок экспортируемой игры в Windows. Чтобы "
-"установить значок для macOS, используйте `` Macos Native Icon ''. А для "
-"любой другой платформы используйте настройку «Иконка»."
+"установить значок для macOS, используйте ``Macos Native Icon``. А для любой "
+"другой платформы используйте настройку ``Icon``."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
 msgid "Changing the file icon"
@@ -111,9 +109,9 @@ msgid ""
 "the Export dialog."
 msgstr ""
 "Существуют `известные проблемы <https://github.com/godotengine/godot/"
-"issues/33466>` __ при изменении значка приложения в исполняемых файлах, "
+"issues/33466>`__ при изменении значка приложения в исполняемых файлах, "
 "которые встраивают файл PCK. Рекомендуется пока воздержаться от "
-"использования rcedit, если вы решите включить опцию ** Embed Pck ** для "
+"использования rcedit, если вы решите включить опцию **Embed Pck** для "
 "предустановки экспорта Windows в диалоговом окне «Экспорт»."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
@@ -176,12 +174,12 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
-"Если rcedit не может изменить значок, вы можете вместо этого: ref: "
+"Если rcedit не может изменить значок, вы можете вместо этого :ref:"
 "`скомпилировать свои собственные шаблоны экспорта Windows "
 "<doc_compiling_for_windows>` с измененным значком. Для этого замените "
-"`platform / windows / godot.ico <https://github.com/godotengine/godot/blob/"
-"master/platform/windows/godot.ico>` __ своим собственным файлом ICO * перед "
-"* компиляцией экспорта шаблоны."
+"`platform/windows/godot.ico <https://github.com/godotengine/godot/blob/"
+"master/platform/windows/godot.ico>`__ своим собственным файлом ICO *перед* "
+"компиляцией экспорта шаблоны."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
 msgid ""
@@ -210,5 +208,5 @@ msgid ""
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
 "Если ваш значок не отображается должным образом, в Windows 10 попробуйте "
-"очистить кеш значков. Для этого откройте диалоговое окно ** Выполнить ** и "
-"введите ʻie4uinit.exe -ClearIconCache` или ʻie4uinit.exe -show`."
+"очистить кеш значков. Для этого откройте диалоговое окно **Выполнить** и "
+"введите ``ie4uinit.exe -ClearIconCache`` или ``ie4uinit.exe -show``."

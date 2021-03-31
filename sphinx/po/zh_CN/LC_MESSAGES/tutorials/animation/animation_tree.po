@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,8 +52,9 @@ msgid ""
 "``AnimationTreePlayer``, while adding a huge amount of features and "
 "flexibility."
 msgstr ""
-":参考: '动画树<类_动画树> '是Godot 3.1版本中引入的新节点，用于处理高级转换。"
-"它取代了古老的“AnimationTreePlayer”，同时添加了大量功能和灵活性。"
+":ref:`AnimationTree <class_AnimationTree>`是Godot 3.1中引入的一个新节点，用于"
+"处理更高级的变换，它取代了旧的 ``AnimationTreePlayer`` ，同时增加了大量的功能"
+"和灵活性。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
 msgid "Creating an AnimationTree"
@@ -412,8 +413,8 @@ msgid ""
 "on this later). When travelling from a state to another, give more priority "
 "to this node."
 msgstr ""
-"*优先*与代码中的“travel()”函数一起使用(后面会详细介绍)。当从一种状态移动到另"
-"一种状态时，赋予这个节点更高的优先级。"
+"*优先级* 与代码中的 ``travel()`` 函数一起使用（稍后再谈）。当从一个状态到另一"
+"个状态时，当给这个节点更多的优先权。"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:166
 msgid ""
@@ -556,3 +557,9 @@ msgid ""
 "Once retrieved, it can be used by calling one of the many functions it "
 "offers:"
 msgstr "一旦检索到，可以调用它提供的许多函数之一:"
+
+#: ../../docs/tutorials/animation/animation_tree.rst:265
+msgid ""
+"The state machine must be running before you can travel. Make sure to either "
+"call ``start()`` or choose a node to **Autoplay on Load**."
+msgstr ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:4
-#, fuzzy
 msgid "Animating thousands of fish with MultiMeshInstance"
-msgstr "用渐变节点动画生命的损失"
+msgstr "用MultiMeshInstance动画化数以千计条鱼"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:6
 msgid ""
@@ -51,12 +50,10 @@ msgid ""
 msgstr "我们将从一条鱼的动画开始。然后，我们将看到如何将该动画扩展到数千条鱼。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
-#, fuzzy
 msgid "Animating one Fish"
-msgstr "动画"
+msgstr "动画化一条鱼"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
-#, fuzzy
 msgid ""
 "We will start with a single fish. Load your fish model into a :ref:"
 "`MeshInstance <class_MeshInstance>` and add a new :ref:`ShaderMaterial "
@@ -180,9 +177,8 @@ msgid ""
 msgstr "然后我们把它应用到“x”轴和“z”轴上乘以“顶点.xz”。"
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:91
-#, fuzzy
 msgid "With only the pivot applied you should see something like this:"
-msgstr "如果您选择两个节点，您应该会看到这样的结果"
+msgstr "在只应用枢轴（pivot ）的情况下，您会看到这个："
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:95
 msgid ""

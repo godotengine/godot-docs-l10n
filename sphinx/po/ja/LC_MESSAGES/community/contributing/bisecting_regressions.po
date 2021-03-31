@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,6 +73,13 @@ msgid ""
 "and RC builds. If you do manage to reproduce the bug with Godot 3.2 beta 1, "
 "then try older alpha builds."
 msgstr ""
+"例えば、Godot 3.2 に対するバグを報告する場合、まずそのバグを Godot 3.1 (パッ"
+"チリリースではありません。その理由は以下を参照) で再現してみてください。もし"
+"それでバグが発生しなかった場合は、Godot 3.2 *beta 1* (これは利用可能なすべて"
+"のテストビルドのほぼ中央に位置しています) でバグを再現してみてください。"
+"Godot 3.2 beta 1 でバグが再現できない場合は、より新しいベータや RC ビルドを試"
+"してみてください。Godot 3.2 beta 1 でバグを再現できた場合は、より古い alpha "
+"ビルドを試してみてください。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:44
 msgid ""
@@ -112,6 +119,11 @@ msgid ""
 "there and report the results of your \"pre-bisecting\" on the GitHub issue "
 "so another contributor can continue bisecting from there."
 msgstr ""
+"遅いハードウェアでは、Godotのコンパイルに時間がかかることに注意してください"
+"（遅いデュアルコアCPUでは、フルリビルドするたびに1時間かかります）。つまり、"
+"フルプロセスには数時間かかる可能性があります。ハードウェアの速度が遅すぎる場"
+"合は、ここで止めて GitHub issue で \"pre-bisecting\" の結果を報告すると、別の"
+"貢献者がそこからバイセクティングを続けられるようになります。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:72
 msgid ""
@@ -146,6 +158,7 @@ msgstr ""
 #: ../../docs/community/contributing/bisecting_regressions.rst:104
 msgid "Compile Godot. This assumes you've set up a build environment:"
 msgstr ""
+"Godotをコンパイルします。これは、ビルド環境を設定したことを前提としています。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:112
 msgid ""
@@ -153,19 +166,27 @@ msgid ""
 "as possible to the task. This is what the ``-j`` parameter does. Here, the "
 "command assigns 4 CPU threads to compiling Godot."
 msgstr ""
+"Godot のビルドには時間がかかるので、できるだけ多くの CPU スレッドをタスクに割"
+"り当てたいと思います。これが ``-j`` パラメータの役割です。ここでは、このコマ"
+"ンドは4つのCPUスレッドをGodotのコンパイルに割り当てています。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:116
 msgid ""
 "Run the binary located in the ``bin/`` folder and try to reproduce the bug."
 msgstr ""
+"``bin/`` フォルダにあるバイナリを実行して、バグを再現してみてください。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:118
 msgid "If the build **still** exhibits the bug, run the following command:"
 msgstr ""
+"**それでも**\\ そのビルドにバグが現れる場合は、以下のコマンドを実行してくださ"
+"い:"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:124
 msgid "If the build **does not** exhibit the bug, run the following command:"
 msgstr ""
+"ビルドしてもバグが発生\\ **しない**\\ 場合は、以下のコマンドを実行してくださ"
+"い:"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:130
 msgid ""
@@ -177,6 +198,12 @@ msgid ""
 "most regressions; Git will remind you of the number of steps remaining (in "
 "the worst case scenario)."
 msgstr ""
+"上記のいずれかのコマンドを入力すると、Git は別のコミットに切り替わります。も"
+"う一度 Godot をビルドしてバグを再現してみて、結果に応じて ``git bisect "
+"good`` または ``git bisect bad`` を入力してください。これを何度か繰り返す必要"
+"があります。コミット範囲が長くなればなるほど、より多くのステップが必要になり"
+"ます。ほとんどのリグレッションを見つけるには、通常 5 から 10 のステップで十分"
+"です。Gitは、(最悪の場合における)残りのステップ数を教えてくれます。"
 
 #: ../../docs/community/contributing/bisecting_regressions.rst:137
 msgid ""

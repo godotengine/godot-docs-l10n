@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,11 @@ msgid "History"
 msgstr "历史"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
-#, fuzzy
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
 "`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
-msgstr "有关导出的文档已移至 :ref:`doc_gdscript_exports`。"
+msgstr ""
+"关于GDScript历史的文档已被移至 :ref:`常见问题<doc_faq_what_is_gdscript>`中。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid "Example of GDScript"
@@ -79,12 +79,12 @@ msgid ""
 "methods are available to arrays or other objects, should be looked up in the "
 "linked class descriptions."
 msgstr ""
-"在下面，概述了GDScript。详细信息，例如哪些方法可用于数组或其他对象，应该在链"
-"接的类描述中查找。"
+"在下面，概述了GDScript。详细信息，例如哪些方法可用于数组或其他对象，可以在链"
+"接的类描述中查找到这些方法。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:122
 msgid "Identifiers"
-msgstr "标识符"
+msgstr "标识符（Identifiers）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:124
 msgid ""
@@ -93,13 +93,13 @@ msgid ""
 "identifier. Additionally, identifiers must not begin with a digit. "
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
-"任何限制自己为字母字符（ ``a`` 到 ``z`` 和 ``A`` 到 ``Z`` ）、数字（ ``0`` "
-"到 ``9`` ）和 ``_`` 的字符串都可以作为标识符。此外，标识符不能以数字开头。标"
-"识符区分大小写（ ``foo`` 和 ``FOO`` 是不同的）。"
+"任何仅限于字母字符（ ``a`` 到 ``z`` 和 ``A`` 到 ``Z`` ）、数字（ ``0`` 到 "
+"``9`` ）和 ``_`` 的字符串都可以作为标识符。此外，标识符不能以数字开头。标识符"
+"区分大小写（ ``foo`` 和 ``FOO`` 是不同的）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Keywords"
-msgstr "关键词"
+msgstr "关键字（Keywords）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
 msgid ""
@@ -108,9 +108,9 @@ msgid ""
 "Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
 "types as listed in the following sections are also reserved."
 msgstr ""
-"以下是该语言支持的关键字列表。由于关键字是保留字（令牌），它们不能用作标识"
-"符。操作符（如 ``in``、 ``not``、 ``and``、或 ``or`` ）以及下面列出的内置类型"
-"的名称也是保留的。"
+"以下是该语言支持的关键字列表。由于关键字是保留字（令牌 [tokens]），它们不能用"
+"作标识符。操作符（如 ``in``、 ``not``、 ``and``、或 ``or`` ）以及下面列出的内"
+"置类型的名称也是保留的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:137
 msgid ""
@@ -118,9 +118,9 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
-"关键字定义在 `GDScript tokenizer <https://github.com/godotengine/godot/blob/"
-"master/modules/gdscript/gdscript_tokenizer.cpp>`_ 中，以防您想了解其中的内"
-"幕。"
+"关键字定义在 `GDScript tokenizer (GDScript 分词器)<https://github.com/"
+"godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ 中，"
+"以防您想了解其中的内幕。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Keyword"
@@ -215,14 +215,12 @@ msgid "class"
 msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "定义一个类。"
+msgstr "定义一个内部类。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
-#, fuzzy
 msgid "class_name"
-msgstr "class"
+msgstr "class_name"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
@@ -455,7 +453,7 @@ msgstr "运算符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
-msgstr "下面是支持的运算符的列表及其优先级。"
+msgstr "下面是支持的运算符列表及其优先级（越上面越高）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "**Operator**"
@@ -631,9 +629,8 @@ msgid "``as``"
 msgstr "``as``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
-#, fuzzy
 msgid "Type casting"
-msgstr "测试"
+msgstr "类型转换"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
@@ -645,11 +642,11 @@ msgstr "赋值（最低优先级）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "Literals"
-msgstr "字面量"
+msgstr "字面量（Literals）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "**Literal**"
-msgstr "**字面量**"
+msgstr "**字面量（Literal）**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "**Type**"
@@ -664,9 +661,8 @@ msgid "Base 10 integer"
 msgstr "基数为10的整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
-#, fuzzy
 msgid "``0x8f51``"
-msgstr "``0x8F51``"
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 16 (hexadecimal) integer"
@@ -710,7 +706,7 @@ msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid ":ref:`class_NodePath` or StringName"
-msgstr ":ref:`class_NodePath` 或 ``StringName``"
+msgstr ":ref:`class_NodePath`或StringName"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "``$NodePath``"
@@ -725,7 +721,7 @@ msgid ""
 "Integers and floats can have their numbers separated with ``_`` to make them "
 "more readable. The following ways to write numbers are all valid::"
 msgstr ""
-"整数和浮点数可以用``_``来分隔，使其更易读。以下表示数字的方式都是有效的："
+"整数和浮点数可以用 ``_`` 来分隔，使其更易读。以下表示数字的方式都是有效的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
@@ -896,9 +892,8 @@ msgid "``\\'``"
 msgstr "``\\'``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:388
-#, fuzzy
 msgid "Single quote"
-msgstr "单例"
+msgstr "单引号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid "``\\\\``"
@@ -914,7 +909,7 @@ msgstr "``\\uXXXX``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr "Unicode 代码点 ``XXXX``（十六进制，不区分大小写）"
+msgstr "Unicode 代码点 ``XXXX`` （十六进制，不区分大小写）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid "GDScript also supports :ref:`doc_gdscript_printf`."
@@ -1147,16 +1142,15 @@ msgid "Associative container which contains values referenced by unique keys."
 msgstr "关联容器，其中包含唯一键引用的值。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
-#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
 "any GDScript identifier)."
 msgstr ""
-"还支持Lua风格的表语法。Lua风格使用 ``=`` 而不是 ``:`` ，并且不使用引号来标记"
-"字符串键（这样写起来会稍微少一些）。但是请注意，与任何GDScript标识符一样，以"
-"这种形式编写的键不能以数字开头。"
+"还支持Lua风格的table语法。Lua风格使用 ``=`` 而不是 ``:`` ，并且不使用引号来标"
+"记字符串键（这样写起来会稍微少一些）。但是请注意，与任何GDScript标识符一样，"
+"以这种形式编写的键不能以数字开头。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
 msgid ""
@@ -1247,7 +1241,7 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)."
 msgstr ""
-"在同一个脚本中的其他类，尊重作用域（如果在相同作用域内，在 ``class "
+"在同一个脚本中的其他类，遵循作用域（如果在相同作用域内，在 ``class "
 "InnerClass`` 中声明 ``class NestedClass`` 得到 ``InnerClass."
 "NestedClass`` ）。"
 
@@ -1507,7 +1501,6 @@ msgstr ""
 "用 ``continue`` 来继续："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
-#, fuzzy
 msgid ""
 "To iterate through a range, such as an array or table, a *for* loop is used. "
 "When iterating over an array, the current array element is stored in the "
@@ -1515,7 +1508,7 @@ msgid ""
 "loop variable."
 msgstr ""
 "要遍历一个范围（如数组或表），使用 *for* 循环。在数组上迭代时，当前数组元素存"
-"储在循环变量中。在遍历字典时， *index* 存储在循环变量中。"
+"储在循环变量中。在遍历字典时， *键（key）* 存储在循环变量中。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:885
 msgid ""
@@ -1547,28 +1540,27 @@ msgid ""
 "Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
-"删除任何 ``break`` 。如果默认情况下不想用 ``break`` ，可以使用 ``continue`` "
-"作为下移。"
+"删除任何 ``break``\\ s 。如果不想使用默认的 ``break（停止向下匹配）`` ，可以"
+"使用 ``continue`` 作向下穿透匹配（fallthrough）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "Change ``default`` to a single underscore."
-msgstr "将 ``default`` 更改为单个下划线。"
+msgstr "将 ``default`` 替换为单个下划线。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid "**Control flow**:"
 msgstr "**控制流**："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
-#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
 "below the ``match`` statement. You can use ``continue`` to stop execution in "
 "the current block and check for an additional match in the patterns below it."
 msgstr ""
-"模式从上到下匹配。如果模式匹配，将执行相应的块。之后，在 ``match`` 语句之下将"
-"继续执行。如果您希望下移，可以使用 ``continue`` 来停止当前块中的执行并检查其"
-"下的执行。"
+"模式从上到下进行匹配。如果匹配到一个模式，则会执行第一个相应的块。之后，继续"
+"执行 ``match`` 语句下面的内容。你可以使用 ``continue`` 来停止执行当前的块，并"
+"检查它下面的模式是否有额外的匹配。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid "There are 6 pattern types:"
@@ -1637,7 +1629,7 @@ msgstr "首先测试数组的长度，它的大小必须与模式相同，否则
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``."
-msgstr "**开放式数组**：通过使最后一个子模式为 ``..``，可以使数组大于模式。"
+msgstr "**开放式数组**: 通过使最后一个子模式为 ``..`` ，可以使数组大于模式。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:973
 msgid "Every subpattern has to be comma-separated."
@@ -1663,7 +1655,7 @@ msgstr "首先要测试字典的大小，它的大小必须与模式相同，否
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``."
-msgstr "**开放式字典**：通过使最后一个子模式为 ``..``，可以使字典大于模式。"
+msgstr "**开放式字典**: 通过将最后一个子字样改为 ``..`` ，使字典可以比模式大。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
 msgid "Every subpattern has to be comma separated."
@@ -1712,11 +1704,19 @@ msgstr ""
 "用 ``class_name`` 关键字。您可以添加可选的逗号，后跟图像的路径，以将图像用作"
 "图标。然后您的类将在编辑器中显示其新图标："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1055
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
+msgid ""
+"If the script is located in the ``res://addons/`` directory, ``class_name`` "
+"will only cause the node to show up in the **Create New Node** dialog if the "
+"script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
+"for more information."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
 msgstr "这是一个类文件示例："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1077
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1084
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -1729,41 +1729,41 @@ msgstr ""
 "态成员变量。同样，每次创建实例时，引擎都会初始化变量，这包括数组和字典。这是"
 "线程安全的精神，因为脚本可以在用户不知情的情况下在单独的线程中初始化。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1085
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1092
 msgid "Inheritance"
 msgstr "继承"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1087
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
 msgid "A class (stored as a file) can inherit from:"
 msgstr "一个类（存储为文件）可以继承自："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1089
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1096
 msgid "A global class."
 msgstr "一个全局的类。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1090
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
 msgid "Another class file."
 msgstr "另一个类文件。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
 msgid "An inner class inside another class file."
 msgstr "另一个类文件中的内部类。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1093
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
 msgid "Multiple inheritance is not allowed."
 msgstr "不允许多重继承。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1095
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
 msgid "Inheritance uses the ``extends`` keyword::"
 msgstr "继承使用 ``extends`` 关键字："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1114
 msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr "要检查给定的实例是否从给定的类继承，可以使用 ``is`` 关键字："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1119
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
 msgid ""
 "To call a function in a *parent class* (i.e. one ``extend``-ed in your "
 "current class), prepend ``.`` to the function name::"
@@ -1771,7 +1771,7 @@ msgstr ""
 "要调用 *基类* （即当前类 ``extend`` 后的类）中的函数，请在函数名前面加上 ``."
 "``："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1131
 msgid ""
 "This is especially useful because functions in extending classes replace "
 "functions with the same name in their parent classes. If you still want to "
@@ -1781,7 +1781,7 @@ msgstr ""
 "这特别有用，因为扩展类中的函数会替换基类中同名的函数。所以如果您仍然想调用它"
 "们，您可以使用 ``.`` （这就像其他语言中的 ``super`` 关键字一样）："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
 msgid ""
 "Default functions like  ``_init``, and most notifications such as "
 "``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
@@ -1792,11 +1792,11 @@ msgstr ""
 "``_process``、 ``_physics_process`` 等，将自动调用在所有父类中的函数。重载它"
 "们时无需显式调用它们。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 msgid "Class Constructor"
 msgstr "类构造器"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1141
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
 msgid ""
 "The class constructor, called on class instantiation, is named ``_init``. As "
 "mentioned earlier, the constructors of parent classes are called "
@@ -1806,7 +1806,7 @@ msgstr ""
 "在类实例化时调用的类构造函数名为 ``_init``。如前所述，父类的构造函数在继承类"
 "时被自动调用。所以通常不需要显式调用 ``._init()``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -1815,15 +1815,15 @@ msgstr ""
 "与常规函数的调用不同，就像在上面的示例中使用 ``.some_func`` 那样，如果被继承"
 "的类的构造函数接受参数，则将它们传递为："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1153
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr "通过示例可以更好地说明这一点。考虑这种情况："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
 msgid "There are a few things to keep in mind here:"
 msgstr "这里有几件事要记住："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid ""
 "If the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case), then the inheriting class (``Idle."
@@ -1834,13 +1834,13 @@ msgstr ""
 "``_init`` 构造函数，然后，继承的类（``Idle.gd``）也 **必须** 定义 ``_init`` "
 "并将适当的参数从 ``State.gd`` 传递给 ``_init``。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1188
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the parent class "
 "``State.gd``."
 msgstr "``Idle.gd`` 可以有与基类 ``State.gd`` 不同数量的参数。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1182
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 msgid ""
 "In the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``."
@@ -1848,7 +1848,7 @@ msgstr ""
 "在上面的示例中，传递到 ``State.gd`` 的构造函数的 ``e`` 与传递给 ``Idle.gd`` "
 "的 ``e`` 是相同的。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1184
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1191
 msgid ""
 "If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` parent class, even if it does nothing. "
@@ -1859,11 +1859,11 @@ msgstr ""
 "将一些值传递给 ``State.gd`` 父类。这带给我们一个事实，即您也可以在基本构造函"
 "数中传递文字，而不仅仅是变量。 例如："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1194
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid "Inner classes"
 msgstr "内部类"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1196
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
@@ -1871,11 +1871,11 @@ msgstr ""
 "类文件可以包含内部类。内部类使用 ``class`` 关键字定义。它们使用 ``ClassName."
 "new()`` 函数实例化。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1221
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid "Classes as resources"
 msgstr "类作为资源"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1223
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -1887,20 +1887,20 @@ msgstr ""
 "能在其他类中访问它们。这可以使用 ``load`` 或 ``preload`` 函数来完成（见下"
 "面）。一个加载的类资源的实例化是通过调用类对象上的 ``new`` 函数来完成的："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1240
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 msgid "Exports"
 msgstr "导出"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
 "Documentation about exports has been moved to :ref:`doc_gdscript_exports`."
 msgstr "有关导出的文档已移至 :ref:`doc_gdscript_exports`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1254
 msgid "Setters/getters"
 msgstr "Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1249
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1256
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1909,7 +1909,7 @@ msgstr ""
 "知道类的成员变量何时出于任何原因更改通常是很有用的。也可能需要以某种方式封装"
 "其访问。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1917,7 +1917,7 @@ msgstr ""
 "为此，GDScript使用 ``setget`` 关键字提供了一个 *setter/getter* 语法。在变量定"
 "义后可直接使用："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1931,11 +1931,11 @@ msgstr ""
 "决定如何处理新值。反之亦然，当访问 ``变量`` 时，必须用 *getter* 函数（上面的 "
 "``getterfunc`` ） ``返回`` 所需的值。下面是一个示例："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1275
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
 msgid "Either of the *setter* or *getter* functions can be omitted::"
 msgstr "*setter* 或者 *getter* 函数都可省略："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1282
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1289
 msgid ""
 "Setters and getters are useful when :ref:`exporting variables "
 "<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
@@ -1944,17 +1944,17 @@ msgstr ""
 "用于验证输入，在工具脚本或插件里 :ref:`导出变量 <doc_gdscript_exports>` 到编"
 "辑器时，Getters/Setters格外好用。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1285
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1292
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr "如上所述， *本地* 访问 *不* 触发setter和getter。这里有个说明："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1302
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1309
 msgid "Tool mode"
 msgstr "工具模式"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
@@ -1966,11 +1966,11 @@ msgstr ""
 "希望它们在编辑器中运行（只要它们不执行游戏代码或手动避免这样做）。为此，可以"
 "用 ``tool`` 关键字并将它放在文件的顶部："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1318
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr "详情见 :ref:`doc_running_code_in_the_editor`。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1320
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
 msgid ""
 "Be cautious when freeing nodes with ``queue_free()`` or ``free()`` in a tool "
 "script (especially the script's owner itself). As tool scripts run their "
@@ -1979,11 +1979,11 @@ msgstr ""
 "在工具脚本（尤其是脚本的所有者本身）中使用 ``queue_free()`` 或 ``free()`` 释"
 "放节点时要谨慎。工具脚本在编辑器中运行代码时，滥用它们可能导致编辑器崩溃。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1326
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
 msgid "Memory management"
 msgstr "内存管理"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1328
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 #, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
@@ -1991,16 +1991,16 @@ msgid ""
 "counting. By default, all classes that don't define inheritance extend "
 "**Reference**. If this is not desired, then a class must inherit :ref:"
 "`class_Object` manually and must call ``instance.free()``. To avoid "
-"reference cycles that can't be freed, a ``weakref`` function is provided for "
-"creating weak references."
+"reference cycles that can't be freed, a :ref:`class_WeakRef` function is "
+"provided for creating weak references. Here is an example:"
 msgstr ""
-"如果一个类继承自 :ref:`class_Reference` , 则实例将在不再使用时被释放。没有垃"
-"圾收集器，只有引用计数。默认情况下，所有未定义继承的类都会扩展 "
-"**Reference** 。如果不希望这样，那么一个类必须手动继承 :ref:`class_Object` 并"
-"且必须调用 ``instance.free()``。为了避免无法释放的引用循环，提供一个 "
-"``weakref`` 函数用来来创建弱引用。"
+"如果一个类继承了 :ref:`class_Reference`，那么当不再使用时，实例将被释放。不存"
+"在垃圾回收器，只有引用计数。默认情况下，所有没有定义继承的类都会扩展为 "
+"**Reference** 类。如果不希望这样，那么一个类必须手动继承 :ref:"
+"`class_Object`，并且必须调用 ``instance.free()`` 。为了避免无法释放的引用循"
+"环，提供了一个 ``weakref`` 函数用于创建弱引用。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
@@ -2009,11 +2009,11 @@ msgstr ""
 "或者，当不使用引用时，可以使用 ``is_instance_valid(instance)`` 来检查对象是否"
 "已被释放。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1343
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1364
 msgid "Signals"
 msgstr "信号"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1345
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1366
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "
 "react to. To create custom signals for a class, use the ``signal`` keyword."
@@ -2021,7 +2021,7 @@ msgstr ""
 "信号是从对象发出消息的工具，其他对象也可以对此做出反应。要为一个类创建自定义"
 "信号，请使用 ``signal`` 关键字。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1358
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1379
 msgid ""
 "Signals are a `Callback <https://en.wikipedia.org/wiki/"
 "Callback_(computer_programming)>`_ mechanism. They also fill the role of "
@@ -2034,7 +2034,7 @@ msgstr ""
 "式）的角色。有关更多信息，请阅读《游戏编程模式》电子书中的 `观察者教程 "
 "<https://gameprogrammingpatterns.com/observer.html>`_。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
 "signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
@@ -2042,7 +2042,7 @@ msgstr ""
 "您可以将这些信号连接到方法，方式与连接节点的内置信号（例如 :ref:"
 "`class_Button` 或 :ref:`class_RigidBody`）的方式相同。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1368
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1389
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
@@ -2052,11 +2052,11 @@ msgstr ""
 "``Game`` 节点。当 ``Character`` 节点发出信号时，游戏节点的 "
 "``_on_Character_health_depleted`` 会被调用："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1403
 msgid "You can emit as many arguments as you want along with a signal."
 msgstr "您可以发出任意数量的参数附带一个信号。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1384
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1405
 msgid ""
 "Here is an example where this is useful. Let's say we want a life bar on "
 "screen to react to health changes with an animation, but we want to keep the "
@@ -2065,7 +2065,7 @@ msgstr ""
 "这是一个有用的示例。假设我们希望屏幕上的生命条能够通过动画对健康值做出反应，"
 "但我们希望在场景树中将用户界面与游戏角色保持独立。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1388
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
 msgid ""
 "In our ``Character.gd`` script, we define a ``health_changed`` signal and "
 "emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
@@ -2078,7 +2078,7 @@ msgstr ""
 "然后从场景树上方的 ``Game`` 节点，使用 :ref:`Object.connect() "
 "<class_Object_method_connect>` 方法将其连接到 ``Lifebar``："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1429
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid ""
 "To use signals, your class has to extend the ``Object`` class or any type "
 "extending it like ``Node``, ``KinematicBody``, ``Control``..."
@@ -2086,7 +2086,7 @@ msgstr ""
 "要使用信号，您的类必须扩展 ``Object`` 类或任何扩展它的类型，例如 ``Node``、 "
 "``KinematicBody``、 ``Control``…"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1453
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
 "then connect the character, that emits the signal, to the receiver, the "
@@ -2095,7 +2095,7 @@ msgstr ""
 "在 ``Game`` 节点中，我们同时获得 ``Character`` 和 ``Lifebar`` 节点，然后将发"
 "出信号的 ``Character`` 连接到接收器，在本例中为 ``Lifebar`` 节点 。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1446
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1467
 msgid ""
 "This allows the ``Lifebar`` to react to health changes without coupling it "
 "to the ``Character`` node."
@@ -2103,13 +2103,13 @@ msgstr ""
 "这允许 ``Lifebar`` 能够对健康值做出反应，而无需将其耦合到 ``Character`` 节"
 "点。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1449
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
 msgid ""
 "You can write optional argument names in parentheses after the signal's "
 "definition::"
 msgstr "您可以在信号的定义后的括号中写上可选的参数名称："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1455
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1476
 msgid ""
 "These arguments show up in the editor's node dock, and Godot can use them to "
 "generate callback functions for you. However, you can still emit any number "
@@ -2119,7 +2119,7 @@ msgstr ""
 "这些参数显示在编辑器的节点停靠面板中，Godot可以使用它们为您生成回调函数。但"
 "是，发出信号时仍然可以发出任意数量的参数；由您来发出正确的值。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1461
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1482
 msgid ""
 "GDScript can bind an array of values to connections between a signal and a "
 "method. When the signal is emitted, the callback method receives the bound "
@@ -2129,7 +2129,7 @@ msgstr ""
 "GDScript可以将值数组绑定到信号和方法之间的连接。发出信号时，回调方法将接收绑"
 "定值。这些绑定参数对于每个连接都是唯一的，并且值将保持不变。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1466
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1487
 msgid ""
 "You can use this array of values to add extra constant information to the "
 "connection if the emitted signal itself doesn't give you access to all the "
@@ -2138,7 +2138,7 @@ msgstr ""
 "如果发出的信号本身不能使您访问所需的所有数据，则可以使用此值数组将额外的常量"
 "信息添加到连接。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1470
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1491
 msgid ""
 "Building on the example above, let's say we want to display a log of the "
 "damage taken by each character on the screen, like ``Player1 took 22 damage."
@@ -2151,17 +2151,17 @@ msgstr ""
 "色的名称。因此，当我们将信号连接到游戏终端中时，可以在绑定数组参数中添加角色"
 "的名称："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1484
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1505
 msgid ""
 "Our ``BattleLog`` node receives each element in the binds array as an extra "
 "argument::"
 msgstr "我们的 ``BattleLog`` 节点接收绑定数组中的每个元素作为一个额外的参数："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1497
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1518
 msgid "Coroutines with yield"
 msgstr "协程使用yield"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1499
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
@@ -2177,27 +2177,27 @@ msgstr ""
 "``resume()`` 将继续执行并返回函数返回的任何内容。恢复后，状态对象将无效。这是"
 "一个例子："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1541
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1562
 msgid "Will print::"
 msgstr "将打印："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1526
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1547
 msgid ""
 "It is also possible to pass values between ``yield()`` and ``resume()``, for "
 "example::"
 msgstr "还可以在 ``yield()`` 和 ``resume()`` 之间传递值，例如："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1547
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1568
 msgid ""
 "Remember to save the new function state, when using multiple ``yield``\\s::"
 msgstr "当多次使用``yield``时，记住保存新的函数状态："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1562
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1583
 msgid "Coroutines & signals"
 msgstr "协程&信号"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1564
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1585
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two arguments, an object and a signal. When the signal "
@@ -2206,28 +2206,28 @@ msgstr ""
 "使用 ``yield`` 的真正优势在于与信号结合使用。``yield`` 可以接受两个参数，一个"
 "对象和一个信号。收到信号后，将重新开始执行。这里有些例子："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example::"
 msgstr "协程自身转换为无效状态时会使用 ``completed`` 信号，例如："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1589
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1610
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr "``my_func`` 仅在按下两个按钮后继续执行。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1591
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
 msgid "You can also get the signal's argument once it's emitted by an object:"
 msgstr "一旦一个信号被某个对象发出，你还可以获取该信号的参数："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1598
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1619
 msgid ""
 "If there is more than one argument, ``yield`` returns an array containing "
 "the arguments::"
-msgstr ""
+msgstr "如果存在多于一个参数，``yield``返回含有这些参数的数组::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1616
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1637
 msgid ""
 "If you're unsure whether a function may yield or not, or whether it may "
 "yield multiple times, you can yield to the ``completed`` signal "
@@ -2236,22 +2236,23 @@ msgstr ""
 "如果你不确定一个函数是否还会继续yield，可以使用信号量completed，来作为判断依"
 "据:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1638
-#, fuzzy
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
 msgid ""
 "This ensures that the function returns whatever it was supposed to return "
 "regardless of whether coroutines were used internally. Note that using "
 "``while`` would be redundant here as the ``completed`` signal is only "
 "emitted when the function didn't yield anymore."
 msgstr ""
-"这确保了无论函数内部是否使用协程，该函数都将返回应返回的结果。 请注意，使用"
-"while会在这里是多余的，因为仅当函数不再产生时才会发出Completed信号。"
+"这确保了无论函数内部是否使用协程（coroutines），函数都会返回它应该返回的内"
+"容。 请注意，使用 ``while`` 在这里是多余的，因为仅当函数不再yield时才会发出 "
+"``completed`` 信号。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1644
-msgid "Onready keyword"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
+#, fuzzy
+msgid "`onready` keyword"
 msgstr "``Onready`` 关键字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1646
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -2261,7 +2262,7 @@ msgstr ""
 "使用节点时，通常希望将对场景部分的引用保留在变量中。由于仅在进入活动场景树时"
 "才保证要配置场景，因此只有在调用 ``Node._ready()`` 时才能获得子节点。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1659
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1682
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2272,11 +2273,11 @@ msgstr ""
 "``onready``，将成员变量的初始化推迟到调用 ``_ready()``。它可以用一行替换上面"
 "的代码："
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1690
 msgid "Assert keyword"
 msgstr "Assert关键字"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1692
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds. This means that the "
@@ -2290,7 +2291,7 @@ msgstr ""
 "必须 **不能** 包含具有副作用的表达式。否则，脚本的行为将取决于项目是否在调试"
 "版本中运行。"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1681
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1704
 msgid ""
 "When running a project from the editor, the project will be paused if an "
 "assertion error occurs."

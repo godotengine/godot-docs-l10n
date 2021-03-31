@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,10 @@ msgid ""
 "This requires support for `WebAssembly <https://webassembly.org/>`__ and "
 "`WebGL <https://www.khronos.org/webgl/>`__ in the user's browser."
 msgstr ""
+"Der HTML5-Export ermöglicht die Veröffentlichung von in Godot Engine "
+"erstellten Spielen im Browser. Dies erfordert die Unterstützung von "
+"`WebAssembly <https://webassembly.org/>`__ und `WebGL <https://www.khronos."
+"org/webgl/>`__ im Browser des Benutzers."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:11
 msgid ""
@@ -34,6 +38,9 @@ msgid ""
 "`F12`, to view **debug information** like JavaScript, engine, and WebGL "
 "errors."
 msgstr ""
+"Verwenden Sie die in den Browser integrierte Entwicklerkonsole, die "
+"normalerweise mit :kbd:`F12` geöffnet wird, um **Debug-Informationen** wie "
+"JavaScript-, Engine- und WebGL-Fehler anzuzeigen."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
@@ -41,6 +48,9 @@ msgid ""
 "exported projects when **opened locally** per ``file://`` protocol. To get "
 "around this, use a local server."
 msgstr ""
+"Viele Browser, einschließlich Firefox und Chromium-basierte Browser, laden "
+"exportierte Projekte nicht, wenn sie **lokal** per ``file://`` Protokoll "
+"geöffnet werden. Um dies zu umgehen, benutzen Sie einen lokalen Server."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
 msgid ""
@@ -50,6 +60,12 @@ msgid ""
 "information <https://developer.mozilla.org/en-US/docs/Learn/Common_questions/"
 "set_up_a_local_testing_server>`__."
 msgstr ""
+"Python bietet eine einfache Methode zum Starten eines lokalen Servers. "
+"Verwenden Sie ``python -m http.server 8000 --bind 127.0.0.1`` mit Python 3, "
+"um das aktuelle Arbeitsverzeichnis unter ``http://localhost:8000`` zu "
+"bedienen. ``Verweis auf MDN für zusätzliche Informationen <https://developer."
+"mozilla.org/en-US/docs/Learn/Common_questions/"
+"set_up_a_local_testing_server>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
@@ -59,12 +75,24 @@ msgid ""
 "<doc_exporting_for_ios>` instead, as it will also result in better "
 "performance."
 msgstr ""
+"`Es gibt erhebliche Fehler beim Ausführen von HTML5-Projekten auf iOS "
+"<https://github.com/godotengine/godot/issues/26554>`__ (unabhängig vom "
+"Browser). Wir empfehlen stattdessen die Verwendung der :ref:`iOS nativen "
+"Exportfunktionalität <doc_exporting_for_ios>`, da dies ebenfalls zu einer "
+"besseren Performance führt."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:30
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
+msgid ""
+"If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
+"mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to play the "
+"exported project using a Chromium-based browser instead of Firefox."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
 msgid "WebGL 2"
 msgstr "WebGL 2"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:32
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:39
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
@@ -73,7 +101,7 @@ msgstr ""
 "wird, verwendet der HTML5-Export *WebGL 2* wenn die Option *GLES3* "
 "ausgewählt ist."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:35
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
 "without replacement."
@@ -81,7 +109,7 @@ msgstr ""
 "Die Verwendung von WebGL 2 wird nicht empfohlen, da es voraussichtlich aus "
 "Godot ersatzlos entfernt wird."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:38
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
@@ -93,18 +121,18 @@ msgstr ""
 "**Safari** und **Edge** funktionieren nicht. Unter **iOS** basieren alle "
 "Browser auf WebKit (d.H. Safari), sodass sie auch nicht funktionieren."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
 "Der WebGL 2-Renderer von Godot hat Probleme mit 3D und wird nicht länger "
 "unterstützt."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:46
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
 msgid "Limitations"
 msgstr "Limitierungen"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -116,11 +144,11 @@ msgstr ""
 "komplizierter. Im Folgenden finden Sie eine Liste der Einschränkungen, die "
 "Sie beim Portieren eines Godot-Spiels ins Web beachten sollten."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "Using cookies for data persistence"
 msgstr "Verwenden von Cookies für die Datenbeständigkeit"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -133,7 +161,7 @@ msgstr ""
 "ebenfalls aktiviert sein. Der Inkognito bzw. Privat-Modus verhindert auch "
 "diese Datennutzung."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -143,11 +171,11 @@ msgstr ""
 "überprüfen, ob das Dateisystem ``user: //`` nutzbar ist, kann aber in "
 "einigen Fällen falsche Erfolgs-Ergebnisse liefern."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
 msgid "Full screen and mouse capture"
 msgstr "Aufnahme des gesamten Bildschirms und der Maus"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -156,8 +184,14 @@ msgid ""
 "``_unhandled_input``. Querying the :ref:`class_Input` singleton is not "
 "sufficient, the relevant input event must currently be active."
 msgstr ""
+"Browser erlauben keinen willkürlichen **Vollbildmodus**. Dasselbe gilt für "
+"das **Erfassen des Cursors**. Stattdessen müssen diese Aktionen als Antwort "
+"auf ein JavaScript-Eingabeereignis erfolgen. In Godot bedeutet dies den "
+"Vollbildmodus aus einem gedrückten Eingabe-Ereignis-Callback wie ``_input`` "
+"oder ``_unhandled_input``. Die Abfrage des :ref:`class_Input`-Singletons "
+"reicht nicht aus, das entsprechende Eingabeereignis muss aktuell aktiv sein."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
@@ -168,11 +202,11 @@ msgstr ""
 "Dies erfordert eine :ref:`Anpassung der HTML-Seite "
 "<doc_customizing_html5_shell>`."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:86
 msgid "Audio autoplay"
 msgstr "Audio Autoplay"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
@@ -181,7 +215,7 @@ msgstr ""
 "benötigt der Player einen Tastendruck oder Aktivierung um Audio zu "
 "aktivieren."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
@@ -191,39 +225,39 @@ msgstr ""
 "`automatische Wiedergabe von Web-Audio <https://sites.google.com/a/chromium."
 "org/dev/audio-video/autoplay>`__."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
 msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
 msgstr ":ref:`class_HTTPClient` und :ref:`class_HTTPRequest`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
 msgid "The HTTP classes have several restrictions on the HTML5 platform:"
 msgstr ""
 "Die HTTP-Klassen haben verschiedene Einschränkungen für die HTML5-Plattform:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "Der Zugriff auf den ``StreamPeer`` ist nicht möglich"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:93
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
 msgid "Threaded/Blocking mode is not available"
 msgstr "Threaded/Blocking-Modus ist nicht verfügbar"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
 "Der Fortschritt kann nicht mehr als einmal pro Frame ausgeführt werden, "
 "sodass die Abfrage in einer Schleife einfriert"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
 msgid "No chunked responses"
 msgstr "Keine zerstückelten Antworten"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
 msgid "Host verification cannot be disabled"
 msgstr "Die Host-Verifizierung kann nicht deaktiviert werden"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
@@ -231,11 +265,11 @@ msgstr ""
 "Vorbehaltlich der `same-origin policy <https://developer.mozilla.org/en-US/"
 "docs/Web/Security/Same-origin_policy>`__"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
 msgid "Exported ``.html`` file must not be reused"
 msgstr "Exportierte ``.html`` Datei darf nicht wiederverwendet werden"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the **generated HTML file** specifically for "
@@ -243,12 +277,17 @@ msgid ""
 "file** will be lost in future exports. To customize the generated file, see :"
 "ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Jedes Projekt muss eine eigene HTML-Datei generieren. Beim Export werden in "
+"der **generierten HTML-Datei** mehrere Textplatzhalter speziell für die "
+"gegebenen Exportoptionen ersetzt. Alle direkten Änderungen an der "
+"**generierten HTML-Datei** gehen bei zukünftigen Exporten verloren. Um die "
+"generierte Datei anzupassen, siehe :ref:`doc_customizing_html5_shell`."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:106
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid "Boot splash is not displayed"
 msgstr "Boot Splash wird nicht angezeigt"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
@@ -258,11 +297,11 @@ msgstr ""
 "Bild wird jedoch als PNG-Datei exportiert, sodass :ref:`benutzerdefinierte "
 "HTML-Seiten <doc_customizing_html5_shell>` es anzeigen können."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
 msgid "Shader language limitations"
 msgstr "Einschränkungen der Shader-Sprache"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
 msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
@@ -271,74 +310,90 @@ msgstr ""
 "WebGL 1.0 unterstützt keine dynamischen Schleifen, daher funktionieren dort "
 "keine Shader, die diese verwenden."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Unimplemented functionality"
 msgstr "Nicht implementierte Funktionalität"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:121
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr ""
 "Die folgenden Funktionen sind derzeit auf der HTML5-Plattform nicht "
 "verfügbar:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
 msgid "Threads"
 msgstr "Threads"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:124
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
 msgid "GDNative"
-msgstr "GDNative"
+msgstr "GDNativ"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
 msgid "C#"
 msgstr "C#"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:133
 msgid "Clipboard synchronization between engine and operating system"
 msgstr "Zwischenablagesynchronisation zwischen Engine und Betriebssystem"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:127
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
 msgid ""
 "Networking other than :ref:`class_HTTPClient` and :ref:"
 "`class_WebSocketClient`"
 msgstr ""
 "andere Netzwerke als :ref:`class_HTTPClient` and :ref:`class_WebSocketClient`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
 "Check the `list of open HTML5 issues on GitHub <https://github.com/"
 "godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
 "if the functionality you're interested in has an issue yet. If not, open one "
 "to communicate your interest."
 msgstr ""
+"Überprüfen Sie die `Liste der offenen HTML5-Probleme auf GitHub <https://"
+"github.com/godotengine/godot/issues?q=is:open+is:issue+label:platform:"
+"html5>`__, um zu sehen, ob die Funktionalität, an der Sie interessiert sind, "
+"schon ein Problem hat. Falls nicht, öffnen Sie eines, um Ihr Interesse "
+"mitzuteilen."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
 msgid "Serving the files"
 msgstr "Dateien bereitstellen"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:137
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Beim Exportieren für das Web werden mehrere Dateien erzeugt, die von einem "
+"Webserver bereitgestellt werden, einschließlich einer Standard-HTML-Seite "
+"für die Präsentation. Eine benutzerdefinierte HTML-Datei kann verwendet "
+"werden, siehe :ref:`doc_customizing_html5_shell`."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:141
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"Die generierte ``.html`` Datei kann als ``Verzeichnisindex`` in Apache-"
+"Servern verwendet werden und kann jederzeit in z.B. ``index.html`` umbenannt "
+"werden, ihr Name ist standardmäßig nie davon abhängig."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
 "common on most web game hosting sites."
 msgstr ""
+"Die HTML-Seite zeichnet das Spiel in maximaler Größe innerhalb des "
+"Browserfensters. Auf diese Weise kann sie in einen ``<iframe>`` mit der "
+"Größe des Spiels eingefügt werden, wie es auf den meisten Webspiel-Hosting-"
+"Sites üblich ist."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:149
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -348,33 +403,51 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"Die anderen exportierten Dateien werden so, wie sie sind, neben der ``."
+"html`` Datei serviert, Namen unverändert. Die ``.wasm`` Datei ist ein "
+"binäres WebAssembly-Modul, das die Engine implementiert. Die ``.pck`` Datei "
+"ist das Godot-Hauptpaket, das Ihr Spiel enthält. Die ``.js`` Datei enthält "
+"den Startcode und wird von der ``.html`` Datei benutzt, um auf die Engine "
+"zuzugreifen. Die ``.png`` Datei enthält das Boot-Splash-Image. Es wird nicht "
+"in der Standard-HTML-Seite verwendet, ist aber für :ref:`eigene HTML Seiten "
+"<doc_customizing_html5_shell>` enthalten."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:157
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
 "`application/wasm`."
 msgstr ""
+"Die ``.pck`` Datei ist binär und wird normalerweise mit dem MIME-Typ :"
+"mimetype:`application/octet-stream` geliefert. Die Datei ``.wasm`` wird als :"
+"mimetype:`application/wasm` geliefert."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
 msgstr ""
+"Die Auslieferung des WebAssembly-Moduls (``.wasm``) mit einem anderen MIME-"
+"Typ als :mimetype:`application/wasm` kann einige Start-Optimierungen "
+"verhindern."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:165
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"Die Lieferung der Dateien mit serverseitiger Kompression wird besonders für "
+"die ``.pck`` und ``.wasm`` Dateien empfohlen, die normalerweise groß sind. "
+"Das WebAssembly-Modul komprimiert besonders gut, mit gzip-Kompression auf "
+"etwa ein Viertel seiner ursprünglichen Größe."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
 msgid "Export options"
 msgstr "Exportoptionen"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
 msgid ""
 "If a runnable web export template is available, a button appears between the "
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
@@ -385,7 +458,7 @@ msgstr ""
 "Szene abspielen* angezeigt, um das Spiel schnell im Standardbrowser zum "
 "Testen zu öffnen."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:177
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:184
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
@@ -394,7 +467,7 @@ msgstr ""
 "angibt, wird dieser anstelle der Standard-HTML-Seite verwendet. Siehe :ref:"
 "`doc_customizing_html5_shell`."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
 msgid ""
 "**Head Include** is appended into the ``<head>`` element of the generated "
 "HTML page. This allows to, for example, load webfonts and third-party "
@@ -404,11 +477,11 @@ msgstr ""
 "angehängt. Auf diese Weise können Sie beispielsweise Webfonts und JavaScript-"
 "APIs von Drittanbietern laden, CSS hinzufügen oder JavaScript-Code ausführen."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid "Calling JavaScript from script"
 msgstr "Aufruf von JavaScript aus dem Skript"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -422,7 +495,7 @@ msgstr ""
 "als JavaScript-Code aus. Dies ermöglicht die Interaktion mit dem Browser auf "
 "eine Weise, die mit in Godot integrierten Skriptsprachen nicht möglich ist."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:200
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -430,22 +503,22 @@ msgstr ""
 "Der Wert der letzten JavaScript-Anweisung wird in einen GDScript-Wert "
 "konvertiert und unter bestimmten Umständen von ``eval()`` zurückgegeben:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:203
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
 "JavaScript ``Nummer`` wird in GDScript zurückgegeben als :ref: `class_float`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:204
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
 "JavaScript ``boolean`` wird in GDScript zurückgegeben als :ref:`class_bool`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:212
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
 "JavaScript ``string`` wird in GDScript zurückgegeben als :ref:`class_String`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:206
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:213
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -453,11 +526,11 @@ msgstr ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` und ``DataView`` werden in "
 "GDScript zurückgegeben als :ref:`class_PoolByteArray`"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:215
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Jeder andere JavaScript-Wert wird zurückgegeben als ``null``."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:217
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:224
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
@@ -465,16 +538,29 @@ msgid ""
 "``null``.  The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
+"HTML5-Exportvorlagen können ohne Unterstützung für das Singleton :ref:"
+"`gebuilded <doc_compiling_for_web>` sein, um die Sicherheit zu verbessern. "
+"Mit solchen Vorlagen und auf anderen Plattformen als HTML5 wird der Aufruf "
+"von ``JavaScript.eval`` auch ``null`` zurückgeben. Die Verfügbarkeit des "
+"Singletons kann mit dem ``JavaScript`` :ref:`feature tag <doc_feature_tags>` "
+"geprüft werden::"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:238
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
 msgstr ""
+"Die mehrzeiligen Strings von GDScript, umgeben von 3 Anführungszeichen ``"
+"\"\"\"`` wie in ``my_func3()`` oben, sind nützlich, um JavaScript-Code "
+"lesbar zu halten."
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:234
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:241
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"Die ``eval`` Methode akzeptiert auch ein zweites, optionales boolesches "
+"Argument, das angibt, ob der Code im globalen Ausführungskontext ausgeführt "
+"werden soll, wobei die Voreinstellung auf ``false`` steht, um eine "
+"Verschmutzung des globalen Namensraums zu verhindern::"

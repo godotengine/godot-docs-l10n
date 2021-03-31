@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,6 +129,8 @@ msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
+"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边)，"
+"这样模块才能被正确注册。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:126
 #, fuzzy
@@ -209,6 +211,8 @@ msgid ""
 "subclasses. This can be raised to 13 by including the header file ``core/"
 "method_bind_ext.gen.inc``."
 msgstr ""
+"对于子类之类的东西，C ++模块中的参数限制为5。 通过包含头文件``core/"
+"method_bind_ext.gen.inc``，可以将其增加到13个。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:236
 msgid "Using the module"
@@ -244,6 +248,10 @@ msgid ""
 "compiled in the export template. See the :ref:`Compiling <toc-devel-"
 "compiling>` pages for more information."
 msgstr ""
+"如果要从正在运行的项目（而不仅仅是从编辑器）访问模块，则还必须重新编译计划使"
+"用的每个导出模板，然后在每个导出预设中指定自定义模板的路径。 否则，由于未在导"
+"出模板中编译模块，因此在运行项目时会出现错误。 有关更多信息，请参见：编译"
+"`Compiling <toc-devel-compiling>`页面。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:265
 msgid "Compiling a module externally"
@@ -256,6 +264,8 @@ msgid ""
 "to compile a module, there are a couple of reasons as to why this might not "
 "be a practical thing to do:"
 msgstr ""
+"编译一个模块需要将模块的源代码直接移到引擎的 ``modules/`` 目录下。虽然这是最"
+"直接的编译模块的方法，但是有几个原因说明为什么这样做不实用:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:272
 msgid ""
@@ -266,6 +276,10 @@ msgid ""
 "solution, but you may additionally need to overcome OS restrictions like "
 "needing the symbolic link privilege if doing this via script."
 msgstr ""
+"每次编译引擎时，不管有没有模块，都必须手动复制模块源码，或者在编译过程中使用"
+"类似 ``module_summator_enabled=no`` 的编译选项，采取额外的步骤手动禁用模块。"
+"创建符号链接也是一种解决方案，但你可能还需要克服操作系统的限制，比如如果通过"
+"脚本来做，需要符号链接的权限。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:279
 msgid ""
@@ -275,6 +289,9 @@ msgid ""
 "to make sure that only the engine-related code is committed by filtering "
 "changes."
 msgstr ""
+"根据你是否需要使用引擎的源代码，直接添加到 ``modules/`` 的模块文件会改变工作"
+"树，以至于使用VCS(比如 ``git`` )被证明是很麻烦的，因为你需要通过过滤变化来确"
+"保只提交与引擎相关的代码。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:285
 msgid ""
@@ -282,6 +299,8 @@ msgid ""
 "lets take our \"summator\" module and move it to the engine's parent "
 "directory:"
 msgstr ""
+"所以，如果你觉得需要自定义模块的独立结构，把 \"summator\"模块移到引擎的父目录"
+"下:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:293
 msgid ""
@@ -289,12 +308,16 @@ msgid ""
 "option which accepts a comma-separated list of directory paths containing "
 "custom C++ modules, similar to the following:"
 msgstr ""
+"通过提供 ``custom_modules`` 构建选项来编译我们的引擎，该选项接受一个以逗号分"
+"隔的包含自定义C++模块的目录路径列表，类似于下面:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:301
 msgid ""
 "The build system shall detect all modules under the ``../modules`` directory "
 "and compile them accordingly, including our \"summator\" module."
 msgstr ""
+"构建系统将检测到 ``./modules`` 目录下的所有模块并进行相应的编译，包括 "
+"\"summator\" 模块。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:306
 msgid ""
@@ -303,12 +326,16 @@ msgid ""
 "means that things like generating module documentation may rely on a "
 "specific path structure on your machine."
 msgstr ""
+"传递给 ``custom_modules`` 的任何路径都将在内部转换为绝对路径，以区分自定义模"
+"块和内置模块，这意味着像生成模块文档这样的事情可能会依赖于你机器上的特定路径"
+"结构。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:313
 msgid ""
 ":ref:`Introduction to the buildsystem - Custom modules build option "
 "<doc_buildsystem_custom_modules>`."
 msgstr ""
+":ref:`构建系统介绍 - 自定义模块构建选项 <doc_buildsystem_custom_modules>`."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:316
 msgid "Improving the build system for development"
@@ -462,6 +489,8 @@ msgid ""
 "You can use Git to check if you have missed some of your classes by checking "
 "the untracked files with ``git status``. For example::"
 msgstr ""
+"你可以用 Git 来检查是否漏掉了一些类，用 ``git status`` 检查未跟踪的文件。例"
+"如::"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:470
 #, fuzzy
@@ -471,7 +500,7 @@ msgstr "示例:"
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
 #, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "关于文档"
+msgstr "现在我们可以生成文档："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -479,12 +508,16 @@ msgid ""
 "which will dump the engine API reference to the given ``<path>`` in XML "
 "format."
 msgstr ""
+"我们可以通过运行Godot的doctool，即 ``godot -doctool <path>`` ，它将以XML格式"
+"转储引擎API引用到给定的 ``<path>`` 。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:487
 msgid ""
 "In our case we'll point it to the root of the cloned repository. You can "
 "point it to an another folder, and just copy over the files that you need."
 msgstr ""
+"在我们的例子中，将把它指向克隆的版本库的根目录。你可以把它指向另一个文件夹，"
+"然后复制需要的文件。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:490
 msgid "Run command:"
@@ -496,12 +529,14 @@ msgid ""
 "see that it contains a ``Summator.xml`` file, or any other classes, that you "
 "referenced in your ``get_doc_classes`` function."
 msgstr ""
+"现在，如果进入 ``godot/modules/summator/doc_classes`` 文件夹，会看到它包含一"
+"个在 ``get_doc_classes`` 函数中引用的 ``Summator.xml`` 文件，或者其他类。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:500
 msgid ""
 "Edit the file(s) following :ref:`doc_updating_the_class_reference` and "
 "recompile the engine."
-msgstr ""
+msgstr "编译以下文件:ref:`doc_updating_the_class_reference` 并重新编译引擎。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:502
 #, fuzzy
@@ -528,12 +563,16 @@ msgid ""
 "your godot folder, make sure you don't lose work by extracting older docs "
 "from an older engine build on top of the newer ones."
 msgstr ""
+"如果你改变了模块的API，可以重新提取文档，它们会包含你之前添加的东西。当然如果"
+"你把它指向 godot 文件夹，请确保不会因为在新的文档上提取旧引擎构建的旧文档而损"
+"失工作。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:513
 msgid ""
 "Note that if you don't have write access rights to your supplied ``<path>``, "
 "you might encounter an error similar to the following:"
 msgstr ""
+"请注意，如果你对提供的 ``<path>`` 没有写访问权限，可能会遇到类似下面的错误:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:525
 msgid "Adding custom editor icons"

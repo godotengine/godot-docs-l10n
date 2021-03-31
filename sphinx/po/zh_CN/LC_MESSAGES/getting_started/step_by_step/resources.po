@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,16 +226,15 @@ msgid "Creating your own resources"
 msgstr "创建自己的资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
 "serialized text or binary data (\\*.tres, \\*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
-"像Godot中的任何Object一样，用户也可以编写资源脚本。资源脚本继承了在对象属性和"
-"序列化文本或二进制数据（ ``*.tres``，``*.res``）之间自由转换的能力。它们还从 "
-"``Reference`` 类型继承引用计数内存管理。"
+"像Godot中的任何Object一样，用户也可以编写资源脚本。资源脚本继承了object类属性"
+"和序列化文本或二进制数据（ ``*.tres`` ， ``*.res`` ）之间自由转换的能力。它们"
+"还从 ``Reference`` 类型继承引用计数内存管理。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -363,7 +362,7 @@ msgstr ""
 msgid "Let's see some examples."
 msgstr "让我们看一些示例。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:271
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -376,7 +375,7 @@ msgstr ""
 "（Control）`` 的工具脚本，并将它们与一个 :ref:`EditorPlugin "
 "<class_EditorPlugin>` 结合起来，以为他们的数据创建自定义的可视化和编辑器。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:277
+#: ../../docs/getting_started/step_by_step/resources.rst:283
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -387,19 +386,19 @@ msgstr ""
 "符串，类似于将字符串映射到辅助自定义 ``资源（Resource）`` 脚本的 ``字典"
 "（Dictionary）``。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:313
+#: ../../docs/getting_started/step_by_step/resources.rst:319
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr "不仅可以内联 ``字典（Dictionary）`` 值，还可以选择..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:315
+#: ../../docs/getting_started/step_by_step/resources.rst:321
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr "从电子表格导入值表并生成这些键值对，或者..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:317
+#: ../../docs/getting_started/step_by_step/resources.rst:323
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -407,7 +406,7 @@ msgstr ""
 "在编辑器中设计可视化，并创建一个简单的插件，可在当您打开这些类型的 ``资源"
 "（Resources）`` 时，将其添加到属性检查器中。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:320
+#: ../../docs/getting_started/step_by_step/resources.rst:326
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -415,7 +414,7 @@ msgstr ""
 "``CurveTables`` 是相同的东西，除了映射到一个浮点值数组或一个 :ref:`Curve "
 "<class_Curve>`/:ref:`Curve2D <class_Curve2D>` 资源对象之外。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:325
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -429,7 +428,7 @@ msgstr ""
 "类，即脚本的内部类（例如在GDScript中使用 ``class`` 关键字）将不起作用。Godot"
 "将无法正确序列化脚本子类上的自定义属性。"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:331
+#: ../../docs/getting_started/step_by_step/resources.rst:337
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

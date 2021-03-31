@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 msgid ""
 "Installing Homebrew will also fetch the Command Line Tools for Xcode "
 "automatically if you don't have them already."
-msgstr ""
+msgstr "如果你还没有Xcode的命令行工具，安装Homebrew也会自动获取它们。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
 msgid ""
@@ -86,19 +86,21 @@ msgstr "启动终端，进入引擎源代码的根目录。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:35
 msgid "To compile for Intel (x86-64) powered Macs, use::"
-msgstr ""
+msgstr "若要为英特尔（x86-64）架构的Mac编译，请使用："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:39
-msgid ""
-"To compile for Apple Silicon (ARM64) powered Macs, use (only for Godot "
-"3.2.3+)::"
+#, fuzzy
+msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
 msgstr ""
+"若要为Apple Silicon（ARM64）架构的Mac编译，请使用（仅支持Godot 3.2.3+）："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:43
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands and then use ``lipo`` to bundle them together::"
 msgstr ""
+"要在一个 \"Universal 2 \"二进制中支持这两种架构，请运行上述两个命令，然后使用"
+"``lipo``将它们捆绑在一起：："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:47
 #, fuzzy
@@ -117,6 +119,9 @@ msgid ""
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
+"如果你想为自己的Godot构建和官方发布使用单独的编辑器设置，你可以通过在``bin/``"
+"文件夹中创建一个名为``._sc_``或``_sc_```的文件来启用:ref:"
+"`doc_data_paths_self_contained_mode`。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:57
 #, fuzzy
@@ -131,19 +136,19 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:67
 msgid "Compiling a headless/server build"
-msgstr "编译无头/服务器构建"
+msgstr "编译精简和服务器构建"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:69
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
-msgstr ""
+msgstr "要编译一个 *精简* 构建，它提供了编辑器功能，可以自动导出项目，使用::"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:74
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
-msgstr ""
+msgstr "要编译一个经过优化以运行专用游戏的 *服务器* 版本，使用以下构建选项::"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:80
 #, fuzzy

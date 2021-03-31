@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,11 +120,11 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in screen-space while our view on the game world changes."
 msgstr ""
-"答案是 :ref:`CanvasLayer <class_CanvasLayer>` ，这是一个为其所有子项和它们的"
-"孩子们添加单独的2D渲染层的节点。 Viewport的子项默认在图层“0”处绘制，而"
-"CanvasLayer会在任何图层号的图层绘制。 数字较大的图层将被绘制在数字较小的图层"
-"之上。 CanvasLayer也有自己的变换，它不依赖于其他层的变换。 这允许UI在世界移动"
-"时相对屏幕保持固定。"
+"答案是 :ref:`CanvasLayer <class_CanvasLayer>` ，它是一个节点，为所有子代和孙"
+"代添加一个单独的2D渲染层。Viewport的子节点默认在图层 \"0 \" 处绘制，而"
+"CanvasLayer将在任何数字层处绘制。数字较大的图层将绘制在数字较小的图层之上。"
+"CanvasLayers也有自己的变换，不依赖于其他层的变换。这使得当我们对游戏世界的观"
+"察发生变化时，UI可以固定在屏幕空间中。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:50
 msgid ""
@@ -159,5 +159,5 @@ msgid ""
 msgstr ""
 "CanvasLayer 不需要控制节点的绘制顺序。确保节点被正确绘制在“前面”或“后面”的标"
 "准方法是操作场景面板中节点的顺序。也许违反直觉，场景面板中最上面的节点绘制在"
-"视图端口中较低的节点*后面*。二维节点也有控制其绘图顺序的属性(参考 :ref:"
+"视图端口中较低的节点 *后面* 。二维节点也有控制其绘图顺序的属性(参考 :ref:"
 "`Node2D.z_index <class_Node2D_property_z_index>` )。"

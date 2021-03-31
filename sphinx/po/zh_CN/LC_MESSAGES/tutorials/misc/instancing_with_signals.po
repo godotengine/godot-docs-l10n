@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
 msgstr "信号"
 
@@ -37,10 +36,14 @@ msgid ""
 "instancing objects at runtime and may want to place them in an arbitrary "
 "location in the running scene tree."
 msgstr ""
+"信号提供了一种解耦游戏对象的方式，让你避免强行强制固定节点排列。当使用 "
+"``get_parent()`` 时，你会发现可能需要调用信号的一个标志，直接引用一个节点的父"
+"节点意味着你不能轻易地将该节点移动到场景树的另一个位置。当你在运行时实例化对"
+"象，并且可能想把它们放在运行中的场景树的任意位置时，这可能是个问题。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:16
 msgid "Below we'll consider an example of such a situation: firing bullets."
-msgstr ""
+msgstr "下面我们将考虑这种情况的一个例子：发射子弹。"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:19
 msgid "Shooting example"
@@ -61,7 +64,7 @@ msgstr ""
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
 "given velocity:"
-msgstr ""
+msgstr "我们用 ``Area2D`` 来表示子弹，它以给定的速度直线运动:"
 
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:50
 msgid ""

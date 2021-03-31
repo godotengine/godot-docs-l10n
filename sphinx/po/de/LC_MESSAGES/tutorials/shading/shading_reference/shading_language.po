@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -454,7 +454,6 @@ msgstr ""
 "nützlich."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:189
-#, fuzzy
 msgid ""
 "Some architectures (mainly mobile) can benefit significantly from this, but "
 "there are downsides such as the additional overhead of conversion between "
@@ -463,13 +462,13 @@ msgid ""
 "unexpected behavior and it is best to avoid specifying precision unless "
 "necessary."
 msgstr ""
-"Beachten Sie, dass einige Architekturen (hauptsächlich mobile) stark davon "
-"profitieren, aber auch eingeschränkt sind (die Konvertierung zwischen "
-"Präzisionen ist mit Kosten verbunden). Bitte lesen Sie die entsprechende "
-"Dokumentation zur Zielarchitektur um mehr zu erfahren. Um ehrlich zu sein "
-"sind mobile Treiber fehlerhaft. Um Probleme zu vermeiden, sollten Sie "
-"einfache Shader erstellen, ohne die Genauigkeit anzugeben, es sei denn, Sie "
-"müssen dies wirklich tun."
+"Einige Architekturen (hauptsächlich mobile) können stark davon profitieren, "
+"aber es gibt auch Nachteile, beispielsweise den Mehraufwand zur "
+"Konvertierung zwischen Werten unterschiedlicher Genauigkeit. Bitte lesen Sie "
+"die entsprechende Dokumentation zur Zielarchitektur, um mehr zu erfahren. In "
+"vielen Fällen verursachen mobile Treiber inkonsistentes oder unerwartetes "
+"Verhalten. Es ist deshalb am besten, keine Präzision anzugeben, wenn es "
+"nicht unbedingt erforderlich ist."
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:196
 msgid "Arrays"

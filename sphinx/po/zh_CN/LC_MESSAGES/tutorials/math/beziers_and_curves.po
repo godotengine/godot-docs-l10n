@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,9 +114,8 @@ msgid "And to one:"
 msgstr "然后到一个:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:94
-#, fuzzy
 msgid "Here is the full function:"
-msgstr "这里给出了整个函数:"
+msgstr "这里给出了完整的函数:"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:110
 msgid ""
@@ -282,9 +281,9 @@ msgid ""
 "``stages`` of recursion and angle ``tolerance`` arguments). This way, "
 "drawing something based on a curve is easier."
 msgstr ""
-"*曲线*类通过:ref:`二维曲线.细分曲面() <class_Curve2D_method_tessellate>`提供"
-"了这个特性。（其接收可选的递归“阶段”和角度“公差”参数）。这样，根据曲线画东西"
-"就容易多了。"
+"*Curve* 类通过 :ref:`Curve2D.tessellate() <class_Curve2D_method_tessellate>` "
+"函数来提供该功能(函数接收可选的 ``stages`` 递归和角度 ``tolerance`` 参数)。这"
+"样一来，基于曲线画东西就比较容易了。"
 
 #: ../../docs/tutorials/math/beziers_and_curves.rst:189
 msgid "Traversal"

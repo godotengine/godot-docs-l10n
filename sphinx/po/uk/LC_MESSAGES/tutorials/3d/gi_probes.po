@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,39 +110,46 @@ msgid ""
 "editor toolbar to begin the pre-baking process:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:54
+#: ../../docs/tutorials/3d/gi_probes.rst:55
+msgid ""
+"Meshes should have sufficiently thick walls to avoid light leaks (avoid one-"
+"sided walls). For interior levels, enclose your level geometry in a "
+"sufficiently large box and bridge the loops to close the mesh."
+msgstr ""
+
+#: ../../docs/tutorials/3d/gi_probes.rst:60
 #, fuzzy
 msgid "Adding lights"
 msgstr "Додавання освітлення"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:56
+#: ../../docs/tutorials/3d/gi_probes.rst:62
 msgid ""
 "Unless there are materials with emission, ``GIProbe`` does nothing by "
 "default. Lights need to be added to the scene to have an effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:59
+#: ../../docs/tutorials/3d/gi_probes.rst:65
 msgid ""
 "The effect of indirect light can be viewed quickly (it is recommended you "
 "turn off all ambient/sky lighting to tweak this, though, as shown below):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:64
+#: ../../docs/tutorials/3d/gi_probes.rst:70
 msgid ""
 "In some situations, though, indirect light may be too weak. Lights have an "
 "indirect multiplier to tweak this:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:69
+#: ../../docs/tutorials/3d/gi_probes.rst:75
 msgid ""
 "And, as ``GIProbe`` lighting updates in real-time, this effect is immediate:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:74
+#: ../../docs/tutorials/3d/gi_probes.rst:80
 msgid "Reflections"
 msgstr "Відбиття"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:76
+#: ../../docs/tutorials/3d/gi_probes.rst:82
 msgid ""
 "For very metallic materials with low roughness, it's possible to appreciate "
 "voxel reflections. Keep in mind that these have far less detail than "
@@ -150,100 +157,100 @@ msgid ""
 "volumetrically."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:82
+#: ../../docs/tutorials/3d/gi_probes.rst:88
 msgid ""
 "``GIProbe``\\ s can be easily mixed with Reflection Probes and Screen Space "
 "Reflections, as a full 3-stage fallback-chain. This allows to have precise "
 "reflections where needed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:88
+#: ../../docs/tutorials/3d/gi_probes.rst:94
 msgid "Interior vs exterior"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:90
+#: ../../docs/tutorials/3d/gi_probes.rst:96
 msgid ""
 "GI Probes normally allow mixing with lighting from the sky. This can be "
 "disabled when turning on the *Interior* setting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:95
+#: ../../docs/tutorials/3d/gi_probes.rst:101
 msgid ""
 "The difference becomes clear in the image below, where light from the sky "
 "goes from spreading inside to being ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:100
+#: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid ""
 "As complex buildings may mix interiors with exteriors, combining GIProbes "
 "for both parts works well."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:104
+#: ../../docs/tutorials/3d/gi_probes.rst:110
 msgid "Tweaking"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:106
+#: ../../docs/tutorials/3d/gi_probes.rst:112
 msgid "GI Probes support a few parameters for tweaking:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:110
+#: ../../docs/tutorials/3d/gi_probes.rst:116
 msgid ""
 "**Subdiv** Subdivision used for the probe. The default (128) is generally "
 "good for small- to medium-sized areas. Bigger subdivisions use more memory."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:111
+#: ../../docs/tutorials/3d/gi_probes.rst:117
 msgid "**Extents** Size of the probe. Can be tweaked from the gizmo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:112
+#: ../../docs/tutorials/3d/gi_probes.rst:118
 msgid ""
 "**Dynamic Range** Maximum light energy the probe can absorb. Higher values "
 "allow brighter light, but with less color detail."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:113
+#: ../../docs/tutorials/3d/gi_probes.rst:119
 msgid ""
 "**Energy** Multiplier for all the probe. Can be used to make the indirect "
 "light brighter (although it's better to tweak this from the light itself)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:114
+#: ../../docs/tutorials/3d/gi_probes.rst:120
 msgid "**Propagation** How much light propagates through the probe internally."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:115
+#: ../../docs/tutorials/3d/gi_probes.rst:121
 msgid ""
 "**Bias** Value used to avoid self-occlusion when doing voxel cone tracing, "
 "should generally be above 1.0 (1==voxel size)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:116
+#: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid ""
 "**Normal Bias** Alternative type of bias useful for some scenes. Experiment "
 "with this one if regular bias does not work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:117
+#: ../../docs/tutorials/3d/gi_probes.rst:123
 msgid "**Interior** Allows mixing with lighting from the sky."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:118
+#: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid "**Compress** Currently broken. Do not use."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:119
+#: ../../docs/tutorials/3d/gi_probes.rst:125
 msgid ""
 "**Data** Contains the light baked data after baking. If you are saving the "
 "data it should be saved as a .res file."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:122
+#: ../../docs/tutorials/3d/gi_probes.rst:128
 msgid "Quality"
 msgstr "Якість"
 
-#: ../../docs/tutorials/3d/gi_probes.rst:124
+#: ../../docs/tutorials/3d/gi_probes.rst:130
 msgid ""
 "``GIProbe``\\ s are quite demanding. It is possible to use lower quality "
 "voxel cone tracing in exchange for more performance."

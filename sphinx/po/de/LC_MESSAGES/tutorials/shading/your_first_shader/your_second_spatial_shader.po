@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,21 +359,22 @@ msgstr ""
 "Wir können jetzt den Inhalt unserer ``height()`` Funktion durch ``wave()`` "
 "ersetzen."
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:277
-msgid "Using this you get:"
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:278
+#, fuzzy
+msgid "Using this, you get:"
 msgstr "In dieser Einführung lernen Sie:"
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:281
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:282
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "
 "bit. We do this by scaling ``position``."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:289
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:291
 msgid "Now it looks much better."
 msgstr "Nun sieht es viel besser aus."
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:293
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:295
 msgid ""
 "We can do even better if we layer multiple waves on top of each other at "
 "varying frequencies and amplitudes. What this means is that we are going to "
@@ -382,13 +383,13 @@ msgid ""
 "taller (amplitude)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:298
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:300
 msgid ""
 "Here is an example for how you could layer the four waves to achieve nicer "
 "looking waves."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:310
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:312
 msgid ""
 "Note that we add time to two and subtract it from the other two. This makes "
 "the waves move in different directions creating a complex effect. Also note "
@@ -396,13 +397,13 @@ msgid ""
 "``1.0``. This keeps the wave in the 0-1 range."
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:314
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:316
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
 "had to do was add a bit of math!"
 msgstr ""
 
-#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:319
+#: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:321
 msgid ""
 "For more information about Spatial shaders read the :ref:`Shading Language "
 "<doc_shading_language>` doc and the :ref:`Spatial Shaders "

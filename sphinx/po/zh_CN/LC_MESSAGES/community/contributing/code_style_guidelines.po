@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -383,6 +383,8 @@ msgid ""
 "black#the-black-code-style>`__. Blacken your Python changes using `Black "
 "<https://pypi.org/project/black/>`__."
 msgstr ""
+"对于这些，我们遵循“黑色风格指南”<https://github.com/psf/black#the-黑色代码样"
+"式>`\\。使用`Black使Python更改变黑<https://pypi.org/project/black/>`__."
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:255
 #, fuzzy
@@ -393,7 +395,7 @@ msgstr "在本地使用clang-format"
 msgid ""
 "First of all, you will need to install black. Black requires Python 3.6.0+ "
 "to run."
-msgstr ""
+msgstr "首先，您需要安装black。Black需要python3.6.0+才能运行。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:263
 #, fuzzy
@@ -416,13 +418,15 @@ msgstr "您可以使用以下命令手动将clang-format应用于一个或多个
 msgid ""
 "``-l 120`` means that the allowed number of characters per line is 120. This "
 "number was agreed upon by the developers."
-msgstr ""
+msgstr "``-l 120``表示每行允许的字符数为120。这个数字是开发商商定的。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:284
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell."
 msgstr ""
+"该路径可以指向多个文件，可以一个接一个，也可以像典型的unixshell一样使用通配"
+"符。"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:290
 #, fuzzy
@@ -458,3 +462,69 @@ msgid ""
 msgstr ""
 "大多数IDE或代码编辑器都有美化插件，可以配置为自动运行clang-format，例如每次保"
 "存文件时。"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:306
+#, fuzzy
+msgid "Comment style guide"
+msgstr "C# 风格指南"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:308
+msgid ""
+"This comment style guide applies to all programming languages used within "
+"Godot's codebase."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:311
+msgid ""
+"Begin comments with a space character to distinguish them from disabled code."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:312
+msgid ""
+"Use sentence case for comments. Begin comments with an uppercase character "
+"and always end them with a period."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:314
+msgid "Reference variable/function names and values using backticks."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:315
+msgid "Wrap comments to ~100 characters."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:316
+msgid ""
+"You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as adominitions "
+"when needed."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:319
+#: ../../docs/community/contributing/code_style_guidelines.rst:342
+msgid "**Example:**"
+msgstr "**示例:**"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:327
+msgid ""
+"Don't repeat what the code says in a comment. Explain the *why* rather than "
+"*how*."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:329
+#, fuzzy
+msgid "**Bad:**"
+msgstr "**糟糕的**："
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:336
+msgid ""
+"You can use Javadoc-style comments above function or macro definitions. It's "
+"recommended to use Javadoc-style comments *only* for methods which are not "
+"exposed to scripting. This is because exposed methods should be documented "
+"in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:354
+msgid ""
+"For member variables, don't use Javadoc-style comments but use single-line "
+"comments instead:"
+msgstr ""

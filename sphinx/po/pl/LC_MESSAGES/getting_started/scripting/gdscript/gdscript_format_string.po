@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,6 +105,9 @@ msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Tablice mogą być użyte jako klucz, indeks lub zamiennie (zobacz poniższe "
+"przykłady). Kolejność ma znaczenie jedynie gdy tablica jest używana jako "
+"indeks lub zamiennie."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
@@ -136,10 +139,13 @@ msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"Zauważ, że wartości są wkładane w kolejności. Pamiętaj, że wszystkie symbole "
+"zastępcze muszą być zamieniane jednocześnie, więc musi być odpowiednia "
+"liczba wartości."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "Specyfikatory formatowania"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -148,10 +154,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"Istnieją specyfikatory formatowania inne niż ``s`` które mogą być użyte jako "
+"symbole zastępcze. Składają się z jednego lub więcej znaków. Niektóre z nich "
+"występują osobno jak ``s``, inne pojawiają się przed innymi znakami, inne "
+"działają tylko z konkretnymi wartościami lub znakami."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "Typy symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -169,6 +179,7 @@ msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
+"**Prosta** konwersja na String przez tę samą metodę co domniemana konwersja."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
@@ -189,6 +200,8 @@ msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Liczba **całkowita w systemie dziesiętnym**. Oczekuje liczby całkowitej lub "
+"rzeczywistej(zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -199,26 +212,32 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Liczba **całkowita w systemie ósemkowym**. Oczekuje liczby całkowitej lub "
+"rzeczywistej (zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Liczba **całkowita w systemie szesnastkowym z **małymi** literami. Oczekuje "
+"liczby całkowite lub rzeczywistej (zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Liczba **całkowita w systemie szesnastkowym** z **wielkimi** literami. "
+"Oczekuje liczby całkowitej lub rzeczywistej (zostanie zaokrąglona)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
@@ -227,10 +246,12 @@ msgstr "``f``"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
 msgstr ""
+"Liczba **rzeczywista w systemie dziesiętnym**. Oczekuje liczby całkowitej "
+"lub rzeczywistej."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "Modyfikatory symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
@@ -248,7 +269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
-msgstr ""
+msgstr "Liczba całkowita"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
@@ -384,12 +405,12 @@ msgstr "**Wynik**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid "Dictionary"
-msgstr ""
+msgstr "Słownik"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "klucz"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #, fuzzy
@@ -413,7 +434,7 @@ msgstr "Hej, Godette v3.0!"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "indeks"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #, fuzzy
@@ -437,7 +458,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Array"
-msgstr ""
+msgstr "Tablica"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #, fuzzy

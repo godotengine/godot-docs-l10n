@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -435,27 +435,27 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:180
 msgid "<description></description>"
-msgstr "\\ <description></description>"
+msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:181
 msgid "<brief_description></brief_description>"
-msgstr "\\ <brief_description></brief_description>"
+msgstr "<brief_description></brief_description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:182
 msgid "<constant></constant>"
-msgstr "\\ <constant></constant>"
+msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
 msgid "<method></method>"
-msgstr "\\ <method></method>"
+msgstr "<method></method>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:184
 msgid "<member></member>"
-msgstr "\\ <member></member>"
+msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:185
 msgid "<signal></signal>"
-msgstr "\\ <signal></signal>"
+msgstr "<signal></signal>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:187
 msgid ""
@@ -481,18 +481,16 @@ msgstr ""
 "編集できます。検索機能を使用して、クラスを高速に検索します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-#, fuzzy
 msgid "Improve formatting with BBCode style tags"
-msgstr "BBcodeスタイルタグを使用した書式設定を改善する"
+msgstr "BBCodeスタイルタグを使用した書式設定を改善する"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
-#, fuzzy
 msgid ""
 "Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text. Here's the list of available tags:"
 msgstr ""
-"Godotのクラス参照は、BBcodeのようなタグをサポートしています。これらは、テキス"
-"トに素敵な書式を追加します。使用可能なタグの一覧を次に表示します:"
+"Godotのクラスリファレンスは、BBCodeのようなタグをサポートしています。これらに"
+"より、テキストに素敵な書式を追加します。使用可能なタグの一覧です:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Tag"
@@ -512,7 +510,7 @@ msgstr "結果"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "[Class]"
-msgstr "\\ [Class]"
+msgstr "[Class]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:240
 msgid "Link a class"
@@ -615,7 +613,7 @@ msgstr "[signal Node.renamed] を発信します。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
-msgstr "\\ [b] [/b]"
+msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Bold"
@@ -623,15 +621,15 @@ msgstr "太字"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
-msgstr "部分的な [b]bold[/b] テキスト。"
+msgstr "とある [b]bold[/b] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
-msgstr "部分的な **bold** テキスト。"
+msgstr "とある **bold** テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
-msgstr "\\ [i] [/i]"
+msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Italic"
@@ -639,11 +637,11 @@ msgstr "斜体"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
-msgstr "部分的な [i]italic[/i] テキスト。"
+msgstr "とある [i]italic[/i] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
-msgstr "部分的な *italic* テキスト。"
+msgstr "とある *italic* テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
@@ -655,11 +653,11 @@ msgstr "モノスペース"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some [code]monospace[/code] text."
-msgstr "部分的な [code]monospace[/code] テキスト。"
+msgstr "とある [code]monospace[/code] テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "Some ``monospace`` text."
-msgstr "部分的な ``monospace`` テキスト。"
+msgstr "とある ``monospace`` テキスト。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "[kbd] [/kbd]"
@@ -667,15 +665,15 @@ msgstr "\\ [kbd] [/kbd]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Keyboard/mouse shortcut"
-msgstr "キーボードショートカット"
+msgstr "キーボードとマウスのショートカット"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some [kbd]Ctrl + C[/kbd] key."
-msgstr "部分的な [kbd]Ctrl + C[/kbd] キー。"
+msgstr "とある [kbd]Ctrl + C[/kbd] キー。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
-msgstr ""
+msgstr "とある :kbd:`Ctrl + C` キー。"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "[codeblock] [/codeblock]"
@@ -730,7 +728,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:309
 msgid "I don't know what this method does!"
-msgstr "この方法が何をするのかわかりません！"
+msgstr "このメソッドが何をするのかわかりません！"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:311
 msgid ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:4
 msgid "Pull request workflow"
-msgstr ""
+msgstr "Механизм Pull request"
 
 #: ../../docs/community/contributing/pr_workflow.rst:8
 msgid ""
@@ -31,6 +31,19 @@ msgid ""
 "a *pull* from one of their fork's branches to one branch of the original "
 "(often named *upstream*) repository."
 msgstr ""
+"Так называемый \"поток работ PR\" (или \"рабочий процесс PR\"), применяемый "
+"в разработке Godot, является общепринятым для проектов, использующих Git, и "
+"должен быть знаком опытным пользователям и разработчикам свободного ПО. "
+"Основная идея заключается в том, что только небольшое число **коммитов** "
+"(commit, дословно - \"совершать\", \"фиксировать\"; подразумевается "
+"сохранение изменений в коде) записывается непосредственно в главной ветке "
+"исходного проекта. Вместо этого участники создают **форки** (fork, дословно "
+"- \"вилка\"; фактически создаётся полная копия проекта, которую участник "
+"может изменять по своему усмотрению), а затем используют интерфейс GitHub "
+"для запроса на принятие изменений (pull request, дословно - \"запрос на "
+"вытягивание\"; обычно используется англ. термин без перевода и "
+"транслитерации) одной из веток их форка в какую-либо ветку **исходного** "
+"(upstream, дословно - \"восходящий поток\") репозитория."
 
 #: ../../docs/community/contributing/pr_workflow.rst:16
 msgid ""
@@ -40,6 +53,11 @@ msgid ""
 "the core developers, and its commit(s) will become part of the target branch "
 "(usually the *master* branch)."
 msgstr ""
+"Созданный pull request (далее - **PR**) будет рассмотрен другими участниками "
+"проекта, которые могут одобрить его, отклонить или, чаще всего, потребовать "
+"внесения каких-либо изменений. После согласования PR принимается одним из "
+"основных разработчиков, и его коммиты становятся частью целевой ветки "
+"(обычно это ветка ``master``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:22
 msgid ""
@@ -47,10 +65,13 @@ msgid ""
 "associated Git commands. But first, let's have a quick look at the "
 "organization of Godot's Git repository."
 msgstr ""
+"Далее будет рассмотрен пример, демонстрирующий типичный процесс работы с Git "
+"и используемые в нём команды. Но сначала - краткий обзор организации Git-"
+"репозитория Godot."
 
 #: ../../docs/community/contributing/pr_workflow.rst:27
 msgid "Git source repository"
-msgstr ""
+msgstr "Исходный Git-репозиторий"
 
 #: ../../docs/community/contributing/pr_workflow.rst:29
 msgid ""
@@ -58,16 +79,17 @@ msgid ""
 "<https://git-scm.com>`_ code repository together with an embedded issue "
 "tracker and PR system."
 msgstr ""
+"`Репозиторий на GitHub <https://github.com/godotengine/godot>`_ представляет "
+"собой `Git <https://git-scm.com>`_-хранилище кода со встроенной система "
+"отслеживания ошибок и PR-системой."
 
 #: ../../docs/community/contributing/pr_workflow.rst:33
-#, fuzzy
 msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
 msgstr ""
-"В дополнение к этой документации вы также можете посмотреть на различные "
-"`демонстрационные проекты Godot <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Если вы собираетесь участвовать в работе над документацией, её репозиторий "
+"можно найти `здесь <https://github.com/godotengine/godot-docs>`_."
 
 #: ../../docs/community/contributing/pr_workflow.rst:36
 msgid ""
@@ -82,6 +104,17 @@ msgid ""
 "quickly leads to PRs with an unreadable Git history (especially after peer "
 "review)."
 msgstr ""
+"Система управления версиями Git - это инструмент, используемый для "
+"отслеживания последовательных изменений исходного кода; для эффективного "
+"участия в разработке Godot настоятельно рекомендуется изучить основы "
+"командной строки Git. Существует несколько графических интерфейсов для Git, "
+"но они часто порождают вредные привычки в отношении работы с Git и PR, "
+"поэтому мы рекомендуем не использовать их. В частности, не желательно "
+"использовать онлайн-редактор GitHub для внесения изменений в код (это "
+"допускается только для небольших исправлений или для работы с "
+"документацией), поскольку он создаёт отдельные коммиты для каждого изменения "
+"каждого файла, что быстро приводит к PR с нечитаемой историей Git (особенно "
+"после рецензирования)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:46
 msgid ""
@@ -90,10 +123,13 @@ msgid ""
 "workflow. You can read them online on the `Git SCM <https://git-scm.com/book/"
 "en/v2>`_ website."
 msgstr ""
+"Первые разделы книги \"Pro Git\" содержат хорошее введение в философию "
+"инструмента и различные команды, которые вам предстоит освоить. Вы можете "
+"прочитать их онлайн на сайте `Git SCM <https://git-scm.com/book/ru/v2>`_."
 
 #: ../../docs/community/contributing/pr_workflow.rst:51
 msgid "The branches on the Git repository are organized as follows:"
-msgstr ""
+msgstr "Ветки Git-репозитория Godot организованы следующим образом:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:53
 msgid ""
@@ -101,6 +137,9 @@ msgid ""
 "occurs. As a development branch, it can be unstable and is not meant for use "
 "in production. This is where PRs should be done in priority."
 msgstr ""
+"``master`` - это ветка, в которой происходит разработка следующей основной "
+"версии. Она, как правило, нестабильна и не предназначена для использования в "
+"разработке игр. Но именно сюда следует делать PR проводить в первую очередь."
 
 #: ../../docs/community/contributing/pr_workflow.rst:57
 msgid ""
@@ -114,16 +153,28 @@ msgid ""
 "if so make the PR for the ``master`` branch in priority. Release managers "
 "can then cherry-pick the fix to a stable branch if relevant."
 msgstr ""
+"Стабильные ветви именуются согласно их версиям, например ``3.2`` или "
+"``2.1``. Они используются для переноса исправлений и улучшений из ветки "
+"``master`` в текущий поддерживаемый стабильный выпуск (например, 3.2.3 или "
+"2.1.6). Как правило, последняя стабильная ветка поддерживается до выхода "
+"следующей версии (например, ветвь ``3.0`` поддерживалась до выпуска Godot "
+"3.1). Если вы хотите сделать PR для поддерживаемой стабильной ветки, то, "
+"пожалуйста, проверьте сначала, актуальны ли ваши изменения для ветки "
+"``master`` - и если да, то сделайте PR для неё приоритетным. После этого "
+"менеджеры релизов смогут отобрать исправления для стабильной ветви, если это "
+"необходимо."
 
 #: ../../docs/community/contributing/pr_workflow.rst:67
 msgid ""
 "There might occasionally be feature branches, usually meant to be merged "
 "into the ``master`` branch at some time."
 msgstr ""
+"Иногда создаются ветки для разработки отдельных функций - обычно они "
+"сливаются с веткой ``master`` через какое-то время."
 
 #: ../../docs/community/contributing/pr_workflow.rst:71
 msgid "Forking and cloning"
-msgstr ""
+msgstr "Создание форка и клонирование"
 
 #: ../../docs/community/contributing/pr_workflow.rst:73
 msgid ""
@@ -132,12 +183,19 @@ msgid ""
 "GitHub account and to be logged in. In the top right corner of the "
 "repository's GitHub page, you should see the \"Fork\" button as shown below:"
 msgstr ""
+"Первый шаг - это создание форка репозитория `godotengine/godot <https://"
+"github.com/godotengine/godot>`_ на GitHub. Для этого вам потребуется создать "
+"учётную запись GitHub (если у вас её ещё нет) и войти в систему. В правом "
+"верхнем углу страницы вы увидите кнопку \"Fork\", как показано ниже:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:80
 msgid ""
 "Click it, and after a while you should be redirected to your own fork of the "
 "Godot repo, with your GitHub username as namespace:"
 msgstr ""
+"Нажмите на неё, и через небольшой промежуток времени вас перенаправит на "
+"только что созданный форк репозитория Godot с вашим именем пользователя "
+"GitHub в качестве пространства имён:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:85
 msgid ""
@@ -147,34 +205,45 @@ msgid ""
 "Windows or macOS, or install it through your package manager if you're using "
 "Linux."
 msgstr ""
+"Затем вы можете клонировать свой форк, то есть создать локальную копию "
+"**удалённого** репозитория (в терминологии Git - remote origin). Если вы ещё "
+"этого не сделали, установите Git (пользователи Windows или macOS могут "
+"скачать его с сайта `Git SCM <https://git-scm.com/downloads>`_, пользователи "
+"Linux могут воспользоваться менеджером пакетов)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:90
 msgid ""
 "If you are on Windows, open Git Bash to type commands. macOS and Linux users "
 "can use their respective terminals."
 msgstr ""
+"Если вы используете Windows, то вам понадобится Git Bash для ввода команд. "
+"Пользователи macOS и Linux могут использовать системные терминалы."
 
 #: ../../docs/community/contributing/pr_workflow.rst:93
 msgid "To clone your fork from GitHub, use the following command:"
-msgstr ""
+msgstr "Чтобы клонировать ваш форк из GitHub, используйте следующую команду:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:99
 msgid ""
 "In our examples, the \"$\" character denotes the command line prompt on "
 "typical UNIX shells. It is not part of the command and should not be typed."
 msgstr ""
+"В подобных примерах символ \"$\" - приглашение командной строки, типичное "
+"для UNIX-оболочек. Он не является частью команды и вводить его не нужно."
 
 #: ../../docs/community/contributing/pr_workflow.rst:103
 msgid ""
 "After a little while, you should have a ``godot`` directory in your current "
 "working directory. Move into it using the ``cd`` command:"
 msgstr ""
+"Через некоторое время в вашей текущей директории должен появиться каталог "
+"``godot``. Переместитесь в него с помощью команды ``cd``:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:110
 msgid ""
 "We will start by setting up a reference to the original repository that we "
 "forked:"
-msgstr ""
+msgstr "Для начала настройте ссылку на исходный репозиторий:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:117
 msgid ""
@@ -184,6 +253,11 @@ msgid ""
 "remote reference named ``origin``, which points to your fork (``USERNAME/"
 "godot``)."
 msgstr ""
+"Это создаст ссылку с именем ``upstream``, указывающую на исходный "
+"репозиторий ``godotengine/godot``. Она пригодится, когда вы захотите "
+"добавить к себе новые коммиты из его ветки ``master``, чтобы обновить свой "
+"форк. Также у вас есть ещё одна ссылка, с именем ``origin``, которая "
+"указывает на ваш форк (``USERNAME/godot``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:122
 msgid ""
@@ -191,12 +265,18 @@ msgid ""
 "``godot`` folder (which you can move around if you want, the relevant "
 "metadata is hidden in its ``.git`` subfolder)."
 msgstr ""
+"Описанные выше шаги вам нужно выполнить только один раз и повторять их не "
+"придётся, если вы не удалите локальную папку ``godot`` (однако, если хотите, "
+"вы можете перемещать её - соответствующие метаданные скрыты в подкаталоге ``."
+"git``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:126
 msgid ""
 "*Branch it, pull it, code it, stage it, commit, push it, rebase it... "
 "technologic.*"
 msgstr ""
+"*Branch it, pull it, code it, stage it, commit, push it, rebase it... "
+"technologic.*"
 
 #: ../../docs/community/contributing/pr_workflow.rst:129
 msgid ""
@@ -207,6 +287,13 @@ msgid ""
 "search engine when lost, so we will give you the basic commands to know when "
 "working in Git."
 msgstr ""
+"Такой негативный взгляд, стилизованный под песню Technologic группы Daft "
+"Punk, показывает общее представление новичков о рабочем процессе в Git: "
+"множество странных команд, которые нужно выучить или использовать "
+"копированием/вставкой в надежде, что они будут работать так, как ожидалось. "
+"На самом деле это неплохой способ обучения, если вы любопытны и не "
+"стесняетесь задавать вопросы поисковым системам, но на всякий случай мы "
+"собрали здесь основные команды, которые вам понадобятся при работе в Git."
 
 #: ../../docs/community/contributing/pr_workflow.rst:137
 msgid ""
@@ -214,6 +301,9 @@ msgid ""
 "feature in Godot's project manager, which is coded in the ``editor/"
 "project_manager.cpp`` file."
 msgstr ""
+"Далее, в качестве примера, мы предположим, что вы хотите реализовать новую "
+"функцию менеджера проектов Godot, изменив для этого файл ``editor/"
+"project_manager.cpp``."
 
 #: ../../docs/community/contributing/pr_workflow.rst:142
 msgid "Branching"
@@ -225,20 +315,25 @@ msgid ""
 "of your fork (``origin``). To start your own feature development, we will "
 "create a feature branch:"
 msgstr ""
+"По умолчанию после ``git clone`` ваш локальный репозиторий будет переключён "
+"на ветку ``master``. Для разработки новой функции желательно создать новую "
+"ветку:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:156
 msgid "This command is equivalent:"
-msgstr ""
+msgstr "Вместо этих двух команд можно использовать одну:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:163
 msgid "If you want to go back to the ``master`` branch, you'd use:"
-msgstr ""
+msgstr "Если вы захотите вернуться к ветке ``master``, используйте:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:169
 msgid ""
 "You can see which branch you are currently on with the ``git branch`` "
 "command:"
 msgstr ""
+"Список веток в репозитории можно просмотреть командной ``git branch``, при "
+"этом ветка, в которой вы сейчас находитесь, будет отмечена звёздочкой:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:179
 msgid ""
@@ -247,10 +342,14 @@ msgid ""
 "Alternatively, you can specify a custom base branch after the new branch's "
 "name:"
 msgstr ""
+"Не забывайте переключаться на ветку ``master`` перед созданием новой, так "
+"как именно текущая ветка используется для создаваемой в качестве основы. В "
+"качестве альтернативы вы можете указать имя ветки, которую необходимо "
+"принять за основу, после имени создаваемой ветки:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:188
 msgid "Updating your branch"
-msgstr ""
+msgstr "Обновление вашей ветки"
 
 #: ../../docs/community/contributing/pr_workflow.rst:190
 msgid ""
@@ -260,6 +359,11 @@ msgid ""
 "``master`` branch: pull requests from other contributors would have been "
 "merged in the meantime."
 msgstr ""
+"Это вряд ли понадобится сразу после того, как вы выполните описанные выше "
+"действия. Однако позже, в процессе работы или непосредственно перед PR, вы "
+"можете заметить, что ветка ``master`` вашего форка на несколько коммитов "
+"отстаёт от ветки ``master`` исходного репозитория: это коммиты от других "
+"участников, чьи запросы были приняты за прошедшее время."
 
 #: ../../docs/community/contributing/pr_workflow.rst:196
 msgid ""
@@ -267,6 +371,9 @@ msgid ""
 "current upstream ``master`` branch, you will have to update your branch by "
 "*pulling* the upstream branch."
 msgstr ""
+"Чтобы гарантировать отсутствие конфликтов между разрабатываемой функцией и "
+"веткой ``master`` исходного репозитория, вам необходимо обновить свою ветку, "
+"включив в неё новые коммиты."
 
 #: ../../docs/community/contributing/pr_workflow.rst:204
 msgid ""
@@ -276,6 +383,11 @@ msgid ""
 "your own commits will be the only difference with the upstream ``master`` "
 "branch."
 msgstr ""
+"Аргумент ``--rebase`` гарантирует, что любые локальные коммиты, которые вы "
+"сделали, будут повторно применены поверх принимаемых изменений, что обычно и "
+"требуется в PR-процессе. Таким образом, когда вы отправляете PR, ваши "
+"собственные коммиты будут единственным отличием от текущего состояния "
+"исходной ветки ``master``."
 
 #: ../../docs/community/contributing/pr_workflow.rst:209
 msgid ""
@@ -287,6 +399,14 @@ msgid ""
 "operation if later commits have conflicts too, until the rebase operation "
 "completes."
 msgstr ""
+"Во время слияния могут возникнуть конфликты, если код, который вы изменяли, "
+"за это время был изменён и в исходном репозитории. В таких случаях Git будет "
+"приостанавливать процесс и предлагать вам решить конфликт. Вы можете сделать "
+"это с помощью любого текстового редактора, затем добавить изменения в "
+"процесс (позже об этом будет сказано подробнее) и продолжить обновление с "
+"помощью команды ``git rebase --continue``. Повторяйте эту операцию, если "
+"последующие коммиты также будут иметь конфликты, пока процесс обновления не "
+"завершится."
 
 #: ../../docs/community/contributing/pr_workflow.rst:216
 msgid ""
@@ -295,6 +415,11 @@ msgid ""
 "rebase --abort``. You will then be back to the original state of your branch "
 "before calling ``git pull --rebase``."
 msgstr ""
+"Если во время обновления вы перестали понимать, что происходит, и "
+"запаниковали (не волнуйтесь, мы все делаем так первые несколько раз), вы "
+"можете прервать процесс с помощью команды ``git rebase --abort``. После "
+"этого вы вернётесь в исходное состояние своей ветки (до вызова ``git pull --"
+"rebase``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:221
 msgid ""
@@ -302,6 +427,10 @@ msgid ""
 "commit which tells Git what to make of the two distinct branches. If any "
 "conflicts arise, they would be resolved all at once via this merge commit."
 msgstr ""
+"Если вы опустите аргумент ``--rebase``, то у вас получится коммит слияния "
+"(merge в терминологии Git), который собирает историю из двух разных веток в "
+"одно целое. Если при этом возникнут какие-либо конфликты, они все будут "
+"разрешены в пределах этого коммита."
 
 #: ../../docs/community/contributing/pr_workflow.rst:225
 msgid ""
@@ -309,6 +438,9 @@ msgid ""
 "merge commits within PRs are frowned upon in our PR workflow. We only use "
 "them when merging PRs into the upstream branch."
 msgstr ""
+"Хотя это допустимое действие и поведение ``git pull`` по умолчанию, оно не "
+"одобряется в нашем сообществе. Мы используем слияние только при принятии PR "
+"в исходный репозиторий."
 
 #: ../../docs/community/contributing/pr_workflow.rst:229
 msgid ""
@@ -319,6 +451,13 @@ msgid ""
 "the first time, and we're happy to use it to ensure that changes are easy to "
 "review and understand long after they have been merged."
 msgstr ""
+"Согласно нашей философии, PR должен представлять собой заключительный этап "
+"изменений, внесённых в кодовую базу, и нас не интересуют ошибки и "
+"исправления, которые, возможно, были сделаны на промежуточных этапах, до "
+"слияния. Git даёт нам отличные инструменты, чтобы \"переписать историю\", "
+"сделать вид, что всё получилось правильно с первого раза, и мы с "
+"удовольствием используем это, чтобы гарантировать, что изменения будет "
+"читаемы и понятны ещё долгое время после того, как они были внесены."
 
 #: ../../docs/community/contributing/pr_workflow.rst:236
 msgid ""
@@ -327,6 +466,11 @@ msgid ""
 "option is to use an *interactive rebase* on the upstream branch. See the :"
 "ref:`dedicated section <doc_pr_workflow_rebase>` for instructions."
 msgstr ""
+"Если вы всё же создали коммит слияния без использования ``--rebase`` или "
+"внесли какие-либо другие изменения, которые привели к нежелательной истории, "
+"лучшим вариантом будет воспользоваться интерактивным режимом команды rebase. "
+"Подробные инструкции смотрите в :ref:`соответствующем разделе "
+"<doc_pr_workflow_rebase>`."
 
 #: ../../docs/community/contributing/pr_workflow.rst:241
 msgid ""
@@ -334,6 +478,11 @@ msgid ""
 "branch, you can do so with ``git reset --hard <commit ID>`` or ``git reset --"
 "hard <remote>/<branch>`` (e.g. ``git reset --hard upstream/master``)."
 msgstr ""
+"Если в какой-то момент вы захотите откатить вашу локальную ветку до "
+"определённого коммита или до какой-либо ветки удалённого репозитория, то вы "
+"можете сделать это с помощью команд ``git reset --hard <commit ID>`` или "
+"``git reset --hard <remote>/<branch>`` (например, ``git reset --hard "
+"upstream/master``)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:245
 msgid ""
@@ -343,16 +492,23 @@ msgid ""
 "restore, and use it as argument of ``git reset --hard`` to go back to that "
 "state."
 msgstr ""
+"Имейте в виду, что такой сброс приведёт к удалению любых изменений в этой "
+"ветке. Если вы когда-нибудь сделаете коммит по ошибке - используйте команду "
+"``git reflog``, чтобы найти ID предыдущего коммита, и подставьте его в "
+"качестве аргумента в ``git reset --hard`` для возврата в это состояние."
 
 #: ../../docs/community/contributing/pr_workflow.rst:251
 msgid "Making changes"
-msgstr ""
+msgstr "Внесение изменений"
 
 #: ../../docs/community/contributing/pr_workflow.rst:253
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
 "cpp`` file with your usual development environment (text editor, IDE, etc.)."
 msgstr ""
+"Файл ``editor/project_manager.cpp`` вы можете редактировать любым удобным "
+"для вас способом (в простом текстовом редакторе, в привычной IDE, или как-то "
+"ещё)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:257
 msgid ""
@@ -363,44 +519,59 @@ msgid ""
 "you need to *stage* them with the ``git add`` command, and then to commit "
 "them with the ``git commit`` command."
 msgstr ""
+"Однако по умолчанию изменённый файл не **проиндексирован**. Индексация "
+"позволяет разграничить изменения, которые будут включены в следующий коммит, "
+"и изменения, которые следует игнорировать. Чтобы перенести изменённый файл "
+"из вашего рабочего каталога в репозиторий Git, вам нужно проиндексировать "
+"его с помощью команды ``git add``, а затем зафиксировать изменения с помощью "
+"команды ``git commit``."
 
 #: ../../docs/community/contributing/pr_workflow.rst:264
 msgid ""
 "There are various commands you should know to review your current work, "
 "before staging it, while it is staged, and after it has been committed."
 msgstr ""
+"Вот некоторые команды, которые понадобятся вам, чтобы отслеживать и "
+"переключать состояния ваших изменений:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:267
 msgid ""
 "``git diff`` will show you the current unstaged changes, i.e. the "
 "differences between your working directory and the staging area."
 msgstr ""
+"``git diff`` покажет не проиндексированные изменения, то есть разницу между "
+"вашим рабочим каталогом и тем, что попадёт в следующий коммит;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:269
 msgid ""
 "``git checkout -- <files>`` will undo the unstaged changes to the given "
 "files."
 msgstr ""
+"``git checkout -- <files>`` отменит не проиндексированные изменения в "
+"указанных файлах;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:271
 msgid "``git add <files>`` will *stage* the changes on the listed files."
 msgstr ""
+"``git add <files>`` проиндексирует указанные файлы, подготовив их к коммиту;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:272
 msgid ""
 "``git diff --staged`` will show the current staged changes, i.e. the "
 "differences between the staging area and the last commit."
 msgstr ""
+"``git diff --staged`` покажет проиндексированные изменения, то есть разницу "
+"между предыдущим коммитом и тем, что попадёт в следующий;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:274
 msgid "``git reset HEAD <files>`` will *unstage* changes to the listed files."
-msgstr ""
+msgstr "``git reset HEAD <files>`` отменит индексацию указанных файлов;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:275
 msgid ""
 "``git status`` will show you what are the currently staged and unstaged "
 "modifications."
-msgstr ""
+msgstr "``git status`` покажет, какие изменения проиндексированы, а какие нет;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:277
 msgid ""
@@ -410,6 +581,12 @@ msgid ""
 "you write a commit log. You can use ``git commit -m \"Cool commit log\"`` to "
 "write the log directly."
 msgstr ""
+"``git commit`` зафиксирует проиндексированные изменения, создав коммит; при "
+"этом откроется текстовый редактор (вы можете задать предпочтительный "
+"редактор в переменной окружения ``GIT_EDITOR`` или в параметре ``core."
+"editor`` в настройках Git), чтобы вы могли оставить примечания в журнале "
+"коммитов; вы также можете использовать ``git commit -m \"Cool commit log\"`` "
+"для записи в журнал напрямую;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:282
 msgid ""
@@ -417,28 +594,39 @@ msgid ""
 "staged changes (added with ``git add``). This is the best option if you want "
 "to fix a mistake in the last commit (bug, typo, style issue, etc.)."
 msgstr ""
+"``git commit --amend`` позволяет вам внести текущие проиндексированные (с "
+"помощью ``git add``) изменения в предыдущий коммит; это может пригодится, "
+"если вам нужно что-то исправить в предыдущем коммите (опечатку, "
+"стилистическую или иную мелкую ошибку);"
 
 #: ../../docs/community/contributing/pr_workflow.rst:285
 msgid ""
 "``git log`` will show you the last commits of your current branch. If you "
 "did local commits, they should be shown at the top."
 msgstr ""
+"``git log`` покажет вам последние коммиты в текущей ветке; если вы делали "
+"локальные коммиты, они будут наверху списка;"
 
 #: ../../docs/community/contributing/pr_workflow.rst:287
 msgid ""
 "``git show`` will show you the changes of the last commit. You can also "
 "specify a commit hash to see the changes for that commit."
 msgstr ""
+"``git show`` покажет изменения, внесённые последним коммитом; также вы "
+"можете указать в качестве аргумента хеш коммита, изменения которого хотите "
+"увидеть."
 
 #: ../../docs/community/contributing/pr_workflow.rst:290
 msgid ""
 "That's a lot to memorize! Don't worry, just check this cheat sheet when you "
 "need to make changes, and learn by doing."
 msgstr ""
+"Это всё нужно запомнить! Не волнуйтесь, просто подглядывайте в эту "
+"шпаргалку, когда вам будет нужно внести изменения, и учитесь на практике."
 
 #: ../../docs/community/contributing/pr_workflow.rst:293
 msgid "Here's how the shell history could look like on our example:"
-msgstr ""
+msgstr "Вот так может выглядеть история командной строки в нашем примере:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:325
 msgid ""
@@ -446,10 +634,13 @@ msgid ""
 "branch which were not in the ``master`` branch. They are still only local "
 "though, the remote fork does not know about them, nor does the upstream repo."
 msgstr ""
+"Это добавит к ветке ``better-project-manager`` два новых коммита, которых "
+"нет в ветке ``master``. Однако эти изменения всё ещё являются локальными: ни "
+"ваш удалённый форк, ни исходный репозиторий пока не знают о них."
 
 #: ../../docs/community/contributing/pr_workflow.rst:330
 msgid "Pushing changes to a remote"
-msgstr ""
+msgstr "Отправка изменений на GitHub"
 
 #: ../../docs/community/contributing/pr_workflow.rst:332
 msgid ""
@@ -458,6 +649,11 @@ msgid ""
 "the remote repository directly). You need to *push* the new commits to a "
 "remote branch to share them with the world. The syntax for this is:"
 msgstr ""
+"Тут вам пригодится команда ``git push``. Git всегда выполняет коммит в "
+"локальном репозитории (в отличие от Subversion, где коммит изменяет "
+"удалённый репозиторий напрямую). Вам нужно вручную отправлять новые коммиты "
+"в удалённый репозиторий, если вы хотите сделать их доступными для всех. Вот "
+"синтаксис этой команды:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:341
 msgid ""
@@ -465,6 +661,9 @@ msgid ""
 "same name as the local branch, which is our case in this example, so we will "
 "do:"
 msgstr ""
+"Часть в квадратных скобках, задающую имя ветки в удалённом репозитории, "
+"можно опустить, если вы хотите, чтобы удалённая ветка имела то же имя, что и "
+"локальная; в нашем примере мы так и сделаем:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:349
 msgid ""
@@ -472,10 +671,14 @@ msgid ""
 "sent to your remote. If you check the fork's page on GitHub, you should see "
 "a new branch with your added commits."
 msgstr ""
+"Git запросит у вас имя пользователя и пароль, после чего изменения в "
+"указанной ветке будут отправлены на ваш удалённый репозиторий. Если вы "
+"проверите страницу вашего форка на GitHub, то увидите новую ветку с "
+"добавленными коммитами."
 
 #: ../../docs/community/contributing/pr_workflow.rst:354
 msgid "Issuing a pull request"
-msgstr ""
+msgstr "Запрос на принятие изменений"
 
 #: ../../docs/community/contributing/pr_workflow.rst:356
 msgid ""
@@ -484,6 +687,11 @@ msgid ""
 "some commits behind, if your ``master`` branch was out of sync with the "
 "upstream ``master`` branch)."
 msgstr ""
+"После того как изменения будут загружены на GitHub, на странице репозитория "
+"вы увидите строку \"This branch is 2 commits ahead of godotengine:master"
+"\" (\"Эта ветка опережает godotengine:master на 2 коммита\"). Также там "
+"может быть указано отставание на несколько коммитов, если ваша ветка не была "
+"синхронизирована с веткой ``master`` исходного репозитория."
 
 #: ../../docs/community/contributing/pr_workflow.rst:363
 msgid ""
@@ -494,6 +702,12 @@ msgid ""
 "conflicts), don't create the PR, something went wrong. Go to IRC and ask for "
 "support :)"
 msgstr ""
+"Правее этой строки есть кнопка \"Pull request\". Нажав на неё, вы откроете "
+"форму, которая позволит вам создать запрос на принятие изменений в исходный "
+"репозиторий ``godotengine/godot``. Там должны быть указаны ваши коммиты и "
+"статус \"Able to merge\" (\"Возможность слияния\"). Если это не так (к "
+"примеру, коммитов больше, чем вы делали, или указаны конфликты слияния), "
+"лучше не создавайте PR, а зайдите в IRC и попросите поддержки."
 
 #: ../../docs/community/contributing/pr_workflow.rst:369
 msgid ""
@@ -502,10 +716,15 @@ msgid ""
 "relevant, to showcase what your work implements. Click \"Create a pull "
 "request\", and tadaa!"
 msgstr ""
+"Используйте для PR короткий и ясный заголовок, а необходимые детали укажите "
+"в поле комментариев. Также вы можете перетащить туда скриншоты, GIF-файлы "
+"или архивы, если это необходимо для пояснения того, что именно реализовано в "
+"ваших изменениях. После этого нажмите кнопку \"Create a pull request\" - и "
+"запрос будет отправлен."
 
 #: ../../docs/community/contributing/pr_workflow.rst:375
 msgid "Modifying a pull request"
-msgstr ""
+msgstr "Изменение PR"
 
 #: ../../docs/community/contributing/pr_workflow.rst:377
 msgid ""
@@ -513,6 +732,10 @@ msgid ""
 "changes to your yet-unmerged PR, either because contributors requested them, "
 "or because you found issues yourself while testing."
 msgstr ""
+"Пока ваш PR ещё не принят и рассматривается другими участниками, вам часто "
+"придётся редактировать его - либо когда вас кто-то попросит внести те или "
+"иные правки, либо когда вы сами обнаружите проблемы во время очередного "
+"тестирования."
 
 #: ../../docs/community/contributing/pr_workflow.rst:381
 msgid ""
@@ -520,6 +743,10 @@ msgid ""
 "branch you made the pull request from. You can e.g. make a new commit on "
 "that branch, push it to your fork, and the PR will be updated automatically:"
 msgstr ""
+"К счастью, вы можете изменить PR просто изменяя ветку, из которой он был "
+"сделан. То есть вы можете сделать новый коммит в свою локальную ветку, "
+"отправить изменения в ту же ветку удалённого репозитория, что и раньше - и "
+"PR будет автоматически обновлён:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:396
 msgid ""
@@ -531,10 +758,17 @@ msgid ""
 "a new commit, considering using ``git commit --amend`` to amend the previous "
 "commit with your fixes. The above example would then become:"
 msgstr ""
+"Однако имейте в виду, что в нашем рабочем процессе мы предпочитаем коммиты, "
+"переводящие кодовую базу из одного функционального состояния в другое, без "
+"промежуточных этапов, исправляющих ошибки в вашем собственном коде. В "
+"большинстве случаев мы предпочитаем один коммит в PR (если только нет веской "
+"причины разделять изменения), поэтому вместо создания нового коммита лучше "
+"использовать ``git commit --amend`` для внесения правок в ваш предыдущий. "
+"Тогда приведенный выше пример будет выглядеть так:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:426
 msgid "The interactive rebase"
-msgstr ""
+msgstr "Интерактивный режим rebase"
 
 #: ../../docs/community/contributing/pr_workflow.rst:428
 msgid ""
@@ -544,6 +778,11 @@ msgid ""
 "request of your to *rebase* your branch to *squash* some or all of the "
 "commits into one."
 msgstr ""
+"Если вы невнимательно следовали описанным выше инструкциям (или не знали о "
+"нашем рабочем процессе и советах по использованию Git) и вместо одного "
+"исправленного коммита создали несколько последовательных, рецензенты могут "
+"попросить вас перенастроить вашу ветку так, чтобы все коммиты или только "
+"часть из них была объединена в один."
 
 #: ../../docs/community/contributing/pr_workflow.rst:433
 msgid ""
@@ -552,6 +791,10 @@ msgid ""
 "reader who would want to know what happened in the Godot codebase, or when "
 "and how a given file was last modified."
 msgstr ""
+"Дело в том, что коммиты, сделанные поверх основного для исправления в нём "
+"опечаток и ошибок, не имеют отношения к будущему читателю журнала изменений, "
+"который просто хотел бы знать, что произошло в кодовой базе Godot или когда "
+"и как данный файл был изменён в последний раз."
 
 #: ../../docs/community/contributing/pr_workflow.rst:438
 msgid ""
@@ -561,6 +804,11 @@ msgid ""
 "in your fork, you can do whatever you want, and everything is allowed to get "
 "neat PRs :)"
 msgstr ""
+"Чтобы привести журнал изменений в порядок и собрать разрозненные коммиты в "
+"один, вам придётся \"переписать историю\". В других источниках вы можете "
+"прочесть, что это плохая практика - и это справедливо, когда речь идёт об "
+"исходном репозитории. Но в своём форке вы можете делать всё что угодно, и "
+"это позволяет получить аккуратный PR."
 
 #: ../../docs/community/contributing/pr_workflow.rst:443
 msgid ""
@@ -569,6 +817,10 @@ msgid ""
 "modify all commits between that commit/branch and the last one in your "
 "working branch, the so-called ``HEAD``."
 msgstr ""
+"Для этого применяется интерактивный режим команды rebase: ``git rebase -i``. "
+"В качестве аргумента используется ID коммита или имя ветки, что позволяет "
+"вам редактировать все коммиты между указанной точкой и текущим состоянием "
+"вашей рабочей ветки, называемым ``HEAD``."
 
 #: ../../docs/community/contributing/pr_workflow.rst:448
 msgid ""
@@ -576,6 +828,10 @@ msgid ""
 "in between, the most common and convenient workflow involves rebasing on the "
 "*upstream ``master`` branch*, which you can do with:"
 msgstr ""
+"Хотя вы можете передать в ``git rebase -i`` ID любого коммита и просмотреть "
+"всё, что происходило после него, наиболее распространённый и удобный рабочий "
+"процесс представляет собой редактирование изменений от ветки ``master`` "
+"исходного репозитория, то есть:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:456
 msgid ""
@@ -584,6 +840,10 @@ msgid ""
 "branch which has been pulled from the ``upstream`` remote's ``master`` "
 "branch."
 msgstr ""
+"Ссылаться на ветки в Git немного сложно из-за различия между удалёнными и "
+"локальными ветками. Здесь ``Upstream/master`` (с символом \"/\") - это "
+"локальная ветка, которая была извлечена из ветки ``master`` исходного "
+"репозитория."
 
 #: ../../docs/community/contributing/pr_workflow.rst:461
 msgid ""
@@ -596,6 +856,15 @@ msgid ""
 "your local ``master`` branch... yes it's confusing, but you'll become "
 "familiar with this little by little)."
 msgstr ""
+"Интерактивный режим rebase работает только с локальными ветками, поэтому "
+"здесь важен символ \"/\". Так как исходный репозиторий часто изменяется, "
+"ваша локальная ветка ``Upstream/master`` может оказаться устаревшей - во "
+"избежание этого вам необходимо обновить её с помощью ``git fetch Upstream "
+"master``. В отличие от команды ``git pull --rebase Upstream master``, "
+"которая будет обновлять вашу текущую ветку, ``fetch`` обновит только ссылку "
+"``Upstream/master`` (которая отличается от вашей локальной ветки "
+"``master``... да, это сбивает с толку, но постепенно вы разберётесь и "
+"привыкните)."
 
 #: ../../docs/community/contributing/pr_workflow.rst:471
 msgid ""
@@ -603,6 +872,11 @@ msgid ""
 "scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor>__` to "
 "configure your favorite one) with something which may look like this:"
 msgstr ""
+"Далее откроется текстовый редактор (по умолчанию - ``vi``, для изменения "
+"этой настройки см. `Конфигурация Git <https://git-scm.com/book/ru/v2/%D0%9D"
+"%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-Git-%D0%9A%D0%BE%D0%BD"
+"%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-"
+"Git#_core_editor>`__), в котором будет примерно следующее:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:480
 msgid ""
@@ -614,6 +888,13 @@ msgid ""
 "commit. In our example, we are not interested in keeping the log of the "
 "\"Fix a typo\" commit, so we use:"
 msgstr ""
+"Также редактор покажет инструкции относительно того, что вы можете делать с "
+"этими коммитами. В частности, там будет написано, что \"pick\" нужен, чтобы "
+"оставить коммит без изменений, а \"squash\" и \"fixup\" применяются для "
+"слияния коммита с предыдущим. Разница между \"squash\" и \"fixup\" "
+"заключается в том, что \"fixup\" при слиянии отбросит примечания текущего "
+"коммита. Так как в нашем примере нет необходимости сохранять в журнале "
+"коммитов фразу \"Fix a typo ...\", финальный текст будет следующий:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:493
 msgid ""
@@ -622,6 +903,10 @@ msgid ""
 "should now confirm that you have only one commit with the changes from both "
 "previous commits."
 msgstr ""
+"После сохранения и выхода из редактора произойдёт обновление. Второй коммит "
+"будет объединён с первым, а ``git log`` и ``git show`` теперь должны "
+"подтвердить, что у вас есть только один коммит, включающий в себя все "
+"необходимые изменения."
 
 #: ../../docs/community/contributing/pr_workflow.rst:498
 msgid ""
@@ -630,6 +915,10 @@ msgid ""
 "therefore got a new commit hash. If you try to push to your remote branch, "
 "it will raise an error:"
 msgstr ""
+"Однако вы переписали историю только локально, и теперь ваши локальная и "
+"удалённая ветки конфликтуют. Коммит 1b4aad7 в приведённом выше примере был "
+"изменён, получив при этом новый хеш. Если вы теперь попытаетесь отправить "
+"изменения в свой удаленный репозиторий, это вызовет ошибку:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:512
 msgid ""
@@ -637,6 +926,11 @@ msgid ""
 "override remote content. But that's actually what we want to do here, so we "
 "will have to *force* it:"
 msgstr ""
+"На самом деле это нормально - обычно Git не позволяет отправлять изменения, "
+"переопределяющие содержимое удалённого репозитория, чтобы вы случайно не "
+"изменили историю других участников. Но поскольку в данном случае вы меняете "
+"именно свою историю и делаете это осознанно, можно \"форсировать\" "
+"выполнение команды:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:520
 msgid ""
@@ -644,10 +938,14 @@ msgid ""
 "locally (so make sure that's what you wanted, using ``git log``). This will "
 "also update the PR accordingly."
 msgstr ""
+"Теперь Git просто заменит вашу удалённую ветку на обновлённую локальную "
+"(поэтому используйте опцию ``--force`` с осторожностью, предварительно "
+"проверяя отправляемые изменения с помощью ``git log``). Открытый из этой "
+"ветки PR так же будет обновлён автоматически."
 
 #: ../../docs/community/contributing/pr_workflow.rst:525
 msgid "Deleting a Git branch"
-msgstr ""
+msgstr "Удаление ветки в Git"
 
 #: ../../docs/community/contributing/pr_workflow.rst:527
 msgid ""
@@ -656,23 +954,38 @@ msgid ""
 "your branch, but it's good practice to do so. You'll need to do this twice, "
 "once for the local branch and another for the remote branch on GitHub."
 msgstr ""
+"После того как ваш PR будет принят и изменения окажутся в исходном "
+"репозитории, есть ещё один пункт, который желательно выполнить: удалить "
+"ветку, созданную для этого PR. Если вы этого не сделаете, технически это не "
+"будет ошибкой, но поддерживать свой репозиторий в порядке и не захламлять "
+"его - хорошая практика. Вам нужно будет сделать это дважды: для локального и "
+"для удалённого репозиториев."
 
 #: ../../docs/community/contributing/pr_workflow.rst:532
 msgid "To delete our better project manager branch locally, use this command:"
 msgstr ""
+"Чтобы удалить локальную ветку ``better-project-manager``, используйте "
+"следующую команду:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:538
 msgid ""
 "Alternatively, if the branch hadn't been merged yet and we wanted to delete "
 "it anyway, instead of ``-d`` you would use ``-D``."
 msgstr ""
+"При необходимости удалить ветку до слияния вместо опции ``-d`` нужно "
+"использовать ``-D``."
 
 #: ../../docs/community/contributing/pr_workflow.rst:541
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""
+"После этого используйте следующую команду, чтобы удалить эту же ветку из "
+"удалённого репозитория:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:547
 msgid ""
 "You can also delete the remote branch from the GitHub PR itself, a button "
 "should appear once it has been merged or closed."
 msgstr ""
+"Также вы можете сделать это, используя интерфейс GitHub - соответствующая "
+"кнопка должна появиться на странице PR, после того как он будет принят или "
+"закрыт."

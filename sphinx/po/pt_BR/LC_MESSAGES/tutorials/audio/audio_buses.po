@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,6 +153,12 @@ msgid ""
 "audio bus has a VU meter (the bars that light up when sound is played) which "
 "indicates the amplitude of the signal passing through."
 msgstr ""
+"Um *barramento de áudio* (também chamado de *canal de áudio*) pode ser "
+"considerado um lugar por onde o áudio é canalizado no caminho para a "
+"reprodução nos alto-falantes de um dispositivo. Dados de áudio podem ser "
+"*modificados* e *redirecionados* por um barramento de áudio. Um barramento "
+"de áudio possui um medidor VU (as barras que se iluminam quando o som é "
+"reproduzido) que indica a amplitude da passagem do sinal."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:60
 msgid ""
@@ -179,42 +185,52 @@ msgid ""
 "In the above image, the output of *Bus 2* has been routed to the *Master* "
 "bus."
 msgstr ""
+"Na imagem acima, a saída do *Bus 2* foi encaminhada para o barramento "
+"*Master*."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:73
 msgid "Playback of audio through a bus"
-msgstr ""
+msgstr "Reprodução de áudio através de um barramento"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:75
 msgid ""
 "To test passing audio to a bus, create an AudioStreamPlayer node, load an "
 "AudioStream and select a target bus for playback:"
 msgstr ""
+"Para testar a passagem de áudio para um barramento, crie um nó "
+"AudioStreamPlayer, carregue um AudioStream e selecione um barramento de "
+"destino para reprodução:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:80
 msgid "Finally, toggle the **Playing** property to **On** and sound will flow."
-msgstr ""
+msgstr "Por fim, alterne a propriedade **Playing** para **On** e o som fluirá."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:84
 msgid ""
 "You may also be interested in reading about :ref:`doc_audio_streams` now."
 msgstr ""
+"Você também pode estar interessado em ler sobre :ref:`doc_audio_streams` "
+"agora."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:87
-#, fuzzy
 msgid "Adding effects"
-msgstr "Adicionando Nodes"
+msgstr "Adicionando efeitos"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:89
 msgid ""
 "Audio buses can contain all sorts of effects. These effects modify the sound "
 "in one way or another and are applied in order."
 msgstr ""
+"Barramentos de áudio podem conter todos os tipos de efeitos. Esses efeitos "
+"modificam o som de uma forma ou outra e são aplicados em ordem."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:94
 msgid ""
 "Try them all out to get a sense of how they alter sound. Here follows a "
 "short description of the available effects:"
 msgstr ""
+"Experimente todos pare ter uma noção de como eles alteram o som. Aqui segue "
+"uma breve descrição dos efeitos disponíveis:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:98
 msgid "Amplify"
@@ -226,6 +242,9 @@ msgid ""
 "Setting the level too high can make the sound clip, which is usually "
 "undesirable."
 msgstr ""
+"Amplificar altera a amplitude do sinal. Alguns cuidados precisam ser "
+"tomados. Definir o nível muito alto pode fazer o som clipar, o que "
+"geralmente é indesejável."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:105
 msgid "BandLimit and BandPass"
@@ -267,6 +286,13 @@ msgid ""
 "range of signals with very loud and quiet parts. Reducing the dynamic range "
 "of a signal can make it easier to mix."
 msgstr ""
+"Um compressor de faixa dinâmica atenua automaticamente o nível do sinal de "
+"entrada quando sua amplitude excede um certo limite. O nível de atenuação "
+"aplicado é proporcional a quanto o áudio de entrada excede o limite. O "
+"parâmetro Ratio do compressor controla o grau de atenuação. Um dos "
+"principais usos de um compressor é reduzir a faixa dinâmica de sinais com "
+"partes muito altas e silenciosas. A redução da faixa dinâmica de um sinal "
+"pode facilitar a mixagem."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:132
 msgid "The compressor has many uses. For example:"

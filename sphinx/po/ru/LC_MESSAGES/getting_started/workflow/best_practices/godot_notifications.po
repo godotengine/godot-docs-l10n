@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,11 +48,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:16
 msgid "``_ready()`` : NOTIFICATION_READY"
-msgstr "`` _ready () ``: NOTIFICATION_READY"
+msgstr "``_ready()`` : NOTIFICATION_READY"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:18
 msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
-msgstr "`` _enter_tree () ``: NOTIFICATION_ENTER_TREE"
+msgstr "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:20
 msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
@@ -60,7 +60,7 @@ msgstr "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:22
 msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
-msgstr "`` _process (дельта) ``: NOTIFICATION_PROCESS"
+msgstr "``_process(delta)`` : NOTIFICATION_PROCESS"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:24
 msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
@@ -72,11 +72,11 @@ msgstr "``_input()`` : NOTIFICATION_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:28
 msgid "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
-msgstr "`` _unhandled_input () ``: NOTIFICATION_UNHANDLED_INPUT"
+msgstr "``_unhandled_input()`` : NOTIFICATION_UNHANDLED_INPUT"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:30
 msgid "``_draw()`` : NOTIFICATION_DRAW"
-msgstr "`` _draw () ``: NOTIFICATION_DRAW"
+msgstr "``_draw()`` : NOTIFICATION_DRAW"
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:32
 msgid ""
@@ -310,7 +310,7 @@ msgid ""
 "initialization *and* the number of times the engine calls the setter."
 msgstr ""
 "В результате создание экземпляра сценария вместо сцены повлияет как на "
-"инициализацию *, так и на * количество вызовов установщика механизмом."
+"инициализацию, *так и на* количество вызовов установщика механизмом."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:225
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
@@ -325,12 +325,13 @@ msgid ""
 "will call this method once all child nodes have finished calling theirs. "
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
-"При создании экземпляра сцены, связанной с первой выполненной сценой, Годо "
-"будет создавать экземпляры узлов вниз по дереву (выполняя вызовы _init) и "
-"строить дерево, идущее вниз от корня. Это вызывает каскадирование вызовов "
-"_enter_tree по дереву. Когда дерево готово, листовые узлы вызывают _ready. "
-"Узел вызовет этот метод, как только все дочерние узлы закончат свои вызовы. "
-"Затем это вызывает обратный каскад, возвращающийся к корню дерева."
+"При создании экземпляра сцены, связанной с первой выполненной сценой, Godot "
+"будет создавать экземпляры узлов вниз по дереву (выполняя вызовы ``_init``) "
+"и строить дерево, идущее вниз от корня. Это вызывает каскадирование вызовов "
+"``_enter_tree`` по дереву. Когда дерево готово, листовые узлы вызывают "
+"``_ready``. Узел вызовет этот метод, как только все дочерние узлы закончат "
+"свои вызовы. Затем это вызывает обратный каскад, возвращающийся к корню "
+"дерева."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:234
 msgid ""
@@ -339,8 +340,9 @@ msgid ""
 "Instead, only the ``_init`` and later ``_ready`` calls occur."
 msgstr ""
 "При создании экземпляра сценария или автономной сцены узлы не добавляются в "
-"SceneTree при создании, поэтому обратные вызовы _enter_tree не запускаются. "
-"Вместо этого выполняются только вызовы _init и последующие вызовы _ready."
+"SceneTree при создании, поэтому обратные вызовы ``_enter_tree`` не "
+"запускаются. Вместо этого выполняются только вызовы ``_init`` и последующие "
+"вызовы ``_ready``."
 
 #: ../../docs/getting_started/workflow/best_practices/godot_notifications.rst:238
 msgid ""
@@ -353,7 +355,7 @@ msgid ""
 msgstr ""
 "Если нужно инициировать поведение, которое возникает в качестве родительских "
 "узлов для другого, независимо от того, происходит ли оно как часть "
-"основной / активной сцены или нет, можно использовать уведомление: ref: "
+"основной / активной сцены или нет, можно использовать уведомление :ref:"
 "`PARENTED <class_Node_constant_NOTIFICATION_PARENTED>`. Например, вот "
 "фрагмент, который без сбоев соединяет метод узла с настраиваемым сигналом на "
 "родительском узле. Полезно для узлов, ориентированных на данные, которые "

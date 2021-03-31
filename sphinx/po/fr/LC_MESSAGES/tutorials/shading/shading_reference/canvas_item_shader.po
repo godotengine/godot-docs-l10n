@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -183,6 +183,13 @@ msgid ""
 "``VisualServer.set_shader_time_scale()`` with the desired time scale factor "
 "as parameter (``1.0`` being the default)."
 msgstr ""
+"Temps global depuis le démarrage du moteur, en secondes (toujours positif). "
+"Il est soumis au paramètre de renversement (qui est de 3600 secondes par "
+"défaut). Il n'est pas affecté par :ref:"
+"`time_scale<class_Engine_property_time_scale>`ou la pause, mais vous pouvez "
+"remplacer l'échelle de temps de la variable ``TIME`` en appelant "
+"``VisualServer.set_shader_time_scale()`` avec le facteur d'échelle de temps "
+"souhaité comme paramètre (``1.0`` étant la valeur par défaut)."
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:63
 msgid "Vertex built-ins"

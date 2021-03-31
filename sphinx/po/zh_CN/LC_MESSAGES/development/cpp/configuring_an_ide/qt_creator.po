@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,7 @@ msgstr ""
 msgid ""
 "You can change this configuration later by right-clicking on your project "
 "and selecting the **Edit Files...** option."
-msgstr ""
+msgstr "你可以在之后通过在你的项目上右键选择**编辑文件..**选项来更改此配置。"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:40
 msgid "Finish the import."
@@ -75,6 +75,8 @@ msgid ""
 "Open the ``project_name.includes`` file and add a line containing ``.`` to "
 "it to correctly enable the code completion."
 msgstr ""
+"打开 ``project_name.includes`` 文件，并在其中添加包含 ``.`` 的行，以正确启用"
+"代码自动完成功能。"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:48
 #, fuzzy
@@ -144,6 +146,10 @@ msgid ""
 "``tools`` enabled. You can use ``%{buildDir}`` to reference the project "
 "root, e.g: ``%{buildDir}/bin/godot.x11.opt.tools.64``."
 msgstr ""
+"在 **Executable** 下指定位于 ``<Godot根目录>/bin`` 文件夹中的可执行文件的路"
+"径。文件名取决于你的编译配置，例如： ``godot.x11.tools.64`` 对于64位X11平台，"
+"启用 ``tools`` 。你可以使用 ``%{buildDir}`` 来引用项目根目录，例如： ``"
+"%{buildDir}/bin/godot.x11.opt.tools.64`` 。"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:80
 #, fuzzy
@@ -166,6 +172,8 @@ msgid ""
 "To learn more about command line arguments, refer to the :ref:`command line "
 "tutorial <doc_command_line_tutorial>`."
 msgstr ""
+"要了解更多的命令行参数，请参考 :ref:`命令行教程"
+"<doc_command_line_tutorial>` 。"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:91
 msgid "Code style configuration"
@@ -197,10 +205,9 @@ msgstr ""
 "表符（Tab）策略更改为 *仅制表符（Tabs Only）*。"
 
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
 msgstr ""
-"有关这些渠道的简要概述也可在 `Godot网站 <https://godotengine.org/"
-"community>`_ 上找到。"
+"如果遇到问题，也可在 `Godot社区论坛 <https://godotengine.org/community>`__ 中"
+"寻求帮助。"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,8 @@ msgid ""
 "net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 msgstr ""
 "В этой статье есть ссылки на операции \"[что-то] -время\". Эта терминология "
-"взята из анализа алгоритмов '' Big O Notation <https://rob-bell.net/2009/06/"
-"a-beginners-guide-to-big-o-notation/> `_."
+"взята из анализа алгоритмов `Big O Notation <https://rob-bell.net/2009/06/a-"
+"beginners-guide-to-big-o-notation/>`_."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:15
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:21
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr "Постоянное время, ``O(1)``:\"...не увеличивается.\""
+msgstr "Постоянное время, ``O(1)``: \"...не увеличивается.\""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:22
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
@@ -118,10 +118,10 @@ msgid ""
 "`Object <class_Object>` s."
 msgstr ""
 "Godot хранит все переменные в API сценариев в классе `Variant <https://docs."
-"godotengine.org/en/latest/development/cpp/variant_class.html>` _. Варианты "
-"могут хранить Variant-совместимые структуры данных, такие как: ref: ʻArray "
-"<class_Array> `и: ref:` Dictionary <class_Dictionary> `, а также: ref: "
-"ʻObject <class_Object>` s."
+"godotengine.org/ru/latest/development/cpp/variant_class.html>`_. Варианты "
+"могут хранить Variant-совместимые структуры данных, такие как :ref:`Array "
+"<class_Array>` и :ref:`Dictionary <class_Dictionary>`, а также :ref:`Object "
+"<class_Object>`."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:48
 msgid ""
@@ -129,9 +129,9 @@ msgid ""
 "contents in a contiguous section of memory, i.e. they are in a row adjacent "
 "to each other."
 msgstr ""
-"Годо реализует массив как Vector <Variant>. Движок хранит содержимое массива "
-"в непрерывном разделе памяти, то есть они находятся в строке рядом друг с "
-"другом."
+"Godot реализует массив как ``Vector<Variant>``. Движок хранит содержимое "
+"массива в непрерывном разделе памяти, то есть они находятся в строке рядом "
+"друг с другом."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:53
 msgid ""
@@ -141,11 +141,11 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
-"Для тех, кто не знаком с C ++, вектор - это имя объекта массива в "
-"традиционных библиотеках C ++. Это \"шаблонный\" тип, что означает, что его "
+"Для тех, кто не знаком с C++, вектор - это имя объекта массива в "
+"традиционных библиотеках C++. Это \"шаблонный\" тип, что означает, что его "
 "записи могут содержать только определенный тип (обозначенный угловыми "
-"скобками). Так, например, a: ref: `PoolStringArray <class_PoolStringArray>` "
-"будет чем-то вроде `` Vector <String> ''."
+"скобками). Так, например, a :ref:`PoolStringArray <class_PoolStringArray>` "
+"будет чем-то вроде `` Vector <String>``."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:60
 msgid "Contiguous memory stores imply the following operation performance:"
@@ -155,18 +155,18 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:62
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr "** Итерация: ** Самый быстрый. Отлично подходит для петель."
+msgstr "**Итерация:** Самый быстрый. Отлично подходит для циклов."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:64
 msgid "Op: All it does is increment a counter to get to the next record."
 msgstr ""
-"Op: Все, что он делает, это увеличивает счетчик, чтобы перейти к следующей "
-"записи."
+"Операции: всё, что он делает, это увеличивает счётчик, чтобы перейти к "
+"следующей записи."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:66
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
 msgstr ""
-"** Вставка, стирание, перемещение: ** В зависимости от позиции. Обычно "
+"**Вставка, стирание, перемещение:** В зависимости от позиции. Обычно "
 "медленно."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:68
@@ -174,25 +174,24 @@ msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
 "(to make room / fill space)."
 msgstr ""
-"Вариант: Добавление / удаление / перемещение содержимого включает "
-"перемещение соседних записей (чтобы освободить место / заполнить "
-"пространство)."
+"Операции: добавление/удаление/перемещение содержимого включает перемещение "
+"соседних записей (чтобы освободить место/заполнить пространство)."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:71
 msgid "Fast add/remove *from the end*."
-msgstr "Быстрое добавление / удаление * с конца *."
+msgstr "Быстрое добавление/удаление *с конца*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:73
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr "Медленное добавление / удаление * из произвольной позиции *."
+msgstr "Медленное добавление/удаление *из произвольной позиции*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:75
 msgid "Slowest add/remove *from the front*."
-msgstr "Самое медленное добавление / удаление * спереди *."
+msgstr "Самое медленное добавление/удаление *спереди*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:77
 msgid "If doing many inserts/removals *from the front*, then..."
-msgstr "Если делать много вставок / удалений * спереди *, то ..."
+msgstr "Если делать много вставок/удалений *спереди*, то ..."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:79
 msgid "invert the array."
@@ -200,7 +199,7 @@ msgstr "инвертировать массив."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:81
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr "выполнить цикл, который выполняет изменения массива * в конце *."
+msgstr "выполнить цикл, который выполняет изменения массива *в конце*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:83
 msgid "re-invert the array."
@@ -220,25 +219,24 @@ msgid ""
 "**Get, Set:** Fastest *by position*. Ex. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
-"** Получить, установить: ** Самый быстрый * по позиции *. Ex. может "
-"запрашивать 0-ю, 2-ю, 10-ю запись и т. д., но не может указать, какую запись "
-"вы хотите."
+"**Получить, установить:** Самый быстрый *по позиции*. Может запрашивать 0-ю, "
+"2-ю, 10-ю запись и т. д., но не может указать, какую запись вы хотите."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:91
 msgid "Op: 1 addition operation from array start position up to desired index."
 msgstr ""
-"Операция: 1 операция сложения от начальной позиции массива до желаемого "
+"Операции: 1 операция сложения от начальной позиции массива до желаемого "
 "индекса."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:93
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr "** Найдите: ** Самый медленный. Определяет индекс / позицию значения."
+msgstr "**Поиск:** Самый медленный. Определяет индекс/позицию значения."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:95
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."
 msgstr ""
-"Оп: Необходимо перебирать массив и сравнивать значения, пока не будет "
+"Операции: необходимо перебирать массив и сравнивать значения, пока не будет "
 "найдено совпадение."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:97
@@ -271,14 +269,14 @@ msgid ""
 "becomes too full, it increases to the next power of 2 (so, 16 records, then "
 "32, etc.) and rebuilds the structure."
 msgstr ""
-"Годо реализует словарь как `ʻOrderedHashMap <Variant, Variant>`. Движок "
-"хранит небольшой массив (инициализированный 2 ^ 3 или 8 записями) пар ключ-"
+"Godot реализует словарь как ``OrderedHashMap<Variant, Variant>``. Движок "
+"хранит небольшой массив (инициализированный 2^3 = 8 записями) пар ключ-"
 "значение. Когда кто-то пытается получить доступ к значению, они "
-"предоставляют ему ключ. Затем он * хеширует * ключ, т.е. преобразует его в "
+"предоставляют ему ключ. Затем он *хеширует* ключ, т.е. преобразует его в "
 "число. «Хеш» используется для вычисления индекса в массиве. В качестве "
 "массива OHM затем выполняет быстрый поиск в «таблице» ключей, сопоставленных "
 "со значениями. Когда HashMap становится слишком полным, он увеличивается до "
-"следующей степени 2 (так, 16 записей, затем 32 и т. Д.) И перестраивает "
+"следующей степени 2 (так, 16 записей, затем 32 и т.д.) и перестраивает "
 "структуру."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:113
@@ -320,7 +318,7 @@ msgid ""
 "constantly increases in size quadratically by powers of 2."
 msgstr ""
 "HashMaps сохраняют промежутки неиспользуемой памяти, разбросанные по "
-"таблице, с целью уменьшения хэш-коллизий и поддержания скорости доступа. Вот "
+"таблице, с целью уменьшения хеш-коллизий и поддержания скорости доступа. Вот "
 "почему он постоянно увеличивается в размере квадратично в степени 2."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:132
@@ -333,20 +331,20 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:135
 msgid "**Iterate:** Fast."
-msgstr "** Итерация: ** Быстро."
+msgstr "**Итерация:** Быстро."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:137
 msgid ""
 "Op: Iterate over the map's internal vector of hashes. Return each key. "
 "Afterwards, users then use the key to jump to and return the desired value."
 msgstr ""
-"Операция: Обойти внутренний вектор хешей карты. Верните каждый ключ. После "
+"Операции: обойти внутренний вектор хешей карты. Вернуть каждый ключ. После "
 "этого пользователи используют клавишу, чтобы перейти к желаемому значению и "
 "вернуть его."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:141
 msgid "**Insert, Erase, Move:** Fastest."
-msgstr "** Вставка, стирание, перемещение: ** Самый быстрый."
+msgstr "**Вставка, стирание, перемещение:** Самый быстрый."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:143
 msgid ""
@@ -354,7 +352,7 @@ msgid ""
 "value (array start + offset). Move is two of these (one insert, one erase). "
 "The map must do some maintenance to preserve its capabilities:"
 msgstr ""
-"Op: Хешировать данный ключ. Выполните 1 операцию сложения, чтобы найти "
+"Операции: Хешировать данный ключ. Выполнить 1 операцию сложения, чтобы найти "
 "соответствующее значение (начало массива + смещение). Ход - два таких (одна "
 "вставка, одна стирание). Карта должна быть обновлена, чтобы сохранить свои "
 "возможности:"
@@ -380,22 +378,22 @@ msgstr ""
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:155
 msgid "**Get, Set:** Fastest. Same as a lookup *by key*."
 msgstr ""
-"** Получить, установить: ** Самый быстрый. То же, что и поиск * по ключу *."
+"**Получить, установить:** Самый быстрый. То же, что и поиск *по ключу*."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:157
 msgid "Op: Same as insert/erase/move."
-msgstr "Операция: То же, что и вставка / стирание / перемещение."
+msgstr "Операции: То же, что и вставка/стирание/перемещение."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:159
 msgid "**Find:** Slowest. Identifies the key of a value."
-msgstr "** Найдите: ** Самый медленный. Определяет индекс / позицию значения."
+msgstr "**Поиск:** Самый медленный. Определяет индекс/позицию значения."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:161
 msgid ""
 "Op: Must iterate through records and compare the value until a match is "
 "found."
 msgstr ""
-"Операция: необходимо перебирать записи и сравнивать значение, пока не будет "
+"Операции: необходимо перебирать записи и сравнивать значение, пока не будет "
 "найдено совпадение."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:164
@@ -437,7 +435,7 @@ msgid ""
 msgstr ""
 "Важной деталью здесь является сложность задачи Объекта. Каждый раз, когда он "
 "выполняет один из этих запросов с несколькими источниками, он проходит через "
-"* несколько * итерационных циклов и поисков HashMap. Более того, запросы "
+"*несколько* итерационных циклов и поисков HashMap. Более того, запросы "
 "представляют собой линейные операции, зависящие от размера иерархии "
 "наследования объекта. Если класс, который запрашивает Object (его текущий "
 "класс), ничего не находит, запрос передается следующему базовому классу, "
@@ -455,7 +453,7 @@ msgid ""
 msgstr ""
 "Когда разработчики упоминают, насколько медленным является API сценариев, "
 "они ссылаются именно на эту цепочку запросов. По сравнению с "
-"скомпилированным кодом C ++, в котором приложение точно знает, куда идти, "
+"скомпилированным кодом C++, в котором приложение точно знает, куда идти, "
 "чтобы что-то найти, операции API сценариев неизбежно займут гораздо больше "
 "времени. Они должны найти источник любых соответствующих данных, прежде чем "
 "они смогут попытаться получить к нему доступ."
@@ -474,8 +472,8 @@ msgid ""
 "But, if the C# script calls into an engine class' content or if the script "
 "tries to access something external to it, it will go through this pipeline."
 msgstr ""
-"C # может обрабатывать некоторый контент на более высоких скоростях за счет "
-"более оптимизированного байт-кода. Но если сценарий C # вызывает содержимое "
+"C# может обрабатывать некоторый контент на более высоких скоростях за счет "
+"более оптимизированного байт-кода. Но если сценарий C# вызывает содержимое "
 "класса движка или если сценарий пытается получить доступ к чему-то внешнему "
 "по отношению к нему, он будет проходить через этот конвейер."
 
@@ -487,17 +485,20 @@ msgid ""
 "a manual task. It is at this point that external, non-C++ classes will use "
 "the API to locate them."
 msgstr ""
-"NativeScript C ++ идет еще дальше и по умолчанию сохраняет все внутри. "
-"Вызовы во внешние структуры будут проходить через скриптовый API. В "
-"NativeScript C ++ регистрация методов для предоставления их скриптовому API "
-"выполняется вручную. Именно в этот момент внешние классы, не относящиеся к C "
-"++, будут использовать API для их поиска."
+"NativeScript C++ идет еще дальше и по умолчанию сохраняет все внутри. Вызовы "
+"во внешние структуры будут проходить через скриптовый API. В NativeScript C+"
+"+ регистрация методов для предоставления их скриптовому API выполняется "
+"вручную. Именно в этот момент внешние классы, не относящиеся к C++, будут "
+"использовать API для их поиска."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:206
 msgid ""
 "So, assuming one extends from Reference to create a data structure, like an "
 "Array or Dictionary, why choose an Object over the other two options?"
 msgstr ""
+"Итак, если предположить, что один из них расширяется от ссылки для создания "
+"структуры данных, такой как массив или словарь, зачем выбирать объект вместо "
+"двух других вариантов?"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:209
 msgid ""
@@ -589,6 +590,9 @@ msgid ""
 "feature specific to GDScript and not Godot scripting in general; The "
 "languages prioritizes usability over performance."
 msgstr ""
+"Короткий ответ: «то, что вам удобнее». Это особенность GDScript, а не "
+"скриптов Godot в целом; Языки ставят удобство использования выше "
+"производительности."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:287
 msgid ""
@@ -609,6 +613,12 @@ msgid ""
 "integer enum, one would have to write a Dictionary that maps the "
 "corresponding string value for each enum."
 msgstr ""
+"Основная проблема с использованием целых чисел возникает, когда кто-то хочет "
+"*распечатать* значение перечисления. В качестве целых чисел при попытке "
+"вывести MY_ENUM будет выведено ``5`` или что-то ещё, а не что-то вроде "
+"``«MyEnum»``. Чтобы напечатать целочисленное перечисление, нужно написать "
+"словарь, который отображает соответствующее строковое значение для каждого "
+"перечисления."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:297
 msgid ""
@@ -617,11 +627,17 @@ msgid ""
 "use them as strings. That way, a separate data structure to execute on the "
 "printing is unnecessary."
 msgstr ""
+"Если основной целью использования перечисления является печать значений и "
+"кто-то желает сгруппировать их вместе как связанные концепции, то имеет "
+"смысл использовать их как строки. Таким образом, отдельная структура данных "
+"для выполнения при печати не нужна."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:303
 msgid ""
 "AnimatedTexture vs. AnimatedSprite vs. AnimationPlayer vs. AnimationTree"
 msgstr ""
+"AnimatedTexture против AnimatedSprite против AnimationPlayer против "
+"AnimationTree"
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:305
 msgid ""
@@ -657,10 +673,10 @@ msgid ""
 "extra logic on the part of the engine. The bad news is that users have very "
 "little control."
 msgstr ""
-"Godot: ref: `VisualServer <class_VisualServer>` затем последовательно рисует "
-"регионы с заданной скоростью. Хорошая новость заключается в том, что это не "
-"требует дополнительной логики со стороны движка. Плохая новость в том, что у "
-"пользователей очень мало контроля."
+"Затем :ref:`VisualServer <class_VisualServer>` Godot'а последовательно "
+"рисует регионы с заданной скоростью. Хорошая новость заключается в том, что "
+"это не требует дополнительной логики со стороны движка. Плохая новость в "
+"том, что у пользователей очень мало контроля."
 
 #: ../../docs/getting_started/workflow/best_practices/data_preferences.rst:321
 msgid ""
@@ -689,7 +705,7 @@ msgid ""
 "speed, regional offset, and orientation. This makes them well-suited to "
 "controlling 2D frame-based animations."
 msgstr ""
-"Узел AnimatedSprite в сочетании с ресурсом :ref: `SpriteFrames "
+"Узел AnimatedSprite в сочетании с ресурсом :ref:`SpriteFrames "
 "<class_SpriteFrames>` позволяет создавать различные последовательности "
 "анимации с помощью таблиц спрайтов, переключаться между анимациями и "
 "управлять их скоростью, региональным смещением и ориентацией. Это делает их "

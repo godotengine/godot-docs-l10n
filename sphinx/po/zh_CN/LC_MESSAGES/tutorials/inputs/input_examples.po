@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/tutorials/inputs/input_examples.rst:4
 #, fuzzy
 msgid "Input examples"
-msgstr "一个示例:"
+msgstr "输入示例"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:7
 msgid "Introduction"
@@ -122,21 +122,21 @@ msgid ""
 msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:119
-#, fuzzy
 msgid ""
 ":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - adds the "
 "ability to check if modifiers are pressed, such as :kbd:`Shift` or :kbd:"
 "`Alt`."
 msgstr ""
-":ref:`带有修饰符的输入事件<class_InputEventWithModifiers>`加入了检查是否按下"
-"修饰符的功能，例如“Shift”或“Alt”。"
+":ref:`InputEventWithModifiers <class_InputEventWithModifiers>` - 增加了检查是"
+"否按下修饰按键，如 :kbd:`Shift` 或 :kbd:`Alt` 。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:120
-#, fuzzy
 msgid ""
 ":ref:`InputEventMouse <class_InputEventMouse>` - adds mouse event "
 "properties, such as ``position``"
-msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
+msgstr ""
+":ref:`InputEventMouse <class_InputEventMouse>` - 增加鼠标事件属性，如 "
+"``position``"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:121
 msgid ""
@@ -159,6 +159,8 @@ msgid ""
 "that doesn't contain it - calling ``position`` on ``InputEventKey`` for "
 "example. To avoid this, make sure to test the event type first:"
 msgstr ""
+"如果您尝试访问不包含属性的输入类型上的属性，则可能会遇到错误-例如，对"
+"``InputEventKey`调用``Position``。要避免这种情况，请确保首先测试事件类型："
 
 #: ../../docs/tutorials/inputs/input_examples.rst:149
 msgid "InputMap"
@@ -276,8 +278,8 @@ msgid ""
 "whenever the mouse moves. You can find the move's distance with the "
 "``relative`` property."
 msgstr ""
-":ref:`鼠标移动输入事件<class_InputEventMouseMotion>`事件在鼠标移动时发生。可"
-"以通过“相对”属性找到移动的距离。"
+":ref:`InputEventMouseMotion <class_InputEventMouseMotion>` 只要鼠标移动就会发"
+"生事件。可以通过 ``relative`` 属性找到移动的距离。"
 
 #: ../../docs/tutorials/inputs/input_examples.rst:306
 msgid ""

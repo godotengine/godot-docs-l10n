@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,6 +52,9 @@ msgid ""
 "SCons options. You can then save this file and place it at the root of your "
 "Godot source directory."
 msgstr ""
+"您可以使用在线`Godot构建选项生成器<https://godot-build-options-generator."
+"github.io/>`__，生成一个包含SCons选项的``custom.py``文件。然后您可以保存这个"
+"文件，并将其放在Godot源目录的根目录下。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:28
 msgid "Disabling 3D"
@@ -112,6 +115,9 @@ msgid ""
 "might want to keep networking-related modules, regex support, or theora/webm "
 "to play videos)."
 msgstr ""
+"如果这被证明不适合你的用例，你应该回顾一下模块列表，看看哪些模块是你的游戏仍"
+"然需要的（例如，你可能想保留网络相关的模块，regex支持，或者播放视频的theora/"
+"webm）。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:73
 msgid ""
@@ -119,6 +125,8 @@ msgid ""
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
+"或者，你也可以通过在源代码的根部创建``custom.py``来提供一个禁用模块的列表，其"
+"内容类似于以下："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
 #, fuzzy
@@ -157,9 +165,10 @@ msgstr ""
 "的模板功能和未使用的代码来工作。目前，它可以与GCC和MSVC编译器一起使用："
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:143
+#, fuzzy
 msgid ""
-"Linking becomes much slower with this option, so it should be used only for "
-"release builds."
+"Linking becomes much slower and more RAM consuming with this option, so it "
+"should be used only for release builds."
 msgstr "使用此选项，链接变得慢得多，因此它应该仅用于发布版本。"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:147

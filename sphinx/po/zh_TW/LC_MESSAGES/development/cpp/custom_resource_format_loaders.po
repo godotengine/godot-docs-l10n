@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,10 +114,11 @@ msgid ""
 msgstr "各個檔案格式都是由一個資料容器與一個 ``ResourceFormatLoader`` 組成的。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
+#, fuzzy
 msgid ""
 "ResourceFormatLoaders are usually simple classes which return all the "
 "necessary metadata for supporting new extensions in Godot. The class must "
-"the return the format name and the extension string."
+"return the format name and the extension string."
 msgstr ""
 "ResourceFormatLoaders 通常都是一些簡單的類別，回傳所有需要的後設資料 "
 "(Metadata) 以在 Godot 中支援新的副檔名。該類別必須要回傳格式的名稱與副檔名字"

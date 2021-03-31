@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -405,7 +405,7 @@ msgstr ""
 msgid "Let's see some examples."
 msgstr "Давайте рассмотрим некоторые примеры."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:271
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -419,7 +419,7 @@ msgstr ""
 "комбинировать их с :ref:`EditorPlugin <class_EditorPlugin>` для создания "
 "собственных визуализаций и редакторов для своих данных."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:277
+#: ../../docs/getting_started/step_by_step/resources.rst:283
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -430,7 +430,7 @@ msgstr ""
 "пользовательской структурой, подобно Словарю, сопоставляющему строку со "
 "вторичным пользовательским сценарием ресурса."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:313
+#: ../../docs/getting_started/step_by_step/resources.rst:319
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
@@ -438,7 +438,7 @@ msgstr ""
 "Вместо того, чтобы просто подставлять значения словаря, можно также, в "
 "качестве альтернативы..."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:315
+#: ../../docs/getting_started/step_by_step/resources.rst:321
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -446,7 +446,7 @@ msgstr ""
 "Импортируйте табличные значения из электронной версии таблицы и создайте эти "
 "пары ключ-значение, или...."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:317
+#: ../../docs/getting_started/step_by_step/resources.rst:323
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -454,7 +454,7 @@ msgstr ""
 "Разработайте визуализацию в редакторе и создайте простой плагин, который "
 "добавит его в Инспектор, когда вы откроете такие типы ресурсов."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:320
+#: ../../docs/getting_started/step_by_step/resources.rst:326
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
@@ -463,7 +463,7 @@ msgstr ""
 "значений с плавающей запятой или ресурсным объектом :ref:`Curve "
 "<class_Curve>`/:ref:`Curve2D <class_Curve2D>`."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:325
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -479,7 +479,7 @@ msgstr ""
 "ключевого слова ``class`` в GDScript'') не сработает. Godot не будет должным "
 "образом сериализовать пользовательские свойства в подклассе сценариев."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:331
+#: ../../docs/getting_started/step_by_step/resources.rst:337
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

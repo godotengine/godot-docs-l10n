@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
-#, fuzzy
 msgid ""
 "In 3D, meshes are used to display the world. In 2D, they are rare as images "
 "are used more often. Godot's 2D engine is a pure two-dimensional engine, so "
@@ -34,8 +33,8 @@ msgid ""
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
 "在3D中，网格用于显示世界。在2D中它们不常见, 因为图片使用得更频繁。Godot的2D部"
-"分是一个纯2D引擎，因此它不能直接显示3D网格(尽管它可以通过``Viewport(视口)`` "
-"和 ``ViewportTexture(视口纹理)``完成)。"
+"分是一个纯2D引擎，因此它不能直接显示3D网格(尽管它可以通过 ``Viewport(视口)`` "
+"和 ``ViewportTexture(视口纹理)`` 来实现)。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
@@ -46,15 +45,14 @@ msgstr ""
 "`doc_viewport_as_texture` 教程。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
-#, fuzzy
 msgid ""
 "2D meshes are meshes that contain two-dimensional geometry (Z can be omitted "
 "or ignored) instead of 3D. You can experiment creating them yourself using "
 "``SurfaceTool`` from code and displaying them in a ``MeshInstance2D`` node."
 msgstr ""
-"二维网格是包含二维几何(Z轴可以省略或忽略)而不是三维几何的网格。你可以尝试使用"
-"代码中的 ``SurfaceTool(表面工具)``创建它们，并在``MeshInstance2D(二位网格实"
-"例)``节点中显示它们。"
+"二维网格是包含二维几何（Z轴可以省略或忽略）而不是三维几何的网格。你可以尝试使"
+"用代码中的 ``SurfaceTool(表面工具)`` 创建它们，并在 ``MeshInstance2D(二维网格"
+"实例)`` 节点中显示它们。"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:18
 msgid ""
@@ -103,12 +101,12 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
-"你可以通过把``Sprite`` 转换为 ``MeshInstance2D``的方法来利用这种优化。从边缘"
-"有大量透明的图片开始，就像这棵树："
+"你可以通过把 ``Sprite`` 转换为 ``MeshInstance2D`` 的方法来利用这种优化。从边"
+"缘有大量透明的图片开始，就像这棵树："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr "把它放到一个``Sprite``中, 从菜单选择“转换为2D网格”："
+msgstr "把它放到一个 ``Sprite`` 中, 从菜单选择“转换为2D网格”："
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
@@ -127,4 +125,4 @@ msgstr ""
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
-msgstr "最后，按下``Convert 2D Mesh``按钮，你的Sprite将被替换："
+msgstr "最后，按下 ``Convert 2D Mesh`` 按钮，你的Sprite将被替换："

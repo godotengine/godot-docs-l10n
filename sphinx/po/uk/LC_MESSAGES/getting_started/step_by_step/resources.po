@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -432,7 +432,7 @@ msgstr ""
 msgid "Let's see some examples."
 msgstr "Давайте подивимось кілька прикладів."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:271
+#: ../../docs/getting_started/step_by_step/resources.rst:277
 #, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -447,7 +447,7 @@ msgstr ""
 "комбінувати їх з :ref:`EditorPlugin <class_EditorPlugin>`, щоб створити "
 "власні візуалізації та редактори для своїх даних."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:277
+#: ../../docs/getting_started/step_by_step/resources.rst:283
 #, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
@@ -459,7 +459,7 @@ msgstr ""
 "(строка, текст), відображений у користувацькій структурі, подібно до "
 "словника, що відображає рядок у вторинному скрипті користувацького ресурсу."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:313
+#: ../../docs/getting_started/step_by_step/resources.rst:319
 #, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
@@ -468,7 +468,7 @@ msgstr ""
 "Замість того, щоб просто вписати значення Словника, можна також "
 "альтернативно…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:315
+#: ../../docs/getting_started/step_by_step/resources.rst:321
 #, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
@@ -477,7 +477,7 @@ msgstr ""
 "Імпортувати таблицю значень із електронної таблиці та згенерувати пари ключ-"
 "значення або…"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:317
+#: ../../docs/getting_started/step_by_step/resources.rst:323
 #, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
@@ -486,7 +486,7 @@ msgstr ""
 "Створити візуалізацію в редакторі та створити простий плагін, який додасть "
 "його в Інспектор, коли ви відкриєте ці типи ресурсів."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:320
+#: ../../docs/getting_started/step_by_step/resources.rst:326
 #, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
@@ -496,7 +496,7 @@ msgstr ""
 "значень, або об'єкта ресурсу :ref:`Curve <class_Curve>`/:ref:`Curve2D "
 "<class_Curve2D>` ."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:325
+#: ../../docs/getting_started/step_by_step/resources.rst:331
 msgid ""
 "Beware that resource files (\\*.tres/\\*.res) will store the path of the "
 "script they use in the file. When loaded, they will fetch and load this "
@@ -512,7 +512,7 @@ msgstr ""
 "ключового слова ``class`` в GDScript), не буде працювати. Godot не буде "
 "належним чином серіалізувати власні властивості підкласу скрипту."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:331
+#: ../../docs/getting_started/step_by_step/resources.rst:337
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "
 "doesn't extend ``Resource``, and then determine that the script failed to "

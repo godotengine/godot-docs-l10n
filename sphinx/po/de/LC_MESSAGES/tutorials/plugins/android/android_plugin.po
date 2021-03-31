@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-msgid "Creating Android plugins (Godot 3.2.2+)"
-msgstr "Erstellen von Android Plugins (Godot 3.2.2+)"
+#, fuzzy
+msgid "Creating Android plugins"
+msgstr "Eine Erweiterung erstellen"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:7
 msgid "Introduction"
@@ -287,6 +288,8 @@ msgid ""
 "**binary_type**: can be either ``local`` or ``remote``. The type affects the "
 "**binary** field"
 msgstr ""
+"**binary_type**: kann entweder ``local`` oder ``remote`` sein. Der Typ "
+"beeinflusst das Feld **binary**"
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:114
 msgid "**binary**:"
@@ -336,6 +339,8 @@ msgid ""
 "**remote**: contains a list of remote binary gradle dependencies for the "
 "plugin."
 msgstr ""
+"**remote**: enthält eine Liste der remote binären Gradle-Abhängigkeiten für "
+"das Plugin."
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:130
 msgid ""

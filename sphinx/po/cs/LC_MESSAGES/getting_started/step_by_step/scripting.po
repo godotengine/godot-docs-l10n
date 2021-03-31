@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
-msgstr "GDScript"
+msgstr "GDSkript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -196,7 +196,7 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
-"Protože Godot používá runtime „Mono <https://mono-project.com >`_ .NET, "
+"Protože Godot používá runtime `Mono <https://mono-project.com>`_ .NET, "
 "teoreticky lze pro skriptování v Godot i jakoukoli běžnou jazykovou "
 "infrastrukturu použít jakoukoli knihovnu nebo framework .NET od třetích "
 "stran. kompatibilní programovací jazyk, jako je F #, Boo nebo ClojureCLR. V "
@@ -399,9 +399,9 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"Není toho moc. Funkce `_ready ()` `se volá, když uzel a všechny jeho potomci "
-"vstoupí do aktivní scény. **Poznámka:** ``_ready ()`` není konstruktor; "
-"konstruktorem je místo toho ``_init ()``."
+"Není toho moc. Funkce ``_ready()`` se volá, když uzel a všechny jeho potomci "
+"vstoupí do aktivní scény. **Poznámka:** ``_ready()`` není konstruktor; "
+"konstruktorem je ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"
@@ -489,8 +489,8 @@ msgid ""
 msgstr ""
 "Ve spodní části dialogu je uveden název metody, která bude vytvořena. Ve "
 "výchozím nastavení bude název metody obsahovat název emitujícího uzlu (v "
-"tomto případě „Button“), což bude mít za následek `` _ __ [EmitterNode] _ "
-"[signal_name] ``."
+"tomto případě „Button“), což bude mít za následek "
+"``_[EmitterNode]_[signal_name]`` ."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:213
 msgid ""
@@ -528,8 +528,7 @@ msgid ""
 "``_ready()`` function:"
 msgstr ""
 "Protože Button a Label jsou sourozenci v Panel, ke kterému je skript "
-"připojen, můžete Button načíst zadáním následujícího pod funkci `` _ready () "
-"``:"
+"připojen, můžete Button načíst zadáním následujícího pod funkci ``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:242
 msgid "Next, write a function which will be called when the button is pressed:"
@@ -564,8 +563,8 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-"Častým nedorozuměním ohledně tohoto tutoriálu je to, jak funguje `get_node "
-"(cesta)``. Pro daný uzel prochází `get_node (cesta)` `jeho bezprostřední "
+"Častým nedorozuměním ohledně tohoto tutoriálu je to, jak funguje ``get_node "
+"(cesta)`` . Pro daný uzel prochází ``get_node (cesta)`` jeho bezprostřední "
 "potomky. Ve výše uvedeném kódu to znamená, že Button musí být potomkem "
 "Panel. Pokud by Button byl místo toho podřízeným Label, kód pro jeho získání "
 "by byl:"
@@ -589,6 +588,6 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
-"Skriptovací přístup toto také umožňuje pomocí 4. parametru `Array``, který "
+"Skriptovací přístup toto také umožňuje pomocí 4. parametru ``Array`` , který "
 "je ve výchozím nastavení prázdný. Pro více informací si přečtěte o metodě "
-"`Object.connect``."
+"``Object.connect`` ."

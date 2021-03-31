@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,12 +35,18 @@ msgid ""
 "which sorts instructions to pass to the GPU, and in the transfer of these "
 "instructions. And finally, bottlenecks also occur on the GPU itself."
 msgstr ""
+"对新的图形功能和进步的需求几乎可以保证你必会遇到图形瓶颈。有些瓶颈可能出现在"
+"CPU端，例如在Godot引擎内部的计算中，为渲染准备对象。瓶颈也可能发生在CPU上的图"
+"形驱动中，它将指令分类传递给GPU，以及这些指令的传输过程。最后，瓶颈也会发生在"
+"GPU本身。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:16
 msgid ""
 "Where bottlenecks occur in rendering is highly hardware-specific. Mobile "
 "GPUs in particular may struggle with scenes that run easily on desktop."
 msgstr ""
+"渲染中的瓶颈发生在哪里，高度依赖于硬件。特别是移动GPU可能会在桌面上轻松运行的"
+"场景中挣扎。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:19
 msgid ""
@@ -51,16 +57,19 @@ msgid ""
 "way of measuring performance is by examining changes in the time spent "
 "rendering each frame."
 msgstr ""
+"了解和调查GPU瓶颈与CPU上的情况略有不同。这是因为，通常情况下，你只能通过改变"
+"你给GPU的指令来间接改变性能。另外，测量起来可能更困难。在许多情况下，衡量性能"
+"的唯一方法是通过检查每帧渲染时间的变化。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:26
 msgid "Draw calls, state changes, and APIs"
-msgstr ""
+msgstr "绘制调用，状态更变和api"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:28
 msgid ""
 "The following section is not relevant to end-users, but is useful to provide "
 "background information that is relevant in later sections."
-msgstr ""
+msgstr "以下部分与最终用户无关，但对于提供与后面章节相关的背景信息是有用的。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:31
 msgid ""
@@ -70,6 +79,9 @@ msgid ""
 "a way that is preferred by the driver and GPU, we can greatly increase "
 "performance."
 msgstr ""
+"Godot通过图形API（OpenGL、OpenGL ES或Vulkan）向GPU发送指令。所涉及的通信和驱"
+"动活动可能非常昂贵，尤其是在OpenGL和OpenGL ES中。如果我们能以驱动和GPU喜欢的"
+"方式提供这些指令，就能大大提高性能。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:37
 msgid ""
@@ -80,6 +92,10 @@ msgid ""
 "objects as much as possible so they can be rendered together, or with the "
 "minimum number of these expensive state changes."
 msgstr ""
+"OpenGL中几乎每一个API命令都需要一定的验证，以确保GPU处于正确的状态。即使是看"
+"似简单的命令，也会导致一连串的幕后工作。因此，我们的目标是将这些指令减少到最"
+"低限度，并尽可能地将相似的对象分组，以便它们可以一起渲染，或者以最少的数量进"
+"行这些昂贵的状态变化。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:45
 #, fuzzy
@@ -95,6 +111,10 @@ msgid ""
 "for each item. In addition, this means state changes, material and texture "
 "changes can be kept to a minimum."
 msgstr ""
+"在2D中，单独处理每个项目的成本可能会非常高--屏幕上很容易有成千上万的项目。这"
+"就是为什么使用2D *批处理* 的原因。多个类似的项目被归为一组，并通过一个单一的"
+"绘制调用进行批量渲染，而不是对每个项目进行单独的绘制调用。此外，这意味着状态"
+"变化、材质和纹理变化可以保持在最低限度。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:54
 #, fuzzy
@@ -117,6 +137,11 @@ msgid ""
 "(static meshes in relation to each other). This can either be done by "
 "artists, or programmatically within Godot."
 msgstr ""
+"在3D中，我们的目标仍然是尽量减少绘制调用和状态变化。然而，将多个对象批量合并"
+"到一个绘图调用中可能比较困难。3D网格往往由数百个或数千个三角形组成，而实时组"
+"合大型网格的成本非常高。随着每个网格的三角形数量的增加，加入它们的成本很快就"
+"超过了带来的好处。一个更好的选择是 **提前加入网格** （静态网格之间的关系）。"
+"这可以由设计师完成，或者在Godot中以编程方式完成。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:67
 msgid ""
@@ -128,6 +153,10 @@ msgid ""
 "this, the benefits of joining static objects often outweigh other "
 "considerations, especially for large numbers of distant or low-poly objects."
 msgstr ""
+"在3D中把物体批处理在一起也是有成本的。几个对象渲染成一个，就不能单独剔除。如"
+"果将屏幕外的整座城市与屏幕上的一片草地连接在一起，那么它仍然会被渲染。因此，"
+"当试图将3D对象批量连接在一起时，应该始终考虑到对象的位置和剔除。尽管如此，加"
+"入静态对象的好处往往大于其他考虑因素，特别是对于大量的远距离或低多边形物体。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:75
 msgid ""
@@ -305,7 +334,7 @@ msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:149
 msgid "Pay attention to the additional vertex processing required when using:"
-msgstr ""
+msgstr "使用时要注意额外的顶点处理:"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:151
 msgid "Skinning (skeletal animation)"
@@ -322,7 +351,7 @@ msgstr "顶点照明对象(在移动设备上常见)"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:156
 msgid "Pixel/fragment shaders and fill rate"
-msgstr ""
+msgstr "像素/片段着色器和填充速率"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:158
 msgid ""
@@ -333,6 +362,10 @@ msgid ""
 "fragment shaders has exploded. Physically-based rendering requires complex "
 "calculations for each fragment."
 msgstr ""
+"与顶点处理相比，片段着色器（每像素）的成本在这些年里急剧增加。屏幕分辨率提高"
+"了（4K屏幕的面积是829400像素，而老式640×480 VGA屏幕的面积是307200，是27倍），"
+"但片段着色器的复杂度也爆炸式增长。基于物理的渲染需要对每个片段进行复杂的计"
+"算。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:165
 msgid ""
@@ -345,6 +378,11 @@ msgid ""
 "the other hand, if there is little to no increase in FPS, then your "
 "bottleneck lies elsewhere."
 msgstr ""
+"你可以很容易地测试一个项目是否受到填充率限制。关闭V-Sync以防止每秒帧数的上"
+"限，然后比较使用大窗口运行时的每秒帧数和使用非常小的窗口运行时的帧数。如果使"
+"用阴影，你也可以从同样减少阴影贴图大小中获益。通常，你会发现使用小窗口的FPS会"
+"增加不少，这说明你在某种程度上受到了填充率的限制。另一方面，如果FPS几乎没有增"
+"加，那么你的瓶颈就在其他地方。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:174
 msgid ""
@@ -353,12 +391,15 @@ msgid ""
 "(perhaps turn off expensive options if you are using a :ref:`SpatialMaterial "
 "<class_SpatialMaterial>`), or reducing the number and size of textures used."
 msgstr ""
+"你可以通过减少GPU的工作量来提高填充率限制项目的性能。你可以通过简化着色器（如"
+"果你使用的是 :ref:`SpatialMaterial <class_SpatialMaterial> `，也许可以关闭昂"
+"贵的选项），或者减少使用的纹理数量和大小来实现。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:179
 msgid ""
 "**When targeting mobile devices, consider using the simplest possible "
 "shaders you can reasonably afford to use.**"
-msgstr ""
+msgstr "**在针对移动设备时，考虑使用你能合理负担得起的最简单的着色器.**"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:183
 #, fuzzy
@@ -374,12 +415,18 @@ msgid ""
 "averaging). Reading textures is also expensive in terms of power usage, "
 "which is a big issue on mobiles."
 msgstr ""
+"片段着色器的另一个因素是读取纹理的成本。读取纹理是一项昂贵的操作，尤其是在一"
+"个片段着色器中从多个纹理中读取时。另外，考虑到过滤可能会进一步减慢它的速度"
+"（mipmaps之间的三线性过滤，以及平均）。读取纹理在功耗方面也很昂贵，这在手机上"
+"是个大问题。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:192
 msgid ""
 "**If you use third-party shaders or write your own shaders, try to use "
 "algorithms that require as few texture reads as possible.**"
 msgstr ""
+"**如果您使用第三方着色器或编写自己的着色器，请尽量使用需要尽可能少的纹理读取"
+"的算法。**"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:196
 msgid "Texture compression"
@@ -427,6 +474,8 @@ msgid ""
 "it will negatively affect their appearance, without improving performance "
 "significantly due to their low resolution."
 msgstr ""
+"即使在3D中，\"像素艺术 \"纹理也应该禁用VRAM压缩，因为这会对其外观产生负面影"
+"响，而不会因为其低分辨率而显著提高性能。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:222
 msgid "Post-processing and shadows"
@@ -438,6 +487,8 @@ msgid ""
 "fragment shading activity. Always test the impact of these on different "
 "hardware."
 msgstr ""
+"就片段着色活动而言，后期处理效果和阴影也可能很昂贵。始终测试这些对不同硬件的"
+"影响。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:227
 msgid ""
@@ -447,6 +498,9 @@ msgid ""
 "objects as possible. Smaller or distant OmniLights/SpotLights can often have "
 "their shadows disabled with only a small visual impact."
 msgstr ""
+"**减少阴影图的大小可以提高性能** ，无论是在写还是读取阴影贴图方面。除此之外，"
+"提高阴影性能的最好方法是关闭尽可能多的灯光和物体的阴影。较小或较远的"
+"OmniLights/SpotLights通常可以禁用它们的阴影，而对视觉影响很小。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:234
 #, fuzzy
@@ -462,6 +516,10 @@ msgid ""
 "rely on the Z-buffer and must be rendered in \"painter's order\" (i.e. from "
 "back to front) to look correct."
 msgstr ""
+"透明物体对渲染效率带来了特殊的问题。不透明的对象（尤其是在3D中）基本上可以以"
+"任意顺序渲染，Z-缓冲区将确保只有最前面的对象得到阴影。透明或混合对象则不同，"
+"在大多数情况下，它们不能依赖Z-缓冲区，必须以 \"画家顺序\"（即从后到前）渲染才"
+"能看起来正确。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:243
 msgid ""
@@ -469,6 +527,8 @@ msgid ""
 "item has to be drawn even if other transparent objects will be drawn on top "
 "later on."
 msgstr ""
+"透明对象的填充率也特别差，因为每一个项目都要绘制，即使之面会在上面绘制其他透"
+"明对象。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:247
 msgid ""
@@ -477,6 +537,8 @@ msgid ""
 "fragment shader on the \"winning\" fragment, the object that is at the front "
 "at a particular pixel."
 msgstr ""
+"不透明的对象不需要这样做。它们通常可以利用Z-缓冲区，只先向Z-缓冲区写入数据，"
+"然后只在 \"胜利\" 的片段上执行片段着色器，也就是在某一像素处处于前面的对象。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:252
 msgid ""
@@ -486,6 +548,9 @@ msgid ""
 "rate is very expensive. Indeed, in many situations, rendering more complex "
 "opaque geometry can end up being faster than using transparency to \"cheat\"."
 msgstr ""
+"在多个透明对象重叠的情况下，透明度特别昂贵。通常情况下，使用透明区域越小越"
+"好，以尽量降低这些填充率要求，尤其是在移动端。事实上，在很多情况下，渲染更复"
+"杂的不透明几何体最终可能比使用透明度来 \"作弊\" 更快。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:259
 #, fuzzy
@@ -499,6 +564,9 @@ msgid ""
 "desktop but attempting to port it to mobile at the last minute is a recipe "
 "for disaster."
 msgstr ""
+"如果您的目标是在多个平台上发布，请在您的所有平台上（尤其是移动平台）上进行 *"
+"早期* 并 *经常* 性测试。在桌面上开发游戏，但试图在最后一刻将其移植到移动设"
+"备，这是灾难的根源。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:265
 msgid ""
@@ -507,10 +575,12 @@ msgid ""
 "may want to use the GLES2 backend for both desktop and mobile platforms "
 "where you target both."
 msgstr ""
+"一般来说，你应该从最底的共性设计你的游戏，然后为更强大的平台添加可选的增强功"
+"能。例如，你可能希望在同时针对桌面和移动平台的情况下，同时使用GLES2后台。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:271
 msgid "Mobile/tiled renderers"
-msgstr ""
+msgstr "移动端和图块渲染"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:273
 msgid ""
@@ -520,6 +590,9 @@ msgid ""
 "fast cache memory, which reduces the number of read/write operations to the "
 "main memory."
 msgstr ""
+"如上所述，移动设备上的GPU与桌面上的GPU工作方式有很大不同。大多数移动设备都使"
+"用图块渲染器。图块渲染器将屏幕分割成规则大小的图块，这些图块可以放入超快的缓"
+"存中，从而减少了对主内存的读和写操作次数。"
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:278
 msgid ""
@@ -529,3 +602,6 @@ msgid ""
 "operations being preserved can be very slow. Be very careful to test the "
 "performance of shaders, viewport textures and post processing."
 msgstr ""
+"不过也有一些缺点。图块渲染会让某些技术变得更加复杂，执行起来也更加昂贵。依赖"
+"于不同图块渲染的结果，或者依赖于早期操作的结果被保存的图块可能会非常慢。要非"
+"常小心地测试着色器、视图纹理和后期处理的性能。"

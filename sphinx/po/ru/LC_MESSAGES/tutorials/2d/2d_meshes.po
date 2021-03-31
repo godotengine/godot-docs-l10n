@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,18 @@ msgid ""
 "it can't really display 3D meshes directly (although it can be done via "
 "``Viewport`` and ``ViewportTexture``)."
 msgstr ""
+"В 3D сетки используются для отображения мира. В 2D они редки, так как "
+"изображения используются намного чаще. 2D движёк в Godot полностью "
+"двухмерен, поэтому он не может отображать 3D сетки напрямую (но это можно "
+"сделать используя ``Viewport`` и ``ViewportTexture``)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:13
 msgid ""
 "If you are interested in displaying 3D meshes on a 2D viewport, see the :ref:"
 "`doc_viewport_as_texture` tutorial."
 msgstr ""
+"Если вас интересует отображение 3D сеток в 2D режиме, смотрите уроки :ref:"
+"`doc_viewport_as_texture`."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:15
 msgid ""
@@ -56,10 +62,12 @@ msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite."
 msgstr ""
+"В настоящее время, единственный способ создать 2D сетку внутри редактора - "
+"это либо импортировать файл OBJ как сетку, либо преобразовать его из Sprite."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:21
 msgid "Optimizing pixels drawn"
-msgstr ""
+msgstr "Оптимизация нарисованного изображения"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:23
 msgid ""
@@ -67,6 +75,10 @@ msgid ""
 "drawing large images with transparency, Godot will draw the whole quad to "
 "the screen. The large transparent areas will still be drawn."
 msgstr ""
+"Этот рабочий процесс полезен для оптимизации 2D-изображений в некоторых "
+"ситуациях. При отображении больших картинок с прозрачностью Godot будет "
+"рисовать на экране изображение полностью. И большие прозрачные области все "
+"равно будут нарисованы."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:25
 msgid ""
@@ -75,16 +87,23 @@ msgid ""
 "each other with large transparent areas (for example, when using "
 "``ParallaxBackground``)."
 msgstr ""
+"Это может повлиять на производительность, особенно на мобильных устройствах, "
+"при рисовании очень больших изображений (размером с экран), или наложении "
+"нескольких изображений друг на друга с большими прозрачными областями "
+"(например, при использовании `ParallaxBackground`)."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:28
 msgid ""
 "Converting to a mesh will ensure that only the opaque parts will be drawn "
 "and the rest will be ignored."
 msgstr ""
+"Конвертирование в сетку гарантирует, что только непрозрачные части будут "
+"нарисованы, а остальные проигнорированы."
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:31
+#, fuzzy
 msgid "Converting Sprites to 2D meshes"
-msgstr ""
+msgstr "Преобразование спрайтов в 2D-сетки"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:33
 msgid ""
@@ -92,24 +111,33 @@ msgid ""
 "``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
+"Вы можете воспользоваться этой оптимизацией, преобразовав ``Sprite`` в "
+"``MeshInstance2D``. Начните с изображения, которое содержит большое "
+"количество прозрачности по краям, как это дерево:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:38
 msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
 msgstr ""
+"Поместите его в 'Sprite' и выберите \"Преобразовать в Mesh2D\" из меню:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:42
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
 msgstr ""
+"Появится диалоговое окно, показывающее предварительный просмотр того, как "
+"будет выглядеть 2D сетка:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:46
 msgid ""
 "The default values are good enough for many cases, but you can change growth "
 "and simplification according to your needs:"
 msgstr ""
+"Значения по умолчанию достаточно хороши для многих случаев, но вы можете "
+"изменить \"Рост\" и \"Упрощение\" в соответствии с вашими потребностями:"
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:50
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
 "replaced:"
 msgstr ""
+"В заключении, нажмите кнопку ``Создать Mesh2D`` и ваш Sprite будет заменен:"

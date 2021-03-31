@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgstr "将打印:"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:8
 msgid "The types of collision shapes available in 3D in Godot."
-msgstr ""
+msgstr "Godot 3D中可用的碰撞形状类型。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:9
 msgid "Using a convex or a concave mesh as a collision shape."
-msgstr ""
+msgstr "使用凸形或凹形网格作为碰撞形状。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:10
 #, fuzzy
@@ -41,10 +41,11 @@ msgid "Performance considerations regarding 3D collisions."
 msgstr "性能监控工具."
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:12
+#, fuzzy
 msgid ""
 "Godot provides many kinds of collision shapes, with different performance "
 "and accuracy tradeoffs."
-msgstr ""
+msgstr "Godot提供多种碰撞形状，具有不同的性能和精度权衡。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:15
 msgid ""
@@ -53,12 +54,17 @@ msgid ""
 "you must add a :ref:`class_Shape` *resource* to collision shape nodes in the "
 "Inspector dock."
 msgstr ""
+"您可以通过添加一个或多个 :ref:`class_PhysicsBody`作为子节点来定义 :ref:"
+"`CollisionShapes <class_CollisionShape>`的形状。请注意，你必须在属性检查器面"
+"板中为碰撞形状节点添加一个:ref:`class_Shape` *resource*。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:22
 msgid ""
 "When you add multiple collision shapes to a single PhysicsBody, you don't "
 "have to worry about them overlapping. They won't \"collide\" with each other."
 msgstr ""
+"当你将多个碰撞形状添加到一个PhysicsBody中时，你不必担心它们会重叠，它们不会相"
+"互 \"碰撞\"。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:26
 #, fuzzy
@@ -89,7 +95,7 @@ msgstr "9: :ref:`Plane<class_plane>`"
 msgid ""
 ":ref:`class_CylinderShape`. It is only available when using the Bullet "
 "physics engine."
-msgstr ""
+msgstr ":ref:`class_CylinderShape`，只有在使用Bullet物理引擎时才能使用。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:36
 msgid ""
@@ -98,6 +104,8 @@ msgid ""
 "a whole level, you may need convex or concave shapes instead. More on that "
 "below."
 msgstr ""
+"您可以使用一个或多个原始形状来表示大多数较小物体的碰撞。然而，对于更复杂的物"
+"体，如大型船舶或整个水平面，你可能需要凸形或凹形来代替。下面会有更多的介绍。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:40
 msgid ""
@@ -105,6 +113,8 @@ msgid ""
 "RigidBodies and KinematicBodies as their behavior is the most reliable. They "
 "often provide better performance as well."
 msgstr ""
+"建议动态对象使用原始形状，如 RigidBodies 和 KinematicBodies，因为它们的行为是"
+"可靠的，通常也能提供更好的性能。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:45
 #, fuzzy
@@ -121,6 +131,10 @@ msgid ""
 "concave object with a single collision shape, you need to use a concave "
 "collision shape."
 msgstr ""
+":ref:`凸形碰撞形状<class_ConvexPolygonShape>`是基础碰撞形状和凹形碰撞形状之间"
+"的折衷，可以表示任何复杂的形状，但要警告的是，正如名称所示，一个单独的形状只"
+"能表示一个*凸*的形状。要用单个碰撞形状定义一个凹形对象，需要使用一个凹形碰撞"
+"形状。例如，一个金字塔是*凸*的，但一个空心盒子是*凹*的。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:54
 msgid ""
@@ -131,6 +145,10 @@ msgid ""
 "after a certain amount of convex shapes. For large and complex objects such "
 "as a whole level, we recommend using concave shapes instead."
 msgstr ""
+"根据对象的复杂程度，可能要通过使用多个凸形而不是一个凹形碰撞形状来获得更好的"
+"性能。Godot可以使用*凸分解*来生成与空心物体大致匹配的凸形。请注意，在一定数量"
+"的凸形之后，就没有了这种性能优势，对于大而复杂的对象，如整个关卡，建议使用凹"
+"形代替。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:61
 msgid ""
@@ -138,6 +156,8 @@ msgid ""
 "selecting a MeshInstance and using the **Mesh** menu at the top of the 3D "
 "viewport. The editor exposes two generation modes:"
 msgstr ""
+"您可以通过选择一个网格实例，并使用3D视图顶部的**网格**菜单从编辑器中生成一个"
+"或多个凸形碰撞形状。编辑器有两种生成模式:"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:65
 msgid ""
@@ -146,6 +166,9 @@ msgid ""
 "collision shape. Since it only generates a single shape, it provides good "
 "performance and is ideal for small objects."
 msgstr ""
+"**创建单凸碰撞同级**使用Quickhull算法，创建一个CollisionShape碰撞形状节点，并"
+"自动生成一个凸碰撞形状，由于只生成单个形状，因此提供了良好的性能，非常适合小"
+"对象。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:70
 msgid ""
@@ -155,6 +178,9 @@ msgid ""
 "cost of performance. For objects with medium complexity, it will likely be "
 "faster than using a single concave collision shape."
 msgstr ""
+"**创建多个凸形碰撞同级**使用V-HACD算法。创建多个CollisionShape碰撞形状节点，"
+"每个节点都有一个凸形，由于它能生成多个形状，所以对于凹形物体来说，精度更高，"
+"但性能不佳。对于中等复杂度的对象，可能会比使用单个凹形碰撞形状更快。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:77
 #, fuzzy
@@ -170,12 +196,15 @@ msgid ""
 "StaticBodies.** They will not work with KinematicBodies or RigidBodies "
 "unless the RigidBody's mode is Static."
 msgstr ""
+":ref:`凹形碰撞形状<class_ConcavePolygonShape>`，也称为三角碰撞形状，可以采取"
+"任何形式，从几个到数千个三角形，凹形是最慢的选择，但也是Godot中最精确的。**除"
+"非刚体的模式是静态的，否则它不能用于KinematicBodies动态体或RigidBodies刚体。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:87
 msgid ""
 "Even though concave shapes offer the most accurate *collision*, contact "
 "reporting can be less precise than primitive shapes."
-msgstr ""
+msgstr "即使凹形提供了最准确的*碰撞*，但触碰信息的精度可能不如基础形状。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:90
 msgid ""
@@ -186,6 +215,10 @@ msgid ""
 "modeler and have Godot generate a collision shape for it automatically. More "
 "on that below"
 msgstr ""
+"当不使用网络地图进行关卡设计时，凹形是关卡碰撞的最佳方法，也就是说，如果关卡"
+"有一些小细节，可能希望将这些细节排除碰撞之外，以保证性能和游戏体验，要做到这"
+"一点，可以在3D建模中建立一个简化的碰撞网格，并让Godot为其自动生成一个碰撞形"
+"状。下面会有更多的介绍"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:96
 msgid ""
@@ -193,6 +226,8 @@ msgid ""
 "doesn't have an actual \"volume\". You can place objects both *outside* of "
 "the shape as well as *inside*."
 msgstr ""
+"请注意，与基础形状和凸形状不同，凹形碰撞形状没有实际的 \"体积\"，既可以将对象"
+"放置在形状的*外侧*，也可以放置在*内侧*。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:100
 msgid ""
@@ -200,18 +235,24 @@ msgid ""
 "MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The "
 "editor exposes two options:"
 msgstr ""
+"您可以通过选择一个网格实例，并使用3D视口顶部的**网格**菜单从编辑器中生成一个"
+"凹形碰撞形状。编辑器提供两个选项:"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:104
 msgid ""
 "**Create Trimesh Static Body** is a convenient option. It creates a "
 "StaticBody containing a concave shape matching the mesh's geometry."
 msgstr ""
+"创建三网格静态体是个方便的选择。它创建一个包含与网格几何学匹配的凹形的静态"
+"体。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:107
 msgid ""
 "**Create Trimesh Collision Sibling** creates a CollisionShape node with a "
 "concave shape matching the mesh's geometry."
 msgstr ""
+"**创建Trimesh(三角面)碰撞同级**创建具有与网格几何体匹配的凹面形状的"
+"CollisionShape(碰撞形状)节点。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:112
 msgid ""
@@ -220,6 +261,10 @@ msgid ""
 "upwards. To solve this, open **Project > Project Settings** and enable "
 "**Physics > 3d > Smooth Trimesh Collision**."
 msgstr ""
+"假设你需要在concave collision shape(凹面碰撞形状)上做一个刚体滑动。在这种情况"
+"下，你可能会注意到，有时，刚体会向上颠簸。要解决此问题，请打开**Project (项"
+"目）>Project Setting(项目设置)**，然后启用**Physics(物理)>3d> Smooth Trimesh "
+"Collision(平滑三角面碰撞)**。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:117
 msgid ""
@@ -228,6 +273,9 @@ msgid ""
 "without any rotation. This way, the RigidBody should slide perfectly on the "
 "StaticBody."
 msgstr ""
+"启用“smooth trimesh collision(平滑三角面碰撞)”后，请确保StaticBody(静态物体)"
+"的上只有concave shape(凹面形状)一个碰撞体，并且它位于原点而不进行任何旋转。这"
+"样，RigidBody(刚体)应该在StaticBody(静态物体)上完美地滑动。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:124
 msgid ""
@@ -235,6 +283,8 @@ msgid ""
 "automatically. See :ref:`doc_importing_scenes_import_hints` in the "
 "documentation for more information."
 msgstr ""
+"Godot可以为导入的3D场景自动生成碰撞形状。 请参阅文档中的 :ref:"
+"`doc_importing_scenes_import_hints`。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
 #, fuzzy
@@ -249,6 +299,10 @@ msgid ""
 "KinematicBodies. On top of that, avoid translating, rotating, or scaling "
 "CollisionShapes to benefit from the physics engine's internal optimizations."
 msgstr ""
+"每个PhysicsBody(物理体)不限于一个碰撞形状。尽管如此，我们还是建议尽量减少碰撞"
+"形状的数量以提高性能，特别是对于像RigidBodies (刚体)和KinematicBodies(运动体)"
+"这样的动态对象。除此之外，避免translating(平移)、rotating(旋转)或scaling(缩"
+"放)碰撞形状，可以提高物理引擎运行效率。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:137
 msgid ""
@@ -259,6 +313,9 @@ msgid ""
 "fail. The narrow phase, which is slower, must then perform a collision check "
 "against each shape."
 msgstr ""
+"在静态体中使用单个非转换碰撞形状时，引擎的宽相位算法可以丢弃不活跃的物理体。"
+"这个窄相只需考虑到活跃物体的形状。如果一个StaticBody有许多碰撞形状，那么宽相"
+"位就会失败。较慢的窄相位必须对每个形状执行碰撞检查。"
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:143
 msgid ""
@@ -267,3 +324,6 @@ msgid ""
 "find creative ways to hide it or otherwise make it unnoticeable during "
 "normal gameplay."
 msgstr ""
+"如果遇到性能问题，您可能需要在准确性方面进行权衡。大多数游戏都没有100%的精确"
+"碰撞。他们找到了一些创造性的方法来隐藏它，或者在正常的游戏中让它变得不让人注"
+"意。"

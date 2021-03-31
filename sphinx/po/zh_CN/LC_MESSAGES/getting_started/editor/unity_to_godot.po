@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,15 +31,14 @@ msgstr ""
 "Godot的世界中。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
-#, fuzzy
 msgid ""
 "This article talks about older versions of Unity. Nestable prefabs ('Nested "
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organization."
 msgstr ""
-"本文讨论了旧版本的Unity。可嵌套的预制件（``嵌套的预制件（Nested prefabs）``）"
-"已添加到Unity 2018.3中。可嵌套的预制件类似于Godot的场景，并允许更像Godot的方"
-"式来组织场景。"
+"本文讨论了旧版本的Unity。可嵌套的预制件（ ``嵌套的预制件（Nested prefabs）"
+"`` ）已添加到Unity 2018.3中。可嵌套的预制件类似于Godot的场景，允许采用更像"
+"Godot的方式进行场景组织。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
@@ -71,9 +70,8 @@ msgid "OS (editor)"
 msgstr "操作系统（编辑器）"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
-#, fuzzy
 msgid "Windows, macOS, Linux"
-msgstr "**桌面端：** Windows、macOS、Linux"
+msgstr "Windows、macOS、Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
@@ -100,12 +98,11 @@ msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 msgstr "**游戏主机：** PS4、PS Vita、Xbox One、Xbox 360、Wii U、Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
-#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
 "HoloLens"
 msgstr ""
-"**虚拟现实端：** Oculus Rift、SteamVR、Google Cardboard、Playstation VR、"
+"**虚拟现实（VR）：** Oculus Rift、SteamVR、Google Cardboard、Playstation VR、"
 "Gear VR、HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
@@ -303,7 +300,6 @@ msgid "The scene system"
 msgstr "场景系统"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favorite feature of most Godot users."
@@ -395,7 +391,6 @@ msgid "**A scene for the Enemy.**"
 msgstr "**一个用于敌人的场景。**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:118
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
@@ -403,15 +398,14 @@ msgid ""
 "by the AnimatedSprite node."
 msgstr ""
 "敌人也是我们想在多个场景中使用的元素。它与 ``Player`` 节点几乎相同。唯一的区"
-"别是脚本（需要 ``AI`` 例程来生成敌人的行为）和 ``AnimatedSprite`` 节点使用的"
-"精灵纹理。"
+"别是脚本（需要 ``AI`` 程序来生成敌人的行为）和 ``AnimatedSprite`` 节点使用的"
+"精灵纹理不同。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:122
 msgid "**A Level scene.**"
 msgstr "**一个关卡场景。**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:124
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -612,16 +606,15 @@ msgstr ""
 "员的一个晚上、一个完全的初学者的一周时间，即可学会。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:204
-#, fuzzy
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behavior to the GameObject: For example, you can attach a "
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
-"Unity允许您将任意数量的脚本附加到 ``GameObject`` 上。每个脚本都会向 "
-"``GameObject`` 添加一个行为：例如，您可以附加一个脚本，使其对玩家的控制做出反"
-"应，而另一个脚本则控制其特定的游戏逻辑。"
+"Unity允许您将任意数量的脚本附加到 GameObject 上。每个脚本都会向 GameObject 添"
+"加一个行为：例如，您可以附加一个脚本，使其对玩家的控制做出反应，而另一个脚本"
+"则控制其特定的游戏逻辑。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""

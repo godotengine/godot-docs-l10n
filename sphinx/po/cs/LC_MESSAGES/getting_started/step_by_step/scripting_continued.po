@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,7 +118,7 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
-"Funkce `_process ()` `však není synchronizována s fyzikou. Její obnovovací "
+"Funkce ``_process ()`` však není synchronizována s fyzikou. Její obnovovací "
 "frekvence není konstantní a závisí na hardwaru a optimalizaci hry. U "
 "jednovláknových her je spouštěna až po dokončení fyzikálního kroku."
 
@@ -127,8 +127,8 @@ msgid ""
 "A simple way to see the ``_process()`` function at work is to create a scene "
 "with a single Label node, with the following script:"
 msgstr ""
-"Jednoduchý způsob, jak vidět funkci `_process()` při práci je vytvořit scénu "
-"s jediným Label uzlem s následujícím skriptem:"
+"Jednoduchý způsob, jak vidět funkci ``_process()`` při práci je vytvořit "
+"scénu s jediným Label uzlem s následujícím skriptem:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Which will show a counter increasing each frame."
@@ -158,7 +158,7 @@ msgid ""
 "node to the ``enemies`` group as soon as it appeared in the scene tree."
 msgstr ""
 "A druhý způsob je pomocí kódu. Následující skript by přidal aktuální uzel do "
-"skupiny `` nepřátelé ', jakmile se objeví ve stromu scény."
+"skupiny ``nepřátelé`` , jakmile se objeví ve stromu scény."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:115
 msgid ""
@@ -175,8 +175,8 @@ msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
-"Výše uvedený kód volá funkci \"player_was_discovered\" pro každého člena "
-"skupiny ''nepřátelé''."
+"Výše uvedený kód volá funkci ``player_was_discovered`` pro každého člena "
+"skupiny ``nepřátelé``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:135
 msgid ""
@@ -184,7 +184,7 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
-"Je také možné získat úplný seznam uzlů `` nepřátel 'voláním :ref:`SceneTree."
+"Je také možné získat úplný seznam uzlů ``nepřátel`` voláním :ref:`SceneTree."
 "get_nodes_in_group () <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:148
@@ -264,8 +264,7 @@ msgstr ""
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
-"Pro smazání uzlu, ať už uvnitř nebo vně scény, musí být použito `` free () "
-"``:"
+"Pro smazání uzlu, ať už uvnitř nebo vně scény, musí být použito ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:318
 msgid ""
@@ -326,8 +325,8 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem: "
-"ref: `PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
+"Ale „scéna“ ještě není uzlem. Je zabalena do speciálního zdroje s názvem :"
+"ref:`PackedScene <class_PackedScene>`. Pro vytvoření skutečného uzlu je "
 "třeba zavolat funkci :ref:`PackedScene.instance () "
 "<class_PackedScene_method_instance>`. Ta vrátí strom uzlů, který lze přidat "
 "k aktivní scéně:"
@@ -366,7 +365,7 @@ msgid ""
 "type in the Node or Resource creation dialog."
 msgstr ""
 "Můžete pojmenovat skript a zaregistrovat jej jako typ v editoru pomocí "
-"klíčového slova `class_name`` následovaného názvem třídy. Můžete přidat "
+"klíčového slova ``class_name`` následovaného názvem třídy. Můžete přidat "
 "čárku a volitelnou cestu k obrázku, který lze použít jako ikonu. Poté "
 "najdete svůj nový typ v dialogu pro vytvoření uzlu nebo prostředků."
 

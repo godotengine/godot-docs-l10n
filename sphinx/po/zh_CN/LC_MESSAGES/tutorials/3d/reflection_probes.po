@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,19 +44,18 @@ msgstr ""
 "储它的版本。 这用于模拟材质的粗糙度以及环境照明。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:15
-#, fuzzy
 msgid ""
 "While these probes are an efficient way of storing reflections, they have a "
 "few shortcomings:"
-msgstr "虽然这些探针是存储反射的有效方法，但它们有一些缺点:"
+msgstr "虽然这些探针是一种有效的存储反射的方式，但它们有一些不足之处:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
-#, fuzzy
 msgid ""
 "They are efficient to render, but expensive to compute. This leads to a "
 "default behavior where they only capture on scene load."
 msgstr ""
-"它们渲染效率高，但计算成本高。 这会导致默认行为，它们仅在场景加载时捕获。"
+"它们的渲染效率高，但计算成本也高。这就造成默认的行为，即它们只在场景加载时捕"
+"获。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
@@ -83,14 +82,13 @@ msgstr ""
 "合。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:30
-#, fuzzy
 msgid ""
 "By default, on interiors, reflections may appear not to have much "
 "consistence. In this scenario, make sure to tick the *\"Box Correct\"* "
 "property."
 msgstr ""
-"默认情况下，在内部，反射似乎没有太多的一致性。 在这种情况下，请务必勾选*“Box "
-"Correct”*属性。"
+"默认情况下，在内部，反射可能看起来不太一致，在这种情况下，一定要勾选 *\"Box "
+"Correct[盒子更正] \"* 属性。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:36
 msgid ""
@@ -99,11 +97,11 @@ msgid ""
 msgstr "此设置将反射从无限天空盒更改为反映探测器大小的框:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:41
-#, fuzzy
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look best in box shaped rooms."
-msgstr "调整盒子的墙壁可能有助于改善反射，但它总是在箱形房间看起来最好。"
+msgstr ""
+"调整盒体墙面可能有助于改善一点反射，但是在盒子形状的房间中看起来总是最好的。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""
@@ -140,14 +138,13 @@ msgid "Interior vs exterior"
 msgstr "内部与外部"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:67
-#, fuzzy
 msgid ""
 "If you are using reflection probes in an interior setting, it is recommended "
 "that the **Interior** property be enabled. This stops the probe from "
 "rendering the sky and also allows custom ambient lighting settings."
 msgstr ""
-"如果在室内设置中使用反射探头，建议启用** Interior **属性。 这会使探针停止渲染"
-"天空，并允许自定义环境光照设置。"
+"如果您在室内环境中使用反射探针，建议启用 **Interior** [内部]属性。这可以阻止"
+"探针渲染天空，还可以自定义环境光设置。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:73
 msgid ""
@@ -158,14 +155,13 @@ msgstr ""
 "色和能量。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:76
-#, fuzzy
 msgid ""
 "Optionally, you can blend this ambient light with the probe diffuse capture "
 "by tweaking the **Ambient Contribution** property (0.0 means pure ambient "
 "color, while 1.0 means pure diffuse capture)."
 msgstr ""
-"或者，您可以通过调整** Ambient Contribution **属性(0.0表示纯环境颜色，而1.0表"
-"示纯漫反射捕获)将此环境光与探测器漫反射捕获混合。"
+"可选，您可以通过调整 **Ambient Contribution[环境贡献]** 属性（0.0表示纯环境"
+"色，而1.0表示纯漫射捕获），将此环境光与探针漫射捕获混合。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:81
 msgid "Blending"
@@ -178,28 +174,25 @@ msgid ""
 msgstr "可以使用多个反射探针，Godot会使用智能算法将它们混合在一起:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:87
-#, fuzzy
 msgid ""
 "As you can see, this blending is never perfect (after all, these are box "
 "reflections, not real reflections), but these artifacts are only visible "
 "when using perfectly mirrored reflections. Normally, scenes have normal "
 "mapping and varying levels of roughness, which can hide this."
 msgstr ""
-"正如您所看到的，这种混合从来都不是完美的(毕竟，这些是盒子反射，而不是真实的反"
-"射)，但这些伪像只有在使用完美镜像反射时才可见。 通常情况下，场景具有正常的映"
-"射和不同程度的粗糙度，这可以隐藏它。"
+"正如所见，这种混合从来都不是完美的(毕竟，这些是盒子反射，而不是真实的反射)，"
+"而这些伪像只有在使用完美的镜像反射时才可见。 通常情况下，场景具有法线映射和不"
+"同程度的粗糙度，因此可以隐藏它。"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:93
-#, fuzzy
 msgid ""
 "Alternatively, Reflection Probes work well blended together with Screen "
 "Space Reflections to solve these problems. Combining them makes local "
 "reflections appear more faithful, while probes are only used as a fallback "
 "when no screen-space information is found:"
 msgstr ""
-"另外，Reflection Probes与Screen Space Reflections很好地融合在一起，可以解决这"
-"些问题。 将它们组合使得局部反射看起来更忠实，而探测器仅在没有找到屏幕空间信息"
-"时用作后备:"
+"另外，反射探针与屏幕空间反射混合在一起也能很好地解决这种问题。将它们结合在一"
+"起，可以使局部反射显得更加还原，而探针只在找不到屏幕空间信息时作为备用:"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:99
 msgid ""
@@ -230,3 +223,5 @@ msgid ""
 "in a scene. This value needs to be increased if you need more reflection "
 "probes."
 msgstr ""
+"Atlas Subdiv的默认设置:8，将允许一个场景中最多有16个反射探针。如果您需要更多"
+"的反射探针，则需要增加该值。"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -732,6 +732,8 @@ msgid ""
 "in between, the most common and convenient workflow involves rebasing on the "
 "*upstream ``master`` branch*, which you can do with:"
 msgstr ""
+"虽然您可以将任何提交ID赋给“git rebase-i”并查看其间的所有内容，但最常见和最方"
+"便的工作流涉及在*upstream``master``branch*上进行重定，您可以使用："
 
 #: ../../docs/community/contributing/pr_workflow.rst:456
 msgid ""
@@ -740,6 +742,8 @@ msgid ""
 "branch which has been pulled from the ``upstream`` remote's ``master`` "
 "branch."
 msgstr ""
+"由于远程分支和本地分支之间的区别，在Git中引用分支有点棘手。这里，``upstream/"
+"master```（带有`/`）是从``upstream``remote的``master``分支中提取的本地分支。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:461
 msgid ""
@@ -752,6 +756,11 @@ msgid ""
 "your local ``master`` branch... yes it's confusing, but you'll become "
 "familiar with this little by little)."
 msgstr ""
+"交互式回扣只能在本地分支上进行，因此`/`在这里很重要。由于上游远程服务器经常更"
+"改，您的本地“upstream/master”分支可能会过时，因此您可以使用“git fetch "
+"upstream master”更新它。与“git pull--rebase upstream master”相反，“fetch”只会"
+"更新“upstream/master”引用（与本地“master”分支不同）。。。是的，这很混乱，但你"
+"会逐渐熟悉这一点）。"
 
 #: ../../docs/community/contributing/pr_workflow.rst:471
 msgid ""

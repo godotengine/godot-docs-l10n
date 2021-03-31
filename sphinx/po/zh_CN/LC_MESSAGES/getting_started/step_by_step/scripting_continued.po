@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.2\n"
+"Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-07 14:35+0100\n"
+"POT-Creation-Date: 2021-03-31 15:34+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,14 +64,13 @@ msgstr ""
 "（FPS）。该速率会随着时间和设备的不同而变化。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
-#, fuzzy
 msgid ""
 "To help manage this variability, the ``delta`` parameter contains the time "
 "elapsed in seconds as a floating-point number since the previous call to "
 "``_process()``."
 msgstr ""
-"为了帮助管理这种可变性，``delta`` 参数包含自上次调用 ``_process()`` 以来经过"
-"的以秒为单位的时间，以浮点数表示。"
+"为了管理这种可变性有所帮助，``delta`` 参数包含自上次调用 ``_process()`` 以来"
+"经过的时间，以秒为单位的浮点数表示。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -80,7 +79,6 @@ msgid ""
 msgstr "此参数可用于确保事物始终花费相同的时间，从而与游戏的FPS无关。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent of the frame rate."
