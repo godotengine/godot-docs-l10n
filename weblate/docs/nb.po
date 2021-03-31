@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Norwegian Bokmål
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Allan Nordhøy <epost@anotheragency.no>, 2019-2020.
@@ -8,6 +8,8 @@
 # flesk <eivindkn@gmail.com>, 2019.
 # Frank T. Rambol <frank@d-fect.com>, 2018.
 # Hans-Marius Øverås <hansmariusoveras@gmail.com>, 2019.
+# Kristoffer <kskau93@gmail.com>, 2021.
+# Patrick Sletvold <patricksletvold@hotmail.com>, 2021.
 # Petter Reinholdtsen <pere-weblate@hungry.com>, 2019-2020.
 # Revolution <revosw@gmail.com>, 2019.
 #
@@ -16,16 +18,16 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-10-31 23:15+0000\n"
-"Last-Translator: Pierre Stempin <pierre.stempin@gmail.com>\n"
-"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/godot-"
-"engine/godot-docs/nb_NO/>\n"
+"PO-Revision-Date: 2021-03-30 14:05+0000\n"
+"Last-Translator: Kristoffer <kskau93@gmail.com>\n"
+"Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/"
+"godot-engine/godot-docs/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -1371,9 +1373,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "Fang"
+msgstr "Egenskaper"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
@@ -2235,9 +2236,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "Eksporter"
+msgstr "Importer"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2347,9 +2347,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "Synlig navigasjon"
+msgstr "Navigasjon"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
@@ -11791,9 +11790,8 @@ msgid "Editor setting"
 msgstr "Redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Redigeringsverktøy"
+msgstr "Åpne 2D-redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -11808,9 +11806,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Redigeringsverktøy"
+msgstr "Åpne 3D-redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -11826,7 +11823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Åpne Skriptredigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -11844,7 +11841,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Søk Hjelp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -11860,7 +11857,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
-msgstr ""
+msgstr "Distraksjonsfri Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -11876,7 +11873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Neste fane"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -11892,7 +11889,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Forrige fane"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -11924,7 +11921,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr ""
+msgstr "Åpne Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -11940,7 +11937,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr ""
+msgstr "Lukk Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -11956,7 +11953,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Gjenåpne Lukket Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -11974,7 +11971,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr ""
+msgstr "Lagre Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12006,7 +12003,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Lagre Alle Scener"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -12069,7 +12066,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Angre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -12088,7 +12085,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Gjenta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12104,7 +12101,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Avslutt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -12120,7 +12117,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr ""
+msgstr "Avslutt til Prosjektliste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -12136,7 +12133,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Ta Skjermbilde"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12152,7 +12149,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Veksle Fullskjerm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12168,7 +12165,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Spill"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12186,7 +12183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr ""
+msgstr "Sett Scenen På Pause"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12202,7 +12199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "Stopp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12219,7 +12216,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr ""
+msgstr "Spill Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12236,7 +12233,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr ""
+msgstr "Spill av Tilpasset Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12254,7 +12251,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Utvid Nederste Panel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -12271,7 +12268,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Zoom Inn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12290,7 +12287,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Zoom Ut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12308,7 +12305,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Zoom Resett"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -12326,7 +12323,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
-msgstr ""
+msgstr "Panoreringsvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
@@ -12339,7 +12336,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Velg Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12354,7 +12351,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Flytt Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12370,7 +12367,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Roter Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12385,7 +12382,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Skaler Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -12399,7 +12396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "Linjal Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -12412,7 +12409,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Bruk Smart Snap"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12424,7 +12421,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Bruk Rutenett Snap"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12436,7 +12433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Multipliser rutenett-steg med 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12448,7 +12445,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Del rutenett-steg med 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12460,7 +12457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr ""
+msgstr "Alltid Vis Rutenett"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -12473,7 +12470,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
-msgstr ""
+msgstr "Vis Hjelpere"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -12485,7 +12482,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Vis Veiledere"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12497,8 +12494,9 @@ msgid "``canvas_item_editor/show_guides``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
+#, fuzzy
 msgid "Center Selection"
-msgstr ""
+msgstr "Plasser Utvalg I Midten"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12511,7 +12509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Bildeutvalg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12540,7 +12538,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Sett inn nøkkel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -12552,7 +12550,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "Sett inn Nøkkel (Eksisterende Spor)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -12587,7 +12585,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "Fjern Posering"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -12721,7 +12719,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Bruk Snap"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12729,7 +12727,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Snap Objekt til Gulv"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -12742,7 +12740,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Toppvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -12754,7 +12752,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Bunnvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -12766,7 +12764,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Frontvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -12778,7 +12776,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Bakvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -12790,7 +12788,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Høyrevisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -12802,7 +12800,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Venstrevisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -12814,7 +12812,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Bytt Perspektiv/Ortogonal Fremvisning"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -12993,7 +12991,7 @@ msgstr "Redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Klipp ut"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -13013,7 +13011,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Kopier"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13039,7 +13037,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Lim inn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -13057,7 +13055,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Velg Alle"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -13099,7 +13097,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Finn Neste"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -13113,7 +13111,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Finn Forrige"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -13131,7 +13129,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid "Find in Files"
-msgstr ""
+msgstr "Finn i Filer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -13149,7 +13147,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Erstatt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13197,7 +13195,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Flytt Opp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13212,7 +13210,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Flytt Ned"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13224,7 +13222,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Slett Linje"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13242,7 +13240,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Veksle Kommentar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13258,7 +13256,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Veksle Linjebretting"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13271,7 +13269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "Klon Nedover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13303,7 +13301,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "Evaluer Seleksjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13335,7 +13333,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Store bokstaver"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13347,7 +13345,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Små bokstaver"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13359,7 +13357,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Store bokstaver"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13371,7 +13369,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
-msgstr ""
+msgstr "Konverter Innrykk til Mellomrom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13387,7 +13385,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Konverter Inrykk til Tabs"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13403,7 +13401,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Automatisk Innrykk"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13419,7 +13417,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "Veksle Bokmerke"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -13435,7 +13433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
-msgstr ""
+msgstr "Gå til Neste Bokmerke"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
@@ -13447,16 +13445,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "Gå til Forrige Bokmerke"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "Funksjoner"
+msgstr "Gå til Funksjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -13468,7 +13465,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Gå til Linje"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13513,8 +13510,9 @@ msgid "``script_text_editor/remove_all_breakpoints``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
+#, fuzzy
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "Gå til Neste Steg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -13526,7 +13524,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "Gå til Forrige Steg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -13557,9 +13555,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "Redigeringsverktøy"
+msgstr "Skript Redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13627,7 +13624,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
-msgstr ""
+msgstr "Gjenåpne Lukket Skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
@@ -13635,7 +13632,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Lagre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13651,7 +13648,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Lagre Alt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13667,7 +13664,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
-msgstr ""
+msgstr "Historie Forrige"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
@@ -13693,7 +13690,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Lukk"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13726,7 +13723,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Veksle skriptpanel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13750,7 +13747,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Nullstill Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -13762,7 +13759,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Finn Node Type"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -13770,7 +13767,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr ""
+msgstr "Kopier Noder"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -13778,7 +13775,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
-msgstr ""
+msgstr "Klipp ut Noder"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
@@ -13786,7 +13783,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "Paste Nodes"
-msgstr ""
+msgstr "Lim inn Noder"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -13794,7 +13791,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "Slett Valgte"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -13819,9 +13816,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "Funksjoner"
+msgstr "Lag Funksjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -13833,7 +13829,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "Edit Member"
-msgstr ""
+msgstr "Rediger Medlem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -13849,7 +13845,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "Oppdater Graf"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -13866,8 +13862,9 @@ msgstr "Redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
+#, fuzzy
 msgid "Copy Selection"
-msgstr ""
+msgstr "Fjern Utvalg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -13875,7 +13872,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "Nullstill Resultat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -13888,7 +13885,7 @@ msgstr "Feilsøking"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "Tre Inn I"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -13900,7 +13897,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "Hopp Over"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -13912,7 +13909,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "Fortsett"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -13928,7 +13925,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Gå Tilbake"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -13936,7 +13933,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Gå Fremover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -13944,7 +13941,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Gå Oppover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -13952,7 +13949,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Oppdater"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -13960,7 +13957,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Veksle Visning av Skjulte Filer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -13976,7 +13973,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Veksle Favorittmarkering"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -13984,7 +13981,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Veksle Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -13996,7 +13993,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
-msgstr ""
+msgstr "Lag Mappe"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14014,7 +14011,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Slett"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -14022,7 +14019,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr ""
+msgstr "Fokuser Bane"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14037,7 +14034,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Flytt Favoritt Oppover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -14055,7 +14052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Flytt Favoritt Nedover"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -14073,12 +14070,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "FilSystem Panel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Bane"
+msgstr "Kopier Bane"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14087,7 +14083,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplisér"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14111,7 +14107,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "Endre Navn på Parti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -14127,7 +14123,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Kopier Node-bane"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14168,7 +14164,7 @@ msgstr "Animasjontre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Dupliser utvalg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14176,7 +14172,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Dupliser transponert"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14192,7 +14188,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "Slett valgte"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14200,7 +14196,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Gå til neste steg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14216,7 +14212,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Gå til forrige steg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14236,7 +14232,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
-msgstr ""
+msgstr "Finn Flis"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
@@ -14308,7 +14304,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Roter til Venstre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
@@ -14316,7 +14312,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
-msgstr ""
+msgstr "Roter til Høyre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
@@ -14324,7 +14320,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "Clear Transform"
-msgstr ""
+msgstr "Nullstill Transformasjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14332,7 +14328,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Velg"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14344,7 +14340,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
-msgstr ""
+msgstr "Klipp ut Seleksjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -14356,7 +14352,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
-msgstr ""
+msgstr "Fjern Seleksjon"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
@@ -14369,7 +14365,7 @@ msgstr "Redigeringsverktøy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
-msgstr ""
+msgstr "Neste Koordinat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
@@ -14377,7 +14373,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "Previous Coordinate"
-msgstr ""
+msgstr "Forrige Koordinat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
@@ -14389,7 +14385,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
-msgstr ""
+msgstr "Region Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14401,7 +14397,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "Collision Mode"
-msgstr ""
+msgstr "Kollisjon Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -14413,7 +14409,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
-msgstr ""
+msgstr "Okklusjon Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
@@ -14424,9 +14420,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "Synlig navigasjon"
+msgstr "Navigasjon Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14438,7 +14433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
-msgstr ""
+msgstr "Bitmaske Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14450,7 +14445,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "Prioritet Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -14462,7 +14457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "Icon Mode"
-msgstr ""
+msgstr "Ikon Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -14474,7 +14469,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
-msgstr ""
+msgstr "Z Indeks Modus"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
@@ -24997,15 +24992,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
 msgid "Export all resources in the project"
-msgstr ""
+msgstr "Eksporter alle ressurser i prosjektet"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
+msgstr "Eksporter valgte scener (og avhengigheter)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
-msgstr ""
+msgstr "Exporter valgte ressurser (og avhengigheter)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:118
 msgid ""
@@ -73401,7 +73396,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
-msgstr ""
+msgstr "Endringer"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -84516,7 +84511,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Aktiver"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"

@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Polish
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # ᅚc <silenltypl@gmail.com>, 2018.
@@ -26,6 +26,8 @@
 # Jakub Korsak <jakub.korsak@protonmail.com>, 2020.
 # Jakub Maćkowiak <jakumac927@student.polsl.pl>, 2020.
 # Jarek Karpiel <jarek.karpiel@gmail.com>, 2020.
+# JHopen <jakub.hopen@gmail.com>, 2021.
+# Kamil Brzezinski <brzezinski.kamil@gmail.com>, 2021.
 # Katarzyna Twardowska <katarina.twardowska@gmail.com>, 2020.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # Kolunio <kolunio15wie@gmail.com>, 2020.
@@ -37,6 +39,7 @@
 # Mateusz Grzonka <alpinus4@gmail.com>, 2020.
 # Matshiro <mrmatshiro@gmail.com>, 2020.
 # Michael <michael0march@gmail.com>, 2019-2020.
+# Michał Borowiec <hello@michal-borowiec.pl>, 2021.
 # Mikołaj Lubiak <lubiakmikolaj@gmail.com>, 2020.
 # Mr Cubica123 <mcmr.slendy@gmail.com>, 2020.
 # Myver <igormakarowicz@gmail.com>, 2019.
@@ -53,7 +56,7 @@
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
 # Rafał Wyszomirski <rawyszo@gmail.com>, 2019-2020.
 # RM <synaptykq@gmail.com>, 2018-2019.
-# Roman Skiba <romanskiba0@gmail.com>, 2020.
+# Roman Skiba <romanskiba0@gmail.com>, 2020-2021.
 # Saran <saran@op.pl>, 2018.
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2020.
 # silicius <silicius42@gmail.com>, 2018.
@@ -68,7 +71,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-12-07 08:10+0000\n"
+"PO-Revision-Date: 2021-03-31 03:55+0000\n"
 "Last-Translator: Roman Skiba <romanskiba0@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
@@ -78,7 +81,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -997,7 +1000,7 @@ msgid ""
 "using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Godot wpiera Collada poprzez `OpenCollada  <https://github.com/KhronosGroup/"
+"Godot wpiera Collada poprzez `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax). Jeśli używasz "
 "Blendera, sprawdź nasz `Lepszy Eksporter Collada` <https://godotengine.org/"
 "download>`_."
@@ -1168,7 +1171,7 @@ msgid ""
 "works best. Check the :ref:`doc_multiple_resolutions` tutorial on how to "
 "achieve this."
 msgstr ""
-"Użyj opcji 'stretch' w Godot; '2D stretching'  wraz z utrzymaniem proporcji "
+"Użyj opcji 'stretch' w Godot; '2D stretching' wraz z utrzymaniem proporcji "
 "ekranu działa najlepiej. Sprawdź samouczek :ref:`doc_multiple_resolutions` "
 "by dowiedzieć się więcej."
 
@@ -1263,8 +1266,8 @@ msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
-"Kiedy będzie gotowa! Przeczytaj  :ref:"
-"`doc_release_policy_when_is_next_release_out` by dowiedzieć się więcej."
+"Kiedy będzie gotowa! Przeczytaj "
+":ref:`doc_release_policy_when_is_next_release_out` by dowiedzieć się więcej."
 
 #: ../../docs/about/faq.rst:271
 msgid "I would like to contribute! How can I get started?"
@@ -1643,13 +1646,12 @@ msgstr ""
 "obiektu 3D staje się czarna."
 
 #: ../../docs/about/troubleshooting.rst:22
-#, fuzzy
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
-"To jest `` znany błąd <https://github.com/godotengine/godot/issues/30330> "
-"`__ w sterownikach grafiki Intel w systemie Windows."
+"To jest ` znany błąd <https://github.com/godotengine/godot/issues/30330> `__ "
+"w sterownikach grafiki Intel w systemie Windows."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -1661,7 +1663,6 @@ msgstr ""
 "przełączyć renderer w prawym górnym rogu edytora lub w ustawieniach projektu."
 
 #: ../../docs/about/troubleshooting.rst:28
-#, fuzzy
 msgid ""
 "If you use a computer allowing you to switch your graphics card, like NVIDIA "
 "Optimus, you can use the dedicated graphics card to run Godot."
@@ -1675,7 +1676,6 @@ msgid "The editor or project takes a very long time to start."
 msgstr "Uruchomienie edytora lub projektu zajmuje bardzo dużo czasu."
 
 #: ../../docs/about/troubleshooting.rst:34
-#, fuzzy
 msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`__ "
 "on Windows when you have specific USB peripherals connected. In particular, "
@@ -1684,8 +1684,8 @@ msgid ""
 "to disconnect the faulty peripherals before opening the editor. You can then "
 "connect the peripheral again."
 msgstr ""
-"Jest to `` znany błąd <https://github.com/godotengine/godot/issues/20566> "
-"`__ w systemie Windows, gdy masz podłączone określone urządzenia peryferyjne "
+"Jest to `` znany błąd <https://github.com/godotengine/godot/issues/20566> `"
+"__ w systemie Windows, gdy masz podłączone określone urządzenia peryferyjne "
 "USB. W szczególności oprogramowanie Corsair iCUE wydaje się powodować błąd. "
 "Spróbuj zaktualizować sterowniki urządzeń peryferyjnych USB do ich "
 "najnowszej wersji. Jeśli błąd będzie się powtarzał, musisz odłączyć wadliwe "
@@ -1697,7 +1697,6 @@ msgid "The Godot editor appears frozen after clicking the system console."
 msgstr "Po kliknięciu konsoli systemowej edytor Godot ulega zamrożeniu."
 
 #: ../../docs/about/troubleshooting.rst:44
-#, fuzzy
 msgid ""
 "When running Godot on Windows with the system console enabled, you can "
 "accidentally enable *selection mode* by clicking inside the command window. "
@@ -1709,10 +1708,9 @@ msgstr ""
 "systemową można przypadkowo włączyć * tryb wyboru *, klikając w oknie "
 "poleceń. To zachowanie specyficzne dla systemu Windows wstrzymuje aplikację, "
 "aby umożliwić zaznaczenie tekstu w konsoli systemowej. Godot nie może "
-"zastąpić tego zachowania specyficznego dla systemu."
+"nadpisać tego specyficznego zachowania."
 
 #: ../../docs/about/troubleshooting.rst:49
-#, fuzzy
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
@@ -1721,12 +1719,10 @@ msgstr ""
 "klawisz Enter, aby opuścić tryb wyboru."
 
 #: ../../docs/about/troubleshooting.rst:53
-#, fuzzy
 msgid "The project window appears blurry, unlike the editor."
 msgstr "W przeciwieństwie do edytora okno projektu jest niewyraźne."
 
 #: ../../docs/about/troubleshooting.rst:55
-#, fuzzy
 msgid ""
 "Unlike the editor, the project isn't marked as DPI-aware by default. This is "
 "done to improve performance, especially on integrated graphics, where "
@@ -1738,7 +1734,6 @@ msgstr ""
 "powolne."
 
 #: ../../docs/about/troubleshooting.rst:59
-#, fuzzy
 msgid ""
 "To resolve this, open **Project > Project Settings** and enable **Display > "
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
@@ -1760,12 +1755,19 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"To jest `znany błąd <https://github.com/godotengine/godot/issues/13017>`__. "
+"By go rozwiązać, otwórz **Projekt > Ustawienia projektu** i włącz **Display "
+"> Window > Dpi > Allow Hidpi**. Dodatkowo, upewnij się, że twój projekt jest "
+"skonfigurowany by wspierać :ref:`wiele rozdzielczości "
+"<doc_multiple_resolutions>`."
 
 #: ../../docs/about/troubleshooting.rst:72
 msgid ""
 "The project works when run from the editor, but fails to load some files "
 "when running from an exported copy."
 msgstr ""
+"Projekt działa poprawnie uruchomiony przez edytor, jednak nie ładuje "
+"niektórych plików gdy jest uruchomiony z wyeksportowanej kopii."
 
 #: ../../docs/about/troubleshooting.rst:74
 msgid ""
@@ -1776,6 +1778,13 @@ msgid ""
 "exported project, you need to specify ``*.json`` in the non-resource export "
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
+"To jest zazwyczaj spowodowane nie uwzględnieniem formatu w filtrze dla "
+"plików nie będących zasobami w okienku eksportu. Domyślnie Godot dodaje do "
+"pliku PCK jedynie właściwe *zasoby*. Niektóre często używane pliki, takie "
+"jak JSON nie są uznawane za zasoby. Na przykład, jeśli załadujesz ``test."
+"json`` w wyeksportowanym projekcie, musisz wyszczególnić ``*.json`` w "
+"filtrze plików nie będącymi zasobami. Po więcej informacji zobacz "
+":ref:`doc_exporting_projects_export_mode`."
 
 #: ../../docs/about/troubleshooting.rst:81
 msgid ""
@@ -1786,6 +1795,12 @@ msgid ""
 "PCK filesystem is case-sensitive, while Windows's filesystem is case-"
 "insensitive by default."
 msgstr ""
+"Na Windowsie, to może być spowodowane przez problemy z :ref:`case "
+"sensitivity <doc_project_organization_case_sensitivity>`. Jeśli w skrypcie "
+"odniesiesz się do zasobu z inną wielkością liter niż w systemie plików, "
+"podczas eksportu projektu nie zostanie on załadowany. Dzieje się tak "
+"ponieważ wirtualny system plików PCK jest wrażliwy na wielkość liter, "
+"podczas gdy system plików Windowsa domyślnie nie zwraca na nią uwagi."
 
 #: ../../docs/about/list_of_features.rst:4
 msgid "List of features"
@@ -2219,20 +2234,24 @@ msgid ""
 "*GLES3:* Parallax/relief mapping with automatic level of detail based on "
 "distance."
 msgstr ""
+"*GLES3: * Mapowanie paralaksy / wypukłości z automatycznym poziomem "
+"szczegółowości na podstawie odległości."
 
 #: ../../docs/about/list_of_features.rst:163
 msgid "*GLES3:* Sub-surface scattering and transmittance."
-msgstr ""
+msgstr "*GLES3: * Przepuszczalność i rozpraszanie podpowierzchniowe."
 
 #: ../../docs/about/list_of_features.rst:164
 msgid "*GLES3:* Proximity fade (soft particles)."
-msgstr ""
+msgstr "*GLES3: * Wygaszanie zbliżeniowe (miękkie cząsteczki)."
 
 #: ../../docs/about/list_of_features.rst:165
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
 "through the transparent pipeline."
 msgstr ""
+"Zanikanie odległości, które może wykorzystywać mieszanie alfa lub "
+"rozpraszanie, aby uniknąć przechodzenia przez potok przezroczystości."
 
 #: ../../docs/about/list_of_features.rst:167
 msgid "Dithering can be determined on a per-pixel or per-object basis."
@@ -2248,16 +2267,15 @@ msgstr "Światła kierunkowe (słońce/księżyc). Do 4 na scenę."
 
 #: ../../docs/about/list_of_features.rst:172
 msgid "Omnidirectional lights."
-msgstr ""
+msgstr "Wielokierunkowe światła."
 
 #: ../../docs/about/list_of_features.rst:173
 msgid "Spot lights with adjustable cone angle and attenuation."
-msgstr ""
+msgstr "Światła punktowe z modyfikowalnym kątem stożka i osłabianiem."
 
 #: ../../docs/about/list_of_features.rst:175
-#, fuzzy
 msgid "**Shadow mapping:**"
-msgstr "Shadery"
+msgstr "**Mapowanie cieni**"
 
 #: ../../docs/about/list_of_features.rst:177
 msgid ""
@@ -2272,30 +2290,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:181
-#, fuzzy
 msgid "*SpotLight:* Single texture."
-msgstr "Importowanie tekstur"
+msgstr "*Reflektor:* Pojedyncza tekstura."
 
 #: ../../docs/about/list_of_features.rst:183
 msgid "**Global illumination with indirect lighting:**"
-msgstr ""
+msgstr "**Globalne oświetlenie z pośrednim światłem:**"
 
 #: ../../docs/about/list_of_features.rst:185
 msgid "Baked lightmaps (fast, but can't be updated at run-time)."
 msgstr ""
+"Wypalane mapy świetlne (szybkie, ale nie mogą być aktualizowane podczas "
+"uruchomionej aplikacji)."
 
 #: ../../docs/about/list_of_features.rst:187
 msgid "Lightmaps are baked on the CPU."
-msgstr ""
+msgstr "Mapy świetlne są wypalone na procesorze."
 
 #: ../../docs/about/list_of_features.rst:189
 msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
+"*GLES3:* Sondy GI (wolne, połowiczne w czasie rzeczywistym). Wspierają "
+"odbicia."
 
 #: ../../docs/about/list_of_features.rst:191
-#, fuzzy
 msgid "**Reflections:**"
-msgstr "Odbicie"
+msgstr "**Odbicia:**"
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -2314,31 +2334,32 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:197
 msgid "Reflection techniques can be mixed together for greater accuracy."
 msgstr ""
+"Techniki odbicia mogą być za sobą łączone w celu osiągnięcia większej "
+"dokładności."
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
-msgstr ""
+msgstr "**Niebo:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
-msgstr ""
+msgstr "Panoramiczne niebo (używając HDRI)."
 
 #: ../../docs/about/list_of_features.rst:202
-#, fuzzy
 msgid "Procedural sky."
-msgstr " :ref:`Shadery cząstek<doc_particle_shader>`"
+msgstr "Proceduralne niebo."
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Fog:**"
-msgstr ""
+msgstr "**Mgła:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
-msgstr ""
+msgstr "Głębokość mgły z regulowaną krzywą tłumienia."
 
 #: ../../docs/about/list_of_features.rst:207
 msgid "Height fog (floor or ceiling) with adjustable attenuation."
-msgstr ""
+msgstr "Wysokość mgły (podłogi lub sufitu) z regulowanym tłumieniem."
 
 #: ../../docs/about/list_of_features.rst:208
 msgid ""
@@ -2348,21 +2369,19 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:210
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr ""
+msgstr "Opcjonalna przepuszczalność by światła były bardziej widoczne w mgle."
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Cząsteczki"
+msgstr "**Cząsteczki:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:217
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "Środowisko i post-processing"
+msgstr "**Post-processing:***"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -2371,10 +2390,11 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:220
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
 msgstr ""
+"*GLES3:* Automatyczne dostosowanie ekspozycji bazujące na jasności ekranu."
 
 #: ../../docs/about/list_of_features.rst:221
 msgid "*GLES3:* Near and far depth of field."
-msgstr ""
+msgstr "*GLES3:* Bliska i odległa głębia ostrości."
 
 #: ../../docs/about/list_of_features.rst:222
 msgid "*GLES3:* Screen-space ambient occlusion."
@@ -2388,108 +2408,111 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:225
 msgid "Color correction using an one-dimensional ramp."
-msgstr ""
+msgstr "Korekcja kolory wykorzystując jednowymiarową krzywą."
 
 #: ../../docs/about/list_of_features.rst:226
 msgid "Brightness, contrast and saturation adjustments."
-msgstr ""
+msgstr "Dostosowanie jasności, kontrastu oraz nasycenia."
 
 #: ../../docs/about/list_of_features.rst:228
-#, fuzzy
 msgid "**Texture filtering:**"
-msgstr "**Fedora**"
+msgstr "**Filtrowanie tekstur:**"
 
 #: ../../docs/about/list_of_features.rst:230
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
-msgstr ""
+msgstr "Filtrowanie, bliskie, dwuliniowe, trójliniowe lub anizotropiczne."
 
 #: ../../docs/about/list_of_features.rst:232
-#, fuzzy
 msgid "**Texture compression:**"
-msgstr "TextureProgress"
+msgstr "**Kompresja tekstur:**"
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "*GLES3:* BPTC for high-quality compression (not supported on macOS)."
 msgstr ""
+"*GLES3:* BPTC dla wysokiej jakości kompresji (nie wspierane w systemie "
+"macOS)."
 
 #: ../../docs/about/list_of_features.rst:235
 msgid "*GLES3:* ETC2 (not supported on macOS)."
-msgstr ""
+msgstr "*GLES3:* ETC2 (nie wspierane w systemie macOS)."
 
 #: ../../docs/about/list_of_features.rst:236
 msgid "ETC1 (recommended when using the GLES2 renderer)."
-msgstr ""
+msgstr "ETC1 (rekomendowane przy użyciu renderowania GLES2)."
 
 #: ../../docs/about/list_of_features.rst:237
 msgid "*GLES3:* S3TC (not supported on mobile/Web platforms)."
 msgstr ""
+"*GLES3:* S3TC (nie wspierane w zastosowaniach mobilnych oraz internetowych)."
 
 #: ../../docs/about/list_of_features.rst:239
 msgid "**Anti-aliasing:**"
-msgstr ""
+msgstr "**Wygładzanie krawędzi:**"
 
 #: ../../docs/about/list_of_features.rst:241
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "Wielokrotne instancje"
+msgstr "Wielopróbkowe wygładzanie krawędzi (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
 "Most of these effects can be adjusted for better performance or to further "
 "improve quality. This can be helpful when using Godot for offline rendering."
 msgstr ""
+"Większość tych efektów może być dostosowana by poprawić wydajność lub "
+"poprawić jakość grafiki. Może być to pomocne gdy używasz Godota do "
+"renderowania offline."
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "tool"
+msgstr "Narzędzia 3D"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
+"Wbudowane siatki: sześcian, cylinder/stożek, (pół)kula, pryzmat, "
+"płaszczyzna, wielokąt."
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Geometria generowana procedularnie <toc-procedural_geometry>`"
+msgstr ":ref:`Geometria generowana procedularnie <toc-procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
 ":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
 "prototyping)."
 msgstr ""
+":ref:`Konstruktywna geometria <doc_csg_tools>` (przydatne prototypowaniu)."
 
 #: ../../docs/about/list_of_features.rst:252
 msgid "Path3D node to represent a path in 3D space."
-msgstr ""
+msgstr "Węzeł Path3D (Ścieżka3D) by pokazać ścieżkę w przestrzeni 3D."
 
 #: ../../docs/about/list_of_features.rst:255
 msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr ""
+"Węzeł PathFollow3D (ŚledzenieŚcieżki3D) by węzeł podążał za Path3D "
+"(Ścieżka3D)."
 
 #: ../../docs/about/list_of_features.rst:257
 msgid "3D geometry helper class."
-msgstr ""
+msgstr "Klasa pomocnicza geometrii 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Fizyka"
+msgstr "Fizyka 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
-msgstr ""
+msgstr "Ciała pojazdów (stworzone dla fizyki arcade, nie symulacji)."
 
 #: ../../docs/about/list_of_features.rst:269
-#, fuzzy
 msgid "Soft bodies."
-msgstr "StaticBody2D"
+msgstr "Ciała Miękkie."
 
 #: ../../docs/about/list_of_features.rst:270
-#, fuzzy
 msgid "Ragdolls."
-msgstr "System plików"
+msgstr "Szmaciane lalki."
 
 #: ../../docs/about/list_of_features.rst:275
 msgid ""
@@ -2508,9 +2531,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:280
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:4
-#, fuzzy
 msgid "Shaders"
-msgstr "Typy Shaderów"
+msgstr "Shadery"
 
 #: ../../docs/about/list_of_features.rst:282
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -2527,14 +2549,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Korzystanie z zewnętrznego edytora tekstu"
+msgstr "Wizualny edytor shaderów."
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Tworzenie wtyczek"
+msgstr "Wsparcie dla wizualnego tworzenia wtyczek."
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2545,9 +2565,8 @@ msgid "Scripting"
 msgstr "Skrypty"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "Ogólne"
+msgstr "**Ogólne:**"
 
 #: ../../docs/about/list_of_features.rst:294
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2608,14 +2627,15 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "Animacja Sprita"
+msgstr "Wspiera wszystkie platformy."
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
 "Using an external editor is recommended to benefit from IDE functionality."
 msgstr ""
+"Używanie zewnętrznego edytora jest rekomendowane, by korzystać z wszystkich "
+"funkcjonalności IDE."
 
 #: ../../docs/about/list_of_features.rst:318
 msgid ":ref:`VisualScript: <toc-learn-scripting-visual_script>`"
@@ -2696,9 +2716,8 @@ msgid "Audio input to record microphones."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:351
-#, fuzzy
 msgid "MIDI input."
-msgstr "Wejście"
+msgstr "Wejście MIDI."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
@@ -2709,9 +2728,8 @@ msgid "**APIs used:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:357
-#, fuzzy
 msgid "*Windows:* WASAPI."
-msgstr "**Windows**"
+msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
@@ -2726,24 +2744,20 @@ msgid "Import"
 msgstr "Importuj"
 
 #: ../../docs/about/list_of_features.rst:364
-#, fuzzy
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ":ref:`Proste pisanie Shaderów <doc_shading_language>`"
+msgstr "Wsparcie dla :ref:`własny import wtyczek <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "**Formats:**"
-msgstr "**Platformy:**"
+msgstr "**Formaty:**"
 
 #: ../../docs/about/list_of_features.rst:368
-#, fuzzy
 msgid "*Images:* See :ref:`doc_import_images`."
-msgstr "**Konsola:** Patrz :ref:`doc_consoles`"
+msgstr "*Obrazy:* Patrz :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Dźwięk"
+msgstr "*Dźwięk:*"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2754,20 +2768,20 @@ msgid "Ogg Vorbis."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:374
-#, fuzzy
 msgid "*3D scenes:*"
-msgstr "Sceny"
+msgstr "*Sceny 3D:*"
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:377
-#, fuzzy
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
-msgstr "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ ("
+"bezpośredni eksport z Blendera)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
@@ -2804,9 +2818,8 @@ msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:391
-#, fuzzy
 msgid "Keyboard input."
-msgstr "Skrót klawiszowy"
+msgstr "Klawiatura."
 
 #: ../../docs/about/list_of_features.rst:393
 msgid ""
@@ -2815,9 +2828,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:395
-#, fuzzy
 msgid "Mouse input."
-msgstr "Zdarzenia wejścia"
+msgstr "Mysz."
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
@@ -2848,9 +2860,8 @@ msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Tryb nawigacji"
+msgstr "Siatki nawigacji."
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2887,9 +2898,8 @@ msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:422
-#, fuzzy
 msgid "High-level multiplayer API using UDP and ENet."
-msgstr "Wysokopoziomowy multiplayer"
+msgstr "Wysokopoziomowe API multiplayer dzięki UDP i ENet."
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "Automatic replication using remote procedure calls (RPCs)."
@@ -2957,9 +2967,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:448
-#, fuzzy
 msgid "Fullscreen mode."
-msgstr "Pełnoekranowy quad"
+msgstr "Tryb pełnoekranowy."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
@@ -2994,9 +3003,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:459
-#, fuzzy
 msgid "Parse custom command line arguments."
-msgstr "Linia komend"
+msgstr "Wywoływanie własnych komend wiersza poleceń."
 
 #: ../../docs/about/list_of_features.rst:462
 #, fuzzy
@@ -3004,9 +3012,8 @@ msgid "Mobile"
 msgstr "Na telefonie"
 
 #: ../../docs/about/list_of_features.rst:464
-#, fuzzy
 msgid "In-app purchases on Android and iOS."
-msgstr "Zakupy w aplikacji"
+msgstr "Zakupy wewnątrz aplikacji na systemach Android i iOS."
 
 #: ../../docs/about/list_of_features.rst:465
 msgid "Support for advertisements using third-party modules."
@@ -3042,14 +3049,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "Węzły:"
+msgstr "**Węzły:**"
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "Buttons."
-msgstr "Przycisk"
+msgstr "Przyciski."
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Checkboxes, check buttons, radio buttons."
@@ -3068,9 +3073,8 @@ msgid "Scrollbars."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:487
-#, fuzzy
 msgid "Labels."
-msgstr "Labels(Etykiety)"
+msgstr "Labels (Etykiety)."
 
 #: ../../docs/about/list_of_features.rst:488
 msgid ""
@@ -3101,19 +3105,18 @@ msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:496
-#, fuzzy
 msgid "Containers to place GUI elements automatically following certain rules."
-msgstr "Automatyczne dodawanie kontenerów do elementów interfejsu użytkownika"
+msgstr ""
+"Kontenery do automatycznego umieszczania elementów GUI według określonych "
+"reguł."
 
 #: ../../docs/about/list_of_features.rst:498
-#, fuzzy
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Stos <class_BoxContainer>`."
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`Siatka <class_GridContainer>`."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
@@ -3140,9 +3143,8 @@ msgid "**Theming:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:509
-#, fuzzy
 msgid "Built-in theme editor."
-msgstr "Uruchamianie edytora"
+msgstr "Wbudowany edytor motywów."
 
 #: ../../docs/about/list_of_features.rst:511
 msgid "Generate a theme based on the current editor theme settings."
@@ -3265,21 +3267,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:559
-#, fuzzy
 msgid "Command line interface for automation."
-msgstr "Linia komend"
+msgstr "Interfejs wiersza poleceń pozwalający na automatyzację."
 
 #: ../../docs/about/list_of_features.rst:561
 msgid "Export and deploy projects using continuous integration platforms."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:562
-#, fuzzy
 msgid ""
 "`Completion scripts <https://github.com/godotengine/godot/tree/master/misc/"
 "dist/shell>`__ are available for Bash, zsh and fish."
 msgstr ""
-"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
+"`Autouzupełnianie <https://github.com/godotengine/godot/tree/master/misc/"
+"dist/shell>`__ dostępne dla powłok Bash, zsh i fish."
 
 #: ../../docs/about/list_of_features.rst:565
 msgid ""
@@ -3903,7 +3904,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:43
 msgid "Godot 3.0"
-msgstr "W Godot 3.0:"
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:43
 msgid "January 2018"
@@ -3911,7 +3912,7 @@ msgstr "Styczeń 2018"
 
 #: ../../docs/about/release_policy.rst:45
 msgid "Godot 2.1"
-msgstr "W Godot 2.1:"
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:45
 msgid "July 2016"
@@ -3929,11 +3930,11 @@ msgstr "Luty 2016"
 #: ../../docs/about/release_policy.rst:49
 #: ../../docs/about/release_policy.rst:51
 msgid "|eol| No longer supported."
-msgstr "|eol| Nie jest już wspierane"
+msgstr "|eol| Już nie wspierany."
 
 #: ../../docs/about/release_policy.rst:49
 msgid "Godot 1.1"
-msgstr "W Godot 1.1:"
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:49
 msgid "May 2015"
@@ -4005,10 +4006,10 @@ msgstr ""
 "musisz wiedzieć, by zacząć pracę z silnikiem."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
-#, fuzzy
 msgid ""
 "You can `download Godot Engine here <https://godotengine.org/download/>`_."
-msgstr "`Oficjalna strona pytań i odpowiedzi <https://godotengine.org/qa/>`_"
+msgstr ""
+"Możesz `pobrać Godot Engine tutaj <https://godotengine.org/download/>` _."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
@@ -5590,9 +5591,8 @@ msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
-"Mimo że będziemy tworzyć nasze połączenia poprzez kod przez resztę tego "
-"samouczka, na przyszłość przyjrzyjmy się jak dodać połączenie, korzystając "
-"z  interfejsu edytora."
+"Mimo że przez resztę tego samouczka będziemy tworzyć nasze połączenia "
+"poprzez kod, na przyszłość pokażmy od razu jak tworzyć je poprzez interfejs."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:196
 msgid ""
@@ -5705,11 +5705,11 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-" Powszechnym błędem jest brak zrozumienia co do tego, jak działa metoda "
-"``get_node(path)``. Dla wybranego węzła, ``get_node(path)`` szuka swoich "
-"najbliższych dzieci. W kodzie powyżej, oznacza to, że Button musi być "
-"dzieckiem elementu Panel. Gdyby Button był dzieckiem elementu Label, kod, "
-"który zwróciłby węzeł Button wyglądałby następująco:"
+"Powszechnym błędem jest brak zrozumienia co do tego, jak działa metoda "
+"``get_node(path)``. Dla wybranego węzła, ``get_node(path)`` przeszukuje "
+"swoje bezpośrednie węzły-dzieci. W kodzie powyżej, oznacza to, że Button "
+"musi być dzieckiem elementu Panel. Gdyby Button był dzieckiem elementu "
+"Label, kod, który zwróciłby węzeł Button wyglądałby następująco:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:332
 msgid "Also, remember that nodes are referenced by name, not by type."
@@ -12630,7 +12630,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "Wady"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -21863,6 +21863,9 @@ msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Tablice mogą być użyte jako klucz, indeks lub zamiennie (zobacz poniższe "
+"przykłady). Kolejność ma znaczenie jedynie gdy tablica jest używana jako "
+"indeks lub zamiennie."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
@@ -21894,10 +21897,13 @@ msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"Zauważ, że wartości są wkładane w kolejności. Pamiętaj, że wszystkie symbole "
+"zastępcze muszą być zamieniane jednocześnie, więc musi być odpowiednia "
+"liczba wartości."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "Specyfikatory formatowania"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -21906,10 +21912,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"Istnieją specyfikatory formatowania inne niż ``s`` które mogą być użyte jako "
+"symbole zastępcze. Składają się z jednego lub więcej znaków. Niektóre z nich "
+"występują osobno jak ``s``, inne pojawiają się przed innymi znakami, inne "
+"działają tylko z konkretnymi wartościami lub znakami."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "Typy symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -21927,6 +21937,7 @@ msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
+"**Prosta** konwersja na String przez tę samą metodę co domniemana konwersja."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
@@ -21947,6 +21958,8 @@ msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Liczba **całkowita w systemie dziesiętnym**. Oczekuje liczby całkowitej lub "
+"rzeczywistej(zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -21957,26 +21970,32 @@ msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Liczba **całkowita w systemie ósemkowym**. Oczekuje liczby całkowitej lub "
+"rzeczywistej (zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Liczba **całkowita w systemie szesnastkowym z **małymi** literami. Oczekuje "
+"liczby całkowite lub rzeczywistej (zostanie zaokrąglona w dół)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Liczba **całkowita w systemie szesnastkowym** z **wielkimi** literami. "
+"Oczekuje liczby całkowitej lub rzeczywistej (zostanie zaokrąglona)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
@@ -21985,10 +22004,12 @@ msgstr "``f``"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
 msgstr ""
+"Liczba **rzeczywista w systemie dziesiętnym**. Oczekuje liczby całkowitej "
+"lub rzeczywistej."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "Modyfikatory symboli zastępczych"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
@@ -22021,7 +22042,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Integer"
-msgstr ""
+msgstr "Liczba całkowita"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
@@ -22149,12 +22170,12 @@ msgstr "**Wynik**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:288
 msgid "Dictionary"
-msgstr ""
+msgstr "Słownik"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "klucz"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #, fuzzy
@@ -22178,7 +22199,7 @@ msgstr "Hej, Godette v3.0!"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "indeks"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #, fuzzy
@@ -22203,7 +22224,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:267
 msgid "Array"
-msgstr ""
+msgstr "Tablica"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #, fuzzy
@@ -22480,6 +22501,11 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"Większość typów węzłów i innych typów obiektów w Godot zawierają funkcje "
+"wirtualne. Są to funkcje które zostaną wywołane (kod będzie uruchomiony) gdy "
+"coś się stanie i będzie możliwe do sprawdzenia w odwołaniach. Funkcje "
+"wirtualne są wypisywane po naciśnięciu ikony \"Nadpisywane\" w panelu "
+"funkcji:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -23321,7 +23347,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:445
 msgid "Wait"
-msgstr ""
+msgstr "Czekaj"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid ""
@@ -24545,7 +24571,7 @@ msgstr "Zobacz również: :ref:`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
 msgid "Singletons"
-msgstr ""
+msgstr "Singletony"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -29424,7 +29450,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
-msgstr ""
+msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
@@ -61394,7 +61420,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_containers.rst:4
 #: ../../docs/development/cpp/core_types.rst:138
 msgid "Containers"
-msgstr ""
+msgstr "Zbiorniki"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:6
 msgid ""
@@ -91290,7 +91316,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "Definicje"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -91636,7 +91662,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "Klasa Wariant"
 
 #: ../../docs/development/cpp/variant_class.rst:9
 msgid ""
@@ -91646,6 +91672,11 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"Wariant jest najważniejszym typem danych w Godot, jest najważniejszą klasą w "
+"silniku. Wariant zajmuje tylko 20 bajtów i może przechowywać wewnątrz prawie "
+"każdy typ danych. Warianty są rzadko używanie do przechowywania informacji "
+"przez długi okres, zamiast tego są używane głównie do komunikacji, edycji, "
+"serializacji i ogólnie przenoszenia danych."
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
@@ -91741,6 +91772,8 @@ msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
@@ -94003,9 +94036,8 @@ msgid "Tangents array"
 msgstr "Tangens"
 
 #: ../../docs/development/file_formats/tscn.rst:343
-#, fuzzy
 msgid "Vertex colors array"
-msgstr "Kolor wierzchołka"
+msgstr "Tablica kolorów wierzchołków"
 
 #: ../../docs/development/file_formats/tscn.rst:344
 msgid "UV array 1"
@@ -94058,7 +94090,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:387
 msgid "``type``"
-msgstr ""
+msgstr "``typ``"
 
 #: ../../docs/development/file_formats/tscn.rst:388
 #, fuzzy
@@ -94072,7 +94104,7 @@ msgstr "Center"
 
 #: ../../docs/development/file_formats/tscn.rst:390
 msgid "``keys``"
-msgstr ""
+msgstr "``klucze``"
 
 #: ../../docs/development/file_formats/tscn.rst:391
 msgid "``loop_wrap``"
@@ -94349,12 +94381,16 @@ msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
 msgstr ""
+"Techniczne szczegóły na temat przepływu pracy PR są opisane w odrębnej "
+"sekcji, :ref:`doc_pr_workflow`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:92
 msgid ""
 "Details about the code style guidelines and the ``clang-format`` tool used "
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
 msgstr ""
+"Szczegóły na temat wytycznych stylu kodu oraz narzędzia ``clang-format`` "
+"używanego do egzekwowania ich są opisane w :ref:`doc_code_style_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid "Testing and reporting issues"
@@ -94587,6 +94623,10 @@ msgid ""
 "resources in their native language instead of English, our community helps "
 "translate both the Godot editor and its documentation in many languages."
 msgstr ""
+"By uczynić Godot dostępnym dla wszystkich, włączając użytkowników, którzy "
+"mogą woleć zasoby w swoim ojczystym języku a nie angielskim, nasza "
+"społeczność pomaga tłumaczyć zarówno edytor jaki i jego dokumentację na "
+"wiele języków."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:201
 #, fuzzy
@@ -94595,7 +94635,7 @@ msgstr ":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>`"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:4
 msgid "Best practices for engine contributors"
-msgstr ""
+msgstr "Najlepsze praktyki dla wspierających rozwój silnika"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:9
 msgid ""
@@ -94606,6 +94646,12 @@ msgid ""
 "common misunderstandings and bad practices during the process of "
 "contributing code to the project."
 msgstr ""
+"Godot posiada wielu użytkowników, którzy są w stanie go rozwijać, zważywszy "
+"na to, że projekt sam w sobie jest skierowany głównie do użytkowników "
+"potrafiących programować. Mimo to nie wszyscy są na tym samym poziomie "
+"doświadczenia w pracy z dużymi projektami lub w inżynierii oprogramowania, "
+"co może prowadzić do częstych nieporozumień i korzystania ze złych praktyk "
+"podczas rozwijania kodu projektu."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:18
 msgid ""
@@ -94614,6 +94660,9 @@ msgid ""
 "refer to common situations that arise in the process of submitting their "
 "contributions."
 msgstr ""
+"Zakres tego dokumentu to lista najlepszych praktyk dla rozwijających kod, a "
+"także tworzenie języka, którego mogą oni używać w sytuacjach, które "
+"pojawiają się w takcie publikowania zmian."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:22
 msgid ""
@@ -94621,6 +94670,9 @@ msgid ""
 "development, our intention is to just restrict to situations that are most "
 "common in our project."
 msgstr ""
+"Podczas gdy niektórzy mogą uznać za dobry pomysł by rozszerzyć to na ogólne "
+"wytwarzanie oprogramowania, naszym zamiarem jest ograniczenie tego do "
+"sytuacji najczęściej napotykanych w naszym projekcie."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:26
 msgid ""
@@ -94628,15 +94680,18 @@ msgid ""
 "new features. To abstract this idea, we will call them *Solutions*, because "
 "they always seek to solve something that can be described as a *Problem*."
 msgstr ""
+"Wsparciem są zazwyczaj poprawki błędów, rozszerzenia lub nowe "
+"funkcjonalności. By uogólnić to pojęcie, nazwiemy je *Rozwiązaniami*, "
+"ponieważ ich celem jest zawsze rozwiązanie czegoś co może być określone jako "
+"*Problem*."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:31
-#, fuzzy
 msgid "Best Practices"
-msgstr "Dobre praktyki:"
+msgstr "Najlepsze praktyki"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:34
 msgid "#1: The problem always comes first"
-msgstr ""
+msgstr "#1: Najpierw problem"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:36
 msgid ""
@@ -94645,6 +94700,10 @@ msgid ""
 "love programming. Whatever the case may be, they come up with cool ideas, "
 "which may not be actually solving any actual problems."
 msgstr ""
+"Duża część wspierających jest niesamowicie kreatywna i po prostu uwielbia "
+"projektować abstrakcyjne struktury danych, tworzyć piękne interfejsy "
+"użytkowania, lub po prostu kocha programować. Jednakże, jakkolwiek ich "
+"pomysły mogą być niesamowite, niekoniecznie rozwiązują istniejące problemy."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:43
 msgid ""
@@ -94654,10 +94713,15 @@ msgid ""
 "Avoiding the addition of anything unnecessary is always considered a good "
 "practice in software development."
 msgstr ""
+"Są one nazywane *Rozwiązanie poszukujące problemu*. W idealnym świecie nie "
+"byłyby one problemem, jednak w rzeczywistości kod zajmuje czas do napisania, "
+"miejsce do trzymania jako źródło czy kompilacja i wymaga utrzymywania gdy "
+"już zostanie napisany. Unikanie dodawanie czegokolwiek zbędnego jest zawsze "
+"uznawane za dobrą praktykę w rozwoju oprogramowania."
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:50
 msgid "#2: To solve the problem, it has to exist in the first place"
-msgstr ""
+msgstr "#2: By rozwiązać problem, musi on najpierw istnieć"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:52
 msgid ""
@@ -94717,13 +94781,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:88
-#, fuzzy
 msgid "The complexity of the problem"
-msgstr "Rola skryptu"
+msgstr "Złożoność problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:89
 msgid "The frequency the problem"
-msgstr ""
+msgstr "Częstotliwość pojawiania się problemu"
 
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:91
 msgid ""
@@ -98908,6 +98971,8 @@ msgid ""
 "`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
 "(2D and 3D, GDScript, VisualScript and C#)."
 msgstr ""
+"`Jeremy Bullock <https://www.youtube.com/channel/UCwJw2-V5S1TkBjLQ3_Ws54g>`_ "
+"(2D i 3D, GDScript, VisualScript i C#)."
 
 #: ../../docs/community/tutorials.rst:29
 #, fuzzy
@@ -98919,16 +98984,22 @@ msgstr ""
 "playlists>`_"
 
 #: ../../docs/community/tutorials.rst:30
+#, fuzzy
 msgid ""
 "`Mister Taft Creates <https://www.youtube.com/playlist?"
 "list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 msgstr ""
+"`Mister Taft Creates <https://www.youtube.com/"
+"playlist?list=PL4vbr3u7UKWqwQlvwvgNcgDL1p_3hcNn2>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:31
+#, fuzzy
 msgid ""
 "`Miziziziz <https://www.youtube.com/playlist?"
 "list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_ (2D, GDScript)."
 msgstr ""
+"`Miziziziz <https://www.youtube.com/"
+"playlist?list=PLmugv6_kd0qN6AyjG245_Pdak4MXKUx88>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:32
 msgid ""

@@ -1,24 +1,27 @@
 # Godot Engine Documentation in Indonesian
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Abid Febriansyah <abid.febri027@gmail.com>, 2020.
 # Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020.
-# Alficiro <alfiboy2003@gmail.com>, 2019.
+# Alficiro <alfiboy2003@gmail.com>, 2019, 2021.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
+# dan990308 <sdanang657@gmail.com>, 2021.
 # Dimzt <dimas12345yuio@gmail.com>, 2019.
 # dzikroy 119 <dzikroy119@gmail.com>, 2020.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
+# Hanz <hanzhaxors@gmail.com>, 2021.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
 # Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
+# Reza Almanda <rezaalmanda27@gmail.com>, 2021.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
-# Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2020.
+# Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2021.
 # triarts <agung.triarta.h@gmail.com>, 2019.
 # yusuf afandi <afandi.yusuf.04@gmail.com>, 2020.
 #
@@ -27,8 +30,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-12-07 08:11+0000\n"
-"Last-Translator: Ade Fikri Malihuddin <ade.fm97@gmail.com>\n"
+"PO-Revision-Date: 2021-03-29 15:41+0000\n"
+"Last-Translator: Hanz <hanzhaxors@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -36,7 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -69,9 +72,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Dokumentasi ini terjemahan dari 'dokumen original berbahasa inggris <https://"
-"docs.godotengine.org/en/latest>'  _ oleh anggota komunitas pada 'Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs>' _."
+"Dokumentasi ini diterjemahkan dari 'dokumen original berbahasa inggris "
+"<https://docs.godotengine.org/en/latest>' _ oleh anggota komunitas pada "
+"'Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs>' _."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -91,9 +94,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"Untuk Sementara ini, terjemahan lokal hanya tersedia untuk Branch \"Terbaru"
-"\" (\"latest\") (development/pengembangan), tapi seharusnya cocok untuk "
-"mempelajari bagaimana cara menggunakan Godot versi stabil."
+"Untuk Sementara ini, terjemahan lokal hanya tersedia untuk branch \"Terbaru\""
+" (\"latest\") (development/pengembangan), tapi seharusnya cocok untuk "
+"mempelajari cara menggunakan Godot versi stabil."
 
 #: ../../docs/index.rst:31
 msgid ""
@@ -895,13 +898,12 @@ msgstr ""
 "Alasan utama untuk membuat bahasa scripting sendiri untuk Godot adalah:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Lemahnya dukungan thread di sebagian besar script VM, dan Godot menggunakan "
-"thread (Lua, Python, Squirrel, JS, AS, dsb.)."
+"Lemahnya dukungan thread di sebagian besar skrip VM dan Godot menggunakan "
+"thread (Lua, Python, Squirrel, JS, AS, dll)."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
@@ -951,9 +953,8 @@ msgstr ""
 "live editing, dll (semuanya itu). Hal ini didukung dengan baik oleh GDScript"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
-msgstr "GDScript dirancang  untuk mengurangi masalah diatas dan banyak lagi."
+msgstr "GDScript dirancang untuk mengurangi masalah diatas dan lainnya."
 
 #: ../../docs/about/faq.rst:156
 msgid "What type of 3D model formats does Godot support?"
@@ -1270,7 +1271,6 @@ msgstr ""
 "Saya punya ide cemerlang untuk Godot. Bagaimana Saya dapat membagikannya?"
 
 #: ../../docs/about/faq.rst:283
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1282,15 +1282,15 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Memang menggiurkan untuk membawa ide ke Godot, seperti yang menghasilkan "
-"perombakan core(dasar/inti) besar, meniru apa yang Game Engine lain lakukan, "
-"atau alternative alur kerja yang anda buat ke editor. Itu semua memang bagus "
+"Memang menggiurkan untuk mengusulkan ide ke Godot, seperti yang menghasilkan "
+"perombakan besar core(dasar/inti), meniru apa yang Game Engine lain lakukan, "
+"atau alternatif alur kerja yang anda buat ke editor. Itu semua memang bagus "
 "dan kami berterimakasih karena memiliki orang yang termotivasi untuk "
 "berkontribusi, tapi fokus Godot adalah dan akan selalu menjadi dasar "
-"funsionalitas sebagaimana tertulis didalam `Roadmap <https://github.com/"
-"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `Memburu bugs dan "
-"menunjukan issues <https://github.com/godotengine/godot/issues>`_, dan "
-"percakapan antara anggota komunitas godot."
+"fungsionalitas sebagaimana tertulis didalam `Roadmap <https://github.com/"
+"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `Memburu kutu dan "
+"membuat tiket <https://github.com/godotengine/godot/issues>`_, dan "
+"percakapan antar anggota komunitas Godot."
 
 #: ../../docs/about/faq.rst:292
 msgid ""
@@ -1503,15 +1503,14 @@ msgstr ""
 "Design)?"
 
 #: ../../docs/about/faq.rst:363
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Ketika Godot internally banyak melakukan tugas berat yang mencoba untuk "
+"Ketika Godot secara internal banyak melakukan tugas berat yang mencoba untuk "
 "menggunakan cache coherency sebaik mungkin, kami percaya pengguna tidak "
-"terlalu membutuhkan untuk dipaksa menggunakan praktik DoD."
+"terlalu perlu untuk dipaksa menggunakan praktik DoD."
 
 #: ../../docs/about/faq.rst:367
 msgid ""
@@ -1795,14 +1794,12 @@ msgstr ""
 "list_of_features.html>` __ tersedia di versi pengembangan terbaru (4.0)."
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "Fitur"
+msgstr "Fitur-fitur"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Platform-specific (Perangkat spesifik)"
+msgstr "Platform"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1944,9 +1941,8 @@ msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Gunakan editor dalam berbagai bahasa yang disumbangkan oleh komunitas."
 
 #: ../../docs/about/list_of_features.rst:68
-#, fuzzy
 msgid "**Plugins:**"
-msgstr "Pengaya"
+msgstr "**Pengaya:**"
 
 #: ../../docs/about/list_of_features.rst:70
 msgid ""
@@ -2073,14 +2069,12 @@ msgstr "Partikel berbasis GPU dengan dukungan untuk custom particle shader."
 
 #: ../../docs/about/list_of_features.rst:109
 #: ../../docs/about/list_of_features.rst:215
-#, fuzzy
 msgid "CPU-based particles."
-msgstr "Partikel"
+msgstr "Partikel berbasis CPU."
 
 #: ../../docs/about/list_of_features.rst:112
-#, fuzzy
 msgid "2D tools"
-msgstr "Alat-alat"
+msgstr "Alat-alat 2D"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
@@ -2108,9 +2102,8 @@ msgid "Line2D node to draw textured 2D lines."
 msgstr "Node Line2D untuk menggambar garis 2D bertekstur."
 
 #: ../../docs/about/list_of_features.rst:124
-#, fuzzy
 msgid "2D physics"
-msgstr "Physics (Fisika)"
+msgstr "Fisika 2D"
 
 #: ../../docs/about/list_of_features.rst:126
 #: ../../docs/about/list_of_features.rst:262
@@ -2144,9 +2137,8 @@ msgstr "Area untuk mendeteksi mayat yang masuk atau keluar."
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "Collision Shapes Terlihat"
+msgstr "**Deteksi tumbukan:**"
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
@@ -2354,9 +2346,8 @@ msgid "Optional transmittance to make lights more visible in the fog."
 msgstr "Transmisi opsional untuk membuat cahaya lebih terlihat di kabut."
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Particles:**"
-msgstr "Partikel"
+msgstr "**Partikel:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2435,9 +2426,8 @@ msgid "**Anti-aliasing:**"
 msgstr "**Anti-aliasing:**"
 
 #: ../../docs/about/list_of_features.rst:241
-#, fuzzy
 msgid "Multi-sample antialiasing (MSAA)."
-msgstr "Beberapa instance"
+msgstr "Antialiasing Multi-sampel (MSAA)."
 
 #: ../../docs/about/list_of_features.rst:243
 msgid ""
@@ -2449,9 +2439,8 @@ msgstr ""
 "untuk rendering offline."
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "Alat-alat"
+msgstr "Alat-alat 3D"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
@@ -2460,10 +2449,11 @@ msgstr ""
 "empat."
 
 #: ../../docs/about/list_of_features.rst:250
-#, fuzzy
 msgid ""
 "Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
-msgstr ":ref:`Geometri prosedural <toc-procedural_geometry>`"
+msgstr ""
+"Perkakas untuk :ref:`pembangkit geometri prosedural "
+"<doc_procedural_geometry>`."
 
 #: ../../docs/about/list_of_features.rst:251
 msgid ""
@@ -2486,9 +2476,8 @@ msgid "3D geometry helper class."
 msgstr "Kelas pembantu geometri 3D."
 
 #: ../../docs/about/list_of_features.rst:260
-#, fuzzy
 msgid "3D physics"
-msgstr "Physics (Fisika)"
+msgstr "Fisika 3D"
 
 #: ../../docs/about/list_of_features.rst:267
 msgid "Vehicle bodies (intended for arcade physics, not simulation)."
@@ -2542,14 +2531,12 @@ msgstr ""
 "<doc_shading_language>`."
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Android"
+msgstr "Penyunting shader visual."
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr "Dukungan untuk pengaya shader visual."
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2560,9 +2547,8 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "Umum"
+msgstr "**Umum:**"
 
 #: ../../docs/about/list_of_features.rst:294
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2733,9 +2719,8 @@ msgid "Audio input to record microphones."
 msgstr "Input audio untuk merekam mikrofon."
 
 #: ../../docs/about/list_of_features.rst:351
-#, fuzzy
 msgid "MIDI input."
-msgstr "Masukan"
+msgstr "Input MIDI."
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
@@ -2758,27 +2743,24 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr "*Linux:* PulseAudio or ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "Ekspor"
+msgstr "Impor"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr "Support for :ref:`custom import plugins <doc_import_plugins>`."
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "**Formats:**"
-msgstr "Format"
+msgstr "**Format:**"
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "*Images:* See :ref:`doc_import_images`."
 msgstr "*Images:* See :ref:`doc_import_images`."
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "Suara"
+msgstr "*Audio:*"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2884,18 +2866,16 @@ msgid "Pen/tablet input with pressure support."
 msgstr "Masukan pena / tablet dengan dukungan tekanan."
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "Navigasi Terlihat"
+msgstr "Navigasi"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
 msgstr "Algoritma A * dalam 2D dan 3D."
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "Navigasi Terlihat"
+msgstr "Navigasi mesh."
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2950,13 +2930,15 @@ msgstr "Klien dan server WebSocket, tersedia di semua platform."
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "Klien dan server WebRTC, tersedia di semua platform."
 
 #: ../../docs/about/list_of_features.rst:429
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
 "server behind a NAT."
 msgstr ""
+"Dukungan UPnP untuk menghindari kebutuhan port forwarding ketika melakukan "
+"hosting server di belakang NAT."
 
 #: ../../docs/about/list_of_features.rst:433
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
@@ -2965,242 +2947,274 @@ msgstr "Internasionalisasi"
 
 #: ../../docs/about/list_of_features.rst:435
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "Dukungan penuh Unicode termasuk emoji."
 
 #: ../../docs/about/list_of_features.rst:436
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
 "or :ref:`gettext <doc_localization_using_gettext>`."
 msgstr ""
+"Simpan string lokalisasi menggunakan :ref:`CSV "
+"<doc_internationalizing_games>` atau :ref:`gettext "
+"<doc_localization_using_gettext>`."
 
 #: ../../docs/about/list_of_features.rst:438
 msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
 "using the ``tr()`` function."
 msgstr ""
+"Gunakan string lokalisasi dalam proyek Anda secara otomatis dalam elemen GUI "
+"atau melalui fungsi ``tr()``."
 
 #: ../../docs/about/list_of_features.rst:440
 msgid ""
 "Support for right-to-left typesetting and text shaping planned in Godot 4.0."
 msgstr ""
+"Dukungan pengetikan kanan-ke-kiri dan text shaping direncanakan dalam Godot 4"
+".0."
 
 #: ../../docs/about/list_of_features.rst:443
 msgid "Windowing and OS integration"
-msgstr ""
+msgstr "Penjendelaan dan integrasi OS"
 
 #: ../../docs/about/list_of_features.rst:445
 msgid "Move, resize, minimize, and maximize the window spawned by the project."
 msgstr ""
+"Pindah, ubah ukuran, minimalkan, dan maksimalkan jendela yang dimunculkan "
+"oleh proyek."
 
 #: ../../docs/about/list_of_features.rst:446
 msgid "Change the window title and icon."
-msgstr ""
+msgstr "Ubah judul dan ikon jendela."
 
 #: ../../docs/about/list_of_features.rst:447
 msgid ""
 "Request attention (will cause the title bar to blink on most platforms)."
 msgstr ""
+"Permintaan perhatian (menyebabkan bilah judul berkedip di kebanyakan "
+"platform)."
 
 #: ../../docs/about/list_of_features.rst:448
 msgid "Fullscreen mode."
-msgstr ""
+msgstr "Mode layar penuh."
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
 "Doesn't use exclusive fullscreen, so the screen resolution can't be changed "
 "this way. Use a Viewport with a different resolution instead."
 msgstr ""
+"Jangan gunakan layar penuh eksklusif, sehingga resolusi layar tidak dapat "
+"diubah dalam hal ini. Gunakan Viewport dengan resolusi yang berbeda sebagai "
+"gantinya."
 
 #: ../../docs/about/list_of_features.rst:453
 msgid "Borderless window (fullscreen or non-fullscreen)."
-msgstr ""
+msgstr "Jendela tanpa bingkai (layar penuh atau tidak)."
 
 #: ../../docs/about/list_of_features.rst:454
 msgid "Ability to keep the window always on top."
-msgstr ""
+msgstr "Kemampuan untuk mempertahankan jendela selalu di atas."
 
 #: ../../docs/about/list_of_features.rst:455
 msgid "Transparent window with per-pixel transparency."
-msgstr ""
+msgstr "Jendela transparan dengan transparansi per piksel."
 
 #: ../../docs/about/list_of_features.rst:456
 msgid "Global menu integration on macOS."
-msgstr ""
+msgstr "Integrasi menu global di macOS."
 
 #: ../../docs/about/list_of_features.rst:457
 msgid "Execute commands in a blocking or non-blocking manner."
-msgstr ""
+msgstr "Jalankan perintah dengan cara memblokir atau non-pemblokiran."
 
 #: ../../docs/about/list_of_features.rst:458
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
 "registered on the system)."
 msgstr ""
+"Buka lokasi berkas dan URL menggunakan protokol baku atau custom (jika "
+"didaftarkan di sistem)."
 
 #: ../../docs/about/list_of_features.rst:459
 msgid "Parse custom command line arguments."
-msgstr ""
+msgstr "Mengurai argumen kustom baris perintah."
 
 #: ../../docs/about/list_of_features.rst:462
 msgid "Mobile"
-msgstr ""
+msgstr "Mobile"
 
 #: ../../docs/about/list_of_features.rst:464
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "Pembelian dalam aplikasi di Android dan iOS."
 
 #: ../../docs/about/list_of_features.rst:465
 msgid "Support for advertisements using third-party modules."
-msgstr ""
+msgstr "Dukungan iklan menggunakan modul pihak ketiga."
 
 #: ../../docs/about/list_of_features.rst:468
 msgid "XR support (AR and VR)"
-msgstr ""
+msgstr "Dukungan XR (AR dan VR)"
 
 #: ../../docs/about/list_of_features.rst:470
 msgid "Support for ARKit on iOS out of the box."
-msgstr ""
+msgstr "Dukungan ARKit di iOS."
 
 #: ../../docs/about/list_of_features.rst:471
 msgid "Support for the OpenXR and OpenVR APIs."
-msgstr ""
+msgstr "Dukungan API OpenXR dan OpenVR."
 
 #: ../../docs/about/list_of_features.rst:472
 msgid ""
 "Popular VR headsets like the Oculus Quest and HTC Vive are supported thanks "
 "to plugins."
 msgstr ""
+"Headset VR populer sepertu Oculus Quest dan HTC Vive didukung berkat pengaya."
 
 #: ../../docs/about/list_of_features.rst:475
 msgid "GUI system"
-msgstr ""
+msgstr "Sistem GUI"
 
 #: ../../docs/about/list_of_features.rst:477
 msgid ""
 "Godot's GUI is built using the same Control nodes used to make games in "
 "Godot. The editor UI can easily be extended in many ways using add-ons."
 msgstr ""
+"GUI Godot dibangun menggunakan node Control yang sama yang digunakan untuk "
+"membuat game di Godot. Editor UI-nya dapat dengan mudah dikembangkan melalui "
+"berbagai cara menggunakan add-ons."
 
 #: ../../docs/about/list_of_features.rst:480
-#, fuzzy
 msgid "**Nodes:**"
-msgstr "Node"
+msgstr "**Node:**"
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "Buttons."
-msgstr "Tombol"
+msgstr "Tombol."
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Checkboxes, check buttons, radio buttons."
-msgstr ""
+msgstr "Kotak centang, tombol centang, tombol radio."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
 msgstr ""
+"Masukan teks menggunakan LineEdit (satu baris) dan TextEdit (beberapa baris)."
 
 #: ../../docs/about/list_of_features.rst:485
 msgid "Dropdown menus using PopupMenu and OptionButton."
-msgstr ""
+msgstr "Menu dropdown menggunakan PopupMenu dan OptionButton."
 
 #: ../../docs/about/list_of_features.rst:486
 msgid "Scrollbars."
-msgstr ""
+msgstr "Bilah gulir."
 
 #: ../../docs/about/list_of_features.rst:487
 msgid "Labels."
-msgstr ""
+msgstr "Label."
 
 #: ../../docs/about/list_of_features.rst:488
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+"RichTextLabel untuk :ref:`teks berformat menggunakan BBCode "
+"<doc_bbcode_in_richtextlabel>`."
 
 #: ../../docs/about/list_of_features.rst:489
 msgid "Trees (can also be used to represent tables)."
-msgstr ""
+msgstr "Tree (dapat juga digunakan untuk merepresentasikan tabel)."
 
 #: ../../docs/about/list_of_features.rst:490
 msgid ""
 "Containers (horizontal, vertical, grid, center, margin, draggable "
 "splitter, ...)."
 msgstr ""
+"Kontainer (horizontal, vertical, grid, center, margin, pemisah yang bisa "
+"digeser-geser, ...)."
 
 #: ../../docs/about/list_of_features.rst:491
 msgid "Controls can be rotated and scaled."
-msgstr ""
+msgstr "Control dapat diputar dan diskalakan."
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**Perekatan:**"
 
 #: ../../docs/about/list_of_features.rst:495
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
 msgstr ""
+"Jangkar untuk mempertahankan elemen GUI di spesifik pojokan, sisi, atau "
+"tengah."
 
 #: ../../docs/about/list_of_features.rst:496
 msgid "Containers to place GUI elements automatically following certain rules."
 msgstr ""
+"Container untuk meletakkan elemen GUI otomatis mengikuti aturan tertentu."
 
 #: ../../docs/about/list_of_features.rst:498
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ""
+msgstr "Tata letak :ref:`bertumpuk <class_BoxContainer>`."
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr "Android"
+msgstr "Tata letak :ref:`kisi <class_GridContainer>`."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
 ":ref:`Margin <class_MarginContainer>` and :ref:`centered "
 "<class_CenterContainer>` layouts."
 msgstr ""
+"Tata letak :ref:`pinggiran <class_MarginContainer>` dan :ref:`di tengah "
+"<class_CenterContainer>`."
 
 #: ../../docs/about/list_of_features.rst:502
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
-msgstr ""
+msgstr "Tata letak :ref:`pemisah bisa digeser <class_SplitContainer>`."
 
 #: ../../docs/about/list_of_features.rst:504
 msgid ""
 "Scale to multiple resolutions using the ``2d`` or ``viewport`` stretch modes."
 msgstr ""
+"Perbesar ke multi resolusi menggunakan mode stretch ``2d`` atau ``viewport``."
 
 #: ../../docs/about/list_of_features.rst:505
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
 msgstr ""
+"Dukungan berbagai aspek rasipo menggunakan jangkar dan aspek "
+"strech``expand``."
 
 #: ../../docs/about/list_of_features.rst:507
 msgid "**Theming:**"
-msgstr ""
+msgstr "**Tema:**"
 
 #: ../../docs/about/list_of_features.rst:509
 msgid "Built-in theme editor."
-msgstr ""
+msgstr "Editor tema bawaan."
 
 #: ../../docs/about/list_of_features.rst:511
 msgid "Generate a theme based on the current editor theme settings."
-msgstr ""
+msgstr "Buat tema berdasar pengaturan tema editor saat ini."
 
 #: ../../docs/about/list_of_features.rst:513
 msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
-msgstr ""
+msgstr "Tema prosedural berbasis vektor menggunakan :ref:`class_StyleBoxFlat`."
 
 #: ../../docs/about/list_of_features.rst:515
 msgid "Supports rounded/beveled corners, drop shadows and per-border widths."
-msgstr ""
+msgstr "Dukungan rounded/beveled corner, drop shadow dan lebar per batas."
 
 #: ../../docs/about/list_of_features.rst:517
 msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
-msgstr ""
+msgstr "Tema berbasis teksur menggunakan :ref:`class_StyleBoxTexture`."
 
 #: ../../docs/about/list_of_features.rst:519
 msgid ""
 "Godot's small distribution size can make it a suitable alternative to "
 "frameworks like Electron or Qt."
 msgstr ""
+"Ukuran distribusi godot yang kecil membuatnya cocok sebagai alternatif "
+"framework seperti Electron atau Qt."
 
 #: ../../docs/about/list_of_features.rst:523
 #: ../../docs/about/docs_changelog.rst:153
@@ -3212,26 +3226,27 @@ msgstr "Animasi"
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Direct kinematics and inverse kinematics."
-msgstr ""
+msgstr "Kinematika langsung dan kinematika terbalik."
 
 #: ../../docs/about/list_of_features.rst:526
 msgid "Support for animating any property with customizable interpolation."
 msgstr ""
+"Dukungan menganimasikan berbagai properti dengan interpolasi yang dapat "
+"disesuaikan."
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "Support for calling methods in animation tracks."
-msgstr ""
+msgstr "Dukungan pemanggilan fungsi dalam trek animasi."
 
 #: ../../docs/about/list_of_features.rst:528
 msgid "Support for playing sounds in animation tracks."
-msgstr ""
+msgstr "Dukungan untuk memainkan suara di trek animasi."
 
 #: ../../docs/about/list_of_features.rst:529
 msgid "Support for Bézier curves in animation."
-msgstr ""
+msgstr "Dukungan kurva Bézier dalam animasi."
 
 #: ../../docs/about/list_of_features.rst:532
-#, fuzzy
 msgid "Formats"
 msgstr "Format"
 
@@ -3240,40 +3255,50 @@ msgid ""
 "Scenes and resources can be saved in :ref:`text-based "
 "<doc_tscn_file_format>` or binary formats."
 msgstr ""
+"Skena dan sumber dayanya dapat disimpan dalam format biner atau :ref:`"
+"berbasis teks <doc_tscn_file_format>`."
 
 #: ../../docs/about/list_of_features.rst:536
 msgid ""
 "Text-based formats are human-readable and more friendly to version control."
 msgstr ""
+"Format berbasis teks merupakan format teks yang bisa dibaca langsung dan "
+"lebih bersahabat dengan version control."
 
 #: ../../docs/about/list_of_features.rst:537
 msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""
+"Format biner lebih cepat untuk disimpan/dimuat untuk skena dan sumber daya "
+"yang besar."
 
 #: ../../docs/about/list_of_features.rst:539
 msgid "Read and write text or binary files using :ref:`class_File`."
-msgstr ""
+msgstr "Baca dan tulis berkas teks atau biner menggunakan :ref:`class_File`."
 
 #: ../../docs/about/list_of_features.rst:541
 msgid "Can optionally be compressed or encrypted."
-msgstr ""
+msgstr "Secara opsional bisa dikompresi ataupun dienkripsi."
 
 #: ../../docs/about/list_of_features.rst:543
 msgid "Read and write :ref:`class_JSON` files."
-msgstr ""
+msgstr "Baca dan tulis berkas :ref:`class_JSON`."
 
 #: ../../docs/about/list_of_features.rst:544
 msgid ""
 "Read and write INI-style configuration files using :ref:`class_ConfigFile`."
 msgstr ""
+"Baca dan tulis berkas konfigurasi berbasis INI menggunakan "
+":ref:`class_ConfigFile`."
 
 #: ../../docs/about/list_of_features.rst:546
 msgid "Can (de)serialize any Godot datatype, including Vector, Color, ..."
 msgstr ""
+"Dapat men(de)serialisasi tipe data apapun di Godot, termasuk: Vector, Color, "
+"..."
 
 #: ../../docs/about/list_of_features.rst:548
 msgid "Read XML files using :ref:`class_XMLParser`."
-msgstr ""
+msgstr "Baca berkas XML dengan menggunakan :ref:`class_XMLParser`."
 
 #: ../../docs/about/list_of_features.rst:549
 msgid ""
@@ -3281,12 +3306,17 @@ msgid ""
 "into a ZIP archive, or directly into the executable for single-file "
 "distribution."
 msgstr ""
+"Masukkan informasi gim kedalam file PCK (format khusus yang dioptimalkan "
+"untuk pemeriksaan lebih cepat), kedalam arsip ZIP, atau langsung kedalam "
+"file executeable untuk distribusi dengan satu file."
 
 #: ../../docs/about/list_of_features.rst:551
 msgid ""
 ":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
 "the engine to support mods and DLCs."
 msgstr ""
+":ref:`ekspor file PCK tambahan<doc_exporting_pcks>` yang dimana dapat dibaca "
+"oleh game engine untuk mendukung mods dan DLC."
 
 #: ../../docs/about/list_of_features.rst:555
 #: ../../docs/about/docs_changelog.rst:206
@@ -3299,6 +3329,8 @@ msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
 "bypassing the scene tree's overhead when needed."
 msgstr ""
+":ref:`akses tingkat dasar ke server <doc_using_server>` yang dimana dapat "
+"memperbolehkan untuk melewati pohon skena \"overhead\" ketika diperlukan."
 
 #: ../../docs/about/list_of_features.rst:559
 msgid "Command line interface for automation."
@@ -3306,7 +3338,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:561
 msgid "Export and deploy projects using continuous integration platforms."
-msgstr ""
+msgstr "Ekspor dan luncurkan proyek menggunakan media integrasi berkelanjutan."
 
 #: ../../docs/about/list_of_features.rst:562
 msgid ""
@@ -3319,16 +3351,20 @@ msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_c++>` statically linked "
 "into the engine binary."
 msgstr ""
+"Dukungan untuk :ref:`C++ modules<doc_custom_modules_in_c++>` dengan tetap "
+"disambungkan ke binary game enginenya."
 
 #: ../../docs/about/list_of_features.rst:567
 msgid "Engine and editor written in C++03."
-msgstr ""
+msgstr "Game engine dan editornya dibuat dengan C++03."
 
 #: ../../docs/about/list_of_features.rst:569
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
 "Clang and MSVC. MinGW is also supported."
 msgstr ""
+"Dapat :ref:`dibuat <doc_introduction_to_the_buildsystem>` menggunakan GCC, "
+"Clang dan MSVC. MinGW juga dapat digunakan."
 
 #: ../../docs/about/list_of_features.rst:571
 msgid ""
@@ -3336,20 +3372,25 @@ msgid ""
 "instead of the ones provided by Godot. The build system doesn't download "
 "anything. Builds can be fully reproducible."
 msgstr ""
+"Bersahabat terhadap \"packagers\". Dalam banyak kasus, \"system libraries\" "
+"dapat digunakan daripada yang disediakan. Sistem penstrukturan tidak "
+"mengunduh apapun. Ini dapat direproduksi."
 
 #: ../../docs/about/list_of_features.rst:574
 msgid "Godot 4.0 will be written in C++17."
-msgstr ""
+msgstr "Godot 4.0 akan dibuat menggunakan C++17."
 
 #: ../../docs/about/list_of_features.rst:576
 msgid "Licensed under the permissive MIT license."
-msgstr ""
+msgstr "DIlisensikan dengan lisensi MIT yang serbaguna."
 
 #: ../../docs/about/list_of_features.rst:578
 msgid ""
 "Open developement process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
 msgstr ""
+"Kontribusi ke proses pengembangan :ref:`sangat dianjurkan "
+"<doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:582
 #: ../../docs/about/release_policy.rst:84
@@ -15250,7 +15291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Pergi ke Langkah Berikutnya"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -15266,7 +15307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Pergi ke Langkah Sebelumnya"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -19964,17 +20005,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``%s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
+"**Simpel** rubah ke teks dengan metode yang sama seperti perubahan teks "
+"tidak ketat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``%c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
@@ -93661,39 +93704,47 @@ msgstr "Tutorial"
 
 #: ../../docs/community/tutorials.rst:43
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
-msgstr ""
+msgstr "`Godot Recipes oleh KidsCanCode <http://godotrecipes.com/>`__"
 
 #: ../../docs/community/tutorials.rst:44
 msgid "`Steincodes <https://steincodes.tumblr.com>`__"
-msgstr ""
+msgstr "`Steincodes <https://steincodes.tumblr.com>`__"
 
 #: ../../docs/community/tutorials.rst:47
 msgid "Devlogs"
-msgstr ""
+msgstr "Catatan pengembang"
 
 #: ../../docs/community/tutorials.rst:49
 msgid ""
 "`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
 "UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 msgstr ""
+"`Andrea Catania (Physics & AI) <https://www.youtube.com/channel/"
+"UCm4RuvYtgpgFDTCgaEUT5uQ/videos>`_"
 
 #: ../../docs/community/tutorials.rst:50
 msgid ""
 "`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/UCrbLJYzJjDf2p-"
 "vJC011lYw/videos>`_"
 msgstr ""
+"`Bastiaan Olij (AR & VR) <https://www.youtube.com/channel/"
+"UCrbLJYzJjDf2p-vJC011lYw/videos>`_"
 
 #: ../../docs/community/tutorials.rst:55
 msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
+"`awesome-godot: Sumber daya yang dikurasi oleh Calinou <https://github.com/"
+"Calinou/awesome-godot>`_"
 
 #: ../../docs/community/tutorials.rst:56
 msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Direktori sumber daya yang dikurasi oleh Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>` _"
 
 #, fuzzy
 #~ msgid "signals"

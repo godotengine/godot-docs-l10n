@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Thai
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Dreamknight7 <chalataom@gmail.com>, 2019.
@@ -8,26 +8,27 @@
 # Poommetee Ketson <poommetee@protonmail.com>, 2018.
 # Sanhaphat Srijumpa <fluke031@hotmail.com>, 2020.
 # Thanachart Monpassorn <nunf_2539@hotmail.com>, 2020.
+# Tharawut P <xcession@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-12-03 19:27+0000\n"
-"Last-Translator: Kongfa Warorot <gongpha@hotmail.com>\n"
-"Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/godot-"
-"docs/th/>\n"
+"PO-Revision-Date: 2021-03-12 02:20+0000\n"
+"Last-Translator: Tharawut P. <xcession@gmail.com>\n"
+"Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/th/>\n"
 "Language: th\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.5.2-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
-msgstr "คู่มือ Godot - สายที่ *3.2*"
+msgstr "เอกสาร Godot - branch *3.2*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -475,8 +476,9 @@ msgid "Have fun reading and making games with Godot Engine!"
 msgstr "ขอให้สนุกกับการอ่านคู่มือและสร้างเกมด้วย Godot Engine!"
 
 #: ../../docs/about/faq.rst:1
+#, fuzzy
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../docs/about/faq.rst:7
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
@@ -571,7 +573,7 @@ msgstr "**สำหรับตัวโปรแกรม:**"
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "Windows"
-msgstr "วินโดวส์"
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
@@ -590,33 +592,34 @@ msgstr "วินโดวส์"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
 #: ../../docs/tutorials/misc/jitter_stutter.rst:84
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (ลินุกซ์, \\*บีเอสดี)"
+msgstr "X11 (ลินุกซ์, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
+#, fuzzy
 msgid "**For exporting your games:**"
 msgstr "**สำหรับส่งออกเกม:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr "วินโดวส์ (และ UWP)"
+msgstr "Windows (และ UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
-msgstr "แอนดรอยด์"
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:363
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
 #: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "iOS"
-msgstr "ไอโอเอส"
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
@@ -1337,7 +1340,7 @@ msgstr "ดูหน้าเว็บที่เกี่ยวข้องไ
 #: ../../docs/development/compiling/compiling_for_android.rst:200
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "การแก้ปัญหา"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
@@ -1480,9 +1483,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "ฟีเจอร์"
+msgstr "รายการฟีเจอร์"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
@@ -1497,13 +1499,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
 msgstr "ฟีเจอร์"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
-msgstr ""
+msgstr "แพล็ตฟอร์ม"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1511,15 +1512,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 หรือใหม่กว่า (64-bit และ 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr ""
+msgstr "macOS 10.12 หรือใหม่กว่า (64-bit, x86 และ ARM)."
 
 #: ../../docs/about/list_of_features.rst:24
 msgid "Linux (64-bit and 32-bit, x86 and ARM)."
-msgstr ""
+msgstr "Linux (64-bit และ 32-bit, x86 และ ARM)."
 
 #: ../../docs/about/list_of_features.rst:26
 msgid ""
@@ -1537,11 +1538,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:32
 msgid "Android 4.4 and later."
-msgstr ""
+msgstr "Android 4.4 หรือใหม่กว่า"
 
 #: ../../docs/about/list_of_features.rst:33
 msgid "iOS 10.0 and later."
-msgstr ""
+msgstr "iOS 10.0 หรือใหม่กว่า"
 
 #: ../../docs/about/list_of_features.rst:34
 msgid "HTML5 via WebAssembly (Firefox, Chrome, Edge, Opera)."
@@ -1561,15 +1562,15 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #: ../../docs/development/compiling/compiling_with_mono.rst:196
+#, fuzzy
 msgid "Editor"
 msgstr "เอดิเตอร์"
 
 #: ../../docs/about/list_of_features.rst:43
 #: ../../docs/about/list_of_features.rst:85
 #: ../../docs/about/list_of_features.rst:340
-#, fuzzy
 msgid "**Features:**"
-msgstr "ฟีเจอร์"
+msgstr "**ฟีเจอร์:**"
 
 #: ../../docs/about/list_of_features.rst:45
 msgid "Scene tree editor."
@@ -1659,7 +1660,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:76
 msgid "2D graphics"
-msgstr ""
+msgstr "กราฟิก 2D"
 
 #: ../../docs/about/list_of_features.rst:78
 #: ../../docs/about/list_of_features.rst:142
@@ -1751,9 +1752,8 @@ msgid "CPU-based particles."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:112
-#, fuzzy
 msgid "2D tools"
-msgstr "เครื่องมือ"
+msgstr "เครื่องมือ 2D"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
@@ -1807,7 +1807,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:131
 #: ../../docs/about/list_of_features.rst:268
 msgid "Joints."
-msgstr ""
+msgstr "ข้อต่อ"
 
 #: ../../docs/about/list_of_features.rst:132
 #: ../../docs/about/list_of_features.rst:271
@@ -1831,7 +1831,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:140
 msgid "3D graphics"
-msgstr ""
+msgstr "กราฟิก 3D"
 
 #: ../../docs/about/list_of_features.rst:146
 msgid "HDR rendering with sRGB."
@@ -1848,8 +1848,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:153
+#, fuzzy
 msgid "**Camera:**"
-msgstr ""
+msgstr "**มุมกล้อง:**"
 
 #: ../../docs/about/list_of_features.rst:155
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -1950,7 +1951,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:191
 msgid "**Reflections:**"
-msgstr ""
+msgstr "**เงาสะท้อน:**"
 
 #: ../../docs/about/list_of_features.rst:193
 msgid "*GLES3:* Voxel-based reflections (when using GI probes)."
@@ -1972,7 +1973,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:199
 msgid "**Sky:**"
-msgstr ""
+msgstr "**ท้องฟ้า:**"
 
 #: ../../docs/about/list_of_features.rst:201
 msgid "Panorama sky (using an HDRI)."
@@ -1984,7 +1985,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:204
 msgid "**Fog:**"
-msgstr ""
+msgstr "**หมอก:**"
 
 #: ../../docs/about/list_of_features.rst:206
 msgid "Depth fog with an adjustable attenuation curve."
@@ -2006,7 +2007,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
 msgid "**Particles:**"
-msgstr ""
+msgstr "**พาร์ติเคิล:**"
 
 #: ../../docs/about/list_of_features.rst:214
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2091,9 +2092,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "เครื่องมือ"
+msgstr "เครื่องมือ 3D"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
@@ -2188,7 +2188,7 @@ msgstr "แอนดรอยด์"
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "สคริปท์"
 
 #: ../../docs/about/list_of_features.rst:292
 #, fuzzy
@@ -2247,7 +2247,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:311
 msgid "Uses Mono 6.x."
-msgstr ""
+msgstr "ใช้ Mono 6.x."
 
 #: ../../docs/about/list_of_features.rst:313
 msgid "Full support for the C# 7.0 syntax and features."
@@ -2279,7 +2279,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:324
 msgid "**GDNative (C, C++, Rust, D, ...):**"
-msgstr ""
+msgstr "**GDNative (C, C++, Rust, D, ...):**"
 
 #: ../../docs/about/list_of_features.rst:326
 msgid ""
@@ -2350,19 +2350,19 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:355
 msgid "**APIs used:**"
-msgstr ""
+msgstr "**APIs ที่ใช้:**"
 
 #: ../../docs/about/list_of_features.rst:357
 msgid "*Windows:* WASAPI."
-msgstr ""
+msgstr "*Windows:* WASAPI."
 
 #: ../../docs/about/list_of_features.rst:358
 msgid "*macOS:* CoreAudio."
-msgstr ""
+msgstr "*macOS:* CoreAudio."
 
 #: ../../docs/about/list_of_features.rst:359
 msgid "*Linux:* PulseAudio or ALSA."
-msgstr ""
+msgstr "*Linux:* PulseAudio หรือ ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
@@ -2374,16 +2374,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "**Formats:**"
-msgstr ""
+msgstr "**ฟอร์แมท:**"
 
 #: ../../docs/about/list_of_features.rst:368
 msgid "*Images:* See :ref:`doc_import_images`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "เสียง"
+msgstr "*เสียง:*"
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2391,7 +2390,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:372
 msgid "Ogg Vorbis."
-msgstr ""
+msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:374
 msgid "*3D scenes:*"
@@ -2399,13 +2398,15 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:376
 msgid "glTF 2.0 *(recommended)*."
-msgstr ""
+msgstr "glTF 2.0 *(แนะนำ)*."
 
 #: ../../docs/about/list_of_features.rst:377
 msgid ""
 "`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
 "export from Blender)."
 msgstr ""
+"`ESCN <https://github.com/godotengine/godot-blender-exporter>`__ (direct "
+"export from Blender)."
 
 #: ../../docs/about/list_of_features.rst:379
 msgid "FBX (experimental)."
@@ -2413,7 +2414,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:380
 msgid "Collada (.dae)."
-msgstr ""
+msgstr "Collada (.dae)."
 
 #: ../../docs/about/list_of_features.rst:381
 msgid "Wavefront OBJ (static scenes only, can be loaded directly as a mesh)."
@@ -2595,7 +2596,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:448
 msgid "Fullscreen mode."
-msgstr ""
+msgstr "โหมดเต็มจอ"
 
 #: ../../docs/about/list_of_features.rst:450
 msgid ""
@@ -2640,7 +2641,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:464
 msgid "In-app purchases on Android and iOS."
-msgstr ""
+msgstr "การซื้อภายในแอปบน Android และ iOS"
 
 #: ../../docs/about/list_of_features.rst:465
 msgid "Support for advertisements using third-party modules."
@@ -2725,7 +2726,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:493
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**ขนาด:**"
 
 #: ../../docs/about/list_of_features.rst:495
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
@@ -2737,12 +2738,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:498
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr ""
+msgstr ":ref: เลย์เอาท์ `Stack <class_BoxContainer>`"
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref: เลย์เอาท์ `Grid <class_GridContainer>`"
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
@@ -2766,7 +2766,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:507
 msgid "**Theming:**"
-msgstr ""
+msgstr "**ธีม:**"
 
 #: ../../docs/about/list_of_features.rst:509
 msgid "Built-in theme editor."
@@ -2823,9 +2823,8 @@ msgid "Support for Bézier curves in animation."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:532
-#, fuzzy
 msgid "Formats"
-msgstr "จัดรูปแบบสตริงด้วย GDScript"
+msgstr "ฟอร์แมท"
 
 #: ../../docs/about/list_of_features.rst:534
 msgid ""
@@ -2852,7 +2851,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:543
 msgid "Read and write :ref:`class_JSON` files."
-msgstr ""
+msgstr "อ่านและเขียนไฟล์ :ref:`class_JSON`"
 
 #: ../../docs/about/list_of_features.rst:544
 msgid ""
@@ -2983,42 +2982,37 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/optimization/index.rst:70
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:36
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -3026,13 +3020,12 @@ msgid "Inputs"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:42
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_input_examples`"
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
@@ -3046,43 +3039,39 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:53
 msgid ":ref:`doc_what_are_shaders`"
-msgstr ""
+msgstr ":ref:`doc_what_are_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:56
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr "แอนดรอยด์"
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:62
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr ""
+msgstr "VR"
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
@@ -3091,37 +3080,32 @@ msgid "Plugins"
 msgstr "ปลั๊กอิน"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "แอนดรอยด์"
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "แอนดรอยด์"
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "แอนดรอยด์"
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
 #: ../../docs/tutorials/threads/index.rst:2
 msgid "Multi-threading"
-msgstr ""
+msgstr "มัลติเธรด"
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "การใช้ใน GDScript"
+msgstr "การสร้างคอนเทนต์"
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid "Procedural geometry series:"
@@ -3132,24 +3116,20 @@ msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_surfacetool`"
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_meshdatatool`"
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
+msgstr ":ref:`doc_immediategeometry`"
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/optimization/index.rst:2
@@ -87107,11 +87087,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
-msgstr ""
+msgstr "ฟอร์แมทเสียง"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
-msgstr ""
+msgstr "ฟอร์แมทวิดีโอ"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
@@ -88378,17 +88358,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:409
-#, fuzzy
 msgid "``0`` (constant)"
-msgstr "ค่าคงที่"
+msgstr "``0`` (constant)"
 
 #: ../../docs/development/file_formats/tscn.rst:410
 msgid "``1`` (linear)"
-msgstr ""
+msgstr "``1`` (linear)"
 
 #: ../../docs/development/file_formats/tscn.rst:411
 msgid "``2`` (cubic)"
-msgstr ""
+msgstr "``2`` (cubic)"
 
 #: ../../docs/development/file_formats/tscn.rst:413
 msgid ""
@@ -92561,131 +92540,153 @@ msgid "Q&A"
 msgstr "ถาม/ตอบ"
 
 #: ../../docs/community/channels.rst:15
+#, fuzzy
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
-msgstr ""
+msgstr "`Official Godot ถาม/ตอบ <https://godotengine.org/qa/>`_"
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
-msgstr ""
+msgstr "IRC บน Freenode"
 
 #: ../../docs/community/channels.rst:20
 msgid ""
 "`General: #godotengine <https://webchat.freenode.net/?"
 "channels=#godotengine>`_"
 msgstr ""
+"`ทั่วไป: #godotengine <https://webchat.freenode.net/?channels=#godotengine>`_"
 
 #: ../../docs/community/channels.rst:21
+#, fuzzy
 msgid ""
 "`Engine development: #godotengine-devel <https://webchat.freenode.net/?"
 "channels=#godotengine-devel>`_"
 msgstr ""
+"`Engine development: #godotengine-devel <https://webchat.freenode.net/"
+"?channels=#godotengine-devel>`_"
 
 #: ../../docs/community/channels.rst:22
 msgid ""
 "`Documentation: #godotengine-doc <https://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_"
 msgstr ""
+"`เอกสารคู่มือ: #godotengine-doc <https://webchat.freenode.net/?channels"
+"=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
+#, fuzzy
 msgid ""
 "`Pull request meetings: #godotengine-meeting <https://webchat.freenode.net/?"
 "channels=#godotengine-meeting>`_"
 msgstr ""
+"`Pull request meetings: #godotengine-meeting <https://webchat.freenode.net/"
+"?channels=#godotengine-meeting>`_"
 
 #: ../../docs/community/channels.rst:24
 msgid ""
 "`GDNative: #godotengine-gdnative <https://webchat.freenode.net/?"
 "channels=#godotengine-gdnative>`_"
 msgstr ""
+"`GDNative: #godotengine-gdnative <https://webchat.freenode.net/?channels"
+"=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:25
 msgid ""
 "`Website and public relations: #godotengine-atelier <https://webchat."
 "freenode.net/?channels=#godotengine-atelier>`_"
 msgstr ""
+"`เว็บไซต์และประชาสัมพันธ์: #godotengine-atelier <https://webchat.freenode."
+"net/?channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:26
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
-msgstr ""
+msgstr "`IRC logs <https://godot.eska.me/irc-logs/>`_"
 
 #: ../../docs/community/channels.rst:29
 msgid "Other chats"
-msgstr ""
+msgstr "แชทอื่นๆ"
 
 #: ../../docs/community/channels.rst:31
 msgid "`Discord <https://discord.gg/4JBkykG>`_"
-msgstr ""
+msgstr "`Discord <https://discord.gg/4JBkykG>`_"
 
 #: ../../docs/community/channels.rst:32
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
+"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:35
+#, fuzzy
 msgid "Language-based communities"
-msgstr ""
+msgstr "ชุมชน"
 
 #: ../../docs/community/channels.rst:37
 msgid ""
 "Brazilian Portuguese: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
-msgstr ""
+msgstr "บราซิล โปรตุเกส: `Godot Brasil (Discord) <https://discord.gg/gWmQKBv>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid ""
 "French: `Godot Francophone Officiel (Discord) <https://discord.gg/3jvf3XN>`_"
 msgstr ""
+"ฝรั่งเศส: `Godot Francophone Officiel (Discord) <https://discord.gg/"
+"3jvf3XN>`_"
 
 #: ../../docs/community/channels.rst:39
 msgid "French: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
-msgstr ""
+msgstr "ฝรั่งเศส: `SoloCode Godot (Discord) <https://discord.gg/gZ3QJ5T>`_"
 
 #: ../../docs/community/channels.rst:40
 msgid ""
 "German: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 msgstr ""
+"เยอรมัน: `Deutsche Godot Community (Discord) <https://discord.gg/Tr7Ma6E>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid ""
 "Swedish: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 msgstr ""
+"สวีเดน: `Swedish Godot Community (Discord) <https://discord.gg/6ZsgWmH>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Social networks"
-msgstr ""
+msgstr "โซเชียลเน็ตเวิร์ก"
 
 #: ../../docs/community/channels.rst:46
 msgid "`GitHub <https://github.com/godotengine/>`_"
-msgstr ""
+msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:47
 msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
-msgstr ""
+msgstr "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:48
 msgid ""
 "`Twitter <https://twitter.com/godotengine>`_ (see also the `#GodotEngine "
 "<https://twitter.com/hashtag/GodotEngine>`_ hashtag)"
 msgstr ""
+"`Twitter <https://twitter.com/godotengine>`_ (see also the `#GodotEngine "
+"<https://twitter.com/hashtag/GodotEngine>`_ hashtag)"
 
 #: ../../docs/community/channels.rst:50
 msgid "`Reddit <https://www.reddit.com/r/godot>`_"
-msgstr ""
+msgstr "`Reddit <https://www.reddit.com/r/godot>`_"
 
 #: ../../docs/community/channels.rst:51
 msgid "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
-msgstr ""
+msgstr "`YouTube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:52
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"
-msgstr ""
+msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
 
 #: ../../docs/community/channels.rst:55
 msgid "Forum"
-msgstr ""
+msgstr "ฟอรัม"
 
 #: ../../docs/community/channels.rst:57
 msgid "`Godot Forums <https://godotforums.org/>`_"
-msgstr ""
+msgstr "`ฟอรัม Godot <https://godotforums.org/>`_"
 
 #: ../../docs/community/tutorials.rst:4
 msgid "Tutorials and resources"
@@ -92855,7 +92856,7 @@ msgstr ""
 
 #: ../../docs/community/tutorials.rst:47
 msgid "Devlogs"
-msgstr "บันทึกการพัฒนา(Devlogs)"
+msgstr "บันทึกการพัฒนา (Devlogs)"
 
 #: ../../docs/community/tutorials.rst:49
 msgid ""

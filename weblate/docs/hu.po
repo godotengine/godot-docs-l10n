@@ -1,27 +1,30 @@
 # Godot Engine Documentation in Hungarian
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Ács Zoltán <acszoltan111@gmail.com>, 2020.
 # Árpád Horváth <horvatha4@googlemail.com>, 2018.
 # cefrebevalo <szmarci711@gmail.com>, 2020.
 # Czmorek Dávid <czmdav.soft@gmail.com>, 2020.
-# Gabor Csordas <gaborcsordas@yahoo.com>, 2018.
+# Gabor Csordas <gaborcsordas@yahoo.com>, 2018, 2021.
 # gergely87 <gergely87@gmail.com>, 2019.
+# Gergő Pistai <gergopistai@gmail.com>, 2021.
 # JanosHorak <lyanos.horak@gmail.com>, 2019.
 # József Orosz <jozsef.orosz542@gmail.com>, 2020.
 # Lilla Ozgyin <lityupix@gmail.com>, 2019.
 # Máté Széles <szelessm@gmail.com>, 2020.
 # sztrovacsek <magadeve@gmail.com>, 2019.
 # thekeymethod <csokan.andras87@protonmail.ch>, 2020.
+# Újvári Marcell <mmarci72@gmail.com>, 2021.
+# Varga Dániel <danikah.danikah@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-12-19 21:46+0000\n"
-"Last-Translator: József Orosz <jozsef.orosz542@gmail.com>\n"
+"PO-Revision-Date: 2021-03-31 03:55+0000\n"
+"Last-Translator: Gergő Pistai <gergopistai@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -29,7 +32,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
@@ -292,9 +295,9 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Ennek az oldalnak a célja, hogy adjon egy átfogó bemutatása a motorról és "
-"ennek a dokumentációnak tartalmáról, így ha Ön kezdő, tudni fogja hol fogjon "
-"hozzá vagy hol kell keresni információt egy adott funkcióról."
+"Ennek az oldalnak a célja, hogy átfogóan bemutassa a motort és "
+"dokumentációját, így ha ön kezdő, tudni fogja hol fogjon hozzá és hol "
+"keressen információt egy adott funkcióról."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
@@ -311,34 +314,31 @@ msgstr ""
 "videó anyagot a szöveg alapú helyett, akkor megéri egy pillantást rávetnie."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "In case you have trouble with one of the tutorials or your project, you can "
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
-"Abban az esetben ha problémád akadna az egyik tutorial-al vagy a "
-"projekteddel, akkor a különböző :ref:`Közösségi "
-"csatornáinkon<doc_community_channels>` találhatsz segítséget, főképpen a "
-"Godot Discord közösségén, Q&A és az IRC csatornákon."
+"Abban az esetben ha problémája akadna az egyik tutorial-al vagy a "
+"projektjével, akkor a különböző :ref:`Közösségi csatornáinkon "
+"<doc_community_channels>` találhat segítséget, főképpen a Godot Discord "
+"közösségén, Q&A és az IRC csatornákon."
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
 msgstr "A Godot Motorról"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"A játék motor egy összetett eszköz, ezért nehéz bemutatni a Godot egy pár "
-"szóban. Itt van azonban egy PR bemutatás, amely szabadon újrafelhasználható, "
-"ha kell egy gyors leírás a Godot Motorról."
+"Egy játékmotor összetett eszköz, így nehéz bemutatni a Godot-ot csupán egy "
+"pár szóban. Itt egy gyors áttekintés, ahova bármikor visszajöhetsz, ha "
+"szükséged van."
 
 #: ../../docs/about/introduction.rst:38
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -348,12 +348,12 @@ msgid ""
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "A Godot Motor egy funkció csomag, kereszt-plattformú játékmotor 2D-s és 3D-s "
-"játékok létrehozásához egy egységes felületről. Átfogó és álltalános "
+"játékok létrehozásához egy egységes felületről. Átfogó és általános "
 "eszközöket biztosít, így a felhasználók a játékok készítésére "
-"koncentrálhatnak, anélkül, hogy újra fel kellene találni a kereket. A "
+"koncentrálhatnak, anélkül, hogy újra fel kellene találniuk a kereket. A "
 "játékokat egy kattintással exportálni lehet számos platformra, beleértve a "
-"nagy asztali platformokat (Linux, macOS, Windows), valamint a mobil "
-"(Android, iOS) és web-alapú (HTML5) platformokat."
+"nagy asztali platformokat (Linux, macOS, Windows), valamint a mobil ("
+"Android, iOS) és web-alapú (HTML5) platformokat."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -538,7 +538,7 @@ msgstr "GYIK"
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
 #: ../../docs/tutorials/optimization/batching.rst:478
 msgid "Frequently asked questions"
-msgstr "Gyakran feltett kérdések"
+msgstr "Gyakran ismételt kérdések"
 
 #: ../../docs/about/faq.rst:10
 msgid ""
@@ -546,14 +546,13 @@ msgid ""
 msgstr "Mit tehetek a Godot motorral? Mennyibe kerül? Mik a licencfeltételek?"
 
 #: ../../docs/about/faq.rst:12
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"A Godot Nyílt Forráskódú Szabad Szoftver, elérhető az OSI által jóváhagyott "
+"A Godot nyílt forráskódú szabad szoftver, elérhető az OSI által jóváhagyott "
 "`OSI-approved <https://opensource.org/licenses/MIT>`_ MIT licenc keretében."
 
 #: ../../docs/about/faq.rst:14
@@ -601,7 +600,6 @@ msgstr ""
 "könyvtárak különböző licencekkel rendelkezhetnek."
 
 #: ../../docs/about/faq.rst:27
-#, fuzzy
 msgid ""
 "For full details, look at the `COPYRIGHT.txt <https://github.com/godotengine/"
 "godot/blob/master/COPYRIGHT.txt>`_ as well as the `LICENSE.txt <https://"
@@ -609,11 +607,11 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"A részletekért nézd át a `COPYRIGHT.txt <https://github.com/godotengine/"
-"godot/blob/master/COPYRIGHT.txt>`_ valamint a `LICENSE.txt <https://github."
-"com/godotengine/godot/blob/master/LICENSE.txt>`_ és a `LOGO_LICENSE.txt "
-"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
-"fájlokat a Godot tárolójában."
+"Részletekért olvassa el a `COPYRIGHT.txt <https://github.com/godotengine/"
+"godot/blob/master/COPYRIGHT.txt>`_, a `LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LICENSE.txt>`_ és a `LOGO_LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>` fájl a "
+"Godot raktárban"
 
 #: ../../docs/about/faq.rst:31
 msgid ""
@@ -625,11 +623,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "Milyen platformokat támogat a Godot?"
+msgstr "Melyik platformok támogatottak a Godot-ól."
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**Az editornak:**"
+msgstr "**Szerkesztőknek:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
@@ -661,7 +659,7 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "**A játékai exportálásához**"
+msgstr "**A játékod exportálására:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
@@ -721,7 +719,6 @@ msgstr ""
 "`Godot kompilálása<toc-devel-compiling>` című fejezetben olvashatsz."
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
 msgstr "Milyen programozási nyelveket támogat a Godot?"
 
@@ -1054,6 +1051,9 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Felhasználói felületekhez használt ezt :ref:`anchoring "
+"<doc_size_and_anchors>`, hogy eldöntsd hol kell lennie a vezérlőknek. Ha a "
+"UI-ok ennél bonyolultabbak, akkor fontold meg a Konténerek használatát."
 
 #: ../../docs/about/faq.rst:240
 msgid "And that's it! Your game should work in multiple resolutions."
@@ -1510,9 +1510,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "Felvétel"
+msgstr "Funkciók"
 
 #: ../../docs/about/list_of_features.rst:18
 #, fuzzy
@@ -11983,9 +11982,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Szerkesztő"
+msgstr "3D Szerkesztő Megnyitása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -12034,9 +12032,8 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
-msgstr "Animáció"
+msgstr "Zavarmentes Mód"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -12100,7 +12097,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr ""
+msgstr "Jelenet megnyitása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -12150,7 +12147,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr ""
+msgstr "Jelenet Mentése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12264,7 +12261,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Újra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12328,7 +12325,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Teljes Képernyő"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12344,7 +12341,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Játék"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12395,7 +12392,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr ""
+msgstr "Scene Futtatása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12515,7 +12512,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Kiválasztó Mód"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12530,7 +12527,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Mozgató Mód"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12546,7 +12543,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Forgató Mód"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12612,7 +12609,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Rács Léptetés Mértékének Kétszerezése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12624,7 +12621,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Rács Léptetés Mértékének Felezése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12661,7 +12658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Vezetővonalak Megjelenítése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12687,7 +12684,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Kijelölés Keretezése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12728,7 +12725,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
-msgstr ""
+msgstr "Kulcs Beszúrása (Meglévő Nyomvonalakra)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
@@ -12897,7 +12894,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Illesztés Használata"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -13001,9 +12998,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Animáció"
+msgstr "Animációs Kulcs Beszúrása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -13169,7 +13165,7 @@ msgstr "Szerkesztő"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Kivágás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -13215,7 +13211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Beillesztés"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -13233,7 +13229,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Összes Kijelölése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -13275,7 +13271,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Következő Keresése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -13289,7 +13285,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Előző Keresése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -13373,7 +13369,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "Move Up"
-msgstr ""
+msgstr "Mozgatás Felfelé"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
@@ -13388,7 +13384,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "Move Down"
-msgstr ""
+msgstr "Mozgatás Lefelé"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
@@ -13400,7 +13396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Sor Törlése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13418,7 +13414,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Átváltás Megjegyzésre"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13434,7 +13430,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Sor Összezárása/Kibontása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13447,7 +13443,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "Klónozás Lefelé"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13467,7 +13463,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "Szimbólum Befejezése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -13479,7 +13475,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "Kijelölés Kiértékelése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13495,7 +13491,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Sorvégi Szóközök Lenyírása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -13511,7 +13507,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Mind Nagybetű"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13523,7 +13519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Mind Kisbetű"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13535,7 +13531,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Szó Eleji Nagybetű"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13579,7 +13575,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Automatikus Behúzás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13660,7 +13656,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Töréspont Elhelyezése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13673,7 +13669,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Összes Töréspont Eltávolítása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13717,7 +13713,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "Kontextusérzékeny Súgó"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -13826,7 +13822,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Összes Mentése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13834,7 +13830,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
-msgstr ""
+msgstr "Szkript Puha Újratöltése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
@@ -13855,7 +13851,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
-msgstr ""
+msgstr "Következő Előzmény"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
@@ -13900,7 +13896,6 @@ msgid "``script_editor/run_file``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
-#, fuzzy
 msgid "Toggle Scripts Panel"
 msgstr "Szkript panel váltása"
 
@@ -13946,7 +13941,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr ""
+msgstr "Node-ok Másolása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -14063,7 +14058,7 @@ msgstr "Hibakereső"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
-msgstr ""
+msgstr "Belépés"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
@@ -14075,7 +14070,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
-msgstr ""
+msgstr "Átlépés"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
@@ -14087,7 +14082,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "Folytatás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -14103,7 +14098,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Ugrás Vissza"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -14135,7 +14130,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Rejtett fálok megjelenítése/elrejtése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14151,7 +14146,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Kedvencek Mutatása/Elrejtése"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14171,7 +14166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
-msgstr ""
+msgstr "Mappa Létrehozása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14197,7 +14192,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr ""
+msgstr "Elérési Út Fókuszálása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14248,12 +14243,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Fájlrendszer dokk"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Útvonal"
+msgstr "Útvonal Másolása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14262,7 +14256,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Megkettőzés"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14302,7 +14296,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Node Útvonal Másolása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14443,16 +14437,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
-msgstr ""
+msgstr "Kitöltés egy színnel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "Animáció"
+msgstr "Transzpozálás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -14508,7 +14501,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Kiválasztás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14520,7 +14513,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
-msgstr ""
+msgstr "Kijelölés Kivágása"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -19414,7 +19407,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "Előtag"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
@@ -20115,7 +20108,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr ""
+msgstr "Feltétel"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
 msgid ""
@@ -20127,7 +20120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr ""
+msgstr "Iterátor"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
@@ -24804,7 +24797,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -31237,7 +31230,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid "Emission Mask"
-msgstr ""
+msgstr "Kibocsátási Maszk"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:329
 msgid "Three types of emission masks can be generated from a texture:"
@@ -51059,7 +51052,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr ""
+msgstr "AnimációFa"
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -85750,9 +85743,8 @@ msgid "List"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
-#, fuzzy
 msgid "Set"
-msgstr "Beállítás"
+msgstr "Beállít"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
@@ -91900,7 +91892,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:317
-#, fuzzy
 msgid "Localization"
 msgstr "Lokalizáció"
 

@@ -1,46 +1,35 @@
-# Godot Engine Documentation in Hebrew
+# Godot Engine Documentation in Galician
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# Daniel <lorddaniel09@gmail.com>, 2018.
-# Daniel Dovgun <daniel.dovgun@gmail.com>, 2019.
-# Ido Dana <idodana01@gmail.com>, 2019.
-# Omer I.S <omeritzicschwartz@gmail.com>, 2021.
-# RaikaRakka <shaiyatta@gmail.com>, 2018.
-# shai sinai <lemun420il@gmail.com>, 2019.
-# Yaron Shahrabani <sh.yaron@gmail.com>, 2018-2020.
-# Ziv D <wizdavid@gmail.com>, 2020.
-# חן אשחר <eshcharc@gmail.com>, 2020.
-# יובל הרמן <nhajeho1@gmail.com>, 2019.
+# Andy Barcia <andybarcia4@gmail.com>, 2021.
+# PokeGalaico <abloodyfreaks@gmail.com>, 2021.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2021-02-22 21:30+0000\n"
-"Last-Translator: Omer I.S. <omeritzicschwartz@gmail.com>\n"
-"Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
-"godot-docs/he/>\n"
-"Language: he\n"
+"PO-Revision-Date: 2021-02-15 10:51+0000\n"
+"Last-Translator: PokeGalaico <abloodyfreaks@gmail.com>\n"
+"Language-Team: Galician <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/gl/>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 4.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.5-dev\n"
 
 #: ../../docs/index.rst:2
 msgid "Godot Docs – *3.2* branch"
-msgstr "מסמכי גודוט - ענף *3.2*"
+msgstr ""
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"ניתן להשתמש בתיעוד בכמה שפות וגרסאות שונות. ניתן להחליף בין הגרסאות בפאנל "
-"הימני למטה."
 
 #: ../../docs/index.rst:10
 msgid ""
@@ -50,9 +39,6 @@ msgid ""
 "documentation for the previous stable `3.1 <https://docs.godotengine.org/"
 "en/3.1>`_ branch."
 msgstr ""
-"זה התיעוד לענף היציב 3.2. לתיעוד של סניף **פיתוח** הנוכחי `תסתכל כאן "
-"<https://docs.godotengine.org/en/latest>` _. תוכל גם לגלוש בתיעוד לענף היציב "
-"הקודם `3.1 <https://docs.godotengine.org/en/3.1>` _."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -60,9 +46,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"תיעוד זה תורגם מהשפה המקורית באנגלית < https://docs.godotengine.org/en/"
-"latest >'_ על ידי חברי הקהילה באתר _ 'Weblate < https://hosted.weblate.org/"
-"projects/godot-engine/godot-docs >'."
+"Esta documentación está traducida da `orixinal en inglés <https://docs."
+"godotengine.org/en/latest>` _por membros da comunidade en `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -71,9 +57,10 @@ msgid ""
 "community by providing new translations or reviewing existing ones on "
 "Weblate."
 msgstr ""
-"בהתאם לרמת המאמץ בתרגום, אתה עשוי לגלות פסקאות דפים שלמים שלא תורגמו ויופיעו "
-"באנגלית. באפשרותך לסייע לקהילה באמצעות מתן תרגומים חדשים או בדיקה של תרגומים "
-"קיימים ב- Weblate."
+"Dependendo do nivel de progreso da tradución, é posible que atopes "
+"parágrafos ou páxinas enteiras que aínda estean en inglés. Podes axudar á "
+"comunidade proporcionando novas traducións ou revisando as xa existentes en "
+"Weblate."
 
 #: ../../docs/index.rst:27
 msgid ""
@@ -81,11 +68,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
-"לעת עתה, תרגומים לשפות אחרות זמינות רק עבור ענף הפיתוח \"עדכני\" (פיתוח), "
-"אבל צריכים להתאים לגרסאות גודוט יציב בכל זאת."
 
 #: ../../docs/index.rst:31
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -93,9 +77,6 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
-"ברוך הבא למסמך הרשמי של מנוע גודוט, מנוע המשחקים הדו ותלת מימדי החינמי ובקוד "
-"פתוח שמונע ע\"י הקהילה. אם המסמך חדש עבורך, אנחנו ממליצים שתקרא את :ref:` דף "
-"ההיכרות <doc_about_intro>` כדי להבין מה המסמך הנ\"ל יכול להציע."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -103,8 +84,6 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
-"תוכן העניינים למטה ובצד יכול לאפשר לך לגשת בקלות לתיעוד בנושא שבו הנך "
-"מעוניין. אתה גם יכול להשתמש בחיפוש בפינה השמאלית העליונה."
 
 #: ../../docs/index.rst:41
 msgid ""
@@ -114,10 +93,6 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"מנוע גודוט הוא פרוייקט בקוד פתוח שמפותח ע\"י קהילה של מתנדבים. צוות התיעוד "
-"תמיד יכול להעזר במשוב שלך כדי לשפר את המדריכים ואת ההפניות למחלקות. אם אינך "
-"מבין משהו, או שאינך יכול למצוא משהו שאתה מחפש במסמכים, תן לנו לדעת ועזור לנו "
-"לשפר את התיעוד!"
 
 #: ../../docs/index.rst:48
 msgid ""
@@ -128,12 +103,6 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"ניתן להגיש pull request או לפתוח תקלה ב`מאגר ב־GitHub <https://github.com/"
-"godotengine/godot-docs/issues>`_, ניתן לסייע לנו `לתרגם את התיעוד <https://"
-"hosted.weblate.org/engage/godot-engine/>`_ לשפה שלך או לפנות אלינו דרך הערוץ "
-"``‎#documentation`` ב־ `Discord <https://discord.gg/zH7NUgz>`_, או בערוץ "
-"``‎#godotengine-doc`` תחת `irc.freenode.net <http://webchat.freenode.net/?"
-"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:58
 msgid "weblate_widget"
@@ -142,29 +111,29 @@ msgstr ""
 #: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr "התיעוד העיקרי בשביל האתר מסודר לפי הסעיפים הבאים:"
+msgstr ""
 
 #: ../../docs/index.rst:61
 msgid "General"
-msgstr "כללי"
+msgstr "Xeral"
 
 #: ../../docs/index.rst:69
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
 msgid "Getting started"
-msgstr "מתחילים"
+msgstr ""
 
 #: ../../docs/index.rst:80
 msgid "Tutorials"
-msgstr "מדריכים"
+msgstr "Titoriais"
 
 #: ../../docs/index.rst:110
 msgid "Development"
-msgstr "פיתוח"
+msgstr ""
 
 #: ../../docs/index.rst:121
 msgid "Community"
-msgstr "קהילה"
+msgstr "Comunidade"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
@@ -175,7 +144,7 @@ msgstr ""
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "על אודות"
+msgstr "Acerca De"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -257,7 +226,7 @@ msgstr "על אודות"
 #: ../../docs/development/editor/editor_style_guide.rst:7
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 msgid "Introduction"
-msgstr "מבוא"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -266,10 +235,6 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"ברוכים הבאים לתיעוד הרשמי של מנוע גודוט ( Godot Engine ), מנוע המשחק הדו "
-"מימדי ותלת מימדי, בעל קוד פתוח, חינמי, ומפותח על ידי הקהילה!\n"
-"מאחורי המשפט הארוך הזה, אתם תמצאו כלי חזק אך ידידותי למשמתש שתוכלו להשתמש "
-"לפיתוח כל סוג של משחק, לכל סוג של פלטפורמה, וללא מגבלת שימוש כלשהיא."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -277,13 +242,10 @@ msgid ""
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"מטרת דף זה היא לתת הצגה רחבה על המנוע, ועל תוכן מסמך זה, כך שתוכל לדעת מאיפה "
-"להתחיל אם אתה מתחיל או איפה להסתכל אם אתה צריך מידע נוסף בנוגע למאפיין "
-"מסויים."
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr "לפני שאת\\ה מתחיל\\ה"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -301,7 +263,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
-msgstr "על אודות המנוע Godot"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -309,8 +271,6 @@ msgid ""
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
-"מנוע משחק הינו כלי מורכב, ולכן זה מסובך להציג את Godot במספר מילים. הנה הצגה "
-"של היחצן שלנו, שהינכם חופשים להשתמש אם אתם צריכים לכתוב בקצרה על המנוע Godot."
 
 #: ../../docs/about/introduction.rst:38
 msgid ""
@@ -321,11 +281,6 @@ msgid ""
 "including the major desktop platforms (Linux, macOS, Windows) as well as "
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"המנוע גודוט הוא מנוע משחק בעל תוכן רב ורחב פלטפורמות שמאפשר ליצור משחקי דו "
-"מימד ותלת מימד בממשק אחיד. המנוע מספק אוסף מקיף של כלים נפוצים, כך שהמשתמשים "
-"יכלו להתמקד על יצירת משחקים מבלי להמציא את הגלגל מחדש. המשחקים יכולים לייצא "
-"למספר פלטפורמות בלחיצת כפתור, כגון לפלטפורמות שולחן העבודה הנפוצות (Linux, "
-"macOS, Windows), למובייל (Android, iOS) וגם לפלטפורמות מבוססות דפדפן (HTML5)."
 
 #: ../../docs/about/introduction.rst:45
 msgid ""
@@ -336,11 +291,6 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"גודוט הוא לגמרי בחינם ובעל קוד פתוח תחת רישיון MIT שמאוד מרשה. ללא תנאים, "
-"ללא תמלוגים, כלום. המשחקים של המשתמשים הם שלהם, עד השורה האחרונה של קוד "
-"המנוע. הפיתוח של גודוט הוא עצמאי לחלוטין ומונע על ידי הקהילה, במטרה לתמוך "
-"במתשתמשים לעצב את המנוע שלהם לפי הציפיות שלהם. גודוט נתמך על ידי 'Software "
-"Freedom Conservancy <https://sfconservancy.org>' ללא כוונת רווח."
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -348,12 +298,10 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"בשביל יותר מידע על המנוע, אתם מוזמנים לקרוא את התיעוד האלה, במיוחד את המדריך "
-"'צעד אחר צעד'."
 
 #: ../../docs/about/introduction.rst:57
 msgid "About the documentation"
-msgstr "על אודות התיעוד"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:59
 msgid ""
@@ -364,14 +312,8 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"מסמך זה כל הזמן נכתב, מתוקן, נערך ומתחדש על ידי חברים בקהילת המנוע גודוט. "
-"התיעוד נערך על ידי קבצי טקסט בשפת Markup `reStructuredText <http://www."
-"sphinx-doc.org/en/stable/rest.html>`_ ואז עובר קימפול לאתר סטטי/מסמך לא "
-"מקוון בעזרת הכלים קוד-פתוח חינמיים `Sphinx <http://www.sphinx-doc.org>`_ ו- "
-"`ReadTheDocs <https://readthedocs.org/>`_ ."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid ""
 "You can contribute to Godot's documentation by opening issue tickets or "
 "sending patches via pull requests on its GitHub `source repository <https://"
@@ -379,10 +321,6 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"אתם יכולים לתרום למסמך של גודוט על ידי פתיחת דוחות בעיה, או שליחת תיקונים "
-"בעזרת בקשות משיכה בGitHub של גודוט `source repository <https://github.com/"
-"godotengine/godot-docs>`_, או שאתם יכולים לערוך את המסמך לשפה שלכם `Hosted "
-"Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -391,23 +329,17 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
-"כל התוכן תחת  הרישיון המרשה  (`CC-BY 3.0 <https://creativecommons.org/"
-"licenses/by/3.0/>`_)Creative Commons Attribution 3.0, ועם יחוס ל\"Juan "
-"Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
-msgstr "סדר התיעוד"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"התיעוד מוסדר לפי חמישה חלקים עם חלוקה לא מאוזנת מרשימה של התוכן - אבל הדרך "
-"זה מחלוק אמור להיות יחסית אינטואיטיבי:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -415,8 +347,6 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-"פרק :ref:`sec-general` מכיל את המבוא וכן את המידע על המנוע, על ההיסטוריה "
-"שלו,  על הרשאותיו, על מחבריו ועוד. כמו כן מכיל המבוא את :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
 msgid ""
@@ -427,13 +357,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/introduction.rst:91
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"את הסעיף :ref:`sec-tutorials`, מצד שני, ניתן לקרוא במקרה הצורך בכל סדר שהוא. "
-"הסעיף מכיל הרבה מדריכים ותיעוד למאפיינים מסוימים."
 
 #: ../../docs/about/introduction.rst:93
 msgid ""
@@ -441,8 +368,6 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-"הסעיף :ref:`sec-devel` מיועד למשתמשים מתקדמים ולתורמים לפיתוח המנוע, עם מידע "
-"על הידור המנוע, פיתוח מודולי C++‎ או תוספים לעורך."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -468,12 +393,10 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
-"בנוסף לתיעוד זה, ייתכן ותרצה לבחון את `המיזמים לדוגמא של גודו <https://"
-"github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:110
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr "תהנו לקרוא וליצור משחקים עם המנוע גודוט!"
+msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
@@ -483,53 +406,44 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:42
 #: ../../docs/tutorials/optimization/batching.rst:478
 msgid "Frequently asked questions"
-msgstr "שאלות נפוצות"
+msgstr ""
 
 #: ../../docs/about/faq.rst:10
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr "מה אפשר לעשות עם גודוט? כמה הוא עולה? מה התנאים של הרישיון?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:12
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"גודוט הוא תוכנה חינמי/חופשי קוד-פתוח תחת רישיון MIT מאושר 'על ידי OSI "
-"<https://opensource.org/licenses/MIT>`_."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
-msgstr "בקצרה:"
+msgstr ""
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"אתה רשאי להוריד ולהשתמש בגודו לכל מטרה, אישית, ללא-רווח, מסחרית, או אחרת."
 
 #: ../../docs/about/faq.rst:17
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "אתה יכול לשנות, להפיץ, ולערוך מחדש את גודוט לעומק ליבך"
+msgstr ""
 
 #: ../../docs/about/faq.rst:19
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"כל התוכן בתיעוד הזה תחת רישיון reative Commons Attribution 3.0 (`CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_) וביחוס ל\"Juan Linietsky, "
-"Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -537,8 +451,6 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"לוֹגוֹ והסמלים הם תחת אותו רישיון Creative Commons. שים לב שחלק מהספריות צד "
-"שלישי שנמצאים כחלק מהקוד מקור של גודוט אולי בעלי רישיונות שונים."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -548,30 +460,25 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"למידע מלא, הסתכל בקבצים `COPYRIGHT.txt <https://github.com/godotengine/godot/"
-"blob/master/COPYRIGHT.txt>`_ וכמו כן ב `LICENSE.txt <https://github.com/"
-"godotengine/godot/blob/master/LICENSE.txt>`_ ו- `LOGO_LICENSE.txt <https://"
-"github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ במאגר של גודוט."
 
 #: ../../docs/about/faq.rst:31
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
-msgstr "ראה גם  `את דף הרישיון באתר גודוט <https://godotengine.org/license>`_."
+msgstr ""
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "איזה פלטפורמות נתמכות על ידי גודוט?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**בשביל העורך:**"
+msgstr ""
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
 msgid "Windows"
-msgstr "וינדוס (Windows)"
+msgstr ""
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
@@ -594,50 +501,45 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (לינוקס, ‎\\*BSD)"
+msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "** בשביל היצוא של המשחקים שלך:**"
+msgstr ""
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr "וינדוס ( וגם UWP)"
+msgstr ""
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
 #: ../../docs/tutorials/misc/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:326
 msgid "Android"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:363
 #: ../../docs/tutorials/misc/jitter_stutter.rst:96
 #: ../../docs/development/compiling/compiling_with_mono.rst:328
 msgid "iOS"
-msgstr "iOS"
+msgstr ""
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr "אתר אינטרנט"
+msgstr ""
 
 #: ../../docs/about/faq.rst:51
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"ישנה תמיכה גם בקבצים בינריים של 32 וגם של 64 סיביות איפה שמצב זה הגיוני, "
-"כאשר בררת המחדל היא 64."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"חלק מהמשתמשים דיווחו שהם גם הצליחו להשתמש ב־Godot על מערכות המובססות על "
-"ארכיטקטורת ARM, כגון Raspberry Pi בעזרת לינוקס."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -645,21 +547,16 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"בנוסף על כך, ישנם כמה ישומיי צד שלישי לא רשמיים המסוגלים לבנות לחלק "
-"מהקונסולות. למרות זאת, ישומיים אלו לא כלולים בסקריפטי הבנייה ובתבניות הייצוא "
-"הרשמיים."
 
 #: ../../docs/about/faq.rst:61
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"לקבלת מידע נוסף, ראו פרק על `<ref:`exporting <toc-learn-workflow-export: וגם "
-"פרק על `<ref:`compiling Godot yourself<toc-devel-compiling: ."
 
 #: ../../docs/about/faq.rst:65
 msgid "Which programming languages are supported in Godot?"
-msgstr "אילו שפות תכנות נתמכות ב־Godot?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:67
 msgid ""
@@ -667,8 +564,6 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"השפות הרשמיות הנתמכות בגודוט הם: C#, GDScript, סקריפטינג חזותי ו++C. ראו את "
-"הקטגוריות משנה לכל שפה בפרק '<ref:`scripting <toc-learn-scripting: ."
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -679,12 +574,6 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"אם הינכם רק מתחילים עם גודוט או עם פיתוח משחקים בכללי, GDscript היא השפה "
-"המומלצת ללמידה שכן היא שפה שנבנתה על גבי המנוע והיא מותאמת לו. בזמן ששפות "
-"סקריפטיות נוטות להיות בעלות ביצועים נחותים יותר משפות עיליות או שפות low-"
-"level בטווח הארוך; GDscript יספק דרך מהירה, ידידותית, ובעלת יכולות גבוהות "
-"בשביל יצירת אב-טיפוס, בשביל יצירת מוצרי בר-קיימא מינימליים ובשביל יצירת "
-"מוצרים שניתן למסחר במהרה."
 
 #: ../../docs/about/faq.rst:78
 msgid ""
@@ -696,11 +585,6 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
-"נא לשים לב כי התמיכה ב־C#‎ עדיין חדשה יחסית, על כן, יתכן ותצוצנה בעיות במהלך "
-"העבודה. קהילת המתכנתים הידידותיים שלנו עמלה רבות והיא תמיד מוכנה להתמודד עם "
-"בעיות חדשות, אך כיוון שמיזם זה הוא מיזם קוד פתוח, נמליץ לך תחילה לוודא "
-"שביצעת הכול כשורה לפני הכול. דרך טובה להתחיל את תהליך פתרון התקלות היא לחפש "
-"בדיונים תחת `<נושאים פתוחים <https://github.com/godotengine/godot/issues` ."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -710,15 +594,10 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"לשפות חדשות, תיתכן תמיכה דרך צדדים שלישיים בעזרת GDNative / NativeScript / "
-"PluginScript. כרגע העבודה נמצאת בעיצומה על יצירת איגודים לא רשמיים לגודו, "
-"לדוגמה:\n"
-"`<Python <https://github.com/touilleMan/godot-python>` וגם `<Nim <https://"
-"github.com/pragmagic/godot-nim` ."
 
 #: ../../docs/about/faq.rst:93
 msgid "What is GDScript and why should I use it?"
-msgstr "מה הוא GDScript ומדוע עלי להשתמש בו?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:95
 msgid ""
@@ -774,7 +653,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
-msgstr "מה היו המניעים ליצירת GDScript?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:129
 msgid ""
@@ -788,7 +667,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:135
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr "הסיבות הראשיות ליצירת שפת סקריפטינג המותאמת אישית לגודוט:"
+msgstr ""
 
 #: ../../docs/about/faq.rst:137
 msgid ""
@@ -1413,9 +1292,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "לכידה"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
@@ -1430,14 +1308,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
-msgstr "לכידה"
+msgstr "Características"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1496,7 +1372,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:36
 #: ../../docs/development/compiling/compiling_with_mono.rst:196
 msgid "Editor"
-msgstr "עורך"
+msgstr "Editor"
 
 #: ../../docs/about/list_of_features.rst:43
 #: ../../docs/about/list_of_features.rst:85
@@ -1509,9 +1385,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:46
-#, fuzzy
 msgid "Script editor."
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:47
 msgid ""
@@ -1556,9 +1431,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:62
-#, fuzzy
 msgid "Live camera replication."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:64
 msgid "Move the in-editor camera and see the result in the running project."
@@ -1684,9 +1558,8 @@ msgid "CPU-based particles."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:112
-#, fuzzy
 msgid "2D tools"
-msgstr "כלים"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
@@ -1749,9 +1622,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:134
 #: ../../docs/about/list_of_features.rst:273
-#, fuzzy
 msgid "**Collision detection:**"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:136
 msgid "Built-in shapes: line, box, circle, capsule."
@@ -2022,9 +1894,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "כלים"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
@@ -2104,14 +1975,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:285
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:287
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:290
 #: ../../docs/about/docs_changelog.rst:113
@@ -2122,9 +1991,8 @@ msgid "Scripting"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
-msgstr "כללי"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:294
 msgid "Object-oriented design pattern with scripts extending nodes."
@@ -2185,9 +2053,8 @@ msgid "Full support for the C# 7.0 syntax and features."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:315
-#, fuzzy
 msgid "Supports all platforms."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:316
 msgid ""
@@ -2243,7 +2110,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:28
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr "שמע"
+msgstr "Son"
 
 #: ../../docs/about/list_of_features.rst:342
 msgid "Mono, stereo, 5.1 and 7.1 output."
@@ -2297,9 +2164,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "ייצוא"
+msgstr "Importación"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2314,9 +2180,8 @@ msgid "*Images:* See :ref:`doc_import_images`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
-msgstr "שמע"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:371
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2385,9 +2250,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:395
-#, fuzzy
 msgid "Mouse input."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:397
 msgid ""
@@ -2410,18 +2274,16 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "אנימציות"
+msgstr "Navegación"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:408
-#, fuzzy
 msgid "Navigation meshes."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:409
 msgid "Support for dynamic obstacle avoidance planned in Godot 4.0."
@@ -2611,9 +2473,8 @@ msgid "**Nodes:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:482
-#, fuzzy
 msgid "Buttons."
-msgstr "כפתור"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:483
 msgid "Checkboxes, check buttons, radio buttons."
@@ -2672,9 +2533,8 @@ msgid ":ref:`Stack <class_BoxContainer>` layouts."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Grid <class_GridContainer>` layouts."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ""
@@ -2732,7 +2592,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/index.rst:2
 #: ../../docs/development/file_formats/tscn.rst:377
 msgid "Animation"
-msgstr "הנפשה"
+msgstr "Animación"
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Direct kinematics and inverse kinematics."
@@ -2922,33 +2782,28 @@ msgid "2D"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:25
-#, fuzzy
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:30
-#, fuzzy
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:31
-#, fuzzy
 msgid ":ref:`doc_sync_with_audio`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:36
-#, fuzzy
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:37
-#, fuzzy
 msgid ":ref:`doc_interpolation`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -2956,9 +2811,8 @@ msgid "Inputs"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:42
-#, fuzzy
 msgid ":ref:`doc_input_examples`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
@@ -2991,49 +2845,42 @@ msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:57
-#, fuzzy
 msgid ":ref:`doc_visual_shaders`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:62
-#, fuzzy
 msgid ":ref:`doc_webrtc`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:65 ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:67
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:68
-#, fuzzy
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:185
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Características Adicionais (Plugins)"
 
 #: ../../docs/about/docs_changelog.rst:73
-#, fuzzy
 msgid ":ref:`doc_android_plugin`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:74
-#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:75
-#, fuzzy
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:196
@@ -3042,16 +2889,14 @@ msgid "Multi-threading"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:80
-#, fuzzy
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:201
 #: ../../docs/tutorials/content/index.rst:2
-#, fuzzy
 msgid "Creating content"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:90
 msgid "Procedural geometry series:"
@@ -3062,30 +2907,25 @@ msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:87
-#, fuzzy
 msgid ":ref:`doc_arraymesh`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:88
-#, fuzzy
 msgid ":ref:`doc_surfacetool`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:89
-#, fuzzy
 msgid ":ref:`doc_meshdatatool`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:90
-#, fuzzy
 msgid ":ref:`doc_immediategeometry`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:93
 #: ../../docs/tutorials/optimization/index.rst:2
-#, fuzzy
 msgid "Optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:95
 msgid ":ref:`doc_using_multimesh`"
@@ -3140,9 +2980,8 @@ msgid ":ref:`doc_what_are_godot_classes`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:124
-#, fuzzy
 msgid ":ref:`doc_scene_organization`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:125
 msgid ":ref:`doc_scenes_versus_scripts`"
@@ -3278,9 +3117,8 @@ msgid ":ref:`doc_particle_shader`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:187
-#, fuzzy
 msgid ":ref:`doc_making_main_screen_plugins`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:188
 msgid ":ref:`doc_spatial_gizmo_plugins`"
@@ -3520,9 +3358,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
-#, fuzzy
 msgid "Introduction to Godot's editor"
-msgstr "מבוא"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -4011,7 +3848,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Success!"
-msgstr "הצלחה!"
+msgstr "Éxito!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:172
 msgid ""
@@ -4606,7 +4443,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
-msgstr "כפתור"
+msgstr "Botón"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "The scene tree should look like this:"
@@ -4904,7 +4741,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr "קבוצות"
+msgstr "Grupos"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -5092,7 +4929,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
 msgid "Signal"
-msgstr "אות"
+msgstr "Sinal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1343
@@ -5101,7 +4938,7 @@ msgstr "אות"
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:696
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
-msgstr "אותות"
+msgstr "Sinais"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 msgid ""
@@ -5252,9 +5089,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:171
-#, fuzzy
 msgid "Custom signals"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:173
 msgid "You can also declare your own custom signals in Godot:"
@@ -5462,9 +5298,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:108
-#, fuzzy
 msgid "Sprite animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -5694,9 +5529,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:364
-#, fuzzy
 msgid "Choosing animations"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:366
 msgid ""
@@ -5818,9 +5652,8 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:543
-#, fuzzy
 msgid "Node setup"
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Click Scene -> New Scene and add the following nodes:"
@@ -5891,14 +5724,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:582
-#, fuzzy
 msgid "Save the scene."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
-#, fuzzy
 msgid "Enemy script"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -6137,9 +5968,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
-#, fuzzy
 msgid "Testing the scene"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
@@ -6643,9 +6473,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:240
-#, fuzzy
 msgid "Setting a main scene"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -6682,9 +6511,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
-#, fuzzy
 msgid "Export presets"
-msgstr "ייצוא"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:267
 msgid ""
@@ -9936,7 +9764,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
@@ -10041,7 +9869,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:259
 #: ../../docs/community/tutorials.rst:53
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -10823,7 +10651,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:44
 msgid "AutoLoad"
-msgstr ""
+msgstr "AutoCargador"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
@@ -11071,7 +10899,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
-msgstr "תיאור"
+msgstr "Descrición"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -11399,9 +11227,8 @@ msgid "``-s <script>``, ``--script <script>``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
-#, fuzzy
 msgid "Run a script."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
@@ -11496,7 +11323,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
-msgstr "נתיב"
+msgstr "Ruta"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
@@ -11828,9 +11655,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
-#, fuzzy
 msgid "General Editor Actions"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -11863,9 +11689,8 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Windows, Linux"
-msgstr "X11 (לינוקס, /*BSD)"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -11881,14 +11706,12 @@ msgstr "X11 (לינוקס, /*BSD)"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:461
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
-#, fuzzy
 msgid "Editor setting"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "עורך"
+msgstr "Abrir Editor 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -11903,9 +11726,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "עורך"
+msgstr "Abrir Editor 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -11921,7 +11743,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Abrir Editor de Scripts"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -11939,7 +11761,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr "חיפוש בעזרה"
+msgstr "Buscar na Axuda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -11955,7 +11777,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
-msgstr "מצב ללא הסחות דעת"
+msgstr "Modo Sen Distraccións"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -11971,7 +11793,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr "הלשונית הבאה"
+msgstr "Seguinte pestana"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -11987,7 +11809,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr "הלשונית הקודמת"
+msgstr "Anterior Pestana"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -12019,7 +11841,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
-msgstr "פתיחת סצנה"
+msgstr "Abrir Escena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -12035,7 +11857,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
-msgstr "סגירת סצנה"
+msgstr "Pechar Escena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -12051,7 +11873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr "פתיחה מחדש של סצנה סגורה"
+msgstr "Reabrir Escena Pechada"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -12069,7 +11891,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
-msgstr "שמירת סצנה"
+msgstr "Gardar Escena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -12101,7 +11923,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr "שמירת כל הסצנות"
+msgstr "Gardar Todas as Escenas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -12164,7 +11986,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr "ביטול"
+msgstr "Desfacer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -12183,7 +12005,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr "ביצוע חוזר"
+msgstr "Refacer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -12199,7 +12021,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr "יציאה"
+msgstr "Saír"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -12215,7 +12037,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
-msgstr "יציאה לרשימת מיזמים"
+msgstr "Saír á Lista de Proxectos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
@@ -12231,7 +12053,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr "שמירת צילום מסך"
+msgstr "Captura de Pantalla"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -12247,7 +12069,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr "הפעלת/ביטול מסך מלא"
+msgstr "Act./Desact. Pantalla Completa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -12263,7 +12085,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr "הרצה"
+msgstr "Executar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -12281,7 +12103,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
-msgstr "השהיית סצנה"
+msgstr "Pausar Escena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -12297,7 +12119,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr "עצירה"
+msgstr "Deter"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -12314,7 +12136,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
-msgstr "הרצת הסצנה"
+msgstr "Executar Escena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -12331,7 +12153,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
-msgstr "הרצת סצנה בהתאמה אישית"
+msgstr "Executar Escena a Elixir"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -12349,7 +12171,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr "הרחבת פאנל תחתון"
+msgstr "Estender Panel Inferior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -12366,7 +12188,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr "התקרבות"
+msgstr "Aumentar Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -12385,7 +12207,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr "התרחקות"
+msgstr "Diminuír Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -12403,7 +12225,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr "איפוס התקריב"
+msgstr "Restablecer Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -12434,7 +12256,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Elixir Modo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -12449,7 +12271,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Mover Modo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -12465,7 +12287,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Modo Rotación"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -12480,7 +12302,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Modo Escalado"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -12494,7 +12316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
-msgstr ""
+msgstr "Modo Regra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -12507,7 +12329,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Usar Axuste Intelixente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -12519,7 +12341,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Usar Axuste de Cuadrícula"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -12531,7 +12353,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Multiplicar Dimensión da Cuadrícula por 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -12543,7 +12365,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Dividir Dimensión da Cuadrícula por 2"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -12555,7 +12377,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
-msgstr ""
+msgstr "Sempre Amosar a Cuadrícula"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
@@ -12580,7 +12402,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Amosar Guías"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -12593,7 +12415,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
-msgstr ""
+msgstr "Centrar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
@@ -12606,7 +12428,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Encadrar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -12619,7 +12441,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
-msgstr ""
+msgstr "Vista Previa da Escala do Lenzo (Canvas)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
@@ -12635,7 +12457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr "הכנס מפתח"
+msgstr "Engadir Chave"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -12682,7 +12504,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
-msgstr ""
+msgstr "Restablecer Pose"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
@@ -12803,7 +12625,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
-msgstr ""
+msgstr "Usar Espazo Local"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -12816,7 +12638,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Usar Axuste de Cuadrícula"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
@@ -12824,7 +12646,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Axustar Obxecto ao Chan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -12837,7 +12659,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Vista Superior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -12849,7 +12671,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Vista Inferior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -12861,7 +12683,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Vista Frontal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -12873,7 +12695,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Vista Traseira"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -12885,7 +12707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Vista Dereita"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -12897,7 +12719,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Vista Esquerda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -12909,7 +12731,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Vista Perspectiva/Ortogonal"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
@@ -12920,9 +12742,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -12954,7 +12775,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
-msgstr ""
+msgstr "Aliñar Transformación con Perspectiva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -12970,7 +12791,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "Aliñar Rotación con Perspectiva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
@@ -12987,7 +12808,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 Ventá"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -13003,7 +12824,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 Ventás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -13019,7 +12840,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 Ventás (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -13035,7 +12856,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 Ventás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -13051,7 +12872,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 Ventás (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -13067,7 +12888,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 Ventás"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -13082,13 +12903,12 @@ msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
-#, fuzzy
 msgid "Text Editor"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Cortar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -13108,7 +12928,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr "העתקה"
+msgstr "Copiar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -13134,7 +12954,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Pegar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -13152,7 +12972,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Seleccionar Todo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -13194,7 +13014,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Atopar Seguinte"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -13208,7 +13028,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "Find Previous"
-msgstr ""
+msgstr "Atopar Anterior"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -13225,9 +13045,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Android"
+msgstr "Buscar en Arquivos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -13245,7 +13064,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr "החלף"
+msgstr "Substituír"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13320,7 +13139,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
-msgstr ""
+msgstr "Eliminar Liña"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
@@ -13338,7 +13157,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
-msgstr ""
+msgstr "Comentar/Descomentar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
@@ -13354,7 +13173,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
-msgstr ""
+msgstr "Expandir/Colapsar Liña"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
@@ -13367,7 +13186,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
-msgstr ""
+msgstr "Clonar Liña"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
@@ -13387,7 +13206,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr ""
+msgstr "Completar Símbolo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
@@ -13399,7 +13218,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "Evaluar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13415,7 +13234,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
-msgstr ""
+msgstr "Eliminar Espazos ao Final da Liña"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
@@ -13431,7 +13250,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
-msgstr ""
+msgstr "Maiúscula"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
@@ -13443,7 +13262,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
-msgstr ""
+msgstr "Minúscula"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
@@ -13455,7 +13274,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr ""
+msgstr "Capitalizar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
@@ -13467,7 +13286,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
-msgstr ""
+msgstr "Convertir Indentación a Espazos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
@@ -13483,7 +13302,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Convertir Identación a Tabulacións"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -13499,7 +13318,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
-msgstr ""
+msgstr "Auto Indentar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
@@ -13515,7 +13334,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
-msgstr ""
+msgstr "Act./Desact. Marcapáxinas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
@@ -13531,7 +13350,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
-msgstr ""
+msgstr "Ir ao Seguinte Marcapáxinas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
@@ -13543,16 +13362,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
-msgstr ""
+msgstr "Ir ao Anterior Marcapáxinas"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "מבוא"
+msgstr "Ir a Función"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -13564,7 +13382,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr "מעבר לשורה"
+msgstr "Ir a Liña"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -13581,7 +13399,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "Toggle Breakpoint"
-msgstr ""
+msgstr "Act./Desact. Punto de Interrupción (Breakpoint)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -13594,7 +13412,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
-msgstr ""
+msgstr "Eliminar Tódolos Puntos de Interrupción (Breakpoints)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
@@ -13610,7 +13428,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
-msgstr ""
+msgstr "Ir ao Seguinte Punto de Interrupción"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
@@ -13622,7 +13440,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
-msgstr ""
+msgstr "Ir ao Anterior Punto de Interrupción"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
@@ -13638,7 +13456,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
-msgstr ""
+msgstr "Axuda Contextual"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
@@ -13653,9 +13471,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "נתיב"
+msgstr "Editor de Scripts"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -13690,9 +13507,8 @@ msgid "``script_editor/window_move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
-#, fuzzy
 msgid "Next Script"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
@@ -13732,7 +13548,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr "שמירה"
+msgstr "Gardar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -13748,7 +13564,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Gardar Todo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -13790,7 +13606,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr "סגירה"
+msgstr "Pechar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -13807,7 +13623,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 #: ../../docs/development/compiling/compiling_for_ios.rst:70
 msgid "Run"
-msgstr "הרצה"
+msgstr "Executar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Ctrl + Shift + X`"
@@ -13823,7 +13639,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr "החלפת תצוגת חלונית סקריפטים"
+msgstr "Act./Desact. Panel de Scripts"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -13847,7 +13663,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr "איפוס זום"
+msgstr "Reiniciar Zoom"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -13859,7 +13675,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr "איתור סוג המפרק"
+msgstr "Encontrar Tipo de Nodo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
@@ -13867,7 +13683,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
-msgstr "העתקת מפרקים"
+msgstr "Copiar Nodos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
@@ -13875,7 +13691,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
-msgstr "גזירת מפרקים"
+msgstr "Cortar Nodos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
@@ -13883,7 +13699,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "Paste Nodes"
-msgstr ""
+msgstr "Pegar Nodos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -13891,7 +13707,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr "מחיקת הנבחר"
+msgstr "Eliminar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -13917,7 +13733,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
-msgstr "יצירת פונקציה"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -13929,7 +13745,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "Edit Member"
-msgstr "עריכת שדה"
+msgstr "Editar Membro"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
@@ -13945,7 +13761,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr "רענון תרשים"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -13956,14 +13772,13 @@ msgid "``visual_script_editor/toggle_breakpoint``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
-#, fuzzy
 msgid "Editor Output"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr "העתקת בחירה"
+msgstr "Copiar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -13971,7 +13786,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr "ניקוי פלט"
+msgstr "Limpar Saída"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -13980,7 +13795,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:378
 #: ../../docs/tutorials/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr "ניפוי שגיאות"
+msgstr "Depurador"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
@@ -14008,7 +13823,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "Continuar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -14024,7 +13839,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr "מעבר אחורה"
+msgstr "Retroceder"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -14032,7 +13847,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr "מעבר קדימה"
+msgstr "Avanzar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -14040,7 +13855,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr "מעבר מעלה"
+msgstr "Subir"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -14048,15 +13863,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr "רענון"
+msgstr "Actualizar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
+#, fuzzy
 msgid "Toggle Hidden Files"
-msgstr "הצג/הסתר קבצים מוסתרים"
+msgstr "Amosar/Ocultar Arquivos Ocultos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -14072,7 +13888,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr "הוספת/ביטול מועדף"
+msgstr "Act./Desact. Favorito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -14080,7 +13896,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr "שינוי מצב"
+msgstr "Act./Desact. Modo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -14092,7 +13908,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
-msgstr ""
+msgstr "Crear Cartafol"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -14110,7 +13926,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr "מחיקה"
+msgstr "Eliminar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -14118,7 +13934,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
-msgstr "מיקוד נתיב"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
@@ -14133,7 +13949,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr "העברת מועדף מעלה"
+msgstr "Subir Favorito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -14151,7 +13967,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr "העברת מועדף מטה"
+msgstr "Baixar Favorito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -14169,11 +13985,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Panel de Sistema de Arquivos"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
-msgstr "העתקת נתיב"
+msgstr "Copiar Ruta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -14182,7 +13998,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Duplicar"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -14198,7 +14014,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr "הוספת מפרק צאצא"
+msgstr "Engadir Nodo Fillo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -14222,7 +14038,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr "העתקת נתיב המפרק"
+msgstr "Copiar Ruta do Nodo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -14257,13 +14073,12 @@ msgid "``scene_tree/move_down``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
-#, fuzzy
 msgid "Animation Track Editor"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr "שכפול בחירה"
+msgstr "Duplicar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -14271,7 +14086,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr "שכפול מהרצועה שנבחרה"
+msgstr "Duplicar Transposto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -14287,7 +14102,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr "מחיקת הבחירה"
+msgstr "Eliminar Selección"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -14295,7 +14110,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr "מעבר לצעד הבא"
+msgstr "Ir ao Seguinte Paso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -14311,7 +14126,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr "מעבר לצעד הקודם"
+msgstr "Ir ao Anterior Paso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -14370,9 +14185,8 @@ msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
-#, fuzzy
 msgid "Transpose"
-msgstr "התמרה"
+msgstr "Transpoñer"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -14419,9 +14233,8 @@ msgid "``tile_map_editor/rotate_right``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
-#, fuzzy
 msgid "Clear Transform"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14429,7 +14242,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Elixir"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -14460,9 +14273,8 @@ msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
-#, fuzzy
 msgid "Tileset Editor"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
@@ -14485,9 +14297,8 @@ msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
-#, fuzzy
 msgid "Region Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
@@ -14498,9 +14309,8 @@ msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
-#, fuzzy
 msgid "Collision Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
@@ -14523,9 +14333,8 @@ msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
-#, fuzzy
 msgid "Navigation Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -14536,9 +14345,8 @@ msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
-#, fuzzy
 msgid "Bitmask Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
@@ -14561,9 +14369,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
-#, fuzzy
 msgid "Icon Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
@@ -14586,9 +14393,8 @@ msgid "``tileset_editor/editmode_z_index``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
-msgstr "על המנוע גודוט"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -14619,7 +14425,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
-msgstr "רישיון"
+msgstr "Licenza"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
@@ -14635,14 +14441,12 @@ msgid "OS (editor)"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
-#, fuzzy
 msgid "Windows, macOS, Linux"
-msgstr "X11 (לינוקס, /*BSD)"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
-#, fuzzy
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "X11 (לינוקס, /*BSD)"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "OS (export)"
@@ -15140,9 +14944,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:230
-#, fuzzy
 msgid "Script serialization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:232
 msgid "Unity can handle script serialization in two ways:"
@@ -15524,9 +15327,8 @@ msgid "Coroutine support. See `Coroutines with yield`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:201
-#, fuzzy
 msgid "assert"
-msgstr "מחלקות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:201
 msgid ""
@@ -15574,18 +15376,16 @@ msgid "PI"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:215
-#, fuzzy
 msgid "PI constant."
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:217
 msgid "TAU"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:217
-#, fuzzy
 msgid "TAU constant."
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:219
 msgid "INF"
@@ -15700,9 +15500,8 @@ msgid "``-``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
-#, fuzzy
 msgid "Subtraction"
-msgstr "מבוא"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "``<<`` ``>>``"
@@ -15871,9 +15670,8 @@ msgid ":ref:`class_NodePath` or StringName"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -15936,9 +15734,8 @@ msgid "Short for \"boolean\", it can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
-#, fuzzy
 msgid ":ref:`int <class_int>`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid ""
@@ -16411,7 +16208,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr "קבועים"
+msgstr "Constantes"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
 msgid ""
@@ -16470,7 +16267,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:386
 msgid "Functions"
-msgstr "פונקציות"
+msgstr "Funcións"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
 msgid ""
@@ -16648,9 +16445,8 @@ msgid "There are 6 pattern types:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
-#, fuzzy
 msgid "Constant pattern"
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:916
 msgid "Constant primitives, like numbers and strings::"
@@ -16679,9 +16475,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:964
-#, fuzzy
 msgid "Binding pattern"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
 msgid ""
@@ -16763,7 +16558,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
 msgid "Classes"
-msgstr "מחלקות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
 msgid ""
@@ -16875,9 +16670,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1176
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1178
 msgid ""
@@ -17654,9 +17448,8 @@ msgid "GDScript exports"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:7
-#, fuzzy
 msgid "Introduction to exports"
-msgstr "מבוא"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:9
 msgid ""
@@ -17796,9 +17589,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:237
-#, fuzzy
 msgid "Adding script categories"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:239
 msgid ""
@@ -18136,9 +17928,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
-#, fuzzy
 msgid "Numbers"
-msgstr "חברים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:424
 msgid ""
@@ -18235,9 +18026,8 @@ msgid "Use the past tense to name signals:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
-#, fuzzy
 msgid "Constants and enums"
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:543
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
@@ -18357,9 +18147,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:268
-#, fuzzy
 msgid "Member variables"
-msgstr "חברים"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:670
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:270
@@ -18372,9 +18161,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:275
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:351
-#, fuzzy
 msgid "Local variables"
-msgstr "נקודות ציון מקומיות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:677
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:277
@@ -18856,9 +18644,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:17
-#, fuzzy
 msgid "Warning system project settings"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/warning_system.rst:19
 msgid ""
@@ -19453,9 +19240,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-#, fuzzy
 msgid "Creating a script"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -19923,7 +19709,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Acción"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -19981,7 +19767,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "עצמי"
+msgstr "Propio"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -20019,7 +19805,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr "נתיב המשאב"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -20307,9 +20093,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:4
-#, fuzzy
 msgid "Custom VisualScript nodes"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:6
 msgid ""
@@ -20318,9 +20103,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
-#, fuzzy
 msgid "Creating a custom node"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:12
 msgid ""
@@ -20466,9 +20250,8 @@ msgid "Setting up C# for Godot"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:42
-#, fuzzy
 msgid "Windows (Visual Studio)"
-msgstr "וינדוס ( וגם UWP)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:44
 msgid ""
@@ -20483,9 +20266,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:54
-#, fuzzy
 msgid "Windows (JetBrains Rider)"
-msgstr "וינדוס ( וגם UWP)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
 msgid ""
@@ -20494,9 +20276,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
-#, fuzzy
 msgid "In Godot's Editor Settings:"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid "Set **Mono External Editor** to **JetBrains Rider**."
@@ -20540,9 +20321,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:84
-#, fuzzy
 msgid "Additional notes"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:86
 msgid ""
@@ -20578,9 +20358,8 @@ msgid "Visual Studio 2019"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:109
-#, fuzzy
 msgid "MonoDevelop"
-msgstr "פיתוח"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:110
 msgid "Visual Studio for Mac"
@@ -20881,9 +20660,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
-#, fuzzy
 msgid "C# features"
-msgstr "לכידה"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -20970,9 +20748,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84
-#, fuzzy
 msgid "C# signals"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:86
 msgid ""
@@ -21307,9 +21084,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:162
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:164
 msgid ""
@@ -21450,9 +21226,8 @@ msgid "``length()``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:262
-#, fuzzy
 msgid "``Length``"
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:263
 msgid "``length_squared()``"
@@ -21961,9 +21736,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:4
-#, fuzzy
 msgid "Cross-language scripting"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:6
 msgid ""
@@ -22118,9 +21892,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:4
-#, fuzzy
 msgid "Creating script templates"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:6
 msgid ""
@@ -22136,9 +21909,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:15
-#, fuzzy
 msgid "Locating the templates"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:17
 msgid "There are two places where templates can be managed."
@@ -22292,7 +22064,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr "ערך"
+msgstr "Valor"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 msgid "``%INT_TYPE%``"
@@ -22715,9 +22487,8 @@ msgid "Importing images"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-#, fuzzy
 msgid "Supported image formats"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid "Godot can import the following image formats:"
@@ -23223,7 +22994,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr "תבנית"
+msgstr "Formato"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -24064,9 +23835,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
-#, fuzzy
 msgid "Animation options"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid ""
@@ -24243,14 +24013,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:370
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:371
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:372
 msgid ""
@@ -24707,9 +24475,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -24738,7 +24505,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Malla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -24774,7 +24541,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:163
 msgid "Skeleton"
-msgstr ""
+msgstr "Esqueleto"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -24835,9 +24602,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -24848,19 +24614,16 @@ msgid "transform animation of pose bones"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
@@ -24920,9 +24683,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
-#, fuzzy
 msgid "Constraints"
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:55
 msgid ""
@@ -24933,9 +24695,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
-#, fuzzy
 msgid "Animation Mode"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:63
 msgid ""
@@ -24981,7 +24742,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr "ייצוא"
+msgstr "Exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -25130,9 +24891,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "יצירת תוכן"
+msgstr "Exportar tódolos recursos no proxecto"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
@@ -25311,9 +25071,8 @@ msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
 msgid "scenes"
@@ -25590,9 +25349,8 @@ msgid "Running on a release build"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "**בשביל העורך:**"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
 msgid "Running on an editor build"
@@ -25801,9 +25559,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -26051,9 +25808,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-#, fuzzy
 msgid "Setting up automatic signing"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid ""
@@ -26355,9 +26111,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
-#, fuzzy
 msgid "Install OpenJDK"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:30
 msgid ""
@@ -26440,9 +26195,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:75
-#, fuzzy
 msgid "There are two types of icons required by Godot:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 msgid ""
@@ -26745,9 +26499,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:107
-#, fuzzy
 msgid "Accepting the licenses"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:109
 msgid ""
@@ -26792,9 +26545,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:137
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:222
-#, fuzzy
 msgid "Generating the keystore"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:139
 msgid ""
@@ -26901,9 +26653,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:214
-#, fuzzy
 msgid "Android SDK"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/android_custom_build.rst:215
 msgid "Android SDK Platform"
@@ -27169,9 +26920,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
-#, fuzzy
 msgid "Shader language limitations"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:377
@@ -27376,9 +27126,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:10
-#, fuzzy
 msgid "Platform support"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:12
 msgid ""
@@ -27435,9 +27184,8 @@ msgid "Exporting a PCK file"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:39
-#, fuzzy
 msgid "There are two ways to export a project for a server:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:41
 msgid ""
@@ -27491,9 +27239,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:74
-#, fuzzy
 msgid "Preparing the server distribution"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:76
 msgid ""
@@ -27506,9 +27253,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:86
-#, fuzzy
 msgid "Starting the dedicated server"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_dedicated_servers.rst:88
 msgid ""
@@ -27704,14 +27450,12 @@ msgid "Methods."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:31
-#, fuzzy
 msgid "Constants."
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:32
-#, fuzzy
 msgid "Signals."
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/what_are_godot_classes.rst:34
 msgid ""
@@ -27792,9 +27536,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:4
-#, fuzzy
 msgid "Scene organization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scene_organization.rst:6
 msgid ""
@@ -30150,11 +29893,11 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Type"
-msgstr "סוג"
+msgstr "Tipo"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
-msgstr "התמרה"
+msgstr "Transformación"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -30305,9 +30048,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
-#, fuzzy
 msgid "``Custom Transform``"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:66
 msgid "Used to alter the tile's shape. Use this if you have non-square tiles."
@@ -30318,9 +30060,8 @@ msgid "All of these options can be left at their defaults for this demo."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:71
-#, fuzzy
 msgid "Creating a TileSet"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:73
 msgid ""
@@ -30669,9 +30410,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:302
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid ""
@@ -30959,7 +30699,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:158
 msgid "Local Coords"
-msgstr "נקודות ציון מקומיות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid ""
@@ -30990,9 +30730,8 @@ msgid "ParticlesMaterial settings"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -31128,7 +30867,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:293
 msgid "Color"
-msgstr ""
+msgstr "Cor"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:295
 msgid "Used to change the color of the particles being emitted."
@@ -31810,9 +31549,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:4
-#, fuzzy
 msgid "2D meshes"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_meshes.rst:9
 msgid ""
@@ -32192,7 +31930,7 @@ msgstr ""
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:75
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid "Tools"
-msgstr "כלים"
+msgstr "Ferramentas"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
 msgid ""
@@ -32207,9 +31945,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-#, fuzzy
 msgid "2D Sprite animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
 msgid ""
@@ -32301,9 +32038,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
-#, fuzzy
 msgid "Controlling the animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
 msgid ""
@@ -32314,9 +32050,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:90
-#, fuzzy
 msgid "Sprite sheet with AnimatedSprite"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:92
 msgid ""
@@ -32375,9 +32110,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:125
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
 msgid ""
@@ -32443,9 +32177,8 @@ msgid "Press \"Play\" on the animation to see how it looks."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:183
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:185
 msgid ""
@@ -32802,9 +32535,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
-#, fuzzy
 msgid "Using 3D transforms"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:9
 msgid ""
@@ -34102,7 +33834,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid "Depth"
-msgstr "עומק"
+msgstr "Profundidad"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:429
 msgid ""
@@ -36243,9 +35975,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:82
-#, fuzzy
 msgid "There are two ways to do this:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:85
 msgid "sRGB transfer function to display linear ratios on image import"
@@ -36645,9 +36376,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:27
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "מבוא"
+msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:29
 msgid ""
@@ -36740,9 +36470,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:80
-#, fuzzy
 msgid "Custom meshes"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:82
 msgid ""
@@ -37010,9 +36739,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:262
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/tutorials/3d/csg_tools.rst:264
 msgid ""
@@ -44345,9 +44073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:18
-#, fuzzy
 msgid "Animating one Fish"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_animation/animating_thousands_of_fish.rst:20
 msgid ""
@@ -44856,9 +44583,8 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:48
-#, fuzzy
 msgid "Audio buses"
-msgstr "שמע"
+msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:9
 msgid ""
@@ -45938,9 +45664,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:147
-#, fuzzy
 msgid "Code example"
-msgstr "וינדוס (Windows)"
+msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:149
 msgid ""
@@ -47315,11 +47040,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic character (2D)"
@@ -47612,9 +47336,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:4
-#, fuzzy
 msgid "Collision shapes (3D)"
-msgstr "צורות התנגשות גלויים"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:6
 msgid "This guide explains:"
@@ -47653,27 +47376,24 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:26
-#, fuzzy
 msgid "Primitive collision shapes"
-msgstr "צורות התנגשות גלויים"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:28
 msgid "Godot provides the following primitive collision shape types:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:30
-#, fuzzy
 msgid ":ref:`class_BoxShape`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:31
 msgid ":ref:`class_SphereShape`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:32
-#, fuzzy
 msgid ":ref:`class_CapsuleShape`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
 msgid ""
@@ -47697,9 +47417,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:45
-#, fuzzy
 msgid "Convex collision shapes"
-msgstr "צורות התנגשות גלויים"
+msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:47
 msgid ""
@@ -48218,9 +47937,8 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:411
 #: ../../docs/tutorials/math/vectors_advanced.rst:589
-#, fuzzy
 msgid "More information"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:413
 msgid ""
@@ -48657,9 +48375,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:103
-#, fuzzy
 msgid "Rotating the transformation matrix"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:105
 msgid ""
@@ -49250,9 +48967,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:31
-#, fuzzy
 msgid "Vector interpolation"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:33
 msgid ""
@@ -49281,9 +48997,8 @@ msgid "It will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:53
-#, fuzzy
 msgid "Transform interpolation"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:55
 msgid ""
@@ -49307,9 +49022,8 @@ msgid "And again, it will produce the following motion:"
 msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:80
-#, fuzzy
 msgid "Smoothing motion"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/math/interpolation.rst:82
 msgid ""
@@ -50505,9 +50219,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
 msgid ""
@@ -50551,9 +50264,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
@@ -50568,9 +50280,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Select all nodes in your rig (box selection should work fine)."
@@ -50751,9 +50462,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:51
-#, fuzzy
 msgid "Creating the polygons"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid ""
@@ -50835,9 +50545,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:111
-#, fuzzy
 msgid "Creating the skeleton"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid ""
@@ -50999,7 +50708,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:4
 msgid "AnimationTree"
-msgstr "עץ הנפשה"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:9
 msgid ""
@@ -51025,9 +50734,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:19
-#, fuzzy
 msgid "Creating an AnimationTree"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:21
 msgid ""
@@ -51070,9 +50778,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:40
-#, fuzzy
 msgid "Creating a tree"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:42
 msgid ""
@@ -51212,9 +50919,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:107
-#, fuzzy
 msgid "Transition"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:109
 msgid ""
@@ -51281,9 +50987,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:148
-#, fuzzy
 msgid "There are many types of transitions:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/tutorials/animation/animation_tree.rst:152
 msgid ""
@@ -51914,9 +51619,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:161
-#, fuzzy
 msgid "Capturing actions"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:163
 msgid ""
@@ -51985,9 +51689,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:300
-#, fuzzy
 msgid "Mouse motion"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/inputs/input_examples.rst:302
 msgid ""
@@ -52194,7 +51897,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:32
 #: ../../docs/community/contributing/updating_the_class_reference.rst:238
 msgid "Usage"
-msgstr "שימוש"
+msgstr "Uso"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -52993,9 +52696,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
-#, fuzzy
 msgid "Creating the PO template (POT) manually"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid ""
@@ -53025,9 +52727,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
-#, fuzzy
 msgid "Creating the PO template (POT) using pybabel"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid ""
@@ -53147,7 +52848,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Linguaxe"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -56073,7 +55774,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Tema"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -56449,9 +56150,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:42
-#, fuzzy
 msgid "Centering a control"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:44
 msgid ""
@@ -56736,9 +56436,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/gui/gui_containers.rst:164
 msgid ""
@@ -57144,9 +56843,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
-#, fuzzy
 msgid "Animation effects"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:133
 msgid ""
@@ -57525,7 +57223,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:133
 msgid "Capture"
-msgstr "לכידה"
+msgstr "Captura"
 
 #: ../../docs/tutorials/viewports/viewports.rst:135
 msgid ""
@@ -59159,7 +58857,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:107
 msgid "Members"
-msgstr "חברים"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:109
 msgid ""
@@ -59246,9 +58944,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:202
-#, fuzzy
 msgid "Local arrays"
-msgstr "נקודות ציון מקומיות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:204
 msgid ""
@@ -59329,7 +59026,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
 msgid "Class"
-msgstr "מחלקה"
+msgstr "Clase"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:302
 msgid "Operator"
@@ -59835,19 +59532,16 @@ msgid "**Vector3**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
-#, fuzzy
 msgid "**Color**"
-msgstr "**בשביל העורך:**"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
-#, fuzzy
 msgid "**Transform**"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
-#, fuzzy
 msgid "**Transform2D**"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:567
 msgid ""
@@ -60183,9 +59877,8 @@ msgid "float **mix** (float a, float b, float c)"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:667
-#, fuzzy
 msgid "Linear interpolate"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:669
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
@@ -60233,9 +59926,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:679
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
-#, fuzzy
 msgid "Hermite interpolate"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:681
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
@@ -60904,9 +60596,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:81
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:39
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:40
-#, fuzzy
 msgid "Built-ins"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:83
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:41
@@ -60921,9 +60612,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:89
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
 #: ../../docs/tutorials/shading/shading_reference/particle_shader.rst:48
-#, fuzzy
 msgid "Global built-ins"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:91
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:49
@@ -61543,9 +61233,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:207
-#, fuzzy
 msgid "Light built-ins"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
 msgid ""
@@ -63663,9 +63352,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:4
-#, fuzzy
 msgid "VisualShaders"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:6
 msgid ""
@@ -63690,9 +63378,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:22
-#, fuzzy
 msgid "Creating a VisualShader"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:24
 msgid ""
@@ -63817,9 +63504,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:94
-#, fuzzy
 msgid "Visual Shader nodes"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/shading/visual_shaders.rst:96
 msgid ""
@@ -64986,9 +64672,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:146
-#, fuzzy
 msgid "An optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:148
 msgid ""
@@ -66192,7 +65877,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
-msgstr "ספריית משאבים"
+msgstr "Biblioteca de Assets"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:4
 msgid "About the Asset Library"
@@ -67221,14 +66906,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/index.rst:2
-#, fuzzy
 msgid "VR starter tutorial"
-msgstr "מדריכים"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "מדריכים"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:11
 msgid ""
@@ -67585,9 +67268,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:186
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_one.rst:190
 msgid ""
@@ -69052,9 +68734,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "מדריכים"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:11
 msgid ""
@@ -69636,9 +69317,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -70197,9 +69877,8 @@ msgid "Let's go over how this script works!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -70408,9 +70087,8 @@ msgid "Let's quickly go over how this script works."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:996
 msgid ""
@@ -70675,9 +70353,8 @@ msgid "Editor plugins"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:4
-#, fuzzy
 msgid "Installing plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:6
 msgid ""
@@ -70687,9 +70364,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:11
-#, fuzzy
 msgid "Finding plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:13
 msgid ""
@@ -70720,9 +70396,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:35
-#, fuzzy
 msgid "Installing a plugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/installing_plugins.rst:37
 msgid ""
@@ -71453,7 +71128,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "Key"
-msgstr "מפתח"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 #: ../../docs/development/file_formats/tscn.rst:169
@@ -71827,9 +71502,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
-#, fuzzy
 msgid "Inspector plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
@@ -71848,9 +71522,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:40
-#, fuzzy
 msgid "EditorInspectorPlugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:42
 msgid ""
@@ -71872,9 +71545,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:84
-#, fuzzy
 msgid "EditorProperty"
-msgstr "פיתוח"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:86
 msgid ""
@@ -71885,9 +71557,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:4
-#, fuzzy
 msgid "Visual Shader plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/visual_shader_plugins.rst:6
 msgid ""
@@ -72430,9 +72101,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:461
-#, fuzzy
 msgid "Saving the resource"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:463
 msgid ""
@@ -73177,14 +72847,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/index.rst:2
-#, fuzzy
 msgid "Android plugins"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:4
-#, fuzzy
 msgid "Creating Android plugins (Godot 3.2.2+)"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:9
 msgid ""
@@ -73264,9 +72932,8 @@ msgid "Push notifications"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:33
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:35
 msgid ""
@@ -73311,9 +72978,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:51
-#, fuzzy
 msgid "Building an Android plugin"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:53
 msgid ""
@@ -73483,9 +73149,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:133
-#, fuzzy
 msgid "Loading and using an Android plugin"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:135
 msgid ""
@@ -73502,14 +73167,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:141
-#, fuzzy
 msgid "From your script:"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:151
-#, fuzzy
 msgid "Bundling GDNative resources"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/android/android_plugin.rst:153
 msgid ""
@@ -73616,7 +73279,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
-msgstr ""
+msgstr "Cambios"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:22
 msgid ""
@@ -73702,9 +73365,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
-#, fuzzy
 msgid "Consumables"
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
@@ -73716,9 +73378,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "תיאור"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -74102,9 +73763,8 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:43
-#, fuzzy
 msgid "Engine"
-msgstr "על Godot"
+msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:15
 msgid ""
@@ -74660,9 +74320,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:64
-#, fuzzy
 msgid "Starting the project"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:65
 msgid ""
@@ -74859,9 +74518,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
-#, fuzzy
 msgid "Console support in Godot"
-msgstr "אילו שפות נתמכות ב־Godot?"
+msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Console publishing process"
@@ -75010,9 +74668,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:18
-#, fuzzy
 msgid "Creating a Thread"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/threads/using_multiple_threads.rst:20
 msgid "Creating a thread is very simple, just use the following code:"
@@ -75357,9 +75014,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:118
-#, fuzzy
 msgid "Which one should I use?"
-msgstr "מה הוא GDScript ומדוע עלי להשתמש בו?"
+msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/index.rst:120
 msgid ""
@@ -75560,9 +75216,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:134
-#, fuzzy
 msgid "Generating geometry"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/arraymesh.rst:136
 msgid ""
@@ -75690,9 +75345,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:4
-#, fuzzy
 msgid "Using the SurfaceTool"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/content/procedural_geometry/surfacetool.rst:6
 msgid ""
@@ -75982,9 +75636,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "קהילה"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/index.rst:51
 msgid "CPU"
@@ -75995,9 +75648,8 @@ msgid "GPU"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
-#, fuzzy
 msgid "General optimization tips"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:9
 msgid ""
@@ -76096,14 +75748,12 @@ msgid "Putting a start/stop timer around code of interest."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third-party CPU profilers."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:60
 msgid ""
@@ -76340,9 +75990,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:196
-#, fuzzy
 msgid "The optimization process"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:198
 msgid ""
@@ -76649,9 +76298,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:84
-#, fuzzy
 msgid "Creating a sprite"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_servers.rst:86
 msgid ""
@@ -76722,9 +76370,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:4
-#, fuzzy
 msgid "CPU optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:9
 msgid ""
@@ -76964,9 +76611,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:189
-#, fuzzy
 msgid "Other languages"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:191
 msgid ""
@@ -77013,9 +76659,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:221
-#, fuzzy
 msgid "For more information on threads, see :ref:`doc_using_multiple_threads`."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:226
 msgid ""
@@ -77058,9 +76703,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:251
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/cpu_optimization.rst:253
 msgid ""
@@ -77105,9 +76749,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:4
-#, fuzzy
 msgid "GPU optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:9
 msgid ""
@@ -77179,9 +76822,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:54
-#, fuzzy
 msgid "For more information on 2D batching, see :ref:`doc_batching`."
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:57
 msgid "3D batching"
@@ -77391,9 +77033,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:183
-#, fuzzy
 msgid "Reading textures"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:185
 msgid ""
@@ -77552,9 +77193,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:4
-#, fuzzy
 msgid "Optimization using MultiMeshes"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:6
 msgid ""
@@ -77630,9 +77270,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:48
-#, fuzzy
 msgid "Multimesh example"
-msgstr "וינדוס (Windows)"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/using_multimesh.rst:50
 msgid ""
@@ -77642,9 +77281,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:4
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:9
 msgid ""
@@ -77747,9 +77385,8 @@ msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:72
-#, fuzzy
 msgid "Change of texture."
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:73
 msgid "Change of material."
@@ -78054,9 +77691,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:291
-#, fuzzy
 msgid "Custom shaders"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:293
 msgid ""
@@ -78076,9 +77712,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:302
-#, fuzzy
 msgid "Project Settings"
-msgstr "מתחילים"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:304
 msgid ""
@@ -78091,9 +77726,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:312
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/batching.rst:314
 msgid ""
@@ -78403,9 +78037,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:1
-#, fuzzy
 msgid "optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:7
 msgid "Optimizing 3D performance"
@@ -78600,9 +78233,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:133
-#, fuzzy
 msgid "Animation and skinning"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/optimization/optimizing_3d_performance.rst:135
 msgid ""
@@ -79313,9 +78945,8 @@ msgid "64-bit signed integer"
 msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:111
-#, fuzzy
 msgid "3: :ref:`float<class_float>`"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:116
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:138
@@ -79984,9 +79615,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:161
-#, fuzzy
 msgid "Editing variables"
-msgstr "נקודות ציון מקומיות"
+msgstr ""
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:162
 msgid ""
@@ -80228,7 +79858,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr ""
+msgstr "Partículas"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""
@@ -80667,9 +80297,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:9
 msgid ""
@@ -80715,9 +80344,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -80856,7 +80484,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr "ניפוי שגיאות"
+msgstr "Depuración"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -80883,9 +80511,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
-#, fuzzy
 msgid "Debugger Panel"
-msgstr "ניפוי שגיאות"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
 msgid ""
@@ -80913,7 +80540,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:36
 msgid "Deploy with Remote Debug"
-msgstr "הטעמה עם ניפוי שגיאות מרחוק"
+msgstr "Exportar con Depuración Remota"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid ""
@@ -80923,7 +80550,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
-msgstr "הטמעה קטנה עם מערכת קבצים ברשת"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:44
 msgid ""
@@ -80946,7 +80573,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
-msgstr "צורות התנגשות גלויים"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
@@ -80956,7 +80583,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
-msgstr "ניווט גלוי"
+msgstr "Navegación Visible"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -80964,7 +80591,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
-msgstr "סנכרון השינויים בסצנה"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:65
 msgid ""
@@ -80975,7 +80602,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
-msgstr "סנכרון השינויים בסקריפט"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
 msgid ""
@@ -81028,9 +80655,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "מתחילים"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -81072,9 +80698,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:4
-#, fuzzy
 msgid "Debugger panel"
-msgstr "ניפוי שגיאות"
+msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:6
 msgid ""
@@ -81137,7 +80762,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
-msgstr "שגיאות"
+msgstr "Erros"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:44
 msgid ""
@@ -81151,7 +80776,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr "מאפיין"
+msgstr "Analítica de Rendemento"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:51
 msgid ""
@@ -81200,7 +80825,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:79
 msgid "Network Profiler"
-msgstr "מאפיין רשת"
+msgstr "Analítica de Rendemento de Rede"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:81
 msgid ""
@@ -81212,7 +80837,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr "צגים"
+msgstr "Monitores"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
@@ -81225,7 +80850,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:95
 msgid "Video RAM"
-msgstr "זיכרון וידאו"
+msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:97
 msgid ""
@@ -81238,7 +80863,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:105
 msgid "Misc"
-msgstr "שונות"
+msgstr "Outros"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:107
 msgid ""
@@ -81359,9 +80984,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:47
-#, fuzzy
 msgid "Licenses screen"
-msgstr "רישיון"
+msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:49
 msgid ""
@@ -81719,7 +81343,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
-msgstr ""
+msgstr "Obxectivo"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
@@ -81782,9 +81406,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
-#, fuzzy
 msgid "Custom modules"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
 msgid ""
@@ -81814,14 +81437,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
-#, fuzzy
 msgid "Cleaning generated files"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
 msgid ""
@@ -81861,9 +81482,8 @@ msgid "Overriding the build options"
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
-#, fuzzy
 msgid "Using a file"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
 msgid ""
@@ -82859,9 +82479,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:146
-#, fuzzy
 msgid "Cleaning the generated export templates"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:148
 msgid ""
@@ -83807,9 +83426,8 @@ msgid "``Mono`` (optional)"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:203
-#, fuzzy
 msgid "``Tools``"
-msgstr "כלים"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:205
 msgid ""
@@ -83858,9 +83476,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:228
-#, fuzzy
 msgid "Building the Mono runtime"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:230
 msgid ""
@@ -83879,9 +83496,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:241
-#, fuzzy
 msgid "Targeting Android"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:243
 msgid ""
@@ -83903,9 +83519,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:257
-#, fuzzy
 msgid "Targeting iOS"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:259
 msgid ""
@@ -84218,9 +83833,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:117
-#, fuzzy
 msgid ":ref:`doc_overriding_build_options`."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:120
 msgid "Optimizing for size instead of speed"
@@ -84397,9 +84011,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:4
-#, fuzzy
 msgid "Android Studio"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:6
 msgid ""
@@ -84426,9 +84039,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:21
-#, fuzzy
 msgid "Android Studio's welcome window."
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/android_studio.rst:23
 msgid ""
@@ -84453,11 +84065,10 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:107
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
-#, fuzzy
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "
 "channels <https://godotengine.org/community>`__."
-msgstr "ראה גם  `את דף הרישיון באתר גודוט <https://godotengine.org/license>`_."
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/clion.rst:4
 msgid "CLion"
@@ -84524,9 +84135,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:9
-#, fuzzy
 msgid "Creating a new project"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:11
 msgid ""
@@ -84608,9 +84218,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:76
-#, fuzzy
 msgid "Windows example:"
-msgstr "וינדוס (Windows)"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:82
 msgid ""
@@ -84652,9 +84261,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:100
-#, fuzzy
 msgid "Adding files to the project"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:102
 msgid ""
@@ -84689,13 +84297,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/code_blocks.rst:129
-#, fuzzy
 msgid ""
 "That's it. You're ready to start contributing to Godot using the Code::"
 "Blocks IDE. Remember to save the project file and the **Workspace**.  If you "
 "run into any issues, ask for help in one of `Godot's community channels "
 "<https://godotengine.org/community>`__."
-msgstr "ראה גם  `את דף הרישיון באתר גודוט <https://godotengine.org/license>`_."
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:4
 msgid "KDevelop"
@@ -84758,7 +84365,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Activar"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
@@ -84789,9 +84396,8 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
-#, fuzzy
 msgid "Debugging the project"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:71
 msgid "Select **Run > Configure Launches...** from the top menu."
@@ -84924,9 +84530,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:4
-#, fuzzy
 msgid "Visual Studio"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:6
 msgid ""
@@ -85122,9 +84727,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:19
-#, fuzzy
 msgid "Fill out the form with the following settings:"
-msgstr "התיעוד העיקרי בשביל האתר מסודר לפי הסעיפים הבאים:"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:22
 msgid "Build Tool"
@@ -85310,9 +84914,8 @@ msgid "Internationalize a string"
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:70
-#, fuzzy
 msgid "There are two types of internationalization in Godot's codebase:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:72
 msgid ""
@@ -85387,14 +84990,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:146
-#, fuzzy
 msgid "Get project/editor settings"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:148
-#, fuzzy
 msgid "There are four macros available for this:"
-msgstr "אין מגבלות שימוש בגודוט"
+msgstr ""
 
 #: ../../docs/development/cpp/common_engine_methods_and_macros.rst:160
 msgid ""
@@ -85665,7 +85266,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Vector"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
@@ -85673,7 +85274,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr "קבע"
+msgstr "Establecer"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
@@ -86195,7 +85796,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
-msgstr ""
+msgstr "Recursos:"
 
 #: ../../docs/development/cpp/object_class.rst:266
 msgid ""
@@ -86679,9 +86280,8 @@ msgid "Example output::"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:482
-#, fuzzy
 msgid "Now we can generate the documentation:"
-msgstr "על אודות התיעוד"
+msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:484
 msgid ""
@@ -87000,9 +86600,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:109
-#, fuzzy
 msgid "Creating a ResourceFormatSaver"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid ""
@@ -87319,9 +86918,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:389
-#, fuzzy
 msgid "Binding Signals"
-msgstr "אותות"
+msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:391
 msgid ""
@@ -87368,14 +86966,12 @@ msgid "Connecting signal example code is pretty hacky."
 msgstr ""
 
 #: ../../docs/development/editor/index.rst:2
-#, fuzzy
 msgid "Editor development"
-msgstr "פיתוח"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:4
-#, fuzzy
 msgid "Editor icons"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:6
 msgid ""
@@ -87386,9 +86982,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:12
-#, fuzzy
 msgid "Creating icons"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:14
 msgid ""
@@ -87444,9 +87039,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:47
-#, fuzzy
 msgid "Icon optimization"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/development/editor/creating_icons.rst:49
 msgid ""
@@ -87531,9 +87125,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:4
-#, fuzzy
 msgid "Editor style guide"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:9
 msgid "Thanks for your interest in contributing to the Godot editor!"
@@ -87547,9 +87140,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:16
-#, fuzzy
 msgid "Writing style"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:18
 msgid ""
@@ -87609,14 +87201,12 @@ msgid "**Good:** *Editor Settings...*"
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
-#, fuzzy
 msgid "**Bad:** *Editor Settings*"
-msgstr "עורך"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
-#, fuzzy
 msgid "Inspector sections"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:50
 msgid ""
@@ -87636,9 +87226,8 @@ msgid "This advice also applies to the Project Settings and Editor Settings."
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid "Inspector performance hints"
-msgstr "Android"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:62
 msgid ""
@@ -87686,9 +87275,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:84
-#, fuzzy
 msgid "Tooltips"
-msgstr "כלים"
+msgstr ""
 
 #: ../../docs/development/editor/editor_style_guide.rst:86
 msgid ""
@@ -87880,9 +87468,8 @@ msgid "``index`` (if two nodes have the same name)"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:79
-#, fuzzy
 msgid "``groups``"
-msgstr "קבוצות"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:81
 msgid ""
@@ -87984,9 +87571,8 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:237
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:239
 msgid ""
@@ -88166,9 +87752,8 @@ msgid "``type``"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:388
-#, fuzzy
 msgid "``path``"
-msgstr "נתיב"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:389
 msgid "``interp``"
@@ -88193,9 +87778,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:398
-#, fuzzy
 msgid "``transform``"
-msgstr "התמרה"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:399
 msgid "``value``"
@@ -88219,9 +87803,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:409
-#, fuzzy
 msgid "``0`` (constant)"
-msgstr "קבועים"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:410
 msgid "``1`` (linear)"
@@ -88546,9 +88129,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:195
-#, fuzzy
 msgid "Contributing translations"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:197
 msgid ""
@@ -90103,9 +89685,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:299
-#, fuzzy
 msgid "Editor integration"
-msgstr "אנימציות"
+msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:301
 msgid ""
@@ -90585,16 +90166,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:135
-#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"כל התוכן בתיעוד הזה תחת רישיון reative Commons Attribution 3.0 (`CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_) וביחוס ל\"Juan Linietsky, "
-"Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:138
 msgid ""
@@ -91825,7 +91402,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:317
 msgid "Localization"
-msgstr ""
+msgstr "Linguaxe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:319
 msgid ""
@@ -92055,9 +91632,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:143
-#, fuzzy
 msgid "Locating original content"
-msgstr "יצירת תוכן"
+msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:145
 msgid ""
@@ -92175,9 +91751,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:247
-#, fuzzy
 msgid "Online documentation (RST)"
-msgstr "סדר התיעוד"
+msgstr ""
 
 #: ../../docs/community/contributing/editor_and_docs_localization.rst:249
 msgid ""
@@ -92367,9 +91942,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:4
-#, fuzzy
 msgid "Community channels"
-msgstr "קהילה"
+msgstr ""
 
 #: ../../docs/community/channels.rst:6
 msgid ""
@@ -92384,15 +91958,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:10
-#, fuzzy
 msgid ""
 "A brief overview over these and other channels is also available on the "
 "`Godot website <https://godotengine.org/community>`_."
-msgstr "ראה גם  `את דף הרישיון באתר גודוט <https://godotengine.org/license>`_."
+msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q&A"
-msgstr "שאלות ותשובות נפוצות"
+msgstr "Preguntas e Respostas"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
@@ -92676,9 +92249,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:41
-#, fuzzy
 msgid "Text tutorials"
-msgstr "מדריכים"
+msgstr ""
 
 #: ../../docs/community/tutorials.rst:43
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
@@ -92715,58 +92287,3 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
-
-#, fuzzy
-#~ msgid "constants"
-#~ msgstr "קבועים"
-
-#, fuzzy
-#~ msgid "signals"
-#~ msgstr "אותות"
-
-#, fuzzy
-#~ msgid "There are two types of products - consumables and non-consumables:"
-#~ msgstr "אין מגבלות שימוש בגודוט"
-
-#, fuzzy
-#~ msgid "Scheme setup"
-#~ msgstr "נתיב"
-
-#, fuzzy
-#~ msgid "Creating a main screen plugin"
-#~ msgstr "אנימציות"
-
-#, fuzzy
-#~ msgid "Global constants"
-#~ msgstr "קבועים"
-
-#, fuzzy
-#~ msgid "There is a few things to note here."
-#~ msgstr "אין מגבלות שימוש בגודוט"
-
-#~ msgid "Mac OS X"
-#~ msgstr "מערכת הפעלה Mac OS X"
-
-#, fuzzy
-#~ msgid "Placing of AnimationPlayer"
-#~ msgstr "אנימציות"
-
-#~ msgid ""
-#~ "This means it is free as in \"free speech\" as well as in \"free beer\"."
-#~ msgstr "זה אומר שהוא חינם/חופשי כמו בחופש בחופש הדיבור כמו כן בירה בחינם."
-
-#~ msgid "There are no usage restrictions on Godot"
-#~ msgstr "אין מגבלות שימוש בגודוט"
-
-#~ msgid ""
-#~ "This means you can use it for any game or application, commercially or "
-#~ "non-commercially, in any industry"
-#~ msgstr ""
-#~ "זה אומר שאתה יכול להשתמש בו לכל משחק או אפליקציה, מסחרית או לא, בכל תעשייה"
-
-#~ msgid ""
-#~ "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
-#~ "your lawyer of choice."
-#~ msgstr ""
-#~ "למידע נוסף, `ראה כאן<https://tldrlegal.com/license/mit-license>`_ או שאל "
-#~ "את עורך הדין שלך."

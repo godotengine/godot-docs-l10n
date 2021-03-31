@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Vietnamese
-# Copyright (C) 2014-2020, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # 01lifeleft <01lifeleft@gmail.com>, 2018.
@@ -9,7 +9,9 @@
 # Kê Luyện <tranminhluyen.1993@gmail.com>, 2019.
 # mth2610 <mth2610@gmail.com>, 2018.
 # Peter Anh <peteranh3105@gmail.com>, 2019.
+# Rev <revolnoom7801@gmail.com>, 2021.
 # Steve Dang <bynguu@outlook.com>, 2019-2020.
+# SyliawDeV <thanhlongstranger@gmail.com>, 2021.
 # Ta Anh <taanh42@gmail.com>, 2020.
 # TyTYct Hihi <tytyct@gmail.com>, 2019.
 #
@@ -18,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-01-07 14:35+0100\n"
-"PO-Revision-Date: 2020-10-31 23:14+0000\n"
-"Last-Translator: Pierre Stempin <pierre.stempin@gmail.com>\n"
+"PO-Revision-Date: 2021-03-30 13:40+0000\n"
+"Last-Translator: Rev <revolnoom7801@gmail.com>\n"
 "Language-Team: Vietnamese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/vi/>\n"
 "Language: vi\n"
@@ -27,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:2
 #, fuzzy
@@ -175,14 +177,14 @@ msgstr "Cộng đồng"
 
 #: ../../docs/index.rst:131
 msgid "Class reference"
-msgstr ""
+msgstr "Class tham khảo"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "Thông tin chúng tôi"
+msgstr "Về chúng tôi"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -2464,9 +2466,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "Xuất ra"
+msgstr "Nhập"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2577,9 +2578,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:405
-#, fuzzy
 msgid "Navigation"
-msgstr "Hoạt ảnh"
+msgstr "Điều hướng"
 
 #: ../../docs/about/list_of_features.rst:407
 msgid "A* algorithm in 2D and 3D."
@@ -5850,9 +5850,8 @@ msgstr "Chỉ GDScript tạo các biến toàn cục cho mỗi script được �
 
 #: ../../docs/getting_started/step_by_step/signals.rst:1
 #: ../../docs/tutorials/misc/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Tín hiệu (Signal)"
+msgstr "Tín hiệu"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1343
@@ -12205,7 +12204,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
@@ -13020,9 +13019,8 @@ msgid "Editor setting"
 msgstr "Trình biên tập"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-#, fuzzy
 msgid "Open 2D Editor"
-msgstr "Editor (trình biên tập)"
+msgstr "Mở Trình biên tập 2D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
@@ -13037,9 +13035,8 @@ msgid "``editor/editor_2d``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-#, fuzzy
 msgid "Open 3D Editor"
-msgstr "Editor (trình biên tập)"
+msgstr "Mở Trình biên tập 3D"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
@@ -13055,7 +13052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
-msgstr ""
+msgstr "Mở Trình biên soạn Mã lệnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
@@ -13073,7 +13070,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
-msgstr ""
+msgstr "Tìm trợ giúp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
@@ -13089,7 +13086,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
-msgstr ""
+msgstr "Chế độ tập trung"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
@@ -13105,7 +13102,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
-msgstr ""
+msgstr "Tab tiếp theo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
@@ -13121,7 +13118,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
-msgstr ""
+msgstr "Tab trước"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -13152,9 +13149,8 @@ msgid "``editor/filter_files``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
-#, fuzzy
 msgid "Open Scene"
-msgstr "Scene (còn gọi là cảnh)"
+msgstr "Mở Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
@@ -13169,9 +13165,8 @@ msgid "``editor/open_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
-#, fuzzy
 msgid "Close Scene"
-msgstr "Cảnh người chơi"
+msgstr "Đóng Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
@@ -13187,7 +13182,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Mở lại Cảnh đã đóng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
@@ -13204,9 +13199,8 @@ msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
-#, fuzzy
 msgid "Save Scene"
-msgstr "Cảnh người chơi"
+msgstr "Lưu Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
@@ -13239,7 +13233,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Lưu hết các Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
@@ -13302,7 +13296,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "Undo"
-msgstr ""
+msgstr "Hoàn tác"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -13321,7 +13315,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "Redo"
-msgstr ""
+msgstr "Làm lại"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -13337,7 +13331,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
-msgstr ""
+msgstr "Thoát"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
@@ -13369,7 +13363,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
-msgstr ""
+msgstr "Chụp màn hình"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
@@ -13385,7 +13379,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Chế độ Toàn màn hình"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
@@ -13401,7 +13395,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
-msgstr ""
+msgstr "Chạy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
@@ -13418,9 +13412,8 @@ msgid "``editor/play``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
-#, fuzzy
 msgid "Pause Scene"
-msgstr "Cảnh người chơi"
+msgstr "Tạm dừng Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
@@ -13436,7 +13429,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
-msgstr ""
+msgstr "Dừng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
@@ -13452,9 +13445,8 @@ msgid "``editor/stop``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
-#, fuzzy
 msgid "Play Scene"
-msgstr "Cảnh người chơi"
+msgstr "Chạy Cảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
@@ -13470,9 +13462,8 @@ msgid "``editor/play_scene``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
-#, fuzzy
 msgid "Play Custom Scene"
-msgstr "Cảnh người chơi"
+msgstr "Chạy Cảnh Tuỳ Chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
@@ -13490,7 +13481,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "Mở rộng bảng điều khiển dưới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
@@ -13507,7 +13498,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "Zoom In"
-msgstr ""
+msgstr "Phóng to"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -13526,7 +13517,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "Zoom Out"
-msgstr ""
+msgstr "Thu nhỏ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -13544,7 +13535,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
-msgstr ""
+msgstr "Đặt lại Thu phóng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
@@ -13575,7 +13566,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "Select Mode"
-msgstr ""
+msgstr "Chế độ chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
@@ -13590,7 +13581,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "Move Mode"
-msgstr ""
+msgstr "Chế độ Di chuyển"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
@@ -13606,7 +13597,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Chế độ Xoay"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
@@ -13621,7 +13612,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "Scale Mode"
-msgstr ""
+msgstr "Chế độ căn Tỉ lệ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
@@ -13647,8 +13638,9 @@ msgid "``canvas_item_editor/ruler_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
+#, fuzzy
 msgid "Use Smart Snap"
-msgstr ""
+msgstr "Sử dụng Dính thông minh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
@@ -13659,8 +13651,9 @@ msgid "``canvas_item_editor/use_smart_snap``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
+#, fuzzy
 msgid "Use Grid Snap"
-msgstr ""
+msgstr "Sử dụng Dính lưới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
@@ -13672,7 +13665,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
-msgstr ""
+msgstr "Gấp đôi bước lưới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
@@ -13684,7 +13677,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
-msgstr ""
+msgstr "Chia đôi bước lưới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
@@ -13708,8 +13701,9 @@ msgid "``canvas_item_editor/show_grid``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
+#, fuzzy
 msgid "Show Helpers"
-msgstr ""
+msgstr "Hiển thị trợ giúp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
@@ -13721,7 +13715,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
-msgstr ""
+msgstr "Hiện đường căn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
@@ -13747,7 +13741,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
-msgstr ""
+msgstr "Lựa chọn khung hình"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
@@ -13776,7 +13770,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
-msgstr ""
+msgstr "Chèn khoá"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
@@ -13943,8 +13937,9 @@ msgid "``spatial_editor/tool_scale``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
+#, fuzzy
 msgid "Use Local Space"
-msgstr ""
+msgstr "Sử dụng Không gian Cục bộ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
@@ -13957,15 +13952,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
-msgstr ""
+msgstr "Sử dụng Dính"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
+#, fuzzy
 msgid "Snap Object to Floor"
-msgstr ""
+msgstr "Dính vật với Sàn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
@@ -13978,7 +13974,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
-msgstr ""
+msgstr "Góc nhìn đỉnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
@@ -13990,7 +13986,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
-msgstr ""
+msgstr "Góc nhìn đáy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
@@ -14002,7 +13998,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
-msgstr ""
+msgstr "Góc nhìn trực diện"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
@@ -14014,7 +14010,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
-msgstr ""
+msgstr "Góc nhìn lưng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
@@ -14026,7 +14022,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
-msgstr ""
+msgstr "Góc nhìn phải"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
@@ -14038,7 +14034,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
-msgstr ""
+msgstr "Góc nhìn trái"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
@@ -14061,9 +14057,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "Hoạt ảnh"
+msgstr "Chèn khóa Hoạt ảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -14128,7 +14123,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
-msgstr ""
+msgstr "1 Cổng xem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
@@ -14144,7 +14139,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 Cổng xem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
@@ -14176,7 +14171,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 Cổng xem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
@@ -14208,7 +14203,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 Cổng xem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
@@ -14229,7 +14224,7 @@ msgstr "Editor (trình biên tập)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "Cut"
-msgstr ""
+msgstr "Cắt"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
@@ -14249,7 +14244,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
-msgstr ""
+msgstr "Sao chép"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -14275,7 +14270,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
-msgstr ""
+msgstr "Dán"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
@@ -14293,7 +14288,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
-msgstr ""
+msgstr "Chọn Toàn Bộ"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
@@ -14335,7 +14330,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "Find Next"
-msgstr ""
+msgstr "Tìm tiếp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
@@ -14366,9 +14361,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Android"
+msgstr "Tìm trong các Tệp tin"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -14386,7 +14380,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
-msgstr ""
+msgstr "Thay thế"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -14705,7 +14699,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr ""
+msgstr "Đến Dòng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -14794,9 +14788,8 @@ msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
-#, fuzzy
 msgid "Script Editor"
-msgstr "Thiết lập scene"
+msgstr "Trình viết mã lệnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -14873,7 +14866,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
-msgstr ""
+msgstr "Lưu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
@@ -14889,7 +14882,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
-msgstr ""
+msgstr "Lưu tất cả"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
@@ -14931,7 +14924,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
-msgstr ""
+msgstr "Đóng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
@@ -14964,7 +14957,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr ""
+msgstr "Hiện/Ẩn bảng Tệp lệnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -14988,7 +14981,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr ""
+msgstr "Đặt lại độ phóng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -15001,34 +14994,31 @@ msgstr "VisualScript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
-msgstr ""
+msgstr "Tìm loại Node"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
-#, fuzzy
 msgid "Copy Nodes"
-msgstr "Node"
+msgstr "Sao chép nút"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
-#, fuzzy
 msgid "Cut Nodes"
-msgstr "Node"
+msgstr "Cắt các nút"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
-#, fuzzy
 msgid "Paste Nodes"
-msgstr "Tạo các node"
+msgstr "Dán các nút"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -15036,7 +15026,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
-msgstr ""
+msgstr "Xoá lựa chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -15062,7 +15052,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
-msgstr ""
+msgstr "Tạo Hàm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -15091,7 +15081,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
-msgstr ""
+msgstr "Làm mới đồ thị"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
@@ -15109,7 +15099,7 @@ msgstr "Editor (trình biên tập)"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "Copy Selection"
-msgstr ""
+msgstr "Sao chép lựa chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
@@ -15117,7 +15107,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
-msgstr ""
+msgstr "Xoá đầu ra"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
@@ -15154,7 +15144,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
-msgstr ""
+msgstr "Tiếp tục"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
@@ -15170,7 +15160,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
-msgstr ""
+msgstr "Trở lại"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
@@ -15178,7 +15168,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
-msgstr ""
+msgstr "Tiến tới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
@@ -15186,7 +15176,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
-msgstr ""
+msgstr "Đi Lên"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
@@ -15194,7 +15184,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
-msgstr ""
+msgstr "Làm mới"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
@@ -15202,7 +15192,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr ""
+msgstr "Bật tắt File ẩn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -15218,7 +15208,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr ""
+msgstr "Bật tắt Ưa thích"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -15226,7 +15216,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Bật tắt Chức năng"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -15237,9 +15227,8 @@ msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
-#, fuzzy
 msgid "Create Folder"
-msgstr "Tạo các node"
+msgstr "Tạo thư mục"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -15257,7 +15246,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "Delete"
-msgstr ""
+msgstr "Xóa"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
@@ -15280,7 +15269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr ""
+msgstr "Di chuyển mục Ưa thích lên"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -15298,7 +15287,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr ""
+msgstr "Di chuyển mục Ưa thích xuống"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -15319,9 +15308,8 @@ msgid "FileSystem Dock"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
-#, fuzzy
 msgid "Copy Path"
-msgstr "Đường dẫn"
+msgstr "Sao chép đường dẫn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -15330,7 +15318,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "Duplicate"
-msgstr ""
+msgstr "Nhân đôi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
@@ -15346,7 +15334,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
-msgstr ""
+msgstr "Thêm nút con"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
@@ -15370,7 +15358,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Sao chép đường dẫn nút"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
@@ -15411,7 +15399,7 @@ msgstr "Cây Hoạt ảnh"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "Duplicate Selection"
-msgstr ""
+msgstr "Nhân đôi lựa chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
@@ -15419,7 +15407,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr ""
+msgstr "Chuyển đổi trùng lặp"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -15435,7 +15423,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
-msgstr ""
+msgstr "Xoá lựa chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
@@ -15443,7 +15431,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr ""
+msgstr "Đến Bước tiếp theo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -15459,7 +15447,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr ""
+msgstr "Đến Bước trước đó"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -15487,7 +15475,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
-msgstr ""
+msgstr "Chọn ô"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
@@ -15499,7 +15487,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
-msgstr ""
+msgstr "Tô ô"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
@@ -15519,7 +15507,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "Transpose"
-msgstr ""
+msgstr "Chuyển vị"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
@@ -15527,7 +15515,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
-msgstr ""
+msgstr "Lật Ngang"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
@@ -15539,7 +15527,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
-msgstr ""
+msgstr "Lật Dọc"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
@@ -15551,7 +15539,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
-msgstr ""
+msgstr "Xoay Trái"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
@@ -15559,7 +15547,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
-msgstr ""
+msgstr "Xoay Phải"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
@@ -15575,7 +15563,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
-msgstr ""
+msgstr "Chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
@@ -15599,7 +15587,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
-msgstr ""
+msgstr "Xóa Lựa chọn"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
@@ -15612,7 +15600,7 @@ msgstr "Editor (trình biên tập)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "Next Coordinate"
-msgstr ""
+msgstr "Tọa độ tiếp theo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
@@ -15669,7 +15657,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "Navigation Mode"
-msgstr ""
+msgstr "Chế độ di chuyển"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
@@ -15693,7 +15681,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
-msgstr ""
+msgstr "Chế độ Ưu tiên"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
@@ -15761,7 +15749,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
-msgstr "Cấp phép"
+msgstr "Giấy phép"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid ""
@@ -17547,7 +17535,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr ""
+msgstr "Hằng số"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:657
 msgid ""
@@ -17606,7 +17594,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:386
 msgid "Functions"
-msgstr ""
+msgstr "Hàm"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
 msgid ""
@@ -20292,7 +20280,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "Đệm"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -21157,7 +21145,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Đường dẫn Tài nguyên"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -23441,7 +23429,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:147
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "Giá trị"
 
 #: ../../docs/getting_started/scripting/creating_script_templates.rst:149
 msgid "``%INT_TYPE%``"
@@ -24371,7 +24359,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "Format"
-msgstr ""
+msgstr "Định dạng"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:23
 msgid "1 second of audio"
@@ -25230,7 +25218,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:269
 msgid "FPS"
-msgstr ""
+msgstr "Khung hình(FPS)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:271
 msgid ""
@@ -25884,7 +25872,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Lưới"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -31286,11 +31274,12 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:456
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:471
 msgid "Type"
-msgstr ""
+msgstr "Kiểu"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
+#, fuzzy
 msgid "Transform"
-msgstr ""
+msgstr "Biến đổi"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
 msgid "CanvasItem"
@@ -32264,7 +32253,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:293
 msgid "Color"
-msgstr ""
+msgstr "Màu"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:295
 msgid "Used to change the color of the particles being emitted."
@@ -57199,7 +57188,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Tông màu"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -81381,7 +81370,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:15
 msgid "Particles"
-msgstr ""
+msgstr "Hạt"
 
 #: ../../docs/tutorials/misc/gles2_gles3_differences.rst:17
 msgid ""
@@ -82101,7 +82090,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "Các khối va chạm thấy được"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid ""
@@ -82292,7 +82281,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:42
 msgid "Errors"
-msgstr ""
+msgstr "Lỗi"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:44
 msgid ""
@@ -82366,8 +82355,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:87
+#, fuzzy
 msgid "Monitors"
-msgstr ""
+msgstr "Màn hình"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:89
 msgid ""
@@ -82392,8 +82382,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:105
+#, fuzzy
 msgid "Misc"
-msgstr ""
+msgstr "Khác"
 
 #: ../../docs/tutorials/debug/debugger_panel.rst:107
 msgid ""
@@ -85925,7 +85916,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "Enable"
-msgstr ""
+msgstr "Mở"
 
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:55
 msgid "**True**"
@@ -86831,7 +86822,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
-msgstr ""
+msgstr "Vector"
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "List"
