@@ -4,6 +4,7 @@
 #
 # abhishek mohite <abhishekmohite421@gmail.com>, 2020.
 # Harsh Agarwal <ultramarinebicycle@gmail.com>, 2020.
+# harvinder rathor <harvinderr09@gmail.com>, 2021.
 # Krishnendu Mondal <krishnendu.bhilai@gmail.com>, 2020.
 # l4KKY <greenforcesave@gmail.com>, 2020.
 # Lakshmi-Jayakumar <lakshmi.jayakumar.tkm@gmail.com>, 2019.
@@ -16,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-01-07 02:53+0000\n"
-"Last-Translator: Shirious <sad3119823@gmail.com>\n"
+"PO-Revision-Date: 2021-05-03 21:29+0000\n"
+"Last-Translator: harvinder rathor <harvinderr09@gmail.com>\n"
 "Language-Team: Hindi <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/hi/>\n"
 "Language: hi\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -39,7 +40,7 @@ msgstr "सीखना शुरु"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr "ट्यूटोरियल"
+msgstr "शिक्षण"
 
 #: ../../docs/index.rst:114
 msgid "Development"
@@ -139,6 +140,10 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"आप ऑफ़लाइन पढ़ने (प्रत्येक सोमवार को अपडेट किया गया) पर एक HTML '<https://nightly."
+"link/godotengine/godot-docs/workflows/build_offline_docs/3.3/godot-docs-html."
+"zip>' कॉपी डाउनलोड कर सकते हैं। ज़िप फ़ाइल खोलना, और फिर अपने ब्राउज़र में शीर्ष-स्तर `` "
+"index.html`` खोलें।"
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -154,7 +159,6 @@ msgstr ""
 "रहे हैं वह नहीं मिल पा रहे हैं, तो हमें  बता कर दस्तावेज को बेहतर बनाने में मदद करें!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -163,12 +167,11 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"' गिटहब भंडार पर एक मुद्दा सबमिट करें या अनुरोध खींचें <https://github.com/"
-"godotengine/godot-डॉक्स/issues>'_, हमें ' प्रलेखन का अनुवाद करने में मदद करें <https://"
-"hosted.weblate.org/engage/godot-engine/>__ अपनी भाषा में, या ' कलह पर ' "
-"#documentation ' चैनल पर हमसे बात करें < https://कलह.gg/zH7NUgz>'_,null,null, "
-"#godotengine या ' irc.freenode.net <webchat.freenode.net/"
-"channel=#godotengine-doc>___ पर चैनल"
+"`GitHub रिपोजिटरी <https://github.com/godotengine/godot-docs/issues>` _ पर "
+"कोई समस्या या अनुरोध सबमिट करें, `_ हमें दस्तावेज़ अपलोड करने में मदद करने के लिए <https://"
+"hosted.weblate.org/engage/ Godot-engine/> `_ का आपकी भाषा में अनुवाद किया गया "
+"है, या` डिस्क्ॉर्ड <https://discord.gg/zH7NUgz> `_, या` गोडोट योगदानकर्ता चैट "
+"<https: \" हमसे बात करें, godotengine.org/>`_ के `` # प्रलेखन`` चैनल में!"
 
 #: ../../docs/index.rst:62
 msgid "weblate_widget"
@@ -1038,7 +1041,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
-msgstr ""
+msgstr "इसके अनेक कारण हैं:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1050,6 +1053,12 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"** कोड रखरखाव और भूतल त्रुटियां ** हर बार जब हम गोडोट भंडार में एक नया कोड स्वीकार "
+"करते हैं, तो मौजूदा योगदानकर्ता अक्सर कोड को बनाए रखने की जिम्मेदारी लेते हैं। कुछ "
+"योगदानकर्ता अपने कोड को मर्ज करने के बाद हमेशा ध्यान नहीं देते हैं, जिससे कोड को बनाए "
+"रखना हमारे लिए मुश्किल हो सकता है, जिससे खराब सुविधाओं और बग को ठीक नहीं किया जा "
+"सकता है। इसके अलावा, समय के साथ, \"एपीआई सतह परत\" को जांचने और जांचने की आवश्यकता है "
+"जो लगातार बढ़ रही है।"
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -1058,6 +1067,9 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"** योगदान करने के लिए आसान है। ** कोड आधार को छोटा और सुव्यवस्थित रखने से, स्रोत कोड "
+"से जल्दी और आसानी से संकलन करना संभव है। यह उच्च अंत हार्डवेयर खरीदने के बिना नए "
+"योगदानकर्ताओं के लिए आरंभ करना आसान बनाता है।"
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -1066,6 +1078,10 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"** इंजन की बाइनरी फ़ाइल का आकार एक छोटी सी सीमा के भीतर रखें। ** हर किसी के पास "
+"हाई-स्पीड इंटरनेट नहीं है। यह सुनिश्चित करने के लिए है कि हर कोई 5 मिनट से कम समय में "
+"गोडोट को डाउनलोड, अनज़िप और चला सके, जो दुनिया भर के डेवलपर्स के लिए उपयोग करने के "
+"लिए सुविधाजनक है।"
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1076,6 +1092,11 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"** निर्यात टेम्पलेट के बाइनरी आकार को छोटा रखें। ** यह सीधे गोडोट द्वारा निर्यात की गई "
+"परियोजना के आकार को प्रभावित करता है। मोबाइल और वेब प्लेटफ़ॉर्म पर, एक छोटी फ़ाइल का "
+"आकार अंडरपॉवर डिवाइस पर तेज़ इंस्टॉलेशन और लोड करने के लिए प्राथमिक स्थिति है। इसके "
+"अलावा, कई देशों में, उच्च गति वाले नेटवर्क का उपयोग करना आसान नहीं है। और इन देशों में "
+"अक्सर सख्त डेटा उपयोग सीमाएँ होती हैं।"
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1088,6 +1109,13 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"उपरोक्त सभी कारणों के लिए, हमें गोडोट में मुख्य कार्यक्षमता के रूप में स्वीकार कर सकते हैं। यही "
+"कारण है कि हम गोडोट के भविष्य के संस्करणों में आधिकारिक तौर पर समर्थित ऐड-ऑन के लिए कुछ "
+"बुनियादी कार्यक्षमता को स्थानांतरित करने का इरादा रखते हैं। द्विआधारी आकार के संदर्भ में, "
+"इससे आपको केवल उसी चीज का भुगतान करने का फायदा होता है जो आप वास्तव में अपनी "
+"परियोजना में उपयोग करते हैं। (इस बीच, आप कर सकते हैं: रेफरी: अप्रयुक्त सुविधाओं के साथ कस्टम "
+"निर्यात टेम्पलेट्स संकलित करें <doc_optimizing_for_size> `अपनी परियोजना के वितरण आकार "
+"का अनुकूलन करने के लिए।)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1237,6 +1265,8 @@ msgid ""
 "When it's ready! See :ref:`doc_release_policy_when_is_next_release_out` for "
 "more information."
 msgstr ""
+"जब यह तैयार है! अधिक जानकारी के लिए, कृपया देखें: Ref: "
+"`doc_release_policy_when_is_next_release_out`।"
 
 #: ../../docs/about/faq.rst:313
 msgid "I would like to contribute! How can I get started?"
@@ -1566,6 +1596,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"कृपया देखें: रेफरी: गोडोट संपादक के HTML5 संस्करण पर विशिष्ट नोट्स के लिए "
+"`doc_using_the_web_editor`।"
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -1605,6 +1637,8 @@ msgid ""
 "This is a `known bug <https://github.com/godotengine/godot/issues/30330>`__ "
 "on Intel graphics drivers on Windows."
 msgstr ""
+"यह विंडोज पर इंटेल ग्राफिक्स ड्राइवर का एक `ज्ञात मुद्दा <https://github.com/"
+"godotengine/godot/issues/30330>` है।"
 
 #: ../../docs/about/troubleshooting.rst:30
 msgid ""
@@ -1626,7 +1660,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
 msgid "The editor or project takes a very long time to start."
-msgstr ""
+msgstr "इस संपादक या परियोजना को शुरू होने में लंबा समय लगा।"
 
 #: ../../docs/about/troubleshooting.rst:39
 msgid ""
@@ -1673,24 +1707,31 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"कुछ पाठ जैसे कि \"NO DC\" प्रोजेक्ट मैनेजर और संपादक विंडो के ऊपरी-बाएँ कोने में दिखाई देता "
+"है।"
 
 #: ../../docs/about/troubleshooting.rst:60
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"यह NVIDIA ग्राफिक्स ड्राइवर द्वारा इंजेक्ट की गई ओवरले डिस्प्ले जानकारी के कारण होता है।"
 
 #: ../../docs/about/troubleshooting.rst:62
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"विंडोज पर इस ओवरराइड को अक्षम करने के लिए, NVIDIA नियंत्रण पैनल में डिफ़ॉल्ट मानों के लिए "
+"ग्राफिक्स ड्राइवर सेटिंग्स को पुनर्स्थापित करें।"
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Linux पर इस ओवरले को अक्षम करने के लिए, `` nvidia-सेटिंग्स`` खोलें, ** X Screen 0> "
+"OpenGL सेटिंग्स ** पर जाएं, और ** अनचेक करें ग्राफ़िक्स API विज़ुअल संकेतक ** सक्षम करें।"
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."
@@ -1712,6 +1753,10 @@ msgid ""
 "Window > Dpi > Allow Hidpi**. On top of that, make sure your project is "
 "configured to support :ref:`multiple resolutions <doc_multiple_resolutions>`."
 msgstr ""
+"इस समस्या को हल करने के लिए, कृपया ** प्रोजेक्ट > प्रोजेक्ट सेटिंग्स ** खोलें और ** Display "
+"> Window > Dpi > Allow Hidpi** की अनुमति दें। सबसे महत्वपूर्ण बात, सुनिश्चित करें कि "
+"आपकी परियोजना कई प्रस्तावों <doc_multiple_resolutions> का समर्थन करने के लिए "
+"कॉन्फ़िगर की गई है।"
 
 #: ../../docs/about/troubleshooting.rst:80
 msgid "The project window doesn't appear centered when I run the project."
@@ -2679,9 +2724,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
-msgstr "‍एक्सपोर्ट"
+msgstr "आयात"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -14901,7 +14945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "फाइल सिस्टम पैनल"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 #, fuzzy
@@ -75765,7 +75809,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 msgid "Properties"
-msgstr ""
+msgstr "विशेषता"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -80611,7 +80655,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
-msgstr ""
+msgstr "रंग"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"

@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alex H <sandertjeh13@hotmail.com>, 2019.
-# Angelin Everaerts <angelin.everaerts@gmail.com>, 2020.
+# Angelin Everaerts <angelin.everaerts@gmail.com>, 2020-2021.
 # Arthur de Roos <arthur.de.roos@gmail.com>, 2020.
 # Bas van Schoubroeck <basvanschoubroeck@hotmail.com>, 2018.
 # dem son <anthony1sep@gmail.com>, 2018.
@@ -25,6 +25,7 @@
 # Stijn Hinlopen <f.a.hinlopen@gmail.com>, 2019-2021.
 # Tahar Meijs <tntmeijs@gmail.com>, 2018.
 # Tirrin <lensenjoe@gmail.com>, 2019.
+# T-rex08 <ipadtriceratops@gmail.com>, 2021.
 # Willem <studiebolmail@gmail.com>, 2018.
 # Wouter Buckens <wou.buc@gmail.com>, 2019.
 # Xoronic <stefgijsberts.sg@gmail.com>, 2019.
@@ -35,7 +36,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-02-05 23:43+0000\n"
+"PO-Revision-Date: 2021-05-26 05:32+0000\n"
 "Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/nl/>\n"
@@ -44,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -73,9 +74,8 @@ msgid "Class reference"
 msgstr "Class referentielijst"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Godot Documentatie – *3.2* branch"
+msgstr "Godot Documentatie – *3.3* branch"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -86,7 +86,6 @@ msgstr ""
 "het \"Read the Docs\" paneel onderaan de zijbalk uit om de lijst te bekijken."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -94,11 +93,11 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Dit is de documentatie van de stabiele 3.2 versie. Op zoek naar de "
-"documentatie voor de huidige **opbouw** versie? `Kijk dan hier: <https://"
-"docs.godotengine.org/en/latest>`_. U kunt  ook verder bladeren naar de de "
-"documentatie van de vorige stabiele `3.1 <https://docs.godotengine.org/"
-"en/3.1>`_versie."
+"Dit is de documentatie van de stabiele 3.3 versie. Op zoek naar de "
+"documentatie voor de huidige **ontwikkeling** versie? `Kijk dan hier: "
+"<https://docs.godotengine.org/en/latest>`_. U kunt ook verder bladeren naar "
+"de de documentatie van de vorige stabiele `3.2 <https://docs.godotengine.org/"
+"en/3.2>`_versie."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -163,6 +162,9 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Jij kan ook een 'html kopie installeren <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>` voor "
+"offline gebruik (dit woord elke maandag bijgewerkt)."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -179,7 +181,6 @@ msgstr ""
 "dan de documentatie te verbeteren door het ons te laten weten!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -203,9 +204,7 @@ msgstr "weblate_widget"
 #: ../../docs/index.rst:63
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
-"De belangrijkste documentatie op de website is opgedeeld in de volgende "
-"onderdelen:"
+msgstr "De belangrijkste documentatie op de website is als volgt opgedeeld:"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
@@ -385,13 +384,13 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot is helemaal gratis en open source onder de permissive MIT licentie. "
-"Geen kleine lettertjes, geen royalties, niks. Games zijn eigendom van de "
-"gebruiker, van de eerste tot de laatste regel code. Godots ontwikkeling is "
-"volledig onafhankelijk en community-gedreven, zodat gebruikers kunnen "
-"bijdragen om de engine aan hun verwachtingen te laten voldoen. Het wordt "
-"ondersteund door de `Software Freedom Conservancy <https://sfconservancy."
-"org>`_ not-for-profit."
+"Godot is helemaal gratis en open source onder de toegeeflijke MIT licentie. "
+"Geen kleine lettertjes, geen royalties, niks. Spellen zijn eigendom van de "
+"ontwikkelaar, van de eerste tot de laatste regel code. De ontwikkeling van "
+"Godot is volledig onafhankelijk en community-gedreven, zodat gebruikers "
+"kunnen bijdragen om de engine aan hun verwachtingen te laten voldoen. Het "
+"wordt ondersteund door de `Software Freedom Conservancy <https://"
+"sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:52
 msgid ""
@@ -451,17 +450,16 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:77
 msgid "Organization of the documentation"
-msgstr "Structuur van de documentatie"
+msgstr "Opbouw van de documentatie"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
 "Deze documentatie is georganiseerd in vijf secties met een indrukwekkend "
-"ongebalanceerde verdeling van onderwerpen – maar de manier waarop het is "
+"onevenwichtige verdeling van onderwerpen – maar de manier waarop het is "
 "opgedeeld zou redelijke intuïtief moeten zijn:"
 
 #: ../../docs/about/introduction.rst:83
@@ -593,8 +591,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Het staat je vrij Godot naar hartenlust aan te passen, te (her)distribueren, "
-"en te remixen, zowel om commerciële als niet-commerciële redenen."
+"Je kunt Godot naar wens aanpassen, (her)distribueren en remixen voor ieder "
+"doeleinde, voor zowel commercieel als non-commerciële doeleinde."
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -614,9 +612,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"Logos en iconen vallen in de meeste gevallen onder dezelfde Creative Commons "
-"licentie. Let op dat sommige third-party libraries die bij de Godot's bron "
-"code zit andere licenties hebben."
+"Logos en iconen staan over het algemeen onder dezelfde Creative Commons "
+"licentie. Let er op dat sommige libraries van derden die in Godot's broncode "
+"zitten mogelijk andere licencties kunnen hebben."
 
 #: ../../docs/about/faq.rst:27
 msgid ""
@@ -646,7 +644,7 @@ msgstr "Welke platformen worden ondersteund door Godot?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**Voor de bewerker:**"
+msgstr "**Voor de editor:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/tutorials/misc/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:334
@@ -816,7 +814,7 @@ msgstr ""
 "potentieel van Godot te maximaliseren met zo weinig mogelijk code, zodat "
 "zowel nieuwe als ervaren ontwikkelaars zo snel mogelijk kunnen profiteren "
 "van Godots sterke punten. Als je ooit al iets hebt geschreven in een taal "
-"als Python dan zul je je thuis voelen. Bekijk de  :ref:`GDScript gids "
+"als Python dan zul je je thuis voelen. Bekijk de :ref:`GDScript gids "
 "<doc_gdscript>` voor voorbeelden, geschiedenis, en een volledig overzicht "
 "van de kracht die GDScript jou biedt."
 
@@ -898,11 +896,12 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"Ooit gebruikte de engine de `Lua <https://www.lua.org>`__ scripttaal. Lua is "
-"snel, maar koppelingen maken met een object georiënteerd systeem (door "
-"terugkoppelingen te gebruiken), was ingewikkeld, langzaam en kostte een "
-"enorme hoeveelheid code. Na wat experimenten met `Python <https://www.python."
-"org>`__, bleek dit ook moeilijk integreerbaar te zijn."
+"In het begin gebruikte de engine de `Lua <https://www.lua.org>`__ script "
+"taal. Lua is snel, maar het maken van verbindingen met een object "
+"georienteerd systeem(door het gebruiken van terugkoppelingen) was te complex "
+"en langzaam en vergde een enorme hoeveelheid code. Na een beetje "
+"experimentatie met `Python <https://www.python.org>`__, bleek het ook "
+"moeilijk intergreerbaar te zijn"
 
 #: ../../docs/about/faq.rst:135
 msgid ""
@@ -912,39 +911,36 @@ msgstr ""
 "waren:"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "Poor threading support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Slechte thread support in de meeste script VMs en Godot gebruikt threads "
-"(Lua, Python, Squirrel, JS, AS, etc.)."
+"Een slechte thread ondersteuning in de meeste script VMs en Godot gebruikt "
+"threads (Lua, Python, Squirrel, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:139
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JavaScript)."
 msgstr ""
-"Zwakke ondersteuning om klassen uit te breiden in de meeste script VMs, en "
-"aanpassing aan de manier waarop Godot werkt is erg inefficiënt (Lua, Python, "
-"JS)."
+"Een zwakke ondersteuning om een class uit te breiden voor de meeste script "
+"VMs en om deze aan te passen aan de manier waarop Godot werkt was erg "
+"onefficiënt (Lua, Python, JavaScript)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JavaScript, etc.) We wanted to focus on "
 "a great engine, not a great amount of integrations."
 msgstr ""
-"Veel bestaande programmeertalen hebben vreselijke interfaces om met C++ te "
-"koppelen, wat resulteert in een grote hoeveelheid code, bugs, bottlenecks en "
-"algemene inefficiëntie (Lua, Python, Squirrel, JS, enz.) We wilden ons "
-"concentreren op een geweldige engine en niet op een hoog aantal integraties."
+"Veel bestaande programmeertalen hebben een vreselijke interface om C++ te "
+"koppelen, wat resulteert in een grote hoeveelheid code, fouten,knelpunten en "
+"algemene onefficiëntie (Lua, Python, Squirrel, JS, enz.) We wilden ons "
+"concentreren op een goede engine en niet op een hoog aantal geintegreerde "
+"aanpassingen."
 
 #: ../../docs/about/faq.rst:144
-#, fuzzy
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JavaScript, "
@@ -964,17 +960,15 @@ msgstr ""
 "collector (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well-supported by GDScript."
 msgstr ""
 "Moeilijke integratie met de broncode editor voor het verstrekken van code "
-"completion, live editing, etc. (allemaal). Dit wordt uitstekend ondersteund "
-"door GDScript."
+"aanvullingen, instant bewerking, enz. (alle talen). Dit wordt uitstekend "
+"ondersteund door GDScript."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid "GDScript was designed to curtail the issues above, and more."
 msgstr ""
 "GDScript werd ontworpen om bovenstaande en bijkomende problemen tot een "
@@ -992,9 +986,9 @@ msgid ""
 "godotengine.org/download>`_."
 msgstr ""
 "Godot ondersteunt Collada via de `OpenCollada <https://github.com/"
-"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_exporteur (Maya, 3DSMax). "
-"Indien je Blender gebruikt, kijk eens naar onze eigen 'Better Collada "
-"Exporter <https://godotengine.org/download>'`_."
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>` _ exporteur (Maya, "
+"3DSMax). Als je Blender gebruikt, kijk dan eens naar onze eigen `Better "
+"Collada Exporter <https://godotengine.org/download>` _."
 
 #: ../../docs/about/faq.rst:161
 msgid "As of Godot 3.0, glTF is supported."
@@ -1104,9 +1098,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:211
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "Er zijn geen gebruiksbeperkingen op Godot"
+msgstr "Er zijn meerdere redenen voor dit:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1306,7 +1299,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:307
 msgid "When is the next release of Godot out?"
-msgstr ""
+msgstr "Wanneer is de volgende release van Godot uit?"
 
 #: ../../docs/about/faq.rst:309
 #, fuzzy
@@ -1348,7 +1341,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Ik heb een geweldig idee voor Godot. Hoe kan ik het delen?"
 
 #: ../../docs/about/faq.rst:325
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1360,15 +1352,15 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
-"Het is misschien verleidelijk om ideeën naar Godot te willen brengen, die "
-"resulteren in enorme kernveranderingen, als een soort nabootsing van wat een "
-"andere game-engine doet, of alternatieve workflows die je graag ingebouwd "
-"zou willen zien in de editor. Deze zijn geweldig en we zijn dankbaar dat "
-"zulke gemotiveerde mensen willen bijdragen, maar Godot's focus is en blijft "
-"de kernfunctionaliteit zoals beschreven in de `Roadmap <https://github.com/"
-"godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `squashing bugs and "
-"addressing issues <https://github.com/godotengine/godot/issues>`_, en in "
-"conversatie tussen Godot gemeenschapsleden."
+"Het is misschien verleidelijk om ideeën voor Godot te willen overbrengen, "
+"die resulteren in enorme kernveranderingen, als een soort nabootsing van wat "
+"een andere game-engine doet, of alternatieve werkwijzen die je graag "
+"ingebouwd zou willen zien in de editor. Deze zijn geweldig en we zijn "
+"dankbaar dat zulke gemotiveerde mensen willen bijdragen, maar Godot's focus "
+"is en blijft de kernfunctionaliteit zoals beschreven in de `Roadmap <https://"
+"github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, `squashing "
+"bugs and addressing issues <https://github.com/godotengine/godot/issues>`_, "
+"en in conversatie tussen Godot gemeenschapsleden."
 
 #: ../../docs/about/faq.rst:334
 msgid ""
@@ -1581,13 +1573,12 @@ msgstr ""
 "implementeren?"
 
 #: ../../docs/about/faq.rst:405
-#, fuzzy
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
 "need to be forced to use DoD practices."
 msgstr ""
-"Hoewel Godot intern voor veel van de zware uitvoeringstaken probeert de "
+"Hoewel Godot intern, voor veel van de zware uitvoeringstaken, probeert de "
 "cache-coherentie zo goed mogelijk te gebruiken, zijn we van mening dat de "
 "meeste gebruikers niet echt gedwongen moeten worden DoD-methoden te "
 "gebruiken."
@@ -1651,13 +1642,14 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:197
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Probleemoplossing"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Deze pagina lijst veelvoorkomende problemen op en de moeilijke oplossingen."
 
 #: ../../docs/about/troubleshooting.rst:10
 msgid ""
@@ -1684,6 +1676,8 @@ msgid ""
 "provided by your desktop or laptop's manufacturer because their version is "
 "often outdated."
 msgstr ""
+"U zou beter de grafische driver door Intel gebruiken in plaats van degene "
+"meegegeven door uw desktop of laptop fabrikant omdat hun versie verouderd is."
 
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
@@ -1824,7 +1818,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
 msgstr "Functionaliteiten"
 
@@ -1843,14 +1836,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
-#, fuzzy
 msgid "Features"
 msgstr "Functionaliteiten"
 
 #: ../../docs/about/list_of_features.rst:18
-#, fuzzy
 msgid "Platforms"
-msgstr "Platform-gebonden"
+msgstr "Platformen"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1858,7 +1849,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:22
 msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr ""
+msgstr "Windows 7 en later (64-bit en 32-bit)."
 
 #: ../../docs/about/list_of_features.rst:23
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
@@ -1923,7 +1914,6 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:46
-#, fuzzy
 msgid "Script editor."
 msgstr "Script Editor"
 
@@ -2099,9 +2089,8 @@ msgid "CPU-based particles."
 msgstr "Partikels"
 
 #: ../../docs/about/list_of_features.rst:112
-#, fuzzy
 msgid "2D tools"
-msgstr "Hulpmiddelen"
+msgstr "2D Hulpmiddelen"
 
 #: ../../docs/about/list_of_features.rst:114
 msgid "2D camera with built-in smoothing and drag margins."
@@ -2298,7 +2287,6 @@ msgid "*GLES3:* GI probes (slower, semi-real-time). Supports reflections."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:191
-#, fuzzy
 msgid "**Reflections:**"
 msgstr "Weerkaatsing"
 
@@ -2355,7 +2343,6 @@ msgid "Optional transmittance to make lights more visible in the fog."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:212
-#, fuzzy
 msgid "**Particles:**"
 msgstr "Partikels"
 
@@ -2364,9 +2351,8 @@ msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:217
-#, fuzzy
 msgid "**Post-processing:**"
-msgstr "Verwerking"
+msgstr "Voorverwerking"
 
 #: ../../docs/about/list_of_features.rst:219
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
@@ -2442,9 +2428,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:247
-#, fuzzy
 msgid "3D tools"
-msgstr "Hulpmiddelen"
+msgstr "3D hulpmiddelen"
 
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
@@ -2544,7 +2529,6 @@ msgid "Scripting"
 msgstr "Scripting"
 
 #: ../../docs/about/list_of_features.rst:292
-#, fuzzy
 msgid "**General:**"
 msgstr "Algemeen"
 
@@ -2694,9 +2678,8 @@ msgid "Audio input to record microphones."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:351
-#, fuzzy
 msgid "MIDI input."
-msgstr "Invoer"
+msgstr "MIDI invoer"
 
 #: ../../docs/about/list_of_features.rst:353
 msgid "No support for MIDI output yet."
@@ -2719,7 +2702,6 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
-#, fuzzy
 msgid "Import"
 msgstr "Importeren"
 
@@ -2728,7 +2710,6 @@ msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:366
-#, fuzzy
 msgid "**Formats:**"
 msgstr "Formaat"
 
@@ -2737,7 +2718,6 @@ msgid "*Images:* See :ref:`doc_import_images`."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:369
-#, fuzzy
 msgid "*Audio:*"
 msgstr "Audio"
 
@@ -2803,9 +2783,8 @@ msgid "Use the same code to support both keyboards and gamepads."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:392
-#, fuzzy
 msgid "Keyboard input."
-msgstr "Op invoer letten."
+msgstr "Toetsenbord invoer."
 
 #: ../../docs/about/list_of_features.rst:394
 msgid ""
@@ -2838,9 +2817,8 @@ msgid "Pen/tablet input with pressure support."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:406
-#, fuzzy
 msgid "Navigation"
-msgstr "Navigatie zichtbaar"
+msgstr "Navigatie"
 
 #: ../../docs/about/list_of_features.rst:408
 msgid "A* algorithm in 2D and 3D."
@@ -3036,14 +3014,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:481
-#, fuzzy
 msgid "**Nodes:**"
 msgstr "Knooppunten"
 
 #: ../../docs/about/list_of_features.rst:483
-#, fuzzy
 msgid "Buttons."
-msgstr "Button (Knop)"
+msgstr "Knoppen."
 
 #: ../../docs/about/list_of_features.rst:484
 msgid "Checkboxes, check buttons, radio buttons."
@@ -3530,7 +3506,7 @@ msgstr ":ref:`Voldoen aan licentievoorwaarden <doc_complying_with_licenses>`"
 
 #: ../../docs/about/docs_changelog.rst:104
 msgid "New tutorials since version 3.0"
-msgstr "Nieuwe zelfstudies sinds versie 3.0"
+msgstr "Nieuwe handleidingen sinds versie 3.0"
 
 #: ../../docs/about/docs_changelog.rst:107
 #: ../../docs/getting_started/step_by_step/index.rst:2
@@ -4086,15 +4062,14 @@ msgid "Introduction to Godot's editor"
 msgstr "Inleiding tot Godot’s editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
-#, fuzzy
 msgid ""
 "This tutorial will run you through Godot's interface. We're going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"In deze zelfstudie wordt je door de interface van Godot geleid. We tonen je "
+"In deze handleiding word je door de interface van Godot geleid. We tonen je "
 "de **Project Manager, Docks, Werkruimtes** en alles wat je moet weten om aan "
-"de slag te gaan met de spelmotor."
+"de slag te gaan met de engine."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
 #, fuzzy
@@ -4199,7 +4174,7 @@ msgstr ""
 "opgesomd om je te helpen kiezen, en je kunt :ref:"
 "`doc_gles2_gles3_differences` nalezen voor meer details hierover. Merk op "
 "dat je de backend van de projectinstellingen kunt wijzigen als je later van "
-"gedachten verandert. Voor deze zelfstudie zijn beide backend's geschikt."
+"gedachten verandert. Voor deze handleiding zijn beide backend's geschikt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -4870,9 +4845,9 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
-"In deze zelfstudie werd gesproken over \"scènes en knooppunten\", maar tot "
+"In deze handleiding werd gesproken over \"scènes en knooppunten\", maar tot "
 "nu toe is er slechts *één* scène en *één* knooppunt*! Maak je geen zorgen, "
-"de volgende zelfstudie zal daar dieper op ingaan..."
+"de volgende handleiding zal daar dieper op ingaan..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -15875,7 +15850,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr ""
+msgstr "Modus wisselen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"

@@ -10,6 +10,7 @@
 # Matti Niskanen <matti.t.niskanen@gmail.com>, 2020.
 # Orange719 <hiedanpaaoskari@gmail.com>, 2020.
 # Poki <poki@tuta.io>, 2020.
+# Severi Vidnäs <severi.vidnas@gmail.com>, 2021.
 # spiderfly <spiderfly@protonmail.com>, 2018.
 # Tapani Niemi <tapani.niemi@kapsi.fi>, 2018-2020.
 # TheAdvis <juhamk91@gmail.com>, 2020.
@@ -23,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2020-10-26 14:22+0000\n"
-"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
+"PO-Revision-Date: 2021-04-10 10:49+0000\n"
+"Last-Translator: Severi Vidnäs <severi.vidnas@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -32,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -57,14 +58,12 @@ msgid "Community"
 msgstr "Yhteisö"
 
 #: ../../docs/index.rst:135
-#, fuzzy
 msgid "Class reference"
-msgstr "Data-asetukset"
+msgstr "Luokka viitteet"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Godot Dokumentaatio – *3.2* haara"
+msgstr "Godot Dokumentaatio – *3.3* haara"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -76,7 +75,6 @@ msgstr ""
 "listan."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -84,9 +82,10 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Tämä on kehitys (master) haaran dokumentaatio. Etsitkö nykyisen **vakaan** "
-"haaran dokumentaatiota? `Katso täältä <http://docs.godotengine.org/en/"
-"stable>`_."
+"Tämä on kehitys vakaan 3.3 haaran dokumentaatio. Etsitkö nykyisen "
+"**kehitys** haaran dokumentaatiota? `Katso täältä <http://docs.godotengine."
+"org/en/latest>`_. Voit myös selata edellisen vakaan haaran dokumentaatiota:"
+"`3.2 <https://docs.godotengine.org/en/3.2>`_ haara."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -150,6 +149,10 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Voit myös `ladata HTML kopion <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/3.3/godot-docs-html.zip>`lukeaksesi offlinessä "
+"(päivittyy joka maanantai). Pura ZIP arkisto ja avaa ylätason``index.html`` "
+"selaimessa."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -305,7 +308,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "Before you start"
-msgstr "Ennen kuin aloitat"
+msgstr "Ennen aloittamista"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -454,7 +457,6 @@ msgstr ""
 "`doc_faq`."
 
 #: ../../docs/about/introduction.rst:86
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the *raison d'être* of this documentation, "
 "as it contains all the necessary information on using the engine to make "
@@ -907,7 +909,6 @@ msgstr ""
 "Python, JS)."
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
@@ -916,8 +917,8 @@ msgid ""
 msgstr ""
 "Useilla olemassa olevilla kielillä on kaamea rajapinta C++ liitäntää varten, "
 "mikä johtaa suureen määrään koodia, bugeja, pullonkauloja ja yleistä "
-"tehottomuutta (Lua, Python, Squirrel, JS, jne.) Halusimme keskittyä "
-"mahtavaan pelimoottoriin, ei mahtavaan määrään integraatioita."
+"tehottomuutta (Lua, Python, Squirrel, JavaScript, jne.) Halusimme keskittyä "
+"mahtavaan pelimoottoriin, emme suureen määrään integraatioita."
 
 #: ../../docs/about/faq.rst:144
 #, fuzzy
@@ -931,13 +932,12 @@ msgstr ""
 "Squirrel, JS, AS, jne)."
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JavaScript, ActionScript, etc.)."
 msgstr ""
-"Roskienkerääjän käyttö aiheuttaa pysähdyksiä tai tarpeettoman suurta "
-"muistinkulutusta (Lua, Python, JS, AS, jne)."
+"Roskienkeruu aiheuttaa pysähdyksiä tai tarpeettoman suurta muistinkulutusta "
+"(Lua, Python, JavaScript, ActionScript, jne.)."
 
 #: ../../docs/about/faq.rst:149
 #, fuzzy
@@ -1066,10 +1066,13 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
+"Pitkällä aikavälilla saatamme kehittää Direct3D 12 -renderöijän Godotille "
+"(pääasiassa Xboxia varten), mutta Vulkan ja OpenGL pysyvät oletus "
+"renderöinti tekniikkana kaikille alustoille, mukaanlukien Windows."
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "Miksi Godot pyrkii pitämään ydintoimintojen kokoelman pienenä?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -2659,7 +2662,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
-msgstr "Tuonti"
+msgstr "Tuo"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -77223,9 +77226,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
-msgstr "Ominaisuudet."
+msgstr "Ominaisuudet"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0

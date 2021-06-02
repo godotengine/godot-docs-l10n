@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # 507GamerLab <tyfnyakut@outlook.com>, 2019.
+# ali aydın <alimxaydin@gmail.com>, 2021.
 # alkahesto <gs_dogan05@hotmail.com>, 2019.
 # Altan Demirkilic <demirkilic@gmail.com>, 2018.
 # Anton Semchenko <semchenkoanton@protonmail.com>, 2019.
@@ -58,8 +59,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-03-07 06:04+0000\n"
-"Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
+"PO-Revision-Date: 2021-05-26 05:32+0000\n"
+"Last-Translator: ali aydın <alimxaydin@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -67,7 +68,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -81,7 +82,7 @@ msgstr "Başlarken"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr "dersler"
+msgstr "Öğretici Örnekler"
 
 #: ../../docs/index.rst:114
 msgid "Development"
@@ -96,9 +97,8 @@ msgid "Class reference"
 msgstr "Sınıf referansı"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Godot Dokümantasyonu - *3.2* sürümü"
+msgstr "Godot Dokümantasyonu - *3.3* sürümü"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -109,7 +109,6 @@ msgstr ""
 "görmek için sol alt taraftaki \"Dokümantasyon Oku\" panelini genişlet."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -117,10 +116,10 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Bu döküman, resmi 3.2 sürümü içindir . Bunun yerine mevcut ** "
+"Bu döküman, kararlı 3.3 sürümü içindir . Bunun yerine mevcut ** "
 "geliştirilmekte olan ** sürümü arıyorsanız, burada bulabilirsiniz: <https://"
-"docs.godotengine.org/en/latest>. Önceki kararlı sürüm 3.1'in belgelerini şu "
-"adreste bulabilirsiniz: <https://docs.godotengine.org/en/3.1>."
+"docs.godotengine.org/en/latest>. Önceki kararlı sürüm 3.2'in belgelerini şu "
+"adreste bulabilirsiniz: <https://docs.godotengine.org/en/3.2>."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -183,6 +182,11 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Ayrıca çevrimdışı okuma yapmak için belgelerin `HTML kopyasını <https://"
+"nightly.link/godotengine/godot-docs/workflows/build_offline_docs/3.3/godot-"
+"docs-html.zip>indirebilirsiniz` (her pazartesi güncellenir). Zip arşivini "
+"açın ve en üst seviyedeki \"index.html\" üzerinden web tarayıcı programı ile "
+"belgeleri okuyun."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -199,7 +203,6 @@ msgstr ""
 "bize bildirerek belgelemeyi daha iyi yapmamıza yardım edin!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -208,12 +211,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"Bir sorun bildir veya `GitHub deposu<https://github.com/godotengine/godot-"
-"docs/issues>`_ üzerinden bir istekte bulun, 'dökümantasyonu <https://hosted."
-"weblate.org/engage/godot-engine/> kendi diline çevirerek' katkıda bulun veya "
-"``#documentation`` kanalı üzerinden `Discord <https://discord.gg/zH7NUgz>`_, "
-"ya da ``#godotengine-doc`` kanalı üzerinden `irc.freenode.net <http://"
-"webchat.freenode.net/?channels=#godotengine-doc>`_ bizlerle sohbete katıl!"
+"`GitHub deposu<https://github.com/godotengine/godot-docs/issues>` üzerinde "
+"bir sorun bildirebilir veya bir istekte bulunabilirsiniz. `İsterseniz "
+"Başvuru Belgelerini <https://hosted.weblate.org/engage/godot-engine/>` kendi "
+"dilinize çevirerek katkıda bulunun . `Discord <https://discord.gg/zH7NUgz>` "
+"ya da `Godot Contributors Chat <https://chat.godotengine.org/>` üzerinde "
+"``#documentation`` kanalından bizlerle sohbete katıl!"
 
 #: ../../docs/index.rst:62
 msgid "weblate_widget"
@@ -581,11 +584,11 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot, `OSI onaylı <https://opensource.org/licenses/MIT>`_ MIT lisansı "
+"Godot, `OSI onaylı <https://opensource.org/licenses/MIT>` MIT lisansı "
 "altında bulunan `Özgür ve Açık Kaynaklı Yazılımdır <https://tr.wikipedia.org/"
-"wiki/%C3%96zg%C3%BCr_ve_a%C3%A7%C4%B1k_kaynak_kodlu_yaz%C4%B1l%C4%B1m>`_. "
-"Bu, \"konuşma özgürlüğü\" gibi özgür olmasının yanı sıra \"bedava bira\" "
-"gibi ücretsiz olduğu anlamına gelir."
+"wiki/%C3%96zg%C3%BCr_ve_a%C3%A7%C4%B1k_kaynak_kodlu_yaz%C4%B1l%C4%B1m>`. Bu, "
+"\"konuşma özgürlüğü\" gibi özgür olmasının yanı sıra \"bedava bira\" gibi "
+"ücretsiz olduğu anlamına gelir."
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
@@ -1075,7 +1078,8 @@ msgstr ""
 "Godot, her şeyden önce çapraz platform uyumluluğunu ve açık standartları "
 "hedeflemektedir. OpenGL ve Vulkan, tüm platformlarda hem açık hem de mevcut "
 "(neredeyse) teknolojilerdir. Bu tasarım kararı sayesinde, Windows'ta Godot "
-"ile geliştirilen bir proje Linux, macOS ve daha bir çok platformda da çalışır"
+"ile geliştirilen bir proje Linux, macOS ve daha bir çok platformda da "
+"çalışır."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -1102,7 +1106,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "Godot neden temel özelliklerini küçük tutmayı hedefliyor?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1110,11 +1114,13 @@ msgid ""
 "ons unless they are used very often. One exemple of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot, çok sık kullanılmadıkları sürece eklentiler tarafından "
+"uygulanabilecek özellikleri kasıtlı olarak içermez. Bunun bir örneği, "
+"gelişmiş yapay zeka işlevselliği olabilir."
 
 #: ../../docs/about/faq.rst:211
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "Not etmeniz gereken bazı şeyler:"
+msgstr "Bunun birkaç nedeni var:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1126,6 +1132,14 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"** Kod bakımı ve hataları tarama. ** Godot deposundaki yeni kodu her kabul "
+"ettiğimizde, mevcut katkıda bulunanlar genellikle onu sürdürme sorumluluğunu "
+"üstlenirler. Katkıda bulunanlardan bazıları, kodlarını birleştirdikten sonra "
+"ortadan kaybolabilirler, bu da söz konusu kodun bakımını yapmayı ve "
+"sürdürmeyi zorlaştırabilir. Bu, asla düzeltilemeyen hatalara sahip kötü "
+"bakımlı özelliklere yol açabilir. Üstelik, ilişkilerinin tutarlılığının test "
+"edilmesi ve kontrol edilmesi gereken \"API yüzeyi\" zamanla artmaya devam "
+"ediyor."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -1134,6 +1148,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"** Katkı kolaylığı. ** Kod tabanını küçük ve düzenli tutarak, kaynaktan "
+"derlenmesi hızlı ve kolay kalabilir. Bu, yeni katkıda bulunanların, üst "
+"düzey donanım satın almalarına gerek kalmadan Godot'u kullanmaya başlamasını "
+"kolaylaştırır."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -1142,6 +1160,10 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"* Editör için ikili dosya boyutunun küçük tutulması. ** Herkesin hızlı bir "
+"İnternet bağlantısı yoktur. Herkesin Godot düzenleyicisini indirebilmesini, "
+"açabilmesini ve 5 dakikadan daha kısa sürede çalıştırabilmesini sağlamak, "
+"Godot'u tüm ülkelerdeki geliştiriciler için daha erişilebilir hale getirir."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1152,6 +1174,12 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"** Dışa aktarma şablonları için ikili boyutun küçük tutulması. ** Bu, Godot "
+"ile dışa aktarılan projelerin boyutunu doğrudan etkiler. Mobil ve web "
+"platformlarında, düşük güçlü cihazlara hızlı kurulum ve yükleme sağlamak "
+"için dosya boyutlarını düşük tutmak çok önemlidir. Yine, yüksek hızlı "
+"internetin mevcut olmadığı birçok ülke var. Buna ek olarak, bu ülkelerde "
+"genellikle katı veri kullanım sınırları geçerlidir."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1164,6 +1192,14 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Yukarıdaki tüm nedenlerden ötürü, Godot'ta çekirdek işlevsellik olarak kabul "
+"edebileceğimiz şeyler konusunda seçici olmalıyız. Bu nedenle, bazı temel "
+"işlevleri Godot'un gelecekteki sürümlerinde resmi olarak desteklenen "
+"eklentilere taşımayı hedefliyoruz. İkili boyut açısından, bu aynı zamanda "
+"yalnızca projenizde gerçekte kullandığınız şey için bedel ödetme avantajına "
+"sahiptir. (Bu arada şunları yapabilirsiniz: başvuru: `projenizin dağıtım "
+"boyutunu optimize etmek için kullanılmayan özellikler devre dışı bırakma "
+"<doc_optimizing_for_size>`)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1364,7 +1400,16 @@ msgid ""
 "blob/master/ROADMAP.md>`_, `squashing bugs and addressing issues <https://"
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
-msgstr "Godot'a iyi fikirler getirmek"
+msgstr ""
+"Godot'a, büyük çekirdek değişiklikleriyle sonuçlanan fikirler, başka bir "
+"oyun motorunun yaptığı bir tür taklit veya düzenleyicide yerleşik olmasını "
+"istediğiniz alternatif iş akışları gibi fikirler getirmek cazip gelebilir. "
+"Bunlar harika ve böylesine motive olmuş insanlar katkıda bulunmak "
+"istedikleri için minnettarız, ancak Godot'un odak noktası, `Yol haritası "
+"<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`'nda "
+"belirtildiği gibi temel işlevler üzerine çalışmak, `hataları gidermek ve "
+"sorunları ele almak <https://github.com/godotengine/godot/issues>` , ayrıca "
+"Godot topluluğu üyeleri arasında iletişimi sağlamaktır."
 
 #: ../../docs/about/faq.rst:334
 msgid ""
@@ -1541,7 +1586,7 @@ msgid ""
 msgstr ""
 "Oyunların ne olursa olsun çökmemesi gerektiğine inanıyoruz. Eğer beklenmedik "
 "bir durum ortaya çıkarsa, Godot bir hata yazdırır (ki bu hatanın betiğe "
-"kadar bile izini sürebilirsiniz), ve sonra  olabildiğince incelikle kurtarma "
+"kadar bile izini sürebilirsiniz), ve sonra olabildiğince incelikle kurtarma "
 "yaparak devam etmeye çalışacaktır."
 
 #: ../../docs/about/faq.rst:392
@@ -1656,6 +1701,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Godot editörünün HTML5 sürümüne özel uyarılar için başvuru: "
+"`doc_using_the_web_editor`'a bakın."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -1773,24 +1820,33 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Bazı metinler, \"NO DC\" gibi, proje yöneticisinin ve düzenleyici "
+"penceresinin sol üst köşesinde belirecektir."
 
 #: ../../docs/about/troubleshooting.rst:60
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Bu, NVIDIA grafik sürücüsünün bilgileri görüntülemek için bir kaplama "
+"eklemesinden kaynaklanır."
 
 #: ../../docs/about/troubleshooting.rst:62
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Windows'ta bu kaplamayı devre dışı bırakmak için, grafik sürücüsü "
+"ayarlarınızı NVIDIA Kontrol Panelindeki varsayılan değerlere geri yükleyin."
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Linux'ta bu kaplamayı devre dışı bırakmak için, `` nvidia-settings '' i "
+"açın, ** X Ekran 0> OpenGL Ayarları ** 'na gidin ve ** Grafik API Görsel "
+"Göstergesini Etkinleştir ** seçeneğinin işaretini kaldırın."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."
@@ -1886,14 +1942,13 @@ msgstr ""
 "amaçlamaktadır."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"Bu sayfada Godot'un (3.2) mevcut kararlı sürümü tarafından desteklenen "
+"Bu sayfada Godot'un mevcut kararlı sürümü (3.3) tarafından desteklenen "
 "özellikler listelenmektedir. En son geliştirme sürümünde (4.0) daha fazla "
 "özellik <https://docs.godotengine.org/en/latest/about/list_of_features.html> "
 "\"__ mevcuttur."
@@ -2555,7 +2610,7 @@ msgstr "3D araçlar"
 #: ../../docs/about/list_of_features.rst:249
 msgid "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad."
 msgstr ""
-"Yerleşik ağlar: küp, silindir / koni,  yarımküre, küre, prizma, düzlem, "
+"Yerleşik ağlar: küp, silindir / koni, yarımküre, küre, prizma, düzlem, "
 "dörtlü."
 
 #: ../../docs/about/list_of_features.rst:250
@@ -2856,7 +2911,7 @@ msgstr "İçe Aktar"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
-msgstr ":ref:`custom import plugins <doc_import_plugins>` için destek."
+msgstr "ref:`custom import plugins <doc_import_plugins>` için destek."
 
 #: ../../docs/about/list_of_features.rst:366
 msgid "**Formats:**"
@@ -2880,7 +2935,7 @@ msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:373
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:375
 msgid "*3D scenes:*"
@@ -3983,6 +4038,10 @@ msgid ""
 "happen depends on the choices of core contributors, and the needs of the "
 "community at a given time."
 msgstr ""
+"Godot'un sürüm yönetimi politikası sürekli gelişim içindedir. Aşağıda "
+"açıklananlar, ne bekleyeceğiniz konusunda genel bir fikir vermeyi "
+"amaçlamaktadır, ancak gerçekte ne olacağı, çekirdek ekipteki katılımcıların "
+"seçimlerine ve belirli bir zamanda topluluğun ihtiyaçlarına bağlıdır."
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
@@ -3994,6 +4053,9 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
+"Godot, her bir terimin bir oyun motorunun karmaşıklığına uyarlanmış bir "
+"yorumuyla da olsa, ``major.minor.patch`` versiyonlama sistemi ile birlikte "
+"`Semantik Versiyonlamayı<https://semver.org/>` gevşek bir şekilde takip eder:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -4001,6 +4063,9 @@ msgid ""
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
+"`` Ana``sürüm, projeleri bir ana sürümden diğerine taşımak için önemli bir "
+"taşıma çalışması anlamına gelen büyük uyumluluk kesintileri olduğunda "
+"artırılır."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -4008,6 +4073,10 @@ msgid ""
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
+"Örneğin, Godot 2.1'den Godot 3.0'a Godot projelerini taşımak, projeyi bir "
+"dönüştürme aracıyla çalıştırmayı ve ardından aracın otomatik olarak "
+"yapamayacağı şeyler için manuel olarak bir dizi başka ayarlamayı "
+"gerektiriyordu."
 
 #: ../../docs/about/release_policy.rst:26
 msgid ""
@@ -4016,6 +4085,10 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
+"`` Küçük '' sürüm, uyumluluğu büyük ölçüde bozmayan özellik sürümleri için "
+"artırılır. Çok özel alanlarda * küçük uyumluluk kırılmaları * küçük "
+"sürümlerde meydana gelebilir *, ancak projelerin büyük çoğunluğu "
+"etkilenmemeli veya önemli taşıma çalışmaları gerektirmemelidir."
 
 #: ../../docs/about/release_policy.rst:31
 msgid ""
@@ -4025,6 +4098,12 @@ msgid ""
 "feature, or modifying the interface of a given class, even if the rest of "
 "the engine API remains backwards compatible."
 msgstr ""
+"Bunun nedeni, Godot'un bir oyun motoru olarak işleme, fizik özellikleri, "
+"komut dosyası oluşturma vb. gibi birçok alanı kapsaması ve belirli bir "
+"alanda hataları düzeltmenin veya yeni özellikleri uygulamanın, bazen bir "
+"özelliğin davranışını ya da bir sınıfın arayüzünü değiştirmeyi "
+"gerektirebilmesidir (motor API'sinin geri kalanı geriye doğru uyumlu kalsa "
+"bile, belirli bir sınıfın arabirimi için)."
 
 #: ../../docs/about/release_policy.rst:39
 msgid ""
@@ -4032,6 +4111,9 @@ msgid ""
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
+"Bu nedenle, yeni bir alt sürüme yükseltme tüm kullanıcılar için önerilir, "
+"ancak projenizin yeni bir alt sürümde hala beklendiği gibi davranmasını "
+"sağlamak için bazı testler gereklidir."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -4040,18 +4122,26 @@ msgid ""
 "support, and backporting safe usability enhancements. Patch releases are "
 "backwards compatible."
 msgstr ""
+"`` yama`` sürümü, hataları ve güvenlik sorunlarını gidermeye, platform "
+"desteği için yeni gereksinimleri uygulamaya ve güvenli kullanılabilirlik "
+"iyileştirmelerini desteklemeye odaklanan bakım yayımlarıdır. Yama sürümleri "
+"geriye dönük olarak uyumludur."
 
 #: ../../docs/about/release_policy.rst:48
 msgid ""
 "Patch versions may include minor new features which do not impact the "
 "existing API, and thus have no risk of impacting existing projects."
 msgstr ""
+"Yama sürümleri, mevcut API'yi etkilemeyen ve dolayısıyla mevcut projeleri "
+"etkileme riski olmayan küçük yeni özellikler içerebilir."
 
 #: ../../docs/about/release_policy.rst:53
 msgid ""
 "Updating to new patch versions is therefore considered safe and strongly "
 "recommended to all users of a given stable branch."
 msgstr ""
+"Yeni yama sürümlerine güncelleme bu nedenle güvenli kabul edilir ve belirli "
+"bir kararlı dalın tüm kullanıcıları için şiddetle önerilir."
 
 #: ../../docs/about/release_policy.rst:56
 msgid ""
@@ -4061,6 +4151,11 @@ msgid ""
 "name (for example patch updates for the 3.3 stable branch are developed in "
 "the ``3.3`` Git branch)."
 msgstr ""
+"``Major.minor`` kombinasyonlarına * kararlı dallar * diyoruz. Her kararlı "
+"dal, bir `` major.minor `` yayımıyla başlar (`` patch`` yama için `` 0 `` "
+"olmadan) ve bakım sürümleri aynı adlı bir Git dalında geliştirilir (örneğin, "
+"3.3 kararlı dal için yama güncellemesi, `` 3.3`` Git dalında "
+"geliştirilmiştir)."
 
 #: ../../docs/about/release_policy.rst:64
 msgid ""
@@ -4069,6 +4164,10 @@ msgid ""
 "In particular, the 3.2 stable branch received a number of new features in "
 "3.2.2 which would have warranted a ``minor`` version increment."
 msgstr ""
+"Girişte belirtildiği gibi, Godot'un yayımlanma politikası gelişiyor ve daha "
+"önceki Godot sürümleri yukarıdaki kurallara harfiyen uymamış olabilir. "
+"Özellikle, 3.2 kararlı dalı, 3.2.2'de `` küçük '' bir sürüm artışını garanti "
+"eden bir dizi yeni özellik aldı."
 
 #: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
@@ -4081,6 +4180,10 @@ msgid ""
 "stable branches on a *best effort* basis for as long as they have active "
 "users who need maintenance updates."
 msgstr ""
+"Kararlı dallar, *en azından*bir sonraki kararlı dal piyasaya sürülene ve ilk "
+"yama güncellemesini alana kadar desteklenir. Uygulamada, bakım "
+"güncellemelerine ihtiyaç duyan aktif kullanıcıları olduğu sürece * en iyi "
+"çaba * temelinde kararlı dalları destekliyoruz."
 
 #: ../../docs/about/release_policy.rst:77
 msgid ""
@@ -4090,6 +4193,12 @@ msgid ""
 "new major version. This is the case for the 2.1 branch, and will be the case "
 "for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
+"Yeni bir ana sürüm yayınlandığında, önceki kararlı dalı uzun vadeli bir "
+"desteklenen sürüm haline getiriyoruz ve karmaşık projeleri yeni ana sürüme "
+"taşıyamayan bu dalın kullanıcılarının karşılaştığı sorunları gidermek için "
+"elimizden gelenin en iyisini yapıyoruz. Bu, 2.1 dalı için geçerlidir ve "
+"Godot 4.0 piyasaya sürüldüğünde en son 3.x kararlı dallanma için geçerli "
+"olacaktır."
 
 #: ../../docs/about/release_policy.rst:88
 msgid "**Version**"
@@ -4116,20 +4225,20 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "|kararsız| *Mevcut gelişim odağı (kararsız).*"
 
 #: ../../docs/about/release_policy.rst:92
-#, fuzzy
 msgid "Godot 3.3"
-msgstr "Godot 3.2"
+msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:92
-#, fuzzy
 msgid "March/April 2021"
-msgstr "Mart 2019"
+msgstr "Mart/Nisan 2021"
 
 #: ../../docs/about/release_policy.rst:92
 msgid ""
 "|supported| Receives bug, security and platform support fixes, as well as "
 "backwards-compatible usability enhancements."
 msgstr ""
+"| destekli | Hata, güvenlik ve platform desteği düzeltmelerinin yanı sıra "
+"geriye dönük uyumlu kullanılabilirlik geliştirmeleri alır."
 
 #: ../../docs/about/release_policy.rst:95
 msgid "Godot 3.2"
@@ -4140,7 +4249,6 @@ msgid "January 2020"
 msgstr "Ocak 2020"
 
 #: ../../docs/about/release_policy.rst:95
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "3.2.3)."
@@ -4157,13 +4265,12 @@ msgid "March 2019"
 msgstr "Mart 2019"
 
 #: ../../docs/about/release_policy.rst:98
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "3.1.2)."
 msgstr ""
-"|partial ( kısmi ,parçalı) | Yalnızca kritik, güvenlik ve platform desteği "
-"düzeltmeleri."
+"|partial ( kısmi ,parçalı)| Yalnızca kritik, güvenlik ve platform desteği "
+"düzeltmeleri (son güncelleme: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:101
 msgid "Godot 3.0"
@@ -4174,9 +4281,8 @@ msgid "January 2018"
 msgstr "Ocak 2018"
 
 #: ../../docs/about/release_policy.rst:101
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.0.6)."
-msgstr "| eol | Artık desteklenmiyor."
+msgstr "|eol| Artık desteklenmiyor (son güncelleme: 3.0.6)."
 
 #: ../../docs/about/release_policy.rst:103
 msgid "Godot 2.1"
@@ -4187,13 +4293,12 @@ msgid "July 2016"
 msgstr "Temmuz 2016"
 
 #: ../../docs/about/release_policy.rst:103
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "2.1.6)."
 msgstr ""
-"|partial ( kısmi ,parçalı) | Yalnızca kritik, güvenlik ve platform desteği "
-"düzeltmeleri."
+"|partial ( kısmi ,parçalı)| Yalnızca kritik, güvenlik ve platform desteği "
+"düzeltmeleri (son güncelleme: 2.1.6)."
 
 #: ../../docs/about/release_policy.rst:106
 msgid "Godot 2.0"
@@ -4204,9 +4309,8 @@ msgid "February 2016"
 msgstr "Şubat 2016"
 
 #: ../../docs/about/release_policy.rst:106
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
-msgstr "| eol | Artık desteklenmiyor."
+msgstr "|eol| Artık desteklenmiyor (son güncelleme: 2.0.4.1)."
 
 #: ../../docs/about/release_policy.rst:108
 msgid "Godot 1.1"
@@ -4239,13 +4343,12 @@ msgstr ""
 "Destek yok (yaşamın sonu) - |kararsız| Geliştirme sürümü"
 
 #: ../../docs/about/release_policy.rst:124
-#, fuzzy
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
 msgstr ""
-"Pre-release Godot sürümleri üretimde kullanılmak üzere tasarlanmamıştır ve "
-"en iyi çaba temelinde sağlanır."
+"Ön-yayım Godot sürümleri üretimde kullanılmak üzere tasarlanmamıştır ve "
+"yanlızca test amacıyladır."
 
 #: ../../docs/about/release_policy.rst:130
 msgid "When is the next release out?"
@@ -4268,6 +4371,9 @@ msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
 msgstr ""
+"Godot 3.3 ile başlayarak, küçük sürümler için geliştirme döngülerimizi "
+"hızlandırmayı hedefliyoruz, böylece her 3 ila 6 ayda bir yeni bir küçük "
+"sürüm bekleyebilirsiniz."
 
 #: ../../docs/about/release_policy.rst:139
 msgid ""
@@ -4275,6 +4381,9 @@ msgid ""
 "very short development cycles, to provide users of the current stable branch "
 "with the latest bug fixes for their production needs."
 msgstr ""
+"Bakım (yama) sürümleri, mevcut kararlı şubenin kullanıcılarının üretim "
+"ihtiyaçlarına yönelik en son hata düzeltmelerini sağlamak için, olması "
+"gerektiği gibi çok kısa geliştirme döngüleriyle yayınlanacaktır."
 
 #: ../../docs/about/release_policy.rst:143
 msgid ""
@@ -4283,6 +4392,9 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
+"Yaklaşan Godot 4.0'a gelince, yalnızca bir **2021** yayımını hedeflediğimizi "
+"söyleyebiliriz, ancak daha kesin bir tarihten bahsetmek zor. Godot 4.0'ın "
+"ana özellikleri tamamlanır tamamlanmaz alfa yapıları yayınlanacaktır."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot's editor"
@@ -7515,7 +7627,7 @@ msgstr "Düşman betiği"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr ""
-"``Mob``a bir script ( komut dosyası ) ekleyin ve aşağıdaki üye "
+"``Mob``a (saldırgana) bir script ( komut dosyası ) ekleyin ve aşağıdaki üye "
 "değişkenlerini ekleyin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:611
@@ -7524,9 +7636,9 @@ msgid ""
 "``max_speed`` for how fast each mob will move (it would be boring if they "
 "were all moving at the same speed)."
 msgstr ""
-"Bir \"mob\" ortaya çıkardığımızda, her mobun ne kadar hızlı hareket "
-"edeceğine dair ''min_speed'' ve ''max_speed'' arasında rastgele bir değer "
-"seçeceğiz (hepsi aynı hızda hareket etseydi sıkıcı olurdu)."
+"Bir \"mob\" (çete üyesi) ortaya çıkardığımızda, her mobun ne kadar hızlı "
+"hareket edeceğine dair ''min_speed'' ve ''max_speed'' arasında rastgele bir "
+"değer seçeceğiz (hepsi aynı hızda hareket etseydi sıkıcı olurdu)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
 msgid ""
@@ -7573,10 +7685,13 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the "
 "``VisibilityNotifier2D`` node and add this code:"
 msgstr ""
+"Son parça, ekrandan ayrıldıklarında saldırganların kendilerini silmeleri "
+"içindir. `` VisibilityNotifier2D`` düğümünün ``screen_exited () `` sinyalini "
+"bağlayın ve şu kodu ekleyin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:666
 msgid "This completes the `Mob` scene."
-msgstr ""
+msgstr "Bu `Mob` saldırı sahnesini tamamlar."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:669
 msgid "Main scene"
@@ -77073,7 +77188,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
 msgid "Properties"
-msgstr ""
+msgstr "Özellikler"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -81935,7 +82050,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
-msgstr ""
+msgstr "renk"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"

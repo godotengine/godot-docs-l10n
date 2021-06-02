@@ -2,14 +2,14 @@
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# LeoClose <leoclose575@gmail.com>, 2020.
+# LeoClose <leoclose575@gmail.com>, 2020-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.2\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2020-11-20 16:29+0000\n"
+"PO-Revision-Date: 2021-04-10 10:50+0000\n"
 "Last-Translator: LeoClose <leoclose575@gmail.com>\n"
 "Language-Team: Croatian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hr/>\n"
@@ -19,47 +19,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4-dev\n"
+"X-Generator: Weblate 4.6-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
-msgstr ""
+msgstr "Općenito"
 
 #: ../../docs/index.rst:73
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:44
 msgid "Getting started"
-msgstr ""
+msgstr "Započinjanje"
 
 #: ../../docs/index.rst:84
 msgid "Tutorials"
-msgstr ""
+msgstr "Vodiči"
 
 #: ../../docs/index.rst:114
 msgid "Development"
-msgstr ""
+msgstr "Razvoj"
 
 #: ../../docs/index.rst:125
 msgid "Community"
-msgstr ""
+msgstr "Zajednica"
 
 #: ../../docs/index.rst:135
 msgid "Class reference"
-msgstr ""
+msgstr "Referenca klase"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Godot Dokumenti – *3.2* verzija"
+msgstr "Godot Dokumenti – *3.3* verzija"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
+"Godot-ova dokumentacija je dostupna u raznim jezicima i verzijama. Proširi "
+"panel \"Pročitaj Dokumentaciju\" koji se nalazi na dnu bočne trake kako bi "
+"vidjeli listu."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -67,11 +68,11 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Ovo je dokumentacija za stabilnu 3.2 verziju. Treba vam dokumentacija "
+"Ovo je dokumentacija za stabilnu 3.3 verziju. Treba vam dokumentacija "
 "trenutne **development** verzije?\n"
 "`Pogledajte ovdje <https://docs.godotengine.org/en/latest>`_. Također možete "
 "provijeriti dokumentaciju i za prijašnju stabilnu verziju \n"
-"`3.1 <https://docs.godotengine.org/en/3.1>`_."
+"`3.2 <https://docs.godotengine.org/en/3.2>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -79,9 +80,9 @@ msgid ""
 "docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
-"Ova dokumentacija je prevedena s \"izvornog engleskog jezika <https://docs."
-"godotengine.org/en/latest>'_ od strane članova zajednice na \"Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs>'_."
+"Ova dokumentacija je prevedena s `izvornog engleskog jezika <https://docs."
+"godotengine.org/en/latest>`_ od strane članova zajednice na `Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -112,6 +113,11 @@ msgid ""
 "`introduction page <doc_about_intro>` to get an overview of what this "
 "documentation has to offer."
 msgstr ""
+"Dobro došli u službenu dokumentaciju `Godot Engine-a <https://godotengine."
+"org>`__, besplatnog i open source 2D i 3D game engine-a! Ukoliko ste novi u "
+"ovoj dokumentacijim, predlažemo vam da pročitate :ref:`uvodnu stranicu "
+"<doc_about_intro>` kako bi dobili primijer što ova dokumentacija ima za "
+"ponuditi."
 
 #: ../../docs/index.rst:37
 msgid ""
@@ -119,6 +125,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Tablica sadržaja ispod i na bočnoj traci trebala bi vam olakšati pristup "
+"dokumentaciji za vašu temu od interesa. Funkciju pretraživanja možete "
+"koristiti i u gornjem lijevom kutu."
 
 #: ../../docs/index.rst:41
 msgid ""
@@ -127,6 +136,10 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Također, možete i `preuzeti HTML kopiju <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ za "
+"izvanmrežno čitanje (ažurirano svakog ponedjeljka). Raspakirajte ZIP arhivu "
+"te otvorite top-level ``index.html`` u web pretraživaču."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -136,6 +149,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine je open source projekt razvijen od strane zajednice volontera. "
+"Dokumentacijskom timu uvijek su dobro došle vaše povratne informacije i "
+"pomoć kako bi poboljšali vodiče i reference klase. Ukoliko nešto ne "
+"razumijete, ili ne možete naći nešto što tražite u dokumentaciji, pomozite "
+"nam poboljšati dokumentaciju tako što ćete nam dati povratne informacije!"
 
 #: ../../docs/index.rst:52
 msgid ""

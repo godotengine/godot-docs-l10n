@@ -35,6 +35,7 @@
 # iRadEntertainment <devitadario@gmail.com>, 2020.
 # Jacopo Farina <jacopo1.farina@gmail.com>, 2020.
 # J. Lavoie <j.lavoie@net-c.ca>, 2020.
+# Jusef Azzolina <rosarioazzolina33@gmail.com>, 2021.
 # Katia Piazza <gydey@ridiculousglitch.com>, 2019.
 # Leonardo Calamita <linkindayd@gmail.com>, 2020.
 # Lorenzo Cerqua <lorenzocerqua@tutanota.com>, 2020-2021.
@@ -42,7 +43,7 @@
 # Luca De Filippo <luca.defilippo@translationcommons.org>, 2021.
 # Luca meremma <oea44041@bcaoo.com>, 2019.
 # Marabese Fabio <marabesefabio@outlook.it>, 2019.
-# Marco Galli <mrcgll98@gmail.com>, 2019-2020.
+# Marco Galli <mrcgll98@gmail.com>, 2019-2021.
 # Marco Mastio <marco.mastio@gmail.com>, 2020.
 # Marco Melorio <m.melorio@icloud.com>, 2019.
 # Marco <rodomar705@gmail.com>, 2019.
@@ -66,6 +67,7 @@
 # Riccardo Ferro <Riccardo3Ferro@gmail.com>, 2020.
 # Riteo Siuga <lorenzocerqua@tutanota.com>, 2021.
 # Roberto Giaconia <giakka96@hotmail.it>, 2019.
+# rudyvic <visotruce@gmail.com>, 2021.
 # salahzar stenvaag <salahzar@gmail.com>, 2019.
 # Salvo Permiracolo <salvoperm@gmail.com>, 2018.
 # Samuele Zolfanelli <samdazel@gmail.com>, 2018-2019.
@@ -81,8 +83,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-03-31 08:14+0000\n"
-"Last-Translator: Mirko <miknsop@gmail.com>\n"
+"PO-Revision-Date: 2021-06-02 01:32+0000\n"
+"Last-Translator: Riteo Siuga <lorenzocerqua@tutanota.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -90,7 +92,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -119,9 +121,8 @@ msgid "Class reference"
 msgstr "Riferimento classe"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Documentazione di Godot - branch *3.2*"
+msgstr "Documentazione di Godot – branch *3.3*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -133,7 +134,6 @@ msgstr ""
 "per vedere la lista."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -141,11 +141,11 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Questa è la documentazione per la versione stabile 3.2. Stai cercando la "
+"Questa è la documentazione per la versione stabile 3.3. Stai cercando la "
 "documentazione per la versione corrente **in sviluppo**? `Dai un'occhiata "
 "qui: <http://docs.godotengine.org/en/latest>`_. Puoi anche vedere la "
-"documentazione della precedente versione stabile `3.1 <https://docs."
-"godotengine.org/en/3.1>`_."
+"documentazione della precedente versione stabile `3.2 <https://docs."
+"godotengine.org/en/3.2>`_."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -211,6 +211,10 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Puoi anche `scaricare una copia HTML <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ per la lettura "
+"offline (aggiornata ogni lunedì). Estrai l'archivio ZIP poi apri il livello "
+"superiore ``index.html`` in un browser web."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -228,7 +232,6 @@ msgstr ""
 "facendocelo sapere!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -237,13 +240,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#documentation`` channel on the `Godot "
 "Contributors Chat <https://chat.godotengine.org/>`_!"
 msgstr ""
-"Invia segnalazioni di problemi o pull request del `repository di GitHub "
+"Segnala un problema o fai una pull request del `repository di GitHub "
 "<https://github.com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la "
 "documentazione <https://hosted.weblate.org/engage/godot-engine/>`_ nella tua "
-"lingua, o rimani in contatto con noi sia sul canale della "
-"``#documentazione`` su `Discord <https://discord.gg/zH7NUgz>`_, o sul canale "
-"``#godotengine-doc`` su `irc.freenode.net <http://webchat.freenode.net/?"
-"channels=#godotengine-doc>`_!"
+"lingua, o rimani in contatto con noi sia sul canale della ``#documentation`` "
+"su `Discord <https://discord.gg/zH7NUgz>`_, o sul canale ``#documentation`` "
+"su `Chat Contributori Godot <https://chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:62
 msgid "weblate_widget"
@@ -1148,6 +1150,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
 msgstr ""
+"Perché Godot cerca di mantenere piccolo il suo set di funzionalità "
+"principali?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1155,11 +1159,14 @@ msgid ""
 "ons unless they are used very often. One exemple of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot intenzionalmente non include funzionalità che possono essere "
+"implementate da componenti aggiuntivi a meno che non siano utilizzate molto "
+"spesso. Un esempio di questo sarebbe una funzionalità avanzata di "
+"intelligenza artificiale."
 
 #: ../../docs/about/faq.rst:211
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "Ci sono due modi per farlo:"
+msgstr "Ci sono diverse ragioni per questo:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1171,6 +1178,14 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Manutenzione del codice e ricerca di bug** Ogni volta che accettiamo nuovo "
+"codice nel repository di Godot, contributori già esistenti spesso si "
+"assumono la responsabilità di mantenerlo. Alcuni contributori però non "
+"rimangono sempre dopo che il loro codice sia stato accettato, il che può "
+"renderci difficile mantenere il codice in questione. Questo può portare a "
+"funzionalità non sufficientemente mantenute con dei bug mai risolti. In "
+"aggiunta, la \"superficie API\" che ha bisogno di essere testata e "
+"controllata per regressioni continua a crescere nel corso del tempo."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -1179,6 +1194,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Facilità di contribuire** Mantenendo il repository piccolo e ordinato, "
+"rimane facile e veloce compilare dalla risorsa principale. Questo rende "
+"molto più facile per i nuovi contributori iniziare con Godot, senza che "
+"devano acquistare hardware di alto livello."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -1187,6 +1206,10 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**Mantenere una dimensione piccola del file binario dell'editor.** Non tutti "
+"hanno una connessione veloce ad internet. Assicurarsi che chiunque possa "
+"scaricare l'editor di Godot, estrarlo ed eseguirlo in meno di 5 minuti rende "
+"Godot più accessibile agli sviluppatori."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1197,6 +1220,13 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**Mantenere una dimensione piccola dei template di export.** Questo impatta "
+"direttamente la dimensione dei progetti esportati con Godot. Sulle "
+"piattaforme mobile e web, mantenere piccole le dimensioni dei file è molto "
+"importante per assicurare un'installazione ed un caricamento rapido anche su "
+"device con poca potenza. Ancora, ci sono molti stati in cui internet ad alta "
+"velocità non è disponibile. In aggiunta, in questi stati generalmente ci "
+"sono dei limiti stringenti sulla quantità di dati utilizzabili."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1209,6 +1239,15 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Per tutte le ragioni dette precedentemente, dobbiamo essere selettivi sulle "
+"funzionalità principali da accettare in Godot. Questo è il motivo per cui, "
+"in future versioni di Godot, stiamo puntando a spostare alcune "
+"caratteristiche principali in componenti aggiuntivi supportati "
+"ufficialmente. In termini di dimensione del file binario, questo ha anche il "
+"vantaggio di includere solo quello che è usato nel tuo progetto. (Nel "
+"frattempo, puoi :ref:`compilare dei template di esportazione personalizzati "
+"con le funzionalità non usate disabilitate <doc_optimizing_for_size> per "
+"ottimizzare la dimensione di distribuzione del tuo progetto.)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1719,6 +1758,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Vedi :ref`doc_using_the_web_editor`per scorciatoie specifiche alla versione "
+"HTML5 dell'editor di Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -1838,24 +1879,34 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Un testo come \"NO DC\" appare nell'angolo in alto a sinistra della finestra "
+"del gestore dei progetti e dell'editor."
 
 #: ../../docs/about/troubleshooting.rst:60
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Questo è causato dal driver grafico NVIDIA che inietta un overlay per "
+"visualizzare le informazioni."
 
 #: ../../docs/about/troubleshooting.rst:62
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Per disabilitare questa sovrapposizione su Windows, ripristinare le "
+"impostazioni del driver grafico ai valori predefiniti nel pannello di "
+"controllo NVIDIA."
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Per disabilitare questo overlay su Linux, aprite ``nvidia-settings``, andate "
+"su **X Screen 0 > OpenGL Settings** e deselezionate **Enable Graphics API "
+"Visual Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."
@@ -1954,7 +2005,6 @@ msgstr ""
 "supportate da Godot."
 
 #: ../../docs/about/list_of_features.rst:10
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.3). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -1962,7 +2012,7 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Questa pagina elenca le funzionalità supportate dall'attuale versione "
-"stabile di Godot (3.2). `Altre funzionalità <https://docs.godotengine.org/en/"
+"stabile di Godot (3.3). `Altre funzionalità <https://docs.godotengine.org/en/"
 "latest/about/list_of_features.html>` __ sono disponibili nell'ultima "
 "versione in sviluppo (4.0)."
 
@@ -2937,7 +2987,7 @@ msgstr "*Linux:* PulseAudio o ALSA."
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
-msgstr "Importare"
+msgstr "Importazione"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2965,7 +3015,7 @@ msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:373
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:375
 msgid "*3D scenes:*"
@@ -3088,7 +3138,7 @@ msgstr "Genera mesh di navigazione dall'editor."
 #: ../../docs/about/docs_changelog.rst:60
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr "Rete"
+msgstr "Networking"
 
 #: ../../docs/about/list_of_features.rst:416
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
@@ -3293,9 +3343,9 @@ msgid "Buttons."
 msgstr "Pulsanti."
 
 #: ../../docs/about/list_of_features.rst:484
-#, fuzzy
 msgid "Checkboxes, check buttons, radio buttons."
-msgstr "Caselle di controllo, bottoni di conferma, pulsanti di opzione."
+msgstr ""
+"Caselle di controllo, pulsanti di conferma, pulsanti a scelta multipla."
 
 #: ../../docs/about/list_of_features.rst:485
 msgid "Text entry using LineEdit (single line) and TextEdit (multiple lines)."
@@ -3357,9 +3407,8 @@ msgstr ""
 "determinate regole."
 
 #: ../../docs/about/list_of_features.rst:499
-#, fuzzy
 msgid ":ref:`Stack <class_BoxContainer>` layouts."
-msgstr "Disposizione a :ref:`Pila <class_BoxContainer>`."
+msgstr "Disposizione a :ref:`Stack<class_BoxContainer>`."
 
 #: ../../docs/about/list_of_features.rst:500
 msgid ":ref:`Grid <class_GridContainer>` layouts."
@@ -3374,7 +3423,6 @@ msgstr ""
 "<class_CenterContainer>`."
 
 #: ../../docs/about/list_of_features.rst:503
-#, fuzzy
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr "Disposizione con :ref:`Divisore trascinabile <class_SplitContainer>`."
 
@@ -3821,7 +3869,6 @@ msgstr ":ref:`doc_using_servers`"
 
 #: ../../docs/about/docs_changelog.rst:99
 #: ../../docs/tutorials/legal/index.rst:2
-#, fuzzy
 msgid "Legal"
 msgstr "Legale"
 
@@ -3955,7 +4002,7 @@ msgstr ":ref:`doc_gui_containers`"
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "Punti di vista"
+msgstr "Viste"
 
 #: ../../docs/about/docs_changelog.rst:166
 msgid ":ref:`doc_viewport_as_texture`"
@@ -4081,6 +4128,10 @@ msgid ""
 "happen depends on the choices of core contributors, and the needs of the "
 "community at a given time."
 msgstr ""
+"La politica di rilascio di Godot è in costante evoluzione. Ciò che è "
+"descritto di seguito è inteso a dare un'idea generale di ciò che ci si può "
+"aspettare, ma ciò che accadrà effettivamente dipende dalle scelte dei "
+"collaboratori principali e dai bisogni della comunità in un dato momento."
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
@@ -4092,6 +4143,10 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
+"Godot segue vagamente il `Semantic Versioning <https://semver.org/>`__ con "
+"un sistema di versioning ``major.minor.patch``, sebbene con "
+"un'interpretazione di ogni termine adattata alla complessità di un motore di "
+"gioco:"
 
 #: ../../docs/about/release_policy.rst:18
 msgid ""
@@ -4099,6 +4154,9 @@ msgid ""
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
+"La versione ``major`` è incrementata quando si verificano importanti rotture "
+"di compatibilità che implicano un significativo lavoro di conversione per "
+"spostare i progetti da una versione maggiore all'altra."
 
 #: ../../docs/about/release_policy.rst:22
 msgid ""
@@ -4106,6 +4164,10 @@ msgid ""
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
+"Per esempio, la conversione di progetti Godot da Godot 2.1 a Godot 3.0 ha "
+"richiesto l'esecuzione del progetto attraverso uno strumento di conversione, "
+"e poi l'esecuzione di un certo numero di ulteriori aggiustamenti manuali per "
+"ciò che lo strumento non poteva fare automaticamente."
 
 #: ../../docs/about/release_policy.rst:26
 msgid ""
@@ -4114,6 +4176,11 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
+"La versione ``minor`` viene incrementata per i rilasci di funzionalità che "
+"non rompono la compatibilità in modo rilevante. Piccole rotture di "
+"compatibilità in aree molto specifiche *possono* accadere nelle versioni "
+"minori, ma la stragrande maggioranza dei progetti non dovrebbe essere "
+"influenzata o richiedere un significativo lavoro di conversione."
 
 #: ../../docs/about/release_policy.rst:31
 msgid ""
@@ -4123,6 +4190,11 @@ msgid ""
 "feature, or modifying the interface of a given class, even if the rest of "
 "the engine API remains backwards compatible."
 msgstr ""
+"Il motivo di ciò è che come motore di gioco, Godot si occupa di molte cose "
+"come rendering, fisica, scripting, ecc., e correggere bug o implementare "
+"nuove funzioni in un area può aver bisogno di cambiamenti nel comportamento "
+"di funzioni, o di modifiche dell'interfaccia di una classe specifica, anche "
+"se il resto dell'API del motore rimane retro compatibile."
 
 #: ../../docs/about/release_policy.rst:39
 msgid ""
@@ -4130,6 +4202,9 @@ msgid ""
 "some testing is necessary to ensure that your project still behaves as "
 "expected in a new minor version."
 msgstr ""
+"Perciò aggiornare a una nuova versione minor è consigliato a tutti gli "
+"utenti, ma sarà necessario del collaudo per assicurarsi che il progetto si "
+"comporti come previsto con ogni nuova versione minor."
 
 #: ../../docs/about/release_policy.rst:43
 msgid ""
@@ -4138,18 +4213,26 @@ msgid ""
 "support, and backporting safe usability enhancements. Patch releases are "
 "backwards compatible."
 msgstr ""
+"La versione ``patch`` viene incrementata per i rilasci di manutenzione che "
+"si focalizzano sul correggere bug e problemi di sicurezza, sull'implementare "
+"nuovi requisiti per supporto delle piattaforme, e sul backportare "
+"miglioramenti di usabilità sicuri. Rilasci patch sono retro compatibili."
 
 #: ../../docs/about/release_policy.rst:48
 msgid ""
 "Patch versions may include minor new features which do not impact the "
 "existing API, and thus have no risk of impacting existing projects."
 msgstr ""
+"Versioni patch possono includere nuove funzioni minori che non hanno impatto "
+"sull'API esistente, e perciò non c'è rischio di impattare progetti esistenti."
 
 #: ../../docs/about/release_policy.rst:53
 msgid ""
 "Updating to new patch versions is therefore considered safe and strongly "
 "recommended to all users of a given stable branch."
 msgstr ""
+"Perciò aggiornare a nuove versioni patch è considerato sicuro e altamente "
+"consigliato a tutti gli utenti di un ramo stabile."
 
 #: ../../docs/about/release_policy.rst:56
 msgid ""
@@ -4159,6 +4242,11 @@ msgid ""
 "name (for example patch updates for the 3.3 stable branch are developed in "
 "the ``3.3`` Git branch)."
 msgstr ""
+"Chiamiamo ``major.minor`` combinazioni di *rami stabili*. Ogni ramo stabile "
+"inizia con un rilascio ``major.minor`` (senza lo ``0`` per ``patch``) ed è "
+"poi sviluppato per rilasci di mantenimento in un ramo Git con lo stesso nome "
+"(per esempio, aggiornamenti patch per il ramo stabile 3.3 sono sviluppati "
+"nel ramo Git ``3.3``)."
 
 #: ../../docs/about/release_policy.rst:64
 msgid ""
@@ -4167,6 +4255,11 @@ msgid ""
 "In particular, the 3.2 stable branch received a number of new features in "
 "3.2.2 which would have warranted a ``minor`` version increment."
 msgstr ""
+"Come detto nell'introduzione, la politica di rilascio di Godot è in "
+"evoluzione, e le versioni precedenti di Godot potrebbero non aver seguito le "
+"regole sopra descritte alla lettera. In particolare, il ramo stabile 3.2 ha "
+"ricevuto un numero di nuove funzionalità nella versione 3.2.2 che sarebbero "
+"dovute essere state aggiunte in una versione ``minor``."
 
 #: ../../docs/about/release_policy.rst:70
 msgid "Release support timeline"
@@ -4179,6 +4272,10 @@ msgid ""
 "stable branches on a *best effort* basis for as long as they have active "
 "users who need maintenance updates."
 msgstr ""
+"I rami stabili sono supportati *come minimo* fino al rilascio del ramo "
+"stabile seguente con conseguente prima patch. In pratica, supportiamo rami "
+"stabili al *massimo delle nostre capacità* finché hanno ancora utenti che "
+"hanno bisogno di aggiornamenti di manutenzione."
 
 #: ../../docs/about/release_policy.rst:77
 msgid ""
@@ -4188,6 +4285,12 @@ msgid ""
 "new major version. This is the case for the 2.1 branch, and will be the case "
 "for the latest 3.x stable branch by the time Godot 4.0 is released."
 msgstr ""
+"Ogni volta che viene rilasciata una nuova versione maggiore, rendiamo il "
+"ramo stabile precedente una versione a supporto a lungo termine, e ci "
+"impegniamo al massimo per correggere problemi riscontrati da utenti di quel "
+"ramo che non possono convertire progetti complessi alla nuova versione "
+"maggiore. Questo è il caso del ramo 2.1, e sarà il caso per l'ultimo ramo "
+"stabile 3.x una volta che sarà rilasciato Godot 4.0."
 
 #: ../../docs/about/release_policy.rst:88
 msgid "**Version**"
@@ -4214,20 +4317,20 @@ msgid "|unstable| *Current focus of development (unstable).*"
 msgstr "| unstable | *Focus attuale dello sviluppo (instabile).*"
 
 #: ../../docs/about/release_policy.rst:92
-#, fuzzy
 msgid "Godot 3.3"
-msgstr "Godot 3.2"
+msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:92
-#, fuzzy
 msgid "March/April 2021"
-msgstr "Marzo 2019"
+msgstr "Marzo/Aprile 2021"
 
 #: ../../docs/about/release_policy.rst:92
 msgid ""
 "|supported| Receives bug, security and platform support fixes, as well as "
 "backwards-compatible usability enhancements."
 msgstr ""
+"|supported| Riceve correzioni a bug, problemi di sicurezza e di supporto di "
+"piattaforme, insieme a miglioramenti di usabilità retro compatibili."
 
 #: ../../docs/about/release_policy.rst:95
 msgid "Godot 3.2"
@@ -4238,13 +4341,12 @@ msgid "January 2020"
 msgstr "Gennaio 2020"
 
 #: ../../docs/about/release_policy.rst:95
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "3.2.3)."
 msgstr ""
 "|partial| Solo correzioni critiche, di sicurezza e di supporto della "
-"piattaforma."
+"piattaforma (ultimo aggiornamento: 3.2.3)."
 
 #: ../../docs/about/release_policy.rst:98
 msgid "Godot 3.1"
@@ -4255,13 +4357,12 @@ msgid "March 2019"
 msgstr "Marzo 2019"
 
 #: ../../docs/about/release_policy.rst:98
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "3.1.2)."
 msgstr ""
 "|partial| Solo correzioni critiche, di sicurezza e di supporto della "
-"piattaforma."
+"piattaforma (ultimo aggiornamento: 3.1.2)."
 
 #: ../../docs/about/release_policy.rst:101
 msgid "Godot 3.0"
@@ -4272,9 +4373,8 @@ msgid "January 2018"
 msgstr "Gennaio 2018"
 
 #: ../../docs/about/release_policy.rst:101
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.0.6)."
-msgstr "|eol| Non più supportato."
+msgstr "|eol| Non più supportato (ultimo aggiornamento: 3.0.6)."
 
 #: ../../docs/about/release_policy.rst:103
 msgid "Godot 2.1"
@@ -4285,13 +4385,12 @@ msgid "July 2016"
 msgstr "Luglio 2016"
 
 #: ../../docs/about/release_policy.rst:103
-#, fuzzy
 msgid ""
 "|partial| Only critical, security and platform support fixes (last update: "
 "2.1.6)."
 msgstr ""
 "|partial| Solo correzioni critiche, di sicurezza e di supporto della "
-"piattaforma."
+"piattaforma (ultimo aggiornamento: 2.1.6)."
 
 #: ../../docs/about/release_policy.rst:106
 msgid "Godot 2.0"
@@ -4302,9 +4401,8 @@ msgid "February 2016"
 msgstr "Febbraio 2016"
 
 #: ../../docs/about/release_policy.rst:106
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
-msgstr "|eol| Non più supportato."
+msgstr "|eol| Non più supportato (ultimo aggiornamento: 2.0.4.1)."
 
 #: ../../docs/about/release_policy.rst:108
 msgid "Godot 1.1"
@@ -4328,7 +4426,6 @@ msgid "December 2014"
 msgstr "Dicembre 2014"
 
 #: ../../docs/about/release_policy.rst:118
-#, fuzzy
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
@@ -4337,35 +4434,34 @@ msgstr ""
 "eol| Non supportato (end of life) - |unstable| Versione di sviluppo"
 
 #: ../../docs/about/release_policy.rst:124
-#, fuzzy
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
 msgstr ""
 "Le versioni di Godot pre-release non sono pensate per essere utilizzate in "
-"produzione e sono fornite nel migliore dei modi."
+"produzione e sono fornite a solo scopo di collaudo."
 
 #: ../../docs/about/release_policy.rst:130
 msgid "When is the next release out?"
 msgstr "Quando uscirà la prossima versione?"
 
 #: ../../docs/about/release_policy.rst:132
-#, fuzzy
 msgid ""
 "While Godot contributors aren't working under any deadlines, we have "
 "historically had one major or minor release per year, with several "
 "maintenance updates between each."
 msgstr ""
-"Nonostante i contributori di Godot non lavorano entro nessuna scadenza, di "
-"solito c'è una versione Godot maggiore o minore resa disponibile ogni anno. "
-"Seguendo questa tendenza, significa che Godot 4.0 sarà molto probabilmente "
-"rilasciato nel **2021**."
+"Nonostante i contributori di Godot non lavorino entro nessuna scadenza, di "
+"solito c'è una versione Godot maggiore o minore resa disponibile ogni anno."
 
 #: ../../docs/about/release_policy.rst:136
 msgid ""
 "Starting with Godot 3.3, we aim to accelerate our development cycles for "
 "minor releases, so you can expect a new minor release every 3 to 6 months."
 msgstr ""
+"A partire da Godot 3.3, vogliamo accelerare i nostri cicli di sviluppo per i "
+"rilasci minori, quindi ci si può aspettare una nuova versione minore ogni "
+"3-6 mesi."
 
 #: ../../docs/about/release_policy.rst:139
 msgid ""
@@ -4373,6 +4469,9 @@ msgid ""
 "very short development cycles, to provide users of the current stable branch "
 "with the latest bug fixes for their production needs."
 msgstr ""
+"Rilasci di manutenzione (patch) saranno rilasciati quando ce n'è bisogno, "
+"con cicli di sviluppo potenzialmente molto corti, per dare agli utenti "
+"dell'attuale ramo stabile le ultime correzioni implementate."
 
 #: ../../docs/about/release_policy.rst:143
 msgid ""
@@ -4381,6 +4480,11 @@ msgid ""
 "builds will be published as soon as the main features for Godot 4.0 are "
 "finalized."
 msgstr ""
+"Per quanto riguarda il rilascio di Godot 4.0, possiamo solamente dire che "
+"cerchiamo di puntare al **2021** come anno di rilascio, ma una stima più "
+"vicina molto probabilmente sarebbe molto difficile da rispettare. Versioni "
+"alpha saranno rilasciate una volta che le funzioni principali di Godot 4.0 "
+"saranno finalizzate."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot's editor"
@@ -4392,9 +4496,9 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"Questo tutorial ti guiderà attraverso l'interfaccia di Godot. Vedremo le "
-"schermate di **Gestione Progetto, docks, spazi di lavoro** e tutto quello "
-"che c'è da sapere per iniziare ad usare Godot."
+"Questo tutorial ti guiderà attraverso l'interfaccia di Godot. Vedremo il "
+"*Gestore dei progetti, dock, spazi di lavoro** e tutto quello che c'è da "
+"sapere per iniziare ad usare Godot."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:10
 msgid ""
@@ -4404,7 +4508,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid "Project manager"
-msgstr "Gestore di Progetto"
+msgstr "Gestore dei Progetti"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:15
 msgid ""
@@ -5321,7 +5425,6 @@ msgstr ""
 "salvata, e le modifiche a quella scena affliggeranno tutte le sue istanze."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:102
-#, fuzzy
 msgid ""
 "You can also adjust individual instances. Set the bounce value back to ``0`` "
 "and then in the ``Main`` scene, select one of the instanced balls. Resources "
@@ -5334,9 +5437,9 @@ msgstr ""
 "``0`` e poi nella scena ``Main``, seleziona una delle palle istanziate. "
 "Risorse come ``PhysicsMaterial`` sono condivise tra le istanze per "
 "impostazione predefinita, quindi dobbiamo renderle uniche. Fare clic sul "
-"pulsante degli strumenti in alto a destra nel dock Inspector e selezionare "
-"\"Rendi uniche le risorse secondarie\". Imposta il suo ``Bounce`` su ``1`` e "
-"premi \"Esegui\"."
+"pulsante degli strumenti in alto a destra nel riquaro Inspector e "
+"selezionare \"Rendi uniche le risorse secondarie\". Imposta il suo "
+"``Bounce`` su ``1`` e premi \"Esegui\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:111
 msgid ""
@@ -5826,17 +5929,16 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Scrivere uno script che può accedere agli altri nodi della scena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
 "and the reference is structured into sections to make it easier to get an "
 "overview of the concepts."
 msgstr ""
-"Prima di continuare, controlla di aver letto e aggiunto ai segnalibri la "
-"guida :ref:`GDScript<doc_gdscript>` È un linguaggio ideato per essere "
-"semplice e la sua struttura è divisa in sezioni per rendere più facile "
-"l'apprendimento dei concetti."
+"Prima di continuare, controlla di aver dato un'occhiata e aver aggiunto ai "
+"segnalibri la guida :ref:`GDScript<doc_gdscript>`. È un linguaggio ideato "
+"per essere semplice e la sua struttura è divisa in sezioni per rendere più "
+"facile l'apprendimento dei concetti."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:79
@@ -7835,7 +7937,6 @@ msgstr ""
 "dell'editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -7843,10 +7944,10 @@ msgid ""
 "be found to the left of the \"Lock\" button, appearing as a magnet next to "
 "some dots and intersecting lines, respectively."
 msgstr ""
-"Selezionate quello centrale (\"Add Point\") e disegnate il percorso "
-"cliccando per aggiungere i punti agli angoli mostrati. Per fare in modo che "
-"i punti aggancino alla griglia, assicurarsi che \"Use Grid Snap\" e \"Use "
-"Snap\" siano entrambi selezionati. Queste opzioni si trovano a sinistra del "
+"Seleziona quello centrale (\"Add Point\") e disegna il percorso cliccando "
+"per aggiungere i punti agli angoli mostrati. Per fare in modo che i punti si "
+"aggancino alla griglia, assicurati che \"Use Grid Snap\" e \"Use Snap\" "
+"siano entrambi selezionati. Queste opzioni si trovano a sinistra del "
 "pulsante \"Blocca\", che appare come un magnete accanto ad alcuni punti e "
 "linee che si intersecano, rispettivamente."
 
@@ -7934,7 +8035,6 @@ msgstr ""
 "dock Nodo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:787
-#, fuzzy
 msgid ""
 "You should see a list of the signals for the ``Player`` node. Find and "
 "double-click the ``hit`` signal in the list (or right-click it and select "
@@ -7946,14 +8046,15 @@ msgid ""
 "will set everything up for a new game:"
 msgstr ""
 "Dovresti vedere una lista dei segnali per il nodo ``Player``. Trova e clicca "
-"due volte sul segnale ``hit`` nella lista (o clicca con il tasto destro del "
-"mouse e seleziona \"Connetti...\"). In questo modo si aprirà la finestra di "
-"dialogo per la connessione del segnale. Vogliamo creare una nuova funzione "
-"chiamata ``game_over```, che gestirà ciò che deve accadere quando un gioco "
-"finisce. Digitate \"game_over\" nella casella \"Receiver Method\" in fondo "
-"alla finestra di dialogo della connessione del segnale e cliccate su "
-"\"Connect\". Aggiungete il seguente codice alla nuova funzione, così come "
-"una funzione ``new_game`` che imposterà tutto per un nuovo gioco:"
+"due volte sul segnale ``hit`` dalla lista (o fai un click con il mouse "
+"destro del mouse e seleziona \"Connetti...\"). In questo modo si aprirà la "
+"finestra di dialogo per la connessione del segnale. Vogliamo creare una "
+"nuova funzione chiamata ``game_over```, che gestirà ciò che deve accadere "
+"quando un gioco finisce. Digitate \"game_over\" nella casella \"Receiver "
+"Method\" in fondo alla finestra di dialogo della connessione del segnale e "
+"cliccate su \"Connect\". Aggiungete il seguente codice alla nuova funzione, "
+"e allo stesso modo crea una funzione ``new_game`` che imposterà un nuovo "
+"gioco:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:828
 msgid ""
@@ -8580,7 +8681,6 @@ msgstr ""
 "essere gestito da chiunque."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -8588,25 +8688,23 @@ msgid ""
 "way the game works."
 msgstr ""
 "La modalità di esportazione del gioco dipende dalla piattaforma di "
-"destinazione. In questo tutorial, imparerai come esportare il gioco \"Dodge "
-"the Creeps\" per una varietà di esse. In primo luogo, tuttavia, abbiamo "
+"destinazione. In questo tutorial, imparerai come esportare il gioco *Dodge "
+"the Creeps* per una varietà di esse. In primo luogo, tuttavia, abbiamo "
 "bisogno di apportare modifiche ad alcune funzionalità del gioco."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Se non hai ancora creato \"Dodge the Creeps\", leggi :"
-"ref:'doc_your_first_game' prima di continuare con questo tutorial."
+"Se non hai ancora creato *Dodge the Creeps*, leggi :ref:"
+"`doc_your_first_game` prima di continuare con questo tutorial."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
 msgstr "Preparazione del progetto"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -8614,14 +8712,13 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
-"In \"Dodge the Creeps\" abbiamo usato i controlli della tastiera per muovere "
-"il giocatore. Questo va bene su una PC, ma su un telefono o tablet è "
-"necessario rilevare l'input da touchscreen. Poiché un evento click può "
+"In *Dodge the Creeps* abbiamo usato i controlli della tastiera per muovere "
+"il giocatore. Questo va bene su un PC, ma su un telefono o tablet è "
+"necessario rilevare l'input dal touchscreen. Poiché un evento click può "
 "essere trattato allo stesso modo di un evento touch, convertiremo il gioco "
-"in uno stile di input click-and-move."
+"in uno stile di input adatto a dispositivi mobili."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default, Godot emulates mouse input from touch input. That means that if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -8633,18 +8730,18 @@ msgstr ""
 "se qualcosa viene codificato per attivarsi con un evento del mouse, anche "
 "l'input touch lo attiverà. Godot può anche emulare l'input touch dal clic "
 "del mouse, del quale ne avremo bisogno per essere in grado di continuare a "
-"giocare sul nostro computer dopo che passeremo all'input touch. In "
-"\"Impostazioni progetto\" in *Dispositivi di input* e *Puntamento*, imposta "
-"*Emula touch dal mouse* su \"Attivo\"."
+"giocare sul nostro computer dopo che passeremo all'input touch."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
+#, fuzzy
 msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"In **Progetto > Impostazioni del progetto**, sotto **Dispositivi di input > "
+"Puntamento**, abilitate **Emulare il tocco dal mouse**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
-#, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
@@ -8653,17 +8750,16 @@ msgid ""
 msgstr ""
 "Vogliamo anche assicurarci che il gioco sia in scala costante su schermi di "
 "dimensioni diverse, quindi nelle impostazioni del progetto andate su "
-"*Visualizza*, poi cliccate su *Finestra*. Nelle opzioni *Stretch*, impostare "
-"*Mode* su \"2d\" e *Aspect* su \"keep\"."
+"**Visualizza**, poi cliccate su **Finestra**. Nelle opzioni **Stretch**, "
+"impostare **Mode** su ``2d`` e **Aspect** su ``keep``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
-#, fuzzy
 msgid ""
 "Since we are already in the **Window** settings, we should also set under "
 "**Handheld** the **Orientation** to ``portrait``."
 msgstr ""
-"Dato che siamo già nelle impostazioni *Finestra*, dovremmo anche impostare "
-"sotto *Manuale* l'*Orientamento* su \"ritratto\"."
+"Dato che siamo già nelle impostazioni **Finestra**, dobbiamo anche impostare "
+"nella sezione **Manuale** l'opzione **Orientamento** su ``ritratto``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:50
 msgid ""
@@ -8689,16 +8785,16 @@ msgid "Setting a main scene"
 msgstr "Impostare una scena principale"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. For this *Dodge the "
 "Creeps* example, in **Project -> Project Settings -> Application -> Run**, "
 "set **Main Scene** to ``Main.tscn`` by clicking the folder icon and "
 "selecting it."
 msgstr ""
-"La scena radice è la scena da cui il gioco si avvia. In *Progetto -> "
-"Impostazioni Progetto -> Applicazione -> Esegui*, imposta *Main Scene* a "
-"\"Main.tscn\" cliccando l'icona della cartella e selezionandola."
+"La scena radice è la scena da cui il gioco si avvia. Per questo esempio "
+"*Dodge the Creeps*, in **Progetto -> Impostazioni Progetto -> Applicazione -"
+"> Esegui**, imposta **Main Scene** a ``Main.tscn`` cliccando l'icona della "
+"cartella e selezionandola."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
@@ -8708,18 +8804,17 @@ msgid "Export templates"
 msgstr "Modelli di esportazione"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform. You can also "
 "download them in Godot by clicking on **Editor -> Manage Export Templates**:"
 msgstr ""
-"Per esportare, è necessario scaricare i modelli di esportazione da http://"
-"godotengine.org/download. Questi modelli sono versioni ottimizzate del "
-"motore senza l'editor precompilato per ogni piattaforma. È anche possibile "
-"scaricarli in Godot facendo clic su \"Editor\" - - - > Gestisci modelli di "
-"esportazione:"
+"Per esportare il progetto, è necessario scaricare *i modelli di "
+"esportazione* da http://godotengine.org/download. Questi modelli sono "
+"versioni ottimizzate del IDE senza l'editor precompilato per le piattaforme. "
+"È anche possibile scaricarli da Godot facendo clic su **Editor - > Gestisci "
+"modelli di esportazione**:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -8728,34 +8823,39 @@ msgid ""
 "Therefore, you don't need to download them using the **Manage Export "
 "Templates** dialog."
 msgstr ""
+"Se hai scaricato Godot da `Steam <https://store.steampowered.com/app/404790/"
+"Godot_Engine/>`__, i modelli di esportazione sono già inclusi. Pertanto, non "
+"hai bisogno di scaricarli dalla finestra di dialogo **Manage Export "
+"Templates**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"Nella finestra che appare, puoi cliccare su \"Download\" per ottenere la "
-"versione del modello che corrisponde alla tua versione di Godot."
+"Nella finestra che appare, clicca su **Download** per ottenere la versione "
+"del modello che corrisponde alla tua versione di Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
 "Export templates are bound to a specific Godot version. If you upgrade "
 "Godot, you must download templates that match the new version."
 msgstr ""
+"I modelli di esportazione sono legati ad una specifica versione di Godot. Se "
+"aggiorni Godot, devi scaricare i modelli che corrispondono alla nuova "
+"versione."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:277
 msgid "Export presets"
 msgstr "Export presets (Profili di esportazione)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
 msgstr ""
-"Successivamente, è possibile configurare le impostazioni di esportazione "
-"facendo clic su * Progetto -> Esporta *."
+"Dopo, puoi configurare le impostazioni di esportazione facendo clic su "
+"**Progetto -> Esporta**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
 #, fuzzy
@@ -8763,37 +8863,36 @@ msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
-"Crea un nuovo pofilo di esportazione cliccando su \"Add.....\" e "
-"selezionando una piattaforma. È possibile creare più profili a piacere con "
-"impostazioni diverse."
+"Crea un nuovo pofilo di esportazione cliccando su \"Aggiungi.....\" e "
+"selezionando una piattaforma. È possibile creare quanti profili tu voglia, "
+"con impostazioni diverse."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
 "Nella parte inferiore della finestra sono presenti due pulsanti. \"Esporta "
-"PCK / ZIP\" crea solo una versione compressa dei dati del progetto. Questo "
-"non include alcun eseguibile, quindi il progetto non può girare in autonomia."
+"PCK / ZIP\" crea solo una versione compressa dei dati del progetto. Non "
+"includerà alcun eseguibile, quindi il progetto non può essere eseguito in "
+"autonomia."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
 msgstr ""
-"Il secondo pulsante, \"Esporta progetto\", crea una versione eseguibile "
-"completa del gioco, ad esempio un '.apk' per Android o un '.exe' per Windows."
+"Il secondo pulsante, **Esporta progetto**, crea una versione eseguibile "
+"completa del gioco, come ad esempio un ``.apk`` per Android o un ``.exe`` "
+"per Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
-#, fuzzy
 msgid ""
 "In the **Resources** and **Features** tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"Nelle schede \"Risorse\" e \"Caratteristiche\" è possibile personalizzare le "
+"Nelle schede **Risorse** e **Caratteristiche** è possibile personalizzare le "
 "modalità di esportazione del gioco per ogni piattaforma. Per ora possiamo "
 "lasciare queste impostazioni come sono."
 
@@ -9897,10 +9996,13 @@ msgstr ""
 "genitore."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
+#, fuzzy
 msgid ""
 "**Arrange control nodes automatically with containers:** Use container nodes "
 "to automatically scale and place UI elements."
 msgstr ""
+"**Regola i nodi Control automaticamente con i contenitori:** Usa i nodi "
+"contenitore per scalare e posizionare automaticamente gli elementi dell'UI."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 #, fuzzy
@@ -11320,7 +11422,6 @@ msgstr ""
 "interfaccia."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
-#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -11332,12 +11433,12 @@ msgid ""
 msgstr ""
 "Seleziona il ``Background`` nel riquadro Scena. Nell'inspector, puoi vedere "
 "le proprietà ``Texture``. Nel riquadro File di Sistema clicca e trascina "
-"``label_HP_bg.png`` nello slot ``Texture`. Sembra deformato. Il "
+"``label_HP_bg.png`` nello slot ``Texture``. Sembra deformato. Il "
 "MarginContainer genitore imposterà la dimensione a 0 finché non impostiamo "
 "la dimensione minima all'interno del contenitore. Seleziona il nodo "
 "``Background``. Nell'inspecto, scorri fino alla sezione Rect. Imposta ``Min "
-"Size`` in (100, 40). Puoi vedere che il ``Background` si regolerà con i suoi "
-"contenitori genitori."
+"Size`` in (100, 40). Puoi vedere che il ``Background`` si regolerà con i "
+"suoi contenitori genitori."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
 msgid ""
@@ -11398,6 +11499,7 @@ msgstr ""
 "controllo al Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
+#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -11410,6 +11512,16 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
+"Seleziona il ``Titolo`` e nell'Ispettore cambia la sua proprietà ``Modalità "
+"di stiramento`` a ``Mantieni centrato``. Poi trova la categoria ``Rect``` "
+"nell'Ispettore e cambia la proprietà ``Size`` a (50, 40) in modo che occupi "
+"solo la metà sinistra dello sfondo.  Poi, seleziona il nodo ``Number``. "
+"Nella finestra, clicca sul menu ``Layout`` e clicca su ``Full Rect``. Il "
+"nodo si ridimensionerà per adattarsi allo ``Sfondo``. Vai nell'Ispettore e "
+"cambia la sua proprietà ``Align`` in ``Right``, e la proprietà ``Valign`` in "
+"``Center``. Il testo dovrebbe scattare al centro del bordo destro dello "
+"``Sfondo``. Ridimensiona il nodo orizzontalmente, in modo che prenda la metà "
+"destra dello ``Sfondo`` e ci sia un po' di imbottitura con il bordo destro."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
@@ -12023,9 +12135,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
-#, fuzzy
 msgid "Intro"
-msgstr "Intro"
+msgstr "Introduzione"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
@@ -13912,7 +14023,7 @@ msgstr "Manuale dell'editor"
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
 #, fuzzy
 msgid "Using the Web editor"
-msgstr "Editor di temi integrato."
+msgstr "Utilizzo dell'editor Web"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""
@@ -14107,7 +14218,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:107
 #, fuzzy
 msgid "Where are my project files?"
-msgstr "Files del progetto"
+msgstr "Dove sono i miei file di progetto?"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:109
 msgid ""
@@ -16729,7 +16840,7 @@ msgstr "``script_text_editor/goto_function``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
-msgstr "Vai alla Linea"
+msgstr "Vai alla linea"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
@@ -16819,7 +16930,7 @@ msgstr "``script_text_editor/contextual_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
 msgid "Script Editor"
-msgstr "Editor script"
+msgstr "Editor degli script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
@@ -16986,7 +17097,7 @@ msgstr "``script_editor/run_file``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
-msgstr "Toggle Pannello Script"
+msgstr "Commuta il pannello degli script"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
@@ -17010,7 +17121,7 @@ msgstr "``script_editor/zoom_out``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
-msgstr "Reimposta ingrandimento"
+msgstr "Reimposta l'ingrandimento"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
@@ -17132,6 +17243,7 @@ msgid "``editor/copy_output``"
 msgstr "``editor/copy_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
+#, fuzzy
 msgid "Clear Output"
 msgstr "Svuota output"
 
@@ -17218,7 +17330,7 @@ msgstr "``file_dialog/refresh``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
-msgstr "Mostra/nascondi file nascosti"
+msgstr "Commuta la visibilità dei file nascosti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
@@ -17234,7 +17346,7 @@ msgstr "``file_dialog/toggle_hidden_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
-msgstr "Attiva/disattiva preferito"
+msgstr "Commuta preferito"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
@@ -17242,7 +17354,7 @@ msgstr "``file_dialog/toggle_favorite``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
-msgstr "Commuta Modalità"
+msgstr "Commuta la modalità"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
@@ -17254,7 +17366,7 @@ msgstr "``file_dialog/toggle_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
-msgstr "Crea cartella"
+msgstr "Crea una cartella"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
@@ -17279,6 +17391,7 @@ msgid "``file_dialog/delete``"
 msgstr "``file_dialog/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
+#, fuzzy
 msgid "Focus Path"
 msgstr "Metti a fuoco il percorso"
 
@@ -17295,7 +17408,7 @@ msgstr "``file_dialog/focus_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
-msgstr "Sposta preferito in su"
+msgstr "Sposta il preferito su"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
@@ -17313,7 +17426,7 @@ msgstr "``file_dialog/move_favorite_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
-msgstr "Sposta preferito in giù"
+msgstr "Sposta il preferito giù"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
@@ -17330,12 +17443,13 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr "``file_dialog/move_favorite_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
+#, fuzzy
 msgid "FileSystem Dock"
-msgstr "Riquadro FileSystem"
+msgstr "Riquadro del FileSystem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
-msgstr "Copia percorso"
+msgstr "Copia il percorso"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
@@ -17435,7 +17549,7 @@ msgstr "``animation_editor/duplicate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
-msgstr "Duplica Trasposto"
+msgstr "Duplica trasposto"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
@@ -17459,7 +17573,7 @@ msgstr "``animation_editor/delete_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
-msgstr "Vai allo Step Successivo"
+msgstr "Vai al passo successivo"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
@@ -17475,7 +17589,7 @@ msgstr "``animation_editor/goto_next_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
-msgstr "Vai allo Step Precedente"
+msgstr "Vai al passo precedente"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
@@ -18836,18 +18950,16 @@ msgid "**Description**"
 msgstr "**Descrizione**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
-#, fuzzy
 msgid "``x[index]``"
-msgstr "``x[indice]``"
+msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "Subscription (highest priority)"
 msgstr "Accesso ad un valore (priorità massima)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
-#, fuzzy
 msgid "``x.attribute``"
-msgstr "``x.attributo``"
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "Attribute reference"
@@ -19027,12 +19139,10 @@ msgid "Assignment (lowest priority)"
 msgstr "Assegnazione (priorità più bassa)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
-#, fuzzy
 msgid "Literals"
 msgstr "Letterali"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
-#, fuzzy
 msgid "**Literal**"
 msgstr "**Letterale**"
 
@@ -19047,7 +19157,6 @@ msgid "``45``"
 msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
-#, fuzzy
 msgid "Base 10 integer"
 msgstr "Numero intero in base 10"
 
@@ -23158,7 +23267,6 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 #: ../../docs/development/file_formats/tscn.rst:29
-#, fuzzy
 msgid "Connections"
 msgstr "Connessioni"
 
@@ -23885,7 +23993,6 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:257
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:304
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
-#, fuzzy
 msgid "Example:"
 msgstr "Esempio:"
 
@@ -24099,7 +24206,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
 #, fuzzy
 msgid "In Visual Studio Code:"
-msgstr "Visual Studio Code"
+msgstr "In Visual Studio Code:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:120
 msgid ""
@@ -26828,7 +26935,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:174
-#, fuzzy
 msgid "Process"
 msgstr "Processo"
 
@@ -27221,7 +27327,6 @@ msgid "ja"
 msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:78
-#, fuzzy
 msgid "GREET"
 msgstr "GREET"
 
@@ -27238,7 +27343,6 @@ msgid "こんにちは"
 msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:80
-#, fuzzy
 msgid "ASK"
 msgstr "ASK"
 
@@ -27255,7 +27359,6 @@ msgid "元気ですか"
 msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:82
-#, fuzzy
 msgid "BYE"
 msgstr "BYE"
 
@@ -35938,7 +36041,6 @@ msgid "Custom drawing in 2D"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
-#, fuzzy
 msgid "Why?"
 msgstr "Perché?"
 
@@ -49440,7 +49542,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:14
-#, fuzzy
 msgid "AudioStream"
 msgstr "AudioStream"
 
@@ -49462,7 +49563,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:27
-#, fuzzy
 msgid "AudioStreamPlayer"
 msgstr "AudioStreamPlayer"
 
@@ -49970,7 +50070,6 @@ msgid "Let's look at each of the properties in turn:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:113
-#, fuzzy
 msgid "collision_layer"
 msgstr "collision_layer"
 
@@ -49981,7 +50080,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:118
-#, fuzzy
 msgid "collision_mask"
 msgstr "collision_mask"
 
@@ -55803,7 +55901,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:4
-#, fuzzy
 msgid "InputEvent"
 msgstr "InputEvent"
 
@@ -55971,7 +56068,6 @@ msgid ":ref:`InputEvent <class_InputEvent>`"
 msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
-#, fuzzy
 msgid "NONE"
 msgstr "NONE"
 
@@ -55984,7 +56080,6 @@ msgid ":ref:`InputEventKey <class_InputEventKey>`"
 msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
-#, fuzzy
 msgid "KEY"
 msgstr "KEY"
 
@@ -55997,7 +56092,6 @@ msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
-#, fuzzy
 msgid "MOUSE_BUTTON"
 msgstr "MOUSE_BUTTON"
 
@@ -56010,7 +56104,6 @@ msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
-#, fuzzy
 msgid "MOUSE_MOTION"
 msgstr "MOUSE_MOTION"
 
@@ -56024,7 +56117,6 @@ msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
-#, fuzzy
 msgid "JOYSTICK_MOTION"
 msgstr "JOYSTICK_MOTION"
 
@@ -56037,7 +56129,6 @@ msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
-#, fuzzy
 msgid "JOYSTICK_BUTTON"
 msgstr "JOYSTICK_BUTTON"
 
@@ -56050,7 +56141,6 @@ msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
-#, fuzzy
 msgid "SCREEN_TOUCH"
 msgstr "SCREEN_TOUCH"
 
@@ -56065,7 +56155,6 @@ msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
-#, fuzzy
 msgid "SCREEN_DRAG"
 msgstr "SCREEN_DRAG"
 
@@ -56079,7 +56168,6 @@ msgid ":ref:`InputEventAction <class_InputEventAction>`"
 msgstr ":ref:`InputEventAction <class_InputEventAction>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
-#, fuzzy
 msgid "SCREEN_ACTION"
 msgstr "SCREEN_ACTION"
 
@@ -56134,7 +56222,6 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:203
 #: ../../docs/tutorials/inputs/input_examples.rst:149
-#, fuzzy
 msgid "InputMap"
 msgstr "InputMap"
 
@@ -56521,7 +56608,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/io/index.rst:2
-#, fuzzy
 msgid "I/O"
 msgstr "I/O"
 
@@ -56542,7 +56628,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:15
-#, fuzzy
 msgid "ResourceInteractiveLoader"
 msgstr "ResourceInteractiveLoader"
 
@@ -57155,7 +57240,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:78
-#, fuzzy
 msgid "TranslationServer"
 msgstr "TranslationServer"
 
@@ -59583,7 +59667,6 @@ msgid "pr"
 msgstr "pr"
 
 #: ../../docs/tutorials/i18n/locales.rst:540
-#, fuzzy
 msgid "Pirate"
 msgstr "Pirata"
 
@@ -63342,7 +63425,6 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:25
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:550
-#, fuzzy
 msgid "**bool**"
 msgstr "**bool**"
 
@@ -63351,7 +63433,6 @@ msgid "Boolean datatype, can only contain ``true`` or ``false``."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:27
-#, fuzzy
 msgid "**bvec2**"
 msgstr "**bvec2**"
 
@@ -63360,7 +63441,6 @@ msgid "Two-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:29
-#, fuzzy
 msgid "**bvec3**"
 msgstr "**bvec3**"
 
@@ -63369,7 +63449,6 @@ msgid "Three-component vector of booleans."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:31
-#, fuzzy
 msgid "**bvec4**"
 msgstr "**bvec4**"
 
@@ -63388,7 +63467,6 @@ msgid "Signed scalar integer."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:35
-#, fuzzy
 msgid "**ivec2**"
 msgstr "**ivec2**"
 
@@ -63397,7 +63475,6 @@ msgid "Two-component vector of signed integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:37
-#, fuzzy
 msgid "**ivec3**"
 msgstr "**ivec3**"
 
@@ -63406,7 +63483,6 @@ msgid "Three-component vector of signed integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:39
-#, fuzzy
 msgid "**ivec4**"
 msgstr "**ivec4**"
 
@@ -63424,7 +63500,6 @@ msgid "Unsigned scalar integer; can't contain negative numbers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:43
-#, fuzzy
 msgid "**uvec2**"
 msgstr "**uvec2**"
 
@@ -63433,7 +63508,6 @@ msgid "Two-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:45
-#, fuzzy
 msgid "**uvec3**"
 msgstr "**uvec3**"
 
@@ -63442,7 +63516,6 @@ msgid "Three-component vector of unsigned integers."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:47
-#, fuzzy
 msgid "**uvec4**"
 msgstr "**uvec4**"
 
@@ -63462,7 +63535,6 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:51
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:556
-#, fuzzy
 msgid "**vec2**"
 msgstr "**vec2**"
 
@@ -63472,7 +63544,6 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:53
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:558
-#, fuzzy
 msgid "**vec3**"
 msgstr "**vec3**"
 
@@ -63483,7 +63554,6 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:55
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:527
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:560
-#, fuzzy
 msgid "**vec4**"
 msgstr "**vec4**"
 
@@ -63492,7 +63562,6 @@ msgid "Four-component vector of floating-point values."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:57
-#, fuzzy
 msgid "**mat2**"
 msgstr "**mat2**"
 
@@ -63501,7 +63570,6 @@ msgid "2x2 matrix, in column major order."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:59
-#, fuzzy
 msgid "**mat3**"
 msgstr "**mat3**"
 
@@ -63512,7 +63580,6 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:61
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:562
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:564
-#, fuzzy
 msgid "**mat4**"
 msgstr "**mat4**"
 
@@ -68712,7 +68779,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:137
-#, fuzzy
 msgid "DEPTH_TEXTURE"
 msgstr "DEPTH_TEXTURE"
 
@@ -69932,7 +69998,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
-#, fuzzy
 msgid "RPC"
 msgstr "RPC"
 
@@ -70822,6 +70887,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/index.rst:2
+#, fuzzy
 msgid "Asset Library"
 msgstr "Libreria degli asset"
 
@@ -71419,7 +71485,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
-#, fuzzy
 msgid "**Version**:"
 msgstr "**Versione**:"
 
@@ -71494,7 +71559,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
-#, fuzzy
 msgid "**License**:"
 msgstr "**Licenza**:"
 
@@ -71507,7 +71571,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
-#, fuzzy
 msgid "**Description**:"
 msgstr "**Descrizione**:"
 
@@ -78572,8 +78635,7 @@ msgid ""
 "The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
 "Godot iOS plugins."
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"I `Plugin iOS di Godot <https://github.com/godotengine/godot-ios-plugins>`_."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:44
 msgid ""
@@ -78585,7 +78647,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:47
 #, fuzzy
 msgid "To build an iOS plugin:"
-msgstr "Creazione di plugin Android"
+msgstr "Per creare un plug-in iOS:"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:49
 msgid "Create an Objective-C static library for your plugin inside Xcode."
@@ -78829,8 +78891,8 @@ msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"Implementato in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
+"godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
 msgid ""
@@ -78955,8 +79017,8 @@ msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
-"master/scene/audio/audio_player.cpp>`__"
+"Implementato in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
+"godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
 msgid ""
@@ -79350,7 +79412,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:109
 #, fuzzy
 msgid "The file to preload."
-msgstr "Il risultato finale"
+msgstr "Il file da precaricare."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
 msgid "If a ``string`` the file will be loaded from that path."
@@ -79441,7 +79503,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
 #, fuzzy
 msgid "The content of the file."
-msgstr "La complessità del problema"
+msgstr "Il contenuto del file."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:172
 #, fuzzy
@@ -79466,9 +79528,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
-msgstr "Proprietà."
+msgstr "Proprietà"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -84338,37 +84399,30 @@ msgid "integer"
 msgstr "numero intero"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
-#, fuzzy
 msgid "vector2"
 msgstr "vector2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
-#, fuzzy
 msgid "rect2"
 msgstr "rect2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
-#, fuzzy
 msgid "vector3"
 msgstr "vector3"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
-#, fuzzy
 msgid "transform2d"
 msgstr "transform2d"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
-#, fuzzy
 msgid "plane"
 msgstr "plane"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
-#, fuzzy
 msgid "quat"
 msgstr "quat"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
-#, fuzzy
 msgid "aabb"
 msgstr "aabb"
 
@@ -84386,7 +84440,6 @@ msgid "12"
 msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
-#, fuzzy
 msgid "basis"
 msgstr "basis"
 
@@ -84395,7 +84448,6 @@ msgid "13"
 msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
-#, fuzzy
 msgid "transform"
 msgstr "transform"
 
@@ -84404,9 +84456,8 @@ msgid "14"
 msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
-#, fuzzy
 msgid "color"
-msgstr "color"
+msgstr "colore"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
@@ -84430,7 +84481,6 @@ msgid "16"
 msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
-#, fuzzy
 msgid "rid"
 msgstr "rid"
 
@@ -84439,7 +84489,6 @@ msgid "17"
 msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
-#, fuzzy
 msgid "object"
 msgstr "object"
 
@@ -84724,7 +84773,6 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:325
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:348
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:434
-#, fuzzy
 msgid "X"
 msgstr "X"
 
@@ -87135,7 +87183,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
-#, fuzzy
 msgid "Bits"
 msgstr "Bits"
 
@@ -91316,7 +91363,6 @@ msgstr ""
 "node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:225
-#, fuzzy
 msgid "RID"
 msgstr "RID"
 
@@ -92909,7 +92955,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:466
-#, fuzzy
 msgid "MessageQueue"
 msgstr "MessageQueue"
 
@@ -93561,7 +93606,6 @@ msgid "Here's an example of a skeleton node with two bones:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:205
-#, fuzzy
 msgid "BoneAttachment"
 msgstr "BoneAttachment"
 
@@ -93578,7 +93622,6 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:237
-#, fuzzy
 msgid "AnimationPlayer"
 msgstr "AnimationPlayer"
 
@@ -93851,7 +93894,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/index.rst:2
-#, fuzzy
 msgid "Contributing"
 msgstr "Contribuire"
 
@@ -95495,7 +95537,6 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:60
 #: ../../docs/community/contributing/code_style_guidelines.rst:261
-#, fuzzy
 msgid "Installation"
 msgstr "Installazione"
 
@@ -95672,7 +95713,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:238
-#, fuzzy
 msgid "Java"
 msgstr "Java"
 
@@ -95685,7 +95725,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:246
-#, fuzzy
 msgid "Python"
 msgstr "Python"
 
@@ -95815,7 +95854,7 @@ msgstr ""
 #: ../../docs/community/contributing/code_style_guidelines.rst:329
 #, fuzzy
 msgid "**Bad:**"
-msgstr "**Male**:"
+msgstr "**Male:**"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:336
 msgid ""
@@ -97267,32 +97306,26 @@ msgid "Our job is to add the missing text between these marks:"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:180
-#, fuzzy
 msgid "<description></description>"
 msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:181
-#, fuzzy
 msgid "<brief_description></brief_description>"
 msgstr "<brief_description></brief_description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:182
-#, fuzzy
 msgid "<constant></constant>"
 msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:183
-#, fuzzy
 msgid "<method></method>"
 msgstr "<method></method>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:184
-#, fuzzy
 msgid "<member></member>"
 msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:185
-#, fuzzy
 msgid "<signal></signal>"
 msgstr "<signal></signal>"
 
@@ -97452,7 +97485,6 @@ msgid "[b] [/b]"
 msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
-#, fuzzy
 msgid "Bold"
 msgstr "Grassetto"
 
@@ -97470,7 +97502,6 @@ msgid "[i] [/i]"
 msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
-#, fuzzy
 msgid "Italic"
 msgstr "Corsivo"
 
@@ -97518,7 +97549,6 @@ msgid "Some :kbd:`Ctrl + C` key."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
-#, fuzzy
 msgid "[codeblock] [/codeblock]"
 msgstr "[codeblock] [/codeblock]"
 

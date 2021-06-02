@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2021, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Jacque Fresco <aidter@use.startmail.com>, 2021.
 # Keviindran Ramachandran <keviinx@yahoo.com>, 2020-2021.
 # Muhammad Hazim bin Hafizalshah <muhammadhazimhafizalshah@gmail.com>, 2020.
 # Nafis Ibrahim <thepreciousnafis@gmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-01-12 08:24+0000\n"
-"Last-Translator: Keviindran Ramachandran <keviinx@yahoo.com>\n"
+"PO-Revision-Date: 2021-05-19 20:17+0000\n"
+"Last-Translator: Jacque Fresco <aidter@use.startmail.com>\n"
 "Language-Team: Malay <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/ms/>\n"
 "Language: ms\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.1-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -2349,7 +2350,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:362
 msgid "Import"
-msgstr "Import"
+msgstr "import"
 
 #: ../../docs/about/list_of_features.rst:364
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -5082,7 +5083,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:88
 msgid "Groups"
-msgstr ""
+msgstr "Kumpulan"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:90
 msgid ""
@@ -12384,7 +12385,6 @@ msgid "``editor/editor_help``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
-#, fuzzy
 msgid "Distraction Free Mode"
 msgstr "Mod Bebas Gangguan"
 
@@ -12401,7 +12401,6 @@ msgid "``editor/distraction_free_mode``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
-#, fuzzy
 msgid "Next tab"
 msgstr "Tab seterusnya"
 
@@ -12418,9 +12417,8 @@ msgid "``editor/next_tab``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
-#, fuzzy
 msgid "Previous tab"
-msgstr "Tab terdahulu"
+msgstr "Tab sebelumnya"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
@@ -13363,9 +13361,8 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
-#, fuzzy
 msgid "Insert Animation Key"
-msgstr "AnimationTree"
+msgstr "Masukkan Kunci Animasi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
@@ -13669,9 +13666,8 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
-#, fuzzy
 msgid "Find in Files"
-msgstr "Mencipta skrin menu utama"
+msgstr "Cari dalam Fail-fail"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -13843,7 +13839,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
-msgstr ""
+msgstr "Menilai Pemilihan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
@@ -13994,9 +13990,8 @@ msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
-#, fuzzy
 msgid "Go to Function"
-msgstr "Fungsi"
+msgstr "Pergi ke Fungsi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
@@ -14308,27 +14303,24 @@ msgid "``visual_script_editor/find_node_type``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
-#, fuzzy
 msgid "Copy Nodes"
-msgstr "Nod"
+msgstr "Salin Nod"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
-#, fuzzy
 msgid "Cut Nodes"
-msgstr "Nod"
+msgstr "Potong Nod"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
-#, fuzzy
 msgid "Paste Nodes"
-msgstr "Nod"
+msgstr "Tampal Nod"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
@@ -14361,9 +14353,8 @@ msgid "``visual_script_editor/delete_selected``"
 msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
-#, fuzzy
 msgid "Make Function"
-msgstr "Fungsi"
+msgstr "Buat Fungsi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
@@ -14614,7 +14605,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "Dok FileSystem"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "Copy Path"
@@ -14651,7 +14642,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
-msgstr ""
+msgstr "Namakan Semula Kumpulan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
@@ -14864,7 +14855,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "Clear Transform"
-msgstr ""
+msgstr "Kosongkan Transformasi"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
@@ -14885,7 +14876,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
-msgstr ""
+msgstr "Potong Pilihan"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
@@ -25722,9 +25713,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:119
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "Mencipta Kandungan"
+msgstr "Eksport semua sumber dalam projek"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
 msgid "Export selected scenes (and dependencies)"
@@ -29075,7 +29065,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "Khas utk Godot 3.1+ shj."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -31312,7 +31302,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:306
 msgid ""
@@ -45787,7 +45777,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "EQ6, EQ10, EQ21"
-msgstr ""
+msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid ""
@@ -46418,7 +46408,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
@@ -46794,7 +46784,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:327
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
@@ -60126,7 +60116,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (tertinggi)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "parenthetical grouping"
@@ -60139,7 +60129,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "unary"
@@ -60152,7 +60142,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 msgid "multiplicative"
@@ -60248,7 +60238,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 msgid "additive"
@@ -60261,7 +60251,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 msgid "bit-wise shift"
@@ -60274,7 +60264,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 msgid "relational"
@@ -60287,7 +60277,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 msgid "equality"
@@ -60314,7 +60304,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:325
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 msgid "bit-wise AND"
@@ -60327,7 +60317,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 msgid "bit-wise exclusive OR"
@@ -60340,7 +60330,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 msgid "bit-wise inclusive OR"
@@ -60353,7 +60343,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 msgid "logical AND"
@@ -60365,7 +60355,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (terendah)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "logical inclusive OR"
@@ -75477,9 +75467,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
-msgstr "Perbezaan"
+msgstr "Sifat-sifat"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
@@ -80255,12 +80244,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "integer"
@@ -80272,7 +80261,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "rect2"
-msgstr ""
+msgstr "rect2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "vector3"
@@ -80305,7 +80294,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "basis"
@@ -80313,7 +80302,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
@@ -80321,15 +80310,15 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
-msgstr ""
+msgstr "warna"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "node path"
@@ -80345,7 +80334,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
@@ -80353,7 +80342,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "object"
@@ -80361,7 +80350,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "dictionary"
@@ -80369,7 +80358,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
@@ -80381,7 +80370,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "raw array"
@@ -80389,7 +80378,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "int array"
@@ -80397,7 +80386,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "real array"
@@ -80405,7 +80394,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "string array"
@@ -80417,7 +80406,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "vector2 array"
@@ -80425,7 +80414,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "vector3 array"
@@ -80433,7 +80422,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "color array"
@@ -80441,7 +80430,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "max"

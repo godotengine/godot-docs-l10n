@@ -12,14 +12,19 @@
 # dzikroy 119 <dzikroy119@gmail.com>, 2020.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
+# fikrirozan <fikrirozanimadudin@gmail.com>, 2021.
+# Gamebel Developer <david.agung.satrio@gmail.com>, 2021.
 # Hanz <hanzhaxors@gmail.com>, 2021.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
+# Jacque Fresco <aidter@use.startmail.com>, 2021.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
+# Naufal Adriansyah <naufaladrn90@gmail.com>, 2021.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
 # Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2021.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
+# RIDHO NURUL ADILLA <ridhonuruladilla@gmail.com>, 2021.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2021.
 # triarts <agung.triarta.h@gmail.com>, 2019.
@@ -30,8 +35,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2021-03-31 15:34+0200\n"
-"PO-Revision-Date: 2021-03-29 15:41+0000\n"
-"Last-Translator: Hanz <hanzhaxors@gmail.com>\n"
+"PO-Revision-Date: 2021-05-26 05:32+0000\n"
+"Last-Translator: fikrirozan <fikrirozanimadudin@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -39,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6-dev\n"
+"X-Generator: Weblate 4.7-dev\n"
 
 #: ../../docs/index.rst:65
 msgid "General"
@@ -68,20 +73,18 @@ msgid "Class reference"
 msgstr "Referensi Kelas"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.3* branch"
-msgstr "Dokumentasi Godot – versi *3.2*"
+msgstr "Dokumentasi Godot – versi *3.3*"
 
 #: ../../docs/index.rst:6
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
-"Dokumentasi Godot tersedia dalam berbagai bahasa dan versi. Buka panel "
-"\"Baca Dokumentasi\" di bawah sidebar untuk melihat daftarnya."
+"Dokumentasi Godot tersedia dalam berbagai bahasa dan versi. Perluas panel "
+"\"Baca Dokumentasi\" di bagian bawah sidebar untuk melihat daftar."
 
 #: ../../docs/index.rst:10
-#, fuzzy
 msgid ""
 "This is the documentation for the stable 3.3 branch. Looking for the "
 "documentation of the current **development** branch? `Have a look here "
@@ -89,7 +92,7 @@ msgid ""
 "documentation for the previous stable `3.2 <https://docs.godotengine.org/"
 "en/3.2>`_ branch."
 msgstr ""
-"Ini adalah dokumentasi untuk versi stabil 3.2. Ingin melihat dokumentasi "
+"Ini adalah dokumentasi untuk versi stabil 3.3. Ingin melihat dokumentasi "
 "dari versi **dalam pengembangan** saat ini? `Silakan menuju ke <https://docs."
 "godotengine.org/en/latest>`_. Anda juga bisa menelusuri dokumentasi untuk "
 "versi stabil `3.1 <https://docs.godotengine.org/en/3.1>`_ sebelumnya."
@@ -158,6 +161,10 @@ msgid ""
 "reading (updated every Monday). Extract the ZIP archive then open the top-"
 "level ``index.html`` in a web browser."
 msgstr ""
+"Anda juga dapat `mengunduh salinan HTML`<https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>` __ untuk "
+"membaca luring (diperbaharui setiap senin). Ekstrak arsip ZIP-nya dan buka "
+"level atas ``index.html`` dalam browser."
 
 #: ../../docs/index.rst:45
 msgid ""
@@ -175,7 +182,6 @@ msgstr ""
 "dokumentasi yang lebih baik dengan memberi tahu kami!"
 
 #: ../../docs/index.rst:52
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -555,8 +561,8 @@ msgstr "Pertanyaan yang sering diajukan (FAQ)"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
-"Apa yang dapat saya lakukan dengan Godot? Berapa jumlah yang harus saya "
-"keluarkan? Apa syarat dan ketentuannya?"
+"Apa yang dapat saya lakukan dengan Godot? Berapa biaya yang harus saya "
+"keluarkan? Apa persyaratan lisensinya?"
 
 #: ../../docs/about/faq.rst:12
 msgid ""
@@ -880,8 +886,9 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
-"Informasi lebih untuk membiasakan diri dengan GDScript atau bahasa dinamis "
-"yang lain bisa didapat di tutorial :ref:`doc_gdscript_more_efficiently`."
+"Informasi selengkapnya untuk membiasakan diri dengan GDScript atau bahasa "
+"dinamis (dynamically typed languages) dapat ditemukan di tutorial :ref:"
+"`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:127
 msgid "What were the motivations behind creating GDScript?"
@@ -1092,7 +1099,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "Mengapa Godot ingin menjaga fitur intinya tetap kecil?"
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1100,10 +1107,13 @@ msgid ""
 "ons unless they are used very often. One exemple of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot dengan sangaja tidak termasuk fitur yang bisa diimplementasikan oleh "
+"add-ons kecuali mereka digunakan sangat sering. Salah satu contohnya adalah "
+"fungsionalitas AI tingkat lanjut."
 
 #: ../../docs/about/faq.rst:211
 msgid "There are several reasons for this:"
-msgstr ""
+msgstr "Ada beberapa alasan untuk ini:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -1115,6 +1125,14 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"**Perawatan kode dan perbaikan untuk bugs.** Setiap kali kami menerima kode "
+"baru di repositori Godot, kontributor yang ada sering menggambil tanggung "
+"jawab untuk merawatnya. Beberapa kontributor tidak selalu menetap setelah "
+"kode mereka digabungkan, yang membuat kami sulit untuk merawat kode yang "
+"dipermasalahkan. Hal ini dapat menyebabkan fitur yang tidak dirawat dengan "
+"baik dengan bug yang tidak pernah diperbaiki. Selain itu, \"permukaan API\" "
+"yang perlu diuji dan diperiksa untuk regresi terus meningkat dari waktu ke "
+"waktu."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -1123,6 +1141,10 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**Kemudahan kontribusi.** Dengan menjaga basis kode tetap kecil dan rapi, "
+"basis kode dapat tetap cepat dan mudah untuk dikompilasi dari sumber. Ini "
+"memudahkan kontributor baru untuk memulai Godot, tanpa mengharuskan mereka "
+"membeli perangkat keras kelas atas."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -1131,6 +1153,11 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**Menjaga ukuran biner tetap kecil untuk editor.** Tidak semua orang "
+"memiliki koneksi internet yang cepat. Memastikan bahwa setiap orang dapat "
+"mengunduh editor Godot, mengekstraknya, dan menjalankannya dalam waktu "
+"kurang dari 5 menit membuat Godot lebih mudah diakses oleh pengembang di "
+"semua negara."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -1141,6 +1168,13 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**Menjaga ukuran biner tetap kecil untuk ekspor template.** Ini langsung "
+"berdapak pada ukuran dari proyek yang diekspor dengan Godot. Pada platform "
+"mobile dan web, menjaga ukuran beras tetap kecil adalah primordial untuk "
+"memastikan instalasi dan pemuatan tang cepat pada perangkat yang kekurangan "
+"daya. Lagi, ada banyak negara dimana kecepatan internet tidak ada. Selain "
+"itu, pembatasan penggunaan data yang ketat sering kali berlaku di negara-"
+"negara tersebut."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -1153,6 +1187,15 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"Untuk semua alasan di atas, kita harus selektif terhadap apa yang kita "
+"terima sebagai fungsionalitas inti dalam Godot. Inilah mengapa kita "
+"bertujuan untuk memindahkan beberapa fungsionalitas inti ke add-ons yang "
+"didukung secara resmi di Godot versi masa yang akan datang. Dalam hal ukuran "
+"biner, ini juga memiliki keuntungan membuat Anda hanya membayar untuk apa "
+"yang sebenarnya Anda gunakan dalam proyek Anda. (Sementara itu, Anda dapat: "
+"ref: `mengompilasi template ekspor khusus dengan fitur yang tidak digunakan "
+"dinonaktifkan <doc_optimizing_for_size>` untuk mengoptimalkan ukuran "
+"distribusi proyek Anda.)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1661,6 +1704,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"Lihat :ref:`doc_using_the_web_editor`untuk peringatan khusus untuk versi "
+"HTML5 editor Godot."
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -1775,24 +1820,33 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"Beberapa teks seperti \"NO DC\" muncul di sudut kiri atas pada manajer "
+"proyek dan penyunting window."
 
 #: ../../docs/about/troubleshooting.rst:60
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"Ini disebabkan oleh driver grafis NVIDIA menyuntikkan overlay untuk "
+"menampilkan informasi."
 
 #: ../../docs/about/troubleshooting.rst:62
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Untuk menonaktifkan overlay ini di Windows, kembalikan pengaturan driver "
+"grafis Anda ke nilai default di Panel Kontrol NVIDIA."
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Untuk menonaktifkan overlay ini di Linux, buka ``nvidia-settings``, pergi ke "
+"**X Screen 0 > OpenGL Settings** lalu hapus centang **Enable Graphics API "
+"Visual Indicator**."
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."
@@ -2878,7 +2932,7 @@ msgstr "Ogg Vorbis."
 
 #: ../../docs/about/list_of_features.rst:373
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:375
 msgid "*3D scenes:*"
@@ -3444,7 +3498,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:560
 msgid "Command line interface for automation."
-msgstr ""
+msgstr "Command line interface untuk otomatisasi."
 
 #: ../../docs/about/list_of_features.rst:562
 msgid "Export and deploy projects using continuous integration platforms."
@@ -3503,11 +3557,15 @@ msgstr ""
 "<doc_ways_to_contribute>`."
 
 #: ../../docs/about/list_of_features.rst:583
+#, fuzzy
 msgid ""
 "The `roadmap <https://github.com/godotengine/godot-roadmap>`__ repository "
 "documents features that have been agreed upon and may be implemented in "
 "future Godot releases."
 msgstr ""
+"The `peta jalan <https://github.com/godotengine/godot-roadmap>`__ fitur "
+"dokumen repositori yang telah disepakati dan dapat diterapkan di rilis Godot "
+"mendatang."
 
 #: ../../docs/about/docs_changelog.rst:4
 msgid "Documentation changelog"
@@ -3967,7 +4025,7 @@ msgstr ":ref:`doc_binding_to_external_libraries`"
 
 #: ../../docs/about/release_policy.rst:4
 msgid "Godot release policy"
-msgstr ""
+msgstr "Kebijakan rilis Godot"
 
 #: ../../docs/about/release_policy.rst:6
 msgid ""
@@ -3976,6 +4034,10 @@ msgid ""
 "happen depends on the choices of core contributors, and the needs of the "
 "community at a given time."
 msgstr ""
+"Kebijakan rilis Godot terus berkembang. Apa yang diuraikan di bawah ini "
+"dimaksudkan untuk memberikan gambaran umum tentang apa yang diharapkan, "
+"tetapi apa yang sebenarnya akan terjadi bergantung pada pilihan kontributor "
+"inti, dan kebutuhan komunitas pada waktu tertentu."
 
 #: ../../docs/about/release_policy.rst:12
 msgid "Godot versioning"
@@ -4098,7 +4160,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:90
 msgid "Godot 4.0"
-msgstr ""
+msgstr "Godot 4.0"
 
 #: ../../docs/about/release_policy.rst:90
 msgid "~2021 (see below)"
@@ -4110,7 +4172,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:92
 msgid "Godot 3.3"
-msgstr ""
+msgstr "Godot 3.3"
 
 #: ../../docs/about/release_policy.rst:92
 msgid "March/April 2021"
@@ -4124,11 +4186,11 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:95
 msgid "Godot 3.2"
-msgstr ""
+msgstr "Godot 3.2"
 
 #: ../../docs/about/release_policy.rst:95
 msgid "January 2020"
-msgstr ""
+msgstr "Januari 2020"
 
 #: ../../docs/about/release_policy.rst:95
 msgid ""
@@ -4138,7 +4200,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:98
 msgid "Godot 3.1"
-msgstr ""
+msgstr "Godot 3.1"
 
 #: ../../docs/about/release_policy.rst:98
 msgid "March 2019"
@@ -4152,7 +4214,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:101
 msgid "Godot 3.0"
-msgstr ""
+msgstr "Godot 3.0"
 
 #: ../../docs/about/release_policy.rst:101
 msgid "January 2018"
@@ -4164,7 +4226,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:103
 msgid "Godot 2.1"
-msgstr ""
+msgstr "Godot 2.1"
 
 #: ../../docs/about/release_policy.rst:103
 msgid "July 2016"
@@ -4178,7 +4240,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:106
 msgid "Godot 2.0"
-msgstr ""
+msgstr "Godot 2.0"
 
 #: ../../docs/about/release_policy.rst:106
 msgid "February 2016"
@@ -4190,7 +4252,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:108
 msgid "Godot 1.1"
-msgstr ""
+msgstr "Godot 1.1"
 
 #: ../../docs/about/release_policy.rst:108
 msgid "May 2015"
@@ -4203,7 +4265,7 @@ msgstr ""
 
 #: ../../docs/about/release_policy.rst:110
 msgid "Godot 1.0"
-msgstr ""
+msgstr "Godot 1.0"
 
 #: ../../docs/about/release_policy.rst:110
 msgid "December 2014"
@@ -6281,7 +6343,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:422
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "Dlm Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:424
 msgid ""
@@ -13345,15 +13407,15 @@ msgstr "Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`F1`"
-msgstr ""
+msgstr ":kbd:`F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 #, fuzzy
@@ -13362,15 +13424,15 @@ msgstr "Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`F2`"
-msgstr ""
+msgstr ":kbd:`F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
@@ -13380,11 +13442,11 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid ":kbd:`F3`"
-msgstr ""
+msgstr ":kbd:`F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
@@ -13396,7 +13458,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Shift + F1`"
-msgstr ""
+msgstr ":kbd:`Shift + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid ":kbd:`Alt + Space`"
@@ -13412,7 +13474,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Cmd + Ctrl + D`"
@@ -13691,11 +13753,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Cmd + F12`"
-msgstr ""
+msgstr ":kbd:`Cmd + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "``editor/take_screenshot``"
@@ -13707,7 +13769,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Cmd + Ctrl + F`"
@@ -13724,7 +13786,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid ":kbd:`F5`"
-msgstr ""
+msgstr ":kbd:`F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
@@ -13741,7 +13803,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
-msgstr ""
+msgstr ":kbd:`F7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`Cmd + Ctrl + Y`"
@@ -13757,7 +13819,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
-msgstr ""
+msgstr ":kbd:`F8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
@@ -13775,7 +13837,7 @@ msgstr "Scene"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
-msgstr ""
+msgstr ":kbd:`F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
@@ -13792,7 +13854,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
@@ -13810,7 +13872,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
-msgstr ""
+msgstr ":kbd:`Shift + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "``editor/bottom_panel_expand``"
@@ -13865,12 +13927,12 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Ctrl + 0`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Cmd + 0`"
-msgstr ""
+msgstr ":kbd:`Cmd + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "``canvas_item_editor/zoom_reset``"
@@ -14298,7 +14360,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
-msgstr ""
+msgstr ":kbd:`Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "``spatial_editor/top_view``"
@@ -14310,7 +14372,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "``spatial_editor/bottom_view``"
@@ -14322,7 +14384,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
-msgstr ""
+msgstr ":kbd:`Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "``spatial_editor/front_view``"
@@ -14334,7 +14396,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "``spatial_editor/rear_view``"
@@ -14346,7 +14408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
-msgstr ""
+msgstr ":kbd:`Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "``spatial_editor/right_view``"
@@ -14358,7 +14420,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "``spatial_editor/left_view``"
@@ -14370,7 +14432,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
-msgstr ""
+msgstr ":kbd:`Num 5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "``spatial_editor/switch_perspective_orthogonal``"
@@ -14449,11 +14511,11 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Cmd + 1`"
-msgstr ""
+msgstr ":kbd:`Cmd + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "``spatial_editor/1_viewport``"
@@ -14466,7 +14528,7 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Cmd + 2`"
@@ -14483,7 +14545,7 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Cmd + Alt + 2`"
@@ -14500,7 +14562,7 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Cmd + 3`"
@@ -14517,7 +14579,7 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Cmd + Alt + 3`"
@@ -14534,11 +14596,11 @@ msgstr "Viewports"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Cmd + 4`"
-msgstr ""
+msgstr ":kbd:`Cmd + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "``spatial_editor/4_viewports``"
@@ -14676,7 +14738,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid ":kbd:`Shift + F3`"
-msgstr ""
+msgstr ":kbd:`Shift + F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid ":kbd:`Cmd + Shift + G`"
@@ -14898,7 +14960,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
-msgstr ""
+msgstr ":kbd:`Shift + F4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "``script_text_editor/convert_to_uppercase``"
@@ -14910,7 +14972,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "``script_text_editor/convert_to_lowercase``"
@@ -14922,7 +14984,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
-msgstr ""
+msgstr ":kbd:`Shift + F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "``script_text_editor/capitalize``"
@@ -15049,7 +15111,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid ":kbd:`F9`"
-msgstr ""
+msgstr ":kbd:`F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid "``script_text_editor/toggle_breakpoint``"
@@ -15061,7 +15123,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Cmd + Shift + F9`"
@@ -15105,7 +15167,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
-msgstr ""
+msgstr ":kbd:`Alt + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + Shift + Space`"
@@ -15455,7 +15517,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
-msgstr ""
+msgstr ":kbd:`F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "``debugger/step_into``"
@@ -15467,7 +15529,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
-msgstr ""
+msgstr ":kbd:`F10`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "``debugger/step_over``"
@@ -15479,7 +15541,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
-msgstr ""
+msgstr ":kbd:`F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "``debugger/continue``"
@@ -15679,7 +15741,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Ctrl + F2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Cmd + F2`"
@@ -15959,7 +16021,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
-msgstr ""
+msgstr ":kbd:`1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "``tileset_editor/editmode_region``"
@@ -15972,7 +16034,7 @@ msgstr "Collision Shapes Terlihat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
-msgstr ""
+msgstr ":kbd:`2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "``tileset_editor/editmode_collision``"
@@ -15984,7 +16046,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
-msgstr ""
+msgstr ":kbd:`3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "``tileset_editor/editmode_occlusion``"
@@ -15997,7 +16059,7 @@ msgstr "Navigasi Terlihat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
-msgstr ""
+msgstr ":kbd:`4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "``tileset_editor/editmode_navigation``"
@@ -16009,7 +16071,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
-msgstr ""
+msgstr ":kbd:`5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "``tileset_editor/editmode_bitmask``"
@@ -16021,7 +16083,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
-msgstr ""
+msgstr ":kbd:`6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "``tileset_editor/editmode_priority``"
@@ -16033,7 +16095,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
-msgstr ""
+msgstr ":kbd:`7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "``tileset_editor/editmode_icon``"
@@ -16045,7 +16107,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
-msgstr ""
+msgstr ":kbd:`8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "``tileset_editor/editmode_z_index``"
@@ -16675,7 +16737,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "Riwayat"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -16685,7 +16747,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid "Example of GDScript"
-msgstr ""
+msgstr "Contoh GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:27
 msgid ""
@@ -16699,11 +16761,15 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
+"Jika Anda mempunya pengalaman dengan yang diketik secara statis bahasa "
+"seperti C, C++ atau C# sebelumnya tetapi belum pernah menggunakan yang "
+"diketik secara dinamis sebelumnya, disarankan untuk membaca tutorial ini: :"
+"ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:115
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
-msgstr ""
+msgstr "Bahasa"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:117
 msgid ""
@@ -16711,10 +16777,13 @@ msgid ""
 "methods are available to arrays or other objects, should be looked up in the "
 "linked class descriptions."
 msgstr ""
+"Berikut ini, ikhtisar diberikan ke GDScript. Detail, seperti metode mana "
+"yang tersedia untuk array atau objek lain, harus dicari dalam deskripsi "
+"kelas terkait."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:122
 msgid "Identifiers"
-msgstr ""
+msgstr "Pengidentifikasi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:124
 msgid ""
@@ -16723,10 +16792,15 @@ msgid ""
 "identifier. Additionally, identifiers must not begin with a digit. "
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
+"String apa pun yang membatasi dirinya ke karakter alfabet (``a`` hingga "
+"``z`` dan ``A`` hingga ``Z ``), digit (``0`` hingga ``9``) dan ` `_`` "
+"memenuhi syarat sebagai pengenal. Selain itu, pengenal tidak boleh dimulai "
+"dengan digit. Pengidentifikasi peka huruf besar / kecil (``foo`` berbeda "
+"dari ``FOO``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Keywords"
-msgstr ""
+msgstr "Kata kunci"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
 msgid ""
@@ -16745,91 +16819,94 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:141
 msgid "Keyword"
-msgstr ""
+msgstr "Kata kunci"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 msgid "if"
-msgstr ""
+msgstr "if"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
 msgid "See `if/else/elif`_."
-msgstr ""
+msgstr "Lihat `if/else/elif` _."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:147
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid "for"
-msgstr ""
+msgstr "for"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:149
 msgid "See for_."
-msgstr ""
+msgstr "Lihat for_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:837
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:151
 msgid "See while_."
-msgstr ""
+msgstr "Lihat while_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:883
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:153
 msgid "See match_."
-msgstr ""
+msgstr "Lihat match_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:155
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
-msgstr ""
+msgstr "Keluar dari eksekusi loop ``for `` atau ``while `` saat ini."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:157
 msgid ""
 "Immediately skips to the next iteration of the ``for`` or ``while`` loop."
 msgstr ""
+"Langsung melompat ke iterasi berikutnya dari loop ``for`` atau ``while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid "pass"
-msgstr ""
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:159
 msgid ""
 "Used where a statement is required syntactically but execution of code is "
 "undesired, e.g. in empty functions."
 msgstr ""
+"Digunakan di mana pernyataan diperlukan secara sintaksis tetapi eksekusi "
+"kode tidak diinginkan, mis. dalam fungsi kosong."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "return"
-msgstr ""
+msgstr "return"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:161
 msgid "Returns a value from a function."
-msgstr ""
+msgstr "mengembalikan nilai dari sebuah fungsi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -16845,16 +16922,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
-msgstr ""
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "Defines what class to extend with the current class."
-msgstr ""
+msgstr "Mendefinisikan class apa yang akan diperluas dengan class saat ini."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 #: ../../docs/tutorials/i18n/locales.rst:364
 msgid "is"
-msgstr ""
+msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:169
 msgid ""
@@ -16880,95 +16957,99 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "tool"
-msgstr ""
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:175
 msgid "Executes the script in the editor."
-msgstr ""
+msgstr "Jalankan skrip di editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:177
 msgid "Defines a signal."
-msgstr ""
+msgstr "Mendefinisikan sinyal."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:179
 msgid "Defines a function."
-msgstr ""
+msgstr "Mendefinisikan fungsi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
 msgid "Defines a static function. Static member variables are not allowed."
-msgstr ""
+msgstr "Mendefinisikan fungsi, Variabel anggota statis tidak diperbolehkan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:183
 msgid "Defines a constant."
-msgstr ""
+msgstr "Mendefinisikan konstanta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:185
 msgid "Defines an enum."
-msgstr ""
+msgstr "Mendefinikan enumerasi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
 msgid "var"
-msgstr ""
+msgstr "var"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:187
 msgid "Defines a variable."
-msgstr ""
+msgstr "Mendefinikan variabel."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
 msgid "onready"
-msgstr ""
+msgstr "onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:189
 msgid ""
 "Initializes a variable once the Node the script is attached to and its "
 "children are part of the scene tree."
 msgstr ""
+"Menginisialisasi variabel setelah Node tempat skrip dilampirkan dan "
+"turunannya merupakan bagian dari pohon scene."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid "export"
-msgstr ""
+msgstr "export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:191
 msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
+"Menyimpan variabel bersama dengan sumber daya yang dilampirkan dan "
+"membuatnya terlihat dan dapat dimodifikasi di editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
 msgid "setget"
-msgstr ""
+msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
 msgid "Defines setter and getter functions for a variable."
-msgstr ""
+msgstr "Mendefinisikan fungsi penyetel dan pengambil untuk variabel."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
 msgid "breakpoint"
-msgstr ""
+msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
 msgid "Editor helper for debugger breakpoints."
-msgstr ""
+msgstr "Pembantu Editor untuk breakpoint debugger"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:197
 msgid "preload"
@@ -17067,7 +17148,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Operator"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -17075,16 +17156,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "**Operator**"
-msgstr ""
+msgstr "**Operator**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
-msgstr ""
+msgstr "**Deskriptsi**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[indeks]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "Subscription (highest priority)"
@@ -17092,7 +17173,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
 msgid "Attribute reference"
@@ -17108,7 +17189,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "Instance type checker"
@@ -17116,15 +17197,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "``~``"
-msgstr ""
+msgstr "``~``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "Bitwise NOT"
-msgstr ""
+msgstr "Bitwise NOT"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "Negative / Unary negation"
@@ -17132,11 +17213,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "``*`` ``/`` ``%``"
-msgstr ""
+msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "Multiplication / Division / Remainder"
-msgstr ""
+msgstr "Perkalian / Pembagian / Sisa"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:246
 msgid ""
@@ -17148,7 +17229,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:252
 msgid "Addition / Concatenation of arrays"
@@ -17157,7 +17238,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:254
 #, fuzzy
@@ -17166,7 +17247,7 @@ msgstr "Pengantar"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:256
 msgid "Bit shifting"
@@ -17174,39 +17255,39 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:258
 msgid "Bitwise AND"
-msgstr ""
+msgstr "Bitwise AND"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "Bitwise XOR"
-msgstr ""
+msgstr "Bitwise XOR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "Bitwise OR"
-msgstr ""
+msgstr "Bitwise OR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr ""
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "Comparisons"
-msgstr ""
+msgstr "Perbandingan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Content test"
@@ -17214,35 +17295,35 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "Boolean NOT"
-msgstr ""
+msgstr "Boolean NOT"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "Boolean AND"
-msgstr ""
+msgstr "Boolean AND"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "Boolean OR"
-msgstr ""
+msgstr "Boolean OR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:274
 msgid "Ternary if/else"
-msgstr ""
+msgstr "Terner if/else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "``as``"
@@ -17255,7 +17336,7 @@ msgstr "Menguji"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "Assignment (lowest priority)"
@@ -17263,29 +17344,29 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "Literals"
-msgstr ""
+msgstr "Literal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "**Literal**"
-msgstr ""
+msgstr "**Literal**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "**Type**"
-msgstr ""
+msgstr "**Jenis**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "Base 10 integer"
-msgstr ""
+msgstr "Bilangan bulat 10 dasar"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``0x8f51``"
-msgstr ""
+msgstr "``0x8f51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Base 16 (hexadecimal) integer"
@@ -17293,7 +17374,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``0b101010``"
-msgstr ""
+msgstr "``0b101010``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Base 2 (binary) integer"
@@ -17301,7 +17382,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "Floating-point number (real)"
@@ -17309,11 +17390,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"Hello\"``, ``\"Hai\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Strings"
-msgstr ""
+msgstr "String"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "``\"\"\"Hello\"\"\"``"
@@ -17321,11 +17402,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Multiline string"
-msgstr ""
+msgstr "String multi baris"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid ":ref:`class_NodePath` or StringName"
@@ -17347,17 +17428,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "Comments"
-msgstr ""
+msgstr "Komentar"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr ""
+"Apa pun yang diawali ``#`` sampai akhir barus akan diabaikan dan dianggap "
+"sebagai komentar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:325
 msgid "Built-in types"
-msgstr ""
+msgstr "Tipe bawaan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
 msgid ""
@@ -17370,22 +17453,24 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:334
 msgid "Basic built-in types"
-msgstr ""
+msgstr "Tipe data bawaan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:336
 msgid "A variable in GDScript can be assigned to several built-in types."
-msgstr ""
+msgstr "Variabel di GDScript dapat ditetapkan ke beberapa tipe bawaan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
 msgstr ""
+"``null`` adalah sebuah tipe data kosong yang tidak berisi informasi dan "
+"tidak bisa diisi nilai lain apa pun."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:345
 msgid ":ref:`bool <class_bool>`"
@@ -17420,7 +17505,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:364
 msgid ":ref:`String <class_String>`"
-msgstr ""
+msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
 msgid ""
@@ -17530,11 +17615,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:399
 msgid "Vector built-in types"
-msgstr ""
+msgstr "Tipe data Vektor bawaan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ""
+msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ""
@@ -17544,7 +17629,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ""
+msgstr ":ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid ""
@@ -17554,17 +17639,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ""
+msgstr ":ref:`Vector3 <class_Vector3>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:416
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"Tipe Vektor 3D berisi ``x``, ``y`` dan ``z``. Ini juga bisa diakses sebagai "
+"array."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:420
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ""
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:422
 msgid "3×2 matrix used for 2D transforms."
@@ -17572,27 +17659,31 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:425
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ""
+msgstr ":ref:`Bidang <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"Tipe Bidang 3D dalam bentuk normalisasi yang berisi bidang vektor ``normal`` "
+"dan jarak skalar ``d``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:431
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ""
+msgstr ":ref:`Quat <class_Quat>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:433
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
+"Quaternion adalah tipe data yang digunakan untuk merepresentasikan rotasi "
+"3D. Ini berguna untuk interpolasi rotasi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ""
+msgstr ":ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:439
 msgid ""
@@ -17603,70 +17694,78 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:444
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ""
+msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
 msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"Matriks 3x3 digunakan untuk rotasi dan skala 3D. Itu berisi 3 bidang vektor "
+"(``x``, ``y`` dan ``z``) dan juga dapat diakses sebagai array dari vektor 3D."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:451
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ""
+msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"Transformasi 3D berisi ``basis`` bidang Basis dan bidang Vector3 ``origin/"
+"asal``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
 msgid "Engine built-in types"
-msgstr ""
+msgstr "Tipe data bawaan Engine"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`Color <class_Color>`"
-msgstr ""
+msgstr ":ref:`Warna <class_Color>"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
-msgstr ""
+msgstr "Tipe data warna (Color) berisi bidang ``r``, ``g``, ``b`` dan ``a``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:466
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ""
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:468
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
+"Path yang dikompilasi ke node yang digunakan terutama dalam sistem scene. "
+"Ini dapat dengan mudah ditetapkan ke dan dari String."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:472
 msgid ":ref:`RID <class_RID>`"
-msgstr ""
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:474
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"Resource ID (RID). Server menggunakan RID generik untuk mereferensikan data "
+"buram."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:477
 msgid ":ref:`Object <class_Object>`"
-msgstr ""
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:479
 msgid "Base class for anything that is not a built-in type."
-msgstr ""
+msgstr "Basis class untuk apa pun yang bukan tipe bawaan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:482
 msgid "Container built-in types"
-msgstr ""
+msgstr "Jenis wadah bawaan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`Array <class_Array>`"
-msgstr ""
+msgstr ":ref:`Array <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
 msgid ""
@@ -17690,44 +17789,55 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: Sebuah array dari bytes "
+"(Bilangan bulat dari 0 to 255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:509
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
 msgstr ""
+":ref:`PoolIntArray <class_PoolIntArray>`: Sebuah array dari bilangan bulat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
-msgstr ""
+msgstr ":ref:`PoolRealArray <class_PoolRealArray>`: Sebuah array dari pecahan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:511
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
 msgstr ""
+":ref:`PoolStringArray <class_PoolStringArray>`: Sebuah array dari string."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:512
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Sebuah array dari objek :"
+"ref:`Vector2 <class_Vector2>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:513
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Sebuah array dari objek :"
+"ref:`Vector3 <class_Vector3>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:514
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Sebuah array dari objek :ref:"
+"`Color (Warna) <class_Color>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:517
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ""
+msgstr ":ref:`Dictionary <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:519
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
+"Wadah asaosiatif yang berisi nilai yang direferensikan oleh kunci unik."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:532
 msgid ""
@@ -17742,6 +17852,8 @@ msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"Untuk menambahkan kunci ke dictionary yang sudah ada, akses itu seperti "
+"kunci yang ada dan tetapkan padanya::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:562
 msgid ""
@@ -17755,7 +17867,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:569
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "Dara"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:572
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
@@ -17763,7 +17875,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:212
 msgid "Variables"
-msgstr ""
+msgstr "Variabel"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:574
 msgid ""
@@ -17771,6 +17883,9 @@ msgid ""
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
+"Variabel dapat ada sebagai anggota kelas atau fungsi lokal. Mereka dibuat "
+"dengan kata kunci ``var`` dan dapat, secara opsional, diberi nilai saat "
+"inisialisasi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid ""
@@ -17905,13 +18020,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:690
 msgid "Enums"
-msgstr ""
+msgstr "Enumerasi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
+"Enum pada dasarnya adalah singkatan dari konstanta, dan sangat berguna jika "
+"Anda ingin menetapkan bilangan bulat berurutan ke beberapa konstanta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
@@ -17940,11 +18057,18 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
+"Fungsi selalu dimiliki oleh `class <Classes_>` _. Prioritas cakupan untuk "
+"pencarian variabel adalah: lokal → anggota kelas → global. Variabel ``self`` "
+"selalu tersedia dan disediakan sebagai opsi untuk mengakses anggota kelas, "
+"tetapi tidak selalu diperlukan (dan *tidak* harus dikirim sebagai argumen "
+"pertama fungsi, tidak seperti Python)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Sebuah fungsi dapat mengembalikan (``return``) kapan saja. Nilai kembalian "
+"bawaan adalah ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid ""
@@ -18002,7 +18126,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:789
 msgid "Static functions"
-msgstr ""
+msgstr "Fungsi status"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:791
 msgid ""
@@ -18013,7 +18137,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
 msgid "Statements and control flow"
-msgstr ""
+msgstr "Pernyataan dan aliran kontrol"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:802
 msgid ""
@@ -18021,10 +18145,13 @@ msgid ""
 "structures, etc (see below). ``;`` as a statement separator is entirely "
 "optional."
 msgstr ""
+"Pernyataan adalah standar dan dapat berupa penugasan, pemanggilan fungsi, "
+"struktur aliran kontrol, dll (lihat di bawah). ``;`` sebagai pemisah "
+"pernyataan sepenuhnya opsional."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:807
 msgid "if/else/elif"
-msgstr ""
+msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:809
 msgid ""
@@ -18033,10 +18160,14 @@ msgid ""
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"Kondisi sederhana dibuat menggunakan sintaks ``if``/``else``/``elif``. "
+"Kurung di sekitar kondisi diperbolehkan, tapi tidak dibutuhkan. Mengingat "
+"sifat indentasi berbasis tab, ``elif`` dapat digunakan sebagai pengganti "
+"``else`` / ``if`` untuk mempertahankan tingkat indentasi."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:823
 msgid "Short statements can be written on the same line as the condition::"
-msgstr ""
+msgstr "Pernyataan pendek dapat ditulis pada baris yang sama dengan kondisi::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:830
 msgid ""
@@ -18049,6 +18180,8 @@ msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"Perulangan dapat dibuat menggunakan sintaks ``while``. Perulngan dapat "
+"dihentikan menggunakan ``break`` atau dilanjutkan menggunakan ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
 msgid ""
@@ -18089,11 +18222,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Ganti ``default`` ke satu underscore."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
 msgid "**Control flow**:"
-msgstr ""
+msgstr "**Alur kontrol**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
 msgid ""
@@ -18105,7 +18238,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:913
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Ada 6 jenis pola:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:925
 #, fuzzy
@@ -18130,7 +18263,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
 msgid "This pattern matches everything. It's written as a single underscore."
-msgstr ""
+msgstr "Pola ini cocok dengan semuanya. Itu ditulis sebagai satu garis bawah."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:942
 msgid ""
@@ -18184,6 +18317,8 @@ msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Bekerja dengan cara yang sama seperti pola array. Setiap kunci harus menjadi "
+"pola yang konstan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:990
 msgid ""
@@ -18199,12 +18334,14 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:994
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Setiap subpola harus dipisahkan dengan koma."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:996
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
 msgstr ""
+"Jika Anda tidak menentukan nilainya, maka hanya keberadaan kunci yang "
+"diperiksa."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "A value pattern is separated from the key pattern with a ``:``."
@@ -18222,7 +18359,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1028
 msgid "Classes"
-msgstr ""
+msgstr "Kelas-kelas"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1030
 msgid ""
@@ -18264,7 +18401,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1092
 #: ../../docs/getting_started/scripting/cross_language_scripting.rst:204
 msgid "Inheritance"
-msgstr ""
+msgstr "Warisan"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
 msgid "A class (stored as a file) can inherit from:"
@@ -18280,11 +18417,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
 msgid "An inner class inside another class file."
-msgstr ""
+msgstr "Sebuah kelas di dalam berkas kelas lain."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1100
 msgid "Multiple inheritance is not allowed."
-msgstr ""
+msgstr "Pewaris banyak tidak diperbolehkan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
 msgid "Inheritance uses the ``extends`` keyword::"
@@ -18320,7 +18457,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
 msgid "Class Constructor"
-msgstr ""
+msgstr "Konstruktor kelas"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
 msgid ""
@@ -18375,17 +18512,20 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid "Inner classes"
-msgstr ""
+msgstr "Kelas dalam"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1203
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
+"File kelas dapat berisi kelas-kelas dalam. Kelas-kelas dalam didefinisikan "
+"menggunakan kata kunci ``class``. Mereka dibuat menggunakan fungsi "
+"``ClassName.new ()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1228
 msgid "Classes as resources"
-msgstr ""
+msgstr "Kelas sebagai sumber daya (resource)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1230
 msgid ""
@@ -18395,10 +18535,15 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
+"Kelas yang disimpan sebagai file diperlakukan sebagai: ref: `resources "
+"<class_GDScript>`. Mereka harus dimuat dari disk untuk mengaksesnya di kelas "
+"lain. Ini dilakukan dengan menggunakan fungsi ``load`` atau ``preload`` "
+"(lihat di bawah). Instance dari sumber daya kelas yang dimuat dilakukan "
+"dengan memanggil fungsi ``new`` pada objek kelas ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1247
 msgid "Exports"
-msgstr ""
+msgstr "Ekspor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
@@ -18407,7 +18552,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1254
 msgid "Setters/getters"
-msgstr ""
+msgstr "Penyetel/Pengambil"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1256
 msgid ""
@@ -18726,75 +18871,94 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
+#, fuzzy
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript: Pengantar bahasa dinamis"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:9
+#, fuzzy
 msgid ""
 "This tutorial aims to be a quick reference for how to use GDScript more "
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"Tutorial ini bertujuan untuk menjadi referensi cepat tentang cara "
+"menggunakan GDScript dengan lebih efisien. Tutorial ini berfokus pada kasus "
+"umum khusus untuk bahasa GDScript, tetapi juga mencakup banyak informasi "
+"tentang bahasa yang diketik secara dinamis."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
+#, fuzzy
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
 msgstr ""
+"Dimaksudkan agar sangat berguna bagi programmer dengan sedikit atau tanpa "
+"pengalaman sebelumnya dengan bahasa yang diketik secara dinamis."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
+#, fuzzy
 msgid "Dynamic nature"
-msgstr ""
+msgstr "Dynamic nature"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
+#, fuzzy
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "Kelebihan & kekurangan dari pengetikan dinamis"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
+#, fuzzy
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
 msgstr ""
+"GDScript adalah bahasa dinamis(Dynamically Typed). Dengan demikian, "
+"keunggulan utamanya adalah:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "Bahasanya sederhana dan mudah dipelajari."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
 msgstr ""
+"Kebanyakan kode dapat ditulis dan diubah dengan cepat dan tanpa kerumitan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
 msgstr ""
+"Lebih sedikit kode yang ditulis berarti lebih sedikit error & kesalahan yang "
+"harus diperbaiki."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "Lebih mudah membaca kode (tidak berantakan)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "Tidak diperlukan kompilasi untuk mengujinya."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
+#, fuzzy
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "Waktu proses (Runtime) kecil."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
+#, fuzzy
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "Duck-typing dan polymorphism secara otomatis."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "Sedangkan kelemahan utamanya adalah:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "Performa lebih rendah daripada bahasa yang diketik secara statis."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr ""
+msgstr "Lebih sulit untuk refactor (simbol tidak dapat dilacak)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -18804,10 +18968,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
+#, fuzzy
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
 msgstr ""
+"Fleksibilitas yang lebih rendah untuk penyelesaian kode (beberapa jenis "
+"variabel hanya diketahui pada waktu proses)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -19171,7 +19338,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:141
 msgid "Exporting bit flags"
-msgstr ""
+msgstr "Mengekspor bit flags"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:143
 msgid ""
@@ -19202,7 +19369,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:166
 msgid "Exporting arrays"
-msgstr ""
+msgstr "Mengekspor array"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_exports.rst:168
 msgid ""
@@ -19355,6 +19522,8 @@ msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
+"Editor skrip bawaan Godot menggunakan banyak konvensi ini secara default. "
+"Biarkan itu membantu Anda."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Here is a complete class example based on these guidelines:"
@@ -19398,11 +19567,13 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
-msgstr ""
+msgstr "Indentasi"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
+"Setiap tingkat indentasi harus lebih besar satu blok dari blok yang "
+"memuatnya."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
@@ -19454,6 +19625,8 @@ msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
+"Gunakan 2 tingkat indentasi untuk membedakan baris lanjutan dari blok kode "
+"biasa."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
@@ -19481,7 +19654,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:132
 msgid "Blank lines"
-msgstr ""
+msgstr "Baris kosong"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 msgid "Surround functions and class definitions with two blank lines:"
@@ -19490,6 +19663,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
+"Gunakan satu barus kosong di dalam fungsi untuk memisahkan bagian logika."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:149
@@ -19533,6 +19707,8 @@ msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
+"Abaikan kurung dalam pernyataan ekspresi dan kondisional. Kecuali diperlukan "
+"untuk perngurutan operasi, mereka hanya mengurangi keterbacaan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid "Boolean operators"
@@ -19580,7 +19756,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:221
 msgid "Whitespace"
-msgstr ""
+msgstr "Tempat kosong"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:370
 msgid ""
@@ -20365,7 +20541,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "String format GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
@@ -20379,6 +20555,9 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"String terformat sama seperti string normal, kecuali mereka mengandung "
+"urutan karakter placeholder tertentu. Placeholder ini kemudian dapat dengan "
+"mudah diganti dengan parameter yang diserahkan ke string format."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -20387,10 +20566,14 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"Contoh, dengan ``%s`` sebagai placeholder, format string ``\"Halo %s, apa "
+"kabarmu?\"`` dapat dengan mudah diganti ke ``\"Halo Dunia, apa kabarmu?\"``. "
+"Perhatikan bagaimana placeholder ada di tengah string; mengubah itu tanpa "
+"format string dapat menjadi rumit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Penggunaan dalam GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
@@ -20402,6 +20585,9 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"Placeholder selalu diawali dengan sebuah``%``, tapi karakter atau karakter-"
+"karakter selanjutnya, *penentu format*, menentukan bagaimana nilai yang "
+"diberikan dikonversi ke string."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -20412,6 +20598,13 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"``%s`` yang dilihat dalam contoh di atas adalah placeholder yang sangat "
+"sederhana dan bekerja untuk hampir seluruh kasus penggunaan; itu mengubah "
+"nilai dengan metode yang sama dengan yang mana konversi String implisit atau "
+"``str()`` akan mengonversinya. String tetap tidak berubah, Boolean berubah "
+"menjadi ``\"True\"`` atau ``\"False \"``, bilangan integral atau real "
+"menjadi desimal, tipe lain biasanya mengembalikan datanya dalam string yang "
+"dapat dibaca manusia."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -20420,12 +20613,19 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"Ada juga cara lain untuk memformat teks di GDScript, yaitu metode ``String."
+"format()``. Ini menggantikan semua kemunculan kunci dalam string dengan "
+"nilai yang sesuai. Metode ini dapat menangani larik atau kamus untuk "
+"pasangan kunci/nilai."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Array dapat digunakan sebagai kunci, indeks, atau gaya campuran (lihat "
+"contoh di bawah). Urutan hanya berpengaruh saat indeks atau gaya campuran "
+"dari Array digunakan."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
@@ -20436,10 +20636,12 @@ msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
+"Ada `penentu format` __ lain, tetapi hanya berlaku saat menggunakan operator "
+"``%``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Placeholder banyak"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
@@ -20453,10 +20655,12 @@ msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"Perhatikan nilai-nilai yang disisipkan secara berurutan. Ingat semua "
+"placeholder harus diganti sekaligus, jadi harus ada jumlah nilai yang sesuai."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "Penentu format"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -20465,10 +20669,14 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"Ada penentu format selain ``\"s ''`` yang dapat digunakan sebagai pengganti. "
+"Mereka terdiri dari satu atau lebih karakter. Beberapa dari mereka bekerja "
+"sendiri seperti ``\"s '``', beberapa muncul sebelum karakter lain, beberapa "
+"hanya bekerja dengan nilai atau karakter tertentu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "Tipe-tipe placeholder"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -20476,10 +20684,13 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"Satu dan satu-satunya dari ini harus selalu muncul sebagai karakter terakhir "
+"dalam penentu format. Selain ``\"s ''``, ini membutuhkan jenis parameter "
+"tertentu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr "``%s``"
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
@@ -20498,68 +20709,80 @@ msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"Satu **karakter Unicode **. Mengharapkan bilangan bulat 8-bit tidak bertanda "
+"(0-255) untuk titik kode atau string karakter tunggal."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Sebuah angka **integral desimal**. Mengharapkan bilangan integral atau real "
+"(akan berlantai)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
+"Sebuah angka **oktal integral**. Mengharapkan bilangan integral atau real "
+"(akan berlantai)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Angka **integral heksadesimal** dengan **huruf kecil**. Mengharapkan "
+"bilangan integral atau real (akan berlantai)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"Angka **integral heksadesimal** dengan **huruf besar**. Mengharapkan "
+"bilangan integral atau real (akan berlantai)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "Angka **desimal riil **. Mengharapkan bilangan integral atau riil."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "Pengubah placeholder"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"Karakter ini muncul sebelum di atas. Beberapa di antaranya hanya berfungsi "
+"dalam kondisi tertentu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr ""
+msgstr "Dalam penentu nomor, **tampilkan tanda +** jika positif."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:98
@@ -20582,37 +20805,44 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:458
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:473
 msgid "Integer"
-msgstr ""
+msgstr "Integer"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"Atur **padding**. Padding dengan spasi atau dengan nol jika integer dimulai "
+"dengan ``\"0 ''`` di placeholder integer. Jika digunakan setelah ``\".\"``, "
+"Lihat ``\".\"``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"Sebelum ``f``, atur **presisi** ke 0 untuk tempat desimal. Dapat diikuti "
+"dengan nomor untuk diubah. Pad dengan nol."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr ""
+msgstr "**Pad ke kanan** bukan ke kiri."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
+"**Padding Dinamis, mengharapkan parameter integral tambahan untuk menyetel "
+"pengisi atau presisi setelah ``.``, lihat `padding dinamis`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
@@ -20624,6 +20854,10 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"``.`` (*titik*), ``*`` (*bintang*), ``-`` (*tanda minus*) dan digit (``0``-"
+"``9``) karakter digunakan untuk padding. Hal ini memungkinkan pencetakan "
+"beberapa nilai yang disejajarkan secara vertikal seolah-olah dalam kolom, "
+"asalkan digunakan font dengan lebar tetap."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
@@ -20642,6 +20876,10 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"Persisi dapat ditentukan untuk bilangan riil dengan menambahkan ``.`` "
+"(*titik*) dengan integer mengikutinya. Tanpa integer setelah ``.``, Presisi "
+"0 digunakan, pembulatan ke nilai integral. Bilangan bulat yang akan "
+"digunakan untuk pengisi harus muncul sebelum titik."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
@@ -20651,7 +20889,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "Padding Dinamis"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -20669,7 +20907,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "Urutan pelarian"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
@@ -20679,41 +20917,43 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "Contoh metode format"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"Berikut adalah beberapa contoh dari cara menggunakan beberapa pemanggilan "
+"metode ``String.format``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**Gaya**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
-msgstr ""
+msgstr "**Contoh**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
-msgstr ""
+msgstr "**Hasil**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:310
 msgid "Dictionary"
-msgstr ""
+msgstr "Kamus"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "kunci"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
@@ -20729,12 +20969,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "Hai, Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "indeks"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
@@ -20743,7 +20983,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "campuran"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
@@ -20756,7 +20996,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:289
 msgid "Array"
-msgstr ""
+msgstr "Array"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
@@ -20785,10 +21025,12 @@ msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"Placeholder juga dapa dikostumisasi saat menggunakan ``String.format``, "
+"berikut adalah beberapa contoh dari fungsionalitasnya."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr ""
+msgstr "Infiks (bawaan)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
@@ -20798,11 +21040,11 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "Hai, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
-msgstr ""
+msgstr "Postfix"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
@@ -20831,7 +21073,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "Hai, Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
@@ -24777,51 +25019,51 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "WAV 24-bit, 96 kHz, stereo"
-msgstr ""
+msgstr "WAV 24-bit, 96 kHz, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:33
 msgid "576 KB"
-msgstr ""
+msgstr "576 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "WAV 16-bit, 44 kHz, mono"
-msgstr ""
+msgstr "WAV 16-bit, 44 kHz, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid "88 KB"
-msgstr ""
+msgstr "88 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "WAV 16-bit, IMA-ADPCM, mono"
-msgstr ""
+msgstr "WAV 16-bit, IMA-ADPCM, mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:37
 msgid "22 KB"
-msgstr ""
+msgstr "22 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "MP3 192 Kb/s, stereo"
-msgstr ""
+msgstr "MP3 192 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
 msgid "24 KB"
-msgstr ""
+msgstr "24 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "Ogg Vorbis 128 Kb/s, stereo"
-msgstr ""
+msgstr "Ogg Vorbis 128 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "16 KB"
-msgstr ""
+msgstr "16 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "Ogg Vorbis 96 Kb/s, stereo"
-msgstr ""
+msgstr "Ogg Vorbis 96 Kb/s, stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:43
 msgid "12 KB"
-msgstr ""
+msgstr "12 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:46
 msgid ""
@@ -24966,11 +25208,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:57
 msgid "<langN>"
@@ -24978,7 +25220,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:59
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
@@ -24995,7 +25237,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "KEYN"
@@ -27155,7 +27397,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
-msgstr ""
+msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
@@ -27203,7 +27445,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
@@ -27251,7 +27493,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
@@ -27259,7 +27501,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "Running on a 32-bit build (any architecture)"
@@ -27267,7 +27509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "**x86_64**"
-msgstr ""
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
 msgid "Running on a 64-bit x86 build"
@@ -27275,7 +27517,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "Running on a 32-bit x86 build"
@@ -27283,7 +27525,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "**arm64**"
-msgstr ""
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
 msgid "Running on a 64-bit ARM build"
@@ -27331,7 +27573,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
-msgstr ""
+msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
@@ -27339,7 +27581,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
@@ -28017,7 +28259,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "NDK version 21.4.7075529"
-msgstr ""
+msgstr "Versi NDK 21.4.7075529"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
@@ -30115,7 +30357,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:132
 msgid "Godot 3.1+ only."
-msgstr ""
+msgstr "Khas utk Godot 3.1+ shj."
 
 #: ../../docs/getting_started/workflow/best_practices/scenes_versus_scripts.rst:134
 msgid ""
@@ -32350,7 +32592,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:304
 msgid "3x3"
-msgstr ""
+msgstr "3x3"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:306
 msgid ""
@@ -41964,8 +42206,9 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:421
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:362
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:424
+#, fuzzy
 msgid "Let's go over what's happening here."
-msgstr ""
+msgstr "Mari kita bahas apa yang terjadi di sini."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:372
 msgid "Firstly, we check to make sure the player is trying to reload."
@@ -45187,7 +45430,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:378
 msgid "Open up ``Pause_Popup.tscn``."
-msgstr ""
+msgstr "Buka ``Pause_Popup.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:380
 msgid ""
@@ -45216,16 +45459,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:399
+#, fuzzy
 msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
-msgstr ""
+msgstr "``MAIN_MENU_PATH``: Jalur ke scene menu utama."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:400
+#, fuzzy
 msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
-msgstr ""
+msgstr "``POPUP_SCENE``: pop up scene yang kita lihat sebelumnya."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:401
+#, fuzzy
 msgid "``popup``: A variable to hold the pop up scene."
-msgstr ""
+msgstr "``popup``: Variable untuk menahan adegan pop up."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:403
 msgid ""
@@ -45279,8 +45525,11 @@ msgid "Finally, we pause the entire :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:445
+#, fuzzy
 msgid "For more information on pausing in Godot, see :ref:`doc_pausing_games`"
 msgstr ""
+"Untuk informasi lebih lanjut tentang cara pause di Godot, lihat: ref: "
+"`doc_pausing_games`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:449
 msgid ""
@@ -45290,8 +45539,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:451
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:466
+#, fuzzy
 msgid "Add the following to ``Globals.gd``:"
-msgstr ""
+msgstr "Tambahkan yang berikut itu ke ``Globals.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:462
 msgid ""
@@ -45318,10 +45568,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:488
+#, fuzzy
 msgid ""
 "Open up ``Player.gd`` and in ``process_input``, change the code for "
 "capturing/freeing the cursor to the following:"
 msgstr ""
+"Buka ``Player.gd`` dan di dalam ``process_input``, ubah kode untuk "
+"menangkap / membebaskan kursor menjadi berikut:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:490
 msgid "Instead of:"
@@ -45352,8 +45605,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:519
+#, fuzzy
 msgid "Starting the respawn system"
-msgstr ""
+msgstr "Memulai sistem respawn"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:521
 msgid ""
@@ -45370,21 +45624,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
+#, fuzzy
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
 msgstr ""
+"``RESPAWN_TIME``: Jumlah waktu (dalam detik) yang dibutuhkan untuk "
+"memunculkan."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:537
+#, fuzzy
 msgid "``dead_time``: A variable to track how long the player has been dead."
-msgstr ""
+msgstr "``dead_time``: Variabel untuk melacak berapa lama pemain mati."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:538
 msgid ""
 "``is_dead``: A variable to track whether or not the player is currently dead."
 msgstr ""
+"``is_dead``: Variable untuk melacak apakah pemain sudah mati atau belum."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:539
+#, fuzzy
 msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
-msgstr ""
+msgstr "``globals``: Variabel untuk menampung singleton `` Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:543
 msgid ""
@@ -45429,12 +45689,15 @@ msgid "We have not made ``process_respawn`` yet, so let's change that."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:584
+#, fuzzy
 msgid "Let's add ``process_respawn``. Add the following to ``Player.gd``:"
 msgstr ""
+"Mari tambahkan``process_respawn``. Tambahkan yang berikut ke ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:643
+#, fuzzy
 msgid "Let's go through what this function is doing."
-msgstr ""
+msgstr "Mari kita bahas apa yang dilakukan fungsi ini."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:647
 msgid ""
@@ -45546,14 +45809,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:686
+#, fuzzy
 msgid "Finally, we set ``is_dead`` to ``false``."
-msgstr ""
+msgstr "Akhirnya, kita menetapkan``is_dead``menjadi``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:690
+#, fuzzy
 msgid ""
 "Before we leave ``Player.gd``, we need to add one quick thing to ``_input``. "
 "Add the following at the beginning of ``_input``:"
 msgstr ""
+"Sebelum kita meninggalkan `` Player.gd``, kita perlu menambahkan satu hal "
+"cepat ke``_input``.Tambahkan yang berikut ini di awal ``_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:697
 msgid "Now, when the player is dead, they cannot look around with the mouse."
@@ -45561,7 +45828,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:700
 msgid "Finishing the respawn system"
-msgstr ""
+msgstr "Menyelesaikan sistem respawn"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:702
 msgid ""
@@ -45577,7 +45844,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid "Now let's add ``reset_weapon`` in ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "Sekarang tambahkan ``reset_weapon`` di dalam ``Weapon_Rifle.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:720
 msgid "And add the following to ``Weapon_Knife.gd``:"
@@ -46827,7 +47094,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "EQ6, EQ10, EQ21"
-msgstr ""
+msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:174
 msgid ""
@@ -47458,7 +47725,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:46
 msgid ""
@@ -47834,7 +48101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:327
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:329
 msgid ""
@@ -56535,67 +56802,67 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:404
 msgid "Kurdish (Turkey)"
-msgstr ""
+msgstr "Kurdish (Turkey)"
 
 #: ../../docs/tutorials/i18n/locales.rst:406
 msgid "kw_GB"
-msgstr ""
+msgstr "kw_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:406
 msgid "Cornish (United Kingdom)"
-msgstr ""
+msgstr "Cornish (United Kingdom)"
 
 #: ../../docs/tutorials/i18n/locales.rst:408
 msgid "ky_KG"
-msgstr ""
+msgstr "ky_KG"
 
 #: ../../docs/tutorials/i18n/locales.rst:408
 msgid "Kirghiz (Kyrgyzstan)"
-msgstr ""
+msgstr "Kirghiz (Kyrgyzstan)"
 
 #: ../../docs/tutorials/i18n/locales.rst:410
 msgid "lb_LU"
-msgstr ""
+msgstr "lb_LU"
 
 #: ../../docs/tutorials/i18n/locales.rst:410
 msgid "Luxembourgish (Luxembourg)"
-msgstr ""
+msgstr "Luxembourgish (Luxembourg)"
 
 #: ../../docs/tutorials/i18n/locales.rst:412
 msgid "lg_UG"
-msgstr ""
+msgstr "lg_UG"
 
 #: ../../docs/tutorials/i18n/locales.rst:412
 msgid "Ganda (Uganda)"
-msgstr ""
+msgstr "Ganda (Uganda)"
 
 #: ../../docs/tutorials/i18n/locales.rst:414
 msgid "li_BE"
-msgstr ""
+msgstr "li_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:414
 msgid "Limburgan (Belgium)"
-msgstr ""
+msgstr "Limburgan (Belgium)"
 
 #: ../../docs/tutorials/i18n/locales.rst:416
 msgid "li_NL"
-msgstr ""
+msgstr "li_NL"
 
 #: ../../docs/tutorials/i18n/locales.rst:416
 msgid "Limburgan (Netherlands)"
-msgstr ""
+msgstr "Limburgan (Netherlands)"
 
 #: ../../docs/tutorials/i18n/locales.rst:418
 msgid "lij_IT"
-msgstr ""
+msgstr "lij_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:418
 msgid "Ligurian (Italy)"
-msgstr ""
+msgstr "Ligurian (Italy)"
 
 #: ../../docs/tutorials/i18n/locales.rst:420
 msgid "ln_CD"
-msgstr ""
+msgstr "ln_CD"
 
 #: ../../docs/tutorials/i18n/locales.rst:420
 msgid "Lingala (Congo)"
@@ -61172,7 +61439,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (tertinggi)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:304
 msgid "parenthetical grouping"
@@ -61185,7 +61452,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:306
 msgid "unary"
@@ -61198,7 +61465,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:308
 msgid "multiplicative"
@@ -61294,7 +61561,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:479
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:481
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:310
 msgid "additive"
@@ -61307,7 +61574,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:312
 msgid "bit-wise shift"
@@ -61320,7 +61587,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:314
 msgid "relational"
@@ -61333,7 +61600,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:316
 msgid "equality"
@@ -61360,7 +61627,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:325
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:338
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:318
 msgid "bit-wise AND"
@@ -61373,7 +61640,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:320
 msgid "bit-wise exclusive OR"
@@ -61386,7 +61653,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:322
 msgid "bit-wise inclusive OR"
@@ -61399,7 +61666,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:324
 msgid "logical AND"
@@ -61411,7 +61678,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (terendah)"
 
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:326
 msgid "logical inclusive OR"
@@ -66209,7 +66476,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:226
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:100
 msgid "POINT_SIZE"
@@ -66245,7 +66512,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 msgid "FRONT_FACING"
@@ -81345,12 +81612,12 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:391
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "integer"
@@ -81362,7 +81629,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "rect2"
-msgstr ""
+msgstr "rect2"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "vector3"
@@ -81395,7 +81662,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:274
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:305
 msgid "12"
-msgstr ""
+msgstr "12"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:49
 msgid "basis"
@@ -81403,7 +81670,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "13"
-msgstr ""
+msgstr "13"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:51
 msgid "transform"
@@ -81411,7 +81678,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "14"
-msgstr ""
+msgstr "14"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:53
 msgid "color"
@@ -81419,7 +81686,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "15"
-msgstr ""
+msgstr "15"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:55
 msgid "node path"
@@ -81435,7 +81702,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:276
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:307
 msgid "16"
-msgstr ""
+msgstr "16"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:57
 msgid "rid"
@@ -81443,7 +81710,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "17"
-msgstr ""
+msgstr "17"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:59
 msgid "object"
@@ -81451,7 +81718,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "18"
-msgstr ""
+msgstr "18"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:61
 msgid "dictionary"
@@ -81459,7 +81726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "19"
-msgstr ""
+msgstr "19"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:63
 msgid "array"
@@ -81471,7 +81738,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:253
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:278
 msgid "20"
-msgstr ""
+msgstr "20"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:65
 msgid "raw array"
@@ -81479,7 +81746,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "21"
-msgstr ""
+msgstr "21"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:67
 msgid "int array"
@@ -81487,7 +81754,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "22"
-msgstr ""
+msgstr "22"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:69
 msgid "real array"
@@ -81495,7 +81762,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "23"
-msgstr ""
+msgstr "23"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:71
 msgid "string array"
@@ -81507,7 +81774,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "24"
-msgstr ""
+msgstr "24"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:73
 msgid "vector2 array"
@@ -81515,7 +81782,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "25"
-msgstr ""
+msgstr "25"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:75
 msgid "vector3 array"
@@ -81523,7 +81790,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "26"
-msgstr ""
+msgstr "26"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:77
 msgid "color array"
@@ -81531,7 +81798,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "27"
-msgstr ""
+msgstr "27"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:79
 msgid "max"
@@ -95145,18 +95412,25 @@ msgid ""
 "`Gonkee <https://www.youtube.com/channel/UCJqCPFHdbc6443G3Sz6VYDw>`_ (2D and "
 "3D, GDScript, Shaders)."
 msgstr ""
+"`Gonkee <https://www.youtube.com/channel/UCJqCPFHdbc6443G3Sz6VYDw>`_ (2D and "
+"3D, GDScript, Shaders)."
 
 #: ../../docs/community/tutorials.rst:42
 msgid ""
 "`TheGuideKnight <https://www.youtube.com/playlist?"
 "list=PLYcTJBw32KtX2fvOdtO_fS3Nd6sxM71tn>`_ (2D, GDScript)."
 msgstr ""
+"`TheGuideKnight <https://www.youtube.com/playlist?"
+"list=PLYcTJBw32KtX2fvOdtO_fS3Nd6sxM71tn>`_ (2D, GDScript)."
 
 #: ../../docs/community/tutorials.rst:43
+#, fuzzy
 msgid ""
 "`GDScript Dude <https://www.youtube.com/channel/UCQs0i6vKISElM6mh7OzLouQ>`_ "
 "(GDScript)."
 msgstr ""
+"`GDScript Dude <https://www.youtube.com/channel/UCQs0i6vKISElM6mh7OzLouQ>`_ "
+"(GDScript)."
 
 #: ../../docs/community/tutorials.rst:46
 #, fuzzy
@@ -95164,9 +95438,8 @@ msgid "Text tutorials"
 msgstr "Tutorial"
 
 #: ../../docs/community/tutorials.rst:48
-#, fuzzy
 msgid "`GDScript website by Andrew Wilkes <https://gdscript.com>`__"
-msgstr "`Godot Recipes oleh KidsCanCode <http://godotrecipes.com/>`__"
+msgstr "`GDScript website oleh Andrew Wilkes <https://gdscript.com>`__"
 
 #: ../../docs/community/tutorials.rst:49
 msgid "`Godot Recipes by KidsCanCode <http://godotrecipes.com/>`__"
