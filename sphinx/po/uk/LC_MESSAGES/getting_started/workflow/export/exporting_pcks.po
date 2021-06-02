@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,6 @@ msgid "more modular project structure"
 msgstr "більш модульна структура проєкту"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
-#, fuzzy
 msgid "users don't have to replace the entire game"
 msgstr "користувачі не повинні замінювати всю гру"
 
@@ -248,7 +247,6 @@ msgstr ""
 "містить у своєму корені тестову сцену “mod_scene.tscn”."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
-#, fuzzy
 msgid ""
 "By default, if you import a file with the same file path/name as one you "
 "already have in your project, the imported one will replace it. This is "
@@ -258,10 +256,10 @@ msgid ""
 "content of a previously loaded PCK."
 msgstr ""
 "Якщо ви імпортуєте файл із тим самим шляхом/ім'ям файлу, який ви вже маєте у "
-"своєму проєкті, імпортований файл замінить його. Це те, на що слід вважати "
+"своєму проекті, імпортований файл замінить його. Це те, на що слід вважати "
 "при створенні DLC, або модів (вирішується легко за допомогою інструменту, що "
 "виділяє моди до певної під-папки модів). Однак це також спосіб створення "
-"патчів для власної гри. Файл такого типу PCK може виправити вміст "
+"патчів для власної гри. Файл PCK такого типу може виправити вміст "
 "завантаженої раніше PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:123
@@ -270,6 +268,9 @@ msgid ""
 "`ProjectSettings.load_resource_pack() "
 "<class_ProjectSettings_method_load_resource_pack>`."
 msgstr ""
+"Щоб відмовитися від цієї поведінки передайте ``false`` в якості другого "
+"аргумента в :ref:`ProjectSettings.load_resource_pack() "
+"<class_ProjectSettings_method_load_resource_pack>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:127
 msgid ""

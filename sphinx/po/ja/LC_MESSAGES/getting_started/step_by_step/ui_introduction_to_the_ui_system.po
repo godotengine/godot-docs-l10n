@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -260,7 +260,6 @@ msgid "TextureButton"
 msgstr "\\ TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:100
-#, fuzzy
 msgid ""
 "**TextureButton** is like TextureRect, except it has 6 texture slots: one "
 "for each of the button's states. Most of the time, you'll use the Normal, "
@@ -268,11 +267,11 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 1-bit, pure black and white image."
 msgstr ""
-"**TextureButton** はTextureRectに似ていますが、ボタンの状態ごとに1つのテクス"
-"チャスロットが5つある点が異なります。ほとんどの場合、Normal、Pressed、Hoverの"
-"各テクスチャを使用します。 Focusedは、インターフェイスがキーボードの入力を監"
-"視する場合に役立ちます。 6番目の画像スロットであるクリックマスクでは、1ビット"
-"の純粋な白黒画像を使用してクリック可能な領域を定義できます。"
+"**TextureButton** はTextureRectに似ていますが、ボタンの状態ごとにテクスチャス"
+"ロットが6つある点が異なります。ほとんどの場合、Normal、Pressed、Hoverの各テク"
+"スチャを使用します。 Focusedは、インターフェイスがキーボードの入力を待つとき"
+"に役立ちます。 6番目の画像スロットであるクリックマスクでは、1ビットの純粋な白"
+"黒画像を使用してクリック可能な領域を定義できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:107
 msgid ""
@@ -397,19 +396,20 @@ msgstr ""
 "フローがあります:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "**Place UI elements precisely with anchors:** Use the **Layout** menu to "
 "place and resize a UI element relative to its parent."
 msgstr ""
-"反対側には、レイアウトメニューがあります。これは、親のUI要素を固定、配置、お"
-"よびサイズ変更するのに役立ちます。"
+"**アンカーを使用してUI要素を正確に配置する:** **レイアウト**\\ メニューを使用"
+"すれば、UI要素をその親に対して相対的に配置とサイズ変更できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:175
 msgid ""
 "**Arrange control nodes automatically with containers:** Use container nodes "
 "to automatically scale and place UI elements."
 msgstr ""
+"**コンテナを使ってコントロールノードを自動的に配置する:** コンテナノードを使"
+"えば、UI要素を自動的に拡大縮小して配置できます。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:177
 msgid ""
@@ -638,9 +638,8 @@ msgstr ""
 "ほとんどのゲームでは、一握りで十分です:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:294
-#, fuzzy
 msgid "MarginContainer, to add margins around parts of the UI"
-msgstr "MarginContainer、UIの一部に余白を追加します"
+msgstr "MarginContainerは、UIの一部の周囲に余白を追加します"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "CenterContainer, to center its children in its bounding box"

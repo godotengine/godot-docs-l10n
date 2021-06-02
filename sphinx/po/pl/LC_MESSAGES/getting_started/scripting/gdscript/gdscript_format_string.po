@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr "GDScript formatowanie łańcuchów znaków"
+msgstr "GDScript formatuje łańcuchy znaków (string)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 #, fuzzy
@@ -83,8 +83,8 @@ msgstr ""
 "``%s`` widoczne w przykładzie powyżej jest najprostszym symbolem zastępczym "
 "i działa dla większości przypadków: konwertuje wartość tą samą metodą, którą "
 "niejawna konwersja lub ``str()`` by ją skonwertowała. Łańcuchy znaków "
-"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w albo ``"
-"\"True\"`` albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
+"pozostają niezmienione, Wartości logiczne (Boolean) zmieniają się w ,albo ``"
+"\"True\"`` ,albo ``\"False\"``, liczby całkowite lub rzeczywiste stają się "
 "dziesiętnymi, inne typy zwykle zwracają swoje dane w ciąg znaków łatwy do "
 "odczytania przez człowieka."
 
@@ -105,9 +105,9 @@ msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
-"Tablice mogą być użyte jako klucz, indeks lub zamiennie (zobacz poniższe "
-"przykłady). Kolejność ma znaczenie jedynie gdy tablica jest używana jako "
-"indeks lub zamiennie."
+"Tablice mogą być używane jako klucz, indeks, lub w pomieszanym stylu (zobacz "
+"poniższe przykłady). Kolejność ma znaczenie tylko wtedy, gdy tablica jest "
+"użyta jako indeks lub w pomieszanym stylu."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
@@ -190,6 +190,8 @@ msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"Pojedynczy **znak Unicode**. Oczekuje 8-bitowej liczby całkowitej, bez znaku "
+"(0-255) jako punkt kodu lub jedno-znakowy String."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
@@ -333,6 +335,9 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"Precyzję można określić dla liczb rzeczywistych przez dodanie ``.`` "
+"(*kropki*) z następującą po nim liczbą całkowitą. Bez liczby całkowitej po "
+"``.``, stosuje się dokładność 0, zaokrąglając do wartości całkowanej."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
@@ -344,7 +349,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "Dynamiczne wypełnienie"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -444,7 +449,7 @@ msgstr "\"Hej, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "połączyć"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #, fuzzy

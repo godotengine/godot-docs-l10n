@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,6 @@ msgid "Player scene"
 msgstr "Scena Player (Gracz)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
@@ -188,8 +187,8 @@ msgid ""
 msgstr ""
 "Przed dodaniem dzieci do węzła ``Player`` chcemy się upewnić, że nie "
 "przesunęliśmy ich przypadkowo lub nie zmieniliśmy ich wielkości klikając na "
-"nie. Zaznacz węzeł i kliknij ikonę po prawej stronie kłódki; jej podpowiedź "
-"brzmi \"Zablokuj selekcję węzłów podrzędnych.\""
+"nie. Zaznacz węzeł i kliknij ikonę po prawej stronie kłódki; jego podpowiedź "
+"brzmi \"Upewnij się, że dzieci nie są wybieralne.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:93
 msgid ""
@@ -290,11 +289,11 @@ msgid ""
 "\"New CapsuleShape2D\".  Using the two size handles, resize the shape to "
 "cover the sprite:"
 msgstr ""
-"I wreszcie dodaj :ref:`ColisionShape2D <class_CollisionShape2D>` jako "
-"dziecko ``Player``. W ten sposób zostaną wyznaczone granice obszaru kolizji "
-"gracza. Węzeł ``CapsuleShape2D`` najlepiej pasuje do tego węzła, więc obok "
-"\"Shape\" w inspektorze kliknij \"[pusty]\" -> \"New CapsuleShape2D\". Zmień "
-"rozmiar obszaru w celu okrycia całego sprite:"
+"Na koniec dodaj :ref:`ColisionShape2D <class_CollisionShape2D>` jako dziecko "
+"``Player``. W ten sposób zostaną wyznaczone granice obszaru kolizji gracza. "
+"Węzeł ``CapsuleShape2D`` najlepiej pasuje do tego węzła, więc obok \"Shape\" "
+"w inspektorze kliknij \"<null>\" -> \"New CapsuleShape2D\". Zmień rozmiar "
+"obszaru w celu okrycia całego sprite'a:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:146
 msgid "When you're finished, your ``Player`` scene should look like this:"
@@ -359,9 +358,10 @@ msgstr ""
 "Użycie słowa kluczowego ``export`` przy pierwszej zmiennej ``speed`` pozwala "
 "na ustawienie jej wartości w inspektorze. Może to być przydatne w przypadku "
 "wartości, które mają być dostosowywane w taki sam sposób, jak wbudowane "
-"właściwości węzła. Kliknij na węzeł ``Player``, w którym pokazała się nowa "
-"właściwość w sekcji \"Script Variables\" w inspektorze. Pamiętaj, że jeśli "
-"zmienisz znajdującą się tu wartość, nadpisze ona wartość podaną w skrypcie."
+"właściwości węzła. Kliknij na węzeł ``Player`` i zauważ, że wyeksportowana "
+"właściwość pojawiła się w sekcji \"Zmienne skryptu\" Inspektora. Pamiętaj - "
+"jeżeli zmienisz wartość zmiennej tutaj, nadpisze ona wartość ustawioną w "
+"skrypcie."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:200
 msgid ""
@@ -906,7 +906,6 @@ msgid "Main scene"
 msgstr "Scena główna"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
@@ -1002,7 +1001,6 @@ msgstr ""
 "przycisków:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -1047,7 +1045,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:727
 msgid "Your scene should look like this:"
-msgstr "Scena powinno tak wyglądać:"
+msgstr "Twoja scena powinna wyglądać tak:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid "Main script"
@@ -1087,6 +1085,8 @@ msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
 "tscn``."
 msgstr ""
+"Naciśnij strzałkę w dół obok \"[empty]\" i wybierz \"Wczytaj\". Następnie "
+"wybierz ``Mob.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:784
 msgid ""
@@ -1147,15 +1147,15 @@ msgid ""
 msgstr "Nowa instancja musi być dodana do sceny za pomocą ``add_child()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:909
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, GDScript uses *radians*, not "
 "degrees. If you're more comfortable working with degrees, you'll need to use "
 "the ``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
-"W przypadku funkcji wymagających kąta, GDScript używa *radianów*, a nie "
-"stopni. Jeśli jest tobie łatwiej pracować ze stopniami, trzeba będzie użyć "
-"``deg2rad()`` i ``rad2deg()`` do konwersji między tymi dwoma funkcjami."
+"Dlaczego ``PI``? W przypadku funkcji wymagających kątów, GDScript używa "
+"*radianów*, a nie stopni. Jeśli jest tobie łatwiej pracować ze stopniami, "
+"będziesz potrzebował użyć funkcji ``deg2rad()`` i ``rad2deg()`` do konwersji "
+"pomiędzy tymi dwoma jednostkami."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid "Testing the scene"
@@ -1193,7 +1193,7 @@ msgid ""
 "from ``_ready()``."
 msgstr ""
 "Jeśli jesteś pewien, że wszystko działa tak, jak powinno, usuń wywołanie "
-"metody ``new_game()`` z ``_ready()``"
+"metody ``new_game()`` z ``_ready()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "HUD"
@@ -1273,7 +1273,6 @@ msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` o nazwie ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:974
-#, fuzzy
 msgid ""
 "Click on the ``ScoreLabel`` and type a number into the ``Text`` field in the "
 "Inspector. The default font for ``Control`` nodes is small and doesn't scale "
@@ -1399,7 +1398,6 @@ msgid "Bottom: ``-100``"
 msgstr "Dół: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1033
-#, fuzzy
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
 "Shot`` property to \"On\"."
@@ -1420,7 +1418,6 @@ msgstr ""
 "Sygnał ``start_game`` informuje węzeł ``Main`` o naciśnięciu przycisku."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1077
-#, fuzzy
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\"."
@@ -1430,7 +1427,6 @@ msgstr ""
 "``2`` i ustaw właściwość ``Jednokrotny`` na \"Włączone\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
-#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and, after a brief pause, "
@@ -1465,7 +1461,6 @@ msgid "Connecting HUD to Main"
 msgstr "Podłączenie HUD do Main"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1165
-#, fuzzy
 msgid ""
 "Now that we're done creating the ``HUD`` scene, go back to ``Main``. "
 "Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. "
@@ -1590,13 +1585,12 @@ msgstr ""
 "chcesz i przeciągnij ``ColorRect`` tak, aby zakrył ekran."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
 "Obraz tła można również dodać, jeśli taki istnieje, za pomocą węzła "
-"``Sprite``."
+"``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid "Sound effects"

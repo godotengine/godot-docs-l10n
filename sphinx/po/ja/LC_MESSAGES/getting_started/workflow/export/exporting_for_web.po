@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,49 +43,18 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid ""
-"Many browsers, including Firefox and Chromium-based browsers, will not load "
-"exported projects when **opened locally** per ``file://`` protocol. To get "
-"around this, use a local server."
-msgstr ""
-"FirefoxやChromiumベースのブラウザを含む、多くのブラウザは、\\ ``file://`` プ"
-"ロトコルごとに\\ **ローカルで開いたとき**\\ に、エクスポートされたプロジェク"
-"トをロードしません。 これを回避するには、ローカルサーバーを使用します。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:19
-#, fuzzy
-msgid ""
-"Python offers an easy method to start a local server. Use ``python -m http."
-"server 8000 --bind 127.0.0.1`` with Python 3 to serve the current working "
-"directory at ``http://localhost:8000``. `Refer to MDN for additional "
-"information <https://developer.mozilla.org/en-US/docs/Learn/Common_questions/"
-"set_up_a_local_testing_server>`__."
-msgstr ""
-"Pythonは、ローカルサーバーを起動するための簡単な方法を提供しています。Python "
-"2 で ``python -m SimpleHTTPServer`` を使用するか、Python 3 で ``python -m "
-"http.server`` を使用して、現在の作業ディレクトリを ``http://localhost:8000`` "
-"で提供します。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
-msgid ""
 "`There are significant bugs when running HTML5 projects on iOS <https://"
-"github.com/godotengine/godot/issues/26554>`__ (regardless of the browser). "
-"We recommend using :ref:`iOS' native export functionality "
-"<doc_exporting_for_ios>` instead, as it will also result in better "
-"performance."
+"github.com/godotengine/godot/issues?q=is:issue+is:open+label:platform:"
+"html5+ios>`__ (regardless of the browser). We recommend using :ref:`iOS' "
+"native export functionality <doc_exporting_for_ios>` instead, as it will "
+"also result in better performance."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
-msgid ""
-"If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
-"mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to play the "
-"exported project using a Chromium-based browser instead of Firefox."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:37
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:21
 msgid "WebGL 2"
 msgstr "\\ WebGL 2"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:39
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:23
 msgid ""
 "Until the *OpenGL ES 3* renderer is removed from Godot in favor of *Vulkan*, "
 "HTML5 export uses *WebGL 2* when the *GLES3* option is selected."
@@ -94,7 +63,7 @@ msgstr ""
 "*GLES3* オプションが選択されている場合、HTML5エクスポートでは *WebGL 2* が使"
 "用されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:42
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:26
 #, fuzzy
 msgid ""
 "Using WebGL 2 is not recommended due to its expected removal from Godot "
@@ -103,7 +72,7 @@ msgstr ""
 "置き換えなしにGodotから削除されることが予想されるため、WebGL 2の使用はお勧め"
 "しません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
 msgid ""
 "WebGL 2 is not supported in all browsers. **Firefox** and **Chromium** "
 "(Chrome, Opera) are the most popular supported browsers, **Safari** and "
@@ -116,18 +85,105 @@ msgstr ""
 "**iOS** では、すべてのブラウザは、WebKitの(すなわち、Safariなど)に基づいてい"
 "るので、同様に動作しません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:50
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:34
 msgid ""
 "Godot's WebGL 2 renderer has issues with 3D and is no longer maintained."
 msgstr ""
 "GodotのWebGL 2レンダラーには3Dの問題があり、メンテナンスが行われなくなりまし"
 "た。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:53
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:39
+msgid "Export options"
+msgstr "エクスポートオプション"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
+msgid ""
+"If a runnable web export template is available, a button appears between the "
+"*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
+"the game in the default browser for testing."
+msgstr ""
+"実行可能なWeb書き出しテンプレートが使用可能な場合は、エディタの [シーンを停"
+"止] ボタンと [編集したシーンを再生] ボタンの間にボタンが表示され、既定のブラ"
+"ウザでゲームをすばやく開いてテストできます。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:45
+msgid ""
+"You can choose the **Export Type** to select which features will be "
+"available:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:47
+msgid ""
+"*Regular*: is the most compatible across browsers, will not support threads, "
+"nor GDNative."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:48
+msgid ""
+"*Threads*: will require the browser to support `SharedArrayBuffer <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
+"SharedArrayBuffer>`__"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
+msgid ""
+"*GDNative*: enables GDNative support but makes the binary bigger and slower "
+"to load."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:51
+msgid ""
+"If you plan to use :ref:`VRAM compression <doc_import_images>` make sure "
+"that **Vram Texture Compression** is enabled for the targeted platforms "
+"(enabling both **For Desktop** and **For Mobile** will result in a bigger, "
+"but more compatible export)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:56
+msgid ""
+"If a path to a **Custom HTML shell** file is given, it will be used instead "
+"of the default HTML page. See :ref:`doc_customizing_html5_shell`."
+msgstr ""
+"カスタムHTMLシェルファイルへのパスが指定されている場合、デフォルトのHTMLペー"
+"ジの代わりにそれが使用されます。\\ :ref:`doc_customizing_html5_shell`\\ を参"
+"照してください。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
+msgid ""
+"**Head Include** is appended into the ``<head>`` element of the generated "
+"HTML page. This allows to, for example, load webfonts and third-party "
+"JavaScript APIs, include CSS, or run JavaScript code."
+msgstr ""
+"**Head Include**\\ は、生成されたHTMLページの ``<head>`` 要素に追加されます。"
+"これにより、たとえば、WebfontsやサードパーティのJavaScript APIをロードした"
+"り、CSSを組み込んだり、JavaScriptコードを実行したりできます。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:63
+#, fuzzy
+msgid ""
+"Each project must generate their own HTML file. On export, several text "
+"placeholders are replaced in the generated HTML file specifically for the "
+"given export options. Any direct modifications to that HTML file will be "
+"lost in future exports. To customize the generated file, use the **Custom "
+"HTML shell** option."
+msgstr ""
+"それぞれのプロジェクトはそれ自身のHTMLファイルを生成しなければなりません。エ"
+"クスポート時に、特定のエクスポートオプション用に **生成されたHTMLファイル** "
+"に複数のテキスト プレースホルダが置き換えられます。他の直接の **生成された"
+"HTMLファイル** への変更は以後のエクスポートでは失われます。生成されたファイル"
+"のカスタマイズは、\\ :ref:`doc_customizing_html5_shell`\\ を見て下さい。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
+msgid ""
+"**Export types** other then *Regular* are not yet supported by the C# "
+"version."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid "Limitations"
 msgstr "制限事項"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:55
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:76
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
@@ -138,11 +194,34 @@ msgstr ""
 "する多くの機能は、Web プラットフォーム上でより複雑になります。Godotゲームを"
 "Webに移植する際に注意する必要がある制限事項の一覧を次に示します。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:82
+msgid ""
+"Browser vendors are making more and more functionalities only available in "
+"`secure contexts <https://developer.mozilla.org/en-US/docs/Web/Security/"
+"Secure_Contexts>`_, this means that such features are only be available if "
+"the web page is served via a secure HTTPS connection (localhost is usually "
+"exempt from such requirement)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#, fuzzy
+msgid ""
+"Check the `list of open HTML5 issues on GitHub <https://github.com/"
+"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
+"if the functionality you're interested in has an issue yet. If not, open one "
+"to communicate your interest."
+msgstr ""
+"`list of open HTML5 issues on Github <https://github.com/godotengine/godot/"
+"issues?q=is:open+is:issue+label:platform:html5>`__でオープンされているHTML5の"
+"問題のリストをチェックして、疑問に関わる問題がないか確認してみてください。一"
+"覧にない場合は、あなたの知りたいことを伝えるために、新しいIssueをオープンして"
+"ください。"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:94
 msgid "Using cookies for data persistence"
 msgstr "データ永続化のためのクッキーの使用"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
 "Users must **allow cookies** (specifically IndexedDB) if persistence of the "
 "``user://`` file system is desired. When playing a game presented in an "
@@ -154,7 +233,7 @@ msgstr ""
 "再生する場合は、\\ **サードパーティ**\\ のCookieも有効にする必要があります。"
 "Incognito/privateブラウジングモードも永続性を妨げます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
 msgid ""
 "The method ``OS.is_userfs_persistent()`` can be used to check if the "
 "``user://`` file system is persistent, but can give false positives in some "
@@ -164,11 +243,46 @@ msgstr ""
 "システムが永続的かどうかをチェックすることができますが、場合によっては誤検出"
 "することもあります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:106
+msgid "Threads"
+msgstr "スレッド"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:108
+msgid ""
+"As mentioned :ref:`above <doc_javascript_export_options>` multi-threading is "
+"only available if the appropriate **Export Type** is set and support for it "
+"across browsers is still limited."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:112
+msgid ""
+"Requires a :ref:`secure context <doc_javascript_secure_contexts>`. Browsers "
+"are also starting to require that the web page is served with specific "
+"`cross-origin isolation headers <https://developer.mozilla.org/en-US/docs/"
+"Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
+msgid "GDNative"
+msgstr "GDNative"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:119
+msgid ""
+"As mentioned :ref:`above <doc_javascript_export_options>` GDNative is only "
+"available if the appropriate **Export Type** is set."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+msgid ""
+"The export will also copy the required GDNative ``.wasm`` files to the "
+"output folder (and must be uploaded to your server along with your game)."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
 msgid "Full screen and mouse capture"
 msgstr "フルスクリーンとマウスキャプチャ"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
 msgid ""
 "Browsers do not allow arbitrarily **entering full screen**. The same goes "
 "for **capturing the cursor**. Instead, these actions have to occur as a "
@@ -185,7 +299,7 @@ msgstr ""
 "トンを照会するだけでは不十分です。関連する入力イベントは現在アクティブでなけ"
 "ればなりません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:135
 msgid ""
 "For the same reason, the full screen project setting doesn't work unless the "
 "engine is started from within a valid input event handler. This requires :"
@@ -195,11 +309,11 @@ msgstr ""
 "面表示のプロジェクト設定は機能しません。これには :ref:`HTMLページのカスタマイ"
 "ズ<doc_customizing_html5_shell>` が必要です。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:86
-msgid "Audio autoplay"
-msgstr "オーディオ自動再生"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:140
+msgid "Audio"
+msgstr "オーディオ"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:88
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
 msgid ""
 "Chrome restricts how websites may play audio. It may be necessary for the "
 "player to click or tap or press a key to enable audio."
@@ -208,7 +322,7 @@ msgstr ""
 "ディオを有効にするには、クリックしたりタップするなどの、キーを押す操作が必要"
 "がある場合があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:91
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
 msgid ""
 "Google offers additional information about their `Web Audio autoplay "
 "policies <https://sites.google.com/a/chromium.org/dev/audio-video/"
@@ -217,38 +331,57 @@ msgstr ""
 "Googleは、\\ `Webオーディオの自動再生ポリシー<https://sites.google.com/a/"
 "chromium.org/dev/audio-video/autoplay> ` に関する追加情報を提供しています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:95
-msgid ":ref:`class_HTTPClient` and :ref:`class_HTTPRequest`"
-msgstr ":ref:`class_HTTPClient` と :ref:`class_HTTPRequest`"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
+msgid ""
+"Access to microphone requires a :ref:`secure context "
+"<doc_javascript_secure_contexts>`."
+msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:97
-msgid "The HTTP classes have several restrictions on the HTML5 platform:"
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
+msgid "Networking"
+msgstr "ネットワーク"
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:154
+msgid ""
+"Low level networking is not implemented due to lacking support in browsers."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
+msgid ""
+"Currently, only :ref:`HTTP client <doc_http_client_class>`, :ref:`HTTP "
+"requests <doc_http_request_class>`, :ref:`WebSocket (client) "
+"<doc_websocket>` and :ref:`WebRTC <doc_webrtc>` are supported."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
+#, fuzzy
+msgid "The HTTP classes also have several restrictions on the HTML5 platform:"
 msgstr ""
 "HTTPクラスには、HTML5プラットフォームに関するいくつかの制限があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:99
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
 msgstr "``StreamPeer`` へのアクセスおよび変更はできません"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid "Threaded/Blocking mode is not available"
 msgstr "スレッド/ブロックモードは使用できません"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:101
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:165
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
 "フレームごとに複数回進行できないため、ループ内のポーリングはフリーズします"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:102
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:166
 msgid "No chunked responses"
 msgstr "チャンク応答なし"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:103
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:167
 msgid "Host verification cannot be disabled"
 msgstr "ホスト検証を無効にできません"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:104
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`__"
@@ -256,29 +389,42 @@ msgstr ""
 "`同一生成元ポリシー <https://developer.mozilla.org/en-US/docs/Web/Security/"
 "Same-origin_policy>`__\\ に従います"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:107
-msgid "Exported ``.html`` file must not be reused"
-msgstr "エクスポートされた ``.html`` ファイルを再利用することはできません"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:109
-msgid ""
-"Each project must generate their own HTML file. On export, several text "
-"placeholders are replaced in the **generated HTML file** specifically for "
-"the given export options. Any direct modifications to the **generated HTML "
-"file** will be lost in future exports. To customize the generated file, see :"
-"ref:`doc_customizing_html5_shell`."
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:171
+msgid "Clipboard"
 msgstr ""
-"それぞれのプロジェクトはそれ自身のHTMLファイルを生成しなければなりません。エ"
-"クスポート時に、特定のエクスポートオプション用に **生成されたHTMLファイル** "
-"に複数のテキスト プレースホルダが置き換えられます。他の直接の **生成された"
-"HTMLファイル** への変更は以後のエクスポートでは失われます。生成されたファイル"
-"のカスタマイズは、\\ :ref:`doc_customizing_html5_shell`\\ を見て下さい。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
+msgid ""
+"Clipboard synchronization between engine and the operating system requires a "
+"browser supporting the `Clipboard API <https://developer.mozilla.org/en-US/"
+"docs/Web/API/Clipboard_API>`__, additionally, due to the API asynchronous "
+"nature might not be reliable when accessed from GDScript."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:189
+msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:181
+msgid "Gamepads"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:183
+msgid ""
+"Gamepads will not be detected until one of their button is pressed. Gamepads "
+"might have the wrong mapping depending on the browser/OS/gamepad "
+"combination, sadly the `Gamepad API <https://developer.mozilla.org/en-US/"
+"docs/Web/API/Gamepad_API/Using_the_Gamepad_API>`__ does not provide a "
+"reliable way to detect the gamepad information necessary to remap them based "
+"on model/vendor/OS due to privacy considerations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:192
 msgid "Boot splash is not displayed"
 msgstr "起動スプラッシュが表示されない"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:115
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
 msgid ""
 "The default HTML page does not display the boot splash while loading. "
 "However, the image is exported as a PNG file, so :ref:`custom HTML pages "
@@ -288,70 +434,22 @@ msgstr ""
 "画像はPNGファイルとしてエクスポートされるため、\\ :ref:`カスタムHTMLページ"
 "<doc_customizing_html5_shell>` で表示できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:120
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:199
 #, fuzzy
 msgid "Shader language limitations"
 msgstr "3Dのパフォーマンスと制限"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:122
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:201
 msgid ""
 "When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
 "doesn't support dynamic loops, so shaders using those won't work there."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:126
-msgid "Unimplemented functionality"
-msgstr "実装されていない機能"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:128
-msgid ""
-"The following functionality is currently unavailable on the HTML5 platform:"
-msgstr "現在、HTML5 プラットフォームでは次の機能を使用できません:"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:130
-msgid "Threads"
-msgstr "スレッド"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:131
-msgid "GDNative"
-msgstr "GDNative"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
-msgid "C#"
-msgstr "C#"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:133
-#, fuzzy
-msgid "Clipboard synchronization between engine and operating system"
-msgstr "エンジンとオペレーティングシステム間のクリップボード同期"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:134
-msgid ""
-"Networking other than :ref:`class_HTTPClient` and :ref:"
-"`class_WebSocketClient`"
-msgstr ""
-":ref:`class_HTTPClient` および :ref:`class_WebSocketClient` 以外のネットワー"
-"ク処理"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
-#, fuzzy
-msgid ""
-"Check the `list of open HTML5 issues on GitHub <https://github.com/"
-"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`__ to see "
-"if the functionality you're interested in has an issue yet. If not, open one "
-"to communicate your interest."
-msgstr ""
-"`list of open HTML5 issues on Github <https://github.com/godotengine/godot/"
-"issues?q=is:open+is:issue+label:platform:html5>`__でオープンされているHTML5の"
-"問題のリストをチェックして、疑問に関わる問題がないか確認してみてください。一"
-"覧にない場合は、あなたの知りたいことを伝えるために、新しいIssueをオープンして"
-"ください。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:142
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:205
 msgid "Serving the files"
 msgstr "ファイルの提供"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:144
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
 msgid ""
 "Exporting for the web generates several files to be served from a web "
 "server, including a default HTML page for presentation. A custom HTML file "
@@ -361,7 +459,7 @@ msgstr ""
 "Webサーバーから提供される複数のファイルが生成されます。 カスタムHTMLファイル"
 "を使用できます。\\ :ref:`doc_customizing_html5_shell`\\ を参照して下さい。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:148
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
 msgid ""
 "The generated ``.html`` file can be used as ``DirectoryIndex`` in Apache "
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
@@ -371,7 +469,7 @@ msgstr ""
 "用でき、いつでも ``index.html`` などの名前に変更できますが、その名前はデフォ"
 "ルトでは全く依存しません。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:152
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:215
 msgid ""
 "The HTML page draws the game at maximum size within the browser window. This "
 "way it can be inserted into an ``<iframe>`` with the game's size, as is "
@@ -381,7 +479,7 @@ msgstr ""
 "で、ほとんどのWebゲームホスティングサイトで一般的であるように、ゲームのサイズ"
 "で ``<iframe>`` に挿入できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:156
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:219
 msgid ""
 "The other exported files are served as they are, next to the ``.html`` file, "
 "names unchanged. The ``.wasm`` file is a binary WebAssembly module "
@@ -400,7 +498,7 @@ msgstr ""
 "\\ :ref:`カスタムHTMLページ <doc_customizing_html5_shell>`\\ に含まれていま"
 "す。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:227
 msgid ""
 "The ``.pck`` file is binary, usually delivered with the MIME-type :mimetype:"
 "`application/octet-stream`. The ``.wasm`` file is delivered as :mimetype:"
@@ -410,7 +508,7 @@ msgstr ""
 "stream` で配信されます。``.wasm`` ファイルは :mimetype:`application/wasm` と"
 "して配信されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:168
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:231
 msgid ""
 "Delivering the WebAssembly module (``.wasm``) with a MIME-type other than :"
 "mimetype:`application/wasm` can prevent some start-up optimizations."
@@ -418,7 +516,7 @@ msgstr ""
 ":mimetype:`application/wasm` 以外のMIMEタイプでWebAssemblyモジュール(``."
 "wasm``)を配信すると、起動時の最適化が妨げられる可能性があります。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:172
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:235
 msgid ""
 "Delivering the files with server-side compression is recommended especially "
 "for the ``.pck`` and ``.wasm`` files, which are usually large in size. The "
@@ -429,44 +527,22 @@ msgstr ""
 "ファイルと ``.wasm`` ファイルで特に推奨されます。WebAssemblyモジュールは、"
 "gzip圧縮によって元のサイズの約4分の1にまで圧縮されています。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:178
-msgid "Export options"
-msgstr "エクスポートオプション"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:180
-msgid ""
-"If a runnable web export template is available, a button appears between the "
-"*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
-"the game in the default browser for testing."
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:240
+msgid "**Hosts that provide on-the-fly compression:** GitHub Pages (gzip)"
 msgstr ""
-"実行可能なWeb書き出しテンプレートが使用可能な場合は、エディタの [シーンを停"
-"止] ボタンと [編集したシーンを再生] ボタンの間にボタンが表示され、既定のブラ"
-"ウザでゲームをすばやく開いてテストできます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:184
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:242
 msgid ""
-"If a path to a **Custom HTML shell** file is given, it will be used instead "
-"of the default HTML page. See :ref:`doc_customizing_html5_shell`."
+"**Hosts that don't provide on-the-fly compression:** itch.io, GitLab Pages "
+"(`supports manual gzip precompression <https://webd97.de/post/gitlab-pages-"
+"compression/>`__)"
 msgstr ""
-"カスタムHTMLシェルファイルへのパスが指定されている場合、デフォルトのHTMLペー"
-"ジの代わりにそれが使用されます。\\ :ref:`doc_customizing_html5_shell`\\ を参"
-"照してください。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:187
-msgid ""
-"**Head Include** is appended into the ``<head>`` element of the generated "
-"HTML page. This allows to, for example, load webfonts and third-party "
-"JavaScript APIs, include CSS, or run JavaScript code."
-msgstr ""
-"**Head Include**\\ は、生成されたHTMLページの ``<head>`` 要素に追加されます。"
-"これにより、たとえば、WebfontsやサードパーティのJavaScript APIをロードした"
-"り、CSSを組み込んだり、JavaScriptコードを実行したりできます。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:194
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:248
 msgid "Calling JavaScript from script"
 msgstr "スクリプトからJavaScriptを呼び出す"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:196
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:250
 msgid ""
 "In web builds, the ``JavaScript`` singleton is implemented. It offers a "
 "single method called ``eval`` that works similarly to the JavaScript "
@@ -479,7 +555,7 @@ msgstr ""
 "引数として受け取り、JavaScriptコードとして実行します。これにより、Godotに統合"
 "されたスクリプト言語では不可能な方法でブラウザと対話できます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:207
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:261
 msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
@@ -487,22 +563,22 @@ msgstr ""
 "最後のJavaScriptステートメントの値はGDScriptの値に変換され、特定の状況下では "
 "``eval()`` によって返されます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:210
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:264
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
 msgstr ""
 "JavaScriptの ``number`` はGDScriptの :ref:`class_float` として返されます"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:211
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:265
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
 msgstr ""
 "JavaScriptの ``boolean`` はGDScriptの :ref:`class_bool` として返されます"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:212
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:266
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
 msgstr ""
 "JavaScriptの ``string`` はGDScriptの :ref:`class_String` として返されます"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:213
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:267
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
@@ -510,11 +586,11 @@ msgstr ""
 "JavaScriptの ``ArrayBuffer``, ``TypedArray`` および ``DataView`` はGDScript"
 "の :ref:`class_PoolByteArray` として返されます"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:222
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:276
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "その他の JavaScriptの値は ``null`` として返されます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:224
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:278
 #, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
@@ -528,7 +604,7 @@ msgstr ""
 "eval`` を呼び出すと ``null`` も返されます。 シングルトンの可用性は、 "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`\\ で確認できます:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:238
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:292
 msgid ""
 "GDScript's multi-line strings, surrounded by 3 quotes ``\"\"\"`` as in "
 "``my_func3()`` above, are useful to keep JavaScript code readable."
@@ -536,7 +612,7 @@ msgstr ""
 "上記の ``my_func3()`` のように、3つの引用符 ``\"\"\"`` で囲まれたGDScriptの複"
 "数行の文字列は、JavaScriptコードを読みやすくするのに役立ちます。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:241
+#: ../../docs/getting_started/workflow/export/exporting_for_web.rst:295
 msgid ""
 "The ``eval`` method also accepts a second, optional Boolean argument, which "
 "specifies whether to execute the code in the global execution context, "

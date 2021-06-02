@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:4
-msgid "GI Probes"
-msgstr "GI Probes"
+#, fuzzy
+msgid "Using GIProbe"
+msgstr "GIProbes"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:7
 msgid "Introduction"
@@ -152,6 +153,10 @@ msgid ""
 "sided walls). For interior levels, enclose your level geometry in a "
 "sufficiently large box and bridge the loops to close the mesh."
 msgstr ""
+"Les maillages doivent avoir des parois suffisamment épaisses pour éviter les "
+"fuites de lumière (évitez les parois unilatérales). Pour les niveaux "
+"intérieurs, enfermez la géométrie de votre niveau dans une boîte "
+"suffisamment grande et rapprochez les boucles pour fermer le maillage."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:60
 msgid "Adding lights"

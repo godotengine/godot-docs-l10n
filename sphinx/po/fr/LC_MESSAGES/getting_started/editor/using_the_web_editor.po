@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
-#, fuzzy
 msgid "Using the Web editor"
-msgstr "Exécution de l'éditeur"
+msgstr "Utilisation de l’éditeur Web"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""
 "Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
 "you can use to work on new or existing projects."
 msgstr ""
+"Depuis la version 3.3 de Godot, il y a un éditeur web `éditeur web <https://"
+"editor.godotengine.org/>` pour travailler sur des projets nouveaux ou "
+"existants."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:11
 msgid ""
@@ -34,11 +36,14 @@ msgid ""
 "sufficient for educational purposes, it is currently **not recommended for "
 "production work**. See :ref:`doc_using_the_web_editor_limitations` below."
 msgstr ""
+"Cet éditeur web est dans un état préliminaire. Même si ses fonctionnalités "
+"peuvent être suffisante pour un but éducatif, il n'est actuellement **pas "
+"recommandé pour travailler en production**. Voir :ref:"
+"`doc_using_the_web_editor_limitations` ci dessous."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:16
-#, fuzzy
 msgid "Browser support"
-msgstr "offrir la prise en charge de mods"
+msgstr "Support des navigateurs"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:18
 msgid ""
@@ -46,29 +51,36 @@ msgid ""
 "in turn required to support threading in the browser. The following desktop "
 "browsers support WebAssembly threading and can therefore run the web editor:"
 msgstr ""
+"L'éditeur en ligne a besoin de supporter le SharedArrayBuffer de WebAssembly "
+"(littéralement : la liste de mémoire partagé du langage assembleur pour le "
+"web). Ceci est en effet nécessaire pour pouvoir supporter de multiple fil "
+"d’exécution (threading) sur le navigateur. Les navigateurs de bureau "
+"suivants supportent le l'utilisation de multiple fil d’exécution de "
+"WebAssembly et peuvent donc lancer l'éditeur web :"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:22
 msgid "Chrome 68 or later"
-msgstr ""
+msgstr "Chrome 68 ou version ultérieure"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:23
 msgid "Firefox 79 or later"
-msgstr ""
+msgstr "Firefox 79 ou version ultérieure"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:24
 msgid "Edge 79 or later"
-msgstr ""
+msgstr "Edge 79 ou version ultérieure"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:26
 msgid ""
 "Opera and Safari are not supported yet. Safari may work in the future once "
 "proper threading support is added."
 msgstr ""
+"Opera et Safari ne sont actuellement pas supporté. Safari pourra fonctionner "
+"à l'avenir une fois que la prise en charge des threads sera ajoutée."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:29
-#, fuzzy
 msgid "**Mobile browsers are currently not supported.**"
-msgstr "JDK 9 ou plus ne sont pas pris en charge actuellement."
+msgstr "**Les navigateurs mobiles ne sont actuellement pas pris en charge.**"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:31
 msgid ""
@@ -76,6 +88,9 @@ msgid ""
 "is recommended for better performance and compatibility with old/low-end "
 "hardware."
 msgstr ""
+"L'éditeur Web prend en charge les moteurs de rendu GLES3 et GLES2, bien que "
+"GLES2 soit recommandé pour de meilleures performances et une meilleure "
+"compatibilité avec le matériel ancien / bas de gamme."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:36
 msgid ""
@@ -83,6 +98,9 @@ msgid ""
 "mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
 "based browser instead of Firefox."
 msgstr ""
+"Si vous utilisez Linux, en raison de `mauvaises performances de Firefox "
+"WebGL <https://bugzilla.mozilla.org/show_bug.cgi?id=1010527>` __, il est "
+"recommandé d'utiliser un navigateur basé sur Chromium au lieu de Firefox."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:43
 msgid "Limitations"
@@ -93,15 +111,16 @@ msgid ""
 "Due to limitations on the Godot or Web platform side, the following features "
 "are currently missing:"
 msgstr ""
+"En raison de limitations du côté de la plateforme Godot ou Web, les "
+"fonctionnalités suivantes sont actuellement manquantes :"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:48
-#, fuzzy
 msgid "No C#/Mono support."
-msgstr "|eol| N’est plus supporté."
+msgstr "Pas de support C#/Mono."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:49
 msgid "No GDNative support."
-msgstr ""
+msgstr "GDNative non supporté."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
@@ -109,10 +128,16 @@ msgid ""
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
 msgstr ""
+"Aucun projet d'exportation. Pour contourner ce problème, vous pouvez "
+"télécharger la source du projet en utilisant **Project > Tools > Download "
+"Project Source** et l'exporter en utilisant une `version native de l'éditeur "
+"Godot <https://godotengine.org/download>`__."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
+"L'éditeur ne vous avertira pas lors de la fermeture de l'onglet avec des "
+"modifications non enregistrées."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:54
 msgid ""
@@ -120,56 +145,64 @@ msgid ""
 "were baked with a native version of the Godot editor (e.g. by importing an "
 "existing project)."
 msgstr ""
+"Pas de support pour le baking des lightmaps. Vous pouvez toujours utiliser "
+"les lightmaps existantes si elles ont été créées avec une version native de "
+"l'éditeur Godot (par exemple en important un projet existant)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:58
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
 msgstr ""
+"Il est peu probable que les fonctionnalités suivantes soient prises en "
+"charge en raison des limitations inhérentes à la plate-forme Web :"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:61
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "Pas encore de support pour la sortie MIDI."
+msgstr "Editeurs de scripts externes non-supporté."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:62
-#, fuzzy
 msgid "No support for Android one-click deploy."
-msgstr "Étapes de déploiement en un clic"
+msgstr "Le déploiement en un clic d'Android n'est pas pris en charge."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:66
-#, fuzzy
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
 "github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
 "%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
 msgstr ""
-"Consultez la `liste des issues(problèmes) HTML5 ouvertes sur Github <https://"
-"github.com/godotengine/godot/issues?q=is:open+is:issue+label:platform:"
-"html5>`__ pour voir si la fonctionnalité qui vous intéresse a déjà une "
-"issue. Sinon, ouvrez une pour communiquer votre préoccupation."
+"Voir la `liste des issues ouvertes sur GitHub liées à l'éditeur web <https://"
+"github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
+"%3Ahtml5+label%3Atopic%3Aeditor>`__ pour une liste des bogues connus."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:70
-#, fuzzy
 msgid "Importing a project"
-msgstr "Importation du projet"
+msgstr "Importation d'un projet"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:72
 msgid "To import an existing project, the current process is as follows:"
 msgstr ""
+"Pour importer un projet existant, la procédure actuelle est la suivante :"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:74
+#, fuzzy
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
 msgstr ""
+"Spécifiez un fichier ZIP à précharger sur le système de fichiers HTML5 à "
+"l'aide de l'entrée **Préchargement du projet ZIP**."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:76
+#, fuzzy
 msgid ""
 "Run the editor by clicking **Start Godot editor**. The Godot project manager "
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""
+"Lancez l'éditeur en cliquant sur **Start Godot editor**. Le gestionnaire de "
+"projet Godot devrait apparaître après 10-20 secondes. Sur des machines ou "
+"des connexions plus lentes, le chargement peut prendre jusqu'à une minute."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:79
 msgid ""
@@ -177,28 +210,37 @@ msgid ""
 "the folder to create then click the **Create Folder** button (it doesn't "
 "have to match the ZIP archive's name)."
 msgstr ""
+"Dans la boîte de dialogue qui apparaît au milieu de la fenêtre, indiquez un "
+"nom pour le dossier à créer puis cliquez sur le bouton **Create Folder** (il "
+"n'est pas nécessaire qu'il corresponde au nom de l'archive ZIP)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:82
 msgid "Click **Install & Edit** and the project will open in the editor."
 msgstr ""
+"Cliquez sur **Installer & Éditer** et le projet s'ouvrira dans l'éditeur."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:86
+#, fuzzy
 msgid ""
 "It's important to place the project folder somewhere in ``/home/web_user/``. "
 "If your project folder is placed outside ``/home/web_user/``, you will lose "
 "your project when closing the editor!"
 msgstr ""
+"Il est important de placer le dossier du projet quelque part dans ``/home/"
+"web_user/``. Si votre dossier de projet est placé en dehors de ``/home/"
+"web_user/``, vous perdrez votre projet lors de la fermeture de l'éditeur !"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:90
 msgid ""
 "When you follow the steps described above, the project folder will always be "
 "located in ``/home/web_user/projects``, keeping it safe."
 msgstr ""
+"Lorsque vous suivez les étapes décrites ci-dessus, le dossier du projet sera "
+"toujours situé dans ``/home/web_user/projects``, le gardant en sécurité."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:94
-#, fuzzy
 msgid "Editing and running a project"
-msgstr "Créer un nouveau projet"
+msgstr "Éditer et exécuter un projet"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:96
 msgid ""
@@ -207,19 +249,29 @@ msgid ""
 "project. Instead, when you run the project by clicking the Run button or "
 "pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
 msgstr ""
+"Contrairement à la version native de Godot, l'éditeur web est limité à une "
+"seule fenêtre. Par conséquent, il ne peut pas ouvrir une nouvelle fenêtre "
+"lors de l'exécution du projet. Au lieu de cela, lorsque vous exécutez le "
+"projet en cliquant sur le bouton Run ou en appuyant sur :kbd:`F5`, il "
+"apparaîtra pour \"remplacer\" la fenêtre de l'éditeur."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:101
+#, fuzzy
 msgid ""
 "The web editor offers an alternative way to deal with the editor and game "
 "windows (which are now \"tabs\"). You can switch between the **Editor** and "
 "**Game** tabs using the buttons on the top. You can also close the running "
 "game or editor by clicking the **×** button next to those tabs."
 msgstr ""
+"L'éditeur web offre une autre façon de gérer les fenêtres de l'éditeur et du "
+"jeu (qui sont maintenant des \"onglets\"). Vous pouvez basculer entre les "
+"onglets **Éditeur** et **Jeu** à l'aide des boutons situés en haut. Vous "
+"pouvez également fermer le jeu ou l'éditeur en cours en cliquant sur le "
+"bouton **×** à côté de ces onglets."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:107
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "Où sont mes prefabs ?"
+msgstr "Où sont mes fichiers de projet ?"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:109
 msgid ""
@@ -227,6 +279,10 @@ msgid ""
 "to the browser's IndexedDB storage. This storage isn't accessible as a "
 "regular folder on your machine, but is abstracted away in a database."
 msgstr ""
+"En raison des limitations de sécurité du navigateur, l'éditeur enregistre "
+"les fichiers du projet dans le stockage IndexedDB du navigateur. Ce stockage "
+"n'est pas accessible comme un dossier normal sur votre machine, mais est "
+"abstrait dans une base de données."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:113
 msgid ""
@@ -235,6 +291,11 @@ msgid ""
 "using a `native Godot editor <https://godotengine.org/download>`__, since "
 "exporting from the web editor isn't supported yet."
 msgstr ""
+"Vous pouvez télécharger les fichiers du projet sous forme d'archive ZIP en "
+"utilisant **Projet > Outils > Télécharger la source du projet**. Ceci peut "
+"être utilisé pour exporter le projet en utilisant un `éditeur Godot natif "
+"<https://godotengine.org/download>`__, puisque l'exportation depuis "
+"l'éditeur web n'est pas encore supportée."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:118
 msgid ""
@@ -243,3 +304,8 @@ msgid ""
 "files on the user's filesystem as the native editor would do. However, this "
 "isn't implemented yet."
 msgstr ""
+"Dans le futur, il sera peut-être possible d'utiliser l'API `Système de "
+"fichiers HTML5 <https://developer.mozilla.org/en-US/docs/Web/API/"
+"FileSystem>`__ pour stocker les fichiers du projet sur le système de "
+"fichiers de l'utilisateur comme le ferait l'éditeur natif. Cependant, ceci "
+"n'est pas encore implémenté."

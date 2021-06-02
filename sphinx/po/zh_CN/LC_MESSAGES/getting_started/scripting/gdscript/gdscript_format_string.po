@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript提供了一个名为 *格式字符串* 的功能，该功能允许重用文本模板以简洁地创"
-"建不同但相似的字符串。"
+"GDScript提供了一个名为 *格式字符串* 的功能,该功能允许重用文本模板以简洁地创建"
+"不同但相似的字符串."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -35,8 +35,8 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
-"格式字符串与普通字符串一样，只不过它们包含某些占位符字符序列。然后， 这些占位"
-"符可以轻松地由传递给格式字符串的参数替换。"
+"格式字符串与普通字符串一样,只不过它们包含某些占位符字符序列.然后, 这些占位符"
+"可以轻松地由传递给格式字符串的参数替换."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -45,9 +45,9 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
-"例如，以 ``%s`` 作为占位符，格式字符串 ``\"Hello %s, how are you?`` 可以很容"
-"易地更改为 ``\"Hello World, how are you?\"``。注意占位符在字符串的中间； 在不"
-"使用格式字符串的情况下进行修改可能很麻烦。"
+"例如,以 ``%s`` 作为占位符,格式字符串 ``\"Hello %s, how are you?`` 可以很容易"
+"地更改为 ``\"Hello World, how are you?\"``.注意占位符在字符串的中间； 在不使"
+"用格式字符串的情况下进行修改可能很麻烦."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
@@ -55,7 +55,7 @@ msgstr "在GDScript中的用法"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr "检查这个具体的GDScript示例："
+msgstr "检查这个具体的GDScript示例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -63,8 +63,8 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
-"占位符始终以 ``%`` 开头，但是下一个或多个字符，即 *格式说明符*，决定如何将给"
-"定值转换为字符串。"
+"占位符始终以 ``%`` 开头,但是下一个或多个字符,即 *格式说明符*,决定如何将给定值"
+"转换为字符串."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -75,10 +75,10 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
-"在上面的示例中看到的 ``%s`` 是最简单的占位符，并且适用于大多数用例：它使用与"
-"隐式 ``String`` 转换相同的方法或 ``str()`` 转换值。字符串保持不变，布尔值变"
-"成 ``\"True\"`` 或 ``\"False\"``，整数或实数变为小数，其他类型通常以人类可读"
-"的字符串形式返回其数据。"
+"在上面的示例中看到的 ``%s`` 是最简单的占位符,并且适用于大多数用例:它使用与隐"
+"式 ``String`` 转换相同的方法或 ``str()`` 转换值.字符串保持不变,布尔值变成 ``"
+"\"True\"`` 或 ``\"False\"``,整数或实数变为小数,其他类型通常以人类可读的字符串"
+"形式返回其数据."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -87,26 +87,26 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
-"在 GDScript 中还有另一种格式化文本的方式，即 ``String.format()`` 方法。它将字"
-"符串中所有出现的键替换为相应的值。该方法可以处理数组或键/值对的字典。"
+"在 GDScript 中还有另一种格式化文本的方式,即 ``String.format()`` 方法.它将字符"
+"串中所有出现的键替换为相应的值.该方法可以处理数组或键/值对的字典."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
-"数组可以用作键，索引或混合样式（请参见以下示例）。仅当使用数组的索引或混合样"
-"式时，顺序才重要。"
+"数组可以用作键,索引或混合样式(请参见以下示例).仅当使用数组的索引或混合样式时,"
+"顺序才重要."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
 msgid "A quick example in GDScript:"
-msgstr "GDScript中的一个简单示例："
+msgstr "GDScript中的一个简单示例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
-msgstr "还有其他 `格式说明符`_，但是它们仅在使用 ``%`` 操作符时适用。"
+msgstr "还有其他 `格式说明符`_,但是它们仅在使用 ``%`` 操作符时适用."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
@@ -118,16 +118,16 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
-"格式字符串可能包含多个占位符。在这种情况下，这些值以数组的形式处理，每个占位"
-"符一个值（除非使用带 ``*`` 的格式说明符，请参见 `动态填充`_）："
+"格式字符串可能包含多个占位符.在这种情况下,这些值以数组的形式处理,每个占位符一"
+"个值(除非使用带 ``*`` 的格式说明符,请参见 `动态填充`_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
-"请注意，这些值是按顺序插入的。请记住，必须同时替换所有占位符，因此必须有适当"
-"数量的值。"
+"请注意,这些值是按顺序插入的.请记住,必须同时替换所有占位符,因此必须有适当数量"
+"的值."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
@@ -140,9 +140,9 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
-"除 ``s`` 之外， 还有其他格式说明符可以在占位符中使用。它们由一个或多个字符组"
-"成。其中一些像 ``s`` 一样自行工作，另一些出现在其他字符之前，还有一些仅适用于"
-"特定的值或字符。"
+"除 ``s`` 之外, 还有其他格式说明符可以在占位符中使用.它们由一个或多个字符组成."
+"其中一些像 ``s`` 一样自行工作,另一些出现在其他字符之前,还有一些仅适用于特定的"
+"值或字符."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
@@ -154,8 +154,8 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
-"有且只有其中一个作为最后一个字符在格式说明符中出现。除了 ``s`` 外， 这些格式"
-"说明符还需要特定类型的参数。"
+"有且只有其中一个作为最后一个字符在格式说明符中出现.除了 ``s`` 外, 这些格式说"
+"明符还需要特定类型的参数."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
@@ -165,7 +165,7 @@ msgstr "``s``"
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
-msgstr "通过隐式 ``String`` 转换的相同方法 **简单** 转换为 ``String``。"
+msgstr "通过隐式 ``String`` 转换的相同方法 **简单** 转换为 ``String``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
@@ -176,8 +176,7 @@ msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
-"单个 **Unicode 字符**。对于代码点或单个字符， 需要一个无符号的8位整数"
-"（0-255）。"
+"单个 **Unicode 字符**.对于代码点或单个字符, 需要一个无符号的8位整数(0-255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
@@ -187,7 +186,7 @@ msgstr "``d``"
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
-msgstr "一个 **十进制** 整数。需要一个整数或实数（向下取整）。"
+msgstr "一个 **十进制** 整数.需要一个整数或实数(向下取整)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
@@ -197,7 +196,7 @@ msgstr "``o``"
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
-msgstr "一个 **八进制** 整数。需要一个整数或实数（向下取整）。"
+msgstr "一个 **八进制** 整数.需要一个整数或实数(向下取整)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
@@ -207,8 +206,7 @@ msgstr "``x``"
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
-msgstr ""
-"一个 **小写** 字母的 **十六进制** 整数。需要一个整数或实数（向下取整）。"
+msgstr "一个 **小写** 字母的 **十六进制** 整数.需要一个整数或实数(向下取整)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
@@ -218,8 +216,7 @@ msgstr "``X``"
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
-msgstr ""
-"一个 **大写** 字母的 **十六进制** 整数。需要一个整数或实数（向下取整）。"
+msgstr "一个 **大写** 字母的 **十六进制** 整数.需要一个整数或实数(向下取整)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
@@ -227,7 +224,7 @@ msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr "一个 **十进制** 实数。需要一个整数或实数。"
+msgstr "一个 **十进制** 实数.需要一个整数或实数."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
@@ -237,7 +234,7 @@ msgstr "占位符的修饰符"
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
-msgstr "这些字符在上述占位符前出现。其中一些只在特定情况下生效。"
+msgstr "这些字符在上述占位符前出现.其中一些只在特定情况下生效."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
@@ -245,7 +242,7 @@ msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr "用在数字说明符中，如果为正 **显示 + 号** 。"
+msgstr "用在数字说明符中,如果为正 **显示 + 号** ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
@@ -256,8 +253,8 @@ msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
-"设置 **填充** 。用空格填充，或在一个整数占位符中如果整数以 ``0`` 开头，则用0"
-"填充。当使用在 ``.`` 后时，参见 ``.`` 。"
+"设置 **填充** .用空格填充,或在一个整数占位符中如果整数以 ``0`` 开头,则用0填"
+"充.当使用在 ``.`` 后时,参见 ``.`` ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
@@ -267,7 +264,7 @@ msgstr "``.``"
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
-msgstr "在 ``f`` 之前，设置 **精度** 到0小数位。可以跟数字来改变。用零填充。"
+msgstr "在 ``f`` 之前,设置 **精度** 到0小数位.可以跟数字来改变.用零填充."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
@@ -275,7 +272,7 @@ msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr "**向右填充** 而不是向左。"
+msgstr "**向右填充** 而不是向左."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
@@ -286,8 +283,7 @@ msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
-"**动态填充**，在 ``.`` 后期望额外的整数参数来设置填充或精度。参见 `动态填充"
-"`_。"
+"**动态填充**,在 ``.`` 后期望额外的整数参数来设置填充或精度.参见 `动态填充`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
@@ -299,19 +295,18 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
-"字符 ``.`` （*句号*）、``*`` （*星号*）、``-`` （*减号*）和数字（``0``-"
-"``9``）用于填充。这允许竖直对齐打印几个值，就像在一列中使用提供固定宽度的字体"
-"一样。"
+"字符 ``.`` (*句号*)、``*`` (*星号*)、``-`` (*减号*)和数字(``0``-``9``)用于填"
+"充.这允许竖直对齐打印几个值,就像在一列中使用提供固定宽度的字体一样."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
-msgstr "要使字符串满足一个最小长度，需要在标识符前添加一个整数："
+msgstr "要使字符串满足一个最小长度,需要在标识符前添加一个整数:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
-msgstr "如果这个整数以 ``0`` 开头，那么整数值将用0填充，而不是空格："
+msgstr "如果这个整数以 ``0`` 开头,那么整数值将用0填充,而不是空格:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -320,14 +315,14 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
-"可以通过添加 ``.`` （*点*）并后跟一个整数来指定实数的精度。``.`` 后没整数时，"
-"精度为0，舍入为整数值。要用于填充的整数则必须出现在点之前。"
+"可以通过添加 ``.`` (*点*)并后跟一个整数来指定实数的精度.``.`` 后没整数时,精度"
+"为0,舍入为整数值.要用于填充的整数则必须出现在点之前."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
-msgstr "``-`` 字符将导致向右而不是向左填充，对文本右对齐很有用："
+msgstr "``-`` 字符将导致向右而不是向左填充,对文本右对齐很有用:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -340,14 +335,14 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
-"通过使用 ``*`` （ *星号* ）字符，可以在不修改格式字符串的情况下设置填充或精"
-"度。它用于代替格式说明符中的整数。然后在格式化时传递填充和精度的值："
+"通过使用 ``*`` ( *星号* )字符,可以在不修改格式字符串的情况下设置填充或精度.它"
+"用于代替格式说明符中的整数.然后在格式化时传递填充和精度的值:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
-msgstr "通过在 ``*`` 之前添加 ``0`` ，仍然可以在整数占位符中填充0："
+msgstr "通过在 ``*`` 之前添加 ``0`` ,仍然可以在整数占位符中填充0:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
@@ -358,8 +353,8 @@ msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
-"要将文字 ``%`` 字符插入格式字符串中，必须对其进行转义以避免将其读取为占位符。"
-"这是通过将字符加倍来完成的："
+"要将文字 ``%`` 字符插入格式字符串中,必须对其进行转义以避免将其读取为占位符.这"
+"是通过将字符加倍来完成的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -369,7 +364,7 @@ msgstr "格式方法示例"
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
-msgstr "以下是如何使用 ``String.format`` 方法的各种调用的一些示例。"
+msgstr "以下是如何使用 ``String.format`` 方法的各种调用的一些示例."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
@@ -476,11 +471,11 @@ msgstr "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
-msgstr "使用 ``String.format`` 时，也可以自定义占位符，这是该功能的一些示例。"
+msgstr "使用 ``String.format`` 时,也可以自定义占位符,这是该功能的一些示例."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr "中缀（默认）"
+msgstr "中缀(默认)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
@@ -514,8 +509,8 @@ msgid ""
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
-"结合 ``String.format`` 方法和 ``％`` 运算符可能很有用，因为 ``String."
-"format`` 没有办法操纵数字的表示。"
+"结合 ``String.format`` 方法和 ``％`` 运算符可能很有用,因为 ``String.format`` "
+"没有办法操纵数字的表示."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid ""

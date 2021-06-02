@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:4
 msgid "Recording with microphone"
-msgstr ""
+msgstr "Запись с микрофона"
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:6
 msgid ""
 "Godot supports in-game audio recording for Windows, macOS, Linux, Android "
 "and iOS."
 msgstr ""
+"Godot поддерживает запись звука в игре для Windows, macOS, Linux, Android и "
+"iOS."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:9
 msgid ""
@@ -33,6 +35,9 @@ msgid ""
 "support for this tutorial: `<https://github.com/godotengine/godot-demo-"
 "projects/tree/master/audio/mic_record>`_."
 msgstr ""
+"Простая демонстрация включена в официальные демонстрационные проекты и будет "
+"использоваться в качестве примера для этого руководства: <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/audio/mic_record> `_."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:14
 #, fuzzy
@@ -44,6 +49,8 @@ msgid ""
 "The demo consists of a single scene. This scene includes two major parts: "
 "the GUI and the audio."
 msgstr ""
+"Демо состоит из одной сцены. Эта сцена состоит из двух основных частей: "
+"графическая часть и интерфейс звука."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:19
 msgid ""
@@ -51,6 +58,9 @@ msgid ""
 "the effect ``Record`` is created to handle the audio recording. An "
 "``AudioStreamPlayer`` named ``AudioStreamRecord`` is used for recording."
 msgstr ""
+"Мы сосредоточимся на звуковой части. В этой демо для обработки аудиозаписи "
+"создается шина с именем Record и эффектом Record. Для записи используется "
+"AudioStreamPlayer с именем AudioStreamRecord."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:55
 msgid ""
@@ -61,6 +71,11 @@ msgid ""
 "`set_recording_active() "
 "<class_AudioEffectRecord_method_set_recording_active>`."
 msgstr ""
+"Аудиозапись обрабатывается с помощью: ref: `class_AudioEffectRecord`, "
+"который имеет три метода:: ref:` get_recording () "
+"<class_AudioEffectRecord_method_get_recording> `,: ref:` is_recording_active "
+"() <class_Audio_AudioEffect_Record_method_is_recording: ) "
+"<class_AudioEffectRecord_method_set_recording_active> `."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:102
 msgid ""
@@ -68,6 +83,8 @@ msgid ""
 "presses the ``RecordButton``, the effect is enabled with "
 "``set_recording_active(true)``."
 msgstr ""
+"В начале демо запись не активна. Когда пользователь нажимает кнопку "
+"RecordButton, запись включается с помощью set_recording_active (true)."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:106
 msgid ""
@@ -75,15 +92,22 @@ msgid ""
 "the recorded stream can be stored into the ``recording`` variable by calling "
 "``effect.get_recording()``."
 msgstr ""
+"При следующем нажатии кнопки, так как effect.is_recording_active () имеет "
+"значение true, записанный поток можно сохранить в переменной record, вызвав "
+"метод effect.get_recording ()."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:140
 msgid ""
 "To playback the recording, you assign the recording as the stream of the "
 "``AudioStreamPlayer`` and call ``play()``."
 msgstr ""
+"Чтобы воспроизвести запись, вы назначаете её как поток 'AudioStreamPlayer' и "
+"вызываете ''play.)'."
 
 #: ../../docs/tutorials/audio/recording_with_microphone.rst:160
 msgid ""
 "To save the recording, you call ``save_to_wav()`` with the path to a file. "
 "In this demo, the path is defined by the user via a ``LineEdit`` input box."
 msgstr ""
+"Чтобы сохранить запись, вы вызываете save_to_wav () с указанием пути к "
+"файлу. В этой демо путь определяется пользователем через поле ввода LineEdit."

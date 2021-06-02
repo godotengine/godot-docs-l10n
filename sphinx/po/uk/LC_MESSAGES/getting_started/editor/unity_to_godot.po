@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,15 +31,14 @@ msgstr ""
 "Unity, і має допомогти вам перенести наявний досвід Unity у світ Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:15
-#, fuzzy
 msgid ""
 "This article talks about older versions of Unity. Nestable prefabs ('Nested "
 "prefabs') were added to Unity 2018.3. Nestable prefabs are analogous to "
 "Godot's scenes, and allow a more Godot-like approach to scene organization."
 msgstr ""
 "У цій статті йдеться про старіші версії Unity. До Unity 2018.3 додано "
-"префаби. Префаби є аналогічні сценам у Godot і дозволяють підходити до "
-"організації сцени в стилі Godot."
+"нестабільні префаби. Ці префаби є аналогічні сценам у Godot і дозволяють "
+"підходити до організації сцени в стилі Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "Differences"
@@ -106,6 +105,8 @@ msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, PlayStation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
@@ -129,7 +130,7 @@ msgstr "**Консолі:** Дивіться :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid "Scene system"
@@ -161,11 +162,12 @@ msgstr "Visual Studio або VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Можна використовувати зовнішні редактори <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ""
+":ref:`Android SDK для експорту під Android <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:40
 msgid "Notable advantages"
@@ -186,10 +188,11 @@ msgstr "Система сцен"
 #: ../../docs/getting_started/editor/unity_to_godot.rst:41
 msgid ":ref:`Animation Pipeline <doc_animations>`"
 msgstr ""
+":ref:`Рядок відтворення анімації (Animation Pipeline) <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:42
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Легко писати шейдери <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:43
 msgid "Debug on Device"
@@ -295,6 +298,9 @@ msgid ""
 "\"Camera Override\" button in the editor viewport, which will switch between "
 "using the editor view and the game camera view."
 msgstr ""
+"Запущену гру можна досліджувати з різних сторін, перемикаючи кнопку \"Заміна "
+"камери\" у вікні перегляду редактора, яка перемикається між використанням "
+"режиму перегляду редактора та видом з ігрової камери."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid ""
@@ -312,13 +318,12 @@ msgid "The scene system"
 msgstr "Система сцен"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and the "
 "favorite feature of most Godot users."
 msgstr ""
-"Це найважливіша відмінність між Unity й Godot та улюблена особливість "
-"більшості користувачів Godot."
+"Це найважливіша відмінність між Unity й Godot та улюблена функція більшості "
+"користувачів Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
@@ -411,7 +416,6 @@ msgid "**A scene for the Enemy.**"
 msgstr "**Сцена для ворога**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:118
-#, fuzzy
 msgid ""
 "An enemy is also an element we'd like to use in several scenes. It's almost "
 "the same as the Player node. The only differences are the script (it needs "
@@ -428,7 +432,6 @@ msgid "**A Level scene.**"
 msgstr "**Сцена рівня**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:124
-#, fuzzy
 msgid ""
 "A Level scene is composed of Bricks (for platforms), Coins (for the player "
 "to collect) and a number of instances of the Enemy scene. Each instance is a "
@@ -437,9 +440,9 @@ msgid ""
 "You can set different properties for each Enemy node (to change its color, "
 "for example)."
 msgstr ""
-"Сцена рівня складається з Цегли (для платформ), Монет (які гравець буде "
+"Сцена Рівень складається з Цегли (для платформ), Монет (які гравець буде "
 "збирати) та кількох екземплярів сцени Ворога. Кожен екземпляр - це вузол у "
-"дереві сцени рівня. Ці екземпляри є окремими ворогами, які спочатку мають "
+"дереві сцени Рівень. Ці екземпляри є окремими ворогами, які спочатку мають "
 "спільну поведінку та зовнішній вигляд, як визначено у сцені Ворога. Ви "
 "можете встановити різні властивості для кожного вузла Ворога (наприклад, "
 "змінити його колір)."
@@ -652,7 +655,6 @@ msgstr ""
 "вечора для досвідченого програміста до тижня для початківця."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:204
-#, fuzzy
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behavior to the GameObject: For example, you can attach a "

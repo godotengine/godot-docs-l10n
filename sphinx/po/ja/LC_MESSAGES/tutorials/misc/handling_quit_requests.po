@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,3 +90,23 @@ msgid ""
 msgstr ""
 "デフォルトでは、Godotアプリには、終了が要求されたときに終了する組み込みの動作"
 "があり、これを変更できることに注意してください:"
+
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:64
+#, fuzzy
+msgid "Sending your own quit notification"
+msgstr "通知の処理"
+
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:66
+msgid ""
+"While forcing the application to close can be done by calling :ref:"
+"`SceneTree.quit <class_SceneTree_method_quit>`, doing so will not send the "
+"quit *notification*. This means the function described above won't be "
+"called. Quitting by calling :ref:`SceneTree.quit "
+"<class_SceneTree_method_quit>` will not allow custom actions to complete "
+"(such as saving, confirming the quit, or debugging), even if you try to "
+"delay the line that forces the quit."
+msgstr ""
+
+#: ../../docs/tutorials/misc/handling_quit_requests.rst:73
+msgid "Instead, you should send a quit request:"
+msgstr ""

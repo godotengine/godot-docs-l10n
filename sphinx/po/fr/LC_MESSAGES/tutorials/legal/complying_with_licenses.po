@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -224,7 +224,6 @@ msgid "Third-party licenses"
 msgstr "Licences de tiers"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:84
-#, fuzzy
 msgid ""
 "Godot itself contains software written by `third parties <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_. Most of it does not require "
@@ -235,9 +234,11 @@ msgid ""
 msgstr ""
 "Godot lui-même contient des logiciels écrits par des `tiers <https://github."
 "com/godotengine/godot/blob/master/COPYRIGHT.txt>`_. La plupart d'entre eux "
-"ne nécessitent pas l'inclusion d'une licence, mais c'est nécessaire "
-"certains. Assurez-vous de le faire si vous les utilisez. Voici une liste de "
-"ceux qui le nécessitent :"
+"ne nécessitent pas l'inclusion d'une licence, mais c'est nécessaire pour "
+"certains. Assurez-vous de le faire si ceux-ci sont compilés dans votre "
+"modèle d'exportation Godot. Si vous utilisez les modèles d'exportation "
+"officiels, toutes les bibliothèques sont activées. Cela signifie que vous "
+"devez fournir l'attribution pour toutes les bibliothèques listées ci-dessous."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:91
 msgid "Here's a list of libraries requiring attribution:"
@@ -270,14 +271,13 @@ msgid "ENet"
 msgstr "ENet"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:105
-#, fuzzy
 msgid ""
 "Godot includes the `ENet <http://enet.bespin.org/>`_ library to handle high-"
 "level multiplayer. ENet has similar licensing terms as Godot:"
 msgstr ""
-"Si le projet créé est un jeu multijoueur utilisant le pilote `ENet <http://"
-"enet.bespin.org/>`_, ENet a des conditions de licence similaires à celles de "
-"Godot"
+"Godot inclut la bibliothèque `ENet <http://enet.bespin.org/>`_ pour gérer le "
+"multijoueur de haut niveau. ENet a des conditions de licence similaires à "
+"celles de Godot :"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:109
 #, fuzzy

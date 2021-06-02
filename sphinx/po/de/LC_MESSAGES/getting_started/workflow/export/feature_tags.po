@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -344,11 +344,20 @@ msgstr ""
 "Nach dem Überschreiben wird ein neues Feld für diese spezielle Konfiguration "
 "hinzugefügt:"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:113
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:114
+msgid ""
+"When using the :ref:`project settings \"override.cfg\" functionality "
+"<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
+"feature tags still apply. Therefore, make sure to *also* override the "
+"setting with the desired feature tag(s) if you want them to override base "
+"project settings on all platforms and configurations."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:122
 msgid "Default overrides"
 msgstr "Standardüberschreibungen"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:115
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:124
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
@@ -357,11 +366,11 @@ msgstr ""
 "Überschreibungen versehen sind; sie sind in vielen Abschnitten der "
 "Projekteinstellungen zu finden."
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:121
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:130
 msgid "Customizing the build"
 msgstr "Den Build anpassen"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:123
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:132
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "

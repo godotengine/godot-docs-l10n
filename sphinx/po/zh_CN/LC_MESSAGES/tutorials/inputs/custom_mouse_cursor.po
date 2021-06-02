@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
-#, fuzzy
 msgid "Customizing the mouse cursor"
 msgstr "自定义鼠标光标"
 
@@ -28,8 +27,7 @@ msgid ""
 "order to suit the overall design. There are two ways to customize the mouse "
 "cursor:"
 msgstr ""
-"您可能希望更改游戏中鼠标光标的外观，以便适应总体设计。自定义鼠标光标有两种方"
-"法:"
+"您可能希望更改游戏中鼠标光标的外观,以便适应总体设计.自定义鼠标光标有两种方法:"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:25
@@ -42,13 +40,12 @@ msgid "Using a script"
 msgstr "使用脚本"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
-#, fuzzy
 msgid ""
 "Using project settings is a simpler (but more limited) way to customize the "
 "mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
-"使用项目设置是自定义鼠标光标的更简单但是更有限的方法。第二种方式更具可定制"
-"性，但涉及脚本编写。"
+"使用项目设置是一种更简单,但有限的自定义鼠标光标的方法.第二种方法更可定制,但涉"
+"及到脚本."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:15
 msgid ""
@@ -58,24 +55,24 @@ msgid ""
 "cursor. Therefore, it's recommended to use the approach described here "
 "whenever possible."
 msgstr ""
-"您可以通过隐藏鼠标光标并将Sprite移动到``_process``方法中的光标位置来显示“软"
-"件”鼠标光标，但与“硬件”鼠标光标相比，这至少会增加一帧延迟。因此，建议尽可能使"
-"用此处描述的方法。"
+"您可以通过隐藏鼠标光标并将Sprite移动到``_process``方法中的光标位置来显示\"软"
+"件\"鼠标光标,但与\"硬件\"鼠标光标相比,这至少会增加一帧延迟.因此,建议尽可能使"
+"用此处描述的方法."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:21
 msgid ""
 "If you have to use the \"software\" approach, consider adding an "
 "extrapolation step to better display the actual mouse input."
 msgstr ""
-"如果您必须使用“软件”方法，可以考虑添加一个外推步骤，以便更好地显示实际的鼠标"
-"输入。"
+"如果您必须使用\"软件\"方法,可以考虑添加一个外推步骤,以便更好地显示实际的鼠标"
+"输入."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:27
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
-"打开项目设置，转到 Display>Mouse Cursor。您将看到自定义图像和自定义图像热点。"
+"打开项目设置,转到 Display>Mouse Cursor.您将看到自定义图像和自定义图像热点."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:31
 msgid ""
@@ -83,25 +80,24 @@ msgid ""
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
-"自定义图像是希望设置为鼠标光标的图像。自定义热点是图像中的点，您希望将其用作"
-"光标的检测点。"
+"自定义图像是希望设置为鼠标光标的图像.自定义热点是图像中的点,您希望将其用作光"
+"标的检测点."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:34
 msgid "The custom image **must** be less than 256x256."
-msgstr "自定义图像 **必须** 小于256x256。"
+msgstr "自定义图像 **必须** 小于256x256."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:39
 msgid "Create a Node and attach the following script."
-msgstr "创建一个节点并附加下面的脚本。"
+msgstr "创建一个节点并附加下面的脚本."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:77
-#, fuzzy
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
 "检查 :ref:`Input.set_custom_mouse_cursor() "
-"<class_Input_method_set_custom_mouse_cursor>`。"
+"<class_Input_method_set_custom_mouse_cursor>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:81
 msgid "Demo project"
@@ -125,5 +121,5 @@ msgid ""
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
 "Which ones you want to use depends on your use case."
 msgstr ""
-"正如 :ref:`Input <class_Input>` 类(参见 **CursorShape** enum)中所述，可以定义"
-"多个鼠标光标。您想要使用哪一个取决于您的用例。"
+"正如 :ref:`Input <class_Input>` 类(参见 **CursorShape** enum)中所述,可以定义"
+"多个鼠标光标.您想要使用哪一个取决于您的用例."

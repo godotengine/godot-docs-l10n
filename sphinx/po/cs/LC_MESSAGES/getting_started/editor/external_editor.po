@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Použití externího textového editoru"
 
 #: ../../docs/getting_started/editor/external_editor.rst:8
 msgid ""
 "`External editors are currently incompatible with Godot's \"Sync Script "
 "Changes\" feature. <https://github.com/godotengine/godot/issues/10946>`__"
 msgstr ""
+"`Externí editory jsou v současné době nekompatibilní s funkcí "
+"\"Synchronizovat změny skriptů\" systému Godot. <https://github.com/"
+"godotengine/godot/issues/10946>`__"
 
 #: ../../docs/getting_started/editor/external_editor.rst:10
 msgid ""
@@ -34,6 +37,10 @@ msgid ""
 "relevant editor settings via: ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Godot lze používat s externím textovým editorem, například Sublime Text nebo "
+"Visual Studio Code. Chcete-li povolit externí textový editor, přejděte do "
+"nastavení příslušného editoru prostřednictvím: ``Editor -> Nastavení editoru "
+"-> Textový editor -> Externí``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:16
 msgid ""
@@ -42,50 +49,54 @@ msgid ""
 "open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
+"Jsou zde dvě pole: cesta ke spustitelnému souboru a příznaky příkazového "
+"řádku. Příznaky umožňují integrovat editor s Godotem a předat mu cestu k "
+"souboru, který má otevřít, a další relevantní argumenty. Godot nahradí v "
+"řetězci příznaků následující zástupné znaky:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Pole v položce příznaků příkazového řádků"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "Is replaced with"
-msgstr ""
+msgstr "je nahrazeno"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "``{project}``"
-msgstr ""
+msgstr "``{project}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Absolutní cesta k adresáři projektu"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "``{file}``"
-msgstr ""
+msgstr "``{file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Absolutní cesta k souboru"
 
 #: ../../docs/getting_started/editor/external_editor.rst:28
 msgid "``{col}``"
-msgstr ""
+msgstr "``{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:28
 msgid "The column number of the error"
-msgstr ""
+msgstr "Číslo sloupce chyby"
 
 #: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "``{line}``"
-msgstr ""
+msgstr "``{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:30
 msgid "The line number of the error"
-msgstr ""
+msgstr "Číslo řádku chyby"
 
 #: ../../docs/getting_started/editor/external_editor.rst:33
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Příklady příznaků příkazového řádku pro různé editory :"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Editor"
@@ -93,48 +104,48 @@ msgstr "Editor"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "Exec Flags"
-msgstr ""
+msgstr "Příznaky příkazového řádku"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "Geany/Kate"
-msgstr ""
+msgstr "Geany/Kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "``{file} --line {line} --column {col}``"
-msgstr ""
+msgstr "``{file} --line {line} --column {col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "Atom/Sublime Text"
-msgstr ""
+msgstr "Atom/Sublime Text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:40
 msgid "``{file}:{line}``"
-msgstr ""
+msgstr "``{file}:{line}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "JetBrains Rider"
-msgstr ""
+msgstr "JetBrains Rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:42
 msgid "``--line {line} {file}``"
-msgstr ""
+msgstr "``--line {line} {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:44
 msgid "Visual Studio Code"
-msgstr ""
+msgstr "Visual Studio Code"
 
 #: ../../docs/getting_started/editor/external_editor.rst:44
 msgid "``{project} --goto {file}:{line}:{col}``"
-msgstr ""
+msgstr "``{project} --goto {file}:{line}:{col}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "Vim (gVim)"
-msgstr ""
+msgstr "Vim (gVim)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:46
 msgid "``\"+call cursor({line}, {col})\" {file}``"
-msgstr ""
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:49
 msgid "For Visual Studio Code you will have to point to the ``code.cmd`` file."
-msgstr ""
+msgstr "V případě Visual Studio Code je třeba odkázat na soubor ``code.cmd``."

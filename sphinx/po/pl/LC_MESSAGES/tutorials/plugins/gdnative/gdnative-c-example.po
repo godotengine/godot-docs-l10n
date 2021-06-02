@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,9 +69,8 @@ msgid "Prerequisites"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:49
-#, fuzzy
 msgid "Before we start you'll need a few things:"
-msgstr "Zanim zaczniesz będziesz potrzebował kilka rzeczy."
+msgstr "Zanim zaczniesz będziesz potrzebował kilka rzeczy:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:51
 msgid "A Godot executable for your target version."
@@ -85,13 +84,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:55
-#, fuzzy
 msgid ""
 "A Git clone of the `godot_headers repository <https://github.com/godotengine/"
 "godot_headers>`_: these are the C headers for Godot's public API exposed to "
 "GDNative."
 msgstr ""
-"Skopiuj to repozytorium: https://github.com/GodotNativeTools/godot_headers"
+"Skopiuj to repozytorium: https://github.com/GodotNativeTools/godot_headers."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:59
 msgid ""
@@ -476,9 +474,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:439
-#, fuzzy
 msgid "Platform libraries"
-msgstr "Nazwa platformy."
+msgstr "Nazwa platformy"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:441
 msgid ""
@@ -533,7 +530,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:497
 msgid ""
 "With our ``.gdnlib`` file we've told Godot how to load our library, now we "
-"need to tell it about our \"Simple\" object class. We do this by creating a :"
+"need to tell it about our \"SIMPLE\" object class. We do this by creating a :"
 "ref:`NativeScript <class_NativeScript>` resource file with ``.gdns`` "
 "extension."
 msgstr ""
@@ -547,7 +544,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:506
 msgid ""
 "The inspector will show a few properties that we need to fill. As *Class "
-"Name* we enter \"Simple\" which is the object class name that we declared in "
+"Name* we enter \"SIMPLE\" which is the object class name that we declared in "
 "our C source when calling ``godot_nativescript_register_class``. We also "
 "need to select our ``.gdnlib`` file by clicking on *Library* and selecting "
 "*Load*:"

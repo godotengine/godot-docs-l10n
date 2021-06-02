@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
-msgid "RigidBody"
-msgstr "RigidBody (Starre Körper)"
+#, fuzzy
+msgid "Using RigidBody"
+msgstr "Nutzung von RigidBody2D"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
@@ -44,11 +45,14 @@ msgid "How to control a rigid body"
 msgstr "Wie man einen starren Körper kontrolliert"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
+#, fuzzy
 msgid ""
 "A rigid body's behavior can be altered by setting its properties, such as "
-"friction, mass, bounce, etc. These properties can be set in the Inspector or "
-"via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
-"properties and their effects."
+"mass and weight. A physics material needs to be added to the rigid body to "
+"adjust its friction and bounce, and set if it's absorbent and/or rough. "
+"These properties can be set in the Inspector or via code. See :ref:"
+"`RigidBody <class_RigidBody>` and :ref:`PhysicsMaterial "
+"<class_PhysicsMaterial>` for the full list of properties and their effects."
 msgstr ""
 "Das Verhalten eines starren Körpers kann durch Festlegen seiner "
 "Eigenschaften wie Reibung, Masse, Sprungkraft usw. geändert werden. Diese "
@@ -56,7 +60,7 @@ msgstr ""
 "vollständige Liste der Eigenschaften und ihrer Auswirkungen finden Sie "
 "unter :ref:`RigidBody <class_RigidBody>`."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:17
+#: ../../docs/tutorials/physics/rigid_body.rst:21
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
@@ -64,7 +68,7 @@ msgstr ""
 "Abhängig von Ihrer gewünschten Anwendung gibt es verschiedene Möglichkeiten, "
 "die Bewegung eines starren Körpers zu steuern."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:19
+#: ../../docs/tutorials/physics/rigid_body.rst:23
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
@@ -88,7 +92,7 @@ msgstr ""
 "Physiksimulation unterbrochen wird. Im Folgenden wird gezeigt, wie dies "
 "korrekt implementiert wird."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:22
+#: ../../docs/tutorials/physics/rigid_body.rst:26
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
@@ -103,11 +107,11 @@ msgstr ""
 "Sie *Kräfte* hinzufügen, *Impulse* anwenden oder die *Geschwindigkeit* "
 "einstellen, um jede gewünschte Bewegung zu erzielen."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:25
+#: ../../docs/tutorials/physics/rigid_body.rst:29
 msgid "The \"look at\" method"
 msgstr "Die \"look at\" -Methode"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:27
+#: ../../docs/tutorials/physics/rigid_body.rst:31
 msgid ""
 "As described above, using the Spatial node's ``look_at()`` method can't be "
 "used each frame to follow a target. Here is a custom ``look_at()`` method "
@@ -118,7 +122,7 @@ msgstr ""
 "folgen. Hier ist eine benutzerdefinierte ``look_at() ``-Methode, die "
 "zuverlässig mit starren Körpern funktioniert:"
 
-#: ../../docs/tutorials/physics/rigid_body.rst:69
+#: ../../docs/tutorials/physics/rigid_body.rst:73
 msgid ""
 "This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
@@ -131,7 +135,7 @@ msgstr ""
 "die erforderlich ist, um sich in der Zeit eines Frames um diesen Betrag zu "
 "drehen."
 
-#: ../../docs/tutorials/physics/rigid_body.rst:71
+#: ../../docs/tutorials/physics/rigid_body.rst:75
 msgid ""
 "This script will not work with rigid bodies in *character mode* because "
 "then, the body's rotation is locked. In that case, you would have to rotate "

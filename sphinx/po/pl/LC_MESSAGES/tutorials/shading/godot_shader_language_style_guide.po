@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,13 +80,12 @@ msgid "Encoding and special characters"
 msgstr "Obsługa powiadomień"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:55
-#, fuzzy
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
 msgstr ""
 "Podczas tworzenia nowego pliku upewnij się, że do łamania linii użyto znaków "
-"Linefeed (*LF*), a nie *CRLF* lub *CR*."
+"Linefeed (*LF*), a nie *CRLF* lub *CR*"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:56
 msgid "Use one line feed character at the end of each file. *(editor default)*"
@@ -99,9 +98,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:58
-#, fuzzy
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
-msgstr "Użyj 4 spacji zamiast tabulacji (nazywanymi 'miękkimi tabulatorami')."
+msgstr "Użyj **Tabs** zamiast spacji (nazywanymi 'miękkimi tabulatorami')"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:61
 msgid "Indentation"
@@ -165,9 +163,8 @@ msgid "Blank lines"
 msgstr "Puste wiersze"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:134
-#, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
-msgstr "Funkcje i definicje klas otocz pustymi liniami."
+msgstr "Funkcje i definicje klas otocz pustymi liniami:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:146
 #, fuzzy
@@ -294,22 +291,20 @@ msgid "Functions and variables"
 msgstr "Funkcje i Zmienne"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:302
-#, fuzzy
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "Funkcje i Zmienne"
+msgstr "Użyj snake\\_case ,aby nazwać funkcje i zmienne:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:311
 msgid "Constants"
 msgstr "Stałe"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:313
-#, fuzzy
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
 msgstr ""
 "Używaj CONSTANT\\_CASE, wielkimi literami, z podkreśleniem (\\_), aby "
-"oddzielić słowa: ``const ILOSC_DNI = 200``"
+"oddzielić słowa: ``const ILOSC_DNI = 200``:"
 
 #: ../../docs/tutorials/shading/godot_shader_language_style_guide.rst:321
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,8 @@ msgid ""
 "Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
 "you can use to work on new or existing projects."
 msgstr ""
+"Desde Godot 3.3, hay un `Editor web <https://editor.godotengine.org/>`__ que "
+"puedes usar para editar proyectos nuevos o existentes."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:11
 msgid ""
@@ -34,6 +36,9 @@ msgid ""
 "sufficient for educational purposes, it is currently **not recommended for "
 "production work**. See :ref:`doc_using_the_web_editor_limitations` below."
 msgstr ""
+"El editor web está en un fase preliminar. Tiene las funciones suficientes "
+"para objectivos educacionales, pero **no se recomienda para crear proyectos."
+"** Ver :ref:`doc_using_the_web_editor_limitations` abajo."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:16
 #, fuzzy
@@ -49,25 +54,27 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:22
 msgid "Chrome 68 or later"
-msgstr ""
+msgstr "Chrome 68 o versión posterior"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:23
 msgid "Firefox 79 or later"
-msgstr ""
+msgstr "Firefox 79 o posterior"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:24
 msgid "Edge 79 or later"
-msgstr ""
+msgstr "Edge 79 o posterior"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:26
 msgid ""
 "Opera and Safari are not supported yet. Safari may work in the future once "
 "proper threading support is added."
 msgstr ""
+"Opera y Safari todavía no son compatibles. Puede que Safari será compatible "
+"en el futuro cuando admita ejecución en multiples hilos."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:29
 msgid "**Mobile browsers are currently not supported.**"
-msgstr ""
+msgstr "**Los navigadores de móvil no son compatibles.**"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:31
 msgid ""
@@ -75,6 +82,9 @@ msgid ""
 "is recommended for better performance and compatibility with old/low-end "
 "hardware."
 msgstr ""
+"El editor web es compatible con los presentadores GLES3 y GLES2, sin embargo "
+"GLES2 es recomendado for para mejor rendimiento y compatabilidad con "
+"hardware viejo o de baja calidad."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:36
 msgid ""
@@ -82,6 +92,9 @@ msgid ""
 "mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
 "based browser instead of Firefox."
 msgstr ""
+"Si usas Linuz, se recomienda usar un navegador basado en Chromium, a causa "
+"de `rendimiento pobre de Firefox WebGL <https://bugzilla.mozilla.org/"
+"show_bug.cgi?id=1010527>`__."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:43
 msgid "Limitations"
@@ -100,7 +113,7 @@ msgstr "|eol| Sin soporte."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:49
 msgid "No GDNative support."
-msgstr ""
+msgstr "No compatible con GDNative."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
@@ -108,10 +121,16 @@ msgid ""
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
 msgstr ""
+"No puede exportar proyectos. Como método alternativo, puedes descargar el "
+"fuente del proyecto con **Proyecto > Herramientas > Descargar Fuente de "
+"Proyecto** y exportarlo usando `una versión nativa del editor Godot <https://"
+"godotengine.org/download>`__."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
+"El editor no te avisa cuando cierres una pestaña con modificaciones no "
+"guardadas."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:54
 msgid ""
@@ -119,12 +138,17 @@ msgid ""
 "were baked with a native version of the Godot editor (e.g. by importing an "
 "existing project)."
 msgstr ""
+"No permite creación de 'lightmaps'. Aún puedes usar lightmaps existentes si "
+"fueron creados por una versión nativa, (o sea, puedes importar un proyecto "
+"existente)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:58
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
 msgstr ""
+"No es probable que se permitan las herramientas siguentes por las "
+"limitaciones inherentes del plataforma Web:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:61
 #, fuzzy
@@ -132,9 +156,8 @@ msgid "No support for external script editors."
 msgstr "No hay soporte para salida MIDI todavía."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:62
-#, fuzzy
 msgid "No support for Android one-click deploy."
-msgstr "Pasos para el despliegue con un solo clic"
+msgstr "Pasos para el despliegue con un solo clic."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:66
 #, fuzzy
@@ -155,13 +178,15 @@ msgstr "Importando el proyecto"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:72
 msgid "To import an existing project, the current process is as follows:"
-msgstr ""
+msgstr "Para importar un proyecto existente:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:74
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
 msgstr ""
+"Especifica un archivo ZIP para precargar en el sistema de archivos HTML5 con "
+"el input **Precargar ZIP de proyecto**."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:76
 msgid ""
@@ -206,6 +231,10 @@ msgid ""
 "project. Instead, when you run the project by clicking the Run button or "
 "pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
 msgstr ""
+"A diferencia de la versión nativa de Godot, el editor web está limitado usar "
+"una ventana única. Por lo tanto, no puede abrir una ventana nueva para "
+"ejectuar el proyecto. Cuando ejecutas el proyecto con el botón Run or la "
+"tecla :kbd:`F5`, aparecerá en lugar de la ventana del editor."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:101
 msgid ""
@@ -214,6 +243,11 @@ msgid ""
 "**Game** tabs using the buttons on the top. You can also close the running "
 "game or editor by clicking the **×** button next to those tabs."
 msgstr ""
+"El editor web dispone una manera alternativa de gestionar las ventanas del "
+"editor y del juego con pestañas. Puedes navegar entre las ventanas "
+"**Editor** y **Juego** con los botones superiores. Además puedes cerrar un "
+"juego en marcha or el editor con pulsar el botón **x** al lado de las "
+"pestañas."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:107
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:4
-#, fuzzy
 msgid "Complying with licenses"
 msgstr "Cumprindo com Licenças"
 
@@ -161,7 +160,6 @@ msgid "Output log"
 msgstr "Log de saída"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:66
-#, fuzzy
 msgid ""
 "Just printing the licensing text using the :ref:`print() "
 "<class_@GDScript_method_print>` function may be enough on platforms where a "
@@ -170,21 +168,20 @@ msgid ""
 msgstr ""
 "Apenas imprimir o texto de licenciamento usando uma função :ref:`print() "
 "<class_@GDScript_method_print>` pode ser suficiente em plataformas onde um "
-"log de saída global é legível (como exemplo, em dispositivos móveis)."
+"log de saída global pode ser lido (como exemplo, em dispositivos móveis). "
+"Este é o caso em plataformas desktop, Android e HTML5 (mas não iOS e UWP)."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:71
 msgid "Accompanying file"
 msgstr "Arquivo anexo"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:73
-#, fuzzy
 msgid ""
 "If the game is distributed on desktop platforms, a file containing the "
 "license can be added to the software that is installed to the user PC."
 msgstr ""
-"Se o jogo for distribuído em sistemas operacionais desktop, um arquivo "
-"contendo a licença pode ser adicionado ao software instalado no PC do "
-"usuário."
+"Se o jogo for distribuído em plataformas desktop, um arquivo contendo a "
+"licença pode ser adicionado ao software instalado no PC do usuário."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:77
 msgid "Printed manual"
@@ -194,15 +191,14 @@ msgstr "Manual impresso"
 msgid ""
 "If the game includes printed manuals, license text can be included there."
 msgstr ""
-"Se o jogo incluir manuais impressos, o texto da licença pode ser incluído lá."
+"Se o jogo incluir manuais impressos, o texto da licença pode ser incluído "
+"neles."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:82
-#, fuzzy
 msgid "Third-party licenses"
 msgstr "Licenças de terceiros"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:84
-#, fuzzy
 msgid ""
 "Godot itself contains software written by `third parties <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_. Most of it does not require "
@@ -213,12 +209,15 @@ msgid ""
 msgstr ""
 "O próprio Godot contém software escrito por `terceiros <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_. A maioria não requer "
-"inclusão de licença, mas algumas exigem. Certifique-se de fazê-lo se você "
-"estiver usando-os. Aqui está uma lista das quais deles exigem:"
+"inclusão de licença, mas algumas exigem. Certifique-se de fazê-lo se estes "
+"forem compilados no seu modelo de exportação Godot. Se você estiver usando "
+"os modelos oficiais de exportação, todas as bibliotecas estão habilitadas. "
+"Isto significa que você precisa fornecer a atribuição para todas as "
+"bibliotecas listadas abaixo."
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:91
 msgid "Here's a list of libraries requiring attribution:"
-msgstr ""
+msgstr "Eis uma lista de bibliotecas que requerem atribuição:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:94
 #, fuzzy
@@ -246,14 +245,13 @@ msgid "ENet"
 msgstr ""
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:105
-#, fuzzy
 msgid ""
 "Godot includes the `ENet <http://enet.bespin.org/>`_ library to handle high-"
 "level multiplayer. ENet has similar licensing terms as Godot:"
 msgstr ""
-"Se o projeto que está sendo criado for um jogo multiplayer usando o `driver "
-"ENet <http://enet.bespin.org/>`_, o ENet tem termos de licenciamento "
-"semelhantes aos do Godot"
+"Godot inclui a `biblioteca ENet <http://enet.bespin.org/>`_ para lidar com "
+"multiplayer de alto nível. A ENet possui termos de licenciamento similares "
+"aos do Godot:"
 
 #: ../../docs/tutorials/legal/complying_with_licenses.rst:109
 msgid "Copyright (c) 2002-2020 Lee Salzman"

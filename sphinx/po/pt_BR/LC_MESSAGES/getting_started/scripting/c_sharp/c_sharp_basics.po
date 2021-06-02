@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,10 +210,12 @@ msgid ""
 "After reading the \"Prerequisites\" section, you can download and install "
 "`JetBrains Rider <https://www.jetbrains.com/rider/download>`__."
 msgstr ""
+"Após ler a seção \"Pré-requisitos\", você pode baixar e instalar o "
+"`JetBrains Rider <https://www.jetbrains.com/rider/download>`__."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:98
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:114
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 #, fuzzy
 msgid "In Godot's **Editor → Editor Settings** menu:"
 msgstr "Nas Opções do Editor:"
@@ -246,6 +248,9 @@ msgid ""
 "`Visual Studio Code <https://code.visualstudio.com/download>`__ (aka VS "
 "Code)."
 msgstr ""
+"Após ler a seção \"Pré-requisitos\", você pode baixar e instalar o `Visual "
+"Studio Code <https://code.visualstudio.com/download>`__ (também conhecido "
+"como VS Code)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:116
 msgid ""
@@ -253,9 +258,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:118
-#, fuzzy
 msgid "In Visual Studio Code:"
-msgstr "Visual Studio Code"
+msgstr "Visual Studio Code:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:120
 #, fuzzy
@@ -269,8 +273,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:121
 #, fuzzy
 msgid ""
-"Install the `godot-tools <https://marketplace.visualstudio.com/items?"
-"itemName=geequlim.godot-tools>`__ extension."
+"Install the `Mono Debug <https://marketplace.visualstudio.com/items?"
+"itemName=ms-vscode.mono-debug>`__ extension."
 msgstr ""
 "Instale a extensão ``VSMonoDebugger <https://marketplace.visualstudio.com/"
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
@@ -285,58 +289,60 @@ msgstr ""
 "items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:124
-#, fuzzy
 msgid ""
-"Next, follow the instructions found in the :ref:"
-"`doc_c_sharp_configuring_vs_code_for_debugging` section below."
+"To configure a project for debugging open the Godot project folder in VS "
+"Code. Go to the Run tab and click on **create a launch.json file**. Select "
+"**C# Godot** from the dropdown menu. Now, when you start the debugger in VS "
+"Code your Godot project will run."
 msgstr ""
-"Se você estiver usando o Visual Studio 2019, você deve seguir as instruções "
-"encontradas na seção \"Configurar VS2019 para Depuração\" abaixo."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:129
 #, fuzzy
 msgid "Visual Studio (Windows only)"
 msgstr "Visual Studio ou VS Code"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:130
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:131
 msgid ""
 "Download and install the latest version of `Visual Studio <https://"
 "visualstudio.microsoft.com/downloads/>`__. Visual Studio will include the "
 "required SDKs if you have the correct workloads selected, so you don't need "
 "to manually install the things listed in the \"Prerequisites\" section."
 msgstr ""
+"Baixe e instale a última versão do `Visual Studio <https://visualstudio."
+"microsoft.com/downloads/>`__. O Visual Studio incluirá os SDKs necessários "
+"se você tiver as cargas de trabalho corretas selecionadas, para que você não "
+"precise instalar manualmente as coisas listadas na seção \"Pré-requisitos\"."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
 msgid "While installing Visual Studio, select these workloads:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:138
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:139
 #, fuzzy
 msgid "Mobile development with .NET"
 msgstr "Desenvolvimento da Engine"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:139
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:140
 msgid ".NET Core cross-platform development"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:143
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:144
 msgid "Set **Mono** -> **Editor** -> **External Editor** to **Visual Studio**."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:145
-#, fuzzy
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:146
 msgid ""
-"Next, follow the instructions found in the :ref:"
-"`doc_c_sharp_configuring_vs_2019_for_debugging` section below."
+"Next, you need to download the Godot Visual Studio extension from github "
+"`here <https://github.com/godotengine/godot-csharp-visualstudio/"
+"releases>`__. Double click on the downloaded file and follow the "
+"installation process."
 msgstr ""
-"Se você estiver usando o Visual Studio 2019, você deve seguir as instruções "
-"encontradas na seção \"Configurar VS2019 para Depuração\" abaixo."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
 msgid "Creating a C# script"
 msgstr "Criando um script C#"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:151
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
 #, fuzzy
 msgid ""
 "After you successfully set up C# for Godot, you should see the following "
@@ -347,7 +353,7 @@ msgstr ""
 "opção ao selecionar ``Attach script`` no menu de contexto de um nó em sua "
 "cena:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:156
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:159
 #, fuzzy
 msgid ""
 "Note that while some specifics change, most concepts work the same when "
@@ -363,11 +369,11 @@ msgstr ""
 "não possuem exemplos de C#, a maioria das coisas pode ser facilmente "
 "transferida do GDScript."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:163
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:166
 msgid "Project setup and workflow"
 msgstr "Configuração de projeto e fluxo de trabalho"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:165
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:168
 #, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
@@ -388,18 +394,18 @@ msgstr ""
 "do seu VCS. Para solucionar problemas, às vezes pode ajudar excluir a pasta "
 "``.mono`` e deixá-la regenerar."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:175
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:178
 msgid "Example"
 msgstr "Exemplo"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:177
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:180
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 "Aqui está um script C# em branco com alguns comentários para demonstrar como "
 "funciona."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:204
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:207
 #, fuzzy
 msgid ""
 "As you can see, functions normally in global scope in GDScript like Godot's "
@@ -413,7 +419,7 @@ msgstr ""
 "lista destes, veja as páginas de referência da classe para: ref: `@GDScript "
 "<class_ @ gdscript>` e: ref: `@GlobalScope <class_ @ globalscope>`."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:211
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:214
 msgid ""
 "Keep in mind that the class you wish to attach to your node should have the "
 "same name as the ``.cs`` file. Otherwise, you will get the following error "
@@ -425,11 +431,11 @@ msgstr ""
 "erro e não poderá executar a cena: *\"Não é possível encontrar a classe XXX "
 "para o script res:// XXX.cs\"*"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:217
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:220
 msgid "General differences between C# and GDScript"
 msgstr "Diferenças gerais entre o C# e o GDScript"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:219
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:222
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -441,18 +447,19 @@ msgstr ""
 "propriedades. Em geral, a API C# Godot se esforça para ser tão idiomática "
 "quanto for razoavelmente possível."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:223
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:226
 #, fuzzy
 msgid "For more information, see the :ref:`doc_c_sharp_differences` page."
 msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:227
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:230
 #, fuzzy
 msgid ""
 "You need to (re)build the project assemblies whenever you want to see new "
 "exported variables or signals in the editor. This build can be manually "
-"triggered by clicking the word **Mono** at the bottom of the editor window "
-"to reveal the Mono panel, then clicking the **Build Project** button."
+"triggered by clicking the word **Build** in the top right corner of the "
+"editor. You can also click **Mono** at the bottom of the editor window to "
+"reveal the Mono panel, then click the **Build Project** button."
 msgstr ""
 "Se você estiver usando o C #, precisará (re) construir os assemblies do "
 "projeto sempre que desejar ver novas variáveis ou sinais de exportação. Essa "
@@ -460,17 +467,17 @@ msgstr ""
 "parte inferior da janela do editor para revelar o Mono Panel e, em seguida, "
 "clicando no botão \"Build Project\"."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:232
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:236
 msgid ""
 "You will also need to rebuild the project assemblies to apply changes in "
 "\"tool\" scripts."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:236
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:240
 msgid "Current gotchas and known issues"
 msgstr "Pegadinhas gerais e problemas conhecidos"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:238
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:242
 #, fuzzy
 msgid ""
 "As C# support is quite new in Godot, there are some growing pains and things "
@@ -486,14 +493,14 @@ msgstr ""
 "oficial `issue tracker for Mono issues <https://github.com/godotengine/godot/"
 "labels/topic%3Amono>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:244
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:248
 msgid ""
 "Writing editor plugins is possible, but it is currently quite convoluted."
 msgstr ""
 "Escrever plugins para o editor é possível, mas atualmente é bastante "
 "complicado."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:245
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
 msgid ""
 "State is currently not saved and restored when hot-reloading, with the "
 "exception of exported variables."
@@ -501,7 +508,7 @@ msgstr ""
 "Atualmente o estado não é salvo e restaurado durante o \"hot-reloading\", "
 "com exceção das variáveis exportadas."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:247
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:251
 msgid ""
 "Attached C# scripts should refer to a class that has a class name that "
 "matches the file name."
@@ -509,7 +516,7 @@ msgstr ""
 "Os scripts C # anexados devem se referir a uma classe que tenha um nome de "
 "classe que corresponda ao nome do arquivo."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:249
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:253
 msgid ""
 "There are some methods such as ``Get()``/``Set()``, ``Call()``/"
 "``CallDeferred()`` and signal connection method ``Connect()`` that rely on "
@@ -526,22 +533,21 @@ msgstr ""
 "``add_child``. No entanto, você pode usar quaisquer propriedades ou métodos "
 "personalizados sem essa limitação."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:257
-#, fuzzy
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:261
 msgid ""
 "Exporting Mono projects is supported for desktop platforms (Linux, Windows "
 "and macOS), Android, HTML5, and iOS. The only platform not supported yet is "
 "UWP."
 msgstr ""
 "A exportação de projetos Mono é suportada apenas para plataformas desktop "
-"(Linux, Windows e macOS), Android, HTML5 e iOS. UWP não é suportado "
-"atualmente (`#20271 <https://github.com/godotengine/godot/issues/20271>`_)."
+"(Linux, Windows e macOS), Android, HTML5 e iOS. A única plataforma ainda não "
+"suportada é UWP."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:261
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:265
 msgid "Performance of C# in Godot"
 msgstr "Performance do C# no Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:263
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:267
 #, fuzzy
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
@@ -561,12 +567,12 @@ msgstr ""
 "scripts gerais. O C# é mais rápido, mas requer algum treinamento custoso "
 "quando falamos do Godot."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:271
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:275
 #, fuzzy
 msgid "Using NuGet packages in Godot"
 msgstr "Usando Pacotes Nuget no Godot"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:273
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:277
 #, fuzzy
 msgid ""
 "`NuGet <https://www.nuget.org/>`_ packages can be installed and used with "
@@ -580,34 +586,17 @@ msgstr ""
 "adicionando a referência do pacote no arquivo .csproj localizado na pasta "
 "principal do projeto:"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:290
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:291
 msgid ""
-"By default, tools like NuGet put ``Version`` as an attribute of the "
-"```PackageReference``` Node. **You must manually create a Version node as "
-"shown above.**  This is because the version of MSBuild used requires this. "
-"(This will be fixed in Godot 4.0.)"
+"As of Godot 3.2.3, Godot automatically downloads and sets up newly added "
+"NuGet packages the next time it builds the project."
 msgstr ""
-"Por padrão, ferramentas como NuGet colocam ``Version``` como atributo do Nó "
-"``PackageReference```. **Você deve criar manualmente um nó de Versão como "
-"mostrado acima.** Isto é porque a versão utilizada do MSBuild requer isto. "
-"(Isto será corrigido no Godot 4.0)"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:292
-#, fuzzy
-msgid ""
-"Whenever packages are added or modified, run ``nuget restore`` (*not* "
-"``dotnet restore``) in the root of the project directory. To ensure that "
-"NuGet packages will be available for msbuild to use, run:"
-msgstr ""
-"Sempre que pacotes forem adicionados ou modificados, execute a restauração "
-"do nuget no diretório principal do projeto para garantir que os pacotes "
-"nuget estejam disponíveis para uso pelo msbuild, execute::"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:301
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:295
 msgid "Profiling your C# code"
 msgstr "Perfilando seu código C#"
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:303
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:297
 #, fuzzy
 msgid ""
 "`Mono log profiler <https://www.mono-project.com/docs/debug+profile/profile/"
@@ -618,7 +607,7 @@ msgstr ""
 "profiler/>`_ está disponível através `deste PR <https://github.com/"
 "godotengine/godot/pull/26513>`_."
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:304
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:298
 msgid ""
 "External Mono profiler like `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ can be used as described `here <https://github.com/godotengine/"
@@ -627,104 +616,3 @@ msgstr ""
 "Profiler de Mono Externo como `JetBrains dotTrace <https://www.jetbrains.com/"
 "profiler/>`_ pode ser usado como descrito `aqui <https://github.com/"
 "godotengine/godot/pull/34382>`_."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:309
-msgid "Configuring VS 2019 for debugging"
-msgstr "Configuração VS 2019 para depuração"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:313
-msgid ""
-"Godot has built-in support for workflows involving several popular C# IDEs. "
-"Built-in support for Visual Studio will be including in future versions, but "
-"in the meantime, the steps below can let you configure VS 2019 for use with "
-"Godot C# projects."
-msgstr ""
-"Godot tem suporte integrado para fluxos de trabalho envolvendo várias IDEs "
-"populares de C#. O suporte nativo para o Visual Studio será incluso em "
-"versões futuras, mas enquanto isso, os passos abaixo podem permitir que você "
-"configure o Visual Studio 2019 para utilização dos projetos de Godot em C#."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:318
-msgid ""
-"Install VS 2019 with ``.NET desktop development`` and ``Desktop development "
-"with C++`` workloads selected."
-msgstr ""
-"Instale o Visual Studio 2019 com os componentes ``.NET desktop development`` "
-"e ``Desktop development with C++`` selecionados."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:319
-msgid ""
-"**Ensure that you do not have Xamarin installed.** Do not choose the "
-"``Mobile development with .NET`` workload. Xamarin changes the DLLs used by "
-"MonoDebugger, which breaks debugging."
-msgstr ""
-"**Certifique-se de não ter Xamarin instalado.** Não escolha a opção ``Mobile "
-"development with .NET``. Xamarin altera as DLLs usadas pelo MonoDebugger, "
-"que quebra a depuração."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:320
-msgid ""
-"Install the `VSMonoDebugger extension <https://marketplace.visualstudio.com/"
-"items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
-msgstr ""
-"Instale a extensão ``VSMonoDebugger <https://marketplace.visualstudio.com/"
-"items?itemName=GordianDotNet.VSMonoDebugger0d62>`_."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:321
-msgid "In VS 2019 --> Extensions --> Mono --> Settings:"
-msgstr "No VS 2019 --> Extensions --> Mono ->Settings:"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:323
-msgid "Select ``Debug/Deploy to local Windows``."
-msgstr "Selecione ``Debug/Deploy to local Windows``."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:324
-msgid "Leave ``Local Deploy Path`` blank."
-msgstr "Deixe ``Local Deploy Path`` em branco."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:325
-msgid ""
-"Set the ``Mono Debug Port`` to the port in Godot --> Project --> Project "
-"Settings --> Mono --> Debugger Agent."
-msgstr ""
-"Defina a porta de depuração em ``Mono Debug Port`` para a porta definida em "
-"Godot --> Projeto --> Configurações de projeto --> Mono --> Agente depurador."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:326
-msgid ""
-"Also select ``Wait for Debugger`` in the Godot Mono options. `This Godot "
-"Addon <https://godotengine.org/asset-library/asset/435>`_ may be helpful."
-msgstr ""
-"Selecione também ``Wait for Debugger`` nas opções do Mono dentro do Godot. "
-"`Este Godot Addon <https://godotengine.org/asset-library/asset/435>`_ pode "
-"ser útil."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:328
-msgid ""
-"Run the game in Godot. It should hang at the Godot splash screen while it "
-"waits for your debugger to attach."
-msgstr ""
-"Execute o jogo no Godot. A tela de inicialização do Godot será apresentada "
-"enquanto espera que seu depurador se conecte."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:329
-msgid ""
-"In VS 2019, open your project and choose Extensions --> Mono --> Attach to "
-"Mono Debugger."
-msgstr ""
-"No VS 2019, abra seu projeto e escolha Extensions --> Mono --> Attach to "
-"Mono Debugger."
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:334
-#, fuzzy
-msgid "Configuring Visual Studio Code for debugging"
-msgstr "Configuração VS 2019 para depuração"
-
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:336
-msgid ""
-"To configure debugging, open Visual Studio Code and download the Mono Debug "
-"extension from Microsoft and the Godot extension by Ignacio. Then open the "
-"Godot project folder in VS Code. Go to the Run tab and click on **create a "
-"launch.json file**. Select **C# Godot** from the dropdown menu. Now, when "
-"you start the debugger in VS Code your Godot project will run."
-msgstr ""

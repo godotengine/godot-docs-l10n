@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr "Posiada właściwości które można edytować."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr "Może wywoływać zwrot co każdą klatkę."
+msgstr "Może otrzymywać odpowiedź do przetworzenia w każdej klatce."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
@@ -99,7 +99,7 @@ msgstr "Może być rozbudowywany (aby mieć więcej funkcji)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to another node as a child."
-msgstr "Może być dodany do innego węzła jako dziecko."
+msgstr "Może być dodany do innego węzła jako jego dziecko."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -217,7 +217,6 @@ msgstr ""
 "przypadku pustej sceny, jako \"korzeń\" węzła)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:97
-#, fuzzy
 msgid ""
 "In an empty scene (without root node), the scene dock shows several options "
 "to quickly add a root node to the scene. \"2D Scene\" adds a Node2D node, "
@@ -246,7 +245,6 @@ msgstr ""
 "lub scena 2D potrzebują węzłów Control i Node2D."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
-#, fuzzy
 msgid ""
 "Now, to add a label node to this scene you can click on the Other Node "
 "button or the Add Node button at the top. In scenes that aren't empty you "

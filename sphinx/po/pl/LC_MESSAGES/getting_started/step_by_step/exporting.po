@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "który może być uruchomiony przez każdego."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -52,7 +51,6 @@ msgstr ""
 "gry."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
@@ -65,7 +63,6 @@ msgid "Preparing the project"
 msgstr "Przygotowanie projektu"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -99,7 +96,7 @@ msgstr ""
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "W sekcji *Stretch* ustaw *Mode* na \"2d\", a *Aspect* na \"Keep\". "
@@ -144,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Export templates"
-msgstr "Eksportowanie szablonów"
+msgstr "Szablony do eksportu"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
@@ -163,12 +160,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"W oknie które się wyświetliło, możesz kliknąć \"Pobierz\" aby pobrać wersję "
+"W oknie które się wyświetliło, możesz kliknąć **Pobierz** aby pobrać wersję "
 "szablonu który zgadza się z wersją Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
@@ -213,7 +209,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:297
-#, fuzzy
 msgid "Exporting by platform"
 msgstr "Eksportowanie w zależności od platformy"
 
@@ -227,12 +222,10 @@ msgstr ""
 "potrzebował."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:303
-#, fuzzy
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/MacOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:305
-#, fuzzy
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click **Add...** to create the preset(s) "
@@ -245,12 +238,10 @@ msgstr ""
 "lokalizację *na zewnątrz* folderu projektu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
-#, fuzzy
 msgid "Click **Save** and the engine will build the export files."
-msgstr "Kliknij Zapisz, a silnik wyeksportuje projekt."
+msgstr "Kliknij **Zapisz**, a silnik wyeksportuje projekt."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:314
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export from a macOS computer, you'll end up "
 "with a ``.dmg`` file, while using Linux or Windows produces a ``.zip``. In "
@@ -263,7 +254,6 @@ msgstr ""
 "zawiera aplikację MacOS `.app`, którą można dwukrotnie kliknąć i uruchomić."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
-#, fuzzy
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See :ref:"
@@ -308,7 +298,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
-#, fuzzy
 msgid ""
 "When you run Android Studio for the first time, click on **Configure -> SDK "
 "Manager** and install **Android SDK Platform Tools**. This installs the "
@@ -320,7 +309,6 @@ msgstr ""
 "urządzeniem."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:345
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
@@ -340,7 +328,6 @@ msgstr ""
 "lokalizację właśnie utworzonego keystore."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on **Project -> Export** and add a preset "
 "for Android (see above). Select the newly added Android preset. Under "
@@ -348,16 +335,15 @@ msgid ""
 "your game is in landscape mode (i.e. the window width in pixels is greater "
 "than the window height), leave this on **Landscape**."
 msgstr ""
-"Teraz jesteś gotowy do eksportu. Kliknij *Projekt -> Eksportuj* i dodaj "
+"Teraz jesteś gotowy do eksportu. Kliknij **Projekt -> Eksportuj** i dodaj "
 "predefiniowane ustawienia dla systemu Android (zobacz powyżej)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:364
-#, fuzzy
 msgid ""
 "Click the **Export Project** button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"Kliknij przycisk \"Eksportuj projekt\", a Godot zbuduje APK, który możesz "
+"Kliknij przycisk **Eksportuj projekt**, a Godot zbuduje APK, który możesz "
 "pobrać na twoje urządzenie. Aby to zrobić w wierszu poleceń, użyj "
 "następujących opcji:"
 
@@ -390,16 +376,14 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:386
-#, fuzzy
 msgid ""
 "To build your game for iOS, you must have a computer running macOS with "
 "Xcode installed."
 msgstr ""
-"Aby zbudować swoją grę dla iOS, musisz mieć komputer MacOS z zainstalowanym "
+"Aby zbudować swoją grę dla iOS, musisz mieć komputer macOS z zainstalowanym "
 "Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
-#, fuzzy
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the **App Store Team Id**, which you "
@@ -417,9 +401,8 @@ msgstr ""
 "Należy również ustawić ikonę oraz ekran startowy, jak pokazano poniżej:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
-#, fuzzy
 msgid "Click **Export Project** and select a destination folder."
-msgstr "Kliknij \"Eksportuj projekt\" i wybierz folder docelowy."
+msgstr "Kliknij **Eksportuj projekt** i wybierz folder docelowy."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
 msgid ""
@@ -430,7 +413,6 @@ msgstr ""
 "następujące foldery i pliki:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:404
-#, fuzzy
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. The "
 "Xcode build procedure is beyond the scope of this tutorial. See https://help."
@@ -445,7 +427,6 @@ msgid "HTML5 (web)"
 msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:412
-#, fuzzy
 msgid ""
 "Click **Export Project** on the HTML5 preset. We don't need to change any of "
 "the default settings."
@@ -462,7 +443,6 @@ msgstr ""
 "pliki:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:420
-#, fuzzy
 msgid ""
 "Viewing the ``.html`` file in your browser lets you play the game. However, "
 "you can't open the file directly. Instead, it needs to be served by a web "
@@ -476,7 +456,6 @@ msgstr ""
 "operacyjnego."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:425
-#, fuzzy
 msgid ""
 "Point your browser at the URL where you've placed the HTML file. You may "
 "have to wait a few moments while the game loads before you see the start "
@@ -487,7 +466,6 @@ msgstr ""
 "zobaczysz ekran startowy."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:430
-#, fuzzy
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by disabling **Export With Debug** in the final file dialog "
@@ -498,7 +476,6 @@ msgstr ""
 "eksportowaniu projektu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:438
-#, fuzzy
 msgid ""
 "While WebAssembly is supported in all major browsers, it is still an "
 "emerging technology and you may find some things that don't work. Make sure "

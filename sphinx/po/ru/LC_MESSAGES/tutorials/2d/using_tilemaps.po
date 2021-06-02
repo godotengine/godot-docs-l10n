@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
-msgid "Using tilemaps"
+#, fuzzy
+msgid "Using TileMaps"
 msgstr "Использование карт тайлов"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
@@ -572,10 +573,13 @@ msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
 "art styles the missing tiles will not be noticeable."
 msgstr ""
+"Этот шаблон может быть использован для набора тайлов, которые имеют только "
+"16 плиток, он может применяться для простых художественных стилей, "
+"отсутствующие плитки видны не будут."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:269
 msgid "Blue-checkered: \"ignore\""
-msgstr ""
+msgstr "В синюю клетку: \"игнорировать\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "**Template - Top-down floor in 3/4 perspective:**"
@@ -598,19 +602,23 @@ msgid "Yellow: top of wall"
 msgstr "Желтый: верх стены"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
+msgid "Grey: hidden due to overlap"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:282
 #, fuzzy
 msgid "Transparent: air"
 msgstr "Сортировка прозрачности"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:285
+#: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr "**Шаблон - стена сверху вниз в перспективе 3/4:**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:289
+#: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
 msgstr "**Шаблон - стена сверху вниз в перспективе 3/4 (толстые стены):**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:291
+#: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
@@ -618,11 +626,11 @@ msgstr ""
 "При использовании этого шаблона установите размер подтайтла набора тайлов на "
 "``Vector2 (64, 88)``."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:295
+#: ../../docs/tutorials/2d/using_tilemaps.rst:296
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
-msgstr ""
+msgstr "**Шаблон - Сверху вниз в перспективе 3/ 4 (высокие стены):**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:297
+#: ../../docs/tutorials/2d/using_tilemaps.rst:298
 msgid ""
 "When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
@@ -633,17 +641,17 @@ msgstr ""
 "высоту минус размер ячейки. Это означает, что смещение текстуры должно быть "
 "``Vector2 (0, -120) ``:"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:304
+#: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
 msgstr "3x3"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:306
+#: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
 "В режиме 3x3 каждая битовая маска содержит 9 бит (4 угла, 4 края, 1 центр)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:308
+#: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
@@ -652,7 +660,7 @@ msgstr ""
 "диагонально соседние ячейки. Центральный бит должен быть включен для любой "
 "плитки, которую вы хотите использовать."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:311
+#: ../../docs/tutorials/2d/using_tilemaps.rst:312
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
@@ -660,12 +668,12 @@ msgstr ""
 "Всего потребуется 256 плиток, чтобы обеспечить ровно одну битовую маску для "
 "каждой компоновки, которую этот режим может проверить."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:316
+#: ../../docs/tutorials/2d/using_tilemaps.rst:317
 #, fuzzy
 msgid "Disabling autotile"
 msgstr "Использование карт тайлов"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:318
+#: ../../docs/tutorials/2d/using_tilemaps.rst:319
 #, fuzzy
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
@@ -675,11 +683,11 @@ msgstr ""
 "При использовании автотайла можно отключить его поведение и выбрать плитки "
 "вручную, щелкнув «Отключить автотайл» в верхней части окна выбора плитки."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:323
+#: ../../docs/tutorials/2d/using_tilemaps.rst:324
 msgid "Autotile binding"
 msgstr "Привязка автотайла"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:325
+#: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -702,7 +710,7 @@ msgstr ""
 "можете найти идентификатор автотайла, используя «find_tile_by_name (name)», "
 "пустым ячейкам присваивается идентификатор -1."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:335
+#: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
@@ -712,11 +720,11 @@ msgstr ""
 "начинаться с объявления «tool», и вам может потребоваться закрыть и "
 "перезагрузить сцену, чтобы эти изменения вступили в силу."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:340
+#: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "Tips and tricks"
 msgstr "Советы и хитрости"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:342
+#: ../../docs/tutorials/2d/using_tilemaps.rst:343
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -727,21 +735,21 @@ msgstr ""
 "исправить это, откройте настройки проекта и включите «Использовать "
 "пиксельную привязку» в разделе «Рендеринг/Качество»."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:346
+#: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
 "Вы можете переворачивать и вращать плитки, используя значки в правом верхнем "
 "углу редактора."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:348
+#: ../../docs/tutorials/2d/using_tilemaps.rst:349
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
 "Чтобы рисовать прямые линии, удерживайте: kbd: `Shift`, щелкая и "
 "перетаскивая плитку."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:350
+#: ../../docs/tutorials/2d/using_tilemaps.rst:351
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

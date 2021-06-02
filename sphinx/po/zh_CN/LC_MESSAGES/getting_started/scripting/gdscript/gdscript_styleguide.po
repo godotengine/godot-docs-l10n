@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,16 +28,16 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also support the "
 "development of auto-formatting tools."
 msgstr ""
-"该样式指南列出了编写优雅GDScript的约定。目标是促进编写干净、可读的代码，并促"
-"进项目、讨论和教程之间的一致性。希望这也会促进开发自动格式化工具。"
+"该样式指南列出了编写优雅GDScript的约定.目标是促进编写干净、可读的代码,并促进"
+"项目、讨论和教程之间的一致性.希望这也会促进开发自动格式化工具."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:11
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
 msgstr ""
-"由于GDScript与Python非常接近，因此本指南的灵感来自Python的 `PEP 8 <https://"
-"www.python.org/dev/peps/pep-0008/>`__ 编程风格指南。"
+"由于GDScript与Python非常接近,因此本指南的灵感来自Python的 `PEP 8 <https://"
+"www.python.org/dev/peps/pep-0008/>`__ 编程风格指南."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:15
 msgid ""
@@ -45,24 +45,24 @@ msgid ""
 "to apply some of the guidelines below. When that happens, use your best "
 "judgment, and ask fellow developers for insights."
 msgstr ""
-"风格指南并不是硬性的规则手册。有时，您可能无法应用下面的一些准则。当这种情况"
-"发生时，使用你最好的判断，并询问其他开发人员的见解。"
+"风格指南并不是硬性的规则手册.有时,您可能无法应用下面的一些准则.当这种情况发生"
+"时,使用你最好的判断,并询问其他开发人员的见解."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:19
 msgid ""
 "In general, keeping your code consistent in your projects and within your "
 "team is more important than following this guide to a tee."
-msgstr "一般来说，在项目和团队中保持代码的一致性比遵循本指南进行tee更为重要。"
+msgstr "一般来说,在项目和团队中保持代码的一致性比遵循本指南进行tee更为重要."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
-msgstr "Godot的内置脚本编辑器默认使用了很多这些约定。让它帮助您。"
+msgstr "Godot的内置脚本编辑器默认使用了很多这些约定.让它帮助您."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Here is a complete class example based on these guidelines:"
-msgstr "下面是一个简单的示例，说明它是如何工作的："
+msgstr "下面是一个简单的示例,说明它是如何工作的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:94
 msgid "Formatting"
@@ -76,23 +76,23 @@ msgstr "编码和特殊字符"
 msgid ""
 "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
 "default)*"
-msgstr "使用换行符（**LF**）来换行，而不是 ``CRLF`` 或 ``CR``。（编辑默认）"
+msgstr "使用换行符(**LF**)来换行,而不是 ``CRLF`` 或 ``CR``.(编辑默认)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:100
 msgid "Use one line feed character at the end of each file. *(editor default)*"
-msgstr "在每个文件的末尾使用一个换行符。*(编辑器默认设置)*"
+msgstr "在每个文件的末尾使用一个换行符.*(编辑器默认设置)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:101
 msgid ""
 "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
-"使用不带 `字节顺序标记（BOM） <https://en.wikipedia.org/wiki/"
-"Byte_order_mark>`_ 的 **UTF-8** 编码。（编辑默认）"
+"使用不带 `字节顺序标记(BOM) <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>`_ 的 **UTF-8** 编码.(编辑默认)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
-msgstr "使用 **Tabs** 代替制表符进行缩进（称为“软制表符”）。（编辑默认）"
+msgstr "使用 **Tabs** 代替制表符进行缩进(称为\"软制表符\").(编辑默认)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:105
 msgid "Indentation"
@@ -100,7 +100,7 @@ msgstr "缩进"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 msgid "Each indent level should be one greater than the block containing it."
-msgstr "每个缩进级别必须大于包含它的代码块。"
+msgstr "每个缩进级别必须大于包含它的代码块."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:109
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:129
@@ -114,7 +114,7 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:373
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:767
 msgid "**Good**:"
-msgstr "**良好的**："
+msgstr "**良好的**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:116
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
@@ -128,19 +128,19 @@ msgstr "**良好的**："
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:383
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:773
 msgid "**Bad**:"
-msgstr "**糟糕的**："
+msgstr "**糟糕的**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:126
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
-msgstr "使用2个缩进级别来区分续行与常规代码块。"
+msgstr "使用2个缩进级别来区分续行与常规代码块."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:145
 msgid ""
 "Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
 "indentation level to distinguish continuation lines:"
-msgstr "此规则的例外是数组、字典和枚举。使用单个缩进级别来区分连续行："
+msgstr "此规则的例外是数组、字典和枚举.使用单个缩进级别来区分连续行:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid "Trailing comma"
@@ -152,14 +152,14 @@ msgid ""
 "This results in easier refactoring and better diffs in version control as "
 "the last line doesn't need to be modified when adding new elements."
 msgstr ""
-"在数组、字典和枚举的最后一行使用逗号。这将使版本控制中的重构更容易，差异也更"
-"大，因为添加新元素时不需要修改最后一行。"
+"在数组、字典和枚举的最后一行使用逗号.这将使版本控制中的重构更容易,差异也更大,"
+"因为添加新元素时不需要修改最后一行."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:223
 msgid ""
 "Trailing commas are unnecessary in single-line lists, so don't add them in "
 "this case."
-msgstr "单行列表中不需要尾随逗号，因此在这种情况下不要添加它们。"
+msgstr "单行列表中不需要尾随逗号,因此在这种情况下不要添加它们."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:238
 msgid "Blank lines"
@@ -167,19 +167,19 @@ msgstr "空白行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:240
 msgid "Surround functions and class definitions with two blank lines:"
-msgstr "用两个空行包围函数和类定义："
+msgstr "用两个空行包围函数和类定义:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:255
 msgid "Use one blank line inside functions to separate logical sections."
-msgstr "函数内部使用一个空行来分隔逻辑部分。"
+msgstr "函数内部使用一个空行来分隔逻辑部分."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:258
 msgid "Line length"
-msgstr "Line length（可能是字符长度）"
+msgstr "Line length(可能是字符长度)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:260
 msgid "Keep individual lines of code under 100 characters."
-msgstr "把每行代码控制在100个字符以内。"
+msgstr "把每行代码控制在100个字符以内."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:262
 msgid ""
@@ -187,8 +187,8 @@ msgid ""
 "code on small displays and with two scripts opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
-"如果可以的话，尽量把行控制在80个字符以下。这有助于在小屏幕上阅读代码，并在外"
-"部文本编辑器中并排打开两个脚本。例如，在查看差异修订时。"
+"如果可以的话,尽量把行控制在80个字符以下.这有助于在小屏幕上阅读代码,并在外部文"
+"本编辑器中并排打开两个脚本.例如,在查看差异修订时."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:267
 msgid "One statement per line"
@@ -199,12 +199,12 @@ msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "even with a single line conditional statement."
 msgstr ""
-"不要在一行上合并多个语句 。不要像C语言那样，不能使用单行条件语句（三元运算符"
-"除外）。"
+"不要在一行上合并多个语句 .不要像C语言那样,不能使用单行条件语句(三元运算符除"
+"外)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:290
 msgid "The only exception to that rule is the ternary operator:"
-msgstr "该规则的唯一例外是三元运算符："
+msgstr "该规则的唯一例外是三元运算符:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:297
 msgid "Avoid unnecessary parentheses"
@@ -215,7 +215,7 @@ msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
-"避免表达式和条件语句中的括号。除非对操作顺序有必要，否则它们只会降低可读性。"
+"避免表达式和条件语句中的括号.除非对操作顺序有必要,否则它们只会降低可读性."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:317
 msgid "Boolean operators"
@@ -225,22 +225,22 @@ msgstr "布尔运算"
 msgid ""
 "Prefer the plain English versions of boolean operators, as they are the most "
 "accessible:"
-msgstr "首选布尔运算符的纯英文版本，因为它们是最容易访问的："
+msgstr "首选布尔运算符的纯英文版本,因为它们是最容易访问的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:321
 msgid "Use ``and`` instead of ``&&``."
-msgstr "使用``and``代替 ``&&``。"
+msgstr "使用``and``代替 ``&&``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:322
 msgid "Use ``or`` instead of ``||``."
-msgstr "使用``or``代替 ``||``。"
+msgstr "使用``or``代替 ``||``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:324
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
 msgstr ""
-"也可以在布尔运算符周围使用括号来清除任何歧义。这可以使长表达式更容易阅读。"
+"也可以在布尔运算符周围使用括号来清除任何歧义.这可以使长表达式更容易阅读."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:342
 msgid "Comment spacing"
@@ -251,8 +251,8 @@ msgid ""
 "Regular comments should start with a space, but not code that you comment "
 "out. This helps differentiate text comments from disabled code."
 msgstr ""
-"普通注释开头应该留一个空格，但如果是为了停用代码而将其注释掉则不需要留。这样"
-"可以用来区分文本注释和停用的代码。"
+"普通注释开头应该留一个空格,但如果是为了停用代码而将其注释掉则不需要留.这样可"
+"以用来区分文本注释和停用的代码."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:363
 msgid ""
@@ -260,8 +260,8 @@ msgid ""
 "`Ctrl + K`. This feature adds a single # sign at the start of the selected "
 "lines."
 msgstr ""
-"在脚本编辑器中，要切换已注释的选定代码，请按 :kbd:`Ctrl + K`。此功能在选定行"
-"的开头添加一个 **#** 注释符号。"
+"在脚本编辑器中,要切换已注释的选定代码,请按 :kbd:`Ctrl + K`. 此功能在选定行的"
+"开头添加一个 # 注释符号."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:368
 msgid "Whitespace"
@@ -272,12 +272,12 @@ msgid ""
 "Always use one space around operators and after commas. Also, avoid extra "
 "spaces in dictionary references and function calls."
 msgstr ""
-"请始终在运算符前后和逗号后使用一个空格。避免在字典引用和函数调用中使用多余的"
-"空格，也不要创建 ``列（columns）``。"
+"请始终在运算符前后和逗号后使用一个空格.避免在字典引用和函数调用中使用多余的空"
+"格,也不要创建 ``列(columns)``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:393
 msgid "Don't use spaces to align expressions vertically:"
-msgstr "不要使用空格垂直对齐表达式："
+msgstr "不要使用空格垂直对齐表达式:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:402
 msgid "Quotes"
@@ -287,8 +287,7 @@ msgstr "引号"
 msgid ""
 "Use double quotes unless single quotes make it possible to escape fewer "
 "characters in a given string. See the examples below:"
-msgstr ""
-"尽量使用双引号，除非单引号可以让字符串中需要转义的字符变少。见如下示例："
+msgstr "尽量使用双引号,除非单引号可以让字符串中需要转义的字符变少.见如下示例:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:422
 msgid "Numbers"
@@ -300,8 +299,8 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
-"不要忽略浮点数中的前导或尾随零。 否则，这会使它们的可读性降低，很难一眼与整数"
-"区分开。"
+"不要忽略浮点数中的前导或尾随零. 否则,这会使它们的可读性降低,很难一眼与整数区"
+"分开."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:428
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:441
@@ -319,13 +318,13 @@ msgstr "**糟糕的**::"
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
 "makes the number easier to read."
-msgstr "对于十六进制数字，请使用小写字母，因为它们较矮，使数字更易于阅读。"
+msgstr "对于十六进制数字,请使用小写字母,因为它们较矮,使数字更易于阅读."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:449
 msgid ""
 "Take advantage of GDScript's underscores in literals to make large numbers "
 "more readable."
-msgstr "利用GDScript的文字下划线，使大数字更易读。"
+msgstr "利用GDScript的文字下划线,使大数字更易读."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:471
 msgid "Naming conventions"
@@ -337,8 +336,8 @@ msgid ""
 "make your code clash with the built-in naming conventions, leading to "
 "inconsistent code."
 msgstr ""
-"这些命名约定遵循 Godot 引擎风格。打破这些都会使你的代码与内置的命名约定冲突，"
-"导致风格不一致的代码。"
+"这些命名约定遵循 Godot 引擎风格.打破这些都会使你的代码与内置的命名约定冲突,导"
+"致风格不一致的代码."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:478
 msgid "File names"
@@ -349,8 +348,8 @@ msgid ""
 "Use snake_case for file names. For named classes, convert the PascalCase "
 "class name to snake_case::"
 msgstr ""
-"文件名用 snake_case 命名法，对于有名字的类，将其名字从 PascalCase 命名转化为 "
-"snake_case："
+"文件名用 snake_case 命名法,对于有名字的类,将其名字从 PascalCase 命名转化为 "
+"snake_case:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:493
 msgid ""
@@ -358,8 +357,8 @@ msgid ""
 "also avoids case sensitivity issues that can crop up when exporting a "
 "project from Windows to other platforms."
 msgstr ""
-"这种命名于 Godot 源码中的 C++ 文件命名保持了一致。这也防止了由 Windows 导出到"
-"其他大小写敏感平台时发生的问题。"
+"这种命名于 Godot 源码中的 C++ 文件命名保持了一致.这也防止了由 Windows 导出到"
+"其他大小写敏感平台时发生的问题."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:498
 msgid "Classes and nodes"
@@ -367,11 +366,11 @@ msgstr "类与节点"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:500
 msgid "Use PascalCase for class and node names:"
-msgstr "对类和节点名称使用帕斯卡命名法（PascalCase）："
+msgstr "对类和节点名称使用帕斯卡命名法(PascalCase):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:506
 msgid "Also use PascalCase when loading a class into a constant or a variable:"
-msgstr "将类加载到常量或变量时同样适用："
+msgstr "将类加载到常量或变量时同样适用:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:513
 msgid "Functions and variables"
@@ -379,13 +378,13 @@ msgstr "函数与变量"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:515
 msgid "Use snake\\_case to name functions and variables:"
-msgstr "使用蛇形命名法（snake\\_case）来命名函数与变量："
+msgstr "使用蛇形命名法(snake\\_case)来命名函数与变量:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:522
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods functions the user must "
 "override, private functions, and private variables:"
-msgstr "在虚方法（用户覆写的函数）、私有函数和私有变量前加一个下划线（\\_）："
+msgstr "在虚方法(用户覆写的函数)、私有函数和私有变量前加一个下划线(\\_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:531
 msgid "Signals"
@@ -393,7 +392,7 @@ msgstr "信号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:533
 msgid "Use the past tense to name signals:"
-msgstr "用过去时态来命名信号："
+msgstr "用过去时态来命名信号:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:541
 msgid "Constants and enums"
@@ -403,14 +402,14 @@ msgstr "常数和枚举"
 msgid ""
 "Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
 "underscore (\\_) to separate words:"
-msgstr "使用 CONSTANT\\_CASE，全部大写，用下划线（\\_）分隔单词 ："
+msgstr "使用 CONSTANT\\_CASE,全部大写,用下划线(\\_)分隔单词 :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:550
 msgid ""
 "Use PascalCase for enum *names* and CONSTANT\\_CASE for their members, as "
 "they are constants:"
 msgstr ""
-"对枚举*名称*使用PascalCase，对其成员使用CONSTANT\\_CASE ，因为它们是常量："
+"对枚举*名称*使用PascalCase,对其成员使用CONSTANT\\_CASE ,因为它们是常量:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:564
 msgid "Code order"
@@ -421,12 +420,12 @@ msgid ""
 "This first section focuses on code order. For formatting, see :ref:"
 "`formatting`. For naming conventions, see :ref:`naming_conventions`."
 msgstr ""
-"第一节主要讨论代码顺序。有关格式，请参见 :ref:`formatting`。有关命名约定，请"
-"参见 :ref:`naming_conventions`。"
+"第一节主要讨论代码顺序.有关格式,请参见 :ref:`formatting`.有关命名约定,请参"
+"见 :ref:`naming_conventions`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:569
 msgid "We suggest to organize GDScript code this way:"
-msgstr "我们建议按以下方式组织GDScript代码："
+msgstr "我们建议按以下方式组织GDScript代码:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:592
 msgid ""
@@ -434,30 +433,30 @@ msgid ""
 "to help developers reading the code for the first time understand how it "
 "works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
-"我们优化了顺序，使从上到下阅读代码变得容易，帮助第一次阅读代码的开发人员了解"
-"代码的工作原理，并避免与变量声明顺序相关的错误。"
+"我们优化了顺序,使从上到下阅读代码变得容易,帮助第一次阅读代码的开发人员了解代"
+"码的工作原理,并避免与变量声明顺序相关的错误."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:596
 msgid "This code order follows four rules of thumb:"
-msgstr "此代码顺序遵循四个经验法则："
+msgstr "此代码顺序遵循四个经验法则:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:598
 msgid "Properties and signals come first, followed by methods."
-msgstr "首先是属性和信号，然后是方法。"
+msgstr "首先是属性和信号,然后是方法."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:599
 msgid "Public comes before private."
-msgstr "公共变量优先于私有变量。"
+msgstr "公共变量优先于私有变量."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:600
 msgid "Virtual callbacks come before the class's interface."
-msgstr "虚拟回调出现在类的接口之前。"
+msgstr "虚拟回调出现在类的接口之前."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:601
 msgid ""
 "The object's construction and initialization functions, ``_init`` and "
 "``_ready``, come before functions that modify the object at runtime."
-msgstr "对象的构造和初始化函数``_init``和``_ready``在修改对象的函数之前运行。"
+msgstr "对象的构造和初始化函数``_init``和``_ready``在修改对象的函数之前运行."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:606
 msgid "Class declaration"
@@ -467,7 +466,7 @@ msgstr "类声明"
 msgid ""
 "If the code is meant to run in the editor, place the ``tool`` keyword on the "
 "first line of the script."
-msgstr "如果代码要在编辑器中运行，请将 ``tool`` 关键字放在脚本的第一行。"
+msgstr "如果代码要在编辑器中运行,请将 ``tool`` 关键字放在脚本的第一行."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:611
 msgid ""
@@ -475,12 +474,12 @@ msgid ""
 "a global type in your project using this feature. For more information, see :"
 "ref:`doc_gdscript`."
 msgstr ""
-"如有必要，在后面加上 `class_name`。您可以使用此功能将GDScript文件转换为项目中"
-"的全局类型。有关更多信息，请参见 :ref:`doc gdscript`。"
+"如有必要,在后面加上 `class_name`.您可以使用此功能将GDScript文件转换为项目中的"
+"全局类型.有关更多信息,请参见 :ref:`doc gdscript`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:615
 msgid "Then, add the `extends` keyword if the class extends a built-in type."
-msgstr "然后，如果类扩展了内置类型，则添加 `extends` 关键字。"
+msgstr "然后,如果类扩展了内置类型,则添加 `extends` 关键字."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:617
 msgid ""
@@ -488,8 +487,8 @@ msgid ""
 "You can use that to explain the role of your class to your teammates, how it "
 "works, and how other developers should use it, for example."
 msgstr ""
-"然后，您应该添加类的可选文档字符串作为注释。您可以使用它来向您的团队解释类的"
-"角色、工作原理，以及其他开发人员应该如何使用它，下面举个例子。"
+"然后,您应该添加类的可选文档字符串作为注释.您可以使用它来向您的团队解释类的角"
+"色、工作原理,以及其他开发人员应该如何使用它,下面举个例子."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:629
 msgid "Signals and properties"
@@ -499,20 +498,19 @@ msgstr "信号和属性"
 msgid ""
 "Write signal declarations, followed by properties, that is to say, member "
 "variables, after the docstring."
-msgstr ""
-"先声明信号，后跟属性（即成员变量），它们都在文档注释（docstring）之后。"
+msgstr "先声明信号,后跟属性(即成员变量),它们都在文档注释(docstring)之后."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:634
 msgid ""
 "Enums should come after signals, as you can use them as export hints for "
 "other properties."
-msgstr "枚举应该在信号之后，因为您可以将它们用作其他属性的导出提示。"
+msgstr "枚举应该在信号之后,因为您可以将它们用作其他属性的导出提示."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:637
 msgid ""
 "Then, write constants, exported variables, public, private, and onready "
 "variables, in that order."
-msgstr "然后，按该顺序写入常量、导出变量、公共变量、私有变量和 onready 变量。"
+msgstr "然后,按该顺序写入常量、导出变量、公共变量、私有变量和 onready 变量."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:662
 msgid ""
@@ -521,9 +519,8 @@ msgid ""
 "say, to get child nodes in the scene that your class relies on. This is what "
 "the example above shows."
 msgstr ""
-"GDScript编译器在 ``_ready`` 函数回调之前计算onready变量。您可以使用它来缓存节"
-"点依赖项，也就是说，在您的类所依赖的场景中获取子节点。这就是上面的例子所展示"
-"的。"
+"GDScript编译器在 ``_ready`` 函数回调之前计算onready变量.您可以使用它来缓存节"
+"点依赖项,也就是说,在您的类所依赖的场景中获取子节点.这就是上面的例子所展示的."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:668
 msgid "Member variables"
@@ -535,8 +532,8 @@ msgid ""
 "it makes the code more difficult to follow. Instead, declare them as local "
 "variables in the method's body."
 msgstr ""
-"如果变量只在方法中使用，勿声明其为成员变量，因为我们难以定位在何处使用了该变"
-"量。相反，你应该将它们在方法内部定义为局部变量。"
+"如果变量只在方法中使用,勿声明其为成员变量,因为我们难以定位在何处使用了该变量."
+"相反,你应该将它们在方法内部定义为局部变量."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:675
 msgid "Local variables"
@@ -548,8 +545,8 @@ msgid ""
 "it easier to follow the code, without having to scroll too much to find "
 "where the variable was declared."
 msgstr ""
-"声明局部变量的位置离首次使用它的位置越近越好。这让人更容易跟上代码的思路，而"
-"不需要上下翻找该变量的声明位置。"
+"声明局部变量的位置离首次使用它的位置越近越好.这让人更容易跟上代码的思路,而不"
+"需要上下翻找该变量的声明位置."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:682
 msgid "Methods and static functions"
@@ -557,7 +554,7 @@ msgstr "方法和静态函数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:684
 msgid "After the class's properties come the methods."
-msgstr "在类的属性之后是方法。"
+msgstr "在类的属性之后是方法."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:686
 msgid ""
@@ -565,14 +562,14 @@ msgid ""
 "creating the object in memory. Follow with the ``_ready()`` callback, that "
 "Godot calls when it adds a node to the scene tree."
 msgstr ""
-"从 ``_init()`` 回调方法开始，引擎将在创建内存对象时调用该方法。接下来是 "
-"``_ready()`` 回调，当Godot向场景树添加一个节点时调用它。"
+"从 ``_init()`` 回调方法开始,引擎将在创建内存对象时调用该方法.接下来是 "
+"``_ready()`` 回调,当Godot向场景树添加一个节点时调用它."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:690
 msgid ""
 "These functions should come first because they show how the object is "
 "initialized."
-msgstr "这些函数应该声明在脚本最前面，因为它们显示了对象是如何初始化的。"
+msgstr "这些函数应该声明在脚本最前面,因为它们显示了对象是如何初始化的."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:693
 msgid ""
@@ -580,14 +577,14 @@ msgid ""
 "``_physics_process``, should come next. These control the object's main loop "
 "and interactions with the game engine."
 msgstr ""
-"其他内置的虚拟回调，如 ``_unhandling_input()`` 和 ``_physics_process``，应该"
-"放在后面。它们控制对象的主循环和与游戏引擎的交互。"
+"其他内置的虚拟回调,如 ``_unhandling_input()`` 和 ``_physics_process``,应该放"
+"在后面.它们控制对象的主循环和与游戏引擎的交互."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:697
 msgid ""
 "The rest of the class's interface, public and private methods, come after "
 "that, in that order."
-msgstr "类的其余接口，公共和私有方法，都是按照这个顺序出现的。"
+msgstr "类的其余接口,公共和私有方法,都是按照这个顺序出现的."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:734
 msgid "Static typing"
@@ -598,8 +595,8 @@ msgid ""
 "Since Godot 3.1, GDScript supports :ref:`optional static "
 "typing<doc_gdscript_static_typing>`."
 msgstr ""
-"从Godot 3.1开始，GDScript支持 :ref:`可选的静态类型 "
-"<doc_gdscript_static_typing>`。"
+"从Godot 3.1开始,GDScript支持 :ref:`可选的静态类型 "
+"<doc_gdscript_static_typing>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:739
 msgid "Declared types"
@@ -607,11 +604,11 @@ msgstr "声明类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:741
 msgid "To declare a variable's type, use ``<variable>: <type>``:"
-msgstr "要声明变量的类型，使用 ``<variable>: <type>``："
+msgstr "要声明变量的类型,使用 ``<variable>: <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:747
 msgid "To declare the return type of a function, use ``-> <type>``:"
-msgstr "要声明函数的返回类型，使用``-> <type>``："
+msgstr "要声明函数的返回类型,使用``-> <type>``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:754
 msgid "Inferred types"
@@ -619,7 +616,7 @@ msgstr "推断类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:756
 msgid "In most cases you can let the compiler infer the type, using ``:=``:"
-msgstr "在大多数情况下，你可以让编译器使用 ``:=`` 来推断类型："
+msgstr "在大多数情况下,你可以让编译器使用 ``:=`` 来推断类型:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:762
 msgid ""
@@ -628,6 +625,6 @@ msgid ""
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""
-"然而，在少数情况下，当上下文缺失时，编译器会回退到函数的返回类型。例如，在节"
-"点的场景或文件被加载到内存中之前， ``get_node()`` 无法自动推断类型。在这种情"
-"况下，你应该明确地设置类型。"
+"然而,在少数情况下,当上下文缺失时,编译器会回退到函数的返回类型.例如,在节点的场"
+"景或文件被加载到内存中之前, ``get_node()`` 无法自动推断类型.在这种情况下,你应"
+"该明确地设置类型."

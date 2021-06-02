@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
-#: ../../docs/getting_started/step_by_step/scene_tree.rst:33
-msgid "SceneTree"
-msgstr ""
+#, fuzzy
+msgid "Using SceneTree"
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
@@ -32,10 +32,13 @@ msgid ""
 "Scenes are collections of nodes. They become active once they enter the "
 "*scene tree*."
 msgstr ""
+"V předchozích výukových kurzech se vše točilo kolem konceptu uzlů. Scény "
+"jsou kolekce uzlů. Ty se stávají aktivními, jakmile vstoupí do *stromu scén "
+"(scene tree)*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:14
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -44,6 +47,9 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"Godot funguje interně následujícím způsobem. Existuje třída :ref:`OS "
+"<class_OS>`, pouze její instance běží uplně od začátku. Poté se načtou "
+"všechny ovladače, servery, skriptovací jazyky, systém scén atd."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:21
 msgid ""
@@ -52,6 +58,10 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Po dokončení inicializace potřebuje :ref:`OS <class_OS>` dodat ke spuštění :"
+"ref:`MainLoop <class_MainLoop>` . Až do této chvíle vše funguje uvnitř "
+"enginu (můžete se podívat do souboru main/main.cpp ve zdrojovém kódu, pokud "
+"vás někdy bude zajímat, jak to vlastně běhá)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:27
 msgid ""
@@ -60,18 +70,31 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"Uživatelský program nebo hra se spustí pomocí MainLoop. Tato třída má "
+"několik metod pro inicializaci, nečinnost (funkce synchronizované se "
+"snímky), pravidelně se opakující (funkce synchronizované s fyzikou) a vstup. "
+"Opět se jedná o záležitost enginu a při tvorbě her v Godotu má psaní vlastní "
+"MainLoop málokdy smysl."
+
+#: ../../docs/getting_started/step_by_step/scene_tree.rst:33
+msgid "SceneTree"
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Fungování Godot lze vysvětlit i tak, že se jedná o vysokoúrovňový herní "
+"engine nad nízkoúrovňovým middlewarem."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:38
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"Systém scén je herní engine, zatímco :ref:`OS <class_OS>` a servery "
+"představují nízkoúrovňové API."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 msgid ""
@@ -79,12 +102,17 @@ msgid ""
 "<class_SceneTree>`. This is automatically instanced and set when running a "
 "scene, no need to do any extra work."
 msgstr ""
+"Systém scén poskytuje OS vlastní hlavní smyčku, :ref:`SceneTree "
+"<class_SceneTree>`. Ta se automaticky vytváří a nastavuje při spuštění "
+"scény, není třeba dělat nic dalšího."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
+"Je důležité vědět, že tato třída existuje, protože má několik důležitých "
+"použití:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -92,18 +120,25 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)."
 msgstr ""
+"Obsahuje kořenový :ref:`Viewport(výřez) <class_Viewport>`, do kterého je "
+"scéna přidána jako potomek při svém prvním otevření, aby se stala součástí "
+"*Stromu scén (Scene Tree)* (o tom více příště)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:52
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
+"Obsahuje informace o skupinách a umožňuje zavolat všechny uzly ve skupině "
+"nebo získat jejich seznam."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"Obsahuje některé funkce pro změnu globálního stavu, jako je nastavení režimu "
+"pozastavení nebo ukončení procesu."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -111,16 +146,21 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by calling :ref:`Node."
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
+"Pokud je uzel(Node) součástí Scene Tree, lze singleton :ref:`SceneTree "
+"<class_SceneTree>` získat voláním :ref:`Node.get_tree() "
+"<class_Node_method_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:63
 msgid "Root viewport"
-msgstr ""
+msgstr "Kořenový výřez (viewport)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"Kořenový :ref:`Viewport <class_Viewport>` je vždy na vrcholu scény. Z "
+"aktuálního uzlu jej lze získat dvěma různými způsoby:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:80
 msgid ""
@@ -129,6 +169,10 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen."
 msgstr ""
+"Tento uzel obsahuje hlavní průzor (výřez). Vše, co je potomkem :ref:"
+"`Viewport <class_Viewport>`, se ve výchozím nastavení uvnitř něho "
+"vykresluje, takže dává smysl, že vrcholem všech uzlů je vždy uzel tohoto "
+"typu, jinak by nebylo nic vidět."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:85
 msgid ""
@@ -136,22 +180,29 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"Ačkoli ve scéně lze vytvářet další výřezy (pro efekty rozdělené obrazovky "
+"apod.), tento výřez je jediný, který nevytváří nikdy uživatel . Vzniká "
+"automaticky uvnitř stromu SceneTree."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:90
 msgid "Scene tree"
-msgstr ""
+msgstr "Strom scény"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:92
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"Pokud je uzel přímo nebo nepřímo připojen ke kořenovému výřezu, stává se "
+"součástí *stromu scény*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:95
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
+"To znamená, že jak bylo vysvětleno v předchozích tutoriálech, získá funkce "
+"``_enter_tree()`` a ``_ready()`` (a také ``_exit_tree()``)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
 msgid ""
@@ -160,10 +211,14 @@ msgid ""
 "receive and send notifications, play sounds, etc. When they are removed from "
 "the *scene tree*, they lose these abilities."
 msgstr ""
+"Když uzly vstoupí do *SceneTree*, stanou se aktivními. Získají přístup ke "
+"všemu, co potřebují ke správné funkci, získávají vstupy, zobrazují 2D a 3D "
+"vizualizace, přijímají a odesílají oznámení, přehrávají zvuky atd. Když jsou "
+"ze *stromu scény* odstraněny, tyto schopnosti ztrácejí."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:106
 msgid "Tree order"
-msgstr ""
+msgstr "Pořadí ve stromu"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 msgid ""
@@ -172,14 +227,18 @@ msgid ""
 "with a lower rank in the tree order will get notified before the current "
 "node."
 msgstr ""
+"Většina operací s uzly v systému Godot, jako je kreslení 2D, zpracování nebo "
+"získávání oznámení, se provádí podle pořadí ve stromu To znamená, že rodiče "
+"a sourozenci , které jsou ve stromu nad aktuláním uzlem (tj. mají ve stromu "
+"nižší pořadové číslo ) dostanou oznámení před aktuálním uzlem."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "\"Aktivování\" vstupem do *SceneTree*"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:118
 msgid "A scene is loaded from disk or created by scripting."
-msgstr ""
+msgstr "Scéna je načtena z disku nebo vytvořena pomocí skriptů."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:119
 msgid ""
@@ -187,12 +246,17 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
+"Kořenový uzel této scény (je jen jeden, pamatujete?) je přidán buď jako "
+"potomek \"kořenového\" výřezu (ze SceneTree), nebo k jakémukoli jeho "
+"potomkovi či vnukovi."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:122
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
+"Každý uzel nově přidané scény obdrží oznámení \"enter_tree\" (funkci "
+"``_enter_tree()`` v jazyce GDScript) v pořadí shora dolů."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:125
 msgid ""
@@ -200,16 +264,21 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
+"Pro usnadnění je k dispozici dodatečné oznámení \"ready\" (funkce "
+"``_ready()`` v jazyce GDScript), když se uzel a všechny jeho děti nacházejí "
+"uvnitř aktivní scény."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:128
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
+"Když je scéna (nebo její část) odstraněna, obdrží oznámení \"exit scene"
+"\" (funkce ``_exit_tree()`` v jazyce GDScript) v pořadí zdola nahoru"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid "Changing current scene"
-msgstr ""
+msgstr "Změna aktuální scény"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:135
 msgid ""
@@ -217,6 +286,9 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
+"Po načtení scény je často žádoucí tuto scénu vyměnit za jinou. Jednoduchý "
+"způsob, jak to provést, je použít funkci :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:153
 msgid ""
@@ -224,6 +296,9 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"Místo cest k souborům lze také použít hotové zdroje :ref:`PackedScene "
+"<class_PackedScene>` pomocí ekvivalentní funkce :ref:`SceneTree."
+"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:174
 msgid ""
@@ -234,3 +309,9 @@ msgid ""
 "(background) loading. This must be done manually using autoloads (see next "
 "chapter) and :ref:`doc_background_loading`."
 msgstr ""
+"Jedná se o rychlé a užitečné způsoby přepínání scén, které však mají tu "
+"nevýhodu, že hra zamrzne, dokud se nová scéna nenačte a nespustí. V určitém "
+"okamžiku vývoje hry může být vhodnější vytvořit řádné načítací obrazovky s "
+"ukazatelem průběhu, animovanými indikátory nebo načítáním v pararelním "
+"vláknu (na pozadí). To je třeba provést ručně pomocí automatického načítání "
+"(viz další kapitola) a :ref:`doc_background_loading`."

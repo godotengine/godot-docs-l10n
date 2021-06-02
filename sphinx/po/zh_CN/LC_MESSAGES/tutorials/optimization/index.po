@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,11 +31,10 @@ msgid ""
 "there are always trade-offs, which consist of trading speed for usability "
 "and flexibility. Some practical examples of this are:"
 msgstr ""
-"Godot遵循平衡的表现理念。 在效率表现中，总是有需要权衡交易的东西，可用性和灵"
-"活性。 一些实际的示例是:"
+"Godot遵循平衡的表现理念. 在效率表现中,总是有需要权衡交易的东西,可用性和灵活"
+"性. 一些实际的示例是:"
 
 #: ../../docs/tutorials/optimization/index.rst:11
-#, fuzzy
 msgid ""
 "Rendering large amounts of objects efficiently is easy, but when a large "
 "scene must be rendered, it can become inefficient. To solve this, visibility "
@@ -43,22 +42,20 @@ msgid ""
 "efficient, but at the same time, fewer objects are rendered. Therefore, the "
 "overall rendering efficiency is improved."
 msgstr ""
-"高效地渲染对象很容易，但是当必须渲染大型场景时，它会变得效率低下。 要解决这个"
-"问题，必须将可见性计算添加到渲染中，这会使渲染效率降低，但同时渲染的对象也会"
-"减少，因此整体效率会提高。"
+"有效地渲染大量的物体是很容易的,但是当必须渲染一个大的场景时,效率就会变得很低."
+"为了解决这个问题,必须在渲染时加入可见性计算.这使得渲染的效率降低,但同时,被渲"
+"染的对象也减少了.因此,整体的渲染效率得到了提高."
 
 #: ../../docs/tutorials/optimization/index.rst:17
-#, fuzzy
 msgid ""
 "Configuring the properties of every material for every object that needs to "
 "be rendered is also slow. To solve this, objects are sorted by material to "
 "reduce the costs. At the same time, sorting has a cost."
 msgstr ""
-"为每个需要渲染的对象配置每种材质的属性也很慢。 为了解决这个问题，对象按材质排"
-"序以降低开销，但同时排序会产生开销。"
+"为每个需要渲染的对象配置每个材质的属性也很慢.为了解决这个问题,物体被按材质分"
+"类以减少成本.同时,排序也是有成本的."
 
 #: ../../docs/tutorials/optimization/index.rst:21
-#, fuzzy
 msgid ""
 "In 3D physics, a similar situation happens. The best algorithms to handle "
 "large amounts of physics objects (such as SAP) are slow at insertion/removal "
@@ -66,53 +63,50 @@ msgid ""
 "removal, as well as raycasting, will not be able to handle as many active "
 "objects."
 msgstr ""
-"在3D物理学中，会发生类似的情况。 处理大量物理对象(例如SAP)的最佳算法在插入/移"
-"除对象和射线投射时很慢。 允许更快插入和移除以及光线投射的算法将无法处理尽可能"
-"多的活动对象。"
+"在3D物理中,也有类似的情况发生.处理大量物理对象的最佳算法(如SAP)在插入/移除对"
+"象和射线传输方面都很慢.允许更快的插入和移除以及射线传输的算法,将无法处理那么"
+"多的活动对象."
 
 #: ../../docs/tutorials/optimization/index.rst:27
-#, fuzzy
 msgid ""
 "And there are many more examples of this! Game engines strive to be general-"
 "purpose in nature. Balanced algorithms are always favored over algorithms "
 "that might be fast in some situations and slow in others, or algorithms that "
 "are fast but are more difficult to use."
 msgstr ""
-"还有更多的示例！ 游戏引擎本质上是通用的，因此平衡的算法总是比在某些情况下可能"
-"快速且在其他情况下速度慢的算法，或者算法速度快但使可用性更难的算法更受青睐。"
+"而这样的例子还有很多!游戏引擎在本质上努力成为通用的.平衡的算法总是受到青睐,而"
+"不是那些在某些情况下可能很快而在另一些情况下很慢的算法,或者那些快但更难使用的"
+"算法."
 
 #: ../../docs/tutorials/optimization/index.rst:32
-#, fuzzy
 msgid ""
 "Godot is not an exception to this. While it is designed to have backends "
 "swappable for different algorithms, the default backends prioritize balance "
 "and flexibility over performance."
 msgstr ""
-"Godot不是一个例外，虽然它被设计为可以为不同的算法交换后端，但默认的(或者说，"
-"现在唯一的那些)优先考虑平衡和灵活性而不是性能。"
+"Godot在这方面也不例外.虽然它被设计成可以为不同的算法交换后端,但默认的后端将平"
+"衡和灵活性置于性能之上."
 
 #: ../../docs/tutorials/optimization/index.rst:36
-#, fuzzy
 msgid ""
 "With this clear, the aim of this tutorial section is to explain how to get "
 "the maximum performance out of Godot. While the tutorials can be read in any "
 "order, it is a good idea to start from :ref:`doc_general_optimization`."
-msgstr "清楚了这些，本教程的目的是解释如何从Godot中获得最大的性能。"
+msgstr ""
+"明确了这一点后,本教程部分的目的是解释如何从Godot中获得最大的性能.虽然这些教程"
+"可以按任何顺序阅读,但最好从 :ref:`doc_general_optimization` 开始."
 
 #: ../../docs/tutorials/optimization/index.rst:41
-#, fuzzy
 msgid "Common"
-msgstr "命令"
+msgstr "常见的"
 
 #: ../../docs/tutorials/optimization/index.rst:51
-#, fuzzy
 msgid "CPU"
 msgstr "CPU"
 
 #: ../../docs/tutorials/optimization/index.rst:60
-#, fuzzy
 msgid "GPU"
-msgstr "GUI"
+msgstr "GPU"
 
 #: ../../docs/tutorials/optimization/index.rst:70
 msgid "2D"

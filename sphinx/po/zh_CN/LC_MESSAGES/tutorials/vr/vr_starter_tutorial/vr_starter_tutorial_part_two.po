@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:4
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "VR入门教程"
+msgstr "VR入门教程第2部分"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:7
 msgid "Introduction"
@@ -32,8 +31,8 @@ msgid ""
 "of special :ref:`RigidBody <class_RigidBody>`-based nodes that can be used "
 "in VR."
 msgstr ""
-"在这部分VR入门系列教程中，我们将增加一些特殊的，基于 :ref:`RigidBody "
-"<class_RigidBody>` 的节点来用于VR中。"
+"在这部分VR入门系列教程中,我们将增加一些特殊的,基于 :ref:`RigidBody "
+"<class_RigidBody>` 的节点来用于VR中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:13
 msgid ""
@@ -41,17 +40,16 @@ msgid ""
 "just finished getting the VR controllers working and defined a custom class "
 "called ``VR_Interactable_Rigidbody``."
 msgstr ""
-"这将继续我们在上一个教程部分的内容，我们刚刚完成了VR控制器的工作，并定义了一"
-"个名为 ``VR_Interactable_Rigidbody`` 的自定义类。"
+"这将继续我们在上一个教程部分的内容,我们刚刚完成了VR控制器的工作,并定义了一个"
+"名为 ``VR_Interactable_Rigidbody`` 的自定义类."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:16
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`_."
 msgstr ""
-"`godot-cpp repository <https://github.com/GodotNativeTools/godot-cpp>`_ 的副"
-"本。"
+"你可以在 `OpenVR的GitHub仓库<https://github.com/GodotVR/godot_openvr_fps>`_ "
+"上找到这个完成的项目."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:20
 msgid "Adding destroyable targets"
@@ -64,11 +62,10 @@ msgid ""
 "that will break into a bunch of pieces when destroyed."
 msgstr ""
 "在我们制作任何一个特殊的以 :ref:`RigidBody <class_RigidBody>` 为基础的节点之"
-"前，我们需要一些东西来让它们去执行。让我们做一个简单的球体目标，当它被摧毁"
-"时，会破裂成一堆碎片。"
+"前,我们需要一些东西来让它们去执行.让我们做一个简单的球体目标,当它被摧毁时,会"
+"破裂成一堆碎片."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:25
-#, fuzzy
 msgid ""
 "Open up ``Sphere_Target.tscn``, which is in the ``Scenes`` folder. The scene "
 "is fairly simple, with just a :ref:`StaticBody <class_StaticBody>` with a "
@@ -76,9 +73,11 @@ msgid ""
 "`MeshInstance <class_MeshInstance>` node displaying a sphere mesh, and an :"
 "ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node."
 msgstr ""
-"打开 ``Sphere_Target.tscn`` ，您可以在 ``Scenes`` 文件夹中找到它。 ``Sphere."
-"tscn``只是一个 :ref:`StaticBody <class_StaticBody>` 带有 :ref:"
-"`CollisionShape <class_CollisionShape>`，一个网格和一个音频播放器。"
+"打开 ``Sphere_Target.tscn`` ,它在 ``Scenes`` 文件夹中.这个场景相当简单,只有一"
+"个 :ref:`StaticBody <class_StaticBody>` 和一个球体形状的 :ref:"
+"`CollisionShape <class_CollisionShape>` ,一个显示球体网格的 :ref:"
+"`MeshInstance <class_MeshInstance>` 节点,以及一个 :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` 节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:28
 msgid ""
@@ -88,85 +87,77 @@ msgid ""
 "`RigidBody <class_RigidBody>` node. Outside of that, there isn't really a "
 "lot to talk about, so let's move straight into writing the code."
 msgstr ""
-"特殊的 :ref:`RigidBody <class_RigidBody>` 节点将处理对球体的损坏，这就是为什"
-"么我们使用 :ref:`StaticBody <class_StaticBody>` 节点，而不是诸如 :ref:`Area "
-"<class_Area>` 或 :ref:`RigidBody <class_RigidBody>` 一类的节点。除此以外，就"
-"没什么好说的了，所以让我们直接进入写代码的阶段。"
+"特殊的 :ref:`RigidBody <class_RigidBody>` 节点将处理对球体的损坏,这就是为什么"
+"我们使用 :ref:`StaticBody <class_StaticBody>` 节点,而不是诸如 :ref:`Area "
+"<class_Area>` 或 :ref:`RigidBody <class_RigidBody>` 一类的节点.除此以外,就没"
+"什么好说的了,所以让我们直接进入写代码的阶段."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:31
-#, fuzzy
 msgid ""
 "Select the ``Sphere_Target_Root`` node and make a new script called "
 "``Sphere_Target.gd``. Add the following code:"
 msgstr ""
-"选择 ``Sticky_Grenade`` 并制作一个名为 ``Sticky_Grenade.gd`` 的新脚本。 添加"
-"以下内容:"
+"选择 ``Sphere_Target_Root`` 节点,制作一个名为 ``Sphere_Target.gd`` 的新脚本."
+"添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:79
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:263
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:658
-#, fuzzy
 msgid "Let's go over how this script works."
-msgstr "让我们回顾一下脚本的工作原理。"
+msgstr "让我们来看看这个脚本是如何工作的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:82
-#, fuzzy
 msgid "Explaining the Sphere Target code"
 msgstr "解释Sphere Target代码"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:84
-#, fuzzy
 msgid "First, let's go through all the class variables in the script:"
-msgstr "让我们来看看每个类变量:"
+msgstr "首先,让我们浏览一下脚本中所有的类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:86
-#, fuzzy
 msgid ""
 "``destroyed``: A variable to track whether the sphere target has been "
 "destroyed."
-msgstr "``destroyed``:一个变量，用于跟踪此目标是否被销毁。"
+msgstr "``destroyed``: 一个变量,用于跟踪球体目标是否已被销毁."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:87
-#, fuzzy
 msgid ""
 "``destroyed_timer``: A variable to track how long the sphere target has been "
 "destroyed."
-msgstr "``destroyed_timer``:一个跟踪目标被摧毁多久的变量。"
+msgstr "``destroyed_timer``: 一个变量,用于跟踪球体目标被摧毁的时间."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:88
-#, fuzzy
 msgid ""
 "``DESTROY_WAIT_TIME``: A constant to define the length of time the target "
 "can be destroyed for before it frees/deletes itself."
 msgstr ""
-"``DESTROY_WAIT_TIME``:一个常数，用于告诉球体目标在销毁/删除自身之前需要等待多"
-"长时间。"
+"``DESTROY_WAIT_TIME``: 一个常数,用于定义目标在释放/删除自己之前可以被销毁的时"
+"间长度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:89
-#, fuzzy
 msgid ""
 "``health``: A variable to store the amount of health the sphere target has."
-msgstr "``health``:目标所具有的健康量。"
+msgstr "``health``: 目标所具有的健康量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:90
 msgid ""
 "``RIGID_BODY_TARGET``: A constant to hold the scene of the destroyed sphere "
 "target."
-msgstr "``RIGID_BODY_TARGET`` ：一个常数，用于储存被摧毁的球体目标的场景。"
+msgstr "``RIGID_BODY_TARGET`` :一个常数,用于储存被摧毁的球体目标的场景."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:92
 msgid ""
 "Feel free to check out the ``RIGID_BODY_TARGET`` scene. It is just a bunch "
 "of :ref:`RigidBody <class_RigidBody>` nodes and a broken sphere model."
 msgstr ""
-"你可以随意查看 ``RIGID_BODY_TARGET`` 场景。它只是一堆 :ref:`RigidBody "
-"<class_RigidBody>` 节点和一个破碎的球体模型。"
+"你可以随意查看 ``RIGID_BODY_TARGET`` 场景.它只是一堆 :ref:`RigidBody "
+"<class_RigidBody>` 节点和一个破碎的球体模型."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:94
 msgid ""
 "We'll be instancing this scene so when the target is destroyed, it looks "
 "like it broke into a bunch of pieces."
-msgstr "我们将实例化这个场景，所以当目标被摧毁时，它看起来就像碎成了一堆碎片。"
+msgstr "我们将实例化这个场景,所以当目标被摧毁时,它看起来就像碎成了一堆碎片."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:98
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:286
@@ -176,7 +167,6 @@ msgid "``_ready`` function step-by-step explanation"
 msgstr "``_ready``函数的逐步说明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:100
-#, fuzzy
 msgid ""
 "All the ``_ready`` function does is that it stops the ``_physics_process`` "
 "from being called by calling ``set_physics_process`` and passing ``false``. "
@@ -184,17 +174,17 @@ msgid ""
 "destroying this node when enough time has passed, which we only want to do "
 "when the target has been destroyed."
 msgstr ""
-"我们在 ``_ready`` 中所做的就是将 ``_physics_process`` 设置为 ``false`` 。 这"
-"是因为我们只使用 ``_physics_process`` 来销毁目标，所以我们不想在目标被破坏之"
-"前调用它。"
+"``_ready`` 函数所做的就是通过调用 ``set_physics_process`` 并传递 ``false`` 来"
+"阻止 ``_physics_process`` 被调用.我们这样做的原因是, ``_physics_process`` 中"
+"的所有代码都是为了在足够长的时间内销毁这个节点,而我们只想在目标被销毁时进行销"
+"毁."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:106
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:292
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:694
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:868
-#, fuzzy
 msgid "``_physics_process`` function step-by-step explanation"
-msgstr "``_physics_process``函数的逐步说明"
+msgstr "``_physics_process``函数分步说明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:108
 msgid ""
@@ -204,15 +194,14 @@ msgid ""
 "equal to ``DESTROY_WAIT_TIME``, then the sphere target frees/deletes itself "
 "by calling the ``queue_free`` function."
 msgstr ""
-"首先，这个函数将时间 ``delta`` 添加到 ``destroyed_timer`` 变量中。然后检查 "
-"``destroyed_timer`` 是否大于或等于 ``DESTROY_WAIT_TIME`` 。如果 "
-"``destroyed_timer`` 大于或等于 ``DESTROY_WAIT_TIME`` ，那么球体目标将通过调"
-"用 ``queue_free`` 函数来释放/删除自己。"
+"首先,这个函数将时间 ``delta`` 添加到 ``destroyed_timer`` 变量中.然后检查 "
+"``destroyed_timer`` 是否大于或等于 ``DESTROY_WAIT_TIME`` .如果 "
+"``destroyed_timer`` 大于或等于 ``DESTROY_WAIT_TIME`` ,那么球体目标将通过调用 "
+"``queue_free`` 函数来释放/删除自己."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:113
-#, fuzzy
 msgid "``damage`` function step-by-step explanation"
-msgstr "``damage``函数的逐步说明"
+msgstr "``damage`` 函数的分步说明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:115
 msgid ""
@@ -222,10 +211,9 @@ msgid ""
 "``damage`` variable will hold the amount of damage the special :ref:"
 "`RigidBody <class_RigidBody>` node did to the sphere target."
 msgstr ""
-"``damage`` 函数将被特殊的 :ref:`RigidBody <class_RigidBody>` 节点调用，它将传"
-"递对目标造成的伤害量，这是一个名为 ``damage`` 的函数参数变量。 ``damage`` 变"
-"量将保存特殊的 :ref:`RigidBody <class_RigidBody>` 节点对球体目标造成的伤害"
-"量。"
+"``damage`` 函数将被特殊的 :ref:`RigidBody <class_RigidBody>` 节点调用,它将传"
+"递对目标造成的伤害量,这是一个名为 ``damage`` 的函数参数变量. ``damage`` 变量"
+"将保存特殊的 :ref:`RigidBody <class_RigidBody>` 节点对球体目标造成的伤害量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:118
 msgid ""
@@ -236,10 +224,10 @@ msgid ""
 "things damage the target at exactly the same time, the target cannot be "
 "destroyed twice."
 msgstr ""
-"首先，这个函数通过检查 ``destroyed`` 变量是否等于 ``true`` 来检查目标是否已经"
-"被销毁。如果 ``destroyed`` 等于 ``true`` ，那么这个函数就会调用 ``return`` ，"
-"所以其他代码都不会被调用。这只是一个安全检查，如果两个东西同时损坏目标，则目"
-"标不能被破坏两次。"
+"首先,这个函数通过检查 ``destroyed`` 变量是否等于 ``true`` 来检查目标是否已经"
+"被销毁.如果 ``destroyed`` 等于 ``true`` ,那么这个函数就会调用 ``return`` ,所"
+"以其他代码都不会被调用.这只是一个安全检查,如果两个东西同时损坏目标,则目标不能"
+"被破坏两次."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:122
 msgid ""
@@ -247,8 +235,8 @@ msgid ""
 "target's health, ``health``. If then checks to see if ``health`` is equal to "
 "zero or less, meaning that the target has just been destroyed."
 msgstr ""
-"接下来，该函数从目标的健康状况 ``health`` 中删除受到的伤害量 ``damage`` 。然"
-"后检查 ``health`` 是否等于零或更少，这意味着目标刚刚已被摧毁。"
+"接下来,该函数从目标的健康状况 ``health`` 中删除受到的伤害量 ``damage`` .然后"
+"检查 ``health`` 是否等于零或更少,这意味着目标刚刚已被摧毁."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:125
 msgid ""
@@ -259,11 +247,11 @@ msgid ""
 "``false``. We do this so the target can no longer effect the physics world "
 "and so the non-broken target mesh is not visible."
 msgstr ""
-"如果目标刚刚被摧毁，那么我们将 :ref:`CollisionShape <class_CollisionShape>`"
-"的 ``disabled`` 属性设置为 ``true`` ，将 ``Sphere_Target`` :ref:"
-"`MeshInstance <class_MeshInstance>` 的 ``visible`` 属性设置为 ``false`` ，使 "
-"``Sphere_Target`` :ref:`MeshInstance <class_MeshInstance>` 不可见，这样做，是"
-"为了让目标不能再影响物理世界，所以不可破碎的目标网格是不可见的。"
+"如果目标刚刚被摧毁,那么我们将 :ref:`CollisionShape <class_CollisionShape>` "
+"的 ``disabled`` 属性设置为 ``true`` ,将 ``Sphere_Target`` :ref:`MeshInstance "
+"<class_MeshInstance>` 的 ``visible`` 属性设置为 ``false`` ,使 "
+"``Sphere_Target`` :ref:`MeshInstance<class_MeshInstance>` 不可见,这样做,是为"
+"了让目标不能再影响物理世界,所以不可破碎的目标网格是不可见的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:128
 msgid ""
@@ -273,10 +261,10 @@ msgid ""
 "the non-broken target. This makes it where the broken target starts at the "
 "same position as the non-broken target with the same rotation and scale."
 msgstr ""
-"之后，函数将实例化``RIGID_BODY_TARGET``场景，并将其添加为目标的子场景。然后，"
-"它将新实例化的场景的``global_transform``（称为``clone``）设置为未被破坏的目标"
-"的``global_transform``。这使得被破坏的目标与未被破坏的目标在相同的位置开始，"
-"并具有相同的旋转和比例。"
+"之后,函数将实例化``RIGID_BODY_TARGET``场景,并将其添加为目标的子场景.然后,它将"
+"新实例化的场景的``global_transform``(称为``clone``)设置为未被破坏的目标的"
+"``global_transform``.这使得被破坏的目标与未被破坏的目标在相同的位置开始,并具"
+"有相同的旋转和比例."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:131
 msgid ""
@@ -286,19 +274,18 @@ msgid ""
 "``_physics_process`` so that after ``DESTROY_WAIT_TIME`` seconds have "
 "passed, the sphere target will free/destroy itself."
 msgstr ""
-"然后该函数将``destroyed``变量设置为``true``，这样目标就知道它已经被破坏了，并"
-"调用``set_physics_process``函数并传递``true``。这将开始执行"
-"``_physics_process``中的代码，这样在``DESTROY_WAIT_TIME``秒过后，球体目标将释"
-"放/销毁自己。"
+"然后该函数将``destroyed``变量设置为``true``,这样目标就知道它已经被破坏了,并调"
+"用``set_physics_process``函数并传递``true``.这将开始执行``_physics_process``"
+"中的代码,这样在``DESTROY_WAIT_TIME``秒过后,球体目标将释放/销毁自己."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:134
-#, fuzzy
 msgid ""
 "The function then gets the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node and calls the ``play`` function so it "
 "plays its sound."
 msgstr ""
-"最后，我们告诉 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` 来玩。"
+"然后这个函数获得 :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` 节点"
+"并调用 ``play`` 函数,这样就可以播放它的声音."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:136
 msgid ""
@@ -306,22 +293,21 @@ msgid ""
 "``Game.gd``, the code uses the scene tree and works its way from the root of "
 "the scene tree to the root of the ``Game.tscn`` scene."
 msgstr ""
-"最后，在``Game.gd``中调用``remove_sphere``函数。为了得到``Game.gd``，代码使用"
-"场景树，从场景树的根部到``Game.tscn``场景的根部。"
+"最后,在``Game.gd``中调用``remove_sphere``函数.为了得到``Game.gd``,代码使用场"
+"景树,从场景树的根部到``Game.tscn``场景的根部."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:141
 msgid "Adding the ``remove_sphere`` function to ``Game.gd``"
 msgstr "将 ``remove_sphere`` 函数添加到 ``Game.gd``"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:143
-#, fuzzy
 msgid ""
 "You may have noticed we are calling a function in ``Game.gd``, called "
 "``remove_sphere``, that we have not defined yet. Open up ``Game.gd`` and add "
 "the following additional class variables:"
 msgstr ""
-"您可能已经注意到我们正在使用一个尚未定义的新常量， ``GRENADE_AMOUNTS`` 。 我"
-"们加上吧！ 使用其他类变量将以下类变量添加到``AmmoPickup.gd``:"
+"你可能已经注意到我们在``Game.gd``中调用了一个函数,叫做 ``remove_sphere`` ,而"
+"我们还没有定义.打开 ``Game.gd`` ,添加以下其他的类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:152
 msgid ""
@@ -329,40 +315,39 @@ msgid ""
 "provided ``Game`` scene, there are ``10`` spheres, so that is the initial "
 "value."
 msgstr ""
-"``spheres_left``。游戏世界里剩余的球体目标数量。在提供的``游戏``场景中，有"
-"``10``个球体，所以这是初始值。"
+"``spheres_left``.游戏世界里剩余的球体目标数量.在提供的``游戏``场景中,有``10``"
+"个球体,所以这是初始值."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:153
 msgid ""
 "``sphere_ui``: A reference to the sphere UI. We will use this later in the "
 "tutorial to display the amount of spheres left in the world."
 msgstr ""
-"``sphere_ui``：对球体UI的引用。我们之后会在教程中用到这个，来显示世界中剩余球"
-"体的数量。"
+"``sphere_ui``:对球体UI的引用.我们之后会在教程中用到这个,来显示世界中剩余球体"
+"的数量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:155
-#, fuzzy
 msgid ""
 "With these variables defined, we can now add the ``remove_sphere`` function. "
 "Add the following code to ``Game.gd``:"
 msgstr ""
-"接下来，我们需要添加 ``remove_sphere`` 函数。 将以下内容添加到``Game.gd``:"
+"有了这些变量的定义,我们现在可以添加 ``remove_sphere`` 函数.在 ``Game.gd`` 中"
+"添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:167
-#, fuzzy
 msgid "Let's go through what this function does real quick:"
-msgstr "让我们来看看这个函数的作用:"
+msgstr "让我们快速浏览一下这个函数的作用:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:169
-#, fuzzy
 msgid ""
 "First, it removes one from the ``spheres_left`` variable. It then checks to "
 "see if the ``sphere_ui`` variable is not equal to ``null``, and if it is not "
 "equal to ``null`` it calls the ``update_ui`` function on ``sphere_ui``, "
 "passing in the number of spheres as an argument to the function."
 msgstr ""
-"然后它检查 ``sphere_ui`` 是否为空，如果不是，则调用它的 ``update_ui`` 函数，"
-"传入球的左边数量。 我们将在本部分后面添加UI代码。"
+"首先,它从 ``spheres_left`` 变量中删除一个.然后检查 ``sphere_ui`` 变量是否不等"
+"于 ``null`` ,如果不等于 ``null`` ,则调用 ``sphere_ui`` 的 ``update_ui`` 函数,"
+"将球体的数量作为参数传给该函数."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:172
 msgid "We will add the code for ``sphere_ui`` later in this tutorial!"
@@ -374,30 +359,28 @@ msgid ""
 "destroy it. Let's fix that by adding some special :ref:`RigidBody "
 "<class_RigidBody>`-based nodes that can damage the targets."
 msgstr ""
-"现在 ``Sphere_Target`` 已经可以使用了，但是我们没有办法破坏它。让我们通过添加"
-"一些特殊的基于 :ref:`RigidBody <class_RigidBody>` 的节点来解决这个问题，这些"
-"节点可以破坏目标。"
+"现在 ``Sphere_Target`` 已经可以使用了,但是我们没有办法破坏它.让我们通过添加一"
+"些特殊的基于 :ref:`RigidBody <class_RigidBody>` 的节点来解决这个问题,这些节点"
+"可以破坏目标."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:179
 msgid "Adding a pistol"
 msgstr "加一把手枪"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:181
-#, fuzzy
 msgid ""
 "Let's add a pistol as the first interactable :ref:`RigidBody "
 "<class_RigidBody>` node. Open up ``Pistol.tscn``, which you can find in the "
 "``Scenes`` folder."
 msgstr ""
-"好的，让我们添加一把简单的手枪。 打开 ``Pistol.tscn`` ，您可以在 ``Scenes`` "
-"文件夹中找到它。"
+"让我们添加一把手枪作为第一个可交互的 :ref:`RigidBody <class_RigidBody>` 节点."
+"在 ``Scenes`` 文件夹中找到并打开 ``Pistol.tscn`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:183
 msgid ""
 "Let's quickly go over a few things of note in ``Pistol.tscn`` real quick "
 "before we add the code."
-msgstr ""
-"在添加代码之前，我们先来快速了解一下 ``Pistol.tscn`` 中的一些注意事项。"
+msgstr "在添加代码之前,我们先来快速了解一下 ``Pistol.tscn`` 中的一些注意事项."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:185
 msgid ""
@@ -408,10 +391,10 @@ msgid ""
 "``VR_Interactable_Rigidbody`` class we created in the last part of this "
 "tutorial series."
 msgstr ""
-"``Pistol.tscn``中的所有节点（除了根节点）都是旋转的。这是为了让手枪在拿起时相"
-"对于VR控制器处于正确的旋转状态。根节点是一个:ref:`RigidBody "
-"<class_RigidBody>`节点，我们需要这个节点，因为我们将使用我们在本系列教程最后"
-"一部分创建的``VR_Interactable_Rigidbody``类。"
+"``Pistol.tscn``中的所有节点(除了根节点)都是旋转的.这是为了让手枪在拿起时相对"
+"于VR控制器处于正确的旋转状态.根节点是一个 :ref:`RigidBody <class_RigidBody>`"
+"节点,我们需要这个节点,因为我们将使用我们在本系列教程最后一部分创建的"
+"``VR_Interactable_Rigidbody``类."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:188
 msgid ""
@@ -425,30 +408,27 @@ msgid ""
 "<class_AudioStreamPlayer3D>` node at the end of the pistol that we will use "
 "to play the sound of the pistol firing."
 msgstr ""
-"有一个 :ref:`MeshInstance <class_MeshInstance>` 节点叫做``Pistol_Flash``，这"
-"是一个简单的网格，我们将用它来模拟手枪枪管末端的枪口闪光。一个名为"
-"``LaserSight``的 :ref:`MeshInstance <class_MeshInstance>`节点用来作为手枪瞄准"
-"的指南，它遵循 :ref:`Raycast <class_Raycast>`节点的方向，名为``Raycast``，手"
-"枪用来检测它的'子弹'是否击中了什么东西。最后，在手枪的尾部有一个:ref:"
-"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>`节点，我们将用它来播放手枪射"
-"击的声音。"
+"有一个 :ref:`MeshInstance <class_MeshInstance>` 节点叫做``Pistol_Flash``,这是"
+"一个简单的网格,我们将用它来模拟手枪枪管末端的枪口闪光.一个名为``LaserSight``"
+"的 :ref:`MeshInstance <class_MeshInstance>`节点用来作为手枪瞄准的指南,它遵"
+"循 :ref:`Raycast <class_Raycast>`节点的方向,名为``Raycast``,手枪用来检测它"
+"的'子弹'是否击中了什么东西.最后,在手枪的尾部有一个 :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>`节点,我们将用它来播放手枪射击的声音."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:193
-#, fuzzy
 msgid ""
 "Feel free to look at the other parts of the scene if you want. Most of the "
 "scene is fairly straightforward, with the major changes mentioned above. "
 "Select the :ref:`RigidBody <class_RigidBody>` node called ``Pistol`` and "
 "make a new script called ``Pistol.gd``. Add the following code:"
 msgstr ""
-"现在我们已经查看了场景，让我们编写代码。 选择 ``Pistol`` 根节点， :ref:"
-"`RigidBody <class_RigidBody>` 节点，并创建一个名为 ``Pistol.gd`` 的新脚本。 "
-"将以下代码添加到``Pistol.gd``:"
+"如果你想的话,可以随意看看场景的其他部分.场景的大部分是相当简单的,只有上面提到"
+"的主要变化.选择 :ref:`RigidBody <class_RigidBody>`节点,称为 ``Pistol`` ,并制"
+"作一个新的脚本,称为 ``Pistol.gd`` .添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:267
-#, fuzzy
 msgid "Explaining the pistol code"
-msgstr "获取资源"
+msgstr "解释手枪代码"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:269
 msgid ""
@@ -459,75 +439,70 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
-"首先，请注意，我们有``extends RigidBody``，而不是``extends "
-"VR_Interactable_Rigidbody``。这使得手枪脚本在哪里扩展了"
-"``VR_Interactable_Rigidbody``类，这样VR控制器就知道这个对象可以被交互，当这个"
-"对象被VR控制器持有时，``VR_Interactable_Rigidbody``中定义的函数可以被调用。"
+"首先,请注意,我们有``extends RigidBody``,而不是``extends "
+"VR_Interactable_Rigidbody``.这使得手枪脚本在哪里扩展了"
+"``VR_Interactable_Rigidbody``类,这样VR控制器就知道这个对象可以被交互,当这个对"
+"象被VR控制器持有时,``VR_Interactable_Rigidbody``中定义的函数可以被调用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:273
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:667
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:849
 msgid "Next, let's look at the class variables:"
-msgstr "接下来，我们来看看类变量："
+msgstr "接下来,我们来看看类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:275
-#, fuzzy
 msgid ""
 "``flash_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used to simulate muzzle flash on the "
 "pistol."
 msgstr ""
-"``node_flash_one``:一个用于保存第一个枪口flash的变量 :ref:`MeshInstance "
-"<class_MeshInstance>`。"
+"``node_flash_one``:一个用于保存第一个枪口闪光的变量 :ref:`MeshInstance "
+"<class_MeshInstance>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:276
 msgid ""
 "``FLASH_TIME``: A constant to define how long the muzzle flash will be "
 "visible. This will also define how fast the pistol can fire."
 msgstr ""
-"``FLASH_TIME`` : 一个常数，用于定义枪口闪光的可见时间。这也将定义手枪的射击速"
-"度。"
+"``FLASH_TIME`` : 一个常数,用于定义枪口闪光的可见时间.这也将定义手枪的射击速"
+"度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:277
-#, fuzzy
 msgid ""
 "``flash_timer``: A variable to hold the amount of time the muzzle flash has "
 "been visible for."
-msgstr "``flash_timer``:一个跟踪枪口闪光可见时间的变量。"
+msgstr "``flash_timer``: 一个变量,用于保存枪口闪光的可见时间."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:278
-#, fuzzy
 msgid ""
 "``laser_sight_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that acts as the pistol's 'laser sight'."
 msgstr ""
-"``node_flash_one``:一个用于保存第一个枪口flash的变量 :ref:`MeshInstance "
-"<class_MeshInstance>`。"
+"``node_flash_one``:一个用于保存第一个枪口闪光的变量 :ref:`MeshInstance "
+"<class_MeshInstance>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:279
-#, fuzzy
 msgid ""
 "``pistol_fire_sound``: A variable to hold the :ref:`AudioStreamPlayer3D "
 "<class_AudioStreamPlayer3D>` node used for the pistol's firing sound."
 msgstr ""
-"最后，我们告诉 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` 来玩。"
+"``pistol_fire_sound``: 一个变量,用来保存用于手枪射击声音的 :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` 节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:280
-#, fuzzy
 msgid ""
 "``raycast``: A variable to hold the :ref:`Raycast <class_Raycast>` node that "
 "is used for calculating the bullet's position and normal when the pistol is "
 "fired."
 msgstr ""
-"``node_raycast``:一个变量，用于保存附加到炮塔头部的 :ref:`Raycast "
-"<class_Raycast>` 节点。"
+"``raycast``: 一个变量,用来保存 :ref:`Raycast <class_Raycast>` 节点,用于计算手"
+"枪发射时子弹的坐标和法线."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:281
-#, fuzzy
 msgid ""
 "``BULLET_DAMAGE``: A constant to define the amount of damage a single bullet "
 "from the pistol does."
-msgstr "``BULLET_DAMAGE``:单个子弹造成的伤害量。"
+msgstr "``BULLET_DAMAGE``: 一个常数,用来定义手枪的一颗子弹的伤害量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:282
 msgid ""
@@ -535,8 +510,8 @@ msgid ""
 "applied to :ref:`RigidBody <class_RigidBody>` nodes when the pistol's bullet "
 "collides."
 msgstr ""
-"``COLLISION_FORCE`` : 一个常数，用于定义手枪子弹碰撞时对 :ref:`RigidBody "
-"<class_RigidBody>` 节点施加的力。"
+"``COLLISION_FORCE`` : 一个常数,用于定义手枪子弹碰撞时对 :ref:`RigidBody "
+"<class_RigidBody>` 节点施加的力."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:288
 msgid ""
@@ -544,9 +519,9 @@ msgid ""
 "the ``flash_mesh`` and ``laser_sight_mesh`` nodes, both have their "
 "``visible`` property set to ``false`` so they are not visible initially."
 msgstr ""
-"该函数获取节点并将其分配给适当的变量。对于 ``flash_mesh`` 和 "
-"``laser_sight_mesh`` 节点，它们的 ``visible`` 属性都设置为 ``false`` ，所以它"
-"们最初是不可见的。"
+"该函数获取节点并将其分配给适当的变量.对于 ``flash_mesh`` 和 "
+"``laser_sight_mesh`` 节点,它们的 ``visible`` 属性都设置为 ``false`` ,所以它们"
+"最初是不可见的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:294
 msgid ""
@@ -559,18 +534,17 @@ msgid ""
 "``visible`` property to ``false``."
 msgstr ""
 "``_physics_process`` 函数首先检查手枪的枪口闪光是否可见——检查 "
-"``flash_timer`` 是否大于零。如果 ``flash_timer`` 大于零，那么我们就从中去掉时"
-"间 ``delta`` 。接下来，我们检查 ``flash_timer`` 变量是否为零或更小，因为我们"
-"已经从中减去了 ``delta`` 。如果是的话，那么这说明手枪枪口闪光计时器刚刚结束，"
-"所以我们需要将 ``flash_mesh`` 的 ``visible`` 属性设置为 ``false`` ，使 "
-"``flash_mesh`` 不可见。"
+"``flash_timer`` 是否大于零.如果 ``flash_timer`` 大于零,那么我们就从中去掉时"
+"间 ``delta`` .接下来,我们检查 ``flash_timer`` 变量是否为零或更小,因为我们已经"
+"从中减去了 ``delta`` .如果是的话,那么这说明手枪枪口闪光计时器刚刚结束,所以我"
+"们需要将 ``flash_mesh`` 的 ``visible`` 属性设置为 ``false`` ,使 "
+"``flash_mesh`` 不可见."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:299
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:473
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:760
-#, fuzzy
 msgid "``interact`` function step-by-step explanation"
-msgstr "``interact``函数的逐步说明"
+msgstr "``interact`` 函数的分步说明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:301
 msgid ""
@@ -581,8 +555,8 @@ msgid ""
 "limiting how fast the player can fire."
 msgstr ""
 "interact函数首先通过检查 ``flash_timer`` 是否小于或等于0来检查手枪的枪口闪光"
-"是否隐形。我们这样做是为了将手枪的射击速度限制在枪口闪光可见的时间长度内，这"
-"是限制玩家射击速度的一个简单解决方案。"
+"是否隐形.我们这样做是为了将手枪的射击速度限制在枪口闪光可见的时间长度内,这是"
+"限制玩家射击速度的一个简单解决方案."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:304
 msgid ""
@@ -591,10 +565,10 @@ msgid ""
 "that we set ``flash_mesh.visible`` to ``true`` so the muzzle flash at the "
 "end of the pistol is visible while ``flash_timer`` is more than zero."
 msgstr ""
-"如果 ``flash_timer`` 为0或更少，我们就把 ``flash_timer`` 设置为 "
-"``FLASH_TIME`` ，这样在手枪再次射击之前就会有一个延迟。之后我们将 "
-"``flash_mesh.visible`` 设置为 ``true`` ，这样在 ``flash_timer`` 大于零的时"
-"候，就可以确保手枪尾部的枪口闪光是可见的。"
+"如果 ``flash_timer`` 为0或更少,我们就把 ``flash_timer`` 设置为 "
+"``FLASH_TIME`` ,这样在手枪再次射击之前就会有一个延迟.之后我们将 ``flash_mesh."
+"visible`` 设置为 ``true`` ,这样在 ``flash_timer`` 大于零的时候,就可以确保手枪"
+"尾部的枪口闪光是可见的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:307
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:481
@@ -604,10 +578,10 @@ msgid ""
 "info from the physics world. We then check if the ``raycast`` hit something "
 "by checking if the ``is_colliding`` function is equal to ``true``."
 msgstr ""
-"接下来，我们在 ``raycast`` 中的 :ref:`Raycast <class_Raycast>` 节点上调用 "
-"``force_raycast_update`` 函数，这样它就能从物理世界获得最新的碰撞信息。然后我"
-"们通过检查 ``is_colliding`` 函数是否等于 ``true`` 来检查 ``raycast`` 是否撞到"
-"了什么东西。"
+"接下来,我们在 ``raycast`` 中的 :ref:`Raycast <class_Raycast>` 节点上调用 "
+"``force_raycast_update`` 函数,这样它就能从物理世界获得最新的碰撞信息.然后我们"
+"通过检查 ``is_colliding`` 函数是否等于 ``true`` 来检查 ``raycast`` 是否撞到了"
+"什么东西."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:312
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:501
@@ -617,9 +591,9 @@ msgid ""
 "We assign the hit :ref:`PhysicsBody <class_PhysicsBody>` to a variable "
 "called ``body``."
 msgstr ""
-"如果 ``raycast`` 撞到了什么东西，那么我们通过 ``get_collider`` 函数得到与它碰"
-"撞的 :ref:`PhysicsBody <class_PhysicsBody>` 。我们把撞到的 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 分配给一个叫 ``body`` 的变量。"
+"如果 ``raycast`` 撞到了什么东西,那么我们通过 ``get_collider`` 函数得到与它碰"
+"撞的 :ref:`PhysicsBody <class_PhysicsBody>` .我们把撞到的 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 分配给一个叫 ``body`` 的变量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:315
 msgid ""
@@ -631,11 +605,11 @@ msgid ""
 "mode`` is enabled in the Godot editor. We store this direction in a variable "
 "called ``direction_vector``."
 msgstr ""
-"然后，我们通过从 ``raycast`` 节点的 ``global_transform`` 上的 :ref:`Raycast "
-"<class_Raycast>` 得到它的正 ``Z`` 方向轴。这将为我们提供raycast在Z轴上的指"
-"向，这与在Godot编辑器中启用 \"局部空间模式 \"时 :ref:`Spatial "
-"<class_Spatial>` 小工具上的蓝色箭头的方向相同。我们将这个方向存储在一个名为 "
-"``direction_vector`` 的变量中。"
+"然后,我们通过从 ``raycast`` 节点的 ``global_transform`` 上的 :ref:`Raycast "
+"<class_Raycast>` 得到它的正 ``Z`` 方向轴.这将为我们提供raycast在Z轴上的指向,"
+"这与在Godot编辑器中启用 \"局部空间模式 \"时 :ref:`Spatial<class_Spatial>` 小"
+"工具上的蓝色箭头的方向相同.我们将这个方向存储在一个名为 ``direction_vector`` "
+"的变量中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:319
 msgid ""
@@ -647,11 +621,11 @@ msgid ""
 "the distance the :ref:`Raycast <class_Raycast>` traveled before it collided, "
 "which we store in a variable called ``raycast_distance``."
 msgstr ""
-"接下来我们通过获取全局位置``global_transform.origin``到:ref:`Raycast "
-"<class_Raycast>`碰撞点的距离，``global_transform.原点到:ref:`Raycast "
-"<class_Raycast>`的碰撞点的距离，``raycast.get_collision_point``，使用"
-"``distance_to``函数。这将给我们提供:ref:`Raycast <class_Raycast>`在碰撞之前所"
-"走过的距离，我们将其存储在一个名为``raycast_distance``的变量中。"
+"接下来我们通过获取全局位置``global_transform.origin``到 :ref:`Raycast "
+"<class_Raycast>` 碰撞点的距离,``global_transform`` 原点到 :ref:`Raycast "
+"<class_Raycast>` 的碰撞点的距离, ``raycast.get_collision_point`` ,使用 "
+"``distance_to`` 函数.这将给我们提供 :ref:`Raycast<class_Raycast>` 在碰撞之前"
+"所走过的距离,我们将其存储在一个名为 ``raycast_distance`` 的变量中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:323
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:512
@@ -663,10 +637,9 @@ msgid ""
 "``BULLET_DAMAGE`` so it takes damage from the bullet colliding into it."
 msgstr ""
 "然后代码检查 :ref:`PhysicsBody <class_PhysicsBody>` , ``body`` , 是否有一个叫"
-"做 ``damage`` 的函数/方法，使用 ``has_method`` 函数。如果 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 有一个叫做 ``damage`` 的函数/方法，那么我们就调用 "
-"``damage`` 函数，并传递 ``BULLET_DAMAGE`` ，这样它就会受到子弹碰撞到它的伤"
-"害。"
+"做 ``damage`` 的函数/方法,使用 ``has_method`` 函数.如果 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 有一个叫做 ``damage`` 的函数/方法,那么我们就调用 "
+"``damage`` 函数,并传递 ``BULLET_DAMAGE`` ,这样它就会受到子弹碰撞到它的伤害."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:326
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:515
@@ -677,10 +650,10 @@ msgid ""
 "<class_RigidBody>`-based node, then we want to push it when the bullet "
 "collides."
 msgstr ""
-"不管 :ref:`PhysicsBody <class_PhysicsBody>` 是否有 ``damage`` 函数，我们都要"
-"检查 ``body`` 是否是基于 :ref:`RigidBody <class_RigidBody>` 的节点。如果 "
-"``body`` 是一个以 :ref:`RigidBody <class_RigidBody>` 为基础的节点，那么我们要"
-"在子弹碰撞时推它。"
+"不管 :ref:`PhysicsBody <class_PhysicsBody>` 是否有 ``damage`` 函数,我们都要检"
+"查 ``body`` 是否是基于 :ref:`RigidBody <class_RigidBody>` 的节点.如果 "
+"``body`` 是一个以 :ref:`RigidBody <class_RigidBody>` 为基础的节点,那么我们要"
+"在子弹碰撞时推它."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:329
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:518
@@ -692,10 +665,10 @@ msgid ""
 "move force than those over longer distances, giving a *slightly* more "
 "realistic collision response."
 msgstr ""
-"要计算所受的力，我们只需用``COLLISION_FORCE``除以``raycast_distance``，然后再"
-"乘以``body.mass``。我们把这个计算结果存储在一个叫``collision_force``的变量"
-"中。这将使距离较短的碰撞比距离较长的碰撞施加移动力，给出一个略微*真实的碰撞响"
-"应。"
+"为了计算所施加的力的大小,我们只需用 ``COLLISION_FORCE`` 除以"
+"``raycast_distance``,然后再乘以 ``body.mass``. 我们把这个计算结果存储在一个叫"
+"做 ``collision_force`` 的变量中.这将使短距离的碰撞比长距离的碰撞更容易受力,从"
+"而使碰撞的反应 *更* 真实."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:332
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:521
@@ -705,9 +678,9 @@ msgid ""
 "force is applied from the center, and the collision force is the "
 "``collision_force`` variable we calculated."
 msgstr ""
-"然后我们用``apply_impulse``函数推送:ref:`RigidBody <class_RigidBody>`，其中位"
-"置是一个零向量的三维数组，所以力是从中心开始施加的，碰撞力是我们计算出来的"
-"``collision_force``变量。"
+"然后我们用``apply_impulse``函数推送 :ref:`RigidBody <class_RigidBody>`,其中位"
+"置是一个零向量的三维数组,所以力是从中心开始施加的,碰撞力是我们计算出来的"
+"``collision_force``变量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:336
 msgid ""
@@ -715,8 +688,8 @@ msgid ""
 "play the pistol shot sound by calling the ``play`` function on the "
 "``pistol_fire_sound`` variable."
 msgstr ""
-"不管 ``raycast`` 变量是否击中了什么东西，我们都要通过调用 "
-"``pistol_fire_sound`` 变量上的 ``play`` 函数来播放手枪的射击声。"
+"不管 ``raycast`` 变量是否击中了什么东西,我们都要通过调用 "
+"``pistol_fire_sound`` 变量上的 ``play`` 函数来播放手枪的射击声."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:338
 msgid ""
@@ -725,14 +698,13 @@ msgid ""
 "it is not equal to ``null``, we then set the ``rumble`` property of the VR "
 "controller to ``0.25``, so there is a slight rumble when the pistol fires."
 msgstr ""
-"最后，我们通过检查 ``controller`` 变量是否不等于 ``null`` 来检查手枪是否被VR"
-"控制器所持有。如果不等于 ``null`` ，我们就把VR控制器的 ``rumble`` 属性设置为 "
-"``0.25`` ，这样手枪射击时就会有轻微的响声。"
+"最后,我们通过检查 ``controller`` 变量是否不等于 ``null`` 来检查手枪是否被VR控"
+"制器所持有.如果不等于 ``null`` ,我们就把VR控制器的 ``rumble`` 属性设置为 "
+"``0.25`` ,这样手枪射击时就会有轻微的响声."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:343
-#, fuzzy
 msgid "``picked_up`` function step-by-step explanation"
-msgstr "``picked_up``函数的逐步说明"
+msgstr "``picked_up`` 函数的分步说明"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:345
 msgid ""
@@ -740,8 +712,8 @@ msgid ""
 "<class_MeshInstance>` visible by setting the ``visible`` property to "
 "``true``."
 msgstr ""
-"这个函数只是通过设置 ``visible`` 属性为 ``true`` ，使 ``laser_sight_mesh`` :"
-"ref:`MeshInstance <class_MeshInstance>` 可见。"
+"这个函数只是通过设置 ``visible`` 属性为 ``true`` ,使 ``laser_sight_mesh`` :"
+"ref:`MeshInstance <class_MeshInstance>` 可见."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:348
 msgid "``dropped`` function step-by-step explanation"
@@ -753,8 +725,8 @@ msgid ""
 "<class_MeshInstance>` invisible by setting the ``visible`` property to "
 "``false``."
 msgstr ""
-"这个函数只是通过设置 ``visible`` 属性为 ``false`` ，使 ``laser_sight_mesh`` :"
-"ref:`MeshInstance <class_MeshInstance>` 不可见。"
+"这个函数只是通过设置 ``visible`` 属性为 ``false`` ,使 ``laser_sight_mesh`` :"
+"ref:`MeshInstance <class_MeshInstance>` 不可见."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:354
 msgid "Pistol finished"
@@ -768,9 +740,9 @@ msgid ""
 "the VR controller! If you fire at the targets long enough, they will break "
 "into pieces."
 msgstr ""
-"这就是我们需要做的所有工作 手枪在项目中！继续运行项目吧。如果你爬上楼梯，拿起"
-"手枪，你就可以用VR控制器上的扳机按钮向场景中的球体目标射击!如果你向目标射击的"
-"时间足够长，它们就会碎裂成碎片。"
+"这就是我们需要做的所有工作 手枪在项目中！继续运行项目吧.如果你爬上楼梯,拿起手"
+"枪,你就可以用VR控制器上的扳机按钮向场景中的球体目标射击!如果你向目标射击的时"
+"间足够长,它们就会碎裂成碎片."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:365
 msgid "Adding a shotgun"
@@ -778,20 +750,18 @@ msgstr "添加霰弹枪"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:367
 msgid "Next let's add a shotgun to the VR project."
-msgstr "接下来让我们往VR项目中添加一杆霰弹枪。"
+msgstr "接下来让我们往VR项目中添加一杆霰弹枪."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:369
-#, fuzzy
 msgid ""
 "Adding a special shotgun :ref:`RigidBody <class_RigidBody>` should be fairly "
 "straightforward, as almost everything with the shotgun is the same as the "
 "pistol."
 msgstr ""
-"让我们添加一种不同类型的射击 :ref:`RigidBody <class_RigidBody>`:霰弹枪。 这很"
-"简单，几乎所有东西都和手枪一样。"
+"添加一个特殊的猎枪 :ref:`RigidBody <class_RigidBody>` 应该是相当简单,因为猎枪"
+"的一切几乎都和手枪一样."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:371
-#, fuzzy
 msgid ""
 "Open up ``Shotgun.tscn``, which you can find in the ``Scenes`` folder and "
 "take a look at the scene. Almost everything is the same as in ``Pistol."
@@ -802,27 +772,25 @@ msgid ""
 "ref:`Raycast <class_Raycast>` nodes that will rotate randomly in a cone "
 "shape when the shotgun fires."
 msgstr ""
-"打开 ``Shotgun.tscn`` ，您可以在 ``Scenes`` 找到它。 注意一切都或多或少相同，"
-"但不是一个 :ref:`Raycast <class_Raycast>`，有五个，没有激光指针。 这是因为霰"
-"弹枪通常以锥形形状发射，因此我们将通过几个 :ref:`Raycast <class_Raycast>` 节"
-"点模拟它们，所有节点都以锥形随机旋转，然后我移除了激光指示器 游戏角色必须瞄准"
-"而不确定霰弹枪指向的位置。"
+"在 ``Scenes`` 文件夹中找到并打开 ``Shotgun.tscn`` ,查看这个场景.几乎所有的东"
+"西都和 ``Pistol.tscn`` 一样.除了名称上的变化,唯一不同的是,没有一个 :ref:"
+"`Raycast <class_Raycast>` ,而是有五个 :ref:`Raycast <class_Raycast>` 节点.这"
+"是因为霰弹枪一般是以锥形发射的,所以我们要通过几个 :ref:`Raycast "
+"<class_Raycast>` 节点来模仿这种效果,当霰弹枪发射时,这些节点会以锥形随机旋转."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:376
 msgid ""
 "Outside of that, everything is more or less the same as ``Pistol.tscn``."
-msgstr "除此之外，一切都和 ``Pistol.tscn`` 差不多。"
+msgstr "除此之外,一切都和 ``Pistol.tscn`` 差不多."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:378
-#, fuzzy
 msgid ""
 "Let's write the code for the shotgun. Select the :ref:`RigidBody "
 "<class_RigidBody>` node called ``Shotgun`` and make a new script called "
 "``Shotgun.gd``. Add the following code:"
 msgstr ""
-"好的，现在让我们写下炸弹的代码。 选择``Bomb`` :ref:`RigidBody "
-"<class_RigidBody>` 节点并创建一个名为 ``Bomb.gd`` 的新脚本。 将以下代码添加到"
-"``Bomb.gd``:"
+"让我们来编写霰弹枪的代码.选择 :ref:`RigidBody <class_RigidBody>`节点,名为 "
+"``Shotgun`` ,并创建一个名为 ``Shotgun.gd`` 的新脚本.添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:456
 msgid ""
@@ -830,13 +798,12 @@ msgid ""
 "with just a few *minor* changes that are primarily just different names. Due "
 "to how similar these scripts are, let's just focus on the changes."
 msgstr ""
-"这段代码的大部分内容与手枪的代码完全相同，只有一些*小的改动，主要是名称不同而"
-"已。由于这些脚本的相似度很高，我们只关注一下这些变化。"
+"这段代码的大部分内容与手枪的代码完全相同,只有一些 *小* 的改动,主要是名称不同"
+"而已.由于这些脚本的相似度很高,我们只关注一下这些变化."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:460
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "获取资源"
+msgstr "解释猎枪代码"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:462
 msgid ""
@@ -844,22 +811,20 @@ msgid ""
 "the VR controllers know that this object can be interacted with and what "
 "functions are available."
 msgstr ""
-"和手枪一样，霰弹枪也扩展了 ``VR_Interactable_Rigidbody`` ，所以VR控制器知道这"
-"个对象可以与之交互，以及有哪些功能。"
+"和手枪一样,霰弹枪也扩展了 ``VR_Interactable_Rigidbody`` ,所以VR控制器知道这个"
+"对象可以与之交互,以及有哪些功能."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:465
-#, fuzzy
 msgid "There is only one new class variable:"
-msgstr "首先我们定义一些类变量:"
+msgstr "只有一个新的类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:467
-#, fuzzy
 msgid ""
 "``raycasts``: A variable to hold the node that has all of the :ref:`Raycast "
 "<class_Raycast>` nodes as its children."
 msgstr ""
-"``raycasts``:包含所有五个节点的节点 :ref:`Raycast <class_Raycast>` 用于霰弹枪"
-"射击的节点。"
+"``raycasts``: 一个变量,用来保存拥有所有 :ref:`Raycast <class_Raycast>` 子节点"
+"的节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:469
 msgid ""
@@ -869,9 +834,9 @@ msgid ""
 "are the same as ``Pistol.gd`` and function the same way, some just are "
 "renamed to be non-pistol specific."
 msgstr ""
-"新的类变量取代了``Pistol.gd``中的``raycast``变量，因为对于霰弹枪，我们需要处"
-"理多个:ref:`Raycast <class_Raycast>`节点，而不是只有一个。所有其他类变量与"
-"``Pistol.gd``相同，功能也相同，只是有些变量被重新命名为非手枪专用变量。"
+"新的类变量取代了``Pistol.gd``中的``raycast``变量,因为对于霰弹枪,我们需要处理"
+"多个 :ref:`Raycast <class_Raycast>`节点,而不是只有一个.所有其他类变量与"
+"``Pistol.gd``相同,功能也相同,只是有些变量被重新命名为非手枪专用变量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:475
 msgid ""
@@ -882,8 +847,8 @@ msgid ""
 "limiting how fast the player can fire."
 msgstr ""
 "interact函数首先通过检查 ``flash_timer`` 是否小于或等于0来检查霰弹枪的枪口闪"
-"光是否隐形。我们这样做是为了将霰弹枪的射击速度限制在枪口闪光可见的时间长度"
-"内，这是限制玩家射击速度的一个简单解决方案。"
+"光是否隐形.我们这样做是为了将霰弹枪的射击速度限制在枪口闪光可见的时间长度内,"
+"这是限制玩家射击速度的一个简单解决方案."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:478
 msgid ""
@@ -892,10 +857,10 @@ msgid ""
 "that we set ``flash_mesh.visible`` to ``true`` so the muzzle flash at the "
 "end of the shotgun is visible while ``flash_timer`` is more than zero."
 msgstr ""
-"如果 ``flash_timer`` 为0或更少，我们再将 ``flash_timer`` 设置为 "
-"``FLASH_TIME`` ，这样在霰弹枪再次开火之前就会有一个延迟。之后我们将 "
-"``flash_mesh.visible`` 设置为 ``true`` ，这样在 ``flash_timer`` 大于零的时"
-"候，霰弹枪尾部的枪口闪光将是可见的。"
+"如果 ``flash_timer`` 为0或更少,我们再将 ``flash_timer`` 设置为 "
+"``FLASH_TIME`` ,这样在霰弹枪再次开火之前就会有一个延迟.之后我们将 "
+"``flash_mesh.visible`` 设置为 ``true`` ,这样在 ``flash_timer`` 大于零的时候,"
+"霰弹枪尾部的枪口闪光将是可见的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:484
 msgid ""
@@ -904,9 +869,9 @@ msgid ""
 "`Raycast <class_Raycast>` nodes that are children of the ``raycasts`` "
 "variable."
 msgstr ""
-"接下来我们使用for循环来检查 ``raycasts`` 变量的每个子节点。这样代码就会遍历 :"
-"ref:`Raycast <class_Raycast>` 的每一个节点，这些节点都是 ``raycasts`` 变量的"
-"子节点。"
+"接下来我们使用for循环来检查 ``raycasts`` 变量的每个子节点.这样代码就会遍历 :"
+"ref:`Raycast <class_Raycast>` 的每一个节点,这些节点都是 ``raycasts`` 变量的子"
+"节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:489
 msgid ""
@@ -914,9 +879,9 @@ msgid ""
 "<class_Raycast>` node. If the node is not a :ref:`Raycast <class_Raycast>` "
 "node, we simply use ``continue`` to skip it."
 msgstr ""
-"对于每个节点，我们检查 ``raycast`` 是否 *不是一个* :ref:`Raycast "
-"<class_Raycast>` 节点。如果这个节点不是 :ref:`Raycast <class_Raycast>` 节点，"
-"我们就简单地使用 ``continue`` 跳过它。"
+"对于每个节点,我们检查 ``raycast`` 是否 *不是一个* :ref:`Raycast "
+"<class_Raycast>` 节点.如果这个节点不是 :ref:`Raycast <class_Raycast>` 节点,我"
+"们就简单地使用 ``continue`` 跳过它."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:491
 msgid ""
@@ -925,9 +890,9 @@ msgid ""
 "Vector3 where the X and Z axis are a random number from ``-10`` to ``10``. "
 "This random number is selected using the ``rand_range`` function."
 msgstr ""
-"接下来，我们通过设置 ``raycast`` 的 ``rotation_degrees`` 变量为Vector3，其中X"
-"轴和Z轴为 ``-10`` 至 ``10`` 的随机数，将 ``raycast`` 节点围绕一个小于 ``10`` "
-"度锥体随机旋转。这个随机数是用 ``rand_range`` 函数选择的。"
+"接下来,我们通过设置 ``raycast`` 的 ``rotation_degrees`` 变量为Vector3,其中X轴"
+"和Z轴为 ``-10`` 至 ``10`` 的随机数,将 ``raycast`` 节点围绕一个小于 ``10`` 度"
+"锥体随机旋转.这个随机数是用 ``rand_range`` 函数选择的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:494
 msgid ""
@@ -937,19 +902,18 @@ msgid ""
 "by checking if the ``is_colliding`` function is equal to ``true``."
 msgstr ""
 "然后我们在 ``raycast`` 中的 :ref:`Raycast <class_Raycast>` 节点上调用 "
-"``force_raycast_update`` 函数，这样它就能从物理世界获得最新的碰撞信息。然后我"
-"们通过检查 ``is_colliding`` 函数是否等于 ``true`` 来检查 ``raycast`` 是否撞到"
-"了什么东西。"
+"``force_raycast_update`` 函数,这样它就能从物理世界获得最新的碰撞信息.然后我们"
+"通过检查 ``is_colliding`` 函数是否等于 ``true`` 来检查 ``raycast`` 是否撞到了"
+"什么东西."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:497
-#, fuzzy
 msgid ""
 "The rest of the code is exactly the same, but this process is repeated for "
 "each :ref:`Raycast <class_Raycast>` node that is a child of the ``raycasts`` "
 "variable."
 msgstr ""
-"我们要做的第一件事是获取 :ref:`Raycast <class_Raycast>` 节点，它是 "
-"``Rifle_Point`` 的子节点。"
+"其余的代码完全相同,但这个过程对每个 :ref:`raycast <class_Raycast>` 节点进行重"
+"复,该节点是 ``raycasts`` 变量的一个子节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:504
 msgid ""
@@ -961,11 +925,11 @@ msgid ""
 "enabled in the Godot editor. We store this direction in a variable called "
 "``direction_vector``."
 msgstr ""
-"然后，我们从 ``raycast`` 节点的 ``global_transform`` 上的 :ref:`Basis "
-"<class_Basis>` 得到射线广播的正 ``Z`` 方向轴，这提供raycast在Z轴上的指向，与"
-"在Godot编辑器中启用 ``Local space mode`` [局部空间模式] 时 :ref:`Spatial "
-"<class_Spatial>` 小工具上的蓝色箭头的方向相同。我们将这个方向存储在一个名为 "
-"``direction_vector`` 的变量中。"
+"然后,我们从 ``raycast`` 节点的 ``global_transform`` 上的 :ref:`Basis "
+"<class_Basis>` 得到射线广播的正 ``Z`` 方向轴,这提供raycast在Z轴上的指向,与在"
+"Godot编辑器中启用 ``Local space mode`` [局部空间模式] 时 :ref:`Spatial "
+"<class_Spatial>` 小工具上的蓝色箭头的方向相同.我们将这个方向存储在一个名为 "
+"``direction_vector`` 的变量中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:508
 msgid ""
@@ -976,11 +940,11 @@ msgid ""
 "will give us the distance the :ref:`Raycast <class_Raycast>` traveled before "
 "it collided, which we store in a variable called ``raycast_distance``."
 msgstr ""
-"接下来，我们通过使用 ``distance_to`` 函数获取 ``raycast`` 节点的全局位置 "
+"接下来,我们通过使用 ``distance_to`` 函数获取 ``raycast`` 节点的全局位置 "
 "``global_transform.origin`` 到raycast的碰撞点 ``raycast."
-"get_collision_point`` 的距离，得到从raycast原点到raycast碰撞点的距离。这提供"
-"了 :ref:`Raycast <class_Raycast>`在碰撞前走过的距离，将其存储在一个名为 "
-"``raycast_distance`` 的变量中。"
+"get_collision_point`` 的距离,得到从raycast原点到raycast碰撞点的距离.这提供"
+"了 :ref:`Raycast <class_Raycast>`在碰撞前走过的距离,将其存储在一个名为 "
+"``raycast_distance`` 的变量中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:526
 msgid ""
@@ -988,8 +952,8 @@ msgid ""
 "variable have been iterated over, we then play the shotgun shot sound by "
 "calling the ``play`` function on the ``shotgun_fire_sound`` variable."
 msgstr ""
-"一旦所有的 :ref:`Raycast <class_Raycast>` 中的 ``raycast`` 变量被迭代过后，通"
-"过调用 ``play`` 中 ``shotgun_fire_sound`` 变量来播放枪声。"
+"一旦所有的 :ref:`Raycast <class_Raycast>` 中的 ``raycast`` 变量被迭代过后,通"
+"过调用 ``play`` 中 ``shotgun_fire_sound`` 变量来播放枪声."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:528
 msgid ""
@@ -998,9 +962,9 @@ msgid ""
 "it is not equal to ``null``, we then set the ``rumble`` property of the VR "
 "controller to ``0.25``, so there is a slight rumble when the shotgun fires."
 msgstr ""
-"最后，我们通过检查 ``controller`` 变量是否不等于 ``null`` 来检查霰弹枪是否由"
-"VR控制器持有。如果不等于 ``null`` ，我们就把VR控制器的 ``rumble`` 属性设置为 "
-"``0.25`` ，这样猎枪射击时就会有轻微的轰鸣声。"
+"最后,我们通过检查 ``controller`` 变量是否不等于 ``null`` 来检查霰弹枪是否由VR"
+"控制器持有.如果不等于 ``null`` ,我们就把VR控制器的 ``rumble`` 属性设置为 "
+"``0.25`` ,这样猎枪射击时就会有轻微的轰鸣声."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:532
 msgid "Shotgun finished"
@@ -1010,16 +974,15 @@ msgstr "霰弹枪完毕"
 msgid ""
 "Everything else is exactly the same as the pistol, with at most just some "
 "simple name changes."
-msgstr "其他的一切都和手枪完全一样，最多只是一些简单的名称变化。"
+msgstr "其他的一切都和手枪完全一样,最多只是一些简单的名称变化."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:536
-#, fuzzy
 msgid ""
 "Now the shotgun is finished! You can find the shotgun in the sample scene by "
 "looking around the back of one of the walls (not in the building though!)."
 msgstr ""
-"现在您也可以找到并发射霰弹枪！ 霰弹枪位于其中一个墙后面的后面(虽然不在建筑物"
-"中！)。"
+"现在,猎枪已经完成了!你可以在样本场景中找到霰弹枪,在其中一面墙的后面寻找,不是"
+"在建筑物里面！."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:541
 msgid "Adding a bomb"
@@ -1031,13 +994,12 @@ msgid ""
 "Instead of adding something that shoots, let's add something we can throw - "
 "a bomb!"
 msgstr ""
-"好吧，让我们添加一个不同的特殊 :ref:`RigidBody <class_RigidBody>` 。与其添加"
-"一些会射击的东西，不如添加一些我们可以投掷的东西--炸弹!"
+"好吧,让我们添加一个不同的特殊 :ref:`RigidBody <class_RigidBody>` .与其添加一"
+"些会射击的东西,不如添加一些我们可以投掷的东西--炸弹!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:545
-#, fuzzy
 msgid "Open up ``Bomb.tscn``, which is in the ``Scenes`` folder."
-msgstr "打开 ``Bomb.tscn`` ，您可以在 ``Scenes`` 文件夹中找到它。"
+msgstr "打开 ``Bomb.tscn`` ,它位于 ``Scenes`` 文件夹中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:547
 msgid ""
@@ -1048,11 +1010,11 @@ msgid ""
 "ref:`MeshInstance <class_MeshInstance>` called ``Bomb`` that is used to "
 "display the mesh for the bomb."
 msgstr ""
-"根节点是一个 :ref:`RigidBody <class_RigidBody>`节点，我们将扩展使用 "
-"``VR_Interactable_Rigidbody`` ，它有一个 :ref:`CollisionShape "
-"<class_CollisionShape>`，就像我们到目前为止所做的其他特殊 :ref:`RigidBody "
-"<class_RigidBody>` 节点一样。同样，有一个 :ref:`MeshInstance "
-"<class_MeshInstance>` 叫做 ``Bomb`` ，用来显示炸弹的网格。"
+"根节点是一个 :ref:`RigidBody <class_RigidBody>`节点,我们将扩展使用 "
+"``VR_Interactable_Rigidbody`` ,它有一个 :ref:`CollisionShape "
+"<class_CollisionShape>`,就像我们到目前为止所做的其他特殊 :ref:`RigidBody "
+"<class_RigidBody>` 节点一样.同样,有一个 :ref:`MeshInstance "
+"<class_MeshInstance>` 叫做 ``Bomb`` ,用来显示炸弹的网格."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:551
 msgid ""
@@ -1062,10 +1024,10 @@ msgid ""
 "bomb explodes. Essentially, this :ref:`Area <class_Area>` node will be the "
 "blast radius for the bomb."
 msgstr ""
-"然后我们有一个 :ref:`Area <class_Area>` 节点，简单地称为``Area``，它有一个大"
-"的 :ref:`CollisionShape <class_CollisionShape>` 作为它的子节点。当炸弹爆炸"
-"时，将使用这个 :ref:`Area <class_Area>`节点来影响其中的任何东西。基本上，这"
-"个 :ref:`Area <class_Area>` 节点将是炸弹的爆炸半径。"
+"然后我们有一个 :ref:`Area <class_Area>` 节点,简单地称为``Area``,它有一个大"
+"的 :ref:`CollisionShape <class_CollisionShape>` 作为它的子节点.当炸弹爆炸时,"
+"将使用这个 :ref:`Area <class_Area>`节点来影响其中的任何东西.基本上,这个 :ref:"
+"`Area <class_Area>` 节点将是炸弹的爆炸半径."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:554
 msgid ""
@@ -1077,13 +1039,12 @@ msgid ""
 "particles work in this tutorial due to it being outside of the scope of this "
 "tutorial."
 msgstr ""
-"还有几个 :ref:`Particles <class_Particles>` 节点，其中一个 :ref:`Particles "
-"<class_Particles>` 节点是炸弹引信中冒出的烟雾，而另一个是爆炸。如果你想看的"
-"话，可以看一下 :ref:`ParticlesMaterial <class_ParticlesMaterial>` 资源，它定"
-"义了粒子工作方式。不会在本教程中介绍粒子如何工作，因为它不在本教程的范围内。"
+"还有几个 :ref:`Particles <class_Particles>` 节点,其中一个 :ref:`Particles "
+"<class_Particles>` 节点是炸弹引信中冒出的烟雾,而另一个是爆炸.如果你想看的话,"
+"可以看一下 :ref:`ParticlesMaterial <class_ParticlesMaterial>` 资源,它定义了粒"
+"子工作方式.不会在本教程中介绍粒子如何工作,因为它不在本教程的范围内."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:558
-#, fuzzy
 msgid ""
 "There is one thing with the :ref:`Particles <class_Particles>` nodes that we "
 "need to make note of. If you select the ``Explosion_Particles`` node, you'll "
@@ -1093,20 +1054,20 @@ msgid ""
 "this so we can time the removal of the bomb with the end of the explosion :"
 "ref:`Particles <class_Particles>`."
 msgstr ""
-"唯一需要注意的是他的爆炸时间 :ref:`Particles <class_Particles>` 节点将持续，"
-"它们的生命周期为0.75秒。 我们需要知道这一点，所以我们可以在爆炸结束时抽出炸弹"
-"的时间 :ref:`Particles <class_Particles>`。"
+"对于 :ref:`Particles <class_Particles>` 节点,有一件事我们需要注意.如果你选择"
+"了 ``Explosion_Particles`` 节点,你会发现它的 ``lifetime`` 属性被设置为 "
+"``0.75`` ,而且 ``one shot`` 复选框被启用.这意味着粒子将只播放一次,并且粒子将"
+"持续 ``0.75`` 秒.我们需要知道这一点,这样我们就可以在爆炸结束时移除炸弹 :ref:"
+"`Particles <class_Particles>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:562
-#, fuzzy
 msgid ""
 "Let's write the code for the bomb. Select the ``Bomb`` :ref:`RigidBody "
 "<class_RigidBody>` node and make a new script called ``Bomb.gd``. Add the "
 "following code:"
 msgstr ""
-"好的，现在让我们写下炸弹的代码。 选择``Bomb`` :ref:`RigidBody "
-"<class_RigidBody>` 节点并创建一个名为 ``Bomb.gd`` 的新脚本。 将以下代码添加到"
-"``Bomb.gd``:"
+"让我们来编写炸弹的代码.选择 ``Bomb`` :ref:`RigidBody <class_RigidBody>`节点,"
+"制作一个新的脚本,名为 ``Bomb.gd`` ,添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:662
 msgid "Explaining the bomb code"
@@ -1120,45 +1081,43 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
-"和其他特殊的 :ref:`RigidBody <class_RigidBody>` 节点一样，炸弹也扩展了 "
-"``VR_Interactable_Rigidbody`` ，这样VR控制器就知道这个对象可以被交互，当这个"
-"对象被VR控制器持有时， ``VR_Interactable_Rigidbody`` 中定义的函数可以被调用。"
+"和其他特殊的 :ref:`RigidBody <class_RigidBody>` 节点一样,炸弹也扩展了 "
+"``VR_Interactable_Rigidbody`` ,这样VR控制器就知道这个对象可以被交互,当这个对"
+"象被VR控制器持有时, ``VR_Interactable_Rigidbody`` 中定义的函数可以被调用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:669
-#, fuzzy
 msgid ""
 "``bomb_mesh``: A variable to hold the :ref:`MeshInstance "
 "<class_MeshInstance>` node that is used for the non-exploded bomb."
 msgstr ""
-"``bomb_mesh``:用于炸弹网格的 :ref:`MeshInstance <class_MeshInstance>` 。"
+"``bomb_mesh``: 一个变量,用来保存 :ref:`MeshInstance <class_MeshInstance>` 节"
+"点,用于不爆炸的炸弹."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:670
 msgid ""
 "``FUSE_TIME``: A constant to define how long the fuse will 'burn' before the "
 "bomb explodes"
-msgstr "``FUSE_TIME`` ：一个常数，用于定义炸弹爆炸前引信将 '燃烧' 多长时间"
+msgstr "``FUSE_TIME`` :一个常数,用于定义炸弹爆炸前引信将 '燃烧' 多长时间"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:671
-#, fuzzy
 msgid ""
 "``fuse_timer``: A variable to hold the length of time that has passed since "
 "the bomb's fuse has started to burn."
-msgstr "``fire_timer``:一个变量，用于跟踪炮塔上次射击后经过的时间。"
+msgstr "``fuse_timer``: 一个变量,用于保存炸弹的引信开始燃烧后的时间长度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:672
-#, fuzzy
 msgid ""
 "``explosion_area``: A variable to hold the :ref:`Area <class_Area>` node "
 "used to detect objects within the bomb's explosion."
 msgstr ""
-"``explosion_area``: :ref:`Area <class_Area>` 节点，用于检测爆炸内的节点。"
+"``explosion_area``:一个变量,用来保存 :ref:`Area <class_Area>` 节点,用于检测炸"
+"弹爆炸范围内的物体."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:673
-#, fuzzy
 msgid ""
 "``EXPLOSION_DAMAGE``: A constant to define how much damage is applied with "
 "the bomb explodes."
-msgstr "``EXPLOSION_DAMAGE``:爆炸造成的伤害量。"
+msgstr "``EXPLOSION_DAMAGE`` .一个常数,用于定义炸弹爆炸时的伤害程度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:674
 msgid ""
@@ -1166,61 +1125,59 @@ msgid ""
 "scene after it explodes. This value should be the same as the ``lifetime`` "
 "property of the explosion :ref:`Particles <class_Particles>` node."
 msgstr ""
-"``EXPLOSION_TIME``: 一个常数，用于定义炸弹爆炸后在场景中持续时长，该值应与爆"
-"炸的 ``lifetime``属性相同 :ref:`Particles <class_Particles>` 节点。"
+"``EXPLOSION_TIME``: 一个常数,用于定义炸弹爆炸后在场景中持续时长,该值应与爆炸"
+"的 ``lifetime``属性相同 :ref:`Particles <class_Particles>` 节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:675
-#, fuzzy
 msgid ""
 "``explosion_timer`` A variable to hold the length of time that has passed "
 "since the bomb exploded."
-msgstr ""
-"``explosion_wait_timer``:一个变量，用于跟踪自手榴弹爆炸以来已经过了多少时间。"
+msgstr "``explosion_timer`` 一个变量,用于保存炸弹爆炸后的时间长度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:676
-#, fuzzy
 msgid "``exploded``: A variable to hold whether the bomb has exploded or not."
-msgstr "``explode``:用于跟踪炸弹是否爆炸的布尔值。"
+msgstr "``exploded`` .一个变量,用于保存炸弹是否爆炸."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:677
 msgid ""
 "``COLLISION_FORCE``: A constant that defines the amount of force that is "
 "applied to :ref:`RigidBody <class_RigidBody>` nodes when the bomb explodes."
 msgstr ""
-"``COLLISION_FORCE``: 一个常数，定义炸弹爆炸时施加在 :ref:`RigidBody "
-"<class_RigidBody>` 节点上的力的大小。"
+"``COLLISION_FORCE``: 一个常数,定义炸弹爆炸时施加在 :ref:`RigidBody "
+"<class_RigidBody>` 节点上的力的大小."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:678
-#, fuzzy
 msgid ""
 "``fuse_particles``: A variable to hold a reference to the :ref:`Particles "
 "<class_Particles>` node used for the bomb's fuse."
-msgstr "``fuse_particles``:保险丝 :ref:`Particles <class_Particles>` 节点。"
+msgstr ""
+"``fuse_particles``: 一个变量,用于保存炸弹引信的 :ref:`Particles "
+"<class_Particles>` 节点的引用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:679
-#, fuzzy
 msgid ""
 "``explosion_particles``: A variable to hold a reference to the :ref:"
 "`Particles <class_Particles>` node used for the bomb's explosion."
 msgstr ""
-"``explosion_particles``:当手榴弹爆炸时发挥作用 :ref:`Particles "
-"<class_Particles>` 。"
+"``explosion_particles``: 一个变量,用于保存对炸弹爆炸所用的 :ref:`Particles "
+"<class_Particles>` 节点的引用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:680
-#, fuzzy
 msgid ""
 "``explosion_sound``: A variable to hold a reference to the :ref:"
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node used for the "
 "explosion sound."
 msgstr ""
-"最后，我们告诉 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` 来玩。"
+"``explosion_sound``: 一个变量,用来保存对用于爆炸声的 :ref:"
+"`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` 节点的引用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:686
-#, fuzzy
 msgid ""
 "The ``_ready`` function first gets all of the nodes from the bomb scene and "
 "assigns them to their respective class variables for later use."
-msgstr "首先，我们获取所有节点并将它们分配给适当的变量供以后使用。"
+msgstr ""
+"``_ready`` 函数首先从炸弹场景中获取所有的节点,并将它们分配给各自的类变量,以便"
+"以后使用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:688
 msgid ""
@@ -1231,19 +1188,18 @@ msgid ""
 "not disable ``_physics_process``, the bomb's fuse would start before the "
 "user has a chance to get to the bomb."
 msgstr ""
-"然后我们调用 ``set_physics_process`` 并传递 ``false`` ，这样 "
-"``_physics_process`` 就不会被执行。这样做是因为 ``_physics_process`` 中的代码"
-"会开始燃烧导火索并爆炸炸弹，而我们只想在用户与炸弹交互时这样做。如果我们不禁"
-"用 ``_physics_process`` ，炸弹的引信会在用户有机会接近炸弹之前就开始燃烧。"
+"然后我们调用 ``set_physics_process`` 并传递 ``false`` ,这样 "
+"``_physics_process`` 就不会被执行.这样做是因为 ``_physics_process`` 中的代码"
+"会开始燃烧导火索并爆炸炸弹,而我们只想在用户与炸弹交互时这样做.如果我们不禁用 "
+"``_physics_process`` ,炸弹的引信会在用户有机会接近炸弹之前就开始燃烧."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:696
-#, fuzzy
 msgid ""
 "The ``_physics_process`` function first checks to see if ``fuse_timer`` is "
 "less than ``FUSE_TIME``. If it is, then the bomb's fuse is still burning."
 msgstr ""
-"首先，我们检查 ``fuse_timer`` 是否小于 ``FUSE_TIME`` 。 如果 ``fuse_timer`` "
-"小于 ``FUSE_TIME`` ，那么炸弹必须烧掉保险丝。"
+"``_physics_process`` 函数首先检查 ``fuse_timer`` 是否小于 ``FUSE_TIME`` .如果"
+"是,则说明炸弹的引信仍在燃烧."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:698
 msgid ""
@@ -1253,9 +1209,9 @@ msgid ""
 "``fuse_timer`` is more than or equal to ``FUSE_TIME``, then the fuse has "
 "just finished and we need to explode the bomb."
 msgstr ""
-"如果炸弹的引信仍在燃烧，我们就在 ``fuse_timer`` 变量中加入时间 ``delta`` ，然"
-"后检查 ``fuse_timer`` 是否大于或等于 ``FUSE_TIME`` 。如果 ``fuse_timer`` 大于"
-"或等于 ``FUSE_TIME`` ，那么引信刚刚完成，我们需要引爆炸弹。"
+"如果炸弹的引信仍在燃烧,我们就在 ``fuse_timer`` 变量中加入时间 ``delta`` ,然后"
+"检查 ``fuse_timer`` 是否大于或等于 ``FUSE_TIME`` .如果 ``fuse_timer`` 大于或"
+"等于 ``FUSE_TIME`` ,那么引信刚刚完成,我们需要引爆炸弹."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:701
 msgid ""
@@ -1268,13 +1224,13 @@ msgid ""
 "it look like the bomb exploded, we hide the bomb :ref:`MeshInstance "
 "<class_MeshInstance>` node by setting ``bomb_mesh.visible`` to ``false``."
 msgstr ""
-"为了使炸弹爆炸，我们首先在 ``fuse_particles`` 上将 ``emitting`` 设置为 "
-"``false`` ，停止为引信发射粒子。然后告诉爆炸 :ref:`Particles "
-"<class_Particles>`节点 ``explosion_particles`` ，通过设置 ``one_shot`` 为 "
-"``true`` ，让它一次发射所有的粒子。之后，在 ``explosion_particles`` 上设置 "
-"``emitting`` 为 ``true`` ，这样看起来就像炸弹已经爆炸。为了让炸弹看起来像爆"
-"炸，通过设置 ``bomb_mesh.visible`` 为 ``false`` 来隐藏炸弹 :ref:"
-"`MeshInstance <class_MeshInstance>` 节点。"
+"为了使炸弹爆炸,我们首先在 ``fuse_particles`` 上将 ``emitting`` 设置为 "
+"``false`` ,停止为引信发射粒子.然后告诉爆炸 :ref:`Particles <class_Particles>`"
+"节点 ``explosion_particles`` ,通过设置 ``one_shot`` 为 ``true`` ,让它一次发射"
+"所有的粒子.之后,在 ``explosion_particles`` 上设置 ``emitting`` 为 ``true`` ,"
+"这样看起来就像炸弹已经爆炸.为了让炸弹看起来像爆炸,通过设置 ``bomb_mesh."
+"visible`` 为 ``false`` 来隐藏炸弹 :ref:`MeshInstance <class_MeshInstance>` 节"
+"点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:705
 msgid ""
@@ -1283,10 +1239,10 @@ msgid ""
 "``0``. We also change the :ref:`RigidBody <class_RigidBody>` mode to "
 "``MODE_STATIC`` so the bomb :ref:`RigidBody <class_RigidBody>` does not move."
 msgstr ""
-"为了防止炸弹与物理世界中的其他物体发生碰撞，将炸弹的 ``collision_layer`` 和 "
-"``collision_mask`` 属性设置为 ``0`` 。将 :ref:`RigidBody <class_RigidBody>` "
-"模式改为 ``MODE_STATIC`` ，这样炸弹 :ref:`RigidBody <class_RigidBody>`就不会"
-"移动。"
+"为了防止炸弹与物理世界中的其他物体发生碰撞,将炸弹的 ``collision_layer`` 和 "
+"``collision_mask`` 属性设置为 ``0`` .将 :ref:`RigidBody <class_RigidBody>` 模"
+"式改为 ``MODE_STATIC`` ,这样炸弹 :ref:`RigidBody <class_RigidBody>`就不会移"
+"动."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:708
 msgid ""
@@ -1297,11 +1253,11 @@ msgid ""
 "nodes within the :ref:`Area <class_Area>` node, which is exactly what we are "
 "looking for."
 msgstr ""
-"然后，需要获取 ``explosion_area`` 节点内的所有 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 节点。要做到这一点，在for循环中使用 "
-"``get_overlapping_bodies`` 。 ``get_overlapping_bodies`` 函数将返回一个 :ref:"
+"然后,需要获取 ``explosion_area`` 节点内的所有 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 节点.要做到这一点,在for循环中使用 "
+"``get_overlapping_bodies`` . ``get_overlapping_bodies`` 函数将返回一个 :ref:"
 "`PhysicsBody <class_PhysicsBody>` 节点内的 :ref:`Area <class_Area>` 节点的 :"
-"ref:`PhysicsBody <class_Area>` 数组，这正是我们要的。"
+"ref:`PhysicsBody <class_Area>` 数组,这正是我们要的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:713
 msgid ""
@@ -1311,10 +1267,10 @@ msgid ""
 "``explosion_area`` could potentially detect the ``Bomb`` :ref:`RigidBody "
 "<class_RigidBody>` as a PhysicsBody within the explosion area."
 msgstr ""
-"对于每个 :ref:`PhysicsBody <class_PhysicsBody>` 节点（我们将其存储在一个名为 "
-"``body`` 的变量中），我们检查它是否等于 ``self`` 。这样做是为了使炸弹不会意外"
-"地自己爆炸，因为 ``explosion_area`` [爆炸区]可能会检测到 ``Bomb`` [炸弹] :"
-"ref:`RigidBody <class_RigidBody>`是爆炸区的一个物理体。"
+"对于每个 :ref:`PhysicsBody <class_PhysicsBody>` 节点(我们将其存储在一个名为 "
+"``body`` 的变量中),我们检查它是否等于 ``self`` .这样做是为了使炸弹不会意外地"
+"自己爆炸,因为 ``explosion_area`` [爆炸区]可能会检测到 ``Bomb`` [炸弹] :ref:"
+"`RigidBody <class_RigidBody>`是爆炸区的一个物理体."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:716
 msgid ""
@@ -1325,10 +1281,10 @@ msgid ""
 "call it and pass ``EXPLOSION_DAMAGE`` to it so it takes damage from the "
 "explosion."
 msgstr ""
-"如果 :ref:`PhysicsBody <class_PhysicsBody>`节点 ``body`` 不是炸弹，那么首先检"
+"如果 :ref:`PhysicsBody <class_PhysicsBody>`节点 ``body`` 不是炸弹,那么首先检"
 "查 :ref:`PhysicsBody <class_PhysicsBody>` 节点是否有一个叫做 ``damage`` 的函"
-"数。如果 :ref:`PhysicsBody <class_PhysicsBody>`节点有一个叫做 ``damage`` 的函"
-"数，就调用它，并把 ``EXPLOSION_DAMAGE`` 传给它，使它受到爆炸的伤害。"
+"数.如果 :ref:`PhysicsBody <class_PhysicsBody>`节点有一个叫做 ``damage`` 的函"
+"数,就调用它,并把 ``EXPLOSION_DAMAGE`` 传给它,使它受到爆炸的伤害."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:719
 msgid ""
@@ -1337,8 +1293,8 @@ msgid ""
 "<class_RigidBody>`, we want to move it when the bomb explodes."
 msgstr ""
 "接下来我们检查一下 :ref:`PhysicsBody <class_PhysicsBody>` 节点是否是 :ref:"
-"`RigidBody <class_RigidBody>` 。如果 ``body`` 是一个 :ref:`RigidBody "
-"<class_RigidBody>`，要在炸弹爆炸时移动它。"
+"`RigidBody <class_RigidBody>` .如果 ``body`` 是一个 :ref:`RigidBody "
+"<class_RigidBody>`,要在炸弹爆炸时移动它."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:722
 msgid ""
@@ -1351,12 +1307,12 @@ msgid ""
 "<class_RigidBody>` node. We store this :ref:`Vector3 <class_Vector3>` in a "
 "variable called ``direction_vector``."
 msgstr ""
-"要在炸弹爆炸时移动 :ref:`RigidBody <class_RigidBody>` 节点，首先需要计算从炸"
-"弹到 :ref:`RigidBody <class_RigidBody>` 节点的方向。为此，从 :ref:`RigidBody "
+"要在炸弹爆炸时移动 :ref:`RigidBody <class_RigidBody>` 节点,首先需要计算从炸弹"
+"到 :ref:`RigidBody <class_RigidBody>` 节点的方向.为此,从 :ref:`RigidBody "
 "<class_RigidBody>` 的全局位置中减去炸弹的全局位置 ``global_transform."
-"origin`` 。这将给出一个 :ref:`Vector3 <class_Vector3>`，从炸弹指向 :ref:"
-"`RigidBody <class_RigidBody>`节点。将这个 :ref:`Vector3 <class_Vector3>`存储"
-"在一个名为 ``direction_vector`` 的变量中。"
+"origin`` .这将给出一个 :ref:`Vector3 <class_Vector3>`,从炸弹指向 :ref:"
+"`RigidBody <class_RigidBody>`节点.将这个 :ref:`Vector3 <class_Vector3>`存储在"
+"一个名为 ``direction_vector`` 的变量中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:726
 msgid ""
@@ -1364,9 +1320,9 @@ msgid ""
 "from the bomb by using the ``length`` function on ``direction_vector``. We "
 "store the distance in a variable called ``bomb_distance``."
 msgstr ""
-"然后，使用 ``rediction_vector`` 上的 ``length`` 函数计算 :ref:`RigidBody "
-"<class_RigidBody>` 离炸弹的距离。将距离存储在一个名为 ``bomb_distance`` 的变"
-"量中。"
+"然后,使用 ``rediction_vector`` 上的 ``length`` 函数计算 :ref:`RigidBody "
+"<class_RigidBody>` 离炸弹的距离.将距离存储在一个名为 ``bomb_distance`` 的变量"
+"中."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:729
 msgid ""
@@ -1376,10 +1332,10 @@ msgid ""
 "``collision_force``. This will make it so if the :ref:`RigidBody "
 "<class_RigidBody>` node is closer to the bomb, it will be pushed farther."
 msgstr ""
-"然后，计算炸弹爆炸时炸弹对 :ref:`RigidBody <class_RigidBody>` 节点的作用力，"
-"方法是将 ``COLLISION_FORCE`` 除以 ``bomb_distance`` ，再乘以 "
-"``collision_force`` 。这样，如果 :ref:`RigidBody <class_RigidBody>` 节点离炸"
-"弹更近，它就会被推得更远。"
+"然后,计算炸弹爆炸时炸弹对 :ref:`RigidBody <class_RigidBody>` 节点的作用力,方"
+"法是将 ``COLLISION_FORCE`` 除以 ``bomb_distance`` ,再乘以 "
+"``collision_force`` .这样,如果 :ref:`RigidBody <class_RigidBody>` 节点离炸弹"
+"更近,它就会被推得更远."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:732
 msgid ""
@@ -1389,10 +1345,10 @@ msgid ""
 "normalized`` as the force. This will send the :ref:`RigidBody "
 "<class_RigidBody>` node flying when the bomb explodes."
 msgstr ""
-"最后，用 ``apply_impulse`` 函数推动 :ref:`RigidBody <class_RigidBody>`节"
-"点， :ref:`Vector3 <class_Vector3>`位置为零， ``collision_force`` 乘以 "
-"``direction_vector.normalized`` 作为力。这样，当炸弹爆炸时，就会把 :ref:"
-"`RigidBody <class_RigidBody>`节点炸飞。"
+"最后,用 ``apply_impulse`` 函数推动 :ref:`RigidBody <class_RigidBody>`节点, :"
+"ref:`Vector3 <class_Vector3>`位置为零, ``collision_force`` 乘以 "
+"``direction_vector.normalized`` 作为力.这样,当炸弹爆炸时,就会把 :ref:"
+"`RigidBody <class_RigidBody>`节点炸飞."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:737
 msgid ""
@@ -1402,14 +1358,14 @@ msgid ""
 "call ``play`` on ``explosion_sound`` so the sound of an explosion is played."
 msgstr ""
 "当循环浏览了 ``explosion_area`` 内的所有 :ref:`PhysicsBody "
-"<class_PhysicsBody>`节点后，将 ``exploded`` 变量设置为 ``true`` ，这样代码就"
-"知道炸弹爆炸了，并调用 ``explosion_sound`` 上的 ``play`` ，播放爆炸声。"
+"<class_PhysicsBody>`节点后,将 ``exploded`` 变量设置为 ``true`` ,这样代码就知"
+"道炸弹爆炸了,并调用 ``explosion_sound`` 上的 ``play`` ,播放爆炸声."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:742
 msgid ""
 "Alright, the next section of code starts by first checking if ``exploded`` "
 "is equal to ``true``."
-msgstr "好了，下一部分代码开始，首先检查 ``exploded`` 是否等于 ``true`` 。"
+msgstr "好了,下一部分代码开始,首先检查 ``exploded`` 是否等于 ``true`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:744
 msgid ""
@@ -1418,18 +1374,17 @@ msgid ""
 "add time, ``delta``, to ``explosion_timer`` so we can track how long it has "
 "been since the bomb has exploded."
 msgstr ""
-"如果 ``exploded`` 等于 ``true`` ，那么这意味着炸弹在释放或销毁自己之前，正在"
-"等待爆炸粒子完成。在 ``explosion_timer`` 中加入时间 ``delta`` ，这样就可以跟"
-"踪炸弹爆炸后的时间。"
+"如果 ``exploded`` 等于 ``true`` ,那么这意味着炸弹在释放或销毁自己之前,正在等"
+"待爆炸粒子完成.在 ``explosion_timer`` 中加入时间 ``delta`` ,这样就可以跟踪炸"
+"弹爆炸后的时间."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:747
-#, fuzzy
 msgid ""
 "If ``explosion_timer`` is greater than or equal to ``EXPLOSION_TIME`` after "
 "we added ``delta``, then the explosion timer just finished."
 msgstr ""
-"然后我们检查 ``explosion_wait_timer`` 是否小于 ``EXPLOSION_WAIT_TIME`` 。 如"
-"果是，我们将 ``delta`` 添加到 ``explosion_wait_time`` 。"
+"如果 ``explosion_timer`` 在与 ``delta`` 相加后,大于或等于 "
+"``EXPLOSION_TIME`` ,则爆炸定时器刚刚完成."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:749
 msgid ""
@@ -1439,10 +1394,10 @@ msgid ""
 "the ``monitoring`` property was true. To make sure this doesn't happen, we "
 "simply set ``monitoring`` to false on ``explosion_area``."
 msgstr ""
-"如果爆炸计时器刚刚结束，将 ``explosion_area.monitoring`` 设置为 ``false`` 。"
-"这样做的原因是有一个bug，当 ``monitoring`` 属性为真时，当你释放或删除一个 :"
-"ref:`Area <class_Area>` 节点时，会打印一个错误。为了确保这种情况不会发生，只"
-"需在 ``explosion_area`` 上将 ``monitoring`` 设置为false。"
+"如果爆炸计时器刚刚结束,将 ``explosion_area.monitoring`` 设置为 ``false`` .这"
+"样做的原因是有一个bug,当 ``monitoring`` 属性为真时,当你释放或删除一个 :ref:"
+"`Area <class_Area>` 节点时,会打印一个错误.为了确保这种情况不会发生,只需在 "
+"``explosion_area`` 上将 ``monitoring`` 设置为false."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:752
 msgid ""
@@ -1456,21 +1411,21 @@ msgid ""
 "we set ``controller.grab_raycast.visible`` to ``true`` so the 'laser sight' "
 "for the grab raycast is visible."
 msgstr ""
-"接下来检查炸弹是否被VR控制器持有，检查 ``controller`` 变量是否不等于 "
-"``null`` 。如果炸弹被VR控制器持有，就把VR控制器的 ``controller`` 属性 "
-"``held_object`` 设置为 ``null`` 。因为VR控制器不再持有任何东西，所以将 "
-"``controller.hand_mesh.visible`` 设置为``true``，使VR控制器的手部网格可见。然"
-"后检查VR控制器的抓取模式是否是 ``RAYCAST`` ，如果是，将 ``controller."
-"grab_raycast.visible`` 设置为 ``true`` ，这样抓取raycast的 '激光瞄准器' 就可"
-"见了。"
+"接下来检查炸弹是否被VR控制器持有,检查 ``controller`` 变量是否不等于 "
+"``null`` .如果炸弹被VR控制器持有,就把VR控制器的 ``controller`` 属性 "
+"``held_object`` 设置为 ``null`` .因为VR控制器不再持有任何东西,所以将 "
+"``controller.hand_mesh.visible`` 设置为``true``,使VR控制器的手部网格可见.然后"
+"检查VR控制器的抓取模式是否是 ``RAYCAST`` ,如果是,将 ``controller."
+"grab_raycast.visible`` 设置为 ``true`` ,这样抓取raycast的 '激光瞄准器' 就可见"
+"了."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:757
 msgid ""
 "Finally, regardless if the bomb is being held by a VR controller or not, we "
 "call ``queue_free`` so the bomb scene is freed/removed from the scene."
 msgstr ""
-"最后，不管炸弹是否被VR控制器持有，调用 ``queue_free`` ，这样炸弹场景就会被释"
-"放或从场景中移除。"
+"最后,不管炸弹是否被VR控制器持有,调用 ``queue_free`` ,这样炸弹场景就会被释放或"
+"从场景中移除."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:762
 msgid ""
@@ -1478,16 +1433,14 @@ msgid ""
 "``true`` so the code in ``_physics_process`` starts executing. This will "
 "start the bomb's fuse and eventually lead to the bomb exploding."
 msgstr ""
-"首先， ``interact`` 函数调用 ``set_physics_process`` 并传递 ``true`` ，这样 "
-"``_physics_process`` 中的代码就开始执行。这将启动炸弹的引信，最终导致炸弹爆"
-"炸。"
+"首先, ``interact`` 函数调用 ``set_physics_process`` 并传递 ``true`` ,这样 "
+"``_physics_process`` 中的代码就开始执行.这将启动炸弹的引信,最终导致炸弹爆炸."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:765
 msgid ""
 "Finally, we start the fuse particles by setting ``fuse_particles.visible`` "
 "to ``true``."
-msgstr ""
-"最后，通过将 ``fuse_particles.visible`` 设置为 ``true`` 来启动引信粒子。"
+msgstr "最后,通过将 ``fuse_particles.visible`` 设置为 ``true`` 来启动引信粒子."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:769
 msgid "Bomb finished"
@@ -1496,10 +1449,9 @@ msgstr "炸弹完毕"
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:771
 msgid ""
 "Now the bomb is ready to go! You can find the bombs in the orange building."
-msgstr "现在炸弹已经准备好了!你可以在橙色建筑中找到炸弹。"
+msgstr "现在炸弹已经准备好了!你可以在橙色建筑中找到炸弹."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:773
-#, fuzzy
 msgid ""
 "Because of how we are calculating the VR controller's velocity, it is "
 "easiest to throw the bombs using a thrusting-like motion instead of a more "
@@ -1508,9 +1460,9 @@ msgid ""
 "the VR controllers, so it does not always work correctly and can lead "
 "inaccurately calculated velocities."
 msgstr ""
-"完成后，炸弹准备好了！ 您可以在橙色建筑中找到它们。 由于我们如何计算速度，最"
-"容易投掷类似信任的运动中的炸弹，而不是像运动那样更自然的投掷。 投掷式运动的平"
-"滑曲线更难以跟踪，并且由于我们跟踪速度的方式并不总是有效。"
+"由于我们在计算VR控制器的速度时,最容易使用类似推力的动作来投掷炸弹,而不是更自"
+"然的类似投掷的动作.抛掷式运动的平滑曲线很难被我们用来计算VR控制器的速度的代码"
+"所追踪,所以它并不总是正确的,并可能导致不准确的计算速度."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:780
 msgid "Adding a sword"
@@ -1523,12 +1475,11 @@ msgid ""
 "targets!"
 msgstr ""
 "让我们添加最后一个特殊的 :ref:`RigidBody <class_RigidBody>` —— 能够破坏目标的"
-"基础节点。让我们添加一把剑来砍穿目标！"
+"基础节点.让我们添加一把剑来砍穿目标！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:784
-#, fuzzy
 msgid "Open up ``Sword.tscn``, which you can find in the ``Scenes`` folder."
-msgstr "打开 ``Bomb.tscn`` ，您可以在 ``Scenes`` 文件夹中找到它。"
+msgstr "打开 ``Sword.tscn`` ,你可以在 ``Scenes`` 文件夹中找到它."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:786
 msgid ""
@@ -1539,11 +1490,11 @@ msgid ""
 "is an :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` node that holds "
 "a sound for the sword colliding with something."
 msgstr ""
-"这里并没有发生很多事情。所有根 ``Sword`` 的子节点 :ref:`RigidBody "
-"<class_RigidBody>` 节点都被旋转，当VR控制器拾取它们时，位置是正确的，有一个 :"
-"ref:`MeshInstance <class_MeshInstance>` 节点用于显示剑，还有一个 :ref:"
+"这里并没有发生很多事情.所有根 ``Sword`` 的子节点 :ref:`RigidBody "
+"<class_RigidBody>` 节点都被旋转,当VR控制器拾取它们时,位置是正确的,有一个 :"
+"ref:`MeshInstance <class_MeshInstance>` 节点用于显示剑,还有一个 :ref:"
 "`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` 节点用于保存剑与某物碰撞时"
-"的声音。"
+"的声音."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:790
 msgid ""
@@ -1555,11 +1506,11 @@ msgid ""
 "`PhysicsBody <class_PhysicsBody>` nodes in the scene, but it will still be "
 "effected by :ref:`PhysicsBody <class_PhysicsBody>` nodes."
 msgstr ""
-"但有一点略有不同。有一个 :ref:`KinematicBody <class_KinematicBody>`节点叫做 "
-"``Damage_Body`` 。如果你看看它，你会发现它不在任何碰撞层上，而只在一个碰撞掩"
-"码上。这是为了让 :ref:`KinematicBody <class_KinematicBody>` 不会影响场景中的"
-"其他 :ref:`PhysicsBody <class_PhysicsBody>` 节点，但它仍然会被 :ref:"
-"`PhysicsBody <class_PhysicsBody>` 节点影响。"
+"但有一点略有不同.有一个 :ref:`KinematicBody <class_KinematicBody>`节点叫做 "
+"``Damage_Body`` .如果你看看它,你会发现它不在任何碰撞层上,而只在一个碰撞掩码"
+"上.这是为了让 :ref:`KinematicBody <class_KinematicBody>` 不会影响场景中的其"
+"他 :ref:`PhysicsBody <class_PhysicsBody>` 节点,但它仍然会被 :ref:"
+"`PhysicsBody <class_PhysicsBody>` 节点影响."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:794
 msgid ""
@@ -1568,7 +1519,7 @@ msgid ""
 "the sword collides with something in the scene."
 msgstr ""
 "使用 ``Damage_Body`` :ref:`KinematicBody <class_KinematicBody>`节点来检测剑与"
-"场景中的东西碰撞时的碰撞点和法线。"
+"场景中的东西碰撞时的碰撞点和法线."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:796
 msgid ""
@@ -1578,30 +1529,27 @@ msgid ""
 "<class_KinematicBody>` this way means we can detect exactly where the sword "
 "collided with other :ref:`PhysicsBody <class_PhysicsBody>` nodes."
 msgstr ""
-"虽然从性能的角度来看，这可能不是获得碰撞信息的最佳方式，但它确实给了我们很多"
-"信息，可以用来进行后处理!使用 :ref:`KinematicBody <class_KinematicBody>`这种"
-"方式意味着我们可以准确检测到剑与其他 :ref:`PhysicsBody <class_PhysicsBody>` "
-"节点碰撞的位置。"
+"虽然从性能的角度来看,这可能不是获得碰撞信息的最佳方式,但它确实给了我们很多信"
+"息,可以用来进行后处理!使用 :ref:`KinematicBody <class_KinematicBody>`这种方式"
+"意味着我们可以准确检测到剑与其他 :ref:`PhysicsBody <class_PhysicsBody>` 节点"
+"碰撞的位置."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:799
-#, fuzzy
 msgid ""
 "That is really the only thing note worthy about the sword scene. Select the "
 "``Sword`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Sword.gd``. Add the following code:"
 msgstr ""
-"好的，现在让我们写下炸弹的代码。 选择``Bomb`` :ref:`RigidBody "
-"<class_RigidBody>` 节点并创建一个名为 ``Bomb.gd`` 的新脚本。 将以下代码添加到"
-"``Bomb.gd``:"
+"这确实是剑的场景中唯一值得注意的地方.选择 `Sword` :ref:`RigidBody "
+"<class_RigidBody>` 节点,并制作一个名为 ``Sword.gd`` 的新脚本.添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:840
 msgid "Let's go over how this script works!"
 msgstr "让我们回顾一下这个脚本是如何运作的！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:844
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "获取资源"
+msgstr "解释剑代码"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:846
 msgid ""
@@ -1611,9 +1559,9 @@ msgid ""
 "``VR_Interactable_Rigidbody`` can be called when this object is held by a VR "
 "controller."
 msgstr ""
-"和其他特殊的 :ref:`RigidBody <class_RigidBody>`节点一样，剑扩展了 "
-"``VR_Interactable_Rigidbody`` ，这样VR控制器就知道这个对象可以被交互，当这个"
-"对象被VR控制器持有时， ``VR_Interactable_Rigidbody`` 中定义的函数可以被调用。"
+"和其他特殊的 :ref:`RigidBody <class_RigidBody>`节点一样,剑扩展了 "
+"``VR_Interactable_Rigidbody`` ,这样VR控制器就知道这个对象可以被交互,当这个对"
+"象被VR控制器持有时, ``VR_Interactable_Rigidbody`` 中定义的函数可以被调用."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:851
 msgid ""
@@ -1621,8 +1569,8 @@ msgid ""
 "This damage is applied  to every object in the sword on every "
 "``_physics_process`` call"
 msgstr ""
-"``SWORD_DAMAGE`` ：一个常数，用于定义剑的伤害量。每次调用"
-"\"``_physics_process`` 时，被剑碰到的每个对象都会受到伤害"
+"``SWORD_DAMAGE`` :一个常数,用于定义剑的伤害量.每次调用\"``_physics_process`` "
+"时,被剑碰到的每个对象都会受到伤害"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:852
 msgid ""
@@ -1630,9 +1578,8 @@ msgid ""
 "ref:`RigidBody <class_RigidBody>` nodes when the sword collides with a :ref:"
 "`PhysicsBody <class_PhysicsBody>`."
 msgstr ""
-"``COLLISION_FORCE`` ：一个常数，定义当剑与 :ref:`RigidBody "
-"<class_RigidBody>` 节点相撞时，施加在 :ref:`PhysicsBody <class_PhysicsBody>` "
-"节点上的力的大小。"
+"``COLLISION_FORCE`` :一个常数,定义当剑与 :ref:`RigidBody <class_RigidBody>` "
+"节点相撞时,施加在 :ref:`PhysicsBody <class_PhysicsBody>` 节点上的力的大小."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:853
 msgid ""
@@ -1640,9 +1587,9 @@ msgid ""
 "<class_KinematicBody>` node used to detect whether the sword is stabbing a :"
 "ref:`PhysicsBody <class_PhysicsBody>` node or not."
 msgstr ""
-"``damage_body`` ：一个变量，用于存放 :ref:`KinematicBody "
-"<class_KinematicBody>` 节点，用于检测剑是否刺中了 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 节点。"
+"``damage_body`` :一个变量,用于存放 :ref:`KinematicBody "
+"<class_KinematicBody>` 节点,用于检测剑是否刺中了 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 节点."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:854
 msgid ""
@@ -1650,8 +1597,8 @@ msgid ""
 "<class_AudioStreamPlayer3D>` node used to play a sound when the sword "
 "collides with something."
 msgstr ""
-"``sword_noise`` ：一个变量，用来存放 :ref:`AudioStreamPlayer3D "
-"<class_AudioStreamPlayer3D>` 节点，当剑与某物碰撞时，用来播放声音。"
+"``sword_noise`` :一个变量,用来存放 :ref:`AudioStreamPlayer3D "
+"<class_AudioStreamPlayer3D>` 节点,当剑与某物碰撞时,用来播放声音."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:860
 msgid ""
@@ -1663,19 +1610,19 @@ msgid ""
 "sword will not be detected."
 msgstr ""
 "我们在 ``_ready`` 函数中所做的就是获取 ``Damage_Body`` :ref:`KinematicBody "
-"<class_KinematicBody>`节点，并将其分配给 ``damage_body`` 。因为我们不想让剑检"
-"测到与剑的根部 :ref:`RigidBody <class_RigidBody>` 节点的碰撞，所以我们在 "
-"``damage_body`` 上调用 ``add_collision_exception_with`` ，并传递 ``self`` ，"
-"这样剑的根部就不会被检测到。"
+"<class_KinematicBody>`节点,并将其分配给 ``damage_body`` .因为我们不想让剑检测"
+"到与剑的根部 :ref:`RigidBody <class_RigidBody>` 节点的碰撞,所以我们在 "
+"``damage_body`` 上调用 ``add_collision_exception_with`` ,并传递 ``self`` ,这"
+"样剑的根部就不会被检测到."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:864
-#, fuzzy
 msgid ""
 "Finally, we get the :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` "
 "node for the sword collision sound and apply it to the ``sword_noise`` "
 "variable."
 msgstr ""
-"最后，我们告诉 :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` 来玩。"
+"最后,我们获得 :ref:`AudioStreamPlayer3D <class_AudioStreamPlayer3D>` 节点的剑"
+"碰撞声,并将其应用于 ``sword_noise`` 变量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:870
 msgid ""
@@ -1688,24 +1635,23 @@ msgid ""
 "ref:`KinematicBody <class_KinematicBody>` generates collision info without "
 "actually causing any collisions within the collision world."
 msgstr ""
-"首先，我们需要确定剑是否与某物相撞。为此，使用 ``damage_body`` 节点的 "
-"``move_and_collide`` 函数。与通常使用 ``move_and_collide`` 不同的是，没有传递"
-"速度，而是传递一个空的 :ref:`Vector3 <class_Vector3>`。因为不想让 "
-"``damage_body`` 节点移动，所以将 ``test_only`` 参数（第四个参数）设置为 "
-"``true`` ，这样 :ref:`KinematicBody <class_KinematicBody>`就会生成碰撞信息，"
-"而不会在碰撞世界中造成任何碰撞。"
+"首先,我们需要确定剑是否与某物相撞.为此,使用 ``damage_body`` 节点的 "
+"``move_and_collide`` 函数.与通常使用 ``move_and_collide`` 不同的是,没有传递速"
+"度,而是传递一个空的 :ref:`Vector3 <class_Vector3>`.因为不想让 "
+"``damage_body`` 节点移动,所以将 ``test_only`` 参数(第四个参数)设置为 "
+"``true`` ,这样 :ref:`KinematicBody <class_KinematicBody>`就会生成碰撞信息,而"
+"不会在碰撞世界中造成任何碰撞."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:875
-#, fuzzy
 msgid ""
 "The ``move_and_collide`` function will return a :ref:`KinematicCollision "
 "<class_KinematicCollision>` class that has all of the information we need "
 "for detecting collisions on the sword. We assign the return value of "
 "``move_and_collide`` to a variable called ``collision_results``."
 msgstr ""
-"当使用 ``move_and_collide()`` 时，该函数返回一个 :ref:`KinematicCollision2D "
-"<class_KinematicCollision2D>` 对象，其中包含有关碰撞和碰撞体的信息。 您可以使"
-"用此信息来确定响应。"
+"``move_and_collide`` 函数将返回一个 :ref:`KinematicCollision "
+"<class_KinematicCollision>` 类,它有我们检测剑上碰撞所需的所有信息.我们将 "
+"``move_and_collide`` 的返回值分配给一个叫做 ``collision_results`` 的变量."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:878
 msgid ""
@@ -1713,8 +1659,8 @@ msgid ""
 "``collision_results`` is not equal to ``null``, then we know that the sword "
 "has collided with something."
 msgstr ""
-"接下来我们检查 ``collision_results`` 是否不等于 ``null`` 。如果 "
-"``collision_results`` 不等于 ``null`` ，那么我们就知道这把剑与某物相撞了。"
+"接下来我们检查 ``collision_results`` 是否不等于 ``null`` .如果 "
+"``collision_results`` 不等于 ``null`` ,那么我们就知道这把剑与某物相撞了."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:880
 msgid ""
@@ -1724,10 +1670,10 @@ msgid ""
 "function called ``damage_body``, we call it and pass the amount of damage "
 "the sword does, ``SWORD_DAMAGE``, to it."
 msgstr ""
-"然后，使用 ``has_method`` 函数检查与剑相撞的 :ref:`PhysicsBody "
-"<class_PhysicsBody>` 是否有一个叫做 ``damage`` 的函数或方法。如果 :ref:"
-"`PhysicsBody <class_PhysicsBody>` 有一个叫做 ``damage_body`` 的函数，就调用"
-"它，并把剑的伤害量 ``SWORD_DAMAGE`` 传递给它。"
+"然后,使用 ``has_method`` 函数检查与剑相撞的 :ref:`PhysicsBody "
+"<class_PhysicsBody>` 是否有一个叫做 ``damage`` 的函数或方法.如果 :ref:"
+"`PhysicsBody <class_PhysicsBody>` 有一个叫做 ``damage_body`` 的函数,就调用它,"
+"并把剑的伤害量 ``SWORD_DAMAGE`` 传递给它."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:883
 msgid ""
@@ -1738,9 +1684,9 @@ msgid ""
 "if ``controller`` is equal to ``null``."
 msgstr ""
 "接下来检查剑碰撞的 :ref:`PhysicsBody <class_PhysicsBody>` 是否是一个 :ref:"
-"`RigidBody <class_RigidBody>`。如果剑碰撞的是一个 :ref:`RigidBody "
-"<class_RigidBody>` 节点，再通过检查 ``controller`` 是否等于 ``null`` 来查看剑"
-"是否被VR控制器所持有。"
+"`RigidBody <class_RigidBody>`.如果剑碰撞的是一个 :ref:`RigidBody "
+"<class_RigidBody>` 节点,再通过检查 ``controller`` 是否等于 ``null`` 来查看剑"
+"是否被VR控制器所持有."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:886
 msgid ""
@@ -1754,13 +1700,13 @@ msgid ""
 "``collision_normal`` multiplied by the ``linear_velocity`` of the sword's :"
 "ref:`RigidBody <class_RigidBody>` node multiplied by ``COLLISION_FORCE``."
 msgstr ""
-"如果VR控制器没有握住剑， ``controller`` 等于 ``null`` ，那么就使用 "
-"``apply_impulse`` 函数移动剑碰撞的 :ref:`RigidBody <class_RigidBody>` 节点。"
-"对于 ``apply_impulse`` 函数中的 ``position`` ，使用 ``collision_results`` "
-"中 :ref:`KinematicCollision <class_KinematicCollision>` 类中存储的 "
-"``collision_position`` 变量。对于 ``apply_impulse`` 函数中的 ``velocity`` ，"
-"使用 ``collision_normal`` 乘以剑的 :ref:`RigidBody <class_RigidBody>` 节点的 "
-"``linear_velocity`` 乘以 ``COLLISION_FORCE`` 。"
+"如果VR控制器没有握住剑, ``controller`` 等于 ``null`` ,那么就使用 "
+"``apply_impulse`` 函数移动剑碰撞的 :ref:`RigidBody <class_RigidBody>` 节点.对"
+"于 ``apply_impulse`` 函数中的 ``position`` ,使用 ``collision_results`` 中 :"
+"ref:`KinematicCollision <class_KinematicCollision>` 类中存储的 "
+"``collision_position`` 变量.对于 ``apply_impulse`` 函数中的 ``velocity`` ,使"
+"用 ``collision_normal`` 乘以剑的 :ref:`RigidBody <class_RigidBody>` 节点的 "
+"``linear_velocity`` 乘以 ``COLLISION_FORCE`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:891
 msgid ""
@@ -1774,12 +1720,12 @@ msgid ""
 "``collision_normal`` multiplied by the VR controller's velocity multiplied "
 "by ``COLLISION_FORCE``."
 msgstr ""
-"如果剑被VR控制器握着， ``controller`` 不等于 ``null`` ，那么就使用 "
-"``apply_impulse`` 函数移动剑碰撞的 :ref:`RigidBody <class_RigidBody>` 节点。"
-"对于 ``apply_impulse`` 函数中的 ``position`` ，使用 ``collision_results`` "
-"中 :ref:`KinematicCollision <class_KinematicCollision>` 类中存储的 "
-"``collision_position`` 变量。对于 ``apply_impulse`` 函数的 ``velocity`` ，使"
-"用 ``collision_normal`` 乘以VR控制器的速度乘以 ``COLLISION_FORCE`` 。"
+"如果剑被VR控制器握着, ``controller`` 不等于 ``null`` ,那么就使用 "
+"``apply_impulse`` 函数移动剑碰撞的 :ref:`RigidBody <class_RigidBody>` 节点.对"
+"于 ``apply_impulse`` 函数中的 ``position`` ,使用 ``collision_results`` 中 :"
+"ref:`KinematicCollision <class_KinematicCollision>` 类中存储的 "
+"``collision_position`` 变量.对于 ``apply_impulse`` 函数的 ``velocity`` ,使用 "
+"``collision_normal`` 乘以VR控制器的速度乘以 ``COLLISION_FORCE`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:895
 msgid ""
@@ -1787,9 +1733,9 @@ msgid ""
 "a :ref:`RigidBody <class_RigidBody>` or not, we play the sound of the sword "
 "colliding with something by calling ``play`` on ``sword_noise``."
 msgstr ""
-"最后，不管 :ref:`PhysicsBody <class_PhysicsBody>`是不是 :ref:`RigidBody "
-"<class_RigidBody>`，通过调用 ``sword_noise`` 上的 ``play`` 来播放剑与物品碰撞"
-"的声音。"
+"最后,不管 :ref:`PhysicsBody <class_PhysicsBody>`是不是 :ref:`RigidBody "
+"<class_RigidBody>`,通过调用 ``sword_noise`` 上的 ``play`` 来播放剑与物品碰撞"
+"的声音."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:900
 msgid "Sword finished"
@@ -1799,16 +1745,15 @@ msgstr "剑完毕"
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
-msgstr "完成后，您现在可以切入目标了！ 您可以在霰弹枪和手枪之间的角落找到剑。"
+msgstr "完成后,您现在可以切入目标了！ 您可以在霰弹枪和手枪之间的角落找到剑."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:909
 msgid "Updating the target UI"
 msgstr "更新目标UI"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:911
-#, fuzzy
 msgid "Let's update the UI as the sphere targets are destroyed."
-msgstr "好吧，让我们在球体目标被破坏时更新UI。"
+msgstr "让我们在球体目标被摧毁时更新用户界面."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:913
 msgid ""
@@ -1817,49 +1762,43 @@ msgid ""
 "keep this tutorial from becoming too long, we will not be covering the scene "
 "setup in this tutorial."
 msgstr ""
-"打开 ``Main_VR_GUI.tscn`` ，可以在 ``Scenes`` 文件夹中找到它。如果想了解场景"
-"是如何设置的，但为了不让本教程变得太长，不在本教程中介绍。"
+"打开 ``Main_VR_GUI.tscn`` ,可以在 ``Scenes`` 文件夹中找到它.如果想了解场景是"
+"如何设置的,但为了不让本教程变得太长,不在本教程中介绍."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:916
-#, fuzzy
 msgid ""
 "Expand the ``GUI`` :ref:`Viewport <class_Viewport>` node and then select the "
 "``Base_Control`` node. Add a new script called ``Base_Control.gd``, and add "
 "the following:"
 msgstr ""
-"打开 ``Game.tscn`` 然后展开``GUI`` :ref:`MeshInstance "
-"<class_MeshInstance>`。 从那里，展开``GUI`` :ref:`Viewport <class_Viewport>` "
-"节点，然后选择 ``base_control`` 节点。 添加一个名为 ``Base_Control`` 的新脚"
-"本，并添加以下内容:"
+"展开 ``GUI`` :ref:`Viewport <class_Viewport>` 节点,然后选择 ``Base_Control`` "
+"节点.添加一个新的脚本,名为 ``Base_Control.gd`` ,并添加以下内容:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:937
-#, fuzzy
 msgid "Let's go over how this script works real quick."
-msgstr "让我们回顾一下脚本的工作原理。"
+msgstr "我们来看看这个脚本是如何快速工作的."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:939
-#, fuzzy
 msgid ""
 "First, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
 "variable. Next, we get ``Game.gd`` by using ``get_tree().root`` and assign "
 "``sphere_ui`` to this script."
 msgstr ""
-"首先，在 ``_ready`` 中，我们得到 :ref:`Label <class_Label>` ，显示剩下多少个"
-"球体并将其分配给 ``sphere_count_label`` 类变量。 接下来，我们使用 "
-"``get_tree().root`` 获得 ``Game.gd`` 并将 ``sphere_ui`` 分配给该脚本。"
+"首先,在 ``_ready`` 中,我们获得 :ref:`Label <class_Label>` ,显示还剩下多少个球"
+"体,并将其分配给 ``sphere_count_label`` 类变量.接下来,我们通过使用 "
+"``get_tree().root`` 获得 ``Game.gd`` 并将 ``sphere_ui`` 分配给这个脚本."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:942
-#, fuzzy
 msgid ""
 "In ``update_ui``, we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
 "spheres are still left in the world. If there are no more spheres remaining, "
 "we change the text and congratulate the player."
 msgstr ""
-"在 ``update_ui`` 中，我们改变了球体 :ref:`Label <class_Label>的文本。 如果剩"
-"下至少一个球体，我们会更改文本以显示世界上还剩下多少球体。 如果没有更多的球"
-"体，我们会更改文字并祝贺游戏角色。"
+"在 ``update_ui`` 中,我们改变球体 :ref:`Label <class_Label>` 的文本.如果至少还"
+"有一个球体,我们改变文本以显示世界上还剩下多少球体.如果没有剩余的球体了,我们改"
+"变文本并祝贺玩家."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:948
 msgid "Adding the final special RigidBody"
@@ -1869,37 +1808,33 @@ msgstr "添加最终的特殊RigidBody"
 msgid ""
 "Finally, before we finish this tutorial, let's add a way to reset the game "
 "while in VR."
-msgstr "最后，在我们完成本教程之前，让我们添加一种在VR中重置游戏的方法。"
+msgstr "最后,在我们完成本教程之前,让我们添加一种在VR中重置游戏的方法."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:952
-#, fuzzy
 msgid ""
 "Open up ``Reset_Box.tscn``, which you will find in ``Scenes``. Select the "
 "``Reset_Box`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Reset_Box.gd``. Add the following code:"
 msgstr ""
-"打开 ``Reset_Box.tscn`` ，您会在 ``Scenes`` 中找到它。 选择``Reset_Box`` :"
-"ref:`RigidBody <class_RigidBody>` 节点并创建一个名为 ``Reset_Box.gd`` 的新脚"
-"本。 将以下代码添加到``Reset_Box.gd``:"
+"在 ``Scenes`` 中找到并打开 ``Reset_Box.tscn`` .选择 ``Reset_Box`` :ref:"
+"`RigidBody <class_RigidBody>` 节点,并创建一个名为 ``Reset_Box.gd`` 的新脚本."
+"添加以下代码:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:990
-#, fuzzy
 msgid "Let's quickly go over how this script works."
-msgstr "让我们回顾一下脚本的工作原理。"
+msgstr "让我们快速浏览一下这个脚本的工作原理."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:994
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "获取资源"
+msgstr "解释重置盒子代码"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:996
-#, fuzzy
 msgid ""
 "Like with the other special :ref:`RigidBody <class_RigidBody>`-based objects "
 "we've created, the reset box extends ``VR_Interactable_Rigidbody``."
 msgstr ""
-"让我们添加一些特殊的 :ref:`RigidBody <class_RigidBody>` 我们可以与下一个交互"
-"的节点。"
+"就像我们创建的其他特殊的 :ref:`RigidBody <class_RigidBody>` 的对象一样,重置框"
+"扩展了 ``VR_Interactable_Rigidbody`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:998
 msgid ""
@@ -1911,10 +1846,10 @@ msgid ""
 "defines how far the reset box has to be away from it's initial position "
 "before the reset timer starts."
 msgstr ""
-"``start_transform`` 类变量将存储游戏开始时重置框的全局变换， ``reset_timer`` "
-"类变量保存重置框位置移动后的时长， ``RESET_TIME`` 常量定义了重置框在被重置前"
-"需要等待的时长， ``RESET_MIN_DISTANCE`` 常量定义了重置框在重置计时器启动前需"
-"要离开初始位置多远。"
+"``start_transform`` 类变量将存储游戏开始时重置框的全局变换, ``reset_timer`` "
+"类变量保存重置框位置移动后的时长, ``RESET_TIME`` 常量定义了重置框在被重置前需"
+"要等待的时长, ``RESET_MIN_DISTANCE`` 常量定义了重置框在重置计时器启动前需要离"
+"开初始位置多远."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1002
 msgid ""
@@ -1923,9 +1858,9 @@ msgid ""
 "we can reset the position, rotation, and scale of the reset box object to "
 "this initial transform when enough time has passed."
 msgstr ""
-"在 ``_ready`` 函数中，我们所做的只是在场景开始时存储重置位置的 "
-"``global_transform`` 。这样就可以在时间足够长时，将重置框对象的位置、旋转和比"
-"例重置为这个初始变换。"
+"在 ``_ready`` 函数中,我们所做的只是在场景开始时存储重置位置的 "
+"``global_transform`` .这样就可以在时间足够长时,将重置框对象的位置、旋转和比例"
+"重置为这个初始变换."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1005
 msgid ""
@@ -1937,11 +1872,11 @@ msgid ""
 "so the reset box is back in its initial position. We then set "
 "``reset_timer`` to ``0``."
 msgstr ""
-"在 ``_physics_process`` 函数中，代码检查重置框的初始位置到重置框的当前位置是"
-"否比 ``RESET_MIN_DISTANCE`` 远。如果远，那么它就开始增加 ``reset_timer`` 时"
-"间 ``delta`` 。一旦 ``reset_timer`` 大于或等于 ``reset_TIME`` ，就把 "
-"``global_transform`` 重置为 ``start_transform`` ，这样复位框就回到了初始位"
-"置。然后将 ``reset_timer`` 设置为 ``0`` 。"
+"在 ``_physics_process`` 函数中,代码检查重置框的初始位置到重置框的当前位置是否"
+"比 ``RESET_MIN_DISTANCE`` 远.如果远,那么它就开始增加 ``reset_timer`` 时间 "
+"``delta`` .一旦 ``reset_timer`` 大于或等于 ``reset_TIME`` ,就把 "
+"``global_transform`` 重置为 ``start_transform`` ,这样复位框就回到了初始位置."
+"然后将 ``reset_timer`` 设置为 ``0`` ."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1009
 msgid ""
@@ -1950,7 +1885,7 @@ msgid ""
 "everything."
 msgstr ""
 "``interact`` 函数只是使用 ``get_tree().change_scene`` 重新加载 ``Game.tscn`` "
-"场景，这将重新加载游戏场景，重置所有。"
+"场景,这将重新加载游戏场景,重置所有."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1011
 msgid ""
@@ -1959,29 +1894,27 @@ msgid ""
 "position/rotation. Then ``reset_timer`` is set to ``0`` so the timer is "
 "reset."
 msgstr ""
-"最后， ``dropped`` 函数将 ``global_transform`` 重设为 ``start_transform`` 中"
-"的初始变换，这样复位框就有了初始位置旋转。然后将 ``reset_timer`` 设置为 "
-"``0`` ，这样就复位了计时器。"
+"最后, ``dropped`` 函数将 ``global_transform`` 重设为 ``start_transform`` 中的"
+"初始变换,这样复位框就有了初始位置旋转.然后将 ``reset_timer`` 设置为 ``0`` ,这"
+"样就复位了计时器."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1016
-#, fuzzy
 msgid "Reset box finished"
-msgstr "已完成重置框"
+msgstr "重置盒子完成"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1018
-#, fuzzy
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
 "scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
-"完成后，当您抓住并与重置框交互时，整个场景将重置/重新启动，您可以再次销毁所有"
-"目标！"
+"完成这些后,当你抓起复位盒并与之互动时,整个场景将重置/重启,你可以再次摧毁所有"
+"的目标!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1020
 msgid ""
 "Resetting the scene abruptly without any sort of transition can lead to "
 "discomfort in VR."
-msgstr "在没有任何形式过渡的情况下，突然重置场景会导致VR中的不适感。"
+msgstr "在没有任何形式过渡的情况下,突然重置场景会导致VR中的不适感."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1025
 msgid "Final notes"
@@ -1989,10 +1922,9 @@ msgstr "最后的笔记"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1029
 msgid "Whew! That was a lot of work."
-msgstr "呼！ 工作量还不小。"
+msgstr "呼！ 工作量还不小."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1031
-#, fuzzy
 msgid ""
 "Now you have a fully working VR project with multiple different types of "
 "special :ref:`RigidBody <class_RigidBody>`-based nodes that can be used and "
@@ -2001,8 +1933,10 @@ msgid ""
 "can be expanded on to make puzzle games, action games, story-based games, "
 "and more!"
 msgstr ""
-"这有望成为在Godot制作功能齐全的VR游戏的介绍！ 这里编写的代码可以扩展为制作益"
-"智游戏，动作游戏，基于故事的游戏等等！"
+"现在你有一个完全可以工作的VR项目,有多种不同类型的特殊 :ref:`RigidBody "
+"<class_RigidBody>` 的节点可供使用和扩展.希望这将有助于作为在Godot中制作功能齐"
+"全的VR游戏,本教程介绍中详述的代码和概念可以扩展到制作益智游戏、动作游戏、基于"
+"故事的游戏等!"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial/vr_starter_tutorial_part_two.rst:1035
 msgid ""
@@ -2010,5 +1944,5 @@ msgid ""
 "`OpenVR GitHub repository <https://github.com/GodotVR/godot_openvr_fps>`_, "
 "under the releases tab!"
 msgstr ""
-"你可以在 `OpenVR GitHub 仓库<https://github.com/GodotVR/"
-"godot_openvr_fps>`_ ，所发布标签中下载本系列教程的成品项目!"
+"你可以在 `OpenVR GitHub 仓库<https://github.com/GodotVR/godot_openvr_fps>`_ ,"
+"所发布标签中下载本系列教程的成品项目!"

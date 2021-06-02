@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -399,8 +399,8 @@ msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
 "`Assert keyword`_."
 msgstr ""
-"Sygnalizuje stan, rejestruje błąd w przypadku awarii. Ignorowane w "
-"kompilacjach niedebugowanych. Patrz `Assert keyword`_."
+"Sygnalizuje stan, rejestruje błąd w przypadku awarii. Ignorowane przy trybie "
+"niedebugowanym. Patrz słowo kluczowe `Assert`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:203
 msgid "remote"
@@ -845,7 +845,6 @@ msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:366
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Strings can contain the following escape sequences:"
@@ -854,7 +853,7 @@ msgstr ""
 "Łańcuchy mogą zawierać `Standardowe sekwencje specjalne C <https://en."
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript obsługuje :ref:"
 "`formatowanie łańcucha znaków czyli funkcjonalność funkcji printf "
-"<doc_gdscript_printf>`."
+"<doc_gdscript_printf>`:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid "**Escape sequence**"
@@ -1265,11 +1264,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:606
 msgid "Valid types are:"
-msgstr ""
+msgstr "Prawidłowymi typami są:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:608
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
-msgstr ""
+msgstr "Wbudowane typy (Array, Vector2, int, String, itp.)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:609
 msgid "Engine classes (Node, Resource, Reference, etc.)."
@@ -1403,8 +1402,8 @@ msgstr ""
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
-"Funkcja może ``zwrócić`` wartość w dowolnym momencie. Domyślnie zwraca "
-"``null``."
+"Funkcja może ``return``(zwrócić) w dowolnym momencie. Domyślną wartością "
+"zwracaną jest ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:735
 msgid ""
@@ -1548,14 +1547,12 @@ msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr "**Kurs dla osób, które są zaznajomione z instrukcją switch**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:901
-#, fuzzy
 msgid "Replace ``switch`` with ``match``."
-msgstr "Zastąp ``switch`` z ``match``"
+msgstr "Zastąp ``switch`` z ``match``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:902
-#, fuzzy
 msgid "Remove ``case``."
-msgstr "Usuń ``case``"
+msgstr "Usuń ``case``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:903
 msgid ""
@@ -1759,19 +1756,16 @@ msgid "Inheritance"
 msgstr "Dziedziczenie"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1094
-#, fuzzy
 msgid "A class (stored as a file) can inherit from:"
-msgstr "Klasa (przechowywana jako plik) może dziedziczyć po"
+msgstr "Klasa (przechowywana jako plik) może dziedziczyć po:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1096
-#, fuzzy
 msgid "A global class."
-msgstr "Klasie globalnej"
+msgstr "Klasie globalnej."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
-#, fuzzy
 msgid "Another class file."
-msgstr "Innego pliku klasy"
+msgstr "Innego pliku klasy."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
 msgid "An inner class inside another class file."
@@ -1823,7 +1817,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Konstruktor klasy"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
@@ -1851,9 +1846,8 @@ msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Nie ma żadnych ograniczeń w stosowaniu Godota"
+msgstr "Nie ma żadnych ograniczeń w stosowaniu Godota:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1185
 msgid ""
@@ -2002,9 +1996,10 @@ msgstr ""
 "celu istnieje słowo kluczowe ``tool`` i musi być umieszczone na górze pliku:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1325
-#, fuzzy
 msgid "See :ref:`doc_running_code_in_the_editor` for more information."
-msgstr ":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>`"
+msgstr ""
+":ref:`Uruchamianie kodu w edytorze <doc_running_code_in_the_editor>` dla "
+"więcej informacji."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
 msgid ""
@@ -2018,7 +2013,6 @@ msgid "Memory management"
 msgstr "Zarządzanie pamięcią"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "

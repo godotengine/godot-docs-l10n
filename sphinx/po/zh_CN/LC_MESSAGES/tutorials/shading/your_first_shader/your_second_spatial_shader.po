@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:4
 msgid "Your first Spatial shader: part 2"
-msgstr "您的第一个空间着色器：第2部分"
+msgstr "您的第一个空间着色器:第2部分"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:6
 msgid ""
@@ -33,21 +33,20 @@ msgid ""
 "allows you to ignore all these parameters and write a fully customized "
 "shader."
 msgstr ""
-"从高级设置开始，Godot所做的是为用户提供一组可选设置的参数(“环境光遮蔽”、“次表"
-"面散射强度”、“边缘”等等)这些参数对应不同的复杂效应(环境遮挡、次表面散射、边缘"
-"照明等等)如果没有写入，代码在编译之前被抛出，因此着色器不会产生额外特性的成"
-"本。这使得用户很容易拥有复杂的支持PBR着色，而不需要编写复杂的着色器。当然，"
-"Godot还允许您忽略所有这些参数，并编写一个完全定制的着色器。"
+"从高级设置开始,Godot所做的是为用户提供一组可选设置的参数(\"环境光遮蔽\"、\"次"
+"表面散射强度\"、\"边缘\"等等)这些参数对应不同的复杂效应(环境遮挡、次表面散"
+"射、边缘照明等等)如果没有写入,代码在编译之前被抛出,因此着色器不会产生额外特性"
+"的成本.这使得用户很容易拥有复杂的支持PBR着色,而不需要编写复杂的着色器.当然,"
+"Godot还允许您忽略所有这些参数,并编写一个完全定制的着色器."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:13
 msgid ""
 "For a full list of these parameters see the :ref:`spatial shader "
 "<doc_spatial_shader>` reference doc."
 msgstr ""
-"有关这些参数的完整列表，请参见:ref:`空间着色器<doc_spatial_shader>`参考文档。"
+"有关这些参数的完整列表,请参见 :ref:`空间着色器<doc_spatial_shader>`参考文档."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:15
-#, fuzzy
 msgid ""
 "A difference between the vertex function and a fragment function is that the "
 "vertex function runs per vertex and sets properties such as ``VERTEX`` "
@@ -55,9 +54,9 @@ msgid ""
 "most importantly, sets the ``ALBEDO`` color of the :ref:"
 "`Mesh<class_MeshInstance>`."
 msgstr ""
-"顶点着色器和片段着色器之间的区别在于顶点着色器每个顶点运行并设置诸"
-"如“VERTEX”(位置)和“正常”的属性，而片段着色器按像素运行，最重要的是， 设置 :"
-"ref:`Mesh <class_MeshInstance>` 的 ``ALBEDO`` 颜色。"
+"顶点函数和片段函数的区别在于,顶点函数是按顶点运行的,并设置诸如 ``VERTEX`` (坐"
+"标)和 ``NORMAL`` 等属性,而片段着色器是按像素运行的,最重要的是设置 :ref:"
+"`Mesh<class_MeshInstance>` 的 ``ALBEDO`` 颜色."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:20
 msgid "Your first spatial fragment function"
@@ -72,16 +71,16 @@ msgid ""
 "the shader, directly below ``shader_type``, and they specify what sort of "
 "functionality you want the built-in aspects of the shader to have."
 msgstr ""
-"如本教程前一部分所述。在Godot中，片段函数的标准用法是设置不同的材质属性，然后"
-"让Godot处理剩下的部分。为了提供更大的灵活性，Godot还提供了渲染模式。渲染模式"
-"设置在着色器的顶部，直接在“着色_方式”下面，它们指定了你想要着色器的内置方面具"
-"有什么样的功能。"
+"如本教程前一部分所述.在Godot中,片段函数的标准用法是设置不同的材质属性,然后让"
+"Godot处理剩下的部分.为了提供更大的灵活性,Godot还提供了渲染模式.渲染模式设置在"
+"着色器的顶部,直接在\"着色_方式\"下面,它们指定了你想要着色器的内置方面具有什么"
+"样的功能."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:28
 msgid ""
 "For example, if you do not want to have lights affect an object, set the "
 "render mode to ``unshaded``:"
-msgstr "例如，如果你不想让灯光影响一个物体，设置渲染模式为“无阴影”："
+msgstr "例如,如果你不想让灯光影响一个物体,设置渲染模式为\"无阴影\":"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:35
 msgid ""
@@ -89,53 +88,53 @@ msgid ""
 "to use toon shading instead of more-realistic PBR shading, set the diffuse "
 "mode and specular mode to toon:"
 msgstr ""
-"您还可以将多个渲染模式堆叠在一起。例如，如果你想使用卡通材质而不是更真实的PBR"
-"材质，将漫反射模式和高光模式设置为卡通："
+"您还可以将多个渲染模式堆叠在一起.例如,如果你想使用卡通材质而不是更真实的PBR材"
+"质,将漫反射模式和高光模式设置为卡通:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:42
 msgid ""
 "This model of built-in functionality allows you to write complex custom "
 "shaders by changing only a few parameters."
-msgstr "这个内置功能模型允许您通过更改几个参数来编写复杂的自定义着色器。"
+msgstr "这个内置功能模型允许您通过更改几个参数来编写复杂的自定义着色器."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:45
 msgid ""
 "For a full list of render modes see the :ref:`Spatial shader reference "
 "<doc_spatial_shader>`."
 msgstr ""
-"有关渲染模式的完整列表，请参见空间着色器参考 :ref:`Spatial shader reference "
-"<doc_spatial_shader>`。"
+"有关渲染模式的完整列表,请参见空间着色器参考 :ref:`Spatial shader reference "
+"<doc_spatial_shader>`."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:47
 msgid ""
 "In this part of the tutorial, we will walk through how to take the bumpy "
 "terrain from the previous part and turn it into an ocean."
-msgstr "在本教程的这一部分中，我们将介绍如何将前一部分的崎岖地形变成海洋。"
+msgstr "在本教程的这一部分中,我们将介绍如何将前一部分的崎岖地形变成海洋."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:50
 msgid ""
 "First let's set the color of the water. We do that by setting ``ALBEDO``."
-msgstr "首先让我们设置水的颜色，我们通过设置“反射率”来做到这一点。"
+msgstr "首先让我们设置水的颜色.我们通过设置 ``ALBEDO`` 来做到这一点."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:52
 msgid "``ALBEDO`` is a ``vec3`` that contains the color of the object."
-msgstr "“反射率”是一种与物体颜色相关的“三维数组”。"
+msgstr "``ALBEDO`` 是一个 ``vec3`` ,包含物体的颜色."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:54
 msgid "Let's set it to a nice shade of blue."
-msgstr "我们把它调成蓝色。"
+msgstr "我们把它调成蓝色."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:64
 msgid ""
 "We set it to a very dark shade of blue because most of the blueness of the "
 "water will come from reflections from the sky."
-msgstr "我们将其设置为深蓝色，因为水的大部分蓝色来自天空的反射。"
+msgstr "我们将其设置为深蓝色,因为水的大部分蓝色来自天空的反射."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:67
 msgid ""
 "The PBR model that Godot uses relies on two main parameters: ``METALLIC`` "
 "and ``ROUGHNESS``."
-msgstr "PBR模型的Godot用户两个主要参数：“金属度”和“粗糙度”。"
+msgstr "PBR模型的Godot用户两个主要参数:\"金属度\"和\"粗糙度\"."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:69
 msgid ""
@@ -143,8 +142,8 @@ msgid ""
 "``ROUGHNESS`` will make a material appear like a shiny plastic, while a high "
 "roughness makes the material appear more solid in color."
 msgstr ""
-"粗糙度是指材料表面的光滑程度。低“粗糙度”会使材料看起来像闪亮的塑料，而高粗糙"
-"度使材料在颜色上看起来更坚实。"
+"粗糙度是指材料表面的光滑程度.低\"粗糙度\"会使材料看起来像闪亮的塑料,而高粗糙"
+"度使材料在颜色上看起来更坚实."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:73
 msgid ""
@@ -155,23 +154,24 @@ msgid ""
 "low ``METALLIC`` has a more equal representation of sky color and ``ALBEDO`` "
 "color."
 msgstr ""
-"“金属度”是指物体有多像金属。最好将其设置为接近“0”或“1”。“金属度”可以视作调整"
-"反射和“反射率”颜色之间的平衡。高“金属度”几乎忽略了“反射率”，使之看起来像天空"
-"之境。而低“金属度”有更加均衡的天空颜色和“反射率”颜色表现。"
+"``METALLIC`` 指定该物体有多像金属,它最好设置为接近 ``0`` 或 ``1`` .把 "
+"``METALLIC`` 看作是改变反射和 ``ALBEDO`` 颜色之间的平衡.高的 ``METALLIC`` 几"
+"乎完全忽略了 ``ALBEDO`` ,看起来像天空的镜子.而低的 ``METALLIC`` 对天空的颜色"
+"和 ``ALBEDO`` 的颜色有一个更平实的表现."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:78
 msgid ""
 "``ROUGHNESS`` increases from ``0`` to ``1`` from left to right while "
 "``METALLIC`` increase from ``0`` to ``1`` from top to bottom."
-msgstr "“粗糙度”从左到右从0增加到1，而“金属度”从上到下从0增加到1。"
+msgstr "\"粗糙度\"从左到右从0增加到1,而\"金属度\"从上到下从0增加到1."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:83
 msgid ""
 "``METALLIC`` should be close to ``0`` or ``1`` for proper PBR shading. Only "
 "set it between them for blending between materials."
 msgstr ""
-"对恰当的PBR阴影，“金属度”应当接近0或者1。为了混合不同的材料，只有将其设置在0"
-"和1之间。"
+"对恰当的PBR阴影,\"金属度\"应当接近0或者1.为了混合不同的材料,只有将其设置在0和"
+"1之间."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:86
 msgid ""
@@ -179,8 +179,8 @@ msgid ""
 "Water is also highly reflective, so we will set its ``ROUGHNESS`` property "
 "to be quite low as well."
 msgstr ""
-"水不是金属，所以我们将其“金属度”属性设置成“0.0”。水的反射性也很高，因此我们将"
-"其“粗糙度”属性也设置得非常低。"
+"水不是金属,所以我们将其\"金属度\"属性设置成\"0.0\".水的反射性也很高,因此我们"
+"将其\"粗糙度\"属性也设置得非常低."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:99
 msgid ""
@@ -193,11 +193,11 @@ msgid ""
 "objects to become more reflective at shallow angles. It is the reason why "
 "you can see into water below you, but farther away it reflects the sky."
 msgstr ""
-"现在，我们有了光滑的塑料外观表面。现在该考虑要模拟的水的某些特定属性了。这里"
-"有两种主要的方法可以把诡异的塑料表面变成好看的水。首先是镜面反射。镜面反射是"
-"那些来自太阳直接反射到你眼里的明亮斑点。第二个是菲涅耳反射。菲涅尔反射是物体"
-"在小角度下更具反射性的属性。这就是为什么你可以看见自己身下的水，却在更远处看"
-"见天空倒影的原因。"
+"现在,我们有了光滑的塑料外观表面.现在该考虑要模拟的水的某些特定属性了.这里有两"
+"种主要的方法可以把诡异的塑料表面变成好看的水.首先是镜面反射.镜面反射是那些来"
+"自太阳直接反射到你眼里的明亮斑点.第二个是菲涅耳反射.菲涅尔反射是物体在小角度"
+"下更具反射性的属性.这就是为什么你可以看见自己身下的水,却在更远处看见天空倒影"
+"的原因."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:106
 msgid ""
@@ -205,8 +205,8 @@ msgid ""
 "we will change the render mode for specular to toon because the toon render "
 "mode has larger specular highlights."
 msgstr ""
-"为了增强镜面反射，我们需要做两件事。首先，由于卡通渲染模式具有更高的镜面反射"
-"高光，我们将更改镜面反射为卡通渲染模式。"
+"为了增强镜面反射,我们需要做两件事.首先,由于卡通渲染模式具有更高的镜面反射高"
+"光,我们将更改镜面反射为卡通渲染模式."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:115
 msgid ""
@@ -215,9 +215,8 @@ msgid ""
 "through fabric on the edges of an object, but we will use it here to help "
 "achieve a nice watery effect."
 msgstr ""
-"其次，我们将添加边缘照明。边缘照明增加了掠射角度的光线效果。通常，它用于模拟"
-"光线穿过对象边缘上的织物的路径，但是我们将在此处使用它来帮助实现良好的水润效"
-"果。"
+"其次,我们将添加边缘照明.边缘照明增加了掠射角度的光线效果.通常,它用于模拟光线"
+"穿过对象边缘上的织物的路径,但是我们将在此处使用它来帮助实现良好的水润效果."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:131
 msgid ""
@@ -230,11 +229,11 @@ msgid ""
 "way to tell when you are looking at the surface head-on or at a glancing "
 "angle."
 msgstr ""
-"为了增加菲涅耳反射率，我们将在片段着色器中计算菲涅耳项。在这里，出于性能方面"
-"的考虑，我们将不使用真正的菲涅耳术语。取而代之的是，我们将使"
-"用“NORMAL”和“VIEW”向量的点积对其进行近似。 “NORMAL”向量指向远离网格物体表面的"
-"位置，而“VIEW”向量则是您的眼睛与该表面上的点之间的方向。它们之间的点积是一种"
-"可以告诉您何时正视或掠过某个角度的方便方法。"
+"为了增加菲涅耳反射率,我们将在片段着色器中计算菲涅耳项.在这里,出于性能方面的考"
+"虑,我们将不使用真正的菲涅耳术语.取而代之的是,我们将使用\"NORMAL\"和\"VIEW\"向"
+"量的点积对其进行近似. \"NORMAL\"向量指向远离网格物体表面的位置,而\"VIEW\"向量"
+"则是您的眼睛与该表面上的点之间的方向.它们之间的点积是一种可以告诉您何时正视或"
+"掠过某个角度的方便方法."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:143
 msgid ""
@@ -243,9 +242,10 @@ msgid ""
 "these properties with a texture, or to a flat number. But with shaders we "
 "can set them based on any mathematical function that we can dream up."
 msgstr ""
-"并将其混合到“粗糙度”和“反射率”中。这是ShaderMaterials相对于SpatialMaterials的"
-"优势。使用SpatialMaterials，我们可以使用纹理或统一数字设置这些属性。而使用着"
-"色器，我们可以基于自己想到的数学函数来设置。"
+"并将其混合到 ``ROUGHNESS`` 和 ``ALBEDO`` .这是ShaderMaterials比"
+"SpatialMaterials的好处.使用SpatialMaterials,我们可以用纹理来设置这些属性,或者"
+"设置成一个统一的数字.但是用着色器,我们可以根据我们能想到的任何数学函数来设置"
+"它们."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:160
 msgid ""
@@ -254,25 +254,25 @@ msgid ""
 "This is done easily by decreasing the values of the ``vec3`` we pass into "
 "``ALBEDO``. Let's set them to ``vec3(0.01, 0.03, 0.05)``."
 msgstr ""
-"现在，仅需5行代码，您就可以拥有复杂的外观。现在我们有了照明，这水看起来过于明"
-"亮。我们将其变暗。通过减小我们传递给“反射率”的vec3的值，可以轻松完成此操作。"
-"让我们将它们设置为“vec3(0.01, 0.03, 0.05)”。"
+"而现在,只需要5行代码,你就可以拥有看起来很复杂的水.现在,我们有了照明,这个水看"
+"起来太亮了.让我们把它变暗.这可以通过减少我们传入 ``ALBEDO`` 的 ``vec3`` 的值"
+"来轻松实现.让我们把它们设置为 ``vec3(0.01, 0.03, 0.05)`` ."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:168
 msgid "Animating with ``TIME``"
-msgstr "用“TIME”动画"
+msgstr "用\"TIME\"动画"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:170
 msgid ""
 "Going back to the vertex function, we can animate the waves using the built-"
 "in variable ``TIME``."
-msgstr "回到顶点功能，我们可以使用内置变量“TIME”对波浪进行动画处理。"
+msgstr "回到顶点功能,我们可以使用内置变量\"TIME\"对波浪进行动画处理."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:172
 msgid ""
 "``TIME`` is a built-in variable that is accessible from the vertex and "
 "fragment functions."
-msgstr "“TIME”是一个内置变量，可从顶点和片段函数访问。"
+msgstr "\"TIME\"是一个内置变量,可从顶点和片段函数访问."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:175
 msgid ""
@@ -280,17 +280,17 @@ msgid ""
 "this tutorial, we will do the same. Put the heightmap code in a function "
 "called ``height()``."
 msgstr ""
-"在上一个教程中，我们通过从高度图读取来计算高度。对于本教程，我们将做同样的事"
-"情。将高度图代码放在一个名为“height()”的函数中。"
+"在上一个教程中,我们通过从高度图读取来计算高度.对于本教程,我们将做同样的事情."
+"将高度图代码放在一个名为\"height()\"的函数中."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:184
 msgid ""
 "In order to use ``TIME`` in the ``height()`` function, we need to pass it in."
-msgstr "为了在“height()”函数中使用“TIME”，我们需要将其传递进去。"
+msgstr "为了在\"height()\"函数中使用\"TIME\",我们需要将其传递进去."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:191
 msgid "And make sure to correctly pass it in inside the vertex function."
-msgstr "确保其正确传递到顶点函数中。"
+msgstr "确保其正确传递到顶点函数中."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:201
 msgid ""
@@ -298,22 +298,22 @@ msgid ""
 "them manually in the ``vertex()`` function. To do so use the following line "
 "of code."
 msgstr ""
-"而不是使用法线贴图来计算法线。我们将在“vertex()”函数中手动计算它们。为此，请"
-"使用以下代码行。"
+"而不是使用法线贴图来计算法线.我们将在\"vertex()\"函数中手动计算它们.为此,请使"
+"用以下代码行."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:208
 msgid ""
 "We need to compute ``NORMAL`` manually because in the next section we will "
 "be using math to create complex-looking waves."
 msgstr ""
-"我们需要手动计算“NORMAL”，因为在下一节中，我们将使用数学来创建外观复杂的波"
-"形。"
+"我们需要手动计算\"NORMAL\",因为在下一节中,我们将使用数学来创建外观复杂的波形."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:211
 msgid ""
 "Now, we are going to make the ``height()`` function a little more "
 "complicated by offsetting ``position`` by the cosine of ``TIME``."
-msgstr "现在，我们要通过使“位置”偏移“时间”的余弦来使“height()”函数更加复杂。"
+msgstr ""
+"现在,我们要通过使\"位置\"偏移\"时间\"的余弦来使\"height()\"函数更加复杂."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:221
 msgid ""
@@ -322,12 +322,12 @@ msgid ""
 "effects, in this case realistic waves, by adding a few more mathematical "
 "functions."
 msgstr ""
-"这会实现缓慢移动的波纹效果，但显得有点不自然。下一节将深入探讨，通过加入更多"
-"的数学函数，来用着色器实现更复杂的效果，比如更加真实的波纹。"
+"这会实现缓慢移动的波纹效果,但显得有点不自然.下一节将深入探讨,通过加入更多的数"
+"学函数,来用着色器实现更复杂的效果,比如更加真实的波纹."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:226
 msgid "Advanced effects: waves"
-msgstr "进阶效果：水波"
+msgstr "进阶效果:水波"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:228
 msgid ""
@@ -336,8 +336,8 @@ msgid ""
 "level by modifying the ``height()`` function and by introducing a new "
 "function called ``wave()``."
 msgstr ""
-"利用数学 ，着色器可以实现复杂的效果，这是着色器的强大之处。为阐述这一点，我们"
-"将修改 ``height()`` 函数和引入新函数 ``wave()`` ，来让波纹效果更进一层。"
+"利用数学 ,着色器可以实现复杂的效果,这是着色器的强大之处.为阐述这一点,我们将修"
+"改 ``height()`` 函数和引入新函数 ``wave()`` ,来让波纹效果更进一层."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:232
 msgid ""
@@ -349,20 +349,19 @@ msgstr "``wave()`` 有一个参数, ``position``, 和在 ``height()``中一样."
 msgid ""
 "We are going to call ``wave()`` multiple times in ``height()`` in order to "
 "fake the way waves look."
-msgstr ""
-"我们将在 ``height()`` 函数中多次调用 ``wave()`` 函数，来改变波纹的样子。"
+msgstr "我们将在 ``height()`` 函数中多次调用 ``wave()`` 函数,来改变波纹的样子."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:244
 msgid "At first this looks complicated. So let's go through it line-by-line."
-msgstr "这在一开始会让人觉得很复杂，所以我们一行一行地来实现。"
+msgstr "这在一开始会让人觉得很复杂,所以我们一行一行地来实现."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:250
 msgid ""
 "Offset the position by the ``noise`` texture. This will make the waves "
 "curve, so they won't be straight lines completely aligned with the grid."
 msgstr ""
-"通过 ``noise`` 纹理来偏移位置。这将会使波浪成为曲线，所以它们将不会是与网格所"
-"对齐的直线。"
+"通过 ``noise`` 纹理来偏移位置.这将会使波浪成为曲线,所以它们将不会是与网格所对"
+"齐的直线."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:257
 msgid ""
@@ -371,9 +370,9 @@ msgid ""
 "sharp ridge and constrain them to the 0-1 range. And then we subtract it "
 "from ``1.0`` to put the peak on top."
 msgstr ""
-"用 ``sin()`` 和 ``position`` 定义一个类似波浪的函数。通常 ``sin()`` 波是很圆"
-"的。我们使用 ``abs()`` 去将其绝对化，让它有一个尖锐波峰，并将其约束于0-1的范"
-"围内。然后我们再从 ``1.0`` 中减去，将峰值放在上方。"
+"用 ``sin()`` 和 ``position`` 定义一个类似波浪的函数.通常 ``sin()`` 波是很圆"
+"的.我们使用 ``abs()`` 去将其绝对化,让它有一个尖锐波峰,并将其约束于0-1的范围"
+"内.然后我们再从 ``1.0`` 中减去,将峰值放在上方."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:265
 msgid ""
@@ -381,30 +380,28 @@ msgid ""
 "power to sharpen the peaks. Then subtract that from ``1.0`` so that the "
 "ridges become peaks and raise that to a power to sharpen the ridges."
 msgstr ""
-"将x方向的波乘以y方向的波，并将其提高到使峰值变得尖锐的幂。然后从``1.0``中减去"
-"它，使山脊成为山峰，并提高山脊锐化的能力。"
+"将x方向的波乘以y方向的波,并将其提高到使峰值变得尖锐的幂.然后从``1.0``中减去"
+"它,使山脊成为山峰,并提高山脊锐化的能力."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:269
 msgid ""
 "We can now replace the contents of our ``height()`` function with ``wave()``."
-msgstr "现在我们可以用``wave()``代替``height()``函数的内容。"
+msgstr "现在我们可以用``wave()``代替``height()``函数的内容."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:278
-#, fuzzy
 msgid "Using this, you get:"
-msgstr "用这个获得:"
+msgstr "这样一来,你会得到:"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:282
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "
 "bit. We do this by scaling ``position``."
 msgstr ""
-"正弦曲线的形状太明显了。所以让我们把波型分散一下。我们通过缩放``位置``来实"
-"现。"
+"正弦曲线的形状太明显了.所以让我们把波型分散一下.我们通过缩放``位置``来实现."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:291
 msgid "Now it looks much better."
-msgstr "现在它看起来好多了。"
+msgstr "现在它看起来好多了."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:295
 msgid ""
@@ -414,15 +411,15 @@ msgid ""
 "And we are going to multiply the output of the wave to make them shorter or "
 "taller (amplitude)."
 msgstr ""
-"如果我们将多个波以不同的频率和幅度彼此叠加，则可以做得更好。 这意味着我们将按"
-"比例缩放每个位置，以使波形更细或更宽（频率）。 我们将乘以波的输出，以使它们变"
-"低或变高（振幅）。"
+"如果我们将多个波以不同的频率和幅度彼此叠加,则可以做得更好. 这意味着我们将按比"
+"例缩放每个位置,以使波形更细或更宽(频率). 我们将乘以波的输出,以使它们变低或变"
+"高(振幅)."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:300
 msgid ""
 "Here is an example for how you could layer the four waves to achieve nicer "
 "looking waves."
-msgstr "下面以四种波形为例，说明如何将四种波形分层，以达到更漂亮的波形效果。"
+msgstr "下面以四种波形为例,说明如何将四种波形分层,以达到更漂亮的波形效果."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:312
 msgid ""
@@ -431,16 +428,16 @@ msgid ""
 "that the amplitudes (the number the result is multiplied by) all add up to "
 "``1.0``. This keeps the wave in the 0-1 range."
 msgstr ""
-"请注意，我们把时间加到两个上，再从另外两个上减去。这使得波在不同的方向上移"
-"动，产生了复杂的效果。还要注意，振幅（结果乘以的数字）全部加起来是``1.0``。这"
-"使波浪保持在0-1的范围内。"
+"请注意,我们把时间加到两个上,再从另外两个上减去.这使得波在不同的方向上移动,产"
+"生了复杂的效果.还要注意,振幅(结果乘以的数字)全部加起来是``1.0``.这使波浪保持"
+"在0-1的范围内."
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:316
 msgid ""
 "With this code you should end up with more complex looking waves and all you "
 "had to do was add a bit of math!"
 msgstr ""
-"有了这段代码，你应该可以得到更复杂的波形，而你所要做的只是增加一点数学运算！"
+"有了这段代码,你应该可以得到更复杂的波形,而你所要做的只是增加一点数学运算！"
 
 #: ../../docs/tutorials/shading/your_first_shader/your_second_spatial_shader.rst:321
 msgid ""
@@ -450,7 +447,7 @@ msgid ""
 "`Shading section <toc-learn-features-shading>` and the :ref:`3D <toc-learn-"
 "features-3d>` sections."
 msgstr ""
-"有关空间着色器的更多信息，请阅读 :ref:`Shading Language "
+"有关空间着色器的更多信息,请阅读 :ref:`Shading Language "
 "<doc_shading_language>` 文档和 :ref:`Spatial Shaders <doc_spatial_shader>` 文"
-"档。也可以看看 :ref:`Shading 部分 <toc-learn-features-shading>` 和 :ref:`3D "
-"<toc-learn-features-3d>` 部分的高级教程。"
+"档.也可以看看 :ref:`Shading 部分 <toc-learn-features-shading>` 和 :ref:`3D "
+"<toc-learn-features-3d>` 部分的高级教程."

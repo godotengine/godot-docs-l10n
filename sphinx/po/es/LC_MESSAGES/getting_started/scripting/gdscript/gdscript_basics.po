@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1947,7 +1947,8 @@ msgstr ""
 "estas funciones cuando se quieran sobrecargar de alguna manera."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Constructor de clase"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
@@ -2164,7 +2165,6 @@ msgid "Memory management"
 msgstr "Gestión de la memoria"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2180,7 +2180,8 @@ msgstr ""
 "herencias se extienden **Reference**. Si esto no es lo deseado, entonces una "
 "clase debe heredar :ref:`class_Object` manualmente y debe llamar a instance."
 "free(). Para evitar ciclos de referencia que no puedan ser liberados, se "
-"proporciona una función ``weakref`` para crear referencias débiles."
+"proporciona una función ``weakref`` para crear referencias débiles. Aquí "
+"está un ejemplo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""

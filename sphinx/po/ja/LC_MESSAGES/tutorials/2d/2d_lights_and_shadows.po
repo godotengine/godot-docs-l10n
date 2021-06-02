@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -352,19 +352,12 @@ msgstr ""
 "め、blobを親 :ref:`Light <class_Light2D> ` の中央に配置する必要があります。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
-#, fuzzy
 msgid ""
-"At the time of writing, 3.0 is the stable release version. The 3.1 "
-"development branch contains many changes to the animation system, so the "
-"animations in the demo will not be covered here. See :ref:"
-"`doc_introduction_animation` for more information."
+"The animations in the demo will not be covered here. See :ref:"
+"`doc_introduction_animation` for information on creating animations."
 msgstr ""
-"執筆時点では、3.0 は安定版リリース版です。3.1 開発ブランチにはアニメーション "
-"システムに対する多くの変更が含まれているため、デモのアニメーションについては"
-"ここでは説明しません。詳細については、\\ :ref:"
-"`doc_introduction_2d_animation` を参照してください。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:137
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:136
 msgid ""
 "Right now the scene should look too bright. This is because all three lights "
 "are adding color to the scene. This is why the demo uses a :ref:"
@@ -377,7 +370,7 @@ msgstr ""
 "<class_CanvasModulate>` を使用します。 \\ :ref:`CanvasModulate "
 "<class_CanvasModulate>` は、ビューポート全体を特定のカラーで乗算します。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:141
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:140
 msgid ""
 "Add a :ref:`CanvasModulate <class_CanvasModulate>` to the scene and set its "
 "color to ``rgb(70, 70, 70)``. This will make the scene sufficiently dark to "
@@ -387,11 +380,11 @@ msgstr ""
 "を ``RGB(70, 70, 70)`` に設定します。これにより、シーンが十分暗くなり、ライト"
 "の効果がはっきりと見えます。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:146
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:145
 msgid "Now we add the shadow casters."
 msgstr "次に、シャドウキャスタを追加します。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:148
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:147
 msgid ""
 "The demo uses a :ref:`Node <class_Node2D>` named \"casters\" to organize the "
 "shadow casters. Add a :ref:`Node2D <class_Node2D>` to the scene. It will be "
@@ -403,7 +396,7 @@ msgstr ""
 "追加します。すべてのシャドウキャスタをグループ化するために使用されます。この"
 "ようにして、すべてを同時に表示/非表示にできます。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:152
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:151
 msgid ""
 "Each shadow caster is made of a :ref:`Sprite <class_Sprite>`, with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` child. For the demo the :ref:"
@@ -425,7 +418,7 @@ msgstr ""
 "<class_Sprite>` はブラックボックス以上のものになるかもしれません。壁や魔法の"
 "箱など、影を落としている物体の画像になるかもしれませんね。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:159
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the "
 "occluder has. They hold an :ref:`OccluderPolygon2D "
@@ -439,7 +432,7 @@ msgstr ""
 "テナです。このデモでは、壁が正方形であるため、 ``Polygon`` を正方形に設定しま"
 "す。その他の既定の設定でも問題ありません。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:165
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:164
 msgid ""
 "The first setting, ``Closed`` can be either ``on`` or ``off``. A closed "
 "polygon occludes light coming from all directions. An open polygon only "
@@ -449,7 +442,7 @@ msgstr ""
 "Polygonは、すべての方向からの光を遮断します。開いたPolygonは1つの方向からの光"
 "のみを遮ります"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:168
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:167
 msgid ""
 "``Cull Mode`` lets you select which direction gets culled. The default is "
 "``Disabled``, meaning the occluder will cast a shadow no matter which side "
@@ -464,7 +457,7 @@ msgstr ""
 "します。ワインディング順序は、ラインのどちら側がpolygonの内側にあるかを決定す"
 "るために使用されます。外向きの線だけが影を落とします。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:172
 msgid ""
 "To illustrate the difference, here is an image of a :ref:`LightOccluder2D "
 "<class_LightOccluder2D>` with ``Closed`` set to ``off`` in the "
@@ -476,18 +469,18 @@ msgstr ""
 "`LightOccluder2D <class_LightOccluder2D>` のイメージを以下に示します。ポリゴ"
 "ンの線が見えます:"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:178
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
 msgstr "``Cull Mode`` は ``Disabled`` です。3本の線はすべて影を落とします。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:183
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:182
 msgid ""
 "``Cull Mode`` is set to ``Clockwise``. Only the top and right lines cast "
 "shadows."
 msgstr ""
 "``Cull Mode`` は ``Clockwise`` (時計回り)上部と右側の線だけが影を落とします。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:187
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:186
 msgid ""
 "``Cull Mode`` is set to ``Counter-Clockwise``. Only the bottom line casts a "
 "shadow. If ``Closed`` was set to ``on`` there would be an additional "
@@ -497,7 +490,7 @@ msgstr ""
 "す。 ``Closed`` が ``on`` に設定されている場合、左側に垂直なラインが追加さ"
 "れ、シャドウが投影されます。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:191
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:190
 msgid ""
 "When you have added the :ref:`LightOccluder2Ds <class_LightOccluder2D>` the "
 "shadows still won't appear. You need to go back into the :ref:`Light2Ds "
@@ -509,7 +502,7 @@ msgstr ""
 "``Enable`` を ``on`` に設定します。下のイメージのように、ハードエッジのシャド"
 "ウがオンになります。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:197
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:196
 msgid ""
 "To give the shadows that nice, soft edge look we set the variables "
 "``filter``, ``filter smooth``, and ``gradient length``. Godot supports "
@@ -529,7 +522,7 @@ msgstr ""
 "質のトレードオフが、Godotがデフォルトで3〜13個のサンプルを提供し、選択できる"
 "ようにしている理由です。デモではPCF7を使用します。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:206
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:205
 msgid ""
 "This is a shadow rendered with the demo's settings. ``gradient length`` is "
 "set to ``1.3``, ``filter smooth`` is set to ``11.1``, and ``filter`` is set "
@@ -539,7 +532,7 @@ msgstr ""
 "``1.3`` に、 ``filter smooth`` を ``11.1`` に、 ``filter`` を ``PCF7`` に設定"
 "します。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:211
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:210
 msgid ""
 "``filter`` is set to ``PCF13``. Notice how the shadow becomes wider, this is "
 "because the distance between samples is based on the variable ``filter "
@@ -548,7 +541,7 @@ msgstr ""
 "``filter`` は ``PCF13`` に設定されています。サンプル間の距離が ``filter "
 "smooth`` に基づいてシャドウがどのように広くなるかに確認してください。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:213
 msgid ""
 "In order to make use of filtering you need to set the ``filter smooth`` "
 "variable. This dictates how far apart the samples are. If you want the soft "
@@ -562,11 +555,11 @@ msgstr ""
 "ルが少なく、滑らかにするフィルタの影響範囲が大きい場合は、サンプル間に線(マッ"
 "ハバンド)が形成されていることがわかります。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:220
 msgid "``filter smooth`` is set to ``30``."
 msgstr "``filter smooth`` を ``30`` に設定しています。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:223
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:222
 msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
@@ -575,11 +568,11 @@ msgstr ""
 "まな値を使用しています。いろいろやってみて、気に入ったものを見つけてくださ"
 "い。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:227
 msgid "``filter smooth`` is set to ``0``."
 msgstr "``filter smooth`` を ``0`` に設定しています。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:229
 msgid ""
 "Lastly, there is the variable ``gradient length``. For some smooth shadows "
 "it is preferable not to have the shadow start immediately on the object, as "
@@ -591,15 +584,15 @@ msgstr ""
 "とをお勧めします。gradient length変数は、ハード エッジの効果を減らすために影"
 "の開始側に滑らかなグラデーションを作成します。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:235
 msgid "``gradient length`` is set to ``0``."
 msgstr "``gradient length`` を ``0`` に設定しています。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:240
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:239
 msgid "``gradient length`` is set to ``10``."
 msgstr "``gradient length`` を ``10`` に設定しています。"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:241
 msgid ""
 "You will need to play around with the options a bit to find settings that "
 "suit your project. There is no right solution for everyone, which is why "

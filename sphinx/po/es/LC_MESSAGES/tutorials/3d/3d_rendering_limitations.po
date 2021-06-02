@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,28 +86,30 @@ msgstr ""
 "texturas de gradientes suaves."
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:35
-msgid "There are several ways to alleviate banding. Here are a few examples:"
-msgstr "Hay varias maneras de aliviar el anillado. Aquí hay algunos ejemplos:"
+#, fuzzy
+msgid "There are two main ways to alleviate banding:"
+msgstr "Hay muchas maneras de establecer el fondo:"
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:37
 msgid ""
-"Bake some noise into your textures. This is mainly effective in 2D, e.g. for "
-"vignetting effects."
+"Enable **Use Debanding** in the Project Settings. This applies a fullscreen "
+"debanding shader as a post-processing effect and is very cheap. Fullscreen "
+"debanding is only supported when using the GLES3 or Vulkan renderers. It "
+"also requires HDR to be enabled in the Project Settings (which is the "
+"default)."
 msgstr ""
-"Haz un poco de ruido en tus texturas. Esto es principalmente efectivo en 2D, "
-"por ejemplo, para efectos de viñetas."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:39
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:41
 msgid ""
-"Implement a debanding shader as a :ref:`screen-reading shader <doc_screen-"
-"reading_shaders>`. Godot currently doesn't provide a built-in debanding "
-"shader, but this may be added in a future release."
+"Alternatively, bake some noise into your textures. This is mainly effective "
+"in 2D, e.g. for vignetting effects. In 3D, you can also use a `custom "
+"debanding shader <https://github.com/fractilegames/godot-gles2-debanding-"
+"material>`__ to be applied on your *materials*. This technique works even if "
+"your project is rendered in LDR, which means it will work when using the "
+"GLES2 renderer."
 msgstr ""
-"Implementar un shader de suavizado como :ref:`shader de pantalla <doc_screen-"
-"reading_shaders>`. Godot actualmente no proporciona un shader de suavizado, "
-"pero esto puede ser añadido en una futura versión."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:45
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
 msgid ""
 "See `Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
 "pdf>`__ for more details about banding and ways to combat it."
@@ -115,11 +117,11 @@ msgstr ""
 "Ver `Banding in Games: A Noisy Rant <http://loopit.dk/banding_in_games."
 "pdf>`__ para más detalles sobre el anillado y las formas de combatirlo."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:49
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:53
 msgid "Depth buffer precision"
 msgstr "Precisión del buffer de profundidad"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:51
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:55
 msgid ""
 "To sort objects in 3D space, rendering engines rely on a *depth buffer* "
 "(also called *Z-buffer*). This buffer has a finite precision: 24-bit on "
@@ -137,7 +139,7 @@ msgstr ""
 "que parpadean hacia adelante y hacia atrás a medida que la cámara se mueve o "
 "gira."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:58
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:62
 msgid ""
 "To make the depth buffer more precise over the rendered area, you should "
 "*increase* the Camera node's **Near** property. However, be careful: if you "
@@ -154,7 +156,7 @@ msgstr ""
 "tu caso de uso, aunque ten en cuenta que no afectará a la precisión tanto "
 "como la propiedad **Cercana**."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:65
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:69
 msgid ""
 "If you only need high precision when the player can see far away, you could "
 "change it dynamically based on the game conditions. For instance, if the "
@@ -168,7 +170,7 @@ msgstr ""
 "aumentada temporalmente para evitar la lucha Z en la distancia. Entonces "
 "puede ser disminuido una vez que el jugador deja el avión."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:71
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:75
 msgid ""
 "Depending on the scene and viewing conditions, you may also be able to move "
 "the Z-fighting objects further apart without the difference being visible to "
@@ -178,11 +180,11 @@ msgstr ""
 "puede ser capaz de mover los objetos del combate Z más lejos sin que la "
 "diferencia sea visible para el jugador."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:76
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:80
 msgid "Transparency sorting"
 msgstr "Orden de transparencia"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:78
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:82
 msgid ""
 "In Godot, transparent materials are drawn after opaque materials. "
 "Transparent objects are sorted back to front before being drawn based on the "
@@ -203,7 +205,7 @@ msgstr ""
 "materiales aparezcan delante o detrás de otros materiales transparentes. "
 "Incluso entonces, esto puede no ser siempre suficiente."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:86
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:90
 msgid ""
 "Some rendering engines feature *order-independent transparency* techniques "
 "to alleviate this, but this is costly on the GPU. Godot currently doesn't "
@@ -214,7 +216,7 @@ msgstr ""
 "Godot actualmente no proporciona esta característica. Todavía hay varias "
 "maneras de evitar este problema:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:90
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:94
 msgid ""
 "Only make materials transparent if you actually need it. If a material only "
 "has a small transparent part, consider splitting it into a separate "
@@ -226,7 +228,7 @@ msgstr ""
 "de dividirlo en un material separado. Esto permitirá que la parte opaca "
 "proyecte sombras y también puede mejorar el rendimiento."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:95
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:99
 msgid ""
 "If you want a material to fade with distance, use the SpatialMaterial "
 "distance fade mode **Pixel Dither** or **Object Dither** instead of "
@@ -238,11 +240,11 @@ msgstr ""
 "**Object Dither** en lugar de **PixelAlpha**. Esto hará que el material sea "
 "opaco. De esta manera, también puede proyectar sombras."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:101
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:105
 msgid "Multi-sample antialiasing"
 msgstr "Multi-sample antialiasing"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:103
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:107
 msgid ""
 "Multi-sample antialiasing (MSAA) takes multiple *coverage* samples at the "
 "edges of polygons when rendering objects. It does not increase the number of "
@@ -253,13 +255,13 @@ msgstr ""
 "aumenta el número de muestras de *color* utilizadas para representar una "
 "escena. Esto es lo que significa en la práctica:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:107
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:111
 msgid ""
 "Edges of meshes will be smoothed out nicely (as well as supersampling would)."
 msgstr ""
 "Los bordes de las mallas se alisarán bien (como lo haría el supermuestreo)."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:108
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:112
 msgid ""
 "Transparent materials that use *alpha testing* (1-bit transparency) won't be "
 "smoothed out."
@@ -267,7 +269,7 @@ msgstr ""
 "Los materiales transparentes que usan *pruebas alfa* (transparencia de 1 "
 "bit) no se suavizarán."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:109
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:113
 msgid ""
 "Specular aliasing (\"sparkles\" that appear on reflective surfaces) won't be "
 "reduced."
@@ -275,7 +277,7 @@ msgstr ""
 "El aliasing molecular (\"destellos\" que aparecen en las superficies "
 "reflectantes) no se reducirá."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:111
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:115
 msgid ""
 "There are several ways to work around this limitation depending on your "
 "performance budget:"
@@ -283,7 +285,7 @@ msgstr ""
 "Existen varios modos resolver esta limitación dependiendo de cuánto margen "
 "tengas en el desempeño:"
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:113
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:117
 msgid ""
 "To make specular aliasing less noticeable, open the Project Settings and "
 "enable **Rendering > Quality > Screen Space Filters > Screen Space Roughness "
@@ -295,7 +297,7 @@ msgstr ""
 "Space Roughness Limiter**. Este filtro tiene un coste moderado en cuanto a "
 "rendimiento. Debería estar habilitado sólo si realmente lo necesitas."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:118
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:122
 msgid ""
 "Enable FXAA in addition to (or instead of) MSAA. Since FXAA is a screen-"
 "space antialiasing method, it will smooth out anything. As a downside, it "
@@ -307,7 +309,7 @@ msgstr ""
 "desventaja, también hará que la escena parezca más borrosa, especialmente "
 "con resoluciones por debajo de 1440p."
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:122
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:126
 msgid ""
 "Render the scene at a higher resolution, then display it in a "
 "ViewportTexture that matches the window size. Make sure to enable **Filter** "

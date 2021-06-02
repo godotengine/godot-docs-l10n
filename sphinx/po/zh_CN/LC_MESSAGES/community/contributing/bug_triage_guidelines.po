@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid ""
 "guidelines."
 msgstr ""
 "本页面描述了bug分类团队即bugsquad在处理问题和从Godot的 `GitHub <https://"
-"github.com/godotengine/godot>`_ 存储库上拉取请求时的典型工作流程。它一定会与"
-"bugsquad一起发展，所以不要犹豫对下面的指导方针提出修改。"
+"github.com/godotengine/godot>`_ 存储库上拉取请求时的典型工作流程.它一定会与"
+"bugsquad一起发展,所以不要犹豫对下面的指导方针提出修改."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:12
 msgid "Issues management"
@@ -39,7 +39,7 @@ msgstr "问题管理"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:14
 msgid "GitHub proposes various features to manage issues:"
-msgstr "GitHub提出了各种功能来管理问题："
+msgstr "GitHub提出了各种功能来管理问题:"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:16
 msgid "Set one or several labels from a predefined list"
@@ -67,19 +67,19 @@ msgid ""
 "it on the issue ticket and/or discussing the best way to resolve it with "
 "other developers."
 msgstr ""
-"由于GitHub上的Godot引擎组织目前的贡献者数量有限，我们暂时不会广泛使用受托者。"
-"欢迎所有贡献者讨论任何问题，如果在问题单上提及和/或讨论，是与其他开发人员解决"
-"此问题的最佳方式。"
+"由于GitHub上的Godot引擎组织目前的贡献者数量有限,我们暂时不会广泛使用受托者.欢"
+"迎所有贡献者讨论任何问题,如果在问题单上提及和/或讨论,是与其他开发人员解决此问"
+"题的最佳方式."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:28
 msgid "For the time being we do not use the project dashboard feature either."
-msgstr "目前，我们也不使用项目仪表板功能。"
+msgstr "目前,我们也不使用项目仪表板功能."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:30
 msgid ""
 "As far as possible, we try to assign labels (and milestones, when relevant) "
 "to both issues and pull requests."
-msgstr "我们尽可能尝试为问题和拉取请求分配标签(和相关的里程碑)。"
+msgstr "我们尽可能尝试为问题和拉取请求分配标签(和相关的里程碑)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:34
 msgid "Labels"
@@ -87,21 +87,21 @@ msgstr "标签"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:36
 msgid "The following labels are currently defined in the Godot repository:"
-msgstr "目前在Godot存储库中定义了以下标签："
+msgstr "目前在Godot存储库中定义了以下标签:"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:38
 msgid "**Categories:**"
-msgstr "**分类：**"
+msgstr "**分类:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:40
 msgid ""
 "*Archived*: either a duplicate of another issue, or invalid. Such an issue "
 "would also be closed."
-msgstr "*Archived*：是另一个问题的副本，或无效。这样的问题也将被关闭。"
+msgstr "*Archived*:是另一个问题的副本,或无效.这样的问题也将被关闭."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:42
 msgid "*Bug*: describes something that is not working properly."
-msgstr "*Bug*：描述无法正常工作的内容。"
+msgstr "*Bug*:描述无法正常工作的内容."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:43
 msgid ""
@@ -113,18 +113,17 @@ msgid ""
 "reproduced; if a developer looks at the issue one year later, the "
 "*Confirmed* label may not be relevant anymore."
 msgstr ""
-"*Confirmed*：已由至少一个其他贡献者而不是错误报告者(通常用于 *Bug* 报告)确"
-"认。该标签的目的是让开发人员知道当他们想要选择要解决的问题时仍然可以重现的问"
-"题。因此，在一个评论中添加评论：可以再现该问题的是什么平台、什么版本或Godot的"
-"提交是一个好的做法；如果开发人员在一年后查看该问题，则 *Confirmed* 标签可能不"
-"再相关。"
+"*Confirmed*:已由至少一个其他贡献者而不是错误报告者(通常用于 *Bug* 报告)确认."
+"该标签的目的是让开发人员知道当他们想要选择要解决的问题时仍然可以重现的问题.因"
+"此,在一个评论中添加评论:可以再现该问题的是什么平台、什么版本或Godot的提交是一"
+"个好的做法；如果开发人员在一年后查看该问题,则 *Confirmed* 标签可能不再相关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:51
 msgid ""
 "*Discussion*: the issue is not consensual and needs further discussion to "
 "define what exactly should be done to address the topic."
 msgstr ""
-"*Discussion*：这个问题不是共识，需要进一步讨论以定义解决该主题的确切方法。"
+"*Discussion*:这个问题不是共识,需要进一步讨论以定义解决该主题的确切方法."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:54
 msgid ""
@@ -133,19 +132,19 @@ msgid ""
 "documentation should be filed on the `godot-docs <https://github.com/"
 "godotengine/godot-docs>`_ repository."
 msgstr ""
-"*Documentation*：与文档相关的问题。主要是要求改进API文档。与ReadTheDocs文档相"
-"关的问题应该在 `godot-docs <https://github.com/godotengine/godot-docs>`_ 储存"
-"库上提交。"
+"*Documentation*:与文档相关的问题.主要是要求改进API文档.与ReadTheDocs文档相关"
+"的问题应该在 `godot-docs <https://github.com/godotengine/godot-docs>`_ 储存库"
+"上提交."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:58
 msgid ""
 "*Enhancement*: describes a proposed enhancement to an existing functionality."
-msgstr "*Enhancement*：描述对现有功能的建议增强。"
+msgstr "*Enhancement*:描述对现有功能的建议增强."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:60
 msgid ""
 "*Feature proposal*: describes a wish for a new feature to be implemented."
-msgstr "*Feature proposal*：描述了实现新功能的愿望。"
+msgstr "*Feature proposal*:描述了实现新功能的愿望."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:62
 msgid ""
@@ -153,13 +152,12 @@ msgid ""
 "it a great fit for junior contributors who need to become familiar with the "
 "code base."
 msgstr ""
-"*Junior job*：*假设* 是一个容易修复的问题，这使得它非常适合需要熟悉代码库的初"
-"级贡献者。"
+"*Junior job*:*假设* 是一个容易修复的问题,这使得它非常适合需要熟悉代码库的初级"
+"贡献者."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:65
-#, fuzzy
 msgid "*Needs rebase*: the issue need a Git rebase to be merged."
-msgstr "*Needs rebase*：该问题需要git重设基线来合并。"
+msgstr "*Needs rebase* :该问题需要Git rebase才能合并."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:66
 msgid ""
@@ -168,8 +166,8 @@ msgid ""
 "different hardware/software configurations or even that the steps to "
 "reproduce are not certain."
 msgstr ""
-"*Needs testing*：问题/拉取请求无法完全测试，因此需要进一步测试。这可能意味着"
-"需要在不同的硬件/软件配置上进行测试，或者甚至重现的步骤不确定。"
+"*Needs testing*:问题/拉取请求无法完全测试,因此需要进一步测试.这可能意味着需要"
+"在不同的硬件/软件配置上进行测试,或者甚至重现的步骤不确定."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:70
 msgid ""
@@ -177,18 +175,18 @@ msgid ""
 "especially welcome. Note that this **doesn't** mean you can't work on issues "
 "without these labels."
 msgstr ""
-"*PR welcome / hero wanted!*：特别欢迎对这些标签的问题的贡献。请注意，这 **并"
-"不** 意味着您无法处理没有这些标签的问题。"
+"*PR welcome / hero wanted!*:特别欢迎对这些标签的问题的贡献.请注意,这 **并不"
+"** 意味着您无法处理没有这些标签的问题."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:73
 msgid ""
 "*Tracker*: issue used to track other issues (like all issues related to the "
 "plugin system)."
-msgstr "*Tracker*：用于跟踪其他问题的问题(例如与插件系统相关的所有问题)。"
+msgstr "*Tracker*:用于跟踪其他问题的问题(例如与插件系统相关的所有问题)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:75
 msgid "*Usability*: issues that directly impact user usability."
-msgstr "*Usability*：直接影响用户可用性的问题。"
+msgstr "*Usability*:直接影响用户可用性的问题."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:77
 msgid ""
@@ -198,80 +196,79 @@ msgid ""
 "usability. Or *Feature proposal* and *Discussion* if it's a non-consensual "
 "feature request, or one that is not precise enough to be worked on."
 msgstr ""
-"这些类别用于问题的一般分类。它们可以在相关时以某种方式组合，例如， 如果这是一"
-"个提高可用性的问题，则可以同时将问题标记为 *Enhancement* 和 *Usability*。或者"
-"如果它是非自愿的功能请求，或者不够精确的功能请求，可以标记为 *Feature "
-"proposal* 和 *Discussion*。"
+"这些类别用于问题的一般分类.它们可以在相关时以某种方式组合,例如, 如果这是一个"
+"提高可用性的问题,则可以同时将问题标记为 *Enhancement* 和 *Usability*.或者如果"
+"它是非自愿的功能请求,或者不够精确的功能请求,可以标记为 *Feature proposal* 和 "
+"*Discussion*."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:83
 msgid "**Topics:**"
-msgstr "**话题：**"
+msgstr "**话题:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:85
 msgid "*Assetlib*: relates to issues with the asset library."
-msgstr "*Assetlib*：与在线资源库的问题有关。"
+msgstr "*Assetlib*:与在线资源库的问题有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid "*Audio*: relates to the audio features (low and high level)."
-msgstr "*Audio*：与音频功能(低级别和高级别)有关。"
+msgstr "*Audio*:与音频功能(低级别和高级别)有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:87
 msgid ""
 "*Buildsystem*: relates to building issues, either linked to the SCons "
 "buildsystem or to compiler peculiarities."
-msgstr "*Buildsystem*：与构建问题有关，可以链接到SCons构建系统或编译器特性。"
+msgstr "*Buildsystem*:与构建问题有关,可以链接到SCons构建系统或编译器特性."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:89
 msgid ""
 "*Core*: anything related to the core engine. It might be further split later "
 "on as it's a pretty big topic."
 msgstr ""
-"*Core*：与核心引擎有关的任何事物。稍后可能会进一步拆分，因为这是一个很大的话"
-"题。"
+"*Core*:与核心引擎有关的任何事物.稍后可能会进一步拆分,因为这是一个很大的话题."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:91
 msgid "*Drivers*: relates to issues with the drivers used by the engine."
-msgstr "*Drivers*：与引擎使用的驱动程序有关。"
+msgstr "*Drivers*:与引擎使用的驱动程序有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:92
 msgid "*Editor*: relates to issues in the editor (mainly UI)."
-msgstr "*Editor*：与编辑器中的问题(主要是UI)有关。"
+msgstr "*Editor*:与编辑器中的问题(主要是UI)有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:93
 msgid "*GDNative*: relates to the GDNative module."
-msgstr "*GDNative*：与GDNative模块有关。"
+msgstr "*GDNative*:与GDNative模块有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:94
 msgid "*GDScript*: relates to GDScript."
-msgstr "*GDScript*：与GDScript有关。"
+msgstr "*GDScript*:与GDScript有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid "*Mono*: relates to the C# / Mono bindings."
-msgstr "*Mono*：与C# / Mono绑定有关。"
+msgstr "*Mono*:与C# / Mono绑定有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Network*: relates to networking."
-msgstr "*Network*：与网络有关。"
+msgstr "*Network*:与网络有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:97
 msgid "*Physics*: relates to the physics engine (2D/3D)."
-msgstr "*Physics*：与物理引擎(2D/3D)有关。"
+msgstr "*Physics*:与物理引擎(2D/3D)有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:98
 msgid "*Plugin*: relates to problems encountered while writing plugins."
-msgstr "*Plugin*：与编写插件时遇到的问题有关。"
+msgstr "*Plugin*:与编写插件时遇到的问题有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:99
 msgid "*Porting*: relates to some specific platforms."
-msgstr "*Porting*：与某些特定平台有关。"
+msgstr "*Porting*:与某些特定平台有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:100
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
-msgstr "*Rendering*：与2D和3D渲染引擎相关。"
+msgstr "*Rendering*:与2D和3D渲染引擎相关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:101
 msgid "*VisualScript*: relates to issues with the visual scripting language."
-msgstr "*VisualScript*：与可视化脚本语言的问题有关。"
+msgstr "*VisualScript*:与可视化脚本语言的问题有关."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:103
 msgid ""
@@ -280,13 +277,12 @@ msgid ""
 "will be specialized contributors teams behind all topics, so they can focus "
 "on the issues labelled with their team's topic."
 msgstr ""
-"问题通常只对应一个主题，但看到符合两个主题的问题并不是不可想象的。一般的想法"
-"是，将有专门的贡献者团队支持所有主题，因此他们可以专注于标记为团队主题的问"
-"题。"
+"问题通常只对应一个主题,但看到符合两个主题的问题并不是不可想象的.一般的想法是,"
+"将有专门的贡献者团队支持所有主题,因此他们可以专注于标记为团队主题的问题."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:108
 msgid "**Platforms:**"
-msgstr "**平台：**"
+msgstr "**平台:**"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
@@ -299,16 +295,15 @@ msgid ""
 "assumption doesn't stand anymore (so if it's a bug on e.g. Android and Linux "
 "exclusively, select those two platforms)."
 msgstr ""
-"默认情况下，假定给定的问题适用于所有平台。如果使用其中一个平台标签，则它不是"
-"通用的，之前的假设不再适用(因此，如果它是例如Android和Linux上的错误，请选择这"
-"两个平台)。"
+"默认情况下,假定给定的问题适用于所有平台.如果使用其中一个平台标签,则它不是通用"
+"的,之前的假设不再适用(因此,如果它是例如Android和Linux上的错误,请选择这两个平"
+"台)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:118
 msgid "Milestones"
 msgstr "里程碑"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:120
-#, fuzzy
 msgid ""
 "`Milestones <https://github.com/godotengine/godot/milestones>`_ correspond "
 "to planned future versions of Godot for which there is an existing roadmap. "
@@ -319,11 +314,11 @@ msgid ""
 "critical bug that can't be accepted in any future stable release, or "
 "anything that Juan wants to work on right now. :)"
 msgstr ""
-"`里程碑 <https://github.com/godotengine/godot/milestones>`_ 对应计划的未来版"
-"本的Godot，其中存在一个现有的路线图。符合上述路线图的问题应在相应的里程碑下提"
-"出；如果它们与当前的路线图不符，则应从里程碑移除。根据经验，如果问题涉及里程"
-"碑中的新功能，将来的稳定版本中无法接受的严重错误或Juan想要现在正确解决的任何"
-"问题，则问题对应于该里程碑 :)"
+"`里程碑 <https://github.com/godotengine/godot/milestones>`_ 对应于已有路线图"
+"的Godot未来计划版本.符合上述路线图的问题应归入相应的里程碑下；如果它们不符合"
+"任何现有的路线图,则应将其放在没有里程碑的地方.根据经验,如果一个问题涉及到一个"
+"里程碑中的新功能,或者一个不能在未来稳定版本中被接受的关键错误,或者任何Juan现"
+"在想做的事情,那么它就对应于一个特定的里程碑.)"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:129
 msgid ""
@@ -331,5 +326,5 @@ msgid ""
 "if a fix is proposed for a bug that was not deemed urgent and thus without "
 "milestone, it would likely still be very welcome."
 msgstr ""
-"无论指定的里程碑如何，贡献者都可以自由选择问题；如果针对一个不被认为是紧急的"
-"错误提出修复，因此没有里程碑，那么它可能仍然非常受欢迎。"
+"无论指定的里程碑如何,贡献者都可以自由选择问题；如果针对一个不被认为是紧急的错"
+"误提出修复,因此没有里程碑,那么它可能仍然非常受欢迎."

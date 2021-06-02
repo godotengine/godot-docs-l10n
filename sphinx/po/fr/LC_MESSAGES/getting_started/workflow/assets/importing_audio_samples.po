@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,35 +22,31 @@ msgid "Importing audio samples"
 msgstr "Importer des échantillons audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Supported files"
-msgstr "Formats d'image pris en charge"
+msgstr "Fichiers pris en charge"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
-#, fuzzy
 msgid ""
 "Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
 "MP3."
 msgstr ""
-"Les données audio brutes en général sont lourdes et indésirables. Godot "
-"propose deux options principales pour importer vos données audio : WAV et "
-"OGG Vorbis."
+"Godot propose trois options pour importer vos données audio : WAV, Ogg "
+"Vorbis et MP3."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid "Each has different advantages."
 msgstr "Chacun de ces formats a des avantages différents."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:14
-#, fuzzy
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
 "lightweight on the CPU to play back (hundreds of simultaneous voices in this "
 "format are fine). The downside is that they take up a lot of disk space."
 msgstr ""
-"Les fichiers WAV utilisent des données brutes ou une compression légère, "
-"demandent peu de temps à l'unité centrale pour la lecture (des centaines de "
-"voix simultanées dans ce format sont acceptables), mais prennent beaucoup de "
-"place."
+"Les fichiers WAV utilisent des données brutes ou une compression légère (IMA-"
+"ADPCM). Ils sont légers à lire pour le CPU (des centaines de voix "
+"simultanées dans ce format conviennent). L'inconvénient est qu'ils prennent "
+"beaucoup d'espace disque."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:17
 msgid ""
@@ -70,6 +66,13 @@ msgid ""
 "and HTML5 projects where CPU resources are limited, especially when playing "
 "multiple compressed sounds at the same time (such as long ambient sounds)."
 msgstr ""
+"Les fichiers MP3 utilisent une meilleure compression que wav avec IMA-ADPCM, "
+"mais pire qu’Ogg Vorbis. Cela signifie qu’un fichier MP3 avec une qualité à "
+"peu près égale à Ogg Vorbis sera significativement plus grand. Sur le bon "
+"côté des choses, mp3 nécessite moins d’utilisation CPU pour jouer en arrière "
+"par rapport à Ogg Vorbis. Cela rend MP3 utile pour les projets mobiles et "
+"HTML5 où les ressources CPU sont limitées, en particulier lorsque vous jouez "
+"plusieurs sons compressés en même temps (tels que les sons ambiants longs)."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "Here is a comparative chart."
@@ -108,13 +111,13 @@ msgid "22 KB"
 msgstr "22 Ko"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
-#, fuzzy
 msgid "MP3 192 Kb/s, stereo"
-msgstr "Ogg Vorbis 128 Kb/s, stéréo"
+msgstr "MP3 192 Kb/s, stéréo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:39
+#, fuzzy
 msgid "24 KB"
-msgstr ""
+msgstr "24 KB"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:41
 msgid "Ogg Vorbis 128 Kb/s, stereo"

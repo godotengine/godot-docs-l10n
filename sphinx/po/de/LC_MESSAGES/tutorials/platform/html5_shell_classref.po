@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,9 +65,8 @@ msgid "Promise"
 msgstr "Promise"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
-#, fuzzy
 msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr "`Engine.load <#Engine.load>`__ **(** string basePath **)**"
+msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
@@ -119,12 +118,15 @@ msgstr ""
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 msgid ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "override **)**"
 msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 msgid ""
@@ -134,7 +136,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
-msgstr ""
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 #, fuzzy
@@ -147,12 +149,11 @@ msgstr "Argumente"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid "The initial config for this instance."
-msgstr ""
+msgstr "Die anfängliche Konfiguration für diese Instanz."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:54
-#, fuzzy
 msgid "**Static Methods**"
-msgstr "Statische Methoden"
+msgstr "**Statische Methoden**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:58
 msgid "Load the engine from the specified base path."
@@ -173,9 +174,8 @@ msgid "A Promise that resolves once the engine is loaded."
 msgstr "Versprechen, das nach dem Laden der Datei aufgelöst wird."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "Return type"
-msgstr "Rückgabe"
+msgstr "Rückgabetyp"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:70
 msgid "Unload the engine to free memory."
@@ -197,7 +197,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:78
-#, fuzzy
 msgid "The major WebGL version to check for."
 msgstr ""
 "Die zu prüfende WebGL-Hauptversion. Standardeinstellung ist ``1`` für *WebGL "
@@ -211,9 +210,8 @@ msgstr ""
 "ansonsten ``falsch``."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:86
-#, fuzzy
 msgid "**Instance Methods**"
-msgstr "Instanzmethoden"
+msgstr "**Instanzmethoden**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:90
 msgid ""
@@ -247,9 +245,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:109
-#, fuzzy
 msgid "The file to preload."
-msgstr "Das Endergebnis"
+msgstr "Die Datei, die vorab geladen werden soll."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
 #, fuzzy
@@ -345,14 +342,12 @@ msgid "The location where the file will be created."
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
-#, fuzzy
 msgid "The content of the file."
-msgstr "Der absolute Pfad zur Datei"
+msgstr "Der Inhalt der Datei."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:172
-#, fuzzy
 msgid "Request that the current instance quit."
-msgstr "Bezieht sich auf die aktuelle Klassen Instanz."
+msgstr "Anforderung, dass die aktuelle Instanz beendet wird."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:174
 msgid ""
@@ -361,7 +356,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:178
-#, fuzzy
 msgid "Engine configuration"
 msgstr "Konfiguration"
 
@@ -372,7 +366,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
 msgstr "Eigenschaften"
 
@@ -389,16 +382,16 @@ msgstr "``name``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:189
 msgid ":js:attr:`unloadAfterInit`"
-msgstr ""
+msgstr ":js:attr:`unloadAfterInit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:236
 msgid "HTMLCanvasElement"
-msgstr ""
+msgstr "HTMLCanvasElement"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 msgid ":js:attr:`canvas`"
-msgstr ""
+msgstr ":js:attr:`canvas`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:193
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:195
@@ -411,25 +404,24 @@ msgstr "Zeichenkette"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:193
 msgid ":js:attr:`executable`"
-msgstr ""
+msgstr ":js:attr:`executable`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:195
 msgid ":js:attr:`mainPack`"
-msgstr ""
+msgstr ":js:attr:`mainPack`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:197
 msgid ":js:attr:`locale`"
-msgstr ""
+msgstr ":js:attr:`locale`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:278
-#, fuzzy
 msgid "number"
-msgstr "Nummern"
+msgstr "number"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 msgid ":js:attr:`canvasResizePolicy`"
-msgstr ""
+msgstr ":js:attr:`canvasResizePolicy`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:290
@@ -439,7 +431,7 @@ msgstr "Zeichenkette"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 msgid ":js:attr:`args`"
-msgstr ""
+msgstr ":js:attr:`args`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
@@ -452,23 +444,23 @@ msgstr "Funktion"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
-msgstr ""
+msgstr ":js:attr:`onExecute`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
 msgid ":js:attr:`onExit`"
-msgstr ""
+msgstr ":js:attr:`onExit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 msgid ":js:attr:`onProgress`"
-msgstr ""
+msgstr ":js:attr:`onProgress`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 msgid ":js:attr:`onPrint`"
-msgstr ""
+msgstr ":js:attr:`onPrint`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
 msgid ":js:attr:`onPrintError`"
-msgstr ""
+msgstr ":js:attr:`onPrintError`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:216
 msgid ""
@@ -478,12 +470,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:218
 msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
-msgstr ""
+msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:220
-#, fuzzy
 msgid "**Property Descriptions**"
-msgstr "Beschreibungen der Instanzeigenschaften"
+msgstr "**Eigenschaftsbeschreibungen**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:224
 msgid ""
@@ -497,14 +488,12 @@ msgid "value"
 msgstr "Wert"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
-#, fuzzy
 msgid "``true``"
-msgstr "``value``"
+msgstr "``true``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:232
-#, fuzzy
 msgid "The HTML DOM Canvas object to use."
-msgstr "Das zu verwendende Canvas-Element."
+msgstr "Das zu verwendende HTML DOM Canvas-Objekt."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:234
 msgid ""
@@ -515,9 +504,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:238
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:254
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:265
-#, fuzzy
 msgid "``null``"
-msgstr "null"
+msgstr "``null``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:242
 msgid ""
@@ -527,7 +515,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:246
 msgid "``\"\"``"
-msgstr ""
+msgstr "``\"\"``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:250
 msgid ""
@@ -575,7 +563,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:280
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:284
 #, fuzzy
@@ -594,11 +582,12 @@ msgid ""
 "**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
 "the ``--main-pack`` argument."
 msgstr ""
+"**Beachte**: :js:meth:`startGame <Engine.prototype.startGame>` wird immer "
+"das Argument ``--main-pack`` hinzufügen."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:292
-#, fuzzy
 msgid "``[]``"
-msgstr "``int[]``"
+msgstr "``[]``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:296
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
@@ -612,11 +601,11 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:300
 msgid "The path that Godot's wants executed."
-msgstr ""
+msgstr "Der Pfad, den Godot ausführen möchte."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:303
 msgid "The arguments of the \"command\" to execute."
-msgstr ""
+msgstr "Die Argumente des auszuführenden \"Befehls\"."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:308
 msgid "A callback function for being notified when the Godot instance quits."
@@ -634,7 +623,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:317
 msgid "A callback function for displaying download progress."
-msgstr ""
+msgstr "Eine Rückruffunktion zur Anzeige des Download-Fortschritts."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:319
 msgid ""
@@ -680,7 +669,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:339
 msgid "By default, ``console.log()`` is used."
-msgstr ""
+msgstr "Standardmäßig wird ``console.log()`` verwendet."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:341
 msgid "A variadic number of arguments to be printed."
@@ -694,7 +683,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:348
 msgid "By default, ``console.error()`` is used."
-msgstr ""
+msgstr "Standardmäßig wird ``console.error()`` verwendet."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:350
 msgid "A variadic number of arguments to be printed as errors."

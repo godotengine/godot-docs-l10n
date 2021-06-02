@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "Експорт для універсальної платформи Windows"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,6 +27,9 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"Немає ніяких додаткових вимог для експортування пакета ``.appx``, який можна "
+"встановити як програму Windows, або надіслати до магазину Windows. Експорт "
+"пакетів UWP також працює з будь-якої платформи, а не лише з Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -34,66 +37,77 @@ msgid ""
 "trusted signature. Godot supports automatic signing of packages with "
 "external tools."
 msgstr ""
+"Однак, якщо ви хочете встановити та запустити програму, вам потрібно "
+"підписати її надійним підписом. Godot підтримує автоматичне підписання "
+"пакетів зовнішніми інструментами."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"Крім того, переконайтесь, що ім’я видавця, яке ви встановили під час "
+"експорту пакету, відповідає імені, яке використовується в сертифікаті."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Обмеження на Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"Як описано в `документації UWP <https://docs.microsoft.com/en-us/windows/uwp/"
+"xbox-apps/system-resource-allocation>`__:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "Подано як \"Додаток\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "доступна пам'ять 1GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "частка 2-4 ядер процесора"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "загальний доступ до потужності графічного процесора (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"Подано як \"Гру\" (через `Xbox Live Creators Program <https://www.xbox.com/"
+"en-US/developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "доступна пам'ять 5GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4 ексклюзивні ядра процесора та 2 загальних ядра процесора"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "ексклюзивний доступ до потужності графічного процесора (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"Перевищення цих обмежень пам’яті призведе до помилок розподілу, і програма "
+"вийде з ладу."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "Створення сертифіката підпису"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -102,6 +116,10 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"Для цього потрібні інструменти ``MakeCert.exe`` та ``Pvk2Pfx.exe``, що "
+"входять до складу Windows SDK. Якщо ви використовуєте Visual Studio, ви "
+"можете відкрити один із запитів розробника, оскільки він постачається з цими "
+"інструментами, і вони можуть бути розміщені на шляху."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -109,28 +127,37 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"Ви можете отримати більш детальну інструкцію з `документації Microsoft "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
+"aspx>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "Спочатку запустіть ``MakeCert``, щоб створити приватний ключ:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"Де ``publisherName`` збігається з Іменем видавця вашого пакету, а "
+"``expirationDate`` має формат ``mm/dd/yyyy``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"Далі створіть файл обміну персональною інформацією (.pfx), використовуючи "
+"``Pvk2Pfx.exe``::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"Якщо ви не вкажете пароль з аргументом ``/po``, то PFX матиме той самий "
+"пароль, що і приватний ключ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -138,11 +165,13 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"Вам також доведеться довіряти цьому сертифікату, щоб мати можливість "
+"встановити програму. Відкрийте командний рядок як адміністратор і запустіть "
+"таку команду:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
-#, fuzzy
 msgid "Setting up automatic signing"
-msgstr "Як розпочати гру"
+msgstr "Налаштування автоматичного підписання"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid ""
@@ -150,6 +179,9 @@ msgid ""
 "Export > Uwp. From there you need to click on the folder for ``Signtool``, "
 "and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
+"Щоб налаштувати автоматичне підписання під час експорту, потрібно зайти в "
+"**Параметри редактора> Експорт> Uwp**. знайти там папку для ``Signtool`` і "
+"перейти до файлу ``SignTool.exe`` на вашому комп’ютері."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
 msgid ""
@@ -158,39 +190,51 @@ msgid ""
 "next to ``Certificate`` and go to the certificate file. Then enter the "
 "pfxPassword in the password field."
 msgstr ""
+"Після встановлення цього режиму закрийте параметри редактора, перейдіть у "
+"меню **Проект> Експорт** та виберіть попередньо встановлену UWP. У розділі "
+"параметрів ``Signing`` натисніть на папку поруч з ``Certificate`` і "
+"перейдіть до файлу сертифіката. Потім введіть pfxPassword у поле для пароля."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
 msgid "Your project will now be automatically signed on export."
-msgstr ""
+msgstr "Тепер ваш проект буде автоматично підписаний під час експорту."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
 msgid ""
 "If you want to sign an exported app manually run ``SignTool.exe`` and use "
 "the following command."
 msgstr ""
+"Якщо ви хочете підписати експортовану програму вручну, запустіть ``SignTool."
+"exe`` та скористайтеся наступною командою."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
-msgstr ""
+msgstr "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:87
 msgid "Installing the package"
-msgstr ""
+msgstr "Встановлення пакета"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:89
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"Починаючи з оновлення Windows 10 Anniversary, ви можете встановлювати "
+"пакети, просто двічі клацнувши файл ``.appx`` у Провіднику Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr ""
+"Також їх можна встановити за допомогою командлета PowerShell ``Add-"
+"AppxPackage``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:94
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"Якщо ви хочете оновити вже встановлену програму, вам слід оновити номер "
+"версії нового пакету, або спочатку видалити попередній пакет."

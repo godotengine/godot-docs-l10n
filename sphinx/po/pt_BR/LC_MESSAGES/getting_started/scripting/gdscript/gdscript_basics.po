@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1926,7 +1926,8 @@ msgstr ""
 "chamá-las explicitamente quando estiver sobrecarregando-as."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Construtor de Classe"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
@@ -2143,7 +2144,6 @@ msgid "Memory management"
 msgstr "Gerenciamento de memória"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2156,10 +2156,10 @@ msgstr ""
 "Se uma classe herdar de: ref: `class_Reference`, as instâncias serão "
 "liberadas quando não estiverem mais em uso. Nenhum coletor de lixo existe, "
 "apenas a contagem de referência. Por padrão, todas as classes que não "
-"definem herança se estendem **Reference**. Se isto não for desejado, então "
-"uma classe deve herdar: ref: `class_Object` manualmente e deve chamar "
-"instance.free (). Para evitar ciclos de referência que não podem ser "
-"liberados, uma função ``weakref`` é fornecida para criar referências fracas."
+"definem herança estendem **Reference**. Se isto não for desejado, então uma "
+"classe deve herdar: ref: `class_Object` manualmente e deve chamar instance."
+"free(). Para evitar ciclos de referência que não podem ser liberados, uma "
+"função ``weakref`` é fornecida para criar referências fracas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""

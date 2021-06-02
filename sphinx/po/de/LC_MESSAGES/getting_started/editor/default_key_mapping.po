@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,8 +140,9 @@ msgid "Open 2D Editor"
 msgstr "2D Editor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-msgid ":kbd:`F1`"
-msgstr ":kbd:`F1`"
+#, fuzzy
+msgid ":kbd:`Ctrl + F1`"
+msgstr ":kbd:`Ctrl + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
@@ -156,8 +157,9 @@ msgid "Open 3D Editor"
 msgstr "3D Editor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-msgid ":kbd:`F2`"
-msgstr ":kbd:`F2`"
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Ctrl + F2`"
+msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
@@ -172,10 +174,9 @@ msgid "Open Script Editor"
 msgstr "Skripteditor öffnen"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
-#: ../../docs/getting_started/editor/default_key_mapping.rst:229
-#: ../../docs/getting_started/editor/default_key_mapping.rst:302
-msgid ":kbd:`F3`"
-msgstr ":kbd:`F3`"
+#, fuzzy
+msgid ":kbd:`Ctrl + F3`"
+msgstr ":kbd:`Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
@@ -1443,6 +1444,11 @@ msgid "Find Next"
 msgstr "Finde Nächstes"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid ":kbd:`F3`"
+msgstr ":kbd:`F3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Cmd + G`"
 msgstr ":kbd:`Cmd + G`"
@@ -2219,7 +2225,7 @@ msgstr "``editor/clear_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:378
 msgid "Debugger"
-msgstr "Debugger"
+msgstr "Testhilfsprogramm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "Step Into"
@@ -2446,10 +2452,6 @@ msgstr "``scene_tree/add_child_node``"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
 msgstr "Stapelweise Umbenennung"
-
-#: ../../docs/getting_started/editor/default_key_mapping.rst:442
-msgid ":kbd:`Ctrl + F2`"
-msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Cmd + F2`"

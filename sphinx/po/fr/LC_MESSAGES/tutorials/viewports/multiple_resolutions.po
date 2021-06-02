@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -467,11 +467,27 @@ msgstr ""
 "horizontal (si l'écran est plus large que la taille de base) ou dans le sens "
 "vertical (si l'écran est plus haut que la taille d'origine)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:231
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:232
+msgid ""
+"To support both portrait and landscape mode with a similar automatically "
+"determined scale factor, set your project's base resolution to be a *square* "
+"(1:1 aspect ratio) instead of a rectangle. For instance, if you wish to "
+"design for 1280×720 as the base resolution but wish to support both portrait "
+"and landscape mode, use 720×720 as the project's base window size in the "
+"Project Settings."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:239
+msgid ""
+"To allow the user to choose their preferred screen orientation at run-time, "
+"remember to set **Display > Window > Handheld > Orientation** to ``sensor``."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:243
 msgid "Stretch Shrink"
 msgstr "Stretch Shrink"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:233
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:245
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
 "what the **Stretch** options above already provide. The default value of 1 "
@@ -482,7 +498,7 @@ msgstr ""
 "fournissent déjà. La valeur par défaut de 1 signifie qu'il n'y a pas de mise "
 "à l'échelle."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:237
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:249
 msgid ""
 "If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
 "**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
@@ -492,7 +508,7 @@ msgstr ""
 "Mode** sur **Disabled**, chaque unité de votre scène correspondra à 4×4 "
 "pixels à l'écran."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:241
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:253
 msgid ""
 "If **Stretch Mode** is set to something other than **Disabled**, the size of "
 "the root viewport is scaled down by the **Shrink** factor, and pixels in the "
@@ -506,11 +522,11 @@ msgstr ""
 "jeux 2D, mais peut être utilisé pour augmenter les performances des jeux 3D "
 "en les rendant à une résolution plus faible."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:248
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:260
 msgid "From scripts"
 msgstr "Depuis les scripts"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:250
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:262
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` method (see :ref:`SceneTree.set_screen_stretch() "
@@ -520,11 +536,11 @@ msgstr ""
 "`get_tree().set_screen_stretch()`` (voir :ref:`SceneTree."
 "set_screen_stretch() <class_SceneTree_method_set_screen_stretch>`)."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:255
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:267
 msgid "Reducing aliasing on downsampling"
 msgstr "Réduction de l'aliasing lors du sous-échantillonnage"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:257
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:269
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -539,7 +555,7 @@ msgstr ""
 "Ceci peut être fait en appelant la méthode ci-dessous avant que les données "
 "du jeu ne soient chargées :"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:265
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:277
 msgid ""
 "Alternatively, you can also enable mipmaps on all your 2D textures. However, "
 "enabling mipmaps will increase memory usage which may be problematic on low-"
@@ -549,11 +565,11 @@ msgstr ""
 "Cependant, l'activation des mipmaps augmentera l'utilisation de la mémoire, "
 "ce qui peut être problématique sur les appareils mobiles bas de gamme."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:270
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:282
 msgid "Handling aspect ratios"
 msgstr "Manipulation des rapports d'aspect"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:272
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:284
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -566,11 +582,11 @@ msgstr ""
 "être fait en utilisant :ref:`anchors <doc_size_and_anchors>` et/ou :ref:"
 "`containers <doc_gui_containers>`."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:278
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:290
 msgid "Field of view scaling"
 msgstr "Mise à l'échelle du champ de vision"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:280
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:292
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -583,7 +599,7 @@ msgstr ""
 "en mode paysage, car les écrans larges utilisent automatiquement un champ de "
 "vision plus large."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:285
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:297
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
@@ -596,12 +612,12 @@ msgstr ""
 "16:9 (par exemple 19:9) utiliseront un champ de vision *plus grand*, ce qui "
 "est plus logique ici."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:291
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:303
 msgid "Scaling 2D and 3D elements differently using Viewports"
 msgstr ""
 "Mettre à l'échelle différemment des éléments 2D et 3D à l'aide de Viewports"
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:293
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:305
 msgid ""
 "Using multiple Viewport nodes, you can have different scales for various "
 "elements. For instance, you can use this to render the 3D world at a low "
@@ -615,7 +631,7 @@ msgstr ""
 "en 2D à la résolution native. Cela peut améliorer considérablement les "
 "performances tout en conservant la netteté du HUD et des autres éléments 2D."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:298
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:310
 msgid ""
 "This is done by using the root Viewport node only for 2D elements, then "
 "creating a Viewport node to display the 3D world and displaying it using a "
@@ -632,7 +648,7 @@ msgstr ""
 "le filtrage linéaire. Dans de nombreux cas, cela permet d'améliorer l'aspect "
 "des viewports 3D mis à l'échelle."
 
-#: ../../docs/tutorials/viewports/multiple_resolutions.rst:305
+#: ../../docs/tutorials/viewports/multiple_resolutions.rst:317
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:4
-msgid "GI Probes"
-msgstr "GI探针"
+#, fuzzy
+msgid "Using GIProbe"
+msgstr "全局光照探测器"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:7
 msgid "Introduction"
@@ -31,8 +32,8 @@ msgid ""
 "`doc_baked_lightmaps` can be used as an alternative when using the GLES2 "
 "renderer."
 msgstr ""
-"此功能仅在使用 GLES3 后端时可用。：ref：'doc_baked_lightmap'可用作使用GLES2渲"
-"染器时的替代方法。"
+"此功能仅在使用 GLES3 后端时可用.:ref:'doc_baked_lightmap'可用作使用GLES2渲染"
+"器时的替代方法."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:13
 msgid ""
@@ -41,9 +42,9 @@ msgid ""
 "Probes are similar to Reflection Probes, but they use a different and more "
 "complex technique to produce indirect light and reflections."
 msgstr ""
-"就像 :ref:`doc_reflection_probes`，并且如 :ref:`doc_spatial_material` 中所"
-"述，对象可以显示反射光或漫反射光。 GI探针类似于反射探针，但它们使用不同且更复"
-"杂的技术来产生间接光和反射。"
+"就像 :ref:`doc_reflection_probes`,并且如 :ref:`doc_spatial_material` 中所述,"
+"对象可以显示反射光或漫反射光. GI探针类似于反射探针,但它们使用不同且更复杂的技"
+"术来产生间接光和反射."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:18
 msgid ""
@@ -53,9 +54,9 @@ msgid ""
 "time. Dynamic objects that move within one of these probes will also receive "
 "indirect lighting from the scene automatically."
 msgstr ""
-"GI探针的强度是实时，高质量，间接光。 虽然场景需要对将要使用的静态对象进行快速"
-"预烘焙，但可以添加，更改或删除灯光，并且这将实时更新。 在其中一个探针内移动的"
-"动态对象也将自动从场景接收间接光照。"
+"GI探针的强度是实时,高质量,间接光. 虽然场景需要对将要使用的静态对象进行快速预"
+"烘焙,但可以添加,更改或删除灯光,并且这将实时更新. 在其中一个探针内移动的动态对"
+"象也将自动从场景接收间接光照."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:24
 msgid ""
@@ -63,8 +64,8 @@ msgid ""
 "more limited way), so it is possible to provide full real-time lighting for "
 "a stage without having to resort to lightmaps."
 msgstr ""
-"就像 \"ReflectionProbe[反射探针]\"一样，\"GIProbe[GI探针]\"也可以进行混合（方"
-"式比较有限），可以为舞台提供完整的实时照明，而不必依赖于光照贴图。"
+"就像 \"ReflectionProbe[反射探针]\"一样,\"GIProbe[GI探针]\"也可以进行混合(方式"
+"比较有限),可以为舞台提供完整的实时照明,而不必依赖于光照贴图."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:28
 msgid "The main downsides of ``GIProbe`` are:"
@@ -74,15 +75,14 @@ msgstr "``GIProbe[GI探针]`` 的主要缺点是:"
 msgid ""
 "A small amount of light leaking can occur if the level is not carefully "
 "designed. This must be artist-tweaked."
-msgstr "如果没有仔细设计水平，可能会发生少量漏光。 这必须是艺术家调整的。"
+msgstr "如果没有仔细设计水平,可能会发生少量漏光. 这必须是艺术家调整的."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:31
 msgid ""
 "Performance requirements are higher than for lightmaps, so it may not run "
 "properly in low-end integrated GPUs (may need to reduce resolution)."
 msgstr ""
-"性能要求高于光照贴图，因此在低端集成GPU中可能无法正常运行(可能需要降低分辨"
-"率)。"
+"性能要求高于光照贴图,因此在低端集成GPU中可能无法正常运行(可能需要降低分辨率)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:32
 msgid ""
@@ -91,16 +91,15 @@ msgid ""
 "size or shape works for them. Mixing them with Screen Space Reflection also "
 "works well."
 msgstr ""
-"反射是体素化，所以它们看起来不像 ``ReflectionProbe[反射探针]`` 那样清晰。然"
-"而，作为交换，它们经过体积化，所以任何房间的大小或形状都可以适用。将它们与屏"
-"幕空间反射混合使用时也很有效。"
+"反射是体素化,所以它们看起来不像 ``ReflectionProbe[反射探针]`` 那样清晰.然而,"
+"作为交换,它们经过体积化,所以任何房间的大小或形状都可以适用.将它们与屏幕空间反"
+"射混合使用时也很有效."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:33
 msgid ""
 "They consume considerably more video memory than Reflection Probes, so they "
 "must be used with care in the right subdivision sizes."
-msgstr ""
-"它们比反射探头消耗的视频内存大得多，所以在使用时必须注意正确的细分尺寸。"
+msgstr "它们比反射探头消耗的视频内存大得多,所以在使用时必须注意正确的细分尺寸."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:36
 msgid "Setting up"
@@ -111,8 +110,8 @@ msgid ""
 "Just like a ``ReflectionProbe``, simply set up the ``GIProbe`` by wrapping "
 "it around the geometry that will be affected."
 msgstr ""
-"就像ReflectionProbe[反射探针]一样，只需将GIProbe[GI探针]包裹在受影响的几何体"
-"周围即可。"
+"就像ReflectionProbe[反射探针]一样,只需将GIProbe[GI探针]包裹在受影响的几何体周"
+"围即可."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:43
 msgid ""
@@ -120,15 +119,15 @@ msgid ""
 "important in order for ``GIProbe`` to recognize objects, otherwise they will "
 "be ignored:"
 msgstr ""
-"之后，确认启用几何体将被烘焙，这对 ``GIProbe[GI探针]`` 识别对象很重要，否则会"
-"被忽略:"
+"之后,确认启用几何体将被烘焙,这对 ``GIProbe[GI探针]`` 识别对象很重要,否则会被"
+"忽略:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:48
 msgid ""
 "Once the geometry is set up, push the Bake button that appears on the 3D "
 "editor toolbar to begin the pre-baking process:"
 msgstr ""
-"设置好几何体后，按下3D编辑器工具栏上出现的 \"烘焙\" 按钮，开始预烘焙过程:"
+"设置好几何体后,按下3D编辑器工具栏上出现的 \"烘焙\" 按钮,开始预烘焙过程:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:55
 msgid ""
@@ -136,6 +135,8 @@ msgid ""
 "sided walls). For interior levels, enclose your level geometry in a "
 "sufficiently large box and bridge the loops to close the mesh."
 msgstr ""
+"网格应该有足够厚的壁,以避免漏光(避免单面壁).对于室内关卡,将你的关卡几何体围在"
+"一个足够大的盒子里,并桥接环路来封闭网格."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:60
 msgid "Adding lights"
@@ -146,26 +147,26 @@ msgid ""
 "Unless there are materials with emission, ``GIProbe`` does nothing by "
 "default. Lights need to be added to the scene to have an effect."
 msgstr ""
-"除非有发光的材质，否则 ``GIProbe[GI探针]`` 默认什么都不做。灯光需要添加到场景"
-"中才有效果。"
+"除非有发光的材质,否则 ``GIProbe[GI探针]`` 默认什么都不做.灯光需要添加到场景中"
+"才有效果."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:65
 msgid ""
 "The effect of indirect light can be viewed quickly (it is recommended you "
 "turn off all ambient/sky lighting to tweak this, though, as shown below):"
 msgstr ""
-"可以快速查看间接光的效果(建议您关闭所有环境/天空照明以调整它，但如下所示):"
+"可以快速查看间接光的效果(建议您关闭所有环境/天空照明以调整它,但如下所示):"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:70
 msgid ""
 "In some situations, though, indirect light may be too weak. Lights have an "
 "indirect multiplier to tweak this:"
-msgstr "但在某些情况下，间接光线可能太弱。 灯具有间接乘数来调整:"
+msgstr "但在某些情况下,间接光线可能太弱. 灯具有间接乘数来调整:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:75
 msgid ""
 "And, as ``GIProbe`` lighting updates in real-time, this effect is immediate:"
-msgstr "而且，由于 ``GIProbe[GI探针]`` 灯光将实时更新，效果立竿见影:"
+msgstr "而且,由于 ``GIProbe[GI探针]`` 灯光将实时更新,效果立竿见影:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:80
 msgid "Reflections"
@@ -178,8 +179,8 @@ msgid ""
 "Reflection Probes or Screen Space Reflections, but fully reflect "
 "volumetrically."
 msgstr ""
-"对于粗糙度很低的金属材质，可以观察到体素反射。请注意，这些细节远不如反射探针"
-"或屏幕空间反射，但却能充分反映体积。"
+"对于粗糙度很低的金属材质,可以观察到体素反射.请注意,这些细节远不如反射探针或屏"
+"幕空间反射,但却能充分反映体积."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:88
 msgid ""
@@ -187,8 +188,8 @@ msgid ""
 "Reflections, as a full 3-stage fallback-chain. This allows to have precise "
 "reflections where needed:"
 msgstr ""
-"``GIProbe``\\ s 可以很容易地与反射探针和屏幕空间反射混合使用，成为一个完整的"
-"三阶段回调链。这样就可以在需要的地方进行精确的反射:"
+"``GIProbe``\\ s 可以很容易地与反射探针和屏幕空间反射混合使用,成为一个完整的三"
+"阶段回调链.这样就可以在需要的地方进行精确的反射:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:94
 msgid "Interior vs exterior"
@@ -199,21 +200,21 @@ msgid ""
 "GI Probes normally allow mixing with lighting from the sky. This can be "
 "disabled when turning on the *Interior* setting."
 msgstr ""
-"GI探头通常允许与来自天空的照明混合。 打开* Interior *设置时可以禁用此功能。"
+"GI探头通常允许与来自天空的照明混合. 打开* Interior *设置时可以禁用此功能."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:101
 msgid ""
 "The difference becomes clear in the image below, where light from the sky "
 "goes from spreading inside to being ignored."
-msgstr "在下面的图像中，差异变得清晰，来自天空的光从内部传播到被忽略。"
+msgstr "在下面的图像中,差异变得清晰,来自天空的光从内部传播到被忽略."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid ""
 "As complex buildings may mix interiors with exteriors, combining GIProbes "
 "for both parts works well."
 msgstr ""
-"由于复杂的建筑物可能将室内和室外混合在一起，因此将两个部件的GIProbes结合起来"
-"非常有效。"
+"由于复杂的建筑物可能将室内和室外混合在一起,因此将两个部件的GIProbes结合起来非"
+"常有效."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:110
 msgid "Tweaking"
@@ -228,60 +229,58 @@ msgid ""
 "**Subdiv** Subdivision used for the probe. The default (128) is generally "
 "good for small- to medium-sized areas. Bigger subdivisions use more memory."
 msgstr ""
-"**Subdiv** 探针使用的细分。默认值(128)通常适用于中小型区域，更大的细分将占用"
-"更多内存。"
+"**Subdiv** 探针使用的细分.默认值(128)通常适用于中小型区域,更大的细分将占用更"
+"多内存."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:117
 msgid "**Extents** Size of the probe. Can be tweaked from the gizmo."
-msgstr "**范围**探头大小。 可以从Gizmo调整。"
+msgstr "**范围** 探头大小. 可以从Gizmo调整."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:118
 msgid ""
 "**Dynamic Range** Maximum light energy the probe can absorb. Higher values "
 "allow brighter light, but with less color detail."
-msgstr ""
-"**动态范围**探头可以吸收的最大光能。 值越高，光线越亮，但颜色细节越少。"
+msgstr "**动态范围** 探头可以吸收的最大光能. 值越高,光线越亮,但颜色细节越少."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:119
 msgid ""
 "**Energy** Multiplier for all the probe. Can be used to make the indirect "
 "light brighter (although it's better to tweak this from the light itself)."
-msgstr ""
-"**能量**所有探头的倍增器。 可用于使间接光更亮(尽管最好从灯本身调整它)。"
+msgstr "**能量** 所有探头的倍增器. 可用于使间接光更亮(尽管最好从灯本身调整它)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:120
 msgid "**Propagation** How much light propagates through the probe internally."
-msgstr "**传播**内部有多少光通过探头传播。"
+msgstr "**传播** 内部有多少光通过探头传播."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:121
 msgid ""
 "**Bias** Value used to avoid self-occlusion when doing voxel cone tracing, "
 "should generally be above 1.0 (1==voxel size)."
 msgstr ""
-"**偏差**用于避免在进行体素锥体追踪时自我遮挡的值，通常应高于1.0(1 ==体素大"
-"小)。"
+"**偏差** 用于避免在进行体素锥体追踪时自我遮挡的值,通常应高于1.0(1 ==体素大"
+"小)."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:122
 msgid ""
 "**Normal Bias** Alternative type of bias useful for some scenes. Experiment "
 "with this one if regular bias does not work."
 msgstr ""
-"**普通偏差**对某些场景有用的替代偏见类型。 如果常规偏差不起作用，请尝试使用此"
-"方法。"
+"**普通偏差** 对某些场景有用的替代偏见类型. 如果常规偏差不起作用,请尝试使用此"
+"方法."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:123
 msgid "**Interior** Allows mixing with lighting from the sky."
-msgstr "**内部**允许与天空的灯光混合。"
+msgstr "**内部** 允许与天空的灯光混合."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:124
 msgid "**Compress** Currently broken. Do not use."
-msgstr "**压缩** 目前已损坏。请勿使用。"
+msgstr "**压缩** 目前已损坏.请勿使用."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:125
 msgid ""
 "**Data** Contains the light baked data after baking. If you are saving the "
 "data it should be saved as a .res file."
-msgstr "**数据**包含烘焙后的光照数据。如果您要存储，应将其保存为.res文件。"
+msgstr "**数据** 包含烘焙后的光照数据.如果您要存储,应将其保存为.res文件."
 
 #: ../../docs/tutorials/3d/gi_probes.rst:128
 msgid "Quality"
@@ -292,5 +291,4 @@ msgid ""
 "``GIProbe``\\ s are quite demanding. It is possible to use lower quality "
 "voxel cone tracing in exchange for more performance."
 msgstr ""
-"``GIProbe``\\ s 的要求相当高。可以使用较低质量的体素锥体追踪来换取更高的性"
-"能。"
+"``GIProbe``\\ s 的要求相当高.可以使用较低质量的体素锥体追踪来换取更高的性能."

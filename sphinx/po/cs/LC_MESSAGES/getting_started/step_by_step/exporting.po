@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "jej na \"balíček\", který může spustit kdokoli."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -50,7 +49,6 @@ msgstr ""
 "Nejprve však musíme provést některé změny ve způsobu fungování hry."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
@@ -63,7 +61,6 @@ msgid "Preparing the project"
 msgstr "Příprava projektu"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -78,7 +75,6 @@ msgstr ""
 "ovládání hry na typ přesuň kliknutím."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default, Godot emulates mouse input from touch input. That means that if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -90,8 +86,7 @@ msgstr ""
 "znamená, že pokud něco reaguje na události myši, bude to také reagovat na "
 "dotek. Godot může také emulovat dotykový vstup z klikání myší, což bude "
 "potřeba, abychom mohli pokračovat v hraní naší hry na počítači i po přepnutí "
-"na dotykový vstup. V části „Nastavení projektu“ pod položkami *Input "
-"Devices* and *Pointing* nastavte *Emulate Touch From Mouse* na „On“."
+"na dotykový vstup."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
@@ -104,7 +99,7 @@ msgstr ""
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "Chceme také zajistit, aby hra odpovídala původnímu měřítku na obrazovkách "
@@ -113,7 +108,6 @@ msgstr ""
 "*Aspect* na \"keep\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
-#, fuzzy
 msgid ""
 "Since we are already in the **Window** settings, we should also set under "
 "**Handheld** the **Orientation** to ``portrait``."
@@ -142,7 +136,6 @@ msgid "Setting a main scene"
 msgstr "Nastavení hlavní scény"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. For this *Dodge the "
 "Creeps* example, in **Project -> Project Settings -> Application -> Run**, "
@@ -158,7 +151,6 @@ msgid "Export templates"
 msgstr "Šablony pro export"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
@@ -179,7 +171,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
@@ -198,7 +189,6 @@ msgid "Export presets"
 msgstr "Exportovat přednastavení"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
@@ -207,7 +197,6 @@ msgstr ""
 "Export*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
-#, fuzzy
 msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
@@ -216,7 +205,6 @@ msgstr ""
 "platformy. Můžete vytvořit libovolný počet předvoleb s různým nastavením."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
@@ -227,22 +215,20 @@ msgstr ""
 "projekt nelze spustit samostatně."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
 msgstr ""
 "Druhé tlačítko „Exportovat projekt“ vytvoří kompletní spustitelnou verzi "
-"vaší hry, například `.apk` pro Android nebo `.exe` pro Windows.."
+"vaší hry, například ``.apk`` pro Android nebo ``.exe`` pro Windows.."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
-#, fuzzy
 msgid ""
 "In the **Resources** and **Features** tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"Na kartách Zdroje a Funkce můžete upravit způsob exportu hry pro každou "
-"platformu. Toto nastavení prozatím neměňte."
+"Na kartách **Zdroje** a **Funkce** můžete upravit způsob exportu hry pro "
+"každou platformu. Toto nastavení prozatím neměňte."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:297
 msgid "Exporting by platform"
@@ -261,7 +247,6 @@ msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:305
-#, fuzzy
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click **Add...** to create the preset(s) "
@@ -269,17 +254,15 @@ msgid ""
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
 "Export PC platforem funguje napříč třemi podporovanými operačními systémy. "
-"Otevřete exportní okno a klikněte na \"Přidat ..\" pro vytvoření vámi "
-"požadovaných předvoleb. Poté klikněte na „Exportovat projekt“ a vyberte "
+"Otevřete exportní okno a klikněte na **Přidat ..** pro vytvoření vámi "
+"požadovaných předvoleb. Poté klikněte na **Exportovat projekt** a vyberte "
 "název a cílovou složku. Vyberte umístění *mimo* složky projektu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
-#, fuzzy
 msgid "Click **Save** and the engine will build the export files."
-msgstr "Klikněte na \"Uložit\" a engine vytvoří exportní soubory."
+msgstr "Klikněte na **Uložit** a engine vytvoří exportní soubory."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:314
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export from a macOS computer, you'll end up "
 "with a ``.dmg`` file, while using Linux or Windows produces a ``.zip``. In "
@@ -287,12 +270,11 @@ msgid ""
 "double-click and run."
 msgstr ""
 "Při exportu pro MacOS, pokud exportujete na počítači s MacOSem, výsledkem je "
-"soubor `.dmg`, zatímco při použití Linuxu nebo Windows vytvoříte `.zip`. V "
-"obou případech komprimovaný soubor obsahuje macOS `.app`, které můžete "
+"soubor ``.dmg``, zatímco při použití Linuxu nebo Windows vytvoříte ``.zip``. "
+"V obou případech komprimovaný soubor obsahuje macOS ``.app``, které můžete "
 "poklepáním spustit."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
-#, fuzzy
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See :ref:"
@@ -331,25 +313,23 @@ msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:339
-#, fuzzy
 msgid ""
 "Open JDK (**version 8 is required**, more recent versions won't work): "
 "https://adoptopenjdk.net/index.html"
 msgstr ""
-"Otevřete JDK (je vyžadována verze 8, novější verze nebudou fungovat): "
+"Otevřete JDK (je **vyžadována verze 8**, novější verze nebudou fungovat): "
 "https://adoptopenjdk.net/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
-#, fuzzy
 msgid ""
 "When you run Android Studio for the first time, click on **Configure -> SDK "
 "Manager** and install **Android SDK Platform Tools**. This installs the "
 "``adb`` command-line tool that Godot uses to communicate with your device."
 msgstr ""
-"Při prvním spuštění aplikace Android Studio klikněte na *Konfigurovat -> "
-"Správce SDK* a nainstalujte „Nástroje platformy Android SDK“. Nainstaluje se "
-"nástroj příkazového řádku `adb`, který Godot používá ke komunikaci s vaším "
-"zařízením."
+"Při prvním spuštění aplikace Android Studio klikněte na **Konfigurovat -> "
+"Správce SDK** a nainstalujte **Nástroje platformy Android SDK**. Nainstaluje "
+"se nástroj příkazového řádku ``adb``, který Godot používá ke komunikaci s "
+"vaším zařízením."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:345
 msgid ""
@@ -371,7 +351,6 @@ msgstr ""
 "a umístění úložiště klíčů, které jste právě vytvořili."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on **Project -> Export** and add a preset "
 "for Android (see above). Select the newly added Android preset. Under "
@@ -379,18 +358,18 @@ msgid ""
 "your game is in landscape mode (i.e. the window width in pixels is greater "
 "than the window height), leave this on **Landscape**."
 msgstr ""
-"Nyní jste připraveni exportovat. Klikněte na *Projekt -> Exportovat* a "
+"Nyní jste připraveni exportovat. Klikněte na **Projekt -> Exportovat** a "
 "přidejte předvolbu pro Android (viz výše). Vyberte předvolby Android a v "
-"části *Možnosti* přejděte na *Obrazovku* a nastavte *Orientace* na \"Portrait"
-"\"."
+"části **Možnosti** přejděte na **Obrazovku** a nastavte **Orientace** na "
+"**Portrait**. Pokud je vaše hra v režimu na šířku (tj. šířka okna v pixelech "
+"je větší než výška okna), ponechte tuto volbu na hodnotě **Landscape**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:364
-#, fuzzy
 msgid ""
 "Click the **Export Project** button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"Klikněte na tlačítko „Exportovat projekt“ a Godot vytvoří APK, který si "
+"Klikněte na tlačítko **Exportovat projekt** a Godot vytvoří APK, který si "
 "můžete stáhnout do svého zařízení. Chcete-li to provést v příkazovém řádku, "
 "použijte následující:"
 
@@ -403,15 +382,14 @@ msgstr ""
 "naleznete v dokumentaci k zařízení."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:374
-#, fuzzy
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a **One-click Deploy** button to appear in Godot's playtest button "
 "area:"
 msgstr ""
 "Pokud to váš systém podporuje, připojení Android kompatibilního zařízením "
-"způsobí, že se v oblasti spouštěcích prvků Godota objeví tlačítko „One-Click "
-"Deploy“:"
+"způsobí, že se v oblasti spouštěcích prvků Godota objeví tlačítko **One-"
+"Click Deploy** :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:379
 msgid ""
@@ -426,25 +404,23 @@ msgid "iOS"
 msgstr "Ios"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:386
-#, fuzzy
 msgid ""
 "To build your game for iOS, you must have a computer running macOS with "
 "Xcode installed."
 msgstr ""
 "Aby bylo možné sestavit vaši hru pro iOS, musíte mít počítač se systémem "
-"MacOS s nainstalovaným Xcode."
+"macOS s nainstalovaným Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
-#, fuzzy
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the **App Store Team Id**, which you "
 "can find by logging in to your Apple developer account and looking in the "
 "**Membership** section."
 msgstr ""
-"Aby se projekt úspěšně exportoval, musíte nejprve doplnit určitá nastavení. "
-"Je to „App Store Team Id“, které najdete po přihlášení k účtu vývojáře "
-"Applev sekci „Členství“."
+"Aby se projekt úspěšně exportoval, *musíte* nejprve doplnit určitá "
+"nastavení. Je to **App Store Team Id**, které najdete po přihlášení k účtu "
+"vývojáře Applev sekci **Členství** ."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:393
 msgid "You must also provide icons and splash screen images as shown below:"
@@ -452,9 +428,8 @@ msgstr ""
 "Musíte také poskytnout ikony a obrázky úvodní obrazovky, jak je uvedeno níže:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
-#, fuzzy
 msgid "Click **Export Project** and select a destination folder."
-msgstr "Klikněte na „Exportovat projekt“ a vyberte cílovou složku."
+msgstr "Klikněte na **Exportovat projekt** a vyberte cílovou složku."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
 msgid ""
@@ -465,7 +440,6 @@ msgstr ""
 "následující složky a soubory:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:404
-#, fuzzy
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. The "
 "Xcode build procedure is beyond the scope of this tutorial. See https://help."
@@ -480,12 +454,11 @@ msgid "HTML5 (web)"
 msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:412
-#, fuzzy
 msgid ""
 "Click **Export Project** on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
-"Klikněte na \"Exportovat projekt\" v přednastavení HTML5. Není třeba měnit "
+"Klikněte na **Exportovat projekt** v přednastavení HTML5. Není třeba měnit "
 "žádné výchozí nastavení."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:415
@@ -495,29 +468,27 @@ msgid ""
 msgstr "Po dokončení exportu budete mít složku obsahující následující soubory:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:420
-#, fuzzy
 msgid ""
 "Viewing the ``.html`` file in your browser lets you play the game. However, "
 "you can't open the file directly. Instead, it needs to be served by a web "
 "server. If you don't have one set up on your computer, you can search online "
 "to find suggestions for your specific OS."
 msgstr ""
-"Otevření souboru `.html` v prohlížeči vám umožní hrát hru. Soubor však nelze "
-"otevřít přímo, musí být doručen webovým serverem. Pokud nemáte v počítači "
-"žádný nainstalován, najděte na webu nějaké řešení pro váš operační systém."
+"Otevření souboru ``.html`` v prohlížeči vám umožní hrát hru. Soubor však "
+"nelze otevřít přímo, musí být doručen webovým serverem. Pokud nemáte v "
+"počítači žádný nainstalován, najděte na webu nějaké řešení pro váš operační "
+"systém."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:425
-#, fuzzy
 msgid ""
 "Point your browser at the URL where you've placed the HTML file. You may "
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
-"Nasměrujte prohlížeč na adresu URL, kam jste umístili soubor html. Možná "
+"Nasměrujte prohlížeč na adresu URL, kam jste umístili soubor HTML. Možná "
 "budete muset chvíli počkat, než se hra načte, a vy uvidíte úvodní obrazovku."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:430
-#, fuzzy
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by disabling **Export With Debug** in the final file dialog "
@@ -527,7 +498,6 @@ msgstr ""
 "projektu ji můžete zakázat pomocí nastavení položky „Exportovat s laděním“."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:438
-#, fuzzy
 msgid ""
 "While WebAssembly is supported in all major browsers, it is still an "
 "emerging technology and you may find some things that don't work. Make sure "
@@ -535,8 +505,8 @@ msgid ""
 "bugs you find on the `Godot GitHub repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
-"Přestože je WASM podporována ve všech hlavních prohlížečích, stále se jedná "
-"o technologii ve stavu zrodu a proto můžete najít některé věci, které nemusí "
-"nefungovat. Ujistěte se, že jste aktualizovali svůj prohlížeč na nejnovější "
-"verzi, a nahláste všechny chyby, které najdete, zde: `Godot GitHub <https://"
-"github.com/godotengine/godot/issues>`_."
+"Přestože je WebAssembly podporována ve všech hlavních prohlížečích, stále se "
+"jedná o technologii ve stavu zrodu a proto můžete najít některé věci, které "
+"nemusí nefungovat. Ujistěte se, že jste aktualizovali svůj prohlížeč na "
+"nejnovější verzi, a nahláste všechny chyby, které najdete, zde: `Godot "
+"GitHub <https://github.com/godotengine/godot/issues>`_."

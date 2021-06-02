@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,10 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:9
-#, fuzzy
 msgid ""
 "This tutorial aims to serve as a guide on how you can submit your own assets "
 "to the Godot Asset Library and share them with the Godot community."
-msgstr "本教程旨在指导您如何向Godot资源馆提交自己的资源并与Godot社区共享它们。"
+msgstr "本教程旨在指导你如何向Godot资产库提交自己的资产并与Godot社区分享."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:12
 msgid ""
@@ -38,8 +37,8 @@ msgid ""
 "to submit assets to the AssetLib, you need to have a registered account, and "
 "be logged in."
 msgstr ""
-"正如 :ref:`doc_using_assetlib` 文档中提到的，为了能够向AssetLib提交资源，您需"
-"要有一个注册的帐户，并且需要登录。"
+"正如 :ref:`doc_using_assetlib` 文档中提到的,为了能够向AssetLib提交资源,您需要"
+"有一个注册的帐户,并且需要登录."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:17
 msgid "Submission guidelines"
@@ -49,7 +48,7 @@ msgstr "提交指南"
 msgid ""
 "Before submitting your asset, please ensure it follows all of the "
 "requirements, and also consider following the recommendations."
-msgstr "在提交您的资源之前，请确保您的资源符合所有要求，并考虑遵循规范建议。"
+msgstr "在提交您的资源之前,请确保您的资源符合所有要求,并考虑遵循规范建议."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:23
 msgid "Requirements"
@@ -61,16 +60,16 @@ msgid ""
 "accepted. However, in order for your asset to be accepted, there are a few "
 "requirements your asset needs to meet to be approved."
 msgstr ""
-"一般来说，人们提交给资源库的大部分资源都会被接受。然而，为了使您的资源被接"
-"受，资源需要满足一些要求才能被批准。"
+"一般来说,人们提交给资源库的大部分资源都会被接受.然而,为了使您的资源被接受,资"
+"源需要满足一些要求才能被批准."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:29
 msgid ""
 "The asset must work. If the asset doesn't run or otherwise doesn't work in "
 "the specified Godot version, then it will be rejected."
 msgstr ""
-"该资产必须能运行，如果该资源在指定的Godot版本中无法运行或无法工作，那么它将被"
-"拒绝。"
+"该资产必须能运行,如果该资源在指定的Godot版本中无法运行或无法工作,那么它将被拒"
+"绝."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:32
 msgid ""
@@ -78,8 +77,8 @@ msgid ""
 "redundant data out of the repository. `Here's a template. <https://github."
 "com/github/gitignore/blob/master/Godot.gitignore>`_"
 msgstr ""
-"资源必须有一个适合的**.gitignore**文件。重要的一点，不要把多余的数据放在仓库"
-"里。`这里有一个模板。<https://github.com/github/gitignore/blob/master/Godot."
+"资源必须有一个适合的**.gitignore**文件.重要的一点,不要把多余的数据放在仓库里."
+"`这里有一个模板.<https://github.com/github/gitignore/blob/master/Godot."
 "gitignore>`_"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:36
@@ -88,8 +87,8 @@ msgid ""
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
-"没有子模块，或者所以子模块必须是非必要的。GitHub不会在下载的ZIP文件中包含子模"
-"块，所以如果资源需要子模块内容，你的资源将无法使用。"
+"没有子模块,或者所以子模块必须是非必要的.GitHub不会在下载的ZIP文件中包含子模"
+"块,所以如果资源需要子模块内容,你的资源将无法使用."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:40
 msgid ""
@@ -99,30 +98,29 @@ msgid ""
 "license text itself and a copyright statement that includes the year(s) and "
 "copyright holder."
 msgstr ""
-"许可证必须正确。资源库中列出的许可证必须与仓库中的许可证一致。仓库必须有一个"
-"许可证文件，叫做 \"LICENSE \"或 \"LICENSE.md\"。这个文件必须包含许可证文本本"
-"身和版权声明，包括年份和版权持有人。"
+"许可证必须正确.资源库中列出的许可证必须与仓库中的许可证一致.仓库必须有一个许"
+"可证文件,叫做 \"LICENSE \"或 \"LICENSE.md\".这个文件必须包含许可证文本本身和"
+"版权声明,包括年份和版权持有人."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:46
 msgid ""
 "Use proper English for the name and description of your asset. This includes "
 "using correct capitalization, and using full sentences in the description."
 msgstr ""
-"使用正确的英语来描述资源的名称和说明，这包括使用正确的大写字母，并在描述中使"
-"用完整的句子。"
+"使用正确的英语来描述资源的名称和说明,这包括使用正确的大写字母,并在描述中使用"
+"完整的句子."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:50
 msgid ""
 "The icon link must be a direct link. For icons hosted on GitHub, the link "
 "must start with \"raw.githubusercontent.com\", not \"github.com\"."
 msgstr ""
-"图标链接必须是直接链接。对于GitHub上的图标，链接必须以 \"raw."
-"githubusercontent.com \"开头，而不是 \"github.com\"。"
+"图标链接必须是直接链接.对于GitHub上的图标,链接必须以 \"raw.githubusercontent."
+"com \"开头,而不是 \"github.com\"."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:54
-#, fuzzy
 msgid "Recommendations"
-msgstr "重命名动画"
+msgstr "建议"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:56
 msgid ""
@@ -130,8 +128,8 @@ msgid ""
 "follow these recommendations, you can help make the asset library a better "
 "place for all users."
 msgstr ""
-"这些事情并不是你的资源被批准的必要条件，但如果你遵循这些建议，你可以帮助使资"
-"源库成为所有用户体验更好的地方。"
+"这些事情并不是你的资源被批准的必要条件,但如果你遵循这些建议,你可以帮助使资源"
+"库成为所有用户体验更好的地方."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:60
 msgid ""
@@ -139,8 +137,8 @@ msgid ""
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
-"修复或禁止所有脚本警告，警告的作用是帮助识别代码中的问题，但使用你的资源的人"
-"不需要看到它们。"
+"修复或禁止所有脚本警告,警告的作用是帮助识别代码中的问题,但使用你的资源的人不"
+"需要看到它们."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:64
 msgid ""
@@ -149,9 +147,9 @@ msgid ""
 "wish to contribute to your asset. See: the :ref:`doc_gdscript_styleguide` or "
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
-"让代码符合官方的风格指南。拥有一致的风格有助于其他人阅读代码，也有助于其他人"
-"为资源做出贡献。参见： :ref:`doc_gdscript_styleguide` 或 :ref:"
-"`doc_c_sharp_styleguide`。"
+"让代码符合官方的风格指南.拥有一致的风格有助于其他人阅读代码,也有助于其他人为"
+"资源做出贡献.参见: :ref:`doc_gdscript_styleguide` 或 :ref:"
+"`doc_c_sharp_styleguide`."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
 msgid ""
@@ -161,23 +159,23 @@ msgid ""
 "command prompt in the project folder and run ``type nul > .gdignore`` to "
 "create a file whose name starts with a period."
 msgstr ""
-"如果存储库里有截图，把它们放在子文件夹里，并在同一文件夹里添加一个**."
-"gdignore**文件（注意：是**gd**，不是**git**），这样可以防止Godot导入截图。在"
-"Windows上，在项目文件夹中打开命令提示符，运行``type nul > .gdignore``来创建一"
-"个名字以句号开头的文件。"
+"如果存储库里有截图,把它们放在子文件夹里,并在同一文件夹里添加一个 **."
+"gdignore** 文件(注意:是 **gd** ,不是 **git** ),这样可以防止Godot导入截图.在"
+"Windows上,在项目文件夹中打开命令提示符,运行 ``type nul > .gdignore`` 来创建一"
+"个名字以句号开头的文件."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:75
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "example files in the asset."
-msgstr "如果你的资源是一个用于处理其他文件的库，请考虑在资源中加入示例文件。"
+msgstr "如果你的资源是一个用于处理其他文件的库,请考虑在资源中加入示例文件."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:78
 msgid ""
 "The icon should be a square, its aspect ratio should be 1:1. It should also "
 "ideally have a minimum resolution of 64x64 pixels."
 msgstr ""
-"图标应为正方形，其长宽比应为1：1。 理想情况下，它的最小分辨率应为64x64像素。"
+"图标应为正方形,其长宽比应为1:1. 理想情况下,它的最小分辨率应为64x64像素."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:81
 msgid ""
@@ -185,8 +183,8 @@ msgid ""
 "asset's source code on GitHub. Other services may not work reliably, and a "
 "lack of familiarity can be a barrier to contributors."
 msgstr ""
-"虽然资源库允许的不仅是GitHub，但请考虑将资源的源代码托管在GitHub上，其他服务"
-"可能不可靠，而且缺乏熟悉度可能会成为贡献者的障碍。"
+"虽然资源库允许的不仅是GitHub,但请考虑将资源的源代码托管在GitHub上,其他服务可"
+"能不可靠,而且缺乏熟悉度可能会成为贡献者的障碍."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:86
 msgid "Submitting"
@@ -196,7 +194,7 @@ msgstr "提交"
 msgid ""
 "Once you are logged in, you will be able to head over to the \"Submit Assets"
 "\" page of the AssetLib, which will look like this:"
-msgstr "一旦您登录，您将能够转到AssetLib的``提交资源``页面，该页面如下所示:"
+msgstr "一旦您登录,您将能够转到AssetLib的``提交资源``页面,该页面如下所示:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
 msgid "|image0|"
@@ -208,8 +206,8 @@ msgid ""
 "field is described in terms of what you should put in. We will nonetheless "
 "go over what is required in the submission form here as well."
 msgstr ""
-"虽然它可能看起来很多(并且向下滚动时会显示更多)，每个字段都是根据您应该放入的"
-"内容进行描述的。但是，我们仍坚持在这里将提交表单中所需的内容详细阐述一遍。"
+"虽然它可能看起来很多(并且向下滚动时会显示更多),每个字段都是根据您应该放入的内"
+"容进行描述的.但是,我们仍坚持在这里将提交表单中所需的内容详细阐述一遍."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:98
 msgid "**Asset Name**:"
@@ -219,7 +217,7 @@ msgstr "**资源的名称**:"
 msgid ""
 "The name of your asset. Should be a unique, descriptive title of what your "
 "asset is."
-msgstr "您的资源名称。 应该是您资源的特有描述性标题。"
+msgstr "您的资源名称. 应该是您资源的特有描述性标题."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:104
 msgid "**Category**:"
@@ -233,16 +231,15 @@ msgid ""
 "viewing the AssetLib from the Project Manager, while assets of the Addon "
 "type will only be visible from inside a project."
 msgstr ""
-"您的资源所属的类别，并将显示在搜索结果中。 该类别分为 **插件** 和 **项目"
-"** 。 在编辑器中，项目类型(模板，演示，项目)的资源将显示在项目管理器的"
-"AssetLib中，而插件类型的资源仅显示在项目内部中。"
+"您的资源所属的类别,并将显示在搜索结果中. 该类别分为 **插件** 和 **项目** . 在"
+"编辑器中,项目类型(模板,演示,项目)的资源将显示在项目管理器的AssetLib中,而插件"
+"类型的资源仅显示在项目内部中."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:110
 msgid "**Godot version**:"
 msgstr "**Godot 版本**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:107
-#, fuzzy
 msgid ""
 "The version of the engine that the asset works with. Currently, it's not "
 "possible to have a single asset entry contain downloads for multiple engine "
@@ -251,9 +248,9 @@ msgid ""
 "when dealing with major versions of the engine, such as Godot 2.x and Godot "
 "3.x."
 msgstr ""
-"资源使用的引擎版本。 目前，单个资源条目不可能包含多个引擎版本的下载，因此您可"
-"能需要多次重新提交资源，并为其支持的每个Godot版本添加一个条目。 这在处理引擎"
-"的主要版本时尤其重要，例如Godot 2.x和Godot 3.x."
+"该资产适用的引擎版本.目前,不可能让一个资产条目包含多个引擎版本的下载,所以你可"
+"能需要多次提交资产,为其支持的每个Godot版本添加一个条目.在处理主要的引擎版本"
+"时,这一点尤其重要,如Godot 2.x和Godot 3.x."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:117
 msgid "**Version**:"
@@ -267,26 +264,25 @@ msgid ""
 "be clear and consistent. Note that there is also an internal version number, "
 "incremented every time the asset download URL is changed or updated."
 msgstr ""
-"资源的版本号。 虽然您可以自由选择和使用您喜欢的任何版本控制方案，但如果您希望"
-"资源的版本控制方案清晰且一致，您可能需要查看诸如 `SemVer <https://semver."
-"org>`_ 之类的内容。 请注意，系统内还有一个内部版本号，每次更改或更新资源下载"
-"地址时都会增加。"
+"资源的版本号. 虽然您可以自由选择和使用您喜欢的任何版本控制方案,但如果您希望资"
+"源的版本控制方案清晰且一致,您可能需要查看诸如 `SemVer <https://semver.org>`_ "
+"之类的内容. 请注意,系统内还有一个内部版本号,每次更改或更新资源下载地址时都会"
+"增加."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:122
 msgid "**Repository host**:"
 msgstr "**存储库主机**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:120
-#, fuzzy
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
 "point to repositories hosted on third-party Git providers, such as GitHub, "
 "GitLab or Bitbucket. This is where you choose which provider your asset "
 "uses, so the site can compute the final download link."
 msgstr ""
-"上传到AssetLib的资源不直接托管在资源馆上。 相反，他们指向第三方Git提供商(如"
-"GitHub，GitLab或Bitbucket)上的托管存储库。 您可以在此处选择资源使用的提供商，"
-"以便网站可以计算最终下载链接。"
+"上传到AssetLib的资产并不直接托管在它上面.而是,它们指向托管在第三方Git提供商,"
+"如GitHub、GitLab或Bitbucket上的仓库.在这里你可以选择你的资产使用哪个提供商,这"
+"样网站就可以计算出最终的下载链接."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:125
 msgid "**Repository URL**:"
@@ -298,8 +294,8 @@ msgid ""
 "of provider, but it should look similar to `https://github.com/<user>/"
 "<project>`."
 msgstr ""
-"资源文件/网页的地址。 这将根据您选择的提供商而有所不同，但它的结构类似于 "
-"`https://github.com/<user>/<project>`。"
+"资源文件/网页的地址. 这将根据您选择的提供商而有所不同,但它的结构类似于 "
+"`https://github.com/<user>/<project>`."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:130
 msgid "**Issues URL**:"
@@ -312,24 +308,22 @@ msgid ""
 "github.com/<user>/<project>/issues`. You may leave this field empty if you "
 "use your provider's issue tracker, and it's part of the same repository."
 msgstr ""
-"资源问题跟踪器的地址。 同样，这将不同于存储库主机，但结构类似于 `https://"
-"github.com/<user>/<project>/issues`。 如果您使用提供商的问题跟踪器，则可以将"
-"此字段留空，因为它是资源存储库的一部分。"
+"资源问题跟踪器的地址. 同样,这将不同于存储库主机,但结构类似于 `https://github."
+"com/<user>/<project>/issues`. 如果您使用提供商的问题跟踪器,则可以将此字段留"
+"空,因为它是资源存储库的一部分."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:134
-#, fuzzy
 msgid "**Download Commit**:"
-msgstr "**下载提交/标记**:"
+msgstr "**下载提交**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:133
-#, fuzzy
 msgid ""
 "The commit of the asset. For example, "
 "`b1d3172f89b86e52465a74f63a74ac84c491d3e1`. The site computes the actual "
 "download URL from this."
 msgstr ""
-"资源的提交或标记。 例如， `b1d3172f89b86e52465a74f63a74ac84c491d3e1` 或 "
-"`v1.0` 。 资源馆网站根据此计算出实际下载地址。"
+"该资产的提交.例如, `b1d3172f89b86e52465a74f63a74ac84c491d3e1` .网站以此计算出"
+"实际的下载URL."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:138
 msgid "**Icon URL**:"
@@ -341,8 +335,8 @@ msgid ""
 "AssetLib search results and on the asset's page). Should be an image in "
 "either the PNG or JPG format."
 msgstr ""
-"资源图标的地址(将在AssetLib搜索结果和资源页面中用作缩略图)。 应该是PNG或JPG格"
-"式的图像。"
+"资源图标的地址(将在AssetLib搜索结果和资源页面中用作缩略图). 应该是PNG或JPG格"
+"式的图像."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:143
 msgid "**License**:"
@@ -355,9 +349,9 @@ msgid ""
 "MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://"
 "opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""
-"您分发资源的许可证。 该列表包括各种免费和开源软件许可证，例如GPL(v2和v3)，"
-"MIT，BSD和Boost软件许可证。 您可以访问 `OpenSource.org <https://opensource."
-"org>`_ 获取每个列出的许可证的详细说明。"
+"您分发资源的许可证. 该列表包括各种免费和开源软件许可证,例如GPL(v2和v3),MIT,"
+"BSD和Boost软件许可证. 您可以访问 `OpenSource.org <https://opensource.org>`_ "
+"获取每个列出的许可证的详细说明."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:149
 msgid "**Description**:"
@@ -370,8 +364,8 @@ msgid ""
 "formatting with Markdown will be supported, but currently, your only option "
 "is plain text."
 msgstr ""
-"最后，您可以使用Description字段来查看资源，其功能和行为，更改日志等文本概"
-"述。 将来，将支持使用Markdown格式，但目前只支持纯文本。"
+"最后,您可以使用Description字段来查看资源,其功能和行为,更改日志等文本概述. 将"
+"来,将支持使用Markdown格式,但目前只支持纯文本."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:151
 msgid ""
@@ -379,8 +373,8 @@ msgid ""
 "shown at the bottom of the asset page. Use the \"Enable\" checkbox on each "
 "of the preview submission boxes to enable them."
 msgstr ""
-"您还可以包含最多三个视频和/或图像预览，这些预览将显示在资源页面的底部。 请使"
-"用每个预览提交框上的``启用``复选框从而启用它们。"
+"您还可以包含最多三个视频和/或图像预览,这些预览将显示在资源页面的底部. 请使用"
+"每个预览提交框上的``启用``复选框从而启用它们."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:155
 msgid "**Type**:"
@@ -388,7 +382,7 @@ msgstr "**类型**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:156
 msgid "Either an image, or a video."
-msgstr "图像或视频。"
+msgstr "图像或视频."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:157
 msgid "**Image/YouTube URL**:"
@@ -396,24 +390,22 @@ msgstr "**图片/ YouTube的网址**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:158
 msgid "Either a link to the image, or to a video, hosted on YouTube."
-msgstr "YouTube上托管的图片或视频链接。"
+msgstr "YouTube上托管的图片或视频链接."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:162
 msgid "**Thumbnail URL**:"
 msgstr "**缩略图地址**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:160
-#, fuzzy
 msgid ""
 "A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
-"图像的地址，将用作预览的缩略图。 此选项最终将被删除，相反缩略图将会被自动计算"
-"出。"
+"一个图片的URL,它将被用作预览的缩略图.这个选项最终将被删除,而缩略图将被自动计"
+"算出来."
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:164
-#, fuzzy
 msgid ""
 "Once you are done, hit Submit. Your asset will be entered into the pending "
 "queue, which you can visit on the AssetLib `here <https://godotengine.org/"
@@ -426,9 +418,9 @@ msgid ""
 "reviewers on IRC (the ``#godotengine-atelier`` channel on Freenode), or the "
 "official Discord server."
 msgstr ""
-"完成后，点击提交。 您的资源将被输入到待处理队列中，您可以在AssetLib上访问 `此"
-"处 <https://godotengine.org/asset-library/asset/edit?&asset=-1>`_ 。 审批流程"
-"是手动的，可能需要几天的时间才能接受(或拒绝)您的插件，所以请耐心等待！ 审核您"
-"的资源时会通知您。 如果它被拒绝，您将被告知为什么会这样，并且您将能够通过适当"
-"的更改再次提交。 您可以通过向IRC(Freenode上的 #godotengine-atelier 频道)或官"
-"方Discord服务器的版主/ assetlib审稿人发送消息来加快审批流程。"
+"完成后,点击提交.你的资产将进入待定队列,你可以在AssetLib `here <https://"
+"godotengine.org/asset-library/asset/edit?&asset=-1>`_ 上访问.审批流程是手动"
+"的,可能需要几天的时间来接受(或拒绝)你的附加组件,所以请耐心等待,当你的资产被审"
+"查时,你会被告知.如果它被拒绝了,你会被告知为什么会这样,并且你将能够在做了适当"
+"的修改后再次提交它.你可以在IRC(Freenode上的 ``#godotengine-atelier`` 频道)或"
+"官方Discord服务器上给版主/assetlib审查员发消息,从而加快审批流程."

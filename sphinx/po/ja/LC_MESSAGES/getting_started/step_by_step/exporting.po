@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "させることのできる「パッケージ」にすることができます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -46,16 +45,15 @@ msgid ""
 "way the game works."
 msgstr ""
 "エクスポートの方法はプラットホームごとに異なります。このチュートリアルでは"
-"「這うものをよけろ」をいろいろなプラットフォーム用にエクスポートする方法を学"
-"びます。最初にゲームの仕組みを少し変える必要があります。"
+"「クリープをよけろ」をいろいろなプラットフォームにエクスポートする方法を学び"
+"ます。まず最初に、ゲームの動作を少し変える必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"自分でまだ「這うものをよけろ」を作成していない場合は、このチュートリアルを続"
+"自分でまだ *クリープをよけろ* を作成していない場合は、このチュートリアルを続"
 "ける前に :ref:`doc_your_first_game` をお読みください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
@@ -63,7 +61,6 @@ msgid "Preparing the project"
 msgstr "プロジェクトの準備"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -71,13 +68,12 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
-"「這うものをよけろ」ではプレイヤーキャラクターをキーボードでコントロールしま"
-"した。これはPCなら良いのですが、スマートフォンやタブレットではタッチスクリー"
-"ンの入力に対応する必要があります。クリックイベントをタッチイベントと同じに扱"
-"うことでゲームをクリックして移動するようにできます。"
+"「クリープをよけろ」ではプレイヤーキャラクターをキーボードでコントロールしま"
+"した。これはPCなら良いのですが、スマートフォンやタブレットでは、タッチスク"
+"リーンの入力に対応する必要があります。クリックイベントならタッチイベントと同"
+"じように扱うことができるので、クリックして移動するようにゲームを変更します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default, Godot emulates mouse input from touch input. That means that if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -86,39 +82,39 @@ msgid ""
 "input."
 msgstr ""
 "デフォルトでは、Godotはタッチ入力からマウス入力をエミュレートします。つまり、"
-"何かがマウスイベントで発生するようにコーディングされている場合、タッチもそれ"
-"をトリガーします。 Godotは、マウスクリックからタッチ入力をエミュレートするこ"
-"ともできますが、タッチ入力に切り替えた後でも、コンピューターでゲームをプレイ"
-"し続けることができる必要があります。 [プロジェクト設定]で *Input Devices* の "
-"*Pointing* 内にある、\\ *Emulate Touch From Mouse* を[オン]に設定します。"
+"何かがマウスイベントで発生するようにコーディングされている場合、タッチしたと"
+"きもトリガーされます。 Godotは、マウスクリックからタッチ入力をエミュレートす"
+"ることもできますが、タッチ入力に切り替えた後でも、コンピューターでゲームをプ"
+"レイし続けることができる必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"**プロジェクト → プロジェクト設定** で、 **Input Devices → Pointing** 内にあ"
+"る、 **Emulate Touch From Mouse** を有効にします。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 #, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "また、ゲームが異なるサイズの画面上で一貫してスケーリングされるようにするた"
-"め、プロジェクト設定で *Display* に移動し、\\ *Window* をクリックします。\\ "
-"*Stretch* オプションで、\\ *Mode* を\"2d\"に、\\ *Aspect* を\"keep\"に設定し"
-"ます。"
+"め、プロジェクト設定で **Display** に移動し、\\ **Window** をクリックしま"
+"す。\\ **Stretch** オプションで、\\ **Mode** を ``2d`` に、\\ **Aspect** を "
+"``keep`` に設定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
-#, fuzzy
 msgid ""
 "Since we are already in the **Window** settings, we should also set under "
 "**Handheld** the **Orientation** to ``portrait``."
 msgstr ""
-"すでに *Window* の設定になっているので、続いて *Handheld* 内の *Orientation* "
-"を\"portrait\"に設定する必要があります。"
+"すでに **Window** の設定になっているので、続いて **Handheld** 内の "
+"**Orientation** を ``portrait`` に設定する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:50
 msgid ""
@@ -143,34 +139,32 @@ msgid "Setting a main scene"
 msgstr "メイン シーンの設定"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. For this *Dodge the "
 "Creeps* example, in **Project -> Project Settings -> Application -> Run**, "
 "set **Main Scene** to ``Main.tscn`` by clicking the folder icon and "
 "selecting it."
 msgstr ""
-"メインシーンは、ゲームが開始されるシーンです。\\ *プロジェクト -> プロジェク"
-"ト設定 -> Application -> Run* で、フォルダアイコンをクリックして選択し、\\ "
-"*Main Scene* を\"Main.tscn\"に設定します。"
+"メインシーンは、ゲームが開始されるシーンです。この「クリープをよけろ」の場"
+"合、 **プロジェクト -> プロジェクト設定 -> Application -> Run** で、フォルダ"
+"アイコンをクリックして選択し、 **Main Scene** を ``Main.tscn`` に設定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Export templates"
 msgstr "テンプレートのエクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform. You can also "
 "download them in Godot by clicking on **Editor -> Manage Export Templates**:"
 msgstr ""
-"エクスポートするには、http://godotengine.org/download から\\ *export "
-"templates*\\ をダウンロードする必要があります。これらのテンプレートは、各プ"
-"ラットフォーム用にエディタがプリコンパイルされていない最適化されたバージョン"
-"のエンジンです。\\ *Editor-> Manage Export Templates*\\ をクリックして、Godot"
-"でダウンロードすることもできます。"
+"エクスポートするには、https://godotengine.org/download から *エクスポートテン"
+"プレート* をダウンロードする必要があります。これらのテンプレートは、エディタ"
+"を取り除いた最適化版のエンジンで、各プラットフォーム用にプリコンパイルされて"
+"います。 **エディタ → エクスポートテンプレートの管理** をクリックして、Godot"
+"内でダウンロードすることもできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -179,73 +173,74 @@ msgid ""
 "Therefore, you don't need to download them using the **Manage Export "
 "Templates** dialog."
 msgstr ""
+"Godot を `Steam <https://store.steampowered.com/app/404790/Godot_Engine/>`__ "
+"からダウンロードした場合、エクスポートテンプレートはすでに含まれています。そ"
+"のため、 **エクスポートテンプレートの管理** ダイアログを使ってダウンロードす"
+"る必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"表示されるウィンドウで、「ダウンロード」をクリックして、ご使用のGodotのバー"
-"ジョンに一致するテンプレートバージョンを取得できます。"
+"表示されるウィンドウ内で **ダウンロード** をクリックして、使用中のGodotのバー"
+"ジョンに一致するテンプレート版を取得できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
 "Export templates are bound to a specific Godot version. If you upgrade "
 "Godot, you must download templates that match the new version."
 msgstr ""
+"エクスポートテンプレートは、特定のGodotのバージョンに拘束されます。Godotを"
+"アップグレードした場合は、新しいバージョンに合ったテンプレートをダウンロード"
+"する必要があります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:277
 msgid "Export presets"
 msgstr "プリセットのエクスポート"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
 msgstr ""
-"次に、\\ *プロジェクト -> エクスポート* の順にクリックして、エクスポート設定"
-"を構成できます。"
+"次に、 **プロジェクト → エクスポート** の順にクリックして、エクスポート設定を"
+"構成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
-#, fuzzy
 msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
-"「追加...」をクリックしてプラットフォームを選択し、新しいエクスポートプリセッ"
-"トを作成します。 さまざまな設定で好きなだけプリセットを作成できます。"
+"**追加...** をクリックしてプラットフォームを選択し、新しいエクスポートプリ"
+"セットを作成します。 さまざまな設定で好きなだけプリセットを作成できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
-"ウィンドウの下部には2つのボタンがあります。 「PCK / ZIPのエクスポート」は、プ"
-"ロジェクトのデータのパックバージョンのみを作成します。 これには実行可能ファイ"
-"ルが含まれていないため、プロジェクトを単独で実行することはできません。"
+"ウィンドウの下部には2つのボタンがあります。 **PCK / ZIPのエクスポート** は、"
+"プロジェクトデータがパックされたバージョンのみを作成します。 これには実行可能"
+"ファイルが含まれていないため、プロジェクトを単独で実行することはできません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
 msgstr ""
-"2番目のボタン「プロジェクトのエクスポート」は、Androidの場合は `.apk` 、"
+"2番目のボタン **プロジェクトのエクスポート** は、Androidの場合は `.apk` 、"
 "Windowsの場合は `.exe` など、ゲームの完全な実行可能バージョンを作成します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
-#, fuzzy
 msgid ""
 "In the **Resources** and **Features** tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"「リソース」タブと「機能」タブでは、プラットフォームごとにゲームをエクスポー"
-"トする方法をカスタマイズできます。 今のところ、これらの設定はそのままにしてお"
-"きます。"
+"**リソース** タブと **機能** タブでは、プラットフォームごとにゲームをエクス"
+"ポートする方法をカスタマイズできます。 今のところ、これらの設定はそのままにし"
+"ておきます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:297
 msgid "Exporting by platform"
@@ -264,7 +259,6 @@ msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:305
-#, fuzzy
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click **Add...** to create the preset(s) "
@@ -272,31 +266,29 @@ msgid ""
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
 "PCプラットフォームへのエクスポートは３つのサポートされたオペレーションシステ"
-"ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開き"
-"「Add..」をクリックします。その後 「エクスポートプロジェクト」 をクリックし、"
-"名前と保存フォルダを選びます。あなたのプロジェクトの *外側* の場所を選んで下"
-"さい。"
+"ムで同じ様に動きます。プリセットを作るためにエクスポートウィンドウを開き **追"
+"加...** をクリックします。その後 **プロジェクトのエクスポート** をクリック"
+"し、名前と保存先フォルダを選びます。あなたのプロジェクトの *外側* にある場所"
+"を選んで下さい。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
-#, fuzzy
 msgid "Click **Save** and the engine will build the export files."
-msgstr "「保存」をクリックするとエンジンはエクスポートファイルをビルドします。"
+msgstr ""
+"**保存** をクリックするとエンジンはエクスポートファイルをビルドします。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:314
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export from a macOS computer, you'll end up "
 "with a ``.dmg`` file, while using Linux or Windows produces a ``.zip``. In "
 "either case, the compressed file contains a macOS ``.app`` that you can "
 "double-click and run."
 msgstr ""
-"macOSへとエクスポートする際、macOSマシン上でエクスポートすると、 `.dmg` ファ"
-"イルができますが、LinuxあるいはWindowsの場合は `.zip` ファイルが作られます。"
-"いずれの場合も、この圧縮ファイルの中にはmacOS用 `.app` が含まれていて、ダブル"
-"クリックすると実行できます。"
+"macOSへとエクスポートする際、macOSマシン上でエクスポートすると、 ``.dmg`` "
+"ファイルができますが、LinuxあるいはWindowsの場合は ``.zip`` ファイルが作られ"
+"ます。いずれの場合も、この圧縮ファイルの中にはmacOS用 ``.app`` が含まれてい"
+"て、ダブルクリックすると実行できます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
-#, fuzzy
 msgid ""
 "On Windows, if you want your exported executable to have a different icon "
 "than the default one, you need to change it manually. See :ref:"
@@ -334,25 +326,23 @@ msgid "Android SDK: https://developer.android.com/studio/"
 msgstr "\\ Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:339
-#, fuzzy
 msgid ""
 "Open JDK (**version 8 is required**, more recent versions won't work): "
 "https://adoptopenjdk.net/index.html"
 msgstr ""
-"Open JDK(バージョン8が必要です。最新のバージョンでは動作しません): https://"
-"adoptopenjdk.net/index.html"
+"Open JDK (**バージョン8が必要です。** 最新のバージョンでは動作しません): "
+"https://adoptopenjdk.net/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:341
-#, fuzzy
 msgid ""
 "When you run Android Studio for the first time, click on **Configure -> SDK "
 "Manager** and install **Android SDK Platform Tools**. This installs the "
 "``adb`` command-line tool that Godot uses to communicate with your device."
 msgstr ""
-"Android Studioを最初に起動したときは、\\ *Configure -> SDK Manager* をクリッ"
-"クして\"Android SDK Platform Tools\"をインストールしてください。これにより、"
-"Godotがデバイスと通信するのに使うコマンドラインツール `adb` がインストールさ"
-"れます。"
+"Android Studioを最初に起動したときは、 **Configure → SDK Manager** をクリック"
+"して **Android SDK Platform Tools** をインストールしてください。これにより、"
+"Godotがデバイスと通信するのに使うコマンドラインツール ``adb`` がインストール"
+"されます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:345
 msgid ""
@@ -374,7 +364,6 @@ msgstr ""
 "したキーストアへのパスを指定します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on **Project -> Export** and add a preset "
 "for Android (see above). Select the newly added Android preset. Under "
@@ -382,20 +371,21 @@ msgid ""
 "your game is in landscape mode (i.e. the window width in pixels is greater "
 "than the window height), leave this on **Landscape**."
 msgstr ""
-"これで、エクスポートする準備ができました。\\ *プロジェクト -> エクスポート* "
-"をクリックし、Android用のプリセットを追加します(上記を参照)。 Androidプリセッ"
-"トを選択し、\\ *オプション* で *Screen* に移動し、\\ *Orientation* を"
-"\"Portrait\"に設定します。"
+"これで、エクスポートする準備ができました。 **プロジェクト → エクスポート** を"
+"クリックし、Android用のプリセットを追加します (上記を参照)。 Androidプリセッ"
+"トを選択し、 **オプション** にある **Screen** に移動し、\\ **Orientation** "
+"を **Portrait** に設定します。 ゲームがランドスケープモードの場合 (ウィンドウ"
+"の幅 (ピクセル) がウィンドウの高さよりも大きい場合)、これを **Landscape** の"
+"ままにします。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:364
-#, fuzzy
 msgid ""
 "Click the **Export Project** button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"「プロジェクトのエクスポート」ボタンをクリックすると、Godotはデバイスに送信で"
-"きるAPKをビルドします。コマンドラインでするには、下記のように実行してくださ"
-"い:"
+"**プロジェクトのエクスポート** ボタンをクリックすると、Godotはデバイスに送信"
+"できるAPKをビルドします。コマンドライン上でするには、下記のように実行してくだ"
+"さい:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:371
 msgid ""
@@ -406,14 +396,13 @@ msgstr ""
 "スのドキュメンテーションを参照してください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:374
-#, fuzzy
 msgid ""
 "If your system supports it, connecting a compatible Android device will "
 "cause a **One-click Deploy** button to appear in Godot's playtest button "
 "area:"
 msgstr ""
 "システムが対応している場合、互換性のあるAndroidデバイスを接続すると、Godotの"
-"テストプレイ用ボタンの場所に「ワンクリック・デプロイ」ボタンが現れます。"
+"テストプレイ用ボタンの場所に **ワンクリック・デプロイ** ボタンが現れます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:379
 msgid ""
@@ -428,25 +417,23 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:386
-#, fuzzy
 msgid ""
 "To build your game for iOS, you must have a computer running macOS with "
 "Xcode installed."
 msgstr ""
-"ゲームをiOS用にビルドするには、XcodeがインストールされたmacOSの走るコンピュー"
+"ゲームをiOS用にビルドするには、XcodeがインストールされたmacOSが動くコンピュー"
 "タが必要になります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
-#, fuzzy
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the **App Store Team Id**, which you "
 "can find by logging in to your Apple developer account and looking in the "
 "**Membership** section."
 msgstr ""
-"エクスポートする前に、\\ *必ず*\\ しなければならないプロジェクト設定がいくつ"
-"かあります。一つ目に必要なのは『App Store Team ID』で、Appleデベロッパー・ア"
-"カウントにログインしてから『メンバーシップ』のセクションを探すとあります。"
+"エクスポートする前に、 *必ず* しなければならないプロジェクト設定がいくつかあ"
+"ります。一つ目に必要なのは **App Store Team ID** で、Appleデベロッパー・アカ"
+"ウントにログインしてから **メンバーシップ** のセクションを探すとあります。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:393
 msgid "You must also provide icons and splash screen images as shown below:"
@@ -454,10 +441,9 @@ msgstr ""
 "アイコンとスプラッシュスクリーンも下の画像のように指定する必要があります:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
-#, fuzzy
 msgid "Click **Export Project** and select a destination folder."
 msgstr ""
-"「プロジェクトのエクスポート」をクリックして、エクスポート先のフォルダを選択"
+"**プロジェクトのエクスポート** をクリックして、エクスポート先のフォルダを選択"
 "します。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
@@ -469,7 +455,6 @@ msgstr ""
 "とファイルが作られます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:404
-#, fuzzy
 msgid ""
 "You can now open the project in Xcode and build the project for iOS. The "
 "Xcode build procedure is beyond the scope of this tutorial. See https://help."
@@ -477,20 +462,19 @@ msgid ""
 msgstr ""
 "このプロジェクトをXcodeで開いて、iOS向けにビルドします。Xcodeのビルド手順につ"
 "いてはこのチュートリアルの範疇を超えるので、https://help.apple.com/xcode/mac/"
-"current/#/devc8c2a6be1 を参考にしてください(英語)。"
+"current/#/devc8c2a6be1 を参考にしてください (英語)。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:410
 msgid "HTML5 (web)"
 msgstr "HTML5 (ウェブ)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:412
-#, fuzzy
 msgid ""
 "Click **Export Project** on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
-"HTML5のプリセットにて「プロジェクトのエクスポート」をクリックします。設定はデ"
-"フォルトから変える必要はありません。"
+"HTML5のプリセットにて **プロジェクトのエクスポート** をクリックします。設定は"
+"デフォルトから変える必要はありません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:415
 msgid ""
@@ -499,41 +483,37 @@ msgid ""
 msgstr "エクスポートが完了すると、下記のファイルがあるフォルダが作られます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:420
-#, fuzzy
 msgid ""
 "Viewing the ``.html`` file in your browser lets you play the game. However, "
 "you can't open the file directly. Instead, it needs to be served by a web "
 "server. If you don't have one set up on your computer, you can search online "
 "to find suggestions for your specific OS."
 msgstr ""
-"`.html` ファイルをブラウザーで見るとゲームをプレイできます。しかし、このファ"
-"イルを直接開くことはできないので、ウェブサーバー上に置く必要があります。もし"
-"用意していないのであれば、お使いのOSに適したセットアップ法をオンラインで検索"
-"してみてください。"
+"``.html`` ファイルをブラウザーで見るとゲームをプレイできます。しかし、この"
+"ファイルを直接開くことはできないので、ウェブサーバー上に置く必要があります。"
+"もし用意していないのであれば、お使いのOSに適したセットアップ法をオンラインで"
+"検索してみてください。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:425
-#, fuzzy
 msgid ""
 "Point your browser at the URL where you've placed the HTML file. You may "
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
-"htmlファイルを置いた場所のURLをブラウザで開いてみてください。ゲームがロードさ"
+"HTMLファイルを置いた場所のURLをブラウザで開いてみてください。ゲームがロードさ"
 "れてスタートスクリーンが表示されるまで、しばらくかかるかもしれません。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:430
-#, fuzzy
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by disabling **Export With Debug** in the final file dialog "
 "that appears when you export the project."
 msgstr ""
 "下にあるコンソール・ウィンドウは、なにか問題があればそれを知らせてくれます。"
-"プロジェクトのエクスポート時に「デバッグ付きエクスポート」のチェックを外す"
+"プロジェクトのエクスポート時に **デバッグ付きエクスポート** のチェックを外す"
 "と、無効にできます。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:438
-#, fuzzy
 msgid ""
 "While WebAssembly is supported in all major browsers, it is still an "
 "emerging technology and you may find some things that don't work. Make sure "
@@ -541,7 +521,8 @@ msgid ""
 "bugs you find on the `Godot GitHub repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
-"全てのメジャーなブラウザはWASMに対応していますが、しかしこれはまだ新しいテク"
-"ノロジーなので上手く動かないこともあるかもしれません。最新版のブラウザにアッ"
-"プデートされているか確認してから、もしバグがあれば `Godot Github repository "
-"<https://github.com/godotengine/godot/issues>`_\\ までご報告ください (英語)。"
+"全てのメジャーなブラウザはWebAssemblyに対応していますが、しかしこれはまだ新し"
+"いテクノロジーなので上手く動かないこともあるかもしれません。最新版のブラウザ"
+"にアップデートされているか確認してから、もしバグがあれば `Godot Github "
+"repository <https://github.com/godotengine/godot/issues>`_\\ までご報告くださ"
+"い (英語)。"

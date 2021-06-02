@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/editor/editor_style_guide.rst:4
-#, fuzzy
 msgid "Editor style guide"
-msgstr "C# 风格指南"
+msgstr "编辑器风格指南"
 
 #: ../../docs/development/editor/editor_style_guide.rst:7
 msgid "Introduction"
@@ -36,27 +35,26 @@ msgid ""
 "editor. Following this style guide will help your contribution get merged "
 "faster since there will be fewer review steps required."
 msgstr ""
-"本页介绍了Godot编辑器中使用的语法和写作风格。遵循这一风格指南将有助于您的贡献"
-"更快地被合并，因为所需的审核步骤更少。"
+"本页介绍了Godot编辑器中使用的语法和写作风格.遵循这一风格指南将有助于您的贡献"
+"更快地被合并,因为所需的审核步骤更少."
 
 #: ../../docs/development/editor/editor_style_guide.rst:16
-#, fuzzy
 msgid "Writing style"
-msgstr "警告系统"
+msgstr "写作风格"
 
 #: ../../docs/development/editor/editor_style_guide.rst:18
 msgid ""
 "**Write messages (errors, warnings, ...) as full sentences.** They should "
 "start with an uppercase letter and end with a period."
 msgstr ""
-"**将信息（错误、警告......）写成完整的句子** ，应以大写字母开头，以句号结束。"
+"**将信息(错误、警告......)写成完整的句子** ,应以大写字母开头,以句号结束."
 
 #: ../../docs/development/editor/editor_style_guide.rst:20
 msgid ""
 "**Try to keep sentences short.** This makes it more likely that their "
 "translations will be short as well, which is a good thing to avoid UI bugs."
 msgstr ""
-"**尽量保持句子简短.** 这使得他们的翻译也可能很短，这对于避免UI错误有好处。"
+"**尽量保持句子简短.** 这使得他们的翻译也可能很短,这对于避免UI错误有好处."
 
 #: ../../docs/development/editor/editor_style_guide.rst:22
 msgid ""
@@ -64,62 +62,57 @@ msgid ""
 "exception to this rule can be made when you specifically want to emphasize "
 "one of the contraction's words."
 msgstr ""
-"**使用缩略语。** 例如，用 \"isn't\"代替 \"is not\"。当你特别想强调缩略词之"
-"一，则例外。"
+"**使用缩略语.** 例如,用 \"isn't\"代替 \"is not\".当你特别想强调缩略词之一,则"
+"例外."
 
 #: ../../docs/development/editor/editor_style_guide.rst:25
+#, fuzzy
 msgid ""
-"**Use double quotes in messages** (``\"\"``) instead of simple quotes "
+"**Use double quotes in messages** (``\"\"``) instead of single quotes "
 "(``''``). Double quotes should be used to quote user input, file paths and "
 "possibly other things depending on the context."
 msgstr ""
-"**在信息中使用双引号** ( ``\"\"`` )，而不是简单的引号( ``''`` )。双引号应用于"
-"引用用户输入、文件路径和其他东西，这取决于上下文。"
+"**在信息中使用双引号** ( ``\"\"`` ),而不是简单的引号( ``''`` ).双引号应用于引"
+"用用户输入、文件路径和其他东西,这取决于上下文."
 
 #: ../../docs/development/editor/editor_style_guide.rst:31
 msgid ""
 "Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
 "guidelines outlined above."
-msgstr "除了上述准则外，尽量遵循 :ref:`doc_docs_writing_guidelines` 。"
+msgstr "除了上述准则外,尽量遵循 :ref:`doc_docs_writing_guidelines` ."
 
 #: ../../docs/development/editor/editor_style_guide.rst:35
-#, fuzzy
 msgid "Button and menu texts"
-msgstr "选项和预设"
+msgstr "按钮和菜单文本"
 
 #: ../../docs/development/editor/editor_style_guide.rst:37
 msgid "Capitalize text in buttons and menu actions:"
-msgstr "将按钮和菜单操作中的文本大写："
+msgstr "将按钮和菜单操作中的文本大写:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:39
-#, fuzzy
 msgid "**Good:** *Open Editor Data Folder*"
 msgstr "**Good:** *打开编辑器数据文件夹*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:40
-#, fuzzy
 msgid "**Bad:** *Open editor data folder*"
 msgstr "**Bad:** *打开编辑器数据文件夹*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:42
 msgid ""
 "If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
-msgstr "如果菜单操作打开了模式对话框，用省略号（ ``...`` ）作为后缀。"
+msgstr "如果菜单操作打开了模式对话框,用省略号( ``...`` )作为后缀."
 
 #: ../../docs/development/editor/editor_style_guide.rst:44
-#, fuzzy
 msgid "**Good:** *Editor Settings...*"
 msgstr "**Good:** *编辑器设置...*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:45
-#, fuzzy
 msgid "**Bad:** *Editor Settings*"
-msgstr "编辑器图标"
+msgstr "**Bad:** *编辑器设置*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:48
-#, fuzzy
 msgid "Inspector sections"
-msgstr "导入插件"
+msgstr "检查器插件"
 
 #: ../../docs/development/editor/editor_style_guide.rst:50
 msgid ""
@@ -127,24 +120,22 @@ msgid ""
 "that contain few items make it difficult to navigate the inspector, while "
 "missing the benefits of using sections such as folding."
 msgstr ""
-"一般来说，不要创建包含少于3个项目的部分。包含项目少的章节会使浏览检查器变得困"
-"难，同时丢失了使用章节的好处，如折叠。"
+"一般来说,不要创建包含少于3个项目的部分.包含项目少的章节会使浏览检查器变得困"
+"难,同时丢失了使用章节的好处,如折叠."
 
 #: ../../docs/development/editor/editor_style_guide.rst:54
 msgid ""
 "There are some valid exceptions for this, such as material features in :ref:"
 "`class_SpatialMaterial`."
-msgstr "有一些有效的例外情况，例如 :ref:`class_SpatialMaterial` 中的材质特征。"
+msgstr "有一些有效的例外情况,例如 :ref:`class_SpatialMaterial` 中的材质特征."
 
 #: ../../docs/development/editor/editor_style_guide.rst:57
-#, fuzzy
 msgid "This advice also applies to the Project Settings and Editor Settings."
-msgstr "这个建议也适用于项目设置和编辑器设置。"
+msgstr "这个建议也适用于项目设置和编辑器设置."
 
 #: ../../docs/development/editor/editor_style_guide.rst:60
-#, fuzzy
 msgid "Inspector performance hints"
-msgstr "导入插件"
+msgstr "检查器性能提示"
 
 #: ../../docs/development/editor/editor_style_guide.rst:62
 msgid ""
@@ -153,12 +144,12 @@ msgid ""
 "rather than being relative to the other options provided in the enum. Here "
 "are some examples taken from the Godot editor:"
 msgstr ""
-"显著影响性能的枚举属性应该具有相关的提示，该提示应该是指 *绝对* 的性能影响，"
-"而不是相对于枚举中提供的其他选项。下面是Godot编辑器中的一些例子:"
+"显著影响性能的枚举属性应该具有相关的提示,该提示应该是指 *绝对* 的性能影响,而"
+"不是相对于枚举中提供的其他选项.下面是Godot编辑器中的一些例子:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:67
 msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
-msgstr "**屏幕空间抗锯齿：*禁用(最快)，快速近似抗锯齿(快速)*"
+msgstr "**屏幕空间抗锯齿:*禁用(最快),快速近似抗锯齿(快速)*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:68
 msgid ""
@@ -170,12 +161,12 @@ msgstr "**MSAA质量:** *禁用(最快)、2倍(快)、4倍(一般)、8倍(慢)�
 msgid ""
 "**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
 "4 Splits (Slow)*"
-msgstr "**方向光模式:** *正交（快），PSSM 2分割（平均），PSSM 4分割（慢）*"
+msgstr "**方向光模式:** *正交(快),PSSM 2分割(平均),PSSM 4分割(慢)*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:73
 msgid ""
 "For consistency, try to stick to the terms below (from fastest to slowest):"
-msgstr "为了保持一致，尽量按照下面的术语（从最快到最慢）:"
+msgstr "为了保持一致,尽量按照下面的术语(从最快到最慢):"
 
 #: ../../docs/development/editor/editor_style_guide.rst:75
 msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
@@ -187,19 +178,17 @@ msgstr ""
 msgid ""
 "Their usage doesn't have to be contiguous. For example, you can use only "
 "\"Fast\" and \"Slow\" from the list above."
-msgstr ""
-"它们的用法不一定要连续。例如，你可以只使用上面列表中的 \"快\"和 \"慢\"。"
+msgstr "它们的用法不一定要连续.例如,你可以只使用上面列表中的 \"快\"和 \"慢\"."
 
 #: ../../docs/development/editor/editor_style_guide.rst:80
 msgid ""
 "If you're adding a new enum, its values should be ordered from the fastest "
 "option to the slowest option."
-msgstr "如果你要添加一个新的枚举，它的值应该从最快的选项到最慢的选项排序。"
+msgstr "如果你要添加一个新的枚举,它的值应该从最快的选项到最慢的选项排序."
 
 #: ../../docs/development/editor/editor_style_guide.rst:84
-#, fuzzy
 msgid "Tooltips"
-msgstr "工具"
+msgstr "工具提示"
 
 #: ../../docs/development/editor/editor_style_guide.rst:86
 msgid ""
@@ -207,8 +196,8 @@ msgid ""
 "action isn't obvious. You can also provide additional context or highlight "
 "caveats in the tooltip."
 msgstr ""
-"每当按钮或菜单操作所执行的操作不明显时，可以考虑添加工具提示。你也可以在工具"
-"提示中提供额外的上下文或强调注意事项。"
+"每当按钮或菜单操作所执行的操作不明显时,可以考虑添加工具提示.你也可以在工具提"
+"示中提供额外的上下文或强调注意事项."
 
 #: ../../docs/development/editor/editor_style_guide.rst:90
 msgid ""
@@ -224,12 +213,12 @@ msgstr ""
 msgid ""
 "Tooltips should follow the writing style described above. In addition to "
 "this, use indicative mood instead of imperative mood:"
-msgstr "工具提示应遵循上述的书写风格。除此之外，要使用指示性而不是命令性:"
+msgstr "工具提示应遵循上述的书写风格.除此之外,要使用指示性而不是命令性:"
 
 #: ../../docs/development/editor/editor_style_guide.rst:97
 msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
-msgstr "**好:** *计算所选的GLProbe全局光照。*"
+msgstr "**好:** *计算所选的GLProbe全局光照.*"
 
 #: ../../docs/development/editor/editor_style_guide.rst:98
 msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
-msgstr "**差:** *计算所选的GLProbe全局光照。*"
+msgstr "**差:** *计算所选的GLProbe全局光照.*"

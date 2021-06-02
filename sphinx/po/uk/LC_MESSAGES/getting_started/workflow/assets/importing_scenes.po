@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -947,26 +947,22 @@ msgstr ""
 "виконати після експорту:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Додати виявлення зіткнень до об'єктів"
+msgstr "Додати виявлення зіткнень до об'єктів."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:407
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Встановити об'єкти як навігаційні сітки"
+msgstr "Встановити об'єкти як навігаційні сітки."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
 "Видалити вузли, які не використовуються в ігровому движку (наприклад "
-"специфічні світильники, що використовуються для моделювання)"
+"специфічні світильники, що використовуються для моделювання)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
-#, fuzzy
 msgid ""
 "To simplify this workflow, Godot offers several suffixes that can be added "
 "to the names of the objects in your 3D modelling software. When imported, "
@@ -975,23 +971,22 @@ msgid ""
 msgstr ""
 "Щоб спростити цей робочий процес, Godot пропонує кілька суфіксів, які можна "
 "додати до назв об'єктів у вашому програмному забезпеченні для 3D "
-"моделювання. При імпорті Godot виявить їх і виконає дії автоматично:"
+"моделювання. При імпорті Godot виявить їх і виконає дії автоматично."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:416
 msgid "All the suffixes described below are *case-sensitive*."
-msgstr ""
+msgstr "Всі описані нижче суфікси *чутливі до регістру*."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:419
 msgid "Remove nodes (-noimp)"
 msgstr "Вилучити вузли (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:421
-#, fuzzy
 msgid ""
 "Objects that have the ``-noimp`` suffix will be removed at import-time no "
 "matter what their type is. They will not appear in the imported scene."
 msgstr ""
-"Імена вузлів, які мають цей суфікс, будуть видалені під час імпорту, "
+"Імена вузлів, з суфіксом ``-noimp``, будуть видалені під час імпорту, "
 "незалежно від їх типу. Вони не з’являться на імпортованій сцені."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:425

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,8 @@ msgstr ""
 "завдань."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
-#, fuzzy
 msgid "Creating an ICO file"
-msgstr "Як створити проєкт"
+msgstr "Створення файла ICO"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:13
 msgid ""
@@ -44,12 +43,18 @@ msgid ""
 "application icon in any program but you will have to convert it to an ICO "
 "file using a program such as GIMP."
 msgstr ""
+"Windows не використовує формати, такі як png, або jpg, для піктограм "
+"програм. Натомість він використовує лише формат Windows, який називається "
+"ICO. Ви можете створити піктограму програми в будь-якій програмі, але вам "
+"доведеться перетворити її у файл ICO за допомогою такої програми, як GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:18
 msgid ""
 "`This video tutorial <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ goes "
 "over how to export an ICO file with GIMP."
 msgstr ""
+"`В цьому відео <https://www.youtube.com/watch?v=uqV3UfM-n5Y>`_ пояснюється "
+"як експортувати файл ICO з GIMP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:21
 msgid ""
@@ -60,10 +65,23 @@ msgstr ""
 "за допомогою цієї команди `ImageMagick <https://www.imagemagick.org/>`_:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
+msgid ""
+"For the ICO file to effectively replace the default Godot icon, it must "
+"contain *all* the sizes included in the default Godot icon: 16×16, 32×32, "
+"48×48, 64×64, 128×128, 256×256. If the ICO file does not contain all the "
+"sizes, the default Godot icon will be kept for the sizes that weren't "
+"overridden."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:35
+msgid "The above ImageMagick command takes this into account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid "Changing the taskbar icon"
 msgstr "Зміна піктограми панелі завдань"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
@@ -71,29 +89,31 @@ msgstr ""
 "Піктограма панелі завдань - це значок, який з’являється на панелі завдань "
 "під час запуску проєкту."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
-#, fuzzy
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
 "ICO file."
 msgstr ""
-"Щоб змінити значок панелі завдань, перейдіть до **Проєкт → Параметри проєкту "
-"→ Application (Застосування) → Config (Налаштування) → Icon (Піктограма). "
-"Клацніть зображення папки та виберіть потрібний значок."
+"Щоб змінити значок панелі завдань, перейдіть до **Проект → Параметри проекту "
+"→ Application (Застосування) → Config (Налаштування) → Icon (Піктограма)**. "
+"Клацніть зображення папки та виберіть ваш файл ICO."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:51
 msgid ""
 "This setting only changes the icon for your exported game on Windows. To set "
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
+"Цей параметр змінює лише піктограму експортованої гри в Windows. Щоб "
+"встановити піктограму для macOS, використовуйте ``Macos Native Icon``. А для "
+"будь-якої іншої платформи використовуйте параметр ``Icon``."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
 msgstr "Зміна піктограми файлу"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:52
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
 "There are `known issues <https://github.com/godotengine/godot/"
 "issues/33466>`__ when changing the application icon in executables that "
@@ -101,8 +121,13 @@ msgid ""
 "choose to enable the **Embed Pck** option for your Windows export preset in "
 "the Export dialog."
 msgstr ""
+"Є `відомі проблеми<https://github.com/godotengine/godot/issues/33466>`__ при "
+"зміні значка додатка в виконуваних файлах, які вбудовують файл PCK. Наразі "
+"рекомендується уникати використання rcedit, якщо ви вирішите ввімкнути опцію "
+"**Embed Pck** для вашого попереднього налаштування експорту Windows у "
+"діалоговому вікні Експорт."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
@@ -110,7 +135,7 @@ msgstr ""
 "Піктограма файлу - це піктограма виконуваного файлу, яку ви натискаєте, щоб "
 "запустити проєкт."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
 "Before selecting it in the export options, you will need to install an extra "
 "tool called **rcedit**. You can download it `here <https://github.com/"
@@ -120,7 +145,7 @@ msgstr ""
 "додатковий інструмент під назвою **rcedit**. Завантажити його можна "
 "`тут<https://github.com/electron/rcedit/releases>`_."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:66
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
 "After downloading, you need to tell Godot the path to the rcedit executable "
 "on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
@@ -132,7 +157,7 @@ msgstr ""
 "→ Windows**. Клацніть зображення папки щоб записати **rcedit**. Перейдіть та "
 "виберіть виконуваний файл rcedit."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
@@ -140,7 +165,7 @@ msgstr ""
 "Користувачам Linux та macOS для використання rcedit потрібно буде встановити "
 "ще й `WINE<https://www.winehq.org/>`_."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "You should now have everything in place to change the file icon. To do that, "
 "you will need to specify the icon when exporting. Go to **Project → "
@@ -153,7 +178,7 @@ msgstr ""
 "програму Windows Desktop, виберіть піктограму у форматі ICO у полі "
 "**Application → Icon**."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:89
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
 "If rcedit fails to change the icon, you can instead :ref:`compile your own "
 "Windows export templates <doc_compiling_for_windows>` with the icon changed. "
@@ -161,27 +186,38 @@ msgid ""
 "godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own "
 "ICO file *before* compiling export templates."
 msgstr ""
+"Якщо rcedit не змінює піктограму, ви можете замість цього :ref:`скомпілювати "
+"власні шаблони експорту Windows<doc_compiling_for_windows>` із зміненою "
+"піктограмою. Для цього *перед* компіляцією шаблонів експорту замініть "
+"`platform/windows/godot.ico <https://github.com/godotengine/godot/blob/"
+"master/platform/windows/godot.ico>`__ на власний файл ICO."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
+"Щойно це буде зроблено, ви можете вказати ваші шаблони експорту як власні "
+"шаблони експорту в попередньо встановленому експортному стилі Windows для "
+"вашого проекту."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
 msgstr "Тестування результату"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:101
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:109
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
 "Тепер ви можете експортувати проєкт. Якщо він працював правильно, ви повинні "
 "побачити таке:"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
 "If your icon isn't showing up properly, on Windows 10, try clearing the icon "
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"
 "ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
+"Якщо ваша піктограма відображається неправильно, у Windows 10, спробуйте "
+"очистити кеш піктограм. Для цього відкрийте діалогове вікно **Виконати** та "
+"введіть ``ie4uinit.exe -ClearIconCache``, або ``ie4uinit.exe -show``."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,35 +78,30 @@ msgstr ""
 "ресурси містять лише дані, не потрібно дублювати їх."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
-#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
 "many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
-"Кожен об'єкт, будь то Вузол, чи Ресурс, може експортувати властивості. Існує "
+"Кожен об'єкт, чи то Вузол, чи Ресурс, може експортувати властивості. Існує "
 "багато типів властивостей, таких як String, integer, Vector2 тощо, і будь-"
 "який з цих типів може стати ресурсом. Це означає, що і вузли, і ресурси "
 "можуть містити ресурси типу властивостей:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
-#, fuzzy
 msgid "External vs built-in"
 msgstr "Зовнішні та вбудовані"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
-#, fuzzy
 msgid "There are two ways to save resources. They can be:"
 msgstr "Існує два способи зберігання ресурсів:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
-#, fuzzy
 msgid "**External** to a scene, saved on the disk as individual files."
 msgstr "**Зовнішнє**, збережене на диску у вигляді окремих файлів."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
-#, fuzzy
 msgid ""
 "**Built-in**, saved inside the ``.tscn`` or the ``.scn`` file they're "
 "attached to."
@@ -121,7 +116,6 @@ msgstr ""
 "`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
-#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
@@ -142,7 +136,6 @@ msgstr ""
 "порожній, він стане вбудованим ресурсом."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
-#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path ``\"res://robi.png\"`` "
@@ -166,7 +159,6 @@ msgid "Loading resources from code"
 msgstr "Завантаження ресурсів з коду"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:72
-#, fuzzy
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
@@ -175,7 +167,6 @@ msgstr ""
 "можете використовувати функцію ``load()``:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
-#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
@@ -184,15 +175,14 @@ msgstr ""
 "Ви також можете використовувати ресурси ``preload`` (попередньо "
 "завантажені). На відміну від ``load``, ця функція буде читати файл з диска і "
 "завантажувати його під час компіляції. Як результат, ви не можете викликати "
-"попереднє завантаження змінним шляхом: вам потрібно використовувати "
-"постійний рядок."
+"попереднє завантаження зі шляхом у змінній: вам потрібно використовувати "
+"постійний рядок (текст)."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
 msgstr "Завантаження сцен"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
-#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
@@ -203,16 +193,14 @@ msgstr ""
 "ресурсу."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
-#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
-"Щоб отримати екземпляр сцени, ви повинні використовувати :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` метод ."
+"Щоб отримати екземпляр сцени, ви повинні використовувати метод :ref:"
+"`PackedScene.instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
-#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
@@ -223,7 +211,6 @@ msgstr ""
 "вузлу."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is fast, you can create new "
@@ -234,16 +221,14 @@ msgstr ""
 "Цей підхід має ряд переваг. Оскільки функція :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` швидка, ви можете створювати нових "
 "ворогів, нові кулі, ефекти, тощо, не потребуючи кожного разу їх завантаження "
-"з диска. Пам’ятайте, що, як завжди, зображення, сітки (меші) тощо "
+"з диска. Пам’ятайте, що, як завжди, зображення, меші (моделі) тощо "
 "поділяються між екземплярами сцени."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
-#, fuzzy
 msgid "Freeing resources"
 msgstr "Звільнення ресурсів"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
-#, fuzzy
 msgid ""
 "When a ``Resource`` is no longer in use, it will automatically free itself. "
 "Since, in most cases, Resources are contained in Nodes, when you free a "
@@ -256,12 +241,10 @@ msgstr ""
 "жоден інший вузол не використовує їх."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
 msgstr "Створення власних ресурсів"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
-#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
@@ -270,12 +253,11 @@ msgid ""
 msgstr ""
 "Як і будь-який об'єкт у Godot, користувачі також можуть скриптувати ресурси. "
 "Скрипти ресурсів успадковують можливість вільного переходу між властивостями "
-"об'єкта та серіалізованим текстом, чи двійковими (бінарними) даними (/*."
-"tres, /*.res). Вони також успадковують управління пам'яттю підрахунком "
+"об'єкта та серіалізованим текстом, чи двійковими (бінарними) даними (\\*."
+"tres, \\*.res). Вони також успадковують управління пам'яттю підрахунком "
 "посилань типу Reference."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -285,14 +267,13 @@ msgid ""
 "`Resource <class_Resource>` features:"
 msgstr ""
 "Вони мають багато чітких переваг перед альтернативними структурами даних, "
-"такими як JSON, CSV або файли TXT. Користувачі можуть імпортувати ці ресурси "
-"лише у вигляді :ref:`Dictionary <class_Dictionary>` (JSON), або як :ref:"
-"`File <class_File>` для розбору. Ресурси відрізняються їх нащадками :ref:"
+"такими як JSON, CSV, або файли TXT. Користувачі можуть імпортувати ці "
+"ресурси лише у вигляді :ref:`Dictionary <class_Dictionary>` (JSON), або як :"
+"ref:`File <class_File>` для розбору. Ресурси відрізняються їх нащадками :ref:"
 "`Object <class_Object>`, :ref:`Reference <class_Reference>` та :ref:"
 "`Resource <class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
-#, fuzzy
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
@@ -301,7 +282,6 @@ msgstr ""
 "об'єктів, не потрібні."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
-#, fuzzy
 msgid ""
 "They can define methods, including setter/getter methods for properties. "
 "This allows for abstraction and encapsulation of the underlying data. If the "
@@ -314,7 +294,6 @@ msgstr ""
 "використовує Resource, не потребує їх."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
-#, fuzzy
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
@@ -323,7 +302,6 @@ msgstr ""
 "даних, якими вони керують."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
-#, fuzzy
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
@@ -331,7 +309,6 @@ msgstr ""
 "дані будуть існувати."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
-#, fuzzy
 msgid ""
 "Resource auto-serialization and deserialization is a built-in Godot Engine "
 "feature. Users do not need to implement custom logic to import/export a "
@@ -342,7 +319,6 @@ msgstr ""
 "експорту даних файлу ресурсу."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
-#, fuzzy
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
@@ -351,7 +327,6 @@ msgstr ""
 "користувачі можуть створювати ще більш складні структури даних."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
-#, fuzzy
 msgid ""
 "Users can save Resources as version-control-friendly text files (\\*.tres). "
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
@@ -362,7 +337,6 @@ msgstr ""
 "res) для збільшення швидкості та стиснення."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
-#, fuzzy
 msgid ""
 "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As "
 "such, users often do not need to implement custom logic to visualize or edit "
@@ -372,11 +346,10 @@ msgstr ""
 "Інспектор Godot Engine виводить і редагує файли ресурсів з коробки. Таким "
 "чином, користувачам часто не потрібно застосовувати власну логіку для "
 "візуалізації, чи редагування, своїх даних. Для цього двічі клацніть файл "
-"ресурсу на панелі Файлова система, або натисніть значок папки в інспекторі "
-"та відкрийте файл у діалоговому вікні."
+"ресурсу на панелі **Файлова система**, або натисніть значок папки в "
+"інспекторі та відкрийте файл у діалоговому вікні."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
-#, fuzzy
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
@@ -387,7 +360,6 @@ msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr "Godot дозволяє легко створювати власні ресурси в Інспекторі."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
-#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
@@ -396,12 +368,10 @@ msgstr ""
 "який походить від ресурса, якщо ваш скрипт розширює цей тип."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:186
-#, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr "Встановіть властивість ``script`` в Інспекторі для вашого скрипту."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:188
-#, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
@@ -411,10 +381,10 @@ msgstr ""
 "Інспектор тепер покаже ваші власні властивості скрипту Resource. Якщо "
 "редагувати ці значення і економити ресурс, Інспектор також серіалізує власні "
 "властивості! Щоб зберегти ресурс у Інспекторі, натисніть меню інструментів "
-"Інспектора (вгорі праворуч) та виберіть \"Зберегти\" або \"Зберегти як ...\"."
+"Інспектора (вгорі праворуч) та виберіть \"Зберегти\", або \"Зберегти як ..."
+"\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:193
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -422,9 +392,9 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
-"Якщо мова скрипту підтримує :ref:`script classes "
+"Якщо мова скрипту підтримує :ref:`скриптові класи "
 "<doc_scripting_continued_class_name>`, то він упорядковує процес. Визначення "
-"імені лише для вашого сценарію додасть його до інспекторського діалогового "
+"імені лише для вашого скрипту додасть його до інспекторського діалогового "
 "вікна створення . Це автоматично додасть ваш скрипт до створеного вами "
 "об'єкта Resource."
 
@@ -433,7 +403,6 @@ msgid "Let's see some examples."
 msgstr "Давайте подивимось кілька прикладів."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:277
-#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -448,7 +417,6 @@ msgstr ""
 "власні візуалізації та редактори для своїх даних."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:283
-#, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
@@ -460,7 +428,6 @@ msgstr ""
 "словника, що відображає рядок у вторинному скрипті користувацького ресурсу."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:319
-#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
@@ -469,7 +436,6 @@ msgstr ""
 "альтернативно…"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:321
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
@@ -478,7 +444,6 @@ msgstr ""
 "значення або…"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:323
-#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
@@ -487,7 +452,6 @@ msgstr ""
 "його в Інспектор, коли ви відкриєте ці типи ресурсів."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:326
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."

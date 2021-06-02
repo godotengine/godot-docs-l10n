@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Kurz příkazového řádku"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,6 +28,11 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Někteří vývojáři rádi často používají příkazový řádek . Godot je navržen "
+"tak, aby jim vyhovoval, a proto zde uvádíme postup pro práci výhradně z "
+"příkazového řádku. Vzhledem k tomu, že engine nespoléhá téměř na žádné "
+"externí knihovny, jsou inicializační časy poměrně rychlé, takže je pro tento "
+"pracovní postup vhodný."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Command line reference"
@@ -35,7 +40,7 @@ msgstr "Reference pro příkazový řádek"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid "**General options**"
-msgstr ""
+msgstr "**Obecné možnosti**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -43,7 +48,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:90
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:120
 msgid "Command"
-msgstr ""
+msgstr "Příkaz"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:20
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:34
@@ -55,105 +60,111 @@ msgstr "Popis"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "``-h``, ``--help``, ``/?``"
-msgstr ""
+msgstr "``-h``, ``--help``, ``/?``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:22
 msgid "Display the list of command line options."
-msgstr ""
+msgstr "Zobrazí seznam možností příkazového řádku."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "``--version``"
-msgstr ""
+msgstr "``--version``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:24
 msgid "Display the version string."
-msgstr ""
+msgstr "Zobrazí řetězec verze."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "``-v``, ``--verbose``"
-msgstr ""
+msgstr "``-v``, ``--verbose``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:26
 msgid "Use verbose stdout mode."
-msgstr ""
+msgstr "Použijte podrobný režim stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "``--quiet``"
-msgstr ""
+msgstr "``--quiet``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:28
 msgid "Quiet mode, silences stdout messages. Errors are still displayed."
-msgstr ""
+msgstr "Tichý režim, umlčí zprávy stdout. Chyby se stále zobrazují."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:31
 msgid "**Run options**"
-msgstr ""
+msgstr "**Možnosti spuštění**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "``-e``, ``--editor``"
-msgstr ""
+msgstr "``-e``, ``--editor``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid ""
 "Start the editor instead of running the scene (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Spustí editor místo spuštění scény (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid "``-p``, ``--project-manager``"
-msgstr ""
+msgstr "``-p``, ``--project-manager``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:38
 msgid ""
 "Start the project manager, even if a project is auto-detected (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Spustí správce projektů, i když je projekt automaticky detekován (:ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "``-q``, ``--quit``"
-msgstr ""
+msgstr "``-q``, ``--quit``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:40
 msgid "Quit after the first iteration."
-msgstr ""
+msgstr "Konec po první iteraci."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid "``-l <locale>``, ``--language <locale>``"
-msgstr ""
+msgstr "``-l <locale>``, ``--language <locale>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "Use a specific locale (<locale> being a two-letter code). See :ref:"
 "`doc_locales` for more details."
 msgstr ""
+"Použijte konkrétní locale (<locale> je dvoupísmenný kód). Další podrobnosti "
+"viz :ref:`doc_locales`."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "``--path <directory>``"
-msgstr ""
+msgstr "``--path <directory>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:44
 msgid "Path to a project (<directory> must contain a 'project.godot' file)."
-msgstr ""
+msgstr "Cesta k projektu (<adresář> musí obsahovat soubor 'project.godot')."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "``-u``, ``--upwards``"
-msgstr ""
+msgstr "``-u``, ``--upwards``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:46
 msgid "Scan folders upwards for 'project.godot' file."
-msgstr ""
+msgstr "Prohledat složky nahoru pro soubor project.godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "``--main-pack <file>``"
-msgstr ""
+msgstr "``--main-pack <file>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:48
 msgid "Path to a pack (.pck) file to load."
-msgstr ""
+msgstr "Cesta k souboru balíčku (.pck), který se má načíst."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid "``--render-thread <mode>``"
-msgstr ""
+msgstr "``--render-thread <mode>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:50
 msgid ""
@@ -161,105 +172,114 @@ msgid ""
 "<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
 "details."
 msgstr ""
+"Režim vykreslovacího vlákna (\"unsafe\", \"safe\", \"separate\"). Další "
+"podrobnosti viz :ref:`Thread Model <class_ProjectSettings_property_rendering/"
+"threads/thread_model>` ."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "``--remote-fs <address>``"
-msgstr ""
+msgstr "``--remote-fs <address>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
-msgstr ""
+msgstr "Vzdálený souborový systém (adresa ``<host/IP>[:<port>]`` )."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid "``--audio-driver <driver>``"
-msgstr ""
+msgstr "``--audio-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:54
 msgid ""
 "Audio driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Ovladač zvuku. Pro zobrazení seznamu dostupných ovladačů použijte nejprve "
+"``--help`` ."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid "``--video-driver <driver>``"
-msgstr ""
+msgstr "``--video-driver <driver>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:56
 msgid ""
 "Video driver. Use ``--help`` first to display the list of available drivers."
 msgstr ""
+"Ovladač videa. Pro zobrazení seznamu dostupných ovladačů použijte nejprve "
+"``--help``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:59
 msgid "**Display options**"
-msgstr ""
+msgstr "**Volby zobrazení**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "``-f``, ``--fullscreen``"
-msgstr ""
+msgstr "``-f``, ``--fullscreen``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:64
 msgid "Request fullscreen mode."
-msgstr ""
+msgstr "Vyžádá si celoobrazovkový režim."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "``-m``, ``--maximized``"
-msgstr ""
+msgstr "``-m``, ``--maximized``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:66
 msgid "Request a maximized window."
-msgstr ""
+msgstr "Požadavek na maximalizované okno."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "``-w``, ``--windowed``"
-msgstr ""
+msgstr "``-w``, ``--windowed``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:68
 msgid "Request windowed mode."
-msgstr ""
+msgstr "Požadavek na okenní režim."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "``-t``, ``--always-on-top``"
-msgstr ""
+msgstr "``-t``, ``--always-on-top``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:70
 msgid "Request an always-on-top window."
-msgstr ""
+msgstr "Vyžádá si okno vždy nahoře."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "``--resolution <W>x<H>``"
-msgstr ""
+msgstr "``--resolution <W>x<H>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:72
 msgid "Request window resolution."
-msgstr ""
+msgstr "Vyžádá si rozlišení okna."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "``--position <X>,<Y>``"
-msgstr ""
+msgstr "``--position <X>,<Y>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:74
 msgid "Request window position."
-msgstr ""
+msgstr "Požadavek na polohu okna."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "``--low-dpi``"
-msgstr ""
+msgstr "``--low-dpi``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:76
 msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr ""
+msgstr "Vynutit režim s nízkým rozlišením DPI (pouze pro macOS a Windows)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid "``--no-window``"
-msgstr ""
+msgstr "``--no-window``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:78
 msgid ""
 "Disable window creation (Windows only). Useful together with ``--script``."
 msgstr ""
+"Zakázat vytváření oken (pouze systém Windows). Použitelné společně s ``--"
+"script``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:81
 msgid "**Debug options**"
-msgstr ""
+msgstr "**Možnosti ladění**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid ""
@@ -267,116 +287,129 @@ msgid ""
 "(they require ``debug`` or ``release_debug`` build targets, see :ref:"
 "`doc_introduction_to_the_buildsystem_target` for more details)."
 msgstr ""
+"Možnosti ladění jsou k dispozici pouze v editoru a šablonách exportu ladění "
+"(vyžadují cíle sestavení ``debug`` nebo ``release_debug``, více informací "
+"viz :ref:`doc_introduction_to_the_buildsystem_target`)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "``-d``, ``--debug``"
-msgstr ""
+msgstr "``-d``, ``--debug``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:92
 msgid "Debug (local stdout debugger)."
-msgstr ""
+msgstr "Ladění (místní ladicí program stdout)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid "``-b``, ``--breakpoints``"
-msgstr ""
+msgstr "``-b``, ``--breakpoints``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:94
 msgid ""
 "Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
 "instead)."
 msgstr ""
+"Seznam bodů přerušení jako dvojice source::line oddělené čárkami, bez mezer "
+"(místo toho použijte %%20)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "``--profiling``"
-msgstr ""
+msgstr "``--profiling``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Enable profiling in the script debugger."
-msgstr ""
+msgstr "Povolení profilování v ladicím programu skriptu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "``--remote-debug <address>``"
-msgstr ""
+msgstr "``--remote-debug <address>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr ""
+msgstr "Vzdálené ladění (``<host/IP>:<port>`` adresa)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "``--debug-collisions``"
-msgstr ""
+msgstr "``--debug-collisions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:100
 msgid "Show collision shapes when running the scene."
-msgstr ""
+msgstr "Zobrazení kolizních tvarů při spuštění scény."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "``--debug-navigation``"
-msgstr ""
+msgstr "``--debug-navigation``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:102
 msgid "Show navigation polygons when running the scene."
-msgstr ""
+msgstr "Zobrazení navigačních polygonů při spuštění scény."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "``--frame-delay <ms>``"
-msgstr ""
+msgstr "``--frame-delay <ms>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:104
 msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
+"Simulujte vysoké zatížení procesoru (zpoždění každého snímku o <ms> "
+"milisekund)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "``--time-scale <scale>``"
-msgstr ""
+msgstr "``--time-scale <scale>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:106
 msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
+"Změna rychlosti času (vyšší hodnoty jsou rychlejší, 1,0 je normální "
+"rychlost)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid "``--disable-render-loop``"
-msgstr ""
+msgstr "``--disable-render-loop``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:108
 msgid ""
 "Disable render loop so rendering only occurs when called explicitly from "
 "script."
 msgstr ""
+"Zakažte smyčku vykreslení, takže k vykreslování dochází pouze při výslovném "
+"volání ze skriptu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "``--disable-crash-handler``"
-msgstr ""
+msgstr "``--disable-crash-handler``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:110
 msgid "Disable crash handler when supported by the platform code."
-msgstr ""
+msgstr "Zakázat obslužnou rutinu selhání, pokud to podporuje kód platformy."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid "``--fixed-fps <fps>``"
-msgstr ""
+msgstr "``--fixed-fps <fps>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:112
 msgid ""
 "Force a fixed number of frames per second. This setting disables real-time "
 "synchronization."
 msgstr ""
+"Vynutit pevný počet snímků za sekundu. Toto nastavení zakáže synchronizaci v "
+"reálném čase."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "``--print-fps``"
-msgstr ""
+msgstr "``--print-fps``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:114
 msgid "Print the frames per second to the stdout."
-msgstr ""
+msgstr "Vypíše snímky za sekundu na výstup stdout."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:117
 msgid "**Standalone tools**"
-msgstr ""
+msgstr "**Samostatné nástroje**"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "``-s <script>``, ``--script <script>``"
-msgstr ""
+msgstr "``-s <script>``, ``--script <script>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:122
 msgid "Run a script."
@@ -384,15 +417,15 @@ msgstr "Spustit skript."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "``--check-only``"
-msgstr ""
+msgstr "``--check-only``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:124
 msgid "Only parse for errors and quit (use with ``--script``)."
-msgstr ""
+msgstr "Pouze analyzuje chyby a ukončí práci (použijte s ``--script``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid "``--export <target>``"
-msgstr ""
+msgstr "``--export <target>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:126
 msgid ""
@@ -400,20 +433,25 @@ msgid ""
 "path ends with .pck or .zip (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Export projektu pomocí zadaného cíle exportu. Exportuje pouze hlavní "
+"balíček, pokud cesta končí příponou .pck nebo .zip (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "``--export-debug <target>``"
-msgstr ""
+msgstr "``--export-debug <target>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid ""
 "Like ``--export``, but use debug template (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Stejně jako ``--export``, ale použije ladicí šablonu (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "``--doctool <path>``"
-msgstr ""
+msgstr "``--doctool <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid ""
@@ -421,50 +459,61 @@ msgid ""
 "existing files are found (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Vypíše odkaz na API enginu do zadané <cesty> ve formátu XML a sloučí, pokud "
+"jsou nalezeny existující soubory (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid "``--no-docbase``"
-msgstr ""
+msgstr "``--no-docbase``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
 "Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Zakáže výpis základních typů (používá se s ``--doctool``, musí být povoleno :"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>`)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid "``--build-solutions``"
-msgstr ""
+msgstr "``--build-solutions``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid ""
 "Build the scripting solutions (e.g. for C# projects, :ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Sestaví skriptovací řešení (např. pro projekty C# musí být povoleno :ref:"
+"`tools <doc_introduction_to_the_buildsystem_tools>`)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid "``--gdnative-generate-json-api``"
-msgstr ""
+msgstr "``--gdnative-generate-json-api``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:136
 msgid ""
 "Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
 "<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Generování výpisu JSON rozhraní API Godot pro vazby GDNative (:ref:`tools "
+"<doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid "``--test <test>``"
-msgstr ""
+msgstr "``--test <test>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:138
 msgid ""
 "Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Spusťí unit test. Pro zobrazení seznamu testů nejprve použijte ``--help``. (:"
+"ref:`tools <doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
 msgid "``--export-pack <preset> <path>``"
-msgstr ""
+msgstr "``--export-pack <preset> <path>``"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
 msgid ""
@@ -472,6 +521,9 @@ msgid ""
 "<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
 "`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
 msgstr ""
+"Stejně jako ``--export``, ale exportuje pouze herní balíček pro danou "
+"předvolbu. Přípona <cesta> určuje, zda bude ve formátu PCK nebo ZIP. (:ref:"
+"`nástroje <doc_introduction_to_the_buildsystem_tools>` musí být povoleno)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid "Path"
@@ -484,10 +536,15 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Doporučujeme, aby cesta ke spouštěcímu souboru Godota byla v proměnné "
+"prostředí PATH, tak jej bude možné snadno spustit z libovolného místa "
+"zadáním ``godot``. V Linuxu tak můžete učinit tak, že spuštěcí soubor Godot "
+"umístíte do adresáře ``/usr/local/bin`` a ujistíte se, že se jmenuje "
+"``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid "Setting the project path"
-msgstr ""
+msgstr "Nastavení cesty k projektu"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:155
 msgid ""
@@ -495,40 +552,49 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"V závislosti na tom, kde se nachází spustitelný soubor Godot a jaký je váš "
+"aktuální pracovní adresář, může být pro správnou funkci následujících "
+"příkazu nezbytné nastavit cestu k vašemu projektu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:159
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"To lze provést buď zadáním cesty k souboru ``project.godot`` vašeho projektu "
+"jako prvního argumentu, například takto:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:166
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Nebo pomocí argumentu ``--path``:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:172
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Úplný příkaz pro export hry (jak je vysvětleno níže) může vypadat například "
+"takto:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:179
 msgid "Creating a project"
-msgstr ""
+msgstr "Vytvoření projektu"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:182
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"Vytvoření projektu z příkazového řádku lze provést tak, že v shellu přejdete "
+"na požadované místo a vytvoříte soubor project.godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:193
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "Projekt lze nyní otevřít pomocí programu Godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:197
 msgid "Running the editor"
-msgstr ""
+msgstr "Spuštění editoru"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:199
 msgid ""
@@ -536,16 +602,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"Spouštění editoru se provádí spuštěním Godota s příznakem ``-e``. Toto musí "
+"být provedeno z adresáře nebo podadresáře projektu, jinak je příkaz "
+"ignorován a zobrazí se pouze správce projektu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:207
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Pokud byla scéna vytvořena a uložena, lze ji později upravit spuštěním "
+"stejného příkazu s touto scénou jako dalším argumentem."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:215
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Vymazání scény"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:217
 msgid ""
@@ -553,26 +624,32 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot se přátelí s vaším souborovým systémem a nevytváří další soubory "
+"metadat. Pro vymazání souboru scény použijte ``rm``. Ujistěte se, že na tuto "
+"scénu nic neodkazuje, jinak bude při otevření následovat chyba."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:226
 msgid "Running the game"
-msgstr ""
+msgstr "Spuštění hry"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:228
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"Chcete-li hru spustit, jednoduše spusťte Godot v adresáři nebo podadresáři "
+"projektu."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:235
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Pokud je třeba otestovat konkrétní scénu, předejte ji do příkazového řádku."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:243
 msgid "Debugging"
-msgstr ""
+msgstr "Ladění"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:245
 msgid ""
@@ -580,6 +657,9 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
+"Zachycení chyb v příkazovém řádku může být obtížný úkol, protože prostě "
+"proletí kolem. K tomu slouží ladicí program příkazového řádku, který se "
+"iniciuje pomocí ``-d``. Funguje jak pro spouštění hry tak pro dílčí scény."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:260
 msgid "Exporting"
@@ -591,6 +671,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"Podporován je také export projektu z příkazového řádku. To je užitečné "
+"zejména pro nastavení kontinuální integrace (CI). Verze Godotu, která je "
+"headless (sestavení na serveru, bez videa), je pro to ideální."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:271
 msgid ""
@@ -599,12 +682,19 @@ msgid ""
 "special characters (such as \"Windows Desktop\"), it must be surrounded with "
 "quotes."
 msgstr ""
+"Název předvolby musí odpovídat názvu předvolby exportu definované v souboru "
+"``export_presets.cfg`` projektu. Pokud název předvolby obsahuje mezery nebo "
+"speciální znaky (například \"Windows Desktop\"), musí být obklopen "
+"uvozovkami."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:275
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"Chcete-li exportovat odladěnou verzi hry, použijte místo přepínače ``--"
+"export-debug`` přepínač ``--export``. Parametry a použití jsou stejné v obou "
+"případech."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:278
 msgid ""
@@ -613,6 +703,10 @@ msgid ""
 "export``. The output path extension determines the package's format, either "
 "PCK or ZIP."
 msgstr ""
+"Chcete-li exportovat pouze soubor PCK, použijte místo příkazu ``--export-"
+"pack`` možnost ``--export-pack``, za kterou následuje název předvolby a "
+"výstupní cesta s příponou souboru. Přípona výstupní cesty určuje formát "
+"balíčku, buď PCK, nebo ZIP."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:284
 msgid ""
@@ -621,10 +715,13 @@ msgid ""
 "the ``project.godot`` file, **not** relative to the current working "
 "directory."
 msgstr ""
+"Při zadání relativní cesty jako cesty pro `--export`, `--export-debug` nebo "
+"`--export-pack` bude cesta relativní k adresáři obsahujícímu soubor "
+"``project.godot``, **ne** relativní k aktuálnímu pracovnímu adresáři."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:289
 msgid "Running a script"
-msgstr ""
+msgstr "Spuštění skriptu"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:291
 msgid ""
@@ -632,24 +729,29 @@ msgid ""
 "feature is especially useful in large projects, e.g. for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"Z příkazového řádku je možné spustit jednoduchý skript ``.gd``. Tato "
+"vlastnost je užitečná zejména u velkých projektů, např. pro dávkový převod "
+"zdrojů nebo vlastní import/export."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:295
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
-msgstr ""
+msgstr "Skript musí dědit od ``SceneTree`` nebo ``MainLoop``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:297
 msgid "Here is a simple ``sayhello.gd`` example of how it works:"
-msgstr ""
+msgstr "Zde je jednoduchý příklad ``sayhello.gd``, jak to funguje:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:308
 msgid "And how to run it:"
-msgstr ""
+msgstr "A jak jej spustit:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:315
 msgid ""
 "If no ``project.godot`` exists at the path, current path is assumed to be "
 "the current working directory (unless ``--path`` is specified)."
 msgstr ""
+"Pokud v cestě neexistuje žádný ``project.godot``, předpokládá se, že "
+"aktuální cesta je aktuální pracovní adresář (pokud není zadána ``--path``)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:318
 msgid ""
@@ -658,6 +760,10 @@ msgid ""
 "you to run the script as follows in modern Linux distributions, as well as "
 "macOS:"
 msgstr ""
+"První řádek souboru ``sayhello.gd`` se běžně označuje jako *shebang*. Pokud "
+"je spustitelný soubor Godot ve vaší ``PATH`` jako ``godot``, umožní vám to "
+"spustit skript následujícím způsobem v moderních distribucích Linuxu a také "
+"v systému MacOS:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:330
 msgid ""
@@ -665,3 +771,6 @@ msgid ""
 "always have the shebang run Godot straight from where it is located as "
 "follows:"
 msgstr ""
+"Pokud výše uvedený postup nefunguje ve vaší aktuální verzi Linuxu nebo "
+"macOS, můžete vždy nechat spustit Godot přímo z místa, kde se nachází, "
+"následujícím způsobem:"

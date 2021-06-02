@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,14 @@ msgid "Exporting for Android"
 msgstr "Exporter pour Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
 msgstr ""
-"Exporter pour Android a moins d'exigences que de compiler Godot pour "
-"Android. Les étapes suivantes détaillent ce qui est nécessaire pour "
-"configurer le SDK et le moteur."
+"L'exportation pour Android a moins d'exigences que la compilation de Godot "
+"pour Android. Les étapes suivantes détaillent ce qui est nécessaire pour "
+"configurer le SDK Android et le moteur."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
@@ -41,13 +40,12 @@ msgid "Download and install the Android SDK."
 msgstr "Télécharger et installer le SDK Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
-#, fuzzy
 msgid ""
 "You can install it using `Android Studio version 4.1 or later <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"Vous pouvez l'installer en utilisant `Android Studio <https://developer."
-"android.com/studio/>`__."
+"Vous pouvez l'installer en utilisant `Android Studio version 4.1 ou "
+"ultérieure <https://developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
@@ -68,29 +66,28 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK Platform-Tools version 30.0.5 ou supérieure"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
-msgid "Android SDK Build-Tools version 30.0.1"
-msgstr ""
+#, fuzzy
+msgid "Android SDK Build-Tools version 30.0.3"
+msgstr "Android SDK Build-Tools version 30.0.1"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
-#, fuzzy
 msgid "Android SDK Platform 29"
-msgstr "Plate-forme Android SDK"
+msgstr "Android SDK Platform 29"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
-#, fuzzy
 msgid "Android SDK Command-line Tools (latest)"
-msgstr "Installer le SDK Android (version en ligne de commande)"
+msgstr "Outils en ligne de commande du SDK Android (dernière version)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid "CMake version 3.10.2.4988404"
-msgstr ""
+msgstr "CMake version 3.10.2.4988404"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "NDK version 21.4.7075529"
-msgstr ""
+msgstr "NDK version 21.4.7075529"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
@@ -115,19 +112,20 @@ msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
+"Si vous utilisez Linux, **n’utilisez pas un Android SDK fourni par les "
+"distributeurs de paquets de votre distribution car il sera souvent périmé**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 8"
-msgstr "Installer OpenJDK"
+msgstr "Installer OpenJDK 8"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
 msgstr ""
-"Téléchargez et installez `OpenJDK <https://adoptopenjdk.net/index.html>`__."
+"Téléchargez et installez `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid "Create a debug.keystore"
@@ -318,16 +316,14 @@ msgstr ""
 "d'arrière-plan par défaut de Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
-#, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
 "specified resolutions. This way, your application will look great on all "
 "Android devices and versions."
 msgstr ""
-"Il est hautement recommandé de fournir toutes les icônes demandées, et au "
-"moins avec les résolutions spécifiées. Ce n'est que de cette façon que votre "
-"application sera parfaite sur tous les appareils et toutes les versions "
-"d'Android."
+"Il est fortement recommandé de fournir toutes les icônes demandées avec "
+"leurs résolutions spécifiques. De cette façon, votre application sera "
+"parfaite sur tous les appareils et versions d'Android."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
 msgid "Exporting for Google Play Store"
@@ -391,9 +387,9 @@ msgstr ""
 "ou équivalent."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
+#, fuzzy
 msgid ""
-"Don't forget to uncheck the **Export With Debug** checkbox while choosing "
-"the APK's name."
+"Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
 "N'oubliez pas de décocher la case **Exporter avec débogage** lorsque vous "
 "choisissez le nom de l'APK."

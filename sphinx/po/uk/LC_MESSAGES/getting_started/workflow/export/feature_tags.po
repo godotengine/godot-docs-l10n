@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,11 +78,12 @@ msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
 msgstr ""
+"Ось список більшості тегів функцій у Godot. Майте на увазі, що вони "
+"**чутливі до регістру**:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
-#, fuzzy
 msgid "**Feature tag**"
-msgstr "**Fedora**"
+msgstr "**Тег функції**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
@@ -94,7 +95,7 @@ msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
-msgstr ""
+msgstr "Працює на Android"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
@@ -102,7 +103,7 @@ msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
-msgstr ""
+msgstr "Працює на HTML5"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
@@ -110,7 +111,7 @@ msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ""
+msgstr "Доступний :ref:`JavaScript singleton <doc_javascript_eval>`"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
@@ -150,25 +151,23 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
+msgstr "Працює на X11 (Linux/BSD desktop)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
-#, fuzzy
 msgid "**Server**"
-msgstr "**центр**"
+msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
-msgstr ""
+msgstr "Працює на позбавленій керівництва (headless) серверній платформі"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
 msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
-#, fuzzy
 msgid "Running on a debug build (including the editor)"
-msgstr "Працюємо у діагностичній збірці"
+msgstr "Працює у діагностичній збірці (включає редактор)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -179,80 +178,68 @@ msgid "Running on a release build"
 msgstr "Працюємо у збірці для випуску"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "**Оператор**"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "Running on an editor build"
-msgstr "Працюємо у 32-бітовій збірці"
+msgstr "Працює в збірці редактора"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
-#, fuzzy
 msgid "**standalone**"
-msgstr "**підкреслення**"
+msgstr "**standalone**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
-#, fuzzy
 msgid "Running on a non-editor build"
-msgstr "Працюємо у 32-бітовій збірці"
+msgstr "Працюємо у збірці без редактора"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
 msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
-#, fuzzy
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "Працюємо у 64-бітовій збірці"
+msgstr "Працює у 64-бітовій збірці (будь-якої архітектури)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
 msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
-#, fuzzy
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "Працюємо у 32-бітовій збірці"
+msgstr "Працює у 32-бітовій збірці (будь-якої архітектури)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
-#, fuzzy
 msgid "**x86_64**"
-msgstr "**64**"
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
-#, fuzzy
 msgid "Running on a 64-bit x86 build"
-msgstr "Працюємо у 64-бітовій збірці"
+msgstr "Працюємо у 64-бітовій x86 збірці"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
-msgstr ""
+msgstr "**x86**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
-#, fuzzy
 msgid "Running on a 32-bit x86 build"
-msgstr "Працюємо у 32-бітовій збірці"
+msgstr "Працює у 32-бітовій x86 збірці"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
-#, fuzzy
 msgid "**arm64**"
-msgstr "**64**"
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
-#, fuzzy
 msgid "Running on a 64-bit ARM build"
-msgstr "Працюємо у 64-бітовій збірці"
+msgstr "Працює у 64-бітовій ARM збірці"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
-msgstr ""
+msgstr "**arm**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
-#, fuzzy
 msgid "Running on a 32-bit ARM build"
-msgstr "Працюємо у 32-бітовій збірці"
+msgstr "Працює у 32-бітовій ARM збірці"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
@@ -285,7 +272,7 @@ msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "Підтримуються текстури, що використовують стиснення ETC1"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
@@ -293,7 +280,7 @@ msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "Підтримуються текстури, що використовують стиснення ETC2"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
@@ -301,7 +288,7 @@ msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "Підтримуються текстури, що використовують стиснення S3TC (DXT / BC)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
@@ -309,7 +296,7 @@ msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "Підтримуються текстури, що використовують стиснення PVRTC"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
@@ -320,10 +307,12 @@ msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
+"У збірку можна додати власні функції; використовуйте відповідне поле в "
+"*export preset*, щоб згенерувати їх:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
-msgstr ""
+msgstr "Заміна параметрів проекту"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
@@ -331,6 +320,9 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
+"Функції можна використовувати для перевизначення певних значень конфігурації "
+"в **Параметрах проекту**. Це дозволяє вам краще налаштувати будь-яку "
+"конфігурацію під час створення збірки."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
@@ -338,29 +330,46 @@ msgid ""
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"У наступному прикладі для демонстраційної збірки гри додано інший значок "
+"(який був налаштований у спеціальному пресеті експорту, який, у свою чергу, "
+"включає лише демо-рівні)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
+msgstr "Після заміни додається нове поле для цієї конкретної конфігурації:"
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:114
+msgid ""
+"When using the :ref:`project settings \"override.cfg\" functionality "
+"<class_ProjectSettings>` (which is unrelated to feature tags), remember that "
+"feature tags still apply. Therefore, make sure to *also* override the "
+"setting with the desired feature tag(s) if you want them to override base "
+"project settings on all platforms and configurations."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:113
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:122
 msgid "Default overrides"
-msgstr ""
+msgstr "Заміна за замовчуванням"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:115
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:124
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
+"Вже існує багато параметрів, які за замовчуванням мають заміни; їх можна "
+"знайти в багатьох розділах параметрів проекту."
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:121
-#, fuzzy
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:130
 msgid "Customizing the build"
-msgstr "Компіляція нашого додатка"
+msgstr "Налаштування збірки"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:123
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:132
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"Теги функцій також можна використовувати для налаштування процесу збірки, "
+"написавши власний **ExportPlugin**. Вони також використовуються для "
+"вказівки, яка спільна бібліотека завантажується та експортується в "
+"**GDNative**."

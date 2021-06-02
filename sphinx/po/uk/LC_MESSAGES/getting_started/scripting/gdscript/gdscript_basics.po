@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,11 +46,12 @@ msgid "History"
 msgstr "Історія"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:21
-#, fuzzy
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
 "`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
-msgstr "Документація про експорт переміщена до :ref:`doc_gdscript_exports`."
+msgstr ""
+"Документація про історію GDScript була переміщена до :ref:`FAQ "
+"<doc_faq_what_is_gdscript>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid "Example of GDScript"
@@ -226,18 +227,16 @@ msgid "class"
 msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:163
-#, fuzzy
 msgid "Defines an inner class."
-msgstr "Визначає (оголошує) клас."
+msgstr "Визначає внутрішній клас."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
-#, fuzzy
 msgid "class_name"
-msgstr "class"
+msgstr "class_name"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:165
 msgid "Defines a class name and optional icon for your script."
-msgstr ""
+msgstr "Визначає назву класу та необов’язковий значок для вашого скрипту."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:167
 msgid "extends"
@@ -263,9 +262,8 @@ msgid "as"
 msgstr "as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:171
-#, fuzzy
 msgid "Cast the value to a given type if possible."
-msgstr "Якщо можливо, перекидає значення до заданого типу."
+msgstr "Якщо можливо, то переводить значення в заданий тип."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:173
 msgid "self"
@@ -304,7 +302,6 @@ msgid "static"
 msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:181
-#, fuzzy
 msgid "Defines a static function. Static member variables are not allowed."
 msgstr "Визначає статичну функцію. Статичні змінні члена не надані."
 
@@ -361,7 +358,6 @@ msgid "setget"
 msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:193
-#, fuzzy
 msgid "Defines setter and getter functions for a variable."
 msgstr "Визначає функції setter та getter для змінної."
 
@@ -370,7 +366,6 @@ msgid "breakpoint"
 msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:195
-#, fuzzy
 msgid "Editor helper for debugger breakpoints."
 msgstr "Помічник редактора для налагодження контрольних точок."
 
@@ -388,9 +383,8 @@ msgid "yield"
 msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:199
-#, fuzzy
 msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr "Підтримка супроводу. Дивіться `Coroutines with yield`_."
+msgstr "Підтримка співпрограм. Дивіться `Співпрограми з виводом`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:201
 msgid "assert"
@@ -495,7 +489,6 @@ msgid "``x[index]``"
 msgstr "``x[індекс]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
-#, fuzzy
 msgid "Subscription (highest priority)"
 msgstr "Підписка (найвищий пріоритет)"
 
@@ -520,9 +513,8 @@ msgid "``is``"
 msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
-#, fuzzy
 msgid "Instance type checker"
-msgstr "Засіб перевірки типу екземпляра"
+msgstr "Перевірка типу екземпляра"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "``~``"
@@ -595,7 +587,6 @@ msgid "``^``"
 msgstr "``^``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
-#, fuzzy
 msgid "Bitwise XOR"
 msgstr "Побітове XOR (Виключене АБО)"
 
@@ -620,7 +611,6 @@ msgid "``in``"
 msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
-#, fuzzy
 msgid "Content test"
 msgstr "Перевірка вмісту"
 
@@ -1931,7 +1921,8 @@ msgstr ""
 "викликати при перевантаженні."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Конструктор класу"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148

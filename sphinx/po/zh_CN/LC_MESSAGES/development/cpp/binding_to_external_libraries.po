@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "绑定到外部库"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:7
 msgid "Modules"
-msgstr "模块（Modules）"
+msgstr "模块(Modules)"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:9
 msgid ""
@@ -33,48 +33,47 @@ msgid ""
 "festival/>`_, a speech synthesis (text-to-speech) library written in C++."
 msgstr ""
 ":ref:`doc_custom_modules_in_c++` 中的Summator例子对于小型自定义的模块来说是非"
-"常好，但是如果想使用一个更大的外部库呢？来看一个使用 `Festival <http://www."
-"cstr.ed.ac.uk/projects/festival/>`_ 的例子，这是一个用C++编写的语音合成库（文"
-"本到语音）。"
+"常好,但是如果想使用一个更大的外部库呢？来看一个使用 `Festival <http://www."
+"cstr.ed.ac.uk/projects/festival/>`_ 的例子,这是一个用C++编写的语音合成库(文本"
+"到语音)."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:14
 msgid ""
 "To bind to an external library, set up a module directory similar to the "
 "Summator example:"
-msgstr "要绑定到外部库，请设置类似于Summator示例的模块目录："
+msgstr "要绑定到外部库,请设置类似于Summator示例的模块目录:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:20
 msgid "Next, you will create a header file with a simple TTS class:"
-msgstr "接下来，您将使用简单的TTS类创建头文件："
+msgstr "接下来,您将使用简单的TTS类创建头文件:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:45
 msgid "And then you'll add the cpp file."
-msgstr "然后您将添加cpp文件。"
+msgstr "然后您将添加cpp文件."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:70
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
 "files need to be created:"
-msgstr "和以前一样，需要以某种方式注册新类，因此还需要创建两个文件："
+msgstr "和以前一样,需要以某种方式注册新类,因此还需要创建两个文件:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:79
 msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
-"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边)，"
-"这样模块才能被正确注册。"
+"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边),这"
+"样模块才能被正确注册."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:82
-#, fuzzy
 msgid "These files should contain the following:"
-msgstr "这样做会产生以下行为:"
+msgstr "这些文件应包含以下内容:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:109
 msgid ""
 "Next, you need to create a ``SCsub`` file so the build system compiles this "
 "module:"
-msgstr "接下来，需要创建一个 ``SCsub`` 文件，以便构建系统编译此模块："
+msgstr "接下来,需要创建一个 ``SCsub`` 文件,以便构建系统编译此模块:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:121
 msgid ""
@@ -83,11 +82,10 @@ msgid ""
 "instructions on how to do this for your operation system.  We've included "
 "the installation commands for Linux below, for reference."
 msgstr ""
-"您需要在计算机上安装外部库才能获取.a库文件。有关如何为您的操作系统执行此操作"
-"的特定说明，请参见库的官方文档。我们在下面包含了Linux的安装命令，以供参考。"
+"您需要在计算机上安装外部库才能获取.a库文件.有关如何为您的操作系统执行此操作的"
+"特定说明,请参见库的官方文档.我们在下面包含了Linux的安装命令,以供参考."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:132
-#, fuzzy
 msgid ""
 "The voices that Festival uses (and any other potential external/3rd-party "
 "resource) all have varying licenses and terms of use; some (if not most) of "
@@ -95,9 +93,9 @@ msgid ""
 "is MIT License compatible. Please be sure to check the licenses and terms of "
 "use."
 msgstr ""
-"**重要：** Festival使用的声音（以及任何其他潜在的外部/第三方资源）均具有不同"
-"的许可和使用条款；即使Festival库本身是与MIT许可兼容的，但其中的一些（不是大多"
-"数）可能与Godot会有问题。请务必检查许可和使用条款。"
+"Festival使用的声音(以及任何其他潜在的外部/第三方资源)都有不同的许可证和使用条"
+"款；其中一些(如果不是大多数)可能会对Godot产生问题,即使Festival库本身是与MIT许"
+"可证兼容.请务必检查许可证和使用条款."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:137
 msgid ""
@@ -107,9 +105,9 @@ msgid ""
 "installed from the modules/tts/ directory via git using the following "
 "commands:"
 msgstr ""
-"外部库也需要安装在模块内部，以使编译器可以访问源文件，同时保持模块代码独立。"
-"可以通过 ``git`` 使用以下命令从 ``modules/tts/`` 目录中安装 ``Festival`` 和 "
-"``Speech_tools`` 库："
+"外部库也需要安装在模块内部,以使编译器可以访问源文件,同时保持模块代码独立.可以"
+"通过 ``git`` 使用以下命令从 ``modules/tts/`` 目录中安装 ``Festival`` 和 "
+"``Speech_tools`` 库:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:147
 msgid ""
@@ -117,26 +115,25 @@ msgid ""
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
-"如果您不希望将外部存储库源文件提交到您的存储库，您可以通过将它们添加为子模块"
-"（从 ``modules/tts/`` 目录中）来链接它们，如下所示："
+"如果您不希望将外部存储库源文件提交到您的存储库,您可以通过将它们添加为子模块"
+"(从 ``modules/tts/`` 目录中)来链接它们,如下所示:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:156
-#, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository.  If "
 "you are developing a module to be merged into the main Godot repository, you "
 "should not use submodules.  If your module doesn't get merged in, you can "
 "always try to implement the external library as a GDNative C++ plugin."
 msgstr ""
-"**重要：** 请注意，Godot存储库中未使用Git子模块。如果要开发将要合并到主Godot"
-"存储库中的模块，则不应使用子模块。如果您的模块未合并，则始终可以尝试将外部库"
-"实现为GDNative C++插件。"
+"请注意,Godot仓库中不使用Git子模块. 如果你开发的模块要被合并到Godot主仓库,你不"
+"应该使用子模块. 如果你的模块没有被合并,你可以尝试将外部库作为GDNative C++插件"
+"来实现."
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:161
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
-msgstr "要添加供编译器查看的包含目录，可以将其追加到环境的路径中："
+msgstr "要添加供编译器查看的包含目录,可以将其追加到环境的路径中:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:181
 msgid ""
@@ -144,13 +141,12 @@ msgid ""
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
-"如果要在构建模块时添加自定义编译器标志，则需要首先克隆 `env`，这样它就不会将"
-"这些标志添加到整个Godot构建中（这可能会导致错误）。带有自定义标志的示例 "
-"`SCsub`："
+"如果要在构建模块时添加自定义编译器标志,则需要首先克隆 `env`,这样它就不会将这"
+"些标志添加到整个Godot构建中(这可能会导致错误).带有自定义标志的示例 `SCsub`:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:196
 msgid "The final module should look like this:"
-msgstr "最终模块应如下所示："
+msgstr "最终模块应如下所示:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:214
 msgid "Using the module"
@@ -158,8 +154,8 @@ msgstr "使用模块"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:216
 msgid "You can now use your newly created module from any script:"
-msgstr "现在，您可以通过任何脚本使用新创建的模块："
+msgstr "现在,您可以通过任何脚本使用新创建的模块:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:225
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
-msgstr "如果说出文本，输出将是 ``is_spoken:True`` 。"
+msgstr "如果说出文本,输出将是 ``is_spoken:True`` ."

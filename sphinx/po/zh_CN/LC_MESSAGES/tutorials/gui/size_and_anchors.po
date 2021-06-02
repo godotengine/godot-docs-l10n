@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid ""
 "case."
 msgstr ""
 "如果一个游戏总是用同一分辨率在同样的设备上运行, 摆放控件将是一个简单的事, 只"
-"要逐个设置它们的位置属性和大小属性即可。不幸的是, 能像这样处理的情况很少。"
+"要逐个设置它们的位置属性和大小属性即可.不幸的是, 能像这样处理的情况很少."
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:11
 msgid ""
@@ -37,57 +37,51 @@ msgid ""
 "else, from computer monitors to tablets, portable consoles and mobile phones "
 "have different resolutions and aspect ratios."
 msgstr ""
-"如今只有电视机有标准分辨率和纵横比。而其他所有设备，从计算机显示器到平板电"
-"脑、便携游戏主机和手机等等，都有不同的分辨率和纵横比。"
+"如今只有电视机有标准分辨率和纵横比.而其他所有设备,从计算机显示器到平板电脑、"
+"便携游戏主机和手机等等,都有不同的分辨率和纵横比."
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:15
-#, fuzzy
 msgid ""
 "There are several ways to handle this, but for now, let's just imagine that "
 "the screen resolution has changed and the controls need to be re-positioned. "
 "Some will need to follow the bottom of the screen, others the top of the "
 "screen, or maybe the right or left margins."
 msgstr ""
-"有好几种方法可以处理此问题, 但现在让我们试想一下, 当屏幕分辨率被改变后, 控件"
-"需要重新摆放位置的情况。有些控件需要跟随屏幕的底边, 其他的一些要跟着屏幕的顶"
-"部, 或者可能是右边或左边的边距。"
+"有几种方法来处理这个问题,但现在,让我们想象一下,屏幕分辨率已经改变,控件需要重"
+"新定位.有的需要跟随屏幕的底部,有的需要跟随屏幕的顶部,也有的需要跟随左右边距."
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:22
-#, fuzzy
 msgid ""
 "This is done by editing the *margin* properties of controls. Each control "
 "has four margins: left, right, bottom and top. By default, all of them "
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
-"这样的需求通过编辑控件的 * 边距 *(*margin*) 属性来实现。每个控件都有四个页边"
-"距: 左、右、下和上。默认情况下, 它们都表示相对于父控件或 (如果没有父控件) 视"
-"区的左上角的像素距离。"
+"这是通过编辑控件的 *margin* 属性来实现的.每个控件都有四个边距:左、右、底和顶."
+"默认情况下,它们都表示相对于父控件的左上角或在没有父控件的情况下视窗的像素距"
+"离."
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:29
-#, fuzzy
 msgid ""
 "When horizontal (left, right) and/or vertical (top, bottom) anchors are "
 "changed to 1, the margin values become relative to the bottom-right corner "
 "of the parent control or viewport."
 msgstr ""
-"当水平 (左、右) 和/或垂直 (顶部、底部) 锚点变为END值时, 边距值将以父控件或视"
-"区的右下角作为参照点。"
+"当水平(左、右)和/或 垂直(上、下)锚点被改为1时,边距值就会变成相对于父控件或视"
+"窗的右下角."
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:35
-#, fuzzy
 msgid ""
 "Here, the control is set to expand its bottom-right corner with that of the "
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
 msgstr ""
-"这幅图中的示例表示, 控件被设置为延展到父控件的右下角, 因此当重新调整父控件(或"
-"视区)大小时, 控件将始终覆盖父控件, 每边留下20像素的边距:"
+"在这里,控件被设置为与父级的右下角一起展开,所以当调整父级的大小时,控件将始终覆"
+"盖它,并留下20像素的空白:"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:42
-#, fuzzy
 msgid "Centering a control"
-msgstr "自定义控件"
+msgstr "使控件居中"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:44
 msgid ""
@@ -95,8 +89,8 @@ msgid ""
 "half of its relevant dimension. For example, the code below shows how a "
 "TextureRect can be centered in its parent:"
 msgstr ""
-"要将控件集中到其父控件中，其锚定值为0.5，每个边距为其相关尺寸的一半。例如，下"
-"面的代码显示了如何将纹理矩形居中到它的父节点："
+"要将控件集中到其父控件中,其锚定值为0.5,每个边距为其相关尺寸的一半.例如,下面的"
+"代码显示了如何将纹理矩形居中到它的父节点:"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:63
 msgid ""
@@ -104,5 +98,5 @@ msgid ""
 "center of its parent. From there, we set negative margins so that the "
 "control gets its natural size."
 msgstr ""
-"将每个锚定值设置为0.5，将边缘的参考点移动到父锚点的中心。在此基础上，我们设置"
-"了负边距，以便控件获得其自然大小。"
+"将每个锚定值设置为0.5,将边缘的参考点移动到父锚点的中心.在此基础上,我们设置了"
+"负边距,以便控件获得其自然大小."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Documentation guidelines"
 msgstr "文档指南"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
-#, fuzzy
 msgid ""
 "This page describes the rules to follow if you want to contribute to Godot "
 "Engine by writing or reviewing documentation, or by translating existing "
@@ -31,10 +30,10 @@ msgid ""
 "page <https://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
 msgstr ""
-"本页介绍了如果您想通过编写或审阅文档，或翻译现有文档来为Godot Engine做贡献的"
-"规则。另请参阅 `godot-docs GitHub存储库 <https://github.com/godotengine/"
-"godot-docs>`_ 的README和 `文档首页 <http://docs.godotengine.org>`_ 关于要遵循"
-"的步骤以及如何联系文档团队。"
+"本页介绍了如果你想通过编写或审阅文档,或翻译现有的文档来为Godot引擎做贡献,需要"
+"遵循的规则.另外,请看 `godot-docs GitHub仓库的README <https://github.com/"
+"godotengine/godot-docs>`_ 和 `docs front page <https://docs.godotengine."
+"org>`_ ,了解应该遵循哪些步骤以及如何联系docs团队."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
@@ -50,9 +49,9 @@ msgid ""
 "documentation."
 msgstr ""
 "创建或修改文档页面主要通过 `godot-docs GitHub存储库 <https://github.com/"
-"godotengine/godot-docs>`_ 来完成。HTML(或PDF和EPUB)文档是从该存储库中的.rst文"
-"件(reStructuredText标记语言)生成的。在拉取请求中修改这些页面并将其合并将触发"
-"重建在线文档。"
+"godotengine/godot-docs>`_ 来完成.HTML(或PDF和EPUB)文档是从该存储库中的.rst文"
+"件(reStructuredText标记语言)生成的.在拉取请求中修改这些页面并将其合并将触发重"
+"建在线文档."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -60,8 +59,8 @@ msgid ""
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
-"有关Git用法和拉取请求工作流程的详细信息，请参阅 :ref:`doc_pr_workflow` 页面。"
-"它描述的关于主godotengine/godot存储库的大部分内容，这对文档存储库也是有效的。"
+"有关Git用法和拉取请求工作流程的详细信息,请参阅 :ref:`doc_pr_workflow` 页面.它"
+"描述的关于主godotengine/godot存储库的大部分内容,这对文档存储库也是有效的."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
@@ -69,8 +68,8 @@ msgid ""
 "please read it. In particular, it contains some tips and tricks and links to "
 "reference documentation about the reStructuredText markup language."
 msgstr ""
-"README.md文件包含了开始所需的所有信息，请阅读它。特别是，它包含一些提示和技巧"
-"以及有关reStructuredText标记语言的参考文档的链接。"
+"README.md文件包含了开始所需的所有信息,请阅读它.特别是,它包含一些提示和技巧以"
+"及有关reStructuredText标记语言的参考文档的链接."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
@@ -80,54 +79,51 @@ msgid ""
 "used to generate the in-editor documentation as well as the API reference of "
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
-"如果您想编辑 **API参考手册** ，请注意它 *不* 应该在godot-docs存储库中完成。而"
-"是，您应该编辑Godot的主存储库的 ``doc/classes/*`` XML文件。这些文件随后将用于"
-"生成编辑器内文档以及在线文档的API参考手册。在这里 :ref:"
-"`doc_updating_the_class_reference` 阅读更多。"
+"如果您想编辑 **API参考手册** ,请注意它 *不* 应该在godot-docs存储库中完成.而"
+"是,您应该编辑Godot的主存储库的 ``doc/classes/*`` XML文件.这些文件随后将用于生"
+"成编辑器内文档以及在线文档的API参考手册.在这里 :ref:"
+"`doc_updating_the_class_reference` 阅读更多."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
-#, fuzzy
 msgid "The 'Edit on GitHub' link"
-msgstr "“在Github编辑”的链接"
+msgstr "在 'GitHub上编辑' 的链接"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
-#, fuzzy
 msgid ""
 "If you're reading documentation on `docs.godotengine.org <https://docs."
 "godotengine.org>`_, you'll see an **Edit on GitHub** hyperlink at the top "
 "right of the page. Once you've created a GitHub account, you can propose "
 "changes to a page you're reading as follows:"
 msgstr ""
-"如果您正在阅读 ``docs.godotengine.org`` 上的文档，则会在页面右上方看到“在"
-"GitHub上编辑”的超链接。创建GitHub帐户后，您可以按以下方式对正在阅读的页面提出"
-"更改建议："
+"如果你正在阅读 `docs.godotengine.org <https://docs.godotengine.org>`_ 上的文"
+"档,你会在页面的右上方看到一个 **Edit on GitHub** 的超链接.一旦你创建了GitHub"
+"账户,你就可以对你正在阅读的页面提出修改意见,方法如下:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:47
 msgid "Click the **Edit on GitHub** button."
-msgstr "点击“Edit on GitHub”按钮。"
+msgstr "点击\"Edit on GitHub\"按钮."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:49
-#, fuzzy
 msgid ""
 "On the GitHub page you're taken to, click the pencil icon in the top-right "
 "corner near the **Raw**, **Blame** and **History** buttons. It has the "
 "tooltip \"Edit the file in a fork of this project\"."
 msgstr ""
-"在转到的GitHub页面上，点击铅笔图标。它具有工具提示“在此项目的分支中编辑文"
-"件”。"
+"在您转到的GitHub页面上,点击右上角靠近 **Raw**、 **Blame** 和 **History** 按钮"
+"的铅笔图标.它的工具提示是 \"Edit the file in a fork of this project\" 在这个"
+"项目的分叉中编辑文件."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid "Complete all the edits you want to make for that page."
-msgstr "完成您要对该页面进行的所有编辑。"
+msgstr "完成您要对该页面进行的所有编辑."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:55
-#, fuzzy
 msgid ""
 "Summarize the changes you made in the form at the bottom of the page and "
 "click the button labelled **Propose file change** when done."
 msgstr ""
-"在页面底部总结您在表单中所做的更改，并在完成后点击标记为“建议更改文件”的按"
-"钮。"
+"在页面底部的表格中总结你所做的修改,完成后点击标有**Propose file change**的按"
+"钮."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:58
 msgid ""
@@ -135,39 +131,37 @@ msgid ""
 "see a message like *Username wants to merge 1 commit into godotengine:master "
 "from Username:patch-6*."
 msgstr ""
-"在接下来的页面上，点击 **创建请求请求** 按钮，直到看到诸如 *Open. "
+"在接下来的页面上,点击 **创建请求请求** 按钮,直到看到诸如 *Open. "
 "yourGitHubUsername wants to merge 1 commit into godotengine:master from "
-"yourGitHubUsername:patch-6*的讯息。"
+"yourGitHubUsername:patch-6*的讯息."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:62
-#, fuzzy
 msgid ""
 "A reviewer will evaluate your changes and incorporate them into the docs if "
 "they're acceptable. You might also be asked to make modifications to your "
 "changes before they're included."
 msgstr ""
-"如果您的更改被认为有助于改进，审阅者将评估您的更改并将其合并到文档中。可能还"
-"会要求您对更改进行修改，然后再将其包括在内。"
+"审核者会评估你的修改,如果你的修改可以接受,就把它们纳入文档.可能还会要求您对更"
+"改进行修改,然后再将其包括在内."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:67
 msgid "What makes good documentation?"
 msgstr "什么是良好的文档？"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:69
-#, fuzzy
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
 "and objective. Also, have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
-"文档应该用简单的英语写成，使用格式良好的句子和各种级别的章节和小节。它应该清"
-"楚客观。另请看 :ref:`doc_docs_writing_guidelines` 。"
+"文件应该用通俗的英语写好,使用格式良好的句子和不同层次的章节和分节.它应该是清"
+"晰和客观的.另请看 :ref:`doc_docs_writing_guidelines` ."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:73
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
-msgstr "我们通过以下定义将教程页面与其他文档页面区分开："
+msgstr "我们通过以下定义将教程页面与其他文档页面区分开:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
@@ -176,8 +170,8 @@ msgid ""
 "purpose (e.g. \"Making a simple 2d Pong game\", \"Applying forces to an "
 "object\")."
 msgstr ""
-"教程：该页面旨在说明如何在编辑器或脚本中使用一个或多个概念，以达到具有学习目"
-"的的特定目标(例如“制作简单的2d Pong游戏”，“向对象施加力”)。"
+"教程:该页面旨在说明如何在编辑器或脚本中使用一个或多个概念,以达到具有学习目的"
+"的特定目标(例如\"制作简单的2d Pong游戏\",\"向对象施加力\")."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid ""
@@ -185,15 +179,14 @@ msgid ""
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
-"文档：一个页面，如果可能的话，一次只描述一个且只有一个概念(例如Sprite类的方法"
-"列表，或者Godot中输入管理的概述)。"
+"文档:一个页面,如果可能的话,一次只描述一个且只有一个概念(例如Sprite类的方法列"
+"表,或者Godot中输入管理的概述)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
-msgstr ""
-"只要您遵守以下规则(以及储存库中的规则)，你可以自由地编写你想的那种文档。"
+msgstr "只要您遵守以下规则(以及储存库中的规则),你可以自由地编写你想的那种文档."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:88
 msgid "Titles"
@@ -201,17 +194,17 @@ msgstr "标题"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Always begin pages with their title and a Sphinx reference name:"
-msgstr "始终以标题和Sphinx引用名称开始页面："
+msgstr "始终以标题和Sphinx引用名称开始页面:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:99
-#, fuzzy
 msgid ""
 "The reference allows linking to this page using the ``:ref:`` format, e.g. "
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
-"该引用允许使用 ``:ref:`` 格式，例如 ``:ref:`doc_insert_your_title_here``` 将"
-"链接此页面到上面的示例页面(注意引用中没有前导下划线)。"
+"引用允许使用 `` :ref:`` 格式链接到这个页面,例如 `` :ref:"
+"`doc_insert_your_title_here``` 将链接到上面的例子页面(注意引用中没有前导下划"
+"线)."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:103
 msgid ""
@@ -219,8 +212,8 @@ msgid ""
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
-"另外，避免使用美国驼峰式标题：标题的第一个单词应以大写字母开头，而后面的每个"
-"单词都不应该大写。因此，这是一个很好的示例："
+"另外,避免使用美国驼峰式标题:标题的第一个单词应以大写字母开头,而后面的每个单词"
+"都不应该大写.因此,这是一个很好的示例:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid "Insert your title here"
@@ -228,7 +221,7 @@ msgstr "Insert your title here"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:109
 msgid "And this is a bad example:"
-msgstr "这是一个糟糕的示例："
+msgstr "这是一个糟糕的示例:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:111
 msgid "Insert Your Title Here"
@@ -238,7 +231,7 @@ msgstr "Insert Your Title Here"
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
-msgstr "只有项目、人员和节点类名称应该首字母大写。"
+msgstr "只有项目、人员和节点类名称应该首字母大写."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:117
 msgid "Translating existing pages"
@@ -250,17 +243,16 @@ msgid ""
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
 "您可以帮助我们翻译或校对托管在 `Hosted Weblate <https://hosted.weblate.org/"
-"engage/godot-engine/>`_ 上的官方Godot文档。"
+"engage/godot-engine/>`_ 上的官方Godot文档."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:128
-#, fuzzy
 msgid ""
 "There also is the official `Godot i18n repository <https://github.com/"
 "godotengine/godot-docs-l10n>`_ where you can see when the data was last "
 "synchronized."
 msgstr ""
-"还有官方的 `Godot I18N存储库 <https://github.com/godotengine/godot-docs-"
-"l10n>`_ 。您可以在那里查看数据上次同步的时间。"
+"还有官方的 `Godot i18n仓库<https://github.com/godotengine/godot-docs-"
+"l10n>`_ ,在那里你可以看到数据最后一次被同步的时间."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:133
 msgid "License"
@@ -274,11 +266,11 @@ msgid ""
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
 "本文档及其包含的每个页面均根据 `知识共享署名3.0许可证(CC-BY-3.0) <https://"
-"tldrlegal.com/license/creative-commons-attribution-(cc)>`_ 的条款发布 ，归属"
-"于“Juan Linietsky，Ariel Manzur和Godot社区”。"
+"tldrlegal.com/license/creative-commons-attribution-(cc)>`_ 的条款发布 ,归属于"
+"\"Juan Linietsky,Ariel Manzur和Godot社区\"."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:138
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."
-msgstr "通过贡献GitHub存储库上的文档，您同意您的更改是根据此许可证分发的。"
+msgstr "通过贡献GitHub存储库上的文档,您同意您的更改是根据此许可证分发的."

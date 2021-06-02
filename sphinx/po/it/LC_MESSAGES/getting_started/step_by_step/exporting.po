@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "essere gestito da chiunque."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -47,25 +46,23 @@ msgid ""
 "way the game works."
 msgstr ""
 "La modalità di esportazione del gioco dipende dalla piattaforma di "
-"destinazione. In questo tutorial, imparerai come esportare il gioco \"Dodge "
-"the Creeps\" per una varietà di esse. In primo luogo, tuttavia, abbiamo "
+"destinazione. In questo tutorial, imparerai come esportare il gioco *Dodge "
+"the Creeps* per una varietà di esse. In primo luogo, tuttavia, abbiamo "
 "bisogno di apportare modifiche ad alcune funzionalità del gioco."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Se non hai ancora creato \"Dodge the Creeps\", leggi :"
-"ref:'doc_your_first_game' prima di continuare con questo tutorial."
+"Se non hai ancora creato *Dodge the Creeps*, leggi :ref:"
+"`doc_your_first_game` prima di continuare con questo tutorial."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
 msgstr "Preparazione del progetto"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -73,14 +70,13 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
-"In \"Dodge the Creeps\" abbiamo usato i controlli della tastiera per muovere "
-"il giocatore. Questo va bene su una PC, ma su un telefono o tablet è "
-"necessario rilevare l'input da touchscreen. Poiché un evento click può "
+"In *Dodge the Creeps* abbiamo usato i controlli della tastiera per muovere "
+"il giocatore. Questo va bene su un PC, ma su un telefono o tablet è "
+"necessario rilevare l'input dal touchscreen. Poiché un evento click può "
 "essere trattato allo stesso modo di un evento touch, convertiremo il gioco "
-"in uno stile di input click-and-move."
+"in uno stile di input adatto a dispositivi mobili."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
-#, fuzzy
 msgid ""
 "By default, Godot emulates mouse input from touch input. That means that if "
 "anything is coded to happen on a mouse event, touch will trigger it as well. "
@@ -92,37 +88,37 @@ msgstr ""
 "se qualcosa viene codificato per attivarsi con un evento del mouse, anche "
 "l'input touch lo attiverà. Godot può anche emulare l'input touch dal clic "
 "del mouse, del quale ne avremo bisogno per essere in grado di continuare a "
-"giocare sul nostro computer dopo che passeremo all'input touch. In "
-"\"Impostazioni progetto\" in *Dispositivi di input* e *Puntamento*, imposta "
-"*Emula touch dal mouse* su \"Attivo\"."
+"giocare sul nostro computer dopo che passeremo all'input touch."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
+#, fuzzy
 msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"In **Progetto > Impostazioni del progetto**, sotto **Dispositivi di input > "
+"Puntamento**, abilitate **Emulare il tocco dal mouse**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 #, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "Vogliamo anche assicurarci che il gioco sia in scala costante su schermi di "
 "dimensioni diverse, quindi nelle impostazioni del progetto andate su "
-"*Visualizza*, poi cliccate su *Finestra*. Nelle opzioni *Stretch*, impostare "
-"*Mode* su \"2d\" e *Aspect* su \"keep\"."
+"**Visualizza**, poi cliccate su **Finestra**. Nelle opzioni **Stretch**, "
+"impostare **Mode** su ``2d`` e **Aspect** su ``keep``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
-#, fuzzy
 msgid ""
 "Since we are already in the **Window** settings, we should also set under "
 "**Handheld** the **Orientation** to ``portrait``."
 msgstr ""
-"Dato che siamo già nelle impostazioni *Finestra*, dovremmo anche impostare "
-"sotto *Manuale* l'*Orientamento* su \"ritratto\"."
+"Dato che siamo già nelle impostazioni **Finestra**, dobbiamo anche impostare "
+"nella sezione **Manuale** l'opzione **Orientamento** su ``ritratto``."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:50
 msgid ""
@@ -148,34 +144,33 @@ msgid "Setting a main scene"
 msgstr "Impostare una scena principale"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:244
-#, fuzzy
 msgid ""
 "The main scene is the one that your game will start in. For this *Dodge the "
 "Creeps* example, in **Project -> Project Settings -> Application -> Run**, "
 "set **Main Scene** to ``Main.tscn`` by clicking the folder icon and "
 "selecting it."
 msgstr ""
-"La scena radice è la scena da cui il gioco si avvia. In *Progetto -> "
-"Impostazioni Progetto -> Applicazione -> Esegui*, imposta *Main Scene* a "
-"\"Main.tscn\" cliccando l'icona della cartella e selezionandola."
+"La scena radice è la scena da cui il gioco si avvia. Per questo esempio "
+"*Dodge the Creeps*, in **Progetto -> Impostazioni Progetto -> Applicazione -"
+"> Esegui**, imposta **Main Scene** a ``Main.tscn`` cliccando l'icona della "
+"cartella e selezionandola."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Export templates"
 msgstr "Modelli di esportazione"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform. You can also "
 "download them in Godot by clicking on **Editor -> Manage Export Templates**:"
 msgstr ""
-"Per esportare, è necessario scaricare i modelli di esportazione da http://"
-"godotengine.org/download. Questi modelli sono versioni ottimizzate del "
-"motore senza l'editor precompilato per ogni piattaforma. È anche possibile "
-"scaricarli in Godot facendo clic su \"Editor\" - - - > Gestisci modelli di "
-"esportazione:"
+"Per esportare il progetto, è necessario scaricare *i modelli di "
+"esportazione* da http://godotengine.org/download. Questi modelli sono "
+"versioni ottimizzate del IDE senza l'editor precompilato per le piattaforme. "
+"È anche possibile scaricarli da Godot facendo clic su **Editor - > Gestisci "
+"modelli di esportazione**:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -184,34 +179,39 @@ msgid ""
 "Therefore, you don't need to download them using the **Manage Export "
 "Templates** dialog."
 msgstr ""
+"Se hai scaricato Godot da `Steam <https://store.steampowered.com/app/404790/"
+"Godot_Engine/>`__, i modelli di esportazione sono già inclusi. Pertanto, non "
+"hai bisogno di scaricarli dalla finestra di dialogo **Manage Export "
+"Templates**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
-#, fuzzy
 msgid ""
 "In the window that appears, you can click **Download** to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"Nella finestra che appare, puoi cliccare su \"Download\" per ottenere la "
-"versione del modello che corrisponde alla tua versione di Godot."
+"Nella finestra che appare, clicca su **Download** per ottenere la versione "
+"del modello che corrisponde alla tua versione di Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
 "Export templates are bound to a specific Godot version. If you upgrade "
 "Godot, you must download templates that match the new version."
 msgstr ""
+"I modelli di esportazione sono legati ad una specifica versione di Godot. Se "
+"aggiorni Godot, devi scaricare i modelli che corrispondono alla nuova "
+"versione."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:277
 msgid "Export presets"
 msgstr "Export presets (Profili di esportazione)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
 msgstr ""
-"Successivamente, è possibile configurare le impostazioni di esportazione "
-"facendo clic su * Progetto -> Esporta *."
+"Dopo, puoi configurare le impostazioni di esportazione facendo clic su "
+"**Progetto -> Esporta**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:281
 #, fuzzy
@@ -219,37 +219,36 @@ msgid ""
 "Create a new export preset by clicking **Add...** and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
-"Crea un nuovo pofilo di esportazione cliccando su \"Add.....\" e "
-"selezionando una piattaforma. È possibile creare più profili a piacere con "
-"impostazioni diverse."
+"Crea un nuovo pofilo di esportazione cliccando su \"Aggiungi.....\" e "
+"selezionando una piattaforma. È possibile creare quanti profili tu voglia, "
+"con impostazioni diverse."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
 "Nella parte inferiore della finestra sono presenti due pulsanti. \"Esporta "
-"PCK / ZIP\" crea solo una versione compressa dei dati del progetto. Questo "
-"non include alcun eseguibile, quindi il progetto non può girare in autonomia."
+"PCK / ZIP\" crea solo una versione compressa dei dati del progetto. Non "
+"includerà alcun eseguibile, quindi il progetto non può essere eseguito in "
+"autonomia."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
 msgstr ""
-"Il secondo pulsante, \"Esporta progetto\", crea una versione eseguibile "
-"completa del gioco, ad esempio un '.apk' per Android o un '.exe' per Windows."
+"Il secondo pulsante, **Esporta progetto**, crea una versione eseguibile "
+"completa del gioco, come ad esempio un ``.apk`` per Android o un ``.exe`` "
+"per Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
-#, fuzzy
 msgid ""
 "In the **Resources** and **Features** tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"Nelle schede \"Risorse\" e \"Caratteristiche\" è possibile personalizzare le "
+"Nelle schede **Risorse** e **Caratteristiche** è possibile personalizzare le "
 "modalità di esportazione del gioco per ogni piattaforma. Per ora possiamo "
 "lasciare queste impostazioni come sono."
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,79 +22,79 @@ msgid "Exporting for Android"
 msgstr "Androidへのエクスポート"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
 msgstr ""
-"Android向けのエクスポートは、Godotをコンパイルするよりも要件が少ないです。次"
-"の手順では、SDKとエンジンのセットアップに必要なものについて詳しく説明します。"
+"Android用のエクスポートは、GodotをAndroid用にコンパイルするよりも必要な条件が"
+"少ないです。Android SDKとエンジンの設定方法を、以下のステップで詳しく説明しま"
+"す。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
 msgstr "Android SDKをダウンロード"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid "Download and install the Android SDK."
-msgstr "Android Studioのダウンロードとインストール"
+msgstr "Android SDKのダウンロードとインストール"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
-#, fuzzy
 msgid ""
 "You can install it using `Android Studio version 4.1 or later <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"`developer.android.com <https://developer.android.com/studio/>`__ から"
-"Android SDKをダウンロードしてインストールします。"
+"`Android Studio 4.1 以降 <https://developer.android.com/studio/>`__ をインス"
+"トールします。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
 "Run it once to complete the SDK setup using these `instructions <https://"
 "developer.android.com/studio/intro/update#sdk-manager>`__."
 msgstr ""
+"`この方法 <https://developer.android.com/studio/intro/update#sdk-manager>`__ "
+"でツールの更新を行います。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
 msgid ""
 "Ensure that the `required packages <https://developer.android.com/studio/"
 "intro/update#recommended>`__ are installed as well."
 msgstr ""
+"`推奨パッケージ <https://developer.android.com/studio/intro/"
+"update#recommended>`__ がインストールされていることを確認してください。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK Platform-Tools バージョン 30.0.5以降"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
-msgid "Android SDK Build-Tools version 30.0.1"
-msgstr ""
+#, fuzzy
+msgid "Android SDK Build-Tools version 30.0.3"
+msgstr "Android SDK Build-Tools バージョン 30.0.1"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
-#, fuzzy
 msgid "Android SDK Platform 29"
-msgstr "\\ Android SDK Platform"
+msgstr "Android SDK Platform 29"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
-#, fuzzy
 msgid "Android SDK Command-line Tools (latest)"
-msgstr "Android SDKのインストール(コマンドラインバージョン)"
+msgstr "Android SDK Command-line Tools (最新版)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid "CMake version 3.10.2.4988404"
-msgstr ""
+msgstr "CMake バージョン 3.10.2.4988404"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "NDK version 21.4.7075529"
-msgstr ""
+msgstr "NDK バージョン 21.4.7075529"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
-#, fuzzy
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
 "com/studio/#command-tools>`__."
 msgstr ""
-"それでも失敗する場合は、コマンドラインを開き、\\ `logcat <https://developer."
-"android.com/studio/command-line/logcat>`_を実行します。"
+"`コマンドラインツール <https://developer.android.com/studio/#command-"
+"tools>`__ でもインストールできます。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
@@ -102,30 +102,35 @@ msgid ""
 "developer.android.com/studio/command-line/sdkmanager>`__ command to complete "
 "the setup process:"
 msgstr ""
+"コマンドラインツールインストール後、 `sdkmanager <https://developer.android."
+"com/studio/command-line/sdkmanager>`__ コマンドでセットアップを完了します:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
+"Linux環境では、**ディストリビューションのAndroid SDKは古いことが多いので、使"
+"用しないでください**。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 8"
-msgstr "JDKのインストール"
+msgstr "OpenJDK 8のインストール"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
 msgstr ""
+"`OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__ からダウンロード、インストールしてく"
+"ださい。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid "Create a debug.keystore"
 msgstr "デバッグキーストアを作成する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:47
-#, fuzzy
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
@@ -133,18 +138,18 @@ msgid ""
 "on Linux and macOS, in the ``C:\\Users\\<user>\\.android\\`` directory on "
 "Windows)."
 msgstr ""
-"Androidでは、デバイスにインストールし、リリースされていないAPKを配布するため"
-"のデバッグキーストアファイルが必要です。以前にSDKを使用してプロジェクトをビル"
-"ドしたことがある場合は、antまたはeclipseによってプロジェクトが生成される可能"
-"性があります(LinuxとmacOSの場合、\\ ``~/.android``\\ ディレクトリに見つけるこ"
-"とができます)。"
+"Androidでは、デバイスにインストールし、リリース用ではないAPKを配布するため"
+"の、デバッグキーストアファイルが必要です。以前にSDKを使用してプロジェクトをビ"
+"ルドしたことがある場合は、antまたはeclipseによって作成済みの可能性があります "
+"(Linux 、macOSでは、 ``~/.android`` ディレクトリ、Windowsでは ``C:\\Users"
+"\\<user>\\.android\\`` ディレクトリ )。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:52
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr ""
-"見つからない場合や生成する必要がある場合は、JDKのkeytoolコマンドをこの目的に"
+"見つからない場合や作成する必要がある場合は、JDKのkeytoolコマンドをこの目的に"
 "使用できます:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
@@ -166,12 +171,11 @@ msgid "Setting it up in Godot"
 msgstr "Godotで設定する"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:62
-#, fuzzy
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
 msgstr ""
-"[エディタ設定]画面に入力します。この画面には、コンピュータのユーザー アカウン"
+"[エディタ設定]画面に移動します。この画面には、コンピュータのユーザー アカウン"
 "トのエディタ設定が含まれます (プロジェクトから独立しています)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
@@ -179,9 +183,8 @@ msgid "Scroll down to the section where the Android settings are located:"
 msgstr "Androidの設定が配置されているセクションまで下にスクロールします:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:72
-#, fuzzy
 msgid "In that screen, 2 paths need to be set:"
-msgstr "この画面では、3つのファイルへのパスを設定する必要があります:"
+msgstr "この画面で、2つのファイルパスを設定する必要があります:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:74
 msgid ""
@@ -189,6 +192,9 @@ msgid ""
 "installed. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/"
 "Users/$USER/Library/Android/sdk/`` on macOS."
 msgstr ""
+"``Android Sdk Path`` Android SDK のインストール場所。例 Windowsでは``"
+"%LOCALAPPDATA%\\Android\\Sdk\\``、 macOSでは``/Users/$USER/Library/Android/"
+"sdk/`` 。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 msgid ""
@@ -368,9 +374,9 @@ msgstr ""
 "gitignore`` ファイルまたは同等のファイルに追加する必要があります。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
+#, fuzzy
 msgid ""
-"Don't forget to uncheck the **Export With Debug** checkbox while choosing "
-"the APK's name."
+"Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
 "APKの名前を選択する際は、[** Export with Debug **]チェックボックスをオフにす"
 "ることを忘れないでください。"

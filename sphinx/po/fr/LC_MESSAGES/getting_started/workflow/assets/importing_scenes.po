@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,33 +47,31 @@ msgstr ""
 "Godot prend en charge les *formats de fichiers de scènes* 3D suivants :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid ""
 "glTF 2.0 **(recommended)**. Godot has full support for both text (``.gltf``) "
 "and binary (``.glb``) formats."
 msgstr ""
-"glTF 2.0. Godot a un support complet pour les formats texte et binaire."
+"glTF 2.0 **(recommandé)**. Godot a un support complet pour les formats texte "
+"(``.gltf``) et binaire (``.glb``)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid "DAE (COLLADA), an older format that is fully supported."
 msgstr "DAE (COLLADA), un ancien format qui est entièrement supporté."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
-#, fuzzy
 msgid ""
 "OBJ (Wavefront) format + their MTL material files. This is also fully "
 "supported, but pretty limited (no support for pivots, skeletons, animations, "
 "PBR materials, ...)."
 msgstr ""
-"Formats OBJ (Wavefront). C'est également entièrement pris en charge, mais "
-"assez limité (pas de prise en charge des pivots, squelettes, etc.)."
+"OBJ (Wavefront) + leurs fichiers de matériaux MTL. Ce format est également "
+"entièrement supporté, mais assez limité (pas de support pour les pivots, les "
+"squelettes, les animations, les matériaux PBR, ...)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:19
-#, fuzzy
 msgid "ESCN, a Godot-specific format that Blender can export with a plugin."
 msgstr ""
-"ESCN, un format spécifique à Godot que Blender peut exporter à l'aide d'un "
-"plugin."
+"ESCN, un format spécifique à Godot que Blender peut exporter avec un plugin."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
@@ -235,9 +233,8 @@ msgstr ""
 "décrivant ses fonctionnalités et son utilisation."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:83
-#, fuzzy
 msgid "Exporting textures separately"
-msgstr "Importer des textures"
+msgstr "Exporter les textures séparément"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:85
 msgid ""
@@ -249,19 +246,25 @@ msgid ""
 "armorpaint.org/>`__, and `Material Maker (open source) <https://github.com/"
 "RodZill4/material-maker>`__."
 msgstr ""
+"Si les textures peuvent être exportées avec un modèle dans certains formats "
+"de fichier, comme glTF 2.0, vous pouvez également les exporter séparément. "
+"Godot utilise le PBR (rendu à base physique) pour ses matériaux, donc si un "
+"programme de texturation peut exporter des textures PBR, elles peuvent "
+"fonctionner dans Godot. Cela inclut la `Substance suite <https://www."
+"substance3d.com/>`__, `ArmorPaint (open source) <https://armorpaint.org/"
+">`__, et `Material Maker (open source) <https://github.com/RodZill4/material-"
+"maker>`__."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
-#, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
 msgstr ""
-"Pour plus d'informations sur les threads, voir :ref:"
-"`doc_using_multiple_threads`."
+"Pour plus d'informations sur les matériaux de Godot, voir :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:93
-#, fuzzy
 msgid "Exporting considerations"
-msgstr "Autres considérations"
+msgstr "Considérations relatives à l'exportation"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid ""
@@ -272,6 +275,13 @@ msgid ""
 "exporting the scene will lead to more consistent results and should be done "
 "whenever possible."
 msgstr ""
+"Comme les cartes graphiques ne peuvent dessiner que des triangles, les "
+"maillages qui contiennent des quads ou des N-gons doivent être *triangulés* "
+"avant de pouvoir être dessiner. Godot peut trianguler les maillages à "
+"l'importation, mais les résultats peuvent être imprévisibles ou incorrects, "
+"en particulier avec les N-gons. Indépendamment de l'application cible, la "
+"triangulation *avant* l'exportation de la scène conduira à des résultats "
+"plus cohérents et devrait être faite chaque fois que possible."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
@@ -282,12 +292,22 @@ msgid ""
 "depending on the exporter, you may be able to find and enable a "
 "**Triangulate Faces** option in the export dialog."
 msgstr ""
+"Pour éviter les problèmes de triangulation incorrecte après l'importation "
+"dans Godot, il est recommandé de faire en sorte que le DCC 3D triangule les "
+"objets par lui-même. Dans Blender, cela peut être fait en ajoutant un "
+"modificateur Triangulate à vos objets et en s'assurant que **Apply "
+"Modifiers** est coché dans la boîte de dialogue d'exportation. "
+"Alternativement, selon l'exportateur, vous pouvez trouver et activer une "
+"option **Triangulate Faces** dans le dialogue d'exportation."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:109
 msgid ""
 "To avoid issues with 3D selection in the editor, it is recommended to apply "
 "the object transform in the 3D DCC before exporting the scene."
 msgstr ""
+"Pour éviter les problèmes de sélection 3D dans l'éditeur, il est recommandé "
+"d'appliquer la transformation d'objet dans le 3D Digital Content Creation "
+"avant d'exporter la scène."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid "Import workflows"
@@ -756,6 +776,10 @@ msgid ""
 "Otherwise, changes made to animations from Godot will be lost when the "
 "project is run."
 msgstr ""
+"Pour modifier les animations d'une scène 3D importée, vous devez changer "
+"l'option de stockage des animations de **Built-In** à **Files** dans le dock "
+"d'importation. Sinon, les modifications apportées aux animations à partir de "
+"Godot seront perdues lors de l'exécution du projet."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "FPS"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,19 +53,16 @@ msgid "How to **connect** a character to a GUI with signals"
 msgstr "**підключати** персонажа до графічного інтерфейсу з допомогою сигналів"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
-#, fuzzy
 msgid "How to **control** a GUI with GDscript"
 msgstr "**керувати** графічним інтерфейсом з допомогою GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
-#, fuzzy
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
 "**анімувати** шкалу здоров'я з допомогою вузла :ref:`Tween <class_Tween>` "
 "node"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
-#, fuzzy
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
@@ -75,14 +72,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid ":doc:`ui_main_menu`"
-msgstr ""
+msgstr ":doc:`ui_main_menu`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid ":doc:`ui_game_user_interface`"
-msgstr ""
+msgstr ":doc:`ui_game_user_interface`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
-#, fuzzy
 msgid ""
 "When you code a game, you want to build the core gameplay first: the main "
 "mechanics, player input, win and loss conditions. The UI comes a bit later. "
@@ -95,13 +91,12 @@ msgstr ""
 "Коли ви програмуєте гру, ви спершу хочете побудувати основний геймплей: "
 "основні механізми, введення гравця, умови виграшу та програшу. Інтерфейс "
 "користувача з’являється трохи пізніше. Ви хочете, щоб усі елементи, що "
-"складають ваш проєкт, залишалися окремими, якщо це можливо. Кожен персонаж "
+"складають ваш проект, залишалися окремими, якщо це можливо. Кожен персонаж "
 "повинен бути у власній сцені, зі своїми скриптами, так же і з елементами "
-"інтерфейсу користувача. Це запобігає помилкам, зберігає ваш проєкт керованим "
+"інтерфейсу користувача. Це запобігає помилкам, зберігає ваш проект керованим "
 "та дозволяє різним членам команди працювати в різних частинах гри."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
-#, fuzzy
 msgid ""
 "Once the core gameplay and the UI are ready, you'll need to connect them "
 "somehow. In our example, we have the Enemy who attacks the Player at "
@@ -118,7 +113,6 @@ msgid "To do this, we will use **signals**."
 msgstr "Для цього ми будемо використовувати **сигнали**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -129,33 +123,31 @@ msgid ""
 "information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
-"Сигнали є версією Godot у шаблоні спостерігача. Вони дозволяють нам "
-"надсилати якесь повідомлення. Інші вузли можуть підключитися до об'єкта, "
-"який **випромінює** сигнал і отримувати інформацію. Це потужний інструмент, "
-"який ми часто будемо використовувати для інтерфейсу користувача та систем "
+"Сигнали є версією Godot шаблону Observer. Вони дозволяють нам надсилати "
+"якесь повідомлення. Інші вузли можуть підключитися до об'єкта, який "
+"**випромінює** сигнал і отримувати інформацію. Це потужний інструмент, який "
+"ми часто будемо використовувати для інтерфейсу користувача та систем "
 "досягнення. Ви можете не використовувати їх скрізь. Зв'язок між двома "
-"вузлами додає деяке сполучення між ними. Коли зв'язків багато, ними стає "
-"важко керувати. Для отримання додаткової інформації перегляньте `signals "
-"video tutorial <https://youtu.be/l0BkQxF7X3E>`_ на GDquest."
+"вузлами додає деяке сполучення між ними. Коли таких прив'язок багато, ними "
+"стає важко керувати. Для отримання додаткової інформації перегляньте `відео "
+"уроки по сигналах <https://youtu.be/l0BkQxF7X3E>`_ на GDquest."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
 msgstr "Завантажте та вивчіть стартовий проєкт"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
-#, fuzzy
 msgid ""
 "Download the Godot project: :download:`ui_code_life_bar.zip <files/"
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
-"Завантажте проєкт Godot: :download:`ui_code_life_bar.zip <files/"
+"Завантажте проект Godot: :download:`ui_code_life_bar.zip <files/"
 "ui_code_life_bar.zip>`. Він містить усі ресурси та скрипти, необхідні для "
-"початку роботи. Витягніть архів .zip, щоб отримати дві теки: `початок` і "
-"`кінець`."
+"початку роботи. Розпакуйте архів .zip, щоб отримати дві теки: `start` і "
+"`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -164,7 +156,7 @@ msgid ""
 "game: the basic combat mechanics already work. But as the character isn't "
 "connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
-"Завантажте проєкт ``start`` у Godot. На панелі Файлова система двічі "
+"Завантажте проект ``start`` у Godot. На панелі **Файлова система** двічі "
 "клацніть на ``LevelMockup.tscn``, щоб відкрити її. Це макет RPG гри, де 2 "
 "персонажі стикаються один з одним. Рожевий ворог атакує і наносить "
 "пошкодження зеленому квадрату через регулярні проміжки часу, аж до його "
@@ -173,7 +165,6 @@ msgstr ""
 "робить."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
-#, fuzzy
 msgid ""
 "This is typical of how you'd code a game: you implement the core gameplay "
 "first, handle the player's death, and only then you'll add the interface. "
@@ -182,12 +173,12 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
-"Це типово для програмування гри: спочатку ви реалізуєте основний геймплей, "
-"відпрацьовуєте смерть гравця, а вже потім додасте інтерфейс. Це тому, що "
-"інтерфейс користувача слухає, що відбувається в грі. Тому він не може "
-"працювати, якщо інші системи ще не створені. Якщо ви спроєктували інтерфейс, "
-"перш ніж створили і протестувати геймплей, то, швидше за все, він не "
-"працюватиме добре, і вам доведеться його створити з нуля."
+"Це нормально для програмування гри: спочатку ви реалізуєте основний "
+"геймплей, відпрацьовуєте смерть гравця, а вже потім додаєте інтерфейс. Це "
+"тому, що інтерфейс користувача слухає, що відбувається в грі. Тому він не "
+"може працювати, якщо інші системи ще не створені. Якщо ви спроектували "
+"інтерфейс, перш ніж створили і протестувати геймплей, то, швидше за все, він "
+"не працюватиме добре, і вам доведеться його створити з нуля."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
@@ -195,14 +186,12 @@ msgstr ""
 "Сцена містить спрайт з фоном гри, графічний інтерфейс та два персонажі."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
-#, fuzzy
 msgid "The scene tree, with the GUI scene set to display its children"
 msgstr ""
 "Дерево сцени із графічним інтерфейсом, призначеним для відображення його "
 "нащадків"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
@@ -213,7 +202,6 @@ msgstr ""
 "існують всередині сцени:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
-#, fuzzy
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
@@ -221,12 +209,10 @@ msgstr ""
 "``Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
-#, fuzzy
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr "``bar`` - це сама шкала здоров'я. Це вузол ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
-#, fuzzy
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
@@ -235,15 +221,13 @@ msgstr ""
 "яким значенням, або методом, з будь-якого іншого вузла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organization that works for game jams and tiny "
 "games."
 msgstr ""
-"Проєкт використовує просту організацію, яка підходить для невеликих ігор."
+"Проект використовує просту організацію, яка підходить для невеликих ігор."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
-#, fuzzy
 msgid ""
 "At the root of the project, in the `res://` folder, you will find the "
 "`LevelMockup`. That's the main game scene and the one we will work with. All "
@@ -252,14 +236,13 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
-"У корені проєкту, в теці ``res://`` ви знайдете ``LevelMockup``. Це головна "
+"У корені проекту, в теці ``res://`` ви знайдете ``LevelMockup``. Це головна "
 "ігрова сцена і та, з якою ми будемо працювати. Усі компоненти, що складають "
 "гру, знаходяться у теці ``scenes/``. Тека ``assets/`` містить ігрові спрайти "
 "і шрифт для лічильника HP. У теці ``scripts/`` ви знайдете скрипти ворога, "
 "гравця та контролера графічного інтерфейсу."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
-#, fuzzy
 msgid ""
 "Click the edit scene icon to the right of the node in the scene tree to open "
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
@@ -270,20 +253,17 @@ msgstr ""
 "під-сценами."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
-#, fuzzy
 msgid "The scene tree, with the Player scene set to display its children"
 msgstr ""
 "Дерево сцени, зі сценою гравця, встановленою для відображення його нащадків"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
-#, fuzzy
 msgid "Set up the Lifebar with the Player's max\\_health"
 msgstr ""
 "Налаштування Lifebar (Шкали здоров'я) за допомогою max_health (Максимальне "
 "здоров'я) Player"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
-#, fuzzy
 msgid ""
 "We have to tell the GUI somehow what the player's current health is, to "
 "update the lifebar's texture, and to display the remaining health in the HP "
@@ -299,7 +279,6 @@ msgstr ""
 "``Number`` відносно цього значення."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
-#, fuzzy
 msgid ""
 "We could stop here to display the number, but we need to initialize the "
 "bar's ``max_value`` for it to update in the right proportions. The first "
@@ -312,20 +291,18 @@ msgstr ""
 "(Гравець)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
-#, fuzzy
 msgid ""
 "The bar, a `TextureProgress`, has a `max_value` of `100` by default. If you "
 "don't need to display the character's health with a number, you don't need "
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
-"Шкала, `TextureProgress`, за замовчуванням має `max_value` `100`. Якщо вам "
-"не потрібно відображати здоров'я персонажа цифрою, вам не потрібно змінювати "
-"його властивість `max_value`. Замість цього ви надсилаєте відсоток від "
-"`Player` до `GUI`: `health / max_health * 100`."
+"Шкала, ``TextureProgress``, за замовчуванням має ``max_value`` ``100``. Якщо "
+"вам не потрібно відображати здоров'я персонажа цифрою, вам не потрібно "
+"змінювати його властивість ``max_value``. Замість цього ви надсилаєте "
+"відсоток від ``Player`` до ``GUI``: ``health / max_health * 100``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
-#, fuzzy
 msgid ""
 "Click the script icon to the right of the ``GUI`` in the Scene dock to open "
 "its script. In the ``_ready`` function, we're going to store the "
@@ -338,7 +315,6 @@ msgstr ""
 "встановити ``max_value`` ``bar``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
-#, fuzzy
 msgid ""
 "Let's break it down. ``$\"../Characters/Player\"`` is a shorthand that goes "
 "one node up in the scene tree, and retrieves the ``Characters/Player`` node "
@@ -351,7 +327,6 @@ msgstr ""
 "max_health``, дає доступ до вузла гравця ``max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
-#, fuzzy
 msgid ""
 "The second line assigns this value to ``bar.max_value``. You could combine "
 "the two lines into one, but we'll need to use ``player_max_health`` again "
@@ -362,7 +337,6 @@ msgstr ""
 "далі в уроці."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
-#, fuzzy
 msgid ""
 "``Player.gd`` sets the ``health`` to ``max_health`` at the start of the "
 "game, so we could work with this. Why do we still use ``max_health``? There "
@@ -373,7 +347,6 @@ msgstr ""
 "причини:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
-#, fuzzy
 msgid ""
 "We don't have the guarantee that ``health`` will always equal "
 "``max_health``: a future version of the game may load a level where the "
@@ -384,7 +357,6 @@ msgstr ""
 "певну кількість здоров'я."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
-#, fuzzy
 msgid ""
 "When you open a scene in the game, Godot creates nodes one by one, following "
 "the order in your Scene dock, from top to bottom. `GUI` and `Player` are not "
@@ -395,20 +367,18 @@ msgid ""
 "doc:`scripting_continued`"
 msgstr ""
 "Коли ви відкриваєте сцену в грі, Godot створює вузли по черзі, дотримуючись "
-"порядку їх розміщення в Сцені, зверху вниз. `GUI` та `Player` не є частиною "
-"однієї гілки вузла. Щоб переконатися, що вони обидва існують, коли ми "
-"отримуємо доступ до них, ми повинні використовувати функцію `_ready`. Godot "
-"викличе `_ready` вже після завантаження всіх вузлів, перед початком гри. Це "
-"ідеальна функція налаштувати все і підготувати ігрову сесію. Дізнайтеся "
-"більше про _ready: :doc:`scripting_continued`"
+"порядку їх розміщення в Сцені, зверху вниз. ``GUI`` та ``Player`` не є "
+"частиною однієї гілки вузла. Щоб переконатися, що вони обидва існують, коли "
+"ми отримуємо доступ до них, ми повинні використовувати функцію ``_ready``. "
+"Godot викличе ``_ready`` вже після завантаження всіх вузлів, перед початком "
+"гри. Це ідеальна функція для того, щоб налаштувати все і підготувати ігрову "
+"сесію. Дізнайтеся більше про _ready: :doc:`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
-#, fuzzy
 msgid "Update health with a signal when the player takes a hit"
 msgstr "Оновлення здоров'я з допомогою сигнала, коли гравець отримує удар"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
-#, fuzzy
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
@@ -417,21 +387,20 @@ msgstr ""
 "``Player``. Для цього ми будемо використовувати **сигнали**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
-#, fuzzy
 msgid ""
 "There are many useful built-in signals like `enter_tree` and `exit_tree`, "
 "that all nodes emit when they are respectively created and destroyed. You "
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
-"Існує багато корисних вбудованих сигналів, таких як `enter_tree` та "
-"`exit_tree`, які випромінюють всі вузли, коли вони, відповідно, створюються "
-"та знищуються. Ви також можете створити власний сигнал за допомогою "
-"ключового слова `signal`. На вузлі `Player` ви знайдете два сигнали, які ми "
-"створили для вас: `died` (помер) і `health_changed` (зміна здоров'я)."
+"Існує багато корисних вбудованих сигналів, таких як ``enter_tree`` та "
+"``exit_tree``, які випромінюють всі вузли, коли вони, відповідно, "
+"створюються та знищуються. Ви також можете створити власний сигнал за "
+"допомогою ключового слова ``signal``. На вузлі ``Player`` ви знайдете два "
+"сигнали, які ми створили для вас: ``died`` (помер) і ``health_changed`` "
+"(зміна здоров'я)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
-#, fuzzy
 msgid ""
 "Why don't we directly get the ``Player`` node in the ``_process`` function "
 "and look at the health value? Accessing nodes this way creates tight "
@@ -452,7 +421,6 @@ msgstr ""
 "швидше за все, погіршите гру через порядок виконання коду."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
-#, fuzzy
 msgid ""
 "On a given frame you may look at another node's property *before* it was "
 "updated: you get a value from the last frame. This leads to obscure bugs "
@@ -469,7 +437,6 @@ msgstr ""
 "*після* того, як зміни відбулися."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
-#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -480,18 +447,17 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <https://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
-"Шаблон спостерігача, від якого походить сигнали, все ще додає трохи зв'язки "
-"між гілками вузлів. Але це зазвичай легше і безпечніше, ніж отримати доступ "
-"до вузлів безпосередньо для спілкування між двома окремими класами. Для "
-"батьківського вузла може бути нормально отримати значення від його нащадків. "
-"Але вам краще віддати перевагу сигналам, якщо ви працюєте з двома окремими "
-"гілками. Прочитайте шаблони програмування ігор для отримання додаткової "
-"інформації `Observer pattern <http://gameprogrammingpatterns.com/observer."
-"html>`_. Повна книга <http://gameprogrammingpatterns.com/contents.html>`_ "
-"доступна в Інтернеті безкоштовно."
+"Шаблон спостерігача Observer, від якого походить сигнали, все ще додає трохи "
+"зв'язки між гілками вузлів. Але це зазвичай легше і безпечніше, ніж отримати "
+"доступ до вузлів безпосередньо для спілкування між двома окремими класами. "
+"Для батьківського вузла може бути нормально отримати значення від його "
+"нащадків. Але вам краще віддати перевагу сигналам, якщо ви працюєте з двома "
+"окремими гілками. Прочитайте шаблони програмування ігор для отримання "
+"додаткової інформації `Observer шаблон <http://gameprogrammingpatterns.com/"
+"observer.html>`_. `Повна книга <http://gameprogrammingpatterns.com/contents."
+"html>`_ доступна в Інтернеті безкоштовно."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
@@ -509,7 +475,6 @@ msgstr ""
 "У першому розділі перелічені спеціальні сигнали, визначені у ``Player.gd``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
-#, fuzzy
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
@@ -518,17 +483,14 @@ msgstr ""
 "приховати інтерфейс користувача."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
-#, fuzzy
 msgid "``health_changed`` is emitted when the character got hit."
 msgstr "``health_changed`` випромінюється, коли персонаж отримує удар."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
-#, fuzzy
 msgid "We're connecting to the health\\_changed signal"
 msgstr "Ми підключаємось до сигналу health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
-#, fuzzy
 msgid ""
 "Select ``health_changed`` and click on the Connect button in the bottom "
 "right corner to open the Connect Signal window. On the left side you can "
@@ -539,7 +501,7 @@ msgid ""
 "it from the code."
 msgstr ""
 "Виберіть ``health_changed`` і натисніть кнопку Приєднати в правому нижньому "
-"куті, щоб відкрити вікно З'єднання сигналу з методом. Ліворуч ви можете "
+"куті, щоб відкрити вікно **З'єднання сигналу з методом**. Ліворуч ви можете "
 "вибрати вузол, який буде прослуховувати цей сигнал. Виберіть вузол ``GUI``. "
 "Права частина екрана дозволяє упакувати додаткові значення за допомогою "
 "сигналу. Про це ми вже подбали в ``Player.gd``. Як правило, я рекомендую не "
@@ -547,7 +509,6 @@ msgstr ""
 "менш зручно, ніж з коду."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
-#, fuzzy
 msgid "The Connect Signal window with the GUI node selected"
 msgstr "Вікно З'єднання сигналу з обраним вузлом GUI"
 
@@ -560,14 +521,12 @@ msgstr ""
 "переваги:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
-#, fuzzy
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
 "Godot може записати нові функції зворотного виклику для вас у підключеному "
 "скрипті"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
-#, fuzzy
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
@@ -576,7 +535,6 @@ msgstr ""
 "піктограма випромінювача"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
-#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -598,7 +556,6 @@ msgstr ""
 "``_on_Player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
-#, fuzzy
 msgid ""
 "When you connect nodes from the editor, Godot generates a method name with "
 "the following pattern: ``_on_EmitterName_signal_name``. If you wrote the "
@@ -607,10 +564,9 @@ msgid ""
 msgstr ""
 "При підключенні вузлів з редактора, Godot генерує ім'я методу по такій "
 "схемі: ``_on_НазваВипромінювача_назва_сигнала``. Якщо ви вже написали метод, "
-"параметр «Зробити функцію» збереже його. Ви можете замінити ім'я на інше."
+"параметр \"Зробити функцію\" збереже його. Ви можете замінити ім'я на інше."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
-#, fuzzy
 msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot пише для вас метод зворотного виклику і дає його вам"
 
@@ -979,11 +935,12 @@ msgstr ""
 "``Tween``, який паралельно управляє декількома анімаціями."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:569
+#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
-"know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
-"the ``Player`` node in the Scene dock and click on the Node tab next to the "
-"Inspector."
+"know when it died. Press :kbd:`Ctrl + F1` to jump back to the 2D Workspace. "
+"Select the ``Player`` node in the Scene dock and click on the Node tab next "
+"to the Inspector."
 msgstr ""
 "Спершу, ``GUI`` необхідно підключитися до сигналу ``Player`` ``died``, щоб "
 "знати, коли він помер. Натисніть :kbd:`F1` щоб повернутися до робочої "

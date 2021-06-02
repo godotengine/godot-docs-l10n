@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1968,7 +1968,8 @@ msgstr ""
 "Notwendigkeit, sie beim Überladen explizit aufzurufen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Klassen-Konstruktor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
@@ -2186,7 +2187,6 @@ msgid "Memory management"
 msgstr "Speicher-Management"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2202,7 +2202,8 @@ msgstr ""
 "keine Vererbung definieren. Wenn dies nicht erwünscht ist, muss eine Klasse :"
 "ref:`class_Object` manuell erben und ``instance.free()`` aufrufen. Um "
 "Referenzzyklen zu vermeiden, die nicht freigegeben werden können, wird eine "
-"Funktion ``weakref`` zum Erstellen schwacher Referenzen bereitgestellt."
+"Funktion ``weakref`` zum Erstellen schwacher Referenzen bereitgestellt. Hier "
+"ist ein Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
@@ -2496,9 +2497,8 @@ msgstr ""
 "``abgeschlossen`` nur ausgegeben wird, wenn die Funktion nicht mehr nachgibt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Onready Schlüsselwort"
+msgstr "`onready` Schlüsselwort"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""

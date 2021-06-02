@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,10 +64,23 @@ msgstr ""
 ">`_ для преобразования изображений PNG в файл ICO:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
+msgid ""
+"For the ICO file to effectively replace the default Godot icon, it must "
+"contain *all* the sizes included in the default Godot icon: 16×16, 32×32, "
+"48×48, 64×64, 128×128, 256×256. If the ICO file does not contain all the "
+"sizes, the default Godot icon will be kept for the sizes that weren't "
+"overridden."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:35
+msgid "The above ImageMagick command takes this into account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid "Changing the taskbar icon"
 msgstr "Изменение значка на панели задач"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
@@ -75,7 +88,7 @@ msgstr ""
 "Значок панели задач - это значок, который отображается на панели задач во "
 "время выполнения вашего проекта."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
@@ -86,7 +99,7 @@ msgstr ""
 "проекта → Приложение → Конфигурация → Нативный Значок Windows). Щёлкните "
 "значок папки и выберите нужный ICO файл."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:51
 msgid ""
 "This setting only changes the icon for your exported game on Windows. To set "
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
@@ -96,11 +109,11 @@ msgstr ""
 "установить значок для macOS, используйте ``Macos Native Icon``. А для любой "
 "другой платформы используйте настройку ``Icon``."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
 msgstr "Изменение значка файла"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:52
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
 "There are `known issues <https://github.com/godotengine/godot/"
 "issues/33466>`__ when changing the application icon in executables that "
@@ -114,7 +127,7 @@ msgstr ""
 "использования rcedit, если вы решите включить опцию **Embed Pck** для "
 "предустановки экспорта Windows в диалоговом окне «Экспорт»."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
@@ -122,7 +135,7 @@ msgstr ""
 "Значок файла является значком исполняемого файла, на который вы нажимаете, "
 "чтобы начать проект."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
 "Before selecting it in the export options, you will need to install an extra "
 "tool called **rcedit**. You can download it `here <https://github.com/"
@@ -132,7 +145,7 @@ msgstr ""
 "дополнительный инструмент под названием **rcedit**. Вы можете скачать его "
 "`здесь <https://github.com/electron/rcedit/releases>`_."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:66
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
 "After downloading, you need to tell Godot the path to the rcedit executable "
 "on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
@@ -145,7 +158,7 @@ msgstr ""
 "значок папки для записи **rcedit**. Найдите и выберите исполняемый файл "
 "rcedit."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
@@ -153,7 +166,7 @@ msgstr ""
 "Пользователям Linux и macOS также необходимо установить `WINE <https://www."
 "winehq.org/>`_ для использования rcedit."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "You should now have everything in place to change the file icon. To do that, "
 "you will need to specify the icon when exporting. Go to **Project → "
@@ -166,7 +179,7 @@ msgstr ""
 "рабочего стола Windows, выберите значок в формате ICO в поле **Application → "
 "Icon** (Приложение → Значок)."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:89
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
 "If rcedit fails to change the icon, you can instead :ref:`compile your own "
 "Windows export templates <doc_compiling_for_windows>` with the icon changed. "
@@ -181,7 +194,7 @@ msgstr ""
 "master/platform/windows/godot.ico>`__ своим собственным файлом ICO *перед* "
 "компиляцией экспорта шаблоны."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
@@ -190,18 +203,18 @@ msgstr ""
 "качестве настраиваемых шаблонов экспорта в предустановке экспорта Windows "
 "вашего проекта."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
 msgstr "Проверка результата"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:101
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:109
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
 "Теперь вы можете экспортировать проект. Если всё сработало правильно, вы "
 "должны увидеть следующее:"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
 "If your icon isn't showing up properly, on Windows 10, try clearing the icon "
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"

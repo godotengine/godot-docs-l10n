@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,10 @@ msgid ""
 "the \"current\" scene. Autoloads fall into this category, but so do scenes "
 "which one instances and adds to the tree at runtime:"
 msgstr ""
-"有时候，有必要更好地控制如何交换场景。如上所述，一个 :ref:`Viewport "
-"<class_Viewport>` 的子节点将呈现给它生成的图像。即使对于“当前”场景之外的节"
-"点，这也适用。 Autoloads属于这一类，但是一个实例在运行时添加到树中的场景也是"
-"如此:"
+"有时候,有必要更好地控制如何交换场景.如上所述,一个 :ref:`Viewport "
+"<class_Viewport>` 的子节点将呈现给它生成的图像.即使对于\"当前\"场景之外的节"
+"点,这也适用. Autoloads属于这一类,但是一个实例在运行时添加到树中的场景也是如"
+"此:"
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:38
 msgid ""
@@ -42,12 +42,11 @@ msgid ""
 "balancing operation speed and memory consumption as well as balancing data "
 "access and integrity."
 msgstr ""
-"要完成循环并将旧场景替换为旧场景，开发人员可以选择制作。从视图中删除场景有很"
-"多策略 :ref:`Viewport <class_Viewport>`。权衡涉及平衡操作速度和内存消耗以及平"
-"衡数据访问和完整性。"
+"要完成循环并将旧场景替换为旧场景,开发人员可以选择制作.从视图中删除场景有很多"
+"策略 :ref:`Viewport <class_Viewport>`.权衡涉及平衡操作速度和内存消耗以及平衡"
+"数据访问和完整性."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:44
-#, fuzzy
 msgid ""
 "**We can delete the existing scene.** :ref:`SceneTree.change_scene() "
 "<class_SceneTree_method_change_scene>` and :ref:`SceneTree.change_scene_to() "
@@ -56,18 +55,19 @@ msgid ""
 "root node's name is \"Main\", one could do ``get_node(\"/root/Main\")."
 "free()`` to delete the whole scene."
 msgstr ""
-"1. **我们可以删除现有场景。** :ref:`SceneTree.change_scene / _to "
-"<class_SceneTree_method_change_scene>` 将立即删除当前场景。开发人员也可以删除"
-"主场景。假设根节点的名称是“Main”，可以执行 `get_node(\"/root/Main\").free()` "
-"删除整个场景。"
+"**我们可以删除现有场景.** :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` 和 :ref:`SceneTree.change_scene_to() "
+"<class_SceneTree_method_change_scene_to>` 会立即删除当前场景.不过开发者也可以"
+"删除主场景.假设根节点的名字是 \"Main\",可以执行 ``get_node(\"/root/Main\")."
+"free()`` 来删除整个场景."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:51
 msgid "Unloads memory."
-msgstr "卸载内存。"
+msgstr "卸载内存."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:53
 msgid "Pro: RAM is no longer dragging the dead weight."
-msgstr "好处: RAM不再拖累自重。"
+msgstr "好处: RAM不再拖累自重."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:55
 msgid ""
@@ -75,14 +75,14 @@ msgid ""
 "back into memory again (takes time AND memory). Not a problem if returning "
 "soon is unnecessary."
 msgstr ""
-"坏处:回到那个场景现在更加昂贵，因为它必须再次加载回内存(需要时间和内存)。如果"
-"不久就回来是不必要的。"
+"坏处:回到那个场景现在更加昂贵,因为它必须再次加载回内存(需要时间和内存).如果不"
+"久就回来是不必要的."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:59
 msgid ""
 "Con: No longer have access to that scene's data. Not a problem if using that "
 "data soon is unnecessary."
-msgstr "坏处:无法再访问该场景的数据。如果不久就使用这些数据就不成问题了。"
+msgstr "坏处:无法再访问该场景的数据.如果不久就使用这些数据就不成问题了."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:62
 msgid ""
@@ -90,26 +90,26 @@ msgid ""
 "re-attaching one or more of its nodes to a different scene, or even directly "
 "to the :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
-"注意:通过将一个或多个节点重新附加到不同的场景，甚至直接将其重新附加到 :ref:"
-"`SceneTree <class_SceneTree>`，可以将数据保存在即将删除的场景中。"
+"注意:通过将一个或多个节点重新附加到不同的场景,甚至直接将其重新附加到 :ref:"
+"`SceneTree <class_SceneTree>`,可以将数据保存在即将删除的场景中."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:66
 msgid "Processing stops."
-msgstr "处理停止。"
+msgstr "处理停止."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:68
 msgid ""
 "Pro: No nodes means no process, physics process, or input handling. The CPU "
 "is available to work on the new scene's contents."
 msgstr ""
-"好处:没有节点意味着没有进程，物理过程或输入处理。 CPU可用于处理新场景的内容。"
+"好处:没有节点意味着没有进程,物理过程或输入处理. CPU可用于处理新场景的内容."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:71
 msgid ""
 "Con: Those nodes' processing and input handling no longer operate. Not a "
 "problem if using the updated data is unnecessary."
 msgstr ""
-"坏处:这些节点的处理和输入处理不再运行。如果不需要使用更新的数据，则不成问题。"
+"坏处:这些节点的处理和输入处理不再运行.如果不需要使用更新的数据,则不成问题."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:74
 msgid ""
@@ -117,46 +117,45 @@ msgid ""
 "detection of the nodes, we can hide the entire node sub-tree from the "
 "player's perspective."
 msgstr ""
-"**我们可以隐藏现有场景。**通过更改节点的可见性或碰撞检测，我们可以从游戏角色"
-"的角度隐藏整个节点子树。"
+"**我们可以隐藏现有场景.**通过更改节点的可见性或碰撞检测,我们可以从游戏角色的"
+"角度隐藏整个节点子树."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:78
 msgid "Memory still exists."
-msgstr "记忆仍然存在。"
+msgstr "记忆仍然存在."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:80
 msgid "Pro: One can still access the data if need be."
-msgstr "好处:如果需要，仍然可以访问数据。"
+msgstr "好处:如果需要,仍然可以访问数据."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:82
 msgid "Pro: There's no need to move any more nodes around to save data."
-msgstr "好处:无需再移动任何节点来保存数据。"
+msgstr "好处:无需再移动任何节点来保存数据."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:84
 msgid ""
 "Con: More data is being kept in memory which will be become a problem on "
 "memory-sensitive platforms like web or mobile."
 msgstr ""
-"坏处:更多数据被保存在内存中，这将成为对内存敏感平台(如Web或移动设备)的问题。"
+"坏处:更多数据被保存在内存中,这将成为对内存敏感平台(如Web或移动设备)的问题."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:87
 msgid "Processing continues."
-msgstr "处理继续。"
+msgstr "处理继续."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:89
 msgid ""
 "Pro: Data continues to receive processing updates, so the scene will keep "
 "updated any data within it that relies on delta time or frame data."
 msgstr ""
-"好处:数据继续接收处理更新，因此场景将不断更新其中依赖于增量时间或帧数据的任何"
-"数据。"
+"好处:数据继续接收处理更新,因此场景将不断更新其中依赖于增量时间或帧数据的任何"
+"数据."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:93
 msgid ""
 "Pro: Nodes are still members of groups (since groups belong to the :ref:"
 "`SceneTree <class_SceneTree>`)."
-msgstr ""
-"Pro：节点仍然是组的成员(因为组属于 :ref:`SceneTree <class_SceneTree>`)。"
+msgstr "Pro:节点仍然是组的成员(因为组属于 :ref:`SceneTree <class_SceneTree>`)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:96
 msgid ""
@@ -165,27 +164,26 @@ msgid ""
 "they go to ensure the target platform can support the load they are giving "
 "it."
 msgstr ""
-"坏处:现在CPU的注意力分散在两个场景之间。负载过大可能导致帧速率降低。应该确保"
-"测试性能，以确保目标平台能够支持它们提供的负载。"
+"坏处:现在CPU的注意力分散在两个场景之间.负载过大可能导致帧速率降低.应该确保测"
+"试性能,以确保目标平台能够支持它们提供的负载."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:101
-#, fuzzy
 msgid ""
 "**We can remove the existing scene from the tree.** Assign a variable to the "
 "existing scene's root node. Then use :ref:`Node.remove_child(Node) "
 "<class_Node_method_remove_child>` to detach the entire scene from the tree."
 msgstr ""
-"**我们可以从树中删除现有场景。**将变量分配给现有场景的根节点。然后使用 :ref:"
-"`Node.remove_child(Node)<class_Node_method_remove_child>` 从树中分离整个场"
-"景。"
+"**我们可以从树上删除现有的场景.** 给现有场景的根节点分配一个变量.然后使用 :"
+"ref:`Node.remove_child(Node) <class_Node_method_remove_child>`来将整个场景从"
+"树上分离."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:106
 msgid "Memory still exists (similar pros/cons as with hiding it from view)."
-msgstr "记忆仍然存在(与从视图中隐藏它相似的优点/缺点)。"
+msgstr "记忆仍然存在(与从视图中隐藏它相似的优点/缺点)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:108
 msgid "Processing stops (similar pros/cons as with deleting it completely)."
-msgstr "处理停止(类似于完全删除它的优点/缺点)。"
+msgstr "处理停止(类似于完全删除它的优点/缺点)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:110
 msgid ""
@@ -194,8 +192,8 @@ msgid ""
 "only call the one method add/remove_child pair of methods. It is similar to "
 "disabling game objects in other engines."
 msgstr ""
-"亲:这种“隐藏”的变化更容易显示/隐藏。人们必须只调用一个方法add / remove_child"
-"方法，而不是潜在地跟踪场景的多个变化。它类似于在其他引擎中禁用游戏对象。"
+"亲:这种\"隐藏\"的变化更容易显示/隐藏.人们必须只调用一个方法add / remove_child"
+"方法,而不是潜在地跟踪场景的多个变化.它类似于在其他引擎中禁用游戏对象."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:115
 msgid ""
@@ -203,8 +201,8 @@ msgid ""
 "scene will become stale if it relies on delta time, input, groups, or other "
 "data that is derived from :ref:`SceneTree <class_SceneTree>` access."
 msgstr ""
-"坏处:与仅从视图中隐藏它不同，如果场景中包含的数据依赖于delta时间，输入，组或"
-"其他派生自 :ref:`SceneTree <class_SceneTree>` access的数据，则它将变为陈旧。"
+"坏处:与仅从视图中隐藏它不同,如果场景中包含的数据依赖于delta时间,输入,组或其他"
+"派生自 :ref:`SceneTree <class_SceneTree>` access的数据,则它将变为陈旧."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:120
 msgid ""
@@ -213,19 +211,20 @@ msgid ""
 "preserving a a scene's data between scene changes (adding the scene to the "
 "root node)."
 msgstr ""
-"在某些情况下，人们可能希望同时出现许多场景。也许一个是在运行时添加自己的单"
-"例，或者在场景更改之间保留场景的数据(将场景添加到根节点)。"
+"在有些情况下,人们可能希望有许多场景同时存在.也许人们在运行时添加他们自己的单"
+"例,或者在场景变化之间保留一个场景的数据(将场景添加到根节点)."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:133
+#, fuzzy
 msgid ""
-"Perhaps instead they wish to display multiple scenes at the same time using "
-"a :ref:`ViewportContainers <class_ViewportContainer>`. This is optimal in "
-"cases where the intent is to render different content in different parts of "
-"the screen. Minimaps and split-screen multiplayer are good examples."
+"Perhaps instead they wish to display multiple scenes at the same time using :"
+"ref:`ViewportContainers <class_ViewportContainer>`. This is optimal in cases "
+"where the intent is to render different content in different parts of the "
+"screen. Minimaps and split-screen multiplayer are good examples."
 msgstr ""
 "也许他们希望使用 :ref:`ViewportContainers <class_ViewportContainer>` 同时显示"
-"多个场景。在目的是在屏幕的不同部分呈现不同内容的情况下，这是最佳的。迷您地图"
-"和分屏多人游戏就是很好的示例。"
+"多个场景.在目的是在屏幕的不同部分呈现不同内容的情况下,这是最佳的.迷您地图和分"
+"屏多人游戏就是很好的示例."
 
 #: ../../docs/tutorials/misc/change_scenes_manually.rst:138
 msgid ""
@@ -233,5 +232,5 @@ msgid ""
 "examine the effects of each and determine what path best fits their unique "
 "situation."
 msgstr ""
-"每个选项都有最合适的情况，因此必须检查每个选项的效果并确定最适合其独特情况的"
-"路径。"
+"每个选项都有最合适的情况,因此必须检查每个选项的效果并确定最适合其独特情况的路"
+"径."

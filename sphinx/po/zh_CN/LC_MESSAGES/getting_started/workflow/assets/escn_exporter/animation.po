@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "Animation supported:"
-msgstr "支持的动画："
+msgstr "支持的动画:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -55,14 +55,14 @@ msgid ""
 "This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
-"在大多数游戏中，一个对象会有几个动画来切换。这个插件支持将多个动作同时导出到"
-"单个 ``AnimationPlayer`` 中，使切换动作变得很容易。"
+"在大多数游戏中,一个对象会有几个动画来切换.这个插件支持将多个动作同时导出到单"
+"个 ``AnimationPlayer`` 中,使切换动作变得很容易."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
-msgstr "此工作流程使用blender ``nla_tracks``。以下是如何使用此功能的简要指南："
+msgstr "此工作流程使用blender ``nla_tracks``.以下是如何使用此功能的简要指南:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Stash active action**"
@@ -74,8 +74,8 @@ msgid ""
 "several ways to place an active action into NLA track, one is of course "
 "doing it in ``NLA Editor``"
 msgstr ""
-"新创建的动作始终是绑定到对象的活动动作。有几种方法可以在NLA轨道上放置活动动"
-"作，一种当然是在 ``NLA编辑器`` 中"
+"新创建的动作始终是绑定到对象的活动动作.有几种方法可以在NLA轨道上放置活动动作,"
+"一种当然是在 ``NLA编辑器`` 中"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:28
 msgid "Or it can be done stashing the action in ``Dope Sheet``"
@@ -91,9 +91,9 @@ msgid ""
 "``mute`` NLA track as a separate action, while blends all the ``unmute`` NLA "
 "tracks into every action (including the action action) being exported."
 msgstr ""
-"NLA轨道可以是 ``静默`` 或 ``取消静默``，导出器将导出所有 ``静默`` NLA轨道作为"
-"一个单独的动作，将所有 ``取消静默`` NLA轨道混合到输出的每个动作（包括活动动"
-"作）中。"
+"NLA轨道可以是 ``静默`` 或 ``取消静默``,导出器将导出所有 ``静默`` NLA轨道作为"
+"一个单独的动作,将所有 ``取消静默`` NLA轨道混合到输出的每个动作(包括活动动作)"
+"中."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid "**3. Export the scene**"
@@ -101,13 +101,13 @@ msgstr "**3. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:43
 msgid "Make sure the ``Export Stashed Actions`` option has been turned on."
-msgstr "确保开启 ``导出暂存动作`` 选项。"
+msgstr "确保开启 ``导出暂存动作`` 选项."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:47
 msgid ""
 "Then all the stashed actions, as well as the active action, are exported to "
 "an AnimationPlayer."
-msgstr "所有暂存的动作，以及活动动作，都将导出到一个 ``AnimationPlayer`` 中。"
+msgstr "所有暂存的动作,以及活动动作,都将导出到一个 ``AnimationPlayer`` 中."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:54
 msgid "Constraints"
@@ -120,8 +120,8 @@ msgid ""
 "object has some constraint; if it does, all the constraints are baked into "
 "actions and then exported along with the object."
 msgstr ""
-"有时使用对象约束构建复杂动画，通常的示例是反向运动学。插件会自动检查对象是否"
-"有某些约束；如果有，则所有约束都被烘焙到对象具有的每个动作中，然后导出。"
+"有时使用对象约束构建复杂动画,通常的示例是反向运动学.插件会自动检查对象是否有"
+"某些约束；如果有,则所有约束都被烘焙到对象具有的每个动作中,然后导出."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:62
 msgid "Animation Mode"
@@ -134,25 +134,25 @@ msgid ""
 "animated node. In order to fix this inconsistence and still make the "
 "animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
-"Godot和Blender有不同的结构来存储动画数据。在Godot中，动画数据存储在一个 "
-"``AnimationPlayer`` 节点中，而不是存储在每个动画化的节点里。为了修复这种不一"
-"致性，并使动画发挥多才多艺，这个插件有三种动画导出模式。"
+"Godot和Blender有不同的结构来存储动画数据.在Godot中,动画数据存储在一个 "
+"``AnimationPlayer`` 节点中,而不是存储在每个动画化的节点里.为了修复这种不一致"
+"性,并使动画发挥多才多艺,这个插件有三种动画导出模式."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Animation as Actions'**"
-msgstr "**“动画作为动作”模式**"
+msgstr "**\"动画作为动作\"模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
-"将所有动画视为对象动作，因此在导出的场景中，每个对象都有自己的 "
-"``AnimationPlayer`` 并保持其动作。"
+"将所有动画视为对象动作,因此在导出的场景中,每个对象都有自己的 "
+"``AnimationPlayer`` 并保持其动作."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Scene Animation'**"
-msgstr "**“场景动画”模式**"
+msgstr "**\"场景动画\"模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -160,12 +160,12 @@ msgid ""
 "Blender's timeline, this is what you want. In this mode, all the animations "
 "in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
-"如果您希望动画生成与在Blender的时间轴上播放相同的结果，这就是您想要的。在此模"
-"式下，场景中的所有动画都只放置在场景根中的一个 ``AnimationPlayer`` 中。"
+"如果您希望动画生成与在Blender的时间轴上播放相同的结果,这就是您想要的.在此模式"
+"下,场景中的所有动画都只放置在场景根中的一个 ``AnimationPlayer`` 中."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:82
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr "**“动画作为压缩动作”模式**"
+msgstr "**\"动画作为压缩动作\"模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:84
 msgid ""
@@ -175,7 +175,7 @@ msgid ""
 "and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
-"这种模式与 '动画即动作' 模式的行为非常相似，但它可以生成较少的"
-"AnimationPlayers；父子关系的对象将共享他们的AnimationPlayer。当您有多个装备，"
-"并且每个骨架和网格都有动作时，这种模式就很有用；那么一个装备就只有一个"
-"AnimationPlayer。"
+"这种模式与 '动画即动作' 模式的行为非常相似,但它可以生成较少的"
+"AnimationPlayers；父子关系的对象将共享他们的AnimationPlayer.当您有多个装备,并"
+"且每个骨架和网格都有动作时,这种模式就很有用；那么一个装备就只有一个"
+"AnimationPlayer."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,21 +31,20 @@ msgid ""
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
 "这个小教程的目的是为了清除许多关于输入坐标、获取鼠标位置和屏幕分辨率等常见错"
-"误。"
+"误."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
 msgstr "硬件显示坐标"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
-#, fuzzy
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
-"在编写用于在PC上运行的复杂用户界面(如编辑器、MMOs、工具等)时，使用硬件坐标是"
-"有意义的。但是，在这个范围之外，使用硬件坐标并没有多大意义。"
+"使用硬件坐标在编写要在PC上运行的复杂UI时是有意义的,比如编辑器、网络游戏、工具"
+"等.然而,在这个范围之外,它就没有那么大的意义了."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
@@ -58,23 +57,23 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
-"Godot使用视区显示内容，并且视区可以通过几个选项进行缩放(参见 :ref:"
-"`doc_multiple_resolutions` 教程)。然后，使用节点中的函数来获得鼠标坐标和视区"
-"大小，例如:"
+"Godot使用视区显示内容,并且视区可以通过几个选项进行缩放(参见 :ref:"
+"`doc_multiple_resolutions` 教程).然后,使用节点中的函数来获得鼠标坐标和视区大"
+"小,例如:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
-#, fuzzy
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
-msgstr "或者，也可以询问视区的鼠标位置:"
+msgstr "另外,也可以从视窗查询鼠标的坐标:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:66
-#, fuzzy
 msgid ""
 "When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
 "position`` value from ``InputEventMouseMotion`` is the center of the screen. "
 "Use ``event.relative`` instead of ``event.position`` and ``event.speed`` to "
 "process mouse movement and position changes."
 msgstr ""
-"当鼠标模式设置为“输入.鼠标_模式_捕获”，来自“鼠标移动输入事件”中的“事件.位"
-"置”的值是屏幕的中心。使用“事件.相对”替代“事件.位置”处理鼠标移动和位置变化。"
+"当鼠标模式设置为 ``Input.MOUSE_MODE_CAPTURED`` 时,来自 "
+"``InputEventMouseMotion`` 的 ``event.position`` 值为屏幕中心.使用 ``event."
+"relative`` 代替 ``event.position`` 和 ``event.speed`` 来处理鼠标移动和位置变"
+"化."

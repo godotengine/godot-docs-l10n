@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,13 +41,12 @@ msgid "Download and install the Android SDK."
 msgstr "Baixe e instale o Android SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
-#, fuzzy
 msgid ""
 "You can install it using `Android Studio version 4.1 or later <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"Baixe e instale o Android SDK a partir de `developer.android.com <https://"
-"developer.android.com/studio/>`__."
+"Você pode instalá-lo utilizando o `Android Studio versão 4.1 ou superior "
+"<https://developer.android.com/studio/>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
@@ -63,11 +62,12 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK Platform-Tools versão 30.0.5 ou posterior"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
-msgid "Android SDK Build-Tools version 30.0.1"
-msgstr ""
+#, fuzzy
+msgid "Android SDK Build-Tools version 30.0.3"
+msgstr "Android SDK Platform-Tools versão 30.0.5 ou posterior"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 #, fuzzy
@@ -88,13 +88,12 @@ msgid "NDK version 21.4.7075529"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
-#, fuzzy
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
 "com/studio/#command-tools>`__."
 msgstr ""
-"Baixe e instale o Android SDK a partir de `developer.android.com <https://"
-"developer.android.com/studio/>`__."
+"Você pode instalá-lo utilizando as `ferramentas de linha de comando <https://"
+"developer.android.com/studio/#command-tools>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
@@ -110,22 +109,19 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 8"
-msgstr "Instale OpenJDK 8"
+msgstr "Instale o OpenJDK 8"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
 msgstr ""
-"Baixe e instale o  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vai "
+"Baixe e instale o `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vão "
 "funcionar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
-#, fuzzy
 msgid "Create a debug.keystore"
 msgstr "Crie um debug.keystore"
 
@@ -375,8 +371,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
 msgid ""
-"Don't forget to uncheck the **Export With Debug** checkbox while choosing "
-"the APK's name."
+"Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135

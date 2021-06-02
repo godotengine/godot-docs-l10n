@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -157,7 +157,7 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
-"Roteirização visual é uma ótima ferramenta para não programadores, ou mesmo "
+"Scripting visual é uma ótima ferramenta para não programadores, ou mesmo "
 "para desenvolvedores experientes que queira tornar partes do código mais "
 "acessíveis para outros, como projetistas de jogos e artistas."
 
@@ -278,7 +278,6 @@ msgid "Writing a script that can access other nodes in the scene."
 msgstr "Escrever um roteiro que pode acessar outros nós na cena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
-#, fuzzy
 msgid ""
 "Before continuing, make sure to skim and bookmark the :ref:"
 "`GDScript<doc_gdscript>` reference. It's a language designed to be simple, "
@@ -287,8 +286,8 @@ msgid ""
 msgstr ""
 "Antes de continuar, por favor leia a referência da :ref:"
 "`GDScript<doc_gdscript>`. É uma linguagem projetada para ser simples e a sua "
-"referência é curta, então não levará mais que poucos minutos para ter uma "
-"visão geral dos conceitos."
+"referência é estruturada em seções, então não levará mais que poucos minutos "
+"para ter uma visão geral dos conceitos."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 msgid "Scene setup"
@@ -300,6 +299,9 @@ msgid ""
 "tutorial, then close that out (Project -> Quit to Project List) and create a "
 "New Project."
 msgstr ""
+"Se você ainda tiver o projeto \"instância\" aberto do tutorial anterior, "
+"então feche isso (Projeto-> Sair para a lista de Projetos) e crie um Novo "
+"Projeto."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid ""
@@ -315,7 +317,7 @@ msgstr "Painel"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Label"
-msgstr "Rótulo"
+msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "Button"
@@ -336,7 +338,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:126
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr "Por fim, salve a cena com um nome como ``digaoi.tscn``."
+msgstr "Por fim, salve a cena com um nome como `digaoi.tscn`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:131
 msgid "Adding a script"
@@ -355,9 +357,8 @@ msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"O diálogo de criação de roteiro irá aparecer. Este diálogo permite "
-"configurar a linguagem do roteiro, o nome da classe e outras opções "
-"relevantes."
+"O diálogo de criação de script irá aparecer. Este diálogo permite configurar "
+"a linguagem do script, o nome da classe e outras opções relevantes."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:141
 msgid ""
@@ -373,14 +374,13 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
-"O nó a que estamos anexando o arquivo é um painel, então o campo ``Herda "
-"de`` será preenchido automaticamente com \"Panel\". Isso é o que queremos, "
-"já que o objetivo do roteiro é estender a funcionalidade do nosso nó painel."
+"O nó a que estamos anexando o script é um painel, então o campo `Herda de` "
+"será preenchido automaticamente com \"Panel\". Isso é o que queremos, já que "
+"o objetivo do script é estender a funcionalidade do nosso nó painel."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:148
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
-"Finalmente, informe o nome do caminho para o roteiro e selecione Criar:"
+msgstr "Finalmente, informe o nome do caminho para o script e selecione Criar:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:152
 msgid ""
@@ -388,7 +388,7 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
-"O roteiro será, então, criado e adicionado ao nó. Você pode vê-lo com um "
+"O script será, então, criado e adicionado ao nó. Você pode vê-lo com um "
 "ícone \"Abrir script\" ao lado do nó na aba Cena, assim como na propriedade "
 "Script no Inspetor:"
 
@@ -408,13 +408,13 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"Não há muito por aqui. A função ``_ready()`` é chamada quando o nó, e todos "
-"os seus filhos, entrar na cena ativa. **Nota:** ``_ready()`` não é um "
-"construtor; o construtor é, na verdade, a função ``_init()``."
+"Não há muito por aqui. A função `_ready()` é chamada quando o nó, e todos os "
+"seus filhos, entrar na cena ativa. **Nota:** `_ready()` não é um construtor; "
+"o construtor é, na verdade, a função `_init()`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:168
 msgid "The role of the script"
-msgstr "O papel do roteiro"
+msgstr "O papel do script"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid ""
@@ -423,10 +423,10 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
-"Um roteiro adiciona comportamento a um nó. É usado para controlar como o nó "
+"Um script adiciona comportamento a um nó. É usado para controlar como o nó "
 "funciona e também como ele interage com outros nós: filhos, pais, irmãos e "
-"assim por diante. O escopo local do roteiro é o nó. Em outras palavras, o "
-"roteiro herda as funções fornecidas por tal nó."
+"assim por diante. O escopo local do script é o nó. Em outras palavras, o "
+"script herda as funções fornecidas por tal nó."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:181
 msgid "Handling a signal"
@@ -443,7 +443,7 @@ msgstr ""
 "eles podem ser conectados a qualquer função de qualquer instância de script. "
 "Sinais são usados majoritariamente em nós de interface gráfica – embora "
 "outros nós também os tenha – e você pode até mesmo definir sinais "
-"personalizados em seus próprios roteiros."
+"personalizados em seus próprios scripts."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:188
 msgid ""

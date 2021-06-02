@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr "调试工具概述"
 msgid ""
 "This guide will give you an overview of the available debugging tools in the "
 "engine."
-msgstr "本指南将概述引擎中可用的调试工具。"
+msgstr "本指南将概述引擎中可用的调试工具."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:9
 msgid ""
@@ -34,48 +34,43 @@ msgid ""
 "performances. It also offers options to visualize collision boxes and "
 "navigation polygons in the running game."
 msgstr ""
-"Godot自带强大的调试器和剖析器，可以追踪bug，在运行时检查你的游戏，监控重要指"
-"标，并测量性能。它还提供了在运行游戏中可视化碰撞框和导航多边形的选项。"
+"Godot自带强大的调试器和剖析器,可以追踪bug,在运行时检查你的游戏,监控重要指标,"
+"并测量性能.它还提供了在运行游戏中可视化碰撞框和导航多边形的选项."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
-#, fuzzy
 msgid ""
 "Finally, you have options to debug the game running on a remote device and "
 "to reload changes to your scenes or your code while the game is running."
 msgstr ""
-"最后，你可以选择调试在远程设备上运行的游戏，并在游戏运行时重新加载对场景或代"
-"码的更改。"
+"最后,你可以选择调试在远程设备上运行的游戏,并在游戏运行时重新加载对你的场景或"
+"代码的修改."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:18
-#, fuzzy
 msgid "Debugger Panel"
-msgstr "调试器"
+msgstr "调试器面板"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:20
 msgid ""
 "Many of Godot's debugging tools are part of the Debugger panel, which you "
 "can find information about in :ref:`doc_debugger_panel`."
 msgstr ""
-"Godot的许多调试工具都是Debugger面板的一部分，你可以在 :ref:"
-"`doc_debugger_panel` 中找到相关信息。"
+"Godot的许多调试工具都是Debugger面板的一部分,你可以在 :ref:"
+"`doc_debugger_panel` 中找到相关信息."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
-#, fuzzy
 msgid "Debug menu options"
-msgstr "调试选项"
+msgstr "调试菜单选项"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:26
-#, fuzzy
 msgid ""
 "There are a few common debug options you can toggle on or off when running "
 "your game in the editor, which can help you in debugging your game."
 msgstr ""
-"在编辑器中运行游戏时可以启用几个选项，以帮助您调试游戏。 这些选项位于主菜单中"
-"的 调试(Debug) 中。"
+"在编辑器中运行游戏时,有几个常见的调试选项可以切换为开或关,以帮助你调试游戏."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid "You can find these options in the **Debug** editor menu."
-msgstr "您可以在**Debug**编辑器菜单中找到这些选项。"
+msgstr "您可以在**Debug**编辑器菜单中找到这些选项."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Here are the descriptions of the options:"
@@ -86,13 +81,10 @@ msgid "Deploy with Remote Debug"
 msgstr "使用远程调试部署"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
-#, fuzzy
 msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer for debugging."
-msgstr ""
-"在导出和发布游戏的调试版本时，导出的可执行文件将尝试连接到您本机的IP进行进行"
-"调试。"
+msgstr "当导出和部署时,产生的可执行文件将尝试连接到你的计算机的IP上进行调试."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:42
 msgid "Small Deploy with Network FS"
@@ -102,7 +94,7 @@ msgstr "使用网络文件系统进行小型部署"
 msgid ""
 "This option speeds up testing for games with a large footprint on remote "
 "devices."
-msgstr "这个选项加快了在远程设备上进行大足迹游戏的测试。"
+msgstr "这个选项加快了在远程设备上进行大足迹游戏的测试."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:46
 msgid ""
@@ -110,25 +102,24 @@ msgid ""
 "game, deploying the game builds a minimal executable. The editor then "
 "provides files from the project over the network."
 msgstr ""
-"当**Small Deploy with Network FS**开启时，部署游戏不是导出整个游戏，而是建立"
-"一个最小的可执行文件。然后，编辑器通过网络提供项目中的文件。"
+"当**Small Deploy with Network FS**开启时,部署游戏不是导出整个游戏,而是建立一"
+"个最小的可执行文件.然后,编辑器通过网络提供项目中的文件."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:50
 msgid ""
 "Also, on Android, the game is deployed using the USB cable to speed up "
 "deployment."
-msgstr "另外，在安卓系统上，游戏采用USB线部署，加快部署速度。"
+msgstr "另外,在安卓系统上,游戏采用USB线部署,加快部署速度."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:53
 msgid "Visible Collision Shapes"
 msgstr "显示碰撞区域"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
-#, fuzzy
 msgid ""
 "This option makes collision shapes and raycast nodes visible in the running "
 "game."
-msgstr "可以在运行游戏的时候看到碰撞区域和射线节点。"
+msgstr "这个选项使碰撞形状和射线传输节点在运行的游戏中可见."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:58
 msgid "Visible Navigation"
@@ -136,34 +127,32 @@ msgstr "显示导航"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:60
 msgid "Navigation meshes and polygons will be visible on the running game."
-msgstr "可以在运行的游戏的时候看到导航网格和多边形。"
+msgstr "可以在运行的游戏的时候看到导航网格和多边形."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Sync Scene Changes"
 msgstr "同步场景修改"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:65
-#, fuzzy
 msgid ""
 "With this option, any change you make to a scene in the editor at runtime "
 "appears instantly. When used remotely on a device, this is more efficient "
 "with the network filesystem."
 msgstr ""
-"在编辑器中对场景所做的任何更改都将在正在运行的游戏中出现。 当在设备上远程使用"
-"时，这对网络文件系统更有效。"
+"使用此选项,在运行时对编辑器中的场景所做的任何更改都会立即显示.当在设备上远程"
+"使用时,这对网络文件系统来说更为有效."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:70
 msgid "Sync Script Changes"
 msgstr "同步脚本变更"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:72
-#, fuzzy
 msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with the network filesystem."
 msgstr ""
-"任何已修改并保存的脚本将在正在运行的游戏中重新加载。 当在设备上远程使用时，这"
-"对网络文件系统更有效。"
+"任何被保存的脚本都会被重新加载到正在运行的游戏上.当在设备上远程使用时,这对网"
+"络文件系统来说更有效率."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Script editor debug tools and options"
@@ -175,8 +164,8 @@ msgid ""
 "and two options. The breakpoint tools can also be found in the **Debugger** "
 "tab of the debugger."
 msgstr ""
-"脚本编辑器有自己的一套调试工具，用于断点和两个选项。断点工具也可以在调试器的"
-"**Debugger**标签中找到。"
+"脚本编辑器有自己的一套调试工具,用于断点和两个选项.断点工具也可以在调试器的"
+"**Debugger**标签中找到."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:84
 msgid ""
@@ -185,9 +174,9 @@ msgid ""
 "Over** goes to the next line of code, and **Step Into** goes into a function "
 "if possible. Otherwise, it does the same thing as **Step Over**."
 msgstr ""
-"断点**按钮会像断点一样导致脚本的中断。**继续**使游戏在断点处暂停后继续。"
-"**Step Over**进入下一行代码，如果可能的话，**Step Into**进入一个函数。否则，"
-"它与**Step Over**做同样的事情。"
+"**断点** 按钮会像断点一样导致脚本的中断. **继续** 使游戏在断点处暂停后继续. "
+"**Step Over** 进入下一行代码,如果可能的话,**Step Into** 进入一个函数.否则,它"
+"与 **Step Over** 做同样的事情."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:89
 msgid ""
@@ -195,8 +184,8 @@ msgid ""
 "been closed. And the **Debug with External Editor** option lets you debug "
 "your game with an external editor."
 msgstr ""
-"在场景关闭后，**Keep Debugger Open**选项可使调试器保持打开状态。而**Debug "
-"with External Editor**选项可以让你用外部编辑器调试游戏。"
+"在场景关闭后,**Keep Debugger Open**选项可使调试器保持打开状态.而**Debug with "
+"External Editor**选项可以让你用外部编辑器调试游戏."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:95
 msgid ""
@@ -204,32 +193,30 @@ msgid ""
 "<doc_using_multiple_threads>`. This is a current limitation of the GDScript "
 "debugger."
 msgstr ""
-"如果代码是:ref:`在线程<doc_using_multiple_threads>中运行，断点不会中断。这是"
-"当前GDScript调试器的一个限制。"
+"如果代码是 :ref:`在线程<doc_using_multiple_threads>` 中运行,断点不会中断.这是"
+"当前GDScript调试器的一个限制."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:100
-#, fuzzy
 msgid "Debug project settings"
-msgstr "使用项目设置"
+msgstr "调试项目设置"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:102
 msgid ""
 "In the project settings, there is a **Debug** category with three "
 "subcategories which control different things."
-msgstr "在项目设置中，有一个**调试**类别，有三个子类别，控制不同的东西。"
+msgstr "在项目设置中,有一个 **调试** 类别,有三个子类别,控制不同的东西."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:106
-#, fuzzy
 msgid "Settings"
-msgstr "字符串"
+msgstr "Settings(设置)"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:108
 msgid ""
 "These are some general settings such as printing the current FPS to the "
 "**Output** panel, the maximum amount of functions when profiling and others."
 msgstr ""
-"这些都是一些常规的设置，比如将当前的FPS打印到**输出**面板，剖析时的最大函数量"
-"等。"
+"这些都是一些常规的设置,比如将当前的FPS打印到 **输出** 面板,剖析时的最大函数量"
+"等."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:113
 msgid "GDScript"
@@ -240,41 +227,37 @@ msgid ""
 "These settings allow you to toggle specific GDScript warnings, such as for "
 "unused variables. You can also turn off warnings completely."
 msgstr ""
-"这些设置允许你切换特定的GDScript警告，比如未使用的变量。您也可以完全关闭警"
-"告。"
+"这些设置允许你切换特定的GDScript警告,比如未使用的变量.您也可以完全关闭警告."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:119
-#, fuzzy
 msgid "Shapes"
-msgstr "形状键"
+msgstr "Shapes形状"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:121
 msgid ""
 "Shapes are where you can adjust the color of shapes that only appear for "
 "debugging purposes, such as collision and navigation shapes."
 msgstr ""
-"Shapes中你可以调整形状的颜色，这些形状只出现在调试的目的，如碰撞和导航形状。"
+"Shapes中你可以调整形状的颜色,这些形状只出现在调试的目的,如碰撞和导航形状."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:125
-#, fuzzy
 msgid "Remote in scene dock"
-msgstr "远程场景树"
+msgstr "遥控场景面板"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:127
-#, fuzzy
 msgid ""
 "When running a game in the editor two options appear at the top of the "
 "**Scene** dock, **Remote** and **Local**. While using **Remote** you can "
 "inspect or change the nodes' parameters in the running project."
 msgstr ""
-"在启动游戏后，``场景 (Scene)`` 停靠窗的顶部会出现一条切页栏，您可以切换到 ``"
-"远程 (Remote) `` 然后检视运行中节点和他们属性的变化。"
+"当在编辑器中运行一个游戏时,有两个选项出现在 **Scene** 栏目的顶部,即 "
+"**Remote** 和 **Local** .当使用 **Remote** 时,你可以检查或改变运行项目中的节"
+"点参数."
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:133
-#, fuzzy
 msgid ""
 "Some editor settings related to debugging can be found inside the **Editor "
 "Settings**, under the **Network > Debug** and **Debugger** sections."
 msgstr ""
-"一些与调试相关的编辑器设置可以在“编辑器设置”中找到，在“网络”>“调试和调试器”部"
-"分下。"
+"一些与调试有关的编辑器设置可以在 **Editor Settings** 内找到,在 **Network > "
+"Debug** and **Debugger** 部分."

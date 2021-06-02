@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,7 +215,7 @@ msgid ""
 "Used where a statement is required syntactically but execution of code is "
 "undesired, e.g. in empty functions."
 msgstr ""
-"Utilisé lorsqu'une instruction est requise syntaxiquement mais ou "
+"Utilisé lorsqu'une instruction est requise syntaxiquement mais où "
 "l’exécution de code est indésirable, comme par exemple, dans une fonction "
 "vide."
 
@@ -1577,7 +1577,9 @@ msgid ""
 msgstr ""
 "Une fonction peut être déclarée statique. Lorsqu'une fonction est statique, "
 "elle n'a pas accès aux variables membres de l'instance ou à ``self``. Ceci "
-"est principalement utile pour faire des bibliothèques de fonctions d'aide :"
+"est principalement utile pour faire des bibliothèques de fonctions d'aide :\n"
+"PS : Dit plus explicitement, vous pouvez accéder uniquement aux variables "
+"créées à l'intérieur de la fonction statique"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:800
 msgid "Statements and control flow"
@@ -1876,12 +1878,17 @@ msgstr ""
 "apparaîtra alors avec sa nouvelle icône dans l'éditeur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1057
+#, fuzzy
 msgid ""
 "If the script is located in the ``res://addons/`` directory, ``class_name`` "
 "will only cause the node to show up in the **Create New Node** dialog if the "
 "script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
 "for more information."
 msgstr ""
+"Si le script est situé dans le répertoire ``res://addons/``, ``class_name`` "
+"ne fera apparaître le noeud dans la boîte de dialogue **Créer un nouveau "
+"noeud** que si le script fait partie d'un plugin d'éditeur *activé*. Voir :"
+"ref:`doc_making_plugins` pour plus d'informations."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
@@ -1975,7 +1982,8 @@ msgstr ""
 "fonction explicitement lorsqu'elle est surchargée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Constructeur de classe"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148
@@ -2192,7 +2200,6 @@ msgid "Memory management"
 msgstr "Gestion de la mémoire"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -2208,8 +2215,8 @@ msgstr ""
 "classes qui ne définissent pas un héritage étendent de **Reference**. Si "
 "cela n'est pas désiré, alors une classe doit hériter de :ref:`class_Object` "
 "manuellement et doit appeler ``instance.free()``. Pour éviter les cycles de "
-"référence qui ne peuvent pas être libérés, une fonction ``weakref`` est "
-"fournie pour créer des références faibles."
+"référence qui ne peuvent pas être libérés, une fonction :ref:`class_WeakRef` "
+"est fournie pour créer des références faibles. Voici un exemple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1357
 msgid ""
@@ -2498,9 +2505,8 @@ msgstr ""
 "``completed`` n'est émis que lorsque la fonction ne yield plus."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1667
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "Mot-clé onready"
+msgstr "Mot-clé `onready`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1669
 msgid ""

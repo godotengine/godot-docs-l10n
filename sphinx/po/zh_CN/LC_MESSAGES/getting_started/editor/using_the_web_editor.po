@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
-#, fuzzy
 msgid "Using the Web editor"
-msgstr "运行编辑器"
+msgstr "使用Web编辑器"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""
 "Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
 "you can use to work on new or existing projects."
 msgstr ""
+"从Godot 3.3开始,有一个 `Web editor<https://editor.godotengine.org/>`__ ,你可"
+"以用它来处理新的或现有的项目."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:11
 msgid ""
@@ -34,11 +35,12 @@ msgid ""
 "sufficient for educational purposes, it is currently **not recommended for "
 "production work**. See :ref:`doc_using_the_web_editor_limitations` below."
 msgstr ""
+"web编辑器正处于初步阶段.虽然其功能集可能足以满足教学目的,但目前 **不建议用于"
+"生产工作** .见下文 :ref:`doc_using_the_web_editor_limitations` ."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:16
-#, fuzzy
 msgid "Browser support"
-msgstr "提供mod支持"
+msgstr "浏览器支持"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:18
 msgid ""
@@ -46,29 +48,31 @@ msgid ""
 "in turn required to support threading in the browser. The following desktop "
 "browsers support WebAssembly threading and can therefore run the web editor:"
 msgstr ""
+"Web编辑器需要支持WebAssembly的SharedArrayBuffer.这也是支持浏览器中线程的必要"
+"条件.以下桌面浏览器支持WebAssembly线程,因此可以运行Web编辑器:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:22
 msgid "Chrome 68 or later"
-msgstr ""
+msgstr "Chrome 68或更高版本"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:23
 msgid "Firefox 79 or later"
-msgstr ""
+msgstr "Firefox 79或更高版本"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:24
 msgid "Edge 79 or later"
-msgstr ""
+msgstr "Edge 79或更高版本"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:26
 msgid ""
 "Opera and Safari are not supported yet. Safari may work in the future once "
 "proper threading support is added."
 msgstr ""
+"目前还不支持Opera和Safari.一旦加入适当的线程支持,Safari可能会在未来支持."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:29
-#, fuzzy
 msgid "**Mobile browsers are currently not supported.**"
-msgstr "目前不支持JDK 9或更高版本。"
+msgstr "**目前不支持移动浏览器.**"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:31
 msgid ""
@@ -76,6 +80,8 @@ msgid ""
 "is recommended for better performance and compatibility with old/low-end "
 "hardware."
 msgstr ""
+"web编辑器支持GLES3和GLES2渲染器,不过为了更好的性能和对旧的低端硬件的兼容性,建"
+"议使用GLES2."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:36
 msgid ""
@@ -83,6 +89,8 @@ msgid ""
 "mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
 "based browser instead of Firefox."
 msgstr ""
+"如果你使用的是Linux,由于 `火狐WebGL性能差<https://bugzilla.mozilla.org/"
+"show_bug.cgi?id=1010527>`__ ,建议使用基于Chromium的浏览器而不是火狐."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:43
 msgid "Limitations"
@@ -92,16 +100,15 @@ msgstr "限制"
 msgid ""
 "Due to limitations on the Godot or Web platform side, the following features "
 "are currently missing:"
-msgstr ""
+msgstr "由于受到Godot或Web平台端的限制,目前缺少以下功能:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:48
-#, fuzzy
 msgid "No C#/Mono support."
-msgstr "|eol| 不再支持。"
+msgstr "不支持C#/Mono."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:49
 msgid "No GDNative support."
-msgstr ""
+msgstr "不支持GDNative."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
@@ -109,10 +116,13 @@ msgid ""
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
 msgstr ""
+"没有项目导出.作为一种解决办法,你可以使用 **Project > Tools > Download "
+"Project Source** [项目 > 工具 > 下载项目源],然后使用 `原生版本的Godot编辑器"
+"<https://godotengine.org/download>`__ 导出."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid "The editor won't warn you when closing the tab with unsaved changes."
-msgstr ""
+msgstr "当关闭带有未保存更改的选项卡时,编辑器不会警告您."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:54
 msgid ""
@@ -120,48 +130,48 @@ msgid ""
 "were baked with a native version of the Godot editor (e.g. by importing an "
 "existing project)."
 msgstr ""
+"不支持光照贴图烘焙.您仍然可以使用现有的光照贴图,如果它们是用本地版本的Godot编"
+"辑器烘焙的(例如,通过导入现有的项目)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:58
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
-msgstr ""
+msgstr "由于Web平台的固有局限,不太可能支持以下功能:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:61
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "尚不支持MIDI输出."
+msgstr "不支持外部脚本编辑器."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:62
-#, fuzzy
 msgid "No support for Android one-click deploy."
-msgstr "一键部署的步骤"
+msgstr "尚不支持 Android 一键部署."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:66
-#, fuzzy
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
 "github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
 "%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
 msgstr ""
-"查看GitHub上的 `HTML5公开议题列表<https://github.com/godotengine/godot/"
-"issues?q=is:open+is:issue+label:platform:html5>`__ ，看看你关注的功能是否有议"
-"题。如果没有，请打开一个议题来表达你的兴趣。"
+"参见GitHub上与网页编辑器相关的 `公开问题列表<https://github.com/godotengine/"
+"godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic"
+"%3Aeditor>`__ ,了解已知的bug列表."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:70
-#, fuzzy
 msgid "Importing a project"
 msgstr "导入项目"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:72
 msgid "To import an existing project, the current process is as follows:"
-msgstr ""
+msgstr "要导入一个现有的项目,目前的流程如下:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:74
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
 msgstr ""
+"使用 **Preload project ZIP** [预载项目ZIP]输入指定一个ZIP文件以预载到HTML5文"
+"件系统."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:76
 msgid ""
@@ -169,6 +179,8 @@ msgid ""
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""
+"点击**Start Godot editor** [启动Godot编辑器]来运行编辑器.10-20秒后应出现Godot"
+"项目管理器.在较慢的机器或连接中,加载可能需要一分多钟."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:79
 msgid ""
@@ -176,10 +188,12 @@ msgid ""
 "the folder to create then click the **Create Folder** button (it doesn't "
 "have to match the ZIP archive's name)."
 msgstr ""
+"在窗口中间出现的对话框中,为要创建的文件夹指定一个名称,然后单击 **Create "
+"Folder** [创建文件夹]按钮(不必与ZIP存档的名称相一致)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:82
 msgid "Click **Install & Edit** and the project will open in the editor."
-msgstr ""
+msgstr "点击 **Install & Edit** [安装与编辑],项目将在编辑器中打开."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:86
 msgid ""
@@ -187,17 +201,20 @@ msgid ""
 "If your project folder is placed outside ``/home/web_user/``, you will lose "
 "your project when closing the editor!"
 msgstr ""
+"将项目文件夹放在 ``/home/web_user/`` 中很重要.如果你的项目文件夹放在 ``/home/"
+"web_user/`` 之外,当你关闭编辑器时,将失去项目!"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:90
 msgid ""
 "When you follow the steps described above, the project folder will always be "
 "located in ``/home/web_user/projects``, keeping it safe."
 msgstr ""
+"当你按照上述步骤操作时,项目文件夹将始终位于 ``/home/web_user/projects`` 中,以"
+"保证其安全."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:94
-#, fuzzy
 msgid "Editing and running a project"
-msgstr "创建一个新项目"
+msgstr "编辑和运行一个项目"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:96
 msgid ""
@@ -206,6 +223,9 @@ msgid ""
 "project. Instead, when you run the project by clicking the Run button or "
 "pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
 msgstr ""
+"与原生版本的Godot不同,web编辑器只限于一个窗口.因此,当运行项目时,它不能打开一"
+"个新窗口.当你通过点击运行按钮或按 :kbd:`F5` 运行项目时,它将出现 \"替换\" 编辑"
+"器窗口."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:101
 msgid ""
@@ -214,11 +234,13 @@ msgid ""
 "**Game** tabs using the buttons on the top. You can also close the running "
 "game or editor by clicking the **×** button next to those tabs."
 msgstr ""
+"web编辑器提供了另一种处理编辑器和游戏窗口的方式(现在是 \"选项卡\" ).您可以使"
+"用顶部的按钮在 **编辑器** 和 **游戏** 选项卡之间切换.您也可以通过点击这些选项"
+"卡旁边的 **×** 按钮来关闭正在运行的游戏或编辑器."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:107
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "我的预制体在哪里？"
+msgstr "我的项目文件在哪里？"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:109
 msgid ""
@@ -226,6 +248,8 @@ msgid ""
 "to the browser's IndexedDB storage. This storage isn't accessible as a "
 "regular folder on your machine, but is abstracted away in a database."
 msgstr ""
+"由于浏览器的安全限制,编辑器会将项目文件保存到浏览器的IndexedDB存储中.这个存储"
+"在你的机器上并不能以普通文件夹的形式访问,而是被抽象在数据库中."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:113
 msgid ""
@@ -234,6 +258,9 @@ msgid ""
 "using a `native Godot editor <https://godotengine.org/download>`__, since "
 "exporting from the web editor isn't supported yet."
 msgstr ""
+"您可以通过 **Project > Tools > Download Project Source** [项目 > 工具 > 下载"
+"项目源文件],将项目文件下载为ZIP档案.这可以用来使用 `原生Godot编辑器<https://"
+"godotengine.org/download>`__ 导出项目,因为还不支持从web编辑器导出."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:118
 msgid ""
@@ -242,3 +269,6 @@ msgid ""
 "files on the user's filesystem as the native editor would do. However, this "
 "isn't implemented yet."
 msgstr ""
+"将来可能会使用 `HTML5 FileSystem API <https://developer.mozilla.org/en-US/"
+"docs/Web/API/FileSystem>`__ 来将项目文件存储在用户的文件系统中,就像本地编辑器"
+"那样,然而,这还没有实现."

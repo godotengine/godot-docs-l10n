@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,6 +173,15 @@ msgid ""
 "that are used are the near and far plane settings. The FOV, aspect ratio and "
 "projection mode are all ignored."
 msgstr ""
+":ref:`ARVRCamera <class_ARVRCamera>` jest drugim węzłem, który zawsze musi "
+"być częścią twojej sceny i zawsze musi być węzłem podrzędnym twojego węzła "
+"początkowego. Jest to podklasa normalnego aparatu Godot. Jednak jego pozycja "
+"jest automatycznie aktualizowana w każdej klatce w oparciu o fizyczną "
+"orientację i pozycji HMD. Ze względu na precyzję wymaganą do renderowania na "
+"HMD lub do renderowania nakładki AR na prawdziwej kamerze, większość "
+"właściwości kamery jest ignorowana. Jedynym z używanych właściwości kamery "
+"jest właściwość rozróżniania bliskiej i dalekiej płaszczyzny. FOV, proporcje "
+"obrazu i tryb projekcji są nieużywane."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:103
 msgid ""
@@ -224,11 +233,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:127
-#, fuzzy
 msgid ""
 "`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ supports the "
 "Oculus SDK (desktop headsets only)."
-msgstr "Sforkuj `repozytorium Godota <https://github.com/godotengine/godot>`_"
+msgstr "Sforkuj `repozytorium Godota <https://github.com/godotengine/godot>`_."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:129
 msgid ""
@@ -253,9 +261,8 @@ msgid "In addition to the plugins, there are several official demos."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:139
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
-msgstr "Sforkuj `repozytorium Godota <https://github.com/godotengine/godot>`_"
+msgstr "Sforkuj `repozytorium Godota <https://github.com/godotengine/godot>`_."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:140
 msgid ""
@@ -295,6 +302,17 @@ msgid ""
 "scale. For instance, setting this to a value of 10 changes our coordinate "
 "system so 10 units = 1 meter."
 msgstr ""
+"Pierwsze co to nasze jednostki. W normalnych grach 3D nie musisz wiele "
+"myśleć o jednostkach. Dopóki wszystko jest w tej samej skali, jednak gdy "
+"pudełko o wymiarach 1 ,na 1 ,na 1 jednostkę w AR możemy mieć dowolny rozmiar "
+"w zależności od perspektywy, który może ktoś trzymać w dłoni lub czasami "
+"porównywać do wielkości budynku. W AR i VR zmienia się to, ponieważ rzeczy w "
+"twoim wirtualnym świecie są odwzorowywane na podstawie prawdziwym świecie. "
+"Jeśli w rzeczywistym świecie zrobisz krok np. 1 krok w przód, lecz jeśli w "
+"wirtualnym świecie wykonasz tylko 1 cm, mamy problem. To samo z pozycją "
+"kontrolerów ,jeśli nie pojawiają się we właściwej pozycji względem gracza, "
+"przerywa to zanurzenie w grze. Większość platform na VR, podczas gdy są na "
+"Serwerze AR/VR, zakłada , że 10 jednostek = 1 metr."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:162
 msgid ""

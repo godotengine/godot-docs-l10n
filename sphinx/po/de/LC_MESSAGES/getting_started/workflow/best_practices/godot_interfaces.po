@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,11 +110,11 @@ msgstr ""
 msgid "Nodes likewise have an alternative access point: the SceneTree."
 msgstr "Nodes haben ebenfalls einen alternativen Zugangspunkt: den Szenenbaum."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:244
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:245
 msgid "Accessing data or logic from an object"
 msgstr "Zugriff auf Daten oder Logik von einem Objekt aus"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:246
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:247
 msgid ""
 "Godot's scripting API is duck-typed. This means that if a script executes an "
 "operation, Godot doesn't validate that it supports the operation by "
@@ -126,7 +126,7 @@ msgstr ""
 "nach **Typ** unterstützt. Stattdessen wird überprüft, ob das Objekt die "
 "einzelne Methode **implementiert**."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:250
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:251
 msgid ""
 "For example, the :ref:`CanvasItem <class_CanvasItem>` class has a "
 "``visible`` property. All properties exposed to the scripting API are in "
@@ -141,7 +141,7 @@ msgstr ""
 "visible <class_CanvasItem_property_visible>` zuzugreifen, würde Godot die "
 "folgenden Überprüfungen der Reihe nach durchführen:"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:256
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:257
 msgid ""
 "If the object has a script attached, it will attempt to set the property "
 "through the script. This leaves open the opportunity for scripts to override "
@@ -153,7 +153,7 @@ msgstr ""
 "für ein Basisobjekt definierte Eigenschaft zu überschreiben, indem die "
 "Setter-Methode für die Eigenschaft überschrieben wird."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:261
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:262
 msgid ""
 "If the script does not have the property, it performs a HashMap lookup in "
 "the ClassDB for the \"visible\" property against the CanvasItem class and "
@@ -168,7 +168,7 @@ msgstr ""
 "finden Sie in der Dokumentation :ref:`Dateneinstellungen "
 "<doc_data_preferences>`."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:267
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:268
 msgid ""
 "If not found, it does an explicit check to see if the user wants to access "
 "the \"script\" or \"meta\" properties."
@@ -176,7 +176,7 @@ msgstr ""
 "Wenn es nicht gefunden wird, wird explizit überprüft, ob der Benutzer auf "
 "die Eigenschaften \"script\" oder \"meta\" zugreifen möchte."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:270
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:271
 msgid ""
 "If not, it checks for a ``_set``/``_get`` implementation (depending on type "
 "of access) in the CanvasItem and its inherited types. These methods can "
@@ -189,7 +189,7 @@ msgstr ""
 "dass das Objekt eine Eigenschaft hat. Dies ist auch bei der Methode "
 "``_get_property_list`` der Fall."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:275
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:276
 msgid ""
 "Note that this happens even for non-legal symbol names such as in the case "
 "of :ref:`TileSet <class_TileSet>`'s \"1/tile_name\" property. This refers to "
@@ -201,7 +201,7 @@ msgstr ""
 "bezieht sich auf den Namen der Kachel mit der ID 1, z. B. :ref:`TileSet."
 "tile_get_name(1) <class_TileSet_method_tile_get_name>`."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:280
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:281
 msgid ""
 "As a result, this duck-typed system can locate a property either in the "
 "script, the object's class, or any class that object inherits, but only for "
@@ -211,7 +211,7 @@ msgstr ""
 "Skript, in der Klasse des Objekts oder in einer beliebigen Klasse, die das "
 "Objekt erbt, finden, jedoch nur für Dinge, die \"Objekt\" erweitern."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:284
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:285
 msgid ""
 "Godot provides a variety of options for performing runtime checks on these "
 "accesses:"
@@ -219,7 +219,7 @@ msgstr ""
 "Godot bietet eine Vielzahl von Optionen für die Durchführung von "
 "Laufzeitprüfungen für diese Zugriffe:"
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:287
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:288
 msgid ""
 "A duck-typed property access. These will property check (as described "
 "above). If the operation isn't supported by the object, execution will halt."
@@ -228,7 +228,7 @@ msgstr ""
 "überprüfen (wie oben beschrieben). Wenn der Vorgang vom Objekt nicht "
 "unterstützt wird, wird die Ausführung angehalten."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:315
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:316
 msgid ""
 "A method check. In the case of :ref:`CanvasItem.visible "
 "<class_CanvasItem_property_visible>`, one can access the methods, "
@@ -238,7 +238,7 @@ msgstr ""
 "<class_CanvasItem_property_visible>` kann man wie bei jeder anderen Methode "
 "auf die Methoden ``set_visible`` und ``is_visible`` zugreifen."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:447
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:454
 msgid ""
 "Outsource the access to a :ref:`FuncRef <class_FuncRef>`. These may be "
 "useful in cases where one needs the max level of freedom from dependencies. "
@@ -249,7 +249,7 @@ msgstr ""
 "erforderlich ist. In diesem Fall stützt man sich auf einen externen Kontext, "
 "um die Methode einzurichten."
 
-#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:506
+#: ../../docs/getting_started/workflow/best_practices/godot_interfaces.rst:513
 msgid ""
 "These strategies contribute to Godot's flexible design. Between them, users "
 "have a breadth of tools to meet their specific needs."

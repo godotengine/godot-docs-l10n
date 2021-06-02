@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,26 +37,24 @@ msgid ""
 "small increments between each shot to create the illusion of movement when "
 "the images are played back quickly in sequence."
 msgstr ""
-"传统意义上，`剪影动画 <https://en.wikipedia.org/wiki/Cutout_animation>`__是一"
-"种`定格动画 <https://zh.wikipedia.org/zh-cn/%E5%AE%9A%E6%A0%BC%E5%8A"
-"%A8%E7%94%BB>`__ 。在剪影动画中，人们把纸片（或者其他的薄材料）剪成特殊的形"
-"状，来组合成角色和物体的二维形象。角色的身体通常是由几个部件组成的。这些部件"
-"在动画的每一帧中形成一种组合，之后对其摄影。动画制作者在两次摄影之间将这些部"
-"分进行很小幅度的移动和旋转，这样，当这些摄影的画面以很快的速度连续依次播放"
-"时，就可以造成这些角色和物体在连续运动的假象。"
+"传统意义上, `剪影动画 <https://en.wikipedia.org/wiki/Cutout_animation>`__ 是"
+"一种 `定格动画 <https://zh.wikipedia.org/zh-cn/%E5%AE%9A%E6%A0%BC%E5%8A"
+"%A8%E7%94%BB>`__ .在剪影动画中,人们把纸片(或者其他的薄材料)剪成特殊的形状,来"
+"组合成角色和物体的二维形象.角色的身体通常是由几个部件组成的.这些部件在动画的"
+"每一帧中形成一种组合,之后对其摄影.动画制作者在两次摄影之间将这些部分进行很小"
+"幅度的移动和旋转,这样,当这些摄影的画面以很快的速度连续依次播放时,就可以造成这"
+"些角色和物体在连续运动的假象."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:18
-#, fuzzy
 msgid ""
 "Simulations of cutout animation can now be created using software as seen in "
 "`South Park <https://en.wikipedia.org/wiki/South_Park>`__ and `Jake and the "
 "Never Land Pirates <https://en.wikipedia.org/wiki/"
 "Jake_and_the_Never_Land_Pirates>`__."
 msgstr ""
-"随着数字时代的到来，可以使用计算机实现这种技术，这导致使用数字剪纸动画电视节"
-"目的数量增加。 值得注意的示例有 `South Park <https://en.wikipedia.org/wiki/"
-"South_Park>`__ 或 `Jake和Never Land Pirates <https://en.wikipedia.org/wiki/"
-"Jake_and_the_Never_Land_Pirates>`__ 。"
+"现在可以用软件制作剪纸动画的模拟,如 `南方公园<https://en.wikipedia.org/wiki/"
+"South_Park>`__ 和 `杰克和永不落幕的海盗<https://en.wikipedia.org/wiki/"
+"Jake_and_the_Never_Land_Pirates>`__ ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:22
 msgid ""
@@ -64,31 +62,29 @@ msgid ""
 "`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
 "Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
-"在视频游戏中，这种技术也变得流行。 例如 `Paper Mario <https://en.wikipedia."
-"org/wiki/Super_Paper_Mario>`__ 或 `Rayman Origins <https://en.wikipedia.org/"
-"wiki/Rayman_Origins>`__ 。"
+"在视频游戏中,这种技术也变得流行. 例如 `Paper Mario <https://en.wikipedia.org/"
+"wiki/Super_Paper_Mario>`__ 或 `Rayman Origins <https://en.wikipedia.org/wiki/"
+"Rayman_Origins>`__ ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:27
-#, fuzzy
 msgid "Cutout animation in Godot"
-msgstr "剪纸动画"
+msgstr "Godot中剪纸动画"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
 msgid ""
 "Godot provides tools for working with cutout rigs, and is ideal for the "
 "workflow:"
-msgstr "Godot提供了一些工具，用于剪纸动画的绑定，而且是工作流的理想选择："
+msgstr "Godot提供了一些工具,用于剪纸动画的绑定,而且是工作流的理想选择:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:31
-#, fuzzy
 msgid ""
 "**The animation system is fully integrated with the engine**: This means "
 "animations can control much more than just motion of objects. Textures, "
 "sprite sizes, pivots, opacity, color modulation, and more, can all be "
 "animated and blended."
 msgstr ""
-"**动画系统与引擎完全集成**:这意味着，动画可以控制的不仅仅是物体的运动，例如纹"
-"理，精灵大小，枢轴，不透明度，颜色调制等。一切都可以动画和混合。"
+"**动画系统与引擎完全集成**: 这意味着动画可以控制的不仅仅是物体的运动.纹理、精"
+"灵大小、枢轴、不透明度、颜色调制等等,都可以进行动画和混合."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
 msgid ""
@@ -99,42 +95,40 @@ msgid ""
 "animation can be used selectively for complex parts such as hands, feet, "
 "changing facial expressions, etc."
 msgstr ""
-"**混合动画风格**:动画精灵允许将传统赛璐璐动画与剪纸动画一起使用。在赛璐璐动画"
-"中，不同的动画帧使用完全不同的绘图，而不是相同的片段位置不同。在其他基于剪纸"
-"的动画中，赛璐璐动画可以选择性地用于复杂的部件，例如手、脚、改变面部表情等。"
+"**混合动画风格**:动画精灵允许将传统赛璐璐动画与剪纸动画一起使用.在赛璐璐动画"
+"中,不同的动画帧使用完全不同的绘图,而不是相同的片段位置不同.在其他基于剪纸的动"
+"画中,赛璐璐动画可以选择性地用于复杂的部件,例如手、脚、改变面部表情等."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:41
-#, fuzzy
 msgid ""
 "**Custom Shaped Elements**: Custom shapes can be created with :ref:"
 "`Polygon2D <class_Polygon2D>` allowing UV animation, deformations, etc."
 msgstr ""
-"**自定义形状元素**: 可以使用 :ref:`Polygon2D <class_Polygon2D>` 创建，允许混"
-"合UV动画，变形等。"
+"**自定义形状元素**: 可以用 :ref:`Polygon2D <class_Polygon2D>` 创建自定义形状,"
+"允许UV动画、变形等."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:44
-#, fuzzy
 msgid ""
 "**Particle Systems**: A cutout animation rig can be combined with particle "
 "systems. This can be useful for magic effects, jetpacks, etc."
 msgstr ""
-"**粒子系统**:也可以与传统的动画层次结构混合，对魔术效果，喷气背包等有用。"
+"**粒子系统**: 剪纸式动画配件可以与粒子系统相结合,这对魔法效果、喷气背包等很有"
+"用."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:46
-#, fuzzy
 msgid ""
 "**Custom Colliders**: Set colliders and influence areas in different parts "
 "of the skeletons, great for bosses and fighting games."
 msgstr ""
-"**自定义碰撞器**:设置碰撞器并影响骨骼不同部位的区域，非常适合老板，格斗游戏"
-"等。"
+"**自定义碰撞器**: 在骷髅的不同部位设置碰撞器和影响区域,非常适合bosses和格斗游"
+"戏."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:48
-#, fuzzy
 msgid ""
 "**Animation Tree**: Allows complex combinations and blending between several "
 "animations, the same way it works in 3D."
-msgstr "**动画树**:允许多个动画的复杂组合和混合，就像在3D中一样。"
+msgstr ""
+"**动画树**: 允许在几个动画之间进行复杂的组合和混合,与3D动画的工作方式相同."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:51
 msgid "And much more!"
@@ -151,14 +145,14 @@ msgid ""
 "v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ character, created by "
 "Andreas Esau."
 msgstr ""
-"在本教程中，我们将使用由Andreas Esau创建的 `GBot <https://www.youtube.com/"
-"watch?v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ 角色作为演示。"
+"在本教程中,我们将使用由Andreas Esau创建的 `GBot <https://www.youtube.com/"
+"watch?v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ 角色作为演示."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:62
 msgid ""
 "Get your assets: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 msgstr ""
-"获得您的资源: :download:`gbot_resources.zip <files/gbot_resources.zip>`。"
+"获得您的资源: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:65
 msgid "Setting up the rig"
@@ -166,47 +160,42 @@ msgstr "设置装配"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:67
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
-msgstr "创建一个空的Node2D作为场景的根，我们将在它下面工作:"
+msgstr "创建一个空的Node2D作为场景的根,我们将在它下面工作:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:71
-#, fuzzy
 msgid ""
 "The first node of the model is the hip. Generally, both in 2D and 3D, the "
 "hip is the root of the skeleton. This makes it easier to animate:"
 msgstr ""
-"好的，我们将创建的模型的第一个节点是臀部。 通常，无论是2D还是3D，臀部都是骨架"
-"的根节点。 这使动画变得更容易:"
+"模型的第一个节点是臀部.一般来说,无论是2D还是3D,臀部都是骨骼的根部.这使得它更"
+"容易制作动画:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:77
-#, fuzzy
 msgid ""
 "Next will be the torso. The torso needs to be a child of the hip, so create "
 "a child sprite and load the torso texture, later accommodate it properly:"
 msgstr ""
-"接下来将是躯干。 躯干需要是臀部的子节点，所以创建一个子节点精灵并加载躯干，然"
+"接下来将是躯干,躯干需要是臀部的子级,所以要创建一个子级精灵,并加载躯干纹理,然"
 "后适当地调整它:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:82
-#, fuzzy
 msgid ""
 "This looks good. Let's see if our hierarchy works as a skeleton by rotating "
 "the torso. We can do this be pressing :kbd:`E` to enter rotate mode, and "
 "dragging with the left mouse button. To exit rotate mode hit :kbd:`ESC`."
 msgstr ""
-"这看起来不错。 让我们通过旋转躯干来看看我们的层次结构是否作为骨架。 我们可以"
-"按 ``E`` 进入旋转模式，然后用鼠标左键拖动。 要退出旋转模式，请按 ``ESC``。"
+"这看起来不错.让我们通过旋转躯干来看看层次结构是否能像骨架一样工作.可以按 :"
+"kbd:`E` 进入旋转模式,然后用鼠标左键拖动.要退出旋转模式,请按 :kbd:`ESC` ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:88
-#, fuzzy
 msgid "The rotation pivot is wrong and needs to be adjusted."
-msgstr "哎哟，看起来不太好看！ 旋转枢轴是错误的，这意味着它需要调整。"
+msgstr "旋转枢轴错误,需要调整."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:90
-#, fuzzy
 msgid ""
 "This small cross in the middle of the :ref:`Sprite <class_Sprite>` is the "
 "rotation pivot:"
-msgstr "这个在 :ref:`Sprite <class_Sprite>` 中间的小十字架是旋转轴:"
+msgstr ":ref:`Sprite <class_Sprite>` 中间的这个小十字就是旋转枢轴:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:96
 msgid "Adjusting the pivot"
@@ -218,33 +207,30 @@ msgid ""
 msgstr "可以通过更改Sprite中的 *offset* 属性来调整pivot:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:103
-#, fuzzy
 msgid ""
 "The pivot can also be adjusted *visually*. While hovering over the desired "
 "pivot point,  press :kbd:`V` to move the pivot there for the selected "
 "Sprite. There is also a tool in the tool bar that has a similar function."
 msgstr ""
-"但是，有一种方法可以在 *视觉上* 做得更多。 将鼠标悬停在所需的枢轴点上时，只需"
-"按“v”键即可为所选的Sprite移动枢轴。 或者，工具栏中有一个具有类似功能的工具。"
+"枢轴也可以通过 *视觉* 来调整.将鼠标悬停在所需的枢轴点上时,按 :kbd:`V` 将所选"
+"Sprite的枢轴移动到那里.工具栏中还有一个工具也有类似的功能."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:110
-#, fuzzy
 msgid ""
 "Continue adding body pieces, starting with the right arm. Make sure to put "
 "each sprite in its correct place in the hierarchy, so its rotations and "
 "translations are relative to its parent:"
 msgstr ""
-"现在看起来不错！ 让我们从右臂开始继续添加物体碎片。 确保将精灵放在层次结构"
-"中，因此它们的旋转和平移是相对于父级的:"
+"继续添加身体部件,从右臂开始.确保将每个精灵放在其在层次结构中的正确位置,其旋转"
+"和平移都是相对于其父级而言的:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:116
 msgid ""
 "With the left arm there's a problem. In 2D, child nodes appear in front of "
 "their parents:"
-msgstr "左臂有些问题。在二维中，子节点出现在父节点的前面："
+msgstr "左臂有些问题.在二维中,子节点出现在父节点的前面:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:121
-#, fuzzy
 msgid ""
 "We want the left arm to appear *behind* the hip and the torso. We could move "
 "the left arm nodes behind the hip (above the hip node in the scene "
@@ -252,38 +238,36 @@ msgid ""
 "hierarchy. This means it wouldn't be affected by the movement of the torso. "
 "We'll fix this problem with ``RemoteTransform2D`` nodes."
 msgstr ""
-"我们希望左臂出现在臀部和躯干的后面。可以将左臂移动节点在臀部后面（在场景层次"
-"结构的臀部节点之上），但这时，左臂就不在这个层次结构的正确位置了。这意味着它"
-"不会影响躯干的运动。我们将用“远程二维变换”节点修复这个问题。"
+"我们希望左臂出现在臀部和躯干的 *后面* .我们可以将左臂节点在场景层次结构中移到"
+"臀部节点上面,但这样一来,左臂在层次结构中的位置就不对了,这意味着它不会受到躯干"
+"移动的影响.我们用 ``RemoteTransform2D`` 节点来解决这个问题."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:127
 msgid ""
 "You can also fix depth ordering problems by adjusting the Z property of any "
 "node inheriting from Node2D."
-msgstr "还可以通过调整从二维节点继承的任何节点的Z属性，来修复深度排序问题。"
+msgstr "还可以通过调整从二维节点继承的任何节点的Z属性,来修复深度排序问题."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:131
 msgid "RemoteTransform2D node"
 msgstr "RemoteTransform2D节点"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:133
-#, fuzzy
 msgid ""
 "The :ref:`RemoteTransform2D <class_RemoteTransform2D>` node transforms nodes "
 "somewhere else in the hierarchy. This node applies its own transform "
 "(including any transformation it inherits from its parents) to the remote "
 "node it targets."
 msgstr ""
-"Godot提供了一个特殊节点， :ref:`RemoteTransform2D "
-"<class_RemoteTransform2D>`。 通过将转换应用于远程节点，此节点将转换位于层次结"
-"构中其他位置的节点。"
+":ref:`RemoteTransform2D <class_RemoteTransform2D>` 节点对层次结构中其他地方的"
+"节点进行变换.这个节点将自己的变换,包括它从父节点继承的任何变换,应用到它所针对"
+"的遥控节点."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:137
-#, fuzzy
 msgid ""
 "This allows us to correct the visibility order of our elements, "
 "independently of the locations of those parts in the cutout hierarchy."
-msgstr "这使得能够具有独立于层次结构的可见性顺序。"
+msgstr "这使我们能够修正元素的可见性顺序,这些部分独立于在剪裁层次结构中的位置."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:140
 msgid ""
@@ -292,16 +276,17 @@ msgid ""
 "call it ``remote_hand_l``. Use the ``Remote Path`` property of the two new "
 "nodes to target the ``arm_l`` and ``hand_l`` sprites respectively:"
 msgstr ""
-"创建一个“远程二维变换”节点作为躯干的子节点。命名为“remote_arm_l”。在第一个节"
-"点中创建另一个远程二维变换节点，并将其命名为“remote_hand_l”。使用两个新节点"
-"的“远程路径”属性，分别指向“arm_l”和“hand_l”精灵："
+"创建一个\"远程二维变换\"节点作为躯干的子节点.命名为\"remote_arm_l\".在第一个"
+"节点中创建另一个远程二维变换节点,并将其命名为\"remote_hand_l\".使用两个新节点"
+"的\"远程路径\"属性,分别指向\"arm_l\"和\"hand_l\"精灵:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:147
-#, fuzzy
 msgid ""
 "Moving the ``RemoteTransform2D`` nodes now moves the sprites. So we can "
 "create animations by adjusting the ``RemoteTransform2D`` transforms:"
-msgstr "移动远程变换节点将移动精灵，使您可以轻松设置角色的动画和姿势:"
+msgstr ""
+"移动 ``RemoteTransform2D`` 节点现在可以移动精灵.所以可以通过调整 "
+"``RemoteTransform2D`` 变换来创建动画:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:153
 msgid "Completing the skeleton"
@@ -311,42 +296,38 @@ msgstr "完成骨架"
 msgid ""
 "Complete the skeleton by following the same steps for the rest of the parts. "
 "The resulting scene should look similar to this:"
-msgstr "按照其余部分的相同步骤完成骨架。 生成的场景应该类似于:"
+msgstr "按照其余部分的相同步骤完成骨架. 生成的场景应该类似于:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:160
 msgid ""
 "The resulting rig will be easy to animate. By selecting the nodes and "
 "rotating them you can animate forward kinematics (FK) efficiently."
 msgstr ""
-"生成的装备很容易制作动画。 通过选择节点并旋转它们，您可以有效地为前向运动学"
-"(FK)设置动画。"
+"生成的装备很容易制作动画. 通过选择节点并旋转它们,您可以有效地为前向运动学(FK)"
+"设置动画."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:163
-#, fuzzy
 msgid "For simple objects and rigs this is fine, but there are limitations:"
-msgstr "对于简单的物体和装配，这已足够，但仍有以下常见问题:"
+msgstr "对于简单的物体和装配来说已经足够了,但仍然有限制:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:165
-#, fuzzy
 msgid ""
 "Selecting sprites in the main viewport can become difficult in complex rigs. "
 "The scene tree ends up being used to select parts instead, which can be "
 "slower."
 msgstr ""
-"对于复杂的装配，选择精灵可能变得困难，并且由于难以点击正确的精灵而使用场景"
-"树。"
+"在复杂的装配中,在主视窗中选择精灵会变得很困难.场景树最终被替代,用来选择部件,"
+"这可能会比较慢."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:167
 msgid ""
 "Inverse Kinematics (IK) is useful for animating extremities like hands and "
 "feet, and can't be used with our rig in its current state."
-msgstr ""
-"反向动力学（IK）对于手和脚等肢体的运动非常有用，目前我们的绑定还无法使用。"
+msgstr "反向动力学(IK)对于手和脚等肢体的运动非常有用,目前我们的绑定还无法使用."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:170
-#, fuzzy
 msgid "To solve these problems we'll use Godot's skeletons."
-msgstr "为了解决这些问题，Godot支持一种简单的骨骼方法。"
+msgstr "为了解决这些问题,我们将会使用Godot的骨骼."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:173
 msgid "Skeletons"
@@ -356,25 +337,22 @@ msgstr "骨架"
 msgid ""
 "In Godot there is a helper to create \"bones\" between nodes. The bone-"
 "linked nodes are called skeletons."
-msgstr ""
-"在Godot中，有一个在节点之间创建“单根骨”的辅助工具。骨连接节点称为骨架。"
+msgstr "在Godot中,有一个在节点之间创建\"单根骨\"的辅助工具.骨连接节点称为骨架."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:178
-#, fuzzy
 msgid ""
 "As an example, let's turn the right arm into a skeleton. To create a "
 "skeleton, a chain of nodes must be selected from top to bottom:"
 msgstr ""
-"举个示例，让我们将右臂变成骨架。 要创建骨架，必须从上到下选择一系列节点:"
+"举个例子,让我们把右臂变成一个骨架.要创建一个骨架,必须从上到下选择一个节点链:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:183
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
-msgstr "然后，单击Skeleton菜单并选择 ``Make Bones`` 。"
+msgstr "然后,单击Skeleton菜单并选择 ``Make Bones`` ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:187
-#, fuzzy
 msgid "This will add bones covering the arm, but the result may be surprising."
-msgstr "这将增加覆盖手臂的骨骼，但结果并不完全符合预期。"
+msgstr "这将增加覆盖在手臂上的骨头,但结果可能令人惊讶."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:191
 msgid ""
@@ -382,8 +360,8 @@ msgid ""
 "parent. And there's currently no child of the hand node. With this knowledge "
 "let's try again."
 msgstr ""
-"为什么这只手缺少一根单根骨？在Godot中，使用单根骨把节点和它的父节点连接起来。"
-"当前没有手节点的子节点。有了这些知识，让我们再试一次。"
+"为什么这只手缺少一根单根骨？在Godot中,使用单根骨把节点和它的父节点连接起来.当"
+"前没有手节点的子节点.有了这些知识,让我们再试一次."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:195
 msgid ""
@@ -391,20 +369,20 @@ msgid ""
 "ref:`Position2D <class_Position2D>` is preferred because it's visible in the "
 "editor. The endpoint node will ensure that the last bone has orientation."
 msgstr ""
-"第一步是创建端点节点。 任何类型的节点都可以，但是 :ref:`Position2D "
-"<class_Position2D>` 是首选，因为它在编辑器中可见。 端点节点将确保最后一个骨骼"
-"具有方向。"
+"第一步是创建端点节点. 任何类型的节点都可以,但是 :ref:`Position2D "
+"<class_Position2D>` 是首选,因为它在编辑器中可见. 端点节点将确保最后一个骨骼具"
+"有方向."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:202
 msgid ""
 "Now select the whole chain, from the endpoint to the arm and create bones:"
-msgstr "现在选择整个链，从端点到手臂并创建骨骼:"
+msgstr "现在选择整个链,从端点到手臂并创建骨骼:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:207
 msgid ""
 "The result resembles a skeleton a lot more, and now the arm and forearm can "
 "be selected and animated."
-msgstr "结果类似于骨架更多，现在可以选择手臂和前臂并设置动画。"
+msgstr "结果类似于骨架更多,现在可以选择手臂和前臂并设置动画."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:210
 msgid ""
@@ -412,39 +390,35 @@ msgid ""
 "articulable parts of the cutout, with the hip as the ultimate connection "
 "between all of them."
 msgstr ""
-"为所有重要的末端创建端点。为剪纸的所有可关节部分生成骨骼，臀部是它们之间的最"
-"终连接。"
+"为所有重要的末端创建端点.为剪纸的所有可关节部分生成骨骼,臀部是它们之间的最终"
+"连接."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:214
-#, fuzzy
 msgid ""
 "You may notice that an extra bone is created when connecting the hip and "
 "torso. Godot has connected the hip node to the scene root with a bone, and "
 "we don't want that. To fix this, select the root and hip node, open the "
 "Skeleton menu, click ``clear bones``."
 msgstr ""
-"您可能会注意到连接臀部和躯干时，会产生额外的骨骼。 要解决这个问题，请选择root"
-"和hip节点，打开Skeleton菜单，单击 ``clear bones``。"
+"你可能会注意到,在连接臀部和躯干时,会多出一个骨头.Godot用骨头将臀部节点连接到"
+"场景根部,我们不希望这样,要解决这个问题,选择根部和臀部节点,打开骨架菜单,点击 "
+"``clear bones`` ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
 msgid "Your final skeleton should look something like this:"
-msgstr "您最后的场景应该是这样的："
+msgstr "您最后的场景应该是这样的:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:225
-#, fuzzy
 msgid ""
 "You might have noticed a second set of endpoints in the hands. This will "
 "make sense soon."
-msgstr ""
-"最后！ 整个骨架都被操纵了！ 仔细观察，可以看出手中有第二组端点。 这很快就会有"
-"意义。"
+msgstr "你可能已经注意到了手上的第二组端点.这很快就会有意义."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:228
-#, fuzzy
 msgid ""
 "Now that the whole figure is rigged, the next step is setting up the IK "
 "chains. IK chains allow for more natural control of extremities."
-msgstr "现在整个骨架被装配，下一步是设置IK链。 IK链可以更自然地控制四肢。"
+msgstr "现在整个人物已经装配好了,下一步就是设置IK链.IK链可以更自然的控制四肢."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "IK chains"
@@ -459,33 +433,31 @@ msgid ""
 "rotating and positioning several other bones (the shin and the thigh at "
 "least). This would be quite complex and lead to imprecise results."
 msgstr ""
-"IK 是反向动力学（Inverse Kinematics）的缩写，给手部、足部以及其它肢体的动画带"
-"来便利。想象一下，您想要将角色的脚放在地面上的特定位置。 如果没有 IK 链，脚的"
-"每次运动都需要旋转和定位其他几个骨骼（至少得涉及大腿及小腿）。 这将非常复杂并"
-"导致不精确的结果。"
+"IK 是反向动力学(Inverse Kinematics)的缩写,给手部、足部以及其它肢体的动画带来"
+"便利.想象一下,您想要将角色的脚放在地面上的特定位置. 如果没有 IK 链,脚的每次运"
+"动都需要旋转和定位其他几个骨骼(至少得涉及大腿及小腿). 这将非常复杂并导致不精"
+"确的结果."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:241
 msgid ""
 "IK allows us to move directly the foot while the shin and thigh self-adjust."
-msgstr "反向动力学（IK）允许我们直接移动脚，同时小腿和大腿可以自我调整。"
+msgstr "反向动力学(IK)允许我们直接移动脚,同时小腿和大腿可以自我调整."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:243
-#, fuzzy
 msgid ""
 "To create an IK chain, select a chain of bones from endpoint to the base for "
 "the chain. For example, to create an IK chain for the right leg, select the "
 "following:"
 msgstr ""
-"要创建IK链，只需从端点到链的基础选择一串骨骼。 例如，要为右腿创建IK链，请选择"
-"以下内容:"
+"要创建IK链,请选择从端点到链基的骨骼链.例如,要为右腿创建一条IK链,选择以下:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:249
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
-msgstr "然后为IK启用此链。 转到编辑>制作IK链。"
+msgstr "然后为IK启用此链. 转到编辑>制作IK链."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:253
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr "结果，链的基部将变为 *黄色*。"
+msgstr "结果,链的基部将变为 *黄色*."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:257
 msgid ""
@@ -493,46 +465,38 @@ msgid ""
 "chain (e.g. a foot) and move it. You'll see the rest of the chain adjust as "
 "you adjust its position."
 msgstr ""
-"一旦IK链设置完毕，抓住任何链基（例如脚部）的任意嵌套子节点并移动。你会看到链"
-"的剩余部分跟随你的移动调整位置。"
+"一旦IK链设置完毕,抓住任何链基(例如脚部)的任意嵌套子节点并移动.你会看到链的剩"
+"余部分跟随你的移动调整位置."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:264
-#, fuzzy
 msgid "Animation tips"
-msgstr "动画选项"
+msgstr "动画提示"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:266
-#, fuzzy
 msgid ""
 "The following section will be a collection of tips for creating animation "
 "for your cutout rigs. For more information on how the animation system in "
 "Godot works, see :ref:`doc_animations`."
 msgstr ""
-"以下部分将为您的装备创建动画的提示集合。 如果不确定Godot的动画系统是如何工作"
-"的，请再次检查 :ref:`doc_animations` 来刷新它。"
+"下面一节将是创建剪纸动画的技巧集合.关于Godot中的动画系统如何工作的更多信息,请"
+"参阅 :ref:`doc_animations` ."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:271
-#, fuzzy
 msgid "Setting keyframes and excluding properties"
-msgstr "其他属性的关键帧"
+msgstr "设置关键帧和排除属性"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:273
-#, fuzzy
 msgid ""
 "Special contextual elements appear in the top toolbar when the animation "
 "editor window is open:"
-msgstr ""
-"在2D中执行动画时，顶部菜单中将显示帮助程序。 此助手仅在打开动画编辑器窗口时出"
-"现:"
+msgstr "当动画编辑器窗口打开时,特殊的上下文元素会出现在顶部工具栏中:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:278
-#, fuzzy
 msgid ""
 "The key button inserts location, rotation, and scale keyframes for the "
 "selected objects or bones at the current playhead position."
 msgstr ""
-"键按钮将位置/旋转/缩放关键帧插入所选对象或骨骼。 这取决于启用的掩码。 绿色项"
-"目将插入键，而红色项目不会，因此根据您的喜好修改键插入掩码。"
+"按键按钮在当前游戏开始位置为选定的对象或骨骼插入位置、旋转和缩放关键帧."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:281
 msgid ""
@@ -540,8 +504,8 @@ msgid ""
 "button modify its function, allowing you to specify which of the three "
 "properties keyframes will be created for."
 msgstr ""
-"通过切换关键帧按钮左边的“位置”、“旋转”和“缩放”按钮，可以修改其功能，允许您指"
-"定将为三个属性中的哪一个创建关键帧。"
+"通过切换关键帧按钮左边的\"位置\"、\"旋转\"和\"缩放\"按钮,可以修改其功能,允许"
+"您指定将为三个属性中的哪一个创建关键帧."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:285
 msgid ""
@@ -553,45 +517,42 @@ msgid ""
 "when you add a new keyframe. This way, you can avoid adding unwanted scale "
 "keyframes which would disrupt the existing scale animation."
 msgstr ""
-"下面是一个例子，说明如何使用其的:假设您有一个节点，其中已经有两个关键帧只对其"
-"缩放进行动画。您想在同一个节点重叠添加旋转移动。旋转运动应该在不同的时间开始"
-"和结束，与已经设置的缩放变化不同。在添加新关键帧时，可以使用切换按钮，只添加"
-"旋转信息。这样，您就可以避免添加不需要的缩放关键帧，破坏现有的缩放动画。"
+"下面是一个例子,说明如何使用其的:假设您有一个节点,其中已经有两个关键帧只对其缩"
+"放进行动画.您想在同一个节点重叠添加旋转移动.旋转运动应该在不同的时间开始和结"
+"束,与已经设置的缩放变化不同.在添加新关键帧时,可以使用切换按钮,只添加旋转信息."
+"这样,您就可以避免添加不需要的缩放关键帧,破坏现有的缩放动画."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:294
-#, fuzzy
 msgid "Creating a rest pose"
-msgstr "创建树"
+msgstr "创建休息姿势"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:296
 msgid ""
 "Think of a rest pose as a default pose that your cutout rig should be set to "
 "when no other pose is active in your game. Create a rest pose as follows:"
 msgstr ""
-"将休息姿势视为默认姿势，当游戏中没有其他姿势处于活动状态时，应该将其设置为剪"
-"纸绑定。创造一个休息姿势如下："
+"将休息姿势视为默认姿势,当游戏中没有其他姿势处于活动状态时,应该将其设置为剪纸"
+"绑定.创造一个休息姿势如下:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:299
 msgid ""
 "1. Make sure the rig parts are positioned in what looks like a \"resting\" "
 "arrangement."
-msgstr "1. 确保绑定部件处于“休息”状态。"
+msgstr "1. 确保绑定部件处于\"休息\"状态."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:302
-#, fuzzy
 msgid "Create a new animation, rename it \"rest\"."
-msgstr "创建一个新动画，将其重命名为“rest”。"
+msgstr "创建一个新动画,重命名为 \"rest\"."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:304
-#, fuzzy
 msgid "Select all nodes in your rig (box selection should work fine)."
-msgstr "选择所有节点(框选择应该正常)。"
+msgstr "选择装配中的所有节点(应该可以框选)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid ""
 "4. Make sure the \"loc\", \"rot\", and \"scl\" toggle buttons are all active "
 "in the toolbar."
-msgstr "4. 确保工具栏中的“位置”、“旋转”和“缩放”切换按钮都是活动的。"
+msgstr "4. 确保工具栏中的\"位置\"、\"旋转\"和\"缩放\"切换按钮都是活动的."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:309
 msgid ""
@@ -599,8 +560,8 @@ msgid ""
 "storing their current arrangement. This pose can now be recalled when "
 "necessary in your game by playing the \"rest\" animation you've created."
 msgstr ""
-"5. 按下关键帧按钮。关键帧将插入所有选择的部件，以存储它们的当前布局。现在，当"
-"你需要的时候，你可以通过播放你创建的“休息”动画来再次呼叫你的姿势。"
+"5. 按下关键帧按钮.关键帧将插入所有选择的部件,以存储它们的当前布局.现在,当你需"
+"要的时候,你可以通过播放你创建的\"休息\"动画来再次呼叫你的姿势."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:316
 msgid "Modifying rotation only"
@@ -610,36 +571,34 @@ msgstr "只修改旋转"
 msgid ""
 "When animating a cutout rig, often it's only the rotation of the nodes that "
 "needs to change. Location and scale are rarely used."
-msgstr "当制作剪纸动画绑定时，通常只需要改变节点的旋转。很少使用位置和比例。"
+msgstr "当制作剪纸动画绑定时,通常只需要改变节点的旋转.很少使用位置和比例."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:322
-#, fuzzy
 msgid ""
 "So when inserting keys, you might find it convenient to have only the \"rot"
 "\" toggle active most of the time:"
-msgstr "因此，在插入键时，大多数时间只需要按下“rot”按钮:"
+msgstr ""
+"因此,在插入键时,你可能会发现在大多数时间里只有 \"rot\" 切换键处于激活状态,会"
+"很方便:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:327
-#, fuzzy
 msgid ""
 "This will avoid the creation of unwanted animation tracks for position and "
 "scale."
-msgstr "这将避免为将保持未使用的位置创建额外的动画轨道。"
+msgstr "这将避免为坐标和缩放创建不必要的动画轨道."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
-#, fuzzy
 msgid "Keyframing IK chains"
-msgstr "关键帧IK"
+msgstr "关键帧IK链"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:333
-#, fuzzy
 msgid ""
 "When editing IK chains, it's not necessary to select the whole chain to add "
 "keyframes. Selecting the endpoint of the chain and inserting a keyframe will "
 "automatically insert keyframes for all other parts of the chain too."
 msgstr ""
-"编辑IK链时，无需选择整个链来添加关键帧。 选择链的端点并插入关键帧将自动插入关"
-"键帧，直到链基。 这使得动画四肢的任务变得更加简单。"
+"编辑IK链时,不需要选择整个链来添加关键帧.选择链的端点并插入关键帧将自动为链的"
+"所有其他部分插入关键帧."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:338
 msgid "Visually move a sprite behind its parent"
@@ -653,9 +612,9 @@ msgid ""
 "him. During this animation the whole arm and the object in his hand would "
 "need to change their visual depth relative to the body of the character."
 msgstr ""
-"有时，在动画过程中，需要让节点相对于其父节点更改其可视深度。想象一个面对镜头"
-"的角色，他从背后拿出一个东西放在面前。在这个动画过程中，整个手臂和他手中的物"
-"体都需要改变相对于角色身体的视觉深度。"
+"有时,在动画过程中,需要让节点相对于其父节点更改其可视深度.想象一个面对镜头的角"
+"色,他从背后拿出一个东西放在面前.在这个动画过程中,整个手臂和他手中的物体都需要"
+"改变相对于角色身体的视觉深度."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:346
 msgid ""
@@ -665,34 +624,31 @@ msgid ""
 "Parent\" and/or RemoteTransform2D nodes. They provide overlapping "
 "functionality."
 msgstr ""
-"为了帮助解决这个问题，在所有二维节点继承节点上都有一个可制作关键帧的“在父级之"
-"后”属性。当规划你的绑定，考虑它需要执行的动作，并考虑如何使用“在父级之后”和/"
-"或远程二维变换节点。它们提供重叠的功能。"
+"为了帮助解决这个问题,在所有二维节点继承节点上都有一个可制作关键帧的\"在父级之"
+"后\"属性.当规划你的绑定,考虑它需要执行的动作,并考虑如何使用\"在父级之后\"和/"
+"或远程二维变换节点.它们提供重叠的功能."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:354
 msgid "Setting easing curves for multiple keys"
 msgstr "为多个关键帧设置缓动曲线"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:356
-#, fuzzy
 msgid "To apply the same easing curve to multiple keyframes at once:"
-msgstr "将相同的缓动曲线同时应用于多个关键帧："
+msgstr "要将同一缓动曲线同时应用于多个关键帧:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:358
 msgid "Select the relevant keys."
-msgstr "选择相关的关键帧。"
+msgstr "选择相关的关键帧."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:359
-#, fuzzy
 msgid ""
 "Click on the pencil icon in the bottom right of the animation panel. This "
 "will open the transition editor."
-msgstr "单击Node选项卡中的AnimationPlayer节点，打开视图底部的动画面板。"
+msgstr "点击动画面板右下角的铅笔图标.这将打开过渡编辑器."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:361
-#, fuzzy
 msgid "In the transition editor, click on the desired curve to apply it."
-msgstr "在转换编辑器中，单击所需的曲线来应用它。"
+msgstr "在过渡编辑器中,点击所需曲线进行应用."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:366
 msgid "2D Skeletal deform"
@@ -704,10 +660,10 @@ msgid ""
 "to deform organically (e.g. antennae that wobble as an insect character "
 "walks)."
 msgstr ""
-"骨骼变形可以用来增加一个剪纸绑定，允许单个部件有组织地变形(例如，像昆虫走路时"
-"摆动的触角一样)。"
+"骨骼变形可以用来增加一个剪纸绑定,允许单个部件有组织地变形(例如,像昆虫走路时摆"
+"动的触角一样)."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:371
 msgid ""
 "This process is described in a :ref:`separate tutorial <doc_2d_skeletons>`."
-msgstr "这个过程在:参考:'单独教程<文档_二维骨骼>'中描述。"
+msgstr "这个过程在 :ref:`separate tutorial <doc_2d_skeletons>`."

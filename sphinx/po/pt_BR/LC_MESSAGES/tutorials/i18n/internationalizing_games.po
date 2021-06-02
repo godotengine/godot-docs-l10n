@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,6 +127,23 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
 msgid ""
+"This automatic translation behavior may be undesirable in certain cases. For "
+"instance, when using a Label to display a player's name, you most likely "
+"don't want the player's name to be translated if it matches a translation "
+"key. To disable automatic translation on a specific node, use :ref:`Object."
+"set_message_translation<class_Object_method_set_message_translation>` and "
+"send a :ref:`Object.notification<class_Object_method_notification>` to "
+"update the translation::"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:74
+msgid ""
+"For more complex UI nodes such as OptionButtons, you may have to use this "
+"instead::"
+msgstr ""
+
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:83
+msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
 "used. This will just look up the text in the translations and convert it if "
 "found:"
@@ -135,11 +152,11 @@ msgstr ""
 "usada. Isso apenas pesquisará o texto nas traduções e o converterá se "
 "encontrado:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:69
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:93
 msgid "Making controls resizable"
 msgstr "Tornando os controles redimensionáveis"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:71
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:95
 msgid ""
 "The same text in different languages can vary greatly in length. For this, "
 "make sure to read the tutorial on :ref:`doc_size_and_anchors`, as "
@@ -153,11 +170,11 @@ msgstr ""
 "<class_Container>` pode ser útil, assim como as opções de quebra de texto "
 "disponíveis em :ref:`Label <class_Label>`."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:78
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:102
 msgid "TranslationServer"
 msgstr ""
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:80
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:104
 msgid ""
 "Godot has a server handling low-level translation management called the :ref:"
 "`TranslationServer <class_TranslationServer>`. Translations can be added or "
@@ -169,11 +186,11 @@ msgstr ""
 "traduções podem ser adicionadas ou removidas durante o tempo de execução; o "
 "idioma atual também pode ser alterado em tempo de execução."
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:86
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:110
 msgid "Command line"
 msgstr "Linha de comando"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:88
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:112
 msgid ""
 "Language can be tested when running Godot from the command line. For "
 "example, to test a game in French, the following argument can be supplied:"
@@ -182,11 +199,11 @@ msgstr ""
 "comando. Por exemplo, para testar um jogo em francês, o seguinte argumento "
 "pode ser fornecido:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:97
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:121
 msgid "Translating the project name"
 msgstr "Traduzindo o nome do projeto"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:99
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:123
 msgid ""
 "The project name becomes the app name when exporting to different operating "
 "systems and platforms. To specify the project name in more than one "
@@ -200,7 +217,7 @@ msgstr ""
 "**Configurações do projeto** e anexe o identificador do locale a ele. Por "
 "exemplo, para o espanhol, isto seria ``application/name_es``:"
 
-#: ../../docs/tutorials/i18n/internationalizing_games.rst:107
+#: ../../docs/tutorials/i18n/internationalizing_games.rst:131
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."

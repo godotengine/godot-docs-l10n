@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:4
-msgid "Using gridmaps"
-msgstr "使用网格地图"
+#, fuzzy
+msgid "Using GridMaps"
+msgstr "使用网格图(GridMap)"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:7
 msgid "Introduction"
@@ -33,17 +34,17 @@ msgid ""
 "that can be placed on a grid, as if you were building a level with an "
 "unlimited amount of Lego blocks."
 msgstr ""
-":ref:`Gridmaps <class_GridMap>` 是一种用于创建3D游戏关卡的工具，方式类似于2D"
-"中使用 :ref:`TileMap <doc_using_tilemaps>` 。使用一个定义好的可以放在一个网格"
-"中的 3D mesh (a :ref:`class_MeshLibrary`) (译注，grid和mesh都译作网格，这里为"
-"了清晰，mesh直接使用英文，grid则译作网格)对象集合搭建关卡，就像您使用无限多数"
-"量的乐高积木搭建世界一样。"
+":ref:`Gridmaps <class_GridMap>` 是一种用于创建3D游戏关卡的工具,方式类似于2D中"
+"使用 :ref:`TileMap <doc_using_tilemaps>` .使用一个定义好的可以放在一个网格中"
+"的 3D mesh (a :ref:`class_MeshLibrary`) (译注,grid和mesh都译作网格,这里为了清"
+"晰,mesh直接使用英文,grid则译作网格)对象集合搭建关卡,就像您使用无限多数量的乐"
+"高积木搭建世界一样."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
-msgstr "就像使用tilemap的tile一样，碰撞和导航也可以添加到网格中。"
+msgstr "就像使用tilemap的tile一样,碰撞和导航也可以添加到网格中."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:19
 msgid "Example project"
@@ -54,14 +55,14 @@ msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
 msgstr ""
-"要学习GridMaps是怎么样工作的，请先下载示例项目: :download:`gridmap_demo.zip "
-"<files/gridmap_demo.zip>`。"
+"要学习GridMaps是怎么样工作的,请先下载示例项目: :download:`gridmap_demo.zip "
+"<files/gridmap_demo.zip>`."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
-msgstr "解压缩此项目并使用``导入``按钮将其添加到项目管理器。"
+msgstr "解压缩此项目并使用``导入``按钮将其添加到项目管理器."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
@@ -74,24 +75,24 @@ msgid ""
 "\"MeshLibrary_Source.tscn\" scene to see an example of how to set up the "
 "mesh library."
 msgstr ""
-"首先，您需要一个 :ref:`class_MeshLibrary`，它是可以在gridmap中使用的Mesh的集"
-"合。 打开``MeshLibrary_Source.tscn``场景以查看如何设置网格库的示例。"
+"首先,您需要一个 :ref:`class_MeshLibrary`,它是可以在gridmap中使用的Mesh的集"
+"合. 打开``MeshLibrary_Source.tscn``场景以查看如何设置网格库的示例."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
 msgstr ""
-"可以看到，这个场景有一个 :ref:`class_Spatial` 节点作为它的根，以及一些 :ref:"
-"`class_MeshInstance` 子节点。"
+"可以看到,这个场景有一个 :ref:`class_Spatial` 节点作为它的根,以及一些 :ref:"
+"`class_MeshInstance` 子节点."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
 msgstr ""
-"如果您的场景中不需要任何物理，那么到这里就完成了。 但是，在大多数情况下，您还"
-"需要给网格指定碰撞体。"
+"如果您的场景中不需要任何物理,那么到这里就完成了. 但是,在大多数情况下,您还需要"
+"给网格指定碰撞体."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
@@ -104,8 +105,8 @@ msgid ""
 "menu to automatically create the collision body based on the mesh data."
 msgstr ""
 "您可以手动为每个Mesh指定 :ref:`class_StaticBody` 和 :ref:"
-"`class_CollisionShape`。或者，您可以使用``网格(Mesh)``菜单根据Mesh数据自动创"
-"建碰撞体。"
+"`class_CollisionShape`.或者,您可以使用``网格(Mesh)``菜单根据Mesh数据自动创建"
+"碰撞体."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""
@@ -114,9 +115,8 @@ msgid ""
 "mesh has a physics body and collision shape assigned, your mesh library is "
 "ready to be used."
 msgstr ""
-"请注意，``凸(Convex)``碰撞体对于简单Mesh效果更好。 对于更复杂的形状，请选择``"
-"创建Trimesh静态体``。 一旦每个网格都分配了物理主体和碰撞形状，就可以使用Mesh"
-"库了。"
+"请注意,``凸(Convex)``碰撞体对于简单Mesh效果更好. 对于更复杂的形状,请选择``创"
+"建Trimesh静态体``. 一旦每个网格都分配了物理主体和碰撞形状,就可以使用Mesh库了."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Materials"
@@ -126,7 +126,7 @@ msgstr "材质"
 msgid ""
 "Only the materials from within the meshes are used when generating the mesh "
 "library. Materials set on the node will be ignored."
-msgstr "在生成网格库时，只使用网格内的材质。节点上设置的材质将被忽略。"
+msgstr "在生成网格库时,只使用网格内的材质.节点上设置的材质将被忽略."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:66
 msgid "Exporting the MeshLibrary"
@@ -137,13 +137,13 @@ msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
 msgstr ""
-"要导出库，点击 Scene -> Convert To.. -> MeshLibrary... ，并将其保存为资源。"
+"要导出库,点击 Scene -> Convert To.. -> MeshLibrary... ,并将其保存为资源."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:73
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
-msgstr "可以在项目中找到已导出的名为“MeshLibrary.tres”的Mesh库。"
+msgstr "可以在项目中找到已导出的名为\"MeshLibrary.tres\"的Mesh库."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:76
 msgid "Using GridMap"
@@ -155,8 +155,8 @@ msgid ""
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
 "property in the Inspector."
 msgstr ""
-"创建一个新场景并添加一个GridMap节点。 通过从``文件系统(FileSystem)``扩展面板"
-"拖动资源文件并将其放入Inspector中的``Theme(主题)``属性中来添加Mesh库。"
+"创建一个新场景并添加一个GridMap节点. 通过从``文件系统(FileSystem)``扩展面板拖"
+"动资源文件并将其放入Inspector中的``Theme(主题)``属性中来添加Mesh库."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:84
 msgid ""
@@ -164,8 +164,8 @@ msgid ""
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
 "\"Off\"."
 msgstr ""
-"``单元格/大小(Cell/Size)``属性应设置为Mesh的大小。 在本示例中您可以使用默认"
-"值。 将``Center Y``属性设置为``Off``。"
+"``单元格/大小(Cell/Size)``属性应设置为Mesh的大小. 在本示例中您可以使用默认"
+"值. 将``Center Y``属性设置为``Off``."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:87
 msgid ""
@@ -173,16 +173,15 @@ msgid ""
 "and placing it with Left-Click in the editor window. To remove a tile, hold :"
 "kbd:`Shift` and use Right-click."
 msgstr ""
-"现在你可以开始设计关卡了，从调色板中选择一个图块，然后在编辑器窗口中用左键单"
-"击它。要删除一个图块，按住 :kbd:`Shift` 并使用右键单击。"
+"现在你可以开始设计关卡了,从调色板中选择一个图块,然后在编辑器窗口中用左键单击"
+"它.要删除一个图块,按住 :kbd:`Shift` 并使用右键单击."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:91
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
 "pressing :kbd:`S` rotates a tile around the y-axis."
 msgstr ""
-"单击 ``GridMap`` 菜单可以查看选项和快捷键。 例如，按下 :kbd:`S` 绕y轴旋转图"
-"块。"
+"单击 ``GridMap`` 菜单可以查看选项和快捷键. 例如,按下 :kbd:`S` 绕y轴旋转图块."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:96
 msgid ""
@@ -190,15 +189,15 @@ msgid ""
 "selection box. You can duplicate or clear the selected area using the "
 "respective menu options."
 msgstr ""
-"按住 :kbd:`Shift` 并使用鼠标左键拖动将绘制一个选择框。 您可以使用相应的菜单选"
-"项复制或清除所选区域。"
+"按住 :kbd:`Shift` 并使用鼠标左键拖动将绘制一个选择框. 您可以使用相应的菜单选"
+"项复制或清除所选区域."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:102
 msgid ""
 "In the menu, you can also change the axis you're drawing on, as well as "
 "shift the drawing plane higher or lower on its axis."
 msgstr ""
-"在菜单中，您还可以更改正在绘制的轴，并将绘图平面在其轴上移动得更高或更低。"
+"在菜单中,您还可以更改正在绘制的轴,并将绘图平面在其轴上移动得更高或更低."
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:108
 msgid "Using GridMap in code"
@@ -208,4 +207,4 @@ msgstr "在代码中使用GridMap"
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."
-msgstr "有关节点方法和成员变量的详细信息，请参阅 :ref:`class_GridMap`。"
+msgstr "有关节点方法和成员变量的详细信息,请参阅 :ref:`class_GridMap`."

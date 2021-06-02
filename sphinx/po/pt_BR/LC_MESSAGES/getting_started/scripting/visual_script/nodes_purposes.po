@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,9 +61,9 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
-"s nós ainda exibem as informações necessárias como texto, mas a edição é "
-"feita por meio do *Inspector*. Para editá-los, selecione qualquer nó e edite "
-"suas propriedades no *Inspector*."
+"Nós ainda exibem as informações necessárias como texto, mas a edição é feita "
+"por meio do *Inspetor*. Para editá-los, selecione qualquer nó e edite suas "
+"propriedades no *Inspetor*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
 msgid "Ports and connections"
@@ -256,13 +256,12 @@ msgstr ""
 "O resultado é o valor poder ser mudado no seu script por uma *Porta de Dado*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
-#, fuzzy
 msgid ""
 "If instead reading this value is desired, drag the node again but hold :kbd:"
 "`Ctrl` (or :kbd:`Cmd` on macOS). This will create a getter:"
 msgstr ""
 "Se, em vez disso, for necessário ler esse valor, arraste o nó novamente, mas "
-"mantenha pressionada a tecla *Control* (ou Command no Mac). Isso criará um "
+"mantenha pressionada a tecla :kbd:`Ctrl` (ou Cmd no Mac). Isso criará um "
 "getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
@@ -534,13 +533,12 @@ msgstr ""
 "eles farão referência à mesma parte da memória."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
-#, fuzzy
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced setter (setting requires a sequence port)."
 msgstr ""
 "Como pode ser visto acima, há dois nós disponíveis: Um getter simples e um "
-"getter sequenciado (a configuração requer uma porta de seqüência)."
+"setter sequenciado (a configuração requer uma porta de sequência)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
@@ -975,7 +973,7 @@ msgid ""
 "``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 msgstr ""
 "Usar a maioria das funções embutidas já existentes que estão disponíveis "
-"para o GDScript, como ``sin()``,``cos()``,``print()``, como também "
+"para o GDScript, como ``sin()``, ``cos()``, ``print()``, como também "
 "construtores, como ``Vector3(x, y, z)``, ``Rect2(...)``, etc.:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:503

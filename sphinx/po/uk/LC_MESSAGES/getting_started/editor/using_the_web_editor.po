@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
-#, fuzzy
 msgid "Using the Web editor"
-msgstr "Запуск редактора"
+msgstr "Використання Web редактора"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""
 "Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
 "you can use to work on new or existing projects."
 msgstr ""
+"Починаючи з Godot 3.3, є `Web редактор <https://editor.godotengine.org/>`__, "
+"який можна використовувати для роботи над новими, або існуючими, проектами."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:11
 msgid ""
@@ -34,11 +35,14 @@ msgid ""
 "sufficient for educational purposes, it is currently **not recommended for "
 "production work**. See :ref:`doc_using_the_web_editor_limitations` below."
 msgstr ""
+"Веб-редактор знаходиться на тестовій стадії. Незважаючи на те, що набору "
+"функцій може бути достатньо для навчальних цілей, на даний момент він **не "
+"рекомендується для виробничих робіт**. Дивіться :ref:"
+"`doc_using_the_web_editor_limitations` нижче."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:16
-#, fuzzy
 msgid "Browser support"
-msgstr "пропонує підтримку модів"
+msgstr "Підтримка браузерів"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:18
 msgid ""
@@ -46,28 +50,34 @@ msgid ""
 "in turn required to support threading in the browser. The following desktop "
 "browsers support WebAssembly threading and can therefore run the web editor:"
 msgstr ""
+"Веб-редактору потрібна підтримка SharedArrayBuffer WebAssembly, для "
+"підтримки потоків у браузері. Наступні браузери для настільних комп'ютерів "
+"підтримують потокову передачу WebAssembly і тому можуть запускати веб-"
+"редактор:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:22
 msgid "Chrome 68 or later"
-msgstr ""
+msgstr "Chrome 68, чи пізніший"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:23
 msgid "Firefox 79 or later"
-msgstr ""
+msgstr "Firefox 79, чи пізніший"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:24
 msgid "Edge 79 or later"
-msgstr ""
+msgstr "Edge 79, чи пізніший"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:26
 msgid ""
 "Opera and Safari are not supported yet. Safari may work in the future once "
 "proper threading support is added."
 msgstr ""
+"Opera та Safari ще не підтримують. Safari може долучитися до цього списку в "
+"майбутньому після додавання належної підтримки потоків."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:29
 msgid "**Mobile browsers are currently not supported.**"
-msgstr ""
+msgstr "**На даний момент мобільні браузери не підтримуються.**"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:31
 msgid ""
@@ -75,6 +85,9 @@ msgid ""
 "is recommended for better performance and compatibility with old/low-end "
 "hardware."
 msgstr ""
+"Веб-редактор підтримує обидва рендери GLES3 і GLES2, хоча GLES2 "
+"рекомендується для кращої продуктивності та сумісності зі старим/низьким "
+"класом обладнання."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:36
 msgid ""
@@ -82,6 +95,9 @@ msgid ""
 "mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
 "based browser instead of Firefox."
 msgstr ""
+"Якщо ви використовуєте Linux, через `низьку продуктивність Firefox WebGL "
+"<https://bugzilla.mozilla.org/show_bug.cgi?id=1010527>`__, рекомендується "
+"використовувати браузер на основі Chromium замість Firefox."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:43
 msgid "Limitations"
@@ -92,15 +108,16 @@ msgid ""
 "Due to limitations on the Godot or Web platform side, the following features "
 "are currently missing:"
 msgstr ""
+"Через обмеження Godot, або веб-платформи, на даний момент відсутні такі "
+"функції:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:48
-#, fuzzy
 msgid "No C#/Mono support."
-msgstr "| Eol | Більше не підтримується."
+msgstr "Не підтримується C#/Mono."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:49
 msgid "No GDNative support."
-msgstr ""
+msgstr "Не підтримується GDNative."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
@@ -108,10 +125,15 @@ msgid ""
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
 msgstr ""
+"Немає експорту проекту. Як обхідне рішення ви можете завантажити джерело "
+"проекту за допомогою **Проект> Tools (Інструменти)> Download Project Source "
+"(Завантажити джерело проекту)** та експортувати його, використовуючи `рідну "
+"версію редактора Godot <https://godotengine.org/download>`__."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
+"Редактор не попередить вас про закриття вкладки із незбереженими змінами."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:54
 msgid ""
@@ -119,22 +141,25 @@ msgid ""
 "were baked with a native version of the Godot editor (e.g. by importing an "
 "existing project)."
 msgstr ""
+"Не підтримується запікання світлової карти. Ви все ще можете використовувати "
+"існуючі світлові карти, якщо вони були запечені з власною версією редактора "
+"Godot (наприклад, шляхом імпорту існуючого проекту)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:58
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
 msgstr ""
+"Наступні функції навряд чи будуть підтримуватися через невід'ємні обмеження "
+"веб-платформи:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:61
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "Ще не підтримується вихід MIDI."
+msgstr "Немає підтримки зовнішніх редакторів скриптів."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:62
-#, fuzzy
 msgid "No support for Android one-click deploy."
-msgstr "Послідовність кроків для розміщення в один клік"
+msgstr "Не підтримується розгортання в один клік для Android."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:66
 msgid ""
@@ -142,21 +167,27 @@ msgid ""
 "github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
 "%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
 msgstr ""
+"Дивіться `список відкритих проблем на GitHub, пов'язаних з веб-редактором "
+"<https://github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label"
+"%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__, щоб ознайомитися зі списком "
+"проблем."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:70
-#, fuzzy
 msgid "Importing a project"
-msgstr "Як створити проєкт"
+msgstr "Імпорт проекту"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:72
 msgid "To import an existing project, the current process is as follows:"
-msgstr ""
+msgstr "Для імпорту існуючого проекту наразі необхідно:"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:74
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
 msgstr ""
+"Вкажіть ZIP-файл для попереднього завантаження у файловій системі HTML5 за "
+"допомогою входу **Preload project ZIP** (**Попереднє завантаження проекту "
+"ZIP**)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:76
 msgid ""
@@ -164,6 +195,10 @@ msgid ""
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""
+"Запустити редактор, натиснувши кнопку **Start Godot editor**(**Старт "
+"редактора Godot**). Менеджер проектів Godot повинен з'явитися через 10-20 "
+"секунд. На повільніших машинах, або підключеннях, завантаження може зайняти "
+"до хвилини."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:79
 msgid ""
@@ -171,10 +206,15 @@ msgid ""
 "the folder to create then click the **Create Folder** button (it doesn't "
 "have to match the ZIP archive's name)."
 msgstr ""
+"У діалоговому вікні, яке з’явиться в середині вікна, вкажіть ім’я для папки, "
+"яку потрібно створити, а потім натисніть кнопку **Create Folder** "
+"(**Створити папку**) (вона не повинна відповідати імені архіву ZIP)."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:82
 msgid "Click **Install & Edit** and the project will open in the editor."
 msgstr ""
+"Натисніть **Install & Edit**(**Встановити та редагувати**), і проект "
+"відкриється в редакторі."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:86
 msgid ""
@@ -182,17 +222,21 @@ msgid ""
 "If your project folder is placed outside ``/home/web_user/``, you will lose "
 "your project when closing the editor!"
 msgstr ""
+"Важливо розмістити папку проекту десь у ``/home/web_user/``. Якщо папку "
+"вашого проекту розміщено зовні ``/home/web_user/``, ви втратите свій проект, "
+"закривши редактор!"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:90
 msgid ""
 "When you follow the steps described above, the project folder will always be "
 "located in ``/home/web_user/projects``, keeping it safe."
 msgstr ""
+"Коли ви будете виконувати описані вище дії, папка проекту завжди буде "
+"знаходитись у безпеці в ``/home/web_user/projects``."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:94
-#, fuzzy
 msgid "Editing and running a project"
-msgstr "Створення проєкту"
+msgstr "Редагування та запуск проекту"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:96
 msgid ""
@@ -201,6 +245,10 @@ msgid ""
 "project. Instead, when you run the project by clicking the Run button or "
 "pressing :kbd:`F5`, it will appear to \"replace\" the editor window."
 msgstr ""
+"На відміну від власної версії Godot, веб-редактор обмежений одним вікном. "
+"Тому він не може відкрити нове вікно під час запуску проекту. Натомість, "
+"коли ви запускаєте проект, натискаючи кнопку Запустити, або :kbd:`F5`, він "
+"з’явиться, і \"замінить\" вікно редактора."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:101
 msgid ""
@@ -209,11 +257,14 @@ msgid ""
 "**Game** tabs using the buttons on the top. You can also close the running "
 "game or editor by clicking the **×** button next to those tabs."
 msgstr ""
+"Веб-редактор пропонує альтернативний спосіб роботи з редактором та вікнами "
+"ігор (які тепер є \"вкладками\"). Ви можете переключатися між вкладками "
+"**Редактор** та **Гра** за допомогою кнопок вгорі. Ви також можете закрити "
+"запущену гру, або редактор, натиснувши кнопку **×** поруч із цими вкладками."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:107
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "Де мої префаби?"
+msgstr "Де мої проектні файли?"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:109
 msgid ""
@@ -221,6 +272,9 @@ msgid ""
 "to the browser's IndexedDB storage. This storage isn't accessible as a "
 "regular folder on your machine, but is abstracted away in a database."
 msgstr ""
+"Через обмеження безпеки браузера редактор буде зберігати файли проекту на "
+"сховищі IndexedDB браузера. Це сховище недоступне, як звичайна папка на "
+"вашому комп'ютері, але воно абстрагується у базі даних."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:113
 msgid ""
@@ -229,6 +283,11 @@ msgid ""
 "using a `native Godot editor <https://godotengine.org/download>`__, since "
 "exporting from the web editor isn't supported yet."
 msgstr ""
+"Ви можете завантажити файли проекту у вигляді архіву ZIP, використовуючи "
+"**Проект > Tools (Інструменти) > Download Project Source (Завантажити "
+"джерело проекту)**. Це може бути використано для експорту проекту за "
+"допомогою власного редактора Godot, оскільки експорт з веб-редактора ще не "
+"підтримується."
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:118
 msgid ""
@@ -237,3 +296,7 @@ msgid ""
 "files on the user's filesystem as the native editor would do. However, this "
 "isn't implemented yet."
 msgstr ""
+"У майбутньому можливо буде використовувати `API файлової системи HTML5 "
+"<https://developer.mozilla.org/en-US/docs/Web/API/FileSystem>`__ для "
+"зберігання файлів проекту у файловій системі користувача, як це робив би "
+"власний редактор. Однак це ще не реалізовано."

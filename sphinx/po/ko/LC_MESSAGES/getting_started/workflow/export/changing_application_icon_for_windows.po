@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,17 +59,30 @@ msgstr ""
 "지를 hiDPI 친화적인 ICO 파일로 변환할 수 있습니다:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
+msgid ""
+"For the ICO file to effectively replace the default Godot icon, it must "
+"contain *all* the sizes included in the default Godot icon: 16×16, 32×32, "
+"48×48, 64×64, 128×128, 256×256. If the ICO file does not contain all the "
+"sizes, the default Godot icon will be kept for the sizes that weren't "
+"overridden."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:35
+msgid "The above ImageMagick command takes this into account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid "Changing the taskbar icon"
 msgstr "작업 표시줄 아이콘 바꾸기"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr ""
 "작업 표시줄 아이콘은 프로젝트가 실행하면 작업 표시줄에 나타나는 아이콘입니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
 #, fuzzy
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
@@ -80,18 +93,18 @@ msgstr ""
 "→ Config → Icon**\\ 으로 갑니다. 폴더 아이콘을 클릭하고 원하는 아이콘을 선택"
 "합니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:51
 msgid ""
 "This setting only changes the icon for your exported game on Windows. To set "
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
 "use the ``Icon`` setting."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
 msgstr "파일 아이콘 바꾸기"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:52
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
 "There are `known issues <https://github.com/godotengine/godot/"
 "issues/33466>`__ when changing the application icon in executables that "
@@ -100,14 +113,14 @@ msgid ""
 "the Export dialog."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr ""
 "파일 아이콘은 프로젝트를 실행하기 위해 클릭하는 실행 파일의 아이콘입니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
 "Before selecting it in the export options, you will need to install an extra "
 "tool called **rcedit**. You can download it `here <https://github.com/"
@@ -117,7 +130,7 @@ msgstr ""
 "치해야합니다. `여기서 <https://github.com/electron/rcedit/releases>`_ 다운로"
 "드할 수 있습니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:66
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
 "After downloading, you need to tell Godot the path to the rcedit executable "
 "on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
@@ -128,7 +141,7 @@ msgstr ""
 "편집기 → 편집기 설정 → Export → Windows**\\ 로 갑니다. **rcedit** 항목의 폴"
 "더 아이콘을 클릭합니다. rcedit 실행 파일로 가서 선택합니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
@@ -136,7 +149,7 @@ msgstr ""
 "Linux와 macOS 사용자는 rcedit를 사용하려면 `WINE <https://www.winehq.org/>`_"
 "\\ 을 별도로 설치해야 합니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "You should now have everything in place to change the file icon. To do that, "
 "you will need to specify the icon when exporting. Go to **Project → "
@@ -148,7 +161,7 @@ msgstr ""
 "크톱 프리셋이 준비되었다고 가정합니다, **Application → Icon** 영역에서 ICO 형"
 "식으로 된 아이콘을 선택합니다."
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:89
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
 "If rcedit fails to change the icon, you can instead :ref:`compile your own "
 "Windows export templates <doc_compiling_for_windows>` with the icon changed. "
@@ -157,23 +170,23 @@ msgid ""
 "ICO file *before* compiling export templates."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
 msgstr "결과 시험하기"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:101
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:109
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
 "이제 프로젝트를 내보낼 수 있습니다. 작업이 잘 됬다면 이렇게 보여야 합니다:"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
 "If your icon isn't showing up properly, on Windows 10, try clearing the icon "
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"

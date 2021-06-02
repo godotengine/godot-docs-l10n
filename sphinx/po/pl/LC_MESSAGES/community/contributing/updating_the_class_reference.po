@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -562,7 +562,7 @@ msgstr "Połączenie z sygnałem z innej klasy"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid "Emit [signal Node.renamed]."
-msgstr ""
+msgstr "Emituj [signal Node.renamed]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "[b] [/b]"
@@ -574,11 +574,11 @@ msgstr "Pogrubienie"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some [b]bold[/b] text."
-msgstr "Tutaj [b]pogrubiony[/b] tekst."
+msgstr "Tutaj jest [b]pogrubiony[/b] tekst."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:254
 msgid "Some **bold** text."
-msgstr "Tutaj **pogrubiony** tekst."
+msgstr "Tutaj jest **pogrubiony** tekst."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "[i] [/i]"
@@ -590,11 +590,11 @@ msgstr "Kursywa"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some [i]italic[/i] text."
-msgstr "Tutaj [i]pochylony[/i] tekst."
+msgstr "Tutaj jest [i]pochylony[/i] tekst."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:256
 msgid "Some *italic* text."
-msgstr "Tutaj *pochylony* tekst."
+msgstr "Tutaj jest *pochylony* tekst."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:258
 msgid "[code] [/code]"
@@ -613,9 +613,8 @@ msgid "Some ``monospace`` text."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
-#, fuzzy
 msgid "[kbd] [/kbd]"
-msgstr "[b] [/b]"
+msgstr "[kbd] [/kbd]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 #, fuzzy
@@ -623,9 +622,8 @@ msgid "Keyboard/mouse shortcut"
 msgstr "Skrót klawiszowy"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
-#, fuzzy
 msgid "Some [kbd]Ctrl + C[/kbd] key."
-msgstr "Tutaj [b]pogrubiony[/b] tekst."
+msgstr "Tutaj [kbd]Ctrl + C[/kbd] ."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:260
 msgid "Some :kbd:`Ctrl + C` key."
@@ -649,6 +647,9 @@ msgid ""
 "always use **four spaces** for indentation (the parser will delete tabs). "
 "Example:"
 msgstr ""
+"Użyj ``[codeblock]`` ,aby założyć blok kodu. W ``[codeblock]`` ,zawsze "
+"używaj **czterech spacji** na wcięcia. (analizator usunie wcięcia zrobione "
+"za pomocą tabulatora). Na przykład:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:275
 msgid "Will display as:"
@@ -733,7 +734,7 @@ msgid ""
 "of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
 "think that a new language is complete enough to get its own instance."
 msgstr ""
-"Wersje językowe, które są już w dużej części skończone, mają swoje zakładki "
-"w ReadTheDocs. Możesz założyć issue w repozytorium ``godot-docs-l10n`` jeśli "
+"Wersje językowe, które są już w dużej części skończone mają swoje zakładki w "
+"ReadTheDocs. Możesz założyć issue w repozytorium ``godot-docs-l10n`` jeśli "
 "uważasz, że nowy język jest wystarczająco gotowy, by mieć stworzoną własną "
 "zakładkę."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,15 +135,14 @@ msgid "Player scene"
 msgstr "Cena do jogador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:64
-#, fuzzy
 msgid ""
 "The first scene will define the ``Player`` object. One of the benefits of "
 "creating a separate Player scene is that we can test it separately, even "
 "before we've created other parts of the game."
 msgstr ""
-"A primeira cena que faremos define o objeto ``Jogador``. Um dos benefícios "
-"de criar uma cena Jogador em separado é que podemos testá-la separadamente, "
-"mesmo antes de criarmos outras partes do jogo."
+"A primeira cena que faremos define o objeto \"Jogador\". Um dos benefícios "
+"de criarmos uma cena separada para o Jogador é que podemos testá-la "
+"separadamente, mesmo antes de criarmos outras partes do jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:69
 msgid "Node structure"
@@ -919,15 +918,14 @@ msgid "Main scene"
 msgstr "Cena principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:671
-#, fuzzy
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Ensure you create a Node, **not** a "
 "Node2D. Click the \"Instance\" button and select your saved ``Player.tscn``."
 msgstr ""
-"Agora é hora de juntarmos tudo. Crie uma nova cena e adicione um :ref:`Nó "
-"<class_Node>` chamado ``Principal``. Clique no botão \"Instanciar\" e "
-"selecione seu ``Jogador.tscn`` já salvo."
+"Agora é hora de juntarmos tudo. Crie uma nova cena e adicione um :ref: `Node "
+"<class_Node>` chamado `Main`. Clique no botão \"Instanciar\" e selecione seu "
+"`Jogador.tscn` já salvo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
@@ -1015,7 +1013,6 @@ msgstr ""
 "novos na parte superior do editor:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
-#, fuzzy
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -1025,9 +1022,9 @@ msgid ""
 msgstr ""
 "Selecione o do meio (\"Adicionar Ponto\") e desenhe o caminho clicando para "
 "adicionar os pontos nos cantos mostrados. Para que os pontos fiquem "
-"alinhados à grade, verifique se a opção \"Encaixar na Grade\" está marcada. "
-"Essa opção pode ser encontrada à esquerda do botão \"Travar\", parecido como "
-"um ímã e ao lado de uma série de 3 pontos verticais."
+"alinhados à grade, verifique se a opção <b>Encaixar na Grade</b> está "
+"marcada. Essa opção pode ser encontrada à esquerda do botão \"Travar\", "
+"parecido como um ímã e ao lado de uma série de 3 pontos verticais."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:714
 msgid ""

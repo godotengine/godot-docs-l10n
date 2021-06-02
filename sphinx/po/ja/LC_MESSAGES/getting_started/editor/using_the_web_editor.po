@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:4
-#, fuzzy
 msgid "Using the Web editor"
-msgstr "エディタの実行"
+msgstr "Webエディタの実行"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:6
 msgid ""
 "Since Godot 3.3, there is a `Web editor <https://editor.godotengine.org/>`__ "
 "you can use to work on new or existing projects."
 msgstr ""
+"Godot 3.3以降では\\ `Webエディタ <https://editor.godotengine.org/>`__\\ があ"
+"り、新しいプロジェクトや既存のプロジェクトで使えます。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:11
 msgid ""
@@ -34,11 +35,13 @@ msgid ""
 "sufficient for educational purposes, it is currently **not recommended for "
 "production work**. See :ref:`doc_using_the_web_editor_limitations` below."
 msgstr ""
+"このウェブ・エディターは、まだ初期段階のものです。その機能一式は学習目的には"
+"十分かもしれませんが、現在のところ、\\ **制作にはお勧めできません**\\ 。以下"
+"の\\ :ref:`doc_using_the_web_editor_limitations`\\ を参照してください。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:16
-#, fuzzy
 msgid "Browser support"
-msgstr "Modサポートの提供"
+msgstr "ブラウザの対応"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:18
 msgid ""
@@ -46,29 +49,34 @@ msgid ""
 "in turn required to support threading in the browser. The following desktop "
 "browsers support WebAssembly threading and can therefore run the web editor:"
 msgstr ""
+"Webエディタでは、WebAssemblyのSharedArrayBufferのサポートが必要です。これは、"
+"ブラウザでスレッドをサポートするために必要になります。以下のデスクトップブラ"
+"ウザはWebAssemblyのスレッディングをサポートしているので、Webエディタを実行す"
+"ることができます。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:22
 msgid "Chrome 68 or later"
-msgstr ""
+msgstr "Chrome 68以降"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:23
 msgid "Firefox 79 or later"
-msgstr ""
+msgstr "Firefox 79以降"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:24
 msgid "Edge 79 or later"
-msgstr ""
+msgstr "Edge 79以降"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:26
 msgid ""
 "Opera and Safari are not supported yet. Safari may work in the future once "
 "proper threading support is added."
 msgstr ""
+"OperaとSafariはまだサポートされていません。将来的に、Safariにも適切なスレッド"
+"サポートが追加されれば、動作するかもしれません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:29
-#, fuzzy
 msgid "**Mobile browsers are currently not supported.**"
-msgstr "JDK 9以降は、現在はまだサポートされていません。"
+msgstr "**モバイルブラウザは、現在はまだサポートされていません。**"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:31
 msgid ""
@@ -76,6 +84,9 @@ msgid ""
 "is recommended for better performance and compatibility with old/low-end "
 "hardware."
 msgstr ""
+"ウェブエディタは、GLES3とGLES2の両方のレンダラーをサポートしていますが、より"
+"良いパフォーマンスと、古い/ローエンドのハードウェアとの互換性のために、GLES2"
+"を推奨します。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:36
 msgid ""
@@ -83,6 +94,9 @@ msgid ""
 "mozilla.org/show_bug.cgi?id=1010527>`__, it's recommended to use a Chromium-"
 "based browser instead of Firefox."
 msgstr ""
+"Linuxをお使いの場合は、\\ `FirefoxのWebGLのパフォーマンスが低い <https://"
+"bugzilla.mozilla.org/show_bug.cgi?id=1010527>`__\\ ため、Firefoxではなく"
+"Chromiumベースのブラウザを使用することをお勧めします。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:43
 msgid "Limitations"
@@ -93,15 +107,15 @@ msgid ""
 "Due to limitations on the Godot or Web platform side, the following features "
 "are currently missing:"
 msgstr ""
+"現在、GodotやWebプラットフォーム側の制約により、以下の機能がありません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:48
-#, fuzzy
 msgid "No C#/Mono support."
-msgstr "|eol| サポート終了。"
+msgstr "C#/Mono に対応していません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:49
 msgid "No GDNative support."
-msgstr ""
+msgstr "GDNative に対応していません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:50
 msgid ""
@@ -109,10 +123,16 @@ msgid ""
 "using **Project > Tools > Download Project Source** and export it using a "
 "`native version of the Godot editor <https://godotengine.org/download>`__."
 msgstr ""
+"プロジェクトのエクスポートができません。回避策としては、 **プロジェクト > "
+"ツール > プロジェクトソースをダウンロード** でプロジェクトのソースをダウン"
+"ロードしてから、\\ `ネイティブ版Godotエディタ <https://godotengine.org/"
+"download>`__\\ を使ってエクスポートすることができます。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:53
 msgid "The editor won't warn you when closing the tab with unsaved changes."
 msgstr ""
+"保存されていない変更がある状態でタブを閉じるときでも、エディタは警告を出しま"
+"せん。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:54
 msgid ""
@@ -120,50 +140,51 @@ msgid ""
 "were baked with a native version of the Godot editor (e.g. by importing an "
 "existing project)."
 msgstr ""
+"ライトマップのベイクをサポートしていません。既存のライトマップは、Godotエディ"
+"タのネイティブバージョンでベイクされたものであれば、使用することができます "
+"(既存のプロジェクトをインポートした場合など)。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:58
 msgid ""
 "The following features are unlikely to be supported due to inherent "
 "limitations of the Web platform:"
 msgstr ""
+"以下の機能は、Webプラットフォームの固有の制限により、サポートされる可能性は低"
+"いでしょう。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:61
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "MIDI出力にはまだ対応していません。"
+msgstr "外部のスクリプトエディタには対応していません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:62
-#, fuzzy
 msgid "No support for Android one-click deploy."
-msgstr "ワンクリック・デプロイの手順"
+msgstr "Androidでは、ワンクリック・デプロイはサポートされていません。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:66
-#, fuzzy
 msgid ""
 "See the `list of open issues on GitHub related to the web editor <https://"
 "github.com/godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
 "%3Ahtml5+label%3Atopic%3Aeditor>`__ for a list of known bugs."
 msgstr ""
-"`list of open HTML5 issues on Github <https://github.com/godotengine/godot/"
-"issues?q=is:open+is:issue+label:platform:html5>`__でオープンされているHTML5の"
-"問題のリストをチェックして、疑問に関わる問題がないか確認してみてください。一"
-"覧にない場合は、あなたの知りたいことを伝えるために、新しいIssueをオープンして"
-"ください。"
+"既知の不具合は、`GithubのWebエディタに関する問題リスト<https://github.com/"
+"godotengine/godot/issues?q=is%3Aopen+is%3Aissue+label%3Aplatform"
+"%3Ahtml5+label%3Atopic%3Aeditor>`__ を参照してください。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:70
-#, fuzzy
 msgid "Importing a project"
 msgstr "プロジェクトのインポート"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:72
 msgid "To import an existing project, the current process is as follows:"
-msgstr ""
+msgstr "既存のプロジェクトのインポート方法："
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:74
 msgid ""
 "Specify a ZIP file to preload on the HTML5 filesystem using the **Preload "
 "project ZIP** input."
 msgstr ""
+"**Preload project ZIP**を選択してZIPファイルを指定して、HTML5ファイルシステム"
+"にプリロードする。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:76
 msgid ""
@@ -171,6 +192,9 @@ msgid ""
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""
+"**Start Godot editor**をクリックしエディタ開始します。Godotのプロジェクトマ"
+"ネージャーが10~20秒後に表示されます。マシンのスペックや接続が遅いと起動に数分"
+"かかることがあります。"
 
 #: ../../docs/getting_started/editor/using_the_web_editor.rst:79
 msgid ""

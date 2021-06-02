@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,15 @@ msgid ""
 msgstr "安裝 Homebrew 時，若還未有適用於 Xcode 的命令行工具，也會自動安裝。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
+#, fuzzy
+msgid ""
+"Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
+"you can easily install SCons and yasm using the following command::"
+msgstr ""
+"若有安裝 `Homebrew <https://brew.sh/>`_ ，則可以通過下列指令來輕鬆安裝 SCons "
+"與 yasm："
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:33
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
@@ -74,26 +83,26 @@ msgstr ""
 "有關配合 Godot 使用 SCons 的一般說明，請參考 :ref:"
 "`doc_introduction_to_the_buildsystem` 。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:31
+#: ../../docs/development/compiling/compiling_for_osx.rst:37
 msgid "Compiling"
 msgstr "編譯"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:33
+#: ../../docs/development/compiling/compiling_for_osx.rst:39
 msgid "Start a terminal, go to the root directory of the engine source code."
 msgstr "開啟終端機，移至 Godot 原始碼的根目錄。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:35
+#: ../../docs/development/compiling/compiling_for_osx.rst:41
 msgid "To compile for Intel (x86-64) powered Macs, use::"
 msgstr "若要為 Intel (x86-64) 核心的 Mac 編譯，請使用："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:39
+#: ../../docs/development/compiling/compiling_for_osx.rst:45
 #, fuzzy
 msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
 msgstr ""
 "若要為 Apple Silicon (ARM64) 核心的 Mac 編譯，請使用 (僅可用於 Godot "
 "3.2.3+)："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:43
+#: ../../docs/development/compiling/compiling_for_osx.rst:49
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands and then use ``lipo`` to bundle them together::"
@@ -101,7 +110,7 @@ msgstr ""
 "若要使用單一「Universal 2」二進位執行檔來同時支援兩個架構，請執行上述兩個指"
 "令，然後通過 ``lipo`` 來將這兩個檔案捆綁在一起："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:47
+#: ../../docs/development/compiling/compiling_for_osx.rst:53
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "``bin/`` subdirectory. This executable file contains the whole engine and "
@@ -112,7 +121,7 @@ msgstr ""
 "含了完整的 Godot 遊戲引擎，且不需任何相依性套件即可執行。執行該檔案會開啟專案"
 "管理員。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:52
+#: ../../docs/development/compiling/compiling_for_osx.rst:58
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
@@ -122,7 +131,7 @@ msgstr ""
 "``bin/`` 資料夾中建立檔名為 ``._sc_`` 或 ``_sc_`` 的檔案來開啟 :ref:"
 "`doc_data_paths_self_contained_mode` 。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:57
+#: ../../docs/development/compiling/compiling_for_osx.rst:63
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_tools.app``. Typically, for an "
@@ -132,27 +141,79 @@ msgstr ""
 "app`` 樣板。一般來說，如果是使用 ``target=release_debug`` 建置的最佳化編輯"
 "器，則："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:67
+#: ../../docs/development/compiling/compiling_for_osx.rst:73
 msgid "Compiling a headless/server build"
 msgstr "編譯無周邊版本與伺服器版本"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:69
+#: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
 msgstr "若要編譯用於以編輯器功能來自動化匯出專案的 **無周邊** 版本，請使用："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:74
+#: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr "若要編譯可執行專屬遊戲伺服器的 **伺服器** 版本，請使用："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:80
+#: ../../docs/development/compiling/compiling_for_osx.rst:86
+msgid "Building export templates"
+msgstr "建置匯出樣板"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:88
+msgid ""
+"To build macOS export templates, you have to compile with ``tools=no`` (no "
+"editor) and respectively for ``target=release`` (release template) and "
+"``target=release_debug``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:92
+msgid ""
+"Official templates are universal binaries which support both Intel x86_64 "
+"and ARM64 architectures. You can also create export templates that support "
+"only one of those two architectures by leaving out the ``lipo`` step below."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:96
+msgid "For Intel x86_64::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:101
+msgid "For ARM64 (Apple M1)::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:106
+#, fuzzy
+msgid ""
+"To support both architectures in a single \"Universal 2\" binary, run the "
+"above two commands blocks and then use ``lipo`` to bundle them together::"
+msgstr ""
+"若要使用單一「Universal 2」二進位執行檔來同時支援兩個架構，請執行上述兩個指"
+"令，然後通過 ``lipo`` 來將這兩個檔案捆綁在一起："
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:112
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/osx_template.app``. The release and "
+"debug builds should be placed in ``osx_template.app/Contents/MacOS`` with "
+"the names ``godot_osx_release.64`` and ``godot_osx_debug.64`` respectively. "
+"You can do so with the following commands (assuming a universal build, "
+"otherwise replace the ``.universal`` extension with the one of your arch-"
+"specific binaries)::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:125
+msgid ""
+"You can then zip the ``osx_template.app`` folder to reproduce the ``osx."
+"zip`` template from the official Godot distribution::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:131
 msgid "Cross-compiling for macOS from Linux"
 msgstr "在 Linux 上為 macOS 進行交叉編譯"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:82
+#: ../../docs/development/compiling/compiling_for_osx.rst:133
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
@@ -164,7 +225,7 @@ msgstr ""
 "`OSXCross <https://github.com/tpoechtrager/osxcross>`__ 來將 macOS 作為建置目"
 "標使用。首先，請依照下列指示安裝 OSXCross："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:87
+#: ../../docs/development/compiling/compiling_for_osx.rst:138
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
@@ -173,7 +234,7 @@ msgstr ""
 "先 Clone `OSXCross 儲存庫 <https://github.com/tpoechtrager/osxcross>`__ 至電"
 "腦上的某處 (或下載 ZIP 檔然後解壓縮)。如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:93
+#: ../../docs/development/compiling/compiling_for_osx.rst:144
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
@@ -181,7 +242,7 @@ msgstr ""
 "請依照這個指示來打包 SDK：https://github.com/tpoechtrager/osxcross#packaging-"
 "the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:95
+#: ../../docs/development/compiling/compiling_for_osx.rst:146
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
@@ -189,7 +250,7 @@ msgstr ""
 "請依照這個指示來安裝 OSXCross：https://github.com/tpoechtrager/"
 "osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:98
+#: ../../docs/development/compiling/compiling_for_osx.rst:149
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
@@ -198,11 +259,11 @@ msgstr ""
 "之後，還需要將 ``OSXCROSS_ROOT`` 定義為 OSXCross 安裝的路徑 (也就是與儲存庫 "
 "Clone 或解壓縮的路徑)。如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:104
+#: ../../docs/development/compiling/compiling_for_osx.rst:155
 msgid "Now you can compile with SCons like you normally would::"
 msgstr "之後就可以與平常一樣使用 SCons："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:108
+#: ../../docs/development/compiling/compiling_for_osx.rst:159
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "

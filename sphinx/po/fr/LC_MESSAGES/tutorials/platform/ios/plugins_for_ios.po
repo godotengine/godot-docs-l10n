@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:4
-#, fuzzy
 msgid "Plugins for iOS"
-msgstr "Compiler pour iOS"
+msgstr "Plugins pour iOS"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
 #, fuzzy
@@ -35,6 +34,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
+"Les accès ARKit et Camera sont également fournis sous forme de plugins."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:12
 #, fuzzy
@@ -47,6 +47,9 @@ msgid ""
 "exported and available by calling the `Engine.has_singleton()` function, "
 "which returns a registered singleton."
 msgstr ""
+"Pour accéder aux fonctionnalités du plugin, vous devez d'abord vérifier que "
+"le plugin est exporté et disponible en appelant la fonction `Engine."
+"has_singleton()`, qui renvoie un singleton enregistré."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:18
 #, fuzzy
@@ -122,23 +125,21 @@ msgid "Store Kit"
 msgstr "Kit de magasin"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"Implémenté dans le plugin `Godot iOS InAppStore plugin <https://github.com/"
+"godotengine/godot-ios-plugins/blob/master/plugins/inappstore/in_app_store."
+"mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
-#, fuzzy
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
 msgstr ""
-"L'API du kit de magasin est accessible par le singleton \"InAppStore\" (sera "
-"toujours disponible à partir de gdscript). Elle est initialisée "
-"automatiquement. Il existe trois méthodes d'achat :"
+"L'API du Store Kit est accessible par le singleton ``InAppStore``. Il est "
+"initialisé automatiquement."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:90
 msgid "``Error purchase(Variant p_params);``"
@@ -269,13 +270,13 @@ msgid "Game Center"
 msgstr "Game Center"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"`Godot Payment plugin <https://github.com/godotengine/godot/tree/master/"
-"platform/android/java/plugins/godotpayment>`_"
+"Implémenté dans `le plugin Godot iOS GameCenter <https://github.com/"
+"godotengine/godot-ios-plugins/blob/master/plugins/gamecenter/game_center."
+"mm>`_."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
 #, fuzzy

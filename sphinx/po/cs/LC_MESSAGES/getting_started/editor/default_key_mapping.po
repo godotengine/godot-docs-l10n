@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:4
 msgid "Default editor shortcuts"
-msgstr ""
+msgstr "Výchozí zkratky editoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:5
 msgid ""
@@ -29,6 +29,11 @@ msgid ""
 "keys associated with these and other actions navigate to ``Editor -> Editor "
 "Settings -> Shortcuts``."
 msgstr ""
+"Mnoho funkcí editoru Godot lze provádět pomocí klávesových zkratek. Na této "
+"stránce jsou uvedeny funkce, které mají ve výchozím nastavení přiřazené "
+"klávesové zkratky, ale mnoho dalších je k dispozici také pro přizpůsobení v "
+"nastavení editoru. Chcete-li změnit klávesy spojené s těmito a dalšími "
+"akcemi, přejděte na ``Editor -> Nastavení editoru -> Klávesové zkratky``."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:10
 msgid ""
@@ -37,6 +42,10 @@ msgid ""
 "to be assigned to more than one function. The correct action will be "
 "performed depending on the context."
 msgstr ""
+"Zatímco některé akce jsou univerzální, mnoho zkratek je specifických pro "
+"jednotlivé nástroje. Z tohoto důvodu je možné některé kombinace kláves "
+"přiřadit více než jedné funkci. Správná akce se provede v závislosti na "
+"kontextu."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:15
 msgid ""
@@ -46,6 +55,11 @@ msgid ""
 "standard shortcuts on that OS should find Godot Editor's default key mapping "
 "intuitive."
 msgstr ""
+"Zatímco sestavení editoru pro Windows a Linux sdílejí většinu výchozích "
+"nastavení, některé zkratky se mohou ve verzi pro macOS lišit. Je to z důvodu "
+"lepší integrace editoru do ekosystému macOS. Pro uživatelé, kteří jsou "
+"zběhlí ve standardních klávesových zkratkách v tomto operačním systému, bude "
+"výchozí mapování kláves editoru Godot více intuitivní."
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:21
 msgid "General Editor Actions"
@@ -83,7 +97,7 @@ msgstr "Název akce"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:478
 #: ../../docs/getting_started/editor/default_key_mapping.rst:513
 msgid "Windows, Linux"
-msgstr ""
+msgstr "Windows, Linux"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:24
 #: ../../docs/getting_started/editor/default_key_mapping.rst:89
@@ -124,50 +138,51 @@ msgid "Open 2D Editor"
 msgstr "Otevřít 2D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
-msgid ":kbd:`F1`"
-msgstr ""
+#, fuzzy
+msgid ":kbd:`Ctrl + F1`"
+msgstr ":kbd:`Ctrl + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid ":kbd:`Alt + 1`"
-msgstr ""
+msgstr ":kbd:`Alt + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:26
 msgid "``editor/editor_2d``"
-msgstr ""
+msgstr "``editor/editor_2d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "Open 3D Editor"
 msgstr "Otevřít 3D Editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
-msgid ":kbd:`F2`"
-msgstr ""
+#: ../../docs/getting_started/editor/default_key_mapping.rst:442
+msgid ":kbd:`Ctrl + F2`"
+msgstr ":kbd:`Ctrl + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid ":kbd:`Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:28
 msgid "``editor/editor_3d``"
-msgstr ""
+msgstr "``editor/editor_3d``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "Open Script Editor"
 msgstr "Otevřít Editor Skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
-#: ../../docs/getting_started/editor/default_key_mapping.rst:229
-#: ../../docs/getting_started/editor/default_key_mapping.rst:302
-msgid ":kbd:`F3`"
-msgstr ""
+#, fuzzy
+msgid ":kbd:`Ctrl + F3`"
+msgstr ":kbd:`Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid ":kbd:`Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:30
 msgid "``editor/editor_script``"
-msgstr ""
+msgstr "``editor/editor_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "Search Help"
@@ -183,7 +198,7 @@ msgstr ":kbd:`Alt + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:32
 msgid "``editor/editor_help``"
-msgstr ""
+msgstr "``editor/editor_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "Distraction Free Mode"
@@ -191,15 +206,15 @@ msgstr "Nerozptylující režitm"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid ":kbd:`Cmd + Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:34
 msgid "``editor/distraction_free_mode``"
-msgstr ""
+msgstr "``editor/distraction_free_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "Next tab"
@@ -207,15 +222,15 @@ msgstr "Další panel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Ctrl + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid ":kbd:`Cmd + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:36
 msgid "``editor/next_tab``"
-msgstr ""
+msgstr "``editor/next_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "Previous tab"
@@ -223,31 +238,31 @@ msgstr "Předchozí tab"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Ctrl + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid ":kbd:`Cmd + Shift + Tab`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Tab`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:38
 msgid "``editor/prev_tab``"
-msgstr ""
+msgstr "``editor/prev_tab``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "Filter Files"
-msgstr ""
+msgstr "Filtrovat soubory"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Ctrl + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid ":kbd:`Cmd + Alt + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:40
 msgid "``editor/filter_files``"
-msgstr ""
+msgstr "``editor/filter_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "Open Scene"
@@ -255,15 +270,15 @@ msgstr "Otevřít scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Ctrl + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid ":kbd:`Cmd + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:42
 msgid "``editor/open_scene``"
-msgstr ""
+msgstr "``editor/open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "Close Scene"
@@ -271,15 +286,15 @@ msgstr "Zavřít scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Ctrl + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid ":kbd:`Cmd + Shift + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:44
 msgid "``editor/close_scene``"
-msgstr ""
+msgstr "``editor/close_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "Reopen Closed Scene"
@@ -288,16 +303,16 @@ msgstr "Znovu otevřít zavřenou scénu"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Ctrl + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid ":kbd:`Cmd + Shift + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:46
 msgid "``editor/reopen_closed_scene``"
-msgstr ""
+msgstr "``editor/reopen_closed_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "Save Scene"
@@ -305,31 +320,31 @@ msgstr "Uložit scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Ctrl + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid ":kbd:`Cmd + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:48
 msgid "``editor/save_scene``"
-msgstr ""
+msgstr "``editor/save_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid "Save Scene As"
-msgstr ""
+msgstr "Uložit scénu jako"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Ctrl + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid ":kbd:`Cmd + Shift + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:50
 msgid "``editor/save_scene_as``"
-msgstr ""
+msgstr "``editor/save_scene_as``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "Save All Scenes"
@@ -338,60 +353,60 @@ msgstr "Uložit všechny scény"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid ":kbd:`Cmd + Shift + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:52
 msgid "``editor/save_all_scenes``"
-msgstr ""
+msgstr "``editor/save_all_scenes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "Quick Open"
-msgstr ""
+msgstr "Rychlé otevření"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid ":kbd:`Shift + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:54
 msgid "``editor/quick_open``"
-msgstr ""
+msgstr "``editor/quick_open``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "Quick Open Scene"
-msgstr ""
+msgstr "Rychle otevřít scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Ctrl + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid ":kbd:`Cmd + Shift + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:56
 msgid "``editor/quick_open_scene``"
-msgstr ""
+msgstr "``editor/quick_open_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid "Quick Open Script"
-msgstr ""
+msgstr "Rychle otevřít skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Ctrl + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid ":kbd:`Cmd + Alt + O`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:58
 msgid "``editor/quick_open_script``"
-msgstr ""
+msgstr "``editor/quick_open_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
@@ -401,16 +416,16 @@ msgstr "Zpět"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid ":kbd:`Ctrl + Z`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid ":kbd:`Cmd + Z`"
-msgstr ""
+msgstr ":kbd:`Cmd + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:60
 msgid "``editor/undo``"
-msgstr ""
+msgstr "``editor/undo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
@@ -419,15 +434,15 @@ msgstr "Znovu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Ctrl + Shift + Z`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid ":kbd:`Cmd + Shift + Z`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:62
 msgid "``editor/redo``"
-msgstr ""
+msgstr "``editor/redo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "Quit"
@@ -435,15 +450,15 @@ msgstr "Ukončit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Ctrl + Q`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid ":kbd:`Cmd + Q`"
-msgstr ""
+msgstr ":kbd:`Cmd + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:64
 msgid "``editor/file_quit``"
-msgstr ""
+msgstr "``editor/file_quit``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "Quit to Project List"
@@ -451,15 +466,15 @@ msgstr "Ukončit do seznamu projektů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Ctrl + Shift + Q`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid ":kbd:`Shift + Alt + Q`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:66
 msgid "``editor/quit_to_project_list``"
-msgstr ""
+msgstr "``editor/quit_to_project_list``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "Take Screenshot"
@@ -467,15 +482,15 @@ msgstr "Vytvořit snímek obrazovky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Ctrl + F12`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid ":kbd:`Cmd + F12`"
-msgstr ""
+msgstr ":kbd:`Cmd + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:68
 msgid "``editor/take_screenshot``"
-msgstr ""
+msgstr "``editor/take_screenshot``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "Toggle Fullscreen"
@@ -483,15 +498,15 @@ msgstr "Přepnout celou obrazovku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Shift + F11`"
-msgstr ""
+msgstr ":kbd:`Shift + F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid ":kbd:`Cmd + Ctrl + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:70
 msgid "``editor/fullscreen_mode``"
-msgstr ""
+msgstr "``editor/fullscreen_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "Play"
@@ -500,16 +515,16 @@ msgstr "Hrát"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid ":kbd:`F5`"
-msgstr ""
+msgstr ":kbd:`F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Cmd + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:72
 msgid "``editor/play``"
-msgstr ""
+msgstr "``editor/play``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "Pause Scene"
@@ -517,15 +532,15 @@ msgstr "Pozastavit scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`F7`"
-msgstr ""
+msgstr ":kbd:`F7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid ":kbd:`Cmd + Ctrl + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ctrl + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:74
 msgid "``editor/pause_scene``"
-msgstr ""
+msgstr "``editor/pause_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "Stop"
@@ -533,16 +548,16 @@ msgstr "Stop"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid ":kbd:`F8`"
-msgstr ""
+msgstr ":kbd:`F8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Cmd + .`"
-msgstr ""
+msgstr ":kbd:`Cmd + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:76
 msgid "``editor/stop``"
-msgstr ""
+msgstr "``editor/stop``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "Play Scene"
@@ -550,16 +565,16 @@ msgstr "Přehrát scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid ":kbd:`F6`"
-msgstr ""
+msgstr ":kbd:`F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid ":kbd:`Cmd + R`"
-msgstr ""
+msgstr ":kbd:`Cmd + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:78
 msgid "``editor/play_scene``"
-msgstr ""
+msgstr "``editor/play_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "Play Custom Scene"
@@ -567,17 +582,17 @@ msgstr "Přehrát upravenou scénu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid ":kbd:`Ctrl + Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid ":kbd:`Cmd + Shift + R`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:80
 msgid "``editor/play_custom_scene``"
-msgstr ""
+msgstr "``editor/play_custom_scene``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "Expand Bottom Panel"
@@ -585,15 +600,15 @@ msgstr "Rozšířit spodní panel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid ":kbd:`Shift + F12`"
-msgstr ""
+msgstr ":kbd:`Shift + F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:82
 msgid "``editor/bottom_panel_expand``"
-msgstr ""
+msgstr "``editor/bottom_panel_expand``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:86
 msgid "2D / Canvas Item Editor"
-msgstr ""
+msgstr "2D / Editor položek na plátně"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
@@ -603,16 +618,16 @@ msgstr "Zvětšit"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid ":kbd:`Ctrl + =`"
-msgstr ""
+msgstr ":kbd:`Ctrl + =`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid ":kbd:`Cmd + =`"
-msgstr ""
+msgstr ":kbd:`Cmd + =`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:91
 msgid "``canvas_item_editor/zoom_plus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_plus``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
@@ -622,16 +637,16 @@ msgstr "Zmenšit"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid ":kbd:`Ctrl + -`"
-msgstr ""
+msgstr ":kbd:`Ctrl + -`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid ":kbd:`Cmd + -`"
-msgstr ""
+msgstr ":kbd:`Cmd + -`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:93
 msgid "``canvas_item_editor/zoom_minus``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_minus``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "Zoom Reset"
@@ -640,16 +655,16 @@ msgstr "Obnovení lupy"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Ctrl + 0`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid ":kbd:`Cmd + 0`"
-msgstr ""
+msgstr ":kbd:`Cmd + 0`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:95
 msgid "``canvas_item_editor/zoom_reset``"
-msgstr ""
+msgstr "``canvas_item_editor/zoom_reset``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "Pan View"
@@ -657,11 +672,11 @@ msgstr "Přesunout pohled"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid ":kbd:`Space`"
-msgstr ""
+msgstr ":kbd:`Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:97
 msgid "``canvas_item_editor/pan_view``"
-msgstr ""
+msgstr "``canvas_item_editor/pan_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
@@ -672,11 +687,11 @@ msgstr "Režim výběru"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid ":kbd:`Q`"
-msgstr ""
+msgstr ":kbd:`Q`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:99
 msgid "``canvas_item_editor/select_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/select_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
@@ -688,11 +703,11 @@ msgstr "Režim přesouvání"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid ":kbd:`W`"
-msgstr ""
+msgstr ":kbd:`W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:101
 msgid "``canvas_item_editor/move_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/move_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
@@ -703,11 +718,11 @@ msgstr "Režim otáčení"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid ":kbd:`E`"
-msgstr ""
+msgstr ":kbd:`E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:103
 msgid "``canvas_item_editor/rotate_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/rotate_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
@@ -718,11 +733,11 @@ msgstr "Režim škálování"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid ":kbd:`S`"
-msgstr ""
+msgstr ":kbd:`S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:105
 msgid "``canvas_item_editor/scale_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/scale_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "Ruler Mode"
@@ -731,11 +746,11 @@ msgstr "Režim pravítka"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid ":kbd:`R`"
-msgstr ""
+msgstr ":kbd:`R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:107
 msgid "``canvas_item_editor/ruler_mode``"
-msgstr ""
+msgstr "``canvas_item_editor/ruler_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "Use Smart Snap"
@@ -743,11 +758,11 @@ msgstr "Použít chytré přichytávání"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid ":kbd:`Shift + S`"
-msgstr ""
+msgstr ":kbd:`Shift + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:109
 msgid "``canvas_item_editor/use_smart_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_smart_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "Use Grid Snap"
@@ -755,11 +770,11 @@ msgstr "Použít mřížkové přichytávání"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid ":kbd:`Shift + G`"
-msgstr ""
+msgstr ":kbd:`Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:111
 msgid "``canvas_item_editor/use_grid_snap``"
-msgstr ""
+msgstr "``canvas_item_editor/use_grid_snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "Multiply grid step by 2"
@@ -767,11 +782,11 @@ msgstr "Vynásobit krok mřížky dvěma"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid ":kbd:`Num *`"
-msgstr ""
+msgstr ":kbd:`Num *`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:113
 msgid "``canvas_item_editor/multiply_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/multiply_grid_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "Divide grid step by 2"
@@ -779,11 +794,11 @@ msgstr "Vydělit krok mřížky dvěma"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid ":kbd:`Num /`"
-msgstr ""
+msgstr ":kbd:`Num /`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:115
 msgid "``canvas_item_editor/divide_grid_step``"
-msgstr ""
+msgstr "``canvas_item_editor/divide_grid_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "Always Show Grid"
@@ -792,11 +807,11 @@ msgstr "Vždy zobrazit mřížku"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid ":kbd:`G`"
-msgstr ""
+msgstr ":kbd:`G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:117
 msgid "``canvas_item_editor/show_grid``"
-msgstr ""
+msgstr "``canvas_item_editor/show_grid``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "Show Helpers"
@@ -804,11 +819,11 @@ msgstr "Zobrazit pomocníky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid ":kbd:`H`"
-msgstr ""
+msgstr ":kbd:`H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:119
 msgid "``canvas_item_editor/show_helpers``"
-msgstr ""
+msgstr "``canvas_item_editor/show_helpers``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "Show Guides"
@@ -817,11 +832,11 @@ msgstr "Zobrazit vodítka"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid ":kbd:`Y`"
-msgstr ""
+msgstr ":kbd:`Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:121
 msgid "``canvas_item_editor/show_guides``"
-msgstr ""
+msgstr "``canvas_item_editor/show_guides``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "Center Selection"
@@ -830,11 +845,11 @@ msgstr "Vycentrovat výběr"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid ":kbd:`F`"
-msgstr ""
+msgstr ":kbd:`F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:123
 msgid "``canvas_item_editor/center_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/center_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "Frame Selection"
@@ -843,11 +858,11 @@ msgstr "Výběr snímku"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid ":kbd:`Shift + F`"
-msgstr ""
+msgstr ":kbd:`Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:125
 msgid "``canvas_item_editor/frame_selection``"
-msgstr ""
+msgstr "``canvas_item_editor/frame_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "Preview Canvas Scale"
@@ -855,15 +870,15 @@ msgstr "Náhled měřítka plátna"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Ctrl + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid ":kbd:`Cmd + Shift + P`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:127
 msgid "``canvas_item_editor/preview_canvas_scale``"
-msgstr ""
+msgstr "``canvas_item_editor/preview_canvas_scale``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "Insert Key"
@@ -871,11 +886,11 @@ msgstr "Vložit klíč"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid ":kbd:`Ins`"
-msgstr ""
+msgstr ":kbd:`Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:129
 msgid "``canvas_item_editor/anim_insert_key``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "Insert Key (Existing Tracks)"
@@ -883,34 +898,34 @@ msgstr "Vložit klíč (existující stopy)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Ctrl + Ins`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid ":kbd:`Cmd + Ins`"
-msgstr ""
+msgstr ":kbd:`Cmd + Ins`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:131
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 msgid "Make Custom Bones from Nodes"
-msgstr ""
+msgstr "Vytvořit vlastní kosti z uzlů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid ":kbd:`Ctrl + Shift + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid ":kbd:`Cmd + Shift + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:133
 msgid "``canvas_item_editor/skeleton_make_bones``"
-msgstr ""
+msgstr "``canvas_item_editor/skeleton_make_bones``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "Clear Pose"
@@ -918,15 +933,15 @@ msgstr "Vymazat pózu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid ":kbd:`Shift + K`"
-msgstr ""
+msgstr ":kbd:`Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:135
 msgid "``canvas_item_editor/anim_clear_pose``"
-msgstr ""
+msgstr "``canvas_item_editor/anim_clear_pose``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:139
 msgid "3D / Spatial Editor"
-msgstr ""
+msgstr "3D / Prostorový editor"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "Toggle Freelook"
@@ -934,7 +949,7 @@ msgstr "Přepnout volný pohled"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:144
 msgid "``spatial_editor/freelook_toggle``"
-msgstr ""
+msgstr "``spatial_editor/freelook_toggle``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "Freelook Left"
@@ -943,11 +958,11 @@ msgstr "Volný pohled doleva"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid ":kbd:`A`"
-msgstr ""
+msgstr ":kbd:`A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:146
 msgid "``spatial_editor/freelook_left``"
-msgstr ""
+msgstr "``spatial_editor/freelook_left``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "Freelook Right"
@@ -955,11 +970,11 @@ msgstr "Volný pohled doprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid ":kbd:`D`"
-msgstr ""
+msgstr ":kbd:`D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:148
 msgid "``spatial_editor/freelook_right``"
-msgstr ""
+msgstr "``spatial_editor/freelook_right``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "Freelook Forward"
@@ -967,7 +982,7 @@ msgstr "Volný pohled vpřed"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:150
 msgid "``spatial_editor/freelook_forward``"
-msgstr ""
+msgstr "``spatial_editor/freelook_forward``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "Freelook Backwards"
@@ -975,7 +990,7 @@ msgstr "Volný pohled dozadu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:152
 msgid "``spatial_editor/freelook_backwards``"
-msgstr ""
+msgstr "``spatial_editor/freelook_backwards``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "Freelook Up"
@@ -983,7 +998,7 @@ msgstr "Volný pohled nahoru"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:154
 msgid "``spatial_editor/freelook_up``"
-msgstr ""
+msgstr "``spatial_editor/freelook_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "Freelook Down"
@@ -991,7 +1006,7 @@ msgstr "Volný pohled dolů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:156
 msgid "``spatial_editor/freelook_down``"
-msgstr ""
+msgstr "``spatial_editor/freelook_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "Freelook Speed Modifier"
@@ -999,11 +1014,11 @@ msgstr "Rychlost volného pohledu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid ":kbd:`Shift`"
-msgstr ""
+msgstr ":kbd:`Shift`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:158
 msgid "``spatial_editor/freelook_speed_modifier``"
-msgstr ""
+msgstr "``spatial_editor/freelook_speed_modifier``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "Freelook Slow Modifier"
@@ -1011,27 +1026,27 @@ msgstr "Zpomalení volného pohledu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid ":kbd:`Alt`"
-msgstr ""
+msgstr ":kbd:`Alt`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:160
 msgid "``spatial_editor/freelook_slow_modifier``"
-msgstr ""
+msgstr "``spatial_editor/freelook_slow_modifier``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:162
 msgid "``spatial_editor/tool_select``"
-msgstr ""
+msgstr "``spatial_editor/tool_select``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:164
 msgid "``spatial_editor/tool_move``"
-msgstr ""
+msgstr "``spatial_editor/tool_move``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:166
 msgid "``spatial_editor/tool_rotate``"
-msgstr ""
+msgstr "``spatial_editor/tool_rotate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:168
 msgid "``spatial_editor/tool_scale``"
-msgstr ""
+msgstr "``spatial_editor/tool_scale``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "Use Local Space"
@@ -1040,11 +1055,11 @@ msgstr "Použít místní prostor"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid ":kbd:`T`"
-msgstr ""
+msgstr ":kbd:`T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:170
 msgid "``spatial_editor/local_coords``"
-msgstr ""
+msgstr "``spatial_editor/local_coords``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "Use Snap"
@@ -1052,7 +1067,7 @@ msgstr "Použít přichycení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:172
 msgid "``spatial_editor/snap``"
-msgstr ""
+msgstr "``spatial_editor/snap``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "Snap Object to Floor"
@@ -1061,11 +1076,11 @@ msgstr "Přichytit objekt k podlaze"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid ":kbd:`PgDown`"
-msgstr ""
+msgstr ":kbd:`PgDown`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:174
 msgid "``spatial_editor/snap_to_floor``"
-msgstr ""
+msgstr "``spatial_editor/snap_to_floor``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "Top View"
@@ -1073,11 +1088,11 @@ msgstr "Pohled shora"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid ":kbd:`Num 7`"
-msgstr ""
+msgstr ":kbd:`Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:176
 msgid "``spatial_editor/top_view``"
-msgstr ""
+msgstr "``spatial_editor/top_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "Bottom View"
@@ -1085,11 +1100,11 @@ msgstr "Pohled zdola"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid ":kbd:`Alt + Num 7`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:178
 msgid "``spatial_editor/bottom_view``"
-msgstr ""
+msgstr "``spatial_editor/bottom_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "Front View"
@@ -1097,11 +1112,11 @@ msgstr "Pohled zepředu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid ":kbd:`Num 1`"
-msgstr ""
+msgstr ":kbd:`Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:180
 msgid "``spatial_editor/front_view``"
-msgstr ""
+msgstr "``spatial_editor/front_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "Rear View"
@@ -1109,11 +1124,11 @@ msgstr "Pohled zezadu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid ":kbd:`Alt + Num 1`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:182
 msgid "``spatial_editor/rear_view``"
-msgstr ""
+msgstr "``spatial_editor/rear_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "Right View"
@@ -1121,11 +1136,11 @@ msgstr "Pohled zprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid ":kbd:`Num 3`"
-msgstr ""
+msgstr ":kbd:`Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:184
 msgid "``spatial_editor/right_view``"
-msgstr ""
+msgstr "``spatial_editor/right_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "Left View"
@@ -1133,11 +1148,11 @@ msgstr "Pohled zleva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid ":kbd:`Alt + Num 3`"
-msgstr ""
+msgstr ":kbd:`Alt + Num 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:186
 msgid "``spatial_editor/left_view``"
-msgstr ""
+msgstr "``spatial_editor/left_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "Switch Perspective/Orthogonal View"
@@ -1145,11 +1160,11 @@ msgstr "Přepnout perspektivní/ortogonální pohled"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid ":kbd:`Num 5`"
-msgstr ""
+msgstr ":kbd:`Num 5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:188
 msgid "``spatial_editor/switch_perspective_orthogonal``"
-msgstr ""
+msgstr "``spatial_editor/switch_perspective_orthogonal``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid "Insert Animation Key"
@@ -1157,11 +1172,11 @@ msgstr "Vložit animační klíč"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid ":kbd:`K`"
-msgstr ""
+msgstr ":kbd:`K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:190
 msgid "``spatial_editor/insert_anim_key``"
-msgstr ""
+msgstr "``spatial_editor/insert_anim_key``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "Focus Origin"
@@ -1169,11 +1184,11 @@ msgstr "Zaměřit počátek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid ":kbd:`O`"
-msgstr ""
+msgstr ":kbd:`O`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:192
 msgid "``spatial_editor/focus_origin``"
-msgstr ""
+msgstr "``spatial_editor/focus_origin``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "Focus Selection"
@@ -1181,7 +1196,7 @@ msgstr "Zaměřit výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:194
 msgid "``spatial_editor/focus_selection``"
-msgstr ""
+msgstr "``spatial_editor/focus_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "Align Transform with View"
@@ -1189,15 +1204,15 @@ msgstr "Zarovnat se zobrazením"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Ctrl + Alt + M`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid ":kbd:`Cmd + Alt + M`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:196
 msgid "``spatial_editor/align_transform_with_view``"
-msgstr ""
+msgstr "``spatial_editor/align_transform_with_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "Align Rotation with View"
@@ -1206,15 +1221,15 @@ msgstr "Zarovnat rotaci se zobrazením"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Alt + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid ":kbd:`Cmd + Alt + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:198
 msgid "``spatial_editor/align_rotation_with_view``"
-msgstr ""
+msgstr "``spatial_editor/align_rotation_with_view``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "1 Viewport"
@@ -1222,15 +1237,15 @@ msgstr "1 výřez"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Ctrl + 1`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid ":kbd:`Cmd + 1`"
-msgstr ""
+msgstr ":kbd:`Cmd + 1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:200
 msgid "``spatial_editor/1_viewport``"
-msgstr ""
+msgstr "``spatial_editor/1_viewport``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "2 Viewports"
@@ -1238,15 +1253,15 @@ msgstr "2 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Ctrl + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid ":kbd:`Cmd + 2`"
-msgstr ""
+msgstr ":kbd:`Cmd + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:202
 msgid "``spatial_editor/2_viewports``"
-msgstr ""
+msgstr "``spatial_editor/2_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "2 Viewports (Alt)"
@@ -1254,15 +1269,15 @@ msgstr "2 výřezy (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Ctrl + Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid ":kbd:`Cmd + Alt + 2`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + 2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:204
 msgid "``spatial_editor/2_viewports_alt``"
-msgstr ""
+msgstr "``spatial_editor/2_viewports_alt``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "3 Viewports"
@@ -1270,15 +1285,15 @@ msgstr "3 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Ctrl + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid ":kbd:`Cmd + 3`"
-msgstr ""
+msgstr ":kbd:`Cmd + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:206
 msgid "``spatial_editor/3_viewports``"
-msgstr ""
+msgstr "``spatial_editor/3_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "3 Viewports (Alt)"
@@ -1286,15 +1301,15 @@ msgstr "3 výřezy (Alt)"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Ctrl + Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid ":kbd:`Cmd + Alt + 3`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + 3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:208
 msgid "``spatial_editor/3_viewports_alt``"
-msgstr ""
+msgstr "``spatial_editor/3_viewports_alt``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "4 Viewports"
@@ -1302,15 +1317,15 @@ msgstr "4 výřezy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Ctrl + 4`"
-msgstr ""
+msgstr ":kbd:`Ctrl + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid ":kbd:`Cmd + 4`"
-msgstr ""
+msgstr ":kbd:`Cmd + 4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:210
 msgid "``spatial_editor/4_viewports``"
-msgstr ""
+msgstr "``spatial_editor/4_viewports``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:214
 msgid "Text Editor"
@@ -1324,17 +1339,17 @@ msgstr "Vyjmout"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid ":kbd:`Ctrl + X`"
-msgstr ""
+msgstr ":kbd:`Ctrl + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid ":kbd:`Cmd + X`"
-msgstr ""
+msgstr ":kbd:`Cmd + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:219
 msgid "``script_text_editor/cut``"
-msgstr ""
+msgstr "``script_text_editor/cut``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "Copy"
@@ -1347,7 +1362,7 @@ msgstr "Kopírovat"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid ":kbd:`Ctrl + C`"
-msgstr ""
+msgstr ":kbd:`Ctrl + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
@@ -1356,11 +1371,11 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid ":kbd:`Cmd + C`"
-msgstr ""
+msgstr ":kbd:`Cmd + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:221
 msgid "``script_text_editor/copy``"
-msgstr ""
+msgstr "``script_text_editor/copy``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "Paste"
@@ -1369,16 +1384,16 @@ msgstr "Vložit"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid ":kbd:`Ctrl + V`"
-msgstr ""
+msgstr ":kbd:`Ctrl + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid ":kbd:`Cmd + V`"
-msgstr ""
+msgstr ":kbd:`Cmd + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:223
 msgid "``script_text_editor/paste``"
-msgstr ""
+msgstr "``script_text_editor/paste``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "Select All"
@@ -1387,39 +1402,39 @@ msgstr "Vybrat vše"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid ":kbd:`Ctrl + A`"
-msgstr ""
+msgstr ":kbd:`Ctrl + A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid ":kbd:`Cmd + A`"
-msgstr ""
+msgstr ":kbd:`Cmd + A`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:225
 msgid "``script_text_editor/select_all``"
-msgstr ""
+msgstr "``script_text_editor/select_all``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "Find"
-msgstr ""
+msgstr "Najít"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid ":kbd:`Ctrl + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid ":kbd:`Cmd + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:227
 msgid "``script_text_editor/find``"
-msgstr ""
+msgstr "``script_text_editor/find``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
@@ -1427,13 +1442,18 @@ msgid "Find Next"
 msgstr "Najít další"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
+#: ../../docs/getting_started/editor/default_key_mapping.rst:302
+msgid ":kbd:`F3`"
+msgstr ":kbd:`F3`"
+
+#: ../../docs/getting_started/editor/default_key_mapping.rst:229
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Cmd + G`"
-msgstr ""
+msgstr ":kbd:`Cmd + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:229
 msgid "``script_text_editor/find_next``"
-msgstr ""
+msgstr "``script_text_editor/find_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
@@ -1443,15 +1463,15 @@ msgstr "Najít předchozí"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid ":kbd:`Shift + F3`"
-msgstr ""
+msgstr ":kbd:`Shift + F3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid ":kbd:`Cmd + Shift + G`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:231
 msgid "``script_text_editor/find_previous``"
-msgstr ""
+msgstr "``script_text_editor/find_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
@@ -1461,16 +1481,16 @@ msgstr "Najít v souborech"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid ":kbd:`Ctrl + Shift + F`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid ":kbd:`Cmd + Shift + F`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:233
 msgid "``script_text_editor/find_in_files``"
-msgstr ""
+msgstr "``script_text_editor/find_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "Replace"
@@ -1479,44 +1499,44 @@ msgstr "Nahradit"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid ":kbd:`Ctrl + R`"
-msgstr ""
+msgstr ":kbd:`Ctrl + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid ":kbd:`Alt + Cmd + F`"
-msgstr ""
+msgstr ":kbd:`Alt + Cmd + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:235
 msgid "``script_text_editor/replace``"
-msgstr ""
+msgstr "``script_text_editor/replace``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 msgid "Replace in Files"
-msgstr ""
+msgstr "Nahradit v souborech"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid ":kbd:`Ctrl + Shift + R`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + R`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:237
 msgid "``script_text_editor/replace_in_files``"
-msgstr ""
+msgstr "``script_text_editor/replace_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:239
 msgid "``script_text_editor/undo``"
-msgstr ""
+msgstr "``script_text_editor/undo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid ":kbd:`Ctrl + Y`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid ":kbd:`Cmd + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:241
 msgid "``script_text_editor/redo``"
-msgstr ""
+msgstr "``script_text_editor/redo``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
@@ -1527,11 +1547,11 @@ msgstr "Přesunout nahoru"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid ":kbd:`Alt + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Up Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:243
 msgid "``script_text_editor/move_up``"
-msgstr ""
+msgstr "``script_text_editor/move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
@@ -1541,11 +1561,11 @@ msgstr "Přesunout dolů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid ":kbd:`Alt + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Down Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:245
 msgid "``script_text_editor/move_down``"
-msgstr ""
+msgstr "``script_text_editor/move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "Delete Line"
@@ -1554,16 +1574,16 @@ msgstr "Odstranit řádek"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid ":kbd:`Ctrl + Shift + K`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid ":kbd:`Cmd + Shift + K`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:247
 msgid "``script_text_editor/delete_line``"
-msgstr ""
+msgstr "``script_text_editor/delete_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "Toggle Comment"
@@ -1571,15 +1591,15 @@ msgstr "Přepnout komentář"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Ctrl + K`"
-msgstr ""
+msgstr ":kbd:`Ctrl + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid ":kbd:`Cmd + K`"
-msgstr ""
+msgstr ":kbd:`Cmd + K`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:249
 msgid "``script_text_editor/toggle_comment``"
-msgstr ""
+msgstr "``script_text_editor/toggle_comment``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "Fold/Unfold Line"
@@ -1588,11 +1608,11 @@ msgstr "Složit/Rozložit řádek"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid ":kbd:`Alt + F`"
-msgstr ""
+msgstr ":kbd:`Alt + F`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:251
 msgid "``script_text_editor/toggle_fold_line``"
-msgstr ""
+msgstr "``script_text_editor/toggle_fold_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "Clone Down"
@@ -1604,27 +1624,27 @@ msgstr "Duplikovat dolů"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid ":kbd:`Ctrl + D`"
-msgstr ""
+msgstr ":kbd:`Ctrl + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid ":kbd:`Cmd + Shift + C`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + C`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:253
 msgid "``script_text_editor/clone_down``"
-msgstr ""
+msgstr "``script_text_editor/clone_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "Complete Symbol"
-msgstr "Kompletní symbol"
+msgstr "Doplnit symbol"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid ":kbd:`Ctrl + Space`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:255
 msgid "``script_text_editor/complete_symbol``"
-msgstr ""
+msgstr "``script_text_editor/complete_symbol``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "Evaluate Selection"
@@ -1632,15 +1652,15 @@ msgstr "Vyhodnoť vybraný výraz"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Ctrl + Shift + E`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid ":kbd:`Cmd + Shift + E`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:257
 msgid "``script_text_editor/evaluate_selection``"
-msgstr ""
+msgstr "``script_text_editor/evaluate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "Trim Trailing Whitespace"
@@ -1648,15 +1668,15 @@ msgstr "Osekat koncové mezery"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Ctrl + Alt + T`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid ":kbd:`Cmd + Alt + T`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + T`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:259
 msgid "``script_text_editor/trim_trailing_whitespace``"
-msgstr ""
+msgstr "``script_text_editor/trim_trailing_whitespace``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "Uppercase"
@@ -1664,11 +1684,11 @@ msgstr "Velká písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid ":kbd:`Shift + F4`"
-msgstr ""
+msgstr ":kbd:`Shift + F4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:261
 msgid "``script_text_editor/convert_to_uppercase``"
-msgstr ""
+msgstr "``script_text_editor/convert_to_uppercase``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "Lowercase"
@@ -1676,23 +1696,23 @@ msgstr "Malá písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid ":kbd:`Shift + F5`"
-msgstr ""
+msgstr ":kbd:`Shift + F5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:263
 msgid "``script_text_editor/convert_to_lowercase``"
-msgstr ""
+msgstr "``script_text_editor/convert_to_lowercase``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "Capitalize"
-msgstr "Velká písmena"
+msgstr "Velká Písmena"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid ":kbd:`Shift + F6`"
-msgstr ""
+msgstr ":kbd:`Shift + F6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:265
 msgid "``script_text_editor/capitalize``"
-msgstr ""
+msgstr "``script_text_editor/capitalize``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "Convert Indent to Spaces"
@@ -1700,15 +1720,15 @@ msgstr "Převést odsazení na mezery"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Ctrl + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid ":kbd:`Cmd + Shift + Y`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + Y`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:267
 msgid "``script_text_editor/convert_indent_to_spaces``"
-msgstr ""
+msgstr "``script_text_editor/convert_indent_to_spaces``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "Convert Indent to Tabs"
@@ -1716,15 +1736,15 @@ msgstr "Převést odsazení na taby"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Ctrl + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid ":kbd:`Cmd + Shift + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:269
 msgid "``script_text_editor/convert_indent_to_tabs``"
-msgstr ""
+msgstr "``script_text_editor/convert_indent_to_tabs``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "Auto Indent"
@@ -1732,15 +1752,15 @@ msgstr "Automatické odsazení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Ctrl + I`"
-msgstr ""
+msgstr ":kbd:`Ctrl + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid ":kbd:`Cmd + I`"
-msgstr ""
+msgstr ":kbd:`Cmd + I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:271
 msgid "``script_text_editor/auto_indent``"
-msgstr ""
+msgstr "``script_text_editor/auto_indent``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "Toggle Bookmark"
@@ -1748,15 +1768,15 @@ msgstr "Vypnout/Zapnout záložku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Ctrl + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid ":kbd:`Cmd + Alt + B`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:273
 msgid "``script_text_editor/toggle_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/toggle_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "Go to Next Bookmark"
@@ -1764,11 +1784,11 @@ msgstr "Přejít na další záložku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid ":kbd:`Ctrl + B`"
-msgstr ""
+msgstr ":kbd:`Ctrl + B`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:275
 msgid "``script_text_editor/goto_next_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/goto_next_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "Go to Previous Bookmark"
@@ -1776,7 +1796,7 @@ msgstr "Přejít na předchozí záložku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:277
 msgid "``script_text_editor/goto_previous_bookmark``"
-msgstr ""
+msgstr "``script_text_editor/goto_previous_bookmark``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "Go to Function"
@@ -1784,11 +1804,11 @@ msgstr "Přejít na funkci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid ":kbd:`Ctrl + Cmd + J`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Cmd + J`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:279
 msgid "``script_text_editor/goto_function``"
-msgstr ""
+msgstr "``script_text_editor/goto_function``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "Go to Line"
@@ -1796,15 +1816,15 @@ msgstr "Jít na řádek"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Ctrl + L`"
-msgstr ""
+msgstr ":kbd:`Ctrl + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid ":kbd:`Cmd + L`"
-msgstr ""
+msgstr ":kbd:`Cmd + L`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:281
 msgid "``script_text_editor/goto_line``"
-msgstr ""
+msgstr "``script_text_editor/goto_line``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
@@ -1814,11 +1834,11 @@ msgstr "Přepnout breakpoint"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid ":kbd:`F9`"
-msgstr ""
+msgstr ":kbd:`F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:283
 msgid "``script_text_editor/toggle_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/toggle_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "Remove All Breakpoints"
@@ -1826,15 +1846,15 @@ msgstr "Odstranit všechny breakpointy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Ctrl + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid ":kbd:`Cmd + Shift + F9`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + F9`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:285
 msgid "``script_text_editor/remove_all_breakpoints``"
-msgstr ""
+msgstr "``script_text_editor/remove_all_breakpoints``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "Go to Next Breakpoint"
@@ -1842,11 +1862,11 @@ msgstr "Přejít na další breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid ":kbd:`Ctrl + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:287
 msgid "``script_text_editor/goto_next_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/goto_next_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "Go to Previous Breakpoint"
@@ -1854,15 +1874,15 @@ msgstr "Přejít na předchozí breakpoint"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Ctrl + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid ":kbd:`Cmd + ,`"
-msgstr ""
+msgstr ":kbd:`Cmd + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:289
 msgid "``script_text_editor/goto_previous_breakpoint``"
-msgstr ""
+msgstr "``script_text_editor/goto_previous_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "Contextual Help"
@@ -1870,15 +1890,15 @@ msgstr "Kontextová nápověda"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + F1`"
-msgstr ""
+msgstr ":kbd:`Alt + F1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid ":kbd:`Alt + Shift + Space`"
-msgstr ""
+msgstr ":kbd:`Alt + Shift + Space`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:291
 msgid "``script_text_editor/contextual_help``"
-msgstr ""
+msgstr "``script_text_editor/contextual_help``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:295
 msgid "Script Editor"
@@ -1886,35 +1906,35 @@ msgstr "Editor skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:300
 msgid "``script_editor/find``"
-msgstr ""
+msgstr "``script_editor/find``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:302
 msgid "``script_editor/find_next``"
-msgstr ""
+msgstr "``script_editor/find_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:304
 msgid "``script_editor/find_previous``"
-msgstr ""
+msgstr "``script_editor/find_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:306
 msgid "``script_editor/find_in_files``"
-msgstr ""
+msgstr "``script_editor/find_in_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid ":kbd:`Shift + Alt + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Up Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:308
 msgid "``script_editor/window_move_up``"
-msgstr ""
+msgstr "``script_editor/window_move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid ":kbd:`Shift + Alt + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Shift + Alt + Down Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:310
 msgid "``script_editor/window_move_down``"
-msgstr ""
+msgstr "``script_editor/window_move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid "Next Script"
@@ -1922,31 +1942,31 @@ msgstr "Další skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Ctrl + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid ":kbd:`Cmd + Shift + .`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + .`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:312
 msgid "``script_editor/next_script``"
-msgstr ""
+msgstr "``script_editor/next_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "Previous Script"
-msgstr ""
+msgstr "Předcházející skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Ctrl + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid ":kbd:`Cmd + Shift + ,`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + ,`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:314
 msgid "``script_editor/prev_script``"
-msgstr ""
+msgstr "``script_editor/prev_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "Reopen Closed Script"
@@ -1954,7 +1974,7 @@ msgstr "Znovu otevřít zavřený skript"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:316
 msgid "``script_editor/reopen_closed_script``"
-msgstr ""
+msgstr "``script_editor/reopen_closed_script``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "Save"
@@ -1962,15 +1982,15 @@ msgstr "Uložit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Ctrl + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid ":kbd:`Cmd + Alt + S`"
-msgstr ""
+msgstr ":kbd:`Cmd + Alt + S`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:318
 msgid "``script_editor/save``"
-msgstr ""
+msgstr "``script_editor/save``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "Save All"
@@ -1978,7 +1998,7 @@ msgstr "Uložit vše"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:320
 msgid "``script_editor/save_all``"
-msgstr ""
+msgstr "``script_editor/save_all``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "Soft Reload Script"
@@ -1986,7 +2006,7 @@ msgstr "Lehký restart skriptu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:322
 msgid "``script_editor/reload_script_soft``"
-msgstr ""
+msgstr "``script_editor/reload_script_soft``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "History Previous"
@@ -1995,11 +2015,11 @@ msgstr "Historie předchozí"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid ":kbd:`Alt + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Left Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:324
 msgid "``script_editor/history_previous``"
-msgstr ""
+msgstr "``script_editor/history_previous``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "History Next"
@@ -2008,11 +2028,11 @@ msgstr "Historie další"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid ":kbd:`Alt + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Alt + Right Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:326
 msgid "``script_editor/history_next``"
-msgstr ""
+msgstr "``script_editor/history_next``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "Close"
@@ -2020,15 +2040,15 @@ msgstr "Zavřít"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Ctrl + W`"
-msgstr ""
+msgstr ":kbd:`Ctrl + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid ":kbd:`Cmd + W`"
-msgstr ""
+msgstr ":kbd:`Cmd + W`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:328
 msgid "``script_editor/close_file``"
-msgstr ""
+msgstr "``script_editor/close_file``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid "Run"
@@ -2036,15 +2056,15 @@ msgstr "Spustit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Ctrl + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid ":kbd:`Cmd + Shift + X`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:330
 msgid "``script_editor/run_file``"
-msgstr ""
+msgstr "``script_editor/run_file``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "Toggle Scripts Panel"
@@ -2052,23 +2072,23 @@ msgstr "Přepnout panel skriptů"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Ctrl + \\\\`"
-msgstr ""
+msgstr ":kbd:`Ctrl + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid ":kbd:`Cmd + \\\\`"
-msgstr ""
+msgstr ":kbd:`Cmd + \\\\`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:332
 msgid "``script_editor/toggle_scripts_panel``"
-msgstr ""
+msgstr "``script_editor/toggle_scripts_panel``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:334
 msgid "``script_editor/zoom_in``"
-msgstr ""
+msgstr "``script_editor/zoom_in``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:336
 msgid "``script_editor/zoom_out``"
-msgstr ""
+msgstr "``script_editor/zoom_out``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "Reset Zoom"
@@ -2076,11 +2096,11 @@ msgstr "Obnovit původní přiblížení"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:338
 msgid "``script_editor/reset_zoom``"
-msgstr ""
+msgstr "``script_editor/reset_zoom``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:342
 msgid "Visual Script Editor"
-msgstr ""
+msgstr "Editor vizuálního skriptu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "Find Node Type"
@@ -2088,7 +2108,7 @@ msgstr "Vyhledat typ uzlu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:347
 msgid "``visual_script_editor/find_node_type``"
-msgstr ""
+msgstr "``visual_script_editor/find_node_type``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "Copy Nodes"
@@ -2096,7 +2116,7 @@ msgstr "Zkopírovat uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:349
 msgid "``visual_script_editor/copy_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/copy_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "Cut Nodes"
@@ -2104,7 +2124,7 @@ msgstr "Vyjmout uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:351
 msgid "``visual_script_editor/cut_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/cut_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "Paste Nodes"
@@ -2112,7 +2132,7 @@ msgstr "Vložit uzly"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:353
 msgid "``visual_script_editor/paste_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/paste_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "Delete Selected"
@@ -2125,7 +2145,7 @@ msgstr "Smazat vybraný"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid ":kbd:`Del`"
-msgstr ""
+msgstr ":kbd:`Del`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
@@ -2134,11 +2154,11 @@ msgstr ""
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid ":kbd:`Cmd + BkSp`"
-msgstr ""
+msgstr ":kbd:`Cmd + BkSp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:355
 msgid "``visual_script_editor/delete_selected``"
-msgstr ""
+msgstr "``visual_script_editor/delete_selected``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "Make Function"
@@ -2146,11 +2166,11 @@ msgstr "Vytvořit funkci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid ":kbd:`Ctrl + G`"
-msgstr ""
+msgstr ":kbd:`Ctrl + G`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:357
 msgid "``visual_script_editor/create_function``"
-msgstr ""
+msgstr "``visual_script_editor/create_function``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "Edit Member"
@@ -2158,15 +2178,15 @@ msgstr "Upravit členy"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Ctrl + E`"
-msgstr ""
+msgstr ":kbd:`Ctrl + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid ":kbd:`Cmd + E`"
-msgstr ""
+msgstr ":kbd:`Cmd + E`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:359
 msgid "``visual_script_editor/edit_member``"
-msgstr ""
+msgstr "``visual_script_editor/edit_member``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "Refresh Graph"
@@ -2174,11 +2194,11 @@ msgstr "Obnovit graf"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:361
 msgid "``visual_script_editor/refresh_nodes``"
-msgstr ""
+msgstr "``visual_script_editor/refresh_nodes``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:363
 msgid "``visual_script_editor/toggle_breakpoint``"
-msgstr ""
+msgstr "``visual_script_editor/toggle_breakpoint``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:367
 msgid "Editor Output"
@@ -2191,7 +2211,7 @@ msgstr "Kopírovat výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:372
 msgid "``editor/copy_output``"
-msgstr ""
+msgstr "``editor/copy_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "Clear Output"
@@ -2199,7 +2219,7 @@ msgstr "Vymazat výstup"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:374
 msgid "``editor/clear_output``"
-msgstr ""
+msgstr "``editor/clear_output``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:378
 msgid "Debugger"
@@ -2211,11 +2231,11 @@ msgstr "Vstoupit do"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid ":kbd:`F11`"
-msgstr ""
+msgstr ":kbd:`F11`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:383
 msgid "``debugger/step_into``"
-msgstr ""
+msgstr "``debugger/step_into``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "Step Over"
@@ -2223,11 +2243,11 @@ msgstr "Přeskočit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid ":kbd:`F10`"
-msgstr ""
+msgstr ":kbd:`F10`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:385
 msgid "``debugger/step_over``"
-msgstr ""
+msgstr "``debugger/step_over``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "Continue"
@@ -2235,15 +2255,15 @@ msgstr "Pokračovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid ":kbd:`F12`"
-msgstr ""
+msgstr ":kbd:`F12`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:387
 msgid "``debugger/continue``"
-msgstr ""
+msgstr "``debugger/continue``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:391
 msgid "File Dialog"
-msgstr ""
+msgstr "Souborový dialog"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "Go Back"
@@ -2251,7 +2271,7 @@ msgstr "Jít zpět"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:396
 msgid "``file_dialog/go_back``"
-msgstr ""
+msgstr "``file_dialog/go_back``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "Go Forward"
@@ -2259,7 +2279,7 @@ msgstr "Jit dopředu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:398
 msgid "``file_dialog/go_forward``"
-msgstr ""
+msgstr "``file_dialog/go_forward``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "Go Up"
@@ -2267,7 +2287,7 @@ msgstr "Jít o úroveň výš"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:400
 msgid "``file_dialog/go_up``"
-msgstr ""
+msgstr "``file_dialog/go_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "Refresh"
@@ -2275,7 +2295,7 @@ msgstr "Obnovit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:402
 msgid "``file_dialog/refresh``"
-msgstr ""
+msgstr "``file_dialog/refresh``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "Toggle Hidden Files"
@@ -2283,15 +2303,15 @@ msgstr "Zobrazit skryté soubory"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Ctrl + H`"
-msgstr ""
+msgstr ":kbd:`Ctrl + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid ":kbd:`Cmd + H`"
-msgstr ""
+msgstr ":kbd:`Cmd + H`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:404
 msgid "``file_dialog/toggle_hidden_files``"
-msgstr ""
+msgstr "``file_dialog/toggle_hidden_files``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "Toggle Favorite"
@@ -2299,7 +2319,7 @@ msgstr "Zobrazit oblíbené"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:406
 msgid "``file_dialog/toggle_favorite``"
-msgstr ""
+msgstr "``file_dialog/toggle_favorite``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "Toggle Mode"
@@ -2307,11 +2327,11 @@ msgstr "Přepnout režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid ":kbd:`Alt + V`"
-msgstr ""
+msgstr ":kbd:`Alt + V`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:408
 msgid "``file_dialog/toggle_mode``"
-msgstr ""
+msgstr "``file_dialog/toggle_mode``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "Create Folder"
@@ -2319,15 +2339,15 @@ msgstr "Vytvořit složku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Ctrl + N`"
-msgstr ""
+msgstr ":kbd:`Ctrl + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid ":kbd:`Cmd + N`"
-msgstr ""
+msgstr ":kbd:`Cmd + N`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:410
 msgid "``file_dialog/create_folder``"
-msgstr ""
+msgstr "``file_dialog/create_folder``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
@@ -2337,7 +2357,7 @@ msgstr "Odstranit"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:412
 msgid "``file_dialog/delete``"
-msgstr ""
+msgstr "``file_dialog/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "Focus Path"
@@ -2348,11 +2368,11 @@ msgstr "Zvýraznit cestu"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid ":kbd:`Cmd + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:414
 msgid "``file_dialog/focus_path``"
-msgstr ""
+msgstr "``file_dialog/focus_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "Move Favorite Up"
@@ -2361,16 +2381,16 @@ msgstr "Přesunout oblíbenou položku nahoru"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Ctrl + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Up Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid ":kbd:`Cmd + Up Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Up Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:416
 msgid "``file_dialog/move_favorite_up``"
-msgstr ""
+msgstr "``file_dialog/move_favorite_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "Move Favorite Down"
@@ -2379,16 +2399,16 @@ msgstr "Přesunout oblíbenou položku dolů"
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid ":kbd:`Ctrl + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Down Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid ":kbd:`Cmd + Down Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Down Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:418
 msgid "``file_dialog/move_favorite_down``"
-msgstr ""
+msgstr "``file_dialog/move_favorite_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:422
 msgid "FileSystem Dock"
@@ -2400,7 +2420,7 @@ msgstr "Kopírovat cestu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:427
 msgid "``filesystem_dock/copy_path``"
-msgstr ""
+msgstr "``filesystem_dock/copy_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
@@ -2409,15 +2429,15 @@ msgstr "Duplikovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:429
 msgid "``filesystem_dock/duplicate``"
-msgstr ""
+msgstr "``filesystem_dock/duplicate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:431
 msgid "``filesystem_dock/delete``"
-msgstr ""
+msgstr "``filesystem_dock/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:435
 msgid "Scene Tree Dock"
-msgstr ""
+msgstr "Dok stromu scény"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "Add Child Node"
@@ -2425,23 +2445,19 @@ msgstr "Přidat uzel"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:440
 msgid "``scene_tree/add_child_node``"
-msgstr ""
+msgstr "``scene_tree/add_child_node``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "Batch Rename"
 msgstr "Dávkové přejmenování"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
-msgid ":kbd:`Ctrl + F2`"
-msgstr ""
-
-#: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid ":kbd:`Cmd + F2`"
-msgstr ""
+msgstr ":kbd:`Cmd + F2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:442
 msgid "``scene_tree/batch_rename``"
-msgstr ""
+msgstr "``scene_tree/batch_rename``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "Copy Node Path"
@@ -2449,35 +2465,35 @@ msgstr "Kopírovat cestu k uzlu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:444
 msgid "``scene_tree/copy_node_path``"
-msgstr ""
+msgstr "``scene_tree/copy_node_path``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:446
 msgid "``scene_tree/delete``"
-msgstr ""
+msgstr "``scene_tree/delete``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid "Force Delete"
-msgstr ""
+msgstr "Vynutit smazání"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid ":kbd:`Shift + Del`"
-msgstr ""
+msgstr ":kbd:`Shift + Del`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:448
 msgid "``scene_tree/delete_no_confirm``"
-msgstr ""
+msgstr "``scene_tree/delete_no_confirm``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:450
 msgid "``scene_tree/duplicate``"
-msgstr ""
+msgstr "``scene_tree/duplicate``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:452
 msgid "``scene_tree/move_up``"
-msgstr ""
+msgstr "``scene_tree/move_up``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:454
 msgid "``scene_tree/move_down``"
-msgstr ""
+msgstr "``scene_tree/move_down``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:458
 msgid "Animation Track Editor"
@@ -2489,7 +2505,7 @@ msgstr "Duplikovat výběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:463
 msgid "``animation_editor/duplicate_selection``"
-msgstr ""
+msgstr "``animation_editor/duplicate_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "Duplicate Transposed"
@@ -2497,15 +2513,15 @@ msgstr "Duplikovat transponované"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Shift + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid ":kbd:`Cmd + Shift + D`"
-msgstr ""
+msgstr ":kbd:`Cmd + Shift + D`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:465
 msgid "``animation_editor/duplicate_selection_transposed``"
-msgstr ""
+msgstr "``animation_editor/duplicate_selection_transposed``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "Delete Selection"
@@ -2513,7 +2529,7 @@ msgstr "Smazat vyběr"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:467
 msgid "``animation_editor/delete_selection``"
-msgstr ""
+msgstr "``animation_editor/delete_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "Go to Next Step"
@@ -2521,15 +2537,15 @@ msgstr "Přejít k dalšímu kroku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Ctrl + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Right Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid ":kbd:`Cmd + Right Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Right Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:469
 msgid "``animation_editor/goto_next_step``"
-msgstr ""
+msgstr "``animation_editor/goto_next_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "Go to Previous Step"
@@ -2537,19 +2553,19 @@ msgstr "Přejít k předchozímu kroku"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Ctrl + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Ctrl + Left Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid ":kbd:`Cmd + Left Arrow`"
-msgstr ""
+msgstr ":kbd:`Cmd + Left Arrow`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:471
 msgid "``animation_editor/goto_prev_step``"
-msgstr ""
+msgstr "``animation_editor/goto_prev_step``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:475
 msgid "Tile Map Editor"
-msgstr ""
+msgstr "Editor mapy dlaždic"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "Find Tile"
@@ -2557,7 +2573,7 @@ msgstr "Najít dlaždici"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/find_tile``"
-msgstr ""
+msgstr "``tile_map_editor/find_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "Pick Tile"
@@ -2565,11 +2581,11 @@ msgstr "Vybrat dlaždici"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid ":kbd:`I`"
-msgstr ""
+msgstr ":kbd:`I`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:482
 msgid "``tile_map_editor/pick_tile``"
-msgstr ""
+msgstr "``tile_map_editor/pick_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "Paint Tile"
@@ -2577,11 +2593,11 @@ msgstr "Nakreslit dlaždici"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid ":kbd:`P`"
-msgstr ""
+msgstr ":kbd:`P`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:484
 msgid "``tile_map_editor/paint_tile``"
-msgstr ""
+msgstr "``tile_map_editor/paint_tile``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "Bucket Fill"
@@ -2589,7 +2605,7 @@ msgstr "Vyplnit barvou"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/bucket_fill``"
-msgstr ""
+msgstr "``tile_map_editor/bucket_fill``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "Transpose"
@@ -2597,7 +2613,7 @@ msgstr "Transponovat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:488
 msgid "``tile_map_editor/transpose``"
-msgstr ""
+msgstr "``tile_map_editor/transpose``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "Flip Horizontally"
@@ -2605,11 +2621,11 @@ msgstr "Převrátit horizontálně"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid ":kbd:`X`"
-msgstr ""
+msgstr ":kbd:`X`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:490
 msgid "``tile_map_editor/flip_horizontal``"
-msgstr ""
+msgstr "``tile_map_editor/flip_horizontal``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "Flip Vertically"
@@ -2617,11 +2633,11 @@ msgstr "Převrátit vertikálně"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid ":kbd:`Z`"
-msgstr ""
+msgstr ":kbd:`Z`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:492
 msgid "``tile_map_editor/flip_vertical``"
-msgstr ""
+msgstr "``tile_map_editor/flip_vertical``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "Rotate Left"
@@ -2629,7 +2645,7 @@ msgstr "Otočit doleva"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:494
 msgid "``tile_map_editor/rotate_left``"
-msgstr ""
+msgstr "``tile_map_editor/rotate_left``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "Rotate Right"
@@ -2637,7 +2653,7 @@ msgstr "Otočit doprava"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:496
 msgid "``tile_map_editor/rotate_right``"
-msgstr ""
+msgstr "``tile_map_editor/rotate_right``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "Clear Transform"
@@ -2645,7 +2661,7 @@ msgstr "Promazat transformaci"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:498
 msgid "``tile_map_editor/clear_transform``"
-msgstr ""
+msgstr "``tile_map_editor/clear_transform``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "Select"
@@ -2653,11 +2669,11 @@ msgstr "Vybrat"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid ":kbd:`M`"
-msgstr ""
+msgstr ":kbd:`M`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:500
 msgid "``tile_map_editor/select``"
-msgstr ""
+msgstr "``tile_map_editor/select``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "Cut Selection"
@@ -2665,11 +2681,11 @@ msgstr "Výběr řezu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:502
 msgid "``tile_map_editor/cut_selection``"
-msgstr ""
+msgstr "``tile_map_editor/cut_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:504
 msgid "``tile_map_editor/copy_selection``"
-msgstr ""
+msgstr "``tile_map_editor/copy_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "Erase Selection"
@@ -2677,7 +2693,7 @@ msgstr "Vymazat označené"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:506
 msgid "``tile_map_editor/erase_selection``"
-msgstr ""
+msgstr "``tile_map_editor/erase_selection``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:510
 msgid "Tileset Editor"
@@ -2689,7 +2705,7 @@ msgstr "Další koordináta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:515
 msgid "``tileset_editor/next_shape``"
-msgstr ""
+msgstr "``tileset_editor/next_shape``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "Previous Coordinate"
@@ -2697,11 +2713,11 @@ msgstr "Předchozí koordináta"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid ":kbd:`PgUp`"
-msgstr ""
+msgstr ":kbd:`PgUp`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:517
 msgid "``tileset_editor/previous_shape``"
-msgstr ""
+msgstr "``tileset_editor/previous_shape``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "Region Mode"
@@ -2709,11 +2725,11 @@ msgstr "Režim oblasti"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid ":kbd:`1`"
-msgstr ""
+msgstr ":kbd:`1`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:519
 msgid "``tileset_editor/editmode_region``"
-msgstr ""
+msgstr "``tileset_editor/editmode_region``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "Collision Mode"
@@ -2721,11 +2737,11 @@ msgstr "Kolizní režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid ":kbd:`2`"
-msgstr ""
+msgstr ":kbd:`2`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:521
 msgid "``tileset_editor/editmode_collision``"
-msgstr ""
+msgstr "``tileset_editor/editmode_collision``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "Occlusion Mode"
@@ -2733,11 +2749,11 @@ msgstr "Režim okluze"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid ":kbd:`3`"
-msgstr ""
+msgstr ":kbd:`3`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:523
 msgid "``tileset_editor/editmode_occlusion``"
-msgstr ""
+msgstr "``tileset_editor/editmode_occlusion``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "Navigation Mode"
@@ -2745,11 +2761,11 @@ msgstr "Navigační režim"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid ":kbd:`4`"
-msgstr ""
+msgstr ":kbd:`4`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:525
 msgid "``tileset_editor/editmode_navigation``"
-msgstr ""
+msgstr "``tileset_editor/editmode_navigation``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "Bitmask Mode"
@@ -2757,11 +2773,11 @@ msgstr "Režim bitové masky"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid ":kbd:`5`"
-msgstr ""
+msgstr ":kbd:`5`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:527
 msgid "``tileset_editor/editmode_bitmask``"
-msgstr ""
+msgstr "``tileset_editor/editmode_bitmask``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "Priority Mode"
@@ -2769,11 +2785,11 @@ msgstr "Prioritní mód"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid ":kbd:`6`"
-msgstr ""
+msgstr ":kbd:`6`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:529
 msgid "``tileset_editor/editmode_priority``"
-msgstr ""
+msgstr "``tileset_editor/editmode_priority``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "Icon Mode"
@@ -2781,11 +2797,11 @@ msgstr "Režim ikony"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid ":kbd:`7`"
-msgstr ""
+msgstr ":kbd:`7`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:531
 msgid "``tileset_editor/editmode_icon``"
-msgstr ""
+msgstr "``tileset_editor/editmode_icon``"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "Z Index Mode"
@@ -2793,8 +2809,8 @@ msgstr "Režim Z-indexu"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid ":kbd:`8`"
-msgstr ""
+msgstr ":kbd:`8`"
 
 #: ../../docs/getting_started/editor/default_key_mapping.rst:533
 msgid "``tileset_editor/editmode_z_index``"
-msgstr ""
+msgstr "``tileset_editor/editmode_z_index``"

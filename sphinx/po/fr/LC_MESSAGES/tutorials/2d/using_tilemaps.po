@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
-msgid "Using tilemaps"
+#, fuzzy
+msgid "Using TileMaps"
 msgstr "Utiliser les palettes de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
@@ -579,19 +580,21 @@ msgstr ""
 "tailles de sous-tuiles pour les modèles de dessus, comme décrit ci-dessous."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:260
-#, fuzzy
 msgid "**Template - Generic 16 tiles:**"
-msgstr "**Modèle - Générique :**"
+msgstr "**Modèle - Générique 16 tuiles :**"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:262
 msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
 "art styles the missing tiles will not be noticeable."
 msgstr ""
+"Ce modèle peut être utilisé pour les jeux de tuiles qui ne comportent que 16 "
+"tuiles - pour les styles artistiques plus simples, les tuiles manquantes ne "
+"seront pas perceptibles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:269
 msgid "Blue-checkered: \"ignore\""
-msgstr ""
+msgstr "Damier bleu : \"ignorer\""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:274
 msgid "**Template - Top-down floor in 3/4 perspective:**"
@@ -614,18 +617,22 @@ msgid "Yellow: top of wall"
 msgstr "Jaune : haut de mur"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:281
+msgid "Grey: hidden due to overlap"
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilemaps.rst:282
 msgid "Transparent: air"
 msgstr "Transparent : air"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:285
+#: ../../docs/tutorials/2d/using_tilemaps.rst:286
 msgid "**Template - Top-down wall in 3/4 perspective:**"
 msgstr "**Modèle - Mur vu de dessus en perspective 3/4 :**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:289
+#: ../../docs/tutorials/2d/using_tilemaps.rst:290
 msgid "**Template - Top-down wall in 3/4 perspective (thick walls):**"
 msgstr "**Modèle - Mur vu de dessus en perspective 3/4 (murs épais) :**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:291
+#: ../../docs/tutorials/2d/using_tilemaps.rst:292
 msgid ""
 "When using this template, set the TileSet subtile size to ``Vector2(64, "
 "88)``."
@@ -633,11 +640,11 @@ msgstr ""
 "Lorsque vous utilisez ce modèle, définissez la taille de sous-tuile TileSet "
 "à ``Vector2(64, 88)``."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:295
+#: ../../docs/tutorials/2d/using_tilemaps.rst:296
 msgid "**Template - Top-down wall in 3/4 perspective (tall walls):**"
 msgstr "**Modèle - Mur vu de dessus en perspective 3/4 (murs haut) :**"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:297
+#: ../../docs/tutorials/2d/using_tilemaps.rst:298
 msgid ""
 "When using this template, set the \"Snap Options\" Step to ``Vector2(64, "
 "184)`` and the \"Selected Tile\" Texture offset to height minus the cell "
@@ -648,17 +655,17 @@ msgstr ""
 "hauteur moins la taille de la cellule. Cela signifie que le décalage de la "
 "texture doit être ``Vector2(0, -120)`` :"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:304
+#: ../../docs/tutorials/2d/using_tilemaps.rst:305
 msgid "3x3"
 msgstr "3x3"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:306
+#: ../../docs/tutorials/2d/using_tilemaps.rst:307
 msgid ""
 "In 3x3 mode, each bitmaks contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr ""
 "En mode 3x3, chaque bitmak contient 9 bits (4 coins, 4 bords, 1 centre)"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:308
+#: ../../docs/tutorials/2d/using_tilemaps.rst:309
 msgid ""
 "Each bit checks a single adjacent cell. Corner bits only check diagonally "
 "adjacent cells. The center bit should be \"on\" for any tile you wish to use."
@@ -667,7 +674,7 @@ msgstr ""
 "vérifient que les cellules diagonalement adjacentes. Le bit du centre doit "
 "être \"on\" pour toute tuile que vous souhaitez utiliser."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:311
+#: ../../docs/tutorials/2d/using_tilemaps.rst:312
 msgid ""
 "A total of 256 tiles would be needed to provide exactly one bitmask for each "
 "arrangement that this mode can test for."
@@ -675,12 +682,11 @@ msgstr ""
 "Un total de 256 tuiles serait nécessaire pour fournir exactement un bitmask "
 "pour chaque arrangement que ce mode peut tester."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:316
+#: ../../docs/tutorials/2d/using_tilemaps.rst:317
 msgid "Disabling autotile"
 msgstr "Désactivation de l'autotile"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:318
-#, fuzzy
+#: ../../docs/tutorials/2d/using_tilemaps.rst:319
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
 "and select tiles manually, by clicking \"Disable Autotile\" at the top of "
@@ -691,11 +697,11 @@ msgstr ""
 "cliquant sur \"Désactiver l'autotile\" en haut de la fenêtre de sélection "
 "des tuiles."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:323
+#: ../../docs/tutorials/2d/using_tilemaps.rst:324
 msgid "Autotile binding"
 msgstr "Liaison d'autotile"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:325
+#: ../../docs/tutorials/2d/using_tilemaps.rst:326
 msgid ""
 "By default, autotile only checks for adjacent cells filled using the same "
 "autotile. This behaviour can be overridden in order to have autotiles bind "
@@ -719,7 +725,7 @@ msgstr ""
 "d'une autotile en utilisant \"find_tile_by_name(name)\", les cellules vides "
 "ont un identifiant de -1."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:335
+#: ../../docs/tutorials/2d/using_tilemaps.rst:336
 msgid ""
 "Note that to use this in the editor, the script should start with a \"tool\" "
 "declaration, and you may need to close and reload the scene for these "
@@ -729,11 +735,11 @@ msgstr ""
 "déclaration \"tool\", et vous devrez peut-être fermer et recharger la scène "
 "pour que ces changements prennent effet."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:340
+#: ../../docs/tutorials/2d/using_tilemaps.rst:341
 msgid "Tips and tricks"
 msgstr "Trucs et Astuces"
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:342
+#: ../../docs/tutorials/2d/using_tilemaps.rst:343
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -744,21 +750,21 @@ msgstr ""
 "vos tuiles. Pour empêcher ça, ouvrez \"Projet -> Paramètres de Projet\" et "
 "dans la section \"Rendering -> Quality\" activez \"Use Pixel Snap\"."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:346
+#: ../../docs/tutorials/2d/using_tilemaps.rst:347
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."
 msgstr ""
 "Vous pouvez basculer et tourner vos tuiles en utilisant les icônes en haut à "
 "droite de l'éditeur."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:348
+#: ../../docs/tutorials/2d/using_tilemaps.rst:349
 msgid ""
 "To draw straight lines, hold :kbd:`Shift` while clicking and dragging a tile."
 msgstr ""
 "Pour tracer des lignes droites, maintenez :kbd:`Shift` tout en cliquant et "
 "en faisant glisser une tuile."
 
-#: ../../docs/tutorials/2d/using_tilemaps.rst:350
+#: ../../docs/tutorials/2d/using_tilemaps.rst:351
 msgid ""
 "Tools such as copy, paste, and bucket fill, can be found in the \"TileMap\" "
 "menu in the upper-right."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:4
-#, fuzzy
 msgid "General optimization tips"
-msgstr "优化"
+msgstr "一般优化提示"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:7
 msgid "Introduction"
@@ -33,8 +32,8 @@ msgid ""
 "it's all too easy to produce software that will bring even the fastest "
 "computer to its knees."
 msgstr ""
-"在一个理想的世界里，计算机将以无限的速度运行。我们唯一的限制是我们的想象力。"
-"然而，在现实世界中，制造出能让最快的计算机也屈服的软件实在是太容易了。"
+"在一个理想的世界里,计算机将以无限的速度运行.我们唯一的限制是我们的想象力.然"
+"而,在现实世界中,制造出能让最快的计算机也屈服的软件实在是太容易了."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:14
 msgid ""
@@ -42,29 +41,28 @@ msgid ""
 "would like to be possible, and what we can realistically achieve while "
 "maintaining good performance."
 msgstr ""
-"因此，设计游戏和其他软件是在我们希望可能的情况下，和在保持良好性能的前提下，"
-"能够实际实现的情况之间的折中。"
+"因此,设计游戏和其他软件是在我们希望可能的情况下,和在保持良好性能的前提下,能够"
+"实际实现的情况之间的折中."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:18
 msgid "To achieve the best results, we have two approaches:"
-msgstr "要达到最佳效果，我们有两种方法:"
+msgstr "要达到最佳效果,我们有两种方法:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:20
 msgid "Work faster."
-msgstr "工作更快。"
+msgstr "工作更快."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:21
 msgid "Work smarter."
-msgstr "工作更快。"
+msgstr "工作更智能。"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:23
 msgid "And preferably, we will use a blend of the two."
-msgstr "我们最好将两者混合使用。"
+msgstr "我们最好将两者混合使用."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:26
-#, fuzzy
 msgid "Smoke and mirrors"
-msgstr "节点和资源"
+msgstr "烟雾和镜子"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:28
 msgid ""
@@ -74,12 +72,11 @@ msgid ""
 "and should strive to learn the tricks of the trade while trying to invent "
 "new ones."
 msgstr ""
-"更聪明地工作的一部分是认识到，在游戏中，我们经常可以让玩家相信他们所处的世界"
-"比实际情况要复杂得多，互动性强，图形上也更刺激。一个好的程序员是一个魔术师，"
-"应该努力学习行业的技巧，同时努力发明新的技巧。"
+"更聪明地工作的一部分是认识到,在游戏中,我们经常可以让玩家相信他们所处的世界比"
+"实际情况要复杂得多,互动性强,图形上也更刺激.一个好的程序员是一个魔术师,应该努"
+"力学习行业的技巧,同时努力发明新的技巧."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:34
-#, fuzzy
 msgid "The nature of slowness"
 msgstr "缓慢的本质"
 
@@ -88,36 +85,33 @@ msgid ""
 "To the outside observer, performance problems are often lumped together. But "
 "in reality, there are several different kinds of performance problems:"
 msgstr ""
-"在外界观察者看来，业绩问题往往被归纳在一起。但实际上，业绩问题有几种不同的类"
-"型:"
+"在外界观察者看来,业绩问题往往被归纳在一起.但实际上,业绩问题有几种不同的类型:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:39
-#, fuzzy
 msgid ""
 "A slow process that occurs every frame, leading to a continuously low frame "
 "rate."
-msgstr "每个帧都会发生缓慢的过程，导致帧速率持续较低。"
+msgstr "每一帧都发生的缓慢过程,导致持续的低帧率."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:41
 msgid ""
 "An intermittent process that causes \"spikes\" of slowness, leading to "
 "stalls."
-msgstr "一个断断续续的过程，造成缓慢的到达\"巅峰\"，导致停滞不前。"
+msgstr "一个断断续续的过程,造成缓慢的到达\"巅峰\",导致停滞不前."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:43
 msgid ""
 "A slow process that occurs outside of normal gameplay, for instance, when "
 "loading a level."
-msgstr "在正常游戏之外发生的缓慢进程，例如加载关卡时。"
+msgstr "在正常游戏之外发生的缓慢进程,例如加载关卡时."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:46
 msgid "Each of these are annoying to the user, but in different ways."
-msgstr "每一种都会给用户带来烦恼，但方式不同。"
+msgstr "每一种都会给用户带来烦恼,但方式不同."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:49
-#, fuzzy
 msgid "Measuring performance"
-msgstr "灯光性能"
+msgstr "测量性能"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:51
 msgid ""
@@ -125,24 +119,24 @@ msgid ""
 "performance - to identify where bottlenecks are, and to measure the success "
 "of our attempts to speed them up."
 msgstr ""
-"对于优化来说，最重要的工具可能是衡量性能的能力--找出瓶颈所在，并衡量我们突破"
-"瓶颈的尝试是否成功。"
+"对于优化来说,最重要的工具可能是衡量性能的能力--找出瓶颈所在,并衡量我们突破瓶"
+"颈的尝试是否成功."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:55
 msgid "There are several methods of measuring performance, including:"
-msgstr "有几种衡量性能的方法，包括："
+msgstr "有几种衡量性能的方法,包括:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:57
 msgid "Putting a start/stop timer around code of interest."
-msgstr "在感兴趣的代码周围放置一个 开启/停止 的计时器。"
+msgstr "在感兴趣的代码周围放置一个 开启/停止 的计时器."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:58
 msgid "Using the Godot profiler."
-msgstr "使用Godot分析器。"
+msgstr "使用Godot分析器."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:59
 msgid "Using external third-party CPU profilers."
-msgstr "使用外部第三方CPU分析器。"
+msgstr "使用外部第三方CPU分析器."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:60
 msgid ""
@@ -150,12 +144,12 @@ msgid ""
 "developer.nvidia.com/nsight-graphics>`__ or `apitrace <https://apitrace."
 "github.io/>`__."
 msgstr ""
-"使用GPU分析器和调试器，如 `NVIDIA Nsight Graphics <https://developer.nvidia."
-"com/nsight-graphics>`__ 或 `apitrace <https://apitrace.github.io/>`__ 。"
+"使用GPU分析器和调试器,如 `NVIDIA Nsight Graphics <https://developer.nvidia."
+"com/nsight-graphics>`__ 或 `apitrace <https://apitrace.github.io/>`__ ."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:63
 msgid "Checking the frame rate (with V-Sync disabled)."
-msgstr "检查帧速率(禁用垂直同步)。"
+msgstr "检查帧速率(禁用垂直同步)."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:65
 msgid ""
@@ -163,8 +157,8 @@ msgid ""
 "different hardware. It's often a good idea to measure timings on more than "
 "one device. This is especially the case if you're targeting mobile devices."
 msgstr ""
-"要非常清楚，不同区域的相对性能在不同的硬件上会有所不同。在一个以上的设备上测"
-"量计时通常是个好主意。如果你的目标是移动设备，情况尤其如此。"
+"要非常清楚,不同区域的相对性能在不同的硬件上会有所不同.在一个以上的设备上测量"
+"计时通常是个好主意.如果你的目标是移动设备,情况尤其如此."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:70
 msgid "Limitations"
@@ -174,13 +168,13 @@ msgstr "限制"
 msgid ""
 "CPU profilers are often the go-to method for measuring performance. However, "
 "they don't always tell the whole story."
-msgstr "CPU分析器通常是测量性能的常用方法。然而，它们并不总是能反映全部情况。"
+msgstr "CPU分析器通常是测量性能的常用方法.然而,它们并不总是能反映全部情况."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:75
 msgid ""
 "Bottlenecks are often on the GPU, \"as a result\" of instructions given by "
 "the CPU."
-msgstr "瓶颈往往在GPU上，\"由于\"CPU给出的指令。"
+msgstr "瓶颈往往在GPU上,\"由于\"CPU给出的指令."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:77
 msgid ""
@@ -188,31 +182,30 @@ msgid ""
 "result\" of instructions used in Godot (for example, dynamic memory "
 "allocation)."
 msgstr ""
-"由于在Godot中使用的指令（例如，动态内存分配）\"导致\"操作系统进程（在Godot之"
-"外）可能出现巅峰。"
+"由于在Godot中使用的指令(例如,动态内存分配)\"导致\"操作系统进程(在Godot之外)可"
+"能出现巅峰."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:79
 msgid ""
 "You may not always be able to profile specific devices like a mobile phone "
 "due to the initial setup required."
-msgstr "由于需要进行初始设置，您可能并不总是能够对特定设备进行配置，例如手机。"
+msgstr "由于需要进行初始设置,您可能并不总是能够对特定设备进行配置,例如手机."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:81
 msgid ""
 "You may have to solve performance problems that occur on hardware you don't "
 "have access to."
-msgstr "您可能需要解决您无法访问的硬件上出现的性能问题。"
+msgstr "您可能需要解决您无法访问的硬件上出现的性能问题."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:84
 msgid ""
 "As a result of these limitations, you often need to use detective work to "
 "find out where bottlenecks are."
-msgstr "由于这些限制，你经常需要使用侦测工作来找出瓶颈所在。"
+msgstr "由于这些限制,你经常需要使用侦测工作来找出瓶颈所在."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:88
-#, fuzzy
 msgid "Detective work"
-msgstr "检测3D"
+msgstr "侦查工作"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:90
 msgid ""
@@ -220,38 +213,36 @@ msgid ""
 "performance, and also in terms of bug fixing). This can include hypothesis "
 "testing, and binary search."
 msgstr ""
-"侦测工作对于开发人员来说是一项至关重要的技能（无论是在性能方面，还是在错误修"
-"复方面）。这可以包括假设测试和二进制搜索。"
+"侦测工作对于开发人员来说是一项至关重要的技能(无论是在性能方面,还是在错误修复"
+"方面).这可以包括假设测试和二进制搜索."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:95
-#, fuzzy
 msgid "Hypothesis testing"
-msgstr "测试"
+msgstr "假设检验"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:97
 msgid ""
 "Say, for example, that you believe sprites are slowing down your game. You "
 "can test this hypothesis by:"
-msgstr "比如说，你认为精灵使你的游戏速度变慢。可以通过以下方式来验证这个假设："
+msgstr "比如说,你认为精灵使你的游戏速度变慢.可以通过以下方式来验证这个假设:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:100
 msgid "Measuring the performance when you add more sprites, or take some away."
-msgstr "当你添加更多的精灵或移除一些精灵时，测量其性能。"
+msgstr "当你添加更多的精灵或移除一些精灵时,测量其性能."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:102
 msgid ""
 "This may lead to a further hypothesis: does the size of the sprite determine "
 "the performance drop?"
-msgstr "这可能会引出一个进一步的假设：精灵的大小是否决定了性能的下降？"
+msgstr "这可能会引出一个进一步的假设:精灵的大小是否决定了性能的下降？"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:105
 msgid ""
 "You can test this by keeping everything the same, but changing the sprite "
 "size, and measuring performance."
-msgstr "你可以通过保持一切不变，但改变精灵的大小，并测量性能来进行测试。"
+msgstr "你可以通过保持一切不变,但改变精灵的大小,并测量性能来进行测试."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:109
-#, fuzzy
 msgid "Binary search"
 msgstr "二分查找"
 
@@ -262,20 +253,19 @@ msgid ""
 "approximately half the routines that occur on a normal frame. Has the "
 "performance improved more or less than expected?"
 msgstr ""
-"如果你知道帧的时间比它们应该的时间长得多，但你不确定瓶颈在哪里。你可以先注释"
-"掉正常帧上发生的大约一半例程，测量性能的提升比预期的多还是少？"
+"如果你知道帧的时间比它们应该的时间长得多,但你不确定瓶颈在哪里.你可以先注释掉"
+"正常帧上发生的大约一半例程,测量性能的提升比预期的多还是少？"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:116
 msgid ""
 "Once you know which of the two halves contains the bottleneck, you can "
 "repeat this process until you've pinned down the problematic area."
 msgstr ""
-"一旦你知道两半中的哪一半包含瓶颈，你可以重复这个过程，直到你确定问题区域。"
+"一旦你知道两半中的哪一半包含瓶颈,你可以重复这个过程,直到你确定问题区域."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:120
-#, fuzzy
 msgid "Profilers"
-msgstr "性能分析器"
+msgstr "分析器"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:122
 msgid ""
@@ -283,8 +273,8 @@ msgid ""
 "provide results telling you what percentage of time was spent in different "
 "functions and areas, and how often functions were called."
 msgstr ""
-"分析器允许你在运行程序时对其进行计时。然后，分析器提供结果，告诉你在不同的功"
-"能和区域所花费的时间百分比，以及功能被调用的频率。"
+"分析器允许你在运行程序时对其进行计时.然后,分析器提供结果,告诉你在不同的功能和"
+"区域所花费的时间百分比,以及功能被调用的频率."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:126
 msgid ""
@@ -293,23 +283,22 @@ msgid ""
 "backfire and lead to slower performance. **Always use profiling and timing "
 "to guide your efforts.**"
 msgstr ""
-"这对于确定瓶颈和衡量改进的结果都非常有用。有时，改善性能的尝试可能会适得其"
-"反，导致性能变慢。**始终使用分析器和时长来指导您的工作**"
+"这对于确定瓶颈和衡量改进的结果都非常有用.有时,改善性能的尝试可能会适得其反,导"
+"致性能变慢.**始终使用分析器和时长来指导您的工作**"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:131
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
 "`doc_debugger_panel`."
-msgstr "有关使用Godot内置分析器的更多信息，请参阅：:ref:`doc_debugger_panel`。"
+msgstr "有关使用Godot内置分析器的更多信息,请参阅: :ref:`doc_debugger_panel`."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:134
-#, fuzzy
 msgid "Principles"
 msgstr "原则"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:136
 msgid "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ said:"
-msgstr "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ 说："
+msgstr "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ 说:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:138
 msgid ""
@@ -320,13 +309,13 @@ msgid ""
 "about 97% of the time: premature optimization is the root of all evil. Yet "
 "we should not pass up our opportunities in that critical 3%.*"
 msgstr ""
-"*程序员浪费了大量的时间去考虑或者担心程序中非关键部分的速度，如果考虑到调试和"
-"维护，这些提高效率的尝试实际上会产生强烈的负面影响。我们应该忘掉小效率，比如"
-"说97%左右的时间：过早的优化是万恶之源。然而不应该放弃那关键的3%的机会*"
+"*程序员浪费了大量的时间去考虑或者担心程序中非关键部分的速度,如果考虑到调试和"
+"维护,这些提高效率的尝试实际上会产生强烈的负面影响.我们应该忘掉小效率,比如说"
+"97%左右的时间:过早的优化是万恶之源.然而不应该放弃那关键的3%的机会*"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:145
 msgid "The messages are very important:"
-msgstr "这些消息非常重要："
+msgstr "这些消息非常重要:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:147
 msgid ""
@@ -334,8 +323,8 @@ msgid ""
 "of a program, we should concentrate our efforts on the aspects that really "
 "matter."
 msgstr ""
-"开发者的时间是有限的。与其盲目地试图加快一个程序的所有方面，应该集中精力在真"
-"正重要的方面。"
+"开发者的时间是有限的.与其盲目地试图加快一个程序的所有方面,应该集中精力在真正"
+"重要的方面."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:150
 msgid ""
@@ -343,8 +332,8 @@ msgid ""
 "debug than non-optimized code. It is in our interests to limit this to areas "
 "that will really benefit."
 msgstr ""
-"在优化方面的努力，最终往往会得到比非优化代码更难阅读和调试的代码。将这种情况"
-"限制在真正受益的领域更符合我们的利益。"
+"在优化方面的努力,最终往往会得到比非优化代码更难阅读和调试的代码.将这种情况限"
+"制在真正受益的领域更符合我们的利益."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:154
 msgid ""
@@ -352,8 +341,8 @@ msgid ""
 "necessarily mean that we *should*. Knowing when and when not to optimize is "
 "a great skill to develop."
 msgstr ""
-"仅仅因为我们 *可以* 优化某段代码，并不一定意味着 *应该* 。知道什么时候优化，"
-"什么时候不优化，是一项更好的技能。"
+"仅仅因为我们 *可以* 优化某段代码,并不一定意味着 *应该* .知道什么时候优化,什么"
+"时候不优化,是一项更好的技能."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:158
 msgid ""
@@ -362,13 +351,12 @@ msgid ""
 "*premature* optimization is (by definition) undesirable, performant software "
 "is the result of performant design."
 msgstr ""
-"这句话有一个误导性的地方，就是人们往往把注意力集中在 *\"过早的优化是万恶之源 "
-"\"* 这句话上。虽然过早的优化是不可取的，但高性能的软件是高性能设计的结果。"
+"这句话有一个误导性的地方,就是人们往往把注意力集中在 *\"过早的优化是万恶之源 "
+"\"* 这句话上.虽然过早的优化是不可取的,但高性能的软件是高性能设计的结果."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:164
-#, fuzzy
 msgid "Performant design"
-msgstr "性能"
+msgstr "高性能的设计"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:166
 msgid ""
@@ -379,10 +367,10 @@ msgid ""
 "polishing the details later will make it run fast. It may run *faster*, but "
 "it will never run as fast as a program designed for performance."
 msgstr ""
-"鼓励人们在必要时忽略优化的危险在于，它很方便地忽略了考虑性能的最重要时间是在"
-"设计阶段，甚至在一个键碰到键盘之前。如果一个程序的设计或算法是低效的，那么以"
-"后再多的细节修饰也不会使它运行得很快。它可能运行得更快，但永远不会像为性能而"
-"设计的程序那样快。"
+"鼓励人们在必要时忽略优化的危险在于,它很方便地忽略了考虑性能的最重要时间是在设"
+"计阶段,甚至在一个键碰到键盘之前.如果一个程序的设计或算法是低效的,那么以后再多"
+"的细节修饰也不会使它运行得很快.它可能运行得更快,但永远不会像为性能而设计的程"
+"序那样快."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:173
 msgid ""
@@ -391,16 +379,14 @@ msgid ""
 "optimization, will often run many times faster than a mediocre design with "
 "low-level optimization."
 msgstr ""
-"这在游戏或图形编程中往往比在一般编程中更为重要。一个高性能的设计，即使没有低"
-"水平的优化，通常也会比一个低水平优化的平庸设计快很多倍。"
+"这在游戏或图形编程中往往比在一般编程中更为重要.一个高性能的设计,即使没有低水"
+"平的优化,通常也会比一个低水平优化的平庸设计快很多倍."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:179
-#, fuzzy
 msgid "Incremental design"
-msgstr "增量更新/补丁"
+msgstr "渐进式设计"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:181
-#, fuzzy
 msgid ""
 "Of course, in practice, unless you have prior knowledge, you are unlikely to "
 "come up with the best design the first time. Instead, you'll often make a "
@@ -410,13 +396,12 @@ msgid ""
 "have finalized the overall design. Otherwise, much of your work will be "
 "thrown out."
 msgstr ""
-"当然，在实践中，除非你有事先的知识，否则你不太可能在第一次就想出最好的设计。"
-"相反，你通常会为特定的代码区域创建一系列版本，每个版本都采用不同的方法来解决"
-"问题，直到你得到满意的解决方案。在完成总体设计之前，不要在细节上花费太多时"
-"间，这一点很重要。否则，你的大部分工作将被淘汰。"
+"当然,在实践中,除非你事先有知识,否则你不可能在第一次就拿出最好的设计.相反,你往"
+"往会对某一特定区域的代码做出一系列版本,每一个版本都采取不同的方法来解决这个问"
+"题,直到你得出一个满意的解决方案.重要的是,在你最终确定整体设计之前,在这个阶段"
+"不要在细节上花费太多时间.否则,你的很多工作都会被淘汰."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:188
-#, fuzzy
 msgid ""
 "It's difficult to give general guidelines for performant design because this "
 "is so dependent on the problem. One point worth mentioning though, on the "
@@ -425,14 +410,13 @@ msgid ""
 "designing data structures and algorithms for *cache locality* of data and "
 "linear access, rather than jumping around in memory."
 msgstr ""
-"很难给出性能设计的一般准则，因为这是如此依赖于问题。不过，值得一提的一点是，"
-"在CPU方面，现代CPU几乎总是受到内存带宽的限制。这导致了面向数据设计的复兴，它"
-"涉及到为数据的“缓存局部性”和线性访问设计数据结构和算法，而不是在内存中跳跃。"
+"很难给出高性能设计的一般准则,因为这与问题有很大关系.不过有一点值得一提,在CPU"
+"方面,现代CPU几乎总是受到内存带宽的限制.这导致了面向数据的设计的重新兴起,这涉"
+"及到设计数据结构和算法以实现数据的 *缓存定位* 和线性访问,而不是在内存中跳跃."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:196
-#, fuzzy
 msgid "The optimization process"
-msgstr "优化"
+msgstr "优化过程"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:198
 msgid ""
@@ -440,51 +424,46 @@ msgid ""
 "first step in optimization should be to identify the biggest bottlenecks - "
 "the slowest functions, the low-hanging fruit."
 msgstr ""
-"假设我们有一个合理的设计，听取Knuth的教训，优化的第一步应该是找出最大的瓶颈--"
-"最慢的功能，可轻松实现的目标。"
+"假设我们有一个合理的设计,听取Knuth的教训,优化的第一步应该是找出最大的瓶颈--最"
+"慢的功能,可轻松实现的目标."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:202
-#, fuzzy
 msgid ""
 "Once we've successfully improved the speed of the slowest area, it may no "
 "longer be the bottleneck. So we should test/profile again and find the next "
 "bottleneck on which to focus."
 msgstr ""
-"一旦我们成功地提高了最慢区域的速度，它可能不再是瓶颈。因此，我们应该再次测试/"
-"分析，并找到下一个需要关注的瓶颈。"
+"一旦我们成功地提高了最慢区域的速度,它可能就不再是瓶颈了.因此,我们应该再次进行"
+"测试/分析,找到下一个需要关注的瓶颈."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:206
-#, fuzzy
 msgid "The process is thus:"
-msgstr "原因是:"
+msgstr "因此,该过程是:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:208
-#, fuzzy
 msgid "Profile / Identify bottleneck."
-msgstr "资料/确定瓶颈。"
+msgstr "分析和确定瓶颈."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:209
 msgid "Optimize bottleneck."
-msgstr "优化瓶颈。"
+msgstr "优化瓶颈."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:210
 msgid "Return to step 1."
-msgstr "返回步骤1。"
+msgstr "返回步骤1."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:213
-#, fuzzy
 msgid "Optimizing bottlenecks"
-msgstr "优化APK大小"
+msgstr "优化瓶颈"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:215
 msgid ""
 "Some profilers will even tell you which part of a function (which data "
 "accesses, calculations) are slowing things down."
 msgstr ""
-"有些分析器甚至会告诉你一个函数的哪个部分在减慢速度（哪些数据访问、计算）。"
+"有些分析器甚至会告诉你一个函数的哪个部分在减慢速度(哪些数据访问、计算)."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:218
-#, fuzzy
 msgid ""
 "As with design, you should concentrate your efforts first on making sure the "
 "algorithms and data structures are the best they can be. Data access should "
@@ -495,11 +474,11 @@ msgid ""
 "containing precalculated data or simply by storing the results of complex "
 "calculations into a script constant and reading its value."
 msgstr ""
-"与设计一样，你应该首先集中精力确保算法和数据结构是最好的。数据访问应该是本地"
-"的（以充分利用CPU缓存），而使用紧凑的数据存储通常更好（同样，总是根据测试结果"
-"进行配置）。通常，你会提前计算繁重的计算。这可以通过在加载级别时执行计算、加"
-"载包含预计算数据的文件或简单地将复杂计算的结果存储到脚本常量中并读取其值来实"
-"现。"
+"与设计一样,你应该首先集中精力确保算法和数据结构是最好的.数据访问应该是局部的"
+"(以最好地利用CPU缓存),而且使用紧凑的数据存储通常会更好(同样,总是对测试结果进"
+"行分析).通常情况下,你会提前预计算繁重的计算.这可以通过在加载关卡时执行计算、"
+"加载包含预计算数据的文件或简单地将复杂的计算结果存储到脚本常量中并读取其值来"
+"实现."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:227
 msgid ""
@@ -509,9 +488,9 @@ msgid ""
 "nested loops. (This should be feasible if you know a 2D array's width or "
 "height in advance.)"
 msgstr ""
-"一旦算法和数据良好，可以经常在例程中做一些小的改变来提高性能。例如，可以将一"
-"些计算移到循环之外，或者将嵌套的 \"for\" 循环转化为非嵌套的循环。如果你事先知"
-"道一个2D数组的宽度或高度，这应该是可行的。"
+"一旦算法和数据良好,可以经常在例程中做一些小的改变来提高性能.例如,可以将一些计"
+"算移到循环之外,或者将嵌套的 \"for\" 循环转化为非嵌套的循环.如果你事先知道一个"
+"2D数组的宽度或高度,这应该是可行的."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:232
 msgid ""
@@ -520,17 +499,15 @@ msgid ""
 "positive effect will be outweighed by the negatives of more complex code, "
 "and you may choose to leave out that optimization."
 msgstr ""
-"每次更改后，一定要重新测试您的时长和瓶颈。有些改变会提高速度，有些则可能会产"
-"生负面效果。有时，一个小的积极效果会被更复杂的代码的负面效果所抵消，可以选择"
-"不做这种优化。"
+"每次更改后,一定要重新测试您的时长和瓶颈.有些改变会提高速度,有些则可能会产生负"
+"面效果.有时,一个小的积极效果会被更复杂的代码的负面效果所抵消,可以选择不做这种"
+"优化."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:238
-#, fuzzy
 msgid "Appendix"
 msgstr "附录"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:241
-#, fuzzy
 msgid "Bottleneck math"
 msgstr "瓶颈数学"
 
@@ -541,32 +518,30 @@ msgid ""
 "time in function ``A``, then optimizing ``A`` can have a massive effect on "
 "performance."
 msgstr ""
-"谚语 *\"一条链子的强度取决于其最薄弱的环节 \"* 直接适用于性能优化。如果你的项"
-"目90%的时间都花在功能 ``A`` 上，那么优化 ``A`` 就会对性能产生巨大影响。"
+"谚语 *\"一条链子的强度取决于其最薄弱的环节 \"* 直接适用于性能优化.如果你的项"
+"目90%的时间都花在功能 ``A`` 上,那么优化 ``A`` 就会对性能产生巨大影响."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:259
 msgid ""
 "In this example, improving this bottleneck ``A`` by a factor of 9× decreases "
 "overall frame time by 5× while increasing frames per second by 5×."
 msgstr ""
-"在这个例子中，将这个瓶颈 ``A`` 改进9倍，总体帧时间减少5倍，同时每秒帧数增加5"
-"倍。"
+"在这个例子中,将这个瓶颈 ``A`` 改进9倍,总体帧时间减少5倍,同时每秒帧数增加5倍."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:262
 msgid ""
 "However, if something else is running slowly and also bottlenecking your "
 "project, then the same improvement can lead to less dramatic gains:"
 msgstr ""
-"但是，如果其他东西运行缓慢，也给你的项目带来了瓶颈，那么同样的改进只会带来不"
-"那么显著的收益:"
+"但是,如果其他东西运行缓慢,也给你的项目带来了瓶颈,那么同样的改进只会带来不那么"
+"显著的收益:"
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:277
 msgid ""
 "In this example, even though we have hugely optimized function ``A``, the "
 "actual gain in terms of frame rate is quite small."
 msgstr ""
-"在这个例子中，尽管我们对函数 ``A`` 进行了大量的优化，但实际的帧率收益却相当"
-"小。"
+"在这个例子中,尽管我们对函数 ``A`` 进行了大量的优化,但实际的帧率收益却相当小."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:280
 msgid ""
@@ -574,13 +549,12 @@ msgid ""
 "independently of one another. Your total frame time is determined by the "
 "slower of the two."
 msgstr ""
-"在游戏中，事情变得更加复杂，因为CPU和GPU彼此独立运行。你的总帧时间是由两者中"
-"较慢的那一个决定的。"
+"在游戏中,事情变得更加复杂,因为CPU和GPU彼此独立运行.你的总帧时间是由两者中较慢"
+"的那一个决定的."
 
 #: ../../docs/tutorials/optimization/general_optimization.rst:296
 msgid ""
 "In this example, we optimized the CPU hugely again, but the frame time "
 "didn't improve because we are GPU-bottlenecked."
 msgstr ""
-"在这个例子中，我们又对CPU进行了大量的优化，但是帧数并没有提高，因为是GPU瓶"
-"颈。"
+"在这个例子中,我们又对CPU进行了大量的优化,但是帧数并没有提高,因为是GPU瓶颈."

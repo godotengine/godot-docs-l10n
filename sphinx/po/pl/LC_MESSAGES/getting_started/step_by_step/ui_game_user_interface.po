@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design the GUI"
 msgstr "Tworzenie GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -68,7 +67,6 @@ msgstr ""
 "wykonaniu kroków z tego samouczka."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
-#, fuzzy
 msgid ""
 "You can watch this tutorial as a `video on YouTube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
@@ -97,7 +95,6 @@ msgstr "Pasek życia i energii"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and emerald counters on the right"
 msgstr "Liczniki bomby i rupii znajdują się po prawej stronie"
 
@@ -112,7 +109,6 @@ msgid "The life and energy bars on the left"
 msgstr "Po lewej stronie paska życia i energii"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -192,6 +188,11 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"Po wybraniu ``MarginContainer`` skieruj się do inspektora i przejdź do "
+"sekcji niestandardowych stałych. Rozwiń ją i kliknij pole obok każdej z "
+"właściwości ``Margin``. Ustawić wszystkie na ``20`` pikseli. Następnie "
+"należy dodać węzeł ``HBoxContainer``. Ten będzie zawierał dwa paski po lewej "
+"stronie i oddzielał je od dwóch liczników po prawej stronie."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 #, fuzzy
@@ -341,6 +342,8 @@ msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
+"Używając węzła Background jako rodzica dwóch tekstur, odbieramy kontrolę nad "
+"obszarem Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
 msgid ""
@@ -826,9 +829,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The emerald counter should look something like this"
-msgstr "Twoja ostatnia scena powinna wyglądać tak."
+msgstr "Twoja ostatnia scena powinna wyglądać tak"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"

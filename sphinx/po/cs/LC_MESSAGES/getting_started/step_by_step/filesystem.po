@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "Souborový systém"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:7
 msgid "Introduction"
@@ -32,10 +32,14 @@ msgid ""
 "source files and assets while collaborating. Godot stores all assets as "
 "files in its file system."
 msgstr ""
+"Souborový systém řídí způsob ukládání jednotlivých položek a přístup k nim. "
+"Dobře navržený souborový systém také umožňuje upravovat stejné zdrojové "
+"soubory a zdroje při vzájemné spolupráci více vývojářů. Godot ukládá všechny "
+"zdroje jako soubory ve svém souborovém systému."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:15
 msgid "Implementation"
-msgstr ""
+msgstr "Implementace"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:17
 msgid ""
@@ -47,6 +51,12 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"Souborový systém ukládá zdroje na disk. Cokoli, od skriptu po scénu nebo "
+"obrázek PNG, je pro engine zdrojem. Pokud zdroj obsahuje vlastnosti, které "
+"odkazují na jiné zdroje na disku, jsou zahrnuty i cesty k těmto zdrojům. "
+"Pokud má zdroj zabudované dílčí zdroje, je uložen v jediném souboru spolu se "
+"všemi dílčími zdroji. Například zdroj písma je často poskytován společně s "
+"texturami písma."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:24
 msgid ""
@@ -54,14 +64,18 @@ msgid ""
 "and VCSs are better than anything we can implement, so Godot tries its best "
 "to play along with SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
+"Souborový systém Godot se vyhýbá používání metadatových souborů. Existující "
+"správci položek a systémy pro správu verzí jsou lepší než cokoli, co můžeme "
+"implementovat, takže se Godot snaží co nejlépe spolupracovat se systémy SVN, "
+"Git, Mercurial, Perforce atd."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:28
 msgid "Example of file system contents:"
-msgstr ""
+msgstr "Příklad obsahu souborového systému:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:39
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:41
 msgid ""
@@ -69,6 +83,10 @@ msgid ""
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Soubor ``project.godot`` je soubor s popisem projektu a nachází se vždy v "
+"kořenovém adresáři projektu. Ve skutečnosti jeho umístění určuje, kde se "
+"kořenový adresář nachází. Je to ten první soubor, který Godot hledá při "
+"otevírání projektu."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:45
 msgid ""
@@ -76,10 +94,13 @@ msgid ""
 "ini format. Even an empty ``project.godot`` can function as a basic "
 "definition of a blank project."
 msgstr ""
+"Tento soubor obsahuje konfiguraci projektu v prostém textu ve formátu win."
+"ini. I prázdný soubor ``project.godot`` může fungovat jako základní definice "
+"prázdného projektu."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:50
 msgid "Path delimiter"
-msgstr ""
+msgstr "Oddělovač cesty"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -88,10 +109,14 @@ msgid ""
 "``C:\\project\\project.godot`` needs to be typed as ``C:/project/project."
 "godot``."
 msgstr ""
+"Godot podporuje jako oddělovač cest pouze ``/``. Děje se tak z důvodu "
+"přenositelnosti. Všechny operační systémy to podporují, dokonce i Windows, "
+"takže cesta jako ``C:\\project\\project.godot`` musí být zadána jako ``C:/"
+"project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:58
 msgid "Resource path"
-msgstr ""
+msgstr "Cesta ke zdroji"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:60
 msgid ""
@@ -99,12 +124,17 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Při přístupu k zdrojům může být použití souborového systému hostitelského "
+"operačního systému těžkopádné a nepřenosné. K vyřešení tohoto problému byla "
+"vytvořena speciální cesta ``res://``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:64
 msgid ""
 "The path ``res://`` will always point at the project root (where ``project."
 "godot`` is located, so ``res://project.godot`` is always valid)."
 msgstr ""
+"Cesta ``res://`` bude vždy ukazovat na kořen projektu (kde se nachází "
+"``project.godot``, takže ``res://project.godot`` platí vždy)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:68
 msgid ""
@@ -113,10 +143,14 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Tento souborový systém je určen pouze pro čtení a zápis při lokálním "
+"spuštění projektu z editoru. Při exportu nebo při spuštění na jiných "
+"zařízeních (např. telefonech nebo konzolích nebo při spuštění z DVD) se "
+"systém souborů povoluje pouze čtení a zápis již nebude možný."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:74
 msgid "User path"
-msgstr ""
+msgstr "Uživatelská cesta"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:76
 msgid ""
@@ -126,10 +160,15 @@ msgid ""
 "differently depending on the OS the project is running on. Local path "
 "resolution is further explained in :ref:`doc_data_paths`."
 msgstr ""
+"Zápis na disk je ovšem nutný pro úlohy, jako je ukládání stavu hry nebo "
+"stahování balíčků obsahu. Pro tento účel engine poskytuje speciální cestu "
+"``user://``, která je zapisovatelná vždy. Tato cesta se řeší různě v "
+"závislosti na operačním systému, na kterém projekt běží. Ošetření místní "
+"cesty je blíže vysvětleno v :ref:`doc_data_paths`."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid "Host file system"
-msgstr ""
+msgstr "Souborový systém hostitele"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:85
 msgid ""
@@ -138,10 +177,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot."
 msgstr ""
+"Alternativně lze použít také cesty hostitelského souborového systému, ale to "
+"se u vydaného produktu nedoporučuje, protože není zaručeno, že tyto cesty "
+"budou fungovat na všech platformách. Použití cest k hostitelskému "
+"souborovému systému však může být užitečné při psaní vývojových nástrojů v "
+"Godotu."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:91
 msgid "Drawbacks"
-msgstr ""
+msgstr "Nevýhody"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:93
 msgid ""
@@ -151,6 +195,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Tento jednoduchý návrh souborového systému má některé nevýhody. První "
+"problém spočívá v tom, že přesouvání položek (jejich přejmenování nebo "
+"přesun z jedné cesty do druhé v rámci projektu) naruší existující odkazy na "
+"tyto položeky. Tyto odkazy bude nutné znovu definovat tak, aby ukazovaly na "
+"nové umístění ."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -159,6 +208,10 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Chcete-li se tomuto vyhnout, provádějte všechny operace přesouvání, mazání a "
+"přejmenovávání v systému Godot v doku FileSystem. Nikdy nepřesouvejte zdroje "
+"vně Godot, jinak budete muset závislosti opravovat ručně (Godot to stejně "
+"zjistí a pomůže vám je opravit, ale proč se s tím trápit?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -169,6 +222,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Druhým důvodem je, že v systémech Windows a macOS se u názvů souborů a cest "
+"nerozlišují velká a malá písmena. Pokud vývojář pracující v hostitelském "
+"souborovém systému, který nerozlišuje velká a malá písmena, uloží aktivum "
+"jako ``myfile.PNG``, ale pak na něj odkáže jako ``myfile.png``, bude to "
+"fungovat dobře na jeho platformě, ale ne na jiných platformách, jako je "
+"Linux, Android atd. To se může týkat i exportovaných binárních souborů, "
+"které používají komprimovaný balíček pro uložení všech souborů."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:109
 msgid ""
@@ -176,3 +236,6 @@ msgid ""
 "files when working with Godot. One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Doporučujeme, aby váš tým při práci s Godotem jasně definoval pravidla pro "
+"pojmenování souborů. Jednoduchá a spolehlivá cesta je povolit pouze malá "
+"písmena v názvech souborů a cest."

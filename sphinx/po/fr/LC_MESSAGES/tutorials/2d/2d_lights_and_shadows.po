@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -369,19 +369,12 @@ msgstr ""
 "ref:`Éclairage <class_Light2D>`."
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
-#, fuzzy
 msgid ""
-"At the time of writing, 3.0 is the stable release version. The 3.1 "
-"development branch contains many changes to the animation system, so the "
-"animations in the demo will not be covered here. See :ref:"
-"`doc_introduction_animation` for more information."
+"The animations in the demo will not be covered here. See :ref:"
+"`doc_introduction_animation` for information on creating animations."
 msgstr ""
-"Au moment de la rédaction, 3.0 est la version stable. La branche de "
-"développement 3.1 contient de nombreuses modifications du système "
-"d’animation, dès lors les animations de la démo ne seront pas traitées ici. "
-"Voir :ref:`doc_introduction_2d_animation` pour plus d'informations."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:137
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:136
 msgid ""
 "Right now the scene should look too bright. This is because all three lights "
 "are adding color to the scene. This is why the demo uses a :ref:"
@@ -395,7 +388,7 @@ msgstr ""
 "ref:`CanvasModulate <class_CanvasModulate>` recouvre la fenêtre de "
 "visualisation par une couleur spécifique."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:141
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:140
 msgid ""
 "Add a :ref:`CanvasModulate <class_CanvasModulate>` to the scene and set its "
 "color to ``rgb(70, 70, 70)``. This will make the scene sufficiently dark to "
@@ -406,11 +399,11 @@ msgstr ""
 "suffisamment sombre pour que vous puissiez voir distinctement les effets des "
 "lumières."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:146
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:145
 msgid "Now we add the shadow casters."
 msgstr "Ajoutons maintenant les projecteurs d'ombres."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:148
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:147
 msgid ""
 "The demo uses a :ref:`Node <class_Node2D>` named \"casters\" to organize the "
 "shadow casters. Add a :ref:`Node2D <class_Node2D>` to the scene. It will be "
@@ -422,7 +415,7 @@ msgstr ""
 "à la scène. Il sera utilisé pour regrouper tous les projecteurs d'ombres. De "
 "cette façon, nous pouvons tous les afficher et les cacher en même temps."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:152
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:151
 msgid ""
 "Each shadow caster is made of a :ref:`Sprite <class_Sprite>`, with a :ref:"
 "`LightOccluder2D <class_LightOccluder2D>` child. For the demo the :ref:"
@@ -444,7 +437,7 @@ msgstr ""
 "qu'une boîte noire ; ce pourrait être une image de n'importe quel objet "
 "projetant l'ombre : un mur, un coffre magique, ou autre chose."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:159
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the "
 "occluder has. They hold an :ref:`OccluderPolygon2D "
@@ -459,7 +452,7 @@ msgstr ""
 "définissons ``Polygon`` à un carré. Les autres paramètres par défaut "
 "conviennent."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:165
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:164
 msgid ""
 "The first setting, ``Closed`` can be either ``on`` or ``off``. A closed "
 "polygon occludes light coming from all directions. An open polygon only "
@@ -469,7 +462,7 @@ msgstr ""
 "polygone fermé obstrue la lumière provenant de toutes les directions. Un "
 "polygone ouvert n'obstrue la lumière que depuis une direction"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:168
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:167
 msgid ""
 "``Cull Mode`` lets you select which direction gets culled. The default is "
 "``Disabled``, meaning the occluder will cast a shadow no matter which side "
@@ -487,7 +480,7 @@ msgstr ""
 "ligne se trouve à l'intérieur du polygone. Seules les lignes orientées vers "
 "l'extérieur projettent des ombres."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:172
 msgid ""
 "To illustrate the difference, here is an image of a :ref:`LightOccluder2D "
 "<class_LightOccluder2D>` with ``Closed`` set to ``off`` in the "
@@ -499,13 +492,13 @@ msgstr ""
 "ref:`OccluderPolygon2D <class_OccluderPolygon2D>` correspondant, de sorte "
 "que les lignes du polygone peuvent être vues :"
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:178
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
 msgstr ""
 "``Cull Mode`` est réglé sur ``Désactivé``. Les trois lignes projettent des "
 "ombres."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:183
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:182
 msgid ""
 "``Cull Mode`` is set to ``Clockwise``. Only the top and right lines cast "
 "shadows."
@@ -513,7 +506,7 @@ msgstr ""
 "``Cull Mode`` est réglé sur ``Clockwise``. Seules les lignes du haut et de "
 "droite projettent des ombres."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:187
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:186
 msgid ""
 "``Cull Mode`` is set to ``Counter-Clockwise``. Only the bottom line casts a "
 "shadow. If ``Closed`` was set to ``on`` there would be an additional "
@@ -523,7 +516,7 @@ msgstr ""
 "projette une ombre. Si ``Fermé`` était réglé sur ``Allumé``, il y aurait une "
 "ligne verticale supplémentaire à gauche qui projetterait également une ombre."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:191
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:190
 msgid ""
 "When you have added the :ref:`LightOccluder2Ds <class_LightOccluder2D>` the "
 "shadows still won't appear. You need to go back into the :ref:`Light2Ds "
@@ -536,7 +529,7 @@ msgstr ""
 "``Allumé``. Cela active les ombres à bords durs comme dans l'image ci-"
 "dessous."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:197
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:196
 msgid ""
 "To give the shadows that nice, soft edge look we set the variables "
 "``filter``, ``filter smooth``, and ``gradient length``. Godot supports "
@@ -556,7 +549,7 @@ msgstr ""
 "paraîtra douce, mais plus ce sera lent. C'est pourquoi Godot fournit 3-13 "
 "échantillons par défaut et vous permet de choisir. La démo utilise PCF7."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:206
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:205
 msgid ""
 "This is a shadow rendered with the demo's settings. ``gradient length`` is "
 "set to ``1.3``, ``filter smooth`` is set to ``11.1``, and ``filter`` is set "
@@ -566,7 +559,7 @@ msgstr ""
 "dégradé`` est défini sur ``1.3``, ``filtre lisse`` est défini sur ``11.1`` "
 "et ``filter`` est défini sur ``PCF7``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:211
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:210
 msgid ""
 "``filter`` is set to ``PCF13``. Notice how the shadow becomes wider, this is "
 "because the distance between samples is based on the variable ``filter "
@@ -576,7 +569,7 @@ msgstr ""
 "c'est parce que la distance entre les échantillons est basée sur la variable "
 "``filtre lisse``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:213
 msgid ""
 "In order to make use of filtering you need to set the ``filter smooth`` "
 "variable. This dictates how far apart the samples are. If you want the soft "
@@ -590,11 +583,11 @@ msgstr ""
 "lisse``. Cependant, avec peu d'échantillons et un grand filtre lisse, vous "
 "pouvez voir des lignes se former entre les échantillons."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:220
 msgid "``filter smooth`` is set to ``30``."
 msgstr "``filter smooth`` est réglé sur ``30``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:223
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:222
 msgid ""
 "The different :ref:`Light <class_Light2D>` nodes in the demo use different "
 "values for filter smooth. Play around with it and see what you like."
@@ -603,11 +596,11 @@ msgstr ""
 "valeurs différentes pour le filtre doux. Jouez avec et voyez ce que vous "
 "aimez."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:227
 msgid "``filter smooth`` is set to ``0``."
 msgstr "``filter smooth`` est réglé sur ``0``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:229
 msgid ""
 "Lastly, there is the variable ``gradient length``. For some smooth shadows "
 "it is preferable not to have the shadow start immediately on the object, as "
@@ -619,15 +612,15 @@ msgstr ""
 "cela produit un bord dur. La variable de longueur du dégradé crée un dégradé "
 "doux pour commencer l'ombre afin de réduire l'effet du bord dur."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:235
 msgid "``gradient length`` is set to ``0``."
 msgstr "``gradient length`` est réglé sur ``0``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:240
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:239
 msgid "``gradient length`` is set to ``10``."
 msgstr "``gradient length`` est réglé sur ``10``."
 
-#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
+#: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:241
 msgid ""
 "You will need to play around with the options a bit to find settings that "
 "suit your project. There is no right solution for everyone, which is why "

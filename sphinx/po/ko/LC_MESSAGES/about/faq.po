@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -493,16 +493,15 @@ msgstr ""
 "시 실행됩니다."
 
 #: ../../docs/about/faq.rst:195
-#, fuzzy
 msgid ""
 "Since Godot only has a few people working on its renderer, we would prefer "
 "having fewer rendering backends to maintain. On top of that, using a single "
 "API on all platforms allows for greater consistency with fewer platform-"
 "specific issues."
 msgstr ""
-"Godot는 렌더러에서 작업하는 사람이 적기 때문에 유지 관리 할 렌더링 백엔드가 "
-"더 적은 것을 선호합니다. 또한 모든 플랫폼에서 단일 API를 사용하면 플랫폼 별 "
-"문제를 줄이고 일관성을 높일 수 있습니다."
+"Godot는 렌더러 작업하는 사람이 적기 때문에, 유지 관리 할 렌더링 백엔드가 더 "
+"적은 것을 선호합니다. 또한 모든 플랫폼에서 단일 API를 사용하면서 플랫폼 별 문"
+"제를 줄이고 일관성을 높입니다."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -510,25 +509,27 @@ msgid ""
 "for the Xbox's purposes), but Vulkan and OpenGL will remain the default "
 "rendering backends on all platforms, including Windows."
 msgstr ""
-"장기적으로, 우리가 Direct3D 12 렌더러를 (주로 Xbox 용) 개발 가능성은 있지만, "
-"Vulkan 및 OpenGL은 Windows를 포함한 모든 플랫폼에서 기본 렌더링 백엔드로 남"
-"을 것입니다."
+"장기적으로, 우리가 Direct3D 12 렌더러를 (주로 Xbox 용) 개발할 가능성은 있지"
+"만, Vulkan 및 OpenGL은 Windows를 포함한 모든 플랫폼에서 기본 렌더링 백엔드로 "
+"남을 것입니다."
 
 #: ../../docs/about/faq.rst:205
 msgid "Why does Godot aim to keep its core feature set small?"
-msgstr ""
+msgstr "왜 Godot은 주요 특징을 작게 유지하려고 하나요?"
 
 #: ../../docs/about/faq.rst:207
+#, fuzzy
 msgid ""
 "Godot intentionally does not include features that can be implemented by add-"
-"ons unless they are used very often. One exemple of this would be advanced "
+"ons unless they are used very often. One example of this would be advanced "
 "artificial intelligence functionality."
 msgstr ""
+"Godot는 add-on으로 구현할 수 있는 기능들은, 아주 자주 쓰의지 않는 한, 의도적"
+"으로 포함하지 않습니다. 고급 인공 지능 같은 것이 좋은 예가 되겠지요."
 
 #: ../../docs/about/faq.rst:211
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "이렇게 하고 싶어하는 몇 가지 이유가 있습니다:"
+msgstr "이렇게 하려는 이유가 몇 가지 있습니다:"
 
 #: ../../docs/about/faq.rst:213
 msgid ""
@@ -540,6 +541,13 @@ msgid ""
 "never fixed. On top of that, the \"API surface\" that needs to be tested and "
 "checked for regressions keeps increasing over time."
 msgstr ""
+"** 코드 유지 보수 와 버그 관리** 매번 우리가 Godot 리포지터리(repository)에 "
+"새로운 코드를 받을 때마다, 그 코드의 contributors(기여자/참여자)는 종종 이것"
+"을 유지하는 책임을 집니다. 어떤 contributors은 그들이 제출한 코드가 merge된 "
+"뒤에는 계속 관심을 두지 않습니다. 그래서 이러한 경우 문제 있는 코드를 유지하"
+"는 것이 어려워 집니다. 이러한 상황은 기능들이 제대로 보수되지 않고 버그투성이"
+"인 상태로 남게 됩니다. 결국, 회귀를 위해 테스트하고 검사해야 하는 \"API "
+"surface\"는 시간이 흐름에 따라 계속 증가합니다."
 
 #: ../../docs/about/faq.rst:221
 msgid ""
@@ -548,6 +556,9 @@ msgid ""
 "contributors to get started with Godot, without requiring them to purchase "
 "high-end hardware."
 msgstr ""
+"**쉬운 기여하기.** 코드베이스를 작고 깨끗하게 유지함으로써, 전체 소스를 컴파"
+"일하는 것이 빠르고 쉽게 유지될 것입니다. 이것은 새로운 기여자들이 비싼 하드웨"
+"어없이도 Godot을 시작하기 쉽게 만들 것입니다."
 
 #: ../../docs/about/faq.rst:226
 msgid ""
@@ -556,6 +567,9 @@ msgid ""
 "extract it and run it in less than 5 minutes makes Godot more accessible to "
 "developers in all countries."
 msgstr ""
+"**편집기의 바이너리 크기를 작게 하기.** 모두가 빠른 인터넷 회선을 가지고 있"
+"지 않습니다. 아무라도 Godot 편집기를 5분안에 내려받고, 압축을 풀고, 실행할 "
+"수 있게 한다면, 전 세계의 개발자들이 Godot에 더 쉽게 접근할 것입니다."
 
 #: ../../docs/about/faq.rst:231
 msgid ""
@@ -566,6 +580,11 @@ msgid ""
 "high-speed Internet is not readily available. To add to this, strict data "
 "usage caps are often in effect in those countries."
 msgstr ""
+"**템플릿 내보내기를 위한 바이너리 크기를 작게하기.** 이것은 Godot에서 내보낸 "
+"프로젝트 크기에 영향을 끼칩니다. 모바일이나 웹 환경에서는, 파일 크기를 최소화"
+"하는 것이 성능이 낮은 기계에서 빠른 설치와 로딩에 도움을 줍니다. 다시 말하자"
+"면, 지구 상에는 고속 인터넷이 불가능한 나라가 아직 많습니다. 추가로, 이런 나"
+"라들에서는 데이터 사용량을 제한하는 것도 효과가 있습니다."
 
 #: ../../docs/about/faq.rst:238
 msgid ""
@@ -578,6 +597,12 @@ msgid ""
 "<doc_optimizing_for_size>` to optimize the distribution size of your "
 "project.)"
 msgstr ""
+"위의 모든 이유에 의해, 우리는 어떤 것을 Godot의 핵심 기능으로 넣을 지 선택해"
+"야만 합니다. 이것이 우리가 일부 핵심 기능들을 미래의 Godot버전에서 공식 지원 "
+"add-on으로 만들려는 이유입니다. 바이너리 크기면에서, 프로젝트에 실제 사용하"
+"는 것만을 포함하게 하는 장점이 있습니다. (그 동안, 프로젝트의 배포 크기를 최"
+"적화하기 위해 :ref:`사용하지 않는 기능을 비활성화하는 사용자 지정 내보내기 템"
+"플릿을 컴파일 <doc_optimizing_for_size>` 할 수 있습니다.)"
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -844,11 +869,43 @@ msgstr ""
 "스크린샷이나, 구체적인 값, 실험 사례, (가능하다면) 예제 프로젝트를 가져오면 "
 "추가 점수가 될 것입니다."
 
-#: ../../docs/about/faq.rst:359
+#: ../../docs/about/faq.rst:361
+#, fuzzy
+msgid "Is it possible to use Godot to create non-game applications?"
+msgstr "Godot는 라이브러리로서 사용될 수 있을까요?"
+
+#: ../../docs/about/faq.rst:363
+msgid ""
+"Yes! Godot features an extensive built-in UI system, and its small "
+"distribution size can make it a suitable alternative to frameworks like "
+"Electron or Qt."
+msgstr ""
+
+#: ../../docs/about/faq.rst:366
+msgid ""
+"When creating a non-game application, make sure to enable :ref:`low-"
+"processor mode <class_ProjectSettings_property_application/run/"
+"low_processor_mode>` in the Project Settings to decrease CPU and GPU usage."
+msgstr ""
+
+#: ../../docs/about/faq.rst:370
+msgid ""
+"That said, we wouldn't recommend using Godot to create a *mobile* "
+"application since low-processor mode isn't supported on mobile platforms yet."
+msgstr ""
+
+#: ../../docs/about/faq.rst:373
+msgid ""
+"Check out `Material Maker <https://github.com/RodZill4/material-maker>`__ "
+"and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
+"examples of open source applications made with Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:380
 msgid "Is it possible to use Godot as a library?"
 msgstr "Godot는 라이브러리로서 사용될 수 있을까요?"
 
-#: ../../docs/about/faq.rst:361
+#: ../../docs/about/faq.rst:382
 msgid ""
 "Godot is meant to be used with its editor. We recommend you give it a try, "
 "as it will most likely save you time in the long term. There are no plans to "
@@ -860,7 +917,7 @@ msgstr ""
 "할 수 있도록 만들 계획은 없습니다. 그러면 엔진의 다른 부분이 더 복잡해지고 일"
 "반 사용자가 사용기 어려워지기 때문입니다."
 
-#: ../../docs/about/faq.rst:366
+#: ../../docs/about/faq.rst:387
 msgid ""
 "If you want to use a rendering library, look into using an established "
 "rendering engine instead. Keep in mind rendering engines usually have "
@@ -871,11 +928,41 @@ msgstr ""
 "려하십시오. 대부분의 렌더링 엔진은 Godot에 비해 커뮤니티가 작다는 점을 명심하"
 "십시오. 그곳에서 질문에 대한 답을 찾기는 더 어려워 질 것입니다."
 
-#: ../../docs/about/faq.rst:372
+#: ../../docs/about/faq.rst:393
+msgid "What user interface toolkit does Godot use?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:395
+msgid ""
+"Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
+"like GTK, Qt or wxWidgets. Instead, Godot uses its own user interface "
+"toolkit, rendered using OpenGL ES or Vulkan. This toolkit is exposed in the "
+"form of Control nodes, which are used to render the editor (which is written "
+"in C++). These Control nodes can also be used in projects from any scripting "
+"language supported by Godot."
+msgstr ""
+
+#: ../../docs/about/faq.rst:402
+msgid ""
+"This custom toolkit makes it possible to benefit from hardware acceleration "
+"and have a consistent appearance across all platforms. On top of that, it "
+"doesn't have to deal with the LGPL licensing caveats that come with GTK or "
+"Qt. Lastly, this means Godot is \"eating its own dog food\" since the editor "
+"itself is one of the most complex users of Godot's UI system."
+msgstr ""
+
+#: ../../docs/about/faq.rst:408
+msgid ""
+"This custom UI toolkit :ref:`can't be used as a library "
+"<doc_faq_use_godot_as_library>`, but you can still :ref:`use Godot to create "
+"non-game applications by using the editor <doc_faq_non_game_applications>`."
+msgstr ""
+
+#: ../../docs/about/faq.rst:413
 msgid "Why does Godot not use STL (Standard Template Library)"
 msgstr "Godot가 STL (표준 템플릿 라이브러리)을 사용하지 않는 이유"
 
-#: ../../docs/about/faq.rst:374
+#: ../../docs/about/faq.rst:415
 msgid ""
 "Like many other libraries (Qt as an example), Godot does not make use of "
 "STL. We believe STL is a great general purpose library, but we had special "
@@ -885,30 +972,27 @@ msgstr ""
 "STL이 훌륭한 범용 라이브러리라고 생각하지만, Godot에게는 특별한 요구 사항이 "
 "있었습니다."
 
-#: ../../docs/about/faq.rst:378
-#, fuzzy
+#: ../../docs/about/faq.rst:419
 msgid ""
 "STL templates create very large symbols, which results in huge debug "
 "binaries. We use few templates with very short names instead."
 msgstr ""
-"STL 템플릿은 매우 큰 상징들을 만들고, 그것은 거대한 디버그 이진법을 초래합니"
-"다. 우리는 대신 매우 짧은 이름의 템플릿을 거의 사용하지 않습니다."
+"STL 템플릿은 매우 큰 심볼들을 만들어서, 결과적으로 거대한 디버그 바이너리를 "
+"만듭니다. 대신 우리는 매우 짧은 이름의 템플릿을 조금만 사용합니다."
 
-#: ../../docs/about/faq.rst:379
-#, fuzzy
+#: ../../docs/about/faq.rst:420
 msgid ""
 "Most of our containers cater to special needs, like Vector, which uses copy "
 "on write and we use to pass data around, or the RID system, which requires "
 "O(1) access time for performance. Likewise, our hash map implementations are "
 "designed to integrate seamlessly with internal engine types."
 msgstr ""
-"우리의 컨테이너 대부분은 이런 특수 목적에 맞춰졌습니다, 벡터의 경우는, 가상 "
-"메모리 쓰기 시 복사와 붙이기를 사용하고 데이터를 전달하는데 사용합니다, RID "
-"시스템의 경우, 성능을 위해 O(1) 접근 시간이 필요합니다. 마찬가지로 해시 맵 구"
-"현은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
+"우리의 컨테이너 대부분은 이런 특수 목적에 맞춰졌습니다. 벡터의 경우는, Copy-"
+"On-Write를 사용하고, 데이터를 전달하는데 사용합니다. RID 시스템의 경우, 성능"
+"을 위해 O(1) 접근 시간이 필요해서 벡터를 사용합니다. 마찬가지로 해시 맵 구현"
+"은 내부 엔진 유형과 부드럽게 통합하도록 설계되었습니다."
 
-#: ../../docs/about/faq.rst:380
-#, fuzzy
+#: ../../docs/about/faq.rst:421
 msgid ""
 "Our containers have memory tracking built-in, which helps better track "
 "memory usage."
@@ -916,7 +1000,7 @@ msgstr ""
 "컨테이너는 메모리 추적 기능이 내장되어 있어서, 메모리 사용량을 추적하는데 더 "
 "도움이 됩니다."
 
-#: ../../docs/about/faq.rst:381
+#: ../../docs/about/faq.rst:422
 msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
@@ -924,7 +1008,7 @@ msgstr ""
 "큰 배열의 경우, 풀(Pool)로 된 메모리를 사용합니다, 사전에 지정된 버퍼 메모리 "
 "혹은 가상 메모리에 매핑될 수 있습니다."
 
-#: ../../docs/about/faq.rst:382
+#: ../../docs/about/faq.rst:423
 msgid ""
 "We use our custom String type, as the one provided by STL is too basic and "
 "lacks proper internationalization support."
@@ -932,11 +1016,11 @@ msgstr ""
 "STL에서 제공하는 문자열 유형은 너무 단순하고 현지화 지원 기능이 부족해서 맞"
 "춤 문자열 유형을 사용합니다."
 
-#: ../../docs/about/faq.rst:385
+#: ../../docs/about/faq.rst:426
 msgid "Why does Godot not use exceptions?"
 msgstr "왜 Godot는 예외(Exception)를 사용하지 않나요?"
 
-#: ../../docs/about/faq.rst:387
+#: ../../docs/about/faq.rst:428
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "
 "situation happens, Godot will print an error (which can be traced even to "
@@ -947,17 +1031,17 @@ msgstr ""
 "태가 벌어지면, Godot은 오류를 작성합니다 (스크립트에서도 추적할 수 있습니"
 "다), 그런 다음 가능한 한 정상적으로 복구한 후 계속 진행합니다."
 
-#: ../../docs/about/faq.rst:392
+#: ../../docs/about/faq.rst:433
 msgid ""
 "Additionally, exceptions significantly increase binary size for the "
 "executable."
 msgstr "또한 예외는 실행 파일에서 이진 크기를 상당히 늘립니다."
 
-#: ../../docs/about/faq.rst:396
+#: ../../docs/about/faq.rst:437
 msgid "Why does Godot not enforce RTTI?"
 msgstr "왜 Godot는 런타임 유형 정보(RTTI)를 시행하지 않나요?"
 
-#: ../../docs/about/faq.rst:398
+#: ../../docs/about/faq.rst:439
 msgid ""
 "Godot provides its own type-casting system, which can optionally use RTTI "
 "internally. Disabling RTTI in Godot means considerably smaller binary sizes "
@@ -967,11 +1051,11 @@ msgstr ""
 "사용할 수 있습니다. Godot에서 런타임 유형 정보를 끄게 되면 약간의 성능 가격으"
 "로 상당히 작은 이진 크기를 얻을 수 있습니다."
 
-#: ../../docs/about/faq.rst:403
+#: ../../docs/about/faq.rst:444
 msgid "Why does Godot not force users to implement DoD (Data oriented Design)?"
 msgstr "Godot은 왜 DoD(데이터 지향 디자인) 구현을 강제하지 않습니까?"
 
-#: ../../docs/about/faq.rst:405
+#: ../../docs/about/faq.rst:446
 msgid ""
 "While Godot internally for a lot of the heavy performance tasks attempts to "
 "use cache coherency as well as possible, we believe most users don't really "
@@ -981,7 +1065,7 @@ msgstr ""
 "용하려 하지만, 우리는 대부분의 사용자가 DoD 관행을 따라야 할 필요가 없다고 생"
 "각합니다."
 
-#: ../../docs/about/faq.rst:409
+#: ../../docs/about/faq.rst:450
 msgid ""
 "DoD is mostly a cache coherency optimization that can only gain you "
 "significant performance improvements when dealing with dozens of thousands "
@@ -995,7 +1079,7 @@ msgstr ""
 "한다 하면, DoD는 도움이 되지 않습니다, 당신은 최적화에 있어서 다른 접근법을 "
 "생각해 봐야 하는 것이죠."
 
-#: ../../docs/about/faq.rst:416
+#: ../../docs/about/faq.rst:457
 msgid ""
 "The vast majority of games do not need this and Godot provides handy helpers "
 "to do the job for most cases when you do."
@@ -1003,7 +1087,7 @@ msgstr ""
 "대부분의 게임에는 필요하지 않을 테지만, Godot은 이런 작업의 대부분의 경우에 "
 "도움을 줄 편리한 도우미를 제공합니다."
 
-#: ../../docs/about/faq.rst:419
+#: ../../docs/about/faq.rst:460
 msgid ""
 "If a game that really needs to process such large amount of objects is "
 "needed, our recommendation is to use C++ and GDNative for the high "
@@ -1013,19 +1097,19 @@ msgstr ""
 "요한 부분은 C++과 GDNative 사용하고, 그 외 나머지 부분은 GDScript (혹은 C#)"
 "을 사용하는 것입니다."
 
-#: ../../docs/about/faq.rst:424
+#: ../../docs/about/faq.rst:465
 msgid "How can I support Godot development or contribute?"
 msgstr "어떻게 Godot 개발을 돕거나 후원할 수 있나요?"
 
-#: ../../docs/about/faq.rst:426
+#: ../../docs/about/faq.rst:467
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr ":ref:`doc_ways_to_contribute`\\ 를 참고하세요."
 
-#: ../../docs/about/faq.rst:429
+#: ../../docs/about/faq.rst:470
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Godot은 누가 만드나요? 제가 연락할 수 있을까요?"
 
-#: ../../docs/about/faq.rst:431
+#: ../../docs/about/faq.rst:472
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."

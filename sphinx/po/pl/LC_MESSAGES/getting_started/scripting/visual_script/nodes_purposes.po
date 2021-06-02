@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,6 +312,9 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
+"Możliwe jest również tworzenie własnych sygnałów w skrypcie i używanie ich. "
+"W tym celu wykonaj te same kroki, które wykonałeś dla zmiennych w poprzednim "
+"kroku, z wyjątkiem *Sygnałów*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 #, fuzzy
@@ -371,6 +374,10 @@ msgid ""
 "automatically), these are added without any \"contextual\" information, so "
 "this has to be done manually."
 msgstr ""
+"Każdy z nich można przeciągnąć na scenę. W odróżnieniu od węzłów (np. "
+"przeciągnięcie właściwości z inspektora ustawia automatycznie kontekst na "
+"edytowany węzeł) są one dodawane bez żadnych informacji \"kontekstowych\", "
+"więc należy to zrobić ręcznie."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:206
 msgid ""
@@ -391,6 +398,9 @@ msgid ""
 "time, can be useful as reference values. Most of the time they are integer "
 "or float."
 msgstr ""
+"Stałe węzły to węzły, posiadające wartości, które nie zmieniają się w czasie "
+"i do tego mogą być używane jako odniesienia. Najczęściej są to liczby "
+"całkowite lub zmiennoprzecinkowe."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
 #, fuzzy
@@ -514,7 +524,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Ten obiekt"
+msgstr "Pojedynczo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -526,7 +536,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "DrzewoSceny"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -670,7 +680,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "While"
+msgstr "Podczas"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
@@ -690,7 +700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "Wbudowany"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""

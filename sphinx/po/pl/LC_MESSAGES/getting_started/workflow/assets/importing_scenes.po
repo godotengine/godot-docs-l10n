@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -343,9 +343,8 @@ msgid "Root Scale"
 msgstr "Nazwa głównego węzła"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
-#, fuzzy
 msgid "The scale of the root node."
-msgstr "Rola skryptu"
+msgstr "Rola skryptu."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid "Custom Script"
@@ -452,6 +451,9 @@ msgid ""
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
+"Po edycji materiałów z wykorzystaniem funkcji Godota, importer będzie je "
+"przechowywał i ignorował te, które pochodzą ze sceny źródłowej. Opcja ta "
+"jest dostępna tylko wtedy, gdy materiały są zapisywane jako pliki."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "Meshes"
@@ -826,23 +828,20 @@ msgstr ""
 "trzeba zrobić po wyeksportowaniu jest taka sama:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:406
-#, fuzzy
 msgid "Adding collision detection to objects."
-msgstr "Dodanie wykrywania kolizji do obiektów:"
+msgstr "Dodanie wykrywania kolizji do obiektów."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:407
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Tryb nawigacji"
+msgstr "Tryb nawigacji."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:408
-#, fuzzy
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)."
 msgstr ""
 "Usuwanie węzłów, które nie są używane w silniku gry (np. specjalne światła "
-"używane do modelowania)"
+"używane do modelowania)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:410
 msgid ""
@@ -928,25 +927,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:459
-#, fuzzy
 msgid "Single arrow will create a :ref:`class_rayshape`."
-msgstr "Pojedyncza strzałka utworzy :ref:`class_rayshape`"
+msgstr "Pojedyncza strzałka utworzy :ref:`class_rayshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:460
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`."
-msgstr "Sześcian stworzy :ref:`class_boxshape`"
+msgstr "Sześcian stworzy :ref:`class_boxshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:461
-#, fuzzy
 msgid "Image will create a :ref:`class_planeshape`."
-msgstr "Obraz utworzy :ref:`class_planeshape`"
+msgstr "Obraz utworzy :ref:`class_planeshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:462
-#, fuzzy
 msgid ""
 "Sphere (and the others not listed) will create a :ref:`class_sphereshape`."
-msgstr "Kula (i inne nie wymienione obiekty) stworzą :ref:`class_sphereshape`"
+msgstr "Kula (i inne nie wymienione obiekty) stworzą :ref:`class_sphereshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:464
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
-"导出一个 ``.appx`` 包没有额外的要求，它可以作为Windows应用程序被安装，或提交"
-"到Windows应用商店。也可以在任何平台上，而不仅仅是从Windows上，导出UWP软件包。"
+"导出一个 ``.appx`` 包没有额外的要求,它可以作为Windows应用程序被安装,或提交到"
+"Windows应用商店.也可以在任何平台上,而不仅仅是从Windows上,导出UWP软件包."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -36,14 +36,14 @@ msgid ""
 "trusted signature. Godot supports automatic signing of packages with "
 "external tools."
 msgstr ""
-"但是，如果要安装并运行应用程序，则需要使用可信签名对其进行签名。目前，Godot不"
-"支持签名包，因此您需要使用外部工具来执行此操作。"
+"但是,如果要安装并运行应用程序,则需要使用可信签名对其进行签名.目前,Godot不支持"
+"签名包,因此您需要使用外部工具来执行此操作."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
-msgstr "此外，请确保导出包时，设置的发布者名称，与证书上使用的名称相匹配。"
+msgstr "此外,请确保导出包时,设置的发布者名称,与证书上使用的名称相匹配."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
@@ -55,7 +55,7 @@ msgid ""
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
 "如 `UWP文档 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
-"resource-allocation>`__ 中所述："
+"resource-allocation>`__ 中所述:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
@@ -71,15 +71,15 @@ msgstr "共享2-4个CPU核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr "共享GPU能力（45％）"
+msgstr "共享GPU能力(45％)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
-"提交为 ``游戏`` （通过 `Xbox Live创意者计划 <https://www.xbox.com/zh-CN/"
-"developers/creators-program>`__）"
+"提交为 ``游戏`` (通过 `Xbox Live创意者计划 <https://www.xbox.com/zh-CN/"
+"developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
@@ -91,13 +91,13 @@ msgstr "4个专用CPU内核和2个共享CPU内核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr "独享GPU能力（100％）"
+msgstr "独享GPU能力(100％)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
-msgstr "超过这些内存限制将导致分配失败，并且应用程序将崩溃。"
+msgstr "超过这些内存限制将导致分配失败,并且应用程序将崩溃."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
@@ -110,9 +110,9 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
-"这需要Windows SDK附带的 ``MakeCert.exe`` 和 ``Pvk2Pfx.exe`` 工具。如果您使用"
-"Visual Studio，则可以打开其中一个开发者命令提示符，因为它附带了这些工具，并且"
-"它们可以在路径中定位。"
+"这需要Windows SDK附带的 ``MakeCert.exe`` 和 ``Pvk2Pfx.exe`` 工具.如果您使用"
+"Visual Studio,则可以打开其中一个开发者命令提示符,因为它附带了这些工具,并且它"
+"们可以在路径中定位."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -121,31 +121,31 @@ msgid ""
 "aspx>`__."
 msgstr ""
 "您可以从 `Microsoft的文档 <https://msdn.microsoft.com/en-us/library/windows/"
-"desktop/jj835832(v=vs.85).aspx>`__ 获得更详细的说明。"
+"desktop/jj835832(v=vs.85).aspx>`__ 获得更详细的说明."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr "首先，运行 ``MakeCert`` 来创建私钥："
+msgstr "首先,运行 ``MakeCert`` 来创建私钥:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
-"其中 ``publisherName`` 匹配包的发布者名称，``expirationDate` `是 ``mm/dd/"
-"yyyy`` 格式。"
+"其中 ``publisherName`` 匹配包的发布者名称,``expirationDate`` 是 ``mm/dd/"
+"yyyy`` 格式."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
-msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换（.pfx）文件："
+msgstr "接下来,使用 ``Pvk2Pfx.exe`` 创建个人信息交换(.pfx)文件:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
-msgstr "如果未使用 ``/ po`` 参数指定密码，则PFX将具有与私钥相同的密码。"
+msgstr "如果未使用 ``/ po`` 参数指定密码,则PFX将具有与私钥相同的密码."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -153,8 +153,7 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
-"您还需要信任此证书才能安装您的应用。以管理员身份打开命令提示符并运行以下命"
-"令："
+"您还需要信任此证书才能安装您的应用.以管理员身份打开命令提示符并运行以下命令:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Setting up automatic signing"
@@ -166,8 +165,8 @@ msgid ""
 "Export > Uwp. From there you need to click on the folder for ``Signtool``, "
 "and navigate to the ``SignTool.exe`` file on your computer."
 msgstr ""
-"为了导出时自动签名你需要转到 Editor Settings > Export > Uwp。在这里你需要点击"
-"包含 ``Signtool``的文件夹，然后导航到电脑上的``SignTool.exe``文件。"
+"为了导出时自动签名你需要转到 Editor Settings > Export > Uwp.在这里你需要点击"
+"包含 ``Signtool``的文件夹,然后导航到电脑上的``SignTool.exe``文件."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:72
 msgid ""
@@ -176,19 +175,19 @@ msgid ""
 "next to ``Certificate`` and go to the certificate file. Then enter the "
 "pfxPassword in the password field."
 msgstr ""
-"设置好编辑器选项之后，转到Project > Export，然后选择UWP预设。点击在 "
-"``Signing`` 选项的下面``Certificate``旁边的文件夹，然后转到certificate文件。"
-"接着在密码字段输入pfxPassword。"
+"设置好编辑器选项之后,转到Project > Export,然后选择UWP预设.点击在 ``Signing`` "
+"选项的下面``Certificate``旁边的文件夹,然后转到certificate文件.接着在密码字段"
+"输入pfxPassword."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:79
 msgid "Your project will now be automatically signed on export."
-msgstr "现在你的项目将在导出时自动签名。"
+msgstr "现在你的项目将在导出时自动签名."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:81
 msgid ""
 "If you want to sign an exported app manually run ``SignTool.exe`` and use "
 "the following command."
-msgstr "如果你想手动签名导出的应用，运行``SignTool.exe``然后使用后面的命令。"
+msgstr "如果你想手动签名导出的应用,运行``SignTool.exe``然后使用后面的命令."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:84
 msgid "SignTool sign /fd SHA256 /a /f MyKey.pfx /p pfxPassword package.appx"
@@ -203,19 +202,19 @@ msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
-"从Windows 10周年更新开始，只需双击Windows资源管理器中的 ``.appx`` 文件即可安"
-"装软件包。"
+"从Windows 10周年更新开始,只需双击Windows资源管理器中的 ``.appx`` 文件即可安装"
+"软件包."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:92
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
-msgstr "也可以使用 ``Add-AppxPackage`` PowerShell cmdlet进行安装。"
+msgstr "也可以使用 ``Add-AppxPackage`` PowerShell cmdlet进行安装."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:94
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
-"如果要更新已安装的应用程序，则必须更新新软件包上的版本号或首先卸载以前的软件"
-"包。"
+"如果要更新已安装的应用程序,则必须更新新软件包上的版本号或首先卸载以前的软件"
+"包."

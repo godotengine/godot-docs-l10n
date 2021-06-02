@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1849,6 +1849,11 @@ msgid ""
 "script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
 "for more information."
 msgstr ""
+"Если сценарий находится в каталоге ``res://addons/``, ``class_name`` "
+"приведет к тому, что узел будет отображаться в диалоговом окне **Создать "
+"новый узел**, только если сценарий является частью *включено* плагина "
+"редактора. Смотрите: ref:`doc_making_plugins` для получения дополнительной "
+"информации."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1062
 msgid "Here's a class file example:"
@@ -1940,7 +1945,8 @@ msgstr ""
 "перегрузке этих функций."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1146
-msgid "Class Constructor"
+#, fuzzy
+msgid "Class constructor"
 msgstr "Конструктор класса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1148

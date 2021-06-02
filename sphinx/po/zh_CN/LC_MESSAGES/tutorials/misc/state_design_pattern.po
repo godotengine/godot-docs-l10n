@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:4
-#, fuzzy
 msgid "State design pattern"
-msgstr "绑定模式"
+msgstr "状态设计模式"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:7
 msgid "Introduction"
@@ -33,32 +32,31 @@ msgid ""
 "creating a state machine within the player's control script, it would make "
 "development simpler if the states were separated out into different classes."
 msgstr ""
-"当有许多状态需要处理，但一次只能将一个脚本附加到一个节点上时，编写游戏脚本是"
-"很困难的。与其在玩家的控制脚本中创建一个状态机，不如将状态分离出来，分成不同"
-"的类，这样会使开发更加简单。"
+"当有许多状态需要处理,但一次只能将一个脚本附加到一个节点上时,编写游戏脚本是很"
+"困难的.与其在玩家的控制脚本中创建一个状态机,不如将状态分离出来,分成不同的类,"
+"这样会使开发更加简单."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:14
 msgid ""
 "There are many ways to implement a state machine with Godot, and some other "
 "methods are below:"
-msgstr "用Godot实现状态机的方法有很多，下面是一些其他方法:"
+msgstr "用Godot实现状态机的方法有很多,下面是一些其他方法:"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:16
 msgid ""
 "The player can have a child node for each state, which are called when "
 "utilized."
-msgstr "玩家的每一个状态都可以有一个子节点，在使用时会被调用。"
+msgstr "玩家的每一个状态都可以有一个子节点,在使用时会被调用."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:17
-#, fuzzy
 msgid "Enums can be used in conjunction with a match statement."
-msgstr "枚举可与match语句结合使用。"
+msgstr "Enums可以与匹配语句一起使用."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:18
 msgid ""
 "The state scripts themselves could be swapped out from a node dynamically at "
 "run-time."
-msgstr "状态脚本本身可以在运行时动态地从一个节点上换掉。"
+msgstr "状态脚本本身可以在运行时动态地从一个节点上换掉."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:20
 msgid ""
@@ -66,22 +64,20 @@ msgid ""
 "state script attached. Each state script will be an implementation of a "
 "different state."
 msgstr ""
-"本教程将只专注于添加和删除附加有状态脚本的节点。每个状态脚本将是不同状态的实"
-"现。"
+"本教程将只专注于添加和删除附加有状态脚本的节点.每个状态脚本将是不同状态的实"
+"现."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:24
-#, fuzzy
 msgid ""
 "There is a great resource explaining the concept of the state design pattern "
 "here: https://gameprogrammingpatterns.com/state.html"
 msgstr ""
-"您可以在 `这里 <http://gameprogrammingpatterns.com/observer.html>`__ 阅读有关"
-"观察者模式的更多信息"
+"这里有一个很好的资源来解释状态设计模式的概念 : https://"
+"gameprogrammingpatterns.com/state.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:28
-#, fuzzy
 msgid "Script setup"
-msgstr "GDScript"
+msgstr "脚本设置"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:30
 msgid ""
@@ -90,13 +86,13 @@ msgid ""
 "player. For now, a player will be limited to two actions: **move left**, "
 "**move right**. This means there will be two states: **idle** and **run**."
 msgstr ""
-"继承的特性对于开始使用这个设计原则是很有用的。应该创建一个类来描述玩家的基本"
-"功能。现在，一个玩家将被限制为两个动作。**向左移动**，向右移动**。这意味着将"
-"有两种状态。**闲置**和运行**。"
+"继承的特性对于开始使用这个设计原则是很有用的.应该创建一个类来描述玩家的基本功"
+"能.现在,一个玩家将被限制为两个动作. **向左移动** , **向右移动** .这意味着将有"
+"两种状态.**闲置** 和 **运行** ."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:35
 msgid "Below is the generic state, from which all other states will inherit."
-msgstr "下面是通用状态，所有其他状态都将从该状态继承。"
+msgstr "下面是通用状态,所有其他状态都将从该状态继承."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:66
 msgid ""
@@ -111,27 +107,27 @@ msgid ""
 "remember that *coupling* and *cohesion* are important concepts when it comes "
 "to code management."
 msgstr ""
-"对上面的脚本做一些说明。首先，这个实现使用了一个``setup(change_state, "
-"animated_sprite, persistent_state)``方法来分配引用。这些引用将在这个状态的父"
-"体中被实例化。这有助于在编程中被称为*内聚的东西。玩家的状态不希望承担创建这些"
-"变量的责任，但确实希望能够使用它们。然而，这确实使状态与状态的父体*耦合。这意"
-"味着，状态高度依赖于它是否有一个包含这些变量的父体。所以，请记住，当涉及到代"
-"码管理时，*耦合*和*内聚*是重要的概念。"
+"对上面的脚本做一些说明.首先,这个实现使用了一个``setup(change_state, "
+"animated_sprite, persistent_state)``方法来分配引用.这些引用将在这个状态的父体"
+"中被实例化.这有助于在编程中被称为*内聚的东西.玩家的状态不希望承担创建这些变量"
+"的责任,但确实希望能够使用它们.然而,这确实使状态与状态的父体*耦合.这意味着,状"
+"态高度依赖于它是否有一个包含这些变量的父体.所以,请记住,当涉及到代码管理时,*耦"
+"合*和*内聚*是重要的概念."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:75
 msgid ""
 "See the following page for more details on cohesion and coupling: https://"
 "courses.cs.washington.edu/courses/cse403/96sp/coupling-cohesion.html"
 msgstr ""
-"有关内聚力和耦合的更多详情，请参见以下网页：https://courses.cs.washington."
-"edu/courses/cse403/96sp/coupling-cohesion.html"
+"有关内聚力和耦合的更多详情,请参见以下网页:https://courses.cs.washington.edu/"
+"courses/cse403/96sp/coupling-cohesion.html"
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:78
 msgid ""
 "Second, there are some methods in the script for moving, but no "
 "implementation. The state script just uses ``pass`` to show that it will not "
 "execute any instructions when the methods are called. This is important."
-msgstr "其次，脚本中还有一些移动的方法，但没有实现。这一点很重要。"
+msgstr "其次,脚本中还有一些移动的方法,但没有实现.这一点很重要."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:81
 msgid ""
@@ -141,9 +137,9 @@ msgid ""
 "the states can modify the movement of the player is to use the ``velocity`` "
 "variable defined in their base class."
 msgstr ""
-"第三，这里实际上实现了``_physics_process(delta)``方法。这使得状态可以有一个默"
-"认的``_physics_process(delta)``实现，其中``velocity``用于移动玩家。状态可以修"
-"改玩家移动的方法是使用定义在其基类中的```velocity``变量。"
+"第三,这里实际上实现了 ``_physics_process(delta)`` 方法.这使得状态可以有一个默"
+"认的 ``_physics_process(delta)`` 实现,其中 ``velocity`` 用于移动玩家.状态可以"
+"修改玩家移动的方法是使用定义在其基类中的 ``velocity`` 变量."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:85
 msgid ""
@@ -151,14 +147,14 @@ msgid ""
 "``State``. This makes refactoring the code easier, since the file path from "
 "using the ``load()`` and ``preload()`` functions in Godot will not be needed."
 msgstr ""
-"最后，这个脚本实际上被指定为一个名为 ``State`` 的类。这使得重构代码变得更容"
-"易，因为在Godot中使用 ``load()`` 和 ``preload()`` 函数的文件路径将不再需要。"
+"最后,这个脚本实际上被指定为一个名为 ``State`` 的类.这使得重构代码变得更容易,"
+"因为在Godot中使用 ``load()`` 和 ``preload()`` 函数的文件路径将不再需要."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:88
 msgid ""
 "So, now that there is a base state, the two states discussed earlier can be "
 "implemented."
-msgstr "所以，现在有了基础状态，前面讨论的两种状态就可以实现了。"
+msgstr "所以,现在有了基础状态,前面讨论的两种状态就可以实现了."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:154
 msgid ""
@@ -171,23 +167,24 @@ msgid ""
 "``_ready()``, ``_process(delta)``, etc. Custom functions use the normal "
 "inheritance rules of overriding the base implementation."
 msgstr ""
-"由于``Run``和``Idle``状态是从``State``延伸出来的，而``State``又是``Node2D``的"
-"延伸，所以函数``_physics_process(delta)```是从**底向上**调用的，也就是说"
-"``Run``和``Idle``将调用它们的实现``_physics_process(delta)``。然后``State``将"
-"调用它的实现，然后``Node2D``将调用它自己的实现，以此类推。这可能看起来很奇"
-"怪，但它只与预定义函数有关，如``_ready()``、``_process(delta)``等。自定义函数"
-"使用正常的继承规则，即覆盖基础实现。"
+"由于 ``Run`` 和 ``Idle`` 状态是从 ``State`` 延伸出来的,而 ``State`` 又是 "
+"``Node2D`` 的延伸,所以函数 ``_physics_process(delta)`` 是从 **底向上** 调用"
+"的,也就是说 ``Run`` 和 ``Idle`` 将调用它们的实现 "
+"``_physics_process(delta)`` .然后 ``State`` 将调用它的实现,然后 ``Node2D`` 将"
+"调用它自己的实现,以此类推.这可能看起来很奇怪,但它只与预定义函数有关,如 "
+"``_ready()`` 、 ``_process(delta)`` 等.自定义函数使用正常的继承规则,即覆盖基"
+"础实现."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:161
 msgid ""
 "There is a roundabout method for obtaining a state instance. A state factory "
 "can be used."
-msgstr "有一种迂回的方法可以获得一个状态实例。可以使用状态工厂。"
+msgstr "有一种迂回的方法可以获得一个状态实例.可以使用状态工厂."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:184
 msgid ""
 "This will look for states in a dictionary and return the state if found."
-msgstr "这将在字典中查找状态，如果找到则返回状态。"
+msgstr "这将在字典中查找状态,如果找到则返回状态."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:186
 msgid ""
@@ -196,9 +193,9 @@ msgid ""
 "Since these references will not change it makes sense to call this new "
 "script ``persistent_state.gd``."
 msgstr ""
-"现在，所有的状态都用自己的脚本定义了，现在是时候弄清楚如何实例化那些传递给它"
-"们的引用了。由于这些引用不会改变，所以调用这个新脚本``persistent_state.gd``是"
-"有意义的。"
+"现在,所有的状态都用自己的脚本定义了,现在是时候弄清楚如何实例化那些传递给它们"
+"的引用了.由于这些引用不会改变,所以调用这个新脚本``persistent_state.gd``是有意"
+"义的."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:230
 msgid ""
@@ -206,8 +203,8 @@ msgid ""
 "was to make the tutorial simple, but it is not usually best practice to do "
 "this."
 msgstr ""
-"``persistent_state.gd`` 脚本包含检测输入的代码。这是为了使教程简单化，但通常"
-"这样做不是最好的做法。"
+"``persistent_state.gd`` 脚本包含检测输入的代码.这是为了使教程简单化,但通常这"
+"样做不是最好的做法."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:234
 msgid "Project setup"
@@ -222,10 +219,10 @@ msgid ""
 "idle and run animations. Also, the top-level node is assumed to be a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
-"本教程做了一个假设，即它要连接的节点包含一个子节点，这个子节点是一个:ref:"
-"`AnimatedSprite <class_AnimatedSprite>`。还有一个假设是，这个:ref:"
-"`AnimatedSprite <class_AnimatedSprite>`至少有两个动画，即空闲和运行动画。另"
-"外，还假设顶层节点是一个 :ref:`KinematicBody2D <class_KinematicBody2D>`。"
+"本教程做了一个假设,即它要连接的节点包含一个子节点,这个子节点是一个 :ref:"
+"`AnimatedSprite <class_AnimatedSprite>`.还有一个假设是,这个 :ref:"
+"`AnimatedSprite <class_AnimatedSprite>`至少有两个动画,即空闲和运行动画.另外,"
+"还假设顶层节点是一个 :ref:`KinematicBody2D <class_KinematicBody2D>`."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:243
 msgid ""
@@ -236,11 +233,11 @@ msgid ""
 "tutorial for sprite animation already. See :ref:`2D Sprite Animation "
 "<doc_2d_sprite_animation>`."
 msgstr ""
-"本教程中使用的骆驼的压缩文件是:下载:`here <files/llama.zip>`。源自"
+"本教程中使用的骆驼的压缩文件是:下载: `here <files/llama.zip>` .源自 "
 "`piskel_llama <https://www.piskelapp.com/p/"
-"agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_，但我在那个页面上找不"
-"到原创作者的信息......还有一个好的精灵动画教程已经有了。参见:ref:`2D精灵动画"
-"<doc_2d_sprite_animation>`。"
+"agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgICfx5ygCQw/edit>`_ ,但我在那个页面上找不"
+"到原创作者的信息......还有一个好的精灵动画教程已经有了.参见 :ref:`2D精灵动画"
+"<doc_2d_sprite_animation>` ."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:248
 msgid ""
@@ -248,8 +245,8 @@ msgid ""
 "should be attached to the top node of the player, which is a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`."
 msgstr ""
-"所以，唯一必须附加的脚本是 ``persistent_state.gd`` ，它应该附加在玩家的顶部节"
-"点上，这是一个 :ref:`KinematicBody2D <class_KinematicBody2D>` 。"
+"所以,唯一必须附加的脚本是 ``persistent_state.gd`` ,它应该附加在玩家的顶部节点"
+"上,这是一个 :ref:`KinematicBody2D <class_KinematicBody2D>` ."
 
 #: ../../docs/tutorials/misc/state_design_pattern.rst:255
 msgid ""
@@ -259,6 +256,6 @@ msgid ""
 "focus on itself and how it changes to another state. Each state is "
 "functionally separated and instantiated dynamically."
 msgstr ""
-"现在玩家已经利用状态设计模式实现了它的两种不同的状态。这种模式的好处是，如果"
-"想要添加另一个状态，那么就需要创建另一个类，而这个类只需要关注自己以及如何变"
-"化到另一个状态。每个状态在功能上是分离的，并且是动态实例化的。"
+"现在玩家已经利用状态设计模式实现了它的两种不同的状态.这种模式的好处是,如果想"
+"要添加另一个状态,那么就需要创建另一个类,而这个类只需要关注自己以及如何变化到"
+"另一个状态.每个状态在功能上是分离的,并且是动态实例化的."

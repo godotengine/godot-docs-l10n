@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,7 +228,7 @@ msgstr ""
 "godotengine/godot/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label"
 "%3AHacktoberfest+>`_ en octobre) sur GitHub."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:89
+#: ../../docs/community/contributing/ways_to_contribute.rst:90
 msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
@@ -236,7 +236,7 @@ msgstr ""
 "Les détails techniques sur le workflow PR sont décrits dans une section "
 "spécifique, :ref:`doc_pr_workflow`."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:92
+#: ../../docs/community/contributing/ways_to_contribute.rst:93
 msgid ""
 "Details about the code style guidelines and the ``clang-format`` tool used "
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
@@ -246,10 +246,37 @@ msgstr ""
 "`doc_code_style_guidelines`."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:97
+msgid ""
+"All pull requests must go through a review process before being accepted. "
+"Depending on the scope of the changes, it may take some time for a "
+"maintainer responsible for the modified part of the engine to provide their "
+"review. We value all of our contributors and ask them to be patient in the "
+"meantime, as it is expected that in an open source project like Godot, there "
+"is going to be way more contributions than people validating them."
+msgstr ""
+
+#: ../../docs/community/contributing/ways_to_contribute.rst:104
+msgid ""
+"To make sure that your time and efforts aren't wasted, it is recommended to "
+"vet the idea first before implementing it and putting it for a review as a "
+"PR. To that end, Godot has a `proposal system <https://github.com/"
+"godotengine/godot-proposals>`_. Its usage is encouraged to plan changes and "
+"discuss them with the community. Implementation details can also be "
+"discussed with other contributors on the `Godot Contributors Chat <https://"
+"chat.godotengine.org/>`_."
+msgstr ""
+
+#: ../../docs/community/contributing/ways_to_contribute.rst:110
+msgid ""
+"Proposals are only required when working on an enhancement or a new feature. "
+"Bug reports are sufficient for fixing issues."
+msgstr ""
+
+#: ../../docs/community/contributing/ways_to_contribute.rst:114
 msgid "Testing and reporting issues"
 msgstr "Tester et signaler les problèmes (issues)"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:99
+#: ../../docs/community/contributing/ways_to_contribute.rst:116
 msgid ""
 "Another great way of contributing to the engine is to test development "
 "releases or the development branch and to report issues. It is also helpful "
@@ -262,15 +289,15 @@ msgstr ""
 "les versions stables, de sorte qu'ils puissent être fixés dans la branche de "
 "développement et dans les futures versions de maintenance."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:105
+#: ../../docs/community/contributing/ways_to_contribute.rst:122
 msgid "Testing development versions"
 msgstr "Tester les versions de développement"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:107
+#: ../../docs/community/contributing/ways_to_contribute.rst:124
 msgid "To help with the testing, you have several possibilities:"
 msgstr "Pour aider avec les tests, vous avez plusieurs possibilités :"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:109
+#: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
@@ -279,7 +306,7 @@ msgstr ""
 "instructions de la page :ref:`Compiler <toc-devel-compiling>` pour votre "
 "plate-forme."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:112
+#: ../../docs/community/contributing/ways_to_contribute.rst:129
 msgid ""
 "Test official pre-release binaries when they are announced (usually on the "
 "blog and other community platforms), such as alpha, beta and release "
@@ -289,7 +316,7 @@ msgstr ""
 "(généralement sur le blog et d'autres plates-formes communautaires), comme "
 "les compilations candidates alpha, bêta et release."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:115
+#: ../../docs/community/contributing/ways_to_contribute.rst:132
 msgid ""
 "Test \"trusted\" unofficial builds of the development branch; just ask "
 "community members for reliable providers. Whenever possible, it's best to "
@@ -302,7 +329,7 @@ msgstr ""
 "d’utiliser des binaires officiels ou de compiler vous même, pour être sûr de "
 "la provenance de vos binaires."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:120
+#: ../../docs/community/contributing/ways_to_contribute.rst:137
 msgid ""
 "As mentioned previously, it is also helpful to keep your eyes peeled for "
 "potential bugs that might still be present in the stable releases, "
@@ -315,11 +342,11 @@ msgstr ""
 "fonctionnalités niche du moteur qui pourraient être moins testées par les "
 "développeurs."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:126
+#: ../../docs/community/contributing/ways_to_contribute.rst:143
 msgid "Filing an issue on GitHub"
 msgstr "Signaler un problème(issue) sur GitHub"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:128
+#: ../../docs/community/contributing/ways_to_contribute.rst:145
 msgid ""
 "Godot uses `GitHub's issue tracker <https://github.com/godotengine/godot/"
 "issues>`_ for bug reports and enhancement suggestions. You will need a "
@@ -331,7 +358,7 @@ msgstr ""
 "d'amélioration. Vous aurez besoin d'un compte GitHub pour pouvoir y ouvrir "
 "un nouveau problème, et cliquez sur le bouton \"New issue\"."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:132
+#: ../../docs/community/contributing/ways_to_contribute.rst:149
 msgid ""
 "When you report a bug, you should keep in mind that the process is similar "
 "to an appointment with your doctor. You noticed *symptoms* that make you "
@@ -348,7 +375,7 @@ msgstr ""
 "faire le diagnostic du problème que vous avez rencontré, afin que la cause "
 "réelle puisse être identifiée et traitée."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:139
+#: ../../docs/community/contributing/ways_to_contribute.rst:156
 msgid ""
 "You should therefore always ask yourself: what is relevant information to "
 "give so that other Godot contributors can understand the bug, identify it "
@@ -360,7 +387,7 @@ msgstr ""
 "comprendre le bogue, l'identifier et le corriger. Voici quelques-unes des "
 "informations les plus importantes que vous devriez toujours fournir :"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:144
+#: ../../docs/community/contributing/ways_to_contribute.rst:161
 msgid ""
 "**Operating system.** Sometimes bugs are system-specific, i.e. they happen "
 "only on Windows, or only on Linux, etc. That's particularly relevant for all "
@@ -373,7 +400,7 @@ msgstr ""
 "aux interfaces du système d'exploitation, comme la gestion des fichiers, des "
 "entrées, des fenêtres, de l'audio, etc."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:149
+#: ../../docs/community/contributing/ways_to_contribute.rst:166
 msgid ""
 "**Hardware.** Sometimes bugs are hardware-specific, i.e. they happen only on "
 "certain processors, graphic cards, etc. If you are able to, it can be "
@@ -384,7 +411,7 @@ msgstr ""
 "graphiques, etc. Si vous en êtes capable, il peut être utile d'inclure des "
 "informations sur votre matériel."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:153
+#: ../../docs/community/contributing/ways_to_contribute.rst:170
 msgid ""
 "**Godot version.** This is a must have. Some issues might be relevant in the "
 "current stable release, but fixed in the development branch, or the other "
@@ -398,7 +425,7 @@ msgstr ""
 "obsolète de Godot et rencontrer un problème connu corrigé dans une version "
 "ultérieure, donc le savoir dès le début aide à accélérer le diagnostic."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:159
+#: ../../docs/community/contributing/ways_to_contribute.rst:176
 msgid ""
 "**How to reproduce the bug.** In the majority of cases, bugs are "
 "reproducible, i.e. it is possible to trigger them reliably by following some "
@@ -424,7 +451,7 @@ msgstr ""
 "et que les développeurs ne peuvent consacrer que peu de temps à chaque "
 "numéro."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:170
+#: ../../docs/community/contributing/ways_to_contribute.rst:187
 msgid ""
 "When you click the \"New issue\" button, you should be presented with a text "
 "area prefilled with our issue template. Please try to follow it so that all "
@@ -435,17 +462,17 @@ msgstr ""
 "présentée. Veuillez essayer de le suivre afin que tous les numéros soient "
 "cohérents et fournissent les informations requises."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:175
+#: ../../docs/community/contributing/ways_to_contribute.rst:192
 msgid "Contributing to the documentation"
 msgstr "Contribuer à la documentation"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:177
+#: ../../docs/community/contributing/ways_to_contribute.rst:194
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
 msgstr ""
 "Il existe deux ressources distinctes appelées \"documentation\" dans Godot :"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:179
+#: ../../docs/community/contributing/ways_to_contribute.rst:196
 msgid ""
 "**The class reference.** This is the documentation for the complete Godot "
 "API as exposed to GDScript and the other scripting languages. It can be "
@@ -462,7 +489,7 @@ msgstr ""
 "dans le dépôt Git de Godot, et faire une pull request. Voir :ref:"
 "`doc_updating_the_class_reference` pour plus de détails."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:187
+#: ../../docs/community/contributing/ways_to_contribute.rst:204
 msgid ""
 "**The tutorials and engine documentation and its translations.** This is the "
 "part you are reading now, which is distributed in the HTML, PDF and EPUB "
@@ -479,11 +506,11 @@ msgstr ""
 "godotengine/godot-docs>`_. Voir :ref:`doc_documentation_guidelines` pour "
 "plus de détails."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:195
+#: ../../docs/community/contributing/ways_to_contribute.rst:212
 msgid "Contributing translations"
 msgstr "Contribuer aux traductions"
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:197
+#: ../../docs/community/contributing/ways_to_contribute.rst:214
 msgid ""
 "To make Godot accessible to everyone, including users who may prefer "
 "resources in their native language instead of English, our community helps "
@@ -494,6 +521,6 @@ msgstr ""
 "notre communauté aide à traduire l'éditeur de Godot et sa documentation dans "
 "de nombreuses langues."
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:201
+#: ../../docs/community/contributing/ways_to_contribute.rst:218
 msgid "See :ref:`doc_editor_and_docs_localization` for more details."
 msgstr "Voir :ref:`doc_editor_and_docs_localization` pour plus de détails."

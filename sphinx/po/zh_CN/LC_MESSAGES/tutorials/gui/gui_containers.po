@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:4
-msgid "Containers"
+#, fuzzy
+msgid "Using Containers"
 msgstr "容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:6
@@ -26,12 +27,12 @@ msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
 "different aspect ratios for basic multiple resolution handling in GUIs,"
 msgstr ""
-":ref:`锚点<doc_size_and_anchors>`是处理图形用户界面中基本多分辨率处理的不同纵"
-"横比的有效方法，"
+":ref:`锚点<doc_size_and_anchors>` 是处理图形用户界面中基本多分辨率处理的不同"
+"纵横比的有效方法,"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:9
 msgid "For more complex user interfaces, they can become difficult to use."
-msgstr "对于更复杂的用户界面，它们可能会变得难以使用。"
+msgstr "对于更复杂的用户界面,它们可能会变得难以使用."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:11
 msgid ""
@@ -39,8 +40,8 @@ msgid ""
 "simulations. Another common case where more advanced layout features may be "
 "required is in-game tools (or simply just tools)."
 msgstr ""
-"这通常是游戏的情况下，如角色扮演类、在线聊天、大富翁类或模拟类游戏。另一个需"
-"要更高级布局功能的常见情况是游戏内工具(或者仅仅是工具)。"
+"这通常是游戏的情况下,如角色扮演类、在线聊天、大富翁类或模拟类游戏.另一个需要"
+"更高级布局功能的常见情况是游戏内工具(或者仅仅是工具)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:14
 msgid ""
@@ -48,20 +49,19 @@ msgid ""
 "advanced layout and formatting. For that, :ref:`Containers "
 "<class_container>` are more useful."
 msgstr ""
-"这些情况需要一个更强大的类似操作系统的用户界面，具有先进的布局和格式。为此，:"
-"ref:`容器<class_container>`更有用。"
+"这些情况需要一个更强大的类似操作系统的用户界面,具有先进的布局和格式.为此, :"
+"ref:`容器<class_container>` 更有用."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:18
-#, fuzzy
 msgid "Container layout"
-msgstr "容器"
+msgstr "容器布局"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:20
 msgid ""
 "Containers provide a huge amount of layout power (as an example, the Godot "
 "editor user interface is entirely done using them):"
 msgstr ""
-"容器提供了巨大的布局能力(例如，Godot编辑器的用户界面就是完全使用它们完成的)："
+"容器提供了巨大的布局能力(例如,Godot编辑器的用户界面就是完全使用它们完成的):"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:24
 msgid ""
@@ -71,31 +71,30 @@ msgid ""
 "attempt to manually alter these nodes will be either ignored or invalidated "
 "the next time their parent is resized."
 msgstr ""
-"当使用:ref:`容器<class_Container>`派生节点时，所有:ref:`控制<class_Control>`"
-"子节点放弃了自己的定位能力。这意味着*容器*将控制它们的位置，任何手动更改这些"
-"节点的尝试，都将在它们的父节点下一次调整大小时被忽略或失效。"
+"当使用 :ref:`容器<class_Container>` 派生节点时,所有 :ref:`控件"
+"<class_Control>` 子节点放弃了自己的定位能力.这意味着 *Container容器* 将控制它"
+"们的位置,任何手动更改这些节点的尝试,都将在它们的父节点下一次调整大小时被忽略"
+"或失效."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:28
-#, fuzzy
 msgid ""
 "Likewise, when a *Container* derived node is resized, all its children will "
 "be re-positioned according to it, with a behavior based on the type of "
 "container used:"
 msgstr ""
-"同样，当一个*容器*派生节点被调整大小时，所有的子节点都会根据它重新定位，基于"
-"使用的容器类型的行为："
+"同样,当一个 *Container* 派生的节点被调整大小时,它的所有子节点将根据它重新定"
+"位,其行为基于所用的容器类型:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:33
 msgid "Example of *HBoxContainer* resizing children buttons."
-msgstr "例如*HBoxContainer*调整子按钮的大小。"
+msgstr "例如 *HBoxContainer* 调整子按钮的大小."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:35
 msgid ""
 "The real strength of containers is that they can be nested (as nodes), "
 "allowing the creation of very complex layouts that resize effortlessly."
 msgstr ""
-"容器的真正优势在于它们可以嵌套(作为节点)，允许创建非常复杂的布局，调整毫不费"
-"力。"
+"容器的真正优势在于它们可以嵌套(作为节点),允许创建非常复杂的布局,调整毫不费力."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:38
 msgid "Size flags"
@@ -107,15 +106,15 @@ msgid ""
 "depends mainly on their *size flags*. These flags can be found by inspecting "
 "any control that is a child of a *Container*."
 msgstr ""
-"当向容器添加节点时，容器对待每个子元素的方式，主要取决于它们的*尺寸标记*。通"
-"过检查*容器*的子控件，可以找到这些标记。"
+"当向容器添加节点时,容器对待每个子元素的方式,主要取决于它们的 *size flags尺寸"
+"标记* .通过检查 *容器* 的子控件,可以找到这些标记."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:45
 msgid ""
 "Size flags are independent for vertical and horizontal sizing and not all "
 "containers make use of them (but most do):"
 msgstr ""
-"尺寸标记独立于垂直和水平尺寸，并不是所有容器都使用它们(但大多数容器都使用)："
+"尺寸标记独立于垂直和水平尺寸,并不是所有容器都使用它们(但大多数容器都使用):"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:47
 msgid ""
@@ -123,27 +122,27 @@ msgid ""
 "container. No matter if a control *expands* or not (see below), it will only "
 "*fill* the designated area when this is toggled on (it is by default)."
 msgstr ""
-"**填充**：确保控件*填充*容器内指定的区域。无论控件是否*扩展*(见下面)，当此选"
-"项被选中时(默认情况)，只*填充*指定区域。"
+"**Fill填充**: 确保控件 *fills填充* 容器内指定的区域.无论控件是否 *expands扩展"
+"* (见下面),当此选项被选中时(默认情况),只 *填充* 指定区域."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:49
-#, fuzzy
 msgid ""
 "**Expand**: Attempts to use as much space as possible in the parent "
 "container (in each axis). Controls that don't expand will be pushed away by "
 "those that do. Between expanding controls, the amount of space they take "
 "from each other is determined by the *Ratio* (see below)."
 msgstr ""
-"**扩展**：尝试在父容器中使用尽可能多的空间(在每个轴中)。非扩展控件将被扩展控"
-"件推开。在扩展控件之间，相互占用的空间量由*比例*决定(见下文)。"
+"**Expand扩展**: 试图在父容器中尽可能多地使用空间(在每个轴中).不展开的控件会被"
+"展开的控件推开.在扩展的控件之间,它们相互占用的空间大小由 *Ratio* 决定(见下"
+"文)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:52
 msgid ""
 "**Shrink Center** When expanding (and if not filling), try to remain at the "
 "center of the expanded area (by default it remains at the left or top)."
 msgstr ""
-"**收缩中心**当扩展时(如果不填充)，尽量保持在扩展区域的中心(默认情况下，它仍然"
-"位于左侧或顶部)。"
+"**Shrink Center收缩中心** 当扩展时(如果不填充),尽量保持在扩展区域的中心(默认"
+"情况下,它仍然位于左侧或顶部)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:54
 msgid ""
@@ -151,30 +150,28 @@ msgid ""
 "space in relation to each other. A control with \"2\", will take up twice as "
 "much available space as one with \"1\"."
 msgstr ""
-"**比例**扩展控件之间，相互占用可用空间的简单比例。一个比例为“2”的控件，将占用"
-"比例为“1”控件的两倍可用空间。"
+"**Ratio比例** 扩展控件之间,相互占用可用空间的简单比例.一个比例为\"2\"的控件,"
+"将占用比例为\"1\"控件的两倍可用空间."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:57
 msgid ""
 "Experimenting with these flags and different containers is recommended to "
 "get a better grasp on how they work."
-msgstr "建议使用这些标记和不同的容器进行试验，以便更好地了解它们是如何工作的。"
+msgstr "建议使用这些标记和不同的容器进行试验,以便更好地了解它们是如何工作的."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:60
-#, fuzzy
 msgid "Container types"
-msgstr "容器"
+msgstr "容器类型"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:62
 msgid ""
 "Godot provides several container types out of the box as they serve "
 "different purposes:"
-msgstr "Godot提供了几种开箱即用的容器类型，因为它们有不同的用途："
+msgstr "Godot提供了几种开箱即用的容器类型,因为它们有不同的用途:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:65
-#, fuzzy
 msgid "Box Containers"
-msgstr "容器"
+msgstr "Box容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:67
 msgid ""
@@ -183,20 +180,19 @@ msgid ""
 "the opposite of the designated direction (as in, vertical for an horizontal "
 "container), it just expands the children."
 msgstr ""
-"垂直或水平排列子控件(通过:ref:`水平盒子容器<class_HBoxContainer>`和:ref:`垂直"
-"盒子容器<class_VBoxContainer>`)。在指定方向的相反方向(如水平容器的垂直方向)，"
-"只是扩大了子节点的范围。"
+"垂直或水平排列子控件(通过 :ref:`水平盒子容器<class_HBoxContainer>` 和 :ref:`"
+"垂直盒子容器<class_VBoxContainer>` ).在指定方向的相反方向(如水平容器的垂直方"
+"向),只是扩大了子节点的范围."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:73
 msgid ""
 "These containers make use of the *Ratio* property for children with the "
 "*Expand* flag set."
-msgstr "这些容器使用*比例*属性，用于设置*扩展*标记的子容器。"
+msgstr "这些容器使用 *Ratio比例* 属性,用于设置 *Expand扩展* 标记的子容器."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:76
-#, fuzzy
 msgid "Grid Container"
-msgstr "容器"
+msgstr "Grid Container网格容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:78
 msgid ""
@@ -204,13 +200,12 @@ msgid ""
 "<class_GridContainer>`, amount of columns must be specified). Uses both the "
 "vertical and horizontal expand flags."
 msgstr ""
-"在网格布局中排列子控件(通过:ref:`网格容器<class_GridContainer>`，必须指定列的"
-"数量)。同时使用垂直和水平扩展标记。"
+"在网格布局中排列子控件(通过 :ref:`网格容器<class_GridContainer>` ,必须指定列"
+"的数量).同时使用垂直和水平扩展标记."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:84
-#, fuzzy
 msgid "Margin Container"
-msgstr "容器"
+msgstr "Margin Container边距容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:86
 msgid ""
@@ -218,22 +213,20 @@ msgid ""
 "`MarginContainer <class_MarginContainer>`). Padding will be added on the "
 "margins depending on the theme configuration."
 msgstr ""
-"子控件被扩展到该控件的边界(通过:ref:`边距容器<class_MarginContainer>`)。根据"
-"主题配置，将在页边距上添加填充。"
+"子控件被扩展到该控件的边界(通过 :ref:`边距容器<class_MarginContainer>` ).根据"
+"主题配置,将在页边距上添加填充."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:92
-#, fuzzy
 msgid ""
 "Again, keep in mind that the margins are a *Theme* value, so they need to be "
 "edited from the constants overrides section of each control:"
 msgstr ""
-"同样，请记住边距是一个*主题*值，因此，如果需要单个控件，需要在常量覆盖部分编"
-"辑它们："
+"同样,请记住,边距是一个 *Theme* 值,所以它们需要从每个控件的常量重写部分进行编"
+"辑:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:98
-#, fuzzy
 msgid "Tab Container"
-msgstr "容器"
+msgstr "Tab Container标签容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:100
 msgid ""
@@ -241,34 +234,33 @@ msgid ""
 "(via :ref:`TabContainer <class_TabContainer>`), with only the *current* one "
 "visible."
 msgstr ""
-"允许您将多个子控件堆叠在一起(通过:ref:`选项卡容器<class_TabContainer>`),只有*"
-"当前*可见。"
+"允许您将多个子控件堆叠在一起(通过 :ref:`选项卡容器<class_TabContainer>`),只"
+"有 *current当前* 可见."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:105
 msgid ""
 "Changing the *current* one is done via tabs located at the top of the "
 "container, via clicking:"
-msgstr "通过点击位于容器顶部的选项卡，来标记*当前*选项卡："
+msgstr "通过点击位于容器顶部的选项卡,来标记 *current当前* 选项卡:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:109
-#, fuzzy
 msgid ""
 "The titles are generated from the node names by default (although they can "
 "be overridden via *TabContainer* API)."
 msgstr ""
-"默认情况下，标题是由节点名生成的(尽管可以通过*选项卡容器*的应用程序接口覆盖它"
-"们)。"
+"默认情况下,标题是由节点名称生成的(尽管它们可以通过 *TabContainer* API被重写)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:111
 msgid ""
 "Settings such as tab placement and *StyleBox* can be modified in the "
 "*TabContainer* theme overrides."
-msgstr "在*选项卡容器*主题覆盖中，可以修改选项卡位置和*盒子样式*等内容。"
+msgstr ""
+"在 *TabContainer选项卡容器* 主题覆盖中,可以修改选项卡位置和 *StyleBox盒子样式"
+"* 等内容."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:114
-#, fuzzy
 msgid "Split Container"
-msgstr "视区容器"
+msgstr "Split Container拆分容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:116
 msgid ""
@@ -277,20 +269,19 @@ msgid ""
 "`VSplitContainer <class_VSplitContainer>`). Respects both horizontal and "
 "vertical flags, as well as *Ratio*."
 msgstr ""
-"只接受一两个子控件，然后将它们与除数并排放置(通过:ref:`水平分割容器"
-"<class_HSplitContainer>`和:ref:`垂直分割容器<class_VSplitContainer>`)。同时考"
-"虑水平和垂直标记，以及*比例*。"
+"只接受一两个子控件,然后将它们与除数并排放置(通过 :ref:`水平分割容器"
+"<class_HSplitContainer>` 和 :ref:`垂直分割容器<class_VSplitContainer>`).同时"
+"考虑水平和垂直标记,以及 *Ratio比例* ."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:122
 msgid ""
 "The divisor can be dragged around to change the size relation between both "
 "children:"
-msgstr "可以拖动除数来改变两个子元素之间的大小关系："
+msgstr "可以拖动除数来改变两个子元素之间的大小关系:"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:128
-#, fuzzy
 msgid "PanelContainer"
-msgstr "容器"
+msgstr "PanelContainer"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:130
 msgid ""
@@ -298,20 +289,19 @@ msgid ""
 "whole area (via :ref:`PanelContainer <class_PanelContainer>`, respecting the "
 "*StyleBox* margins). It respects both the horizontal and vertical size flags."
 msgstr ""
-"绘制*样式盒子*的简单容器，然后将子节点扩大到整个区域(通过:ref:`面板容器"
-"<class_PanelContainer>`，考虑*样式盒子*的边距)。它同时考虑水平和垂直尺寸标"
-"记。"
+"绘制 *StyleBox样式盒子* 的简单容器,然后将子节点扩大到整个区域(通过 :ref:`面板"
+"容器<class_PanelContainer>` ,考虑 *样式盒子* 的边距).它同时考虑水平和垂直尺寸"
+"标记."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:136
 msgid ""
 "This container is useful as top-level, or just to add custom backgrounds to "
 "sections of a layout."
-msgstr "这个容器作为顶层非常有用，或者只是为布局各个部分添加自定义背景。"
+msgstr "这个容器作为顶层非常有用,或者只是为布局各个部分添加自定义背景."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:139
-#, fuzzy
 msgid "ScrollContainer"
-msgstr "容器"
+msgstr "ScrollContainer"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:141
 msgid ""
@@ -321,28 +311,27 @@ msgid ""
 "size flags are respected, and the behavior can be turned on or off per axis "
 "in the properties."
 msgstr ""
-"接受一个单独的子节点。如果这个节点比容器大，将添加滚动条以允许移动节点(通过:"
-"ref:`滚动条容器<class_ScrollContainer>`)。考虑垂直和水平尺寸标识，该行为可以"
-"在属性中的每个轴上打开或关闭。"
+"接受一个单独的子节点.如果这个节点比容器大,将添加滚动条以允许移动节点(通过 :"
+"ref:`滚动条容器<class_ScrollContainer>`).考虑垂直和水平尺寸标识,该行为可以在"
+"属性中的每个轴上打开或关闭."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:148
 msgid ""
 "Mouse wheel and touch drag (when touch is available) are also valid ways to "
 "pan the child control around."
-msgstr "鼠标滚轮和触摸拖动(当触摸可用时)也是平移子控件的有效方法。"
+msgstr "鼠标滚轮和触摸拖动(当触摸可用时)也是平移子控件的有效方法."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:152
 msgid ""
 "As in the example above, one of the most common ways to use this container "
 "is together with a *VBoxContainer* as child."
 msgstr ""
-"在上面的例子中，使用此容器最常见的方法之一，是将*垂直盒子容器*作为子容器一起"
-"使用。"
+"在上面的例子中,使用此容器最常见的方法之一,是将 *VBoxContainer垂直盒子容器* 作"
+"为子容器一起使用."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:156
-#, fuzzy
 msgid "ViewportContainer"
-msgstr "视区容器"
+msgstr "ViewportContainer"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:158
 msgid ""
@@ -350,18 +339,17 @@ msgid ""
 "child, and it will display it as if it was an image (via :ref:"
 "`ViewportContainer <class_ViewportContainer>`)."
 msgstr ""
-"这是一个特殊的控件，它只接受单个*视口*节点作为子节点，它会像显示图像一样显示"
-"它(通过:ref:`视口容器 <class_ViewportContainer>`)。"
+"这是一个特殊的控件,它只接受单个 *Viewport视窗* 节点作为子节点,它会像显示图像"
+"一样显示它(通过 :ref:`视窗容器 <class_ViewportContainer>`)."
 
 #: ../../docs/tutorials/gui/gui_containers.rst:162
-#, fuzzy
 msgid "Creating custom Containers"
-msgstr "创建自定义数据类型"
+msgstr "创建自定义容器"
 
 #: ../../docs/tutorials/gui/gui_containers.rst:164
 msgid ""
 "It is possible to easily create a custom container using script. Here is an "
 "example of a simple container that fits children to its rect size:"
 msgstr ""
-"可以使用脚本轻松地创建自定义容器。下面是一个简单容器的例子，它适合于其矩形大"
-"小的子容器："
+"可以使用脚本轻松地创建自定义容器.下面是一个简单容器的例子,它适合于其矩形大小"
+"的子容器:"

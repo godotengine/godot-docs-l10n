@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,192 +26,240 @@ msgid "Requirements"
 msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:11
-#, fuzzy
 msgid "For compiling under macOS, the following is required:"
-msgstr "要在Windows下进行编译，需要以下内容："
+msgstr "在macOS下编译时,需要以下条件:"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:13
 msgid "`Python 3.5+ <https://www.python.org>`_."
-msgstr "`Python 3.5+ <https://www.python.org/>`__。"
+msgstr "`Python 3.5+ <https://www.python.org/>`__."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
-#, fuzzy
 msgid "`SCons 3.0+ <https://www.scons.org>`_ build system."
-msgstr "`SCons <https://www.scons.org>`__ 构建系统。"
+msgstr "`SCons 3.0+ <https://www.scons.org>`_ 构建系统."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
 "lightweight Command Line Tools for Xcode)."
 msgstr ""
-"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_（或更轻巧的Xcode命"
-"令行工具）。"
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_(或更轻巧的Xcode命"
+"令行工具)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:17
 msgid ""
 "*Optional* - `yasm <https://yasm.tortall.net/>`_ (for WebM SIMD "
 "optimizations)."
-msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ （用于WebM SIMD优化）。"
+msgstr "*可选* - `yasm <https://yasm.tortall.net/>`_ (用于WebM SIMD优化)."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
-#, fuzzy
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
 "SCons and yasm using the following command::"
 msgstr ""
-"如果您已安装 `Scoop <https://scoop.sh/>`_，则可以使用以下命令轻松安装MinGW和"
-"其他依赖项："
+"如果你安装了 `Homebrew <https://brew.sh/>`_ ,你可以使用以下命令轻松地安装"
+"SCons和yasm::"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:24
 msgid ""
 "Installing Homebrew will also fetch the Command Line Tools for Xcode "
 "automatically if you don't have them already."
-msgstr "如果你还没有Xcode的命令行工具，安装Homebrew也会自动获取它们。"
+msgstr "如果你还没有Xcode的命令行工具,安装Homebrew也会自动获取它们."
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
+#, fuzzy
+msgid ""
+"Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
+"you can easily install SCons and yasm using the following command::"
+msgstr ""
+"如果你安装了 `Homebrew <https://brew.sh/>`_ ,你可以使用以下命令轻松地安装"
+"SCons和yasm::"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:33
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
-"有关Godot的SCons用法的一般概述，请参阅 :ref:"
-"`doc_introduction_to_the_buildsystem`。"
+"有关Godot的SCons用法的一般概述,请参阅 :ref:"
+"`doc_introduction_to_the_buildsystem`."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:31
+#: ../../docs/development/compiling/compiling_for_osx.rst:37
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:33
-msgid "Start a terminal, go to the root directory of the engine source code."
-msgstr "启动终端，进入引擎源代码的根目录。"
-
-#: ../../docs/development/compiling/compiling_for_osx.rst:35
-msgid "To compile for Intel (x86-64) powered Macs, use::"
-msgstr "若要为英特尔（x86-64）架构的Mac编译，请使用："
-
 #: ../../docs/development/compiling/compiling_for_osx.rst:39
-#, fuzzy
-msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
-msgstr ""
-"若要为Apple Silicon（ARM64）架构的Mac编译，请使用（仅支持Godot 3.2.3+）："
+msgid "Start a terminal, go to the root directory of the engine source code."
+msgstr "启动终端,进入引擎源代码的根目录."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:43
+#: ../../docs/development/compiling/compiling_for_osx.rst:41
+msgid "To compile for Intel (x86-64) powered Macs, use::"
+msgstr "若要为英特尔(x86-64)架构的Mac编译,请使用:"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:45
+msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
+msgstr "要为Apple硅(ARM64)驱动的Mac编译,请使用::"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:49
 msgid ""
 "To support both architectures in a single \"Universal 2\" binary, run the "
 "above two commands and then use ``lipo`` to bundle them together::"
 msgstr ""
-"要在一个 \"Universal 2 \"二进制中支持这两种架构，请运行上述两个命令，然后使用"
-"``lipo``将它们捆绑在一起：："
+"要在一个 \"Universal 2 \"二进制中支持这两种架构,请运行上述两个命令,然后使用"
+"``lipo``将它们捆绑在一起::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:47
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:53
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "``bin/`` subdirectory. This executable file contains the whole engine and "
 "runs without any dependencies. Executing it will bring up the project "
 "manager."
 msgstr ""
-"如果一切顺利，生成的二进制可执行文件将放在 `` bin`` 子目录中。该可执行文件包"
-"含整个引擎，并且运行时无需任何依赖项。 执行它将会启动项目管理器。"
+"如果一切顺利,产生的二进制可执行文件将被放置在 ``bin/`` 子目录中.这个可执行文"
+"件包含整个引擎,运行时没有任何依赖性.执行它将会弹出项目管理器."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:52
+#: ../../docs/development/compiling/compiling_for_osx.rst:58
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
 "official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
-"如果你想为自己的Godot构建和官方发布使用单独的编辑器设置，你可以通过在``bin/``"
-"文件夹中创建一个名为``._sc_``或``_sc_```的文件来启用:ref:"
-"`doc_data_paths_self_contained_mode`。"
+"如果你想为自己的Godot构建和官方发布使用单独的编辑器设置,你可以通过在 ``bin/"
+"`` 文件夹中创建一个名为 ``._sc_`` 或 ``_sc_`` 的文件来启用 :ref:"
+"`doc_data_paths_self_contained_mode`."
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:57
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:63
 msgid ""
 "To create an ``.app`` bundle like in the official builds, you need to use "
 "the template located in ``misc/dist/osx_tools.app``. Typically, for an "
 "optimized editor binary built with ``target=release_debug``::"
 msgstr ""
-"要像在官方版本中那样创建.app，您需要使用位于 ``misc/dist/osx_tools.app`` 中的"
-"模板。通常，使用 ``scons p=osx target=release_debug`` 用于 ``.64`` 优化二进制"
-"文件构建："
+"要创建一个像官方构建的 ``.app`` 捆绑包,你需要使用位于 ``misc/dist/osx_tools."
+"app`` 的模板.通常,对于用 ``target=release_debug'`` 构建的优化编辑器可执行文"
+"件::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:67
+#: ../../docs/development/compiling/compiling_for_osx.rst:73
 msgid "Compiling a headless/server build"
 msgstr "编译精简和服务器构建"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:69
+#: ../../docs/development/compiling/compiling_for_osx.rst:75
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
-msgstr "要编译一个 *精简* 构建，它提供了编辑器功能，可以自动导出项目，使用::"
+msgstr "要编译一个 *精简* 构建,它提供了编辑器功能,可以自动导出项目,使用::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:74
+#: ../../docs/development/compiling/compiling_for_osx.rst:80
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
-msgstr "要编译一个经过优化以运行专用游戏的 *服务器* 版本，使用以下构建选项::"
+msgstr "要编译一个经过优化以运行专用游戏的 *服务器* 版本,使用以下构建选项::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:80
+#: ../../docs/development/compiling/compiling_for_osx.rst:86
+msgid "Building export templates"
+msgstr "构建导出模板"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:88
+msgid ""
+"To build macOS export templates, you have to compile with ``tools=no`` (no "
+"editor) and respectively for ``target=release`` (release template) and "
+"``target=release_debug``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:92
+msgid ""
+"Official templates are universal binaries which support both Intel x86_64 "
+"and ARM64 architectures. You can also create export templates that support "
+"only one of those two architectures by leaving out the ``lipo`` step below."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:96
+msgid "For Intel x86_64::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:101
+msgid "For ARM64 (Apple M1)::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:106
 #, fuzzy
+msgid ""
+"To support both architectures in a single \"Universal 2\" binary, run the "
+"above two commands blocks and then use ``lipo`` to bundle them together::"
+msgstr ""
+"要在一个 \"Universal 2 \"二进制中支持这两种架构,请运行上述两个命令,然后使用"
+"``lipo``将它们捆绑在一起::"
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:112
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/osx_template.app``. The release and "
+"debug builds should be placed in ``osx_template.app/Contents/MacOS`` with "
+"the names ``godot_osx_release.64`` and ``godot_osx_debug.64`` respectively. "
+"You can do so with the following commands (assuming a universal build, "
+"otherwise replace the ``.universal`` extension with the one of your arch-"
+"specific binaries)::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:125
+msgid ""
+"You can then zip the ``osx_template.app`` folder to reproduce the ``osx."
+"zip`` template from the official Godot distribution::"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:131
 msgid "Cross-compiling for macOS from Linux"
-msgstr "在Linux平台上为iOS做交叉编译"
+msgstr "从Linux交叉编译macOS"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:82
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:133
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows using the Windows Subsystem for Linux). For that, you'll need to "
 "install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able "
 "to use macOS as a target. First, follow the instructions to install it:"
 msgstr ""
-"可以在Linux环境中为macOS编译（也可以在带有Cygwin的Windows中）。 为此，您需要 "
-"`OSXCross <https://github.com/tpoechtrager/osxcross>`__ 才能使用macOS作为目标"
-"平台。首先，按照说明安装它："
+"在Linux环境下为macOS进行编译是可行的(也许也可以在Windows中使用Windows "
+"Subsystem for Linux).为此,你需要安装 `OSXCross <https://github.com/"
+"tpoechtrager/osxcross>`__ ,以便能够使用macOS作为目标.首先,按照说明来安装它:"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:87
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:138
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
 "somewhere on your machine (or download a ZIP file and extract it somewhere), "
 "e.g.::"
 msgstr ""
-"在您机器的某个地方克隆 `OSXCross存储库 <https://github.com/tpoechtrager/"
-"osxcross>`_ （或下载一个zip文件并将其解压缩到某处），例如："
+"在你的机器上某处克隆 `OSXCross资源库<https://github.com/tpoechtrager/"
+"osxcross>`__ (或者下载一个ZIP文件并解压缩),例如::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:93
+#: ../../docs/development/compiling/compiling_for_osx.rst:144
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
-"按照说明打包SDK：https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
+"按照说明打包SDK:https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:95
+#: ../../docs/development/compiling/compiling_for_osx.rst:146
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
-"按照说明安装OSXCross：https://github.com/tpoechtrager/osxcross#installation"
+"按照说明安装OSXCross:https://github.com/tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:98
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:149
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.::"
 msgstr ""
-"之后，您需要将 ``OSXCROSS_ROOT`` 定义为OSXCross的安装路径（您克隆存储库/提取"
-"zip的位置），例如："
+"之后,你需要将 ``OSXCROSS_ROOT`` 定义为OSXCross的安装路径(与你克隆软件库/提取"
+"压缩包的地方相同),例如::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:104
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:155
 msgid "Now you can compile with SCons like you normally would::"
-msgstr "现在您可以像通常那样使用SCons进行编译："
+msgstr "现在你可以像平时一样用SCons进行编译::"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:108
-#, fuzzy
+#: ../../docs/development/compiling/compiling_for_osx.rst:159
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "
 "argument::"
 msgstr ""
-"如果您的OSXCross SDK版本与SCons构建系统期望的版本不同，则可以使用 "
-"``osxcross_sdk`` 参数指定自定义版本："
+"如果你的OSXCross SDK版本与SCons构建系统所期望的不同,你可以用 "
+"``osxcross_sdk`` 参数指定一个自定义的版本::"

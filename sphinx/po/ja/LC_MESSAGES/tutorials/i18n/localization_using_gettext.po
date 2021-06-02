@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,14 +144,16 @@ msgstr ""
 "トの静的インストーラーを選択してください。"
 
 #: ../../docs/tutorials/i18n/localization_using_gettext.rst:56
+#, fuzzy
 msgid ""
-"**macOS:** Use `Homebrew <https://brew.sh/>`_ to install gettext with the "
-"``brew install gettext`` command."
+"**macOS:** Install gettext either using `Homebrew <https://brew.sh/>`_ with "
+"the ``brew install gettext`` command, or using `MacPorts <https://www."
+"macports.org/>`_ with the ``sudo port install gettext`` command."
 msgstr ""
 "**macOS:** `Homebrew <https://brew.sh/>`_ を使用して ``brew install "
 "gettext`` コマンドでgettextをインストールします。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:58
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:60
 msgid ""
 "**Linux:** On most distributions, install the ``gettext`` package from your "
 "distribution's package manager."
@@ -159,11 +161,11 @@ msgstr ""
 "**Linux:** ほとんどのディストリビューションでは、ディストリビューションのパッ"
 "ケージマネージャーから ``gettext`` パッケージをインストールします。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:62
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
 msgid "Creating the PO template (POT) manually"
 msgstr "POテンプレート (POT)の手動作成"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:64
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:66
 msgid ""
 "Godot currently doesn't support extracting source strings using "
 "``xgettext``, so the ``.pot`` file must be created manually. This file can "
@@ -175,7 +177,7 @@ msgstr ""
 "ジェクトディレクトリのどこにでも配置できますが、各ロケールは個別のファイルで"
 "定義されるため、サブディレクトリに保存することをお勧めします。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:69
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:71
 msgid ""
 "Create a directory named `locale` in the project directory. In this "
 "directory, save a file named ``messages.pot`` with the following contents:"
@@ -184,7 +186,7 @@ msgstr ""
 "のディレクトリに、次の内容の ``messages.pot`` という名前のファイルを保存しま"
 "す:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:81
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:83
 msgid ""
 "Messages in gettext are made of ``msgid`` and ``msgstr`` pairs. ``msgid`` is "
 "the source string (usually in English), ``msgstr`` will be the translated "
@@ -194,7 +196,7 @@ msgstr ""
 "す。\\ ``msgid`` はソース文字列(通常は英語)で、\\ ``msgstr`` は翻訳された文字"
 "列です。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:85
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:87
 msgid ""
 "The ``msgstr`` value in PO template files (``.pot``) should **always** be "
 "empty. Localization will be done in the generated ``.po`` files instead."
@@ -202,11 +204,11 @@ msgstr ""
 "POテンプレートファイル(``.pot``)の ``msgstr`` 値は\\ **常に**\\ 空である必要"
 "があります。代わりに、生成された ``.po`` ファイルでローカライズが行われます。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:89
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
 msgid "Creating the PO template (POT) using pybabel"
 msgstr "pybabelを使ったPOテンプレート(POT)の作成"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:91
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:93
 msgid ""
 "The Python tool pybabel has support for Godot and can be used to "
 "automatically create and update the POT file from your scene files and "
@@ -215,12 +217,12 @@ msgstr ""
 "PythonツールpybabelはGodotをサポートしており、シーンファイルとスクリプトから"
 "POTファイルを自動的に作成および更新するために使用できます。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:94
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:96
 msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
 msgstr ""
 "``babel`` と ``babel-godot`` をインストールした後、例えばpipを使用して:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:100
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:102
 msgid ""
 "Write a mapping file (for example ``babelrc``) which will indicate which "
 "files pybabel needs to process (note that we process GDScript as Python, "
@@ -230,11 +232,11 @@ msgstr ""
 "``babelrc``)を記述します(GDScriptをPythonとして処理することに注意してくださ"
 "い。通常はこれで事足ります):"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:112
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:114
 msgid "You can then run pybabel like so:"
 msgstr "pybabelを次のように実行できます:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:118
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:120
 msgid ""
 "Use the ``-k`` option to specify what needs to be extracted. In this case, "
 "arguments to :ref:`tr() <class_Object_method_tr>` will be translated, as "
@@ -246,11 +248,11 @@ msgstr ""
 "で一般的に使用される)\"text\"、およびLineEditの \"placeholder_text\"という名"
 "前のプロパティが変換されます。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:124
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
 msgid "Creating a messages file from a PO template"
 msgstr "POテンプレートからメッセージファイルを作成する"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:126
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:128
 msgid ""
 "The ``msginit`` command is used to turn a PO template into a messages file. "
 "For instance, to create a French localization file, use the following "
@@ -260,7 +262,7 @@ msgstr ""
 "用されます。たとえば、フランス語のローカライズファイルを作成するには、\\ "
 "``locale`` ディレクトリで次のコマンドを使用します:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:134
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:136
 msgid ""
 "The command above will create a file named ``fr.po`` in the same directory "
 "as the PO template."
@@ -268,7 +270,7 @@ msgstr ""
 "上記のコマンドは、POテンプレートと同じディレクトリに ``fr.po`` という名前の"
 "ファイルを作成します。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:137
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:139
 msgid ""
 "Alternatively, you can do that graphically using Poedit, or by uploading the "
 "POT file to your web platform of choice."
@@ -276,11 +278,11 @@ msgstr ""
 "または、Poeditを使用してグラフィカルに行うか、選択したWebプラットフォームに"
 "POTファイルをアップロードします。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:141
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
 msgid "Loading a messages file in Godot"
 msgstr "Godot でのメッセージ ファイルの読み込み"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:143
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:145
 msgid ""
 "To register a messages file as a translation in a project, open the "
 "**Project Settings**, then go to the **Localization** tab. In "
@@ -294,7 +296,7 @@ msgstr ""
 "ロケールは、メッセージファイルの ``\"Language:<code>\\n\"`` プロパティから推"
 "測されます。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:149
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:151
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
 "and testing translations in Godot."
@@ -302,11 +304,11 @@ msgstr ""
 "Godotでの翻訳のインポートとテストの詳細については、\\ :ref:"
 "`doc_internationalizing_games` を参照してください。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:153
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
 msgid "Updating message files to follow the PO template"
 msgstr "POテンプレートに従うようにメッセージファイルを更新する"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:155
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:157
 msgid ""
 "After updating the PO template, you will have to update message files so "
 "that they contain new strings, while removing strings that are no longer "
@@ -318,7 +320,7 @@ msgstr ""
 "ルを更新する必要があります。これは ``msgmerge`` ツールを使用して自動的に実行"
 "できます:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:165
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:167
 msgid ""
 "If you want to keep a backup of the original message file (which would be "
 "saved as ``fr.po~`` in this example), remove the ``--backup=none`` argument."
@@ -326,11 +328,11 @@ msgstr ""
 "元のメッセージファイル(この例では ``fr.po~`` として保存される)のバックアップ"
 "を保持する場合は、\\ ``--backup=none`` 引数を削除します。"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:169
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
 msgid "Checking the validity of a PO file or template"
 msgstr "POファイルまたはテンプレートの有効性の確認"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:171
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:173
 msgid ""
 "It is possible to check whether a gettext file's syntax is valid by running "
 "the command below:"
@@ -338,7 +340,7 @@ msgstr ""
 "以下のコマンドを実行すると、gettextファイルの構文が有効かどうかを確認できま"
 "す:"
 
-#: ../../docs/tutorials/i18n/localization_using_gettext.rst:178
+#: ../../docs/tutorials/i18n/localization_using_gettext.rst:180
 msgid ""
 "If there are syntax errors or warnings, they will be displayed in the "
 "console. Otherwise, ``msgfmt`` won't output anything."

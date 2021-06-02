@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/soft_body.rst:4
-msgid "SoftBody"
+#, fuzzy
+msgid "Using SoftBody"
 msgstr "软体"
 
 #: ../../docs/tutorials/physics/soft_body.rst:6
@@ -27,8 +28,8 @@ msgid ""
 "other physical properties of deformable objects. This can for example be "
 "used to simulate cloth or to create more realistic characters."
 msgstr ""
-"柔体(或*柔体动力学*)模拟可变形物体的运动、改变形状和其他物理特性。例如，这可"
-"以用于模拟布料或创建更逼真的角色。"
+"柔体(或*柔体动力学*)模拟可变形物体的运动、改变形状和其他物理特性.例如,这可以"
+"用于模拟布料或创建更逼真的角色."
 
 #: ../../docs/tutorials/physics/soft_body.rst:10
 msgid "Basic set-up"
@@ -37,11 +38,11 @@ msgstr "基本结构"
 #: ../../docs/tutorials/physics/soft_body.rst:12
 msgid ""
 "A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
-msgstr "一个软体节点用于模拟柔软的物体。参考：`软体<类_软体>`。"
+msgstr "一个软体节点用于模拟柔软的物体.参考:`软体<类_软体>`."
 
 #: ../../docs/tutorials/physics/soft_body.rst:14
 msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
-msgstr "我们将创建一个弹性立方体来演示软体的设置。"
+msgstr "我们将创建一个弹性立方体来演示软体的设置."
 
 #: ../../docs/tutorials/physics/soft_body.rst:16
 msgid ""
@@ -49,17 +50,17 @@ msgid ""
 "``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
 "in the inspector and increase the subdivision of the mesh for simulation."
 msgstr ""
-"创建一个以``Spatial``节点为根节点的新场景。然后再创建一个``Softbody``节点。之"
-"后在``Softbody``节点的属性面板（inspector ）中的``mesh``中添加``CubeMesh``并"
-"增加网格的细分以进行模拟。"
+"创建一个以``Spatial``节点为根节点的新场景.然后再创建一个``Softbody``节点.之后"
+"在``Softbody``节点的属性面板(inspector )中的``mesh``中添加``CubeMesh``并增加"
+"网格的细分以进行模拟."
 
 #: ../../docs/tutorials/physics/soft_body.rst:20
 msgid ""
 "Set the parameters to obtain the type of soft body you aim for. Try to keep "
 "the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
 msgstr ""
-"设置参数以获得您想要的软体类型。尽量保持“模拟精度”（Simulation Precision）的"
-"数值高于5，否则，该软体结构可能会瓦解。"
+"设置参数以获得您想要的软体类型.尽量保持\"模拟精度\"(Simulation Precision)的数"
+"值高于5,否则,该软体结构可能会瓦解."
 
 #: ../../docs/tutorials/physics/soft_body.rst:24
 msgid ""
@@ -68,20 +69,19 @@ msgid ""
 "more than 0, the softbody will fly around like a plastic bag under strong "
 "wind."
 msgstr ""
-"小心处理一些参数，因为改动某些数值会导致奇怪的结果。 例如，如果形状未完全封闭"
-"并且您将压力设置为大于0，则软体将如同在强风下的塑料袋一样飞舞。"
+"小心处理一些参数,因为改动某些数值会导致奇怪的结果. 例如,如果形状未完全封闭并"
+"且您将压力设置为大于0,则软体将如同在强风下的塑料袋一样飞舞."
 
 #: ../../docs/tutorials/physics/soft_body.rst:26
 msgid "Play the scene to view the simulation."
-msgstr "播放该场景以查看模拟结果。"
+msgstr "播放该场景以查看模拟结果."
 
 #: ../../docs/tutorials/physics/soft_body.rst:28
 msgid ""
 "To improve the simulation's result, increase the ``Simulation Precision``, "
 "this will give significant improvement at the cost of performance."
 msgstr ""
-"为了改善模拟结果，增加“模拟精度”（Simulation Precision），会大幅度增加性能成"
-"本。"
+"为了改善模拟结果,增加\"模拟精度\"(Simulation Precision),会大幅度增加性能成本."
 
 #: ../../docs/tutorials/physics/soft_body.rst:31
 msgid "Cloak simulation"
@@ -89,7 +89,7 @@ msgstr "斗篷模拟"
 
 #: ../../docs/tutorials/physics/soft_body.rst:33
 msgid "Let's make a cloak in the Platformer3D demo."
-msgstr "我们将在三维平台游戏演示中制作一个斗篷。"
+msgstr "我们将在三维平台游戏演示中制作一个斗篷."
 
 #: ../../docs/tutorials/physics/soft_body.rst:35
 msgid ""
@@ -106,8 +106,8 @@ msgid ""
 "Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
 "``PlaneMesh`` to it."
 msgstr ""
-"打开“玩家”（Player）场景，添加一个“软体”（SoftBody）节点并为其指定一个“平面网"
-"格”（PlaneMesh）。"
+"打开\"玩家\"(Player)场景,添加一个\"软体\"(SoftBody)节点并为其指定一个\"平面网"
+"格\"(PlaneMesh)."
 
 #: ../../docs/tutorials/physics/soft_body.rst:39
 msgid ""
@@ -115,21 +115,21 @@ msgid ""
 "``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
 "position. You should end up with something like this:"
 msgstr ""
-"打开“平面网格”（PlaneMesh）属性并设置大小（x：0.5 y：1）然后将“细分宽"
-"度”（Subdivide Width）和“细分深度”（Subdivide Depth）设置为5。调整“软"
-"体”（SoftBody）的位置。您应该看到如下所示："
+"打开\"平面网格\"(PlaneMesh)属性并设置大小(x:0.5 y:1)然后将\"细分宽度"
+"\"(Subdivide Width)和\"细分深度\"(Subdivide Depth)设置为5.调整\"软体"
+"\"(SoftBody)的位置.您应该看到如下所示:"
 
 #: ../../docs/tutorials/physics/soft_body.rst:43
 msgid "Subdivision generates a more tessellated mesh for better simulations."
-msgstr "细分会生成更细密的网格，以便更好的模拟。"
+msgstr "细分会生成更细密的网格,以便更好的模拟."
 
 #: ../../docs/tutorials/physics/soft_body.rst:45
 msgid ""
 "Add a :ref:`BoneAttachment <class_BoneAttachment>` node under the skeleton "
 "node and select the Neck bone to attach the cloak to the character skeleton."
 msgstr ""
-"在骨架节点下添加：参考：`附属骨骼<类_附属骨骼>`节点，然后选择颈部（Neck）骨"
-"骼，将斗篷附加到角色骨架。"
+"在骨架节点下添加:参考:`附属骨骼<类_附属骨骼>`节点,然后选择颈部(Neck)骨骼,将斗"
+"篷附加到角色骨架."
 
 #: ../../docs/tutorials/physics/soft_body.rst:47
 msgid ""
@@ -137,38 +137,36 @@ msgid ""
 "attached object will follow the bone's movement, weapon of a character can "
 "be attached this way."
 msgstr ""
-"“附属骨骼”节点是将物体连接到盔甲的单根骨上。附着的物体会随着单根骨的运动，角"
-"色的武器可以通过这种方式附加。"
+"\"附属骨骼\"节点是将物体连接到盔甲的单根骨上.附着的物体会随着单根骨的运动,角"
+"色的武器可以通过这种方式附加."
 
 #: ../../docs/tutorials/physics/soft_body.rst:51
 msgid ""
 "To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
-msgstr "要创建固定的关节，选择“软体”节点上的顶点："
+msgstr "要创建固定的关节,选择\"软体\"节点上的顶点:"
 
 #: ../../docs/tutorials/physics/soft_body.rst:55
-#, fuzzy
 msgid ""
 "The pinned joints can be found in ``SoftBody``'s ``Attachments`` property, "
 "choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
 "joints, the pinned joints are now attached to the neck."
 msgstr ""
-"固定节点可以在“软体”的“附属”属性中找到，选择“附属骨骼”作为每个固定关节的“空间"
-"附属”，现在固定关节连接到脖子上。"
+"在 ``SoftBody`` 的 ``Attachments`` 属性中可以找到图钉关节,为每个被图钉关节选"
+"择 ``BoneAttachment`` 作为 ``SpatialAttachment`` ,被图钉关节连接到颈部."
 
 #: ../../docs/tutorials/physics/soft_body.rst:59
 msgid ""
 "Last step is to avoid clipping by adding the Kinematic Body `Player` to "
 "``Parent Collision Ignore`` of the ``SoftBody``."
 msgstr ""
-"最后一步，通过在“软体”的“忽略父级碰撞”中添加动力学物体“玩家”来避免裁切。"
+"最后一步,通过在\"软体\"的\"忽略父级碰撞\"中添加动力学物体\"玩家\"来避免裁切."
 
 #: ../../docs/tutorials/physics/soft_body.rst:63
 msgid "Play the scene and the cloak should simulate correctly."
-msgstr "播放场景，应该已经正确模拟了斗篷。"
+msgstr "播放场景,应该已经正确模拟了斗篷."
 
 #: ../../docs/tutorials/physics/soft_body.rst:67
 msgid ""
 "This covers the basic settings of softbody, experiment with the parameters "
 "to achieve the effect you are aiming for when making your game."
-msgstr ""
-"这涵盖了软体的基本设置，当你制作游戏时，尝试这些参数来达到你想要的效果。"
+msgstr "这涵盖了软体的基本设置,当你制作游戏时,尝试这些参数来达到你想要的效果."

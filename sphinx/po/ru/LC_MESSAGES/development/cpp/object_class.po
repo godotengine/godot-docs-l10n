@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,10 +57,12 @@ msgid "References:"
 msgstr "Источники:"
 
 #: ../../docs/development/cpp/object_class.rst:38
+#, fuzzy
 msgid ""
-"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
 "h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:41
 msgid "Registering an Object"
@@ -148,10 +150,13 @@ msgstr ""
 "с именем может быть использована для краткости."
 
 #: ../../docs/development/cpp/object_class.rst:96
+#, fuzzy
 msgid ""
-"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
@@ -366,10 +371,13 @@ msgstr ""
 "Ref<> указывающих на него."
 
 #: ../../docs/development/cpp/object_class.rst:261
+#, fuzzy
 msgid ""
-"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "reference.h>`__"
 msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources:"
@@ -395,10 +403,12 @@ msgid "Resources without a path are fine too."
 msgstr "Ресурсы без пути тоже возможны."
 
 #: ../../docs/development/cpp/object_class.rst:277
+#, fuzzy
 msgid ""
-"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
 msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid "Resource loading"
@@ -423,10 +433,11 @@ msgid "resourceinteractiveloader (TODO)"
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:298
+#, fuzzy
 msgid ""
-"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_loader.h>`__"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid "Resource saving"
@@ -449,7 +460,8 @@ msgstr ""
 "\"res://someresource.res::1\". Это также помогает кэшировать их при загрузке."
 
 #: ../../docs/development/cpp/object_class.rst:317
+#, fuzzy
 msgid ""
-"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_saver.h>`__"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"

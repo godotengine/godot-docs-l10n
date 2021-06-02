@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,8 @@ msgid ""
 "Custom nodes are written in GDScript and can then be used in VisualScript. "
 "This is useful for offloading complex code to GDScript and reusing it."
 msgstr ""
-"自定义节点可以用 GDScript 定义，并在 VisualScript (可视化脚本) 中使用。这对分"
-"流复杂代码到 GDScript 并反复使用尤为有用。"
+"自定义节点可以用 GDScript 定义,并在 VisualScript (可视化脚本) 中使用.这对分流"
+"复杂代码到 GDScript 并反复使用尤为有用."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:10
 msgid "Creating a custom node"
@@ -39,8 +39,8 @@ msgid ""
 "a ``tool`` keyword at the top. This is needed for the script to run in the "
 "editor."
 msgstr ""
-"新建一个继承 :ref:`class_VisualScriptCustomNode` 类的脚本，并在代码顶端添加 "
-"``tool`` 关键字。 ``tool`` 能让脚本在编辑器中运行。"
+"新建一个继承 :ref:`class_VisualScriptCustomNode` 类的脚本,并在代码顶端添加 "
+"``tool`` 关键字. ``tool`` 能让脚本在编辑器中运行."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:14
 msgid ""
@@ -50,41 +50,40 @@ msgid ""
 "``false`` for example."
 msgstr ""
 "你可以实现一些能够设置自定义节点参数的函数 (继承自 VisualScriptCustomNode 的"
-"虚函数)。只需要实现那些有必要的函数，假如你知道 ``_has_input_sequence_port`` "
-"一定会返回 ``false``，则没有必要实现它。"
+"虚函数).只需要实现那些有必要的函数,假如你知道 ``_has_input_sequence_port`` 一"
+"定会返回 ``false``,则没有必要实现它."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:17
 msgid ""
 "The most important part of a custom node is the ``_step`` function. The "
 "logic of the node is defined there."
 msgstr ""
-"自定义节点最重要的部分就是``_step`` 函数。你需要在这个函数中定义节点的逻辑。"
+"自定义节点最重要的部分就是``_step`` 函数.你需要在这个函数中定义节点的逻辑."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:19
 msgid "The ``inputs`` parameter holds the value of the input ports."
-msgstr "``inputs`` 参数传入可视化节点输入端口的值。"
+msgstr "``inputs`` 参数传入可视化节点输入端口的值."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:21
 msgid ""
 "The ``outputs`` parameter is an array where the indices represent the output "
 "port ids. It can be modified to set the values of the output ports."
 msgstr ""
-"``outputs`` 参数是一个数组，数组下标代表了输出接口的 ID。可以通过修改数组元素"
-"来修改输出接口的值。"
+"``outputs`` 参数是一个数组,数组下标代表了输出接口的 ID.可以通过修改数组元素来"
+"修改输出接口的值."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:23
 msgid ""
 "``start_mode`` can be checked to see if it is the first time ``_step`` is "
 "called."
-msgstr "``start_mode`` 可以用来检查是否是首次调用 ``_step`` 函数。"
+msgstr "``start_mode`` 可以用来检查是否是首次调用 ``_step`` 函数."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:25
 msgid ""
 "``working_mem`` is persistent each ``_step`` call. It can be used to store "
 "information."
 msgstr ""
-"``working_mem`` 每次调用 ``_step`` 时不变（引用同一个数组）。可以用它来储存信"
-"息。"
+"``working_mem`` 每次调用 ``_step`` 时不变(引用同一个数组).可以用它来储存信息."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:27
 msgid ""
@@ -93,13 +92,13 @@ msgid ""
 "return the id of the sequence port which should be called next. If your "
 "custom node doesn't have any, just return 0."
 msgstr ""
-"若你想抛出一个错误，例如输入类型不正确时，可以将错误信息返回为字符串。若一切"
-"安好，则返回下一个将被调用的序列接口的 ID。如果你的自定义节点没有需要调用的接"
-"口，则返回 0。"
+"若你想抛出一个错误,例如输入类型不正确时,可以将错误信息返回为字符串.若一切安"
+"好,则返回下一个将被调用的序列接口的 ID.如果你的自定义节点没有需要调用的接口,"
+"则返回 0."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:31
 msgid "Example:"
-msgstr "示例："
+msgstr "示例:"
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:94
 msgid "Using a custom node"
@@ -110,8 +109,8 @@ msgid ""
 "To use the script, add a ``CustomNode``, select it and drag your custom node "
 "script into the ``script`` property shown in the inspector."
 msgstr ""
-"要使用你的自定义节点脚本，视图上方点击添加节点，新增一个 ``CustomNode``，选定"
-"它，并将你的脚本拖拽进属性面板中的 script 属性中。"
+"要使用你的自定义节点脚本,视图上方点击添加节点,新增一个 ``CustomNode``,选定它,"
+"并将你的脚本拖拽进属性面板中的 script 属性中."
 
 #: ../../docs/getting_started/scripting/visual_script/custom_visualscript_nodes.rst:100
 msgid "Result:"

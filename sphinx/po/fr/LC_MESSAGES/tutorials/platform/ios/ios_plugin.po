@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,8 @@ msgid ""
 "This page explains what iOS plugins can do for you, how to use an existing "
 "plugin, and the steps to code a new one."
 msgstr ""
+"Cette page explique ce que les plugins iOS peuvent faire pour vous, comment "
+"utiliser un plugin existant et les étapes pour en coder un nouveau."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:8
 msgid ""
@@ -34,6 +36,9 @@ msgid ""
 "features like In-App Purchases, GameCenter integration, ARKit support, and "
 "more."
 msgstr ""
+"Les plugins iOS vous permettent d'utiliser des bibliothèques tierces et de "
+"prendre en charge des fonctionnalités spécifiques à iOS, comme les achats en "
+"application, l'intégration de GameCenter, la prise en charge d'ARKit, etc."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:11
 #, fuzzy
@@ -46,6 +51,10 @@ msgid ""
 "can be either ``.a`` static library or ``.xcframework`` containing ``.a`` "
 "static libraries, and possibly other dependencies. To use it, you need to:"
 msgstr ""
+"Un plugin iOS nécessite un fichier de configuration ``.gdip``, un fichier "
+"binaire qui peut être soit une bibliothèque statique ``.a`` soit un fichier "
+"``.xcframework`` contenant des bibliothèques statiques ``.a``, et "
+"éventuellement d'autres dépendances. Pour l'utiliser, vous devez :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:15
 msgid ""
@@ -53,24 +62,34 @@ msgid ""
 "directory. You can also group files in a sub-directory, like ``res://ios/"
 "plugins/my_plugin``."
 msgstr ""
+"Copiez les fichiers du plugin dans le répertoire ``res://ios/plugins`` de "
+"votre projet Godot. Vous pouvez également regrouper les fichiers dans un "
+"sous-répertoire, comme ``res://ios/plugins/my_plugin``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:17
 msgid ""
 "The Godot editor automatically detects and imports ``.gdip`` files inside "
 "``res://ios/plugins`` and its subdirectories."
 msgstr ""
+"L'éditeur Godot détecte et importe automatiquement les fichiers ``.gdip`` "
+"dans ``res://ios/plugins`` et ses sous-répertoires."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:19
 msgid ""
 "You can find and activate detected plugins by going to Project -> Export... -"
 "> iOS and in the Options tab, scrolling to the Plugins section."
 msgstr ""
+"Vous pouvez trouver et activer les plugins détectés en allant dans Projet -> "
+"Exporter... -> iOS et dans l'onglet Options, faire défiler jusqu'à la "
+"section Plugins."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:23
 msgid ""
 "When a plugin is active, you can access it in your using ``Engine."
 "get_singleton()``::"
 msgstr ""
+"Lorsqu'un plugin est actif, vous pouvez y accéder en utilisant ``Engine."
+"get_singleton()`` :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:30
 #, fuzzy
@@ -82,20 +101,28 @@ msgid ""
 "At its core, a Godot iOS plugin is an iOS library (*.a* archive file or *."
 "xcframework* containing static libraries) with the following requirements:"
 msgstr ""
+"À la base, un plugin Godot iOS est une bibliothèque iOS (fichier d'archive *."
+"a* ou *.xcframework* contenant des bibliothèques statiques) avec les "
+"exigences suivantes :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:34
 msgid "The library must have a dependency on the Godot engine headers."
 msgstr ""
+"La bibliothèque doit avoir une dépendance sur les en-têtes du moteur Godot."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:36
 msgid "The library must come with a ``.gdip`` configuration file."
 msgstr ""
+"La bibliothèque doit être accompagnée d'un fichier de configuration ``."
+"gdip``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:38
 msgid ""
 "An iOS plugin can have the same functionality as a Godot module but provides "
 "more flexibility and doesn't require to rebuild the engine."
 msgstr ""
+"Un plugin iOS peut avoir la même fonctionnalité qu'un module Godot mais "
+"offre plus de flexibilité et ne nécessite pas de recompiler le moteur."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:40
 msgid ""
@@ -103,15 +130,17 @@ msgid ""
 "`Xcode <https://developer.apple.com/develop/>`_ as your development "
 "environment."
 msgstr ""
+"Voici les étapes pour démarrer le développement d'un plugin. Nous vous "
+"recommandons d'utiliser `Xcode <https://developer.apple.com/develop/>`_ "
+"comme environnement de développement."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:42
-#, fuzzy
 msgid ""
 "The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
 "Godot iOS plugins."
 msgstr ""
-"`Godot Google Play Billing plugin <https://github.com/godotengine/godot-"
-"google-play-billing>`_"
+"Les `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
+"plugins Godot iOS."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:44
 msgid ""
@@ -119,15 +148,18 @@ msgid ""
 "godot_ios_plugin>`_ gives you all the boilerplate you need to get your iOS "
 "plugin started."
 msgstr ""
+"Le `modèle de plugin Godot iOS <https://github.com/naithar/"
+"godot_ios_plugin>`_ vous donne tout le \"boilerplate\" dont vous avez besoin "
+"pour démarrer votre plugin iOS."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:47
-#, fuzzy
 msgid "To build an iOS plugin:"
-msgstr "Compiler un plugin Android"
+msgstr "Pour compiler un plugin iOS :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:49
 msgid "Create an Objective-C static library for your plugin inside Xcode."
 msgstr ""
+"Créez une bibliothèque statique Objective-C pour votre plugin dans Xcode."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:51
 msgid ""
@@ -135,6 +167,9 @@ msgid ""
 "``HEADER_SEARCH_PATHS``. You can find the setting inside the ``Build "
 "Settings`` tab:"
 msgstr ""
+"Ajoutez les fichiers header du moteur Godot comme une dépendance pour votre "
+"bibliothèque de plugins dans ``HEADER_SEARCH_PATHS``. Vous pouvez trouver ce "
+"paramètre dans l'onglet ``Paramètres de compilation`` :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:53
 #, fuzzy
@@ -150,12 +185,18 @@ msgid ""
 "`doc_compiling_for_ios`. You don't have to wait for compilation to complete "
 "to move forward as headers are generated before the engine starts to compile."
 msgstr ""
+"Exécutez SCons pour générer les fichier header. Vous pouvez apprendre le "
+"processus en lisant :ref:`doc_compiling_for_ios`. Vous n'avez pas besoin "
+"d'attendre la fin de la compilation pour avancer, car les en-têtes sont "
+"générés avant que le moteur ne commence à compiler."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:57
 msgid ""
 "You should use the same header files for iOS plugins and for the iOS export "
 "template."
 msgstr ""
+"Vous devez utiliser les mêmes fichiers header pour les plugins iOS et pour "
+"le modèle d'exportation iOS."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:59
 msgid ""
@@ -166,6 +207,13 @@ msgid ""
 "DDEBUG_ENABLED, -DDEBUG_MEMORY_ALLOC -DDISABLE_FORCED_INLINE -"
 "DTYPED_METHOD_BIND``."
 msgstr ""
+"Dans l'onglet ``paramètres de compilation``, spécifiez les options (flags) "
+"de compilation pour votre bibliothèque statique dans ``OTHER_CFLAGS``. Les "
+"plus importantes sont ``-fcxx-modules``, ``-fmodules``, et ``-DDEBUG`` si "
+"vous avez besoin du support de débogage. Les autres options doivent être les "
+"mêmes que celles que vous utilisez pour compiler Godot. Par exemple, ``-"
+"DPTRCALL_ENABLED -DDEBUG_ENABLED, -DDEBUG_MEMORY_ALLOC -"
+"DDISABLE_FORCED_INLINE -DTYPED_METHOD_BIND``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:61
 msgid ""
@@ -176,6 +224,13 @@ msgid ""
 "pattern: ``[PluginName].[TargetType].a``. You can also build the static "
 "library with your SCons configuration."
 msgstr ""
+"Ajoutez la logique requise pour votre plugin et compilez votre bibliothèque "
+"pour générer un fichier ``.a``. Vous aurez probablement besoin de compiler "
+"les fichiers ``.a`` : ``debug`` et ``release``. En fonction de vos besoins, "
+"choisissez l'un ou l'autre ou les deux. Si vous avez besoin à la fois des "
+"fichiers ``.a`` debug et release, leur nom doit correspondre au modèle "
+"suivant : ``[PluginName].[TargetType].a``. Vous pouvez également compiler la "
+"bibliothèque statique avec votre configuration SCons."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:63
 msgid ""
@@ -184,6 +239,10 @@ msgid ""
 "[DeviceLibrary].a -library [SimulatorLibrary].a -output [PluginName]."
 "xcframework``."
 msgstr ""
+"Le système de plugins iOS supporte également les fichiers ``.xcframework``. "
+"Pour en générer un, vous pouvez utiliser une commande telle que : "
+"``xcodebuild -create-xcframework -library [DeviceLibrary].a -library "
+"[SimulatorLibrary].a -output [PluginName].xcframework``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:65
 #, fuzzy
@@ -249,6 +308,9 @@ msgid ""
 "``MyPlugin.a`` and ``.a`` files should be named as ``MyPlugin.release.a`` "
 "and ``MyPlugin.debug.a``."
 msgstr ""
+"Si vous avez besoin d'une bibliothèque multi-cibles, le nom de fichier doit "
+"être ``MyPlugin.a`` et les fichiers ``.a`` doivent être nommés en ``MyPlugin."
+"release.a`` et ``MyPlugin.debug.a``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:101
 msgid ""
@@ -257,6 +319,10 @@ msgid ""
 "should be named as ``MyPlugin.release.xcframework`` and ``MyPlugin.debug."
 "xcframework``."
 msgstr ""
+"Si vous utilisez des bibliothèques ``xcframework`` à cibles multiples, leur "
+"nom de fichier dans la configuration doit être ``MyPlugin.xcframework``. Les "
+"fichiers ``.xcframework`` doivent être nommés ``MyPlugin.release."
+"xcframework`` et ``MyPlugin.debug.xcframework``."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:103
 #, fuzzy
@@ -264,24 +330,28 @@ msgid ""
 "The ``dependencies`` and ``plist`` sections are optional and defined as "
 "follow:"
 msgstr ""
-"La section et les champs ``dependencies`` sont facultatifs et définis comme "
-"suit :"
+"Les sections ``dependencies`` et ``plist`` sont facultatives et définies "
+"comme suit :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:105
 msgid "**dependencies**:"
-msgstr ""
+msgstr "**Dépendances** :"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:107
 msgid ""
 "**linked**: contains a list of iOS frameworks that the iOS application "
 "should be linked with."
 msgstr ""
+"**lié** : contient une liste de frameworks iOS avec lesquels l'application "
+"iOS doit être liée."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:109
 msgid ""
 "**embedded**: contains a list of iOS frameworks or libraries that should be "
 "both linked and embedded into the resulting iOS application."
 msgstr ""
+"**embedded** : contient une liste de frameworks ou de bibliothèques iOS qui "
+"doivent être liés et intégrés dans l'application iOS résultante."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:111
 #, fuzzy
@@ -300,12 +370,19 @@ msgid ""
 "documentation/bundleresources/information_property_list/"
 "uirequireddevicecapabilities>`_."
 msgstr ""
+"**capacités** : contient une liste des capacités iOS qui est requise pour le "
+"plugin. Une liste des capacités disponibles peut être trouvée sur la page de "
+"documentation `Apple UIRequiredDeviceCapabilities <https://developer.apple."
+"com/documentation/bundleresources/information_property_list/"
+"uirequireddevicecapabilities>`_."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:115
 msgid ""
 "**files**: contains a list of files that should be copied on export. This is "
 "useful for data files or images."
 msgstr ""
+"**fichiers** : contient une liste de fichiers qui doivent être copiés lors "
+"de l'exportation. Ceci est utile pour les fichiers de données ou les images."
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:117
 #, fuzzy
@@ -321,3 +398,5 @@ msgid ""
 "**plist**: should have keys and values that should be present in ``Info."
 "plist`` file following pattern: ``KeyName=\"key value\"``"
 msgstr ""
+"**plist** : doit avoir des clés et des valeurs qui doivent être présentes "
+"dans le fichier ``Info.plist`` suivant le modèle : ``KeyName=\"clé valeur\"``"

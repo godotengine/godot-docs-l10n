@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,22 +131,27 @@ msgstr ""
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig surcharge **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 msgid ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "override **)**"
 msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"surcharge **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 msgid ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer buffer **)**"
 msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer tampon **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
-msgstr ""
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
 #, fuzzy
@@ -159,7 +164,7 @@ msgstr "Arguments"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid "The initial config for this instance."
-msgstr ""
+msgstr "La configuration initiale de cette instance."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:54
 #, fuzzy
@@ -270,9 +275,8 @@ msgstr ""
 "contenu du fichier."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:109
-#, fuzzy
 msgid "The file to preload."
-msgstr "Le résultat final"
+msgstr "Le fichier à précharger."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
 #, fuzzy
@@ -336,7 +340,7 @@ msgstr "Échoue si un canvas ne peut être trouvée sur la page."
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:133
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:152
 msgid "An optional configuration override."
-msgstr ""
+msgstr "Une surcharge facultative de la configuration."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:136
 msgid "Promise that resolves once the engine started."
@@ -373,6 +377,9 @@ msgid ""
 "js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
 "by the editor during export)."
 msgstr ""
+"Cette méthode attend de la configuration initiale (ou de la surcharge) que "
+"les propriétés :js:attr:`executable` et :js:attr:`mainPack` soient définies "
+"(ce qui est normalement fait par l'éditeur lors de l'exportation)."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:155
 msgid "Promise that resolves once the game started."
@@ -390,9 +397,8 @@ msgid "The location where the file will be created."
 msgstr "L'action masquée, bien que non active, sera toujours exportée."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
-#, fuzzy
 msgid "The content of the file."
-msgstr "Le chemin absolu vers le fichier"
+msgstr "Le contenu du fichier."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:172
 #, fuzzy
@@ -406,9 +412,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:178
-#, fuzzy
 msgid "Engine configuration"
-msgstr "Exécuter la configuration :"
+msgstr "Configuration du moteur"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:180
 msgid ""
@@ -417,9 +422,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
-msgstr "Propriétés."
+msgstr "Propriétés"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0

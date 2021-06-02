@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,8 @@ msgid ""
 "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 "
 "version of the Godot editor."
 msgstr ""
+"HTML5版のGodotエディタに特有の注意点については、 :ref:"
+"`doc_using_the_web_editor` をご覧ください。"
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
@@ -146,24 +148,33 @@ msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
 "manager and editor window."
 msgstr ""
+"プロジェクトマネージャーやエディターのウィンドウの左上に「NO DC」などの文字が"
+"表示されます。"
 
 #: ../../docs/about/troubleshooting.rst:60
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
 msgstr ""
+"これは、NVIDIAグラフィックスドライバが情報を表示するためにオーバーレイを挿入"
+"することが原因です。"
 
 #: ../../docs/about/troubleshooting.rst:62
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"Windowsでこのオーバーレイを無効にするには、NVIDIA Control Panelでグラフィック"
+"ドライバーの設定をデフォルト値に戻してください。"
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"Linuxでこのオーバーレイを無効にするには、 ``nvidia-settings`` を開き、 **X "
+"Screen 0 > OpenGL Settings** を選択し、 **Enable Graphics API Visual "
+"Indicator** のチェックを外します。"
 
 #: ../../docs/about/troubleshooting.rst:69
 msgid "The project window appears blurry, unlike the editor."

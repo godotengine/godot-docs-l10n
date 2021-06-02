@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,12 +52,11 @@ msgstr ""
 "изменения в работу игры."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Если вы не создали \"Увернись от Крипов!\" самостоятельно, пожалуйста, "
+"Если вы еще не создали \"Увернись от Крипов!\" самостоятельно, пожалуйста, "
 "прочтите :ref:`doc_your_first_game`, прежде чем продолжить этот урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
@@ -102,13 +101,15 @@ msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"В **Проект > Настройки проекта**, под **Устройства ввода > Указание**, "
+"включите**Эмулировать нажатие из мыши**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 #, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "Нам также надо убедиться, что игра будет корректно масштабироваться при "
@@ -183,6 +184,10 @@ msgid ""
 "Therefore, you don't need to download them using the **Manage Export "
 "Templates** dialog."
 msgstr ""
+"Если вы загрузили Godot из Steam <https://store.steampowered.com/app/404790/"
+"Godot_Engine/> `__, шаблоны экспорта уже включены. Следовательно, вам не "
+"нужно загружать их с помощью диалогового окна ** Управление шаблонами "
+"экспорта **."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
 #, fuzzy
@@ -198,6 +203,8 @@ msgid ""
 "Export templates are bound to a specific Godot version. If you upgrade "
 "Godot, you must download templates that match the new version."
 msgstr ""
+"Шаблоны экспорта привязаны к определенной версии Godot. Если вы обновляете "
+"Godot, вы должны загрузить шаблоны, соответствующие новой версии."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:277
 msgid "Export presets"

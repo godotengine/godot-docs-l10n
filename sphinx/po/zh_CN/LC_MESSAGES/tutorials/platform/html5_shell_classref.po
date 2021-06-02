@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,34 +18,30 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:4
-#, fuzzy
 msgid "HTML5 shell class reference"
-msgstr "如何编写类参考手册"
+msgstr "HTML5 shell类参考"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:6
-#, fuzzy
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
 "process."
 msgstr ""
-"输出到Web的项目向JavaScript环境暴露了 ``Engine`` 类，允许对引擎的启动过程进行"
-"精细控制。"
+"为web导出的项目向JavaScript环境暴露了 :js:class:`Engine` 类,从而可以更好地控"
+"制引擎的启动过程."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:9
-#, fuzzy
 msgid ""
 "This API is built in an asynchronous manner and requires basic understanding "
 "of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
 "Using_promises>`__."
 msgstr ""
-"本API基于并要求对承诺有基本的理解。 <https://developer.mozilla.org/en-US/"
-"docs/Web/JavaScript/Guide/Using_promises>`__."
+"这个API是以异步的方式建立的,需要对 `Promises <https://developer.mozilla.org/"
+"en-US/docs/Web/JavaScript/Guide/Using_promises>`__ 的基本理解."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:13
-#, fuzzy
 msgid "Engine"
-msgstr "关于Godot引擎"
+msgstr "引擎"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:15
 msgid ""
@@ -54,14 +50,13 @@ msgid ""
 "the exported HTML page. To understand practical use of the ``Engine`` class, "
 "see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
 msgstr ""
-"``Engine`` 类提供了在Web上加载和启动导出项目的方法。对于默认的导出设置，这已"
-"经是导出的HTML页面的一部分。要了解 ``Engine`` 类的实际使用，请参见 :ref:`自定"
-"义Web导出的HTML页面<doc_customizing_html5_shell>` 。"
+"``Engine`` 类提供了在Web上加载和启动导出项目的方法.对于默认的导出设置,这已经"
+"是导出的HTML页面的一部分.要了解 ``Engine`` 类的实际使用,请参见 :ref:`自定义"
+"Web导出的HTML页面<doc_customizing_html5_shell>` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:20
-#, fuzzy
 msgid "Static Methods"
-msgstr "静态函数"
+msgstr "静态方法"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:34
@@ -77,83 +72,81 @@ msgid "Promise"
 msgstr "Promise"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:23
-#, fuzzy
 msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr "`Engine.load <#Engine.load>`__ **(** string basePath **)**"
+msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
-#, fuzzy
 msgid "void"
-msgstr "**void**"
+msgstr "void"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:25
-#, fuzzy
 msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
-msgstr "`Engine.unload <#Engine.unload>`__ **(** **)**"
+msgstr ":js:attr:`unload <Engine.unload>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:84
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:189
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:226
-#, fuzzy
 msgid "boolean"
-msgstr "bool"
+msgstr "boolean"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:27
-#, fuzzy
 msgid ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 msgstr ""
-"`Engine.isWebGLAvailable <#Engine.isWebGLAvailable>`__ **(** *[ number "
-"majorVersion=1 ]* **)**"
+":js:attr: `isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ] **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:31
 msgid "Instance Methods"
 msgstr "实例方法"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:34
-#, fuzzy
 msgid ""
 ":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
-msgstr "`engine.init <#engine.init>`__ **(** *[ string basePath ]* **)**"
+msgstr ""
+":js:attr: `init <Engine.prototype.init>` **(** *[ string basePath ]**) **"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:36
-#, fuzzy
 msgid ""
 ":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
 "ArrayBuffer file *[, string path ]* **)**"
 msgstr ""
-"`engine.preloadFile <#engine.preloadFile>`__ **(** string\\|ArrayBuffer file "
-"*[, string path ]* **)**"
+":js:attr: `preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string path ]**) **"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:38
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:40
 msgid ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "override **)**"
 msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:42
 msgid ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer buffer **)**"
 msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer buffer **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:44
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
-msgstr ""
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:49
-#, fuzzy
 msgid "Create a new Engine instance with the given configuration."
-msgstr "创建一个该基本类型的实例。"
+msgstr "用给定的配置创建一个新的引擎实例."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Arguments"
@@ -161,196 +154,169 @@ msgstr "参数"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:51
 msgid "The initial config for this instance."
-msgstr ""
+msgstr "此实例的初始配置."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:54
-#, fuzzy
 msgid "**Static Methods**"
-msgstr "静态函数"
+msgstr "**静态方法**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:58
-#, fuzzy
 msgid "Load the engine from the specified base path."
-msgstr "从已通过的底层路径加载引擎。"
+msgstr "从指定的基本路径加载引擎."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:60
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:93
 msgid "Base path of the engine to load."
-msgstr "引擎加载的底层路径。"
+msgstr "引擎加载的底层路径."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "Returns"
 msgstr "返回"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:63
-#, fuzzy
 msgid "A Promise that resolves once the engine is loaded."
-msgstr "返回一个预先加载文件后解析的promise。"
+msgstr "一个一旦加载引擎就会解析的Promise."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "Return type"
-msgstr "返回（``Return``）"
+msgstr "返回类型"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:70
 msgid "Unload the engine to free memory."
-msgstr "卸载引擎以释放内存。"
+msgstr "卸载引擎以释放内存."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:72
-#, fuzzy
 msgid ""
 "This method will be called automatically depending on the configuration. "
 "See :js:attr:`unloadAfterInit`."
-msgstr ""
-"除非使用:js:func:`引擎.初始化后卸载`显式禁用，否则引擎一旦启动就会自动调用。"
+msgstr "这个方法将被自动调用,取决于配置.参见 :js:attr: `unloadAfterInit` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:76
 msgid ""
 "Check whether WebGL is available. Optionally, specify a particular version "
 "of WebGL to check for."
-msgstr "检查 WebGL 是否可用。（可选）指定要检查的特定 WebGL 版本。"
+msgstr "检查 WebGL 是否可用.(可选)指定要检查的特定 WebGL 版本."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:78
-#, fuzzy
 msgid "The major WebGL version to check for."
-msgstr "主要WebGL版本检查。*WebGL 1.0*默认值为1。"
+msgstr "要检查的主要WebGL版本."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:81
-#, fuzzy
 msgid "If the given major version of WebGL is available."
-msgstr "如果WebGL的主要版本可用，则为真，否则为假。"
+msgstr "如果给定的WebGL的主要版本是可用的."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:86
-#, fuzzy
 msgid "**Instance Methods**"
-msgstr "实例方法"
+msgstr "**实例方法**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:90
 msgid ""
 "Initialize the engine instance. Optionally, pass the base path to the engine "
 "to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
 msgstr ""
-"初始化引擎实例。如果引擎还没有被加载，可以选择将基本路径传递给引擎来加载它。"
-"参见 :js:meth:`Engine.load` 。"
+"初始化引擎实例.如果引擎还没有被加载,可以选择将基本路径传递给引擎来加载它.参"
+"见 :js:meth:`Engine.load` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:96
-#, fuzzy
 msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
-msgstr "承诺一旦加载并初始化引擎就会解析。"
+msgstr "一旦引擎被加载和初始化,一个 ``Promise`` 就会被解析."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:103
-#, fuzzy
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
 msgstr ""
-"这会加载一个文件，以便在启动实例后在文件系统中可用。 必须在启动实例**之前** "
-"调用。"
+"加载一个文件,这样一旦运行,它就可以在实例的文件系统中使用.必须在启动实例 **之"
+"前** 调用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:106
 msgid ""
 "If not provided, the ``path`` is derived from the URL of the loaded file."
-msgstr ""
+msgstr "如果没有提供, ``path`` 是从加载文件的URL中导出的."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:108
-#, fuzzy
 msgid ""
 "The file to preload.  If a ``string`` the file will be loaded from that "
 "path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
 "content of the file."
 msgstr ""
-"如果 ``file`` 是一个字符串，那么该文件将从该URL加载。 如果 ``file`` 是一个 "
-"``ArrayBuffer`` 或一个视图，缓冲区将用作文件的内容。"
+"要预装的文件,如果是一个 ``string`` ,文件将从该路径加载.如果是一个  "
+"``ArrayBuffer`` 或一个视图,该缓冲区将被用作文件的内容."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:109
-#, fuzzy
 msgid "The file to preload."
-msgstr "最终效果"
+msgstr "预加载的文件."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:111
-#, fuzzy
 msgid "If a ``string`` the file will be loaded from that path."
-msgstr "如果类型是字符串，则文件将从该路径加载。"
+msgstr "如果是 ``string`` ,文件将从该路径加载."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:113
-#, fuzzy
 msgid ""
 "If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
 "of the file."
-msgstr ""
-"如果 ``file`` 是一个字符串，那么该文件将从该URL加载。 如果 ``file`` 是一个 "
-"``ArrayBuffer`` 或一个视图，缓冲区将用作文件的内容。"
+msgstr "如果是一个 ``ArrayBuffer`` 或一个视图,该缓冲区将被用作文件的内容."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:115
-#, fuzzy
 msgid ""
 "Path by which the file will be accessible. Required, if ``file`` is not a "
 "string."
-msgstr ""
-"如果 ``path`` 是一个字符串，它指定文件可用的路径。 如果 ``file`` 不是字符串，"
-"这是必需的。 否则，路径是从加载的文件的URL派生的。"
+msgstr "用于访问文件的路径.如果 ``file`` 不是一个字符串,则为必需的."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:118
-#, fuzzy
 msgid "A Promise that resolves once the file is loaded."
-msgstr "返回一个预先加载文件后解析的promise。"
+msgstr "一个一旦文件被加载就会解析的Promise."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:125
-#, fuzzy
 msgid ""
 "Start the engine instance using the given override configuration (if any). :"
 "js:meth:`startGame <Engine.prototype.startGame>` can be used in typical "
 "cases instead."
 msgstr ""
-"启动引擎实例，将传递的字符串作为参数传递给 ``main()`` 函数。 这样可以很好地控"
-"制引擎的使用方式，但通常名称以 ``engine.start`` 开头的其他方法更易于使用。"
+"使用给定的覆盖配置(如果有的话)启动引擎实例. :js:meth:`startGame <Engine."
+"prototype.startGame>` 可以在典型情况下代替使用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:128
-#, fuzzy
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
 "be loaded beforehand."
 msgstr ""
-"如果实例未初始化，这将对其进行初始化。手动初始化参见：js：meth：`Engine."
-"init`。引擎必须事先装载好。"
+"如果实例没有被初始化,它将初始化它.对于手动初始化,请参阅 :js:meth:`init "
+"<Engine.prototype.init>` .引擎必须事先加载."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:131
-#, fuzzy
 msgid ""
 "Fails if a canvas cannot be found on the page, or not specified in the "
 "configuration."
-msgstr "如果在页面上找不到画布，则失败。"
+msgstr "如果在页面上找不到画布,或者没有在配置中指定,则失败."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:133
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:152
 msgid "An optional configuration override."
-msgstr ""
+msgstr "一个可选的配置重写."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:136
 msgid "Promise that resolves once the engine started."
-msgstr "引擎启动后解析的承诺。"
+msgstr "引擎启动后解析的Promise."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:143
-#, fuzzy
 msgid ""
 "Start the game instance using the given configuration override (if any)."
-msgstr "使用给定的可执行网址和主包网址启动游戏实例。"
+msgstr "使用给定的配置覆盖(如果有的话)启动游戏实例."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:145
-#, fuzzy
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`."
 msgstr ""
-"如果实例没有被初始化，这将初始化它。关于手动初始化，请参见 :js:meth:`engine."
-"init` 。"
+"如果实例没有被初始化,将初始化它.对于手动初始化,见 :js:meth:`init <Engine."
+"prototype.init>` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:147
-#, fuzzy
 msgid ""
 "This will load the engine if it is not loaded, and preload the main pck."
-msgstr "如果尚未加载引擎，则将使用传递的URL的基本路径来加载引擎。"
+msgstr "如果未加载引擎,则将加载引擎,并预加载主pck."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:149
 msgid ""
@@ -358,76 +324,78 @@ msgid ""
 "js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
 "by the editor during export)."
 msgstr ""
+"该方法将初始配置(或重写)时同时设置 :js:attr:`executable` 和 :js:attr:"
+"`mainPack` 属性(通常由编辑器在导出过程中完成)."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:155
 msgid "Promise that resolves once the game started."
-msgstr "当游戏启动后承诺解析。"
+msgstr "一旦游戏开始就会解析Promise."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:162
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
 "instance's file system."
 msgstr ""
+"在指定的 ``path`` 上创建一个文件,在实例的文件系统中将通过该文件创建为 "
+"``buffer`` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:164
-#, fuzzy
 msgid "The location where the file will be created."
-msgstr "隐藏的操作虽然不活动，但仍会导出。"
+msgstr "将创建文件的位置."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:167
-#, fuzzy
 msgid "The content of the file."
-msgstr "文件的绝对路径"
+msgstr "文件的内容."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:172
-#, fuzzy
 msgid "Request that the current instance quit."
-msgstr "引用当前类实例。"
+msgstr "请求退出当前实例."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:174
 msgid ""
 "This is akin the user pressing the close button in the window manager, and "
 "will have no effect if the engine has crashed, or is stuck in a loop."
 msgstr ""
+"这就类似用户在窗口管理器中按下关闭按钮,如果引擎已经崩溃,或者卡在循环中,就不会"
+"有任何效果."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:178
-#, fuzzy
 msgid "Engine configuration"
-msgstr "运行配置："
+msgstr "引擎配置"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:180
 msgid ""
 "An object used to configure the Engine instance based on godot export "
 "options, and to override those in custom HTML templates if needed."
 msgstr ""
+"用于根据 Godot 导出选项配置引擎实例的对象,如果需要,可重写自定义 HTML 模板中的"
+"对象."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:184
-#, fuzzy
 msgid "Properties"
-msgstr "属性。"
+msgstr "属性"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "type"
-msgstr "一种类型"
+msgstr "类型"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:187
 msgid "name"
-msgstr "name"
+msgstr "名称"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:189
 msgid ":js:attr:`unloadAfterInit`"
-msgstr ""
+msgstr ":js:attr:`unloadAfterInit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:236
 msgid "HTMLCanvasElement"
-msgstr ""
+msgstr "HTMLCanvasElement"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:191
 msgid ":js:attr:`canvas`"
-msgstr ""
+msgstr ":js:attr:`canvas`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:193
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:195
@@ -440,242 +408,235 @@ msgstr "字符串"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:193
 msgid ":js:attr:`executable`"
-msgstr ""
+msgstr ":js:attr:`executable`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:195
 msgid ":js:attr:`mainPack`"
-msgstr ""
+msgstr ":js:attr:`mainPack`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:197
 msgid ":js:attr:`locale`"
-msgstr ""
+msgstr ":js:attr:`locale`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:278
-#, fuzzy
 msgid "number"
 msgstr "数字"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:199
 msgid ":js:attr:`canvasResizePolicy`"
-msgstr ""
+msgstr ":js:attr:`canvasResizePolicy`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:290
-#, fuzzy
 msgid "Array.<string>"
-msgstr "字符串"
+msgstr "Array.<string>"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:201
 msgid ":js:attr:`args`"
-msgstr ""
+msgstr ":js:attr:`args`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
 msgstr "函数"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
-msgstr ""
+msgstr ":js:attr:`onExecute`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:205
 msgid ":js:attr:`onExit`"
-msgstr ""
+msgstr ":js:attr:`onExit`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 msgid ":js:attr:`onProgress`"
-msgstr ""
+msgstr ":js:attr:`onProgress`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 msgid ":js:attr:`onPrint`"
-msgstr ""
+msgstr ":js:attr:`onPrint`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
 msgid ":js:attr:`onPrintError`"
-msgstr ""
+msgstr ":js:attr:`onPrintError`"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:216
 msgid ""
 "The Engine configuration object. This is just a typedef, create it like a "
 "regular object, e.g.:"
-msgstr ""
+msgstr "引擎配置对象.这只是一个类型,像创建一个普通对象一样创建它,例如:"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:218
 msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
-msgstr ""
+msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:220
-#, fuzzy
 msgid "**Property Descriptions**"
-msgstr "实例属性描述"
+msgstr "**属性说明**"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:224
-#, fuzzy
 msgid ""
 "Whether the unload the engine automatically after the instance is "
 "initialized."
-msgstr "指定初始化实例后是否自动卸载引擎。"
+msgstr "在实例被初始化后,是否自动卸载引擎."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "value"
-msgstr "'value'"
+msgstr "值"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
-#, fuzzy
 msgid "``true``"
-msgstr "``value``"
+msgstr "``true``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:232
-#, fuzzy
 msgid "The HTML DOM Canvas object to use."
-msgstr "使用的画布。"
+msgstr "要使用的HTML DOM Canvas对象."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:234
 msgid ""
 "By default, the first canvas element in the document will be used is none is "
 "specified."
-msgstr ""
+msgstr "默认情况下,如果没有指定任何元素,将使用文档中的第一个画布元素."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:238
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:254
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:265
-#, fuzzy
 msgid "``null``"
-msgstr "null"
+msgstr "``null``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:242
 msgid ""
 "The name of the WASM file without the extension. (Set by Godot Editor export "
 "process)."
-msgstr ""
+msgstr "WASM文件的名称,不含扩展名.(由Godot Editor导出过程设置)."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:246
 msgid "``\"\"``"
-msgstr ""
+msgstr "``\"\"``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:250
 msgid ""
 "An alternative name for the game pck to load. The executable name is used "
 "otherwise."
-msgstr ""
+msgstr "要加载的游戏pck的更换名称.否则使用可执行文件名."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:258
 msgid "Specify a language code to select the proper localization for the game."
-msgstr "指定语言代码，为游戏选择合适的本地化。"
+msgstr "指定语言代码,为游戏选择合适的本地化."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:260
-#, fuzzy
 msgid ""
 "The browser locale will be used if none is specified. See complete list of :"
 "ref:`supported locales <doc_locales>`."
-msgstr "列表:参考:`地区设置<文档_地区设置>`."
+msgstr ""
+"如果没有指定,将使用浏览器的语言环境.请参阅完整的 :ref:`supported locales "
+"<doc_locales>` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:269
 msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
-msgstr ""
+msgstr "画布大小调整策略决定了Godot应该如何调整画布的大小."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:271
 msgid ""
 "``0`` means Godot won't do any resizing. This is useful if you want to "
 "control the canvas size from javascript code in your template."
 msgstr ""
+"``0`` 意味着Godot不做任何大小调整.如果您想通过模板中的javascript代码来控制画"
+"布的大小,这将很有用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:274
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
+"``1`` 意味着Godot在启动时,以及通过引擎功能改变窗口大小时,会调整画布的大小."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:276
 msgid ""
 "``2`` means Godot will adapt the canvas size to match the whole browser "
 "window."
-msgstr ""
+msgstr "``2`` 意味着Godot将调整画布的大小以匹配整个浏览器窗口."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:280
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:284
-#, fuzzy
 msgid "The arguments to be passed as command line arguments on startup."
-msgstr "解析自定义命令行参数。"
+msgstr "启动时作为命令行参数传递的参数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:286
-#, fuzzy
 msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
-msgstr ""
-"要了解更多的命令行参数，请参考 :ref:`命令行教程"
-"<doc_command_line_tutorial>` 。"
+msgstr "参见 :ref:`命令行教程<doc_command_line_tutorial>` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:288
 msgid ""
 "**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
 "the ``--main-pack`` argument."
 msgstr ""
+"**Note**: :js:meth:`startGame <Engine.prototype.startGame>` 将始终添加 ``--"
+"main-pack`` 参数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:292
-#, fuzzy
 msgid "``[]``"
-msgstr "``int[]``"
+msgstr "``[]``"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:296
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
-msgstr ""
+msgstr "用于处理Godot的 ``OS.execute`` 调用的回调函数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:298
 msgid ""
 "This is for example used in the Web Editor template to switch between "
 "project manager and editor, and for running the game."
 msgstr ""
+"例如在Web Editor模板中使用,用于在项目管理器和编辑器之间切换,以及运行游戏."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:300
 msgid "The path that Godot's wants executed."
-msgstr ""
+msgstr "Godot想要执行的路径."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:303
 msgid "The arguments of the \"command\" to execute."
-msgstr ""
+msgstr "要执行的 \"command\" 的参数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:308
 msgid "A callback function for being notified when the Godot instance quits."
-msgstr ""
+msgstr "当Godot实例退出时,用于通知的回调函数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:310
 msgid ""
 "**Note**: This function will not be called if the engine crashes or become "
 "unresponsive."
-msgstr ""
+msgstr "**注意**: 如果引擎崩溃或无响应,该函数不会被调用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:312
 msgid "The status code returned by Godot on exit."
-msgstr ""
+msgstr "Godot退出时返回的状态码."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:317
-#, fuzzy
 msgid "A callback function for displaying download progress."
-msgstr "设置显示下载进度的回调函数。"
+msgstr "回调函数,用于显示下载进度."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:319
-#, fuzzy
 msgid ""
 "The function is called once per frame while downloading files, so the usage "
 "of ``requestAnimationFrame()`` is not necessary."
-msgstr "为便于使用，每帧只调用一次回调，因此，没有必要使用“请求动画帧()”。"
+msgstr ""
+"该函数在下载文件时每帧被调用一次,所以没有必要使用 "
+"``requestAnimationFrame()`` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:322
 msgid ""
 "If the callback function receives a total amount of bytes as 0, this means "
 "that it is impossible to calculate. Possible reasons include:"
-msgstr "如果回调函数接收到的字节总数为0，这意味着无法计算。可能的原因包括："
+msgstr "如果回调函数接收到的字节总数为0,这意味着无法计算.可能的原因包括:"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:325
 msgid "Files are delivered with server-side chunked compression"
@@ -693,43 +654,36 @@ msgstr "并非所有文件下载都已开始(通常在没有多线程的服务�
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:329
 msgid "The current amount of downloaded bytes so far."
-msgstr ""
+msgstr "到目前为止,已下载的字节数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:332
 msgid "The total amount of bytes to be downloaded."
-msgstr ""
+msgstr "要下载的总字节数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:337
-#, fuzzy
 msgid ""
 "A callback function for handling the standard output stream. This method "
 "should usually only be used in debug pages."
-msgstr ""
-"指定用于处理标准输出流的回调函数。此方法通常只应在调试页中使用。默认使用"
-"``console.log()``。"
+msgstr "用于处理标准输出流的回调函数.这个方法通常应该只在调试页面使用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:339
 msgid "By default, ``console.log()`` is used."
-msgstr "默认情况下，使用的是“console.log()”。"
+msgstr "默认情况下,使用的是\"console.log()\"."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:341
 msgid "A variadic number of arguments to be printed."
-msgstr ""
+msgstr "将要输出的可变数量的参数."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:346
-#, fuzzy
 msgid ""
 "A callback function for handling the standard error stream. This method "
 "should usually only be used in debug pages."
-msgstr ""
-"指定一个用于处理标准错误流的回调函数。这个方法通常只应该在调试页面中使用，默"
-"认情况下，使用 ``console.warning()`` 。"
+msgstr "用于处理标准错误流的回调函数.这个方法通常应该只在调试页面使用."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:348
-#, fuzzy
 msgid "By default, ``console.error()`` is used."
-msgstr "默认情况下，使用的是“console.log()”。"
+msgstr "默认情况下,使用 ``console.error()`` ."
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:350
 msgid "A variadic number of arguments to be printed as errors."
-msgstr ""
+msgstr "将要输出的可变数量的参数."

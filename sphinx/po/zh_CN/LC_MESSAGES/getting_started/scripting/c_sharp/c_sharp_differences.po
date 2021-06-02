@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "C# API 与 GDScript 的差异"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:6
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
-msgstr "这是C#和GDScript之间API差异的（不完整）列表。"
+msgstr "这是C#和GDScript之间API差异的(不完整)列表."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:9
 msgid "General differences"
@@ -34,8 +34,8 @@ msgid ""
 "As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
 "instead of the ``snake_case`` used in GDScript and C++."
 msgstr ""
-"如 :ref:`doc_c_sharp` 中所述，C#通常使用 ``PascalCase`` 而不是GDScript和C++中"
-"使用的 ``snake_case``。"
+"如 :ref:`doc_c_sharp` 中所述,C#通常使用 ``PascalCase`` 而不是GDScript和C++中"
+"使用的 ``snake_case``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:15
 msgid "Global scope"
@@ -47,8 +47,8 @@ msgid ""
 "does not allow declaring them in namespaces. Most global constants were "
 "moved to their own enums."
 msgstr ""
-"全局函数和某些常量必须移动到类中，因为C#不允许在命名空间中声明它们。大多数全"
-"局常量都被移动到它们自己的枚举中。"
+"全局函数和某些常量必须移动到类中,因为C#不允许在命名空间中声明它们.大多数全局"
+"常量都被移动到它们自己的枚举中."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:22
 msgid "Constants"
@@ -59,12 +59,12 @@ msgid ""
 "Global constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
-"全局常量被移动到它们自己的枚举中。例如，``ERR_*`` 常量被移动到 ``Error`` 枚举"
-"中。"
+"全局常量被移动到它们自己的枚举中.例如,``ERR_*`` 常量被移动到 ``Error`` 枚举"
+"中."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:27
 msgid "Special cases:"
-msgstr "特殊情况："
+msgstr "特殊情况:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:30
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:59
@@ -127,8 +127,8 @@ msgid ""
 "``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
 msgstr ""
 "如 ``abs``、 ``acos`` 、 ``asin`` 、``atan`` 和 ``atan2`` 这样的全局数学函数"
-"位于 ``Mathf`` 下，名为 ``Abs`` 、``Acos``、 ``Asin`` 、``Atan`` 和 "
-"``Atan2``。常数 ``PI`` 可以通过 ``Mathf.Pi`` 获得。"
+"位于 ``Mathf`` 下,名为 ``Abs`` 、``Acos``、 ``Asin`` 、``Atan`` 和 ``Atan2``."
+"常数 ``PI`` 可以通过 ``Mathf.Pi`` 获得."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:45
 msgid "Random functions"
@@ -139,8 +139,8 @@ msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"如 ``rand_range`` 和 ``rand_seed`` 等全局随机函数位于 ``GD`` 下。例如 ``GD."
-"RandRange`` 以及 ``GD.RandSeed``。"
+"如 ``rand_range`` 和 ``rand_seed`` 等全局随机函数位于 ``GD`` 下.例如 ``GD."
+"RandRange`` 以及 ``GD.RandSeed``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:51
 msgid "Other functions"
@@ -151,12 +151,12 @@ msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"许多其他的全局函数，如 ``print`` 和 ``var2str`` 位于C#中的 ``GD`` 下。例如："
-"``GD.Print`` 和 ``GD.Var2Str``。"
+"许多其他的全局函数,如 ``print`` 和 ``var2str`` 位于C#中的 ``GD`` 下.例如:"
+"``GD.Print`` 和 ``GD.Var2Str``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:56
 msgid "Exceptions:"
-msgstr "例外情况："
+msgstr "例外情况:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:61
 msgid "``weakref(obj)``"
@@ -184,8 +184,8 @@ msgid ""
 "directive allows to access the members and nested types of a class without "
 "specifying the class name."
 msgstr ""
-"有时候，使用 ``using static`` 指令是很有用的。该指令允许在不指定类名的情况"
-"下，访问类的成员和嵌套类型。"
+"有时候,使用 ``using static`` 指令是很有用的.该指令允许在不指定类名的情况下,访"
+"问类的成员和嵌套类型."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:71
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:92
@@ -194,7 +194,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:177
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:335
 msgid "Example:"
-msgstr "示例："
+msgstr "示例:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:86
 msgid "Export keyword"
@@ -207,9 +207,9 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
-"``[Export]``属性可以代替GDScript中的``export``关键词。该属性还可以接受:ref:"
-"`PropertyHint<enum_@GlobalScope_PropertyHint>`和``hintString``参数。默认可以"
-"设为任何值。"
+"使用 ``[Export]`` 特性替代GDScript的 ``export`` 关键字.该特性还可以接受 :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` 和 ``hintString`` 参数.默认可"
+"以设为任何值."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
 msgid "Signal keyword"
@@ -221,17 +221,16 @@ msgid ""
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
-"使用 ``[Signal]`` 属性代替GDScript中的 ``signal`` 关键字。该属性应该用在 "
-"``delegate`` 上，其名称签名将用于定义信号。"
+"使用 ``[Signal]`` 特性代替GDScript中的 ``signal`` 关键字.该特性应该用在 "
+"``delegate`` 上,其名称签名将用于定义信号."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:124
 msgid "See also: :ref:`doc_c_sharp_signals`."
-msgstr "另见： :ref:`c_sharp_signals`。"
+msgstr "另见: :ref:`doc_c_sharp_signals` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:127
-#, fuzzy
 msgid "`onready` keyword"
-msgstr "``Onready`` 关键字"
+msgstr "`Onready` 关键字"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:129
 msgid ""
@@ -239,12 +238,14 @@ msgid ""
 "until the ready function is called with `onready` (cf. :ref:"
 "`doc_gdscript_onready_keyword`). For example:"
 msgstr ""
+"GDScript能够推迟成员变量的初始化,直到用 `onready` 调用ready函数(参见 :ref:"
+"`doc_gdscript_onready_keyword` ).例如:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:137
 msgid ""
 "However C# does not have this ability. To achieve the same effect you need "
 "to do this."
-msgstr ""
+msgstr "然而C#没有这个能力.为了达到同样的效果,你需要这样做."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
@@ -256,8 +257,8 @@ msgid ""
 "pattern. This is to make code less verbose than it would be with an "
 "``Instance`` property."
 msgstr ""
-"单例可以作为静态类使用，而不是使用单例模式。这是为了使代码不像使用 "
-"``Instance`` 属性那样冗长。"
+"单例可以作为静态类使用,而不是使用单例模式.这是为了使代码不像使用 "
+"``Instance`` 属性那样冗长."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:160
 msgid ""
@@ -267,9 +268,9 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``Godot.Object``."
 msgstr ""
-"但是，在极少数情况下，这还不够。例如，您可能希望访问基类 ``Godot.Object`` 中"
-"的成员，比如 ``Connect``。对于此类情况，我们提供了一个名为 ``Singleton`` 的静"
-"态属性，该属性返回单例实例。这个实例的类型是 ``Godot.Object``。"
+"但是,在极少数情况下,这还不够.例如,您可能希望访问基类 ``Godot.Object`` 中的成"
+"员,比如 ``Connect``.对于此类情况,我们提供了一个名为 ``Singleton`` 的静态属性,"
+"该属性返回单例实例.这个实例的类型是 ``Godot.Object``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:172
 msgid "String"
@@ -280,12 +281,12 @@ msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods are "
 "provided by the ``StringExtensions`` class as extension methods."
 msgstr ""
-"使用 ``System.String`` （ ``string`` ）。所有Godot String方法都由 "
-"``StringExtensions`` 类作为扩展方法提供。"
+"使用 ``System.String`` ( ``string`` ).所有Godot String方法都由 "
+"``StringExtensions`` 类作为扩展方法提供."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:184
 msgid "There are a few differences, though:"
-msgstr "但是有一些区别："
+msgstr "但是有一些区别:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:186
 msgid ""
@@ -294,9 +295,9 @@ msgid ""
 "extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
-"``erase``：字符串在C#中是不可变的，因此我们无法修改传递给扩展方法的字符串。出"
-"于这个原因， ``Erase`` 被添加为 ``StringBuilder`` 的扩展方法而不是字符串。或"
-"者您可以使用 ``string.Remove`` 。"
+"``erase``:字符串在C#中是不可变的,因此我们无法修改传递给扩展方法的字符串.出于"
+"这个原因, ``Erase`` 被添加为 ``StringBuilder`` 的扩展方法而不是字符串.或者您"
+"可以使用 ``string.Remove`` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:190
 msgid ""
@@ -304,8 +305,8 @@ msgid ""
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
-"``IsSubsequenceOf`` / ``IsSubsequenceOfi`` ：提供了另一种方法，它是 "
-"``IsSubsequenceOf`` 的重载，允许明确指定区分大小写："
+"``IsSubsequenceOf`` / ``IsSubsequenceOfi`` :提供了另一种方法,它是 "
+"``IsSubsequenceOf`` 的重载,允许明确指定区分大小写:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:201
 msgid ""
@@ -313,12 +314,12 @@ msgid ""
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
-"``Match`` / ``Matchn`` / ``ExprMatch`` ：除了 ``Match`` 和 ``Matchn`` 之外还"
-"提供了另一种方法，它允许明确指定区分大小写："
+"``Match`` / ``Matchn`` / ``ExprMatch`` :除了 ``Match`` 和 ``Matchn`` 之外还提"
+"供了另一种方法,它允许明确指定区分大小写:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:212
 msgid "Basis"
-msgstr "``Basis``"
+msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:214
 msgid ""
@@ -326,13 +327,13 @@ msgid ""
 "Basis()`` initializes all primitive members to their default value. Use "
 "``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
-"结构在C#中不能有无参数构造函数。因此 ``new Basis()`` 将所有原始成员初始化为其"
-"默认值。使用 ``Basis.Identity``，相当于GDScript和C++中的 ``Basis()`` 。"
+"结构在C#中不能有无参数构造函数.因此 ``new Basis()`` 将所有原始成员初始化为其"
+"默认值.使用 ``Basis.Identity``,相当于GDScript和C++中的 ``Basis()`` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:218
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:264
 msgid "The following method was converted to a property with a different name:"
-msgstr "以下方法已转换为具有不同名称的属性："
+msgstr "以下方法已转换为具有不同名称的属性:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:239
@@ -346,7 +347,7 @@ msgstr "``Scale``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:227
 msgid "Transform2D"
-msgstr "``Transform2D``"
+msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:229
 msgid ""
@@ -355,15 +356,15 @@ msgid ""
 "Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
-"结构在C#中不能有无参数构造函数，因此 ``new Transform2D()`` 将所有原始成员初始"
-"化为其默认值。请使用 ``Transform2D.Identity``，相当于GDScript和C++中的 "
-"``Transform2D()`` 。"
+"结构在C#中不能有无参数构造函数,因此 ``new Transform2D()`` 将所有原始成员初始"
+"化为其默认值.请使用 ``Transform2D.Identity``,相当于GDScript和C++中的 "
+"``Transform2D()`` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:233
 msgid ""
 "The following methods were converted to properties with their respective "
 "names changed:"
-msgstr "下列方法已转换为属性，其各自名称已被更改："
+msgstr "下列方法已转换为属性,其各自名称已被更改:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:238
 msgid "``get_rotation()``"
@@ -375,13 +376,13 @@ msgstr "``Rotation``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:243
 msgid "Plane"
-msgstr "``Plane``"
+msgstr "Plane"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:245
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
-msgstr "以下方法已转换为名称 *稍有* 不同的属性："
+msgstr "以下方法已转换为名称 *稍有* 不同的属性:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:250
 msgid "``center()``"
@@ -393,13 +394,13 @@ msgstr "``Center``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:254
 msgid "Rect2"
-msgstr "``Rect2``"
+msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:256
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
-msgstr "以下字段已转换为名称 *稍有* 不同的属性："
+msgstr "以下字段已转换为名称 *稍有* 不同的属性:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:261
 msgid "``end``"
@@ -419,7 +420,7 @@ msgstr "``Area``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:273
 msgid "Quat"
-msgstr "``Quat``"
+msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:275
 msgid ""
@@ -427,13 +428,13 @@ msgid ""
 "Quat()`` initializes all primitive members to their default value. Please "
 "use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
-"结构在C#中不能有无参数构造函数。因此 ``new Quat()`` 将所有原始成员初始化为其"
-"默认值。请使用 ``Quat.Identity``，相当于GDScript和C++中的 ``Quat()`` 。"
+"结构在C#中不能有无参数构造函数.因此 ``new Quat()`` 将所有原始成员初始化为其默"
+"认值.请使用 ``Quat.Identity``,相当于GDScript和C++中的 ``Quat()`` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:279
 msgid ""
 "The following methods were converted to a property with a different name:"
-msgstr "以下方法已转换为具有不同名称的属性："
+msgstr "以下方法已转换为具有不同名称的属性:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:284
 msgid "``length()``"
@@ -459,7 +460,7 @@ msgstr "数组"
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
-msgstr "*这是暂时的。PoolArrays将需要使用它们自己的类型才能按预期的方式使用。*"
+msgstr "*这是暂时的.PoolArrays将需要使用它们自己的类型才能按预期的方式使用.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:296
 msgid "``Array``"
@@ -532,8 +533,8 @@ msgid ""
 "Array)`` constructor to create one."
 msgstr ""
 "``Godot.Collections.Array<T>`` 是 ``Godot.Collections.Array`` 的类型安全包装"
-"器。可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 构造器创建"
-"一个。"
+"器.可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 构造器创建"
+"一个."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:310
 msgid "Dictionary"
@@ -541,7 +542,7 @@ msgstr "字典"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:312
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr "使用 ``Godot.Collections.Dictionary``。"
+msgstr "使用 ``Godot.Collections.Dictionary``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:314
 msgid ""
@@ -550,8 +551,8 @@ msgid ""
 "Collections.Dictionary)`` constructor to create one."
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` 是 ``Godot.Collections.Dictionary`` 的类"
-"型安全包装器。可使用 ``Godot.Collections.Dictionary<T>(Godot.Collections."
-"Dictionary)`` 构造器创建一个。"
+"型安全包装器.可使用 ``Godot.Collections.Dictionary<T>(Godot.Collections."
+"Dictionary)`` 构造器创建一个."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"
@@ -559,7 +560,7 @@ msgstr "``Variant``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
-msgstr "``System.Object`` （ ``object`` ）用来代替 ``Variant`` 。"
+msgstr "``System.Object`` ( ``object`` )用来代替 ``Variant`` ."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:323
 msgid "Communicating with other scripting languages"
@@ -567,11 +568,11 @@ msgstr "与其他脚本语言通信"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:325
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
-msgstr "在:ref:`doc_cross_language_scripting`中有详细解释。"
+msgstr "在 :ref:`doc_cross_language_scripting` 中有详细解释."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr "避让（``Yield``）"
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:330
 msgid ""
@@ -581,7 +582,7 @@ msgid ""
 msgstr ""
 "可以使用C#的 `yield 关键字 <https://docs.microsoft.com/en-US/dotnet/csharp/"
 "language-reference/keywords/yield>`_ 来实现类似于GDScript的带有单个参数的 "
-"``yield`` 的功能。"
+"``yield`` 的功能."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:333
 msgid ""
@@ -589,7 +590,7 @@ msgid ""
 "``Godot.Object.ToSignal``."
 msgstr ""
 "通过 ``async/await`` 和 ``Godot.Object.ToSignal`` 可以实现 ``yield`` 对信号的"
-"相同效果。"
+"相同效果."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:343
 msgid "Other differences"
@@ -600,12 +601,12 @@ msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
 "Load`` or ``ResourceLoader.Load`` instead."
 msgstr ""
-"``preload`` 在GDScript中可用，在C#中不可用。请使用 ``GD.Load`` 或 "
-"``ResourceLoader.Load`` 替代。"
+"``preload`` 在GDScript中可用,在C#中不可用.请使用 ``GD.Load`` 或 "
+"``ResourceLoader.Load`` 替代."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:348
 msgid "Other differences:"
-msgstr "其他差异："
+msgstr "其他差异:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:353
 msgid "``Color8``"

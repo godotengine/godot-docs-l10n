@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,19 +33,18 @@ msgid ""
 "the text be one color, or only one part of the text be centered. To get "
 "around this limitation you would use a :ref:`class_RichTextLabel`."
 msgstr ""
-"标签节点非常适合显示基本文本，但它们有局限性。如果更改文本的颜色或其对齐方"
-"式，则该更改会影响标签节点中的所有文本。不能让一部分文本用一种颜色，或者只有"
-"一部分文本居中。要绕过此限制，可以使用 :ref:`class_RichTextLabel` 。"
+"标签节点非常适合显示基本文本,但它们有局限性.如果更改文本的颜色或其对齐方式,则"
+"该更改会影响标签节点中的所有文本.不能让一部分文本用一种颜色,或者只有一部分文"
+"本居中.要绕过此限制,可以使用 :ref:`class_RichTextLabel` ."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:15
-#, fuzzy
 msgid ""
 ":ref:`class_RichTextLabel` allows the display of complex text markup in a "
 "Control. It has a built-in API for generating the markup, but can also parse "
 "a BBCode."
 msgstr ""
-":ref:`class_RichTextLabel` 允许在控件上显示复杂的文本标记。它提供了内置的API"
-"用以生成这些标记，并且能解析BBCode。"
+":ref:`class_RichTextLabel` 允许在一个控件中显示复杂的文本标记.它有一个内置的"
+"API用于生成标记,也可以解析一个BBCode."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:18
 msgid ""
@@ -53,11 +52,11 @@ msgid ""
 "source of the class reference <doc_updating_the_class_reference>`."
 msgstr ""
 "大部分BBCode标签也可以用在 :ref:`XML格式的类参考文档 "
-"<doc_updating_the_class_reference>` 。"
+"<doc_updating_the_class_reference>` ."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:22
 msgid "Using BBCode"
-msgstr "使用富文本（BBCode）"
+msgstr "使用富文本(BBCode)"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 msgid ""
@@ -68,16 +67,16 @@ msgid ""
 "this happens, you need to toggle the \"Enabled\" checkbox in the \"Bb Code\" "
 "section (``bbcode_enabled``)."
 msgstr ""
-"对于统一格式的文本，可以在“Text”属性中编写，但如果要使用BBCode标签，则应改"
-"用“Bb Code”下的“Text”属性（ ``bbcode_text`` ）。设置此属性将解析标签并设置格"
-"式。不过在此之前，你需要勾选“Bb Code”下的“Enable”属性"
-"（ ``bbcode_enabled`` ）。"
+"对于统一格式的文本,您可以写入 \"Text\" 属性,但如果您想使用BBCode标记,您应该使"
+"用 \"Bb Code\" 部分的 \"Text\" 属性来代替( ``bbcode_text`` ).写入这个属性将触"
+"发对您的标记的解析,以按要求格式化文本.在这之前,你需要切换 \"Bb代码\" 部分的 "
+"\"启用\" 复选框( ``bbcode_enabled`` )."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:32
 msgid ""
 "For example, ``BBCode [color=blue]blue[/color]`` would render the word \"blue"
 "\" with a blue color."
-msgstr "例如， ``BBCode [color=blue]blue[/color]``将会出现蓝色的单词“blue”。"
+msgstr "例如, ``BBCode [color=blue]blue[/color]`` 将会出现蓝色的单词\"blue\"."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid ""
@@ -87,21 +86,21 @@ msgid ""
 "property or you'll lose the BBCode markup. All changes to the text must be "
 "done in the BBCode parameter."
 msgstr ""
-"你可能注意到，在写入“Bb Code”下的“Text”属性后，常规的“Text”属性现在更新为不带"
-"BBCode标签的文本。虽然Text属性将由BBCode属性更新，但你不能编辑Text属性，否则"
-"将丢失BBCode标签。对文本的所有更改都必须在BBCode参数中完成。"
+"你可能注意到,在写入\"Bb Code\"下的\"Text\"属性后,常规的\"Text\"属性现在更新为"
+"不带BBCode标签的文本.虽然Text属性将由BBCode属性更新,但你不能编辑Text属性,否则"
+"将丢失BBCode标签.对文本的所有更改都必须在BBCode参数中完成."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:44
 msgid ""
 "For BBCode tags such as ``[b]`` (bold), ``[i]`` (italics) or ``[code]`` to "
 "work, you must set up custom fonts for the RichTextLabel node first."
 msgstr ""
-"要使用 ``[b]`` （粗体）、 ``[i]`` （斜体）或 ``[code]`` 等BBCode标签，必须先"
-"为RichTextLabel节点设置对应的自定义字体（位于Custom Fonts下）。"
+"要使用 ``[b]`` (粗体)、 ``[i]`` (斜体)或 ``[code]`` 等BBCode标签,必须先为"
+"RichTextLabel节点设置对应的自定义字体(位于Custom Fonts下)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "There are no BBCode tags to control vertical centering of text yet."
-msgstr "目前还没有用于控制文本垂直居中的BBCode标签。"
+msgstr "目前还没有用于控制文本垂直居中的BBCode标签."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:50
 msgid "Reference"
@@ -129,7 +128,7 @@ msgstr "``[b]{text}[/b]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "Makes {text} bold."
-msgstr "使得 {text} 呈现粗体。"
+msgstr "使得 {text} 呈现粗体."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "**italics**"
@@ -141,7 +140,7 @@ msgstr "``[i]{text}[/i]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "Makes {text} italics."
-msgstr "使得 {text} 呈现斜体。"
+msgstr "使得 {text} 呈现斜体."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "**underline**"
@@ -153,7 +152,7 @@ msgstr "``[u]{text}[/u]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "Makes {text} underline."
-msgstr "使得 {text} 呈现下划线。"
+msgstr "使得 {text} 呈现下划线."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "**strikethrough**"
@@ -165,7 +164,7 @@ msgstr "``[s]{text}[/s]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "Makes {text} strikethrough."
-msgstr "使{text}删除。"
+msgstr "使{text}删除."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "**code**"
@@ -177,7 +176,7 @@ msgstr "``[code]{text}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "Makes {text} use the code font (which is typically monospace)."
-msgstr "使{text}使用代码字体(通常为等宽字体)。"
+msgstr "使{text}使用代码字体(通常为等宽字体)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "**center**"
@@ -189,7 +188,7 @@ msgstr "``[center]{text}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "Makes {text} horizontally centered."
-msgstr "使得 {text} 水平居中。"
+msgstr "使得 {text} 水平居中."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "**right**"
@@ -201,7 +200,7 @@ msgstr "``[right]{text}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "Makes {text} horizontally right-aligned."
-msgstr "使得 {text} 右对齐。"
+msgstr "使得 {text} 右对齐."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "**fill**"
@@ -212,9 +211,8 @@ msgid "``[fill]{text}[/fill]``"
 msgstr "``[fill]{text}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
-#, fuzzy
 msgid "Makes {text} fill the RichTextLabel's width."
-msgstr "使得 {text} 填充整个宽度。"
+msgstr "使{text}填充RichTextLabel的宽度."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "**indent**"
@@ -226,7 +224,7 @@ msgstr "``[indent]{text}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "Increase the indentation level of {text}."
-msgstr "增加 {text} 的缩进级别。"
+msgstr "增加 {text} 的缩进级别."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "**url**"
@@ -238,7 +236,7 @@ msgstr "``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "Show {url} as such, underline it and make it clickable."
-msgstr "按原样显示{url}，为其加下划线并使其可点击。"
+msgstr "按原样显示{url},为其加下划线并使其可点击."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "**url (ref)**"
@@ -250,7 +248,7 @@ msgstr "``[url=<url>]{text}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "Makes {text} reference <url> (underlined and clickable)."
-msgstr "使得{text}呈现且点击后相当于点击<url> 。"
+msgstr "使得{text}呈现且点击后相当于点击<url> ."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "**image**"
@@ -262,7 +260,7 @@ msgstr "``[img]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "Insert image at resource {path}."
-msgstr "插入由资源路径 {path} 所指示的图片。"
+msgstr "插入由资源路径 {path} 所指示的图片."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
@@ -275,7 +273,7 @@ msgstr "``[img=<width>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:79
 msgid "Insert image at resource {path} using <width> (keeps ratio)."
-msgstr "插入由资源路径 {path} 所指示的图片，并指定其宽度（保持宽高比）。"
+msgstr "插入由资源路径 {path} 所指示的图片,并指定其宽度(保持宽高比)."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "``[img=<width>x<height>]{path}[/img]``"
@@ -283,7 +281,7 @@ msgstr "``[img=<width>x<height>]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:81
 msgid "Insert image at resource {path} using <width>×<height>."
-msgstr "插入由资源路径 {path} 所指示的图片，指定其宽与高。"
+msgstr "插入由资源路径 {path} 所指示的图片,指定其宽与高."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "**font**"
@@ -295,7 +293,7 @@ msgstr "``[font=<path>]{text}[/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:83
 msgid "Use custom font at <path> for {text}."
-msgstr "为 {text} 内容设置自定义字体，字体由 <path> 指定。"
+msgstr "为 {text} 内容设置自定义字体,字体由 <path> 指定."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "**color**"
@@ -308,10 +306,9 @@ msgstr "``[color=<code/name>]{text}[/color]``"
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:85
 msgid "Change {text} color; use name or # format, such as ``#ff00ff``."
 msgstr ""
-"改变 {text} 的颜色, 可以使用颜色名称或十六进制码指定颜色，如 ``#ff00ff`` 。"
+"改变 {text} 的颜色, 可以使用颜色名称或十六进制码指定颜色,如 ``#ff00ff`` ."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
-#, fuzzy
 msgid "**table**"
 msgstr "**table**"
 
@@ -321,7 +318,7 @@ msgstr "``[table=<number>]{cells}[/table]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:87
 msgid "Creates a table with <number> of columns."
-msgstr "创建一个包含<number>列数的表。"
+msgstr "创建一个包含<number>列数的表."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "**cell**"
@@ -333,7 +330,7 @@ msgstr "``[cell]{text}[/cell]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:89
 msgid "Adds cells with the {text} to the table."
-msgstr "将带有{text}的单元格添加到表格中。"
+msgstr "将带有{text}的单元格添加到表格中."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:93
 msgid "Built-in color names"
@@ -412,8 +409,8 @@ msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``."
 msgstr ""
-"对于不透明的 RGB 颜色，支持任何有效的6位十六进制数，例如 "
-"``[color=#ffffff]white[/color]`` 。"
+"对于不透明的 RGB 颜色,支持任何有效的6位十六进制数,例如 "
+"``[color=#ffffff]white[/color]`` ."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:118
 msgid ""
@@ -421,9 +418,9 @@ msgid ""
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
 "alpha channel is the **first** component of the color code, not the last one."
 msgstr ""
-"对于透明的 RGB 颜色，可以使用任意8位十六进制数，例如 "
-"``[color=#88ffffff]translucent white[/color]`` 。在这种情况下，请注意 alpha "
-"通道是颜色代码的 **第一个** 分量，而不是最后一个。"
+"对于透明的 RGB 颜色,可以使用任意8位十六进制数,例如 "
+"``[color=#88ffffff]translucent white[/color]`` .在这种情况下,请注意 alpha 通"
+"道是颜色代码的 **第一个** 分量,而不是最后一个."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:122
 msgid "Image vertical offset"
@@ -431,7 +428,7 @@ msgstr "图像垂直偏移"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:124
 msgid "You use a custom font for your image in order to align it vertically."
-msgstr "您可以对图像使用自定义字体，以便将其垂直对齐。"
+msgstr "您可以对图像使用自定义字体,以便将其垂直对齐."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:126
 msgid "Create a ``BitmapFont`` resource"
@@ -441,15 +438,14 @@ msgstr "创建 ``BitmapFont`` 字体资源"
 msgid ""
 "Set this bitmap font with a positive value for the ``ascent`` property, "
 "that's your height offset"
-msgstr "将这个位图字体的 ``ascent`` 属性设置为正值，即你的高度偏移量"
+msgstr "将这个位图字体的 ``ascent`` 属性设置为正值,即你的高度偏移量"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:128
 msgid ""
 "Set the BBCode tag this way: ``[font=<font-path>][img]{image-path}[/img][/"
 "font]``"
 msgstr ""
-"按下面方式设置BBCode标签：``[font=<font-path>][img]{image-path}[/img][/"
-"font]``"
+"按下面方式设置BBCode标签:``[font=<font-path>][img]{image-path}[/img][/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:131
 msgid "Animation effects"
@@ -461,8 +457,8 @@ msgid ""
 "customizable effects are provided out of the box, and you can easily create "
 "your own."
 msgstr ""
-"BBCode也可以用来创建不同的文字动画特效。内置了五种特效，当然你也可以轻松创建"
-"出自已的特效。"
+"BBCode也可以用来创建不同的文字动画特效.内置了五种特效,当然你也可以轻松创建出"
+"自已的特效."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:137
 msgid "Wave"
@@ -474,8 +470,8 @@ msgid ""
 "[/wave]``. ``amp`` controls how high and low the effect goes, and ``freq`` "
 "controls how fast the text goes up and down."
 msgstr ""
-"波浪使文字上下波动，它的标签格式是``[wave amp=50 freq=2][/wave]``。``amp``控"
-"制特效高低，``freq``控制文字上下移动的速度。"
+"波浪使文字上下波动,它的标签格式是 ``[wave amp=50 freq=2][/wave]`` .``amp`` 控"
+"制特效高低, ``freq`` 控制文字上下移动的速度."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:146
 msgid "Tornado"
@@ -487,8 +483,8 @@ msgid ""
 "radius=5 freq=2][/tornado]``. ``radius`` is the radius of the circle that "
 "controls the offset, ``freq`` is how fast the text moves in a circle."
 msgstr ""
-"龙卷风使文字在圆圈内移动，它的标签格式是``[tornado radius=5 freq=2][/"
-"tornado]``。``radius``是控制偏移的圆半径，``freq``是文字在圆中移动的速度。"
+"龙卷风使文字在圆圈内移动,它的标签格式是 ``[tornado radius=5 freq=2][/"
+"tornado]`` . ``radius`` 是控制偏移的圆半径, ``freq`` 是文字在圆中移动的速度."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:156
 msgid "Shake"
@@ -500,8 +496,8 @@ msgid ""
 "shake]``. ``rate`` controls how fast the text shakes, ``level`` controls how "
 "far the text is offset from the origin."
 msgstr ""
-"抖动使文字摇动，它的标签格式是``[shake rate=5 level=10][/shake]``。``rate``控"
-"制文本抖动的速度，``level``控制文本与原点的偏移程度。"
+"抖动使文字摇动,它的标签格式是 ``[shake rate=5 level=10][/shake]`` . ``rate`` "
+"控制文本抖动的速度, ``level`` 控制文本与原点的偏移程度."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:165
 msgid "Fade"
@@ -515,9 +511,9 @@ msgid ""
 "inserted, ``length`` controls over how many characters should the fade out "
 "take place."
 msgstr ""
-"渐变在没有动画的文本上创建一个渐变效果，它的标签格式是``[fade start=4 "
-"length=14][/fade]``。``start``控制相对于插值淡入命令的起始位置，``length``控"
-"制淡出应该发生多少个字符。"
+"渐变在没有动画的文本上创建一个渐变效果,它的标签格式是 ``[fade start=4 "
+"length=14][/fade]`` . ``start`` 控制相对于插值淡入命令的起始位置, ``length`` "
+"控制淡出应该发生多少个字符."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:176
 msgid "Rainbow"
@@ -530,9 +526,9 @@ msgid ""
 "number of full rainbow cycles per second, ``sat`` is the saturation of the "
 "rainbow, ``val`` is the value of the rainbow."
 msgstr ""
-"彩虹让文字呈现出随时间变化的彩虹色，它的标签格式是``[rainbow freq=0.2 sat=10 "
-"val=20][/rainbow]``。``freq``是每秒完整的彩虹周期数，``sat``是彩虹的饱和度，"
-"``val``是彩虹的数值。"
+"彩虹让文字呈现出随时间变化的彩虹色,它的标签格式是 ``[rainbow freq=0.2 sat=10 "
+"val=20][/rainbow]`` . ``freq`` 是每秒完整的彩虹周期数, ``sat`` 是彩虹的饱和"
+"度, ``val`` 是彩虹的数值."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:186
 msgid "Custom BBCode tags and text effects"
@@ -547,10 +543,10 @@ msgid ""
 "itself. The RichTextLabel does not need to have a script attached, nor does "
 "it need to be running in ``tool`` mode."
 msgstr ""
-"可以扩展 :ref:`class_RichTextEffect` 资源类型来创建自己的 BBCode 标签，可以从"
-"扩展 :ref:`class_RichTextEffect` 资源类型开始，如果想在编辑器中运行这些自定义"
-"效果，请在GDScript文件中添加``tool``前缀，RichTextLabel不需要附加脚本，也不需"
-"要在``tool``模式下运行。"
+"可以扩展 :ref:`class_RichTextEffect` 资源类型来创建自己的 BBCode 标签,可以从"
+"扩展 :ref:`class_RichTextEffect` 资源类型开始,如果想在编辑器中运行这些自定义"
+"效果,请在GDScript文件中添加 ``tool`` 前缀,RichTextLabel不需要附加脚本,也不需"
+"要在 ``tool`` 模式下运行."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:194
 msgid ""
@@ -560,9 +556,9 @@ msgid ""
 "check the ``bbcode`` property automatically or will use the name of the file "
 "to determine what the BBCode tag should be."
 msgstr ""
-"只需要扩展一个函数: ``_process_custom_fx(char_fx)``，或者可以通过添加成员名称"
-"``bbcode``来提供自定义BBCode标识符，该代码将自动检查bbcode属性，或使用文件名"
-"来决定BBCode标签应该是什么。"
+"只需要扩展一个函数: ``_process_custom_fx(char_fx)`` ,或者可以通过添加成员名"
+"称 ``bbcode`` 来提供自定义BBCode标识符,该代码将自动检查bbcode属性,或使用文件"
+"名来决定BBCode标签应该是什么."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:200
 msgid "``_process_custom_fx``"
@@ -575,51 +571,49 @@ msgid ""
 "`class_CharFXTransform` object, which holds a few variables to control how "
 "the associated character is rendered:"
 msgstr ""
-"这是每个效果的逻辑生效的地方，在文本渲染绘制阶段，每个字符被调用一次，将传入"
-"一个:ref:`class_CharFXTransform`对象，该对象拥有一些变量来控制相关字符的渲染"
-"方式:"
+"这是每个效果的逻辑生效的地方,在文本渲染绘制阶段,每个字符被调用一次,将传入一"
+"个 :ref:`class_CharFXTransform` 对象,该对象拥有一些变量来控制相关字符的渲染方"
+"式:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:206
 msgid ""
 "``identity`` specifies which custom effect is being processed. You should "
 "use that for code flow control."
-msgstr "``identity身份``指定正在处理哪个自定义效果，应该用它来控制代码流程。"
+msgstr "``identity身份`` 指定正在处理哪个自定义效果,应该用它来控制代码流程."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:208
 msgid ""
 "``relative_index`` tells you how far into a given custom effect block you "
 "are in as an index."
-msgstr "``relative_index``告诉你在一个给定的自定义效果区块中的索引有多远。"
+msgstr "``relative_index`` 告诉你在一个给定的自定义效果区块中的索引有多远."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:210
 msgid ""
 "``absolute_index`` tells you how far into the entire text you are as an "
 "index."
-msgstr "``absolute_index``告诉你作为索引到整个文本的距离。"
+msgstr "``absolute_index`` 告诉你作为索引到整个文本的距离."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:211
-#, fuzzy
 msgid ""
 "``elapsed_time`` is the total amount of time the text effect has been "
 "running."
-msgstr "``destroyed_timer``:一个变量，用于跟踪炮塔被摧毁的时间。"
+msgstr "``elapsed_time`` 是文本效果运行的总时间."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:212
 msgid ""
 "``visible`` will tell you whether the character is visible or not and will "
 "also allow you to hide a given portion of text."
-msgstr ""
-"``visible可见性``将告诉你这个字符是否可见，也允许你隐藏文本的某个部分。"
+msgstr "``visible`` 将告诉你这个字符是否可见,也允许你隐藏文本的某个部分."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:214
 msgid ""
 "``offset`` is an offset position relative to where the given character "
 "should render under normal circumstances."
-msgstr "``offset``是相对于给定字符在正常情况下应该呈现的位置的偏移位置。"
+msgstr "``offset`` 是相对于给定字符在正常情况下应该呈现的位置的偏移位置."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:216
 msgid "``color`` is the color of a given character."
-msgstr "``color``是一种预先规定的字符颜色。"
+msgstr "``color`` 是一种预先规定的字符颜色."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:217
 msgid ""
@@ -630,11 +624,11 @@ msgid ""
 "custom_fx]`` would have a float ``spread`` and Color ``color`` parameters in "
 "its ` `env`` Dictionary. See below for more usage examples."
 msgstr ""
-"最后,``env``是一个指定自定义效果的参数：ref`:class_Dictionary`。如果用户指定,"
-"您可以使用:ref:`Get()<CLASS_Dictionary_Method_Get>`和可选默认值来检索每个参"
-"数。例如，``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]``在其``env``"
-"字典中将有一个浮动``spread`` and Color``color``参数。有关更多的实例用法，请参"
-"阅下面的内容。"
+"最后, ``env`` 是一个指定自定义效果的参数 :ref:`class_Dictionary` .如果用户指"
+"定,您可以使用 :ref:`Get()<CLASS_Dictionary_Method_Get>` 和可选默认值来检索每"
+"个参数.例如, ``[custom_fx spread=0.5 color=#FFFF00]test[/custom_fx]`` 在其 "
+"``env`` 字典中将有一个浮动 ``spread`` 和颜色 ``color`` 参数.有关更多的实例用"
+"法,请参阅下面的内容."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:223
 msgid ""
@@ -644,14 +638,13 @@ msgid ""
 "of rendering custom effects entirely until the user fixes whatever error "
 "cropped up in their custom effect logic."
 msgstr ""
-"最后需要注意的关于此函数,必须返回一个布尔值``true``，以验证结果处理正确,这样"
-"一来，如果这个预先规定的字符渲染出现问题,它将完全退出自定义渲染的效果，直到用"
-"户修复自定义渲染出现的任何错误。"
+"最后需要注意的关于此函数,必须返回一个布尔值 ``true`` ,以验证结果处理正确,这样"
+"一来,如果这个预先规定的字符渲染出现问题,它将完全退出自定义渲染的效果,直到用户"
+"修复自定义渲染出现的任何错误."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:228
-#, fuzzy
 msgid "Here are some examples of custom effects:"
-msgstr "下面是一个简单的示例，说明它是如何工作的："
+msgstr "以下是一些自定义效果的示例:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:231
 msgid "Ghost"
@@ -662,11 +655,9 @@ msgid "Pulse"
 msgstr "脉冲"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:281
-#, fuzzy
 msgid "Matrix"
-msgstr "矩阵提示"
+msgstr "矩阵"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:316
-#, fuzzy
 msgid "This will add a few new BBCode commands, which can be used like so:"
-msgstr "这将添加一个新函数，只需双击其名称即可重命名该函数："
+msgstr "这将增加一些新的BBCode命令,可以像这样使用:"

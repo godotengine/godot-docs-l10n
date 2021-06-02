@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:4
-#, fuzzy
 msgid "Inspector plugins"
-msgstr "导入插件"
+msgstr "属性检查插件"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:6
 msgid ""
@@ -29,9 +28,9 @@ msgid ""
 "`class_EditorInspectorPlugin` and :ref:`class_EditorProperty` classes to "
 "write such plugins with the example of creating a custom value editor."
 msgstr ""
-"检查器dock支持自定义插件来创建自己的编辑属性的小部件。本教程以创建自定义值编"
-"辑器为例，解释了如何使用:ref:`class_EditorInspectorPlugin`和:ref:"
-"`class_EditorProperty`类来编写此类插件。"
+"检查器dock支持自定义插件来创建自己的编辑属性的小部件.本教程以创建自定义值编辑"
+"器为例,解释了如何使用 :ref:`class_EditorInspectorPlugin`和 :ref:"
+"`class_EditorProperty`类来编写此类插件."
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:12
 msgid "Setup"
@@ -44,15 +43,14 @@ msgid ""
 "`class_EditorPlugin`.  However, instead of using ``add_custom_node`` or "
 "``add_control_to_dock`` we'll use ``add_inspector_plugin``."
 msgstr ""
-"就像 :ref:`doc_making_plugins` 一样，我们先制作一个新的插件，得到一个 "
-"``plugin.cfg`` 文件，然后从我们的 :ref:`class_EditorPlugin` 开始。 但是，我们"
-"不使用 ``add_custom_node`` 或 ``add_control_to_dock`` ，而是使用 "
-"``add_inspector_plugin`` 。"
+"就像 :ref:`doc_making_plugins` 一样,我们先制作一个新的插件,得到一个 ``plugin."
+"cfg`` 文件,然后从我们的 :ref:`class_EditorPlugin` 开始. 但是,我们不使用 "
+"``add_custom_node`` 或 ``add_control_to_dock`` ,而是使用 "
+"``add_inspector_plugin`` ."
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:40
-#, fuzzy
 msgid "EditorInspectorPlugin"
-msgstr "导入插件"
+msgstr "EditorInspectorPlugin(编辑器属性面板插件)"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:42
 msgid ""
@@ -64,11 +62,10 @@ msgid ""
 "enable ourselves for any :ref:`class_Object` that is currently in the "
 "inspector (including any :ref:`class_Resource` that is embedded!)."
 msgstr ""
-"为了实际连接到检查器，我们创建一个:ref:`class_EditorInspectorPlugin`类。这个"
-"脚本为检查器提供了 \"钩子\"。多亏了这个类，编辑器在为检查器构建UI的过程中，会"
-"调用EditorInspectorPlugin中的函数。该脚本用于检查我们是否应该为当前在检查器中"
-"的任何 :ref:`class_Object`（包括任何 :ref:`class_Resource`的嵌入！）启用自"
-"己。"
+"为了实际连接到检查器,我们创建一个 :ref:`class_EditorInspectorPlugin`类.这个脚"
+"本为检查器提供了 \"钩子\".多亏了这个类,编辑器在为检查器构建UI的过程中,会调用"
+"EditorInspectorPlugin中的函数.该脚本用于检查我们是否应该为当前在检查器中的任"
+"何 :ref:`class_Object`(包括任何 :ref:`class_Resource`的嵌入！)启用自己."
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:50
 msgid ""
@@ -77,14 +74,13 @@ msgid ""
 "the beginning and end of the inspector for that :ref:`class_Object`, or for "
 "overriding or changing existing property editors."
 msgstr ""
-"一旦启用，EditorInspectorPlugin方法允许添加 :ref:`class_EditorProperty`节点或"
+"一旦启用,EditorInspectorPlugin方法允许添加 :ref:`class_EditorProperty`节点或"
 "只是自定义 :ref:`class_Control`节点到该 :ref:`class_Object`的检查器的开头和结"
-"尾，或者覆盖或改变现有的属性编辑器。"
+"尾,或者覆盖或改变现有的属性编辑器."
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:84
-#, fuzzy
 msgid "EditorProperty"
-msgstr "编辑器开发"
+msgstr "EditorProperty(编辑器属性)"
 
 #: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:86
 msgid ""
@@ -93,6 +89,6 @@ msgid ""
 "`class_Control` and we can add any kinds of additional nodes to make "
 "advanced widgets to embed in the inspector."
 msgstr ""
-"接下来，我们定义实际的:ref:`class_EditorProperty`自定义值编辑器，我们希望实例"
-"化它来编辑整数。这是一个自定义的 :ref:`class_Control`，我们可以添加任何类型的"
-"附加节点来制作高级部件以嵌入到检查器中。"
+"接下来,我们定义实际的 :ref:`class_EditorProperty`自定义值编辑器,我们希望实例"
+"化它来编辑整数.这是一个自定义的 :ref:`class_Control`,我们可以添加任何类型的附"
+"加节点来制作高级部件以嵌入到检查器中."

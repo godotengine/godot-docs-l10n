@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -542,6 +542,8 @@ msgid ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 msgstr ""
+"``Спроба виклику функції 'play' в основі 'null instance' на нульовому "
+"зразкові``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:359
 msgid ""
@@ -1523,7 +1525,6 @@ msgid "Removing old creeps"
 msgstr "Видалення старих крипів"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1223
-#, fuzzy
 msgid ""
 "If you play until \"Game Over\" and then start a new game right away, the "
 "creeps from the previous game may still be on the screen. It would be better "
@@ -1533,7 +1534,9 @@ msgid ""
 msgstr ""
 "Якщо ви дограєте до кінця гри, а потім починаєте нову гру, крипи з "
 "попередньої гри все ще залишаються на екрані. Було б краще, якби вони всі "
-"зникли на початку нової гри."
+"зникли на початку нової гри. Нам просто потрібно сказати *всім* мобам, що "
+"вони мають знищитися. Ми можемо зробити це за допомогою функції \"group"
+"\" (*група*)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1228
 msgid ""
@@ -1542,18 +1545,26 @@ msgid ""
 "\"Signals\", click \"Groups\" and you can type a new group name and click "
 "\"Add\"."
 msgstr ""
+"В сцені ``Mob`` виберіть кореневий вузол і клацніть вкладку \"Вузол\" поряд "
+"з Інспектором (там де ви знаходите сигнали вузла). Біля \"Сигнали\" "
+"натисніть \"Групи\", і ви можете ввести нову назву групи та натиснути "
+"\"Додати\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1234
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``game_over()`` function in ``Main``:"
 msgstr ""
+"Тепер всі моби будуть в групі \"mobs\". Ми можемо додати наступні рядки до "
+"функції ``game_over()`` в ``Main``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1247
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "
 "group - in this case we are telling every mob to delete itself."
 msgstr ""
+"Функція ``call_group()`` викликає кожну іменовану функцію на кожному вузлу в "
+"групі - в цьому випадку ми кажемо кожному мобу видаляти себе."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1251
 msgid "Finishing up"
@@ -1574,7 +1585,6 @@ msgid "Background"
 msgstr "Тло"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1260
-#, fuzzy
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1587,17 +1597,16 @@ msgstr ""
 "колір. Один із способів зробити це - використати вузол :ref:`ColorRect "
 "<class_ColorRect>`. Перемістіть його на самий верх нащадків, щоби він був "
 "одразу після вузла ``Main``, щоби малювався позаду інших вузлів. "
-"``ColorRect`` має тільки одну властивість:``Color``. Виберіть потрібний вам "
-"колір і змініть розмір ``ColorRect`` так, щоб він покривав екран."
+"``ColorRect`` має тільки одну властивість:``Color``. Підберіть колір до "
+"вподоби і виберіть \"Layout\" -> \"Full Rect\", щоб покрити ввесь екран."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1266
-#, fuzzy
 msgid ""
 "You could also add a background image, if you have one, by using a "
 "``TextureRect`` node instead."
 msgstr ""
 "Ви також можете додати фонове зображення, якщо воно у вас є, за допомогою "
-"вузла ``Sprite``."
+"вузла ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1270
 msgid "Sound effects"
@@ -1644,7 +1653,6 @@ msgid "Keyboard shortcut"
 msgstr "Гарячі клавіші"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1290
-#, fuzzy
 msgid ""
 "Since the game is played with keyboard controls, it would be convenient if "
 "we could also start the game by pressing a key on the keyboard. We can do "
@@ -1656,7 +1664,6 @@ msgstr ""
 "\" вузла ``Button``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1294
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -1668,9 +1675,9 @@ msgstr ""
 "В сцені ``HUD`` виберіть ``StartButton`` і знайдіть його властивість "
 "*Shortcut* в Інспекторі. Виберіть \"New Shortcut\" і натисніть на пункт "
 "\"Shortcut\". З'явиться друга властивість *Shortcut*. Виберіть \"New "
-"InputEventAction\" та натисніть новий \"InputEvent\". Нарешті, у властивості "
-"*Action* введіть назву ``ui_select``. Це подія введення за замовчуванням, "
-"пов'язана з пробілом."
+"InputEventAction\" та натисніть новий \"InputEventAction\". Нарешті, у "
+"властивості *Action* введіть назву ``ui_select``. Це подія введення за "
+"замовчуванням, пов'язана з пробілом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1302
 msgid ""

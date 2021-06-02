@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,17 +31,14 @@ msgstr ""
 "silnik:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
-#, fuzzy
 msgid "A main menu."
-msgstr "Główne menu"
+msgstr "Główne menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
-#, fuzzy
 msgid "A game UI with a health bar, energy bar, bomb and money counters."
-msgstr "UI gry z paskiem życia, energii, licznikiem bomb i monet"
+msgstr "UI gry z paskiem życia, energii, licznikiem bomb i monet."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
@@ -50,15 +47,13 @@ msgstr ""
 "Dowiesz się, jak efektywnie zaprojektować interfejs użytkownika i jak używać "
 "węzłów kontrolnych. Ta strona skupia się na części wizualnej: wszystko co "
 "robisz z edytora. Aby dowiedzieć się, jak stworzyć kod do paska życia, "
-"przeczytaj :doc:`ui_code_a_life_bar`"
+"przeczytaj :doc:`ui_code_a_life_bar`."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
-#, fuzzy
 msgid "The GUI you're going to create."
-msgstr "GUI które zamierzasz stworzyć"
+msgstr "GUI które zamierzasz stworzyć."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_main_menu_design.zip <files/"
 "ui_main_menu_design.zip>` and extract the archive. Import the ``start/`` "
@@ -183,13 +178,12 @@ msgid "If there's some padding around an area, use a ``MarginContainer``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:97
-#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``."
 msgstr ""
 "Jeżeli elementy są ułożone w rzędach lub kolumnach, należy użyć "
-"``HBoxContainer`` lub ``VBoxContainer``"
+"``HBoxContainer`` lub ``VBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:100
 msgid ""
@@ -212,6 +206,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:112
 msgid "Interface building blocks, broken down using the three rules of thumb."
 msgstr ""
+"Bloki konstrukcyjne interfejsu, w podziale według trzech podstawowych zasad."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:116
 msgid ""
@@ -240,15 +235,15 @@ msgid ""
 "If you forget to change the window size, anchors and containers may not "
 "behave as expected."
 msgstr ""
+"Jeśli zapomniałeś zmienić rozmiar okna, niektóre funkcje mogą źle działać."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:133
-#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on **Scene > New Scene**."
 msgstr ""
 "Stwórzmy menu główne. Zrobimy je w jednej scenie. Aby utworzyć pustą scenę, "
-"kliknij menu Scena -> Nowa scena."
+"kliknij menu **Scena -> Nowa scena**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid ""
@@ -286,7 +281,6 @@ msgid "Margin Bottom: *80*"
 msgstr "Margines Dolny: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
-#, fuzzy
 msgid ""
 "We want the container to fit the window. In the toolbar above the Viewport, "
 "open the **Layout** menu and select the last option, **Full Rect**."
@@ -307,26 +301,22 @@ msgstr ""
 "węzły ``TextureRect``. Potrzebujemy:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:160
-#, fuzzy
 msgid "the title or logo,"
-msgstr "Tytuł lub logo"
+msgstr "tytuł lub logo"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:161
 msgid "the three text options as individual nodes,"
-msgstr ""
+msgstr "trzy opcje tekstu jako pojedyncze węzły,"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:162
-#, fuzzy
 msgid "the version note,"
-msgstr "Notka o wersji"
+msgstr "notka o wersji"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:163
-#, fuzzy
 msgid "and the main menu's illustration."
-msgstr "Obraz głównego menu"
+msgstr "Obraz głównego menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
-#, fuzzy
 msgid ""
 "Click the **Add Node** button or press :kbd:`Ctrl + A` (:kbd:`Cmd + A` on "
 "macOS) on your keyboard. Start to type ``TextureRect`` to find the "
@@ -340,24 +330,21 @@ msgstr ""
 "aby utworzyć pięć dodatkowych instancji ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:170
-#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, find the **Texture** "
 "property and click **[empty] > Load**. A file browser opens and lets you "
 "pick a sprite to load into the texture slot."
 msgstr ""
 "Kliknij na każdy z węzłów, aby go zaznaczyć. W inspektorze kliknij ikonę "
-"``...`` po prawej stronie właściwości Tekstury, a następnie kliknij ikonę "
-"``Wczytaj``. Otworzy się przeglądarka plików, w której można wybrać Sprite "
-"do załadowania do miejsca dla tekstury."
+"**Texture** po prawej stronie właściwości Tekstury, a następnie kliknij "
+"ikonę ``Wczytaj``. Otworzy się przeglądarka plików, w której można wybrać "
+"Sprite do załadowania do miejsca dla tekstury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:176
-#, fuzzy
 msgid "The file browser lets you find and load textures."
-msgstr "Menedżer plików pozwoli tobie znaleźć tekstury"
+msgstr "Menedżer plików pozwoli tobie znaleźć tekstury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
@@ -371,9 +358,8 @@ msgstr ""
 "Scena, aby zmienić ich nazwę."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:186
-#, fuzzy
 msgid "The six nodes with textures loaded."
-msgstr "Sześć węzłów z ustawionymi teksturami"
+msgstr "Sześć węzłów z ustawionymi teksturami."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:190
 msgid ""
@@ -413,16 +399,14 @@ msgstr ""
 "ilustracji po prawej stronie."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
-#, fuzzy
 msgid ""
 "You should have four nested containers and the TextureRect nodes sitting "
 "aside from it."
 msgstr ""
 "Należy mieć cztery zagnieżdżone kontenery, a węzły TextureRect powinny być "
-"od nich odsunięte"
+"od nich odsunięte."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
-#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options (Continue, NewGame, Options), and the "
@@ -443,14 +427,12 @@ msgid "We're left with two problems to solve:"
 msgstr "Zostały dwa problemy do rozwiązania:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
-#, fuzzy
 msgid "The characters on the right aren't centered."
-msgstr "Postać po prawej nie jest wycentrowana"
+msgstr "Postać po prawej nie jest wycentrowana."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:229
-#, fuzzy
 msgid "There's no space between the logo and the other UI elements."
-msgstr "Nie ma przerw pomiędzy logo i innymi elementami UI"
+msgstr "Nie ma przerw pomiędzy logo i innymi elementami UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
@@ -465,13 +447,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:242
-#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer."
 msgstr ""
 "Węzeł postaci jest wyśrodkowywany w prawej połowie ekranu, gdy tylko "
-"umieścisz go w środku kontenera CenterContainer"
+"umieścisz go w środku kontenera CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:245
 msgid ""
@@ -485,13 +466,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:255
-#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's "
 "layout."
 msgstr ""
 "Umieść nowy kontener między dwoma pozostałymi węzłami, aby zachować układ "
-"graficzny interfejsu użytkownika"
+"graficzny interfejsu użytkownika."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:258
 msgid ""
@@ -505,20 +485,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:266
-#, fuzzy
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the **Alignment** property to **Center**."
 msgstr ""
 "W celu wycentrowania węzłów w ``VBoxContainer``, przewiń na górę inspektora "
-"i zmień właściwość ``Alignment`` na ``Center``."
+"i zmień właściwość **Alignment** na **Center**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:271
-#, fuzzy
 msgid "The menu options should center vertically in the UI's left column."
 msgstr ""
 "Opcje menu powinny być umieszczone pionowo w po środku lewej kolumny "
-"interfejsu użytkownika"
+"interfejsu użytkownika."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:273
 msgid ""
@@ -530,9 +508,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:281
-#, fuzzy
 msgid "The final interface."
-msgstr "Końcowy interfejs"
+msgstr "Końcowy interfejs."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:283
 msgid ""
@@ -541,7 +518,6 @@ msgstr ""
 "Bez pisania kodu, stworzyliśmy precyzyjny i rozszerzalny ekran menu głównego."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:286
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
@@ -549,8 +525,9 @@ msgid ""
 "bars and item counters."
 msgstr ""
 "Serdecznie gratulujemy za dotarcie do tego miejsca! Możesz pobrać `stworzone "
-"menu tu <#>`__ aby porównać je z własnym. W następnym samouczku zostanie "
-"utworzony interfejs użytkownika gry z paskami i licznikami przedmiotów."
+"menu tu <files/ui_main_menu_design.zip>`__ aby porównać je z własnym. W "
+"następnym samouczku zostanie utworzony interfejs użytkownika gry z paskami i "
+"licznikami przedmiotów."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:294
 msgid ""

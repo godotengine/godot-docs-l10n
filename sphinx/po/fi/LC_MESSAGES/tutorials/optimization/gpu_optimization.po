@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,43 +158,44 @@ msgstr ""
 #: ../../docs/tutorials/optimization/gpu_optimization.rst:91
 msgid ""
 "**Reusing Shaders:** If materials can't be reused, at least try to re-use "
-"shaders (or SpatialMaterials with different parameters but the same "
-"configuration)."
+"shaders. Note: shaders are automatically reused between SpatialMaterials "
+"that share the same configuration (features that are enabled or disabled "
+"with a check box) even if they have different parameters."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:95
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:97
 msgid ""
 "If a scene has, for example, ``20,000`` objects with ``20,000`` different "
 "materials each, rendering will be slow. If the same scene has ``20,000`` "
 "objects, but only uses ``100`` materials, rendering will be much faster."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:100
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:102
 msgid "Pixel cost versus vertex cost"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:102
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:104
 msgid ""
 "You may have heard that the lower the number of polygons in a model, the "
 "faster it will be rendered. This is *really* relative and depends on many "
 "factors."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:105
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:107
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles. This meant that every frame:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:108
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:110
 msgid "All vertices had to be transformed by the CPU (including clipping)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:109
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:111
 msgid "All vertices had to be sent to the GPU memory from the main RAM."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:111
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:113
 msgid ""
 "Nowadays, all this is handled inside the GPU, greatly increasing "
 "performance. 3D artists usually have the wrong feeling about polycount "
@@ -204,7 +205,7 @@ msgid ""
 "more efficiently."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:117
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:119
 msgid ""
 "On mobile devices, the story is different. PC and console GPUs are brute-"
 "force monsters that can pull as much electricity as they need from the power "
@@ -212,7 +213,7 @@ msgid ""
 "more power efficient."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:122
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:124
 msgid ""
 "To be more efficient, mobile GPUs attempt to avoid *overdraw*. Overdraw "
 "occurs when the same pixel on the screen is being rendered more than once. "
@@ -224,7 +225,7 @@ msgid ""
 "increases power consumption)."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:130
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:132
 msgid ""
 "Using more power is not an option on mobile so mobile devices use a "
 "technique called *tile-based rendering* which divides the screen into a "
@@ -234,7 +235,7 @@ msgid ""
 "result, fewer vertices and triangles can be processed for drawing."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:137
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:139
 msgid ""
 "Additionally, tile-based rendering struggles when there are small objects "
 "with a lot of geometry within a small portion of the screen. This forces "
@@ -243,7 +244,7 @@ msgid ""
 "to complete before displaying the frame."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:143
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:145
 msgid ""
 "To summarize, don't worry about vertex count on mobile, but **avoid "
 "concentration of vertices in small parts of the screen**. If a character, "
@@ -252,27 +253,27 @@ msgid ""
 "having triangles smaller than the size of a pixel on screen."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:149
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:151
 msgid "Pay attention to the additional vertex processing required when using:"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:151
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:153
 msgid "Skinning (skeletal animation)"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:152
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:154
 msgid "Morphs (shape keys)"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:153
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:155
 msgid "Vertex-lit objects (common on mobile)"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:156
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:158
 msgid "Pixel/fragment shaders and fill rate"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:158
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:160
 msgid ""
 "In contrast to vertex processing, the costs of fragment (per-pixel) shading "
 "have increased dramatically over the years. Screen resolutions have "
@@ -282,7 +283,7 @@ msgid ""
 "calculations for each fragment."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:165
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:167
 msgid ""
 "You can test whether a project is fill rate-limited quite easily. Turn off V-"
 "Sync to prevent capping the frames per second, then compare the frames per "
@@ -294,7 +295,7 @@ msgid ""
 "bottleneck lies elsewhere."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:174
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:176
 msgid ""
 "You can increase performance in a fill rate-limited project by reducing the "
 "amount of work the GPU has to do. You can do this by simplifying the shader "
@@ -302,18 +303,18 @@ msgid ""
 "<class_SpatialMaterial>`), or reducing the number and size of textures used."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:179
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:181
 msgid ""
 "**When targeting mobile devices, consider using the simplest possible "
 "shaders you can reasonably afford to use.**"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:183
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:185
 #, fuzzy
 msgid "Reading textures"
 msgstr "Tekstuurien tuonti"
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:185
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:187
 msgid ""
 "The other factor in fragment shaders is the cost of reading textures. "
 "Reading textures is an expensive operation, especially when reading from "
@@ -323,17 +324,17 @@ msgid ""
 "which is a big issue on mobiles."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:192
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:194
 msgid ""
 "**If you use third-party shaders or write your own shaders, try to use "
 "algorithms that require as few texture reads as possible.**"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:196
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:198
 msgid "Texture compression"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:198
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:200
 msgid ""
 "By default, Godot compresses textures of 3D models when imported using video "
 "RAM (VRAM) compression. Video RAM compression isn't as efficient in size as "
@@ -341,13 +342,13 @@ msgid ""
 "large enough textures."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:203
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:205
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:206
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:208
 msgid ""
 "In 3D, the shapes of objects depend more on the geometry than the texture, "
 "so compression is generally not noticeable. In 2D, compression depends more "
@@ -355,32 +356,32 @@ msgid ""
 "compression are more noticeable."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:211
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:213
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:216
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:218
 msgid ""
 "Even in 3D, \"pixel art\" textures should have VRAM compression disabled as "
 "it will negatively affect their appearance, without improving performance "
 "significantly due to their low resolution."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:222
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:224
 #, fuzzy
 msgid "Post-processing and shadows"
 msgstr "Jälkikäsittely / varjot"
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:224
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:226
 msgid ""
 "Post-processing effects and shadows can also be expensive in terms of "
 "fragment shading activity. Always test the impact of these on different "
 "hardware."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:227
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:229
 msgid ""
 "**Reducing the size of shadowmaps can increase performance**, both in terms "
 "of writing and reading the shadowmaps. On top of that, the best way to "
@@ -389,11 +390,11 @@ msgid ""
 "their shadows disabled with only a small visual impact."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:234
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:236
 msgid "Transparency and blending"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:236
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:238
 msgid ""
 "Transparent objects present particular problems for rendering efficiency. "
 "Opaque objects (especially in 3D) can be essentially rendered in any order "
@@ -403,14 +404,14 @@ msgid ""
 "back to front) to look correct."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:243
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:245
 msgid ""
 "Transparent objects are also particularly bad for fill rate, because every "
 "item has to be drawn even if other transparent objects will be drawn on top "
 "later on."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:247
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:249
 msgid ""
 "Opaque objects don't have to do this. They can usually take advantage of the "
 "Z-buffer by writing to the Z-buffer only first, then only performing the "
@@ -418,7 +419,7 @@ msgid ""
 "at a particular pixel."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:252
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:254
 msgid ""
 "Transparency is particularly expensive where multiple transparent objects "
 "overlap. It is usually better to use transparent areas as small as possible "
@@ -427,12 +428,12 @@ msgid ""
 "opaque geometry can end up being faster than using transparency to \"cheat\"."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:259
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:261
 #, fuzzy
 msgid "Multi-platform advice"
 msgstr "Monisäikeisyys"
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:261
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:263
 msgid ""
 "If you are aiming to release on multiple platforms, test *early* and test "
 "*often* on all your platforms, especially mobile. Developing a game on "
@@ -440,7 +441,7 @@ msgid ""
 "for disaster."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:265
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:267
 msgid ""
 "In general, you should design your game for the lowest common denominator, "
 "then add optional enhancements for more powerful platforms. For example, you "
@@ -448,11 +449,11 @@ msgid ""
 "where you target both."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:271
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:273
 msgid "Mobile/tiled renderers"
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:273
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:275
 msgid ""
 "As described above, GPUs on mobile devices work in dramatically different "
 "ways from GPUs on desktop. Most mobile devices use tile renderers. Tile "
@@ -461,7 +462,7 @@ msgid ""
 "main memory."
 msgstr ""
 
-#: ../../docs/tutorials/optimization/gpu_optimization.rst:278
+#: ../../docs/tutorials/optimization/gpu_optimization.rst:280
 msgid ""
 "There are some downsides though. Tiled rendering can make certain techniques "
 "much more complicated and expensive to perform. Tiles that rely on the "

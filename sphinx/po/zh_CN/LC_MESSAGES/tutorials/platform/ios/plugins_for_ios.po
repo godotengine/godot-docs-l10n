@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,27 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:4
-#, fuzzy
 msgid "Plugins for iOS"
-msgstr "为iOS平台编译"
+msgstr "iOS的插件"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:6
-#, fuzzy
 msgid ""
 "At the moment Godot provides StoreKit, GameCenter, iCloud services plugins. "
 "They are using same model of asynchronous calls explained below."
 msgstr ""
-"目前，有两个部分实现的iOS API，GameCenter和Storekit。 两者都使用下面解释的相"
-"同模型的异步调用。"
+"目前,Godot提供了StoreKit、GameCenter、iCloud服务插件.它们使用相同的异步调用模"
+"型,解释如下."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:9
 msgid "ARKit and Camera access are also provided as plugins."
-msgstr ""
+msgstr "ARKit和Camera访问也作为插件提供."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:12
-#, fuzzy
 msgid "Accessing plugin singletons"
-msgstr "访问场景节点"
+msgstr "访问插件单例"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid ""
@@ -46,11 +43,12 @@ msgid ""
 "exported and available by calling the `Engine.has_singleton()` function, "
 "which returns a registered singleton."
 msgstr ""
+"要访问插件功能,首先需要通过调用 `Engine.has_singleton()` 函数来检查插件是否导"
+"出并可用,该函数会返回一个注册的单例."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:18
-#, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
-msgstr "具有两个骨骼的骨架节点的示例："
+msgstr "下面是一个如何在GDScript中做到这一点的例子:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:32
 msgid "Asynchronous methods"
@@ -59,7 +57,7 @@ msgstr "异步方法"
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:34
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
-msgstr "请求异步操作时，方法如下所示:"
+msgstr "请求异步操作时,方法如下所示:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:41
 msgid ""
@@ -71,10 +69,10 @@ msgid ""
 "response event will be produced and added to the 'pending events' queue. "
 "Example:"
 msgstr ""
-"参数通常是一个字典，包含发出请求所需的信息，并且调用将有两个阶段。 首先，该方"
-"法将立即返回Error值。 如果错误不是``OK``，则调用操作完成，可能在本地引起错误"
-"(没有Internet连接，API配置不正确等)。 如果错误值为``OK``，则会生成响应事件并"
-"将其添加到``挂起事件``队列中。 例:"
+"参数通常是一个字典,包含发出请求所需的信息,并且调用将有两个阶段. 首先,该方法将"
+"立即返回Error值. 如果错误不是``OK``,则调用操作完成,可能在本地引起错误(没有"
+"Internet连接,API配置不正确等). 如果错误值为``OK``,则会生成响应事件并将其添加"
+"到``挂起事件``队列中. 例:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:68
 msgid ""
@@ -84,9 +82,9 @@ msgid ""
 "waiting for a reply from the server. If any of the APIs don't behave this "
 "way it should be treated as a bug."
 msgstr ""
-"请记住，当一个调用返回OK时，API将 *始终* 通过pending_event接口产生一个事件，"
-"即使它是一个错误，或网络超时等。您应该能够，例如，安全地阻止等待的接口 来自服"
-"务器的回复。 如果任何API不以这种方式运行，则应将其视为错误。"
+"请记住,当一个调用返回OK时,API将 *始终* 通过pending_event接口产生一个事件,即使"
+"它是一个错误,或网络超时等.您应该能够,例如,安全地阻止等待的接口 来自服务器的回"
+"复. 如果任何API不以这种方式运行,则应将其视为错误."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:74
 msgid "The pending event interface consists of two methods:"
@@ -96,35 +94,31 @@ msgstr "挂起事件接口包含两个方法:"
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
-msgstr "``get_pending_event_count()``返回队列中挂起事件的数量。"
+msgstr "``get_pending_event_count()``返回队列中挂起事件的数量."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:79
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
-msgstr "``Variant pop_pending_event()``弹出队列中的第一个事件并返回它。"
+msgstr "``Variant pop_pending_event()``弹出队列中的第一个事件并返回它."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:83
 msgid "Store Kit"
 msgstr "商店套件"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:85
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"`core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"实现在 `Godot iOS InAppStore插件<https://github.com/godotengine/godot-ios-"
+"plugins/blob/master/plugins/inappstore/in_app_store.mm>`_ ."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:87
-#, fuzzy
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
-msgstr ""
-"Store Kit API可通过“InAppStore”单例访问(始终可从gdscript获得)。 它会自动初始"
-"化。 它有三种购买方式:"
+msgstr "Store Kit API可通过 ``InAppStore`` 单例访问.它是自动初始化的."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:90
 msgid "``Error purchase(Variant p_params);``"
@@ -148,7 +142,7 @@ msgstr "采购"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:104
 msgid "Purchases a product id through the Store Kit API."
-msgstr "通过Store Kit API购买产品ID。"
+msgstr "通过Store Kit API购买产品ID."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:107
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:147
@@ -163,8 +157,7 @@ msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product id. Example:"
 msgstr ""
-"将Dictionary作为参数，使用一个字段 ``product_id`` ，一个包含产品ID的字符串。 "
-"例:"
+"将Dictionary作为参数,使用一个字段 ``product_id`` ,一个包含产品ID的字符串. 例:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:117
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:157
@@ -217,15 +210,15 @@ msgstr "request_product_info"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:144
 msgid "Requests the product info on a list of product IDs."
-msgstr "在产品ID列表中请求产品信息。"
+msgstr "在产品ID列表中请求产品信息."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:149
 msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_ids``, a string "
 "array with a list of product ids. Example:"
 msgstr ""
-"将Dictionary作为参数，使用一个字段 ``product_ids`` ，一个带有产品ID列表的字符"
-"串数组。 例:"
+"将Dictionary作为参数,使用一个字段 ``product_ids`` ,一个带有产品ID列表的字符串"
+"数组. 例:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:175
 msgid "restore_purchases"
@@ -236,7 +229,7 @@ msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product id."
 msgstr ""
-"恢复以前在用户帐户上进行的购买。 这将为每个先前购买的产品ID创建响应事件。"
+"恢复以前在用户帐户上进行的购买. 这将为每个先前购买的产品ID创建响应事件."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:183
 msgid "The response events will be dictionaries with the following fields:"
@@ -247,25 +240,22 @@ msgid "Game Center"
 msgstr "游戏中心"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:196
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"实现在 `Godot iOS GameCenter插件<https://github.com/godotengine/godot-ios-"
+"plugins/blob/master/plugins/gamecenter/game_center.mm>`_ ."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:198
-#, fuzzy
 msgid ""
 "The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
-msgstr "Game Center API可通过“GameCenter”单例获得。 它有6种方法:"
+msgstr "游戏中心的API是通过 ``GameCenter`` 单例来实现的.它有以下方法:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:201
-#, fuzzy
 msgid "``Error authenticate();``"
-msgstr "``bool is_authenticated();``"
+msgstr "``Error authenticate();``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:202
 msgid "``bool is_authenticated();``"
@@ -276,46 +266,40 @@ msgid "``Error post_score(Variant p_score);``"
 msgstr "``Error post_score(Variant p_score);``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:204
-#, fuzzy
 msgid "``Error award_achievement(Variant p_params);``"
-msgstr "``Erroraward_achievement(Variant p_params);``"
+msgstr "``Error award_achievement(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:205
-#, fuzzy
 msgid "``void reset_achievements();``"
-msgstr "``Error reset_achievements();``"
+msgstr "``void reset_achievements();``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:206
-#, fuzzy
 msgid "``void request_achievements();``"
-msgstr "``Error request_achievements();``"
+msgstr "``void request_achievements();``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:207
-#, fuzzy
 msgid "``void request_achievement_descriptions();``"
-msgstr "``Error request_achievement_descriptions();``"
+msgstr "``void request_achievement_descriptions();``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:208
 msgid "``Error show_game_center(Variant p_params);``"
 msgstr "``Error show_game_center(Variant p_params);``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:209
-#, fuzzy
 msgid "``Error request_identity_verification_signature();``"
-msgstr "``Error request_achievement_descriptions();``"
+msgstr "``Error request_identity_verification_signature();``"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:211
 msgid "plus the standard pending event interface."
-msgstr "加上标准的待处理事件接口。"
+msgstr "加上标准的待处理事件接口."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:214
-#, fuzzy
 msgid "authenticate"
-msgstr "``bool is_authenticated();``"
+msgstr "认证"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:216
 msgid "Authenticates a user in Game Center."
-msgstr "在游戏中心对用户进行身份验证。"
+msgstr "在游戏中心对用户进行身份验证."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:245
 msgid "post_score"
@@ -323,12 +307,12 @@ msgstr "post_score"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:247
 msgid "Posts a score to a Game Center leaderboard."
-msgstr "将分数发布到游戏中心排行榜。"
+msgstr "将分数发布到游戏中心排行榜."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:252
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:441
 msgid "Takes a Dictionary as a parameter, with two fields:"
-msgstr "将Dictionary作为参数，包含两个字段:"
+msgstr "将Dictionary作为参数,包含两个字段:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:254
 msgid "``score`` a float number"
@@ -341,7 +325,7 @@ msgstr "``category``一个带有类别名称的字符串"
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:257
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:304
 msgid "Example:"
-msgstr "示例："
+msgstr "示例:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:289
 msgid "award_achievement"
@@ -349,11 +333,11 @@ msgstr "award_achievement"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:291
 msgid "Modifies the progress of a Game Center achievement."
-msgstr "修改游戏中心成就的进度。"
+msgstr "修改游戏中心成就的进度."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:296
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
-msgstr "将Dictionary作为参数，包含3个字段:"
+msgstr "将Dictionary作为参数,包含3个字段:"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:298
 msgid "``name`` (string) the achievement name"
@@ -379,7 +363,7 @@ msgstr "reset_achievements"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:337
 msgid "Clears all Game Center achievements. The function takes no parameters."
-msgstr "清除所有Game Center成就。 该函数不带参数。"
+msgstr "清除所有Game Center成就. 该函数不带参数."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:364
 msgid "request_achievements"
@@ -389,7 +373,7 @@ msgstr "request_achievements"
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
-msgstr "请求游戏角色取得进步的所有游戏中心成就。 该函数不带参数。"
+msgstr "请求游戏角色取得进步的所有游戏中心成就. 该函数不带参数."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:396
 msgid "request_achievement_descriptions"
@@ -399,7 +383,7 @@ msgstr "request_achievement_descriptions"
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
-msgstr "无论进度如何，都要求描述所有现有的Game Center成就。 该函数不带参数。"
+msgstr "无论进度如何,都要求描述所有现有的Game Center成就. 该函数不带参数."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:433
 msgid "show_game_center"
@@ -409,7 +393,7 @@ msgstr "show_game_center"
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
-msgstr "显示内置的游戏中心叠加层，显示排行榜，成就和挑战。"
+msgstr "显示内置的游戏中心叠加层,显示排行榜,成就和挑战."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:443
 msgid ""
@@ -417,8 +401,8 @@ msgid ""
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
-"``view``(string)(可选)要呈现的视图的名称。 接受``默认``，``排行榜``，``成就``"
-"或``挑战``。 默认为``默认``。"
+"``view``(string)(可选)要呈现的视图的名称. 接受``默认``,``排行榜``,``成就``或"
+"``挑战``. 默认为``默认``."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:446
 msgid ""
@@ -427,9 +411,9 @@ msgid ""
 "configured to show leaderboards). If not specified, Game Center will display "
 "the aggregate leaderboard."
 msgstr ""
-"``leaderboard_name``(字符串)(可选)要显示的排行榜的名称。 仅在``视图``为``排行"
-"榜``(或``默认``配置为显示排行榜)时使用。 如果未指定，Game Center将显示聚合排"
-"行榜。"
+"``leaderboard_name``(字符串)(可选)要显示的排行榜的名称. 仅在``视图``为``排行"
+"榜``(或``默认``配置为显示排行榜)时使用. 如果未指定,Game Center将显示聚合排行"
+"榜."
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:451
 msgid "Examples:"

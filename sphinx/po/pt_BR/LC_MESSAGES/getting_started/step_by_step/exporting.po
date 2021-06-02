@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "pode ser executado por qualquer pessoa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the *Dodge the Creeps* game for a "
@@ -48,16 +47,15 @@ msgid ""
 msgstr ""
 "A maneira como você exporta seu jogo depende de qual plataforma você está "
 "objetivando. Neste tutorial, você aprenderá como exportar o jogo \"Dodge the "
-"Creeps\" para uma variedade de plataformas. Primeiro, no entanto, precisamos "
+"Creeps\" para uma variedade de plataformas. Primeiro, entretanto, precisamos "
 "fazer algumas mudanças na maneira como o jogo funciona."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made *Dodge the Creeps* yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Se você ainda não fez \"Dodge the Creeps\", leia: ref: `doc_your_first_game` "
+"Se você ainda não fez \"Dodge the Creeps\", leia :ref: `doc_your_first_game` "
 "antes de continuar com este tutorial."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
@@ -65,7 +63,6 @@ msgid "Preparing the project"
 msgstr "Preparando o projeto"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
-#, fuzzy
 msgid ""
 "In *Dodge the Creeps*, we used keyboard controls to move the player's "
 "character. This is fine if your game is being played on a PC platform, but "
@@ -102,13 +99,15 @@ msgid ""
 "In **Project > Project Settings**, under **Input Devices > Pointing**, "
 "enable **Emulate Touch From Mouse**."
 msgstr ""
+"Em **Projeto > Configurações do Projeto**, abaixo de **Input "
+"Devices>Pointing**, ative **Emulate Mouse From Touch**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 #, fuzzy
 msgid ""
 "We also want to ensure that the game scales consistently on different-sized "
 "screens, so in the project settings go to **Display**, then click on "
-"**Window**. In the **Stretch** options, set **Mode** to ``2d``\" and "
+"**Window**. In the **Stretch** options, set **Mode** to ``2d`` and "
 "**Aspect** to ``keep``."
 msgstr ""
 "Também queremos ter certeza que o jogo mudará de tamanho consistentemente em "
@@ -162,20 +161,20 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Export templates"
-msgstr "Exportar modelos"
+msgstr "Modelos de exportação"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
-#, fuzzy
 msgid ""
 "To export the project, you need to download the *export templates* from the "
 "http://godotengine.org/download. These templates are optimized versions of "
 "the engine without the editor pre-compiled for each platform. You can also "
 "download them in Godot by clicking on **Editor -> Manage Export Templates**:"
 msgstr ""
-"Para exportar, você precisa baixar os *export templates* de http://"
-"godotengine.org/download. Esses modelos são versões otimizadas do mecanismo "
-"sem o editor previamente compilado para cada plataforma. Você também pode "
-"baixá-los em Godot clicando em *Editor -> Gerenciar Modelos de Exportação*:"
+"Para exportar, você precisa baixar os *modelos de exportação* a partir de "
+"http://godotengine.org/download. Esses modelos são versões otimizadas da "
+"engine sem o editor pré-compilado para cada plataforma. Você também pode "
+"baixá-los pelo Godot clicando em **Editor -> Gerenciar Modelos de "
+"Exportação**:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:261
 msgid ""
@@ -184,6 +183,10 @@ msgid ""
 "Therefore, you don't need to download them using the **Manage Export "
 "Templates** dialog."
 msgstr ""
+"Se você baixou Godot pela `Steam <https://store.steampowered.com/app/404790/"
+"Godot_Engine/>`__, os modelos de exportação já estão incluídos. Portanto, "
+"você não precisa baixá-los usando a caixa de diálogo **Gerenciar modelos de "
+"exportação**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:266
 #, fuzzy
@@ -205,7 +208,6 @@ msgid "Export presets"
 msgstr "Predefinições de Exportação"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:279
-#, fuzzy
 msgid ""
 "Next, you can configure the export settings by clicking on **Project -> "
 "Export**."
@@ -224,24 +226,22 @@ msgstr ""
 "com configurações diferentes."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. **Export PCK/ZIP** only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
-"Na parte inferior da janela há dois botões. \"Exportar PCK / ZIP\" cria "
-"apenas uma versão compactada dos dados do seu projeto. Isso não inclui um "
+"Na parte inferior da janela há dois botões. **Exportar PCK/ZIP** cria apenas "
+"uma versão compactada dos dados do seu projeto. Isso não inclui um "
 "executável, portanto, o projeto não pode ser executado por conta própria."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:290
-#, fuzzy
 msgid ""
 "The second button, **Export Project**, creates a complete executable version "
 "of your game, such as an ``.apk`` for Android or an ``.exe`` for Windows."
 msgstr ""
-"O segundo botão, \"Exportar Projeto\", cria uma versão executável completa "
-"do seu jogo, como um `.apk` para o Android ou um `.exe` para o Windows."
+"O segundo botão, **Exportar Projeto**, cria uma versão executável completa "
+"do seu jogo, como um ``.apk`` para o Android ou um ``.exe`` para o Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:293
 #, fuzzy
@@ -270,7 +270,6 @@ msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (Linux/MacOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:305
-#, fuzzy
 msgid ""
 "Exporting PC platforms works the same across the three supported operating "
 "systems. Open the export window and click **Add...** to create the preset(s) "
@@ -279,8 +278,8 @@ msgid ""
 msgstr ""
 "A exportação de plataformas para PC funciona da mesma forma nos três "
 "sistemas operacionais suportados. Abra a janela de exportação e clique em "
-"\"Adicionar...\" para criar a(s) predefinição(ões) que você deseja criar. Em "
-"seguida, clique em \"Exportar Projeto\" e escolha um nome e uma pasta de "
+"**Adicionar...** para criar a(s) predefinição(ões) que você deseja criar. Em "
+"seguida, clique em **Exportar Projeto** e escolha um nome e uma pasta de "
 "destino. Escolha um local *fora* da pasta do seu projeto."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:310
@@ -289,17 +288,16 @@ msgid "Click **Save** and the engine will build the export files."
 msgstr "Clique em \"Salvar\" e o mecanismo criará os arquivos de exportação."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:314
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export from a macOS computer, you'll end up "
 "with a ``.dmg`` file, while using Linux or Windows produces a ``.zip``. In "
 "either case, the compressed file contains a macOS ``.app`` that you can "
 "double-click and run."
 msgstr ""
-"Ao exportar para o MacOS, se você exportar em um computador MacOS, você "
-"terminará com um arquivo `.dmg`, enquanto se usar um Linux ou Windows para "
-"isso produzirá um` .zip`. Em ambos os casos, o arquivo compactado contém um "
-"`.app` do MacOS que você pode clicar duas vezes e executar."
+"Ao exportar para o macOS, se você exportar em um computador macOS, você "
+"terminará com um arquivo ``.dmg``, enquanto se usar um Linux ou Windows para "
+"isso produzirá um ``.zip``. Em ambos os casos, o arquivo compactado contém "
+"um ``.app`` do macOS que você pode clicar duas vezes e executar."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:321
 #, fuzzy
@@ -382,7 +380,6 @@ msgstr ""
 "do Android SDK em seu sistema e o local do keystore que você acabou de criar."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:358
-#, fuzzy
 msgid ""
 "Now you're ready to export. Click on **Project -> Export** and add a preset "
 "for Android (see above). Select the newly added Android preset. Under "
@@ -390,18 +387,19 @@ msgid ""
 "your game is in landscape mode (i.e. the window width in pixels is greater "
 "than the window height), leave this on **Landscape**."
 msgstr ""
-"Agora você está pronto para exportar. Clique em *Projeto -> Exportar* e "
+"Agora você está pronto para exportar. Clique em **Projeto -> Exportar** e "
 "adicione uma predefinição para Android (veja acima). Selecione as "
-"predefinições para Android e em *Opções* vá para *Screen* e mude "
-"*Orientation* para \"Portrait\"."
+"predefinições para Android. Em **Opções** vá para **Screen** e mude "
+"**Orientation** para **Portrait**. Se seu jogo estiver no modo paisagem (ou "
+"seja, a largura da janela em pixels é maior que a altura da janela), deixe "
+"esta opção em **Landscape**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:364
-#, fuzzy
 msgid ""
 "Click the **Export Project** button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"Clique no botão \"Exportar Projeto\" e o Godot criará um APK que você pode "
+"Clique no botão **Exportar Projeto** e o Godot criará um APK que você pode "
 "baixar no seu dispositivo. Para fazer isso na linha de comando, use o "
 "seguinte:"
 
@@ -446,7 +444,6 @@ msgstr ""
 "MacOS com o Xcode instalado."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:389
-#, fuzzy
 msgid ""
 "Before exporting, there are some settings that you *must* complete for the "
 "project to export successfully. First, the **App Store Team Id**, which you "
@@ -454,9 +451,9 @@ msgid ""
 "**Membership** section."
 msgstr ""
 "Antes de exportar, existem algumas configurações que você *deve* concluir "
-"para o projeto exportar com êxito. Primeiro, o \"App Store Team Id\", que "
+"para o projeto exportar com êxito. Primeiro, o **App Store Team Id**, que "
 "você pode encontrar fazendo login na sua conta de desenvolvedor da Apple e "
-"procurando na seção \"Membership\"."
+"procurando na seção **Membership**."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:393
 msgid "You must also provide icons and splash screen images as shown below:"
@@ -465,17 +462,16 @@ msgstr ""
 "mostrado abaixo:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:397
-#, fuzzy
 msgid "Click **Export Project** and select a destination folder."
-msgstr "Clique em \"Exportar Projeto\" e selecione uma pasta de destino."
+msgstr "Clique em **Exportar Projeto** e selecione uma pasta de destino."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:399
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
-"Depois de exportar o projeto, você verá que as seguintes pastas e arquivos "
-"foram criados no local selecionado:"
+"Depois de exportar o projeto com sucesso, você verá que as seguintes pastas "
+"e arquivos foram criados no local selecionado:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:404
 #, fuzzy
@@ -494,12 +490,11 @@ msgid "HTML5 (web)"
 msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:412
-#, fuzzy
 msgid ""
 "Click **Export Project** on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
-"Clique em \"Exportar Projeto\" na predefinição HTML5. Não precisamos alterar "
+"Clique em **Exportar Projeto** na predefinição HTML5. Não precisamos alterar "
 "nenhuma das configurações padrão."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:415
@@ -536,15 +531,14 @@ msgstr ""
 "inicial."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:430
-#, fuzzy
 msgid ""
 "The console window beneath the game tells you if anything goes wrong. You "
 "can disable it by disabling **Export With Debug** in the final file dialog "
 "that appears when you export the project."
 msgstr ""
-"A janela do console abaixo do jogo informa se algo está errado. Você pode "
-"desativá-la configurando \"Exportar Com Depuração\" quando exportar o "
-"projeto."
+"A janela do console abaixo do jogo o informa se algo der errado. Você pode "
+"desabilitá-la desativando **Exportar Com Depuração** na caixa de diálogo do "
+"arquivo final que aparece quando você exporta o projeto."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:438
 #, fuzzy

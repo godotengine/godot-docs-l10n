@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,13 @@ msgid "Exporting for Android"
 msgstr "为Android导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
 "and the engine."
 msgstr ""
-"为Android导出比为Android编译Godot的要求更少。以下步骤详细说明了设置SDK和引擎"
-"所需的内容。"
+"导出Android的要求比编译Android的Godot要少.下面的步骤详细介绍了设置Android SDK"
+"和引擎所需的内容."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
@@ -37,66 +36,64 @@ msgstr "下载Android SDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid "Download and install the Android SDK."
-msgstr "下载并安装 Android SDK。"
+msgstr "下载并安装 Android SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:14
-#, fuzzy
 msgid ""
 "You can install it using `Android Studio version 4.1 or later <https://"
 "developer.android.com/studio/>`__."
 msgstr ""
-"你可以用 `Android Studio安装它<https://developer.android.com/studio/>`__."
+"你可以使用 `Android Studio 4.1或更高版本<https://developer.android.com/"
+"studio/>`__ 进行安装."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid ""
 "Run it once to complete the SDK setup using these `instructions <https://"
 "developer.android.com/studio/intro/update#sdk-manager>`__."
 msgstr ""
-"使用`instructions <https://developer.android.com/studio/intro/update#sdk-"
-"manager>`__运行一次以完成SDK安装。"
+"运行一次,使用这些 `说明<https://developer.android.com/studio/intro/"
+"update#sdk-manager>`__ 完成SDK设置."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
 msgid ""
 "Ensure that the `required packages <https://developer.android.com/studio/"
 "intro/update#recommended>`__ are installed as well."
 msgstr ""
-"确定`required packages <https://developer.android.com/studio/intro/"
-"update#recommended>`__也同样被安装了。"
+"确保 `必要的软件包<https://developer.android.com/studio/intro/"
+"update#recommended>`__ 也被安装."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:19
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK平台工具30.0.5或更高版本"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
 #, fuzzy
-msgid "Android SDK Build-Tools version 30.0.1"
-msgstr "Android构建工具版本19.1"
+msgid "Android SDK Build-Tools version 30.0.3"
+msgstr "Android SDK Build-Tools version 30.0.1"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
-#, fuzzy
 msgid "Android SDK Platform 29"
-msgstr "Android SDK 平台工具"
+msgstr "Android SDK 平台工具 29"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
-#, fuzzy
 msgid "Android SDK Command-line Tools (latest)"
-msgstr "安装Android SDK（命令行版本）"
+msgstr "Android SDK命令行工具 (最新)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid "CMake version 3.10.2.4988404"
-msgstr ""
+msgstr "CMake 版本 3.10.2.4988404"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:24
 msgid "NDK version 21.4.7075529"
-msgstr ""
+msgstr "NDK 版本 21.4.7075529"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:26
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
 "com/studio/#command-tools>`__."
 msgstr ""
-"你可以使用`命令行工具<https://developer.android.com/studio/#command-tools>`__"
-"来安装它。"
+"你可以使用 `命令行工具<https://developer.android.com/studio/#command-"
+"tools>`__ 来安装它."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
@@ -104,26 +101,28 @@ msgid ""
 "developer.android.com/studio/command-line/sdkmanager>`__ command to complete "
 "the setup process:"
 msgstr ""
-"命令行工具安装完成后，运行`sdkmanager <https://developer.android.com/studio/"
-"command-line/sdkmanager>`__命令以完成安装过程："
+"命令行工具安装完成后,运行 `sdkmanager <https://developer.android.com/studio/"
+"command-line/sdkmanager>`__ 命令以完成安装过程:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
+"如果你使用的是Linux, **不要使用你的发行版软件库提供的Android SDK,因为它通常是"
+"过时的** ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:40
-#, fuzzy
 msgid "Install OpenJDK 8"
-msgstr "安装OpenJDK"
+msgstr "安装OpenJDK 8"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
-msgstr "下载并安装 `OpenJDK <https://adoptopenjdk.net/index.html>`__ 。"
+msgstr ""
+"下载并安装 `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
+"variant=openjdk8&jvmVariant=hotspot>`__ ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid "Create a debug.keystore"
@@ -145,7 +144,7 @@ msgstr ""
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
-msgstr "如果找不到或需要生成一个，则可以使用JDK中的keytool命令："
+msgstr "如果找不到或需要生成一个,则可以使用JDK中的keytool命令:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid ""
@@ -155,10 +154,10 @@ msgid ""
 "information on ``keytool`` usage, see `this Q&A article <https://godotengine."
 "org/qa/21349/jdk-android-file-missing>`__."
 msgstr ""
-"这会在当前目录中创建一个``debug.keystore`` 文件。你需要移动到一个难忘的位置，"
-"比如 ``%USERPROFILE%\\.android\\``，因为后续步骤会需要这个位置。``keytool`` "
-"用法的更多信息请查看`这个 Q&A 文章 <https://godotengine.org/qa/21349/jdk-"
-"android-file-missing>`__。"
+"这会在当前目录中创建一个 ``debug.keystore`` 文件.你需要移动到一个难忘的位置,"
+"比如 ``%USERPROFILE%\\.android\\`` ,因为后续步骤会需要这个位置. ``keytool`` "
+"用法的更多信息请查看 `这个 Q&A 文章 <https://godotengine.org/qa/21349/jdk-"
+"android-file-missing>`__ ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
 msgid "Setting it up in Godot"
@@ -168,16 +167,15 @@ msgstr "在Godot中设置它"
 msgid ""
 "Enter the Editor Settings screen. This screen contains the editor settings "
 "for the user account in the computer (it's independent of the project)."
-msgstr ""
-"进入编辑器设置屏幕。此屏幕包含计算机中用户帐户的编辑器设置（独立于项目）。"
+msgstr "进入编辑器设置屏幕.此屏幕包含计算机中用户帐户的编辑器设置(独立于项目)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:68
 msgid "Scroll down to the section where the Android settings are located:"
-msgstr "向下滚动到Android设置所在的部分："
+msgstr "向下滚动到Android设置所在的部分:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:72
 msgid "In that screen, 2 paths need to be set:"
-msgstr "在该屏幕中，需要设置两个路径："
+msgstr "在该屏幕中,需要设置两个路径:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:74
 msgid ""
@@ -185,9 +183,9 @@ msgid ""
 "installed. - For example ``%LOCALAPPDATA%\\Android\\Sdk\\`` on Windows or ``/"
 "Users/$USER/Library/Android/sdk/`` on macOS."
 msgstr ""
-"``Android Sdk Path`` 设置为Android SDK的安装位置。例如，Windows上的 ``"
-"%LOCALAPPDATA%\\Android\\Sdk\\`` ，或macOS上的 ``/Users/$USER/Library/"
-"Android/sdk/`` 。"
+"``Android Sdk Path`` 设置为Android SDK的安装位置.例如,Windows上的 ``"
+"%LOCALAPPDATA%\\Android\\Sdk\\`` ,或macOS上的 ``/Users/$USER/Library/Android/"
+"sdk/`` ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:77
 msgid ""
@@ -195,11 +193,11 @@ msgid ""
 "the ``debug.keystore`` file you created above."
 msgstr ""
 "debug ``.keystore``文件 - 可以在之前创建 ``debug.keystore`` 文件的文件夹中找"
-"到。"
+"到."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr "配置完成后，导出到Android的一切都准备好了！"
+msgstr "配置完成后,导出到Android的一切都准备好了！"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:83
 msgid "Providing launcher icons"
@@ -212,20 +210,20 @@ msgid ""
 "``xxxhdpi`` density screens) and will automatically generate lower-"
 "resolution variants."
 msgstr ""
-"启动图标是Android启动器应用把你的应用展示给用户时用到的。Godot只需要高分辨率"
-"图标（适用于``xxxhdpi``屏幕），然后自动生成低分辨率变体。"
+"启动图标是Android启动器应用把你的应用展示给用户时用到的.Godot只需要高分辨率图"
+"标(适用于``xxxhdpi``屏幕),然后自动生成低分辨率变体."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:87
 msgid "There are two types of icons required by Godot:"
-msgstr "Godot需要两种类型的图标："
+msgstr "Godot需要两种类型的图标:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:89
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
 "versions up to Android 8 (Oreo), exclusive. Must be at least 192×192 px."
 msgstr ""
-"**Main Icon:** \"经典\" 图标。这会在所有Android版本不高于 Android 8 (Oreo)中"
-"使用。必须至少 192×192 px."
+"**Main Icon:** \"经典\" 图标.这会在所有Android版本不高于 Android 8 (Oreo)中使"
+"用.必须至少 192×192 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:90
 msgid ""
@@ -238,8 +236,8 @@ msgid ""
 msgstr ""
 "**Adaptive Icons:** 从 Android 8 (包括)开始, `Adaptive Icons <https://"
 "developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive>`_ "
-"被引入。应用为了有原生的样式需要包含分离的背景与前景图标。用户的启动程序会控"
-"制图标的动画和遮罩。必须至少432×432 px。"
+"被引入.应用为了有原生的样式需要包含分离的背景与前景图标.用户的启动程序会控制"
+"图标的动画和遮罩.必须至少432×432 px."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:92
 msgid ""
@@ -248,9 +246,9 @@ msgid ""
 "designing-adaptive-icons-515af294c783>`_ that helps to understand those "
 "rules and some of the capabilities of adaptive icons."
 msgstr ""
-"重要的是设计自适应图标时必须遵守一些规则。`Google Design 提供了一篇文章 "
+"重要的是设计自适应图标时必须遵守一些规则.`Google Design 提供了一篇文章 "
 "<https://medium.com/google-design/designing-adaptive-icons-515af294c783>`_ 来"
-"帮助理解这些规则以及自适应图标的一些技巧。"
+"帮助理解这些规则以及自适应图标的一些技巧."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:94
 msgid ""
@@ -258,21 +256,20 @@ msgid ""
 "elements inside the safe zone: a centered circle with a diameter of 66dp "
 "(264 pixels on ``xxxhdpi``) to avoid being clipped by the launcher."
 msgstr ""
-"最重要的自适应图标规则是，把图标的重要元素放置在安全区：一个直径为"
-"66dp（``xxxhdpi``上为264像素）居中的圆来避免被启动器裁剪。"
+"最重要的自适应图标规则是,把图标的重要元素放置在安全区:一个直径为"
+"66dp(``xxxhdpi``上为264像素)居中的圆来避免被启动器裁剪."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:96
 msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
-"如果你不提供必要的图标，Godot会用备用链来替换它们，当当前行失败时会尝试下一"
-"行："
+"如果你不提供必要的图标,Godot会用备用链来替换它们,当当前行失败时会尝试下一行:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:98
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
-msgstr "**主图标:** 提供主图标 -> 项目图标 -> 默认Godot主图标。"
+msgstr "**主图标:** 提供主图标 -> 项目图标 -> 默认Godot主图标."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:99
 msgid ""
@@ -280,23 +277,22 @@ msgid ""
 "-> Project icon -> Default Godot foreground icon."
 msgstr ""
 "**自适应图标前景:** 提供的前景图标 ->提供的主图标 -> 项目图标 -> 默认 Godot "
-"前景图标。"
+"前景图标."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:100
 msgid ""
 "**Adaptive Icon Background:** Provided background icon -> Default Godot "
 "background icon."
-msgstr "**自适应图标背景:** 提供的背景图标 -> 默认 Godot 背景图标。"
+msgstr "**自适应图标背景:** 提供的背景图标 -> 默认 Godot 背景图标."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:102
-#, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
 "specified resolutions. This way, your application will look great on all "
 "Android devices and versions."
 msgstr ""
-"强烈推荐提供必需的图标，至少是指定的分辨率。只有这样，你的应用才能在所有"
-"Android设备和版本看起来不错。"
+"强烈建议提供所有要求的图标的指定分辨率.这样一来,你的应用程序在所有的Android设"
+"备和版本上都会显得非常漂亮."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:106
 msgid "Exporting for Google Play Store"
@@ -307,8 +303,8 @@ msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
-"将APK上传到Google的Play商店，需要您使用非调试密钥库文件进行签名，这样的文件可"
-"以像这样生成："
+"将APK上传到Google的Play商店,需要您使用非调试密钥库文件进行签名,这样的文件可以"
+"像这样生成:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:115
 msgid ""
@@ -317,27 +313,27 @@ msgid ""
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
-"此密钥库和密钥用于验证您的开发人员身份，记住密码并将其保存在安全的地方！使用"
+"此密钥库和密钥用于验证您的开发人员身份,记住密码并将其保存在安全的地方！使用"
 "Google的Android开发者指南来了解有关 `APK签名 <https://developer.android.com/"
-"studio/publish/app-signing>`__ 的更多信息。"
+"studio/publish/app-signing>`__ 的更多信息."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:118
 msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr "现在，在您的Android导出预设中填写以下表格："
+msgstr "现在,在您的Android导出预设中填写以下表格:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:122
 msgid "**Release:** Enter the path to the keystore file you just generated."
-msgstr "**发布：** 输入您刚刚生成的密钥库文件的路径。"
+msgstr "**发布:** 输入您刚刚生成的密钥库文件的路径."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:123
 msgid "**Release User:** Replace with the key alias."
-msgstr "**发布用户：** 替换为密钥别名。"
+msgstr "**发布用户:** 替换为密钥别名."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:124
 msgid ""
 "**Release Password:** Key password. Note that the keystore password and the "
 "key password currently have to be the same."
-msgstr "**发布密码：** 密钥密码。 请注意，密钥库密码和密钥密码当前必须相同。"
+msgstr "**发布密码:** 密钥密码. 请注意,密钥库密码和密钥密码当前必须相同."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:126
 msgid ""
@@ -345,14 +341,14 @@ msgid ""
 "use a version control system, you should remove it from public repositories "
 "and add it to your ``.gitignore`` file or equivalent."
 msgstr ""
-"**您的export_presets.cfg文件现在包含敏感信息。** 如果使用版本控制系统，则应将"
-"其从公共存储库中删除，并将其添加到 ``.gitignore`` 文件或等效文件中。"
+"**您的export_presets.cfg文件现在包含敏感信息.** 如果使用版本控制系统,则应将其"
+"从公共存储库中删除,并将其添加到 ``.gitignore`` 文件或等效文件中."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:130
+#, fuzzy
 msgid ""
-"Don't forget to uncheck the **Export With Debug** checkbox while choosing "
-"the APK's name."
-msgstr "选择APK的名称时，请不要忘记取消选中 **带调试导出** 复选框。"
+"Don't forget to uncheck the **Export With Debug** checkbox while exporting."
+msgstr "选择APK的名称时,请不要忘记取消选中 **带调试导出** 复选框."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:135
 msgid "Optimizing the APK size"
@@ -367,10 +363,10 @@ msgid ""
 "for a single architecture. Note that applications targeting ARMv7 can also "
 "run on ARMv8 devices, but the opposite is not true."
 msgstr ""
-"默认情况下，APK将包含适用于ARMv7和ARMv8体系结构的本地库。这会大大增加其大小。"
-"要创建较小的APK，请在项目的Android导出预设中取消选中 **Armeabi-v 7a** 或 "
-"**Arm 64 -v 8a**。这将创建一个仅包含单个架构库的APK。请注意，针对ARMv7的应用"
-"程序也可以在ARMv8设备上运行，但事实并非如此。"
+"默认情况下,APK将包含适用于ARMv7和ARMv8体系结构的本地库.这会大大增加其大小.要"
+"创建较小的APK,请在项目的Android导出预设中取消选中 **Armeabi-v 7a** 或 **Arm "
+"64 -v 8a**.这将创建一个仅包含单个架构库的APK.请注意,针对ARMv7的应用程序也可以"
+"在ARMv8设备上运行,但事实并非如此."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:144
 msgid ""
@@ -382,11 +378,11 @@ msgid ""
 "creating an APK for ARMv7 and ARMv8 is usually sufficient to cover most "
 "devices in use today."
 msgstr ""
-"自2019年8月起，Google Play要求所有应用程序都必须以64位格式提供。这意味着您不"
-"能上传 *仅* 包含ARMv7库的APK。为了解决这个问题，您可以使用其 `多个APK支持 "
+"自2019年8月起,Google Play要求所有应用程序都必须以64位格式提供.这意味着您不能"
+"上传 *仅* 包含ARMv7库的APK.为了解决这个问题,您可以使用其 `多个APK支持 "
 "<https://developer.android.com/google/play/publishing/multiple-apks>`__ 将多"
-"个APK上传到Google Play。每个APK都应针对单一架构；为ARMv7和ARMv8创建APK通常足"
-"以覆盖当今使用的大多数设备。"
+"个APK上传到Google Play.每个APK都应针对单一架构；为ARMv7和ARMv8创建APK通常足以"
+"覆盖当今使用的大多数设备."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:151
 msgid ""
@@ -394,5 +390,5 @@ msgid ""
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
 "information."
 msgstr ""
-"您可以通过仅编译具有所需功能的Android导出模板来进一步优化大小。有关更多信息，"
-"请参见 :ref:`doc_optimizing_for_size`。"
+"您可以通过仅编译具有所需功能的Android导出模板来进一步优化大小.有关更多信息,请"
+"参见 :ref:`doc_optimizing_for_size`."

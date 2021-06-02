@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,8 @@ msgid "Requirements"
 msgstr "Voraussetzungen"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:11
-msgid "Mono 5.12.0 or greater"
+#, fuzzy
+msgid "Mono 6.12.0 or greater"
 msgstr "Mono 5.12.0 oder höher"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:12
@@ -120,6 +121,10 @@ msgid ""
 "parameter ``--generate-mono-glue`` followed by the path to an output "
 "directory. This path must be ``modules/mono/glue`` in the Godot directory::"
 msgstr ""
+"Nachdem der Build beendet ist, muss man das kompilierte Programm mit dem "
+"Parameter ``--generate-mono-glue``, gefolgt von dem Pfad zu einem "
+"Ausgabeverzeichnis, ausführen. Dieser Pfad muss ``modules/mono/glue`` im "
+"Godot-Verzeichnis sein::"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:65
 msgid ""
@@ -128,6 +133,11 @@ msgid ""
 "glue/Managed/Generated``. Once these files are generated, you can build "
 "Godot for all the desired targets without having to repeat this process."
 msgstr ""
+"Mit diesem Befehl wird Godot angewiesen, die Datei ``modules/mono/glue/"
+"mono_glue.gen.cpp`` und die C#-Lösung für die Godot-API unter ``modules/mono/"
+"glue/Managed/Generated`` zu erzeugen. Sobald diese Dateien generiert sind, "
+"kann Godot für alle gewünschten Ziele gebaut werden, ohne diesen Vorgang "
+"wiederholen zu müssen."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:70
 msgid ""
@@ -140,6 +150,15 @@ msgid ""
 "named binaries without this suffix. These binaries can't be used to generate "
 "the Mono glue."
 msgstr ""
+"``<godot_binary>`` bezieht sich auf das Tools-Binary, das oben mit "
+"aktiviertem Mono-Modul kompiliert wurde. Sein genauer Name hängt von Ihrem "
+"System und Ihrer Konfiguration ab, sollte aber die Form ``bin/godot."
+"<Plattform>.tools.<bits>.mono`` haben, z.B. ``bin/godot.x11.tools.64.mono`` "
+"oder ``bin/godot.windows.tools.64.mono.exe``. Achten Sie besonders auf das "
+"Suffix **.mono**! Wenn Godot zuvor ohne Mono-Unterstützung kompiliert wurde, "
+"haben Sie möglicherweise ähnlich benannte Binärdateien ohne dieses Suffix. "
+"Diese Binärdateien können nicht verwendet werden, um den Mono-Glue zu "
+"erzeugen."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:80
 msgid "Notes"
@@ -152,6 +171,10 @@ msgid ""
 "generate the glue. Godot will print a warning at startup if it was built "
 "without the glue sources."
 msgstr ""
+"**Erstellen Sie Ihre endgültigen Binärdateien nicht mit** ``mono_glue=no``. "
+"Dadurch wird die C#-Skripterstellung deaktiviert. Diese Option muss nur für "
+"die temporäre Binärdatei verwendet werden, die den Glue erzeugt. Godot wird "
+"beim Start eine Warnung ausgeben, wenn es ohne die Glue-Quellen gebaut wurde."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:86
 msgid ""
@@ -579,6 +602,10 @@ msgid ""
 "and macOS, but this may change in the future as they're not guaranteed to be "
 "the same (as is the case with the Windows BCL)."
 msgstr ""
+"Im Moment gehen wir davon aus, dass das gleiche BCL-Profil sowohl für Linux "
+"als auch für macOS verwendet werden kann, aber das kann sich in Zukunft "
+"ändern, da nicht garantiert ist, dass sie gleich sind (wie es bei der "
+"Windows-BCL der Fall ist)."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:341
 msgid ""
@@ -586,6 +613,9 @@ msgid ""
 "the editor will use the BCL it's running on (``<data_folder>/Mono/lib/"
 "mono/4.5``) if it cannot find the BCL in the export templates."
 msgstr ""
+"Wenn die Zielplattform die gleiche ist wie die Plattform des Godot-Editors, "
+"dann verwendet der Editor die BCL, auf der er läuft (``<data_folder>/Mono/"
+"lib/mono/4.5``), wenn er die BCL in den Exportvorlagen nicht findet."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:346
 msgid "AOT cross-compilers"
@@ -597,6 +627,9 @@ msgid ""
 "to have access to the Mono cross-compilers for that platform and "
 "architecture."
 msgstr ""
+"Um eine ahead-of-time (AOT) Kompilierung für andere Plattformen "
+"durchzuführen, muss Godot Zugriff auf die Mono-Cross-Compiler für diese "
+"Plattform und Architektur haben."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:351
 msgid ""
@@ -604,6 +637,8 @@ msgid ""
 "folder. The location of this folder is ``<data_folder>/Tools/aot-compilers/"
 "``."
 msgstr ""
+"Godot sucht nach der ausführbaren Cross-Compiler-Datei im AOT-Compiler-"
+"Ordner. Der Ort dieses Ordners ist ``<data_folder>/Tools/aot-compilers/``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:354
 msgid ""
@@ -619,6 +654,9 @@ msgid ""
 "directory. The executable name is ``<triple>-mono-sgen``, e.g.: ``aarch64-"
 "apple-darwin-mono-sgen``."
 msgstr ""
+"Nach dem Erzeugen kopieren Sie die ausführbare Datei in das Godot-AOT-"
+"Compiler-Verzeichnis. Der Name der ausführbaren Datei ist ``<triple>-mono-"
+"sgen``, z.B.: ``aarch64-apple-darwin-mono-sgen``."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:361
 msgid "Command-line options"
@@ -629,6 +667,8 @@ msgid ""
 "The following is the list of command-line options available when building "
 "with the Mono module:"
 msgstr ""
+"Im Folgenden finden Sie eine Liste der Befehlszeilenoptionen, die beim "
+"Erstellen mit dem Mono-Modul verfügbar sind:"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:366
 msgid "**module_mono_enabled**\\ =yes | **no**"
@@ -647,6 +687,8 @@ msgid ""
 "Whether to include the glue source files in the build and define "
 "``MONO_GLUE_DISABLED`` as a preprocessor macro."
 msgstr ""
+"Ob die Glue-Quelldateien in den Build eingeschlossen und "
+"``MONO_GLUE_DISABLED`` als Präprozessormakro definiert werden soll."
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:375
 msgid "**mono_prefix**\\ =path"

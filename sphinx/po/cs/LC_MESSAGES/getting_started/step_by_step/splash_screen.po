@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,20 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr ""
+msgstr "Úvodní obrazovka"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutoriál"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Jedná se o jednoduchý tutoriál, který slouží k vytvoření základní představy "
+"o fungování subsystému grafického uživatelského rozhraní. Cílem je vytvořit "
+"jednoduchou statickou úvodní obrazovku."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -37,20 +40,24 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"Následuje soubor se zdroji, které budou použity. Rozbalené soubory můžete "
+"umístit přímo do složky projektu a Godot je automaticky importuje."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ""
+msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 msgid "Setting up"
-msgstr ""
+msgstr "Nastavení"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"V Nastavení projektu nastavte rozlišení displeje na 800x450 a vytvořte novou "
+"scénu takto:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -58,6 +65,9 @@ msgid ""
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"Uzly ``background`` a ``logo`` jsou typu :ref:`TextureRect "
+"<class_TextureRect>`. Chcete-li zobrazit obrázek, přetáhněte odpovídající "
+"aktivum do vlastnosti textura."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -65,17 +75,22 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"Uzel ``start`` je :ref:`TextureButton <class_TextureButton>`. Přebírá "
+"několik obrázků pro různé stavy, ale v tomto příkladu bude dodán pouze "
+"normální a stisknutý:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "Konečně uzel ``copyright`` je :ref:`Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "Vaše finální scéna by měla vypadat přibližně takto."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Pokračujte a spusťte projekt.  Pokud jste s výsledky spokojeni, pokračujte "
+"dalším návodem."

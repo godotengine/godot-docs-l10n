@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,16 +33,23 @@ msgid ""
 "objects. This will allow the save function to scale as the game grows more "
 "complex."
 msgstr ""
+"Salvar jogos pode ser complicado. Por exemplo, pode ser desejável armazenar "
+"informação de vários objetos em vários níveis. Sistemas avançados de "
+"salvamento de jogos devem permitir informações adicionais sobre um número "
+"arbitrário de objetos. Isto permitirá que a função de salvamento seja "
+"escalonada à medida que o jogo se torna mais complexo."
 
 #: ../../docs/tutorials/io/saving_games.rst:17
 msgid ""
 "If you're looking to save user configuration, you can use the :ref:"
 "`class_ConfigFile` class for this purpose."
 msgstr ""
+"Se você procura salvar a configuração de usuário, você pode utilizar a "
+"classe :ref:`class_ConfigFile`para este propósito."
 
 #: ../../docs/tutorials/io/saving_games.rst:21
 msgid "Identify persistent objects"
-msgstr ""
+msgstr "Identificar objetos persistentes"
 
 #: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
@@ -51,6 +58,10 @@ msgid ""
 "tutorial, we will use groups to mark and handle objects to be saved, but "
 "other methods are certainly possible."
 msgstr ""
+"Em primeiro lugar, devemos identificar quais objetos queremos manter entre "
+"as sessões de jogo e quais informações queremos manter desses objetos. Para "
+"este tutorial, usaremos grupos para marcar e manipular objetos para serem "
+"salvos, mas outros métodos certamente são possíveis."
 
 #: ../../docs/tutorials/io/saving_games.rst:28
 msgid ""
@@ -58,12 +69,18 @@ msgid ""
 "in the :ref:`doc_scripting_continued` tutorial, we can do this through "
 "either the GUI or script. Let's add the relevant nodes using the GUI:"
 msgstr ""
+"Começaremos adicionando objetos que desejamos salvar ao grupo \"Persist\". "
+"Como no tutorial :ref:`doc_scripting_continued`podemos fazer isto através da "
+"GUI ou do script. Vamos adicionar os nós relevantes usando a GUI:"
 
 #: ../../docs/tutorials/io/saving_games.rst:34
 msgid ""
 "Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
 msgstr ""
+"Uma vez feito isto, quando precisarmos salvar o jogo, podemos obter todos os "
+"objetos para salvá-los e, em seguida, dizer a todos para salvar com este "
+"script:"
 
 #: ../../docs/tutorials/io/saving_games.rst:54
 msgid "Serializing"

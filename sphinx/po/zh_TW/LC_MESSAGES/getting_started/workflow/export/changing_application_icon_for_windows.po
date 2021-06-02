@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,16 +62,29 @@ msgstr ""
 "片轉換為對 hiDPI 友善的 ICO 檔案："
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:30
+msgid ""
+"For the ICO file to effectively replace the default Godot icon, it must "
+"contain *all* the sizes included in the default Godot icon: 16×16, 32×32, "
+"48×48, 64×64, 128×128, 256×256. If the ICO file does not contain all the "
+"sizes, the default Godot icon will be kept for the sizes that weren't "
+"overridden."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:35
+msgid "The above ImageMagick command takes this into account."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid "Changing the taskbar icon"
 msgstr "更改工作列圖示"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your project "
 "is running."
 msgstr "工作列圖示即為專案執行時顯示在工作列上的圖示。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:37
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:45
 msgid ""
 "To change the taskbar icon, go to **Project → Project Settings → Application "
 "→ Config → Windows Native Icon**. Click on the folder icon and select your "
@@ -80,7 +93,7 @@ msgstr ""
 "要更改工作列圖示，請前往 **[專案] → [專案設定] → [Application] → [Config] → "
 "[Windows Native Icon]** 。點擊資料夾圖示並選擇 ICO 檔。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:43
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:51
 msgid ""
 "This setting only changes the icon for your exported game on Windows. To set "
 "the icon for macOS, use ``Macos Native Icon``. And for any other platform, "
@@ -89,11 +102,11 @@ msgstr ""
 "該設定只會更改匯出至 Windows 平台的遊戲。若要設定 macOS 上的圖示，請使用 "
 "``Macos Native Icon`` 。而其他的平台則使用 ``Icon`` 設定。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Changing the file icon"
 msgstr "更改檔案圖示"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:52
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
 "There are `known issues <https://github.com/godotengine/godot/"
 "issues/33466>`__ when changing the application icon in executables that "
@@ -105,13 +118,13 @@ msgstr ""
 "github.com/godotengine/godot/issues/33466>`__ 。如果要在匯出對話框的 Windows "
 "匯出設定中選擇 **Enbed Pck** 時，目前建議先避免使用 rcedit。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:57
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "project."
 msgstr "檔案圖示即為啟動專案時點擊的執行檔的圖示。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:70
 msgid ""
 "Before selecting it in the export options, you will need to install an extra "
 "tool called **rcedit**. You can download it `here <https://github.com/"
@@ -120,7 +133,7 @@ msgstr ""
 "與匯出選項中選擇圖示前，還必須要安裝一個名為 **rcedit** 的額外工具。可以在 `"
 "此處 <https://github.com/electron/rcedit/releases>`_ 下載。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:66
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
 msgid ""
 "After downloading, you need to tell Godot the path to the rcedit executable "
 "on your computer. Go to **Editor → Editor Settings → Export → Windows**. "
@@ -131,7 +144,7 @@ msgstr ""
 "器設定] → [Editor] → [Windows]** 。點擊 **rcedit** 欄位的資料夾圖示。前往並選"
 "擇 rcedit 執行檔。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:74
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
 "Linux and macOS users will also need to install `WINE <https://www.winehq."
 "org/>`_ to use rcedit."
@@ -139,7 +152,7 @@ msgstr ""
 "Linux 與 macOS 使用者還需要安裝 `WINE <https://www.winehq.org/>`_ 來使用 "
 "rcedit。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
 "You should now have everything in place to change the file icon. To do that, "
 "you will need to specify the icon when exporting. Go to **Project → "
@@ -150,7 +163,7 @@ msgstr ""
 "圖示。前往 **[專案] → [匯出]** 。這裡我們假設已有 Windows 桌面預設設定。在 "
 "**[Application] → [Icon]** 欄位中選擇 ICO 格式的圖示。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:89
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:97
 msgid ""
 "If rcedit fails to change the icon, you can instead :ref:`compile your own "
 "Windows export templates <doc_compiling_for_windows>` with the icon changed. "
@@ -164,23 +177,23 @@ msgstr ""
 "com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ 更改為你要使"
 "用的 ICO 檔案。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:95
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:103
 msgid ""
 "Once this is done, you can specify your export templates as custom export "
 "templates in your project's Windows export preset."
 msgstr ""
 "完成之後，即可在專案的 Windows 匯出預設中將匯出樣板指定為客製化匯出樣板。"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:99
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
 msgid "Testing the result"
 msgstr "測試結果"
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:101
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:109
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
 msgstr "現在可以匯出專案了。若一切正常，應該可以看到這個結果："
 
-#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:107
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:115
 msgid ""
 "If your icon isn't showing up properly, on Windows 10, try clearing the icon "
 "cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -"

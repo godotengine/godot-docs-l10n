@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-31 15:34+0200\n"
+"POT-Creation-Date: 2021-06-02 13:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,9 +28,9 @@ msgid ""
 "developer.android.com/google/play/billing>`__ instead of the now deprecated "
 "AIDL IAP implementation."
 msgstr ""
-"自Godot 3.2.2以来，Godot提供了一个第一方的 ``GodotGooglePlayBilling`` 安卓插"
-"件。新插件使用`Google Play Billing库<https://developer.android.com/google/"
-"play/billing>`__，而不是现在已经废弃的AIDL IAP实现。"
+"自Godot 3.2.2以来,Godot提供了一个第一方的 ``GodotGooglePlayBilling`` 安卓插"
+"件.新插件使用 `Google Play Billing库<https://developer.android.com/google/"
+"play/billing>`__ ,而不是现在已经废弃的AIDL IAP实现."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:10
 msgid ""
@@ -38,19 +38,19 @@ msgid ""
 "`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
 "android_iap>`__."
 msgstr ""
-"如果您通过查看示例更好地学习，可以在此处找到演示项目`https://github.com/"
-"godotengine/godot-demo-projects/tree/master/mobile/android_iap>`__。"
+"如果您通过查看示例更好地学习,可以在此处找到演示项目 `这里 <https://github."
+"com/godotengine/godot-demo-projects/tree/master/mobile/android_iap>`__."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:15
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
 msgstr "从Godot 3.2.1和更低版本迁移(GodotPaymentsV3)"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:17
-#, fuzzy
 msgid ""
 "The new ``GodotGooglePlayBilling`` API is not compatible with its "
 "predecessor ``GodotPaymentsV3``."
-msgstr "新的``GodotGooglePlayBilling``API与其前身``GodotPaymentsV3``不兼容。"
+msgstr ""
+"新的 ``GodotGooglePlayBilling`` API与其前身 ``GodotPaymentsV3`` 不兼容."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:20
 msgid "Changes"
@@ -62,8 +62,8 @@ msgid ""
 "and install the ``GodotGooglePlayBilling`` plugin manually (see below for "
 "details)"
 msgstr ""
-"你需要在你的Android导出设置中启用自定义构建选项，并手动安装 "
-"``GodotGooglePlayBilling`` 插件（详见下文）"
+"你需要在你的Android导出设置中启用自定义构建选项,并手动安装 "
+"``GodotGooglePlayBilling`` 插件(详见下文)"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:24
 msgid ""
@@ -72,14 +72,13 @@ msgid ""
 "integrate#process>`__. Purchases that are not acknowledged by your app will "
 "be refunded."
 msgstr ""
-"所有的购买都必须被你的应用程序所承认。这是'谷歌<https://developer.android."
-"com/google/play/billing/integrate#process>'要求的。您的应用程序不承认的购买将"
-"被退还。"
+"所有的购买都必须被你的应用程序所承认.这是 `谷歌<https://developer.android."
+"com/google/play/billing/integrate#process>`__ 要求的.您的应用程序不承认的购买"
+"将被退还."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:27
-#, fuzzy
 msgid "Support for subscriptions"
-msgstr "导入选项"
+msgstr "支持订阅"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:28
 msgid "Signals (no polling or callback objects)"
@@ -103,27 +102,27 @@ msgid ""
 "and put both into `res://android/plugins`. The plugin should now show up in "
 "the Android export settings, where you can enable it."
 msgstr ""
-"如果还没有完成，请确保你已经启用并成功设置:ref:`Android Custom Builds "
-"<doc_android_custom_build>`。从 \"releases page <https://github.com/"
+"如果还没有完成,请确保你已经启用并成功设置 :ref:`Android Custom Builds "
+"<doc_android_custom_build>`.从 `releases page <https://github.com/"
 "godotengine/godot-google-play-billing/releases>`__\"中抓取"
-"`GodotGooglePlayBilling``插件二进制文件和配置文件，并将两者放入`res://"
-"android/plugins`中。现在该插件应该出现在Android导出设置中，你可以启用它。"
+"``GodotGooglePlayBilling``插件二进制文件和配置文件,并将两者放入`res://"
+"android/plugins`中.现在该插件应该出现在Android导出设置中,你可以启用它."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:46
 msgid ""
 "To use the ``GodotGooglePlayBilling`` API you first have to get the "
 "``GodotGooglePlayBilling`` singleton and start the connection:"
 msgstr ""
-"要使用 ``GodotGooglePlayBilling`` API，你首先要获得 "
-"``GodotGooglePlayBilling`` 单例，并启动连接:"
+"要使用 ``GodotGooglePlayBilling`` API,你首先要获得 "
+"``GodotGooglePlayBilling`` 单例,并启动连接:"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:75
 msgid ""
 "All API methods only work if the API is connected. You can use ``payment."
 "isReady()`` to check the connection status."
 msgstr ""
-"所有的API方法只有在API被连接的情况下才会工作，你可以使用 ``payment."
-"isReady()`` 检查连接状态。"
+"所有的API方法只有在API被连接的情况下才会工作,你可以使用 ``payment."
+"isReady()`` 检查连接状态."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:79
 msgid "Querying available items"
@@ -133,18 +132,16 @@ msgstr "查询可获取的项目"
 msgid ""
 "As soon as the API is connected, you can query SKUs using "
 "``querySkuDetails``."
-msgstr "只要连接了API，你就可以使用 ``querySkuDetails`` 来查询SKU。"
+msgstr "只要连接了API,你就可以使用 ``querySkuDetails`` 来查询SKU."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:83
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:115
-#, fuzzy
 msgid "Full example:"
-msgstr "例如："
+msgstr "完整示例:"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:96
-#, fuzzy
 msgid "Purchase an item"
-msgstr "检查用户是否购买了商品"
+msgstr "购买项目"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:98
 msgid ""
@@ -152,13 +149,12 @@ msgid ""
 "query the SKU details for an item before you can initiate the purchase flow "
 "for it."
 msgstr ""
-"要启动一个项目的购买流程，请调用 ``purchase`` 。在启动购买流程之前，你必须**"
-"查询一个项目的SKU详情。"
+"要启动一个项目的购买流程,请调用 ``purchase`` .在启动购买流程之前,你必须**查询"
+"一个项目的SKU详情."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:109
-#, fuzzy
 msgid "Check if the user purchased an item"
-msgstr "检查用户是否购买了商品"
+msgstr "检查用户是否购买了某个项目"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:111
 msgid ""
@@ -167,14 +163,13 @@ msgid ""
 "`Dictionary <class_Dictionary>` with a status code and either an array of "
 "purchases or an error message."
 msgstr ""
-"要获得所有的购买，调用 ``queryPurchases`` 。与大多数其他函数不同的是， "
-"``queryPurchases`` 是一个同步操作，并返回一个 :ref:`Dictionary "
-"<class_Dictionary>` 的状态码和一个购买数组或一个错误信息。"
+"要获得所有的购买,调用 ``queryPurchases`` .与大多数其他函数不同的是, "
+"``queryPurchases`` 是一个同步操作,并返回一个 :ref:`Dictionary "
+"<class_Dictionary>` 的状态码和一个购买数组或一个错误信息."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
-#, fuzzy
 msgid "Consumables"
-msgstr "常量"
+msgstr "消耗品"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:131
 msgid ""
@@ -184,14 +179,13 @@ msgid ""
 "to get the purchase token. Calling ``consumePurchase`` automatically "
 "acknowledges a purchase."
 msgstr ""
-"如果你的应用内物品不是一次性购买，而是可以多次购买的消耗品（如硬币），你可以"
-"用购买令牌调用 ``consumePurchase`` 来消耗物品。调用 ``queryPurchases`` 来获取"
-"购买令牌。调用 ``consumePurchase`` 会自动确认购买。"
+"如果你的应用内物品不是一次性购买,而是可以多次购买的消耗品(如硬币),你可以用购"
+"买令牌调用 ``consumePurchase`` 来消耗物品.调用 ``queryPurchases`` 来获取购买"
+"令牌.调用 ``consumePurchase`` 会自动确认购买."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:148
-#, fuzzy
 msgid "Subscriptions"
-msgstr "描述"
+msgstr "订阅"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:150
 msgid ""
@@ -200,7 +194,7 @@ msgid ""
 "details. Check ``is_auto_renewing`` in the results of ``queryPurchases()`` "
 "to see if a user has cancelled an auto-renewing subscription"
 msgstr ""
-"订阅的工作原理和普通的应用内项目没有太大区别。只要使用 ``\"subs\"`` 作为 "
-"``querySkuDetails`` 的第二个参数，就可以得到订阅的详细信息。在 "
+"订阅的工作原理和普通的应用内项目没有太大区别.只要使用 ``\"subs\"`` 作为 "
+"``querySkuDetails`` 的第二个参数,就可以得到订阅的详细信息.在 "
 "``queryPurchases()`` 的结果中检查 ``is_auto_renewing`` 来查看用户是否取消了自"
 "动更新的订阅"
